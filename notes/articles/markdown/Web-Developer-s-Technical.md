@@ -39,7 +39,7 @@ Browsers that update themselves (without user intervention).
 
 <a href="http://tomdale.net/2013/05/evergreen-browsers/" class="markup--anchor markup--p-anchor" title="http://tomdale.net/2013/05/evergreen-browsers/">Evergreen Browsers</a>
 
-### ES3, ES5, ES5.1, ES6 (aka ES2015), etc
+### ES3, ES5, ES5.1, ES6 (aka ES2015), etc
 
 ES stands for ECMAScript, which is the specification that JavaScript is based on. The number that follows is the version of the specification.
 
@@ -56,7 +56,7 @@ Most browsers support at least ES5, and some even have ES6 (also known as ES2015
 
 <a href="https://gist.github.com/chriseppstein/674726" class="markup--anchor markup--p-anchor" title="https://gist.github.com/chriseppstein/674726">Sass/Less Comparison</a>
 
-### Linter, linting, jslint, jshint
+### Linter, linting, jslint, jshint
 
 A validation tool which checks for common issues in your JavaScript. You’d usually use this in your build process to enforce quality in your codebase. A great example of something to check for: _making sure you’ve always got your semicolons_.
 
@@ -180,8 +180,8 @@ There is an extensive list found <a href="https://stackoverflow.com/questions/54
 **Domain Name** — the characters/words used to identify a website after `http://` or  
 `www.`. The domain name consists of two parts. Take this example:  
 `https://dwyl.com`, `dwyl` makes up the **second level domain (SLD)** which is  
-then followed by `.com` which what is known as the **top level domain (TLD)** or  
-**parent domain**. Other examples of top level domains are: `.org`, `.co.uk`  
+then followed by `.com` which what is known as the **top level domain (TLD)** or  
+**parent domain**. Other examples of top level domains are: `.org`, `.co.uk`  
 `.io`. Domain names are the more memorable and user-friendly representation of a  
 website's **IP address**. Domain names are registered under the **Domain Name  
 System (DNS)**.

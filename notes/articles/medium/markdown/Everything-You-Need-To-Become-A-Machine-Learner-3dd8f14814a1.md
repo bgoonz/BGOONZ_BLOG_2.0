@@ -4,9 +4,9 @@ This list of resources is specifically targeted at Web Developers and Data Scien
 
 ---
 
-### Everything You Need To Become A Machine Learner
+### Everything You Need To Become A Machine Learner
 
-#### _This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
+#### _This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--h4-anchor"><em>sindresorhus</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KLzv9YgXVEYUpnk8.jpg" class="graf-image" /></figure>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
@@ -55,7 +55,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="a586">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
 -   <span id="30ce">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
 -   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses “Machine Learning in Networking”</a> `0:48:44`</span>
--   <span id="afd6">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
+-   <span id="afd6">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
 -   <span id="1629">\[ \] <a href="https://www.youtube.com/watch?v=z_OGYzT_MBo" class="markup--anchor markup--li-anchor">Eric Colson, Chief Algorithms Officer, Stitch Fix</a> `0:53:57`</span>
 -   <span id="ad62">\[ \] <a href="https://www.youtube.com/watch?v=p0cQUErM5xs" class="markup--anchor markup--li-anchor">Claudia Perlich, Advisor to Dstillery and Adjunct Professor NYU Stern School of Business</a> `0:51:59`</span>
 -   <span id="0655">\[ \] <a href="https://www.youtube.com/watch?v=imlp8DGNkk0" class="markup--anchor markup--li-anchor">Jeff Dean, Google Senior Fellow and SVP Google AI — Deep Learning to Solve Challenging Problems</a> `0:58:45`</span>
@@ -104,7 +104,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be able to frame anMachine Learning problem
+### Be able to frame anMachine Learning problem
 
 · **\[ \]** <a href="https://www.aws.training/learningobject/video?id=27224" class="markup--anchor markup--p-anchor"><strong>AWS: Types of Machine Learning Solutions</strong></a>
 
@@ -180,7 +180,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be familiar with data ethics
+### Be familiar with data ethics
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*oFBt0xjx-zaZJqsd" class="graf-image" /></figure>
 
@@ -203,7 +203,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="b466">**\[📺 \]** <a href="https://www.youtube.com/watch?v=5ZdrNYvTmq8" class="markup--anchor markup--li-anchor"><strong>SE4AI: Security</strong></a> **1:18:24**</span>
 -   <span id="0995">**\[📺 \]** <a href="https://www.youtube.com/watch?v=xRlFDXV3-8E" class="markup--anchor markup--li-anchor"><strong>SE4AI: Safety</strong></a> **1:17:37**</span>
 
-### Be able to import data from multiple sources
+### Be able to import data from multiple sources
 
 -   <span id="6e49">**\[ \]** <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" class="markup--anchor markup--li-anchor"><strong>Docs: Beautiful Soup Documentation</strong></a></span>
 -   <span id="c2c5">**\[💻\]** <a href="https://www.datacamp.com/courses/importing-data-in-python-part-2" class="markup--anchor markup--li-anchor"><strong>Importing Data in Python (Part 2)</strong></a></span>
@@ -233,7 +233,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be able to manipulate data with Numpy
+### Be able to manipulate data with Numpy
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*VYGDIe6FVYL5uRZ_YrQraQ.png" class="graf-image" /></figure>
 
@@ -244,7 +244,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2b0b">**\[💻\]** <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science" class="markup--anchor markup--li-anchor"><strong>Intro to Python for Data Science</strong></a></span>
 -   <span id="d589">**\[ \]** <a href="https://www.pluralsight.com/courses/numpy-working-with-multidimensional-data" class="markup--anchor markup--li-anchor"><strong>Pluralsight: Working with Multidimensional Data Using NumPy</strong></a></span>
 
-### Be able to manipulate data with Pandas
+### Be able to manipulate data with Pandas
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*JLvULIyCErhYRfRDkcBKMw.gif" class="graf-image" /></figure>-   <span id="c8f5">**\[📰\]** <a href="https://jalammar.github.io/visualizing-pandas-pivoting-and-reshaping/" class="markup--anchor markup--li-anchor"><strong>Visualizing Pandas’ Pivoting and Reshaping Functions</strong></a></span>
 -   <span id="bfe3">**\[📰\]** <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" class="markup--anchor markup--li-anchor"><strong>A Gentle Visual Intro to Data Analysis in Python Using Pandas</strong></a></span>
@@ -301,7 +301,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2ae2">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/intro-to-relational-databases--ud197" class="markup--anchor markup--li-anchor"><strong>Intro to relational database</strong></a></span>
 -   <span id="86b4">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/database-systems-concepts-design--ud150" class="markup--anchor markup--li-anchor"><strong>Database Systems Concepts &amp; Design</strong></a></span>
 
-### Be able to use Linux
+### Be able to use Linux
 
 > Resources:
 
@@ -331,7 +331,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> _of learning bash_
+> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><em>holy grail</em></a> _of learning bash_
 
 -   <span id="2fd9">**\[📰\]** <a href="https://dev.to/yankee/streamline-projects-using-makefile-28fe" class="markup--anchor markup--li-anchor"><strong>Streamline your projects using Makefile</strong></a></span>
 -   <span id="6805">**\[📰\]** <a href="https://www.tecmint.com/understand-linux-load-averages-and-monitor-performance/" class="markup--anchor markup--li-anchor"><strong>Understand Linux Load Averages and Monitor Performance of Linux</strong></a></span>
@@ -387,7 +387,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="7775">**\[📺 \]** <a href="https://www.youtube.com/watch?v=XpOBSaktb6s" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–04 — Preprocessing</strong></a> **1:07:40**</span>
 -   <span id="edac">**\[📺 \]** <a href="https://www.youtube.com/watch?v=FDhyS6Xjxa8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–11 — Model Inspection and Feature Selection</strong></a> **1:15:15**</span>
 
-### Be able to experiment in a notebook
+### Be able to experiment in a notebook
 
 -   <span id="131b">**\[📰\]** <a href="http://veekaybee.github.io/2020/02/25/secrets/" class="markup--anchor markup--li-anchor"><strong>Securely storing configuration credentials in a Jupyter Notebook</strong></a></span>
 -   <span id="47a6">**\[📰\]** <a href="https://switowski.com/blog/ipython-autoreload" class="markup--anchor markup--li-anchor"><strong>Automatically Reload Modules with %autoreload</strong></a></span>
@@ -599,7 +599,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="a731">**\[📺 \]** <a href="https://www.youtube.com/watch?v=pxisK6RMn1s" class="markup--anchor markup--li-anchor"><strong>Lecture 5:Machine Learning Projects (Full Stack Deep Learning — Spring 2021)</strong></a> **1:13:14**</span>
 -   <span id="735d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=760Mc_b3_N0" class="markup--anchor markup--li-anchor"><strong>Lecture 6: Infrastructure &amp; Tooling (Full Stack Deep Learning — Spring 2021)</strong></a> **1:07:21**</span>
 
-### Be able to version control code
+### Be able to version control code
 
 <a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong><br />
 <em>Basic Git Work Flow.</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -645,7 +645,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be familiar with inner working of models
+### Be familiar with inner working of models
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*lWNHX7DPE_R6kQWW.png" class="graf-image" /></figure>***Bays theorem is super interesting and applicable ==&gt; — \[📰\]*** <a href="https://www.jeremyjordan.me/naive-bayes-classification/" class="markup--anchor markup--blockquote-anchor"><strong><em>Naive Bayes classification</em></strong></a>
 
@@ -744,7 +744,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be able to improve models
+### Be able to improve models
 
 -   <span id="e796">**\[📰\]** <a href="https://www.jeremyjordan.me/deep-neural-networks-preventing-overfitting/" class="markup--anchor markup--li-anchor"><strong>Deep neural networks: preventing overfitting</strong></a></span>
 -   <span id="3a2e">**\[📰\]** <a href="https://www.jeremyjordan.me/batch-normalization/" class="markup--anchor markup--li-anchor"><strong>Normalizing your data (specifically, input and batch normalization)</strong></a></span>
@@ -759,7 +759,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### **Be familiar with fundamental Machine Learning concepts**
+### **Be familiar with fundamental Machine Learning concepts**
 
 <a href="https://./cnn.png" class="markup--anchor markup--p-anchor"><strong>CNN</strong></a>
 
@@ -821,7 +821,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be able to implement models in Tensorflow and Keras
+### Be able to implement models in Tensorflow and Keras
 
 -   <span id="9c90">\[ \] <a href="https://www.coursera.org/learn/introduction-tensorflow" class="markup--anchor markup--li-anchor">Coursera: Introduction to Tensorflow</a></span>
 -   <span id="3447">\[ \] <a href="https://www.coursera.org/learn/convolutional-neural-networks-tensorflow" class="markup--anchor markup--li-anchor">Coursera: Convolutional Neural Networks in TensorFlow</a></span>
@@ -836,7 +836,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="7d07">\[ \] <a href="https://www.pluralsight.com/courses/keras-deep-learning" class="markup--anchor markup--li-anchor">Pluralsight: Deep Learning with Keras</a></span>
 -   <span id="1cd4">\[🅤\]ꭏ <a href="https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187" class="markup--anchor markup--li-anchor">Intro to TensorFlow for Deep Learning</a></span>
 
-### Be able to implement models in PyTorch
+### Be able to implement models in PyTorch
 
 -   <span id="0802">\[📰\] <a href="https://towardsdatascience.com/keeping-up-with-pytorch-lightning-and-hydra-31e8ed70b2cc" class="markup--anchor markup--li-anchor">Keeping Up with PyTorch Lightning and Hydra</a></span>
 -   <span id="35cd">\[📰\] <a href="https://towardsdatascience.com/the-one-pytorch-trick-which-you-should-know-2d5e9c1da2ca" class="markup--anchor markup--li-anchor">The One PyTorch Trick Which You Should Know</a></span>
@@ -918,7 +918,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ---
 
-### Be able to implement models using cloud services
+### Be able to implement models using cloud services
 
 -   <span id="3954">\[ \] <a href="https://www.aws.training/learningobject/video?id=27495" class="markup--anchor markup--li-anchor">AWS: Amazon Transcribe Deep Dive: Using Feedback Loops to Improve Confidence Level of Transcription</a></span>
 -   <span id="12ed">\[ \] <a href="https://www.aws.training/learningobject/video?id=27225" class="markup--anchor markup--li-anchor">AWS: Build a Text Classification Model with AWS Glue and Amazon SageMaker</a></span>

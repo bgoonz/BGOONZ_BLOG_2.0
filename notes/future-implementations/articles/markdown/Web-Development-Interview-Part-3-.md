@@ -6,13 +6,13 @@ This installment is going to be the least technically demanding thus far however
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
-### Web Development Interview Part 3💻
+### Web Development Interview Part 3💻
 
 #### **This installment is going to be the least technically demanding thus far however these questions are a more realistic reflection on what a junior developer could be asked by a company with reasonable hiring practices…**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*dTDrkYZJYhASUP2TTknAgA.png" class="graf-image" /></figure>**… Speaking of which … stay tuned till the end of the article or skip down to it for a list of web development companies with reportedly fair hiring practices!**
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*dTDrkYZJYhASUP2TTknAgA.png" class="graf-image" /></figure>**… Speaking of which … stay tuned till the end of the article or skip down to it for a list of web development companies with reportedly fair hiring practices!**
 
-#### Here’s parts one and two; they’re both much more technical in nature than this one!
+#### Here’s parts one and two; they’re both much more technical in nature than this one!
 
 <a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
 <em>Questions….Answers… and links to the missing pieces.</em>medium.com</a><a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -36,7 +36,7 @@ This installment is going to be the least technically demanding thus far however
 
 ---
 
-### What are some side projects you’re currently working on?
+### What are some side projects you’re currently working on?
 
 _Current Experience_
 
@@ -68,7 +68,7 @@ _Current Experience_
 
 > **_⚫_**Whether you’re a proactive communicator and a good planner of your time
 
-### How you strike a balance between multiple ongoing projects
+### How you strike a balance between multiple ongoing projects
 
 <span class="graf-dropCap">D</span>**_escribe one or two instances where you had several projects running simultaneously and how you managed to prioritize different tasks, make progress, meet milestones, and work on iterations based on feedback._**
 
@@ -98,7 +98,7 @@ _Current Experience_
 
 > **_⚫_**Key accomplishments
 
-#### For the second question, showcase your excitement for the job. Hiring managers want to see your excitement for these reasons:
+#### For the second question, showcase your excitement for the job. Hiring managers want to see your excitement for these reasons:
 
 > **_⚫1&gt;_**Excitement will fuel your performance
 
@@ -122,7 +122,7 @@ _Current Experience_
 
 ---
 
-### Commitment to the company
+### Commitment to the company
 
 > **_⚫Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don’t have to stress too much about showing your long-term commitment when answering this question. However, if you haven’t had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
 
@@ -134,7 +134,7 @@ _Current Experience_
 
 > **_⚫_**Processes you’d like to participate in improving
 
-### Why should we hire you?
+### Why should we hire you?
 
 > **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you’ll be a good hire.
 
@@ -160,7 +160,7 @@ _Current Experience_
 
 > **_⚫!!!!!!!_**Practice, practice, and practice, but DO NOT TRY TO MEMORIZE YOUR PITCH!!!!!!!!!
 
-### 📝 Interview Etiquette & Other Tips
+### 📝 Interview Etiquette & Other Tips
 
 Nailing an interview takes more than just knowing how to answer common interview questions. You’ll also need to prepare questions of your own, think about salary, and get your communications right. Here’s how.
 
@@ -190,7 +190,7 @@ Professional growth opportunities
 
 ⮕Do senior engineers and engineering leads usually get promoted from within the company?
 
-### Closing questions and next steps
+### Closing questions and next steps
 
 > **_⚫_**Is there anything unclear or concerning about my background that I can help clarify?
 
@@ -204,7 +204,7 @@ Professional growth opportunities
 
 ---
 
-### Follow up ?????
+### Follow up ?????
 
 > **_⚫_**Depending on how many rounds of interviews you’ve gone through, you may feel differently about how close you are to getting the job. The closer you get to the end of the hiring process, the more likely it is for you to start feeling anxious due to higher expectations. As a result, you may be eager to follow up with the hiring manager regarding your interview results. With that said, there’s a fine line between showing your eager attitude and coming off as desperate.
 
@@ -212,11 +212,11 @@ Professional growth opportunities
 
 > **_⚫_**There are four types of follow up emails you should send at different times after the interview: Thank you email, checking-in email, second follow up email, final follow up email.
 
-#### Thank you email
+#### Thank you email
 
 **A thank you email should be sent out on the same day of the interview or one day after your interview. The main purpose of this email is to show your excitement and appreciation. This email should be short and sweet and should include:**
 
-#### A thank you note for their time
+#### A thank you note for their time
 
 ⮕**A brief mention of the specific job you interviewed for**
 
@@ -230,9 +230,9 @@ Professional growth opportunities
 
 ---
 
-### **_Technical interview :_**
+### **_Technical interview :_**
 
-#### ⮕**_questions examine a candidate’s thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below._**
+#### ⮕**_questions examine a candidate’s thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below._**
 
 ### Here’s the repo that I use to practice my technical chops for interviews:
 
@@ -265,7 +265,7 @@ Professional growth opportunities
 
 > **_⚫ Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority._**
 
-### **_3. Based on the project, what programming languages / tools / services did you use? And why did you choose them?_**
+### **_3. Based on the project, what programming languages / tools / services did you use? And why did you choose them?_**
 
 > **_⚫ Questions like this are designed to allow you to showcase your way of thinking. The interviewer is looking to hear your ability to make choices based on rational decisions — so make sure that you show that you can do this!_**
 
@@ -273,7 +273,7 @@ Professional growth opportunities
 
 > **_⚫ Next, describe the goal of the project, and briefly go through your responsibilities when it came to the toolchain decision-making process. Within Agile work practices, it’s usually a team effort to decide the best programming languages/tools/services are the best fit for the project, within customer requirements. Outline the consultation process you went through with both the customer and your team to arrive at the best solutions._**
 
-### 4. Describe the biggest toolchain-related challenge you encountered in the project:
+### 4. Describe the biggest toolchain-related challenge you encountered in the project:
 
 > **_⚫Outline the situation, the goal you expected, and the reason why there was a challenge._**
 
@@ -281,7 +281,7 @@ Professional growth opportunities
 
 > **_⚫Remember: the most important thing is not what you ultimately used, but how many options you referred to during the process, and which metrics you adopted to decide which tech to go for. Remember to share the pros and cons of your decision, and if, looking back now, whether you would do it differently._**
 
-### 5. How would you design this system for scale?
+### 5. How would you design this system for scale?
 
 > **_⚫First of all, the interviewer would like to know the traffic level we’re expecting: 1,000, 100,000, or 10 million users per second? Think about the data expectations for each system user, database connections (blocking/nonblocking actions), downtime specifics, and cloud considerations (if any)._**
 
@@ -289,7 +289,7 @@ Professional growth opportunities
 
 > **_⚫Different traffic levels may have different system architectures. List the options you think best fit your scenario and explain why you choose them. Many apps utilize a stripped-back product (which can be achieved through system architecture) when high traffic levels affect systems, rather than crashing the product completely or users experiencing unacceptable wait times._**
 
-### 6. Testing: What is your process to test a code when developing a software or application? How do you decide the scope of your test case?
+### 6. Testing: What is your process to test a code when developing a software or application? How do you decide the scope of your test case?
 
 > **_⚫First, do your groundwork to ensure that you thoroughly understand the different testing types. Do you know your unit testing from your regression testing from your user acceptance testing? If you need to brush up, check out this great resource._**
 
@@ -303,7 +303,7 @@ Professional growth opportunities
 
 ### Monitoring
 
-### 7. What kind of tools / services do you use for logging? What kind of data will you log? And what’s the next step when you get the log?
+### 7. What kind of tools / services do you use for logging? What kind of data will you log? And what’s the next step when you get the log?
 
 > **_⚫Time for some details! When answering this question, give an example of a project that you’ve monitored before._**
 
@@ -317,7 +317,7 @@ Professional growth opportunities
 
 ---
 
-### What to avoid
+### What to avoid
 
 > **_⚫_**Complaining about having to handle the problem
 
@@ -333,9 +333,9 @@ Professional growth opportunities
 
 ### NOW; Here’s some for you guys to answer in the comments!
 
-#### 8. Which logging services have you researched and used before?
+#### 8. Which logging services have you researched and used before?
 
-#### 9. Why did you choose or look into each particular logging service?
+#### 9. Why did you choose or look into each particular logging service?
 
 #### 10. Was your decision because of the scale, the features, or the size of the community?
 
@@ -347,7 +347,7 @@ Professional growth opportunities
 
 ---
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -355,7 +355,7 @@ Professional growth opportunities
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

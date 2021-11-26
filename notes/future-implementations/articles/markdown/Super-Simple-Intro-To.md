@@ -4,9 +4,9 @@ What is HTML, CSS & JS and why do we need all three?
 
 ---
 
-### Super Simple Intro To HTML
+### Super Simple Intro To HTML
 
-#### What is HTML, CSS & JS and why do we need all three?
+#### What is HTML, CSS & JS and why do we need all three?
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" /></figure>HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it’s the “Style” it’s how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
 
@@ -22,7 +22,7 @@ Tags and attributes are the basis of HTML.
 
 They work together but perform different functions — it is worth investing 2 minutes in **differentiating the two**.
 
-#### What Are HTML Tags?
+#### What Are HTML Tags?
 
 <a href="https://html.com/tags/" class="markup--anchor markup--p-anchor">Tags</a> are used to **mark up the start of an HTML element** and they are usually enclosed in angle brackets. An example of a tag is: `<h1>`.
 
@@ -38,7 +38,7 @@ An example of an attribute is:
 
 In this instance, the image source (src) and the alt text (alt) are attributes of the `<img>` tag.
 
-#### Golden Rules To Remember
+#### Golden Rules To Remember
 
 1.  <span id="e12a">The vast majority of tags must be **opened** (`<tag>`) and **closed** (`</tag>`) with the element information such as a title or text resting between the tags.</span>
 2.  <span id="c99f">When using multiple tags, the tags must be **closed in the order in which they were opened**. For example:</span>
@@ -46,7 +46,7 @@ In this instance, the image source (src) and the alt text (alt) are attributes o
 
 Let’s have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this
 
-### How to get started
+### How to get started
 
 If you’re using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won’t need to install any extensions. If you’re working in Atom you’ll need to install the Emmet plugin, which can be <a href="https://atom.io/packages/emmet" class="markup--anchor markup--p-anchor">found here</a>.
 
@@ -105,7 +105,7 @@ The three block level tags every HTML document needs to contain are **&lt;html&g
 4.  <span id="97b4">**&lt;li&gt;**List item 3**&lt;/li&gt;**</span>
 5.  <span id="b59a">**&lt;/ul&gt;**</span>
 
-### **Structure of an HTML Document**
+### **Structure of an HTML Document**
 
 An HTML Document is mainly divided into two parts:
 
@@ -136,7 +136,7 @@ Images are inline elements too. You can add one using **_&lt;img&gt;_** without 
 
 1.  <span id="3924">**&lt;img** **src=**”/images/example.jpg” **alt=**”Example image”**&gt;**</span>
 
-#### **BODY**: This contains everything you want to display on the Web Page.
+#### **BODY**: This contains everything you want to display on the Web Page.
 
     <body>
 
@@ -148,7 +148,7 @@ Let us now have a look on the basic structure of HTML. That is the code which is
 
 **_&lt;!DOCTYPE html&gt;_**
 
-#### Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
+#### Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!
 
 ---
 
@@ -200,7 +200,7 @@ _6 types from largest(h1) to smallest (h6)_
 
 As such &lt;title&gt;This is the title&lt;/title&gt; it is always found between &lt;head&gt; tags and not in the body of the page where all the content that gets rendered on the page is contained.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" /></figure>### Here’s a handy Cheat Sheet:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" /></figure>### Here’s a handy Cheat Sheet:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c9Vyer_N97InJsUB.png" class="graf-image" /></figure>Below I am going to Include a gist that contains html code that uses pretty much every tag I could think of off the top of my head…
 
@@ -212,7 +212,7 @@ that super small text at the bottom is actually one giant button:
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*gdM-6smOEc2ChCI_8_Ql_g.png" class="graf-image" /></figure>
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -220,7 +220,7 @@ that super small text at the bottom is actually one giant button:
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

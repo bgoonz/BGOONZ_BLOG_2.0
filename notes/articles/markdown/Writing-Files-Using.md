@@ -4,7 +4,7 @@ Basics of Writing Files in Python The common methods to operate with files are o
 
 ---
 
-### Writing Files Using Python
+### Writing Files Using Python
 
 Basics of Writing Files in Python  
 The common methods to operate with files are open() to open a file,
@@ -15,7 +15,7 @@ close() to close th
 
 As pointed out in a previous article that deals with reading data from files, file handling belongs to the essential knowledge of every professional Python programmer. This feature is a core part of the Python language, and no extra module needs to be loaded to do it properly.
 
-### Basics of Writing Files in Python
+### Basics of Writing Files in Python
 
 The common methods to operate with files are `open()` to open a file, `seek()` to set the file's current position at the given offset, and `close()` to close the file afterwards. The `open()` method returns a file handle that represents a <a href="https://docs.python.org/3/glossary.html#term-file-object" class="markup--anchor markup--p-anchor">file object</a> to be used to access the file for reading, writing, or appending.
 
@@ -23,7 +23,7 @@ Writing to a file requires a few decisions — the name of the file in which
 
 In this article we will explain how to write data to a file line by line, as a list of lines, and appending data at the end of a file.
 
-### Writing a Single Line to a File
+### Writing a Single Line to a File
 
 This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in _Listing 1_. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the "helloworld.txt" file it will either be created if it does not exist yet, or it will be completely overwritten.
 
@@ -40,7 +40,7 @@ This entire process can be shortened using the `with` statement. _Listing 2_ sho
 
 _Listing 2_
 
-### Writing a List of Lines to a File
+### Writing a List of Lines to a File
 
 In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the `writelines()` method. _Listing 3_ gives you an example of this.
 
@@ -116,7 +116,7 @@ _Listing 8_
 
 This is not necessarily best practice, but it does give you other options for writing lines to a file.
 
-### Appending Data to a File
+### Appending Data to a File
 
 So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to 'a’ instead of 'w’.
 
@@ -146,7 +146,7 @@ Using the same helloworld.txt file from before, running this code will produce t
 
 Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

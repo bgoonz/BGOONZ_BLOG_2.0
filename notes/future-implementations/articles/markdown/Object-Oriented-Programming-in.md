@@ -14,20 +14,20 @@ Object-Oriented Programming
 
 -   <span id="b36d">The mechanism that puts behavior and data together behind methods that hide the specific implementation of a class.</span>
 
-#### How can a `CommonJS Module import functionality` from another module?
+#### How can a `CommonJS Module import functionality` from another module?
 
 -   <span id="37ed">Through the use of the require function.</span>
 
-#### How can an ES6 module import functionality from another module?
+#### How can an ES6 module import functionality from another module?
 
 -   <span id="1e02">Through the use of the import-from syntax that looks like this:</span>
 -   <span id="7d93">`import SymbolName from './relative-path.js';`</span>
 
-#### How do `CommonJS Modules` allow other modules to access exported symbols?
+#### How do `CommonJS Modules` allow other modules to access exported symbols?
 
 -   <span id="31b0">Through the use of the module.exports property.</span>
 
-#### How do `ES6 Modules export` functionality so other modules can use them?
+#### How do `ES6 Modules export` functionality so other modules can use them?
 
 -   <span id="3aa7">Through the use of the export keyword.</span>
 
@@ -51,7 +51,7 @@ Object-Oriented Programming
 
 -   <span id="d024">Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance of a dependency.</span>
 
-#### The `extends` keyword
+#### The `extends` keyword
 
 -   <span id="f74f">The keyword in JavaScript that allows one class to inherit from another.</span>
 
@@ -98,7 +98,7 @@ Defining a constructor function _Example of an object using object initializatio
 
 > `Behaviors` **are represented by methods.**
 
--   <span id="ccb5">`Constructor Functions` : Handle the creation of an object - it's a factory for creating objects of a specific type.</span>
+-   <span id="ccb5">`Constructor Functions` : Handle the creation of an object - it's a factory for creating objects of a specific type.</span>
 -   <span id="bdc9">There are a few specific things to constructors worth noting:</span>
 -   <span id="6549">**_The name of the constructor function is capitalized_**</span>
 -   <span id="8e61">The Function _does not explicitly return a value_</span>
@@ -141,17 +141,17 @@ Defining a constructor function _Example of an object using object initializatio
 
 ### Understanding New Object Instances
 
--   <span id="1263">`Instance` : term to describe an objected created from a constructor function.</span>
+-   <span id="1263">`Instance` : term to describe an objected created from a constructor function.</span>
 -   <span id="6916">Every instance created is a unique object and therefore not equal to each other.</span>
 
-### Using the instanceof operator to check an object’s type
+### Using the instanceof operator to check an object’s type
 
     console.log(fellowshipOfTheRing instanceof Book); // true
 
 -   <span id="f5e2">By using the `instanceof` operator we can verify that an object was created from a certain object type.</span>
 -   <span id="9d20">_The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._</span>
 
-### Invoking a constructor function without the new keyword
+### Invoking a constructor function without the new keyword
 
 -   <span id="e812">If we invoke a constructor function without the `new` keyword, we may result in one of two unexpected outcomes:</span>
 
@@ -160,13 +160,13 @@ Defining a constructor function _Example of an object using object initializatio
 
 -   <span id="4f03">You can enable strict mode by typing `"use strict"` at the top of your file.</span>
 
-### Defining Sharable Methods
+### Defining Sharable Methods
 
 -   <span id="0f4e">_Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition._</span>
--   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can't be resolved.</span>
+-   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can't be resolved.</span>
 -   <span id="ddc6">Every instance created by a constructor function shares the same prototype.</span>
 -   <span id="ddba">`Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.</span>
--   <span id="144c">`proto` : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.</span>
+-   <span id="144c">`proto` : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.</span>
 
 <!-- -->
 
@@ -203,7 +203,7 @@ The Problem with Arrow Functions
 
 In ES2015, JS gained the `class` keyword - replacing the need to use only constructor functions & prototypes to mimic classes!
 
--   <span id="df3e">`class` : keyword that gives developers a formal way to create a class definition to specify an object type's attributes and behavior; also used to create objects of that specific type.</span>
+-   <span id="df3e">`class` : keyword that gives developers a formal way to create a class definition to specify an object type's attributes and behavior; also used to create objects of that specific type.</span>
 
 Defining a ES2015 class
 
@@ -220,11 +220,11 @@ Defining a ES2015 class
 -   <span id="a4b1">They don’t explicitly return a value.</span>
 -   <span id="e85e">The this keyword references the newly created object instance.</span>
 
-### Instantiating an instance of a class
+### Instantiating an instance of a class
 
 > We can also use the `new`.
 
-### Four things occur when instantiating an instance of a class:
+### Four things occur when instantiating an instance of a class:
 
 1.  <span id="8842">New empty object is created {};</span>
 2.  <span id="1cd6">The new obj’s prototype is set to the class prototype’s property value.</span>
@@ -233,7 +233,7 @@ Defining a ES2015 class
 
 -   <span id="e722">**Don’t try to instatiate a class object without the new keyword.**</span>
 
-#### Class Definitions are NOT hoisted
+#### Class Definitions are NOT hoisted
 
     test();
 
@@ -247,9 +247,9 @@ Defining a ES2015 class
 Defining Methods
 
 -   <span id="afc2">A class can contain two types of methods:</span>
--   <span id="6099">`Instance Method` : Methods that are invoked on an instance of the class - useful for performing an action on a specific instance.</span>
+-   <span id="6099">`Instance Method` : Methods that are invoked on an instance of the class - useful for performing an action on a specific instance.</span>
 -   <span id="ed85">Instance methods are also sometimes referred to as `prototype` methods because they are defined on a shared prototype object.</span>
--   <span id="ca19">`Static Method` : Methods that invoked directly on a class, not on an instance.</span>
+-   <span id="ca19">`Static Method` : Methods that invoked directly on a class, not on an instance.</span>
 -   <span id="3c58">`Important`: Invoking a static method on an instance will result in a runtime error.</span>
 -   <span id="a067">Prepending the `static` keyword at the beginning on the method name will make it static.</span>
 
@@ -341,9 +341,9 @@ Defining Methods
 
 ### Javascript Inheritance
 
--   <span id="76a3">`Child Class` : Class that is based upon another class and inherits properties and methods from that other class.</span>
--   <span id="9c4b">`Parent Class` : Class that is being inherited downwards.</span>
--   <span id="673c">`Inheritance` : The process of basing a class upon another class.</span>
+-   <span id="76a3">`Child Class` : Class that is based upon another class and inherits properties and methods from that other class.</span>
+-   <span id="9c4b">`Parent Class` : Class that is being inherited downwards.</span>
+-   <span id="673c">`Inheritance` : The process of basing a class upon another class.</span>
 
 <!-- -->
 
@@ -405,7 +405,7 @@ Defining Methods
 
 Overriding a method in a parent class
 
--   <span id="71f7">`Method Overriding` : when a child class provides an implementation of a method that's already defined in a parent class.</span>
+-   <span id="71f7">`Method Overriding` : when a child class provides an implementation of a method that's already defined in a parent class.</span>
 
 <!-- -->
 
@@ -436,11 +436,11 @@ Introducing Node.js modules
 
 -   <span id="7869">In Node.js, each JS file in a project defines a `module`.</span>
 -   <span id="fdaa">Module’s contents are private by default.</span>
--   <span id="1ee7">`Local Modules` : Modules defined within your project.</span>
--   <span id="47f2">`Core Modules` : Native modules contained within Node.js that you can use to perform tasks or to add functionality to your application.</span>
--   <span id="dc6e">`CommonJS` : A legacy module system.</span>
--   <span id="20cd">`ES Modules` : Newer module sysem that will eventually replace CommonJS.</span>
--   <span id="5889">`Entry Point` : JS File that is passed to Node for access to the entire application.</span>
+-   <span id="1ee7">`Local Modules` : Modules defined within your project.</span>
+-   <span id="47f2">`Core Modules` : Native modules contained within Node.js that you can use to perform tasks or to add functionality to your application.</span>
+-   <span id="dc6e">`CommonJS` : A legacy module system.</span>
+-   <span id="20cd">`ES Modules` : Newer module sysem that will eventually replace CommonJS.</span>
+-   <span id="5889">`Entry Point` : JS File that is passed to Node for access to the entire application.</span>
 
 ### Syntax for exporting modules:
 
@@ -454,14 +454,14 @@ Introducing Node.js modules
 
     const { Book, Movie } = require(“./classes”);
 
-#### Using Single Item Modules
+#### Using Single Item Modules
 
 -   <span id="0b43">Following the convention of a single exported item per module helps to keep modules focused and less likely to become bloted with too much code.</span>
 
-#### Understanding Module Loading
+#### Understanding Module Loading
 
 -   <span id="a924">When loading a module, Node will examine the identifier passed to the require() function to determine if our module is local, core, or third-party:</span>
--   <span id="42b7">`Local Module`: identifier starts with ./ ../ or /</span>
+-   <span id="42b7">`Local Module`: identifier starts with ./ ../ or /</span>
 -   <span id="7f81">`Node.js Core`: identifier matches name</span>
 -   <span id="ecfe">`Third-Party`: identifier matches a module in the node modules folder (installed package)</span>
 
@@ -473,8 +473,8 @@ Introducing Node.js modules
 
 ### `Inheritance`
 
--   <span id="5328">`Implementation Inheritance`** :** Means that data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes.</span>
--   <span id="743c">`Prototypal Inheritance` : Means that JS uses prototype objects to make its `implementation inheritance` actually work.</span>
+-   <span id="5328">`Implementation Inheritance`** :** Means that data and methods defined on a parent class are available on objects created from classes that inherit from those parent classes.</span>
+-   <span id="743c">`Prototypal Inheritance` : Means that JS uses prototype objects to make its `implementation inheritance` actually work.</span>
 -   <span id="39b5">Parent Class === Prototype === Super Class === Base Class</span>
 -   <span id="8a35">Inheritance === Subtyping</span>
 
@@ -592,9 +592,9 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="7861">`Dependency Inversion Principle`</span>
 -   <span id="40a9">Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance.</span>
 
-### Controlling Coupling with The Law of Demeter
+### Controlling Coupling with The Law of Demeter
 
--   <span id="2e83">`Coupling` : The degree of interdependence between two or more classes.</span>
+-   <span id="2e83">`Coupling` : The degree of interdependence between two or more classes.</span>
 -   <span id="d484">The fewer the connections between classes, the less chance there is for the _ripple effect_.</span>
 -   <span id="dc31">Here is the formal definition:</span>
 -   <span id="61b4">A method of an object can only invoke the methods (or use the properties) of the following kind of objects:</span>
@@ -607,7 +607,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="0d36">Easiest way to implement it is to _not us more than one dot_</span>
 -   <span id="76ea">You cannot cheat by separating extra calls onto different lines.</span>
 
-### When to ignore the Law of Demeter
+### When to ignore the Law of Demeter
 
 -   <span id="770a">When you work with objects that come from code that you didn’t create — you will often have to break the LoD.</span>
 
@@ -620,7 +620,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="d850">This breaks the law but there is way about it because your code needs to know about both elements and you have to use the API provided by the DOM.</span>
 -   <span id="9dc9">UI’s will break LoD because they are not object-oriented programs.</span>
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -628,7 +628,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

@@ -6,14 +6,14 @@ A set of questions you should use before handing off your application to the cli
 
 ### Quick Web Developers Website Checklist & A List Of Tools For Improvement
 
-#### A set of questions you should use before handing off your application to the client.
+#### A set of questions you should use before handing off your application to the client.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*QD7rah374uFotVYN.jpg" class="graf-image" /></figure>First off… download this developer checklist extension for chrome that literally evaluates the checkpoints on any webpage you activate it on.. it also provides advice and html validation so that you can improve your site and it’s SEO rankings!
 
 <a href="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US"><strong>Web Developer Checklist</strong><br />
 <em>Analyses any web page for violations of best practices</em>chrome.google.com</a><a href="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-#### Here it is in action :
+#### Here it is in action :
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh8BZUzF7nRISPrwDTz05Q.png" class="graf-image" /></figure>### Remainder of tool list is below this checklist:
 
@@ -23,9 +23,9 @@ A set of questions you should use before handing off your application to the cli
 
 > _Does the content meet user needs, goals, and interests?_
 
-> _Does the content meet business goals?_
+> _Does the content meet business goals?_
 
-> _For how long will the content be useful? When should it expire? Has its usefulness already expired?_
+> _For how long will the content be useful? When should it expire? Has its usefulness already expired?_
 
 > _Is the content timely and relevant?_
 
@@ -37,11 +37,11 @@ A set of questions you should use before handing off your application to the cli
 
 > **Is the content organized logically & coherently?**
 
-> **Is the content correct?**
+> **Is the content correct?**
 
 > **Does the content contain factual errors, typos, or grammatical errors?**
 
-> **Do images, video, and audio meet technical standards, so they are clear?**
+> **Do images, video, and audio meet technical standards, so they are clear?**
 
 ---
 
@@ -51,21 +51,21 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content execute those techniques effectively?
 
-> Does the content use too many or too few techniques for the context?
+> Does the content use too many or too few techniques for the context?
 
 ---
 
 ### Completeness:
 
-> Does the content include all of the information customers need or might want about a topic?
+> Does the content include all of the information customers need or might want about a topic?
 
-> Does the content include too much or too little information about a topic for the context?
+> Does the content include too much or too little information about a topic for the context?
 
-### Voice & Style:
+### Voice & Style:
 
-> Does the content consistently reflect the editorial or brand voice?
+> Does the content consistently reflect the editorial or brand voice?
 
-> Does its tone adjust appropriately to the context — for example, sales versus customer service?
+> Does its tone adjust appropriately to the context — for example, sales versus customer service?
 
 > Does the content convey the appropriate editorial and brand qualities?
 
@@ -77,21 +77,21 @@ A set of questions you should use before handing off your application to the cli
 
 ### Usability & Findability:
 
-> Is the content easy to scan or read?
+> Is the content easy to scan or read?
 
-> Is the content in a usable format, including headings, bulleted lists, tables, white space, or similar techniques, as appropriate to the content?
+> Is the content in a usable format, including headings, bulleted lists, tables, white space, or similar techniques, as appropriate to the content?
 
 > Does the content have the appropriate metadata?
 
-> Does the content follow search engine optimization (SEO) guidelines — such as using keywords — without sacrificing quality in other areas?
+> Does the content follow search engine optimization (SEO) guidelines — such as using keywords — without sacrificing quality in other areas?
 
 > Can customers find the content when searching using relevant keywords?
 
 ---
 
-### SEO Advice From Google:
+### SEO Advice From Google:
 
-### Help Google find your pages
+### Help Google find your pages
 
 -   <span id="6fe9">Ensure that all pages on the site can be reached by a link from another findable page. The referring link should include either text or, for images, an alt attribute, that is relevant to the target page. Crawlable links are `<a>` <a href="https://developers.google.com/search/docs/advanced/guidelines/links-crawlable" class="markup--anchor markup--li-anchor">tags with an href attribute</a>.</span>
 -   <span id="f878">Provide a <a href="http://sitemaps.org/" class="markup--anchor markup--li-anchor">sitemap file</a> with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).</span>
@@ -104,7 +104,7 @@ A set of questions you should use before handing off your application to the cli
 -   <span id="417a"><a href="https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl" class="markup--anchor markup--li-anchor">Ask Google to crawl your pages</a>.</span>
 -   <span id="2ba7">Make sure that any sites that should know about your pages are aware your site is online.</span>
 
-### Help Google understand your pages
+### Help Google understand your pages
 
 -   <span id="6069">Create a useful, information-rich site, and write pages that clearly and accurately describe your content.</span>
 -   <span id="16eb">Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.</span>
@@ -117,7 +117,7 @@ A set of questions you should use before handing off your application to the cli
 -   <span id="e5c6">Make your site’s important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.</span>
 -   <span id="58bf">Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use <a href="https://developers.google.com/search/docs/advanced/robots/intro" class="markup--anchor markup--li-anchor">robots.txt</a>, `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.</span>
 
-### Help visitors use your pages
+### Help visitors use your pages
 
 -   <span id="76dc">Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the `alt` attribute to include a few words of descriptive text.</span>
 -   <span id="d45e">Ensure that all links go to live web pages. Use <a href="https://validator.w3.org/" class="markup--anchor markup--li-anchor">valid HTML</a>.</span>
@@ -286,7 +286,7 @@ You can also go above and beyond with some new <a href="https://webflow.com/blog
 
 These tags are important because they let you identify the content that’s most relevant to users. In short: making it easy for search engines makes it easier for users to find you.
 
-### 2. Meta SEO tags
+### 2. Meta SEO tags
 
 Aside from on-page structure, you can also help web crawlers understand your site by titling and describing your pages as a whole. We outline a few tips <a href="https://webflow.com/blog/website-seo" class="markup--anchor markup--p-anchor">on website SEO on our blog</a>, narrowed down to 2 main considerations below.
 
@@ -309,7 +309,7 @@ Some best practices include:
 -   <span id="022c">Don’t go over 160 characters</span>
 -   <span id="13ac">Write your description for people, not robots. (Google doesn’t use descriptions in web rankings).</span>
 
-### 3. Open Graph settings
+### 3. Open Graph settings
 
 Social media has become a key element of SEO, so it’s crucial that you amplify this process by providing effective Open Graph information. Open Graph settings include three pieces of content: title, description, and an image.
 
@@ -438,7 +438,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 <em>We have estimated that by transitioning to automated front-end visual testing and by having easy access to so many…</em>crossbrowsertesting.com</a><a href="https://crossbrowsertesting.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="http://no-www.org/" class="markup--anchor markup--mixtapeEmbed-anchor" title="http://no-www.org/"><strong>www. is deprecated.</strong><br />
-<em>Stay in touch! Dec 21, 2012 No-WWW now hasa a social media presence! Check us out on Twitter at @www_deprecated . We…</em>no-www.org</a><a href="http://no-www.org/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>Stay in touch! Dec 21, 2012 No-WWW now hasa a social media presence! Check us out on Twitter at @www_deprecated . We…</em>no-www.org</a><a href="http://no-www.org/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://www.yes-www.org/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.yes-www.org/"><strong>www. is not deprecated</strong><br />
 <em>Ever since the first traditional media ads began to appear with Web site addresses in them 25 years ago, people have…</em>www.yes-www.org</a><a href="https://www.yes-www.org/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -452,7 +452,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 <a href="https://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972"><strong>Quick Tip: Don't Forget the Viewport Meta Tag</strong><br />
 <em>I remember my maiden voyage into responsive web design; I'd used a classic grid, wrestled with a flexible layout, and…</em>webdesign.tutsplus.com</a><a href="https://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://html5tutorial.info/html5-contact.php" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://html5tutorial.info/html5-contact.php"><strong>Input Type : Email,URL,Phone</strong><br />
+<a href="https://html5tutorial.info/html5-contact.php" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://html5tutorial.info/html5-contact.php"><strong>Input Type : Email,URL,Phone</strong><br />
 <em>Email, Phone number and Website url are the three most commonly used contact detail which has its unique input…</em>html5tutorial.info</a><a href="https://html5tutorial.info/html5-contact.php" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="http://diveintohtml5.info/forms.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="http://diveintohtml5.info/forms.html"><strong>Web Forms - Dive Into HTML5</strong><br />
@@ -498,7 +498,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 <em>Compress and compare images with different codecs, right in your browser</em>squoosh.app</a><a href="https://squoosh.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="http://pnggauntlet.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="http://pnggauntlet.com/"><strong>PNGGauntlet - PNG Compression Software</strong><br />
-<em>PNGGauntlet 3.1.2 is a minor update that resolves some bugs, and adds a much-requested option. First, the bugfixes …</em>pnggauntlet.com</a><a href="http://pnggauntlet.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>PNGGauntlet 3.1.2 is a minor update that resolves some bugs, and adds a much-requested option. First, the bugfixes …</em>pnggauntlet.com</a><a href="http://pnggauntlet.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://imageoptim.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://imageoptim.com/"><strong>ImageOptim - better Save for Web</strong><br />
 <em>Reduces image file sizes - so they take up less disk space and down­load faster - by applying advanced compression…</em>imageoptim.com</a><a href="https://imageoptim.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -657,7 +657,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 <em>HTTP Strict Transport Security (also named HSTS) is an opt-in security enhancement that is specified by a web…</em>cheatsheetseries.owasp.org</a><a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://www.html5rocks.com/en/tutorials/security/content-security-policy/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.html5rocks.com/en/tutorials/security/content-security-policy/"><strong>Content Security Policy | Web Fundamentals | Google Developers</strong><br />
-<em>The web's security model is rooted in the same-origin policy . Code from https://mybank.com should only have access to…</em>www.html5rocks.com</a><a href="https://www.html5rocks.com/en/tutorials/security/content-security-policy/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>The web's security model is rooted in the same-origin policy . Code from https://mybank.com should only have access to…</em>www.html5rocks.com</a><a href="https://www.html5rocks.com/en/tutorials/security/content-security-policy/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP"><strong>Content Security Policy (CSP) - HTTP | MDN</strong><br />
 <em>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

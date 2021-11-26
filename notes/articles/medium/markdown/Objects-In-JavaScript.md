@@ -19,7 +19,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="ac45">Objects are defined by using curly braces `{}`</span>
 -   <span id="2ca3">You can think of Objects as tables.</span>
 
-#### **Setting Keys and Values**
+#### **Setting Keys and Values**
 
 -   <span id="d19c">We assign values to an object by defining the name of the key in brackets and assigning it to a value.</span>
 
@@ -41,7 +41,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="6499">If we try to access a key that has not yet been assigned within an object we will output undefined.</span>
 -   <span id="7d01">The **preferred method** for checking to see if an object exists at a key is to use the `in` operator.</span>
 
-#### **Using Variables as Keys**
+#### **Using Variables as Keys**
 
 -   <span id="e833">It is useful to set a variable as a key because variables can be re-assigned new values — this way we can quickly access different data and also create new key/value pairs.</span>
 
@@ -82,7 +82,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="ec54">We can also use **dot notation** **“.”** to access key/value pairs in an object.</span>
 -   <span id="cd22">One thing to note is that when using dot notation, we do not have to use string quotes as the key.</span>
 
-#### **Bracket Notation vs Dot Notation**
+#### **Bracket Notation vs Dot Notation**
 
 **DotBracket**Easier To ReadYou can use variables as keys! Easier To Write b/c do not need Quotations. Okay to use variables and Strings that start with numbers.Cannot access with VariablesKeys cannot contain numbers as their first character
 
@@ -106,7 +106,7 @@ You can put an object together in a single statement.
 
 -   <span id="ffba">The concept of Operator Precedence also applies to objects.</span>
 -   <span id="79e4">There are two types of associativity:</span>
--   <span id="1883">`Right Associativity` : When code is evaluated right to left.</span>
+-   <span id="1883">`Right Associativity` : When code is evaluated right to left.</span>
 
 <!-- -->
 
@@ -114,7 +114,7 @@ You can put an object together in a single statement.
 
     - Since **assignment of variables** takes lowest precedence, we end up evaluating b = 1 first before a = b.
 
--   <span id="3d7c">`Left Associativity` : When code is evaluated left to right.</span>
+-   <span id="3d7c">`Left Associativity` : When code is evaluated left to right.</span>
 
 <!-- -->
 
@@ -123,11 +123,11 @@ You can put an object together in a single statement.
 
     - We first resolve the document variable, then use dot notation to retrieve the getElementById function, we eval it's arguments, access it's value, and then retrieve assignment \(the lowest precedence\).
 
-### Iterating Through Objects
+### Iterating Through Objects
 
 Because objects store **unordered** key-value pairs, we do not rely on indices to access values; instead, we rely on our keys.
 
-#### **A New Kind of For Loop**
+#### **A New Kind of For Loop**
 
 > SYNTAX: for (let variable in object) {statement};
 
@@ -152,14 +152,14 @@ A `Method` is a function that belongs to an object. Every method is a function, 
 
     myObject.methodName();
 
-#### **Useful Object Methods**
+#### **Useful Object Methods**
 
--   <span id="dd4b">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
--   <span id="0d49">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
+-   <span id="dd4b">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
+-   <span id="0d49">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
 
-#### **Iterating through an Object’s keys & values**
+#### **Iterating through an Object’s keys & values**
 
--   <span id="b2aa">`Object.entries` : Method that accepts an object as the argument and returns an array of the \[key, value\] pairs within.</span>
+-   <span id="b2aa">`Object.entries` : Method that accepts an object as the argument and returns an array of the \[key, value\] pairs within.</span>
 
 <!-- -->
 
@@ -167,7 +167,7 @@ A `Method` is a function that belongs to an object. Every method is a function, 
 
 ### References vs Primitives
 
-#### **Primitives vs Objects**
+#### **Primitives vs Objects**
 
 So far we have learned about 6 different data types:
 
@@ -184,7 +184,7 @@ So far we have learned about 6 different data types:
 
 -   <span id="0930">If we change either cat1 or cat2, our computer memory will change because they are both pointing at the same memory location.</span>
 
-### Rest and Spread
+### Rest and Spread
 
 #### **Using the Spread Operator and Rest Parameter Syntax** **Accepting Arguments**
 
@@ -194,10 +194,10 @@ So far we have learned about 6 different data types:
 
 #### **Utilizing Rest Parameters**
 
--   <span id="6379">`Rest Parameter Syntax` : Allows us to capture all of a function's incoming arguments into an array.</span>
+-   <span id="6379">`Rest Parameter Syntax` : Allows us to capture all of a function's incoming arguments into an array.</span>
 -   <span id="0807">Only the last parameter can be a rest parameter.</span>
 
-#### **Utilizing Spread Syntax**
+#### **Utilizing Spread Syntax**
 
 -   <span id="71ff">**Spread Operator**: This allows us to break down a data type into the elements that make it up.</span>
 -   <span id="6ef0">Takes a data type (i.e. array, obj) and spreads the values of that type where elements are expected.</span>
@@ -219,7 +219,7 @@ So far we have learned about 6 different data types:
 
 ---
 
-### Learn More On My Blog:
+### Learn More On My Blog:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

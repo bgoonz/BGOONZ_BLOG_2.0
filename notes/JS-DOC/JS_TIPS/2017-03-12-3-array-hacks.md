@@ -10,7 +10,7 @@ categories: - en - javascript
 
 Arrays are everywhere in JavaScript and with the new [spread operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) introduced in ECMAScript 6, you can do awesome things with them. In this post I will show you 3 useful tricks you can use when programming.
 
-### 1. Iterating through an empty array
+### 1. Iterating through an empty array
 
 JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array’s constructor and you will see what I mean.
 
@@ -35,7 +35,7 @@ To solve this, you can use `Array.apply` when creating the array.
 [0, 1, 2, 3]
 ```
 
-### 2. Passing an empty parameter to a method
+### 2. Passing an empty parameter to a method
 
 If you want to call a method and ignore one of its parameters, then JavaScript will complain if you keep it empty.
 
@@ -57,7 +57,7 @@ I personally don’t like using `null` since JavaScript treats it as an object a
 > method(...['parameter1', , 'parameter3']); // works!
 ```
 
-### 3. Unique array values
+### 3. Unique array values
 
 I always wonder why the Array constructor does not have a designated method to facilitate the use of unique array values. Spread operators are here for the rescue. Use spread operators with the `Set` constructor to generate unique array values.
 

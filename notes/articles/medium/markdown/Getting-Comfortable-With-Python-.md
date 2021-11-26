@@ -4,9 +4,9 @@ An introduction by example
 
 ---
 
-### **Getting Comfortable With Python:**
+### **Getting Comfortable With Python:**
 
-#### An introduction by example
+#### An introduction by example
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*QWb2YSJPCjrY2Ds6T-HL3A.png" class="graf-image" /></figure>
 

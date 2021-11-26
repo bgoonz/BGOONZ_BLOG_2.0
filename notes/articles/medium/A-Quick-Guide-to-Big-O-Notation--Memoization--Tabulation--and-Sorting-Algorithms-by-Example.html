@@ -96,7 +96,7 @@
                 <div class="section-content">
                     <div class="section-inner sectionLayout--insetColumn">
                         <h3 name="794e" id="794e" class="graf graf--h3 graf--leading graf--title">
-                            A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+                            A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
                         </h3>
                         <figure name="33dc" id="33dc" class="graf graf--figure graf-after--h3">
                             <img class="graf-image" data-image-id="0*yjlSk3T9c2_14in1.png" data-width="1000" data-height="704" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" />
@@ -135,7 +135,7 @@
                                 <code class="markup--code markup--li-code">How does our performance scale?</code>.
                             </li>
                         </ul>
-                        <h3 name="5fc8" id="5fc8" class="graf graf--h3 graf-after--li">big 'O’ notation</h3>
+                        <h3 name="5fc8" id="5fc8" class="graf graf--h3 graf-after--li">big 'O’ notation</h3>
                         <ul class="postList">
                             <li name="9b21" id="9b21" class="graf graf--li graf-after--h3">
                                 Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
@@ -152,27 +152,27 @@
                                 Big O is simplified to show only its most dominant mathematical term.
                             </li>
                         </ul>
-                        <h3 name="6083" id="6083" class="graf graf--h3 graf-after--li">Simplifying Math Terms</h3>
+                        <h3 name="6083" id="6083" class="graf graf--h3 graf-after--li">Simplifying Math Terms</h3>
                         <ul class="postList">
                             <li name="64a4" id="64a4" class="graf graf--li graf-after--h3">
                                 We can use the following rules to simplify the our Big O functions:
                             </li>
                             <li name="a2c2" id="a2c2" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code">Simplify Products</code> : If the function is a product of many terms, we drop
+                                <code class="markup--code markup--li-code">Simplify Products</code> : If the function is a product of many terms, we drop
                                 the terms that don&#39;t depend on n.
                             </li>
                             <li name="b058" id="b058" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code">Simplify Sums</code> : If the function is a sum of many terms, we drop the
+                                <code class="markup--code markup--li-code">Simplify Sums</code> : If the function is a sum of many terms, we drop the
                                 non-dominant terms.
                             </li>
                             <li name="eb32" id="eb32" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code">n</code> : size of the input
+                                <code class="markup--code markup--li-code">n</code> : size of the input
                             </li>
                             <li name="c042" id="c042" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code">T(f)</code> : unsimplified math function
+                                <code class="markup--code markup--li-code">T(f)</code> : unsimplified math function
                             </li>
                             <li name="7b41" id="7b41" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code">O(f)</code> : simplified math function.
+                                <code class="markup--code markup--li-code">O(f)</code> : simplified math function.
                             </li>
                         </ul>
                         <p name="9e91" id="9e91" class="graf graf--p graf-after--li">
@@ -231,7 +231,7 @@
                             <script src="https://gist.github.com/eengineergz/cc953ba2bd6e1d6f524a6d8b297aad5b.js"></script>
                         </figure>
                         <h3 name="b965" id="b965" class="graf graf--h3 graf-after--figure">
-                            <code class="markup--code markup--h3-code">O(nlog(n)) Log Linear Time</code>
+                            <code class="markup--code markup--h3-code">O(nlog(n)) Log Linear Time</code>
                         </h3>
                         <blockquote name="90c3" id="90c3" class="graf graf--blockquote graf-after--h3">
                             <strong class="markup--strong markup--blockquote-strong">Combination of linear and logarithmic behavior, we will see features from both classes.</strong>
@@ -276,7 +276,7 @@
                         <h3 name="715f" id="715f" class="graf graf--h3 graf--leading">Memoization</h3>
                         <ul class="postList">
                             <li name="b3b0" id="b3b0" class="graf graf--li graf-after--h3">
-                                Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use
+                                Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use
                                 recursive strategies to solve.
                             </li>
                             <li name="2583" id="2583" class="graf graf--li graf-after--li">
@@ -325,7 +325,7 @@
                                 <em class="markup--em markup--li-em">Write the unoptimized brute force recursion (make sure it works);</em>
                             </li>
                             <li name="b36e" id="b36e" class="graf graf--li graf-after--li">
-                                <em class="markup--em markup--li-em">Add memo object as an additional argument .</em>
+                                <em class="markup--em markup--li-em">Add memo object as an additional argument .</em>
                             </li>
                             <li name="f81f" id="f81f" class="graf graf--li graf-after--li">
                                 <em class="markup--em markup--li-em">Add a base case condition that returns the stored value if the function’s argument is in the memo.</em>
@@ -335,7 +335,7 @@
                                     it’s key.</em>
                             </li>
                         </ol>
-                        <h4 name="dad0" id="dad0" class="graf graf--h4 graf-after--li">Things to remember</h4>
+                        <h4 name="dad0" id="dad0" class="graf graf--h4 graf-after--li">Things to remember</h4>
                         <ol class="postList">
                             <li name="bc4a" id="bc4a" class="graf graf--li graf-after--h4">
                                 <em class="markup--em markup--li-em">When solving DP problems with Memoization, it is helpful to draw out the visual tree first.</em>
@@ -417,7 +417,7 @@
                         <figure name="4ba2" id="4ba2" class="graf graf--figure graf--iframe graf-after--blockquote">
                             <script src="https://gist.github.com/eengineergz/b1b1f7e259193ecdc432350b6199f2d3.js"></script>
                         </figure>
-                        <h3 name="a8cd" id="a8cd" class="graf graf--h3 graf-after--figure">Example of Linear Search</h3>
+                        <h3 name="a8cd" id="a8cd" class="graf graf--h3 graf-after--figure">Example of Linear Search</h3>
                         <figure name="4301" id="4301" class="graf graf--figure graf--iframe graf-after--h3">
                             <script src="https://gist.github.com/eengineergz/e98354b287ce2f80da4ab943399eb555.js"></script>
                         </figure>
@@ -485,7 +485,7 @@
                                 <em class="markup--em markup--li-em">There is stigma attached to it</em>
                             </li>
                             <li name="8da7" id="8da7" class="graf graf--li graf-after--li">
-                                <code class="markup--code markup--li-code"><em class="markup--em markup--li-em">Bubbling Up</em></code><em class="markup--em markup--li-em"> : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em>
+                                <code class="markup--code markup--li-code"><em class="markup--em markup--li-em">Bubbling Up</em></code><em class="markup--em markup--li-em"> : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em>
                             </li>
                             <li name="8447" id="8447" class="graf graf--li graf-after--li">
                                 <em class="markup--em markup--li-em">Bubble sort, sorts an array of integers by bubbling the largest integer to the top.</em>
@@ -602,7 +602,7 @@
                         <figure name="cc87" id="cc87" class="graf graf--figure graf-after--figure">
                             <img class="graf-image" data-image-id="0*IxqGb72XDVDeeiMl" data-width="618" data-height="595" src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" />
                         </figure>
-                        <h3 name="3aa9" id="3aa9" class="graf graf--h3 graf-after--figure">Example of Merge Sort</h3>
+                        <h3 name="3aa9" id="3aa9" class="graf graf--h3 graf-after--figure">Example of Merge Sort</h3>
                         <figure name="5d54" id="5d54" class="graf graf--figure graf--iframe graf-after--h3">
                             <script src="https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48.js"></script>
                         </figure>
@@ -727,7 +727,7 @@
                             <script src="https://gist.github.com/eengineergz/ffead1de0836c4bcc6445780a604f617.js"></script>
                         </figure>
                         <h3 name="3695" id="3695" class="graf graf--h3 graf-after--figure">
-                            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+                            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
                         </h3>
                         <div name="1c2f" id="1c2f" class="graf graf--mixtapeEmbed graf-after--h3">
                             <a href="https://gist.github.com/bgoonz" data-href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz’s gists</strong><br /><em class="markup--em markup--mixtapeEmbed-em">Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python
@@ -736,7 +736,7 @@
                         <div name="3585" id="3585" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed">
                             <a href="https://github.com/bgoonz" data-href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em class="markup--em markup--mixtapeEmbed-em">Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce" data-thumbnail-img-id="0*Udg3rbeFyslZ9dyl" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Udg3rbeFyslZ9dyl)"></a>
                         </div>
-                        <h3 name="cb1a" id="cb1a" class="graf graf--h3 graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</h3>
+                        <h3 name="cb1a" id="cb1a" class="graf graf--h3 graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</h3>
                         <div name="8a50" id="8a50" class="graf graf--mixtapeEmbed graf-after--h3">
                             <a href="https://bgoonz-blog.netlify.app/" data-href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong><br /><em class="markup--em markup--mixtapeEmbed-em">Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="a2f1abe4ed6a87b0b90d28e55f930d20" data-thumbnail-img-id="0*MGabeSINrLT_H7Pc" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*MGabeSINrLT_H7Pc)"></a>
                         </div>

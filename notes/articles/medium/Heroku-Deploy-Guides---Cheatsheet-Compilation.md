@@ -8,11 +8,11 @@ Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Ja
 
 #### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of _source code_ written in one of these languages, perhaps a framework, and some _dependency description_ that instructs a build system as to which additional dependencies are needed in order to build and run the application.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*gAOfoFENBTwE5mqJ.gif" class="graf-image" /></figure>#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*gAOfoFENBTwE5mqJ.gif" class="graf-image" /></figure>#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
 
 > Heroku hosts apps on the internet, not static websites. To get it to run your static portfolio, personal blog, etc., you need to trick Heroku into thinking your website is a PHP app.
 
-> Basic Assumptions You want to deploy some straight-up HTML, CSS, JS, maybe a few images. Nothing fancy here. You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site) The root directory contains a main HTML page, e.g. index.html A Heroku app and remote are set up and ready to go Steps Add a file called composer.json to the root directory by running touch composer.json Add a file called index.php to the root directory by running touch index.php Rename the homepage (e.g. index.html) to home.html In index.php, add the following line: In composer.json, add the following line: {} Run git push heroku master Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app ☺).
+> Basic Assumptions You want to deploy some straight-up HTML, CSS, JS, maybe a few images. Nothing fancy here. You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site) The root directory contains a main HTML page, e.g. index.html A Heroku app and remote are set up and ready to go Steps Add a file called composer.json to the root directory by running touch composer.json Add a file called index.php to the root directory by running touch index.php Rename the homepage (e.g. index.html) to home.html In index.php, add the following line: In composer.json, add the following line: {} Run git push heroku master Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app ☺).
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -24,7 +24,7 @@ Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Ja
 
 > **-heavily borrowed from this** <a href="https://www.freecodecamp.org/news/how-to-deploy-an-application-to-heroku/" class="markup--anchor markup--blockquote-anchor"><strong>free code camp article</strong></a> **by Stan Georgian.**
 
-### 1.) Create the project
+### 1.) Create the project
 
 Starting with any basic boilerplate demo server with NodeJS.
 
@@ -34,7 +34,7 @@ Once this library is installed, we can create a new file for our project, named 
 
 We can start the application by running `node app.js`. Then we can try it out at the following URL `http://localhost:3000`. At this point you should see the message `Hello World` in the browser.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3FuViRnU9-PB5uqf.PNG" class="graf-image" /></figure>### 2.) Version Control
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*3FuViRnU9-PB5uqf.PNG" class="graf-image" /></figure>### 2.) Version Control
 
 The next step is to choose a version control system and to place our code in a development platform in a repository.
 
@@ -46,13 +46,13 @@ On GitHub, go ahead and create a new repository for your application, like this:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*C7nOWV7ygqTRdqcu.PNG" class="graf-image" /></figure>**!** Before we do this, we must ignore some files. We want to upload to the repository only the code that we write, without the dependencies (the installed modules).
 
-For that, we need to create a new file `.gitignore` and inside it write the file that we want to ignore.
+For that, we need to create a new file `.gitignore` and inside it write the file that we want to ignore.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*T-9QyGzUdWvFuA-D.PNG" class="graf-image" /></figure>Now, we can write the commands listed in the picture above (the one from GitHub).
 
 If you ran the commands correctly, then it’ll be on your repository’s page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.PNG" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.PNG" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
 
 At this step, we can link the repository from Github to our Heroku application.
 
@@ -93,15 +93,15 @@ To update our application, all we need to do is push a new commit to GitHub. If 
 
 ---
 
-### Full Stack Deploy:
+### Full Stack Deploy:
 
 ### Alternative Approach:
 
 ---
 
-### This one was created by Nick G and originally posted on medium Aug 29 2020.
+### This one was created by Nick G and originally posted on medium Aug 29 2020.
 
-### Find More On My Blog:
+### Find More On My Blog:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

@@ -4,13 +4,13 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 ---
 
-### Beginners Guide To Python
+### Beginners Guide To Python
 
 #### My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
 > Bram Cohen
 
-#### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science.
+#### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science.
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -23,9 +23,9 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 <a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe"><strong>Basic Web Development Environment Setup</strong><br />
 <em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### The Repository & Live Site Behind This Article:
+### The Repository & Live Site Behind This Article:
 
-### About Python(Taken From Tutorial Page Of Docs):
+### About Python(Taken From Tutorial Page Of Docs):
 
 <a href="https://docs.python.org/3/tutorial/appetite.html" class="markup--anchor markup--p-anchor">Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</a>
 
@@ -46,7 +46,7 @@ To determine if your Windows computer already has Python 3:
 `python --version`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
-2.  <span id="7c04">If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.</span>
+2.  <span id="7c04">If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.</span>
 
 #### i.e.
 
@@ -65,14 +65,14 @@ To determine if your Windows computer already has Python 3:
 -   <span id="c462">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span>
 -   <span id="74e1">It is also Object oriented, modular oriented and a scripting language.</span>
 -   <span id="6e0e">In Python, everything is considered as an Object.</span>
--   <span id="490d">A python file has an extension of .py</span>
+-   <span id="490d">A python file has an extension of .py</span>
 -   <span id="2bd5">Python follows Indentation to separate code blocks instead of flower brackets({}).</span>
 -   <span id="6434">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b76b">`python <filename.py>`</span>
 
-#### By default, the python doesn’t require any imports to run a python file.
+#### By default, the python doesn’t require any imports to run a python file.
 
-### Create and execute a program
+### Create and execute a program
 
 1.  <span id="d7b7">Open up a terminal/cmd</span>
 2.  <span id="a7a7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a></span>
@@ -326,7 +326,7 @@ Python has two primitive loop commands:
 
 ### Python Syntax
 
-Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code.
+Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code.
 
 ### First Program
 
@@ -375,7 +375,7 @@ Remember, there is a difference between integers and strings. _Remember: String 
     b = int(b)
     print('x = ', x, '; b = ', str(b), ';') # => x = 5; b = 5;
 
-Instead of using the `,` in the print function, you can put a `+` to combine the variables and string.
+Instead of using the `,` in the print function, you can put a `+` to combine the variables and string.
 
 ### Operators
 
@@ -408,11 +408,11 @@ _complexop.py_
 The ones above are to edit the current value of the variable.  
 Sorry to JS users, as there is no `i++;` or anything.
 
-### Fun Fact: The python language was named after Monty Python.
+### Fun Fact: The python language was named after Monty Python.
 
 If you really want to know about the others, view <a href="https://www.tutorialspoint.com/python/python_basic_operators.htm" class="markup--anchor markup--p-anchor">Py Operators</a>
 
-### More Things With Strings
+### More Things With Strings
 
 Like the title?  
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
@@ -482,7 +482,7 @@ _inp2.py_
 
 ### New: Importing Modules
 
-Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write `input <modulename>`. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
+Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write `input <modulename>`. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
 _module.py_
 
@@ -515,7 +515,7 @@ _loop.py_
          print('Hello')
          sleep(.3)
 
-This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
+This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
 _loop2.py_
 
@@ -688,7 +688,7 @@ Now, we’ll give the player their first choice
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
 
-### 2. TEXT ENCODER
+### 2. TEXT ENCODER
 
 Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
 
@@ -721,7 +721,7 @@ Once we’ve encoded the text, we’ll print it back for the user
 
 And if you want to decode something, it is this same process but in reverse!
 
-### 3. Guess my Number
+### 3. Guess my Number
 
 Number guessing games are fun and pretty simple, all you need are a few loops. To start, we need to import random.
 

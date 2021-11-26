@@ -6,12 +6,12 @@ Objects store unordered key-value pairs. With Objects we can not rely on indices
 
 ### Object Methods
 
-#### Objects store _unordered_ `key`-`value` pairs. With Objects we can not rely on indices to access values.Meaning - we'll have to iterate through objects in new ways to access the keys and values within.
+#### Objects store _unordered_ `key`-`value` pairs. With Objects we can not rely on indices to access values.Meaning - we'll have to iterate through objects in new ways to access the keys and values within.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*6jQe76YcAOKHZtjr.png" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-### Iterating Through Objects
+### Iterating Through Objects
 
 Objects store _unordered_  
 `key`-`value` pairs. With Objects we can not rely on indices to access values.  
@@ -23,7 +23,7 @@ This article will cover:
 1.  <span id="164e">Iterate through Object `keys` and `values` using a `for...in` loop</span>
 2.  <span id="a166">Use the `Object.keys` and the `Object.values` methods to iterate through an Object.</span>
 
-### For In Loop
+### For In Loop
 
 We can use special syntax to iterate through each `key` of an object (in  
 arbitrary order). This is super useful for looping through **both** the keys and  
@@ -84,7 +84,7 @@ into the mix:
     // Gracie
     // Paul
 
-### What’s a method?
+### What’s a method?
 
 A **method** is essentially a function that _belongs to_ an object.
 
@@ -133,7 +133,7 @@ Additionally, we can give objects methods when we initialize them:
 
 To invoke, or call, a method we need to specify **which** object is calling that method. In the example above the `dog2` object had the `bark` method so to invoke `bark` we had to specify it was `dog2`'s method: `dog2.bark()`.
 
-### Useful Object Methods
+### Useful Object Methods
 
 ### Iterating through keys using `Object.keys`
 

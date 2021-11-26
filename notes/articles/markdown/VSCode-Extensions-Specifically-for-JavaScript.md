@@ -10,7 +10,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 #### VSCode Extensions that are indispensable in JavaScript development
 
-### Back and Forth
+### Back and Forth
 
 -   <span id="05b8">Adds backwards and forwards buttons to the toolbar in VSCode</span>
 -   <span id="0f5e"><a href="https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth" class="markup--anchor markup--li-anchor" title="https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth">https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth</a></span>
@@ -44,7 +44,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 ### Code Runner
 
-> Run code snippet or code file for multiple languages: **C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F\# Script, F\# (.NET Core), C\# Script, C\# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran**, and custom command
+> Run code snippet or code file for multiple languages: **C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F\# Script, F\# (.NET Core), C\# Script, C\# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran**, and custom command
 
 ### Features
 
@@ -72,7 +72,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 ### Usages
 
-#### To run code:
+#### To run code:
 
 -   <span id="fdf8">use shortcut `Ctrl+Alt+N`</span>
 -   <span id="f3b8">or press `F1` and then select/type `Run Code`,</span>
@@ -152,7 +152,7 @@ Here are just some of the **features** that GitLens provides,
 
 ---
 
-### Markdown All in One
+### Markdown All in One
 
 -   <span id="2f35">Everything you need to help you write markdown files in VSCode</span>
 -   <span id="072b"><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" class="markup--anchor markup--li-anchor" title="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one</a></span>
@@ -165,7 +165,7 @@ Here are just some of the **features** that GitLens provides,
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqbbj4t2090z7JLj.gif" class="graf-image" /></figure>See full key binding list in the <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#keyboard-shortcuts-1" class="markup--anchor markup--p-anchor">keyboard shortcuts</a> section
 
-### Table of contents
+### Table of contents
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*T1aP3qXU9HHLvrkZ.png" class="graf-image" /></figure>-   <span id="ca4e">Run command “**Create Table of Contents**” to insert a new table of contents.</span>
 -   <span id="1bbc">The TOC is **automatically updated** on file save by default. To disable, please change the `toc.updateOnSave` option.</span>
@@ -182,15 +182,15 @@ Here are just some of the **features** that GitLens provides,
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*0ipp3m0zajfTJlQR.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*LLQYEmYRbIsx3EkR.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*eoAN8X-cP9iM6l3Y.gif" class="graf-image" /></figure>***Note***: By default, this extension tries to determine indentation size for different lists according to <a href="https://spec.commonmark.org/0.29/#list-items" class="markup--anchor markup--p-anchor">CommonMark Spec</a>. If you prefer to use a fixed tab size, please change the `list.indentationSize` setting.
 
-### Print Markdown to HTML
+### Print Markdown to HTML
 
 -   <span id="b93d">Commands `Markdown: Print current document to HTML` and `Markdown: Print documents to HTML` (batch mode)</span>
 -   <span id="0011">**Compatible** with other installed Markdown plugins (e.g. <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-footnotes" class="markup--anchor markup--li-anchor">Markdown Footnotes</a>) The exported HTML should look the same as inside VSCode.</span>
 -   <span id="9740">Use comment `<!-- title: Your Title -->` to specify a title of the exported HTML.</span>
--   <span id="9298">Plain links to `.md` files will be converted to `.html`.</span>
+-   <span id="9298">Plain links to `.md` files will be converted to `.html`.</span>
 -   <span id="5a32">It’s recommended to print the exported HTML to PDF with browser (e.g. Chrome) if you want to share your documents with others.</span>
 
-### GitHub Flavored Markdown
+### GitHub Flavored Markdown
 
 -   <span id="ae98">Table formatter</span>
 
@@ -213,7 +213,7 @@ Tip: also support the option `completion.root`
 
 ---
 
-### Mocah Test Explorer
+### Mocah Test Explorer
 
 -   <span id="2b8c">Lets you run mocha tests in the VSCode sidebar</span>
 -   <span id="39cd"><a href="https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter" class="markup--anchor markup--li-anchor" title="https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter">https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter</a></span>
@@ -229,7 +229,7 @@ Tip: also support the option `completion.root`
         "npm-intellisense.importDeclarationType": "const",
     }
 
-### Import command (ES5)
+### Import command (ES5)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*srfRIxEbcL_yxBey.gif" class="graf-image" /></figure>{
        "npm-intellisense.importES6": false,
@@ -256,7 +256,7 @@ Tip: also support the option `completion.root`
         "npm-intellisense.importDeclarationType": "const",
     }
 
-### Import command (ES5)
+### Import command (ES5)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*pCEaJc8pJmJi_dMk.gif" class="graf-image" /></figure>{
       "npm-intellisense.importES6": false,
@@ -298,7 +298,7 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-### OR GitHub/gists where I host similar content:
+### OR GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -306,7 +306,7 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

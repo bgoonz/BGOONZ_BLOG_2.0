@@ -4,7 +4,7 @@ A all encompassing list of tools and resources for web developers
 
 ---
 
-### Web Developer Resource List Part 4
+### Web Developer Resource List Part 4
 
 A all encompassing list of tools and resources for web developers
 
@@ -21,7 +21,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="daff"><a href="https://github.com/k88hudson/git-flight-rules" class="markup--anchor markup--li-anchor">Git Flight Rules</a>: A guide for astronauts (now, programmers using Git) about what to do when things go wrong.</span>
 -   <span id="1977"><a href="https://github.com/luruke/browser-2020" class="markup--anchor markup--li-anchor">browser-2020</a>: Things you can do with a browser in 2020 ☕️</span>
 
-### 📦 Finding and vetting npm packages
+### 📦 Finding and vetting npm packages
 
 -   <span id="9bc6"><a href="https://www.pikapkg.com/" class="markup--anchor markup--li-anchor">pika</a>: A searchable catalog of modern “module” packages on npm</span>
 -   <span id="10f9"><a href="https://npms.io/" class="markup--anchor markup--li-anchor">npms</a>: A better and open source search for node packages</span>
@@ -59,7 +59,7 @@ A all encompassing list of tools and resources for web developers
 
 ### JavaScript
 
-### Useful JS links
+### Useful JS links
 
 -   <span id="47a7"><a href="https://stackoverflow.com/a/34842087/91359" class="markup--anchor markup--li-anchor">JS module import/export syntax</a></span>
 -   <span id="fae9"><a href="http://keycode.info/" class="markup--anchor markup--li-anchor">JavaScript Event KeyCodes</a></span>
@@ -69,7 +69,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="f409"><a href="https://github.com/mbeaudru/modern-js-cheatsheet" class="markup--anchor markup--li-anchor">modern-js-cheatsheet</a></span>
 -   <span id="3b43"><a href="https://htmldom.dev/" class="markup--anchor markup--li-anchor">HTML DOM</a>: Common tasks of managing HTML DOM with vanilla JavaScript</span>
 
-### Framework agnostic packages
+### Framework agnostic packages
 
 ### General utilities
 
@@ -162,7 +162,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="6720"><a href="https://github.com/robb0wen/tornis" class="markup--anchor markup--li-anchor">tornis</a>: Tornis helps you watch and respond to changes in your browser’s viewport 🌲</span>
 -   <span id="fadc"><a href="https://github.com/ryanve/actual" class="markup--anchor markup--li-anchor">actual</a>: Determine actual CSS media query breakpoints via JavaScript</span>
 
-### Media and Images
+### Media and Images
 
 -   <span id="e520"><a href="https://github.com/awcross/images-loaded" class="markup--anchor markup--li-anchor">images-loaded</a>: Wait for images to load using promises. No dependencies.</span>
 -   <span id="7bd6"><a href="https://github.com/aFarkas/lazysizes" class="markup--anchor markup--li-anchor">lazysizes</a>: High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.</span>
@@ -298,7 +298,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="ddb6"><a href="https://github.com/sw-yx/react-typescript-cheatsheet" class="markup--anchor markup--li-anchor">react-typescript-cheatsheet</a>: a cheatsheet for react users using typescript with react for the first (or nth!) time</span>
 -   <span id="92ad"><a href="https://github.com/labs42io/clean-code-typescript" class="markup--anchor markup--li-anchor">clean-code-typescript</a>: Clean Code concepts adapted for TypeScript</span>
 
-### Command Line, Terminal and shells
+### Command Line, Terminal and shells
 
 <a href="https://fishshell.com/" class="markup--anchor markup--p-anchor">Fish shell</a>: The user-friendly command line shell
 
@@ -307,7 +307,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="98c8"><a href="https://starship.rs/" class="markup--anchor markup--li-anchor">Starship</a>: Cross-Shell Prompt</span>
 -   <span id="67fd"><a href="https://github.com/IlanCosman/tide" class="markup--anchor markup--li-anchor">tide</a>: 🌊 A modern prompt manager for the Fish shell</span>
 
-### Creating CLI apps
+### Creating CLI apps
 
 -   <span id="01dc"><a href="https://github.com/infinitered/gluegun" class="markup--anchor markup--li-anchor">gluegun</a>: A delightful toolkit for building Node-powered CLIs</span>
 -   <span id="8688"><a href="https://github.com/SBoudrias/Inquirer.js" class="markup--anchor markup--li-anchor">inquirer</a>: A collection of common interactive command line user interfaces</span>
@@ -378,7 +378,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="3d68"><a href="https://github.com/bestiejs/benchmark.js" class="markup--anchor markup--li-anchor">benchmark.js</a>: A benchmarking library. As used on <a href="http://jsPerf.com" class="markup--anchor markup--li-anchor">jsPerf.com</a></span>
 -   <span id="4921"><a href="https://github.com/NoriSte/ui-testing-best-practices" class="markup--anchor markup--li-anchor">ui-testing-best-practices</a>: The largest UI testing best practices list (lat update: April 2020) (work in progress)</span>
 
-### Code formatting and linting
+### Code formatting and linting
 
 -   <span id="ed0c"><a href="https://prettier.io/" class="markup--anchor markup--li-anchor">Prettier</a></span>
 -   <span id="bb36"><a href="https://github.com/nrwl/precise-commits" class="markup--anchor markup--li-anchor">precise-commits</a>: Painlessly apply Prettier by only formatting lines you have modified anyway!</span>
@@ -395,7 +395,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="bbb7"><a href="https://github.com/tabrindle/envinfo" class="markup--anchor markup--li-anchor">envinfo</a>: Generate a report about your development environment for debugging and issue reporting</span>
 -   <span id="118c"><a href="https://github.com/FiloSottile/mkcert" class="markup--anchor markup--li-anchor">mkcert</a>: A simple zero-config tool to make locally trusted development certificates with any names you’d like</span>
 
-### Progressive Web Apps
+### Progressive Web Apps
 
 -   <span id="1c7b"><a href="https://developers.google.com/web/tools/workbox/" class="markup--anchor markup--li-anchor">Workbox</a> & (<a href="https://github.com/GoogleChrome/workbox" class="markup--anchor markup--li-anchor">repo</a>): JavaScript libraries for Progressive Web Apps</span>
 
@@ -463,7 +463,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="bfd9"><a href="https://squoosh.app/" class="markup--anchor markup--li-anchor">Squoosh</a></span>
 -   <span id="c263"><a href="https://jakearchibald.github.io/svgomg/" class="markup--anchor markup--li-anchor">SVGOMG</a>: SVGO’s Missing GUI</span>
 
-### Conversions and unicode
+### Conversions and unicode
 
 -   <span id="5e9c"><a href="https://transform.now.sh/" class="markup--anchor markup--li-anchor">Transform</a>: All important transforms at one place ⭐️⭐️⭐️ this is so useful</span>
 -   <span id="dcea"><a href="https://svgr.now.sh/" class="markup--anchor markup--li-anchor">SVGR</a>: The SVG to JSX transformer</span>
@@ -538,7 +538,7 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 -   <span id="7e68"><a href="https://codepen.io/getflourish/full/vXqewy/" class="markup--anchor markup--li-anchor">Adaptive Modular Scale</a></span>
 -   <span id="0711"><a href="http://type-scale.com/" class="markup--anchor markup--li-anchor">Type Scale — A Visual Calculator</a></span>
 
-### IDEs and Text Editors
+### IDEs and Text Editors
 
 ### VS Code
 
@@ -555,7 +555,7 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 -   <span id="18b1"><a href="https://github.com/belluzj/fantasque-sans" class="markup--anchor markup--li-anchor">fantasque-sans</a></span>
 -   <span id="4a94"><a href="https://github.com/JetBrains/JetBrainsMono" class="markup--anchor markup--li-anchor">Jet Brains Mono</a></span>
 
-### Code colour schemes
+### Code colour schemes
 
 -   <span id="e29c"><a href="https://monokai.pro/" class="markup--anchor markup--li-anchor">Monokai Pro</a></span>
 -   <span id="5897"><a href="https://marketplace.visualstudio.com/items?itemName=teabyii.ayu" class="markup--anchor markup--li-anchor">Ayu (Mirage)</a></span>
@@ -575,7 +575,7 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-### OR GitHub/gists where I host similar content:
+### OR GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -583,7 +583,7 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

@@ -9,21 +9,21 @@ Basic Syntax Guide
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png" class="graf-image" /></figure><a href="https://github.com/bgoonz/Markdown-Templates.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Markdown-Templates.git"><strong>bgoonz/Markdown-Templates</strong><br />
 <em>One Paragraph of project description goes here These instructions will get you a copy of the project up and running on…</em>github.com</a><a href="https://github.com/bgoonz/Markdown-Templates.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Basic Syntax Guide
+### Basic Syntax Guide
 
 This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown’s greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
 
-### What is Markdown
+### What is Markdown
 
 Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup 'commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
 
 Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
 
-### Basic Markdown Syntax
+### Basic Markdown Syntax
 
 The following are a few examples of the most common things you are likely to do with Markdown while building typical documentation.
 
-### Bold and Italic
+### Bold and Italic
 
     markdown
 
@@ -130,7 +130,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
     <i class="fa fa-refresh fa-spin fa-lg"></i> Refresh Page
 
 This text can be embedded into Markdown:  
- Refresh Page
+ Refresh Page
 
 ### Unordered Lists
 
@@ -252,7 +252,7 @@ which gives you:
     This is some text that will not be syntax highlighted
     but shows up in a code box.
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

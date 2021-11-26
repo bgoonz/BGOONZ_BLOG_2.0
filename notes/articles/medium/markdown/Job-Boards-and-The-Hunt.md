@@ -4,9 +4,9 @@ I can’t imagine the kind of masochism it would take to enjoy the act of postin
 
 ---
 
-### Job Boards and The Hunt
+### Job Boards and The Hunt
 
-#### I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the process that you’ve already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you’ll get where your going in the blink of an eye!
+#### I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the process that you’ve already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you’ll get where your going in the blink of an eye!
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -51,7 +51,7 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 ---
 
-> Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
+> Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
 ### Another Update:
 
@@ -272,7 +272,7 @@ WOMEN Networks
 
 ### Here are some networking email templates:
 
-#### EMAIL NO. 1: SOMEONE YOU USED TO WORK CLOSELY WITH
+#### EMAIL NO. 1: SOMEONE YOU USED TO WORK CLOSELY WITH
 
 Perhaps it’s your supervisor from your college internship. Or maybe it’s your favorite colleague from one of your previous jobs. Either way, nobody knows your skills and preferences better than the people you used to work side-by-side with–meaning they can be a huge help in your job search.
 
@@ -291,7 +291,7 @@ _Thanks so much, \[Name\]! I have so many fond memories of our time together at 
 _Best,_  
 _\[Your Name\]_
 
-### EMAIL NO. 2: SOMEONE WHO WORKS IN YOUR DESIRED INDUSTRY
+### EMAIL NO. 2: SOMEONE WHO WORKS IN YOUR DESIRED INDUSTRY
 
 Sending a note to someone who is already employed in the field you’re eager to be a part of is always helpful, but especially when you’re making a career change. Chances are good that he or she is connected to other people in the industry–some of whom might even be hiring.
 
@@ -319,7 +319,7 @@ _\[Your Name\]_
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-#### First off I am going to introduce a few different categories for those of you who are completely overwhelmed by the prospect of even selecting a job board let alone establishing a competitive presence on one. Here’s a few catorizations I think are worth distinguishing for one and other.
+#### First off I am going to introduce a few different categories for those of you who are completely overwhelmed by the prospect of even selecting a job board let alone establishing a competitive presence on one. Here’s a few catorizations I think are worth distinguishing for one and other.
 
 ### 1. Interpersonal Connections
 
@@ -381,7 +381,7 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 > Engage in networking. I would recommend **finding and connecting with current attendee of any software development bootcamp**. They’re all (for the most part) programatically encouraged to connect network and engage in peer skill promotion (even if they have no idea of you skill level). If that weren’t enough reason, all of them come from a cohort of other individuals being instructed to do the same. Once you have a few in your network other’s will seek you out through Linkedin recommendations algorithm.
 
-> **Note to prospective employers please just skip the next few sentences and don’t ask why…😅**
+> **Note to prospective employers please just skip the next few sentences and don’t ask why…😅**
 
 > **Of the 214 people that vouched for me… I guestimate about only 80 actually know me in any respectable capacity, and of those, only probably 30 or so are familiar with my competency in the skills they endorsed. It all boils down to the strategies that bootcamps instill in their students. It’s the polar opposite of a zero sum game and they’re more than happy to exchange personal recommendations with you. They’re also far more driven to consistently engage with other members of the linkedin ecosystem because they need to a network to help compensate for their lack of a four year degree and the connections you make in that time.**
 
@@ -391,11 +391,11 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*DlqWg94B670bgin5STdJNg.png" class="graf-image" /></figure>### Don’t:
 
-#### Don’t Use LinkedIn’s Default Headline
+#### Don’t Use LinkedIn’s Default Headline
 
 LinkedIn automatically populates your headline with your current job title and company name. I hope it goes without saying… but as a rule avoid signaling to prospective employers the depths of your laziness by using any stock responses LinkedIn provides you.
 
-#### Don’t Go Ham On Keyword Placment
+#### Don’t Go Ham On Keyword Placment
 
 Placing keywords strategically into your LinkedIn profile is virtually the only way to ensure being flagged by search algorithms as a potential candidate.You could be forgiven for being tempted to heed the advice of your inner lizard brain, and just stuffing your profile with buzzwords but this will likely trigger a spam account checker and result in worse outcomes than the absence of said keywords.
 
@@ -403,7 +403,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 ---
 
-### Why it matters*¿*
+### Why it matters*¿*
 
 #### Are We Really All Connected by Just Six Degrees of Separation?
 
@@ -411,7 +411,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 ---
 
-### Back to the other Job Board Niches:
+### Back to the other Job Board Niches:
 
 **_3. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
@@ -423,7 +423,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-### Lastly Here’s A Github Profile Guide:
+### Lastly Here’s A Github Profile Guide:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*0nYkgla6oc0uImSZJElpdw.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*wIhqnhU5zoyIr1GwZ2UTNA.jpeg" class="graf-image" /></figure>Medium is causing strange formatting… they normally form a grid!
 
@@ -457,11 +457,11 @@ Introduction to Algorithms (honestly more like a textbook that you can use as a 
 
 <a href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844" class="markup--anchor markup--p-anchor">https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844</a>
 
-#### The Algorithm Design Manual
+#### The Algorithm Design Manual
 
 <a href="https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/ref=pd_lpo_sbs_14_t" class="markup--anchor markup--p-anchor">https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/ref=pd_lpo_sbs_14_t</a>
 
-#### This is a good repo for system’s design study:
+#### This is a good repo for system’s design study:
 
 <a href="https://github.com/donnemartin/system-design-primer" class="markup--anchor markup--p-anchor">https://github.com/donnemartin/system-design-primer</a>
 

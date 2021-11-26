@@ -6,7 +6,7 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 ### My Personal Arsenal Of Convenience Scripts
 
-#### At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
+#### At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.
 
 ---
 
@@ -42,13 +42,13 @@ At the bottom the following commands are listed as a markdown file and embed in 
 
 ---
 
-> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><strong>holy grail</strong></a> **of learning bash**
+> <a href="https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee" class="markup--anchor markup--pullquote-anchor"><strong>holy grail</strong></a> **of learning bash**
 
 <a href="https://gist.github.com/817638d2c05b5960633f56aedf2e5d70.git" class="markup--anchor markup--p-anchor">https://gist.github.com/817638d2c05b5960633f56aedf2e5d70.git</a>
 
-### 1. Remove spaces from file and folder names and then remove numbers from files and folder names….
+### 1. Remove spaces from file and folder names and then remove numbers from files and folder names….
 
-### Description: need to : `sudo apt install rename`
+### Description: need to : `sudo apt install rename`
 
 > _Notes: Issue when renaming file without numbers collides with existing file name…_
 
@@ -83,7 +83,7 @@ code:
       if (err) throw err;
     });
 
-### 2. Download Website Using Wget:
+### 2. Download Website Using Wget:
 
 ### Description:
 
@@ -95,9 +95,9 @@ code:
 
 ---
 
-### 3. Clean Out Messy Git Repo:
+### 3. Clean Out Messy Git Repo:
 
-### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
+### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
 > _Notes: To clear up clutter in repositories that only get used on your local machine._
 
@@ -127,7 +127,7 @@ code:
       cut -d \" -f 4 |
       xargs -L1 git clone
 
-### Clone all Git User
+### Clone all Git User
 
     CNTX={users}; NAME={bgoonz}; PAGE=1
     curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -145,7 +145,7 @@ code:
 
 ---
 
-### 5. Git Workflow
+### 5. Git Workflow
 
 ### Description:
 
@@ -179,9 +179,9 @@ code:
 
 ---
 
-### 6. Recursive Unzip In Place
+### 6. Recursive Unzip In Place
 
-### Description: recursively unzips folders and then deletes the zip file by the same name.
+### Description: recursively unzips folders and then deletes the zip file by the same name.
 
 > _Notes:_
 
@@ -193,7 +193,7 @@ code:
 
 ---
 
-### 7. git pull keeping local changes:
+### 7. git pull keeping local changes:
 
 ### Description:
 
@@ -237,7 +237,7 @@ code:
 
 ---
 
-### 10. Gitpod Installs
+### 10. Gitpod Installs
 
 ### Description:
 
@@ -261,9 +261,9 @@ code:
 
 ---
 
-### 11. Repo Utils Package:
+### 11. Repo Utils Package:
 
-### Description: my standard repo utis package
+### Description: my standard repo utis package
 
 > _Notes:_
 
@@ -273,7 +273,7 @@ code:
 
 ---
 
-### 12. Unix Tree Package Usage:
+### 12. Unix Tree Package Usage:
 
 ### Description:
 
@@ -321,7 +321,7 @@ code:
 
 ---
 
-### 14. Remove double extensions :
+### 14. Remove double extensions :
 
 ### Description:
 
@@ -446,7 +446,7 @@ code:
 
 ---
 
-### 20. Remove duplicate lines from a text file
+### 20. Remove duplicate lines from a text file
 
 ### Description:
 
@@ -496,7 +496,7 @@ code:
 
 ---
 
-### 22. Zip directory excluding .git and node_modules all the way down (Linux)
+### 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
 ### Description:
 
@@ -519,7 +519,7 @@ code:
 
 ---
 
-### 23. Delete files containing a certain string:
+### 23. Delete files containing a certain string:
 
 ### Description:
 
@@ -638,9 +638,9 @@ code:
 
 ---
 
-### 25. Index of Iframes
+### 25. Index of Iframes
 
-### Description: Creates an index.html file that contains all the files in the working directory or any of it’s sub folders as iframes instead of anchor tags.
+### Description: Creates an index.html file that contains all the files in the working directory or any of it’s sub folders as iframes instead of anchor tags.
 
 > _Notes: Useful Follow up Code:_
 
@@ -754,7 +754,7 @@ code:
 
 ---
 
-### 27. OVERWRITE LOCAL CHANGES:
+### 27. OVERWRITE LOCAL CHANGES:
 
 ### Description:
 
@@ -785,11 +785,11 @@ code:
 
 ### 28. Remove Submodules:
 
-### Description: To remove a submodule you need to:
+### Description: To remove a submodule you need to:
 
 > _Notes:_
 
-> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
+> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
 
 code:
 
@@ -797,7 +797,7 @@ code:
 
 ---
 
-### 29. GET GISTS
+### 29. GET GISTS
 
 ### Description:
 
@@ -817,7 +817,7 @@ code:
 
 ---
 
-### 30. Remove Remote OriginL
+### 30. Remove Remote OriginL
 
 ### Description:
 
@@ -829,7 +829,7 @@ code:
 
 ---
 
-### 31. just clone .git folder:
+### 31. just clone .git folder:
 
 ### Description:
 
@@ -841,7 +841,7 @@ code:
 
 ---
 
-### 32. Undo recent pull request:
+### 32. Undo recent pull request:
 
 ### Description:
 
@@ -855,7 +855,7 @@ code:
 
 ### 33. Lebab
 
-### Description: ES5 → ES6
+### Description: ES5 → ES6
 
 > _Notes:_
 
@@ -921,7 +921,7 @@ code:
 
 ---
 
-### 35. Export Medium as Markdown
+### 35. Export Medium as Markdown
 
 ### Description:
 
@@ -935,7 +935,7 @@ code:
 
 ---
 
-### 36. Delete files in violation of a given size range (100MB for git)
+### 36. Delete files in violation of a given size range (100MB for git)
 
 ### Description:
 
@@ -949,7 +949,7 @@ code:
 
 ---
 
-### 37. download all links of given file type
+### 37. download all links of given file type
 
 ### Description:
 

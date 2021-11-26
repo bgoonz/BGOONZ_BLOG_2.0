@@ -8,19 +8,19 @@
 
 > _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
--   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
+-   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
 -   <span id="1ad1">Term used to refer to content in computing.</span>
 -   <span id="5ad0">What makes the Web a “web”.</span>
 -   <span id="11eb">Most fundamental part of how we interact.</span>
--   <span id="41da">`Hyperlinks` : Links; references between HT resources.</span>
--   <span id="b0a1">`TP` : Transfer Protocol - set of guidelines surrounding the transmission of data.</span>
+-   <span id="41da">`Hyperlinks` : Links; references between HT resources.</span>
+-   <span id="b0a1">`TP` : Transfer Protocol - set of guidelines surrounding the transmission of data.</span>
 -   <span id="e43c">Defines the expectations for both ends of the transer.</span>
 -   <span id="ca8a">Defines some ways the transfer might fail.</span>
 -   <span id="3995">HTTP is a `request/response` protocol.</span>
 -   <span id="dc85">HTTP works between `clients` & `servers`.</span>
--   <span id="a965">`Clients` : User Agent - the data consumer.</span>
--   <span id="2588">`Servers` : Origin - Data provider & where the application is running.</span>
+-   <span id="a965">`Clients` : User Agent - the data consumer.</span>
+-   <span id="2588">`Servers` : Origin - Data provider & where the application is running.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OBVdK39aaS5sjV9B.png" class="graf-image" /></figure>### <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems" class="markup--anchor markup--h3-anchor" title="Permalink to Components of HTTP-based systems">Components of HTTP-based systems</a>
 
@@ -30,15 +30,15 @@ Each individual request is sent to a server, which handles it and provides an an
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png" class="graf-image" /></figure>**Properties of HTTP**
 
--   <span id="bc5b">`Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.</span>
+-   <span id="bc5b">`Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.</span>
 -   <span id="aec2">`TCP` is HTTP’s preferred connection type.</span>
--   <span id="9880">`Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
+-   <span id="9880">`Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
 -   <span id="b204">HTTP supports cookies.</span>
--   <span id="5e72">`Intermediaries` : Servers or devices that pass your request along which come in three types:</span>
+-   <span id="5e72">`Intermediaries` : Servers or devices that pass your request along which come in three types:</span>
 
-1.  <span id="fb4d">`Proxies` : Modify your request so it appears to come from a different source.</span>
-2.  <span id="bd02">`Gateways` : Pretend to be the resource server you requested.</span>
-3.  <span id="06a0">`Tunnels` : Simply passes your request along.</span>
+1.  <span id="fb4d">`Proxies` : Modify your request so it appears to come from a different source.</span>
+2.  <span id="bd02">`Gateways` : Pretend to be the resource server you requested.</span>
+3.  <span id="06a0">`Tunnels` : Simply passes your request along.</span>
 
 ---
 
@@ -55,44 +55,44 @@ Each individual request is sent to a server, which handles it and provides an an
     Accept-Encoding: gzip, deflate
     Accept-Language: en-US,en;q=0.9
 
-### Example of a request:
+### Example of a request:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*tq-BRYuzZ_Dx8s1g5xJKKQ.png" class="graf-image" /></figure>
 
 -   <span id="bfa1">**Request-line & HTTP verbs**</span>
 -   <span id="0e3d">The first line of an HTTP Request made up of three parts:</span>
 
-1.  <span id="e67b">The `Method` : Indicated by an HTTP Verb.</span>
-2.  <span id="f17e">The `URI` : Uniform Resource Indicator that ID’s our request.</span>
-3.  <span id="cf4a">THe `HTTP` **Version** : Version we expect to use.</span>
+1.  <span id="e67b">The `Method` : Indicated by an HTTP Verb.</span>
+2.  <span id="f17e">The `URI` : Uniform Resource Indicator that ID’s our request.</span>
+3.  <span id="cf4a">THe `HTTP` **Version** : Version we expect to use.</span>
 
 -   <span id="6fd5">HTTP Verbs are a simply way of declaring our intention to the server.</span>
--   <span id="5435">`GET` : Used for direct requests.</span>
+-   <span id="5435">`GET` : Used for direct requests.</span>
 -   <span id="9059">`POST`: Used for creating new resources on the server.</span>
 -   <span id="456b">`PUT`: Used to updated a resource on the server.</span>
--   <span id="5c1a">`PATCH` : Similar to PUT, but do not require the whole resource to perform the update.</span>
--   <span id="3940">`DELETE` : Used to destroy resources on the server.</span>
+-   <span id="5c1a">`PATCH` : Similar to PUT, but do not require the whole resource to perform the update.</span>
+-   <span id="3940">`DELETE` : Used to destroy resources on the server.</span>
 
 **Headers**
 
 -   <span id="682b">Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span>
 -   <span id="5e4d">Some common headers:</span>
--   <span id="2971">`Host` : Root path for our URI.</span>
--   <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
--   <span id="2555">`Referer` : Defines the URL you’re coming from.</span>
--   <span id="e946">`Accept` : Indicates what the client will receive.</span>
--   <span id="2011">`Content`**-** : Define Details about the body of the request.</span>
+-   <span id="2971">`Host` : Root path for our URI.</span>
+-   <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
+-   <span id="2555">`Referer` : Defines the URL you’re coming from.</span>
+-   <span id="e946">`Accept` : Indicates what the client will receive.</span>
+-   <span id="2011">`Content`**-** : Define Details about the body of the request.</span>
 
 **Body**
 
 -   <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.</span>
--   <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
+-   <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
 -   <span id="852a">`name=claire&age=29&iceCream=vanilla`</span>
 -   <span id="cb18">We can also format using JSON or XML.</span>
 
 **Sending an HTTP request from the command line**
 
--   <span id="7586">**netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.</span>
+-   <span id="7586">**netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.</span>
 -   <span id="4288">Allows us to open a direct connection with a URL and manually send HTTP requests.</span>
 -   <span id="07dd">`nc -v appacademy.io 80`</span>
 -   <span id="b93e">`man nc` to open the netcat manual.</span>
@@ -131,7 +131,7 @@ Each individual request is sent to a server, which handles it and provides an an
 
 -   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (`status line`)</span>
 -   <span id="5353">`HTTP/1.1 200 OK`</span>
--   <span id="5882">`HTTP status codes` : numeric way of representing a server’s response.</span>
+-   <span id="5882">`HTTP status codes` : numeric way of representing a server’s response.</span>
 -   <span id="78bc">Follow the structure: x: xxx — xxx;</span>
 
 ### `Status codes 100 - 199: Informational`
@@ -158,18 +158,18 @@ Each individual request is sent to a server, which handles it and provides an an
 -   <span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span>
 -   <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);</span>
 
-### **Headers** : Work just like HTTP requests.
+### **Headers** : Work just like HTTP requests.
 
 > Common Examples:
 
--   <span id="6859">`Location` : Used by client for redirection responses.</span>
--   <span id="a497">`Content-Type` : Let’s client know what format the body is in.</span>
--   <span id="1e08">`Expires` : When response is no longer valid</span>
--   <span id="f45d">`Content-Disposition` : Let’s client know how to display the response.</span>
--   <span id="b46e">`Set-Cookie` : Sends data back to the client to set on the cookie.</span>
--   <span id="1e80">`Data` : If the request is successful, the body of the response will contain the resource you have requested.</span>
+-   <span id="6859">`Location` : Used by client for redirection responses.</span>
+-   <span id="a497">`Content-Type` : Let’s client know what format the body is in.</span>
+-   <span id="1e08">`Expires` : When response is no longer valid</span>
+-   <span id="f45d">`Content-Disposition` : Let’s client know how to display the response.</span>
+-   <span id="b46e">`Set-Cookie` : Sends data back to the client to set on the cookie.</span>
+-   <span id="1e80">`Data` : If the request is successful, the body of the response will contain the resource you have requested.</span>
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -177,14 +177,14 @@ Each individual request is sent to a server, which handles it and provides an an
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 **Currently under development and very buggy!**
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-If you want to learn more and get some practice in … download <a href="https://www.postman.com/" class="markup--anchor markup--p-anchor">Postman</a> and start going through some tutorials!
+If you want to learn more and get some practice in … download <a href="https://www.postman.com/" class="markup--anchor markup--p-anchor">Postman</a> and start going through some tutorials!
 
 Happy Coding!
 

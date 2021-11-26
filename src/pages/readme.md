@@ -92,7 +92,7 @@ image: images/bgoonzblog20-a6a3bfc3.png
 
 
 
-[Global Site Tag Usage Statistics](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag](https://trends.builtwith.com/websitelist/Global-Site-Tag)
+[Global Site Tag Usage Statistics](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag](https://trends.builtwith.com/websitelist/Global-Site-Tag)
 
 
 
@@ -104,7 +104,7 @@ Google's primary tag for Google Measurement/Conversion Tracking, Adwords and Dou
 
 
 
-[Google Analytics Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics](https://trends.builtwith.com/websitelist/Google-Analytics)
+[Google Analytics Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics](https://trends.builtwith.com/websitelist/Google-Analytics)
 
 
 
@@ -112,7 +112,7 @@ Google Analytics offers a host of compelling features and benefits for everyone 
 
 
 
-[Application Performance](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking](https://trends.builtwith.com/analytics/visitor-count-tracking)
+[Application Performance](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking](https://trends.builtwith.com/analytics/visitor-count-tracking)
 
 
 
@@ -120,7 +120,7 @@ Google Analytics offers a host of compelling features and benefits for everyone 
 
 
 
-[Google Analytics 4 Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4](https://trends.builtwith.com/websitelist/Google-Analytics-4)
+[Google Analytics 4 Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4](https://trends.builtwith.com/websitelist/Google-Analytics-4)
 
 
 
@@ -140,7 +140,7 @@ Google Analytics 4 formerly known as App + Web is a new version of Google Analyt
 
 
 
-[Imgur Usage Statistics](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur](https://trends.builtwith.com/websitelist/Imgur)
+[Imgur Usage Statistics](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur](https://trends.builtwith.com/websitelist/Imgur)
 
 
 
@@ -152,7 +152,7 @@ The page contains content from image sharing website imgur.
 
 
 
-[Google Font API Usage Statistics](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API](https://trends.builtwith.com/websitelist/Google-Font-API)
+[Google Font API Usage Statistics](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API](https://trends.builtwith.com/websitelist/Google-Font-API)
 
 
 
@@ -168,7 +168,7 @@ The Google Font API helps you add web fonts to any web page.
 
 
 
-[Google Tag Manager Usage Statistics](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
+[Google Tag Manager Usage Statistics](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
 
 
 
@@ -184,7 +184,7 @@ Tag management that lets you add and update website tags without changes to unde
 
 
 
-[Icons8 Usage Statistics](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8](https://trends.builtwith.com/websitelist/Icons8)
+[Icons8 Usage Statistics](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8](https://trends.builtwith.com/websitelist/Icons8)
 
 
 
@@ -200,7 +200,7 @@ Icons, photos and illustrations.
 
 
 
-[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
 
 
 
@@ -212,7 +212,7 @@ This website contains the phrase 'lorem ipsum' which means it may have placehold
 
 
 
-[AddThis Usage Statistics](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis](https://trends.builtwith.com/websitelist/AddThis)
+[AddThis Usage Statistics](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis](https://trends.builtwith.com/websitelist/AddThis)
 
 
 
@@ -220,7 +220,7 @@ Widgets that allow visitors to save and promote the site.
 
 
 
-[Social Sharing](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking](https://trends.builtwith.com/widgets/bookmarking)
+[Social Sharing](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking](https://trends.builtwith.com/widgets/bookmarking)
 
 
 
@@ -228,7 +228,7 @@ Widgets that allow visitors to save and promote the site.
 
 
 
-[tawk.to Usage Statistics](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to](https://trends.builtwith.com/websitelist/tawk.to)
+[tawk.to Usage Statistics](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to](https://trends.builtwith.com/websitelist/tawk.to)
 
 
 
@@ -252,7 +252,7 @@ tawk.to is a free live chat app that lets you monitor and chat with visitors.
 
 
 
-[Gatsby JS Usage Statistics](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS](https://trends.builtwith.com/websitelist/Gatsby-JS)
+[Gatsby JS Usage Statistics](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS](https://trends.builtwith.com/websitelist/Gatsby-JS)
 
 
 
@@ -272,7 +272,7 @@ Modern website and web apps generator for React.
 
 
 
-[Viewport Meta Usage Statistics](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta](https://trends.builtwith.com/websitelist/Viewport-Meta)
+[Viewport Meta Usage Statistics](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta](https://trends.builtwith.com/websitelist/Viewport-Meta)
 
 
 
@@ -284,7 +284,7 @@ This page uses the viewport meta tag which means the content may be optimized fo
 
 
 
-[IPhone / Mobile Compatible Usage Statistics](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
+[IPhone / Mobile Compatible Usage Statistics](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
 
 
 
@@ -296,7 +296,7 @@ The website contains code that allows the page to support IPhone / Mobile Conten
 
 
 
-[Apple Mobile Web Clips Icon Usage Statistics](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
+[Apple Mobile Web Clips Icon Usage Statistics](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
 
 
 
@@ -316,7 +316,7 @@ This page contains an icon for iPhone, iPad and iTouch devices.
 
 
 
-[AJAX Libraries API Usage Statistics](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
+[AJAX Libraries API Usage Statistics](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
 
 
 
@@ -328,7 +328,7 @@ The AJAX Libraries API is a content distribution network and loading architectur
 
 
 
-[jsDelivr Usage Statistics](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr](https://trends.builtwith.com/websitelist/jsDelivr)
+[jsDelivr Usage Statistics](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr](https://trends.builtwith.com/websitelist/jsDelivr)
 
 
 
@@ -340,7 +340,7 @@ A free CDN where Javascript developers can host their files. Encompasses MaxCDN,
 
 
 
-[CloudFront Usage Statistics](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront](https://trends.builtwith.com/websitelist/CloudFront)
+[CloudFront Usage Statistics](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront](https://trends.builtwith.com/websitelist/CloudFront)
 
 
 
@@ -360,7 +360,7 @@ Amazon CloudFront is a web service for content delivery. It integrates with othe
 
 
 
-[Netlify Usage Statistics](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify](https://trends.builtwith.com/websitelist/Netlify)
+[Netlify Usage Statistics](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify](https://trends.builtwith.com/websitelist/Netlify)
 
 
 
@@ -380,7 +380,7 @@ Netlify is a platform that automates your code to create web sites.
 
 
 
-[Google Hosted Libraries Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
+[Google Hosted Libraries Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
 
 
 
@@ -392,7 +392,7 @@ Google Hosted Libraries is a globally available content distribution network for
 
 
 
-[Google Hosted jQuery Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
+[Google Hosted jQuery Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
 
 
 
@@ -412,7 +412,7 @@ jQuery hoted at Google.
 
 
 
-[Google Adsense Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense](https://trends.builtwith.com/websitelist/Google-Adsense)
+[Google Adsense Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense](https://trends.builtwith.com/websitelist/Google-Adsense)
 
 
 
@@ -428,7 +428,7 @@ A contextual advertising solution for delivering Google AdWords ads that are rel
 
 
 
-[Google Adsense Asynchronous Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
+[Google Adsense Asynchronous Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
 
 
 
@@ -448,7 +448,7 @@ Fully asynchronous version of the AdSense ad code.
 
 
 
-[UTF-8 Usage Statistics](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8](https://trends.builtwith.com/websitelist/UTF-8)
+[UTF-8 Usage Statistics](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8](https://trends.builtwith.com/websitelist/UTF-8)
 
 
 
@@ -468,7 +468,7 @@ UTF-8 (8-bit UCS/Unicode Transformation Format) is a variable-length character e
 
 
 
-[HTML5 DocType Usage Statistics](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType](https://trends.builtwith.com/websitelist/HTML5-DocType)
+[HTML5 DocType Usage Statistics](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType](https://trends.builtwith.com/websitelist/HTML5-DocType)
 
 
 
@@ -480,7 +480,7 @@ The DOCTYPE is a required preamble for HTML5 websites.
 
 
 
-[Cascading Style Sheets Usage Statistics](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
+[Cascading Style Sheets Usage Statistics](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
 
 
 
@@ -492,7 +492,7 @@ Cascading Style Sheets (CSS) is a stylesheet language used to describe the prese
 
 
 
-[Open Graph Protocol Usage Statistics](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
+[Open Graph Protocol Usage Statistics](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
 
 
 
@@ -504,7 +504,7 @@ The Open Graph protocol enables any web page to become a rich object in a social
 
 
 
-[Twitter Cards Usage Statistics](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards](https://trends.builtwith.com/websitelist/Twitter-Cards)
+[Twitter Cards Usage Statistics](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards](https://trends.builtwith.com/websitelist/Twitter-Cards)
 
 
 
@@ -516,7 +516,7 @@ Twitter cards make it possible for you to attach media experiences to Tweets tha
 
 
 
-[Javascript Usage Statistics](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript](https://trends.builtwith.com/websitelist/Javascript)
+[Javascript Usage Statistics](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript](https://trends.builtwith.com/websitelist/Javascript)
 
 
 
@@ -528,7 +528,7 @@ JavaScript is a scripting language most often used for client-side web developme
 
 
 
-[IFrame Usage Statistics](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame](https://trends.builtwith.com/websitelist/IFrame)
+[IFrame Usage Statistics](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame](https://trends.builtwith.com/websitelist/IFrame)
 
 
 
@@ -540,7 +540,7 @@ The page shows content with an iframe; an embedded frame that loads another webp
 
 
 
-[Font Face Rule Usage Statistics](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule](https://trends.builtwith.com/websitelist/Font-Face-Rule)
+[Font Face Rule Usage Statistics](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule](https://trends.builtwith.com/websitelist/Font-Face-Rule)
 
 
 
@@ -552,7 +552,7 @@ The @font-face rule allows for linking to fonts that are automatically activated
 
 
 
-[X-UA-Compatible Usage Statistics](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible](https://trends.builtwith.com/websitelist/X-UA-Compatible)
+[X-UA-Compatible Usage Statistics](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible](https://trends.builtwith.com/websitelist/X-UA-Compatible)
 
 
 
@@ -564,7 +564,7 @@ Allows a website to define how a page is rendered in Internet Explorer 8, allowi
 
 
 
-[Meta Keywords Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords](https://trends.builtwith.com/websitelist/Meta-Keywords)
+[Meta Keywords Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords](https://trends.builtwith.com/websitelist/Meta-Keywords)
 
 
 
@@ -576,7 +576,7 @@ Meta tag containing keywords related to the page.
 
 
 
-[Meta Description Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description](https://trends.builtwith.com/websitelist/Meta-Description)
+[Meta Description Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description](https://trends.builtwith.com/websitelist/Meta-Description)
 
 
 
@@ -588,7 +588,7 @@ The description attribute provides a concise explanation of the page content.
 
 
 
-[HTML 5 Specific Tags Usage Statistics](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
+[HTML 5 Specific Tags Usage Statistics](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
 
 
 
@@ -600,7 +600,7 @@ This page contains tags that are specific to an HTML 5 implementation.
 
 
 
-[WAI-ARIA Usage Statistics](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA](https://trends.builtwith.com/websitelist/WAI-ARIA)
+[WAI-ARIA Usage Statistics](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA](https://trends.builtwith.com/websitelist/WAI-ARIA)
 
 
 
@@ -612,7 +612,7 @@ A way to make Web content and Web applications more accessible to people with di
 
 
 
-[Strict Transport Security Usage Statistics](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
+[Strict Transport Security Usage Statistics](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
 
 
 
@@ -624,7 +624,7 @@ The HTTP Strict-Transport-Security (HSTS) header instructs the browser to only u
 
 
 
-[HSTS Usage Statistics](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS](https://trends.builtwith.com/websitelist/HSTS)
+[HSTS Usage Statistics](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS](https://trends.builtwith.com/websitelist/HSTS)
 
 
 
@@ -636,7 +636,7 @@ Forces browsers to only communicate with the site using HTTPS.
 
 
 
-[HSTS IncludeSubdomains PreLoad Usage Statistics](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
+[HSTS IncludeSubdomains PreLoad Usage Statistics](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
 
 
 
@@ -656,7 +656,7 @@ This website includes instructions for HSTS loading that would allow it to be su
 
 
 
-[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
+[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
 
 
 
@@ -676,7 +676,7 @@ Webmaster tools provide you with a free and easy way to make your site more Goog
 
 
 
-[Content Delivery Network Usage Statistics](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
+[Content Delivery Network Usage Statistics](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
 
 
 
@@ -13670,15 +13670,15 @@ Prism.languages.markup.tag.addAttribute(
 
 ├── ./plugins
 
-        ├── ./plugins/gatsby-remark-page-creator
+        ├── ./plugins/gatsby-remark-page-creator
 
-        │   └──  ./plugins/gatsby-remark-page-creator/gatsby-node.js
+        │   └──  ./plugins/gatsby-remark-page-creator/gatsby-node.js
 
-        │   
+        │   
 
-        └── ./plugins/gatsby-source-data
+        └── ./plugins/gatsby-source-data
 
-            └──  ./plugins/gatsby-source-data/gatsby-node.js
+            └──  ./plugins/gatsby-source-data/gatsby-node.js
 
 ```
 
@@ -14154,7 +14154,7 @@ export default class Body extends React.Component {
 
 ├── ./functions
 
-│   └── ./functions/deploy-succeeded.js
+│   └── ./functions/deploy-succeeded.js
 
 ├── ./gatsby-browser.js
 
@@ -14168,7 +14168,7 @@ export default class Body extends React.Component {
 
 ├── ./lambda
 
-    └── ./lambda/deploy-succeeded.js
+    └── ./lambda/deploy-succeeded.js
 
 ```
 
@@ -14362,15 +14362,15 @@ module.exports = {
 
 
 
-Gatsby gives plugins and site builders many APIs for building your site. Code in the file `gatsby-node.js` is run once in the process of building your site. You can use its APIs to create pages dynamically, add data into GraphQL, or respond to events during the build lifecycle. To use the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/), create a file named `gatsby-node.js` in the root of your site. Export any of the APIs you wish to use in this file.
+Gatsby gives plugins and site builders many APIs for building your site. Code in the file `gatsby-node.js` is run once in the process of building your site. You can use its APIs to create pages dynamically, add data into GraphQL, or respond to events during the build lifecycle. To use the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/), create a file named `gatsby-node.js` in the root of your site. Export any of the APIs you wish to use in this file.
 
 
 
-Every Gatsby Node API gets passed a [set of helper functions](https://www.gatsbyjs.com/docs/reference/config-files/node-api-helpers/). These let you access several methods like reporting, or perform actions like creating new pages.
+Every Gatsby Node API gets passed a [set of helper functions](https://www.gatsbyjs.com/docs/reference/config-files/node-api-helpers/). These let you access several methods like reporting, or perform actions like creating new pages.
 
 
 
-An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `createPages`.
+An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `createPages`.
 
 
 
@@ -14516,7 +14516,7 @@ exports.createPages  =  async  ({ graphql, actions })  =>  {
 
 
 
-If your plugin performs async operations (disk I/O, database access, calling remote APIs, etc.) you must either return a promise (explicitly using `Promise` API or implicitly using `async`/`await` syntax) or use the callback passed to the 3rd argument. Gatsby needs to know when plugins are finished as some APIs, to work correctly, require previous APIs to be complete first. See [Debugging Async Lifecycles](https://www.gatsbyjs.com/docs/debugging-async-lifecycles/) for more info.
+If your plugin performs async operations (disk I/O, database access, calling remote APIs, etc.) you must either return a promise (explicitly using `Promise` API or implicitly using `async`/`await` syntax) or use the callback passed to the 3rd argument. Gatsby needs to know when plugins are finished as some APIs, to work correctly, require previous APIs to be complete first. See [Debugging Async Lifecycles](https://www.gatsbyjs.com/docs/debugging-async-lifecycles/) for more info.
 
 
 
@@ -14596,7 +14596,7 @@ You can also fetch data from remote or local sources to create pages.
 
 
 
-See also [the documentation for the action `createPage`](https://www.gatsbyjs.com/docs/actions/#createPage).
+See also [the documentation for the action `createPage`](https://www.gatsbyjs.com/docs/actions/#createPage).
 
 
 
@@ -14612,7 +14612,7 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.
 
 
 
-    See the [documentation for `Node API Helpers` for more details](https://www.gatsbyjs.com/docs/node-api-helpers)
+    See the [documentation for `Node API Helpers` for more details](https://www.gatsbyjs.com/docs/node-api-helpers)
 
 
 
@@ -14620,11 +14620,11 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.
 
 
 
-        `actions` Actions
+        `actions` Actions
 
 
 
-        See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
+        See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
 
 
 
@@ -14632,7 +14632,7 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.
 
 
 
-            `createPage` function
+            `createPage` function
 
 
 
@@ -14644,11 +14644,11 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.
 
 
 
-        `graphql` function
+        `graphql` function
 
 
 
-        : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
+        : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
 
 
 
@@ -14656,11 +14656,11 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.
 
 
 
-        `reporter` GatsbyReporter
+        `reporter` GatsbyReporter
 
 
 
-        Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
+        Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
 
 
 
@@ -14676,7 +14676,7 @@ Promise<void>
 
 
 
-No return value required, but the caller will `await` any promise that's returned
+No return value required, but the caller will `await` any promise that's returned
 
 
 
@@ -14800,11 +14800,11 @@ exports.createPages = ({ graphql, actions }) => {
 
 
 
-Like `createPages` but for plugins who want to manage creating and removing pages themselves in response to changes in data *not* managed by Gatsby. Plugins implementing `createPages` will get called regularly to recompute page information as Gatsby's data changes but those implementing `createPagesStatefully` will not.
+Like `createPages` but for plugins who want to manage creating and removing pages themselves in response to changes in data *not* managed by Gatsby. Plugins implementing `createPages` will get called regularly to recompute page information as Gatsby's data changes but those implementing `createPagesStatefully` will not.
 
 
 
-An example of a plugin that uses this extension point is the plugin [gatsby-plugin-page-creator](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-page-creator) which monitors the `src/pages` directory for the adding and removal of JS pages. As its source of truth, files in the pages directory, is not known by Gatsby, it needs to keep its own state about its world to know when to add and remove pages.
+An example of a plugin that uses this extension point is the plugin [gatsby-plugin-page-creator](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-page-creator) which monitors the `src/pages` directory for the adding and removal of JS pages. As its source of truth, files in the pages directory, is not known by Gatsby, it needs to keep its own state about its world to know when to add and remove pages.
 
 
 
@@ -14836,25 +14836,25 @@ Things to note:
 
 
 
--   Overriding field types is disallowed, instead use the `createTypes` action. In case of types added from third-party schemas, where this is not possible, overriding field types is allowed.
+-   Overriding field types is disallowed, instead use the `createTypes` action. In case of types added from third-party schemas, where this is not possible, overriding field types is allowed.
 
--   New fields will not be available on `filter` and `sort` input types. Extend types defined with `createTypes` if you need this.
+-   New fields will not be available on `filter` and `sort` input types. Extend types defined with `createTypes` if you need this.
 
 -   In field configs, types can be referenced as strings.
 
--   When extending a field with an existing field resolver, the original resolver function is available from `info.originalResolver`.
+-   When extending a field with an existing field resolver, the original resolver function is available from `info.originalResolver`.
 
--   The `createResolvers` API is called as the last step in schema generation. Thus, an intermediate schema is made available on the `intermediateSchema` property. In resolver functions themselves, it is recommended to access the final built schema from `info.schema`.
+-   The `createResolvers` API is called as the last step in schema generation. Thus, an intermediate schema is made available on the `intermediateSchema` property. In resolver functions themselves, it is recommended to access the final built schema from `info.schema`.
 
--   Gatsby's data layer, including all internal query capabilities, is exposed on [`context.nodeModel`](https://www.gatsbyjs.com/docs/node-model/). The node store can be queried directly with `getAllNodes`, `getNodeById` and `getNodesByIds`, while more advanced queries can be composed with `runQuery`. Note that `runQuery` will call field resolvers before querying, so e.g. foreign-key fields will be expanded to full nodes. The other methods on `nodeModel` don't do this.
+-   Gatsby's data layer, including all internal query capabilities, is exposed on [`context.nodeModel`](https://www.gatsbyjs.com/docs/node-model/). The node store can be queried directly with `getAllNodes`, `getNodeById` and `getNodesByIds`, while more advanced queries can be composed with `runQuery`. Note that `runQuery` will call field resolvers before querying, so e.g. foreign-key fields will be expanded to full nodes. The other methods on `nodeModel` don't do this.
 
--   It is possible to add fields to the root `Query` type.
+-   It is possible to add fields to the root `Query` type.
 
--   When using the first resolver argument (`source` in the example below, often also called `parent` or `root`), take care of the fact that field resolvers can be called more than once in a query, e.g. when the field is present both in the input filter and in the selection set. This means that foreign-key fields on `source` can be either resolved or not-resolved.
+-   When using the first resolver argument (`source` in the example below, often also called `parent` or `root`), take care of the fact that field resolvers can be called more than once in a query, e.g. when the field is present both in the input filter and in the selection set. This means that foreign-key fields on `source` can be either resolved or not-resolved.
 
 
 
-For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-type-definitions).
+For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-type-definitions).
 
 
 
@@ -14874,7 +14874,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-        `intermediateSchema` GraphQLSchema
+        `intermediateSchema` GraphQLSchema
 
 
 
@@ -14886,7 +14886,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-        `createResolvers` function
+        `createResolvers` function
 
 
 
@@ -14898,7 +14898,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-    `$1` object
+    `$1` object
 
 
 
@@ -14906,7 +14906,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-        `resolvers` object
+        `resolvers` object
 
 
 
@@ -14918,7 +14918,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-        `options` object
+        `options` object
 
 
 
@@ -14930,7 +14930,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs
 
 
 
-            `ignoreNonexistentTypes` object
+            `ignoreNonexistentTypes` object
 
 
 
@@ -15008,11 +15008,11 @@ Customize Gatsby's GraphQL schema by creating type definitions, field extensions
 
 
 
-The [`createTypes`](https://www.gatsbyjs.com/docs/actions/#createTypes), [`createFieldExtension`](https://www.gatsbyjs.com/docs/actions/#createFieldExtension) and [`addThirdPartySchema`](https://www.gatsbyjs.com/docs/actions/#addThirdPartySchema) actions are only available in this API. For details on their usage please refer to the actions documentation.
+The [`createTypes`](https://www.gatsbyjs.com/docs/actions/#createTypes), [`createFieldExtension`](https://www.gatsbyjs.com/docs/actions/#createFieldExtension) and [`addThirdPartySchema`](https://www.gatsbyjs.com/docs/actions/#addThirdPartySchema) actions are only available in this API. For details on their usage please refer to the actions documentation.
 
 
 
-This API runs immediately before schema generation. For modifications of the generated schema, e.g. to customize added third-party types, use the [`createResolvers`](https://www.gatsbyjs.com/docs/node-apis/#createResolvers) API.
+This API runs immediately before schema generation. For modifications of the generated schema, e.g. to customize added third-party types, use the [`createResolvers`](https://www.gatsbyjs.com/docs/node-apis/#createResolvers) API.
 
 
 
@@ -15032,7 +15032,7 @@ This API runs immediately before schema generation. For modifications of the gen
 
 
 
-        `actions` object
+        `actions` object
 
 
 
@@ -15040,7 +15040,7 @@ This API runs immediately before schema generation. For modifications of the gen
 
 
 
-            `createTypes` object
+            `createTypes` object
 
 
 
@@ -15048,7 +15048,7 @@ This API runs immediately before schema generation. For modifications of the gen
 
 
 
-            `createFieldExtension` object
+            `createFieldExtension` object
 
 
 
@@ -15056,7 +15056,7 @@ This API runs immediately before schema generation. For modifications of the gen
 
 
 
-            `addThirdPartySchema` object
+            `addThirdPartySchema` object
 
 
 
@@ -15132,7 +15132,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 
 
-Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPlugin`](https://www.gatsbyjs.com/docs/actions/#setBabelPlugin) or [`setBabelPreset`](https://www.gatsbyjs.com/docs/actions/#setBabelPreset).
+Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPlugin`](https://www.gatsbyjs.com/docs/actions/#setBabelPlugin) or [`setBabelPreset`](https://www.gatsbyjs.com/docs/actions/#setBabelPreset).
 
 
 
@@ -15152,7 +15152,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelP
 
 
 
-        `stage` string
+        `stage` string
 
 
 
@@ -15164,7 +15164,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelP
 
 
 
-        `actions` object
+        `actions` object
 
 
 
@@ -15172,7 +15172,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelP
 
 
 
-    `options` object
+    `options` object
 
 
 
@@ -15214,7 +15214,7 @@ exports.onCreateBabelConfig = ({ actions }) => {
 
 
 
-Run when the `gatsby develop` server is started. It can be used for adding proxies and Express middleware to the server.
+Run when the `gatsby develop` server is started. It can be used for adding proxies and Express middleware to the server.
 
 
 
@@ -15234,11 +15234,11 @@ Run when the `gatsby develop` server is started. It can be used for adding pro
 
 
 
-        `app` Express
+        `app` Express
 
 
 
-        The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
+        The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
 
 
 
@@ -15282,11 +15282,11 @@ Called when a new node is created. Plugins wishing to extend or transform nodes 
 
 
 
-See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/actions/#createNode) and [`createNodeField`](https://www.gatsbyjs.com/docs/actions/#createNodeField)
+See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/actions/#createNode) and [`createNodeField`](https://www.gatsbyjs.com/docs/actions/#createNodeField)
 
 
 
-The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/creating-a-source-plugin/) tutorial demonstrates a way a plugin or site might use this API.
+The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/creating-a-source-plugin/) tutorial demonstrates a way a plugin or site might use this API.
 
 
 
@@ -15330,7 +15330,7 @@ There is a mechanism in Gatsby to prevent calling onCreatePage for pages created
 
 
 
-See the guide [Creating and Modifying Pages](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/) for more on this API.
+See the guide [Creating and Modifying Pages](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/) for more on this API.
 
 
 
@@ -15354,7 +15354,7 @@ Let plugins extend/mutate the site's webpack configuration.
 
 
 
-See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/docs/actions/#setWebpackConfig).
+See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/docs/actions/#setWebpackConfig).
 
 
 
@@ -15374,7 +15374,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `stage` string
+        `stage` string
 
 
 
@@ -15386,7 +15386,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `getConfig` function
+        `getConfig` function
 
 
 
@@ -15398,7 +15398,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `rules` object
+        `rules` object
 
 
 
@@ -15410,7 +15410,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `loaders` object
+        `loaders` object
 
 
 
@@ -15422,7 +15422,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `plugins` object
+        `plugins` object
 
 
 
@@ -15434,7 +15434,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/do
 
 
 
-        `actions` object
+        `actions` object
 
 
 
@@ -15620,7 +15620,7 @@ The first API called during Gatsby execution, runs as soon as plugins are loaded
 
 
 
-Run during the bootstrap phase. Plugins can use this to define a schema for their options using [Joi](https://joi.dev/) to validate the options users pass to the plugin.
+Run during the bootstrap phase. Plugins can use this to define a schema for their options using [Joi](https://joi.dev/) to validate the options users pass to the plugin.
 
 
 
@@ -15640,11 +15640,11 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
 
 
-        `Joi` Joi
+        `Joi` Joi
 
 
 
-        The instance of [Joi](https://joi.dev/) to define the schema
+        The instance of [Joi](https://joi.dev/) to define the schema
 
 
 
@@ -15698,7 +15698,7 @@ Ask compile-to-js plugins to process source to JavaScript so the query runner ca
 
 
 
-Lets plugins implementing support for other compile-to-js add to the list of "resolvable" file extensions. Gatsby supports `.js` and `.jsx` by default.
+Lets plugins implementing support for other compile-to-js add to the list of "resolvable" file extensions. Gatsby supports `.js` and `.jsx` by default.
 
 
 
@@ -15738,11 +15738,11 @@ Called during the creation of the GraphQL schema. Allows plugins to add new fiel
 
 
 
-This function should return an object in the shape of [GraphQLFieldConfigMap](https://graphql.org/graphql-js/type/#graphqlobjecttype) which will be appended to fields inferred by Gatsby from data nodes.
+This function should return an object in the shape of [GraphQLFieldConfigMap](https://graphql.org/graphql-js/type/#graphqlobjecttype) which will be appended to fields inferred by Gatsby from data nodes.
 
 
 
-*Note:* Import GraphQL types from `gatsby/graphql` and don't add the `graphql` package to your project/plugin dependencies to avoid `Schema must contain unique named types but contains multiple types named` errors. `gatsby/graphql` exports all builtin GraphQL types as well as the `GraphQLJSON` type.
+*Note:* Import GraphQL types from `gatsby/graphql` and don't add the `graphql` package to your project/plugin dependencies to avoid `Schema must contain unique named types but contains multiple types named` errors. `gatsby/graphql` exports all builtin GraphQL types as well as the `GraphQLJSON` type.
 
 
 
@@ -15750,9 +15750,9 @@ Many transformer plugins use this to add fields that take arguments.
 
 
 
--   [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) adds an "excerpt" field where the user when writing their query can specify how many characters to prune the markdown source to.
+-   [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) adds an "excerpt" field where the user when writing their query can specify how many characters to prune the markdown source to.
 
--   [`gatsby-transformer-sharp`](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/) exposes many image transformation options as GraphQL fields.
+-   [`gatsby-transformer-sharp`](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/) exposes many image transformation options as GraphQL fields.
 
 
 
@@ -15772,11 +15772,11 @@ Many transformer plugins use this to add fields that take arguments.
 
 
 
-        `type` object
+        `type` object
 
 
 
-        Object containing `name` and `nodes`
+        Object containing `name` and `nodes`
 
 
 
@@ -15848,15 +15848,15 @@ exports.setFieldsOnGraphQLNodeType = ({ type }) => {
 
 
 
-Extension point to tell plugins to source nodes. This API is called during the Gatsby bootstrap sequence. Source plugins use this hook to create nodes. This API is called exactly once per plugin (and once for your site's `gatsby-config.js` file). If you define this hook in `gatsby-node.js` it will be called exactly once after all of your source plugins have finished creating nodes.
+Extension point to tell plugins to source nodes. This API is called during the Gatsby bootstrap sequence. Source plugins use this hook to create nodes. This API is called exactly once per plugin (and once for your site's `gatsby-config.js` file). If you define this hook in `gatsby-node.js` it will be called exactly once after all of your source plugins have finished creating nodes.
 
 
 
-The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/creating-a-source-plugin/) tutorial demonstrates a way a plugin or site might use this API.
+The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/creating-a-source-plugin/) tutorial demonstrates a way a plugin or site might use this API.
 
 
 
-See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/actions/#createNode).
+See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/actions/#createNode).
 
 
 
@@ -15936,7 +15936,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 
 
 
-## Called before scheduling a `onCreateNode` callback for a plugin. If it returns falsy then Gatsby will not schedule the `onCreateNode` callback for this node for this plugin. Note: this API does not receive the regular `api` that other callbacks get as first arg.
+## Called before scheduling a `onCreateNode` callback for a plugin. If it returns falsy then Gatsby will not schedule the `onCreateNode` callback for this node for this plugin. Note: this API does not receive the regular `api` that other callbacks get as first arg.
 
 
 
@@ -15996,11 +15996,11 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
 
 
 
-The file `gatsby-ssr.js` lets you alter the content of static HTML files as they are being Server-Side Rendered (SSR) by Gatsby and Node.js. To use the [Gatsby SSR APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/), create a file called `gatsby-ssr.js` in the root of your site. Export any of the APIs you wish to use in this file.
+The file `gatsby-ssr.js` lets you alter the content of static HTML files as they are being Server-Side Rendered (SSR) by Gatsby and Node.js. To use the [Gatsby SSR APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/), create a file called `gatsby-ssr.js` in the root of your site. Export any of the APIs you wish to use in this file.
 
 
 
-The APIs `wrapPageElement` and `wrapRootElement` exist in both the SSR and [browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser). You generally should implement the same components in both `gatsby-ssr.js` and `gatsby-browser.js` so that pages generated through SSR with Node.js are the same after being [hydrated](https://www.gatsbyjs.com/docs/glossary#hydration) in the browser.
+The APIs `wrapPageElement` and `wrapRootElement` exist in both the SSR and [browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser). You generally should implement the same components in both `gatsby-ssr.js` and `gatsby-browser.js` so that pages generated through SSR with Node.js are the same after being [hydrated](https://www.gatsbyjs.com/docs/glossary#hydration) in the browser.
 
 
 
@@ -16068,7 +16068,7 @@ return <Layout {...props}>{element}</Layout>
 
 
 
-Implement any of these APIs by exporting them from a file named `gatsby-ssr.js` in the root of your project.
+Implement any of these APIs by exporting them from a file named `gatsby-ssr.js` in the root of your project.
 
 
 
@@ -16080,7 +16080,7 @@ Implement any of these APIs by exporting them from a file named `gatsby-ssr.js`
 
 
 
-[`onPreRenderHTML`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#onPreRenderHTML) Function
+[`onPreRenderHTML`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#onPreRenderHTML) Function
 
 
 
@@ -16092,11 +16092,11 @@ Source
 
 
 
-(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
+(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
 
 
 
-Called after every page Gatsby server renders while building HTML so you can replace head components to be rendered in your `html.js`. This is useful if you need to reorder scripts or styles added by other plugins.
+Called after every page Gatsby server renders while building HTML so you can replace head components to be rendered in your `html.js`. This is useful if you need to reorder scripts or styles added by other plugins.
 
 
 
@@ -16116,7 +16116,7 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-        `pathname` string
+        `pathname` string
 
 
 
@@ -16128,23 +16128,11 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-        `getHeadComponents` ReactNode[]
+        `getHeadComponents` ReactNode[]
 
 
 
-        Returns the current `headComponents` array.
-
-
-
-    -   ######
-
-
-
-        `replaceHeadComponents` function
-
-
-
-        Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+        Returns the current `headComponents` array.
 
 
 
@@ -16152,23 +16140,11 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-        `getPreBodyComponents` ReactNode[]
+        `replaceHeadComponents` function
 
 
 
-        Returns the current `preBodyComponents` array.
-
-
-
-    -   ######
-
-
-
-        `replacePreBodyComponents` function
-
-
-
-        Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+        Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
 
 
@@ -16176,11 +16152,11 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-        `getPostBodyComponents` ReactNode[]
+        `getPreBodyComponents` ReactNode[]
 
 
 
-        Returns the current `postBodyComponents` array.
+        Returns the current `preBodyComponents` array.
 
 
 
@@ -16188,11 +16164,35 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-        `replacePostBodyComponents` function
+        `replacePreBodyComponents` function
 
 
 
-        Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+        Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+
+
+
+    -   ######
+
+
+
+        `getPostBodyComponents` ReactNode[]
+
+
+
+        Returns the current `postBodyComponents` array.
+
+
+
+    -   ######
+
+
+
+        `replacePostBodyComponents` function
+
+
+
+        Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
 
 
@@ -16200,11 +16200,11 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 
 
-    `pluginOptions` object
+    `pluginOptions` object
 
 
 
-    Object containing options defined in `gatsby-config.js`
+    Object containing options defined in `gatsby-config.js`
 
 
 
@@ -16252,7 +16252,7 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
 
 
 
-[`onRenderBody`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#onRenderBody) Function
+[`onRenderBody`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#onRenderBody) Function
 
 
 
@@ -16264,23 +16264,23 @@ Source
 
 
 
-(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
+(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
 
 
 
-Called after every page Gatsby server renders while building HTML so you can set head and body components to be rendered in your `html.js`.
+Called after every page Gatsby server renders while building HTML so you can set head and body components to be rendered in your `html.js`.
 
 
 
-Gatsby does a two-pass render for HTML. It loops through your pages first rendering only the body and then takes the result body HTML string and passes it as the `body` prop to your `html.js` to complete the render.
+Gatsby does a two-pass render for HTML. It loops through your pages first rendering only the body and then takes the result body HTML string and passes it as the `body` prop to your `html.js` to complete the render.
 
 
 
-It's often handy to be able to send custom components to your `html.js`. For example, it's a very common pattern for React.js libraries that support server rendering to pull out data generated during the render to add to your HTML.
+It's often handy to be able to send custom components to your `html.js`. For example, it's a very common pattern for React.js libraries that support server rendering to pull out data generated during the render to add to your HTML.
 
 
 
-Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#replaceRenderer) is preferable as multiple plugins can implement this API where only one plugin can take over server rendering. However, if your plugin requires taking over server rendering then that's the one to use
+Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#replaceRenderer) is preferable as multiple plugins can implement this API where only one plugin can take over server rendering. However, if your plugin requires taking over server rendering then that's the one to use
 
 
 
@@ -16300,7 +16300,7 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-        `pathname` string
+        `pathname` string
 
 
 
@@ -16312,23 +16312,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-        `setHeadComponents` function
+        `setHeadComponents` function
 
 
 
-        Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
-
-
-
-    -   ######
-
-
-
-        `setHtmlAttributes` function
-
-
-
-        Takes an object of props which will spread into the `<html>` component.
+        Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
 
 
@@ -16336,23 +16324,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-        `setBodyAttributes` function
+        `setHtmlAttributes` function
 
 
 
-        Takes an object of props which will spread into the `<body>` component.
-
-
-
-    -   ######
-
-
-
-        `setPreBodyComponents` function
-
-
-
-        Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
+        Takes an object of props which will spread into the `<html>` component.
 
 
 
@@ -16360,11 +16336,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-        `setPostBodyComponents` function
+        `setBodyAttributes` function
 
 
 
-        Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+        Takes an object of props which will spread into the `<body>` component.
 
 
 
@@ -16372,11 +16348,35 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-        `setBodyProps` function
+        `setPreBodyComponents` function
 
 
 
-        Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
+        Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
+
+
+
+    -   ######
+
+
+
+        `setPostBodyComponents` function
+
+
+
+        Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+
+
+
+    -   ######
+
+
+
+        `setBodyProps` function
+
+
+
+        Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
 
 
@@ -16384,11 +16384,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference
 
 
 
-    `pluginOptions` object
+    `pluginOptions` object
 
 
 
-    Object containing options defined in `gatsby-config.js`
+    Object containing options defined in `gatsby-config.js`
 
 
 
@@ -16458,7 +16458,7 @@ exports.onRenderBody = ({
 
 
 
-[`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#replaceRenderer) Function
+[`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#replaceRenderer) Function
 
 
 
@@ -16466,7 +16466,7 @@ exports.onRenderBody = ({
 
 
 
-(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
+(apiCallbackContext: object, pluginOptions: pluginOptions) => undefined
 
 
 
@@ -16490,7 +16490,7 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `pathname` string
+        `pathname` string
 
 
 
@@ -16502,7 +16502,7 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `bodyComponent` ReactNode
+        `bodyComponent` ReactNode
 
 
 
@@ -16514,23 +16514,11 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `replaceBodyHTMLString` function
+        `replaceBodyHTMLString` function
 
 
 
-        Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
-
-
-
-    -   ######
-
-
-
-        `setHeadComponents` function
-
-
-
-        Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
+        Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
 
 
 
@@ -16538,23 +16526,11 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `setHtmlAttributes` function
+        `setHeadComponents` function
 
 
 
-        Takes an object of props which will spread into the `<html>` component.
-
-
-
-    -   ######
-
-
-
-        `setBodyAttributes` function
-
-
-
-        Takes an object of props which will spread into the `<body>` component.
+        Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
 
 
@@ -16562,23 +16538,11 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `setPreBodyComponents` function
+        `setHtmlAttributes` function
 
 
 
-        Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
-
-
-
-    -   ######
-
-
-
-        `setPostBodyComponents` function
-
-
-
-        Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+        Takes an object of props which will spread into the `<html>` component.
 
 
 
@@ -16586,11 +16550,47 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-        `setBodyProps` function
+        `setBodyAttributes` function
 
 
 
-        Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
+        Takes an object of props which will spread into the `<body>` component.
+
+
+
+    -   ######
+
+
+
+        `setPreBodyComponents` function
+
+
+
+        Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
+
+
+
+    -   ######
+
+
+
+        `setPostBodyComponents` function
+
+
+
+        Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+
+
+
+    -   ######
+
+
+
+        `setBodyProps` function
+
+
+
+        Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
 
 
@@ -16598,11 +16598,11 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 
 
-    `pluginOptions` object
+    `pluginOptions` object
 
 
 
-    Object containing options defined in `gatsby-config.js`
+    Object containing options defined in `gatsby-config.js`
 
 
 
@@ -16644,7 +16644,7 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 
 
 
-[`wrapPageElement`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement) Function
+[`wrapPageElement`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement) Function
 
 
 
@@ -16652,7 +16652,7 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 
 
 
-(apiCallbackContext: object, pluginOptions: pluginOptions) => ReactNode
+(apiCallbackContext: object, pluginOptions: pluginOptions) => ReactNode
 
 
 
@@ -16660,11 +16660,11 @@ Allow a plugin to wrap the page element.
 
 
 
-This is useful for setting wrapper components around pages that won't get unmounted on page changes. For setting Provider components, use [wrapRootElement](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapRootElement).
+This is useful for setting wrapper components around pages that won't get unmounted on page changes. For setting Provider components, use [wrapRootElement](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapRootElement).
 
 
 
-*Note:* There is an equivalent hook in Gatsby's [Browser API](https://www.gatsbyjs.com/docs/browser-apis/#wrapPageElement). It is recommended to use both APIs together. For example usage, check out [Using i18n](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n).
+*Note:* There is an equivalent hook in Gatsby's [Browser API](https://www.gatsbyjs.com/docs/browser-apis/#wrapPageElement). It is recommended to use both APIs together. For example usage, check out [Using i18n](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n).
 
 
 
@@ -16684,7 +16684,7 @@ This is useful for setting wrapper components around pages that won't get unmoun
 
 
 
-        `element` ReactNode
+        `element` ReactNode
 
 
 
@@ -16696,7 +16696,7 @@ This is useful for setting wrapper components around pages that won't get unmoun
 
 
 
-        `props` object
+        `props` object
 
 
 
@@ -16708,11 +16708,11 @@ This is useful for setting wrapper components around pages that won't get unmoun
 
 
 
-    `pluginOptions` object
+    `pluginOptions` object
 
 
 
-    Object containing options defined in `gatsby-config.js`
+    Object containing options defined in `gatsby-config.js`
 
 
 
@@ -16766,7 +16766,7 @@ exports.wrapPageElement = ({ element, props }) => {
 
 
 
-[`wrapRootElement`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapRootElement) Function
+[`wrapRootElement`](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapRootElement) Function
 
 
 
@@ -16774,7 +16774,7 @@ exports.wrapPageElement = ({ element, props }) => {
 
 
 
-(apiCallbackContext: object, pluginOptions: pluginOptions) => ReactNode
+(apiCallbackContext: object, pluginOptions: pluginOptions) => ReactNode
 
 
 
@@ -16782,11 +16782,11 @@ Allow a plugin to wrap the root element.
 
 
 
-This is useful to set up any Provider components that will wrap your application. For setting persistent UI elements around pages use [wrapPageElement](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
+This is useful to set up any Provider components that will wrap your application. For setting persistent UI elements around pages use [wrapPageElement](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
 
 
 
-*Note:* There is an equivalent hook in Gatsby's [Browser API](https://www.gatsbyjs.com/docs/browser-apis/#wrapRootElement). It is recommended to use both APIs together. For example usage, check out [Using redux](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux).
+*Note:* There is an equivalent hook in Gatsby's [Browser API](https://www.gatsbyjs.com/docs/browser-apis/#wrapRootElement). It is recommended to use both APIs together. For example usage, check out [Using redux](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux).
 
 
 
@@ -16806,7 +16806,7 @@ This is useful to set up any Provider components that will wrap your application
 
 
 
-        `element` ReactNode
+        `element` ReactNode
 
 
 
@@ -16818,11 +16818,11 @@ This is useful to set up any Provider components that will wrap your application
 
 
 
-    `pluginOptions` object
+    `pluginOptions` object
 
 
 
-    Object containing options defined in `gatsby-config.js`
+    Object containing options defined in `gatsby-config.js`
 
 
 

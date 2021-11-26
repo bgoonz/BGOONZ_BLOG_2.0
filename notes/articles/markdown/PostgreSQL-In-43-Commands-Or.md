@@ -4,7 +4,7 @@ In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session 
 
 ---
 
-### PostgreSQL In 43 Commands Or Less
+### PostgreSQL In 43 Commands Or Less
 
 #### In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
@@ -18,7 +18,7 @@ As is typical of client/server applications, the client and the server can be on
 
 The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts (“forks”) a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original `postgres` process. Thus, the master server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
 
-### What is SQL?
+### What is SQL?
 
 SQL is short for Structured Query Language. Originally, it used to be called SEQUEL (Structured English Query Language) and was used for storing and manipulating data in databases. Today SQL is used to perform all types of data operations in relational database management systems (RDBMS).
 
@@ -37,7 +37,7 @@ All of this data needs to go somewhere! That’s where databases come in. Databa
 
 In this guide, we’re going to provide a brief overview of SQL to help you level up your skills! Without further ado, let’s get started!
 
-### More On SQL?
+### More On SQL?
 
 SQL was invented in the early 1970s by the IBM researchers Donald Chamberlin and Raymond Boyce. The technology may be old but it’s still a crucial part of interacting with databases.
 
@@ -47,29 +47,29 @@ SQL is used with Relational Database Management Systems, or RDBMS. These are dat
 
 <a href="https://careerkarma.com/careers/data-science/" class="markup--anchor markup--p-anchor">Data scientists</a>, <a href="https://careerkarma.com/careers/database-administration/" class="markup--anchor markup--p-anchor">database administrators</a>, <a href="https://studydatascience.org/how-to-become-data-analyst/" class="markup--anchor markup--p-anchor">data analysts</a>, <a href="https://studydatascience.org/how-to-become-business-analyst/" class="markup--anchor markup--p-anchor">business analysts</a> and <a href="https://careerkarma.com/careers/web-development/" class="markup--anchor markup--p-anchor">back-end web developers</a> are several of the many types of technologists who use databases in their work.
 
-### Here’s a guide on how to get setup with PSQL:
+### Here’s a guide on how to get setup with PSQL:
 
 <a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br />
 <em>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Here’s a Cheatsheet I made:
+### Here’s a Cheatsheet I made:
 
 <a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31"><strong>Postgresql Cheat Sheet</strong><br />
 <em>PostgreSQL commands</em>medium.com</a><a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
 
-### Inserting Data into a Database
+### Inserting Data into a Database
 
-### Create a Table
+### Create a Table
 
 The <a href="https://www.google.com/url?sa=t&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwijn6yqgePqAhV0oVwKHZnUD60QFjAAegQIBBAB&amp;url=https%3A%2F%2Fcareerkarma.com%2Fblog%2Fsql-create-table%2F&amp;usg=AOvVaw1vlxV4UV8ve5miYhGsDVaB" class="markup--anchor markup--p-anchor">CREATE TABLE</a> statement creates a new table in a database. You can use this command to specify what columns should appear in a database and the types of those columns.
 
-### Insert a Record
+### Insert a Record
 
 The <a href="https://careerkarma.com/blog/sql-insert/" class="markup--anchor markup--p-anchor">INSERT INTO</a> statement inserts a new row into a database. Depending on the structure of a table, this statement can be used to insert some or all the values into a record.
 
-### Selecting Data from a Database
+### Selecting Data from a Database
 
 ### Selecting Data
 
@@ -91,11 +91,11 @@ You could sort a list of employees in ascending order based on the day they were
 
 SQL databases can contain a lot of records. The <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjorsD7gePqAhXLiFwKHUj5DakQFjAAegQIBBAB&amp;url=https%3A%2F%2Fcareerkarma.com%2Fblog%2Fsql-limit%2F&amp;usg=AOvVaw2_D44T151S6h475cDfrhmu" class="markup--anchor markup--p-anchor">LIMIT clause</a> allows you to limit how many rows are returned by a query. For instance, you could return only the first five responses from a particular query.
 
-### Query Values Using Between
+### Query Values Using Between
 
 The <a href="https://careerkarma.com/blog/sql-between/" class="markup--anchor markup--p-anchor">BETWEEN</a> operator allows you to select records where a column value is within a particular range. For instance, you could use BETWEEN to retrieve a list of employees who work at a business and who earn between $20,000 and $30,000. You could use BETWEEN to retrieve a list of all the coffees at a cafe which cost between $2.00 and $2.50.
 
-### Updating a Database
+### Updating a Database
 
 Updating a database allows you to modify the information you have already stored, and you can do so by doing the following:
 
@@ -111,7 +111,7 @@ _The SQL ALTER TABLE statement adds, changes, or removes a column in a table. Th
 
 You may decide that you need to make a change to an SQL table. For instance, you may want to rename a column or add a new column to the table. These changes are all possible with the SQL ALTER TABLE command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*s5UbiqN0qkySgA_a5bcXOw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ZDx9fNK6yfyLkv_JmPMD8A.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*K7Ch-fS6Wr5Lps5g0-oGVQ.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*VVOVwGNPaiDVe79DzI9H9Q.png" class="graf-image" /></figure>### SQL ALTER TABLE
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*s5UbiqN0qkySgA_a5bcXOw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ZDx9fNK6yfyLkv_JmPMD8A.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*K7Ch-fS6Wr5Lps5g0-oGVQ.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*VVOVwGNPaiDVe79DzI9H9Q.png" class="graf-image" /></figure>### SQL ALTER TABLE
 
 The ALTER TABLE command allows you to change an existing table by:
 
@@ -137,7 +137,7 @@ Below is an _SQL_ command that will create an employee database that stores thre
 
 But what if we’ve forgotten to add a column? Say we need to add a column that states whether an employee is on probation. That’s where the _ALTER TABLE_ statement comes in.
 
-### SQL Add Column
+### SQL Add Column
 
 To perform an SQL add column operation, use the ALTER TABLE ADD command. This command alters a table and adds in a column with the specified data type. Using this command, you can add a column to a table after you have created the table.
 
@@ -218,7 +218,7 @@ That’s where the _SQL subquery_ operation comes in. _Subqueries_, also known a
 
 ---
 
-### SQL query examples
+### SQL query examples
 
 Now let’s explore some examples of common and useful PostgreSQL queries that can be used in various situations.
 
@@ -226,7 +226,7 @@ From <a href="https://www.postgresql.org/docs/13/app-psql.html" class="markup--a
 
 ### 1. CREATE TABLE query in PostgreSQL
 
-### <a href="https://www.postgresql.org/docs/12/sql-createtable.html" class="markup--anchor markup--h3-anchor">CREATE TABLE</a> is a keyword that will create a new, initially empty table in the database. The table will be owned by the user who has issued this command.
+### <a href="https://www.postgresql.org/docs/12/sql-createtable.html" class="markup--anchor markup--h3-anchor">CREATE TABLE</a> is a keyword that will create a new, initially empty table in the database. The table will be owned by the user who has issued this command.
 
     postgres=# create table dummy_table(name varchar(20),address text,age int);
           CREATE TABLE
@@ -330,7 +330,7 @@ In this example, we are deleting one row whose age column has the value 65:
 
 In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/functions-comparison.html" class="markup--anchor markup--p-anchor">comparison operators</a> we can find results where the value in a column is not equal to the specified condition or value.
 
-### Less than or equal to query:
+### Less than or equal to query:
 
     postgres=# select * from dummy_table where age <=50;
      name |  address   | age
@@ -341,7 +341,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
      PQR  | location-D |  50
     (4 rows)
 
-### Greater than or equal to query:
+### Greater than or equal to query:
 
     postgres=# select * from dummy_table where age>=50;
      name |  address   | age
@@ -349,7 +349,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
      PQR  | location-D |  50
     (1 row)
 
-### Not equal to query:
+### Not equal to query:
 
     postgres=# select * from dummy_table where age<>50;
      name |  address   | age
@@ -359,7 +359,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
      DEF  | location-C |  40
     (3 rows)
 
-### Equal to query:
+### Equal to query:
 
     postgres=# select * from dummy_table where age=50;
      name |  address   | age
@@ -371,7 +371,7 @@ In PostgreSQL, with the help of <a href="https://www.postgresql.org/docs/12/func
 
 The <a href="https://www.postgresql.org/docs/12/sql-select.html#SQL-DISTINCT" class="markup--anchor markup--p-anchor">SELECT DISTINCT</a> statement is used to return only distinct values from the table. It removes any duplicate values.
 
-### SELECT query without DISTINCT clause
+### SELECT query without DISTINCT clause
 
     postgres=# select age from dummy_table order by 1;
      age
@@ -383,7 +383,7 @@ The <a href="https://www.postgresql.org/docs/12/sql-select.html#SQL-DISTINCT" cl
        3
     (5 rows)
 
-### SELECT query with DISTINCT clause
+### SELECT query with DISTINCT clause
 
     postgres=# select distinct age from dummy_table order by 1;
      age
@@ -533,7 +533,7 @@ We can perform hierarchical queries on this table using the methods below.
 
 The <a href="https://www.postgresql.org/docs/9.1/functions-string.html" class="markup--anchor markup--p-anchor">length function</a> returns the number of characters or number of bytes in a specified string variable.
 
-### Basic SELECT query
+### Basic SELECT query
 
     postgres=# select name,age from dummy_table;
      name | age
@@ -545,7 +545,7 @@ The <a href="https://www.postgresql.org/docs/9.1/functions-string.html" class="m
      PQR  |
     (5 rows)
 
-### Query with length function for column name and age
+### Query with length function for column name and age
 
     postgres=# select length(name),length(age) from dummy_table;
      length | length
@@ -624,7 +624,7 @@ To avoid such errors, we can either use PERFORM or declare a variable and use it
 
 With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" class="markup--anchor markup--p-anchor">COPY command</a>, we can export data from a table to an outside text file as well as import data from a text file into a table.
 
-### Exporting data from a table to a text file
+### Exporting data from a table to a text file
 
     postgres=#  copy dummy_table to '/tmp/abc.txt';
     COPY 5
@@ -636,7 +636,7 @@ With the help of the <a href="https://www.postgresql.org/docs/12/sql-copy.html" 
     PQR   location-D  50
     CXC   1   50
 
-### Importing data from a text file into a table
+### Importing data from a text file into a table
 
     postgres=# copy dummy_table from '/tmp/abc.txt';
     COPY 5
@@ -743,9 +743,9 @@ The <a href="https://www.postgresql.org/docs/12/queries-limit.html" class="marku
      cxc  | 1       |  50
     (1 row)
 
-### 25. IF … ELSE expression in PostgreSQL
+### 25. IF … ELSE expression in PostgreSQL
 
-We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">conditional statements</a> like IF ... ELSE in an anonymous block. The example below checks if the values of variables abc and xyz are matching and prints the result— i.e., 150:
+We can use <a href="https://www.postgresql.org/docs/9.1/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">conditional statements</a> like IF ... ELSE in an anonymous block. The example below checks if the values of variables abc and xyz are matching and prints the result— i.e., 150:
 
     postgres=# Do
                  $$
@@ -817,7 +817,7 @@ The <a href="https://www.postgresql.org/docs/current/tutorial-join.html" class="
 
 ### 28. CASE expression in PostgreSQL
 
-The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" class="markup--anchor markup--p-anchor">CASE expression</a> is a generic conditional expression, similar to the IF … ELSE statement.
+The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" class="markup--anchor markup--p-anchor">CASE expression</a> is a generic conditional expression, similar to the IF … ELSE statement.
 
     postgres=# SELECT age,
            CASE age WHEN 25 THEN 'one'
@@ -837,7 +837,7 @@ The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" clas
 ### 29. PostgreSQL recursive query
 
 Recursive queries are used to deal with hierarchical queries or tree-structured data. The structure of a WITH RECURSIVE query is always: a) Non-recursive term  
- b) UNION (or UNION ALL), then a recursive term
+ b) UNION (or UNION ALL), then a recursive term
 
 where the recursive term includes a reference to the query's output.
 
@@ -879,7 +879,7 @@ The recursive query below will give all the reports in a certain order:
 
     postgres=#
 
-### 30. PostgreSQL log queries
+### 30. PostgreSQL log queries
 
 Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared_preload_libraries inside the postgresql.conf file:
 
@@ -975,7 +975,7 @@ We can also perform a date range query to find rows with values between two time
      3 | 12-JAN-00 00:00:00
     (2 rows)
 
-### 33. PostgreSQL function RETURN QUERY result
+### 33. PostgreSQL function RETURN QUERY result
 
 When a PL/pgSQL function is declared to return a SETOF some data type, the return is specified by a <a href="https://www.postgresql.org/docs/12/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">RETURN QUERY</a> command:
 
@@ -1039,7 +1039,7 @@ These operators are used to match conditions in SQL statements—e.g., in WHERE 
     OR   = when any boolean expression is true then it will return TRUE
     NOT = reverses the value of Boolean operator
 
-### Some logical operator examples
+### Some logical operator examples
 
     If both expressions are true, then the result is TRUE. postgresql=# select 1=1/1 and 200=2+198 as result_and_operator; result_and_operator --------------------- t (1 row) postgresql=#
 
@@ -1060,7 +1060,7 @@ In the following SQL query, there are two records with the value 50:
       50
     (5 rows)
 
-We can use the following SELECT … HAVING query to find the duplicate rows:
+We can use the following SELECT … HAVING query to find the duplicate rows:
 
     postgres=#  select age, count(age) from dummy_table group by age having count(age)>1;
      age | count

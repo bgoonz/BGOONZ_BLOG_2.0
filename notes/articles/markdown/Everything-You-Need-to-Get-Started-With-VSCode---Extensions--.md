@@ -6,16 +6,16 @@ Commands:
 
 ### Everything You Need to Get Started With VSCode + Extensions & Resources
 
-#### Every extension or tool you could possibly need
+#### Every extension or tool you could possibly need
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*gcp0kkiWQY6qd1Y4qEcqxw.png" class="graf-image" /></figure>
 
-### Here’s a rudimentary static site I made that goes into more detail on the extensions I use…
+### Here’s a rudimentary static site I made that goes into more detail on the extensions I use…
 
 <a href="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18"><strong>VSCodeExtensions</strong><br />
 5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app</a><a href="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Here’s the repo it was deployed from:
+### Here’s the repo it was deployed from:
 
 <a href="https://github.com/bgoonz/vscode-Extension-readmes" class="markup--anchor markup--p-anchor">https://github.com/bgoonz/vscode-Extension-readmes</a>
 
@@ -73,7 +73,7 @@ Keyboard Shortcut: Ctrl+Alt+Up or Ctrl+Alt+Down
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Le_oEOiYnEBmFfig.gif" class="graf-image" /></figure>You can add additional cursors to all occurrences of the current selection with Ctrl+Shift+L.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif" class="graf-image" /></figure>*Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the* `editor.multiCursorModifier` <a href="https://code.visualstudio.com/docs/getstarted/settings" class="markup--anchor markup--blockquote-anchor"><em>setting</em></a>* . See* <a href="https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier" class="markup--anchor markup--blockquote-anchor"><em>Multi-cursor Modifier</em></a> *for details.*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif" class="graf-image" /></figure>*Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the* `editor.multiCursorModifier` <a href="https://code.visualstudio.com/docs/getstarted/settings" class="markup--anchor markup--blockquote-anchor"><em>setting</em></a>* . See* <a href="https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier" class="markup--anchor markup--blockquote-anchor"><em>Multi-cursor Modifier</em></a> *for details.*
 
 If you do not want to add all occurrences of the current selection, you can use Ctrl+D instead. This only selects the next occurrence after the one you selected so you can add selections one by one.
 
@@ -117,7 +117,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 -   <span id="4dd9"><a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft’s tutorial on using VSCode for remote C/C++ development</a></span>
 
-### C\#, ASP .NET and .NET Core
+### C\#, ASP .NET and .NET Core
 
 > <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp" class="markup--anchor markup--blockquote-anchor">C#</a> — C\# extension by <a href="https://www.microsoft.com/" class="markup--anchor markup--blockquote-anchor">Microsoft</a>, read <a href="https://code.visualstudio.com/docs/languages/csharp" class="markup--anchor markup--blockquote-anchor">official documentation</a> for the details
 
@@ -190,13 +190,13 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 Framework-specific:
 
-#### <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur" class="markup--anchor markup--h4-anchor">Vetur</a> — Toolkit for Vue.js
+#### <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur" class="markup--anchor markup--h4-anchor">Vetur</a> — Toolkit for Vue.js
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*F7J_vW0ISbVMTXIZ.png" class="graf-image" /></figure>
 
 ---
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" class="markup--anchor markup--h3-anchor">Debugger for Chrome</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" class="markup--anchor markup--h3-anchor">Debugger for Chrome</a>
 
 > _A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol._
 
@@ -218,7 +218,7 @@ Framework-specific:
 
 > _Linter for_ <a href="https://github.com/DavidAnson/markdownlint" class="markup--anchor markup--blockquote-anchor"><em>markdownlint</em></a>_._
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" class="markup--anchor markup--h3-anchor">Markdown All in One</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" class="markup--anchor markup--h3-anchor">Markdown All in One</a>
 
 > _All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)_
 
@@ -287,15 +287,15 @@ These extensions provide slightly different sets of features. While the first on
 
 ### Productivity
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=bencoleman.armview" class="markup--anchor markup--h3-anchor">ARM Template Viewer</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=bencoleman.armview" class="markup--anchor markup--h3-anchor">ARM Template Viewer</a>
 
 > _Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources._
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb" class="markup--anchor markup--h3-anchor">Azure Cosmos DB</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb" class="markup--anchor markup--h3-anchor">Azure Cosmos DB</a>
 
 > _Browse your database inside the vs code editor_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit" class="markup--anchor markup--h3-anchor">Azure IoT Toolkit</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit" class="markup--anchor markup--h3-anchor">Azure IoT Toolkit</a>
 
 > _Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub_
 
@@ -329,7 +329,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*W3N0kbgEumWYa-m4.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi" class="markup--anchor markup--h3-anchor">Gi</a>
 
-> _Generating .gitignore files made easy_
+> _Generating .gitignore files made easy_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs" class="markup--anchor markup--h3-anchor">GistPad</a>
 
@@ -339,7 +339,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _View git log, file or line History_
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager" class="markup--anchor markup--h3-anchor">Git Project Manager</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager" class="markup--anchor markup--h3-anchor">Git Project Manager</a>
 
 > _Automatically indexes your git projects and lets you easily toggle between them_
 
@@ -359,13 +359,13 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ <a href="https://github.com/KnisterPeter/vscode-github/blob/master/README.md" class="markup--anchor markup--blockquote-anchor"><em>README.md</em></a> _on how to get started with the setup for this extension._
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor" class="markup--anchor markup--h3-anchor">GitHub Pull Request Monitor</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor" class="markup--anchor markup--h3-anchor">GitHub Pull Request Monitor</a>
 
 > _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow" class="markup--anchor markup--h3-anchor">GitLab Workflow</a>
 
-> _Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your _`.gitlab-ci.yml`_._
+> _Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your _`.gitlab-ci.yml`_._
 
 #### <a href="https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle" class="markup--anchor markup--h4-anchor">Gradle Tasks</a>
 
@@ -403,7 +403,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Override the regular Copy and Cut commands to keep selections in a clipboard ring_
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode" class="markup--anchor markup--h3-anchor">ngrok for VSCode</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode" class="markup--anchor markup--h3-anchor">ngrok for VSCode</a>
 
 > _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ <a href="https://ngrok.com/" class="markup--anchor markup--blockquote-anchor"><em>ngrok</em></a> _from the VSCode command palette_
 
@@ -423,7 +423,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Compare (diff) text selections within a file, across different files, or to the clipboard_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype" class="markup--anchor markup--h3-anchor">Paste JSON as Code</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype" class="markup--anchor markup--h3-anchor">Paste JSON as Code</a>
 
 > _Infer the structure of JSON and paste is as types in many programming languages_
 
@@ -467,7 +467,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools" class="markup--anchor markup--h3-anchor">Text Power Tools</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools" class="markup--anchor markup--h3-anchor">Text Power Tools</a>
 
 > _All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text._
 
@@ -497,11 +497,11 @@ These extensions provide slightly different sets of features. While the first on
 
 > _And it doesn’t require you to select what to be aligned, the extension will figure it out by itself._
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" class="markup--anchor markup--h3-anchor">Auto Close Tag</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" class="markup--anchor markup--h3-anchor">Auto Close Tag</a>
 
 > _Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" class="markup--anchor markup--h3-anchor">Auto Rename Tag</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" class="markup--anchor markup--h3-anchor">Auto Rename Tag</a>
 
 > _Auto rename paired HTML/XML tags_
 
@@ -517,7 +517,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Transform quotes of ECMAScript string literals_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent" class="markup--anchor markup--h3-anchor">Paste and Indent</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent" class="markup--anchor markup--h3-anchor">Paste and Indent</a>
 
 > _Paste code with “correct” indentation_
 
@@ -555,7 +555,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*JF8NuxAFDxXiTn_u.gif" class="graf-image" /></figure>### Explorer Icons
 
-### <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" class="markup--anchor markup--h3-anchor">Material Icon Theme</a>
+### <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" class="markup--anchor markup--h3-anchor">Material Icon Theme</a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*67ZZ9mhoISPk_lM4.png" class="graf-image" /></figure>### Uncategorized
 
@@ -589,11 +589,11 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Dash integration in Visual Studio Code_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell" class="markup--anchor markup--h3-anchor">Edit with Shell Command</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell" class="markup--anchor markup--h3-anchor">Edit with Shell Command</a>
 
 > _Leverage your favourite shell commands to edit text_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" class="markup--anchor markup--h3-anchor">Editor Config for VS Code</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" class="markup--anchor markup--h3-anchor">Editor Config for VS Code</a>
 
 > _Editor Config for VS Code_
 
@@ -601,7 +601,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Auto-sync your work to remote FTP server_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag" class="markup--anchor markup--h3-anchor">Highlight JSX/HTML tags</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag" class="markup--anchor markup--h3-anchor">Highlight JSX/HTML tags</a>
 
 > _Highlights matching tags in the file._
 
@@ -625,7 +625,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Io4fPojDRrDf5CmW.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode" class="markup--anchor markup--h3-anchor">Quokka</a>
 
-#### This one is super cool!
+#### This one is super cool!
 
 > _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting._
 
@@ -637,7 +637,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*9-xxjXzdPCh_46kZ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify" class="markup--anchor markup--h3-anchor">Spotify</a>
 
-_No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
+_No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
 
 > _Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys._
 
@@ -655,7 +655,7 @@ _No real advantage over just using Spotify normally… it’s problematic enough
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn" class="markup--anchor markup--h3-anchor">ESDOC MDN</a>
 
-### THIS IS A MUST HAVE
+### THIS IS A MUST HAVE
 
 > _Quickly bring up helpful MDN documentation in the editor_
 
@@ -668,7 +668,7 @@ Themesbryanguner.medium.com</a><a href="https://bryanguner.medium.com/my-favorit
 
 ---
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

@@ -19,7 +19,7 @@ This is the stuff that comes up on interviews…
 -   <span id="c203">primitives are immutable</span>
 -   <span id="254c">refereces: objects (including arrays)</span>
 -   <span id="80bc">references are mutable</span>
--   <span id="8b53">Identify when to use `.` vs `[]` when accessing values of an object</span>
+-   <span id="8b53">Identify when to use `.` vs `[]` when accessing values of an object</span>
 -   <span id="cb76">dot syntax `object.key`</span>
 -   <span id="91bc">easier to read</span>
 -   <span id="7ff8">easier to write</span>
@@ -30,7 +30,7 @@ This is the stuff that comes up on interviews…
 -   <span id="f562">strings that start with numbers can be use as keys</span>
 -   <span id="08df">Write an object literal with a variable key using interpolation</span>
 
-### put it in brackets to access the value of the variable, rather than just making the value that string
+### put it in brackets to access the value of the variable, rather than just making the value that string
 
 -   <span id="d0b0">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
 -   <span id="9f75">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
@@ -38,20 +38,20 @@ This is the stuff that comes up on interviews…
 -   <span id="1f44">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
 -   <span id="8efe">`Object.values(obj)` returns an array of the values in `obj`</span>
 
-### Iterate through an object using a `for in` loop
+### Iterate through an object using a `for in` loop
 
-### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
 -   <span id="eb23">`...rest` syntax will store all additional arguments in an array</span>
 -   <span id="e2d4">array will be empty if there are no additional arguments</span>
 
-### Use `...spread` syntax for Object literals and Array literals
+### Use `...spread` syntax for Object literals and Array literals
 
 -   <span id="438a">Destructure an array to reference specific elements</span>
 
-### Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+### Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
-### Callbacks Lesson Concepts
+### Callbacks Lesson Concepts
 
 -   <span id="133e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
 -   <span id="22a1">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
@@ -69,7 +69,7 @@ This is the stuff that comes up on interviews…
 
 ---
 
-### Scope Lesson Concepts
+### Scope Lesson Concepts
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2WT03WQBOGKWH_9i.png" class="graf-image" /></figure>-   <span id="cd3f">Identify the difference between `const`, `let`, and `var` declarations</span>
 
@@ -96,13 +96,13 @@ This is the stuff that comes up on interviews…
 -   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** _(pretend that’s something you didn’t even know you could do)_</span>
 -   <span id="a6c4">if you assign a value without a declaration*(la la la la….I’m not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run.</span>
 
-### Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+### Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*P22Rwsk7Uzn5vJNS.png" class="graf-image" /></figure>-   <span id="904e">**scope of a program means the set of variables that are available for use within the program**</span>
 -   <span id="2aa4">**global scope is represented by the** `window` **object in the browser and the** `global` **object in Node.js**</span>
 -   <span id="e255">*global variables are available everywhere, and so increase the risk of name collisions*</span>
 
-#### local scope is the set of variables available for use within the function
+#### local scope is the set of variables available for use within the function
 
 -   <span id="bb8a">when we enter a function, we enter a new scope</span>
 -   <span id="6bc8">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
@@ -112,16 +112,16 @@ This is the stuff that comes up on interviews…
 -   <span id="c44e">so an inner scope can access outer scope variables</span>
 -   <span id="37e1">but an outer scope can never access inner scope variables</span>
 
-### Define an arrow function
+### Define an arrow function
 
-### Given an arrow function, deduce the value of `this` without executing the code
+### Given an arrow function, deduce the value of `this` without executing the code
 
 -   <span id="98d6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="c91b">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
 -   <span id="66a9">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
 -   <span id="b6e8">so you can’t use an arrow function to define a method directly</span>
 
-### Implement a closure and explain how the closure effects scope
+### Implement a closure and explain how the closure effects scope
 
 #### a closure is “the combination of a function and the lexical environment within which that function was declared”
 
@@ -129,19 +129,19 @@ This is the stuff that comes up on interviews…
 -   <span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span>
 -   <span id="a9e4">the set of all these available variables is “lexical environemnt”</span>
 -   <span id="8562">closure keeps reference to all variables \*\* even if the outer function has returned</span>
--   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed’ over …each function has a private mutable state that cannot be accessed externally</span>
+-   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed’ over …each function has a private mutable state that cannot be accessed externally</span>
 -   <span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 -   <span id="d0d9">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 
 ### Q:
 
-#### if a variable exists in the scope of what could have been accessed by a function(e.g.global scope, outer function, etc), does that variable wind up in the closure even if it never got accessed ?
+#### if a variable exists in the scope of what could have been accessed by a function(e.g.global scope, outer function, etc), does that variable wind up in the closure even if it never got accessed ?
 
 ### A:
 
-#### if you change the value of a variable(e.g.i++) you will change the value of that variable in the scope that it was declared in
+#### if you change the value of a variable(e.g.i++) you will change the value of that variable in the scope that it was declared in
 
-### Define a method that references `this` on an object literal
+### Define a method that references `this` on an object literal
 
 -   <span id="e43c">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="568d">it will let you access other pieces of information from within that object, or even other methods</span>
@@ -154,7 +154,7 @@ This is the stuff that comes up on interviews…
 
 can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won 't be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
 
-> Important to recognize the difference between scope and context
+> Important to recognize the difference between scope and context
 
 -   <span id="a071">**scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block 's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)**</span>
 
@@ -163,7 +163,7 @@ can also work with arguments, so you can have a version of a function with parti
 -   <span id="7933">so the context is fairly straightforward when we talk about methods being called on specific objects</span>
 -   <span id="f7bb">you could, however, call an object 's method on something other than that object, and then this would refer to the context where/how it was called, e.g.</span>
 
-### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
 -   <span id="1757">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="11b1">you could also overwrite values or assign values to exist in a space where they should not exist</span>
@@ -195,27 +195,27 @@ Javascript considers most data types to be 'primitive’, these data types are i
 -   <span id="1fe0">Object — Reference</span>
 -   <span id="545b">Function — Reference</span>
 
-#### 2. Identify when to use . vs \[\] when accessing values of an object
+#### 2. Identify when to use . vs \[\] when accessing values of an object
 
 #### 3. Write an object literal with a variable key using interpolation
 
-#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
+#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
 
-#### 5. Utilize Object.keys and Object.values in a function
+#### 5. Utilize Object.keys and Object.values in a function
 
-#### 6. Iterate through an object using a for in loop
+#### 6. Iterate through an object using a for in loop
 
-#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
+#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
 
-#### 8. Use …spread syntax for Object literals and Array literals
+#### 8. Use …spread syntax for Object literals and Array literals
 
-#### 9. Destructure an array to reference specific elements
+#### 9. Destructure an array to reference specific elements
 
-#### 10. Destructure an object to reference specific values
+#### 10. Destructure an object to reference specific values
 
-#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
+#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
 
-### Review of Concepts
+### Review of Concepts
 
 #### 1. Identify the difference between const, let, and var declarations
 
@@ -243,21 +243,21 @@ Javascript considers most data types to be 'primitive’, these data types are i
 -   <span id="7bc0">Except when it is declared, you cannot assign to a `const` variable.</span>
 -   <span id="5df7">`const` scopes variables the same way that `let` does.</span>
 
-#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
-Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
+Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
 
 Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
 
-Consider this `run` function, inside of which `foo` has `function scope` .
+Consider this `run` function, inside of which `foo` has `function scope` .
 
-#### 6. Implement a closure and explain how the closure effects scope
+#### 6. Implement a closure and explain how the closure effects scope
 
-#### 4. Define an arrow function
+#### 4. Define an arrow function
 
     const returnValue = (val) => val;
 
-This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val` , because this is a single-line function.
+This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val` , because this is a single-line function.
 
 Identically, we could write
 
@@ -265,7 +265,7 @@ Identically, we could write
         return val;
     };
 
-#### 5. Given an arrow function, deduce the value of `this` without executing the code
+#### 5. Given an arrow function, deduce the value of `this` without executing the code
 
 If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
 
@@ -277,11 +277,11 @@ If we use a function declaration style function, the `this` variable is set to t
 
 In this example, we use a fat arrow style function. Note that when we declare a functions like this `this` becomes
 
-#### 7. Define a method that references this on an object literal
+#### 7. Define a method that references this on an object literal
 
-#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
+#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
 
-#### 9. Given a code snippet, identify what `this` refers to
+#### 9. Given a code snippet, identify what `this` refers to
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

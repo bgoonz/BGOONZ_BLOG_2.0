@@ -18,7 +18,7 @@ Linked lists are simple. They have many compelling, reoccurring edge cases to co
 
 They also come up in software engineering interviews quite often.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*OYmTpAK6tyDQzoIE.gif" class="graf-image" /></figure>### What is a Linked List?
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*OYmTpAK6tyDQzoIE.gif" class="graf-image" /></figure>### What is a Linked List?
 
 A Linked List data structure represents a linear sequence of “vertices” (or “nodes”), and tracks three important properties.
 
@@ -36,7 +36,7 @@ Depending on the type of Linked List (there are many), Node instances track some
 
 Linked Lists contain _ordered_ data, just like arrays. The first node in the list is, indeed, first. From the perspective of the very first node in the list, the _next_ node is the second node. From the perspective of the second node in the list, the _previous_ node is the first node, and the _next_ node is the third node. And so it goes.
 
-#### “So…this sounds a lot like an Array…”
+#### “So…this sounds a lot like an Array…”
 
 Admittedly, this does _sound_ a lot like an Array so far, and that’s because Arrays and Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between Arrays and Linked Lists, and that is how they _physically store_ their data. (As opposed to how they _represent_ the order of their data.)
 
@@ -54,7 +54,7 @@ For this reason, Linked List Nodes have _no indices_, and no _random access_. Wi
 
 So when implementing a Linked List, we actually must implement both the Linked List class _and_ the Node class. Since the actual data lives in the Nodes, it’s simpler to implement the Node class first.
 
-### Types of Linked Lists
+### Types of Linked Lists
 
 There are four flavors of Linked List you should be familiar with when walking into your job interviews.
 
@@ -69,7 +69,7 @@ For instance:
 
 You are most likely to encounter Singly and Doubly Linked Lists in your upcoming job search, so we are going to focus exclusively on those two moving forward. However, in more senior level interviews, it is very valuable to have some familiarity with the other types of Linked Lists. Though you may not actually code them out, _you will win extra points by illustrating your ability to weigh the tradeoffs of your technical decisions_ by discussing how your choice of Linked List type may affect the efficiency of the solutions you propose.
 
-### Linked List Methods
+### Linked List Methods
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*9EnhpQAeV03_DyEZIyiTCw.png" class="graf-image" /></figure>
 
@@ -83,7 +83,7 @@ Before we begin our analysis, here is a quick summary of the Time and Space cons
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-### Time Complexity — Access and Search
+### Time Complexity — Access and Search
 
 #### Scenarios
 
@@ -98,7 +98,7 @@ In Scenario 1, we’ll know we’re there because we’ve iterated 8 times. In S
 
 In the worst case scenario, we may have to traverse the entire Linked List until we arrive at the final node. This makes both Access & Search **Linear Time** operations.
 
-### Time Complexity — Insertion and Deletion
+### Time Complexity — Insertion and Deletion
 
 #### Scenarios
 
@@ -144,7 +144,7 @@ In Scenario 2, we _are_ creating a new Linked List. If the number of nodes we cr
 
 ---
 
-### Stacks and Queues
+### Stacks and Queues
 
 Stacks and Queues aren’t really “data structures” by the strict definition of the term. The more appropriate terminology would be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules governing their user-facing behaviors rather than their core implementations.
 
@@ -156,7 +156,7 @@ These two ADTs are similar to each other as well, but each obey their own specia
 
 Since we’ve covered Linked Lists in great length, these two data structures will be quick and easy. Let’s break them down individually in the next couple of sections.
 
-### What is a Stack?
+### What is a Stack?
 
 Stacks are a Last In First Out (LIFO) data structure. The last Node added to a stack is always the first Node to be removed, and as a result, the first Node added is always the last Node removed.
 
@@ -170,7 +170,7 @@ Note: We can use JavaScript Arrays to implement a basic stack. `Array#push` adds
 
 ---
 
-### What is a Queue?
+### What is a Queue?
 
 Queues are a First In First Out (FIFO) data structure. The first Node added to the queue is always the first Node to be removed.
 
@@ -204,7 +204,7 @@ Data Structure Operation Time Complexity (Avg)Time Complexity (Worst)Space Compl
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-#### Time Complexity — Access and Search
+#### Time Complexity — Access and Search
 
 When the Stack ADT was first conceived, its inventor definitely did not prioritize searching and accessing individual Nodes or values in the list. The same idea applies for the Queue ADT. There are certainly better data structures for speedy search and lookup, and if these operations are a priority for your use case, it would be best to choose something else!
 
@@ -212,7 +212,7 @@ Search and Access are both linear time operations for Stacks and Queues, and tha
 
 This is a linear time operation, O(n).
 
-#### Time Complexity — Insertion and Deletion
+#### Time Complexity — Insertion and Deletion
 
 For Stacks and Queues, insertion and deletion is what it’s all about. If there is one feature a Stack absolutely must have, it’s constant time insertion and removal to and from the `top` of the Stack (FIFO). The same applies for Queues, but with insertion occurring at the `back` and removal occurring at the `front` (LIFO).
 
@@ -226,7 +226,7 @@ The space complexity of Stacks and Queues is very simple. Whether we are instant
 
 For this reason, we always consider Stacks and Queues to have a linear space complexity, O(n).
 
-### When should we use Stacks and Queues?
+### When should we use Stacks and Queues?
 
 At this point, we’ve done a lot of work understanding the ins and outs of Stacks and Queues, but we still haven’t really discussed what we can use them for. The answer is actually…a lot!
 

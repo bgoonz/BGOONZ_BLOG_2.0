@@ -6,12 +6,12 @@ An in-depth look into the world of React.
 
 ### React in Depth: A Comprehensive Guide
 
-#### A deep dive into the world of React.
+#### A deep dive into the world of React.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
 bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-### Random Things to Remember
+### Random Things to Remember
 
 -   <span id="1e39">Using `()` implictly returns components.</span>
 -   <span id="a547">Role of `index.js` is to _render_ your application.</span>
@@ -51,7 +51,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 -   <span id="a437">Provide a CSS framework</span>
 -   <span id="06e5">React is unopinionated</span>
 -   <span id="721c">Just contains a few rules for developers to follow, and it just works.</span>
--   <span id="e2c0">JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)</span>
+-   <span id="e2c0">JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)</span>
 -   <span id="916b">Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:</span>
 
 <!-- -->
@@ -88,11 +88,11 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
       });
 
 -   <span id="7ea4">This may seem like a lot of code but when you end up building many components, it becomes nice to put each of those functions/classes into their own files to organize your code. Using tools with React</span>
--   <span id="e220">`React DevTools` : New tool in your browser to see ow React is working in the browser</span>
--   <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
--   <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
+-   <span id="e220">`React DevTools` : New tool in your browser to see ow React is working in the browser</span>
+-   <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
+-   <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>-   <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>-   <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
 -   <span id="923a">React Developers created something called `Flux Architecture` to moderate how their web page consumes and modifies data received from back-end API's.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wR-lbD4zf45-IHoQ" class="graf-image" /></figure>-   <span id="b16e">Choosing React</span>
@@ -100,7 +100,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### React Concepts and Features
+### React Concepts and Features
 
 There are many benefits to using React over just Vanilla JavaScript.
 
@@ -116,7 +116,7 @@ There are many benefits to using React over just Vanilla JavaScript.
 -   <span id="27d2">React apps are built as a combination of parent and child components.</span>
 -   <span id="6da8">Parents can have one or more child components, all children have parents.</span>
 -   <span id="26d8">Data is never passed from child to the parent.</span>
--   <span id="86be">`Virtual DOM` : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.</span>
+-   <span id="86be">`Virtual DOM` : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.</span>
 -   <span id="6747">Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.</span>
 
 ### ES6 Refresher
@@ -268,7 +268,7 @@ Browser support for ES6 Modules
 
 ### Notes
 
-### JSX In Depth
+### JSX In Depth
 
 -   <span id="2a0d">Remember that JSX is just syntactic sugar for the built in `React.createElement(component, props, ...children)`</span>
 -   <span id="1532">React Library must always be in scope from your JSX code.</span>
@@ -320,7 +320,7 @@ Props in JSX
 
 Children in JSX
 
--   <span id="2238">`props.children` : The content between opening and closing tag. JavaScript Expressions as Children</span>
+-   <span id="2238">`props.children` : The content between opening and closing tag. JavaScript Expressions as Children</span>
 
 <!-- -->
 
@@ -401,7 +401,7 @@ Booleans, Null, and Undefined Are Ignored
 
 The Diffing Algorithm
 
--   <span id="76c4">`Diffing` : When the state of a component changes React creates a new virtual DOM tree.</span>
+-   <span id="76c4">`Diffing` : When the state of a component changes React creates a new virtual DOM tree.</span>
 -   <span id="9a73">Elements of Different Types</span>
 -   <span id="d680">Every time the root elements have different types, React tears down the old tree and builds the new tree from scratch.</span>
 -   <span id="84a6">DOM Elements Of the Same Type</span>
@@ -509,7 +509,7 @@ Default Prop Values
 -   <span id="37c2">React Router helps your app render specific components based on the URL.</span>
 -   <span id="54c4">The most common component is `<Route>`</span>
 -   <span id="500a">Wrapped around another component, causing the comp. to only render if the a certain URL is matched.</span>
--   <span id="5a94">`Props` : path, component, exact, and \[render\]</span>
+-   <span id="5a94">`Props` : path, component, exact, and \[render\]</span>
 -   <span id="9f06">Browser Router can only have a single child component.</span>
 -   <span id="6305">The Browser Router wraps all routes within a parent div element.</span>
 
@@ -550,7 +550,7 @@ Default Prop Values
 Route path params
 
 -   <span id="3d09">Your component’s props can hold information about URL’s parameters.</span>
--   <span id="52f3">Will match segments starting at `:` to the next `/`, `?`, `#`.</span>
+-   <span id="52f3">Will match segments starting at `:` to the next `/`, `?`, `#`.</span>
 
 <!-- -->
 
@@ -562,10 +562,10 @@ Route path params
 -   <span id="f2b4">`{...props}` spreads out the router's props.</span>
 -   <span id="1edb">`props.match.params` is used to access the match prop's parameters.</span>
 -   <span id="b6a9">Useful keys on the `match` object:</span>
--   <span id="290f">`isExact` : boolean that tells you whether or not the URL exactly matches the path.</span>
--   <span id="27ea">`url` : the currentURL</span>
--   <span id="b979">`path` : Route path it matched against (w/o wildcards)</span>
--   <span id="6c59">`params` : Matches for the individual wildcard segments.</span>
+-   <span id="290f">`isExact` : boolean that tells you whether or not the URL exactly matches the path.</span>
+-   <span id="27ea">`url` : the currentURL</span>
+-   <span id="b979">`path` : Route path it matched against (w/o wildcards)</span>
+-   <span id="6c59">`params` : Matches for the individual wildcard segments.</span>
 
 ---
 
@@ -582,18 +582,18 @@ React Router Navigation
     import { BrowserRouter, Route, Link } from "react-router-dom";
 
 -   <span id="b5a5">`Link` takes two properties: `to` and `onClick`.</span>
--   <span id="995b">`to` : route location that points to an absolute path.</span>
--   <span id="978c">`onClick` : clickHandler.</span>
+-   <span id="995b">`to` : route location that points to an absolute path.</span>
+-   <span id="978c">`onClick` : clickHandler.</span>
 -   <span id="b8c0">`NavLink` works just like `Link` but has a bit of extra functionality.</span>
 -   <span id="6334">Adds extra styling, when the path it links to matches the current path.</span>
 -   <span id="07b8">As it’s name suggests, it is used to Nav Bars.</span>
 -   <span id="8a33">Takes three props:</span>
--   <span id="e501">`activeClassName` : allows you to set a CSS class name for styling. (default set to 'active')</span>
--   <span id="81da">`activeStyle` : style object that is applied inline when it's `to` prop. matches the current URL.</span>
+-   <span id="e501">`activeClassName` : allows you to set a CSS class name for styling. (default set to 'active')</span>
+-   <span id="81da">`activeStyle` : style object that is applied inline when it's `to` prop. matches the current URL.</span>
 -   <span id="8c71">`exact` prop is a boolean that defaults to false; you can set it to true to apply requirement of an exact URL match.</span>
 -   <span id="755b">exact can also be used as a flag instead of a reg. property value.</span>
 -   <span id="dd12">benefit of adding this is so that you don’t trigger other matches. Switching between routes</span>
--   <span id="4fb6">`<Switch>` : Component allows you to only render one route even if several match the current URL.</span>
+-   <span id="4fb6">`<Switch>` : Component allows you to only render one route even if several match the current URL.</span>
 -   <span id="7be7">You may nest as many routes as you wish but only the first match of the current URL will be rendered.</span>
 -   <span id="3f8a">Very useful if we want a default component to render if none of our routes match.</span>
 
@@ -606,7 +606,7 @@ React Router Navigation
     </Switch>
 
 -   <span id="b901">`DefaultComponent` will only render if none of the other URLs match up.</span>
--   <span id="21a3">`<Redirect>` : Helps redirect users.</span>
+-   <span id="21a3">`<Redirect>` : Helps redirect users.</span>
 -   <span id="ee88">Only takes a single prop: `to`.</span>
 
 <!-- -->
@@ -621,8 +621,8 @@ History
 
 -   <span id="6456">`History` allows you to update the URL programmatically.</span>
 -   <span id="bac6">Contains two useful methods:</span>
--   <span id="9b00">`push` : Adds a new URL to the end of the history stack.</span>
--   <span id="d539">`replace` : Replaces the current URL on the history stack, so the back button won't take you to it.</span>
+-   <span id="9b00">`push` : Adds a new URL to the end of the history stack.</span>
+-   <span id="d539">`replace` : Replaces the current URL on the history stack, so the back button won't take you to it.</span>
 
 <!-- -->
 
@@ -680,17 +680,17 @@ Alt. version using `props.match`
 
 ### React Builds
 
--   <span id="0fae">`Build` : Process of converting code into something that can actually execute or run on the target platform.</span>
+-   <span id="0fae">`Build` : Process of converting code into something that can actually execute or run on the target platform.</span>
 -   <span id="6fdb">In regards to React, the minimum a build should do is convert JSX to something that browsers can understand. Reviewing common terminology</span>
--   <span id="779d">`Linting` : Process of using a tool to analyze your code to catch common errors, bugs, inconsistencies etc...</span>
--   <span id="f1e5">`Transpilation` : Process of converting source code, like JS, from one version to another.</span>
--   <span id="9f9f">`Minification` : Process of removing all unnecessary characters in your code.</span>
--   <span id="57df">`Bundling` : Process of combining multiple code files into a single file.</span>
--   <span id="d052">`Tree Shaking` : Process of removing unused or dead code from your application before it's bundled. Configuration or code?</span>
+-   <span id="779d">`Linting` : Process of using a tool to analyze your code to catch common errors, bugs, inconsistencies etc...</span>
+-   <span id="f1e5">`Transpilation` : Process of converting source code, like JS, from one version to another.</span>
+-   <span id="9f9f">`Minification` : Process of removing all unnecessary characters in your code.</span>
+-   <span id="57df">`Bundling` : Process of combining multiple code files into a single file.</span>
+-   <span id="d052">`Tree Shaking` : Process of removing unused or dead code from your application before it's bundled. Configuration or code?</span>
 -   <span id="ce13">`Configuration` allows developers to create build tasks by declaring either JSON, XML, or YAML without explicitly writing every step in the process.</span>
 -   <span id="16a6">`Coding` or `Scripting` simply requires code. Babel and webpack (yes, that's intentionally a lowercase 'w')</span>
--   <span id="4363">`Babel` : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.</span>
--   <span id="804b">`webpack` : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.</span>
+-   <span id="4363">`Babel` : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.</span>
+-   <span id="804b">`webpack` : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.</span>
 -   <span id="77f2">Create React App uses webpack and Babel under the hood to build applications. The Create React App build process</span>
 -   <span id="222f">What happens when you run `npm start`:</span>
 
@@ -740,10 +740,10 @@ Configuring the supported browsers
 
 ### Notes
 
-### Introduction to React
+### Introduction to React
 
 -   <span id="7224">Simply a nice library that turns data into DOM.</span>
--   <span id="a9de">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
+-   <span id="a9de">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
 -   <span id="1bbc">`It's just a tree with some fancy diffing`</span>
 
 ---
@@ -758,9 +758,9 @@ From JavaScript To DOM
 
     React.createElement(type, [props], [...children]);
 
--   <span id="1688">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
--   <span id="3249">`Props` : Object that contains data to render the element.</span>
--   <span id="56ab">`Children` : Children of the elemet, as many as you want. Creating elements</span>
+-   <span id="1688">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
+-   <span id="3249">`Props` : Object that contains data to render the element.</span>
+-   <span id="56ab">`Children` : Children of the elemet, as many as you want. Creating elements</span>
 -   <span id="ee64">Our rendering goal:</span>
 
 <!-- -->
@@ -879,7 +879,7 @@ React Version
 
 -   <span id="f587">Because `class` is a reserved keyword in JS, in React we can use `className` to assign a class to an element.</span>
 -   <span id="4d51">Remember the data that goes into createElement: element type, data to pass into the element, and then children.</span>
--   <span id="8199">`props` : Properties;</span>
+-   <span id="8199">`props` : Properties;</span>
 -   <span id="6b53">To handle certain values that are initially undefined, we can use `defaultProps`.</span>
 
 <!-- -->
@@ -961,9 +961,9 @@ React Version
 
 ---
 
-### Introduction to JSX
+### Introduction to JSX
 
--   <span id="a5ee">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX</span>
+-   <span id="a5ee">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX</span>
 -   <span id="24bf">We will use `babel` to convert version of modern JS into an older version of JS. React Create Element</span>
 
 <!-- -->
@@ -1013,13 +1013,13 @@ JSX Version
     </div>
 
 -   <span id="8cb8">`Property Names`:</span>
--   <span id="837b">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
--   <span id="aec0">`className` : Used to specify a CSS class.</span>
--   <span id="2f92">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
--   <span id="3eab">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
--   <span id="9194">`onChange` : Event fired whenever a form field is changed.</span>
--   <span id="014a">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
--   <span id="76d8">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
+-   <span id="837b">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
+-   <span id="aec0">`className` : Used to specify a CSS class.</span>
+-   <span id="2f92">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
+-   <span id="3eab">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
+-   <span id="9194">`onChange` : Event fired whenever a form field is changed.</span>
+-   <span id="014a">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
+-   <span id="76d8">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
 -   <span id="22c2">Note: React uses camel-case!!! The JSX semicolon gotcha</span>
 
 <!-- -->
@@ -1451,7 +1451,7 @@ Providing default values for props
 
 -   <span id="b149">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
 -   <span id="a034">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
--   <span id="004a">`e` : Parameter that references a `Synthetic Event` object type. Using `this` in event handlers</span>
+-   <span id="004a">`e` : Parameter that references a `Synthetic Event` object type. Using `this` in event handlers</span>
 
 <!-- -->
 
@@ -1527,7 +1527,7 @@ Providing default values for props
     }
     export default AlertButton;
 
--   <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
+-   <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
 -   <span id="801d">It’s good to pick one approach and use it consistently, either:</span>
 
 1.  <span id="2e3e">Class Properties & Arrow Functions</span>
@@ -1536,15 +1536,15 @@ Providing default values for props
 -   <span id="f177">Synthetic Event Objects: Cross Browser wrappeds around the browser’s native event.</span>
 -   <span id="418f">Includes the use of stopPropagation() and preventDefault();</span>
 -   <span id="b94f">Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</span>
--   <span id="7484">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
+-   <span id="7484">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
 
 ---
 
-### Forms in React
+### Forms in React
 
 _Exercise being done in a separate file_ Random Notes
 
--   <span id="45ec">`onChange` : detects when a value of an input element changes.</span>
+-   <span id="45ec">`onChange` : detects when a value of an input element changes.</span>
 -   <span id="9ca4">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
 -   <span id="eb83">Dont forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
 -   <span id="c413">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
@@ -1729,9 +1729,9 @@ Note About Client-side vs server-side validation
 3.  <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
 
 -   <span id="7740">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
--   <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
--   <span id="6d92">`componentDidUpdate` : Method called after your component has been updated.</span>
--   <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
+-   <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
+-   <span id="6d92">`componentDidUpdate` : Method called after your component has been updated.</span>
+-   <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
 -   <span id="7bd8">`Mounting`</span>
 
 1.  <span id="6f9e">`constructor` method is called</span>
@@ -1830,9 +1830,9 @@ Setting up a Consumer
 -   <span id="8bb8">Make Changes to Frontend State Where did Redux come from?</span>
 -   <span id="6d0b">There are three central philosophies of Redux:</span>
 
-1.  <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
-2.  <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
-3.  <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
+1.  <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
+2.  <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
+3.  <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
 
 -   <span id="117f">When doing a project with simpler global state requirements, it may be better to choose React’s Context API over Redux.</span>
 -   <span id="5d3d">Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary</span>
@@ -1872,17 +1872,17 @@ Setting up a Consumer
 
 ---
 
-### Flux and Redux
+### Flux and Redux
 
 What is Flux?
 
 -   <span id="06d1">Front-end application architecutre.</span>
 -   <span id="8311">A pattern in which to structure an application.</span>
 -   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
--   <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
--   <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
--   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
--   <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
+-   <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
+-   <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
+-   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
+-   <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" /></figure>-   <span id="af94">Redux</span>
 
@@ -1898,9 +1898,9 @@ What is Flux?
 
 -   <span id="cd1e">Simply an object that holds the application state wrapped in an API.</span>
 -   <span id="f57c">`Three methods`:</span>
--   <span id="354c">`getState()` : Returns the store's current state.</span>
--   <span id="537c">`dispatch(action)` : Passes an action into the store's reducer to tell it what info to update.</span>
--   <span id="4539">`subscribe(callback)` : Registers a callback to be triggered whenever the store updates. Updating the Store</span>
+-   <span id="354c">`getState()` : Returns the store's current state.</span>
+-   <span id="537c">`dispatch(action)` : Passes an action into the store's reducer to tell it what info to update.</span>
+-   <span id="4539">`subscribe(callback)` : Registers a callback to be triggered whenever the store updates. Updating the Store</span>
 
 <!-- -->
 
@@ -1927,7 +1927,7 @@ What is Flux?
 Subscribing to the store
 
 -   <span id="1a02">Whenever a store process a dispatch(), it triggers all its subscribers.</span>
--   <span id="e667">`Subscribers` : callbacks that can be added to the store via subscribe().</span>
+-   <span id="e667">`Subscribers` : callbacks that can be added to the store via subscribe().</span>
 
 <!-- -->
 
@@ -2063,7 +2063,7 @@ BAD
     console.log(store.getState()); // [ 'orange' ]
 
 -   <span id="c39d">fruit is the `payload key` and orange is the `state data`</span>
--   <span id="43e2">`Action Creators` : Functions created from extrapolating the creation of an action object.</span>
+-   <span id="43e2">`Action Creators` : Functions created from extrapolating the creation of an action object.</span>
 
 <!-- -->
 
@@ -2154,7 +2154,7 @@ When you finish this article, you should be able to use the following from the `
 -   <span id="bf15">`<Switch>` to wrap several `Route` elements, rendering only one even if several match the current URL; and</span>
 -   <span id="0318">React Router’s `match` prop to access route path parameters.</span>
 
-### Getting started with routing
+### Getting started with routing
 
 Since you are writing single page apps, you don’t want to refresh the page each time you change the browser location. Instead, you want to update the browser location and your app’s response using JavaScript. This is known as client-side routing. You are using React, so you will use React Router to do this.
 
@@ -2203,7 +2203,7 @@ Alternatively, you could import and use `HashRouter` from `react-router-dom`. Li
 
 You’ll focus on using the `<BrowserRouter>`.
 
-### Creating frontend routes
+### Creating frontend routes
 
 React Router helps your React application render specific components based on the URL. The React Router component you’ll use most often is `<Route>`.
 
@@ -2313,24 +2313,24 @@ As a reminder, `BrowserRouter` can only have a single child component. That's wh
 
 With this `Root` component, you will always render the `<h1>Hi, I'm Root!</h1>`, regardless of the path. Because of the first `<Route>`, you will only render the `App` component if the path exactly matches `/`. Because of the second `<Route>`, you will only render the `Users` component if the path matches `/users`.
 
-### Route path params
+### Route path params
 
-A component’s props can also hold information about a URL’s parameters. The router will match route segments starting at `:` up to the next `/`, `?`, or `#`. Those matched values are then passed to components via their props. Such segments are _wildcard_ values that make up your route parameters.
+A component’s props can also hold information about a URL’s parameters. The router will match route segments starting at `:` up to the next `/`, `?`, or `#`. Those matched values are then passed to components via their props. Such segments are _wildcard_ values that make up your route parameters.
 
 For example, take the route below:
 
     <Route path="/users/:userId"
            render={(props) => <Profile users={users} {...props} />} />
 
-The router would break down the full `/users/:userId/photos` path to two parts: `/users`, `:userId`.
+The router would break down the full `/users/:userId/photos` path to two parts: `/users`, `:userId`.
 
-The `Profile` component's props would have access to the `:userId` part of the `http://localhost:3000/users/:userId/photos` URL through the `props` with router parameter information. You would access the the `match` prop's parameters (`props.match.params`). If you are using the `render` prop of the `Route` component, make sure to spread the props back into the component if you want it to know about the "match" parameters.
+The `Profile` component's props would have access to the `:userId` part of the `http://localhost:3000/users/:userId/photos` URL through the `props` with router parameter information. You would access the the `match` prop's parameters (`props.match.params`). If you are using the `render` prop of the `Route` component, make sure to spread the props back into the component if you want it to know about the "match" parameters.
 
     // Route's `render` prop allows you to pass the `users`
     // prop and spread the router `props`.
     render={(props) => <Profile users={users} {...props} />}
 
-The `params` object would then have a property of `userId` which would hold the value of the `:userId` _wildcard_ value. Let's render the `userId` parameter in a user profile component. Take a moment to create a `Profile.js` file with the following code:
+The `params` object would then have a property of `userId` which would hold the value of the `:userId` _wildcard_ value. Let's render the `userId` parameter in a user profile component. Take a moment to create a `Profile.js` file with the following code:
 
     // ./src/Profile.js
     import React from "react";
@@ -2343,7 +2343,7 @@ The `params` object would then have a property of `userId` which would hold the 
 
     export default Profile;
 
-Notice how it uses the `match` prop to access the `:userId` parameter from the URL. You can use this wildcard to make and AJAX call to fetch the user information from the database and render the return data in the `Profile` component. Recall that your `Profile` component was rendered at the path `/users/:userId`. Thus you can use your `userId` parameters from `match.params` to fetch a specific user:
+Notice how it uses the `match` prop to access the `:userId` parameter from the URL. You can use this wildcard to make and AJAX call to fetch the user information from the database and render the return data in the `Profile` component. Recall that your `Profile` component was rendered at the path `/users/:userId`. Thus you can use your `userId` parameters from `match.params` to fetch a specific user:
 
     // ./src/Profile.js
     import React from "react";
@@ -2401,7 +2401,7 @@ Now that you’ve learned about parameters and route props, let’s revisit your
       );
     };
 
-### What you learned
+### What you learned
 
 In this article, you learned how to:
 
@@ -2459,7 +2459,7 @@ The `<NavLink>` works just like a `<Link>`, but with a little extra functionalit
 
     import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
-The `activeClassName` prop of the `NavLink` component allows you to set a CSS class name for styling the `NavLink` when its route is active. By default, the `activeClassName` is already set to `active`. This means that you simply need to add an `.active` class to your CSS file to add active styling to your link. A `NavLink` will be active if its `to` prop path matches the current URL.
+The `activeClassName` prop of the `NavLink` component allows you to set a CSS class name for styling the `NavLink` when its route is active. By default, the `activeClassName` is already set to `active`. This means that you simply need to add an `.active` class to your CSS file to add active styling to your link. A `NavLink` will be active if its `to` prop path matches the current URL.
 
 Let’s change your “Users”, “Hello”, and “Andrew’s Profile” links to be different colors and have a larger font size when active.
 
@@ -2485,7 +2485,7 @@ For example, this is what the rendered HTML `<a>` tag would look like when when 
     <!-- NOT navigated to the `/users` path -->
     <a href="/users">Users</a>
 
-Import `NavLink` into your `index.js` file and take a moment to update all your `Link` elements to `NavLink` elements. Set an `activeClassName` prop to an `active` class. Add the following `.active` class to your `index.css` file:
+Import `NavLink` into your `index.js` file and take a moment to update all your `Link` elements to `NavLink` elements. Set an `activeClassName` prop to an `active` class. Add the following `.active` class to your `index.css` file:
 
     .active {
       font-weight: bold;
@@ -2508,7 +2508,7 @@ Import `NavLink` into your `index.js` file and take a moment to update all your 
 
 Test your styled links! Notice how the `App` and `App with click handler` links are always bolded. This is because all of your links include the `/` path, meaning that the link to `/` will be active when browsing to `/users` and `/users/1` because of how `users` and `users/1` are both prefaced by a `/`.
 
-The `activeStyle` prop is a style object that will be applied inline to the `NavLink` when its `to` prop matches the current URL. Add the following `activeStyle` to your `App` link and comment out the `.active` class in your CSS file.
+The `activeStyle` prop is a style object that will be applied inline to the `NavLink` when its `to` prop matches the current URL. Add the following `activeStyle` to your `App` link and comment out the `.active` class in your CSS file.
 
     <NavLink to="/" activeStyle={{ fontWeight: "bold" }}>App</NavLink>
 
@@ -2516,7 +2516,7 @@ The following html is rendered when at the `/` path:
 
     <a href="/" style="font-weight:bold;" class="active">App</a>
 
-Notice how your `App with click handler` is not bolded anymore. This is because the default `active` class being applied does not have any CSS stylings set to the class. Uncomment your `.active` class in your CSS file to bring back bolding to this NavLink.
+Notice how your `App with click handler` is not bolded anymore. This is because the default `active` class being applied does not have any CSS stylings set to the class. Uncomment your `.active` class in your CSS file to bring back bolding to this NavLink.
 
 The `exact` prop is a boolean that defaults to `false`. If set to `true`, then the `activeStyle` and `activeClassName` props will only be applied when the current URL exactly matches the `to` prop. Update your `App` and `App with click handler` links with an `exact` prop set. Just like in your routes, you can use the `exact` flag instead of `exact={true}`.
 
@@ -2525,7 +2525,7 @@ The `exact` prop is a boolean that defaults to `false`. If set to `true`, then t
 
 Now your `App` and `App with click handler` links will only be bolded when you have navigated precisely to the `/` path.
 
-### Switching between routes
+### Switching between routes
 
 You came across styling issues when the `/users` and `/users/1` paths matched the `/` path. Routing can have this issue as well. This is why you need to control the switching between routes.
 
@@ -2608,7 +2608,7 @@ This prop lets you update the URL programmatically. For example, suppose you wan
 -   <span id="31f3">`push` - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.</span>
 -   <span id="90c1">`replace` - This replaces the current URL on the history stack, so the back button won't take you to it. For example:</span>
 
-### What you learned
+### What you learned
 
 In this article, you learned how to:
 
@@ -2618,7 +2618,7 @@ In this article, you learned how to:
 
 ---
 
-### React Router Nested Routes
+### React Router Nested Routes
 
 Now you know how to create front-end routes and add navigation with React Router. When initializing Express projects, you declare static routes. Static routes are routes that are declared when an application is initialized. When using React Router in your application’s initialization, you can declare dynamic routes. React Router introduces dynamic routing, where your routes are created as your application is rendering. This allows you to create nested routes within components!
 
@@ -2628,7 +2628,7 @@ In this article, let’s dive into <a href="https://reacttraining.com/react-rout
 -   <span id="0559">Be able to use React Router to create and navigate nested routes; and</span>
 -   <span id="ce4a">Know how to use the React Router `match` prop to generate links and routes.</span>
 
-### Why nested routes?
+### Why nested routes?
 
 Let’s begin with why you might need nested routes. As you remember, you are using React to create a single-page application. This means that you’ll be organizing your application into different components and sub-components.
 
@@ -2636,7 +2636,7 @@ For example, imagine creating a simple front-end application with three main pag
 
 You can create those routes and links within the user profile component, instead of creating the routes and links where the main routes are defined.
 
-### What are nested routes?
+### What are nested routes?
 
 Now let’s dive into a user profile component to understand what are nested routes! Imagine you have a route in your application’s entry file to each user’s profile like so:
 
@@ -2690,7 +2690,7 @@ Since this route is not created until the `Profile` component is rendered, you a
 
 In tomorrow’s project, you’ll build a rainbow of routes as well as define nested routes. In the future, you may choose to implement nested routes to keep your application’s routes organized within related components.
 
-### What you learned
+### What you learned
 
 In this article, you learned:
 
@@ -2742,7 +2742,7 @@ Bundling is the process of combining multiple code files into a single file. Cre
 
 Tree shaking is the process of removing unused (or dead) code from your application before it’s bundled. Tree shaking external dependencies can sometimes have a dramatic positive impact on overall bundled file sizes.
 
-### Configuration or code?
+### Configuration or code?
 
 Front-end build tools have come and gone over the years; sometimes very quickly, which helped bring about the phenomenon known as <a href="https://sdtimes.com/softwaredev/is-the-javascript-fatigue-real/" class="markup--anchor markup--p-anchor">JavaScript fatigue</a>.
 
@@ -2758,11 +2758,11 @@ Module loaders and bundlers, like <a href="https://webpack.js.org/" class="marku
 
 \[Create React App\]\[cra\] uses webpack (along with Babel) under the covers to build your React applications. Even if you’re not using Create React App, webpack and Babel are still very popular choices for building React applications.
 
-### Pulling back the covers (a bit) on the Create React App build process
+### Pulling back the covers (a bit) on the Create React App build process
 
 Running an application created by Create React App using `npm start` can feel magical. Some stuff happens in the terminal and your application opens into your default browser. Even better, when you make changes to your application, your changes will (usually) automatically appear in the browser!
 
-### The Create React App build process
+### The Create React App build process
 
 At a high level, here’s what happens when you run `npm start`:
 
@@ -2793,9 +2793,9 @@ In the `package.json` file, you'll see the following npm scripts:
       }
     }
 
-You can open the `./scripts/start.js` file to see the code that's executed when you run `npm start`.
+You can open the `./scripts/start.js` file to see the code that's executed when you run `npm start`.
 
-If you’re curious about the webpack configuration, you can open and review the `./config/webpack.config.js`.
+If you’re curious about the webpack configuration, you can open and review the `./config/webpack.config.js`.
 
 ### Preparing to deploy a React application for production
 
@@ -2803,7 +2803,7 @@ Before you deploy your application to production, you’ll want to make sure tha
 
 ### Defining environment variables
 
-Create React App supports defining environment variables in an `.env` file. To define an environment variable, add an `.env` file to your project and define one or more variables that start with the prefix `REACT_APP_`:
+Create React App supports defining environment variables in an `.env` file. To define an environment variable, add an `.env` file to your project and define one or more variables that start with the prefix `REACT_APP_`:
 
     REACT_APP_FOO: some value
     REACT_APP_BAR: another value
@@ -2849,7 +2849,7 @@ Now your application is ready to be deployed!
 
 > _For more information about how to deploy a Create React App project into production, see_ <a href="https://facebook.github.io/create-react-app/docs/deployment" class="markup--anchor markup--blockquote-anchor"><em>this page</em></a> _in the official documentation._
 
-### What you learned
+### What you learned
 
 In this article, you learned how to:
 
@@ -2863,19 +2863,19 @@ In this article, you learned how to:
 
 Now that you’ve had an introduction to React Router, feel free to explore the official documentation to learn more! As you become a full-fledged software engineer, remember that documentation is your friend. You can take a brief overview for now, as the documentation might include a lot of information at first. The more you learn about React, the more you should revisit the official documentation and learn!
 
-### Setting up React Router
+### Setting up React Router
 
 -   <span id="bfa4"><a href="https://reacttraining.com/react-router/web/guides/quick-start" class="markup--anchor markup--li-anchor">React Router Quick Start</a></span>
 -   <span id="b0cb"><a href="https://reacttraining.com/react-router/web/api/HashRouter" class="markup--anchor markup--li-anchor">HashRouter</a></span>
 -   <span id="f48b"><a href="https://reacttraining.com/react-router/web/api/BrowserRouter" class="markup--anchor markup--li-anchor">BrowserRouter</a></span>
 
-### Routes and Links
+### Routes and Links
 
 -   <span id="72bd"><a href="https://reacttraining.com/react-router/web/api/Route" class="markup--anchor markup--li-anchor">Route</a></span>
 -   <span id="e256"><a href="https://reacttraining.com/react-router/web/api/Link" class="markup--anchor markup--li-anchor">Link</a></span>
 -   <span id="1d9d"><a href="https://reacttraining.com/react-router/web/api/NavLink" class="markup--anchor markup--li-anchor">NavLink</a></span>
 
-### Switch and Redirect
+### Switch and Redirect
 
 -   <span id="5240"><a href="https://reacttraining.com/react-router/web/api/Switch" class="markup--anchor markup--li-anchor">Switch</a></span>
 -   <span id="b405"><a href="https://reacttraining.com/react-router/web/api/Redirect" class="markup--anchor markup--li-anchor">Redirect</a></span>
@@ -2888,11 +2888,11 @@ Now that you’ve had an introduction to React Router, feel free to explore the 
 
 ---
 
-### Rainbow Routes Project
+### Rainbow Routes Project
 
 Today you’re going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
 
-### Phase 0: Setup
+### Phase 0: Setup
 
 Begin by creating a new React project:
 
@@ -2993,7 +2993,7 @@ Now import `BrowserRouter` from the `react-router-dom` package, like so:
 
     import { BrowserRouter } from 'react-router-dom';
 
-You’re going to be rendering a lot of components, so let’s keep your `src` directory organized by creating a `components` directory within. Within your new `./src/components` directory, create a `Rainbow.js` file for your `Rainbow` component with the following code:
+You’re going to be rendering a lot of components, so let’s keep your `src` directory organized by creating a `components` directory within. Within your new `./src/components` directory, create a `Rainbow.js` file for your `Rainbow` component with the following code:
 
     // ./src/components/Rainbow.js
     import React from 'react';
@@ -3022,7 +3022,7 @@ Your `Rainbow` component will act as the home page or default path (`/`) of your
 
 Within your `Rainbow` component, you'll be rendering `<NavLink>` and `<Route>` components to add different navigation paths to different components. Let's create all the components you will render!
 
-Create files for the following components in your `./src/components` directory:
+Create files for the following components in your `./src/components` directory:
 
 -   <span id="1c8e">`Red`</span>
 -   <span id="a8dd">`Blue`</span>
@@ -3062,7 +3062,7 @@ Your `Green`, `Indigo`, `Orange`, `Violet`, and `Yellow` components will look so
 
 Now start your server and verify you can see the “Rainbow Router!” header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
 
-### Phase 1: Routes
+### Phase 1: Routes
 
 As a reminder, wrapping the `Rainbow` component in `<BrowserRouter>` tags makes the router available to all descendent React Router components. Now open the `Rainbow.js` file. You're going to render some of your color components from here. Ultimately you want your routes to look like this.
 
@@ -3076,7 +3076,7 @@ Test that your code works! Manually type in each URL you just created, and you s
 
 You want to nest the `Orange` and `Yellow` components inside the `Red` component, and the `Indigo` component inside the `Blue` component. Remember to import your components to use them in a `Route` tag. You'll have to go add the corresponding `Route` tags to the `Red.js` and `Blue.js` files. Make sure to use the correct nested paths, such as `"/red/orange"` for the orange `Route`.
 
-### Phase 2: Links
+### Phase 2: Links
 
 Manually navigating to our newly created routes is tiresome, so let’s add functionality to take care of this process for us. React Router provides the `Link` and `NavLink` components for this purpose.
 
@@ -3091,11 +3091,11 @@ When you are at `blue` you want to be able to get to `/blue/indigo`, and then ba
 
 Similarly, add `Link`s to `/red`, `/red/orange` and `/red/yellow` to the `Red` component. Test all your links. Navigation is so much easier now!
 
-### Phase 3: NavLinks
+### Phase 3: NavLinks
 
 It would be nice if our links gave us some indication of which route you were at. Fortunately, React Router has a special component for that very purpose: `NavLink`. NavLinks get an extra CSS class when their `to` prop matches the current URL. By default this class is called `active`.
 
-Go ahead and switch all your `Link`s to `NavLink`s. If you open the app you won't see any change yet. That's because you haven't added any special styling to the `active` class. Go ahead and open the `index.css` file. Create an `.active` class and add the line `font-weight: 700`. Now your active links will be bold. Isn't that nice!
+Go ahead and switch all your `Link`s to `NavLink`s. If you open the app you won't see any change yet. That's because you haven't added any special styling to the `active` class. Go ahead and open the `index.css` file. Create an `.active` class and add the line `font-weight: 700`. Now your active links will be bold. Isn't that nice!
 
 The only problem is that now the `Blue only` link is active even when the path is `/blue/indigo`. That doesn't make a lot of sense. Let's add the `exact` flag to that link so it will only be active when its `to` exactly matches the current path. Now it should look like:
 
@@ -3105,13 +3105,13 @@ The only problem is that now the `Blue only` link is active even when the path i
 
 Do the same for the `Red only` link. Everything should be working now.
 
-### Phase 4 — Changing NavLink’s Active Class
+### Phase 4 — Changing NavLink’s Active Class
 
-You’ve already set up `NavLink` to bold the link text using the `.active` class in `src/index.css`. But what if you wanted this class to be something else? For instance, what if you want your main color links (Red, Green, Blue, Violet) to be styled differently when active than your sub-route links (Red Only, Add Orange, Add Yellow, etc.).
+You’ve already set up `NavLink` to bold the link text using the `.active` class in `src/index.css`. But what if you wanted this class to be something else? For instance, what if you want your main color links (Red, Green, Blue, Violet) to be styled differently when active than your sub-route links (Red Only, Add Orange, Add Yellow, etc.).
 
 You can set the class that React Router sets to an active `NavLink` by adding the `activeClassName` prop.
 
-For instance, when we are at a route matching the below `NavLink`'s `to` prop, the component will have a class of `.parent-active` applied:
+For instance, when we are at a route matching the below `NavLink`'s `to` prop, the component will have a class of `.parent-active` applied:
 
     <NavLink to="/blue" activeClassName="parent-active" >
       Blue
@@ -3127,17 +3127,17 @@ You can also learn more about using the React Router at <a href="https://reacttr
 
 ---
 
-### Exploring React Builds Project
+### Exploring React Builds Project
 
 In this project, you’ll use Create React App to create a simple React application. You’ll experiment with some of the features that Create React App provides and deploy a production build of your application to a standalone Express application.
 
-### Phase 0: Setup
+### Phase 0: Setup
 
 Begin by using the <a href="https://github.com/facebook/create-react-app" class="markup--anchor markup--p-anchor">create-react-app</a> package to create a React application:
 
     npx create-react-app exploring-react-builds --template @appacademy/simple
 
-> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the _`.git` _file._
+> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the _`.git` _file._
 
 Update the `App` component:
 
@@ -3160,7 +3160,7 @@ Update the `App` component:
 
     export default App;
 
-### Phase 1: Using CSS modules
+### Phase 1: Using CSS modules
 
 You’ve already seen an example of using the `import` keyword to import a stylesheet into a module so that it'll be included in your application build. That's the technique being used to include the global `index.css` stylesheet:
 
@@ -3227,7 +3227,7 @@ Then update the contents of each file to the following:
       color: red;
     }
 
-Notice how the `.heading` CSS class name is being used within each component to set the color of the `<h1>` element. For the `HeadingA` component, the color is `green`, and for the `HeadingB` component, the color is `red`. Using the file naming convention `[name].module.css` let's Create React App know that we want these stylesheets to be processed as CSS Modules. Using CSS Modules allows the `.heading` class name to be reused across components without any issue.
+Notice how the `.heading` CSS class name is being used within each component to set the color of the `<h1>` element. For the `HeadingA` component, the color is `green`, and for the `HeadingB` component, the color is `red`. Using the file naming convention `[name].module.css` let's Create React App know that we want these stylesheets to be processed as CSS Modules. Using CSS Modules allows the `.heading` class name to be reused across components without any issue.
 
 To see this feature in action, update your `App` component to render both of your new components:
 
@@ -3247,7 +3247,7 @@ To see this feature in action, update your `App` component to render both of you
 
     export default App;
 
-Then run your application (`npm start`) to see "Heading A" and "Heading B" displayed respectively in green and red. If you use the browser's developer tools to inspect "Heading A", you'll see that the `.heading` class name has been modified so that it's unique to the `HeadingA` component:
+Then run your application (`npm start`) to see "Heading A" and "Heading B" displayed respectively in green and red. If you use the browser's developer tools to inspect "Heading A", you'll see that the `.heading` class name has been modified so that it's unique to the `HeadingA` component:
 
 CSS Modules is an example of how a front-end build process can be used to modify code to enable a feature that’s not natively supported by browsers.
 
@@ -3305,7 +3305,7 @@ If you run your application (`npm start`) you'll see your image displayed on the
 
 ### Images in stylesheets
 
-You can also reference images in your CSS files too. Add a CSS file named `Image.css` to the `./src/image` folder and update its contents to this:
+You can also reference images in your CSS files too. Add a CSS file named `Image.css` to the `./src/image` folder and update its contents to this:
 
     /* ./src/image/Image.css */
 
@@ -3442,7 +3442,7 @@ The query `chrome >= 30` specifies that you want to target Chrome version 30 or 
 
 > _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor"><em>browserl.ist</em></a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
 
-Stop your application if it’s currently running. Delete the `./node_modules/.cache` folder and run `npm start` again. Then view the `main.chunk.js` bundle again in the developer tools:
+Stop your application if it’s currently running. Delete the `./node_modules/.cache` folder and run `npm start` again. Then view the `main.chunk.js` bundle again in the developer tools:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TKBUkpbL5aSm5PTQ" class="graf-image" /></figure>Now your ES2015 class component is being converted to a constructor function! Here’s the transpiled code for reference:
 
@@ -3480,11 +3480,11 @@ You can even set a breakpoint in your source within the developer tools to stop 
 
 ### Phase 4: Adding environment variables
 
-Earlier you learned that Create React App supports defining environment variables in an `.env` file. This gives you a convenient way to avoid hard coding values that vary across environments.
+Earlier you learned that Create React App supports defining environment variables in an `.env` file. This gives you a convenient way to avoid hard coding values that vary across environments.
 
 Let’s experiment with this feature so that you can see how the Create React App build process embeds environment variables into your HTML, CSS, and JavaScript bundles.
 
-Add an `.env` file to the root of your Create React App project. Define an environment variable named `REACT_APP_TITLE`:
+Add an `.env` file to the root of your Create React App project. Define an environment variable named `REACT_APP_TITLE`:
 
     REACT_APP_TITLE=Exploring React Builds
 
@@ -3516,7 +3516,7 @@ Environment variables can also be referred to in regular JavaScript code:
 
     console.log(process.env.REACT_APP_TITLE);
 
-You can also reference environment variables in your `./public/index.html` file like this:
+You can also reference environment variables in your `./public/index.html` file like this:
 
     <!DOCTYPE html>
     <html lang="en">
@@ -3647,7 +3647,7 @@ To create a production build, run the command `npm run build` from the root of y
 
 Ignore the comments about using `serve` to deploy your application (i.e. `npm install -g serve` and `serve -s build`). In the next step, you'll create a simple Express application to server your React application.
 
-### Serving a React application using Express
+### Serving a React application using Express
 
 Create a new folder for your Express application outside of the Create React App project folder.
 
@@ -3677,13 +3677,13 @@ App a file named `app.js` with the following contents:
 This simple Express application will:
 
 -   <span id="31ba">Attempt to match incoming requests to static files located in the `public` folder; and</span>
--   <span id="16e6">If a matching static file isn’t found, then the `./public/index.html` file will be served for all other requests.</span>
+-   <span id="16e6">If a matching static file isn’t found, then the `./public/index.html` file will be served for all other requests.</span>
 
 Now add a folder named `public` to the root of your Express project. Copy the files from the `build` folder in your Create React App project to the `public` folder in the Express application project. Then run your application using the command `node app.js`.
 
 Open a browser and browse to the URL `http://localhost:9000/`. You should see your React application served from your Express application! Be sure to click the navigation links to verify that all of your configured routes work as expected.
 
-Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
+Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
 -   <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
 -   <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>

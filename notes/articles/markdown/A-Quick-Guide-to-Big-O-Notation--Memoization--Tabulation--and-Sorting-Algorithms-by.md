@@ -4,7 +4,7 @@ Curating Complexity: A Guide to Big-O Notation
 
 ---
 
-### A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+### A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" /></figure>***Curating Complexity: A Guide to Big-O Notation***
 
@@ -17,7 +17,7 @@ Curating Complexity: A Guide to Big-O Notation
 -   <span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span>
 -   <span id="3cb7">The real question we need to answering is: `How does our performance scale?`.</span>
 
-### big 'O’ notation
+### big 'O’ notation
 
 -   <span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span>
 -   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span>
@@ -26,14 +26,14 @@ Curating Complexity: A Guide to Big-O Notation
 -   <span id="f1b0">Big O is used to describe the worst case scenario.</span>
 -   <span id="e11f">Big O is simplified to show only its most dominant mathematical term.</span>
 
-### Simplifying Math Terms
+### Simplifying Math Terms
 
 -   <span id="64a4">We can use the following rules to simplify the our Big O functions:</span>
--   <span id="a2c2">`Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.</span>
--   <span id="b058">`Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.</span>
--   <span id="eb32">`n` : size of the input</span>
--   <span id="c042">`T(f)` : unsimplified math function</span>
--   <span id="7b41">`O(f)` : simplified math function.</span>
+-   <span id="a2c2">`Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.</span>
+-   <span id="b058">`Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.</span>
+-   <span id="eb32">`n` : size of the input</span>
+-   <span id="c042">`T(f)` : unsimplified math function</span>
+-   <span id="7b41">`O(f)` : simplified math function.</span>
 
 `Putting it all together`
 
@@ -80,7 +80,7 @@ Common Complexity Classes
 
 ### Memoization
 
--   <span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span>
+-   <span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span>
 -   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve’ each problem once.</span>
 -   <span id="65c9">Two features that comprise memoization:</span>
 
@@ -102,11 +102,11 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 > _Rules:_
 
 1.  <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
-2.  <span id="b36e">_Add memo object as an additional argument ._</span>
+2.  <span id="b36e">_Add memo object as an additional argument ._</span>
 3.  <span id="f81f">_Add a base case condition that returns the stored value if the function’s argument is in the memo._</span>
 4.  <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key._</span>
 
-#### Things to remember
+#### Things to remember
 
 1.  <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
 2.  <span id="7bb1">_When you notice duplicate sub-tree’s that means we can memoize._</span>
@@ -146,7 +146,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 
 > _Tabulated Fibonacci_
 
-### Example of Linear Search
+### Example of Linear Search
 
 -   <span id="84b2">_Worst Case Scenario: The term does not even exist in the array._</span>
 -   <span id="30dc">_Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n)._</span>
@@ -173,7 +173,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 -   <span id="3cb1">_It’s not efficient_</span>
 -   <span id="4eac">_It’s not commonly used_</span>
 -   <span id="d730">_There is stigma attached to it_</span>
--   <span id="8da7">`Bubbling Up`_ : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
+-   <span id="8da7">`Bubbling Up`_ : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
 -   <span id="8447">_Bubble sort, sorts an array of integers by bubbling the largest integer to the top._</span>
 
 <!-- -->
@@ -218,7 +218,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 -   <span id="44b2">Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); `Space Complexity`: O(n)</span>
 -   <span id="9a83">We are linear O(n) time because we are creating subArrays.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image" /></figure>### Example of Merge Sort
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image" /></figure>### Example of Merge Sort
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image" /></figure>-   <span id="48b4">**Merge sort is O(nlog(n)) time.**</span>
 -   <span id="c598">*We need a function for merging and a function for sorting.*</span>
@@ -270,7 +270,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 5.  <span id="9131">_Insert the value_</span>
 6.  <span id="6c8a">_Repeat until list is sorted._</span>
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -278,7 +278,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

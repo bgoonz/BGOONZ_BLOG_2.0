@@ -4,7 +4,7 @@ Plus Css Cheat Sheet (82 questions total)
 
 ---
 
-### CSS Interview Prep Quiz
+### CSS Interview Prep Quiz
 
 #### Plus Css Cheat Sheet (82 questions total)
 
@@ -12,16 +12,16 @@ Plus Css Cheat Sheet (82 questions total)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*3qTmnYskDL2PrW06.jpg" class="graf-image" /></figure>### Source:
 
-#### <a href="https://websitesetup.org/css3-cheat-sheet/" class="markup--anchor markup--h4-anchor">Complete CSS Cheat Sheet</a>
+#### <a href="https://websitesetup.org/css3-cheat-sheet/" class="markup--anchor markup--h4-anchor">Complete CSS Cheat Sheet</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aahUgWrL4_5GILfw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*2PQgJNqe_nP6lWnz.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*lOzM74JQovP54m_v.png" class="graf-image" /></figure>#### Q1. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*aahUgWrL4_5GILfw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*2PQgJNqe_nP6lWnz.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*lOzM74JQovP54m_v.png" class="graf-image" /></figure>#### Q1. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?
 
     ul li a
     a
     .example a
     div a
 
--   <span id="8dcb">\[x\] `.example a`</span>
+-   <span id="8dcb">\[x\] `.example a`</span>
 -   <span id="37da">\[ \] `div a`</span>
 -   <span id="09ae">\[ \] `a`</span>
 -   <span id="a2d4">\[ \] `ul li a`</span>
@@ -33,14 +33,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="395f">\[ \] a.title {…}</span>
 -   <span id="d6fa">\[ \] a=title {…}</span>
 
-#### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
+#### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
 
 -   <span id="2ea7">\[ \] Use the “clearfix hack” on the floated element and add a float to the parent element.</span>
 -   <span id="53b9">\[ \] Use the overflow property on the floated element or the “clearfix hack” on either the floated or parent element.</span>
 -   <span id="0f0b">\[ \] Use the “clearfix hack” on the floated element or the overflow property on the parent element.</span>
 -   <span id="3558">\[x\] Use the “clearfix hack” on the parent element or use the overflow property with a value other than “visible.”</span>
 
-#### Q4. What element(s) do the following selectors match to?
+#### Q4. What element(s) do the following selectors match to?
 
 `1) .nav {...}` `2) nav {...}` `3) #nav {...}`
 
@@ -74,21 +74,21 @@ Plus Css Cheat Sheet (82 questions total)
     2. A nav element
     3. An div with a id of "nav"
 
-#### Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?
+#### Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?
 
 -   <span id="1ed9">\[ \] Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.</span>
 -   <span id="f371">\[ \] Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.</span>
 -   <span id="bb37">\[x\] Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.</span>
 -   <span id="4dcd">\[ \] Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.</span>
 
-#### Q6. What is true of block and inline elements? (Alternative: Which statement about block and inline elements is true?)
+#### Q6. What is true of block and inline elements? (Alternative: Which statement about block and inline elements is true?)
 
 -   <span id="c7aa">\[ \] By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.</span>
 -   <span id="a457">\[x\] By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.</span>
 -   <span id="4df6">\[ \] A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.</span>
 -   <span id="15e8">\[ \] A `<span>` is an example of a block element. `<div>` is an example of an inline element.</span>
 
-#### Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?
+#### Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?
 
     .grid {
       display: grid;
@@ -101,21 +101,21 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="5495">\[ \] The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.</span>
 -   <span id="58be">\[ \] The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.</span>
 
-#### Q8. What is the line-height property primarily used for?
+#### Q8. What is the line-height property primarily used for?
 
 -   <span id="f5fb">\[x\] to control the height of the space between two lines of content</span>
 -   <span id="03a3">\[ \] to control the height of the space between heading elements</span>
 -   <span id="67d7">\[ \] to control the height of the character size</span>
 -   <span id="7238">\[ \] to control the width of the space between characters</span>
 
-#### Q9. Three of these choices are true about class selectors. Which is NOT true?
+#### Q9. Three of these choices are true about class selectors. Which is NOT true?
 
 -   <span id="20d4">\[ \] Multiple classes can be used within the same element.</span>
 -   <span id="c4b6">\[ \] The same class can be used multiple times per page.</span>
 -   <span id="b46b">\[ \] Class selectors with a leading period</span>
 -   <span id="b01a">\[x\] Classes can be used multiple times per page but not within the same element.</span>
 
-#### Q10. There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?
+#### Q10. There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?
 
 -   <span id="f95e">\[x\] position</span>
 -   <span id="6b6c">\[ \] flexbox</span>
@@ -166,7 +166,7 @@ Plus Css Cheat Sheet (82 questions total)
     background-scroll: scroll;
     background-position: 0px 0px;
 
-#### Q12. In the following example, according to cascading and specificity rules, what color will the link be?
+#### Q12. In the following example, according to cascading and specificity rules, what color will the link be?
 
     .example {
       color: yellow;
@@ -192,7 +192,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="85a8">\[ \] blue</span>
 -   <span id="d453">\[ \] red</span>
 
-#### Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?
+#### Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?
 
 -   <span id="9371">\[x\] Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.</span>
 -   <span id="48a2">\[ \] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.</span>
@@ -209,7 +209,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="ed9d">\[ \] The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.</span>
 -   <span id="8591">\[ \] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.</span>
 
-#### Q15. In the following example, what color will paragraph one and paragraph two be? (Alternative: In this example, what color will paragraphs one and two be?)
+#### Q15. In the following example, what color will paragraph one and paragraph two be? (Alternative: In this example, what color will paragraphs one and two be?)
 
     <section>
       <p>paragraph one</p>
@@ -229,7 +229,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="b3cf">\[x\] Paragraphs one will be red, paragraph two will be blue.</span>
 -   <span id="c825">\[ \] Both paragraphs will be red.</span>
 
-#### Q16.What are three valid ways of adding CSS to an HTML page?
+#### Q16.What are three valid ways of adding CSS to an HTML page?
 
 -   <span id="4246">\[ \]</span>
 
@@ -263,14 +263,14 @@ Plus Css Cheat Sheet (82 questions total)
     2. Inline; CSS is added to the HTML tag.
     3. Internal; CSS is included within the <head> element of the HTML file.
 
-#### Q17. Which of the following is true of the SVG image format? (Alternative: Which statement about the SVG image format is true?)
+#### Q17. Which of the following is true of the SVG image format? (Alternative: Which statement about the SVG image format is true?)
 
 -   <span id="12ae">\[ \] CSS can be applied to SVGs but JavaScript cannot be.</span>
 -   <span id="c2ab">\[ \] SVGs work best for creating 3D graphics.</span>
 -   <span id="9ba2">\[x\] SVGs can be created as a vector graphic or coded using SVG specific elements such as &lt;svg&gt;, &lt;line&gt;, and &lt;ellipse&gt;.</span>
 -   <span id="c02b">\[ \] SVGs are a HAML-based markup language for creating vector graphics.</span>
 
-#### Q18. In the example below, when will the color pink be applied to the anchor element?
+#### Q18. In the example below, when will the color pink be applied to the anchor element?
 
     a:active {
       color: pink;
@@ -281,42 +281,42 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="0448">\[x\] The color of the link will display as pink while the link is being clicked but before the mouse click is released.</span>
 -   <span id="45db">\[ \] The color of the link will display as pink before it has been clicked.</span>
 
-#### Q19. To change the color of an SVG using CSS, which property is used?
+#### Q19. To change the color of an SVG using CSS, which property is used?
 
 -   <span id="9f10">\[ \] Use background-fill to set the color inside the object and stroke or border to set the color of the border.</span>
 -   <span id="4955">\[ \] The color cannot be changed with CSS.</span>
 -   <span id="f7c0">\[ \] Use fill or background to set the color inside the object and stroke to set the color of the border.</span>
 -   <span id="724e">\[x\] Use fill to set the color inside the object and stroke to set the color of the border.</span>
 
-#### Q20. When using position: fixed, what will the element always be positioned relative to?
+#### Q20. When using position: fixed, what will the element always be positioned relative to?
 
 -   <span id="fe9c">\[ \] the closest element with position: relative</span>
 -   <span id="61e5">\[x\] the viewport</span>
 -   <span id="6260">\[ \] the parent element</span>
 -   <span id="50f0">\[ \] the wrapper element</span>
 
-#### Q21. By default, a background image will repeat `\_\_\_`
+#### Q21. By default, a background image will repeat `\_\_\_`
 
 -   <span id="ff58">\[ \] only if the background-repeat property is set to repeat</span>
 -   <span id="e1f3">\[x\] indefinitely, vertically, and horizontally</span>
 -   <span id="c6c7">\[ \] indefinitely on the horizontal axis only</span>
 -   <span id="129a">\[ \] once, on the x and y axis</span>
 
-#### Q22. When using media queries, media types are used to target a device category. Which choice lists current valid media types?
+#### Q22. When using media queries, media types are used to target a device category. Which choice lists current valid media types?
 
 -   <span id="8014">\[ \] print, screen, aural</span>
 -   <span id="3487">\[ \] print, screen, television</span>
 -   <span id="64a8">\[x\] print, screen, speech</span>
 -   <span id="73f7">\[ \] print, speech, device</span>
 
-#### Q23. How would you make the first letter of every paragraph on the page red?
+#### Q23. How would you make the first letter of every paragraph on the page red?
 
 -   <span id="7012">\[x\] p::first-letter { color: red; }</span>
 -   <span id="1b1b">\[ \] p:first-letter { color: red; }</span>
 -   <span id="c339">\[ \] first-letter::p { color: red; }</span>
 -   <span id="e2f8">\[ \] first-letter:p { color: red; }</span>
 
-#### Q24. In this example, what is the selector, property, and value?
+#### Q24. In this example, what is the selector, property, and value?
 
     p {
       color: #000000;
@@ -354,14 +354,14 @@ Plus Css Cheat Sheet (82 questions total)
     "p" is the property
     "#000000" is the value
 
-#### Q25. What is the rem unit based on?
+#### Q25. What is the rem unit based on?
 
 -   <span id="a6f1">\[ \] The rem unit is relative to the font-size of the p element.</span>
 -   <span id="ef56">\[ \] You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }</span>
 -   <span id="0f15">\[ \] The rem unit is relative to the font-size of the containing (parent) element.</span>
 -   <span id="932b">\[x\] The rem unit is relative to the font-size of the root element of the page.</span>
 
-#### Q26.Which of these would give a block element rounded corners?
+#### Q26.Which of these would give a block element rounded corners?
 
 -   <span id="6abe">\[ \] corner-curve: 10px</span>
 -   <span id="30ca">\[ \] border-corner: 10px</span>
@@ -377,21 +377,21 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="09e2">\[ \] The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.</span>
 -   <span id="0a5b">\[ \] The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.</span>
 
-#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element’s transformation origin. By default, what is the location of the origin?
+#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element’s transformation origin. By default, what is the location of the origin?
 
 -   <span id="436c">\[x\] the top left corner of the element</span>
 -   <span id="2269">\[ \] the center of the element</span>
 -   <span id="15a2">\[ \] the top right corner of the element</span>
 -   <span id="c037">\[ \] the bottom left of the element</span>
 
-#### Q29. Which of the following is not a valid color value?
+#### Q29. Which of the following is not a valid color value?
 
 -   <span id="1101">\[ \] color: \#000</span>
 -   <span id="3038">\[ \] color: rgb(0,0,0)</span>
 -   <span id="f7d6">\[ \] color: \#000000</span>
 -   <span id="5eff">\[x\] color: 000000</span>
 
-#### Q30. What is the vertical gap between the two elements below?
+#### Q30. What is the vertical gap between the two elements below?
 
     <div style="margin-bottom: 2rem;">Div 1</div>
     <div style="margin-top: 2rem;">Div 2</div>
@@ -401,7 +401,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="df6e">\[ \] 64px</span>
 -   <span id="5ba6">\[ \] 4rem</span>
 
-#### Q31. When using the Flexbox method, what property and value is used to display flex items in a column?
+#### Q31. When using the Flexbox method, what property and value is used to display flex items in a column?
 
 -   <span id="8f2e">\[x\] flex-flow: column; or flex-direction: column</span>
 -   <span id="788e">\[ \] flex-flow: column;</span>
@@ -422,7 +422,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="e098">\[ \] Example 1: `flex-direction: row;` Example 2: `flex-direction: row-reverse;` Example 3: `flex-direction: column;` Example 4: `flex-direction: reverse-column;`</span>
 -   <span id="483c">\[ \] Example 1: `flex-direction: column;` Example 2: `flex-direction: column-reverse;` Example 3: `flex-direction: row;` Example 4: `flex-direction: row-reverse;`</span>
 
-#### Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?
+#### Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?
 
     h2 ~ p {
       color: blue;
@@ -443,7 +443,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="0eb4">\[x\] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.</span>
 -   <span id="e353">\[ \] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.</span>
 
-#### Q35. When using flexbox, the “justify-content” property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
+#### Q35. When using flexbox, the “justify-content” property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
 
 -   <span id="cd2a">\[x\] justify-content: space-around;</span>
 -   <span id="bd21">\[ \] justify-content: center;</span>
@@ -464,14 +464,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="9b7b">\[x\] display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.</span>
 -   <span id="b618">\[ \] There is no difference; both will hide the element on the page</span>
 
-#### Q38. What selector and property would you use to scale an element to be 50% smaller on hover?
+#### Q38. What selector and property would you use to scale an element to be 50% smaller on hover?
 
 -   <span id="6075">\[ \] element:hover {scale: 0.5;}</span>
 -   <span id="b4b8">\[x\] element:hover {transform: scale(0.5);}</span>
 -   <span id="766f">\[ \] element:hover {scale: 50%;}</span>
 -   <span id="1631">\[ \] element:hover {transform: scale(50%);}</span>
 
-#### Q39. Which statement regarding icon fonts is true?
+#### Q39. Which statement regarding icon fonts is true?
 
 -   <span id="e052">\[ \] Icon fonts can be inserted only using JavaScript.</span>
 -   <span id="3a2f">\[ \] Icon fonts are inserted as inline images.</span>
@@ -487,7 +487,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="6844">\[ \] light; normal</span>
 -   <span id="a658">\[ \] normal; bolder</span>
 
-#### Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?
+#### Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?
 
 `.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`
 
@@ -496,7 +496,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="be1e">\[ \] 50px, 100px, 200px</span>
 -   <span id="2d94">\[ \] 50px, 50px, 100px</span>
 
-#### Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?
+#### Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?
 
 -   <span id="d0e6">\[ \]</span>
 
@@ -532,7 +532,7 @@ Plus Css Cheat Sheet (82 questions total)
       margin: 0 5 px;
     }
 
-#### Q43. Which selector would select only internal links within the current page?
+#### Q43. Which selector would select only internal links within the current page?
 
 -   <span id="c0b6">\[ \] `a[href="#"] {...}`</span>
 -   <span id="e4b5">\[ \] `a[href~="#"]`</span>
@@ -553,14 +553,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="5b08">\[ \] Margin adds a line around an element, padding adds space inside of an element.</span>
 -   <span id="e1d0">\[ \] Margin adds space inside of an element, padding adds space around an element.</span>
 
-#### Q46. What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
+#### Q46. What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
 
 -   <span id="ccfb">\[x\] padding: 10px 10px 0px 0px;</span>
 -   <span id="17cc">\[ \] padding: 10px 0px;</span>
 -   <span id="cff2">\[ \] padding: 10px 0;</span>
 -   <span id="cedb">\[ \] padding: 10px 0px 10px 0px;</span>
 
-#### Q47. Is there an error in this code? If so, find the best description of the problem
+#### Q47. Is there an error in this code? If so, find the best description of the problem
 
     @font-face {
       font-family: 'Avenir', sans-serif;
@@ -597,14 +597,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="3017">\[ \] `a=title`</span>
 -   <span id="149c">\[ \] `a.title`</span>
 
-#### Q51. Which code would you use to absolutely position an element of the logo class?
+#### Q51. Which code would you use to absolutely position an element of the logo class?
 
--   <span id="1d15">\[x\] `.logo { position: absolute; left: 100px; top: 150px; }`</span>
--   <span id="ba83">\[ \] `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`</span>
--   <span id="69d7">\[ \] `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`</span>
--   <span id="fbc0">\[ \] `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`</span>
+-   <span id="1d15">\[x\] `.logo { position: absolute; left: 100px; top: 150px; }`</span>
+-   <span id="ba83">\[ \] `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`</span>
+-   <span id="69d7">\[ \] `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`</span>
+-   <span id="fbc0">\[ \] `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`</span>
 
-#### Q52. In this example, what color will Paragraph 1 be?
+#### Q52. In this example, what color will Paragraph 1 be?
 
     p:first-of-type {
       color: red;
@@ -630,14 +630,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="458d">\[x\] red</span>
 -   <span id="031c">\[ \] yellow</span>
 
-#### Q53. What is the `::placeholder pseudo-element` used for?
+#### Q53. What is the `::placeholder pseudo-element` used for?
 
 -   <span id="3400">\[x\] It is used to format the appearance of placeholder text within a form control.</span>
 -   <span id="31df">\[ \] It specifies the default input text for a form control.</span>
 -   <span id="a147">\[ \] It writes text content into a hyperlink tooltip.</span>
 -   <span id="6d1f">\[ \] It writes text content into any page element.</span>
 
-#### Q54. Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?
+#### Q54. Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?
 
 -   <span id="7dfa">\[ \] All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.</span>
 -   <span id="33aa">\[ \] In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).</span>
@@ -658,7 +658,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="32cc">\[ \] to change the name of the font declared in the font-family</span>
 -   <span id="3ff4">\[ \] to set the color of the text</span>
 
-#### Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?
+#### Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?
 
 -   <span id="e4c9">\[x\]</span>
 
@@ -699,14 +699,14 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="c3a5">\[x\] 800 x 400 pixels</span>
 -   <span id="4122">\[ \] 400 x 200 pixels</span>
 
-#### Q59. In Chrome’s Developer Tools view, where are the default styles listed?
+#### Q59. In Chrome’s Developer Tools view, where are the default styles listed?
 
 -   <span id="51e1">\[x\] under the User Agent Stylesheet section on the right</span>
 -   <span id="3df4">\[ \] in the third panel under the Layout tab</span>
 -   <span id="8f87">\[ \] under the HTML view on the left</span>
 -   <span id="2191">\[ \] in the middle panel</span>
 
-#### Q60. While HTML controls document structure, CSS controls \_.
+#### Q60. While HTML controls document structure, CSS controls \_.
 
 -   <span id="b489">\[ \] semantic meaning</span>
 -   <span id="d30f">\[ \] content meaning</span>
@@ -720,7 +720,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="a031">\[ \] Images</span>
 -   <span id="724a">\[ \] my images</span>
 
-#### Q62. What is an advantage of using inline CSS?
+#### Q62. What is an advantage of using inline CSS?
 
 -   <span id="f8c2">\[ \] It is easier to manage.</span>
 -   <span id="abc9">\[x\] It is easier to add multiple styles through it.</span>
@@ -745,7 +745,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="1e37">\[ \] Declaration C is invalid.</span>
 -   <span id="321a">\[x\] All declarations are valid.</span>
 
-#### Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?
+#### Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?
 
 -   <span id="6a34">\[x\]</span>
 
@@ -791,14 +791,14 @@ Plus Css Cheat Sheet (82 questions total)
       background: rgba(blue);
     }
 
-#### Q66. Which CSS rule takes precedence over the others listed?
+#### Q66. Which CSS rule takes precedence over the others listed?
 
 -   <span id="2597">\[ \] `div.sidebar {}`</span>
 -   <span id="0013">\[ \] `* {}`</span>
 -   <span id="0436">\[x\] `div#sidebar2 p {}`</span>
--   <span id="9751">\[ \] `.sidebar p {}`</span>
+-   <span id="9751">\[ \] `.sidebar p {}`</span>
 
-#### Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?
+#### Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?
 
     body {
       background: #ffffff; /* white */
@@ -815,40 +815,40 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q68. Which CSS keyword can you use to override standard source order and specificity rules?
 
--   <span id="7986">\[ \] `!elevate!`</span>
+-   <span id="7986">\[ \] `!elevate!`</span>
 -   <span id="49cf">\[ \] `*prime`</span>
 -   <span id="24b6">\[ \] `override`</span>
--   <span id="796c">\[x\] `!important`</span>
+-   <span id="796c">\[x\] `!important`</span>
 
-#### Q69. You can use the \_ pseudo-class to set a different color on a link if it was clicked on.
+#### Q69. You can use the \_ pseudo-class to set a different color on a link if it was clicked on.
 
 -   <span id="a5ed">\[x\] `a:visited`</span>
 -   <span id="ca48">\[ \] `a:hover`</span>
 -   <span id="f0d9">\[ \] `a:link`</span>
 -   <span id="a568">\[ \] `a:focus`</span>
 
-#### Q70. Which color will look the brightest on your screen, assuming the background is white?
+#### Q70. Which color will look the brightest on your screen, assuming the background is white?
 
 -   <span id="8dc5">\[ \] `background-color: #aaa;`</span>
 -   <span id="a3ff">\[ \] `background-color: #999999;`</span>
 -   <span id="c586">\[ \] `background-color: rgba(170,170,170,0.5);`</span>
 -   <span id="a7ff">\[x\] `background-color: rgba(170,170,170,0.2);`</span>
 
-#### Q71. Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?
+#### Q71. Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?
 
--   <span id="f0f4">\[ \] `."header clear" {}`</span>
+-   <span id="f0f4">\[ \] `."header clear" {}`</span>
 -   <span id="85c7">\[ \] `header#clear {}`</span>
--   <span id="e453">\[x\] `.header.clear {}`</span>
--   <span id="8711">\[ \] `.header clear {}`</span>
+-   <span id="e453">\[x\] `.header.clear {}`</span>
+-   <span id="8711">\[ \] `.header clear {}`</span>
 
-#### Q72. A universal selector is specified using a(n) \_.
+#### Q72. A universal selector is specified using a(n) \_.
 
 -   <span id="052b">\[ \] “h1” string</span>
 -   <span id="34cd">\[ \] “a” character</span>
 -   <span id="5064">\[ \] “p” character</span>
 -   <span id="7a51">\[x\] “\*” character</span>
 
-#### Q73. In the following CSS code, `'h1'` is the \_, while `'color'` is the \_.
+#### Q73. In the following CSS code, `'h1'` is the \_, while `'color'` is the \_.
 
     h1 {
       color: red;
@@ -859,7 +859,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="cbea">\[ \] “p” character</span>
 -   <span id="d058">\[x\] selector; property</span>
 
-#### Q74. What is an alternate way to define the following CSS rule?
+#### Q74. What is an alternate way to define the following CSS rule?
 
     font-weight: bold;
 
@@ -875,28 +875,28 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="7b55">\[x\] It should be the last one on the list.</span>
 -   <span id="2ce2">\[ \] It should be the second one on the list.</span>
 
-#### Q76. What is one disadvantage of using a web font service?
+#### Q76. What is one disadvantage of using a web font service?
 
 -   <span id="e9b4">\[ \] It requires you to host font files on your own server.</span>
 -   <span id="5b98">\[ \] It uses more of your site’s bandwidth.</span>
 -   <span id="5943">\[ \] It offers a narrow selection of custom fonts.</span>
 -   <span id="5bf8">\[x\] It is not always a free service.</span>
 
-#### Q77. How do you add Google fonts to your project?
+#### Q77. How do you add Google fonts to your project?
 
 -   <span id="9e31">\[x\] by using an HTML link element referring to a Google-provided CSS</span>
 -   <span id="b503">\[ \] by embedding the font file directly into the project’s master JavaScript</span>
 -   <span id="cbc6">\[ \] by using a Google-specific CSS syntax that directly links to the desired font file</span>
 -   <span id="32c6">\[ \] by using a standard font-face CSS definition sourcing a font file on Google’s servers</span>
 
-#### Q78. which choice is not a valid color?
+#### Q78. which choice is not a valid color?
 
 -   <span id="ba0a">\[ \] color: `#000`;</span>
 -   <span id="26fe">\[ \] color: `rgb(0,0,0)`;</span>
 -   <span id="b9d1">\[ \] color: `#000000`;</span>
 -   <span id="c407">\[x\] color: `000000`;</span>
 
-#### Q79. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?
+#### Q79. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?
 
     html {font-size: 10px}
     body {font-size: 2rem;}
@@ -908,12 +908,12 @@ Plus Css Cheat Sheet (82 questions total)
       <p class="em"></p>
     </body>
 
--   <span id="998d">\[ \] The .rem will be equivalent to 25px; the .em value will be 20px.</span>
--   <span id="ac5f">\[ \] The .rem will be equivalent to 15px; the .em value will be 20px.</span>
--   <span id="725e">\[ \] The .rem will be equivalent to 15px; the .em value will be 40px.</span>
--   <span id="4ecf">\[ \] The .rem will be equivalent to 20px; the .em value will be 40px.</span>
+-   <span id="998d">\[ \] The .rem will be equivalent to 25px; the .em value will be 20px.</span>
+-   <span id="ac5f">\[ \] The .rem will be equivalent to 15px; the .em value will be 20px.</span>
+-   <span id="725e">\[ \] The .rem will be equivalent to 15px; the .em value will be 40px.</span>
+-   <span id="4ecf">\[ \] The .rem will be equivalent to 20px; the .em value will be 40px.</span>
 
-#### Q80. In this example, according to cascading and specificity rules, what color will the link be?
+#### Q80. In this example, according to cascading and specificity rules, what color will the link be?
 
     .example {color: yellow;}
     ul li a {color: blue;}
@@ -940,10 +940,10 @@ Plus Css Cheat Sheet (82 questions total)
 
 \#\#\#\# Q82. What is the correct syntax for changing the curse from an arrow to a pointing hand when it interacts with a named element?
 
--   <span id="2ed7">\[x\] `.element {cursor: pointer;}`</span>
--   <span id="6bc4">\[ \] `.element {cursor: hand;}`</span>
--   <span id="a193">\[ \] `.element {cursor: move-hand;}`</span>
--   <span id="50ed">\[ \] `.element {cursor: pointer-hand;}`</span>
+-   <span id="2ed7">\[x\] `.element {cursor: pointer;}`</span>
+-   <span id="6bc4">\[ \] `.element {cursor: hand;}`</span>
+-   <span id="a193">\[ \] `.element {cursor: move-hand;}`</span>
+-   <span id="50ed">\[ \] `.element {cursor: pointer-hand;}`</span>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 3, 2021](https://medium.com/p/6e3e4de7ca53).
 

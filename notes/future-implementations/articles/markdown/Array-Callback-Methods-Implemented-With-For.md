@@ -4,7 +4,7 @@ How to implement array callback methods in JavaScript
 
 ---
 
-### Array Callback Methods Implemented With For Loops
+### Array Callback Methods Implemented With For Loops
 
 #### How to implement array callback methods in JavaScript
 
@@ -18,7 +18,7 @@ How to implement array callback methods in JavaScript
 
 What do you think will be printed in the following:
 
-#### Anonymous callback, a named callback
+#### Anonymous callback, a named callback
 
     function foo(callback) {
         console.log('grape');
@@ -41,7 +41,7 @@ What do you think will be printed in the following:
 
     fruitBasket();
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value.
 
     function greaterValue(value, cb1, cb2) {
         // compare cb1 invoked with value to cb2 invoked with value
@@ -119,7 +119,7 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
         return true;
     }
 
-### Further Examples of the above concepts
+### Further Examples of the above concepts
 
     const createMeowValue = () => {
       console.log(this.name);

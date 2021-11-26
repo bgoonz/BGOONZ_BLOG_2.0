@@ -4,9 +4,9 @@ This is going to be a running list of youtube videos and channels that I discove
 
 ---
 
-### Awesome Web Development Youtube Video Archive
+### Awesome Web Development Youtube Video Archive
 
-#### This is going to be a running list of youtube videos and channels that I discover as I learn web development. It will not be strictly confined to web development but that will be it’s focus.
+#### This is going to be a running list of youtube videos and channels that I discover as I learn web development. It will not be strictly confined to web development but that will be it’s focus.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*SmvOx9hz2KcF1QP4.gif" class="graf-image" /></figure>Tutorials:
 
@@ -14,7 +14,7 @@ Inspiration:
 
 ### Channels:
 
-#### Free Code Camp:
+#### Free Code Camp:
 
 > Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons — all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.
 
@@ -22,7 +22,7 @@ Inspiration:
 
 > This is the official YouTube channel for CSS-Tricks, a web design community curated by Chris Coyier. <a href="https://css-tricks.com" class="markup--anchor markup--blockquote-anchor">https://css-tricks.com</a>
 
-#### Computer History Museum:
+#### Computer History Museum:
 
 > Welcome to the Computer History Museum channel on YouTube. We’re committed to preserving and presenting the history and stories of the Information Age. Here on YouTube we offer videos of the many lectures and events at the museum and also historic computer films. We also feature video from our well–known Revolutionaries television series. Be sure to check out the Computer History Museum website for even more information including online exhibits, upcoming events and our collection of computing artifacts: <a href="http://www.computerhistory.org." class="markup--anchor markup--blockquote-anchor">http://www.computerhistory.org.</a>
 

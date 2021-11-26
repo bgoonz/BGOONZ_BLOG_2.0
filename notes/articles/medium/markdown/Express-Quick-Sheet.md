@@ -4,7 +4,7 @@ Settings
 
 ---
 
-### Express Quick Sheet
+### Express Quick Sheet
 
 ### Settings
 
@@ -39,7 +39,7 @@ Settings
 
 ---
 
-### Request & response
+### Request & response
 
 ### Request
 

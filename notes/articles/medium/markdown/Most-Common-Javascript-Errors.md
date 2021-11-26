@@ -6,7 +6,7 @@ Written in quiz format
 
 ### Most Common Javascript Errors
 
-#### Written in quiz format
+#### Written in quiz format
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*Z3bZOpQH9SFYpYZh.jpg" class="graf-image" /></figure>
 

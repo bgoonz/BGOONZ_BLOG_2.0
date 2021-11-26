@@ -4,13 +4,13 @@ You should probably skip this one… seriously it’s just for internal use!
 
 ---
 
-### All Of My Medium Stories
+### All Of My Medium Stories
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*yZ41P3YdMYMiyFPAPrzyGw.gif" class="graf-image" /></figure>
 
 ---
 
-### This is another backup of all of them!
+### This is another backup of all of them!
 
 <a href="https://golden-lobe-519.notion.site/Medium-7b5b9bd642344d60afe3f03fe6431952" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/Medium-7b5b9bd642344d60afe3f03fe6431952"><strong>All OF MEDIUM ARTICLES</strong><br />
 <em>2021-02-27_A-Quick-Guide-to-Big-O-Notation--Memoization--Tabulation--and-Sorting-Algorithms-by-Example-803ff193c522…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/Medium-7b5b9bd642344d60afe3f03fe6431952" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -27,7 +27,7 @@ You should probably skip this one… seriously it’s just for internal use!
 <em>At the bottom the following commands are listed as a markdown file and embed in this article as a github gist.</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/my-personal-arsenal-of-convenience-scripts-3c7869fdae53" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/adding-css-to-your-html-3a17ba25ba82" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/adding-css-to-your-html-3a17ba25ba82"><strong>Adding CSS To Your HTML</strong><br />
-<em>For beginners … very picture heavy since CSS is such a visual discipline!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/adding-css-to-your-html-3a17ba25ba82" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>For beginners … very picture heavy since CSS is such a visual discipline!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/adding-css-to-your-html-3a17ba25ba82" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/most-common-javascript-errors-311ea1356a3d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/most-common-javascript-errors-311ea1356a3d"><strong>Most Common Javascript Errors</strong><br />
 <em>Written in quiz format</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/most-common-javascript-errors-311ea1356a3d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

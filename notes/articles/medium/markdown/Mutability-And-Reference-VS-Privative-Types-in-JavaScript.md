@@ -60,11 +60,11 @@ To dereference an array, use `let [var1, var2]` syntax.
 
 To dereference attributes from an object, use `let {}` syntax.
 
-### Primitive Data Types in Depth
+### Primitive Data Types in Depth
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*mRr-4QeqbjcMUTtQQNOlEw.png" class="graf-image" /></figure>
 
-### Check Out My New Blog:
+### Check Out My New Blog:
 
 <a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Bryan</em> best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

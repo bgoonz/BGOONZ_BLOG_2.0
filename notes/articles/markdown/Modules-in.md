@@ -6,7 +6,7 @@ Differences between Node.js and browsers
 
 ### Modules in Javascript
 
-#### **Differences between Node.js and browsers**
+#### **Differences between Node.js and browsers**
 
 There are many differences between Node.js and browser environments, but many of them are small and inconsequential in practice. For example, in our _Asynchronous_ lesson, we noted how <a href="https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_args" class="markup--anchor markup--p-anchor">Node’s setTimeout</a> has a slightly different return value from <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" class="markup--anchor markup--p-anchor">a browser’s setTimeout</a>. Let’s go over a few notable differences between the two environments.
 
@@ -32,7 +32,7 @@ If we execute animals.js in Node, the program would print 'Sennacy is a great pe
 
 Browsers don’t have a notion of a file system so we cannot use require or module.exports in the same way.
 
-### The fs module
+### The fs module
 
 Node comes with an <a href="https://nodejs.org/api/fs.html" class="markup--anchor markup--p-anchor">fs module</a> that contains methods that allow us to interact with our computer’s **F**ile **S**ystem through JavaScript. No additional installations are required; to access this module we can simply `require` it. We recommend that you code along with this reading. Let's begin with a `change-some-files.js` script that imports the module:
 
@@ -46,7 +46,7 @@ Similar to what we saw in the `readline` lesson, `require` will return to us a o
 
 The `fs` module contains tons of functionality! Chances are that if there is some operation you need to perform regarding files, the `fs` module supports it. The module also offers both synchronous and asynchronous implementations of these methods. We prefer to not block the thread and so we'll opt for the asynchronous flavors of these methods.
 
-### Creating a new file
+### Creating a new file
 
 To create a file, we can use the `writeFile` method. According to the documentation, there are a few ways to use it. The most straight forward way is:
 
@@ -56,7 +56,7 @@ _Beware! If the file name specified to_ `writeFile` _already exists, it will com
 
 We won’t be using the `foo.txt` file in the rest of this reading.
 
-### Reading existing files
+### Reading existing files
 
 To explore how to read a file, we’ll use VSCode to manually create a `poetry.txt` file within the same directory as our `change-some-file.js` script. Be sure to create this if you are following along.
 
@@ -128,7 +128,7 @@ Executing the script above will edit the `poetry.txt` file to contain:
 
 #### Refactor:
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

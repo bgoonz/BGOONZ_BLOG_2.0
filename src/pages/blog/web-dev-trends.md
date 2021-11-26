@@ -27,7 +27,7 @@ Developers will continue to use SPA for building responsive sites and apps in 20
 
 **3. JavaScript Frameworks**
 
-JavaScript continues to remain one of the [**most preferred web development languages**](https://blog.sagipl.com/top-programming-languages/) owing to its flexibility, power and evolving frameworks.
+JavaScript continues to remain one of the [**most preferred web development languages**](https://blog.sagipl.com/top-programming-languages/) owing to its flexibility, power and evolving frameworks.
 
 This year too, we will see many new applications being developed in this developer-friendly language.
 
@@ -51,7 +51,7 @@ Blockchain, which was founded as a technology for secure digital payments, is no
 
 Motion UI (User Interface) is a technology for creating visually appealing apps, especially animations, graphics, and transitions.
 
-Owing to its great ability for [creating an interactive web design](https://www.sagipl.com/website-design/), Motion UI will be a primary tool for web developers in 2021.
+Owing to its great ability for [creating an interactive web design](https://www.sagipl.com/website-design/), Motion UI will be a primary tool for web developers in 2021.
 
 **8. Accelerated Mobile Pages (AMP)**
 
@@ -77,10 +77,10 @@ Following Google’s increased focus on voice search queries, websites based on 
 
 As the number of people using voice searches will increase this year, so will the demand for websites optimized for the same.
 
-**12.** **Push Notification**
+**12.** **Push Notification**
 
 Push Notification is replacing the Newsletter service. It is not very old but maintaining a high conversion rate better than Newsletters.
 
 Services and platforms like Onesignal, ZoPush, Push Engage are improving day by day, so it will be in trend in upcoming years and web developers also have to take care of it.
 
-SAG IPL is a leading global [web development company](https://www.sagipl.com/web-development/) providing modern web/app development services to clients worldwide.
+SAG IPL is a leading global [web development company](https://www.sagipl.com/web-development/) providing modern web/app development services to clients worldwide.

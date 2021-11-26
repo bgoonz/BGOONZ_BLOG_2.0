@@ -97,11 +97,11 @@
                             <h4 name="ecf9" id="ecf9" class="graf graf--h4 graf--leading graf--kicker">
                                 <a href="http://medium.com/codex" data-href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
                             </h4>
-                            <h3 name="9caf" id="9caf" class="graf graf--h3 graf-after--h4 graf--title">PostgreSQL Cheat Sheet</h3>
+                            <h3 name="9caf" id="9caf" class="graf graf--h3 graf-after--h4 graf--title">PostgreSQL Cheat Sheet</h3>
                             <h4 name="018d" id="018d" class="graf graf--h4 graf-after--h3 graf--subtitle">
                                 <strong class="markup--strong markup--h4-strong"
                                     >Each table is made up of rows and columns. If you think of a table as a grid, the column go from left to right across the
-                                    grid and each entry of data is listed down as a row.</strong
+                                    grid and each entry of data is listed down as a row.</strong
                                 >
                             </h4>
                             <figure name="6344" id="6344" class="graf graf--figure graf-after--h4">
@@ -479,7 +479,7 @@
                                 id="895b"
                                 class="graf graf--pre graf-after--p"
                             ><code class="markup--code markup--pre-code">DROP INDEX index_name;</code></pre>
-                            <h3 name="fe6a" id="fe6a" class="graf graf--h3 graf-after--pre">Querying data from tables</h3>
+                            <h3 name="fe6a" id="fe6a" class="graf graf--h3 graf-after--pre">Querying data from tables</h3>
                             <p name="6138" id="6138" class="graf graf--p graf-after--h3">Query all data from a table:</p>
                             <pre
                                 name="39e6"
@@ -835,8 +835,8 @@
                     </div>
                     <div class="section-content">
                         <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="da6f" id="da6f" class="graf graf--h3 graf--leading">Postgres &amp; JSON:</h3>
-                            <h3 name="1d65" id="1d65" class="graf graf--h3 graf-after--h3">Creating the DB and the Table</h3>
+                            <h3 name="da6f" id="da6f" class="graf graf--h3 graf--leading">Postgres &amp; JSON:</h3>
+                            <h3 name="1d65" id="1d65" class="graf graf--h3 graf-after--h3">Creating the DB and the Table</h3>
                             <pre
                                 name="c75d"
                                 id="c75d"
@@ -852,7 +852,7 @@
                                 id="8bc3"
                                 class="graf graf--pre graf-after--pre"
                             ><code class="markup--code markup--pre-code">CREATE TABLE books (<br>  id SERIAL PRIMARY KEY,<br>  client VARCHAR NOT NULL,<br>  data JSONb NOT NULL<br>);</code></pre>
-                            <h3 name="4d07" id="4d07" class="graf graf--h3 graf-after--pre">Populating the DB</h3>
+                            <h3 name="4d07" id="4d07" class="graf graf--h3 graf-after--pre">Populating the DB</h3>
                             <pre name="e5f6" id="e5f6" class="graf graf--pre graf-after--h3">
 INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;: &quot;Siddhartha&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Herman&quot;, &quot;last_name&quot;: &quot;Hesse&quot; } }&#39; ); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;Bryan Guner&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Jack&quot;, &quot;last_name&quot;: &quot;Kerouac&quot; } }&#39;); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;100 años de soledad&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Gabo&quot;, &quot;last_name&quot;: &quot;Marquéz&quot; } }&#39;);</pre
                             >
@@ -873,7 +873,7 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                 />
                             </figure>
                             <h3 name="afcf" id="afcf" class="graf graf--h3 graf-after--figure">
-                                <code class="markup--code markup--h3-code">-&gt;</code> operator returns values out of JSON columns
+                                <code class="markup--code markup--h3-code">-&gt;</code> operator returns values out of JSON columns
                             </h3>
                             <p name="32cf" id="32cf" class="graf graf--p graf-after--h3">Selecting 1 column:</p>
                             <pre
@@ -908,13 +908,13 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                 />
                             </figure>
                             <h3 name="d26b" id="d26b" class="graf graf--h3 graf-after--figure">
-                                <code class="markup--code markup--h3-code">-&gt;</code> vs <code class="markup--code markup--h3-code">-&gt;&gt;</code>
+                                <code class="markup--code markup--h3-code">-&gt;</code> vs <code class="markup--code markup--h3-code">-&gt;&gt;</code>
                             </h3>
                             <p name="c1ea" id="c1ea" class="graf graf--p graf-after--h3">
                                 The <code class="markup--code markup--p-code">-&gt;</code> operator returns the original JSON type (which might be an object),
                                 whereas <code class="markup--code markup--p-code">-&gt;&gt;</code> returns text.
                             </p>
-                            <h3 name="505f" id="505f" class="graf graf--h3 graf-after--p">Return NESTED objects</h3>
+                            <h3 name="505f" id="505f" class="graf graf--h3 graf-after--p">Return NESTED objects</h3>
                             <p name="94a8" id="94a8" class="graf graf--p graf-after--h3">
                                 You can use the <code class="markup--code markup--p-code">-&gt;</code> to return a nested object and thus chain the operators:
                             </p>
@@ -975,7 +975,7 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                     src="https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq"
                                 />
                             </figure>
-                            <h3 name="2b05" id="2b05" class="graf graf--h3 graf-after--figure">A real world example</h3>
+                            <h3 name="2b05" id="2b05" class="graf graf--h3 graf-after--figure">A real world example</h3>
                             <pre
                                 name="013d"
                                 id="013d"
@@ -1070,7 +1070,7 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                 />
                             </figure>
                             <h4 name="4640" id="4640" class="graf graf--h4 graf-after--figure">
-                                If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+                                If you found this guide helpful feel free to checkout my github/gists where I host similar content:
                             </h4>
                             <p name="1c2f" id="1c2f" class="graf graf--p graf-after--h4">
                                 <a
@@ -1120,7 +1120,7 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                 ></a>
                             </div>
                             <h3 name="9ece" id="9ece" class="graf graf--h3 graf-after--mixtapeEmbed">
-                                If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+                                If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
                             </h3>
                             <div name="d77e" id="d77e" class="graf graf--mixtapeEmbed graf-after--h3">
                                 <a
@@ -1159,7 +1159,7 @@ INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;:
                                     style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Udg3rbeFyslZ9dyl)"
                                 ></a>
                             </div>
-                            <h3 name="26c7" id="26c7" class="graf graf--h3 graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</h3>
+                            <h3 name="26c7" id="26c7" class="graf graf--h3 graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</h3>
                             <h3 name="760c" id="760c" class="graf graf--h3 graf-after--h3">Discover More:</h3>
                             <div name="1e6c" id="1e6c" class="graf graf--mixtapeEmbed graf-after--h3 graf--trailing">
                                 <a

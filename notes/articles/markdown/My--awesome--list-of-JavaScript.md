@@ -6,7 +6,7 @@ Everyone’s seen the 'Awesome’ lists on GitHub… and they are indeed awesome
 
 ### My 'awesome’ list of JavaScript resources
 
-#### Everyone’s seen the 'Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
+#### Everyone’s seen the 'Awesome’ lists on GitHub… and they are indeed awesome… so today I am going to attempt to curate my own…
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*3pwY-HRi2sjgBBJ0eISwqw.png" class="graf-image" /></figure><a href="https://github.com/topics/awesome" class="markup--anchor markup--blockquote-anchor"><strong>https://github.com/topics/awesome</strong></a>
 

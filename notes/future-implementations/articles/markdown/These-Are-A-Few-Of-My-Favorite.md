@@ -4,19 +4,19 @@ A web development student’s declassified school survival guide.
 
 ---
 
-### These Are A Few Of My Favorite Things
+### These Are A Few Of My Favorite Things
 
-#### A web development student’s declassified school survival guide.
+#### A web development student’s declassified school survival guide.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-Also here’s an even better list by someone I don’t know but would be doing you a disservice by failing to include… **There’s very little overlap so you should probably read both :**
+Also here’s an even better list by someone I don’t know but would be doing you a disservice by failing to include… **There’s very little overlap so you should probably read both :**
 
 <a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c"><strong>25 Free Resources to Learn Web Development</strong><br />
 <em>Start where you are, use what you have, and do what you can.</em>medium.com</a><a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*dfyNFX1AFX9E3Z6R" class="graf-image" /></figure>### Disclaimer: This guide roughly goes in reverse order of awesomeness… i.e. you have to scroll to get to the coolest content… sorry not sorry
+<figure><img src="https://cdn-images-1.medium.com/max/600/0*dfyNFX1AFX9E3Z6R" class="graf-image" /></figure>### Disclaimer: This guide roughly goes in reverse order of awesomeness… i.e. you have to scroll to get to the coolest content… sorry not sorry
 
 ---
 
@@ -90,17 +90,17 @@ Follow Dillinger on Twitter at <a href="https://twitter.com/dillingerapp" class=
 
 You write code in the editors, the results of that code are shown to you in the preview area. It’s simple, but powerful! Beginners and experts alike work best when they can see the results of what they are doing as they do it.
 
-### How do you make a Pen?
+### How do you make a Pen?
 
 You must <a href="https://codepen.io/accounts/signup/user/free" class="markup--anchor markup--p-anchor">have an account</a> and be <a href="https://codepen.io/login" class="markup--anchor markup--p-anchor">logged in</a>, then you head to <a href="https://codepen.io/pen/" class="markup--anchor markup--p-anchor">the Pen Editor</a>, and save it when you are ready.
 
-### How do I save changes?
+### How do I save changes?
 
 After the first save, changes you make in the Pen Editor are <a href="https://blog.codepen.io/documentation/autosave/" class="markup--anchor markup--p-anchor">automatically saved on a timer</a>, but that is a Pen-level setting you can change if you wish.
 
 You can also <a href="https://blog.codepen.io/documentation/forks/" class="markup--anchor markup--p-anchor">fork</a> a Pen to make another copy.
 
-### How do I share a Pen?
+### How do I share a Pen?
 
 By default, Pens are public, meaning the Pen will have a URL you can share anywhere you like and anyone will be able to see it. You could share it to Twitter, Facebook, over email… anywhere you like.
 
@@ -110,7 +110,7 @@ Just by virtue of saving a public Pen, you’re also making it public to the wor
 
 ---
 
-### 2.) Free Code Camp:
+### 2.) Free Code Camp:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*GcLsRU-PNXX-bGt6_Z5vPw.png" class="graf-image" /></figure>
 
@@ -129,7 +129,7 @@ CloudConvert is a German-based conversion site that was launched in 2012. Today,
 
 Just upload the file you want to convert and CloudConvert gives you a list of file types it can convert it to. It can then send that file directly to your Dropbox or Google Drive account. It’s a pretty simple process and if you don’t need to convert between file types very often, CloudConvert’s handy to keep around.
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*Md8ThdTUmUpuRZRcL6cVng.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*UP75fygqLTTki4jhZgfPaQ.png" alt="Lot’s of features" class="graf-image" /><figcaption>Lot’s of features</figcaption></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*Md8ThdTUmUpuRZRcL6cVng.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*UP75fygqLTTki4jhZgfPaQ.png" alt="Lot’s of features" class="graf-image" /><figcaption>Lot’s of features</figcaption></figure>
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*Znr4SJvKJCut1gUoKNf_zg.png" class="graf-image" /></figure>
 
@@ -147,7 +147,7 @@ Plug-ins for custom formats can also be written in <a href="https://en.wikipedia
 
 An included <a href="https://en.wikipedia.org/wiki/CiteProc" class="markup--anchor markup--p-anchor" title="CiteProc">CiteProc</a> option allows Pandoc to use bibliographic data from <a href="https://en.wikipedia.org/wiki/Reference_management_software" class="markup--anchor markup--p-anchor" title="Reference management software">reference management software</a> in any of four formats: <a href="https://en.wikipedia.org/wiki/BibTeX" class="markup--anchor markup--p-anchor" title="BibTeX">BibTeX</a>, <a href="https://en.wikipedia.org/wiki/BibLaTeX" class="markup--anchor markup--p-anchor" title="BibLaTeX">BibLaTeX</a>, <a href="https://en.wikipedia.org/wiki/Citation_Style_Language" class="markup--anchor markup--p-anchor" title="Citation Style Language">CSL JSON or CSL YAML</a>. The information is automatically transformed into a <a href="https://en.wikipedia.org/wiki/Citation" class="markup--anchor markup--p-anchor" title="Citation">citation</a> in various styles (such as <a href="https://en.wikipedia.org/wiki/APA_style" class="markup--anchor markup--p-anchor" title="APA style">APA</a>, <a href="https://en.wikipedia.org/wiki/The_Chicago_Manual_of_Style" class="markup--anchor markup--p-anchor" title="The Chicago Manual of Style">Chicago</a>, or <a href="https://en.wikipedia.org/wiki/The_MLA_Style_Manual" class="markup--anchor markup--p-anchor" title="The MLA Style Manual">MLA</a>) using an implementation of the <a href="https://en.wikipedia.org/wiki/Citation_Style_Language" class="markup--anchor markup--p-anchor" title="Citation Style Language">Citation Style Language</a>. This allows the program to serve as a simpler alternative to <a href="https://en.wikipedia.org/wiki/LaTeX" class="markup--anchor markup--p-anchor" title="LaTeX">LaTeX</a> for producing academic writing
 
-### Supported file formats
+### Supported file formats
 
 Pandoc’s most thoroughly supported file format is an extended version of <a href="https://en.wikipedia.org/wiki/Markdown" class="markup--anchor markup--p-anchor" title="Markdown">Markdown</a> but it can also read many other forms of:
 
@@ -205,7 +205,7 @@ It can create files in the following formats, which are not necessarily the same
 
 ---
 
-### 3.) Code Sandbox:
+### 3.) Code Sandbox:
 
 CodeSandbox works with JavaScript (including TypeScript) and has front-end and full-stack support.
 
@@ -241,7 +241,7 @@ It’s how I create site navigation as it appears here:
 <a href="https://lambda-resources.netlify.app/directory.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-resources.netlify.app/directory.html"><strong>Site Navigation</strong><br />
 <em>Edit description</em>lambda-resources.netlify.app</a><a href="https://lambda-resources.netlify.app/directory.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-This enables me to take a folder full of my notes … no matter the file extension and rapidly turn the contents of that folder into a static documentation site… not to mention that having (potentially) thousands of nonbroken hyperlinks between pages in your website will help boost your SEO rating.
+This enables me to take a folder full of my notes … no matter the file extension and rapidly turn the contents of that folder into a static documentation site… not to mention that having (potentially) thousands of nonbroken hyperlinks between pages in your website will help boost your SEO rating.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*uTU2LjT81NAVDZDskAvKzw.gif" class="graf-image" /></figure>
 
@@ -275,7 +275,7 @@ Users who are interested in more reliable access to better resources may be inte
 <a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/notebooks/basic_features_overview.ipynb"><strong>Google Colaboratory</strong><br />
 <em>Edit description</em>colab.research.google.com</a><a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### 6.) Github Gists:
+### 6.) Github Gists:
 
 Here’s a repo where I backup my gists… I keep hundreds:
 
@@ -284,7 +284,7 @@ Here’s a repo where I backup my gists… I keep hundreds:
 
 ---
 
-### 7.) Screen To Gif:
+### 7.) Screen To Gif:
 
 <a href="https://github.com/NickeManarin/ScreenToGif/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/NickeManarin/ScreenToGif/"><strong>NickeManarin/ScreenToGif</strong><br />
 <em>This tool allows you to record a selected area of your screen, live feed from your webcam or live drawings from a…</em>github.com</a><a href="https://github.com/NickeManarin/ScreenToGif/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -372,13 +372,13 @@ You can also switch to the window and screen modes.
 
 ---
 
-### 8. <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" class="markup--anchor markup--h3-anchor">Traversy Media</a> (Free)
+### 8. <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" class="markup--anchor markup--h3-anchor">Traversy Media</a> (Free)
 
 -source: <a href="https://codeburst.io/8-websites-you-should-visit-to-learn-web-development-620e93b3f1c5" class="markup--anchor markup--p-anchor">https://codeburst.io/8-websites-you-should-visit-to-learn-web-development-620e93b3f1c5</a>
 
 Traversy media is a youtube channel created by Brad Traversy. **His youtube channel covers nearly every topic regarding web development, from HTML, CSS, and Javascript to all the different frameworks and libraries (Sass, Bootstrap, Angular, React, Vue Js).**
 
-#### While I am at it I will list some youtube videos/channels that I think provide amazing content … just for the love of sharing knowledge.
+#### While I am at it I will list some youtube videos/channels that I think provide amazing content … just for the love of sharing knowledge.
 
 ---
 
@@ -426,7 +426,7 @@ Of course, in order for Stackbit to show you the preview of your site, your SSG�
 
 ---
 
-### 10.) File Locator Pro:
+### 10.) File Locator Pro:
 
 FileLocator is a search utility for Windows
 
@@ -470,13 +470,13 @@ Turn your tribal knowledge into easy-to-find answers.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*9JshGw_-PYqBgR8v.png" class="graf-image" /></figure>Replaces
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*mtnwrrjjAjMeJBMj.png" class="graf-image" /></figure>### Projects & tasks
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*mtnwrrjjAjMeJBMj.png" class="graf-image" /></figure>### Projects & tasks
 
 Kanban boards, tables, lists, and more. Customize any workflow.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YPEZ1KxoWELQMgQB.png" class="graf-image" /></figure>Replaces
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*IzZ9PX3tbYpxTret.png" class="graf-image" /></figure>### Notes & docs
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*IzZ9PX3tbYpxTret.png" class="graf-image" /></figure>### Notes & docs
 
 Systems that keep notes organized. Add any type of content.
 
@@ -493,12 +493,12 @@ Systems that keep notes organized. Add any type of content.
 
 GitBook started as a simple open source tool designed to let developers quickly publish content from a git repo. We’ve changed a bunch since then, but fundamentally we’ve stayed true to the vision of empowering software teams to document and distribute their knowledge.
 
-Not only does this tool allow you to seamlessly create documentation and notes in perfect synchrony with the git repo of your choice .. you can also import/export html, markdown and pdf documents and the cherry on top… it turns your notes into a beautiful website…. 11/10 would recommend.
+Not only does this tool allow you to seamlessly create documentation and notes in perfect synchrony with the git repo of your choice .. you can also import/export html, markdown and pdf documents and the cherry on top… it turns your notes into a beautiful website…. 11/10 would recommend.
 
 <a href="https://bryan-guner.gitbook.io/lambda-website" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryan-guner.gitbook.io/lambda-website"><strong>Closure-and-Scope</strong><br />
 <em>Variables are used to store information to be referenced and manipulated in a computer program. A variable’s sole…</em>bryan-guner.gitbook.io</a><a href="https://bryan-guner.gitbook.io/lambda-website" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-If you’re familiar with facebook’s opensource docusaurous … this is a lot like that if it were way better and much easier… Also for no extra cost to you… they don’t spy on you… sell your data or help influence foreign/domestic elections. …
+If you’re familiar with facebook’s opensource docusaurous … this is a lot like that if it were way better and much easier… Also for no extra cost to you… they don’t spy on you… sell your data or help influence foreign/domestic elections. …
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Go8UXl1siB12VL9il0ninw.png" class="graf-image" /></figure>
 

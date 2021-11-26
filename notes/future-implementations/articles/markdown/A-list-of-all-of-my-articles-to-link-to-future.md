@@ -4,7 +4,7 @@ You should probably skip this one… seriously it’s just for internal use!
 
 ---
 
-### All Of My Medium Stories
+### All Of My Medium Stories
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*yZ41P3YdMYMiyFPAPrzyGw.gif" class="graf-image" /></figure><a href="https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a"><strong>The ExpressJS Way To Write APIs</strong><br />
 <em>This article will cover the basics of express from the perspective of a beginner without concerning it’s self with the…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

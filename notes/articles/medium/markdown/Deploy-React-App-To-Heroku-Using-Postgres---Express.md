@@ -4,7 +4,7 @@ Heroku is an web application that makes deploying applications easy for a beginn
 
 ---
 
-### Deploy React App To Heroku Using Postgres & Express
+### Deploy React App To Heroku Using Postgres & Express
 
 Heroku is an web application that makes deploying applications easy for a beginner.
 
@@ -121,7 +121,7 @@ The `dev:backend` and `dev:frontend` scripts are optional and will not be used f
 
 Finally, commit your changes.
 
-### Phase 3: Deploy to Heroku
+### Phase 3: Deploy to Heroku
 
 Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
 
@@ -171,7 +171,7 @@ If you want to open a connection to the logs to continuously output to your term
 
 The logs may clue you into why you are experiencing errors or different behavior.
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 
@@ -180,7 +180,7 @@ The logs may clue you into why you are experiencing errors or different behavior
 
 ### Alternate Instructions:
 
-### Deploy MERN App To Heroku:
+### Deploy MERN App To Heroku:
 
 #### Source: <a href="https://dev.to/stlnick/how-to-deploy-a-full-stack-mern-app-with-heroku-netlify-ncb" class="markup--anchor markup--h4-anchor">Article</a>
 

@@ -4,15 +4,15 @@ What is a Query?
 
 ---
 
-### Mini Review Of SQL For PostgreSQL W Node & Express
+### Mini Review Of SQL For PostgreSQL W Node & Express
 
-#### **What is a Query?**
+#### **What is a Query?**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LU-Sn7CDRHyY78nD.jpeg" class="graf-image" /></figure>### Using Select
 
 **What is a Query?**
 
--   <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
+-   <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
 -   <span id="e626">`psql -U postgres`</span>
 -   <span id="f34d">Let’s us access the postgres server as the user 'postgres’</span>
 -   <span id="113b">`-U` stands for 'user'.</span>
@@ -45,11 +45,11 @@ What is a Query?
     ('Max', 1.6, 'German Shepherd', 65, 'no');
 
 -   <span id="2c10">SQL Data Types listed here:</span>
--   <span id="e3ef">`varchar(n)` : variable length char, n represents the limit.</span>
--   <span id="3af6">`numeric(p, s)` : floating point number, with _p_ digits and _s_ number of places after the decimal point.</span>
--   <span id="2eff">`int` : 4 byte integer.</span>
--   <span id="a736">`boolean` : regular boolean value.</span>
--   <span id="1ff4">`SELECT Query` : Query used to get results back from a table.</span>
+-   <span id="e3ef">`varchar(n)` : variable length char, n represents the limit.</span>
+-   <span id="3af6">`numeric(p, s)` : floating point number, with _p_ digits and _s_ number of places after the decimal point.</span>
+-   <span id="2eff">`int` : 4 byte integer.</span>
+-   <span id="a736">`boolean` : regular boolean value.</span>
+-   <span id="1ff4">`SELECT Query` : Query used to get results back from a table.</span>
 -   <span id="d1a2">Syntax `SELECT [columns] FROM [table]`.</span>
 -   <span id="d9bb">You can use `SELECT *` to get all rows back in a given table.</span>
 -   <span id="96d6">To select multiple columns you could use:</span>
@@ -159,7 +159,7 @@ What is a Query?
 -   <span id="810d">DEFAULT can be used in lieu of our SERIAL pseudo type.</span>
 -   <span id="94af">You can do multiple insert by first specifying the column names and the adding in the data wrapped in parenthesis seperated by a comma.</span>
 
-### Using INNER JOIN
+### Using INNER JOIN
 
 -   <span id="8c61">Relationships are key in RD’s.</span>
 -   <span id="b080">We create table associations through _foreign keys_ and _primary keys_.</span>
@@ -171,7 +171,7 @@ What is a Query?
 
 ---
 
-### Using Seed Files
+### Using Seed Files
 
 **Writing And Running A Seed File In PSQL**
 
@@ -179,7 +179,7 @@ What is a Query?
 
 **Creating a seed file**
 
--   <span id="b5dd">Start by making a seed file in your IDE with `.sql` file type.</span>
+-   <span id="b5dd">Start by making a seed file in your IDE with `.sql` file type.</span>
 
 <!-- -->
 
@@ -199,25 +199,25 @@ What is a Query?
 
 **Populating a database via &lt; (“left caret”)**
 
--   <span id="0880">Syntax :  
+-   <span id="0880">Syntax :  
     `psql -d [database] < [path_to_file/file.sql]`  
     `psql -d bakery < path_to_my_file/seed-data.sql`</span>
 
 **Populating the database via | (“pipe”)**
 
--   <span id="e1ff">Syntax :  
+-   <span id="e1ff">Syntax :  
     `cat [path_to_file/file.sql] | psql -d [database]`  
     `cat path_to_my_file/seed-data.sql | psql -d postgres`</span>
 
-### Relational Database Design
+### Relational Database Design
 
-### Creating a Schema For Relational Database Design
+### Creating a Schema For Relational Database Design
 
 -   <span id="ab7f">Schemas allow us to easily visualize database tables and their relationships to one another.</span>
 
 **What is Relational Database Design?**
 
--   <span id="c8bd">**RDD** : Relational Database Design differs from other Databases because data is organized into tables and all types of data access are carried out via controlled transactions.</span>
+-   <span id="c8bd">**RDD** : Relational Database Design differs from other Databases because data is organized into tables and all types of data access are carried out via controlled transactions.</span>
 -   <span id="088e">Remember: Tables = Entities, Rows = Records, Columns = Fields.</span>
 
 **Stages of Relational Database Design**
@@ -252,7 +252,7 @@ What is a Query?
 
 1.  <span id="f73a">`Apply Normalization Rules.`</span>
 
--   <span id="16ec">`Normalization` : Process of optimizing the database structure so that redundancy and confusion are eliminated.</span>
+-   <span id="16ec">`Normalization` : Process of optimizing the database structure so that redundancy and confusion are eliminated.</span>
 -   <span id="6e1e">Rules are called 'normal forms’</span>
 
 1.  <span id="950c">First normal form.</span>
@@ -280,7 +280,7 @@ What is a Query?
 ### Transactions
 
 -   <span id="d642">Using Transactions allow us to make changes to a SQL database in a consistent and durable way, and it is considered best practice to use them regularly.</span>
--   <span id="bf44">`Transaction` : Single unit of work, which can contain multiple operations, performed on a database.</span>
+-   <span id="bf44">`Transaction` : Single unit of work, which can contain multiple operations, performed on a database.</span>
 -   <span id="708d">Bundles multiple steps into a single, all-or-nothing operation.</span>
 
 **Implicit vs. explicit transactions**
@@ -297,7 +297,7 @@ What is a Query?
 
 **PostgreSQL transactional commands**
 
--   <span id="7400">`BEGIN` : Initiates a transaction block. All Statements after a BEGIN command will be executed in a single transaction until COMMIT or ROLLBACK is called.</span>
+-   <span id="7400">`BEGIN` : Initiates a transaction block. All Statements after a BEGIN command will be executed in a single transaction until COMMIT or ROLLBACK is called.</span>
 
 <!-- -->
 
@@ -305,7 +305,7 @@ What is a Query?
       INSERT INTO hobbits(name,purpose)
         VALUES('Frodo','Destroy the One Ring of power.');
 
--   <span id="ae31">`COMMIT` : Commits a current transaction, all changes made by this transaction become visible to others and are guaranteed to be durable if a crash occurs.</span>
+-   <span id="ae31">`COMMIT` : Commits a current transaction, all changes made by this transaction become visible to others and are guaranteed to be durable if a crash occurs.</span>
 
 <!-- -->
 
@@ -314,7 +314,7 @@ What is a Query?
         VALUES('Frodo','Destroy the One Ring of power.');
     COMMIT;
 
--   <span id="a20c">`ROLLBACK` : Rolls back current transaction and removes all updates made by the transaction.</span>
+-   <span id="a20c">`ROLLBACK` : Rolls back current transaction and removes all updates made by the transaction.</span>
 
 <!-- -->
 
@@ -323,7 +323,7 @@ What is a Query?
         VALUES('Frodo','Destroy the One Ring of power.');
     ROLLBACK;
 
--   <span id="0aa4">`SAVEPOINT` : Establishes a new save point within the current transaction.</span>
+-   <span id="0aa4">`SAVEPOINT` : Establishes a new save point within the current transaction.</span>
 
 <!-- -->
 
@@ -338,7 +338,7 @@ What is a Query?
       ROLLBACK TO first_savepoint;
     COMMIT;
 
--   <span id="5b46">`SET TRANSACTION` : Sets the characteristics of the current transaction.</span>
+-   <span id="5b46">`SET TRANSACTION` : Sets the characteristics of the current transaction.</span>
 
 <!-- -->
 
@@ -356,14 +356,14 @@ What is a Query?
 **Transaction properties: ACID**
 
 -   <span id="1cd4">A SQL transaction has four properties known collectively as `ACID` (Atomic, Consistent, Isolated, and Durable)</span>
--   <span id="7c59">`Atomicity` : All changes to data are performed as if they are a single operation.</span>
+-   <span id="7c59">`Atomicity` : All changes to data are performed as if they are a single operation.</span>
 -   <span id="1e1b">You can also refer to the A as 'Abortability’</span>
 -   <span id="34fa">I.E. if an app transfers funds from one account to another, the atomic nature of transactions will ensure that if a debt is successfully made, the credit will be properly transferred.</span>
--   <span id="1be1">`Consistency` : Data is in a consistent start when a transaction starts and ends.</span>
+-   <span id="1be1">`Consistency` : Data is in a consistent start when a transaction starts and ends.</span>
 -   <span id="0ffb">I.E. if a transfer is scheduled, this prop ensures total value of funds in both accounts is the same at the start and end of a transaction.</span>
--   <span id="bc89">`Isolation` : Intermediate state of a transaction is invisible to othe rtransactioned, they appear to be serialized.</span>
+-   <span id="bc89">`Isolation` : Intermediate state of a transaction is invisible to othe rtransactioned, they appear to be serialized.</span>
 -   <span id="ce2d">I.E. continuing our money transfer example, when a transfer occurs this prop ensures that transactions can see funds in one account or the other BUT NOT both NOR neither.</span>
--   <span id="8fcd">`Durable` : After a transaction successfully completes, changes to data persists and are not undone even in system failure.</span>
+-   <span id="8fcd">`Durable` : After a transaction successfully completes, changes to data persists and are not undone even in system failure.</span>
 -   <span id="cb8d">I.E. this prop ensures our transaction will success and cannot be reversed in the event of a failure.</span>
 
 **Banking transaction example**
@@ -381,7 +381,7 @@ What is a Query?
 
 ---
 
-### Subqueries and JOINs
+### Subqueries and JOINs
 
 **Joins vs. Subqueries**  
 **What is a JOIN?**
@@ -394,11 +394,11 @@ What is a Query?
     INNER JOIN breeds ON (puppies.breed_id = breeds.id);
 
 -   <span id="c49e">There are a few different types of JOIN operations:</span>
--   <span id="405d">`Inner Join` : Returns results containing rows in the left table that match rows in the right table.</span>
--   <span id="10a2">`Left Join` : Returns a set of results containing all rows from the left table with the matching rows from the right table. If there is no match, the right side will have null values.</span>
--   <span id="6b72">`Right Join` : Returns a set of results containing all rows from the right table with the matching rows from the left table. If there is no match, the left side will have null values.</span>
--   <span id="30f3">`Full Outer Join` : Returns a set of results containing all rows from both the left and right tables, with matching rows from both sides where avail. If there is no match the missing side contains null values.</span>
--   <span id="cb22">`Self-Join` : Query in which a table is joined to itslef, useful for comparing values in a column of rows within the same table.</span>
+-   <span id="405d">`Inner Join` : Returns results containing rows in the left table that match rows in the right table.</span>
+-   <span id="10a2">`Left Join` : Returns a set of results containing all rows from the left table with the matching rows from the right table. If there is no match, the right side will have null values.</span>
+-   <span id="6b72">`Right Join` : Returns a set of results containing all rows from the right table with the matching rows from the left table. If there is no match, the left side will have null values.</span>
+-   <span id="30f3">`Full Outer Join` : Returns a set of results containing all rows from both the left and right tables, with matching rows from both sides where avail. If there is no match the missing side contains null values.</span>
+-   <span id="cb22">`Self-Join` : Query in which a table is joined to itslef, useful for comparing values in a column of rows within the same table.</span>
 
 **What is a subquery?**
 
@@ -469,7 +469,7 @@ What is a Query?
 
 ### Indexes and Performance Analysis
 
--   <span id="fc7a">`PostgreSQL Index` : Works similarly like an index in the back of a book, they provide special lookup tables to let us make faster database queries.</span>
+-   <span id="fc7a">`PostgreSQL Index` : Works similarly like an index in the back of a book, they provide special lookup tables to let us make faster database queries.</span>
 -   <span id="cb65">The Syntax for creating index is as follows:</span>
 
 <!-- -->
@@ -519,7 +519,7 @@ There are several types of indexes use in Postgres: B-tree, Hash, GiST, and GIN.
 
 ---
 
-### Accessing Data from Node.js
+### Accessing Data from Node.js
 
 **Node-Postgres And Prepared Statements**
 

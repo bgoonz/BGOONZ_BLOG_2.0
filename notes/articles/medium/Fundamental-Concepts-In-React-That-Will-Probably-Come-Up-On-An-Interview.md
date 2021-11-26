@@ -25,9 +25,9 @@ Incomplete Article
 
 ### **Describe how JSX transforms into React.createElement calls:**
 
-#### ↠JSX is a special format to let you construct virtual DOM nodes using familiar HTML-like syntax. You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" class="markup--anchor markup--h4-anchor">Babel</a> in order for the browser to understand it.
+#### ↠JSX is a special format to let you construct virtual DOM nodes using familiar HTML-like syntax. You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" class="markup--anchor markup--h4-anchor">Babel</a> in order for the browser to understand it.
 
-#### ↠ReactDOM.render is a simple function which accepts 2 arguments: what to render and where to render it:
+#### ↠ReactDOM.render is a simple function which accepts 2 arguments: what to render and where to render it:
 
 ---
 
@@ -35,11 +35,11 @@ Incomplete Article
 
 > ↠JSX is a special format to let you construct virtual DOM nodes using familiar HTML-like syntax.
 
-> ↠You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" class="markup--anchor markup--blockquote-anchor">Babel</a> in order for the browser to understand it.
+> ↠You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like <a href="https://babeljs.io/" class="markup--anchor markup--blockquote-anchor">Babel</a> in order for the browser to understand it.
 
 ---
 
-> **_Here we initialize a Clock component using JSX instead of React.createElement ._**
+> **_Here we initialize a Clock component using JSX instead of React.createElement ._**
 
 > Using <a href="https://babeljs.io/" class="markup--anchor markup--pullquote-anchor">Babel</a> this code is compiled to a series of recursively nested createElement calls:
 

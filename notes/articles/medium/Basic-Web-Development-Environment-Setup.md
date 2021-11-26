@@ -14,7 +14,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 
 
-#### Windows Subsystem for Linux (WSL) and Ubuntu
+#### Windows Subsystem for Linux (WSL) and Ubuntu
 
 
 
@@ -122,7 +122,7 @@ Test if you have Node.js installed by opening an Ubuntu terminal and typing `nod
 
 3.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
 
-4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
+4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
 
 5.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
 
@@ -162,7 +162,7 @@ Ubuntu does not come with Python 3. Install it using the command `sudo apt insta
 
 
 
-### Note about WSL
+### Note about WSL
 
 
 
@@ -258,7 +258,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 
 

@@ -113,7 +113,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="4f59">Moxie Marlinspike — <a href="https://moxie.org/blog/career-advice/" class="markup--anchor markup--li-anchor">Career Advice</a></span>
 -   <span id="b428">Dan Luu — <a href="http://danluu.com/programmer-moneyball/" class="markup--anchor markup--li-anchor">We Only Hire the Trendiest</a></span>
 -   <span id="57b3">Reginald Long — <a href="http://reginaldlong.com/how-i-went-from-failing-every-interview-to-a-job-at-amazon/" class="markup--anchor markup--li-anchor">How I went from failing every interview to a job at Amazon</a></span>
--   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk’ : My Amazon interview experience</a></span>
+-   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk’ : My Amazon interview experience</a></span>
 -   <span id="c878">Key Values — <a href="https://www.keyvalues.io/" class="markup--anchor markup--li-anchor">A website which helps to find the best team due to your values</a></span>
 -   <span id="5455">Laurie Voss — <a href="http://seldo.com/weblog/2014/08/26/you_suck_at_technical_interviews" class="markup--anchor markup--li-anchor">You suck at technical interviews</a></span>
 -   <span id="e331"><a href="http://www.gwan.com/blog/20160405.html" class="markup--anchor markup--li-anchor">Google’s “Director of Engineering” Hiring Test</a></span>
@@ -213,7 +213,7 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ---
 
-### If that wasn’t enough … try this on for size:
+### If that wasn’t enough … try this on for size:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 4, 2021](https://medium.com/p/88fce9876261).
 

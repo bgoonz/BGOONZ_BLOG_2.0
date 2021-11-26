@@ -4,7 +4,7 @@ Guess the author of the following quotes:
 
 ---
 
-### Data Structures & Algorithms Resource List Part 1
+### Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
 
@@ -16,7 +16,7 @@ Guess the author of the following quotes:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F" class="graf-image" /></figure>### Update:
 
-#### Here’s some more:
+#### Here’s some more:
 
 -   <span id="56aa"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md" class="markup--anchor markup--li-anchor">The Framework for Learning Algorithms and intense problem solving exercises</a></span>
 -   <span id="805e"><a href="https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md" class="markup--anchor markup--li-anchor">Algs4: Recommended book for Learning Algorithms and Data Structures</a></span>

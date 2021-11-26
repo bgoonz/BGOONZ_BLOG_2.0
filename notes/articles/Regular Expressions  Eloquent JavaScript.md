@@ -3,9 +3,9 @@
 > Some people, when confronted with a problem, think 'I know, I’ll use regular expressions.’ Now they have two problems.
 
 <<<<<<< HEAD
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
 =======
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
@@ -950,11 +950,11 @@ console.log(\`Incorrectly accepted '${str}'\`);
 [](#p_WHNmLsGl4C)Finally, to make the _e_ case insensitive, either add an `i` option to the regular expression or use `[eE]`.
 
 <<<<<<< HEAD
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
 
 # [Source](https://eloquentjavascript.net/09_regexp.html)
 
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
 
 [Source](https://eloquentjavascript.net/09_regexp.html)
 

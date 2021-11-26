@@ -4,9 +4,9 @@ Update:
 
 ---
 
-### Web Development Resource List \#4
+### Web Development Resource List \#4
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*e5MWoml8XX3_isM0.gif" alt="Take a look at the big picture:" class="graf-image" /><figcaption>Take a look at the big picture:</figcaption></figure>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*e5MWoml8XX3_isM0.gif" alt="Take a look at the big picture:" class="graf-image" /><figcaption>Take a look at the big picture:</figcaption></figure>
 
 ---
 
@@ -107,7 +107,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### How to Learn
+### How to Learn
 
 -   <span id="4d7c">How to Learn.</span>
 -   <span id="953d">Coursera Course (Not CS Specific) — <a href="https://www.coursera.org/learn/learning-how-to-learn" class="markup--anchor markup--li-anchor">Learning how to learn</a></span>
@@ -116,7 +116,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### What is the Single most useful CS Bookmark you have?
+### What is the Single most useful CS Bookmark you have?
 
 -   <span id="21c3">What is the single most useful CS Bookmark you have? <a href="https://www.reddit.com/r/cscareerquestions/comments/5bsg82/whats_the_single_most_useful_csrelated_link_you/" class="markup--anchor markup--li-anchor">Reddit Link to discussion</a></span>
 -   <span id="e48c"><a href="https://learnxinyminutes.com/" class="markup--anchor markup--li-anchor">Learn X in Y Minutes</a></span>
@@ -130,7 +130,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### Programs and Classes
+### Programs and Classes
 
 #### Bootcamps
 
@@ -235,7 +235,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### Learn React JS
+### Learn React JS
 
 -   <span id="b1bd">Official React <a href="https://facebook.github.io/react/docs/hello-world.html" class="markup--anchor markup--li-anchor">Docs</a></span>
 -   <span id="1b76">Official React <a href="https://facebook.github.io/react/tutorial/tutorial.html" class="markup--anchor markup--li-anchor">Tutorial</a></span>
@@ -290,7 +290,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### Learn Node JS
+### Learn Node JS
 
 -   <span id="2268">Official Node.js <a href="https://nodejs.org/en/docs/" class="markup--anchor markup--li-anchor">Docs</a></span>
 -   <span id="b7cb"><a href="https://codeburst.io/25-node-js-tutorials-1db3b1da0260" class="markup--anchor markup--li-anchor">25 Node JS Tutorials</a> — Learn Node JS by exploring these 25 free tutorials.</span>
@@ -434,7 +434,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### Software Developer Success Stories
+### Software Developer Success Stories
 
 -   <span id="0cc5">Success Stories</span>
 -   <span id="1f38"><a href="https://www.reddit.com/r/IAmA/comments/5pouv4/18_months_ago_i_didnt_know_how_to_code_im_now_a/" class="markup--anchor markup--li-anchor">18 months ago I didn’t know how to code, I’m now a self-taught programmer who’s made apps for the NBA, NHL, and schools like Purdue, Notre Dame, Alabama and Clemson. I’m now releasing my software under the MIT license for anyone’s use — AMA!</a></span>
@@ -445,7 +445,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ---
 
-### Get The Job
+### Get The Job
 
 Resume, Portfolio, LinkedIn, Interview Prep, and Salary Information
 
@@ -454,13 +454,13 @@ Resume, Portfolio, LinkedIn, Interview Prep, and Salary Information
 -   <span id="ff95"><a href="https://github.com/bmorelli25/portfolio-template" class="markup--anchor markup--li-anchor">Customizable Web Developer Portfolio</a> — Built with Flexbox.</span>
 -   <span id="24f3"><a href="https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154" class="markup--anchor markup--li-anchor">10 Awesome Web Developer Portfolios</a></span>
 
-#### How to Apply
+#### How to Apply
 
 -   <span id="841d"><a href="https://medium.freecodecamp.com/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331#.lpuzt5pnw" class="markup--anchor markup--li-anchor">I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned. (Medium)</a></span>
 -   <span id="070c"><a href="https://medium.freecodecamp.com/lessons-from-my-post-bootcamp-job-search-in-london-cb37ea12ec2f#.u83avhawf" class="markup--anchor markup--li-anchor">Lessons from my Post-bootcamp Job search (Medium)</a></span>
 -   <span id="67e2"><a href="https://medium.freecodecamp.com/how-you-can-land-a-6-figure-job-in-tech-with-no-connections-6eed0de26ea4#.9cc270q7j" class="markup--anchor markup--li-anchor">How to land a six figure job in tech with no connections (Medium)</a></span>
 
-#### Resume & LinkedIn
+#### Resume & LinkedIn
 
 -   <span id="afaf"><a href="https://www.reddit.com/r/cscareerquestions/comments/5gnmkj/what_are_some_of_the_best_resu%D0%BCe_formats_youve/" class="markup--anchor markup--li-anchor">What are some of the best resuмe formats you’ve seen?</a></span>
 -   <span id="8609"><a href="https://www.reddit.com/r/cscareerquestions/comments/5f5e3f/what_are_some_model_examples_for_fullstack/" class="markup--anchor markup--li-anchor">Model examples for Fullstack Developer LinkedIn profiles</a></span>

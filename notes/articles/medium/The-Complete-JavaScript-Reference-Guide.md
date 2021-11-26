@@ -32,7 +32,7 @@ You will want to bookmark this
 
 ---
 
-### Getting visual feedback in your programs
+### Getting visual feedback in your programs
 
 The first command we’ll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
 
@@ -90,13 +90,13 @@ Operators are the symbols that perform particular operations.
 
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
--   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
+-   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
 -   <span id="9c25">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
-**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
--   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
-     console.log(7 % 10) // =&gt; 7;</span>
+-   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
+     console.log(7 % 10) // =&gt; 7;</span>
 
 **The String Data Type**
 
@@ -104,40 +104,40 @@ The **string** data type is a primitive data type that used to represent textual
 
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     “That’s a great string”; (valid)
+     “That’s a great string”; (valid)
       
-     'Shakespeare wrote, “To be or not to be”’; (valid)
+     'Shakespeare wrote, “To be or not to be”’; (valid)
       
-     'That’s a bad string’; (invalid)</span>
+     'That’s a bad string’; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
-     \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
--   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
+     \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
+-   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 -   <span id="f633">empty strings have a length of zero.</span>
--   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-     console.log(“bootcamp”\[0\]); // =&gt; “b”  
-     console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
-     console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
-     console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
+-   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
+     console.log(“bootcamp”\[0\]); // =&gt; “b”  
+     console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
+     console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
+     console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
 -   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
 -   <span id="e2f5">The index of the last character of a string is always one less than it’s length.</span>
--   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
-     console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
-     console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
+-   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
+     console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
+     console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
 -   <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
 -   <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
--   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
+-   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
 
 **The Boolean Data Type**
 
 The **Boolean** data type is the simplest data type since there are only two values: **true** and **false**.
 
 -   <span id="60da">**Logical Operators** (B*oolean Operators*) are used to establish logic in our code.</span>
--   <span id="139b">**!** (not) : reverses a Boolean value.  
-     console.log(!true); // =&gt; false  
-     console.log(!!false); // =&gt; false</span>
--   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
-     console.log(true || !false) // =&gt; stops after it sees “true ||”</span>
+-   <span id="139b">**!** (not) : reverses a Boolean value.  
+     console.log(!true); // =&gt; false  
+     console.log(!!false); // =&gt; false</span>
+-   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
+-   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+     console.log(true || !false) // =&gt; stops after it sees “true ||”</span>
 
 **Comparison Operators**
 
@@ -170,36 +170,36 @@ Loose Equality, will return true even if the values are of a different type, due
 
 Variables are used to store information to be referenced and manipulated in a program.
 
--   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
-     let bootcamp = “App Academy”;  
-     console.log(bootcamp); // “App Academy”</span>
+-   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
+     let bootcamp = “App Academy”;  
+     console.log(bootcamp); // “App Academy”</span>
 -   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
--   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
-     let bootcamp;  
-     console.log(bootcamp); // undefined</span>
+-   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
+     let bootcamp;  
+     console.log(bootcamp); // undefined</span>
 -   <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
 -   <span id="47ca">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope</span>
 
 **Assignment Shorthand**
 
 let num = 0;  
- num += 10; // same as num = num + 10  
- num -= 2; // same as num = num — 2  
- num /= 4; // same as num = num / 4  
- num \*= 7; // same as num = num \* 7
+ num += 10; // same as num = num + 10  
+ num -= 2; // same as num = num — 2  
+ num /= 4; // same as num = num / 4  
+ num \*= 7; // same as num = num \* 7
 
--   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
+-   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
 
 **Functions**
 
 A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms’)
 
--   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
+-   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="676f">Includes three things:</span>
 -   <span id="80c2">Name of the function.</span>
 -   <span id="f3a4">A list of _parameters_ ()</span>
 -   <span id="2b0e">The code to execute {}</span>
--   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
+-   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="8374">JS evaluates code top down, left to right.</span>
 -   <span id="2687">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
 -   <span id="0c3a">Every function in JS returns undefined unless otherwise specified.</span>
@@ -210,8 +210,8 @@ Greate code reads like English and almost explains itself. Think: Elegant, reada
 
 **Parameters and Arguments**
 
--   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
--   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
+-   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
+-   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
 -   <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
 -   <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
@@ -228,7 +228,7 @@ In JavaScript you have two different options:
 
 Variables are stand-in values that you can use to perform operations. You should be familiar with them from math class.
 
-### var, const, let
+### var, const, let
 
 You have three different possibilities for declaring a variable in JavaScript, each with their own specialties:
 
@@ -266,7 +266,7 @@ nationality:”German”
 
 };
 
-### The Next Level: Arrays
+### The Next Level: Arrays
 
 Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
 
@@ -509,7 +509,7 @@ Regular expressions are search patterns used to match character combinations in 
 -   <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
 -   <span id="6ffa">`?!n` — String that is not followed by a specific string ni</span>
 
-### Numbers and Math
+### Numbers and Math
 
 In JavaScript, you can also work with numbers, constants and perform mathematical functions.
 
@@ -571,7 +571,7 @@ You can also work with and modify dates and time with JavaScript. This is the ne
 -   <span id="42f8">`Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.</span>
 -   <span id="4e80">`Date("2017-06-23")` — Date declaration as a string</span>
 
-### Pulling Date and Time Values
+### Pulling Date and Time Values
 
 -   <span id="465e">`getDate()` — Get the day of the month as a number (1-31)</span>
 -   <span id="1b08">`getDay()` — The weekday as a number (0-6)</span>
@@ -585,7 +585,7 @@ You can also work with and modify dates and time with JavaScript. This is the ne
 -   <span id="7c14">`getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
 -   <span id="d6b6">`parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970</span>
 
-### Set Part of a Date
+### Set Part of a Date
 
 -   <span id="9a97">`setDate()` — Set the day as a number (1-31)</span>
 -   <span id="d4f0">`setFullYear()` — Sets the year (optionally month and day)</span>
@@ -654,7 +654,7 @@ The DOM is the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" cla
 -   <span id="2322">`setAttributeNode()` — Sets or changes the specified attribute node</span>
 -   <span id="0540">`setAttributeNodeNS()` — Adds a new namespaced attribute node to an element</span>
 
-### Working with the User Browser
+### Working with the User Browser
 
 Besides HTML elements, JavaScript is also able to take into account the user browser and incorporate its properties into the code.
 
@@ -838,7 +838,7 @@ When working with JavaScript, different errors can occur. There are several ways
 -   <span id="6a5b">`throw` — Create custom error messages instead of the standard JavaScript errors</span>
 -   <span id="6aea">`finally` — Lets you execute code, after try and catch, regardless of the result</span>
 
-### Error Name Values
+### Error Name Values
 
 JavaScript also has a built-in error object. It has two properties:
 
@@ -1102,13 +1102,13 @@ sin=Math.sin, cos=Math.cos, tan=Math.tan
 
 ### Expressions and Operators
 
-In JavaScript, the values `null `and `undefined `are the only two values that do not have properties. In a regular property access expression using . or \[\], you get a `TypeError` if the expression on the left evaluates to `null `or `undefined`. You can use `?.` and `?.[]` syntax to guard against errors of this type.
+In JavaScript, the values `null `and `undefined `are the only two values that do not have properties. In a regular property access expression using . or \[\], you get a `TypeError` if the expression on the left evaluates to `null `or `undefined`. You can use `?.` and `?.[]` syntax to guard against errors of this type.
 
-You can also invoke a function using `?.()` instead of `()`.
+You can also invoke a function using `?.()` instead of `()`.
 
-With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
+With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
 
-Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
+Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
 
     function square(x, log) {
 
@@ -1136,11 +1136,11 @@ Because of security issues, some web servers use the HTTP “Content-Security-Po
 
 ### First-Defined (??)
 
-The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
+The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
 
 `a ?? b` is equivalent to `(a !== null && a !== undefined) ? a : b`
 
-`??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy `values that may be perfectly valid in some circumstances. In this code example, if `maxWidth `is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
+`??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy `values that may be perfectly valid in some circumstances. In this code example, if `maxWidth `is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
 
 `let max = maxWidth || preferences.maxWidth || 500;`
 
@@ -1296,7 +1296,7 @@ The differences between strict mode and non-strict mode are the following:
 
 · In strict mode, functions invoked as functions (rather than as methods) have a `this `value of undefined. (In non-strict mode, functions invoked as functions are always passed the global object as their `this `value.)
 
-· A function is invoked with `call() `or `apply()` , the `this `value is exactly the value passed as the first argument to `call()` or `apply()`. (In non-strict mode, `null `and `undefined `values are replaced with the global object and non-object values are converted to objects.)
+· A function is invoked with `call() `or `apply()` , the `this `value is exactly the value passed as the first argument to `call()` or `apply()`. (In non-strict mode, `null `and `undefined `values are replaced with the global object and non-object values are converted to objects.)
 
 · In strict mode, assignments to non-writable properties and attempts to create new properties on non-extensible objects throw a `TypeError`. (In non-strict mode, these attempts fail silently.)
 
@@ -1365,9 +1365,9 @@ Literal
 `new`
 
 `let o = new Object(); `  
- `let a = new Array(); `  
- `let d = new Date(); `  
- `let r = new Map();`
+ `let a = new Array(); `  
+ `let d = new Date(); `  
+ `let r = new Map();`
 
 `Object.create`
 
@@ -1381,7 +1381,7 @@ Use `Object.create` to guard against accidental modifications:
 
 Note: the library function can modify the passed in object, but not the original `o` object
 
-### Access Object Properties with an array (\[\]) notation
+### Access Object Properties with an array (\[\]) notation
 
     let addr = "";
 
@@ -1449,9 +1449,9 @@ true
 
 To check whether an object has a property with a given name. You can do this with the `in` operator, with the `hasOwnProperty()` and `propertyIsEnumerable()` methods, or simply by querying the property
 
-( `!= undefined`).
+( `!= undefined`).
 
-### in & query
+### in & query
 
 `let o = { x: 1 };`
 
@@ -1579,7 +1579,7 @@ p == {x: 1, y: {z: \[false,null, “”\]}}
 
 s == “\[object Object\]”
 
-### Extended Object Literal Syntax
+### Extended Object Literal Syntax
 
 ### Shorthand Properties
 
@@ -1596,12 +1596,12 @@ s == “\[object Object\]”
 ←&gt;
 
 `let x = 1, y = 2;`  
- `let o = { x, y };`
+ `let o = { x, y };`
 
-### Computer Property Names
+### Computer Property Names
 
 `const PROPERTY_NAME = "p1";`  
- `function computePropertyName() { return "p" + 2; }`
+ `function computePropertyName() { return "p" + 2; }`
 
     let o = {};
 
@@ -1619,7 +1619,7 @@ s == “\[object Object\]”
 
     };
 
-### Symbols as Property Names
+### Symbols as Property Names
 
     const extension = Symbol("my extension symbol");
 
@@ -1637,12 +1637,12 @@ The point of Symbols is not security, but to define a safe extension mechanism f
 
 ### Spread Operator
 
-You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
+You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
 
 `let position = { x: 0, y: 0 };`  
- `let dimensions = { width: 100, height: 75 };`  
- `let rect = { ...position, ...dimensions };`  
- `rect.x + rect.y + rect.width + rect.height`
+ `let dimensions = { width: 100, height: 75 };`  
+ `let rect = { ...position, ...dimensions };`  
+ `rect.x + rect.y + rect.width + rect.height`
 
 ### Shorthand Methods
 
@@ -1696,7 +1696,7 @@ When you write a method using this shorthand syntax, the property name can take 
 
 4
 
-### Property Getters and Setters
+### Property Getters and Setters
 
     let o = {
 
@@ -1714,7 +1714,7 @@ When you write a method using this shorthand syntax, the property name can take 
 
 · Array literals
 
-· The … spread operator on an iterable object
+· The … spread operator on an iterable object
 
 · The `Array()` constructor
 
@@ -1738,7 +1738,7 @@ If an array literal contains multiple commas in a row, with no value between, th
 
 Array literal syntax allows an optional trailing comma, so `[,,]` has a length of 2, not 3.
 
-### The Spread Operator
+### The Spread Operator
 
 `let a = [1, 2, 3];`
 
@@ -1749,7 +1749,7 @@ Array literal syntax allows an optional trailing comma, so `[,,]` has a length o
 create a copy of an array — modifying the copy does not change the original
 
 `let original = [1,2,3];`  
- `let copy = [...original];`
+ `let copy = [...original];`
 
 `let digits = [..."0123456789ABCDEF"];`
 
@@ -1791,9 +1791,9 @@ It is also a simple way to make a copy of an array:
 
 `Array.from()` also accepts an optional second argument. If you pass a function as the second argument, then as the new array is being built, each element from the source object will be passed to the function you specify, and the return value of the function will be stored in the array instead of the original value.
 
-### Reading and Writing Array Elements
+### Reading and Writing Array Elements
 
-What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
+What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
 
 JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.
 
@@ -1847,7 +1847,7 @@ Length is 5, but no elements, like `new Array(5)`
 
 You can also set the length property of an array to a value larger than its current value. Doing this does not actually add any new elements to the array; it simply creates a sparse area at the end of the array.
 
-### Adding and Deleting Array Elements
+### Adding and Deleting Array Elements
 
 `let a = [];`
 
@@ -1953,7 +1953,7 @@ You can also loop through the elements of an array with a `for` loop.
 
 ### Array Methods
 
-### Array Iterator Methods
+### Array Iterator Methods
 
 First, all of these methods accept a function as their first argument and invoke that function once for each element (or some elements) of the array. If the array is sparse, the function you pass is not invoked for nonexistent elements. In most cases, the function you supply is invoked with three arguments: the value of the array element, the index of the array element, and the array itself.
 
@@ -1976,15 +1976,15 @@ FOREACH()
 MAP()
 
 `let a = [1, 2, 3];`  
- `a.map(x => x*x)`
+ `a.map(x => x*x)`
 
 \[1, 4, 9\]
 
 FILTER()
 
 `let a = [5, 4, 3, 2, 1];`  
- `a.filter(x => x < 3) `  
- `a.filter((x,i) => i % 2 === 0)`
+ `a.filter(x => x < 3) `  
+ `a.filter((x,i) => i % 2 === 0)`
 
 \[2, 1\];
 
@@ -2089,13 +2089,13 @@ When you invoke `reduce()` with no initial value, it uses the first element of t
 \[1, 2, 3, 4\]
 
 `let phrases = ["hello world", "the definitive guide"];`  
- `let words = phrases.flatMap(phrase => phrase.split(" "));`
+ `let words = phrases.flatMap(phrase => phrase.split(" "));`
 
 \[“hello”, “world”, “the”, “definitive”, “guide”\];
 
 Calling `a.flatMap(f)` is the same as (but more efficient than) `a.map(f).flat()`:
 
-### Adding arrays with concat()
+### Adding arrays with concat()
 
 `let a = [1,2,3];`
 
@@ -2219,10 +2219,10 @@ Unlike `concat(), splice()` inserts arrays themselves, not the elements of those
 
 `copyWithin()` copies a slice of an array to a new position within the array. It modifies the array in place and returns the modified array, but it will not change the length of the array.
 
-### Array Searching and Sorting Methods
+### Array Searching and Sorting Methods
 
 INDEXOF()  
- LASTINDEXOF()
+ LASTINDEXOF()
 
 `let a = [0,1,2,1,0];`
 
@@ -2273,7 +2273,7 @@ Case-insensitive sort
 REVERSE()
 
 `let a = [1,2,3];`  
- `a.reverse();`
+ `a.reverse();`
 
 \[3,2,1\]
 
@@ -2383,7 +2383,7 @@ Since array-like objects do not inherit from `Array.prototype`, you cannot invok
 
 \[“a”,”b”,”c”\]
 
-### Strings as Arrays
+### Strings as Arrays
 
 `let s = "test";`
 
@@ -2499,7 +2499,7 @@ JavaScript functions are objects, and like all JavaScript objects, they have met
 
 ### Function Arguments and Parameters
 
-### Optional Parameters and Defaults
+### Optional Parameters and Defaults
 
 When a function is invoked with fewer arguments than declared parameters, the additional parameters are set to their default value, which is normally `undefined`.
 
@@ -2525,7 +2525,7 @@ One interesting case is that, for functions with multiple parameters, you can us
 
     const rectangle = (width, height = width*2) => ({width, height});
 
-### Rest Parameters and Variable-Length Argument Lists
+### Rest Parameters and Variable-Length Argument Lists
 
 Rest parameters enable us to write functions that can be invoked with arbitrarily more arguments than parameters.
 
@@ -2581,7 +2581,7 @@ Within the body of any function, the identifier `arguments` refers to the Argume
 
 you should avoid using it in any new code you write.
 
-### The Spread Operator for Function Calls
+### The Spread Operator for Function Calls
 
     let numbers = [5, 2, 10, -1, 9, 100, 1];
 
@@ -2703,7 +2703,7 @@ Adding code to check the types of arguments
 
 `TypeError`: element 2 is not a number
 
-### Functions as Values
+### Functions as Values
 
     function square(x) { return x * x; }
 
@@ -2735,7 +2735,7 @@ Functions don’t even require names at all, as when they’re assigned to array
 
 `a[0]` accesses first element of the array, which is "`x => x*x`", `(a[1])` passes parameter, which is 20.
 
-### Examples of using functions as data
+### Examples of using functions as data
 
     function add(x,y) { return x + y; }
 
@@ -3059,11 +3059,11 @@ TypeError: try to set a value ofthe wrong type
 
 Since functions are objects, they can have properties and methods, just like any other object.
 
-### The length Property
+### The length Property
 
 The read-only length property of a function specifies the arity of the function — the number of parameters it declares in its parameter list, which is usually the number of arguments that the function expects.
 
-### The name Property
+### The name Property
 
 This property is primarily useful when writing debugging or error messages.
 
@@ -3071,7 +3071,7 @@ This property is primarily useful when writing debugging or error messages.
 
 When a function is used as a constructor, the newly created object inherits properties from the prototype object.
 
-### The call() and apply() Methods
+### The call() and apply() Methods
 
 `call()` and `apply()` allow you to indirectly invoke a function as if it were a method of some other object. The first argument to both `call()` and `apply()` is the object on which the function is to be invoked; this argument is the invocation context and becomes the value of the `this` keyword within the body of the function.
 
@@ -3109,7 +3109,7 @@ The `trace() `function defined uses the `apply() `method instead of a spread ope
 
     }
 
-### The bind() Method
+### The bind() Method
 
 The primary purpose of `bind()` is to bind a function to an object.
 
@@ -3387,7 +3387,7 @@ Another common technique that you are likely to see in older JavaScript code is 
 
     };
 
-### Classes with the class Keyword
+### Classes with the class Keyword
 
     class Range {
 
@@ -3485,11 +3485,11 @@ The method defined by this code is `Range.parse()`, not `Range.prototype.parse()
 
     let r = Range.parse('(1...10)');
 
-### Getters, Setters, and other Method Forms
+### Getters, Setters, and other Method Forms
 
 Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don’t put a comma after the getter or setter.
 
-### Public, Private, and Static Fields
+### Public, Private, and Static Fields
 
 The ES6 standard only allows the creation of methods (including getters, setters, and generators) and static methods; it does not include syntax for defining fields.
 
@@ -3551,7 +3551,7 @@ A related proposal seeks to standardize the use of the `static` keyword for fiel
 
     }
 
-### Adding Methods to Existing Classes
+### Adding Methods to Existing Classes
 
 We can augment JavaScript classes simply by adding new methods to their prototype objects.
 
@@ -3610,12 +3610,12 @@ We don’t want to inherit `Range.prototype.constructor`, so we define our own c
 `Span` overrides the `toString()` method
 
 `Span.prototype.toString = function() {`  
- `` return `(${this.from}... +${this.to - this.from})`; ``  
- `};`
+ `` return `(${this.from}... +${this.to - this.from})`; ``  
+ `};`
 
 A robust subclassing mechanism needs to allow classes to invoke the methods and constructor of their superclass, but prior to ES6, JavaScript did not have a simple way to do these things.
 
-### Subclasses with extends and super
+### Subclasses with extends and super
 
     class EZArray extends Array {
 
@@ -3719,7 +3719,7 @@ You may not use the `this` keyword in your constructor until after you have invo
 
 Once private fields are supported, we could change these properties to `#keyType` and `#valueType` so that they could not be altered from the outside.
 
-### Class Hierarchies and Abstract Classes
+### Class Hierarchies and Abstract Classes
 
 Define abstract classes — classes that do not include a complete implementation — to serve as a common superclass for a group of related subclasses.
 
@@ -3777,7 +3777,7 @@ writing code like the following to make use of those modules
 
     let average = stats.mean([...s]);
 
-### Modules in ES6
+### Modules in ES6
 
 ES6 adds import and export keywords to JavaScript and finally supports real modularity as a core language feature.
 
@@ -3825,9 +3825,9 @@ With the wildcard import shown in the previous example, the importing module wou
 
 Note: not finished.
 
-### The JavaScript Standard Library
+### The JavaScript Standard Library
 
-### The Set Class
+### The Set Class
 
 Sets are not ordered or indexed, and they do not allow duplicates.
 
@@ -3861,7 +3861,7 @@ The Set class is iterable, which means that you can use a `for/of` loop to enume
 
     }
 
-Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator
+Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator
 
 `[...oneDigitPrimes]`
 
@@ -3873,7 +3873,7 @@ Set class also implements a `forEach()` method
 
     oneDigitPrimes.forEach(n => { product *= n; });
 
-### The Map Class
+### The Map Class
 
     let m = new Map();
 
@@ -3930,7 +3930,7 @@ Iterate over map:
 Map class iterates in insertion order
 
 If you want to iterate just the keys or just the associated values of a map, use the `keys()` and `values()` methods: these return iterable objects that iterate keys and values, in insertion order. (The  
- `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
+ `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
 
     [...m.keys()]
 
@@ -3944,7 +3944,7 @@ Map objects can also be iterated using the `forEach()`
 
 Note that the value parameter comes before the key parameter.
 
-### WeakMap and WeakSet
+### WeakMap and WeakSet
 
 The `WeakMap `class is a variant (but not an actual subclass) of the Map class that does not prevent its key values from being garbage collected.
 
@@ -3954,7 +3954,7 @@ WeakMap implements only the` get(), set(), has(),` and `delete()` methods. In pa
 
 Similarly, WeakMap does not implement the size property because the `size` of a WeakMap could change at any time as objects are garbage collected
 
-### Typed Arrays and Binary Data
+### Typed Arrays and Binary Data
 
 They differ from regular arrays in some very important ways
 
@@ -4016,7 +4016,7 @@ Typed arrays are not true arrays, but they re-implement most array methods, so y
 
 Remember that typed arrays have fixed lengths, so the length property is read-only, and methods that change the length of the array (such as` push(), pop(), unshift(), shift(),` and `splice()`) are not implemented for typed arrays. Methods that alter the contents of an array without changing the length (such as `sort(), reverse()`, and `fill()`) are implemented.
 
-### Determine Endianess and DataView
+### Determine Endianess and DataView
 
     let littleEndian = new Int8Array(new Int32Array([1]).buffer)
 
@@ -4144,11 +4144,11 @@ Match zero or more characters that are not open parens
 
 If you want to match repetitions of more complicated expressions, you’ll need to define a group with parentheses
 
-Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
+Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
 
 ### NON-GREEDY REPETITION
 
-It is also possible to specify that repetition should be done in a non-greedy way. Simply follow the repetition character or characters with a question mark: `??, +?, *?`, or even {1,5}?.
+It is also possible to specify that repetition should be done in a non-greedy way. Simply follow the repetition character or characters with a question mark: `??, +?, *?`, or even {1,5}?.
 
 **String**
 
@@ -4213,7 +4213,7 @@ A related use of parenthesized subexpressions is to allow you to refer back to a
 **Pattern**
 
 zero or more characters within single or double quotes. However, it does not  
- require the opening and closing quotes to match
+ require the opening and closing quotes to match
 
     /['"][^'"]*['"]/
 
@@ -4231,7 +4231,7 @@ match either the subexpression to the left or the subexpression to the right.
 
 (…)
 
-Grouping: group items into a single unit that can be used with \*, +, ?, |, and so on. Also remember the characters that match this group for use with later references
+Grouping: group items into a single unit that can be used with \*, +, ?, |, and so on. Also remember the characters that match this group for use with later references
 
 (?:…)
 
@@ -4241,7 +4241,7 @@ Note` (?:...)` syntax:
 
 In pattern` "/([Jj]ava(?:[Ss]cript)?)\sis\s(fun\w*)/`" `\2` refers to the text matched by `(fun\w*)` since `(?:[Ss]cript)?)` in not remembered.
 
-### SPECIFYING MATCH POSITION
+### SPECIFYING MATCH POSITION
 
 _regular expression anchors_ because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.
 
@@ -4311,7 +4311,7 @@ y
 
 “sticky”. should match at the beginning of a string or at the first character following the previous match
 
-### String Methods for Pattern Matching
+### String Methods for Pattern Matching
 
 ### SEARCH()
 
@@ -4459,14 +4459,14 @@ Surprisingly, if you call `split()` with a RegExp delimiter and the regular expr
 
 \[“Testing”, “br/”,”1,2,3"\]
 
-### The RegExp Class
+### The RegExp Class
 
 The `RegExp()` constructor is useful when a regular expression is being dynamically created and thus cannot be represented with the regular expression literal syntax.
 
     let zipcode = new RegExp("\\d{5}", "g");
 
 `let exactMatch = /JavaScript/;`  
- `let caseInsensitive = new RegExp(exactMatch, "i");`
+ `let caseInsensitive = new RegExp(exactMatch, "i");`
 
 ### TEST()
 
@@ -4488,7 +4488,7 @@ Returns true or false by calling `exec()`.
 
     }
 
-### THE LASTINDEX PROPERTY AND REGEXP REUSE
+### THE LASTINDEX PROPERTY AND REGEXP REUSE
 
 The use of the `lastIndex` property with the g and y flags is a particularly awkward part of this API. When you use these flags, you need to be particularly careful when calling the `match(), exec()`, or `test()` methods because the behavior of these methods depends on `lastIndex`, and the value of `lastIndex` depends on what you have previously done with the RegExp object.
 
@@ -4528,7 +4528,7 @@ On the other hand, sometimes reusing a RegExp object is the wrong thing to do. S
 
 Because we set the g flag on the RegExp, the `lastIndex` property is changed after successful matches, and the `test()` method (which is based on `exec()`) starts searching for a match at the position specified by `lastIndex`. After matching the "pp" in "apple", `lastIndex` is 3, and so we start searching the word "book" at position 3 and do not see the "oo" that it contains.
 
-### Dates and Times
+### Dates and Times
 
     let now = new Date();
 
@@ -4591,9 +4591,9 @@ The static Date.now() method returns the current time as a timestamp and is help
 adds three months and two weeks to the current date:
 
 `let d = new Date();`  
- `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
+ `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
 
-### Formatting and Parsing Date Strings
+### Formatting and Parsing Date Strings
 
     let d = new Date(2020, 0, 1, 17, 10, 30);
 
@@ -4661,7 +4661,7 @@ You should feel free to define your own Error subclasses that best encapsulate t
 
 HTTPError
 
-### JSON Serialization and Parsing
+### JSON Serialization and Parsing
 
 JavaScript supports JSON serialization and deserialization with the two functions `JSON.stringify()` and `JSON.parse().`
 
@@ -4707,7 +4707,7 @@ If you need to re-create Date objects (or modify the parsed object inany other w
 
     });
 
-### The Console API
+### The Console API
 
 Console functions that print their arguments like console.log() have a little-known feature: if the first argument is a string that includes `%s, %i, %d, %f, %o, %O, or %c`, then this first argument is treated as format string, and the values of subsequent arguments are substituted into the string in place of the two-character % sequences.
 
@@ -4876,7 +4876,7 @@ The iterator method of an iterable object does not have a conventional name but 
 When you want to iterate though a “partially used” iterator:
 
 `let list = [1,2,3,4,5];`  
- `let iter = list[Symbol.iterator]();`
+ `let iter = list[Symbol.iterator]();`
 
 `let head = iter.next().value;`
 
@@ -4886,7 +4886,7 @@ head == 1
 
 tail == \[2,3,4,5\]
 
-### Implementing Iterable Objects
+### Implementing Iterable Objects
 
 we will implement the Range class one more time, making it iterable without relying on a generator.
 
@@ -5136,7 +5136,7 @@ generator function that yields Fibonacci numbers
 
     }
 
-If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.
+If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.
 
 Use it in a `for/of` loop, however
 
@@ -5286,7 +5286,7 @@ Unlike many event listeners, though, a Promise represents a single computation, 
 
     getJSON("/api/user/profile").then(displayUserProfile);
 
-### HANDLING ERRORS WITH PROMISES
+### HANDLING ERRORS WITH PROMISES
 
 Asynchronous operations, particularly those that involve networking, can typically fail in a number of ways, and robust code has to be written to handle the errors that will inevitably occur.
 
@@ -5348,7 +5348,7 @@ But although the initial Promise is fulfilled, the body of the response may not 
 
 There is a second `then()` in the chain, which means that the first invocation of the `then()` method must itself return a Promise. That is not how Promises work, however.
 
-When we write a chain of `.then()` invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the `then()` method returns a new Promise object. That new Promise object is not fulfilled until the function passed to `then()` is complete.
+When we write a chain of `.then()` invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the `then()` method returns a new Promise object. That new Promise object is not fulfilled until the function passed to `then()` is complete.
 
     fetch(theURL)       // task 1; returns promise 1
 
@@ -5360,9 +5360,9 @@ When we write a chain of `.then()` invocations, we are not registering multiple
 
 There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”
 
-fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
+fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
 
-“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
+“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
 
 Let’s consider:
 
@@ -5414,17 +5414,17 @@ At this stage, p cannot settle until the Promise v settles. If v is fulfilled, t
 
 the Promise has become associated with, or “locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
 
-Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
+Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
 
-### More on Promises and Errors
+### More on Promises and Errors
 
-With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
+With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
 
 THE CATCH AND FINALLY METHODS
 
-The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
+The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
 
-Normal exceptions don’t work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
+Normal exceptions don’t work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
 
     fetch("/api/user/profile")
 
@@ -5488,27 +5488,27 @@ Normal exceptions don’t work with asynchronous code. The `.catch()` method of
 
 p1 is the Promise returned by the `fetch()` call
 
-p2 is the Promise returned by the first `.then()` call
+p2 is the Promise returned by the first `.then()` call
 
-c1 is the callback that we pass to that .`then()` call
+c1 is the callback that we pass to that .`then()` call
 
-p3 is the Promise returned by the second `.then()` call
+p3 is the Promise returned by the second `.then()` call
 
 c2 is the callback we pass to that call
 
-c3 is the callback that we pass to the `.catch()` call
+c3 is the callback that we pass to the `.catch()` call
 
 The first thing that could fail is the fetch() request itself. Let’s say p1 was rejected with a NetworkError object.
 
-We didn’t pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
+We didn’t pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
 
 Without a handler, though, p2 is rejected, and then p3 is rejected for the same reason.
 
 At this point, the c3 error-handling callback is called, and the NetworkError-specific code within it runs.
 
-There are a couple of things worth noting about this code. First, notice that the error object thrown with a regular, synchronous throw statement ends up being handled asynchronously with a `.catch()` method invocation in a Promise chain. This should make it clear why this shorthand method is preferred over passing a second argument to .`then()`, and also why it is so idiomatic to end Promise chains with a `.catch()` call.
+There are a couple of things worth noting about this code. First, notice that the error object thrown with a regular, synchronous throw statement ends up being handled asynchronously with a `.catch()` method invocation in a Promise chain. This should make it clear why this shorthand method is preferred over passing a second argument to .`then()`, and also why it is so idiomatic to end Promise chains with a `.catch()` call.
 
-it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If one of the stages in your Promise chain can fail with an error, and if the error is some kind of recoverable error that should not stop the rest of the chain from running, then you can insert a `.catch()` call in the chain, resulting in code that might look like this:
+it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If one of the stages in your Promise chain can fail with an error, and if the error is some kind of recoverable error that should not stop the rest of the chain from running, then you can insert a `.catch()` call in the chain, resulting in code that might look like this:
 
     startAsyncOperation()
 
@@ -5522,10 +5522,10 @@ it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If o
 
     .catch(logStageThreeAndFourErrors);
 
-If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
+If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
 
-Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
- the error stops propagating.
+Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
+ the error stops propagating.
 
 Sometimes, in complex network environments, errors can occur more or less at random, and it can be appropriate to handle those errors by simply retrying the asynchronous request.
 
@@ -5537,7 +5537,7 @@ Sometimes, in complex network environments, errors can occur more or less at ran
 
     .catch(displayDatabaseError);
 
-### Promises in Parallel
+### Promises in Parallel
 
 Sometimes,we want to execute a number of asynchronous operations in parallel. The function `Promise.all()` can do this. `Promise.all()` takes an array of Promise objects as its input and returns a Promise.
 
@@ -5554,7 +5554,7 @@ The returned Promise will be rejected if any of the input Promises are rejected.
     .catch(e => console.error(e));
 
 The Promise returned by `Promise.all()` rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, `Promise.allSettled()` takes an array of input  
- Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled" or "rejected." If the status is "fulfilled", then the object will also have a value property that gives the fulfillment value. And if the status is "rejected", then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
+ Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled" or "rejected." If the status is "fulfilled", then the object will also have a value property that gives the fulfillment value. And if the status is "rejected", then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
 
     Promise.allSettled([Promise.resolve(1), Promise.reject(2),3]).then(results => {
 
@@ -5570,9 +5570,9 @@ Occasionally, you may want to run a number of Promises at once but may only care
 
 ### Making Promises
 
-### Promises in Sequence
+### Promises in Sequence
 
-### async and await
+### async and await
 
 These new keywords dramatically simplify the use of Promises and allow us to write Promise-based, asynchronous code that looks like synchronous code that blocks while waiting for network responses or other asynchronous events.
 
@@ -5608,7 +5608,7 @@ The `getHighScore()` function is declared `async`, so it returns a Promise. And 
 
     displayHighScore(await getHighScore());
 
-### Awaiting Multiple Promises
+### Awaiting Multiple Promises
 
 Suppose that we’ve written our `getJSON()` function using async:
 
@@ -5662,7 +5662,7 @@ We could now use` Promise.all()` to wait for all the Promises in the array to be
 
 both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
 
-#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
+#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor"><strong>bgoonz’s</strong> gists · GitHub</a>
 

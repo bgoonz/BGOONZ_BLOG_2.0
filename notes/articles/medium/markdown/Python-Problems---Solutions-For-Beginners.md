@@ -8,13 +8,13 @@ Introduction to python taught through example problems. Solutions are included i
 
 #### Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of this page for you to practice and refactor.
 
-### Python Practice Problems
+### Python Practice Problems
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" /></figure>
 
 ---
 
-#### Here are some other articles for reference if you need them:
+#### Here are some other articles for reference if you need them:
 
 <a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong><br />
 <em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -24,7 +24,7 @@ Introduction to python taught through example problems. Solutions are included i
 
 ---
 
-### Here are the problems without solutions for you to practice with:
+### Here are the problems without solutions for you to practice with:
 
 ---
 
@@ -166,7 +166,7 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 ---
 
-### Level Up Coding
+### Level Up Coding
 
 Thanks for being a part of our community! <a href="https://www.youtube.com/channel/UC3v9kBR_ab4UHXXdknz8Fbg?sub_confirmation=1" class="markup--anchor markup--p-anchor">Subscribe to our YouTube channel</a> or join the <a href="https://skilled.dev/" class="markup--anchor markup--p-anchor"><strong>Skilled.dev coding interview course</strong></a>.
 

@@ -6,9 +6,9 @@ And why this programming paradigm shouldn’t make you cringe.
 
 ### What is Memoization?
 
-#### And why this programming paradigm shouldn’t make you cringe.
+#### And why this programming paradigm shouldn’t make you cringe.
 
-### The following animated gifs were taken from:
+### The following animated gifs were taken from:
 
 #### <a href="https://www.deadcoderising.com/2017-06-13-why-pure-functions-4-benefits-to-embrace-2/" class="markup--anchor markup--h4-anchor">Source</a>
 
@@ -90,7 +90,7 @@ The time complexity of this function is not super intuitive to describe because
 the code branches twice recursively. Fret not! You’ll find it useful to  
 visualize the calls needed to do this with a tree. When reasoning about the time complexity for recursive functions, draw a tree that helps you see the calls. Every node of the tree represents a call of the recursion:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*fS_yOCDL-4NyBLyj.png" class="graf-image" /></figure>-   <span id="47ea">*n *, the height of this tree will be `n`. You derive this by following  
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*fS_yOCDL-4NyBLyj.png" class="graf-image" /></figure>-   <span id="47ea">*n *, the height of this tree will be `n`. You derive this by following  
     the path going straight down the left side of the tree.</span>
 -   <span id="855a">each internal node leads to two more nodes. Overall, this means that the tree will have roughly 2n nodes.</span>
 -   <span id="df50">which is the same as saying that the `fib `function has an exponential time complexity of 2n.</span>

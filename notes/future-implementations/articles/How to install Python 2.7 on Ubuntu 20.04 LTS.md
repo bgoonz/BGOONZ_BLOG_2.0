@@ -6,7 +6,7 @@ How to install Python 2.7 on Ubuntu 20.04 LTS
 
 Last Updated: January 19, 2021 [Ubuntu](https://www.how2shout.com/linux/category/ubuntu/ 'View all posts in Ubuntu')
 
-As we know Ubuntu 20.04 LTS which is the Long term version of Canonical has dropped the previous version of Python that is 2, to give space to the latest version of Python 3.  Therefore, if there is some application that required Python 2.7 then you would not find it on Ubuntu 20.04 by default. However, there is a way to install it using the command line terminal.
+As we know Ubuntu 20.04 LTS which is the Long term version of Canonical has dropped the previous version of Python that is 2, to give space to the latest version of Python 3.  Therefore, if there is some application that required Python 2.7 then you would not find it on Ubuntu 20.04 by default. However, there is a way to install it using the command line terminal.
 
 ## Install Python 2.7 on Ubuntu 20.04 LTS Linux and make it default
 

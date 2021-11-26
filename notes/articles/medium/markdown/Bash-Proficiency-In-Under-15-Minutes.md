@@ -4,25 +4,25 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 ---
 
-### Bash Proficiency In Under 15 Minutes
+### Bash Proficiency In Under 15 Minutes
 
 #### Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user commands, which are either directly entered by the user, or which can be read from a file called the shell script or shell program. Shell scripts are interpreted, not compiled. The shell reads commands from the script line per line and searches for those commands on the system while a compiler converts a program into machine readable form, an executable file.
 
 ---
 
-### LIFE SAVING PROTIP:
+### LIFE SAVING PROTIP:
 
-### A nice thing to do is to add on the first line
+### A nice thing to do is to add on the first line
 
     #!/bin/bash -x
 
 ---
 
-> I will go deeper into the explanations behind some of these examples at the bottom of this article.
+> I will go deeper into the explanations behind some of these examples at the bottom of this article.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*QkQexW5Lg0NYrtuD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*gtmOR8KLGdLcUwPt.gif" class="graf-image" /></figure>
 
-#### Here’s some previous articles I’ve written for more advanced users.
+#### Here’s some previous articles I’ve written for more advanced users.
 
 <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong><br />
 <em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -35,9 +35,9 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 ---
 
-### What is Bash?
+### What is Bash?
 
-> Apart from passing commands to the kernel, the main task of a shell is providing a user environment through which they can issue the computer commands via a command line instead of the graphical user interfaces most software consumers are familiar with.
+> Apart from passing commands to the kernel, the main task of a shell is providing a user environment through which they can issue the computer commands via a command line instead of the graphical user interfaces most software consumers are familiar with.
 
 ---
 
@@ -49,13 +49,13 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 **_Remember: learning is an effortful activity… it’s not comfortable… practice might be unpleasant but if you don’t you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment…._**
 
-> <a href="https://resume.github.io/?bgoonz" class="markup--anchor markup--blockquote-anchor">quote by: … <strong>me</strong> 1 minute ago</a> (inspired by veritasium….)
+> <a href="https://resume.github.io/?bgoonz" class="markup--anchor markup--blockquote-anchor">quote by: … <strong>me</strong> 1 minute ago</a> (inspired by veritasium….)
 
 ### Aforementioned Repl:
 
 ---
 
-### <a href="https://egghead.io/lessons/bash-navigate-the-filesystem-in-bash" class="markup--anchor markup--h3-anchor">Navigate the file system</a>
+### <a href="https://egghead.io/lessons/bash-navigate-the-filesystem-in-bash" class="markup--anchor markup--h3-anchor">Navigate the file system</a>
 
 #### Change bash’s current working directory
 
@@ -84,15 +84,15 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # Note, flags can be combined like so
     ls -la
 
-### <a href="https://egghead.io/lessons/bash-view-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">View files and folders in bash</a>
+### <a href="https://egghead.io/lessons/bash-view-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">View files and folders in bash</a>
 
-#### Output a file to the screen (stdout)
+#### Output a file to the screen (stdout)
 
     cat <file name>
     # shows it with line numbers
     cat -n <file name>
 
-#### View a file in bash
+#### View a file in bash
 
     # view the file without dumping it all onto your screen
     less <file name>
@@ -102,7 +102,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     #   /         (search)
     #   q         (quit/close)
 
-#### View file/folder in default application associated with it
+#### View file/folder in default application associated with it
 
     open <file/folder name>
     # view current directory in Finder
@@ -110,13 +110,13 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # specify an application to use
     open <file name> -a TextEdit
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LKzjKI9gdjBFE851.png" alt="folder structure" class="graf-image" /><figcaption>folder structure</figcaption></figure>### <a href="https://egghead.io/lessons/bash-create-and-delete-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">Create and delete files and folders</a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LKzjKI9gdjBFE851.png" alt="folder structure" class="graf-image" /><figcaption>folder structure</figcaption></figure>### <a href="https://egghead.io/lessons/bash-create-and-delete-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">Create and delete files and folders</a>
 
-#### Create a file
+#### Create a file
 
     touch <file name>
 
-#### Set or append to a file
+#### Set or append to a file
 
     # set the file's contents
     echo 'hi' > file.txt
@@ -130,16 +130,16 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # make intermediary directories as needed
     mkdir -p parent/child/grandchild
 
-#### Remove a file
+#### Remove a file
 
     # Note, this permanently deletes a file
     rm <file name>
     # Remove a folder and it's contents, recursively
     rm -rf <folder name>
 
-### <a href="https://egghead.io/lessons/bash-move-and-copy-files-and-folders-with-bash" class="markup--anchor markup--h3-anchor">Move and Copy Files and Folders with bash</a>
+### <a href="https://egghead.io/lessons/bash-move-and-copy-files-and-folders-with-bash" class="markup--anchor markup--h3-anchor">Move and Copy Files and Folders with bash</a>
 
-#### Move a file
+#### Move a file
 
     mv <target> <destination>
     # for example, to rename a file
@@ -147,13 +147,13 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # move all files in a folder to another folder
     mv lib/* src
 
-#### Copy a file
+#### Copy a file
 
     cp <target> <destination>
     # copy everything recursively from one folder to another
     cp -R src/* lib
 
-### <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">Find Files and Folders with</a> `find` <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">in bash</a>
+### <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">Find Files and Folders with</a> `find` <a href="https://egghead.io/lessons/bash-find-files-and-folders-with-find-in-bash" class="markup--anchor markup--h3-anchor">in bash</a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*3hXVYnYPTLCQHe0f.jpg" alt="find" class="graf-image" /><figcaption>find</figcaption></figure># find all the PNGs in a folder
     find <path> -name "*.png"
@@ -167,7 +167,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # remember `{}` will be replaced with the file name
     find <path> -name "*.png" -exec pngquant {} \;
 
-### <a href="https://egghead.io/lessons/grep-search-for-text-with-grep" class="markup--anchor markup--h3-anchor">Search for text with </a>`grep`
+### <a href="https://egghead.io/lessons/grep-search-for-text-with-grep" class="markup--anchor markup--h3-anchor">Search for text with </a>`grep`
 
     # Basic usage
     grep <pattern> <target file or glob>
@@ -177,7 +177,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # -C <number> (show N lines above/below match for context)
     # -e          (regex search)
 
-### <a href="https://egghead.io/lessons/http-make-http-requests-in-bash-with-curl" class="markup--anchor markup--h3-anchor">Make HTTP requests in bash with </a>`curl`
+### <a href="https://egghead.io/lessons/http-make-http-requests-in-bash-with-curl" class="markup--anchor markup--h3-anchor">Make HTTP requests in bash with </a>`curl`
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YmLsGKSXYDZ_vzMp.png" alt="http" class="graf-image" /><figcaption>http</figcaption></figure>The test server is available in the `curl-practice-server` directory. Run `npm install && npm start` to run it.
 
@@ -208,7 +208,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 Here’s the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON
 
-### <a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a>
+### <a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AC9okBRPVFBSHpwv.png" alt="bash scripting" class="graf-image" /><figcaption>bash scripting</figcaption></figure>echo 'echo Hello World' > script.sh
     chmod u+x script.sh
@@ -248,7 +248,7 @@ To see all environment variables
     echo "branch $1 cloned to $temp"
     # run some tasks, tests, etc here
 
-### <a href="https://egghead.io/lessons/bash-understand-and-use-functions-in-bash" class="markup--anchor markup--h3-anchor">Understand and use functions in bash</a>
+### <a href="https://egghead.io/lessons/bash-understand-and-use-functions-in-bash" class="markup--anchor markup--h3-anchor">Understand and use functions in bash</a>
 
     greet() {
       echo "$1 world"
@@ -271,7 +271,7 @@ To see all environment variables
     echo "global = $global"
     echo "local_var = $local_var" # will be empty because it's out of scope
 
-### <a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a>
+### <a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a>
 
 Get the last run command’s exit status
 
@@ -295,7 +295,7 @@ Exit statuses and functions. `script.sh`
     ./script.sh
     echo $? # exit status is same as the last run function/command
 
-### <a href="https://egghead.io/lessons/bash-use-conditional-statements-in-bash" class="markup--anchor markup--h3-anchor">Use Conditional Statements in bash</a>
+### <a href="https://egghead.io/lessons/bash-use-conditional-statements-in-bash" class="markup--anchor markup--h3-anchor">Use Conditional Statements in bash</a>
 
 Basic form
 
@@ -331,7 +331,7 @@ Conditionals can be used inline in a more ternary-like format
     check_status https://example.org
     check_status https://example.org/404
 
-### <a href="https://egghead.io/lessons/bash-chain-commands-with-pipes-and-redirect-output-in-bash" class="markup--anchor markup--h3-anchor">Chain Commands with Pipes and Redirect Output in bash</a>
+### <a href="https://egghead.io/lessons/bash-chain-commands-with-pipes-and-redirect-output-in-bash" class="markup--anchor markup--h3-anchor">Chain Commands with Pipes and Redirect Output in bash</a>
 
 Pipes
 
@@ -439,7 +439,7 @@ Redirection
 
 ---
 
-### Here’s My Github & Website … feel free to reach out!
+### Here’s My Github & Website … feel free to reach out!
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://bg-portfolio.netlify.app/ - bgoonz</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -453,7 +453,7 @@ Redirection
 
 Pipes let you use the output of a program as the input of another one
 
-### simple pipe with sed
+### simple pipe with sed
 
 This is very simple way to use pipes.
 
@@ -461,7 +461,7 @@ This is very simple way to use pipes.
 
 Here, the following happens: first the command ls -l is executed, and it’s output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.
 
-### an alternative to ls -l \*.txt
+### an alternative to ls -l \*.txt
 
 Probably, this is a more difficult way to do ls -l \*.txt, but this is for educational purposes.
 
@@ -483,13 +483,13 @@ You have no need to declare a variable, just assigning a value to its reference 
 
 Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the '$’ in at the beginning. Please notice (try it!) that if you don’t use the '$’ sign, the output of the program will be different, and probably not what you want it to be.
 
-### A very simple backup script (little bit better)
+### A very simple backup script (little bit better)
 
     #!/bin/bash
                OF=/var/my-backup-$(date +%Y%m%d).tgz
                tar -cZf $OF /home/me/
 
-> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression '$(date +%Y%m%d)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.
+> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression '$(date +%Y%m%d)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.
 
 > Notice that in this script, the output filename will be different every day, due to the format switch to the date command(+%Y%m%d). You can change this by specifying a different format.
 
@@ -513,7 +513,7 @@ Local variables can be created by using the keyword _local_.
                     hello
                     echo $HELLO
 
-### Basic conditional example if .. then
+### Basic conditional example if .. then
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" /></figure>#!/bin/bash
                 if [ "foo" = "foo" ]; then
@@ -522,7 +522,7 @@ Local variables can be created by using the keyword _local_.
 
 _The code to be executed if the expression within braces is true can be found after the 'then’ word and before 'fi’ which indicates the end of the conditionally executed code._
 
-### Basic conditional example if .. then … else
+### Basic conditional example if .. then … else
 
     #!/bin/bash
                 if [ "foo" = "foo" ]; then
@@ -547,13 +547,13 @@ _The code to be executed if the expression within braces is true can be found af
 -   <span id="15f6">**_for_**</span>
 -   <span id="4000">**_while_**</span>
 
-> (there’s another loop called until but I don’t use it so you can look it up if you’d like)
+> (there’s another loop called until but I don’t use it so you can look it up if you’d like)
 
 > **_The until loop is almost equal to the while loop, except that the code is executed while the_** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> **_evaluates to false._**
 
 The **for** loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of 'words’ within a string.
 
-The **while** executes a piece of code if the control expression is true, and only stops when it is false …or a explicit break is found within the executed code.
+The **while** executes a piece of code if the control expression is true, and only stops when it is false …or a explicit break is found within the executed code.
 
 ### For
 
@@ -562,11 +562,11 @@ The **while** executes a piece of code if the control expression is true, and on
                 echo item: $i
             done
 
-> On the second line, we declare i to be the variable that will take the different values contained in $( ls ).
+> On the second line, we declare i to be the variable that will take the different values contained in $( ls ).
 
-> The third line could be longer if needed, or there could be more lines before the done (4).
+> The third line could be longer if needed, or there could be more lines before the done (4).
 
-> 'done’ (4) indicates that the code that used the value of $i has finished and $i can take a new value.
+> 'done’ (4) indicates that the code that used the value of $i has finished and $i can take a new value.
 
 > A more useful way to use the for loop would be to use it to match only certain files on the previous example
 
@@ -600,11 +600,11 @@ Calling a function is just like calling another program, you just write its name
                quit
                echo foo
 
-> Lines 2–4 contain the 'quit’ function. Lines 5–7 contain the 'hello’ function If you are not absolutely sure about what this script does, please try it!.
+> Lines 2–4 contain the 'quit’ function. Lines 5–7 contain the 'hello’ function If you are not absolutely sure about what this script does, please try it!.
 
-> Notice that a functions don’t need to be declared in any specific order.
+> Notice that a functions don’t need to be declared in any specific order.
 
-> When running the script you’ll notice that first: the function 'hello’ is called, second the 'quit’ function, and the program never reaches line 10.
+> When running the script you’ll notice that first: the function 'hello’ is called, second the 'quit’ function, and the program never reaches line 10.
 
 ### Functions with parameters
 
@@ -632,7 +632,7 @@ Calling a function is just like calling another program, you just write its name
 
 ### Bonus Commands:
 
-#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google’s SEO rankings don’t put much emphasis on the content of github gists.
+#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google’s SEO rankings don’t put much emphasis on the content of github gists.
 
 ### Example
 
@@ -708,7 +708,7 @@ See: <a href="http://wiki.bash-hackers.org/syntax/expansion/brace" class="markup
 
 ### Parameter expansions
 
-{: .-three-column}
+{: .-three-column}
 
 ### Basics
 
@@ -784,19 +784,19 @@ ExpressionDescription`${#FOO}`Length of `$FOO`
 
 ExpressionDescription`${FOO:-val}$FOO`, or `val` if unset (or null)`${FOO:=val}`Set `$FOO` to `val` if unset (or null)`${FOO:+val}val` if `$FOO` is set (and not null)`${FOO:?message}`Show error message and exit if `$FOO` is unset (or null)
 
-Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to `val` if unset otherwise `$FOO`.
+Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to `val` if unset otherwise `$FOO`.
 
 ### Loops
 
-{: .-three-column}
+{: .-three-column}
 
-### Basic for loop
+### Basic for loop
 
     for i in /etc/rc.*; do
       echo $i
     done
 
-### C-like for loop
+### C-like for loop
 
     for ((i = 0 ; i < 100 ; i++)); do
       echo $i
@@ -808,7 +808,7 @@ Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to 
         echo "Welcome $i"
     done
 
-#### With step size
+#### With step size
 
     for i in {5..50..5}; do
         echo "Welcome $i"
@@ -828,7 +828,7 @@ Omitting the `:` removes the (non)nullity checks, e.g. `${FOO-val}` expands to 
 
 ### Functions
 
-{: .-three-column}
+{: .-three-column}
 
 ### Defining functions
 
@@ -874,7 +874,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 ### Conditionals
 
-{: .-three-column}
+{: .-three-column}
 
 ### Conditions
 
@@ -930,7 +930,7 @@ ConditionDescription`[[ -e FILE ]]`Exists`[[ -r FILE ]]`Readable`[[ -h FILE ]]`S
     Fruits[1]="Banana"
     Fruits[2]="Orange"
 
-### Working with arrays
+### Working with arrays
 
     echo ${Fruits[0]}           # Element #0
     echo ${Fruits[-1]}          # Last element
@@ -959,7 +959,7 @@ ConditionDescription`[[ -e FILE ]]`Exists`[[ -r FILE ]]`Readable`[[ -h FILE ]]`S
 
 ### Dictionaries
 
-{: .-three-column}
+{: .-three-column}
 
 ### Defining
 
@@ -982,13 +982,13 @@ Declares `sound` as a Dictionary object (aka associative array).
 
 ### Iteration
 
-#### Iterate over values
+#### Iterate over values
 
     for val in "${sounds[@]}"; do
       echo $val
     done
 
-#### Iterate over keys
+#### Iterate over keys
 
     for key in "${!sounds[@]}"; do
       echo $key
@@ -1027,13 +1027,13 @@ ExpressionDescription`!$`Expand last parameter of most recent command`!*`Expand 
 
 CodeDescription`!!`Execute last command again`!!:s/<FROM>/<TO>/`Replace first occurrence of `<FROM>` to `<TO>` in most recent command`!!:gs/<FROM>/<TO>/`Replace all occurrences of `<FROM>` to `<TO>` in most recent command`!$:t`Expand only basename from last parameter of most recent command`!$:h`Expand only directory from last parameter of most recent command
 
-`!!` and `!$` can be replaced with any valid expansion.
+`!!` and `!$` can be replaced with any valid expansion.
 
 ### Slices
 
 CodeDescription`!!:n`Expand only `n`th token from most recent command (command is `0`; first argument is `1`)`!^`Expand first argument from most recent command`!$`Expand last token from most recent command`!!:n-m`Expand range of tokens from most recent command`!!:n-$`Expand `n`th token to last from most recent command
 
-`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
+`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
 
 ### Miscellaneous
 
@@ -1104,7 +1104,7 @@ or
     printf "This is how you print a float: %f" 2
     #=> "This is how you print a float: 2.000000"
 
-### Directory of script
+### Directory of script
 
     DIR="${0%/*}"
 
@@ -1166,7 +1166,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
 
 ### Also see
 
-{: .-one-column}
+{: .-one-column}
 
 -   <span id="4581"><a href="http://wiki.bash-hackers.org/" class="markup--anchor markup--li-anchor">Bash-hackers wiki</a> _(bash-hackers.org)_</span>
 -   <span id="b6a2"><a href="http://wiki.bash-hackers.org/syntax/shellvars" class="markup--anchor markup--li-anchor">Shell vars</a> _(bash-hackers.org)_</span>

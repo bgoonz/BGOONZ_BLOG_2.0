@@ -4,11 +4,11 @@ I am not saying they’re in any way special compared with other bash scripts…
 
 ---
 
-### Life Saving Bash Scripts Part 2
+### Life Saving Bash Scripts Part 2
 
 #### I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
 
 ---
 
@@ -19,7 +19,7 @@ I am not saying they’re in any way special compared with other bash scripts…
 
 ---
 
-### Part 2 of this series is the infinitely more comprehensive part 1 of the series:
+### Part 2 of this series is the infinitely more comprehensive part 1 of the series:
 
 <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration (Part 1)</strong><br />
 <em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -143,7 +143,7 @@ and
 
     sanitize_dir '/path/to/somewhere'
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 2.)Recursively Delete Node Modules:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 2.)Recursively Delete Node Modules:
 
     find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
 
@@ -151,7 +151,7 @@ and
 
     rename  's/ *$//' *
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 4.)Remove string from file name:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 4.)Remove string from file name:
 
     for filename in *badString*; do mv "$filename" "${filename//badstring/replaceString}"; done
 
@@ -163,21 +163,21 @@ and
 
     sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 7.) Remove Invalid characters from file:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 7.) Remove Invalid characters from file:
 
     for f in */; do nf=$(echo "$f" |sed -e 's/[^A-Za-z0-9.]/./g' -e 's/\.\.\././g' -e 's/\.\././g' -e 's/\.*$//'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 8.) Remember Git Credentials For Future Login:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 8.) Remember Git Credentials For Future Login:
 
     git config --global credential.helper store
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 9.)Recursive npm install:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 9.)Recursive npm install:
 
     npm i -g recursive-install
 
     npm-recursive-install
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 10.)Generate Numbered Folders:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 10.)Generate Numbered Folders:
 
     n=1;
     max=50;
@@ -190,11 +190,11 @@ and
 
     find . -type f -exec sed -i '/badFolder/d' ./* {} \;
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 12.) recursivley remove empty files:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 12.) recursivley remove empty files:
 
     find . -empty -type f -print -delete
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 13.)recursively remove empty folders
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 13.)recursively remove empty folders
 
     find . -empty -type d -print -delete
 
@@ -214,7 +214,7 @@ and
     /:$/&&!f{sub(/:$/,"");s=$0;f=1;next}
     NF&&f{ print s"/"$0 }'>listing.md
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 17.) Delete files over 75MB (to avoid tripping github LFS rules).
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 17.) Delete files over 75MB (to avoid tripping github LFS rules).
 
     find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -233,7 +233,7 @@ and
 
     find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” -o “${0%.md}.html”’ {} \;
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 20.) Convert from HTML ==⇒ Markdown
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 20.) Convert from HTML ==⇒ Markdown
 
     find ./ -iname “*.html” -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”’ {} \;
 

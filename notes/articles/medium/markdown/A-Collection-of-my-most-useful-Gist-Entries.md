@@ -4,7 +4,7 @@ This list is in no particular order!
 
 ---
 
-### A Collection of my most useful Gist Entries
+### A Collection of my most useful Gist Entries
 
 **This list is in no particular order!**
 
@@ -15,25 +15,25 @@ This list is in no particular order!
 
 ### Markdown Notes Template:
 
-### Jquery Cheat Sheet:
+### Jquery Cheat Sheet:
 
 ### Useful Bash Commands:
 
-### Python Cheat Sheet:
+### Python Cheat Sheet:
 
-### Html Cheat Sheet:
+### Html Cheat Sheet:
 
-### Git Cheat Sheet:
+### Git Cheat Sheet:
 
-### Deploy React App To Heroku:
+### Deploy React App To Heroku:
 
 ### Bash Aliases:
 
-### JS Cheat Sheet:
+### JS Cheat Sheet:
 
-### CSS Cheat Sheet:
+### CSS Cheat Sheet:
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

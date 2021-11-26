@@ -4,20 +4,20 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 ---
 
-### Super Simple Intro To React
+### Super Simple Intro To React
 
 #### This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here’s a sandbox for you to practice with:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here’s a sandbox for you to practice with:
 
 <a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a>
 
 <a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a>
 
-### Introduction to React
+### Introduction to React
 
 -   <span id="714e">Simply a nice library that turns data into DOM.</span>
--   <span id="dffd">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
+-   <span id="dffd">`Tree Diffing` : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.</span>
 -   <span id="d53b">`It's just a tree with some fancy diffing`</span>
 
 ### Create Element
@@ -30,9 +30,9 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
     React.createElement(type, [props], [...children]);
 
--   <span id="44e8">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
--   <span id="7359">`Props` : Object that contains data to render the element.</span>
--   <span id="5990">`Children` : Children of the element, as many as you want.</span>
+-   <span id="44e8">`Type` : Type of element to create, i.e. a string for an HTML element or a reference to a function or class that is a React component.</span>
+-   <span id="7359">`Props` : Object that contains data to render the element.</span>
+-   <span id="5990">`Children` : Children of the element, as many as you want.</span>
 
 **Creating elements**
 
@@ -108,7 +108,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
     // Give React the element tree and the target
     ReactDOM.render(navList, mainElement);
 
-> JS Code =&gt; Virtual DOM =&gt; Real Dom
+> JS Code =&gt; Virtual DOM =&gt; Real Dom
 
 **Updates**
 
@@ -165,7 +165,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 -   <span id="9fe5">Because `class` is a reserved keyword in JS, in React we can use `className` to assign a class to an element.</span>
 -   <span id="9cb2">Remember the data that goes into createElement: element type, data to pass into the element, and then children.</span>
--   <span id="0021">`props` : Properties;</span>
+-   <span id="0021">`props` : Properties;</span>
 -   <span id="bf4e">To handle certain values that are initially undefined, we can use `defaultProps`.</span>
 
 <!-- -->
@@ -251,9 +251,9 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
     // Render from the Virtual Dom to the Actual Dom
     ReactDOM.render(app, target);
 
-### Introduction to JSX
+### Introduction to JSX
 
--   <span id="f398">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API.</span>
+-   <span id="f398">`JSX` : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API.</span>
 
 **How to use JSX**
 
@@ -283,7 +283,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 -   <span id="e8e0">Keep in mind that self closing tags in React must have a `forward slash` to close it.</span>
 
-### **Properties and Data**
+### **Properties and Data**
 
     <img src="https://via.placeholder.com/150" />;
     // becomes..
@@ -306,13 +306,13 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 #### `Property Names`:
 
--   <span id="fcde">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
--   <span id="ae4c">`className` : Used to specify a CSS class.</span>
--   <span id="2d7b">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
--   <span id="5f13">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
--   <span id="5880">`onChange` : Event fired whenever a form field is changed.</span>
--   <span id="fb2b">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
--   <span id="8f1c">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
+-   <span id="fcde">`checked` : Attribute of input components such as checkbox or radio, use it to set whether the component is checked or not.</span>
+-   <span id="ae4c">`className` : Used to specify a CSS class.</span>
+-   <span id="2d7b">`dangerouslySetInnerHTML` : React's equivalent of innerHTML because it is risky to cross-site scripting attacks.</span>
+-   <span id="5f13">`htmlFor` : Because `for` is protected keyword, React elements use this instead.</span>
+-   <span id="5880">`onChange` : Event fired whenever a form field is changed.</span>
+-   <span id="fb2b">`style` : Accepts a JS object with camelCase properties rather than a CSS string.</span>
+-   <span id="8f1c">`value` : Supported by Input, Select, and TextArea components; use it to set the value of the component.</span>
 
 > **_Note: React uses camel-case!!!_**
 
@@ -401,7 +401,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 <a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Here are the React Docs In One Markdown File:
+### Here are the React Docs In One Markdown File:
 
 <a href="https://gist.github.com/bgoonz/690d80b4f8ac5d359274d98cae87366a" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/690d80b4f8ac5d359274d98cae87366a</a>
 

@@ -6,9 +6,9 @@ These will focus more on vocabulary and concepts than the application driven app
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
-### Front End Interview Questions Part 2
+### Front End Interview Questions Part 2
 
-#### These will focus more on vocabulary and concepts than the application-driven approach in my last post!
+#### These will focus more on vocabulary and concepts than the application-driven approach in my last post!
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*D3yQI42gBkYpnLXY.jpg" class="graf-image" /></figure>
 
@@ -24,7 +24,7 @@ Semantic HTML is markup that conveys meaning, not appearance, to search engines 
 -   <span id="37b8">**Name two big differences between display: block; and display: inline;.**</span>
 
 block starts on a new line and takes up the full width of the content.  
- inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
+ inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
 
 · **What are the 4 areas of the box model?**
 
@@ -58,7 +58,7 @@ Preprocessing is basically a bunch of functions and variables you can use to sto
 
 Favorite is (parametric) mixins; but I don’t have a lot of trouble with preprocessing. What gives me the most trouble is knowing ahead of time what would be good to go in a mixin for a given site.
 
-· **Describe the biggest difference between .forEach & .map.**
+· **Describe the biggest difference between .forEach & .map.**
 
 forEach iterates over an array item by item, and map calls a function on each array item, but returns another/additional array, unlike forEach.
 
@@ -254,7 +254,7 @@ Having an algorithm that hashes the information multiple times (rounds) means an
 
 Header, payload, signature
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -262,7 +262,7 @@ Header, payload, signature
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>preview of the Web-Dev-Hub</em>best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

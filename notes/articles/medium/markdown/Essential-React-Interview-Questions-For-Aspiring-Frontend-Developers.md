@@ -6,7 +6,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 ### 10 Essential React Interview Questions For Aspiring Frontend Developers
 
-#### Comprehensive React Cheatsheet included at the bottom of this article!
+#### Comprehensive React Cheatsheet included at the bottom of this article!
 
 ### Resources:
 
@@ -22,9 +22,9 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 <a href="https://reactjs.org/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://reactjs.org/docs"><strong>Getting Started - React</strong><br />
 <em>A JavaScript library for building user interfaces</em>reactjs.org</a><a href="https://reactjs.org/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Also … here is my brand new blog site… built with react and a static site generator called GatsbyJS!
+### Also … here is my brand new blog site… built with react and a static site generator called GatsbyJS!
 
-#### It’s a work in progress
+#### It’s a work in progress
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--p-anchor">https://bgoonz-blog.netlify.app/</a>
 
@@ -32,7 +32,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 ---
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Beginning of the Article:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Beginning of the Article:
 
 **Pros**
 
@@ -48,20 +48,20 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 2.  <span id="db68">Limited to only view part of MVC</span>
 3.  <span id="814a">New developers might see JSC as a barrier</span>
 
-### Where to Use React
+### Where to Use React
 
 1.  <span id="fa3e">For apps that have multiple events</span>
 2.  <span id="f46a">When your app development team excels in CSS, JavaScript and HTML</span>
 3.  <span id="2d25">You want to create sharable components on your app</span>
 4.  <span id="9729">When you need a personalized app solution</span>
 
-### Misconceptions about React
+### Misconceptions about React
 
 #### <a href="https://aglowiditsolutions.com/blog/react-vs-angular/" class="markup--anchor markup--h4-anchor">React is a framework</a>:
 
 <a href="https://aglowiditsolutions.com/blog/react-vs-angular/" class="markup--anchor markup--p-anchor">Many developers an</a>d aspiring students misinterpret React to be a fully functional framework. It is because we often compare React with major frameworks such as Angular and Ember. This comparison is not to compare the best frameworks but to focus on the differences and similarities of React and Angular’s approach that makes their offerings worth studying. Angular works on **the MVC model** to support the Model, View, and Controller layers of an app. React focuses only on the 'V,’ which is the **view layer** of an application and how to make handling it easier to integrate smoothly into a project.
 
-#### React’s Virtual DOM is faster than DOM.
+#### React’s Virtual DOM is faster than DOM.
 
 React uses a **Virtual DOM**, which is essentially a tree of JavaScript objects representing the actual browser DOM. The advantage of using this for the developers is that they don’t manipulate the DOM directly as developers do with jQuery when they write React apps. Instead, they would tell React how they want the DOM to make changes to the state object and allow React to make the necessary updates to the browser DOM. This helps create a comprehensive development model for developers as they don’t need to track all DOM changes. They can modify the state object, and React would use its algorithms to understand what part of UI changed compared to the previous DOM. Using this information updates the actual browser DOM. Virtual DOM provides an excellent API for creating UI and minimizes the update count to be made on the browser DOM.
 
@@ -69,7 +69,7 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ---
 
-### **1. Explain how React uses a tree data structure called the virtual DOM to model the DOM**
+### **1. Explain how React uses a tree data structure called the virtual DOM to model the DOM**
 
 > The virtual DOM is a copy of the actual DOM tree. Updates in React are made to the virtual DOM. React uses a diffing algorithm to reconcile the changes and send the to the DOM to commit and paint.
 
@@ -83,15 +83,15 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*jf3yl4GKDHpxmPJk.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*hBOo6hfwhKwS5UDM.jpg" class="graf-image" /></figure>#### We use the React DevTools extension as an extension in our Browser DevTools to debug and view when a component is rendering
 
-### **4. Describe how JSX transforms into actual DOM nodes**
+### **4. Describe how JSX transforms into actual DOM nodes**
 
 -   <span id="358b">To transfer JSX into DOM nodes, we use the ReactDOM.render method. It takes a React virtual DOM node’s changes allows Babel to transpile it and sends the JS changes to commit to the DOM.</span>
 
-### **5. Use the** `ReactDOM.render` **method to have React render your virtual DOM nodes under an actual DOM node**
+### **5. Use the** `ReactDOM.render` **method to have React render your virtual DOM nodes under an actual DOM node**
 
 ---
 
-### **6. Attach an event listener to an actual DOM node using a virtual node**
+### **6. Attach an event listener to an actual DOM node using a virtual node**
 
 The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called <a href="https://reactjs.org/docs/reconciliation.html" class="markup--anchor markup--p-anchor">reconciliation</a>.
 
@@ -99,7 +99,7 @@ This approach enables the declarative API of React: You tell React what state yo
 
 Since “virtual DOM” is more of a pattern than a specific technology, people sometimes say it to mean different things. In React world, the term “virtual DOM” is usually associated with <a href="https://reactjs.org/docs/rendering-elements.html" class="markup--anchor markup--p-anchor">React elements</a> since they are the objects representing the user interface. React, however, also uses internal objects called “fibers” to hold additional information about the component tree. They may also be considered a part of “virtual DOM” implementation in React.
 
-### Is the Shadow DOM the same as the Virtual DOM?
+### Is the Shadow DOM the same as the Virtual DOM?
 
 No, they are different. The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
 
@@ -109,13 +109,13 @@ No, they are different. The Shadow DOM is a browser technology designed primaril
 
 -   <span id="6d60">Create the default create-react-application by typing in our terminal</span>
 
-#### <a href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/" class="markup--anchor markup--h4-anchor">Explanation of npm vs npx from Free Code Camp:</a>
+#### <a href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/" class="markup--anchor markup--h4-anchor">Explanation of npm vs npx from Free Code Camp:</a>
 
 **npm** (node package manager) is the dependency/package manager you get out of the box when you install Node.js. It provides a way for developers to install packages both globally and locally.
 
 Sometimes you might want to take a look at a specific package and try out some commands. But you cannot do that without installing the dependencies in your local `node_modules` folder.
 
-### npm the package manager
+### npm the package manager
 
 npm is a couple of things. First and foremost, it is an online repository for the publishing of open-source Node.js projects.
 
@@ -125,7 +125,7 @@ npm by itself doesn’t run any packages. If you want to run a package using npm
 
 When executables are installed via npm packages, npm creates links to them:
 
--   <span id="7798">**local** installs have links created at the `./node_modules/.bin/` directory</span>
+-   <span id="7798">**local** installs have links created at the `./node_modules/.bin/` directory</span>
 -   <span id="a534">**global** installs have links created from the global `bin/` directory (for example: `/usr/local/bin` on Linux or at `%AppData%/npm` on Windows)</span>
 
 To execute a package with npm you either have to type the local path, like this:
@@ -150,7 +150,7 @@ You can see that running a package with plain npm requires quite a bit of ceremo
 
 Fortunately, this is where **npx** comes in handy.
 
-### npx the package runner
+### npx the package runner
 
 Since npm version <a href="https://github.com/npm/npm/releases/tag/v5.2.0" class="markup--anchor markup--p-anchor">5.2.0</a> npx is pre-bundled with npm. So it’s pretty much a standard nowadays.
 
@@ -168,7 +168,7 @@ If it’s not, you can install it like this:
 
 Once you make sure you have it installed, let’s see a few of the use cases that make **npx** extremely helpful.
 
-### Run a locally installed package easily
+### Run a locally installed package easily
 
 If you wish to execute a locally installed package, all you need to do is type:
 
@@ -249,7 +249,7 @@ a. Import the react-router-dom package:
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### REACT CHEAT SHEET:
+### REACT CHEAT SHEET:
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
 

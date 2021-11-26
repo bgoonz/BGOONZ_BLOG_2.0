@@ -22,7 +22,7 @@ Data structures in JavaScript
 
 <span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
 
-### Resources (article content below):
+### Resources (article content below):
 
 #### Videos
 
@@ -87,7 +87,7 @@ Data structures in JavaScript
 
 > _In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element._
 
-### _Dependent on data_
+### _Dependent on data_
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
@@ -95,7 +95,7 @@ Data structures in JavaScript
 -   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
 -   <span id="881c">**The average-case complexity: when the data looks average**</span>
 
-### Big O notation
+### Big O notation
 
 The complexity is usually expressed with the Big O notation. The wikipedia page about this subject is pretty complex but you can find here a good summary of the different complexity for the most famous data structures and sorting algorithms.
 
@@ -113,7 +113,7 @@ _Access Search Insertion Deletion_
 
 O(1) O(n) O(1) O(n)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*-BJ2hU-CZO2kuzu4x5a53g.png" class="graf-image" /></figure>indexvalue0 … this is the first value, stored at zero position
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*-BJ2hU-CZO2kuzu4x5a53g.png" class="graf-image" /></figure>indexvalue0 … this is the first value, stored at zero position
 
 1.  <span id="b953">The index of an array **runs in sequence**</span>
 
@@ -133,7 +133,7 @@ The main difference is that object’s “index” need not be numbers and is no
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
-### The Hash Table
+### The Hash Table
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*avbxLAFocSV6vsl5.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*3GJiRoLyEoZ_aIlO" class="graf-image" /></figure>### *Definition*
 
@@ -171,7 +171,7 @@ Access Search Insertion Deletion
 
 > _The code_
 
-### The Singly Linked List
+### The Singly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*fLs64rV-Xq19aVCA.gif" class="graf-image" /></figure>### *Definition*
 
@@ -188,7 +188,7 @@ O(n) O(n) O(1) O(1)
 
 ---
 
-### The Doubly Linked List
+### The Doubly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TQXiR-L_itiG3WP-.gif" class="graf-image" /></figure>### *Definition*
 
@@ -279,7 +279,7 @@ Graph
 
 ---
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -287,7 +287,7 @@ Graph
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 ### Discover More:
 

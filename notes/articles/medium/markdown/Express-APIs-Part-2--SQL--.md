@@ -4,7 +4,7 @@ REST is a generally agreed-upon set of principles and constraints. They are reco
 
 ---
 
-### Express APIs Part 2 (SQL):
+### Express APIs Part 2 (SQL):
 
 #### `REST` is a generally agreed-upon set of principles and constraints. They are **recommendations**, not a standard.
 
@@ -19,7 +19,7 @@ REST is a generally agreed-upon set of principles and constraints. They are reco
 
 ---
 
-### 0 — &gt; Explain the role of a foreign key
+### 0 — &gt; Explain the role of a foreign key
 
 ### Overview
 
@@ -41,7 +41,7 @@ Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in" cl
 
 How many records in the products table belong to the category “confections”?
 
-### Objective 2 — query data from multiple tables
+### Objective 2 — query data from multiple tables
 
 Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.
 
@@ -86,36 +86,36 @@ Use <a href="https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top"
 -   <span id="b07f">list the products, including the supplier name.</span>
 -   <span id="7b08">list the products, including both the category name and supplier name.</span>
 
-### What is SQL Joins?
+### What is SQL Joins?
 
 An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.
 
-### How to Join two tables in SQL?
+### How to Join two tables in SQL?
 
 A JOIN works on two or more tables if they have at least one common field and have a relationship between them.
 
 JOIN keeps the base tables (structure and data) unchanged.
 
-### Join vs. Subquery
+### Join vs. Subquery
 
 -   <span id="eeea">JOINs are faster than a subquery and it is very rare that the opposite.</span>
 -   <span id="3b2e">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
 -   <span id="84ce">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
 -   <span id="3002">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
-### SQL JOINS: EQUI JOIN and NON EQUI JOIN
+### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
 The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
-1.  <span id="31e6">SQL EQUI JOIN :</span>
+1.  <span id="31e6">SQL EQUI JOIN :</span>
 
 The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
-1.  <span id="d86b">SQL NON EQUI JOIN :</span>
+1.  <span id="d86b">SQL NON EQUI JOIN :</span>
 
 The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equal sign like &gt;, &lt;, &gt;=, &lt;= with the condition.
 
-**SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
+**SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
 The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
@@ -149,7 +149,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables 'company’ and 'foods’, the following SQL statement can be used :
+To join two tables 'company’ and 'foods’, the following SQL statement can be used :
 
 **SQL Code:**
 
@@ -319,19 +319,19 @@ These kinds of databases are relational because a _relation_ is a mathematical i
 
 **Below are some basic facts about tables:**
 
-> Tables organize data in rows and columns.
+> Tables organize data in rows and columns.
 
-> Each row in a table represents one distinct record.
+> Each row in a table represents one distinct record.
 
-> Each column represents a field or attribute that is common to all the records.
+> Each column represents a field or attribute that is common to all the records.
 
 > Fields should have a descriptive name and a data type appropriate for the attribute it represents.
 
-> Tables usually have more rows than columns.
+> Tables usually have more rows than columns.
 
-> Tables have primary keys that uniquely identify each row.
+> Tables have primary keys that uniquely identify each row.
 
-> Foreign keys represent the relationships with other tables.
+> Foreign keys represent the relationships with other tables.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*7ZPYzWNRcs2PBL6p.jpg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### SQL:
 
@@ -400,7 +400,7 @@ The basic syntax for a `DELETE` statement is:
 
     delete from <table name> where <condition>;
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Filtering results using WHERE clause
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Filtering results using WHERE clause
 
 When querying a database, the default result will be every entry in the given table. However, often, we are looking for a specific record or a set of records that meets certain criteria.
 
@@ -439,7 +439,7 @@ Other comparison operators also work in `WHERE` conditions, such as `>`, `<`, `<
 
     select * from employees where salary >= 50000
 
-### Ordering results using the ORDER BY clause
+### Ordering results using the ORDER BY clause
 
 Query results are shown in the same order the data was inserted. To control how the data is sorted, we can use the `ORDER BY` clause. Let's see an example.
 
@@ -458,7 +458,7 @@ Note that the `WHERE` clause should come after the `FROM` clause. The `ORDER BY`
 
     select * from employees where salary > 50000 order by last_name;
 
-### Limiting results using the LIMIT clause
+### Limiting results using the LIMIT clause
 
 When we wish to see only a limited number of records, we can use a `LIMIT` clause.
 
@@ -473,7 +473,7 @@ The following returns the first ten records in the products table:
     order by price desc
     limit 5
 
-### Inserting data using INSERT
+### Inserting data using INSERT
 
 An insert statement adds a new record to the database. All non-null fields must be listed out in the same order as their values. Some fields, like ids and timestamps, may be auto-generated and do not need to be included in an `INSERT` statement.
 
@@ -484,7 +484,7 @@ An insert statement adds a new record to the database. All non-null fields must 
 
 The values in an insert statement must not violate any restrictions and constraints that the database has in place, such as expected datatypes. We will learn more about constraints and schema design in a later section.
 
-### Modifying recording using UPDATE
+### Modifying recording using UPDATE
 
 When modifying a record, we identify a single record or a set of records to update using a `WHERE` clause. Then we can set the new value(s) in place.
 
@@ -494,7 +494,7 @@ When modifying a record, we identify a single record or a set of records to upda
 
 Technically the `WHERE` clause is not required, but leaving it off would result in every record within the table receiving the update.
 
-### Removing records using DELETE
+### Removing records using DELETE
 
 When removing a record or set of records, we need only identify which record(s) to remove using a `WHERE` clause:
 
@@ -539,7 +539,7 @@ Next, we use Knex to set up a config file:
 
     module.exports = knex(config);
 
-To use the query builder elsewhere in our code, we need to call `knex` and pass in a `config` object. We'll be discussing Knex configuration more in a future module. Still, we only need the `client`, `connection`, and `useNullAsDefault` keys as shown above. The `filename` should point towards the pre-existing database file, which can be recognized by the `.db3` extension.
+To use the query builder elsewhere in our code, we need to call `knex` and pass in a `config` object. We'll be discussing Knex configuration more in a future module. Still, we only need the `client`, `connection`, and `useNullAsDefault` keys as shown above. The `filename` should point towards the pre-existing database file, which can be recognized by the `.db3` extension.
 
 **GOTCHA**: The file path to the database should be with respect to the **root** of the repo, not the configuration file itself.
 
@@ -549,7 +549,7 @@ Once Knex is configured, we can import the above config file anywhere in our cod
 
 The `db` object provides methods that allow us to begin building queries.
 
-### SELECT using Knex
+### SELECT using Knex
 
 In Knex, the equivalent of `SELECT * FROM users` is:
 
@@ -597,7 +597,7 @@ Using this, we might add a `GET` endpoint where a specific user:
       });
     });
 
-### INSERT using Knex
+### INSERT using Knex
 
 In Knex, the equivalent of `INSERT INTO users (name, age) VALUES ('Eva', 32)` is:
 
@@ -605,7 +605,7 @@ In Knex, the equivalent of `INSERT INTO users (name, age) VALUES ('Eva', 32)` is
 
 The insert method in Knex will resolve to an array containing the newly created id for that user like so: `[3]`.
 
-### UPDATE using Knex
+### UPDATE using Knex
 
 In knex, the equivalent of `UPDATE users SET name='Ava', age=33 WHERE id=3;` is:
 
@@ -616,7 +616,7 @@ Note that the `where` method comes before `update`, unlike in SQL.
 
 Update will resolve to a count of rows updated.
 
-### DELETE using Knex
+### DELETE using Knex
 
 In Knex, the equivalent of `DELETE FROM users WHERE age=33;` is:
 
@@ -626,11 +626,11 @@ Once again, the `where` must come before the `del`. This method will resolve to 
 
 ---
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Here’s a small project you can practice with.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Here’s a small project you can practice with.
 
 SQLlite Studio is an application that allows us to create, open, view, and modify SQLite databases. To fully understand what SQLite Studio is and how it works, we must also understand the concept of the Database Management Systems (DBMS).
 
-### What is a DBMS?
+### What is a DBMS?
 
 To manage digital databases we use specialized software called **D**ata**B**ase **M**anagement **S**ystems (DBMS). These systems typically run on servers and are managed by **D**ata**B**ase **A**dministrators (DBAs).
 
@@ -638,21 +638,21 @@ In less technical terms, we need a type of software that will allow us to create
 
 Choosing a DBMS determines everything from how you set up your database, to where and how the data is stored, to what SQL commands you can use. Most systems share the core of the SQL language that you’ve already learned.
 
-In other words, you can expect `SELECT`, `UPDATE`, `INSERT`, `WHERE` , and the like to be the same across all DBMSs, but the subtleties of the language may vary.
+In other words, you can expect `SELECT`, `UPDATE`, `INSERT`, `WHERE` , and the like to be the same across all DBMSs, but the subtleties of the language may vary.
 
-### What is SQLite?
+### What is SQLite?
 
 **SQLite** is the DBMS, as the name suggests, it is a more lightweight system and thus easier to get set up than some others.
 
-SQLite allows us to store databases as single files. SQLite projects have a `.db3` extension. That is the database.
+SQLite allows us to store databases as single files. SQLite projects have a `.db3` extension. That is the database.
 
 SQLite is _not a database_ (like relational, graph, or document are databases) but rather _a database management system_.
 
-### Opening an existing database in SQLite Studio
+### Opening an existing database in SQLite Studio
 
 One useful visual interface we might use with a SQLite database is called **SQLite Studio**. <a href="https://sqlitestudio.pl/" class="markup--anchor markup--p-anchor">Install SQLITE Studio here. (Links to an external site.)</a>
 
-Once installed, we can use SQLite Studio to open any `.db3` file from a previous lesson. We may view the tables, view the data, and even make changes to the database.
+Once installed, we can use SQLite Studio to open any `.db3` file from a previous lesson. We may view the tables, view the data, and even make changes to the database.
 
 For a more detailed look at SQLite Studio.
 
@@ -1102,36 +1102,36 @@ The syntax for performing a similar join using Knex is as follows:
 
 A good explanation of how the different types of joins can be seen <a href="https://www.w3resource.com/sql/joins/sql-joins.php" class="markup--anchor markup--p-anchor">in this article from w3resource.com (Links to an external site.)</a>.
 
-### What is SQL Joins?
+### What is SQL Joins?
 
 An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.
 
-### How to Join two tables in SQL?
+### How to Join two tables in SQL?
 
 A JOIN works on two or more tables if they have at least one common field and have a relationship between them.
 
 JOIN keeps the base tables (structure and data) unchanged.
 
-### Join vs. Subquery
+### Join vs. Subquery
 
 -   <span id="6fdc">JOINs are faster than a subquery and it is very rare that the opposite.</span>
 -   <span id="c648">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
 -   <span id="d59c">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
 -   <span id="08ff">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
-### SQL JOINS: EQUI JOIN and NON EQUI JOIN
+### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
 The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
-1.  <span id="2bb1">SQL EQUI JOIN :</span>
+1.  <span id="2bb1">SQL EQUI JOIN :</span>
 
 The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
-1.  <span id="a9be">SQL NON EQUI JOIN :</span>
+1.  <span id="a9be">SQL NON EQUI JOIN :</span>
 
 The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equal sign like &gt;, &lt;, &gt;=, &lt;= with the condition.
 
-**SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
+**SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
 The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
@@ -1165,7 +1165,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables 'company’ and 'foods’, the following SQL statement can be used :
+To join two tables 'company’ and 'foods’, the following SQL statement can be used :
 
 **SQL Code:**
 
@@ -1283,13 +1283,13 @@ With objects, we’re used to _denormalized_ data, stored with ease of use and s
 
 ### Normalization Guidelines
 
-> Each record has a primary key.
+> Each record has a primary key.
 
 > No fields are repeated.
 
-> All fields relate directly to the key data.
+> All fields relate directly to the key data.
 
-> Each field entry contains a single data point.
+> Each field entry contains a single data point.
 
 > There are no redundant entries.
 
@@ -1325,11 +1325,11 @@ What issues does the following table have?
 
 There are three types of relationships:
 
-> One to one.
+> One to one.
 
-> One to many.
+> One to many.
 
-> Many to many.
+> Many to many.
 
 Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.
 
@@ -1398,7 +1398,7 @@ While each foreign key on the intermediary table is not unique, the combinations
 
 We have to consider the way that `delete` and `updates` through our API will impact related data.
 
-### Foreign Key Setup
+### Foreign Key Setup
 
 In Knex, foreign key restrictions don’t automatically work. Whenever using foreign keys in your schema, add the following code to your `knexfile`. This will prevent users from entering bad data into a foreign key column.
 

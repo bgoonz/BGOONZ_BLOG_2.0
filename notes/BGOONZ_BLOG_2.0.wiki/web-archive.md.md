@@ -19,9 +19,9 @@ Developers
 
 Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
 
-We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress.  If you have feedback, please email us at <info@archive.org>.
+We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress.  If you have feedback, please email us at <info@archive.org>.
 
-You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
+You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
 
 **General**\
 [Overview of how items are structured](http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/)
@@ -39,7 +39,7 @@ You may also want to see  [community-maintained API information](https://archi
 [Metadata read and write APIs](http://blog.archive.org/2013/07/04/metadata-api/)
 
 **Search & Discovery**\
-[Search API](https://archive.org/advancedsearch.php#raw) to return JSON, RSS, XML, CSV\
+[Search API](https://archive.org/advancedsearch.php#raw) to return JSON, RSS, XML, CSV\
 [RSS feeds](https://archive.org/help/rss.php)
 
 **Wayback Machine**\
@@ -48,9 +48,9 @@ You may also want to see  [community-maintained API information](https://archi
 **Books**\
 [Book reader](https://openlibrary.org/dev/docs/bookreader)\
 [Using URLs to refer to book pages\
-](https://openlibrary.org/dev/docs/bookurls)[Bookserver](https://archive.org/bookserver) for discovery of epubs\
-[Open Library](https://openlibrary.org/dev/docs) developer docs
+](https://openlibrary.org/dev/docs/bookurls)[Bookserver](https://archive.org/bookserver) for discovery of epubs\
+[Open Library](https://openlibrary.org/dev/docs) developer docs
 
 **More**\
-[Python wrapper](https://github.com/jjjake/ia-wrapper) for working with various archive.org APIs\
-[Media derivatives](https://archive.org/help/derivatives.php) for uploaded items
+[Python wrapper](https://github.com/jjjake/ia-wrapper) for working with various archive.org APIs\
+[Media derivatives](https://archive.org/help/derivatives.php) for uploaded items

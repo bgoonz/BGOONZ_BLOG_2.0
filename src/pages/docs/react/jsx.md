@@ -38,7 +38,7 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 
 
 
-JSX produces React “elements”. We will explore rendering them to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html). Below, you can find the basics of JSX necessary to get you started.
+JSX produces React “elements”. We will explore rendering them to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html). Below, you can find the basics of JSX necessary to get you started.
 
 
 
@@ -50,11 +50,11 @@ React embraces the fact that rendering logic is inherently coupled with other UI
 
 
 
-Instead of artificially separating *technologies* by putting markup and logic in separate files, React [separates *concerns*](https://en.wikipedia.org/wiki/Separation_of_concerns) with loosely coupled units called “components” that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you’re not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
+Instead of artificially separating *technologies* by putting markup and logic in separate files, React [separates *concerns*](https://en.wikipedia.org/wiki/Separation_of_concerns) with loosely coupled units called “components” that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you’re not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
 
 
 
-React [doesn’t require](https://reactjs.org/docs/react-without-jsx.html) using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
+React [doesn’t require](https://reactjs.org/docs/react-without-jsx.html) using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
 
 
 
@@ -66,15 +66,15 @@ With that out of the way, let’s get started!
 
 
 
-In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:
+In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:
 
 
 
-You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions.
+You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions.
 
 
 
-In the example below, we embed the result of calling a JavaScript function, formatName(user), into an \<h1> element.
+In the example below, we embed the result of calling a JavaScript function, formatName(user), into an \<h1> element.
 
 
 
@@ -82,7 +82,7 @@ In the example below, we embed the result of calling a JavaScript function, for
 
 
 
-We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of [automatic semicolon insertion](https://stackoverflow.com/q/2846283).
+We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of [automatic semicolon insertion](https://stackoverflow.com/q/2846283).
 
 
 
@@ -94,7 +94,7 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 
 
 
-This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
+This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
 
 
 
@@ -118,11 +118,11 @@ Don’t put quotes around curly braces when embedding a JavaScript expression in
 
 >
 
-> Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.
+> Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.
 
 >
 
-> For example, class becomes [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and tabindex becomes [tabIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
+> For example, class becomes [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and tabindex becomes [tabIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
 
 
 
@@ -130,7 +130,7 @@ Don’t put quotes around curly braces when embedding a JavaScript expression in
 
 
 
-If a tag is empty, you may close it immediately with />, like XML:
+If a tag is empty, you may close it immediately with />, like XML:
 
 
 
@@ -146,7 +146,7 @@ It is safe to embed user input in JSX:
 
 
 
-By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS (cross-site-scripting)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
+By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS (cross-site-scripting)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
 
 
 
@@ -154,7 +154,7 @@ By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/whi
 
 
 
-Babel compiles JSX down to React.createElement() calls.
+Babel compiles JSX down to React.createElement() calls.
 
 
 
@@ -162,7 +162,7 @@ These two examples are identical:
 
 
 
-React.createElement() performs a few checks to help you write bug-free code but essentially it creates an object like this:
+React.createElement() performs a few checks to help you write bug-free code but essentially it creates an object like this:
 
 
 
@@ -170,7 +170,7 @@ These objects are called “React elements”. You can think of them as descript
 
 
 
-We will explore rendering React elements to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html).
+We will explore rendering React elements to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html).
 
 
 
@@ -178,5 +178,5 @@ We will explore rendering React elements to the DOM in the [next section](https
 
 >
 
-> We recommend using the [“Babel” language definition](https://babeljs.io/docs/en/next/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
+> We recommend using the [“Babel” language definition](https://babeljs.io/docs/en/next/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
 

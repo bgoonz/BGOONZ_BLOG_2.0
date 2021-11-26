@@ -4,7 +4,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 ---
 
-### The Penultimate Web Developer’s Cheat Sheet
+### The Penultimate Web Developer’s Cheat Sheet
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
@@ -321,14 +321,14 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 -   <span id="37d9">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span>
 -   <span id="bff6">It is also Object oriented, modular oriented and a scripting language.</span>
 -   <span id="7582">In Python, everything is considered as an Object.</span>
--   <span id="c52a">A python file has an extension of .py</span>
+-   <span id="c52a">A python file has an extension of .py</span>
 -   <span id="6d41">Python follows Indentation to separate code blocks instead of flower brackets({}).</span>
 -   <span id="bcb1">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b333">`python <filename.py>`</span>
 
-#### By default, the python doesn’t require any imports to run a python file.
+#### By default, the python doesn’t require any imports to run a python file.
 
-### Create and execute a program
+### Create and execute a program
 
 1.  <span id="e0d4">Open up a terminal/cmd</span>
 2.  <span id="07e7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span>

@@ -4,15 +4,15 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Notes I Wish I Had When I Started Learning Python
+### Notes I Wish I Had When I Started Learning Python
 
-#### Plus resources for learning data structures and algorithms in python at the bottom of this article!
+#### Plus resources for learning data structures and algorithms in python at the bottom of this article!
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*8zBTnh_6r7agz9wz.jpg" class="graf-image" /></figure>
 
 ### Basics
 
--   <span id="e168">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
+-   <span id="e168">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
 -   <span id="22a7">`print` is the equivalent of `console.log`.</span>
 -   <span id="c6a7">`#` is used to make comments in your code.</span>
 
@@ -59,7 +59,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
     print(7j) # => 7j print(5.1+7.7j)) # => 5.1+7.7j print(complex(3, 5)) # => 3+5j print(complex(17)) # => 17+0j print(complex()) # => 0j
 
-#### **Type Casting** : The process of converting one number to another.
+#### **Type Casting** : The process of converting one number to another.
 
     # Using Float
     print(17)               # => 17
@@ -73,8 +73,8 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 -   <span id="995c">The arithmetic operators are the same between JS and Python, with two additions:</span>
--   <span id="794f">“\*\*” : Double asterisk for exponent.</span>
--   <span id="dff1">“//” : Integer Division.</span>
+-   <span id="794f">“\*\*” : Double asterisk for exponent.</span>
+-   <span id="dff1">“//” : Integer Division.</span>
 -   <span id="658b">There are no spaces between math operations in Python.</span>
 -   <span id="d944">Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.</span>
 -   <span id="4180">There are no `++` and `--` in Python, the only shorthand operators are:</span>
@@ -172,7 +172,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ### Variables and Expressions
 
--   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+-   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
 -   <span id="6b14">Duck Typing is the fundamental approach of Python.</span>
 -   <span id="929a">Assignment of a value automatically declares.</span>
 
@@ -210,7 +210,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Boolean Data Type
+### Boolean Data Type
 
 -   <span id="cd4b">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
@@ -248,13 +248,13 @@ Plus resources for learning data structures and algorithms in python at the bott
 3.  <span id="5f17">**OR**</span>
 
 -   <span id="7bc8">Just like in JS, you can use `parentheses` to change the inherent order of operations.</span>
--   <span id="ad5a">**Short Circuit** : Stopping a program when a `true` or `false` has been reached.</span>
+-   <span id="ad5a">**Short Circuit** : Stopping a program when a `true` or `false` has been reached.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nlYkqe_JubdBB2mv.png" class="graf-image" /></figure>
 
 ---
 
-### Identity vs Equality
+### Identity vs Equality
 
     print (2 == '2')    # => False
     print (2 is '2')    # => False
@@ -266,7 +266,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     print (2 == 2.0)    # => True
     print (2 is 2.0)    # => False
 
--   <span id="9344">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
+-   <span id="9344">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
 ---
 
@@ -440,7 +440,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ### Pass
 
--   <span id="1449">Pass Keyword is required to write the JS equivalent of :</span>
+-   <span id="1449">Pass Keyword is required to write the JS equivalent of :</span>
 
 <!-- -->
 
@@ -551,16 +551,16 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Getting Input from the Command Line
+### Getting Input from the Command Line
 
 -   <span id="67f1">Python runs synchronously, all programs and processes will stop when listening for a user input.</span>
 -   <span id="21d9">The `input` function shows a prompt to a user and waits for them to type 'ENTER'.</span>
 
 ---
 
-### Scripts vs Programs
+### Scripts vs Programs
 
--   <span id="3d45">**Programming Script** : A set of code that runs in a linear fashion.</span>
+-   <span id="3d45">**Programming Script** : A set of code that runs in a linear fashion.</span>
 -   <span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.</span>
 -   <span id="a0e0">Python can be used to display html, css, and JS.</span>
 -   <span id="1ffd">We will be using Python as an API (Application Programming Interface)</span>
@@ -569,21 +569,21 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ### Structured Data
 
--   <span id="6dc6">**Sequence** : The most basic data structure in Python where the index determines the order.</span>
+-   <span id="6dc6">**Sequence** : The most basic data structure in Python where the index determines the order.</span>
 -   <span id="a9bc">List</span>
 -   <span id="92b4">Tuple</span>
 -   <span id="860c">Range</span>
 
-**Collections** : Unordered data structures, hashable values.
+**Collections** : Unordered data structures, hashable values.
 
 -   <span id="dd66">Dictionaries</span>
 -   <span id="a28e">Sets</span>
--   <span id="a86f">**Iterable** : Generic name for a sequence or collection; any object that can be iterated through.</span>
+-   <span id="a86f">**Iterable** : Generic name for a sequence or collection; any object that can be iterated through.</span>
 -   <span id="bcb9">Can be mutable or immutable.</span>
 
 ---
 
-### Built In Data Types
+### Built In Data Types
 
 -   <span id="681b">**Lists** are the python equivalent of arrays.</span>
 
@@ -599,7 +599,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(1 in [1, 2, 3]) #> True
     print(4 in [1, 2, 3]) #> False
 
--   <span id="1c0a">**Tuples** : Very similar to lists, but they are `immutable`</span>
+-   <span id="1c0a">**Tuples** : Very similar to lists, but they are `immutable`</span>
 
 <!-- -->
 
@@ -615,12 +615,12 @@ Plus resources for learning data structures and algorithms in python at the bott
     tuple([1,2,3])      # returns (1, 2, 3)
 
 -   <span id="2e5f">Think of tuples as constant variables.</span>
--   <span id="86a4">**Ranges** : A list of numbers which can’t be changed; often used with `for` loops.</span>
+-   <span id="86a4">**Ranges** : A list of numbers which can’t be changed; often used with `for` loops.</span>
 -   <span id="04d3">Declared using one to three parameters.</span>
 
-1.  <span id="ac7e">**Start** : opt. default 0, first \# in sequence.</span>
-2.  <span id="7f6d">**Stop** : `required` next number past the last number in the sequence.</span>
-3.  <span id="410f">**Step** : opt. default 1, difference between each number in the sequence.</span>
+1.  <span id="ac7e">**Start** : opt. default 0, first \# in sequence.</span>
+2.  <span id="7f6d">**Stop** : `required` next number past the last number in the sequence.</span>
+3.  <span id="410f">**Step** : opt. default 1, difference between each number in the sequence.</span>
 
 <!-- -->
 
@@ -635,7 +635,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     for let(i = 0; i = 0; i++)
 
 -   <span id="56e9">Keep in mind that `stop` is not included in the range.</span>
--   <span id="8b99">`Dictionaries` : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.</span>
+-   <span id="8b99">`Dictionaries` : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.</span>
 -   <span id="c9a9">Mutable.</span>
 
 <!-- -->
@@ -650,7 +650,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="40be">Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
 -   <span id="c7e7">Use the `in` operator to see if a key exists in a dictionary.</span>
 
-#### **Sets** : Unordered collection of distinct objects; objects that **need** to be hashable.
+#### **Sets** : Unordered collection of distinct objects; objects that **need** to be hashable.
 
 -   <span id="341e">Always be unique, duplicate items are auto dropped from the set.</span>
 -   <span id="a275">**Common Uses**:</span>
@@ -675,13 +675,13 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 **Functions using iterables**
 
--   <span id="7a7e">**filter(function, iterable)** : creates new iterable of the same type which includes each item for which the function returns true.</span>
--   <span id="39d0">**map(function, iterable)** : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.</span>
--   <span id="cd33">**sorted(iterable, key=None, reverse=False)** : creates a new sorted list from the items in the iterable.</span>
+-   <span id="7a7e">**filter(function, iterable)** : creates new iterable of the same type which includes each item for which the function returns true.</span>
+-   <span id="39d0">**map(function, iterable)** : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.</span>
+-   <span id="cd33">**sorted(iterable, key=None, reverse=False)** : creates a new sorted list from the items in the iterable.</span>
 -   <span id="d949">Output is always a `list`</span>
 -   <span id="c4a5">`key`: opt function which coverts and item to a value to be compared.</span>
 -   <span id="2ba7">`reverse`: optional boolean.</span>
--   <span id="390c">**enumerate(iterable, start=0)** : starts with a sequence and converts it to a series of tuples</span>
+-   <span id="390c">**enumerate(iterable, start=0)** : starts with a sequence and converts it to a series of tuples</span>
 
 <!-- -->
 
@@ -692,27 +692,27 @@ Plus resources for learning data structures and algorithms in python at the bott
     # (0, 'First'), (1, 'Second'), (2, 'Third'), (3, 'Fourth')
     # (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
 
--   <span id="4919">**zip(\*iterables)** : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.</span>
+-   <span id="4919">**zip(\*iterables)** : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.</span>
 
 **Functions that analyze iterables**
 
--   <span id="48f1">**len(iterable)** : returns the count of the number of items.</span>
--   <span id="938b">**max(\*args, key=None)** : returns the largest of two or more arguments.</span>
--   <span id="b7f1">**max(iterable, key=None)** : returns the largest item in the iterable.</span>
+-   <span id="48f1">**len(iterable)** : returns the count of the number of items.</span>
+-   <span id="938b">**max(\*args, key=None)** : returns the largest of two or more arguments.</span>
+-   <span id="b7f1">**max(iterable, key=None)** : returns the largest item in the iterable.</span>
 -   <span id="bb8b">`key` optional function which converts an item to a value to be compared.</span>
 -   <span id="6cbc">**min** works the same way as `max`</span>
--   <span id="3098">**sum(iterable)** : used with a list of numbers to generate the total.</span>
+-   <span id="3098">**sum(iterable)** : used with a list of numbers to generate the total.</span>
 -   <span id="2531">There is a faster way to concatenate an array of strings into one string, so do not use sum for that.</span>
--   <span id="97d7">**any(iterable)** : returns True if any items in the iterable are true.</span>
--   <span id="37db">**all(iterable)** : returns True is all items in the iterable are true.</span>
+-   <span id="97d7">**any(iterable)** : returns True if any items in the iterable are true.</span>
+-   <span id="37db">**all(iterable)** : returns True is all items in the iterable are true.</span>
 
 **Working with dictionaries**
 
--   <span id="ddcc">**dir(dictionary)** : returns the list of keys in the dictionary.</span>
+-   <span id="ddcc">**dir(dictionary)** : returns the list of keys in the dictionary.</span>
 
 **Working with sets**
 
--   <span id="b4fe">**Union** : The pipe | operator or `union(*sets)` function can be used to produce a new set which is a combination of all elements in the provided set.</span>
+-   <span id="b4fe">**Union** : The pipe | operator or `union(*sets)` function can be used to produce a new set which is a combination of all elements in the provided set.</span>
 
 <!-- -->
 
@@ -720,7 +720,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     b = {2, 4, 6}
     print(a | b)        # => {1, 2, 3, 4, 6}
 
--   <span id="fcbf">**Intersection** : The & operator ca be used to produce a new set of only the elements that appear in all sets.</span>
+-   <span id="fcbf">**Intersection** : The & operator ca be used to produce a new set of only the elements that appear in all sets.</span>
 
 <!-- -->
 
@@ -728,8 +728,8 @@ Plus resources for learning data structures and algorithms in python at the bott
     b = {2, 4, 6}
     print(a & b)        # => {2}
 
--   <span id="b777">**Difference** : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.</span>
--   <span id="8aec">**Symmetric Difference** : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.</span>
+-   <span id="b777">**Difference** : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.</span>
+-   <span id="8aec">**Symmetric Difference** : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.</span>
 
 <!-- -->
 
@@ -842,7 +842,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ### More On Functions
 
--   <span id="5d5a">**Variable-length positional arguments** : (\*args)</span>
+-   <span id="5d5a">**Variable-length positional arguments** : (\*args)</span>
 
 <!-- -->
 
@@ -856,7 +856,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
     add(2, 3, 4, 5) # Returns 14
 
--   <span id="824a">**keyword arguments** : (\*kwargs)</span>
+-   <span id="824a">**keyword arguments** : (\*kwargs)</span>
 
 <!-- -->
 
@@ -890,7 +890,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Importing in Python
+### Importing in Python
 
 -   <span id="ea2a">Modules are similar to packages in Node.js</span>
 -   <span id="94fa">Come in different types: Built-In, Third-Party, Custom.</span>
@@ -898,11 +898,11 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 **Terms**
 
--   <span id="e81a">**module** : Python code in a separate file.</span>
--   <span id="cf63">**package** : Path to a directory that contains modules.</span>
--   <span id="30ba">\***\*init**.py\*\* : Default file for a package.</span>
--   <span id="64a7">**submodule** : Another file in a module’s folder.</span>
--   <span id="6cd7">**function** : Function in a module.</span>
+-   <span id="e81a">**module** : Python code in a separate file.</span>
+-   <span id="cf63">**package** : Path to a directory that contains modules.</span>
+-   <span id="30ba">\***\*init**.py\*\* : Default file for a package.</span>
+-   <span id="64a7">**submodule** : Another file in a module’s folder.</span>
+-   <span id="6cd7">**function** : Function in a module.</span>
 -   <span id="95fe">A module can be any file but it is usually created by placing a special file `__init__.py` into a folder.</span>
 -   <span id="06e5">Try to avoid importing with wildcards in Python.</span>
 -   <span id="04c3">Use multiple lines for clarity when importing.</span>
@@ -920,9 +920,9 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Watching Out for Python 2
+### Watching Out for Python 2
 
--   <span id="8bca">Python 3 removed `<>` and only uses `!=`</span>
+-   <span id="8bca">Python 3 removed `<>` and only uses `!=`</span>
 -   <span id="b81a">`format()` was introduced with P3</span>
 -   <span id="4a2e">All strings in P3 are unicode and encoded.</span>
 -   <span id="fec8">`md5` was removed.</span>
@@ -932,7 +932,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Classes In Python
+### Classes In Python
 
 -   <span id="b84b">Classes are a way of combining information and behavior.</span>
 -   <span id="2a24">Classes are blueprints to make objects.</span>
@@ -1022,7 +1022,7 @@ Plus resources for learning data structures and algorithms in python at the bott
             return self._y
 
 -   <span id="9c5d">_All instance variables should be considered non-public_</span>
--   <span id="9262">\***\*slots\*\*** : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span>
+-   <span id="9262">\***\*slots\*\*** : Dunder class variable used to reserve memory for the instance variables that you know will you will use.</span>
 
 <!-- -->
 
@@ -1073,7 +1073,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ---
 
-### Properties for Classes
+### Properties for Classes
 
 -   <span id="721b">Getters and Setters are used in object-oriented programming to add validation logic around getting and setting a value.</span>
 
@@ -1084,7 +1084,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(bird.get_x(), bird.get_y())
 
 -   <span id="8100">Getting the x and y values of our class can get very cumbersome.</span>
--   <span id="7cc1">**Decorators** : Allow us to change the way methods get invoked.</span>
+-   <span id="7cc1">**Decorators** : Allow us to change the way methods get invoked.</span>
 -   <span id="20bc">Always start with the @ symbol.</span>
 -   <span id="940f">Can be applied to methods, classes, and parameters.</span>
 -   <span id="98d2">Built in decorator named `property` that you can apply to a method to make it readable.</span>
@@ -1142,9 +1142,9 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 -   <span id="9b2c">List comprehensions are the equivalent of wrapped up filter namp array methods while also allowing nested loops.</span>
 -   <span id="f25d">`new_list = [expression for member in iterable]`</span>
--   <span id="e7c4">**expression** : member itself, a call to a methd, or any other valid expression that returns a value.</span>
--   <span id="2aec">**member** : object or value in the list or iterable.</span>
--   <span id="f6de">**iterable** : iterable.</span>
+-   <span id="e7c4">**expression** : member itself, a call to a methd, or any other valid expression that returns a value.</span>
+-   <span id="2aec">**member** : object or value in the list or iterable.</span>
+-   <span id="f6de">**iterable** : iterable.</span>
 
 `new_list = [expression for member in iterable (if conditional)]`
 

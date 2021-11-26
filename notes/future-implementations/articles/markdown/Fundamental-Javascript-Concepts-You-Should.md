@@ -6,14 +6,14 @@ Plain Old JS Object Lesson Concepts
 
 ### Fundamental Javascript Concepts You Should Understand
 
-### Plain Old JS Object Lesson Concepts
+### Plain Old JS Object Lesson Concepts
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" /></figure>-   <span id="d911">Label variables as either Primitive vs. Reference</span>
 -   <span id="42a0">primitives: strings, booleans, numbers, null and undefined</span>
 -   <span id="4423">primitives are immutable</span>
 -   <span id="fd1a">refereces: objects (including arrays)</span>
 -   <span id="d581">references are mutable</span>
--   <span id="65e2">Identify when to use `.` vs `[]` when accessing values of an object</span>
+-   <span id="65e2">Identify when to use `.` vs `[]` when accessing values of an object</span>
 -   <span id="eb9d">dot syntax `object.key`</span>
 -   <span id="8e03">easier to read</span>
 -   <span id="1662">easier to write</span>
@@ -24,7 +24,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="76ca">strings that start with numbers can be use as keys</span>
 -   <span id="822a">Write an object literal with a variable key using interpolation</span>
 
-#### put it in brackets to access the value of the variable, rather than just make the value that string
+#### put it in brackets to access the value of the variable, rather than just make the value that string
 
     let a = "b";
         let obj = {
@@ -38,7 +38,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="b548">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
 -   <span id="f39b">`Object.values(obj)` returns an array of the values in `obj`</span>
 
-#### Iterate through an object using a `for in` loop
+#### Iterate through an object using a `for in` loop
 
     let printValues = function(obj) {
           for (let key in obj) {
@@ -47,7 +47,7 @@ Plain Old JS Object Lesson Concepts
           }
       }
 
-#### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+#### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
 -   <span id="58a5">`...rest` syntax will store all additional arguments in an array</span>
 -   <span id="5f8b">array will be empty if there are no additional arguments</span>
@@ -62,7 +62,7 @@ Plain Old JS Object Lesson Concepts
             })
         }
 
-#### Use `...spread` syntax for Object literals and Array literals
+#### Use `...spread` syntax for Object literals and Array literals
 
     let arr1 = ["a", "b", "c"];
       let longer = [...arr1, "d", "e"]; // ["a", "b", "c", "d", "e"]
@@ -118,7 +118,7 @@ Plain Old JS Object Lesson Concepts
     let { favorites: {color, food: vegetable} } = obj;
     console.log(color, vegetable); //=> mauve spaghetti squash
 
-#### Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+#### Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
     //
       let elementCounts = function(array) {
@@ -131,7 +131,7 @@ Plain Old JS Object Lesson Concepts
       }
       console.log(elementCounts(["e", "f", "g", "f"])); // => Object {e: 1, f: 2, g: 1}
 
-### Callbacks Lesson Concepts
+### Callbacks Lesson Concepts
 
 -   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
 -   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
@@ -214,7 +214,7 @@ Plain Old JS Object Lesson Concepts
           return true;
       }
 
-### Scope Lesson Concepts
+### Scope Lesson Concepts
 
 -   <span id="685f">Identify the difference between `const`, `let`, and `var` declarations</span>
 -   <span id="7308">`const` - cannot reassign variable, scoped to block</span>
@@ -243,7 +243,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="6ea5">so an inner scope can access outer scope variables</span>
 -   <span id="5188">but an outer scope can never access inner scope variables</span>
 
-#### Define an arrow function
+#### Define an arrow function
 
     let arrowFunction = (param1, param2) => {
 
@@ -259,7 +259,7 @@ Plain Old JS Object Lesson Concepts
 
     // you don’t have to assign to variable, can be anonymous // if you never need to use it again param => param + 1;
 
-#### Given an arrow function, deduce the value of `this` without executing the code
+#### Given an arrow function, deduce the value of `this` without executing the code
 
 -   <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
@@ -396,7 +396,7 @@ Plain Old JS Object Lesson Concepts
     let counter3 = counter2;
     console.log(counter3());
 
-#### Define a method that references `this` on an object literal
+#### Define a method that references `this` on an object literal
 
 -   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
@@ -459,7 +459,7 @@ Plain Old JS Object Lesson Concepts
     // instead of changing the dog we changed the global name!!!
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
-### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
 -   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
 -   <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
@@ -544,7 +544,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
 -   <span id="9371">Object — Reference</span>
 -   <span id="64c8">Function — Reference</span>
 
-#### 2. Identify when to use . vs \[\] when accessing values of an object
+#### 2. Identify when to use . vs \[\] when accessing values of an object
 
     let obj = {
         "one": 1,
@@ -570,7 +570,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
     }
     console.log(obj2);
 
-#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
+#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
 
     function doesKeyExist(obj, key) {
         // obj[key] !== undefined
@@ -585,7 +585,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
     console.log(doesKeyExist(course, 'course')); // => true
     console.log(doesKeyExist(course, 'name')); // => false
 
-#### 5. Utilize Object.keys and Object.values in a function
+#### 5. Utilize Object.keys and Object.values in a function
 
     function printKeys(object) {
         return Object.keys(object);
@@ -604,7 +604,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
         dog2: "Belka"
     }));
 
-#### 6. Iterate through an object using a for in loop
+#### 6. Iterate through an object using a for in loop
 
     let player = {
         name: "Sergey",
@@ -617,7 +617,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
 
     console.log(Object.entries(player));
 
-#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
+#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
 
     function restSum(...otherNums) {
         let sum = 0;
@@ -633,7 +633,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
     console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // => 45
     console.log(restSum(0)); // => 0
 
-#### 8. Use …spread syntax for Object literals and Array literals
+#### 8. Use …spread syntax for Object literals and Array literals
 
     let numArray = [1, 2, 3];
     let moreNums = [...numArray, 4, 5, 6]
@@ -655,14 +655,14 @@ Javascript considers most data types to be 'primitive’, these data types are i
 
     console.log(shoe);
 
-#### 9. Destructure an array to reference specific elements
+#### 9. Destructure an array to reference specific elements
 
     let arr = ['one', 'two', 'three'];
 
     let [first] = arr;
     console.log(first);
 
-#### 10. Destructure an object to reference specific values
+#### 10. Destructure an object to reference specific values
 
     let me = {
         name: "Ian",
@@ -685,7 +685,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
     console.log(musical_instruments);
     console.log(sisters);
 
-#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
+#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
 
     function charCount(inputString) {
 
@@ -703,7 +703,7 @@ Javascript considers most data types to be 'primitive’, these data types are i
 
     console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
 
-### Review of Concepts
+### Review of Concepts
 
 #### 1. Identify the difference between const, let, and var declarations
 
@@ -731,9 +731,9 @@ Javascript considers most data types to be 'primitive’, these data types are i
 -   <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
 -   <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
 
-#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
-Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
+Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
 
     // function and block scope in this example
     function run() {
@@ -755,7 +755,7 @@ Consider this `run` function, inside which `foo` and `bar` have `function scope`
 
 Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
 
-Consider this `run` function, inside of which `foo` has `function scope` .
+Consider this `run` function, inside of which `foo` has `function scope` .
 
     function run() {
         console.log(foo); // undefined
@@ -782,7 +782,7 @@ Consider this `func1` function and it's nested scopes.
         }
     }
 
-#### 6. Implement a closure and explain how the closure effects scope
+#### 6. Implement a closure and explain how the closure effects scope
 
     const adder = (arg1) => {
         return (arg2) => {
@@ -794,11 +794,11 @@ Consider this `func1` function and it's nested scopes.
     const result = func2(2);
     console.log(result); // => 4;
 
-#### 4. Define an arrow function
+#### 4. Define an arrow function
 
     const returnValue = (val) => val;
 
-This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val` , because this is a single-line function.
+This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val` , because this is a single-line function.
 
 Identically, we could write
 
@@ -806,7 +806,7 @@ Identically, we could write
         return val;
     };
 
-#### 5. Given an arrow function, deduce the value of `this` without executing the code
+#### 5. Given an arrow function, deduce the value of `this` without executing the code
 
     function fDAdder(arr) {
         console.log(this);
@@ -828,7 +828,7 @@ If we use a function declaration style function, the `this` variable is set to t
 
 In this example, we use a fat arrow style function. Note that when we declare a functions like this `this` becomes
 
-#### 7. Define a method that references this on an object literal
+#### 7. Define a method that references this on an object literal
 
     const pokemon = {
         firstname: 'Pika',
@@ -841,7 +841,7 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
     console.log(pokemon.getPokeName());
 
-#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
+#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
 
     const pokemon = {
         firstname: 'Pika',
@@ -856,7 +856,7 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
     logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
 
-#### 9. Given a code snippet, identify what `this` refers to
+#### 9. Given a code snippet, identify what `this` refers to
 
     function Person(name) {
         // this.name = name;
@@ -876,7 +876,7 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
     const jane = new Person("Jane");
 
-### Check Out My New Blog:
+### Check Out My New Blog:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

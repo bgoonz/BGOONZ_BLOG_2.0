@@ -104,12 +104,12 @@
                         <p name="0047" id="0047" class="graf graf--p graf-after--figure">
                             If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install
                             <code class="markup--code markup--p-code">psql</code> in your Ubuntu installation. Then you will also install Postbird, a
-                            cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly’ …(personally I prefer to just use
+                            cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly’ …(personally I prefer to just use
                             the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the
                             <strong class="markup--strong markup--p-strong">command line tool </strong><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">psql</strong></code><strong class="markup--strong markup--p-strong">.</strong>
                         </p>
                         <h3 name="d62d" id="d62d" class="graf graf--h3 graf-after--p">
-                            Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
+                            Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
                         </h3>
                         <p name="a16a" id="a16a" class="graf graf--p graf-after--h3">
                             <strong class="markup--strong markup--p-strong">Postgres</strong>, is a
@@ -181,7 +181,7 @@
                             <strong class="markup--strong markup--h3-strong">Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!</strong>
                         </h3>
                         <h3 name="17ae" id="17ae" class="graf graf--h3 graf-after--h3">
-                            I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
+                            I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
                         </h3>
                         <ul class="postList">
                             <li name="25b7" id="25b7" class="graf graf--li graf-after--h3">Sure. 5432. Good to go. Next.</li>
@@ -189,7 +189,7 @@
                             <li name="b378" id="b378" class="graf graf--li graf-after--li">Yep. Looks good. Next.</li>
                         </ul>
                         <p name="2bc2" id="2bc2" class="graf graf--p graf-after--li">Insert pop culture reference to pass the time</p>
-                        <h3 name="9523" id="9523" class="graf graf--h3 graf-after--p">Installing PostgreSQL Client Tools on Ubuntu</h3>
+                        <h3 name="9523" id="9523" class="graf graf--h3 graf-after--p">Installing PostgreSQL Client Tools on Ubuntu</h3>
                         <p name="e3b4" id="e3b4" class="graf graf--p graf-after--h3">
                             Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs
                             running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell
@@ -225,7 +225,7 @@
                             information about the version of the installed tools. If it tells you that it can&#39;t find the command, try these instructions
                             over.
                         </p>
-                        <h3 name="aace" id="aace" class="graf graf--h3 graf-after--p">Configuring the client tools</h3>
+                        <h3 name="aace" id="aace" class="graf graf--h3 graf-after--p">Configuring the client tools</h3>
                         <p name="1ade" id="1ade" class="graf graf--p graf-after--h3">
                             Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re
                             going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this,
@@ -238,11 +238,11 @@
                         <p name="91e2" id="91e2" class="graf graf--p graf-after--p">
                             Make sure you’re in your Ubuntu home directory. You can do that by typing
                             <code class="markup--code markup--p-code">cd</code> and hitting enter. Use
-                            <code class="markup--code markup--p-code">ls</code> to find out if you have a <code class="markup--code markup--p-code">.bashrc</code>
-                            file. Type <code class="markup--code markup--p-code">ls .bashrc</code>. If it shows you that one exists, that&#39;s the one you
+                            <code class="markup--code markup--p-code">ls</code> to find out if you have a <code class="markup--code markup--p-code">.bashrc</code>
+                            file. Type <code class="markup--code markup--p-code">ls .bashrc</code>. If it shows you that one exists, that&#39;s the one you
                             will add the alias to. If it tells you that there is no file named that, then type
-                            <code class="markup--code markup--p-code">ls .profile</code>. If it shows you that one exists, that&#39;s the one you will add
-                            the alias to. If it shows you that it does not exist, then use the file name <code class="markup--code markup--p-code">.bashrc</code>
+                            <code class="markup--code markup--p-code">ls .profile</code>. If it shows you that one exists, that&#39;s the one you will add
+                            the alias to. If it shows you that it does not exist, then use the file name <code class="markup--code markup--p-code">.bashrc</code>
                             in the following section.
                         </p>
                         <p name="8c06" id="8c06" class="graf graf--p graf-after--p">
@@ -317,7 +317,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
 -rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass</pre>
                         <p name="a9f8" id="a9f8" class="graf graf--p graf-after--pre">
                             Now, try connecting to PostreSQL by typing <code class="markup--code markup--p-code">psql postgres</code>. Because you added the
-                            alias to your startup script, and because you created your <strong class="markup--strong markup--p-strong">.pgpass</strong>
+                            alias to your startup script, and because you created your <strong class="markup--strong markup--p-strong">.pgpass</strong>
                             file, it should now connect without prompting you for any credentials! Type
                             <code class="markup--code markup--p-code">\q</code> and press Enter to exit the PostgreSQL command line client.
                         </p>
@@ -357,7 +357,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
                             time.
                         </p>
                         <h3 name="6ca1" id="6ca1" class="graf graf--h3 graf-after--p">
-                            Now.. if you still have some gas in the tank… let’s put our new tools to work:
+                            Now.. if you still have some gas in the tank… let’s put our new tools to work:
                         </h3>
                         <h3 name="9301" id="9301" class="graf graf--h3 graf-after--h3">The node-postgres</h3>
                         <p name="aca9" id="aca9" class="graf graf--p graf-after--h3">
@@ -390,7 +390,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
                         <p name="abb9" id="abb9" class="graf graf--p graf-after--p">
                             In some of the examples, we use this <code class="markup--code markup--p-code">cars</code> table.
                         </p>
-                        <h3 name="e064" id="e064" class="graf graf--h3 graf-after--p">The node-postgres first example</h3>
+                        <h3 name="e064" id="e064" class="graf graf--h3 graf-after--p">The node-postgres first example</h3>
                         <p name="efd6" id="efd6" class="graf graf--p graf-after--h3">
                             In the first example, we connect to the PostgreSQL database and return a simple SELECT query result.
                         </p>
@@ -425,7 +425,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
                         </p>
                         <pre name="ddba" id="ddba" class="graf graf--pre graf-after--p">node first.js<br><strong class="markup--strong markup--pre-strong">5</strong></pre>
                         <p name="4e27" id="4e27" class="graf graf--p graf-after--pre">This is the output.</p>
-                        <h3 name="831a" id="831a" class="graf graf--h3 graf-after--p">The node-postgres column names</h3>
+                        <h3 name="831a" id="831a" class="graf graf--h3 graf-after--p">The node-postgres column names</h3>
                         <p name="0487" id="0487" class="graf graf--p graf-after--h3">In the following example, we get the columns names of a database.</p>
                         <blockquote name="3796" id="3796" class="graf graf--blockquote graf-after--p">column_names.js</blockquote>
                         <pre name="c321" id="c321" class="graf graf--pre graf-after--blockquote">const pg = require('pg’);</pre>
@@ -444,7 +444,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
                         <p name="bd66" id="bd66" class="graf graf--p graf-after--pre">
                             The output shows three column names of the <code class="markup--code markup--p-code">cars</code> table.
                         </p>
-                        <h3 name="1234" id="1234" class="graf graf--h3 graf-after--p">Selecting all rows</h3>
+                        <h3 name="1234" id="1234" class="graf graf--h3 graf-after--p">Selecting all rows</h3>
                         <p name="58e7" id="58e7" class="graf graf--p graf-after--h3">In the next example, we select all rows from the database table.</p>
                         <blockquote name="a03a" id="a03a" class="graf graf--blockquote graf-after--p">all_rows.js</blockquote>
                         <pre name="218a" id="218a" class="graf graf--pre graf-after--blockquote">const pg = require('pg’);<br>const R = require('ramda’);</pre>
@@ -458,7 +458,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre>
                         <pre name="0534" id="0534" class="graf graf--pre graf-after--pre">}).finally(() =&gt; {<br>client.end()<br>});</pre>
                         <p name="807e" id="807e" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">TBC…</strong></p>
                         <h4 name="f53f" id="f53f" class="graf graf--h4 graf-after--p">
-                            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+                            If you found this guide helpful feel free to checkout my github/gists where I host similar content:
                         </h4>
                         <p name="1c2f" id="1c2f" class="graf graf--p graf-after--h4">
                             <a href="https://gist.github.com/bgoonz" data-href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">bgoonz’s gists · GitHub</a>

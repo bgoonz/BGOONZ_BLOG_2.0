@@ -4,7 +4,7 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 ---
 
-### The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
+### The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
 
 #### **A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with client-side code and teach/share with others without the hassle of configuring a development environment.**
 
@@ -36,13 +36,13 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 ### My personal favorite for it’s simplicity, versatility and capabilities.
 
-### ⚫No downloads, no configs, no setups
+### ⚫No downloads, no configs, no setups
 
 In your browser. Repl.it runs fully in your browser, so you can get started coding in seconds. No more ZIPs, PKGs, DMGs and WTFs.
 
-> Any OS, any device**_(I’m looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
+> Any OS, any device**_(I’m looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
 
-### ⚫Clone, commit and push to any GitHub repo.
+### ⚫Clone, commit and push to any GitHub repo.
 
 Repl from Repo. Get started with any Github repo, right from your browser. Commit and push without touching your terminal.
 
@@ -50,15 +50,15 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 **&gt;A new but fundamentally important feature**
 
-### ⚫<a href="https://blog.replit.com/unit-tests" class="markup--anchor markup--h3-anchor">No-setup Unit Testing</a>
+### ⚫<a href="https://blog.replit.com/unit-tests" class="markup--anchor markup--h3-anchor">No-setup Unit Testing</a>
 
 **&gt;Unit testing is a powerful way to verify that code works as intended and creates a quick feedback loop for development & learning. However, setting up a reproducible unit-testing environment is a time-consuming and delicate affair. Repl.it now features zero-setup unit testing!**
 
-### ⚫<a href="https://blog.replit.com/https" class="markup--anchor markup--h3-anchor">HTTPS by default</a>
+### ⚫<a href="https://blog.replit.com/https" class="markup--anchor markup--h3-anchor">HTTPS by default</a>
 
-#### In the example below I have 72 solved Javascript Leetcode Problems but REPL.IT can handle almost any language you can think of.
+#### In the example below I have 72 solved Javascript Leetcode Problems but REPL.IT can handle almost any language you can think of.
 
-### Here’s another one that contains the Repl.it Docs:
+### Here’s another one that contains the Repl.it Docs:
 
 ---
 
@@ -66,7 +66,7 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 > <a href="https://jsfiddle.net/" class="markup--anchor markup--blockquote-anchor"><strong><em>jsFiddle</em></strong></a> **_is a cloud-based JavaScript code playground that allows web developers to tweak their code and see the results of this tweaking in real time. The editor supports not only JavaScript and its variants but also HTML and CSS code, and it further supports popular JavaScript frameworks, such as jQuery, AngularJS, ReactiveJS and D3. The ad-supported site is also completely free to use._**
 
-### ⚫Entering and running code
+### ⚫Entering and running code
 
 > JSFiddle has the notion of panels (or tabs if you switch into the tabbed layout), there are 4 panels, 3 where you can enter code, and 1 to see the result.
 
@@ -76,7 +76,7 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 Once you enter code, just hit **Run** in the top actions bar, and the fourth panel with results will appear.
 
-### ⚫Saving and Forking code
+### ⚫Saving and Forking code
 
 -   <span id="f034">**Save** / **Update** will do what you think, it’ll save a new fiddle or update an existing one (and add a version number to it)</span>
 -   <span id="f634">**Fork** will split out an existing fiddle into a new one, starting with version 0</span>
@@ -98,7 +98,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 **This is the crux of what prevents NPM from working natively in-browser. Resolving, downloading, and extracting the hundreds of megabytes (or gigabytes) typical frontend projects contain in their** `node_modules` **folder is a challenge browsers just aren’t well suited for. Additionally, this is also why existing server side solutions to this problem have proven to be** <a href="https://github.com/unpkg/unpkg/issues/35#issuecomment-317128917" class="markup--anchor markup--p-anchor"><strong>slow, unreliable</strong></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*sl4vb3fP9-MErkioiCOyKQ.png" class="graf-image" /></figure>### Then just paste the embed code in an iframe and you’re good to go!
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*sl4vb3fP9-MErkioiCOyKQ.png" class="graf-image" /></figure>### Then just paste the embed code in an iframe and you’re good to go!
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png" class="graf-image" /></figure><a href="https://stackblitz.com/" class="markup--anchor markup--blockquote-anchor"><strong><em>On StackBlitz.com</em></strong></a>**, you can create new projects and get the embed code from the 'Share’ dropdown link in the top navigation like so:**
 
@@ -108,13 +108,13 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*6QF4ywBOMVFtS_MukRkLKw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*5ekSGpNwJ28hI9Aog8V4DQ.png" class="graf-image" /></figure>🡩 **Alternatively, you can also use StackBlitz’s** <a href="https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects" class="markup--anchor markup--blockquote-anchor"><strong>Javascript SDK methods</strong></a> **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
 
-<span class="graf-dropCap">H</span>**ere’s a sample project of mine, it’s a medium clone… _(So Metta)_… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
+<span class="graf-dropCap">H</span>**ere’s a sample project of mine, it’s a medium clone… _(So Metta)_… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
 
 ---
 
 ### Glitch
 
-### ⚫<a href="https://glitch.com/" class="markup--anchor markup--h3-anchor"><strong><em>Glitch</em></strong></a> ** provides two project templates that you can use to start creating your app:**
+### ⚫<a href="https://glitch.com/" class="markup--anchor markup--h3-anchor"><strong><em>Glitch</em></strong></a> ** provides two project templates that you can use to start creating your app:**
 
 1.  <span id="9488">**Classic Website**</span>
 2.  <span id="ff69">**Node.js**</span>
@@ -135,7 +135,7 @@ An existing project will be identified by Glitch as a **static** site if it does
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ppgGuMTHg-YxnImp.png" class="graf-image" /></figure>If you are looking to build a full-stack JavaScript application, choose the **Node.js** template. This template includes both front-end and back-end code using the popular <a href="https://expressjs.com/" class="markup--anchor markup--p-anchor">Express</a> Node.js application framework.
 
-### ⚫**Here are some other ways to get started on Glitch…**
+### ⚫**Here are some other ways to get started on Glitch…**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*duFOnYTuCHLsfxFi.png" class="graf-image" /></figure>-   <span id="4b22">Create an app by <a href="https://glitch.happyfox.com/kb/article/20-can-i-import-code-from-a-github-repository/" class="markup--anchor markup--li-anchor">importing a GitHub repo</a>.</span>
 -   <span id="dbd9">Build an app that integrates with a popular third-party platform or framework, by remixing <a href="https://glitch.com/create" class="markup--anchor markup--li-anchor">one of these starter templates</a>.</span>
@@ -151,13 +151,13 @@ An existing project will be identified by Glitch as a **static** site if it does
 -   <span id="5dd4"><a href="https://glitch.com/@glitch/building-blocks" class="markup--anchor markup--li-anchor">Building Blocks</a></span>
 -   <span id="0c79"><a href="https://glitch.com/@glitch/learn-to-code" class="markup--anchor markup--li-anchor">Learn to Code</a></span>
 
-### Here’s a (temporarily) broken version of my personal portfolio .. hosted on glitch
+### Here’s a (temporarily) broken version of my personal portfolio .. hosted on glitch
 
-#### Click 'view app’ below to see how it renders
+#### Click 'view app’ below to see how it renders
 
 ---
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -165,7 +165,7 @@ An existing project will be identified by Glitch as a **static** site if it does
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>

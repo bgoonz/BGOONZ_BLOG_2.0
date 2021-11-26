@@ -6,7 +6,7 @@ Web Development
 
 ### Web Dev Resources
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*S5zCjm6p0WSZJQfT" alt="Photo by Roman Synkevych on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@synkevych?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Roman Synkevych</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Web Development
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*S5zCjm6p0WSZJQfT" alt="Photo by Roman Synkevych on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@synkevych?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Roman Synkevych</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Web Development
 
 -   <span id="7f87"><a href="https://caniuse.com/#home" class="markup--anchor markup--li-anchor">Check cross-browser compatibility for CSS, JavaScript and HTML</a></span>
 -   <span id="6491"><a href="https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a" class="markup--anchor markup--li-anchor">Modern front-end Cheatsheets</a></span>
@@ -99,7 +99,7 @@ Here’s a repo where I hoard resource lists!
 
 ---
 
-#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
+#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
 
 > <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz’s</strong> gists · GitHub</a>
 

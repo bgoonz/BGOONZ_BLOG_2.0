@@ -2,7 +2,7 @@
 
 Inject analytics or other scripts into the HTML of your site.---
 
--   before `</body>`
+-   before `</body>`
 
     scroll2top
 
@@ -34,7 +34,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     spotify
 
@@ -44,7 +44,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     scroll2-vanilla
 
@@ -67,7 +67,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -93,7 +93,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     iframe-style
 
@@ -115,7 +115,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     addThis
 
@@ -128,7 +128,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     analytics-n-addsense
 
@@ -162,7 +162,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     netlify-oauth
 
@@ -192,7 +192,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     github-netlify-oauth
 
@@ -204,7 +204,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     content-authoring
 
@@ -214,7 +214,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     Algolia-Search
 
@@ -234,7 +234,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     searcg
 
@@ -260,7 +260,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
  ---
 
--   before `</head>`
+-   before `</head>`
 
     algolia-search-cdn
 

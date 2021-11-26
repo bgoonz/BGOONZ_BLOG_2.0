@@ -4,7 +4,7 @@ Because they’re just about the most important data structure there is.
 
 ---
 
-### Graph Data Structure Interview Questions At A Glance
+### Graph Data Structure Interview Questions At A Glance
 
 Because they’re just about the most important data structure there is.
 
@@ -47,19 +47,19 @@ Both have strengths and weaknesses.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*PunyRdBT24D0NkD5AdhL9Q.png" class="graf-image" /></figure>### Questions
 
-#### What is a Graph?
+#### What is a Graph?
 
 A Graph is a data structure that models objects and pairwise relationships between them with nodes and edges. For example: Users and friendships, locations and paths between them, parents and children, etc.
 
-#### Why is it important to learn Graphs?
+#### Why is it important to learn Graphs?
 
 Graphs represent relationships between data. Anytime you can identify a relationship pattern, you can build a graph and often gain insights through a traversal. These insights can be very powerful, allowing you to find new relationships, like users who have a similar taste in music or purchasing.
 
-#### How many types of graphs are there?
+#### How many types of graphs are there?
 
 Graphs can be directed or undirected, cyclic or acyclic, weighted or unweighted. They can also be represented with different underlying structures including, but not limited to, adjacency lists, adjacency matrices, object and pointers, or a custom solution.
 
-#### What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?
+#### What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?
 
 It depends on the implementation. (<a href="https://github.com/LambdaSchool/Graphs/tree/master/objectives/graph-representations" class="markup--anchor markup--p-anchor">Graph Representations</a>). Before choosing an implementation, it is wise to consider the tradeoffs and complexities of the most commonly used operations.
 
@@ -209,7 +209,7 @@ Both are constant-time operations.
 
 Takeaway: Finding edges from both adjacency lists and matrices is very efficient.
 
-#### Get All Edges from Vertex
+#### Get All Edges from Vertex
 
 -   <span id="798e">**Adjacency Matrix**: O(V)</span>
 -   <span id="fa79">**Adjacency List**: O(1)</span>
@@ -234,7 +234,7 @@ Can use breadth-first search when searching a graph; explores graph outward in r
 
 #### BFS
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WOvrysI4fX6ePqN-.gif" class="graf-image" /></figure>### Applications of BFS
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WOvrysI4fX6ePqN-.gif" class="graf-image" /></figure>### Applications of BFS
 
 -   <span id="149a">pathfinding, routing</span>
 -   <span id="9ab5">web crawlers</span>
@@ -290,7 +290,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 #### DFS:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*DZVdn1kWaiJXQ_zc.gif" class="graf-image" /></figure>### Applications of DFS
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*DZVdn1kWaiJXQ_zc.gif" class="graf-image" /></figure>### Applications of DFS
 
 -   <span id="044e">preferred method for exploring a graph if we want to ensure we visit every node in graph</span>
 -   <span id="b086">finding minimum spanning trees of weighted graphs</span>
@@ -398,7 +398,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 -   <span id="8d05">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="6fac">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*0EdGqDUlj_HEnyEc.png" class="graf-image" /></figure>-   <span id="fe92">Any number of edges may leave a given node</span>
 -   <span id="915b">A Path is a sequence of nodes on a graph</span>
@@ -412,9 +412,9 @@ dives down the graph as far as it can before backtracking and exploring another 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*u8Nu829gPtxU6J0siwljJA.png" class="graf-image" /></figure>### Dense Graph
 
 -   <span id="7b24">Dense Graph — A graph with lots of edges.</span>
--   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:</span>
+-   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:</span>
 -   <span id="0e05">Let’s find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
--   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
+-   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
 -   <span id="146f">When the number of edges in the graph is close to the maximum number of edges, the graph is dense.</span>
 
 ### Sparse Graph

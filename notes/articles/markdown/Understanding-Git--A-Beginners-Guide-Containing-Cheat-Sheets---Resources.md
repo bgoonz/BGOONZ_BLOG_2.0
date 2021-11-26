@@ -6,14 +6,14 @@ Basic Git Work Flow.
 
 ### Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
 
-### Resources, Cheat Sheets & Links @Bottom of the Page!
+### Resources, Cheat Sheets & Links @Bottom of the Page!
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*68fyM5AI85U_I3vo.jpg" class="graf-image" /></figure>For More Advanced Readers, or those with very limited free time… here’s an abridged Git Reference.
 
 <a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong><br />
 <em>Refs</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### What’s a distributed version control system?
+### What’s a distributed version control system?
 
 Git is an example of a distributed version control system (DVCS) commonly used for open source and commercial software development. DVCSs allow full access to every file, branch, and iteration of a project, and allows every user access to a full and self-contained history of all changes. Unlike once popular centralized version control systems, DVCSs like Git don’t need a constant connection to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
 
@@ -45,7 +45,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 > <a href="#2-sweet-you-have-the-cloned-repo-in-your-preferred-directory-now-lets-make-your-own-repo-on-github-create-a-new-repository" class="markup--anchor markup--blockquote-anchor"><em>2. Make your own repo</em></a>_._
 
-> <a href="#3-next-copy-thegit-link-that-is-on-the-next-page-do-not-do-any-other-steps-on-this-pagethat-is-for-when-you-do-not-clone-arepo" class="markup--anchor markup--blockquote-anchor"><em>3. Next, copy the .git link that is on the next page.</em></a>
+> <a href="#3-next-copy-thegit-link-that-is-on-the-next-page-do-not-do-any-other-steps-on-this-pagethat-is-for-when-you-do-not-clone-arepo" class="markup--anchor markup--blockquote-anchor"><em>3. Next, copy the .git link that is on the next page.</em></a>
 
 > <a href="#4-whenver-you-clone-a-repo-it-already-has-agit-directory-with-certain-configurations-set-up-to-be-able-to-push-this-repo-to-your-newly-created-github-repo-we-have-to-change-the-remoteorigin" class="markup--anchor markup--blockquote-anchor"><em>4. Whenver you clone a repo</em></a>
 
@@ -115,11 +115,11 @@ Working in repositories keeps development projects organized and protected. Deve
 
 ### Git Flow
 
-### Cloning a repo and changing the remote url
+### Cloning a repo and changing the remote url
 
 (These steps are only for when you initially clone a project repo. Not when you clone your partners repo to collaborate together. To do that, you only have to complete step 1!)
 
-### 1. The first step is to clone the repo!
+### 1. The first step is to clone the repo!
 
 -   <span id="b2f6">Navigate to the repo you want to clone and hit the big green code button. Copy the link given.</span>
 
@@ -132,13 +132,13 @@ Working in repositories keeps development projects organized and protected. Deve
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png" class="graf-image" /></figure>### 3. Next,
 
-**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
+**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
 
 ---
 
-### These are the commands GitHub provides when you create a new Repo:
+### These are the commands GitHub provides when you create a new Repo:
 
-#### Quick setup — if you’ve done this kind of thing before
+#### Quick setup — if you’ve done this kind of thing before
 
 Set up in Desktop
 
@@ -146,9 +146,9 @@ or
 
 HTTPSSSH
 
-Get started by <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master" class="markup--anchor markup--p-anchor">creating a new file</a> or <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/upload" class="markup--anchor markup--p-anchor">uploading an existing file</a>. We recommend every repository include a <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?readme=1" class="markup--anchor markup--p-anchor">README</a>, <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=LICENSE.md" class="markup--anchor markup--p-anchor">LICENSE</a>, and <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=.gitignore" class="markup--anchor markup--p-anchor">.gitignore</a>.
+Get started by <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master" class="markup--anchor markup--p-anchor">creating a new file</a> or <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/upload" class="markup--anchor markup--p-anchor">uploading an existing file</a>. We recommend every repository include a <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?readme=1" class="markup--anchor markup--p-anchor">README</a>, <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=LICENSE.md" class="markup--anchor markup--p-anchor">LICENSE</a>, and <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/master?filename=.gitignore" class="markup--anchor markup--p-anchor">.gitignore</a>.
 
-### …or create a new repository on the command line
+### …or create a new repository on the command line
 
     echo "# the-meaning-of-life-is-42" >> README.md
     git init
@@ -158,7 +158,7 @@ Get started by <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/new/
     git remote add origin https://github.com/bgoonz/the-meaning-of-life-is-42.git
     git push -u origin master
 
-### …or push an existing repository from the command line
+### …or push an existing repository from the command line
 
     git remote add origin https://github.com/bgoonz/the-meaning-of-life-is-42.git
     git branch -M master
@@ -170,9 +170,9 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 <a href="https://github.com/bgoonz/the-meaning-of-life-is-42/import" class="markup--anchor markup--p-anchor">Import code</a>
 
-### 4. Whenever you clone a repo:
+### 4. Whenever you clone a repo:
 
-#### It already has a .git directory with certain configurations set up. To be able to push this repo to your newly created GitHub repo we have to change the remote origin.
+#### It already has a .git directory with certain configurations set up. To be able to push this repo to your newly created GitHub repo we have to change the remote origin.
 
 -   <span id="dda6">To do that, just run this command: (Make sure you are inside the repo you cloned)</span>
 
@@ -182,9 +182,9 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 OR:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*HTnMuxJ4tCDJ3I49cUrP8w.png" class="graf-image" /></figure>### 5. You can now run `git push` and it will push to your newly created repo.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*HTnMuxJ4tCDJ3I49cUrP8w.png" class="graf-image" /></figure>### 5. You can now run `git push` and it will push to your newly created repo.
 
-### Basic Git Work Flow.
+### Basic Git Work Flow.
 
 -   <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
 -   <span id="9934">`git add .` - stages modified files to be committed.</span>
@@ -207,7 +207,7 @@ Like many disciplines, learning Git is just a matter of learning a new language.
 
 It’s also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you’ll focus on the commands you’ll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you’re getting started.
 
-### A glance into GIT
+### A glance into GIT
 
 Before you look at any practical examples, let’s talk about how Git works behind the scenes.
 
@@ -231,7 +231,7 @@ Now, let’s get practical!
 
 You can create a repository with `git init`. Running this command will initialize a new Git repo in your current directory. It's important to remember that you only want a repository for your project and not your whole hard drive, so always run this command inside a project folder and not your home folder or desktop. You can create a new repo in an empty folder or within a project directory you've already created.
 
-What good is an empty repo? Not much! To add content to your repository, use `git add`. You can pass this command a specific filename, a directory, a "wildcard" to select a series of similarly-named files, or a `.` to add every untracked file in the current directory:
+What good is an empty repo? Not much! To add content to your repository, use `git add`. You can pass this command a specific filename, a directory, a "wildcard" to select a series of similarly-named files, or a `.` to add every untracked file in the current directory:
 
     # This will add only my_app.js to the repo:
 
@@ -255,7 +255,7 @@ Adding a file (or files) moves them from Git’s working directory to the stagin
 
 Once you’re happy with your files and have staged them, you’ll use `git commit` to push them into the commit history. It's significantly more work to make changes after a commit, so be sure your files are staged and exactly as you'd like them before running this command. Your default text editor will pop up, and you'll be asked to enter a commit message for this group of changes.
 
-**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you’ll discuss in the near future. It’s visually bare and may just look like terminal text to you! If this happens, don’t worry — just type `:q` and press your "return" key to exit.
+**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you’ll discuss in the near future. It’s visually bare and may just look like terminal text to you! If this happens, don’t worry — just type `:q` and press your "return" key to exit.
 
 You’ll want to ensure that future commit messages open in a more familiar editor. You can run the following commands in your terminal to ensure that Visual Studio Code is your `git commit` editor from now on:
 
@@ -273,7 +273,7 @@ Once you close your editor, the commit will be added to your repository’s comm
 
 This will commit your changes with the message “Fix typo” and avoid opening your default text editor. Remember the commit messages are how you make your project’s history friendly to humans, so don’t use the `-m` flag as an excuse to write lame commit messages! A commit message should always explain why changes were made in clear, concise language. It is also best practice to use imperative voice in commit messages (i.e. use "Fix typo" instead of "Fixing the typo" or "Typo was fixed").
 
-### Branches and workflow
+### Branches and workflow
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*7RBsBGvfmvj4T4jm.png" class="graf-image" /></figure>You’ve seen what a project looks like with a linear commit history, but that’s just scratching the surface of Git’s utility. Let’s explore a new realm with *branches*. A branch is a separate timeline in Git, reserved for its own changes. You’ll use branches to make your own changes independently of others. These branches can then be *merged* back into the main branch at a later time.
 
@@ -285,7 +285,7 @@ By default, Git repos begin on the `master` branch. To create a new branch, use 
 
 You can create a new branch or visit an existing branch in your repository. This is especially helpful for returning the `master` branch or for projects you've received from teammates. To open an existing branch, use `git checkout <name-of-branch>`.
 
-### Bringing it back together
+### Bringing it back together
 
 Once you’re happy with the code in the branch you’ve been working on, you’ll likely want to integrate the code into the `master` branch. You can do this via `git merge`. Merging will bring the changes in from another branch and integrate them into yours. Here's an example workflow:
 
@@ -311,7 +311,7 @@ You can refer to a repository source that’s not local as a _remote_. Your Git 
 
 You can add a remote to an existing repository on your computer, or you can retrieve a repository from a remote source. You can refer to this as _cloning_ the repo. Once you have a repository with a remote, you can update your local code from the remote by _pulling_ code down, and you can _push_ up your own code so others have access to it.
 
-### I ❤️ Open Source
+### I ❤️ Open Source
 
 While a remote Git server can be run anywhere, there are a few places online that have become industry standards for hosting remote Git repositories. The best-known and most widely-used Git source is a website called <a href="https://github.com/" class="markup--anchor markup--p-anchor">GitHub</a>. As the name suggests, GitHub is a global hub for Git repositories. It’s free to make a Github account, and you’ll find literally millions of public repositories you can browse.
 
@@ -347,7 +347,7 @@ You now know how to push your changes up, but what about getting the changes you
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*eJVpPtvfIeuYqmql0XkQ8Q.png" class="graf-image" /></figure>It’s important to remember to use `git pull` often. A dynamic team may commit and push code many times during the day, and it's easy to fall behind. The more often you `pull`, the more certain you can be that your own code is based on the "latest and greatest".
 
-### Merging your code on GitHub
+### Merging your code on GitHub
 
 If you’re paying close attention, you may have noticed that there’s a missing step in your workflows so far: how do you get your code merged into your default branch? This is done by a process called a _Pull Request_.
 
@@ -381,7 +381,7 @@ Comparing changes with `git diff`
 
 Browsing through our code “checkpoints” with `git checkout`
 
-### Seeing changes in real time
+### Seeing changes in real time
 
 Git is all about change tracking, so it makes sense that it would include a utility for visualizing a set of changes. We refer to a list of differences between two files (or the same file over time) as a _diff_, and we can use `git diff` to visualize diffs in our repo!
 
@@ -459,7 +459,7 @@ Most of Git’s power comes from a simple ability: viewing commits in the past a
 
 That said, you’ll likely use shortcuts like `git checkout -` far more often than specifically checking out commit hashes. Especially with the advent of user-friendly tools like GitHub, it's much easier to visualize changes outside the command line. We'll demonstrate browsing commit histories on GitHub in a future lesson.
 
-### Git 'Do-Overs’: Reset & Rebase
+### Git 'Do-Overs’: Reset & Rebase
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you’d like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
 
@@ -473,7 +473,7 @@ Have an understanding of how rebasing affects your commit history.
 
 Know when to rebase/reset and when **not** to.
 
-### Resetting the past
+### Resetting the past
 
 Remember how our commits form a timeline? We can see the state of our project at any point using `git checkout`. What if we want to travel back in time to a point before we caused a new bug or chose a terrible font? `git reset` is the answer!
 
@@ -499,7 +499,7 @@ This moves our `HEAD` ref back to our first commit. Looking at our commit log no
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*UleGR-ijDRZw4UqbEbAk0Q.png" class="graf-image" /></figure>Notice that the new commit has a totally new hash. The old commit messages (and their associated hashes) have been lost, but our code changes are safe and sound!
 
-### Risky Business: Mixed resets
+### Risky Business: Mixed resets
 
 If soft resets are the safest form of `git reset`, mixed resets are the most average! This is exactly why they're the default: running `git reset` without adding a flag is the same as running `git reset --mixed`.
 
@@ -541,7 +541,7 @@ _Rebasing_ involves changing your current branch’s base branch. We might do th
 
 `git merge`?" In almost all cases, you'd be right. Rebasing is a dangerous process that effectively rewrites history.
 
-### I see you too like to live life Dangerously… tell me about Rebase..
+### I see you too like to live life Dangerously… tell me about Rebase..
 
 Let’s look at a situation where we might be tempted to rebase. We’ve added a couple commits to a feature branch while other team members have been merging their code into the `master` branch. Once we're ready to merge our own branch, we probably want to follow a tried-and-true procedure:
 
@@ -561,7 +561,7 @@ We can use `git rebase` to move our changes silently onto the latest version of 
 
 See how we changed the color of our commits after the rebase? Take a close look at the commit history changes as well. Even though our commits have the same content, they have a new hash assigned, meaning they’re entirely new commits! This is what we mean by “rewriting history”: we’ve actually changed how Git refers to these changes now.
 
-### “Golden Rule of Git”
+### “Golden Rule of Git”
 
 These tools can all feel pretty nifty, but be very wary of using them too much! While they can augment your Git skills from good to great, they can also have catastrophic side effects.
 
@@ -583,49 +583,49 @@ With the command below you can configure your user name:
 
     git config --global user.name "Fabio"
 
-### How to setup your Git user email:
+### How to setup your Git user email:
 
 This command lets you setup the user email address you’ll use in your commits.
 
     git config --global user.email "signups@fabiopacifici.com"
 
-### How to cache your login credentials in Git:
+### How to cache your login credentials in Git:
 
 You can store login credentials in the cache so you don’t have to type them in each time. Just use this command:
 
     git config --global credential.helper cache
 
-### How to initialize a Git repo:
+### How to initialize a Git repo:
 
 Everything starts from here. The first step is to initialize a new Git repo locally in your project root. You can do so with the command below:
 
     git init
 
-### How to add a file to the staging area in Git:
+### How to add a file to the staging area in Git:
 
 The command below will add a file to the staging area. Just replace `filename_here` with the name of the file you want to add to the staging area.
 
     git add filename_here
 
-### How to add all files in the staging area in Git
+### How to add all files in the staging area in Git
 
-If you want to add all files in your project to the staging area, you can use a wildcard `.` and every file will be added for you.
+If you want to add all files in your project to the staging area, you can use a wildcard `.` and every file will be added for you.
 
     git add .
 
-### How to add only certain files to the staging area in Git
+### How to add only certain files to the staging area in Git
 
 With the asterisk in the command below, you can add all files starting with 'fil’ in the staging area.
 
     git add fil*
 
-### How to check a repository’s status in Git:
+### How to check a repository’s status in Git:
 
 This command will show the status of the current repository including staged, unstaged, and untracked files.
 
     git status
 
-### How to commit changes in the editor in Git:
+### How to commit changes in the editor in Git:
 
 This command will open a text editor in the terminal where you can write a full commit message.
 
@@ -633,31 +633,31 @@ A commit message is made up of a short summary of changes, an empty line, and a 
 
     git commit
 
-### How to commit changes with a message in Git:
+### How to commit changes with a message in Git:
 
 You can add a commit message without opening the editor. This command lets you only specify a short summary for your commit message.
 
     git commit -m "your commit message here"
 
-### How to commit changes (and skip the staging area) in Git:
+### How to commit changes (and skip the staging area) in Git:
 
 You can add and commit tracked files with a single command by using the -a and -m options.
 
     git commit -a -m"your commit message here"
 
-### How to see your commit history in Git:
+### How to see your commit history in Git:
 
 This command shows the commit history for the current repository:
 
     git log
 
-### How to see your commit history including changes in Git:
+### How to see your commit history including changes in Git:
 
 This command shows the commit’s history including all files and their changes:
 
     git log -p
 
-### How to see a specific commit in Git:
+### How to see a specific commit in Git:
 
 This command shows a specific commit.
 
@@ -665,13 +665,13 @@ Replace commit-id with the id of the commit that you find in the commit log afte
 
     git show commit-id
 
-### How to see log stats in Git:
+### How to see log stats in Git:
 
 This command will cause the Git log to show some statistics about the changes in each commit, including line(s) changed and file names.
 
     git log --stat
 
-### How to see changes made before committing them using “diff” in Git:
+### How to see changes made before committing them using “diff” in Git:
 
 You can pass a file as a parameter to only see changes on a specific file.  
 `git diff` shows only unstaged changes by default.
@@ -682,40 +682,40 @@ We can call diff with the `--staged` flag to see any staged changes.
     git diff all_checks.py
     git diff --staged
 
-### How to see changes using “git add -p”:
+### How to see changes using “git add -p”:
 
 This command opens a prompt and asks if you want to stage changes or not, and includes other options.
 
     git add -p
 
-### How to remove tracked files from the current working tree in Git:
+### How to remove tracked files from the current working tree in Git:
 
 This command expects a commit message to explain why the file was deleted.
 
     git rm filename
 
-### How to rename files in Git:
+### How to rename files in Git:
 
 This command stages the changes, then it expects a commit message.
 
     git mv oldfile newfile
 
-### How to ignore files in Git:
+### How to ignore files in Git:
 
-Create a `.gitignore` file and commit it.
+Create a `.gitignore` file and commit it.
 
-### How to revert unstaged changes in Git:
+### How to revert unstaged changes in Git:
 
     git checkout filename
 
-### How to revert staged changes in Git:
+### How to revert staged changes in Git:
 
 You can use the -p option flag to specify the changes you want to reset.
 
     git reset HEAD filename
     git reset HEAD -p
 
-### How to amend the most recent commit in Git:
+### How to amend the most recent commit in Git:
 
 `git commit --amend` allows you to modify and add changes to the most recent commit.
 
@@ -723,32 +723,32 @@ You can use the -p option flag to specify the changes you want to reset.
 
 !!Note!!: fixing up a local commit with amend is great and you can push it to a shared repository after you’ve fixed it. But you should avoid amending commits that have already been made public.
 
-### How to rollback the last commit in Git:
+### How to rollback the last commit in Git:
 
 `git revert` will create a new commit that is the opposite of everything in the given commit.  
 We can revert the latest commit by using the head alias like this:
 
     git revert HEAD
 
-### How to rollback an old commit in Git:
+### How to rollback an old commit in Git:
 
 You can revert an old commit using its commit id. This opens the editor so you can add a commit message.
 
     git revert comit_id_here
 
-### How to create a new branch in Git:
+### How to create a new branch in Git:
 
 By default, you have one branch, the main branch. With this command, you can create a new branch. Git won’t switch to it automatically — you will need to do it manually with the next command.
 
     git branch branch_name
 
-### How to switch to a newly created branch in Git:
+### How to switch to a newly created branch in Git:
 
 When you want to use a different or a newly created branch you can use this command:
 
     git checkout branch_name
 
-### How to list branches in Git:
+### How to list branches in Git:
 
 You can view all created branches using the `git branch` command. It will show a list of all branches and mark the current branch with an asterisk and highlight it in green.
 
@@ -760,63 +760,63 @@ In a single command, you can create and switch to a new branch right away.
 
     git checkout -b branch_name
 
-### How to delete a branch in Git:
+### How to delete a branch in Git:
 
 When you are done working with a branch and have merged it, you can delete it using the command below:
 
     git branch -d branch_name
 
-### How to merge two branches in Git:
+### How to merge two branches in Git:
 
 To merge the history of the branch you are currently in with the `branch_name`, you will need to use the command below:
 
     git merge branch_name
 
-### How to show the commit log as a graph in Git:
+### How to show the commit log as a graph in Git:
 
 We can use `--graph` to get the commit log to show as a graph. Also,  
 `--oneline` will limit commit messages to a single line.
 
     git log --graph --oneline
 
-### How to show the commit log as a graph of all branches in Git:
+### How to show the commit log as a graph of all branches in Git:
 
 Does the same as the command above, but for all branches.
 
     git log --graph --online --all
 
-### How to abort a conflicting merge in Git:
+### How to abort a conflicting merge in Git:
 
 If you want to throw a merge away and start over, you can run the following command:
 
     git merge --abort
 
-### How to add a remote repository in Git
+### How to add a remote repository in Git
 
 This command adds a remote repository to your local repository (just replace `https://repo_here` with your remote repo URL).
 
     git add remote https://repo_here
 
-### How to see remote URLs in Git:
+### How to see remote URLs in Git:
 
 You can see all remote repositories for your local repository with this command:
 
     git remote -v
 
-### How to get more info about a remote repo in Git:
+### How to get more info about a remote repo in Git:
 
 Just replace `origin` with the name of the remote obtained by  
 running the git remote -v command.
 
     git remote show origin
 
-### How to push changes to a remote repo in Git:
+### How to push changes to a remote repo in Git:
 
 When all your work is ready to be saved on a remote repository, you can push all changes using the command below:
 
     git push
 
-### How to pull changes from a remote repo in Git:
+### How to pull changes from a remote repo in Git:
 
 If other team members are working on your repository, you can retrieve the latest changes made to the remote repository with the command below:
 
@@ -828,19 +828,19 @@ This command shows the name of all remote branches that Git is tracking for the 
 
     git branch -r
 
-### How to fetch remote repo changes in Git:
+### How to fetch remote repo changes in Git:
 
 This command will download the changes from a remote repo but will not perform a merge on your local branch (as git pull does that instead).
 
     git fetch
 
-### How to check the current commits log of a remote repo in Git
+### How to check the current commits log of a remote repo in Git
 
 Commit after commit, Git builds up a log. You can find out the remote repository log by using this command:
 
     git log origin/main
 
-### How to merge a remote repo with your local repo in Git:
+### How to merge a remote repo with your local repo in Git:
 
 If the remote repository has changes you want to merge with your local, then this command will do that for you:
 
@@ -853,19 +853,19 @@ local branches. You can call git merge or git checkout to do the merge.
 
     git remote update
 
-### How to push a new branch to a remote repo in Git:
+### How to push a new branch to a remote repo in Git:
 
 If you want to push a branch to a remote repository you can use the command below. Just remember to add -u to create the branch upstream:
 
     git push -u origin branch_name
 
-### How to remove a remote branch in Git:
+### How to remove a remote branch in Git:
 
 If you no longer need a remote branch you can remove it using the command below:
 
     git push --delete origin branch_name_here
 
-### How to use Git rebase:
+### How to use Git rebase:
 
 You can transfer completed work from one branch to another using `git rebase`.
 
@@ -873,7 +873,7 @@ You can transfer completed work from one branch to another using `git rebase`.
 
 Git Rebase can get really messy if you don’t do it properly. Before using this command I suggest that you re-read the official documentation <a href="https://git-scm.com/book/it/v2/Git-Branching-Rebasing" class="markup--anchor markup--p-anchor">here</a>
 
-### How to run rebase interactively in Git:
+### How to run rebase interactively in Git:
 
 You can run git rebase interactively using the -i flag.  
 It will open the editor and present a set of commands you can use.
@@ -887,7 +887,7 @@ It will open the editor and present a set of commands you can use.
     # x, exec = run command (the rest of the line) using shell
     # d, drop = remove commit
 
-### How to force a push request in Git:
+### How to force a push request in Git:
 
 This command will force a push request. This is usually fine for pull request branches because nobody else should have cloned them.  
 But this isn’t something that you want to do with public repos.
@@ -896,7 +896,7 @@ But this isn’t something that you want to do with public repos.
 
 ---
 
-### Git Alias Overview
+### Git Alias Overview
 
 It is important to note that there is no direct `git alias` command. Aliases are created through the use of the `git config` command and the Git configuration files. As with other configuration values, aliases can be created in a local or global scope.
 
@@ -923,7 +923,7 @@ Git aliasing is enabled through the use of `git config`, For command-line option
 
 ### Examples
 
-### Using aliases to create new Git commands
+### Using aliases to create new Git commands
 
 A common Git pattern is to remove recently added files from the staging area. This is achieved by leveraging options to the `git reset` command. A new alias can be created to encapsulate this behavior and create a new alias-command-keyword which is easy to remember:
 
@@ -940,7 +940,7 @@ The preceding code example creates a new alias `unstage`. This now enables the i
 
 ### Troubleshooting Git
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*cFb6UcCGmIcNU1-woncSTA.png" class="graf-image" /></figure>### Here are some tips on troubleshooting and resolving issues with Git.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*cFb6UcCGmIcNU1-woncSTA.png" class="graf-image" /></figure>### Here are some tips on troubleshooting and resolving issues with Git.
 
 ### Broken pipe errors on `git push`
 
@@ -951,7 +951,7 @@ The preceding code example creates a new alias `unstage`. This now enables the i
 
 To fix this issue, here are some possible solutions.
 
-### Increase the POST buffer size in Git
+### Increase the POST buffer size in Git
 
 **If you’re using Git over HTTP instead of SSH**, you can try increasing the POST buffer size in Git’s configuration.
 
@@ -989,7 +989,7 @@ Configuring both the client and the server is unnecessary.
     git repack
     git push
 
-### Upgrade your Git client
+### Upgrade your Git client
 
 In case you’re running an older version of Git (&lt; 2.9), consider upgrading to &gt;= 2.9 (see <a href="https://stackoverflow.com/questions/19120120/broken-pipe-when-pushing-to-git-repository/36971469#36971469" class="markup--anchor markup--p-anchor">Broken pipe when pushing to Git repository</a>).
 
@@ -1053,7 +1053,7 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 
 ### **Further Reading:**
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1061,7 +1061,7 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+### Or Checkout my personal Resource Site:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

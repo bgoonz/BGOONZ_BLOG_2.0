@@ -4,7 +4,7 @@ Fetch
 
 ---
 
-### Fetch Quick Sheet
+### Fetch Quick Sheet
 
 ### Fetch
 
@@ -66,13 +66,13 @@ Fetch
 
 Non-2xx responses are still successful requests. Use another function to turn them to errors.
 
-### Using with node.js
+### Using with node.js
 
     const fetch = require('isomorphic-fetch')
 
 See: <a href="https://npmjs.com/package/isomorphic-fetch" class="markup--anchor markup--p-anchor">isomorphic-fetch</a> _(npmjs.com)_
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

@@ -99,7 +99,7 @@
                             <a href="http://medium.com/codex" data-href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
                         </h4>
                         <h3 name="bb85" id="bb85" class="graf graf--h3 graf-after--h4 graf--title">
-                            <strong class="markup--strong markup--h3-strong">Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!</strong>
+                            <strong class="markup--strong markup--h3-strong">Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!</strong>
                         </h3>
                         <figure name="33fe" id="33fe" class="graf graf--figure graf-after--h3">
                             <img class="graf-image" data-image-id="0*3wDVBrK5ltmjjVSJ.jpeg" data-width="645" data-height="381" src="https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg" />
@@ -121,7 +121,7 @@
                             </li>
                             <li name="11a6" id="11a6" class="graf graf--li graf-after--li">
                                 <a href="https://expressjs.com/" data-href="https://expressjs.com/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Express</a>
-                                As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be
+                                As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be
                                 building our Todo list application on.
                             </li>
                             <li name="5808" id="5808" class="graf graf--li graf-after--li">
@@ -157,7 +157,7 @@
                                 A software application that you run that your programs can connect to so that they can store, modify, and retrieve data.
                             </li>
                             <li name="79d9" id="79d9" class="graf graf--li graf-after--li">
-                                An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to
+                                An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to
                                 create individual databases for each of our projects.
                             </li>
                         </ul>
@@ -230,8 +230,8 @@
                             <li name="f397" id="f397" class="graf graf--li graf-after--li">
                                 In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each
                                 of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy
-                                and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat
-                                table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of
+                                and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat
+                                table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of
                                 that toy.
                             </li>
                         </ul>
@@ -429,7 +429,7 @@
                         </ul>
                         <p name="5290" id="5290" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">SQL</strong></p>
                         <p name="8948" id="8948" class="graf graf--p graf-after--p">
-                            1. How to use the SELECT … FROM … statement to select data from a single table
+                            1. How to use the SELECT … FROM … statement to select data from a single table
                         </p>
                         <ul class="postList">
                             <li name="9202" id="9202" class="graf graf--li graf-after--p">
@@ -588,7 +588,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                             </li>
                             <li name="22c5" id="22c5" class="graf graf--li graf-after--li">
                                 There are two main ways we can use a seed file with psql, the &lt; and the | operators. They perform the same function for
-                                us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:
+                                us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:
                             </li>
                             <li name="19c8" id="19c8" class="graf graf--li graf-after--li">psql -d {database} &lt; {sql filepath}</li>
                             <li name="7ec0" id="7ec0" class="graf graf--li graf-after--li">cat {sql filepath} | psql -d {database}</li>
@@ -729,7 +729,7 @@ const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;’, password: '&lt;&
                             </li>
                         </ul>
                         <p name="1b7b" id="1b7b" class="graf graf--p graf-after--li">
-                            <strong class="markup--strong markup--p-strong">Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on</strong>
+                            <strong class="markup--strong markup--p-strong">Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on</strong>
                         </p>
                         <ul class="postList">
                             <li name="ee72" id="ee72" class="graf graf--li graf-after--p">
@@ -927,14 +927,14 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                             <li name="8778" id="8778" class="graf graf--li graf-after--li">
                                 npx sequelize-cli db:seed:undo:all will undo all of our seeding.
                             </li>
-                            <li name="d655" id="d655" class="graf graf--li graf-after--li">If we omit the :all we can run specific seed files</li>
+                            <li name="d655" id="d655" class="graf graf--li graf-after--li">If we omit the :all we can run specific seed files</li>
                             <li name="4788" id="4788" class="graf graf--li graf-after--li">Inserting with Build and Create</li>
                             <li name="fc2d" id="fc2d" class="graf graf--li graf-after--li">
                                 In addition to seed files, which we generally use for starter data, we can create new records in our database by using build
                                 and save, or the combined create
                             </li>
                             <li name="3807" id="3807" class="graf graf--li graf-after--li">
-                                Use the .build method of the Cat model to create a new Cat instance in index.js
+                                Use the .build method of the Cat model to create a new Cat instance in index.js
                             </li>
                         </ul>
                         <pre name="648e" id="648e" class="graf graf--pre graf-after--li">// Constructs an instance of the JavaScript `Cat` class. **Does not<br>// save anything to the database yet**. Attributes are passed in as a<br>// POJO.<br>const newCat = Cat.build({<br>    firstName: &#39;Markov&#39;,<br>    specialSkill: &#39;sleeping&#39;,<br>    age: 5<br>});<br>// This actually creates a new `Cats` record in the database. We must<br>// wait for this asynchronous operation to succeed.<br>await newCat.save();<br>// This builds and saves all in one step. If we don&#39;t need to perform any operations on the instance before saving it, this can optimize our code.<br>const newerCat = await Cat.create({<br>    firstName: &#39;Whiskers&#39;,<br>    specialSkill: &#39;sleeping&#39;,<br>    age: 2<br>})</pre>
@@ -1004,7 +1004,7 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 { where: { field1: value1, field2: value2 } } =&gt; WHERE field1 = value1 AND field2 = value2
                             </li>
                         </ul>
-                        <h3 name="9cb5" id="9cb5" class="graf graf--h3 graf-after--li">Sequelize Op operator</h3>
+                        <h3 name="9cb5" id="9cb5" class="graf graf--h3 graf-after--li">Sequelize Op operator</h3>
                         <ul class="postList">
                             <li name="dd6a" id="dd6a" class="graf graf--li graf-after--h3">
                                 By requiring Op from the sequelize library we can provide more advanced comparison operators
@@ -1013,9 +1013,9 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                             <li name="8936" id="8936" class="graf graf--li graf-after--li">Op.ne: Not equal operator</li>
                         </ul>
                         <pre name="0fdd" id="0fdd" class="graf graf--pre graf-after--li">const cats = await Cat.findAll({<br>    where: {<br>        firstName: {<br>            // All cats where the name is not equal to &quot;Markov&quot;<br>            // We use brackets in order to evaluate Op.ne and use the value as the key<br>            [Op.ne]: &quot;Markov&quot;<br>        },<br>    },<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
-                        <h3 name="16ad" id="16ad" class="graf graf--h3 graf-after--pre">Op.and: and operator</h3>
+                        <h3 name="16ad" id="16ad" class="graf graf--h3 graf-after--pre">Op.and: and operator</h3>
                         <pre name="9686" id="9686" class="graf graf--pre graf-after--h3">const cats = await Cat.findAll({<br>    where: {<br>        // The array that Op.and points to must all be true <br>        // Here, we find cats where the name is not &quot;Markov&quot; and the age is 4<br>        [Op.and]: [{<br>            firstName: {<br>                [Op.ne]: &quot;Markov&quot;<br>            }<br>        }, {<br>            age: 4<br>        }, ],<br>    },<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
-                        <h3 name="66d6" id="66d6" class="graf graf--h3 graf-after--pre">Op.or: or operator</h3>
+                        <h3 name="66d6" id="66d6" class="graf graf--h3 graf-after--pre">Op.or: or operator</h3>
                         <pre name="77d1" id="77d1" class="graf graf--pre graf-after--h3">const cats = await Cat.findAll({<br>    where: {<br>        // One condition in the array that Op.or points to must be true <br>        // Here, we find cats where the name is &quot;Markov&quot; or where the age is 4<br>        [Op.or]: [{<br>            firstName: &quot;Markov&quot;<br>        }, {<br>            age: 4<br>        }, ],<br>    },<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
                         <p name="10b1" id="10b1" class="graf graf--p graf-after--pre">Op.gt and Op.lt: greater than and less than operators</p>
                         <p name="2af8" id="2af8" class="graf graf--p graf-after--p">
@@ -1095,7 +1095,7 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 We can create a transaction block in order to make sure either all operations are performed or none of them are
                             </li>
                             <li name="a632" id="a632" class="graf graf--li graf-after--li">
-                                We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our
+                                We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our
                                 transaction id (typically just a simple tx variable).
                             </li>
                             <li name="79f9" id="79f9" class="graf graf--li graf-after--li">
@@ -1137,23 +1137,23 @@ npx sequelize-cli model:generate --name &lt;ModelName&gt; --attributes &lt;colum
                         <pre name="e851" id="e851" class="graf graf--pre graf-after--h4">npx sequelize-cli db:migrate:undo</pre>
                         <h4 name="d9e4" id="d9e4" class="graf graf--h4 graf-after--pre">Rollback all migrations</h4>
                         <pre name="51b8" id="51b8" class="graf graf--pre graf-after--h4">npx sequelize-cli db:migrate:undo:all</pre>
-                        <h4 name="d44b" id="d44b" class="graf graf--h4 graf-after--pre">Generate a new seed file</h4>
+                        <h4 name="d44b" id="d44b" class="graf graf--h4 graf-after--pre">Generate a new seed file</h4>
                         <pre name="8b7a" id="8b7a" class="graf graf--pre graf-after--h4">
 npx sequelize-cli seed:generate --name &lt;descriptiveName&gt;</pre>
-                        <h4 name="97d8" id="97d8" class="graf graf--h4 graf-after--pre">Run all pending seeds</h4>
+                        <h4 name="97d8" id="97d8" class="graf graf--h4 graf-after--pre">Run all pending seeds</h4>
                         <pre name="b1ee" id="b1ee" class="graf graf--pre graf-after--h4">npx sequelize-cli db:seed:all</pre>
-                        <h4 name="3ea4" id="3ea4" class="graf graf--h4 graf-after--pre">Rollback one seed</h4>
+                        <h4 name="3ea4" id="3ea4" class="graf graf--h4 graf-after--pre">Rollback one seed</h4>
                         <pre name="05d4" id="05d4" class="graf graf--pre graf-after--h4">npx sequelize-cli db:seed:undo</pre>
-                        <h4 name="f964" id="f964" class="graf graf--h4 graf-after--pre">Rollback all seeds</h4>
+                        <h4 name="f964" id="f964" class="graf graf--h4 graf-after--pre">Rollback all seeds</h4>
                         <pre name="4f0d" id="4f0d" class="graf graf--pre graf-after--h4">npx sequelize-cli db:seed:undo:all</pre>
                         <h4 name="fc2b" id="fc2b" class="graf graf--h4 graf-after--pre">Migrations</h4>
-                        <h3 name="f3b5" id="f3b5" class="graf graf--h3 graf-after--h4">Create Table (usually used in the up() method)</h3>
+                        <h3 name="f3b5" id="f3b5" class="graf graf--h3 graf-after--h4">Create Table (usually used in the up() method)</h3>
                         <pre name="ab1a" id="ab1a" class="graf graf--pre graf-after--h3">// This uses the short form for references<br>return queryInterface.createTable(&lt;TableName&gt;, {<br>    &lt;columnName&gt;: {<br>        type: Sequelize.&lt;type&gt;,<br>        allowNull: &lt;true|false&gt;,<br>        unique: &lt;true|false&gt;,<br>        references: { model: &lt;TableName&gt; }, // This is the plural table name<br>                                            // that the column references.<br>    }<br>});<br>// This the longer form for references that is less confusing<br>return queryInterface.createTable(&lt;TableName&gt;, {<br>    &lt;columnName&gt;: {<br>        type: Sequelize.&lt;type&gt;,<br>        allowNull: &lt;true|false&gt;,<br>        unique: &lt;true|false&gt;,<br>        references: {<br>            model: {<br>                tableName: &lt;TableName&gt; // This is the plural table name<br>            }<br>        }<br>    }<br>});</pre>
                         <h3 name="9e63" id="9e63" class="graf graf--h3 graf-after--pre">Delete Table (usually used in the down() function)</h3>
                         <pre name="f040" id="f040" class="graf graf--pre graf-after--h3">return queryInterface.dropTable(&lt;TableName&gt;);</pre>
-                        <h3 name="b8c5" id="b8c5" class="graf graf--h3 graf-after--pre">Adding a column</h3>
+                        <h3 name="b8c5" id="b8c5" class="graf graf--h3 graf-after--pre">Adding a column</h3>
                         <pre name="e875" id="e875" class="graf graf--pre graf-after--h3">return queryInteface.addColumn(&lt;TableName&gt;, &lt;columnName&gt;: {<br>    type: Sequelize.&lt;type&gt;,<br>    allowNull: &lt;true|false&gt;,<br>    unique: &lt;true|false&gt;,<br>    references: { model: &lt;TableName&gt; }, // This is the plural table name<br>                                        // that the column references.<br>});</pre>
-                        <h3 name="edd5" id="edd5" class="graf graf--h3 graf-after--pre">Removing a column</h3>
+                        <h3 name="edd5" id="edd5" class="graf graf--h3 graf-after--pre">Removing a column</h3>
                         <pre name="1a06" id="1a06" class="graf graf--pre graf-after--h3">
 return queryInterface.removeColumn(&lt;TableName&gt;, &lt;columnName&gt;);</pre>
                         <h3 name="cfca" id="cfca" class="graf graf--h3 graf-after--pre">Model Associations</h3>
@@ -1164,7 +1164,7 @@ Student.hasOne(models.Scholarship, { foreignKey: &#39;studentId&#39; });</pre>
                         <p name="61ea" id="61ea" class="graf graf--p graf-after--pre"><code class="markup--code markup--p-code">scholarship.js</code></p>
                         <pre name="f951" id="f951" class="graf graf--pre graf-after--p">
 Scholarship.belongsTo(models.Student, { foreignKey: &#39;studentId&#39; });</pre>
-                        <h3 name="6f63" id="6f63" class="graf graf--h3 graf-after--pre">One to Many between Student and Class</h3>
+                        <h3 name="6f63" id="6f63" class="graf graf--h3 graf-after--pre">One to Many between Student and Class</h3>
                         <p name="5773" id="5773" class="graf graf--p graf-after--h3"><code class="markup--code markup--p-code">student.js</code></p>
                         <pre name="652b" id="652b" class="graf graf--pre graf-after--p">
 Student.belongsTo(models.Class, { foreignKey: &#39;classId&#39; });</pre>
@@ -1178,13 +1178,13 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre>
                         <pre name="70ba" id="70ba" class="graf graf--pre graf-after--p">const columnMapping = {<br>    through: &#39;StudentLesson&#39;, // This is the model name referencing the join table.<br>    otherKey: &#39;lessonId&#39;,<br>    foreignKey: &#39;studentId&#39;<br>}<br>Student.belongsToMany(models.Lesson, columnMapping);</pre>
                         <p name="9df3" id="9df3" class="graf graf--p graf-after--pre"><code class="markup--code markup--p-code">lesson.js</code></p>
                         <pre name="9827" id="9827" class="graf graf--pre graf-after--p">const columnMapping = {<br>    through: &#39;StudentLesson&#39;, // This is the model name referencing the join table.<br>    otherKey: &#39;studentId&#39;,<br>    foreignKey: &#39;lessonId&#39;<br>}<br>Lesson.belongsToMany(models.Student, columnMapping);</pre>
-                        <h3 name="c2cc" id="c2cc" class="graf graf--h3 graf-after--pre">Inserting a new item</h3>
+                        <h3 name="c2cc" id="c2cc" class="graf graf--h3 graf-after--pre">Inserting a new item</h3>
                         <pre name="be36" id="be36" class="graf graf--pre graf-after--h3">// Way 1 - With build and save<br>const pet = Pet.build({<br>    name: &quot;Fido&quot;,<br>    petTypeId: 1<br>});<br>await pet.save();<br>// Way 2 - With create<br>const pet = await Pet.create({<br>    name: &quot;Fido&quot;,<br>    petTypeId: 1<br>});</pre>
-                        <h3 name="51bf" id="51bf" class="graf graf--h3 graf-after--pre">Updating an item</h3>
+                        <h3 name="51bf" id="51bf" class="graf graf--h3 graf-after--pre">Updating an item</h3>
                         <pre name="a04a" id="a04a" class="graf graf--pre graf-after--h3">// Find the pet with id = 1<br>const pet = await Pet.findByPk(1);<br>// Way 1<br>pet.name = &quot;Fido, Sr.&quot;<br>await pet.save;<br>// Way 2<br>await pet.update({<br>    name: &quot;Fido, Sr.&quot;<br>});</pre>
-                        <h3 name="9824" id="9824" class="graf graf--h3 graf-after--pre">Deleting a single item</h3>
+                        <h3 name="9824" id="9824" class="graf graf--h3 graf-after--pre">Deleting a single item</h3>
                         <pre name="4bc5" id="4bc5" class="graf graf--pre graf-after--h3">// Find the pet with id = 1<br>const pet = await Pet.findByPk(1);<br>// Notice this is an instance method<br>pet.destroy();</pre>
-                        <h3 name="dc1a" id="dc1a" class="graf graf--h3 graf-after--pre">Deleting multiple items</h3>
+                        <h3 name="dc1a" id="dc1a" class="graf graf--h3 graf-after--pre">Deleting multiple items</h3>
                         <pre name="d000" id="d000" class="graf graf--pre graf-after--h3">// Notice this is a static class method<br>await Pet.destroy({<br>    where: {<br>        petTypeId: 1 // Destorys all the pets where the petType is 1<br>    }<br>});</pre>
                         <h3 name="d21c" id="d21c" class="graf graf--h3 graf-after--pre">Query Format</h3>
                         <h3 name="dcdd" id="dcdd" class="graf graf--h3 graf-after--h3">findOne</h3>
@@ -1194,7 +1194,7 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre>
                         <h3 name="c112" id="c112" class="graf graf--h3 graf-after--pre">findByPk</h3>
                         <pre name="a4f2" id="a4f2" class="graf graf--pre graf-after--h3">await &lt;Model&gt;.findByPk(&lt;primary_key&gt;, {<br>    include: &lt;include_specifier&gt;<br>});</pre>
                         <h3 name="d570" id="d570" class="graf graf--h3 graf-after--pre">
-                            Eager loading associations with <code class="markup--code markup--h3-code">include</code>
+                            Eager loading associations with <code class="markup--code markup--h3-code">include</code>
                         </h3>
                         <p name="707b" id="707b" class="graf graf--p graf-after--h3">Simple include of one related model.</p>
                         <pre name="1379" id="1379" class="graf graf--pre graf-after--p">await Pet.findByPk(1,  {<br>        include: PetType<br>    })</pre>
@@ -1226,7 +1226,7 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre>
                         </figure>
                     </div>
                     <div class="section-inner sectionLayout--insetColumn">
-                        <h3 name="4ae1" id="4ae1" class="graf graf--h3 graf-after--figure">Accessing the Data</h3>
+                        <h3 name="4ae1" id="4ae1" class="graf graf--h3 graf-after--figure">Accessing the Data</h3>
                         <p name="b712" id="b712" class="graf graf--p graf-after--h3">
                             You can access and query the data using the <code class="markup--code markup--p-code">findByPk</code>,
                             <code class="markup--code markup--p-code">findOne</code>, and <code class="markup--code markup--p-code">findAll</code> methods.
@@ -1271,8 +1271,8 @@ const { Recipe, Ingredient, Instruction, MeasurementUnit } = require(&#39;./mode
                         <h3 name="db2a" id="db2a" class="graf graf--h3 graf-after--pre">Data Access to Create/Update/Delete Rows</h3>
                         <p name="915b" id="915b" class="graf graf--p graf-after--h3">
                             You have two options when you want to create a row in a table (where you are saving one record into the table). You can
-                            either <code class="markup--code markup--p-code">.build</code> the row and then <code class="markup--code markup--p-code">.save</code>
-                            it, or you can <code class="markup--code markup--p-code">.create</code> it. Either way it does the same thing. Here are some
+                            either <code class="markup--code markup--p-code">.build</code> the row and then <code class="markup--code markup--p-code">.save</code>
+                            it, or you can <code class="markup--code markup--p-code">.create</code> it. Either way it does the same thing. Here are some
                             examples:
                         </p>
                         <p name="1028" id="1028" class="graf graf--p graf-after--p">
@@ -1303,7 +1303,7 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                         <pre name="c98c" id="c98c" class="graf graf--pre graf-after--pre">await deleteThis.destroy();</pre>
                         <p name="c6b1" id="c6b1" class="graf graf--p graf-after--pre">
                             <strong class="markup--strong markup--p-strong">NOTE:</strong> If you do not await these, you will receive a promise, so you
-                            will need to use <code class="markup--code markup--p-code">.then</code> and <code class="markup--code markup--p-code">.catch</code>
+                            will need to use <code class="markup--code markup--p-code">.then</code> and <code class="markup--code markup--p-code">.catch</code>
                             to do more with the items you are accessing and modifying.
                         </p>
                         <h3 name="219c" id="219c" class="graf graf--h3 graf-after--p">Documentation</h3>
@@ -1319,7 +1319,7 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                             <a href="https://sequelize.org/v5/manual/instances.html" data-href="https://sequelize.org/v5/manual/instances.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/instances.html</em></a>
                         </p>
                         <h4 name="2bbd" id="2bbd" class="graf graf--h4 graf-after--p">
-                            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+                            If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
                         </h4>
                         <div name="1c2f" id="1c2f" class="graf graf--mixtapeEmbed graf-after--h4">
                             <a href="https://gist.github.com/bgoonz" data-href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz’s gists</strong><br /><em class="markup--em markup--mixtapeEmbed-em">There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you

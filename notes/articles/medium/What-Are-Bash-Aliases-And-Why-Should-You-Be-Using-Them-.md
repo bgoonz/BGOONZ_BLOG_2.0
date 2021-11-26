@@ -4,11 +4,11 @@ A Bash alias is a method of supplementing or overriding Bash commands with new o
 
 ---
 
-### What Are Bash Aliases And Why Should You Be Using Them!
+### What Are Bash Aliases And Why Should You Be Using Them!
 
 A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for users to customize their experience in a <a href="https://opensource.com/article/19/7/what-posix-richard-stallman-explains" class="markup--anchor markup--p-anchor">POSIX</a> terminal. They are often defined in **$HOME/.bashrc** or **$HOME/bash_aliases** (which must be loaded by **$HOME/.bashrc**).
 
-Most distributions add at least some popular aliases in the default **.bashrc** file of any new user account. These are simple ones to demonstrate the syntax of a Bash alias:
+Most distributions add at least some popular aliases in the default **.bashrc** file of any new user account. These are simple ones to demonstrate the syntax of a Bash alias:
 
     alias ls='ls -F'
     alias ll='ls -lh'
@@ -23,7 +23,7 @@ With those aliases defined in your Bash initialization script, you can then type
 
 Those aliases are great to have, but they just scratch the surface of what’s possible. Here are the top 10 Bash aliases that, once you try them, you won’t be able to live without.
 
-### Set up first
+### Set up first
 
 Before beginning, create a file called **~/.bash_aliases**:
 
@@ -35,11 +35,11 @@ Then, make sure that this code appears in your **~/.bashrc** file:
         source $HOME/.bash_aliases
     fi
 
-If you want to try any of the aliases in this article for yourself, enter them into your **.bash_aliases** file, and then load them into your Bash session with the **source ~/.bashrc** command.
+If you want to try any of the aliases in this article for yourself, enter them into your **.bash_aliases** file, and then load them into your Bash session with the **source ~/.bashrc** command.
 
 -   <span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span>
 
-### Here’s a list of my bash aliases:
+### Here’s a list of my bash aliases:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 6, 2021](https://medium.com/p/30a6cfafdfeb).
 

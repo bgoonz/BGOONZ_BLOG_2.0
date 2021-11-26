@@ -6,7 +6,7 @@ For Front end developers who like myself struggle with making the jump to fullst
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
-### **Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!**
+### **Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg" class="graf-image" /></figure>**For Front end developers who like myself struggle with making the jump to fullstack.**
 
@@ -15,7 +15,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Terminology:**
 
 -   <span id="c63a"><a href="https://nodejs.org/en/" class="markup--anchor markup--li-anchor">NodeJS</a> We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.</span>
--   <span id="11a6"><a href="https://expressjs.com/" class="markup--anchor markup--li-anchor">Express</a> As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.</span>
+-   <span id="11a6"><a href="https://expressjs.com/" class="markup--anchor markup--li-anchor">Express</a> As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.</span>
 -   <span id="5808"><a href="https://www.postgresql.org/docs/9.5/static/index.html" class="markup--anchor markup--li-anchor">PostgreSQL</a> This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!</span>
 
 <a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br />
@@ -30,7 +30,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 
 -   <span id="6529">RDBMS stands for Relational Database Management System</span>
 -   <span id="6d7e">A software application that you run that your programs can connect to so that they can store, modify, and retrieve data.</span>
--   <span id="79d9">An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to create individual databases for each of our projects.</span>
+-   <span id="79d9">An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to create individual databases for each of our projects.</span>
 
 **Describe what relational data is**
 
@@ -59,7 +59,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Describe the purpose of a foreign key**
 
 -   <span id="cf54">A foreign key is used as the connector from this record to the primary key of another table s record.</span>
--   <span id="f397">In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.</span>
+-   <span id="f397">In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.</span>
 
 **Describe how to properly name things in PostgreSQL**
 
@@ -196,7 +196,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 
 **SQL**
 
-1. How to use the SELECT … FROM … statement to select data from a single table
+1. How to use the SELECT … FROM … statement to select data from a single table
 
 -   <span id="9202">Supply the column names in the SELECT clause. If we want all columns, we can also use \*</span>
 -   <span id="9fdc">Supply the table names in the FROM clause</span>
@@ -315,7 +315,7 @@ FROM friends;
 -   <span id="687c">Seed files are a great way for us to create records that we want to start our database out with.</span>
 -   <span id="80f6">Instead of having to individually add records to our tables or manually entering them in psql or postbird, we can create a file that has all of these records and then just pass this file to psql to run.</span>
 -   <span id="28da">Seed files are also great if we ever need to reset our database. We can clear out any records that we have by dropping all of our tables, then just run our seed files to get it into a predetermined starting point. This is great for our personal projects, testing environments, starting values for new tables we create, etc.</span>
--   <span id="22c5">There are two main ways we can use a seed file with psql, the &lt; and the | operators. They perform the same function for us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:</span>
+-   <span id="22c5">There are two main ways we can use a seed file with psql, the &lt; and the | operators. They perform the same function for us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:</span>
 -   <span id="19c8">psql -d {database} &lt; {sql filepath}</span>
 -   <span id="7ec0">cat {sql filepath} | psql -d {database}</span>
 
@@ -417,7 +417,7 @@ selectAllAirports();
 
 -   <span id="edf8">The return value of this asynchronous function is an object with a rows key that points to an array of objects, each object representing a record with field names as keys.</span>
 
-**Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on**
+**Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on**
 
 -   <span id="ee72">The prepared statement (SQL string that we wrote) can also be made more dynamic by allowing for parameters to be passed in.</span>
 -   <span id="3b64">The Pool instance s query function allows us to pass a second argument, an array of parameters to be used in the query string. The location of the parameter substitutions are designated with $1, $2, etc., to signify the first, second, etc., arguments.</span>
@@ -638,10 +638,10 @@ pool.end(); // invoking end() will close our connection to the database
 
 -   <span id="c9e3">Running npx sequelize-cli db:seed:all will run all of our seeder files.</span>
 -   <span id="8778">npx sequelize-cli db:seed:undo:all will undo all of our seeding.</span>
--   <span id="d655">If we omit the :all we can run specific seed files</span>
+-   <span id="d655">If we omit the :all we can run specific seed files</span>
 -   <span id="4788">Inserting with Build and Create</span>
 -   <span id="fc2d">In addition to seed files, which we generally use for starter data, we can create new records in our database by using build and save, or the combined create</span>
--   <span id="3807">Use the .build method of the Cat model to create a new Cat instance in index.js</span>
+-   <span id="3807">Use the .build method of the Cat model to create a new Cat instance in index.js</span>
 
 <!-- -->
 
@@ -716,7 +716,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="afbb">Providing additional key/value pairs to the where object indicates all filters must match</span>
 -   <span id="45a1">{ where: { field1: value1, field2: value2 } } =&gt; WHERE field1 = value1 AND field2 = value2</span>
 
-### Sequelize Op operator
+### Sequelize Op operator
 
 -   <span id="dd6a">By requiring Op from the sequelize library we can provide more advanced comparison operators</span>
 -   <span id="0a01">const { Op } = require(“sequelize”);</span>
@@ -735,7 +735,7 @@ pool.end(); // invoking end() will close our connection to the database
     });
     console.log(JSON.stringify(cats, null, 2));
 
-### Op.and: and operator
+### Op.and: and operator
 
     const cats = await Cat.findAll({
         where: {
@@ -752,7 +752,7 @@ pool.end(); // invoking end() will close our connection to the database
     });
     console.log(JSON.stringify(cats, null, 2));
 
-### Op.or: or operator
+### Op.or: or operator
 
     const cats = await Cat.findAll({
         where: {
@@ -847,7 +847,7 @@ We can get nested associations by having include point to an object that specifi
 **How to use transactions with Sequelize**
 
 -   <span id="1059">We can create a transaction block in order to make sure either all operations are performed or none of them are</span>
--   <span id="a632">We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our transaction id (typically just a simple tx variable).</span>
+-   <span id="a632">We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our transaction id (typically just a simple tx variable).</span>
 -   <span id="79f9">All of our sequelize operations can be passed a transaction key on their options argument which points to our transaction id. This indicates that this operation is part of the transaction block and should only be executed in the database when the whole block executes without error.</span>
 
 <!-- -->
@@ -927,25 +927,25 @@ You must create a database user, and update the `config/config.json` file to mat
 
     npx sequelize-cli db:migrate:undo:all
 
-#### Generate a new seed file
+#### Generate a new seed file
 
     npx sequelize-cli seed:generate --name <descriptiveName>
 
-#### Run all pending seeds
+#### Run all pending seeds
 
     npx sequelize-cli db:seed:all
 
-#### Rollback one seed
+#### Rollback one seed
 
     npx sequelize-cli db:seed:undo
 
-#### Rollback all seeds
+#### Rollback all seeds
 
     npx sequelize-cli db:seed:undo:all
 
 #### Migrations
 
-### Create Table (usually used in the up() method)
+### Create Table (usually used in the up() method)
 
     // This uses the short form for references
     return queryInterface.createTable(<TableName>, {
@@ -975,7 +975,7 @@ You must create a database user, and update the `config/config.json` file to mat
 
     return queryInterface.dropTable(<TableName>);
 
-### Adding a column
+### Adding a column
 
     return queryInteface.addColumn(<TableName>, <columnName>: {
         type: Sequelize.<type>,
@@ -985,7 +985,7 @@ You must create a database user, and update the `config/config.json` file to mat
                                             // that the column references.
     });
 
-### Removing a column
+### Removing a column
 
     return queryInterface.removeColumn(<TableName>, <columnName>);
 
@@ -1001,7 +1001,7 @@ You must create a database user, and update the `config/config.json` file to mat
 
     Scholarship.belongsTo(models.Student, { foreignKey: 'studentId' });
 
-### One to Many between Student and Class
+### One to Many between Student and Class
 
 `student.js`
 
@@ -1031,7 +1031,7 @@ You must create a database user, and update the `config/config.json` file to mat
     }
     Lesson.belongsToMany(models.Student, columnMapping);
 
-### Inserting a new item
+### Inserting a new item
 
     // Way 1 - With build and save
     const pet = Pet.build({
@@ -1045,7 +1045,7 @@ You must create a database user, and update the `config/config.json` file to mat
         petTypeId: 1
     });
 
-### Updating an item
+### Updating an item
 
     // Find the pet with id = 1
     const pet = await Pet.findByPk(1);
@@ -1057,14 +1057,14 @@ You must create a database user, and update the `config/config.json` file to mat
         name: "Fido, Sr."
     });
 
-### Deleting a single item
+### Deleting a single item
 
     // Find the pet with id = 1
     const pet = await Pet.findByPk(1);
     // Notice this is an instance method
     pet.destroy();
 
-### Deleting multiple items
+### Deleting multiple items
 
     // Notice this is a static class method
     await Pet.destroy({
@@ -1104,7 +1104,7 @@ You must create a database user, and update the `config/config.json` file to mat
         include: <include_specifier>
     });
 
-### Eager loading associations with `include`
+### Eager loading associations with `include`
 
 Simple include of one related model.
 
@@ -1175,7 +1175,7 @@ returns a POJO for the instance.
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png" class="graf-image" /></figure>
 
-### Accessing the Data
+### Accessing the Data
 
 You can access and query the data using the `findByPk`, `findOne`, and `findAll` methods. First, make sure you import the models in your JavaScript file. In this case, we are assuming your JavaScript file is in the root of your project and so is the models folder.
 
@@ -1219,7 +1219,7 @@ If you only want to find one where there is chicken in the ingredients list, you
 
 ### Data Access to Create/Update/Delete Rows
 
-You have two options when you want to create a row in a table (where you are saving one record into the table). You can either `.build` the row and then `.save` it, or you can `.create` it. Either way it does the same thing. Here are some examples:
+You have two options when you want to create a row in a table (where you are saving one record into the table). You can either `.build` the row and then `.save` it, or you can `.create` it. Either way it does the same thing. Here are some examples:
 
 Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
 
@@ -1243,7 +1243,7 @@ To delete an item from your table, you will do the same kind of process. Find th
 
     await deleteThis.destroy();
 
-**NOTE:** If you do not await these, you will receive a promise, so you will need to use `.then` and `.catch` to do more with the items you are accessing and modifying.
+**NOTE:** If you do not await these, you will receive a promise, so you will need to use `.then` and `.catch` to do more with the items you are accessing and modifying.
 
 ### Documentation
 
@@ -1255,7 +1255,7 @@ When you access the data in your queries, here are the operators available, agai
 The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.  
 **Create/Update/Destroy:** <a href="https://sequelize.org/v5/manual/instances.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/instances.html</em></a>
 
-#### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

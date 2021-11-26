@@ -55,7 +55,7 @@ Refs
 
 ### Diff
 
-### Diff with stats
+### Diff with stats
 
     git diff --stat
     app/a.txt    | 2 +-
@@ -193,7 +193,7 @@ Refs
 
 ### Diff
 
-### Diff with stats
+### Diff with stats
 
     git diff --stat
     app/a.txt    | 2 +-
@@ -279,7 +279,7 @@ Refs
     git config set commit.gpgsign true                # Sign commits by default
     git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

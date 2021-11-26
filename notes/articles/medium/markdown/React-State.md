@@ -94,7 +94,7 @@ Demystified
 
 -   <span id="5783">Use a class constructor method to initialize `this.state` object.</span>
 
-#### Application Entry Point
+#### Application Entry Point
 
     // ./src/index.js
     import React from 'react'
@@ -254,7 +254,7 @@ Demystified
 -   <span id="8d26">constructor(props) { super(props); }</span>
 -   <span id="e22e">We can now move our quotes array to our application entry point and pass it in as a prop.</span>
 
-#### Application Entry Point
+#### Application Entry Point
 
     // ./src/index.js
     import React from 'react'
@@ -348,7 +348,7 @@ Demystified
 
 -   <span id="6df2">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
 -   <span id="e214">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
--   <span id="bafc">`e` : Parameter that references a `Synthetic Event` object type.</span>
+-   <span id="bafc">`e` : Parameter that references a `Synthetic Event` object type.</span>
 
 **Using** `this` **in event handlers**
 
@@ -440,7 +440,7 @@ Demystified
 
     export default AlertButton;
 
--   <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
+-   <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
 -   <span id="eb35">It’s good to pick one approach and use it consistently, either:</span>
 
 1.  <span id="e7c9">Class Properties & Arrow Functions</span>
@@ -452,15 +452,15 @@ Demystified
 -   <span id="7319">Includes the use of stopPropagation() and preventDefault();</span>
 -   <span id="1d15">Attributes of the Synthetic Event Object:</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*OVA083oP8HKuRPyA-Ebpig.png" alt="Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type" class="graf-image" /><figcaption>Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</figcaption></figure>-   <span id="42b5">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*OVA083oP8HKuRPyA-Ebpig.png" alt="Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type" class="graf-image" /><figcaption>Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</figcaption></figure>-   <span id="42b5">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
 
-### Forms in React
+### Forms in React
 
 _Exercise being done in a separate file_
 
 **Random Notes**
 
--   <span id="f551">`onChange` : detects when a value of an input element changes.</span>
+-   <span id="f551">`onChange` : detects when a value of an input element changes.</span>
 -   <span id="a180">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
 -   <span id="6814">Don’t forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
 -   <span id="830f">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
@@ -513,9 +513,9 @@ _Exercise being done in a separate file_
 **The lifecycle of a React component**
 
 -   <span id="b8ed">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
--   <span id="f58a">`componentDidMount` : Method called after your component has been added to the component tree.</span>
--   <span id="adb3">`componentDidUpdate` : Method called after your component has been updated.</span>
--   <span id="d198">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
+-   <span id="f58a">`componentDidMount` : Method called after your component has been added to the component tree.</span>
+-   <span id="adb3">`componentDidUpdate` : Method called after your component has been updated.</span>
+-   <span id="d198">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
 
 #### `Mounting`
 

@@ -71,7 +71,7 @@ That’s allowed for historical reasons, and mostly works, but generally not rec
 
 1.  <span id="3020">There’s a `storage` event, it triggers when we modify the data. That event does not happen for object-like access. We'll see that later in this chapter.</span>
 
-### Looping over keys
+### Looping over keys
 
 As we’ve seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
 
@@ -162,7 +162,7 @@ That’s exactly because `sessionStorage` is bound not only to the origin, but a
 
 When the data gets updated in `localStorage` or `sessionStorage`, <a href="https://www.w3.org/TR/webstorage/#the-storage-event" class="markup--anchor markup--p-anchor">storage</a> event triggers, with properties:
 
--   <span id="9c38">`key` – the key that was changed (`null` if `.clear()` is called).</span>
+-   <span id="9c38">`key` – the key that was changed (`null` if `.clear()` is called).</span>
 -   <span id="1cd8">`oldValue` – the old value (`null` if the key is newly added).</span>
 -   <span id="df18">`newValue` – the new value (`null` if the key is removed).</span>
 -   <span id="bda8">`url` – the url of the document where the update happened.</span>

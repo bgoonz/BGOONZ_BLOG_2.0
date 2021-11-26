@@ -4,7 +4,7 @@ Data Structures Reference
 
 ---
 
-### Data Structures… Under The Hood
+### Data Structures… Under The Hood
 
 ### Data Structures Reference
 
@@ -34,13 +34,13 @@ top is the last one you put down.
 
 Good for storing hierarchies. Each node can have “child” nodes.
 
-### Binary Search Tree
+### Binary Search Tree
 
 Everything in the left subtree is smaller than the current node,  
 everything in the right subtree is larger. lookups, but only if the tree  
 is balanced!
 
-### Binary Search Tree
+### Binary Search Tree
 
 ### Graph
 
@@ -236,11 +236,11 @@ Why is it time? Because the runtime doesn’t get bigger if the string gets bigg
 
 Now, what if instead of a linked list, our string had been a _dynamic array_? We might not have any room at the end, forcing us to do one of those doubling operations to make space:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wSK-FGV0kCiskLNS" class="graf-image" /></figure>So with a dynamic array, our append would have a *worst-case* time cost of .
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*wSK-FGV0kCiskLNS" class="graf-image" /></figure>So with a dynamic array, our append would have a *worst-case* time cost of .
 
 **Linked lists have worst-case -time appends, which is better than the worst-case time of dynamic arrays.**
 
-That _worst-case_ part is important. The _average case_ runtime for appends to linked lists and dynamic arrays is the same: .
+That _worst-case_ part is important. The _average case_ runtime for appends to linked lists and dynamic arrays is the same: .
 
 Now, what if we wanted to \*pre\*pend something to our string? Let’s say we wanted to put a “B” at the beginning.
 
@@ -396,7 +396,7 @@ Disadvantages
 
 -   <span id="a412">A BFS on a binary tree _generally_ requires more memory than a DFS.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*1ptw-98Yjj1scRX6" class="graf-image" /></figure>### Binary Search Tree
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*1ptw-98Yjj1scRX6" class="graf-image" /></figure>### Binary Search Tree
 
 A **binary tree** is a **tree** where &lt;==(**_every node has two or fewer children_**)==&gt;.  
 The children are usually called **_left_** and **_right_**.
@@ -433,7 +433,7 @@ If we zero-index the levels, the number of nodes on the xth level is exactly 2^x
 
 So our total number of nodes is:
 
-**n = 2⁰ + 2¹ + 2² + 2³ + … + 2^{h-1}**
+**n = 2⁰ + 2¹ + 2² + 2³ + … + 2^{h-1}**
 
 Why only up to 2^{h-1}?
 
@@ -473,11 +473,11 @@ simply means,
 
 Which is 2,
 
-because .
+because .
 
 &lt;==(10² = 100 )==&gt;
 
-### Graph Data Structure: Directed, Acyclic, etc
+### Graph Data Structure: Directed, Acyclic, etc
 
 Graph =====
 

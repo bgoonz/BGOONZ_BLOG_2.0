@@ -4,14 +4,14 @@ a cheatsheet for using heroku-cli
 
 ---
 
-### Heroku Cheat Sheet
+### Heroku Cheat Sheet
 
 #### a cheatsheet for using heroku-cli
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*x5-iOqgNLWiBDKov.gif" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
 bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-### `create` - Create an app
+### `create` - Create an app
 
     heroku create sushi
 
@@ -25,11 +25,11 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
     heroku access:add me@xy.com
     heroku access:remove me@xy.com
 
-#### Transfer to another owner
+#### Transfer to another owner
 
     heroku apps:transfer new@owner.com
 
-### `logs` - Show logs
+### `logs` - Show logs
 
     heroku logs
     heroku logs -t      # --tail (stream)
@@ -43,7 +43,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 ### `pg` - PostgreSQL
 
-#### Start a database
+#### Start a database
 
     heroku addons:add heroku-postgresql
 
@@ -97,7 +97,7 @@ See: <a href="https://devcenter.heroku.com/articles/heroku-postgresql" class="ma
 
     heroku restart
 
-### `run` - Running tasks
+### `run` - Running tasks
 
     heroku run bash
     heroku run console                  # Rails console
@@ -105,7 +105,7 @@ See: <a href="https://devcenter.heroku.com/articles/heroku-postgresql" class="ma
 
 ### Domains
 
-### `domains` - Custom domains
+### `domains` - Custom domains
 
 #### Add both!
 
@@ -127,16 +127,16 @@ See: <a href="https://devcenter.heroku.com/articles/custom-domains" class="marku
 
 ### Other tricks
 
-### htpasswd (for PHP apps)
+### htpasswd (for PHP apps)
 
-Create an `.htaccess` file in the webroot:
+Create an `.htaccess` file in the webroot:
 
     AuthUserFile /app/www/.htpasswd
     AuthType Basic
     AuthName "Restricted Access"
     Require valid-user
 
-Create a `.htpasswd` file:
+Create a `.htpasswd` file:
 
     $ htpasswd -c .htpasswd [username]
 

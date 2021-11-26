@@ -6,9 +6,9 @@ Codepen with examples for you to practice with below!
 
 ### Objects in Javascript
 
-#### Codepen with examples for you to practice with below!
+#### Codepen with examples for you to practice with below!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*F_xu5P1BJ300C3OixplWNA.png" class="graf-image" /></figure>### The Object Type
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*F_xu5P1BJ300C3OixplWNA.png" class="graf-image" /></figure>### The Object Type
 
 The `object` is a data structure that stores other data, similar to how an array stores elements.
 
@@ -65,7 +65,7 @@ You can put an object together in a single statement.
 
 **Operator Precedence Revisited**
 
-### Iterating Through Objects
+### Iterating Through Objects
 
 Because objects store **_unordered_** key-value pairs, we do not rely on indices to access values; instead we rely on our keys.
 
@@ -75,8 +75,8 @@ A is a function that _belongs_ to an object. Every method is a function, but _no
 
 **Useful Object Methods**
 
--   <span id="b0e3">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
--   <span id="7fbd">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
+-   <span id="b0e3">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
+-   <span id="7fbd">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
 
 **Iterating through an Object’s keys & values**
 
@@ -86,8 +86,8 @@ A is a function that _belongs_ to an object. Every method is a function, but _no
 
 So far we have learned about 6 different data types:
 
--   <span id="5918">**Primitive** : Boolean, Null, Undefined, Number, String.</span>
--   <span id="d57e">**Reference** : Object (Arrays are a type of object)</span>
+-   <span id="5918">**Primitive** : Boolean, Null, Undefined, Number, String.</span>
+-   <span id="d57e">**Reference** : Object (Arrays are a type of object)</span>
 -   <span id="f915">Remember that **primitive** types are immutable!</span>
 
 **Immutability**
@@ -97,7 +97,7 @@ So far we have learned about 6 different data types:
 
 **Mutability**
 
-### Rest and Spread
+### Rest and Spread
 
 **Using the Spread Operator and Rest Parameter Syntax**  
 **Accepting Arguments**
@@ -108,7 +108,7 @@ So far we have learned about 6 different data types:
 
 **Utilizing Rest Parameters**
 
--   <span id="e9b5">`Rest Parameter Syntax` : Allows us to capture all of a function's incoming arguments into an array.</span>
+-   <span id="e9b5">`Rest Parameter Syntax` : Allows us to capture all of a function's incoming arguments into an array.</span>
 -   <span id="f072">Only the last parameter can be a rest parameter.</span>
 
 **Utilizing Spread Syntax**
@@ -127,7 +127,7 @@ So far we have learned about 6 different data types:
 ### Destructuring Parameters
 
 We can also destructure **incoming parameters** of a function.  
- This is very useful when we’re passing objects around to different functions.
+ This is very useful when we’re passing objects around to different functions.
 
 ---
 

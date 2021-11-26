@@ -96,7 +96,7 @@
                 <div class="section-content">
                     <div class="section-inner sectionLayout--insetColumn">
                         <h3 name="3dba" id="3dba" class="graf graf--h3 graf--leading graf--title">Fundamental Javascript Concepts You Should Understand</h3>
-                        <h3 name="771a" id="771a" class="graf graf--h3 graf-after--h3">Plain Old JS Object Lesson Concepts</h3>
+                        <h3 name="771a" id="771a" class="graf graf--h3 graf-after--h3">Plain Old JS Object Lesson Concepts</h3>
                         <figure name="acca" id="acca" class="graf graf--figure graf-after--h3">
                             <img class="graf-image" data-image-id="0*bEuahctJRS_qCQgV.jpg" data-width="639" data-height="724" src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" />
                         </figure>
@@ -107,7 +107,7 @@
                             <li name="fd1a" id="fd1a" class="graf graf--li graf-after--li">refereces: objects (including arrays)</li>
                             <li name="d581" id="d581" class="graf graf--li graf-after--li">references are mutable</li>
                             <li name="65e2" id="65e2" class="graf graf--li graf-after--li">
-                                Identify when to use <code class="markup--code markup--li-code">.</code> vs
+                                Identify when to use <code class="markup--code markup--li-code">.</code> vs
                                 <code class="markup--code markup--li-code">[]</code> when accessing values of an object
                             </li>
                             <li name="eb9d" id="eb9d" class="graf graf--li graf-after--li">
@@ -127,12 +127,12 @@
                             </li>
                         </ul>
                         <h4 name="d38b" id="d38b" class="graf graf--h4 graf-after--li">
-                            put it in brackets to access the value of the variable, rather than just make the value that string
+                            put it in brackets to access the value of the variable, rather than just make the value that string
                         </h4>
                         <pre name="e15d" id="e15d" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let a = &quot;b&quot;;<br>    let obj = {<br>        a: &quot;letter_a&quot;,<br>        [a]: &quot;letter b&quot;<br>    }</code></pre>
                         <ul class="postList">
                             <li name="e4fc" id="e4fc" class="graf graf--li graf-after--pre">
-                                Use the <code class="markup--code markup--li-code">obj[key] !== undefined</code> pattern to check if a given variable that
+                                Use the <code class="markup--code markup--li-code">obj[key] !== undefined</code> pattern to check if a given variable that
                                 contains a key exists in an object
                             </li>
                             <li name="0baa" id="0baa" class="graf graf--li graf-after--li">
@@ -149,11 +149,11 @@
                             </li>
                         </ul>
                         <h4 name="1b24" id="1b24" class="graf graf--h4 graf-after--li">
-                            Iterate through an object using a <code class="markup--code markup--h4-code">for in</code> loop
+                            Iterate through an object using a <code class="markup--code markup--h4-code">for in</code> loop
                         </h4>
                         <pre name="9621" id="9621" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let printValues = function(obj) {<br>      for (let key in obj) {<br>          let value = obj[key];<br>          console.log(value);<br>      }<br>  }</code></pre>
                         <h4 name="edf6" id="edf6" class="graf graf--h4 graf-after--pre">
-                            Define a function that utilizes <code class="markup--code markup--h4-code">...rest</code> syntax to accept an arbitrary number
+                            Define a function that utilizes <code class="markup--code markup--h4-code">...rest</code> syntax to accept an arbitrary number
                             of arguments
                         </h4>
                         <ul class="postList">
@@ -164,7 +164,7 @@
                         </ul>
                         <pre name="264d" id="264d" class="graf graf--pre graf-after--li"><code class="markup--code markup--pre-code">let myFunction = function(str, ...strs) {<br>        console.log(&quot;The first string is &quot; + str);<br>        console.log(&quot;The rest of the strings are:&quot;);<br>        strs.forEach(function(str) {<br>            console.log(str);<br>        })<br>    }</code></pre>
                         <h4 name="16b1" id="16b1" class="graf graf--h4 graf-after--pre">
-                            Use <code class="markup--code markup--h4-code">...spread</code> syntax for Object literals and Array literals
+                            Use <code class="markup--code markup--h4-code">...spread</code> syntax for Object literals and Array literals
                         </h4>
                         <pre name="1061" id="1061" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">let arr1 = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;];<br>  let longer = [...arr1, &quot;d&quot;, &quot;e&quot;]; <em class="markup--em markup--pre-em">// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;]</em><br>  <em class="markup--em markup--pre-em">// without spread syntax, this would give you a nested array</em><br>  let withoutRest = [arr1, &quot;d&quot;, &quot;e&quot;] <em class="markup--em markup--pre-em">// [[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;], &quot;d&quot;, &quot;e&quot;]</em></code></pre>
                         <ul class="postList">
@@ -182,10 +182,10 @@
                         <pre name="65fb" id="65fb" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// in a function call<br>let sayHello = function({name}) {<br>console.log(&quot;Hello, &quot; + name); // &quot;Hello Wilfred&quot;<br>}</code></pre>
                         <pre name="f3ba" id="f3ba" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// nested objects + aliasing<br>let { favorites: {color, food: vegetable} } = obj;<br>console.log(color, vegetable); //=&gt; mauve spaghetti squash</code></pre>
                         <h4 name="fccd" id="fccd" class="graf graf--h4 graf-after--pre">
-                            Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+                            Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
                         </h4>
                         <pre name="f816" id="f816" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">//</em><br>  let elementCounts = function(array) {<br>      let obj = {};<br>      array.forEach(function(el) {<br>          if (el in obj) obj[el] += 1;<br>          else obj[el] = 1;<br>      })<br>      return obj;<br>  }<br>  console.log(elementCounts([&quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;f&quot;])); <em class="markup--em markup--pre-em">// =&gt; Object {e: 1, f: 2, g: 1}</em></code></pre>
-                        <h3 name="daee" id="daee" class="graf graf--h3 graf-after--pre">Callbacks Lesson Concepts</h3>
+                        <h3 name="daee" id="daee" class="graf graf--h3 graf-after--pre">Callbacks Lesson Concepts</h3>
                         <ul class="postList">
                             <li name="a16e" id="a16e" class="graf graf--li graf-after--h3">
                                 Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.
@@ -227,7 +227,7 @@
                             <code class="markup--code markup--h4-code">Array#every</code>.
                         </h4>
                         <pre name="f225" id="f225" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">let myEvery = function(array, callback) {<br>      for (let i = 0; i &lt; array.length; i++) {<br>          if (!callback(array[i], i, array)) {<br>              return false<br>          }<br>      }<br>      return true;<br>  }<br>  <em class="markup--em markup--pre-em">// with arrow function syntax</em><br>  let myEvery = (array, callback) =&gt; {<br>      for (let i = 0; i &lt; array.length; i++) {<br>          if (!callback(array[i])) {<br>              return false<br>          }<br>      }<br>      return true;<br>  }</code></pre>
-                        <h3 name="d45e" id="d45e" class="graf graf--h3 graf-after--pre">Scope Lesson Concepts</h3>
+                        <h3 name="d45e" id="d45e" class="graf graf--h3 graf-after--pre">Scope Lesson Concepts</h3>
                         <ul class="postList">
                             <li name="685f" id="685f" class="graf graf--li graf-after--h3">
                                 Identify the difference between <code class="markup--code markup--li-code">const</code>,
@@ -320,7 +320,7 @@
                             <li name="6ea5" id="6ea5" class="graf graf--li graf-after--li">so an inner scope can access outer scope variables</li>
                             <li name="5188" id="5188" class="graf graf--li graf-after--li">but an outer scope can never access inner scope variables</li>
                         </ul>
-                        <h4 name="e609" id="e609" class="graf graf--h4 graf-after--li">Define an arrow function</h4>
+                        <h4 name="e609" id="e609" class="graf graf--h4 graf-after--li">Define an arrow function</h4>
                         <pre name="5804" id="5804" class="graf graf--pre graf-after--h4">let arrowFunction = (param1, param2) =&gt; {</pre>
                         <pre name="2b4c" id="2b4c" class="graf graf--pre graf-after--pre">let sum = param1 + param2;</pre>
                         <pre name="4695" id="4695" class="graf graf--pre graf-after--pre">return sum;</pre>
@@ -332,7 +332,7 @@
                         <pre name="2ea9" id="2ea9" class="graf graf--pre graf-after--pre">
 // you don’t have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;</pre>
                         <h4 name="187d" id="187d" class="graf graf--h4 graf-after--pre">
-                            Given an arrow function, deduce the value of <code class="markup--code markup--h4-code">this</code> without executing the code
+                            Given an arrow function, deduce the value of <code class="markup--code markup--h4-code">this</code> without executing the code
                         </h4>
                         <ul class="postList">
                             <li name="0ee6" id="0ee6" class="graf graf--li graf-after--h4">
@@ -370,7 +370,7 @@
                         <pre name="e5d2" id="e5d2" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let counter2 = createCounter();<br>console.log(counter2()); // =&gt; 1</code></pre>
                         <pre name="cd4e" id="cd4e" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// if i set a new function equal to my existing counter<br>// the internal state is shared with the new function<br>let counter3 = counter2;<br>console.log(counter3());</code></pre>
                         <h4 name="76a8" id="76a8" class="graf graf--h4 graf-after--pre">
-                            Define a method that references <code class="markup--code markup--h4-code">this</code> on an object literal
+                            Define a method that references <code class="markup--code markup--h4-code">this</code> on an object literal
                         </h4>
                         <ul class="postList">
                             <li name="ae61" id="ae61" class="graf graf--li graf-after--h4">
@@ -407,7 +407,7 @@
                         <pre name="3210" id="3210" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// note this is **not invoked** - we are assigning the function itself<br>let change = dog.changeName;<br>console.log(change()); // undefined</code></pre>
                         <pre name="d70c" id="d70c" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// our dog still has the same name<br>console.log(dog); // { name: &#39;Bowser&#39;, changeName: [Function: changeName] }</code></pre>
                         <pre name="5366" id="5366" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">// instead of changing the dog we changed the global name!!!<br>console.log(this); // Object [global] {etc, etc, etc,  name: &#39;Layla&#39;}</code></pre>
-                        <h3 name="c74f" id="c74f" class="graf graf--h3 graf-after--pre">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</h3>
+                        <h3 name="c74f" id="c74f" class="graf graf--h3 graf-after--pre">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</h3>
                         <ul class="postList">
                             <li name="b960" id="b960" class="graf graf--li graf-after--h3">
                                 could throw an error if it expects this to have some other method or whatever that doesn’t exist
@@ -471,7 +471,7 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                             <li name="64c8" id="64c8" class="graf graf--li graf-after--li">Function — Reference</li>
                         </ul>
                         <h4 name="5322" id="5322" class="graf graf--h4 graf-after--li">
-                            2. Identify when to use . vs [] when accessing values of an object
+                            2. Identify when to use . vs [] when accessing values of an object
                         </h4>
                         <pre name="8f4b" id="8f4b" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let obj = {<br>    &quot;one&quot;: 1,<br>    &quot;two&quot;: 2<br>};</code></pre>
                         <pre name="ebe0" id="ebe0" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// Choose the square brackets property accessor when the property name is determined at</em><br><em class="markup--em markup--pre-em">// runtime, or if the property name is not a valid identifier</em><br>let myKey = &quot;one&quot;;<br>console.log(obj[myKey]);</code></pre>
@@ -482,45 +482,45 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                         <pre name="c04e" id="c04e" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let keyName = &quot;two&quot;;</code></pre>
                         <pre name="cae3" id="cae3" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// If the key is not known, you can use an alternative `[]` syntax for</em><br><em class="markup--em markup--pre-em">// object initialization only</em><br>let obj2 = {<br>    [keyName]: 2<br>}<br>console.log(obj2);</code></pre>
                         <h4 name="3aed" id="3aed" class="graf graf--h4 graf-after--pre">
-                            4. Use the obj[key] !== undefined pattern to check if a given variable that contains a key exists in an object
+                            4. Use the obj[key] !== undefined pattern to check if a given variable that contains a key exists in an object
                         </h4>
                         <pre name="354d" id="354d" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">function doesKeyExist(obj, key) {<br>    <em class="markup--em markup--pre-em">// obj[key] !== undefined</em><br>    <em class="markup--em markup--pre-em">// or:</em><br>    return key in obj;<br>}</code></pre>
                         <pre name="2778" id="2778" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">let course = {<br>    bootcamp: &#39;Lambda&#39;,<br>    course: &#39;Bootcamp Prep&#39;<br>}<br>console.log(doesKeyExist(course, &#39;course&#39;)); <em class="markup--em markup--pre-em">// =&gt; true</em><br>console.log(doesKeyExist(course, &#39;name&#39;)); <em class="markup--em markup--pre-em">// =&gt; false</em></code></pre>
-                        <h4 name="9072" id="9072" class="graf graf--h4 graf-after--pre">5. Utilize Object.keys and Object.values in a function</h4>
+                        <h4 name="9072" id="9072" class="graf graf--h4 graf-after--pre">5. Utilize Object.keys and Object.values in a function</h4>
                         <pre name="b88e" id="b88e" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function printKeys(object) {<br>    return Object.keys(object);<br>}</code></pre>
                         <pre name="4532" id="4532" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">function printValues(object) {<br>    return Object.values(object);<br>}</code></pre>
                         <pre name="d095" id="d095" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(printKeys({<br>    dog: &quot;Strelka&quot;,<br>    dog2: &quot;Belka&quot;<br>}));<br>console.log(printValues({<br>    dog: &quot;Strelka&quot;,<br>    dog2: &quot;Belka&quot;<br>}));</code></pre>
-                        <h4 name="001c" id="001c" class="graf graf--h4 graf-after--pre">6. Iterate through an object using a for in loop</h4>
+                        <h4 name="001c" id="001c" class="graf graf--h4 graf-after--pre">6. Iterate through an object using a for in loop</h4>
                         <pre name="4363" id="4363" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let player = {<br>    name: &quot;Sergey&quot;,<br>    skill: &quot;hockey&quot;<br>};</code></pre>
                         <pre name="03f4" id="03f4" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">for (let key in player) {<br>    console.log(key, player[key]);<br>}</code></pre>
                         <pre name="99ec" id="99ec" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(Object.entries(player));</code></pre>
                         <h4 name="4f3a" id="4f3a" class="graf graf--h4 graf-after--pre">
-                            7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
+                            7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
                         </h4>
                         <pre name="405e" id="405e" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function restSum(...otherNums) {<br>    let sum = 0;<br>    console.log(otherNums);<br>    otherNums.forEach(function(num) {<br>        sum += num;<br>    });</code></pre>
                         <pre name="0f39" id="0f39" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">    return sum;<br>}</code></pre>
                         <pre name="8d93" id="8d93" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">console.log(restSum(3, 5, 6)); <em class="markup--em markup--pre-em">// =&gt; 14</em><br>console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); <em class="markup--em markup--pre-em">// =&gt; 45</em><br>console.log(restSum(0)); <em class="markup--em markup--pre-em">// =&gt; 0</em></code></pre>
-                        <h4 name="452e" id="452e" class="graf graf--h4 graf-after--pre">8. Use …spread syntax for Object literals and Array literals</h4>
+                        <h4 name="452e" id="452e" class="graf graf--h4 graf-after--pre">8. Use …spread syntax for Object literals and Array literals</h4>
                         <pre name="fe0d" id="fe0d" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let numArray = [1, 2, 3];<br>let moreNums = [...numArray, 4, 5, 6]</code></pre>
                         <pre name="604f" id="604f" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(moreNums);</code></pre>
                         <pre name="77db" id="77db" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let shoe = {<br>    color: &quot;red&quot;,<br>    size: 10<br>};<br>let newShoe = {<br>    ...shoe,<br>    brand: &quot;Nike&quot;,<br>    size: 12<br>};<br>console.log(newShoe);<br>newShoe.color = &quot;black&quot;;<br>console.log(newShoe);</code></pre>
                         <pre name="eb8f" id="eb8f" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(shoe);</code></pre>
-                        <h4 name="78c5" id="78c5" class="graf graf--h4 graf-after--pre">9. Destructure an array to reference specific elements</h4>
+                        <h4 name="78c5" id="78c5" class="graf graf--h4 graf-after--pre">9. Destructure an array to reference specific elements</h4>
                         <pre name="7bdf" id="7bdf" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let arr = [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;];</code></pre>
                         <pre name="6bd6" id="6bd6" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let [first] = arr;<br>console.log(first);</code></pre>
-                        <h4 name="5977" id="5977" class="graf graf--h4 graf-after--pre">10. Destructure an object to reference specific values</h4>
+                        <h4 name="5977" id="5977" class="graf graf--h4 graf-after--pre">10. Destructure an object to reference specific values</h4>
                         <pre name="f0ea" id="f0ea" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">let me = {<br>    name: &quot;Ian&quot;,<br>    instruments: [&#39;bass&#39;, &#39;synth&#39;, &#39;guitar&#39;],<br>    siblings: {<br>        brothers: [&#39;Alistair&#39;],<br>        sisters: [&#39;Meghan&#39;]<br>    }<br>}</code></pre>
                         <pre name="13b9" id="13b9" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let {<br>    name,<br>    instruments: musical_instruments,<br>    siblings: {<br>        sisters<br>    }<br>} = me;</code></pre>
                         <pre name="f5da" id="f5da" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(name);<br>console.log(musical_instruments);<br>console.log(sisters);</code></pre>
                         <h4 name="42f0" id="42f0" class="graf graf--h4 graf-after--pre">
                             11. Write a function that accepts a string as an argument and returns an object representing the count of each character in
-                            the array
+                            the array
                         </h4>
                         <pre name="f94b" id="f94b" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function charCount(inputString) {</code></pre>
                         <pre name="1a65" id="1a65" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">    let res = inputString.split(&quot;&quot;).reduce(function(accum, el) {<br>        if (el in accum) {<br>            accum[el] = accum[el] + 1;<br>        } else {<br>            accum[el] = 1;<br>        }<br>        return accum;<br>    }, {})<br>    return res;</code></pre>
                         <pre name="88b0" id="88b0" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">}</code></pre>
                         <pre name="e56c" id="e56c" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(charCount(&#39;aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds&#39;));</code></pre>
-                        <h3 name="1b11" id="1b11" class="graf graf--h3 graf-after--pre">Review of Concepts</h3>
+                        <h3 name="1b11" id="1b11" class="graf graf--h3 graf-after--pre">Review of Concepts</h3>
                         <h4 name="6f2e" id="6f2e" class="graf graf--h4 graf-after--h3">
                             1. Identify the difference between const, let, and var declarations
                         </h4>
@@ -568,12 +568,12 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                             </li>
                         </ul>
                         <h4 name="2ff5" id="2ff5" class="graf graf--h4 graf-after--li">
-                            3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+                            3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
                         </h4>
                         <p name="45ea" id="45ea" class="graf graf--p graf-after--h4">
                             Consider this <code class="markup--code markup--p-code">run</code> function, inside which
                             <code class="markup--code markup--p-code">foo</code> and <code class="markup--code markup--p-code">bar</code> have
-                            <code class="markup--code markup--p-code">function scope</code> . <code class="markup--code markup--p-code">i</code> and
+                            <code class="markup--code markup--p-code">function scope</code> . <code class="markup--code markup--p-code">i</code> and
                             <code class="markup--code markup--p-code">baz</code> are scoped to the block expression.
                         </p>
                         <pre name="28c5" id="28c5" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// function and block scope in this example</em><br>function run() {<br>    var foo = &quot;Foo&quot;;<br>    let bar = &quot;Bar&quot;;</code></pre>
@@ -587,7 +587,7 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                         </p>
                         <p name="df94" id="df94" class="graf graf--p graf-after--p">
                             Consider this <code class="markup--code markup--p-code">run</code> function, inside of which
-                            <code class="markup--code markup--p-code">foo</code> has <code class="markup--code markup--p-code">function scope</code> .
+                            <code class="markup--code markup--p-code">foo</code> has <code class="markup--code markup--p-code">function scope</code> .
                         </p>
                         <pre name="0e28" id="0e28" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">function run() {<br>    console.log(foo); <em class="markup--em markup--pre-em">// undefined</em><br>    var foo = &quot;Foo&quot;;<br>    console.log(foo); <em class="markup--em markup--pre-em">// Foo</em><br>}</code></pre>
                         <pre name="1bc5" id="1bc5" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">run();</code></pre>
@@ -599,22 +599,22 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                         <pre name="f27b" id="f27b" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">        return function func3(arg3) {<br>            <em class="markup--em markup--pre-em">// func3 scope</em></code></pre>
                         <pre name="64ed" id="64ed" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">            console.log(arg1, arg2, arg3);<br>        }<br>    }<br>}</code></pre>
                         <h4 name="5068" id="5068" class="graf graf--h4 graf-after--pre">
-                            6. Implement a closure and explain how the closure effects scope
+                            6. Implement a closure and explain how the closure effects scope
                         </h4>
                         <pre name="bb56" id="bb56" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">const adder = (arg1) =&gt; {<br>    return (arg2) =&gt; {<br>        return arg1 + arg2;<br>    }<br>};</code></pre>
                         <pre name="4c8e" id="4c8e" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">const func2 = adder(2);<br>const result = func2(2);<br>console.log(result); <em class="markup--em markup--pre-em">// =&gt; 4;</em></code></pre>
-                        <h4 name="167b" id="167b" class="graf graf--h4 graf-after--pre">4. Define an arrow function</h4>
+                        <h4 name="167b" id="167b" class="graf graf--h4 graf-after--pre">4. Define an arrow function</h4>
                         <pre name="069f" id="069f" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">const returnValue = (val) =&gt; val;</code></pre>
                         <p name="36d1" id="36d1" class="graf graf--p graf-after--pre">
                             This simple construct will create a function that accepts <code class="markup--code markup--p-code">val</code> as a parameter,
                             and returns <code class="markup--code markup--p-code">val</code> immediately. We do not need to type
-                            <code class="markup--code markup--p-code">return val</code> , because this is a single-line function.
+                            <code class="markup--code markup--p-code">return val</code> , because this is a single-line function.
                         </p>
                         <p name="9a32" id="9a32" class="graf graf--p graf-after--p">Identically, we could write</p>
                         <pre name="44a4" id="44a4" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">const returnValue = (val) =&gt; {<br>    return val;<br>};</code></pre>
                         <h4 name="8ef7" id="8ef7" class="graf graf--h4 graf-after--pre">
                             5. Given an arrow function, deduce the value of <code class="markup--code markup--h4-code">this</code> without executing
-                            the code
+                            the code
                         </h4>
                         <pre name="8105" id="8105" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function fDAdder(arr) {<br>    console.log(this);</code></pre>
                         <pre name="073b" id="073b" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">    return arr.reduce((acc, ele) =&gt; {<br>        return acc + ele;<br>    });<br>};</code></pre>
@@ -630,23 +630,23 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                             In this example, we use a fat arrow style function. Note that when we declare a functions like this
                             <code class="markup--code markup--p-code">this</code> becomes
                         </p>
-                        <h4 name="71c1" id="71c1" class="graf graf--h4 graf-after--p">7. Define a method that references this on an object literal</h4>
+                        <h4 name="71c1" id="71c1" class="graf graf--h4 graf-after--p">7. Define a method that references this on an object literal</h4>
                         <pre name="c9ad" id="c9ad" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">const pokemon = {<br>    firstname: &#39;Pika&#39;,<br>    lastname: &#39;Chu&#39;,<br>    getPokeName: function() {<br>        const fullname = `${this.firstname} ${this.lastname}`;<br>        return fullname;<br>    }<br>};</code></pre>
                         <pre name="2c6b" id="2c6b" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(pokemon.getPokeName());</code></pre>
                         <h4 name="2274" id="2274" class="graf graf--h4 graf-after--pre">
-                            8. Utilize the built in Function#bind on a callback to maintain the context of <code class="markup--code markup--h4-code">this</code>
+                            8. Utilize the built in Function#bind on a callback to maintain the context of <code class="markup--code markup--h4-code">this</code>
                         </h4>
                         <pre name="5cdd" id="5cdd" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">const pokemon = {<br>    firstname: &#39;Pika&#39;,<br>    lastname: &#39;Chu&#39;,<br>    getPokeName: function() {<br>        const fullname = `${this.firstname} ${this.lastname}`;<br>        return fullname;<br>    }<br>};</code></pre>
                         <pre name="75e1" id="75e1" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">const logPokemon = pokemon.getPokename.bind(pokemon);</code></pre>
                         <pre name="fef7" id="fef7" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">logPokemon(&#39;sushi&#39;, &#39;algorithms&#39;); <em class="markup--em markup--pre-em">// Pika Chu loves sushi and algorithms</em></code></pre>
                         <h4 name="4012" id="4012" class="graf graf--h4 graf-after--pre">
-                            9. Given a code snippet, identify what <code class="markup--code markup--h4-code">this</code> refers to
+                            9. Given a code snippet, identify what <code class="markup--code markup--h4-code">this</code> refers to
                         </h4>
                         <pre name="03c4" id="03c4" class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">function Person(name) {<br>    <em class="markup--em markup--pre-em">// this.name = name; </em><br>    <em class="markup--em markup--pre-em">// let that = this;</em></code></pre>
                         <pre name="8fe9" id="8fe9" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">    setTimeout(function() {<br>        <em class="markup--em markup--pre-em">// console.log(this); // =&gt; Window</em><br>        <em class="markup--em markup--pre-em">// console.log(that); // =&gt; [Function] =&gt; Person</em><br>        <em class="markup--em markup--pre-em">// this.sayName(); // =&gt; no method error</em><br>        that.sayName();<br>    }, 1000);<br>}</code></pre>
                         <pre name="d123" id="d123" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">Person.prototype.sayName = function() {<br>    console.log(this.name);<br>};</code></pre>
                         <pre name="67ab" id="67ab" class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">const jane = new Person(&quot;Jane&quot;);</code></pre>
-                        <h3 name="d97f" id="d97f" class="graf graf--h3 graf-after--pre">Check Out My New Blog:</h3>
+                        <h3 name="d97f" id="d97f" class="graf graf--h3 graf-after--pre">Check Out My New Blog:</h3>
                         <div name="2449" id="2449" class="graf graf--mixtapeEmbed graf-after--h3 graf--trailing">
                             <a href="https://bgoonz-blog.netlify.app/" data-href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong class="markup--strong markup--mixtapeEmbed-strong">Stackbit Web-Dev-HubTheme</strong><br /><em class="markup--em markup--mixtapeEmbed-em">Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="a2f1abe4ed6a87b0b90d28e55f930d20" data-thumbnail-img-id="0*IRiK5qLqEzQx6waz" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*IRiK5qLqEzQx6waz)"></a>
                         </div>

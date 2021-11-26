@@ -42,7 +42,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 >
 
-> One might confuse elements with a more widely known concept of “components”. We will introduce components in the [next section](https://reactjs.org/docs/components-and-props.html). Elements are what components are “made of”, and we encourage you to read this section before jumping ahead.
+> One might confuse elements with a more widely known concept of “components”. We will introduce components in the [next section](https://reactjs.org/docs/components-and-props.html). Elements are what components are “made of”, and we encourage you to read this section before jumping ahead.
 
 
 
@@ -50,7 +50,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 
 
-Let’s say there is a \<div> somewhere in your HTML file:
+Let’s say there is a \<div> somewhere in your HTML file:
 
 
 
@@ -62,7 +62,7 @@ Applications built with just React usually have a single root DOM node. If you a
 
 
 
-To render a React element into a root DOM node, pass both to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render):
+To render a React element into a root DOM node, pass both to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render):
 
 
 
@@ -78,11 +78,11 @@ It displays “Hello, world” on the page.
 
 
 
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
 
 
-With our knowledge so far, the only way to update the UI is to create a new element, and pass it to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render).
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render).
 
 
 
@@ -94,7 +94,7 @@ Consider this ticking clock example:
 
 
 
-It calls [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) every second from a [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+It calls [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) every second from a [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
 
 
 
@@ -102,7 +102,7 @@ It calls [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) e
 
 >
 
-> In practice, most React apps only call [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) once. In the next sections we will learn how such code gets encapsulated into [stateful components](https://reactjs.org/docs/state-and-lifecycle.html).
+> In practice, most React apps only call [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) once. In the next sections we will learn how such code gets encapsulated into [stateful components](https://reactjs.org/docs/state-and-lifecycle.html).
 
 >
 
@@ -118,7 +118,7 @@ React DOM compares the element and its children to the previous one, and only ap
 
 
 
-You can verify by inspecting the [last example](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element) with the browser tools:
+You can verify by inspecting the [last example](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element) with the browser tools:
 
 
 

@@ -6,7 +6,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ### Basic Web Development Environment Setup
 
-#### Windows Subsystem for Linux (WSL) and Ubuntu
+#### Windows Subsystem for Linux (WSL) and Ubuntu
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
 
@@ -56,7 +56,7 @@ Test if you have Node.js installed by opening an Ubuntu terminal and typing `nod
 1.  <span id="9098">In the Ubuntu terminal, type `sudo apt update` and press Enter</span>
 2.  <span id="806b">In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter</span>
 3.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
-4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
+4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
 5.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
 6.  <span id="d567">Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!</span>
 
@@ -74,7 +74,7 @@ Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `wh
 
 Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
 
-### Note about WSL
+### Note about WSL
 
 As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
 
@@ -120,7 +120,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

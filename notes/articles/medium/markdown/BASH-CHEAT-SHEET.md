@@ -4,7 +4,7 @@ My Bash Cheatsheet Index:
 
 ---
 
-### BASH CHEAT SHEET
+### BASH CHEAT SHEET
 
 #### My Bash Cheatsheet Index:
 
@@ -15,11 +15,11 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 > One Liners
 
-> Block Bad IPs
+> Block Bad IPs
 
 > If Statements
 
-> Check if args are passed
+> Check if args are passed
 
 > Check if required variables exist
 
@@ -27,7 +27,7 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 
 > While Loops
 
-> Run for 5 Seconds
+> Run for 5 Seconds
 
 > Redirecting Outputs
 
@@ -44,7 +44,7 @@ Remove whitespace:
 
 ### One Liners
 
-### Block Bad IPs
+### Block Bad IPs
 
 Use iptables to block all bad ip addresses:
 
@@ -79,7 +79,7 @@ Redirect the output to iptables:
 
 ### If Statements
 
-### Check if args are passed
+### Check if args are passed
 
     if [[ $# -eq 0 ]] ; then
         echo 'need to pass args'
@@ -109,7 +109,7 @@ Redirect the output to iptables:
 
 ### While Loops
 
-### Run process for 5 Seconds
+### Run process for 5 Seconds
 
     set -ex
     count=0

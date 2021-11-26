@@ -171,7 +171,7 @@ An advanced high-level computer programming language used for application develo
 
 ### C++
 
-A descendant of C. The C++ language is an advanced high-level computer programming language used for application development . However C++ unlike C, is object-oriented. C++ was originally developed by Bjarne Stroustrup at Bell Labs.
+A descendant of C. The C++ language is an advanced high-level computer programming language used for application development . However C++ unlike C, is object-oriented. C++ was originally developed by Bjarne Stroustrup at Bell Labs.
 
 ### C\#
 
@@ -199,7 +199,7 @@ CGI-Bin is usually the name of the folder or directory on a web server that stor
 
 ### CGI Program
 
-Common Gateway Interface program. A CGI program is a program that manages the interaction between web servers and users, as well as handling the input and output from web servers. CGI programs can be written in a variety of languages including Java , Perl, C, and Visual Basic.
+Common Gateway Interface program. A CGI program is a program that manages the interaction between web servers and users, as well as handling the input and output from web servers. CGI programs can be written in a variety of languages including Java , Perl, C, and Visual Basic.
 
 ### Cinepak
 
@@ -545,7 +545,7 @@ An object-oriented high level language used for web development. Javascript was 
 
 Stands for Joint Photographics Experts Group. This organization is responsible for and promotes the JPG and JPEG image compression formats.
 
-### JPEG and JPG
+### JPEG and JPG
 
 Image compression formats created by the Joint Photographics Experts Group ( JPEG ). The JPEG and JPG formats are popular on the internet.
 
@@ -796,7 +796,7 @@ A server that acts as a middle man in a connection between two computers. A prox
 
 ### QuickTime
 
-A multimedia format developed by Apple. Mac’s as well as PC’s can run video and animation in a QuickTime format. For Mac’s , the QuickTime technology is built into the operating system. For PC’s, a special QuickTime driver is required. Various encoding formats are supported by QuickTime including Cinepak, JPEG, and MPEG.
+A multimedia format developed by Apple. Mac’s as well as PC’s can run video and animation in a QuickTime format. For Mac’s , the QuickTime technology is built into the operating system. For PC’s, a special QuickTime driver is required. Various encoding formats are supported by QuickTime including Cinepak, JPEG, and MPEG.
 
 ### Router
 
@@ -804,7 +804,7 @@ A software tool or hardware device that transfers data to different devices acro
 
 ### RAID
 
-Stands for Redundant Array of Independent Disks. RAID is a standard by which multiple disks are connected to the same server . With RAID, better security, speed, and performance is achieved. RAID is often used for web servers, as many domains are often hosted on one server.
+Stands for Redundant Array of Independent Disks. RAID is a standard by which multiple disks are connected to the same server . With RAID, better security, speed, and performance is achieved. RAID is often used for web servers, as many domains are often hosted on one server.
 
 ### RDF
 
@@ -858,7 +858,7 @@ A technology created by Macromedia, Inc. for including multimedia in web pages.
 
 ### Search Engine
 
-A program used to find information on the world wide web using specific keywords. Some search engines include Google, Yahoo , AltaVista, and Lycos.
+A program used to find information on the world wide web using specific keywords. Some search engines include Google, Yahoo , AltaVista, and Lycos.
 
 ### Semantic Web
 
@@ -920,7 +920,7 @@ Stands for Server Side Include. An SSI is a special type of HTML comment that wh
 
 Stands for Secure Socket Layer. SSL is a protocol developed by Netscape which encrypts data transmitted over the web. SSL is used by websites that obtain confidential information about users such as a user’s address or credit card number.
 
-### Static IP address
+### Static IP address
 
 An IP address that does not change. Some computers that have static IP addresses include web servers and e-mail servers.
 
@@ -1000,7 +1000,7 @@ See Visual Basic.
 
 ### VBScript
 
-Stands for Visual Basic Scripting Edition. VBScript is a scripting language developed by Microsoft that works only in Microsoft’s Internet Explorer web browser and browsers based on Internet Explorer’s engine such as Flashpeak’s SlimBrowser. VBScript can be used to print dates, make calculations, interact with the user, and more. VBScript is based on Visual Basic , but it is much simpler.
+Stands for Visual Basic Scripting Edition. VBScript is a scripting language developed by Microsoft that works only in Microsoft’s Internet Explorer web browser and browsers based on Internet Explorer’s engine such as Flashpeak’s SlimBrowser. VBScript can be used to print dates, make calculations, interact with the user, and more. VBScript is based on Visual Basic , but it is much simpler.
 
 ### Virus
 
@@ -1036,7 +1036,7 @@ Stands for Wide Area Network. A WAN is a network that connects various computers
 
 ### WAP
 
-Stands for Wireless Application Protocol. WAP is the protocol used by various wireless devices such as mobile phones, pagers , and smartphones to receive data through a secure connection.
+Stands for Wireless Application Protocol. WAP is the protocol used by various wireless devices such as mobile phones, pagers , and smartphones to receive data through a secure connection.
 
 ### Web Applet
 
@@ -1048,7 +1048,7 @@ A program that communicates with and receives data from a web server for the pur
 
 ### Web Browser
 
-A web client used to display web pages and other web resources. Some web browsers include Mozilla Firefox, Netscape, Opera , and Internet Explorer.
+A web client used to display web pages and other web resources. Some web browsers include Mozilla Firefox, Netscape, Opera , and Internet Explorer.
 
 ### Web Document
 
@@ -1082,7 +1082,7 @@ See Web Spider.
 
 A type of server used to store the content of web sites and distribute it to users who request it.
 
-### Web Server Error
+### Web Server Error
 
 A message generated by a web server when some error occurs during the interaction between it and a user. The various web server errors each have a code. For example, when a user tries to access a file that does not exist on the web server, they will get a 404 File Not Found error.
 
@@ -1106,7 +1106,7 @@ See Web Spider.
 
 A special character that means any and all characters. The wildcard character is often used to select a large amount of files at once. For example, in Windows and DOS, the wildcard character is \*. Suppose you are using Windows and you want to see a list of all of the files in a directory that have a.txt extension, for this task you would use the wildcard character \* in the form \*.txt. This will return all the files in the directory that have a.txt extension.
 
-### Windows 2000, Windows NT, Windows 95/98, Windows XP
+### Windows 2000, Windows NT, Windows 95/98, Windows XP
 
 Operating systems that are part of the Windows family of operating systems developed by Microsoft. Currently, the most popular version of Windows is Windows XP.
 
@@ -1142,7 +1142,7 @@ A computer virus that works by making copies of itself and infecting other compu
 
 Stands for Web Services Description Language. WSDL is an XML formatted language that is used to describe the capabilities of a web service as well communication endpoints that are capable of exchanging messages.
 
-### World Wide Web
+### World Wide Web
 
 A subset of the internet that uses mostly the HTTP (as well as HTTPS) protocols to transfer web documents to users across the internet.
 
@@ -1172,7 +1172,7 @@ XQuery is a language used for extracting information from XML documents.
 
 ### XML
 
-Stands for Extensible Markup Language. XML is a markup language developed by the W3C where the tags are defined by developers . As such, the definition, transmission, validation, and interpretation of data between applications and organizations is enabled. XML is a simplified version of SGML.
+Stands for Extensible Markup Language. XML is a markup language developed by the W3C where the tags are defined by developers . As such, the definition, transmission, validation, and interpretation of data between applications and organizations is enabled. XML is a simplified version of SGML.
 
 ### XML Document
 
@@ -1184,7 +1184,7 @@ Stands for XML Document Object Model. XML DOM is a set of rules for how an XML p
 
 ### XML Schema
 
-A document used to describe the content, rules, structure, and syntax of an XML document. XML schema was designed by the W3C , and it is intended to replace DTD.
+A document used to describe the content, rules, structure, and syntax of an XML document. XML schema was designed by the W3C , and it is intended to replace DTD.
 
 ### XSD
 
@@ -1228,7 +1228,7 @@ Browsers that update themselves (without user intervention).
 
 <a href="http://tomdale.net/2013/05/evergreen-browsers/" class="markup--anchor markup--p-anchor" title="http://tomdale.net/2013/05/evergreen-browsers/">Evergreen Browsers</a>
 
-### ES3, ES5, ES5.1, ES6 (aka ES2015), etc
+### ES3, ES5, ES5.1, ES6 (aka ES2015), etc
 
 ES stands for ECMAScript, which is the specification that JavaScript is based on. The number that follows is the version of the specification.
 
@@ -1245,7 +1245,7 @@ Most browsers support at least ES5, and some even have ES6 (also known as ES2015
 
 <a href="https://gist.github.com/chriseppstein/674726" class="markup--anchor markup--p-anchor" title="https://gist.github.com/chriseppstein/674726">Sass/Less Comparison</a>
 
-### Linter, linting, jslint, jshint
+### Linter, linting, jslint, jshint
 
 A validation tool which checks for common issues in your JavaScript. You’d usually use this in your build process to enforce quality in your codebase. A great example of something to check for: _making sure you’ve always got your semicolons_.
 
@@ -1369,8 +1369,8 @@ There is an extensive list found <a href="https://stackoverflow.com/questions/54
 **Domain Name** — the characters/words used to identify a website after `http://` or  
 `www.`. The domain name consists of two parts. Take this example:  
 `https://dwyl.com`, `dwyl` makes up the **second level domain (SLD)** which is  
-then followed by `.com` which what is known as the **top level domain (TLD)** or  
-**parent domain**. Other examples of top level domains are: `.org`, `.co.uk`  
+then followed by `.com` which what is known as the **top level domain (TLD)** or  
+**parent domain**. Other examples of top level domains are: `.org`, `.co.uk`  
 `.io`. Domain names are the more memorable and user-friendly representation of a  
 website's **IP address**. Domain names are registered under the **Domain Name  
 System (DNS)**.
