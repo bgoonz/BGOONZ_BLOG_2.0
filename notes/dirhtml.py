@@ -374,10 +374,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 
     if isinstance(suffix, tuple):
         singular, multiple = suffix
-        if amount == 1:
-            suffix = singular
-        else:
-            suffix = multiple
+        suffix = singular if amount == 1 else multiple
     return str(amount) + suffix
 
 
