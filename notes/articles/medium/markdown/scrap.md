@@ -1,18 +1,18 @@
 **Skills:**
 
-**Languages**:                          JavaScript ES-6, NodeJS, HTML5, CSS3, SCSS, Bash Shell, SQL, MATLAB, Python, C++
+**Languages**: JavaScript ES-6, NodeJS, HTML5, CSS3, SCSS, Bash Shell, SQL, MATLAB, Python, C++
 
-**Frameworks / Libraries**:   React, Redux, ExpressJS, Gatsby, NextJS, Ant-Design, SCSS, Loadash, Jest, Sequelize, GraphQL, AJAX
+**Frameworks / Libraries**: React, Redux, ExpressJS, Gatsby, NextJS, Ant-Design, SCSS, Loadash, Jest, Sequelize, GraphQL, AJAX
 
-**Databases**:                           PostgreSQL, MongoDB, SQlite3
+**Databases**: PostgreSQL, MongoDB, SQlite3
 
-**Tools**:                                    Figma, Git, AWS S3, Heroku, Docker, Jira, Trello, Confluence, Netlify, Digital Ocean, VSCode, Google Analytics, Excel
+**Tools**: Figma, Git, AWS S3, Heroku, Docker, Jira, Trello, Confluence, Netlify, Digital Ocean, VSCode, Google Analytics, Excel
 
-**Operating Systems**:          Linux, Windows (WSL), IOS
+**Operating Systems**: Linux, Windows (WSL), IOS
 
 **Projects**
 
-**Gatsby-Gr\*\***aphQL-Blog\*\*[Live Site  ](https://bgoonz-blog.netlify.app/)[GitHub](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
+**Gatsby-Gr\*\***aphQL-Blog\*\*[Live Site ](https://bgoonz-blog.netlify.app/)[GitHub](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
 
 _JavaScript, React / Gatsby | GraphQL | SCSS | Lodash | Jamstack | Facebook Comments API | jQuery_
 
@@ -24,7 +24,7 @@ _JavaScript, React / Gatsby | GraphQL | SCSS | Lodash | Jamstack | Facebook Comm
 
 ● Added interactive content including comments, [video conferencing](https://bgoonz-blog.netlify.app/docs/interact/video-chat/), [data-structure visualization](https://bgoonz-blog.netlify.app/docs/interact/other-sites/), [games](https://bgoonz-blog.netlify.app/docs/interact/) and full text search.
 
-[**Autonomously Triggered Guitar Effects Platform**](https://www.youtube.com/watch?v=pRKjaprdWx4)[Live Site ](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/)  [GitHub](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering/tree/master/Triggered-Guitar-Effects-Platform)
+[**Autonomously Triggered Guitar Effects Platform**](https://www.youtube.com/watch?v=pRKjaprdWx4)[Live Site ](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/) [GitHub](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering/tree/master/Triggered-Guitar-Effects-Platform)
 
 _C++ | Python | MATLAB | PureData_
 
@@ -34,7 +34,7 @@ _C++ | Python | MATLAB | PureData_
 
 ● Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated sections of performance
 
-[**Family Promise**](https://familypromise.org/) **Service Tracker**[Live Site  ](https://a.familypromiseservicetracker.dev/) [GitHub](https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a)
+[**Family Promise**](https://familypromise.org/) **Service Tracker**[Live Site ](https://a.familypromiseservicetracker.dev/) [GitHub](https://github.com/Lambda-School-Labs/family-promise-service-tracker-fe-a)
 
 _React | ExpressJS | Figma | Okta_
 
@@ -72,17 +72,17 @@ _jQuery | ExpressJS | Google Analytics |Algolia Full Text Search | Amazon S3_
 
 ● Presided over internal and end user software trainings in addition to producing the corresponding documentation.
 
-●  Served as the primary point of contact for troubleshooting railroad hardware and software in North America
+● Served as the primary point of contact for troubleshooting railroad hardware and software in North America
 
 **Education**
 
-[**Lambda School**](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)**, _Full Stack Web Development_ \*\***                                                                                                             May 2020 - Nov 2021\*\*
+[**Lambda School**](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)**, _Full Stack Web Development_ \*\*** May 2020 - Nov 2021\*\*
 
 [![Logo
 
 Description automatically generated with medium confidence](file:///C:/Users/bryan/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png)](https://lambdaschool.com/courses/full-stack-web-development#curriculum)Six-month immersive software development course with a focus on full stack web development. Over 2000 hours of work invested including class time, homework, and projects.
 
-**B.S. **[**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/)**, TCNJ, Ewing NJ                                                                                                                                                     2014 -- 2019**
+**B.S. **[**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/)**, TCNJ, Ewing NJ 2014 -- 2019**
 
 [![Logo
 

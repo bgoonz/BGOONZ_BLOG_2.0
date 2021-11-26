@@ -1,8 +1,8 @@
 # <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;">Sitemap:</span>
 
 ---
-# Wiki Navigation
 
+# Wiki Navigation
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
@@ -29,6 +29,7 @@
 -   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
 
 -   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+
 ---
 
 ### - [✅] [HOME](https://bgoonz-blog.netlify.app/)

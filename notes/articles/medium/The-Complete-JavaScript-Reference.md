@@ -95,7 +95,7 @@ JS evaluates more complex expressions using the general math order of operations
 
 **Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
--   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
+-   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.  
      console.log(7 % 10) // =&gt; 7;</span>
 
 **The String Data Type**
@@ -168,11 +168,11 @@ Loose Equality, will return true even if the values are of a different type, due
 
 Variables are used to store information to be referenced and manipulated in a program.
 
--   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
+-   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).  
      let bootcamp = “App Academy”;  
      console.log(bootcamp); // “App Academy”</span>
 -   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
--   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
+-   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.  
      let bootcamp;  
      console.log(bootcamp); // undefined</span>
 -   <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>

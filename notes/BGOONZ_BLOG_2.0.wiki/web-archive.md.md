@@ -1,5 +1,4 @@
-Developers
-==========
+# Developers
 
 <iframe src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -8,20 +7,13 @@ Developers
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-
-
-
 <iframe src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600"></iframe>
-
-
-
-
 
 Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
 
-We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress.  If you have feedback, please email us at <info@archive.org>.
+We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress. If you have feedback, please email us at <info@archive.org>.
 
-You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
+You may also want to see [community-maintained API information](https://archive.readme.io/) for archive.org.
 
 **General**\
 [Overview of how items are structured](http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/)
