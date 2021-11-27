@@ -13,11 +13,7 @@ template: docs
 > So many times I have seen developers use the index of an item as its key when they render a list.
 
 ---
-You have **1** free member-only story left this month.
 
-[
-
-![Robin Pokorny](https://miro.medium.com/fit/c/25/25/1*rhcou0YfKQaL_ZE1WZKDkg.jpeg)
 
 
 
