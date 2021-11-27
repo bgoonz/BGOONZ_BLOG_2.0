@@ -1521,7 +1521,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   │   ├── ./pages/docs/articles/algo.md
 │   │   │   ├── ./pages/docs/articles/article-compilation.md
 │   │   │   ├── ./pages/docs/articles/basic-web-dev.md
-│   │   │   ├── ./pages/docs/articles/gallery.md
+│   │   │   ├── ./pages/docs/articles/gists.md
 │   │   │   ├── ./pages/docs/articles/index.md
 │   │   │   ├── ./pages/docs/articles/install.md
 │   │   │   ├── ./pages/docs/articles/intro.md
@@ -1536,7 +1536,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   ├── ./pages/docs/faq
 │   │   │   ├── ./pages/docs/faq/contact.md
 │   │   │   └── ./pages/docs/faq/index.md
-│   │   ├── ./pages/docs/gallery.md
+│   │   ├── ./pages/docs/gists.md
 │   │   ├── ./pages/docs/index.md
 │   │   ├── ./pages/docs/interact
 │   │   │   ├── ./pages/docs/interact/clock.md
@@ -8427,7 +8427,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   │   ├── ./pages/docs/articles/algo.md
 │   │   │   ├── ./pages/docs/articles/article-compilation.md
 │   │   │   ├── ./pages/docs/articles/basic-web-dev.md
-│   │   │   ├── ./pages/docs/articles/gallery.md
+│   │   │   ├── ./pages/docs/articles/gists.md
 │   │   │   ├── ./pages/docs/articles/index.md
 │   │   │   ├── ./pages/docs/articles/install.md
 │   │   │   ├── ./pages/docs/articles/intro.md
@@ -8442,7 +8442,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   ├── ./pages/docs/faq
 │   │   │   ├── ./pages/docs/faq/contact.md
 │   │   │   └── ./pages/docs/faq/index.md
-│   │   ├── ./pages/docs/gallery.md
+│   │   ├── ./pages/docs/gists.md
 │   │   ├── ./pages/docs/index.md
 │   │   ├── ./pages/docs/interact
 │   │   │   ├── ./pages/docs/interact/clock.md
