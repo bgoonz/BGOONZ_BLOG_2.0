@@ -42,7 +42,7 @@ template: docs
 <br>
 <h1>   Algorithms </h1>
 <br>
-<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -51,7 +51,7 @@ template: docs
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
-<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -79,31 +79,31 @@ Here's the repo that the website is built on:
 
 -   [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/0IAPZzGSbME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/0IAPZzGSbME"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/lxja8wBwN0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/lxja8wBwN0k"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-<iframe width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/HtSuA80QTyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/HtSuA80QTyo"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/5_5oE5lgrhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/5_5oE5lgrhw"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Books
 

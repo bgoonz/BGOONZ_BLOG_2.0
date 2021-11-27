@@ -40,16 +40,20 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://pdf-tools-xi.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
+<hr>
 <br>
 <br>
 <h1>   Markdown tools  </h1>
 <br>
-<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -57,10 +61,14 @@ template: docs
 <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
 <br>
+<hr>
+<br>
+
+<hr>
 <br>
 <h1>   Number Base Converter  </h1>
 <br>
-<iframe  class="block-content" src="https://number-base-converter-react.vercel.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://number-base-converter-react.vercel.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                        
@@ -68,7 +76,7 @@ template: docs
 <br>
   <h1>  Text Tools </h1>
 <br>
-<iframe  class="block-content" src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
         
@@ -76,14 +84,14 @@ template: docs
 <br>
   <h1>  Other Tools </h1>
 <br>
-<iframe  class="block-content" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
            
 <br>
 <br>
 <h1>  Awesome Search </h1>
-<iframe  class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -93,7 +101,7 @@ template: docs
 <br>
 <h1>Paste excel to HTML</h1>
 <br>
-<iframe  class="block-content" src="https://pedantic-wing-adbf82.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://pedantic-wing-adbf82.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -106,9 +114,12 @@ template: docs
 </iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
-<iframe   src="https://resourcerepo2.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe   src="https://resourcerepo2.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -119,22 +130,28 @@ template: docs
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://devtools42.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
 <br>
 <h1> Ternary Converter   </h1>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -142,11 +159,14 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://githtmlpreview.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -154,7 +174,7 @@ template: docs
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -162,11 +182,14 @@ template: docs
 <h1> Border Builder </h1>
 <br>
 
-<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -177,7 +200,7 @@ template: docs
 <br>
 <h1>                </h1>
 <br>
-<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         

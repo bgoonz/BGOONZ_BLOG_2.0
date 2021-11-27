@@ -59,6 +59,10 @@ on <a href="https://codepen.io">CodePen</a>.
 <iframe scrolling="yes" src="https://goonlinetools.com/covid19/global" style="border: 0px none;height: 540px; margin-top: -110px; margin-bottom: -220px; width: 100%;"> </iframe>
 
 <br>
+<hr>
+<br>
+
+<hr>
 <br>
 
 <br>

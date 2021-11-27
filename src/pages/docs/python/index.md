@@ -15,11 +15,14 @@ template: docs
 <h1>  Python Resources</h1>
 <br>
 
-<iframe class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 ## My Python Docs:
 

@@ -392,7 +392,7 @@ sections:
 
       height="1000px!important"
 
-        src="https://random-static-html-deploys.netlify.app/showcase2.html" title="YouTube video
+        src="https://random-static-html-deploys.netlify.app/showcase2.html"  
 
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 

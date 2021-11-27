@@ -17,7 +17,7 @@ template: docs
 <br>
 <h1>  Potluck Planner </h1>
 <br>
-<iframe  class="block-content" src="https://potluck-landing.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://potluck-landing.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -29,7 +29,7 @@ template: docs
 <br>
 <h1>Meditation App </h1>
 <br>
-<iframe  class="block-content" src="https://meditate42app.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://meditate42app.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -38,11 +38,14 @@ template: docs
 <h1>  Web Audio DAW      </h1>
 <br>
 
-<iframe src="https://mihirbeg28.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://mihirbeg28.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -51,11 +54,14 @@ template: docs
 <h1>React & Shopify Ecommerce Site (Norwex)     </h1>
 <br>
 
-<iframe src="https://friendly-amaranth-51833.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://friendly-amaranth-51833.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -66,11 +72,14 @@ template: docs
 <h1>Bgoonz Bookmarks   </h1>
 <br>
 
-<iframe src="https://bgoonzbookmarks.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://bgoonzbookmarks.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -81,8 +90,11 @@ template: docs
 <h1>Goal Tracker  </h1>
 <br>
 
-<iframe src="https://splendid-onion-b0ec3.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://splendid-onion-b0ec3.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
