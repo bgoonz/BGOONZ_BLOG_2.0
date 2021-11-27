@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Privacy Policy
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Privacy Policy
 seo:
     title: ''
     description: ''
