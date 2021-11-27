@@ -4,7 +4,9 @@ weight: 0
 excerpt: AJAX and APIs
 seo:
     title: 'AJAX and APIs'
-    description: ''
+    description: 'You can use any AJAX library you like with React. Some popular ones are Axios, jQuery AJAX, and the browser built-in window.fetch.
+
+'
     robots: []
     extra: []
 template: docs
