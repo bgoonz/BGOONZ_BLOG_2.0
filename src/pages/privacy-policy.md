@@ -40,7 +40,7 @@ template: docs
 
 <!---->
 
--   **To post testimonials.** We post testimonials on our Services that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at \_\_\_\_\_\_\_\_\_\_ and be sure to include your name, testimonial location, and contact information.
+-   Important: **To post testimonials.** We post testimonials on our Services that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at \_\_\_\_\_\_\_\_\_\_ and be sure to include your name, testimonial location, and contact information.
 
 <!---->
 
