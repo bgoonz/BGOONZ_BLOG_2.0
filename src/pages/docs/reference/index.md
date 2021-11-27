@@ -25,4 +25,4 @@ template: docs
 
 # Job Search:
 
-<iframe src="https://web-dev-collaborative.github.io/gitpod-job-search-html-static/" >
+<iframe src="https://web-dev-collaborative.github.io/gitpod-job-search-html-static/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
