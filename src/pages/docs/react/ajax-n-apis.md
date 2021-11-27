@@ -30,7 +30,7 @@ The example API returns a JSON object like this:
 }
 ```
 
-```
+```js
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
