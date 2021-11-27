@@ -23,6 +23,10 @@ template: docs
 
 <br>
 <br>
+<details>
+ <summary>Summary Goes Here</summary>
+ ...this is hidden, collapsable content...
+</details>
 
 SEMVER CHECKER... WHY?
 ----------------------
