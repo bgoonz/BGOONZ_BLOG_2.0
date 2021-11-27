@@ -28,6 +28,32 @@ template: docs
 
 
 
+> In the world of software management there exists a dread place called "dependency hell."
+>
+> The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.
+>
+> [semver.org](https://semver.org/)
+
+More and more projects try to follow Semantic Versioning to reduce package versioning nightmare and every dependency manager implements its own semantic versioner. [Composer](https://getcomposer.org/) and [NPM](https://www.npmjs.org/) for example don't handle version constraints the same way. It's hard sometimes to be sure how some library version will behave against some constraint.
+
+This tiny webapp checks if a given version satisfies another given constraint.
+
+SEMVER CONSTRAINT IMPLEMENTATIONS
+---------------------------------
+
+Semantic Versioning stands as a standard versioning scheme but it does not ([yet](https://github.com/mojombo/semver/issues/113)) cover dependency management and how to express constraint.
+
+Without any formal specification about constraint, dependency managers sometimes handle or express them differently. For example, the tilde-range constraint (`~x.y`) does not work the same way in [NPM](https://www.npmjs.org/) and [Composer](https://getcomposer.org/).
+
+-   See how [NPM](https://www.npmjs.org/) handles constraints: [npm/node-semver](https://github.com/npm/node-semver)
+-   See how [Composer](https://getcomposer.org/) handles constraints: [Package Versions](https://getcomposer.org/doc/01-basic-usage.md#package-version-constraints)
+-   See how [Bundler](http://bundler.io/) handles constraints: [Pessimistic version constraint](http://guides.rubygems.org/patterns/#pessimistic-version-constraint)
+
+WHY USING STRICT CONSTRAINT IS BAD?
+-----------------------------------
+
+
+
 
 
 Unless you know exactly what you are doing and why, you should change to a more flexible one like:
