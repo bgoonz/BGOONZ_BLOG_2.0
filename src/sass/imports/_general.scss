@@ -212,7 +212,7 @@ img {
     height: auto;
     max-width: 100%;
     border-radius: 10px;
-    :not(logo) {
+    :not(.site-logo) {
   box-shadow: inset 10px 10px 50px #fff;
 }
      
