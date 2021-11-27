@@ -44,7 +44,7 @@ template: docs
 
 <!---->
 
--   **Request feedback. **We may use your information to request feedback and to contact you about your use of our Services.
+-   Note: **Request feedback. **We may use your information to request feedback and to contact you about your use of our Services.
 
 <!---->
 
