@@ -664,3 +664,20 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+
+
+Node.js can be installed in different ways. This post highlights the most common and convenient ones.
+
+Official packages for all the major platforms are available at [https://nodejs.dev/download/](https://nodejs.dev/download/).
+
+One very convenient way to install Node.js is through a package manager. In this case, every operating system has its own.
+
+Other package managers for MacOS, Linux, and Windows are listed in [https://nodejs.dev/download/package-manager/](https://nodejs.dev/download/package-manager/)
+
+`nvm` is a popular way to run Node.js. It allows you to easily switch the Node.js version, and install new versions to try and easily rollback if something breaks, for example.
+
+It is also very useful to test your code with old Node.js versions.
+
+See [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) for more information about this option.
+
+In any case, when Node.js is installed you'll have access to the `node` executable program in the command line.
