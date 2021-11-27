@@ -391,7 +391,7 @@
         iframe,
         object,
         video {
-            max-width: 1400px !important;
+            max-width: 1300px !important;
         }
 
         img {
