@@ -10,19 +10,19 @@ seo:
 template: docs
 ---
 
-In production, it is recommended to minify any JavaScript code that is included with your application. **Minification can help your website load several times faster,** especially as the size of your JavaScript source code grows.
+In production, it is recommended to minify any JavaScript code that is included with your application. **Minification can help your website load several times faster,** especially as the size of your JavaScript source code grows.
 
 Here's one way to set it up:
 
 1.  [Install Node.js](https://nodejs.org/)
 
-2.  Run npm init -y in your project folder (**don't skip this step!**)
+2.  Run npm init -y in your project folder (**don't skip this step!**)
 
-3.  Run npm install terser
+3.  Run npm install terser
 
-Now, to minify a file called like_button.js, run in the terminal:
+Now, to minify a file called like_button.js, run in the terminal:
 
-This will produce a file called like_button.min.js with the minified code in the same directory. If you're typing this often, you can [create an npm script](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633) to give this command a name.
+This will produce a file called like_button.min.js with the minified code in the same directory. If you're typing this often, you can [create an npm script](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633) to give this command a name.
 
 ## How to Minify Your Minify your HTML, CSS and JavaScript Using an Online Tool&#xA;&#xA;
 
@@ -39,7 +39,7 @@ First, locate the css file (commonly named style.css) in your site files and ope
 
 ![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min4.png)
 
-Go to [minifycode.com](http://minifycode.com/css-minifier/) and click the CSS minifier tab. Then paste the CSS code into the input box and click the Minify CSS button.
+Go to [minifycode.com](http://minifycode.com/css-minifier/) and click the CSS minifier tab. Then paste the CSS code into the input box and click the Minify CSS button.
 
 ![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min5.png)
 
@@ -57,16 +57,16 @@ Repeat the same process to minify your site’s JavaScript and Html file(s) as w
 
 Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.
 
-See [preprocessing & context-specific optimizations](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer#minification-preprocessing--context-specific-optimizations) to learn more.
+See [preprocessing & context-specific optimizations](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer#minification-preprocessing--context-specific-optimizations) to learn more.
 
 ### Recommendations
 
 You should minify your HTML, CSS, and JavaScript resources:
 
--   To minify HTML, try [HTMLMinifier](https://github.com/kangax/html-minifier)
+-   To minify HTML, try [HTMLMinifier](https://github.com/kangax/html-minifier)
 
--   To minify CSS, try [CSSNano](https://github.com/ben-eb/cssnano) and [csso](https://github.com/css/csso).
+-   To minify CSS, try [CSSNano](https://github.com/ben-eb/cssnano) and [csso](https://github.com/css/csso).
 
--   To minify JavaScript, try [UglifyJS](https://github.com/mishoo/UglifyJS2). The [Closure Compiler](https://developers.google.com/closure/compiler) is also [very effective](https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016#summary-of-findings). You can create a build process that uses these tools to minify and rename the development files and save them to a production directory.
+-   To minify JavaScript, try [UglifyJS](https://github.com/mishoo/UglifyJS2). The [Closure Compiler](https://developers.google.com/closure/compiler) is also [very effective](https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016#summary-of-findings). You can create a build process that uses these tools to minify and rename the development files and save them to a production directory.
 
-Alternatively, the [PageSpeed Module](https://developers.google.com/speed/pagespeed/module), integrates with an Apache or Nginx web server to automatically optimize your site, including resource minification.
+Alternatively, the [PageSpeed Module](https://developers.google.com/speed/pagespeed/module), integrates with an Apache or Nginx web server to automatically optimize your site, including resource minification.

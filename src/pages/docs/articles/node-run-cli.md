@@ -21,11 +21,11 @@ or
 
 This changes how you will retrieve this value in the Node.js code.
 
-The way you retrieve it is using the process object built into Node.js.
+The way you retrieve it is using the process object built into Node.js.
 
-It exposes an argv property, which is an array that contains all the command line invocation arguments.
+It exposes an argv property, which is an array that contains all the command line invocation arguments.
 
-The first element is the full path of the node command.
+The first element is the full path of the node command.
 
 The second element is the full path of the file being executed.
 
@@ -41,6 +41,6 @@ you can access it using
 
 In this case:
 
-args\[0] is name=joe, and you need to parse it. The best way to do so is by using the [minimist](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
+args\[0] is name=joe, and you need to parse it. The best way to do so is by using the [minimist](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
 
 This time you need to use double dashes before each argument name:

@@ -1,5 +1,5 @@
 ---
-title: "The\_google cloud\_cheat sheet"
+title: Google Cloud
 weight: 1
 excerpt: lorem-ipsum
 seo:
@@ -13,19 +13,19 @@ template: docs
 
 The gcloud command-line tool cheat sheet
 
-## The gcloud cheat sheet
+## The gcloud cheat sheet
 
-A roster of go-to gcloud commands for the gcloud tool, Google Cloud’s primary command-line tool.
+A roster of go-to gcloud commands for the gcloud tool, Google Cloud’s primary command-line tool.
 
-(Also included: [introductory primer](https://cloud.google.com/sdk/docs/cheatsheet#introductory_primer), [understanding commands](https://cloud.google.com/sdk/docs/cheatsheet#understanding_commands), and a [printable PDF](https://cloud.google.com/sdk/docs/images/gcloud-cheat-sheet.pdf).)
+(Also included: [introductory primer](https://cloud.google.com/sdk/docs/cheatsheet#introductory_primer), [understanding commands](https://cloud.google.com/sdk/docs/cheatsheet#understanding_commands), and a [printable PDF](https://cloud.google.com/sdk/docs/images/gcloud-cheat-sheet.pdf).)
 
 ## Cheat sheet
 
 ### Getting started
 
-Get going with the gcloud command-line tool.
+Get going with the gcloud command-line tool.
 
--   [gcloud init](https://cloud.google.com/sdk/gcloud/reference/init): Initialize, authorize, and configure the gcloud tool.
+-   [gcloud init](https://cloud.google.com/sdk/gcloud/reference/init): Initialize, authorize, and configure the gcloud tool.
 
 -   [gcloud version](https://cloud.google.com/sdk/gcloud/reference/version): Display version and installed components.
 
@@ -35,13 +35,13 @@ Get going with the gcloud command-line tool.
 
 -   [gcloud config set project](https://cloud.google.com/sdk/gcloud/reference/config/set): Set a default Google Cloud project to work on.
 
--   [gcloud info](https://cloud.google.com/sdk/gcloud/reference/info): Display current gcloud tool environment details.
+-   [gcloud info](https://cloud.google.com/sdk/gcloud/reference/info): Display current gcloud tool environment details.
 
 ### Help
 
 Cloud SDK is happy to help.
 
--   [gcloud help](https://cloud.google.com/sdk/gcloud/reference/help): Search the gcloud tool reference documents for specific terms.
+-   [gcloud help](https://cloud.google.com/sdk/gcloud/reference/help): Search the gcloud tool reference documents for specific terms.
 
 -   [gcloud feedback](https://cloud.google.com/sdk/gcloud/reference/feedback): Provide feedback for the Cloud SDK team.
 
@@ -67,9 +67,9 @@ Make the Cloud SDK your own; personalize your configuration with properties.
 
 Grant and revoke authorization to Cloud SDK
 
--   [gcloud auth login](https://cloud.google.com/sdk/gcloud/reference/auth/login): Authorize Google Cloud access for the gcloud tool with Google user credentials and set current account as active.
+-   [gcloud auth login](https://cloud.google.com/sdk/gcloud/reference/auth/login): Authorize Google Cloud access for the gcloud tool with Google user credentials and set current account as active.
 
--   [gcloud auth activate-service-account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account): Like gcloud auth login but with service account credentials.
+-   [gcloud auth activate-service-account](https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account): Like gcloud auth login but with service account credentials.
 
 -   [gcloud auth list](https://cloud.google.com/sdk/gcloud/reference/auth/list): List all credentialed accounts.
 
@@ -105,13 +105,13 @@ Configuring Cloud Identity & Access Management (IAM) preferences and service acc
 
 Manage containerized applications on Kubernetes
 
--   [gcloud auth configure-docker](https://cloud.google.com/sdk/gcloud/reference/auth/configure-docker): Register the gcloud tool as a Docker credential helper.
+-   [gcloud auth configure-docker](https://cloud.google.com/sdk/gcloud/reference/auth/configure-docker): Register the gcloud tool as a Docker credential helper.
 
 -   [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create): Create a cluster to run GKE containers.
 
 -   [gcloud container clusters list](https://cloud.google.com/sdk/gcloud/reference/container/clusters/list): List clusters for running GKE containers.
 
--   [gcloud container clusters get-credentials](https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials): Update kubeconfig to get kubectl to use a GKE cluster.
+-   [gcloud container clusters get-credentials](https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials): Update kubeconfig to get kubectl to use a GKE cluster.
 
 -   [gcloud container images list-tags](https://cloud.google.com/sdk/gcloud/reference/container/images/list-tags): List tag and digest metadata for a container image.
 
@@ -165,27 +165,27 @@ A quick primer for getting started with the gcloud command-line tool.
 
 ### Installing the Cloud SDK
 
-Install the Cloud SDK with these [installation instructions](https://cloud.google.com/sdk/docs/install).
+Install the Cloud SDK with these [installation instructions](https://cloud.google.com/sdk/docs/install).
 
-### Flags, arguments, and other wondrous additions
+### Flags, arguments, and other wondrous additions
 
 Arguments can be Positional args or Flags
 
--   **Positional args:** Set after command name; must respect order of positional args.
+-   **Positional args:** Set after command name; must respect order of positional args.
 
--   **Flags:** Set after positional args; order of flags doesn’t matter.
+-   **Flags:** Set after positional args; order of flags doesn’t matter.
 
     A flag can be either a:
 
-    -   *Name-value pair* (--foo=bar), or
+    -   *Name-value pair* (--foo=bar), or
 
-    -   *Boolean* (--force/no-force).
+    -   *Boolean* (--force/no-force).
 
     Additionally, flags can either be:
 
     -   _Required_
 
-    -   *Optional:* in which case, the default value is used, if the flag is not defined
+    -   *Optional:* in which case, the default value is used, if the flag is not defined
 
 ### Global flags
 
@@ -197,25 +197,25 @@ Some flags are available throughout the gcloud command-line tool experience, lik
 
 -   [--quiet](https://cloud.google.com/sdk/gcloud/reference#--quiet): Disabling interactive prompting (and applying default values for inputs).
 
--   [--verbosity](https://cloud.google.com/sdk/gcloud/reference#--verbosity): Can set verbosity levels at debug, info, warning, error, critical, and none.
+-   [--verbosity](https://cloud.google.com/sdk/gcloud/reference#--verbosity): Can set verbosity levels at debug, info, warning, error, critical, and none.
 
--   [--version](https://cloud.google.com/sdk/gcloud/reference#--version): Display gcloud version information.
+-   [--version](https://cloud.google.com/sdk/gcloud/reference#--version): Display gcloud version information.
 
--   [--format](https://cloud.google.com/sdk/gcloud/reference#--format): Set output format as config, csv, default, diff, disable, flattened, get, json, list, multi, none, object, table, text, value, or yaml.
+-   [--format](https://cloud.google.com/sdk/gcloud/reference#--format): Set output format as config, csv, default, diff, disable, flattened, get, json, list, multi, none, object, table, text, value, or yaml.
 
 ### Cleaning up results
 
-Extricate the most from your output with the [filter](https://cloud.google.com/sdk/gcloud/reference/topic/filters), [format](https://cloud.google.com/sdk/gcloud/reference/topic/formats), limit, and sort-by flags.
+Extricate the most from your output with the [filter](https://cloud.google.com/sdk/gcloud/reference/topic/filters), [format](https://cloud.google.com/sdk/gcloud/reference/topic/formats), limit, and sort-by flags.
 
-For Compute Engine instances with prefix us and not machine type f1-micro:
+For Compute Engine instances with prefix us and not machine type f1-micro:
 
 For a list of projects created on or after 15 January 2018, sorted from oldest to newest, presented as a table with project number, project id and creation time columns with dates and times in local timezone:
 
-For a list of ten Compute Engine instances with a label my-label (of any value):
+For a list of ten Compute Engine instances with a label my-label (of any value):
 
 ## Understanding commands
 
-The underlying patterns for gcloud commands; to aid self-discovery of commands.
+The underlying patterns for gcloud commands; to aid self-discovery of commands.
 
 ### Finding gcloud commands
 
@@ -223,40 +223,40 @@ The gcloud command-line tool is a tree; non-leaf nodes are command groups and le
 
 Most gcloud commands follow the following format:
 
-For example: gcloud + compute + instances + create + example-instance-1 + --zone=us-central1-a
+For example: gcloud + compute + instances + create + example-instance-1 + --zone=us-central1-a
 
 #### Release level
 
-*Release Level* refers to the command’s release status.
+*Release Level* refers to the command’s release status.
 
-*Example:* alpha for alpha commands, beta for beta commands, no release level needed for GA commands.
+*Example:* alpha for alpha commands, beta for beta commands, no release level needed for GA commands.
 
 #### Component
 
-*Component* refers to the different Google Cloud services.
+*Component* refers to the different Google Cloud services.
 
-*Example:* compute for Compute Engine, app for App Engine, etc.
+*Example:* compute for Compute Engine, app for App Engine, etc.
 
 #### Entity
 
-*Entity* refers to the plural form of an element or collection of elements under a component.
+*Entity* refers to the plural form of an element or collection of elements under a component.
 
-*Example:* disks, firewalls, images, instances, regions, zones for compute
+*Example:* disks, firewalls, images, instances, regions, zones for compute
 
 #### Operation
 
-*Operation* refers to the imperative verb form of the operation to be performed on the entity.
+*Operation* refers to the imperative verb form of the operation to be performed on the entity.
 
-*Example:* Common operations are describe, list, create/update, delete/clear, import, export, copy, remove, add, reset, restart, restore, run, and deploy.
+*Example:* Common operations are describe, list, create/update, delete/clear, import, export, copy, remove, add, reset, restart, restore, run, and deploy.
 
 #### Positional args
 
-*Positional args* refer to the required, order-specific arguments needed to execute the command.
+*Positional args* refer to the required, order-specific arguments needed to execute the command.
 
-*Example:* \<INSTANCE_NAMES> is the required positional argument for gcloud compute instances create.
+*Example:* \<INSTANCE_NAMES> is the required positional argument for gcloud compute instances create.
 
 #### Flags
 
-*Flags* refer to the additional arguments, --flag-name(=value), passed in to the command after positional args.
+*Flags* refer to the additional arguments, --flag-name(=value), passed in to the command after positional args.
 
-*Example:* --machine-type=\<MACHINE_TYPE> and --preemptible are optional flags for gcloud compute instances create.
+*Example:* --machine-type=\<MACHINE_TYPE> and --preemptible are optional flags for gcloud compute instances create.

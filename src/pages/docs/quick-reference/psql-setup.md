@@ -21,9 +21,9 @@ If you follow this guide to a tee… you will install PostgreSQL itself on your 
 
 ### PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" /></figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly’ …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
+<figure><img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" /></figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly’ …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
 
-### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
+### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
 
 **Postgres**, is a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" class="markup--anchor markup--p-anchor" title="Free and open-source software">free and open-source</a> <a href="https://en.wikipedia.org/wiki/Relational_database_management_system" class="markup--anchor markup--p-anchor" title="Relational database management system">relational database management system</a> (RDBMS)
 
@@ -58,7 +58,7 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 ### Oooh! A password! I’ll enter **\*\*\*\***. I sure won’t forget that because, if I do, I’ll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!**
 
-### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
+### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it’s not worth it.
 
 -   <span id="25b7">Sure. 5432. Good to go. Next.</span>
 -   <span id="28be">Not even sure what that means. Default! Next.</span>
@@ -66,7 +66,7 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 Insert pop culture reference to pass the time
 
-### Installing PostgreSQL Client Tools on Ubuntu
+### Installing PostgreSQL Client Tools on Ubuntu
 
 Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell `apt`, the package manager, that you want it to go find the PostgreSQL 12 client tools from PostgreSQL itself rather than the common package repositories. You do that by issuing the following two commands. Copy and paste them one at a time into your shell. (If your Ubuntu shell isn't running, start one.)
 
@@ -92,13 +92,13 @@ If it asks you if you want to install them, please tell it “Y”.
 
 Test that it installed by typing `psql --version`. You should see it print out information about the version of the installed tools. If it tells you that it can't find the command, try these instructions over.
 
-### Configuring the client tools
+### Configuring the client tools
 
 Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this, you can customize your shell to always add the extra commands for you.
 
 This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s directions for adding an alias to its startup file.
 
-Make sure you’re in your Ubuntu home directory. You can do that by typing `cd` and hitting enter. Use `ls` to find out if you have a `.bashrc` file. Type `ls .bashrc`. If it shows you that one exists, that's the one you will add the alias to. If it tells you that there is no file named that, then type `ls .profile`. If it shows you that one exists, that's the one you will add the alias to. If it shows you that it does not exist, then use the file name `.bashrc` in the following section.
+Make sure you’re in your Ubuntu home directory. You can do that by typing `cd` and hitting enter. Use `ls` to find out if you have a `.bashrc` file. Type `ls .bashrc`. If it shows you that one exists, that's the one you will add the alias to. If it tells you that there is no file named that, then type `ls .profile`. If it shows you that one exists, that's the one you will add the alias to. If it shows you that it does not exist, then use the file name `.bashrc` in the following section.
 
 Now that you know which profile file to use, type `code «profile file name»` where "profile file name" is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you've already added aliases, in that section), type the following.
 
@@ -141,7 +141,7 @@ You can confirm that only you have read/write permission by typing `ls -al ~/.pg
 
     -rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass
 
-Now, try connecting to PostreSQL by typing `psql postgres`. Because you added the alias to your startup script, and because you created your **.pgpass** file, it should now connect without prompting you for any credentials! Type `\q` and press Enter to exit the PostgreSQL command line client.
+Now, try connecting to PostreSQL by typing `psql postgres`. Because you added the alias to your startup script, and because you created your **.pgpass** file, it should now connect without prompting you for any credentials! Type `\q` and press Enter to exit the PostgreSQL command line client.
 
 ### Installing Postbird
 
@@ -157,7 +157,7 @@ Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other dev
 
 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.
 
-### Now.. if you still have some gas in the tank… let’s put our new tools to work:
+### Now.. if you still have some gas in the tank… let’s put our new tools to work:
 
 ### The node-postgres
 
@@ -200,7 +200,7 @@ INSERT INTO cars(name, price) VALUES('Volkswagen’, 21600);
 
 In some of the examples, we use this `cars` table.
 
-### The node-postgres first example
+### The node-postgres first example
 
 In the first example, we connect to the PostgreSQL database and return a simple SELECT query result.
 
@@ -249,7 +249,7 @@ We issue a simple SELECT query. We get the result and output it to the console. 
 
 This is the output.
 
-### The node-postgres column names
+### The node-postgres column names
 
 In the following example, we get the columns names of a database.
 
@@ -282,7 +282,7 @@ The column names are retrieved with `res.fields` attribute. We also use the `cat
 
 The output shows three column names of the `cars` table.
 
-### Selecting all rows
+### Selecting all rows
 
 In the next example, we select all rows from the database table.
 
@@ -316,7 +316,7 @@ In the next example, we select all rows from the database table.
 
 **TBC…**
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 

@@ -3902,15 +3902,15 @@ This simple Express application will:
 
 
 
-Now add a folder named public to the root of your Express project. Copy the files from the build folder in your Create React App project to the public folder in the Express application project. Then run your application using the command node app.js.
+Now add a folder named public to the root of your Express project. Copy the files from the build folder in your Create React App project to the public folder in the Express application project. Then run your application using the command node app.js.
 
 
 
-Open a browser and browse to the URL http://localhost:9000/. You should see your React application served from your Express application! Be sure to click the navigation links to verify that all of your configured routes work as expected.
+Open a browser and browse to the URL http://localhost:9000/. You should see your React application served from your Express application! Be sure to click the navigation links to verify that all of your configured routes work as expected.
 
 
 
-Also, because you configured Express to serve the ./public/index.html file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
+Also, because you configured Express to serve the ./public/index.html file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
 
 
