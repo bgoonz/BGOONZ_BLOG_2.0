@@ -118,7 +118,7 @@ There are two sub-folders:
 ---
 
 ![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
-
+```
 [.](.)<br>
 ├── [./backend](./backend)<br>
 │ ├── [./backend/activation.php](./backend/activation.php)<br>
