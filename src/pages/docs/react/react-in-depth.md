@@ -7362,7 +7362,7 @@ Change the `browserslist.development` property in the `package.json` file to thi
         ]
       }
     }
-
+```
 The query `chrome >= 30` specifies that you want to target Chrome version 30 or newer.
 
 > _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor"><em>browserl.ist</em></a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
