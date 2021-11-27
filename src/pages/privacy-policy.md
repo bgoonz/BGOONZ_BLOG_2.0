@@ -12,7 +12,7 @@ template: docs
 
     PRIVACY NOTICE
 
--   Visit our website at <https://bgoonz-blog.netlify.app/>
+-   Note: Visit our website at <https://bgoonz-blog.netlify.app/>
 
 <!---->
 
