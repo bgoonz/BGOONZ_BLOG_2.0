@@ -15,6 +15,6 @@ template: docs
 <br>
 <h1>Leetcode </h1>
 <br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/old_index.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/old_index.html" height="800px" style="width: 100%; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
