@@ -201,7 +201,7 @@
             },
             {
                 "label": "Projects",
-                "url": "/projects",
+                "url": "docs/projects/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
