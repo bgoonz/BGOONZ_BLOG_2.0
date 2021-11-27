@@ -117,6 +117,7 @@
     .docs-item-link {
         border: 1px solid $gray-300;
         border-radius: $border-radius-sm;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         color: $gray-700;
         display: block;
         font-weight: bold;
