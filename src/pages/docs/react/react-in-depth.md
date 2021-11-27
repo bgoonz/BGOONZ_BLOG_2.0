@@ -7482,7 +7482,7 @@ To add React Router to the application, start by installing the `react-router-do
     npm install react-router-dom@^5.0.0
 
 Then update the `App` component to this code:
-
+```jsx
     // ./src/App.js
 
     import React from 'react';
