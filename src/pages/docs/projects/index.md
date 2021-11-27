@@ -36,7 +36,7 @@ weight: 0
 <br>
 <h1>  Links: </h1>
 <br>
-<iframe  class="block-content" src="https://links4242.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://links4242.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br>
@@ -132,7 +132,7 @@ weight: 0
 <br>
 <h1>  Potluck Planner </h1>
 <br>
-<iframe  class="block-content" src="https://potluck-landing.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://potluck-landing.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
@@ -145,11 +145,11 @@ weight: 0
 
 <h1>Meditation App </h1>
 <br>
-<iframe  class="block-content" src="https://meditate42app.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://meditate42app.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
 
 <h1>Fancy Portfolio</h1>
 <br>
-<iframe  class="block-content" src="https://bg-portfolio.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bg-portfolio.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
