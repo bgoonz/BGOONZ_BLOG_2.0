@@ -34,6 +34,10 @@ weight: 1
 <br>
 <iframe  class="block-content" src="https://links4242.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -41,6 +45,10 @@ weight: 1
 <br>
 <iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/wikipedia-viewer.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -48,8 +56,16 @@ weight: 1
 ://web-dev-resource-hub.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -57,8 +73,16 @@ weight: 1
 ://learning-redux42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -66,8 +90,16 @@ weight: 1
 ://trusting-dijkstra-4d3b17.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -75,8 +107,16 @@ weight: 1
 ://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/intro-js2.html
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -84,16 +124,32 @@ weight: 1
 ://zen-lamport-5aab2c.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
 <iframe  class="block-content" src="https
 ://csb-ov0d1-bgoonz.vercel.app/
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -101,8 +157,16 @@ weight: 1
 ://amazing-hodgkin-33aea6.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -110,8 +174,16 @@ weight: 1
 ://angry-fermat-dcf5dd.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -119,8 +191,16 @@ weight: 1
 ://boring-heisenberg-f425d8.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -128,8 +208,16 @@ weight: 1
 ://site-analysis.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -137,8 +225,16 @@ weight: 1
 ://clever-bartik-b5ba19.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -146,8 +242,16 @@ weight: 1
 ://code-playground.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -155,8 +259,16 @@ weight: 1
 ://condescending-lewin-c96727.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -164,8 +276,16 @@ weight: 1
 ://determined-dijkstra-666766.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -173,8 +293,16 @@ weight: 1
 ://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -182,8 +310,16 @@ weight: 1
 ://eager-northcutt-456076.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -191,8 +327,16 @@ weight: 1
 ://ecstatic-jang-593fd1.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -200,8 +344,16 @@ weight: 1
 ://eloquent-sammet-ba1810.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -209,8 +361,16 @@ weight: 1
 ://embedable-content.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -218,8 +378,16 @@ weight: 1
 ://festive-borg-e4d856.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -227,8 +395,16 @@ weight: 1
 ://focused-pasteur-0faac8.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -236,8 +412,16 @@ weight: 1
 ://gists42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -245,8 +429,16 @@ weight: 1
 ://gracious-raman-474030.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -254,8 +446,16 @@ weight: 1
 ://happy-mestorf-0f8e75.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -263,8 +463,16 @@ weight: 1
 ://hungry-shaw-30d504.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -272,8 +480,16 @@ weight: 1
 ://inspiring-jennings-d14689.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -281,8 +497,16 @@ weight: 1
 ://links4242.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -290,8 +514,16 @@ weight: 1
 ://modest-booth-4e17df.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -299,8 +531,16 @@ weight: 1
 ://modest-torvalds-34afbc.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -308,8 +548,16 @@ weight: 1
 ://modest-varahamihira-772b59.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -317,8 +565,16 @@ weight: 1
 ://nervous-swartz-0ab2cc.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -326,8 +582,16 @@ weight: 1
 ://objective-borg-a327cd.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -335,8 +599,16 @@ weight: 1
 ://pedantic-wing-adbf82.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -344,20 +616,36 @@ weight: 1
 ://pensive-meitner-1ea8c4.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
-  <br>
+<hr>
+ <br>
+ <br>
+ 
+ <br>
+ <br>
+<hr>
+ <br>
  <br>
 
 <iframe  class="block-content" src="https://sanity-gatsby-portfolio-3-web-4dmiq19t.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
  <br>
  
 <iframe  class="block-content" src="https://project-portfolio42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
  <br>
@@ -365,8 +653,16 @@ weight: 1
 <iframe  class="block-content" src="https://portfolio42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -374,8 +670,16 @@ weight: 1
 ://priceless-shaw-86ccb2.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -383,8 +687,16 @@ weight: 1
 ://quizzical-mcnulty-fa09f2.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -392,8 +704,16 @@ weight: 1
 ://relaxed-bhaskara-dc85ec.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -401,8 +721,16 @@ weight: 1
 ://romantic-hamilton-514b79.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -410,8 +738,16 @@ weight: 1
 ://silly-lichterman-b22b5f.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -419,8 +755,16 @@ weight: 1
 ://silly-shirley-ec955e.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -428,8 +772,16 @@ weight: 1
 ://stoic-mccarthy-2c335f.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -437,8 +789,16 @@ weight: 1
 ://web-dev-resource-hub-manual-deploy.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
 
@@ -446,7 +806,15 @@ weight: 1
 ://wonderful-pasteur-392fbe.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
  <br>
  <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
  <br>
  <br>
