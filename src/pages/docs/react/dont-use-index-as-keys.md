@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 ## > ## Excerpt
-> So many times I have seen developers use the index of an item as its key when they render a list.
+> 
 
 ---
 
