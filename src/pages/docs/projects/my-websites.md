@@ -26,7 +26,9 @@ template: docs
 weight: 1
 ---
 
-<iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
+<iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
