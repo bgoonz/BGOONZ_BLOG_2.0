@@ -435,8 +435,7 @@ template: docs
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
-      allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    
     <br>
     <br>
     <br>
