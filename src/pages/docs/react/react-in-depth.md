@@ -7533,7 +7533,7 @@ Then update the `App` component to this code:
     }
 
     export default App;
-
+```
 Be sure to run and test your application to ensure that the defined routes work as expected:
 
 -   <span id="151a">`/` - Should display the `HeadingA` and `HeadingB` components;</span>
