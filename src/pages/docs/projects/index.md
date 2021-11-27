@@ -31,7 +31,7 @@ seo:
           keyName: property
           relativeUrl: true
 template: docs
-weight: 2
+weight: 0
 ---
 
 <br>
