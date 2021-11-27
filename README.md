@@ -5,7 +5,7 @@
 # [WEBSITE🗺️\*\*](https://bgoonz-blog.netlify.app/)
 
 
-![Preview](https://i.imgur.com/5LiHuWl.jpeg)
+![Preview](https://i.imgur.com/nieW1vp.png)
 
 ## [Cloudfare-Backup🗺️\*\*](https://bgoonz-blog-2-0.pages.dev/)
 
