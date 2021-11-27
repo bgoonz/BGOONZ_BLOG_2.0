@@ -328,12 +328,12 @@ In January 2017 over 350000 packages were reported being listed in the npm regis
 <item>
      <link>https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/</link>
      <title>Web-Dev-Hub</title>
-     <description>When you install a package using npm you can perform 2 types of installation:
+     <description>When you install a package using npm you can perform 2 types of installation:
 a local install
 a global install
 
-By default, when you type an npm install command, like:
-the package is installed in the current file tree, under the node_modules subfolder.
+By default, when you type an npm install command, like:
+the package is installed in the current file tree, under the node_modules subfolder.
 </description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
@@ -856,7 +856,7 @@ Supports video streaming at various resolutions.</description>
 <item>
      <link>https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/</link>
      <title>Web-Dev-Hub</title>
-     <description>Add Firebase to your JavaScript project Note:</description>
+     <description>Add Firebase to your JavaScript project Note:</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>

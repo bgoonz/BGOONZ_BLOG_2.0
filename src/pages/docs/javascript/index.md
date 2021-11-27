@@ -116,8 +116,8 @@ The **string** data type is a primitive data type that used to represent textual
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
      “That’s a great string”; (valid)
-    ‘Shakespeare wrote, “To be or not to be”’; (valid)
-    ‘That’s a bad string’; (invalid)</span>
+    'Shakespeare wrote, “To be or not to be”’; (valid)
+    'That’s a bad string’; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
      \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
 -   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
@@ -201,7 +201,7 @@ let num = 0;
 
 **Functions**
 
-A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms’)
 
 -   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="676f">Includes three things:</span>
@@ -1574,7 +1574,7 @@ The functions `JSON.stringify()` and` JSON.parse()` serialize and restore JavaSc
 
 `let s = JSON.stringify(o);`
 
-s == ‘{“x”:1,”y”:{“z”:\[false,null,””\]}}’
+s == '{“x”:1,”y”:{“z”:\[false,null,””\]}}’
 
 `let p = JSON.parse(s);`
 
@@ -4350,7 +4350,7 @@ to replace quotation marks in a string with other characters:
 
 `'He said "stop"'.replace(quote, '«$1»')`
 
-‘He said «stop»’
+'He said «stop»’
 
 If your RegExp uses named capture groups, then you can refer to the matching text by name rather than by number:
 
@@ -4358,7 +4358,7 @@ If your RegExp uses named capture groups, then you can refer to the matching tex
 
 `'He said "stop"'.replace(quote, '«$<quotedText>»')`
 
-‘He said «stop»’
+'He said «stop»’
 
 Instead of passing a replacement string as the second argument to replace(), you can also pass a function that will be invoked to compute the replacement value.
 
@@ -4616,11 +4616,11 @@ adds three months and two weeks to the current date:
 
     d.toLocaleDateString()
 
-“1/1/2020”: ‘en-US’ locale
+“1/1/2020”: 'en-US’ locale
 
     d.toLocaleTimeString()
 
-“5:10:30 PM”: ‘en-US’ locale
+“5:10:30 PM”: 'en-US’ locale
 
     d.toISOString()
 
@@ -4678,7 +4678,7 @@ JavaScript supports JSON serialization and deserialization with the two function
 
     let s = JSON.stringify(o);
 
-s == ‘{“s”:””,”n”:0,”a”:\[true,false,null\]}’
+s == '{“s”:””,”n”:0,”a”:\[true,false,null\]}’
 
     let copy = JSON.parse(s);
 

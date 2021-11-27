@@ -31,11 +31,11 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 > _because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX_
 
-> _include the code you want to be treated as JavaScript within curly braces: { ‘this is treated as JavaScript code’ }_
+> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code’ }_
 
 > _JSX code must be compiled into JavaScript_
 
-> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById(‘root’))_
+> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root’))_
 
 > _One important thing to know about nested JSX is that it must return a single element._
 
@@ -43,9 +43,9 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 ---
 
-### From the React Docs:
+### From the React Docs:
 
-### What is React?
+### What is React?
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
 
@@ -97,7 +97,7 @@ The `render` method returns a _description_ of what you want to see on the scree
     <p>Paragraph Two</p>
     <p>Paragraph Three</p>
 
-#### To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
+#### To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
 
 To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
 
@@ -132,7 +132,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward._
 
-### Apply a class of myDiv to the div provided in the JSX code.
+### Apply a class of myDiv to the div provided in the JSX code.
 
 -   <span id="9500">The constant JSX should return a div element.</span>
 -   <span id="8d42">The div should have a class of myDiv.</span>
@@ -153,7 +153,7 @@ The code editor has a JSX element similar to what you created in the last challe
       </div>
     );
 
-### React: Learn About Self-Closing JSX Tags
+### React: Learn About Self-Closing JSX Tags
 
 -Another important way in which JSX differs from HTML is in the idea of the self-closing tag.
 
@@ -168,7 +168,7 @@ The code editor has a JSX element similar to what you created in the last challe
 > A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
-### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don’t change any of the content — you only need to close tags where they are needed.
+### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don’t change any of the content — you only need to close tags where they are needed.
 
     const JSX = (
       <div>
@@ -198,7 +198,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data._
 
-#### To create a component with a function, you simply write a JavaScript function that returns either JSX or null
+#### To create a component with a function, you simply write a JavaScript function that returns either JSX or null
 
 -   <span id="b514">React requires your function name to begin with a capital letter.</span>
 
@@ -213,7 +213,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _Because a JSX component represents HTML, you could put several components together to create a more complex HTML page._
 
-### The code editor has a function called MyComponent. Complete this function so it returns a single div element which contains some string of text.
+### The code editor has a function called MyComponent. Complete this function so it returns a single div element which contains some string of text.
 
 Note: The text is considered a child of the div element, so you will not be able to use a self-closing tag.
 
@@ -265,7 +265,7 @@ Note: The text is considered a child of the div element, so you will not be able
 
 > _This makes sure the component is initialized properly. For now, know that it is standard for this code to be included._
 
-### MyComponent is defined in the code editor using class syntax. Finish writing the render method so it returns a div element that contains an h1 with the text Hello React!.
+### MyComponent is defined in the code editor using class syntax. Finish writing the render method so it returns a div element that contains an h1 with the text Hello React!.
 
     class MyComponent extends React.Component {
       constructor(props) {

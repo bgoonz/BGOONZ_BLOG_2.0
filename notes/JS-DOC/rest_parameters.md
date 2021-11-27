@@ -252,7 +252,7 @@ No
 
 ## See also
 
--   [Spread syntax](../operators/spread_syntax) (also ‘`...`’)
+-   [Spread syntax](../operators/spread_syntax) (also '`...`’)
 -   [Arguments object](arguments)
 -   [Array](../global_objects/array)
 -   [Functions](../functions)

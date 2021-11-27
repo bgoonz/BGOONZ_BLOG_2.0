@@ -87,7 +87,7 @@ module.exports = {  flags: {    QUERY_ON_DEMAND: true,  },}
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#pathprefix)pathPrefix
 
-It’s common for sites to be hosted somewhere other than the root of their domain. Say you have a Gatsby site at `example.com/blog/`. In this case, you would need a prefix (`/blog`) added to all paths on the site.
+It’s common for sites to be hosted somewhere other than the root of their domain. Say you have a Gatsby site at `example.com/blog/`. In this case, you would need a prefix (`/blog`) added to all paths on the site.
 
 ```
 module.exports = {  pathPrefix: `/blog`,}

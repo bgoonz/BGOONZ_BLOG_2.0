@@ -73,7 +73,7 @@ PROMPT_COMMAND='$PROMPT_COMMAND; history -a'
 | ----------- | ----------------------------------------------------- |
 | ignorespace | don’t save lines which begin with a <space> character |
 | ignoredups  | don’t save lines matching the previous history entry  |
-| ignoreboth  | use both ‘ignorespace’ and ‘ignoredups’               |
+| ignoreboth  | use both 'ignorespace’ and 'ignoredups’               |
 | erasedups   | eliminate duplicates across the whole history         |
 
 Example:

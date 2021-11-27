@@ -42,7 +42,7 @@ Space Complexity: O(1)
 
 -   _There is stigma attached to it_
 
--   _Bubbling Up : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
+-   _Bubbling Up : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
 
 -   _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
 
@@ -96,11 +96,11 @@ Space Complexity: O(n)
 
 Time Complexity: Log Linear O(nlog(n))
 
--   Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); Space Complexity: O(n)
+-   Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); Space Complexity: O(n)
 
 -   We are linear O(n) time because we are creating subArrays.
 
-### Example of Merge Sort
+### Example of Merge Sort
 
 <https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48><https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64>
 

@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scrap</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="file:///c:\Users\bryan\.vscode-insiders\extensions\shd101wyy.markdown-preview-enhanced-0.6.0\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css"
+        />
+
+        <style>
+            /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+            code[class*='language-'],
+            pre[class*='language-'] {
+                color: #333;
+                background: none;
+                font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+                text-align: left;
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                word-wrap: normal;
+                line-height: 1.4;
+
+                -moz-tab-size: 8;
+                -o-tab-size: 8;
+                tab-size: 8;
+
+                -webkit-hyphens: none;
+                -moz-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+            }
+
+            /* Code blocks */
+            pre[class*='language-'] {
+                padding: 0.8em;
+                overflow: auto;
+                /* border: 1px solid #ddd; */
+                border-radius: 3px;
+                /* background: #fff; */
+                background: #f5f5f5;
+            }
+
+            /* Inline code */
+            :not(pre) > code[class*='language-'] {
+                padding: 0.1em;
+                border-radius: 0.3em;
+                white-space: normal;
+                background: #f5f5f5;
+            }
+
+            .token.comment,
+            .token.blockquote {
+                color: #969896;
+            }
+
+            .token.cdata {
+                color: #183691;
+            }
+
+            .token.doctype,
+            .token.punctuation,
+            .token.variable,
+            .token.macro.property {
+                color: #333;
+            }
+
+            .token.operator,
+            .token.important,
+            .token.keyword,
+            .token.rule,
+            .token.builtin {
+                color: #a71d5d;
+            }
+
+            .token.string,
+            .token.url,
+            .token.regex,
+            .token.attr-value {
+                color: #183691;
+            }
+
+            .token.property,
+            .token.number,
+            .token.boolean,
+            .token.entity,
+            .token.atrule,
+            .token.constant,
+            .token.symbol,
+            .token.command,
+            .token.code {
+                color: #0086b3;
+            }
+
+            .token.tag,
+            .token.selector,
+            .token.prolog {
+                color: #63a35c;
+            }
+
+            .token.function,
+            .token.namespace,
+            .token.pseudo-element,
+            .token.class,
+            .token.class-name,
+            .token.pseudo-class,
+            .token.id,
+            .token.url-reference .token.variable,
+            .token.attr-name {
+                color: #795da3;
+            }
+
+            .token.entity {
+                cursor: help;
+            }
+
+            .token.title,
+            .token.title .token.punctuation {
+                font-weight: bold;
+                color: #1d3e81;
+            }
+
+            .token.list {
+                color: #ed6a43;
+            }
+
+            .token.inserted {
+                background-color: #eaffea;
+                color: #55a532;
+            }
+
+            .token.deleted {
+                background-color: #ffecec;
+                color: #bd2c00;
+            }
+
+            .token.bold {
+                font-weight: bold;
+            }
+
+            .token.italic {
+                font-style: italic;
+            }
+
+            /* JSON */
+            .language-json .token.property {
+                color: #183691;
+            }
+
+            .language-markup .token.tag .token.punctuation {
+                color: #333;
+            }
+
+            /* CSS */
+            code.language-css,
+            .language-css .token.function {
+                color: #0086b3;
+            }
+
+            /* YAML */
+            .language-yaml .token.atrule {
+                color: #63a35c;
+            }
+
+            code.language-yaml {
+                color: #183691;
+            }
+
+            /* Ruby */
+            .language-ruby .token.function {
+                color: #333;
+            }
+
+            /* Markdown */
+            .language-markdown .token.url {
+                color: #795da3;
+            }
+
+            /* Makefile */
+            .language-makefile .token.symbol {
+                color: #795da3;
+            }
+
+            .language-makefile .token.variable {
+                color: #183691;
+            }
+
+            .language-makefile .token.builtin {
+                color: #0086b3;
+            }
+
+            /* Bash */
+            .language-bash .token.keyword {
+                color: #0086b3;
+            }
+
+            /* highlight */
+            pre[data-line] {
+                position: relative;
+                padding: 1em 0 1em 3em;
+            }
+            pre[data-line] .line-highlight-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: transparent;
+                display: block;
+                width: 100%;
+            }
+
+            pre[data-line] .line-highlight {
+                position: absolute;
+                left: 0;
+                right: 0;
+                padding: inherit 0;
+                margin-top: 1em;
+                background: hsla(24, 20%, 50%, 0.08);
+                background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));
+                pointer-events: none;
+                line-height: inherit;
+                white-space: pre;
+            }
+
+            pre[data-line] .line-highlight:before,
+            pre[data-line] .line-highlight[data-end]:after {
+                content: attr(data-start);
+                position: absolute;
+                top: 0.4em;
+                left: 0.6em;
+                min-width: 1em;
+                padding: 0 0.5em;
+                background-color: hsla(24, 20%, 50%, 0.4);
+                color: hsl(24, 20%, 95%);
+                font: bold 65%/1.5 sans-serif;
+                text-align: center;
+                vertical-align: 0.3em;
+                border-radius: 999px;
+                text-shadow: none;
+                box-shadow: 0 1px white;
+            }
+
+            pre[data-line] .line-highlight[data-end]:after {
+                content: attr(data-end);
+                top: auto;
+                bottom: 0.4em;
+            }
+            html body {
+                font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+                font-size: 16px;
+                line-height: 1.6;
+                color: #333;
+                background-color: #fff;
+                overflow: initial;
+                box-sizing: border-box;
+                word-wrap: break-word;
+            }
+            html body > :first-child {
+                margin-top: 0;
+            }
+            html body h1,
+            html body h2,
+            html body h3,
+            html body h4,
+            html body h5,
+            html body h6 {
+                line-height: 1.2;
+                margin-top: 1em;
+                margin-bottom: 16px;
+                color: #000;
+            }
+            html body h1 {
+                font-size: 2.25em;
+                font-weight: 300;
+                padding-bottom: 0.3em;
+            }
+            html body h2 {
+                font-size: 1.75em;
+                font-weight: 400;
+                padding-bottom: 0.3em;
+            }
+            html body h3 {
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            html body h4 {
+                font-size: 1.25em;
+                font-weight: 600;
+            }
+            html body h5 {
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+            html body h6 {
+                font-size: 1em;
+                font-weight: 600;
+            }
+            html body h1,
+            html body h2,
+            html body h3,
+            html body h4,
+            html body h5 {
+                font-weight: 600;
+            }
+            html body h5 {
+                font-size: 1em;
+            }
+            html body h6 {
+                color: #5c5c5c;
+            }
+            html body strong {
+                color: #000;
+            }
+            html body del {
+                color: #5c5c5c;
+            }
+            html body a:not([href]) {
+                color: inherit;
+                text-decoration: none;
+            }
+            html body a {
+                color: #08c;
+                text-decoration: none;
+            }
+            html body a:hover {
+                color: #00a3f5;
+                text-decoration: none;
+            }
+            html body img {
+                max-width: 100%;
+            }
+            html body > p {
+                margin-top: 0;
+                margin-bottom: 16px;
+                word-wrap: break-word;
+            }
+            html body > ul,
+            html body > ol {
+                margin-bottom: 16px;
+            }
+            html body ul,
+            html body ol {
+                padding-left: 2em;
+            }
+            html body ul.no-list,
+            html body ol.no-list {
+                padding: 0;
+                list-style-type: none;
+            }
+            html body ul ul,
+            html body ul ol,
+            html body ol ol,
+            html body ol ul {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            html body li {
+                margin-bottom: 0;
+            }
+            html body li.task-list-item {
+                list-style: none;
+            }
+            html body li > p {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            html body .task-list-item-checkbox {
+                margin: 0 0.2em 0.25em -1.8em;
+                vertical-align: middle;
+            }
+            html body .task-list-item-checkbox:hover {
+                cursor: pointer;
+            }
+            html body blockquote {
+                margin: 16px 0;
+                font-size: inherit;
+                padding: 0 15px;
+                color: #5c5c5c;
+                background-color: #f0f0f0;
+                border-left: 4px solid #d6d6d6;
+            }
+            html body blockquote > :first-child {
+                margin-top: 0;
+            }
+            html body blockquote > :last-child {
+                margin-bottom: 0;
+            }
+            html body hr {
+                height: 4px;
+                margin: 32px 0;
+                background-color: #d6d6d6;
+                border: 0 none;
+            }
+            html body table {
+                margin: 10px 0 15px 0;
+                border-collapse: collapse;
+                border-spacing: 0;
+                display: block;
+                width: 100%;
+                overflow: auto;
+                word-break: normal;
+                word-break: keep-all;
+            }
+            html body table th {
+                font-weight: bold;
+                color: #000;
+            }
+            html body table td,
+            html body table th {
+                border: 1px solid #d6d6d6;
+                padding: 6px 13px;
+            }
+            html body dl {
+                padding: 0;
+            }
+            html body dl dt {
+                padding: 0;
+                margin-top: 16px;
+                font-size: 1em;
+                font-style: italic;
+                font-weight: bold;
+            }
+            html body dl dd {
+                padding: 0 16px;
+                margin-bottom: 16px;
+            }
+            html body code {
+                font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+                font-size: 0.85em !important;
+                color: #000;
+                background-color: #f0f0f0;
+                border-radius: 3px;
+                padding: 0.2em 0;
+            }
+            html body code::before,
+            html body code::after {
+                letter-spacing: -0.2em;
+                content: '\00a0';
+            }
+            html body pre > code {
+                padding: 0;
+                margin: 0;
+                font-size: 0.85em !important;
+                word-break: normal;
+                white-space: pre;
+                background: transparent;
+                border: 0;
+            }
+            html body .highlight {
+                margin-bottom: 16px;
+            }
+            html body .highlight pre,
+            html body pre {
+                padding: 1em;
+                overflow: auto;
+                font-size: 0.85em !important;
+                line-height: 1.45;
+                border: #d6d6d6;
+                border-radius: 3px;
+            }
+            html body .highlight pre {
+                margin-bottom: 0;
+                word-break: normal;
+            }
+            html body pre code,
+            html body pre tt {
+                display: inline;
+                max-width: initial;
+                padding: 0;
+                margin: 0;
+                overflow: initial;
+                line-height: inherit;
+                word-wrap: normal;
+                background-color: transparent;
+                border: 0;
+            }
+            html body pre code:before,
+            html body pre tt:before,
+            html body pre code:after,
+            html body pre tt:after {
+                content: normal;
+            }
+            html body p,
+            html body blockquote,
+            html body ul,
+            html body ol,
+            html body dl,
+            html body pre {
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+            html body kbd {
+                color: #000;
+                border: 1px solid #d6d6d6;
+                border-bottom: 2px solid #c7c7c7;
+                padding: 2px 4px;
+                background-color: #f0f0f0;
+                border-radius: 3px;
+            }
+            @media print {
+                html body {
+                    background-color: #fff;
+                }
+                html body h1,
+                html body h2,
+                html body h3,
+                html body h4,
+                html body h5,
+                html body h6 {
+                    color: #000;
+                    page-break-after: avoid;
+                }
+                html body blockquote {
+                    color: #5c5c5c;
+                }
+                html body pre {
+                    page-break-inside: avoid;
+                }
+                html body table {
+                    display: table;
+                }
+                html body img {
+                    display: block;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                html body pre,
+                html body code {
+                    word-wrap: break-word;
+                    white-space: pre;
+                }
+            }
+            .markdown-preview {
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+            .markdown-preview .pagebreak,
+            .markdown-preview .newpage {
+                page-break-before: always;
+            }
+            .markdown-preview pre.line-numbers {
+                position: relative;
+                padding-left: 3.8em;
+                counter-reset: linenumber;
+            }
+            .markdown-preview pre.line-numbers > code {
+                position: relative;
+            }
+            .markdown-preview pre.line-numbers .line-numbers-rows {
+                position: absolute;
+                pointer-events: none;
+                top: 1em;
+                font-size: 100%;
+                left: 0;
+                width: 3em;
+                letter-spacing: -1px;
+                border-right: 1px solid #999;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .markdown-preview pre.line-numbers .line-numbers-rows > span {
+                pointer-events: none;
+                display: block;
+                counter-increment: linenumber;
+            }
+            .markdown-preview pre.line-numbers .line-numbers-rows > span:before {
+                content: counter(linenumber);
+                color: #999;
+                display: block;
+                padding-right: 0.8em;
+                text-align: right;
+            }
+            .markdown-preview .mathjax-exps .MathJax_Display {
+                text-align: center !important;
+            }
+            .markdown-preview:not([for='preview']) .code-chunk .btn-group {
+                display: none;
+            }
+            .markdown-preview:not([for='preview']) .code-chunk .status {
+                display: none;
+            }
+            .markdown-preview:not([for='preview']) .code-chunk .output-div {
+                margin-bottom: 16px;
+            }
+            .scrollbar-style::-webkit-scrollbar {
+                width: 8px;
+            }
+            .scrollbar-style::-webkit-scrollbar-track {
+                border-radius: 10px;
+                background-color: transparent;
+            }
+            .scrollbar-style::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                background-color: rgba(150, 150, 150, 0.66);
+                border: 4px solid rgba(150, 150, 150, 0.66);
+                background-clip: content-box;
+            }
+            html body[for='html-export']:not([data-presentation-mode]) {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                overflow: auto;
+            }
+            html body[for='html-export']:not([data-presentation-mode]) .markdown-preview {
+                position: relative;
+                top: 0;
+            }
+            @media screen and (min-width: 914px) {
+                html body[for='html-export']:not([data-presentation-mode]) .markdown-preview {
+                    padding: 2em calc(50% - 457px + 2em);
+                }
+            }
+            @media screen and (max-width: 914px) {
+                html body[for='html-export']:not([data-presentation-mode]) .markdown-preview {
+                    padding: 2em;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                html body[for='html-export']:not([data-presentation-mode]) .markdown-preview {
+                    font-size: 14px !important;
+                    padding: 1em;
+                }
+            }
+            @media print {
+                html body[for='html-export']:not([data-presentation-mode]) #sidebar-toc-btn {
+                    display: none;
+                }
+            }
+            html body[for='html-export']:not([data-presentation-mode]) #sidebar-toc-btn {
+                position: fixed;
+                bottom: 8px;
+                left: 8px;
+                font-size: 28px;
+                cursor: pointer;
+                color: inherit;
+                z-index: 99;
+                width: 32px;
+                text-align: center;
+                opacity: 0.4;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+                opacity: 1;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 300px;
+                height: 100%;
+                padding: 32px 0 48px 0;
+                font-size: 14px;
+                box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+                box-sizing: border-box;
+                overflow: auto;
+                background-color: inherit;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+                width: 8px;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+                border-radius: 10px;
+                background-color: transparent;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                background-color: rgba(150, 150, 150, 0.66);
+                border: 4px solid rgba(150, 150, 150, 0.66);
+                background-clip: content-box;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+                text-decoration: none;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+                padding: 0 1.6em;
+                margin-top: 0.8em;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li {
+                margin-bottom: 0.8em;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+                list-style-type: none;
+            }
+            html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+                left: 300px;
+                width: calc(100% - 300px);
+                padding: 2em calc(50% - 457px - 150px);
+                margin: 0;
+                box-sizing: border-box;
+            }
+            @media screen and (max-width: 1274px) {
+                html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+                    padding: 2em;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                html body[for='html-export']:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+                    width: 100%;
+                }
+            }
+            html body[for='html-export']:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            html body[for='html-export']:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+                display: none;
+            }
+            html body:before {
+                content: "Failed to compile `style.less`. NameError: Property '$font-primary' is undefined in input on line 10, column 18:
+9 html {
+10     font-family: $font-primary;
+11     font-size: 110%;
+" !important;
+                padding: 2em !important;
+            }
+            .mume.mume {
+                display: none !important;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css" />
+    </head>
+    <body for="html-export">
+        <div class="mume markdown-preview">
+            <table>
+                <thead>
+                    <tr>
+                        <th>****</th>
+                        <th>****</th>
+                        <th>****</th>
+                        <th>****</th>
+                        <th>****</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            leonardomso/33-js-concepts*This repository was created with the intention of helping developers master their concepts in JavaScript.
+                            It is not a&#x2026;*<a href="http://github.com">github.com</a>
+                        </td>
+                        <td>
+                            Call stack - MDN Web Docs Glossary: Definitions of Web-related terms MDN*A call stack is a mechanism for an interpreter (like the
+                            JavaScript interpreter in a web browser) to keep track of its&#x2026;*<a href="http://developer.mozilla.org"
+                                >developer.mozilla.org</a
+                            >
+                        </td>
+                        <td>
+                            Understanding Javascript Function Executions&#x200A;&#x2014;&#x200A;Call Stack, Event Loop , Tasks &amp; more*Web developers or
+                            Front end engineers, as that&#x2019;s what we like to be called, nowadays do everything right from acting as&#x2026;*<a
+                                href="http://medium.com"
+                                >medium.com</a
+                            >
+                        </td>
+                        <td>
+                            Understanding the JavaScript call stack*The JavaScript engine (which is found in a hosting environment like the browser), is a
+                            single-threaded interpreter&#x2026;*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>&#xA0;Javascript: What Is
+                            The Execution Context? What Is The Call Stack?*What is the Execution Context in Javascript? I bet you don&#x2019;t know the answer.
+                            What are the most basic components of a&#x2026;*<a href="http://web.archive.org">web.archive.org</a>
+                        </td>
+                        <td>
+                            Understanding Execution Context and Execution Stack in Javascript*Understanding execution context and stack to become a better
+                            Javascript developer.*<a href="http://blog.bitsrc.io">blog.bitsrc.io</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript data types and data structures - JavaScript MDN*Programming languages all have built-in data structures, but these often
+                            differ from one language to another. This&#x2026;*<a href="http://developer.mozilla.org">developer.mozilla.org</a>
+                        </td>
+                        <td>How numbers are encoded in JavaScript<em>Edit description</em><a href="http://2ality.com">2ality.com</a></td>
+                        <td>
+                            Here is what you need to know about JavaScript&#x2019;s Number type<em
+                                >Why 0.1+0.2 IS NOT equal to 0.3 and 9007199254740992 IS equal to 9007199254740993</em
+                            ><a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            What Every JavaScript Developer Should Know About Floating Point Numbers*After I gave my talk on JavaScript (really, I was there
+                            trying to shamelessly plug my book - Underhanded JavaScript and&#x2026;*<a href="http://blog.chewxy.com">blog.chewxy.com</a>
+                        </td>
+                        <td>
+                            The Secret Life of JavaScript Primitives*You may not know it but, in JavaScript, whenever you interact with string, number or
+                            boolean primitives you enter a&#x2026;*<a href="http://javascriptweblog.wordpress.com">javascriptweblog.wordpress.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript Reference and Copy Variables Hacker Noon*Each programming language has its own peculiarities (and JavaScript has a lot),
+                            and today I&#x2019;m going to talk about&#x2026;*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            JavaScript Primitive vs. Reference Values*Summary: in this tutorial, you will learn the differences between primitive and reference
+                            values. In JavaScript, a&#x2026;*<a href="http://www.javascripttutorial.net">www.javascripttutorial.net</a>
+                        </td>
+                        <td>
+                            JavaScript by reference vs. by value*I&#x2019;m looking for some good comprehensive reading material on when JavaScript passes
+                            something by value and when by&#x2026;*<a href="http://stackoverflow.com">stackoverflow.com</a>
+                        </td>
+                        <td>
+                            JavaScript Interview Prep: Primitive vs. Reference Types*original article In a JavaScript interview, they might ask if you
+                            understand the difference between primitive and&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            What you need to know about Javascript&#x2019;s Implicit Coercion*Javascript&#x2019;s implicit coercion simply refers to Javascript
+                            attempting to coerce an unexpected value type to the&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Javascript Coercion Explained<em>Along with some practical examples</em><a href="http://hackernoon.com">hackernoon.com</a></td>
+                        <td>
+                            What exactly is Type Coercion in Javascript?*Let&#x2019;s start with a short intro to type systems which I think will help you
+                            understand the general idea of type&#x2026;*<a href="http://stackoverflow.com">stackoverflow.com</a>
+                        </td>
+                        <td>
+                            <a href="https://thedevs.network/*Weak">https://thedevs.network/*Weak</a> dynamic typing is arguably one of those things everybody
+                            likes to pick at about JavaScript. For an elegant dynamic&#x2026;*thedevs.network
+                        </td>
+                        <td>
+                            getify/You-Dont-Know-JS*A book series on JavaScript. @YDKJS on twitter. Contribute to getify/You-Dont-Know-JS development by
+                            creating an&#x2026;*<a href="http://github.com">github.com</a>
+                        </td>
+                        <td>
+                            JavaScript&#x200A;&#x2014;&#x200A;Double Equals vs. Triple Equals<em>Learn equality in JavaScript in 3 minutes</em
+                            ><a href="http://codeburst.io">codeburst.io</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Why Use the Triple-Equals Operator in JavaScript? - Impressive Webs*&#x201C;Determining whether two variables are equivalent is one
+                            of the most important operations in programming.&#x201D; That&#x2019;s&#x2026;*<a href="http://www.impressivewebs.com"
+                                >www.impressivewebs.com</a
+                            >
+                        </td>
+                        <td>
+                            What is the difference between == and === in JavaScript?*On the surface == and === appear to be functionally the same, so why bother
+                            typing an extra character? In this video&#x2026;*<a href="http://www.oreilly.com">www.oreilly.com</a>
+                        </td>
+                        <td>
+                            Why javascript&#x2019;s typeof always return &#x201C;object&#x201D;?*To add in with the others, typeof returns both objects and
+                            primitives. There are 5 primitive types in javascript&#x2026;*<a href="http://stackoverflow.com">stackoverflow.com</a>
+                        </td>
+                        <td>
+                            Checking Types in Javascript*Have you ever wondered: what is the correct way to check if a Javascript variable is an Array? Do a
+                            Google search and&#x2026;*<a href="http://tobyho.com">tobyho.com</a>
+                        </td>
+                        <td>
+                            How to better check data types in javascript - Webbjocke*To check what data type something has in javascript is not always the
+                            easiest. The language itself provides an operator&#x2026;*<a href="http://webbjocke.com">webbjocke.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A JavaScript Fundamentals Cheat Sheet: Scope, Context, and &#x201C;this&#x201D;*Scope Scope refers to where a variable can be
+                            accessed within a program. Some variables can be accessed from anywhere&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            Quick Tip: Function Expressions vs Function Declarations - SitePoint*This article was peer reviewed by Jeff Mott. Thanks to all of
+                            SitePoint&#x2019;s peer reviewers for making SitePoint content&#x2026;*<a href="http://www.sitepoint.com">www.sitepoint.com</a>
+                        </td>
+                        <td>
+                            JavaScript Function&#x200A;&#x2014;&#x200A;Declaration vs Expression*Functions are considered as First Class citizen in JavaScript
+                            and it is really important to be clear with the concept&#x2026;*<a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            Function Declarations vs. Function Expressions*What is Function Statement/Declarations in JavaScript?*<a href="http://medium.com"
+                                >medium.com</a
+                            >
+                        </td>
+                        <td>
+                            Function Declarations vs. Function Expressions*Lets start with a short quiz. What is alerted in each case?: Question 1: Question 2:
+                            Question 3: Question 4: If you&#x2026;*<a href="http://javascriptweblog.wordpress.com">javascriptweblog.wordpress.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16. Modules<em>Edit description</em><a href="http://exploringjs.com">exploringjs.com</a></td>
+                        <td>
+                            ES modules: A cartoon deep-dive - Mozilla Hacks - the Web developer blog*ES modules bring an official, standardized module system to
+                            JavaScript. With the release of Firefox 60 in May, all&#x2026;*<a href="http://hacks.mozilla.org">hacks.mozilla.org</a>
+                        </td>
+                        <td>
+                            Understanding ES6 Modules - SitePoint*Almost every language has a concept of modules - a way to include functionality declared in
+                            one file within another&#x2026;*<a href="http://www.sitepoint.com">www.sitepoint.com</a>
+                        </td>
+                        <td>
+                            An overview of ES6 Modules in JavaScript*Introduction Until recently if you wanted to take full advantage of modules in JavaScript
+                            you needed to make use of&#x2026;*<a href="http://blog.cloud66.com">blog.cloud66.com</a>
+                        </td>
+                        <td>
+                            ES6 Modules in Depth*Welcome back to ES6 - &#x201C;Oh, good. It&#x2019;s not another article about Unicode&#x201D; - in Depth
+                            series. If you&#x2019;ve never been around&#x2026;*<a href="http://ponyfoo.com">ponyfoo.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How JavaScript works: Event loop and the rise of Async programming + 5 ways to better coding with&#x2026;*Welcome to post # 4 of the
+                            series dedicated to exploring JavaScript and its building components. In the process of&#x2026;*<a
+                                href="http://blog.sessionstack.com"
+                                >blog.sessionstack.com</a
+                            >
+                        </td>
+                        <td>Tasks, microtasks, queues and schedules<em>Edit description</em><a href="http://jakearchibald.com">jakearchibald.com</a></td>
+                        <td>
+                            Visualising the JavaScript Event Loop with a Pizza Restaurant analogy*Consider a pizza restaurant. There are two types of orders
+                            that we currently have from a single customer - one is an&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            &#x2728;&#x267B;&#xFE0F; JavaScript Visualized: Event Loop*Oh boi the event loop. It&#x2019;s one of those things that every
+                            JavaScript developer has to deal with in one way or another&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>Scheduling: setTimeout and setInterval<em>Edit description</em><a href="http://javascript.info">javascript.info</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code*Before diving deep into the core of Chrome&#x2019;s
+                            V8, first, let&#x2019;s get our fundamentals down. All of our systems consist of&#x2026;*<a href="http://medium.freecodecamp.org"
+                                >medium.freecodecamp.org</a
+                            >
+                        </td>
+                        <td>
+                            Understanding V8&#x2019;s Bytecode*V8 is Google&#x2019;s open source JavaScript engine. Chrome, Node.js, and many other applications
+                            use V8. This article&#x2026;*<a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            A Brief History of Google&#x2019;s V8 JavaScript Engine*Javascript has a reputation in developer circles as a terrible language.
+                            It&#x2019;s classless, loosely typed, and plagued by&#x2026;*<a href="http://www.mediacurrent.com">www.mediacurrent.com</a>
+                        </td>
+                        <td>
+                            JavaScript essentials: why you should know how the engine works*This article is also available in Spanish.*<a
+                                href="http://medium.freecodecamp.org"
+                                >medium.freecodecamp.org</a
+                            >
+                        </td>
+                        <td>
+                            JavaScript engine fundamentals: Shapes and Inline Caches*This article describes some key fundamentals that are common to all
+                            JavaScript engines - and not just V8, the engine&#x2026;*<a href="http://mathiasbynens.be">mathiasbynens.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript engine fundamentals: optimizing prototypes*This article describes some key fundamentals that are common to all JavaScript
+                            engines - and not just V8, the engine&#x2026;*<a href="http://mathiasbynens.be">mathiasbynens.be</a>
+                        </td>
+                        <td>
+                            Elements kinds in V8*Note: If you prefer watching a presentation over reading articles, then enjoy the video below! JavaScript
+                            objects can&#x2026;*v8.dev
+                        </td>
+                        <td>
+                            Programming with JS: Bitwise Operations*In this series of articles we take a look at different Computer Science topics from the
+                            prism of JavaScript. We&#x2019;ve&#x2026;*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            Using JavaScript&#x2019;s Bitwise Operators in Real Life*Let&#x2019;s pretend we&#x2019;re machine code programmers!*<a
+                                href="http://codeburst.io"
+                                >codeburst.io</a
+                            >
+                        </td>
+                        <td>
+                            JavaScript Bitwise Operators - w3resource*Bitwise operators perform an operation on the bitwise (0,1) representation of their
+                            arguments, rather than as decimal&#x2026;*<a href="http://www.w3resource.com">www.w3resource.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript DOM Tutorial with Example*Details JavaScript can access all the elements in a webpage making use of Document Object Model
+                            (DOM). In fact, the web&#x2026;*<a href="http://www.guru99.com">www.guru99.com</a>
+                        </td>
+                        <td>
+                            What is the DOM?*A reader recently wrote in asking me what the DOM was. They said they&#x2019;ve heard it mentioned and alluded to,
+                            but aren&#x2019;t&#x2026;*<a href="http://css-tricks.com">css-tricks.com</a>
+                        </td>
+                        <td>
+                            Traversing the DOM with JavaScript*A good JavaScript developer needs to know how to traverse the DOM-it&#x2019;s the act of
+                            selecting an element from another&#x2026;*<a href="http://zellwk.com">zellwk.com</a>
+                        </td>
+                        <td>
+                            DOM tree*The backbone of an HTML document is tags. According to the Document Object Model (DOM), every HTML tag is an
+                            object&#x2026;*<a href="http://javascript.info">javascript.info</a>
+                        </td>
+                        <td>
+                            How to traverse the DOM in JavaScript*Learn how to navigate your way through the DOM tree.*<a
+                                href="http://javascript.plainenglish.io"
+                                >javascript.plainenglish.io</a
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A Vanilla JS Guide On Mastering the DOM*Note: The contents of this post are intended to be introductory and does not include use of
+                            any libraries like jQuery&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            How To Use Classes in JavaScript DigitalOcean*JavaScript is a prototype-based language, and every object in JavaScript has a hidden
+                            internal property called&#x2026;*<a href="http://www.digitalocean.com">www.digitalocean.com</a>
+                        </td>
+                        <td>
+                            Javascript Classes&#x200A;&#x2014;&#x200A;Under The Hood*Javascript classes are nothing but a syntactic sugar over existing
+                            prototype based inheritance and constructor&#x2026;*<a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            ES6 Classes - JavaScript January*Object-Oriented Programming (OOP) can be a great way to organize your projects. Introduced with
+                            ES6, the javascript&#x2026;*<a href="http://www.javascriptjanuary.com">www.javascriptjanuary.com</a>
+                        </td>
+                        <td>
+                            Practical Ways to Write Better JavaScript*Solid methods of improving your JS. Tagged with javascript, webdev, beginners, react.*<a
+                                href="http://dev.to"
+                                >dev.to</a
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Better JavaScript with ES6, Pt. II: A Deep Dive into Classes*Out with the Old, In with the new Let&#x2019;s be clear about one thing
+                            from the start: Under the hood, ES6 classes are not&#x2026;*<a href="http://scotch.io">scotch.io</a>
+                        </td>
+                        <td>
+                            Understand the Factory Design Pattern in plain javascript<em>The simplest way to understand Factory Design Pattern</em
+                            ><a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            Factory Functions in JavaScript Aten Design Group*As we move from an age of jQuery plugins and script drop-ins to a world of
+                            CommonJS and modular architectures it&#x2019;s&#x2026;*<a href="http://atendesigngroup.com">atendesigngroup.com</a>
+                        </td>
+                        <td>
+                            The Factory Pattern in JS ES6*I&#x2019;m trying to get the most out of all the new things in ES6 (ES2015). And I&#x2019;m writing a
+                            new library where I need a&#x2026;*<a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            Class vs Factory function: exploring the way forward*ECMAScript 2015 (aka ES6) comes with the class syntax, so now we have two
+                            competing patterns for creating objects. In&#x2026;*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Prototype in Javascript Codementor*By default every function has a property name as prototype which is EMPTY ( by default). We can
+                            add properties and&#x2026;*<a href="http://www.codementor.io">www.codementor.io</a>
+                        </td>
+                        <td>
+                            Prototypes in JavaScript*In this post, we will discuss what are prototypes in JavaScript, how they help JavaScript in achieving the
+                            concepts of&#x2026;*betterprogramming.pub
+                        </td>
+                        <td>
+                            Prototype in JavaScript: it&#x2019;s quirky, but here&#x2019;s how it works*The following four lines are enough to confuse most
+                            JavaScript developers:*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>
+                        </td>
+                        <td>
+                            Understanding JavaScript: Prototype and Inheritance*Due to the amazing quantity of libraries, tools and all kinds of things that
+                            make your development easier, a lot of&#x2026;*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            Understanding Classes (ES5) and Prototypal Inheritance in JavaScript*In a nutshell the above snippet creates a Person class that can
+                            have multiple instances. By convention functional&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <em>Master JavaScript Prototypes &amp; <em>Inheritance</em></em
+                            >\ <a href="http://Inheritancecodeburst.io">Inheritancecodeburst.io</a>
+                        </td>
+                        <td>
+                            JavaScript&#x2019;s Prototypal Inheritance Explained Using CSS*Prototypal inheritance is arguably the least understood aspect of
+                            JavaScript. Well the good news is that if you&#x2026;*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>
+                        </td>
+                        <td>
+                            Demystifying ES6 Classes And Prototypal Inheritance*In the early history of the JavaScript language, a cloud of animosity formed
+                            over the lack of a proper syntax for&#x2026;*<a href="http://scotch.io">scotch.io</a>
+                        </td>
+                        <td>
+                            Intro To Prototypal Inheritance - JS*In this article I will try to give an introduction to protypal inheritance. As an
+                            &#x201C;optional&#x201D; pre-requisite, you can&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            Let&#x2019;s Build Prototypal Inheritance in JS*The idea for this post is pretty simple. I want to some extent build and with that,
+                            illustrate how prototypes work in&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Understanding Prototypal Inheritance In JavaScript*What Is Object-oriented Programming (OOP) Classical vs Prototypal Inheritance The
+                            Prototype Object And The Prototype&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            Object.create() - JavaScript MDN*The Object.create() method creates a new object, using an existing object as the prototype of the
+                            newly created object&#x2026;*<a href="http://developer.mozilla.org">developer.mozilla.org</a>
+                        </td>
+                        <td>
+                            Object.assign() - JavaScript MDN*The Object.assign() method copies all enumerable own properties from one or more source objects to
+                            a target object. It&#x2026;*<a href="http://developer.mozilla.org">developer.mozilla.org</a>
+                        </td>
+                        <td>
+                            Object.create in JavaScript*The Object.create method is one of the methods to create a new object in JavaScript.*<a
+                                href="http://medium.com"
+                                >medium.com</a
+                            >
+                        </td>
+                        <td>
+                            Javascript Objects A New Way to Create Objects HTML Goodies*There are a lot of ways to create Objects in JavaScript, perhaps even
+                            more to integrate inheritance into them. Just&#x2026;*<a href="http://www.htmlgoodies.com">www.htmlgoodies.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            JavaScript Object Creation: Patterns and Best Practices - SitePoint*Jeff Mott guides you through a step-by-step approach to
+                            JavaScript object creation - from object literals to factory&#x2026;*<a href="http://www.sitepoint.com">www.sitepoint.com</a>
+                        </td>
+                        <td>
+                            Dealing With Objects in JavaScript With Object.assign, Object.keys and hasOwnProperty &#x2026;*This post is a sort of grab bag to
+                            help you explore a few very useful methods to help you manage your objects in&#x2026;*<a href="http://alligator.io">alligator.io</a>
+                        </td>
+                        <td>
+                            Copying Objects in JavaScript DigitalOcean*Objects are the fundamental blocks of JavaScript. An object is a collection of
+                            properties, and a property is an&#x2026;*<a href="http://scotch.io">scotch.io</a>
+                        </td>
+                        <td>
+                            JavaScript: Object.assign()<em>Veja nesse artigo como utilizar o Object.assign() do ECMAScript 6</em
+                            ><a href="http://codeburst.io">codeburst.io</a>
+                        </td>
+                        <td>
+                            How to deep clone a JavaScript object*Copying objects in JavaScript can be tricky. Some ways perform a shallow copy, which is the
+                            default behavior in most of&#x2026;*<a href="http://flaviocopes.com">flaviocopes.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How to Use Map, Filter, and Reduce in JavaScript*Functional programming has been making quite a splash in the development world
+                            these days. And for good reason&#x2026;*<a href="http://code.tutsplus.com">code.tutsplus.com</a>
+                        </td>
+                        <td>
+                            JavaScript&#x200A;&#x2014;&#x200A;Learn to Chain Map, Filter, and Reduce<em
+                                >Learn how to chain map, filter, and reduce in JavaScript</em
+                            ><a href="http://codeburst.io">codeburst.io</a>
+                        </td>
+                        <td>
+                            Understanding map, filter and reduce in Javascript*When working on Javascript projects you inevitably come across situations where
+                            you have to do some data manipulation&#x2026;*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            Functional Programming in JS: map, filter, reduce (Pt. 5)*Note: This is part of the &#x201C;Javascript and Functional
+                            Programming&#x201D; series on learning functional programming techniques&#x2026;*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            JavaScript: Map, Filter, Reduce*JavaScript&#x2019;s built-in map, filter, and reduce array methods are invaluable to a modern
+                            JavaScript developer. First&#x2026;*<a href="http://wsvincent.com">wsvincent.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A simple guide to help you understand closures in JavaScript*Closures in JavaScript are one of those concepts that many struggle to
+                            get their heads around. In the following&#x2026;*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>
+                        </td>
+                        <td>
+                            Understanding JavaScript Closures: A Practical Approach*Learning a new language involves a series of steps, whereas its mastery is a
+                            product of patience, practice, mistakes&#x2026;*<a href="http://scotch.io">scotch.io</a>
+                        </td>
+                        <td>Understanding JavaScript: Closures*Why learn JavaScript in depth?*<a href="http://hackernoon.com">hackernoon.com</a></td>
+                        <td>
+                            How to use JavaScript closures with confidence<em>Using closures will be a piece of (chocolate) cake</em
+                            ><a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            JavaScript Closures by Example*At some point you may have run into a problem when executing functions from within a for loop. The
+                            first time it&#x2026;*<a href="http://howchoo.com">howchoo.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Higher-Order Functions :: Eloquent JavaScript*Tzu-li and Tzu-ssu were boasting about the size of their latest programs.
+                            &#x2018;Two-hundred thousand lines,&#x2019; said Tzu-li&#x2026;*<a href="http://eloquentjavascript.net">eloquentjavascript.net</a>
+                        </td>
+                        <td>
+                            Higher-Order Functions in JavaScript - SitePoint*Continuing his look at functional programming in JavaScript, M. David Green
+                            examines higher-order functions and how&#x2026;*<a href="http://www.sitepoint.com">www.sitepoint.com</a>
+                        </td>
+                        <td>
+                            Higher Order Functions: Using Filter, Map and Reduce for More Maintainable Code*Higher order functions can help you to step up your
+                            JavaScript game by making your code more declarative. That is&#x2026;*<a href="http://medium.freecodecamp.org"
+                                >medium.freecodecamp.org</a
+                            >
+                        </td>
+                        <td>
+                            First-class and Higher Order Functions: Effective Functional JavaScript*Functions: the killer JavaScript feature we never talk
+                            about.*<a href="http://hackernoon.com">hackernoon.com</a>
+                        </td>
+                        <td>
+                            Higher Order Functions in JavaScript*Higher-order functions can be intimidating at first, but they&#x2019;re not that hard to learn.
+                            A higher-order function is&#x2026;*<a href="http://www.lullabot.com">www.lullabot.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ES6 Promises: Patterns and Anti-Patterns*When I first got started with NodeJS a few years ago, I was mortified by what is now
+                            affectionately known as &quot;callback&#x2026;*<a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            A Simple Guide to ES6 Promises<em
+                                >The woods are lovely, dark and deep. But I have promises to keep, and miles to go before I sleep.&#x200A;&#x2014;&#x200A;Robert
+                                Frost</em
+                            ><a href="http://codeburst.io">codeburst.io</a>
+                        </td>
+                        <td>The ES6 Promises<em>A very helpful feature in ES6</em><a href="http://codeburst.io">codeburst.io</a></td>
+                        <td>
+                            ES6 Promises in Depth*Promises are a very involved paradigm, so we&#x2019;ll take it slow. Here&#x2019;s a table of contents with
+                            the topics we&#x2019;ll cover in&#x2026;*<a href="http://ponyfoo.com">ponyfoo.com</a>
+                        </td>
+                        <td>
+                            Javascript Promises: An In-Depth Approach*&#x201C;Write down the syntax for promises on this sheet of paper&#x201D;, is enough to
+                            give nightmares to a lot of junior and even&#x2026;*<a href="http://codeburst.io">codeburst.io</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Promises - JavaScript concepts*This is part of a series where I try to explain through each of 33 JS Concepts. This part corresponds
+                            to Promises&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            Javascript Promise 101*Knowing how Promise works in javascript will boost your development skill exponentially. Here I will share: I
+                            promise&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            Simplify JavaScript Promises*I love promises. Not from people, but from JavaScript. Tweet Quote I love promises. Not from people,
+                            but from&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            The Lowdown on Promises<em>A quick and concise guide on how Promises work in JavaScript</em
+                            ><a href="http://medium.com">medium.com</a>
+                        </td>
+                        <td>
+                            &#x2B50;&#xFE0F;&#x1F380; JavaScript Visualized: Promises &amp; Async/Await*Ever had to deal with JS code that just&#x2026;
+                            didn&#x2019;t run the way you expected it to? Maybe it seemed like functions got&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How to escape async/await hell*async/await freed us from callback hell, but people have started abusing
+                            it&#x200A;&#x2014;&#x200A;leading to the birth of async/await hell.*<a href="http://medium.freecodecamp.org"
+                                >medium.freecodecamp.org</a
+                            >
+                        </td>
+                        <td>
+                            Understanding JavaScript&#x2019;s async await*Let&#x2019;s suppose we had code like the following. Here I&#x2019;m wrapping an HTTP
+                            request in a Promise. The promise fulfills with&#x2026;*<a href="http://ponyfoo.com">ponyfoo.com</a>
+                        </td>
+                        <td>
+                            JavaScript Async/Await: Serial, Parallel and Complex Flow - TechBrij*If you have experience on
+                            <a href="http://ASP.NET">ASP.NET</a> MVC then probably you are familiar with async/await keywords in C#. The same thing
+                            is&#x2026;*<a href="http://techbrij.com">techbrij.com</a>
+                        </td>
+                        <td>
+                            From JavaScript Promises to Async/Await: why bother?*In this tutorial, we will cover why we need async/await when we could achieve
+                            the same fit with JavaScript Promises, to&#x2026;*<a href="http://blog.pusher.com">blog.pusher.com</a>
+                        </td>
+                        <td>
+                            Flow Control in Modern JS: Callbacks to Promises to Async/Await - SitePoint*JavaScript is regularly claimed to be asynchronous. What
+                            does that mean? How does it affect development? How has the&#x2026;*<a href="http://www.sitepoint.com">www.sitepoint.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Time Complexity Analysis in JavaScript*An algorithm is a self-contained step-by-step set of instructions to solve a problem. It
+                            takes time for these steps to&#x2026;*<a href="http://www.jenniferbland.com">www.jenniferbland.com</a>
+                        </td>
+                        <td>
+                            Algorithms in plain English: time complexity and Big-O notation*Every good developer has time on their mind. They want to give their
+                            users more of it, so they can do all those things&#x2026;*<a href="http://medium.freecodecamp.org">medium.freecodecamp.org</a>
+                        </td>
+                        <td>
+                            An Introduction to Big O Notation*Big O notation is a big topic, and its universal importance stems from the fact that it describes
+                            the efficiency of&#x2026;*<a href="http://dev.to">dev.to</a>
+                        </td>
+                        <td>
+                            [Crizstian/data-structure-and-algorithms-with-ES6*Num Type Exercises Description 10.- Graph Data Structure 2 A graph consists of a
+                            set of vertices and a set of edges. A&#x2026;*<a href="http://github.com">github.com</a>](<a
+                                href="https://github.com/Crizstian/data-structure-and-algorithms-with-ES6"
+                                >https://github.com/Crizstian/data-structure-and-algorithms-with-ES6</a
+                            >&#xA0;&quot;<a href="https://github.com/Crizs">https://github.com/Crizs</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
