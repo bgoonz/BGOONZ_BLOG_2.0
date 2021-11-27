@@ -138,7 +138,7 @@ There are two sub-folders:
 │ ├── [./backend/mysql-wrapper.php](./backend/mysql-wrapper.php)
 │ ├── [./backend/README.md](./backend/README.md)
 │ ├── [./backend/upload.php](./backend/upload.php)
-│ └── [./backend/utility.php](./backend/utility.php)<br>
+│ └── [./backend/utility.php](./backend/utility.php)
 ├── [./glossary_files](./glossary_files)
 │ ├── [./glossary_files/559862854355634.js](./glossary_files/559862854355634.js)
 │ ├── [./glossary_files/analytics.js](./glossary_files/analytics.js)
