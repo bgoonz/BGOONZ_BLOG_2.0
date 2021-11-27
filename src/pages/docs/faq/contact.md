@@ -17,6 +17,10 @@ template: docs
 </iframe>
 
 <br>
+<hr>
+<br>
+
+<hr>
 <br>
 
 <iframe src="https://comments-3.bgoonz.repl.co/" height="900px" width="100%">
