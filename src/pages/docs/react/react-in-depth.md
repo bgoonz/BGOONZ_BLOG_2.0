@@ -7416,7 +7416,7 @@ Add an `.env` file to the root of your Create React App project. Define an envir
 Remember that environment variables need to be prefixed with `REACT_APP_` for Create React App to process them. After defining your environment variable, you can refer to it within JSX using an expression and `process.env`:
 
     // ./src/App.js
-
+```jsx
     import React from 'react';
     import HeadingA from './css-modules/HeadingA';
     import HeadingB from './css-modules/HeadingB';
