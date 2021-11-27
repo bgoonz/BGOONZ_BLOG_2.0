@@ -26,6 +26,10 @@ template: docs
 <details>
  <summary>SEMVER CHECKER... WHY?</summary>
 
+
+
+
+
 Unless you know exactly what you are doing and why, you should change to a more flexible one like:
 
 -   `~x.y.z` if your dependency manager supports tilde-range constraints
