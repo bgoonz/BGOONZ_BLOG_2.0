@@ -21,7 +21,7 @@ template: docs
 <br>
 <h1>My DevDocs Deploy</h1>
 <br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devdecs42.herokuapp.com/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devdecs42.herokuapp.com/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 
 -   [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)
