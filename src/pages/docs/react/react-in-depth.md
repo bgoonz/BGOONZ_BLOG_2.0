@@ -7436,7 +7436,7 @@ Remember that environment variables need to be prefixed with `REACT_APP_` for Cr
     }
 
     export default App;
-
+```
 Environment variables can also be referred to in regular JavaScript code:
 
     console.log(process.env.REACT_APP_TITLE);
