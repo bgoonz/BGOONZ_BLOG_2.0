@@ -272,7 +272,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "External Nav",
+                "label": "External",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
