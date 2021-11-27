@@ -1642,9 +1642,11 @@ on <a href="https://codepen.io">CodePen</a>.
  <br>
  <br>
 <!-------------------------------------------------------------------------------------->
-<br><br>
+<br>
+<br>
 <!-------------------------------------------------------------------------------------->
-<br><br>
+<br>
+<br>
 <br>
 <br>
 
@@ -1664,7 +1666,8 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <!-------------------------------------------------------------------------------------->
-<br><br>
+<br>
+<br>
 <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="FullTextSearchjs"
 src="https://codepen.io/bgoonz/embed/QWvMWoQ?default-tab=html%2Cresult" frameborder="no" loading="lazy"
 allowtransparency="true" allowfullscreen="true">
@@ -1716,7 +1719,8 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <!-------------------------------------------------------------------------------------->
-<br><br>
+<br>
+<br>
 <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Dashed Border Generator"
 src="https://random-static-html-deploys.netlify.app/dashed-border-generator.html" frameborder="no"
 loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -1921,7 +1925,8 @@ See the Pen <a href='https://codepen.io/bgoonz/pen/PoWoLNy'>95 000 particles</a>
  <br>
 <br>
 <!-------------------------------------------------------------------------------------->
-<br><br>
+<br>
+<br>
 <p class="codepen" data-height="575" data-theme-id="dark" data-default-tab="html,result" data-user="bgoonz"
 data-slug-hash="DmnlJ"
 style="height: 375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"

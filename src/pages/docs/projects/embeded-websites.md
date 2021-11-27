@@ -282,7 +282,8 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <h1>   Lambda Student Site </h1>
@@ -294,9 +295,12 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
-<br><br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 
@@ -357,7 +361,8 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <h1> Form Builder GUI </h1>
@@ -378,7 +383,8 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -560,9 +566,11 @@ template: docs
         on <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <!-------------------------------------------------------------------------------------->
-      <br><br>
+      <br>
+<br>
       <!-------------------------------------------------------------------------------------->
-      <br><br>
+      <br>
+<br>
       <center>
         <br>
         <br>
@@ -577,7 +585,8 @@ template: docs
         <br>
         <br>
         <!-------------------------------------------------------------------------------------->
-        <br><br>
+        <br>
+<br>
         <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="FullTextSearchjs"
           src="https://codepen.io/bgoonz/embed/QWvMWoQ?default-tab=html%2Cresult" frameborder="no" loading="lazy"
           allowtransparency="true" allowfullscreen="true">

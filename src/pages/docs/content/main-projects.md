@@ -60,7 +60,8 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -73,7 +74,8 @@ template: docs
 <br>
 <hr>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <br>
