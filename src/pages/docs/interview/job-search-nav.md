@@ -1,5 +1,5 @@
 ---
-title: Job Search
+title: Job Search Navigation
 weight: 0
 excerpt: These are some of my active projects.
 seo:

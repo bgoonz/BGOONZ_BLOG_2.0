@@ -1,7 +1,7 @@
 ---
-title: Job Search
+title:  Review Of Concepts
 weight: 0
-excerpt: These are some of my active projects.
+excerpt: Basic Concepts review
 seo:
   title: ''
   description: ''
