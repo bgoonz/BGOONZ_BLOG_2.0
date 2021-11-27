@@ -213,9 +213,9 @@ img {
     max-width: 100%;
     border-radius: 10px;
     :not(p) {
-  color: blue;
+  box-shadow: inset 10px 10px 50px #fff;
 }
-      box-shadow: inset 10px 10px 50px #fff;
+     
 }
 
 @media only screen and (min-width: 741px) {
