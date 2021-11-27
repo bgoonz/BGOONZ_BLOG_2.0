@@ -8,7 +8,7 @@ A set of questions you should use before handing off your application to the cli
 
 #### A set of questions you should use before handing off your application to the client.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*QD7rah374uFotVYN.jpg" class="graf-image" /></figure>First off… download this developer checklist extension for chrome that literally evaluates the checkpoints on any webpage you activate it on.. it also provides advice and html validation so that you can improve your site and it’s SEO rankings!
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*QD7rah374uFotVYN.jpg" class="graf-image" /></figure>First off… download this developer checklist extension for chrome that literally evaluates the checkpoints on any webpage you activate it on.. it also provides advice and html validation so that you can improve your site and it's SEO rankings!
 
 <a href="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US"><strong>Web Developer Checklist</strong><br />
 <em>Analyses any web page for violations of best practices</em>chrome.google.com</a><a href="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -71,7 +71,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content seem to have a style? If so, does the content adhere to it consistently?
 
-> Does the content read, look, or sound as though it’s professionally crafted?
+> Does the content read, look, or sound as though it's professionally crafted?
 
 ---
 
@@ -112,9 +112,9 @@ A set of questions you should use before handing off your application to the cli
 -   <span id="86c8">Design your site to have a clear conceptual page hierarchy.</span>
 -   <span id="aed5">Follow our recommended best practices for <a href="https://developers.google.com/search/docs/advanced/guidelines/google-images" class="markup--anchor markup--li-anchor">images</a>, <a href="https://developers.google.com/search/docs/advanced/guidelines/video" class="markup--anchor markup--li-anchor">video</a>, and <a href="https://developers.google.com/search/docs/guides/intro-structured-data" class="markup--anchor markup--li-anchor">structured data</a>.</span>
 -   <span id="67f4">When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.</span>
--   <span id="5fcd">To help Google fully understand your site’s contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the <a href="https://support.google.com/webmasters/answer/9012289" class="markup--anchor markup--li-anchor">URL Inspection tool</a>; to debug directives in your robots.txt file, use the <a href="https://support.google.com/webmasters/answer/6062598" class="markup--anchor markup--li-anchor">robots.txt Tester</a> tool.</span>
+-   <span id="5fcd">To help Google fully understand your site's contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the <a href="https://support.google.com/webmasters/answer/9012289" class="markup--anchor markup--li-anchor">URL Inspection tool</a>; to debug directives in your robots.txt file, use the <a href="https://support.google.com/webmasters/answer/6062598" class="markup--anchor markup--li-anchor">robots.txt Tester</a> tool.</span>
 -   <span id="b8ef">Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.</span>
--   <span id="e5c6">Make your site’s important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.</span>
+-   <span id="e5c6">Make your site's important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.</span>
 -   <span id="58bf">Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use <a href="https://developers.google.com/search/docs/advanced/robots/intro" class="markup--anchor markup--li-anchor">robots.txt</a>, `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.</span>
 
 ### Help visitors use your pages
@@ -124,14 +124,14 @@ A set of questions you should use before handing off your application to the cli
 -   <span id="8b66">Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like <a href="https://developers.google.com/speed/pagespeed/insights/" class="markup--anchor markup--li-anchor">PageSpeed Insights</a> and <a href="https://www.webpagetest.org/" class="markup--anchor markup--li-anchor">Webpagetest.org</a> to test the performance of your page.</span>
 -   <span id="5f39">Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the <a href="https://search.google.com/test/mobile-friendly" class="markup--anchor markup--li-anchor">Mobile-Friendly Test</a> to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.</span>
 -   <span id="5f9b">Ensure that your site <a href="https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility" class="markup--anchor markup--li-anchor">appears correctly in different browsers</a>.</span>
--   <span id="717b">If possible, <a href="https://developers.google.com/search/docs/advanced/security/https" class="markup--anchor markup--li-anchor">secure your site’s connections</a> with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.</span>
+-   <span id="717b">If possible, <a href="https://developers.google.com/search/docs/advanced/security/https" class="markup--anchor markup--li-anchor">secure your site's connections</a> with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.</span>
 -   <span id="4156">Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.</span>
 
 ### Basic principles
 
 -   <span id="0251">Make pages primarily for users, not for search engines.</span>
--   <span id="f565">Don’t deceive your users.</span>
--   <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn’t exist?”</span>
+-   <span id="f565">Don't deceive your users.</span>
+-   <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you'd feel comfortable explaining what you've done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn't exist?”</span>
 -   <span id="9acc">Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.</span>
 
 ### Specific guidelines
@@ -165,7 +165,7 @@ If your site violates one or more of these guidelines, then Google may take <a h
 
 ### Website design checklist
 
-It’s all too easy to miss (or break) something during the many back-and-forths, client feedback sessions, and other design iterations you go through. That’s why we created the design checklist below will help you go back and check for any design mistakes.
+It's all too easy to miss (or break) something during the many back-and-forths, client feedback sessions, and other design iterations you go through. That's why we created the design checklist below will help you go back and check for any design mistakes.
 
 To start, be sure to check your:
 
@@ -174,15 +174,15 @@ To start, be sure to check your:
 -   <span id="dcfc">Shadows: If you used drop shadows, is the light source consistent for each and every one? Did you use the same blur, opacity, and spread values?</span>
 -   <span id="021b">Typography: Is your font stack logical and consistent (i.e., is there a reason that element is set in a sans)? Are your heading sizes consistent? Have you used proper (not faux) italics and bolding? Do all text links look right? Is all text both legible and readable?</span>
 -   <span id="fbb2">Imagery: Do any images look blurry, pixelated, or otherwise funky? Are any images broken or crazily heavy in terms of file size? Do all _non-decorative_ images have alt tags?</span>
--   <span id="4760">Logo: It’s (usually) just another image, but it’s so important it warrants its own step. Is it the latest version? Is it crisp (not blurry or pixelated)?</span>
+-   <span id="4760">Logo: It's (usually) just another image, but it's so important it warrants its own step. Is it the latest version? Is it crisp (not blurry or pixelated)?</span>
 
-Once you’ve made these initial visual checks, you’ll want to ensure that your site’s appearance is consistent and functional on any screen.
+Once you've made these initial visual checks, you'll want to ensure that your site's appearance is consistent and functional on any screen.
 
 ### Cross-browser appearance
 
-Different browsers may render your website in different ways, so it’s important to test your site in different browsers. Take a look at <a href="http://www.w3schools.com/browsers/browsers_stats.asp" class="markup--anchor markup--p-anchor">W3’s browser stats</a> to see where you should focus your testing. (Though if you’re working on a redesign, browser-usage stats will be more useful.)
+Different browsers may render your website in different ways, so it's important to test your site in different browsers. Take a look at <a href="http://www.w3schools.com/browsers/browsers_stats.asp" class="markup--anchor markup--p-anchor">W3's browser stats</a> to see where you should focus your testing. (Though if you're working on a redesign, browser-usage stats will be more useful.)
 
-During this process (and the next, in multi-device testing) you’ll want to make sure your layouts, typography, navigation, and other design elements are displaying properly.
+During this process (and the next, in multi-device testing) you'll want to make sure your layouts, typography, navigation, and other design elements are displaying properly.
 
 The elements that tend to vary most across browsers, and therefore are most important to check, are:
 
@@ -197,17 +197,17 @@ The elements that tend to vary most across browsers, and therefore are most impo
 
 There have never been more web-capable devices around, and with that comes a staggering array of screen sizes. Done right, your site _should_ perform well on any screen size, but be sure to double check. (You are a perfectionist after all, right?)
 
-This is also where mobile navigation is crucial. Be sure to test out the user’s ability to navigate around the website on a touchscreen device, and make sure nothing gets lost in device transition.
+This is also where mobile navigation is crucial. Be sure to test out the user's ability to navigate around the website on a touchscreen device, and make sure nothing gets lost in device transition.
 
 In Webflow, we make it easy for you to test the most popular devices and preview your website on almost any size, streamlining the process of cross-device testing all in one place. Of course, nothing replaces real-world testing on a variety of devices as small details may differ on the real device.
 
 ### Image optimization
 
-Images and graphics are an important element of many websites, so you’ll want to make sure they display properly, especially on all those ultra-high-definition devices (like Apple’s Retina screens) out there.
+Images and graphics are an important element of many websites, so you'll want to make sure they display properly, especially on all those ultra-high-definition devices (like Apple's Retina screens) out there.
 
-The rule of thumb is to upload your image at twice the size it’ll display on your site. In some cases, you can upload two images: an actual-size version for lower-res devices, and another that’s twice the size for high-res devices.
+The rule of thumb is to upload your image at twice the size it'll display on your site. In some cases, you can upload two images: an actual-size version for lower-res devices, and another that's twice the size for high-res devices.
 
-Why? Because the heavier the image, the slower your page will load, and the worse your user experience will be (which also negatively affects SEO, which we’ll cover later on).
+Why? Because the heavier the image, the slower your page will load, and the worse your user experience will be (which also negatively affects SEO, which we'll cover later on).
 
 In Webflow, we automatically scale, compress, and optimize images for every device. Learn more about our <a href="https://webflow.com/feature/responsive-images" class="markup--anchor markup--p-anchor">responsive images feature or check out our more detailed</a> article on <a href="https://webflow.com/blog/how-to-boost-your-sites-performance" class="markup--anchor markup--p-anchor">image optimization</a>.
 
@@ -217,7 +217,7 @@ Design and functionality go hand in hand, but I like to isolate the two to make 
 
 ### Integration testing
 
-This one is super important, and can range from a quick task to a giant one, depending on how many integrations you have. Typically, I’ll create a list of integrations _as I add them_ so I don’t forget later on.
+This one is super important, and can range from a quick task to a giant one, depending on how many integrations you have. Typically, I'll create a list of integrations _as I add them_ so I don't forget later on.
 
 Some common integrations to test might be:
 
@@ -231,7 +231,7 @@ Some common integrations to test might be:
 
 ### Link testing
 
-This one can be a doozy, simply because most sites have dozens (if not hundreds) of links. More often than not, there’s a link or two that goes nowhere, and it’s important to find them before your end-users do.
+This one can be a doozy, simply because most sites have dozens (if not hundreds) of links. More often than not, there's a link or two that goes nowhere, and it's important to find them before your end-users do.
 
 Some of the most important links to check are:
 
@@ -240,27 +240,27 @@ Some of the most important links to check are:
 -   <span id="d42d">Social media links (Facebook, Twitter, etc.)</span>
 -   <span id="cde4">Logo (typically links to the home page)</span>
 
-Rather than doing all this manually, I’d suggest trying a link crawler like the <a href="https://validator.w3.org/checklink" class="markup--anchor markup--p-anchor">W3C Link Checker</a>, the Chrome plugin <a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf?hl=en-GB" class="markup--anchor markup--p-anchor">Check My Links</a>, or <a href="http://www.screamingfrog.co.uk/seo-spider/" class="markup--anchor markup--p-anchor">Screaming Frog</a> (which is excellent for SEO audits, too).
+Rather than doing all this manually, I'd suggest trying a link crawler like the <a href="https://validator.w3.org/checklink" class="markup--anchor markup--p-anchor">W3C Link Checker</a>, the Chrome plugin <a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf?hl=en-GB" class="markup--anchor markup--p-anchor">Check My Links</a>, or <a href="http://www.screamingfrog.co.uk/seo-spider/" class="markup--anchor markup--p-anchor">Screaming Frog</a> (which is excellent for SEO audits, too).
 
 ### Content editing
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HxnVQM9RoqyuTlLP.jpeg" class="graf-image" /></figure>Give the king its due.
 
-Content is king, and the testing process should be fit for one. Typically this involves making sure that all content has been updated and approved. I can’t tell you how many websites I’ve found that _still_ have a l*orem ipsum* paragraph somewhere.
+Content is king, and the testing process should be fit for one. Typically this involves making sure that all content has been updated and approved. I can't tell you how many websites I've found that _still_ have a l*orem ipsum* paragraph somewhere.
 
 Now, if you practice <a href="https://webflow.com/blog/content-first-design" class="markup--anchor markup--p-anchor">content-first design</a>, you should have final content already in place, so you can focus on more fine-toothed-comb review, like proofing for spelling and grammatical errors.
 
-It’s also important to note here that it’s okay for content to be changed later on. Clients, team members, or you can always adjust text through a CMS. The main goal here is to ensure that your website content isn’t complete gibberish.
+It's also important to note here that it's okay for content to be changed later on. Clients, team members, or you can always adjust text through a CMS. The main goal here is to ensure that your website content isn't complete gibberish.
 
 ### Search engine optimization (SEO)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ukayn_ZyXfN-Wg-M.jpeg" class="graf-image" /></figure>Analyzing and optimizing your website *after* publishing is a never-ending process. And you need to consider semantic site structure from the get-go. But that doesn’t mean you won’t benefit from an SEO review before you hit publish.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ukayn_ZyXfN-Wg-M.jpeg" class="graf-image" /></figure>Analyzing and optimizing your website *after* publishing is a never-ending process. And you need to consider semantic site structure from the get-go. But that doesn't mean you won't benefit from an SEO review before you hit publish.
 
 There are multiple things that can be done to optimize your website for search engines.
 
 ### 1. Use proper semantic structure
 
-Web crawlers (like Google’s bots) read through your website to get an understanding of your content, so that search engines know to display your website when people search for it. To help them crawl your site, you need to use language they’ll understand.
+Web crawlers (like Google's bots) read through your website to get an understanding of your content, so that search engines know to display your website when people search for it. To help them crawl your site, you need to use language they'll understand.
 
 Historically, this has meant using the following semantic tags:
 
@@ -284,7 +284,7 @@ You can also go above and beyond with some new <a href="https://webflow.com/blog
 -   <span id="2858">&lt;summary&gt;</span>
 -   <span id="d970">&lt;time&gt;</span>
 
-These tags are important because they let you identify the content that’s most relevant to users. In short: making it easy for search engines makes it easier for users to find you.
+These tags are important because they let you identify the content that's most relevant to users. In short: making it easy for search engines makes it easier for users to find you.
 
 ### 2. Meta SEO tags
 
@@ -292,9 +292,9 @@ Aside from on-page structure, you can also help web crawlers understand your sit
 
 #### Meta title
 
-Your page’s meta title translates to the linked text people will see on search engine result pages (SERPs). It also displays on the browser tab when people click through to your page. Some best practices include:
+Your page's meta title translates to the linked text people will see on search engine result pages (SERPs). It also displays on the browser tab when people click through to your page. Some best practices include:
 
--   <span id="ed19">Define the page’s central topic</span>
+-   <span id="ed19">Define the page's central topic</span>
 -   <span id="c50a">Keep it under 70 characters in length (including spaces)</span>
 -   <span id="e656">Use relevant keywords</span>
 -   <span id="c74d">Put important keywords in the front of the title</span>
@@ -306,12 +306,12 @@ The meta description is a short sentence (or two) that describes what your websi
 Some best practices include:
 
 -   <span id="aec5">Include keywords that describe the page</span>
--   <span id="022c">Don’t go over 160 characters</span>
--   <span id="13ac">Write your description for people, not robots. (Google doesn’t use descriptions in web rankings).</span>
+-   <span id="022c">Don't go over 160 characters</span>
+-   <span id="13ac">Write your description for people, not robots. (Google doesn't use descriptions in web rankings).</span>
 
 ### 3. Open Graph settings
 
-Social media has become a key element of SEO, so it’s crucial that you amplify this process by providing effective Open Graph information. Open Graph settings include three pieces of content: title, description, and an image.
+Social media has become a key element of SEO, so it's crucial that you amplify this process by providing effective Open Graph information. Open Graph settings include three pieces of content: title, description, and an image.
 
 The title and description follow the same rules as their SEO counterparts, but instead of showing up in search results, they appear as the default title and description on social media platforms when shared.
 
@@ -333,11 +333,11 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2KRsAowQaufNBiSs" class="graf-image" /></figure><a href="https://wordhtml.com/" class="markup--anchor markup--p-anchor">Word HTMLFree online Word and other rich text editor and HTML converter. Copy-paste your document in the editor and switch to HTML view to get the code. <em>wordhtml.com</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*A_wBLhhToeFlXuLg" class="graf-image" /></figure><a href="https://htmlcheatsheet.com/" class="markup--anchor markup--p-anchor">HTML Cheat SheetHTML, CSS, JavaScript and other web technology cheat sheet with interactive user interface. Grab the code you’re looking for quickly. <em>htmlcheatsheet.com</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*A_wBLhhToeFlXuLg" class="graf-image" /></figure><a href="https://htmlcheatsheet.com/" class="markup--anchor markup--p-anchor">HTML Cheat SheetHTML, CSS, JavaScript and other web technology cheat sheet with interactive user interface. Grab the code you're looking for quickly. <em>htmlcheatsheet.com</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*393SncqM14lxdAYX" class="graf-image" /></figure><a href="https://stackoverflow.com/" class="markup--anchor markup--p-anchor">Stack OverflowHuge programmer community where you usually don’t have to ask for help because probably someone has already answered the same question. <em>stackoverflow.com</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*393SncqM14lxdAYX" class="graf-image" /></figure><a href="https://stackoverflow.com/" class="markup--anchor markup--p-anchor">Stack OverflowHuge programmer community where you usually don't have to ask for help because probably someone has already answered the same question. <em>stackoverflow.com</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*veTjmob-9SlcsbfY" class="graf-image" /></figure><a href="https://www.w3schools.com/" class="markup--anchor markup--p-anchor">w3schoolsThe place to learn web technologies. There’s a big chance that this site gives the first search result when you’re looking for a HTML term. <em>w3schools.com</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*veTjmob-9SlcsbfY" class="graf-image" /></figure><a href="https://www.w3schools.com/" class="markup--anchor markup--p-anchor">w3schoolsThe place to learn web technologies. There's a big chance that this site gives the first search result when you're looking for a HTML term. <em>w3schools.com</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*mcOcJb9_CRucZ8Hi" class="graf-image" /></figure><a href="https://developer.mozilla.org/" class="markup--anchor markup--p-anchor">Mozzilla Developer NetworkAn evolving learning platform for web technologies. Providing tutorials, developer tools and the information to easily build projects. <em>developer.mozilla.org</em></a>
 
@@ -387,7 +387,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NrZDjNLAdMcfK8Hy" class="graf-image" /></figure><a href="https://codepen.io/" class="markup--anchor markup--p-anchor">CodepenRegister to create, save and share HTML-CSS-JS code snippets and run them online. <em>codepen.io</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*1EEf11CeSLOOAAyu" class="graf-image" /></figure><a href="https://jsfiddle.net/" class="markup--anchor markup--p-anchor">JSFiddleSimilar to Codepen but this one doesn’t require registration. Test HTML-CSS-JS code online and save your small project in a shareable URL. <em>jsfiddle.net</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*1EEf11CeSLOOAAyu" class="graf-image" /></figure><a href="https://jsfiddle.net/" class="markup--anchor markup--p-anchor">JSFiddleSimilar to Codepen but this one doesn't require registration. Test HTML-CSS-JS code online and save your small project in a shareable URL. <em>jsfiddle.net</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2Aq8QOCznCo11ypk" class="graf-image" /></figure><a href="https://wordpress.org/" class="markup--anchor markup--p-anchor">WordPress.OrgMore than 10 million websites use this free and open-source content management system based on PHP-MySql. <em>wordpress.org</em></a>
 
@@ -395,11 +395,11 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*QSwvNaVB8SOgyDqp" class="graf-image" /></figure><a href="https://websitesetup.org/" class="markup--anchor markup--p-anchor">Website SetupA friendly guide about how to make a website, discussing the hosting, the CMS, domain name and promotion. <em>websitesetup.org</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*m7_ugygIICt4VLea" class="graf-image" /></figure><a href="https://www.expireddomains.net/" class="markup--anchor markup--p-anchor">Expired DomainsHunt for expired domain names or get inspiration for your next project. It’s worth registering for an account on this free website. <em>expireddomains.net</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*m7_ugygIICt4VLea" class="graf-image" /></figure><a href="https://www.expireddomains.net/" class="markup--anchor markup--p-anchor">Expired DomainsHunt for expired domain names or get inspiration for your next project. It's worth registering for an account on this free website. <em>expireddomains.net</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PNRVuj1GX-jgppng" class="graf-image" /></figure><a href="https://badhtml.com/" class="markup--anchor markup--p-anchor">Bad HTMLThe ugliest website on the internet, collecting bad UI/UX practices. A deterrent example about how not to build a website. <em>badhtml.com</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*66ncH3hioTVPIr2l" class="graf-image" /></figure><a href="https://1stwebdesigner.com/" class="markup--anchor markup--p-anchor">1st Web DesignerFollow this web design blog to find out what’s new in freelance, marketing, UX etc. categories. <em>1stwebdesigner.com</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*66ncH3hioTVPIr2l" class="graf-image" /></figure><a href="https://1stwebdesigner.com/" class="markup--anchor markup--p-anchor">1st Web DesignerFollow this web design blog to find out what's new in freelance, marketing, UX etc. categories. <em>1stwebdesigner.com</em></a>
 
 ---
 

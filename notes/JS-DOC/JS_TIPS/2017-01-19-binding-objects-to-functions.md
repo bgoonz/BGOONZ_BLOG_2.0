@@ -10,7 +10,7 @@ categories: - en - javascript
 
 ---
 
-More than often, we need to bind an object to a function’s this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
+More than often, we need to bind an object to a function's this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
 
 ### Bind syntax
 

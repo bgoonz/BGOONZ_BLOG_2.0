@@ -49,11 +49,11 @@ thumb_image_alt: python logo
 
 -   print is the equivalent of console.log.
 
-> 'print() == console.log()’
+> 'print() == console.log()'
 
 # # is used to make comments in your code.
 
-> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
 # Numbers
 
@@ -81,7 +81,7 @@ No Decimal Point
 
 > **The i is switched to a j in programming.**
 
-T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there's another 25 letters that don't get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
 -   **Type Casting** : The process of converting one number to another.
 
@@ -111,9 +111,9 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 ## Python allows negative indexing (thank god!)
 
--   Python let’s you use ranges
+-   Python let's you use ranges
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
 
 -   The end range is exclusive just like slice in JS.
 
@@ -148,7 +148,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # Variables and Expressions
 
--   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+-   **Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.
 
 -   Duck Typing is the fundamental approach of Python.
 
@@ -325,7 +325,7 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 ## Tuple() built in can be used to convert other data into a tuple
 
-## Ranges : A list of numbers which can’t be changed; often used with for loops.
+## Ranges : A list of numbers which can't be changed; often used with for loops.
 
 **Declared using one to three parameters**.
 
@@ -339,7 +339,7 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 **_Declared with curly braces of the built in dict()_**
 
-> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
+> _Benefit of dictionaries in Python is that it doesn't matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
@@ -372,9 +372,9 @@ Sets created by putting comma seperated values inside braces:**
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
-## (0, 'First’), (1, 'Second’), (2, 'Third’), (3, 'Fourth’)
+## (0, 'First'), (1, 'Second'), (2, 'Third'), (3, 'Fourth')
 
-## (1, 'First’), (2, 'Second’), (3, 'Third’), (4, 'Fourth’)
+## (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
 > Functions that analyze iterable
@@ -413,7 +413,7 @@ Always Includes:
 
 > 1\. The for keyword
 > 2\. A variable name
-> 3\. The 'in’ keyword
+> 3\. The 'in' keyword
 > 4\. An iterable of some kid
 > 5\. A colon
 > 6\. On the next line, an indented block of code called the for clause.
@@ -446,9 +446,9 @@ _Prints age_
 
 **Getting tuples**
 
-_Prints ('color’, 'red’)_
+_Prints ('color', 'red')_
 
-_Prints ('age’, 42)_
+_Prints ('age', 42)_
 
 _Destructuring to values_
 
@@ -486,7 +486,7 @@ Custom.
 > module : Python code in a separate file.
 > package : Path to a directory that contains modules.
 > [**init.py**](http://init.py/) : Default file for a package.
-> submodule : Another file in a module’s folder.
+> submodule : Another file in a module's folder.
 > function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
@@ -515,7 +515,7 @@ sets were killed in favor of set() class.**
 
 ## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-[bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
+[bgoonz's gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
 

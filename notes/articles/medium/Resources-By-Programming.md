@@ -1,12 +1,12 @@
 # Resources By Programming Language
 
-Here’s a list of programming resources sorted by programming language.
+Here's a list of programming resources sorted by programming language.
 
 ---
 
 ### Resources By Programming Language
 
-#### Here’s a list of programming resources sorted by programming language.
+#### Here's a list of programming resources sorted by programming language.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-ViOhk6rVk72MIhu.png" class="graf-image" /></figure>### C
 

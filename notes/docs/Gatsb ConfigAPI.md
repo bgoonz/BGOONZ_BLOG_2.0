@@ -1,6 +1,6 @@
-The file `gatsby-config.js` defines your site’s metadata, plugins, and other general configuration. This file should be in the root of your Gatsby site.
+The file `gatsby-config.js` defines your site's metadata, plugins, and other general configuration. This file should be in the root of your Gatsby site.
 
-If you created a Gatsby site with the `gatsby new` command, there should already be a sample configuration file in your site’s directory. _Note: There are many sample configs which may be helpful to reference in the different [Gatsby Example Websites](https://github.com/gatsbyjs/gatsby/tree/master/examples)._
+If you created a Gatsby site with the `gatsby new` command, there should already be a sample configuration file in your site's directory. _Note: There are many sample configs which may be helpful to reference in the different [Gatsby Example Websites](https://github.com/gatsbyjs/gatsby/tree/master/examples)._
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#set-up-the-configuration-file)Set up the configuration file
 
@@ -59,7 +59,7 @@ module.exports = {  plugins: [`gatsby-plugin-name`],}
 
 Many plugins have optional or required options to configure them. Instead of adding a name string to the `plugins` array, add an object with its name and options. Most plugins show examples in their `README` file or page in the [Gatsby plugin library](https://www.gatsbyjs.com/plugins).
 
-Here’s an example showing how to write an object with keys to `resolve` the plugin name and an `options` object with any applicable settings:
+Here's an example showing how to write an object with keys to `resolve` the plugin name and an `options` object with any applicable settings:
 
 ```
 module.exports = {  plugins: [    {      resolve: `gatsby-plugin-name`,      options: {        optionA: true,        optionB: `Another option`,      },    },  ],}
@@ -67,7 +67,7 @@ module.exports = {  plugins: [    {      resolve: `gatsby-plugin-name`,      opt
 
 ### [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#mixed-plugins)Mixed plugins
 
-You can add plugins with and without options in the same array. Your site’s config file could look like this:
+You can add plugins with and without options in the same array. Your site's config file could look like this:
 
 ```
 module.exports = {  plugins: [    `gatsby-transform-plugin`,    {      resolve: `gatsby-plugin-name`,      options: {        optionA: true,        optionB: `Another option`,      },    },  ],}
@@ -87,7 +87,7 @@ module.exports = {  flags: {    QUERY_ON_DEMAND: true,  },}
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#pathprefix)pathPrefix
 
-It’s common for sites to be hosted somewhere other than the root of their domain. Say you have a Gatsby site at `example.com/blog/`. In this case, you would need a prefix (`/blog`) added to all paths on the site.
+It's common for sites to be hosted somewhere other than the root of their domain. Say you have a Gatsby site at `example.com/blog/`. In this case, you would need a prefix (`/blog`) added to all paths on the site.
 
 ```
 module.exports = {  pathPrefix: `/blog`,}
@@ -97,9 +97,9 @@ See more about [Adding a Path Prefix](https://www.gatsbyjs.com/docs/how-to/previ
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#polyfill)Polyfill
 
-Gatsby uses the ES6 Promise API. Because some browsers don’t support this, Gatsby includes a Promise polyfill by default.
+Gatsby uses the ES6 Promise API. Because some browsers don't support this, Gatsby includes a Promise polyfill by default.
 
-If you’d like to provide your own Promise polyfill, you can set `polyfill` to false.
+If you'd like to provide your own Promise polyfill, you can set `polyfill` to false.
 
 ```
 module.exports = {  polyfill: false,}

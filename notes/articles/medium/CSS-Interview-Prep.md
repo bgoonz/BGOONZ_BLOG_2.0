@@ -377,7 +377,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="09e2">\[ \] The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.</span>
 -   <span id="0a5b">\[ \] The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.</span>
 
-#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element’s transformation origin. By default, what is the location of the origin?
+#### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?
 
 -   <span id="436c">\[x\] the top left corner of the element</span>
 -   <span id="2269">\[ \] the center of the element</span>
@@ -585,10 +585,10 @@ Plus Css Cheat Sheet (82 questions total)
       margin-left: calc(5% + 5px);
     }
 
--   <span id="e7bf">\[x\] The left margin value is equal to 5% of its parents element’s width plus 5px</span>
+-   <span id="e7bf">\[x\] The left margin value is equal to 5% of its parents element's width plus 5px</span>
 -   <span id="d573">\[ \] The left margin value is equal to 5% of the viewport width plus 5px</span>
--   <span id="9e5c">\[ \] The left margin value is equal to 5% of the closest positioned element’s width plus 5px</span>
--   <span id="e324">\[ \] The left margin value is equal to 5% of the selected element’s width (.example) plus 5px</span>
+-   <span id="9e5c">\[ \] The left margin value is equal to 5% of the closest positioned element's width plus 5px</span>
+-   <span id="e324">\[ \] The left margin value is equal to 5% of the selected element's width (.example) plus 5px</span>
 
 #### Q50. What is the CSS selector for an `<a>` tag containing the title attribute?
 
@@ -699,7 +699,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="c3a5">\[x\] 800 x 400 pixels</span>
 -   <span id="4122">\[ \] 400 x 200 pixels</span>
 
-#### Q59. In Chrome’s Developer Tools view, where are the default styles listed?
+#### Q59. In Chrome's Developer Tools view, where are the default styles listed?
 
 -   <span id="51e1">\[x\] under the User Agent Stylesheet section on the right</span>
 -   <span id="3df4">\[ \] in the third panel under the Layout tab</span>
@@ -713,7 +713,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="9e01">\[ \] document structure</span>
 -   <span id="5a6d">\[x\] content appearance</span>
 
-#### Q61. What is the recommended name you should give the folder that holds your project’s images?
+#### Q61. What is the recommended name you should give the folder that holds your project's images?
 
 -   <span id="fb5f">\[x\] images</span>
 -   <span id="f81e">\[ \] \#images</span>
@@ -878,16 +878,16 @@ Plus Css Cheat Sheet (82 questions total)
 #### Q76. What is one disadvantage of using a web font service?
 
 -   <span id="e9b4">\[ \] It requires you to host font files on your own server.</span>
--   <span id="5b98">\[ \] It uses more of your site’s bandwidth.</span>
+-   <span id="5b98">\[ \] It uses more of your site's bandwidth.</span>
 -   <span id="5943">\[ \] It offers a narrow selection of custom fonts.</span>
 -   <span id="5bf8">\[x\] It is not always a free service.</span>
 
 #### Q77. How do you add Google fonts to your project?
 
 -   <span id="9e31">\[x\] by using an HTML link element referring to a Google-provided CSS</span>
--   <span id="b503">\[ \] by embedding the font file directly into the project’s master JavaScript</span>
+-   <span id="b503">\[ \] by embedding the font file directly into the project's master JavaScript</span>
 -   <span id="cbc6">\[ \] by using a Google-specific CSS syntax that directly links to the desired font file</span>
--   <span id="32c6">\[ \] by using a standard font-face CSS definition sourcing a font file on Google’s servers</span>
+-   <span id="32c6">\[ \] by using a standard font-face CSS definition sourcing a font file on Google's servers</span>
 
 #### Q78. which choice is not a valid color?
 

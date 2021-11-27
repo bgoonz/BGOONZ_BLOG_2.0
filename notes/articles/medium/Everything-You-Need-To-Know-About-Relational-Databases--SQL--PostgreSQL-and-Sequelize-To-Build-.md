@@ -85,7 +85,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Create a user for the relational database management system**
 
 -   <span id="f4dc">Within psql, we can create a user with the CREATE USER {username} {WITH options} command.</span>
--   <span id="7eda">The most common options we ll want to use are WITH PASSWORD 'mypassword’ to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.</span>
+-   <span id="7eda">The most common options we ll want to use are WITH PASSWORD 'mypassword' to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.</span>
 
 **Create a database in the database management system**
 
@@ -231,7 +231,7 @@ FROM friends;
 -   <span id="70eb">WHERE {column} = {value} provides an exact comparison</span>
 -   <span id="79bf">WHERE {column} IN ({value1}, {value2}, {value3}, etc.) matches any provided value in the IN statement. We can make this more complex by having a subquery inside of the parentheses, having our column match any values within the returned results.</span>
 -   <span id="150e">WHERE {column} BETWEEN {value1} AND {value2} can check for matches between two values (numeric ranges)</span>
--   <span id="9077">WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE '%Shepherd’, which will match any breed that ends in Shepherd</span>
+-   <span id="9077">WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE '%Shepherd', which will match any breed that ends in Shepherd</span>
 -   <span id="4a87">The NOT operator can also be used for negation in the checks.</span>
 -   <span id="db35">Mathematical operators can be used when performing calculations or comparisons within a query as well, such as</span>
 
@@ -272,16 +272,16 @@ FROM friends;
 
     INSERT INTO friends (id, first_name, last_name)
     VALUES
-    (DEFAULT, 'Amy’, 'Pond’);
+    (DEFAULT, 'Amy', 'Pond');
 
 — Alternatively, we can leave it out completely, since the default value will be used if none is provided
 
     INSERT INTO friends (first_name, last_name)
     VALUES
-    ('Rose’, 'Tyler’),
-    ('Martha’, 'Jones’),
-    ('Donna’, 'Noble’),
-    ('River’, 'Song’);
+    ('Rose', 'Tyler'),
+    ('Martha', 'Jones'),
+    ('Donna', 'Noble'),
+    ('River', 'Song');
 
 **How to use an UPDATE statement to update data in a table**
 
@@ -295,7 +295,7 @@ FROM friends;
     UPDATE
     pets
     SET
-    (name, breed) = ('Floofy’, 'Fluffy Dog Breed’) WHERE id = 4;
+    (name, breed) = ('Floofy', 'Fluffy Dog Breed') WHERE id = 4;
 
 **How to use a DELETE statement to remove data from a table**
 
@@ -308,7 +308,7 @@ FROM friends;
     DELETE FROM
     pets
     WHERE
-    name IN ('Floofy’, 'Doggo’) OR id = 3;
+    name IN ('Floofy', 'Doggo') OR id = 3;
 
 **How to use a seed file to populate data in a database**
 
@@ -342,20 +342,20 @@ FROM friends;
 
     BEGIN;
     UPDATE accounts SET balance = balance — 100.00
-    WHERE name = 'Alice’;
+    WHERE name = 'Alice';
     UPDATE branches SET balance = balance — 100.00
-    WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Alice’);
+    WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Alice');
     UPDATE accounts SET balance = balance + 100.00
-    WHERE name = 'Bob’;
+    WHERE name = 'Bob';
     UPDATE branches SET balance = balance + 100.00
-    WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Bob’);
+    WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Bob');
     COMMIT;
 
     BEGIN;
     EXPLAIN ANALYZE
     UPDATE cities
-    SET city = 'New York City’
-    WHERE city = 'New York’;
+    SET city = 'New York City'
+    WHERE city = 'New York';
     ROLLBACK;
 
 **How to apply indexes to tables to improve performance**
@@ -392,11 +392,11 @@ FROM friends;
 
 <!-- -->
 
-    const { Pool } = require('pg’);
+    const { Pool } = require('pg');
 
 // If we need to specify a username, password, or database, we can do so when we create a Pool instance, otherwise the default values for logging in to psql are used:
 
-    const pool = new Pool({ username: '<<username>>’, password: '<<password>>’, database: '<<database>>’})
+    const pool = new Pool({ username: '<<username>>', password: '<<password>>', database: '<<database>>'})
 
 -   <span id="a267">The query method on the Pool instance will allow us to execute a SQL query on our database. We can pass in a string that represents the query we want to run</span>
 
@@ -455,7 +455,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="8052">npx sequelize-cli init</span>
 -   <span id="d03e">Create a database user with credentials we will use for the project</span>
 -   <span id="bbc8">psql</span>
--   <span id="caca">CREATE USER example_user WITH PASSWORD 'badpassword’</span>
+-   <span id="caca">CREATE USER example_user WITH PASSWORD 'badpassword'</span>
 -   <span id="72ab">Here we can also create databases since we are already in postgres</span>
 
 <!-- -->
@@ -467,7 +467,7 @@ pool.end(); // invoking end() will close our connection to the database
     CREATE DATABASE example_app_production WITH OWNER example_user
 
 -   <span id="ae27">If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:</span>
--   <span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD 'badpassword’ CREATEDB</span>
+-   <span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD 'badpassword' CREATEDB</span>
 -   <span id="45ac">In terminal: npx sequelize-cli db:create</span>
 -   <span id="cff2">Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):</span>
 
@@ -511,7 +511,7 @@ pool.end(); // invoking end() will close our connection to the database
     npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”
 
 -   <span id="bc91">Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.</span>
--   <span id="4d04">Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: 'Categories’ }.</span>
+-   <span id="4d04">Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: 'Categories' }.</span>
 -   <span id="ca79">After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands to actually create the table.</span>
 
 <!-- -->
@@ -552,8 +552,8 @@ pool.end(); // invoking end() will close our connection to the database
 
 -   <span id="94ef">Another key part of the model file is setting up our associations. We can use the belongsTo, hasMany, and belongsToMany methods to set up model-level associations. Doing so is what creates the helpful functionality like addOwner that we saw in the pets example, a function that automatically generates the SQL necessary to create a petOwner record and supplies the appropriate petId and ownerId.</span>
 -   <span id="e5fc">In a one-to-many association, we need to have a belongsTo association on the many side, and a hasMany association on the one side:</span>
--   <span id="21c2">Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId’ });</span>
--   <span id="6e6b">Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId’ });</span>
+-   <span id="21c2">Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId' });</span>
+-   <span id="6e6b">Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId' });</span>
 -   <span id="7d6a">In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a columnMapping object to show the association more clearly:</span>
 
 <!-- -->
@@ -564,13 +564,13 @@ pool.end(); // invoking end() will close our connection to the database
 
     const columnMapping = {
 
-    through: 'PetOwner’,
+    through: 'PetOwner',
 
     // joins table
 
-    otherKey: 'petId’,
+    otherKey: 'petId',
 
-    // key that connects to other table we have a many association with foreignKey: 'ownerId’
+    // key that connects to other table we have a many association with foreignKey: 'ownerId'
 
     // our foreign key in the joins table
 
@@ -582,15 +582,15 @@ pool.end(); // invoking end() will close our connection to the database
 
     // To connect this Pet to an Owner through the PetOwner
 
-    const columnMapping = { through: 'PetOwner’,
+    const columnMapping = { through: 'PetOwner',
 
     // joins table
 
-    otherKey: 'ownerId’,
+    otherKey: 'ownerId',
 
     // key that connects to other table we have a many association with
 
-    foreignKey: 'petId’
+    foreignKey: 'petId'
 
     // our foreign key in the joins table
 
@@ -627,13 +627,13 @@ pool.end(); // invoking end() will close our connection to the database
 
     // If we want to specify what to remove:
     down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('<<TableName>>’, {
+    return queryInterface.bulkDelete('<<TableName>>', {
     field1: [value1a, value1b, value1c], //…etc.
     });
     };
     // If we want to remove everything from the table:
     down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('<<TableName>>’, null, {});
+    return queryInterface.bulkDelete('<<TableName>>', null, {});
     };
 
 -   <span id="c9e3">Running npx sequelize-cli db:seed:all will run all of our seeder files.</span>
@@ -672,7 +672,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="606a">When we have a reference to an instance of a model, we can delete that record by using destroy</span>
 -   <span id="be30">const cat = await Cat.findByPk(1); // Remove the Markov record. await cat.destroy();</span>
 -   <span id="0b7f">We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all records that match that query</span>
--   <span id="5f9f">await Cat.destroy({ where: { specialSkill: 'jumping’ } });</span>
+-   <span id="5f9f">await Cat.destroy({ where: { specialSkill: 'jumping' } });</span>
 
 **How to query using Sequelize**
 
@@ -1221,7 +1221,7 @@ If you only want to find one where there is chicken in the ingredients list, you
 
 You have two options when you want to create a row in a table (where you are saving one record into the table). You can either `.build` the row and then `.save` it, or you can `.create` it. Either way it does the same thing. Here are some examples:
 
-Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
+Let's say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
 
     const newRecipe = await Recipe.build({ title: 'Chicken Noodle Soup' });
 
@@ -1257,7 +1257,7 @@ The documentation for building, saving, creating, updating and destroying is lin
 
 #### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

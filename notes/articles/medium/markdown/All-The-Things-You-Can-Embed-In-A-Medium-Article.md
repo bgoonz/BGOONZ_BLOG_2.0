@@ -1,12 +1,12 @@
 # All The Things You Can Embed In A Medium Article
 
-I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will…
+I have this innate desire to make everything available all in one place and it's usually an unnecessary waste of time… but here I will…
 
 ---
 
 ### All The Things You Can Embed In A Medium Article
 
-#### I have this innate desire to make everything available all in one place and it’s usually an unnecessary waste of time… but here I will conduct and 'experiment’ where I intentionally indulge that tendency.
+#### I have this innate desire to make everything available all in one place and it's usually an unnecessary waste of time… but here I will conduct and 'experiment' where I intentionally indulge that tendency.
 
 Here you can see in just the first frame of my blog site 5 different embedded widgets that I inject onto nearly every page of the site using javascript to append my widgets to various anchor points in the html.
 
@@ -20,7 +20,7 @@ Here you can see in just the first frame of my blog site 5 different embedded wi
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>### 1.) CodePen:
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*ub0xEha5Nrq60qU1FspjAQ.png" class="graf-image" /></figure><a href="https://codepen.io/bgoonz/pen/poPOqEO" class="markup--anchor markup--pullquote-anchor">For this next inclusion I will kill two birds with one stone… I will embed a CodePen…who’s contents are an embedded version of my twitter feed…</a>
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*ub0xEha5Nrq60qU1FspjAQ.png" class="graf-image" /></figure><a href="https://codepen.io/bgoonz/pen/poPOqEO" class="markup--anchor markup--pullquote-anchor">For this next inclusion I will kill two birds with one stone… I will embed a CodePen…who's contents are an embedded version of my twitter feed…</a>
 
 #### If you wanna get really meta about it you can also embed your medium articles within a medium article…
 

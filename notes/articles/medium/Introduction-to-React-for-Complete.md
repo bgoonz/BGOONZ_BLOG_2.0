@@ -18,11 +18,11 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 > _because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX_
 
-> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code’ }_
+> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code' }_
 
 > _JSX code must be compiled into JavaScript_
 
-> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root’))_
+> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root'))_
 
 > _One important thing to know about nested JSX is that it must return a single element._
 
@@ -36,7 +36,7 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
 
-React has a few different kinds of components, but we’ll start with `React.Component` subclasses:
+React has a few different kinds of components, but we'll start with `React.Component` subclasses:
 
     class ShoppingList extends React.Component {
       render() {
@@ -55,7 +55,7 @@ React has a few different kinds of components, but we’ll start with `React.Com
 
     // Example usage: <ShoppingList name="Mark" />
 
-We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
 
 Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for “properties”), and returns a hierarchy of views to display via the `render` method.
 
@@ -100,7 +100,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ---
 
-> _With React, we can render this JSX directly to the HTML DOM using React’s rendering API known as ReactDOM._
+> _With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM._
 
 > _ReactDOM offers a simple method to render React elements to the DOM which looks like this:_
 
@@ -146,7 +146,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _In HTML, almost all tags have both an opening and closing tag:_ `<div></div>;` _the closing tag always has a forward slash before the tag name that you are closing._
 
-> _there are special instances in HTML called “self-closing tags”, or tags that don’t require both an opening and closing tag before another tag can start._
+> _there are special instances in HTML called “self-closing tags”, or tags that don't require both an opening and closing tag before another tag can start._
 
 > _For example the line-break tag can be written as_ `<br>` _or as_ `<br />,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
 
@@ -155,7 +155,7 @@ The code editor has a JSX element similar to what you created in the last challe
 > A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
-### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don’t change any of the content — you only need to close tags where they are needed.
+### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
 
     const JSX = (
       <div>
@@ -189,7 +189,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 -   <span id="b514">React requires your function name to begin with a capital letter.</span>
 
-> _Here’s an example of a stateless functional component that assigns an HTML class in JSX:_
+> _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
 
     // After being transpiled, the <div> will have a CSS class of 'customClass'
     const DemoComponent = function() {
@@ -248,7 +248,7 @@ Note: The text is considered a child of the div element, so you will not be able
 
 > _It uses super() to call the constructor of the parent class, in this case React.Component_
 
-> _The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component’s constructor with super, and pass props to both._
+> _The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component's constructor with super, and pass props to both._
 
 > _This makes sure the component is initialized properly. For now, know that it is standard for this code to be included._
 

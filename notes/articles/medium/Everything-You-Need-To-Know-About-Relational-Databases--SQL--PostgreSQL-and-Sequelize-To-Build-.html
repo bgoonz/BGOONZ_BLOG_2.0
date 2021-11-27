@@ -354,7 +354,7 @@
                                     Within psql, we can create a user with the CREATE USER {username} {WITH options} command.
                                 </li>
                                 <li name="7eda" id="7eda" class="graf graf--li graf-after--li">
-                                    The most common options we ll want to use are WITH PASSWORD 'mypassword’ to provide a password for the user we are creating,
+                                    The most common options we ll want to use are WITH PASSWORD 'mypassword' to provide a password for the user we are creating,
                                     CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.
                                 </li>
                             </ul>
@@ -572,7 +572,7 @@
                                 </li>
                                 <li name="9077" id="9077" class="graf graf--li graf-after--li">
                                     WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as
-                                    WHERE breed LIKE '%Shepherd’, which will match any breed that ends in Shepherd
+                                    WHERE breed LIKE '%Shepherd', which will match any breed that ends in Shepherd
                                 </li>
                                 <li name="4a87" id="4a87" class="graf graf--li graf-after--li">
                                     The NOT operator can also be used for negation in the checks.
@@ -638,7 +638,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 name="db9b"
                                 id="db9b"
                                 class="graf graf--pre graf-after--p"
-                            >INSERT INTO friends (id, first_name, last_name)<br>VALUES<br>(DEFAULT, 'Amy’, 'Pond’);</pre>
+                            >INSERT INTO friends (id, first_name, last_name)<br>VALUES<br>(DEFAULT, 'Amy', 'Pond');</pre>
                             <p name="b50b" id="b50b" class="graf graf--p graf-after--pre">
                                 — Alternatively, we can leave it out completely, since the default value will be used if none is provided
                             </p>
@@ -646,7 +646,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 name="a343"
                                 id="a343"
                                 class="graf graf--pre graf-after--p"
-                            >INSERT INTO friends (first_name, last_name)<br>VALUES<br>('Rose’, 'Tyler’),<br>('Martha’, 'Jones’),<br>('Donna’, 'Noble’),<br>('River’, 'Song’);</pre>
+                            >INSERT INTO friends (first_name, last_name)<br>VALUES<br>('Rose', 'Tyler'),<br>('Martha', 'Jones'),<br>('Donna', 'Noble'),<br>('River', 'Song');</pre>
                             <p name="f87b" id="f87b" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">How to use an UPDATE statement to update data in a table</strong>
                             </p>
@@ -671,7 +671,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 name="2a61"
                                 id="2a61"
                                 class="graf graf--pre graf-after--p"
-                            >UPDATE<br>pets<br>SET<br>(name, breed) = ('Floofy’, 'Fluffy Dog Breed’) WHERE id = 4;</pre>
+                            >UPDATE<br>pets<br>SET<br>(name, breed) = ('Floofy', 'Fluffy Dog Breed') WHERE id = 4;</pre>
                             <p name="b7ca" id="b7ca" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">How to use a DELETE statement to remove data from a table</strong>
                             </p>
@@ -694,7 +694,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 name="bd4b"
                                 id="bd4b"
                                 class="graf graf--pre graf-after--p"
-                            >DELETE FROM<br>pets<br>WHERE<br>name IN ('Floofy’, 'Doggo’) OR id = 3;</pre>
+                            >DELETE FROM<br>pets<br>WHERE<br>name IN ('Floofy', 'Doggo') OR id = 3;</pre>
                             <p name="d846" id="d846" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">How to use a seed file to populate data in a database</strong>
                             </p>
@@ -775,12 +775,12 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 name="de92"
                                 id="de92"
                                 class="graf graf--pre graf-after--li"
-                            >BEGIN;<br>UPDATE accounts SET balance = balance — 100.00<br>WHERE name = 'Alice’;<br>UPDATE branches SET balance = balance — 100.00<br>WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Alice’);<br>UPDATE accounts SET balance = balance + 100.00<br>WHERE name = 'Bob’;<br>UPDATE branches SET balance = balance + 100.00<br>WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Bob’);<br>COMMIT;</pre>
+                            >BEGIN;<br>UPDATE accounts SET balance = balance — 100.00<br>WHERE name = 'Alice';<br>UPDATE branches SET balance = balance — 100.00<br>WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Alice');<br>UPDATE accounts SET balance = balance + 100.00<br>WHERE name = 'Bob';<br>UPDATE branches SET balance = balance + 100.00<br>WHERE name = (SELECT branch_name FROM accounts WHERE name = 'Bob');<br>COMMIT;</pre>
                             <pre
                                 name="d801"
                                 id="d801"
                                 class="graf graf--pre graf-after--pre"
-                            >BEGIN;<br>EXPLAIN ANALYZE<br>UPDATE cities<br>SET city = 'New York City’<br>WHERE city = 'New York’;<br>ROLLBACK;</pre>
+                            >BEGIN;<br>EXPLAIN ANALYZE<br>UPDATE cities<br>SET city = 'New York City'<br>WHERE city = 'New York';<br>ROLLBACK;</pre>
                             <p name="fdfe" id="fdfe" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">How to apply indexes to tables to improve performance</strong>
                             </p>
@@ -841,13 +841,13 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                     closes the connection after a query).
                                 </li>
                             </ul>
-                            <pre name="a04e" id="a04e" class="graf graf--pre graf-after--li">const { Pool } = require('pg’);</pre>
+                            <pre name="a04e" id="a04e" class="graf graf--pre graf-after--li">const { Pool } = require('pg');</pre>
                             <p name="be64" id="be64" class="graf graf--p graf-after--pre">
                                 // If we need to specify a username, password, or database, we can do so when we create a Pool instance, otherwise the default
                                 values for logging in to psql are used:
                             </p>
                             <pre name="2cb8" id="2cb8" class="graf graf--pre graf-after--p">
-const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;’, password: '&lt;&lt;password&gt;&gt;’, database: '&lt;&lt;database&gt;&gt;’})</pre
+const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;', password: '&lt;&lt;password&gt;&gt;', database: '&lt;&lt;database&gt;&gt;'})</pre
                             >
                             <ul class="postList">
                                 <li name="a267" id="a267" class="graf graf--li graf-after--pre">
@@ -920,7 +920,7 @@ const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;’, password: '&lt;&
                                     Create a database user with credentials we will use for the project
                                 </li>
                                 <li name="bbc8" id="bbc8" class="graf graf--li graf-after--li">psql</li>
-                                <li name="caca" id="caca" class="graf graf--li graf-after--li">CREATE USER example_user WITH PASSWORD 'badpassword’</li>
+                                <li name="caca" id="caca" class="graf graf--li graf-after--li">CREATE USER example_user WITH PASSWORD 'badpassword'</li>
                                 <li name="72ab" id="72ab" class="graf graf--li graf-after--li">
                                     Here we can also create databases since we are already in postgres
                                 </li>
@@ -939,7 +939,7 @@ CREATE DATABASE example_app_production WITH OWNER example_user</pre
                                     attempt to make the databases with this user. This other approach would look like:
                                 </li>
                                 <li name="f6a3" id="f6a3" class="graf graf--li graf-after--li">
-                                    In psql: CREATE USER example_user WITH PASSWORD 'badpassword’ CREATEDB
+                                    In psql: CREATE USER example_user WITH PASSWORD 'badpassword' CREATEDB
                                 </li>
                                 <li name="45ac" id="45ac" class="graf graf--li graf-after--li">In terminal: npx sequelize-cli db:create</li>
                                 <li name="cff2" id="cff2" class="graf graf--li graf-after--li">
@@ -975,7 +975,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                     Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in
                                     database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits
                                     to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: {
-                                    model: 'Categories’ }.
+                                    model: 'Categories' }.
                                 </li>
                                 <li name="ca79" id="ca79" class="graf graf--li graf-after--li">
                                     After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands
@@ -1028,10 +1028,10 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                     side:
                                 </li>
                                 <li name="21c2" id="21c2" class="graf graf--li graf-after--li">
-                                    Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId’ });
+                                    Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId' });
                                 </li>
                                 <li name="6e6b" id="6e6b" class="graf graf--li graf-after--li">
-                                    Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId’ });
+                                    Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId' });
                                 </li>
                                 <li name="7d6a" id="7d6a" class="graf graf--li graf-after--li">
                                     In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a
@@ -1041,24 +1041,24 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                             <pre name="7983" id="7983" class="graf graf--pre graf-after--li">// In our Owner model</pre>
                             <pre name="d349" id="d349" class="graf graf--pre graf-after--pre">// To connect this Owner to a Pet through the PetOwner</pre>
                             <pre name="9424" id="9424" class="graf graf--pre graf-after--pre">const columnMapping = {</pre>
-                            <pre name="efeb" id="efeb" class="graf graf--pre graf-after--pre">through: 'PetOwner’,</pre>
+                            <pre name="efeb" id="efeb" class="graf graf--pre graf-after--pre">through: 'PetOwner',</pre>
                             <pre name="7edd" id="7edd" class="graf graf--pre graf-after--pre">// joins table</pre>
-                            <pre name="5397" id="5397" class="graf graf--pre graf-after--pre">otherKey: 'petId’,</pre>
+                            <pre name="5397" id="5397" class="graf graf--pre graf-after--pre">otherKey: 'petId',</pre>
                             <pre name="433e" id="433e" class="graf graf--pre graf-after--pre">
-// key that connects to other table we have a many association with foreignKey: 'ownerId’</pre
+// key that connects to other table we have a many association with foreignKey: 'ownerId'</pre
                             >
                             <pre name="6730" id="6730" class="graf graf--pre graf-after--pre">// our foreign key in the joins table</pre>
                             <pre name="ed2d" id="ed2d" class="graf graf--pre graf-after--pre">}</pre>
                             <pre name="cb1c" id="cb1c" class="graf graf--pre graf-after--pre">Owner.belongsToMany( models.Pet, columnMapping );</pre>
                             <pre name="b587" id="b587" class="graf graf--pre graf-after--pre">// In our Pet model</pre>
                             <pre name="d7ac" id="d7ac" class="graf graf--pre graf-after--pre">// To connect this Pet to an Owner through the PetOwner</pre>
-                            <pre name="4e21" id="4e21" class="graf graf--pre graf-after--pre">const columnMapping = { through: 'PetOwner’,</pre>
+                            <pre name="4e21" id="4e21" class="graf graf--pre graf-after--pre">const columnMapping = { through: 'PetOwner',</pre>
                             <pre name="5576" id="5576" class="graf graf--pre graf-after--pre">// joins table</pre>
-                            <pre name="dfb9" id="dfb9" class="graf graf--pre graf-after--pre">otherKey: 'ownerId’,</pre>
+                            <pre name="dfb9" id="dfb9" class="graf graf--pre graf-after--pre">otherKey: 'ownerId',</pre>
                             <pre name="dc3a" id="dc3a" class="graf graf--pre graf-after--pre">
 // key that connects to other table we have a many association with</pre
                             >
-                            <pre name="2493" id="2493" class="graf graf--pre graf-after--pre">foreignKey: 'petId’</pre>
+                            <pre name="2493" id="2493" class="graf graf--pre graf-after--pre">foreignKey: 'petId'</pre>
                             <pre name="150c" id="150c" class="graf graf--pre graf-after--pre">// our foreign key in the joins table</pre>
                             <pre name="65b1" id="65b1" class="graf graf--pre graf-after--pre">}</pre>
                             <pre name="f05d" id="f05d" class="graf graf--pre graf-after--pre">Pet.belongsToMany( models.Owner, columnMapping );</pre>
@@ -1094,7 +1094,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                 name="d6ae"
                                 id="d6ae"
                                 class="graf graf--pre graf-after--li"
-                            >// If we want to specify what to remove:<br>down: (queryInterface, Sequelize) =&gt; {<br>return queryInterface.bulkDelete('&lt;&lt;TableName&gt;&gt;’, {<br>field1: [value1a, value1b, value1c], //…etc.<br>});<br>};<br>// If we want to remove everything from the table:<br>down: (queryInterface, Sequelize) =&gt; {<br>return queryInterface.bulkDelete('&lt;&lt;TableName&gt;&gt;’, null, {});<br>};</pre>
+                            >// If we want to specify what to remove:<br>down: (queryInterface, Sequelize) =&gt; {<br>return queryInterface.bulkDelete('&lt;&lt;TableName&gt;&gt;', {<br>field1: [value1a, value1b, value1c], //…etc.<br>});<br>};<br>// If we want to remove everything from the table:<br>down: (queryInterface, Sequelize) =&gt; {<br>return queryInterface.bulkDelete('&lt;&lt;TableName&gt;&gt;', null, {});<br>};</pre>
                             <ul class="postList">
                                 <li name="c9e3" id="c9e3" class="graf graf--li graf-after--pre">
                                     Running npx sequelize-cli db:seed:all will run all of our seeder files.
@@ -1140,7 +1140,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                     We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all
                                     records that match that query
                                 </li>
-                                <li name="5f9f" id="5f9f" class="graf graf--li graf-after--li">await Cat.destroy({ where: { specialSkill: 'jumping’ } });</li>
+                                <li name="5f9f" id="5f9f" class="graf graf--li graf-after--li">await Cat.destroy({ where: { specialSkill: 'jumping' } });</li>
                             </ul>
                             <p name="18bd" id="18bd" class="graf graf--p graf-after--li">
                                 <strong class="markup--strong markup--p-strong">How to query using Sequelize</strong>
@@ -1578,7 +1578,7 @@ const { Recipe, Ingredient, Instruction, MeasurementUnit } = require(&#39;./mode
                                 <code class="markup--code markup--p-code">.create</code> it. Either way it does the same thing. Here are some examples:
                             </p>
                             <p name="1028" id="1028" class="graf graf--p graf-after--p">
-                                Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
+                                Let's say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
                             </p>
                             <pre name="537f" id="537f" class="graf graf--pre graf-after--p">
 const newRecipe = await Recipe.build({ title: &#39;Chicken Noodle Soup&#39; });</pre
@@ -1666,7 +1666,7 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz’s gists</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you
                                         need…</em

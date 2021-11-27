@@ -111,7 +111,7 @@
                                 />
                             </figure>
                             <p name="dd02" id="dd02" class="graf graf--p graf-after--figure">
-                                What’s interesting about them is that the data survives a page refresh (for
+                                What's interesting about them is that the data survives a page refresh (for
                                 <code class="markup--code markup--p-code">sessionStorage</code>) and even a full browser restart (for
                                 <code class="markup--code markup--p-code">localStorage</code>). We&#39;ll see that very soon.
                             </p>
@@ -131,11 +131,11 @@
                                     browsers allow at least 2 megabytes of data (or more) and have settings to configure that.
                                 </li>
                                 <li name="bff4" id="bff4" class="graf graf--li graf-after--li">
-                                    Also unlike cookies, the server can’t manipulate storage objects via HTTP headers. Everything’s done in JavaScript.
+                                    Also unlike cookies, the server can't manipulate storage objects via HTTP headers. Everything's done in JavaScript.
                                 </li>
                                 <li name="ac8e" id="ac8e" class="graf graf--li graf-after--li">
                                     The storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer
-                                    different storage objects, they can’t access data from each other.
+                                    different storage objects, they can't access data from each other.
                                 </li>
                             </ul>
                             <p name="f76a" id="f76a" class="graf graf--p graf-after--li">Both storage objects provide same methods and properties:</p>
@@ -160,12 +160,12 @@
                                 </li>
                             </ul>
                             <p name="27cb" id="27cb" class="graf graf--p graf-after--li">
-                                As you can see, it’s like a <code class="markup--code markup--p-code">Map</code> collection (<code
+                                As you can see, it's like a <code class="markup--code markup--p-code">Map</code> collection (<code
                                     class="markup--code markup--p-code"
                                     >setItem/getItem/removeItem</code
                                 >), but also allows access by index with <code class="markup--code markup--p-code">key(index)</code>.
                             </p>
-                            <p name="58c8" id="58c8" class="graf graf--p graf-after--p">Let’s see how it works.</p>
+                            <p name="58c8" id="58c8" class="graf graf--p graf-after--p">Let's see how it works.</p>
                             <h3 name="bb79" id="bb79" class="graf graf--h3 graf-after--p">localStorage demo</h3>
                             <p name="fd57" id="fd57" class="graf graf--p graf-after--h3">
                                 The main features of <code class="markup--code markup--p-code">localStorage</code> are:
@@ -197,7 +197,7 @@
                             <pre name="8dfe" id="8dfe" class="graf graf--pre graf-after--pre">// get key<br>alert( localStorage.test ); // 2</pre>
                             <pre name="cbe4" id="cbe4" class="graf graf--pre graf-after--pre">// remove key<br>delete localStorage.test;</pre>
                             <p name="16b3" id="16b3" class="graf graf--p graf-after--pre">
-                                That’s allowed for historical reasons, and mostly works, but generally not recommended, because:
+                                That's allowed for historical reasons, and mostly works, but generally not recommended, because:
                             </p>
                             <ol class="postList">
                                 <li name="c7fb" id="c7fb" class="graf graf--li graf-after--p">
@@ -208,17 +208,17 @@
                                 </li>
                             </ol>
                             <pre name="eec3" id="eec3" class="graf graf--pre graf-after--li">
-let key = 'length’; localStorage[key] = 5; // Error, can’t assign length</pre
+let key = 'length'; localStorage[key] = 5; // Error, can't assign length</pre
                             >
                             <ol class="postList">
                                 <li name="3020" id="3020" class="graf graf--li graf-after--pre">
-                                    There’s a <code class="markup--code markup--li-code">storage</code> event, it triggers when we modify the data. That event
+                                    There's a <code class="markup--code markup--li-code">storage</code> event, it triggers when we modify the data. That event
                                     does not happen for object-like access. We&#39;ll see that later in this chapter.
                                 </li>
                             </ol>
                             <h3 name="8a4c" id="8a4c" class="graf graf--h3 graf-after--li">Looping over keys</h3>
                             <p name="0479" id="0479" class="graf graf--p graf-after--h3">
-                                As we’ve seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+                                As we've seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
                             </p>
                             <p name="fae3" id="fae3" class="graf graf--p graf-after--p">Unfortunately, storage objects are not iterable.</p>
                             <p name="4f5e" id="4f5e" class="graf graf--p graf-after--p">One way is to loop over them as over an array:</p>
@@ -232,7 +232,7 @@ let key = 'length’; localStorage[key] = 5; // Error, can’t assign length</pr
                                 objects.
                             </p>
                             <p name="ee95" id="ee95" class="graf graf--p graf-after--p">
-                                It iterates over keys, but also outputs few built-in fields that we don’t need:
+                                It iterates over keys, but also outputs few built-in fields that we don't need:
                             </p>
                             <pre
                                 name="04f8"
@@ -294,7 +294,7 @@ sessionStorage.user = JSON.stringify({name: &quot;John&quot;});</pre
                                 The <code class="markup--code markup--p-code">sessionStorage</code> object is used much less often than
                                 <code class="markup--code markup--p-code">localStorage</code>.
                             </p>
-                            <p name="f724" id="f724" class="graf graf--p graf-after--p">Properties and methods are the same, but it’s much more limited:</p>
+                            <p name="f724" id="f724" class="graf graf--p graf-after--p">Properties and methods are the same, but it's much more limited:</p>
                             <ul class="postList">
                                 <li name="94a1" id="94a1" class="graf graf--li graf-after--p">
                                     The <code class="markup--code markup--li-code">sessionStorage</code> exists only within the current browser tab.
@@ -309,7 +309,7 @@ sessionStorage.user = JSON.stringify({name: &quot;John&quot;});</pre
                                     The data survives page refresh, but not closing/opening the tab.
                                 </li>
                             </ul>
-                            <p name="2d4e" id="2d4e" class="graf graf--p graf-after--li">Let’s see that in action.</p>
+                            <p name="2d4e" id="2d4e" class="graf graf--p graf-after--li">Let's see that in action.</p>
                             <p name="96e4" id="96e4" class="graf graf--p graf-after--p">Run this code…</p>
                             <pre name="6523" id="6523" class="graf graf--pre graf-after--p">sessionStorage.setItem(&#39;test&#39;, 1);</pre>
                             <p name="c453" id="c453" class="graf graf--p graf-after--pre">…Then refresh the page. Now you can still get the data:</p>
@@ -321,7 +321,7 @@ alert( sessionStorage.getItem(&#39;test&#39;) ); // after refresh: 1</pre
                                 <code class="markup--code markup--p-code">null</code>, meaning &quot;nothing found&quot;.
                             </p>
                             <p name="05f8" id="05f8" class="graf graf--p graf-after--p">
-                                That’s exactly because <code class="markup--code markup--p-code">sessionStorage</code> is bound not only to the origin, but also
+                                That's exactly because <code class="markup--code markup--p-code">sessionStorage</code> is bound not only to the origin, but also
                                 to the browser tab. For that reason, <code class="markup--code markup--p-code">sessionStorage</code> is used sparingly.
                             </p>
                             <h3 name="f280" id="f280" class="graf graf--h3 graf-after--p">Storage event</h3>
@@ -370,7 +370,7 @@ alert( sessionStorage.getItem(&#39;test&#39;) ); // after refresh: 1</pre
                                 The important thing is: the event triggers on all <code class="markup--code markup--p-code">window</code> objects where the
                                 storage is accessible, except the one that caused it.
                             </p>
-                            <p name="3958" id="3958" class="graf graf--p graf-after--p">Let’s elaborate.</p>
+                            <p name="3958" id="3958" class="graf graf--p graf-after--p">Let's elaborate.</p>
                             <p name="16d7" id="16d7" class="graf graf--p graf-after--p">
                                 Imagine, you have two windows with the same site in each. So <code class="markup--code markup--p-code">localStorage</code> is
                                 shared between them.
@@ -407,7 +407,7 @@ alert( sessionStorage.getItem(&#39;test&#39;) ); // after refresh: 1</pre
                                 >
                             </p>
                             <p name="264a" id="264a" class="graf graf--p graf-after--p">
-                                Modern browsers also support Broadcast channel API, the special API for same-origin inter-window communication, it’s more full
+                                Modern browsers also support Broadcast channel API, the special API for same-origin inter-window communication, it's more full
                                 featured, but less supported. There are libraries that polyfill that API, based on
                                 <code class="markup--code markup--p-code">localStorage</code>, that make it available everywhere.
                             </p>

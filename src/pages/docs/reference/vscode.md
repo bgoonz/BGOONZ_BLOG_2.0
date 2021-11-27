@@ -35,12 +35,12 @@ Commands:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*gcp0kkiWQY6qd1Y4qEcqxw.png" class="graf-image" /></figure>
 
-### Here’s a rudimentary static site I made that goes into more detail on the extensions I use…
+### Here's a rudimentary static site I made that goes into more detail on the extensions I use…
 
 <a href="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18"><strong>VSCodeExtensions</strong><br />
 5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app</a><a href="https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Here’s the repo it was deployed from:
+### Here's the repo it was deployed from:
 
 <a href="https://github.com/bgoonz/vscode-Extension-readmes" class="markup--anchor markup--p-anchor">https://github.com/bgoonz/vscode-Extension-readmes</a>
 
@@ -84,7 +84,7 @@ Commands:
 
 ### Tips-N-Tricks:
 
-Here is a selection of common features for editing code. If the keyboard shortcuts aren’t comfortable for you, consider installing a <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads" class="markup--anchor markup--p-anchor">keymap extension</a> for your old editor.
+Here is a selection of common features for editing code. If the keyboard shortcuts aren't comfortable for you, consider installing a <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads" class="markup--anchor markup--p-anchor">keymap extension</a> for your old editor.
 
 Tip: You can see recommended keymap extensions in the Extensions view with Ctrl+K Ctrl+M which filters the search to `@recommended:keymaps` .
 
@@ -140,7 +140,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 #### More
 
--   <span id="4dd9"><a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft’s tutorial on using VSCode for remote C/C++ development</a></span>
+-   <span id="4dd9"><a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft's tutorial on using VSCode for remote C/C++ development</a></span>
 
 ### C\#, ASP . NET and . NET Core
 
@@ -170,7 +170,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 -   <span id="e8d5"><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer" class="markup--anchor markup--li-anchor">Autoprefixer</a> Parse CSS, SCSS, LESS and add vendor prefixes automatically.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif" class="graf-image" /></figure>-   <span id="b1b1"><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" class="markup--anchor markup--li-anchor">Intellisense for CSS class names</a> — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React’s className attribute.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif" class="graf-image" /></figure>-   <span id="b1b1"><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" class="markup--anchor markup--li-anchor">Intellisense for CSS class names</a> — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React's className attribute.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif" class="graf-image" /></figure>### Groovy
 
@@ -250,7 +250,7 @@ Framework-specific:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*8oVrYuZ9kLRNSuBs.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji" class="markup--anchor markup--h3-anchor">Markdown Emoji</a>
 
-> _Adds emoji syntax support to VS Code’s built-in Markdown preview_
+> _Adds emoji syntax support to VS Code's built-in Markdown preview_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*rckUMIIZ9Jh7UE5q.png" class="graf-image" /></figure>
 
@@ -360,7 +360,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs" class="markup--anchor markup--h3-anchor">GistPad</a>
 
-> _Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It’s like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples._
+> _Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It's like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1MiBQ0u4Z8TPNaG9.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory" class="markup--anchor markup--h3-anchor">Git History</a>
 
@@ -372,7 +372,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=qezhu.gitlink" class="markup--anchor markup--h3-anchor">GitLink</a>
 
-> _GoTo current file’s online link in browser and Copy the link in clipboard._
+> _GoTo current file's online link in browser and Copy the link in clipboard._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Acgfn2rmhinuIPjk.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" class="markup--anchor markup--h3-anchor">GitLens</a>
 
@@ -388,7 +388,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor" class="markup--anchor markup--h3-anchor">GitHub Pull Request Monitor</a>
 
-> _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes._
+> _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it's time to merge or if someone requested changes._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow" class="markup--anchor markup--h3-anchor">GitLab Workflow</a>
 
@@ -416,7 +416,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zHffPsYWln4dxhus.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy" class="markup--anchor markup--h3-anchor">Jumpy</a>
 
-> _Provides fast cursor movement, inspired by Atom’s package of the same name._
+> _Provides fast cursor movement, inspired by Atom's package of the same name._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*uPOceUJ4eMjCP_Qt.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban" class="markup--anchor markup--h3-anchor">Kanban</a>
 
@@ -480,7 +480,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*XAb9jlOfGWlEaCEM.png" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack" class="markup--anchor markup--h3-anchor">Remote Development</a>
 
-> _Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code’s full feature set._
+> _Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code's full feature set._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*b6XEPh9PJzeWDB_z.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode" class="markup--anchor markup--h3-anchor">Remote VSCode</a>
 
@@ -522,7 +522,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Align your code by colon(:), assignment(=, +=, -=, \*=, /=) and arrow(=&gt; ). It has additional support for comma-first coding style and trailing comment._
 
-> _And it doesn’t require you to select what to be aligned, the extension will figure it out by itself._
+> _And it doesn't require you to select what to be aligned, the extension will figure it out by itself._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" class="markup--anchor markup--h3-anchor">Auto Close Tag</a>
 
@@ -590,7 +590,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > _Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!_
 
-> **_FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT’S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION._**
+> **_FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT'S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION._**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Oilwsi7EKGpCZb46.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad" class="markup--anchor markup--h3-anchor">CodeRoad</a>
 
@@ -654,7 +654,7 @@ These extensions provide slightly different sets of features. While the first on
 
 #### This one is super cool!
 
-> _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting._
+> _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project's files, inline reporting, code coverage and rich output formatting._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q9kp8EWZHTD0Hfru.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=sozercan.slack" class="markup--anchor markup--h3-anchor">Slack</a>
 
@@ -664,7 +664,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*9-xxjXzdPCh_46kZ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify" class="markup--anchor markup--h3-anchor">Spotify</a>
 
-_No real advantage over just using Spotify normally… it’s problematic enough in implementation that you won’t save any time using it. Further, it’s a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
+_No real advantage over just using Spotify normally… it's problematic enough in implementation that you won't save any time using it. Further, it's a bit tricky to configure … or at least it was the last time I tried syncing it with my spotify account._
 
 > _Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys._
 
@@ -678,7 +678,7 @@ _No real advantage over just using Spotify normally… it’s problematic enough
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker" class="markup--anchor markup--h3-anchor">Text Marker (Highlighter)</a>
 
-> _Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor’s search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy._
+> _Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor's search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn" class="markup--anchor markup--h3-anchor">ESDOC MDN</a>
 
@@ -688,7 +688,7 @@ _No real advantage over just using Spotify normally… it’s problematic enough
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xiUfWBsz8x8beY70.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*mMBU6d1iCkt5VHq2.gif" class="graf-image" /></figure>### Themes:
 
-In the interest of not making the reader scroll endlessly as I often do… I’ve made a separate post for that here. If you’ve made it this far, I thank you!
+In the interest of not making the reader scroll endlessly as I often do… I've made a separate post for that here. If you've made it this far, I thank you!
 
 <a href="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f"><strong>My Favorite VSCode <em>Themes</em></strong><br />
 Themesbryanguner.medium.com</a><a href="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -697,7 +697,7 @@ Themesbryanguner.medium.com</a><a href="https://bryanguner.medium.com/my-favorit
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

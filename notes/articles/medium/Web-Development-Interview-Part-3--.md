@@ -12,9 +12,9 @@ This installment is going to be the least technically demanding thus far however
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*dTDrkYZJYhASUP2TTknAgA.png" class="graf-image" /></figure>**… Speaking of which … stay tuned till the end of the article or skip down to it for a list of web development companies with reportedly fair hiring practices!**
 
-#### Here’s parts one and two; they’re both much more technical in nature than this one!
+#### Here's parts one and two; they're both much more technical in nature than this one!
 
-<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
+<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong><br />
 <em>Questions….Answers… and links to the missing pieces.</em>medium.com</a><a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443"><strong>Front End Interview Questions Part 2</strong><br />
@@ -24,37 +24,37 @@ This installment is going to be the least technically demanding thus far however
 
 ### 👋🏻 Behavioral & Cultural Interview Questions
 
-> _Software engineer interviewers ask behavioral/cultural questions to evaluate interviewee’s soft skills, and also to decide whether the candidate is a cultural fit. Make sure you’ve prepared great answers to these interview questions._
+> _Software engineer interviewers ask behavioral/cultural questions to evaluate interviewee's soft skills, and also to decide whether the candidate is a cultural fit. Make sure you've prepared great answers to these interview questions._
 
 > **_⚫_**Tell me about yourself
 
-> **_⚫====&gt;_**“Tell me about yourself” is one of the most common and important interview questions. However, it can be daunting, as it’s one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
+> **_⚫====&gt;_**“Tell me about yourself” is one of the most common and important interview questions. However, it can be daunting, as it's one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
 
-> **_⚫_**So how can you give a good answer without oversharing? To help you structure your answer, we’ll give you a rough guideline: start with a short introduction, talk about the present, recount the past, and mention your future goals.
+> **_⚫_**So how can you give a good answer without oversharing? To help you structure your answer, we'll give you a rough guideline: start with a short introduction, talk about the present, recount the past, and mention your future goals.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*E6ldmJAPG95McXVB" class="graf-image" /></figure>
 
 ---
 
-### What are some side projects you’re currently working on?
+### What are some side projects you're currently working on?
 
 _Current Experience_
 
-> **\*⚫\*\***Outline the role you’re currently in, your responsibilities, and your achievements (without reciting your resume)\*
+> **\*⚫\*\***Outline the role you're currently in, your responsibilities, and your achievements (without reciting your resume)\*
 
-> **\*⚫\*\***Highlight what you’re most passionate about (i.e. working with PMs to perfect product specs, discussing with colleagues about different tech stacks, helping others excel in their jobs and career)\*
+> **\*⚫\*\***Highlight what you're most passionate about (i.e. working with PMs to perfect product specs, discussing with colleagues about different tech stacks, helping others excel in their jobs and career)\*
 
-> **\*⚫\*\***Recount one or two job-related projects and/or situations that map onto the job you’re applying to (i.e. collaborating with designers, working with legacy code, implementing best-practices, introducing new tech stacks, mentoring your colleagues)\*
+> **\*⚫\*\***Recount one or two job-related projects and/or situations that map onto the job you're applying to (i.e. collaborating with designers, working with legacy code, implementing best-practices, introducing new tech stacks, mentoring your colleagues)\*
 
 ### Past Experience
 
-> **Now it’s time to highlight your skills a little:**
+> **Now it's time to highlight your skills a little:**
 
 > **_⚫_**Selectively highlight one high-impact (preferably quantifiable) project you were involved with for each job
 
 > **_⚫_**Highlight the hard and soft skills you learned from your past working experiences
 
-> **_⚫_**Emphasize the initiatives you took to improve the company’s work flow (i.e. propose new flow to streamline sprints) or your own skillsets (i.e. engaging in hackathon with colleagues or friends)
+> **_⚫_**Emphasize the initiatives you took to improve the company's work flow (i.e. propose new flow to streamline sprints) or your own skillsets (i.e. engaging in hackathon with colleagues or friends)
 
 ### Future Expectations
 
@@ -64,9 +64,9 @@ _Current Experience_
 
 > **_⚫_**Tell me what a productive day at work looks like to you
 
-> **_⚫_**This question may not appear in every interview, but when they do, it’s important for you to highlight your organizational and prioritization skills. When hiring managers ask this question, they want to know:
+> **_⚫_**This question may not appear in every interview, but when they do, it's important for you to highlight your organizational and prioritization skills. When hiring managers ask this question, they want to know:
 
-> **_⚫_**Whether you’re a proactive communicator and a good planner of your time
+> **_⚫_**Whether you're a proactive communicator and a good planner of your time
 
 ### How you strike a balance between multiple ongoing projects
 
@@ -74,7 +74,7 @@ _Current Experience_
 
 > **_⚫_**How you deliver quality work with limited time
 
-> **_⚫_**When there’s limited time and multiple projects going on, you may not be able to give 100% to the projects at hand. Let the interviewers know:
+> **_⚫_**When there's limited time and multiple projects going on, you may not be able to give 100% to the projects at hand. Let the interviewers know:
 
 > **_⚫_**How you decide which tasks should be prioritized
 
@@ -82,13 +82,13 @@ _Current Experience_
 
 > **_⚫_**How you ensure all projects will be delivered with acceptable quality
 
-> **_⚫_**At what milestones you believe it’s ok to deliver something “less than perfect”
+> **_⚫_**At what milestones you believe it's ok to deliver something “less than perfect”
 
-> **_⚫_**How you decide when to go back and improve the “minimum viable projects” delivered earlier in the project’s timeline
+> **_⚫_**How you decide when to go back and improve the “minimum viable projects” delivered earlier in the project's timeline
 
 ### Professional Skills
 
-> **_⚫_**Will you excel in this job? Are you passionate about this job? It’s time to show how. For the first question, highlight some of your professional abilities:
+> **_⚫_**Will you excel in this job? Are you passionate about this job? It's time to show how. For the first question, highlight some of your professional abilities:
 
 > **_⚫_**Industry experience
 
@@ -102,29 +102,29 @@ _Current Experience_
 
 > **_⚫1&gt;_**Excitement will fuel your performance
 
-> **_⚫2&gt;_**Passion will confirm that you’re interested in this job
+> **_⚫2&gt;_**Passion will confirm that you're interested in this job
 
 > **_⚫_**Eagerness will help you get through challenges at work
 
 > **_⚫_**Company culture and shared values
 
-> **_⚫_**Do you know the company’s culture and will you be a good fit? Here are some culture-related points you could cover in your answer:
+> **_⚫_**Do you know the company's culture and will you be a good fit? Here are some culture-related points you could cover in your answer:
 
-> **_⚫_**You’re attracted to the company’s general reputation
+> **_⚫_**You're attracted to the company's general reputation
 
-> **_⚫_**You’re inspired by a specific leader in the company
+> **_⚫_**You're inspired by a specific leader in the company
 
-> **_⚫_**You’re passionate about the company’s products and services
+> **_⚫_**You're passionate about the company's products and services
 
-> **_⚫_**You’re onboard with the company’s initiatives (community engagement, public endorsements, etc.)
+> **_⚫_**You're onboard with the company's initiatives (community engagement, public endorsements, etc.)
 
-> **_⚫_**You admire the company’s culture. Here are some specific examples:
+> **_⚫_**You admire the company's culture. Here are some specific examples:
 
 ---
 
 ### Commitment to the company
 
-> **_⚫Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don’t have to stress too much about showing your long-term commitment when answering this question. However, if you haven’t had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
+> **_⚫Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don't have to stress too much about showing your long-term commitment when answering this question. However, if you haven't had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
 
 > **_⚫_**Projects you want to start
 
@@ -132,19 +132,19 @@ _Current Experience_
 
 > **_⚫_**The different products/teams you want to contribute to
 
-> **_⚫_**Processes you’d like to participate in improving
+> **_⚫_**Processes you'd like to participate in improving
 
 ### Why should we hire you?
 
-> **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you’ll be a good hire.
+> **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you'll be a good hire.
 
-> **_⚫_**Unlike the more specific questions we’ve outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
+> **_⚫_**Unlike the more specific questions we've outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
 
-> **_⚫_**To come up with your elevator pitch, you’ll need to do some planning and consolidation.
+> **_⚫_**To come up with your elevator pitch, you'll need to do some planning and consolidation.
 
 > **_⚫_**Here are some guiding questions for you to kickoff your brainstorming sessions:
 
-> **_⚫_**What are the most important qualifications for this position from the company’s perspective?
+> **_⚫_**What are the most important qualifications for this position from the company's perspective?
 
 > **_⚫_**What are my strong suits and how do they set me apart from others?
 
@@ -162,25 +162,25 @@ _Current Experience_
 
 ### 📝 Interview Etiquette & Other Tips
 
-Nailing an interview takes more than just knowing how to answer common interview questions. You’ll also need to prepare questions of your own, think about salary, and get your communications right. Here’s how.
+Nailing an interview takes more than just knowing how to answer common interview questions. You'll also need to prepare questions of your own, think about salary, and get your communications right. Here's how.
 
 #### Questions to ask in an interview
 
-⮕As the job seeker, it’s normal to feel like you’re being interrogated during interviews. However, at its core, an interview is a conversation, and should be a two-way interaction. As the interviewee, you need to stay engaged and ask thoughtful questions.
+⮕As the job seeker, it's normal to feel like you're being interrogated during interviews. However, at its core, an interview is a conversation, and should be a two-way interaction. As the interviewee, you need to stay engaged and ask thoughtful questions.
 
-⮕By asking questions, you’re expressing your genuine curiosity towards the company. This helps companies know that you’re serious about them. Additionally, it also helps you evaluate whether the job and/or the company is really what you’re looking for.
+⮕By asking questions, you're expressing your genuine curiosity towards the company. This helps companies know that you're serious about them. Additionally, it also helps you evaluate whether the job and/or the company is really what you're looking for.
 
-⮕There are fantastic resources out there with more than a dozen questions you can ask interviewers. Here, we’ll provide a few that we think are essential to help you gain deeper understandings about the role, company, and your future within the company:
+⮕There are fantastic resources out there with more than a dozen questions you can ask interviewers. Here, we'll provide a few that we think are essential to help you gain deeper understandings about the role, company, and your future within the company:
 
 ⮕The job and cross-team communication
 
-⮕The company’s values and working culture
+⮕The company's values and working culture
 
 ⮕What are some shared qualities and characteristics among your employees?
 
-⮕What’s your favorite part about working at the company?
+⮕What's your favorite part about working at the company?
 
-⮕What’s your least favorite part about working at the company?
+⮕What's your least favorite part about working at the company?
 
 Professional growth opportunities
 
@@ -200,15 +200,15 @@ Professional growth opportunities
 
 > **_⚫_**How to answer salary expectations?
 
-> **_⚫_**“What are you salary expectations?” can be a daunting question. If talking about money wasn’t uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
+> **_⚫_**“What are you salary expectations?” can be a daunting question. If talking about money wasn't uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
 
 ---
 
 ### Follow up ?????
 
-> **_⚫_**Depending on how many rounds of interviews you’ve gone through, you may feel differently about how close you are to getting the job. The closer you get to the end of the hiring process, the more likely it is for you to start feeling anxious due to higher expectations. As a result, you may be eager to follow up with the hiring manager regarding your interview results. With that said, there’s a fine line between showing your eager attitude and coming off as desperate.
+> **_⚫_**Depending on how many rounds of interviews you've gone through, you may feel differently about how close you are to getting the job. The closer you get to the end of the hiring process, the more likely it is for you to start feeling anxious due to higher expectations. As a result, you may be eager to follow up with the hiring manager regarding your interview results. With that said, there's a fine line between showing your eager attitude and coming off as desperate.
 
-> **_⚫_**Before we get to the types of follow up emails you should send out, make sure to ask the hiring manager about when you can expect to hear back from them about next steps. This information will help you decide when it’s appropriate to follow up down the line.
+> **_⚫_**Before we get to the types of follow up emails you should send out, make sure to ask the hiring manager about when you can expect to hear back from them about next steps. This information will help you decide when it's appropriate to follow up down the line.
 
 > **_⚫_**There are four types of follow up emails you should send at different times after the interview: Thank you email, checking-in email, second follow up email, final follow up email.
 
@@ -224,7 +224,7 @@ Professional growth opportunities
 
 ⮕**One or two things you learned about the organization**
 
-⮕**One sentence about how you’re excited you are to contribute in a specific way**
+⮕**One sentence about how you're excited you are to contribute in a specific way**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*tZNLWVUGmj2tJK3j.jpg" class="graf-image" /></figure>
 
@@ -232,9 +232,9 @@ Professional growth opportunities
 
 ### **_Technical interview :_**
 
-#### ⮕**_questions examine a candidate’s thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below._**
+#### ⮕**_questions examine a candidate's thought processes and assess what approaches they adopt to solve problems. The most common end-to-end software development questions are listed below._**
 
-### Here’s the repo that I use to practice my technical chops for interviews:
+### Here's the repo that I use to practice my technical chops for interviews:
 
 <a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong><br />
 <em>Tech Interview Asymptotic Notation Data Structures Algorithms Algorithm Basics Search Algorithms Sorting Algorithms…</em>github.com</a><a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -245,7 +245,7 @@ Professional growth opportunities
 
 > **_⚫ In answering this question, you need to show your planning, process, and communication/collaboration skills. Think in advance about a suitable project where your contributions cover all these bases._**
 
-> **_⚫If you can, it’s best to choose to describe an Agile project you worked on, as organizations whether they use a Waterfall or Agile methodology, are keen to work with developers experienced in Agile._**
+> **_⚫If you can, it's best to choose to describe an Agile project you worked on, as organizations whether they use a Waterfall or Agile methodology, are keen to work with developers experienced in Agile._**
 
 > **_⚫ Ideally, share a project in which you worked with a bigger team._**
 
@@ -261,7 +261,7 @@ Professional growth opportunities
 
 > **_⚫You can specify cutting edge collaboration tools and techniques and/or methodologies that you already know the company employs in their own workflows._**
 
-> **_⚫For the least favorite parts, don’t just list the downsides and failures, but also mention what you’ve learned from it and how you would improve._**
+> **_⚫For the least favorite parts, don't just list the downsides and failures, but also mention what you've learned from it and how you would improve._**
 
 > **_⚫ Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority._**
 
@@ -271,7 +271,7 @@ Professional growth opportunities
 
 > **_To begin with, give an example of a project in which you had the most ownership or you had the greatest sense of achievement/efficiency/effectiveness from the toolchain used._**
 
-> **_⚫ Next, describe the goal of the project, and briefly go through your responsibilities when it came to the toolchain decision-making process. Within Agile work practices, it’s usually a team effort to decide the best programming languages/tools/services are the best fit for the project, within customer requirements. Outline the consultation process you went through with both the customer and your team to arrive at the best solutions._**
+> **_⚫ Next, describe the goal of the project, and briefly go through your responsibilities when it came to the toolchain decision-making process. Within Agile work practices, it's usually a team effort to decide the best programming languages/tools/services are the best fit for the project, within customer requirements. Outline the consultation process you went through with both the customer and your team to arrive at the best solutions._**
 
 ### 4. Describe the biggest toolchain-related challenge you encountered in the project:
 
@@ -283,7 +283,7 @@ Professional growth opportunities
 
 ### 5. How would you design this system for scale?
 
-> **_⚫First of all, the interviewer would like to know the traffic level we’re expecting: 1,000, 100,000, or 10 million users per second? Think about the data expectations for each system user, database connections (blocking/nonblocking actions), downtime specifics, and cloud considerations (if any)._**
+> **_⚫First of all, the interviewer would like to know the traffic level we're expecting: 1,000, 100,000, or 10 million users per second? Think about the data expectations for each system user, database connections (blocking/nonblocking actions), downtime specifics, and cloud considerations (if any)._**
 
 > **_⚫List the potential problems that might occur when trying to scale. Different traffic levels may have different problems, so make sure you think this through, and decide the priorities of the problems that you should solve. Many codebases are not built for scale, so note code changes that might need to occur, rather than just infrastructure expectations._**
 
@@ -293,7 +293,7 @@ Professional growth opportunities
 
 > **_⚫First, do your groundwork to ensure that you thoroughly understand the different testing types. Do you know your unit testing from your regression testing from your user acceptance testing? If you need to brush up, check out this great resource._**
 
-> **_⚫Once you’ve got that on lock, it’s time to share a project that you’ve tested thoroughly before._**
+> **_⚫Once you've got that on lock, it's time to share a project that you've tested thoroughly before._**
 
 > **_⚫Remember to separate the project into different sections. Each section should apply the testing type that fits its characteristics. Describe the goals of different testing types, and also introduce the library/service you used for the test. (For bonus points: explain the pros and cons of the library/service and whether it was your decision to choose that particular suite.)_**
 
@@ -303,9 +303,9 @@ Professional growth opportunities
 
 ### Monitoring
 
-### 7. What kind of tools / services do you use for logging? What kind of data will you log? And what’s the next step when you get the log?
+### 7. What kind of tools / services do you use for logging? What kind of data will you log? And what's the next step when you get the log?
 
-> **_⚫Time for some details! When answering this question, give an example of a project that you’ve monitored before._**
+> **_⚫Time for some details! When answering this question, give an example of a project that you've monitored before._**
 
 > **_⚫Explain what information you logged and what questions it answered._**
 
@@ -327,11 +327,11 @@ Professional growth opportunities
 
 > **_⚫_**Talking ill of your bosses or coworkers
 
-> ***⚫*Keep in mind that your interviewer is not only trying to get a glimpse of your past, but to gain an understanding of how you might react to challenges should they hire you. Therefore, when you’re choosing your scenario, try to pick one that may be applicable in your new work setting as well.**
+> ***⚫*Keep in mind that your interviewer is not only trying to get a glimpse of your past, but to gain an understanding of how you might react to challenges should they hire you. Therefore, when you're choosing your scenario, try to pick one that may be applicable in your new work setting as well.**
 
 ---
 
-### NOW; Here’s some for you guys to answer in the comments!
+### NOW; Here's some for you guys to answer in the comments!
 
 #### 8. Which logging services have you researched and used before?
 
@@ -349,7 +349,7 @@ Professional growth opportunities
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

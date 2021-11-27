@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Beginner’s Guide To React Part 2</title>
+        <title>Beginner's Guide To React Part 2</title>
         <style>
             * {
                 font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
@@ -84,7 +84,7 @@
     <body>
         <article class="h-entry">
             <header>
-                <h1 class="p-name">Beginner’s Guide To React Part 2</h1>
+                <h1 class="p-name">Beginner's Guide To React Part 2</h1>
             </header>
             <section data-field="subtitle" class="p-summary">
                 As I learn to build web applications in React I will blog about it in this series in an attempt to capture the questions that a complete…
@@ -96,7 +96,7 @@
                     </div>
                     <div class="section-content">
                         <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="a8eb" id="a8eb" class="graf graf--h3 graf--leading graf--title">Beginner’s Guide To React Part 2</h3>
+                            <h3 name="a8eb" id="a8eb" class="graf graf--h3 graf--leading graf--title">Beginner's Guide To React Part 2</h3>
                             <p name="4e37" id="4e37" class="graf graf--p graf-after--h3">
                                 As I learn to build web applications in React I will blog about it in this series in an attempt to capture the questions that a
                                 complete beginner might encounter that a more seasoned developer would take for granted!
@@ -162,7 +162,7 @@
                                 <li name="8087" id="8087" class="graf graf--li graf-after--li">ex6 — An Example of Parent and Child Components</li>
                             </ul>
                             <p name="833a" id="833a" class="graf graf--p graf-after--li">
-                                With regards to converting an existing HTML, CSS, and JS site into React, first you’ll want to think about how to break up your
+                                With regards to converting an existing HTML, CSS, and JS site into React, first you'll want to think about how to break up your
                                 site into components,
                             </p>
                             <ul class="postList">
@@ -170,7 +170,7 @@
                                     as well as think about what the general hierarchical component structure of your site will look like.
                                 </li>
                                 <li name="fdf0" id="fdf0" class="graf graf--li graf-after--li">
-                                    From there, it’s a simple matter of copying the relevant HTML for that component and throwing it into the
+                                    From there, it's a simple matter of copying the relevant HTML for that component and throwing it into the
                                     <strong class="markup--strong markup--li-strong">render method of your component file.</strong>
                                 </li>
                                 <li name="ec78" id="ec78" class="graf graf--li graf-after--li">
@@ -180,7 +180,7 @@
                                 </li>
                             </ul>
                             <p name="5521" id="5521" class="graf graf--p graf-after--li">
-                                Once you’ve refactored your HTML components into React components, you’ll want to lay them out in the desired hierarchical
+                                Once you've refactored your HTML components into React components, you'll want to lay them out in the desired hierarchical
                                 structure
                             </p>
                             <ul class="postList">
@@ -205,7 +205,7 @@
                                 with a bunch of fields in it…etc.…
                             </p>
                             <p name="0fa6" id="0fa6" class="graf graf--p graf-after--p">
-                                React doesn’t place any restrictions on how large or small a component can be.
+                                React doesn't place any restrictions on how large or small a component can be.
                             </p>
                             <p name="d979" id="d979" class="graf graf--p graf-after--p">
                                 You <em class="markup--em markup--p-em">could</em> have an entire static site encapsulated in a single React component, but that
@@ -238,7 +238,7 @@
                                 >
                             </blockquote>
                             <p name="5632" id="5632" class="graf graf--p graf-after--blockquote">
-                                Notice that this component looks exactly like an anonymous arrow function that we’ve named
+                                Notice that this component looks exactly like an anonymous arrow function that we've named
                                 <code class="markup--code markup--p-code">BasicComponent</code> .
                             </p>
                             <p name="37ae" id="37ae" class="graf graf--p graf-after--p">In fact, that is literally what this is.</p>
@@ -263,17 +263,17 @@
                                 >
                             </p>
                             <p name="c369" id="c369" class="graf graf--p graf-after--p">
-                                For this exercise, we’re going to write a class component that does exactly the same thing as the functional component we just
+                                For this exercise, we're going to write a class component that does exactly the same thing as the functional component we just
                                 wrote.
                             </p>
                             <p name="4e12" id="4e12" class="graf graf--p graf-after--p">
-                                We’ll again need to import React at the top of the file, but we’ll also need to add a little something. Our import statement
+                                We'll again need to import React at the top of the file, but we'll also need to add a little something. Our import statement
                                 will look like this:
                             </p>
                             <pre name="2c22" id="2c22" class="graf graf--pre graf-after--p">import React, { Component } from &#39;react&#39;;</pre>
                             <p name="ffb6" id="ffb6" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong"
-                                    >So, in addition to importing React, we’re also importing the base Component class that is included in the React
+                                    >So, in addition to importing React, we're also importing the base Component class that is included in the React
                                     library.</strong
                                 >
                             </p>
@@ -364,7 +364,7 @@
                             </ul>
                             <p name="38fd" id="38fd" class="graf graf--p graf-after--li">
                                 The <code class="markup--code markup--p-code">render()</code> function should be pure, meaning that it does not modify component
-                                state, it returns the same result each time it’s invoked, and it does not directly interact with the browser.
+                                state, it returns the same result each time it's invoked, and it does not directly interact with the browser.
                             </p>
                             <p name="60ba" id="60ba" class="graf graf--p graf-after--p">
                                 If you need to interact with the browser, perform your work in
@@ -419,7 +419,7 @@
                             </p>
                             <p name="54a0" id="54a0" class="graf graf--p graf-after--p">
                                 This is because class components are much better suited for handling component state and triggering events based on the
-                                component’s
+                                component's
                                 <a
                                     href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
                                     data-href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
@@ -431,13 +431,13 @@
                             </p>
                             <h4 name="66ab" id="66ab" class="graf graf--h4 graf-after--p">
                                 The important takeaways at this point are that there are two types of components, functional and class components, and that
-                                functional components are well-suited if you’re just looking to render some HTML.
+                                functional components are well-suited if you're just looking to render some HTML.
                             </h4>
                             <p name="3ce9" id="3ce9" class="graf graf--p graf-after--h4">
                                 <em class="markup--em markup--p-em"
                                     >Class components, on the other hand, are much better suited for handling components that require more complex
                                     functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said
-                                    component’s lifecycle.</em
+                                    component's lifecycle.</em
                                 >
                             </p>
                             <h3 name="da0a" id="da0a" class="graf graf--h3 graf-after--p">A Class Component with Some State</h3>
@@ -447,7 +447,7 @@
                                 >
                             </p>
                             <blockquote name="f054" id="f054" class="graf graf--blockquote graf-after--p">
-                                For example, let’s say we have a form component. This form has some input fields that we’d like users to fill out. When a user
+                                For example, let's say we have a form component. This form has some input fields that we'd like users to fill out. When a user
                                 types characters into an input field, how is that input persisted from the point of view of our form component?
                             </blockquote>
                             <p name="200d" id="200d" class="graf graf--p graf-after--blockquote">
@@ -460,7 +460,7 @@
                             <p name="f9af" id="f9af" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
                                     >Only class components have the ability to persist state, so if at any time you realize that a component needs to keep track
-                                    of some state, you know that you’ll automatically need a class component instead of a functional component.</strong
+                                    of some state, you know that you'll automatically need a class component instead of a functional component.</strong
                                 >
                             </p>
                             <blockquote name="aa79" id="aa79" class="graf graf--blockquote graf-after--p">
@@ -475,7 +475,7 @@
                                 >. Hooks were added in React 16.8; prior to this release, there was no mechanism to add state to functional components.
                             </blockquote>
                             <p name="a263" id="a263" class="graf graf--p graf-after--blockquote">
-                                Here’s what the above component looks like as a functional component:
+                                Here's what the above component looks like as a functional component:
                             </p>
                             <p name="e4f5" id="e4f5" class="graf graf--p graf-after--p">
                                 Our class component with state will look a lot like the basic class component we just wrote, but with some exceptions:
@@ -491,7 +491,7 @@
                             </p>
                             <p name="0794" id="0794" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
-                                    >Additionally, if a class is extending off of another class and wants access to its parent class’s methods and properties,
+                                    >Additionally, if a class is extending off of another class and wants access to its parent class's methods and properties,
                                     then the </strong
                                 ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">super</strong></code
                                 ><strong class="markup--strong markup--p-strong">
@@ -539,11 +539,11 @@
                                 ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">super</strong></code
                                 ><strong class="markup--strong markup--p-strong"> first.</strong>
                             </p>
-                            <p name="4cd6" id="4cd6" class="graf graf--p graf-after--p">Ok, now let’s actually use this state object.</p>
+                            <p name="4cd6" id="4cd6" class="graf graf--p graf-after--p">Ok, now let's actually use this state object.</p>
                             <p name="747b" id="747b" class="graf graf--p graf-after--p">
                                 <em class="markup--em markup--p-em"
                                     >One very common application of state objects in React components is to render the data being stored inside them within our
-                                    component’s render function.</em
+                                    component's render function.</em
                                 >
                             </p>
                             <h4 name="6929" id="6929" class="graf graf--h4 graf-after--p">Refactoring our component class to do that:</h4>
@@ -556,10 +556,10 @@
                             <ul class="postList">
                                 <li name="83e8" id="83e8" class="graf graf--li graf-after--p">Then we changed the contents of the render function.</li>
                                 <li name="6780" id="6780" class="graf graf--li graf-after--li">
-                                    Now, it’s actually rendering the data that we have inside the state object.
+                                    Now, it's actually rendering the data that we have inside the state object.
                                 </li>
                                 <li name="eb34" id="eb34" class="graf graf--li graf-after--li">
-                                    Notice that inside the div tags we’re using a template string literal so that we can access the value of
+                                    Notice that inside the div tags we're using a template string literal so that we can access the value of
                                     <code class="markup--code markup--li-code">this.state.someData</code> straight inside of our rendered content.
                                 </li>
                             </ul>
@@ -586,7 +586,7 @@
                         </div>
                         <div class="section-inner sectionLayout--insetColumn">
                             <p name="8378" id="8378" class="graf graf--p graf-after--figure">
-                                This new syntax is what is often referred to as 'syntactic sugar’: under the hood, the React library translates this back into
+                                This new syntax is what is often referred to as 'syntactic sugar': under the hood, the React library translates this back into
                                 the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
                             </p>
                             <p name="a769" id="a769" class="graf graf--p graf-after--p">
@@ -601,13 +601,13 @@
                             <p name="f478" id="f478" class="graf graf--p graf-after--p">
                                 However, we said an important use case of component state is to handle <em class="markup--em markup--p-em">dynamic</em> data.
                             </p>
-                            <p name="70cc" id="70cc" class="graf graf--p graf-after--p">A single static number isn’t very dynamic at all.</p>
-                            <p name="f8df" id="f8df" class="graf graf--p graf-after--p">So now let’s walk through how to update component state.</p>
+                            <p name="70cc" id="70cc" class="graf graf--p graf-after--p">A single static number isn't very dynamic at all.</p>
+                            <p name="f8df" id="f8df" class="graf graf--p graf-after--p">So now let's walk through how to update component state.</p>
                             <figure name="2b4a" id="2b4a" class="graf graf--figure graf--iframe graf-after--p">
                                 <script src="https://gist.github.com/bgoonz/feb0b2b28731e4383dc4fbede5fbebbf.js"></script>
                             </figure>
                             <p name="78c5" id="78c5" class="graf graf--p graf-after--figure">
-                                Notice that we’ve added two methods to our class: <code class="markup--code markup--p-code">increment</code> and
+                                Notice that we've added two methods to our class: <code class="markup--code markup--p-code">increment</code> and
                                 <code class="markup--code markup--p-code">decrement</code> .
                             </p>
                             <p name="fb42" id="fb42" class="graf graf--p graf-after--p">
@@ -664,7 +664,7 @@
                                 instead of adding.
                             </p>
                             <p name="ee7b" id="ee7b" class="graf graf--p graf-after--p">
-                                Then the other new concept we’re running into here is how to actually call these methods we’ve added to our class.
+                                Then the other new concept we're running into here is how to actually call these methods we've added to our class.
                             </p>
                             <figure name="6cdc" id="6cdc" class="graf graf--figure graf--layoutOutsetLeft graf-after--p">
                                 <img
@@ -683,7 +683,7 @@
                             </p>
                             <h3 name="e859" id="e859" class="graf graf--h3 graf-after--p">Class Component Iterating State</h3>
                             <p name="21fc" id="21fc" class="graf graf--p graf-after--h3">
-                                Another common state pattern you’ll see being used in React components is iterating over an array in our state object and
+                                Another common state pattern you'll see being used in React components is iterating over an array in our state object and
                                 rendering each array element in its own tag.
                             </p>
                             <blockquote name="90a9" id="90a9" class="graf graf--blockquote graf-after--p">
@@ -693,18 +693,18 @@
                                 Additionally, we want to be able to easily update lists and have React re-render our updated list.
                             </p>
                             <p name="5e5f" id="5e5f" class="graf graf--p graf-after--p">
-                                We’ll see how both of these are done and how they work together within a single component in order to create the behavior of a
+                                We'll see how both of these are done and how they work together within a single component in order to create the behavior of a
                                 dynamic list.
                             </p>
                             <figure name="cf0d" id="cf0d" class="graf graf--figure graf--iframe graf-after--p">
                                 <script src="https://gist.github.com/bgoonz/7eda131a0d17956d58e78b214aa38359.js"></script>
                             </figure>
                             <p name="dd49" id="dd49" class="graf graf--p graf-after--figure">
-                                The first change to note is that our state object now has an 'ingredients’ array, and a 'newIngredient’ field that has been
+                                The first change to note is that our state object now has an 'ingredients' array, and a 'newIngredient' field that has been
                                 initialized to an empty string.
                             </p>
                             <p name="e15e" id="e15e" class="graf graf--p graf-after--p">
-                                The ingredients array contains the elements that we’ll want to render in our list.
+                                The ingredients array contains the elements that we'll want to render in our list.
                             </p>
                             <p name="fe40" id="fe40" class="graf graf--p graf-after--p">
                                 The <code class="markup--code markup--p-code">addIngredient</code> and
@@ -816,7 +816,7 @@
                             </p>
                             <p name="8bde" id="8bde" class="graf graf--p graf-after--p">Then we have an HTML form which contains an input field.</p>
                             <p name="336d" id="336d" class="graf graf--p graf-after--p">
-                                The purpose of this form is to allow a user to add new ingredients to the list. Note that we’re passing our
+                                The purpose of this form is to allow a user to add new ingredients to the list. Note that we're passing our
                                 <code class="markup--code markup--p-code">addIngredient</code> method to the form&#39;s
                                 <code class="markup--code markup--p-code">onSubmit</code> handler.
                             </p>
@@ -848,19 +848,19 @@
                                 input field and then renders.
                             </p>
                             <h3 name="413c" id="413c" class="graf graf--h3 graf-after--p">Parent and Child Components</h3>
-                            <p name="215c" id="215c" class="graf graf--p graf-after--h3">A single isolated component isn’t going to do us much good.</p>
+                            <p name="215c" id="215c" class="graf graf--p graf-after--h3">A single isolated component isn't going to do us much good.</p>
                             <blockquote name="3d3f" id="3d3f" class="graf graf--blockquote graf-after--p">
                                 The beauty of React lies in the fact that it allows us to compose modular components together.
                             </blockquote>
                             <blockquote name="3599" id="3599" class="graf graf--blockquote graf-after--blockquote">
-                                Let’s start off with the component we just saw, but let’s change its name to
+                                Let's start off with the component we just saw, but let's change its name to
                                 <code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">ParentComponent</em></code> .
                             </blockquote>
                             <figure name="6882" id="6882" class="graf graf--figure graf--iframe graf-after--blockquote">
                                 <script src="https://gist.github.com/bgoonz/31e043bf1e2ec5d7c4062f321708458b.js"></script>
                             </figure>
                             <p name="d87f" id="d87f" class="graf graf--p graf-after--figure">
-                                The only two other differences in this component are that we’re importing a
+                                The only two other differences in this component are that we're importing a
                                 <code class="markup--code markup--p-code">ChildComponent</code> and then using it inside our
                                 <code class="markup--code markup--p-code">this.state.ingredients.map</code> call.
                             </p>
@@ -895,34 +895,34 @@
                         </div>
                         <div class="section-inner sectionLayout--insetColumn">
                             <p name="f719" id="f719" class="graf graf--p graf-after--figure">
-                                Note also that we’re passing each ingredient as a 'thing’ to the ChildComponent component.
+                                Note also that we're passing each ingredient as a 'thing' to the ChildComponent component.
                             </p>
                             <p name="d24c" id="d24c" class="graf graf--p graf-after--p">
-                                This is how a parent component passes data to a child component. It doesn’t need to be called 'thing’; you can call it whatever
+                                This is how a parent component passes data to a child component. It doesn't need to be called 'thing'; you can call it whatever
                                 you want.
                             </p>
                             <p name="ddb0" id="ddb0" class="graf graf--p graf-after--p">
                                 Conceptually though,
                                 <strong class="markup--strong markup--p-strong"
-                                    >every piece of data that a parent component passes down to a child component is called a 'prop’ in React lingo.</strong
+                                    >every piece of data that a parent component passes down to a child component is called a 'prop' in React lingo.</strong
                                 >
                             </p>
                             <p name="c441" id="c441" class="graf graf--p graf-after--p">
-                                Let’s take a look now at the Child Component. It serves two purposes:
+                                Let's take a look now at the Child Component. It serves two purposes:
                             </p>
                             <ol class="postList">
                                 <li name="4db5" id="4db5" class="graf graf--li graf-after--p">
                                     to render the props data that it gets from a parent component,
                                 </li>
                                 <li name="f8e1" id="f8e1" class="graf graf--li graf-after--li">
-                                    to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete’.
+                                    to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete'.
                                 </li>
                             </ol>
                             <figure name="555c" id="555c" class="graf graf--figure graf--iframe graf-after--li">
                                 <script src="https://gist.github.com/bgoonz/6e48f97f5f378d01fdc5617ef60c361e.js"></script>
                             </figure>
                             <p name="2a4c" id="2a4c" class="graf graf--p graf-after--figure">
-                                The overall structure of the child component is nothing we haven’t seen. It’s just another class component with its own s<strong
+                                The overall structure of the child component is nothing we haven't seen. It's just another class component with its own s<strong
                                     class="markup--strong markup--p-strong"
                                     >tate object and a method called </strong
                                 ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">handleClick</strong></code
@@ -954,7 +954,7 @@
                             <p name="f8d4" id="f8d4" class="graf graf--p graf-after--p">
                                 The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is
                                 structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath.
-                                Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component’s
+                                Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's
                                 render function, just like how we did it in this example
                             </p>
                             <figure name="4691" id="4691" class="graf graf--figure graf-after--p graf--trailing">
@@ -1009,7 +1009,7 @@
                                         ><em class="markup--em markup--li-em">AJAX </em></a
                                     ><em class="markup--em markup--li-em"
                                         >requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result
-                                        of changes in 'state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a
+                                        of changes in 'state'. Because it's function is so limited in scope you may hear it referred to as a library… (not a
                                         framework … like Angular for example) and you may also hear it described as unopinionated.</em
                                     >
                                 </li>
@@ -1203,7 +1203,7 @@
                             </p>
                             <h3 name="e24e" id="e24e" class="graf graf--h3 graf-after--p">Are React functional components pure?</h3>
                             <p name="018d" id="018d" class="graf graf--p graf-after--h3">
-                                Functional components are very useful in React, especially when you want to isolate state management from the component. That’s
+                                Functional components are very useful in React, especially when you want to isolate state management from the component. That's
                                 why they are often called stateless components.
                             </p>
                             <p name="8dd7" id="8dd7" class="graf graf--p graf-after--p">
@@ -1211,7 +1211,7 @@
                                 <code class="markup--code markup--p-code">React.PureComponent</code> since they are not classes by definition.
                             </p>
                             <p name="d449" id="d449" class="graf graf--p graf-after--p">
-                                If you want React to treat a functional component as a pure component, you’ll have to convert the functional component to a
+                                If you want React to treat a functional component as a pure component, you'll have to convert the functional component to a
                                 class component that extends <code class="markup--code markup--p-code">React.PureComponent</code>.
                             </p>
                             <figure name="a477" id="a477" class="graf graf--figure graf--iframe graf-after--p">
@@ -1220,7 +1220,7 @@
                             <h3 name="9c36" id="9c36" class="graf graf--h3 graf-after--figure">Reusability</h3>
                             <p name="3dc3" id="3dc3" class="graf graf--p graf-after--h3">
                                 React encourages you to think in terms of reusability as you construct the user<br />interface from elements and components that
-                                you create. When you<br />make a list or a button, you can then reuse those components to show different data 'state’ in the
+                                you create. When you<br />make a list or a button, you can then reuse those components to show different data 'state' in the
                                 same UI structure as you have built for different data previously.
                             </p>
                             <figure name="bfab" id="bfab" class="graf graf--figure graf-after--p">
@@ -1242,7 +1242,7 @@
                             </p>
                             <h4 name="fc7f" id="fc7f" class="graf graf--h4 graf-after--p">Learn Once, Write Anywhere</h4>
                             <p name="8359" id="8359" class="graf graf--p graf-after--h4">
-                                We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting
+                                We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting
                                 existing code.
                             </p>
                             <p name="4458" id="4458" class="graf graf--p graf-after--p">
@@ -1346,7 +1346,7 @@
                             <ul class="postList">
                                 <li name="d48c" id="d48c" class="graf graf--li graf-after--h4">
                                     <strong class="markup--strong markup--li-strong"
-                                        >Imperative, 'telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.</strong
+                                        >Imperative, 'telling to computer HOW to do something' e.g looping over an array of numbers using a for loop.</strong
                                     >
                                 </li>
                                 <li name="8f2d" id="8f2d" class="graf graf--li graf-after--li">
@@ -1384,7 +1384,7 @@
                                 </li>
                                 <li name="1ee2" id="1ee2" class="graf graf--li graf-after--li">They can be defined in pure JavaScript or JSX.</li>
                                 <li name="a2b4" id="a2b4" class="graf graf--li graf-after--li">
-                                    Data is either received from a component’s parent component, or it’s contained in the component itself.
+                                    Data is either received from a component's parent component, or it's contained in the component itself.
                                 </li>
                                 <li name="182f" id="182f" class="graf graf--li graf-after--li">
                                     Applications can be separated into smaller components like this…
@@ -1458,7 +1458,7 @@
                             <h4 name="18ed" id="18ed" class="graf graf--h4 graf-after--figure">10. Prop types</h4>
                             <p name="cd81" id="cd81" class="graf graf--p graf-after--h4 graf--trailing">
                                 PropTypes allow you to declare the type (string, number, function, etc) of each prop being passed to a component. Then if a prop
-                                passed in isn’t of the declared type you’ll get a warning in the console.
+                                passed in isn't of the declared type you'll get a warning in the console.
                             </p>
                         </div>
                     </div>
@@ -1505,7 +1505,7 @@
                             </figure>
                             <p name="79a9" id="79a9" class="graf graf--p graf-after--figure">
                                 In addition to taking input data (accessed via <code class="markup--code markup--p-code">this.props</code>), a component can
-                                maintain internal state data (accessed via <code class="markup--code markup--p-code">this.state</code>). When a component’s
+                                maintain internal state data (accessed via <code class="markup--code markup--p-code">this.state</code>). When a component's
                                 state data changes, the rendered markup will be updated by re-invoking
                                 <code class="markup--code markup--p-code">render()</code>.
                             </p>
@@ -1525,7 +1525,7 @@
                             <h4 name="2276" id="2276" class="graf graf--h4 graf-after--figure">A Component Using External Plugins</h4>
                             <p name="da65" id="da65" class="graf graf--p graf-after--h4">
                                 React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library,
-                                to convert the <code class="markup--code markup--p-code">&lt;textarea&gt;</code>’s value in real time.
+                                to convert the <code class="markup--code markup--p-code">&lt;textarea&gt;</code>'s value in real time.
                             </p>
                             <figure name="db87" id="db87" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
                                 <script src="https://gist.github.com/bgoonz/669844448e0469ae2a050edb0d1805fe.js"></script>

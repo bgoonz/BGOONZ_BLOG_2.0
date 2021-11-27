@@ -1,10 +1,10 @@
-# Web Developer’s Technical Glossary
+# Web Developer's Technical Glossary
 
 This will be a running list as I make updates!
 
 ---
 
-### Web Developer’s Technical Glossary
+### Web Developer's Technical Glossary
 
 This will be a running list as I make updates!
 
@@ -121,7 +121,7 @@ Stands for Audi Video Interleave. AVI is a file format for compressed video file
 
 ### Banner Ad
 
-An advertisement placed on a webpage which links to the advertiser’s website. Banner ads can contain text, graphical images, animation, and sound.
+An advertisement placed on a webpage which links to the advertiser's website. Banner ads can contain text, graphical images, animation, and sound.
 
 ### Bandwidth
 
@@ -129,7 +129,7 @@ The amount of data that can be transmitted over an internet connection in a spec
 
 ### Baud
 
-The number of signals that can be sent over a data channel per second. The term 'baud’ is named after the inventor of the Baudot telegraph code, J.M.E. Baudot.
+The number of signals that can be sent over a data channel per second. The term 'baud' is named after the inventor of the Baudot telegraph code, J.M.E. Baudot.
 
 ### BBS
 
@@ -167,7 +167,7 @@ Same as Web Browser.
 
 A unit of data containing 8 bits. A byte can store one text character.
 
-An advanced high-level computer programming language used for application development. C was originally developed by Dennis Ritchie at Bell Labs in the 1970’s and was originally designed to be a systems programming language but since then has proven itself to be able to be used for various software applications such as business programs, engineering programs, and even games. The UNIX operating system is written in C.
+An advanced high-level computer programming language used for application development. C was originally developed by Dennis Ritchie at Bell Labs in the 1970's and was originally designed to be a systems programming language but since then has proven itself to be able to be used for various software applications such as business programs, engineering programs, and even games. The UNIX operating system is written in C.
 
 ### C++
 
@@ -227,7 +227,7 @@ A malicious program whose purpose is to harm a computer by deleting files, preve
 
 ### Cookie
 
-A small text file that a web server may store on a user’s computer for the purpose of uniquely identifying the user during future visits to the website.
+A small text file that a web server may store on a user's computer for the purpose of uniquely identifying the user during future visits to the website.
 
 ### ColdFusion
 
@@ -519,7 +519,7 @@ A server that serves connections to IRC.
 
 ### ISAPI
 
-Stands for Internet Server Application Programming Interface. ISAPI is an API for Microsoft’s IIS web server.
+Stands for Internet Server Application Programming Interface. ISAPI is an API for Microsoft's IIS web server.
 
 ### ISDN
 
@@ -535,7 +535,7 @@ A high level, object-oriented, platform independent programming language develop
 
 ### Java Applet
 
-A Java program that can run within a webpage and can be downloaded to the user’s computer from a webserver.
+A Java program that can run within a webpage and can be downloaded to the user's computer from a webserver.
 
 ### JavaScript
 
@@ -571,7 +571,7 @@ A unit of data consisting of 1024 bytes. Kilobyte is abbreviated as KB.
 
 ### LAN
 
-Stands for Local Area Network. A LAN is a network spanning a relatively small area, usually limited to one building or a group of buildings. LAN’s are often used by organizations that need their own network such as offices and educational institutions. Two or more LAN’s connected together make up a WAN.
+Stands for Local Area Network. A LAN is a network spanning a relatively small area, usually limited to one building or a group of buildings. LAN's are often used by organizations that need their own network such as offices and educational institutions. Two or more LAN's connected together make up a WAN.
 
 ### Link
 
@@ -579,7 +579,7 @@ In general programming, the execution of a linker. In spreadsheet software, when
 
 ### Linux
 
-A free open source operating system based on Unix. Linux gets its name from the man responsible for developing most of the operating system’s kernel — Linus Trovalds.
+A free open source operating system based on Unix. Linux gets its name from the man responsible for developing most of the operating system's kernel — Linus Trovalds.
 
 ### Mail
 
@@ -627,7 +627,7 @@ Document types that are defined by MIME. Some MIME types include text/plain, tex
 
 ### Modem
 
-An abbreviation for modulator-demodulator. A modem is a piece of computer hardware (could be internal or external) used to send data through telephone or cable lines. While data on a computer is stored digitally, data on telephone and cable lines is stored in an analog form. Other than sending data, it is the modem’s job to convert between digital and analog data. This is how modem gets its name — it modulates a digital signal into an analog signal, and then demodulates an analog signal into a digital signal.
+An abbreviation for modulator-demodulator. A modem is a piece of computer hardware (could be internal or external) used to send data through telephone or cable lines. While data on a computer is stored digitally, data on telephone and cable lines is stored in an analog form. Other than sending data, it is the modem's job to convert between digital and analog data. This is how modem gets its name — it modulates a digital signal into an analog signal, and then demodulates an analog signal into a digital signal.
 
 ### Mosaic
 
@@ -635,7 +635,7 @@ A web browser released in 1993 by the NCSA. Mosaic became the first commonly ava
 
 ### MOV
 
-A file extension used for multimedia files played on Apple’s QuickTime. A video codec developed by Apple.
+A file extension used for multimedia files played on Apple's QuickTime. A video codec developed by Apple.
 
 ### MP3
 
@@ -675,7 +675,7 @@ Stands for NetBios Extended User Interface. NetBEUI is an extended version of Ne
 
 ### NetBIOS
 
-Stands for Network Basic Input Output System. NetBIOS is an API that contains special functions for commmunication between computers on LAN’s. NetBIOS is used by DOS and Windows.
+Stands for Network Basic Input Output System. NetBIOS is an API that contains special functions for commmunication between computers on LAN's. NetBIOS is used by DOS and Windows.
 
 ### Navigate
 
@@ -707,7 +707,7 @@ A web browser developed by the company Opera. Opera is available for various ope
 
 ### OS
 
-Stands for Operating System. An OS is the central program on a computer. An OS is responsible for running other programs, getting input from the user, sending output to the screen, keeping track of files and directories, and communicating with hardware. Some OS’s include Windows, Linux, Unix, Mac, and Solaris.
+Stands for Operating System. An OS is the central program on a computer. An OS is responsible for running other programs, getting input from the user, sending output to the screen, keeping track of files and directories, and communicating with hardware. Some OS's include Windows, Linux, Unix, Mac, and Solaris.
 
 ### Packet
 
@@ -776,7 +776,7 @@ Stands for Portable Network Graphics. PNG is a graphics format that uses lossles
 
 ### POP
 
-Stands for Post Office Protocol. POP is a protocol used for receiving and reading e-mail from an e-mail server. The first version of the POP protocol named POP2 was a standard in the mid-80’s and required SMTP to send messages. The second version of the POP protocol named POP3 does not require SMTP to send messages, and can be used with or without it.
+Stands for Post Office Protocol. POP is a protocol used for receiving and reading e-mail from an e-mail server. The first version of the POP protocol named POP2 was a standard in the mid-80's and required SMTP to send messages. The second version of the POP protocol named POP3 does not require SMTP to send messages, and can be used with or without it.
 
 ### Port
 
@@ -784,11 +784,11 @@ In terms of hardware, a port is the physical interface on a computer to which de
 
 ### Protocol
 
-A set of rules dictating how programs, computers, and devices communicate with each other over the internet. For Example, the Hyper Text Transfer Protocol (HTTP) specifies how data is sent over the world wide web between the web server and the user’s web browser.
+A set of rules dictating how programs, computers, and devices communicate with each other over the internet. For Example, the Hyper Text Transfer Protocol (HTTP) specifies how data is sent over the world wide web between the web server and the user's web browser.
 
 ### PPP
 
-Stands for Point to Point Protocol. PPP is used to establish a direct connection between two computers. Often times, a connection between a user’s computer and that of an ISP’s server, so that the user can connect to the internet through the server.
+Stands for Point to Point Protocol. PPP is used to establish a direct connection between two computers. Often times, a connection between a user's computer and that of an ISP's server, so that the user can connect to the internet through the server.
 
 ### Proxy Server
 
@@ -796,11 +796,11 @@ A server that acts as a middle man in a connection between two computers. A prox
 
 ### QuickTime
 
-A multimedia format developed by Apple. Mac’s as well as PC’s can run video and animation in a QuickTime format. For Mac’s , the QuickTime technology is built into the operating system. For PC’s, a special QuickTime driver is required. Various encoding formats are supported by QuickTime including Cinepak, JPEG, and MPEG.
+A multimedia format developed by Apple. Mac's as well as PC's can run video and animation in a QuickTime format. For Mac's , the QuickTime technology is built into the operating system. For PC's, a special QuickTime driver is required. Various encoding formats are supported by QuickTime including Cinepak, JPEG, and MPEG.
 
 ### Router
 
-A software tool or hardware device that transfers data to different devices across networks. Since a router transfters data across networks, it has to be connected to at least two networks. These two networks can be two LANs, two WANs, or a LAN and its ISP’S network.
+A software tool or hardware device that transfers data to different devices across networks. Since a router transfters data across networks, it has to be connected to at least two networks. These two networks can be two LANs, two WANs, or a LAN and its ISP'S network.
 
 ### RAID
 
@@ -902,7 +902,7 @@ Forging an online identity in some way. With e-mail spoofing, someone can forge 
 
 ### Spyware
 
-Hidden software whose purpose is to gather data about a user’s web surfing habits. Spyware can come built in to various software that is downloadable from the internet, from software that comes pre-installed with a computer, or can secretly install itself from the web. Spyware usually gathers data about a user’s surfing habits for advertising purposes.
+Hidden software whose purpose is to gather data about a user's web surfing habits. Spyware can come built in to various software that is downloadable from the internet, from software that comes pre-installed with a computer, or can secretly install itself from the web. Spyware usually gathers data about a user's surfing habits for advertising purposes.
 
 ### SQL
 
@@ -918,7 +918,7 @@ Stands for Server Side Include. An SSI is a special type of HTML comment that wh
 
 ### SSL
 
-Stands for Secure Socket Layer. SSL is a protocol developed by Netscape which encrypts data transmitted over the web. SSL is used by websites that obtain confidential information about users such as a user’s address or credit card number.
+Stands for Secure Socket Layer. SSL is a protocol developed by Netscape which encrypts data transmitted over the web. SSL is used by websites that obtain confidential information about users such as a user's address or credit card number.
 
 ### Static IP address
 
@@ -958,7 +958,7 @@ A data packet that is sent over a network running TCP/IP.
 
 ### Trojan Horse
 
-A program that appears harmless, but its true purpose is malicious. Trojan horses are used for various purposes including allowing someone remote access to a victim’s computer (remote access trojan), providing an attacker with sensitive information such as usernames and passwords (data sending trojan), destroying files (destructive trojan), and using the victims computer as a proxy server (proxy trojan), among others.
+A program that appears harmless, but its true purpose is malicious. Trojan horses are used for various purposes including allowing someone remote access to a victim's computer (remote access trojan), providing an attacker with sensitive information such as usernames and passwords (data sending trojan), destroying files (destructive trojan), and using the victims computer as a proxy server (proxy trojan), among others.
 
 ### UDDI
 
@@ -966,7 +966,7 @@ Stands for Universal Description Discovery and Integration. UDDI is a web based 
 
 ### Unix
 
-An operating system developed by Bell Laboratories in the early 1970’s. Unix is written in C, and is used primarily for servers.
+An operating system developed by Bell Laboratories in the early 1970's. Unix is written in C, and is used primarily for servers.
 
 ### UNZIP
 
@@ -1000,7 +1000,7 @@ See Visual Basic.
 
 ### VBScript
 
-Stands for Visual Basic Scripting Edition. VBScript is a scripting language developed by Microsoft that works only in Microsoft’s Internet Explorer web browser and browsers based on Internet Explorer’s engine such as Flashpeak’s SlimBrowser. VBScript can be used to print dates, make calculations, interact with the user, and more. VBScript is based on Visual Basic , but it is much simpler.
+Stands for Visual Basic Scripting Edition. VBScript is a scripting language developed by Microsoft that works only in Microsoft's Internet Explorer web browser and browsers based on Internet Explorer's engine such as Flashpeak's SlimBrowser. VBScript can be used to print dates, make calculations, interact with the user, and more. VBScript is based on Visual Basic , but it is much simpler.
 
 ### Virus
 
@@ -1032,7 +1032,7 @@ Stands for World Wide Web Consortium. The W3C develops and maintains standards f
 
 ### WAN
 
-Stands for Wide Area Network. A WAN is a network that connects various computers and devices in a network larger than a LAN (in terms of geographical area). A WAN can also be used to connect together two or more LAN’s. The largest WAN in the world is the internet.
+Stands for Wide Area Network. A WAN is a network that connects various computers and devices in a network larger than a LAN (in terms of geographical area). A WAN can also be used to connect together two or more LAN's. The largest WAN in the world is the internet.
 
 ### WAP
 
@@ -1160,7 +1160,7 @@ The next generation of HTML/XHTML forms. XForms will separate data definition an
 
 ### XHTML
 
-Stands for Extensible Hyper Text Markup Language. XHTML is the next step in the evolution of HTML. It’s syntax is stricter and more verbose.
+Stands for Extensible Hyper Text Markup Language. XHTML is the next step in the evolution of HTML. It's syntax is stricter and more verbose.
 
 ### XPath
 
@@ -1212,13 +1212,13 @@ A popular file compression format. Files that are compressed with the ZIP format
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*7kT2S7lsQbsJUk7Q.png" class="graf-image" /></figure>Content Delivery Network
 
-This is typically a paid service you can use to get great performance for your app. Many CDNs act as caching proxies to your origin server; some require you to upload your assets to them. They give you a URL for each resource in your app. This URL will resolve differently for folks depending on where they’re browsing.
+This is typically a paid service you can use to get great performance for your app. Many CDNs act as caching proxies to your origin server; some require you to upload your assets to them. They give you a URL for each resource in your app. This URL will resolve differently for folks depending on where they're browsing.
 
-Behind the scenes, the CDN will distribute your content geographically with the goal of end-users being able to fetch your content with the lowest latency possible. For example, if a user is in India, they’d likely get content served from India faster than from the United States.
+Behind the scenes, the CDN will distribute your content geographically with the goal of end-users being able to fetch your content with the lowest latency possible. For example, if a user is in India, they'd likely get content served from India faster than from the United States.
 
 ### CoffeeScript, TypeScript
 
-These are both languages that compile to JavaScript. You’re able to write your code using the syntax they offer and when ready you compile your TypeScript or CoffeeScript into JavaScript.
+These are both languages that compile to JavaScript. You're able to write your code using the syntax they offer and when ready you compile your TypeScript or CoffeeScript into JavaScript.
 
 <a href="http://www.stoutsystems.com/articles/coffeescript-versus-typescript/" class="markup--anchor markup--p-anchor" title="http://www.stoutsystems.com/articles/coffeescript-versus-typescript/">CoffeeScript vs TypeScript</a>
 
@@ -1232,7 +1232,7 @@ Browsers that update themselves (without user intervention).
 
 ES stands for ECMAScript, which is the specification that JavaScript is based on. The number that follows is the version of the specification.
 
-Most browsers support at least ES5, and some even have ES6 (also known as ES2015) support. You can check each browser’s support (including yours) here:
+Most browsers support at least ES5, and some even have ES6 (also known as ES2015) support. You can check each browser's support (including yours) here:
 
 -   <span id="280c"><a href="http://kangax.github.io/compat-table/es5/" class="markup--anchor markup--li-anchor" title="http://kangax.github.io/compat-table/es5/">ES5 support</a></span>
 -   <span id="f676"><a href="http://kangax.github.io/compat-table/es6/" class="markup--anchor markup--li-anchor" title="http://kangax.github.io/compat-table/es6/">ES6 support</a></span>
@@ -1247,7 +1247,7 @@ Most browsers support at least ES5, and some even have ES6 (also known as ES2015
 
 ### Linter, linting, jslint, jshint
 
-A validation tool which checks for common issues in your JavaScript. You’d usually use this in your build process to enforce quality in your codebase. A great example of something to check for: _making sure you’ve always got your semicolons_.
+A validation tool which checks for common issues in your JavaScript. You'd usually use this in your build process to enforce quality in your codebase. A great example of something to check for: _making sure you've always got your semicolons_.
 
 <a href="http://jshint.com/docs/options/" class="markup--anchor markup--p-anchor" title="http://jshint.com/docs/options/">An example of some of the options you can configure</a>
 
@@ -1257,7 +1257,7 @@ This is a concept that typically means providing JavaScript which tests for feat
 
 ### Promise
 
-Asynchronous calls typically return a promise (or deferred). This is an object which has a state: it can be given handlers for when it’s fulfilled or rejected.
+Asynchronous calls typically return a promise (or deferred). This is an object which has a state: it can be given handlers for when it's fulfilled or rejected.
 
 Ember makes use of these in places like the model hook for a route. Until the promise resolves, Ember is able to put the route into a “loading” state.
 
@@ -1274,13 +1274,13 @@ Server Side Rendering
 
 When related to JavaScript, this can be part of your build process which “transpiles” (converts) your ES6 syntax JavaScript to JavaScript that is supported by current browsers.
 
-Besides ES6, you’ll see a lot of content about compiling/transpiling CoffeeScript, a short-hand language which can “compile” to JavaScript.
+Besides ES6, you'll see a lot of content about compiling/transpiling CoffeeScript, a short-hand language which can “compile” to JavaScript.
 
 -   <span id="3730">Ember CLI specifically uses <a href="https://babeljs.io/" class="markup--anchor markup--li-anchor" title="https://babeljs.io/">Babel</a> via the <a href="https://github.com/babel/ember-cli-babel" class="markup--anchor markup--li-anchor" title="https://github.com/babel/ember-cli-babel">ember-cli-babel</a> plugin.</span>
 
 ### Shadow DOM
 
-Not to be confused with Virtual DOM. Shadow DOM is still a work in progress, but basically a proposed way to have an “isolated” DOM encapsulated within your app’s DOM.
+Not to be confused with Virtual DOM. Shadow DOM is still a work in progress, but basically a proposed way to have an “isolated” DOM encapsulated within your app's DOM.
 
 Creating a re-usable “widget” or control might be a good use-case for this. Browsers implement some of their controls using their own version of a shadow DOM.
 
@@ -1289,7 +1289,7 @@ Creating a re-usable “widget” or control might be a good use-case for this. 
 
 ### Virtual DOM
 
-Not to be confused with Shadow DOM. The concept of a virtual DOM means abstracting your code (or in our case, Ember) away from using the browser’s DOM in favor of a “virtual” DOM that can easily be accessed for read/writes or even serialized.
+Not to be confused with Shadow DOM. The concept of a virtual DOM means abstracting your code (or in our case, Ember) away from using the browser's DOM in favor of a “virtual” DOM that can easily be accessed for read/writes or even serialized.
 
 ---
 
@@ -1313,7 +1313,7 @@ new users on the website.
 **Declarations** — in JavaScript declarations are `var`, `const` and `let` for  
 the creation of variables, constants and lexically scoped variables.
 
-**Closure** — the scope where a variable can be accessed. A function used within another function can access the parent function’s variables since its scope extends to its parent.
+**Closure** — the scope where a variable can be accessed. A function used within another function can access the parent function's variables since its scope extends to its parent.
 
 In this example, the variable `color` is accessible to the function `displayColor()`.
 
@@ -1332,7 +1332,7 @@ actual content.
 **Customer relationship management (CRM)** — a CRM system allows businesses to  
 manage business relationships and the data and information associated with them.  
 E.g. using CRM to track holiday bookings for a holiday bookings site. The CRM  
-would have information on the customer and the trip they’re planning/ have  
+would have information on the customer and the trip they're planning/ have  
 booked and any staff members or actions that may need taking to progress or  
 confirm their booking.
 
@@ -1345,7 +1345,7 @@ value of an existing piece of data or delete an existing piece of data.
 specified resources on a web page to be requested from another domain outside  
 the domain from which the first resource was served. E.g. uploading images using  
 different domains using Amazon S3. For more about origin policies see  
-'Same-origin Policy’.
+'Same-origin Policy'.
 
 <a href="https://en.wikipedia.org/wiki/JavaScript_syntax#Destructuring_assignment" class="markup--anchor markup--p-anchor"><strong>Destructuring Assignment</strong></a> -  
 the ability to unpack and assign variables when there are multiple parameters.
@@ -1379,10 +1379,10 @@ System (DNS)**.
 names (and other internet resources). The directory stores already registered  
 domain names along with their corresponding IP addresses.
 
-<a href="https://en.wikipedia.org/wiki/Hexadecimal" class="markup--anchor markup--p-anchor"><strong>Hexadecimal</strong></a> — Uses 16 different symbols. “0”-”9" to represent the values 0 to 9 and “A”-”F” (“a”-”f” is acceptable too) to represent the values 10 to 15. It’s common to use  
+<a href="https://en.wikipedia.org/wiki/Hexadecimal" class="markup--anchor markup--p-anchor"><strong>Hexadecimal</strong></a> — Uses 16 different symbols. “0”-”9" to represent the values 0 to 9 and “A”-”F” (“a”-”f” is acceptable too) to represent the values 10 to 15. It's common to use  
 hexadecimals when working in CSS to assign colors to your elements.
 
-The hexadecimal for dwyl’s logo color is \#4bc0a9 (teal).  
+The hexadecimal for dwyl's logo color is \#4bc0a9 (teal).  
 To convert the hexadecimal into RGB values, do the following:
 
     R = 4b
@@ -1400,7 +1400,7 @@ To convert the hexadecimal into RGB values, do the following:
 
 Hex: \#4bc0a9 is RGB: 75, 192, 169.
 
-**Hoisting** — Hoisting is JavaScript’s default behaviour of moving `var`  
+**Hoisting** — Hoisting is JavaScript's default behaviour of moving `var`  
 declarations to the top of the current **scope** when your code is run. What  
 this means is that whatever line your write a `var` declaration on e.g. `var x;`,  
 when your code is run it will automatically be lifted and read as if it were  
@@ -1461,9 +1461,9 @@ feature of C++, Scala, Ruby, Haskell and Rust.
 with modern web technologies, allowing them to provide a more app-like  
 experience. They offer functionality such as being saved as a tile on your  
 mobile home screen, working offline and push notifications. The “progressive”  
-part means they’re “progressively enhanced” with newer features, which means  
-they’ll also work in older browsers that don’t support the new features. Unlike  
-native apps, they don’t have to be updated/listed in the app store although it  
+part means they're “progressively enhanced” with newer features, which means  
+they'll also work in older browsers that don't support the new features. Unlike  
+native apps, they don't have to be updated/listed in the app store although it  
 is possible to list them in the app store when this is desired.
 
 <a href="https://www.softwaretestingmaterial.com/regression-testing/" class="markup--anchor markup--p-anchor"><strong>Regression Testing</strong></a> -  
@@ -1490,7 +1490,7 @@ enforces that documents that interact with each other have the same origin.
 
 **Search Engine Optimisation (SEO)** — is the process of improving the visibility  
 of a website or web page in unpaid/organic search engine results. There are many  
-aspects to SEO and search engines change how it’s calculated over time. It may  
+aspects to SEO and search engines change how it's calculated over time. It may  
 include the use of key words on a page, how often you add/edit content on your  
 site, to the way other sites link to you on the web.
 

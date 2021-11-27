@@ -13,7 +13,7 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 #### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science.
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d"><strong>PYTHON</strong><br />
 <em>Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -84,7 +84,7 @@ To determine if your Windows computer already has Python 3:
 -   <span id="6434">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b76b">`python <filename.py>`</span>
 
-#### By default, the python doesn’t require any imports to run a python file.
+#### By default, the python doesn't require any imports to run a python file.
 
 ### Create and execute a program
 
@@ -520,7 +520,7 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 #### `for` Loop
 
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
-Let’s say we wanted to create the example above.
+Let's say we wanted to create the example above.
 
 _loop.py_
 
@@ -644,50 +644,50 @@ _functions.py_
 
 The following is a modified version of a tutorial posted By: <a href="https://replit.com/@InvisibleOne" class="markup--anchor markup--p-anchor">InvisibleOne</a>
 
-I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
+I would cite the original tutorial it's self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
 
 ### 1. Adventure Story
 
 The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.  
-First things first, let’s import the stuff that we need, like this:
+First things first, let's import the stuff that we need, like this:
 
     import os   #very useful for clearing the screen
     import random
 
 Now, we need some variables to hold some of the player data.
 
-    name = input(“Name Please:  “) #We’ll use this to get the name from the user
+    name = input(“Name Please:  “) #We'll use this to get the name from the user
     nickname = input(“Nickname: “)
 
-Ok, now we have the player’s name and nickname, let’s welcome them to the game
+Ok, now we have the player's name and nickname, let's welcome them to the game
 
     print(“Hello and welcome “ + name)
 
-Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
+Now for the story. The most important part of all stories is the introduction, so let's print our introduction
 
     print(“Long ago, there was a magical meal known as Summuh and Spich Atip”) #We can drop a line by making a new print statement, or we can use the escape code \n
-    print(“It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it’s power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was “ + name + “\n so ” + nickname + ' headed out to find this great power, and stop the war…’)
+    print(“It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it's power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was “ + name + “\n so ” + nickname + ' headed out to find this great power, and stop the war…')
 
-Now, we’ll give the player their first choice
+Now, we'll give the player their first choice
 
     print(“After hiking through the wastelands for a long time, you come to a massive ravine, there is only a single way across\nA rickety old bridge, taking that could be very dangerous, but… maybe you could jump across?”)
     choice1 = input(“[1]  Take the bridge     [2] Try and jump over”)
     #Now we check to see what the player chose
-    If choice1 == '1’:
+    If choice1 == '1':
       print(“You slowly walk across the bride, it creakes ominously, then suddenly breaks! You flail through the air before hitting the ground a thousand feet below. Judging by the fact that you hit the ground with the equivalent force of being hit by a cement truck moving at 125 miles an hour, you are dead…”)
-      #The player lost, so now we’ll boot them out of the program with the exit command
+      #The player lost, so now we'll boot them out of the program with the exit command
       exit()
     #Then we check to see if they made the other choice, we can do with with else if, written as elif
-    elif choice1 == '2’:
-      print(“You make the jump! You see a feather hit the bridge, the weight breakes it and sends it to the bottom of the ravine\nGood thing you didn’t use that bridge.”)
+    elif choice1 == '2':
+      print(“You make the jump! You see a feather hit the bridge, the weight breakes it and sends it to the bottom of the ravine\nGood thing you didn't use that bridge.”)
     #Now we can continue the story
     print(“A few more hours of travel and you come to the unclimbable mountain.”)
     choice2 == input(“[1]   Give up    [2]    Try and climb the mountain”)
-    if choice2 == '1’:
+    if choice2 == '1':
       print(“You gave up and lost…”)
       #now we exit them again
       exit()
-    elif choice2 == '1’:
+    elif choice2 == '1':
       print(“you continue up the mountain. Climbing is hard, but finally you reach the top.\nTo your surprise there is a man standing at the top of the mountain, he is very old.”)
       print(“Old Man: Hey “ + nickname)
       print(“You: How do you know my name!?!”)
@@ -696,24 +696,24 @@ Now, we’ll give the player their first choice
       print(“Old Man: Summuh and Spich Atip? You must mean the Pita Chips and Hummus”)
       print(“You: Pita…chips…humus, what power do those have?”)
       print(“Old Man: Pretty simple kid, their organic…”)
-      #Now let’s clear the screen
-      os.system('clear’)
+      #Now let's clear the screen
+      os.system('clear')
       print(“YOU WON!!!”)
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
 
 ### 2. TEXT ENCODER
 
-Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
+Ever make secret messages as a kid? I used to. Anyways, here's the way you can make a program to encode messages! It's pretty simple. First things first, let's get the message the user wants to encode, we'll use input() for that:
 
     message = input(“Message you would like encoded: “)
 
 Now we need to split that string into a list of characters, this part is a bit more complicated.
 
-    #We’ll make a function, so we can use it later
+    #We'll make a function, so we can use it later
     def split(x):
       return (char for char in x)
-    #now we’ll call this function with our text
+    #now we'll call this function with our text
     L_message = message.lower() #This way we can lower any of their input
     encode = split(l_message)
 
@@ -721,13 +721,13 @@ Now we need to convert the characters into code, well do this with a for loop:
 
     out = []
     for x in encode:
-      if x == 'a’:
-        out.append('1’)
-      elif x == 'b’:
-        out.append('2’)
-    #And we’ll continue on though this with each letter of the alphabet
+      if x == 'a':
+        out.append('1')
+      elif x == 'b':
+        out.append('2')
+    #And we'll continue on though this with each letter of the alphabet
 
-Once we’ve encoded the text, we’ll print it back for the user
+Once we've encoded the text, we'll print it back for the user
 
     x = ' '.join(out)
     #this will turn out into a string that we can print
@@ -741,7 +741,7 @@ Number guessing games are fun and pretty simple, all you need are a few loops. T
 
     import random
 
-That is pretty simple. Now we’ll make a list with the numbers were want available for the game
+That is pretty simple. Now we'll make a list with the numbers were want available for the game
 
     num_list = [1,2,3,4,5,6,7,8,9,10]
 
@@ -749,57 +749,57 @@ Next, we get a random number from the list
 
     num = random.choice(num_list)
 
-Now, we need to ask the user for input, we’ll to this with a while loop
+Now, we need to ask the user for input, we'll to this with a while loop
 
     while True:
-      # We could use guess = input(“What do you think my number is?   “), but that would produce a string, and numbers are integers, so we’ll convert the input into an integer
+      # We could use guess = input(“What do you think my number is?   “), but that would produce a string, and numbers are integers, so we'll convert the input into an integer
       guess = int(input(“What do you think my number is?   “))
-      #Next, we’ll check if that number is equal to the number we picked
+      #Next, we'll check if that number is equal to the number we picked
       if guess == num:
         break   #this will remove us from the loop, so we can display the win message
       else:
-        print(“Nope, that isn’t it”)
-    #outside our loop, we’ll have the win message that is displayed if the player gets the correct number.
+        print(“Nope, that isn't it”)
+    #outside our loop, we'll have the win message that is displayed if the player gets the correct number.
     print(“You won!”)
 
 Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt’  
-Now, to open a file in python we use open('filename’, type) The type can be 'r’ for read, or 'w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'  
+Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
     message = input(“What would you like to save?”)
 
-Now we’ll open our file and save that text
+Now we'll open our file and save that text
 
-    o = open('notes.txt’, 'w’)
+    o = open('notes.txt', 'w')
     o.write(message)
-    #this next part is very important, you need to always remember to close your file or what you wrote to it won’t be saved
+    #this next part is very important, you need to always remember to close your file or what you wrote to it won't be saved
     o.close()
 
-There we go, now the information is in the file. Next, we’ll retrieve it
+There we go, now the information is in the file. Next, we'll retrieve it
 
-    read = open('notes.txt’, 'r’)
+    read = open('notes.txt', 'r')
     out = read.read()
     # now we need to close the file
     read.close()
     # and now print what we read
     print(out)
 
-There we go, that’s how you can open files and close files with python
+There we go, that's how you can open files and close files with python
 
 ### 5. Random Dare Generator
 
-Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
+Who doesn't love a good dare? Here is a program that can generate random dares. The first thing we'll need to do is as always, import random. Then we'll make some lists of dares
 
     import random
-    list1 = ['jump on’, 'sit on’, 'rick roll on’, 'stop on’, 'swing on’]
-    list2 = ['your cat’, 'your neighbor’, 'a dog’, 'a tree’, 'a house’]
-    list3 = ['your mom’, 'your best friend’, 'your dad’, 'your teacher’]
-    #now we’ll generate a dare
+    list1 = ['jump on', 'sit on', 'rick roll on', 'stop on', 'swing on']
+    list2 = ['your cat', 'your neighbor', 'a dog', 'a tree', 'a house']
+    list3 = ['your mom', 'your best friend', 'your dad', 'your teacher']
+    #now we'll generate a dare
     while True:
-      if input() == '’: #this will trigger if they hit enter
+      if input() == '': #this will trigger if they hit enter
         print(“I dare you to “ + random.choice(list1) + ' ' + random.choice(list2) + ' in front of '  + random.choice(list3)
 
 ### Discover More:

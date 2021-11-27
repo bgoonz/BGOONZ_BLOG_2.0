@@ -16,7 +16,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="bd3f">Udi Manber — <a href="https://www.amazon.com/Introduction-Algorithms-Creative-Udi-Manber/dp/0201120372" class="markup--anchor markup--li-anchor">Introduction to Algorithms: A Creative Approach</a></span>
 -   <span id="c22b">Cormen, Leiserson, Rivest, Stein — <a href="https://mitpress.mit.edu/books/introduction-algorithms" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a></span>
 -   <span id="18c8">Sedgewick, Wayne — <a href="http://algs4.cs.princeton.edu/home/" class="markup--anchor markup--li-anchor">Algorithms</a></span>
--   <span id="1ad7">Antti Laaksonen — <a href="https://cses.fi/book.html" class="markup--anchor markup--li-anchor">Competitive Programmer’s Handbook</a></span>
+-   <span id="1ad7">Antti Laaksonen — <a href="https://cses.fi/book.html" class="markup--anchor markup--li-anchor">Competitive Programmer's Handbook</a></span>
 -   <span id="c865">Steven & Felix Halim — <a href="https://cpbook.net/" class="markup--anchor markup--li-anchor">Competitive Programming</a></span>
 -   <span id="28b6">Jon Bentley — <a href="http://www.wou.edu/~jcm/Spring-P-2015/Programming%20Pearls%20%282nd%20Ed%29%20Bentley.pdf" class="markup--anchor markup--li-anchor">Programming Pearls</a></span>
 -   <span id="339b"><a href="https://e-maxx-eng.appspot.com/" class="markup--anchor markup--li-anchor">E-Maxx Algorithms</a></span>
@@ -99,7 +99,7 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="893c">Joel Spolsky — <a href="http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html" class="markup--anchor markup--li-anchor">The Guerrilla Guide to Interviewing (v.3)</a></span>
 -   <span id="227a">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2008/06/done-and-gets-things-smart.html" class="markup--anchor markup--li-anchor">Done, and Gets Things Smart</a></span>
 -   <span id="d576">Steve Yegge — <a href="https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions" class="markup--anchor markup--li-anchor">Five Essential Phone Interview Questions</a></span>
--   <span id="1ebf">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2013/03/01/questions-i-want-to-ask-but-cant/" class="markup--anchor markup--li-anchor">Questions I Want to Ask, but Can’t</a></span>
+-   <span id="1ebf">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2013/03/01/questions-i-want-to-ask-but-cant/" class="markup--anchor markup--li-anchor">Questions I Want to Ask, but Can't</a></span>
 -   <span id="85a5"><a href="http://blog.robertelder.org/50-interviews-with-facebook-twitter-amazon-others/" class="markup--anchor markup--li-anchor">50+ Interviews with Facebook, Twitter, Amazon &amp; others</a></span>
 -   <span id="73eb"><a href="http://blog.pamelafox.org/2013/09/technical-interviews-make-me-cry.html" class="markup--anchor markup--li-anchor">Technical Interviews Make Me Cry</a></span>
 -   <span id="d659"><a href="http://stephjang.com/blog/khan-academy-job/" class="markup--anchor markup--li-anchor">How I hustled my way to a developer job at Khan Academy</a></span>
@@ -109,10 +109,10 @@ Most good programmers do programming not because they expect to get paid or get 
 -   <span id="4f59">Moxie Marlinspike — <a href="https://moxie.org/blog/career-advice/" class="markup--anchor markup--li-anchor">Career Advice</a></span>
 -   <span id="b428">Dan Luu — <a href="http://danluu.com/programmer-moneyball/" class="markup--anchor markup--li-anchor">We Only Hire the Trendiest</a></span>
 -   <span id="57b3">Reginald Long — <a href="http://reginaldlong.com/how-i-went-from-failing-every-interview-to-a-job-at-amazon/" class="markup--anchor markup--li-anchor">How I went from failing every interview to a job at Amazon</a></span>
--   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk’ : My Amazon interview experience</a></span>
+-   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk' : My Amazon interview experience</a></span>
 -   <span id="c878">Key Values — <a href="https://www.keyvalues.io/" class="markup--anchor markup--li-anchor">A website which helps to find the best team due to your values</a></span>
 -   <span id="5455">Laurie Voss — <a href="http://seldo.com/weblog/2014/08/26/you_suck_at_technical_interviews" class="markup--anchor markup--li-anchor">You suck at technical interviews</a></span>
--   <span id="e331"><a href="http://www.gwan.com/blog/20160405.html" class="markup--anchor markup--li-anchor">Google’s “Director of Engineering” Hiring Test</a></span>
+-   <span id="e331"><a href="http://www.gwan.com/blog/20160405.html" class="markup--anchor markup--li-anchor">Google's “Director of Engineering” Hiring Test</a></span>
 -   <span id="d089"><a href="http://stereobooster.github.io/it-career" class="markup--anchor markup--li-anchor">IT-Career useful links</a></span>
 -   <span id="ecf6"><a href="https://resumeworded.com/" class="markup--anchor markup--li-anchor">Resume helper</a></span>
 
@@ -181,7 +181,7 @@ Most good programmers do programming not because they expect to get paid or get 
 ### JavaScript
 
 -   <span id="3f22"><a href="http://exploringjs.com/" class="markup--anchor markup--li-anchor">Free books by Dr. Axel Rauschmayer</a></span>
--   <span id="fd1a"><a href="https://github.com/getify/You-Dont-Know-JS" class="markup--anchor markup--li-anchor">You Don’t Know JS</a></span>
+-   <span id="fd1a"><a href="https://github.com/getify/You-Dont-Know-JS" class="markup--anchor markup--li-anchor">You Don't Know JS</a></span>
 -   <span id="8cd1"><a href="http://superherojs.com/" class="markup--anchor markup--li-anchor">Superhero.js</a></span>
 -   <span id="466b"><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" class="markup--anchor markup--li-anchor">h5bp/Front-end-Developer-Interview-Questions</a></span>
 
@@ -196,9 +196,9 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ### Python
 
--   <span id="6185"><a href="http://docs.python-guide.org/en/latest/" class="markup--anchor markup--li-anchor">The Hitchhiker’s Guide to Python</a></span>
+-   <span id="6185"><a href="http://docs.python-guide.org/en/latest/" class="markup--anchor markup--li-anchor">The Hitchhiker's Guide to Python</a></span>
 -   <span id="6dc0"><a href="https://github.com/quantifiedcode/python-anti-patterns" class="markup--anchor markup--li-anchor">quantifiedcode/python-anti-patterns</a></span>
--   <span id="ff90"><a href="http://www.toptal.com/python#hiring-guide" class="markup--anchor markup--li-anchor">The Insider’s Guide to Python Interviewing</a></span>
+-   <span id="ff90"><a href="http://www.toptal.com/python#hiring-guide" class="markup--anchor markup--li-anchor">The Insider's Guide to Python Interviewing</a></span>
 -   <span id="4bcf">Book: <a href="http://elementsofprogramminginterviews.com/sample/epilight_python_new.pdf" class="markup--anchor markup--li-anchor">Elements of Programming Interviews in Python</a></span>
 
 ### React
@@ -209,7 +209,7 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ---
 
-### If that wasn’t enough … try this on for size:
+### If that wasn't enough … try this on for size:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 4, 2021](https://medium.com/p/88fce9876261).
 

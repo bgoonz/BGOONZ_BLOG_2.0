@@ -9,7 +9,7 @@ categories: - en - javascript
 ---
 
 In case of established websocket connection, server or firewall could timeout and terminate the connection after a period of inactivity. To deal with this situation, we send periodic message to the server. To control the timeout we will add two functions in our code : one to make sure connection keep alive and another one to cancel the keep alive. Also we need a common `timerID` variable.
-Let’s have a look on implementation-
+Let's have a look on implementation-
 
 ```js
 var timerID = 0;

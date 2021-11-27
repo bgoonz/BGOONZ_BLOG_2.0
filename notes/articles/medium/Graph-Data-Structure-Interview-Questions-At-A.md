@@ -1,12 +1,12 @@
 # Graph Data Structure Interview Questions At A Glance
 
-Because they’re just about the most important data structure there is.
+Because they're just about the most important data structure there is.
 
 ---
 
 ### Graph Data Structure Interview Questions At A Glance
 
-Because they’re just about the most important data structure there is.
+Because they're just about the most important data structure there is.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*D_VTiLB2q1sax7Dd.png" class="graf-image" /></figure>### Graphs
 
@@ -65,11 +65,11 @@ It depends on the implementation. (<a href="https://github.com/LambdaSchool/Grap
 
 ### Graph Representations
 
-The two most common ways to represent graphs in code are adjacency lists and adjacency matrices, each with its own strengths and weaknesses. When deciding on a graph implementation, it’s important to understand the type of data and operations you will be using.
+The two most common ways to represent graphs in code are adjacency lists and adjacency matrices, each with its own strengths and weaknesses. When deciding on a graph implementation, it's important to understand the type of data and operations you will be using.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*J7ZaHRxtBYCkaiQZ.png" class="graf-image" /></figure>### Adjacency List
 
-In an adjacency list, the graph stores a list of vertices and for each vertex, a list of each vertex to which it’s connected. So, for the following graph…
+In an adjacency list, the graph stores a list of vertices and for each vertex, a list of each vertex to which it's connected. So, for the following graph…
 
 …an adjacency list in Python could look something like this:
 
@@ -85,11 +85,11 @@ In an adjacency list, the graph stores a list of vertices and for each vertex, a
                               "G": {"A", "F"}
                             }
 
-Note that this adjacency list doesn’t actually use any lists. The `vertices` collection is a `dictionary` which lets us access each collection of edges in O(1) constant time while the edges are contained in a `set` which lets us check for the existence of edges in O(1) constant time.
+Note that this adjacency list doesn't actually use any lists. The `vertices` collection is a `dictionary` which lets us access each collection of edges in O(1) constant time while the edges are contained in a `set` which lets us check for the existence of edges in O(1) constant time.
 
 ### Adjacency Matrix
 
-Now, let’s see what this graph might look like as an adjacency matrix:
+Now, let's see what this graph might look like as an adjacency matrix:
 
     class Graph:
         def __init__(self):
@@ -107,7 +107,7 @@ In practice, both of these would probably contain more information by including 
 
 ### Tradeoffs
 
-Both adjacency matrices and adjacency lists have their own strengths and weaknesses. Let’s explore their tradeoffs.
+Both adjacency matrices and adjacency lists have their own strengths and weaknesses. Let's explore their tradeoffs.
 
 For the following:
 
@@ -152,7 +152,7 @@ Takeaway: Adding vertices is very efficient in adjacency lists but very ineffici
 -   <span id="8226">**Adjacency Matrix**: O(V ^ 2)</span>
 -   <span id="85fd">**Adjacency List**: O(V)</span>
 
-Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex’s row, then remove that column from each other row. Removing an element from a list requires moving everything after that element over by one slot which takes an average of V/2 operations. Since we need to do that for every single row in our matrix, that results in a V² time complexity. On top of that, we need to reduce the index of each vertex after our removed index by 1 as well which doesn’t add to our quadratic time complexity, but does add extra operations.
+Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex's row, then remove that column from each other row. Removing an element from a list requires moving everything after that element over by one slot which takes an average of V/2 operations. Since we need to do that for every single row in our matrix, that results in a V² time complexity. On top of that, we need to reduce the index of each vertex after our removed index by 1 as well which doesn't add to our quadratic time complexity, but does add extra operations.
 
 For an adjacency list, we need to visit each vertex and remove all edges pointing to our removed vertex. Removing elements from sets and dictionaries is a O(1) operation, so this results in an overall O(V) time complexity.
 
@@ -218,7 +218,7 @@ Say you want to know all the edges originating from a particular vertex. With an
 
     return self.vertex[v]
 
-In an adjacency matrix, however, it’s a bit more complicated. You would need to iterate through the entire row and populate a list based on the results:
+In an adjacency matrix, however, it's a bit more complicated. You would need to iterate through the entire row and populate a list based on the results:
 
     v_edges = []
     for v2 in self.edges[v]:
@@ -248,7 +248,7 @@ Can use breadth-first search when searching a graph; explores graph outward in r
 
 ### Coloring BFS
 
-It’s useful to color vertexes as you arrive at them and as you leave them behind as already searched.
+It's useful to color vertexes as you arrive at them and as you leave them behind as already searched.
 
 **unlisted**: white  
 **vertices whose neighbors are being explored**: gray  
@@ -278,7 +278,7 @@ It’s useful to color vertexes as you arrive at them and as you leave them behi
 3.  <span id="863c">Enqueue starting vertex.</span>
 4.  <span id="b8d8">Check if queue is not empty.</span>
 5.  <span id="2dc5">If not empty, peek at first item in queue.</span>
-6.  <span id="0e5c">Loop through that vertex’s neighbors.</span>
+6.  <span id="0e5c">Loop through that vertex's neighbors.</span>
 7.  <span id="1a9e">Check if unvisited.</span>
 8.  <span id="7165">If unvisited, mark as gray and enqueue vertex.</span>
 9.  <span id="338b">Dequeue current vertex and mark as black.</span>
@@ -395,7 +395,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 -   <span id="9d7a">A graph is any collection of nodes and edges.</span>
 -   <span id="7a3a">A graph is a less restrictive class of collections of nodes than structures like a tree.</span>
--   <span id="8d05">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
+-   <span id="8d05">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="6fac">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
@@ -412,8 +412,8 @@ dives down the graph as far as it can before backtracking and exploring another 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*u8Nu829gPtxU6J0siwljJA.png" class="graf-image" /></figure>### Dense Graph
 
 -   <span id="7b24">Dense Graph — A graph with lots of edges.</span>
--   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:</span>
--   <span id="0e05">Let’s find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
+-   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:</span>
+-   <span id="0e05">Let's find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
 -   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
 -   <span id="146f">When the number of edges in the graph is close to the maximum number of edges, the graph is dense.</span>
 
@@ -432,7 +432,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 ### _Undirected_ Graph
 
--   <span id="6030">Undirected Graph — Edges don’t have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
+-   <span id="6030">Undirected Graph — Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
 
 ### Node Class
 

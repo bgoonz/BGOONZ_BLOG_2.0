@@ -78,7 +78,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="2d7b">Install each util independently</span>
 -   <span id="56c9">Read the <a href="https://github.com/angus-c/just/blob/master/TRADEOFFS.md" class="markup--anchor markup--li-anchor">tradeoffs document</a> to see if Lodash is better</span>
 -   <span id="ab41"><a href="https://github.com/NickGard/tiny-get" class="markup--anchor markup--li-anchor">tiny-get</a>: A minimal-weight lodash.get equivalent utility</span>
--   <span id="ddc7"><a href="https://www.evt.land/" class="markup--anchor markup--li-anchor">evt</a>: A type safe replacement for node’s EventEmitter</span>
+-   <span id="ddc7"><a href="https://www.evt.land/" class="markup--anchor markup--li-anchor">evt</a>: A type safe replacement for node's EventEmitter</span>
 -   <span id="423f"><a href="https://github.com/nicbell/liteready" class="markup--anchor markup--li-anchor">liteready</a>: A lightweight DOM ready.</span>
 -   <span id="c9ff"><a href="https://github.com/jaredhanson/passport" class="markup--anchor markup--li-anchor">passport</a>: Simple, unobtrusive authentication for Node.js</span>
 -   <span id="88af"><a href="https://github.com/desandro/get-size" class="markup--anchor markup--li-anchor">get-size</a>: Get the size of elements</span>
@@ -94,7 +94,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="5f57"><a href="https://github.com/sindresorhus/lazy-value" class="markup--anchor markup--li-anchor">lazy-value</a>: Create a lazily evaluated value</span>
 -   <span id="d14f"><a href="https://github.com/planttheidea/fast-equals" class="markup--anchor markup--li-anchor">fast-equals</a>: A blazing fast equality comparison, either shallow or deep</span>
 -   <span id="c771"><a href="https://github.com/planttheidea/fast-copy" class="markup--anchor markup--li-anchor">fast-copy</a>: A blazing fast deep object copier</span>
--   <span id="4850"><a href="https://github.com/stipsan/compute-scroll-into-view" class="markup--anchor markup--li-anchor">compute-scroll-into-view</a>: Utility for calculating what should be scrolled, how it’s scrolled is up to you</span>
+-   <span id="4850"><a href="https://github.com/stipsan/compute-scroll-into-view" class="markup--anchor markup--li-anchor">compute-scroll-into-view</a>: Utility for calculating what should be scrolled, how it's scrolled is up to you</span>
 -   <span id="a7f4"><a href="https://github.com/lukeed/arr" class="markup--anchor markup--li-anchor">arr</a>: A collection of tiny, highly performant Array.prototype alternatives</span>
 -   <span id="4622"><a href="https://github.com/fuhton/timedstorage" class="markup--anchor markup--li-anchor">timedstorage</a>: A library for storing and expiring objects in window.localstorage</span>
 -   <span id="007a"><a href="https://github.com/stevemao/left-pad" class="markup--anchor markup--li-anchor">left-pad</a>: String left pad</span>
@@ -102,7 +102,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="57da"><a href="https://github.com/hybridables/always-done" class="markup--anchor markup--li-anchor">always-done</a>: Handle completion and errors with elegance! Support for async/await, promises, callbacks, streams and observables. A drop-in replacement for async-done — pass 100% of its tests plus more</span>
 -   <span id="a7b3"><a href="https://github.com/words" class="markup--anchor markup--li-anchor">words</a>: Linguistic javascript modules</span>
 -   <span id="0e04"><a href="https://github.com/davidtheclark/no-scroll" class="markup--anchor markup--li-anchor">no-scroll</a>: Disable scrolling on an element that would otherwise scroll</span>
--   <span id="cc78"><a href="https://github.com/catamphetamine/libphonenumber-js" class="markup--anchor markup--li-anchor">libphonenumber-js</a>: A simpler (and smaller) rewrite of Google Android’s libphonenumber library</span>
+-   <span id="cc78"><a href="https://github.com/catamphetamine/libphonenumber-js" class="markup--anchor markup--li-anchor">libphonenumber-js</a>: A simpler (and smaller) rewrite of Google Android's libphonenumber library</span>
 -   <span id="4a91"><a href="https://github.com/text-mask/text-mask" class="markup--anchor markup--li-anchor">text-mask</a>: Input mask for React, Angular, Ember, Vue, & plain JavaScript</span>
 -   <span id="8909"><a href="https://github.com/vtex/msk" class="markup--anchor markup--li-anchor">msk</a>: Small library to mask strings</span>
 -   <span id="f062"><a href="https://github.com/davidtheclark/focus-trap" class="markup--anchor markup--li-anchor">focus-trap</a>: Trap focus within a DOM node</span>
@@ -113,7 +113,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="5332"><a href="https://github.com/peterpme/sub-in" class="markup--anchor markup--li-anchor">sub-in</a>: 🥙 A tiny (115B) find-and-replace utility for strings in Javascript</span>
 -   <span id="cc9c"><a href="https://github.com/zenozeng/color-hash" class="markup--anchor markup--li-anchor">color-hash</a>: Generate color based on the given string (using HSL color space and BKDRHash)</span>
 -   <span id="f973"><a href="https://github.com/zeit/title" class="markup--anchor markup--li-anchor">title</a>: A service for capitalizing your title properly</span>
--   <span id="8f05"><a href="https://github.com/aceakash/string-similarity" class="markup--anchor markup--li-anchor">string-similarity</a>: Finds degree of similarity between two strings, based on Dice’s Coefficient, which is mostly better than Levenshtein distance</span>
+-   <span id="8f05"><a href="https://github.com/aceakash/string-similarity" class="markup--anchor markup--li-anchor">string-similarity</a>: Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance</span>
 -   <span id="c64d"><a href="https://github.com/ericelliott/cuid" class="markup--anchor markup--li-anchor">cuid</a>: Collision-resistant ids optimized for horizontal scaling and performance</span>
 -   <span id="a404"><a href="https://github.com/lukeed/obj-str" class="markup--anchor markup--li-anchor">obj-str</a>: A tiny (96B) library for serializing Object values to Strings. Also serves as a faster & smaller drop-in replacement for the classnames module</span>
 -   <span id="6cf1"><a href="https://github.com/lukeed/clsx" class="markup--anchor markup--li-anchor">clsx</a>: A tiny (223B) utility for constructing className strings conditionally. Also serves as a faster & smaller drop-in replacement for the classnames module</span>
@@ -159,7 +159,7 @@ A all encompassing list of tools and resources for web developers
 ### Responsive
 
 -   <span id="e235"><a href="https://github.com/pauldijou/responsive-watch" class="markup--anchor markup--li-anchor">responsive-watch</a>: Watch some media queries and react when they change</span>
--   <span id="6720"><a href="https://github.com/robb0wen/tornis" class="markup--anchor markup--li-anchor">tornis</a>: Tornis helps you watch and respond to changes in your browser’s viewport 🌲</span>
+-   <span id="6720"><a href="https://github.com/robb0wen/tornis" class="markup--anchor markup--li-anchor">tornis</a>: Tornis helps you watch and respond to changes in your browser's viewport 🌲</span>
 -   <span id="fadc"><a href="https://github.com/ryanve/actual" class="markup--anchor markup--li-anchor">actual</a>: Determine actual CSS media query breakpoints via JavaScript</span>
 
 ### Media and Images
@@ -247,7 +247,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="665d"><a href="https://github.com/dequelabs/react-axe" class="markup--anchor markup--li-anchor">react-axe</a>: Accessibility auditing for React.js applications</span>
 -   <span id="a7bc"><a href="https://github.com/geobde/use-click-away" class="markup--anchor markup--li-anchor">use-click-away</a>: React hook to detect click or touch events outside an element</span>
 -   <span id="7220"><a href="https://github.com/clauderic/react-tiny-virtual-list" class="markup--anchor markup--li-anchor">react-tiny-virtual-list</a>: A tiny but mighty 3kb list virtualization library, with zero dependencies 💪 Supports variable heights/widths, sticky items, scrolling to index, and more!</span>
--   <span id="344f"><a href="https://github.com/everweij/react-laag" class="markup--anchor markup--li-anchor">react-laag</a>: Primitives to build things like tooltips, dropdown menu’s and popovers in React</span>
+-   <span id="344f"><a href="https://github.com/everweij/react-laag" class="markup--anchor markup--li-anchor">react-laag</a>: Primitives to build things like tooltips, dropdown menu's and popovers in React</span>
 -   <span id="d70c"><a href="https://github.com/react-dnd/react-dnd" class="markup--anchor markup--li-anchor">react-dnd</a>: Drag and Drop for React</span>
 
 #### React Hooks
@@ -256,7 +256,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="bfab"><a href="https://www.hooks.guide/" class="markup--anchor markup--li-anchor">Hooks.Guide</a>: Collection of React hooks curated by the community</span>
 -   <span id="c7e8"><a href="https://usehooks.com/" class="markup--anchor markup--li-anchor">useHooks</a>: Easy to understand React Hook recipes</span>
 -   <span id="2366"><a href="https://github.com/beautifulinteractions/beautiful-react-hooks" class="markup--anchor markup--li-anchor">beautiful-react-hooks</a>: 🔥A collection of beautiful and (hopefully) useful React hooks to speed-up your components and hooks development 🔥</span>
--   <span id="f483"><a href="https://github.com/GoogleChromeLabs/react-adaptive-hooks" class="markup--anchor markup--li-anchor">react-adaptive-hooks</a>: Deliver experiences best suited to a user’s device and network constraints</span>
+-   <span id="f483"><a href="https://github.com/GoogleChromeLabs/react-adaptive-hooks" class="markup--anchor markup--li-anchor">react-adaptive-hooks</a>: Deliver experiences best suited to a user's device and network constraints</span>
 
 ### State management
 
@@ -291,7 +291,7 @@ A all encompassing list of tools and resources for web developers
 
 <a href="https://www.typescriptlang.org/" class="markup--anchor markup--p-anchor">typescriptlang.org</a>
 
--   <span id="08dd"><a href="https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript" class="markup--anchor markup--li-anchor">What’s new in TypeScript</a>: Microsoft/TypeScript Wiki</span>
+-   <span id="08dd"><a href="https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript" class="markup--anchor markup--li-anchor">What's new in TypeScript</a>: Microsoft/TypeScript Wiki</span>
 -   <span id="d932"><a href="https://basarat.gitbooks.io/typescript/" class="markup--anchor markup--li-anchor">TypeScript Deep Dive</a></span>
 -   <span id="5ca2"><a href="https://blog.mariusschulz.com/series/typescript-evolution" class="markup--anchor markup--li-anchor">TypeScript Evolution</a></span>
 -   <span id="d151"><a href="https://transform.now.sh/json-to-ts-interface/" class="markup--anchor markup--li-anchor">JSON to Typescript Interface</a></span>
@@ -393,7 +393,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="073d"><a href="https://github.com/mysticatea/npm-run-all" class="markup--anchor markup--li-anchor">npm-run-all</a>: A CLI tool to run multiple npm-scripts in parallel or sequential</span>
 -   <span id="60c8"><a href="https://github.com/milewski/cross-port-killer" class="markup--anchor markup--li-anchor">cross-port-killer</a>: Kill the process running on a given TCP port on Windows, Linux and Mac</span>
 -   <span id="bbb7"><a href="https://github.com/tabrindle/envinfo" class="markup--anchor markup--li-anchor">envinfo</a>: Generate a report about your development environment for debugging and issue reporting</span>
--   <span id="118c"><a href="https://github.com/FiloSottile/mkcert" class="markup--anchor markup--li-anchor">mkcert</a>: A simple zero-config tool to make locally trusted development certificates with any names you’d like</span>
+-   <span id="118c"><a href="https://github.com/FiloSottile/mkcert" class="markup--anchor markup--li-anchor">mkcert</a>: A simple zero-config tool to make locally trusted development certificates with any names you'd like</span>
 
 ### Progressive Web Apps
 
@@ -461,7 +461,7 @@ A all encompassing list of tools and resources for web developers
 ### SVG/Image Media compression
 
 -   <span id="bfd9"><a href="https://squoosh.app/" class="markup--anchor markup--li-anchor">Squoosh</a></span>
--   <span id="c263"><a href="https://jakearchibald.github.io/svgomg/" class="markup--anchor markup--li-anchor">SVGOMG</a>: SVGO’s Missing GUI</span>
+-   <span id="c263"><a href="https://jakearchibald.github.io/svgomg/" class="markup--anchor markup--li-anchor">SVGOMG</a>: SVGO's Missing GUI</span>
 
 ### Conversions and unicode
 
@@ -495,7 +495,7 @@ A all encompassing list of tools and resources for web developers
 
 ### Design Systems and documentation
 
--   <span id="571f"><a href="https://storybook.js.org/" class="markup--anchor markup--li-anchor">Storybook</a>: UI dev environment you’ll love to use</span>
+-   <span id="571f"><a href="https://storybook.js.org/" class="markup--anchor markup--li-anchor">Storybook</a>: UI dev environment you'll love to use</span>
 -   <span id="7371"><a href="https://github.com/styleguidist/react-styleguidist" class="markup--anchor markup--li-anchor">react-styleguidist</a>: — Isolated React component development environment with a living style guide</span>
 -   <span id="f2ff"><a href="https://docusaurus.io/" class="markup--anchor markup--li-anchor">Docusaurus</a>: Easy to Maintain Open Source Documentation Websites</span>
 -   <span id="1d27"><a href="https://www.docz.site/" class="markup--anchor markup--li-anchor">Docz</a></span>
@@ -573,11 +573,11 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 ### If you found this guide helpful feel free to checkout my other articles:
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 ### OR GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

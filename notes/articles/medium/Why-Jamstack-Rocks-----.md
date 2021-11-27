@@ -1,12 +1,12 @@
 # Why Jamstack Rocks🤘😎🤙
 
-JAMstack websites don’t use the microservices architecture, but they go for the micro frontends architecture. Each static page with HTML…
+JAMstack websites don't use the microservices architecture, but they go for the micro frontends architecture. Each static page with HTML…
 
 ---
 
 ### Why Jamstack Rocks🤘😎🤙
 
-#### JAMstack websites don’t use the microservices architecture, but they go for the <a href="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/" class="markup--anchor markup--h4-anchor" title="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/">micro frontends architecture</a>. Each static page with HTML and JavaScript is a micro frontend. And they can use any REST API, including the one built on the <a href="https://relevant.software/blog/microservices-on-aws/" class="markup--anchor markup--h4-anchor">microservices</a> architecture.
+#### JAMstack websites don't use the microservices architecture, but they go for the <a href="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/" class="markup--anchor markup--h4-anchor" title="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/">micro frontends architecture</a>. Each static page with HTML and JavaScript is a micro frontend. And they can use any REST API, including the one built on the <a href="https://relevant.software/blog/microservices-on-aws/" class="markup--anchor markup--h4-anchor">microservices</a> architecture.
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
 bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -39,9 +39,9 @@ API is the acronym for Application Programming Interface. It defines interaction
 
 ### JAMstack while not suffering from a shortage of virtues is not a one size fits all solution!
 
-#### Don’t use JAMstack when:
+#### Don't use JAMstack when:
 
--   <span id="2b9a">You don’t generally do anything that consumes enough volume of static assets to cause your application to struggle with performance at least sometimes.</span>
+-   <span id="2b9a">You don't generally do anything that consumes enough volume of static assets to cause your application to struggle with performance at least sometimes.</span>
 -   <span id="d002">Your development team is used to different tech, and the cost of migration is higher than the reward.</span>
 -   <span id="fc18">You are dealing with tons of real-time/user data, (i.e. audio or video processing in real time)</span>
 -   <span id="c4bd">In most cases, it does not make sense to migrate a legacy project that is functioning just fine with no signs of depreciation on the horizon.</span>
@@ -74,11 +74,11 @@ The thriving <a href="https://jamstack.org/glossary/api-economy/" class="markup-
 
 Jamstack sites might utilise such services at build time, and also at run time directly from the browser via JavaScript. And the clean <a href="https://jamstack.org/glossary/decoupling/" class="markup--anchor markup--p-anchor">decoupling</a> of these services allows for greater portability and flexibility, as well as significantly reduced risk.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*z92TKSZStVeWTjEr.gif" class="graf-image" /></figure>The real power of JAMstack development is easiest to grasp when compared with CMS-driven dynamic websites. It’s easy to forget the sheer number of steps required to fulfill a single page request, and the complexity of the operations that are constantly performed on the server to generate the final HTML received by the user’s browser.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*z92TKSZStVeWTjEr.gif" class="graf-image" /></figure>The real power of JAMstack development is easiest to grasp when compared with CMS-driven dynamic websites. It's easy to forget the sheer number of steps required to fulfill a single page request, and the complexity of the operations that are constantly performed on the server to generate the final HTML received by the user's browser.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*K9Dcp8Q-sJ8_XOBO.png" class="graf-image" /></figure>When a user requests a page, your server queries a MySQL database and uses a PHP interpreter, combined with data from the active theme and plugins, to stitch together an HTML document which can then be served to the user’s browser. What this extraordinarily complex operation amounts to, in essence, is **templating**. Given that even a modest blog is far too complex to code every page by hand, this method of dividing content into reusable components and automating the assembly makes sense.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*K9Dcp8Q-sJ8_XOBO.png" class="graf-image" /></figure>When a user requests a page, your server queries a MySQL database and uses a PHP interpreter, combined with data from the active theme and plugins, to stitch together an HTML document which can then be served to the user's browser. What this extraordinarily complex operation amounts to, in essence, is **templating**. Given that even a modest blog is far too complex to code every page by hand, this method of dividing content into reusable components and automating the assembly makes sense.
 
-But why does this templating operation need to happen on the server? Do we _really_ need databases and server-side software (which opens up dozens of security holes along the way) just to create a simple blog? At a time when browsers themselves have become operating systems, capable of interacting with countless APIs and running complex applications client-side, and when front-end development is dominated by JavaScript-based automation using npm, haven’t we outgrown this model?
+But why does this templating operation need to happen on the server? Do we _really_ need databases and server-side software (which opens up dozens of security holes along the way) just to create a simple blog? At a time when browsers themselves have become operating systems, capable of interacting with countless APIs and running complex applications client-side, and when front-end development is dominated by JavaScript-based automation using npm, haven't we outgrown this model?
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zUEq7vaq3GKgq1dr.png" class="graf-image" /></figure>Static site generators like Jekyll and Hugo are part of what makes this possible. They essentially replace PHP as our templating system, but instead of running on a server and generating content on-the-fly, they **run locally** as part of your development process. Your HTML is generated up-front, and your website — now a collection of easily-cached static files — can be distributed to users by a blisteringly fast CDN (content distribution network).
 
@@ -114,11 +114,11 @@ However you decide to generate your HTML assets is up to you. The three most com
 
 #### Hand coding
 
-Simple and effective method of writing HTML, it’s ideal for super simple pages.
+Simple and effective method of writing HTML, it's ideal for super simple pages.
 
 #### Static Site Generators
 
-Most JAMstack sites are powered by a static site generator. There’s no enforcement on which SSG you decide to use.
+Most JAMstack sites are powered by a static site generator. There's no enforcement on which SSG you decide to use.
 
 -   <span id="4571"><a href="https://www.gatsbyjs.org/" class="markup--anchor markup--li-anchor" title="Gatsby">Gatsby</a></span>
 -   <span id="ebc1"><a href="https://nextjs.org/" class="markup--anchor markup--li-anchor" title="Next.js">Next.js</a></span>
@@ -126,7 +126,7 @@ Most JAMstack sites are powered by a static site generator. There’s no enforce
 
 #### Frontend Framework
 
-Most frameworks don’t output static HTML files, however it is possible to do that but it requires more tooling experience and maintenance.
+Most frameworks don't output static HTML files, however it is possible to do that but it requires more tooling experience and maintenance.
 
 -   <span id="949a"><a href="http://reactjs.org/" class="markup--anchor markup--li-anchor" title="React">React</a></span>
 -   <span id="42ed"><a href="https://preactjs.com/" class="markup--anchor markup--li-anchor" title="Preact">Preact</a></span>
@@ -141,7 +141,7 @@ Your built site needs to be hosted somewhere. There are great services that prov
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### DYNAMIC PARTS
 
-JAMstack websites don’t have to be static. There are great services available to help bring some dynamic data to your product.
+JAMstack websites don't have to be static. There are great services available to help bring some dynamic data to your product.
 
 #### Custom functions
 
@@ -186,7 +186,7 @@ JAMstack sites can also be controlled via a Content Management System, these are
 
 -   <span id="1be8">**Using CDNs for hosting.** Using content delivery networks improves performance and scalability.</span>
 -   <span id="e935">**Atomic deploys.** Deploying lots of static files can be time-consuming. But with atomic deploys, you can forget about downtimes. Your app is always available to users, even when a new deployment is being executed. Besides, with each deploy being a full snapshot of your website, it guarantees global consistency.</span>
--   <span id="e5c0">**Instant cache invalidation.** CDNs store sites in their local caches. Thus, when you change something on your website, your CDN invalidates the affected files and replaces them with the new ones. However, the process can take hours. To avoid this, it’s recommended to choose CDNs with instant cache validation.</span>
+-   <span id="e5c0">**Instant cache invalidation.** CDNs store sites in their local caches. Thus, when you change something on your website, your CDN invalidates the affected files and replaces them with the new ones. However, the process can take hours. To avoid this, it's recommended to choose CDNs with instant cache validation.</span>
 -   <span id="d1f9">**Version control systems**. A version control system, such as <a href="https://git-scm.com/" class="markup--anchor markup--li-anchor">Git</a>, is a cloud for your code. It hosts your source code, keeps track of all changes, and streamlines collaboration. If a mistake is made, developers can easily compare the current code from its previous versions and identify the cause.</span>
 -   <span id="e265">**Automated builds.** In terms of web development, build is a process of converting files and other assets into a final software product ready for deployment. Automating this process eliminates the risk of variation and defects. Besides, whenever a new build is required, your CDN is notified using webhooks.</span>
 
@@ -194,7 +194,7 @@ JAMstack sites can also be controlled via a Content Management System, these are
 
 ---
 
-Here’s a list of hand-picked JAMstack resources ranging from learning materials to third party services.
+Here's a list of hand-picked JAMstack resources ranging from learning materials to third party services.
 
 #### Services
 

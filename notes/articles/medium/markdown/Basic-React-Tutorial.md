@@ -10,7 +10,7 @@ Random Things to Remember
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 #### Using `()` implicitly returns components.Role of `index.js` is to _render_ your application.The reference to `root` comes from a div in the body of your public html file.State of a component is simply a regular JS Object.Class Components require `render()` method to return JSX.Functional Components directly return JSX.`Class` is `className` in React.When parsing for an integer just chain `Number.parseInt("123")`
 
@@ -24,7 +24,7 @@ Random Things to Remember
 
 -   <span id="d253">All it does is dynamically render stuff into your DOM.</span>
 
--   <span id="093c">What it doesn’t do:</span>
+-   <span id="093c">What it doesn't do:</span>
 
 -   <span id="bd7d">Ajax</span>
 
@@ -65,7 +65,7 @@ There are many benefits to using React over just Vanilla JS.
 -   <span id="8e3e">No specials tools are needed to use Basic React.</span>
 -   <span id="f1a2">You can start working directly with `createElement` method in React.</span>
 -   <span id="2a43">`Declarative Programming`</span>
--   <span id="c587">React is declarative in nature, utilizing either it’s build in createElement method or the higher-level language known as JSX.</span>
+-   <span id="c587">React is declarative in nature, utilizing either it's build in createElement method or the higher-level language known as JSX.</span>
 -   <span id="866d">`Reusability`</span>
 -   <span id="eff3">Create elements that can be re-used over and over.  
     **One-flow of data**</span>

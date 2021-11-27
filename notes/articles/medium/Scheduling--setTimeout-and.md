@@ -1,12 +1,12 @@
 # Scheduling: setTimeout and setInterval
 
-We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
 
 ---
 
 ### Scheduling: setTimeout and setInterval
 
-We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" /></figure>There are two methods for it:
 
@@ -87,7 +87,7 @@ In the code below, we schedule the function and then cancel it (changed our mind
 
 As we can see from `alert` output, in a browser the timer identifier is a number. In other environments, this can be something else. For instance, Node.js returns a timer object with additional methods.
 
-Again, there is no universal specification for these methods, so that’s fine.
+Again, there is no universal specification for these methods, so that's fine.
 
 For browsers, timers are described in the <a href="https://www.w3.org/TR/html5/webappapis.html#timers" class="markup--anchor markup--p-anchor">timers section</a> of HTML5 standard.
 
@@ -113,7 +113,7 @@ The following example will show the message every 2 seconds. After 5 seconds, th
 
 In most browsers, including Chrome and Firefox, the internal timer continues "ticking" while showing `alert/confirm/prompt`.
 
-So if you run the code above and don’t dismiss the `alert` window for some time, then the next `alert` will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.
+So if you run the code above and don't dismiss the `alert` window for some time, then the next `alert` will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.
 
     ##  Nested setTimeout
     <p class="mume-header " id="nested-settimeout"></p>
@@ -140,7 +140,7 @@ The nested `setTimeout` is a more flexible method than `setInterval`. This way t
 
 For instance, we need to write a service that sends a request to the server every 5 seconds asking for data, but in case the server is overloaded, it should increase the interval to 10, 20, 40 seconds…
 
-Here’s the pseudocode:
+Here's the pseudocode:
 
     let delay = 5000;
 
@@ -156,11 +156,11 @@ Here’s the pseudocode:
 
     }, delay);
 
-And if the functions that we’re scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next call sooner or later.
+And if the functions that we're scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next call sooner or later.
 
 **Nested** `setTimeout` **allows to set the delay between the executions more precisely than** `setInterval`**.**
 
-Let’s compare two code fragments. The first one uses `setInterval`:
+Let's compare two code fragments. The first one uses `setInterval`:
 
     let i = 1;
     setInterval(function() {
@@ -181,7 +181,7 @@ Did you notice?
 
 **The real delay between** `func` **calls for** `setInterval` **is less than in the code!**
 
-That’s normal, because the time taken by `func`'s execution "consumes" a part of the interval.
+That's normal, because the time taken by `func`'s execution "consumes" a part of the interval.
 
 It is possible that `func`'s execution turns out to be longer than we expected and takes more than 100ms.
 
@@ -193,7 +193,7 @@ And here is the picture for the nested `setTimeout`:
 
 **The nested** `setTimeout` **guarantees the fixed delay (here 100ms).**
 
-That’s because a new call is planned at the end of the previous one.
+That's because a new call is planned at the end of the previous one.
 
     When a function is passed in `setInterval/setTimeout`, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
 
@@ -208,7 +208,7 @@ That’s because a new call is planned at the end of the previous one.
 
 ### Zero delay setTimeout
 
-There’s a special use case: `setTimeout(func, 0)`, or just `setTimeout(func)`.
+There's a special use case: `setTimeout(func, 0)`, or just `setTimeout(func)`.
 
 This schedules the execution of `func` as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.
 
@@ -222,7 +222,7 @@ For instance, this outputs “Hello”, then immediately “World”:
 
 The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so `"Hello"` is first, and `"World"` -- after it.
 
-There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.
+There are also advanced browser-related use cases of a zero-delay timeout, that we'll discuss in the chapter info:event-loop.
 
     In the browser, there's a limitation of how often nested timers can run. The [HTML5 standard](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers) says: "after five nested timers, the interval is forced to be at least 4 milliseconds.".
 

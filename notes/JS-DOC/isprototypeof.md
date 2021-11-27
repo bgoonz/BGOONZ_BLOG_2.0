@@ -58,7 +58,7 @@ This example demonstrates that `Baz.prototype`, `Bar.prototype`, `Foo.prototype`
 
 The `isPrototypeOf()` method — along with the [`instanceof`](../../operators/instanceof) operator — comes in particularly handy if you have code that can only function when dealing with objects descended from a specific prototype chain; e.g., to guarantee that certain methods or properties will be present on that object.
 
-For example, to execute some code that’s only safe to run if a `baz` object has `Foo.prototype` in its prototype chain, you can do this:
+For example, to execute some code that's only safe to run if a `baz` object has `Foo.prototype` in its prototype chain, you can do this:
 
     if (Foo.prototype.isPrototypeOf(baz)) {
       // do something safe

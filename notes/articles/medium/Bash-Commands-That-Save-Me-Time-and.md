@@ -1,12 +1,12 @@
 # Bash Commands That Save Me Time and Frustration
 
-Here’s a list of bash commands that stand between me and insanity.
+Here's a list of bash commands that stand between me and insanity.
 
 ---
 
 ### Bash Commands That Save Me Time and Frustration
 
-#### Here’s a list of bash commands that stand between me and insanity.
+#### Here's a list of bash commands that stand between me and insanity.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
 
@@ -17,11 +17,11 @@ Here’s a list of bash commands that stand between me and insanity.
 
 > The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
-**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
+**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you're like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" /></figure>
 
-### Here’s a Cheatsheet:
+### Here's a Cheatsheet:
 
 ### Getting Started (Advanced Users Skip Section):
 
@@ -29,9 +29,9 @@ Here’s a list of bash commands that stand between me and insanity.
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
-On the command line, it’s important to know the directory we are currently working on. For that, we can use `pwd` command.
+On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I’m working on my Desktop directory.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I'm working on my Desktop directory.
 
 #### ✔ Display List of Files ➡ `ls`:
 
@@ -42,7 +42,7 @@ To see the list of files and directories in the current directory use `ls` comma
 -   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
 -   <span id="5cd8">Some useful `ls` command options:-</span>
 
-OptionDescriptionls -alist all files including hidden file starting with '.’ls -llist with the long formatls -lalist long format including hidden files
+OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
 #### ✔ Create a Directory ➡ `mkdir`:
 
@@ -54,11 +54,11 @@ I created a cli-practice directory in my working directory i.e. Desktop director
 
 #### ✔ Move Between Directories ➡ `cd`:
 
-It’s used to change directory or to move other directories. To use it type `cd directory_name`.
+It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" /></figure>Can use `pwd` command to confirm your directory name.
 
-Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.
+Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
 #### ✔ Parent Directory ➡ `..`:
 
@@ -227,11 +227,11 @@ The following output from my bash shell corresponds to the directory:
 
     find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.**
+**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo's you wish to keep exclusively for your own reference.**
 
-### !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
+### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
 ---
 
@@ -353,7 +353,7 @@ The following output from my bash shell corresponds to the directory:
 
     badFolder Implementing Private Fields for JavaScript
 
-    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I'll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, June 8, 2021 by Matthew Gaudet
 
@@ -373,9 +373,9 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Wednesday, May 19, 2021 by Gabriele Svelto badFolder
 
-    Introducing Firefox’s new Site Isolation Security Architecture
+    Introducing Firefox's new Site Isolation Security Architecture
 
-    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox's new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, May 18, 2021 by Anny Gakhokidze
 
@@ -385,7 +385,7 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-**_I modified the command slightly to apply only to files called 'result.md’:_**
+**_I modified the command slightly to apply only to files called 'result.md':_**
 
 > The result is :
 
@@ -393,7 +393,7 @@ The following output from my bash shell corresponds to the directory:
 
     Read more at hacks.mozilla.org
 
-    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I'll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, June 8, 2021 by Matthew Gaudet
 
@@ -405,9 +405,9 @@ The following output from my bash shell corresponds to the directory:
 
     Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
 
-    Introducing Firefox’s new Site Isolation Security Architecture
+    Introducing Firefox's new Site Isolation Security Architecture
 
-    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox's new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, May 18, 2021 by Anny Gakhokidze
 
@@ -426,7 +426,7 @@ The following output from my bash shell corresponds to the directory:
 
 ### 7.) Execute command recursively:
 
-**Here I have modified the command I wish to run recursively to account for the fact that the 'find’ command already works recursively, by appending the -maxdepth 1 flag…**
+**Here I have modified the command I wish to run recursively to account for the fact that the 'find' command already works recursively, by appending the -maxdepth 1 flag…**
 
 > **I am essentially removing the recursive action of the find command…**
 
@@ -556,7 +556,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 15. Change File Extension from '.txt’ to .doc for all files in working directory.
+### 15. Change File Extension from '.txt' to .doc for all files in working directory.
 
     sudo apt install rename
 

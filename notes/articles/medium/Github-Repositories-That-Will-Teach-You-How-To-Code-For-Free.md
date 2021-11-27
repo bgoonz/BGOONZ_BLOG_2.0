@@ -11,7 +11,7 @@
 > _Short JavaScript code snippets for all your development needs_
 
 -   <span id="bac4">Visit <a href="https://30secondsofcode.org/" class="markup--anchor markup--li-anchor">their website</a> to view multiple snippet collections.</span>
--   <span id="7276">Use the <a href="https://30secondsofcode.org/search" class="markup--anchor markup--li-anchor">Search page</a> to find snippets that suit your needs. You can search by name, tag, language or using a snippet’s description. Just start typing a term and see what comes up.</span>
+-   <span id="7276">Use the <a href="https://30secondsofcode.org/search" class="markup--anchor markup--li-anchor">Search page</a> to find snippets that suit your needs. You can search by name, tag, language or using a snippet's description. Just start typing a term and see what comes up.</span>
 -   <span id="c828">Browse the <a href="https://30secondsofcode.org/js/p/1" class="markup--anchor markup--li-anchor">JavaScript Snippet List</a> to see all the snippets in this project or click individual tags at the top of the same page to narrow down your search to a specific tag.</span>
 -   <span id="bc9b">Click on each snippet card to view the whole snippet, including code, explanation and examples.</span>
 -   <span id="9c80">You can use the button on the right side of a snippet card to copy the code to clipboard.</span>
@@ -53,7 +53,7 @@ Each subproject (a “site”) comprises files stored under the “sites” dire
 
 ### freeCodeCamp/freeCodeCamp
 
-### freeCodeCamp.org’s open-source codebase and curriculum
+### freeCodeCamp.org's open-source codebase and curriculum
 
 <a href="https://www.freecodecamp.org/" class="markup--anchor markup--p-anchor">freeCodeCamp.org</a> is a friendly community where you can learn to code for free. It is run by a <a href="https://www.freecodecamp.org/donate" class="markup--anchor markup--p-anchor">donor-supported 501(c)(3) nonprofit</a> to help millions of busy adults transition into tech. Our community has already helped more than 10,000 people get their first developer job.
 
@@ -173,13 +173,13 @@ If you are not a programmer but would like to contribute, check out the <a href=
 
 ### Overview
 
-With App Academy Open you’ll get free access to App Academy’s entire in-person full-stack curriculum, which has placed thousands of people in software development jobs. App Academy is ranked as the \#1 coding bootcamp in the US and, since 2016, has placed more software developers at Google than UC Berkeley. On the Free plan you’ll get over 1,500 hours of material (readings, videos, projects), an interactive coding environment and community features like chat to keep you connected with thousands of prospective developers across the globe.
+With App Academy Open you'll get free access to App Academy's entire in-person full-stack curriculum, which has placed thousands of people in software development jobs. App Academy is ranked as the \#1 coding bootcamp in the US and, since 2016, has placed more software developers at Google than UC Berkeley. On the Free plan you'll get over 1,500 hours of material (readings, videos, projects), an interactive coding environment and community features like chat to keep you connected with thousands of prospective developers across the globe.
 
 ### How to Get Started
 
-Navigate to <a href="https://open.appacademy.io/" class="markup--anchor markup--p-anchor">App Academy Open</a> and sign up for a free account. All you’ll need to provide is your email address and name. You’ll be redirected to our learning platform where you’ll be starting your first lesson immediately.
+Navigate to <a href="https://open.appacademy.io/" class="markup--anchor markup--p-anchor">App Academy Open</a> and sign up for a free account. All you'll need to provide is your email address and name. You'll be redirected to our learning platform where you'll be starting your first lesson immediately.
 
-The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the 'Course Outline’ at the top of the page. The menu should have a 'Switch’ button which will list all available courses.
+The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the 'Course Outline' at the top of the page. The menu should have a 'Switch' button which will list all available courses.
 
 <a href="https://github.com/appacademy/welcome-to-open" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/appacademy/welcome-to-open"><strong>appacademy/welcome-to-open</strong><br />
 <em>tl;dr: click here to learn to code for free With App Academy Open you'll get free access to App Academy's entire…</em>github.com</a><a href="https://github.com/appacademy/welcome-to-open" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -205,7 +205,7 @@ This project should help anyone to find new resources but especially beginners i
 
 ### Note to Beginners
 
-> _These roadmaps cover everything that is there to learn for the paths listed below. Don’t feel overwhelmed, you don’t need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will_ <a href="https://roadmap.sh/" class="markup--anchor markup--blockquote-anchor"><em>release it soon</em></a> _after we are done with the 2021 release of the Backend and DevOps roadmaps._
+> _These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will_ <a href="https://roadmap.sh/" class="markup--anchor markup--blockquote-anchor"><em>release it soon</em></a> _after we are done with the 2021 release of the Backend and DevOps roadmaps._
 
 ---
 
@@ -263,7 +263,7 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 <a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
 <em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-#### Here’s the website:
+#### Here's the website:
 
 <a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -273,7 +273,7 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 <a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Data-Structures-Algos-Codebase"><strong>bgoonz/Data-Structures-Algos-Codebase</strong><br />
 <em>Contribute to bgoonz/Data-Structures-Algos-Codebase development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-here’s a list of what’s covered
+here's a list of what's covered
 
 ---
 
@@ -281,7 +281,7 @@ here’s a list of what’s covered
 
 ### Web Development for Beginners — A Curriculum
 
-Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick’.
+Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick'.
 
 <a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/microsoft/Web-Dev-For-Beginners"><strong>microsoft/Web-Dev-For-Beginners</strong><br />
 <em>Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and…</em>github.com</a><a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -319,7 +319,7 @@ But what is awesome?
 
 ### Only awesome is awesome
 
-Research if the stuff you’re including is actually awesome. Only put stuff on the list that you or another contributor can personally recommend. You should rather leave stuff out than include too much.
+Research if the stuff you're including is actually awesome. Only put stuff on the list that you or another contributor can personally recommend. You should rather leave stuff out than include too much.
 
 ### Awesome badge
 
@@ -444,7 +444,7 @@ NOTE: A passing build status indicates all listed APIs are available since the l
 
 This list was originally a clone of <a href="https://web.archive.org/web/20140606191453/http://stackoverflow.com/questions/194812/list-of-freely-available-programming-books/392926" class="markup--anchor markup--p-anchor">StackOverflow — List of Freely Available Programming Books</a> with contributions from Karan Bhangui and George Stocker.
 
-The list was moved to GitHub by Victor Felder for collaborative updating and maintenance. It has grown to become one of <a href="https://octoverse.github.com/" class="markup--anchor markup--p-anchor">GitHub’s most popular repositories</a>, with 160,000+ stars, 6000+ commits, 1600+ contributors, and 39,000+ forks.
+The list was moved to GitHub by Victor Felder for collaborative updating and maintenance. It has grown to become one of <a href="https://octoverse.github.com/" class="markup--anchor markup--p-anchor">GitHub's most popular repositories</a>, with 160,000+ stars, 6000+ commits, 1600+ contributors, and 39,000+ forks.
 
 The <a href="https://ebookfoundation.org/" class="markup--anchor markup--p-anchor">Free Ebook Foundation</a> now administers the repo, a not-for-profit organization devoted to promoting the creation, distribution, archiving, and sustainability of free ebooks. <a href="https://ebookfoundation.org/contributions.html" class="markup--anchor markup--p-anchor">Donations</a> to the Free Ebook Foundation are tax-deductible in the US.
 
@@ -608,7 +608,7 @@ _(HTML, CSS, JavaScript?)_
 Free platform for learning to code in web technologies  
 _(HTML, CSS, JavaScript, jQuery, Python, Ruby, Rails, PHP)_
 
-#### <a href="https://www.khanacademy.org/hourofcode" class="markup--anchor markup--h4-anchor">Khan Academy’s Hour of Code</a>
+#### <a href="https://www.khanacademy.org/hourofcode" class="markup--anchor markup--h4-anchor">Khan Academy's Hour of Code</a>
 
 Free interactive 1-hour course to learn the very basics of web development  
 _(HTML, CSS, JavaScript, SQL)_
@@ -674,9 +674,9 @@ _(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)_
 
 _alternatively, awesome-adventure_
 
-A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based guides to learning a new programming concept. Here’s an example screenshot from rvagg’s <a href="https://github.com/workshopper/learnyounode" class="markup--anchor markup--p-anchor">learnyounode</a>:
+A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based guides to learning a new programming concept. Here's an example screenshot from rvagg's <a href="https://github.com/workshopper/learnyounode" class="markup--anchor markup--p-anchor">learnyounode</a>:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*nAZdLxs9x2JUBwMJ" class="graf-image" /></figure>If you know of any other workshopper/adventure tutorials, feel free to fork/PR or open a new issue. This list will also serve as a wish-list of types: if you want a workshopper that is not listed here, open a pull request and I’ll see about getting it started.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*nAZdLxs9x2JUBwMJ" class="graf-image" /></figure>If you know of any other workshopper/adventure tutorials, feel free to fork/PR or open a new issue. This list will also serve as a wish-list of types: if you want a workshopper that is not listed here, open a pull request and I'll see about getting it started.
 
 <a href="https://github.com/therebelrobot/awesome-workshopper" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/therebelrobot/awesome-workshopper"><strong>therebelrobot/awesome-workshopper</strong><br />
 <em>A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based…</em>github.com</a><a href="https://github.com/therebelrobot/awesome-workshopper" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -687,7 +687,7 @@ A list of workshopper/adventure-based tutorials for various things. Inspired by 
 
 ### The Art of Command Line
 
-_Note: I’m planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it’s very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. –_<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>_,_ <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>_. Thank you!_
+_Note: I'm planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it's very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. –_<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>_,_ <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>_. Thank you!_
 
 -   <span id="714a"><a href="https://github.com/jlevy/the-art-of-command-line#meta" class="markup--anchor markup--li-anchor">Meta</a></span>
 -   <span id="eb25"><a href="https://github.com/jlevy/the-art-of-command-line#basics" class="markup--anchor markup--li-anchor">Basics</a></span>
@@ -701,7 +701,7 @@ _Note: I’m planning to revise this and looking for a new co-author to help wit
 -   <span id="1a80"><a href="https://github.com/jlevy/the-art-of-command-line#more-resources" class="markup--anchor markup--li-anchor">More resources</a></span>
 -   <span id="4d9c"><a href="https://github.com/jlevy/the-art-of-command-line#disclaimer" class="markup--anchor markup--li-anchor">Disclaimer</a></span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*UEmZ4FoX_E22AlKG.png" class="graf-image" /></figure>Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that we’ve found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*UEmZ4FoX_E22AlKG.png" class="graf-image" /></figure>Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that we've found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
 
 This work is the result of <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/AUTHORS.md" class="markup--anchor markup--p-anchor">many authors and translators</a>. Some of this <a href="http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands" class="markup--anchor markup--p-anchor">originally</a> <a href="http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix" class="markup--anchor markup--p-anchor">appeared</a> on <a href="http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know" class="markup--anchor markup--p-anchor">Quora</a>, but it has since moved to GitHub, where people more talented than the original author have made numerous improvements. <a href="https://airtable.com/shrzMhx00YiIVAWJg" class="markup--anchor markup--p-anchor">Please submit a question</a> if you have a question related to the command line. <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/CONTRIBUTING.md" class="markup--anchor markup--p-anchor">Please contribute</a> if you see an error or something that could be better!
 
@@ -746,7 +746,7 @@ Developers and Open Source authors now have a massive amount of services offerin
 
 This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers.
 
-The scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful. We love all the free services out there, but it would be good to keep it on topic. It’s a bit of a grey line at times so this is a bit opinionated; do not be offended if I do not accept your contribution.
+The scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful. We love all the free services out there, but it would be good to keep it on topic. It's a bit of a grey line at times so this is a bit opinionated; do not be offended if I do not accept your contribution.
 
 This list is the result of Pull Requests, reviews, ideas and work done by 900+ people. You too can help by sending <a href="https://github.com/ripienaar/free-for-dev" class="markup--anchor markup--p-anchor">Pull Requests</a> to add more services or by remove ones whose offerings have changed or been retired.
 
@@ -763,7 +763,7 @@ _NOTE:_ This list is only for as-a-Service offerings, not for self-hosted softwa
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OGbTycPsogJHNqrZ.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*u2EbjIkzp7eZwBtY.png" class="graf-image" /></figure>### See how the exact same Medium.com clone (called <a href="https://demo.realworld.io/" class="markup--anchor markup--h3-anchor">Conduit</a>) is built using different <a href="https://codebase.show/projects/realworld?category=frontend" class="markup--anchor markup--h3-anchor">frontends</a> and <a href="https://codebase.show/projects/realworld?category=backend" class="markup--anchor markup--h3-anchor">backends</a>. Yes, you can mix and match them, because they all adhere to the same <a href="https://github.com/gothinkster/realworld/blob/master/spec" class="markup--anchor markup--h3-anchor">API spec</a> 😮😎
 
-While most “todo” demos provide an excellent cursory glance at a framework’s capabilities, they typically don’t convey the knowledge & perspective required to actually build _real_ applications with it.
+While most “todo” demos provide an excellent cursory glance at a framework's capabilities, they typically don't convey the knowledge & perspective required to actually build _real_ applications with it.
 
 RealWorld solves this by allowing you to choose any frontend (React, Angular 2, & more) and any backend (Node, Django, & more) and see how they power a real world, beautifully designed fullstack app called “<a href="https://demo.realworld.io/" class="markup--anchor markup--p-anchor">Conduit</a>”.
 
@@ -783,11 +783,11 @@ Or you can <a href="https://github.com/gothinkster/realworld/discussions/categor
 
 ### How do I get up & running?
 
-Follow the instructions in the README of whatever frontend and/or backend repo’s you want to get up and running.
+Follow the instructions in the README of whatever frontend and/or backend repo's you want to get up and running.
 
 ### Can you teach me how to build each stack from scratch?
 
-Yup! We’ve built step-by-step tutorials for all of our stacks that teach you how to go from `git init` all the way to the production ready application. <a href="https://thinkster.io/tutorials/fullstack" class="markup--anchor markup--p-anchor">Start learning now &gt;&gt;&gt;</a>
+Yup! We've built step-by-step tutorials for all of our stacks that teach you how to go from `git init` all the way to the production ready application. <a href="https://thinkster.io/tutorials/fullstack" class="markup--anchor markup--p-anchor">Start learning now &gt;&gt;&gt;</a>
 
 ### Community created resources
 
@@ -822,7 +822,7 @@ Forks, tutorials, workshops, and other resources based on the RealWorld project:
 Other Checklists:  
  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-" class="markup--anchor markup--p-anchor">🎮 Front-End Performance Checklist</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist" class="markup--anchor markup--p-anchor">💎 Front-End Design Checklist</a>
 
-It is based on Front-End developers’ years of experience, with the additions coming from some other open-source checklists.
+It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
 
 ---
 
@@ -832,7 +832,7 @@ All items in the Front-End Checklist are required for the majority of the projec
 
 -   <span id="6602">means that the item is recommended but can be omitted in some particular situations.</span>
 -   <span id="dfe3">means that the item is highly recommended and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.</span>
--   <span id="9420">means that the item can’t be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.</span>
+-   <span id="9420">means that the item can't be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.</span>
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 

@@ -202,7 +202,7 @@
                             </h4>
                             <ul class="postList">
                                 <li name="e90d" id="e90d" class="graf graf--li graf-after--h4">
-                                    Don’t use more than one dot (not counting the one after “this”).
+                                    Don't use more than one dot (not counting the one after “this”).
                                 </li>
                                 <li name="6cbd" id="6cbd" class="graf graf--li graf-after--li">
                                     A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the
@@ -315,7 +315,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             <ol class="postList">
                                 <li name="b127" id="b127" class="graf graf--li graf-after--h3">A new empty object is created {};</li>
                                 <li name="3c79" id="3c79" class="graf graf--li graf-after--li">
-                                    The new obj’s <code class="markup--code markup--li-code">prototype</code> is set to the object referenced by the
+                                    The new obj's <code class="markup--code markup--li-code">prototype</code> is set to the object referenced by the
                                     constructors prototype property.
                                 </li>
                                 <li name="6b2e" id="6b2e" class="graf graf--li graf-after--li">
@@ -335,7 +335,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                                     Every instance created is a unique object and therefore not equal to each other.
                                 </li>
                             </ul>
-                            <h3 name="5a34" id="5a34" class="graf graf--h3 graf-after--li">Using the instanceof operator to check an object’s type</h3>
+                            <h3 name="5a34" id="5a34" class="graf graf--h3 graf-after--li">Using the instanceof operator to check an object's type</h3>
                             <pre name="6093" id="6093" class="graf graf--pre graf-after--h3">console.log(fellowshipOfTheRing instanceof Book); // true</pre>
                             <ul class="postList">
                                 <li name="f5e2" id="f5e2" class="graf graf--li graf-after--pre">
@@ -375,7 +375,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                                 <li name="0f4e" id="0f4e" class="graf graf--li graf-after--h3">
                                     <em class="markup--em markup--li-em"
                                         >Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory
-                                        usage b/c each object instance would have it’s own method definition.</em
+                                        usage b/c each object instance would have it's own method definition.</em
                                     >
                                 </li>
                                 <li name="a9e8" id="a9e8" class="graf graf--li graf-after--li">
@@ -413,17 +413,17 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             <pre name="a9d2" id="a9d2" class="graf graf--pre graf-after--pre">console.log(fellowshipOfTheRing.getInformation());</pre>
                             <ul class="postList">
                                 <li name="455e" id="455e" class="graf graf--li graf-after--pre">
-                                    Every method we define on a constructor function’s prototype property will be shared across all instances of that object
+                                    Every method we define on a constructor function's prototype property will be shared across all instances of that object
                                     type.
                                 </li>
                             </ul>
                             <p name="d6c3" id="d6c3" class="graf graf--p graf-after--li">The Problem with Arrow Functions</p>
                             <ul class="postList">
                                 <li name="6cb0" id="6cb0" class="graf graf--li graf-after--p">
-                                    We cannot use arrow functions when defining methods on a constructor function’s prototype property.
+                                    We cannot use arrow functions when defining methods on a constructor function's prototype property.
                                 </li>
                                 <li name="4f33" id="4f33" class="graf graf--li graf-after--li graf--trailing">
-                                    Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick
+                                    Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick
                                     with the function () keyword.
                                 </li>
                             </ul>
@@ -460,7 +460,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                                     <code class="markup--code markup--li-code">class constructor function</code> - these are similar to regular constructors in
                                     that:
                                 </li>
-                                <li name="a4b1" id="a4b1" class="graf graf--li graf-after--li">They don’t explicitly return a value.</li>
+                                <li name="a4b1" id="a4b1" class="graf graf--li graf-after--li">They don't explicitly return a value.</li>
                                 <li name="e85e" id="e85e" class="graf graf--li graf-after--li">
                                     The this keyword references the newly created object instance.
                                 </li>
@@ -475,7 +475,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             <ol class="postList">
                                 <li name="8842" id="8842" class="graf graf--li graf-after--h3">New empty object is created {};</li>
                                 <li name="1cd6" id="1cd6" class="graf graf--li graf-after--li">
-                                    The new obj’s prototype is set to the class prototype’s property value.
+                                    The new obj's prototype is set to the class prototype's property value.
                                 </li>
                                 <li name="eddc" id="eddc" class="graf graf--li graf-after--li">
                                     <code class="markup--code markup--li-code">This</code> is bound to the new object.
@@ -486,7 +486,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             </ol>
                             <ul class="postList">
                                 <li name="e722" id="e722" class="graf graf--li graf-after--li">
-                                    <strong class="markup--strong markup--li-strong">Don’t try to instatiate a class object without the new keyword.</strong>
+                                    <strong class="markup--strong markup--li-strong">Don't try to instatiate a class object without the new keyword.</strong>
                                 </li>
                             </ul>
                             <h4 name="a134" id="a134" class="graf graf--h4 graf-after--li">Class Definitions are NOT hoisted</h4>
@@ -498,7 +498,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             >function test() {<br>  console.log(&quot;This works!&quot;);<br>}</pre>
                             <ul class="postList">
                                 <li name="bf4e" id="bf4e" class="graf graf--li graf-after--pre">
-                                    In JS you can call a function before it’s declared — this is known as
+                                    In JS you can call a function before it's declared — this is known as
                                     <code class="markup--code markup--li-code">hoisting</code>.
                                 </li>
                                 <li name="8dd6" id="8dd6" class="graf graf--li graf-after--li">
@@ -681,7 +681,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                 </li>
                                 <li name="7d03" id="7d03" class="graf graf--li graf-after--li">JS looks for get() on the current object.</li>
                                 <li name="c65f" id="c65f" class="graf graf--li graf-after--li">
-                                    If it isn’t found, the method call is delegated to the object’s prototype.
+                                    If it isn't found, the method call is delegated to the object's prototype.
                                 </li>
                                 <li name="7ff3" id="7ff3" class="graf graf--li graf-after--li">
                                     It continues up the prototype chain until the method is found.
@@ -712,7 +712,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                             <pre name="8cdb" id="8cdb" class="graf graf--pre graf-after--pre">    return result;<br>  }<br>}</pre>
                             <ul class="postList">
                                 <li name="68fd" id="68fd" class="graf graf--li graf-after--pre graf--trailing">
-                                    We can simply declare our own method of the same name in our child class to override our parent’s version of
+                                    We can simply declare our own method of the same name in our child class to override our parent's version of
                                     <code class="markup--code markup--li-code">getInformation()</code>
                                 </li>
                             </ul>
@@ -731,7 +731,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                 <li name="7869" id="7869" class="graf graf--li graf-after--p">
                                     In Node.js, each JS file in a project defines a <code class="markup--code markup--li-code">module</code>.
                                 </li>
-                                <li name="fdaa" id="fdaa" class="graf graf--li graf-after--li">Module’s contents are private by default.</li>
+                                <li name="fdaa" id="fdaa" class="graf graf--li graf-after--li">Module's contents are private by default.</li>
                                 <li name="1ee7" id="1ee7" class="graf graf--li graf-after--li">
                                     <code class="markup--code markup--li-code">Local Modules</code> : Modules defined within your project.
                                 </li>
@@ -808,7 +808,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                             <h3 name="eb20" id="eb20" class="graf graf--h3 graf--leading"><code class="markup--code markup--h3-code">Encapsulation</code></h3>
                             <ul class="postList">
                                 <li name="74af" id="74af" class="graf graf--li graf-after--h3">
-                                    Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn’t
+                                    Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn't
                                     need to worry about the details of it.
                                 </li>
                             </ul>
@@ -1025,7 +1025,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                             <h3 name="3b3c" id="3b3c" class="graf graf--h3 graf-after--li">When to ignore the Law of Demeter</h3>
                             <ul class="postList">
                                 <li name="770a" id="770a" class="graf graf--li graf-after--h3">
-                                    When you work with objects that come from code that you didn’t create — you will often have to break the LoD.
+                                    When you work with objects that come from code that you didn't create — you will often have to break the LoD.
                                 </li>
                             </ul>
                             <pre
@@ -1039,7 +1039,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     API provided by the DOM.
                                 </li>
                                 <li name="9dc9" id="9dc9" class="graf graf--li graf-after--li">
-                                    UI’s will break LoD because they are not object-oriented programs.
+                                    UI's will break LoD because they are not object-oriented programs.
                                 </li>
                             </ul>
                             <h3 name="071c" id="071c" class="graf graf--h3 graf-after--li">
@@ -1051,7 +1051,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz’s gists</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python
                                         |…</em

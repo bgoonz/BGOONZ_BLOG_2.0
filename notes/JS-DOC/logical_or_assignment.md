@@ -16,7 +16,7 @@ The [logical OR](logical_or) operator works like this:
     // returns x when x is truthy
     // returns y when x is not truthy
 
-The logical OR operator short-circuits: the second operand is only evaluated if the first operand doesn’t already determine the result.
+The logical OR operator short-circuits: the second operand is only evaluated if the first operand doesn't already determine the result.
 
 Logical OR assignment short-circuits as well, meaning it only performs an assignment if the logical operation would evaluate the right-hand side. In other words, `x ||= y` is equivalent to:
 

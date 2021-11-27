@@ -239,7 +239,7 @@ $ git tag
 
 # Create a annotated tag
 # The -m specifies a tagging message, which is stored with the tag.
-# If you don’t specify a message for an annotated tag,
+# If you don't specify a message for an annotated tag,
 # Git launches your editor so you can type it in.
 $ git tag -a v2.0 -m 'my version 2.0'
 

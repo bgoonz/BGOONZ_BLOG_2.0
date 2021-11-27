@@ -61,7 +61,7 @@ Object-Oriented Programming
 
 #### `The Law Of Demeter`
 
--   <span id="e90d">Don’t use more than one dot (not counting the one after “this”).</span>
+-   <span id="e90d">Don't use more than one dot (not counting the one after “this”).</span>
 -   <span id="6cbd">A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables</span>
 
 #### `The Liskov Substitution Principle`
@@ -135,7 +135,7 @@ Defining a constructor function _Example of an object using object initializatio
 ### _Four Things will happen when invoking a constructor function_
 
 1.  <span id="b127">A new empty object is created {};</span>
-2.  <span id="3c79">The new obj’s `prototype` is set to the object referenced by the constructors prototype property.</span>
+2.  <span id="3c79">The new obj's `prototype` is set to the object referenced by the constructors prototype property.</span>
 3.  <span id="6b2e">`This` is bound to the new object.</span>
 4.  <span id="a360">The new object is returned after the constructor function has completed.</span>
 
@@ -144,7 +144,7 @@ Defining a constructor function _Example of an object using object initializatio
 -   <span id="1263">`Instance` : term to describe an objected created from a constructor function.</span>
 -   <span id="6916">Every instance created is a unique object and therefore not equal to each other.</span>
 
-### Using the instanceof operator to check an object’s type
+### Using the instanceof operator to check an object's type
 
     console.log(fellowshipOfTheRing instanceof Book); // true
 
@@ -162,7 +162,7 @@ Defining a constructor function _Example of an object using object initializatio
 
 ### Defining Sharable Methods
 
--   <span id="0f4e">_Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it’s own method definition._</span>
+-   <span id="0f4e">_Avoid the temptation to store an object method inside a constructor function, it is inefficient with computer memory usage b/c each object instance would have it's own method definition._</span>
 -   <span id="a9e8">`Prototype` : An object that is delegated to when a reference to an object property or method can't be resolved.</span>
 -   <span id="ddc6">Every instance created by a constructor function shares the same prototype.</span>
 -   <span id="ddba">`Object.setPrototypeOf()` and `Object.getPrototypeOf()` are just used to set a prototype of one object to another object; and also the verify a prototype.</span>
@@ -190,12 +190,12 @@ Defining a constructor function _Example of an object using object initializatio
 
     console.log(fellowshipOfTheRing.getInformation());
 
--   <span id="455e">Every method we define on a constructor function’s prototype property will be shared across all instances of that object type.</span>
+-   <span id="455e">Every method we define on a constructor function's prototype property will be shared across all instances of that object type.</span>
 
 The Problem with Arrow Functions
 
--   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function’s prototype property.</span>
--   <span id="4f33">Arrow functions don’t include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
+-   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function's prototype property.</span>
+-   <span id="4f33">Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
 
 ---
 
@@ -217,7 +217,7 @@ Defining a ES2015 class
 
 -   <span id="951e">Class names also begin only with capital letters.</span>
 -   <span id="28ed">Although not required, class definitions can include a `class constructor function` - these are similar to regular constructors in that:</span>
--   <span id="a4b1">They don’t explicitly return a value.</span>
+-   <span id="a4b1">They don't explicitly return a value.</span>
 -   <span id="e85e">The this keyword references the newly created object instance.</span>
 
 ### Instantiating an instance of a class
@@ -227,11 +227,11 @@ Defining a ES2015 class
 ### Four things occur when instantiating an instance of a class:
 
 1.  <span id="8842">New empty object is created {};</span>
-2.  <span id="1cd6">The new obj’s prototype is set to the class prototype’s property value.</span>
+2.  <span id="1cd6">The new obj's prototype is set to the class prototype's property value.</span>
 3.  <span id="eddc">`This` is bound to the new object.</span>
 4.  <span id="0814">After the constructor method has completed, the new obj is returned.</span>
 
--   <span id="e722">**Don’t try to instatiate a class object without the new keyword.**</span>
+-   <span id="e722">**Don't try to instatiate a class object without the new keyword.**</span>
 
 #### Class Definitions are NOT hoisted
 
@@ -241,7 +241,7 @@ Defining a ES2015 class
       console.log("This works!");
     }
 
--   <span id="bf4e">In JS you can call a function before it’s declared — this is known as `hoisting`.</span>
+-   <span id="bf4e">In JS you can call a function before it's declared — this is known as `hoisting`.</span>
 -   <span id="8dd6">Class definitions are **NOT hoisted,** so just get in the habit of declaring them before you use them.</span>
 
 Defining Methods
@@ -400,7 +400,7 @@ Defining Methods
 
 -   <span id="cdf9">When the `getInformation()` method is invoked:</span>
 -   <span id="7d03">JS looks for get() on the current object.</span>
--   <span id="c65f">If it isn’t found, the method call is delegated to the object’s prototype.</span>
+-   <span id="c65f">If it isn't found, the method call is delegated to the object's prototype.</span>
 -   <span id="7ff3">It continues up the prototype chain until the method is found.</span>
 
 Overriding a method in a parent class
@@ -426,7 +426,7 @@ Overriding a method in a parent class
       }
     }
 
--   <span id="68fd">We can simply declare our own method of the same name in our child class to override our parent’s version of `getInformation()`</span>
+-   <span id="68fd">We can simply declare our own method of the same name in our child class to override our parent's version of `getInformation()`</span>
 
 ---
 
@@ -435,7 +435,7 @@ Overriding a method in a parent class
 Introducing Node.js modules
 
 -   <span id="7869">In Node.js, each JS file in a project defines a `module`.</span>
--   <span id="fdaa">Module’s contents are private by default.</span>
+-   <span id="fdaa">Module's contents are private by default.</span>
 -   <span id="1ee7">`Local Modules` : Modules defined within your project.</span>
 -   <span id="47f2">`Core Modules` : Native modules contained within Node.js that you can use to perform tasks or to add functionality to your application.</span>
 -   <span id="dc6e">`CommonJS` : A legacy module system.</span>
@@ -469,7 +469,7 @@ Introducing Node.js modules
 
 ### `Encapsulation`
 
--   <span id="74af">Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn’t need to worry about the details of it.</span>
+-   <span id="74af">Puts the behavior and data together behind methods that hide the specific implementation so that code that uses it doesn't need to worry about the details of it.</span>
 
 ### `Inheritance`
 
@@ -609,7 +609,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 
 ### When to ignore the Law of Demeter
 
--   <span id="770a">When you work with objects that come from code that you didn’t create — you will often have to break the LoD.</span>
+-   <span id="770a">When you work with objects that come from code that you didn't create — you will often have to break the LoD.</span>
 
 <!-- -->
 
@@ -618,11 +618,11 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
       .addEventListener("click", (e) => e.preventDefault());
 
 -   <span id="d850">This breaks the law but there is way about it because your code needs to know about both elements and you have to use the API provided by the DOM.</span>
--   <span id="9dc9">UI’s will break LoD because they are not object-oriented programs.</span>
+-   <span id="9dc9">UI's will break LoD because they are not object-oriented programs.</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

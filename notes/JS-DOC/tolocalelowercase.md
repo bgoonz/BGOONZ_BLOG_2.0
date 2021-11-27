@@ -11,7 +11,7 @@ The `toLocaleLowerCase()` method returns the calling string value converted to l
 ### Parameters
 
 `locale` <span class="badge inline optional">Optional</span>  
-The `locale` parameter indicates the locale to be used to convert to lower case according to any locale-specific case mappings. If multiple locales are given in an [`Array`](../array), the [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale) is used. The default locale is the host environment’s current locale.
+The `locale` parameter indicates the locale to be used to convert to lower case according to any locale-specific case mappings. If multiple locales are given in an [`Array`](../array), the [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale) is used. The default locale is the host environment's current locale.
 
 ### Return value
 

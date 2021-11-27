@@ -41,7 +41,7 @@ What do you think will be printed in the following:
 
     fruitBasket();
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
 
     function greaterValue(value, cb1, cb2) {
         // compare cb1 invoked with value to cb2 invoked with value

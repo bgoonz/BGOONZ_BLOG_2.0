@@ -17,7 +17,7 @@ template: docs
 
 -   <span id="7f87"><a href="https://caniuse.com/#home" class="markup--anchor markup--li-anchor">Check cross-browser compatibility for CSS, JavaScript and HTML</a></span>
 -   <span id="6491"><a href="https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a" class="markup--anchor markup--li-anchor">Modern front-end Cheatsheets</a></span>
--   <span id="1272"><a href="https://stackshare.io/" class="markup--anchor markup--li-anchor">Check out what your favorite company’s stack is</a></span>
+-   <span id="1272"><a href="https://stackshare.io/" class="markup--anchor markup--li-anchor">Check out what your favorite company's stack is</a></span>
 -   <span id="d228"><a href="https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c" class="markup--anchor markup--li-anchor">A Guide to Becoming a Full-Stack Developer in 2017</a></span>
 -   <span id="0b32"><a href="http://edusagar.com/articles/view/70/What-happens-when-you-type-a-URL-in-browser" class="markup--anchor markup--li-anchor">What happens when you type a URL into a web browser</a></span>
 
@@ -29,7 +29,7 @@ template: docs
 
 ### GIT
 
--   <span id="c612"><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" class="markup--anchor markup--li-anchor">HubSpot’s Intro to Git/GitHub including Pull Requests &amp; Merging</a></span>
+-   <span id="c612"><a href="http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" class="markup--anchor markup--li-anchor">HubSpot's Intro to Git/GitHub including Pull Requests &amp; Merging</a></span>
 
 ### Express
 
@@ -80,7 +80,7 @@ template: docs
 ### VS Code
 
 -   <span id="e3ec"><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" class="markup--anchor markup--li-anchor">Keystroke cheat sheet</a></span>
--   <span id="7f06"><a href="https://gist.github.com/tanukid/4ba5d7021a2027362592cbac0a356f58" class="markup--anchor markup--li-anchor">Daniel’s Config</a></span>
+-   <span id="7f06"><a href="https://gist.github.com/tanukid/4ba5d7021a2027362592cbac0a356f58" class="markup--anchor markup--li-anchor">Daniel's Config</a></span>
 
 ### Sublime
 
@@ -99,7 +99,7 @@ template: docs
 -   <span id="b6d5"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">Hacker Rank</a></span>
 -   <span id="6a45"><a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=8BB0KRJ073A8CZXTW5PP&amp;dpID=41XgSiYW7dL&amp;preST=_SY291_BO1,204,203,200_QL40_&amp;dpSrc=detail" class="markup--anchor markup--li-anchor">Cracking the Coding Interview</a></span>
 
-Here’s a repo where I hoard resource lists!
+Here's a repo where I hoard resource lists!
 
 <a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong><br />
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -175,8 +175,8 @@ Metrics:
 
 #### Awesome Docker Repos
 
--   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess’s Dockerfiles</a></span>
--   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53’s Dockerfiles</a></span>
+-   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess's Dockerfiles</a></span>
+-   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53's Dockerfiles</a></span>
 
 #### RaspberryPi ARM Images:
 
@@ -388,7 +388,7 @@ Metrics:
 -   <span id="2583"><a href="http://mherman.org/" class="markup--anchor markup--li-anchor">Michael Herman</a></span>
 -   <span id="3e8c"><a href="http://charlesleifer.com/" class="markup--anchor markup--li-anchor">Charles Leifer</a></span>
 -   <span id="3b5d"><a href="https://www.blog.labouardy.com/" class="markup--anchor markup--li-anchor">Labouardy</a></span>
--   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark’s Tech Blog</a></span>
+-   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark's Tech Blog</a></span>
 
 ### Linuxkit:
 
@@ -543,7 +543,7 @@ Metrics:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

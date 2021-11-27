@@ -92,9 +92,9 @@ This is the stuff that comes up on interviews…
 > _but if it points to a mutable object, you will still be able to change the value by mutating the object_
 
 -   <span id="2e8a">**block-scoped variables allow new variables with the same name in new scopes**</span>
--   <span id="b7a6">block-scoped still performs hoisting of all variables within the block, but it doesn’t **initialize to the value of** `undefined` **like** `var` **does,** so it throws a specific reference error if you try to access the value before it has been declared</span>
--   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** _(pretend that’s something you didn’t even know you could do)_</span>
--   <span id="a6c4">if you assign a value without a declaration*(la la la la….I’m not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run.</span>
+-   <span id="b7a6">block-scoped still performs hoisting of all variables within the block, but it doesn't **initialize to the value of** `undefined` **like** `var` **does,** so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="d64f">**if you do not use** `var` **or** `let` **or** `const` **when initializing, it will be declared as global—THIS IS BAD** _(pretend that's something you didn't even know you could do)_</span>
+-   <span id="a6c4">if you assign a value without a declaration*(la la la la….I'm not listening)*, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run.</span>
 
 ### Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -119,7 +119,7 @@ This is the stuff that comes up on interviews…
 -   <span id="98d6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="c91b">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
 -   <span id="66a9">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
--   <span id="b6e8">so you can’t use an arrow function to define a method directly</span>
+-   <span id="b6e8">so you can't use an arrow function to define a method directly</span>
 
 ### Implement a closure and explain how the closure effects scope
 
@@ -129,7 +129,7 @@ This is the stuff that comes up on interviews…
 -   <span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span>
 -   <span id="a9e4">the set of all these available variables is “lexical environemnt”</span>
 -   <span id="8562">closure keeps reference to all variables \*\* even if the outer function has returned</span>
--   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed’ over …each function has a private mutable state that cannot be accessed externally</span>
+-   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed' over …each function has a private mutable state that cannot be accessed externally</span>
 -   <span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 -   <span id="d0d9">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>
 
@@ -165,14 +165,14 @@ can also work with arguments, so you can have a version of a function with parti
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
--   <span id="1757">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="1757">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
 -   <span id="11b1">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="e2bc">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
 -   <span id="2d21">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
--   <span id="e8e4">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="e8e4">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
 -   <span id="b227">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="a0a0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
@@ -184,7 +184,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 #### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be 'primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference’ data types, and are passed by reference.
+Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
 -   <span id="05bb">Boolean — Primitive</span>
 -   <span id="a5ab">Null — Primitive</span>

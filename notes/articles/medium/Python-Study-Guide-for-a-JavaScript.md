@@ -13,7 +13,7 @@ A guide to commands in Python from what you know in JavaScript
 -   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
 -   <span id="c0bf">`print` is the equivalent of `console.log`.</span>
 
-> 'print() == console.log()’
+> 'print() == console.log()'
 
 ### `#` is used to make comments in your code.
 
@@ -25,7 +25,7 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
 ---
 
@@ -63,7 +63,7 @@ No Decimal Point
 
 > **The** `i` **is switched to a** `j` **in programming.**
 
-<span class="graf-dropCap">T</span>\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\***_space_** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+<span class="graf-dropCap">T</span>\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\***_space_** _when there's another 25 letters that don't get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
     print(7j) # => 7j
     print(5.1+7.7j)) # => 5.1+7.7j
@@ -124,9 +124,9 @@ No Decimal Point
 
     print(“Spaghetti”[-4]) # => e
 
--   <span id="7567">Python let’s you use ranges</span>
+-   <span id="7567">Python let's you use ranges</span>
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
     print(“Spaghetti”[1:4]) # => pag
     print(“Spaghetti”[4:-1]) # => hett
@@ -190,7 +190,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Variables and Expressions
 
--   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+-   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.</span>
 -   <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
 -   <span id="5666">Assignment of a value automatically declares a variable.</span>
 
@@ -526,42 +526,42 @@ You can think of this as roughly equivalent to the slice method called on a Java
 > Python has a very powerful formatting engine.  
 > format() is also applied directly to strings.
 
-    shopping_list = ['bread’,’milk’,’eggs’]
-    print(',’.join(shopping_list))
+    shopping_list = ['bread','milk','eggs']
+    print(','.join(shopping_list))
 
 ### Comma Thousands Separator
 
-    print('{:,}’.format(1234567890))
-    '1,234,567,890’
+    print('{:,}'.format(1234567890))
+    '1,234,567,890'
 
 ### Date and Time
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
-    print('{:%Y-%m-%d %H:%M:%S}’.format(d))
-    '2020–07–04 12:15:58’
+    print('{:%Y-%m-%d %H:%M:%S}'.format(d))
+    '2020–07–04 12:15:58'
 
 ### Percentage
 
     points = 190
     total = 220
-    print('Correct answers: {:.2%}’.format(points/total))
+    print('Correct answers: {:.2%}'.format(points/total))
     Correct answers: 86.36%
 
 ### Data Tables
 
     width=8
-    print(' decimal hex binary’)
-    print('-’*27)
+    print(' decimal hex binary')
+    print('-'*27)
     for num in range(1,16):
-    for base in 'dXb’:
-    print('{0:{width}{base}}’.format(num, base=base, width=width), end=’ ')
+    for base in 'dXb':
+    print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')
     print()
     Getting Input from the Command Line
     Python runs synchronously, all programs and processes will stop when listening for a user input.
-    The input function shows a prompt to a user and waits for them to type 'ENTER’.
+    The input function shows a prompt to a user and waits for them to type 'ENTER'.
     Scripts vs Programs
     Programming Script : A set of code that runs in a linear fashion.
-    The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
+    The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.
 
 **Python can be used to display html, css, and JS.**  
 _It is common to use Python as an API (Application Programming Interface)_
@@ -588,7 +588,7 @@ _It is common to use Python as an API (Application Programming Interface)_
 ### Lists are the python equivalent of arrays.
 
     empty_list = []
-    departments = ['HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’]
+    departments = ['HR','Development','Sales','Finance','IT','Customer Support']
 
 ### You can instantiate
 
@@ -602,20 +602,20 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Instantiated with parentheses
 
-    time_blocks = ('AM’,’PM’)
+    time_blocks = ('AM','PM')
 
 #### Sometimes instantiated without
 
-    colors = 'red’,’blue’,’green’
+    colors = 'red','blue','green'
     numbers = 1, 2, 3
 
 #### Tuple() built in can be used to convert other data into a tuple
 
-    tuple('abc’) # returns ('a’, 'b’, 'c’)
+    tuple('abc') # returns ('a', 'b', 'c')
     tuple([1,2,3]) # returns (1, 2, 3)
     # Think of tuples as constant variables.
 
-#### Ranges : A list of numbers which can’t be changed; often used with for loops.
+#### Ranges : A list of numbers which can't be changed; often used with for loops.
 
 **Declared using one to three parameters**.
 
@@ -637,14 +637,14 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Mutable.
 
-    a = {'one’:1, 'two’:2, 'three’:3}
+    a = {'one':1, 'two':2, 'three':3}
     b = dict(one=1, two=2, three=3)
-    c = dict([('two’, 2), ('one’, 1), ('three’, 3)])
+    c = dict([('two', 2), ('one', 1), ('three', 3)])
     # a, b, and c are all equal
 
 **_Declared with curly braces of the built in dict()_**
 
-> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
+> _Benefit of dictionaries in Python is that it doesn't matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
@@ -661,12 +661,12 @@ _It is common to use Python as an API (Application Programming Interface)_
 **Standard Set is mutable, Python has a immutable version called frozenset.  
 Sets created by putting comma seperated values inside braces:**
 
-    school_bag = {'book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}
+    school_bag = {'book','paper','pencil','pencil','book','book','book','eraser'}
     print(school_bag)
 
 #### Also can use set constructor to automatically put it into a set.
 
-    letters = set('abracadabra’)
+    letters = set('abracadabra')
     print(letters)
     #Built-In Functions
     #Functions using iterables
@@ -685,13 +685,13 @@ Sets created by putting comma seperated values inside braces:**
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
-    quarters = ['First’, 'Second’, 'Third’, 'Fourth’]
+    quarters = ['First', 'Second', 'Third', 'Fourth']
     print(enumerate(quarters))
     print(enumerate(quarters, start=1))
 
-#### (0, 'First’), (1, 'Second’), (2, 'Third’), (3, 'Fourth’)
+#### (0, 'First'), (1, 'Second'), (2, 'Third'), (3, 'Fourth')
 
-#### (1, 'First’), (2, 'Second’), (3, 'Third’), (4, 'Fourth’)
+#### (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
 > Functions that analyze iterable
@@ -747,7 +747,7 @@ Always Includes:
 
 > 1. The for keyword
 > 2. A variable name
-> 3. The 'in’ keyword
+> 3. The 'in' keyword
 > 4. An iterable of some kid
 > 5. A colon
 > 6. On the next line, an indented block of code called the for clause.
@@ -756,16 +756,16 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
-    print('My name is’)
+    print('My name is')
     for i in range(5):
-    print('Carlita Cinco (' + str(i) + ')’)
+    print('Carlita Cinco (' + str(i) + ')')
 
     total = 0
     for num in range(101):
     total += num
     print(total)
     Looping over a list in Python
-    for c in ['a’, 'b’, 'c’]:
+    for c in ['a', 'b', 'c']:
     print(c)
 
     lst = [0, 1, 2, 3]
@@ -774,7 +774,7 @@ Always Includes:
 
 **_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
-    supplies = ['pens’, 'staplers’, 'flame-throwers’, 'binders’]
+    supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
     for i in range(len(supplies)):
     print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
 
@@ -792,7 +792,7 @@ Always Includes:
 
 **You can use values() and keys() to loop over dictionaries.**
 
-    spam = {'color’: 'red’, 'age’: 42}
+    spam = {'color': 'red', 'age': 42}
     for v in spam.values():
     print(v)
 
@@ -814,9 +814,9 @@ _Prints age_
     for i in spam.items():
     print(i)
 
-_Prints ('color’, 'red’)_
+_Prints ('color', 'red')_
 
-_Prints ('age’, 42)_
+_Prints ('age', 42)_
 
 _Destructuring to values_
 
@@ -870,7 +870,7 @@ Custom.
 > module : Python code in a separate file.  
 > package : Path to a directory that contains modules.  
 > <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.  
-> submodule : Another file in a module’s folder.  
+> submodule : Another file in a module's folder.  
 > function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
@@ -910,7 +910,7 @@ sets were killed in favor of set() class.**
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -924,7 +924,7 @@ Or Checkout my personal Resource Site:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

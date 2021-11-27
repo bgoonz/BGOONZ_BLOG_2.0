@@ -6,7 +6,7 @@ weight: 0
 excerpt: Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
 seo:
   title: 'Web Dev Enviorment Setup'
-  description: 'Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.'
+  description: 'Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.'
   robots: []
   extra: []
 template: docs
@@ -37,7 +37,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 7.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
 8.  <span id="9d35">Type in “Ubuntu”</span>
 9.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
-10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’</span>
+10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu'</span>
 11. <span id="edec">Click “Install”</span>
 12. <span id="2935">After it downloads, click “Launch”</span>
 13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”</span>
@@ -49,9 +49,9 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ### Git
 
-Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.
+Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
 
- Open an Ubuntu terminal if you don’t have one open already.
+ Open an Ubuntu terminal if you don't have one open already.
 
 1.  <span id="8cfe">You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.</span>
 2.  <span id="0e0d">You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.</span>
@@ -68,7 +68,7 @@ Test if you have Chrome installed by typing “Chrome” in the search box in th
 
  
 
-1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</span>
+1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
 2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
 
 ### Node.js
@@ -152,7 +152,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

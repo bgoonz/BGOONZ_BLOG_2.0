@@ -87,7 +87,7 @@
                 <h1 class="p-name">Scheduling: setTimeout and setInterval</h1>
             </header>
             <section data-field="subtitle" class="p-summary">
-                We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+                We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
             </section>
             <section data-field="body" class="e-content">
                 <section name="9ecb" class="section section--body section--first section--last">
@@ -98,7 +98,7 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="7c04" id="7c04" class="graf graf--h3 graf--leading graf--title">Scheduling: setTimeout and setInterval</h3>
                             <p name="0d64" id="0d64" class="graf graf--p graf-after--h3">
-                                We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+                                We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
                             </p>
                             <figure name="d268" id="d268" class="graf graf--figure graf-after--p">
                                 <img
@@ -201,7 +201,7 @@ let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)</pre
                                 In other environments, this can be something else. For instance, Node.js returns a timer object with additional methods.
                             </p>
                             <p name="dca1" id="dca1" class="graf graf--p graf-after--p">
-                                Again, there is no universal specification for these methods, so that’s fine.
+                                Again, there is no universal specification for these methods, so that's fine.
                             </p>
                             <p name="fa47" id="fa47" class="graf graf--p graf-after--p">
                                 For browsers, timers are described in the
@@ -251,7 +251,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 <code class="markup--code markup--p-code">alert/confirm/prompt</code>.
                             </p>
                             <p name="0358" id="0358" class="graf graf--p graf-after--p">
-                                So if you run the code above and don’t dismiss the <code class="markup--code markup--p-code">alert</code> window for some time,
+                                So if you run the code above and don't dismiss the <code class="markup--code markup--p-code">alert</code> window for some time,
                                 then the next <code class="markup--code markup--p-code">alert</code> will be shown immediately as you do it. The actual interval
                                 between alerts will be shorter than 2 seconds.
                             </p>
@@ -293,7 +293,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 For instance, we need to write a service that sends a request to the server every 5 seconds asking for data, but in case the
                                 server is overloaded, it should increase the interval to 10, 20, 40 seconds…
                             </p>
-                            <p name="5a57" id="5a57" class="graf graf--p graf-after--p">Here’s the pseudocode:</p>
+                            <p name="5a57" id="5a57" class="graf graf--p graf-after--p">Here's the pseudocode:</p>
                             <pre name="f120" id="f120" class="graf graf--pre graf-after--p">let delay = 5000;</pre>
                             <pre
                                 name="16b4"
@@ -308,7 +308,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                             <pre name="871d" id="871d" class="graf graf--pre graf-after--pre">  timerId = setTimeout(request, delay);</pre>
                             <pre name="df58" id="df58" class="graf graf--pre graf-after--pre">}, delay);</pre>
                             <p name="6e06" id="6e06" class="graf graf--p graf-after--pre">
-                                And if the functions that we’re scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next
+                                And if the functions that we're scheduling are CPU-hungry, then we can measure the time taken by the execution and plan the next
                                 call sooner or later.
                             </p>
                             <p name="dc06" id="dc06" class="graf graf--p graf-after--p">
@@ -319,7 +319,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 ><strong class="markup--strong markup--p-strong">.</strong>
                             </p>
                             <p name="122b" id="122b" class="graf graf--p graf-after--p">
-                                Let’s compare two code fragments. The first one uses <code class="markup--code markup--p-code">setInterval</code>:
+                                Let's compare two code fragments. The first one uses <code class="markup--code markup--p-code">setInterval</code>:
                             </p>
                             <pre
                                 name="4a1d"
@@ -347,7 +347,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 ><strong class="markup--strong markup--p-strong"> is less than in the code!</strong>
                             </p>
                             <p name="d48e" id="d48e" class="graf graf--p graf-after--p">
-                                That’s normal, because the time taken by <code class="markup--code markup--p-code">func</code>&#39;s execution
+                                That's normal, because the time taken by <code class="markup--code markup--p-code">func</code>&#39;s execution
                                 &quot;consumes&quot; a part of the interval.
                             </p>
                             <p name="05a9" id="05a9" class="graf graf--p graf-after--p">
@@ -370,7 +370,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 ><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">setTimeout</strong></code
                                 ><strong class="markup--strong markup--p-strong"> guarantees the fixed delay (here 100ms).</strong>
                             </p>
-                            <p name="4e4f" id="4e4f" class="graf graf--p graf-after--p">That’s because a new call is planned at the end of the previous one.</p>
+                            <p name="4e4f" id="4e4f" class="graf graf--p graf-after--p">That's because a new call is planned at the end of the previous one.</p>
                             <pre
                                 name="3e07"
                                 id="3e07"
@@ -393,7 +393,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                             ><code class="markup--code markup--pre-code">There&#39;s a side-effect. A function references the outer lexical environment, so, while it lives, outer variables live too. They may take much more memory than the function itself. So when we don&#39;t need the scheduled function anymore, it&#39;s better to cancel it, even if it&#39;s very small.</code></pre>
                             <h3 name="9676" id="9676" class="graf graf--h3 graf-after--pre">Zero delay setTimeout</h3>
                             <p name="b0b8" id="b0b8" class="graf graf--p graf-after--h3">
-                                There’s a special use case: <code class="markup--code markup--p-code">setTimeout(func, 0)</code>, or just
+                                There's a special use case: <code class="markup--code markup--p-code">setTimeout(func, 0)</code>, or just
                                 <code class="markup--code markup--p-code">setTimeout(func)</code>.
                             </p>
                             <p name="f105" id="f105" class="graf graf--p graf-after--p">
@@ -412,7 +412,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 <code class="markup--code markup--p-code">&quot;World&quot;</code> -- after it.
                             </p>
                             <p name="7e0b" id="7e0b" class="graf graf--p graf-after--p">
-                                There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.
+                                There are also advanced browser-related use cases of a zero-delay timeout, that we'll discuss in the chapter info:event-loop.
                             </p>
                             <pre
                                 name="abe2"

@@ -34,11 +34,11 @@ Space Complexity: O(1)
 
 -   Gives an intro on how to convert unsorted data into sorted data.
 
-> It’s almost never used in production code because:
+> It's almost never used in production code because:
 
--   _It’s not efficient_
+-   _It's not efficient_
 
--   _It’s not commonly used_
+-   _It's not commonly used_
 
 -   _There is stigma attached to it_
 

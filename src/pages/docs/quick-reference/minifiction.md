@@ -33,7 +33,7 @@ Optimize the settings for a specific output (if options are available)
 Click a button to minify or compress the code.
 Copy the minified code output or download the minified code file.
 
-For this example, I’m going to use the minify tools from minifycode.com.
+For this example, I'm going to use the minify tools from minifycode.com.
 
 First, locate the css file (commonly named style.css) in your site files and open the file using a page editor. Then copy the entire css code to your clipboard.
 
@@ -49,9 +49,9 @@ After the new minified code is generated, copy the code.
 
 Then go back to the css file of your website and replace the code with the new minified version.
 
-That’s it!
+That's it!
 
-Repeat the same process to minify your site’s JavaScript and Html file(s) as well.
+Repeat the same process to minify your site's JavaScript and Html file(s) as well.
 
 ### Overview&#xA;&#xA;
 

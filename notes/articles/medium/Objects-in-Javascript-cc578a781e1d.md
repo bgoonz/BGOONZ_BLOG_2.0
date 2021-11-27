@@ -31,7 +31,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="4575">Objects are defined by using curly braces `{}`</span>
 -   <span id="0c11">You can think of Objects as tables.</span>
 
-> _Fun Fact: Objects are affectionately known as POJO’s (Plain Old Javascript Objects)_
+> _Fun Fact: Objects are affectionately known as POJO's (Plain Old Javascript Objects)_
 
 **Setting Keys and Values**
 
@@ -56,8 +56,8 @@ Cannot access with Variables
 
 Keys cannot contain numbers as their first character
 
--   <span id="7b34">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn’t.</span>
--   <span id="9e11">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can’t do this at all.</span>
+-   <span id="7b34">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn't.</span>
+-   <span id="9e11">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can't do this at all.</span>
 
 **Putting it All Together**
 
@@ -78,7 +78,7 @@ A is a function that _belongs_ to an object. Every method is a function, but _no
 -   <span id="b0e3">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
 -   <span id="7fbd">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
 
-**Iterating through an Object’s keys & values**
+**Iterating through an Object's keys & values**
 
 ### References vs Primitives
 
@@ -127,7 +127,7 @@ So far we have learned about 6 different data types:
 ### Destructuring Parameters
 
 We can also destructure **incoming parameters** of a function.  
- This is very useful when we’re passing objects around to different functions.
+ This is very useful when we're passing objects around to different functions.
 
 ---
 
@@ -161,12 +161,12 @@ We can also destructure **incoming parameters** of a function.
 
 ### Reference
 
--   <span id="413d">Objects refer to each other, they don’t hold duplicate copies of data</span>
+-   <span id="413d">Objects refer to each other, they don't hold duplicate copies of data</span>
 
 ### Prototype
 
 -   <span id="b567">Every object has a prototype object from which it inherits properties</span>
--   <span id="943e">_Object.prototype_ comes standard with Javascript and is almost like a 'root parent’</span>
+-   <span id="943e">_Object.prototype_ comes standard with Javascript and is almost like a 'root parent'</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1MKtZt0a5gREie59" class="graf-image" /></figure>-   <span id="2293">The `Object.create` method is now available in ES5 (but the method is in the book if required for older versions)</span>
 -   <span id="5001">If an object does not have a property you ask it for, it will keep looking up the prototype chain until it finds it</span>
@@ -183,7 +183,7 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 
 <!-- -->
 
-    today.hasOwnProperty('number’) //will return true today.hasOwnProperty('constructor’) //will return false
+    today.hasOwnProperty('number') //will return true today.hasOwnProperty('constructor') //will return false
 
 ### Enumeration
 
@@ -192,9 +192,9 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 <!-- -->
 
     let i;
-    let properties = [ 'day’, 'month’, 'year’ ];
+    let properties = [ 'day', 'month', 'year' ];
     for (i = 0; i < properties.length; i++) {
-        document.writeIn(properties[i] + ':’ + today[properties[i]]);
+        document.writeIn(properties[i] + ':' + today[properties[i]]);
      }
 
 -   <span id="5d1f">This ensures you get the properties you want (i.e. not up the prototype chain) and in the order you want, as opposed to a _for in_ loop which achieves neither of these</span>
@@ -227,9 +227,9 @@ More details in <a href="https://github.com/Lambda-April/Unsorted-Notes/blob/mai
 #### Further resources:
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

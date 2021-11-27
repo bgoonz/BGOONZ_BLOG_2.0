@@ -14,7 +14,7 @@ When introduced, node.js gave developers the chance to use JavaScript to write s
 
 This tutorial will cover how to write **web services** that can communicate with clients (the front end application) using **J**ava**S**cript **O**bject **N**otation (JSON).
 
--   <span id="5334">JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</span>
+-   <span id="5334">JavaScript is asynchronous, which allows us to take full advantage of the processor it's running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</span>
 -   <span id="0b8b">Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries (most of them free to use) in **npm modules**.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PTKhCN2p9S8EDZ4r.gif" class="graf-image" /></figure>
@@ -31,19 +31,19 @@ Some of the advantages of using Node.js for writing server-side code are:
 
 -   <span id="51f9">Uses the same programming language (JavaScript) and paradigm for both client and server. Using the same language, we minimize context switching and make it easy to share code between the client and the server.</span>
 -   <span id="ad6f">JavaScript is single-threaded, which removes the complexity involved in handling multiple threads.</span>
--   <span id="c797">JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</span>
+-   <span id="c797">JavaScript is asynchronous, which allows us to take full advantage of the processor it's running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</span>
 -   <span id="7654">Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries (most of them free to use) in **npm modules**.</span>
 
 Some of the disadvantages of using Node.js for writing server-side code are:
 
 -   <span id="0f56">By strictly using JavaScript on the server, we lose the ability to use the right tool (a particular language) for the job.</span>
--   <span id="cd1e">Because JavaScript is single-threaded, we can’t take advantage of servers with multiple cores/processors.</span>
+-   <span id="cd1e">Because JavaScript is single-threaded, we can't take advantage of servers with multiple cores/processors.</span>
 -   <span id="12c7">Because JavaScript is asynchronous, it is harder to learn for developers that have only worked with languages that default to synchronous operations that block the execution thread.</span>
 -   <span id="07dc">In the npm repository, there are often too many packages that do the same thing. This excess of packages makes it harder to choose one and, in some cases, may introduce vulnerabilities into our code.</span>
 
 To write a simple web server with `Node.js`:
 
-1.  <span id="b4ff">Use Node’s `HTTP` module to abstract away complex network-related operations.</span>
+1.  <span id="b4ff">Use Node's `HTTP` module to abstract away complex network-related operations.</span>
 2.  <span id="9e58">Write the single **_request handler_** function to handle all requests to the server.</span>
 
 The request handler is a function that takes the `request` coming from the client and produces the `response`. The function takes two arguments: 1) an object representing the `request` and 2) an object representing the `response`.
@@ -54,7 +54,7 @@ This process works, but the resulting code is verbose, even for the simplest of 
 
 ### Try It Out:
 
-Using only Node.js, let’s write a simple web server that returns a message. Create a folder for the server and add an `index.js` file inside.
+Using only Node.js, let's write a simple web server that returns a message. Create a folder for the server and add an `index.js` file inside.
 
 Next, add the following code to the `index.js` file:
 
@@ -83,7 +83,7 @@ Open a browser and visit: `http://localhost:3000`. `localhost` and the IP addres
 
 ### Explain what Express is and its core features:
 
-Node’s built-in `HTTP` module provides a powerful way to build web applications and services. However, it requires a lot of code for everyday tasks like sending an HTML page to the browser.
+Node's built-in `HTTP` module provides a powerful way to build web applications and services. However, it requires a lot of code for everyday tasks like sending an HTML page to the browser.
 
 Introducing Express, a light and unopinionated framework that **sits on top of Node.js**, making it easier to create web applications and services. Sending an HTML file or image is now a one-line task with the `sendFile` helper method in `Express`.
 
@@ -109,7 +109,7 @@ Some of the benefits of using Express are that it is:
 
 Some of the drawbacks of Express are:
 
--   <span id="e9d2">It’s not a one-stop solution. Because of its simplicity, it does very little out of the box. Especially when compared to frameworks like **Ruby on Rails** and **Django**.</span>
+-   <span id="e9d2">It's not a one-stop solution. Because of its simplicity, it does very little out of the box. Especially when compared to frameworks like **Ruby on Rails** and **Django**.</span>
 -   <span id="9bb7">We are forced to make more decisions due to the flexibility and control it provides.</span>
 
 ### Main Features of Express
@@ -121,9 +121,9 @@ Some of the drawbacks of Express are:
 
 Middleware functions can get the request and response objects, operate on them, and (when specified) trigger some action. Examples are logging or security.
 
-Express’s middleware stack is an array of functions.
+Express's middleware stack is an array of functions.
 
-Middleware _can_ change the request or response, but it doesn’t have to.
+Middleware _can_ change the request or response, but it doesn't have to.
 
 ### Routing
 
@@ -149,7 +149,7 @@ Views provide a way to dynamically render HTML on the server and even generate i
 
 ### Try It:
 
-Let’s write our first server using Express:
+Let's write our first server using Express:
 
 -   <span id="1a5f">Create a new file called `server.js` to host our server code.</span>
 -   <span id="2d2f">Type `npm init -y` to generate a `package.json`.</span>
@@ -181,7 +181,7 @@ To stop the server, type `Ctrl + c` at the terminal window.
 
 The steps necessary to build a simple Web API that returns the string “Hello World” on every incoming `GET` request. The program should return the string every time a request comes into the root route ("/"). For now, you don't need to code along, just read through the steps.
 
-To make things easier, we’ll use an existing repository as the base for our API. Later in the week, as we learn more about Node.js and Express, we’ll create an API from scratch.
+To make things easier, we'll use an existing repository as the base for our API. Later in the week, as we learn more about Node.js and Express, we'll create an API from scratch.
 
 To build our first API, we will:
 
@@ -220,7 +220,7 @@ We are using the `express` npm module in our code, so we need to add it as a dep
 -   <span id="e9eb">Open a terminal/console/command prompt window and navigate to the root of our project.</span>
 -   <span id="b744">Add express to our `package.json` file by typing `npm install express`.</span>
 
-Now we’re ready to test our API!
+Now we're ready to test our API!
 
 In the terminal, still at the root of our project:
 
@@ -239,17 +239,17 @@ An Express application publishes a set of methods we can use to configure functi
 
 The first two arguments passed by `express` to a route handler function are 1) an object representing the `request` and 2) an object representing the `response`. Express expands those objects with a set of useful properties and methods. Our example uses the `.send()` method of the response object to specify the data we will send to the client as the response body. You can call the first two arguments anything you want, but it is prevalent to see them dubbed `req` and `res`.
 
-That’s all the configuring we need to do for this first example We’ll see other ways of configuring our server as we go forward.
+That's all the configuring we need to do for this first example We'll see other ways of configuring our server as we go forward.
 
-After configuring the server, it’s time to turn it on. We use the `.listen()` method to monitor a port on the computer for any incoming connections and respond to those we have configured. Our server will only respond to `GET` requests made to the `/` route on port `8000`.
+After configuring the server, it's time to turn it on. We use the `.listen()` method to monitor a port on the computer for any incoming connections and respond to those we have configured. Our server will only respond to `GET` requests made to the `/` route on port `8000`.
 
-That’s it for our first Web API, and now it’s time for you to follow along as we add a new **endpoint** to our server that returns JSON data!
+That's it for our first Web API, and now it's time for you to follow along as we add a new **endpoint** to our server that returns JSON data!
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nGyJHK1Q_sSB6fjbBbF3xA.png" class="graf-image" /></figure>
 
 ### Try It Out:
 
-Let’s try returning JSON instead of just a simple string.
+Let's try returning JSON instead of just a simple string.
 
 Please follow the steps outlined on the overview, but, to save time, copy and paste the content of `index.js` instead of typing it. Then run your API through a browser to make sure it works.
 
@@ -321,7 +321,7 @@ Congratulations! You just built an API that can return data in JSON format.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nGyJHK1Q_sSB6fjbBbF3xA.png" class="graf-image" /></figure>
 
-### Let’s look at a basic example of routing in action.
+### Let's look at a basic example of routing in action.
 
 First, to make our Express application respond to `GET` requests on different URLs, add the following endpoints:
 
@@ -345,7 +345,7 @@ Open a browser and navigate to the `/about` and `/contact` routes. The appropria
 
 Please follow along as we write endpoints that execute different request handlers on the same URL by changing the HTTP method.
 
-Let’s start by adding the following code after the `GET` endpoint to `/hobbits`:
+Let's start by adding the following code after the `GET` endpoint to `/hobbits`:
 
     // this request handler executes when making a POST request to /hobbits
     server.post('/hobbits', (req, res) => {
@@ -363,28 +363,28 @@ Next, we need to add an endpoint for `PUT` requests to the same URL.
 
 For successful `PUT` operations, we use HTTP Status Code 200 (OK).
 
-Finally, let’s write an endpoint to handle `DELETE` requests.
+Finally, let's write an endpoint to handle `DELETE` requests.
 
     // this request handler executes when making a DELETE request to /hobbits
     server.delete('/hobbits', (req, res) => {
       res.status(204);
     });
 
-We are returning HTTP Status Code 204 (No Content). Suppose you are returning any data to the client, perhaps the removed resource, on successful deletes. In that case, you’d change that to be 200 instead.
+We are returning HTTP Status Code 204 (No Content). Suppose you are returning any data to the client, perhaps the removed resource, on successful deletes. In that case, you'd change that to be 200 instead.
 
-You may have noticed that we are not reading any data from the request, as that is something we’ll learn later in the module. We are about to learn how to use a tool called `Postman` to test our `POST`, `PUT`, and `DELETE` endpoints.
+You may have noticed that we are not reading any data from the request, as that is something we'll learn later in the module. We are about to learn how to use a tool called `Postman` to test our `POST`, `PUT`, and `DELETE` endpoints.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nGyJHK1Q_sSB6fjbBbF3xA.png" class="graf-image" /></figure>
 
 ### Reading and Using Route Parameters
 
-Let’s revisit our `DELETE` endpoint.
+Let's revisit our `DELETE` endpoint.
 
     server.delete('/hobbits', (req, res) => {
       res.status(204);
     });
 
-How does the client let the API know which hobbit should be deleted or updated? One way, the one we’ll use, is through `route parameters`. Let's add support for route parameters to our `DELETE` endpoint.
+How does the client let the API know which hobbit should be deleted or updated? One way, the one we'll use, is through `route parameters`. Let's add support for route parameters to our `DELETE` endpoint.
 
 We define route parameters by adding it to the URL with a colon (`:`) in front of it. Express adds it to the `.params` property part of the request object. Let's see it in action:
 
@@ -411,9 +411,9 @@ The query string is another strategy using the URL to pass information from clie
 
 An example of a query string would be: `https://www.google.com/search?q=lambda&tbo=1`. The query string portion is `?q=lambda&tbo=1` and the key/value pairs are `q=lambda` and `tbo=1`.
 
-Let’s add sorting capabilities to our API. We’ll provide a way for clients to hit our `/hobbits` and pass the field they want to use to sort the responses, and our API will sort the data by that field in ascending order.
+Let's add sorting capabilities to our API. We'll provide a way for clients to hit our `/hobbits` and pass the field they want to use to sort the responses, and our API will sort the data by that field in ascending order.
 
-Here’s the new code for the `GET /hobbits` endpoint:
+Here's the new code for the `GET /hobbits` endpoint:
 
     server.get('/hobbits', (req, res) => {
       // query string parameters get added to req.query
@@ -441,7 +441,7 @@ Visit `localhost:8000/hobbits?sortby=name`, and the list should be sorted by `na
 
 To read values from the query string, we use the `req.query` object added by Express. There will be a key and a value in the `req.query` object for each key/value pair found in the query string.
 
-The parameter’s value will be of type `array` if more than one value is passed for the same key and `string` when only one value is passed. For example, in the query string `?id=123`, `req.query.id` will be a string, but for `?id=123&id=234`, it will be an array.
+The parameter's value will be of type `array` if more than one value is passed for the same key and `string` when only one value is passed. For example, in the query string `?id=123`, `req.query.id` will be a string, but for `?id=123&id=234`, it will be an array.
 
 Another gotcha is that the names of query string parameters are case sensitive, `sortby` and `sortBy` are two different parameters.
 
@@ -487,11 +487,11 @@ Then we define a variable for manual id generation. When using a database, this 
 To read data from the request body, we need to do two things:
 
 -   <span id="02f1">Add the line: `server.use(express.json());` after the express application has been created.</span>
--   <span id="5111">Read the data from the body property that Express adds to the request object. Express takes all the client’s information from the body and makes it available as a nice JavaScript object.</span>
+-   <span id="5111">Read the data from the body property that Express adds to the request object. Express takes all the client's information from the body and makes it available as a nice JavaScript object.</span>
 
 **Note that we are skipping data validation to keep this demo simple, but in a production application, you would validate before attempting to save to the database.**
 
-Let’s test it using Postman:
+Let's test it using Postman:
 
 -   <span id="2351">Change the method to POST.</span>
 -   <span id="ca2a">Select the `Body` tab underneath the address bar.</span>
@@ -516,7 +516,7 @@ Please code along as we implement the `PUT` endpoint and a way for the client to
 
 ### Implement Update Functionality
 
-Let’s continue practicing reading route parameters and information from the request body. Let’s take a look at our existing PUT endpoint:
+Let's continue practicing reading route parameters and information from the request body. Let's take a look at our existing PUT endpoint:
 
     server.put('/hobbits', (req, res) => {
       res.status(200).json({ url: '/hobbits', operation: 'PUT' });
@@ -551,7 +551,7 @@ Concentrate on the code related to reading the `id` from the `req.params` object
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
@@ -568,10 +568,10 @@ Concentrate on the code related to reading the `id` from the `req.params` object
 
 ### Things to do in your code
 
-Here are some things you can do in your code to improve your application’s performance:
+Here are some things you can do in your code to improve your application's performance:
 
 -   <span id="b2b0"><a href="#use-gzip-compression" class="markup--anchor markup--li-anchor" title="#use-gzip-compression">Use gzip compression</a></span>
--   <span id="23bb"><a href="#dont-use-synchronous-functions" class="markup--anchor markup--li-anchor" title="#dont-use-synchronous-functions">Don’t use synchronous functions</a></span>
+-   <span id="23bb"><a href="#dont-use-synchronous-functions" class="markup--anchor markup--li-anchor" title="#dont-use-synchronous-functions">Don't use synchronous functions</a></span>
 -   <span id="904e"><a href="#do-logging-correctly" class="markup--anchor markup--li-anchor" title="#do-logging-correctly">Do logging correctly</a></span>
 -   <span id="f619"><a href="#handle-exceptions-properly" class="markup--anchor markup--li-anchor" title="#handle-exceptions-properly">Handle exceptions properly</a></span>
 
@@ -586,13 +586,13 @@ Gzip compressing can greatly decrease the size of the response body and hence in
 
 For a high-traffic website in production, the best way to put compression in place is to implement it at a reverse proxy level (see <a href="#use-a-reverse-proxy" class="markup--anchor markup--p-anchor" title="#use-a-reverse-proxy">Use a reverse proxy</a>). In that case, you do not need to use compression middleware. For details on enabling gzip compression in Nginx, see <a href="http://nginx.org/en/docs/http/ngx_http_gzip_module.html" class="markup--anchor markup--p-anchor" title="http://nginx.org/en/docs/http/ngx_http_gzip_module.html">Module ngx_http_gzip_module</a> in the Nginx documentation.
 
-### Don’t use synchronous functions
+### Don't use synchronous functions
 
 Synchronous functions and methods tie up the executing process until they return. A single call to a synchronous function might return in a few microseconds or milliseconds, however in high-traffic websites, these calls add up and reduce the performance of the app. Avoid their use in production.
 
 Although Node and many modules provide synchronous and asynchronous versions of their functions, always use the asynchronous version in production. The only time when a synchronous function can be justified is upon initial startup.
 
-If you are using Node.js 4.0+ or io.js 2.1.0+, you can use the `--trace-sync-io` command-line flag to print a warning and a stack trace whenever your application uses a synchronous API. Of course, you wouldn’t want to use this in production, but rather to ensure that your code is ready for production. See the <a href="https://nodejs.org/api/cli.html#cli_trace_sync_io" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/cli.html#cli_trace_sync_io">node command-line options documentation</a> for more information.
+If you are using Node.js 4.0+ or io.js 2.1.0+, you can use the `--trace-sync-io` command-line flag to print a warning and a stack trace whenever your application uses a synchronous API. Of course, you wouldn't want to use this in production, but rather to ensure that your code is ready for production. See the <a href="https://nodejs.org/api/cli.html#cli_trace_sync_io" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/cli.html#cli_trace_sync_io">node command-line options documentation</a> for more information.
 
 ### Do logging correctly
 
@@ -600,11 +600,11 @@ In general, there are two reasons for logging from your app: For debugging and f
 
 #### For debugging
 
-If you’re logging for purposes of debugging, then instead of using `console.log()`, use a special debugging module like <a href="https://www.npmjs.com/package/debug" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/debug">debug</a>. This module enables you to use the DEBUG environment variable to control what debug messages are sent to `console.error()`, if any. To keep your app purely asynchronous, you’d still want to pipe `console.error()` to another program. But then, you’re not really going to debug in production, are you?
+If you're logging for purposes of debugging, then instead of using `console.log()`, use a special debugging module like <a href="https://www.npmjs.com/package/debug" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/debug">debug</a>. This module enables you to use the DEBUG environment variable to control what debug messages are sent to `console.error()`, if any. To keep your app purely asynchronous, you'd still want to pipe `console.error()` to another program. But then, you're not really going to debug in production, are you?
 
 #### For app activity
 
-If you’re logging app activity (for example, tracking traffic or API calls), instead of using `console.log()`, use a logging library like <a href="https://www.npmjs.com/package/winston" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/winston">Winston</a> or <a href="https://www.npmjs.com/package/bunyan" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/bunyan">Bunyan</a>. For a detailed comparison of these two libraries, see the StrongLoop blog post <a href="https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/">Comparing Winston and Bunyan Node.js Logging</a>.
+If you're logging app activity (for example, tracking traffic or API calls), instead of using `console.log()`, use a logging library like <a href="https://www.npmjs.com/package/winston" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/winston">Winston</a> or <a href="https://www.npmjs.com/package/bunyan" class="markup--anchor markup--p-anchor" title="https://www.npmjs.com/package/bunyan">Bunyan</a>. For a detailed comparison of these two libraries, see the StrongLoop blog post <a href="https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/">Comparing Winston and Bunyan Node.js Logging</a>.
 
 ### Handle exceptions properly
 
@@ -628,7 +628,7 @@ One thing you should _not_ do is to listen for the `uncaughtException` event, em
 
 Additionally, using `uncaughtException` is officially recognized as <a href="https://nodejs.org/api/process.html#process_event_uncaughtexception" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/process.html#process_event_uncaughtexception">crude</a>. So listening for `uncaughtException` is just a bad idea. This is why we recommend things like multiple processes and supervisors: crashing and restarting is often the most reliable way to recover from an error.
 
-We also don’t recommend using <a href="https://nodejs.org/api/domain.html" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/domain.html">domains</a>. It generally doesn’t solve the problem and is a deprecated module.
+We also don't recommend using <a href="https://nodejs.org/api/domain.html" class="markup--anchor markup--p-anchor" title="https://nodejs.org/api/domain.html">domains</a>. It generally doesn't solve the problem and is a deprecated module.
 
 #### Use try-catch
 
@@ -651,7 +651,7 @@ Here is an example of using try-catch to handle a potential process-crashing exc
       })
     })
 
-However, try-catch works only for synchronous code. Because the Node platform is primarily asynchronous (particularly in a production environment), try-catch won’t catch a lot of exceptions.
+However, try-catch works only for synchronous code. Because the Node platform is primarily asynchronous (particularly in a production environment), try-catch won't catch a lot of exceptions.
 
 #### Use promises
 
@@ -681,7 +681,7 @@ However, there are two caveats:
 1.  <span id="f314">All your asynchronous code must return promises (except emitters). If a particular library does not return promises, convert the base object by using a helper function like <a href="http://bluebirdjs.com/docs/api/promise.promisifyall.html" class="markup--anchor markup--li-anchor" title="http://bluebirdjs.com/docs/api/promise.promisifyall.html">Bluebird.promisifyAll()</a>.</span>
 2.  <span id="319a">Event emitters (like streams) can still cause uncaught exceptions. So make sure you are handling the error event properly; for example:</span>
 3.  <span id="b3a0">const wrap = fn =&gt; (…args) =&gt; fn(…args).catch(args\[2\])</span>
-4.  <span id="37a8">app.get('/’, wrap(async (req, res, next) =&gt; { const company = await getCompanyById(<a href="http://req.query.id" class="markup--anchor markup--li-anchor" title="http://req.query.id">req.query.id</a>) const stream = getLogoStreamById(<a href="http://company.id" class="markup--anchor markup--li-anchor" title="http://company.id">company.id</a>) stream.on('error’, next).pipe(res) }))</span>
+4.  <span id="37a8">app.get('/', wrap(async (req, res, next) =&gt; { const company = await getCompanyById(<a href="http://req.query.id" class="markup--anchor markup--li-anchor" title="http://req.query.id">req.query.id</a>) const stream = getLogoStreamById(<a href="http://company.id" class="markup--anchor markup--li-anchor" title="http://company.id">company.id</a>) stream.on('error', next).pipe(res) }))</span>
 
 The `wrap()` function is a wrapper that catches rejected promises and calls `next()` with the error as the first argument. For details, see <a href="https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#cleaner-code-with-generators" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#cleaner-code-with-generators">Asynchronous Error Handling in Express with Promises, Generators and ES7</a>.
 
@@ -689,7 +689,7 @@ For more information about error-handling by using promises, see <a href="https:
 
 ### Things to do in your environment / setup
 
-Here are some things you can do in your system environment to improve your app’s performance:
+Here are some things you can do in your system environment to improve your app's performance:
 
 -   <span id="4d6b"><a href="#set-node_env-to-production" class="markup--anchor markup--li-anchor" title="#set-node_env-to-production">Set NODE_ENV to “production”</a></span>
 -   <span id="05f1"><a href="#ensure-your-app-automatically-restarts" class="markup--anchor markup--li-anchor" title="#ensure-your-app-automatically-restarts">Ensure your app automatically restarts</a></span>
@@ -712,7 +712,7 @@ Setting NODE_ENV to “production” makes Express:
 
 If you need to write environment-specific code, you can check the value of NODE_ENV with `process.env.NODE_ENV`. Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
 
-In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn’t do that on a production server; instead, use your OS’s init system (systemd or Upstart). The next section provides more details about using your init system in general, but setting NODE_ENV is so important for performance (and easy to do), that it’s highlighted here.
+In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn't do that on a production server; instead, use your OS's init system (systemd or Upstart). The next section provides more details about using your init system in general, but setting NODE_ENV is so important for performance (and easy to do), that it's highlighted here.
 
 With Upstart, use the `env` keyword in your job file. For example:
 
@@ -730,10 +730,10 @@ For more information, see <a href="https://coreos.com/os/docs/latest/using-envir
 
 ### Ensure your app automatically restarts
 
-In production, you don’t want your application to be offline, ever. This means you need to make sure it restarts both if the app crashes and if the server itself crashes. Although you hope that neither of those events occurs, realistically you must account for both eventualities by:
+In production, you don't want your application to be offline, ever. This means you need to make sure it restarts both if the app crashes and if the server itself crashes. Although you hope that neither of those events occurs, realistically you must account for both eventualities by:
 
 -   <span id="9675">Using a process manager to restart the app (and Node) when it crashes.</span>
--   <span id="d5af">Using the init system provided by your OS to restart the process manager when the OS crashes. It’s also possible to use the init system without a process manager.</span>
+-   <span id="d5af">Using the init system provided by your OS to restart the process manager when the OS crashes. It's also possible to use the init system without a process manager.</span>
 
 Node applications crash if they encounter an uncaught exception. The foremost thing you need to do is to ensure your app is well-tested and handles all exceptions (see <a href="#handle-exceptions-properly" class="markup--anchor markup--p-anchor" title="#handle-exceptions-properly">handle exceptions properly</a> for details). But as a fail-safe, put a mechanism in place to ensure that if and when your app crashes, it will automatically restart.
 
@@ -776,7 +776,7 @@ Use a caching server like <a href="https://www.varnish-cache.org/" class="markup
 
 ### Use a load balancer
 
-No matter how optimized an app is, a single instance can handle only a limited amount of load and traffic. One way to scale an app is to run multiple instances of it and distribute the traffic via a load balancer. Setting up a load balancer can improve your app’s performance and speed, and enable it to scale more than is possible with a single instance.
+No matter how optimized an app is, a single instance can handle only a limited amount of load and traffic. One way to scale an app is to run multiple instances of it and distribute the traffic via a load balancer. Setting up a load balancer can improve your app's performance and speed, and enable it to scale more than is possible with a single instance.
 
 A load balancer is usually a reverse proxy that orchestrates traffic to and from multiple application instances and servers. You can easily set up a load balancer for your app by using <a href="http://nginx.org/en/docs/http/load_balancing.html" class="markup--anchor markup--p-anchor" title="http://nginx.org/en/docs/http/load_balancing.html">Nginx</a> or <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts" class="markup--anchor markup--p-anchor" title="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts">HAProxy</a>.
 

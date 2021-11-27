@@ -342,7 +342,7 @@
                                     block-scoped variables allow new variables with the same name in new scopes
                                 </li>
                                 <li name="c3d4" id="c3d4" class="graf graf--li graf-after--li">
-                                    block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of
+                                    block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of
                                     <code class="markup--code markup--li-code">undefined</code> like <code class="markup--code markup--li-code">var</code> does,
                                     so it throws a specific reference error if you try to access the value before it has been declared
                                 </li>
@@ -353,7 +353,7 @@
                                 </li>
                                 <li name="2212" id="2212" class="graf graf--li graf-after--li">
                                     if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer
-                                    scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run
+                                    scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
                                 </li>
                                 <li name="86d1" id="86d1" class="graf graf--li graf-after--li">
                                     Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
@@ -402,7 +402,7 @@
 // if your return statement is one line, you can use implied return let arrowFunction = param =&gt; param + 1;</pre
                             >
                             <pre name="2ea9" id="2ea9" class="graf graf--pre graf-after--pre">
-// you don’t have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;</pre
+// you don't have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;</pre
                             >
                             <h4 name="187d" id="187d" class="graf graf--h4 graf-after--pre">
                                 Given an arrow function, deduce the value of <code class="markup--code markup--h4-code">this</code> without executing the code
@@ -420,7 +420,7 @@
                                     the global context.
                                 </li>
                                 <li name="e9e1" id="e9e1" class="graf graf--li graf-after--li">
-                                    so you can’t use an arrow function to define a method directly
+                                    so you can't use an arrow function to define a method directly
                                 </li>
                             </ul>
                             <pre
@@ -572,7 +572,7 @@
                             <h3 name="c74f" id="c74f" class="graf graf--h3 graf-after--pre">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</h3>
                             <ul class="postList">
                                 <li name="b960" id="b960" class="graf graf--li graf-after--h3">
-                                    could throw an error if it expects this to have some other method or whatever that doesn’t exist
+                                    could throw an error if it expects this to have some other method or whatever that doesn't exist
                                 </li>
                                 <li name="1880" id="1880" class="graf graf--li graf-after--li">
                                     you could also overwrite values or assign values to exist in a space where they should not exist
@@ -625,7 +625,7 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                             <ul class="postList">
                                 <li name="48ab" id="48ab" class="graf graf--li graf-after--pre">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</li>
                                 <li name="857d" id="857d" class="graf graf--li graf-after--li">
-                                    could throw an error if it expects this to have some other method or whatever that doesn’t exist
+                                    could throw an error if it expects this to have some other method or whatever that doesn't exist
                                 </li>
                                 <li name="e09e" id="e09e" class="graf graf--li graf-after--li">
                                     you could also overwrite values or assign values to exist in a space where they should not exist
@@ -644,8 +644,8 @@ let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is n
                             <h3 name="328e" id="328e" class="graf graf--h3 graf-after--blockquote">POJOs</h3>
                             <h4 name="fc8e" id="fc8e" class="graf graf--h4 graf-after--h3">1. Label variables as either Primitive vs. Reference</h4>
                             <p name="44bc" id="44bc" class="graf graf--p graf-after--h4">
-                                Javascript considers most data types to be 'primitive’, these data types are immutable, and are passed by value. The more
-                                complex data types: Array and Object are mutable, are considered 'reference’ data types, and are passed by reference.
+                                Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more
+                                complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
                             </p>
                             <ul class="postList">
                                 <li name="6f83" id="6f83" class="graf graf--li graf-after--p">Boolean — Primitive</li>

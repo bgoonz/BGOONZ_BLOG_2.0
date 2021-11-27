@@ -35,13 +35,13 @@ This year too, we will see many new applications being developed in this develop
 
 These are special web applications which are designed to load with progressive enhancement.
 
-Because of its fast-loading and high functionality features, PWA will continue to remain one of the year’s hottest web trends.
+Because of its fast-loading and high functionality features, PWA will continue to remain one of the year's hottest web trends.
 
 **5. Mobile-Friendly Website**
 
 Mobile-responsive sites are the ones that are designed to work smoothly across devices of all sizes.
 
-Owing to Google’s mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.
+Owing to Google's mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.
 
 **6. Blockchain Technology**
 
@@ -73,7 +73,7 @@ From digital reality to visualization to 3D replicas, AR/VR will be used for enh
 
 **11. Voice Search**
 
-Following Google’s increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.
+Following Google's increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.
 
 As the number of people using voice searches will increase this year, so will the demand for websites optimized for the same.
 

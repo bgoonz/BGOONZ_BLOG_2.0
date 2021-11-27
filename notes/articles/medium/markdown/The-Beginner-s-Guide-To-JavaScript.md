@@ -1,10 +1,10 @@
-# The Beginner’s Guide To JavaScript
+# The Beginner's Guide To JavaScript
 
 Part 1
 
 ---
 
-### The Beginner’s Guide To JavaScript
+### The Beginner's Guide To JavaScript
 
 #### Part 1
 
@@ -36,7 +36,7 @@ Part 1
 
 ---
 
-#### Here’s a REPL to practice with:
+#### Here's a REPL to practice with:
 
 <a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/lambda-prep#README.html"><strong>lambda-prep</strong><br />
 <em>pre-course-work</em>replit.com</a><a href="https://replit.com/@bgoonz/lambda-prep#README.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -109,7 +109,7 @@ The **string** data type is a primitive data type that used to represent textual
 `console.log("boots"["boot".length - 1]); // => "t"`
 
 -   <span id="cb8b">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
--   <span id="a30f">The index of the last character of a string is always one less than it’s length.</span>
+-   <span id="a30f">The index of the last character of a string is always one less than it's length.</span>
 -   <span id="3080">**indexOf()** : method used to find the first index of a given character within a string.</span>
 -   <span id="442d">`console.log("bagel".indexOf("b")); // => 0 console.log("bagel".indexOf("z")); // => -1`</span>
 -   <span id="7ddd">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
@@ -128,7 +128,7 @@ The **boolean** data type is the simplest data type since there are only two val
 -   <span id="cc27">**&&** (and) **Truth Table**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Aw4iCm7-FQ7znEcBVH3FTw.png" class="graf-image" /></figure>-   <span id="a087">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="295f">**De Morgan’s Law** : Common mistake in boolean logic is incorrectly distributing ! across parentheses.</span>
+-   <span id="295f">**De Morgan's Law** : Common mistake in boolean logic is incorrectly distributing ! across parentheses.</span>
 -   <span id="7400">`!(A || B) === !A && !B; !(A && B) === !A || !B;`</span>
 -   <span id="26c2">In summary, to correctly distribute ! across parentheses we must also flip the operation within.</span>
 -   <span id="a8c1">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.</span>
@@ -188,7 +188,7 @@ Variables are used to store information to be referenced and manipulated in a pr
 
 ### Functions
 
-A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms’)
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms')
 
 -   <span id="4c89">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="d3fe">Includes three things:</span>
@@ -206,7 +206,7 @@ A function is a procedure of code that will run when called. Functions are used 
 
 ### Parameters and Arguments
 
--   <span id="eb19">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
+-   <span id="eb19">**Parameters** : Comma seperated variables specified as part of a function's declaration.</span>
 -   <span id="6abb">**Arguments** : Values passed to the function when it is invoked.</span>
 -   <span id="ab31">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
 -   <span id="12ee">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
@@ -214,9 +214,9 @@ A function is a procedure of code that will run when called. Functions are used 
 #### Further resources:
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

@@ -48,7 +48,7 @@ Here are a few things to think about beyond these broader considerations:
 
 Web development is an all-encompassing term that refers to a bunch of roles. You can split web development into two parts: client-side and server-side.
 
-Most of the time, web developers specialise in one of the two. However, there are a few show-offs that can do both—they’re referred to as full-stack developers.
+Most of the time, web developers specialise in one of the two. However, there are a few show-offs that can do both—they're referred to as full-stack developers.
 
 > The term stack is used because the tools that websites and apps use  'stack' on top of each other to build the final product.
 
@@ -62,7 +62,7 @@ Alright, as we Antipodeans say, no more beating around the bush. Let's get into 
 
 ## Code and Text Editors
 
-Web developers wouldn’t be able to do their jobs fast and efficiently without text editors. A dev's text editor of choice is kind of a holy thing—once devs find a text editor they love, they tend to stick with it for the long haul.
+Web developers wouldn't be able to do their jobs fast and efficiently without text editors. A dev's text editor of choice is kind of a holy thing—once devs find a text editor they love, they tend to stick with it for the long haul.
 
 Which is why it's such an important decision. It's like a carpenter choosing his hammer, or a Jedi Knight choosing his lightsaber. The good news is you can't go wrong with any listed below:
 
@@ -78,13 +78,13 @@ Using Atom really is a smooth experience. It works with Mac, Windows or Linux an
 
 [Sublime Text](https://www.sublimetext.com/) is going to be at the top of any list of the best text editors. It doesn't have all the advanced features other solutions do, but what it lacks in power, it more than makes up for with its beautiful appearance and overall ease of use.
 
-> With handy keyboard shortcuts, a Command Palette that you won't be able to live without once you use it and a UX to die for, it’s an absolute pleasure to use.
+> With handy keyboard shortcuts, a Command Palette that you won't be able to live without once you use it and a UX to die for, it's an absolute pleasure to use.
 
 The context-aware auto-completion feature is particularly useful. It suggests code based on your text, meaning you can cut down on repetitive typing. Add to that an updated Python API, syntax definitions and hyper-fast load times, Sublime Text is hard to go past.
 
 ### 3. Notepad++
 
-[Notepad++](https://notepad-plus-plus.org/) is for those of you who don’t care about themes and minimalist design and all that fancy stuff. From an aesthetic viewpoint, it’s not going to win any awards, but it’s still a powerful open-source text editor that has most of your needs covered.
+[Notepad++](https://notepad-plus-plus.org/) is for those of you who don't care about themes and minimalist design and all that fancy stuff. From an aesthetic viewpoint, it's not going to win any awards, but it's still a powerful open-source text editor that has most of your needs covered.
 
 Created by a talented software engineer web dev named Don Ho, Notepad++ is a user friendly text editing solution for Windows users. It supports 27 programming languages, synchronised edits and views, and uses Win32 API to produce a tiny program size and faster execution speed.
 
@@ -92,7 +92,7 @@ Created by a talented software engineer web dev named Don Ho, Notepad++ is a use
 
 ### 4. Vim
 
-If you’re after a highly configurable text editor to build your perfect programming environment, then [Vim](https://www.vim.org/) is the way to go. While it does work out of the box, for the most part, it’s a tool that you have to learn to conquer.
+If you're after a highly configurable text editor to build your perfect programming environment, then [Vim](https://www.vim.org/) is the way to go. While it does work out of the box, for the most part, it's a tool that you have to learn to conquer.
 
 The cool thing about Vim is that it can be used for any type of text editing—from writing an email to posting blogs in Markup, or of course, editing HTML code. It comes with 200+ syntax files, a comprehensive tag system and integrations with Perl, TCL and Python, and can even act as an OLE automation server in Windows.
 
@@ -102,41 +102,41 @@ The cool thing about Vim is that it can be used for any type of text editing—f
 
 There is a bevy of appearance options, including the ability to customise fonts, icons, layout and colour scheme. But the remote development features are what set it apart—you can use a container or a remote machine as a full-featured dev environment.
 
-VS Code is the text editor of choice for Dean McPherson, Paperform’s co-founder and resident code-geek. He uses the remote plugins for version control and to keep our global dev team working in the same virtual environment.
+VS Code is the text editor of choice for Dean McPherson, Paperform's co-founder and resident code-geek. He uses the remote plugins for version control and to keep our global dev team working in the same virtual environment.
 
 ## Web Application Frameworks
 
 Web application frameworks (or just web frameworks) are software libraries that are designed to help you build web services, resources and APIs.
 
-Choosing the right framework for your project is super important. Why? Because it’s difficult, time-consuming and expensive to switch to a different solution. It’s much easier to stick with one.
+Choosing the right framework for your project is super important. Why? Because it's difficult, time-consuming and expensive to switch to a different solution. It's much easier to stick with one.
 
-Below we’ve curated a list of the [best web frameworks](https://www.appypie.com/top-web-development-frameworks) in 2021—both front-end and back-end to cover all the bases. This is a big decision and this is only meant as an overview of options, so be sure to do further research before deciding on one.
+Below we've curated a list of the [best web frameworks](https://www.appypie.com/top-web-development-frameworks) in 2021—both front-end and back-end to cover all the bases. This is a big decision and this is only meant as an overview of options, so be sure to do further research before deciding on one.
 
 ### 6. Django
 
-[Django](https://www.djangoproject.com/) is a high-level [Python framework](https://www.educba.com/python-frameworks/) built by expert developers and used by giant web apps like Reddit, Instagram and Uber. It’s secure and scalable, which means it’s suitable for a small side hustle or enterprise-scale projects.
+[Django](https://www.djangoproject.com/) is a high-level [Python framework](https://www.educba.com/python-frameworks/) built by expert developers and used by giant web apps like Reddit, Instagram and Uber. It's secure and scalable, which means it's suitable for a small side hustle or enterprise-scale projects.
 
-In a nutshell, Django makes it easier to build great web apps. Fast. The focus here is on enabling devs to create sites and apps with less code (to get nerdy, Django’s server-side processing speed is super fast and the file structure is feather-light).
+In a nutshell, Django makes it easier to build great web apps. Fast. The focus here is on enabling devs to create sites and apps with less code (to get nerdy, Django's server-side processing speed is super fast and the file structure is feather-light).
 
-> Django’s goal is to support devs to go from concept to completion as quickly as possible. They achieve this by encouraging clean design and swift development.
+> Django's goal is to support devs to go from concept to completion as quickly as possible. They achieve this by encouraging clean design and swift development.
 
 One of the greatest strengths of Django is its community. They contribute a tonne of useful packages and utilities—a search on PyPI brings up 4,000+ packages free and ready to use.
 
 ### 7. Ruby On Rails
 
-[Ruby on Rails](https://rubyonrails.org/) is a favourite in the dev community. While it requires a certain quality of code, as a general rule it’s easy to read, write, monkey patch, test, maintain and deploy, making it any web developer’s dream.
+[Ruby on Rails](https://rubyonrails.org/) is a favourite in the dev community. While it requires a certain quality of code, as a general rule it's easy to read, write, monkey patch, test, maintain and deploy, making it any web developer's dream.
 
-Rails, as it’s called in the biz, is used in a bunch of server-side web apps, including big names like Square, Hulu, Twitch and Shopify. It’s a popular framework because straight out of the box you get structures for web services, pages and a database, requiring far less groundwork than other options.
+Rails, as it's called in the biz, is used in a bunch of server-side web apps, including big names like Square, Hulu, Twitch and Shopify. It's a popular framework because straight out of the box you get structures for web services, pages and a database, requiring far less groundwork than other options.
 
-So why choose Rails? Well, it’s an excellent choice if you’re after a robust tool that’s simple to use. It has a clean design language, an intuitive workflow, and seamlessly integrates with third-party applications.
+So why choose Rails? Well, it's an excellent choice if you're after a robust tool that's simple to use. It has a clean design language, an intuitive workflow, and seamlessly integrates with third-party applications.
 
 **💡Pro Tip:** If you are starting to build your product, Ruby on Rails is an ideal solution to get your MVP up and running. It allows solo web developers to swiftly get projects off the ground and make changes on the fly.
 
 ### 8. Angular
 
-[Angular](https://angular.io/) (or Angularjs) is a popular Javascript framework created and maintained by Google. It’s a cross-platform solution with a cohesive ecosystem of third-party components, meaning you can add a bunch of your own unique functionality improvements.
+[Angular](https://angular.io/) (or Angularjs) is a popular Javascript framework created and maintained by Google. It's a cross-platform solution with a cohesive ecosystem of third-party components, meaning you can add a bunch of your own unique functionality improvements.
 
-You’ll find all the relevant features you’d expect for each stage of the development process, from code generation and splitting to complex animation timelines.
+You'll find all the relevant features you'd expect for each stage of the development process, from code generation and splitting to complex animation timelines.
 
 The Command-line Interface (CLI) is probably the most notable feature though. it allows you to initialise, develop, scaffold and maintain Angular apps right from the command shell.
 
@@ -148,7 +148,7 @@ React ([React.js](https://reactjs.org/)) is another great Javascript library bui
 
 A component-based system means that individual components manage their own state, and can then be composed to build complex UIs. React can also render on a server using Node, and with [React Native](https://facebook.github.io/react-native/) you can power mobile apps as well.
 
-React is one of the most popular of the many JavaScript frameworks available. Used by WordPress for their backend and Block Editor, it’s a platform to consider for any web developer working with user interfaces.
+React is one of the most popular of the many JavaScript frameworks available. Used by WordPress for their backend and Block Editor, it's a platform to consider for any web developer working with user interfaces.
 
 ### 10. Vue
 
@@ -156,13 +156,13 @@ Yet another JavaScript library, like React, [Vue](https://vuejs.org/) (or Vue.js
 
 As with other leading frameworks, Vue allows you to take a webpage and split it up into reusable components. Each component then has its own HTML, CSS and JS needed to render that piece of the page—making it faster to make granular changes.
 
-Vue offers a more “batteries-included” approach to web application development. It’s simple to use and comes with [comprehensive documentation](https://vuejs.org/v2/guide/) and templates to guide you along.
+Vue offers a more “batteries-included” approach to web application development. It's simple to use and comes with [comprehensive documentation](https://vuejs.org/v2/guide/) and templates to guide you along.
 
 ### 11. Meteor
 
-[Meteor.js](https://www.meteor.com/) is a free and open-source full-stack isomorphic framework (meaning you can run it both on the client and server side). It might not be as popular as React or Vue, but it’s still considered one of the best solutions to enable devs to swiftly build and deploy web, mobile or desktop apps.
+[Meteor.js](https://www.meteor.com/) is a free and open-source full-stack isomorphic framework (meaning you can run it both on the client and server side). It might not be as popular as React or Vue, but it's still considered one of the best solutions to enable devs to swiftly build and deploy web, mobile or desktop apps.
 
-One of Meteor’s biggest selling points is that it seamlessly integrates with the rest of your tech stack—allowing you to focus on building rather than configuring tools to work together. Meteor APM also provides real-time metrics so you can monitor how your app is running.
+One of Meteor's biggest selling points is that it seamlessly integrates with the rest of your tech stack—allowing you to focus on building rather than configuring tools to work together. Meteor APM also provides real-time metrics so you can monitor how your app is running.
 
 Boasting almost 14,000 packages, over half a million unique installs and used by companies like Ikea, Qualcomm and Honeywell, Meteor is a strong option.
 
@@ -170,21 +170,21 @@ Boasting almost 14,000 packages, over half a million unique installs and used by
 
 Alright, by now this is a familiar story. Prepare for the buzzwords and giant tech companies. [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) is a free, cross-platform framework for [building web apps](https://www.techcronus.com/asp-net-application-development/) and services developed by Microsoft.
 
-What sets it apart from other frameworks is that it uses C# instead of JavaScript. C# supports reference-type (class) and value-type (struct) user-defined types, which can unlock significant performance benefits over JavaScript if you’re a more advanced web developer.
+What sets it apart from other frameworks is that it uses C# instead of JavaScript. C# supports reference-type (class) and value-type (struct) user-defined types, which can unlock significant performance benefits over JavaScript if you're a more advanced web developer.
 
-If you’re looking to learn NET then there are plenty of resources. Microsoft has plenty of [learning materials](https://dotnet.microsoft.com/learn/aspnet) and there’s an active [community on GitHub](https://github.com/dotnet?WT.mc_id=dotnet-35129-website) with over 100,000 people and 3,700 companies contributing.
+If you're looking to learn NET then there are plenty of resources. Microsoft has plenty of [learning materials](https://dotnet.microsoft.com/learn/aspnet) and there's an active [community on GitHub](https://github.com/dotnet?WT.mc_id=dotnet-35129-website) with over 100,000 people and 3,700 companies contributing.
 
 ## Front-End Frameworks
 
-Front-end frameworks (or “CSS frameworks”) are packages containing pre-written, standardised code for easy application. It’s kind of like a coding dictionary to help you quickly complete actions without having to come up with code yourself.
+Front-end frameworks (or “CSS frameworks”) are packages containing pre-written, standardised code for easy application. It's kind of like a coding dictionary to help you quickly complete actions without having to come up with code yourself.
 
-Keep in mind that there is some crossover with tools we’ve previously covered. For example, according to the [State of JavaScript 2020](https://2020.stateofjs.com/en-US/technologies/javascript-flavors/)\*, in the US, React, Angular and Vue \*are the three most popular front-end frameworks.
+Keep in mind that there is some crossover with tools we've previously covered. For example, according to the [State of JavaScript 2020](https://2020.stateofjs.com/en-US/technologies/javascript-flavors/)\*, in the US, React, Angular and Vue \*are the three most popular front-end frameworks.
 
 Here are some other viable options:
 
 ### 13. Bootstrap
 
-[Bootstrap](http://getbootstrap.com/) is a leading open-source CSS framework created by a bunch of the developers behind Twitter (ever heard of it?). Released back in 2011, it’s a full-scale tool designed to help you quickly create and customise responsive mobile-first sites.
+[Bootstrap](http://getbootstrap.com/) is a leading open-source CSS framework created by a bunch of the developers behind Twitter (ever heard of it?). Released back in 2011, it's a full-scale tool designed to help you quickly create and customise responsive mobile-first sites.
 
 It features Sass variables and mixins (so you can assign variables to a name and refer to it rather than the value itself), extensive prebuilt components and comprehensive JavaScript plugins. In a first for front-end frameworks, it also comes with its own SVG icon library designed to work with your Bootstrap sites.
 
@@ -192,7 +192,7 @@ It features Sass variables and mixins (so you can assign variables to a name and
 
 [Semantic UI](https://semantic-ui.com/) is a component framework for theming websites using what they call “human-friendly HTML” (sorry dogs). What they mean by this is that the tool uses words and classes as exchangeable concepts, giving you the same benefits as BEM without the headache.
 
-But the real strength here is the breadth of Semantic UI’s components. Whether it’s elements, collections, views, modules of behaviours, the whole gamut of interface design is covered.
+But the real strength here is the breadth of Semantic UI's components. Whether it's elements, collections, views, modules of behaviours, the whole gamut of interface design is covered.
 
 ### 15. Foundation
 
@@ -208,21 +208,21 @@ From the animations to UI elements and everything between, there's a real focus 
 
 ### 17. ChromeDevTools
 
-[Chrome DevTools](https://developer.chrome.com/docs/devtools/) is the name for the web development tools built into the Google Chrome web browser. No need to download any programs or check if it’s got MacOS compatibility—just right click in the browser, choose “Inspect” and get stuck in.
+[Chrome DevTools](https://developer.chrome.com/docs/devtools/) is the name for the web development tools built into the Google Chrome web browser. No need to download any programs or check if it's got MacOS compatibility—just right click in the browser, choose “Inspect” and get stuck in.
 
-It doesn’t have as many features as the other options on this list, but it does let you edit pages and diagnose problems with your sites. View and manipulate the DOM, change a page’s style sheets (CSS) or use it as a JavaScript debugger.
+It doesn't have as many features as the other options on this list, but it does let you edit pages and diagnose problems with your sites. View and manipulate the DOM, change a page's style sheets (CSS) or use it as a JavaScript debugger.
 
 ### 18. Svelte
 
-We love [Svelte](https://svelte.dev/) for two reasons. One, it just sounds awesome and two, it’s all about empowering folks to build their projects with \*way less code, \*which is something we’re passionate about here at Paperform.
+We love [Svelte](https://svelte.dev/) for two reasons. One, it just sounds awesome and two, it's all about empowering folks to build their projects with \*way less code, \*which is something we're passionate about here at Paperform.
 
-Technically, Svelte isn’t a framework or a library. It’s a “compiler”, and it’s gained quite a reputation in the web dev community for being one of the best frontend frameworks on the market. It’s lightweight, SEO-optimised and unlike tools like React or Vue, doesn’t require heavy browser processing.
+Technically, Svelte isn't a framework or a library. It's a “compiler”, and it's gained quite a reputation in the web dev community for being one of the best frontend frameworks on the market. It's lightweight, SEO-optimised and unlike tools like React or Vue, doesn't require heavy browser processing.
 
-Svelte’s “killer app” is that is has no virtual Dom. This means there’s considerably less re-renders of the UI, leading to a lightning fast experience. Some devs will be put off by this, but it makes it an ideal option for beginners or smaller projects.
+Svelte's “killer app” is that is has no virtual Dom. This means there's considerably less re-renders of the UI, leading to a lightning fast experience. Some devs will be put off by this, but it makes it an ideal option for beginners or smaller projects.
 
 ### 19. Ember
 
-[Ember.js](https://emberjs.com/) is an open-source JavaScript web framework released back in 2011. Since then it’s been adopted by a large chunk of the web dev community and it’s easy to see why—using it's simple and, whether you’re creating feature-rich apps or client-side websites, the user experience is seamless.
+[Ember.js](https://emberjs.com/) is an open-source JavaScript web framework released back in 2011. Since then it's been adopted by a large chunk of the web dev community and it's easy to see why—using it's simple and, whether you're creating feature-rich apps or client-side websites, the user experience is seamless.
 
 Working with Ember is a “batteries included” experience. Out of the box you have all the tools to start building UIs that work on any device. The built-in development environment comes with fast rebuilds, auto-reload and a test runner. Ember Data also lets you set up asynchronous relationships and keep models up to date across your app, which is perfect for remote work.
 
@@ -230,9 +230,9 @@ Not sold? Some of the biggest and best development teams in the world use Ember 
 
 ## Package Managers
 
-If you’ve ever installed a bunch of programs on your computer you’ll know it’s a tedious process. You’ve got to visit each individual website, download the installer, then set each one up individually.
+If you've ever installed a bunch of programs on your computer you'll know it's a tedious process. You've got to visit each individual website, download the installer, then set each one up individually.
 
-This is fine if all you’re doing is downloading Spotify. But back- and front-end developers work with hundreds of programs. Which is why package managers exist. These tools automate the process of installing, upgrading, configuring and removing programs from a computer’s operating system.
+This is fine if all you're doing is downloading Spotify. But back- and front-end developers work with hundreds of programs. Which is why package managers exist. These tools automate the process of installing, upgrading, configuring and removing programs from a computer's operating system.
 
 ### 20. Yarn
 
@@ -244,35 +244,35 @@ Installation is a breeze, and if you get stuck, the documentation is comprehensi
 
 [Node Package Manager](https://www.npmjs.com/) is a package manager for NodeJS, created in 2009 as an open-source project to give JavaScript devs an easy way to share code modules. The npm Registry consists of more than a million packages—making it the largest software registry in the world.
 
-With a quick search you’ll find everything from front-end web apps to robots and routers. There is hardly a working web developer out there that wouldn’t have used npm at some point. And, now that it’s moved to GitHub, npm’s already vibrant community is only going to grow.
+With a quick search you'll find everything from front-end web apps to robots and routers. There is hardly a working web developer out there that wouldn't have used npm at some point. And, now that it's moved to GitHub, npm's already vibrant community is only going to grow.
 
 ### 22. DPKG - Package Manager for Debian
 
 Debian is a stable and secure Linux-based operating system extremely popular with web devs. [Dpkg](https://man7.org/linux/man-pages/man1/dpkg.1.html) is a tool built specifically to manage Debian packages. While dpkg does have a more user-friendly front-end alternative called [aptitude](https://wiki.debian.org/Aptitude), dpkg itself runs entirely via the command line.
 
-In terms of functionality, it’s definitely a more low-level solution. But if you’re trying to handle the installation and removal of Debian software, it’s the place to start. For a more advanced tool try [Pacman](https://wiki.archlinux.org/title/pacman) or [APT](https://wiki.debian.org/Apt) (literally, Advanced Package Tool). Both fetch packages from remote locations and deal with more complex functions.
+In terms of functionality, it's definitely a more low-level solution. But if you're trying to handle the installation and removal of Debian software, it's the place to start. For a more advanced tool try [Pacman](https://wiki.archlinux.org/title/pacman) or [APT](https://wiki.debian.org/Apt) (literally, Advanced Package Tool). Both fetch packages from remote locations and deal with more complex functions.
 
 ## Git Clients
 
-In Britain, 'Git' is slang for someone you think is a bit stupid. But in the world of web development, Git is the name for the software used to track changes in file sets. Most of the time it’s used to help devs collaborate during software development.
+In Britain, 'Git' is slang for someone you think is a bit stupid. But in the world of web development, Git is the name for the software used to track changes in file sets. Most of the time it's used to help devs collaborate during software development.
 
 A Git \*client \*is the software you use to work with Git repositories, which can be either remote or locally stored. These allow you to make changes to your Git project (e.g. pushing changes and staging). There are a bunch of different Git clients available across various operating systems.
 
-**💡Pro Tip:** Git is a command line interface and Git clients aren’t strictly necessary. It’s kind of like using a translator versus learning a language natively. GUIs don’t have all the same functionality that a command line client offers, which is why many web devs go that route instead.
+**💡Pro Tip:** Git is a command line interface and Git clients aren't strictly necessary. It's kind of like using a translator versus learning a language natively. GUIs don't have all the same functionality that a command line client offers, which is why many web devs go that route instead.
 
 ### **23. Github Desktop**
 
-Built by GitHub, the authority when it comes to all things Git, [Github Desktop](https://desktop.github.com/) is a tool that allows you to interact with GitHub from your desktop. It’s all about giving you a beautiful interface to cut down on distraction and let you focus on what matters.
+Built by GitHub, the authority when it comes to all things Git, [Github Desktop](https://desktop.github.com/) is a tool that allows you to interact with GitHub from your desktop. It's all about giving you a beautiful interface to cut down on distraction and let you focus on what matters.
 
-Whether you’re a seasoned veteran or a Git newbie, GitHub Desktop has you covered. Quickly add commits with collaborators, see all open pull requests from your repositories, and easily see before and after shots of your work in progress with expanded image diff support.
+Whether you're a seasoned veteran or a Git newbie, GitHub Desktop has you covered. Quickly add commits with collaborators, see all open pull requests from your repositories, and easily see before and after shots of your work in progress with expanded image diff support.
 
-On top of that there’s a heap of automated testing tools to play with. Open-source and available on MacOS and Windows, GitHub is pretty much the default option.
+On top of that there's a heap of automated testing tools to play with. Open-source and available on MacOS and Windows, GitHub is pretty much the default option.
 
 ### 24. GitKraken
 
 [GitKraken](https://www.gitkraken.com/) bills itself as the “easiest, safest and most powerful” way to use Git. They understand that Git can be difficult to learn, which is why they offer exhaustive docs, as well as integrations with GitHub, GitLab and Azure DevOps to make adding remotes easy.
 
-The UI is equal parts gorgeous and intuitive. One particularly helpful feature is the ability to map complicated commands to a single button or click of the keyboard. If you’re working with a team, the visual commit graph also assists you to quickly view who made code changes and when.
+The UI is equal parts gorgeous and intuitive. One particularly helpful feature is the ability to map complicated commands to a single button or click of the keyboard. If you're working with a team, the visual commit graph also assists you to quickly view who made code changes and when.
 
 Other notable features include syntax highlighting, a nifty built-in code editor, interactive rebase and light and dark mode for those late-night coding sessions.
 
@@ -280,9 +280,9 @@ Other notable features include syntax highlighting, a nifty built-in code editor
 
 [Sourcetree](https://www.sourcetreeapp.com/) is a Graphical User Interface (GUI for the cool kids) used to manage Git repository hosts. Built by Atlassian (go Aussies!) it allows you to visualise and manage your repos so you can focus purely on coding.
 
-Whether you’re just starting out as a web developer or  are an old pro, Sourcetree has all the tools you need. Leave the command line behind, or delve deeper to review change-sets, stash or cherry-pick between branches—built-in smart branching keeps development clean and efficient.
+Whether you're just starting out as a web developer or  are an old pro, Sourcetree has all the tools you need. Leave the command line behind, or delve deeper to review change-sets, stash or cherry-pick between branches—built-in smart branching keeps development clean and efficient.
 
-Sourcetree is available to download for free on both MacOS and Windows. They’ve got a huge range of [tutorials](https://support.atlassian.com/bitbucket-cloud/docs/tutorial-learn-bitbucket-with-sourcetree/) that’ll have you up and running in no time. After some initial hiccups, it’s now more powerful and reliable than almost any other Git client.
+Sourcetree is available to download for free on both MacOS and Windows. They've got a huge range of [tutorials](https://support.atlassian.com/bitbucket-cloud/docs/tutorial-learn-bitbucket-with-sourcetree/) that'll have you up and running in no time. After some initial hiccups, it's now more powerful and reliable than almost any other Git client.
 
 ## API and Testing Cloud Tools
 
@@ -290,9 +290,9 @@ Web APIs are a crucial part of web development these days. APIs allow devs to ac
 
 For example, the tech world recently went nuts when Notion announced the beta for their API. By accessing the API devs can now connect other apps with Notion pages and databases.
 
-**📚 Learn more about **[**Paperform’s Notion integration**](https://paperform.co/integrations/notion/)**.**
+**📚 Learn more about **[**Paperform's Notion integration**](https://paperform.co/integrations/notion/)**.**
 
-When testing and building with web APIs it’s crucial to have reliable tools. Here are some of the best:
+When testing and building with web APIs it's crucial to have reliable tools. Here are some of the best:
 
 ### 26. Postman
 
@@ -302,21 +302,21 @@ Do they back it up? The \*15 million \*developers that use Postman would say so.
 
 ### 27. REST Assured
 
-[REST Assured](https://rest-assured.io/) is the tool of choice for most web devs working with Java. Made so you don’t have to be a HTTP expert to use it, REST Assured enables you to test and validate REST services with the simplicity of more dynamic languages like Ruby.
+[REST Assured](https://rest-assured.io/) is the tool of choice for most web devs working with Java. Made so you don't have to be a HTTP expert to use it, REST Assured enables you to test and validate REST services with the simplicity of more dynamic languages like Ruby.
 
 It saves you time and effort through automating part of the boilerplate code required to set up HTTP connections, send and receive requests and parse responses. There are also Given/When/Then test notations to help make tests easily comprehensible.
 
 ### 28. HoppScotch
 
-[HoppScotch](https://hoppscotch.io/) is a lightweight open source API development tool that runs smoothly and looks beautiful. Over the last few months it’s gained popularity with the dev community, largely thanks to its balance of advanced functionality and gorgeous design.
+[HoppScotch](https://hoppscotch.io/) is a lightweight open source API development tool that runs smoothly and looks beautiful. Over the last few months it's gained popularity with the dev community, largely thanks to its balance of advanced functionality and gorgeous design.
 
-Whether you need to establish full-duplex communication channels or execute queries with GraphQL, Hoppscotch can handle just about anything you throw at it. You can even add your own translations if English isn’t your preferred language.
+Whether you need to establish full-duplex communication channels or execute queries with GraphQL, Hoppscotch can handle just about anything you throw at it. You can even add your own translations if English isn't your preferred language.
 
 Other features include collections to keep API requests organised, the ability to sync and restore request entries with a click, and real-time connections with WebSocket, MQTT and more.
 
 ### **29. LambdaTest**
 
-It’s crucial that web applications and services work the same way no matter what browser folks use to access them. But you can’t check how your HTML, CSS and JavaScript looks on every web browser and operating system on the planet.
+It's crucial that web applications and services work the same way no matter what browser folks use to access them. But you can't check how your HTML, CSS and JavaScript looks on every web browser and operating system on the planet.
 
 [LambaTest](https://www.lambdatest.com/) can. This tool performs automated and live interactive testing on 2,000+ real browsers and operating systems to help ensure your web apps look spiffy wherever they appear.
 
@@ -324,17 +324,17 @@ It also has the ability to auto-generate full page screenshots across any browse
 
 ## Web Design and Prototyping Tools
 
-It’s not enough just to know how to code. Part of being a web designer is understanding what goes into good UI and [UX design](https://paperform.co/blog/in-conversation-kyro-samaan/)—from prototyping and wire-framing to creating a visual language for your app. These [design tools](https://paperform.co/blog/ux-design-tools/) are vital.
+It's not enough just to know how to code. Part of being a web designer is understanding what goes into good UI and [UX design](https://paperform.co/blog/in-conversation-kyro-samaan/)—from prototyping and wire-framing to creating a visual language for your app. These [design tools](https://paperform.co/blog/ux-design-tools/) are vital.
 
 ### 30. Figma
 
-Only a few years ago, if you wanted a professional design tool you’d need to spend a whole lot of cash and download complex software. Not anymore.
+Only a few years ago, if you wanted a professional design tool you'd need to spend a whole lot of cash and download complex software. Not anymore.
 
 With [Figma](https://www.figma.com/ui-design-tool/), you get everything you need to design for the web, completely free and accessible from any browser. From UI, UX and [graphic design](https://paperform.co/blog/graphic-design-tools/) to wire-framing and diagramming, Figma truly is the all-in-one platform for your design needs.
 
-It’s like LEGO for web devs. Need to mock up a mobile app? Design an entire UI? Build your client’s dream website from scratch? Just use the drag-and-drop editor and away you go. With version history you can even collaborate in real-time and not worry about breaking things.
+It's like LEGO for web devs. Need to mock up a mobile app? Design an entire UI? Build your client's dream website from scratch? Just use the drag-and-drop editor and away you go. With version history you can even collaborate in real-time and not worry about breaking things.
 
-There’s a reason the whole internet is raving about it—Figma’s a rare tool that you will find yourself actively looking for reasons to use. It’s not hyperbole when we say that it’s seriously the only design tool you’ll need.
+There's a reason the whole internet is raving about it—Figma's a rare tool that you will find yourself actively looking for reasons to use. It's not hyperbole when we say that it's seriously the only design tool you'll need.
 
 ### 31. Adobe XD
 
@@ -410,39 +410,39 @@ Often the success of a project isn't simply down to technical brilliance—it re
 
 Product management tools should do two things: simplify your processes and help you ship products faster. [ClickUp](https://clickup.com/) does both. With an expansive suite of tools, it is truly “one app to replace them all”, covering tasks, docs, chat, goals and more.
 
-Whether you’re working solo or in a team, ClickUp lets you map out tasks, better plan your work and see your overall product vision. The major benefit here is the dizzying versatility of the platform. From building mind maps to planning tasks on a Kanban board, you can build out your own custom product management setup.
+Whether you're working solo or in a team, ClickUp lets you map out tasks, better plan your work and see your overall product vision. The major benefit here is the dizzying versatility of the platform. From building mind maps to planning tasks on a Kanban board, you can build out your own custom product management setup.
 
 ### 39. Asana
 
-[Asana](https://asana.com/) is probably the single most well-known and popular project management and collaboration tool on the market. It’s a tool built to stop you shuffling between emails, spreadsheets and other apps to keep organised—from brainstorming to meeting that deadline, you can manage everything with Asana.
+[Asana](https://asana.com/) is probably the single most well-known and popular project management and collaboration tool on the market. It's a tool built to stop you shuffling between emails, spreadsheets and other apps to keep organised—from brainstorming to meeting that deadline, you can manage everything with Asana.
 
-At Paperform we use Asana to assign tasks to team members, create projects split among our Product, Marketing and Content teams, and monitor deadlines to ensure we’re hitting our goals. It’s simple and visual, and is particularly excellent for keeping remote teams on the same page.
+At Paperform we use Asana to assign tasks to team members, create projects split among our Product, Marketing and Content teams, and monitor deadlines to ensure we're hitting our goals. It's simple and visual, and is particularly excellent for keeping remote teams on the same page.
 
 ### 40. JIRA
 
 [JIRA](https://www.atlassian.com/software/jira) is the go-to project management platform for software teams to plan, track and release their products. From creating user stories and planning sprints to the final stages of shipping and data analysis, JIRA is \*the \*way to take any product to launch and beyond.
 
-One big advantage JIRA has over other similar tools is that it’s so customisable. It is possible to build the perfect workflow for your specific product or team—this is also a slight drawback, as it results in a slightly steeper learning curve upfront.
+One big advantage JIRA has over other similar tools is that it's so customisable. It is possible to build the perfect workflow for your specific product or team—this is also a slight drawback, as it results in a slightly steeper learning curve upfront.
 
-As you’d expect, it’s built with trademark Atlassian polish. And with the Atlassian Marketplace you can connect with over 3,000 first and third-party apps like Slack, Google Drive and GitHub, to extend functionality.
+As you'd expect, it's built with trademark Atlassian polish. And with the Atlassian Marketplace you can connect with over 3,000 first and third-party apps like Slack, Google Drive and GitHub, to extend functionality.
 
 ### 41. Slack
 
-If you work online in any capacity and haven’t heard of [Slack](https://slack.com/intl/en-au/), you must be living under a rock, at the bottom of the ocean, next to a starfish named Patrick. In the last few years, Slack has become synonymous with remote team communication.
+If you work online in any capacity and haven't heard of [Slack](https://slack.com/intl/en-au/), you must be living under a rock, at the bottom of the ocean, next to a starfish named Patrick. In the last few years, Slack has become synonymous with remote team communication.
 
 At its core Slack is a team messaging platform. It cuts down on the need for email by separating conversations into distinct Channels, so you can track topics, ideas and projects without long email threads. This makes it the virtual headquarters for your business.
 
-Of course, there’s much more to it than simple text chat. Jump on video calls, add integrations with your favourite tools, and even communicate with external clients or folks in other companies
+Of course, there's much more to it than simple text chat. Jump on video calls, add integrations with your favourite tools, and even communicate with external clients or folks in other companies
 
-Slack isn’t just for teams, either. Communities allow you to connect with people in your niche—[Java Specialists](https://http//www.javaspecialists.eu/slack/), [Ruby Developers](https://rubydevs.herokuapp.com/) and [Python Developers](https://pyslackers.com/web) are just a few of the most active.
+Slack isn't just for teams, either. Communities allow you to connect with people in your niche—[Java Specialists](https://http//www.javaspecialists.eu/slack/), [Ruby Developers](https://rubydevs.herokuapp.com/) and [Python Developers](https://pyslackers.com/web) are just a few of the most active.
 
 ### 42. Zoom
 
-Occasionally an app or program hits levels of popularity so high that it becomes the noun for what it’s used for. This happened to Google long ago (“I’ll Google it”) and it happened to video chat tool [Zoom](https://zoom.us/) in the last year and a half (RIP Skype).
+Occasionally an app or program hits levels of popularity so high that it becomes the noun for what it's used for. This happened to Google long ago (“I'll Google it”) and it happened to video chat tool [Zoom](https://zoom.us/) in the last year and a half (RIP Skype).
 
-This happened for a reason: Zoom is awesome. While nothing replaces the feeling of face-to-face communication, it’s the next best thing. Whether you want to chat to your family across the country or liaise with web design clients, it makes video calls ridiculously easy.
+This happened for a reason: Zoom is awesome. While nothing replaces the feeling of face-to-face communication, it's the next best thing. Whether you want to chat to your family across the country or liaise with web design clients, it makes video calls ridiculously easy.
 
-Zoom is free for 40-minute calls, meaning your meetings come with a convenient end timer. Plus you can record any calls (with your companion’s permission), which has become a popular way to record [webinars](https://paperform.co/blog/how-to-record-a-webinar/) and podcasts.
+Zoom is free for 40-minute calls, meaning your meetings come with a convenient end timer. Plus you can record any calls (with your companion's permission), which has become a popular way to record [webinars](https://paperform.co/blog/how-to-record-a-webinar/) and podcasts.
 
 \*\*📚 Related reading: \*\*[**How to be a good interviewer**](https://paperform.co/blog/how-to-be-a-good-interviewer/)
 
@@ -470,25 +470,25 @@ For example, let's say you're working with a theme colour that you keep having t
 
 ### 45. Stack Overflow
 
-Okay, so this isn’t technically a tool. However, it’s not hyperbole on the [Stack Overflow](https://stackoverflow.com/) website when it says, “every developer has a tab open to Stack Overflow”. Ask around—they do. It’s the most popular and comprehensive web development community on the internet.
+Okay, so this isn't technically a tool. However, it's not hyperbole on the [Stack Overflow](https://stackoverflow.com/) website when it says, “every developer has a tab open to Stack Overflow”. Ask around—they do. It's the most popular and comprehensive web development community on the internet.
 
 Stack Overflow is a public platform that aims to build the single most definitive collection of coding questions and answers. Developers, system admins and data scientists of every shape and size rely on it for accurate information to difficult technical challenges.
 
-We’re talking the real nitty gritty. If you want to know why InvokeAsync shows an an error in a Blazor component, how to undo the most recent local commits in Git, or why HTML thinks the tag “chucknorris” is a colour, this is the place for you.
+We're talking the real nitty gritty. If you want to know why InvokeAsync shows an an error in a Blazor component, how to undo the most recent local commits in Git, or why HTML thinks the tag “chucknorris” is a colour, this is the place for you.
 
-While it’s undoubtedly a gold mine of useful resources, it’s important to note that the community can be a bit toxic when it comes to welcoming new web developers. Stack Overflow mods are aware of this (and have added new guidelines in response) but do be wary—and look for existing answers before asking a query of your own.
+While it's undoubtedly a gold mine of useful resources, it's important to note that the community can be a bit toxic when it comes to welcoming new web developers. Stack Overflow mods are aware of this (and have added new guidelines in response) but do be wary—and look for existing answers before asking a query of your own.
 
-**💡Pro Tip:** More broadly it would be remiss not to mention your other best friend: Google! Not even the most seasoned web developer knows how to fix everything and you can almost guarantee that you’ll find someone out there who’s had the same problem as you at some point.
+**💡Pro Tip:** More broadly it would be remiss not to mention your other best friend: Google! Not even the most seasoned web developer knows how to fix everything and you can almost guarantee that you'll find someone out there who's had the same problem as you at some point.
 
 ### 46. Squoosh Image Optimiser&#xA;
 
 Assets. Content. Media. Even the simplest web design project will need basic images and icons. Image optimisation apps allow you to compress image file sizes without affecting quality, which means your sites will stay as fast and responsive as possible.
 
-Now, there’s no shortage of great image optimisation apps but we love [Squoosh](https://squoosh.app/). It’s a no-frills experience that does exactly what you need it to. Just drag and drop your image into the editor and Squoosh does its thing.
+Now, there's no shortage of great image optimisation apps but we love [Squoosh](https://squoosh.app/). It's a no-frills experience that does exactly what you need it to. Just drag and drop your image into the editor and Squoosh does its thing.
 
-You aren’t limited to compression either. With the simple interface you can resize, compress or change the image format. The changes are almost instant and the finished product can be downloaded with a click.
+You aren't limited to compression either. With the simple interface you can resize, compress or change the image format. The changes are almost instant and the finished product can be downloaded with a click.
 
-One drawback is that you can only work with one image at a time. So, if you’re working on a large project requiring lots of images, [ShortPixel](https://shortpixel.com/) may better suit your needs.
+One drawback is that you can only work with one image at a time. So, if you're working on a large project requiring lots of images, [ShortPixel](https://shortpixel.com/) may better suit your needs.
 
 ### 47. ColorPick Eyedropper Chrome Extension
 
@@ -500,13 +500,13 @@ Just click the extension and hover over *any* element on \*any \*webpage. A smal
 
 ### 48. Google Lighthouse
 
-Technically a part of Chrome Developer Tools, [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) deserves its own dedicated entry. It’s an open-source, automated tool for improving the quality of web pages. You can run it on any existing web page to audit overall performance, accessibility, best practices and SEO.
+Technically a part of Chrome Developer Tools, [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) deserves its own dedicated entry. It's an open-source, automated tool for improving the quality of web pages. You can run it on any existing web page to audit overall performance, accessibility, best practices and SEO.
 
-While you can run it from the command line, or as a Node module, the visual interface within Chrome DevTools is useful for getting actionable insight into what’s working (and what is not working) about any given site.
+While you can run it from the command line, or as a Node module, the visual interface within Chrome DevTools is useful for getting actionable insight into what's working (and what is not working) about any given site.
 
 There are two new features that extend the functionality somewhat too. Stack Packs allow Lighthouse to detect what platform your site is built on and display more specific guidance based on your unique tools.
 
-**💡Pro Tip:** New Lighthouse plugins also allow you to use the data you’ve collected to create new audits and reports. Used in tandem with PageSpeed Insights, it’s a surefire way to make sure your website is in good shape.
+**💡Pro Tip:** New Lighthouse plugins also allow you to use the data you've collected to create new audits and reports. Used in tandem with PageSpeed Insights, it's a surefire way to make sure your website is in good shape.
 
 ### 49. A Second Monitor
 
@@ -518,13 +518,13 @@ With one screen you're constantly cycling through open applications. Half the ti
 
 ### 50. Paperform
 
-For all the advances we’ve made in the world—sending billionaires to the moon, having the power of a supercomputer in our pockets—it’s still weirdly difficult to code beautiful online forms (seriously, PHP is a pain.) That’s where [Paperform](https://paperform.co/) comes in.
+For all the advances we've made in the world—sending billionaires to the moon, having the power of a supercomputer in our pockets—it's still weirdly difficult to code beautiful online forms (seriously, PHP is a pain.) That's where [Paperform](https://paperform.co/) comes in.
 
 Paperform empowers you to create beautiful [online forms](https://paperform.co/blog/best-online-form-builders/) and landing pages without any code. Just use our free-text editor to build anything from basic [contact forms](https://paperform.co/templates/contact-us-form/) to complex [eCommerce pages](https://paperform.co/templates/apparel-order-form/) that can be embedded anywhere on the internet.
 
-Use our theme tools to get started, then add your own unique tweaks with support for custom HTML and CSS. Developing on WordPress? We’ve even got a plugin that makes [embedding forms on WordPress](https://paperform.co/blog/wordpress-form-builder-plugins/) a breeze—and makes life way easier for you and your clients.
+Use our theme tools to get started, then add your own unique tweaks with support for custom HTML and CSS. Developing on WordPress? We've even got a plugin that makes [embedding forms on WordPress](https://paperform.co/blog/wordpress-form-builder-plugins/) a breeze—and makes life way easier for you and your clients.
 
-But that’s not all you can do. Want to collect feedback from [satisfied customers](https://paperform.co/blog/customer-satisfaction-survey/)? Send a [client questionnaire](https://paperform.co/templates/new-client-onboarding-form/) for each new project? Or maybe you want to set up a [landing page](https://paperform.co/blog/one-page-website/) where you can sell [online courses](https://paperform.co/blog/online-course-ideas/), schedule appointments and [grow a mailing list](https://paperform.co/blog/email-list-sign-ups/)?
+But that's not all you can do. Want to collect feedback from [satisfied customers](https://paperform.co/blog/customer-satisfaction-survey/)? Send a [client questionnaire](https://paperform.co/templates/new-client-onboarding-form/) for each new project? Or maybe you want to set up a [landing page](https://paperform.co/blog/one-page-website/) where you can sell [online courses](https://paperform.co/blog/online-course-ideas/), schedule appointments and [grow a mailing list](https://paperform.co/blog/email-list-sign-ups/)?
 
 With Paperform you can do all that and more. And with our 3,000+ Direct and Zapier integrations, connecting with the rest of your tech stack to streamline your web development workflow is so easy your grandma could do it
 

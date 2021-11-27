@@ -126,7 +126,7 @@
                             </p>
                             <h3 name="6c67" id="6c67" class="graf graf--h3 graf-after--p">Phase 1: Heroku Connection</h3>
                             <p name="983d" id="983d" class="graf graf--p graf-after--h3">
-                                If you haven’t created a Heroku account yet, create one
+                                If you haven't created a Heroku account yet, create one
                                 <a
                                     href="https://signup.heroku.com/"
                                     data-href="https://signup.heroku.com/"
@@ -166,7 +166,7 @@
                                 class="graf graf--pre graf-after--p"
                             ><code class="markup--code markup--pre-code">heroku login</code></pre>
                             <p name="eb37" id="eb37" class="graf graf--p graf-after--pre">
-                                Add Heroku as a remote to your project’s git repository in the following command and replace
+                                Add Heroku as a remote to your project's git repository in the following command and replace
                                 <code class="markup--code markup--p-code">&lt;name-of-Heroku-app&gt;</code> with the name of the application you created in the
                                 <a
                                     href="https://dashboard.heroku.com/"
@@ -188,7 +188,7 @@
                             <h3 name="6d41" id="6d41" class="graf graf--h3 graf-after--p">Phase 2: Setting up your Express + React application</h3>
                             <p name="6a49" id="6a49" class="graf graf--p graf-after--h3">
                                 Right now, your React application is on a different localhost port than your Express application. However, since your React
-                                application only consists of static files that don’t need to bundled continuously with changes in production, your Express
+                                application only consists of static files that don't need to bundled continuously with changes in production, your Express
                                 application can serve the React assets in production too. These static files live in the
                                 <code class="markup--code markup--p-code">frontend/build</code> folder after running
                                 <code class="markup--code markup--p-code">npm run build</code> in the
@@ -198,7 +198,7 @@
                                 Add the following changes into your <code class="markup--code markup--p-code">backend/routes.index.js</code> file.
                             </p>
                             <p name="0d3e" id="0d3e" class="graf graf--p graf-after--p">
-                                At the root route, serve the React application’s static <code class="markup--code markup--p-code">index.html</code> file along
+                                At the root route, serve the React application's static <code class="markup--code markup--p-code">index.html</code> file along
                                 with <code class="markup--code markup--p-code">XSRF-TOKEN</code> cookie. Then serve up all the React application&#39;s static
                                 files using the <code class="markup--code markup--p-code">express.static</code> middleware. Serve the
                                 <code class="markup--code markup--p-code">index.html</code> and set the
@@ -242,7 +242,7 @@
                                 class="graf graf--pre graf-after--pre"
                             ><code class="markup--code markup--pre-code">module.exports = router;</code></pre>
                             <p name="532c" id="532c" class="graf graf--p graf-after--pre">
-                                Your Express backend’s <code class="markup--code markup--p-code">package.json</code> should include scripts to run the
+                                Your Express backend's <code class="markup--code markup--p-code">package.json</code> should include scripts to run the
                                 <code class="markup--code markup--p-code">sequelize</code> CLI commands.
                             </p>
                             <p name="6174" id="6174" class="graf graf--p graf-after--p">
@@ -308,7 +308,7 @@
                             <p name="5899" id="5899" class="graf graf--p graf-after--p">Finally, commit your changes.</p>
                             <h3 name="827c" id="827c" class="graf graf--h3 graf-after--p">Phase 3: Deploy to Heroku</h3>
                             <p name="8f37" id="8f37" class="graf graf--p graf-after--h3">
-                                Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under “Settings” there is a section for
+                                Once you're finished setting this up, navigate to your application's Heroku dashboard. Under “Settings” there is a section for
                                 “Config Vars”. Click the <code class="markup--code markup--p-code">Reveal Config Vars</code> button to see all your production
                                 environment variables. You should have a <code class="markup--code markup--p-code">DATABASE_URL</code> environment variable
                                 already from the Heroku Postgres add-on.
@@ -370,7 +370,7 @@
                                 class="graf graf--pre graf-after--p"
                             ><code class="markup--code markup--pre-code">heroku run npm run sequelize db:seed:all</code></pre>
                             <p name="c703" id="c703" class="graf graf--p graf-after--pre">
-                                Note: You can interact with your database this way as you’d like, but beware that
+                                Note: You can interact with your database this way as you'd like, but beware that
                                 <code class="markup--code markup--p-code">db:drop</code> cannot be run in the Heroku environment. If you want to drop and create
                                 the database, you need to remove and add back the &quot;Heroku Postgres&quot; add-on.
                             </p>
@@ -410,7 +410,7 @@
                                     class="markup--anchor markup--p-anchor"
                                     rel="noopener"
                                     target="_blank"
-                                    >bgoonz’s gists · GitHub</a
+                                    >bgoonz's gists · GitHub</a
                                 >
                             </p>
                             <div name="3585" id="3585" class="graf graf--mixtapeEmbed graf-after--p">

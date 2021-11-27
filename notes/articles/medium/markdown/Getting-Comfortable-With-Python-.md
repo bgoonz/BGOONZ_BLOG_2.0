@@ -76,11 +76,11 @@ Using print with other object types:
      >>> print(False)
      False
      >>> print([“WebDevHub”, “School”, 2, 0, 2, 0])
-     ['WebDevHub’, 'School’, 2, 0, 2, 0]
+     ['WebDevHub', 'School', 2, 0, 2, 0]
      >>> print((“WebDevHub”, “School”))
-     ('WebDevHub’, 'School’)
+     ('WebDevHub', 'School')
      >>> print({“school”: “WebDevHub School”, “year”: 2021})
-     {'school’: 'WebDevHub School’, 'year’: 2021}
+     {'school': 'WebDevHub School', 'year': 2021}
      >>>
 
 Any object passed as an argument into print will get converted into a string type before outputted to the screen.
@@ -89,7 +89,7 @@ You can see how the print function is easy to use and how it can handle any obje
 
 **Passing multiple arguments into print**
 
-Now, let’s look at how we can pass multiple arguments into the print function. Using print with multiple arguments gives you a flexible and easy way to output items to the screen.
+Now, let's look at how we can pass multiple arguments into the print function. Using print with multiple arguments gives you a flexible and easy way to output items to the screen.
 
 We can pass multiple objects, all of the same or different types, into print.
 
@@ -148,30 +148,30 @@ Whitespace is any character represented by something that appears empty (usually
 
     >>> import string
      >>> string.whitespace
-     ' \\t\\n\\r\\x0b\\x0c’
+     ' \\t\\n\\r\\x0b\\x0c'
      >>>
 
 Note: the characters are “ “ (space), \\\\t (tab), \\\\n (newline), \\\\r (return), \\\\x0b (unicode line tabulation), and \\\\x0c (unicode form feed).
 
-You’ve seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with “ “, \\\\t, and \\\\n.
+You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with “ “, \\\\t, and \\\\n.
 
 **Logical Lines of Code**
 
-Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code’s end (a statement or a definition) is marked by a \\\\n.
+Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end (a statement or a definition) is marked by a \\\\n.
 
     >>> first = “WebDevHub”
      >>> second = “School”
      >>> first + second
-     'WebDevHubSchool’
+     'WebDevHubSchool'
      >>> first \\
      … + \\
      … second
-     'WebDevHubSchool’
+     'WebDevHubSchool'
      >>>
 
-Note: how the REPL evaluates the expression first + second when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a \\\\ character. That \\\\ character lets the Python interpreter that even though there is a newline, you don’t want it to treat it as the end of a logical line.
+Note: how the REPL evaluates the expression first + second when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a \\\\ character. That \\\\ character lets the Python interpreter that even though there is a newline, you don't want it to treat it as the end of a logical line.
 
-It’s important to understand that Python assumes meaning in newline characters when trying to interpret your code.
+It's important to understand that Python assumes meaning in newline characters when trying to interpret your code.
 
 **Code Blocks**
 

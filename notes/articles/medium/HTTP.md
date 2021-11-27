@@ -1,12 +1,12 @@
 # HTTP Basics
 
-“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
+“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
 
 ---
 
 ### HTTP Basics
 
-> _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
+> _“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
 -   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
@@ -31,7 +31,7 @@ Each individual request is sent to a server, which handles it and provides an an
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WR6l6JwNOvkfrljt.png" class="graf-image" /></figure>**Properties of HTTP**
 
 -   <span id="bc5b">`Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.</span>
--   <span id="aec2">`TCP` is HTTP’s preferred connection type.</span>
+-   <span id="aec2">`TCP` is HTTP's preferred connection type.</span>
 -   <span id="9880">`Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.</span>
 -   <span id="b204">HTTP supports cookies.</span>
 -   <span id="5e72">`Intermediaries` : Servers or devices that pass your request along which come in three types:</span>
@@ -63,7 +63,7 @@ Each individual request is sent to a server, which handles it and provides an an
 -   <span id="0e3d">The first line of an HTTP Request made up of three parts:</span>
 
 1.  <span id="e67b">The `Method` : Indicated by an HTTP Verb.</span>
-2.  <span id="f17e">The `URI` : Uniform Resource Indicator that ID’s our request.</span>
+2.  <span id="f17e">The `URI` : Uniform Resource Indicator that ID's our request.</span>
 3.  <span id="cf4a">THe `HTTP` **Version** : Version we expect to use.</span>
 
 -   <span id="6fd5">HTTP Verbs are a simply way of declaring our intention to the server.</span>
@@ -79,13 +79,13 @@ Each individual request is sent to a server, which handles it and provides an an
 -   <span id="5e4d">Some common headers:</span>
 -   <span id="2971">`Host` : Root path for our URI.</span>
 -   <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
--   <span id="2555">`Referer` : Defines the URL you’re coming from.</span>
+-   <span id="2555">`Referer` : Defines the URL you're coming from.</span>
 -   <span id="e946">`Accept` : Indicates what the client will receive.</span>
 -   <span id="2011">`Content`**-** : Define Details about the body of the request.</span>
 
 **Body**
 
--   <span id="8af8">For when we need to send data that doesn’t fit into the header & is too complex for the URI we can use the _body_.</span>
+-   <span id="8af8">For when we need to send data that doesn't fit into the header & is too complex for the URI we can use the _body_.</span>
 -   <span id="9271">`URL encoding` : Most common way form data is formatted.</span>
 -   <span id="852a">`name=claire&age=29&iceCream=vanilla`</span>
 -   <span id="cb18">We can also format using JSON or XML.</span>
@@ -129,9 +129,9 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Status**
 
--   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (`status line`)</span>
+-   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server's intentions. (`status line`)</span>
 -   <span id="5353">`HTTP/1.1 200 OK`</span>
--   <span id="5882">`HTTP status codes` : numeric way of representing a server’s response.</span>
+-   <span id="5882">`HTTP status codes` : numeric way of representing a server's response.</span>
 -   <span id="78bc">Follow the structure: x: xxx — xxx;</span>
 
 ### `Status codes 100 - 199: Informational`
@@ -150,12 +150,12 @@ Each individual request is sent to a server, which handles it and provides an an
 
 ### `Status codes 400 - 499: Client Error`
 
--   <span id="1f8a">Indicate problem with client’s request.</span>
--   <span id="d68d">Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you’re not allowed to see w/o authentication) & 403 Forbidden (resource exists but you’re not allowed to see it at all ) & 404 Not Found (resource requested does not exist);</span>
+-   <span id="1f8a">Indicate problem with client's request.</span>
+-   <span id="d68d">Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you're not allowed to see w/o authentication) & 403 Forbidden (resource exists but you're not allowed to see it at all ) & 404 Not Found (resource requested does not exist);</span>
 
 ### `Status codes 500 - 599: Server Error`
 
--   <span id="93fc">Indicates request was formatted correctly, but the server couldn’t do what you asked due to an internal problem.</span>
+-   <span id="93fc">Indicates request was formatted correctly, but the server couldn't do what you asked due to an internal problem.</span>
 -   <span id="96cf">Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);</span>
 
 ### **Headers** : Work just like HTTP requests.
@@ -163,15 +163,15 @@ Each individual request is sent to a server, which handles it and provides an an
 > Common Examples:
 
 -   <span id="6859">`Location` : Used by client for redirection responses.</span>
--   <span id="a497">`Content-Type` : Let’s client know what format the body is in.</span>
+-   <span id="a497">`Content-Type` : Let's client know what format the body is in.</span>
 -   <span id="1e08">`Expires` : When response is no longer valid</span>
--   <span id="f45d">`Content-Disposition` : Let’s client know how to display the response.</span>
+-   <span id="f45d">`Content-Disposition` : Let's client know how to display the response.</span>
 -   <span id="b46e">`Set-Cookie` : Sends data back to the client to set on the cookie.</span>
 -   <span id="1e80">`Data` : If the request is successful, the body of the response will contain the resource you have requested.</span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

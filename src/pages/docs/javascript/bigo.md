@@ -69,7 +69,7 @@ O(n log(n)) & O(log(n)): dividing/halving
 
 -   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
 
--   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn’t increase very much
+-   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
 
 -   halving
 

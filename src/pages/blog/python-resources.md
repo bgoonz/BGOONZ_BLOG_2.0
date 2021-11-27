@@ -101,7 +101,7 @@ If you use pipenv, you can install it as:
 
 or from a git checkout:
 
-When using pipenv, in order to launch jupyter lab, you must activate the project’s virtualenv. For example, in the directory where pipenv’s Pipfile and Pipfile.lock live (i.e., where you ran the above commands):
+When using pipenv, in order to launch jupyter lab, you must activate the project's virtualenv. For example, in the directory where pipenv's Pipfile and Pipfile.lock live (i.e., where you ran the above commands):
 
 Alternatively, you can run jupyter lab inside the virtualenv with
 
@@ -238,7 +238,7 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 #### for Loop
 
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
-Let’s say we wanted to create the example above.
+Let's say we wanted to create the example above.
 
 _loop.py_
 
@@ -291,32 +291,32 @@ _functions.py_
 
 The following is a modified version of a tutorial posted By: [InvisibleOne ](https://replit.com/@InvisibleOne)
 
-I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
+I would cite the original tutorial it's self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
 
 ### 1. Adventure Story
 
 The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.
-First things first, let’s import the stuff that we need, like this:
+First things first, let's import the stuff that we need, like this:
 
 Now, we need some variables to hold some of the player data.
 
-Ok, now we have the player’s name and nickname, let’s welcome them to the game
+Ok, now we have the player's name and nickname, let's welcome them to the game
 
-Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
+Now for the story. The most important part of all stories is the introduction, so let's print our introduction
 
-Now, we’ll give the player their first choice
+Now, we'll give the player their first choice
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
 
 ### 2. TEXT ENCODER
 
-Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
+Ever make secret messages as a kid? I used to. Anyways, here's the way you can make a program to encode messages! It's pretty simple. First things first, let's get the message the user wants to encode, we'll use input() for that:
 
 Now we need to split that string into a list of characters, this part is a bit more complicated.
 
 Now we need to convert the characters into code, well do this with a for loop:
 
-Once we’ve encoded the text, we’ll print it back for the user
+Once we've encoded the text, we'll print it back for the user
 
 And if you want to decode something, it is this same process but in reverse!
 
@@ -324,25 +324,25 @@ And if you want to decode something, it is this same process but in reverse!
 
 Number guessing games are fun and pretty simple, all you need are a few loops. To start, we need to import random.
 
-That is pretty simple. Now we’ll make a list with the numbers were want available for the game
+That is pretty simple. Now we'll make a list with the numbers were want available for the game
 
 Next, we get a random number from the list
 
-Now, we need to ask the user for input, we’ll to this with a while loop
+Now, we need to ask the user for input, we'll to this with a while loop
 
 Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt’
-Now, to open a file in python we use open('filename’, type) The type can be 'r’ for read, or 'w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'
+Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
-Now we’ll open our file and save that text
+Now we'll open our file and save that text
 
-There we go, now the information is in the file. Next, we’ll retrieve it
+There we go, now the information is in the file. Next, we'll retrieve it
 
-There we go, that’s how you can open files and close files with python
+There we go, that's how you can open files and close files with python
 
 ### 5. Random Dare Generator
 
-Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
+Who doesn't love a good dare? Here is a program that can generate random dares. The first thing we'll need to do is as always, import random. Then we'll make some lists of dares

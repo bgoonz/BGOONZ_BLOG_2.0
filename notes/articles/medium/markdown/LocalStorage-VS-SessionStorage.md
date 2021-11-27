@@ -8,13 +8,13 @@ Web storage objects localStorage and sessionStorage allow to save key/value pair
 
 Web storage objects `localStorage` and `sessionStorage` allow to save key/value pairs in the browser.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*sJFEUTv2t9DsmpE2" class="graf-image" /></figure>What’s interesting about them is that the data survives a page refresh (for `sessionStorage`) and even a full browser restart (for `localStorage`). We'll see that very soon.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*sJFEUTv2t9DsmpE2" class="graf-image" /></figure>What's interesting about them is that the data survives a page refresh (for `sessionStorage`) and even a full browser restart (for `localStorage`). We'll see that very soon.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NL5JYJqGcyQ7Q16P.png" class="graf-image" /></figure>We already have cookies. Why additional objects?
 
 -   <span id="ceb3">Unlike cookies, web storage objects are not sent to server with each request. Because of that, we can store much more. Most browsers allow at least 2 megabytes of data (or more) and have settings to configure that.</span>
--   <span id="bff4">Also unlike cookies, the server can’t manipulate storage objects via HTTP headers. Everything’s done in JavaScript.</span>
--   <span id="ac8e">The storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer different storage objects, they can’t access data from each other.</span>
+-   <span id="bff4">Also unlike cookies, the server can't manipulate storage objects via HTTP headers. Everything's done in JavaScript.</span>
+-   <span id="ac8e">The storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer different storage objects, they can't access data from each other.</span>
 
 Both storage objects provide same methods and properties:
 
@@ -25,9 +25,9 @@ Both storage objects provide same methods and properties:
 -   <span id="7c98">`key(index)` -- get the key on a given position.</span>
 -   <span id="ef56">`length` -- the number of stored items.</span>
 
-As you can see, it’s like a `Map` collection (`setItem/getItem/removeItem`), but also allows access by index with `key(index)`.
+As you can see, it's like a `Map` collection (`setItem/getItem/removeItem`), but also allows access by index with `key(index)`.
 
-Let’s see how it works.
+Let's see how it works.
 
 ### localStorage demo
 
@@ -61,19 +61,19 @@ We can also use a plain object way of getting/setting keys, like this:
     // remove key
     delete localStorage.test;
 
-That’s allowed for historical reasons, and mostly works, but generally not recommended, because:
+That's allowed for historical reasons, and mostly works, but generally not recommended, because:
 
 1.  <span id="c7fb">If the key is user-generated, it can be anything, like `length` or `toString`, or another built-in method of `localStorage`. In that case `getItem/setItem` work fine, while object-like access fails:</span>
 
 <!-- -->
 
-    let key = 'length’; localStorage[key] = 5; // Error, can’t assign length
+    let key = 'length'; localStorage[key] = 5; // Error, can't assign length
 
-1.  <span id="3020">There’s a `storage` event, it triggers when we modify the data. That event does not happen for object-like access. We'll see that later in this chapter.</span>
+1.  <span id="3020">There's a `storage` event, it triggers when we modify the data. That event does not happen for object-like access. We'll see that later in this chapter.</span>
 
 ### Looping over keys
 
-As we’ve seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+As we've seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
 
 Unfortunately, storage objects are not iterable.
 
@@ -86,7 +86,7 @@ One way is to loop over them as over an array:
 
 Another way is to use `for key in localStorage` loop, just as we do with regular objects.
 
-It iterates over keys, but also outputs few built-in fields that we don’t need:
+It iterates over keys, but also outputs few built-in fields that we don't need:
 
     // bad try
     for(let key in localStorage) {
@@ -137,14 +137,14 @@ Also it is possible to stringify the whole storage object, e.g. for debugging pu
 
 The `sessionStorage` object is used much less often than `localStorage`.
 
-Properties and methods are the same, but it’s much more limited:
+Properties and methods are the same, but it's much more limited:
 
 -   <span id="94a1">The `sessionStorage` exists only within the current browser tab.</span>
 -   <span id="c149">Another tab with the same page will have a different storage.</span>
 -   <span id="9a82">But it is shared between iframes in the same tab (assuming they come from the same origin).</span>
 -   <span id="c0d7">The data survives page refresh, but not closing/opening the tab.</span>
 
-Let’s see that in action.
+Let's see that in action.
 
 Run this code…
 
@@ -156,7 +156,7 @@ Run this code…
 
 …But if you open the same page in another tab, and try again there, the code above returns `null`, meaning "nothing found".
 
-That’s exactly because `sessionStorage` is bound not only to the origin, but also to the browser tab. For that reason, `sessionStorage` is used sparingly.
+That's exactly because `sessionStorage` is bound not only to the origin, but also to the browser tab. For that reason, `sessionStorage` is used sparingly.
 
 ### Storage event
 
@@ -170,7 +170,7 @@ When the data gets updated in `localStorage` or `sessionStorage`, <a href="https
 
 The important thing is: the event triggers on all `window` objects where the storage is accessible, except the one that caused it.
 
-Let’s elaborate.
+Let's elaborate.
 
 Imagine, you have two windows with the same site in each. So `localStorage` is shared between them.
 
@@ -192,7 +192,7 @@ Also, `event.storageArea` contains the storage object -- the event is the same f
 
 **That allows different windows from the same origin to exchange messages.**
 
-Modern browsers also support Broadcast channel API, the special API for same-origin inter-window communication, it’s more full featured, but less supported. There are libraries that polyfill that API, based on `localStorage`, that make it available everywhere.
+Modern browsers also support Broadcast channel API, the special API for same-origin inter-window communication, it's more full featured, but less supported. There are libraries that polyfill that API, based on `localStorage`, that make it available everywhere.
 
 ### Summary
 

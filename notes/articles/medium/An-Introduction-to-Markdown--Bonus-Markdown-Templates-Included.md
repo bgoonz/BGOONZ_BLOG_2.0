@@ -14,13 +14,13 @@ Basic Syntax Guide
 
 ### Basic Syntax Guide
 
-This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown’s greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
+This topic is meant to give you a very basic overview of how Markdown works, showing only some of the most common operations you use most frequently. Keep in mind that you can also use the Edit menus to inject markdown using the toolbar, which serves as a great way to see how Markdown works. However, Markdown's greatest strength lies in its simplicity and keyboard friendly approach that lets you focus on writing your text and staying on the keyboard.
 
 ### What is Markdown
 
-Markdown is very easy to learn and get comfortable with due it’s relatively small set of markup 'commands’. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
+Markdown is very easy to learn and get comfortable with due it's relatively small set of markup 'commands'. It uses already familiar syntax to represent common formatting operations. Markdown understands basic line breaks so you can generally just type text.
 
-Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that’s generally not recommended.
+Markdown also allows for raw HTML inside of a markdown document, so if you want to embed something more fancy than what Markdowns syntax can do you can always fall back to HTML. However to keep documents readable that's generally not recommended.
 
 ### Basic Markdown Syntax
 
@@ -73,7 +73,7 @@ By default Markdown adds paragraphs at double line breaks. Single line breaks by
 
 This line has a paragraph break at the end (empty line after).
 
-Theses two lines should display as a single line because there’s no double space at the end.
+Theses two lines should display as a single line because there's no double space at the end.
 
 The following line has a soft break at the end (two spaces at end)  
 This line should be following on the very next line.
@@ -111,7 +111,7 @@ Block quotes are callouts that are great for adding notes or warnings into docum
 
 > _Headers break on their own_
 
-> _Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
+> _Note that headers don't need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
 
 ### Fontawesome Icons
 
@@ -257,7 +257,7 @@ which gives you:
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

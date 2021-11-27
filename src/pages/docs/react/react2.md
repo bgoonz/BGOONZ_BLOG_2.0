@@ -31,11 +31,11 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 > _because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX_
 
-> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code’ }_
+> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code' }_
 
 > _JSX code must be compiled into JavaScript_
 
-> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root’))_
+> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root'))_
 
 > _One important thing to know about nested JSX is that it must return a single element._
 
@@ -49,7 +49,7 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
 
-React has a few different kinds of components, but we’ll start with `React.Component` subclasses:
+React has a few different kinds of components, but we'll start with `React.Component` subclasses:
 
     class ShoppingList extends React.Component {
       render() {
@@ -68,7 +68,7 @@ React has a few different kinds of components, but we’ll start with `React.Com
 
     // Example usage: <ShoppingList name="Mark" />
 
-We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
 
 Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for “properties”), and returns a hierarchy of views to display via the `render` method.
 
@@ -113,7 +113,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ---
 
-> _With React, we can render this JSX directly to the HTML DOM using React’s rendering API known as ReactDOM._
+> _With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM._
 
 > _ReactDOM offers a simple method to render React elements to the DOM which looks like this:_
 
@@ -159,7 +159,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _In HTML, almost all tags have both an opening and closing tag:_ `<div></div>;` _the closing tag always has a forward slash before the tag name that you are closing._
 
-> _there are special instances in HTML called “self-closing tags”, or tags that don’t require both an opening and closing tag before another tag can start._
+> _there are special instances in HTML called “self-closing tags”, or tags that don't require both an opening and closing tag before another tag can start._
 
 > _For example the line-break tag can be written as_ `<br>` _or as_ `<br />,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
 
@@ -168,7 +168,7 @@ The code editor has a JSX element similar to what you created in the last challe
 > A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
-### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don’t change any of the content — you only need to close tags where they are needed.
+### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
 
     const JSX = (
       <div>
@@ -202,7 +202,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 -   <span id="b514">React requires your function name to begin with a capital letter.</span>
 
-> _Here’s an example of a stateless functional component that assigns an HTML class in JSX:_
+> _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
 
     // After being transpiled, the <div> will have a CSS class of 'customClass'
     const DemoComponent = function() {
@@ -261,7 +261,7 @@ Note: The text is considered a child of the div element, so you will not be able
 
 > _It uses super() to call the constructor of the parent class, in this case React.Component_
 
-> _The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component’s constructor with super, and pass props to both._
+> _The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component's constructor with super, and pass props to both._
 
 > _This makes sure the component is initialized properly. For now, know that it is standard for this code to be included._
 
@@ -403,9 +403,9 @@ Exported from [Medium](https://medium.com) on May 23, 2021.
 <li>Define an <code>AccordionItem</code> component, that renders a <code>&lt;button&gt;</code> which is used to update the component and notify its parent via the <code>handleClick</code> callback.</li>
 <li>Use the <code>isCollapsed</code> prop in <code>AccordionItem</code> to determine its appearance and set an appropriate <code>className</code>.</li>
 <li>Define an <code>Accordion</code> component that uses the <code>useState()</code> hook to initialize the value of the <code>bindIndex</code> state variable to <code>defaultIndex</code>.</li>
-<li>Filter <code>children</code> to remove unnecessary nodes except for <code>AccordionItem</code> by identifying the function’s name.</li>
+<li>Filter <code>children</code> to remove unnecessary nodes except for <code>AccordionItem</code> by identifying the function's name.</li>
 <li>Use <code>Array.prototype.map()</code> on the collected nodes to render the individual collapsible elements.</li>
-<li>Define <code>changeItem</code>, which will be executed when clicking an <code>AccordionItem</code>’s <code>&lt;button&gt;</code>.</li>
+<li>Define <code>changeItem</code>, which will be executed when clicking an <code>AccordionItem</code>'s <code>&lt;button&gt;</code>.</li>
 <li><code>changeItem</code> executes the passed callback, <code>onItemClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">.accordion-item.collapsed</span> {</a>
@@ -737,7 +737,7 @@ ReactDOM.render(
 <p>Renders a component with collapsible content.</p>
 <ul>
 <li>Use the <code>useState()</code> hook to create the <code>isCollapsed</code> state variable with an initial value of <code>collapsed</code>.</li>
-<li>Use the <code>&lt;button&gt;</code> to change the component’s <code>isCollapsed</code> state and the content of the component, passed down via <code>children</code>.</li>
+<li>Use the <code>&lt;button&gt;</code> to change the component's <code>isCollapsed</code> state and the content of the component, passed down via <code>children</code>.</li>
 <li>Determine the appearance of the content, based on <code>isCollapsed</code> and apply the appropriate <code>className</code>.</li>
 <li>Update the value of the <code>aria-expanded</code> attribute based on <code>isCollapsed</code> to make the component accessible.</li>
 </ul>
@@ -798,9 +798,9 @@ ReactDOM.render(
 <hr />
 <p>Renders a controlled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>
 <ul>
-<li>Use the <code>value</code> passed down from the parent as the controlled input field’s value.</li>
+<li>Use the <code>value</code> passed down from the parent as the controlled input field's value.</li>
 <li>Use the <code>onChange</code> event to fire the <code>onValueChange</code> callback and send the new value to the parent.</li>
-<li>The parent must update the input field’s <code>value</code> prop in order for its value to change on user input.</li>
+<li>The parent must update the input field's <code>value</code> prop in order for its value to change on user input.</li>
 </ul>
 
 ```js
@@ -842,7 +842,7 @@ ReactDOM.render(&lt;Form /&gt;, document.getElementById(&quot;root&quot;));
 <p>Renders a countdown timer that prints a message when it reaches zero.</p>
 <ul>
 <li>Use the <code>useState()</code> hook to create a state variable to hold the time value, initialize it from the props and destructure it into its components.</li>
-<li>Use the <code>useState()</code> hook to create the <code>paused</code> and <code>over</code> state variables, used to prevent the timer from ticking if it’s paused or the time has run out.</li>
+<li>Use the <code>useState()</code> hook to create the <code>paused</code> and <code>over</code> state variables, used to prevent the timer from ticking if it's paused or the time has run out.</li>
 <li>Create a method <code>tick</code>, that updates the time values based on the current value (i.e. decreasing the time by one second).</li>
 <li>Create a method <code>reset</code>, that resets all state variables to their initial states.</li>
 <li>Use the the <code>useEffect()</code> hook to call the <code>tick</code> method every second via the use of <code>setInterval()</code> and use <code>clearInterval()</code> to clean up when the component is unmounted.</li>
@@ -977,9 +977,9 @@ ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot
 <hr />
 <p>Renders a file drag and drop component for a single file.</p>
 <ul>
-<li>Create a ref, called <code>dropRef</code> and bind it to the component’s wrapper.</li>
+<li>Create a ref, called <code>dropRef</code> and bind it to the component's wrapper.</li>
 <li>Use the <code>useState()</code> hook to create the <code>drag</code> and <code>filename</code> variables, initialized to <code>false</code> and <code>''</code> respectively.</li>
-<li>The variables <code>dragCounter</code> and <code>drag</code> are used to determine if a file is being dragged, while <code>filename</code> is used to store the dropped file’s name.</li>
+<li>The variables <code>dragCounter</code> and <code>drag</code> are used to determine if a file is being dragged, while <code>filename</code> is used to store the dropped file's name.</li>
 <li>Create the <code>handleDrag</code>, <code>handleDragIn</code>, <code>handleDragOut</code> and <code>handleDrop</code> methods to handle drag and drop functionality.</li>
 <li><code>handleDrag</code> prevents the browser from opening the dragged file, <code>handleDragIn</code> and <code>handleDragOut</code> handle the dragged file entering and exiting the component, while <code>handleDrop</code> handles the file being dropped and passes it to <code>onDrop</code>.</li>
 <li>Use the <code>useEffect()</code> hook to handle each of the drag and drop events using the previously created methods.</li>
@@ -1600,9 +1600,9 @@ ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&q
 <hr />
 <p>Renders a button that animates a ripple effect when clicked.</p>
 <ul>
-<li>Use the <code>useState()</code> hook to create the <code>coords</code> and <code>isRippling</code> state variables for the pointer’s coordinates and the animation state of the button respectively.</li>
+<li>Use the <code>useState()</code> hook to create the <code>coords</code> and <code>isRippling</code> state variables for the pointer's coordinates and the animation state of the button respectively.</li>
 <li>Use a <code>useEffect()</code> hook to change the value of <code>isRippling</code> every time the <code>coords</code> state variable changes, starting the animation.</li>
-<li>Use <code>setTimeout()</code> in the previous hook to clear the animation after it’s done playing.</li>
+<li>Use <code>setTimeout()</code> in the previous hook to clear the animation after it's done playing.</li>
 <li>Use a <code>useEffect()</code> hook to reset <code>coords</code> whenever the <code>isRippling</code> state variable is <code>false.</code></li>
 <li>Handle the <code>onClick</code> event by updating the <code>coords</code> state variable and calling the passed callback.</li>
 </ul>
@@ -1761,7 +1761,7 @@ ReactDOM.render(
 <p>Renders an uncontrolled range input element that uses a callback function to pass its value to the parent component.</p>
 <ul>
 <li>Set the <code>type</code> of the <code>&lt;input&gt;</code> element to <code>"range"</code> to create a slider.</li>
-<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field’s initial value.</li>
+<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field's initial value.</li>
 <li>Use the <code>onChange</code> event to fire the <code>onValueChange</code> callback and send the new value to the parent.</li>
 </ul>
 
@@ -1802,9 +1802,9 @@ ReactDOM.render(
 <hr />
 <p>Renders a star rating component.</p>
 <ul>
-<li>Define a component, called <code>Star</code> that will render each individual star with the appropriate appearance, based on the parent component’s state.</li>
+<li>Define a component, called <code>Star</code> that will render each individual star with the appropriate appearance, based on the parent component's state.</li>
 <li>In the <code>StarRating</code> component, use the <code>useState()</code> hook to define the <code>rating</code> and <code>selection</code> state variables with the appropriate initial values.</li>
-<li>Create a method, <code>hoverOver</code>, that updates <code>selected</code> according to the provided <code>event</code>, using the .<code>data-star-id</code> attribute of the event’s target or resets it to <code>0</code> if called with a <code>null</code> argument.</li>
+<li>Create a method, <code>hoverOver</code>, that updates <code>selected</code> according to the provided <code>event</code>, using the .<code>data-star-id</code> attribute of the event's target or resets it to <code>0</code> if called with a <code>null</code> argument.</li>
 <li>Use <code>Array.from()</code> to create an array of <code>5</code> elements and <code>Array.prototype.map()</code> to create individual <code>&lt;Star&gt;</code> components.</li>
 <li>Handle the <code>onMouseOver</code> and <code>onMouseLeave</code> events of the wrapping element using <code>hoverOver</code> and the <code>onClick</code> event using <code>setRating</code>.</li>
 </ul>
@@ -1868,7 +1868,7 @@ ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;ro
 <p>Renders a tabbed menu and view component.</p>
 <ul>
 <li>Define a <code>Tabs</code> component that uses the <code>useState()</code> hook to initialize the value of the <code>bindIndex</code> state variable to <code>defaultIndex</code>.</li>
-<li>Define a <code>TabItem</code> component and filter <code>children</code> passed to the <code>Tabs</code> component to remove unnecessary nodes except for <code>TabItem</code> by identifying the function’s name.</li>
+<li>Define a <code>TabItem</code> component and filter <code>children</code> passed to the <code>Tabs</code> component to remove unnecessary nodes except for <code>TabItem</code> by identifying the function's name.</li>
 <li>Define <code>changeTab</code>, which will be executed when clicking a <code>&lt;button&gt;</code> from the menu.</li>
 <li><code>changeTab</code> executes the passed callback, <code>onTabClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
 <li>Use <code>Array.prototype.map()</code> on the collected nodes to render the menu and view of the tabs, using the value of <code>binIndex</code> to determine the active tab and apply the correct <code>className</code>.</li>
@@ -2083,7 +2083,7 @@ ReactDOM.render(
 <hr />
 <p>Renders an uncontrolled <code>&lt;textarea&gt;</code> element that uses a callback function to pass its value to the parent component.</p>
 <ul>
-<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field’s initial value.</li>
+<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field's initial value.</li>
 <li>Use the <code>onChange</code> event to fire the <code>onValueChange</code> callback and send the new value to the parent.</li>
 </ul>
 
@@ -2248,7 +2248,7 @@ ReactDOM.render(
 <ul>
 <li>Use the value of the <code>toggled</code> prop to determine the initial state of the content (collapsed/expanded).</li>
 <li>Use the <code>useState()</code> hook to create the <code>isToggled</code> state variable and give it the value of the <code>toggled</code> prop initially.</li>
-<li>Render a <code>&lt;span&gt;</code> element and bind its <code>onClick</code> event to alter the component’s <code>isToggled</code> state.</li>
+<li>Render a <code>&lt;span&gt;</code> element and bind its <code>onClick</code> event to alter the component's <code>isToggled</code> state.</li>
 <li>Determine the appearance of the component, based on <code>isParentToggled</code>, <code>isToggled</code>, <code>name</code> and checking for <code>Array.isArray()</code> on <code>data</code>.</li>
 <li>For each child in <code>data</code>, determine if it is an object or array and recursively render a sub-tree or a text element with the appropriate style.</li>
 </ul>
@@ -2385,7 +2385,7 @@ ReactDOM.render(
 <hr />
 <p>Renders an uncontrolled <code>&lt;input&gt;</code> element that uses a callback function to inform its parent about value updates.</p>
 <ul>
-<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field’s initial value.</li>
+<li>Use the <code>defaultValue</code> passed down from the parent as the uncontrolled input field's initial value.</li>
 <li>Use the <code>onChange</code> event to fire the <code>onValueChange</code> callback and send the new value to the parent.</li>
 </ul>
 
@@ -2422,7 +2422,7 @@ ReactDOM.render(
 <p>Handles asynchronous calls.</p>
 <ul>
 <li>Create a custom hook that takes a handler function, <code>fn</code>.</li>
-<li>Define a reducer function and an initial state for the custom hook’s state.</li>
+<li>Define a reducer function and an initial state for the custom hook's state.</li>
 <li>Use the <code>useReducer()</code> hook to initialize the <code>state</code> variable and the <code>dispatch</code> function.</li>
 <li>Define an asynchronous <code>run</code> function that will run the provided callback, <code>fn</code>, while using <code>dispatch</code> to update <code>state</code> as necessary.</li>
 <li>Return an object containing the properties of <code>state</code> (<code>value</code>, <code>error</code> and <code>loading</code>) and the <code>run</code> function.</li>
@@ -3002,10 +3002,10 @@ ReactDOM.render(&lt;StatusIndicator /&gt;, document.getElementById(&quot;root&qu
 <li>Use the <code>useState()</code> hook to initialize the <code>value</code> to <code>defaultValue</code>.</li>
 <li>Use the <code>useRef()</code> hook to create a ref that will hold the <code>name</code> of the value in <code>localStorage</code>.</li>
 <li>Use 3 instances of the <code>useEffect()</code> hook for initialization, <code>value</code> change and <code>name</code> change respectively.</li>
-<li>When the component is first mounted, use <code>Storage.getItem()</code> to update <code>value</code> if there’s a stored value or <code>Storage.setItem()</code> to persist the current value.</li>
+<li>When the component is first mounted, use <code>Storage.getItem()</code> to update <code>value</code> if there's a stored value or <code>Storage.setItem()</code> to persist the current value.</li>
 <li>When <code>value</code> is updated, use <code>Storage.setItem()</code> to store the new value.</li>
 <li>When <code>name</code> is updated, use <code>Storage.setItem()</code> to create the new key, update the <code>nameRef</code> and use <code>Storage.removeItem()</code> to remove the previous key from <code>localStorage</code>.</li>
-<li><strong>NOTE:</strong> The hook is meant for use with primitive values (i.e. not objects) and doesn’t account for changes to <code>localStorage</code> due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the <code>'storage'</code> event).</li>
+<li><strong>NOTE:</strong> The hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to <code>localStorage</code> due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the <code>'storage'</code> event).</li>
 </ul>
 
 ```js
