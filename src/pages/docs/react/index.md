@@ -53,7 +53,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux:
 
-<iframe class="block-content" src="https://learning-redux42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"   player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="block-content" src="https://learning-redux42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

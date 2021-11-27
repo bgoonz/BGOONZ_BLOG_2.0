@@ -218,21 +218,18 @@ template: docs
 <br>
 <h1>   Family-Promise Application</h1>
 <br>
-<iframe  class="block-content" src="https://a.familypromiseservicetracker.dev/dashboard" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://a.familypromiseservicetracker.dev/dashboard" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
 <br>
+<hr>
 <br>
 <br>
 <br>
-<br>
+
 <h1>   Speach Recognition api </h1>
 <br>
-<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
 <br>
@@ -240,28 +237,20 @@ template: docs
 <br>
 <h1>   Paste To Markdown </h1>
 <br>
-<iframe  class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         
         
 <br>
 <br>
 <h1>   Paste Excel Tabel To Markdown </h1>
-<iframe  class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-
 <br>
-
 <br>
 <h1>Paste excel to HTML</h1>
 <br>
-<iframe  class="block-content" src="https://pedantic-wing-adbf82.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://pedantic-wing-adbf82.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
 <h1>  Cloud Storage </h1>
@@ -274,135 +263,93 @@ template: docs
 <br>
 <hr>
 <br>
-
-
+<br>
 <br>
 
-<br>
 <h1>     Resource Archive           </h1>
 <br>
 
-<iframe src="https://resourcerepo2.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br><br>
 <br>
-
-<br>
-
 <br>
 <h1>   Lambda Student Site </h1>
 <br>
 
-<iframe class="inner" src="https://lambda-resources.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="inner" src="https://lambda-resources.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br><br>
+<br><br>
+<br><br>
 <br>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
 
 <br>
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://devtools42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br>
 <br>
 
-<br>
 <h1> Ternary Converter   </h1>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://ternary42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br>
 <br>
 
-<br>
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br>
 <br>
 
-<br>
 <h1> Data Structures</h1>
 <br>
 
-<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br>
 <br>
 
-<br>
 <h1>  Interview     </h1>
 <br>
 
-<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br><br>
 <br>
-
-<br>
-
 <br>
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
@@ -411,34 +358,24 @@ template: docs
 <h1> Border Builder </h1>
 <br>
 
-<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <hr>
 <br>
-
-
+<br><br>
+<br>
+<br>
 <br>
 
-<br>
-
-<br>
-
-<br>
 <h1>                </h1>
 <br>
-<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://ds-algo-official.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         
         
 <br>
-
 <br>
-
 <br>
 <h1>                </h1>
 <br>
@@ -453,12 +390,10 @@ template: docs
 <br>
 <hr>
 <br>
-
-
 <br>
 <br>
 <br>
- <iframe height="300" style="width: 90%;" scrolling="no" title="Fibonacci Carousel"
+ <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fibonacci Carousel"
       src="https://codepen.io/bgoonz/embed/JjNagJo?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
       allowtransparency="true" allowfullscreen="true">
       See the Pen <a href="https://codepen.io/bgoonz/pen/JjNagJo">
@@ -468,7 +403,7 @@ template: docs
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no" title="embed-twitter-feed"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="embed-twitter-feed"
       src="https://codepen.io/bgoonz/embed/poPOqEO?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
       allowtransparency="true" allowfullscreen="true">
       See the Pen <a href="https://codepen.io/bgoonz/pen/poPOqEO">
@@ -478,28 +413,28 @@ template: docs
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       src="//jsfiddle.net/bgoonz/1dye9uws/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen"
       frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
+    <iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe> 
     <br>
     <br>

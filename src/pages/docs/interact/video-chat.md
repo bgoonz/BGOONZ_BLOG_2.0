@@ -37,8 +37,7 @@ template: docs
 
 <iframe class="block-content" width="100%  width="800" height="575"
         src="https://zumzi-chat-messenger.vercel.app/web/login.html"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Zumzi Live Demo
 

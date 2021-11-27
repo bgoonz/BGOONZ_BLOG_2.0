@@ -23,8 +23,8 @@ src="https://bgoonz.github.io/extracting-features-from-audio/"></iframe>
 src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
 <br>
 <br>
-
 <br>
+
 <hr>
 <br>
     <iframe
@@ -46,7 +46,7 @@ src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
     ></iframe>
 <br>
 <br>
-
 <br>
+
 <hr>
 <br>
