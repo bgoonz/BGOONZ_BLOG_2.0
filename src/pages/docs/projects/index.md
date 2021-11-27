@@ -19,10 +19,6 @@ seo:
           keyName: property
         - name: 'og:description'
           value: |+
-              introductory-react-part-2
-              a-very-quick-guide-to-calculating-big-o-computational-complexity
-              introduction-to-react css-animations
-
           keyName: property
         - name: 'twitter:card'
           value: summary
