@@ -18,6 +18,17 @@ template: docs
 <br>
 
 <br>
+<h1> PDF Tools   </h1>
+<br>
+
+<iframe src="https://pdf-tools-xi.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<br>
 <h1> Text Tools     </h1>
 <br>
 
@@ -28,7 +39,15 @@ template: docs
 <br>
 
 <br>
+<br>
+<h1> Number Base Converter </h1>
+<br>
+<iframe src="https://number-base-converter-react.vercel.app/" height="800px" width="600px!important" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
+<br>
 <br>
 <h1> Ternary Converter   </h1>
 <br>
