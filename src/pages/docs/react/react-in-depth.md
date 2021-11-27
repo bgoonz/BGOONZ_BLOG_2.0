@@ -7326,7 +7326,7 @@ Don't forget to update your `App` component to render the new component:
     export default App;
 
 Now run your application using `npm start`. Open your browser's developer tools and view the "Sources" for the current page. Expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and select the `main.chunk.js` file. Press `CMD+F` on macOS or `CTRL+F` on Windows to search the file for "Class Component". Here's what the transpiled code looks like for the `ClassComponent` class:
-
+```jsx
     class ClassComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       render() {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
