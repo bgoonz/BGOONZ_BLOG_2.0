@@ -1,5 +1,5 @@
 ---
-title: 'React Cheat Sheets:'
+title: AJAX and APIs
 weight: 0
 excerpt: cheat sheet
 seo:
