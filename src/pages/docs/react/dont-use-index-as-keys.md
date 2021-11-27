@@ -3,7 +3,7 @@ title: Index as a key is an anti-pattern
 weight: 0
 excerpt: So many times I have seen developers use the index of an item as its key when they render a list.
 seo:
-  title: ''
+  title: 'Lists and Keys'
   description: 'Let me explain, a _key_ is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the _key_ is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.'
   robots: []
   extra: []
