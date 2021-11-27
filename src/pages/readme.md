@@ -1656,7 +1656,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
 │   │   │   ├── ./pages/docs/articles/basic-web-dev.md
 
-│   │   │   ├── ./pages/docs/articles/gallery.md
+│   │   │   ├── ./pages/docs/articles/gists.md
 
 │   │   │   ├── ./pages/docs/articles/index.md
 
@@ -1686,7 +1686,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
 │   │   │   └── ./pages/docs/faq/index.md
 
-│   │   ├── ./pages/docs/gallery.md
+│   │   ├── ./pages/docs/gists.md
 
 │   │   ├── ./pages/docs/index.md
 

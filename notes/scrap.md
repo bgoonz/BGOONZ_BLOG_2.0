@@ -1,1 +1,26 @@
-memes: https://memes42069.netlify.app/blog/
+about 
+audio 
+community 
+docs 
+
+interact 
+job-search 
+other-content 
+projects 
+quick-reference 
+reference 
+sitemap.md 
+tools
+articles 
+career 
+content 
+faq 
+index.md 
+javascript 
+leetcode 
+privacy-policy.md 
+python 
+react 
+search.md 
+tips 
+tutorials
