@@ -1,23 +1,13 @@
 ---
-
 title: Tutorials
-
 weight: 0
-
-excerpt: 'Coding '
-
+excerpt: Walkthroughs of various development activities and skills
 seo:
-
   title: ''
-
   description: ''
-
   robots: []
-
   extra: []
-
 template: docs
-
 ---
 
 
