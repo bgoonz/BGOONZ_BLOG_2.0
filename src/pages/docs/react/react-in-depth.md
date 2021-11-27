@@ -7459,7 +7459,7 @@ Run your application again using `npm start`. Open your browser's developer tool
 If you expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and select the `main.chunk.js` file, you can see how the `App` component's JSX has been converted to JavaScript:
 
 Here's a closer look at the relevant `React.createElement` method call:
-
+```jsx
     /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __self: this,
         __source: {
@@ -7468,7 +7468,7 @@ Here's a closer look at the relevant `React.createElement` method call:
           columnNumber: 7
         }
       }, "Exploring React Builds")
-
+```
 Again, notice how the environment variable has been replaced with a text literal. This has important security implications for you to consider. Because environment variables are embedded into your HTML, CSS, and JavaScript bundles during the build process, it's _very important_ to not store any secrets, like API keys, in your environment variables. Remember, anyone can view your bundled code in the browser by inspecting your files!
 
 ### Phase 5: Deploying a production build
