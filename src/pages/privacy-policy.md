@@ -24,15 +24,15 @@ template: docs
 
 <!---->
 
--   "**Website**," we are referring to any website of ours that references or links to this policy
+- Important:  "**Website**," we are referring to any website of ours that references or links to this policy
 
 <!---->
 
--   "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
+-  Important: "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
 
 <!---->
 
--   "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
+-  Important: "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
 
 <!---->
 
