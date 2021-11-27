@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: 'Bash Proficiency '
 weight: 0
 excerpt: lorem-ipsum
 seo:
