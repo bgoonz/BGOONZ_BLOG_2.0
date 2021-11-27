@@ -425,7 +425,7 @@ template: docs
     <br>
     <br>
     <br>
-    <iframe height="1000px" style="width: 1400px;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="embed-twitter-feed"
+    <iframe height="1000px" style="width: 1400px;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="embed-twitter-feed"
       src="https://codepen.io/bgoonz/embed/poPOqEO?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
       allowtransparency="true" allowfullscreen="true">
       See the Pen <a href="https://codepen.io/bgoonz/pen/poPOqEO">
@@ -439,18 +439,18 @@ template: docs
     <br>
     <br>
     <br>
-    <iframe height="1000px" style="width: 1400px;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
+    <iframe height="1000px" style="width: 1400px;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="1000px" style="width: 1400px;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe height="1000px" style="width: 1400px;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       src="//jsfiddle.net/bgoonz/1dye9uws/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen"
       frameborder="0"></iframe>
     <br>
     <br>
     <br>
-    <iframe height="1000px" style="width: 1400px;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
+    <iframe height="1000px" style="width: 1400px;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
       allowfullscreen="allowfullscreen" frameborder="0"></iframe> 
     <br>
     <br>
