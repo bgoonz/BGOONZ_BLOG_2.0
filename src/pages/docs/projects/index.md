@@ -9,7 +9,6 @@ seo:
         introductory-react-part-2
         a-very-quick-guide-to-calculating-big-o-computational-complexity
         introduction-to-react css-animations
-
     extra:
         - name: 'og:type'
           value: website
