@@ -222,6 +222,7 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -231,6 +232,11 @@ template: docs
 <br>
 <iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 <br>
 <br>
 <br>
@@ -261,6 +267,7 @@ template: docs
 </iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -272,6 +279,7 @@ template: docs
 <iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br><br>
@@ -282,6 +290,7 @@ template: docs
 
 <iframe class="inner" src="https://lambda-resources.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <hr>
 <br>
@@ -298,6 +307,7 @@ template: docs
 <iframe src="https://devtools42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -307,6 +317,7 @@ template: docs
 <br>
 <iframe src="https://ternary42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <hr>
 <br>
@@ -319,6 +330,7 @@ template: docs
 <iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -330,6 +342,7 @@ template: docs
 <iframe src="https://determined-dijkstra-ee7390.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -340,6 +353,7 @@ template: docs
 
 <iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <hr>
 <br>
@@ -360,6 +374,7 @@ template: docs
 
 <iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <hr>
 <br>
@@ -387,6 +402,7 @@ template: docs
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+<br>
 <br>
 <hr>
 <br>

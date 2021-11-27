@@ -15,9 +15,15 @@ template: docs
 <br>
 <br>
 <br>
+<hr>
+<br>
+<br>
+<br>
+<br>
 <h1>  Potluck Planner </h1>
 <br>
 <iframe  class="block-content" src="https://potluck-landing.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 <br>
 <br>
 <br>
@@ -38,6 +44,7 @@ template: docs
 <iframe src="https://mihirbeg28.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -50,6 +57,7 @@ template: docs
 <iframe src="https://friendly-amaranth-51833.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<br>
 <hr>
 <br>
 <br><br>
@@ -61,6 +69,7 @@ template: docs
 
 <iframe src="https://bgoonzbookmarks.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <hr>
 <br>
