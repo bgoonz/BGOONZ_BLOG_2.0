@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''
-    description: 'We can start by differentiating the Internet and the World Wide Web. These are often confused because the Web is the main use that most people have for the Internet and a common web browser is called "Internet Explorer". However, we can properly distinguish between them. The Internet is a collection of inter-connected computers using the TCP/IP protocol to exchange information.'
+    description: ''
     robots: []
     extra: []
 template: docs
