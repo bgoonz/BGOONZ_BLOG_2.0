@@ -1,7 +1,7 @@
 ---
 title: How The Web Works
 weight: 0
-excerpt: lorem-ipsum
+excerpt: We can start by differentiating the Internet and the World Wide Web. These are often confused because the Web is the main use that most people have for the Internet and a common web browser is called "Internet Explorer". However, we can properly distinguish between them. The Internet is a collection of inter-connected computers using the TCP/IP protocol to exchange information. The World Wide Web is a particular use of the Internet to exchange HTML web pages (and other documents) using the Hypertext Transfer Protocol (HTTP).
 seo:
     title: ''
     description: 'Perhaps the first thing to establish in our discussion of the web is what exactly it is. This chapter will look in brief overview at the core technologies that go together to make the World Wide Web.'
