@@ -1,7 +1,7 @@
 ---
 title: Index as a key is an anti-pattern
 weight: 0
-excerpt: lorem-ipsum
+excerpt: So many times I have seen developers use the index of an item as its key when they render a list.
 seo:
   title: ''
   description: ''
