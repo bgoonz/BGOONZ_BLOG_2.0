@@ -266,7 +266,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <!-------------------------------------------------------------------------------------->
 <br><br>
 <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Dashed Border Generator"
-src="https://codepen.io/bgoonz/embed/wvdgypd?default-tab=html%2Cresult&theme-id=dark" frameborder="no"
+src="https://random-static-html-deploys.netlify.app/dashed-border-generator.html" frameborder="no"
 loading="lazy" allowtransparency="true" allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/wvdgypd">
   Dashed Border Generator</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)

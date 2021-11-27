@@ -13,17 +13,6 @@ template: docs
 
 <br>
 <br>
-<br>
-<br>
-<h1>   Algorithms </h1>
-<br>
-<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<br>
-<br>
-<br>
 <h1> Google Drive</h1>
 <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
 
@@ -40,6 +29,11 @@ template: docs
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
+
+<br>
+<h1>    Internet Archive        </h1>
+<br>
 <iframe src="https://archive.org/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
