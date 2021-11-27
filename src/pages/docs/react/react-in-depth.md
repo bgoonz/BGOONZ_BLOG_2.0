@@ -7347,7 +7347,7 @@ The JSX in the component's `render` method has been converted to JavaScript but 
 But what if you need to target a version of a browser that doesn't support ES2015 classes? You can use the <a href="https://caniuse.com/#feat=es6-class" class="markup--anchor markup--p-anchor">“Can I use…”</a> website to see when browsers started supporting ES2105 (or ES6) classes. Starting with version 49, Chrome natively supported classes. But imagine that you need to support Chrome going back to version 30, a version of Chrome that doesn't support classes.
 
 Change the `browserslist.development` property in the `package.json` file to this:
-
+```json
     {
       "browserslist": {
         "production": [
