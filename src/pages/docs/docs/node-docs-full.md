@@ -794,3 +794,8 @@ This might seem counter-intuitive, but since the introduction of Google Maps in 
 Our applications can now run for hours inside a browser, rather than being just a few form validation rules or simple scripts.
 
 In this _new world_, compiling JavaScript makes perfect sense because while it might take a little bit more to have the JavaScript _ready_, once done it's going to be much more performant than purely interpreted code.
+
+
+# Run Node.js scripts from the command line
+
+
