@@ -7302,6 +7302,7 @@ To experiment with this configuration option, let's add a class component to the
     export default ClassComponent;
 
 Don't forget to update your `App` component to render the new component:
+```jsx
 
     // ./src/App.js
 
