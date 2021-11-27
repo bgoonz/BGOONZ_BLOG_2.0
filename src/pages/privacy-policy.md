@@ -16,11 +16,11 @@ template: docs
 
 <!---->
 
--   Use our Facebook application — <https://bgoonz-blog.netlify.app/>
+-  Note:  Use our Facebook application — <https://bgoonz-blog.netlify.app/>
 
 <!---->
 
--   Engage with us in other related ways ― including any sales, marketing, or events
+-  Note:  Engage with us in other related ways ― including any sales, marketing, or events
 
 <!---->
 
