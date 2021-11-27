@@ -717,7 +717,7 @@ The following concepts are also key to understand asynchronous programming, whic
 -   Closures
 -   [The Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
 
-
+# Differences between Node.js and the Browser
 
 
 Both the browser and Node.js use JavaScript as their programming language.
