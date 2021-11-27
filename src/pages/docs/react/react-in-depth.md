@@ -7442,7 +7442,7 @@ Environment variables can also be referred to in regular JavaScript code:
     console.log(process.env.REACT_APP_TITLE);
 
 You can also reference environment variables in your `./public/index.html` file like this:
-
+```html
     <!DOCTYPE html>
     <html lang="en">
       <head>
