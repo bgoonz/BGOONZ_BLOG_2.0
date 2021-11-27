@@ -24,12 +24,12 @@ template: docs
 <br>
 <br>
 <details>
- <summary>Summary Goes Here</summary>
+ <summary>SEMVER CHECKER... WHY?</summary>
  ...this is hidden, collapsable content...
 </details>
 
-SEMVER CHECKER... WHY?
-----------------------
+
+
 
 > In the world of software management there exists a dread place called "dependency hell."
 >
