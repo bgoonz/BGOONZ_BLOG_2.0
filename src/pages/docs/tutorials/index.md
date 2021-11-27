@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 weight: 0
-excerpt: Wakthroughs of various development activities and skills
+excerpt: Walkthroughs of various development activities and skills
 seo:
   title: ''
   description: ''
