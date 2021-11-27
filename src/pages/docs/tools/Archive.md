@@ -18,6 +18,11 @@ template: docs
 <br>
 <br>
 <br>
+<hr>
+<br>
+<br>
+<br>
+<br>
 <h1>     Resource Archive           </h1>
 <br>
 <br>
@@ -26,6 +31,7 @@ template: docs
 
 <iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <br>
 <br>
@@ -39,6 +45,7 @@ template: docs
 <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
 
 
+<br>
 <br>
 <br>
 <br>
@@ -59,6 +66,11 @@ template: docs
 <br>
 <br>
 <br>
+<hr>
+<br>
+<br>
+<br>
+<br>
 <h1>   Lambda Student Site </h1>
 <br>
 <br>
@@ -71,7 +83,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -93,7 +107,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -103,6 +119,11 @@ template: docs
 <br>
 
 <br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 <br>
 <br>
 <br>
@@ -119,7 +140,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -146,6 +169,7 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -163,6 +187,7 @@ template: docs
 <br>
 <br>
 <iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 <br>
 <br>
 <br>
@@ -191,6 +216,7 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
 <br>
 <br>
@@ -208,6 +234,11 @@ template: docs
 <br>
 <br>
 <br>
+<hr>
+<br>
+<br>
+<br>
+<br>
 <h1> Text Tools     </h1>
 <br>
 <br>
@@ -220,7 +251,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -241,7 +274,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -263,7 +298,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -281,6 +318,7 @@ template: docs
 
 <iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 <br>
 <br>
 <br>
@@ -303,7 +341,9 @@ template: docs
 <br>
 <br>
 <br>
+<br>
 <hr>
+<br>
 <br>
 <br>
 <br>
@@ -320,6 +360,7 @@ template: docs
 
 ## Archives
 
+<br>
 <br>
 <br>
 <br>
