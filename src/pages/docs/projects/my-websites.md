@@ -134,6 +134,13 @@ weight: 1
 
  <br>
  <br>
+
+<h1> Wikipedia Viewer</h1>
+<br>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/wikipedia-viewer.html" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
  <br>
  <br>
 
@@ -574,5 +581,3 @@ weight: 1
  <br>
  <br>
  <br>
-
-
