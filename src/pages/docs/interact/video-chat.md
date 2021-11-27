@@ -1,7 +1,7 @@
 ---
 title: Zumzi Video Conferencing (Mesibo API Backend)
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Video chat front end app
 seo:
     title: 'Zumzi Video Conference:'
     description: |-
