@@ -86,12 +86,6 @@ What does this mean? It means that major releases may break backward compatibi
 
 
 
-Strict constraint (or fully qualified constraint) are those constraints matching only one version. In most case it is a bad idea to use them.
-
-Why? Because with them you are locking your dependency to a specific patch release which means you won't ever get bug fixes when updating your dependencies.
-
-Moreover, using strict constraint will make the work of some dependency managers harder: if you are depending on a package and have a dependency in common, if both of you require this common dependency strictly, your manager won't be able to choose an appropriate version, satisfying every constraint.
-
 
 <hr>
 <br>
