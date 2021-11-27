@@ -28,7 +28,7 @@ template: docs
 <br>
 <h1>  Alternate Blog</h1>
 <br>
-<iframe  class="block-content" src="  https://bgoonz-blog-v3-0.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="  https://bgoonz-blog-v3-0.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -40,7 +40,7 @@ template: docs
 <br>
 <h1>  Games </h1>
 <br>
-<iframe  class="block-content" src="  https://bgoonz-games.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="  https://bgoonz-games.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -49,11 +49,14 @@ template: docs
 <h1>  Projects         </h1>
 <br>
 
-<iframe src=" https://project-portfolio42.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src=" https://project-portfolio42.netlify.app/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -63,11 +66,14 @@ template: docs
 <h1>   Wordpress Site </h1>
 <br>
 
-<iframe class="inner" src="  https://web-dev-hub.com/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe class="inner" src="  https://web-dev-hub.com/  " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 
@@ -77,11 +83,14 @@ template: docs
 <h1>  Interview     </h1>
 <br>
 
-<iframe  src="   " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  src="   " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 <br>
 <br>
@@ -89,7 +98,7 @@ template: docs
 <br>
 <h1>   Speach Recognition api </h1>
 <br>
-<iframe  class="   " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="   " height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -99,7 +108,7 @@ template: docs
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
-<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -107,7 +116,7 @@ template: docs
 <br>
 <br>
 
-<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>

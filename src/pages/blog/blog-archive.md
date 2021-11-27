@@ -17,6 +17,6 @@ thumb_image: images/3.jpg
 ## Blog Archive
 
  <iframe   width="400" height="575"
-            src="https://bgoonz.blogspot.com/" title="YouTube video
+            src="https://bgoonz.blogspot.com/"  
             player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

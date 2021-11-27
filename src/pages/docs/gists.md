@@ -15,11 +15,14 @@ template: docs
 
 <h2>Gist Archive</h2>
 
-<iframe src="https://bgoonzgist.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
+<iframe src="https://bgoonzgist.netlify.app/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 ---
 
