@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''
-    description: ''
+    description: 'Perhaps the first thing to establish in our discussion of the web is what exactly it is. This chapter will look in brief overview at the core technologies that go together to make the World Wide Web.'
     robots: []
     extra: []
 template: docs
