@@ -7286,6 +7286,7 @@ Earlier you learned about the `browerslist` setting in the `package.json` file a
 The `production` list specifies the browsers to target when creating a production build and the `development` list specifics the browsers to target when running the application using `npm start`. Currently, you're targeting relatively recent versions of the major browsers when creating a development build. Targeting older browser versions results in your code being transpiled to an older version of JavaScript.
 
 To experiment with this configuration option, let's add a class component to the project. Add a new folder named `class-component` to the `src` folder. Within that folder, add a file named `ClassComponent.js` containing the following code:
+```jsx
 
     // ./src/class-component/ClassComponent.js
 
@@ -7300,7 +7301,7 @@ To experiment with this configuration option, let's add a class component to the
     }
 
     export default ClassComponent;
-
+```
 Don't forget to update your `App` component to render the new component:
 ```jsx
 
