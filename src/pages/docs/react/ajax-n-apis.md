@@ -1,9 +1,9 @@
 ---
 title: AJAX and APIs
 weight: 0
-excerpt: cheat sheet
+excerpt: AJAX and APIs
 seo:
-    title: ''
+    title: 'AJAX and APIs'
     description: ''
     robots: []
     extra: []
