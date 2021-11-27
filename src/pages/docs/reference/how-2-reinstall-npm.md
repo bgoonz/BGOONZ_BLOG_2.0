@@ -44,13 +44,13 @@ You can use any of the following methods:
 
 -   Reinstalling using a Node installer
 
-Let’s talk about each of them.
+Let's talk about each of them.
 
 ### a) Reinstalling using a Node version manager
 
 A Node version manager is a tool you can use to install various versions of Node.js and npm and shift between them seamlessly.
 
-A popular Node version management tool you can use is [nvm-windows](https://github.com/coreybutler/nvm-windows/). It’s a powerful command line utility that allows you to manage multiple installations of Node.js comfortably.
+A popular Node version management tool you can use is [nvm-windows](https://github.com/coreybutler/nvm-windows/). It's a powerful command line utility that allows you to manage multiple installations of Node.js comfortably.
 
 Before installing the utility, it is recommended to remove all the existing versions of Node.js and npm from your Windows computer. This will prevent any conflict issues when installing the software.
 
@@ -66,7 +66,7 @@ Then, once your system is clean, go to [this page](https://github.com/coreybutle
 
 If you want to reinstall a specific Node.js version, you can run the following command:
 
-Let’s say you want to reinstall Node.js version 12.18.0, you can run:
+Let's say you want to reinstall Node.js version 12.18.0, you can run:
 
 If you want to reinstall the latest stable Node.js version, you can run:
 
@@ -90,7 +90,7 @@ Ultimately, the installer will automatically overwrite your existing, malfunctio
 
 ## How to reinstall npm and Node.js on macOS
 
-Before reinstalling Node.js and npm on your macOS system, you’ll need to remove any previously installed versions.
+Before reinstalling Node.js and npm on your macOS system, you'll need to remove any previously installed versions.
 
 Here are some ways you can use to uninstall them:
 
@@ -108,7 +108,7 @@ Then, once your system is clean, you can use any of the following methods to rei
 
 -   Reinstalling using a Node version manager
 
-Let’s talk about each of them.
+Let's talk about each of them.
 
 ### a) Reinstalling using a Node installer
 
@@ -122,11 +122,11 @@ To reinstall using Homebrew, just run the following command on the macOS termina
 
 ### c) Reinstalling using a Node version manager
 
-You can also reinstall the two tools using the [nvm](https://github.com/nvm-sh/nvm) Node version manager. Since the process for using nvm is the same for both macOS and Linux, we’ll describe how to use it in the next section.
+You can also reinstall the two tools using the [nvm](https://github.com/nvm-sh/nvm) Node version manager. Since the process for using nvm is the same for both macOS and Linux, we'll describe how to use it in the next section.
 
 ## How to reinstall npm and Node.js on Linux
 
-Just like in the previous cases, you’ll need to remove any installed version of Node.js and npm before reinstalling them on a Linux distribution, such as Ubuntu.
+Just like in the previous cases, you'll need to remove any installed version of Node.js and npm before reinstalling them on a Linux distribution, such as Ubuntu.
 
 Here are some ways you can use to uninstall them:
 
@@ -136,7 +136,7 @@ The above command will delete the distro-stable version while retaining the conf
 
 Finally, you can delete any unused packages that were installed automatically with the deleted package:
 
--   Using nvm—you can also use the nvm Node version manager to uninstall Node.js from your system. We’ll illustrate how to do this in the next section.
+-   Using nvm—you can also use the nvm Node version manager to uninstall Node.js from your system. We'll illustrate how to do this in the next section.
 
 Then, once your machine is clean, you can use any of the following methods to reinstall Node.js and npm on Linux:
 
@@ -144,7 +144,7 @@ Then, once your machine is clean, you can use any of the following methods to re
 
 -   Reinstalling using the apt package manager
 
-Let’s talk about each of them.
+Let's talk about each of them.
 
 ### a) Reinstalling using a Node version manager
 
@@ -174,11 +174,11 @@ Once reinstallation is complete, you can set that Node.js version for use as the
 
 Furthermore, you can check the list of Node.js versions available for download by executing the following:
 
-To remove a Node.js version that you’ve set up using nvm, start by establishing if the version is currently active on your system:
+To remove a Node.js version that you've set up using nvm, start by establishing if the version is currently active on your system:
 
 If it is not actively running, execute the following to uninstall it:
 
-On the other hand, if the version targeted for removal is the current active version, you’ll need to deactivate nvm first:
+On the other hand, if the version targeted for removal is the current active version, you'll need to deactivate nvm first:
 
 Then, you can use the above uninstall command to remove it from your system.
 
@@ -194,9 +194,9 @@ In most cases, this is all you need to get up and running with Node.js. Also, yo
 
 ## Conclusion
 
-That’s how to reinstall npm and Node.js on Windows, macOS, and Linux.
+That's how to reinstall npm and Node.js on Windows, macOS, and Linux.
 
-After completing the reinstallation, you’ll avoid any performance issues that often arise from using malfunctioned versions of the technologies.
+After completing the reinstallation, you'll avoid any performance issues that often arise from using malfunctioned versions of the technologies.
 
 \---
 
@@ -210,9 +210,9 @@ Typically, LTS is recommended for most users because it is a stable version that
 
 In this article, you will learn how to quickly and easily update Node.js on different operating systems—macOS, Linux, and Windows.
 
-As we’ll demonstrate, there are many ways of updating to the next version of Node.js. So, you can choose the option that best meets your system requirements and preferences.
+As we'll demonstrate, there are many ways of updating to the next version of Node.js. So, you can choose the option that best meets your system requirements and preferences.
 
-These are the updating options we’ll talk about:
+These are the updating options we'll talk about:
 
 -   Updating using a Node version manager on macOS or Linux
 
@@ -230,7 +230,7 @@ Before getting started, you can check the version of Node.js currently deployed 
 
 or (shortened method):
 
-Let’s now talk about the different ways on how to update Node.js.
+Let's now talk about the different ways on how to update Node.js.
 
 ## 1. Updating using a Node version manager on macOS or Linux
 
@@ -242,7 +242,7 @@ On macOS or Linux, you can use either of the following Node version managers:
 
 -   n
 
-Let’s talk about each of them.
+Let's talk about each of them.
 
 a) nvm
 
@@ -252,13 +252,13 @@ For Wget, run the following command on the terminal:
 
 For cURL, run the following:
 
-The above commands assume that you’re installing nvm version 0.35.3. So, you’ll need to check [the latest version](https://github.com/nvm-sh/nvm/releases) before installing it on your machine.
+The above commands assume that you're installing nvm version 0.35.3. So, you'll need to check [the latest version](https://github.com/nvm-sh/nvm/releases) before installing it on your machine.
 
 With these commands, you can clone the repository to ~/.nvm. This way, you can make changes to your bash profile, allowing you to access nvm system-wide.
 
 To confirm if the installation was successful, you can run the following command:
 
-If everything went well, it’d output nvm.
+If everything went well, it'd output nvm.
 
 Next, you can simply download and update to the latest Node.js version by running the following:
 
@@ -282,7 +282,7 @@ b) n
 
 [n](https://www.npmjs.com/package/n) is another useful Node version manager you can use for updating Node.js on macOS and Linux.
 
-Since it’s an [npm-based package](https://renovate.whitesourcesoftware.com/blog/updating-npm-packages/), if you already have Node.js available on your environment, you can simply install it by running this command:
+Since it's an [npm-based package](https://renovate.whitesourcesoftware.com/blog/updating-npm-packages/), if you already have Node.js available on your environment, you can simply install it by running this command:
 
 Then, to download and update to your desired Node.js version, execute the following:
 
@@ -304,17 +304,17 @@ On Windows, you can use the following Node version manager:
 
 -   nvm-windows
 
-Let’s talk about it.
+Let's talk about it.
 
 **a) nvm-windows**
 
-[nvm-windows](https://github.com/coreybutler/nvm-windows/) is a Node version management tool for the Windows operating system. While it’s not the same as nvm, both tools share several usage similarities for Node.js version management.
+[nvm-windows](https://github.com/coreybutler/nvm-windows/) is a Node version management tool for the Windows operating system. While it's not the same as nvm, both tools share several usage similarities for Node.js version management.
 
-Before installing nvm-windows, it’s recommended to uninstall any available Node.js versions from your machine. This will avoid potential conflict issues during installation.
+Before installing nvm-windows, it's recommended to uninstall any available Node.js versions from your machine. This will avoid potential conflict issues during installation.
 
 Next, you can download and run the latest [nvm-setup.zip](https://github.com/coreybutler/nvm-windows/releases) installer.
 
-Also, since the utility runs in an Admin shell, you’ll need to begin the Command Prompt or Powershell as an Administrator before using it.
+Also, since the utility runs in an Admin shell, you'll need to begin the Command Prompt or Powershell as an Administrator before using it.
 
 If you want to install and upgrade to a specific version, you can run the following:
 
@@ -334,7 +334,7 @@ Also, you can see the list of versions available for download by running this co
 
 ## 3. Updating using a Node installer on Linux
 
-Using a Node installer is the least recommended way of upgrading Node.js on Linux. Nonetheless, if it’s the only route you can use, then follow the following steps:
+Using a Node installer is the least recommended way of upgrading Node.js on Linux. Nonetheless, if it's the only route you can use, then follow the following steps:
 
 -   Go to the official [Node.js downloads site](https://nodejs.org/en/download/), which has different Linux binary packages, and select your preferred built-in installer or source code. You can choose either the LTS releases or the latest current releases.
 
@@ -356,7 +356,7 @@ This utility will be used for unpacking the binary package.
 
 ## 4. Updating using a Node installer on macOS and Windows
 
-Another way of updating your Node.js on macOS and Windows is to go to the official [download site](https://nodejs.org/en/download/) and install the most recent version. This way, it’ll overwrite your existing old version with the latest one.
+Another way of updating your Node.js on macOS and Windows is to go to the official [download site](https://nodejs.org/en/download/) and install the most recent version. This way, it'll overwrite your existing old version with the latest one.
 
 You can follow the following steps to update it using this method:
 
@@ -374,6 +374,6 @@ You can follow the following steps to update it using this method:
 
 To use it for installing Node.js, run the following command on your macOS terminal:
 
-Later, if you’d like to update it, run the following commands:
+Later, if you'd like to update it, run the following commands:
 
 Furthermore, you can switch between installed Node.js versions:

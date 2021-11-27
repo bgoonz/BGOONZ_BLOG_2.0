@@ -601,8 +601,8 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p0g)
 
-No JS = no full stack job. You’re gonna use Python for front end? Don’t think so. JS is required like it or not. You can’t have a roadmap of skills that leaves out the only native language to the front end. No front end frameworks and no big backend languages like Java and C#.  
-To each their own. But if you have all the skills listed you’ll never get a full stack job without JavaScript + react and C# / Java.
+No JS = no full stack job. You're gonna use Python for front end? Don't think so. JS is required like it or not. You can't have a roadmap of skills that leaves out the only native language to the front end. No front end frameworks and no big backend languages like Java and C#.  
+To each their own. But if you have all the skills listed you'll never get a full stack job without JavaScript + react and C# / Java.
 
 [![alamba78 profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--VjYdv6Ht--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/146470/8b758268-4a58-448c-a807-f973b3db009d.png)](https://dev.to/alamba78)
 
@@ -690,7 +690,7 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p5a)
 
-Nope, no argument here. Just options. Thanks for the clarification. It’s a great roadmap
+Nope, no argument here. Just options. Thanks for the clarification. It's a great roadmap
 
 [![savagepixie profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--2jZ_IQs8--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/200345/2e5002ed-8500-43ee-acad-5e687bbe7f48.png)](https://dev.to/savagepixie)
 
@@ -746,11 +746,11 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720e)
 
-I agree. In some ways it’s a good first language: no install needed, visual feedback, tons of resources etc. but in others it isn’t: dynamically typed, quirks, prototypal, weird type system etc.
+I agree. In some ways it's a good first language: no install needed, visual feedback, tons of resources etc. but in others it isn't: dynamically typed, quirks, prototypal, weird type system etc.
 
-One definitely needs statically typed OOP languages like C# or Java to get the fundamentals down. Too many wannabes hate on statically typed languages because they’re “hard”.
+One definitely needs statically typed OOP languages like C# or Java to get the fundamentals down. Too many wannabes hate on statically typed languages because they're “hard”.
 
-Either way, if one’s gonna be a full stack Dev then they have to learn JS, or you’re by definition not full-stack which is my argument on the whole roadmap.
+Either way, if one's gonna be a full stack Dev then they have to learn JS, or you're by definition not full-stack which is my argument on the whole roadmap.
 
 Collapse Expand
 
@@ -1334,7 +1334,7 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofe)
 
-I have 8 years industry experience and I haven’t finished this list. One just has to be capable of learning to survive in the field.
+I have 8 years industry experience and I haven't finished this list. One just has to be capable of learning to survive in the field.
 
 Collapse Expand
 
@@ -1868,7 +1868,7 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720n)
 
-Nope. Pick C# or Java. That’s what companies use. Ignore Go and Rust; no jobs for them. Spring Boot for Java or .NET core MVC and you’re set.
+Nope. Pick C# or Java. That's what companies use. Ignore Go and Rust; no jobs for them. Spring Boot for Java or .NET core MVC and you're set.
 
 Collapse Expand
 
@@ -1966,7 +1966,7 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1722a)
 
-Cool! I’d love to do Go professionally.
+Cool! I'd love to do Go professionally.
 
 [![fluxthedev profile image](https://res.cloudinary.com/practicaldev/image/fetch/s--dPmT3j9a--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/377899/c62b46e6-d3ad-4741-a4a1-29ee3443b9f3.jpeg)](https://dev.to/fluxthedev)
 

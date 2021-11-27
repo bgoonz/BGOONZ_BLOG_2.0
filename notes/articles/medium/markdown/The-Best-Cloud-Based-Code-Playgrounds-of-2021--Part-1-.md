@@ -34,13 +34,13 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 
 ### 1.) REPL.IT
 
-### My personal favorite for it’s simplicity, versatility and capabilities.
+### My personal favorite for it's simplicity, versatility and capabilities.
 
 ### ⚫No downloads, no configs, no setups
 
 In your browser. Repl.it runs fully in your browser, so you can get started coding in seconds. No more ZIPs, PKGs, DMGs and WTFs.
 
-> Any OS, any device**_(I’m looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
+> Any OS, any device**_(I'm looking at you chromebook coders)_**. You can use Repl.it on macOS, Windows, Linux, or any other OS .
 
 ### ⚫Clone, commit and push to any GitHub repo.
 
@@ -58,7 +58,7 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 #### In the example below I have 72 solved Javascript Leetcode Problems but REPL.IT can handle almost any language you can think of.
 
-### Here’s another one that contains the Repl.it Docs:
+### Here's another one that contains the Repl.it Docs:
 
 ---
 
@@ -78,7 +78,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 ### ⚫Saving and Forking code
 
--   <span id="f034">**Save** / **Update** will do what you think, it’ll save a new fiddle or update an existing one (and add a version number to it)</span>
+-   <span id="f034">**Save** / **Update** will do what you think, it'll save a new fiddle or update an existing one (and add a version number to it)</span>
 -   <span id="f634">**Fork** will split out an existing fiddle into a new one, starting with version 0</span>
 
 ---
@@ -96,19 +96,19 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*-6LsqMPgWtP9NSBl.png" class="graf-image" /></figure>**Dank, relevant meme (pictured Left)**
 
-**This is the crux of what prevents NPM from working natively in-browser. Resolving, downloading, and extracting the hundreds of megabytes (or gigabytes) typical frontend projects contain in their** `node_modules` **folder is a challenge browsers just aren’t well suited for. Additionally, this is also why existing server side solutions to this problem have proven to be** <a href="https://github.com/unpkg/unpkg/issues/35#issuecomment-317128917" class="markup--anchor markup--p-anchor"><strong>slow, unreliable</strong></a>
+**This is the crux of what prevents NPM from working natively in-browser. Resolving, downloading, and extracting the hundreds of megabytes (or gigabytes) typical frontend projects contain in their** `node_modules` **folder is a challenge browsers just aren't well suited for. Additionally, this is also why existing server side solutions to this problem have proven to be** <a href="https://github.com/unpkg/unpkg/issues/35#issuecomment-317128917" class="markup--anchor markup--p-anchor"><strong>slow, unreliable</strong></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*sl4vb3fP9-MErkioiCOyKQ.png" class="graf-image" /></figure>### Then just paste the embed code in an iframe and you’re good to go!
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*sl4vb3fP9-MErkioiCOyKQ.png" class="graf-image" /></figure>### Then just paste the embed code in an iframe and you're good to go!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png" class="graf-image" /></figure><a href="https://stackblitz.com/" class="markup--anchor markup--blockquote-anchor"><strong><em>On StackBlitz.com</em></strong></a>**, you can create new projects and get the embed code from the 'Share’ dropdown link in the top navigation like so:**
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*PjhrjtInF1dPudtO.png" class="graf-image" /></figure><a href="https://stackblitz.com/" class="markup--anchor markup--blockquote-anchor"><strong><em>On StackBlitz.com</em></strong></a>**, you can create new projects and get the embed code from the 'Share' dropdown link in the top navigation like so:**
 
 ### Embed Options
 
 > **_&lt;iframe src=”https://stackblitz.com/edit/angular?embed=1"&gt;&lt;/iframe&gt;_**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*6QF4ywBOMVFtS_MukRkLKw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*5ekSGpNwJ28hI9Aog8V4DQ.png" class="graf-image" /></figure>🡩 **Alternatively, you can also use StackBlitz’s** <a href="https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects" class="markup--anchor markup--blockquote-anchor"><strong>Javascript SDK methods</strong></a> **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*6QF4ywBOMVFtS_MukRkLKw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*5ekSGpNwJ28hI9Aog8V4DQ.png" class="graf-image" /></figure>🡩 **Alternatively, you can also use StackBlitz's** <a href="https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects" class="markup--anchor markup--blockquote-anchor"><strong>Javascript SDK methods</strong></a> **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
 
-<span class="graf-dropCap">H</span>**ere’s a sample project of mine, it’s a medium clone… _(So Metta)_… feel free to write a post… or don’t …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
+<span class="graf-dropCap">H</span>**ere's a sample project of mine, it's a medium clone… _(So Metta)_… feel free to write a post… or don't …but either way … as you can see… Stack Blitz enables you to write serious web applications in a fraction of the time it would take with a conventional setup.**
 
 ---
 
@@ -151,15 +151,15 @@ An existing project will be identified by Glitch as a **static** site if it does
 -   <span id="5dd4"><a href="https://glitch.com/@glitch/building-blocks" class="markup--anchor markup--li-anchor">Building Blocks</a></span>
 -   <span id="0c79"><a href="https://glitch.com/@glitch/learn-to-code" class="markup--anchor markup--li-anchor">Learn to Code</a></span>
 
-### Here’s a (temporarily) broken version of my personal portfolio .. hosted on glitch
+### Here's a (temporarily) broken version of my personal portfolio .. hosted on glitch
 
-#### Click 'view app’ below to see how it renders
+#### Click 'view app' below to see how it renders
 
 ---
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

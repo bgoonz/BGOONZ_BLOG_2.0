@@ -140,7 +140,7 @@
                             </p>
                             <h3 name="85e8" id="85e8" class="graf graf--h3 graf-after--p">Adjacency list</h3>
                             <p name="40aa" id="40aa" class="graf graf--p graf-after--h3">
-                                A list where the index represents the node and the value at that index is a list of the node’s neighbors:
+                                A list where the index represents the node and the value at that index is a list of the node's neighbors:
                             </p>
                             <p name="5502" id="5502" class="graf graf--p graf-after--p">graph = [ [1], [0, 2, 3], [1, 3], [1, 2], ]</p>
                             <p name="a689" id="a689" class="graf graf--p graf-after--p">
@@ -160,7 +160,7 @@
                             </p>
                             <p name="06d9" id="06d9" class="graf graf--p graf-after--p">graph = { 0: [1], 1: [0, 2, 3], 2: [1, 3], 3: [1, 2], }</p>
                             <p name="4516" id="4516" class="graf graf--p graf-after--p">
-                                This would be useful if the nodes were represented by strings, objects, or otherwise didn’t map cleanly to list indices.
+                                This would be useful if the nodes were represented by strings, objects, or otherwise didn't map cleanly to list indices.
                             </p>
                             <h3 name="a185" id="a185" class="graf graf--h3 graf-after--p">Adjacency matrix</h3>
                             <p name="6064" id="6064" class="graf graf--p graf-after--h3">
@@ -184,21 +184,21 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="f2d2" id="f2d2" class="graf graf--h3 graf--leading">Arrays</h3>
                             <p name="6dcc" id="6dcc" class="graf graf--p graf-after--h3">
-                                Ok, so we know how to store individual numbers. Let’s talk about storing
+                                Ok, so we know how to store individual numbers. Let's talk about storing
                                 <em class="markup--em markup--p-em">several numbers</em>.
                             </p>
                             <p name="3c2a" id="3c2a" class="graf graf--p graf-after--p">
-                                That’s right, things are starting to <em class="markup--em markup--p-em">heat up</em>.
+                                That's right, things are starting to <em class="markup--em markup--p-em">heat up</em>.
                             </p>
                             <p name="be71" id="be71" class="graf graf--p graf-after--p">
                                 Suppose we wanted to keep a count of how many bottles of kombucha we drink every day.
                             </p>
                             <p name="313f" id="313f" class="graf graf--p graf-after--p">
-                                Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to
+                                Let's store each day's kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we're not likely to
                                 get through more than 256 (2⁸) bottles in a <em class="markup--em markup--p-em">single day</em>, right?
                             </p>
                             <p name="3368" id="3368" class="graf graf--p graf-after--p">
-                                And let’s store the kombucha counts right next to each other in RAM, starting at memory address 0:
+                                And let's store the kombucha counts right next to each other in RAM, starting at memory address 0:
                             </p>
                             <figure name="317c" id="317c" class="graf graf--figure graf-after--p">
                                 <img
@@ -211,16 +211,16 @@
                                 />
                             </figure>
                             <p name="2272" id="2272" class="graf graf--p graf-after--figure">
-                                Bam. That’s an <strong class="markup--strong markup--p-strong">array</strong>. RAM is
+                                Bam. That's an <strong class="markup--strong markup--p-strong">array</strong>. RAM is
                                 <em class="markup--em markup--p-em">basically</em> an array already.
                             </p>
                             <p name="8e25" id="8e25" class="graf graf--p graf-after--p">
                                 Just like with RAM, the elements of an array are numbered. We call that number the
                                 <strong class="markup--strong markup--p-strong">index</strong> of the array element (plural: indices). In
-                                <em class="markup--em markup--p-em">this</em> example, each array element’s index is the same as its address in RAM.
+                                <em class="markup--em markup--p-em">this</em> example, each array element's index is the same as its address in RAM.
                             </p>
                             <p name="8132" id="8132" class="graf graf--p graf-after--p">
-                                But that’s not usually true. Suppose another program like Spotify had already stored some information at memory address 2:
+                                But that's not usually true. Suppose another program like Spotify had already stored some information at memory address 2:
                             </p>
                             <figure name="1c22" id="1c22" class="graf graf--figure graf-after--p">
                                 <img
@@ -232,7 +232,7 @@
                                 />
                             </figure>
                             <p name="913f" id="913f" class="graf graf--p graf-after--figure">
-                                We’d have to start our array below it, for example at memory address 3. So index 0 in our array would be at memory address 3,
+                                We'd have to start our array below it, for example at memory address 3. So index 0 in our array would be at memory address 3,
                                 and index 1 would be at memory address 4, etc.:
                             </p>
                             <figure name="0dd6" id="0dd6" class="graf graf--figure graf-after--p">
@@ -249,7 +249,7 @@
                                 <em class="markup--em markup--p-em">address in memory</em> to go to? Simple math:
                             </p>
                             <p name="bf37" id="bf37" class="graf graf--p graf-after--p">
-                                Take the array’s starting address (3), add the index we’re looking for (4), and that’s the address of the item we’re looking
+                                Take the array's starting address (3), add the index we're looking for (4), and that's the address of the item we're looking
                                 for. 3 + 4 = 7. In general, for getting the nth item in our array:
                             </p>
                             <p name="3bef" id="3bef" class="graf graf--p graf-after--p">
@@ -260,7 +260,7 @@
                                 <em class="markup--em markup--p-em">both</em> 1 byte. So a slot in our array corresponds to a slot in RAM.
                             </p>
                             <p name="517f" id="517f" class="graf graf--p graf-after--p">
-                                But that’s not always the case. In fact, it’s <em class="markup--em markup--p-em">usually not</em> the case. We
+                                But that's not always the case. In fact, it's <em class="markup--em markup--p-em">usually not</em> the case. We
                                 <em class="markup--em markup--p-em">usually</em> use <em class="markup--em markup--p-em">64-bit</em> integers.
                             </p>
                             <p name="74de" id="74de" class="graf graf--p graf-after--p">
@@ -286,8 +286,8 @@
                                 \text{address of nth item in array} = \text{address of array start} + (n * \text{size of each item in bytes})
                             </p>
                             <p name="cc03" id="cc03" class="graf graf--p graf-after--p">
-                                Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and
-                                division of fixed-width integers takes time. So <em class="markup--em markup--p-em">all</em> the math we’re using here to get
+                                Don't worry — adding this multiplication doesn't really slow us down. Remember: addition, subtraction, multiplication, and
+                                division of fixed-width integers takes time. So <em class="markup--em markup--p-em">all</em> the math we're using here to get
                                 the address of the nth item in the array takes time.
                             </p>
                             <p name="9e44" id="9e44" class="graf graf--p graf-after--p">
@@ -325,7 +325,7 @@
                                 <li name="cae3" id="cae3" class="graf graf--li graf-after--p">
                                     <strong class="markup--strong markup--li-strong"
                                         >The array is <em class="markup--em markup--li-em">uninterrupted</em> (contiguous) in memory</strong
-                                    >. There can’t
+                                    >. There can't
                                 </li>
                             </ol>
                             <p name="8ff5" id="8ff5" class="graf graf--p graf-after--li">
@@ -338,12 +338,12 @@
                             </p>
                             <p name="ae20" id="ae20" class="graf graf--p graf-after--p">
                                 But they also constrain what kinds of things we can put in an array. Every item has to be the same size. And if our array is
-                                going to store a <em class="markup--em markup--p-em">lot</em> of stuff, we’ll need a
+                                going to store a <em class="markup--em markup--p-em">lot</em> of stuff, we'll need a
                                 <em class="markup--em markup--p-em">bunch</em> of uninterrupted free space in RAM. Which gets hard when most of our RAM is
                                 already occupied by other programs (like Spotify).
                             </p>
                             <p name="878f" id="878f" class="graf graf--p graf-after--p graf--trailing">
-                                That’s the tradeoff. Arrays have fast lookups ( time), but each item in the array needs to be the same size, and you need a big
+                                That's the tradeoff. Arrays have fast lookups ( time), but each item in the array needs to be the same size, and you need a big
                                 block of uninterrupted free memory to store the array.
                             </p>
                         </div>
@@ -357,10 +357,10 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <p name="0b34" id="0b34" class="graf graf--p graf--leading">## Pointers</p>
                             <p name="4d4f" id="4d4f" class="graf graf--p graf-after--p">
-                                Remember how we said every item in an array had to be the same size? Let’s dig into that a little more.
+                                Remember how we said every item in an array had to be the same size? Let's dig into that a little more.
                             </p>
                             <p name="378c" id="378c" class="graf graf--p graf-after--p">
-                                Suppose we wanted to store a bunch of ideas for baby names. Because we’ve got some
+                                Suppose we wanted to store a bunch of ideas for baby names. Because we've got some
                                 <em class="markup--em markup--p-em">really</em> cute ones.
                             </p>
                             <p name="991f" id="991f" class="graf graf--p graf-after--p">
@@ -368,7 +368,7 @@
                                 <em class="markup--em markup--p-em">those arrays</em> in an array. <em class="markup--em markup--p-em">Whoa</em>.
                             </p>
                             <p name="4bc8" id="4bc8" class="graf graf--p graf-after--p">
-                                Now, what if our baby names have different lengths? That’d violate our rule that all the items in an array need to be the same
+                                Now, what if our baby names have different lengths? That'd violate our rule that all the items in an array need to be the same
                                 size!
                             </p>
                             <p name="e6f7" id="e6f7" class="graf graf--p graf-after--p">
@@ -389,11 +389,11 @@
                             </p>
                             <p name="bf17" id="bf17" class="graf graf--p graf-after--p">
                                 But look at all that wasted space after “Bill”. And what if we wanted to store a string that was
-                                <em class="markup--em markup--p-em">more</em> than 13 characters? We’d be out of luck.
+                                <em class="markup--em markup--p-em">more</em> than 13 characters? We'd be out of luck.
                             </p>
                             <p name="cb5f" id="cb5f" class="graf graf--p graf-after--p">
-                                There’s a better way. Instead of storing the strings right inside our array, let’s just put the strings wherever we can fit them
-                                in memory. Then we’ll have each element in our array hold the <em class="markup--em markup--p-em">address in memory</em> of its
+                                There's a better way. Instead of storing the strings right inside our array, let's just put the strings wherever we can fit them
+                                in memory. Then we'll have each element in our array hold the <em class="markup--em markup--p-em">address in memory</em> of its
                                 corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of
                                 these integers a <strong class="markup--strong markup--p-strong">pointer</strong>, since it points to another spot in memory.
                             </p>
@@ -412,17 +412,17 @@
                             </p>
                             <ol class="postList">
                                 <li name="0cd5" id="0cd5" class="graf graf--li graf-after--p">
-                                    The items don’t have to be the same length — each string can be as
+                                    The items don't have to be the same length — each string can be as
                                 </li>
                             </ol>
                             <p name="aff1" id="aff1" class="graf graf--p graf-after--li">long or as short as we want.</p>
                             <ol class="postList">
                                 <li name="8ecd" id="8ecd" class="graf graf--li graf-after--p">
-                                    We don’t need enough uninterrupted free memory to store all our
+                                    We don't need enough uninterrupted free memory to store all our
                                 </li>
                             </ol>
                             <p name="fef4" id="fef4" class="graf graf--p graf-after--li">
-                                strings next to each other — we can place each of them separately, wherever there’s space in RAM.
+                                strings next to each other — we can place each of them separately, wherever there's space in RAM.
                             </p>
                             <p name="41b9" id="41b9" class="graf graf--p graf-after--p">We fixed it! No more tradeoffs. Right?</p>
                             <p name="3699" id="3699" class="graf graf--p graf-after--p">
@@ -449,16 +449,16 @@
                             <p name="119d" id="119d" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
                                     >But the pointers in this array make it <em class="markup--em markup--p-em">not</em> cache-friendly</strong
-                                >, because the baby names are scattered randomly around RAM. So reading from the 0th index, then the 1st index, etc. doesn’t get
+                                >, because the baby names are scattered randomly around RAM. So reading from the 0th index, then the 1st index, etc. doesn't get
                                 that extra speedup from the cache.
                             </p>
                             <p name="0a4e" id="0a4e" class="graf graf--p graf-after--p">
-                                That’s the tradeoff. This pointer-based array requires less uninterrupted memory and can accommodate elements that aren’t all
-                                the same size, <em class="markup--em markup--p-em">but</em> it’s <em class="markup--em markup--p-em">slower</em> because it’s
+                                That's the tradeoff. This pointer-based array requires less uninterrupted memory and can accommodate elements that aren't all
+                                the same size, <em class="markup--em markup--p-em">but</em> it's <em class="markup--em markup--p-em">slower</em> because it's
                                 not cache-friendly.
                             </p>
                             <p name="b04d" id="b04d" class="graf graf--p graf-after--p graf--trailing">
-                                This slowdown isn’t reflected in the big O time cost. Lookups in this pointer-based array are
+                                This slowdown isn't reflected in the big O time cost. Lookups in this pointer-based array are
                                 <em class="markup--em markup--p-em">still</em> time.
                             </p>
                         </div>
@@ -476,11 +476,11 @@
                                 <em class="markup--em markup--p-em">main thing</em> you do with a word processor.
                             </p>
                             <p name="d4b2" id="d4b2" class="graf graf--p graf-after--p">
-                                Can we build a data structure that can store a string, has fast appends, <em class="markup--em markup--p-em">and</em> doesn’t
+                                Can we build a data structure that can store a string, has fast appends, <em class="markup--em markup--p-em">and</em> doesn't
                                 require you to say how long the string will be ahead of time?
                             </p>
                             <p name="f6c3" id="f6c3" class="graf graf--p graf-after--p">
-                                Let’s focus first on not having to know the length of our string ahead of time. Remember how we used
+                                Let's focus first on not having to know the length of our string ahead of time. Remember how we used
                                 <em class="markup--em markup--p-em">pointers</em> to get around length issues with our array of baby names?
                             </p>
                             <p name="976a" id="976a" class="graf graf--p graf-after--p">What if we pushed that idea even further?</p>
@@ -501,10 +501,10 @@
                                 />
                             </figure>
                             <p name="834e" id="834e" class="graf graf--p graf-after--figure">
-                                We would call each of these two-item arrays a <strong class="markup--strong markup--p-strong">node</strong> and we’d call this
+                                We would call each of these two-item arrays a <strong class="markup--strong markup--p-strong">node</strong> and we'd call this
                                 series of nodes a <strong class="markup--strong markup--p-strong">linked list</strong>.
                             </p>
-                            <p name="2b53" id="2b53" class="graf graf--p graf-after--p">Here’s how we’d actually implement it in memory:</p>
+                            <p name="2b53" id="2b53" class="graf graf--p graf-after--p">Here's how we'd actually implement it in memory:</p>
                             <figure name="5154" id="5154" class="graf graf--figure graf-after--p">
                                 <img
                                     class="graf-image"
@@ -515,8 +515,8 @@
                                 />
                             </figure>
                             <p name="2b7d" id="2b7d" class="graf graf--p graf-after--figure">
-                                Notice how we’re free to store our nodes wherever we can find two open slots in memory. They don’t have to be next to each
-                                other. They don’t even have to be <em class="markup--em markup--p-em">in order</em>:
+                                Notice how we're free to store our nodes wherever we can find two open slots in memory. They don't have to be next to each
+                                other. They don't even have to be <em class="markup--em markup--p-em">in order</em>:
                             </p>
                             <figure name="1f7a" id="1f7a" class="graf graf--figure graf-after--p">
                                 <img
@@ -528,7 +528,7 @@
                                 />
                             </figure>
                             <p name="dd49" id="dd49" class="graf graf--p graf--startsWithDoubleQuote graf-after--figure">
-                                “But that’s not cache-friendly, “ you may be thinking. Good point! We’ll get to that.
+                                “But that's not cache-friendly, “ you may be thinking. Good point! We'll get to that.
                             </p>
                             <p name="1698" id="1698" class="graf graf--p graf-after--p">
                                 The first node of a linked list is called the <strong class="markup--strong markup--p-strong">head</strong>, and the last node
@@ -536,15 +536,15 @@
                             </p>
                             <p name="6827" id="6827" class="graf graf--p graf-after--p">
                                 Confusingly, some people prefer to use “tail” to refer to <em class="markup--em markup--p-em">everything after the head</em> of
-                                a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.
+                                a linked list. In an interview it's fine to use either definition. Briefly say which definition you're using, just to be clear.
                             </p>
                             <p name="2684" id="2684" class="graf graf--p graf-after--p">
-                                It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to
+                                It's important to have a pointer variable referencing the head of the list — otherwise we'd be unable to find our way back to
                                 the start of the list!
                             </p>
                             <p name="4f0d" id="4f0d" class="graf graf--p graf-after--p">
-                                We’ll also sometimes keep a pointer to the tail. That comes in handy when we want to add something new to the end of the linked
-                                list. In fact, let’s try that out:
+                                We'll also sometimes keep a pointer to the tail. That comes in handy when we want to add something new to the end of the linked
+                                list. In fact, let's try that out:
                             </p>
                             <p name="e23e" id="e23e" class="graf graf--p graf-after--p">Suppose we had the string “LOG” stored in a linked list:</p>
                             <figure name="14bd" id="14bd" class="graf graf--figure graf-after--p">
@@ -583,7 +583,7 @@
                                 />
                             </figure>
                             <p name="3817" id="3817" class="graf graf--p graf-after--figure">
-                                ​2. Point the last letter’s next to the letter we’re appending (“S”).
+                                ​2. Point the last letter's next to the letter we're appending (“S”).
                             </p>
                             <figure name="8f2e" id="8f2e" class="graf graf--figure graf-after--p">
                                 <img
@@ -606,9 +606,9 @@
                                     src="https://cdn-images-1.medium.com/max/800/0*Gbf918HOvlJhMHEf"
                                 />
                             </figure>
-                            <p name="6c85" id="6c85" class="graf graf--p graf-after--figure">That’s time.</p>
+                            <p name="6c85" id="6c85" class="graf graf--p graf-after--figure">That's time.</p>
                             <p name="c35a" id="c35a" class="graf graf--p graf-after--p">
-                                Why is it time? Because the runtime doesn’t get bigger if the string gets bigger. No matter how many characters are in our
+                                Why is it time? Because the runtime doesn't get bigger if the string gets bigger. No matter how many characters are in our
                                 string, we still just have to tweak a couple pointers for any append.
                             </p>
                             <p name="633b" id="633b" class="graf graf--p graf-after--p">
@@ -637,10 +637,10 @@
                                 <em class="markup--em markup--p-em">average case</em> runtime for appends to linked lists and dynamic arrays is the same: .
                             </p>
                             <p name="5083" id="5083" class="graf graf--p graf-after--p">
-                                Now, what if we wanted to *pre*pend something to our string? Let’s say we wanted to put a “B” at the beginning.
+                                Now, what if we wanted to *pre*pend something to our string? Let's say we wanted to put a “B” at the beginning.
                             </p>
                             <p name="1869" id="1869" class="graf graf--p graf-after--p">
-                                For our linked list, it’s just as easy as appending. Create the node:
+                                For our linked list, it's just as easy as appending. Create the node:
                             </p>
                             <figure name="5ff5" id="5ff5" class="graf graf--figure graf-after--p">
                                 <img
@@ -653,7 +653,7 @@
                             </figure>
                             <p name="b599" id="b599" class="graf graf--p graf-after--figure">And tweak some pointers:</p>
                             <ol class="postList">
-                                <li name="cf06" id="cf06" class="graf graf--li graf-after--p">Point “B”’s next to “L”. 2. Point the head to “B”.</li>
+                                <li name="cf06" id="cf06" class="graf graf--li graf-after--p">Point “B”'s next to “L”. 2. Point the head to “B”.</li>
                             </ol>
                             <figure name="6c7b" id="6c7b" class="graf graf--figure graf-after--li">
                                 <img
@@ -741,10 +741,10 @@
                                     src="https://cdn-images-1.medium.com/max/800/0*Xxkr4sYP9-drZeEe"
                                 />
                             </figure>
-                            <p name="b30c" id="b30c" class="graf graf--p graf-after--figure">What’s our time cost here?</p>
+                            <p name="b30c" id="b30c" class="graf graf--p graf-after--figure">What's our time cost here?</p>
                             <p name="e445" id="e445" class="graf graf--p graf-after--p">
-                                It’s all in the step where we made room for the first letter. We had to move
-                                <em class="markup--em markup--p-em">all n</em> characters in our string. One at a time. That’s time.
+                                It's all in the step where we made room for the first letter. We had to move
+                                <em class="markup--em markup--p-em">all n</em> characters in our string. One at a time. That's time.
                             </p>
                             <p name="7505" id="7505" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
@@ -757,7 +757,7 @@
                             </p>
                             <p name="5a59" id="5a59" class="graf graf--p graf-after--p">
                                 These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They
-                                don’t have to sit right next to each other the way items in an array do.
+                                don't have to sit right next to each other the way items in an array do.
                             </p>
                             <p name="5070" id="5070" class="graf graf--p graf-after--p">
                                 So if linked lists are so great, why do we usually store strings in an array?
@@ -778,12 +778,12 @@
                                 to walk through the linked list node by node, counting as we go, until we hit the ith item.
                             </p>
                             <p name="9f5e" id="9f5e" class="graf graf--p graf-after--p">
-                                def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current_node = head
+                                def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can't be negative: %d” % i) current_node = head
                                 current_position = 0 while current_node: if current_position == i: # Found it! return current_node # Move on to the next node
-                                current_node = current_node.next current_position += 1 raise ValueError('List has fewer than i + 1 (%d) nodes’ % (i + 1))
+                                current_node = current_node.next current_position += 1 raise ValueError('List has fewer than i + 1 (%d) nodes' % (i + 1))
                             </p>
                             <p name="7618" id="7618" class="graf graf--p graf-after--p">
-                                That’s i + 1 steps down our linked list to get to the ith node (we made our function zero-based to match indices in arrays).
+                                That's i + 1 steps down our linked list to get to the ith node (we made our function zero-based to match indices in arrays).
                                 <strong class="markup--strong markup--p-strong">So linked lists have -time lookups.</strong> Much slower than the -time lookups
                                 for arrays and dynamic arrays.
                             </p>
@@ -791,7 +791,7 @@
                                 Not only that — <strong class="markup--strong markup--p-strong"
                                     >walking down a linked list is <em class="markup--em markup--p-em">not</em> cache-friendly.</strong
                                 >
-                                Because the next node could be <em class="markup--em markup--p-em">anywhere</em> in memory, we don’t get any benefit from the
+                                Because the next node could be <em class="markup--em markup--p-em">anywhere</em> in memory, we don't get any benefit from the
                                 processor cache. This means lookups in a linked list are even slower.
                             </p>
                             <p name="ec74" id="ec74" class="graf graf--p graf-after--p graf--trailing">
@@ -855,7 +855,7 @@
                             </p>
                             <p name="d783" id="d783" class="graf graf--p graf-after--p graf--trailing">
                                 So iterating through a linked list is usually quite a bit slower than iterating through the items in an array, even though
-                                they’re both theoretically time.
+                                they're both theoretically time.
                             </p>
                         </div>
                     </div>
@@ -883,8 +883,8 @@
                                 >. How would we store those counts?
                             </p>
                             <p name="cdd8" id="cdd8" class="graf graf--p graf-after--p">
-                                We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII (a common character encoding) 'A’ is
-                                65, 'B’ is 66, etc.
+                                We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII (a common character encoding) 'A' is
+                                65, 'B' is 66, etc.
                             </p>
                             <p name="3b03" id="3b03" class="graf graf--p graf-after--p">
                                 So we can use the character('s number value) as the <em class="markup--em markup--p-em">index</em> in our array, and store the
@@ -905,15 +905,15 @@
                                 array in constant time.
                             </p>
                             <p name="80d8" id="80d8" class="graf graf--p graf-after--p">
-                                Something interesting is happening here — this array isn’t just a list of values. This array is storing
+                                Something interesting is happening here — this array isn't just a list of values. This array is storing
                                 <em class="markup--em markup--p-em">two</em> things: characters and counts. The characters are
                                 <em class="markup--em markup--p-em">implied</em> by the indices.
                             </p>
                             <p name="b0d8" id="b0d8" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
                                     >So we can think of an array as a <em class="markup--em markup--p-em">table</em> with
-                                    <em class="markup--em markup--p-em">two columns</em>…except you don’t really get to pick the values in one column (the
-                                    indices) — they’re always 0, 1, 2, 3, etc.</strong
+                                    <em class="markup--em markup--p-em">two columns</em>…except you don't really get to pick the values in one column (the
+                                    indices) — they're always 0, 1, 2, 3, etc.</strong
                                 >
                             </p>
                             <p name="2696" id="2696" class="graf graf--p graf-after--p">
@@ -924,7 +924,7 @@
                                 Can we adapt our array?
                             </p>
                             <p name="6387" id="6387" class="graf graf--p graf-after--p">
-                                Translating a <em class="markup--em markup--p-em">character</em> into an array index was easy. But we’ll have to do something
+                                Translating a <em class="markup--em markup--p-em">character</em> into an array index was easy. But we'll have to do something
                                 more clever to translate a <em class="markup--em markup--p-em">word</em> (a string) into an array index…
                             </p>
                             <figure name="534a" id="534a" class="graf graf--figure graf-after--p">
@@ -936,7 +936,7 @@
                                     src="https://cdn-images-1.medium.com/max/800/0*YuLIJSmkIcaveoBk"
                                 />
                             </figure>
-                            <p name="5406" id="5406" class="graf graf--p graf-after--figure">Here’s one way we could do it:</p>
+                            <p name="5406" id="5406" class="graf graf--p graf-after--figure">Here's one way we could do it:</p>
                             <p name="03b2" id="03b2" class="graf graf--p graf-after--p">Grab the number value for each character and add those up.</p>
                             <figure name="dbfa" id="dbfa" class="graf graf--figure graf-after--p">
                                 <img
@@ -948,12 +948,12 @@
                                 />
                             </figure>
                             <p name="ab43" id="ab43" class="graf graf--p graf-after--figure">
-                                The result is 429. But what if we only have <em class="markup--em markup--p-em">30</em> slots in our array? We’ll use a common
+                                The result is 429. But what if we only have <em class="markup--em markup--p-em">30</em> slots in our array? We'll use a common
                                 trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number
-                                that’s less than 30 (and at least 0):
+                                that's less than 30 (and at least 0):
                             </p>
                             <p name="f03b" id="f03b" class="graf graf--p graf-after--p">429 \: \% \: 30 = 9</p>
-                            <p name="3b91" id="3b91" class="graf graf--p graf-after--p">Bam. That’ll get us from a word (or any string) to an array index.</p>
+                            <p name="3b91" id="3b91" class="graf graf--p graf-after--p">Bam. That'll get us from a word (or any string) to an array index.</p>
                             <p name="92f7" id="92f7" class="graf graf--p graf-after--p">
                                 This data structure is called a <strong class="markup--strong markup--p-strong">hash table</strong> or
                                 <strong class="markup--strong markup--p-strong">hash map</strong>. In our hash table, the
@@ -1006,7 +1006,7 @@
                                 />
                             </figure>
                             <p name="5628" id="5628" class="graf graf--p graf-after--figure">
-                                They both sum up to 429! So of course they’ll have the same answer when we mod by 30:
+                                They both sum up to 429! So of course they'll have the same answer when we mod by 30:
                             </p>
                             <p name="7a93" id="7a93" class="graf graf--p graf-after--p">429 \: \% \: 30 = 9</p>
                             <p name="0191" id="0191" class="graf graf--p graf-after--p">
@@ -1015,7 +1015,7 @@
                                 them.
                             </p>
                             <p name="9543" id="9543" class="graf graf--p graf-after--p">
-                                Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a
+                                Here's a common one: instead of storing the actual values in our array, let's have each array slot hold a
                                 <em class="markup--em markup--p-em">pointer</em> to a <em class="markup--em markup--p-em">linked list</em> holding the counts
                                 for all the words that hash to that index:
                             </p>
@@ -1029,7 +1029,7 @@
                                 />
                             </figure>
                             <p name="1e89" id="1e89" class="graf graf--p graf-after--figure">
-                                One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the
+                                One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we'll store the
                                 <em class="markup--em markup--p-em">word</em> as well as the count in each linked list node:
                             </p>
                             <figure name="5eb7" id="5eb7" class="graf graf--figure graf-after--p">
@@ -1043,7 +1043,7 @@
                             </figure>
                             <p name="7ba2" id="7ba2" class="graf graf--p graf--startsWithDoubleQuote graf-after--figure">
                                 “But wait!” you may be thinking, “Now lookups in our hash table take time in the worst case, since we have to walk down a linked
-                                list.” That’s true! You could even say that in the worst case <em class="markup--em markup--p-em">every</em> key creates a hash
+                                list.” That's true! You could even say that in the worst case <em class="markup--em markup--p-em">every</em> key creates a hash
                                 collision, so our whole hash table <em class="markup--em markup--p-em">degrades to a linked list</em>.
                             </p>
                             <p name="efe9" id="efe9" class="graf graf--p graf-after--p">
@@ -1055,7 +1055,7 @@
                                 short.
                             </p>
                             <p name="2766" id="2766" class="graf graf--p graf-after--p">
-                                But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except
+                                But that's sort of the tradeoff with hash tables. You get fast lookups by key…except
                                 <em class="markup--em markup--p-em">some</em> lookups could be slow. And of course, you only get those fast lookups in one
                                 direction — looking up the <em class="markup--em markup--p-em">key</em> for a given
                                 <em class="markup--em markup--p-em">value</em> still takes time
@@ -1069,7 +1069,7 @@
                                 Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore “ripple out” from the starting
                                 point.
                             </p>
-                            <p name="2886" id="2886" class="graf graf--p graf-after--p">Here’s a how a BFS would traverse this tree, starting with the root:</p>
+                            <p name="2886" id="2886" class="graf graf--p graf-after--p">Here's a how a BFS would traverse this tree, starting with the root:</p>
                             <figure name="e051" id="e051" class="graf graf--figure graf-after--p">
                                 <img
                                     class="graf-image"
@@ -1080,7 +1080,7 @@
                                 />
                             </figure>
                             <p name="5915" id="5915" class="graf graf--p graf-after--figure">
-                                We’d visit all the immediate children (all the nodes that’re one step away from our starting node):
+                                We'd visit all the immediate children (all the nodes that're one step away from our starting node):
                             </p>
                             <figure name="cc08" id="cc08" class="graf graf--figure graf-after--p">
                                 <img
@@ -1092,7 +1092,7 @@
                                 />
                             </figure>
                             <p name="3520" id="3520" class="graf graf--p graf-after--figure">
-                                Then we’d move on to all <em class="markup--em markup--p-em">those</em> nodes’ children (all the nodes that’re
+                                Then we'd move on to all <em class="markup--em markup--p-em">those</em> nodes' children (all the nodes that're
                                 <em class="markup--em markup--p-em">two steps</em> away from our starting node):
                             </p>
                             <figure name="0c37" id="0c37" class="graf graf--figure graf-after--p">
@@ -1167,7 +1167,7 @@
                                 That particular example is special because every level of the tree is completely full. There are no “gaps.” We call this kind of
                                 tree “<strong class="markup--strong markup--p-strong">perfect</strong>.”
                             </p>
-                            <p name="a365" id="a365" class="graf graf--p graf-after--p">Binary trees have a few interesting properties when they’re perfect:</p>
+                            <p name="a365" id="a365" class="graf graf--p graf-after--p">Binary trees have a few interesting properties when they're perfect:</p>
                             <p name="40ce" id="40ce" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong"
                                     >Property 1: the number of total nodes on each “level” doubles as we move down the tree.</strong
@@ -1190,7 +1190,7 @@
                                 In other words, about <em class="markup--em markup--p-em">half</em> of our nodes are on the last level.
                             </p>
                             <p name="553a" id="553a" class="graf graf--p graf-after--p">
-                                &lt;==(<em class="markup--em markup--p-em">*Let’s call the number of nodes n, *</em>)==&gt;
+                                &lt;==(<em class="markup--em markup--p-em">*Let's call the number of nodes n, *</em>)==&gt;
                             </p>
                             <p name="4170" id="4170" class="graf graf--p graf-after--p">
                                 &lt;==(<strong class="markup--strong markup--p-strong">_</strong>and the height of the tree h.
@@ -1200,7 +1200,7 @@
                                 <strong class="markup--strong markup--p-strong">h can also be thought of as the “number of levels.”</strong>
                             </p>
                             <p name="39db" id="39db" class="graf graf--p graf-after--p">If we had h, how could we calculate n?</p>
-                            <p name="0f9d" id="0f9d" class="graf graf--p graf-after--p">Let’s just add up the number of nodes on each level!</p>
+                            <p name="0f9d" id="0f9d" class="graf graf--p graf-after--p">Let's just add up the number of nodes on each level!</p>
                             <p name="bde4" id="bde4" class="graf graf--p graf-after--p">
                                 If we zero-index the levels, the number of nodes on the xth level is exactly 2^x.
                             </p>
@@ -1245,9 +1245,9 @@
                                     >n = 2^{h-1} * 2–1<br />n = 2^{h-1} * 2¹ — 1<br />n = 2^{h-1+1}- 1<br />n = 2^{h} — 1</strong
                                 >
                             </p>
-                            <p name="34c1" id="34c1" class="graf graf--p graf-after--p">So that’s how we can go from h to n. What about the other direction?</p>
+                            <p name="34c1" id="34c1" class="graf graf--p graf-after--p">So that's how we can go from h to n. What about the other direction?</p>
                             <p name="d30f" id="d30f" class="graf graf--p graf-after--p">We need to bring the h down from the exponent.</p>
-                            <p name="ad2b" id="ad2b" class="graf graf--p graf-after--p">That’s what logs are for!</p>
+                            <p name="ad2b" id="ad2b" class="graf graf--p graf-after--p">That's what logs are for!</p>
                             <p name="1137" id="1137" class="graf graf--p graf-after--p">First, some quick review.</p>
                             <p name="4206" id="4206" class="graf graf--p graf-after--p">&lt;==(log_{10} (100) )==&gt;</p>
                             <p name="f011" id="f011" class="graf graf--p graf-after--p">simply means,</p>
@@ -1261,7 +1261,7 @@
                             <p name="e821" id="e821" class="graf graf--p graf-after--h3">Graph =====</p>
                             <h3 name="9153" id="9153" class="graf graf--h3 graf-after--p">Binary numbers</h3>
                             <p name="7d12" id="7d12" class="graf graf--p graf-after--h3">
-                                Let’s put those bits to use. Let’s store some stuff. Starting with numbers.
+                                Let's put those bits to use. Let's store some stuff. Starting with numbers.
                             </p>
                             <p name="a42f" id="a42f" class="graf graf--p graf-after--p">
                                 The number system we usually use (the one you probably learned in elementary school) is called
@@ -1269,7 +1269,7 @@
                                 <em class="markup--em markup--p-em">ten</em> possible values (1, 2, 3, 4, 5, 6, 7, 8, 9, and 0).
                             </p>
                             <p name="0d34" id="0d34" class="graf graf--p graf-after--p">
-                                But computers don’t have digits with ten possible values. They have <em class="markup--em markup--p-em">bits</em> with
+                                But computers don't have digits with ten possible values. They have <em class="markup--em markup--p-em">bits</em> with
                                 <em class="markup--em markup--p-em">two</em> possible values. So they use
                                 <strong class="markup--strong markup--p-strong">base 2</strong> numbers.
                             </p>
@@ -1278,7 +1278,7 @@
                                 <strong class="markup--strong markup--p-strong">binary</strong>.
                             </p>
                             <p name="4062" id="4062" class="graf graf--p graf-after--p">
-                                To understand binary, let’s take a closer look at how decimal numbers work. Take the number “101” in decimal:
+                                To understand binary, let's take a closer look at how decimal numbers work. Take the number “101” in decimal:
                             </p>
                             <figure name="bd29" id="bd29" class="graf graf--figure graf-after--p">
                                 <img
@@ -1290,9 +1290,9 @@
                                 />
                             </figure>
                             <p name="405d" id="405d" class="graf graf--p graf-after--figure">
-                                Notice we have two “1”s here, but they don’t <em class="markup--em markup--p-em">mean</em> the same thing. The leftmost “1”
+                                Notice we have two “1”s here, but they don't <em class="markup--em markup--p-em">mean</em> the same thing. The leftmost “1”
                                 <em class="markup--em markup--p-em">means</em> 100, and the rightmost “1” <em class="markup--em markup--p-em">means</em> 1.
-                                That’s because the leftmost “1” is in the hundreds place, while the rightmost “1” is in the ones place. And the “0” between them
+                                That's because the leftmost “1” is in the hundreds place, while the rightmost “1” is in the ones place. And the “0” between them
                                 is in the tens place.
                             </p>
                             <figure name="b866" id="b866" class="graf graf--figure graf-after--p">
@@ -1335,7 +1335,7 @@
                                 <li name="1ddc" id="1ddc" class="graf graf--li graf-after--p">2⁰=1 * 2¹=2 * 2²=4 * 2³=8 * etc.</li>
                             </ul>
                             <p name="31ae" id="31ae" class="graf graf--p graf-after--li">
-                                So let’s take that same “101” but this time let’s read it as a <em class="markup--em markup--p-em">binary</em> number:
+                                So let's take that same “101” but this time let's read it as a <em class="markup--em markup--p-em">binary</em> number:
                             </p>
                             <figure name="2ef7" id="2ef7" class="graf graf--figure graf-after--p">
                                 <img

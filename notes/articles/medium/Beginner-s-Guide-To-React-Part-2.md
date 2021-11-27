@@ -1,10 +1,10 @@
-# Beginner’s Guide To React Part 2
+# Beginner's Guide To React Part 2
 
 As I learn to build web applications in React I will blog about it in this series in an attempt to capture the questions that a complete…
 
 ---
 
-### Beginner’s Guide To React Part 2
+### Beginner's Guide To React Part 2
 
 As I learn to build web applications in React I will blog about it in this series in an attempt to capture the questions that a complete beginner might encounter that a more seasoned developer would take for granted!
 
@@ -30,13 +30,13 @@ As I learn to build web applications in React I will blog about it in this serie
 -   <span id="203a">ex5 — A Class Component that Iterates through State</span>
 -   <span id="8087">ex6 — An Example of Parent and Child Components</span>
 
-With regards to converting an existing HTML, CSS, and JS site into React, first you’ll want to think about how to break up your site into components,
+With regards to converting an existing HTML, CSS, and JS site into React, first you'll want to think about how to break up your site into components,
 
 -   <span id="694c">as well as think about what the general hierarchical component structure of your site will look like.</span>
--   <span id="fdf0">From there, it’s a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**</span>
+-   <span id="fdf0">From there, it's a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**</span>
 -   <span id="ec78">_Any methods that are needed for that component to function properly can added onto your new component._</span>
 
-Once you’ve refactored your HTML components into React components, you’ll want to lay them out in the desired hierarchical structure
+Once you've refactored your HTML components into React components, you'll want to lay them out in the desired hierarchical structure
 
 -   <span id="227c">with children components being rendered by their parents, as well as ensuring that the parent components are passing down the necessary data as props to their children components.</span>
 
@@ -55,7 +55,7 @@ Is equivalent to:
 
 <span class="graf-dropCap">A</span> component is some thing that is being rendered in the browser. It could be a button, a form with a bunch of fields in it…etc.…
 
-React doesn’t place any restrictions on how large or small a component can be.
+React doesn't place any restrictions on how large or small a component can be.
 
 You _could_ have an entire static site encapsulated in a single React component, but that would defeat the purpose of using React.
 
@@ -70,7 +70,7 @@ Inside of `BasicComponent.js` , first import React at the top of the file. Our m
 > _The last line simply exports our component so that it can be imported  
 > by another file._
 
-Notice that this component looks exactly like an anonymous arrow function that we’ve named `BasicComponent` .
+Notice that this component looks exactly like an anonymous arrow function that we've named `BasicComponent` .
 
 In fact, that is literally what this is.
 
@@ -84,13 +84,13 @@ _Functional components are great when all you want a component to do is to rende
 
 _Components can also be written as classes (although this paradigm is becoming outdated and you should strive to write your components functionally!_
 
-For this exercise, we’re going to write a class component that does exactly the same thing as the functional component we just wrote.
+For this exercise, we're going to write a class component that does exactly the same thing as the functional component we just wrote.
 
-We’ll again need to import React at the top of the file, but we’ll also need to add a little something. Our import statement will look like this:
+We'll again need to import React at the top of the file, but we'll also need to add a little something. Our import statement will look like this:
 
     import React, { Component } from 'react';
 
-**So, in addition to importing React, we’re also importing the base Component class that is included in the React library.**
+**So, in addition to importing React, we're also importing the base Component class that is included in the React library.**
 
 #### React lets you define components as classes or functions.
 
@@ -116,7 +116,7 @@ When called, it should examine `this.props` and `this.state` and return one of t
 -   <span id="83d1">**String and numbers.** These are rendered as text nodes in the DOM.</span>
 -   <span id="5c6a">**Booleans or** `null`. Render nothing. (Mostly exists to support `return test && <Child />` pattern, where `test` is boolean.)</span>
 
-The `render()` function should be pure, meaning that it does not modify component state, it returns the same result each time it’s invoked, and it does not directly interact with the browser.
+The `render()` function should be pure, meaning that it does not modify component state, it returns the same result each time it's invoked, and it does not directly interact with the browser.
 
 If you need to interact with the browser, perform your work in `componentDidMount()` or the other lifecycle methods instead. Keeping `render()` pure makes components easier to think about.
 
@@ -134,33 +134,33 @@ _That being said, there's nothing in this minimal component that takes advantage
 
 If we really were deciding between whether to use a functional component versus a class component to render a simple div tag, then the functional style is more appropriate to use.
 
-This is because class components are much better suited for handling component state and triggering events based on the component’s <a href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" class="markup--anchor markup--p-anchor">lifecycle.</a>
+This is because class components are much better suited for handling component state and triggering events based on the component's <a href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" class="markup--anchor markup--p-anchor">lifecycle.</a>
 
-#### The important takeaways at this point are that there are two types of components, functional and class components, and that functional components are well-suited if you’re just looking to render some HTML.
+#### The important takeaways at this point are that there are two types of components, functional and class components, and that functional components are well-suited if you're just looking to render some HTML.
 
-_Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component’s lifecycle._
+_Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component's lifecycle._
 
 ### A Class Component with Some State
 
 **Component state is any dynamic data that we want the component to keep track of.**
 
-> For example, let’s say we have a form component. This form has some input fields that we’d like users to fill out. When a user types characters into an input field, how is that input persisted from the point of view of our form component?
+> For example, let's say we have a form component. This form has some input fields that we'd like users to fill out. When a user types characters into an input field, how is that input persisted from the point of view of our form component?
 
 **The answer is by using component state!**
 
 There are a few important concepts regarding component state, such as how to update it, pass it to another component, render it, etc.
 
-**Only class components have the ability to persist state, so if at any time you realize that a component needs to keep track of some state, you know that you’ll automatically need a class component instead of a functional component.**
+**Only class components have the ability to persist state, so if at any time you realize that a component needs to keep track of some state, you know that you'll automatically need a class component instead of a functional component.**
 
 > It is possible to handle state with functional components but that requires the use of something called the <a href="https://reactjs.org/docs/hooks-state.html" class="markup--anchor markup--blockquote-anchor">useState() hook</a>. Hooks were added in React 16.8; prior to this release, there was no mechanism to add state to functional components.
 
-Here’s what the above component looks like as a functional component:
+Here's what the above component looks like as a functional component:
 
 Our class component with state will look a lot like the basic class component we just wrote, but with some exceptions:
 
 **So far, the only new thing going on here is the constructor block. If you recall how classes in JavaScript work, classes need constructors.**
 
-**Additionally, if a class is extending off of another class and wants access to its parent class’s methods and properties, then the** `super` **function needs to be called inside the class's constructor function.**
+**Additionally, if a class is extending off of another class and wants access to its parent class's methods and properties, then the** `super` **function needs to be called inside the class's constructor function.**
 
 #### Point being, the constructor function and the call to the `super` function are _not_ associated with React, they are associated with all JavaScript classes.
 
@@ -177,23 +177,23 @@ That is because we had no need for them since all our class component was doing 
 
 **The call to** `super` **is needed because we can't reference** `this` **inside of our constructor without a call to** `super` **first.**
 
-Ok, now let’s actually use this state object.
+Ok, now let's actually use this state object.
 
-_One very common application of state objects in React components is to render the data being stored inside them within our component’s render function._
+_One very common application of state objects in React components is to render the data being stored inside them within our component's render function._
 
 #### Refactoring our component class to do that:
 
 We added a key-value pair to our state object inside our constructor.
 
 -   <span id="83e8">Then we changed the contents of the render function.</span>
--   <span id="6780">Now, it’s actually rendering the data that we have inside the state object.</span>
--   <span id="eb34">Notice that inside the div tags we’re using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.</span>
+-   <span id="6780">Now, it's actually rendering the data that we have inside the state object.</span>
+-   <span id="eb34">Notice that inside the div tags we're using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.</span>
 
 **With Reacts newest version, we can actually now add state to a component without explicitly defining a constructor on the class. We can refactor our class component to look like this:**
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*6sYhFUNpUkt6xN9kkn4pJQ.png" class="graf-image" /></figure>
 
-This new syntax is what is often referred to as 'syntactic sugar’: under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
+This new syntax is what is often referred to as 'syntactic sugar': under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
 
 The clue to this is the fact that when we want to access some data from the state object, we still need to call it with `this.state.someData` ; changing it to just `state.someData` does not work.
 
@@ -203,11 +203,11 @@ Great, so we can render some state that our component persists for us.
 
 However, we said an important use case of component state is to handle _dynamic_ data.
 
-A single static number isn’t very dynamic at all.
+A single static number isn't very dynamic at all.
 
-So now let’s walk through how to update component state.
+So now let's walk through how to update component state.
 
-Notice that we’ve added two methods to our class: `increment` and `decrement` .
+Notice that we've added two methods to our class: `increment` and `decrement` .
 
 `increment` and `decrement` are methods that _we_ are adding to our class component.
 
@@ -233,23 +233,23 @@ In our `increment` method we said "I would like to update the `aNumber` property
 
 The same thing happens in our `decrement` method, only we're subtracting instead of adding.
 
-Then the other new concept we’re running into here is how to actually call these methods we’ve added to our class.
+Then the other new concept we're running into here is how to actually call these methods we've added to our class.
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*k8t5QBcMvHDX521sd4pC4g.png" class="graf-image" /></figure>We added two HTML button tags within our `render` function, then in their respective `onClick` handlers, we specify the method that should be called whenever this button gets clicked. So whenever we click either of the buttons, our state gets updated appropriately and our component will re-render to show the correct value we're expecting.
 
 ### Class Component Iterating State
 
-Another common state pattern you’ll see being used in React components is iterating over an array in our state object and rendering each array element in its own tag.
+Another common state pattern you'll see being used in React components is iterating over an array in our state object and rendering each array element in its own tag.
 
 > This is often used in order to render lists.
 
 Additionally, we want to be able to easily update lists and have React re-render our updated list.
 
-We’ll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list.
+We'll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list.
 
-The first change to note is that our state object now has an 'ingredients’ array, and a 'newIngredient’ field that has been initialized to an empty string.
+The first change to note is that our state object now has an 'ingredients' array, and a 'newIngredient' field that has been initialized to an empty string.
 
-The ingredients array contains the elements that we’ll want to render in our list.
+The ingredients array contains the elements that we'll want to render in our list.
 
 The `addIngredient` and `handleIngredientInput` methods we've added to our class receives a parameter called 'event'.
 
@@ -295,7 +295,7 @@ This is a very common pattern for rendering everything inside an array.
 
 Then we have an HTML form which contains an input field.
 
-The purpose of this form is to allow a user to add new ingredients to the list. Note that we’re passing our `addIngredient` method to the form's `onSubmit` handler.
+The purpose of this form is to allow a user to add new ingredients to the list. Note that we're passing our `addIngredient` method to the form's `onSubmit` handler.
 
 This means that our `addIngredient` method gets invoked whenever our form is submitted.
 
@@ -307,13 +307,13 @@ So when a user enters text into the input field, the `onChange` handler is invok
 
 ### Parent and Child Components
 
-A single isolated component isn’t going to do us much good.
+A single isolated component isn't going to do us much good.
 
 > The beauty of React lies in the fact that it allows us to compose modular components together.
 
-> Let’s start off with the component we just saw, but let’s change its name to `ParentComponent` .
+> Let's start off with the component we just saw, but let's change its name to `ParentComponent` .
 
-The only two other differences in this component are that we’re importing a `ChildComponent` and then using it inside our `this.state.ingredients.map` call.
+The only two other differences in this component are that we're importing a `ChildComponent` and then using it inside our `this.state.ingredients.map` call.
 
 `ChildComponent` is another React component.
 
@@ -325,18 +325,18 @@ We can see this to be the case if we open up the developer console and inspect t
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*q_XLnJ2h1L5yZjNnSKzj5w.png" alt="child-left: parent-right" class="graf-image" /><figcaption><strong>child-left: parent-right</strong></figcaption></figure>
 
-Note also that we’re passing each ingredient as a 'thing’ to the ChildComponent component.
+Note also that we're passing each ingredient as a 'thing' to the ChildComponent component.
 
-This is how a parent component passes data to a child component. It doesn’t need to be called 'thing’; you can call it whatever you want.
+This is how a parent component passes data to a child component. It doesn't need to be called 'thing'; you can call it whatever you want.
 
-Conceptually though, **every piece of data that a parent component passes down to a child component is called a 'prop’ in React lingo.**
+Conceptually though, **every piece of data that a parent component passes down to a child component is called a 'prop' in React lingo.**
 
-Let’s take a look now at the Child Component. It serves two purposes:
+Let's take a look now at the Child Component. It serves two purposes:
 
 1.  <span id="4db5">to render the props data that it gets from a parent component,</span>
-2.  <span id="f8e1">to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete’.</span>
+2.  <span id="f8e1">to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete'.</span>
 
-The overall structure of the child component is nothing we haven’t seen. It’s just another class component with its own s**tate object and a method called** `handleClick`** .**
+The overall structure of the child component is nothing we haven't seen. It's just another class component with its own s**tate object and a method called** `handleClick`** .**
 
 **A component accesses its props via the** `this.props` **object.**
 
@@ -348,7 +348,7 @@ Then at the top of the `render` function, it uses a ternary condition to determi
 
 The `handleClick` method is then invoked via an `onClick` handler on the div tag; it does the work of toggling the `this.state.clicked` Boolean.
 
-The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component’s render function, just like how we did it in this example
+The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's render function, just like how we did it in this example
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aqqfHMjBXT8PWYJC" class="graf-image" /></figure>
 
@@ -362,7 +362,7 @@ The overall structure of React applications can be represented as a hierarchical
 
 > React manages the **creation and continuous updating of DOM nodes in your Web page**.
 
--   <span id="c9b6">_It does not handle_ <a href="https://skillcrush.com/blog/what-is-ajax/" class="markup--anchor markup--li-anchor"><em>AJAX</em></a> _requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state’. Because it’s function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._</span>
+-   <span id="c9b6">_It does not handle_ <a href="https://skillcrush.com/blog/what-is-ajax/" class="markup--anchor markup--li-anchor"><em>AJAX</em></a> _requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state'. Because it's function is so limited in scope you may hear it referred to as a library… (not a framework … like Angular for example) and you may also hear it described as unopinionated._</span>
 
 #### 2. Why use react?
 
@@ -406,17 +406,17 @@ Pure components have some performance improvements and render optimizations sinc
 
 ### Are React functional components pure?
 
-Functional components are very useful in React, especially when you want to isolate state management from the component. That’s why they are often called stateless components.
+Functional components are very useful in React, especially when you want to isolate state management from the component. That's why they are often called stateless components.
 
 However, functional components cannot leverage the performance improvements and render optimizations that come with `React.PureComponent` since they are not classes by definition.
 
-If you want React to treat a functional component as a pure component, you’ll have to convert the functional component to a class component that extends `React.PureComponent`.
+If you want React to treat a functional component as a pure component, you'll have to convert the functional component to a class component that extends `React.PureComponent`.
 
 ### Reusability
 
 React encourages you to think in terms of reusability as you construct the user  
 interface from elements and components that you create. When you  
-make a list or a button, you can then reuse those components to show different data 'state’ in the same UI structure as you have built for different data previously.
+make a list or a button, you can then reuse those components to show different data 'state' in the same UI structure as you have built for different data previously.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*cBLQ5aBP2qihrT59.jpeg" class="graf-image" /></figure>#### Component-Based
 
@@ -426,7 +426,7 @@ Since component logic is written in JavaScript instead of templates, you can eas
 
 #### Learn Once, Write Anywhere
 
-We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
 
 React can also render on the server using Node and power mobile apps using <a href="https://reactnative.dev/" class="markup--anchor markup--p-anchor">React Native</a>.
 
@@ -456,7 +456,7 @@ makes React one of the speediest front-end libraries available.
 
 #### 6. Imperative vs Declarative <a href="https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79" class="markup--anchor markup--h4-anchor">(React is Declarative)</a>
 
--   <span id="d48c">**Imperative, 'telling to computer HOW to do something’ e.g looping over an array of numbers using a for loop.**</span>
+-   <span id="d48c">**Imperative, 'telling to computer HOW to do something' e.g looping over an array of numbers using a for loop.**</span>
 -   <span id="8f2d">**Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**</span>
 -   <span id="b625">Benefits of using declarative code:</span>
 -   <span id="1164">Reduce side effects</span>
@@ -481,7 +481,7 @@ makes React one of the speediest front-end libraries available.
 -   <span id="eb44">Components are the building blocks of React.</span>
 -   <span id="ec58">They are similar to a collection of HTML,CSS, JS and data specific to that component.</span>
 -   <span id="1ee2">They can be defined in pure JavaScript or JSX.</span>
--   <span id="a2b4">Data is either received from a component’s parent component, or it’s contained in the component itself.</span>
+-   <span id="a2b4">Data is either received from a component's parent component, or it's contained in the component itself.</span>
 -   <span id="182f">Applications can be separated into smaller components like this…</span>
 -   <span id="c153">React components can be created using ES6 class like this.</span>
 
@@ -519,7 +519,7 @@ Checking data to see if Boolean is true then adding detail to the list.
 
 #### 10. Prop types
 
-PropTypes allow you to declare the type (string, number, function, etc) of each prop being passed to a component. Then if a prop passed in isn’t of the declared type you’ll get a warning in the console.
+PropTypes allow you to declare the type (string, number, function, etc) of each prop being passed to a component. Then if a prop passed in isn't of the declared type you'll get a warning in the console.
 
 ---
 
@@ -541,7 +541,7 @@ React components implement a `render()` method that takes input data and returns
 
 JSX is optional and not required to use React. Try the <a href="https://babeljs.io/repl/#?presets=react&amp;code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA" class="markup--anchor markup--p-anchor">Babel REPL</a> to see the raw JavaScript code produced by the JSX compilation step.
 
-In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`). When a component’s state data changes, the rendered markup will be updated by re-invoking `render()`.
+In addition to taking input data (accessed via `this.props`), a component can maintain internal state data (accessed via `this.state`). When a component's state data changes, the rendered markup will be updated by re-invoking `render()`.
 
 #### An Application
 
@@ -549,7 +549,7 @@ Using `props` and `state`, we can put together a small Todo application. This ex
 
 #### A Component Using External Plugins
 
-React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library, to convert the `<textarea>`’s value in real time.
+React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library, to convert the `<textarea>`'s value in real time.
 
 ---
 

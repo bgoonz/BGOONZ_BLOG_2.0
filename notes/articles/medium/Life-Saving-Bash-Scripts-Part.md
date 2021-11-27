@@ -1,14 +1,14 @@
 # Life Saving Bash Scripts Part 2
 
-I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
+I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
 
 ---
 
 ### Life Saving Bash Scripts Part 2
 
-#### I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!
+#### I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the value of these commands in my life quickly becomes incalculable!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that's a chance I don't have to take).
 
 ---
 
@@ -22,7 +22,7 @@ I am not saying they’re in any way special compared with other bash scripts…
 ### Part 2 of this series is the infinitely more comprehensive part 1 of the series:
 
 <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration (Part 1)</strong><br />
-<em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Update (more practical commands):
 
@@ -172,7 +172,7 @@ Recursively find suid executables
       n=`expr "$n" + 1`;
     done
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 11.) Traverse Directories recursivley and delete files who’s name match a specified string:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 11.) Traverse Directories recursivley and delete files who's name match a specified string:
 
     find . -type f -exec sed -i '/badFolder/d' ./* {} \;
 
@@ -217,11 +217,11 @@ Recursively find suid executables
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 19.) Convert from Markdown==⇒ HTML
 
-    find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” -o “${0%.md}.html”’ {} \;
+    find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” -o “${0%.md}.html”' {} \;
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 20.) Convert from HTML ==⇒ Markdown
 
-    find ./ -iname “*.html” -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”’ {} \;
+    find ./ -iname “*.html” -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”' {} \;
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### Discover More:
 

@@ -39,7 +39,7 @@ Themes
 
 A product icon theme for Visual Studio Code
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wE_xUE1f0GU8GBGo.png" class="graf-image" /></figure><a href="https://code.visualstudio.com/api/extension-guides/product-icon-theme" class="markup--anchor markup--p-anchor">Product icons themes</a> allow theme authors to customize the icons used in VS Code’s built-in views: all icons except file icons (covered by file icon themes) and icons contributed by extensions. This extension uses <a href="https://www.figma.com/community/file/836835755999342788/Microsoft-Fluent-System-Icons" class="markup--anchor markup--p-anchor">Fluent Icons</a>.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*wE_xUE1f0GU8GBGo.png" class="graf-image" /></figure><a href="https://code.visualstudio.com/api/extension-guides/product-icon-theme" class="markup--anchor markup--p-anchor">Product icons themes</a> allow theme authors to customize the icons used in VS Code's built-in views: all icons except file icons (covered by file icon themes) and icons contributed by extensions. This extension uses <a href="https://www.figma.com/community/file/836835755999342788/Microsoft-Fluent-System-Icons" class="markup--anchor markup--p-anchor">Fluent Icons</a>.
 
 ### Install
 
@@ -117,7 +117,7 @@ Tuff but sweet theme.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*93oi3wFSt7uH62VR.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/Yummygum.city-lights-theme" class="markup--anchor markup--h3-anchor">City Lights by Yummygum</a>
 
-🏙 Yummygum’s Official City Lights suite
+🏙 Yummygum's Official City Lights suite
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LwpZlufyoKuCVjqn.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/wesbos.theme-cobalt2" class="markup--anchor markup--h3-anchor">Cobalt2 Theme Official by Wes Bos</a>
 
@@ -165,11 +165,11 @@ A dark syntax/workbench theme for Visual Studio Code — optimized for SCSS,
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-ldv4DoOVntnZbBt.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/selfrefactor.niketa-theme" class="markup--anchor markup--h3-anchor">Niketa Theme by Dejan Toteff</a>
 
-Collection of 18 light themes separated in 4 groups by background’s brightness.
+Collection of 18 light themes separated in 4 groups by background's brightness.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*n_iRSy_1IDOgajFu.png" class="graf-image" /></figure>### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

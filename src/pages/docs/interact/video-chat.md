@@ -94,7 +94,7 @@ There are two sub-folders:
 ---
 
 -   namespace
-    > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo’s isolation model
+    > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo's isolation model
 
 ---
 
@@ -337,7 +337,7 @@ The browser will not grant the camera and microphone permissions unless your app
 
 These restrictions are by the browsers and NOT by the mesibo. Refer Security section in the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia#security) for more information.
 
-### That’s All!
+### That's All!
 
 You can now begin developing features with mesibo.
 

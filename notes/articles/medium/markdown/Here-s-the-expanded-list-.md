@@ -1,10 +1,10 @@
-# Here’s the expanded list:
+# Here's the expanded list:
 
 https://github.com/igorbarinov/awesome-bitcoin
 
 ---
 
-### Here’s the expanded list:
+### Here's the expanded list:
 
 ---
 
@@ -1426,7 +1426,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 <a href="https://github.com/mxschmitt/awesome-playwright" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/mxschmitt/awesome-playwright"><strong>GitHub — mxschmitt/awesome-playwright: A curated list of awesome tools, utils and projects using…</strong><em>A curated list of awesome tools, utils and projects using Playwright Playwright is a Node.js library to automate…</em>github.com</a><a href="https://github.com/mxschmitt/awesome-playwright" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/fityanos/awesome-quality-assurance-roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/fityanos/awesome-quality-assurance-roadmap"><strong>GitHub — fityanos/awesome-quality-assurance-roadmap: The starting point of your career as a…</strong><br />
-<em>Testing is an essential phase in any product life cycle; whether if it’s a food, cars, or software production line, the…</em>github.com</a><a href="https://github.com/fityanos/awesome-quality-assurance-roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Testing is an essential phase in any product life cycle; whether if it's a food, cars, or software production line, the…</em>github.com</a><a href="https://github.com/fityanos/awesome-quality-assurance-roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/burningtree/awesome-json" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/burningtree/awesome-json"><strong>GitHub — burningtree/awesome-json: A curated list of awesome JSON libraries and resources.</strong><br />
 <em>A curated list of awesome JSON libraries and resources. — GitHub — burningtree/awesome-json: A curated list of awesome…</em>github.com</a><a href="https://github.com/burningtree/awesome-json" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1551,7 +1551,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <em>A curated list of awesome inclusive events/projects/initiatives for women in the tech area. This section contains all…</em>github.com</a><a href="https://github.com/cristianoliveira/awesome4girls" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/vorpaljs/awesome-vorpal" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/vorpaljs/awesome-vorpal"><strong>GitHub — vorpaljs/awesome-vorpal: A curated list of delightful Vorpal extensions.</strong><br />
-<em>A curated list of delightful Vorpal-based projects and extensions. Vorpal is Node’s first framework for building…</em>github.com</a><a href="https://github.com/vorpaljs/awesome-vorpal" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A curated list of delightful Vorpal-based projects and extensions. Vorpal is Node's first framework for building…</em>github.com</a><a href="https://github.com/vorpaljs/awesome-vorpal" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/vinjn/awesome-vulkan" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/vinjn/awesome-vulkan"><strong>GitHub — vinjn/awesome-vulkan: Awesome Vulkan ecosystem</strong><br />
 <em>A curated list of awesome Vulkan libraries, debuggers and resources. Inspired by awesome-opengl and other awesome…</em>github.com</a><a href="https://github.com/vinjn/awesome-vulkan" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1701,7 +1701,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <em>Tech and social media is having a big impact on our society. While many innovative technology inventions are improving…</em>github.com</a><a href="https://github.com/humanetech-community/awesome-humane-tech" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/karlhorky/awesome-speakers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karlhorky/awesome-speakers"><strong>GitHub — karlhorky/awesome-speakers: Awesome speakers in the programming and design communities</strong><br />
-<em>Awesome speakers in the programming and design communities Let’s make it more transparent and easy to find awesome…</em>github.com</a><a href="https://github.com/karlhorky/awesome-speakers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Awesome speakers in the programming and design communities Let's make it more transparent and easy to find awesome…</em>github.com</a><a href="https://github.com/karlhorky/awesome-speakers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/edm00se/awesome-board-games" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/edm00se/awesome-board-games"><strong>GitHub — edm00se/awesome-board-games: A curated list of awesome and exceptional board games. Please…</strong><br />
 <em>Board games are played on a tabletop, often employ combinations of strategy, skill, and luck, and are a great way to…</em>github.com</a><a href="https://github.com/edm00se/awesome-board-games" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1755,7 +1755,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <em>Disclaimer: I know people really dislike and, sometimes, get angry about ads on sites and apps. As they are widely used…</em>github.com</a><a href="https://github.com/cenoura/awesome-ads" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/philsturgeon/awesome-earth" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/philsturgeon/awesome-earth"><strong>GitHub — philsturgeon/awesome-earth: “What can I do about the climate crisis?” Here are 326 things…</strong><br />
-<em>The world is simultaneously underwater and on fire, and people want to know what they can do about it. Let’s share…</em>github.com</a><a href="https://github.com/philsturgeon/awesome-earth" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>The world is simultaneously underwater and on fire, and people want to know what they can do about it. Let's share…</em>github.com</a><a href="https://github.com/philsturgeon/awesome-earth" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/gruhn/awesome-naming" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/gruhn/awesome-naming"><strong>GitHub — gruhn/awesome-naming: A curated list for when naming things is done right.</strong><br />
 <em>Famously… There are only two hard things in Computer Science: cache invalidation and naming things. ― Phil Karlton…</em>github.com</a><a href="https://github.com/gruhn/awesome-naming" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1800,13 +1800,13 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <em>Makes you find what you want in awesome lists more quickly. awesome lists can be found by AwesomeSearch now. There are…</em>awesomelists.top</a><a href="https://awesomelists.top" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://github.com/basharovV/StumbleUponAwesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/basharovV/StumbleUponAwesome"><strong>GitHub — basharovV/StumbleUponAwesome: ⚡️A browser extension that takes you to a random site from…</strong><br />
-<em>⚡️A browser extension that takes you to a random site from one of the awesome curated lists. Like good ol’ StumbleUpon…</em>github.com</a><a href="https://github.com/basharovV/StumbleUponAwesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>⚡️A browser extension that takes you to a random site from one of the awesome curated lists. Like good ol' StumbleUpon…</em>github.com</a><a href="https://github.com/basharovV/StumbleUponAwesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/umutphp/awesome-cli" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/umutphp/awesome-cli"><strong>GitHub — umutphp/awesome-cli: A simple command line tool to give you a fancy command line interface…</strong><br />
 <em>A simple command line tool to give you a fancy command line interface to dive into Awesome lists. — GitHub …</em>github.com</a><a href="https://github.com/umutphp/awesome-cli" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="http://awesome.digitalbunker.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="http://awesome.digitalbunker.dev"><strong>Awesome Viewer — For Awesome Lists</strong><br />
-<em>Easily browse, search, and explore the best of GitHub’s awesome lists.</em>awesome.digitalbunker.dev</a><a href="http://awesome.digitalbunker.dev" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>Easily browse, search, and explore the best of GitHub's awesome lists.</em>awesome.digitalbunker.dev</a><a href="http://awesome.digitalbunker.dev" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://www.trackawesomelist.com" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.trackawesomelist.com"><strong>Track your Favorite Github Awesome Repo</strong><br />
 <em>Track your favorite github awesome repo, not just star it.</em>www.trackawesomelist.com</a><a href="https://www.trackawesomelist.com" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

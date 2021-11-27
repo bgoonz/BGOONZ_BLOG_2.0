@@ -8,7 +8,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 #### This is a basic introduction for those who feel overwhelmed by the vast microcosm that is the React ecosystem!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here’s a sandbox for you to practice with:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wl1cp6IklxaFuBi.gif" class="graf-image" /></figure>### Here's a sandbox for you to practice with:
 
 <a href="https://codesandbox.io/s/intro-to-react-i72er" class="markup--anchor markup--p-anchor">https://codesandbox.io/s/intro-to-react-i72er</a>
 
@@ -318,7 +318,7 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
 
 #### **The JSX semicolon gotcha**
 
--   <span id="3d60">We wrap what want to return in parenthesis so JS doesn’t auto add semi-colons after every line and run the code incorrectly.</span>
+-   <span id="3d60">We wrap what want to return in parenthesis so JS doesn't auto add semi-colons after every line and run the code incorrectly.</span>
 
 <!-- -->
 
@@ -346,14 +346,14 @@ This is a basic introduction for those who feel overwhelmed by the vast microcos
       );
     }
 
--   <span id="6898">Just remember if you decided to use the return keyword in a function to 'return some JSX’, then make sure you wrap the JSX in parenthesis.</span>
+-   <span id="6898">Just remember if you decided to use the return keyword in a function to 'return some JSX', then make sure you wrap the JSX in parenthesis.</span>
 
 ---
 
 `npx create-react-app my-app`
 
 -   <span id="a3ca">Single line used to initiate a React application.</span>
--   <span id="61c5">React has a great toolchain where you can see changes live as you’re editing your application.</span>
+-   <span id="61c5">React has a great toolchain where you can see changes live as you're editing your application.</span>
 -   <span id="4889">React errors will be rendered directly onto the browser window.</span>
 -   <span id="f917">A downside is that it installs a lot of bloat files.</span>
 -   <span id="bdd9">Examples of React create Element and JSX equivalent</span>

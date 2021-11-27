@@ -61,7 +61,7 @@ How many records in the products table belong to the category “confections”?
 
 ### Objective 2 — query data from multiple tables
 
-Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.
+Now that we understand the basics of querying data from a single table, let's move on to selecting data from multiple tables using JOIN operations.
 
 ### Overview
 
@@ -177,7 +177,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables 'company’ and 'foods’, the following SQL statement can be used :
+To join two tables 'company' and 'foods', the following SQL statement can be used :
 
 **SQL Code:**
 
@@ -352,7 +352,7 @@ There should no be `knex` code in the endpoints themselves.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### A database is a collection of data organized for easy retrieval and manipulation.
 
-We’re concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.
+We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.
 
 ### Data Persistence
 
@@ -392,15 +392,15 @@ The syntax for SQL is English-like and requires fewer symbols than programming l
 
 It is declarative and concise, which means there is a lot less to learn to use it effectively.
 
-When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we’ll end up with the following sub-categories of SQL:
+When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we'll end up with the following sub-categories of SQL:
 
 -   <span id="aba8">**Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.</span>
 -   <span id="4f3f">**Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.</span>
 -   <span id="e1f2">**Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.</span>
--   <span id="4474">**Data Control Language (DCL)**: used to manage database security and user’s access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
+-   <span id="4474">**Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
 -   <span id="921b">**Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.</span>
 
-As a developer, you’ll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
+As a developer, you'll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
 ###
 
@@ -432,7 +432,7 @@ It is possible to query multiple tables in a single query. But, in this section,
 
 ### Insert
 
-To **insert** new data into a table, we’ll use the `INSERT` command. The basic syntax for an `INSERT` statement is this:
+To **insert** new data into a table, we'll use the `INSERT` command. The basic syntax for an `INSERT` statement is this:
 
     insert into <table name> (<selection>) values (<values>)
 
@@ -443,7 +443,7 @@ Using this formula, we can specify which values will be inserted into which fiel
 
 ### Modify
 
-**Modifying** a database consists of updating and removing records. For these operations, we’ll use `UPDATE` and `DELETE` commands, respectively.
+**Modifying** a database consists of updating and removing records. For these operations, we'll use `UPDATE` and `DELETE` commands, respectively.
 
 The basic syntax for an `UPDATE` statement is:
 
@@ -461,7 +461,7 @@ When querying a database, the default result will be every entry in the given ta
 
 A `WHERE` clause can help in both cases.
 
-Here’s an example where we might only want to find customers living in Berlin.
+Here's an example where we might only want to find customers living in Berlin.
 
     select City, CustomerName, ContactName
     from Customers
@@ -481,7 +481,7 @@ And this query includes records that match either criteria.
     from Customers
     where Country = 'France' or City = 'Paris'
 
-These operators can be combined and grouped with parentheses to add complex selection logic. They behave similarly to what you’re used to in programming languages.
+These operators can be combined and grouped with parentheses to add complex selection logic. They behave similarly to what you're used to in programming languages.
 
 You can read more about SQLite operators from <a href="https://www.w3resource.com/sqlite/operators.php" class="markup--anchor markup--p-anchor">w3resource (Links to an external site.)</a>.
 
@@ -507,7 +507,7 @@ Some SQL engines also support using field abbreviations when sorting.
 
     select name, salary, department from employees order by 3, 2 desc;
 
-In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the _selection_ portion of the query, so `1` would be _name_, `2` would be _salary_, and so on.
+In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields' position in the _selection_ portion of the query, so `1` would be _name_, `2` would be _salary_, and so on.
 
 Note that the `WHERE` clause should come after the `FROM` clause. The `ORDER BY` clause always goes last.
 
@@ -578,7 +578,7 @@ We will use a **query builder** called <a href="https://knexjs.org/" class="mark
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Setup
 
-To use Knex in a repository, we’ll need to add two libraries:
+To use Knex in a repository, we'll need to add two libraries:
 
     npm install knex sqlite3
 
@@ -614,7 +614,7 @@ In Knex, the equivalent of `SELECT * FROM users` is:
 
     db.select('*').from('users');
 
-There’s a simpler way to write the same command:
+There's a simpler way to write the same command:
 
     db('users');
 
@@ -689,7 +689,7 @@ Once again, the `where` must come before the `del`. This method will resolve to 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###
 
-### Here’s a small project you can practice with.
+### Here's a small project you can practice with.
 
 SQLlite Studio is an application that allows us to create, open, view, and modify SQLite databases. To fully understand what SQLite Studio is and how it works, we must also understand the concept of the Database Management Systems (DBMS).
 
@@ -699,7 +699,7 @@ To manage digital databases we use specialized software called **D**ata**B**ase 
 
 In less technical terms, we need a type of software that will allow us to create, access, and generally manage our databases. In the world of relational databases, we specifically use Relational Database Mangement Systems (RDBMs). Some examples are Postgres, SQLite, MySQL, and Oracle.
 
-Choosing a DBMS determines everything from how you set up your database, to where and how the data is stored, to what SQL commands you can use. Most systems share the core of the SQL language that you’ve already learned.
+Choosing a DBMS determines everything from how you set up your database, to where and how the data is stored, to what SQL commands you can use. Most systems share the core of the SQL language that you've already learned.
 
 In other words, you can expect `SELECT`, `UPDATE`, `INSERT`, `WHERE` , and the like to be the same across all DBMSs, but the subtleties of the language may vary.
 
@@ -721,7 +721,7 @@ For a more detailed look at SQLite Studio, follow along in the video above.
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>A **database schema** is the shape of our database. It defines what tables we’ll have, which columns should exist within the tables and any restrictions on each column.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>A **database schema** is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
 
 A well-designed database schema keeps the data well organized and can help ensure high-quality data.
 
@@ -780,7 +780,7 @@ Another critical component of schema design is to understand how different table
 
 Knex provides a **schema builder**, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.
 
-When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer’s local machine, on any testing or staging versions, on the production database, and then on any other developer’s local machines. This is where **migrations** come into play.
+When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer's local machine, on any testing or staging versions, on the production database, and then on any other developer's local machines. This is where **migrations** come into play.
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
@@ -798,11 +798,11 @@ To start, add the `knex` and `sqlite3` libraries to your repository.
 
 `npm install knex sqlite3`
 
-We’ve seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:
+We've seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:
 
     knex init
 
-Or, if Knex isn’t globally installed:
+Or, if Knex isn't globally installed:
 
     npx knex init
 
@@ -819,7 +819,7 @@ This command will generate a file in your root folder called `knexfile.js`. It w
 
     };
 
-We’ll need to update the location (or desired location) of the database as well as add the `useNullAsDefault` option. The latter option prevents crashes when working with `sqlite3`.
+We'll need to update the location (or desired location) of the database as well as add the `useNullAsDefault` option. The latter option prevents crashes when working with `sqlite3`.
 
     module.exports = {
 
@@ -903,15 +903,15 @@ Note if the database does not exist, this command will auto-generate one. We can
 
 ### Changes and Rollbacks
 
-If later down the road, we realize you need to update your schema, you shouldn’t edit the migration file. Instead, you will want to create a new migration with the command:
+If later down the road, we realize you need to update your schema, you shouldn't edit the migration file. Instead, you will want to create a new migration with the command:
 
 `knex migrate:make accounts-schema-update`
 
-Once we’ve written our updates into this file we save and close with:
+Once we've written our updates into this file we save and close with:
 
 `knex migrate:latest`
 
-If we migrate our database and then quickly realize something isn’t right, we can edit the migration file. However, first, we need to **rolllback** (or undo) our last migration with:
+If we migrate our database and then quickly realize something isn't right, we can edit the migration file. However, first, we need to **rolllback** (or undo) our last migration with:
 
 `knex migrate:rollback`
 
@@ -923,7 +923,7 @@ Finally, we are free to rerun that file with `knex migrate` latest.
 
 Knex provides a **schema builder**, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.
 
-When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer’s local machine, on any testing or staging versions, on the production database, and then on any other developer’s local machines. This is where **migrations** come into play.
+When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer's local machine, on any testing or staging versions, on the production database, and then on any other developer's local machines. This is where **migrations** come into play.
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
@@ -941,11 +941,11 @@ To start, add the `knex` and `sqlite3` libraries to your repository.
 
 `npm install knex sqlite3`
 
-We’ve seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:
+We've seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:
 
     knex init
 
-Or, if Knex isn’t globally installed:
+Or, if Knex isn't globally installed:
 
     npx knex init
 
@@ -962,7 +962,7 @@ This command will generate a file in your root folder called `knexfile.js`. It w
 
     };
 
-We’ll need to update the location (or desired location) of the database as well as add the `useNullAsDefault` option. The latter option prevents crashes when working with `sqlite3`.
+We'll need to update the location (or desired location) of the database as well as add the `useNullAsDefault` option. The latter option prevents crashes when working with `sqlite3`.
 
     module.exports = {
 
@@ -1046,15 +1046,15 @@ Note if the database does not exist, this command will auto-generate one. We can
 
 ### Changes and Rollbacks
 
-If later down the road, we realize you need to update your schema, you shouldn’t edit the migration file. Instead, you will want to create a new migration with the command:
+If later down the road, we realize you need to update your schema, you shouldn't edit the migration file. Instead, you will want to create a new migration with the command:
 
 `knex migrate:make accounts-schema-update`
 
-Once we’ve written our updates into this file we save and close with:
+Once we've written our updates into this file we save and close with:
 
 `knex migrate:latest`
 
-If we migrate our database and then quickly realize something isn’t right, we can edit the migration file. However, first, we need to **rolllback** (or undo) our last migration with:
+If we migrate our database and then quickly realize something isn't right, we can edit the migration file. However, first, we need to **rolllback** (or undo) our last migration with:
 
 `knex migrate:rollback`
 
@@ -1089,7 +1089,7 @@ Similarly to migrations, we want to customize where our seed files are generated
 
 To create a seed run: `knex seed:make 001-seedName`
 
-Numbering is a good idea because Knex doesn’t attach a timestamp to the name like migrate does. Adding numbers to the file name, we can control the order in which they run.
+Numbering is a good idea because Knex doesn't attach a timestamp to the name like migrate does. Adding numbers to the file name, we can control the order in which they run.
 
 We want to create seeds for our accounts table:
 
@@ -1136,7 +1136,7 @@ The `farm_id` in the `ranchers` table is an example of a `foreign key`. Each ent
 
 If we could only see the `ranchers` table, we would know that John, Jane, and Jen all work together and that Jim and Jay also work together. However, to know where any of them work, we would need to look at the `farms` table.
 
-Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.
+Now that we understand the basics of querying data from a single table, let's move on to selecting data from multiple tables using JOIN operations.
 
 ### Overview
 
@@ -1244,7 +1244,7 @@ In order to perform a JOIN query, the required information we need are:
 
 **Sample table: foods**
 
-To join two tables 'company’ and 'foods’, the following SQL statement can be used :
+To join two tables 'company' and 'foods', the following SQL statement can be used :
 
 **SQL Code:**
 
@@ -1360,11 +1360,11 @@ There should no be `knex` code in the endpoints themselves.
 
 `Normalization` is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
-With objects, we’re used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
+With objects, we're used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
 
 ###
 
-**Data normalization** is a deep topic in database design. To begin thinking about it, we’ll explore a few basic guidelines and some data examples that violate these rules.
+**Data normalization** is a deep topic in database design. To begin thinking about it, we'll explore a few basic guidelines and some data examples that violate these rules.
 
 ### Normalization Guidelines
 
@@ -1386,11 +1386,11 @@ This table has two issues. There is no proper id field (as multiple farms may ha
 
 <a href="https://www.notion.so/075ad6dd99ac48698625d7b56ca67bef" class="markup--anchor markup--p-anchor">Untitled</a>
 
-While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn’t good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.
+While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn't good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.
 
 <a href="https://www.notion.so/375a15b0cb3f444a8698cd6cb3a08fe0" class="markup--anchor markup--p-anchor">Untitled</a>
 
-Now we’ve solved the multiple fields issue, but we created repeating data (the farm field), which is also an example of denormalization. As well, we can see that if we were tracking additional ranch information (such as annual revenue), that field is only vaguely related to the animal information.
+Now we've solved the multiple fields issue, but we created repeating data (the farm field), which is also an example of denormalization. As well, we can see that if we were tracking additional ranch information (such as annual revenue), that field is only vaguely related to the animal information.
 
 **When these issues begin arising in your schema design, it means that you should separate information into two or more tables.**
 
@@ -1495,7 +1495,7 @@ We have to consider the way that `delete` and `updates` through our API will imp
 
 ### Foreign Key Setup
 
-In Knex, foreign key restrictions don’t automatically work. Whenever using foreign keys in your schema, add the following code to your `knexfile`. This will prevent users from entering bad data into a foreign key column.
+In Knex, foreign key restrictions don't automatically work. Whenever using foreign keys in your schema, add the following code to your `knexfile`. This will prevent users from entering bad data into a foreign key column.
 
     development: {
       client: 'sqlite3',
@@ -1514,7 +1514,7 @@ In Knex, foreign key restrictions don’t automatically work. Whenever using for
 
 ### Migrations
 
-Let’s look at how we might track our `farms` and `ranchers` using Knex. In our migration file's `up` function, we would want to create two tables:
+Let's look at how we might track our `farms` and `ranchers` using Knex. In our migration file's `up` function, we would want to create two tables:
 
     exports.up = function(knex, Promise) {
       return knex.schema
@@ -1571,7 +1571,7 @@ In the case of a many-to-many relationship, the syntax for creating an intermedi
 
 ### Seeds
 
-Order is also a concern when seeding. We want to create seeds in the **same** order we created our tables. In other words, don’t create a seed with a foreign key, until that reference record exists.
+Order is also a concern when seeding. We want to create seeds in the **same** order we created our tables. In other words, don't create a seed with a foreign key, until that reference record exists.
 
 In our example, make sure to write the `01-farms` seed file and then the `02-ranchers` seed file.
 

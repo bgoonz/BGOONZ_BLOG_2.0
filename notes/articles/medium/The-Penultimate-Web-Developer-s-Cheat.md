@@ -1,10 +1,10 @@
-# The Penultimate Web Developer’s Cheat Sheet
+# The Penultimate Web Developer's Cheat Sheet
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
 ---
 
-### The Penultimate Web Developer’s Cheat Sheet
+### The Penultimate Web Developer's Cheat Sheet
 
 I am literally just going to combine a fair number of my Cheat Sheets in no particular order.
 
@@ -326,7 +326,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 -   <span id="bcb1">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b333">`python <filename.py>`</span>
 
-#### By default, the python doesn’t require any imports to run a python file.
+#### By default, the python doesn't require any imports to run a python file.
 
 ### Create and execute a program
 

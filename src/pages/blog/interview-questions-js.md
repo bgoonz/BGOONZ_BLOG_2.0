@@ -179,7 +179,7 @@ image: images/green-spruce-4e3a1745.png
     inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
     ```
 
-    Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
+    Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it's easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
 
     Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
@@ -299,7 +299,7 @@ image: images/green-spruce-4e3a1745.png
 
 12. ### What is a first order function
 
-    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    First-order function is a function that doesn't accept another function as an argument and doesn't return a function as its return value.
 
     ```javascript
     const firstOrder = () => console.log('I am a first order function!');
@@ -447,7 +447,7 @@ image: images/green-spruce-4e3a1745.png
 
 21. ### What is the Temporal Dead Zone
 
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
+    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable's binding and its declaration, is called the temporal dead zone.
 
     Let's see this behavior with an example,
 
@@ -490,7 +490,7 @@ image: images/green-spruce-4e3a1745.png
 
 24. ### What is memoization
 
-    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
+    Memoization is a programming technique which attempts to increase a function's performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
 
     ```javascript
@@ -534,7 +534,7 @@ image: images/green-spruce-4e3a1745.png
 
 26. ### What are classes in ES6
 
-    In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
+    In ES6, Javascript classes are primarily syntactic sugar over JavaScript's existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
 
     ```javascript
@@ -565,10 +565,10 @@ image: images/green-spruce-4e3a1745.png
 
 27. ### What are closures
 
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
+    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function's variables. The closure has three scope chains
 
     1. Own scope where variables defined between its curly brackets
-    2. Outer function’s variables
+    2. Outer function's variables
     3. Global variables
 
     Let's take an example of closure concept,
@@ -822,7 +822,7 @@ image: images/green-spruce-4e3a1745.png
 
 51. ### What is a promise
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it's not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
 
     The syntax of Promise creation looks like below,
 
@@ -904,7 +904,7 @@ image: images/green-spruce-4e3a1745.png
     // First function called
     ```
 
-    As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+    As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn't execute until the other code finishes execution.
 
 56. ### What is a callback hell
 
@@ -1544,7 +1544,7 @@ image: images/green-spruce-4e3a1745.png
 
 117. ### What is the purpose of clearTimeout method
 
-     The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
+     The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it's passed into the clearTimeout() function to clear the timer.
 
      For example, the below setTimeout method is used to display the message after 3 seconds. This timeout can be cleared by the clearTimeout() method.
 
@@ -1567,7 +1567,7 @@ image: images/green-spruce-4e3a1745.png
 
 118. ### What is the purpose of clearInterval method
 
-     The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
+     The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it's passed into the clearInterval() function to clear the interval.
 
      For example, the below setInterval method is used to display the message for every 3 seconds. This interval can be cleared by the clearInterval() method.
 
@@ -1692,7 +1692,7 @@ image: images/green-spruce-4e3a1745.png
      obj.hasOwnProperty('key'); // true
      ```
 
-     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let's compare the properties against undefined to determine the existence of the property.
 
      ```javascript
      const user = {
@@ -2525,7 +2525,7 @@ image: images/green-spruce-4e3a1745.png
 
 186. ### What happens if you do not use rest parameter as a last argument
 
-     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
+     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn't make any sense and will throw an error.
 
      ```javascript
      function someFunc(a,…b,c){
@@ -4001,7 +4001,7 @@ image: images/green-spruce-4e3a1745.png
 
 290. ### Does JavaScript supports namespace
 
-     JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
+     JavaScript doesn't support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
 
      ```javascript
      function func1() {
@@ -4634,7 +4634,7 @@ image: images/green-spruce-4e3a1745.png
 
 327. ### How do you avoid receiving postMessages from attackers
 
-     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker's origin, which gives an impression that the receiver received the message from the actual sender's window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
 
      ```javascript
      //Listener on http://www.some-receiver.com/
@@ -4647,7 +4647,7 @@ image: images/green-spruce-4e3a1745.png
 
 328. ### Can I avoid using postMessages completely
 
-     You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
+     You cannot avoid using postMessages completely(or 100%). Even though your application doesn't use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
 
 329. ### Is postMessages synchronous
 
@@ -4664,7 +4664,7 @@ image: images/green-spruce-4e3a1745.png
 
 332. ### Is JavaScript faster than server side script
 
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server's help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
 333. ### How do you get the status of a checkbox
 
@@ -4675,7 +4675,7 @@ image: images/green-spruce-4e3a1745.png
      ```
 
      ```javascript
-     console.log(document.getElementById('checkboxname’).checked); // true or false
+     console.log(document.getElementById('checkboxname').checked); // true or false
      ```
 
 334. ### What is the purpose of double tilde operator
@@ -4935,7 +4935,7 @@ image: images/green-spruce-4e3a1745.png
 
 351. ### What is a thunk function
 
-     A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+     A thunk is just a function which delays the evaluation of the value. It doesn't take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
 
      ```javascript
      const add = (x, y) => x + y;
@@ -5464,7 +5464,7 @@ image: images/green-spruce-4e3a1745.png
 
 391. ### How do you use javascript libraries in typescript file
 
-     It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
+     It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn't have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
 
      ```javascript
      declare var customLibrary;
@@ -5498,7 +5498,7 @@ image: images/green-spruce-4e3a1745.png
 394. ### What is an event table
 
      Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
-     It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
+     It doesn't not execute functions on it's own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
 
      ![Screenshot](images/event-table.png)
 
@@ -5677,7 +5677,7 @@ image: images/green-spruce-4e3a1745.png
 
 408. ### How do you prevent promises swallowing errors
 
-     While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
+     While using asynchronous code, JavaScript's ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
 
      Let's say you expect to print an error to the console for all the below cases,
 
@@ -5907,7 +5907,7 @@ image: images/green-spruce-4e3a1745.png
 
      1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
      2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
-     3. The rest parameters are only the ones that haven’t been given a separate name, while the arguments object contains all arguments passed to the function
+     3. The rest parameters are only the ones that haven't been given a separate name, while the arguments object contains all arguments passed to the function
 
 415. ### What are the differences between spread operator and rest parameter
 
@@ -6046,7 +6046,7 @@ image: images/green-spruce-4e3a1745.png
      Let's see the difference with an example,
 
      ```javascript
-     isNaN('hello’);   // true
+     isNaN('hello');   // true
      Number.isNaN('hello'); // false
      ```
 

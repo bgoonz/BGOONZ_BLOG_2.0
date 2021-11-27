@@ -135,9 +135,9 @@
                                 />
                             </figure>
                             <p name="b9f5" id="b9f5" class="graf graf--p graf-after--figure">
-                                In the university setting, it’s common for Linked Lists to appear early on in an undergraduate’s Computer Science coursework.
-                                While they don’t always have the most practical real-world applications in industry, Linked Lists make for an important and
-                                effective educational tool in helping develop a student’s mental model on what data structures actually are to begin with.
+                                In the university setting, it's common for Linked Lists to appear early on in an undergraduate's Computer Science coursework.
+                                While they don't always have the most practical real-world applications in industry, Linked Lists make for an important and
+                                effective educational tool in helping develop a student's mental model on what data structures actually are to begin with.
                             </p>
                             <p name="f7f2" id="f7f2" class="graf graf--p graf-after--p">
                                 Linked lists are simple. They have many compelling, reoccurring edge cases to consider that emphasize to the student the need
@@ -210,18 +210,18 @@
                             </p>
                             <h4 name="249d" id="249d" class="graf graf--h4 graf--startsWithDoubleQuote graf-after--p">“So…this sounds a lot like an Array…”</h4>
                             <p name="2ea8" id="2ea8" class="graf graf--p graf-after--h4">
-                                Admittedly, this does <em class="markup--em markup--p-em">sound</em> a lot like an Array so far, and that’s because Arrays and
+                                Admittedly, this does <em class="markup--em markup--p-em">sound</em> a lot like an Array so far, and that's because Arrays and
                                 Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between
                                 Arrays and Linked Lists, and that is how they <em class="markup--em markup--p-em">physically store</em> their data. (As opposed
                                 to how they <em class="markup--em markup--p-em">represent</em> the order of their data.)
                             </p>
                             <p name="853c" id="853c" class="graf graf--p graf-after--p">
                                 Recall that Arrays contain <em class="markup--em markup--p-em">contiguous</em> data. Each element of an array is actually stored
-                                <em class="markup--em markup--p-em">next to</em> it’s neighboring element
+                                <em class="markup--em markup--p-em">next to</em> it's neighboring element
                                 <em class="markup--em markup--p-em">in the actual hardware of your machine</em>, in a single continuous block in memory.
                             </p>
                             <p name="0b19" id="0b19" class="graf graf--p graf-after--p">
-                                <em class="markup--em markup--p-em">An Array’s contiguous data being stored in a continuous block of addresses in memory.</em>
+                                <em class="markup--em markup--p-em">An Array's contiguous data being stored in a continuous block of addresses in memory.</em>
                             </p>
                             <p name="398d" id="398d" class="graf graf--p graf-after--p">
                                 Unlike Arrays, Linked Lists contain <em class="markup--em markup--p-em">non-contiguous</em> data. Though Linked Lists
@@ -229,26 +229,26 @@
                                 interpretation of the <em class="markup--em markup--p-em">representation</em> of information, not reality.
                             </p>
                             <p name="0527" id="0527" class="graf graf--p graf-after--p">
-                                In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List’s Nodes are not stored in
+                                In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List's Nodes are not stored in
                                 a single continuous block of addresses. Rather, Linked List Nodes live at randomly distributed addresses throughout your
-                                machine! The only reason we know which node comes next in the list is because we’ve assigned its reference to the current node’s
+                                machine! The only reason we know which node comes next in the list is because we've assigned its reference to the current node's
                                 <code class="markup--code markup--p-code">next</code> pointer.
                             </p>
                             <p name="09de" id="09de" class="graf graf--p graf-after--p">
                                 <em class="markup--em markup--p-em"
-                                    >A Singly Linked List’s non-contiguous data (Nodes) being stored at randomly distributed addresses in memory.</em
+                                    >A Singly Linked List's non-contiguous data (Nodes) being stored at randomly distributed addresses in memory.</em
                                 >
                             </p>
                             <p name="1dd9" id="1dd9" class="graf graf--p graf-after--p">
                                 For this reason, Linked List Nodes have <em class="markup--em markup--p-em">no indices</em>, and no
                                 <em class="markup--em markup--p-em">random access</em>. Without random access, we do not have the ability to look up an
                                 individual Linked List Node in constant time. Instead, to find a particular Node, we have to start at the very first Node and
-                                iterate through the Linked List one node at a time, checking each Node’s <em class="markup--em markup--p-em">next</em> Node
-                                until we find the one we’re interested in.
+                                iterate through the Linked List one node at a time, checking each Node's <em class="markup--em markup--p-em">next</em> Node
+                                until we find the one we're interested in.
                             </p>
                             <p name="a379" id="a379" class="graf graf--p graf-after--p">
                                 So when implementing a Linked List, we actually must implement both the Linked List class
-                                <em class="markup--em markup--p-em">and</em> the Node class. Since the actual data lives in the Nodes, it’s simpler to implement
+                                <em class="markup--em markup--p-em">and</em> the Node class. Since the actual data lives in the Nodes, it's simpler to implement
                                 the Node class first.
                             </p>
                             <h3 name="dd2b" id="dd2b" class="graf graf--h3 graf-after--p">Types of Linked Lists</h3>
@@ -336,10 +336,10 @@
                             <h4 name="339c" id="339c" class="graf graf--h4 graf-after--h3">Scenarios</h4>
                             <ol class="postList">
                                 <li name="16fe" id="16fe" class="graf graf--li graf-after--h4">
-                                    We have a Linked List, and we’d like to find the 8th item in the list.
+                                    We have a Linked List, and we'd like to find the 8th item in the list.
                                 </li>
                                 <li name="a9f7" id="a9f7" class="graf graf--li graf-after--li">
-                                    We have a Linked List of sorted alphabet letters, and we’d like to see if the letter “Q” is inside that list.
+                                    We have a Linked List of sorted alphabet letters, and we'd like to see if the letter “Q” is inside that list.
                                 </li>
                             </ol>
                             <h4 name="572c" id="572c" class="graf graf--h4 graf-after--li">Discussion</h4>
@@ -349,8 +349,8 @@
                                 possibly at the tail, if we have a Doubly Linked List), and iterate through the list until we arrive at the node of interest.
                             </p>
                             <p name="40ab" id="40ab" class="graf graf--p graf-after--p">
-                                In Scenario 1, we’ll know we’re there because we’ve iterated 8 times. In Scenario 2, we’ll know we’re there because, while
-                                iterating, we’ve checked each node’s value and found one that matches our target value, “Q”.
+                                In Scenario 1, we'll know we're there because we've iterated 8 times. In Scenario 2, we'll know we're there because, while
+                                iterating, we've checked each node's value and found one that matches our target value, “Q”.
                             </p>
                             <p name="6ebb" id="6ebb" class="graf graf--p graf-after--p">
                                 In the worst case scenario, we may have to traverse the entire Linked List until we arrive at the final node. This makes both
@@ -360,13 +360,13 @@
                             <h4 name="f162" id="f162" class="graf graf--h4 graf-after--h3">Scenarios</h4>
                             <ol class="postList">
                                 <li name="2462" id="2462" class="graf graf--li graf-after--h4">
-                                    We have an empty Linked List, and we’d like to insert our first node.
+                                    We have an empty Linked List, and we'd like to insert our first node.
                                 </li>
                                 <li name="ae0b" id="ae0b" class="graf graf--li graf-after--li">
-                                    We have a Linked List, and we’d like to insert or delete a node at the Head or Tail.
+                                    We have a Linked List, and we'd like to insert or delete a node at the Head or Tail.
                                 </li>
                                 <li name="290b" id="290b" class="graf graf--li graf-after--li">
-                                    We have a Linked List, and we’d like to insert or delete a node from somewhere in the middle of the list.
+                                    We have a Linked List, and we'd like to insert or delete a node from somewhere in the middle of the list.
                                 </li>
                             </ol>
                             <h4 name="57d9" id="57d9" class="graf graf--h4 graf-after--li">Discussion</h4>
@@ -379,7 +379,7 @@
                             <ol class="postList">
                                 <li name="7675" id="7675" class="graf graf--li graf-after--p">Create a new node.</li>
                                 <li name="adf9" id="adf9" class="graf graf--li graf-after--li">
-                                    Set the new node’s <code class="markup--code markup--li-code">next</code> and
+                                    Set the new node's <code class="markup--code markup--li-code">next</code> and
                                     <code class="markup--code markup--li-code">previous</code> pointers to the nodes that live at positions
                                     <code class="markup--code markup--li-code">i</code> and <code class="markup--code markup--li-code">i - 1</code>,
                                     respectively.
@@ -394,15 +394,15 @@
                                 </li>
                             </ol>
                             <p name="34de" id="34de" class="graf graf--p graf-after--li">
-                                And we’re done, in Constant Time. No iterating across the entire list necessary.
+                                And we're done, in Constant Time. No iterating across the entire list necessary.
                             </p>
                             <p name="0bfb" id="0bfb" class="graf graf--p graf--startsWithDoubleQuote graf-after--p">
-                                “But hold on one second,” you may be thinking. “In order to insert a new node in the middle of the list, don’t we have to lookup
-                                its position? Doesn’t that take linear time?!”
+                                “But hold on one second,” you may be thinking. “In order to insert a new node in the middle of the list, don't we have to lookup
+                                its position? Doesn't that take linear time?!”
                             </p>
                             <p name="3470" id="3470" class="graf graf--p graf-after--p">
                                 Yes, it is tempting to call insertion or deletion in the middle of a Linked List a linear time operation since there is lookup
-                                involved. However, it’s usually the case that you’ll already have a reference to the node where your desired insertion or
+                                involved. However, it's usually the case that you'll already have a reference to the node where your desired insertion or
                                 deletion will occur.
                             </p>
                             <p name="87ac" id="87ac" class="graf graf--p graf-after--p">
@@ -420,16 +420,16 @@
                             <h3 name="1f48" id="1f48" class="graf graf--h3 graf-after--p">Space Complexity</h3>
                             <h4 name="c97e" id="c97e" class="graf graf--h4 graf-after--h3">Scenarios</h4>
                             <ol class="postList">
-                                <li name="12d2" id="12d2" class="graf graf--li graf-after--h4">We’re given a Linked List, and need to operate on it.</li>
+                                <li name="12d2" id="12d2" class="graf graf--li graf-after--h4">We're given a Linked List, and need to operate on it.</li>
                                 <li name="7c5f" id="7c5f" class="graf graf--li graf-after--li">
-                                    We’ve decided to create a new Linked List as part of strategy to solve some problem.
+                                    We've decided to create a new Linked List as part of strategy to solve some problem.
                                 </li>
                             </ol>
                             <h4 name="0a10" id="0a10" class="graf graf--h4 graf-after--li">Discussion</h4>
                             <p name="ea2b" id="ea2b" class="graf graf--p graf-after--h4">
-                                It’s obvious that Linked Lists have one node for every one item in the list, and for that reason we know that Linked Lists take
+                                It's obvious that Linked Lists have one node for every one item in the list, and for that reason we know that Linked Lists take
                                 up Linear Space in memory. However, when asked in an interview setting what the Space Complexity
-                                <em class="markup--em markup--p-em">of your solution</em> to a problem is, it’s important to recognize the difference between
+                                <em class="markup--em markup--p-em">of your solution</em> to a problem is, it's important to recognize the difference between
                                 the two scenarios above.
                             </p>
                             <p name="4159" id="4159" class="graf graf--p graf-after--p">
@@ -445,7 +445,7 @@
                                 <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Note</em></strong
                                 ><em class="markup--em markup--p-em"
                                     >: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively,
-                                    there will be a recursive function call added to the call stack for every node in the Linked List. Even if you’re provided
+                                    there will be a recursive function call added to the call stack for every node in the Linked List. Even if you're provided
                                     the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.</em
                                 >
                             </p>
@@ -460,16 +460,16 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="c32d" id="c32d" class="graf graf--h3 graf--leading">Stacks and Queues</h3>
                             <p name="fb62" id="fb62" class="graf graf--p graf-after--h3">
-                                Stacks and Queues aren’t really “data structures” by the strict definition of the term. The more appropriate terminology would
+                                Stacks and Queues aren't really “data structures” by the strict definition of the term. The more appropriate terminology would
                                 be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules
                                 governing their user-facing behaviors rather than their core implementations.
                             </p>
                             <p name="96ba" id="96ba" class="graf graf--p graf-after--p">
-                                For the sake of simplicity, we’ll refer to them as data structures and ADTs interchangeably throughout the course, but the
+                                For the sake of simplicity, we'll refer to them as data structures and ADTs interchangeably throughout the course, but the
                                 distinction is an important one to be familiar with as you level up as an engineer.
                             </p>
                             <p name="f8a6" id="f8a6" class="graf graf--p graf-after--p">
-                                Now that that’s out of the way, Stacks and Queues represent a linear collection of nodes or values. In this way, they are quite
+                                Now that that's out of the way, Stacks and Queues represent a linear collection of nodes or values. In this way, they are quite
                                 similar to the Linked List data structure we discussed in the previous section. In fact, you can even use a modified version of
                                 a Linked List to implement each of them. (Hint, hint.)
                             </p>
@@ -478,7 +478,7 @@
                                 be added and removed from the structure.
                             </p>
                             <p name="da7c" id="da7c" class="graf graf--p graf-after--p">
-                                Since we’ve covered Linked Lists in great length, these two data structures will be quick and easy. Let’s break them down
+                                Since we've covered Linked Lists in great length, these two data structures will be quick and easy. Let's break them down
                                 individually in the next couple of sections.
                             </p>
                             <h3 name="b0c0" id="b0c0" class="graf graf--h3 graf-after--p">What is a Stack?</h3>
@@ -492,18 +492,18 @@
                                 approachable, because the analogy relates to something in our everyday lives.
                             </p>
                             <p name="0875" id="0875" class="graf graf--p graf-after--p">
-                                If you can imagine adding items to, or removing items from, a Stack of…literally anything…you’ll realize that every (sane)
+                                If you can imagine adding items to, or removing items from, a Stack of…literally anything…you'll realize that every (sane)
                                 person naturally obeys the LIFO rule.
                             </p>
                             <p name="65c8" id="65c8" class="graf graf--p graf-after--p">
                                 We add things to the <em class="markup--em markup--p-em">top</em> of a stack. We remove things from the
                                 <em class="markup--em markup--p-em">top</em> of a stack. We never add things to, or remove things from, the
-                                <em class="markup--em markup--p-em">bottom</em> of the stack. That’s just crazy.
+                                <em class="markup--em markup--p-em">bottom</em> of the stack. That's just crazy.
                             </p>
                             <p name="c440" id="c440" class="graf graf--p graf-after--p">
                                 Note: We can use JavaScript Arrays to implement a basic stack. <code class="markup--code markup--p-code">Array#push</code> adds
                                 to the top of the stack and <code class="markup--code markup--p-code">Array#pop</code> will remove from the top of the stack. In
-                                the exercise that follows, we’ll build our own Stack class from scratch (without using any arrays). In an interview setting,
+                                the exercise that follows, we'll build our own Stack class from scratch (without using any arrays). In an interview setting,
                                 your evaluator may be okay with you using an array as a stack.
                             </p>
                             <figure name="36e3" id="36e3" class="graf graf--figure graf--iframe graf-after--p graf--trailing">
@@ -528,7 +528,7 @@
                                 store checkout, or to see the teller at a bank.
                             </p>
                             <p name="8468" id="8468" class="graf graf--p graf-after--p">
-                                If you can imagine a queue of humans waiting…again, for literally anything…you’ll realize that
+                                If you can imagine a queue of humans waiting…again, for literally anything…you'll realize that
                                 <em class="markup--em markup--p-em">most</em> people (the civil ones) naturally obey the FIFO rule.
                             </p>
                             <p name="031c" id="031c" class="graf graf--p graf-after--p">
@@ -538,12 +538,12 @@
                             </p>
                             <p name="92ae" id="92ae" class="graf graf--p graf-after--p">
                                 We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be “cutting” the line,
-                                and other humans don’t seem to appreciate that.
+                                and other humans don't seem to appreciate that.
                             </p>
                             <p name="3952" id="3952" class="graf graf--p graf-after--p">
                                 Note: We can use JavaScript Arrays to implement a basic queue. <code class="markup--code markup--p-code">Array#push</code> adds
                                 to the back (enqueue) and <code class="markup--code markup--p-code">Array#shift</code> will remove from the front (dequeue). In
-                                the exercise that follows, we’ll build our own Queue class from scratch (without using any arrays). In an interview setting,
+                                the exercise that follows, we'll build our own Queue class from scratch (without using any arrays). In an interview setting,
                                 your evaluator may be okay with you using an array as a queue.
                             </p>
                             <h3 name="0ae7" id="0ae7" class="graf graf--h3 graf-after--p">Stack and Queue Properties</h3>
@@ -567,7 +567,7 @@
  Stack Property Description Queue Property Description
  top The first node in the Stack front The first node in the Queue.
  — — Stacks do not have an equivalent back The last node in the Queue.
- length The number of nodes in the Stack; the Stack’s length. length The number of nodes in the Queue; the Queue’s length.
+ length The number of nodes in the Stack; the Stack's length. length The number of nodes in the Queue; the Queue's length.
  N"
                                     src="https://cdn-images-1.medium.com/max/800/1*aZCnZJzaeY74DTb2CTRuFA.png"
                                 />
@@ -577,7 +577,7 @@
                                 <code class="markup--code markup--p-code">tail</code> like Linked Lists, Stacks have a
                                 <code class="markup--code markup--p-code">top</code>, and Queues have a
                                 <code class="markup--code markup--p-code">front</code> and a <code class="markup--code markup--p-code">back</code> instead.
-                                Stacks don’t have the equivalent of a <code class="markup--code markup--p-code">tail</code> because you only ever push or pop
+                                Stacks don't have the equivalent of a <code class="markup--code markup--p-code">tail</code> because you only ever push or pop
                                 things off the top of Stacks. These properties are essentially the same; pointers to the end points of the respective List ADT
                                 where important actions way take place. The differences in naming conventions are strictly for human comprehension.
                             </p>
@@ -617,24 +617,24 @@
                                 lookup, and if these operations are a priority for your use case, it would be best to choose something else!
                             </p>
                             <p name="5a0b" id="5a0b" class="graf graf--p graf-after--p">
-                                Search and Access are both linear time operations for Stacks and Queues, and that shouldn’t be too unclear. Both ADTs are nearly
+                                Search and Access are both linear time operations for Stacks and Queues, and that shouldn't be too unclear. Both ADTs are nearly
                                 identical to Linked Lists in this way. The only way to find a Node somewhere in the middle of a Stack or a Queue, is to start at
                                 the <code class="markup--code markup--p-code">top</code> (or the <code class="markup--code markup--p-code">back</code>) and
                                 traverse downward (or forward) toward the <code class="markup--code markup--p-code">bottom</code> (or
-                                <code class="markup--code markup--p-code">front</code>) one node at a time via each Node’s
+                                <code class="markup--code markup--p-code">front</code>) one node at a time via each Node's
                                 <code class="markup--code markup--p-code">next</code> property.
                             </p>
                             <p name="9706" id="9706" class="graf graf--p graf-after--p">This is a linear time operation, O(n).</p>
                             <h4 name="fa3e" id="fa3e" class="graf graf--h4 graf-after--p">Time Complexity — Insertion and Deletion</h4>
                             <p name="3681" id="3681" class="graf graf--p graf-after--h4">
-                                For Stacks and Queues, insertion and deletion is what it’s all about. If there is one feature a Stack absolutely must have, it’s
+                                For Stacks and Queues, insertion and deletion is what it's all about. If there is one feature a Stack absolutely must have, it's
                                 constant time insertion and removal to and from the <code class="markup--code markup--p-code">top</code> of the Stack (FIFO).
                                 The same applies for Queues, but with insertion occurring at the <code class="markup--code markup--p-code">back</code> and
                                 removal occurring at the <code class="markup--code markup--p-code">front</code> (LIFO).
                             </p>
                             <p name="0fee" id="0fee" class="graf graf--p graf-after--p">
                                 Think about it. When you add a plate to the top of a stack of plates, do you have to iterate through all of the other plates
-                                first to do so? Of course not. You simply add your plate to the top of the stack, and that’s that. The concept is the same for
+                                first to do so? Of course not. You simply add your plate to the top of the stack, and that's that. The concept is the same for
                                 removal.
                             </p>
                             <p name="456e" id="456e" class="graf graf--p graf-after--p">
@@ -654,12 +654,12 @@
                             </p>
                             <h3 name="bd0e" id="bd0e" class="graf graf--h3 graf-after--p">When should we use Stacks and Queues?</h3>
                             <p name="580f" id="580f" class="graf graf--p graf-after--h3">
-                                At this point, we’ve done a lot of work understanding the ins and outs of Stacks and Queues, but we still haven’t really
+                                At this point, we've done a lot of work understanding the ins and outs of Stacks and Queues, but we still haven't really
                                 discussed what we can use them for. The answer is actually…a lot!
                             </p>
                             <p name="a404" id="a404" class="graf graf--p graf-after--p">
                                 For one, Stacks and Queues can be used as intermediate data structures while implementing some of the more complicated data
-                                structures and methods we’ll see in some of our upcoming sections.
+                                structures and methods we'll see in some of our upcoming sections.
                             </p>
                             <p name="6ab5" id="6ab5" class="graf graf--p graf-after--p">
                                 For example, the implementation of the breadth-first Tree traversal algorithm takes advantage of a Queue instance, and the
@@ -682,7 +682,7 @@
                                     Undo/Redo functionality in just about any application. For example:
                                 </li>
                                 <li name="f15d" id="f15d" class="graf graf--li graf-after--li">
-                                    When you’re coding in your text editor, each of the actions you take on your keyboard are recorded by
+                                    When you're coding in your text editor, each of the actions you take on your keyboard are recorded by
                                     <code class="markup--code markup--li-code">push</code>ing that event to a Stack.
                                 </li>
                                 <li name="e303" id="e303" class="graf graf--li graf-after--li">
@@ -716,7 +716,7 @@
                                 </li>
                                 <li name="0ad5" id="0ad5" class="graf graf--li graf-after--li">
                                     As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented
-                                    architecture. A very popular and easy to use example of this is Amazon’s Simple Queue Service (SQS), which is a part of
+                                    architecture. A very popular and easy to use example of this is Amazon's Simple Queue Service (SQS), which is a part of
                                     their Amazon Web Services (AWS) offering.
                                 </li>
                                 <li name="48e7" id="48e7" class="graf graf--li graf-after--li">
@@ -741,7 +741,7 @@
                                     title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"
                                     ><strong class="markup--strong markup--mixtapeEmbed-strong">A list of all of my articles to link to future posts</strong
                                     ><br /><em class="markup--em markup--mixtapeEmbed-em"
-                                        >You should probably skip this one… seriously it’s just for internal use!</em
+                                        >You should probably skip this one… seriously it's just for internal use!</em
                                     >bryanguner.medium.com</a
                                 ><a
                                     href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"
@@ -758,7 +758,7 @@
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz’s gists</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python
                                         |…</em
@@ -806,7 +806,7 @@
                                 ></a>
                             </div>
                             <p name="52f4" id="52f4" class="graf graf--p graf-after--mixtapeEmbed">
-                                <strong class="markup--strong markup--p-strong">Here’s a live code editor where you can mess with any of the examples:</strong>
+                                <strong class="markup--strong markup--p-strong">Here's a live code editor where you can mess with any of the examples:</strong>
                             </p>
                         </div>
                         <div class="section-inner sectionLayout--outsetColumn">

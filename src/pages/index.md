@@ -66,7 +66,7 @@ sections:
 
       - content: >
 
-          *Python has a built in help function that let’s you see a description
+          *Python has a built in help function that let's you see a description
 
           of the source code without having to navigate to it… “-SickNasty …
 
@@ -304,9 +304,9 @@ sections:
 
           isotope of hydrogen. The facility is a one-tenth-volume mock-up of the
 
-          US$22-billion ITER project and has the same doughnut-shaped 'tokamak’
+          US$22-billion ITER project and has the same doughnut-shaped 'tokamak'
 
-          design — the world’s most developed approach to fusion energy. It is
+          design — the world's most developed approach to fusion energy. It is
 
           the first time since 1997 that researchers have done experiments in a
 

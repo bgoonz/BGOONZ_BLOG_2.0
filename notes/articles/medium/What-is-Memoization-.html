@@ -86,7 +86,7 @@
             <header>
                 <h1 class="p-name">What is Memoization?</h1>
             </header>
-            <section data-field="subtitle" class="p-summary">And why this programming paradigm shouldn’t make you cringe.</section>
+            <section data-field="subtitle" class="p-summary">And why this programming paradigm shouldn't make you cringe.</section>
             <section data-field="body" class="e-content">
                 <section name="271c" class="section section--body section--first section--last">
                     <div class="section-divider">
@@ -96,7 +96,7 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="1fec" id="1fec" class="graf graf--h3 graf--leading graf--title">What is Memoization?</h3>
                             <h4 name="3970" id="3970" class="graf graf--h4 graf-after--h3 graf--subtitle">
-                                And why this programming paradigm shouldn’t make you cringe.
+                                And why this programming paradigm shouldn't make you cringe.
                             </h4>
                             <h3 name="a1dd" id="a1dd" class="graf graf--h3 graf-after--h4">The following animated gifs were taken from:</h3>
                             <h4 name="84b6" id="84b6" class="graf graf--h4 graf-after--h3">
@@ -161,8 +161,8 @@
                             <p name="f1f7" id="f1f7" class="graf graf--p graf-after--p">
                                 This approach is near synonymous with another computer science term you may have heard before — caching. However, caching as a
                                 practice is not achieved exclusively by memoizing. Think of a cache as a little bucket where we will keep important information
-                                we don’t want to forget in the near future but that isn’t vitally important or part of the long-term makeup of our application.
-                                It’s less important than the things we need to store in memory but more important than a variable we can discard as soon as we
+                                we don't want to forget in the near future but that isn't vitally important or part of the long-term makeup of our application.
+                                It's less important than the things we need to store in memory but more important than a variable we can discard as soon as we
                                 use it once.
                             </p>
                             <p name="4f8d" id="4f8d" class="graf graf--p graf-after--p">There are two features that comprise memoization:</p>
@@ -187,7 +187,7 @@
                                 Generally speaking, computer memory is cheap and human time is incalculably valuable so we may opt for this approach even when
                                 the largest gains on paper can be made from converting RAM at the expense of execution speed.
                             </p>
-                            <p name="c1d1" id="c1d1" class="graf graf--p graf-after--p">Here’s an example of a problem that has such a structure:</p>
+                            <p name="c1d1" id="c1d1" class="graf graf--p graf-after--p">Here's an example of a problem that has such a structure:</p>
                             <blockquote name="3cb2" id="3cb2" class="graf graf--blockquote graf-after--p">
                                 Using pennies, nickels, dimes, and quarters, how many combinations<br />of coins are there that total 27 cents?
                             </blockquote>
@@ -238,16 +238,16 @@
                                     >ou will have <em class="markup--em markup--p-em">all</em> arguments 2 to 6 stored in the memo.</strong
                                 >
                             </p>
-                            <p name="2240" id="2240" class="graf graf--p graf-after--p">Perhaps you’re not convinced because:</p>
+                            <p name="2240" id="2240" class="graf graf--p graf-after--p">Perhaps you're not convinced because:</p>
                             <ul class="postList">
                                 <li name="9fd5" id="9fd5" class="graf graf--li graf-after--p">
-                                    You didn’t improve the speed of the algorithm by an order of Big-O (it is<br />still O(n)).
+                                    You didn't improve the speed of the algorithm by an order of Big-O (it is<br />still O(n)).
                                 </li>
-                                <li name="3867" id="3867" class="graf graf--li graf-after--li">The code uses some global variable, so it’s kind of ugly.</li>
+                                <li name="3867" id="3867" class="graf graf--li graf-after--li">The code uses some global variable, so it's kind of ugly.</li>
                             </ul>
                             <h3 name="7545" id="7545" class="graf graf--h3 graf-after--li">Memoizing the Fibonacci generator</h3>
                             <p name="b42d" id="b42d" class="graf graf--p graf-after--h3">
-                                Here’s a <em class="markup--em markup--p-em">naive</em> implementation of a function that calculates the Fibonacci<br />number
+                                Here's a <em class="markup--em markup--p-em">naive</em> implementation of a function that calculates the Fibonacci<br />number
                                 for a given input.
                             </p>
                             <pre
@@ -258,7 +258,7 @@
                             <pre name="8605" id="8605" class="graf graf--pre graf-after--pre">fib(6);     // =&gt; 8</pre>
                             <p name="6dc7" id="6dc7" class="graf graf--p graf-after--pre">
                                 The time complexity of this function is not super intuitive to describe because<br />the code branches twice recursively. Fret
-                                not! You’ll find it useful to<br />visualize the calls needed to do this with a tree. When reasoning about the time complexity
+                                not! You'll find it useful to<br />visualize the calls needed to do this with a tree. When reasoning about the time complexity
                                 for recursive functions, draw a tree that helps you see the calls. Every node of the tree represents a call of the recursion:
                             </p>
                             <figure name="874d" id="874d" class="graf graf--figure graf-after--p">
@@ -287,7 +287,7 @@
                             </ul>
                             <p name="4bca" id="4bca" class="graf graf--p graf-after--li">
                                 See for yourself, try running <code class="markup--code markup--p-code">fib(50)</code> - you&#39;ll be waiting for quite a lot
-                                longer than you’ve gotten used to waiting for a program to run in the last decade.
+                                longer than you've gotten used to waiting for a program to run in the last decade.
                             </p>
                             <p name="8712" id="8712" class="graf graf--p graf-after--p">The green regions highlighted above are repetitive.</p>
                             <p name="a5fd" id="a5fd" class="graf graf--p graf-after--p">
@@ -304,7 +304,7 @@
                                 <script src="https://gist.github.com/bgoonz/53cfa037f5dea574fbfed77fc70e7718.js"></script>
                             </figure>
                             <p name="40bd" id="40bd" class="graf graf--p graf-after--figure">
-                                You can see the marked nodes (function calls) that access the memo in green.<br />It’s easy to see that this version of the
+                                You can see the marked nodes (function calls) that access the memo in green.<br />It's easy to see that this version of the
                                 Fibonacci generator will do far fewer<br />computations as <code class="markup--code markup--p-code">n</code> grows larger! In
                                 fact, this memoization has brought the time complexity down to linear <code class="markup--code markup--p-code">O(n)</code> time
                                 because the tree only branches on the left side. This is an enormous gain if you recall the complexity of class hierarchy.
@@ -315,7 +315,7 @@
                                 many overlapping sub-problems.
                             </p>
                             <p name="bb33" id="bb33" class="graf graf--p graf-after--p">
-                                You’ll find it most useful to draw out the visual tree first. If you notice duplicate sub-trees, time to memoize. Here are the
+                                You'll find it most useful to draw out the visual tree first. If you notice duplicate sub-trees, time to memoize. Here are the
                                 hard and fast<br />rules you can use to memoize a slow algorithm:
                             </p>
                             <ol class="postList">
@@ -327,14 +327,14 @@
                                     function, and their values will represent the results for those arguments.
                                 </li>
                                 <li name="ab4e" id="ab4e" class="graf graf--li graf-after--li">
-                                    Add a base case condition to the function that returns the stored value if<br />the function’s argument is in the memo.
+                                    Add a base case condition to the function that returns the stored value if<br />the function's argument is in the memo.
                                 </li>
                                 <li name="3e67" id="3e67" class="graf graf--li graf-after--li">
-                                    Before you return the result of the recursive case, store it in the memo as a<br />value and make the function’s argument
+                                    Before you return the result of the recursive case, store it in the memo as a<br />value and make the function's argument
                                     its key.
                                 </li>
                             </ol>
-                            <p name="f1c1" id="f1c1" class="graf graf--p graf-after--li">Here’s the solution to the aforementioned coin problem:</p>
+                            <p name="f1c1" id="f1c1" class="graf graf--p graf-after--li">Here's the solution to the aforementioned coin problem:</p>
                             <figure name="4f85" id="4f85" class="graf graf--figure graf--iframe graf-after--p">
                                 <script src="https://gist.github.com/bgoonz/16e4e3f983ae3cf0a7794a7864d0f529.js"></script>
                             </figure>

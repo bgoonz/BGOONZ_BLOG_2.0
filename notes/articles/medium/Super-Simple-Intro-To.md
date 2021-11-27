@@ -8,9 +8,9 @@ What is HTML, CSS & JS and why do we need all three?
 
 #### What is HTML, CSS & JS and why do we need all three?
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" /></figure>HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it’s the “Style” it’s how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" /></figure>HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it's the “Style” it's how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
 
-For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages working in unison to form an experience you’re already familiar with if you’re reading this…
+For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages working in unison to form an experience you're already familiar with if you're reading this…
 
 **I mean most likely… unless you printed it because you hate trees.**
 
@@ -44,17 +44,17 @@ In this instance, the image source (src) and the alt text (alt) are attributes o
 2.  <span id="c99f">When using multiple tags, the tags must be **closed in the order in which they were opened**. For example:</span>
 3.  <span id="9eb5">`<strong><em>This is really important!</em></strong>`</span>
 
-Let’s have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this
+Let's have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this
 
 ### How to get started
 
-If you’re using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won’t need to install any extensions. If you’re working in Atom you’ll need to install the Emmet plugin, which can be <a href="https://atom.io/packages/emmet" class="markup--anchor markup--p-anchor">found here</a>.
+If you're using Visual Studio Code, congrats! There is Emmet support built into VSCode, so you won't need to install any extensions. If you're working in Atom you'll need to install the Emmet plugin, which can be <a href="https://atom.io/packages/emmet" class="markup--anchor markup--p-anchor">found here</a>.
 
 ### Basic Syntax
 
 **_HTML Boilerplate_**
 
-If you’ve been working in VSCode, you’ve probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is **_html:5_**. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
+If you've been working in VSCode, you've probably seen Emmet syntax highlighting when working in HTML documents. In my opinion, the most convenient Emmet shortcut is **_html:5_**. This will create an HTML boilerplate, and fill out metadata tags in the head of your document.
 
     html:5
 
@@ -64,7 +64,7 @@ If you’ve been working in VSCode, you’ve probably seen Emmet syntax highligh
 
 That one small shortcut autogenerates all this metadata and head and body tags:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LgiaI-W7QB4mtifR.png" class="graf-image" /></figure>#### Here’s some slightly more advanced boilerplate for you to use as a starting point in your projects.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LgiaI-W7QB4mtifR.png" class="graf-image" /></figure>#### Here's some slightly more advanced boilerplate for you to use as a starting point in your projects.
 
 ### HTML Language
 
@@ -85,14 +85,14 @@ There are generally two types of tags in HTML:
 HTML tags have two main types: **block-level** and **inline tags**.
 
 1.  <span id="bd59">Block-level elements take up the full available space and always start a new line in the document. Headings and paragraphs are a great example of block tags.</span>
-2.  <span id="2479">Inline elements only take up as much space as they need and don’t start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline tags.</span>
+2.  <span id="2479">Inline elements only take up as much space as they need and don't start a new line on the page. They usually serve to format the inner contents of block-level elements. Links and emphasized strings are good examples of inline tags.</span>
 
 ### Block-Level Tags
 
 The three block level tags every HTML document needs to contain are **&lt;html&gt;**, **&lt;head&gt;**, and **&lt;body&gt;**.
 
 1.  <span id="bd5d">The **&lt;html&gt;&lt;/html&gt;** tag is the highest level element that encloses every HTML page.</span>
-2.  <span id="c015">The **&lt;head&gt;&lt;/head&gt;** tag holds meta information such as the page’s title and charset.</span>
+2.  <span id="c015">The **&lt;head&gt;&lt;/head&gt;** tag holds meta information such as the page's title and charset.</span>
 3.  <span id="5ca8">Finally, the **&lt;body&gt;&lt;/body&gt;** tag encloses all the content that appears on the page.</span>
 
 -   <span id="7864">Paragraphs are enclosed by **_&lt;p&gt;&lt;/p&gt;_**, while blockquotes use the **_&lt;blockquote&gt;&lt;/blockquote&gt;_** tag.</span>
@@ -128,7 +128,7 @@ Although this tag can be implied, or not required, with HTML, it is required to 
 
 Many inline tags are used to format text. For example, a **&lt;strong&gt;&lt;/strong&gt;** tag would render an element in **bold**, whereas _&lt;em&gt;&lt;/em&gt;_ tags would show it in _italics_.
 
-Hyperlinks are also inline elements that require **_&lt;a&gt;&lt;/a&gt;_** tags and **href** attributes to indicate the link’s destination:
+Hyperlinks are also inline elements that require **_&lt;a&gt;&lt;/a&gt;_** tags and **href** attributes to indicate the link's destination:
 
 1.  <span id="f67d">**&lt;a** **href=**”https://example.com/"**&gt;**Click me!**&lt;/a&gt;**</span>
 
@@ -184,7 +184,7 @@ _6 types from largest(h1) to smallest (h6)_
 
 **ITALICS:** There are two ways to use it, the first one is the &lt;i&gt; tag and the second one is the &lt;em&gt; tag. They both italicize the text<a href="https://emojipedia.org/person-shrugging/" class="markup--anchor markup--p-anchor">🤷</a>
 
-&lt;i&gt; _this is fancy text that’s too good to for us_&lt;/i&gt;
+&lt;i&gt; _this is fancy text that's too good to for us_&lt;/i&gt;
 
 \_\_\_\_\_\_\_\_\_\_\_
 
@@ -200,11 +200,11 @@ _6 types from largest(h1) to smallest (h6)_
 
 As such &lt;title&gt;This is the title&lt;/title&gt; it is always found between &lt;head&gt; tags and not in the body of the page where all the content that gets rendered on the page is contained.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" /></figure>### Here’s a handy Cheat Sheet:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*CSqPk3mD0fR-oOAb" class="graf-image" /></figure>### Here's a handy Cheat Sheet:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c9Vyer_N97InJsUB.png" class="graf-image" /></figure>Below I am going to Include a gist that contains html code that uses pretty much every tag I could think of off the top of my head…
 
-If it’s not included here I promise you it’s seldom used by most webpages.
+If it's not included here I promise you it's seldom used by most webpages.
 
 Below that I will embed an image of the webpage that it renders too….
 
@@ -214,7 +214,7 @@ that super small text at the bottom is actually one giant button:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

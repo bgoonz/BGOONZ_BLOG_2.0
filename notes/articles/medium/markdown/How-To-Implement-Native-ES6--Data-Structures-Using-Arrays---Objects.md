@@ -24,7 +24,7 @@ Smart data structures and dumb code works better than the other way around -“E
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*mAq2n01VTypXYWh0.jpg" class="graf-image" /></figure><a href="https://stackoverflow.com/a/65771454/15158587" class="markup--anchor markup--p-anchor">Abstract data types, commonly abbreviated ADTs, are a way of classifying data structures based on how they are used and the behaviors they provide.</a> They do not specify how the data structure must be implemented or laid out in memory, but simply provide a minimal expected interface and set of behaviors. For example, a stack is an abstract data type that specifies a linear data structure with LIFO (last in, first out) behavior. Stacks are commonly implemented using arrays or linked lists, but a needlessly complicated implementation using a binary search tree is still a valid implementation. To be clear, it is incorrect to say that stacks are arrays or vice versa. An array can be used as a stack. Likewise, a stack can be implemented using an array.
 
-Since abstract data types don’t specify an implementation, this means it’s also incorrect to talk about the time complexity of a given abstract data type. An associative array may or may not have O(1) average search times. An associative array that is implemented by a hash table does have O(1) average search times.
+Since abstract data types don't specify an implementation, this means it's also incorrect to talk about the time complexity of a given abstract data type. An associative array may or may not have O(1) average search times. An associative array that is implemented by a hash table does have O(1) average search times.
 
 Further Reading:
 

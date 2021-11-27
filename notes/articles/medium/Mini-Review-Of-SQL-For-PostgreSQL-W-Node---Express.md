@@ -14,7 +14,7 @@ What is a Query?
 
 -   <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
 -   <span id="e626">`psql -U postgres`</span>
--   <span id="f34d">Let’s us access the postgres server as the user 'postgres’</span>
+-   <span id="f34d">Let's us access the postgres server as the user 'postgres'</span>
 -   <span id="113b">`-U` stands for 'user'.</span>
 -   <span id="60c5">`\q` is used to quit postgres at any time.</span>
 
@@ -83,7 +83,7 @@ What is a Query?
     SELECT name, breed FROM puppies
       WHERE breed IN ('Corgi', 'Beagle', 'Yorkshire Terrier');
 
--   <span id="94cc">Use the structure WHERE \[col\] IN ('val’, 'val2’…)</span>
+-   <span id="94cc">Use the structure WHERE \[col\] IN ('val', 'val2'…)</span>
 
 **WHERE clause for a range of values**
 
@@ -161,7 +161,7 @@ What is a Query?
 
 ### Using INNER JOIN
 
--   <span id="8c61">Relationships are key in RD’s.</span>
+-   <span id="8c61">Relationships are key in RD's.</span>
 -   <span id="b080">We create table associations through _foreign keys_ and _primary keys_.</span>
 
 <!-- -->
@@ -253,7 +253,7 @@ What is a Query?
 1.  <span id="f73a">`Apply Normalization Rules.`</span>
 
 -   <span id="16ec">`Normalization` : Process of optimizing the database structure so that redundancy and confusion are eliminated.</span>
--   <span id="6e1e">Rules are called 'normal forms’</span>
+-   <span id="6e1e">Rules are called 'normal forms'</span>
 
 1.  <span id="950c">First normal form.</span>
 
@@ -268,7 +268,7 @@ What is a Query?
 
 1.  <span id="7c97">Third normal form.</span>
 
--   <span id="a141">Eliminate fields that do not depend on the table’s key.</span>
+-   <span id="a141">Eliminate fields that do not depend on the table's key.</span>
 
 1.  <span id="6611">Boyce-Codd normal form.</span>
 2.  <span id="e505">Fifth normal form.</span>
@@ -357,7 +357,7 @@ What is a Query?
 
 -   <span id="1cd4">A SQL transaction has four properties known collectively as `ACID` (Atomic, Consistent, Isolated, and Durable)</span>
 -   <span id="7c59">`Atomicity` : All changes to data are performed as if they are a single operation.</span>
--   <span id="1e1b">You can also refer to the A as 'Abortability’</span>
+-   <span id="1e1b">You can also refer to the A as 'Abortability'</span>
 -   <span id="34fa">I.E. if an app transfers funds from one account to another, the atomic nature of transactions will ensure that if a debt is successfully made, the credit will be properly transferred.</span>
 -   <span id="1be1">`Consistency` : Data is in a consistent start when a transaction starts and ends.</span>
 -   <span id="0ffb">I.E. if a transfer is scheduled, this prop ensures total value of funds in both accounts is the same at the start and end of a transaction.</span>
@@ -462,8 +462,8 @@ What is a Query?
 **Should I use a JOIN or a subquery?**
 
 -   <span id="569f">Joins are better when you want to combine rows from one or more tables based on a match condition.</span>
--   <span id="3175">Subqueries work great when you’re only returning a single value.</span>
--   <span id="b6fb">When returning multiple rows, you could go with either subQ’s or joins.</span>
+-   <span id="3175">Subqueries work great when you're only returning a single value.</span>
+-   <span id="b6fb">When returning multiple rows, you could go with either subQ's or joins.</span>
 
 ---
 

@@ -65,7 +65,7 @@ Explanation for Rotate Right
 
 **We are being asked for two things:**
 
-1.  <span id="0000">To return an array with all the elements shifted over 'num’ times.</span>
+1.  <span id="0000">To return an array with all the elements shifted over 'num' times.</span>
 2.  <span id="8d90">To `NOT` mutate the original array</span>
 
 **Step 1.**  
@@ -93,7 +93,7 @@ We need to put some executable code within our for loop to be run during every c
 -   <span id="e31e">`['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)</span>
 -   <span id="aa2f">To accomplish this we first need to '`pop`' off or remove our last element.</span>
 -   <span id="d19e">Two things happen when we use this built-in function.</span>
--   <span id="687c">Our copied array is mutated to lose it’s last ele.</span>
+-   <span id="687c">Our copied array is mutated to lose it's last ele.</span>
 -   <span id="392e">The removed element is stored in the variable we assigned to the function.</span>
 -   <span id="7c06">Our second step is to add it to the start of our array, to do this we can use `unshift`.</span>
 -   <span id="4a0f">By inputting the variable we are using to hold our removed element into the parameter of unshift we are adding our element to the front of the array.</span>
@@ -108,7 +108,7 @@ Now that our for loop has ended and our copied array looks just like how the ans
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

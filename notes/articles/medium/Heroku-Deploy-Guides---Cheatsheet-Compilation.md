@@ -15,10 +15,10 @@ Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Ja
 > Basic Assumptions You want to deploy some straight-up HTML, CSS, JS, maybe a few images. Nothing fancy here. You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site) The root directory contains a main HTML page, e.g. index.html A Heroku app and remote are set up and ready to go Steps Add a file called composer.json to the root directory by running touch composer.json Add a file called index.php to the root directory by running touch index.php Rename the homepage (e.g. index.html) to home.html In index.php, add the following line: In composer.json, add the following line: {} Run git push heroku master Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app ☺).
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 ### Steps:
 
@@ -38,7 +38,7 @@ We can start the application by running `node app.js`. Then we can try it out at
 
 The next step is to choose a version control system and to place our code in a development platform in a repository.
 
-The most popular version control system is <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git</a> along with <a href="https://github.com/" class="markup--anchor markup--p-anchor">Github</a> as a development platform, so that’s what we’ll use here.
+The most popular version control system is <a href="https://git-scm.com/" class="markup--anchor markup--p-anchor">Git</a> along with <a href="https://github.com/" class="markup--anchor markup--p-anchor">Github</a> as a development platform, so that's what we'll use here.
 
 On GitHub, go ahead and create a new repository for your application, like this:
 
@@ -50,7 +50,7 @@ For that, we need to create a new file `.gitignore` and inside it write the file
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*T-9QyGzUdWvFuA-D.PNG" class="graf-image" /></figure>Now, we can write the commands listed in the picture above (the one from GitHub).
 
-If you ran the commands correctly, then it’ll be on your repository’s page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
+If you ran the commands correctly, then it'll be on your repository's page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.PNG" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
 
@@ -60,7 +60,7 @@ First, create a new application on Heroku and follow the steps listed on the pla
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*J9tMV455odrM00UJ.PNG" class="graf-image" /></figure>Once the application has been created, a window similar to this should appear:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*cowa0t6DgTqjUdjR.PNG" class="graf-image" /></figure>Now, if you look at the navigation at the top, you’ll see `Overview`, `Resources`, `Deploy`, `Metrics` and so on. Be sure that `Deploy` is selected. Then on the second row, click on the GitHub icon.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*cowa0t6DgTqjUdjR.PNG" class="graf-image" /></figure>Now, if you look at the navigation at the top, you'll see `Overview`, `Resources`, `Deploy`, `Metrics` and so on. Be sure that `Deploy` is selected. Then on the second row, click on the GitHub icon.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kAZI5kiisUiZ2Z9D.PNG" class="graf-image" /></figure>Search for the desired application, which is `demo-deploy-app-09` in our case. Then click `Connect`.
 
@@ -74,7 +74,7 @@ Once the application has been deployed, you can click on View to open your appli
 
 If you open the application at this point, you should see something like this:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*rMZ8aneIjG3nx211.PNG" class="graf-image" /></figure>That’s right, an error. That’s because Heroku doesn’t know how to start our application.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*rMZ8aneIjG3nx211.PNG" class="graf-image" /></figure>That's right, an error. That's because Heroku doesn't know how to start our application.
 
 If you remember, we ran the command `node app.js` to start the application locally.  
 Heroku has no way of knowing what commands it needs to run to start the application, and that's why it threw an error.

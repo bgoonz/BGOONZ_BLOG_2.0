@@ -1,15 +1,15 @@
 # Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.
 
-“JavaScript’s global scope is like a public toilet. You can’t avoid going in there, but try to limit your contact with surfaces when you…
+“JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with surfaces when you…
 
 ---
 
 ### Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*5M3vbTjiEYMUWvLu" alt="Photo by Florian Olivo on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@florianolv?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Florian Olivo</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><span class="graf-dropCap"><span class="graf-dropCapQuote">“</span>J</span>avaScript’s global scope is like a public toilet. You can’t avoid going in there, but try to limit your contact with surfaces when you do.”  
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*5M3vbTjiEYMUWvLu" alt="Photo by Florian Olivo on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@florianolv?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Florian Olivo</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><span class="graf-dropCap"><span class="graf-dropCapQuote">“</span>J</span>avaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with surfaces when you do.”  
 ― **Dmitry Baranowski**
 
-Here’s another (much) more simple article I wrote on the subject:
+Here's another (much) more simple article I wrote on the subject:
 
 <a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/bgoonz/closures-in-javascript-1moc"><strong>Closures In Javascript</strong><br />
 <em>Answer A closure is a function defined inside another function and has access to its lexical scope even when it is…</em>dev.to</a><a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -34,12 +34,12 @@ Quiz yourself with this website I made:
 
 ### Vocab (most of these will be detailed many times over in this article!)
 
--   <span id="4f93">**Scope:** “Scope is the set of rules that determines where and how a variable (identifier) can be looked-up.” — Kyle Simpson, You Don’t Know JS: Scope & Closure</span>
+-   <span id="4f93">**Scope:** “Scope is the set of rules that determines where and how a variable (identifier) can be looked-up.” — Kyle Simpson, You Don't Know JS: Scope & Closure</span>
 -   <span id="ceff">**Function Scope:** Every variable defined in a function, is available for the entirety of that function.</span>
 -   <span id="b34e">**Global Scope:** “The scope that is visible in all other scopes.” — MDN</span>
 -   <span id="df88">**Global Variable:** A variable defined at the Global Scope.</span>
 -   <span id="ae7a">**IIFE:** Imediatly-Invoked Function Expression — a function wrapped in `()` to create an expression, and immediatly followed by a pair of `()` to invoke that function imediatly.</span>
--   <span id="42a6">**Closure:** “Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers’ the environment in which it was created.” — MDN</span>
+-   <span id="42a6">**Closure:** “Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.” — MDN</span>
 -   <span id="023f">**Variable Shadowing:** “occurs when a variable declared within a certain scope … has the same name as a variable declared in an outer scope.” — Wikipedia</span>
 -   <span id="7ba5">**for statement:** “The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement or a set of statements executed in the loop.” — MDN</span>
 -   <span id="6f95">**initialization:** “An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable. This expression may optionally declare new variables with the var keyword. These variables are not local to the loop, i.e. they are in the same scope the for loop is in. The result of this expression is discarded.” — MDN</span>
@@ -50,7 +50,7 @@ Quiz yourself with this website I made:
 
 <figure><img src="https://cdn-images-1.medium.com/max/2560/1*A1vTM5TdeUhUIfWxemwUEw.png" class="graf-image" /></figure>
 
-#### I am going to try something new this article… it’s called **spaced repetition.**
+#### I am going to try something new this article… it's called **spaced repetition.**
 
 > <a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--blockquote-anchor"><strong>“Spaced repetition</strong></a> is an <a href="https://en.wikipedia.org/wiki/Evidence-based_learning" class="markup--anchor markup--blockquote-anchor">evidence-based learning</a> technique that is usually performed with <a href="https://en.wikipedia.org/wiki/Flashcard" class="markup--anchor markup--blockquote-anchor" title="Flashcard">flashcards</a>. Newly introduced and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological <a href="https://en.wikipedia.org/wiki/Spacing_effect" class="markup--anchor markup--blockquote-anchor" title="Spacing effect">spacing effect</a>. The use of spaced repetition has been proven to increase rate of learning.”
 
@@ -114,7 +114,7 @@ Lexical scope is the ability of the inner function to access the outer scope in 
 
 #### <a href="https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/" class="markup--anchor markup--h4-anchor">source</a> : https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/
 
-The first _Execution Context_ ( a word that we don’t have to worry about the exact meaning of yet) that gets created when the JavaScript engine runs your code is called the “Global Execution Context”.
+The first _Execution Context_ ( a word that we don't have to worry about the exact meaning of yet) that gets created when the JavaScript engine runs your code is called the “Global Execution Context”.
 
 Initially this Execution Context will consist of two things —
 
@@ -124,7 +124,7 @@ Initially this Execution Context will consist of two things —
 
 -   <span id="bdfe">**_a_ variable called** `this`.</span>
 
-> By default the`this` keyword will act as a reference to global object which will be `window` if you’re running JavaScript in the browser or `global` if you’re running it in a Node environment.
+> By default the`this` keyword will act as a reference to global object which will be `window` if you're running JavaScript in the browser or `global` if you're running it in a Node environment.
 
 ### REMEMBER:
 
@@ -134,7 +134,7 @@ Initially this Execution Context will consist of two things —
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NMGRtcYlwffqSUSH.png" class="graf-image" /></figure>Above we can see that even without any code, the Global Execution Context will still consist of two things — `window` and `this`. This is the Global Execution Context in its most basic form.
 
-Let’s step things up and see what happens when we start actually adding code to our program. Let’s start with adding a few variables.
+Let's step things up and see what happens when we start actually adding code to our program. Let's start with adding a few variables.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*P8DG5hIKJO7thsnz.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*J9juq03-KlcKReSF.png" class="graf-image" /></figure>The key take away is that each Execution Context has two separate phases, a `Creation` phase and an `Execution` phase and each phase has its own unique responsibilities.
 
@@ -145,18 +145,18 @@ Let’s step things up and see what happens when we start actually adding code t
 #### Execution Context ≠(NOT EQUAL)≠≠≠Scope
 
 1.  <span id="0fcc">The **global execution context** is created **_before_** any code is executed.</span>
-2.  <span id="de32">Whenever a function is _executed_ invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling 'doSomething()’, a **new execution context** gets created.</span>
-3.  <span id="20c3">**Every** execution context provides `this` keyword, which points to an **object** to which the current code that’s being executed belongs.</span>
+2.  <span id="de32">Whenever a function is _executed_ invoked (this means the function is told to run… i.e. after the doSomething function has been declared … calling 'doSomething()', a **new execution context** gets created.</span>
+3.  <span id="20c3">**Every** execution context provides `this` keyword, which points to an **object** to which the current code that's being executed belongs.</span>
 
 For more info read about <a href="https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd" class="markup--anchor markup--p-anchor">Event Queue and Call Stack</a>
 
 ---
 
-#### More formal definition from: <a href="https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6" class="markup--anchor markup--h4-anchor">Misa Ogura’s article on the subject</a>
+#### More formal definition from: <a href="https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6" class="markup--anchor markup--h4-anchor">Misa Ogura's article on the subject</a>
 
 In JavaScript, **execution context** is an abstract concept that holds _information about the environment_ within which the current code is being executed.
 
-**Remember**: the JavaScript engine creates the global execution context before it starts to execute any code. From that point on, a new execution context gets created _every time_ a function is executed, as the engine parses through your code. In fact, the global execution context is nothing special. It’s just like any other execution context, except that it gets created by default.
+**Remember**: the JavaScript engine creates the global execution context before it starts to execute any code. From that point on, a new execution context gets created _every time_ a function is executed, as the engine parses through your code. In fact, the global execution context is nothing special. It's just like any other execution context, except that it gets created by default.
 
 ---
 
@@ -167,7 +167,7 @@ In the Global `Creation` phase, the JavaScript engine will
 3.  <span id="b1a7">Set up memory space for variables and functions.</span>
 4.  <span id="7656">Assign variable declarations a default value of “undefined” while placing any function declarations in memory.</span>
 
-**It’s not until the** `Execution` **phase where the JavaScript engine starts running your code line by line and executing it.**
+**It's not until the** `Execution` **phase where the JavaScript engine starts running your code line by line and executing it.**
 
 We can see this flow from `Creation` **phase to** `Execution` **phase** in the GIF **below.** 🠗🠗🠗🠗🠗🠗
 
@@ -243,20 +243,20 @@ Variables declared with `let` or `const` cannot be re-declared in the same scope
     }
     //Uncaught SyntaxError: Identifier 'x' has already been declared
 
-Maybe we don’t even have to care about this, as `var` has started to become obsolete.
+Maybe we don't even have to care about this, as `var` has started to become obsolete.
 
 -   <span id="504b">Only the var keyword creates function-scoped variables (however a var declared variable may be globally scoped if it is declared outside of a nested function in the global scope), this means our declared var keyword variable will be confined to the scope of our current function.</span>
 
-Why you shouldn’t use var:
+Why you shouldn't use var:
 
 1.  <span id="491f">No error is thrown if you declare the same variable twice using var (conversely, both let and const will throw an error if a variable is declared twice)</span>
-2.  <span id="b04e">Variables declared with var are not block scoped (although they are function scoped), while with let and const they are. This is important because what’s the point of block scoping if you’re not going to use it. So using var in this context would require a situation in which a variable declared inside a function would need to be used in the global scope. I’m not able to think of any situations where that would be absolutely necessary, but perhaps they exist.</span>
+2.  <span id="b04e">Variables declared with var are not block scoped (although they are function scoped), while with let and const they are. This is important because what's the point of block scoping if you're not going to use it. So using var in this context would require a situation in which a variable declared inside a function would need to be used in the global scope. I'm not able to think of any situations where that would be absolutely necessary, but perhaps they exist.</span>
 
 ### REMEMBER:
 
 ### Var===🗑🚮👎🏽🤮
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wseqGvDH8TpNBGq9" alt="My response to anyone who might comment in defense of using var" class="graf-image" /><figcaption><strong>My response to anyone who might comment in defense of using var</strong></figcaption></figure>Also on a more serious note… if you have var in your projects in 2021 …hiring managers who peek at your projects to see your code quality will assume it was copy pasted from someone else’s legacy code circa 2014.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*wseqGvDH8TpNBGq9" alt="My response to anyone who might comment in defense of using var" class="graf-image" /><figcaption><strong>My response to anyone who might comment in defense of using var</strong></figcaption></figure>Also on a more serious note… if you have var in your projects in 2021 …hiring managers who peek at your projects to see your code quality will assume it was copy pasted from someone else's legacy code circa 2014.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KRoeNth4AXswt_9s.jpg" class="graf-image" /></figure>**Hoisting with function-scoped variables**
 
@@ -286,7 +286,7 @@ When the JavaScript engine encounters a call to `helloWorld()`, it will look int
 
 ### Hoisting Function Expressions
 
-Only function declarations are hoisted in JavaScript, function expressions are not hoisted. For example: this code won’t work.
+Only function declarations are hoisted in JavaScript, function expressions are not hoisted. For example: this code won't work.
 
     helloWorld();  // TypeError: helloWorld is not a functionvar helloWorld = function(){
       console.log('Hello World!');
@@ -302,7 +302,7 @@ So this code will work.
 
 ### Hoisting var variables:
 
-Let’s look at some examples to understand hoisting in case of `var` variables.
+Let's look at some examples to understand hoisting in case of `var` variables.
 
     console.log(a); // outputs 'undefined'
     var a = 3;
@@ -327,7 +327,7 @@ Things that create block-scopes:
 -   <span id="9a99">While Loops</span>
 -   <span id="dc88">Switch Statements</span>
 -   <span id="c5fb">For Loops</span>
--   <span id="089b">Curly Boiz **'{}’ ….. anything between cury brackets is scoped to within those brackets.**</span>
+-   <span id="089b">Curly Boiz **'{}' ….. anything between cury brackets is scoped to within those brackets.**</span>
 
 #### **Properties of Const declared variables:**
 
@@ -355,7 +355,7 @@ Things that create block-scopes:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*hpZDzz--eVsA-3o7.png" class="graf-image" /></figure>Variables defined outside any function, block, or module scope have global scope. Variables in global scope can be accessed from everywhere in the application.
 
-When a module system is enabled it’s harder to make global variables, but one can still do it. By defining a variable in HTML, outside any function, a global variable can be created:
+When a module system is enabled it's harder to make global variables, but one can still do it. By defining a variable in HTML, outside any function, a global variable can be created:
 
 When there is no module system in place, it is a lot easier to create global variables. A variable declared outside any function, in any file, is a global variable.
 
@@ -397,7 +397,7 @@ In a way, we can imagine a module as a self-executing function that takes the im
 
 ### **Closures and Scope** Basic Closure Rules:
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*iyFQ5y0LysnsrvOc.png" class="graf-image" /></figure>-   <span id="cb9d">Closures have access to all variables in it’s lexical environment.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/600/0*iyFQ5y0LysnsrvOc.png" class="graf-image" /></figure>-   <span id="cb9d">Closures have access to all variables in it's lexical environment.</span>
 -   <span id="f579">A closure will keep reference to all the variables when it was defined **even if the outer function has returned**.</span>
 
 **Applications of Closures**
@@ -409,13 +409,13 @@ In a way, we can imagine a module as a self-executing function that takes the im
 
 ### OVERVIEW
 
-Let’s look at the Window/Console in a browser/node environment. Type `window` to your chrome console. JavaScript is executed in this context, also known as the `global scope`.
+Let's look at the Window/Console in a browser/node environment. Type `window` to your chrome console. JavaScript is executed in this context, also known as the `global scope`.
 
 There are two types of scope in javascript, `Global Vs. Local` and that this is important to understand in terms of a computer program written in JavaScript.
 
 When a function is declared and created, a new `scope` is also created. Any variables declared within that function's scope will be `enclosed` in a lexical/private scope that belongs to that function. Also, it is important to remember that functions look `outward` for context. If some variable isn't defined in a function's scope, the function will look outside the scope chain and search for a variable being referenced in the outer scope. This is what closure is all about.
 
-In it’s most simplest of forms this is a closure:
+In it's most simplest of forms this is a closure:
 
     const foo = 'bar';
     function returnFoo () {
@@ -424,9 +424,9 @@ In it’s most simplest of forms this is a closure:
     returnFoo();
     // -> reaches outside its scope to find foo because it doesn't exist inside of return Foo's scope when foo is referenced.
 
-The function body (code inside returnFoo) has access to the outside scope (code outside of returnFoo) and can access that 'foo’ variable.
+The function body (code inside returnFoo) has access to the outside scope (code outside of returnFoo) and can access that 'foo' variable.
 
-Let’s look at another example:
+Let's look at another example:
 
     const lastName = 'Bob';
     function greet() {
@@ -435,15 +435,15 @@ Let’s look at another example:
     }
     console.log(lastName);
 
-Not much different than the idea presented above, but the thought remains the same. When 'greet’ is called, it has no context in its local scope of finding `lastName` so, it looks outside its scope to find it and use the `lastName` that is found there.
+Not much different than the idea presented above, but the thought remains the same. When 'greet' is called, it has no context in its local scope of finding `lastName` so, it looks outside its scope to find it and use the `lastName` that is found there.
 
-Let’s take this a step further. In the given examples, we’ve seen that we have created two environments for our code. The first would be the global environment where `lastName` and `greet` exist. The second would be the local environment where the alert function is called. Let's represent those two environments like this:
+Let's take this a step further. In the given examples, we've seen that we have created two environments for our code. The first would be the global environment where `lastName` and `greet` exist. The second would be the local environment where the alert function is called. Let's represent those two environments like this:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*fpIwHvwpDYxatfE9.png" class="graf-image" /></figure>### What is a closure?
 
-A closure is an inner function that has access to the outer (enclosing) function’s variables — scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
+A closure is an inner function that has access to the outer (enclosing) function's variables — scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global variables.
 
-The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters. Note that the inner function cannot call the outer function’s arguments object, however, even though it can call the outer function’s parameters directly.
+The inner function has access not only to the outer function's variables, but also to the outer function's parameters. Note that the inner function cannot call the outer function's arguments object, however, even though it can call the outer function's parameters directly.
 
 You create a closure by adding a function inside another function.
 
@@ -492,7 +492,7 @@ We can run JS in strict mode by tagging `use strict` at the top of our program.
 
 ### Arrow Functions (Fat Arrows)
 
-side note … if you don’t know what this means ignore it… but if you write an arrow function that utilizes an implicit return… that’s roughly equivalent to what is referred to as a lambda function in other languages.
+side note … if you don't know what this means ignore it… but if you write an arrow function that utilizes an implicit return… that's roughly equivalent to what is referred to as a lambda function in other languages.
 
 -   <span id="4190">`=>` : A more concise way of declaring a function and also considers the behavior of `this` and context.</span>
 
@@ -509,11 +509,11 @@ As you can see the arrow function is shorter and easier to read.
 
 -   <span id="635b">Arrow functions, _unlike_ normal functions, carry over context, binding `this` lexically.</span>
 -   <span id="b4db">Value of `this` inside an arrow function is not dependent on how it is invoked.</span>
--   <span id="4b3f">Because arrow functions already have a _bound context_, you can’t reassign `this`.</span>
+-   <span id="4b3f">Because arrow functions already have a _bound context_, you can't reassign `this`.</span>
 
 ---
 
-#### Phewh… that’s a lot… let’s go over some of that again!
+#### Phewh… that's a lot… let's go over some of that again!
 
 ### Block Scope Review:
 
@@ -541,27 +541,27 @@ In contrast, the `var` declaration has no block scope:
 
 ### Closures Spaced Repetition
 
-**1. Closures have access to the outer function’s variable even after the outer function returns:**
+**1. Closures have access to the outer function's variable even after the outer function returns:**
 
-One of the most important features with closures is that the inner function still has access to the outer function’s variables even after the outer function has returned.
+One of the most important features with closures is that the inner function still has access to the outer function's variables even after the outer function has returned.
 
 **When functions in JavaScript execute, they use the same scope chain that was in effect when they were created.**
 
-This means that even after the outer function has returned, the inner function still has access to the outer function’s variables. Therefore, you can call the inner function later in your program.
+This means that even after the outer function has returned, the inner function still has access to the outer function's variables. Therefore, you can call the inner function later in your program.
 
 See here:
 
-**2. Closures store references to the outer function’s variables:**
+**2. Closures store references to the outer function's variables:**
 
 > They do not store the actual value.
 
-Closures get more interesting when the value of the outer function’s variable changes before the closure is called.
+Closures get more interesting when the value of the outer function's variable changes before the closure is called.
 
 And this powerful feature can be harnessed in creative ways…namely private variables.
 
 **3. Closures Gone Bad**
 
-Because closures have access to the updated values of the outer function’s variables, they can also lead to bugs when the outer function’s variable changes with a for loop.
+Because closures have access to the updated values of the outer function's variables, they can also lead to bugs when the outer function's variable changes with a for loop.
 
 For example:
 
@@ -579,7 +579,7 @@ This works! we only instantiate counter when `createAdder()` is called, but it's
 
 ### Global Scope Spaced Repetition:
 
-Scope in JavaScript works like it does in most languages. If something is defined at the root level, that’s global scope — we can _access (and modify)_ that variable from anywhere. If it’s a function we defined, we can _call_ it from anywhere.
+Scope in JavaScript works like it does in most languages. If something is defined at the root level, that's global scope — we can _access (and modify)_ that variable from anywhere. If it's a function we defined, we can _call_ it from anywhere.
 
 ### The Problem with Global Scope
 
@@ -589,7 +589,7 @@ So it seems we should declare all of our variables at the global scope.
 
 It seems reasonable to want `counter` to _only_ be accessed/modified through our `addOne()` function, but if our variable is defined within the global scope, it's simply not so.
 
-This may not seem like a major concern — we can just make sure we don’t access it directly.
+This may not seem like a major concern — we can just make sure we don't access it directly.
 
 We need some form of encapsulation — i.e. the data our function relies on is _completely_ contained within the logic of that function
 
@@ -599,11 +599,11 @@ OK, this seems to work as expected, however
 
 > What about inside of our `addOne()` function?
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*hCP3tX_zDtTQLRQT.png" class="graf-image" /></figure>Every function creates it’s own local scope.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*hCP3tX_zDtTQLRQT.png" class="graf-image" /></figure>Every function creates it's own local scope.
 
-Compared to it’s context (i.e. _where_ our function is defined), we call this the inner scope
+Compared to it's context (i.e. _where_ our function is defined), we call this the inner scope
 
-Our function can access/modify anything outside of it’s scope, so the body of our function, `{ counter++; }`, has an effect that persists in the outside scope.
+Our function can access/modify anything outside of it's scope, so the body of our function, `{ counter++; }`, has an effect that persists in the outside scope.
 
 > What about the other way around…Can global scope modify inner scope?
 
@@ -625,7 +625,7 @@ To condense it down to a single concept, scope is function-based while context i
 
 ### Variable Scope
 
-A variable can be defined in either local or global scope, which establishes the variables’ accessibility from different scopes during runtime.
+A variable can be defined in either local or global scope, which establishes the variables' accessibility from different scopes during runtime.
 
 Local variables exist only within the function body of which they are defined and will have a different scope for every call of that function. There it is subject for value assignment, retrieval, and manipulation only within that call and is not accessible outside of that scope.
 
@@ -657,7 +657,7 @@ In the picture below… sayHi (and name) are identifiers and the function and (s
 
 A closure is to put it simply, when a nested function is defined inside of another function gains access to the outer functions variables.
 
-Returning the nested function from the 'parent function’ that enclosed the nested function definition, allows you to maintain access to the local variables, (arguments, and potentially even more inner function declarations) of its outer function… without exposing the variables or arguments of outer function…. to any of the other functions that were not declared inside of it.
+Returning the nested function from the 'parent function' that enclosed the nested function definition, allows you to maintain access to the local variables, (arguments, and potentially even more inner function declarations) of its outer function… without exposing the variables or arguments of outer function…. to any of the other functions that were not declared inside of it.
 
 ### What is “this” Context
 
@@ -677,7 +677,7 @@ JavaScript is a single threaded language, meaning only one task can be executed 
 
 This is where confusion often sets in, the term **“execution context” is actually for all intents and purposes referring more to scope and not context.**
 
-It is an unfortunate naming convention, however it is the terminology as defined by the ECMAScript specification, so we’re kind of stuck with it.
+It is an unfortunate naming convention, however it is the terminology as defined by the ECMAScript specification, so we're kind of stuck with it.
 
 Each time a new execution context is created it is appended to the top of the _execution stack (call stack)._
 
@@ -712,11 +712,11 @@ In a module, a variable declared outside any function is hidden and not availabl
 
 Function scope means that parameters and variables defined in a function are visible everywhere within the function
 
-Variables declared with `let` and `const` have block scope. `var` doesn’t have block scope.
+Variables declared with `let` and `const` have block scope. `var` doesn't have block scope.
 
 ### CITAIONS:
 
-#### 1.) JavaScript <a href="https://medium.com/@marjanrab/javascript-scope-context-and-this-under-the-hood-43c32033c9f9" class="markup--anchor markup--h4-anchor">Scope Context and 'this’ under the hood</a>
+#### 1.) JavaScript <a href="https://medium.com/@marjanrab/javascript-scope-context-and-this-under-the-hood-43c32033c9f9" class="markup--anchor markup--h4-anchor">Scope Context and 'this' under the hood</a>
 
 #### 2.) MDN <a href="https://github.com/mdn/content" class="markup--anchor markup--h4-anchor">Content Repo:</a>
 

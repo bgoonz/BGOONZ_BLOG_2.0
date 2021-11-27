@@ -44,7 +44,7 @@ An **array** is a structure of fixed-size, which can hold items of the same data
 
 A **linked list** is a sequential structure that consists of a sequence of items in linear order which are linked to each other. Hence, you have to access data sequentially and random access is not possible. Linked lists provide a simple and flexible representation of dynamic sets.
 
-Let’s consider the following terms regarding linked lists. You can get a clear idea by referring to Figure 2.
+Let's consider the following terms regarding linked lists. You can get a clear idea by referring to Figure 2.
 
 -   Elements in a linked list are known as **nodes**.
 -   Each node contains a **key** and a pointer to its successor node, known as **next**.
@@ -218,7 +218,7 @@ Heaps can be of 2 types.
 -   Queue functions can be implemented using heaps within **O\(log n\)** time.
 -   Used to find the kᵗʰ smallest \(or largest\) value in a given array.
 
-Check my article below on implementing a heap using the python heapq module.[Introduction to Python Heapq ModuleA simple introduction on how to use Python’s heapq moduletowardsdatascience.com](https://towardsdatascience.com/introduction-to-python-heapq-module-53534feda625)
+Check my article below on implementing a heap using the python heapq module.[Introduction to Python Heapq ModuleA simple introduction on how to use Python's heapq moduletowardsdatascience.com](https://towardsdatascience.com/introduction-to-python-heapq-module-53534feda625)
 
 ## 8. Graphs <a id="e0c7"></a>
 

@@ -29,7 +29,7 @@ Consider a given local time zone and a date date1 that are both in DST, and cons
 -   If the local time zone is currently in DST, but a given date date2 is _not_ in DST, then the number of minutes returned by `date2.getTimezoneOffset()` is minutes ± 60.
 -   If the local time zone is _not_ currently in DST, but a given date date3 is in DST, then the number of minutes returned by `date3.getTimezoneOffset()` is minutes ± 60.
 
-In a time zone that doesn’t annually shift in and out of Daylight Saving Time (DST), the number of minutes returned by calling `getTimezoneOffset()` always returns the same number of minutes, regardless of the date instance it’s called from.
+In a time zone that doesn't annually shift in and out of Daylight Saving Time (DST), the number of minutes returned by calling `getTimezoneOffset()` always returns the same number of minutes, regardless of the date instance it's called from.
 
 **Note:** The above description is a simplification. In implementations, the [IANA time zone database](https://en.wikipedia.org/wiki/Daylight_saving_time#IANA_time_zone_database) (tzdata) is used for precisely determining the effect of DST on the calculation of the time-zone difference.
 

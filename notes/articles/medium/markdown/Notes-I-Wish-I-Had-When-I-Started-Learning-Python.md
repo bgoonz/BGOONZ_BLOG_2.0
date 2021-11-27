@@ -26,7 +26,7 @@ Plus resources for learning data structures and algorithms in python at the bott
         """
         secretThing()
 
--   <span id="dcbc">Python has a built in help function that let’s you see a description of the source code without having to navigate to it.</span>
+-   <span id="dcbc">Python has a built in help function that let's you see a description of the source code without having to navigate to it.</span>
 
 ---
 
@@ -110,7 +110,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
     print("Spaghetti"[-1]) # => i print("Spaghetti"[-4]) # => e
 
--   <span id="7a34">Python let’s you use ranges</span>
+-   <span id="7a34">Python let's you use ranges</span>
 
 <!-- -->
 
@@ -172,7 +172,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 
 ### Variables and Expressions
 
--   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+-   <span id="42be">**Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.</span>
 -   <span id="6b14">Duck Typing is the fundamental approach of Python.</span>
 -   <span id="929a">Assignment of a value automatically declares.</span>
 
@@ -561,7 +561,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 ### Scripts vs Programs
 
 -   <span id="3d45">**Programming Script** : A set of code that runs in a linear fashion.</span>
--   <span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.</span>
+-   <span id="126d">The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.</span>
 -   <span id="a0e0">Python can be used to display html, css, and JS.</span>
 -   <span id="1ffd">We will be using Python as an API (Application Programming Interface)</span>
 
@@ -615,7 +615,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     tuple([1,2,3])      # returns (1, 2, 3)
 
 -   <span id="2e5f">Think of tuples as constant variables.</span>
--   <span id="86a4">**Ranges** : A list of numbers which can’t be changed; often used with `for` loops.</span>
+-   <span id="86a4">**Ranges** : A list of numbers which can't be changed; often used with `for` loops.</span>
 -   <span id="04d3">Declared using one to three parameters.</span>
 
 1.  <span id="ac7e">**Start** : opt. default 0, first \# in sequence.</span>
@@ -647,7 +647,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 > _a, b, and c are all equal_
 
 -   <span id="b63b">Declared with curly braces of the built in `dict()`</span>
--   <span id="40be">Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
+-   <span id="40be">Benefit of dictionaries in Python is that it doesn't matter how it is defined, if the keys and values are the same the dictionaries are considered equal.</span>
 -   <span id="c7e7">Use the `in` operator to see if a key exists in a dictionary.</span>
 
 #### **Sets** : Unordered collection of distinct objects; objects that **need** to be hashable.
@@ -901,7 +901,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="e81a">**module** : Python code in a separate file.</span>
 -   <span id="cf63">**package** : Path to a directory that contains modules.</span>
 -   <span id="30ba">\***\*init**.py\*\* : Default file for a package.</span>
--   <span id="64a7">**submodule** : Another file in a module’s folder.</span>
+-   <span id="64a7">**submodule** : Another file in a module's folder.</span>
 -   <span id="6cd7">**function** : Function in a module.</span>
 -   <span id="95fe">A module can be any file but it is usually created by placing a special file `__init__.py` into a folder.</span>
 -   <span id="06e5">Try to avoid importing with wildcards in Python.</span>
@@ -1333,7 +1333,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="b39d"><a href="https://github.com/floyernick/Data-Structures-and-Algorithms" class="markup--anchor markup--li-anchor">Data Structures and Algorithms implementation in Go</a></span>
 -   <span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I “recognize” and know by name?</a></span>
 -   <span id="8e46"><a href="https://xlinux.nist.gov/dads/" class="markup--anchor markup--li-anchor">Dictionary of Algorithms and Data Structures</a></span>
--   <span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil’s Data Structure Zoo</a></span>
+-   <span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil's Data Structure Zoo</a></span>
 -   <span id="617d"><a href="https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf" class="markup--anchor markup--li-anchor">The Periodic Table of Data Structures</a> (<a href="https://news.ycombinator.com/item?id=18314555" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="9160"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" class="markup--anchor markup--li-anchor">Data Structure Visualizations</a> (<a href="https://news.ycombinator.com/item?id=19082943" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="233a"><a href="http://blog.amynguyen.net/?p=853" class="markup--anchor markup--li-anchor">Data structures to name-drop when you want to sound smart in an interview</a></span>
@@ -1351,7 +1351,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="3ae6"><a href="https://lampwww.epfl.ch/papers/idealhashtrees.pdf" class="markup--anchor markup--li-anchor">Ideal Hash Trees</a></span>
 -   <span id="4896"><a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&amp;rep=rep1&amp;type=pdf" class="markup--anchor markup--li-anchor">RRB-Trees: Efficient Immutable Vectors</a></span>
 -   <span id="0458"><a href="https://github.com/jdan/ocaml-data-structures" class="markup--anchor markup--li-anchor">Some data structures and algorithms written in OCaml</a></span>
--   <span id="499a"><a href="https://shachaf.net/w/b-trees" class="markup--anchor markup--li-anchor">Let’s Invent B(+)-Trees</a> (<a href="https://news.ycombinator.com/item?id=23001831" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="499a"><a href="https://shachaf.net/w/b-trees" class="markup--anchor markup--li-anchor">Let's Invent B(+)-Trees</a> (<a href="https://news.ycombinator.com/item?id=23001831" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="1b1e"><a href="https://github.com/hydro-project/anna" class="markup--anchor markup--li-anchor">Anna</a> — Low-latency, cloud-native KVS.</span>
 -   <span id="1700"><a href="https://www.aleksandra.codes/persistent-data-structures" class="markup--anchor markup--li-anchor">Persistent data structures thanks to recursive type aliases (2019)</a></span>
 -   <span id="1807"><a href="https://yetanotherdevblog.com/lsm/" class="markup--anchor markup--li-anchor">Log-Structured Merge-Trees (2020)</a></span>
@@ -1360,7 +1360,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="efa8"><a href="https://yetanotherdevblog.com/dense-vs-sparse-indexes/" class="markup--anchor markup--li-anchor">Dense vs. Sparse Indexes (2020)</a></span>
 -   <span id="cc53"><a href="https://www.techiedelight.com/list-of-problems/" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Problems</a></span>
 -   <span id="4222"><a href="https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/" class="markup--anchor markup--li-anchor">Data Structures &amp; Algorithms I Actually Used Working at Tech Companies (2020)</a> (<a href="https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually" class="markup--anchor markup--li-anchor">Lobsters</a>) (<a href="https://news.ycombinator.com/item?id=23841491" class="markup--anchor markup--li-anchor">HN</a>)</span>
--   <span id="df7b"><a href="https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/" class="markup--anchor markup--li-anchor">Let’s implement a Bloom Filter (2020)</a> (<a href="https://news.ycombinator.com/item?id=24102617" class="markup--anchor markup--li-anchor">HN</a>)</span>
+-   <span id="df7b"><a href="https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/" class="markup--anchor markup--li-anchor">Let's implement a Bloom Filter (2020)</a> (<a href="https://news.ycombinator.com/item?id=24102617" class="markup--anchor markup--li-anchor">HN</a>)</span>
 -   <span id="009b"><a href="https://ourmachinery.com/post/data-structures-part-1-bulk-data/" class="markup--anchor markup--li-anchor">Data Structures Part 1: Bulk Data (2019)</a> (<a href="https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data" class="markup--anchor markup--li-anchor">Lobsters</a>)</span>
 -   <span id="870d"><a href="https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/" class="markup--anchor markup--li-anchor">Data Structures Explained</a></span>
 -   <span id="7553"><a href="https://rcoh.me/posts/cache-oblivious-datastructures/" class="markup--anchor markup--li-anchor">Introduction to Cache-Oblivious Data Structures (2018)</a></span>

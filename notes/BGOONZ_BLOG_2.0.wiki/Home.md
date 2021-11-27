@@ -159,7 +159,7 @@
 
 ## Dependency graph
 
-These dependencies are defined in **BGOONZ_BLOG_2.0**’s manifest files, such as [package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json'), […/backup/package-lock.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage-lock.json 'notes/backup/package-lock.json'), and […/backup/package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage.json 'notes/backup/package.json').
+These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as [package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json'), […/backup/package-lock.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage-lock.json 'notes/backup/package-lock.json'), and […/backup/package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage.json 'notes/backup/package.json').
 
 <button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-builder-binary-assignment-operator-visitor
 

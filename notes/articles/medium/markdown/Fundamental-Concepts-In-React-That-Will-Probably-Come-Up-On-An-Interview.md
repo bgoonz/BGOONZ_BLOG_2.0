@@ -9,11 +9,11 @@ Incomplete Article
 #### Incomplete Article
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 **Explain how React uses a tree data structure called the “virtual DOM” to model the DOM**
 
-> ↠The Virtual DOM is an in-memory tree representation of the browser’s Document Object Model. React’s philosophy is to interact with the Virtual DOM instead of the regular DOM for developer ease and performance.
+> ↠The Virtual DOM is an in-memory tree representation of the browser's Document Object Model. React's philosophy is to interact with the Virtual DOM instead of the regular DOM for developer ease and performance.
 
 > ↠By abstracting the key concepts from the DOM, React is able to expose additional tooling and functionality increasing developer ease.
 

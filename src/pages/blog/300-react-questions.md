@@ -8028,7 +8028,7 @@ binding-objects-to-functions/
 
 
 
-More than often, we need to bind an object to a function’s this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
+More than often, we need to bind an object to a function's this object. JS uses the bind method when this is specified explicitly and we need to invoke desired method.
 
 
 
@@ -8154,7 +8154,7 @@ boundGetColor(); // Red
 
 
 
-In case of established websocket connection, server or firewall could timeout and terminate the connection after a period of inactivity. To deal with this situation, we send periodic message to the server. To control the timeout we will add two functions in our code : one to make sure connection keep alive and another one to cancel the keep alive. Also we need a common `timerID` variable. Let’s have a look on implementation-
+In case of established websocket connection, server or firewall could timeout and terminate the connection after a period of inactivity. To deal with this situation, we send periodic message to the server. To control the timeout we will add two functions in our code : one to make sure connection keep alive and another one to cancel the keep alive. Also we need a common `timerID` variable. Let's have a look on implementation-
 
 
 
@@ -8228,7 +8228,7 @@ Arrays are everywhere in JavaScript and with the new [spread operators](https://
 
 
 
-JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array’s constructor and you will see what I mean.
+JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array's constructor and you will see what I mean.
 
 
 
@@ -8306,7 +8306,7 @@ A workaround that people usually resort to is to pass either `null` or `undefine
 
 
 
-I personally don’t like using `null` since JavaScript treats it as an object and that’s just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
+I personally don't like using `null` since JavaScript treats it as an object and that's just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
 
 
 
@@ -9758,7 +9758,7 @@ for(key in cleanMap){
 
 
 
-Javascript it’s a flexible language, you can redefine anything. But when projects get complex we find problems with mutable data structures. With the latest versions of JavaScript this situation changed. Now it’s possible to create immutable objects. I’ll walk you through how to do it in three different ways.
+Javascript it's a flexible language, you can redefine anything. But when projects get complex we find problems with mutable data structures. With the latest versions of JavaScript this situation changed. Now it's possible to create immutable objects. I'll walk you through how to do it in three different ways.
 
 
 
@@ -9766,11 +9766,11 @@ Javascript it’s a flexible language, you can redefine anything. But when proje
 
 
 
-> Immutability in object means we don’t want our objects to change in any ways once we create them i.e make them read-only type.
+> Immutability in object means we don't want our objects to change in any ways once we create them i.e make them read-only type.
 
 
 
-Let’s suppose we need to define a car [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) and use its properties to perform operations throughout our entire project. We can’t allow modifying by mistake any data.
+Let's suppose we need to define a car [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object) and use its properties to perform operations throughout our entire project. We can't allow modifying by mistake any data.
 
 
 
@@ -10390,7 +10390,7 @@ new Promise(executor).then(result => {
 
 
 
-The ternary operator is a shortcut for the `if` statement. It consists of three operands; a question mark, a condition, and an expression to execute if the condition is true, followed by a colon and another expression to execute if it’s false.
+The ternary operator is a shortcut for the `if` statement. It consists of three operands; a question mark, a condition, and an expression to execute if the condition is true, followed by a colon and another expression to execute if it's false.
 
 
 

@@ -77,8 +77,8 @@ Metrics:
 
 #### Awesome Docker Repos
 
--   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess’s Dockerfiles</a></span>
--   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53’s Dockerfiles</a></span>
+-   <span id="8b0f"><a href="https://github.com/jessfraz/dockerfiles" class="markup--anchor markup--li-anchor">Jess's Dockerfiles</a></span>
+-   <span id="46e9"><a href="https://github.com/firecat53/dockerfiles" class="markup--anchor markup--li-anchor">Firecat53's Dockerfiles</a></span>
 
 #### RaspberryPi ARM Images:
 
@@ -290,7 +290,7 @@ Metrics:
 -   <span id="2583"><a href="http://mherman.org/" class="markup--anchor markup--li-anchor">Michael Herman</a></span>
 -   <span id="3e8c"><a href="http://charlesleifer.com/" class="markup--anchor markup--li-anchor">Charles Leifer</a></span>
 -   <span id="3b5d"><a href="https://www.blog.labouardy.com/" class="markup--anchor markup--li-anchor">Labouardy</a></span>
--   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark’s Tech Blog</a></span>
+-   <span id="2759"><a href="https://tech.marksblogg.com/" class="markup--anchor markup--li-anchor">Mark's Tech Blog</a></span>
 
 ### Linuxkit:
 
@@ -445,7 +445,7 @@ Metrics:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

@@ -22,13 +22,13 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*QkQexW5Lg0NYrtuD" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*gtmOR8KLGdLcUwPt.gif" class="graf-image" /></figure>
 
-#### Here’s some previous articles I’ve written for more advanced users.
+#### Here's some previous articles I've written for more advanced users.
 
 <a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong><br />
-<em>Here’s a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong><br />
-<em>I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong><br />
 <em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -43,11 +43,11 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*7qlctJzV2Jv3F0cr.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*oQWiki9YceuZc9h_.jpeg" alt="fire meme" class="graf-image" /><figcaption>fire meme</figcaption></figure>
 
-#### Here’s a REPL with some examples for you to practice….
+#### Here's a REPL with some examples for you to practice….
 
 > ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ below motivational monologue ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-**_Remember: learning is an effortful activity… it’s not comfortable… practice might be unpleasant but if you don’t you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment…._**
+**_Remember: learning is an effortful activity… it's not comfortable… practice might be unpleasant but if you don't you might as well skip reading too because without application… reading articles just provides a false sense of accomplishment…._**
 
 > <a href="https://resume.github.io/?bgoonz" class="markup--anchor markup--blockquote-anchor">quote by: … <strong>me</strong> 1 minute ago</a> (inspired by veritasium….)
 
@@ -57,13 +57,13 @@ Cheat sheet and in-depth explanations located below main article contents… The
 
 ### <a href="https://egghead.io/lessons/bash-navigate-the-filesystem-in-bash" class="markup--anchor markup--h3-anchor">Navigate the file system</a>
 
-#### Change bash’s current working directory
+#### Change bash's current working directory
 
     cd <file path here>
     # to go up a directory from your current directory
     cd ..
 
-#### List a directory’s contents
+#### List a directory's contents
 
     ls
     # for more details, add -l (long)
@@ -206,7 +206,7 @@ Cheat sheet and in-depth explanations located below main article contents… The
     # pretty print JSON with jsome
     curl https://swapi.co/api/people/1/ | jsome
 
-Here’s the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON
+Here's the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON
 
 ### <a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a>
 
@@ -273,7 +273,7 @@ To see all environment variables
 
 ### <a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a>
 
-Get the last run command’s exit status
+Get the last run command's exit status
 
     ls
     # will be 0 if it ran successfully, 1 - 255 for an error
@@ -432,14 +432,14 @@ Redirection
 
 ### Additional learning resources
 
--   <span id="8e12">You can view a command’s documentation right in bash with `man <command name>`.</span>
+-   <span id="8e12">You can view a command's documentation right in bash with `man <command name>`.</span>
 -   <span id="9b41"><a href="https://www.gnu.org/software/bash/manual/bash.html" class="markup--anchor markup--li-anchor">Official bash manual</a></span>
 -   <span id="40a7"><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" class="markup--anchor markup--li-anchor">TLDP bash programming intro, basic</a></span>
 -   <span id="6515"><a href="http://www.tldp.org/LDP/abs/html/" class="markup--anchor markup--li-anchor">TLDP bash programming intro, advanced</a></span>
 
 ---
 
-### Here’s My Github & Website … feel free to reach out!
+### Here's My Github & Website … feel free to reach out!
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://bg-portfolio.netlify.app/ - bgoonz</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -459,7 +459,7 @@ This is very simple way to use pipes.
 
     ls -l | sed -e "s/[aeio]/u/g"
 
-Here, the following happens: first the command ls -l is executed, and it’s output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.
+Here, the following happens: first the command ls -l is executed, and it's output, instead of being printed, is sent (piped) to the sed program, which in turn, prints what it has to.
 
 ### an alternative to ls -l \*.txt
 
@@ -481,7 +481,7 @@ You have no need to declare a variable, just assigning a value to its reference 
                 STR="Hello World!"
                 echo $STR
 
-Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the '$’ in at the beginning. Please notice (try it!) that if you don’t use the '$’ sign, the output of the program will be different, and probably not what you want it to be.
+Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the '$' in at the beginning. Please notice (try it!) that if you don't use the '$' sign, the output of the program will be different, and probably not what you want it to be.
 
 ### A very simple backup script (little bit better)
 
@@ -489,7 +489,7 @@ Line 2 creates a variable called STR and assigns the string “Hello World!” t
                OF=/var/my-backup-$(date +%Y%m%d).tgz
                tar -cZf $OF /home/me/
 
-> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression '$(date +%Y%m%d)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.
+> This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression '$(date +%Y%m%d)'. If you run the script you'll notice that it runs the command inside the parenthesis, capturing its output.
 
 > Notice that in this script, the output filename will be different every day, due to the format switch to the date command(+%Y%m%d). You can change this by specifying a different format.
 
@@ -520,7 +520,7 @@ Local variables can be created by using the keyword _local_.
                    echo expression evaluated as true
                 fi
 
-_The code to be executed if the expression within braces is true can be found after the 'then’ word and before 'fi’ which indicates the end of the conditionally executed code._
+_The code to be executed if the expression within braces is true can be found after the 'then' word and before 'fi' which indicates the end of the conditionally executed code._
 
 ### Basic conditional example if .. then … else
 
@@ -547,11 +547,11 @@ _The code to be executed if the expression within braces is true can be found af
 -   <span id="15f6">**_for_**</span>
 -   <span id="4000">**_while_**</span>
 
-> (there’s another loop called until but I don’t use it so you can look it up if you’d like)
+> (there's another loop called until but I don't use it so you can look it up if you'd like)
 
 > **_The until loop is almost equal to the while loop, except that the code is executed while the_** <a href="https://www.cs.fsu.edu/~myers/c++/notes/control1.html" class="markup--anchor markup--blockquote-anchor"><strong><em>control expression</em></strong></a> **_evaluates to false._**
 
-The **for** loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of 'words’ within a string.
+The **for** loop is a little bit different from other programming languages. Basically, it let's you iterate over a series of 'words' within a string.
 
 The **while** executes a piece of code if the control expression is true, and only stops when it is false …or a explicit break is found within the executed code.
 
@@ -566,7 +566,7 @@ The **while** executes a piece of code if the control expression is true, and on
 
 > The third line could be longer if needed, or there could be more lines before the done (4).
 
-> 'done’ (4) indicates that the code that used the value of $i has finished and $i can take a new value.
+> 'done' (4) indicates that the code that used the value of $i has finished and $i can take a new value.
 
 > A more useful way to use the for loop would be to use it to match only certain files on the previous example
 
@@ -600,11 +600,11 @@ Calling a function is just like calling another program, you just write its name
                quit
                echo foo
 
-> Lines 2–4 contain the 'quit’ function. Lines 5–7 contain the 'hello’ function If you are not absolutely sure about what this script does, please try it!.
+> Lines 2–4 contain the 'quit' function. Lines 5–7 contain the 'hello' function If you are not absolutely sure about what this script does, please try it!.
 
-> Notice that a functions don’t need to be declared in any specific order.
+> Notice that a functions don't need to be declared in any specific order.
 
-> When running the script you’ll notice that first: the function 'hello’ is called, second the 'quit’ function, and the program never reaches line 10.
+> When running the script you'll notice that first: the function 'hello' is called, second the 'quit' function, and the program never reaches line 10.
 
 ### Functions with parameters
 
@@ -632,7 +632,7 @@ Calling a function is just like calling another program, you just write its name
 
 ### Bonus Commands:
 
-#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google’s SEO rankings don’t put much emphasis on the content of github gists.
+#### Included in a gist below (so you can see them syntax highlighted..) I am also including them in text so that they might turn up as a result of google searches … I have a hunch that google's SEO rankings don't put much emphasis on the content of github gists.
 
 ### Example
 
@@ -669,7 +669,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/expansion/cmdsubst" class="mark
 
 ### Functions
 
-{: id=’functions-example’}
+{: id='functions-example'}
 
     get_name() {
       echo "John"
@@ -681,7 +681,7 @@ See: <a href="https://bryanguner.medium.com/media/2ab9392fe0f579fca234dcdc71259b
 
 ### Conditionals
 
-{: id=’conditionals-example’}
+{: id='conditionals-example'}
 
     if [[ -z "$string" ]]; then
       echo "String is empty"
@@ -1152,7 +1152,7 @@ See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_an
     cd -
     pwd # /home/user/foo
 
-### Check for command’s result
+### Check for command's result
 
     if ping -c 1 google.com; then
       echo "It appears you have a working internet connection"

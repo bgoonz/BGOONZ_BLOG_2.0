@@ -50,7 +50,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 
 
-Let’s say there is a \<div> somewhere in your HTML file:
+Let's say there is a \<div> somewhere in your HTML file:
 
 
 
@@ -78,7 +78,7 @@ It displays “Hello, world” on the page.
 
 
 
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
 
 
@@ -106,11 +106,11 @@ It calls [ReactDOM.render()](https://reactjs.org/docs/react-dom.html#render) eve
 
 >
 
-> We recommend that you don’t skip topics because they build on each other.
+> We recommend that you don't skip topics because they build on each other.
 
 
 
-## React Only Updates What’s Necessary
+## React Only Updates What's Necessary
 
 
 

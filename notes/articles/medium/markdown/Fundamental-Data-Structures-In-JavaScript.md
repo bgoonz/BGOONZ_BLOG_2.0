@@ -10,17 +10,17 @@ Data structures in JavaScript
 
 ### Data structures in JavaScript
 
-<span class="graf-dropCap">H</span>ere’s a website I created to practice data structures!
+<span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
 <a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s the repo that the website is built on:
+<span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
 <a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
+<span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
 
 ### Resources (article content below):
 
@@ -77,7 +77,7 @@ Data structures in JavaScript
 
 ### **_space_**
 
-> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
+> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
 
 ### _time_
 
@@ -119,17 +119,17 @@ O(1) O(n) O(1) O(n)
 
 2.  This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3.  In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3.  In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
 Think of objects as a logical grouping of a bunch of properties.
 
-Properties could be some variable that it’s storing or some methods that it’s using.
+Properties could be some variable that it's storing or some methods that it's using.
 
 I also visualize an object as a table.
 
-The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.
+The main difference is that object's “index” need not be numbers and is not necessarily sequenced.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
@@ -155,7 +155,7 @@ Note, here I am storing another object for every hash in my Hash Table.
 
 ### Sets
 
-Sets are pretty much what it sounds like. It’s the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
+Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AIQljh9p8Baw9TnE.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG" class="graf-image" /></figure>### *Definition*
 
@@ -257,7 +257,7 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 -   <span id="f896">A graph is **any** collection of nodes and edges.</span>
 -   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
+-   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 -   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 -   <span id="8f45">Any number of edges may leave a given node</span>
@@ -281,7 +281,7 @@ Graph
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

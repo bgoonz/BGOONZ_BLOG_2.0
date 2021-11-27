@@ -2,7 +2,7 @@ title: Creating immutable objects in native JavaScript
 tip-number: 74
 tip-username: loverajoel
 tip-username-profile: https://www.twitter.com/loverajoel
-tip-tldr: With the latest versions of JavaScript it’s possible to create immutable objects. I’ll walk you through how to do it in three different ways.
+tip-tldr: With the latest versions of JavaScript it's possible to create immutable objects. I'll walk you through how to do it in three different ways.
 
 categories: - en - javascript
 
@@ -10,15 +10,15 @@ categories: - en - javascript
 
 # Creating immutable objects in native JavaScript
 
-Javascript it’s a flexible language, you can redefine anything. But when projects get complex we find problems with mutable data structures.
-With the latest versions of JavaScript this situation changed. Now it’s possible to create immutable objects. I’ll walk you through how to do it in three different ways.
+Javascript it's a flexible language, you can redefine anything. But when projects get complex we find problems with mutable data structures.
+With the latest versions of JavaScript this situation changed. Now it's possible to create immutable objects. I'll walk you through how to do it in three different ways.
 
 ### Wait, what means immutable?
 
-> Immutability in object means we don’t want our objects to change in any ways once we create them i.e make them read-only type.
+> Immutability in object means we don't want our objects to change in any ways once we create them i.e make them read-only type.
 
-Let’s suppose we need to define a car [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) and use its properties to perform operations throughout our entire project.
-We can’t allow modifying by mistake any data.
+Let's suppose we need to define a car [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) and use its properties to perform operations throughout our entire project.
+We can't allow modifying by mistake any data.
 
 ```
 const myTesla = {

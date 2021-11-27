@@ -9,7 +9,7 @@ Basics of Writing Files in Python The common methods to operate with files are o
 Basics of Writing Files in Python  
 The common methods to operate with files are open() to open a file,
 
-seek() to set the file’s current position at the given offset, and
+seek() to set the file's current position at the given offset, and
 
 close() to close th
 
@@ -25,7 +25,7 @@ In this article we will explain how to write data to a file line by line, as a l
 
 ### Writing a Single Line to a File
 
-This first example is pretty similar to writing to files with the popular programming languages C and C++, as you’ll see in _Listing 1_. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the "helloworld.txt" file it will either be created if it does not exist yet, or it will be completely overwritten.
+This first example is pretty similar to writing to files with the popular programming languages C and C++, as you'll see in _Listing 1_. The process is pretty straightforward. First, we open the file using the `open()` method for writing, write a single line of text to the file using the `write()` method, and then close the file using the `close()` method. Keep in mind that due to the way we opened the "helloworld.txt" file it will either be created if it does not exist yet, or it will be completely overwritten.
 
     filehandle = open('helloworld.txt', 'w')
     filehandle.write('Hello, world!\n')
@@ -42,7 +42,7 @@ _Listing 2_
 
 ### Writing a List of Lines to a File
 
-In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we’ll use the `writelines()` method. _Listing 3_ gives you an example of this.
+In reality a file does not consist only of a single line, but much more data. Therefore, the contents of the file are stored in a list that represents a file buffer. To write the entire file buffer we'll use the `writelines()` method. _Listing 3_ gives you an example of this.
 
     filehandle = open("helloworld.txt", "w")
     filebuffer = ["a first line of text", "a second line of text", "a third line"]
@@ -118,7 +118,7 @@ This is not necessarily best practice, but it does give you other options for wr
 
 ### Appending Data to a File
 
-So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to 'a’ instead of 'w’.
+So far, we have stored data in new files or in overwritten data in existing files. But what if we want to append data to the end of an existing file? In this case we would need to open the existing file using a different access mode. We change that to 'a' instead of 'w'.
 
 _Listing 9_ shows how to handle that. And _Listing 10_ does the same thing, but it uses the `with` statement rather.
 
@@ -148,7 +148,7 @@ Writing plain text data to files, or appending data to existing files, is as eas
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

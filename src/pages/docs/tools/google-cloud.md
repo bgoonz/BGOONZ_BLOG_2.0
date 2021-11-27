@@ -15,7 +15,7 @@ The gcloud command-line tool cheat sheet
 
 ## The gcloud cheat sheet
 
-A roster of go-to gcloud commands for the gcloud tool, Google Cloud’s primary command-line tool.
+A roster of go-to gcloud commands for the gcloud tool, Google Cloud's primary command-line tool.
 
 (Also included: [introductory primer](https://cloud.google.com/sdk/docs/cheatsheet#introductory_primer), [understanding commands](https://cloud.google.com/sdk/docs/cheatsheet#understanding_commands), and a [printable PDF](https://cloud.google.com/sdk/docs/images/gcloud-cheat-sheet.pdf).)
 
@@ -173,7 +173,7 @@ Arguments can be Positional args or Flags
 
 -   **Positional args:** Set after command name; must respect order of positional args.
 
--   **Flags:** Set after positional args; order of flags doesn’t matter.
+-   **Flags:** Set after positional args; order of flags doesn't matter.
 
     A flag can be either a:
 
@@ -227,7 +227,7 @@ For example: gcloud + compute + instances + create + example-instance-1 + --zone
 
 #### Release level
 
-*Release Level* refers to the command’s release status.
+*Release Level* refers to the command's release status.
 
 *Example:* alpha for alpha commands, beta for beta commands, no release level needed for GA commands.
 

@@ -86,7 +86,7 @@
             <header>
                 <h1 class="p-name">Graph Data Structure Interview Questions At A Glance</h1>
             </header>
-            <section data-field="subtitle" class="p-summary">Because they’re just about the most important data structure there is.</section>
+            <section data-field="subtitle" class="p-summary">Because they're just about the most important data structure there is.</section>
             <section data-field="body" class="e-content">
                 <section name="2fae" class="section section--body section--first section--last">
                     <div class="section-divider">
@@ -96,7 +96,7 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="9a47" id="9a47" class="graf graf--h3 graf--leading graf--title">Graph Data Structure Interview Questions At A Glance</h3>
                             <p name="b0b8" id="b0b8" class="graf graf--p graf-after--h3">
-                                Because they’re just about the most important data structure there is.
+                                Because they're just about the most important data structure there is.
                             </p>
                             <figure name="4388" id="4388" class="graf graf--figure graf-after--p">
                                 <img
@@ -215,7 +215,7 @@
                             <h3 name="8332" id="8332" class="graf graf--h3 graf-after--p">Graph Representations</h3>
                             <p name="47fe" id="47fe" class="graf graf--p graf-after--h3">
                                 The two most common ways to represent graphs in code are adjacency lists and adjacency matrices, each with its own strengths and
-                                weaknesses. When deciding on a graph implementation, it’s important to understand the type of data and operations you will be
+                                weaknesses. When deciding on a graph implementation, it's important to understand the type of data and operations you will be
                                 using.
                             </p>
                             <figure name="c44f" id="c44f" class="graf graf--figure graf-after--p">
@@ -229,7 +229,7 @@
                             </figure>
                             <h3 name="9a57" id="9a57" class="graf graf--h3 graf-after--figure">Adjacency List</h3>
                             <p name="ccc9" id="ccc9" class="graf graf--p graf-after--h3">
-                                In an adjacency list, the graph stores a list of vertices and for each vertex, a list of each vertex to which it’s connected.
+                                In an adjacency list, the graph stores a list of vertices and for each vertex, a list of each vertex to which it's connected.
                                 So, for the following graph…
                             </p>
                             <p name="e60a" id="e60a" class="graf graf--p graf-after--p">…an adjacency list in Python could look something like this:</p>
@@ -239,7 +239,7 @@
                                 class="graf graf--pre graf-after--p"
                             >class Graph:<br>    def __init__(self):<br>        self.vertices = {<br>                          &quot;A&quot;: {&quot;B&quot;},<br>                          &quot;B&quot;: {&quot;C&quot;, &quot;D&quot;},<br>                          &quot;C&quot;: {&quot;E&quot;},<br>                          &quot;D&quot;: {&quot;F&quot;, &quot;G&quot;},<br>                          &quot;E&quot;: {&quot;C&quot;},<br>                          &quot;F&quot;: {&quot;C&quot;},<br>                          &quot;G&quot;: {&quot;A&quot;, &quot;F&quot;}<br>                        }</pre>
                             <p name="f633" id="f633" class="graf graf--p graf-after--pre">
-                                Note that this adjacency list doesn’t actually use any lists. The
+                                Note that this adjacency list doesn't actually use any lists. The
                                 <code class="markup--code markup--p-code">vertices</code> collection is a
                                 <code class="markup--code markup--p-code">dictionary</code> which lets us access each collection of edges in O(1) constant time
                                 while the edges are contained in a <code class="markup--code markup--p-code">set</code> which lets us check for the existence of
@@ -247,7 +247,7 @@
                             </p>
                             <h3 name="0ecf" id="0ecf" class="graf graf--h3 graf-after--p">Adjacency Matrix</h3>
                             <p name="e16f" id="e16f" class="graf graf--p graf-after--h3">
-                                Now, let’s see what this graph might look like as an adjacency matrix:
+                                Now, let's see what this graph might look like as an adjacency matrix:
                             </p>
                             <pre
                                 name="aeac"
@@ -263,7 +263,7 @@
                             </p>
                             <h3 name="84a2" id="84a2" class="graf graf--h3 graf-after--p">Tradeoffs</h3>
                             <p name="200c" id="200c" class="graf graf--p graf-after--h3">
-                                Both adjacency matrices and adjacency lists have their own strengths and weaknesses. Let’s explore their tradeoffs.
+                                Both adjacency matrices and adjacency lists have their own strengths and weaknesses. Let's explore their tradeoffs.
                             </p>
                             <p name="9689" id="9689" class="graf graf--p graf-after--p">For the following:</p>
                             <pre
@@ -331,11 +331,11 @@
                                 </li>
                             </ul>
                             <p name="eff2" id="eff2" class="graf graf--p graf-after--li">
-                                Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex’s
+                                Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex's
                                 row, then remove that column from each other row. Removing an element from a list requires moving everything after that element
                                 over by one slot which takes an average of V/2 operations. Since we need to do that for every single row in our matrix, that
                                 results in a V² time complexity. On top of that, we need to reduce the index of each vertex after our removed index by 1 as well
-                                which doesn’t add to our quadratic time complexity, but does add extra operations.
+                                which doesn't add to our quadratic time complexity, but does add extra operations.
                             </p>
                             <p name="c463" id="c463" class="graf graf--p graf-after--p">
                                 For an adjacency list, we need to visit each vertex and remove all edges pointing to our removed vertex. Removing elements from
@@ -414,7 +414,7 @@
                             </p>
                             <pre name="ab0e" id="ab0e" class="graf graf--pre graf-after--p">return self.vertex[v]</pre>
                             <p name="a5e1" id="a5e1" class="graf graf--p graf-after--pre">
-                                In an adjacency matrix, however, it’s a bit more complicated. You would need to iterate through the entire row and populate a
+                                In an adjacency matrix, however, it's a bit more complicated. You would need to iterate through the entire row and populate a
                                 list based on the results:
                             </p>
                             <pre
@@ -454,7 +454,7 @@
                             </ul>
                             <h3 name="1639" id="1639" class="graf graf--h3 graf-after--li">Coloring BFS</h3>
                             <p name="8f9e" id="8f9e" class="graf graf--p graf-after--h3">
-                                It’s useful to color vertexes as you arrive at them and as you leave them behind as already searched.
+                                It's useful to color vertexes as you arrive at them and as you leave them behind as already searched.
                             </p>
                             <p name="0129" id="0129" class="graf graf--p graf-after--p">
                                 <strong class="markup--strong markup--p-strong">unlisted</strong>: white<br /><strong class="markup--strong markup--p-strong"
@@ -474,7 +474,7 @@
                                 <li name="863c" id="863c" class="graf graf--li graf-after--li">Enqueue starting vertex.</li>
                                 <li name="b8d8" id="b8d8" class="graf graf--li graf-after--li">Check if queue is not empty.</li>
                                 <li name="2dc5" id="2dc5" class="graf graf--li graf-after--li">If not empty, peek at first item in queue.</li>
-                                <li name="0e5c" id="0e5c" class="graf graf--li graf-after--li">Loop through that vertex’s neighbors.</li>
+                                <li name="0e5c" id="0e5c" class="graf graf--li graf-after--li">Loop through that vertex's neighbors.</li>
                                 <li name="1a9e" id="1a9e" class="graf graf--li graf-after--li">Check if unvisited.</li>
                                 <li name="7165" id="7165" class="graf graf--li graf-after--li">If unvisited, mark as gray and enqueue vertex.</li>
                                 <li name="338b" id="338b" class="graf graf--li graf-after--li">Dequeue current vertex and mark as black.</li>
@@ -617,7 +617,7 @@ from the source, then it will give answer False for &quot;no solution exits&quot
                                     A graph is a less restrictive class of collections of nodes than structures like a tree.
                                 </li>
                                 <li name="8d05" id="8d05" class="graf graf--li graf-after--li">
-                                    It doesn’t need to have a root node (not every node needs to be accessible from a single node)
+                                    It doesn't need to have a root node (not every node needs to be accessible from a single node)
                                 </li>
                                 <li name="6fac" id="6fac" class="graf graf--li graf-after--li">
                                     It can have cycles (a group of nodes whose paths begin and end at the same node)
@@ -672,10 +672,10 @@ from the source, then it will give answer False for &quot;no solution exits&quot
                                 <li name="7b24" id="7b24" class="graf graf--li graf-after--h3">Dense Graph — A graph with lots of edges.</li>
                                 <li name="5682" id="5682" class="graf graf--li graf--startsWithDoubleQuote graf-after--li">
                                     “Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many
-                                    edges”? This is a little bit too subjective, right? ? I agree with you, so let’s quantify it a little bit:
+                                    edges”? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:
                                 </li>
                                 <li name="0e05" id="0e05" class="graf graf--li graf-after--li">
-                                    Let’s find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example
+                                    Let's find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example
                                     below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).
                                 </li>
                                 <li name="59d8" id="59d8" class="graf graf--li graf-after--li">
@@ -705,7 +705,7 @@ from the source, then it will give answer False for &quot;no solution exits&quot
                             <h3 name="cd78" id="cd78" class="graf graf--h3 graf-after--li"><em class="markup--em markup--h3-em">Undirected </em>Graph</h3>
                             <ul class="postList">
                                 <li name="6030" id="6030" class="graf graf--li graf-after--h3">
-                                    Undirected Graph — Edges don’t have a direction. All graphs are assumed to be undirected unless otherwise stated
+                                    Undirected Graph — Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated
                                 </li>
                             </ul>
                             <h3 name="dda9" id="dda9" class="graf graf--h3 graf-after--li">Node Class</h3>

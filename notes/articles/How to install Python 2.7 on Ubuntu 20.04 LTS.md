@@ -12,7 +12,7 @@ As we know Ubuntu 20.04 LTS which is the Long term version of Canonical has drop
 
 ### 1\. Open a command terminal
 
-Although everybody is familiar with how to run the command terminal, however, those who don’t know can use the shortcut key combination i.e Ctrl+Alt+T.
+Although everybody is familiar with how to run the command terminal, however, those who don't know can use the shortcut key combination i.e Ctrl+Alt+T.
 
 ### 2\. Add Universe repo
 
@@ -39,7 +39,7 @@ Python 2.7.18
 
 ### 4\. See all available Python version on the system
 
-As we know Ubuntu 20.04 comes out of the box with Python 3 thus, let’s check what are the available versions of Python are on our system.
+As we know Ubuntu 20.04 comes out of the box with Python 3 thus, let's check what are the available versions of Python are on our system.
 
 ls /usr/bin/python\*
 
@@ -47,7 +47,7 @@ ls /usr/bin/python\*
 
 ### 5\. Change the Default Python priority
 
-You will see both python 2.7 and 3 on your Ubuntu 20.04 Linux. However, by default, the system will give priority to Python3, and that’s when we run `python` command it will give an error:
+You will see both python 2.7 and 3 on your Ubuntu 20.04 Linux. However, by default, the system will give priority to Python3, and that's when we run `python` command it will give an error:
 
 Command 'python' not found, did you mean:
 command 'python 3' from deb python3
@@ -89,7 +89,7 @@ pip2 --version
 
 ### 7\. Uninstall (optional)
 
-If you don’t need Python 2.7 on your system then here is the command to remove it:
+If you don't need Python 2.7 on your system then here is the command to remove it:
 
 sudo apt remove python2-minimal
 

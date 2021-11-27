@@ -174,7 +174,7 @@ template: docs
 
 -   [BrainStation-23](http://brainstation-23.com/) | Dhaka, BD | A practical project followed by series of in-person interview sessions
 
--   [Breather](https://breather.com/jobs) | Montreal, Canada | Series of interviews including a conversation about the candidate’s experience and a technical discussion involving real world problems
+-   [Breather](https://breather.com/jobs) | Montreal, Canada | Series of interviews including a conversation about the candidate's experience and a technical discussion involving real world problems
 
 -   [BrightBytes](http://www.brightbytes.net/careers) | San Francisco, CA | Time-boxed coding exercise at home and on-site pair programming with engineers
 
@@ -304,7 +304,7 @@ template: docs
 
 -   [Datalogue](https://datalogue.github.io/recruiting) | Montreal, Canada | We Ask candidates to contribute meaningfully to an Open source project that reflects the stack they will be working with and send us a link to the PR.
 
--   [DataMade](https://datamade.us/) | Chicago, IL | After submitting an application, selected applicants are moved on to a round of interviews and will be asked to submit a piece of code for review. If you don’t have any code you can share, DataMade will provide a short exercise for you to complete. An in-person (or remote) interview will be scheduled to go over your background, what draws you to DataMade, and your code sample.
+-   [DataMade](https://datamade.us/) | Chicago, IL | After submitting an application, selected applicants are moved on to a round of interviews and will be asked to submit a piece of code for review. If you don't have any code you can share, DataMade will provide a short exercise for you to complete. An in-person (or remote) interview will be scheduled to go over your background, what draws you to DataMade, and your code sample.
 
 -   [Datascope](https://datascope.co/careers) | Chicago, IL | Take home exploratory data project with public data, discussion about the project via video chat, and in-person office visit.
 
@@ -1250,7 +1250,7 @@ template: docs
 
 -   [WorldGaming](https://worldgaming.com/) | Toronto, Canada | Technical Interview, Solution Design, Take Home Assignment, then Culture fit interview with the team
 
--   [woumedia](https://woumedia.com/) | Remote | Getting to know each other and aligning expectations. Talking about past experiences, projects you are proud of and latest challenges you faced. It’s followed by a use case study from one of our current projects.
+-   [woumedia](https://woumedia.com/) | Remote | Getting to know each other and aligning expectations. Talking about past experiences, projects you are proud of and latest challenges you faced. It's followed by a use case study from one of our current projects.
 
 -   [WyeWorks](https://wyeworks.com/) | Montevideo, Uruguay | Take-home project and discussion on-site
 

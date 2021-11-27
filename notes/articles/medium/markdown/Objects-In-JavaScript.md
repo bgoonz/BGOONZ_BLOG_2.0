@@ -86,8 +86,8 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 
 **DotBracket**Easier To ReadYou can use variables as keys! Easier To Write b/c do not need Quotations. Okay to use variables and Strings that start with numbers.Cannot access with VariablesKeys cannot contain numbers as their first character
 
--   <span id="8f18">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn’t.</span>
--   <span id="83be">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can’t do this at all.</span>
+-   <span id="8f18">**When accessing object keys**: Bracket notation needs to refer to that key in quotations, dot notation doesn't.</span>
+-   <span id="83be">**When accessing object keys via a variable**: Bracket notation can refer to that key w/o use of quotations, dot notation can't do this at all.</span>
 
 <!-- -->
 
@@ -157,7 +157,7 @@ A `Method` is a function that belongs to an object. Every method is a function, 
 -   <span id="dd4b">`Object.keys()` : A method that allows us to iterate through keys, it accepts an obj as the argument and returns an array of the keys.</span>
 -   <span id="0d49">`Object.values()` : Method that accepts an object as the argument and returns an array of the values.</span>
 
-#### **Iterating through an Object’s keys & values**
+#### **Iterating through an Object's keys & values**
 
 -   <span id="b2aa">`Object.entries` : Method that accepts an object as the argument and returns an array of the \[key, value\] pairs within.</span>
 

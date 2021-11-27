@@ -34,7 +34,7 @@ You will want to bookmark this
 
 ### Getting visual feedback in your programs
 
-The first command we’ll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
+The first command we'll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we'll be using `console.log` frequently as a way to visually see the output of our programs. Let's write our first program:
 
     console.log("hello world");
     console.log("how are you?");
@@ -44,21 +44,21 @@ Executing the program above would print out the following:
     hello world
     how are you?
 
-Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We’ll also terminate lines with semicolons (;).
+Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We'll also terminate lines with semicolons (;).
 
-> _Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do._
+> _Depending on how you structure your code, sometimes you'll be able to omit semicolons at the end of lines. For now, you'll want to include them just as we do._
 
 ### Syntax
 
 We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
 
-As you write your first lines of code in this new language, you may make many syntax errors. Don’t get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
+As you write your first lines of code in this new language, you may make many syntax errors. Don't get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
 
 Additionally, one of the best things about programming is that we can get such immediate feedback from our creations. There is no penalty for making a mistake when programming. Write some code, run the code, read the errors, fix the errors, rinse and repeat!
 
 ### Code comments
 
-Occasionally we’ll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
+Occasionally we'll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
 
     // let's write another program!!!
     console.log("hello world");
@@ -72,7 +72,7 @@ The program above would only print:
     hello world
     goodbye moon
 
-Comments are useful when annotating pieces of code to offer an explanation of how the code works. We’ll want to strive to write straightforward code that is self-explanatory when possible, but we can also use comments to add additional clarity. The real art of programming is to write code so elegantly that it is easy to follow.
+Comments are useful when annotating pieces of code to offer an explanation of how the code works. We'll want to strive to write straightforward code that is self-explanatory when possible, but we can also use comments to add additional clarity. The real art of programming is to write code so elegantly that it is easy to follow.
 
 **The Number Data Type**
 
@@ -104,11 +104,11 @@ The **string** data type is a primitive data type that used to represent textual
 
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     “That’s a great string”; (valid)
-    'Shakespeare wrote, “To be or not to be”’; (valid)
-    'That’s a bad string’; (invalid)</span>
+     “That's a great string”; (valid)
+    'Shakespeare wrote, “To be or not to be”'; (valid)
+    'That's a bad string'; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
-     \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
+     \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
 -   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 -   <span id="f633">empty strings have a length of zero.</span>
 -   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
@@ -117,7 +117,7 @@ The **string** data type is a primitive data type that used to represent textual
      console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
      console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
 -   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
--   <span id="e2f5">The index of the last character of a string is always one less than it’s length.</span>
+-   <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
 -   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
      console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
      console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
@@ -190,7 +190,7 @@ let num = 0;
 
 **Functions**
 
-A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms’)
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms')
 
 -   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="676f">Includes three things:</span>
@@ -208,14 +208,14 @@ Greate code reads like English and almost explains itself. Think: Elegant, reada
 
 **Parameters and Arguments**
 
--   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
+-   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function's declaration.</span>
 -   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
 -   <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
 -   <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ### Including Comments
 
-Comments are important because they help other people understand what is going on in your code or remind you if you forgot something yourself. Keep in mind that they have to be marked properly so the browser won’t try to execute them.
+Comments are important because they help other people understand what is going on in your code or remind you if you forgot something yourself. Keep in mind that they have to be marked properly so the browser won't try to execute them.
 
 In JavaScript you have two different options:
 
@@ -266,7 +266,7 @@ nationality:”German”
 
 ### The Next Level: Arrays
 
-Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
+Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here's how to create one in JavaScript:
 
 var fruit = \[“Banana”, “Apple”, “Pear”\];
 
@@ -344,7 +344,7 @@ function name(parameter1, parameter2, parameter3) {
 
 }
 
-As you can see, it consists of the `function` keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
 
 ### Outputting Data
 
@@ -446,7 +446,7 @@ There are many different ways to work with strings:
 -   <span id="6bcd">`slice()` — Extracts a section of a string and returns it as a new string</span>
 -   <span id="e4ee">`split()` — Splits a string object into an array of strings at a specified position</span>
 -   <span id="3a27">`substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters</span>
--   <span id="3d14">`substring()` — Also similar to `slice()` but can’t accept negative indices</span>
+-   <span id="3d14">`substring()` — Also similar to `slice()` but can't accept negative indices</span>
 -   <span id="fa33">`toLowerCase()` — Convert strings to lower case</span>
 -   <span id="3485">`toUpperCase()` — Convert strings to upper case</span>
 -   <span id="4f96">`valueOf()` — Returns the primitive value (that has no properties or methods) of a string object</span>
@@ -499,9 +499,9 @@ Regular expressions are search patterns used to match character combinations in 
 -   <span id="e4cf">`n+` — Matches any string that contains at least one n</span>
 -   <span id="be07">`n*` — Any string that contains zero or more occurrences of n</span>
 -   <span id="4a93">`n?` — A string that contains zero or one occurrence of n</span>
--   <span id="91f0">`n{X}` — String that contains a sequence of X n’s</span>
--   <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n’s</span>
--   <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n’s</span>
+-   <span id="91f0">`n{X}` — String that contains a sequence of X n's</span>
+-   <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n's</span>
+-   <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n's</span>
 -   <span id="15b3">`n$` — Any string with n at the end of it</span>
 -   <span id="5fc9">`^n` — String with n at the beginning of it</span>
 -   <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
@@ -529,7 +529,7 @@ In JavaScript, you can also work with numbers, constants and perform mathematica
 
 ### Math Properties
 
--   <span id="9f68">`E` — Euler’s number</span>
+-   <span id="9f68">`E` — Euler's number</span>
 -   <span id="a4df">`LN2` — The natural logarithm of 2</span>
 -   <span id="0f06">`LN10` — Natural logarithm of 10</span>
 -   <span id="1a92">`LOG2E` — Base 2 logarithm of E</span>
@@ -603,7 +603,7 @@ The DOM is the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" cla
 
 -   <span id="cfb7">`attributes` — Returns a live collection of all attributes registered to an element</span>
 -   <span id="6138">`baseURI` — Provides the absolute base URL of an HTML element</span>
--   <span id="34da">`childNodes` — Gives a collection of an element’s child nodes</span>
+-   <span id="34da">`childNodes` — Gives a collection of an element's child nodes</span>
 -   <span id="58ec">`firstChild` — Returns the first child node of an element</span>
 -   <span id="2f34">`lastChild` — The last child node of an element</span>
 -   <span id="fdea">`nextSibling` — Gives you the next node at the same node tree level</span>
@@ -663,7 +663,7 @@ Besides HTML elements, JavaScript is also able to take into account the user bro
 -   <span id="458e">`document` — Returns the document object for the window</span>
 -   <span id="93ee">`frames` — Returns all `<iframe>` elements in the current window</span>
 -   <span id="c42a">`history` — Provides the History object for the window</span>
--   <span id="3a5d">`innerHeight` — The inner height of a window’s content area</span>
+-   <span id="3a5d">`innerHeight` — The inner height of a window's content area</span>
 -   <span id="c609">`innerWidth` — The inner width of the content area</span>
 -   <span id="5167">`length` — Find out the number of `<iframe>` elements in the window</span>
 -   <span id="4f05">`location` — Returns the location object for the window</span>
@@ -748,7 +748,7 @@ Events are things that can happen to HTML elements and are performed by the user
 -   <span id="65e5">`onpagehide` — The user navigates away from a webpage</span>
 -   <span id="aae6">`onpageshow` — When the user navigates to a webpage</span>
 -   <span id="e3dc">`onresize` — The document view is resized</span>
--   <span id="96c8">`onscroll` — An element’s scrollbar is being scrolled</span>
+-   <span id="96c8">`onscroll` — An element's scrollbar is being scrolled</span>
 -   <span id="f2fa">`onunload` — Event occurs when a page has unloaded</span>
 
 ### Form
@@ -778,7 +778,7 @@ Events are things that can happen to HTML elements and are performed by the user
 ### Clipboard
 
 -   <span id="c299">`oncopy` — User copies the content of an element</span>
--   <span id="267c">`oncut` — The user cuts an element’s content</span>
+-   <span id="267c">`oncut` — The user cuts an element's content</span>
 -   <span id="e33c">`onpaste` — A user pastes the content in an element</span>
 
 ### Media
@@ -817,13 +817,13 @@ Events are things that can happen to HTML elements and are performed by the user
 -   <span id="5a40">`onmessage` — A message is received through the event source</span>
 -   <span id="0dad">`onoffline` — The browser starts to work offline</span>
 -   <span id="058e">`ononline` — The browser starts to work online</span>
--   <span id="090a">`onpopstate` — When the window’s history changes</span>
+-   <span id="090a">`onpopstate` — When the window's history changes</span>
 -   <span id="d940">`onshow` — A `<menu>` element is shown as a context menu</span>
 -   <span id="3062">`onstorage` — A Web Storage area is updated</span>
 -   <span id="2681">`ontoggle` — The user opens or closes the `<details>` element</span>
 -   <span id="6a40">`onwheel` — Mouse wheel rolls up or down over an element</span>
 -   <span id="7178">`ontouchcancel` — Screen-touch is interrupted</span>
--   <span id="bec5">`ontouchend` — User’s finger is removed from a touch-screen</span>
+-   <span id="bec5">`ontouchend` — User's finger is removed from a touch-screen</span>
 -   <span id="3b60">`ontouchmove` — A finger is dragged across the screen</span>
 -   <span id="3c0e">`ontouchstart` — A finger is placed on the touch-screen</span>
 
@@ -994,11 +994,11 @@ hex
 
 `parseInt(".1")`
 
-NaN: integers can’t start with “.”
+NaN: integers can't start with “.”
 
 `parseFloat("$72.47")`
 
-NaN: numbers can’t start with “$”
+NaN: numbers can't start with “$”
 
 Supply Radix
 
@@ -1146,7 +1146,7 @@ The first-defined operator `??` evaluates to its first defined operand: if its l
 
 ### delete Operator
 
-Deleting an array element leaves a “hole” in the array and does not change the array’s length. The resulting array is sparse.
+Deleting an array element leaves a “hole” in the array and does not change the array's length. The resulting array is sparse.
 
 ### void Operator
 
@@ -1236,7 +1236,7 @@ Objects are not (by default) iterable. Attempting to use `for/of` on a regular o
 
 If you want to iterate through the properties of an object, you can use the `for/in` loop.
 
-Note: `for/of` can be used on objects with `Object.entries` property, but it will not pick properties from object’s prototype.
+Note: `for/of` can be used on objects with `Object.entries` property, but it will not pick properties from object's prototype.
 
 ### for/in
 
@@ -1276,9 +1276,9 @@ The `with `statement is forbidden in strict mode and should be considered deprec
 
 If a debugger program is available and is running, then an implementation may (but is not required to) perform some kind of debugging action.
 
-In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables’ values, examine the call stack, and so on.
+In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables' values, examine the call stack, and so on.
 
-Note that it is not enough to have a debugger available: the debugger statement won’t start the debugger for you. If you’re using a web browser and have the developer tools console open, however, this statement will cause a breakpoint.
+Note that it is not enough to have a debugger available: the debugger statement won't start the debugger for you. If you're using a web browser and have the developer tools console open, however, this statement will cause a breakpoint.
 
 ### use strict
 
@@ -1298,7 +1298,7 @@ The differences between strict mode and non-strict mode are the following:
 
 · In strict mode, assignments to non-writable properties and attempts to create new properties on non-extensible objects throw a `TypeError`. (In non-strict mode, these attempts fail silently.)
 
-· In strict mode, code passed to `eval() `cannot declare variables or define functions in the caller’s scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
+· In strict mode, code passed to `eval() `cannot declare variables or define functions in the caller's scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
 
 · In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has “magical” behavior in which elements of the array and named function parameters both refer to the same value.
 
@@ -1429,7 +1429,7 @@ false: property is non-configurable
 
 `delete globalThis.x`
 
-false: can’t delete `this `property
+false: can't delete `this `property
 
 `function f() {}`
 
@@ -1563,7 +1563,7 @@ The functions `JSON.stringify()` and` JSON.parse()` serialize and restore JavaSc
 
 `let s = JSON.stringify(o);`
 
-s == '{“x”:1,”y”:{“z”:\[false,null,””\]}}’
+s == '{“x”:1,”y”:{“z”:\[false,null,””\]}}'
 
 `let p = JSON.parse(s);`
 
@@ -1811,7 +1811,7 @@ This the 1001st element of the array
 
 Array index 1. Same as a\[1\] = 1;
 
-The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don’t get an error; you simply get `undefined`.
+The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don't get an error; you simply get `undefined`.
 
 ### Sparse Arrays
 
@@ -2485,7 +2485,7 @@ For function invocation in non-strict mode, the invocation context (the `this` v
 
 `const strict = (function() { return !this; }())`
 
-Determine if we’re in strict mode
+Determine if we're in strict mode
 
 ### Constructor Invocation
 
@@ -2723,7 +2723,7 @@ Functions can also be assigned to object properties rather than variables.
 
 256
 
-Functions don’t even require names at all, as when they’re assigned to array elements:
+Functions don't even require names at all, as when they're assigned to array elements:
 
 `let a = [x => x*x, 20];`
 
@@ -2881,7 +2881,7 @@ JavaScript uses lexical scoping. This means that functions are executed using th
 
 In order to implement lexical scoping, the internal state of a JavaScript function object must include not only the code of the function but also a reference to the scope in which the function definition appears.
 
-This combination of a function object and a scope (a set of variable bindings) in which the function’s variables are resolved is called a closure.
+This combination of a function object and a scope (a set of variable bindings) in which the function's variables are resolved is called a closure.
 
 Closures become interesting when they are invoked from a different scope than the one they were defined in. This happens most commonly when a nested function object is returned from the function within which it was defined.
 
@@ -3217,7 +3217,7 @@ We defined a factorial function that cached its previously computed results. In 
 
 ### Classes
 
-JavaScript’s classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance mechanism of Java.
+JavaScript's classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance mechanism of Java.
 
 ### Classes and Prototypes
 
@@ -3485,7 +3485,7 @@ The method defined by this code is `Range.parse()`, not `Range.prototype.parse()
 
 ### Getters, Setters, and other Method Forms
 
-Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don’t put a comma after the getter or setter.
+Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don't put a comma after the getter or setter.
 
 ### Public, Private, and Static Fields
 
@@ -3575,7 +3575,7 @@ We can augment JavaScript classes simply by adding new methods to their prototyp
 
 ### Subclasses and Prototypes
 
-Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we’ll instead specify a start and a distance, or span.
+Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we'll instead specify a start and a distance, or span.
 
     function Span(start, span) {
 
@@ -3601,7 +3601,7 @@ Ensure that the `Span` prototype inherits from the `Range`
 
     Span.prototype = Object.create(Range.prototype);
 
-We don’t want to inherit `Range.prototype.constructor`, so we define our own constructor property:
+We don't want to inherit `Range.prototype.constructor`, so we define our own constructor property:
 
     Span.prototype.constructor = Span;
 
@@ -3863,7 +3863,7 @@ Because Set objects are iterable, you can convert them to arrays and argument li
 
 `[...oneDigitPrimes]`
 
-JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven’t deleted it first), and the most recently inserted element will be the last one iterated.
+JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven't deleted it first), and the most recently inserted element will be the last one iterated.
 
 Set class also implements a `forEach()` method
 
@@ -3948,7 +3948,7 @@ The `WeakMap `class is a variant (but not an actual subclass) of the Map class t
 
 `WeakMap `keys must be objects or arrays; primitive values are not subject to garbage collection and cannot be used as keys.
 
-WeakMap implements only the` get(), set(), has(),` and `delete()` methods. In particular, `WeakMap` is not iterable and does not define `keys(), values(),` or `forEach()`. If WeakMap was iterable, then its keys would be reachable and it wouldn’t be weak.
+WeakMap implements only the` get(), set(), has(),` and `delete()` methods. In particular, `WeakMap` is not iterable and does not define `keys(), values(),` or `forEach()`. If WeakMap was iterable, then its keys would be reachable and it wouldn't be weak.
 
 Similarly, WeakMap does not implement the size property because the `size` of a WeakMap could change at any time as objects are garbage collected
 
@@ -4002,7 +4002,7 @@ one more way to create typed arrays that involves the `ArrayBuffer` type
 
 1024\*1024
 
-Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you’d use regular arrays:
+Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you'd use regular arrays:
 
 `let ints = new Int16Array(10);`
 
@@ -4140,7 +4140,7 @@ Match “java” with one or more spaces before and after
 
 Match zero or more characters that are not open parens
 
-If you want to match repetitions of more complicated expressions, you’ll need to define a group with parentheses
+If you want to match repetitions of more complicated expressions, you'll need to define a group with parentheses
 
 Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
 
@@ -4251,7 +4251,7 @@ match the word “JavaScript” on a line by itself
 
 `/^JavaScript$/`
 
-To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what’s needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
+To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what's needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
 
 The element `\B` anchors the match to a location that is not a word boundary. Thus, the pattern `/\B[Ss]cript/` matches "JavaScript" and "postscript", but not "script" or "Scripting".
 
@@ -4339,7 +4339,7 @@ to replace quotation marks in a string with other characters:
 
 `'He said "stop"'.replace(quote, '«$1»')`
 
-'He said «stop»’
+'He said «stop»'
 
 If your RegExp uses named capture groups, then you can refer to the matching text by name rather than by number:
 
@@ -4347,7 +4347,7 @@ If your RegExp uses named capture groups, then you can refer to the matching tex
 
 `'He said "stop"'.replace(quote, '«$<quotedText>»')`
 
-'He said «stop»’
+'He said «stop»'
 
 Instead of passing a replacement string as the second argument to replace(), you can also pass a function that will be invoked to compute the replacement value.
 
@@ -4500,7 +4500,7 @@ To find the index of all &lt;p&gt; tags within a string of HTML text:
 
     }
 
-If the html string contains at least one &lt;p&gt; tag, then it will loop forever. For each iteration of the loop, we’re creating a new RegExp object with `lastIndex` set to 0, so `exec()` always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we’re using the same RegExp object for each iteration of the loop.
+If the html string contains at least one &lt;p&gt; tag, then it will loop forever. For each iteration of the loop, we're creating a new RegExp object with `lastIndex` set to 0, so `exec()` always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we're using the same RegExp object for each iteration of the loop.
 
 On the other hand, sometimes reusing a RegExp object is the wrong thing to do. Suppose, for example, that we want to loop through all of the words in a dictionary to find words that contain pairs of double letters.
 
@@ -4605,11 +4605,11 @@ adds three months and two weeks to the current date:
 
     d.toLocaleDateString()
 
-“1/1/2020”: 'en-US’ locale
+“1/1/2020”: 'en-US' locale
 
     d.toLocaleTimeString()
 
-“5:10:30 PM”: 'en-US’ locale
+“5:10:30 PM”: 'en-US' locale
 
     d.toISOString()
 
@@ -4667,7 +4667,7 @@ JavaScript supports JSON serialization and deserialization with the two function
 
     let s = JSON.stringify(o);
 
-s == '{“s”:””,”n”:0,”a”:\[true,false,null\]}’
+s == '{“s”:””,”n”:0,”a”:\[true,false,null\]}'
 
     let copy = JSON.parse(s);
 
@@ -5262,7 +5262,7 @@ Another problem with callbacks is that they can make handling errors difficult. 
 
 Note that Promises represent the future results of single asynchronous computations. They cannot be used to represent repeated asynchronous computations, however.
 
-We can’t use Promises to replace `setInterval()` because that function invokes a callback function repeatedly, which is something that Promises are just not designed to do.
+We can't use Promises to replace `setInterval()` because that function invokes a callback function repeatedly, which is something that Promises are just not designed to do.
 
 ### Using Promises
 
@@ -5290,7 +5290,7 @@ Asynchronous operations, particularly those that involve networking, can typical
 
 `getJSON("/api/user/profile").then(displayUserProfile, handleProfileError);`
 
-if `getJSON()` runs normally, it passes its result to `displayUserProfile()`. If there is an error (the user is not logged in, the server is down, the user’s internet connection dropped, the request timed out, etc.), then `getJSON()` passes an Error object to `handleProfileError()`.
+if `getJSON()` runs normally, it passes its result to `displayUserProfile()`. If there is an error (the user is not logged in, the server is down, the user's internet connection dropped, the request timed out, etc.), then `getJSON()` passes an Error object to `handleProfileError()`.
 
 In practice, it is rare to see two functions passed to then(). There is a better and more idiomatic way of handling errors when working with Promises.
 
@@ -5362,7 +5362,7 @@ fetch() returns a Promise object which, when fulfilled, passes a Response object
 
 “task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
 
-Let’s consider:
+Let's consider:
 
     function c1(response) {
 
@@ -5410,19 +5410,19 @@ So if c returns a non-Promise, that return value becomes the value of p, p is fu
 
 At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the “resolved” state of a Promise means
 
-the Promise has become associated with, or “locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
+the Promise has become associated with, or “locked onto,” another Promise. We don't know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
 
-Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
+Let's bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
 
 ### More on Promises and Errors
 
-With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
+With synchronous code, if you leave out error-handling code, you'll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
 
 THE CATCH AND FINALLY METHODS
 
 The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
 
-Normal exceptions don’t work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
+Normal exceptions don't work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
 
     fetch("/api/user/profile")
 
@@ -5496,9 +5496,9 @@ c2 is the callback we pass to that call
 
 c3 is the callback that we pass to the `.catch()` call
 
-The first thing that could fail is the fetch() request itself. Let’s say p1 was rejected with a NetworkError object.
+The first thing that could fail is the fetch() request itself. Let's say p1 was rejected with a NetworkError object.
 
-We didn’t pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
+We didn't pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
 
 Without a handler, though, p2 is rejected, and then p3 is rejected for the same reason.
 
@@ -5574,7 +5574,7 @@ Occasionally, you may want to run a number of Promises at once but may only care
 
 These new keywords dramatically simplify the use of Promises and allow us to write Promise-based, asynchronous code that looks like synchronous code that blocks while waiting for network responses or other asynchronous events.
 
-Asynchronous code can’t return a value or throw an exception the way that regular synchronous code can. And this is why Promises are designed the way the are. The value of a fulfilled Promise is like the return value of a synchronous function. And the value of a rejected Promise is like a value thrown by a synchronous function.
+Asynchronous code can't return a value or throw an exception the way that regular synchronous code can. And this is why Promises are designed the way the are. The value of a fulfilled Promise is like the return value of a synchronous function. And the value of a rejected Promise is like a value thrown by a synchronous function.
 
 `async` and `await` take efficient, Promise-based code and hide the Promises so that your asynchronous code can be as easy to read and as easy to reason about as inefficient, blocking, synchronous code.
 
@@ -5608,7 +5608,7 @@ The `getHighScore()` function is declared `async`, so it returns a Promise. And 
 
 ### Awaiting Multiple Promises
 
-Suppose that we’ve written our `getJSON()` function using async:
+Suppose that we've written our `getJSON()` function using async:
 
     async function getJSON(url) {
 
@@ -5640,7 +5640,7 @@ You can call fetch() on each URL to get an array of Promises:
 
     const promises = urls.map(url => fetch(url));
 
-We could now use` Promise.all()` to wait for all the Promises in the array to be fulfilled. But suppose we want the results of the first fetch as soon as they become available and don’t want to wait for all the URLs to be fetched.
+We could now use` Promise.all()` to wait for all the Promises in the array to be fulfilled. But suppose we want the results of the first fetch as soon as they become available and don't want to wait for all the URLs to be fetched.
 
     for(const promise of promises) {
 
@@ -5660,9 +5660,9 @@ We could now use` Promise.all()` to wait for all the Promises in the array to be
 
 both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
 
-#### If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:
+#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor"><strong>bgoonz’s</strong> gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

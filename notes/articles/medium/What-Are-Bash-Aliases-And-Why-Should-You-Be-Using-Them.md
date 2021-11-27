@@ -21,7 +21,7 @@ Otherwise, you can close your terminal and re-open it so that it reloads its con
 
 With those aliases defined in your Bash initialization script, you can then type **ll** and get the results of **ls -l**, and when you type **ls** you get, instead of the output of plain old <a href="https://opensource.com/article/19/7/master-ls-command" class="markup--anchor markup--p-anchor">ls</a>.
 
-Those aliases are great to have, but they just scratch the surface of what’s possible. Here are the top 10 Bash aliases that, once you try them, you won’t be able to live without.
+Those aliases are great to have, but they just scratch the surface of what's possible. Here are the top 10 Bash aliases that, once you try them, you won't be able to live without.
 
 ### Set up first
 
@@ -39,7 +39,7 @@ If you want to try any of the aliases in this article for yourself, enter them i
 
 -   <span id="75f5"><a href="https://opensource.com/article/19/7/bash-aliases" class="markup--anchor markup--li-anchor">source</a></span>
 
-### Here’s a list of my bash aliases:
+### Here's a list of my bash aliases:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 6, 2021](https://medium.com/p/30a6cfafdfeb).
 

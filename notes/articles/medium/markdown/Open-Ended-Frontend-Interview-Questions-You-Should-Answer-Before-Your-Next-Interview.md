@@ -10,22 +10,22 @@ Explain event delegation.
 -   <span id="949e">Explain how `this` works in JavaScript.</span>
 -   <span id="8cb9">Can you give an example of one of the ways that working with `this` has changed in ES6?</span>
 -   <span id="47b9">Explain how prototypal inheritance works.</span>
--   <span id="beed">What’s the difference between a variable that is: `null`, `undefined` or undeclared?</span>
+-   <span id="beed">What's the difference between a variable that is: `null`, `undefined` or undeclared?</span>
 -   <span id="5db2">How would you go about checking for any of these states?</span>
 -   <span id="008e">What is a closure, and how/why would you use one?</span>
 -   <span id="19aa">What language constructions do you use for iterating over object properties and array items?</span>
 -   <span id="2757">Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?</span>
--   <span id="b1f7">What’s a typical use case for anonymous functions?</span>
--   <span id="a0e5">What’s the difference between host objects and native objects?</span>
+-   <span id="b1f7">What's a typical use case for anonymous functions?</span>
+-   <span id="a0e5">What's the difference between host objects and native objects?</span>
 -   <span id="b6c8">Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?</span>
 -   <span id="b3d8">Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`</span>
--   <span id="87c0">Can you explain what `Function.call` and `Function.apply` do? What’s the notable difference between the two?</span>
+-   <span id="87c0">Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?</span>
 -   <span id="604c">Explain `Function.prototype.bind`.</span>
--   <span id="65d9">What’s the difference between feature detection, feature inference, and using the UA string?</span>
+-   <span id="65d9">What's the difference between feature detection, feature inference, and using the UA string?</span>
 -   <span id="022a">Explain “hoisting”.</span>
 -   <span id="04c6">Describe event bubbling.</span>
 -   <span id="ed30">Describe event capturing.</span>
--   <span id="7471">What’s the difference between an “attribute” and a “property”?</span>
+-   <span id="7471">What's the difference between an “attribute” and a “property”?</span>
 -   <span id="c83d">What are the pros and cons of extending built-in JavaScript objects?</span>
 -   <span id="8fbf">What is the difference between `==` and `===`?</span>
 -   <span id="0901">Explain the same-origin policy with regards to JavaScript.</span>

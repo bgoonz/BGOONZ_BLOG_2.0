@@ -17,10 +17,10 @@ Curating Complexity: A Guide to Big-O Notation
 -   <span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span>
 -   <span id="3cb7">The real question we need to answering is: `How does our performance scale?`.</span>
 
-### big 'O’ notation
+### big 'O' notation
 
 -   <span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span>
--   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:</span>
+-   <span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we'll want to keep in mind:</span>
 -   <span id="2e86">The function should be defined by the size of the input.</span>
 -   <span id="07b0">`Smaller` Big O is better (lower time complexity)</span>
 -   <span id="f1b0">Big O is used to describe the worst case scenario.</span>
@@ -54,17 +54,17 @@ Common Complexity Classes
 
 #### `O(log(n)) Logarithmic`
 
-> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display 'halving’ the size of the input (like binary search!)**
+> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm's will typically display 'halving' the size of the input (like binary search!)**
 
 #### `O(n) Linear`
 
-> **Linear algorithm’s will access each item of the input “once”.**
+> **Linear algorithm's will access each item of the input “once”.**
 
 ### `O(nlog(n)) Log Linear Time`
 
 > **Combination of linear and logarithmic behavior, we will see features from both classes.**
 
-> Algorithm’s that are log-linear will use **both recursion AND iteration.**
+> Algorithm's that are log-linear will use **both recursion AND iteration.**
 
 ### `O(nc) Polynomial`
 
@@ -74,14 +74,14 @@ Common Complexity Classes
 
 > **C is now the number of recursive calls made in each stack frame.**
 
-> **Algorithm’s with exponential time are VERY SLOW.**
+> **Algorithm's with exponential time are VERY SLOW.**
 
 ---
 
 ### Memoization
 
 -   <span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span>
--   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve’ each problem once.</span>
+-   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve' each problem once.</span>
 -   <span id="65c9">Two features that comprise memoization:</span>
 
 1.  <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
@@ -89,9 +89,9 @@ Common Complexity Classes
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" /></figure>### Memoizing Factorial
 
-Our memo object is _mapping_ out our arguments of factorial to it’s return value.
+Our memo object is _mapping_ out our arguments of factorial to it's return value.
 
--   <span id="854a">Keep in mind we didn’t improve the speed of our algorithm.</span>
+-   <span id="854a">Keep in mind we didn't improve the speed of our algorithm.</span>
 
 ### Memoizing Fibonacci
 
@@ -103,13 +103,13 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 
 1.  <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
 2.  <span id="b36e">_Add memo object as an additional argument ._</span>
-3.  <span id="f81f">_Add a base case condition that returns the stored value if the function’s argument is in the memo._</span>
-4.  <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function’s argument it’s key._</span>
+3.  <span id="f81f">_Add a base case condition that returns the stored value if the function's argument is in the memo._</span>
+4.  <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function's argument it's key._</span>
 
 #### Things to remember
 
 1.  <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
-2.  <span id="7bb1">_When you notice duplicate sub-tree’s that means we can memoize._</span>
+2.  <span id="7bb1">_When you notice duplicate sub-tree's that means we can memoize._</span>
 
 ---
 
@@ -125,7 +125,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 #### Steps for tabulation
 
 -   <span id="8918">_Create a table array based off the size of the input._</span>
--   <span id="b4e7">_Initialize some values in the table to 'answer’ the trivially small subproblem._</span>
+-   <span id="b4e7">_Initialize some values in the table to 'answer' the trivially small subproblem._</span>
 -   <span id="072e">_Iterate through the array and fill in the remaining entries._</span>
 -   <span id="192e">_Your final answer is usually the last entry in the table._</span>
 
@@ -149,7 +149,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 ### Example of Linear Search
 
 -   <span id="84b2">_Worst Case Scenario: The term does not even exist in the array._</span>
--   <span id="30dc">_Meaning: If it doesn’t exist then our for loop would run until the end therefore making our time complexity O(n)._</span>
+-   <span id="30dc">_Meaning: If it doesn't exist then our for loop would run until the end therefore making our time complexity O(n)._</span>
 
 ---
 
@@ -168,10 +168,10 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image" /></figure>-   <span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span>
 -   <span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span>
 
-> It’s almost never used in production code because:
+> It's almost never used in production code because:
 
--   <span id="3cb1">_It’s not efficient_</span>
--   <span id="4eac">_It’s not commonly used_</span>
+-   <span id="3cb1">_It's not efficient_</span>
+-   <span id="4eac">_It's not commonly used_</span>
 -   <span id="d730">_There is stigma attached to it_</span>
 -   <span id="8da7">`Bubbling Up`_ : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
 -   <span id="8447">_Bubble sort, sorts an array of integers by bubbling the largest integer to the top._</span>
@@ -272,7 +272,7 @@ Our memo object is _mapping_ out our arguments of factorial to it’s return val
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />

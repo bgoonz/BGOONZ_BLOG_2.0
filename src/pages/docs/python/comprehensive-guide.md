@@ -55,7 +55,7 @@ template: docs
         -   [Getting Individual Values in a List with Indexes](#getting-individual-values-in-a-list-with-indexes)
         -   [Negative Indexes](#negative-indexes)
         -   [Getting Sublists with Slices](#getting-sublists-with-slices)
-        -   [Getting a List’s Length with len()](#getting-a-lists-length-with-len)
+        -   [Getting a List's Length with len()](#getting-a-lists-length-with-len)
         -   [Changing Values in a List with Indexes](#changing-values-in-a-list-with-indexes)
         -   [List Concatenation and List Replication](#list-concatenation-and-list-replication)
         -   [Removing Values from Lists with del Statements](#removing-values-from-lists-with-del-statements)
@@ -323,7 +323,7 @@ You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
-1. It can’t begin with a number.
+1. It can't begin with a number.
 1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
 
 Example:
@@ -570,7 +570,7 @@ And these as well:
 
 There are three Boolean operators: and, or, and not.
 
-The _and_ Operator’s _Truth_ Table:
+The _and_ Operator's _Truth_ Table:
 
 | Expression        | Evaluates to |
 | ----------------- | ------------ |
@@ -579,7 +579,7 @@ The _and_ Operator’s _Truth_ Table:
 | `False and True`  | `False`      |
 | `False and False` | `False`      |
 
-The _or_ Operator’s _Truth_ Table:
+The _or_ Operator's _Truth_ Table:
 
 | Expression       | Evaluates to |
 | ---------------- | ------------ |
@@ -588,7 +588,7 @@ The _or_ Operator’s _Truth_ Table:
 | `False or True`  | `True`       |
 | `False or False` | `False`      |
 
-The _not_ Operator’s _Truth_ Table:
+The _not_ Operator's _Truth_ Table:
 
 | Expression  | Evaluates to |
 | ----------- | ------------ |
@@ -681,7 +681,7 @@ while spam < 5:
 
 ### break Statements
 
-If the execution reaches a break statement, it immediately exits the while loop’s clause:
+If the execution reaches a break statement, it immediately exits the while loop's clause:
 
 ```python
 while True:
@@ -893,7 +893,7 @@ cats,dogs,mice
 
 -   However, a local scope can access global variables.
 
--   Code in a function’s local scope cannot use variables in any other local scope.
+-   Code in a function's local scope cannot use variables in any other local scope.
 
 -   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
@@ -1079,7 +1079,7 @@ Slicing the complete list will perform a copy:
 
 [_Return to the Top_](#python-cheatsheet)
 
-### Getting a List’s Length with len()
+### Getting a List's Length with len()
 
 ```python
 >>> spam = ['cat', 'dog', 'moose']
@@ -2821,8 +2821,8 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 
 1. Import the regex module with `import re`.
 1. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
-1. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
-1. Call the Match object’s `group()` method to return a string of the actual matched text.
+1. Pass the string you want to search into the Regex object's `search()` method. This returns a `Match` object.
+1. Call the Match object's `group()` method to return a string of the actual matched text.
 
 All the regex functions in Python are in the re module:
 
@@ -3002,7 +3002,7 @@ True
 
 ### Greedy and Nongreedy Matching
 
-Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
+Python's regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
 ```python
 >>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
@@ -3052,7 +3052,7 @@ There are times when you want to match a set of characters but the shorthand cha
 
 You can also include ranges of letters or numbers by using a hyphen. For example, the character class [a-zA-Z0-9] will match all lowercase letters, uppercase letters, and numbers.
 
-By placing a caret character (^) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
+By placing a caret character (^) just after the character class's opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
 
 ```python
 >>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
@@ -3070,7 +3070,7 @@ By placing a caret character (^) just after the character class’s opening brac
 
 -   Likewise, you can put a dollar sign (\$) at the end of the regex to indicate the string must end with this regex pattern.
 
--   And you can use the ^ and \$ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+-   And you can use the ^ and \$ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -3184,7 +3184,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.       |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).   |
-| `[^abc]`                 | any character that isn’t between the brackets.         |
+| `[^abc]`                 | any character that isn't between the brackets.         |
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -3416,7 +3416,7 @@ And all is good :)
 There are two ways to specify a file path.
 
 -   An absolute path, which always begins with the root folder
--   A relative path, which is relative to the program’s current working directory
+-   A relative path, which is relative to the program's current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
@@ -4036,7 +4036,7 @@ Traceback (most recent call last):
 Exception: This is the error message.
 ```
 
-Often it’s the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
+Often it's the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
 
 ```python
 def box_print(symbol, width, height):
@@ -4061,7 +4061,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 
 ### Getting the Traceback as a String
 
-The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
+The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception's traceback but also want an except statement to gracefully handle the exception. You will need to import Python's traceback module before calling this function.
 
 ```python
 >>> import traceback
@@ -4086,7 +4086,7 @@ The 116 is the return value from the write() method, since 116 characters were w
 
 ### Assertions
 
-An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
+An assertion is a sanity check to make sure your code isn't doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
 -   The assert keyword
 -   A condition (that is, an expression that evaluates to True or False)
@@ -4108,7 +4108,7 @@ Traceback (most recent call last):
 AssertionError: The pod bay doors need to be "open".
 ```
 
-In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.
+In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
 
 Disabling Assertions
 
@@ -4173,7 +4173,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn't prevent the program from working but might do so in the future.              |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
@@ -4181,7 +4181,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 
 ### Disabling Logging
 
-After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable() function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
+After you've debugged your program, you probably don't want all these log messages cluttering the screen. The logging.disable() function disables these so that you don't have to go into your program and remove all the logging calls by hand.
 
 ```python
 >>> import logging
@@ -4442,7 +4442,7 @@ Exit
 ## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
-A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+A module's **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
@@ -4475,7 +4475,7 @@ For example we are developing script which is designed to be used as module, we 
 
 ### Advantages
 
-1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
+1. Every Python module has it's `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
 4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
@@ -4486,7 +4486,7 @@ For example we are developing script which is designed to be used as module, we 
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
-The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
+The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you've put the Python source code within your project.
 
 This allows you to easily install Python packages. Often it's enough to write:
 
@@ -4621,7 +4621,7 @@ Usage:
 
 1.  Deactivate
 
-    To move onto something else in the command line type 'deactivate’ to deactivate your environment.
+    To move onto something else in the command line type 'deactivate' to deactivate your environment.
 
         deactivate
 
@@ -4629,7 +4629,7 @@ Usage:
 
 1.  Workon
 
-    Open up the command prompt and type 'workon HelloWold’ to activate the environment and move into your root project folder
+    Open up the command prompt and type 'workon HelloWold' to activate the environment and move into your root project folder
 
         workon HelloWold
 
@@ -4708,7 +4708,7 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
         cd my_project
         pipenv install <package>
 
-    Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+    Pipenv will install your package and create a Pipfile for you in your project's directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
 1.  Uninstall Packages
 

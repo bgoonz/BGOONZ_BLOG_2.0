@@ -44,9 +44,9 @@ Start by adding the [Algolia plugin](https://github.com/algolia/gatsby-plugin-al
 
 You will need to provide some information that identifies your account to the Algolia plugin and authorizes it to write data to it.
 
-If you don’t already have an Algolia account, [create one](https://www.algolia.com/users/sign_up). There is a free trial that does not require a credit card.
+If you don't already have an Algolia account, [create one](https://www.algolia.com/users/sign_up). There is a free trial that does not require a credit card.
 
-Then, go to [the 'API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
+Then, go to [the 'API Keys' section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
 
 [![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png 'The API Keys section of the Algolia profile')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
 
@@ -56,7 +56,7 @@ Copy out the Application ID, Search-Only API Key, and Admin API Key from Algolia
 
 Note that the value of the Admin Key must be kept secret, since it allows write access to your index. It must therefore not be included in any code you ship.
 
-It is also best practice not to check in the `.env` file for this reason. Consider creating an `.env.example` without the values to git instead. This way, if someone else sets up the project, they know what configuration they need to supply but don’t have access to your private values.
+It is also best practice not to check in the `.env` file for this reason. Consider creating an `.env.example` without the values to git instead. This way, if someone else sets up the project, they know what configuration they need to supply but don't have access to your private values.
 
 Next, modify `gatsby-config.js` to read the configuration and add the `gatsby-plugin-algolia` plugin.
 
@@ -108,7 +108,7 @@ Log in to your Algolia account, go to “Indices” and then select the “Page�
 
 If you get the error `GraphQLError: Field "fileAbsolutePath" is not defined by type MarkdownRemarkFilterInput` it means that no pages were found in your project. Check the path configured for `gatsby-source-filesystem` and the query (particularly `pagePath`).
 
-Algolia has an upper bound of 10KB for an index entry. If you get the error `AlgoliaSearchError: Record at the position XX objectID=xx-xx-xx-xx-xx is too big size=xxxx bytes` it means you exceeded that limit. Note how the excerpts are pruned to 5000 characters in the query. Make sure you prune long fields and don’t index unnecessary data.
+Algolia has an upper bound of 10KB for an index entry. If you get the error `AlgoliaSearchError: Record at the position XX objectID=xx-xx-xx-xx-xx is too big size=xxxx bytes` it means you exceeded that limit. Note how the excerpts are pruned to 5000 characters in the query. Make sure you prune long fields and don't index unnecessary data.
 
 ## [](#adding-the-user-interface)Adding the user interface
 
@@ -139,11 +139,11 @@ src/components/search/search-box.js
 
     import React from "react"import { connectSearchBox } from "react-instantsearch-dom"import { Search as SearchIcon } from "@styled-icons/fa-solid"export default connectSearchBox(  ({ refine, currentRefinement, className, onFocus }) => (    <form className={className}>      <input        className="SearchInput"        type="text"        placeholder="Search"        aria-label="Search"        onChange={e => refine(e.target.value)}        value={currentRefinement}        onFocus={onFocus}      />      <SearchIcon className="SearchIcon" />    </form>  ))
 
-The component consists of an HTML form containing an input field and the magnifying glass icon. Most of the work is done by Algolia’s [`connectSearchBox`](https://community.algolia.com/react-instantsearch/connectors/connectSearchBox.html) function. It exposes the current search string as `currentRefinement` and a function for changing it called `refine`.
+The component consists of an HTML form containing an input field and the magnifying glass icon. Most of the work is done by Algolia's [`connectSearchBox`](https://community.algolia.com/react-instantsearch/connectors/connectSearchBox.html) function. It exposes the current search string as `currentRefinement` and a function for changing it called `refine`.
 
 ### [](#displaying-search-results)Displaying search results
 
-That’s all there is to entering the search query. Next, build a component for displaying search results:
+That's all there is to entering the search query. Next, build a component for displaying search results:
 
 src/components/search/search-result.js
 
@@ -155,7 +155,7 @@ The `PageHit` component is responsible for displaying a single page (“hit”) 
 
 [`connectStateResults`](https://community.algolia.com/react-instantsearch/connectors/connectStateResults.html) wraps components to provide them with details about the current search such as the query, the number of results and timing statistics.
 
-If you’re using Algolia’s free tier, they ask you to acknowledge the use of their technology by including the string “Powered by Algolia”, which is what `PoweredBy` does.
+If you're using Algolia's free tier, they ask you to acknowledge the use of their technology by including the string “Powered by Algolia”, which is what `PoweredBy` does.
 
 `Highlight` and `Snippet` both display attributes of matching search results to the user. The former renders the full value whereas the latter only shows a snippet. A snippet is the text immediately surrounding the match. The `attribute` property is the name of the key in the Algolia index (as generated by `pageToAlgoliaRecord` in `algolia-queries.js`).
 
@@ -209,7 +209,7 @@ src/components/search/styled-search-result.js
 
 ## [](#usage)Usage
 
-The search widget is now ready for use. It needs to be placed somewhere in your project’s layout. If you start from Gatsby starter blog, you can use the `layout` component:
+The search widget is now ready for use. It needs to be placed somewhere in your project's layout. If you start from Gatsby starter blog, you can use the `layout` component:
 
     import React from "react"import { Link } from "gatsby"import { rhythm, scale } from "../utils/typography"import Search from "./search"const searchIndices = [{ name: `Pages`, title: `Pages` }]const Layout = ({ location, title, children }) => {  return (    <div      style={{        marginLeft: `auto`,        marginRight: `auto`,        maxWidth: rhythm(24),        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,      }}    >      <header>        <Search indices={searchIndices} />        {header}      </header>      <main>{children}</main>      <footer>        © {new Date().getFullYear()}, Built with        {` `}        <a href="https://www.gatsbyjs.com">Gatsby</a>      </footer>    </div>  )}export default Layout
 

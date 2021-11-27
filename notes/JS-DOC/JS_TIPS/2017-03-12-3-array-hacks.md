@@ -12,7 +12,7 @@ Arrays are everywhere in JavaScript and with the new [spread operators](https://
 
 ### 1. Iterating through an empty array
 
-JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array’s constructor and you will see what I mean.
+JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array's constructor and you will see what I mean.
 
 ```javascript
 > const arr = new Array(4);
@@ -51,7 +51,7 @@ A workaround that people usually resort to is to pass either `null` or `undefine
 > method('parameter1', undefined, 'parameter3');
 ```
 
-I personally don’t like using `null` since JavaScript treats it as an object and that’s just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
+I personally don't like using `null` since JavaScript treats it as an object and that's just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
 
 ```javascript
 > method(...['parameter1', , 'parameter3']); // works!

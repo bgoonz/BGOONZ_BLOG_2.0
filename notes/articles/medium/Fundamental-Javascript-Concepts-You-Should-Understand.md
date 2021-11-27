@@ -227,9 +227,9 @@ Plain Old JS Object Lesson Concepts
 -   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
 -   <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
 -   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
--   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
 -   <span id="f797">if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD</span>
--   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run</span>
+-   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run</span>
 -   <span id="86d1">Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining</span>
 -   <span id="25dc">scope of a program means the set of variables that are available for use within the program</span>
 -   <span id="bcaf">global scope is represented by the `window` object in the browser and the `global` object in Node.js</span>
@@ -257,14 +257,14 @@ Plain Old JS Object Lesson Concepts
 
     // if your return statement is one line, you can use implied return let arrowFunction = param => param + 1;
 
-    // you don’t have to assign to variable, can be anonymous // if you never need to use it again param => param + 1;
+    // you don't have to assign to variable, can be anonymous // if you never need to use it again param => param + 1;
 
 #### Given an arrow function, deduce the value of `this` without executing the code
 
 -   <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
 -   <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
 -   <span id="683a">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
--   <span id="e9e1">so you can’t use an arrow function to define a method directly</span>
+-   <span id="e9e1">so you can't use an arrow function to define a method directly</span>
 
 <!-- -->
 
@@ -461,7 +461,7 @@ Plain Old JS Object Lesson Concepts
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
--   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
 -   <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="c9f0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
@@ -523,7 +523,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
 -   <span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
--   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn't exist</span>
 -   <span id="e09e">you could also overwrite values or assign values to exist in a space where they should not exist</span>
 -   <span id="b6e0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
 
@@ -533,7 +533,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 #### 1. Label variables as either Primitive vs. Reference
 
-Javascript considers most data types to be 'primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference’ data types, and are passed by reference.
+Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
 -   <span id="6f83">Boolean — Primitive</span>
 -   <span id="6556">Null — Primitive</span>
