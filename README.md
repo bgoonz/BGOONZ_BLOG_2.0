@@ -220,7 +220,7 @@
 
 <br>
 
-### [**🌍⇒docs/about/job-search🗺️**](https://bgoonz-blog.netlify.app/docs/about/job-search)
+### [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
 
 <br>
 
