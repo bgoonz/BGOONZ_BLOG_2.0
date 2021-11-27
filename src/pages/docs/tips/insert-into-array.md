@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Insert Into Array
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Insert Into Array
 seo:
   title: ''
   description: ''
