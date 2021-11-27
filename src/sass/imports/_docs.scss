@@ -160,7 +160,10 @@
     list-style: none;
     margin: 0.7em;
     padding: 0;
-
+box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
     & > .docs-menu-item > a {
         padding: 0.3em 0;
         border-radius: 20px;
