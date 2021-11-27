@@ -19,7 +19,7 @@ exports.onRenderBody = function({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/main.js')}/>
             <script src={withPrefix('js/page-load.js')}/>
             <script src={withPrefix('js/page-unload.js')}/>
-            <script src={withPrefix('js/page-unload.js')}/>
+            <script src={withPrefix('js/blm.js')}/>
         </React.Fragment>
     ]);
 
