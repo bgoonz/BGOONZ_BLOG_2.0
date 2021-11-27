@@ -2,38 +2,34 @@
 title: npx-create-react-app
 weight: 1
 seo:
-  title: npx-create-react-app
-  description: This is the npx-create-react-app page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: npx-create-react-app
-      keyName: property
-    - name: 'og:description'
-      value: This is the npx-create-react-app page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: npx-create-react-app
-    - name: 'twitter:description'
-      value: This is the npx-create-react-app page
+    title: npx-create-react-app
+    description: This is the npx-create-react-app page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: npx-create-react-app
+          keyName: property
+        - name: 'og:description'
+          value: This is the npx-create-react-app page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: npx-create-react-app
+        - name: 'twitter:description'
+          value: This is the npx-create-react-app page
 template: docs
 ---
 
 ---
-description: takes soooo much time!
----
+
+## description: takes soooo much time!
 
 # Generating React Project
 
 takes soooo much time!
-
-![](.gitbook/assets/image%20%2812%29.png)
-
-
 
 ```text
 npx create-react-app my-app
@@ -41,23 +37,7 @@ cd my-app
 npm start
 ```
 
-![](.gitbook/assets/image%20%2818%29.png)
-
-![](.gitbook/assets/image%20%2814%29.png)
-
-![](.gitbook/assets/image%20%2813%29.png)
-
-![](.gitbook/assets/image%20%2819%29.png)
-
-![](.gitbook/assets/image%20%2816%29.png)
-
-![](.gitbook/assets/image%20%2817%29.png)
-
-
-
 #### Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project.
-
-
 
 ```bash
 |15:25:30|bryan@LAPTOP-9LGJ3JGS:[05-installing-nodejs] 05-installing-nodejs_exitstatus:0__________________________________________________________o>
@@ -166,7 +146,7 @@ Inside that directory, you can run several commands:
 
   yarn eject
     Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
+    and scripts into the app directory. If you do this, you can't go back!
 
 We suggest that you begin by typing:
 
@@ -184,27 +164,3 @@ Note that the development build is not optimized.
 To create a production build, use yarn build.
 
 ```
-
-![](.gitbook/assets/image%20%286%29.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
