@@ -7398,7 +7398,7 @@ Stop your application if it's currently running. Delete the `./node_modules/.cac
 
       return ClassComponent;
     }(react__WEBPACK_IMPORTED_MODULE_4___default.a.Component);
-```jsx
+```
 Luckily it's very rare that you'll need to read the code in your generated bundles. webpack, by default, is configured to generate sourcemaps. Sourcemaps are a mapping of the code in a generated file, like a bundle file, to the original source code. This gives you access to your original source code in the browser's developer tools:
 
 You can even set a breakpoint in your source within the developer tools to stop execution on a specific line of code!
