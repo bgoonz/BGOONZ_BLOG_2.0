@@ -12,11 +12,12 @@ template: docs
 
 ## Git Reference
 
-<iframe src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+<hr>
+<br>
+
 
 Git is a distributed version control and source code management system.
 
