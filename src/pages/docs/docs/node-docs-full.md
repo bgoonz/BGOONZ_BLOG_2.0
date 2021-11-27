@@ -682,7 +682,7 @@ See [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) for more info
 
 In any case, when Node.js is installed you'll have access to the `node` executable program in the command line.
 
-
+# How much JavaScript do you need to know to use Node.js
 
 As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
 
