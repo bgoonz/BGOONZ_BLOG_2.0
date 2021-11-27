@@ -1,7 +1,7 @@
 ---
 title: History API
 weight: 0
-excerpt: lorem-ipsum
+excerpt: history API explained
 seo:
     title: ''
     description: ''
