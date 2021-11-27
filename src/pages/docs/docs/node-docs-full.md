@@ -681,3 +681,42 @@ It is also very useful to test your code with old Node.js versions.
 See [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) for more information about this option.
 
 In any case, when Node.js is installed you'll have access to the `node` executable program in the command line.
+
+
+
+As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
+
+While learning to code, you might also be confused at where does JavaScript end, and where Node.js begins, and vice versa.
+
+I would recommend you to have a good grasp of the main JavaScript concepts before diving into Node.js:
+
+-   Lexical Structure
+-   Expressions
+-   Types
+-   Classes
+-   Variables
+-   Functions
+-   this
+-   Arrow Functions
+-   Loops
+-   Scopes
+-   Arrays
+-   Template Literals
+-   Semicolons
+-   Strict Mode
+-   ECMAScript 6, 2016, 2017
+
+With those concepts in mind, you are well on your road to become a proficient JavaScript developer, in both the browser and in Node.js.
+
+The following concepts are also key to understand asynchronous programming, which is one of the fundamental parts of Node.js:
+
+-   [Asynchronous programming and callbacks](https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
+-   [Timers](https://nodejs.dev/learn/discover-javascript-timers)
+-   [Promises](https://nodejs.dev/learn/understanding-javascript-promises)
+-   [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
+-   Closures
+-   [The Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
+
+
+
+
