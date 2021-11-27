@@ -34,7 +34,7 @@ weight: 0
 ---
 
 
-<iframe height="300" style="width: 90%;" scrolling="no" title="searchblog2.0"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="searchblog2.0"
 src="https://codepen.io/bgoonz/embed/LYyBwEp?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
 allowtransparency="true" allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/LYyBwEp">
@@ -44,7 +44,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" title="Fibonacci Carousel" src="" frameborder="no"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fibonacci Carousel" src="" frameborder="no"
 loading="lazy" allowtransparency="true" allowfullscreen="true">
 See the Pen <a href="https://replit.com/@bgoonz/Comments-1#index.html">
 Fibonacci Carousel</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
@@ -52,7 +52,6 @@ on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 <br>
 <br>
-
 <br>
 <br>
 <br>
@@ -64,9 +63,9 @@ on <a href="https://codepen.io">CodePen</a>.
 
 <hr>
 <br>
-
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" title="Fibonacci Carousel"
+
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fibonacci Carousel"
 src="https://codepen.io/bgoonz/embed/JjNagJo?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
 allowtransparency="true" allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/JjNagJo">
@@ -76,7 +75,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" title="embed-twitter-feed"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="embed-twitter-feed"
 src="https://codepen.io/bgoonz/embed/poPOqEO?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
 allowtransparency="true" allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/poPOqEO">
@@ -86,28 +85,28 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
 allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
 allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
 allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 src="//jsfiddle.net/bgoonz/1dye9uws/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen"
 frameborder="0"></iframe>
 <br>
 <br>
 <br>
-<iframe height="300" style="width: 90%;" scrolling="no" src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
+<iframe height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
 allowfullscreen="allowfullscreen" frameborder="0"></iframe> 
 <br>
 <br>
@@ -213,9 +212,9 @@ on <a href="https://codepen.io">CodePen</a>.
 <br><br>
 <!-------------------------------------------------------------------------------------->
 <br><br>
+<br>
+<br>
 
-<br>
-<br>
 <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no"
 title="CSS-only Colorful Calendar Concept" src="https://documentation-site-react2.vercel.app/"
 frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -307,7 +306,6 @@ See the Pen <a href='https://codepen.io/bgoonz/pen/oNZYbjZ'>Controlled Text Exam
 (<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 <br>
-
 <br>
 <br>
 <br>
@@ -460,7 +458,6 @@ See the Pen <a href='https://codepen.io/bgoonz/pen/qBRmGqw'>Light Javascript Tab
 (<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 <br>
-
 <br>
 <br>
 <br>

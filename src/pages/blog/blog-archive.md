@@ -18,5 +18,5 @@ thumb_image: images/3.jpg
 
  <iframe   width="400" height="575"
             src="https://bgoonz.blogspot.com/"  
-            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

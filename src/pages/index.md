@@ -394,7 +394,7 @@ sections:
 
         src="https://random-static-html-deploys.netlify.app/showcase2.html"  
 
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
