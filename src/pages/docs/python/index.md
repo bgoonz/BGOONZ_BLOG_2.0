@@ -37,12 +37,12 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Basics
 
--   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
+-   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
 -   <span id="c0bf">`print` is the equivalent of `console.log`.</span>
 
 > 'print() == console.log()’
 
-### `#` is used to make comments in your code.
+### `#` is used to make comments in your code.
 
     def foo():
         """
@@ -52,7 +52,7 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
 ---
 
@@ -65,7 +65,7 @@ A guide to commands in Python from what you know in JavaScript
 
 No Decimal Point
 
-> Created by a literal non-decimal point number … **or** … with the `int()` constructor.
+> Created by a literal non-decimal point number … **or** … with the `int()` constructor.
 
     print(3) # => 3
     print(int(19)) # => 19
@@ -86,7 +86,7 @@ No Decimal Point
     print(float()) # => 0.0
     print(27e-5) # => 0.00027
 
-### KEEP IN MIND:
+### KEEP IN MIND:
 
 > **The** `i` **is switched to a** `j` **in programming.**
 
@@ -98,7 +98,7 @@ No Decimal Point
     print(complex(17)) # => 17+0j
     print(complex()) # => 0j
 
--   <span id="2579">**Type Casting** : The process of converting one number to another.</span>
+-   <span id="2579">**Type Casting** : The process of converting one number to another.</span>
 
 <!-- -->
 
@@ -115,8 +115,8 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
--   <span id="03b4">_“//” : Integer Division._</span>
+-   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
+-   <span id="03b4">_“//” : Integer Division._</span>
 -   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
@@ -145,7 +145,7 @@ No Decimal Point
 
 ### **Python uses** `zero-based indexing`
 
-#### Python allows negative indexing (thank god!)
+#### Python allows negative indexing (thank god!)
 
     print(“Spaghetti”[-1]) # => i
 
@@ -153,7 +153,7 @@ No Decimal Point
 
 -   <span id="7567">Python let’s you use ranges</span>
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
     print(“Spaghetti”[1:4]) # => pag
     print(“Spaghetti”[4:-1]) # => hett
@@ -205,7 +205,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 -   <span id="445b">_Shorthand way to use format function is:  
     _`print(f'Your name is {first_name} {last_name}')`</span>
 
-#### Some useful string methods.
+#### Some useful string methods.
 
 -   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
@@ -217,7 +217,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Variables and Expressions
 
--   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+-   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
 -   <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
 -   <span id="5666">Assignment of a value automatically declares a variable.</span>
 
@@ -237,7 +237,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(max)             # => 0
     print(min)             # => 0
 
-#### The value and type of a variable can be re-assigned at any time.
+#### The value and type of a variable can be re-assigned at any time.
 
     a = 17
     print(a)         # => 17
@@ -253,7 +253,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ---
 
-### Boolean Data Type
+### Boolean Data Type
 
 -   <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
@@ -292,13 +292,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 > Just like in JS, you can use `parentheses` to change the inherent order of operations.
 
-> **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
+> **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
 
 ---
 
-### Identity vs Equality
+### Identity vs Equality
 
     print (2 == '2')    # => False
     print (2 is '2')    # => False
@@ -310,7 +310,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print (2 == 2.0)    # => True
     print (2 is 2.0)    # => False
 
--   <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
+-   <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
 ---
 
@@ -484,7 +484,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ### Pass
 
--   <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
+-   <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
 
 <!-- -->
 
@@ -561,7 +561,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print('{:,}’.format(1234567890))
     '1,234,567,890’
 
-### Date and Time
+### Date and Time
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
     print('{:%Y-%m-%d %H:%M:%S}’.format(d))
@@ -595,24 +595,24 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
-#### Sequence : The most basic data structure in Python where the index determines the order.
+#### Sequence : The most basic data structure in Python where the index determines the order.
 
 > List  
 > Tuple  
 > Range  
-> Collections : Unordered data structures, hashable values.
+> Collections : Unordered data structures, hashable values.
 
 ---
 
 #### Dictionaries Sets
 
-#### Iterable : Generic name for a sequence or collection; any object that can be iterated through.
+#### Iterable : Generic name for a sequence or collection; any object that can be iterated through.
 
-#### Can be mutable or immutable. Built In Data Types
+#### Can be mutable or immutable. Built In Data Types
 
 ---
 
-### Lists are the python equivalent of arrays.
+### Lists are the python equivalent of arrays.
 
     empty_list = []
     departments = ['HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’]
@@ -621,7 +621,7 @@ _It is common to use Python as an API (Application Programming Interface)_
 
     specials = list()
 
-#### Test if a value is in a list.
+#### Test if a value is in a list.
 
     print(1 in [1, 2, 3]) #> True
     print(4 in [1, 2, 3]) #> False
@@ -636,19 +636,19 @@ _It is common to use Python as an API (Application Programming Interface)_
     colors = 'red’,’blue’,’green’
     numbers = 1, 2, 3
 
-#### Tuple() built in can be used to convert other data into a tuple
+#### Tuple() built in can be used to convert other data into a tuple
 
     tuple('abc’) # returns ('a’, 'b’, 'c’)
     tuple([1,2,3]) # returns (1, 2, 3)
     # Think of tuples as constant variables.
 
-#### Ranges : A list of numbers which can’t be changed; often used with for loops.
+#### Ranges : A list of numbers which can’t be changed; often used with for loops.
 
 **Declared using one to three parameters**.
 
-> Start : opt. default 0, first \# in sequence.  
-> Stop : required next number past the last number in the sequence.  
-> Step : opt. default 1, difference between each number in the sequence.
+> Start : opt. default 0, first \# in sequence.  
+> Stop : required next number past the last number in the sequence.  
+> Step : opt. default 1, difference between each number in the sequence.
 
     range(5) # [0, 1, 2, 3, 4]
     range(1,5) # [1, 2, 3, 4]
@@ -660,7 +660,7 @@ _It is common to use Python as an API (Application Programming Interface)_
     for let(i = 0; i = 0; i++)
     # Keep in mind that stop is not included in the range.
 
-#### Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
+#### Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
 
 #### Mutable.
 
@@ -675,7 +675,7 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 **Use the in operator to see if a key exists in a dictionary.**
 
-<span class="graf-dropCap">S</span>**ets : Unordered collection of distinct objects; objects that need to be hashable.**
+<span class="graf-dropCap">S</span>**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
 > _Always be unique, duplicate items are auto dropped from the set._
 
@@ -691,18 +691,18 @@ Sets created by putting comma seperated values inside braces:**
     school_bag = {'book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}
     print(school_bag)
 
-#### Also can use set constructor to automatically put it into a set.
+#### Also can use set constructor to automatically put it into a set.
 
     letters = set('abracadabra’)
     print(letters)
     #Built-In Functions
     #Functions using iterables
 
-**filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
+**filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
 
-**map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
+**map(function, iterable) : creates new iterable of the same type which includes the result of calling the function on every item of the iterable.**
 
-**sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.**
+**sorted(iterable, key=None, reverse=False) : creates a new sorted list from the items in the iterable.**
 
 **Output is always a list**
 
@@ -710,7 +710,7 @@ Sets created by putting comma seperated values inside braces:**
 
 **reverse: optional boolean.**
 
-**enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
+**enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
     quarters = ['First’, 'Second’, 'Third’, 'Fourth’]
     print(enumerate(quarters))
@@ -720,45 +720,45 @@ Sets created by putting comma seperated values inside braces:**
 
 #### (1, 'First’), (2, 'Second’), (3, 'Third’), (4, 'Fourth’)
 
-> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
 > Functions that analyze iterable
 
-**len(iterable) : returns the count of the number of items.**
+**len(iterable) : returns the count of the number of items.**
 
-**max(\*args, key=None) : returns the largest of two or more arguments.**
+**max(\*args, key=None) : returns the largest of two or more arguments.**
 
-**max(iterable, key=None) : returns the largest item in the iterable.**
+**max(iterable, key=None) : returns the largest item in the iterable.**
 
 _key optional function which converts an item to a value to be compared.  
 min works the same way as max_
 
-**sum(iterable) : used with a list of numbers to generate the total.**
+**sum(iterable) : used with a list of numbers to generate the total.**
 
 _There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
-**any(iterable) : returns True if any items in the iterable are true.**
+**any(iterable) : returns True if any items in the iterable are true.**
 
-**all(iterable) : returns True is all items in the iterable are true.**
+**all(iterable) : returns True is all items in the iterable are true.**
 
 ### Working with dictionaries
 
-**dir(dictionary) : returns the list of keys in the dictionary.  
+**dir(dictionary) : returns the list of keys in the dictionary.  
 Working with sets**
 
-**Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
+**Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
 
     a = {1, 2, 3}
     b = {2, 4, 6}
     print(a | b) # => {1, 2, 3, 4, 6}
 
-#### Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
+#### Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
 
     a = {1, 2, 3}
     b = {2, 4, 6}
     print(a & b) # => {2}
     Difference : The — operator can be used to produce a new set of only the elements that appear in the first set and NOT the others.
 
-**Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
+**Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
     a = {1, 2, 3}
     b = {2, 4, 6}
@@ -768,7 +768,7 @@ Working with sets**
 
 ---
 
-### **For Statements In python, there is only one for loop.**
+### **For Statements In python, there is only one for loop.**
 
 Always Includes:
 
@@ -877,7 +877,7 @@ _keyword args with default values_
 
 ---
 
-### **Importing in Python**
+### **Importing in Python**
 
 **Modules are similar to packages in Node.js**  
 Come in different types:
@@ -894,11 +894,11 @@ Custom.
 
 ### **Terms**
 
-> module : Python code in a separate file.  
-> package : Path to a directory that contains modules.  
-> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.  
-> submodule : Another file in a module’s folder.  
-> function : Function in a module.
+> module : Python code in a separate file.  
+> package : Path to a directory that contains modules.  
+> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.  
+> submodule : Another file in a module’s folder.  
+> function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
@@ -917,9 +917,9 @@ _Use multiple lines for clarity when importing._
 
 ---
 
-### Watching Out for Python 2
+### Watching Out for Python 2
 
-**Python 3 removed &lt;&gt; and only uses !=**
+**Python 3 removed &lt;&gt; and only uses !=**
 
 **format() was introduced with P3**
 
@@ -929,13 +929,13 @@ md5 was removed.**
 **ConfigParser was renamed to configparser  
 sets were killed in favor of set() class.**
 
-#### **print was a statement in P2, but is a function in P3.**
+#### **print was a statement in P2, but is a function in P3.**
 
-### Topics revisited (in python syntax)
+### Topics revisited (in python syntax)
 
 ### Cheat Sheet:
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
 
@@ -947,9 +947,9 @@ Or Checkout my personal Resource Site:
 <a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Python Cheat Sheet:
+### Python Cheat Sheet:
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

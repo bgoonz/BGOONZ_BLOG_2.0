@@ -1063,7 +1063,7 @@ Default: `1` |
           "name": "ruby",
           "display_name": "Ruby",
           "short_description": "Ruby is a scripting language designed for simplified object-oriented programming.",
-          "description": "Ruby was developed by Yukihiro \"Matz\" Matsumoto in 1995 with the intent of having an easily readable programming language. It is integrated with the Rails framework to create dynamic web-applications. Ruby's syntax is similar to that of Perl and Python.",
+          "description": "Ruby was developed by Yukihiro \"Matz\" Matsumoto in 1995 with the intent of having an easily readable programming language. It is integrated with the Rails framework to create dynamic web-applications. Ruby's syntax is similar to that of Perl and Python.",
           "created_by": "Yukihiro Matsumoto",
           "released": "December 21, 1995",
           "created_at": "2016-11-28T22:03:59Z",

@@ -11,7 +11,7 @@ seo:
 template: docs
 ---
 
-### A list of all of my articles to link to future posts
+### A list of all of my articles to link to future posts
 
 [**Scope, Closures & Context In JavaScript**\
 *"JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with...*bryanguner.medium.com](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104 'https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104')[](https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104)
@@ -94,7 +94,7 @@ template: docs
 [**Everything You Need to Get Started With VSCode + Extensions & Resources**\
 *Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 'https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931')[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode *Themes***\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**Object Oriented Programming in JavaScript**\
@@ -164,9 +164,9 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 *My Awesome JavaScript List Part 2*javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35 'https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35')[](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
 
 [**bgoonz/Cumulative-Resource-List**\
-*List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s 'https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s')[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
+*List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s 'https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s')[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode *Themes***\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**JavaScript Rotate (Array) ProblemWalkthrough**\
@@ -214,16 +214,16 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 [**Basic Web Development Environment Setup**\
 *Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe 'https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe')[](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
 
-[***Fetch* Quick Sheet**\
+[***Fetch* Quick Sheet**\
 Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4 'https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4')[](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
+By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
 
 [Canonical link](https://medium.com/@bryanguner/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
 
-Exported from [Medium](https://medium.com/) on July 13, 2021.
+Exported from [Medium](https://medium.com/) on July 13, 2021.
 
-[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-list-of-my-articles.md)[A-list-of-my-articles.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-list-of-my-articles-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-list-of-my-articles.md)[A-list-of-my-articles.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-list-of-my-articles-md) hosted with ❤ by [GitHub](https://github.com/)
 
 # A Very Quick Guide To Calculating Big O Computational Complexity
 
@@ -235,23 +235,23 @@ Big O: big picture, broad strokes, not details
 
 **Big O**: big picture, broad strokes, not details
 
-For a more complete guide... checkout :
+For a more complete guide... checkout :
 
 [**A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example**\
 *Curating Complexity: A Guide to Big-O Notation*medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522 'https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522')[](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
 
 [![](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)
 
-- way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
+- way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
 
 ### Time Complexity
 
 no loops or exit & return = O(1)
 
-0 nested loops = `O(n)`\
-1 nested loops = `O(n^2)`\
-2 nested loops = `O(n^3)`\
-3 nested loops = `O(n^4)`
+0 nested loops = `O(n)`\
+1 nested loops = `O(n^2)`\
+2 nested loops = `O(n^3)`\
+3 nested loops = `O(n^4)`
 
 **recursive**: as you add more terms, increase in time as you add input diminishes\
 **recursion**: when you define something in terms of itself, a function that calls itself
@@ -264,7 +264,7 @@ no loops or exit & return = O(1)
 
 -   favor readability over performance
 
-`O(n log(n))` & `O(log(n))`: dividing/halving
+`O(n log(n))` & `O(log(n))`: dividing/halving
 
 -   if code employs recursion/divide-and-conquer strategy
 -   what power do i need to power my base to get n
@@ -310,15 +310,15 @@ no loops or exit & return = O(1)
 For similar content check out my GitHub:
 
 [**bgoonz - Overview**\
-_Web Developer, Electrical Engineer _](https://github.com/bgoonz 'https://github.com/bgoonz')*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz 'https://github.com/bgoonz')*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/eb1557e85fa3).
+By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/eb1557e85fa3).
 
 [Canonical link](https://medium.com/@bryanguner/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3)
 
-Exported from [Medium](https://medium.com/) on July 13, 2021.
+Exported from [Medium](https://medium.com/) on July 13, 2021.
 
-[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-Very-Qui.md)[A-Very-Qui.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-very-qui-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-Very-Qui.md)[A-Very-Qui.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-very-qui-md) hosted with ❤ by [GitHub](https://github.com/)
 
 # Array Callback Methods Implemented With For Loops
 
@@ -326,7 +326,7 @@ How to implement array callback methods in JavaScript
 
 ---
 
-### Array Callback Methods Implemented With For Loops
+### Array Callback Methods Implemented With For Loops
 
 #### How to implement array callback methods in JavaScript
 
@@ -342,7 +342,7 @@ How to implement array callback methods in JavaScript
 
 What do you think will be printed in the following:
 
-#### Anonymous callback, a named callback
+#### Anonymous callback, a named callback
 
 ```
 function foo(callback) {
@@ -368,7 +368,7 @@ fruitBasket();
 
 ```
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
 
 ```
 function greaterValue(value, cb1, cb2) {
@@ -397,7 +397,7 @@ console.log(greaterValue(-2, negate, addOne));
 
 ```
 
-*Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
+*Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
 
 #### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
 
@@ -458,7 +458,7 @@ function myEvery(arr, callback) {
 
 ```
 
-### Further Examples of the above concepts
+### Further Examples of the above concepts
 
 ```
 const createMeowValue = () => {
@@ -539,15 +539,15 @@ References:
 [**Introduction: callbacks**\
 *To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks 'https://javascript.info/callbacks')[](https://javascript.info/callbacks)
 
-*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
+*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
+By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
 
 [Canonical link](https://medium.com/@bryanguner/array-callback-methods-implemented-with-for-loops-d08875df6777)
 
-Exported from [Medium](https://medium.com/) on July 13, 2021.
+Exported from [Medium](https://medium.com/) on July 13, 2021.
 
-[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Array-Call.md)[Array-Call.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-array-call-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Array-Call.md)[Array-Call.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-array-call-md) hosted with ❤ by [GitHub](https://github.com/)
 
 # Bash Commands That Save Me Time and Frustration
 
@@ -561,14 +561,14 @@ Here's a list of bash commands that stand between me and insanity.
 
 [![](https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067)](https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067)
 
-**This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
+**This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 [**bgoonz/bash-commands-walkthrough**\
 *to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough 'https://github.com/bgoonz/bash-commands-walkthrough')[](https://github.com/bgoonz/bash-commands-walkthrough)
 
-> The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list... whereas this article will break up the commands with explanations... images & links!
+> The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list... whereas this article will break up the commands with explanations... images & links!
 
-**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted... or ... if you're like me for instance; and like to use an extension to grab the markdown content of a page... the code will be included rather than just a link to the gist!**
+**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted... or ... if you're like me for instance; and like to use an extension to grab the markdown content of a page... the code will be included rather than just a link to the gist!**
 
 [![](https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966)](https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966)
 
@@ -578,30 +578,30 @@ Here's a list of bash commands that stand between me and insanity.
 
 ---
 
-#### ✔ Check the Current Directory ➡ `pwd`:
+#### ✔ Check the Current Directory ➡ `pwd`:
 
-On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
+On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
 [![](https://camo.githubusercontent.com/ede56713024434b9c0c8008f54475a7f4fcdcd15427580cbc504793e43a15b6d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a64696d7a4c55726d44493455666576362e676966)](https://camo.githubusercontent.com/ede56713024434b9c0c8008f54475a7f4fcdcd15427580cbc504793e43a15b6d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a64696d7a4c55726d44493455666576362e676966)
 
 It shows that I'm working on my Desktop directory.
 
-#### ✔ Display List of Files ➡ `ls`:
+#### ✔ Display List of Files ➡ `ls`:
 
-To see the list of files and directories in the current directory use `ls` command in your CLI.
+To see the list of files and directories in the current directory use `ls` command in your CLI.
 
 [![](https://camo.githubusercontent.com/e9cfe3bfa6f8d2ff3cc9f7959a7896facb58708e7e707d012ad989edb589b6ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48487a56724b324374545077546459542e676966)](https://camo.githubusercontent.com/e9cfe3bfa6f8d2ff3cc9f7959a7896facb58708e7e707d012ad989edb589b6ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48487a56724b324374545077546459542e676966)
 
 Shows all of my files and directories of my Desktop directory.
 
--   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
--   Some useful `ls` command options:-
+-   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+-   Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
-#### ✔ Create a Directory ➡ `mkdir`:
+#### ✔ Create a Directory ➡ `mkdir`:
 
-We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
+We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
 [![](https://camo.githubusercontent.com/8c10a898b8f52be59dc0723ab2dd0784c22c12a325ffe5cc64a38f07341ef90e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d33644479433976524a42555a5378522e676966)](https://camo.githubusercontent.com/8c10a898b8f52be59dc0723ab2dd0784c22c12a325ffe5cc64a38f07341ef90e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d33644479433976524a42555a5378522e676966)
 
@@ -609,9 +609,9 @@ Use `ls` command to see the directory is created or not.
 
 I created a cli-practice directory in my working directory i.e. Desktop directory.
 
-#### ✔ Move Between Directories ➡ `cd`:
+#### ✔ Move Between Directories ➡ `cd`:
 
-It's used to change directory or to move other directories. To use it type `cd directory_name`.
+It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
 [![](https://camo.githubusercontent.com/d78e325dda59d59be4bd151dd85d3b1966324cb205da2eb540f1372e8195b280/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33344b4778543247386f4e4d446e49632e676966)](https://camo.githubusercontent.com/d78e325dda59d59be4bd151dd85d3b1966324cb205da2eb540f1372e8195b280/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33344b4778543247386f4e4d446e49632e676966)
 
@@ -619,35 +619,35 @@ Can use `pwd` command to confirm your directory name.
 
 Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
-#### ✔ Parent Directory ➡ `..`:
+#### ✔ Parent Directory ➡ `..`:
 
-We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
+We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
 
-#### ✔ Create Files ➡ `touch`:
+#### ✔ Create Files ➡ `touch`:
 
-We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
+We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
 [![](https://camo.githubusercontent.com/97e82f91cb8cfcf342cf97e8b572b49d1bc264cbe9929c7e23d0f72589d6708d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a78753177747637674a324e4d765036302e676966)](https://camo.githubusercontent.com/97e82f91cb8cfcf342cf97e8b572b49d1bc264cbe9929c7e23d0f72589d6708d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a78753177747637674a324e4d765036302e676966)
 
 I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
 
-#### ✔ Display the Content of a File ➡ `cat`:
+#### ✔ Display the Content of a File ➡ `cat`:
 
-We can display the content of a file using the `cat` command. To use it type `cat file_name`.
+We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
 [![](https://camo.githubusercontent.com/ffe71e48a1a9bd9b118265c18a81e0b49a515cf40453416134dfca52567bb82c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a694b6635773951464e43654c527638612e676966)](https://camo.githubusercontent.com/ffe71e48a1a9bd9b118265c18a81e0b49a515cf40453416134dfca52567bb82c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a694b6635773951464e43654c527638612e676966)
 
 Shows the content of my hello.txt file.
 
-#### ✔ Move Files & Directories ➡ `mv`:
+#### ✔ Move Files & Directories ➡ `mv`:
 
-To move a file and directory, we use `mv` command.
+To move a file and directory, we use `mv` command.
 
-By typing `mv file_to_move destination_directory`, you can move a file to the specified directory.
+By typing `mv file_to_move destination_directory`, you can move a file to the specified directory.
 
-By entering `mv directory_to_move destination_directory`, you can move all the files and directories under that directory.
+By entering `mv directory_to_move destination_directory`, you can move all the files and directories under that directory.
 
 Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.
 
@@ -661,57 +661,57 @@ Yes, we can use multiple directories & files names one after another to create m
 
 Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
-#### ✔ Rename Files & Directories ➡ `mv`:
+#### ✔ Rename Files & Directories ➡ `mv`:
 
-`mv` command can also be used to rename a file and a directory.
+`mv` command can also be used to rename a file and a directory.
 
-You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`.
+You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`.
 
 [![](https://camo.githubusercontent.com/3feb1289a79b907796c1d736e119730dc3d2dbcd60c6ba072ee226cc8cb69b75/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a575456753164643667722d6e6d5768442e676966)](https://camo.githubusercontent.com/3feb1289a79b907796c1d736e119730dc3d2dbcd60c6ba072ee226cc8cb69b75/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a575456753164643667722d6e6d5768442e676966)
 
 Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
-#### ✔ Copy Files & Directories ➡ `cp`:
+#### ✔ Copy Files & Directories ➡ `cp`:
 
-To do this, we use the `cp` command.
+To do this, we use the `cp` command.
 
--   You can copy a file by entering `cp file_to_copy new_file_name`.
+-   You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+-   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
-*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
+*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
 
 [![](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)
 
 Here I copied all of the files from the folder to folder-copy.
 
-#### ✔ Remove Files & Directories ➡ `rm`:
+#### ✔ Remove Files & Directories ➡ `rm`:
 
-To do this, we use the `rm` command.
+To do this, we use the `rm` command.
 
--   To remove a file, you can use the command like `rm file_to_remove`.
+-   To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
--   To remove a directory, use the command like `rm -r directory_to_remove`.
+-   To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 
 I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
-#### ✔ Clear Screen ➡ `clear`:
+#### ✔ Clear Screen ➡ `clear`:
 
 Clear command is used to clear the terminal screen.
 
-#### ✔ Home Directory ➡ `~`:
+#### ✔ Home Directory ➡ `~`:
 
-The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
+The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
 ---
 
@@ -719,7 +719,7 @@ The Home directory is represented by `~`. The Home directory refers to the base
 
 ### 1.) Recursively unzip zip files and then delete the archives when finished:
 
-**here is a** [**folde**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip)**r containing the before and after... I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
+**here is a** [**folde**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip)**r containing the before and after... I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
 ```
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
@@ -741,7 +741,7 @@ npm-recursive-install
 
 ---
 
-### 3.) Clean up unnecessary files/folders in git repo:
+### 3.) Clean up unnecessary files/folders in git repo:
 
 ```
 find . -empty -type f -print -delete #Remove empty files
@@ -783,14 +783,14 @@ pwd
 
 ```
 
-> **After printing the working directory for good measure:**
+> **After printing the working directory for good measure:**
 
 ```
 find . -empty -type f -print -delete
 
 ```
 
-> **The above command deletes empty files recursively starting from the directory in which it was run:**
+> **The above command deletes empty files recursively starting from the directory in which it was run:**
 
 ```
 ./CONTENT/DS-n-Algos/File-System/file-utilities/node_modules/line-reader/test/data/empty_file.txt
@@ -804,7 +804,7 @@ find . -empty -type f -print -delete
 
 ```
 
-> **The command seen below deletes empty folders recursively starting from the directory in which it was run:**
+> **The command seen below deletes empty folders recursively starting from the directory in which it was run:**
 
 ```
 find . -empty -type d -print -delete
@@ -824,7 +824,7 @@ find . -empty -type d -print -delete
 
 ```
 
-> **The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files**
+> **The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files**
 
 ```
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
@@ -936,14 +936,14 @@ cmd $listing --sort=extension >>$html
 
 ---
 
-### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
+### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
 ```
 wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off
 
 ```
 
-> The result is stored in [this directory:](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf)
+> The result is stored in [this directory:](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf)
 
 [![](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)
 
@@ -1007,7 +1007,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 **_I modified the command slightly to apply only to files called 'result.md':_**
 
-> The result is :
+> The result is :
 
 ```
 Hacks Blog
@@ -1051,15 +1051,15 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 **Here I have modified the command I wish to run recursively to account for the fact that the 'find' command already works recursively, by appending the -maxdepth 1 flag...**
 
-> **I am essentially removing the recursive action of the find command...**
+> **I am essentially removing the recursive action of the find command...**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory... is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory... is working properly!**
 
 [![](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)
 
-**Run in the folder shown to the left... we would expect every .md file to be accompanied by a newly generated html file by the same name.**
+**Run in the folder shown to the left... we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
-**The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
+**The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
 
 #### In Action:
 
@@ -1067,7 +1067,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 [![](https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966)](https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966)
 
-#### The final result is:
+#### The final result is:
 
 [![](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)
 
@@ -1108,7 +1108,7 @@ RecurseDirs "./"
 
 **Here are some of the other commands I will cover in greater detail... at a later time:**
 
-### 9\. Copy any text between <script> tags in a file called example.html to be inserted into a new file: out.js
+### 9\. Copy any text between <script> tags in a file called example.html to be inserted into a new file: out.js
 
 ```
 sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
@@ -1126,7 +1126,7 @@ find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
 ---
 
-### 11\. Sanatize file and folder names to remove illegal characters and reserved words.
+### 11\. Sanatize file and folder names to remove illegal characters and reserved words.
 
 ```
 sanitize() {
@@ -1156,7 +1156,7 @@ sanitize_dir '/path/to/somewhere'
 
 ---
 
-### 12\. Start postgresql in terminal
+### 12\. Start postgresql in terminal
 
 ```
 sudo -u postgres psql
@@ -1179,7 +1179,7 @@ doneecho "<form>
 
 ---
 
-### 14\. Batch Download Videos
+### 14\. Batch Download Videos
 
 ```
 #!/bin/bash
@@ -1202,7 +1202,7 @@ done
 
 ---
 
-### 15\. Change File Extension from '.txt' to .doc for all files in working directory.
+### 15\. Change File Extension from '.txt' to .doc for all files in working directory.
 
 ```
 sudo apt install rename
@@ -1211,7 +1211,7 @@ rename 's/\.txt$/.doc/' *.txt
 
 ```
 
-### 16\. Recursivley change any file with extension .js.download to .js
+### 16\. Recursivley change any file with extension .js.download to .js
 
 ```
 find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
@@ -1220,7 +1220,7 @@ find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
 ---
 
-### 17\. Copy folder structure including only files of a specific extension into an ouput Folder
+### 17\. Copy folder structure including only files of a specific extension into an ouput Folder
 
 ```
 find . -name '*.md' | cpio -pdm './../outputFolder'
@@ -1234,20 +1234,20 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 [**Web-Dev-Hub**\
 *Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
 
-### Part 2 of this series:
+### Part 2 of this series:
 
 [**Medium**\
 _Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 'https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682')[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
 
 ---
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
+By [Bryan Guner](https://medium.com/@bryanguner) on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
 [Canonical link](https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a)
 
-Exported from [Medium](https://medium.com/) on July 13, 2021.
+Exported from [Medium](https://medium.com/) on July 13, 2021.
 
-[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Bash-Comma.md)[Bash-Comma.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-bash-comma-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Bash-Comma.md)[Bash-Comma.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-bash-comma-md) hosted with ❤ by [GitHub](https://github.com/)
 
 # Basic Web Development Environment Setup
 
@@ -1257,7 +1257,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ### Basic Web Development Environment Setup
 
-#### Windows Subsystem for Linux (WSL) and Ubuntu
+#### Windows Subsystem for Linux (WSL) and Ubuntu
 
 [![](https://camo.githubusercontent.com/305c753492ee50b499a95b10c6a817c07821f73ff6c734b45b073b8a7aeafebd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61714b503164724e486d4e6d33347a7a2e6a7067)](https://camo.githubusercontent.com/305c753492ee50b499a95b10c6a817c07821f73ff6c734b45b073b8a7aeafebd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61714b503164724e486d4e6d33347a7a2e6a7067)
 
@@ -1265,22 +1265,22 @@ Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bo
 
 1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
 2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
-3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 4.  Restart your computer
 5.  In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
 6.  Click "Microsoft Store"
 7.  Click the "Search" button in the upper-right corner of the window
 8.  Type in "Ubuntu"
 9.  Click "Run Linux on Windows (Get the apps)"
-10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store... you want the one just entitled 'Ubuntu'
+10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store... you want the one just entitled 'Ubuntu'
 11. Click "Install"
 12. After it downloads, click "Launch"
 13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"
 14. When prompted to "Enter new UNIX username", type your first name with no spaces
 15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
-16. Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)
-17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
-18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+16. Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)
+17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
 
 ### Git
 
@@ -1288,8 +1288,8 @@ Git comes with Ubuntu, so there's nothing to install. However, you should config
 
 ‌Open an Ubuntu terminal if you don't have one open already.
 
-1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[](mailto:your@email.com)<your@email.com>" with your real email.
+1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
+2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[](mailto:your@email.com)<your@email.com>" with your real email.
 
 **Note: if you want git to remember your login credentials type:**
 
@@ -1302,36 +1302,36 @@ $ git config --global credential.helper store
 
 Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-1.  Open Microsoft Edge, the blue "e" in the task bar, and type in [](http://chrome.google.com/)[http://chrome.google.com](http://chrome.google.com/). Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.
+1.  Open Microsoft Edge, the blue "e" in the task bar, and type in [](http://chrome.google.com/)[http://chrome.google.com](http://chrome.google.com/). Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.
 2.  Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".
 
 ### Node.js
 
-Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
+Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
 
-1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
-2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
-3.  In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
-5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
+2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3.  In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
+4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
 
 ### Unzip
 
 You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
 
-‌In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
+‌In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
 
 ‌Mocha.js
 
-Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
+Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
 
 ### Python 3
 
-Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
+Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
 
-### Note about WSL
+### Note about WSL
 
-As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
+As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
 
 ‌

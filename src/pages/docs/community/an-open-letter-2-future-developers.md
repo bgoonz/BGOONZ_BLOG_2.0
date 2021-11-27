@@ -18,7 +18,7 @@ Frameworks take care of tasks like default browser settings, file structures, an
 
 ## 2\. Types of framework
 
-There are many different kinds of this platform available for programmers. Typically, like a lot of things within this discipline can be split between [frontend and backend development](https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/)---first let's make the distinction between the two to help you understand the usefulness of these solutions.
+There are many different kinds of this platform available for programmers. Typically, like a lot of things within this discipline can be split between [frontend and backend development](https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/)---first let's make the distinction between the two to help you understand the usefulness of these solutions.
 
 ### Backend frameworks
 
@@ -26,15 +26,15 @@ These are designed to make the responsibility of interacting with the database a
 
 ### Frontend frameworks
 
-As the name suggests, these are very helpful on the presentation side of the website, creating a good foundation from which to build pages. These frameworks combine HTML, CSS, and [Javascript](https://careerfoundry.com/en/blog/web-development/how-long-does-it-take-to-learn-javascript/) to be really effective in creating conventions for various elements. Typically frontend web developers use them in conjunction with [other effective tools](https://careerfoundry.com/en/blog/web-development/7-essential-tools-for-front-end-development/).
+As the name suggests, these are very helpful on the presentation side of the website, creating a good foundation from which to build pages. These frameworks combine HTML, CSS, and [Javascript](https://careerfoundry.com/en/blog/web-development/how-long-does-it-take-to-learn-javascript/) to be really effective in creating conventions for various elements. Typically frontend web developers use them in conjunction with [other effective tools](https://careerfoundry.com/en/blog/web-development/7-essential-tools-for-front-end-development/).
 
-[HTML](https://careerfoundry.com/en/blog/web-development/what-is-html-a-beginners-guide/) conventions allow for standardization for elements like typography, while [CSS](https://careerfoundry.com/en/blog/web-development/what-is-css/) conventions can help standardize positioning of elements in a grid-like system on the pages. This makes it easier for the developer to arrange and organize elements into a simple and uniform design across multiple displays and browsers. Javascript conventions offer the ability to style more advanced components like image carousels, lightboxes, button behaviors, and pop-ups.
+[HTML](https://careerfoundry.com/en/blog/web-development/what-is-html-a-beginners-guide/) conventions allow for standardization for elements like typography, while [CSS](https://careerfoundry.com/en/blog/web-development/what-is-css/) conventions can help standardize positioning of elements in a grid-like system on the pages. This makes it easier for the developer to arrange and organize elements into a simple and uniform design across multiple displays and browsers. Javascript conventions offer the ability to style more advanced components like image carousels, lightboxes, button behaviors, and pop-ups.
 
-On another note, there are Javascript frameworks that focus on full application support---like AngularJS and Reactjs. Libraries of Javascript code like [jQuery](https://careerfoundry.com/en/blog/web-development/javascript-vs-jquery-whats-the-difference/) are also helpful in developing conventions that can be readily implemented in websites.
+On another note, there are Javascript frameworks that focus on full application support---like AngularJS and Reactjs. Libraries of Javascript code like [jQuery](https://careerfoundry.com/en/blog/web-development/javascript-vs-jquery-whats-the-difference/) are also helpful in developing conventions that can be readily implemented in websites.
 
 To recap, the use of these tools helps the developer get up and running quickly without having to get bogged down with the initial hurdles that come with setting up a website. It creates uniform code across all pages of your website and presents a clean look for users. This in turn solves common issues like typography consistency and positioning difficulties on different pages.
 
-Best of all, frontend frameworks resolve any issues with browser compatibility and are key to responsive web design, which we'll discuss further on.
+Best of all, frontend frameworks resolve any issues with browser compatibility and are key to responsive web design, which we'll discuss further on.
 
 #### Curious about a career in Web Development?
 
@@ -46,13 +46,13 @@ Start learning for free!
 
 There are many of these tools that have become must-haves for beginner and expert web developers alike. As well as different languages, they focus on different directives and outcomes.
 
-One of the most popular frameworks is [Bootstrap, which was originally developed by Twitter](https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/) to maintain consistency in their interface development. It's very polished and efficient, and makes website development easier and faster. It has standardized conventions that are well recognized for HTML elements like buttons, alerts, forms, and typography.
+One of the most popular frameworks is [Bootstrap, which was originally developed by Twitter](https://careerfoundry.com/en/blog/web-development/what-is-bootstrap-a-beginners-guide/) to maintain consistency in their interface development. It's very polished and efficient, and makes website development easier and faster. It has standardized conventions that are well recognized for HTML elements like buttons, alerts, forms, and typography.
 
-So popular that it's now known simply as "Rails," [Ruby on Rails ](https://careerfoundry.com/en/blog/web-development/should-i-learn-ruby-on-rails/)has revolutionised this language. As well as making it one of the [easier programming languages to learn](https://careerfoundry.com/en/blog/web-development/easiest-programming-languages/), Rails is particularly popular with beginners looking to code full-stack early on in their careers.
+So popular that it's now known simply as "Rails," [Ruby on Rails ](https://careerfoundry.com/en/blog/web-development/should-i-learn-ruby-on-rails/)has revolutionised this language. As well as making it one of the [easier programming languages to learn](https://careerfoundry.com/en/blog/web-development/easiest-programming-languages/), Rails is particularly popular with beginners looking to code full-stack early on in their careers.
 
-Foundation was created from the Zurb style guide and much like Bootstrap, offers a complete solution for front-end design. Many large companies like Facebook, Yahoo, and Ebay utilize Foundation in their layouts. The framework encourages web developers to expand on the conventions and personalize them for developers' websites.
+Foundation was created from the Zurb style guide and much like Bootstrap, offers a complete solution for front-end design. Many large companies like Facebook, Yahoo, and Ebay utilize Foundation in their layouts. The framework encourages web developers to expand on the conventions and personalize them for developers' websites.
 
-Skeleton is a lighter example that doesn't come with all the bells and whistles that accompany the heavy-lifters like Bootstrap and Foundation. This encourages greater customization by only providing styling on the most basic and necessary elements. Developers who only need specific components to be styled utilize light-weight frameworks like Skeleton to achieve their goals.
+Skeleton is a lighter example that doesn't come with all the bells and whistles that accompany the heavy-lifters like Bootstrap and Foundation. This encourages greater customization by only providing styling on the most basic and necessary elements. Developers who only need specific components to be styled utilize light-weight frameworks like Skeleton to achieve their goals.
 
 A simple Google search will turn up a lot of results for top tools being used and recommended. It's definitely beneficial to check out the different options and see which suits your development needs and design goals.
 
@@ -66,11 +66,11 @@ The ease of implementation and efficiency makes it almost a necessity to employ 
 
 ## 5\. What is a responsive framework?
 
-One of the best features of these systems is that they help create websites that are easily accessible and are able to be viewed across different browsers on different devices. A lot of frameworks accomplish this with dynamic code---utilizing classes that can be reused and formatted to take into consideration the device and/or browser that is being used.
+One of the best features of these systems is that they help create websites that are easily accessible and are able to be viewed across different browsers on different devices. A lot of frameworks accomplish this with dynamic code---utilizing classes that can be reused and formatted to take into consideration the device and/or browser that is being used.
 
 In other words, the layouts of webpages will change---certain elements will disappear and text will be smaller on smaller screens, while certain Javascript elements might not take effect at all. On larger screens, the extra real estate can be used to showcase higher quality images and more sophisticated design elements, as well as allowing for the white space beloved by web designers.
 
-In this current age when users are [more likely to view websites on their mobile devices](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/) than their computers, it's important to have a mobile responsive website that creates an enriching user experience no matter what interface the user interacts with. In this video, our in-house web developer Abhi explains more about styling a mobile-responsive website with CSS:
+In this current age when users are [more likely to view websites on their mobile devices](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/) than their computers, it's important to have a mobile responsive website that creates an enriching user experience no matter what interface the user interacts with. In this video, our in-house web developer Abhi explains more about styling a mobile-responsive website with CSS:
 
 ## 6\. Final thoughts
 
