@@ -1,20 +1,20 @@
 ---
-title: review
-sections: []
+title: Job Search
+weight: 0
+excerpt: These are some of my active projects.
 seo:
-    title: 'review'
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: advanced
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
+template: docs
 ---
-
 
 
 <div id="search"></div>
 
-## description: Review
+
 
 # Review-Of-Previous-Concepts
 

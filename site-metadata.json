@@ -236,7 +236,7 @@
 
                 "label": "Job Search",
 
-                "url": "job-search",
+                "url": "interview",
 
                 "style": "primary",
 
@@ -254,7 +254,7 @@
 
                         "label": "Job Boards",
 
-                        "url": "job-search/job-boards",
+                        "url": "interview/job-boards",
 
                         "style": "primary",
 
