@@ -117,7 +117,7 @@
             },
             {
                 "label": "Job Search",
-                "url": "/interview/job-search-nav/",
+                "url": "/docs/interview/job-search-nav/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -197,7 +197,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
+                "url": "docs/tools/Archive"
             },
             {
                 "label": "Projects",
