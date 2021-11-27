@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Index as a key is an anti-pattern
 weight: 0
 excerpt: lorem-ipsum
 seo:
