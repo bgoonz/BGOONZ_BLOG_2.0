@@ -53,6 +53,12 @@ code{
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
+pre{
+       -webkit-box-shadow:0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(124, 124, 124, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(184, 137, 137, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 h1,
 h2,
 h3,
@@ -206,6 +212,10 @@ img {
     height: auto;
     max-width: 100%;
     border-radius: 10px;
+    :not(.site-logo) {
+  box-shadow: inset 10px 10px 50px #fff;
+}
+     
 }
 
 @media only screen and (min-width: 741px) {

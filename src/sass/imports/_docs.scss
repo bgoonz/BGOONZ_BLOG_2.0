@@ -112,9 +112,13 @@
     padding: 0;
 
     .docs-section-item {
+        border-radius: 5px;
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
         margin: 0 0.3125em 0.9375em;
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     }
 
     .docs-item-link {
