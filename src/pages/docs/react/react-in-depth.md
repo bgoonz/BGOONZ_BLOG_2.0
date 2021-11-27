@@ -7370,6 +7370,7 @@ The query `chrome >= 30` specifies that you want to target Chrome version 30 or 
 Stop your application if it's currently running. Delete the `./node_modules/.cache` folder and run `npm start` again. Then view the `main.chunk.js` bundle again in the developer tools:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TKBUkpbL5aSm5PTQ" class="graf-image" /></figure>Now your ES2015 class component is being converted to a constructor function! Here's the transpiled code for reference:
+
 ```jsx
 
     let ClassComponent = /*#__PURE__*/function (_React$Component) {
