@@ -1,8 +1,15 @@
+)]
+
 # [WEBSITE🗺️](https://bgoonz-blog.netlify.app/)
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)
+[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)
+
+[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
+
+![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 ---
@@ -11,17 +18,17 @@
 
 ---
 
-## [Cloudfare-Backup\*\*](https://bgoonz-blog-2-0.pages.dev/)
+## [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
 
-### Search Website: [search\*\*](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
+### Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
-### [Backup Repo Deploy \*\*](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
+### [Backup Repo Deploy ](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
-### [Github pages\*\*](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+### [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 ---
 
-## [Go To Site Wiki\*\*](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 ---
 
@@ -813,13 +820,13 @@
 
 ---
 
--   [Privacy policy🗺️\*\*](https://codepen.io/bgoonz/pen/LYLJZrW)
+-   [Privacy policy🗺️](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 ---
 
 <span align="center">
 
-[![🗺️**](https://data.jsdelivr.com/v1/package/npm/lodash/badge)🗺️\*\*](https://www.jsdelivr.com/package/npm/lodash)
+[![🗺️**](https://data.jsdelivr.com/v1/package/npm/lodash/badge)🗺️](https://www.jsdelivr.com/package/npm/lodash)
 
 ![QRCODE](./static/images/blog-qr.png)
 
@@ -845,301 +852,301 @@
 
 # Technologies used:
 
-## [Global Site Tag🗺️\*\*](https://trends.builtwith.com/analytics/Global-Site-Tag)
+## [Global Site Tag🗺️](https://trends.builtwith.com/analytics/Global-Site-Tag)
 
-[Global Site Tag Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag🗺️\*\*](https://trends.builtwith.com/websitelist/Global-Site-Tag)
+[Global Site Tag Usage Statistics🗺️](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag🗺️](https://trends.builtwith.com/websitelist/Global-Site-Tag)
 
 Google's primary tag for Google Measurement/Conversion Tracking, Adwords and DoubleClick.
 
-## [Google Analytics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics)
+## [Google Analytics🗺️](https://trends.builtwith.com/analytics/Google-Analytics)
 
-[Google Analytics Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Analytics)
+[Google Analytics Usage Statistics🗺️](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics🗺️](https://trends.builtwith.com/websitelist/Google-Analytics)
 
 Google Analytics offers a host of compelling features and benefits for everyone from senior executives and advertising and marketing professionals to site owners and content developers.
 
-[Application Performance🗺️\*\*](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement🗺️\*\*](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking🗺️\*\*](https://trends.builtwith.com/analytics/visitor-count-tracking)
+[Application Performance🗺️](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement🗺️](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking🗺️](https://trends.builtwith.com/analytics/visitor-count-tracking)
 
-##### [Google Analytics 4🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics-4)
+##### [Google Analytics 4🗺️](https://trends.builtwith.com/analytics/Google-Analytics-4)
 
-[Google Analytics 4 Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Analytics-4)
+[Google Analytics 4 Usage Statistics🗺️](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4🗺️](https://trends.builtwith.com/websitelist/Google-Analytics-4)
 
 Google Analytics 4 formerly known as App + Web is a new version of Google Analytics that was released in October 2020.
 
 ###### Widgets
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/widgets)
+[View Global Trends🗺️](https://trends.builtwith.com/widgets)
 
-## [Imgur🗺️\*\*](https://trends.builtwith.com/widgets/Imgur)
+## [Imgur🗺️](https://trends.builtwith.com/widgets/Imgur)
 
-[Imgur Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur🗺️\*\*](https://trends.builtwith.com/websitelist/Imgur)
+[Imgur Usage Statistics🗺️](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur🗺️](https://trends.builtwith.com/websitelist/Imgur)
 
 The page contains content from image sharing website imgur.
 
-## [Google Font API🗺️\*\*](https://trends.builtwith.com/widgets/Google-Font-API)
+## [Google Font API🗺️](https://trends.builtwith.com/widgets/Google-Font-API)
 
-[Google Font API Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Font-API)
+[Google Font API Usage Statistics🗺️](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API🗺️](https://trends.builtwith.com/websitelist/Google-Font-API)
 
 The Google Font API helps you add web fonts to any web page.
 
-[Fonts🗺️\*\*](https://trends.builtwith.com/widgets/fonts)
+[Fonts🗺️](https://trends.builtwith.com/widgets/fonts)
 
-## [Google Tag Manager🗺️\*\*](https://trends.builtwith.com/widgets/Google-Tag-Manager)
+## [Google Tag Manager🗺️](https://trends.builtwith.com/widgets/Google-Tag-Manager)
 
-[Google Tag Manager Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
+[Google Tag Manager Usage Statistics🗺️](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager🗺️](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
 
 Tag management that lets you add and update website tags without changes to underlying website code.
 
-[Tag Management🗺️\*\*](https://trends.builtwith.com/widgets/tag-management)
+[Tag Management🗺️](https://trends.builtwith.com/widgets/tag-management)
 
-## [Icons8🗺️\*\*](https://trends.builtwith.com/widgets/Icons8)
+## [Icons8🗺️](https://trends.builtwith.com/widgets/Icons8)
 
-[Icons8 Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8🗺️\*\*](https://trends.builtwith.com/websitelist/Icons8)
+[Icons8 Usage Statistics🗺️](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8🗺️](https://trends.builtwith.com/websitelist/Icons8)
 
 Icons, photos and illustrations.
 
-[Image Provider🗺️\*\*](https://trends.builtwith.com/widgets/image-provider)
+[Image Provider🗺️](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum🗺️\*\*](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+## [Lorem Ipsum🗺️](https://trends.builtwith.com/widgets/Lorem-Ipsum)
 
-[Lorem Ipsum Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum🗺️\*\*](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics🗺️](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum🗺️](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
-## [AddThis🗺️\*\*](https://trends.builtwith.com/widgets/AddThis)
+## [AddThis🗺️](https://trends.builtwith.com/widgets/AddThis)
 
-[AddThis Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis🗺️\*\*](https://trends.builtwith.com/websitelist/AddThis)
+[AddThis Usage Statistics🗺️](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis🗺️](https://trends.builtwith.com/websitelist/AddThis)
 
 Widgets that allow visitors to save and promote the site.
 
-[Social Sharing🗺️\*\*](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking🗺️\*\*](https://trends.builtwith.com/widgets/bookmarking)
+[Social Sharing🗺️](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking🗺️](https://trends.builtwith.com/widgets/bookmarking)
 
-## [tawk.to🗺️\*\*](https://trends.builtwith.com/widgets/tawk.to)
+## [tawk.to🗺️](https://trends.builtwith.com/widgets/tawk.to)
 
-[tawk.to Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to🗺️\*\*](https://trends.builtwith.com/websitelist/tawk.to)
+[tawk.to Usage Statistics🗺️](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to🗺️](https://trends.builtwith.com/websitelist/tawk.to)
 
 tawk.to is a free live chat app that lets you monitor and chat with visitors.
 
-[Live Chat🗺️\*\*](https://trends.builtwith.com/widgets/live-chat)
+[Live Chat🗺️](https://trends.builtwith.com/widgets/live-chat)
 
 ###### Frameworks
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/framework)
+[View Global Trends🗺️](https://trends.builtwith.com/framework)
 
-## [Gatsby JS🗺️\*\*](https://trends.builtwith.com/framework/Gatsby-JS)
+## [Gatsby JS🗺️](https://trends.builtwith.com/framework/Gatsby-JS)
 
-[Gatsby JS Usage Statistics🗺️\*\*](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS🗺️\*\*](https://trends.builtwith.com/websitelist/Gatsby-JS)
+[Gatsby JS Usage Statistics🗺️](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS🗺️](https://trends.builtwith.com/websitelist/Gatsby-JS)
 
 Modern website and web apps generator for React.
 
 ###### Mobile
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/mobile)
+[View Global Trends🗺️](https://trends.builtwith.com/mobile)
 
-## [Viewport Meta🗺️\*\*](https://trends.builtwith.com/mobile/Viewport-Meta)
+## [Viewport Meta🗺️](https://trends.builtwith.com/mobile/Viewport-Meta)
 
-[Viewport Meta Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta🗺️\*\*](https://trends.builtwith.com/websitelist/Viewport-Meta)
+[Viewport Meta Usage Statistics🗺️](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta🗺️](https://trends.builtwith.com/websitelist/Viewport-Meta)
 
 This page uses the viewport meta tag which means the content may be optimized for mobile content.
 
-## [IPhone / Mobile Compatible🗺️\*\*](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
+## [IPhone / Mobile Compatible🗺️](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
 
-[IPhone / Mobile Compatible Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible🗺️\*\*](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
+[IPhone / Mobile Compatible Usage Statistics🗺️](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible🗺️](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
 
 The website contains code that allows the page to support IPhone / Mobile Content.
 
-## [Apple Mobile Web Clips Icon🗺️\*\*](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
+## [Apple Mobile Web Clips Icon🗺️](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
 
-[Apple Mobile Web Clips Icon Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon🗺️\*\*](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
+[Apple Mobile Web Clips Icon Usage Statistics🗺️](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon🗺️](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
 
 This page contains an icon for iPhone, iPad and iTouch devices.
 
 ###### Content Delivery Network
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cdn)
+[View Global Trends🗺️](https://trends.builtwith.com/cdn)
 
-## [AJAX Libraries API🗺️\*\*](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
+## [AJAX Libraries API🗺️](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
 
-[AJAX Libraries API Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API🗺️\*\*](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
+[AJAX Libraries API Usage Statistics🗺️](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API🗺️](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
 
 The AJAX Libraries API is a content distribution network and loading architecture for the most popular, open source JavaScript libraries.
 
-## [jsDelivr🗺️\*\*](https://trends.builtwith.com/cdn/jsDelivr)
+## [jsDelivr🗺️](https://trends.builtwith.com/cdn/jsDelivr)
 
-[jsDelivr Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr🗺️\*\*](https://trends.builtwith.com/websitelist/jsDelivr)
+[jsDelivr Usage Statistics🗺️](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr🗺️](https://trends.builtwith.com/websitelist/jsDelivr)
 
 A free CDN where Javascript developers can host their files. Encompasses MaxCDN, and BootstrapCDN.
 
-## [CloudFront🗺️\*\*](https://trends.builtwith.com/cdn/CloudFront)
+## [CloudFront🗺️](https://trends.builtwith.com/cdn/CloudFront)
 
-[CloudFront Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront🗺️\*\*](https://trends.builtwith.com/websitelist/CloudFront)
+[CloudFront Usage Statistics🗺️](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront🗺️](https://trends.builtwith.com/websitelist/CloudFront)
 
 Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments.
 
 ###### Content Management System
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cms)
+[View Global Trends🗺️](https://trends.builtwith.com/cms)
 
-## [Netlify🗺️\*\*](https://trends.builtwith.com/cms/Netlify)
+## [Netlify🗺️](https://trends.builtwith.com/cms/Netlify)
 
-[Netlify Usage Statistics🗺️\*\*](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify🗺️\*\*](https://trends.builtwith.com/websitelist/Netlify)
+[Netlify Usage Statistics🗺️](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify🗺️](https://trends.builtwith.com/websitelist/Netlify)
 
 Netlify is a platform that automates your code to create web sites.
 
 ###### JavaScript Libraries and Functions
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/javascript)
+[View Global Trends🗺️](https://trends.builtwith.com/javascript)
 
-## [Google Hosted Libraries🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
+## [Google Hosted Libraries🗺️](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
 
-[Google Hosted Libraries Usage Statistics🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
+[Google Hosted Libraries Usage Statistics🗺️](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries🗺️](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
 
 Google Hosted Libraries is a globally available content distribution network for the most popular, open-source JavaScript libraries.
 
-##### [Google Hosted jQuery🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
+##### [Google Hosted jQuery🗺️](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
 
-[Google Hosted jQuery Usage Statistics🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
+[Google Hosted jQuery Usage Statistics🗺️](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery🗺️](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
 
 jQuery hoted at Google.
 
 ###### Advertising
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/ads)
+[View Global Trends🗺️](https://trends.builtwith.com/ads)
 
-## [Google Adsense🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense)
+## [Google Adsense🗺️](https://trends.builtwith.com/ads/Google-Adsense)
 
-[Google Adsense Usage Statistics🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Adsense)
+[Google Adsense Usage Statistics🗺️](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense🗺️](https://trends.builtwith.com/websitelist/Google-Adsense)
 
 A contextual advertising solution for delivering Google AdWords ads that are relevant to site content pages.
 
-[Contextual Advertising🗺️\*\*](https://trends.builtwith.com/ads/contextual-advertising)
+[Contextual Advertising🗺️](https://trends.builtwith.com/ads/contextual-advertising)
 
-##### [Google Adsense Asynchronous🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
+##### [Google Adsense Asynchronous🗺️](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
 
-[Google Adsense Asynchronous Usage Statistics🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
+[Google Adsense Asynchronous Usage Statistics🗺️](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous🗺️](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
 
 Fully asynchronous version of the AdSense ad code.
 
 ###### Document Encoding
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/encoding)
+[View Global Trends🗺️](https://trends.builtwith.com/encoding)
 
-## [UTF-8🗺️\*\*](https://trends.builtwith.com/encoding/UTF-8)
+## [UTF-8🗺️](https://trends.builtwith.com/encoding/UTF-8)
 
-[UTF-8 Usage Statistics🗺️\*\*](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8🗺️\*\*](https://trends.builtwith.com/websitelist/UTF-8)
+[UTF-8 Usage Statistics🗺️](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8🗺️](https://trends.builtwith.com/websitelist/UTF-8)
 
 UTF-8 (8-bit UCS/Unicode Transformation Format) is a variable-length character encoding for Unicode. It is the preferred encoding for web pages.
 
 ###### Document Standards
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/docinfo)
+[View Global Trends🗺️](https://trends.builtwith.com/docinfo)
 
-## [HTML5 DocType🗺️\*\*](https://trends.builtwith.com/docinfo/HTML5-DocType)
+## [HTML5 DocType🗺️](https://trends.builtwith.com/docinfo/HTML5-DocType)
 
-[HTML5 DocType Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType🗺️\*\*](https://trends.builtwith.com/websitelist/HTML5-DocType)
+[HTML5 DocType Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType🗺️](https://trends.builtwith.com/websitelist/HTML5-DocType)
 
 The DOCTYPE is a required preamble for HTML5 websites.
 
-## [Cascading Style Sheets🗺️\*\*](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
+## [Cascading Style Sheets🗺️](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
 
-[Cascading Style Sheets Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets🗺️\*\*](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
+[Cascading Style Sheets Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets🗺️](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
 
 Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in a markup language. Its most common application is to style web pages written in HTML
 
-## [Open Graph Protocol🗺️\*\*](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
+## [Open Graph Protocol🗺️](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
 
-[Open Graph Protocol Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol🗺️\*\*](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
+[Open Graph Protocol Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol🗺️](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
 
 The Open Graph protocol enables any web page to become a rich object in a social graph, a open protocol supported by Facebook
 
-## [Twitter Cards🗺️\*\*](https://trends.builtwith.com/docinfo/Twitter-Cards)
+## [Twitter Cards🗺️](https://trends.builtwith.com/docinfo/Twitter-Cards)
 
-[Twitter Cards Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards🗺️\*\*](https://trends.builtwith.com/websitelist/Twitter-Cards)
+[Twitter Cards Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards🗺️](https://trends.builtwith.com/websitelist/Twitter-Cards)
 
 Twitter cards make it possible for you to attach media experiences to Tweets that link to your content.
 
-## [Javascript🗺️\*\*](https://trends.builtwith.com/docinfo/Javascript)
+## [Javascript🗺️](https://trends.builtwith.com/docinfo/Javascript)
 
-[Javascript Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript🗺️\*\*](https://trends.builtwith.com/websitelist/Javascript)
+[Javascript Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript🗺️](https://trends.builtwith.com/websitelist/Javascript)
 
 JavaScript is a scripting language most often used for client-side web development.
 
-## [IFrame🗺️\*\*](https://trends.builtwith.com/docinfo/IFrame)
+## [IFrame🗺️](https://trends.builtwith.com/docinfo/IFrame)
 
-[IFrame Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame🗺️\*\*](https://trends.builtwith.com/websitelist/IFrame)
+[IFrame Usage Statistics🗺️](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame🗺️](https://trends.builtwith.com/websitelist/IFrame)
 
 The page shows content with an iframe; an embedded frame that loads another webpage.
 
-## [Font Face Rule🗺️\*\*](https://trends.builtwith.com/docinfo/Font-Face-Rule)
+## [Font Face Rule🗺️](https://trends.builtwith.com/docinfo/Font-Face-Rule)
 
-[Font Face Rule Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule🗺️\*\*](https://trends.builtwith.com/websitelist/Font-Face-Rule)
+[Font Face Rule Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule🗺️](https://trends.builtwith.com/websitelist/Font-Face-Rule)
 
 The @font-face rule allows for linking to fonts that are automatically activated when needed.
 
-## [X-UA-Compatible🗺️\*\*](https://trends.builtwith.com/docinfo/X-UA-Compatible)
+## [X-UA-Compatible🗺️](https://trends.builtwith.com/docinfo/X-UA-Compatible)
 
-[X-UA-Compatible Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible🗺️\*\*](https://trends.builtwith.com/websitelist/X-UA-Compatible)
+[X-UA-Compatible Usage Statistics🗺️](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible🗺️](https://trends.builtwith.com/websitelist/X-UA-Compatible)
 
 Allows a website to define how a page is rendered in Internet Explorer 8, allowing a website to decide to use IE7 style rendering over IE8 rendering.
 
-## [Meta Keywords🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Keywords)
+## [Meta Keywords🗺️](https://trends.builtwith.com/docinfo/Meta-Keywords)
 
-[Meta Keywords Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords🗺️\*\*](https://trends.builtwith.com/websitelist/Meta-Keywords)
+[Meta Keywords Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords🗺️](https://trends.builtwith.com/websitelist/Meta-Keywords)
 
 Meta tag containing keywords related to the page.
 
-## [Meta Description🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Description)
+## [Meta Description🗺️](https://trends.builtwith.com/docinfo/Meta-Description)
 
-[Meta Description Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description🗺️\*\*](https://trends.builtwith.com/websitelist/Meta-Description)
+[Meta Description Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description🗺️](https://trends.builtwith.com/websitelist/Meta-Description)
 
 The description attribute provides a concise explanation of the page content.
 
-## [HTML 5 Specific Tags🗺️\*\*](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
+## [HTML 5 Specific Tags🗺️](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
 
-[HTML 5 Specific Tags Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags🗺️\*\*](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
+[HTML 5 Specific Tags Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags🗺️](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
 
 This page contains tags that are specific to an HTML 5 implementation.
 
-## [WAI-ARIA🗺️\*\*](https://trends.builtwith.com/docinfo/WAI-ARIA)
+## [WAI-ARIA🗺️](https://trends.builtwith.com/docinfo/WAI-ARIA)
 
-[WAI-ARIA Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA🗺️\*\*](https://trends.builtwith.com/websitelist/WAI-ARIA)
+[WAI-ARIA Usage Statistics🗺️](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA🗺️](https://trends.builtwith.com/websitelist/WAI-ARIA)
 
 A way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-## [Strict Transport Security🗺️\*\*](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
+## [Strict Transport Security🗺️](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
 
-[Strict Transport Security Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security🗺️\*\*](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
+[Strict Transport Security Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security🗺️](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
 
 The HTTP Strict-Transport-Security (HSTS) header instructs the browser to only use https.
 
-## [HSTS🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS)
+## [HSTS🗺️](https://trends.builtwith.com/docinfo/HSTS)
 
-[HSTS Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS🗺️\*\*](https://trends.builtwith.com/websitelist/HSTS)
+[HSTS Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS🗺️](https://trends.builtwith.com/websitelist/HSTS)
 
 Forces browsers to only communicate with the site using HTTPS.
 
-## [HSTS IncludeSubdomains PreLoad🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad)
+## [HSTS IncludeSubdomains PreLoad🗺️](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad)
 
-[HSTS IncludeSubdomains PreLoad Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad🗺️\*\*](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
+[HSTS IncludeSubdomains PreLoad Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad🗺️](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
 
 This website includes instructions for HSTS loading that would allow it to be submitted to the HSTS preload list.
 
 ###### Web Master Registration
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/web-master)
+[View Global Trends🗺️](https://trends.builtwith.com/web-master)
 
-## [Google Webmaster🗺️\*\*](https://trends.builtwith.com/Web-Master/Google-Webmaster)
+## [Google Webmaster🗺️](https://trends.builtwith.com/Web-Master/Google-Webmaster)
 
-[Google Webmaster Usage Statistics🗺️\*\*](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Webmaster)
+[Google Webmaster Usage Statistics🗺️](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster🗺️](https://trends.builtwith.com/websitelist/Google-Webmaster)
 
 Webmaster tools provide you with a free and easy way to make your site more Google-friendly.
 
 ###### Content Delivery Network
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cdn)
+[View Global Trends🗺️](https://trends.builtwith.com/cdn)
 
-## [Content Delivery Network🗺️\*\*](https://trends.builtwith.com/CDN/Content-Delivery-Network)
+## [Content Delivery Network🗺️](https://trends.builtwith.com/CDN/Content-Delivery-Network)
 
-[Content Delivery Network Usage Statistics🗺️\*\*](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network🗺️\*\*](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
+[Content Delivery Network Usage Statistics🗺️](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network🗺️](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
 
 This page contains links that give the impression that some of the site contents are stored on a content delivery network.
 
@@ -1193,76 +1200,76 @@ This page contains links that give the impression that some of the site contents
 
 # Sitemap:
 
--   [/job-hunt/🗺️\*\*](https://bgoonz-blog.netlify.app/job-hunt/)
--   [/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/notes-template/)
--   [/🗺️\*\*](https://bgoonz-blog.netlify.app/)
--   [/showcase/🗺️\*\*](https://bgoonz-blog.netlify.app/showcase/)
--   [/blog/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/)
--   [/review/🗺️\*\*](https://bgoonz-blog.netlify.app/review/)
--   [/blog/blog-archive/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/blog-archive/)
--   [/blog/my-medium/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/my-medium/)
--   [/blog/blogwcomments/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
--   [/blog/data-structures/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/data-structures/)
--   [/docs/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/gallery/)
--   [/blog/python-for-js-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
--   [/blog/platform-docs/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/platform-docs/)
--   [/docs/sitemap/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/sitemap/)
--   [/docs/about/me/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/me/)
--   [/blog/python-resources/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python-resources/)
--   [/docs/about/resume/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/resume/)
--   [/docs/🗺️\*\*](https://preview--bgoonz-b2d7c.stackbit.https://bgoonz-blog.netlify.app/log/web-scraping/)
--   [/docs/about/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/)
--   [/docs/articles/algo/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/algo/)
--   [/docs/articles/install/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/install/)
--   [/docs/articles/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/)
--   [/docs/articles/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
--   [/docs/articles/intro/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/intro/)
--   [/docs/articles/basic-web-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
--   [/docs/articles/reading-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
--   [/docs/articles/writing-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
--   [/docs/audio/audio/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/audio/audio/)
--   [/docs/content/projects/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/projects/)
--   [/docs/audio/terms/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/audio/terms/)
--   [/docs/faq/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/)
--   [/docs/community/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/community/)
--   [/docs/articles/resources/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/resources/)
--   [/docs/content/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/)
--   [/docs/docs/git-repos/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
--   [/docs/content/trouble-shooting/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
--   [/docs/articles/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/python/)
--   [/docs/interact/clock/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/clock/)
--   [/docs/docs/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/docs/python/)
--   [/docs/interact/jupyter-notebooks/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
--   [/docs/interact/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/)
--   [/docs/faq/contact/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/contact/)
--   [/docs/quick-reference/docs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
--   [/docs/interact/other-sites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
--   [/docs/quick-reference/new-repo-instructions/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
--   [/docs/quick-reference/Emmet/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
--   [/docs/quick-reference/installation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
--   [/docs/quick-reference/vscode-themes/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/)
--   [/docs/react/createReactApp/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
--   [/docs/react/react2/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/react2/)
--   [/docs/quick-reference/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/)
--   [/docs/react/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/)
--   [/docs/tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/)
--   [/docs/tools/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
--   [/docs/tools/more-tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/more-tools/)
--   [/docs/tools/plug-ins/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
--   [/docs/articles/node/install/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/install/)
--   [/docs/tools/vscode/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
--   [/docs/articles/node/intro/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/intro/)
--   [/docs/articles/node/nodejs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/nodejs/)
--   [/docs/articles/node/nodevsbrowser/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser/)
--   [/docs/articles/node/npm/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/npm/)
--   [/docs/articles/node/reading-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/reading-files/)
--   [/docs/articles/node/writing-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/writing-files/)
--   [/docs/react-in-depth/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react-in-depth/)
--   [/docs/articles/article-compilation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
--   [/docs/medium/my-websites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
--   [/docs/medium/social/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/social/)
--   [/docs/medium/medium-links/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
--   [/docs/medium/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/)
+-   [/job-hunt/🗺️](https://bgoonz-blog.netlify.app/job-hunt/)
+-   [/notes-template/🗺️](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/🗺️](https://bgoonz-blog.netlify.app/)
+-   [/showcase/🗺️](https://bgoonz-blog.netlify.app/showcase/)
+-   [/blog/🗺️](https://bgoonz-blog.netlify.app/blog/)
+-   [/review/🗺️](https://bgoonz-blog.netlify.app/review/)
+-   [/blog/blog-archive/🗺️](https://bgoonz-blog.netlify.app/blog/blog-archive/)
+-   [/blog/my-medium/🗺️](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/blog/blogwcomments/🗺️](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
+-   [/blog/data-structures/🗺️](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/gallery/🗺️](https://bgoonz-blog.netlify.app/docs/gallery/)
+-   [/blog/python-for-js-dev/🗺️](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+-   [/blog/platform-docs/🗺️](https://bgoonz-blog.netlify.app/blog/platform-docs/)
+-   [/docs/sitemap/🗺️](https://bgoonz-blog.netlify.app/docs/sitemap/)
+-   [/docs/about/me/🗺️](https://bgoonz-blog.netlify.app/docs/about/me/)
+-   [/blog/python-resources/🗺️](https://bgoonz-blog.netlify.app/blog/python-resources/)
+-   [/docs/about/resume/🗺️](https://bgoonz-blog.netlify.app/docs/about/resume/)
+-   [/docs/🗺️](https://preview--bgoonz-b2d7c.stackbit.https://bgoonz-blog.netlify.app/log/web-scraping/)
+-   [/docs/about/🗺️](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/articles/algo/🗺️](https://bgoonz-blog.netlify.app/docs/articles/algo/)
+-   [/docs/articles/install/🗺️](https://bgoonz-blog.netlify.app/docs/articles/install/)
+-   [/docs/articles/🗺️](https://bgoonz-blog.netlify.app/docs/articles/)
+-   [/docs/articles/gallery/🗺️](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
+-   [/docs/articles/intro/🗺️](https://bgoonz-blog.netlify.app/docs/articles/intro/)
+-   [/docs/articles/basic-web-dev/🗺️](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/docs/articles/reading-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
+-   [/docs/articles/writing-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
+-   [/docs/audio/audio/🗺️](https://bgoonz-blog.netlify.app/docs/audio/audio/)
+-   [/docs/content/projects/🗺️](https://bgoonz-blog.netlify.app/docs/content/projects/)
+-   [/docs/audio/terms/🗺️](https://bgoonz-blog.netlify.app/docs/audio/terms/)
+-   [/docs/faq/🗺️](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/community/🗺️](https://bgoonz-blog.netlify.app/docs/community/)
+-   [/docs/articles/resources/🗺️](https://bgoonz-blog.netlify.app/docs/articles/resources/)
+-   [/docs/content/🗺️](https://bgoonz-blog.netlify.app/docs/content/)
+-   [/docs/docs/git-repos/🗺️](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
+-   [/docs/content/trouble-shooting/🗺️](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
+-   [/docs/articles/python/🗺️](https://bgoonz-blog.netlify.app/docs/articles/python/)
+-   [/docs/interact/clock/🗺️](https://bgoonz-blog.netlify.app/docs/interact/clock/)
+-   [/docs/docs/python/🗺️](https://bgoonz-blog.netlify.app/docs/docs/python/)
+-   [/docs/interact/jupyter-notebooks/🗺️](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
+-   [/docs/interact/🗺️](https://bgoonz-blog.netlify.app/docs/interact/)
+-   [/docs/faq/contact/🗺️](https://bgoonz-blog.netlify.app/docs/faq/contact/)
+-   [/docs/quick-reference/docs/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
+-   [/docs/interact/other-sites/🗺️](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
+-   [/docs/quick-reference/new-repo-instructions/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/quick-reference/Emmet/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/installation/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/quick-reference/vscode-themes/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/)
+-   [/docs/react/createReactApp/🗺️](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/react/react2/🗺️](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/quick-reference/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/react/🗺️](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/docs/tools/notes-template/🗺️](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/docs/tools/more-tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/more-tools/)
+-   [/docs/tools/plug-ins/🗺️](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/articles/node/install/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/install/)
+-   [/docs/tools/vscode/🗺️](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
+-   [/docs/articles/node/intro/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/intro/)
+-   [/docs/articles/node/nodejs/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/nodejs/)
+-   [/docs/articles/node/nodevsbrowser/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser/)
+-   [/docs/articles/node/npm/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/npm/)
+-   [/docs/articles/node/reading-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/reading-files/)
+-   [/docs/articles/node/writing-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/writing-files/)
+-   [/docs/react-in-depth/🗺️](https://bgoonz-blog.netlify.app/docs/react-in-depth/)
+-   [/docs/articles/article-compilation/🗺️](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
+-   [/docs/medium/my-websites/🗺️](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
+-   [/docs/medium/social/🗺️](https://bgoonz-blog.netlify.app/docs/medium/social/)
+-   [/docs/medium/medium-links/🗺️](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
+-   [/docs/medium/🗺️](https://bgoonz-blog.netlify.app/docs/medium/)
 
 ---
 
@@ -1270,109 +1277,46 @@ This page contains links that give the impression that some of the site contents
 
 ##### Try it out without cloning the entire repo:
 
-##### [stackblitz demo hosted on firebase🗺️\*\*](https://exploring-firebase-4c023.firebaseapp.com/)
+##### [stackblitz demo hosted on firebase🗺️](https://exploring-firebase-4c023.firebaseapp.com/)
 
--   [/showcase/🗺️\*\*](https://bgoonz-blog.netlify.app/showcase/)
--   [/repos/🗺️\*\*](https://bgoonz-blog.netlify.app/repos/)
--   [/blog/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/)
--   [/docs/jupyter-notebooks/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
--   [/docs/portfolio-web/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
--   [/docs/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/python/)
--   [/docs/About/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/)
--   [/docs/About/resume/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/resume/)
--   [/docs/about/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/)
--   [/docs/faq/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/)
--   [/docs/quick-reference/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/)
--   [/docs/quick-reference/Emmet/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
--   [/docs/quick-reference/new-repo-instructions/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
--   [/docs/links/Social/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/Social/)
--   [/docs/links/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/)
--   [/docs/quick-reference/installation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
--   [/docs/links/my-websites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
--   [/docs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/)
--   [/blog/community/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/community/)
--   [/blog/python/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python/)
--   [/docs/resources/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/resources/)
--   [/docs/react/createReactApp/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
--   [/docs/tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/)
--   [/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/notes-template/)
--   [/blog/my-medium/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/my-medium/)
--   [/docs/tools/default-readme/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
--   [/docs/tools/plug-ins/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
--   [/docs/react/react2/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/react2/)
--   [/docs/tools/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
--   [/review/🗺️\*\*](https://bgoonz-blog.netlify.app/review/)
--   [/docs/articles/basic-web-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
--   [/blog/data-structures/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/data-structures/)
--   [/docs/About/me/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/me/)
--   [/docs/About/introduction2bg/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
--   [/docs/react/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/)
--   [/docs/tools/Git-Html-Preview/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
--   [/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/gallery/)
+-   [/showcase/🗺️](https://bgoonz-blog.netlify.app/showcase/)
+-   [/repos/🗺️](https://bgoonz-blog.netlify.app/repos/)
+-   [/blog/🗺️](https://bgoonz-blog.netlify.app/blog/)
+-   [/docs/jupyter-notebooks/🗺️](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
+-   [/docs/portfolio-web/🗺️](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
+-   [/docs/python/🗺️](https://bgoonz-blog.netlify.app/docs/python/)
+-   [/docs/About/🗺️](https://bgoonz-blog.netlify.app/docs/About/)
+-   [/docs/About/resume/🗺️](https://bgoonz-blog.netlify.app/docs/About/resume/)
+-   [/docs/about/🗺️](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/faq/🗺️](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/quick-reference/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/quick-reference/Emmet/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/new-repo-instructions/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/links/Social/🗺️](https://bgoonz-blog.netlify.app/docs/links/Social/)
+-   [/docs/links/🗺️](https://bgoonz-blog.netlify.app/docs/links/)
+-   [/docs/quick-reference/installation/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/links/my-websites/🗺️](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+-   [/docs/🗺️](https://bgoonz-blog.netlify.app/docs/)
+-   [/blog/community/🗺️](https://bgoonz-blog.netlify.app/blog/community/)
+-   [/blog/python/🗺️](https://bgoonz-blog.netlify.app/blog/python/)
+-   [/docs/resources/🗺️](https://bgoonz-blog.netlify.app/docs/resources/)
+-   [/docs/react/createReactApp/🗺️](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/notes-template/🗺️](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/blog/my-medium/🗺️](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/docs/tools/default-readme/🗺️](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+-   [/docs/tools/plug-ins/🗺️](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/react/react2/🗺️](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/tools/notes-template/🗺️](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/review/🗺️](https://bgoonz-blog.netlify.app/review/)
+-   [/docs/articles/basic-web-dev/🗺️](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/blog/data-structures/🗺️](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/About/me/🗺️](https://bgoonz-blog.netlify.app/docs/About/me/)
+-   [/docs/About/introduction2bg/🗺️](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
+-   [/docs/react/🗺️](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/Git-Html-Preview/🗺️](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
+-   [/gallery/🗺️](https://bgoonz-blog.netlify.app/gallery/)
 
-## Blog
-
--   [introductory-react-part-2🗺️\*\*](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
-
--   [a-very-quick-guide-to-calculating-big-o-computational-complexity🗺️\*\*](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
-
--   [introduction-to-react-for-complete-beginners🗺️\*\*](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
-
--   [scheduling-settimeout-and-setinterval🗺️\*\*](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
-
--   [css-animations🗺️\*\*](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
-
--   [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity🗺️\*\*](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
-
--   [how-to-implement-native-es6-data-structures-using-arrays-objects🗺️\*\*](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
-
--   [objects-in-javascript🗺️\*\*](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
-
--   [absolute-beginners-guide-to-javascript-part1🗺️\*\*](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
-
--   [web-developer-resource-list-part-4🗺️\*\*](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
-
--   [vscode-extensions-specifically-for-javascript-development🗺️\*\*](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
-
--   [a-list-of-all-of-my-articles-to-link-to-future-posts🗺️\*\*](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
-
--   [lists-stacks-and-queues-in-javascript🗺️\*\*](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
-
--   [web-development-resources-part-3🗺️\*\*](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
-
--   [web-development-interview-part-3🗺️\*\*](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
-
--   [running-list-of-interesting-articles-tools🗺️\*\*](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
-
--   [the-best-cloud-based-code-playgrounds-of-2021-part-1🗺️\*\*](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
-
--   [front-end-interview-questions-part-2🗺️\*\*](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
-
--   [web-developer-resource-list-part-2🗺️\*\*](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
-
--   [http-basics🗺️\*\*](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
-
--   [javascript-frameworks-libraries🗺️\*\*](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
-
--   [my-take-on-awesome-javascript🗺️\*\*](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
-
--   [get-started-with-vscode-extensions🗺️\*\*](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
-
--   [my-favorite-vscode-themes🗺️\*\*](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
-
--   [object-oriented-programming-in-javascript🗺️\*\*](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
-
--   [javascript-rotate-array-problemwalkthrough🗺️\*\*](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
-
--   [super-simple-intro-to-html-651d695f9bc🗺️\*\*](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
-
--   [everything-you-need-to-know-about-relational-databases-sql-postgresql🗺️\*\*](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
-
--   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107🗺️\*\*](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
-
--   [complete-javascript-reference-guide-64306cd6b0db🗺️\*\*](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
-
-</div>
 
 ---
 
@@ -1402,7 +1346,7 @@ This page contains links that give the impression that some of the site contents
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial🗺️\*\*](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial🗺️](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
@@ -1430,15 +1374,15 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier🗺️\*\*](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`.prettierrc`**: This is a configuration file for [Prettier🗺️](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs🗺️\*\*](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs🗺️](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs🗺️\*\*](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs🗺️](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs🗺️\*\*](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs🗺️](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs🗺️\*\*](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs🗺️](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
@@ -1450,7 +1394,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website🗺️\*\*](https://www.gatsbyjs.com/). Here are some places to start:
+Looking for more guidance? Full documentation for Gatsby lives [on the website🗺️](https://www.gatsbyjs.com/). Here are some places to start:
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby🗺️**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 
@@ -1458,14 +1402,153 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website�
 
 ## 💫 Deploy
 
-[![Deploy to Netlify🗺️**](https://www.netlify.com/img/deploy/button.svg)🗺️\*\*](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy to Netlify🗺️**](https://www.netlify.com/img/deploy/button.svg)🗺️](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
 
-[![Deploy with Vercel🗺️**](https://vercel.com/button)🗺️\*\*](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy with Vercel🗺️**](https://vercel.com/button)🗺️](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ---
 
+# Layout Components | Gatsby
+
+> ## Excerpt
+> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
+
+---
+In this guide, you’ll learn Gatsby’s approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby’s approach to layouts
+
+Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React’s compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
+
+Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com’s layout component.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
+
+It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
+
+Here is an example of a very basic layout component at `src/components/layout.js`:
+
+```
+import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>      {children}    </div>  )}
+```
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
+
+If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
+
+```
+import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>      <h1>I’m in a layout!</h1>    </Layout>  );}
+```
+
+Repeat for every page and template that needs this layout.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
+
+As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The “top level” component is the page itself. As a result, when the “top level” component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
+
+If you need to set a wrapper component around page components that won’t get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
+
+Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
+
+
+# Adding Markdown Pages | Gatsby
+
+> ## Excerpt
+> Gatsby can use Markdown files to create pages in your site.
+You add plugins to read and understand folders with Markdown files and from them…
+
+---
+Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
+
+Here are the steps Gatsby follows for making this happen.
+
+1.  Read files into Gatsby from the filesystem
+2.  Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
+3.  Add a Markdown file
+4.  Create a Collection Route component for the Markdown files
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
+
+Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
+
+`npm install gatsby-source-filesystem`
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
+
+Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
+
+```
+module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
+```
+
+Completing the above step means that you’ve “sourced” the Markdown files from the filesystem. You can now “transform” the Markdown to HTML and the YAML frontmatter to JSON.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+
+You’ll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+
+`npm install gatsby-transformer-remark`
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+
+Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
+
+```
+module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
+```
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)Add a Markdown file
+
+Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
+
+When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called “frontmatter” and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
+
+src/markdown-pages/post-1.md
+
+```
+---slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
+```
+
+What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
+
+Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
+
+src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
+
+```
+import React from "react"import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">      <div className="blog-post">        <h1>{frontmatter.title}</h1>        <h2>{frontmatter.date}</h2>        <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />      </div>    </div>  )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: { eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
+```
+
+Two things are important in the file above:
+
+1.  A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query’s result.
+    
+    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
+    
+2.  The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
+    
+
+Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
+
+This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
+
+For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)Other tutorials
+
+---
 ---
 
 # Codebase:
@@ -6385,11 +6468,11 @@ Prism.languages.markup.tag.addAttribute(
 
 <br>
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 
 `^ 4.10.3`
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
 
 `4.10.5`
 
@@ -6397,151 +6480,151 @@ Prism.languages.markup.tag.addAttribute(
 
 `4.10.5`
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
 
 `4.10.5`
 
-[![@stackbit🗺️**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)🗺️\*\*](https://github.com/stackbit)[stackbit / gatsby-plugin-menus 🗺️\*\*](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
+[![@stackbit🗺️**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)🗺️](https://github.com/stackbit)[stackbit / gatsby-plugin-menus 🗺️](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
 
 `0.0.4`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / jest 🗺️\*\*](https://github.com/facebook/jest)babel-jest
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / jest 🗺️](https://github.com/facebook/jest)babel-jest
 
 `^ 24.7.1`
 
-[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️\*\*](https://github.com/gatsbyjs)[gatsbyjs / gatsby 🗺️\*\*](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
+[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️](https://github.com/gatsbyjs)[gatsbyjs / gatsby 🗺️](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
 
 `^ 0.1.11`
 
-[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️\*\*](https://github.com/gatsbyjs)[gatsbyjs / gatsby🗺️\*\*](https://github.com/gatsbyjs/gatsby)
+[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️](https://github.com/gatsbyjs)[gatsbyjs / gatsby🗺️](https://github.com/gatsbyjs/gatsby)
 
 `^ 2.5.0`
 
-[![@keyz🗺️**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)🗺️\*\*](https://github.com/keyz)[keyz / identity-obj-proxy🗺️\*\*](https://github.com/keyz/identity-obj-proxy)
+[![@keyz🗺️**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)🗺️](https://github.com/keyz)[keyz / identity-obj-proxy🗺️](https://github.com/keyz/identity-obj-proxy)
 
 `^ 3.0.0`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / jest🗺️\*\*](https://github.com/facebook/jest)
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / jest🗺️](https://github.com/facebook/jest)
 
 `^ 24.7.1`
 
-[![@lodash🗺️**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)🗺️\*\*](https://github.com/lodash)[lodash / lodash🗺️\*\*](https://github.com/lodash/lodash)
+[![@lodash🗺️**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)🗺️](https://github.com/lodash)[lodash / lodash🗺️](https://github.com/lodash/lodash)
 
 `^ 4.17.11`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / react 🗺️\*\*](https://github.com/facebook/react)react-test-renderer
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / react 🗺️](https://github.com/facebook/react)react-test-renderer
 
 `^ 16.8.6`
 
-[![@getkirby-v2🗺️**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)🗺️\*\*](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin 🗺️\*\*](https://github.com/getkirby-v2/algolia-plugin)algolia
+[![@getkirby-v2🗺️**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)🗺️](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin 🗺️](https://github.com/getkirby-v2/algolia-plugin)algolia
 
 `0.0.0`
 
-[![@ecomfe🗺️**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)🗺️\*\*](https://github.com/ecomfe)[ecomfe / babel-runtime🗺️\*\*](https://github.com/ecomfe/babel-runtime)
+[![@ecomfe🗺️**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)🗺️](https://github.com/ecomfe)[ecomfe / babel-runtime🗺️](https://github.com/ecomfe/babel-runtime)
 
 `6.26.0`
 
-[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️\*\*](https://github.com/paulmillr)[paulmillr / chokidar🗺️\*\*](https://github.com/paulmillr/chokidar)
+[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️](https://github.com/paulmillr)[paulmillr / chokidar🗺️](https://github.com/paulmillr/chokidar)
 
 `3.4.0`
 
-[![@DefinitelyTyped🗺️**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)🗺️\*\*](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped 🗺️\*\*](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
+[![@DefinitelyTyped🗺️**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)🗺️](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped 🗺️](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
 
 `^ 13`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / anymatch🗺️\*\*](https://github.com/micromatch/anymatch)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / anymatch🗺️](https://github.com/micromatch/anymatch)
 
 `~ 3.1.1`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / braces🗺️\*\*](https://github.com/micromatch/braces)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / braces🗺️](https://github.com/micromatch/braces)
 
 `~ 3.0.2`
 
-[![@chaijs🗺️**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)🗺️\*\*](https://github.com/chaijs)[chaijs / chai🗺️\*\*](https://github.com/chaijs/chai)
+[![@chaijs🗺️**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)🗺️](https://github.com/chaijs)[chaijs / chai🗺️](https://github.com/chaijs/chai)
 
 `^ 4.2`
 
-[![@microsoft🗺️**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)🗺️\*\*](https://github.com/microsoft)[microsoft / dtslint🗺️\*\*](https://github.com/microsoft/dtslint)
+[![@microsoft🗺️**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)🗺️](https://github.com/microsoft)[microsoft / dtslint🗺️](https://github.com/microsoft/dtslint)
 
 `^ 3.3.0`
 
-[![@eslint🗺️**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)🗺️\*\*](https://github.com/eslint)[eslint / eslint🗺️\*\*](https://github.com/eslint/eslint)
+[![@eslint🗺️**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)🗺️](https://github.com/eslint)[eslint / eslint🗺️](https://github.com/eslint/eslint)
 
 `^ 6.6.0`
 
-[![@fsevents🗺️**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)🗺️\*\*](https://github.com/fsevents)[fsevents / fsevents🗺️\*\*](https://github.com/fsevents/fsevents)
+[![@fsevents🗺️**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)🗺️](https://github.com/fsevents)[fsevents / fsevents🗺️](https://github.com/fsevents/fsevents)
 
 `~ 2.1.2`
 
-[![@gulpjs🗺️**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)🗺️\*\*](https://github.com/gulpjs)[gulpjs / glob-parent🗺️\*\*](https://github.com/gulpjs/glob-parent)
+[![@gulpjs🗺️**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)🗺️](https://github.com/gulpjs)[gulpjs / glob-parent🗺️](https://github.com/gulpjs/glob-parent)
 
 `~ 5.1.0`
 
-[![@sindresorhus🗺️**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)🗺️\*\*](https://github.com/sindresorhus)[sindresorhus / is-binary-path🗺️\*\*](https://github.com/sindresorhus/is-binary-path)
+[![@sindresorhus🗺️**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)🗺️](https://github.com/sindresorhus)[sindresorhus / is-binary-path🗺️](https://github.com/sindresorhus/is-binary-path)
 
 `~ 2.1.0`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / is-glob🗺️\*\*](https://github.com/micromatch/is-glob)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / is-glob🗺️](https://github.com/micromatch/is-glob)
 
 `~ 4.0.1`
 
-[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️\*\*](https://github.com/mochajs)[mochajs / mocha🗺️\*\*](https://github.com/mochajs/mocha)
+[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️](https://github.com/mochajs)[mochajs / mocha🗺️](https://github.com/mochajs/mocha)
 
 `^ 7.0.0`
 
-[![@jonschlinkert🗺️**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)🗺️\*\*](https://github.com/jonschlinkert)[jonschlinkert / normalize-path🗺️\*\*](https://github.com/jonschlinkert/normalize-path)
+[![@jonschlinkert🗺️**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)🗺️](https://github.com/jonschlinkert)[jonschlinkert / normalize-path🗺️](https://github.com/jonschlinkert/normalize-path)
 
 `~ 3.0.0`
 
-[![@istanbuljs🗺️**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)🗺️\*\*](https://github.com/istanbuljs)[istanbuljs / nyc🗺️\*\*](https://github.com/istanbuljs/nyc)
+[![@istanbuljs🗺️**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)🗺️](https://github.com/istanbuljs)[istanbuljs / nyc🗺️](https://github.com/istanbuljs/nyc)
 
 `^ 15.0.0`
 
-[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️\*\*](https://github.com/paulmillr)[paulmillr / readdirp🗺️\*\*](https://github.com/paulmillr/readdirp)
+[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️](https://github.com/paulmillr)[paulmillr / readdirp🗺️](https://github.com/paulmillr/readdirp)
 
 `~ 3.4.0`
 
-[![@isaacs🗺️**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)🗺️\*\*](https://github.com/isaacs)[isaacs / rimraf🗺️\*\*](https://github.com/isaacs/rimraf)
+[![@isaacs🗺️**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)🗺️](https://github.com/isaacs)[isaacs / rimraf🗺️](https://github.com/isaacs/rimraf)
 
 `^ 3.0.0`
 
-[![@sinonjs🗺️**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)🗺️\*\*](https://github.com/sinonjs)[sinonjs / sinon🗺️\*\*](https://github.com/sinonjs/sinon)
+[![@sinonjs🗺️**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)🗺️](https://github.com/sinonjs)[sinonjs / sinon🗺️](https://github.com/sinonjs/sinon)
 
 `^ 9.0.1`
 
-[![@domenic🗺️**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)🗺️\*\*](https://github.com/domenic)[domenic / sinon-chai🗺️\*\*](https://github.com/domenic/sinon-chai)
+[![@domenic🗺️**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)🗺️](https://github.com/domenic)[domenic / sinon-chai🗺️](https://github.com/domenic/sinon-chai)
 
 `^ 3.3.0`
 
-[![@anodynos🗺️**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)🗺️\*\*](https://github.com/anodynos)[anodynos / upath🗺️\*\*](https://github.com/anodynos/upath)
+[![@anodynos🗺️**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)🗺️](https://github.com/anodynos)[anodynos / upath🗺️](https://github.com/anodynos/upath)
 
 `^ 1.2.0`
 
-[![@JedWatson🗺️**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)🗺️\*\*](https://github.com/JedWatson)[JedWatson / classnames🗺️\*\*](https://github.com/JedWatson/classnames)
+[![@JedWatson🗺️**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)🗺️](https://github.com/JedWatson)[JedWatson / classnames🗺️](https://github.com/JedWatson/classnames)
 
 `2.2.6`
 
-[![@bestiejs🗺️**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)🗺️\*\*](https://github.com/bestiejs)[bestiejs / benchmark.js 🗺️\*\*](https://github.com/bestiejs/benchmark.js)benchmark
+[![@bestiejs🗺️**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)🗺️](https://github.com/bestiejs)[bestiejs / benchmark.js 🗺️](https://github.com/bestiejs/benchmark.js)benchmark
 
 `^ 1.0.0`
 
-[![@browserify🗺️**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)🗺️\*\*](https://github.com/browserify)[browserify / browserify🗺️\*\*](https://github.com/browserify/browserify)
+[![@browserify🗺️**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)🗺️](https://github.com/browserify)[browserify / browserify🗺️](https://github.com/browserify/browserify)
 
 `^ 14.1.0`
 
-[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️\*\*](https://github.com/mochajs)[mochajs / mocha🗺️\*\*](https://github.com/mochajs/mocha)
+[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️](https://github.com/mochajs)[mochajs / mocha🗺️](https://github.com/mochajs/mocha)
 
 `^ 2.1.0`
 
-[![@jeromedecoster🗺️**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)🗺️\*\*](https://github.com/jeromedecoster)[jeromedecoster / opn-cli🗺️\*\*](https://github.com/jeromedecoster/opn-cli)
+[![@jeromedecoster🗺️**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)🗺️](https://github.com/jeromedecoster)[jeromedecoster / opn-cli🗺️](https://github.com/jeromedecoster/opn-cli)
 
 `^ 3.1.0`
 
-[![@documentationjs🗺️**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)🗺️\*\*](https://github.com/documentationjs)[documentationjs / documentation🗺️\*\*](https://github.com/documentationjs/documentation)
+[![@documentationjs🗺️**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)🗺️](https://github.com/documentationjs)[documentationjs / documentation🗺️](https://github.com/documentationjs/documentation)
 
 `^ 13.2.5`
 
-[![@babel🗺️**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)🗺️\*\*](https://github.com/babel)[babel / babel 🗺️\*\*](https://github.com/babel/babel)@babel/core
+[![@babel🗺️**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)🗺️](https://github.com/babel)[babel / babel 🗺️](https://github.com/babel/babel)@babel/core
 
 `7.12.3`
 
@@ -6549,23 +6632,23 @@ Prism.languages.markup.tag.addAttribute(
 
 ---
 
-# [WEBSITE🗺️\*\*](https://bgoonz-blog.netlify.app/)
+# [WEBSITE🗺️](https://bgoonz-blog.netlify.app/)
 
-## [Cloudfare-Backup🗺️\*\*](https://bgoonz-blog-2-0.pages.dev/)
+## [Cloudfare-Backup🗺️](https://bgoonz-blog-2-0.pages.dev/)
 
-# Search Website: [search🗺️\*\*](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
+# Search Website: [search🗺️](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
-## [Backup Repo Deploy🗺️\*\*](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
+## [Backup Repo Deploy🗺️](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
 
-## [Github pages🗺️\*\*](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+## [Github pages🗺️](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
-![Profile views🗺️**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter🗺️**](https://badges.gitter.im/bgoonz/community.svg)🗺️\*\*](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![Profile views🗺️**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter🗺️**](https://badges.gitter.im/bgoonz/community.svg)🗺️](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)🗺️\*\*](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
+[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)🗺️](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 
-[![CodeScene System Mastery🗺️**](https://codescene.io/projects/17026/status-badges/system-mastery)🗺️\*\*](https://codescene.io/projects/17026)
+[![CodeScene System Mastery🗺️**](https://codescene.io/projects/17026/status-badges/system-mastery)🗺️](https://codescene.io/projects/17026)
 
-## [Go To Site Wiki🗺️\*\*](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+## [Go To Site Wiki🗺️](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 # Homepage
 
@@ -6573,13 +6656,13 @@ Prism.languages.markup.tag.addAttribute(
 
 ---
 
--   [Privacy policy🗺️\*\*](https://codepen.io/bgoonz/pen/LYLJZrW)
+-   [Privacy policy🗺️](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 ---
 
 <span align="center">
 
-[![🗺️**](https://data.jsdelivr.com/v1/package/npm/lodash/badge)🗺️\*\*](https://www.jsdelivr.com/package/npm/lodash)
+[![🗺️**](https://data.jsdelivr.com/v1/package/npm/lodash/badge)🗺️](https://www.jsdelivr.com/package/npm/lodash)
 
 ![QRCODE](./static/images/blog-qr.png)
 
@@ -6605,301 +6688,301 @@ Prism.languages.markup.tag.addAttribute(
 
 # Technologies used:
 
-## [Global Site Tag🗺️\*\*](https://trends.builtwith.com/analytics/Global-Site-Tag)
+## [Global Site Tag🗺️](https://trends.builtwith.com/analytics/Global-Site-Tag)
 
-[Global Site Tag Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag🗺️\*\*](https://trends.builtwith.com/websitelist/Global-Site-Tag)
+[Global Site Tag Usage Statistics🗺️](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag🗺️](https://trends.builtwith.com/websitelist/Global-Site-Tag)
 
 Google's primary tag for Google Measurement/Conversion Tracking, Adwords and DoubleClick.
 
-## [Google Analytics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics)
+## [Google Analytics🗺️](https://trends.builtwith.com/analytics/Google-Analytics)
 
-[Google Analytics Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Analytics)
+[Google Analytics Usage Statistics🗺️](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics🗺️](https://trends.builtwith.com/websitelist/Google-Analytics)
 
 Google Analytics offers a host of compelling features and benefits for everyone from senior executives and advertising and marketing professionals to site owners and content developers.
 
-[Application Performance🗺️\*\*](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement🗺️\*\*](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking🗺️\*\*](https://trends.builtwith.com/analytics/visitor-count-tracking)
+[Application Performance🗺️](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement🗺️](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking🗺️](https://trends.builtwith.com/analytics/visitor-count-tracking)
 
-##### [Google Analytics 4🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics-4)
+##### [Google Analytics 4🗺️](https://trends.builtwith.com/analytics/Google-Analytics-4)
 
-[Google Analytics 4 Usage Statistics🗺️\*\*](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Analytics-4)
+[Google Analytics 4 Usage Statistics🗺️](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4🗺️](https://trends.builtwith.com/websitelist/Google-Analytics-4)
 
 Google Analytics 4 formerly known as App + Web is a new version of Google Analytics that was released in October 2020.
 
 ###### Widgets
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/widgets)
+[View Global Trends🗺️](https://trends.builtwith.com/widgets)
 
-## [Imgur🗺️\*\*](https://trends.builtwith.com/widgets/Imgur)
+## [Imgur🗺️](https://trends.builtwith.com/widgets/Imgur)
 
-[Imgur Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur🗺️\*\*](https://trends.builtwith.com/websitelist/Imgur)
+[Imgur Usage Statistics🗺️](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur🗺️](https://trends.builtwith.com/websitelist/Imgur)
 
 The page contains content from image sharing website imgur.
 
-## [Google Font API🗺️\*\*](https://trends.builtwith.com/widgets/Google-Font-API)
+## [Google Font API🗺️](https://trends.builtwith.com/widgets/Google-Font-API)
 
-[Google Font API Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Font-API)
+[Google Font API Usage Statistics🗺️](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API🗺️](https://trends.builtwith.com/websitelist/Google-Font-API)
 
 The Google Font API helps you add web fonts to any web page.
 
-[Fonts🗺️\*\*](https://trends.builtwith.com/widgets/fonts)
+[Fonts🗺️](https://trends.builtwith.com/widgets/fonts)
 
-## [Google Tag Manager🗺️\*\*](https://trends.builtwith.com/widgets/Google-Tag-Manager)
+## [Google Tag Manager🗺️](https://trends.builtwith.com/widgets/Google-Tag-Manager)
 
-[Google Tag Manager Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
+[Google Tag Manager Usage Statistics🗺️](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager🗺️](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
 
 Tag management that lets you add and update website tags without changes to underlying website code.
 
-[Tag Management🗺️\*\*](https://trends.builtwith.com/widgets/tag-management)
+[Tag Management🗺️](https://trends.builtwith.com/widgets/tag-management)
 
-## [Icons8🗺️\*\*](https://trends.builtwith.com/widgets/Icons8)
+## [Icons8🗺️](https://trends.builtwith.com/widgets/Icons8)
 
-[Icons8 Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8🗺️\*\*](https://trends.builtwith.com/websitelist/Icons8)
+[Icons8 Usage Statistics🗺️](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8🗺️](https://trends.builtwith.com/websitelist/Icons8)
 
 Icons, photos and illustrations.
 
-[Image Provider🗺️\*\*](https://trends.builtwith.com/widgets/image-provider)
+[Image Provider🗺️](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum🗺️\*\*](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+## [Lorem Ipsum🗺️](https://trends.builtwith.com/widgets/Lorem-Ipsum)
 
-[Lorem Ipsum Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum🗺️\*\*](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics🗺️](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum🗺️](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
-## [AddThis🗺️\*\*](https://trends.builtwith.com/widgets/AddThis)
+## [AddThis🗺️](https://trends.builtwith.com/widgets/AddThis)
 
-[AddThis Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis🗺️\*\*](https://trends.builtwith.com/websitelist/AddThis)
+[AddThis Usage Statistics🗺️](https://trends.builtwith.com/widgets/AddThis) - [Download List of All Websites using AddThis🗺️](https://trends.builtwith.com/websitelist/AddThis)
 
 Widgets that allow visitors to save and promote the site.
 
-[Social Sharing🗺️\*\*](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking🗺️\*\*](https://trends.builtwith.com/widgets/bookmarking)
+[Social Sharing🗺️](https://trends.builtwith.com/widgets/social-sharing) - [Bookmarking🗺️](https://trends.builtwith.com/widgets/bookmarking)
 
-## [tawk.to🗺️\*\*](https://trends.builtwith.com/widgets/tawk.to)
+## [tawk.to🗺️](https://trends.builtwith.com/widgets/tawk.to)
 
-[tawk.to Usage Statistics🗺️\*\*](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to🗺️\*\*](https://trends.builtwith.com/websitelist/tawk.to)
+[tawk.to Usage Statistics🗺️](https://trends.builtwith.com/widgets/tawk.to) - [Download List of All Websites using tawk.to🗺️](https://trends.builtwith.com/websitelist/tawk.to)
 
 tawk.to is a free live chat app that lets you monitor and chat with visitors.
 
-[Live Chat🗺️\*\*](https://trends.builtwith.com/widgets/live-chat)
+[Live Chat🗺️](https://trends.builtwith.com/widgets/live-chat)
 
 ###### Frameworks
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/framework)
+[View Global Trends🗺️](https://trends.builtwith.com/framework)
 
-## [Gatsby JS🗺️\*\*](https://trends.builtwith.com/framework/Gatsby-JS)
+## [Gatsby JS🗺️](https://trends.builtwith.com/framework/Gatsby-JS)
 
-[Gatsby JS Usage Statistics🗺️\*\*](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS🗺️\*\*](https://trends.builtwith.com/websitelist/Gatsby-JS)
+[Gatsby JS Usage Statistics🗺️](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS🗺️](https://trends.builtwith.com/websitelist/Gatsby-JS)
 
 Modern website and web apps generator for React.
 
 ###### Mobile
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/mobile)
+[View Global Trends🗺️](https://trends.builtwith.com/mobile)
 
-## [Viewport Meta🗺️\*\*](https://trends.builtwith.com/mobile/Viewport-Meta)
+## [Viewport Meta🗺️](https://trends.builtwith.com/mobile/Viewport-Meta)
 
-[Viewport Meta Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta🗺️\*\*](https://trends.builtwith.com/websitelist/Viewport-Meta)
+[Viewport Meta Usage Statistics🗺️](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta🗺️](https://trends.builtwith.com/websitelist/Viewport-Meta)
 
 This page uses the viewport meta tag which means the content may be optimized for mobile content.
 
-## [IPhone / Mobile Compatible🗺️\*\*](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
+## [IPhone / Mobile Compatible🗺️](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
 
-[IPhone / Mobile Compatible Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible🗺️\*\*](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
+[IPhone / Mobile Compatible Usage Statistics🗺️](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible🗺️](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
 
 The website contains code that allows the page to support IPhone / Mobile Content.
 
-## [Apple Mobile Web Clips Icon🗺️\*\*](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
+## [Apple Mobile Web Clips Icon🗺️](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
 
-[Apple Mobile Web Clips Icon Usage Statistics🗺️\*\*](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon🗺️\*\*](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
+[Apple Mobile Web Clips Icon Usage Statistics🗺️](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon🗺️](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
 
 This page contains an icon for iPhone, iPad and iTouch devices.
 
 ###### Content Delivery Network
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cdn)
+[View Global Trends🗺️](https://trends.builtwith.com/cdn)
 
-## [AJAX Libraries API🗺️\*\*](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
+## [AJAX Libraries API🗺️](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
 
-[AJAX Libraries API Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API🗺️\*\*](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
+[AJAX Libraries API Usage Statistics🗺️](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API🗺️](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
 
 The AJAX Libraries API is a content distribution network and loading architecture for the most popular, open source JavaScript libraries.
 
-## [jsDelivr🗺️\*\*](https://trends.builtwith.com/cdn/jsDelivr)
+## [jsDelivr🗺️](https://trends.builtwith.com/cdn/jsDelivr)
 
-[jsDelivr Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr🗺️\*\*](https://trends.builtwith.com/websitelist/jsDelivr)
+[jsDelivr Usage Statistics🗺️](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr🗺️](https://trends.builtwith.com/websitelist/jsDelivr)
 
 A free CDN where Javascript developers can host their files. Encompasses MaxCDN, and BootstrapCDN.
 
-## [CloudFront🗺️\*\*](https://trends.builtwith.com/cdn/CloudFront)
+## [CloudFront🗺️](https://trends.builtwith.com/cdn/CloudFront)
 
-[CloudFront Usage Statistics🗺️\*\*](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront🗺️\*\*](https://trends.builtwith.com/websitelist/CloudFront)
+[CloudFront Usage Statistics🗺️](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront🗺️](https://trends.builtwith.com/websitelist/CloudFront)
 
 Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments.
 
 ###### Content Management System
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cms)
+[View Global Trends🗺️](https://trends.builtwith.com/cms)
 
-## [Netlify🗺️\*\*](https://trends.builtwith.com/cms/Netlify)
+## [Netlify🗺️](https://trends.builtwith.com/cms/Netlify)
 
-[Netlify Usage Statistics🗺️\*\*](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify🗺️\*\*](https://trends.builtwith.com/websitelist/Netlify)
+[Netlify Usage Statistics🗺️](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify🗺️](https://trends.builtwith.com/websitelist/Netlify)
 
 Netlify is a platform that automates your code to create web sites.
 
 ###### JavaScript Libraries and Functions
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/javascript)
+[View Global Trends🗺️](https://trends.builtwith.com/javascript)
 
-## [Google Hosted Libraries🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
+## [Google Hosted Libraries🗺️](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
 
-[Google Hosted Libraries Usage Statistics🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
+[Google Hosted Libraries Usage Statistics🗺️](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries🗺️](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
 
 Google Hosted Libraries is a globally available content distribution network for the most popular, open-source JavaScript libraries.
 
-##### [Google Hosted jQuery🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
+##### [Google Hosted jQuery🗺️](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
 
-[Google Hosted jQuery Usage Statistics🗺️\*\*](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
+[Google Hosted jQuery Usage Statistics🗺️](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery🗺️](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
 
 jQuery hoted at Google.
 
 ###### Advertising
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/ads)
+[View Global Trends🗺️](https://trends.builtwith.com/ads)
 
-## [Google Adsense🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense)
+## [Google Adsense🗺️](https://trends.builtwith.com/ads/Google-Adsense)
 
-[Google Adsense Usage Statistics🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Adsense)
+[Google Adsense Usage Statistics🗺️](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense🗺️](https://trends.builtwith.com/websitelist/Google-Adsense)
 
 A contextual advertising solution for delivering Google AdWords ads that are relevant to site content pages.
 
-[Contextual Advertising🗺️\*\*](https://trends.builtwith.com/ads/contextual-advertising)
+[Contextual Advertising🗺️](https://trends.builtwith.com/ads/contextual-advertising)
 
-##### [Google Adsense Asynchronous🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
+##### [Google Adsense Asynchronous🗺️](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
 
-[Google Adsense Asynchronous Usage Statistics🗺️\*\*](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
+[Google Adsense Asynchronous Usage Statistics🗺️](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous🗺️](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
 
 Fully asynchronous version of the AdSense ad code.
 
 ###### Document Encoding
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/encoding)
+[View Global Trends🗺️](https://trends.builtwith.com/encoding)
 
-## [UTF-8🗺️\*\*](https://trends.builtwith.com/encoding/UTF-8)
+## [UTF-8🗺️](https://trends.builtwith.com/encoding/UTF-8)
 
-[UTF-8 Usage Statistics🗺️\*\*](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8🗺️\*\*](https://trends.builtwith.com/websitelist/UTF-8)
+[UTF-8 Usage Statistics🗺️](https://trends.builtwith.com/encoding/UTF-8) - [Download List of All Websites using UTF-8🗺️](https://trends.builtwith.com/websitelist/UTF-8)
 
 UTF-8 (8-bit UCS/Unicode Transformation Format) is a variable-length character encoding for Unicode. It is the preferred encoding for web pages.
 
 ###### Document Standards
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/docinfo)
+[View Global Trends🗺️](https://trends.builtwith.com/docinfo)
 
-## [HTML5 DocType🗺️\*\*](https://trends.builtwith.com/docinfo/HTML5-DocType)
+## [HTML5 DocType🗺️](https://trends.builtwith.com/docinfo/HTML5-DocType)
 
-[HTML5 DocType Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType🗺️\*\*](https://trends.builtwith.com/websitelist/HTML5-DocType)
+[HTML5 DocType Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HTML5-DocType) - [Download List of All Websites using HTML5 DocType🗺️](https://trends.builtwith.com/websitelist/HTML5-DocType)
 
 The DOCTYPE is a required preamble for HTML5 websites.
 
-## [Cascading Style Sheets🗺️\*\*](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
+## [Cascading Style Sheets🗺️](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
 
-[Cascading Style Sheets Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets🗺️\*\*](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
+[Cascading Style Sheets Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets) - [Download List of All Websites using Cascading Style Sheets🗺️](https://trends.builtwith.com/websitelist/Cascading-Style-Sheets)
 
 Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in a markup language. Its most common application is to style web pages written in HTML
 
-## [Open Graph Protocol🗺️\*\*](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
+## [Open Graph Protocol🗺️](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
 
-[Open Graph Protocol Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol🗺️\*\*](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
+[Open Graph Protocol Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Open-Graph-Protocol) - [Download List of All Websites using Open Graph Protocol🗺️](https://trends.builtwith.com/websitelist/Open-Graph-Protocol)
 
 The Open Graph protocol enables any web page to become a rich object in a social graph, a open protocol supported by Facebook
 
-## [Twitter Cards🗺️\*\*](https://trends.builtwith.com/docinfo/Twitter-Cards)
+## [Twitter Cards🗺️](https://trends.builtwith.com/docinfo/Twitter-Cards)
 
-[Twitter Cards Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards🗺️\*\*](https://trends.builtwith.com/websitelist/Twitter-Cards)
+[Twitter Cards Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Twitter-Cards) - [Download List of All Websites using Twitter Cards🗺️](https://trends.builtwith.com/websitelist/Twitter-Cards)
 
 Twitter cards make it possible for you to attach media experiences to Tweets that link to your content.
 
-## [Javascript🗺️\*\*](https://trends.builtwith.com/docinfo/Javascript)
+## [Javascript🗺️](https://trends.builtwith.com/docinfo/Javascript)
 
-[Javascript Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript🗺️\*\*](https://trends.builtwith.com/websitelist/Javascript)
+[Javascript Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Javascript) - [Download List of All Websites using Javascript🗺️](https://trends.builtwith.com/websitelist/Javascript)
 
 JavaScript is a scripting language most often used for client-side web development.
 
-## [IFrame🗺️\*\*](https://trends.builtwith.com/docinfo/IFrame)
+## [IFrame🗺️](https://trends.builtwith.com/docinfo/IFrame)
 
-[IFrame Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame🗺️\*\*](https://trends.builtwith.com/websitelist/IFrame)
+[IFrame Usage Statistics🗺️](https://trends.builtwith.com/docinfo/IFrame) - [Download List of All Websites using IFrame🗺️](https://trends.builtwith.com/websitelist/IFrame)
 
 The page shows content with an iframe; an embedded frame that loads another webpage.
 
-## [Font Face Rule🗺️\*\*](https://trends.builtwith.com/docinfo/Font-Face-Rule)
+## [Font Face Rule🗺️](https://trends.builtwith.com/docinfo/Font-Face-Rule)
 
-[Font Face Rule Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule🗺️\*\*](https://trends.builtwith.com/websitelist/Font-Face-Rule)
+[Font Face Rule Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Font-Face-Rule) - [Download List of All Websites using Font Face Rule🗺️](https://trends.builtwith.com/websitelist/Font-Face-Rule)
 
 The @font-face rule allows for linking to fonts that are automatically activated when needed.
 
-## [X-UA-Compatible🗺️\*\*](https://trends.builtwith.com/docinfo/X-UA-Compatible)
+## [X-UA-Compatible🗺️](https://trends.builtwith.com/docinfo/X-UA-Compatible)
 
-[X-UA-Compatible Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible🗺️\*\*](https://trends.builtwith.com/websitelist/X-UA-Compatible)
+[X-UA-Compatible Usage Statistics🗺️](https://trends.builtwith.com/docinfo/X-UA-Compatible) - [Download List of All Websites using X-UA-Compatible🗺️](https://trends.builtwith.com/websitelist/X-UA-Compatible)
 
 Allows a website to define how a page is rendered in Internet Explorer 8, allowing a website to decide to use IE7 style rendering over IE8 rendering.
 
-## [Meta Keywords🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Keywords)
+## [Meta Keywords🗺️](https://trends.builtwith.com/docinfo/Meta-Keywords)
 
-[Meta Keywords Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords🗺️\*\*](https://trends.builtwith.com/websitelist/Meta-Keywords)
+[Meta Keywords Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Meta-Keywords) - [Download List of All Websites using Meta Keywords🗺️](https://trends.builtwith.com/websitelist/Meta-Keywords)
 
 Meta tag containing keywords related to the page.
 
-## [Meta Description🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Description)
+## [Meta Description🗺️](https://trends.builtwith.com/docinfo/Meta-Description)
 
-[Meta Description Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description🗺️\*\*](https://trends.builtwith.com/websitelist/Meta-Description)
+[Meta Description Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Meta-Description) - [Download List of All Websites using Meta Description🗺️](https://trends.builtwith.com/websitelist/Meta-Description)
 
 The description attribute provides a concise explanation of the page content.
 
-## [HTML 5 Specific Tags🗺️\*\*](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
+## [HTML 5 Specific Tags🗺️](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
 
-[HTML 5 Specific Tags Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags🗺️\*\*](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
+[HTML 5 Specific Tags Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags) - [Download List of All Websites using HTML 5 Specific Tags🗺️](https://trends.builtwith.com/websitelist/HTML-5-Specific-Tags)
 
 This page contains tags that are specific to an HTML 5 implementation.
 
-## [WAI-ARIA🗺️\*\*](https://trends.builtwith.com/docinfo/WAI-ARIA)
+## [WAI-ARIA🗺️](https://trends.builtwith.com/docinfo/WAI-ARIA)
 
-[WAI-ARIA Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA🗺️\*\*](https://trends.builtwith.com/websitelist/WAI-ARIA)
+[WAI-ARIA Usage Statistics🗺️](https://trends.builtwith.com/docinfo/WAI-ARIA) - [Download List of All Websites using WAI-ARIA🗺️](https://trends.builtwith.com/websitelist/WAI-ARIA)
 
 A way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-## [Strict Transport Security🗺️\*\*](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
+## [Strict Transport Security🗺️](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
 
-[Strict Transport Security Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security🗺️\*\*](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
+[Strict Transport Security Usage Statistics🗺️](https://trends.builtwith.com/docinfo/Strict-Transport-Security) - [Download List of All Websites using Strict Transport Security🗺️](https://trends.builtwith.com/websitelist/Strict-Transport-Security)
 
 The HTTP Strict-Transport-Security (HSTS) header instructs the browser to only use https.
 
-## [HSTS🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS)
+## [HSTS🗺️](https://trends.builtwith.com/docinfo/HSTS)
 
-[HSTS Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS🗺️\*\*](https://trends.builtwith.com/websitelist/HSTS)
+[HSTS Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HSTS) - [Download List of All Websites using HSTS🗺️](https://trends.builtwith.com/websitelist/HSTS)
 
 Forces browsers to only communicate with the site using HTTPS.
 
-## [HSTS IncludeSubdomains PreLoad🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad)
+## [HSTS IncludeSubdomains PreLoad🗺️](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad)
 
-[HSTS IncludeSubdomains PreLoad Usage Statistics🗺️\*\*](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad🗺️\*\*](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
+[HSTS IncludeSubdomains PreLoad Usage Statistics🗺️](https://trends.builtwith.com/docinfo/HSTS-IncludeSubdomains-PreLoad) - [Download List of All Websites using HSTS IncludeSubdomains PreLoad🗺️](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
 
 This website includes instructions for HSTS loading that would allow it to be submitted to the HSTS preload list.
 
 ###### Web Master Registration
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/web-master)
+[View Global Trends🗺️](https://trends.builtwith.com/web-master)
 
-## [Google Webmaster🗺️\*\*](https://trends.builtwith.com/Web-Master/Google-Webmaster)
+## [Google Webmaster🗺️](https://trends.builtwith.com/Web-Master/Google-Webmaster)
 
-[Google Webmaster Usage Statistics🗺️\*\*](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster🗺️\*\*](https://trends.builtwith.com/websitelist/Google-Webmaster)
+[Google Webmaster Usage Statistics🗺️](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster🗺️](https://trends.builtwith.com/websitelist/Google-Webmaster)
 
 Webmaster tools provide you with a free and easy way to make your site more Google-friendly.
 
 ###### Content Delivery Network
 
-[View Global Trends🗺️\*\*](https://trends.builtwith.com/cdn)
+[View Global Trends🗺️](https://trends.builtwith.com/cdn)
 
-## [Content Delivery Network🗺️\*\*](https://trends.builtwith.com/CDN/Content-Delivery-Network)
+## [Content Delivery Network🗺️](https://trends.builtwith.com/CDN/Content-Delivery-Network)
 
-[Content Delivery Network Usage Statistics🗺️\*\*](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network🗺️\*\*](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
+[Content Delivery Network Usage Statistics🗺️](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network🗺️](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
 
 This page contains links that give the impression that some of the site contents are stored on a content delivery network.
 
@@ -6953,76 +7036,76 @@ This page contains links that give the impression that some of the site contents
 
 # Sitemap:
 
--   [/job-hunt/🗺️\*\*](https://bgoonz-blog.netlify.app/job-hunt/)
--   [/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/notes-template/)
--   [/🗺️\*\*](https://bgoonz-blog.netlify.app/)
--   [/showcase/🗺️\*\*](https://bgoonz-blog.netlify.app/showcase/)
--   [/blog/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/)
--   [/review/🗺️\*\*](https://bgoonz-blog.netlify.app/review/)
--   [/blog/blog-archive/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/blog-archive/)
--   [/blog/my-medium/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/my-medium/)
--   [/blog/blogwcomments/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
--   [/blog/data-structures/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/data-structures/)
--   [/docs/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/gallery/)
--   [/blog/python-for-js-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
--   [/blog/platform-docs/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/platform-docs/)
--   [/docs/sitemap/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/sitemap/)
--   [/docs/about/me/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/me/)
--   [/blog/python-resources/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python-resources/)
--   [/docs/about/resume/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/resume/)
--   [/docs/🗺️\*\*](https://preview--bgoonz-b2d7c.stackbit.https://bgoonz-blog.netlify.app/log/web-scraping/)
--   [/docs/about/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/)
--   [/docs/articles/algo/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/algo/)
--   [/docs/articles/install/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/install/)
--   [/docs/articles/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/)
--   [/docs/articles/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
--   [/docs/articles/intro/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/intro/)
--   [/docs/articles/basic-web-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
--   [/docs/articles/reading-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
--   [/docs/articles/writing-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
--   [/docs/audio/audio/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/audio/audio/)
--   [/docs/content/projects/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/projects/)
--   [/docs/audio/terms/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/audio/terms/)
--   [/docs/faq/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/)
--   [/docs/community/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/community/)
--   [/docs/articles/resources/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/resources/)
--   [/docs/content/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/)
--   [/docs/docs/git-repos/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
--   [/docs/content/trouble-shooting/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
--   [/docs/articles/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/python/)
--   [/docs/interact/clock/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/clock/)
--   [/docs/docs/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/docs/python/)
--   [/docs/interact/jupyter-notebooks/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
--   [/docs/interact/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/)
--   [/docs/faq/contact/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/contact/)
--   [/docs/quick-reference/docs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
--   [/docs/interact/other-sites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
--   [/docs/quick-reference/new-repo-instructions/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
--   [/docs/quick-reference/Emmet/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
--   [/docs/quick-reference/installation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
--   [/docs/quick-reference/vscode-themes/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/)
--   [/docs/react/createReactApp/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
--   [/docs/react/react2/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/react2/)
--   [/docs/quick-reference/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/)
--   [/docs/react/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/)
--   [/docs/tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/)
--   [/docs/tools/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
--   [/docs/tools/more-tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/more-tools/)
--   [/docs/tools/plug-ins/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
--   [/docs/articles/node/install/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/install/)
--   [/docs/tools/vscode/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
--   [/docs/articles/node/intro/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/intro/)
--   [/docs/articles/node/nodejs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/nodejs/)
--   [/docs/articles/node/nodevsbrowser/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser/)
--   [/docs/articles/node/npm/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/npm/)
--   [/docs/articles/node/reading-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/reading-files/)
--   [/docs/articles/node/writing-files/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/node/writing-files/)
--   [/docs/react-in-depth/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react-in-depth/)
--   [/docs/articles/article-compilation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
--   [/docs/medium/my-websites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
--   [/docs/medium/social/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/social/)
--   [/docs/medium/medium-links/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
--   [/docs/medium/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/medium/)
+-   [/job-hunt/🗺️](https://bgoonz-blog.netlify.app/job-hunt/)
+-   [/notes-template/🗺️](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/🗺️](https://bgoonz-blog.netlify.app/)
+-   [/showcase/🗺️](https://bgoonz-blog.netlify.app/showcase/)
+-   [/blog/🗺️](https://bgoonz-blog.netlify.app/blog/)
+-   [/review/🗺️](https://bgoonz-blog.netlify.app/review/)
+-   [/blog/blog-archive/🗺️](https://bgoonz-blog.netlify.app/blog/blog-archive/)
+-   [/blog/my-medium/🗺️](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/blog/blogwcomments/🗺️](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
+-   [/blog/data-structures/🗺️](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/gallery/🗺️](https://bgoonz-blog.netlify.app/docs/gallery/)
+-   [/blog/python-for-js-dev/🗺️](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+-   [/blog/platform-docs/🗺️](https://bgoonz-blog.netlify.app/blog/platform-docs/)
+-   [/docs/sitemap/🗺️](https://bgoonz-blog.netlify.app/docs/sitemap/)
+-   [/docs/about/me/🗺️](https://bgoonz-blog.netlify.app/docs/about/me/)
+-   [/blog/python-resources/🗺️](https://bgoonz-blog.netlify.app/blog/python-resources/)
+-   [/docs/about/resume/🗺️](https://bgoonz-blog.netlify.app/docs/about/resume/)
+-   [/docs/🗺️](https://preview--bgoonz-b2d7c.stackbit.https://bgoonz-blog.netlify.app/log/web-scraping/)
+-   [/docs/about/🗺️](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/articles/algo/🗺️](https://bgoonz-blog.netlify.app/docs/articles/algo/)
+-   [/docs/articles/install/🗺️](https://bgoonz-blog.netlify.app/docs/articles/install/)
+-   [/docs/articles/🗺️](https://bgoonz-blog.netlify.app/docs/articles/)
+-   [/docs/articles/gallery/🗺️](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
+-   [/docs/articles/intro/🗺️](https://bgoonz-blog.netlify.app/docs/articles/intro/)
+-   [/docs/articles/basic-web-dev/🗺️](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/docs/articles/reading-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
+-   [/docs/articles/writing-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
+-   [/docs/audio/audio/🗺️](https://bgoonz-blog.netlify.app/docs/audio/audio/)
+-   [/docs/content/projects/🗺️](https://bgoonz-blog.netlify.app/docs/content/projects/)
+-   [/docs/audio/terms/🗺️](https://bgoonz-blog.netlify.app/docs/audio/terms/)
+-   [/docs/faq/🗺️](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/community/🗺️](https://bgoonz-blog.netlify.app/docs/community/)
+-   [/docs/articles/resources/🗺️](https://bgoonz-blog.netlify.app/docs/articles/resources/)
+-   [/docs/content/🗺️](https://bgoonz-blog.netlify.app/docs/content/)
+-   [/docs/docs/git-repos/🗺️](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
+-   [/docs/content/trouble-shooting/🗺️](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
+-   [/docs/articles/python/🗺️](https://bgoonz-blog.netlify.app/docs/articles/python/)
+-   [/docs/interact/clock/🗺️](https://bgoonz-blog.netlify.app/docs/interact/clock/)
+-   [/docs/docs/python/🗺️](https://bgoonz-blog.netlify.app/docs/docs/python/)
+-   [/docs/interact/jupyter-notebooks/🗺️](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
+-   [/docs/interact/🗺️](https://bgoonz-blog.netlify.app/docs/interact/)
+-   [/docs/faq/contact/🗺️](https://bgoonz-blog.netlify.app/docs/faq/contact/)
+-   [/docs/quick-reference/docs/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
+-   [/docs/interact/other-sites/🗺️](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
+-   [/docs/quick-reference/new-repo-instructions/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/quick-reference/Emmet/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/installation/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/quick-reference/vscode-themes/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/)
+-   [/docs/react/createReactApp/🗺️](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/react/react2/🗺️](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/quick-reference/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/react/🗺️](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/docs/tools/notes-template/🗺️](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/docs/tools/more-tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/more-tools/)
+-   [/docs/tools/plug-ins/🗺️](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/articles/node/install/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/install/)
+-   [/docs/tools/vscode/🗺️](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
+-   [/docs/articles/node/intro/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/intro/)
+-   [/docs/articles/node/nodejs/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/nodejs/)
+-   [/docs/articles/node/nodevsbrowser/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser/)
+-   [/docs/articles/node/npm/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/npm/)
+-   [/docs/articles/node/reading-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/reading-files/)
+-   [/docs/articles/node/writing-files/🗺️](https://bgoonz-blog.netlify.app/docs/articles/node/writing-files/)
+-   [/docs/react-in-depth/🗺️](https://bgoonz-blog.netlify.app/docs/react-in-depth/)
+-   [/docs/articles/article-compilation/🗺️](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
+-   [/docs/medium/my-websites/🗺️](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
+-   [/docs/medium/social/🗺️](https://bgoonz-blog.netlify.app/docs/medium/social/)
+-   [/docs/medium/medium-links/🗺️](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
+-   [/docs/medium/🗺️](https://bgoonz-blog.netlify.app/docs/medium/)
 
 ---
 
@@ -7030,107 +7113,107 @@ This page contains links that give the impression that some of the site contents
 
 ##### Try it out without cloning the entire repo:
 
-##### [stackblitz demo hosted on firebase🗺️\*\*](https://exploring-firebase-4c023.firebaseapp.com/)
+##### [stackblitz demo hosted on firebase🗺️](https://exploring-firebase-4c023.firebaseapp.com/)
 
--   [/showcase/🗺️\*\*](https://bgoonz-blog.netlify.app/showcase/)
--   [/repos/🗺️\*\*](https://bgoonz-blog.netlify.app/repos/)
--   [/blog/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/)
--   [/docs/jupyter-notebooks/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
--   [/docs/portfolio-web/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
--   [/docs/python/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/python/)
--   [/docs/About/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/)
--   [/docs/About/resume/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/resume/)
--   [/docs/about/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/about/)
--   [/docs/faq/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/faq/)
--   [/docs/quick-reference/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/)
--   [/docs/quick-reference/Emmet/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
--   [/docs/quick-reference/new-repo-instructions/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
--   [/docs/links/Social/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/Social/)
--   [/docs/links/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/)
--   [/docs/quick-reference/installation/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
--   [/docs/links/my-websites/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
--   [/docs/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/)
--   [/blog/community/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/community/)
--   [/blog/python/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/python/)
--   [/docs/resources/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/resources/)
--   [/docs/react/createReactApp/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
--   [/docs/tools/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/)
--   [/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/notes-template/)
--   [/blog/my-medium/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/my-medium/)
--   [/docs/tools/default-readme/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
--   [/docs/tools/plug-ins/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
--   [/docs/react/react2/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/react2/)
--   [/docs/tools/notes-template/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
--   [/review/🗺️\*\*](https://bgoonz-blog.netlify.app/review/)
--   [/docs/articles/basic-web-dev/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
--   [/blog/data-structures/🗺️\*\*](https://bgoonz-blog.netlify.app/blog/data-structures/)
--   [/docs/About/me/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/me/)
--   [/docs/About/introduction2bg/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
--   [/docs/react/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/react/)
--   [/docs/tools/Git-Html-Preview/🗺️\*\*](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
--   [/gallery/🗺️\*\*](https://bgoonz-blog.netlify.app/gallery/)
+-   [/showcase/🗺️](https://bgoonz-blog.netlify.app/showcase/)
+-   [/repos/🗺️](https://bgoonz-blog.netlify.app/repos/)
+-   [/blog/🗺️](https://bgoonz-blog.netlify.app/blog/)
+-   [/docs/jupyter-notebooks/🗺️](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
+-   [/docs/portfolio-web/🗺️](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
+-   [/docs/python/🗺️](https://bgoonz-blog.netlify.app/docs/python/)
+-   [/docs/About/🗺️](https://bgoonz-blog.netlify.app/docs/About/)
+-   [/docs/About/resume/🗺️](https://bgoonz-blog.netlify.app/docs/About/resume/)
+-   [/docs/about/🗺️](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/faq/🗺️](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/quick-reference/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/quick-reference/Emmet/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/new-repo-instructions/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/links/Social/🗺️](https://bgoonz-blog.netlify.app/docs/links/Social/)
+-   [/docs/links/🗺️](https://bgoonz-blog.netlify.app/docs/links/)
+-   [/docs/quick-reference/installation/🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/links/my-websites/🗺️](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+-   [/docs/🗺️](https://bgoonz-blog.netlify.app/docs/)
+-   [/blog/community/🗺️](https://bgoonz-blog.netlify.app/blog/community/)
+-   [/blog/python/🗺️](https://bgoonz-blog.netlify.app/blog/python/)
+-   [/docs/resources/🗺️](https://bgoonz-blog.netlify.app/docs/resources/)
+-   [/docs/react/createReactApp/🗺️](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/tools/🗺️](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/notes-template/🗺️](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/blog/my-medium/🗺️](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/docs/tools/default-readme/🗺️](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+-   [/docs/tools/plug-ins/🗺️](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/react/react2/🗺️](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/tools/notes-template/🗺️](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/review/🗺️](https://bgoonz-blog.netlify.app/review/)
+-   [/docs/articles/basic-web-dev/🗺️](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/blog/data-structures/🗺️](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/About/me/🗺️](https://bgoonz-blog.netlify.app/docs/About/me/)
+-   [/docs/About/introduction2bg/🗺️](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
+-   [/docs/react/🗺️](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/Git-Html-Preview/🗺️](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
+-   [/gallery/🗺️](https://bgoonz-blog.netlify.app/gallery/)
 
 ## Blog
 
--   [introductory-react-part-2🗺️\*\*](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
+-   [introductory-react-part-2🗺️](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 
--   [a-very-quick-guide-to-calculating-big-o-computational-complexity🗺️\*\*](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
+-   [a-very-quick-guide-to-calculating-big-o-computational-complexity🗺️](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 
--   [introduction-to-react-for-complete-beginners🗺️\*\*](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
+-   [introduction-to-react-for-complete-beginners🗺️](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
 
--   [scheduling-settimeout-and-setinterval🗺️\*\*](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
+-   [scheduling-settimeout-and-setinterval🗺️](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
 
--   [css-animations🗺️\*\*](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
+-   [css-animations🗺️](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
 
--   [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity🗺️\*\*](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
+-   [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity🗺️](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
 
--   [how-to-implement-native-es6-data-structures-using-arrays-objects🗺️\*\*](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
+-   [how-to-implement-native-es6-data-structures-using-arrays-objects🗺️](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
 
--   [objects-in-javascript🗺️\*\*](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
+-   [objects-in-javascript🗺️](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
--   [absolute-beginners-guide-to-javascript-part1🗺️\*\*](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
+-   [absolute-beginners-guide-to-javascript-part1🗺️](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
 
--   [web-developer-resource-list-part-4🗺️\*\*](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
+-   [web-developer-resource-list-part-4🗺️](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
 
--   [vscode-extensions-specifically-for-javascript-development🗺️\*\*](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
+-   [vscode-extensions-specifically-for-javascript-development🗺️](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
--   [a-list-of-all-of-my-articles-to-link-to-future-posts🗺️\*\*](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
+-   [a-list-of-all-of-my-articles-to-link-to-future-posts🗺️](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
 
--   [lists-stacks-and-queues-in-javascript🗺️\*\*](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
+-   [lists-stacks-and-queues-in-javascript🗺️](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
 
--   [web-development-resources-part-3🗺️\*\*](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
+-   [web-development-resources-part-3🗺️](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
 
--   [web-development-interview-part-3🗺️\*\*](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
+-   [web-development-interview-part-3🗺️](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
 
--   [running-list-of-interesting-articles-tools🗺️\*\*](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
+-   [running-list-of-interesting-articles-tools🗺️](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
 
--   [the-best-cloud-based-code-playgrounds-of-2021-part-1🗺️\*\*](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
+-   [the-best-cloud-based-code-playgrounds-of-2021-part-1🗺️](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
 
--   [front-end-interview-questions-part-2🗺️\*\*](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
+-   [front-end-interview-questions-part-2🗺️](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
--   [web-developer-resource-list-part-2🗺️\*\*](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
+-   [web-developer-resource-list-part-2🗺️](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
--   [http-basics🗺️\*\*](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
+-   [http-basics🗺️](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
 
--   [javascript-frameworks-libraries🗺️\*\*](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
+-   [javascript-frameworks-libraries🗺️](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
 
--   [my-take-on-awesome-javascript🗺️\*\*](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
+-   [my-take-on-awesome-javascript🗺️](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
 
--   [get-started-with-vscode-extensions🗺️\*\*](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
+-   [get-started-with-vscode-extensions🗺️](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
 
--   [my-favorite-vscode-themes🗺️\*\*](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
+-   [my-favorite-vscode-themes🗺️](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
 
--   [object-oriented-programming-in-javascript🗺️\*\*](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
+-   [object-oriented-programming-in-javascript🗺️](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
 
--   [javascript-rotate-array-problemwalkthrough🗺️\*\*](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
+-   [javascript-rotate-array-problemwalkthrough🗺️](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
 
--   [super-simple-intro-to-html-651d695f9bc🗺️\*\*](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
+-   [super-simple-intro-to-html-651d695f9bc🗺️](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
 
--   [everything-you-need-to-know-about-relational-databases-sql-postgresql🗺️\*\*](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
+-   [everything-you-need-to-know-about-relational-databases-sql-postgresql🗺️](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
 
--   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107🗺️\*\*](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
+-   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107🗺️](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
 
--   [complete-javascript-reference-guide-64306cd6b0db🗺️\*\*](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
+-   [complete-javascript-reference-guide-64306cd6b0db🗺️](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
 
 </div>
 
@@ -7162,7 +7245,7 @@ This page contains links that give the impression that some of the site contents
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial🗺️\*\*](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial🗺️](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
@@ -7190,15 +7273,15 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier🗺️\*\*](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`.prettierrc`**: This is a configuration file for [Prettier🗺️](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs🗺️\*\*](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs🗺️](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs🗺️\*\*](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs🗺️](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs🗺️\*\*](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs🗺️](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs🗺️\*\*](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs🗺️](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
@@ -7210,7 +7293,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website🗺️\*\*](https://www.gatsbyjs.com/). Here are some places to start:
+Looking for more guidance? Full documentation for Gatsby lives [on the website🗺️](https://www.gatsbyjs.com/). Here are some places to start:
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby🗺️**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 
@@ -7218,9 +7301,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website�
 
 ## 💫 Deploy
 
-[![Deploy to Netlify🗺️**](https://www.netlify.com/img/deploy/button.svg)🗺️\*\*](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy to Netlify🗺️**](https://www.netlify.com/img/deploy/button.svg)🗺️](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
 
-[![Deploy with Vercel🗺️**](https://vercel.com/button)🗺️\*\*](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy with Vercel🗺️**](https://vercel.com/button)🗺️](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -13290,11 +13373,11 @@ Prism.languages.markup.tag.addAttribute(
 
 <br>
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 
 `^ 4.10.3`
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
 
 `4.10.5`
 
@@ -13302,150 +13385,150 @@ Prism.languages.markup.tag.addAttribute(
 
 `4.10.5`
 
-[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️\*\*](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️\*\*](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
+[![@algolia🗺️**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)🗺️](https://github.com/algolia)[algolia / algoliasearch-client-javascript 🗺️](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
 
 `4.10.5`
 
-[![@stackbit🗺️**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)🗺️\*\*](https://github.com/stackbit)[stackbit / gatsby-plugin-menus 🗺️\*\*](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
+[![@stackbit🗺️**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)🗺️](https://github.com/stackbit)[stackbit / gatsby-plugin-menus 🗺️](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
 
 `0.0.4`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / jest 🗺️\*\*](https://github.com/facebook/jest)babel-jest
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / jest 🗺️](https://github.com/facebook/jest)babel-jest
 
 `^ 24.7.1`
 
-[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️\*\*](https://github.com/gatsbyjs)[gatsbyjs / gatsby 🗺️\*\*](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
+[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️](https://github.com/gatsbyjs)[gatsbyjs / gatsby 🗺️](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
 
 `^ 0.1.11`
 
-[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️\*\*](https://github.com/gatsbyjs)[gatsbyjs / gatsby🗺️\*\*](https://github.com/gatsbyjs/gatsby)
+[![@gatsbyjs🗺️**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)🗺️](https://github.com/gatsbyjs)[gatsbyjs / gatsby🗺️](https://github.com/gatsbyjs/gatsby)
 
 `^ 2.5.0`
 
-[![@keyz🗺️**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)🗺️\*\*](https://github.com/keyz)[keyz / identity-obj-proxy🗺️\*\*](https://github.com/keyz/identity-obj-proxy)
+[![@keyz🗺️**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)🗺️](https://github.com/keyz)[keyz / identity-obj-proxy🗺️](https://github.com/keyz/identity-obj-proxy)
 
 `^ 3.0.0`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / jest🗺️\*\*](https://github.com/facebook/jest)
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / jest🗺️](https://github.com/facebook/jest)
 
 `^ 24.7.1`
 
-[![@lodash🗺️**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)🗺️\*\*](https://github.com/lodash)[lodash / lodash🗺️\*\*](https://github.com/lodash/lodash)
+[![@lodash🗺️**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)🗺️](https://github.com/lodash)[lodash / lodash🗺️](https://github.com/lodash/lodash)
 
 `^ 4.17.11`
 
-[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️\*\*](https://github.com/facebook)[facebook / react 🗺️\*\*](https://github.com/facebook/react)react-test-renderer
+[![@facebook🗺️**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)🗺️](https://github.com/facebook)[facebook / react 🗺️](https://github.com/facebook/react)react-test-renderer
 
 `^ 16.8.6`
 
-[![@getkirby-v2🗺️**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)🗺️\*\*](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin 🗺️\*\*](https://github.com/getkirby-v2/algolia-plugin)algolia
+[![@getkirby-v2🗺️**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)🗺️](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin 🗺️](https://github.com/getkirby-v2/algolia-plugin)algolia
 
 `0.0.0`
 
-[![@ecomfe🗺️**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)🗺️\*\*](https://github.com/ecomfe)[ecomfe / babel-runtime🗺️\*\*](https://github.com/ecomfe/babel-runtime)
+[![@ecomfe🗺️**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)🗺️](https://github.com/ecomfe)[ecomfe / babel-runtime🗺️](https://github.com/ecomfe/babel-runtime)
 
 `6.26.0`
 
-[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️\*\*](https://github.com/paulmillr)[paulmillr / chokidar🗺️\*\*](https://github.com/paulmillr/chokidar)
+[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️](https://github.com/paulmillr)[paulmillr / chokidar🗺️](https://github.com/paulmillr/chokidar)
 
 `3.4.0`
 
-[![@DefinitelyTyped🗺️**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)🗺️\*\*](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped 🗺️\*\*](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
+[![@DefinitelyTyped🗺️**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)🗺️](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped 🗺️](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
 
 `^ 13`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / anymatch🗺️\*\*](https://github.com/micromatch/anymatch)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / anymatch🗺️](https://github.com/micromatch/anymatch)
 
 `~ 3.1.1`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / braces🗺️\*\*](https://github.com/micromatch/braces)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / braces🗺️](https://github.com/micromatch/braces)
 
 `~ 3.0.2`
 
-[![@chaijs🗺️**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)🗺️\*\*](https://github.com/chaijs)[chaijs / chai🗺️\*\*](https://github.com/chaijs/chai)
+[![@chaijs🗺️**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)🗺️](https://github.com/chaijs)[chaijs / chai🗺️](https://github.com/chaijs/chai)
 
 `^ 4.2`
 
-[![@microsoft🗺️**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)🗺️\*\*](https://github.com/microsoft)[microsoft / dtslint🗺️\*\*](https://github.com/microsoft/dtslint)
+[![@microsoft🗺️**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)🗺️](https://github.com/microsoft)[microsoft / dtslint🗺️](https://github.com/microsoft/dtslint)
 
 `^ 3.3.0`
 
-[![@eslint🗺️**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)🗺️\*\*](https://github.com/eslint)[eslint / eslint🗺️\*\*](https://github.com/eslint/eslint)
+[![@eslint🗺️**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)🗺️](https://github.com/eslint)[eslint / eslint🗺️](https://github.com/eslint/eslint)
 
 `^ 6.6.0`
 
-[![@fsevents🗺️**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)🗺️\*\*](https://github.com/fsevents)[fsevents / fsevents🗺️\*\*](https://github.com/fsevents/fsevents)
+[![@fsevents🗺️**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)🗺️](https://github.com/fsevents)[fsevents / fsevents🗺️](https://github.com/fsevents/fsevents)
 
 `~ 2.1.2`
 
-[![@gulpjs🗺️**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)🗺️\*\*](https://github.com/gulpjs)[gulpjs / glob-parent🗺️\*\*](https://github.com/gulpjs/glob-parent)
+[![@gulpjs🗺️**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)🗺️](https://github.com/gulpjs)[gulpjs / glob-parent🗺️](https://github.com/gulpjs/glob-parent)
 
 `~ 5.1.0`
 
-[![@sindresorhus🗺️**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)🗺️\*\*](https://github.com/sindresorhus)[sindresorhus / is-binary-path🗺️\*\*](https://github.com/sindresorhus/is-binary-path)
+[![@sindresorhus🗺️**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)🗺️](https://github.com/sindresorhus)[sindresorhus / is-binary-path🗺️](https://github.com/sindresorhus/is-binary-path)
 
 `~ 2.1.0`
 
-[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️\*\*](https://github.com/micromatch)[micromatch / is-glob🗺️\*\*](https://github.com/micromatch/is-glob)
+[![@micromatch🗺️**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)🗺️](https://github.com/micromatch)[micromatch / is-glob🗺️](https://github.com/micromatch/is-glob)
 
 `~ 4.0.1`
 
-[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️\*\*](https://github.com/mochajs)[mochajs / mocha🗺️\*\*](https://github.com/mochajs/mocha)
+[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️](https://github.com/mochajs)[mochajs / mocha🗺️](https://github.com/mochajs/mocha)
 
 `^ 7.0.0`
 
-[![@jonschlinkert🗺️**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)🗺️\*\*](https://github.com/jonschlinkert)[jonschlinkert / normalize-path🗺️\*\*](https://github.com/jonschlinkert/normalize-path)
+[![@jonschlinkert🗺️**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)🗺️](https://github.com/jonschlinkert)[jonschlinkert / normalize-path🗺️](https://github.com/jonschlinkert/normalize-path)
 
 `~ 3.0.0`
 
-[![@istanbuljs🗺️**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)🗺️\*\*](https://github.com/istanbuljs)[istanbuljs / nyc🗺️\*\*](https://github.com/istanbuljs/nyc)
+[![@istanbuljs🗺️**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)🗺️](https://github.com/istanbuljs)[istanbuljs / nyc🗺️](https://github.com/istanbuljs/nyc)
 
 `^ 15.0.0`
 
-[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️\*\*](https://github.com/paulmillr)[paulmillr / readdirp🗺️\*\*](https://github.com/paulmillr/readdirp)
+[![@paulmillr🗺️**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)🗺️](https://github.com/paulmillr)[paulmillr / readdirp🗺️](https://github.com/paulmillr/readdirp)
 
 `~ 3.4.0`
 
-[![@isaacs🗺️**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)🗺️\*\*](https://github.com/isaacs)[isaacs / rimraf🗺️\*\*](https://github.com/isaacs/rimraf)
+[![@isaacs🗺️**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)🗺️](https://github.com/isaacs)[isaacs / rimraf🗺️](https://github.com/isaacs/rimraf)
 
 `^ 3.0.0`
 
-[![@sinonjs🗺️**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)🗺️\*\*](https://github.com/sinonjs)[sinonjs / sinon🗺️\*\*](https://github.com/sinonjs/sinon)
+[![@sinonjs🗺️**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)🗺️](https://github.com/sinonjs)[sinonjs / sinon🗺️](https://github.com/sinonjs/sinon)
 
 `^ 9.0.1`
 
-[![@domenic🗺️**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)🗺️\*\*](https://github.com/domenic)[domenic / sinon-chai🗺️\*\*](https://github.com/domenic/sinon-chai)
+[![@domenic🗺️**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)🗺️](https://github.com/domenic)[domenic / sinon-chai🗺️](https://github.com/domenic/sinon-chai)
 
 `^ 3.3.0`
 
-[![@anodynos🗺️**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)🗺️\*\*](https://github.com/anodynos)[anodynos / upath🗺️\*\*](https://github.com/anodynos/upath)
+[![@anodynos🗺️**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)🗺️](https://github.com/anodynos)[anodynos / upath🗺️](https://github.com/anodynos/upath)
 
 `^ 1.2.0`
 
-[![@JedWatson🗺️**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)🗺️\*\*](https://github.com/JedWatson)[JedWatson / classnames🗺️\*\*](https://github.com/JedWatson/classnames)
+[![@JedWatson🗺️**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)🗺️](https://github.com/JedWatson)[JedWatson / classnames🗺️](https://github.com/JedWatson/classnames)
 
 `2.2.6`
 
-[![@bestiejs🗺️**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)🗺️\*\*](https://github.com/bestiejs)[bestiejs / benchmark.js 🗺️\*\*](https://github.com/bestiejs/benchmark.js)benchmark
+[![@bestiejs🗺️**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)🗺️](https://github.com/bestiejs)[bestiejs / benchmark.js 🗺️](https://github.com/bestiejs/benchmark.js)benchmark
 
 `^ 1.0.0`
 
-[![@browserify🗺️**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)🗺️\*\*](https://github.com/browserify)[browserify / browserify🗺️\*\*](https://github.com/browserify/browserify)
+[![@browserify🗺️**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)🗺️](https://github.com/browserify)[browserify / browserify🗺️](https://github.com/browserify/browserify)
 
 `^ 14.1.0`
 
-[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️\*\*](https://github.com/mochajs)[mochajs / mocha🗺️\*\*](https://github.com/mochajs/mocha)
+[![@mochajs🗺️**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)🗺️](https://github.com/mochajs)[mochajs / mocha🗺️](https://github.com/mochajs/mocha)
 
 `^ 2.1.0`
 
-[![@jeromedecoster🗺️**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)🗺️\*\*](https://github.com/jeromedecoster)[jeromedecoster / opn-cli🗺️\*\*](https://github.com/jeromedecoster/opn-cli)
+[![@jeromedecoster🗺️**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)🗺️](https://github.com/jeromedecoster)[jeromedecoster / opn-cli🗺️](https://github.com/jeromedecoster/opn-cli)
 
 `^ 3.1.0`
 
-[![@documentationjs🗺️**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)🗺️\*\*](https://github.com/documentationjs)[documentationjs / documentation🗺️\*\*](https://github.com/documentationjs/documentation)
+[![@documentationjs🗺️**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)🗺️](https://github.com/documentationjs)[documentationjs / documentation🗺️](https://github.com/documentationjs/documentation)
 
 `^ 13.2.5`
 
-[![@babel🗺️**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)🗺️\*\*](https://github.com/babel)[babel / babel 🗺️\*\*](https://github.com/babel/babel)@babel/core
+[![@babel🗺️**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)🗺️](https://github.com/babel)[babel / babel 🗺️](https://github.com/babel/babel)@babel/core
 
 `7.12.3`
