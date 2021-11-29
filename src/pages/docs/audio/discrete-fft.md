@@ -1,6 +1,6 @@
 ---
 title: Fast Fourier Transform
-weight: 1
+weight: 0
 excerpt: Visualizing the Discrete Fourier Transform
 seo:
     title: 'Fast Fourier Transform'

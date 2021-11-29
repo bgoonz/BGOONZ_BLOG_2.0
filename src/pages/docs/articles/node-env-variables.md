@@ -1,6 +1,6 @@
 ---
 title: Node Export Module
-weight: 1
+weight: 0
 excerpt: >-
     How to use the module.exports API to expose data to other files in your
     application, or to other applications as well

@@ -1,6 +1,6 @@
 ---
 title: npx-create-react-app
-weight: 1
+weight: 0
 seo:
     title: npx-create-react-app
     description: This is the npx-create-react-app page

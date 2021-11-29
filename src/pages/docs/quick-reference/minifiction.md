@@ -1,6 +1,6 @@
 ---
 title: 'How To Minify Code For Better Web Performance '
-weight: 1
+weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''

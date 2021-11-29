@@ -1,6 +1,6 @@
 ---
 title: Embeded Websites & Projects
-weight: 2
+weight: 0
 seo:
     title: Gatsby Plugins For This Sites Content Model
     description: This is my markdown notes tempate

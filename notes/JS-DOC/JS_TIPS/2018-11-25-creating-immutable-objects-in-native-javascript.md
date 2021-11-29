@@ -24,7 +24,7 @@ We can't allow modifying by mistake any data.
 const myTesla = {
 	maxSpeed: 250,
 	batteryLife: 300,
-	weight: 123
+	weight: 023
 };
 ```
 

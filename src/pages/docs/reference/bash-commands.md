@@ -1,6 +1,6 @@
 ---
 title: Bash-Commands
-weight: 1
+weight: 0
 seo:
     title: Bash-Commands
     description: This is the Bash-Commands page

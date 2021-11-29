@@ -1,6 +1,6 @@
 ---
 title: Top Repos
-weight: 1
+weight: 0
 seo:
     title: Top Repos
     description: This is the Top Repos page
