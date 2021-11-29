@@ -1,5 +1,3 @@
-)]
-
 # [WEBSITE🗺️](https://bgoonz-blog.netlify.app/)
 
 ---
