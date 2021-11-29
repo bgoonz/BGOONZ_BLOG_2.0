@@ -9782,7 +9782,7 @@ const myTesla = {
 
 	batteryLife: 300,
 
-	weight: 123
+	weight: 023
 
 };
 

@@ -1,6 +1,6 @@
 ---
 title: Plug-ins
-weight: 2
+weight: 0
 seo:
     title: Gatsby Plugins For This Sites Content Model
     description: This is the Gatsby Plugins For This Sites Content Model page

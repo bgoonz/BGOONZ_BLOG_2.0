@@ -1,6 +1,6 @@
 ---
 title: node-cli-args
-weight: 1
+weight: 0
 excerpt: How to accept arguments in a Node.js program passed from the command line
 seo:
     title: ''

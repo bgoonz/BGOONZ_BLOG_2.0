@@ -1,6 +1,6 @@
 ---
 title: Articles
-weight: 2
+weight: 0
 excerpt: resources
 seo:
     title: ''

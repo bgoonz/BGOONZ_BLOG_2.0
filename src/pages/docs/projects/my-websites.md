@@ -23,7 +23,7 @@ seo:
         - name: 'twitter:description'
           value: This is the My Sites page
 template: docs
-weight: 1
+weight: 0
 ---
 
 <iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>

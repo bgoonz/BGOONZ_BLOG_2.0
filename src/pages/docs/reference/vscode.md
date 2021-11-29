@@ -1,6 +1,6 @@
 ---
 title: vscode
-weight: 2
+weight: 0
 seo:
     title: vscode
     description: This is the vscode page

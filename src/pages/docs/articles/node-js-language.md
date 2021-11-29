@@ -1,6 +1,6 @@
 ---
 title: packagejson
-weight: 1
+weight: 0
 excerpt: >-
     The package.json file is a key element in lots of app codebases based on the
     Node.js ecosystem.

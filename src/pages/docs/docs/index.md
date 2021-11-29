@@ -1,6 +1,6 @@
 ---
 title: Docs
-weight: 1
+weight: 0
 excerpt: Documentation
 seo:
     title: Documentation

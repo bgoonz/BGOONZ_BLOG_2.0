@@ -391,7 +391,7 @@
         iframe,
         object,
         video {
-            max-width: 1400px !important;
+            max-width: 1300px !important;
         }
 
         img {
@@ -3564,7 +3564,7 @@
         .at4-share .at4-share-count {
             text-indent: 0;
             font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-            font-weight: 200;
+            font-weight: 000;
             width: 100%;
             height: 1pc;
         }
@@ -4642,7 +4642,7 @@
         }
 
         .at-mobile .at-recommendedjumbo-footer #at-recommendedjumbo-label {
-            font-weight: 150;
+            font-weight: 050;
             font-size: 14px;
             line-height: 14px;
         }
@@ -5919,7 +5919,7 @@
         .at-custom-sidebar .at4-share-count {
             text-indent: 0;
             font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-            font-weight: 200;
+            font-weight: 000;
             width: 100%;
             height: 1pc;
         }

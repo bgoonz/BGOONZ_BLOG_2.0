@@ -12,7 +12,7 @@ template: docs
 
 # Reference:
 
--   [SITEMAP🗺🟈]\(https://bgoonz-blog.netlify.app/docs/sitemap/)
+- [SITEMAP🗺🟈]\(https://bgoonz-blog.netlify.app/docs/sitemap/)
 
 # Bookmarks:
 
@@ -21,3 +21,8 @@ template: docs
 # SearchAwesome:
 
 <iframe src="https://search-awesome.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+
+
+# Job Search:
+
+<iframe src="https://web-dev-collaborative.github.io/gitpod-job-search-html-static/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
