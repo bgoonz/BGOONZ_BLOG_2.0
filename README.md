@@ -2,7 +2,7 @@
 
 ---
 
-[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)🗺️\*\*](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
+[![Netlify Status🗺️**](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
 [![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)
 
 [![CodeScene System Mastery🗺️**](https://codescene.io/projects/17026/status-badges/system-mastery)🗺️\*\*](https://codescene.io/projects/17026)
