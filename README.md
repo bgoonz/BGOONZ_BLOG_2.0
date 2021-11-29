@@ -1,4 +1,4 @@
-# [WEBSITE🗺️\*\*](https://bgoonz-blog.netlify.app/)
+# [WEBSITE🗺️](https://bgoonz-blog.netlify.app/)
 
 ---
 
