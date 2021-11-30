@@ -12,6 +12,14 @@ template: docs
 
 # Promises
 
+# Disclaimer: this article borrows heavily from 
+
+-
+-
+-
+-
+
+
 # What is a promise
 
 A promise represents the eventual result of an asynchronous operation.
@@ -839,358 +847,721 @@ addAsync(1,2)
 
 
 
+The Event Loop
+--------------
 
----
+This section will explain how JavaScript handles asynchronous code with the event loop. It will first run through a demonstration of the event loop at work, and will then explain the two elements of the event loop: the stack and the queue.
 
+JavaScript code that does not use any asynchronous Web APIs will execute in a synchronous manner---one at a time, sequentially. This is demonstrated by this example code that calls three functions that each print a number to the [console](https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console):
 
-JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. In browsers, JavaScript shares a thread with a load of other stuff that differs from browser to browser. But typically JavaScript is in the same queue as painting, updating styles, and handling user actions (such as highlighting text and interacting with form controls). Activity in one of these things delays the others.
+```
+// Define three example functions
+function first() {
+  console.log(1)
+}
+
+function second() {
+  console.log(2)
+}
+
+function third() {
+  console.log(3)
+}
+```
+
+Copy
 
-As a human being, you're multithreaded. You can type with multiple fingers, you can drive and hold a conversation at the same time. The only blocking function we have to deal with is sneezing, where all current activity must be suspended for the duration of the sneeze. That's pretty annoying, especially when you're driving and trying to hold a conversation. You don't want to write code that's sneezy.
+In this code, you define three functions that print numbers with `console.log()`.
 
-You've probably used events and callbacks to get around this. Here are events:
+Next, write calls to the functions:
 
 ```
-var img1 = document.querySelector('.img-1');img1.addEventListener('load', function() {  // woo yey image loaded});img1.addEventListener('error', function() {  // argh everything's broken});
+// Execute the functions
+first()
+second()
+third()
+```
+
+Copy
+
+The output will be based on the order the functions were called---`first()`, `second()`, then `third()`:
+
+```
+Output1
+2
+3
+
 ```
 
-This isn't sneezy at all. We get the image, add a couple of listeners, then JavaScript can stop executing until one of those listeners is called.
+When an asynchronous Web API is used, the rules become more complicated. A built-in API that you can test this with is `setTimeout`, which sets a timer and performs an action after a specified amount of time. `setTimeout` needs to be asynchronous, otherwise the entire browser would remain frozen during the waiting, which would result in a poor user experience.
 
-Unfortunately, in the example above, it's possible that the events happened before we started listening for them, so we need to work around that using the "complete" property of images:
+Add `setTimeout` to the `second` function to simulate an asynchronous request:
 
 ```
-var img1 = document.querySelector('.img-1');function loaded() {  // woo yey image loaded}if (img1.complete) {  loaded();}else {  img1.addEventListener('load', loaded);}img1.addEventListener('error', function() {  // argh everything's broken});
+// Define three example functions, but one of them contains asynchronous code
+function first() {
+  console.log(1)
+}
+
+function second() {
+  setTimeout(() => {
+    console.log(2)
+  }, 0)
+}
+
+function third() {
+  console.log(3)
+}
 ```
 
-This doesn't catch images that errored before we got a chance to listen for them; unfortunately the DOM doesn't give us a way to do that. Also, this is loading one image. Things get even more complex if we want to know when a set of images have loaded.
+Copy
 
-## Events aren't always the best way [#](https://web.dev/promises/#events-aren't-always-the-best-way)
+`setTimeout` takes two arguments: the function it will run asynchronously, and the amount of time it will wait before calling that function. In this code you wrapped `console.log` in an anonymous function and passed it to `setTimeout`, then set the function to run after `0` milliseconds.
 
-Events are great for things that can happen multiple times on the same object---`keyup`, `touchstart` etc. With those events you don't really care about what happened before you attached the listener. But when it comes to async success/failure, ideally you want something like this:
+Now call the functions, as you did before:
 
 ```
-img1.callThisIfLoadedOrWhenLoaded(function() {  // loaded}).orIfFailedCallThis(function() {  // failed});// and...whenAllTheseHaveLoaded([img1, img2]).callThis(function() {  // all loaded}).orIfSomeFailedCallThis(function() {  // one or more failed});
+// Execute the functions
+first()
+second()
+third()
 ```
+
+Copy
 
-This is what promises do, but with better naming. If HTML image elements had a "ready" method that returned a promise, we could do this:
+You might expect with a `setTimeout` set to `0` that running these three functions would still result in the numbers being printed in sequential order. But because it is asynchronous, the function with the timeout will be printed last:
 
 ```
-img1.ready().then(function() {  // loaded}, function() {  // failed});// and...Promise.all([img1.ready(), img2.ready()]).then(function() {  // all loaded}, function() {  // one or more failed});
+Output1
+3
+2
+
 ```
+
+Whether you set the timeout to zero seconds or five minutes will make no difference---the `console.log` called by asynchronous code will execute after the synchronous top-level functions. This happens because the JavaScript host environment, in this case the browser, uses a concept called the *event loop* to handle concurrency, or parallel events. Since JavaScript can only execute one statement at a time, it needs the event loop to be informed of when to execute which specific statement. The event loop handles this with the concepts of a *stack* and a *queue*.
+
+### Stack
 
-At their most basic, promises are a bit like event listeners except:
+The *stack*, or call stack, holds the state of what function is currently running. If you're unfamiliar with the concept of a stack, you can imagine it as an [array](https://www.digitalocean.com/community/tutorials/understanding-arrays-in-javascript) with "Last in, first out" (LIFO) properties, meaning you can only add or remove items from the end of the stack. JavaScript will run the current *frame* (or function call in a specific environment) in the stack, then remove it and move on to the next one.
 
--   A promise can only succeed or fail once. It cannot succeed or fail twice, neither can it switch from success to failure or vice versa.
--   If a promise has succeeded or failed and you later add a success/failure callback, the correct callback will be called, even though the event took place earlier.
+For the example only containing synchronous code, the browser handles the execution in the following order:
 
-This is extremely useful for async success/failure, because you're less interested in the exact time something became available, and more interested in reacting to the outcome.
+-   Add `first()` to the stack, run `first()` which logs `1` to the console, remove `first()` from the stack.
+-   Add `second()` to the stack, run `second()` which logs `2` to the console, remove `second()` from the stack.
+-   Add `third()` to the stack, run `third()` which logs `3` to the console, remove `third()` from the stack.
 
-## Promise terminology [#](https://web.dev/promises/#promise-terminology)
+The second example with `setTimout` looks like this:
 
-[Domenic Denicola](https://twitter.com/domenic) proof read the first draft of this article and graded me "F" for terminology. He put me in detention, forced me to copy out [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) 100 times, and wrote a worried letter to my parents. Despite that, I still get a lot of the terminology mixed up, but here are the basics:
+-   Add `first()` to the stack, run `first()` which logs `1` to the console, remove `first()` from the stack.
+-   Add `second()` to the stack, run `second()`.
+    -   Add `setTimeout()` to the stack, run the `setTimeout()` Web API which starts a timer and adds the anonymous function to the *queue*, remove `setTimeout()` from the stack.
+-   Remove `second()` from the stack.
+-   Add `third()` to the stack, run `third()` which logs `3` to the console, remove `third()` from the stack.
+-   The event loop checks the queue for any pending messages and finds the anonymous function from `setTimeout()`, adds the function to the stack which logs `2` to the console, then removes it from the stack.
 
-A promise can be:
+Using `setTimeout`, an asynchronous Web API, introduces the concept of the *queue*, which this tutorial will cover next.
 
--   fulfilled - The action relating to the promise succeeded
--   rejected - The action relating to the promise failed
--   pending - Hasn't fulfilled or rejected yet
--   settled - Has fulfilled or rejected
+### Queue
 
-[The spec](https://www.ecma-international.org/ecma-262/#sec-promise-objects) also uses the term thenable to describe an object that is promise-like, in that it has a `then` method. This term reminds me of ex-England Football Manager [Terry Venables](https://en.wikipedia.org/wiki/Terry_Venables) so I'll be using it as little as possible.
+The *queue*, also referred to as message queue or task queue, is a waiting area for functions. Whenever the call stack is empty, the event loop will check the queue for any waiting messages, starting from the oldest message. Once it finds one, it will add it to the stack, which will execute the function in the message.
 
-## Promises arrive in JavaScript! [#](https://web.dev/promises/#promises-arrive-in-javascript!)
+In the `setTimeout` example, the anonymous function runs immediately after the rest of the top-level execution, since the timer was set to `0` seconds. It's important to remember that the timer does not mean that the code will execute in exactly `0` seconds or whatever the specified time is, but that it will add the anonymous function to the queue in that amount of time. This queue system exists because if the timer were to add the anonymous function directly to the stack when the timer finishes, it would interrupt whatever function is currently running, which could have unintended and unpredictable effects.
 
-Promises have been around for a while in the form of libraries, such as:
+Note: There is also another queue called the *job queue* or *microtask queue* that handles promises. Microtasks like promises are handled at a higher priority than macrotasks like `setTimeout`.
 
--   [Q](https://github.com/kriskowal/q)
--   [when](https://github.com/cujojs/when)
--   [WinJS](https://msdn.microsoft.com/en-us/library/windows/apps/br211867.aspx)
--   [RSVP.js](https://github.com/tildeio/rsvp.js)
+Now you know how the event loop uses the stack and queue to handle the execution order of code. The next task is to figure out how to control the order of execution in your code. To do this, you will first learn about the original way to ensure asynchronous code is handled correctly by the event loop: callback functions.
 
-The above and JavaScript promises share a common, standardized behaviour called [Promises/A+](https://github.com/promises-aplus/promises-spec). If you're a jQuery user, they have something similar called [Deferreds](https://api.jquery.com/category/deferred-object/). However, Deferreds aren't Promise/A+ compliant, which makes them [subtly different and less useful](https://thewayofcode.wordpress.com/tag/jquery-deferred-broken/), so beware. jQuery also has [a Promise type](https://api.jquery.com/Types/#Promise), but this is just a subset of Deferred and has the same issues.
+Callback Functions
+------------------
 
-Although promise implementations follow a standardized behaviour, their overall APIs differ. JavaScript promises are similar in API to RSVP.js. Here's how you create a promise:
+In the `setTimeout` example, the function with the timeout ran after everything in the main top-level execution context. But if you wanted to ensure one of the functions, like the `third` function, ran after the timeout, then you would have to use asynchronous coding methods. The timeout here can represent an asynchronous API call that contains data. You want to work with the data from the API call, but you have to make sure the data is returned first.
 
+The original solution to dealing with this problem is using *callback functions*. Callback functions do not have special syntax; they are just a function that has been passed as an argument to another function. The function that takes another function as an argument is called a *higher-order function*. According to this definition, any function can become a callback function if it is passed as an argument. Callbacks are not asynchronous by nature, but can be used for asynchronous purposes.
+
+Here is a syntactic code example of a higher-order function and a callback:
+
 ```
-var promise = new Promise(function(resolve, reject) {  // do a thing, possibly async, then...  if (/* everything turned out fine */) {    resolve("Stuff worked!");  }  else {    reject(Error("It broke"));  }});
+// A function
+function fn() {
+  console.log('Just a function')
+}
+
+// A function that takes another function as an argument
+function higherOrderFunction(callback) {
+  // When you call a function that is passed as an argument, it is referred to as a callback
+  callback()
+}
+
+// Passing a function
+higherOrderFunction(fn)
 ```
 
-The promise constructor takes one argument, a callback with two parameters, resolve and reject. Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject.
+Copy
 
-Like `throw` in plain old JavaScript, it's customary, but not required, to reject with an Error object. The benefit of Error objects is they capture a stack trace, making debugging tools more helpful.
+In this code, you define a function `fn`, define a function `higherOrderFunction` that takes a function `callback` as an argument, and pass `fn` as a callback to `higherOrderFunction`.
 
-Here's how you use that promise:
+Running this code will give the following:
 
 ```
-promise.then(function(result) {  console.log(result); // "Stuff worked!"}, function(err) {  console.log(err); // Error: "It broke"});
+OutputJust a function
+
 ```
 
-`then()` takes two arguments, a callback for a success case, and another for the failure case. Both are optional, so you can add a callback for the success or failure case only.
+Let's go back to the `first`, `second`, and `third` functions with `setTimeout`. This is what you have so far:
 
-JavaScript promises started out in the DOM as "Futures", renamed to "Promises", and finally moved into JavaScript. Having them in JavaScript rather than the DOM is great because they'll be available in non-browser JS contexts such as Node.js (whether they make use of them in their core APIs is another question).
+```
+function first() {
+  console.log(1)
+}
 
-Although they're a JavaScript feature, the DOM isn't afraid to use them. In fact, all new DOM APIs with async success/failure methods will use promises. This is happening already with [Quota Management](https://dvcs.w3.org/hg/quota/raw-file/tip/Overview.html#idl-def-StorageQuota), [Font Load Events](http://dev.w3.org/csswg/css-font-loading/#font-face-set-ready), [ServiceWorker](https://github.com/slightlyoff/ServiceWorker/blob/cf459d473ae09f6994e8539113d277cbd2bce939/service_worker.ts#L17), [Web MIDI](https://webaudio.github.io/web-midi-api/#widl-Navigator-requestMIDIAccess-Promise-MIDIOptions-options), [Streams](https://github.com/whatwg/streams#basereadablestream), and more.
+function second() {
+  setTimeout(() => {
+    console.log(2)
+  }, 0)
+}
 
-## Browser support & polyfill [#](https://web.dev/promises/#browser-support-and-polyfill)
+function third() {
+  console.log(3)
+}
+```
 
-There are already implementations of promises in browsers today.
+Copy
 
-As of Chrome 32, Opera 19, Firefox 29, Safari 8 & Microsoft Edge, promises are enabled by default.
+The task is to get the `third` function to always delay execution until after the asynchronous action in the `second` function has completed. This is where callbacks come in. Instead of executing `first`, `second`, and `third` at the top-level of execution, you will pass the `third` function as an argument to `second`. The `second` function will execute the callback after the asynchronous action has completed.
 
-To bring browsers that lack a complete promises implementation up to spec compliance, or add promises to other browsers and Node.js, check out [the polyfill](https://github.com/jakearchibald/ES6-Promises#readme) (2k gzipped).
+Here are the three functions with a callback applied:
 
-## Compatibility with other libraries [#](https://web.dev/promises/#compatibility-with-other-libraries)
+```
+// Define three functions
+function first() {
+  console.log(1)
+}
 
-The JavaScript promises API will treat anything with a `then()` method as promise-like (or `thenable` in promise-speak *sigh*), so if you use a library that returns a Q promise, that's fine, it'll play nice with the new JavaScript promises.
+function second(callback) {
+  setTimeout(() => {
+    console.log(2)
 
-Although, as I mentioned, jQuery's Deferreds are a bit ... unhelpful. Thankfully you can cast them to standard promises, which is worth doing as soon as possible:
+    // Execute the callback function
+    callback()
+  }, 0)
+}
 
+function third() {
+  console.log(3)
+}
 ```
-var jsPromise = Promise.resolve($.ajax('/whatever.json'))
-```
 
-Here, jQuery's `$.ajax` returns a Deferred. Since it has a `then()` method, `Promise.resolve()` can turn it into a JavaScript promise. However, sometimes deferreds pass multiple arguments to their callbacks, for example:
+Copy
 
+Now, execute `first` and `second`, then pass `third` as an argument to `second`:
+
 ```
-var jqDeferred = $.ajax('/whatever.json');jqDeferred.then(function(response, statusText, xhrObj) {  // ...}, function(xhrObj, textStatus, err) {  // ...})
+first()
+second(third)
 ```
+
+Copy
 
-Whereas JS promises ignore all but the first:
+After running this code block, you will receive the following output:
 
 ```
-jsPromise.then(function(response) {  // ...}, function(xhrObj) {  // ...})
+Output1
+2
+3
+
 ```
 
-Thankfully this is usually what you want, or at least gives you access to what you want. Also, be aware that jQuery doesn't follow the convention of passing Error objects into rejections.
+First `1` will print, and after the timer completes (in this case, zero seconds, but you can change it to any amount) it will print `2` then `3`. By passing a function as a callback, you've successfully delayed execution of the function until the asynchronous Web API (`setTimeout`) completes.
 
-## Complex async code made easier [#](https://web.dev/promises/#complex-async-code-made-easier)
+The key takeaway here is that callback functions are not asynchronous---`setTimeout` is the asynchronous Web API responsible for handling asynchronous tasks. The callback just allows you to be informed of when an asynchronous task has completed and handles the success or failure of the task.
 
-Right, let's code some things. Say we want to:
+Now that you have learned how to use callbacks to handle asynchronous tasks, the next section explains the problems of nesting too many callbacks and creating a "pyramid of doom."
 
-1.  Start a spinner to indicate loading
-2.  Fetch some JSON for a story, which gives us the title, and urls for each chapter
-3.  Add title to the page
-4.  Fetch each chapter
-5.  Add the story to the page
-6.  Stop the spinner
+Nested Callbacks and the Pyramid of Doom
+----------------------------------------
 
-... but also tell the user if something went wrong along the way. We'll want to stop the spinner at that point too, else it'll keep on spinning, get dizzy, and crash into some other UI.
+Callback functions are an effective way to ensure delayed execution of a function until another one completes and returns with data. However, due to the nested nature of callbacks, code can end up getting messy if you have a lot of consecutive asynchronous requests that rely on each other. This was a big frustration for JavaScript developers early on, and as a result code containing nested callbacks is often called the "pyramid of doom" or "callback hell."
 
-Of course, you wouldn't use JavaScript to deliver a story, [serving as HTML is faster](https://jakearchibald.com/2013/progressive-enhancement-is-faster/), but this pattern is pretty common when dealing with APIs: Multiple data fetches, then do something when it's all done.
+Here is a demonstration of nested callbacks:
 
-To start with, let's deal with fetching data from the network:
+```
+function pyramidOfDoom() {
+  setTimeout(() => {
+    console.log(1)
+    setTimeout(() => {
+      console.log(2)
+      setTimeout(() => {
+        console.log(3)
+      }, 500)
+    }, 2000)
+  }, 1000)
+}
+```
 
-## Promisifying XMLHttpRequest [#](https://web.dev/promises/#promisifying-xmlhttprequest)
+Copy
 
-Old APIs will be updated to use promises, if it's possible in a backwards compatible way. `XMLHttpRequest` is a prime candidate, but in the mean time let's write a simple function to make a GET request:
+In this code, each new `setTimeout` is nested inside a higher order function, creating a pyramid shape of deeper and deeper callbacks. Running this code would give the following:
 
 ```
-function get(url) {  // Return a new promise.  return new Promise(function(resolve, reject) {    // Do the usual XHR stuff    var req = new XMLHttpRequest();    req.open('GET', url);    req.onload = function() {      // This is called even on 404 etc      // so check the status      if (req.status == 200) {        // Resolve the promise with the response text        resolve(req.response);      }      else {        // Otherwise reject with the status text        // which will hopefully be a meaningful error        reject(Error(req.statusText));      }    };    // Handle network errors    req.onerror = function() {      reject(Error("Network Error"));    };    // Make the request    req.send();  });}
+Output1
+2
+3
+
 ```
 
-Now let's use it:
+In practice, with real world asynchronous code, this can get much more complicated. You will most likely need to do error handling in asynchronous code, and then pass some data from each response onto the next request. Doing this with callbacks will make your code difficult to read and maintain.
 
-```
-get('story.json').then(function(response) {  console.log("Success!", response);}, function(error) {  console.error("Failed!", error);})
+Here is a runnable example of a more realistic "pyramid of doom" that you can play around with:
+
 ```
+// Example asynchronous function
+function asynchronousRequest(args, callback) {
+  // Throw an error if no arguments are passed
+  if (!args) {
+    return callback(new Error('Whoa! Something went wrong.'))
+  } else {
+    return setTimeout(
+      // Just adding in a random number so it seems like the contrived asynchronous function
+      // returned different data
+      () => callback(null, {body: args + ' ' + Math.floor(Math.random() * 10)}),
+      500,
+    )
+  }
+}
 
-Now we can make HTTP requests without manually typing `XMLHttpRequest`, which is great, because the less I have to see the infuriating camel-casing of `XMLHttpRequest`, the happier my life will be.
+// Nested asynchronous requests
+function callbackHell() {
+  asynchronousRequest('First', function first(error, response) {
+    if (error) {
+      console.log(error)
+      return
+    }
+    console.log(response.body)
+    asynchronousRequest('Second', function second(error, response) {
+      if (error) {
+        console.log(error)
+        return
+      }
+      console.log(response.body)
+      asynchronousRequest(null, function third(error, response) {
+        if (error) {
+          console.log(error)
+          return
+        }
+        console.log(response.body)
+      })
+    })
+  })
+}
 
-## Chaining [#](https://web.dev/promises/#chaining)
+// Execute
+callbackHell()
+```
 
-`then()` isn't the end of the story, you can chain `then`s together to transform values or run additional async actions one after another.
+Copy
 
-### Transforming values [#](https://web.dev/promises/#transforming-values)
+In this code, you must make every function account for a possible `response` and a possible `error`, making the function `callbackHell` visually confusing.
 
-You can transform values simply by returning the new value:
+Running this code will give you the following:
 
 ```
-var promise = new Promise(function(resolve, reject) {  resolve(1);});promise.then(function(val) {  console.log(val); // 1  return val + 2;}).then(function(val) {  console.log(val); // 3})
+Output
+First 9
+Second 3
+Error: Whoa! Something went wrong.
+    at asynchronousRequest (<anonymous>:4:21)
+    at second (<anonymous>:29:7)
+    at <anonymous>:9:13
+
 ```
+
+This way of handling asynchronous code is difficult to follow. As a result, the concept of *promises* was introduced in ES6. This is the focus of the next section.
+
+Promises
+--------
+
+A *promise* represents the completion of an asynchronous function. It is an object that might return a value in the future. It accomplishes the same basic goal as a callback function, but with many additional features and a more readable syntax. As a JavaScript developer, you will likely spend more time consuming promises than creating them, as it is usually asynchronous Web APIs that return a promise for the developer to consume. This tutorial will show you how to do both.
+
+### Creating a Promise
 
-As a practical example, let's go back to:
+You can initialize a promise with the `new Promise` syntax, and you must initialize it with a function. The function that gets passed to a promise has `resolve` and `reject` parameters. The `resolve` and `reject` functions handle the success and failure of an operation, respectively.
 
+Write the following line to declare a promise:
+
 ```
-get('story.json').then(function(response) {  console.log("Success!", response);})
+// Initialize a promise
+const promise = new Promise((resolve, reject) => {})
 ```
 
-The response is JSON, but we're currently receiving it as plain text. We could alter our get function to use the JSON [`responseType`](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest#responseType), but we could also solve it in promises land:
+Copy
 
+If you inspect the initialized promise in this state with your web browser's console, you will find it has a `pending` status and `undefined` value:
+
 ```
-get('story.json').then(function(response) {  return JSON.parse(response);}).then(function(response) {  console.log("Yey JSON!", response);})
+Output__proto__: Promise
+[[PromiseStatus]]: "pending"
+[[PromiseValue]]: undefined
+
 ```
 
-Since `JSON.parse()` takes a single argument and returns a transformed value, we can make a shortcut:
+So far, nothing has been set up for the promise, so it's going to sit there in a `pending` state forever. The first thing you can do to test out a promise is fulfill the promise by resolving it with a value:
 
 ```
-get('story.json').then(JSON.parse).then(function(response) {  console.log("Yey JSON!", response);})
+const promise = new Promise((resolve, reject) => {
+  resolve('We did it!')
+})
 ```
 
-In fact, we could make a `getJSON()` function really easily:
+Copy
 
+Now, upon inspecting the promise, you'll find that it has a status of `fulfilled`, and a `value` set to the value you passed to `resolve`:
+
 ```
-function getJSON(url) {  return get(url).then(JSON.parse);}
+Output__proto__: Promise
+[[PromiseStatus]]: "fulfilled"
+[[PromiseValue]]: "We did it!"
+
 ```
+
+As stated in the beginning of this section, a promise is an object that may return a value. After being successfully fulfilled, the `value` goes from `undefined` to being populated with data.
 
-`getJSON()` still returns a promise, one that fetches a url then parses the response as JSON.
+A promise can have three possible states: pending, fulfilled, and rejected.
 
-### Queuing asynchronous actions [#](https://web.dev/promises/#queuing-asynchronous-actions)
+-   Pending - Initial state before being resolved or rejected
+-   Fulfilled - Successful operation, promise has resolved
+-   Rejected - Failed operation, promise has rejected
 
-You can also chain `then`s to run async actions in sequence.
+After being fulfilled or rejected, a promise is settled.
 
-When you return something from a `then()` callback, it's a bit magic. If you return a value, the next `then()` is called with that value. However, if you return something promise-like, the next `then()` waits on it, and is only called when that promise settles (succeeds/fails). For example:
+Now that you have an idea of how promises are created, let's look at how a developer may consume these promises.
 
+### Consuming a Promise
+
+The promise in the last section has fulfilled with a value, but you also want to be able to access the value. Promises have a method called `then` that will run after a promise reaches `resolve` in the code. `then` will return the promise's value as a parameter.
+
+This is how you would return and log the `value` of the example promise:
+
 ```
-getJSON('story.json').then(function(story) {  return getJSON(story.chapterUrls[0]);}).then(function(chapter1) {  console.log("Got chapter 1!", chapter1);})
+promise.then((response) => {
+  console.log(response)
+})
 ```
 
-Here we make an async request to `story.json`, which gives us a set of URLs to request, then we request the first of those. This is when promises really start to stand out from simple callback patterns.
+Copy
 
-You could even make a shortcut method to get chapters:
+The promise you created had a `[[PromiseValue]]` of `We did it!`. This value is what will be passed into the anonymous function as `response`:
 
 ```
-var storyPromise;function getChapter(i) {  storyPromise = storyPromise || getJSON('story.json');  return storyPromise.then(function(story) {    return getJSON(story.chapterUrls[i]);  })}// and using it is simple:getChapter(0).then(function(chapter) {  console.log(chapter);  return getChapter(1);}).then(function(chapter) {  console.log(chapter);})
-```
+OutputWe did it!
 
-We don't download `story.json` until `getChapter` is called, but the next time(s) `getChapter` is called we reuse the story promise, so `story.json` is only fetched once. Yay Promises!
+```
 
-## Error handling [#](https://web.dev/promises/#error-handling)
+So far, the example you created did not involve an asynchronous Web API---it only explained how to create, resolve, and consume a native JavaScript promise. Using `setTimeout`, you can test out an asynchronous request.
 
-As we saw earlier, `then()` takes two arguments, one for success, one for failure (or fulfill and reject, in promises-speak):
+The following code simulates data returned from an asynchronous request as a promise:
 
 ```
-get('story.json').then(function(response) {  console.log("Success!", response);}, function(error) {  console.log("Failed!", error);})
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve('Resolving an asynchronous request!'), 2000)
+})
+
+// Log the result
+promise.then((response) => {
+  console.log(response)
+})
 ```
+
+Copy
+
+Using the `then` syntax ensures that the `response` will be logged only when the `setTimeout` operation is completed after `2000` milliseconds. All this is done without nesting callbacks.
 
-You can also use `catch()`:
+Now after two seconds, it will resolve the promise value and it will get logged in `then`:
 
 ```
-get('story.json').then(function(response) {  console.log("Success!", response);}).catch(function(error) {  console.log("Failed!", error);})
+OutputResolving an asynchronous request!
+
 ```
 
-There's nothing special about `catch()`, it's just sugar for `then(undefined, func)`, but it's more readable. Note that the two code examples above do not behave the same, the latter is equivalent to:
+Promises can also be chained to pass along data to more than one asynchronous operation. If a value is returned in `then`, another `then` can be added that will fulfill with the return value of the previous `then`:
 
 ```
-get('story.json').then(function(response) {  console.log("Success!", response);}).then(undefined, function(error) {  console.log("Failed!", error);})
+// Chain a promise
+promise
+  .then((firstResponse) => {
+    // Return a new value for the next then
+    return firstResponse + ' And chaining!'
+  })
+  .then((secondResponse) => {
+    console.log(secondResponse)
+  })
 ```
 
-The difference is subtle, but extremely useful. Promise rejections skip forward to the next `then()` with a rejection callback (or `catch()`, since it's equivalent). With `then(func1, func2)`, `func1` or `func2` will be called, never both. But with `then(func1).catch(func2)`, both will be called if `func1` rejects, as they're separate steps in the chain. Take the following:
+Copy
 
+The fulfilled response in the second `then` will log the return value:
+
 ```
-asyncThing1().then(function() {  return asyncThing2();}).then(function() {  return asyncThing3();}).catch(function(err) {  return asyncRecovery1();}).then(function() {  return asyncThing4();}, function(err) {  return asyncRecovery2();}).catch(function(err) {  console.log("Don't worry about it");}).then(function() {  console.log("All done!");})
+OutputResolving an asynchronous request! And chaining!
+
 ```
 
-The flow above is very similar to normal JavaScript try/catch, errors that happen within a "try" go immediately to the `catch()` block. Here's the above as a flowchart (because I love flowcharts):
+Since `then` can be chained, it allows the consumption of promises to appear more synchronous than callbacks, as they do not need to be nested. This will allow for more readable code that can be maintained and verified easier.
 
-Follow the blue lines for promises that fulfill, or the red for ones that reject.
+### Error Handling
 
-### JavaScript exceptions and promises [#](https://web.dev/promises/#javascript-exceptions-and-promises)
+So far, you have only handled a promise with a successful `resolve`, which puts the promise in a `fulfilled` state. But frequently with an asynchronous request you also have to handle an error---if the API is down, or a malformed or unauthorized request is sent. A promise should be able to handle both cases. In this section, you will create a function to test out both the success and error case of creating and consuming a promise.
 
-Rejections happen when a promise is explicitly rejected, but also implicitly if an error is thrown in the constructor callback:
+This `getUsers` function will pass a flag to a promise, and return the promise:
 
 ```
-var jsonPromise = new Promise(function(resolve, reject) {  // JSON.parse throws an error if you feed it some  // invalid JSON, so this implicitly rejects:  resolve(JSON.parse("This ain't JSON"));});jsonPromise.then(function(data) {  // This never happens:  console.log("It worked!", data);}).catch(function(err) {  // Instead, this happens:  console.log("It failed!", err);})
+function getUsers(onSuccess) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Handle resolve and reject in the asynchronous API
+    }, 1000)
+  })
+}
 ```
 
-This means it's useful to do all your promise-related work inside the promise constructor callback, so errors are automatically caught and become rejections.
+Copy
 
-The same goes for errors thrown in `then()` callbacks.
+Set up the code so that if `onSuccess` is `true`, the timeout will fulfill with some data. If `false`, the function will reject with an error:
 
 ```
-get('/').then(JSON.parse).then(function() {  // This never happens, '/' is an HTML page, not JSON  // so JSON.parse throws  console.log("It worked!", data);}).catch(function(err) {  // Instead, this happens:  console.log("It failed!", err);})
+function getUsers(onSuccess) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Handle resolve and reject in the asynchronous API
+      if (onSuccess) {
+        resolve([
+          {id: 1, name: 'Jerry'},
+          {id: 2, name: 'Elaine'},
+          {id: 3, name: 'George'},
+        ])
+      } else {
+        reject('Failed to fetch data!')
+      }
+    }, 1000)
+  })
+}
 ```
 
-### Error handling in practice [#](https://web.dev/promises/#error-handling-in-practice)
+Copy
 
-With our story and chapters, we can use catch to display an error to the user:
+For the successful result, you return [JavaScript objects](https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript) that represent sample user data.
 
+In order to handle the error, you will use the `catch` instance method. This will give you a failure callback with the `error` as a parameter.
+
+Run the `getUser` command with `onSuccess` set to `false`, using the `then` method for the success case and the `catch` method for the error:
+
+```
+// Run the getUsers function with the false flag to trigger an error
+getUsers(false)
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 ```
-getJSON('story.json').then(function(story) {  return getJSON(story.chapterUrls[0]);}).then(function(chapter1) {  addHtmlToPage(chapter1.html);}).catch(function() {  addTextToPage("Failed to show chapter");}).then(function() {  document.querySelector('.spinner').style.display = 'none';})
+
+Copy
+
+Since the error was triggered, the `then` will be skipped and the `catch` will handle the error:
+
 ```
+OutputFailed to fetch data!
 
-If fetching `story.chapterUrls[0]` fails (e.g., http 500 or user is offline), it'll skip all following success callbacks, which includes the one in `getJSON()` which tries to parse the response as JSON, and also skips the callback that adds chapter1.html to the page. Instead it moves onto the catch callback. As a result, "Failed to show chapter" will be added to the page if any of the previous actions failed.
+```
 
-Like JavaScript's try/catch, the error is caught and subsequent code continues, so the spinner is always hidden, which is what we want. The above becomes a non-blocking async version of:
+If you switch the flag and `resolve` instead, the `catch` will be ignored, and the data will return instead:
 
 ```
-try {  var story = getJSONSync('story.json');  var chapter1 = getJSONSync(story.chapterUrls[0]);  addHtmlToPage(chapter1.html);}catch (e) {  addTextToPage("Failed to show chapter");}document.querySelector('.spinner').style.display = 'none'
+// Run the getUsers function with the true flag to resolve successfully
+getUsers(true)
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 ```
 
-You may want to `catch()` simply for logging purposes, without recovering from the error. To do this, just rethrow the error. We could do this in our `getJSON()` method:
+Copy
 
+This will yield the user data:
+
 ```
-function getJSON(url) {  return get(url).then(JSON.parse).catch(function(err) {    console.log("getJSON failed for", url, err);    throw err;  });}
+Output(3) [{...}, {...}, {...}]
+0: {id: 1, name: "Jerry"}
+1: {id: 2, name: "Elaine"}
+3: {id: 3, name: "George"}
+
 ```
+
+For reference, here is a table with the handler methods on `Promise` objects:
+
+| Method | Description |
+| --- | --- |
+| `then()` | Handles a `resolve`. Returns a promise, and calls `onFulfilled` function asynchronously |
+| `catch()` | Handles a `reject`. Returns a promise, and calls `onRejected` function asynchronously |
+| `finally()` | Called when a promise is settled. Returns a promise, and calls `onFinally` function asynchronously |
+
+Promises can be confusing, both for new developers and experienced programmers that have never worked in an asynchronous environment before. However as mentioned, it is much more common to consume promises than create them. Usually, a browser's Web API or third party library will be providing the promise, and you only need to consume it.
 
-So we've managed to fetch one chapter, but we want them all. Let's make that happen.
+In the final promise section, this tutorial will cite a common use case of a Web API that returns promises: [the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-## Parallelism and sequencing: getting the best of both [#](https://web.dev/promises/#parallelism-and-sequencing:-getting-the-best-of-both)
+### Using the Fetch API with Promises
 
-Thinking async isn't easy. If you're struggling to get off the mark, try writing the code as if it were synchronous. In this case:
+One of the most useful and frequently used Web APIs that returns a promise is the Fetch API, which allows you to make an asynchronous resource request over a network. `fetch` is a two-part process, and therefore requires chaining `then`. This example demonstrates hitting the GitHub API to fetch a user's data, while also handling any potential error:
 
 ```
-try {  var story = getJSONSync('story.json');  addHtmlToPage(story.heading);  story.chapterUrls.forEach(function(chapterUrl) {    var chapter = getJSONSync(chapterUrl);    addHtmlToPage(chapter.html);  });  addTextToPage("All done");}catch (err) {  addTextToPage("Argh, broken: " + err.message);}document.querySelector('.spinner').style.display = 'none'
+// Fetch a user from the GitHub API
+fetch('https://api.github.com/users/octocat')
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 ```
 
-That works! But it's sync and locks up the browser while things download. To make this work async we use `then()` to make things happen one after another.
+Copy
 
+The `fetch` request is sent to the `https://api.github.com/users/octocat` URL, which asynchronously waits for a response. The first `then` passes the response to an anonymous function that formats the response as [JSON data](https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript), then passes the JSON to a second `then` that logs the data to the console. The `catch` statement logs any error to the console.
+
+Running this code will yield the following:
+
 ```
-getJSON('story.json').then(function(story) {  addHtmlToPage(story.heading);  // TODO: for each url in story.chapterUrls, fetch &amp; display}).then(function() {  // And we're all done!  addTextToPage("All done");}).catch(function(err) {  // Catch any error that happened along the way  addTextToPage("Argh, broken: " + err.message);}).then(function() {  // Always hide the spinner  document.querySelector('.spinner').style.display = 'none';})
+Outputlogin: "octocat",
+id: 583231,
+avatar_url: "https://avatars3.githubusercontent.com/u/583231?v=4"
+blog: "https://github.blog"
+company: "@github"
+followers: 3203
+...
+
 ```
+
+This is the data requested from `https://api.github.com/users/octocat`, rendered in JSON format.
+
+This section of the tutorial showed that promises incorporate a lot of improvements for dealing with asynchronous code. But, while using `then` to handle asynchronous actions is easier to follow than the pyramid of callbacks, some developers still prefer a synchronous format of writing asynchronous code. To address this need, [ECMAScript 2016 (ES7)](https://www.ecma-international.org/ecma-262/7.0/index.html) introduced `async` functions and the `await` keyword to make working with promises easier.
 
-But how can we loop through the chapter urls and fetch them in order? This doesn't work:
+Async Functions with `async/await`
+----------------------------------
 
+An *`async` function* allows you to handle asynchronous code in a manner that appears synchronous. `async` functions still use promises under the hood, but have a more traditional JavaScript syntax. In this section, you will try out examples of this syntax.
+
+You can create an `async` function by adding the `async` keyword before a function:
+
 ```
-story.chapterUrls.forEach(function(chapterUrl) {  // Fetch chapter  getJSON(chapterUrl).then(function(chapter) {    // and add it to the page    addHtmlToPage(chapter.html);  });})
+// Create an async function
+async function getUser() {
+  return {}
+}
 ```
 
-`forEach` isn't async-aware, so our chapters would appear in whatever order they download, which is basically how Pulp Fiction was written. This isn't Pulp Fiction, so let's fix it.
+Copy
 
-### Creating a sequence [#](https://web.dev/promises/#creating-a-sequence)
+Although this function is not handling anything asynchronous yet, it behaves differently than a traditional function. If you execute the function, you'll find that it returns a promise with a `[[PromiseStatus]]` and `[[PromiseValue]]` instead of a return value.
 
-We want to turn our `chapterUrls` array into a sequence of promises. We can do that using `then()`:
+Try this out by logging a call to the `getUser` function:
 
 ```
-// Start off with a promise that always resolvesvar sequence = Promise.resolve();// Loop through our chapter urlsstory.chapterUrls.forEach(function(chapterUrl) {  // Add these actions to the end of the sequence  sequence = sequence.then(function() {    return getJSON(chapterUrl);  }).then(function(chapter) {    addHtmlToPage(chapter.html);  });})
+console.log(getUser())
 ```
+
+Copy
 
-This is the first time we've seen `Promise.resolve()`, which creates a promise that resolves to whatever value you give it. If you pass it an instance of `Promise` it'll simply return it (note: this is a change to the spec that some implementations don't yet follow). If you pass it something promise-like (has a `then()` method), it creates a genuine `Promise` that fulfills/rejects in the same way. If you pass in any other value, e.g., `Promise.resolve('Hello')`, it creates a promise that fulfills with that value. If you call it with no value, as above, it fulfills with "undefined".
+This will give the following:
 
-There's also `Promise.reject(val)`, which creates a promise that rejects with the value you give it (or undefined).
+```
+Output__proto__: Promise
+[[PromiseStatus]]: "fulfilled"
+[[PromiseValue]]: Object
+
+```
 
-We can tidy up the above code using [`array.reduce`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce):
+This means you can handle an `async` function with `then` in the same way you could handle a promise. Try this out with the following code:
 
 ```
-// Loop through our chapter urlsstory.chapterUrls.reduce(function(sequence, chapterUrl) {  // Add these actions to the end of the sequence  return sequence.then(function() {    return getJSON(chapterUrl);  }).then(function(chapter) {    addHtmlToPage(chapter.html);  });}, Promise.resolve())
+getUser().then((response) => console.log(response))
 ```
 
-This is doing the same as the previous example, but doesn't need the separate "sequence" variable. Our reduce callback is called for each item in the array. "sequence" is `Promise.resolve()` the first time around, but for the rest of the calls "sequence" is whatever we returned from the previous call. `array.reduce` is really useful for boiling an array down to a single value, which in this case is a promise.
+Copy
 
-Let's put it all together:
+This call to `getUser` passes the return value to an anonymous function that logs the value to the console.
 
+You will receive the following when you run this program:
+
 ```
-getJSON('story.json').then(function(story) {  addHtmlToPage(story.heading);  return story.chapterUrls.reduce(function(sequence, chapterUrl) {    // Once the last chapter's promise is done...    return sequence.then(function() {      // ...fetch the next chapter      return getJSON(chapterUrl);    }).then(function(chapter) {      // and add it to the page      addHtmlToPage(chapter.html);    });  }, Promise.resolve());}).then(function() {  // And we're all done!  addTextToPage("All done");}).catch(function(err) {  // Catch any error that happened along the way  addTextToPage("Argh, broken: " + err.message);}).then(function() {  // Always hide the spinner  document.querySelector('.spinner').style.display = 'none';})
+Output{}
+
 ```
 
-And there we have it, a fully async version of the sync version. But we can do better. At the moment our page is downloading like this:
+An `async` function can handle a promise called within it using the `await` operator. `await` can be used within an `async` function and will wait until a promise settles before executing the designated code.
 
-Browsers are pretty good at downloading multiple things at once, so we're losing performance by downloading chapters one after the other. What we want to do is download them all at the same time, then process them when they've all arrived. Thankfully there's an API for this:
+With this knowledge, you can rewrite the Fetch request from the last section using `async`/`await` as follows:
 
 ```
-Promise.all(arrayOfPromises).then(function(arrayOfResults) {  //...})
+// Handle fetch with async/await
+async function getUser() {
+  const response = await fetch('https://api.github.com/users/octocat')
+  const data = await response.json()
+
+  console.log(data)
+}
+
+// Execute async function
+getUser()
 ```
+
+Copy
+
+The `await` operators here ensure that the `data` is not logged before the request has populated it with data.
 
-`Promise.all` takes an array of promises and creates a promise that fulfills when all of them successfully complete. You get an array of results (whatever the promises fulfilled to) in the same order as the promises you passed in.
+Now the final `data` can be handled inside the `getUser` function, without any need for using `then`. This is the output of logging `data`:
 
 ```
-getJSON('story.json').then(function(story) {  addHtmlToPage(story.heading);  // Take an array of promises and wait on them all  return Promise.all(    // Map our array of chapter urls to    // an array of chapter json promises    story.chapterUrls.map(getJSON)  );}).then(function(chapters) {  // Now we have the chapters jsons in order! Loop through...  chapters.forEach(function(chapter) {    // ...and add to the page    addHtmlToPage(chapter.html);  });  addTextToPage("All done");}).catch(function(err) {  // catch any error that happened so far  addTextToPage("Argh, broken: " + err.message);}).then(function() {  document.querySelector('.spinner').style.display = 'none';})
+Outputlogin: "octocat",
+id: 583231,
+avatar_url: "https://avatars3.githubusercontent.com/u/583231?v=4"
+blog: "https://github.blog"
+company: "@github"
+followers: 3203
+...
+
 ```
 
-Depending on connection, this can be seconds faster than loading one-by-one, and it's less code than our first try. The chapters can download in whatever order, but they appear on screen in the right order.
+Note: In many environments, `async` is necessary to use `await`---however, some new versions of browsers and Node allow using top-level `await`, which allows you to bypass creating an async function to wrap the `await` in.
 
-However, we can still improve perceived performance. When chapter one arrives we should add it to the page. This lets the user start reading before the rest of the chapters have arrived. When chapter three arrives, we wouldn't add it to the page because the user may not realize chapter two is missing. When chapter two arrives, we can add chapters two and three, etc etc.
+Finally, since you are handling the fulfilled promise within the asynchronous function, you can also handle the error within the function. Instead of using the `catch` method with `then`, you will use the [`try`/`catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) pattern to handle the exception.
 
-To do this, we fetch JSON for all our chapters at the same time, then create a sequence to add them to the document:
+Add the following highlighted code:
 
 ```
-getJSON('story.json').then(function(story) {  addHtmlToPage(story.heading);  // Map our array of chapter urls to  // an array of chapter json promises.  // This makes sure they all download in parallel.  return story.chapterUrls.map(getJSON)    .reduce(function(sequence, chapterPromise) {      // Use reduce to chain the promises together,      // adding content to the page for each chapter      return sequence      .then(function() {        // Wait for everything in the sequence so far,        // then wait for this chapter to arrive.        return chapterPromise;      }).then(function(chapter) {        addHtmlToPage(chapter.html);      });    }, Promise.resolve());}).then(function() {  addTextToPage("All done");}).catch(function(err) {  // catch any error that happened along the way  addTextToPage("Argh, broken: " + err.message);}).then(function() {  document.querySelector('.spinner').style.display = 'none';})
+// Handling success and errors with async/await
+async function getUser() {
+  try {
+    // Handle success in try
+    const response = await fetch('https://api.github.com/users/octocat')
+    const data = await response.json()
+
+    console.log(data)
+  } catch (error) {
+    // Handle error in catch
+    console.error(error)
+  }
+}
 ```
+
+Copy
+
+The program will now skip to the `catch` block if it receives an error and log that error to the console.
+
+Modern asynchronous JavaScript code is most often handled with `async`/`await` syntax, but it is important to have a working knowledge of how promises work, especially as promises are capable of additional features that cannot be handled with `async`/`await`, like combining promises with [`Promise.all()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).
+
+Note: `async`/`await` can be reproduced by using [generators combined with promises](https://www.digitalocean.com/community/tutorials/understanding-generators-in-javascript#asyncawait-with-generators) to add more flexibility to your code. To learn more, check out our [Understanding Generators in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-generators-in-javascript) tutorial.
