@@ -253,7 +253,7 @@ If you can make this assumption, you can write [very extensive libraries](https
 
 Unfortunately, libraries like jQuery break this. This necessitates [ugly hacks](https://github.com/domenic/chai-as-promised/blob/4bc1d6b217acde85c8af56dc3cd09f05bb752549/lib/chai-as-promised.js#L28-30) to detect the presence of objects masquerading as promises, and who call themselves in their API documentation promises, but aren't really Promises/A promises. If the consumers of your API start trying to pass you jQuery promises, you have two choices: fail in mysterious and hard-to-decipher ways when your compositional techniques fail, or fail up-front and block them from using your library entirely. This sucks.    
     
-<details>    
+</details>    
 
 
 
