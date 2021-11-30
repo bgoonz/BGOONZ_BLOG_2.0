@@ -29,11 +29,57 @@ seo:
       relativeUrl: true
 template: docs
 ---
-# <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;"></span>
+# <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;"> SITEMAP </span>
 
 ***
 
-#
+# Blog Posts:
+
+- [📝300-react-questions/📝](https://bgoonz-blog.netlify.app/blog/300-react-questions/)
+  <br>
+
+- [📝flow-control-in-python/📝](https://bgoonz-blog.netlify.app/blog/flow-control-in-python/)
+  <br>
+
+- [📝functions-in-python/📝](https://bgoonz-blog.netlify.app/blog/functions-in-python/)
+  <br>
+
+- [📝awesome-graphql/📝](https://bgoonz-blog.netlify.app/blog/awesome-graphql/)
+  <br>
+
+- [📝netlify-cms/📝](https://bgoonz-blog.netlify.app/blog/netlify-cms/)
+  <br>
+
+- [📝web-dev-trends/📝](https://bgoonz-blog.netlify.app/blog/web-dev-trends/)
+  <br>
+
+- [📝data-structures/📝](https://bgoonz-blog.netlify.app/blog/data-structures/)
+  <br>
+
+- [📝big-o-complexity/📝](https://bgoonz-blog.netlify.app/blog/big-o-complexity/)
+  <br>
+
+- [📝interview-questions-js/📝](https://bgoonz-blog.netlify.app/blog/interview-questions-js/)
+  <br>
+
+- [📝git-gateway/📝](https://bgoonz-blog.netlify.app/blog/git-gateway/)
+  <br>
+
+- [📝blogwcomments/📝](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
+  <br>
+
+- [📝blog-archive/📝](https://bgoonz-blog.netlify.app/blog/blog-archive/)
+  <br>
+
+- [📝web-scraping/📝](https://bgoonz-blog.netlify.app/blog/web-scraping/)
+  <br>
+
+- [📝python-for-js-dev/📝](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+  <br>
+
+- [📝python-resources/📝](https://bgoonz-blog.netlify.app/blog/python-resources/)
+  <br>
+
 
 <div id="search>
 
