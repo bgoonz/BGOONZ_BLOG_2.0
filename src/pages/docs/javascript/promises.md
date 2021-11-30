@@ -1,16 +1,847 @@
 ---
 title: Promises
 weight: 0
-excerpt: Promises
+excerpt: A promise represents the eventual result of an asynchronous operation.
 seo:
-    title: ''
-    description: ''
+    title: 'Promises'
+    description: 'A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.'
     robots: []
     extra: []
 template: docs
 ---
 
-## Promises
+# Promises
+
+# What is a promise
+
+A promise represents the eventual result of an asynchronous operation.
+
+A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
+
+# What's wrong with callbacks ?
+
+Instead of values, we have function calls, which can be really cumbersome to coordinate.
+
+# Promise give
+
+- More clean code
+- Back to thinking about functions and values
+- If we failure Promise give use the reason why
+
+# Promise: Asynchronous Value
+
+1. Pending (no value)
+2. Fulfilled (value)
+3. Rejected (reason)
+
+A Promise is a little immutable object.
+
+# (ES6) Promise Operations
+
+Creating a new promise
+```js
+new promise((resolve, reject) =>)
+```
+
+Async the access to value/reason
+```js
+promise.then((val) => , (err) =>)
+```
+
+Wait for several promises
+```js
+Promise.all([promise, ...])
+```
+
+Wait for the first promise
+```js
+Promise.race([promise, ...])
+```
+
+Example:
+
+```js
+var email = getUser(name)
+    .then(function(user) {
+        return user.email;
+    })
+    .catch(function(err) {
+        log.error({err: err}, '...');
+        throw new BadUsername();
+    });
+```
+
+```js
+var g = getUser(name)
+    .then(function(user) {
+        return getGravatar(user.email);
+    });
+```
+
+```js
+var info = getUser(name)
+    .then(function(user) {
+        return Promise.all([
+            user,
+            getGravatar(user.email),
+            getTwitter(user.twitterHanlde),
+            getGithub(user.gitubName)
+        ]);
+    })
+```
+
+
+---
+
+
+
+Understanding Promises
+----------------------
+
+A Promise in short:
+
+"Imagine you are a kid. Your mom promises you that she'll get you a new phone next week."
+
+You *don't know* if you will get that phone until next week. Your mom can *really buy* you a brand new phone, or *she doesn't*.
+
+That is a promise. A promise has three states. They are:
+
+1.  Pending: You *don't know* if you will get that phone
+2.  Fulfilled: Mom is *happy*, she buys you a brand new phone
+3.  Rejected: Mom is *unhappy*, she doesn't buy you a phone
+
+
+
+<details>
+    <summary> Promises for Adults</summary>
+**Promises** are a software abstraction that makes working with asynchronous operations much more pleasant. In the most basic definition, your code will move from continuation-passing style:
+
+```
+getTweetsFor("domenic", function (err, results) {
+  // the rest of your code goes here.
+});
+
+```
+
+to one where your functions return a value, called a *promise*, which represents the eventual results of that operation.
+
+```
+var promiseForTweets = getTweetsFor("domenic");
+
+```
+
+This is powerful since you can now treat these promises as first-class objects, passing them around, aggregating them, and so on, instead of inserting dummy callbacks that tie together other callbacks in order to do the same.
+
+    
+Thenables and CommonJS Promises/A
+---------------------------------
+
+When someone says "promise" in a JavaScript context, usually they mean---or at least *think* they mean---[CommonJS Promises/A](http://wiki.commonjs.org/wiki/Promises/A). This is one of the smallest "specs" I've seen. The meat of it is entirely about specifying the behavior of a single function, `then`:
+
+> A promise is defined as an object that has a function as the value for the property `then`:
+>
+> `then(fulfilledHandler, errorHandler, progressHandler)`
+>
+> Adds a `fulfilledHandler`, `errorHandler`, and `progressHandler` to be called for completion of a promise. The `fulfilledHandler` is called when the promise is fulfilled. The `errorHandler` is called when a promise fails. The `progressHandler` is called for progress events. All arguments are optional and non-function values are ignored. The `progressHandler` is not only an optional argument, but progress events are purely optional. Promise implementors are not required to ever call a `progressHandler` (the `progressHandler` may be ignored), this parameter exists so that implementors may call it if they have progress events to report.
+>
+> This function should return a new promise that is fulfilled when the given `fulfilledHandler` or `errorHandler` callback is finished. This allows promise operations to be chained together. The value returned from the callback handler is the fulfillment value for the returned promise. If the callback throws an error, the returned promise will be moved to failed state.
+
+People mostly understand the first paragraph. It boils down to *callback aggregation*. You use `then` to attach callbacks to a promise, whether for success or for errors (or even progress). When the promise transitions state---which is out of scope of this very small spec!---your callbacks will be called. This is pretty useful, I guess.
+
+What people don't seem to notice is the second paragraph. Which is a shame, since it's the most important one.
+
+What Is the Point of Promises?
+------------------------------
+
+The thing is, promises are not *about* callback aggregation. That's a simple utility. Promises are about something much deeper, namely providing a direct correspondence between synchronous functions and asynchronous functions.
+
+What does this mean? Well, there are two very important aspects of synchronous functions:
+
+-   They *return values*
+-   They *throw exceptions*
+
+Both of these are essentially about composition. That is, you can feed the return value of one function straight into another, and keep doing this indefinitely. *More importantly*, if at any point that process fails, one function in the composition chain can throw an exception, which then bypasses all further compositional layers until it comes into the hands of someone who can handle it with a `catch`.
+
+Now, in an asynchronous world, you can no longer return values: they simply aren't ready in time. Similarly, you can't throw exceptions, because nobody's there to catch them. So we descend into the so-called "callback hell," where composition of return values involves nested callbacks, and composition of errors involves passing them up the chain manually, and oh by the way you'd better *never* throw an exception or else you'll need to introduce something crazy like [domains](https://nodejs.org/api/domain.html).
+
+*The point of promises is to give us back functional composition and error bubbling in the async world.* They do this by saying that your functions should return a promise, which can do one of two things:
+
+-   Become *fulfilled by a value*
+-   Become *rejected with an exception*
+
+And, *if* you have a correctly implemented `then` function that follows Promises/A, then fulfillment and rejection will compose just like their synchronous counterparts, with fulfillments flowing up a compositional chain, but being interrupted at any time by a rejection that is only handled by someone who declares they are ready to handle it.
+
+In other words, the following asynchronous code:
+
+```
+getTweetsFor("domenic") // promise-returning function
+  .then(function (tweets) {
+    var shortUrls = parseTweetsForUrls(tweets);
+    var mostRecentShortUrl = shortUrls[0];
+    return expandUrlUsingTwitterApi(mostRecentShortUrl); // promise-returning function
+  })
+  .then(httpGet) // promise-returning function
+  .then(
+    function (responseBody) {
+      console.log("Most recent link text:", responseBody);
+    },
+    function (error) {
+      console.error("Error with the twitterverse:", error);
+    }
+  );
+
+```
+
+parallels^[*](https://github.com/kriskowal/q/wiki/On-Exceptions)^ the synchronous code:
+
+```
+try {
+  var tweets = getTweetsFor("domenic"); // blocking
+  var shortUrls = parseTweetsForUrls(tweets);
+  var mostRecentShortUrl = shortUrls[0];
+  var responseBody = httpGet(expandUrlUsingTwitterApi(mostRecentShortUrl)); // blocking x 2
+  console.log("Most recent link text:", responseBody);
+} catch (error) {
+  console.error("Error with the twitterverse: ", error);
+}
+
+```
+
+Note in particular how errors flowed from any step in the process to our `catch` handler, without explicit by-hand bubbling code. And with the upcoming ECMAScript 6 revision of JavaScript, plus some [party tricks](http://taskjs.org/), the code becomes not only parallel but almost identical.
+
+That Second Paragraph
+---------------------
+
+All of this is essentially enabled by that second paragraph:
+
+> This function should return a new promise that is fulfilled when the given `fulfilledHandler` or `errorHandler` callback is finished. This allows promise operations to be chained together. The value returned from the callback handler is the fulfillment value for the returned promise. If the callback throws an error, the returned promise will be moved to failed state.
+
+In other words, `then` is *not* a mechanism for attaching callbacks to an aggregate collection. It's a mechanism for *applying a transformation* to a promise, and yielding a *new* promise from that transformation.
+
+This explains the crucial first phrase: "this function should return a new promise." Libraries like jQuery (before 1.8) don't do this: they simply mutate the state of the existing promise. That means if you give a promise out to multiple consumers, they can interfere with its state. To realize how ridiculous that is, consider the synchronous parallel: if you gave out a function's return value to two people, and one of them could somehow change it into a thrown exception! Indeed, Promises/A points this out explicitly:
+
+> Once a promise is fulfilled or failed, the promise's value MUST not be changed, just as a values in JavaScript, primitives and object identities, can not change (although objects themselves may always be mutable even if their identity isn't).
+
+Now consider the last two sentences. They inform how this new promise is created. In short:
+
+-   If either handler returns a value, the new promise is fulfilled with that value.
+-   If either handler throws an exception, the new promise is rejected with that exception.
+
+This breaks down into four scenarios, depending on the state of the promise. Here we give their synchronous parallels so you can see why it's crucially important to have semantics for all four:
+
+1.  Fulfilled, fulfillment handler returns a value: simple functional transformation
+2.  Fulfilled, fulfillment handler throws an exception: getting data, and throwing an exception in response to it
+3.  Rejected, rejection handler returns a value: a `catch` clause got the error and handled it
+4.  Rejected, rejection handler throws an exception: a `catch` clause got the error and re-threw it (or a new one)
+
+Without these transformations being applied, you lose all the power of the synchronous/asynchronous parallel, and your so-called "promises" become simple callback aggregators. This is the problem with jQuery's current "promises": they only support scenario 1 above, omitting entirely support for scenarios 2--4. This was also the problem with Node.js 0.1's `EventEmitter`-based "promises" (which weren't even `then`able).
+
+Furthermore, note that by catching exceptions and transforming them into rejections, we take care of both intentional and unintentional exceptions, just like in sync code. That is, if you write `aFunctionThatDoesNotExist()` in either handler, your promise becomes rejected and that error will bubble up the chain to the nearest rejection handler just as if you had written `throw new Error("bad data")`. Look ma, no domains!
+
+So What?
+--------
+
+Maybe you're breathlessly taken by my inexorable logic and explanatory powers. More likely, you're asking yourself why this guy is raging so hard over some poorly-behaved libraries.
+
+Here's the problem:
+
+> A promise is defined as an object that has a function as the value for the property `then`
+
+As authors of Promises/A-consuming libraries, we would like to assume this statement to be true: that something that is "thenable" actually behaves as a Promises/A promise, with all the power that entails.
+
+If you can make this assumption, you can write [very extensive libraries](https://github.com/domenic/chai-as-promised/) that are entirely agnostic to the implementation of the promises they accept! Whether they be from [Q](https://github.com/kriskowal/q), [when.js](https://github.com/cujojs/when), or even [WinJS](https://msdn.microsoft.com/en-us/library/windows/apps/br211867.aspx), you can use the simple composition rules of the Promises/A spec to build on promise behavior. For example, here's a generalized [retry function](https://gist.github.com/2936696) that works with any Promises/A implementation.
+
+Unfortunately, libraries like jQuery break this. This necessitates [ugly hacks](https://github.com/domenic/chai-as-promised/blob/4bc1d6b217acde85c8af56dc3cd09f05bb752549/lib/chai-as-promised.js#L28-30) to detect the presence of objects masquerading as promises, and who call themselves in their API documentation promises, but aren't really Promises/A promises. If the consumers of your API start trying to pass you jQuery promises, you have two choices: fail in mysterious and hard-to-decipher ways when your compositional techniques fail, or fail up-front and block them from using your library entirely. This sucks.    
+    
+<details>    
+
+
+
+Creating a Promise
+------------------
+
+Let's convert this to JavaScript.
+
+```
+// ES5: Part 1
+
+var isMomHappy = false;
+
+// Promise
+var willIGetNewPhone = new Promise(
+    function (resolve, reject) {
+        if (isMomHappy) {
+            var phone = {
+                brand: 'Samsung',
+                color: 'black'
+            };
+            resolve(phone); // fulfilled
+        } else {
+            var reason = new Error('mom is not happy');
+            reject(reason); // reject
+        }
+
+    }
+);
+```
+
+
+
+The code is quite expressive in itself.
+
+Below is how a promise syntax looks normally:
+
+```
+// promise syntax look like this
+new Promise(function (resolve, reject) { ... } );
+```
+
+
+
+Consuming Promises
+------------------
+
+Now that we have the promise, let's consume it:
+
+```
+// ES5: Part 2
+
+var willIGetNewPhone = ... // continue from part 1
+
+// call our promise
+var askMom = function () {
+    willIGetNewPhone
+        .then(function (fulfilled) {
+            // yay, you got a new phone
+            console.log(fulfilled);
+             // output: { brand: 'Samsung', color: 'black' }
+        })
+        .catch(function (error) {
+            // oops, mom didn't buy it
+            console.log(error.message);
+             // output: 'mom is not happy'
+        });
+};
+
+askMom();
+```
+
+
+
+Let's run the example and see the result!
+
+Demo: <https://jsbin.com/nifocu/1/edit?js,console>
+
+![Result](https://scotch-res.cloudinary.com/image/upload/q_auto:good,f_auto/media/272/nB0ffh3NQHaHKJRuBNpH_promise-true-false.gif)
+
+Chaining Promises
+-----------------
+
+Promises are chainable.
+
+Let's say you, the kid, promise your friend that you will show them the new phone when your mom buys you one.
+
+That is another promise. Let's write it!
+
+```
+// ES5
+
+// 2nd promise
+var showOff = function (phone) {
+    return new Promise(
+        function (resolve, reject) {
+            var message = 'Hey friend, I have a new ' +
+                phone.color + ' ' + phone.brand + ' phone';
+
+            resolve(message);
+        }
+    );
+};
+```
+
+
+
+Notes: We can shorten the above code by writing as below:
+
+```
+// shorten it
+
+// 2nd promise
+var showOff = function (phone) {
+    var message = 'Hey friend, I have a new ' +
+                phone.color + ' ' + phone.brand + ' phone';
+
+    return Promise.resolve(message);
+};
+```
+
+
+
+Let's chain the promises. You, the kid, can only start the `showOff` promise after the `willIGetNewPhone` promise.
+
+```
+// call our promise
+var askMom = function () {
+    willIGetNewPhone
+    .then(showOff) // chain it here
+    .then(function (fulfilled) {
+            console.log(fulfilled);
+         // output: 'Hey friend, I have a new black Samsung phone.'
+        })
+        .catch(function (error) {
+            // oops, mom don't buy it
+            console.log(error.message);
+         // output: 'mom is not happy'
+        });
+};
+```
+
+
+
+That is how you can chain the promise.
+
+Promises are Asynchronous
+-------------------------
+
+Promises are asynchronous. Let's log a message before and after we call the promise.
+
+```
+// call our promise
+var askMom = function () {
+    console.log('before asking Mom'); // log before
+    willIGetNewPhone
+        .then(showOff)
+        .then(function (fulfilled) {
+            console.log(fulfilled);
+        })
+        .catch(function (error) {
+            console.log(error.message);
+        });
+    console.log('after asking mom'); // log after
+}
+```
+
+
+
+What is the sequence of expected output? You might expect:
+
+```
+1\. before asking Mom
+2. Hey friend, I have a new black Samsung phone.
+3. after asking mom
+
+```
+
+However, the actual output sequence is:
+
+```
+1\. before asking Mom
+2. after asking mom
+3. Hey friend, I have a new black Samsung phone.
+
+```
+
+![Output](https://scotch-res.cloudinary.com/image/upload/q_auto:good,f_auto/media/272/X8Q1iZGeSqAEjksPdbQQ_bZ3MNiH8g1.gif)
+
+You wouldn't stop playing while waiting for your mom's promise (the new phone). That's something we call asynchronous: the code will run without blocking or waiting for the result. Anything that needs to wait for a promise to proceed is put in `.then`.
+
+Here is the full example in ES5:
+
+```
+// ES5: Full example
+
+var isMomHappy = true;
+
+// Promise
+var willIGetNewPhone = new Promise(
+    function (resolve, reject) {
+        if (isMomHappy) {
+            var phone = {
+                brand: 'Samsung',
+                color: 'black'
+            };
+            resolve(phone); // fulfilled
+        } else {
+            var reason = new Error('mom is not happy');
+            reject(reason); // reject
+        }
+
+    }
+);
+
+// 2nd promise
+var showOff = function (phone) {
+    var message = 'Hey friend, I have a new ' +
+                phone.color + ' ' + phone.brand + ' phone';
+
+    return Promise.resolve(message);
+};
+
+// call our promise
+var askMom = function () {
+    willIGetNewPhone
+    .then(showOff) // chain it here
+    .then(function (fulfilled) {
+            console.log(fulfilled);
+            // output: 'Hey friend, I have a new black Samsung phone.'
+        })
+        .catch(function (error) {
+            // oops, mom don't buy it
+            console.log(error.message);
+            // output: 'mom is not happy'
+        });
+};
+
+askMom();
+```
+
+
+
+Promises in ES5, ES6/2015, ES7/Next
+-----------------------------------
+
+#### ES5 - Majority browsers
+
+The demo code is workable in ES5 environments (all major browsers + NodeJs) if you include [Bluebird](http://bluebirdjs.com/docs/getting-started.html) promise library. It's because ES5 doesn't support promises out of the box. Another famous promise library is [Q](https://github.com/kriskowal/q) by Kris Kowal.
+
+#### ES6 / ES2015 - Modern browsers, NodeJs v6
+
+The demo code works out of the box because ES6 supports promises natively. In addition, with ES6 functions, we can further simplify the code with an arrow function and use `const` and `let`.
+
+Here is the full example in ES6 code:
+
+```
+//_ ES6: Full example_
+
+const isMomHappy = true;
+
+// Promise
+const willIGetNewPhone = new Promise(
+    (resolve, reject) => { // fat arrow
+        if (isMomHappy) {
+            const phone = {
+                brand: 'Samsung',
+                color: 'black'
+            };
+            resolve(phone);
+        } else {
+            const reason = new Error('mom is not happy');
+            reject(reason);
+        }
+
+    }
+);
+
+// 2nd promise
+const showOff = function (phone) {
+    const message = 'Hey friend, I have a new ' +
+                phone.color + ' ' + phone.brand + ' phone';
+    return Promise.resolve(message);
+};
+
+// call our promise
+const askMom = function () {
+    willIGetNewPhone
+        .then(showOff)
+        .then(fulfilled => console.log(fulfilled)) // fat arrow
+        .catch(error => console.log(error.message)); // fat arrow
+};
+
+askMom();
+```
+
+
+
+Note that all the `var` are replaced with `const`. All of the `function(resolve, reject)` have been simplified to `(resolve, reject) =>`. There are a few benefits that come with these changes.
+
+#### ES7 - Async/Await
+
+ES7 introduced `async` and `await` syntax. It makes the asynchronous syntax easier to understand, without the `.then` and `.catch`.
+
+Rewrite our example with ES7 syntax:
+
+```
+// ES7: Full example
+const isMomHappy = true;
+
+// Promise
+const willIGetNewPhone = new Promise(
+    (resolve, reject) => {
+        if (isMomHappy) {
+            const phone = {
+                brand: 'Samsung',
+                color: 'black'
+            };
+            resolve(phone);
+        } else {
+            const reason = new Error('mom is not happy');
+            reject(reason);
+        }
+
+    }
+);
+
+// 2nd promise
+async function showOff(phone) {
+    return new Promise(
+        (resolve, reject) => {
+            var message = 'Hey friend, I have a new ' +
+                phone.color + ' ' + phone.brand + ' phone';
+
+            resolve(message);
+        }
+    );
+};
+
+// call our promise in ES7 async await style
+async function askMom() {
+    try {
+        console.log('before asking Mom');
+
+        let phone = await willIGetNewPhone;
+        let message = await showOff(phone);
+
+        console.log(message);
+        console.log('after asking mom');
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+}
+
+// async await it here too
+(async () => {
+    await askMom();
+})();
+```
+
+
+
+Promises and When to Use Them
+-----------------------------
+
+Why do we need promises? How did the world look before promises? Before answering these questions, let's go back to the fundamentals.
+
+### Normal Function VS Async Function
+
+Let's take a look at these two examples. Both examples perform the addition of two numbers: one adds using normal functions, and the other adds remotely.
+
+#### Normal Function to Add Two Numbers
+
+```
+// add two numbers normally
+
+function add (num1, num2) {
+    return num1 + num2;
+}
+
+const result = add(1, 2); // you get result = 3 immediately
+```
+
+
+
+##### Async Function to Add Two numbers
+
+```
+// add two numbers remotely
+
+// get the result by calling an API
+const result = getAddResultFromServer('http://www.example.com?num1=1&num2=2');
+// you get result  = "undefined"
+```
+
+
+
+If you add the numbers with the normal function, you get the result immediately. However, when you issue a remote call to get the result, you need to wait, and you can't get the result immediately.
+
+You don't know if you will get the result because the server might be down, slow in response, etc. You don't want your entire process to be blocked while waiting for the result.
+
+Calling APIs, downloading files, and reading files are among some of the usual async operations that you'll perform.
+
+You do not need to use promises for an asynchronous call. Prior to promises, we used callbacks. Callbacks are a function you call when you get the return result. Let's modify the previous example to accept a callback.
+
+```
+// add two numbers remotely
+// get the result by calling an API
+
+function addAsync (num1, num2, callback) {
+    // use the famous jQuery getJSON callback API
+    return $.getJSON('http://www.example.com', {
+        num1: num1,
+        num2: num2
+    }, callback);
+}
+
+addAsync(1, 2, success => {
+    // callback
+    const result = success; // you get result = 3 here
+});
+```
+
+
+
+### Subsequent Async Action
+
+Instead of adding the numbers one at a time, we want to add three times. In a normal function, we would do this:-
+
+```
+// add two numbers normally
+
+let resultA, resultB, resultC;
+
+ function add (num1, num2) {
+    return num1 + num2;
+}
+
+resultA = add(1, 2); // you get resultA = 3 immediately
+resultB = add(resultA, 3); // you get resultB = 6 immediately
+resultC = add(resultB, 4); // you get resultC = 10 immediately
+
+console.log('total' + resultC);
+console.log(resultA, resultB, resultC);
+```
+
+
+
+This is how this looks with callbacks:
+
+```
+// add two numbers remotely
+// get the result by calling an API
+
+let resultA, resultB, resultC;
+
+function addAsync (num1, num2, callback) {
+    // use the famous jQuery getJSON callback API
+    // https://api.jquery.com/jQuery.getJSON/
+    return $.getJSON('http://www.example.com', {
+        num1: num1,
+        num2: num2
+    }, callback);
+}
+
+addAsync(1, 2, success => {
+    // callback 1
+    resultA = success; // you get result = 3 here
+
+    addAsync(resultA, 3, success => {
+        // callback 2
+        resultB = success; // you get result = 6 here
+
+        addAsync(resultB, 4, success => {
+            // callback 3
+            resultC = success; // you get result = 10 here
+
+            console.log('total' + resultC);
+            console.log(resultA, resultB, resultC);
+        });
+    });
+});
+```
+
+
+
+Demo: <https://jsbin.com/barimo/edit?html,js,console>
+
+This syntax is less user-friendly due to the deeply nested callbacks.
+
+### Avoiding Deeply Nested Callbacks
+
+Promises can help you avoid deeply nested callbacks. Let's look at the promise version of the same example:
+
+```
+// add two numbers remotely using observable
+
+let resultA, resultB, resultC;
+
+function addAsync(num1, num2) {
+    // use ES6 fetch API, which return a promise
+    // What is .json()? https://developer.mozilla.org/en-US/docs/Web/API/Body/json
+    return fetch(`http://www.example.com?num1=${num1}&num2=${num2}`)
+        .then(x => x.json());
+}
+
+addAsync(1, 2)
+    .then(success => {
+        resultA = success;
+        return resultA;
+    })
+    .then(success => addAsync(success, 3))
+    .then(success => {
+        resultB = success;
+        return resultB;
+    })
+    .then(success => addAsync(success, 4))
+    .then(success => {
+        resultC = success;
+        return resultC;
+    })
+    .then(success => {
+        console.log('total: ' + success)
+        console.log(resultA, resultB, resultC)
+    });
+```
+
+
+
+With promises, we flatten the callback with `.then`. In a way, it looks cleaner because there is no callback nesting. With ES7 `async` syntax, you could further enhance this example.
+
+Observables
+-----------
+
+Before you settle down with promises, there is something that has come about to help you deal with async data called `Observables`.
+
+Let's look at the same demo written with Observables. In this example, we will use [RxJS](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html) for the observables.
+
+```
+let Observable = Rx.Observable;
+let resultA, resultB, resultC;
+
+function addAsync(num1, num2) {
+    // use ES6 fetch API, which return a promise
+    const promise = fetch(`http://www.example.com?num1=${num1}&num2=${num2}`)
+        .then(x => x.json());
+
+    return Observable.fromPromise(promise);
+}
+
+addAsync(1,2)
+  .do(x => resultA = x)
+  .flatMap(x => addAsync(x, 3))
+  .do(x => resultB = x)
+  .flatMap(x => addAsync(x, 4))
+  .do(x => resultC = x)
+  .subscribe(x => {
+    console.log('total: ' + x)
+    console.log(resultA, resultB, resultC)
+  });
+```
+
+
+
+Observables can do more interesting things. For example, `delay` add function by `3 seconds` with just one line of code or retry so you can retry a call a certain number of times.
+
+```
+...
+
+addAsync(1,2)
+  .delay(3000) // delay 3 seconds
+  .do(x => resultA = x)
+  ...
+```
+
+
+
+
+
+
+
+
+
+
+
+---
+
 
 JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. In browsers, JavaScript shares a thread with a load of other stuff that differs from browser to browser. But typically JavaScript is in the same queue as painting, updating styles, and handling user actions (such as highlighting text and interacting with form controls). Activity in one of these things delays the others.
 
