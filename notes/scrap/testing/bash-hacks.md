@@ -57,7 +57,7 @@ This means that if you crash or your session terminates improperly, you lose the
 
 Use `$PROMPT_COMMAND` variable to save each command right after it has been executed.
 
-Append the following line to `~/.bashrc` file, if the variable `$PROMPT_COMMAND` hasn’t been set yet:
+Append the following line to `~/.bashrc` file, if the variable `$PROMPT_COMMAND` hasn't been set yet:
 
 PROMPT_COMMAND='history -a'
 
@@ -71,9 +71,9 @@ PROMPT_COMMAND='$PROMPT_COMMAND; history -a'
 
 | Value       | Description                                           |
 | ----------- | ----------------------------------------------------- |
-| ignorespace | don’t save lines which begin with a <space> character |
-| ignoredups  | don’t save lines matching the previous history entry  |
-| ignoreboth  | use both ‘ignorespace’ and ‘ignoredups’               |
+| ignorespace | don't save lines which begin with a <space> character |
+| ignoredups  | don't save lines matching the previous history entry  |
+| ignoreboth  | use both 'ignorespace' and 'ignoredups'               |
 | erasedups   | eliminate duplicates across the whole history         |
 
 Example:
@@ -84,11 +84,11 @@ export HISTCONTROL=ignorespace:erasedups
 
 `HISTIGNORE` is a colon-separated list of patterns used to decide which command lines should be saved in the history file.
 
-Don’t save `ls`, `ps` and `history` commands:
+Don't save `ls`, `ps` and `history` commands:
 
 export HISTIGNORE="ls:ps:history"
 
-Don’t save commands with `s` in the beginig:
+Don't save commands with `s` in the beginig:
 
 export HISTIGNORE="s\*"
 

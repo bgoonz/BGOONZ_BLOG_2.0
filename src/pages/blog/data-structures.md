@@ -1,19 +1,21 @@
 ---
-title: Data Structures
-subtitle: lorem-ipsum
-date: '2021-06-03'
-thumb_image_alt: lorem-ipsum
+title: Leetcode (Data Structures)
+subtitle: practice
+date: '2021-09-14'
+thumb_image_alt: Big O Cheat Sheet
 excerpt: A guide to computational complexity
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: post
 image: images/ds.PNG
-thumb_image: images/polite-sage.jpg
+thumb_image: images/bigo-8f9701e1.jpg
 ---
+
+# Leetcode
 
 ## Data Structures & Algorithms
 
@@ -31,43 +33,39 @@ A subsequence of a string is a new string which is formed from the original stri
 
 **Example 1:**
 
-```
-Input: S = "rabbbit", T = "rabbit"
-Output: 3
-Explanation:
+    Input: S = "rabbbit", T = "rabbit"
+    Output: 3
+    Explanation:
 
-As shown below, there are 3 ways you can generate "rabbit" from S.
-(The caret symbol ^ means the chosen letters)
+    As shown below, there are 3 ways you can generate "rabbit" from S.
+    (The caret symbol ^ means the chosen letters)
 
-rabbbit
-^^^^ ^^
-rabbbit
-^^ ^^^^
-rabbbit
-^^^ ^^^
-```
+    rabbbit
+    ^^^^ ^^
+    rabbbit
+    ^^ ^^^^
+    rabbbit
+    ^^^ ^^^
 
 **Example 2:**
 
-```
-Input: S = "babgbag", T = "bag"
-Output: 5
-Explanation:
+    Input: S = "babgbag", T = "bag"
+    Output: 5
+    Explanation:
 
-As shown below, there are 5 ways you can generate "bag" from S.
-(The caret symbol ^ means the chosen letters)
+    As shown below, there are 5 ways you can generate "bag" from S.
+    (The caret symbol ^ means the chosen letters)
 
-babgbag
-^^ ^
-babgbag
-^^    ^
-babgbag
-^    ^^
-babgbag
-  ^  ^^
-babgbag
-    ^^^
-```
+    babgbag
+    ^^ ^
+    babgbag
+    ^^    ^
+    babgbag
+    ^    ^^
+    babgbag
+      ^  ^^
+    babgbag
+        ^^^
 
 ### Solution:
 
@@ -572,11 +570,9 @@ Bonus point if you are able to do this using only _O_(_n_) extra space, where _n
 
 Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i][j]`.
 
-```
-f(i, 0) = f(i-1, j) + triangle[i][0]
-f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
-f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
-```
+    f(i, 0) = f(i-1, j) + triangle[i][0]
+    f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
+    f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
 
 Dynamic array can be used.
 
@@ -724,11 +720,9 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```
-Input: [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transaction is done, i.e. max profit = 0.
-```
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ### Solution:
 
@@ -774,16 +768,14 @@ Say you have an array for which the *i*th element is the price of a given stock 
 
 Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
 
-**Note:**You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+\*\*Note:\*\*You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
 **Example 1:**
 
-```
-Input: [3,3,5,0,0,3,1,4]
-Output: 6
-Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
-             Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
-```
+    Input: [3,3,5,0,0,3,1,4]
+    Output: 6
+    Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+                 Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
 
 **Example 2:**
 
@@ -798,11 +790,9 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```
-Input: [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transaction is done, i.e. max profit = 0.
-```
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ### Solution:
 
@@ -810,17 +800,13 @@ Multiple transactions may not be engaged in at the same time. That means if we v
 
 Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](./121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
 
-```
-p1(0) = 0
-p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
-```
+    p1(0) = 0
+    p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
 
 Define `p2(i)` to be the max profit of day `[i...n-1]`. This is the mirror of `p1`.
 
-```
-p2(n-1) = 0
-p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
-```
+    p2(n-1) = 0
+    p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
 
 Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
 
@@ -912,13 +898,13 @@ Output: 42
 For every `node`, there are six possible ways to get the max path sum:
 
 -   With `node.val`
-    1. `node.val` plus the max sum of a path that ends with `node.left`.
-    2. `node.val` plus the max sum of a path that starts with `node.right`.
-    3. `node.val` plus the max sum of both paths.
-    4. Just `node.val` (the max sum of both paths are negative).
+    1.  `node.val` plus the max sum of a path that ends with `node.left`.
+    2.  `node.val` plus the max sum of a path that starts with `node.right`.
+    3.  `node.val` plus the max sum of both paths.
+    4.  Just `node.val` (the max sum of both paths are negative).
 -   Without`node.val` (disconnected)
-    1. The max-sum path is somewhere under the `node.left` subtree.
-    2. The max-sum path is somewhere under the `node.right` subtree.
+    1.  The max-sum path is somewhere under the `node.left` subtree.
+    2.  The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -1134,8 +1120,8 @@ Similar Questions:
 
 Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
 
-1. Only one letter can be changed at a time
-2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1.  Only one letter can be changed at a time
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
@@ -1264,8 +1250,8 @@ Similar Questions:
 
 Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
 
-1. Only one letter can be changed at a time.
-2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1.  Only one letter can be changed at a time.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
@@ -1450,34 +1436,30 @@ Find the total sum of all root-to-leaf numbers.
 
 **Example:**
 
-```
-Input: [1,2,3]
-    1
-   / \
-  2   3
-Output: 25
-Explanation:
-The root-to-leaf path 1->2 represents the number 12.
-The root-to-leaf path 1->3 represents the number 13.
-Therefore, sum = 12 + 13 = 25.
-```
+    Input: [1,2,3]
+        1
+       / \
+      2   3
+    Output: 25
+    Explanation:
+    The root-to-leaf path 1->2 represents the number 12.
+    The root-to-leaf path 1->3 represents the number 13.
+    Therefore, sum = 12 + 13 = 25.
 
 **Example 2:**
 
-```
-Input: [4,9,0,5,1]
-    4
-   / \
-  9   0
- / \
-5   1
-Output: 1026
-Explanation:
-The root-to-leaf path 4->9->5 represents the number 495.
-The root-to-leaf path 4->9->1 represents the number 491.
-The root-to-leaf path 4->0 represents the number 40.
-Therefore, sum = 495 + 491 + 40 = 1026.
-```
+    Input: [4,9,0,5,1]
+        4
+       / \
+      9   0
+     / \
+    5   1
+    Output: 1026
+    Explanation:
+    The root-to-leaf path 4->9->5 represents the number 495.
+    The root-to-leaf path 4->9->1 represents the number 491.
+    The root-to-leaf path 4->0 represents the number 40.
+    Therefore, sum = 495 + 491 + 40 = 1026.
 
 ### Solution:
 
@@ -1664,9 +1646,9 @@ As an example, consider the serialized graph `{0,1,2#1,2#2,2}`.
 
 The graph has a total of three nodes, and therefore contains three parts as separated by `#`.
 
-1. First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
-2. Second node is labeled as `1`. Connect node `1` to node `2`.
-3. Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
+1.  First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
+2.  Second node is labeled as `1`. Connect node `1` to node `2`.
+3.  Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
 
 Visually, the graph looks like the following:
 
@@ -1802,19 +1784,19 @@ For this problem, a height-balanced binary tree is defined as:
 
 ![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
 
-**Input:** root = \[3,9,20,null,null,15,7\]
+**Input:** root = \[3,9,20,null,null,15,7]
 **Output:** true
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
 
-**Input:** root = \[1,2,2,3,3,null,null,4,4\]
+**Input:** root = \[1,2,2,3,3,null,null,4,4]
 **Output:** false
 
 **Example 3:**
 
-**Input:** root = \[\]
+**Input:** root = \[]
 **Output:** true
 
 **Constraints:**
@@ -1832,16 +1814,16 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 **Example:**
 
-Given the sorted array: \[-10,-3,0,5,9\],
+Given the sorted array: \[-10,-3,0,5,9],
 
-One possible answer is: \[0,-3,9,-10,null,5\], which represents the following height balanced BST:
+One possible answer is: \[0,-3,9,-10,null,5], which represents the following height balanced BST:
 
       0
      / \\
 
--3 9
+\-3 9
 / /
--10 5
+\-10 5
 
 [Source](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)# Delete Node in a BST
 
@@ -1860,23 +1842,23 @@ Basically, the deletion can be divided into two stages:
 
 ![](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
 
-**Input:** root = \[5,3,6,2,4,null,7\], key = 3
-**Output:** \[5,4,6,2,null,null,7\]
+**Input:** root = \[5,3,6,2,4,null,7], key = 3
+**Output:** \[5,4,6,2,null,null,7]
 **Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
-One valid answer is \[5,4,6,2,null,null,7\], shown in the above BST.
-Please notice that another valid answer is \[5,2,6,null,4,null,7\] and it's also accepted.
+One valid answer is \[5,4,6,2,null,null,7], shown in the above BST.
+Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also accepted.
 ![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
 
 **Example 2:**
 
-**Input:** root = \[5,3,6,2,4,null,7\], key = 0
-**Output:** \[5,3,6,2,4,null,7\]
+**Input:** root = \[5,3,6,2,4,null,7], key = 0
+**Output:** \[5,3,6,2,4,null,7]
 **Explanation:** The tree does not contain a node with value = 0.
 
 **Example 3:**
 
-**Input:** root = \[\], key = 0
-**Output:** \[\]
+**Input:** root = \[], key = 0
+**Output:** \[]
 
 **Constraints:**
 

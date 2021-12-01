@@ -7,7 +7,10 @@ import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
 export default class Body extends React.Component {
     render() {
         return (
@@ -47,6 +50,8 @@ export default class Body extends React.Component {
                 </Helmet>
                 <div id="page" className="site">
                     <Header {...this.props} />
+                    {/* INSERT SEARCH BAR HERE */}
+                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" /> */}
                     <main id="content" className="site-content">
                         {this.props.children}
                     </main>

@@ -1,6 +1,6 @@
 ---
 title: Resume
-weight: 1
+weight: 0
 seo:
     title: Resume
     description: >-

@@ -6,7 +6,7 @@ html {
 body {
     background: $gray-100;
     color: $gray-600;
-    line-height: 1.625;
+    line-height: 1.725;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -16,27 +16,49 @@ body {
 a {
     color: $color-primary;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.125em;
     -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 
     &:hover {
         color: $gray-600;
     }
 }
 
+#social-embed {
+    // position: absolute !important;
+    // right: 50px !important;
+    bottom: 120px !important;
+    width: 100% !important;
+    width: 1000px !important;
+  box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
+    height: 400px !important;
+    overflow: scroll !important;
+    border: 1px dotted black;
+    // z-index: -1;
+}
+
 iframe {
     overflow-y: scroll;
     overflow-x: scroll;
     border-radius: 12px;
-    border: 2px solid gold;
-    height: 1500px !important;
-    width: 95%;
-    resize: both;
-    overflow: scroll;
+    border: 1px dotted black;
+    height: 1200px;
+  box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
+    width: 1200px;
+    resize: both ;
+    overflow: scroll ;
+}
+code{
+       -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+pre{
+       -webkit-box-shadow:0 1px 4px rgba(155, 155, 155, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(124, 124, 124, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(184, 137, 137, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 h1,
 h2,
 h3,
@@ -110,7 +132,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -170,8 +192,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
@@ -189,10 +211,14 @@ hr {
 img {
     height: auto;
     max-width: 100%;
-    border-radius:10px;
+    border-radius: 10px;
+    :not(.site-logo) {
+  box-shadow: inset 10px 10px 50px #fff;
+}
+     
 }
 
-@media only screen and (min-width: 841px) {
+@media only screen and (min-width: 741px) {
     blockquote {
         font-size: 1.5em;
         line-height: 1.3;
@@ -221,9 +247,4 @@ img {
     h6 {
         font-size: 1.125em;
     }
-}
-
-.gcse-search {
-    width: 30%;
-    height: 50%;
 }
