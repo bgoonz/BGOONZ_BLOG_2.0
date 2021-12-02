@@ -59,6 +59,14 @@ template: docs
 <br>
 <hr>
 <br>
+<hr>
+<br>
+<h1>  React Calculator  </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://react-calculator2.vercel.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
+<br>
+<br>
 
 <hr>
 
