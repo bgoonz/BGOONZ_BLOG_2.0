@@ -303,7 +303,6 @@ template: docs
 <br>
 <br>
 
-
 <br>
 <h1> Text Tools     </h1>
 <br>
@@ -536,31 +535,31 @@ template: docs
       <br>
     
         <br>
-    <iframe loading="lazy" src="https://portfolio42.netlify.app/"
-      style="width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;" title="hvbrd-sockets (forked)"
-      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
-    <br>
-    
-      <br>
-      <!-------------------------------------------------------------------------------------->
-      <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Video Background 1"
-        src="https://codesandbox.io/embed/bgoonzblog20-oo3x5?fontsize=14&hidenavigation=1&theme=dark"
-        style="width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;" title="bgoonzblog2.0"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
-      <br>
-      <br>
-      <br>
-      <!-------------------------------------------------------------------------------------->
-      <br>
-      <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Video Background 1"
-        src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" frameborder="no"
-        loading="lazy" allowtransparency="true" allowfullscreen="true">
-        See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
-          Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
-        on <a href="https://codepen.io">CodePen</a>.
-      </iframe>
-      <!-------------------------------------------------------------------------------------->
-      <br>
+<iframe loading="lazy" src="https://portfolio42.netlify.app/"
+  style="width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;" title="hvbrd-sockets (forked)"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+<br>
+
+  <br>
+  <!-------------------------------------------------------------------------------------->
+  <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Video Background 1"
+    src="https://codesandbox.io/embed/bgoonzblog20-oo3x5?fontsize=14&hidenavigation=1&theme=dark"
+    style="width:90%; height:575px; border:0; border-radius: 4px; overflow:hidden;" title="bgoonzblog2.0"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+  <br>
+  <br>
+  <br>
+  <!-------------------------------------------------------------------------------------->
+  <br>
+  <iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Video Background 1"
+    src="https://codepen.io/bgoonz/embed/BaRLKBd?default-tab=html%2Cresult&theme-id=dark" frameborder="no"
+    loading="lazy" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/bgoonz/pen/BaRLKBd">
+      Video Background 1</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+    on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+  <!-------------------------------------------------------------------------------------->
+  <br>
 <br>
       <!-------------------------------------------------------------------------------------->
       <br>
