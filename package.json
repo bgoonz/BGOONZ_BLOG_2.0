@@ -1,7 +1,7 @@
 {
-    "name": "bgoonzblog",
-    "description": "bgoonzblog",
-    "version": "2.0.0",
+    "name": "stackbit-libris-theme",
+    "description": "Stackbit Libris Theme",
+    "version": "0.0.1",
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
@@ -36,4 +36,5 @@
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
     }
+    
 }
