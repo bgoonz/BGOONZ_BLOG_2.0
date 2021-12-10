@@ -2,4 +2,6 @@
 2.    Fix broken Links
 3.    Algolia Search
 4.    Visitor Content Authoring.
+5.    Dark Mode
+6.    
 
