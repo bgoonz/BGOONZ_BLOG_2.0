@@ -65,7 +65,7 @@ Written in quiz format
 
 **9. When is a JavaScript Error Object thrown?**
 
--   <span id="55cf">The Error object is how JavaScript deals with runtime errors — so at code runtime!</span>
+-   <span id="55cf">The Error object is how JavaScript deals with runtime errors — so at code runtime!</span>
 
 **10. When kind of error is thrown when the JavaScript engine attempts to parse code that does not conform to the syntax of the JavaScript language?**
 

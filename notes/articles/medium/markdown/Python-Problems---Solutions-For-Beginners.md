@@ -142,8 +142,8 @@ Write a program to determine whether a given input is a `Toeplitz` matrix.
 Given a positive integer `N`, find the smallest number of steps it will take to reach `1`.
 
 There are two kinds of permitted steps:  
- — -&gt; You may decrement N to N — 1.  
- — -&gt; If `a * b = N`, you may decrement `N to the larger of a and b`.
+ — -&gt; You may decrement N to N — 1.  
+ — -&gt; If `a * b = N`, you may decrement `N to the larger of a and b`.
 
 For example, given 100, you can reach 1 in 5 steps with the following route:  
 `100 -> 10 -> 9 -> 3 -> 2 -> 1.`

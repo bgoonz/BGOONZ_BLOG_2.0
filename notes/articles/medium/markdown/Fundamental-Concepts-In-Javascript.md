@@ -108,7 +108,7 @@ This is the stuff that comes up on interviews…
 -   <span id="6bc8">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
 -   <span id="b80e">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
 -   <span id="5ae1">inner scope does not have access to variables in the outer scope</span>
--   <span id="068c">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
+-   <span id="068c">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
 -   <span id="c44e">so an inner scope can access outer scope variables</span>
 -   <span id="37e1">but an outer scope can never access inner scope variables</span>
 
@@ -145,14 +145,14 @@ This is the stuff that comes up on interviews…
 
 -   <span id="e43c">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="568d">it will let you access other pieces of information from within that object, or even other methods</span>
--   <span id="3cc8">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="3cc8">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
 -   <span id="e9b1">context is set every time we invoke a function</span>
 -   <span id="5423">function style invocation sets the context to the global object no matter what</span>
 -   <span id="31b8">being inside an object does not make the context that object! you still have to use method-style invocation</span>
 -   <span id="fa5a">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
--   <span id="5e6d">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
+-   <span id="5e6d">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
-can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won 't be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
+can also work with arguments, so you can have a version of a function with particular arguments and a particular context.the first arg will be the context aka the \`this\` you want it to use.the next arguments will be the functions arguments that you are binding — if you just want to bind it to those arguments in particular, you can use \`null\` as the first argument, so the context won 't be bound, just the arguments — Given a code snippet, identify what \`this\` refers to
 
 > Important to recognize the difference between scope and context
 
@@ -186,14 +186,14 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
--   <span id="05bb">Boolean — Primitive</span>
--   <span id="a5ab">Null — Primitive</span>
--   <span id="8aa7">Undefined — Primitive</span>
--   <span id="5c6b">Number — Primitive</span>
--   <span id="2e68">String — Primitive</span>
--   <span id="e2a1">Array — Reference</span>
--   <span id="1fe0">Object — Reference</span>
--   <span id="545b">Function — Reference</span>
+-   <span id="05bb">Boolean — Primitive</span>
+-   <span id="a5ab">Null — Primitive</span>
+-   <span id="8aa7">Undefined — Primitive</span>
+-   <span id="5c6b">Number — Primitive</span>
+-   <span id="2e68">String — Primitive</span>
+-   <span id="e2a1">Array — Reference</span>
+-   <span id="1fe0">Object — Reference</span>
+-   <span id="545b">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 

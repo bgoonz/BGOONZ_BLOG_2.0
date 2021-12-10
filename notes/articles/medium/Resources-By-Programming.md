@@ -14,8 +14,8 @@ Here's a list of programming resources sorted by programming language.
 -   <span id="86cd">K&R C book (ANSI C)</span>
 -   <span id="322f"><a href="https://www.youtube.com/watch?v=U3zCxnj2w8M" class="markup--anchor markup--li-anchor">Make, Clang (video)</a></span>
 -   <span id="a17b">GDB:</span>
--   <span id="8915"><a href="https://www.youtube.com/watch?v=USPvePv1uzE" class="markup--anchor markup--li-anchor">Harvard CS50 — GDB (video)</a></span>
--   <span id="1a2c"><a href="https://www.youtube.com/watch?v=y5JmQItfFck" class="markup--anchor markup--li-anchor">Harvard CS50 — GDB (video)</a></span>
+-   <span id="8915"><a href="https://www.youtube.com/watch?v=USPvePv1uzE" class="markup--anchor markup--li-anchor">Harvard CS50 — GDB (video)</a></span>
+-   <span id="1a2c"><a href="https://www.youtube.com/watch?v=y5JmQItfFck" class="markup--anchor markup--li-anchor">Harvard CS50 — GDB (video)</a></span>
 -   <span id="f35c"><a href="https://www.youtube.com/watch?v=fvTsFjDuag8" class="markup--anchor markup--li-anchor">Valgrind (video)</a></span>
 -   <span id="a02f"><a href="https://books.google.co.in/books/about/Let_Us_C.html?id=7HrjAAAACAAJ" class="markup--anchor markup--li-anchor">Let us C</a></span>
 
@@ -51,19 +51,19 @@ Here's a list of programming resources sorted by programming language.
 -   <span id="a349"><a href="https://www.youtube.com/watch?v=JDSGVvMwNM8" class="markup--anchor markup--li-anchor">Faster Python (video)</a></span>
 -   <span id="e024"><a href="https://www.youtube.com/watch?v=LhadeL7_EIU&amp;list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S&amp;index=6" class="markup--anchor markup--li-anchor">CPython Walk (video)</a></span>
 -   <span id="da79"><a href="https://www.youtube.com/watch?v=_O23jIXsshs" class="markup--anchor markup--li-anchor">10 Tips for Pythonic Code (video)</a></span>
--   <span id="2d17"><a href="https://www.youtube.com/watch?v=wf-BqAjZb8M" class="markup--anchor markup--li-anchor">Beyond PEP 8 — Best practices for beautiful intelligible code (video)</a></span>
+-   <span id="2d17"><a href="https://www.youtube.com/watch?v=wf-BqAjZb8M" class="markup--anchor markup--li-anchor">Beyond PEP 8 — Best practices for beautiful intelligible code (video)</a></span>
 -   <span id="de47"><a href="https://automatetheboringstuff.com/" class="markup--anchor markup--li-anchor">Automate the Boring Stuff with Python</a></span>
 -   <span id="dbe9"><a href="https://github.com/ajinkyal121/coding-interview-university/blob/master/extras/cheat%20sheets/Coding%20Interview%20Python%20Language%20Essentials.pdf" class="markup--anchor markup--li-anchor">Coding Interview Essentials</a></span>
 -   <span id="aa97"><a href="https://www.youtube.com/watch?v=kQDxmjfkIKY" class="markup--anchor markup--li-anchor">Data Structures And Algorithms in Python</a></span>
 
 ### Java
 
--   <span id="e7b2"><a href="https://see.stanford.edu/Course/CS106A" class="markup--anchor markup--li-anchor">Stanford CS106A — Programming Methodology (video)</a></span>
+-   <span id="e7b2"><a href="https://see.stanford.edu/Course/CS106A" class="markup--anchor markup--li-anchor">Stanford CS106A — Programming Methodology (video)</a></span>
 -   <span id="3c65"><a href="https://www.edx.org/course/software-construction-java-mitx-6-005-1x" class="markup--anchor markup--li-anchor">Software Construction In Java (video)</a></span>
 -   <span id="1ebe"><a href="http://introcs.cs.princeton.edu/java/home/" class="markup--anchor markup--li-anchor">Introduction To Programming In Java</a></span>
--   <span id="ad86"><a href="http://algs4.cs.princeton.edu/home/" class="markup--anchor markup--li-anchor">Algorithms 4th Ed — Algorithm Book In Java</a></span>
+-   <span id="ad86"><a href="http://algs4.cs.princeton.edu/home/" class="markup--anchor markup--li-anchor">Algorithms 4th Ed — Algorithm Book In Java</a></span>
 -   <span id="835a"><a href="https://www.amazon.com/Effective-Java-Joshua-Bloch-ebook/dp/B078H61SCH" class="markup--anchor markup--li-anchor">Effective Java 3rd Edition</a></span>
--   <span id="cba0"><a href="https://www.youtube.com/watch?v=RBSGKlAvoiM&amp;t=1744s" class="markup--anchor markup--li-anchor">Data Structures Easy to Advanced Course — Full Tutorial from a Google Engineer</a></span>
+-   <span id="cba0"><a href="https://www.youtube.com/watch?v=RBSGKlAvoiM&amp;t=1744s" class="markup--anchor markup--li-anchor">Data Structures Easy to Advanced Course — Full Tutorial from a Google Engineer</a></span>
 
 ### Go
 
@@ -74,7 +74,7 @@ Here's a list of programming resources sorted by programming language.
 -   <span id="7281"><a href="https://golang.org/wiki" class="markup--anchor markup--li-anchor">Go Wiki</a></span>
 -   <span id="775f"><a href="https://talks.golang.org/2012/splash.article" class="markup--anchor markup--li-anchor">Go at Google: Language Design in the Service of Software Engineering</a></span>
 -   <span id="72e6"><a href="http://go-proverbs.github.io/" class="markup--anchor markup--li-anchor">Go Proverbs</a></span>
--   <span id="0359"><a href="https://www.youtube.com/watch?v=PAAkCSZUG1c" class="markup--anchor markup--li-anchor">Go Proverbs — Rob Pike (video)</a></span>
+-   <span id="0359"><a href="https://www.youtube.com/watch?v=PAAkCSZUG1c" class="markup--anchor markup--li-anchor">Go Proverbs — Rob Pike (video)</a></span>
 
 ### HTML
 

@@ -23,12 +23,12 @@ As I learn to build web applications in React I will blog about it in this serie
 
 ### React Demo
 
--   <span id="91c8">ex1 — A Basic React Component</span>
--   <span id="78f6">ex2 — A Basic React Class Component</span>
--   <span id="1e73">ex3 — A Class Component with State</span>
--   <span id="ba57">ex4 — A Class Component that Updates State</span>
--   <span id="203a">ex5 — A Class Component that Iterates through State</span>
--   <span id="8087">ex6 — An Example of Parent and Child Components</span>
+-   <span id="91c8">ex1 — A Basic React Component</span>
+-   <span id="78f6">ex2 — A Basic React Class Component</span>
+-   <span id="1e73">ex3 — A Class Component with State</span>
+-   <span id="ba57">ex4 — A Class Component that Updates State</span>
+-   <span id="203a">ex5 — A Class Component that Iterates through State</span>
+-   <span id="8087">ex6 — An Example of Parent and Child Components</span>
 
 With regards to converting an existing HTML, CSS, and JS site into React, first you'll want to think about how to break up your site into components,
 
@@ -525,7 +525,7 @@ PropTypes allow you to declare the type (string, number, function, etc) of each 
 
 ### Excerpt from the React website:
 
-### React — A JavaScript library for building user interfaces
+### React — A JavaScript library for building user interfaces
 
 > _A JavaScript library for building user interfaces_
 

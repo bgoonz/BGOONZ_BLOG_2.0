@@ -244,7 +244,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 #### Are We Really All Connected by Just Six Degrees of Separation?
 
-Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
+Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
 ---
 

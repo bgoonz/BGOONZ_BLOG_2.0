@@ -28,15 +28,15 @@ Since abstract data types don't specify an implementation, this means it's also 
 
 Further Reading:
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#map_object" class="markup--anchor markup--p-anchor">Keyed collections — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#map_object" class="markup--anchor markup--p-anchor">Keyed collections — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages" class="markup--anchor markup--p-anchor">Details of the object model — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages" class="markup--anchor markup--p-anchor">Details of the object model — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="markup--anchor markup--p-anchor">Set — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="markup--anchor markup--p-anchor">Set — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="markup--anchor markup--p-anchor">Map — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="markup--anchor markup--p-anchor">Map — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" class="markup--anchor markup--p-anchor">JavaScript data types and data structures — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" class="markup--anchor markup--p-anchor">JavaScript data types and data structures — JavaScript | MDN (mozilla.org)</a>
 
 ### For more content… go to :
 

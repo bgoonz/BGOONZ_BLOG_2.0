@@ -138,7 +138,7 @@ _Current Experience_
 
 > **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you'll be a good hire.
 
-> **_⚫_**Unlike the more specific questions we've outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
+> **_⚫_**Unlike the more specific questions we've outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
 
 > **_⚫_**To come up with your elevator pitch, you'll need to do some planning and consolidation.
 
@@ -200,7 +200,7 @@ Professional growth opportunities
 
 > **_⚫_**How to answer salary expectations?
 
-> **_⚫_**“What are you salary expectations?” can be a daunting question. If talking about money wasn't uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
+> **_⚫_**“What are you salary expectations?” can be a daunting question. If talking about money wasn't uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
 
 ---
 
@@ -263,11 +263,11 @@ Professional growth opportunities
 
 > **_⚫For the least favorite parts, don't just list the downsides and failures, but also mention what you've learned from it and how you would improve._**
 
-> **_⚫ Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority._**
+> **_⚫ Ensure that you come across humbled from the failures, not exasperated and that you know better than everyone else — even if you truly feel this way! Explain how you tried to positively encourage your team to correct the course rather than staying silent and going with a consensus majority._**
 
 ### **_3. Based on the project, what programming languages / tools / services did you use? And why did you choose them?_**
 
-> **_⚫ Questions like this are designed to allow you to showcase your way of thinking. The interviewer is looking to hear your ability to make choices based on rational decisions — so make sure that you show that you can do this!_**
+> **_⚫ Questions like this are designed to allow you to showcase your way of thinking. The interviewer is looking to hear your ability to make choices based on rational decisions — so make sure that you show that you can do this!_**
 
 > **_To begin with, give an example of a project in which you had the most ownership or you had the greatest sense of achievement/efficiency/effectiveness from the toolchain used._**
 
@@ -299,7 +299,7 @@ Professional growth opportunities
 
 > **_⚫It makes sense at this point to include documentation (and particularly inline documentation) you use that helps clarify functions/issues so that testing goes smoothly._**
 
-> **_⚫You may also mention a project you were involved in where testing was not well conducted and how you would — or did — go about fixing the issues._**
+> **_⚫You may also mention a project you were involved in where testing was not well conducted and how you would — or did — go about fixing the issues._**
 
 ### Monitoring
 
@@ -352,7 +352,7 @@ Professional growth opportunities
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:

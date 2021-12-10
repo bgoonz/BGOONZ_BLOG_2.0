@@ -35,7 +35,7 @@ template: docs
     // after the route has been fully configured, we then export it so it can be required where needed
     module.exports = router; // standard convention dictates that this is the last line on the file
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Objective 1 — explain the role of a foreign key
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Objective 1 — explain the role of a foreign key
 
 ### Overview
 
@@ -59,7 +59,7 @@ Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in" cl
 
 How many records in the products table belong to the category “confections”?
 
-### Objective 2 — query data from multiple tables
+### Objective 2 — query data from multiple tables
 
 Now that we understand the basics of querying data from a single table, let's move on to selecting data from multiple tables using JOIN operations.
 
@@ -133,11 +133,11 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
-The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
+The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
 1.  <span id="31e6">SQL EQUI JOIN :</span>
 
-The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
+The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
 1.  <span id="d86b">SQL NON EQUI JOIN :</span>
 
@@ -145,7 +145,7 @@ The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equa
 
 **SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
-The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
+The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
 1.  <span id="c9b5">SQL INNER JOIN</span>
 
@@ -277,7 +277,7 @@ _Click on the following to get the slides presentation -_
     </span>
 -   <span id="b3da">More to come!</span>
 
-### Objective 3 — write database access methods
+### Objective 3 — write database access methods
 
 ### Overview
 
@@ -765,8 +765,8 @@ Beyond datatypes, we may add additional **constraints** on each field. Some exam
 
 -   <span id="14ca">**Not Null:** The field cannot be left empty</span>
 -   <span id="b533">**Unique:** No two records can have the same value in this field</span>
--   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
--   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
+-   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
+-   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
@@ -1200,11 +1200,11 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
-The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
+The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
 1.  <span id="2bb1">SQL EQUI JOIN :</span>
 
-The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
+The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
 1.  <span id="a9be">SQL NON EQUI JOIN :</span>
 
@@ -1212,7 +1212,7 @@ The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equa
 
 **SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
-The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
+The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
 1.  <span id="cf44">SQL INNER JOIN</span>
 

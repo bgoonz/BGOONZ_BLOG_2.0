@@ -32,7 +32,7 @@ This means much faster development, less time and effort spent re-inventing the 
 
 -   <span id="b7d3">**Enterprise-grade component hub** with all features out of the box.</span>
 -   <span id="7572">**All the organization's reusable code** in **one central place**.</span>
--   <span id="28bc">**Semantic search** and **discoverability** for components — find **in seconds**. **Smart filtering** for component **weight**, **dependencies**, **labels** and more.</span>
+-   <span id="28bc">**Semantic search** and **discoverability** for components — find **in seconds**. **Smart filtering** for component **weight**, **dependencies**, **labels** and more.</span>
 -   <span id="5702">**Automated visual documentation** for components- generated from the code, **always updated**, and rich with props, API reference, **visually rendered** examples, and **customizable** with all the latest techs like MDX.</span>
 -   <span id="b3ac">**View Adoption Metrics** to understand how and where components are used and the impact of components across teams and apps.</span>
 -   <span id="e49f">**Super easy for devs to push** reusable components to the hub with Bit right from any codebase.</span>
@@ -114,7 +114,7 @@ Just by virtue of saving a public Pen, you're also making it public to the world
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*GcLsRU-PNXX-bGt6_Z5vPw.png" class="graf-image" /></figure>
 
-More than 40,000 people have gotten developer jobs after completing this — including at big companies like Google and Microsoft. If you are new to programming, we recommend you start at the beginning and earn these certifications in order. To earn each certification, build its 5 required projects and get all their tests to pass. You can add these certifications to your résumé or LinkedIn. But more important than the certifications is the practice you get along the way. If you feel overwhelmed, that is normal. Programming is hard. Practice is the key. Practice, practice, practice. And this curriculum will give you thousands of hours of hands-on programming practice.
+More than 40,000 people have gotten developer jobs after completing this — including at big companies like Google and Microsoft. If you are new to programming, we recommend you start at the beginning and earn these certifications in order. To earn each certification, build its 5 required projects and get all their tests to pass. You can add these certifications to your résumé or LinkedIn. But more important than the certifications is the practice you get along the way. If you feel overwhelmed, that is normal. Programming is hard. Practice is the key. Practice, practice, practice. And this curriculum will give you thousands of hours of hands-on programming practice.
 
 And if you want to learn more math and computer science theory, we also have thousands of hours of video courses on <a href="https://youtube.com/freecodecamp" class="markup--anchor markup--p-anchor">freeCodeCamp's YouTube channel</a>. If you want to get a developer job or freelance clients, programming skills will be just part of the puzzle. You also need to build your personal network and your reputation as a developer. You can do this on Twitter and GitHub, and also on <a href="https://forum.freecodecamp.org/" class="markup--anchor markup--p-anchor">the freeCodeCamp forum</a>.
 

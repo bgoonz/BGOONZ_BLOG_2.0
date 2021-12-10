@@ -44,7 +44,7 @@ Recall that Arrays contain _contiguous_ data. Each element of an array is actual
 
 _An Array's contiguous data being stored in a continuous block of addresses in memory._
 
-Unlike Arrays, Linked Lists contain _non-contiguous_ data. Though Linked Lists _represent_ data that is ordered linearly, that mental model is just that — an interpretation of the _representation_ of information, not reality.
+Unlike Arrays, Linked Lists contain _non-contiguous_ data. Though Linked Lists _represent_ data that is ordered linearly, that mental model is just that — an interpretation of the _representation_ of information, not reality.
 
 In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List's Nodes are not stored in a single continuous block of addresses. Rather, Linked List Nodes live at randomly distributed addresses throughout your machine! The only reason we know which node comes next in the list is because we've assigned its reference to the current node's `next` pointer.
 
@@ -83,7 +83,7 @@ Before we begin our analysis, here is a quick summary of the Time and Space cons
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-### Time Complexity — Access and Search
+### Time Complexity — Access and Search
 
 #### Scenarios
 
@@ -98,7 +98,7 @@ In Scenario 1, we'll know we're there because we've iterated 8 times. In Scenari
 
 In the worst case scenario, we may have to traverse the entire Linked List until we arrive at the final node. This makes both Access & Search **Linear Time** operations.
 
-### Time Complexity — Insertion and Deletion
+### Time Complexity — Insertion and Deletion
 
 #### Scenarios
 
@@ -204,7 +204,7 @@ Data Structure Operation Time Complexity (Avg)Time Complexity (Worst)Space Compl
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-#### Time Complexity — Access and Search
+#### Time Complexity — Access and Search
 
 When the Stack ADT was first conceived, its inventor definitely did not prioritize searching and accessing individual Nodes or values in the list. The same idea applies for the Queue ADT. There are certainly better data structures for speedy search and lookup, and if these operations are a priority for your use case, it would be best to choose something else!
 
@@ -212,7 +212,7 @@ Search and Access are both linear time operations for Stacks and Queues, and tha
 
 This is a linear time operation, O(n).
 
-#### Time Complexity — Insertion and Deletion
+#### Time Complexity — Insertion and Deletion
 
 For Stacks and Queues, insertion and deletion is what it's all about. If there is one feature a Stack absolutely must have, it's constant time insertion and removal to and from the `top` of the Stack (FIFO). The same applies for Queues, but with insertion occurring at the `back` and removal occurring at the `front` (LIFO).
 
@@ -265,7 +265,7 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />

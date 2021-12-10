@@ -758,7 +758,7 @@ code:
 
 ### Description:
 
-Important: If you have any local changes, they will be lost. With or without — hard option, any local commits that haven't been pushed will be lost.\[\*\] If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
+Important: If you have any local changes, they will be lost. With or without — hard option, any local commits that haven't been pushed will be lost.\[\*\] If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
 > _Notes: First, run a fetch to update all origin/ refs to latest:_
 
@@ -789,7 +789,7 @@ code:
 
 > _Notes:_
 
-> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
+> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
 
 code:
 

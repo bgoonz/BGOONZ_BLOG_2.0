@@ -36,7 +36,7 @@ Here you can see in just the first frame of my blog site 5 different embedded wi
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>### 5.) :You can also embed a JSFiddle like a code-sandbox.
 
-<a href="https://codesandbox.io/s/bigo-forked-dhpjq" class="markup--anchor markup--p-anchor">bigO (forked) — CodeSandbox</a>
+<a href="https://codesandbox.io/s/bigo-forked-dhpjq" class="markup--anchor markup--p-anchor">bigO (forked) — CodeSandbox</a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>#### 6.) :GIF :
 

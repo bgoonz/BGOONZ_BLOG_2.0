@@ -72,13 +72,13 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 · **Describe the four rules of the 'this' keyword.**
 
-1. Window/global binding — this is the window/console object. 'use strict'; to prevent window binding.
+1. Window/global binding — this is the window/console object. 'use strict'; to prevent window binding.
 
-2. Implicit binding — when a function is called by a dot, the object preceding the dot is the 'this'. 80 percent of 'this' is from this type of binding.
+2. Implicit binding — when a function is called by a dot, the object preceding the dot is the 'this'. 80 percent of 'this' is from this type of binding.
 
-3. New binding — points to new object created & returned by constructor function
+3. New binding — points to new object created & returned by constructor function
 
-4. Explicit binding — whenever call, bind, or apply are used.
+4. Explicit binding — whenever call, bind, or apply are used.
 
 · **Why do we need super() in an extended class?**
 
@@ -174,11 +174,11 @@ Many services out in the wild require the client (our React app, for example) to
 
 · **What steps can you take in your web apps to keep your data secure?**
 
-As we build our web apps, we will most likely have some “protected” routes — routes that we only want to render if the user has logged in and been authenticated by our server. The way this normally works is we make a login request, sending the server the user's username and password. The server will check those credentials against what is in the database, and if it can authenticate the user, it will return a token. Once we have this token, we can add two layers of protection to our app. One with protected routes, the other by sending an authentication header with our API calls (as we learned in the above objective).
+As we build our web apps, we will most likely have some “protected” routes — routes that we only want to render if the user has logged in and been authenticated by our server. The way this normally works is we make a login request, sending the server the user's username and password. The server will check those credentials against what is in the database, and if it can authenticate the user, it will return a token. Once we have this token, we can add two layers of protection to our app. One with protected routes, the other by sending an authentication header with our API calls (as we learned in the above objective).
 
 · **Describe how web servers work.**
 
-The “world wide web” (which we'll refer to as “the web”) is just a part of the internet — which is itself a network of interconnected computers. The web is just one way to share data over the internet. It consists of a body of information stored on web servers, ready to be shared across the world. The term “web server” can mean two things:
+The “world wide web” (which we'll refer to as “the web”) is just a part of the internet — which is itself a network of interconnected computers. The web is just one way to share data over the internet. It consists of a body of information stored on web servers, ready to be shared across the world. The term “web server” can mean two things:
 
 · a computer that stores the code for a website
 
@@ -259,7 +259,7 @@ Header, payload, signature
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:

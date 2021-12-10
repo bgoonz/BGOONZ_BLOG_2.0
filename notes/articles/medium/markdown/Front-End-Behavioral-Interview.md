@@ -18,7 +18,7 @@ Tip: Similar to the last question, interviewers are looking for honesty here. So
 
 ### 3. WHICH PROGRAMMING LANGUAGES ARE YOU PROFICIENT IN? ARE THERE ANY LANGUAGES YOU'RE NOT FAMILIAR WITH THAT YOU FEEL LIKE YOU NEED TO LEARN?
 
-Tip: This question is pretty straightforward — -let the interviewer know which languages you're familiar with and how you use them. Ideally, you've scoped out the job beforehand and know that your experience syncs with what the employer needs. At the same time, have some new languages in mind that you'd like to learn. This highlights your willingness to keep growing professionally.
+Tip: This question is pretty straightforward — -let the interviewer know which languages you're familiar with and how you use them. Ideally, you've scoped out the job beforehand and know that your experience syncs with what the employer needs. At the same time, have some new languages in mind that you'd like to learn. This highlights your willingness to keep growing professionally.
 
 ### 4. WHY ARE YOU DRAWN TO WEB DEVELOPMENT?
 
@@ -46,7 +46,7 @@ Tip: As a web developer you'll find yourself in situations where you need to tal
 
 ### 10. GIVE AN EXAMPLE OF A WEBSITE OR WEB APPLICATION THAT YOU DON'T LIKE, POINT OUT WHAT'S WRONG WITH IT AND WHAT YOU WOULD CHANGE.
 
-Tip: Interviewers may ask you to provide an example of a website you think is less than stellar, then ask you to describe what you think is lacking and what you'd do to improve it. It's a good idea to have examples and explanations on hand (as well as examples of sites you think are super effective) going into an interview. Answering this question comprehensively shows interviewers that you aren't signing on to mindlessly write code — -you understand what makes good sites good and how to make bad sites better.
+Tip: Interviewers may ask you to provide an example of a website you think is less than stellar, then ask you to describe what you think is lacking and what you'd do to improve it. It's a good idea to have examples and explanations on hand (as well as examples of sites you think are super effective) going into an interview. Answering this question comprehensively shows interviewers that you aren't signing on to mindlessly write code — -you understand what makes good sites good and how to make bad sites better.
 
 ### 11. WHAT KIND OF MANAGEMENT STYLE DO YOU RESPOND TO BEST?
 

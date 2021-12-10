@@ -65,7 +65,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content consistently reflect the editorial or brand voice?
 
-> Does its tone adjust appropriately to the context — for example, sales versus customer service?
+> Does its tone adjust appropriately to the context — for example, sales versus customer service?
 
 > Does the content convey the appropriate editorial and brand qualities?
 
@@ -83,7 +83,7 @@ A set of questions you should use before handing off your application to the cli
 
 > Does the content have the appropriate metadata?
 
-> Does the content follow search engine optimization (SEO) guidelines — such as using keywords — without sacrificing quality in other areas?
+> Does the content follow search engine optimization (SEO) guidelines — such as using keywords — without sacrificing quality in other areas?
 
 > Can customers find the content when searching using relevant keywords?
 
@@ -373,7 +373,7 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*v1hxqLrwUWL2dbBX" class="graf-image" /></figure><a href="https://fonts.google.com/" class="markup--anchor markup--p-anchor">Google FontsAn interactive directory of over 800 free hosted web fonts. It allows to optimize loading speed by including only what you need. <em>fonts.google.com</em></a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*n4slofmCAW3PUOTn" class="graf-image" /></figure><a href="https://fontawesome.com/" class="markup--anchor markup--p-anchor">Font AwesomeThe most popular icon set based on CSS and LESS. The vector icons can be customized as text — size, color, drop shadow <em>fontawesome.io</em></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*n4slofmCAW3PUOTn" class="graf-image" /></figure><a href="https://fontawesome.com/" class="markup--anchor markup--p-anchor">Font AwesomeThe most popular icon set based on CSS and LESS. The vector icons can be customized as text — size, color, drop shadow <em>fontawesome.io</em></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_k2GQpr-IXMCfCbD" class="graf-image" /></figure><a href="https://rgbcolorcode.com/" class="markup--anchor markup--p-anchor">RGB Color CodesSearch and save color codes. Search by name or mix the RGB, HSV or CMYK values. Use the generated HTML/CSS codes. <em>rgbcolorcode.com</em></a>
 

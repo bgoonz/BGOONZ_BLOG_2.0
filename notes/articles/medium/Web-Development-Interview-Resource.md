@@ -12,13 +12,13 @@ Most good programmers do programming not because they expect to get paid or get 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*NxgTgQI5Bhf3BZLD.gif" class="graf-image" /></figure>### Books
 
--   <span id="7484">Steven Skiena — <a href="http://www.algorist.com/" class="markup--anchor markup--li-anchor">The Algorithm Design Manual</a></span>
--   <span id="bd3f">Udi Manber — <a href="https://www.amazon.com/Introduction-Algorithms-Creative-Udi-Manber/dp/0201120372" class="markup--anchor markup--li-anchor">Introduction to Algorithms: A Creative Approach</a></span>
--   <span id="c22b">Cormen, Leiserson, Rivest, Stein — <a href="https://mitpress.mit.edu/books/introduction-algorithms" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a></span>
--   <span id="18c8">Sedgewick, Wayne — <a href="http://algs4.cs.princeton.edu/home/" class="markup--anchor markup--li-anchor">Algorithms</a></span>
--   <span id="1ad7">Antti Laaksonen — <a href="https://cses.fi/book.html" class="markup--anchor markup--li-anchor">Competitive Programmer's Handbook</a></span>
--   <span id="c865">Steven & Felix Halim — <a href="https://cpbook.net/" class="markup--anchor markup--li-anchor">Competitive Programming</a></span>
--   <span id="28b6">Jon Bentley — <a href="http://www.wou.edu/~jcm/Spring-P-2015/Programming%20Pearls%20%282nd%20Ed%29%20Bentley.pdf" class="markup--anchor markup--li-anchor">Programming Pearls</a></span>
+-   <span id="7484">Steven Skiena — <a href="http://www.algorist.com/" class="markup--anchor markup--li-anchor">The Algorithm Design Manual</a></span>
+-   <span id="bd3f">Udi Manber — <a href="https://www.amazon.com/Introduction-Algorithms-Creative-Udi-Manber/dp/0201120372" class="markup--anchor markup--li-anchor">Introduction to Algorithms: A Creative Approach</a></span>
+-   <span id="c22b">Cormen, Leiserson, Rivest, Stein — <a href="https://mitpress.mit.edu/books/introduction-algorithms" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a></span>
+-   <span id="18c8">Sedgewick, Wayne — <a href="http://algs4.cs.princeton.edu/home/" class="markup--anchor markup--li-anchor">Algorithms</a></span>
+-   <span id="1ad7">Antti Laaksonen — <a href="https://cses.fi/book.html" class="markup--anchor markup--li-anchor">Competitive Programmer's Handbook</a></span>
+-   <span id="c865">Steven & Felix Halim — <a href="https://cpbook.net/" class="markup--anchor markup--li-anchor">Competitive Programming</a></span>
+-   <span id="28b6">Jon Bentley — <a href="http://www.wou.edu/~jcm/Spring-P-2015/Programming%20Pearls%20%282nd%20Ed%29%20Bentley.pdf" class="markup--anchor markup--li-anchor">Programming Pearls</a></span>
 -   <span id="339b"><a href="https://e-maxx-eng.appspot.com/" class="markup--anchor markup--li-anchor">E-Maxx Algorithms</a></span>
 -   <span id="ceb7"><a href="https://e-maxx.ru/algo/" class="markup--anchor markup--li-anchor">Original [RU]</a></span>
 -   <span id="4d99"><a href="https://github.com/vhf/free-programming-books" class="markup--anchor markup--li-anchor">vhf/free-programming-books</a></span>
@@ -45,11 +45,11 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ### Guides
 
--   <span id="75f3"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="5522"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+-   <span id="75f3"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+-   <span id="5522"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
 -   <span id="b68d"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
 -   <span id="2a15"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="1516">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+-   <span id="1516">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
 ### Misc
 
@@ -61,57 +61,57 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ### Articles
 
--   <span id="7fd7">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2008/03/get-that-job-at-google.html" class="markup--anchor markup--li-anchor">Get That Job at Google</a></span>
--   <span id="b7a3">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2007_09_01_archive.html" class="markup--anchor markup--li-anchor">Ten Tips for a (Slightly) Less Awful Resume</a></span>
--   <span id="e918">Carlos Bueno — <a href="https://www.facebook.com/notes/10150964382448920" class="markup--anchor markup--li-anchor">Get That Job at Facebook</a></span>
--   <span id="c2db">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2012/11/25/how-to-prepare-for-technical-interviews/" class="markup--anchor markup--li-anchor">How to Prepare for Technical Interviews</a></span>
--   <span id="ddca">David Byttow — <a href="https://medium.com/tech-talk/d5f8051afce2" class="markup--anchor markup--li-anchor">ABC: Always Be Coding</a></span>
--   <span id="192b">David Byttow — <a href="https://medium.com/this-happened-to-me/8f381aa6bd5e" class="markup--anchor markup--li-anchor">Four Steps to Google, Without a Degree</a></span>
--   <span id="4859">Thomas L. Friedman — How to Get a Job at Google \[<a href="http://mobile.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html" class="markup--anchor markup--li-anchor">part 1</a>\] \[<a href="http://mobile.nytimes.com/2014/04/20/opinion/sunday/friedman-how-to-get-a-job-at-google-part-2.html" class="markup--anchor markup--li-anchor">part 2</a>\]</span>
--   <span id="a8f4">Andrew Rothbart — <a href="https://www.facebook.com/notes/10151298476823920" class="markup--anchor markup--li-anchor">Preparing for a technical interview with programming contests</a></span>
--   <span id="2288">Mina Azib — <a href="http://itsallonesandzeroes.blogspot.ro/2013/07/prepping-for-google-interview.html" class="markup--anchor markup--li-anchor">Resources for Preparing for the Google Interview</a></span>
--   <span id="0445"><a href="https://www.reddit.com/user/RunninADorito" class="markup--anchor markup--li-anchor">u/RunninADorito</a> — <a href="https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/" class="markup--anchor markup--li-anchor">How to Prepare for Tech Interviews</a></span>
--   <span id="a2cf">Bill Sourour — <a href="https://blog.devmastery.com/how-to-win-the-coding-interview-71ae7102d685" class="markup--anchor markup--li-anchor">How To Win the Coding Interview</a></span>
--   <span id="3c0c">Ammon Bartram — <a href="http://blog.triplebyte.com/how-to-pass-a-programming-interview" class="markup--anchor markup--li-anchor">How To Pass a Programming Interview</a></span>
+-   <span id="7fd7">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2008/03/get-that-job-at-google.html" class="markup--anchor markup--li-anchor">Get That Job at Google</a></span>
+-   <span id="b7a3">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2007_09_01_archive.html" class="markup--anchor markup--li-anchor">Ten Tips for a (Slightly) Less Awful Resume</a></span>
+-   <span id="e918">Carlos Bueno — <a href="https://www.facebook.com/notes/10150964382448920" class="markup--anchor markup--li-anchor">Get That Job at Facebook</a></span>
+-   <span id="c2db">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2012/11/25/how-to-prepare-for-technical-interviews/" class="markup--anchor markup--li-anchor">How to Prepare for Technical Interviews</a></span>
+-   <span id="ddca">David Byttow — <a href="https://medium.com/tech-talk/d5f8051afce2" class="markup--anchor markup--li-anchor">ABC: Always Be Coding</a></span>
+-   <span id="192b">David Byttow — <a href="https://medium.com/this-happened-to-me/8f381aa6bd5e" class="markup--anchor markup--li-anchor">Four Steps to Google, Without a Degree</a></span>
+-   <span id="4859">Thomas L. Friedman — How to Get a Job at Google \[<a href="http://mobile.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html" class="markup--anchor markup--li-anchor">part 1</a>\] \[<a href="http://mobile.nytimes.com/2014/04/20/opinion/sunday/friedman-how-to-get-a-job-at-google-part-2.html" class="markup--anchor markup--li-anchor">part 2</a>\]</span>
+-   <span id="a8f4">Andrew Rothbart — <a href="https://www.facebook.com/notes/10151298476823920" class="markup--anchor markup--li-anchor">Preparing for a technical interview with programming contests</a></span>
+-   <span id="2288">Mina Azib — <a href="http://itsallonesandzeroes.blogspot.ro/2013/07/prepping-for-google-interview.html" class="markup--anchor markup--li-anchor">Resources for Preparing for the Google Interview</a></span>
+-   <span id="0445"><a href="https://www.reddit.com/user/RunninADorito" class="markup--anchor markup--li-anchor">u/RunninADorito</a> — <a href="https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/" class="markup--anchor markup--li-anchor">How to Prepare for Tech Interviews</a></span>
+-   <span id="a2cf">Bill Sourour — <a href="https://blog.devmastery.com/how-to-win-the-coding-interview-71ae7102d685" class="markup--anchor markup--li-anchor">How To Win the Coding Interview</a></span>
+-   <span id="3c0c">Ammon Bartram — <a href="http://blog.triplebyte.com/how-to-pass-a-programming-interview" class="markup--anchor markup--li-anchor">How To Pass a Programming Interview</a></span>
 
 ### Books
 
--   <span id="f842">Gayle McDowell — <a href="https://www.amazon.com/Google-R%C3%A9sum%C3%A9-Prepare-Microsoft-Company/dp/151138459X" class="markup--anchor markup--li-anchor">The Google Resume</a></span>
--   <span id="379b">Gayle McDowell — <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850" class="markup--anchor markup--li-anchor">Cracking the Coding Interview</a></span>
--   <span id="ec9b">Giguere, Mongan, Kindler — <a href="https://www.amazon.com/Programming-Interviews-Exposed-Secrets-Landing/dp/1118261364" class="markup--anchor markup--li-anchor">Programming Interviews Exposed</a></span>
--   <span id="dca3">Aziz, Lee, Prakash — <a href="https://www.amazon.com/dp/1479274836/" class="markup--anchor markup--li-anchor">Elements of Programming Interviews</a> \[<a href="https://code.google.com/archive/p/elements-of-programming-interviews/" class="markup--anchor markup--li-anchor">code</a>\]</span>
--   <span id="8b8d">Narashima Karumanchi — <a href="https://www.amazon.com/Coding-Interview-Questions-Narasimha-Karumanchi/dp/1475293534" class="markup--anchor markup--li-anchor">Coding Interview Questions</a></span>
+-   <span id="f842">Gayle McDowell — <a href="https://www.amazon.com/Google-R%C3%A9sum%C3%A9-Prepare-Microsoft-Company/dp/151138459X" class="markup--anchor markup--li-anchor">The Google Resume</a></span>
+-   <span id="379b">Gayle McDowell — <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850" class="markup--anchor markup--li-anchor">Cracking the Coding Interview</a></span>
+-   <span id="ec9b">Giguere, Mongan, Kindler — <a href="https://www.amazon.com/Programming-Interviews-Exposed-Secrets-Landing/dp/1118261364" class="markup--anchor markup--li-anchor">Programming Interviews Exposed</a></span>
+-   <span id="dca3">Aziz, Lee, Prakash — <a href="https://www.amazon.com/dp/1479274836/" class="markup--anchor markup--li-anchor">Elements of Programming Interviews</a> \[<a href="https://code.google.com/archive/p/elements-of-programming-interviews/" class="markup--anchor markup--li-anchor">code</a>\]</span>
+-   <span id="8b8d">Narashima Karumanchi — <a href="https://www.amazon.com/Coding-Interview-Questions-Narasimha-Karumanchi/dp/1475293534" class="markup--anchor markup--li-anchor">Coding Interview Questions</a></span>
 
 ### Courses
 
--   <span id="be3e">MIT — <a href="https://courses.csail.mit.edu/iap/interview/materials.php" class="markup--anchor markup--li-anchor">Hacking a Google Interview</a></span>
+-   <span id="be3e">MIT — <a href="https://courses.csail.mit.edu/iap/interview/materials.php" class="markup--anchor markup--li-anchor">Hacking a Google Interview</a></span>
 -   <span id="9e43"><a href="https://www.educative.io/collection/5642554087309312/5679846214598656?authorName=Coderust" class="markup--anchor markup--li-anchor">Coderust 2.0 ($$)</a></span>
 -   <span id="ecf5"><a href="https://www.interviewcake.com/" class="markup--anchor markup--li-anchor">Interview Cake ($$$)</a> \[<a href="https://www.quora.com/How-helpful-was-the-paid-program-from-Interview-Cake-in-your-interview-preparation" class="markup--anchor markup--li-anchor">review</a>\]</span>
 -   <span id="1cbc"><a href="https://interviewsteps.com/products/how-to-ace-the-software-engineering-interview" class="markup--anchor markup--li-anchor">How to Ace the Software Engineering Interview ($$)</a></span>
 -   <span id="7926"><a href="https://www.educative.io/collection/5668639101419520/5649050225344512" class="markup--anchor markup--li-anchor">Grokking the System Design Interview ($$)</a></span>
 -   <span id="0cdf"><a href="https://lagunita.stanford.edu/courses/course-v1:Engineering+Algorithms1+SelfPaced/about" class="markup--anchor markup--li-anchor">Algorithms: Design and Analysis</a></span>
--   <span id="2938"><a href="https://www.pluralsight.com/courses/ads-part1" class="markup--anchor markup--li-anchor">Algorithms and Data Structures — Part 1</a></span>
--   <span id="1ca5"><a href="https://www.pluralsight.com/courses/ads2" class="markup--anchor markup--li-anchor">Algorithms and Data Structures — Part 2</a></span>
+-   <span id="2938"><a href="https://www.pluralsight.com/courses/ads-part1" class="markup--anchor markup--li-anchor">Algorithms and Data Structures — Part 1</a></span>
+-   <span id="1ca5"><a href="https://www.pluralsight.com/courses/ads2" class="markup--anchor markup--li-anchor">Algorithms and Data Structures — Part 2</a></span>
 
 ### Misc
 
--   <span id="c5f0">Pramp — <a href="https://blog.pramp.com/top-8-mistakes-in-technical-interviews-according-to-data-27d2572bda1f" class="markup--anchor markup--li-anchor">Top 8 Mistakes in Technical Interviews According to Data</a></span>
--   <span id="893c">Joel Spolsky — <a href="http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html" class="markup--anchor markup--li-anchor">The Guerrilla Guide to Interviewing (v.3)</a></span>
--   <span id="227a">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2008/06/done-and-gets-things-smart.html" class="markup--anchor markup--li-anchor">Done, and Gets Things Smart</a></span>
--   <span id="d576">Steve Yegge — <a href="https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions" class="markup--anchor markup--li-anchor">Five Essential Phone Interview Questions</a></span>
--   <span id="1ebf">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2013/03/01/questions-i-want-to-ask-but-cant/" class="markup--anchor markup--li-anchor">Questions I Want to Ask, but Can't</a></span>
+-   <span id="c5f0">Pramp — <a href="https://blog.pramp.com/top-8-mistakes-in-technical-interviews-according-to-data-27d2572bda1f" class="markup--anchor markup--li-anchor">Top 8 Mistakes in Technical Interviews According to Data</a></span>
+-   <span id="893c">Joel Spolsky — <a href="http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html" class="markup--anchor markup--li-anchor">The Guerrilla Guide to Interviewing (v.3)</a></span>
+-   <span id="227a">Steve Yegge — <a href="http://steve-yegge.blogspot.co.uk/2008/06/done-and-gets-things-smart.html" class="markup--anchor markup--li-anchor">Done, and Gets Things Smart</a></span>
+-   <span id="d576">Steve Yegge — <a href="https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions" class="markup--anchor markup--li-anchor">Five Essential Phone Interview Questions</a></span>
+-   <span id="1ebf">Daniel Blumenthal — <a href="http://dandreamsofcoding.com/2013/03/01/questions-i-want-to-ask-but-cant/" class="markup--anchor markup--li-anchor">Questions I Want to Ask, but Can't</a></span>
 -   <span id="85a5"><a href="http://blog.robertelder.org/50-interviews-with-facebook-twitter-amazon-others/" class="markup--anchor markup--li-anchor">50+ Interviews with Facebook, Twitter, Amazon &amp; others</a></span>
 -   <span id="73eb"><a href="http://blog.pamelafox.org/2013/09/technical-interviews-make-me-cry.html" class="markup--anchor markup--li-anchor">Technical Interviews Make Me Cry</a></span>
 -   <span id="d659"><a href="http://stephjang.com/blog/khan-academy-job/" class="markup--anchor markup--li-anchor">How I hustled my way to a developer job at Khan Academy</a></span>
 -   <span id="55c7"><a href="http://www.quora.com/Programming-Interviews/How-does-an-interviewer-define-the-difficulty-level-of-a-question" class="markup--anchor markup--li-anchor">How does an interviewer define the difficulty level of a question?</a></span>
--   <span id="1eeb">Aaron Swartz — <a href="http://www.aaronsw.com/weblog/hiring" class="markup--anchor markup--li-anchor">How I Hire Programmers</a></span>
--   <span id="f354">Phil Calçado — <a href="http://philcalcado.com/2016/03/15/on_asking_job_candidates_to_code.html" class="markup--anchor markup--li-anchor">On Asking Job Candidates to Code</a></span>
--   <span id="4f59">Moxie Marlinspike — <a href="https://moxie.org/blog/career-advice/" class="markup--anchor markup--li-anchor">Career Advice</a></span>
--   <span id="b428">Dan Luu — <a href="http://danluu.com/programmer-moneyball/" class="markup--anchor markup--li-anchor">We Only Hire the Trendiest</a></span>
--   <span id="57b3">Reginald Long — <a href="http://reginaldlong.com/how-i-went-from-failing-every-interview-to-a-job-at-amazon/" class="markup--anchor markup--li-anchor">How I went from failing every interview to a job at Amazon</a></span>
--   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk' : My Amazon interview experience</a></span>
--   <span id="c878">Key Values — <a href="https://www.keyvalues.io/" class="markup--anchor markup--li-anchor">A website which helps to find the best team due to your values</a></span>
--   <span id="5455">Laurie Voss — <a href="http://seldo.com/weblog/2014/08/26/you_suck_at_technical_interviews" class="markup--anchor markup--li-anchor">You suck at technical interviews</a></span>
+-   <span id="1eeb">Aaron Swartz — <a href="http://www.aaronsw.com/weblog/hiring" class="markup--anchor markup--li-anchor">How I Hire Programmers</a></span>
+-   <span id="f354">Phil Calçado — <a href="http://philcalcado.com/2016/03/15/on_asking_job_candidates_to_code.html" class="markup--anchor markup--li-anchor">On Asking Job Candidates to Code</a></span>
+-   <span id="4f59">Moxie Marlinspike — <a href="https://moxie.org/blog/career-advice/" class="markup--anchor markup--li-anchor">Career Advice</a></span>
+-   <span id="b428">Dan Luu — <a href="http://danluu.com/programmer-moneyball/" class="markup--anchor markup--li-anchor">We Only Hire the Trendiest</a></span>
+-   <span id="57b3">Reginald Long — <a href="http://reginaldlong.com/how-i-went-from-failing-every-interview-to-a-job-at-amazon/" class="markup--anchor markup--li-anchor">How I went from failing every interview to a job at Amazon</a></span>
+-   <span id="1430">Shivan Kaul Sahib — <a href="http://shivankaul.com/blog/2016/12/07/clean-your-desk-yet-another-amazon-interview-experience.html" class="markup--anchor markup--li-anchor">'Clean your desk' : My Amazon interview experience</a></span>
+-   <span id="c878">Key Values — <a href="https://www.keyvalues.io/" class="markup--anchor markup--li-anchor">A website which helps to find the best team due to your values</a></span>
+-   <span id="5455">Laurie Voss — <a href="http://seldo.com/weblog/2014/08/26/you_suck_at_technical_interviews" class="markup--anchor markup--li-anchor">You suck at technical interviews</a></span>
 -   <span id="e331"><a href="http://www.gwan.com/blog/20160405.html" class="markup--anchor markup--li-anchor">Google's “Director of Engineering” Hiring Test</a></span>
 -   <span id="d089"><a href="http://stereobooster.github.io/it-career" class="markup--anchor markup--li-anchor">IT-Career useful links</a></span>
 -   <span id="ecf6"><a href="https://resumeworded.com/" class="markup--anchor markup--li-anchor">Resume helper</a></span>
@@ -147,15 +147,15 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ### Videos
 
--   <span id="1112"><a href="https://www.youtube.com/watch?v=oWbUtlUhwa8" class="markup--anchor markup--li-anchor">How to: Work at Google — Candidate Coaching Session for Technical Interviewing [45:45]</a></span>
--   <span id="9046">Gayle McDowell — <a href="https://www.youtube.com/watch?v=rEJzOhC5ZtQ" class="markup--anchor markup--li-anchor">Cracking the Coding Interview [1:14:24]</a></span>
--   <span id="aa42">Gayle McDowell — <a href="https://www.youtube.com/watch?v=aClxtDcdpsQ" class="markup--anchor markup--li-anchor">Cracking the Coding Interview (examples) [9:05]</a></span>
+-   <span id="1112"><a href="https://www.youtube.com/watch?v=oWbUtlUhwa8" class="markup--anchor markup--li-anchor">How to: Work at Google — Candidate Coaching Session for Technical Interviewing [45:45]</a></span>
+-   <span id="9046">Gayle McDowell — <a href="https://www.youtube.com/watch?v=rEJzOhC5ZtQ" class="markup--anchor markup--li-anchor">Cracking the Coding Interview [1:14:24]</a></span>
+-   <span id="aa42">Gayle McDowell — <a href="https://www.youtube.com/watch?v=aClxtDcdpsQ" class="markup--anchor markup--li-anchor">Cracking the Coding Interview (examples) [9:05]</a></span>
 -   <span id="8c2f"><a href="https://www.youtube.com/watch?v=qc1owf2-220" class="markup--anchor markup--li-anchor">Google Recruiters Share Technical Interview Tips [31:06]</a></span>
 -   <span id="b336"><a href="https://www.youtube.com/watch?v=DINxNbBOEoI" class="markup--anchor markup--li-anchor">Google Recruiters Share Non-Technical Interview Tips [28:23]</a></span>
--   <span id="f573">Moishe Lettvin — <a href="https://www.youtube.com/watch?v=r8RxkpUvxK0" class="markup--anchor markup--li-anchor">What I Learned Doing 250 Interviews at Google [1:00:24]</a></span>
--   <span id="acfb">Sean Lee — <a href="https://www.youtube.com/watch?v=YJZCUhxNCv8" class="markup--anchor markup--li-anchor">How to Get a Job at the Big 4 [42:34]</a></span>
--   <span id="f2e7">Ladies Storm Hackathons — <a href="https://www.youtube.com/watch?v=fIpliB-ton8" class="markup--anchor markup--li-anchor">Interview Prep Round 1: Strings, Arrays, Linked Lists [1:12:39]</a></span>
--   <span id="6e3e">Randall Koutnik — <a href="https://www.youtube.com/watch?v=yIPbE7BssOs" class="markup--anchor markup--li-anchor">Rethinking the Developer Career Path [25:03]</a></span>
+-   <span id="f573">Moishe Lettvin — <a href="https://www.youtube.com/watch?v=r8RxkpUvxK0" class="markup--anchor markup--li-anchor">What I Learned Doing 250 Interviews at Google [1:00:24]</a></span>
+-   <span id="acfb">Sean Lee — <a href="https://www.youtube.com/watch?v=YJZCUhxNCv8" class="markup--anchor markup--li-anchor">How to Get a Job at the Big 4 [42:34]</a></span>
+-   <span id="f2e7">Ladies Storm Hackathons — <a href="https://www.youtube.com/watch?v=fIpliB-ton8" class="markup--anchor markup--li-anchor">Interview Prep Round 1: Strings, Arrays, Linked Lists [1:12:39]</a></span>
+-   <span id="6e3e">Randall Koutnik — <a href="https://www.youtube.com/watch?v=yIPbE7BssOs" class="markup--anchor markup--li-anchor">Rethinking the Developer Career Path [25:03]</a></span>
 
 ### Languages and technologies
 
@@ -166,7 +166,7 @@ Most good programmers do programming not because they expect to get paid or get 
 
 ### <a href="http://asp.net/" class="markup--anchor markup--h3-anchor">ASP.NET</a>
 
--   <span id="1857">Shailendra Chauhan — <a href="https://www.codeproject.com/Articles/556995/ASP-NET-MVC-interview-questions-with-answers" class="markup--anchor markup--li-anchor">ASP.NET MVC Interview Questions &amp; Answers</a></span>
+-   <span id="1857">Shailendra Chauhan — <a href="https://www.codeproject.com/Articles/556995/ASP-NET-MVC-interview-questions-with-answers" class="markup--anchor markup--li-anchor">ASP.NET MVC Interview Questions &amp; Answers</a></span>
 -   <span id="8f73"><a href="http://www.codeproject.com/Articles/653746/Top-ASP-NET-MVC-Interview-Questions" class="markup--anchor markup--li-anchor">Top 10 ASP.NET MVC Interview Questions</a></span>
 
 ### C\#
@@ -188,7 +188,7 @@ Most good programmers do programming not because they expect to get paid or get 
 ### Node
 
 -   <span id="8c25"><a href="https://www.toptal.com/nodejs/tips-and-practices" class="markup--anchor markup--li-anchor">Node.js Best Practices and Tips</a></span>
--   <span id="5812"><a href="https://elemefe.github.io/node-interview/#/sections/en-us/?id=guide" class="markup--anchor markup--li-anchor">Node.js Interview — Guide</a></span>
+-   <span id="5812"><a href="https://elemefe.github.io/node-interview/#/sections/en-us/?id=guide" class="markup--anchor markup--li-anchor">Node.js Interview — Guide</a></span>
 
 ### PHP
 

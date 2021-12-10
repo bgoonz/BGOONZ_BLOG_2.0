@@ -64,7 +64,7 @@ CSS Selectors
 
 **CSS Combinators**
 
--   <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
+-   <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
 -   <span id="71a6">Be careful not to use too many of them as they will make your CSS far too complex.</span>
 -   <span id="6032">`Descendant Selectors`</span>
 -   <span id="6f41">Separated by a space.</span>
@@ -268,8 +268,8 @@ This bothered many programmers so they created the **border box** to include the
       top: 60px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
--   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
+-   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
 
 <!-- -->
 
@@ -319,7 +319,7 @@ This bothered many programmers so they created the **border box** to include the
 **Sticky Positioning**
 
 -   <span id="8ae2">Remains in it's original position in the page flow, and it is positioned relative to it's closest block-level ancestor and any _scrolling_ ancestors.</span>
--   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it's viewport — then it sticks!</span>
+-   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it's viewport — then it sticks!</span>
 -   <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
 -   <span id="9080">A good example are headers in a scrollable list.</span>
 
@@ -332,7 +332,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
 -   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
 -   <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
--   <span id="ba98">To 'clear' a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
+-   <span id="ba98">To 'clear' a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
 
@@ -470,7 +470,7 @@ The Pseudo Class Selector `hover` activates when the cursor goes over the select
 
 **Content Overflow**- You can apply an `overflow` content property to an element if it's inner contents are spilling over.
 
-There are three members in the overflow family: — `overflow-x` : Apply horizontally. - `overflow-y` : Apply vertically. - `overflow` : Apply both directions.
+There are three members in the overflow family: — `overflow-x` : Apply horizontally. - `overflow-y` : Apply vertically. - `overflow` : Apply both directions.
 
 ### Transitions
 
@@ -564,7 +564,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:

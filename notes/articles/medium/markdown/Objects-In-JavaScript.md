@@ -43,7 +43,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 
 #### **Using Variables as Keys**
 
--   <span id="e833">It is useful to set a variable as a key because variables can be re-assigned new values — this way we can quickly access different data and also create new key/value pairs.</span>
+-   <span id="e833">It is useful to set a variable as a key because variables can be re-assigned new values — this way we can quickly access different data and also create new key/value pairs.</span>
 
 ### Using Different Notations
 
@@ -52,14 +52,14 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 -   <span id="bec1">Property identifies can only be alphanumeric (and `_` and `$`)</span>
 -   <span id="d353">Property identifiers cannot start with a number.</span>
 -   <span id="0c2b">Property identifiers cannot contain variables.</span>
--   <span id="b348">OK — `obj.prop_1`, `obj.prop$`</span>
--   <span id="bebd">Not OK — `obj.1prop`, `obj.prop name`</span>
+-   <span id="b348">OK — `obj.prop_1`, `obj.prop$`</span>
+-   <span id="bebd">Not OK — `obj.1prop`, `obj.prop name`</span>
 
 **Bracket notation:**
 
 -   <span id="1e9e">Property identifiers have to be a String or a variable that references a String.</span>
 -   <span id="a2b7">It is okay to use variables, spaces, and Strings that start with numbers</span>
--   <span id="6893">OK — `obj["1prop"]`, `obj["prop name"]`</span>
+-   <span id="6893">OK — `obj["1prop"]`, `obj["prop name"]`</span>
 
 <!-- -->
 
@@ -91,7 +91,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
 
 <!-- -->
 
--   <span id="872f">As illustrated above, the dot notation cannot access a variable key — since it takes a **literal** interpretation of the key.</span>
+-   <span id="872f">As illustrated above, the dot notation cannot access a variable key — since it takes a **literal** interpretation of the key.</span>
 
 You can put an object together in a single statement.
 

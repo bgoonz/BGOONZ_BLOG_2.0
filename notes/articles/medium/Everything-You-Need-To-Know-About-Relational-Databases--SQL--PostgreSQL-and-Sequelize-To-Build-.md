@@ -215,7 +215,7 @@ FROM friends;
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
 — Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
- — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
+ — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
 
     SELECT
     friends.name AS friend_name , puppies.name AS puppy_name
@@ -258,7 +258,7 @@ FROM friends;
 -   <span id="d4d3">We provide the name of the table that we would like to add records to, followed by the VALUES keyword and each record we are adding. Here s an example:</span>
 
 — We are providing the table name, then multiple records to insert  
- — The values are listed in the order that they are defined on the table
+ — The values are listed in the order that they are defined on the table
 
     INSERT INTO table_name
     VALUES
@@ -602,7 +602,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 -   <span id="fc1a">Seed Files</span>
 -   <span id="ad49">Seed files can be used to populate our database with starter data.</span>
--   <span id="9058">npx sequelize-cli seed:generate — name add-cats</span>
+-   <span id="9058">npx sequelize-cli seed:generate — name add-cats</span>
 -   <span id="d2cf">up indicates what to create when we seed our database, down indicates what to delete if we want to unseed the database.</span>
 -   <span id="d605">For our up, we use the queryInterface.bulkInsert() method, which takes in the name of the table to seed and an array of objects representing the records we want to create:</span>
 
@@ -1260,7 +1260,7 @@ The documentation for building, saving, creating, updating and destroying is lin
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:

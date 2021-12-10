@@ -239,7 +239,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="c21b">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
 -   <span id="51ad">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
 -   <span id="09f1">inner scope does not have access to variables in the outer scope</span>
--   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
+-   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
 -   <span id="6ea5">so an inner scope can access outer scope variables</span>
 -   <span id="5188">but an outer scope can never access inner scope variables</span>
 
@@ -400,12 +400,12 @@ Plain Old JS Object Lesson Concepts
 
 -   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
--   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
 -   <span id="c99d">context is set every time we invoke a function</span>
 -   <span id="fa43">function style invocation sets the context to the global object no matter what</span>
 -   <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
 -   <span id="f578">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
--   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
+-   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
 <!-- -->
 
@@ -535,14 +535,14 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
--   <span id="6f83">Boolean — Primitive</span>
--   <span id="6556">Null — Primitive</span>
--   <span id="0048">Undefined — Primitive</span>
--   <span id="8dec">Number — Primitive</span>
--   <span id="684c">String — Primitive</span>
--   <span id="41c1">Array — Reference</span>
--   <span id="9371">Object — Reference</span>
--   <span id="64c8">Function — Reference</span>
+-   <span id="6f83">Boolean — Primitive</span>
+-   <span id="6556">Null — Primitive</span>
+-   <span id="0048">Undefined — Primitive</span>
+-   <span id="8dec">Number — Primitive</span>
+-   <span id="684c">String — Primitive</span>
+-   <span id="41c1">Array — Reference</span>
+-   <span id="9371">Object — Reference</span>
+-   <span id="64c8">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 

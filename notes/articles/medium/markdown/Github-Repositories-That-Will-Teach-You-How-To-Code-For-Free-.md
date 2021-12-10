@@ -51,7 +51,7 @@ You can use our materials and instructions to roll out your own workshop in your
 
 This is a Sinatra app, deployed at <a href="http://docs.railsbridge.org/" class="markup--anchor markup--p-anchor">http://docs.railsbridge.org</a>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop “Suggestotron” curriculum.
 
-Each subproject (a “site”) comprises files stored under the “sites” directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The “en” means “English” — see “Locales” below.)
+Each subproject (a “site”) comprises files stored under the “sites” directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The “en” means “English” — see “Locales” below.)
 
 <a href="https://github.com/railsbridge/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsbridge/docs"><strong>railsbridge/docs</strong><br />
 <em>This is a Sinatra app, deployed at http://docs.railsbridge.org. The RailsBridge documentation project is home to a few…</em>github.com</a><a href="https://github.com/railsbridge/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -286,7 +286,7 @@ here's a list of what's covered
 
 ### Microsoft/web-dev-for-beginners
 
-### Web Development for Beginners — A Curriculum
+### Web Development for Beginners — A Curriculum
 
 Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick'.
 
@@ -449,7 +449,7 @@ NOTE: A passing build status indicates all listed APIs are available since the l
 
 ### Intro
 
-This list was originally a clone of <a href="https://web.archive.org/web/20140606191453/http://stackoverflow.com/questions/194812/list-of-freely-available-programming-books/392926" class="markup--anchor markup--p-anchor">StackOverflow — List of Freely Available Programming Books</a> with contributions from Karan Bhangui and George Stocker.
+This list was originally a clone of <a href="https://web.archive.org/web/20140606191453/http://stackoverflow.com/questions/194812/list-of-freely-available-programming-books/392926" class="markup--anchor markup--p-anchor">StackOverflow — List of Freely Available Programming Books</a> with contributions from Karan Bhangui and George Stocker.
 
 The list was moved to GitHub by Victor Felder for collaborative updating and maintenance. It has grown to become one of <a href="https://octoverse.github.com/" class="markup--anchor markup--p-anchor">GitHub's most popular repositories</a>, with 160,000+ stars, 6000+ commits, 1600+ contributors, and 39,000+ forks.
 
@@ -766,7 +766,7 @@ _NOTE:_ This list is only for as-a-Service offerings, not for self-hosted softwa
 
 ### gothinkster/realworld
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*vy0PC7pjUaRhhFvI.png" class="graf-image" /></figure>### Stay on the bleeding edge — <a href="https://github.com/gothinkster/realworld/discussions" class="markup--anchor markup--h3-anchor">join our GitHub Discussions!</a> 🎉
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*vy0PC7pjUaRhhFvI.png" class="graf-image" /></figure>### Stay on the bleeding edge — <a href="https://github.com/gothinkster/realworld/discussions" class="markup--anchor markup--h3-anchor">join our GitHub Discussions!</a> 🎉
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OGbTycPsogJHNqrZ.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*u2EbjIkzp7eZwBtY.png" class="graf-image" /></figure>### See how the exact same Medium.com clone (called <a href="https://demo.realworld.io/" class="markup--anchor markup--h3-anchor">Conduit</a>) is built using different <a href="https://codebase.show/projects/realworld?category=frontend" class="markup--anchor markup--h3-anchor">frontends</a> and <a href="https://codebase.show/projects/realworld?category=backend" class="markup--anchor markup--h3-anchor">backends</a>. Yes, you can mix and match them, because they all adhere to the same <a href="https://github.com/gothinkster/realworld/blob/master/spec" class="markup--anchor markup--h3-anchor">API spec</a> 😮😎
 

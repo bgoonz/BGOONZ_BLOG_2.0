@@ -107,7 +107,7 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 ● <a href="http://www.stackoverflow.com" class="markup--anchor markup--p-anchor">www.stackoverflow.com</a>
 
-● http://techsprkconnect.strikingly.com/ — Diversity focused
+● http://techsprkconnect.strikingly.com/ — Diversity focused
 
 ● <a href="https://stackshare.io" class="markup--anchor markup--p-anchor">https://stackshare.io</a>
 
@@ -115,9 +115,9 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 ● RubyNow
 
-● FACEBOOK STARTUP JOB PAGE — SF
+● FACEBOOK STARTUP JOB PAGE — SF
 
-● FACEBOOK STARTUP JOB PAGE — NY
+● FACEBOOK STARTUP JOB PAGE — NY
 
 ● <a href="http://www.linkup.com" class="markup--anchor markup--p-anchor">www.linkup.com</a>
 
@@ -407,7 +407,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 #### Are We Really All Connected by Just Six Degrees of Separation?
 
-Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
+Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
 ---
 

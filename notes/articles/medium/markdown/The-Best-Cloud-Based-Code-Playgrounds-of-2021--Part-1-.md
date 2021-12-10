@@ -15,7 +15,7 @@ A plethora of front-end code playgrounds have appeared over the years. They offe
 ### Typical features of these online playgrounds include:
 
 -   <span id="3386">**_color-coded HTML, CSS and JavaScript editors_**</span>
--   <span id="152b">**_a preview window — many update on the fly without a refresh_**</span>
+-   <span id="152b">**_a preview window — many update on the fly without a refresh_**</span>
 -   <span id="c746">**_HTML pre-processors such as HAML_**</span>
 -   <span id="bf6f">**_LESS, SASS and Stylus CSS pre-processing_**</span>
 -   <span id="8093">**_inclusion of popular JavaScript libraries_**</span>
@@ -70,9 +70,9 @@ Repl from Repo. Get started with any Github repo, right from your browser. Commi
 
 > JSFiddle has the notion of panels (or tabs if you switch into the tabbed layout), there are 4 panels, 3 where you can enter code, and 1 to see the result.
 
--   <span id="0c0b">**HTML** — structure code, no need to add `body` `doctype` `head`, that's added automatically</span>
--   <span id="b95b">**CSS** — styles. You can switch pre-pocessor to SCSS</span>
--   <span id="1709">**JavaScript** — behavior. There are many frameworks and code pre-processors you can use</span>
+-   <span id="0c0b">**HTML** — structure code, no need to add `body` `doctype` `head`, that's added automatically</span>
+-   <span id="b95b">**CSS** — styles. You can switch pre-pocessor to SCSS</span>
+-   <span id="1709">**JavaScript** — behavior. There are many frameworks and code pre-processors you can use</span>
 
 Once you enter code, just hit **Run** in the top actions bar, and the fourth panel with results will appear.
 
@@ -162,7 +162,7 @@ An existing project will be identified by Glitch as a **static** site if it does
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:

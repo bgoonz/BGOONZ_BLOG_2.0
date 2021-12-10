@@ -29,7 +29,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 ### Table Of Contents:
 
-<a href="#editing-understanding-git-a-beginners-guide-containing-cheat-sheets--resources--medium" class="markup--anchor markup--p-anchor"><em>Editing Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources) — Medium</em></a>
+<a href="#editing-understanding-git-a-beginners-guide-containing-cheat-sheets--resources--medium" class="markup--anchor markup--p-anchor"><em>Editing Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources) — Medium</em></a>
 
 > <a href="#whats-a-distributed-version-controlsystem" class="markup--anchor markup--blockquote-anchor"><strong><em>What's a distributed version control system?</em></strong></a>
 
@@ -132,13 +132,13 @@ Working in repositories keeps development projects organized and protected. Deve
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png" class="graf-image" /></figure>### 3. Next,
 
-**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
+**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
 
 ---
 
 ### These are the commands GitHub provides when you create a new Repo:
 
-#### Quick setup — if you've done this kind of thing before
+#### Quick setup — if you've done this kind of thing before
 
 Set up in Desktop
 
@@ -205,7 +205,7 @@ OR:
 
 Like many disciplines, learning Git is just a matter of learning a new language. You'll cover a lot of new vocabulary in this lesson! Remember that the vocabulary you'll learn will allow you to communicate clearly with other developers worldwide, so it's important to understand the meaning of each term.
 
-It's also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you'll focus on the commands you'll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you're getting started.
+It's also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you'll focus on the commands you'll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you're getting started.
 
 ### A glance into GIT
 
@@ -255,7 +255,7 @@ Adding a file (or files) moves them from Git's working directory to the staging 
 
 Once you're happy with your files and have staged them, you'll use `git commit` to push them into the commit history. It's significantly more work to make changes after a commit, so be sure your files are staged and exactly as you'd like them before running this command. Your default text editor will pop up, and you'll be asked to enter a commit message for this group of changes.
 
-**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you'll discuss in the near future. It's visually bare and may just look like terminal text to you! If this happens, don't worry — just type `:q` and press your "return" key to exit.
+**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you'll discuss in the near future. It's visually bare and may just look like terminal text to you! If this happens, don't worry — just type `:q` and press your "return" key to exit.
 
 You'll want to ensure that future commit messages open in a more familiar editor. You can run the following commands in your terminal to ensure that Visual Studio Code is your `git commit` editor from now on:
 
@@ -373,7 +373,7 @@ You'll create and manage your pull requests via GitHub's web portal, instead of 
 
 ### Browsing Your Git Repository
 
-Repositories can feel intimidating at first, but it won't take you long to navigate code like you own the place — because you do! Let's discuss a few tools native to Git that help us browse our changes over time.
+Repositories can feel intimidating at first, but it won't take you long to navigate code like you own the place — because you do! Let's discuss a few tools native to Git that help us browse our changes over time.
 
 We'll be covering:
 
@@ -401,7 +401,7 @@ In the code itself, lines that were removed are prefixed with a `-` and lines th
 
 Remember that, by default, `git diff` compares the current working directory to the last commit. You can compare the staging area instead of the working directory with `git diff --staged`. This is another great way to double-check your work before pushing up to a remote branch.
 
-You're also not limited to your current branch — or even your current commit! You can pass a base & target branch to compare, and you can use some special characters to help you browse faster! Here are a few examples:
+You're also not limited to your current branch — or even your current commit! You can pass a base & target branch to compare, and you can use some special characters to help you browse faster! Here are a few examples:
 
     # See differences between the 'feature'
 
@@ -461,7 +461,7 @@ That said, you'll likely use shortcuts like `git checkout -` far more often than
 
 ### Git 'Do-Overs': Reset & Rebase
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you'd like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you'd like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
 
 Before we talk about these, a warning: **The commands in this lesson are destructive!** If used improperly, you could lose work, damage a teammate's branch, or even rewrite the history of your entire project. You should exercise caution when using these on production code, and don't hesitate to ask for help if you're unsure what a command might do.
 
@@ -527,7 +527,7 @@ We'll start in the same place we began for our soft reset:
 
 Our Git log output is much simpler now:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*1NovgUyM_ed7h5MozcBY-g.png" class="graf-image" /></figure>It's empty — no changes in your working directory and no changes in your staging area. This is major difference between a hard reset and a soft/mixed reset: you will lose *all your changes* back to the commit you've reset to.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*1NovgUyM_ed7h5MozcBY-g.png" class="graf-image" /></figure>It's empty — no changes in your working directory and no changes in your staging area. This is major difference between a hard reset and a soft/mixed reset: you will lose *all your changes* back to the commit you've reset to.
 
 If your teammate came rushing in to tell you that the boss has changed their mind and wants that homepage text after all, you're going to be re-doing all that work! Be very confident that the changes you're losing are unimportant before embarking on a hard reset.
 
@@ -738,7 +738,7 @@ You can revert an old commit using its commit id. This opens the editor so you c
 
 ### How to create a new branch in Git:
 
-By default, you have one branch, the main branch. With this command, you can create a new branch. Git won't switch to it automatically — you will need to do it manually with the next command.
+By default, you have one branch, the main branch. With this command, you can create a new branch. Git won't switch to it automatically — you will need to do it manually with the next command.
 
     git branch branch_name
 
@@ -1058,7 +1058,7 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:

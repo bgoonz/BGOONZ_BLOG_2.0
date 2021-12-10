@@ -554,7 +554,7 @@ Concentrate on the code related to reading the `id` from the `req.params` object
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Discover More:
@@ -685,7 +685,7 @@ However, there are two caveats:
 
 The `wrap()` function is a wrapper that catches rejected promises and calls `next()` with the error as the first argument. For details, see <a href="https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#cleaner-code-with-generators" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#cleaner-code-with-generators">Asynchronous Error Handling in Express with Promises, Generators and ES7</a>.
 
-For more information about error-handling by using promises, see <a href="https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/">Promises in Node.js with Q — An Alternative to Callbacks</a>.
+For more information about error-handling by using promises, see <a href="https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/" class="markup--anchor markup--p-anchor" title="https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/">Promises in Node.js with Q — An Alternative to Callbacks</a>.
 
 ### Things to do in your environment / setup
 

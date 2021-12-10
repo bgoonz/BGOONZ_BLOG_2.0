@@ -55,7 +55,7 @@ Part 1
 -   <span id="a287">**//** : notation for creating a code comment in JS.</span>
 -   <span id="e2e6">**code comment** : useful for annotating pieces of code to explain how something works, ignored by computer.</span>
 
-> **_“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra_**
+> **_“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra_**
 
 ---
 
@@ -170,7 +170,7 @@ Variables are used to store information to be referenced and manipulated in a pr
 -   <span id="6ab7">If you do not declare a value for a variable, undefined is automatically set.</span>
 -   <span id="0c6f">`let bootcamp; console.log(bootcamp); // undefined`</span>
 -   <span id="1f9a">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
--   <span id="9e00">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope — will be covered later in the course (common interview question!)</span>
+-   <span id="9e00">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope — will be covered later in the course (common interview question!)</span>
 
 **Assignment Shorthand**
 
@@ -219,7 +219,7 @@ A function is a procedure of code that will run when called. Functions are used 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />

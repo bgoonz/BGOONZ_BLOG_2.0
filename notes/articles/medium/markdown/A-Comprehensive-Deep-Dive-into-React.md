@@ -499,7 +499,7 @@ Default Prop Values
 -   <span id="78b3">A front-end library that allows you to control which components to display using the browser location.</span>
 -   <span id="aa2a">`Client-side Routing` Getting started with routing</span>
 -   <span id="0940">Install React Router with:</span>
--   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
+-   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
 -   <span id="f07f">Import `Browser Router` from package.</span>
 -   <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
 -   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
@@ -1818,7 +1818,7 @@ Setting up a Consumer
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>-   <span id="04c0">Visual of how an app without React manages it's data.</span>
 -   <span id="bae2">A lot of prop threading happening.</span>
--   <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
+-   <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
 -   <span id="cd66">`Store`</span>
 -   <span id="9453">Holds the Frontend State</span>
 -   <span id="cea4">Provides an API for the Frontend State</span>
@@ -1878,7 +1878,7 @@ What is Flux?
 
 -   <span id="06d1">Front-end application architecutre.</span>
 -   <span id="8311">A pattern in which to structure an application.</span>
--   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
+-   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
 -   <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
 -   <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
 -   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
@@ -2591,7 +2591,7 @@ The component takes only one prop: `to`. When it renders, it replaces the curren
       render={() => (this.props.currentUser ? <Home /> : <Redirect to="/login" />)}
     />
 
-Note: you will learn how to use a more flexible auth pattern — don't directly imitate this example.
+Note: you will learn how to use a more flexible auth pattern — don't directly imitate this example.
 
 ### History
 
@@ -2718,7 +2718,7 @@ The need for front-end builds predates React. Over the years, developers have fo
 
 Sometimes developers extend JavaScript and CSS with something like <a href="https://www.typescriptlang.org/" class="markup--anchor markup--p-anchor">TypeScript</a> or <a href="https://sass-lang.com/" class="markup--anchor markup--p-anchor">Sass</a>. Using these non-standard languages and syntaxes require you to use a build process to convert your code into standard JavaScript and CSS that can actually run in the browser.
 
-Browser-based applications also require a fair amount of optimization to deliver the best, or at least acceptable, experience to end users. Front-end build processes could be configured to lint code, run unit tests, optimize images, minify and bundle code, and more — all automatically at the press of a button (i.e. running a command at the terminal).
+Browser-based applications also require a fair amount of optimization to deliver the best, or at least acceptable, experience to end users. Front-end build processes could be configured to lint code, run unit tests, optimize images, minify and bundle code, and more — all automatically at the press of a button (i.e. running a command at the terminal).
 
 ### JavaScript versions and the growth of front-end builds
 
@@ -2890,7 +2890,7 @@ Now that you've had an introduction to React Router, feel free to explore the of
 
 ### Rainbow Routes Project
 
-Today you're going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
+Today you're going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
 
 ### Phase 0: Setup
 
@@ -3105,7 +3105,7 @@ The only problem is that now the `Blue only` link is active even when the path i
 
 Do the same for the `Red only` link. Everything should be working now.
 
-### Phase 4 — Changing NavLink's Active Class
+### Phase 4 — Changing NavLink's Active Class
 
 You've already set up `NavLink` to bold the link text using the `.active` class in `src/index.css`. But what if you wanted this class to be something else? For instance, what if you want your main color links (Red, Green, Blue, Violet) to be styled differently when active than your sub-route links (Red Only, Add Orange, Add Yellow, etc.).
 

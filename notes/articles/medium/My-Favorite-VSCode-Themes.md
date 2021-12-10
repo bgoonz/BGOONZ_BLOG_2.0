@@ -78,7 +78,7 @@ A detailed and accurate Atom One Dark Theme.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*trGkLz0fLzZMjNX_.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/teabyii.ayu" class="markup--anchor markup--h3-anchor">Ayu by teabyii</a>
 
-A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.
+A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YL26P4BF0Kz-0ck9.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/eckertalex.borealis" class="markup--anchor markup--h3-anchor">Borealis Theme by Alexander Eckert</a>
 
@@ -102,7 +102,7 @@ Official Dracula Theme. A dark theme for many editors, shells, and more.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xGaF3Cs8iHoC5gUr.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/bogdanlazar.edge" class="markup--anchor markup--h3-anchor">Edge by Bogdan Lazar</a>
 
-A simple theme with bright colors in three variants — Night Sky, Serene and Ocean for all day long comfortable work.
+A simple theme with bright colors in three variants — Night Sky, Serene and Ocean for all day long comfortable work.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*qELxjfUYJNuRISgB.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/fisheva.eva-theme" class="markup--anchor markup--h3-anchor">Eva Theme by fisheva</a>
 
@@ -134,7 +134,7 @@ Minimal monochrome theme.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_NT4CQBGRRlFQl9q.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/smlombardi.slime" class="markup--anchor markup--h3-anchor">Slime Theme by smlombardi</a>
 
-A dark syntax/workbench theme for Visual Studio Code — optimized for SCSS, HTML, JS, TS, Markdown, and PHP files.
+A dark syntax/workbench theme for Visual Studio Code — optimized for SCSS, HTML, JS, TS, Markdown, and PHP files.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*-ldv4DoOVntnZbBt.png" class="graf-image" /></figure>### <a href="https://vscodethemes.com/e/selfrefactor.niketa-theme" class="markup--anchor markup--h3-anchor">Niketa Theme by Dejan Toteff</a>
 
@@ -145,7 +145,7 @@ Collection of 18 light themes separated in 4 groups by background's brightness.
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 18, 2021](https://medium.com/p/9bab65af3f0f).

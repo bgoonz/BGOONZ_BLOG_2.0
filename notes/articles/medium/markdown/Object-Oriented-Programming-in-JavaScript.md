@@ -195,7 +195,7 @@ Defining a constructor function _Example of an object using object initializatio
 The Problem with Arrow Functions
 
 -   <span id="6cb0">We cannot use arrow functions when defining methods on a constructor function's prototype property.</span>
--   <span id="4f33">Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
+-   <span id="4f33">Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick with the function () keyword.</span>
 
 ---
 
@@ -241,7 +241,7 @@ Defining a ES2015 class
       console.log("This works!");
     }
 
--   <span id="bf4e">In JS you can call a function before it's declared — this is known as `hoisting`.</span>
+-   <span id="bf4e">In JS you can call a function before it's declared — this is known as `hoisting`.</span>
 -   <span id="8dd6">Class definitions are **NOT hoisted,** so just get in the habit of declaring them before you use them.</span>
 
 Defining Methods
@@ -289,7 +289,7 @@ Defining Methods
 
     console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
 
--   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.</span>
+-   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.</span>
 
 <!-- -->
 
@@ -609,7 +609,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 
 ### When to ignore the Law of Demeter
 
--   <span id="770a">When you work with objects that come from code that you didn't create — you will often have to break the LoD.</span>
+-   <span id="770a">When you work with objects that come from code that you didn't create — you will often have to break the LoD.</span>
 
 <!-- -->
 
@@ -625,7 +625,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:

@@ -52,7 +52,7 @@ For that, we need to create a new file `.gitignore` and inside it write the file
 
 If you ran the commands correctly, then it'll be on your repository's page. If you refresh it you should see your files, except the one that you explicitly ignored, namely `node modules`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.PNG" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*_WzaY9T9A0FsvPgb.PNG" class="graf-image" /></figure>### Step 3 — Link the repository with Heroku
 
 At this step, we can link the repository from Github to our Heroku application.
 
@@ -70,7 +70,7 @@ If you want, you can also select the option `Enable Automatic Deploys` which wil
 
 Once the application has been deployed, you can click on View to open your application.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*9dBdxScA9_dIEz1Q.PNG" class="graf-image" /></figure>### Step 4 — Configure Heroku to properly run the application
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*9dBdxScA9_dIEz1Q.PNG" class="graf-image" /></figure>### Step 4 — Configure Heroku to properly run the application
 
 If you open the application at this point, you should see something like this:
 
