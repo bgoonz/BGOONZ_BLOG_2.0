@@ -9,5 +9,3 @@ seo:
     extra: []
 template: docs
 ---
-
-## Lorem ipsum
