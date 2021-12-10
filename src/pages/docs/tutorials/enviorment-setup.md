@@ -12,12 +12,11 @@ template: docs
 ---
 
 
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
-Windows Subsystem for Linux (WSL) and Ubuntu
 
-* * * * *
+> Windows Subsystem for Linux (WSL) and Ubuntu
+
 
 ### Basic Web Development Environment Setup
 
