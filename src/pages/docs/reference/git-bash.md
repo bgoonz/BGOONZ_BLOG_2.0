@@ -1,3 +1,14 @@
+---
+title:  Understanding Git Bash
+weight: 0
+excerpt:  Understanding Git Bash
+seo:
+    title: ' Understanding Git Bash'
+    description: ' Understanding Git Bash'
+    robots: []
+    extra: []
+template: docs
+---
 
 
 
