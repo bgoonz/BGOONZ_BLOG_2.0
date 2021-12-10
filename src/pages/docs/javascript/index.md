@@ -11,6 +11,1568 @@ seo:
 template: docs
 ---
 
+## Cheatsheet:
+
+
+```js
+
+// Single-line comments start with two slashes.
+/* Multiline comments start with slash-star,
+   and end with star-slash */
+
+// Statements can be terminated by ;
+doStuff();
+
+// ... but they don't have to be, as semicolons are automatically inserted
+// wherever there's a newline, except in certain cases.
+doStuff()
+
+// Because those cases can cause unexpected results, we'll keep on using
+// semicolons in this guide.
+
+///////////////////////////////////
+// 1. Numbers, Strings and Operators
+
+// JavaScript has one number type (which is a 64-bit IEEE 754 double).
+// Doubles have a 52-bit mantissa, which is enough to store integers
+// up to about 9✕10¹⁵ precisely.
+3; // = 3
+1.5; // = 1.5
+
+// Some basic arithmetic works as you'd expect.
+1 + 1; // = 2
+0.1 + 0.2; // = 0.30000000000000004
+8 - 1; // = 7
+10 * 2; // = 20
+35 / 5; // = 7
+
+// Including uneven division.
+5 / 2; // = 2.5
+
+// And modulo division.
+10 % 2; // = 0
+30 % 4; // = 2
+18.5 % 7; // = 4.5
+
+// Bitwise operations also work; when you perform a bitwise operation your float
+// is converted to a signed int *up to* 32 bits.
+1 << 2; // = 4
+
+// Precedence is enforced with parentheses.
+(1 + 3) * 2; // = 8
+
+// There are three special not-a-real-number values:
+Infinity; // result of e.g. 1/0
+-Infinity; // result of e.g. -1/0
+NaN; // result of e.g. 0/0, stands for 'Not a Number'
+
+// There's also a boolean type.
+true;
+false;
+
+// Strings are created with ' or ".
+'abc';
+"Hello, world";
+
+// Negation uses the ! symbol
+!true; // = false
+!false; // = true
+
+// Equality is ===
+1 === 1; // = true
+2 === 1; // = false
+
+// Inequality is !==
+1 !== 1; // = false
+2 !== 1; // = true
+
+// More comparisons
+1 < 10; // = true
+1 > 10; // = false
+2 <= 2; // = true
+2 >= 2; // = true
+
+// Strings are concatenated with +
+"Hello " + "world!"; // = "Hello world!"
+
+// ... which works with more than just strings
+"1, 2, " + 3; // = "1, 2, 3"
+"Hello " + ["world", "!"]; // = "Hello world,!"
+
+// and are compared with < and >
+"a" < "b"; // = true
+
+// Type coercion is performed for comparisons with double equals...
+"5" == 5; // = true
+null == undefined; // = true
+
+// ...unless you use ===
+"5" === 5; // = false
+null === undefined; // = false
+
+// ...which can result in some weird behaviour...
+13 + !0; // 14
+"13" + !0; // '13true'
+
+// You can access characters in a string with `charAt`
+"This is a string".charAt(0);  // = 'T'
+
+// ...or use `substring` to get larger pieces.
+"Hello world".substring(0, 5); // = "Hello"
+
+// `length` is a property, so don't use ().
+"Hello".length; // = 5
+
+// There's also `null` and `undefined`.
+null;      // used to indicate a deliberate non-value
+undefined; // used to indicate a value is not currently present (although
+           // `undefined` is actually a value itself)
+
+// false, null, undefined, NaN, 0 and "" are falsy; everything else is truthy.
+// Note that 0 is falsy and "0" is truthy, even though 0 == "0".
+
+///////////////////////////////////
+// 2. Variables, Arrays and Objects
+
+// Variables are declared with the `var` keyword. JavaScript is dynamically
+// typed, so you don't need to specify type. Assignment uses a single `=`
+// character.
+var someVar = 5;
+
+// If you leave the var keyword off, you won't get an error...
+someOtherVar = 10;
+
+// ...but your variable will be created in the global scope, not in the scope
+// you defined it in.
+
+// Variables declared without being assigned to are set to undefined.
+var someThirdVar; // = undefined
+
+// If you want to declare a couple of variables, then you could use a comma
+// separator
+var someFourthVar = 2, someFifthVar = 4;
+
+// There's shorthand for performing math operations on variables:
+someVar += 5; // equivalent to someVar = someVar + 5; someVar is 10 now
+someVar *= 10; // now someVar is 100
+
+// and an even-shorter-hand for adding or subtracting 1
+someVar++; // now someVar is 101
+someVar--; // back to 100
+
+// Arrays are ordered lists of values, of any type.
+var myArray = ["Hello", 45, true];
+
+// Their members can be accessed using the square-brackets subscript syntax.
+// Array indices start at zero.
+myArray[1]; // = 45
+
+// Arrays are mutable and of variable length.
+myArray.push("World");
+myArray.length; // = 4
+
+// Add/Modify at specific index
+myArray[3] = "Hello";
+
+// Add and remove element from front or back end of an array
+myArray.unshift(3); // Add as the first element
+someVar = myArray.shift(); // Remove first element and return it
+myArray.push(3); // Add as the last element
+someVar = myArray.pop(); // Remove last element and return it
+
+// Join all elements of an array with semicolon
+var myArray0 = [32,false,"js",12,56,90];
+myArray0.join(";") // = "32;false;js;12;56;90"
+
+// Get subarray of elements from index 1 (include) to 4 (exclude)
+myArray0.slice(1,4); // = [false,"js",12]
+
+// Remove 4 elements starting from index 2, and insert there strings
+// "hi","wr" and "ld"; return removed subarray
+myArray0.splice(2,4,"hi","wr","ld"); // = ["js",12,56,90]
+// myArray0 === [32,false,"hi","wr","ld"]
+
+// JavaScript's objects are equivalent to "dictionaries" or "maps" in other
+// languages: an unordered collection of key-value pairs.
+var myObj = {key1: "Hello", key2: "World"};
+
+// Keys are strings, but quotes aren't required if they're a valid
+// JavaScript identifier. Values can be any type.
+var myObj = {myKey: "myValue", "my other key": 4};
+
+// Object attributes can also be accessed using the subscript syntax,
+myObj["my other key"]; // = 4
+
+// ... or using the dot syntax, provided the key is a valid identifier.
+myObj.myKey; // = "myValue"
+
+// Objects are mutable; values can be changed and new keys added.
+myObj.myThirdKey = true;
+
+// If you try to access a value that's not yet set, you'll get undefined.
+myObj.myFourthKey; // = undefined
+
+///////////////////////////////////
+// 3. Logic and Control Structures
+
+// The `if` structure works as you'd expect.
+var count = 1;
+if (count == 3){
+    // evaluated if count is 3
+} else if (count == 4){
+    // evaluated if count is 4
+} else {
+    // evaluated if it's not either 3 or 4
+}
+
+// As does `while`.
+while (true){
+    // An infinite loop!
+}
+
+// Do-while loops are like while loops, except they always run at least once.
+var input;
+do {
+    input = getInput();
+} while (!isValid(input));
+
+// The `for` loop is the same as C and Java:
+// initialization; continue condition; iteration.
+for (var i = 0; i < 5; i++){
+    // will run 5 times
+}
+
+// Breaking out of labeled loops is similar to Java
+outer:
+for (var i = 0; i < 10; i++) {
+    for (var j = 0; j < 10; j++) {
+        if (i == 5 && j ==5) {
+            break outer;
+            // breaks out of outer loop instead of only the inner one
+        }
+    }
+}
+
+// The for/in statement allows iteration over properties of an object.
+var description = "";
+var person = {fname:"Paul", lname:"Ken", age:18};
+for (var x in person){
+    description += person[x] + " ";
+} // description = 'Paul Ken 18 '
+
+// The for/of statement allows iteration over iterable objects (including the built-in String, 
+// Array, e.g. the Array-like arguments or NodeList objects, TypedArray, Map and Set, 
+// and user-defined iterables).
+var myPets = "";
+var pets = ["cat", "dog", "hamster", "hedgehog"];
+for (var pet of pets){
+    myPets += pet + " ";
+} // myPets = 'cat dog hamster hedgehog '
+
+// && is logical and, || is logical or
+if (house.size == "big" && house.colour == "blue"){
+    house.contains = "bear";
+}
+if (colour == "red" || colour == "blue"){
+    // colour is either red or blue
+}
+
+// && and || "short circuit", which is useful for setting default values.
+var name = otherName || "default";
+
+// The `switch` statement checks for equality with `===`.
+// Use 'break' after each case
+// or the cases after the correct one will be executed too.
+grade = 'B';
+switch (grade) {
+  case 'A':
+    console.log("Great job");
+    break;
+  case 'B':
+    console.log("OK job");
+    break;
+  case 'C':
+    console.log("You can do better");
+    break;
+  default:
+    console.log("Oy vey");
+    break;
+}
+
+
+///////////////////////////////////
+// 4. Functions, Scope and Closures
+
+// JavaScript functions are declared with the `function` keyword.
+function myFunction(thing){
+    return thing.toUpperCase();
+}
+myFunction("foo"); // = "FOO"
+
+// Note that the value to be returned must start on the same line as the
+// `return` keyword, otherwise you'll always return `undefined` due to
+// automatic semicolon insertion. Watch out for this when using Allman style.
+function myFunction(){
+    return // <- semicolon automatically inserted here
+    {thisIsAn: 'object literal'};
+}
+myFunction(); // = undefined
+
+// JavaScript functions are first class objects, so they can be reassigned to
+// different variable names and passed to other functions as arguments - for
+// example, when supplying an event handler:
+function myFunction(){
+    // this code will be called in 5 seconds' time
+}
+setTimeout(myFunction, 5000);
+// Note: setTimeout isn't part of the JS language, but is provided by browsers
+// and Node.js.
+
+// Another function provided by browsers is setInterval
+function myFunction(){
+    // this code will be called every 5 seconds
+}
+setInterval(myFunction, 5000);
+
+// Function objects don't even have to be declared with a name - you can write
+// an anonymous function definition directly into the arguments of another.
+setTimeout(function(){
+    // this code will be called in 5 seconds' time
+}, 5000);
+
+// JavaScript has function scope; functions get their own scope but other blocks
+// do not.
+if (true){
+    var i = 5;
+}
+i; // = 5 - not undefined as you'd expect in a block-scoped language
+
+// This has led to a common pattern of "immediately-executing anonymous
+// functions", which prevent temporary variables from leaking into the global
+// scope.
+(function(){
+    var temporary = 5;
+    // We can access the global scope by assigning to the "global object", which
+    // in a web browser is always `window`. The global object may have a
+    // different name in non-browser environments such as Node.js.
+    window.permanent = 10;
+})();
+temporary; // raises ReferenceError
+permanent; // = 10
+
+// One of JavaScript's most powerful features is closures. If a function is
+// defined inside another function, the inner function has access to all the
+// outer function's variables, even after the outer function exits.
+function sayHelloInFiveSeconds(name){
+    var prompt = "Hello, " + name + "!";
+    // Inner functions are put in the local scope by default, as if they were
+    // declared with `var`.
+    function inner(){
+        alert(prompt);
+    }
+    setTimeout(inner, 5000);
+    // setTimeout is asynchronous, so the sayHelloInFiveSeconds function will
+    // exit immediately, and setTimeout will call inner afterwards. However,
+    // because inner is "closed over" sayHelloInFiveSeconds, inner still has
+    // access to the `prompt` variable when it is finally called.
+}
+sayHelloInFiveSeconds("Adam"); // will open a popup with "Hello, Adam!" in 5s
+
+///////////////////////////////////
+// 5. More about Objects; Constructors and Prototypes
+
+// Objects can contain functions.
+var myObj = {
+    myFunc: function(){
+        return "Hello world!";
+    }
+};
+myObj.myFunc(); // = "Hello world!"
+
+// When functions attached to an object are called, they can access the object
+// they're attached to using the `this` keyword.
+myObj = {
+    myString: "Hello world!",
+    myFunc: function(){
+        return this.myString;
+    }
+};
+myObj.myFunc(); // = "Hello world!"
+
+// What this is set to has to do with how the function is called, not where
+// it's defined. So, our function doesn't work if it isn't called in the
+// context of the object.
+var myFunc = myObj.myFunc;
+myFunc(); // = undefined
+
+// Inversely, a function can be assigned to the object and gain access to it
+// through `this`, even if it wasn't attached when it was defined.
+var myOtherFunc = function(){
+    return this.myString.toUpperCase();
+};
+myObj.myOtherFunc = myOtherFunc;
+myObj.myOtherFunc(); // = "HELLO WORLD!"
+
+// We can also specify a context for a function to execute in when we invoke it
+// using `call` or `apply`.
+
+var anotherFunc = function(s){
+    return this.myString + s;
+};
+anotherFunc.call(myObj, " And Hello Moon!"); // = "Hello World! And Hello Moon!"
+
+// The `apply` function is nearly identical, but takes an array for an argument
+// list.
+
+anotherFunc.apply(myObj, [" And Hello Sun!"]); // = "Hello World! And Hello Sun!"
+
+// This is useful when working with a function that accepts a sequence of
+// arguments and you want to pass an array.
+
+Math.min(42, 6, 27); // = 6
+Math.min([42, 6, 27]); // = NaN (uh-oh!)
+Math.min.apply(Math, [42, 6, 27]); // = 6
+
+// But, `call` and `apply` are only temporary. When we want it to stick, we can
+// use `bind`.
+
+var boundFunc = anotherFunc.bind(myObj);
+boundFunc(" And Hello Saturn!"); // = "Hello World! And Hello Saturn!"
+
+// `bind` can also be used to partially apply (curry) a function.
+
+var product = function(a, b){ return a * b; };
+var doubler = product.bind(this, 2);
+doubler(8); // = 16
+
+// When you call a function with the `new` keyword, a new object is created, and
+// made available to the function via the `this` keyword. Functions designed to be
+// called like that are called constructors.
+
+var MyConstructor = function(){
+    this.myNumber = 5;
+};
+myNewObj = new MyConstructor(); // = {myNumber: 5}
+myNewObj.myNumber; // = 5
+
+// Unlike most other popular object-oriented languages, JavaScript has no
+// concept of 'instances' created from 'class' blueprints; instead, JavaScript
+// combines instantiation and inheritance into a single concept: a 'prototype'.
+
+// Every JavaScript object has a 'prototype'. When you go to access a property
+// on an object that doesn't exist on the actual object, the interpreter will
+// look at its prototype.
+
+// Some JS implementations let you access an object's prototype on the magic
+// property `__proto__`. While this is useful for explaining prototypes it's not
+// part of the standard; we'll get to standard ways of using prototypes later.
+var myObj = {
+    myString: "Hello world!"
+};
+var myPrototype = {
+    meaningOfLife: 42,
+    myFunc: function(){
+        return this.myString.toLowerCase();
+    }
+};
+
+myObj.__proto__ = myPrototype;
+myObj.meaningOfLife; // = 42
+
+// This works for functions, too.
+myObj.myFunc(); // = "hello world!"
+
+// Of course, if your property isn't on your prototype, the prototype's
+// prototype is searched, and so on.
+myPrototype.__proto__ = {
+    myBoolean: true
+};
+myObj.myBoolean; // = true
+
+// There's no copying involved here; each object stores a reference to its
+// prototype. This means we can alter the prototype and our changes will be
+// reflected everywhere.
+myPrototype.meaningOfLife = 43;
+myObj.meaningOfLife; // = 43
+
+// The for/in statement allows iteration over properties of an object,
+// walking up the prototype chain until it sees a null prototype.
+for (var x in myObj){
+    console.log(myObj[x]);
+}
+///prints:
+// Hello world!
+// 43
+// [Function: myFunc]
+// true
+
+// To only consider properties attached to the object itself
+// and not its prototypes, use the `hasOwnProperty()` check.
+for (var x in myObj){
+    if (myObj.hasOwnProperty(x)){
+        console.log(myObj[x]);
+    }
+}
+///prints:
+// Hello world!
+
+// We mentioned that `__proto__` was non-standard, and there's no standard way to
+// change the prototype of an existing object. However, there are two ways to
+// create a new object with a given prototype.
+
+// The first is Object.create, which is a recent addition to JS, and therefore
+// not available in all implementations yet.
+var myObj = Object.create(myPrototype);
+myObj.meaningOfLife; // = 43
+
+// The second way, which works anywhere, has to do with constructors.
+// Constructors have a property called prototype. This is *not* the prototype of
+// the constructor function itself; instead, it's the prototype that new objects
+// are given when they're created with that constructor and the new keyword.
+MyConstructor.prototype = {
+    myNumber: 5,
+    getMyNumber: function(){
+        return this.myNumber;
+    }
+};
+var myNewObj2 = new MyConstructor();
+myNewObj2.getMyNumber(); // = 5
+myNewObj2.myNumber = 6;
+myNewObj2.getMyNumber(); // = 6
+
+// Built-in types like strings and numbers also have constructors that create
+// equivalent wrapper objects.
+var myNumber = 12;
+var myNumberObj = new Number(12);
+myNumber == myNumberObj; // = true
+
+// Except, they aren't exactly equivalent.
+typeof myNumber; // = 'number'
+typeof myNumberObj; // = 'object'
+myNumber === myNumberObj; // = false
+if (0){
+    // This code won't execute, because 0 is falsy.
+}
+if (new Number(0)){
+   // This code will execute, because wrapped numbers are objects, and objects
+   // are always truthy.
+}
+
+// However, the wrapper objects and the regular builtins share a prototype, so
+// you can actually add functionality to a string, for instance.
+String.prototype.firstCharacter = function(){
+    return this.charAt(0);
+};
+"abc".firstCharacter(); // = "a"
+
+// This fact is often used in "polyfilling", which is implementing newer
+// features of JavaScript in an older subset of JavaScript, so that they can be
+// used in older environments such as outdated browsers.
+
+// For instance, we mentioned that Object.create isn't yet available in all
+// implementations, but we can still use it with this polyfill:
+if (Object.create === undefined){ // don't overwrite it if it exists
+    Object.create = function(proto){
+        // make a temporary constructor with the right prototype
+        var Constructor = function(){};
+        Constructor.prototype = proto;
+        // then use it to create a new, appropriately-prototyped object
+        return new Constructor();
+    };
+}
+
+
+
+/* *******************************************************************************************
+ * GLOBAL OBJECTS > OBJECT
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+ * ******************************************************************************************* */
+
+// Global object: properties
+Object.length                                        // length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.
+Object.prototype                                     // Represents the Object prototype object and allows to add new properties and methods to all objects of type Object.
+
+// Methods of the Object constructor
+Object.assign(target, ...sources)                    // Copies the values of all enumerable own properties from one or more source objects to a target object. method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object
+Object.create(MyObject)                              // Creates a new object with the specified prototype object and properties. The object which should be the prototype of the newly-created object.
+Object.defineProperty(obj, prop, descriptor)         // Adds the named property described by a given descriptor to an object.
+Object.defineProperties(obj, props)                  // Adds the named properties described by the given descriptors to an object.
+Object.entries(obj)                                  // Returns an array containing all of the [key, value] pairs of a given object's own enumerable string properties.
+Object.freeze(obj)                                   // Freezes an object: other code can't delete or change any properties.
+Object.getOwnPropertyDescriptor(obj, prop)           // Returns a property descriptor for a named property on an object.
+Object.getOwnPropertyDescriptors(obj)                // Returns an object containing all own property descriptors for an object.
+Object.getOwnPropertyNames(obj)                      // Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties.
+Object.getOwnPropertySymbols(obj)                    // Returns an array of all symbol properties found directly upon a given object.
+Object.getPrototypeOf(obj)                           // Returns the prototype of the specified object.
+Object.is(value1, value2);                           // Compares if two values are the same value. Equates all NaN values (which differs from both Abstract Equality Comparison and Strict Equality Comparison).
+Object.isExtensible(obj)                             // Determines if extending of an object is allowed.
+Object.isFrozen(obj)                                 // Determines if an object was frozen.
+Object.isSealed(obj)                                 // Determines if an object is sealed.
+Object.keys(obj)                                     // Returns an array containing the names of all of the given object's own enumerable string properties.
+Object.preventExtensions(obj)                        // Prevents any extensions of an object.
+Object.seal(obj)                                     // Prevents other code from deleting properties of an object.
+Object.setPrototypeOf(obj, prototype)                // Sets the prototype (i.e., the internal [[Prototype]] property).
+Object.values(obj)                                   // Returns an array containing the values that correspond to all of a given object's own enumerable string properties.
+
+// Object instances and Object prototype object (Object.prototype.property or Object.prototype.method())
+// Properties
+obj.constructor                                      // Specifies the function that creates an object's prototype.
+obj.__proto__                                        // Points to the object which was used as prototype when the object was instantiated.
+
+// Methods
+obj.hasOwnProperty(prop)                             // Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.
+prototypeObj.isPrototypeOf(object)                   // Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object.
+obj.propertyIsEnumerable(prop)                       // Returns a boolean indicating if the internal ECMAScript [[Enumerable]] attribute is set.
+obj.toLocaleString()                                 // Calls toString().
+obj.toString()                                       // Returns a string representation of the object.
+object.valueOf()                                     // Returns the primitive value of the specified object.
+
+/* *******************************************************************************************
+ * GLOBAL OBJECTS > ARRAY
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+ * ******************************************************************************************* */
+
+// Global object: properties
+Array.length                                         // Reflects the number of elements in an array.
+Array.prototype                                      // Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
+
+// Global object: methods
+Array.from(arrayLike[, mapFn[, thisArg]])            // Creates a new Array instance from an array-like or iterable object.
+Array.isArray(obj)                                   // Returns true if a variable is an array, if not false.
+Array.of(element0[, element1[, ...[, elementN]]])    // Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
+
+// Instance: properties
+arr.length                                           // Reflects the number of elements in an array.
+
+// Instance: mutator methods
+arr.copyWithin(target, start, end)                   // Copies a sequence of array elements within the array.
+arr.fill(value, start, end)                          // Fills all the elements of an array from a start index to an end index with a static value.
+arr.pop()                                            // Removes the last element from an array and returns that element.
+arr.push([element1[, ...[, elementN]]])              // Adds one or more elements to the end of an array and returns the new length of the array.
+arr.reverse()                                        // Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
+arr.shift()                                          // Removes the first element from an array and returns that element.
+arr.sort()                                           // Sorts the elements of an array in place and returns the array.
+array.splice(start, deleteCount, item1, item2, ...)  // Adds and/or removes elements from an array.
+arr.unshift([element1[, ...[, elementN]]])           // Adds one or more elements to the front of an array and returns the new length of the array.
+
+// Instance: accessor methods
+arr.concat(value1[, value2[, ...[, valueN]]])        // Returns a new array comprised of this array joined with other array(s) and/or value(s).
+arr.includes(searchElement, fromIndex)               // Determines whether an array contains a certain element, returning true or false as appropriate.
+arr.indexOf(searchElement[, fromIndex])              // Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+arr.join(separator)                                  // Joins all elements of an array into a string.
+arr.lastIndexOf(searchElement, fromIndex)            // Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+arr.slice(begin, end)                                // Extracts a section of an array and returns a new array.
+arr.toString()                                       // Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
+arr.toLocaleString(locales, options)                 // Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method.
+
+// Instance: iteration methods
+arr.entries()                                        // Returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+arr.every(callback[, thisArg])                       // Returns true if every element in this array satisfies the provided testing function.
+arr.filter(callback[, thisArg])                      // Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+arr.find(callback[, thisArg])                        // Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+arr.findIndex(callback[, thisArg])                   // Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
+arr.forEach(callback[, thisArg])                     // Calls a function for each element in the array.
+arr.keys()                                           // Returns a new Array Iterator that contains the keys for each index in the array.
+arr.map(callback[, initialValue])                    // Creates a new array with the results of calling a provided function on every element in this array.
+arr.reduce(callback[, initialValue])                 // Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
+arr.reduceRight(callback[, initialValue])            // Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
+arr.some(callback[, initialValue])                   // Returns true if at least one element in this array satisfies the provided testing function.
+arr.values()                                         // Returns a new Array Iterator object that contains the values for each index in the array.
+
+```
+
+
+
+---
+
+
+
+
+
+Fundamental Javascript Concepts You Should Understand
+=====================================================
+
+Plain Old JS Object Lesson Concepts
+
+------------------------------------------------------------------------
+
+### Fundamental Javascript Concepts You Should Understand
+
+### Plain Old JS Object Lesson Concepts
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" /></figure>-   <span id="d911">Label variables as either Primitive vs. Reference</span>
+-   <span id="42a0">primitives: strings, booleans, numbers, null and undefined</span>
+-   <span id="4423">primitives are immutable</span>
+-   <span id="fd1a">refereces: objects (including arrays)</span>
+-   <span id="d581">references are mutable</span>
+-   <span id="65e2">Identify when to use `.` vs `[]` when accessing values of an object</span>
+-   <span id="eb9d">dot syntax `object.key`</span>
+-   <span id="8e03">easier to read</span>
+-   <span id="1662">easier to write</span>
+-   <span id="5796">cannot use variables as keys</span>
+-   <span id="588a">keys cannot begin with a number</span>
+-   <span id="5501">bracket notation `object["key]`</span>
+-   <span id="5734">allows variables as keys</span>
+-   <span id="76ca">strings that start with numbers can be use as keys</span>
+-   <span id="822a">Write an object literal with a variable key using interpolation</span>
+
+#### put it in brackets to access the value of the variable, rather than just make the value that string
+
+    let a = "b";
+        let obj = {
+            a: "letter_a",
+            [a]: "letter b"
+        }
+
+-   <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
+-   <span id="0baa">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
+-   <span id="ad4c">Utilize Object.keys and Object.values in a function</span>
+-   <span id="b548">`Object.keys(obj)` returns an array of all the keys in `obj`</span>
+-   <span id="f39b">`Object.values(obj)` returns an array of the values in `obj`</span>
+
+#### Iterate through an object using a `for in` loop
+
+    let printValues = function(obj) {
+          for (let key in obj) {
+              let value = obj[key];
+              console.log(value);
+          }
+      }
+
+#### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+
+-   <span id="58a5">`...rest` syntax will store all additional arguments in an array</span>
+-   <span id="5f8b">array will be empty if there are no additional arguments</span>
+
+<!-- -->
+
+    let myFunction = function(str, ...strs) {
+            console.log("The first string is " + str);
+            console.log("The rest of the strings are:");
+            strs.forEach(function(str) {
+                console.log(str);
+            })
+        }
+
+#### Use `...spread` syntax for Object literals and Array literals
+
+    let arr1 = ["a", "b", "c"];
+      let longer = [...arr1, "d", "e"]; // ["a", "b", "c", "d", "e"]
+      // without spread syntax, this would give you a nested array
+      let withoutRest = [arr1, "d", "e"] // [["a", "b", "c"], "d", "e"]
+
+-   <span id="118b">Destructure an array to reference specific elements</span>
+
+<!-- -->
+
+    let array = [35, 9];
+
+    let [firstEl, secondEl] = array;
+
+    console.log(firstEl); // => 35
+
+    console.log(secondEl); // => 9
+
+    // can also destructure using … syntax let array = [35, 9, 14]; let [head, …tail] = array; console.log(head); // => 35 console.log(tail); // => [9, 14]
+
+    -Destructure an object to reference specific values
+        -
+        if you want to use variable names that don 't match the keys, you can use aliasing -
+        `let { oldkeyname: newkeyname } = object` -
+        rule of thumb— only destructure values from objects that are two levels deep ``
+    `javascript
+    let obj = {
+       name: "Wilfred",
+       appearance: ["short", "mustache"],
+       favorites: {
+          color: "mauve",
+          food: "spaghetti squash",
+          number: 3
+       }
+    }
+    // with variable names that match keys
+    let { name, appearance } = obj;
+    console.log(name); // "Wilfred"
+    console.log(appearance); // ["short", "mustache"]
+
+    // with new variable names (aliasing)
+    let {name: myName, appearance: myAppearance} = obj;
+
+    console.log(myName); // "Wilfred"
+    console.log(myAppearance); // ["short", "mustache"]
+
+    // in a function call
+    let sayHello = function({name}) {
+    console.log("Hello, " + name); // "Hello Wilfred"
+    }
+
+    // nested objects + aliasing
+    let { favorites: {color, food: vegetable} } = obj;
+    console.log(color, vegetable); //=> mauve spaghetti squash
+
+#### Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+
+    //
+      let elementCounts = function(array) {
+          let obj = {};
+          array.forEach(function(el) {
+              if (el in obj) obj[el] += 1;
+              else obj[el] = 1;
+          })
+          return obj;
+      }
+      console.log(elementCounts(["e", "f", "g", "f"])); // => Object {e: 1, f: 2, g: 1}
+
+### Callbacks Lesson Concepts
+
+-   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
+-   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
+-   <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
+-   <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
+-   <span id="adbe">Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed</span>
+-   <span id="e93b">what is this referring to?</span>
+-   <span id="c73f">Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.</span>
+
+<!-- -->
+
+    let greaterCB = function(val, callback1, callback2) {
+        if (callback1(val) > callback2(val)) {
+            return callback1(val);
+        }
+        return callback2(val);
+    }
+
+    let greaterCB = function(val, callback1, callback2) {
+        if (callback1(val) > callback2(val)) {
+            return callback1(val);
+        }
+        return callback2(val);
+    }
+
+// shorter version let greaterCB = function(val, callback1, callback2) { return Math.max(callback1(val), callback2(val)); } // even shorter, cause why not let greaterCB = (val, cb1, cb2) =&gt; Math.max(cb1(val), cb2(val));
+
+    -Write a
+    function, myMap, that takes in an array and a callback as arguments.The
+    function should mimic the behavior of `Array#map`.
+    ``
+    `javascript
+    let myMap = function(array, callback) {
+       let newArr = [];
+       for (let i = 0; i < array.length; i ++) {
+          mapped = callback(array[i], i, array);
+          newArr.push(mapped);
+       }
+       return newArr;
+    }
+    console.log( myMap([16,25,36], Math.sqrt)); // => [4, 5, 6];
+
+    let myMapArrow = (array, callback) => {
+       let newArr = [];
+       array.forEach( (ele, ind, array) => {
+          newArr.push(callback(ele, ind, array));
+       })
+       return newArr;
+    }
+    console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
+
+#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
+
+    let myFilter = function(array, callback) {
+          let filtered = [];
+          for (let i = 0; i < array.length; i++) {
+              if (callback(array[i])) {
+                  filtered.push(array[i], i, array);
+              }
+          }
+      }
+
+#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
+
+    let myEvery = function(array, callback) {
+          for (let i = 0; i < array.length; i++) {
+              if (!callback(array[i], i, array)) {
+                  return false
+              }
+          }
+          return true;
+      }
+      // with arrow function syntax
+      let myEvery = (array, callback) => {
+          for (let i = 0; i < array.length; i++) {
+              if (!callback(array[i])) {
+                  return false
+              }
+          }
+          return true;
+      }
+
+### Scope Lesson Concepts
+
+-   <span id="685f">Identify the difference between `const`, `let`, and `var` declarations</span>
+-   <span id="7308">`const` - cannot reassign variable, scoped to block</span>
+-   <span id="e07f">`let` - can reassign variable, scoped to block</span>
+-   <span id="670d">`var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!</span>
+-   <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
+-   <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
+-   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"</span>
+-   <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
+-   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
+-   <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
+-   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
+-   <span id="c3d4">block-scoped still performs hoisting of all variables within the block, but it doesn’t initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared</span>
+-   <span id="f797">if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD</span>
+-   <span id="2212">if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there’s no hoisting, so it doesn’t exist in the scope until after the line is run</span>
+-   <span id="86d1">Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining</span>
+-   <span id="25dc">scope of a program means the set of variables that are available for use within the program</span>
+-   <span id="bcaf">global scope is represented by the `window` object in the browser and the `global` object in Node.js</span>
+-   <span id="7bc3">global variables are available everywhere, and so increase the risk of name collisions</span>
+-   <span id="5172">local scope is the set of variables available for use within the function</span>
+-   <span id="ed33">when we enter a function, we enter a new scope</span>
+-   <span id="c21b">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
+-   <span id="51ad">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
+-   <span id="09f1">inner scope does not have access to variables in the outer scope</span>
+-   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
+-   <span id="6ea5">so an inner scope can access outer scope variables</span>
+-   <span id="5188">but an outer scope can never access inner scope variables</span>
+
+#### Define an arrow function
+
+    let arrowFunction = (param1, param2) => {
+
+    let sum = param1 + param2;
+
+    return sum;
+
+    }
+
+    // with 1 param you can remove parens around parameters let arrowFunction = param =>
+
+    // if your return statement is one line, you can use implied return let arrowFunction = param => param + 1;
+
+    // you don’t have to assign to variable, can be anonymous // if you never need to use it again param => param + 1;
+
+#### Given an arrow function, deduce the value of `this` without executing the code
+
+-   <span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span>
+-   <span id="9fb2">unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).</span>
+-   <span id="683a">if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.</span>
+-   <span id="e9e1">so you can’t use an arrow function to define a method directly</span>
+
+<!-- -->
+
+    let obj = {
+    name: “my object”,
+    unboundFunc: function () {
+
+    return this.name;
+
+    // this function will be able to be called on different objects
+
+    },
+    boundToGlobal: () => { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
+
+    makeFuncBoundToObj: function() {
+            return () => {
+                return this.name;
+            }
+            // this function will return a function that will be bound
+            // to the object where we call the outer method
+            // because the arrow syntax is nested inside one of this
+            // function's methods, it cannot be rebound
+        },
+
+        makeUnboundFunc: function() {
+            return function() {
+                return this.name;
+            }
+            //this function will return a function that will still be unbound
+        },
+
+        immediatelyInvokedFunc: function() {
+            return this.name;
+        }(), // this property will be set to the return value of this anonymous function,
+        // which is invoked during the object definition;
+        // basically, it's a way to check the context inside of an object, at this moment
+
+        innerObj: {
+            name: "inner object",
+            innerArrowFunc: () => {
+                return this.name;
+            } // the context inside a nested object is not the parent, it's still
+            // the global object. entering an object definition doesn't change the context
+        },
+
+        let otherObj = {
+            name: "my other object"
+        }
+    // call unboundFunc on obj, we get "my object" console.log("unboundFunc: ", obj.unboundFunc()); // => "my object" // assign unboundFunc to a variable and call it let newFunc = obj.unboundFunc; // this newFunc will default to being called on global object console.log("newFunc: ",newFunc()); // => undefined // but you could bind it directly to a different object if you wanted console.log("newFunc: ", newFunc.bind(otherObj)()); // "my other object"
+    // meanwhile, obj.boundToGlobal will only ever be called on global object console.log("boundToGlobal: ", obj.boundToGlobal()); //=> undefined let newBoundFunc = obj.boundToGlobal; console.log("newBoundFunc: ", newBoundFunc()); // => undefined // even if you try to directly bind to another object, it won't work! console.log("newBoundFunc: ", newBoundFunc.bind(otherObj)()); // => undefined
+    // let's make a new function that will always be bound to the context // where we call our function maker let boundFunc = obj.makeFuncBoundToObj();// note that we're invoking, not just assigning console.log("boundFunc: ", boundFunc()); // => "my object" // we can't rebind this function console.log("boundFunc: ", boundFunc.bind(otherObj)()) // =>"my object"
+    // but if I call makeFuncBoundToObj on another context // the new bound function is stuck with that other context let boundToOther = obj.makeFuncBoundToObj.bind(otherObj)(); console.log("boundToOther: ", boundToOther()); // => "my other object" console.log("boundToOther: ", boundToOther.bind(obj)()) // "my other object"
+    // the return value of my immediately invoked function // shows that the context inside of the object is the // global object, not the object itself // context only changes inside a function that is called // on an object console.log("immediatelyInvokedFunc: ", obj.immediatelyInvokedFunc); // => undefined
+    // even though we're inside a nested object, the context is // still the same as it was outside the outer object // in this case, the global object console.log("innerArrowFunc: ", obj.innerObj.innerArrowFunc()); // => undefined
+
+    }
+
+    -Implement a closure and explain how the closure effects scope
+        -
+        a closure is "the combination of a function and the lexical environment within which that function was declared" -
+        alternatively, "when an inner function uses or changes variables in an outer function" -
+        closures have access to any variables within their own scope + scope of outer functions + global scope— the set of all these available variables is "lexical environemnt" -
+        closure keeps reference to all variables ** even
+    if the outer
+    function has returned **
+        -each
+    function has a private mutable state that cannot be accessed externally
+        -
+        the inner
+    function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope— even
+    if that scope
+        -
+        if a variable exists in the scope of what could have been accessed by a
+    function(e.g.global scope, outer
+        function, etc), does that variable wind up in the closure even
+    if it never got accessed ?
+        -
+        if you change the value of a variable(e.g.i++) you will change the value of that variable in the scope that it was declared in
+
+        ``
+    `javascript
+    function createCounter() {
+       // this function starts a counter at 0, then returns a
+       // new function that can access and change that counter
+       //
+       // each new counter you create will have a single internal
+       // state, that can be changed only by calling the function.
+       // you can't access that state from outside of the function,
+       // even though the count variable in question is initialized
+       // by the outer function, and it remains accessible to the
+       // inner function after the outer function returns.
+       let count = 0;
+       return function() {
+          count ++;
+          return count;
+       }
+    }
+
+    let counter = createCounter();
+    console.log(counter()); //=> 1
+    console.log(counter()); //=> 2
+    // so the closure here comes into play because
+    // an inner function is accessing and changing
+    // a variable from an outer function
+
+    // the closure is the combination of the counter
+    // function and the all the variables that existed
+    // in the scope that it was declared in. because
+    // inner blocks/functions have access to outer
+    // scopes, that includes the scope of the outer
+    // function.
+
+    // so counter variable is a closure, in that
+    // it contains the inner count value that was
+    // initialized by the outer createCounter() function
+    // count has been captured or closed over
+
+    // this state is private, so if i run createCounter again
+    // i get a totally separate count that doesn't interact
+    // with the previous one and each of the new functions
+    // will have their own internal state based on the
+    // initial declaration in the now-closed outer function
+
+    let counter2 = createCounter();
+    console.log(counter2()); // => 1
+
+    // if i set a new function equal to my existing counter
+    // the internal state is shared with the new function
+    let counter3 = counter2;
+    console.log(counter3());
+
+#### Define a method that references `this` on an object literal
+
+-   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
+-   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
+-   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="c99d">context is set every time we invoke a function</span>
+-   <span id="fa43">function style invocation sets the context to the global object no matter what</span>
+-   <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
+-   <span id="f578">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
+-   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
+
+<!-- -->
+
+    let cat = {
+      purr: function () {
+      console.log("meow");
+      },
+      purrMore: function () {
+      this.purr();
+      },
+      };
+      let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
+
+      // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
+      boundCat(); // prints "meow"
+
+    -`bind`
+       can also work with arguments, so you can have a version of a
+       function with particular arguments and a particular context.the first arg will be the context aka the `this`
+       you want it to use.the next arguments will be the functions arguments that you are binding -
+           if you just want to bind it to those arguments in particular, you can use `null`
+       as the first argument, so the context won 't be bound, just the arguments -
+           Given a code snippet, identify what `this`
+       refers to
+           -
+           important to recognize the difference between scope and context -
+           scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block 's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
+               context refers to the value of the `this`
+               keyword -
+               the keyword `this`
+               exists in every
+               function and it evaluates to the object that is currently invoking that
+               function -so the context is fairly straightforward when we talk about methods being called on specific objects -
+               you could, however, call an object 's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+               ``
+               `javascript
+    let dog = {
+       name: "Bowser",
+       changeName: function () {
+          this.name = "Layla";
+      },
+    };
+
+    // note this is **not invoked** - we are assigning the function itself
+    let change = dog.changeName;
+    console.log(change()); // undefined
+
+    // our dog still has the same name
+    console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
+
+    // instead of changing the dog we changed the global name!!!
+    console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
+
+### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+
+-   <span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="1880">you could also overwrite values or assign values to exist in a space where they should not exist</span>
+-   <span id="c9f0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
+
+<!-- -->
+
+    let cat = {
+      purr: function () {
+      console.log("meow");
+      },
+      purrMore: function () {
+      this.purr();
+      },
+      };
+      global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
+
+we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+
+    let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
+
+    // we can use the built in Function.bind to ensure our context, our this , // is the cat object let boundCat = sayMeow.bind(cat);
+
+    boundCat(); // prints “meow”
+
+    -`bind`
+       can also work with arguments, so you can have a version of a
+       function with particular arguments and a particular context.the first arg will be the context aka the `this`
+       you want it to use.the next arguments will be the functions arguments that you are binding -
+           if you just want to bind it to those arguments in particular, you can use `null`
+       as the first argument, so the context won 't be bound, just the arguments -
+           Given a code snippet, identify what `this`
+       refers to
+           -
+           important to recognize the difference between scope and context -
+           scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block 's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
+               context refers to the value of the `this`
+               keyword -
+               the keyword `this`
+               exists in every
+               function and it evaluates to the object that is currently invoking that
+               function -so the context is fairly straightforward when we talk about methods being called on specific objects -
+               you could, however, call an object 's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+               ``
+               `javascript
+    let dog = {
+       name: "Bowser",
+       changeName: function () {
+          this.name = "Layla";
+      },
+    };
+
+    // note this is **not invoked** - we are assigning the function itself
+    let change = dog.changeName;
+    console.log(change()); // undefined
+
+    // our dog still has the same name
+    console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
+
+    // instead of changing the dog we changed the global name!!!
+    console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
+
+-   <span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span>
+-   <span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span>
+-   <span id="e09e">you could also overwrite values or assign values to exist in a space where they should not exist</span>
+-   <span id="b6e0">if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object</span>
+
+> we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+
+### POJOs
+
+#### 1. Label variables as either Primitive vs. Reference
+
+Javascript considers most data types to be ‘primitive’, these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered ‘reference’ data types, and are passed by reference.
+
+-   <span id="6f83">Boolean — Primitive</span>
+-   <span id="6556">Null — Primitive</span>
+-   <span id="0048">Undefined — Primitive</span>
+-   <span id="8dec">Number — Primitive</span>
+-   <span id="684c">String — Primitive</span>
+-   <span id="41c1">Array — Reference</span>
+-   <span id="9371">Object — Reference</span>
+-   <span id="64c8">Function — Reference</span>
+
+#### 2. Identify when to use . vs \[\] when accessing values of an object
+
+    let obj = {
+        "one": 1,
+        "two": 2
+    };
+
+    // Choose the square brackets property accessor when the property name is determined at
+    // runtime, or if the property name is not a valid identifier
+    let myKey = "one";
+    console.log(obj[myKey]);
+
+    // Choose the dot property accessor when the property name is known ahead of time.
+    console.log(obj.two);
+
+#### 3. Write an object literal with a variable key using interpolation
+
+    let keyName = "two";
+
+    // If the key is not known, you can use an alternative `[]` syntax for
+    // object initialization only
+    let obj2 = {
+        [keyName]: 2
+    }
+    console.log(obj2);
+
+#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
+
+    function doesKeyExist(obj, key) {
+        // obj[key] !== undefined
+        // or:
+        return key in obj;
+    }
+
+    let course = {
+        bootcamp: 'Lambda',
+        course: 'Bootcamp Prep'
+    }
+    console.log(doesKeyExist(course, 'course')); // => true
+    console.log(doesKeyExist(course, 'name')); // => false
+
+#### 5. Utilize Object.keys and Object.values in a function
+
+    function printKeys(object) {
+        return Object.keys(object);
+    }
+
+    function printValues(object) {
+        return Object.values(object);
+    }
+
+    console.log(printKeys({
+        dog: "Strelka",
+        dog2: "Belka"
+    }));
+    console.log(printValues({
+        dog: "Strelka",
+        dog2: "Belka"
+    }));
+
+#### 6. Iterate through an object using a for in loop
+
+    let player = {
+        name: "Sergey",
+        skill: "hockey"
+    };
+
+    for (let key in player) {
+        console.log(key, player[key]);
+    }
+
+    console.log(Object.entries(player));
+
+#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
+
+    function restSum(...otherNums) {
+        let sum = 0;
+        console.log(otherNums);
+        otherNums.forEach(function(num) {
+            sum += num;
+        });
+
+        return sum;
+    }
+
+    console.log(restSum(3, 5, 6)); // => 14
+    console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // => 45
+    console.log(restSum(0)); // => 0
+
+#### 8. Use …spread syntax for Object literals and Array literals
+
+    let numArray = [1, 2, 3];
+    let moreNums = [...numArray, 4, 5, 6]
+
+    console.log(moreNums);
+
+    let shoe = {
+        color: "red",
+        size: 10
+    };
+    let newShoe = {
+        ...shoe,
+        brand: "Nike",
+        size: 12
+    };
+    console.log(newShoe);
+    newShoe.color = "black";
+    console.log(newShoe);
+
+    console.log(shoe);
+
+#### 9. Destructure an array to reference specific elements
+
+    let arr = ['one', 'two', 'three'];
+
+    let [first] = arr;
+    console.log(first);
+
+#### 10. Destructure an object to reference specific values
+
+    let me = {
+        name: "Ian",
+        instruments: ['bass', 'synth', 'guitar'],
+        siblings: {
+            brothers: ['Alistair'],
+            sisters: ['Meghan']
+        }
+    }
+
+    let {
+        name,
+        instruments: musical_instruments,
+        siblings: {
+            sisters
+        }
+    } = me;
+
+    console.log(name);
+    console.log(musical_instruments);
+    console.log(sisters);
+
+#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
+
+    function charCount(inputString) {
+
+        let res = inputString.split("").reduce(function(accum, el) {
+            if (el in accum) {
+                accum[el] = accum[el] + 1;
+            } else {
+                accum[el] = 1;
+            }
+            return accum;
+        }, {})
+        return res;
+
+    }
+
+    console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
+
+### Review of Concepts
+
+#### 1. Identify the difference between const, let, and var declarations
+
+#### 2. Explain the difference between const, let, and var declarations
+
+    var a = "a";
+
+-   <span id="2dba">`var` is the historical keyword used for variable declaration.</span>
+-   <span id="50d3">`var` declares variables in function scope, or global scope if not inside a function.</span>
+-   <span id="4bc8">We consider `var` to be deprecated and it is never used in this course.</span>
+
+<!-- -->
+
+    let b = "b";
+
+-   <span id="8bab">`let` is the keyword we use most often for variable declaration.</span>
+-   <span id="0642">`let` declares variables in block scope.</span>
+-   <span id="bf7b">variables declared with `let` are re-assignable.</span>
+
+<!-- -->
+
+    const c = "c";
+
+-   <span id="e199">`const` is a specialized form of `let` that can only be used to **initialize** a variable.</span>
+-   <span id="4522">Except when it is declared, you cannot assign to a `const` variable.</span>
+-   <span id="4e5a">`const` scopes variables the same way that `let` does.</span>
+
+#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+
+Consider this `run` function, inside which `foo` and `bar` have `function scope` . `i` and `baz` are scoped to the block expression.
+
+    // function and block scope in this example
+    function run() {
+        var foo = "Foo";
+        let bar = "Bar";
+
+        console.log(foo, bar);
+
+        {
+            console.log(foo);
+            let baz = "Bazz";
+            console.log(baz);
+        }
+
+        console.log(baz); // ReferenceError
+    }
+
+    run();
+
+Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
+
+Consider this `run` function, inside of which `foo` has `function scope` .
+
+    function run() {
+        console.log(foo); // undefined
+        var foo = "Foo";
+        console.log(foo); // Foo
+    }
+
+    run();
+
+Consider this `func1` function and it's nested scopes.
+
+    // global scope
+    function func1(arg1) {
+        // func1 scope
+
+        return function func2(arg2) {
+            // func2 scope
+
+            return function func3(arg3) {
+                // func3 scope
+
+                console.log(arg1, arg2, arg3);
+            }
+        }
+    }
+
+#### 6. Implement a closure and explain how the closure effects scope
+
+    const adder = (arg1) => {
+        return (arg2) => {
+            return arg1 + arg2;
+        }
+    };
+
+    const func2 = adder(2);
+    const result = func2(2);
+    console.log(result); // => 4;
+
+#### 4. Define an arrow function
+
+    const returnValue = (val) => val;
+
+This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val` , because this is a single-line function.
+
+Identically, we could write
+
+    const returnValue = (val) => {
+        return val;
+    };
+
+#### 5. Given an arrow function, deduce the value of `this` without executing the code
+
+    function fDAdder(arr) {
+        console.log(this);
+
+        return arr.reduce((acc, ele) => {
+            return acc + ele;
+        });
+    };
+
+    fDAdder([1, 2, 4, 6]);
+
+If we use a function declaration style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node. JS and `Window` in your browser).
+
+    const adder = (arr) => {
+        console.log(this);
+        arr.reduce((acc, ele) => sum += ele);
+    };
+    adder([1, 2, 4, 6]);
+
+In this example, we use a fat arrow style function. Note that when we declare a functions like this `this` becomes
+
+#### 7. Define a method that references this on an object literal
+
+    const pokemon = {
+        firstname: 'Pika',
+        lastname: 'Chu',
+        getPokeName: function() {
+            const fullname = `${this.firstname} ${this.lastname}`;
+            return fullname;
+        }
+    };
+
+    console.log(pokemon.getPokeName());
+
+#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
+
+    const pokemon = {
+        firstname: 'Pika',
+        lastname: 'Chu',
+        getPokeName: function() {
+            const fullname = `${this.firstname} ${this.lastname}`;
+            return fullname;
+        }
+    };
+
+    const logPokemon = pokemon.getPokename.bind(pokemon);
+
+    logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
+
+#### 9. Given a code snippet, identify what `this` refers to
+
+    function Person(name) {
+        // this.name = name; 
+        // let that = this;
+
+        setTimeout(function() {
+            // console.log(this); // => Window
+            // console.log(that); // => [Function] => Person
+            // this.sayName(); // => no method error
+            that.sayName();
+        }, 1000);
+    }
+
+    Person.prototype.sayName = function() {
+        console.log(this.name);
+    };
+
+    const jane = new Person("Jane");
+
+
+---
+
+
+
 # The Complete JavaScript Reference Guide
 
 ---
@@ -43,9 +1605,9 @@ template: docs
 
 ---
 
-### Getting visual feedback in your programs
+### Getting visual feedback in your programs
 
-The first command we’ll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we’ll be using `console.log` frequently as a way to visually see the output of our programs. Let’s write our first program:
+The first command we'll learn in JavaScript is `console.log`. This command is used to _print_ something onto the screen. As we write our first lines of code, we'll be using `console.log` frequently as a way to visually see the output of our programs. Let's write our first program:
 
     console.log("hello world");
     console.log("how are you?");
@@ -55,21 +1617,21 @@ Executing the program above would print out the following:
     hello world
     how are you?
 
-Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We’ll also terminate lines with semicolons (;).
+Nothing too ground breaking here, but pay close attention to the exact way we wrote the program. In particular, notice how we lay out the periods, parentheses, and quotation marks. We'll also terminate lines with semicolons (;).
 
-> _Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do._
+> _Depending on how you structure your code, sometimes you'll be able to omit semicolons at the end of lines. For now, you'll want to include them just as we do._
 
 ### Syntax
 
-We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
+We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
 
-As you write your first lines of code in this new language, you may make many syntax errors. Don’t get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
+As you write your first lines of code in this new language, you may make many syntax errors. Don't get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
 
 Additionally, one of the best things about programming is that we can get such immediate feedback from our creations. There is no penalty for making a mistake when programming. Write some code, run the code, read the errors, fix the errors, rinse and repeat!
 
 ### Code comments
 
-Occasionally we’ll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
+Occasionally we'll want to leave **comments** or notes in our code. Commented lines will be ignored by our computer. This means that we can use comments to write plain english or temporarily avoid execution of some JavaScript lines. The proper _syntax_ for writing a comment is to begin the line with double forward slashes (`//`):
 
     // let's write another program!!!
     console.log("hello world");
@@ -83,7 +1645,7 @@ The program above would only print:
     hello world
     goodbye moon
 
-Comments are useful when annotating pieces of code to offer an explanation of how the code works. We’ll want to strive to write straightforward code that is self-explanatory when possible, but we can also use comments to add additional clarity. The real art of programming is to write code so elegantly that it is easy to follow.
+Comments are useful when annotating pieces of code to offer an explanation of how the code works. We'll want to strive to write straightforward code that is self-explanatory when possible, but we can also use comments to add additional clarity. The real art of programming is to write code so elegantly that it is easy to follow.
 
 **The Number Data Type**
 
@@ -101,13 +1663,13 @@ Operators are the symbols that perform particular operations.
 
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
--   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
+-   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
 -   <span id="9c25">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
-**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
+**Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
--   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
-     console.log(7 % 10) // =&gt; 7;</span>
+-   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
+     console.log(7 % 10) // =&gt; 7;</span>
 
 **The String Data Type**
 
@@ -115,38 +1677,38 @@ The **string** data type is a primitive data type that used to represent textual
 
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     “That’s a great string”; (valid)
-    ‘Shakespeare wrote, “To be or not to be”’; (valid)
-    ‘That’s a bad string’; (invalid)</span>
+     “That's a great string”; (valid)
+    'Shakespeare wrote, “To be or not to be”'; (valid)
+    'That's a bad string'; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
-     \`This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
--   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
+     \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
+-   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 -   <span id="f633">empty strings have a length of zero.</span>
--   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-     console.log(“bootcamp”\[0\]); // =&gt; “b”  
-     console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
-     console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
-     console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
+-   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
+     console.log(“bootcamp”\[0\]); // =&gt; “b”  
+     console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
+     console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
+     console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
 -   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
--   <span id="e2f5">The index of the last character of a string is always one less than it’s length.</span>
--   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
-     console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
-     console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
+-   <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
+-   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
+     console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
+     console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
 -   <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
 -   <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
--   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
+-   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
 
 **The Boolean Data Type**
 
 The **Boolean** data type is the simplest data type since there are only two values: **true** and **false**.
 
 -   <span id="60da">**Logical Operators** (B*oolean Operators*) are used to establish logic in our code.</span>
--   <span id="139b">**!** (not) : reverses a Boolean value.  
-     console.log(!true); // =&gt; false  
-     console.log(!!false); // =&gt; false</span>
--   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
-     console.log(true || !false) // =&gt; stops after it sees “true ||”</span>
+-   <span id="139b">**!** (not) : reverses a Boolean value.  
+     console.log(!true); // =&gt; false  
+     console.log(!!false); // =&gt; false</span>
+-   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
+-   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+     console.log(true || !false) // =&gt; stops after it sees “true ||”</span>
 
 **Comparison Operators**
 
@@ -179,36 +1741,36 @@ Loose Equality, will return true even if the values are of a different type, due
 
 Variables are used to store information to be referenced and manipulated in a program.
 
--   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
-     let bootcamp = “App Academy”;  
-     console.log(bootcamp); // “App Academy”</span>
+-   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
+     let bootcamp = “App Academy”;  
+     console.log(bootcamp); // “App Academy”</span>
 -   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
--   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
-     let bootcamp;  
-     console.log(bootcamp); // undefined</span>
+-   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
+     let bootcamp;  
+     console.log(bootcamp); // undefined</span>
 -   <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
 -   <span id="47ca">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope</span>
 
 **Assignment Shorthand**
 
 let num = 0;  
- num += 10; // same as num = num + 10  
- num -= 2; // same as num = num — 2  
- num /= 4; // same as num = num / 4  
- num \*= 7; // same as num = num \* 7
+ num += 10; // same as num = num + 10  
+ num -= 2; // same as num = num — 2  
+ num /= 4; // same as num = num / 4  
+ num \*= 7; // same as num = num \* 7
 
--   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
+-   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
 
 **Functions**
 
-A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms’)
+A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as 'subprograms')
 
--   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
+-   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="676f">Includes three things:</span>
 -   <span id="80c2">Name of the function.</span>
 -   <span id="f3a4">A list of _parameters_ ()</span>
 -   <span id="2b0e">The code to execute {}</span>
--   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
+-   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="8374">JS evaluates code top down, left to right.</span>
 -   <span id="2687">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
 -   <span id="0c3a">Every function in JS returns undefined unless otherwise specified.</span>
@@ -219,43 +1781,43 @@ Greate code reads like English and almost explains itself. Think: Elegant, reada
 
 **Parameters and Arguments**
 
--   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function’s declaration.</span>
--   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
+-   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function's declaration.</span>
+-   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
 -   <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
 -   <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ### Including Comments
 
-Comments are important because they help other people understand what is going on in your code or remind you if you forgot something yourself. Keep in mind that they have to be marked properly so the browser won’t try to execute them.
+Comments are important because they help other people understand what is going on in your code or remind you if you forgot something yourself. Keep in mind that they have to be marked properly so the browser won't try to execute them.
 
 In JavaScript you have two different options:
 
--   <span id="356d">Single-line comments — To include a comment that is limited to a single line, precede it with `//`</span>
--   <span id="ee3a">Multi-line comments — In case you want to write longer comments between several lines, wrap it in `/*` and `*/` to avoid it from being executed</span>
+-   <span id="356d">Single-line comments — To include a comment that is limited to a single line, precede it with `//`</span>
+-   <span id="ee3a">Multi-line comments — In case you want to write longer comments between several lines, wrap it in `/*` and `*/` to avoid it from being executed</span>
 
 ### Variables in JavaScript
 
 Variables are stand-in values that you can use to perform operations. You should be familiar with them from math class.
 
-### var, const, let
+### var, const, let
 
 You have three different possibilities for declaring a variable in JavaScript, each with their own specialties:
 
--   <span id="4b29">`var` — The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed.</span>
--   <span id="d234">`const` — Can not be reassigned and not accessible before they appear within the code.</span>
--   <span id="0e3b">`let` — Similar to `const`, the `let` variable can be reassigned but not re-declared.</span>
+-   <span id="4b29">`var` — The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed.</span>
+-   <span id="d234">`const` — Can not be reassigned and not accessible before they appear within the code.</span>
+-   <span id="0e3b">`let` — Similar to `const`, the `let` variable can be reassigned but not re-declared.</span>
 
 ### Data Types
 
 Variables can contain different types of values and data types. You use `=` to assign them:
 
--   <span id="b276">Numbers — `var age = 23`</span>
--   <span id="5571">Variables — `var x`</span>
--   <span id="e26c">Text (strings) — `var a = "init"`</span>
--   <span id="1312">Operations — `var b = 1 + 2 + 3`</span>
--   <span id="9880">True or false statements — `var c = true`</span>
--   <span id="335a">Constant numbers — `const PI = 3.14`</span>
--   <span id="7221">Objects — `var name = {firstName:"John", lastName:"Doe"}`</span>
+-   <span id="b276">Numbers — `var age = 23`</span>
+-   <span id="5571">Variables — `var x`</span>
+-   <span id="e26c">Text (strings) — `var a = "init"`</span>
+-   <span id="1312">Operations — `var b = 1 + 2 + 3`</span>
+-   <span id="9880">True or false statements — `var c = true`</span>
+-   <span id="335a">Constant numbers — `const PI = 3.14`</span>
+-   <span id="7221">Objects — `var name = {firstName:"John", lastName:"Doe"}`</span>
 
 There are more possibilities. Note that variables are case sensitive. That means `lastname` and `lastName` will be handled as two different variables.
 
@@ -275,9 +1837,9 @@ nationality:”German”
 
 };
 
-### The Next Level: Arrays
+### The Next Level: Arrays
 
-Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
+Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here's how to create one in JavaScript:
 
 var fruit = \[“Banana”, “Apple”, “Pear”\];
 
@@ -287,20 +1849,20 @@ Now you have an array called `fruit` which contains three items that you can use
 
 Once you have created arrays, there are a few things you can do with them:
 
--   <span id="4e4b">`concat()` — Join several arrays into one</span>
--   <span id="5c02">`indexOf()` — Returns the first position at which a given element appears in an array</span>
--   <span id="45cd">`join()` — Combine elements of an array into a single string and return the string</span>
--   <span id="3a4e">`lastIndexOf()` — Gives the last position at which a given element appears in an array</span>
--   <span id="8fbb">`pop()` — Removes the last element of an array</span>
--   <span id="28e4">`push()` — Add a new element at the end</span>
--   <span id="0be2">`reverse()` — Sort elements in a descending order</span>
--   <span id="775e">`shift()` — Remove the first element of an array</span>
--   <span id="1063">`slice()` — Pulls a copy of a portion of an array into a new array</span>
--   <span id="53fd">`sort()` — Sorts elements alphabetically</span>
--   <span id="f551">`splice()` — Adds elements in a specified way and position</span>
--   <span id="c46b">`toString()` — Converts elements to strings</span>
+-   <span id="4e4b">`concat()` — Join several arrays into one</span>
+-   <span id="5c02">`indexOf()` — Returns the first position at which a given element appears in an array</span>
+-   <span id="45cd">`join()` — Combine elements of an array into a single string and return the string</span>
+-   <span id="3a4e">`lastIndexOf()` — Gives the last position at which a given element appears in an array</span>
+-   <span id="8fbb">`pop()` — Removes the last element of an array</span>
+-   <span id="28e4">`push()` — Add a new element at the end</span>
+-   <span id="0be2">`reverse()` — Sort elements in a descending order</span>
+-   <span id="775e">`shift()` — Remove the first element of an array</span>
+-   <span id="1063">`slice()` — Pulls a copy of a portion of an array into a new array</span>
+-   <span id="53fd">`sort()` — Sorts elements alphabetically</span>
+-   <span id="f551">`splice()` — Adds elements in a specified way and position</span>
+-   <span id="c46b">`toString()` — Converts elements to strings</span>
 -   <span id="ef66">`unshift()` —Adds a new element to the beginning</span>
--   <span id="4598">`valueOf()` — Returns the primitive value of the specified object</span>
+-   <span id="4598">`valueOf()` — Returns the primitive value of the specified object</span>
 
 ### Operators
 
@@ -308,42 +1870,42 @@ If you have variables, you can use them to perform different kinds of operations
 
 ### Basic Operators
 
--   <span id="5d34">`+` — Addition</span>
--   <span id="5fd9">`-` — Subtraction</span>
--   <span id="3b13">`*` — Multiplication</span>
--   <span id="521a">`/` — Division</span>
--   <span id="cf0f">`(...)` — Grouping operator, operations within brackets are executed earlier than those outside</span>
--   <span id="bb2a">`%` — Modulus (remainder )</span>
--   <span id="e837">`++` — Increment numbers</span>
--   <span id="71ea">`--` — Decrement numbers</span>
+-   <span id="5d34">`+` — Addition</span>
+-   <span id="5fd9">`-` — Subtraction</span>
+-   <span id="3b13">`*` — Multiplication</span>
+-   <span id="521a">`/` — Division</span>
+-   <span id="cf0f">`(...)` — Grouping operator, operations within brackets are executed earlier than those outside</span>
+-   <span id="bb2a">`%` — Modulus (remainder )</span>
+-   <span id="e837">`++` — Increment numbers</span>
+-   <span id="71ea">`--` — Decrement numbers</span>
 
 ### Comparison Operators
 
--   <span id="a2b0">`==` — Equal to</span>
--   <span id="5105">`===` — Equal value and equal type</span>
--   <span id="c79c">`!=` — Not equal</span>
--   <span id="1f7f">`!==` — Not equal value or not equal type</span>
--   <span id="78c3">`>` — Greater than</span>
--   <span id="d40b">`<` — Less than</span>
--   <span id="081b">`>=` — Greater than or equal to</span>
--   <span id="d065">`<=` — Less than or equal to</span>
--   <span id="174d">`?` — Ternary operator</span>
+-   <span id="a2b0">`==` — Equal to</span>
+-   <span id="5105">`===` — Equal value and equal type</span>
+-   <span id="c79c">`!=` — Not equal</span>
+-   <span id="1f7f">`!==` — Not equal value or not equal type</span>
+-   <span id="78c3">`>` — Greater than</span>
+-   <span id="d40b">`<` — Less than</span>
+-   <span id="081b">`>=` — Greater than or equal to</span>
+-   <span id="d065">`<=` — Less than or equal to</span>
+-   <span id="174d">`?` — Ternary operator</span>
 
 ### Logical Operators
 
--   <span id="cb7b">`&&` — Logical and</span>
--   <span id="b1ee">`||` — Logical or</span>
--   <span id="96d4">`!` — Logical not</span>
+-   <span id="cb7b">`&&` — Logical and</span>
+-   <span id="b1ee">`||` — Logical or</span>
+-   <span id="96d4">`!` — Logical not</span>
 
 ### Bitwise Operators
 
--   <span id="8cf7">`&` — AND statement</span>
--   <span id="02d5">`|` — OR statement</span>
--   <span id="e576">`~` — NOT</span>
--   <span id="9c66">`^` — XOR</span>
--   <span id="b343">`<<` — Left shift</span>
--   <span id="52b1">`>>` — Right shift</span>
--   <span id="1b5c">`>>>` — Zero fill right shift</span>
+-   <span id="8cf7">`&` — AND statement</span>
+-   <span id="02d5">`|` — OR statement</span>
+-   <span id="e576">`~` — NOT</span>
+-   <span id="9c66">`^` — XOR</span>
+-   <span id="b343">`<<` — Left shift</span>
+-   <span id="52b1">`>>` — Right shift</span>
+-   <span id="1b5c">`>>>` — Zero fill right shift</span>
 
 ### Functions
 
@@ -355,32 +1917,32 @@ function name(parameter1, parameter2, parameter3) {
 
 }
 
-As you can see, it consists of the `function` keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
 
 ### Outputting Data
 
 A common application for functions is the output of data. For the output, you have the following options:
 
--   <span id="a7a7">`alert()` — Output data in an alert box in the browser window</span>
--   <span id="0c44">`confirm()` — Opens up a yes/no dialog and returns true/false depending on user click</span>
--   <span id="9690">`console.log()` — Writes information to the browser console, good for debugging purposes</span>
--   <span id="0d4d">`document.write()` — Write directly to the HTML document</span>
--   <span id="16aa">`prompt()` — Creates a dialogue for user input</span>
+-   <span id="a7a7">`alert()` — Output data in an alert box in the browser window</span>
+-   <span id="0c44">`confirm()` — Opens up a yes/no dialog and returns true/false depending on user click</span>
+-   <span id="9690">`console.log()` — Writes information to the browser console, good for debugging purposes</span>
+-   <span id="0d4d">`document.write()` — Write directly to the HTML document</span>
+-   <span id="16aa">`prompt()` — Creates a dialogue for user input</span>
 
 ### Global Functions
 
 Global functions are functions built into every browser capable of running JavaScript.
 
--   <span id="f4f1">`decodeURI()` — Decodes a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" class="markup--anchor markup--li-anchor">Uniform Resource Identifier (URI)</a> created by `encodeURI` or similar</span>
--   <span id="c203">`decodeURIComponent()` — Decodes a URI component</span>
--   <span id="176a">`encodeURI()` — Encodes a URI into UTF-8</span>
--   <span id="6720">`encodeURIComponent()` — Same but for URI components</span>
--   <span id="e97b">`eval()` — Evaluates JavaScript code represented as a string</span>
--   <span id="390b">`isFinite()` — Determines whether a passed value is a finite number</span>
--   <span id="5d46">`isNaN()` — Determines whether a value is NaN or not</span>
+-   <span id="f4f1">`decodeURI()` — Decodes a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" class="markup--anchor markup--li-anchor">Uniform Resource Identifier (URI)</a> created by `encodeURI` or similar</span>
+-   <span id="c203">`decodeURIComponent()` — Decodes a URI component</span>
+-   <span id="176a">`encodeURI()` — Encodes a URI into UTF-8</span>
+-   <span id="6720">`encodeURIComponent()` — Same but for URI components</span>
+-   <span id="e97b">`eval()` — Evaluates JavaScript code represented as a string</span>
+-   <span id="390b">`isFinite()` — Determines whether a passed value is a finite number</span>
+-   <span id="5d46">`isNaN()` — Determines whether a value is NaN or not</span>
 -   <span id="f668">`Number()` —- Returns a number converted from its argument</span>
--   <span id="a5ff">`parseFloat()` — Parses an argument and returns a floating-point number</span>
--   <span id="a666">`parseInt()` — Parses its argument and returns an integer</span>
+-   <span id="a5ff">`parseFloat()` — Parses an argument and returns a floating-point number</span>
+-   <span id="a666">`parseInt()` — Parses its argument and returns an integer</span>
 
 ### JavaScript Loops
 
@@ -394,15 +1956,15 @@ for (before loop; condition **for** loop; execute after loop) {
 
 You have several parameters to create loops:
 
--   <span id="ff62">`for` — The most common way to create a loop in JavaScript</span>
--   <span id="7ad1">`while` — Sets up conditions under which a loop executes</span>
--   <span id="c2f4">`do while` — Similar to the `while` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again</span>
+-   <span id="ff62">`for` — The most common way to create a loop in JavaScript</span>
+-   <span id="7ad1">`while` — Sets up conditions under which a loop executes</span>
+-   <span id="c2f4">`do while` — Similar to the `while` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again</span>
 -   <span id="7157">`break` —Used to stop and exit the cycle at certain conditions</span>
--   <span id="f5c0">`continue` — Skip parts of the cycle if certain conditions are met</span>
+-   <span id="f5c0">`continue` — Skip parts of the cycle if certain conditions are met</span>
 
-### If — Else Statements
+### If — Else Statements
 
-These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not — something else is executed.
+These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not — something else is executed.
 
 if (condition) {
 
@@ -428,39 +1990,39 @@ In this case, `John Doe` is the string.
 
 In JavaScript, strings are marked with single or double-quotes. If you want to use quotation marks in a string, you need to use special characters:
 
--   <span id="b4b1">`\'` — Single quote</span>
--   <span id="3b22">`\"` — Double quote</span>
+-   <span id="b4b1">`\'` — Single quote</span>
+-   <span id="3b22">`\"` — Double quote</span>
 
 Aside from that you also have additional escape characters:
 
--   <span id="b412">`\\` — Backslash</span>
--   <span id="1592">`\b` — Backspace</span>
--   <span id="3a72">`\f` — Form feed</span>
--   <span id="145a">`\n` — New line</span>
--   <span id="1416">`\r` — Carriage return</span>
--   <span id="95d4">`\t` — Horizontal tabulator</span>
--   <span id="d962">`\v` — Vertical tabulator</span>
+-   <span id="b412">`\\` — Backslash</span>
+-   <span id="1592">`\b` — Backspace</span>
+-   <span id="3a72">`\f` — Form feed</span>
+-   <span id="145a">`\n` — New line</span>
+-   <span id="1416">`\r` — Carriage return</span>
+-   <span id="95d4">`\t` — Horizontal tabulator</span>
+-   <span id="d962">`\v` — Vertical tabulator</span>
 
 ### String Methods
 
 There are many different ways to work with strings:
 
--   <span id="2021">`charAt()` — Returns a character at a specified position inside a string</span>
--   <span id="d3e5">`charCodeAt()` — Gives you the Unicode of a character at that position</span>
--   <span id="fdd1">`concat()` — Concatenates (joins) two or more strings into one</span>
--   <span id="009c">`fromCharCode()` — Returns a string created from the specified sequence of UTF-16 code units</span>
--   <span id="7ed3">`indexOf()` — Provides the position of the first occurrence of a specified text within a string</span>
--   <span id="2937">`lastIndexOf()` — Same as `indexOf()` but with the last occurrence, searching backward</span>
--   <span id="142d">`match()` — Retrieves the matches of a string against a search pattern</span>
--   <span id="6c18">`replace()` — Find and replace specified text in a string</span>
--   <span id="e279">`search()` — Executes a search for a matching text and returns its position</span>
--   <span id="6bcd">`slice()` — Extracts a section of a string and returns it as a new string</span>
--   <span id="e4ee">`split()` — Splits a string object into an array of strings at a specified position</span>
--   <span id="3a27">`substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters</span>
--   <span id="3d14">`substring()` — Also similar to `slice()` but can’t accept negative indices</span>
--   <span id="fa33">`toLowerCase()` — Convert strings to lower case</span>
--   <span id="3485">`toUpperCase()` — Convert strings to upper case</span>
--   <span id="4f96">`valueOf()` — Returns the primitive value (that has no properties or methods) of a string object</span>
+-   <span id="2021">`charAt()` — Returns a character at a specified position inside a string</span>
+-   <span id="d3e5">`charCodeAt()` — Gives you the Unicode of a character at that position</span>
+-   <span id="fdd1">`concat()` — Concatenates (joins) two or more strings into one</span>
+-   <span id="009c">`fromCharCode()` — Returns a string created from the specified sequence of UTF-16 code units</span>
+-   <span id="7ed3">`indexOf()` — Provides the position of the first occurrence of a specified text within a string</span>
+-   <span id="2937">`lastIndexOf()` — Same as `indexOf()` but with the last occurrence, searching backward</span>
+-   <span id="142d">`match()` — Retrieves the matches of a string against a search pattern</span>
+-   <span id="6c18">`replace()` — Find and replace specified text in a string</span>
+-   <span id="e279">`search()` — Executes a search for a matching text and returns its position</span>
+-   <span id="6bcd">`slice()` — Extracts a section of a string and returns it as a new string</span>
+-   <span id="e4ee">`split()` — Splits a string object into an array of strings at a specified position</span>
+-   <span id="3a27">`substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters</span>
+-   <span id="3d14">`substring()` — Also similar to `slice()` but can't accept negative indices</span>
+-   <span id="fa33">`toLowerCase()` — Convert strings to lower case</span>
+-   <span id="3485">`toUpperCase()` — Convert strings to upper case</span>
+-   <span id="4f96">`valueOf()` — Returns the primitive value (that has no properties or methods) of a string object</span>
 
 ### Regular Expression Syntax
 
@@ -468,107 +2030,107 @@ Regular expressions are search patterns used to match character combinations in 
 
 ### Pattern Modifiers
 
--   <span id="bb29">`e` — Evaluate replacement</span>
--   <span id="b6b8">`i` — Perform case-insensitive matching</span>
--   <span id="4f50">`g` — Perform global matching</span>
--   <span id="4add">`m` — Perform multiple line matching</span>
--   <span id="a073">`s` — Treat strings as a single line</span>
--   <span id="482b">`x` — Allow comments and whitespace in the pattern</span>
--   <span id="f6ad">`U` — Ungreedy pattern</span>
+-   <span id="bb29">`e` — Evaluate replacement</span>
+-   <span id="b6b8">`i` — Perform case-insensitive matching</span>
+-   <span id="4f50">`g` — Perform global matching</span>
+-   <span id="4add">`m` — Perform multiple line matching</span>
+-   <span id="a073">`s` — Treat strings as a single line</span>
+-   <span id="482b">`x` — Allow comments and whitespace in the pattern</span>
+-   <span id="f6ad">`U` — Ungreedy pattern</span>
 
 ### Brackets
 
--   <span id="aae1">`[abc]` — Find any of the characters between the brackets</span>
--   <span id="e048">`[^abc]` — Find any character which is not in the brackets</span>
--   <span id="f9b5">`[0-9]` — Used to find any digit from 0 to 9</span>
--   <span id="ac71">`[A-z]` — Find any character from uppercase A to lowercase z</span>
--   <span id="6fce">`(a|b|c)` — Find any of the alternatives separated with `|`</span>
+-   <span id="aae1">`[abc]` — Find any of the characters between the brackets</span>
+-   <span id="e048">`[^abc]` — Find any character which is not in the brackets</span>
+-   <span id="f9b5">`[0-9]` — Used to find any digit from 0 to 9</span>
+-   <span id="ac71">`[A-z]` — Find any character from uppercase A to lowercase z</span>
+-   <span id="6fce">`(a|b|c)` — Find any of the alternatives separated with `|`</span>
 
 ### Metacharacters
 
--   <span id="dcd6">`.` — Find a single character, except newline or line terminator</span>
--   <span id="e944">`\w` — Word character</span>
--   <span id="c4bf">`\W` — Non-word character</span>
--   <span id="7b81">`\d` — A digit</span>
--   <span id="a533">`\D` — A non-digit character</span>
--   <span id="1fcc">`\s` — Whitespace character</span>
--   <span id="374c">`\S` — Non-whitespace character</span>
--   <span id="72d0">`\b` — Find a match at the beginning/end of a word</span>
--   <span id="2d38">`\B` — A match not at the beginning/end of a word</span>
--   <span id="859b">`\0` — NUL character</span>
--   <span id="df4d">`\n` — A new line character</span>
--   <span id="5acd">`\f` — Form feed character</span>
--   <span id="833f">`\r` — Carriage return character</span>
--   <span id="4f31">`\t` — Tab character</span>
--   <span id="e618">`\v` — Vertical tab character</span>
--   <span id="dcfc">`\xxx` — The character specified by an octal number xxx</span>
--   <span id="cf5e">`\xdd` — Character specified by a hexadecimal number dd</span>
--   <span id="978f">`\uxxxx` — The Unicode character specified by a hexadecimal number XXXX</span>
+-   <span id="dcd6">`.` — Find a single character, except newline or line terminator</span>
+-   <span id="e944">`\w` — Word character</span>
+-   <span id="c4bf">`\W` — Non-word character</span>
+-   <span id="7b81">`\d` — A digit</span>
+-   <span id="a533">`\D` — A non-digit character</span>
+-   <span id="1fcc">`\s` — Whitespace character</span>
+-   <span id="374c">`\S` — Non-whitespace character</span>
+-   <span id="72d0">`\b` — Find a match at the beginning/end of a word</span>
+-   <span id="2d38">`\B` — A match not at the beginning/end of a word</span>
+-   <span id="859b">`\0` — NUL character</span>
+-   <span id="df4d">`\n` — A new line character</span>
+-   <span id="5acd">`\f` — Form feed character</span>
+-   <span id="833f">`\r` — Carriage return character</span>
+-   <span id="4f31">`\t` — Tab character</span>
+-   <span id="e618">`\v` — Vertical tab character</span>
+-   <span id="dcfc">`\xxx` — The character specified by an octal number xxx</span>
+-   <span id="cf5e">`\xdd` — Character specified by a hexadecimal number dd</span>
+-   <span id="978f">`\uxxxx` — The Unicode character specified by a hexadecimal number XXXX</span>
 
 ### Quantifiers
 
--   <span id="e4cf">`n+` — Matches any string that contains at least one n</span>
--   <span id="be07">`n*` — Any string that contains zero or more occurrences of n</span>
--   <span id="4a93">`n?` — A string that contains zero or one occurrence of n</span>
--   <span id="91f0">`n{X}` — String that contains a sequence of X n’s</span>
--   <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n’s</span>
--   <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n’s</span>
--   <span id="15b3">`n$` — Any string with n at the end of it</span>
--   <span id="5fc9">`^n` — String with n at the beginning of it</span>
--   <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
--   <span id="6ffa">`?!n` — String that is not followed by a specific string ni</span>
+-   <span id="e4cf">`n+` — Matches any string that contains at least one n</span>
+-   <span id="be07">`n*` — Any string that contains zero or more occurrences of n</span>
+-   <span id="4a93">`n?` — A string that contains zero or one occurrence of n</span>
+-   <span id="91f0">`n{X}` — String that contains a sequence of X n's</span>
+-   <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n's</span>
+-   <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n's</span>
+-   <span id="15b3">`n$` — Any string with n at the end of it</span>
+-   <span id="5fc9">`^n` — String with n at the beginning of it</span>
+-   <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
+-   <span id="6ffa">`?!n` — String that is not followed by a specific string ni</span>
 
-### Numbers and Math
+### Numbers and Math
 
 In JavaScript, you can also work with numbers, constants and perform mathematical functions.
 
 ### Number Properties
 
--   <span id="3554">`MAX_VALUE` — The maximum numeric value representable in JavaScript</span>
--   <span id="c55d">`MIN_VALUE` — Smallest positive numeric value representable in JavaScript</span>
--   <span id="49e0">`NaN` — The “Not-a-Number” value</span>
--   <span id="3024">`NEGATIVE_INFINITY` — The negative Infinity value</span>
--   <span id="0bf4">`POSITIVE_INFINITY` — Positive Infinity value</span>
+-   <span id="3554">`MAX_VALUE` — The maximum numeric value representable in JavaScript</span>
+-   <span id="c55d">`MIN_VALUE` — Smallest positive numeric value representable in JavaScript</span>
+-   <span id="49e0">`NaN` — The “Not-a-Number” value</span>
+-   <span id="3024">`NEGATIVE_INFINITY` — The negative Infinity value</span>
+-   <span id="0bf4">`POSITIVE_INFINITY` — Positive Infinity value</span>
 
 ### Number Methods
 
--   <span id="9478">`toExponential()` — Returns the string with a rounded number written as exponential notation</span>
--   <span id="2ad0">`toFixed()` — Returns the string of a number with a specified number of decimals</span>
--   <span id="d464">`toPrecision()` — String of a number written with a specified length</span>
--   <span id="2244">`toString()` — Returns a number as a string</span>
--   <span id="bc1e">`valueOf()` — Returns a number as a number</span>
+-   <span id="9478">`toExponential()` — Returns the string with a rounded number written as exponential notation</span>
+-   <span id="2ad0">`toFixed()` — Returns the string of a number with a specified number of decimals</span>
+-   <span id="d464">`toPrecision()` — String of a number written with a specified length</span>
+-   <span id="2244">`toString()` — Returns a number as a string</span>
+-   <span id="bc1e">`valueOf()` — Returns a number as a number</span>
 
 ### Math Properties
 
--   <span id="9f68">`E` — Euler’s number</span>
--   <span id="a4df">`LN2` — The natural logarithm of 2</span>
--   <span id="0f06">`LN10` — Natural logarithm of 10</span>
--   <span id="1a92">`LOG2E` — Base 2 logarithm of E</span>
--   <span id="42e7">`LOG10E` — Base 10 logarithm of E</span>
--   <span id="1fbe">`PI` — The number PI</span>
--   <span id="2a56">`SQRT1_2` — Square root of 1/2</span>
--   <span id="aab4">`SQRT2` — The square root of 2</span>
+-   <span id="9f68">`E` — Euler's number</span>
+-   <span id="a4df">`LN2` — The natural logarithm of 2</span>
+-   <span id="0f06">`LN10` — Natural logarithm of 10</span>
+-   <span id="1a92">`LOG2E` — Base 2 logarithm of E</span>
+-   <span id="42e7">`LOG10E` — Base 10 logarithm of E</span>
+-   <span id="1fbe">`PI` — The number PI</span>
+-   <span id="2a56">`SQRT1_2` — Square root of 1/2</span>
+-   <span id="aab4">`SQRT2` — The square root of 2</span>
 
 ### Math Methods
 
--   <span id="8836">`abs(x)` — Returns the absolute (positive) value of x</span>
--   <span id="ddb9">`acos(x)` — The arccosine of x, in radians</span>
--   <span id="a0c3">`asin(x)` — Arcsine of x, in radians</span>
--   <span id="c2ca">`atan(x)` — The arctangent of x as a numeric value</span>
--   <span id="8b93">`atan2(y,x)` — Arctangent of the quotient of its arguments</span>
--   <span id="b103">`ceil(x)` — Value of x rounded up to its nearest integer</span>
--   <span id="c68a">`cos(x)` — The cosine of x (x is in radians)</span>
--   <span id="d480">`exp(x)` — Value of Ex</span>
--   <span id="2954">`floor(x)` — The value of x rounded down to its nearest integer</span>
--   <span id="ff4d">`log(x)` — The natural logarithm (base E) of x</span>
--   <span id="b6a9">`max(x,y,z,...,n)` — Returns the number with the highest value</span>
--   <span id="dfb0">`min(x,y,z,...,n)` — Same for the number with the lowest value</span>
--   <span id="a6f1">`pow(x,y)` — X to the power of y</span>
--   <span id="8851">`random()` — Returns a random number between 0 and 1</span>
--   <span id="d32e">`round(x)` — The value of x rounded to its nearest integer</span>
--   <span id="fe9a">`sin(x)` — The sine of x (x is in radians)</span>
--   <span id="c244">`sqrt(x)` — Square root of x</span>
--   <span id="b5ef">`tan(x)` — The tangent of an angle</span>
+-   <span id="8836">`abs(x)` — Returns the absolute (positive) value of x</span>
+-   <span id="ddb9">`acos(x)` — The arccosine of x, in radians</span>
+-   <span id="a0c3">`asin(x)` — Arcsine of x, in radians</span>
+-   <span id="c2ca">`atan(x)` — The arctangent of x as a numeric value</span>
+-   <span id="8b93">`atan2(y,x)` — Arctangent of the quotient of its arguments</span>
+-   <span id="b103">`ceil(x)` — Value of x rounded up to its nearest integer</span>
+-   <span id="c68a">`cos(x)` — The cosine of x (x is in radians)</span>
+-   <span id="d480">`exp(x)` — Value of Ex</span>
+-   <span id="2954">`floor(x)` — The value of x rounded down to its nearest integer</span>
+-   <span id="ff4d">`log(x)` — The natural logarithm (base E) of x</span>
+-   <span id="b6a9">`max(x,y,z,...,n)` — Returns the number with the highest value</span>
+-   <span id="dfb0">`min(x,y,z,...,n)` — Same for the number with the lowest value</span>
+-   <span id="a6f1">`pow(x,y)` — X to the power of y</span>
+-   <span id="8851">`random()` — Returns a random number between 0 and 1</span>
+-   <span id="d32e">`round(x)` — The value of x rounded to its nearest integer</span>
+-   <span id="fe9a">`sin(x)` — The sine of x (x is in radians)</span>
+-   <span id="c244">`sqrt(x)` — Square root of x</span>
+-   <span id="b5ef">`tan(x)` — The tangent of an angle</span>
 
 ### Dealing with Dates in JavaScript
 
@@ -576,35 +2138,35 @@ You can also work with and modify dates and time with JavaScript. This is the ne
 
 ### Setting Dates
 
--   <span id="b187">`Date()` — Creates a new date object with the current date and time</span>
--   <span id="42f8">`Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.</span>
--   <span id="4e80">`Date("2017-06-23")` — Date declaration as a string</span>
+-   <span id="b187">`Date()` — Creates a new date object with the current date and time</span>
+-   <span id="42f8">`Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.</span>
+-   <span id="4e80">`Date("2017-06-23")` — Date declaration as a string</span>
 
-### Pulling Date and Time Values
+### Pulling Date and Time Values
 
--   <span id="465e">`getDate()` — Get the day of the month as a number (1-31)</span>
--   <span id="1b08">`getDay()` — The weekday as a number (0-6)</span>
--   <span id="6d9e">`getFullYear()` — Year as a four-digit number (yyyy)</span>
--   <span id="a216">`getHours()` — Get the hour (0-23)</span>
--   <span id="388a">`getMilliseconds()` — The millisecond (0-999)</span>
--   <span id="a97f">`getMinutes()` — Get the minute (0-59)</span>
--   <span id="2427">`getMonth()` — Month as a number (0-11)</span>
--   <span id="b964">`getSeconds()` — Get the second (0-59)</span>
--   <span id="505d">`getTime()` — Get the milliseconds since January 1, 1970</span>
--   <span id="7c14">`getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
--   <span id="d6b6">`parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970</span>
+-   <span id="465e">`getDate()` — Get the day of the month as a number (1-31)</span>
+-   <span id="1b08">`getDay()` — The weekday as a number (0-6)</span>
+-   <span id="6d9e">`getFullYear()` — Year as a four-digit number (yyyy)</span>
+-   <span id="a216">`getHours()` — Get the hour (0-23)</span>
+-   <span id="388a">`getMilliseconds()` — The millisecond (0-999)</span>
+-   <span id="a97f">`getMinutes()` — Get the minute (0-59)</span>
+-   <span id="2427">`getMonth()` — Month as a number (0-11)</span>
+-   <span id="b964">`getSeconds()` — Get the second (0-59)</span>
+-   <span id="505d">`getTime()` — Get the milliseconds since January 1, 1970</span>
+-   <span id="7c14">`getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
+-   <span id="d6b6">`parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970</span>
 
-### Set Part of a Date
+### Set Part of a Date
 
--   <span id="9a97">`setDate()` — Set the day as a number (1-31)</span>
--   <span id="d4f0">`setFullYear()` — Sets the year (optionally month and day)</span>
--   <span id="1a45">`setHours()` — Set the hour (0-23)</span>
--   <span id="8020">`setMilliseconds()` — Set milliseconds (0-999)</span>
--   <span id="7feb">`setMinutes()` — Sets the minutes (0-59)</span>
--   <span id="d7ca">`setMonth()` — Set the month (0-11)</span>
--   <span id="795d">`setSeconds()` — Sets the seconds (0-59)</span>
--   <span id="1d7f">`setTime()` — Set the time (milliseconds since January 1, 1970)</span>
--   <span id="78e1">`setUTCDate()` — Sets the day of the month for a specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
+-   <span id="9a97">`setDate()` — Set the day as a number (1-31)</span>
+-   <span id="d4f0">`setFullYear()` — Sets the year (optionally month and day)</span>
+-   <span id="1a45">`setHours()` — Set the hour (0-23)</span>
+-   <span id="8020">`setMilliseconds()` — Set milliseconds (0-999)</span>
+-   <span id="7feb">`setMinutes()` — Sets the minutes (0-59)</span>
+-   <span id="d7ca">`setMonth()` — Set the month (0-11)</span>
+-   <span id="795d">`setSeconds()` — Sets the seconds (0-59)</span>
+-   <span id="1d7f">`setTime()` — Set the time (milliseconds since January 1, 1970)</span>
+-   <span id="78e1">`setUTCDate()` — Sets the day of the month for a specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
 
 ### DOM Mode
 
@@ -612,119 +2174,119 @@ The DOM is the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" cla
 
 ### Node Properties
 
--   <span id="cfb7">`attributes` — Returns a live collection of all attributes registered to an element</span>
--   <span id="6138">`baseURI` — Provides the absolute base URL of an HTML element</span>
--   <span id="34da">`childNodes` — Gives a collection of an element’s child nodes</span>
--   <span id="58ec">`firstChild` — Returns the first child node of an element</span>
--   <span id="2f34">`lastChild` — The last child node of an element</span>
--   <span id="fdea">`nextSibling` — Gives you the next node at the same node tree level</span>
+-   <span id="cfb7">`attributes` — Returns a live collection of all attributes registered to an element</span>
+-   <span id="6138">`baseURI` — Provides the absolute base URL of an HTML element</span>
+-   <span id="34da">`childNodes` — Gives a collection of an element's child nodes</span>
+-   <span id="58ec">`firstChild` — Returns the first child node of an element</span>
+-   <span id="2f34">`lastChild` — The last child node of an element</span>
+-   <span id="fdea">`nextSibling` — Gives you the next node at the same node tree level</span>
 -   <span id="1ca4">`nodeName` —Returns the name of a node</span>
--   <span id="d4ee">`nodeType` — Returns the type of a node</span>
--   <span id="cd22">`nodeValue` — Sets or returns the value of a node</span>
--   <span id="a9a3">`ownerDocument` — The top-level document object for this node</span>
--   <span id="51b4">`parentNode` — Returns the parent node of an element</span>
--   <span id="31ef">`previousSibling` — Returns the node immediately preceding the current one</span>
--   <span id="ec40">`textContent` — Sets or returns the textual content of a node and its descendants</span>
+-   <span id="d4ee">`nodeType` — Returns the type of a node</span>
+-   <span id="cd22">`nodeValue` — Sets or returns the value of a node</span>
+-   <span id="a9a3">`ownerDocument` — The top-level document object for this node</span>
+-   <span id="51b4">`parentNode` — Returns the parent node of an element</span>
+-   <span id="31ef">`previousSibling` — Returns the node immediately preceding the current one</span>
+-   <span id="ec40">`textContent` — Sets or returns the textual content of a node and its descendants</span>
 
 ### Node Methods
 
--   <span id="7f05">`appendChild()` — Adds a new child node to an element as the last child node</span>
--   <span id="3b3a">`cloneNode()` — Clones an HTML element</span>
--   <span id="661c">`compareDocumentPosition()` — Compares the document position of two elements</span>
--   <span id="86d2">`getFeature()` — Returns an object which implements the APIs of a specified feature</span>
--   <span id="059c">`hasAttributes()` — Returns true if an element has any attributes, otherwise false</span>
--   <span id="5d0d">`hasChildNodes()` — Returns true if an element has any child nodes, otherwise false</span>
--   <span id="4c86">`insertBefore()` — Inserts a new child node before a specified, existing child node</span>
--   <span id="4b38">`isDefaultNamespace()` — Returns true if a specified namespaceURI is the default, otherwise false</span>
--   <span id="8c4e">`isEqualNode()` — Checks if two elements are equal</span>
--   <span id="2f6a">`isSameNode()` — Checks if two elements are the same node</span>
--   <span id="944e">`isSupported()` — Returns true if a specified feature is supported on the element</span>
--   <span id="b7ef">`lookupNamespaceURI()` — Returns the namespace URI associated with a given node</span>
--   <span id="5f59">`lookupPrefix()` — Returns a DOMString containing the prefix for a given namespace URI if present</span>
--   <span id="6670">`normalize()` — Joins adjacent text nodes and removes empty text nodes in an element</span>
--   <span id="c80a">`removeChild()` — Removes a child node from an element</span>
--   <span id="8108">`replaceChild()` — Replaces a child node in an element</span>
+-   <span id="7f05">`appendChild()` — Adds a new child node to an element as the last child node</span>
+-   <span id="3b3a">`cloneNode()` — Clones an HTML element</span>
+-   <span id="661c">`compareDocumentPosition()` — Compares the document position of two elements</span>
+-   <span id="86d2">`getFeature()` — Returns an object which implements the APIs of a specified feature</span>
+-   <span id="059c">`hasAttributes()` — Returns true if an element has any attributes, otherwise false</span>
+-   <span id="5d0d">`hasChildNodes()` — Returns true if an element has any child nodes, otherwise false</span>
+-   <span id="4c86">`insertBefore()` — Inserts a new child node before a specified, existing child node</span>
+-   <span id="4b38">`isDefaultNamespace()` — Returns true if a specified namespaceURI is the default, otherwise false</span>
+-   <span id="8c4e">`isEqualNode()` — Checks if two elements are equal</span>
+-   <span id="2f6a">`isSameNode()` — Checks if two elements are the same node</span>
+-   <span id="944e">`isSupported()` — Returns true if a specified feature is supported on the element</span>
+-   <span id="b7ef">`lookupNamespaceURI()` — Returns the namespace URI associated with a given node</span>
+-   <span id="5f59">`lookupPrefix()` — Returns a DOMString containing the prefix for a given namespace URI if present</span>
+-   <span id="6670">`normalize()` — Joins adjacent text nodes and removes empty text nodes in an element</span>
+-   <span id="c80a">`removeChild()` — Removes a child node from an element</span>
+-   <span id="8108">`replaceChild()` — Replaces a child node in an element</span>
 
 ### Element Methods
 
--   <span id="9530">`getAttribute()` — Returns the specified attribute value of an element node</span>
--   <span id="0dd1">`getAttributeNS()` — Returns string value of the attribute with the specified namespace and name</span>
--   <span id="8a0d">`getAttributeNode()` — Gets the specified attribute node</span>
--   <span id="fc41">`getAttributeNodeNS()` — Returns the attribute node for the attribute with the given namespace and name</span>
--   <span id="2a3e">`getElementsByTagName()` — Provides a collection of all child elements with the specified tag name</span>
--   <span id="11a4">`getElementsByTagNameNS()` — Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace</span>
--   <span id="e2ae">`hasAttribute()` — Returns true if an element has any attributes, otherwise false</span>
--   <span id="17dd">`hasAttributeNS()` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute</span>
--   <span id="f28c">`removeAttribute()` — Removes a specified attribute from an element</span>
--   <span id="8cd0">`removeAttributeNS()` — Removes the specified attribute from an element within a certain namespace</span>
--   <span id="e6c3">`removeAttributeNode()` — Takes away a specified attribute node and returns the removed node</span>
--   <span id="a7b9">`setAttribute()` — Sets or changes the specified attribute to a specified value</span>
--   <span id="bf42">`setAttributeNS()` — Adds a new attribute or changes the value of an attribute with the given namespace and name</span>
--   <span id="2322">`setAttributeNode()` — Sets or changes the specified attribute node</span>
--   <span id="0540">`setAttributeNodeNS()` — Adds a new namespaced attribute node to an element</span>
+-   <span id="9530">`getAttribute()` — Returns the specified attribute value of an element node</span>
+-   <span id="0dd1">`getAttributeNS()` — Returns string value of the attribute with the specified namespace and name</span>
+-   <span id="8a0d">`getAttributeNode()` — Gets the specified attribute node</span>
+-   <span id="fc41">`getAttributeNodeNS()` — Returns the attribute node for the attribute with the given namespace and name</span>
+-   <span id="2a3e">`getElementsByTagName()` — Provides a collection of all child elements with the specified tag name</span>
+-   <span id="11a4">`getElementsByTagNameNS()` — Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace</span>
+-   <span id="e2ae">`hasAttribute()` — Returns true if an element has any attributes, otherwise false</span>
+-   <span id="17dd">`hasAttributeNS()` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute</span>
+-   <span id="f28c">`removeAttribute()` — Removes a specified attribute from an element</span>
+-   <span id="8cd0">`removeAttributeNS()` — Removes the specified attribute from an element within a certain namespace</span>
+-   <span id="e6c3">`removeAttributeNode()` — Takes away a specified attribute node and returns the removed node</span>
+-   <span id="a7b9">`setAttribute()` — Sets or changes the specified attribute to a specified value</span>
+-   <span id="bf42">`setAttributeNS()` — Adds a new attribute or changes the value of an attribute with the given namespace and name</span>
+-   <span id="2322">`setAttributeNode()` — Sets or changes the specified attribute node</span>
+-   <span id="0540">`setAttributeNodeNS()` — Adds a new namespaced attribute node to an element</span>
 
-### Working with the User Browser
+### Working with the User Browser
 
 Besides HTML elements, JavaScript is also able to take into account the user browser and incorporate its properties into the code.
 
 ### Window Properties
 
--   <span id="1b1f">`closed` — Checks whether a window has been closed or not and returns true or false</span>
--   <span id="805f">`defaultStatus` — Sets or returns the default text in the status bar of a window</span>
--   <span id="458e">`document` — Returns the document object for the window</span>
--   <span id="93ee">`frames` — Returns all `<iframe>` elements in the current window</span>
--   <span id="c42a">`history` — Provides the History object for the window</span>
--   <span id="3a5d">`innerHeight` — The inner height of a window’s content area</span>
--   <span id="c609">`innerWidth` — The inner width of the content area</span>
--   <span id="5167">`length` — Find out the number of `<iframe>` elements in the window</span>
--   <span id="4f05">`location` — Returns the location object for the window</span>
--   <span id="4125">`name` — Sets or returns the name of a window</span>
--   <span id="3d7f">`navigator` — Returns the Navigator object for the window</span>
--   <span id="c601">`opener` — Returns a reference to the window that created the window</span>
--   <span id="734e">`outerHeight` — The outer height of a window, including toolbars/scrollbars</span>
--   <span id="9b0a">`outerWidth` — The outer width of a window, including toolbars/scrollbars</span>
--   <span id="3140">`pageXOffset` — Number of pixels the current document has been scrolled horizontally</span>
--   <span id="0bcc">`pageYOffset` — Number of pixels the document has been scrolled vertically</span>
--   <span id="a2af">`parent` — The parent window of the current window</span>
--   <span id="3634">`screen` — Returns the Screen object for the window</span>
--   <span id="9566">`screenLeft` — The horizontal coordinate of the window (relative to the screen)</span>
--   <span id="1245">`screenTop` — The vertical coordinate of the window</span>
--   <span id="5656">`screenX` — Same as `screenLeft` but needed for some browsers</span>
--   <span id="21e7">`screenY` — Same as `screenTop` but needed for some browsers</span>
--   <span id="d000">`self` — Returns the current window</span>
--   <span id="99af">`status` — Sets or returns the text in the status bar of a window</span>
--   <span id="0a0f">`top` — Returns the topmost browser window</span>
+-   <span id="1b1f">`closed` — Checks whether a window has been closed or not and returns true or false</span>
+-   <span id="805f">`defaultStatus` — Sets or returns the default text in the status bar of a window</span>
+-   <span id="458e">`document` — Returns the document object for the window</span>
+-   <span id="93ee">`frames` — Returns all `<iframe>` elements in the current window</span>
+-   <span id="c42a">`history` — Provides the History object for the window</span>
+-   <span id="3a5d">`innerHeight` — The inner height of a window's content area</span>
+-   <span id="c609">`innerWidth` — The inner width of the content area</span>
+-   <span id="5167">`length` — Find out the number of `<iframe>` elements in the window</span>
+-   <span id="4f05">`location` — Returns the location object for the window</span>
+-   <span id="4125">`name` — Sets or returns the name of a window</span>
+-   <span id="3d7f">`navigator` — Returns the Navigator object for the window</span>
+-   <span id="c601">`opener` — Returns a reference to the window that created the window</span>
+-   <span id="734e">`outerHeight` — The outer height of a window, including toolbars/scrollbars</span>
+-   <span id="9b0a">`outerWidth` — The outer width of a window, including toolbars/scrollbars</span>
+-   <span id="3140">`pageXOffset` — Number of pixels the current document has been scrolled horizontally</span>
+-   <span id="0bcc">`pageYOffset` — Number of pixels the document has been scrolled vertically</span>
+-   <span id="a2af">`parent` — The parent window of the current window</span>
+-   <span id="3634">`screen` — Returns the Screen object for the window</span>
+-   <span id="9566">`screenLeft` — The horizontal coordinate of the window (relative to the screen)</span>
+-   <span id="1245">`screenTop` — The vertical coordinate of the window</span>
+-   <span id="5656">`screenX` — Same as `screenLeft` but needed for some browsers</span>
+-   <span id="21e7">`screenY` — Same as `screenTop` but needed for some browsers</span>
+-   <span id="d000">`self` — Returns the current window</span>
+-   <span id="99af">`status` — Sets or returns the text in the status bar of a window</span>
+-   <span id="0a0f">`top` — Returns the topmost browser window</span>
 
 ### Window Methods
 
--   <span id="5715">`alert()` — Displays an alert box with a message and an OK button</span>
--   <span id="4afc">`blur()` — Removes focus from the current window</span>
--   <span id="ef9a">`clearInterval()` — Clears a timer set with `setInterval()`</span>
--   <span id="fa72">`clearTimeout()` — Clears a timer set with `setTimeout()`</span>
--   <span id="7bce">`close()` — Closes the current window</span>
--   <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button</span>
--   <span id="e6f2">`focus()` — Sets focus to the current window</span>
--   <span id="5eb7">`moveBy()` — Moves a window relative to its current position</span>
--   <span id="16b6">`moveTo()` — Moves a window to a specified position</span>
--   <span id="32d8">`open()` — Opens a new browser window</span>
--   <span id="4198">`print()` — Prints the content of the current window</span>
--   <span id="3bec">`prompt()` — Displays a dialogue box that prompts the visitor for input</span>
--   <span id="e16a">`resizeBy()` — Resizes the window by the specified number of pixels</span>
--   <span id="31c8">`resizeTo()` — Resizes the window to a specified width and height</span>
--   <span id="6c44">`scrollBy()` — Scrolls the document by a specified number of pixels</span>
--   <span id="959f">`scrollTo()` — Scrolls the document to specified coordinates</span>
--   <span id="704a">`setInterval()` — Calls a function or evaluates an expression at specified intervals</span>
--   <span id="87c3">`setTimeout()` — Calls a function or evaluates an expression after a specified interval</span>
--   <span id="1cde">`stop()` — Stops the window from loading</span>
+-   <span id="5715">`alert()` — Displays an alert box with a message and an OK button</span>
+-   <span id="4afc">`blur()` — Removes focus from the current window</span>
+-   <span id="ef9a">`clearInterval()` — Clears a timer set with `setInterval()`</span>
+-   <span id="fa72">`clearTimeout()` — Clears a timer set with `setTimeout()`</span>
+-   <span id="7bce">`close()` — Closes the current window</span>
+-   <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button</span>
+-   <span id="e6f2">`focus()` — Sets focus to the current window</span>
+-   <span id="5eb7">`moveBy()` — Moves a window relative to its current position</span>
+-   <span id="16b6">`moveTo()` — Moves a window to a specified position</span>
+-   <span id="32d8">`open()` — Opens a new browser window</span>
+-   <span id="4198">`print()` — Prints the content of the current window</span>
+-   <span id="3bec">`prompt()` — Displays a dialogue box that prompts the visitor for input</span>
+-   <span id="e16a">`resizeBy()` — Resizes the window by the specified number of pixels</span>
+-   <span id="31c8">`resizeTo()` — Resizes the window to a specified width and height</span>
+-   <span id="6c44">`scrollBy()` — Scrolls the document by a specified number of pixels</span>
+-   <span id="959f">`scrollTo()` — Scrolls the document to specified coordinates</span>
+-   <span id="704a">`setInterval()` — Calls a function or evaluates an expression at specified intervals</span>
+-   <span id="87c3">`setTimeout()` — Calls a function or evaluates an expression after a specified interval</span>
+-   <span id="1cde">`stop()` — Stops the window from loading</span>
 
 ### Screen Properties
 
--   <span id="7e50">`availHeight` — Returns the height of the screen (excluding the Windows Taskbar)</span>
--   <span id="d7ea">`availWidth` — Returns the width of the screen (excluding the Windows Taskbar)</span>
--   <span id="4feb">`colorDepth` — Returns the bit depth of the color palette for displaying images</span>
--   <span id="f2f7">`height` — The total height of the screen</span>
--   <span id="8e22">`pixelDepth` — The color resolution of the screen in bits per pixel</span>
--   <span id="bc5a">`width` — The total width of the screen</span>
+-   <span id="7e50">`availHeight` — Returns the height of the screen (excluding the Windows Taskbar)</span>
+-   <span id="d7ea">`availWidth` — Returns the width of the screen (excluding the Windows Taskbar)</span>
+-   <span id="4feb">`colorDepth` — Returns the bit depth of the color palette for displaying images</span>
+-   <span id="f2f7">`height` — The total height of the screen</span>
+-   <span id="8e22">`pixelDepth` — The color resolution of the screen in bits per pixel</span>
+-   <span id="bc5a">`width` — The total width of the screen</span>
 
 ### JavaScript Events
 
@@ -732,136 +2294,136 @@ Events are things that can happen to HTML elements and are performed by the user
 
 ### Mouse
 
--   <span id="9546">`onclick` — The event occurs when the user clicks on an element</span>
--   <span id="9b50">`oncontextmenu` — User right-clicks on an element to open a context menu</span>
--   <span id="147a">`ondblclick` — The user double-clicks on an element</span>
--   <span id="3720">`onmousedown` — User presses a mouse button over an element</span>
--   <span id="a40a">`onmouseenter` — The pointer moves onto an element</span>
--   <span id="345e">`onmouseleave` — Pointer moves out of an element</span>
--   <span id="79b1">`onmousemove` — The pointer is moving while it is over an element</span>
--   <span id="fa70">`onmouseover` — When the pointer is moved onto an element or one of its children</span>
--   <span id="94f8">`onmouseout` — User moves the mouse pointer out of an element or one of its children</span>
--   <span id="486e">`onmouseup` — The user releases a mouse button while over an element</span>
+-   <span id="9546">`onclick` — The event occurs when the user clicks on an element</span>
+-   <span id="9b50">`oncontextmenu` — User right-clicks on an element to open a context menu</span>
+-   <span id="147a">`ondblclick` — The user double-clicks on an element</span>
+-   <span id="3720">`onmousedown` — User presses a mouse button over an element</span>
+-   <span id="a40a">`onmouseenter` — The pointer moves onto an element</span>
+-   <span id="345e">`onmouseleave` — Pointer moves out of an element</span>
+-   <span id="79b1">`onmousemove` — The pointer is moving while it is over an element</span>
+-   <span id="fa70">`onmouseover` — When the pointer is moved onto an element or one of its children</span>
+-   <span id="94f8">`onmouseout` — User moves the mouse pointer out of an element or one of its children</span>
+-   <span id="486e">`onmouseup` — The user releases a mouse button while over an element</span>
 
 ### Keyboard
 
--   <span id="6a8f">`onkeydown` — When the user is pressing a key down</span>
--   <span id="0647">`onkeypress` — The moment the user starts pressing a key</span>
--   <span id="ff0f">`onkeyup` — The user releases a key</span>
+-   <span id="6a8f">`onkeydown` — When the user is pressing a key down</span>
+-   <span id="0647">`onkeypress` — The moment the user starts pressing a key</span>
+-   <span id="ff0f">`onkeyup` — The user releases a key</span>
 
 ### Frame
 
--   <span id="9d29">`onabort` — The loading of a media is aborted</span>
--   <span id="baa4">`onbeforeunload` — Event occurs before the document is about to be unloaded</span>
--   <span id="740e">`onerror` — An error occurs while loading an external file</span>
--   <span id="be95">`onhashchange` — There have been changes to the anchor part of a URL</span>
--   <span id="d0fd">`onload` — When an object has loaded</span>
--   <span id="65e5">`onpagehide` — The user navigates away from a webpage</span>
--   <span id="aae6">`onpageshow` — When the user navigates to a webpage</span>
--   <span id="e3dc">`onresize` — The document view is resized</span>
--   <span id="96c8">`onscroll` — An element’s scrollbar is being scrolled</span>
--   <span id="f2fa">`onunload` — Event occurs when a page has unloaded</span>
+-   <span id="9d29">`onabort` — The loading of a media is aborted</span>
+-   <span id="baa4">`onbeforeunload` — Event occurs before the document is about to be unloaded</span>
+-   <span id="740e">`onerror` — An error occurs while loading an external file</span>
+-   <span id="be95">`onhashchange` — There have been changes to the anchor part of a URL</span>
+-   <span id="d0fd">`onload` — When an object has loaded</span>
+-   <span id="65e5">`onpagehide` — The user navigates away from a webpage</span>
+-   <span id="aae6">`onpageshow` — When the user navigates to a webpage</span>
+-   <span id="e3dc">`onresize` — The document view is resized</span>
+-   <span id="96c8">`onscroll` — An element's scrollbar is being scrolled</span>
+-   <span id="f2fa">`onunload` — Event occurs when a page has unloaded</span>
 
 ### Form
 
--   <span id="731a">`onblur` — When an element loses focus</span>
--   <span id="facf">`onchange` — The content of a form element changes (for `<input>`, `<select>` and `<textarea>`)</span>
--   <span id="7a0a">`onfocus` — An element gets focus</span>
--   <span id="5188">`onfocusin` — When an element is about to get focus</span>
--   <span id="594a">`onfocusout` — The element is about to lose focus</span>
--   <span id="700e">`oninput` — User input on an element</span>
--   <span id="dd0f">`oninvalid` — An element is invalid</span>
--   <span id="6cad">`onreset` — A form is reset</span>
--   <span id="f4f2">`onsearch` — The user writes something in a search field (for `<input="search">`)</span>
--   <span id="32a9">`onselect` — The user selects some text (for `<input>` and `<textarea>`)</span>
--   <span id="3e1d">`onsubmit` — A form is submitted</span>
+-   <span id="731a">`onblur` — When an element loses focus</span>
+-   <span id="facf">`onchange` — The content of a form element changes (for `<input>`, `<select>` and `<textarea>`)</span>
+-   <span id="7a0a">`onfocus` — An element gets focus</span>
+-   <span id="5188">`onfocusin` — When an element is about to get focus</span>
+-   <span id="594a">`onfocusout` — The element is about to lose focus</span>
+-   <span id="700e">`oninput` — User input on an element</span>
+-   <span id="dd0f">`oninvalid` — An element is invalid</span>
+-   <span id="6cad">`onreset` — A form is reset</span>
+-   <span id="f4f2">`onsearch` — The user writes something in a search field (for `<input="search">`)</span>
+-   <span id="32a9">`onselect` — The user selects some text (for `<input>` and `<textarea>`)</span>
+-   <span id="3e1d">`onsubmit` — A form is submitted</span>
 
 ### Drag
 
--   <span id="912c">`ondrag` — An element is dragged</span>
--   <span id="6897">`ondragend` — The user has finished dragging the element</span>
--   <span id="8225">`ondragenter` — The dragged element enters a drop target</span>
--   <span id="cf37">`ondragleave` — A dragged element leaves the drop target</span>
--   <span id="5bc3">`ondragover` — The dragged element is on top of the drop target</span>
--   <span id="2b0c">`ondragstart` — User starts to drag an element</span>
--   <span id="8e24">`ondrop` — Dragged element is dropped on the drop target</span>
+-   <span id="912c">`ondrag` — An element is dragged</span>
+-   <span id="6897">`ondragend` — The user has finished dragging the element</span>
+-   <span id="8225">`ondragenter` — The dragged element enters a drop target</span>
+-   <span id="cf37">`ondragleave` — A dragged element leaves the drop target</span>
+-   <span id="5bc3">`ondragover` — The dragged element is on top of the drop target</span>
+-   <span id="2b0c">`ondragstart` — User starts to drag an element</span>
+-   <span id="8e24">`ondrop` — Dragged element is dropped on the drop target</span>
 
 ### Clipboard
 
--   <span id="c299">`oncopy` — User copies the content of an element</span>
--   <span id="267c">`oncut` — The user cuts an element’s content</span>
--   <span id="e33c">`onpaste` — A user pastes the content in an element</span>
+-   <span id="c299">`oncopy` — User copies the content of an element</span>
+-   <span id="267c">`oncut` — The user cuts an element's content</span>
+-   <span id="e33c">`onpaste` — A user pastes the content in an element</span>
 
 ### Media
 
--   <span id="e0ab">`onabort` — Media loading is aborted</span>
--   <span id="0758">`oncanplay` — The browser can start playing media (e.g. a file has buffered enough)</span>
--   <span id="0bc2">`oncanplaythrough` — The browser can play through media without stopping</span>
--   <span id="4c27">`ondurationchange` — The duration of the media changes</span>
--   <span id="aa9a">`onended` — The media has reached its end</span>
--   <span id="25b8">`onerror` — Happens when an error occurs while loading an external file</span>
--   <span id="cdf4">`onloadeddata` — Media data is loaded</span>
--   <span id="edce">`onloadedmetadata` — Metadata (like dimensions and duration) are loaded</span>
--   <span id="7928">`onloadstart` — The browser starts looking for specified media</span>
--   <span id="159c">`onpause` — Media is paused either by the user or automatically</span>
--   <span id="057f">`onplay` — The media has been started or is no longer paused</span>
--   <span id="ce2a">`onplaying` — Media is playing after having been paused or stopped for buffering</span>
--   <span id="2655">`onprogress` — The browser is in the process of downloading the media</span>
--   <span id="a11c">`onratechange` — The playing speed of the media changes</span>
--   <span id="f8bb">`onseeked` — User is finished moving/skipping to a new position in the media</span>
--   <span id="9895">`onseeking` — The user starts moving/skipping</span>
--   <span id="c636">`onstalled` — The browser is trying to load the media but it is not available</span>
--   <span id="6480">`onsuspend` — The browser is intentionally not loading media</span>
--   <span id="f94b">`ontimeupdate` — The playing position has changed (e.g. because of fast forward)</span>
--   <span id="e96b">`onvolumechange` — Media volume has changed (including mute)</span>
--   <span id="9fe8">`onwaiting` — Media paused but expected to resume (for example, buffering)</span>
+-   <span id="e0ab">`onabort` — Media loading is aborted</span>
+-   <span id="0758">`oncanplay` — The browser can start playing media (e.g. a file has buffered enough)</span>
+-   <span id="0bc2">`oncanplaythrough` — The browser can play through media without stopping</span>
+-   <span id="4c27">`ondurationchange` — The duration of the media changes</span>
+-   <span id="aa9a">`onended` — The media has reached its end</span>
+-   <span id="25b8">`onerror` — Happens when an error occurs while loading an external file</span>
+-   <span id="cdf4">`onloadeddata` — Media data is loaded</span>
+-   <span id="edce">`onloadedmetadata` — Metadata (like dimensions and duration) are loaded</span>
+-   <span id="7928">`onloadstart` — The browser starts looking for specified media</span>
+-   <span id="159c">`onpause` — Media is paused either by the user or automatically</span>
+-   <span id="057f">`onplay` — The media has been started or is no longer paused</span>
+-   <span id="ce2a">`onplaying` — Media is playing after having been paused or stopped for buffering</span>
+-   <span id="2655">`onprogress` — The browser is in the process of downloading the media</span>
+-   <span id="a11c">`onratechange` — The playing speed of the media changes</span>
+-   <span id="f8bb">`onseeked` — User is finished moving/skipping to a new position in the media</span>
+-   <span id="9895">`onseeking` — The user starts moving/skipping</span>
+-   <span id="c636">`onstalled` — The browser is trying to load the media but it is not available</span>
+-   <span id="6480">`onsuspend` — The browser is intentionally not loading media</span>
+-   <span id="f94b">`ontimeupdate` — The playing position has changed (e.g. because of fast forward)</span>
+-   <span id="e96b">`onvolumechange` — Media volume has changed (including mute)</span>
+-   <span id="9fe8">`onwaiting` — Media paused but expected to resume (for example, buffering)</span>
 
 ### Animation
 
--   <span id="4497">`animationend` — A CSS animation is complete</span>
--   <span id="fc16">`animationiteration` — CSS animation is repeated</span>
--   <span id="0f40">`animationstart` — CSS animation has started</span>
+-   <span id="4497">`animationend` — A CSS animation is complete</span>
+-   <span id="fc16">`animationiteration` — CSS animation is repeated</span>
+-   <span id="0f40">`animationstart` — CSS animation has started</span>
 
 ### Other
 
--   <span id="614b">`transitionend` — Fired when a CSS transition has completed</span>
--   <span id="5a40">`onmessage` — A message is received through the event source</span>
--   <span id="0dad">`onoffline` — The browser starts to work offline</span>
--   <span id="058e">`ononline` — The browser starts to work online</span>
--   <span id="090a">`onpopstate` — When the window’s history changes</span>
--   <span id="d940">`onshow` — A `<menu>` element is shown as a context menu</span>
--   <span id="3062">`onstorage` — A Web Storage area is updated</span>
--   <span id="2681">`ontoggle` — The user opens or closes the `<details>` element</span>
--   <span id="6a40">`onwheel` — Mouse wheel rolls up or down over an element</span>
--   <span id="7178">`ontouchcancel` — Screen-touch is interrupted</span>
--   <span id="bec5">`ontouchend` — User’s finger is removed from a touch-screen</span>
--   <span id="3b60">`ontouchmove` — A finger is dragged across the screen</span>
--   <span id="3c0e">`ontouchstart` — A finger is placed on the touch-screen</span>
+-   <span id="614b">`transitionend` — Fired when a CSS transition has completed</span>
+-   <span id="5a40">`onmessage` — A message is received through the event source</span>
+-   <span id="0dad">`onoffline` — The browser starts to work offline</span>
+-   <span id="058e">`ononline` — The browser starts to work online</span>
+-   <span id="090a">`onpopstate` — When the window's history changes</span>
+-   <span id="d940">`onshow` — A `<menu>` element is shown as a context menu</span>
+-   <span id="3062">`onstorage` — A Web Storage area is updated</span>
+-   <span id="2681">`ontoggle` — The user opens or closes the `<details>` element</span>
+-   <span id="6a40">`onwheel` — Mouse wheel rolls up or down over an element</span>
+-   <span id="7178">`ontouchcancel` — Screen-touch is interrupted</span>
+-   <span id="bec5">`ontouchend` — User's finger is removed from a touch-screen</span>
+-   <span id="3b60">`ontouchmove` — A finger is dragged across the screen</span>
+-   <span id="3c0e">`ontouchstart` — A finger is placed on the touch-screen</span>
 
 ### Errors
 
 When working with JavaScript, different errors can occur. There are several ways of handling them:
 
--   <span id="54c9">`try` — Lets you define a block of code to test for errors</span>
--   <span id="cb14">`catch` — Set up a block of code to execute in case of an error</span>
--   <span id="6a5b">`throw` — Create custom error messages instead of the standard JavaScript errors</span>
--   <span id="6aea">`finally` — Lets you execute code, after try and catch, regardless of the result</span>
+-   <span id="54c9">`try` — Lets you define a block of code to test for errors</span>
+-   <span id="cb14">`catch` — Set up a block of code to execute in case of an error</span>
+-   <span id="6a5b">`throw` — Create custom error messages instead of the standard JavaScript errors</span>
+-   <span id="6aea">`finally` — Lets you execute code, after try and catch, regardless of the result</span>
 
-### Error Name Values
+### Error Name Values
 
 JavaScript also has a built-in error object. It has two properties:
 
--   <span id="ca3b">`name` — Sets or returns the error name</span>
--   <span id="7047">`message` — Sets or returns an error message in a string from</span>
+-   <span id="ca3b">`name` — Sets or returns the error name</span>
+-   <span id="7047">`message` — Sets or returns an error message in a string from</span>
 
 The error property can return six different values as its name:
 
--   <span id="b389">`EvalError` — An error has occurred in the `eval()` function</span>
--   <span id="570c">`RangeError` — A number is “out of range”</span>
--   <span id="2352">`ReferenceError` — An illegal reference has occurred</span>
--   <span id="5019">`SyntaxError` — A syntax error has occurred</span>
--   <span id="0527">`TypeError` — A type error has occurred</span>
--   <span id="02a3">`URIError` — An `encodeURI()` error has occurred</span>
+-   <span id="b389">`EvalError` — An error has occurred in the `eval()` function</span>
+-   <span id="570c">`RangeError` — A number is “out of range”</span>
+-   <span id="2352">`ReferenceError` — An illegal reference has occurred</span>
+-   <span id="5019">`SyntaxError` — A syntax error has occurred</span>
+-   <span id="0527">`TypeError` — A type error has occurred</span>
+-   <span id="02a3">`URIError` — An `encodeURI()` error has occurred</span>
 
 ### Explicit Conversions
 
@@ -1005,11 +2567,11 @@ hex
 
 `parseInt(".1")`
 
-NaN: integers can’t start with “.”
+NaN: integers can't start with “.”
 
 `parseFloat("$72.47")`
 
-NaN: numbers can’t start with “$”
+NaN: numbers can't start with “$”
 
 Supply Radix
 
@@ -1111,13 +2673,13 @@ sin=Math.sin, cos=Math.cos, tan=Math.tan
 
 ### Expressions and Operators
 
-In JavaScript, the values `null `and `undefined `are the only two values that do not have properties. In a regular property access expression using . or \[\], you get a `TypeError` if the expression on the left evaluates to `null `or `undefined`. You can use `?.` and `?.[]` syntax to guard against errors of this type.
+In JavaScript, the values `null `and `undefined `are the only two values that do not have properties. In a regular property access expression using . or \[\], you get a `TypeError` if the expression on the left evaluates to `null `or `undefined`. You can use `?.` and `?.[]` syntax to guard against errors of this type.
 
-You can also invoke a function using `?.()` instead of `()`.
+You can also invoke a function using `?.()` instead of `()`.
 
-With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
+With the `new ?.()` invocation syntax, if the expression to the left of the `?.` evaluates to `null` or `undefined`, then the entire invocation expression evaluates to `undefined `and no exception is thrown.
 
-Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
+Write the function invocation using `?.(),` knowing that invocation will only happen if there is actually a value to be invoked
 
     function square(x, log) {
 
@@ -1145,11 +2707,11 @@ Because of security issues, some web servers use the HTTP “Content-Security-Po
 
 ### First-Defined (??)
 
-The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
+The first-defined operator `??` evaluates to its first defined operand: if its left operand is not `null` and not `undefined`, it returns that value.
 
 `a ?? b` is equivalent to `(a !== null && a !== undefined) ? a : b`
 
-`??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy `values that may be perfectly valid in some circumstances. In this code example, if `maxWidth `is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
+`??` is a useful alternative to `||.` The problem with this idiomatic use is that zero, the empty string, and false are all `falsy `values that may be perfectly valid in some circumstances. In this code example, if `maxWidth `is zero, that value will be ignored. But if we change the `||` operator to `??`, we end up with an expression where zero is a valid value.
 
 `let max = maxWidth || preferences.maxWidth || 500;`
 
@@ -1157,7 +2719,7 @@ The first-defined operator `??` evaluates to its first defined operand: if its 
 
 ### delete Operator
 
-Deleting an array element leaves a “hole” in the array and does not change the array’s length. The resulting array is sparse.
+Deleting an array element leaves a “hole” in the array and does not change the array's length. The resulting array is sparse.
 
 ### void Operator
 
@@ -1247,7 +2809,7 @@ Objects are not (by default) iterable. Attempting to use `for/of` on a regular o
 
 If you want to iterate through the properties of an object, you can use the `for/in` loop.
 
-Note: `for/of` can be used on objects with `Object.entries` property, but it will not pick properties from object’s prototype.
+Note: `for/of` can be used on objects with `Object.entries` property, but it will not pick properties from object's prototype.
 
 ### for/in
 
@@ -1287,9 +2849,9 @@ The `with `statement is forbidden in strict mode and should be considered deprec
 
 If a debugger program is available and is running, then an implementation may (but is not required to) perform some kind of debugging action.
 
-In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables’ values, examine the call stack, and so on.
+In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables' values, examine the call stack, and so on.
 
-Note that it is not enough to have a debugger available: the debugger statement won’t start the debugger for you. If you’re using a web browser and have the developer tools console open, however, this statement will cause a breakpoint.
+Note that it is not enough to have a debugger available: the debugger statement won't start the debugger for you. If you're using a web browser and have the developer tools console open, however, this statement will cause a breakpoint.
 
 ### use strict
 
@@ -1305,11 +2867,11 @@ The differences between strict mode and non-strict mode are the following:
 
 · In strict mode, functions invoked as functions (rather than as methods) have a `this `value of undefined. (In non-strict mode, functions invoked as functions are always passed the global object as their `this `value.)
 
-· A function is invoked with `call() `or `apply()` , the `this `value is exactly the value passed as the first argument to `call()` or `apply()`. (In non-strict mode, `null `and `undefined `values are replaced with the global object and non-object values are converted to objects.)
+· A function is invoked with `call() `or `apply()` , the `this `value is exactly the value passed as the first argument to `call()` or `apply()`. (In non-strict mode, `null `and `undefined `values are replaced with the global object and non-object values are converted to objects.)
 
 · In strict mode, assignments to non-writable properties and attempts to create new properties on non-extensible objects throw a `TypeError`. (In non-strict mode, these attempts fail silently.)
 
-· In strict mode, code passed to `eval() `cannot declare variables or define functions in the caller’s scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
+· In strict mode, code passed to `eval() `cannot declare variables or define functions in the caller's scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
 
 · In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has “magical” behavior in which elements of the array and named function parameters both refer to the same value.
 
@@ -1374,9 +2936,9 @@ Literal
 `new`
 
 `let o = new Object(); `  
- `let a = new Array(); `  
- `let d = new Date(); `  
- `let r = new Map();`
+ `let a = new Array(); `  
+ `let d = new Date(); `  
+ `let r = new Map();`
 
 `Object.create`
 
@@ -1390,7 +2952,7 @@ Use `Object.create` to guard against accidental modifications:
 
 Note: the library function can modify the passed in object, but not the original `o` object
 
-### Access Object Properties with an array (\[\]) notation
+### Access Object Properties with an array (\[\]) notation
 
     let addr = "";
 
@@ -1440,7 +3002,7 @@ false: property is non-configurable
 
 `delete globalThis.x`
 
-false: can’t delete `this `property
+false: can't delete `this `property
 
 `function f() {}`
 
@@ -1458,9 +3020,9 @@ true
 
 To check whether an object has a property with a given name. You can do this with the `in` operator, with the `hasOwnProperty()` and `propertyIsEnumerable()` methods, or simply by querying the property
 
-( `!= undefined`).
+( `!= undefined`).
 
-### in & query
+### in & query
 
 `let o = { x: 1 };`
 
@@ -1574,7 +3136,7 @@ The functions `JSON.stringify()` and` JSON.parse()` serialize and restore JavaSc
 
 `let s = JSON.stringify(o);`
 
-s == ‘{“x”:1,”y”:{“z”:\[false,null,””\]}}’
+s == '{“x”:1,”y”:{“z”:\[false,null,””\]}}'
 
 `let p = JSON.parse(s);`
 
@@ -1588,7 +3150,7 @@ p == {x: 1, y: {z: \[false,null, “”\]}}
 
 s == “\[object Object\]”
 
-### Extended Object Literal Syntax
+### Extended Object Literal Syntax
 
 ### Shorthand Properties
 
@@ -1605,12 +3167,12 @@ s == “\[object Object\]”
 ←&gt;
 
 `let x = 1, y = 2;`  
- `let o = { x, y };`
+ `let o = { x, y };`
 
-### Computer Property Names
+### Computer Property Names
 
 `const PROPERTY_NAME = "p1";`  
- `function computePropertyName() { return "p" + 2; }`
+ `function computePropertyName() { return "p" + 2; }`
 
     let o = {};
 
@@ -1628,7 +3190,7 @@ s == “\[object Object\]”
 
     };
 
-### Symbols as Property Names
+### Symbols as Property Names
 
     const extension = Symbol("my extension symbol");
 
@@ -1646,12 +3208,12 @@ The point of Symbols is not security, but to define a safe extension mechanism f
 
 ### Spread Operator
 
-You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
+You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
 
 `let position = { x: 0, y: 0 };`  
- `let dimensions = { width: 100, height: 75 };`  
- `let rect = { ...position, ...dimensions };`  
- `rect.x + rect.y + rect.width + rect.height`
+ `let dimensions = { width: 100, height: 75 };`  
+ `let rect = { ...position, ...dimensions };`  
+ `rect.x + rect.y + rect.width + rect.height`
 
 ### Shorthand Methods
 
@@ -1705,7 +3267,7 @@ When you write a method using this shorthand syntax, the property name can take 
 
 4
 
-### Property Getters and Setters
+### Property Getters and Setters
 
     let o = {
 
@@ -1723,7 +3285,7 @@ When you write a method using this shorthand syntax, the property name can take 
 
 · Array literals
 
-· The … spread operator on an iterable object
+· The … spread operator on an iterable object
 
 · The `Array()` constructor
 
@@ -1747,7 +3309,7 @@ If an array literal contains multiple commas in a row, with no value between, th
 
 Array literal syntax allows an optional trailing comma, so `[,,]` has a length of 2, not 3.
 
-### The Spread Operator
+### The Spread Operator
 
 `let a = [1, 2, 3];`
 
@@ -1755,10 +3317,10 @@ Array literal syntax allows an optional trailing comma, so `[,,]` has a length o
 
 \[0, 1, 2, 3, 4\]
 
-create a copy of an array — modifying the copy does not change the original
+create a copy of an array — modifying the copy does not change the original
 
 `let original = [1,2,3];`  
- `let copy = [...original];`
+ `let copy = [...original];`
 
 `let digits = [..."0123456789ABCDEF"];`
 
@@ -1800,11 +3362,11 @@ It is also a simple way to make a copy of an array:
 
 `Array.from()` also accepts an optional second argument. If you pass a function as the second argument, then as the new array is being built, each element from the source object will be passed to the function you specify, and the return value of the function will be stored in the array instead of the original value.
 
-### Reading and Writing Array Elements
+### Reading and Writing Array Elements
 
-What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
+What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
 
-JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.
+JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.
 
 It is helpful to clearly distinguish an array index from an object property name. All indexes are property names, but only property names that are integers between 0 and 231 are indexes. All arrays are objects, and you can create properties of any name on them. If you use properties that are array indexes, however, arrays have the special behavior of updating their `length` property as needed.
 
@@ -1822,7 +3384,7 @@ This the 1001st element of the array
 
 Array index 1. Same as a\[1\] = 1;
 
-The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don’t get an error; you simply get `undefined`.
+The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don't get an error; you simply get `undefined`.
 
 ### Sparse Arrays
 
@@ -1856,7 +3418,7 @@ Length is 5, but no elements, like `new Array(5)`
 
 You can also set the length property of an array to a value larger than its current value. Doing this does not actually add any new elements to the array; it simply creates a sparse area at the end of the array.
 
-### Adding and Deleting Array Elements
+### Adding and Deleting Array Elements
 
 `let a = [];`
 
@@ -1962,7 +3524,7 @@ You can also loop through the elements of an array with a `for` loop.
 
 ### Array Methods
 
-### Array Iterator Methods
+### Array Iterator Methods
 
 First, all of these methods accept a function as their first argument and invoke that function once for each element (or some elements) of the array. If the array is sparse, the function you pass is not invoked for nonexistent elements. In most cases, the function you supply is invoked with three arguments: the value of the array element, the index of the array element, and the array itself.
 
@@ -1985,15 +3547,15 @@ FOREACH()
 MAP()
 
 `let a = [1, 2, 3];`  
- `a.map(x => x*x)`
+ `a.map(x => x*x)`
 
 \[1, 4, 9\]
 
 FILTER()
 
 `let a = [5, 4, 3, 2, 1];`  
- `a.filter(x => x < 3) `  
- `a.filter((x,i) => i % 2 === 0)`
+ `a.filter(x => x < 3) `  
+ `a.filter((x,i) => i % 2 === 0)`
 
 \[2, 1\];
 
@@ -2098,13 +3660,13 @@ When you invoke `reduce()` with no initial value, it uses the first element of t
 \[1, 2, 3, 4\]
 
 `let phrases = ["hello world", "the definitive guide"];`  
- `let words = phrases.flatMap(phrase => phrase.split(" "));`
+ `let words = phrases.flatMap(phrase => phrase.split(" "));`
 
 \[“hello”, “world”, “the”, “definitive”, “guide”\];
 
 Calling `a.flatMap(f)` is the same as (but more efficient than) `a.map(f).flat()`:
 
-### Adding arrays with concat()
+### Adding arrays with concat()
 
 `let a = [1,2,3];`
 
@@ -2228,10 +3790,10 @@ Unlike `concat(), splice()` inserts arrays themselves, not the elements of those
 
 `copyWithin()` copies a slice of an array to a new position within the array. It modifies the array in place and returns the modified array, but it will not change the length of the array.
 
-### Array Searching and Sorting Methods
+### Array Searching and Sorting Methods
 
 INDEXOF()  
- LASTINDEXOF()
+ LASTINDEXOF()
 
 `let a = [0,1,2,1,0];`
 
@@ -2282,7 +3844,7 @@ Case-insensitive sort
 REVERSE()
 
 `let a = [1,2,3];`  
- `a.reverse();`
+ `a.reverse();`
 
 \[3,2,1\]
 
@@ -2316,7 +3878,7 @@ The `join()` method converts all the elements of an array to strings and concate
 
 `b.join("-")`
 
-“ — — — — -”
+“ — — — — -”
 
 Arrays, like all JavaScript objects, have a `toString()` method. For an array, this method works just like the `join()` method with no arguments:
 
@@ -2392,7 +3954,7 @@ Since array-like objects do not inherit from `Array.prototype`, you cannot invok
 
 \[“a”,”b”,”c”\]
 
-### Strings as Arrays
+### Strings as Arrays
 
 `let s = "test";`
 
@@ -2406,7 +3968,7 @@ e
 
 ### Functions
 
-In addition to the arguments, each invocation has another value — the invocation context — that is the value of the `this` keyword.
+In addition to the arguments, each invocation has another value — the invocation context — that is the value of the `this` keyword.
 
 ### Function Declarations
 
@@ -2496,7 +4058,7 @@ For function invocation in non-strict mode, the invocation context (the `this` v
 
 `const strict = (function() { return !this; }())`
 
-Determine if we’re in strict mode
+Determine if we're in strict mode
 
 ### Constructor Invocation
 
@@ -2508,7 +4070,7 @@ JavaScript functions are objects, and like all JavaScript objects, they have met
 
 ### Function Arguments and Parameters
 
-### Optional Parameters and Defaults
+### Optional Parameters and Defaults
 
 When a function is invoked with fewer arguments than declared parameters, the additional parameters are set to their default value, which is normally `undefined`.
 
@@ -2534,7 +4096,7 @@ One interesting case is that, for functions with multiple parameters, you can us
 
     const rectangle = (width, height = width*2) => ({width, height});
 
-### Rest Parameters and Variable-Length Argument Lists
+### Rest Parameters and Variable-Length Argument Lists
 
 Rest parameters enable us to write functions that can be invoked with arbitrarily more arguments than parameters.
 
@@ -2590,7 +4152,7 @@ Within the body of any function, the identifier `arguments` refers to the Argume
 
 you should avoid using it in any new code you write.
 
-### The Spread Operator for Function Calls
+### The Spread Operator for Function Calls
 
     let numbers = [5, 2, 10, -1, 9, 100, 1];
 
@@ -2712,7 +4274,7 @@ Adding code to check the types of arguments
 
 `TypeError`: element 2 is not a number
 
-### Functions as Values
+### Functions as Values
 
     function square(x) { return x * x; }
 
@@ -2734,7 +4296,7 @@ Functions can also be assigned to object properties rather than variables.
 
 256
 
-Functions don’t even require names at all, as when they’re assigned to array elements:
+Functions don't even require names at all, as when they're assigned to array elements:
 
 `let a = [x => x*x, 20];`
 
@@ -2744,7 +4306,7 @@ Functions don’t even require names at all, as when they’re assigned to array
 
 `a[0]` accesses first element of the array, which is "`x => x*x`", `(a[1])` passes parameter, which is 20.
 
-### Examples of using functions as data
+### Examples of using functions as data
 
     function add(x,y) { return x + y; }
 
@@ -2876,7 +4438,7 @@ Variables that would have been global become local to the function. Following co
 
     chunkNamespace();
 
-If defining even a single property is too much, you can define and invoke an anonymous function in a single expression — IIEF (immediately invoked function expression)
+If defining even a single property is too much, you can define and invoke an anonymous function in a single expression — IIEF (immediately invoked function expression)
 
     (function() {
 
@@ -2892,7 +4454,7 @@ JavaScript uses lexical scoping. This means that functions are executed using th
 
 In order to implement lexical scoping, the internal state of a JavaScript function object must include not only the code of the function but also a reference to the scope in which the function definition appears.
 
-This combination of a function object and a scope (a set of variable bindings) in which the function’s variables are resolved is called a closure.
+This combination of a function object and a scope (a set of variable bindings) in which the function's variables are resolved is called a closure.
 
 Closures become interesting when they are invoked from a different scope than the one they were defined in. This happens most commonly when a nested function object is returned from the function within which it was defined.
 
@@ -3068,11 +4630,11 @@ TypeError: try to set a value ofthe wrong type
 
 Since functions are objects, they can have properties and methods, just like any other object.
 
-### The length Property
+### The length Property
 
-The read-only length property of a function specifies the arity of the function — the number of parameters it declares in its parameter list, which is usually the number of arguments that the function expects.
+The read-only length property of a function specifies the arity of the function — the number of parameters it declares in its parameter list, which is usually the number of arguments that the function expects.
 
-### The name Property
+### The name Property
 
 This property is primarily useful when writing debugging or error messages.
 
@@ -3080,7 +4642,7 @@ This property is primarily useful when writing debugging or error messages.
 
 When a function is used as a constructor, the newly created object inherits properties from the prototype object.
 
-### The call() and apply() Methods
+### The call() and apply() Methods
 
 `call()` and `apply()` allow you to indirectly invoke a function as if it were a method of some other object. The first argument to both `call()` and `apply()` is the object on which the function is to be invoked; this argument is the invocation context and becomes the value of the `this` keyword within the body of the function.
 
@@ -3118,7 +4680,7 @@ The `trace() `function defined uses the `apply() `method instead of a spread ope
 
     }
 
-### The bind() Method
+### The bind() Method
 
 The primary purpose of `bind()` is to bind a function to an object.
 
@@ -3228,7 +4790,7 @@ We defined a factorial function that cached its previously computed results. In 
 
 ### Classes
 
-JavaScript’s classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance mechanism of Java.
+JavaScript's classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance mechanism of Java.
 
 ### Classes and Prototypes
 
@@ -3396,7 +4958,7 @@ Another common technique that you are likely to see in older JavaScript code is 
 
     };
 
-### Classes with the class Keyword
+### Classes with the class Keyword
 
     class Range {
 
@@ -3440,7 +5002,7 @@ Although class bodies are superficially similar to object literals, they are not
 
 If your class does not need to do any initialization, you can omit the constructor keyword and its body, and an empty constructor function will be implicitly created for you.
 
-If you want to define a class that subclasses — or inherits from — another class, you can use the `extends` keyword with the class keyword:
+If you want to define a class that subclasses — or inherits from — another class, you can use the `extends` keyword with the class keyword:
 
     class Span extends Range {
 
@@ -3494,11 +5056,11 @@ The method defined by this code is `Range.parse()`, not `Range.prototype.parse()
 
     let r = Range.parse('(1...10)');
 
-### Getters, Setters, and other Method Forms
+### Getters, Setters, and other Method Forms
 
-Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don’t put a comma after the getter or setter.
+Within a class body, you can define getter and setter methods just as you can in object literals. The only difference is that in class bodies, you don't put a comma after the getter or setter.
 
-### Public, Private, and Static Fields
+### Public, Private, and Static Fields
 
 The ES6 standard only allows the creation of methods (including getters, setters, and generators) and static methods; it does not include syntax for defining fields.
 
@@ -3560,7 +5122,7 @@ A related proposal seeks to standardize the use of the `static` keyword for fiel
 
     }
 
-### Adding Methods to Existing Classes
+### Adding Methods to Existing Classes
 
 We can augment JavaScript classes simply by adding new methods to their prototype objects.
 
@@ -3586,7 +5148,7 @@ We can augment JavaScript classes simply by adding new methods to their prototyp
 
 ### Subclasses and Prototypes
 
-Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we’ll instead specify a start and a distance, or span.
+Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we'll instead specify a start and a distance, or span.
 
     function Span(start, span) {
 
@@ -3612,19 +5174,19 @@ Ensure that the `Span` prototype inherits from the `Range`
 
     Span.prototype = Object.create(Range.prototype);
 
-We don’t want to inherit `Range.prototype.constructor`, so we define our own constructor property:
+We don't want to inherit `Range.prototype.constructor`, so we define our own constructor property:
 
     Span.prototype.constructor = Span;
 
 `Span` overrides the `toString()` method
 
 `Span.prototype.toString = function() {`  
- `` return `(${this.from}... +${this.to - this.from})`; ``  
- `};`
+ `` return `(${this.from}... +${this.to - this.from})`; ``  
+ `};`
 
 A robust subclassing mechanism needs to allow classes to invoke the methods and constructor of their superclass, but prior to ES6, JavaScript did not have a simple way to do these things.
 
-### Subclasses with extends and super
+### Subclasses with extends and super
 
     class EZArray extends Array {
 
@@ -3728,9 +5290,9 @@ You may not use the `this` keyword in your constructor until after you have invo
 
 Once private fields are supported, we could change these properties to `#keyType` and `#valueType` so that they could not be altered from the outside.
 
-### Class Hierarchies and Abstract Classes
+### Class Hierarchies and Abstract Classes
 
-Define abstract classes — classes that do not include a complete implementation — to serve as a common superclass for a group of related subclasses.
+Define abstract classes — classes that do not include a complete implementation — to serve as a common superclass for a group of related subclasses.
 
 ### Modules
 
@@ -3786,7 +5348,7 @@ writing code like the following to make use of those modules
 
     let average = stats.mean([...s]);
 
-### Modules in ES6
+### Modules in ES6
 
 ES6 adds import and export keywords to JavaScript and finally supports real modularity as a core language feature.
 
@@ -3834,9 +5396,9 @@ With the wildcard import shown in the previous example, the importing module wou
 
 Note: not finished.
 
-### The JavaScript Standard Library
+### The JavaScript Standard Library
 
-### The Set Class
+### The Set Class
 
 Sets are not ordered or indexed, and they do not allow duplicates.
 
@@ -3870,11 +5432,11 @@ The Set class is iterable, which means that you can use a `for/of` loop to enume
 
     }
 
-Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator
+Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator
 
 `[...oneDigitPrimes]`
 
-JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven’t deleted it first), and the most recently inserted element will be the last one iterated.
+JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven't deleted it first), and the most recently inserted element will be the last one iterated.
 
 Set class also implements a `forEach()` method
 
@@ -3882,7 +5444,7 @@ Set class also implements a `forEach()` method
 
     oneDigitPrimes.forEach(n => { product *= n; });
 
-### The Map Class
+### The Map Class
 
     let m = new Map();
 
@@ -3939,7 +5501,7 @@ Iterate over map:
 Map class iterates in insertion order
 
 If you want to iterate just the keys or just the associated values of a map, use the `keys()` and `values()` methods: these return iterable objects that iterate keys and values, in insertion order. (The  
- `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
+ `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
 
     [...m.keys()]
 
@@ -3953,17 +5515,17 @@ Map objects can also be iterated using the `forEach()`
 
 Note that the value parameter comes before the key parameter.
 
-### WeakMap and WeakSet
+### WeakMap and WeakSet
 
 The `WeakMap `class is a variant (but not an actual subclass) of the Map class that does not prevent its key values from being garbage collected.
 
 `WeakMap `keys must be objects or arrays; primitive values are not subject to garbage collection and cannot be used as keys.
 
-WeakMap implements only the` get(), set(), has(),` and `delete()` methods. In particular, `WeakMap` is not iterable and does not define `keys(), values(),` or `forEach()`. If WeakMap was iterable, then its keys would be reachable and it wouldn’t be weak.
+WeakMap implements only the` get(), set(), has(),` and `delete()` methods. In particular, `WeakMap` is not iterable and does not define `keys(), values(),` or `forEach()`. If WeakMap was iterable, then its keys would be reachable and it wouldn't be weak.
 
 Similarly, WeakMap does not implement the size property because the `size` of a WeakMap could change at any time as objects are garbage collected
 
-### Typed Arrays and Binary Data
+### Typed Arrays and Binary Data
 
 They differ from regular arrays in some very important ways
 
@@ -4013,7 +5575,7 @@ one more way to create typed arrays that involves the `ArrayBuffer` type
 
 1024\*1024
 
-Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you’d use regular arrays:
+Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you'd use regular arrays:
 
 `let ints = new Int16Array(10);`
 
@@ -4025,7 +5587,7 @@ Typed arrays are not true arrays, but they re-implement most array methods, so y
 
 Remember that typed arrays have fixed lengths, so the length property is read-only, and methods that change the length of the array (such as` push(), pop(), unshift(), shift(),` and `splice()`) are not implemented for typed arrays. Methods that alter the contents of an array without changing the length (such as `sort(), reverse()`, and `fill()`) are implemented.
 
-### Determine Endianess and DataView
+### Determine Endianess and DataView
 
     let littleEndian = new Int8Array(new Int32Array([1]).buffer)
 
@@ -4151,13 +5713,13 @@ Match “java” with one or more spaces before and after
 
 Match zero or more characters that are not open parens
 
-If you want to match repetitions of more complicated expressions, you’ll need to define a group with parentheses
+If you want to match repetitions of more complicated expressions, you'll need to define a group with parentheses
 
-Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
+Be careful when using the \* and ? repetition characters. Since these characters may match zero instances of whatever precedes them, they are allowed to match nothing.
 
 ### NON-GREEDY REPETITION
 
-It is also possible to specify that repetition should be done in a non-greedy way. Simply follow the repetition character or characters with a question mark: `??, +?, *?`, or even {1,5}?.
+It is also possible to specify that repetition should be done in a non-greedy way. Simply follow the repetition character or characters with a question mark: `??, +?, *?`, or even {1,5}?.
 
 **String**
 
@@ -4222,7 +5784,7 @@ A related use of parenthesized subexpressions is to allow you to refer back to a
 **Pattern**
 
 zero or more characters within single or double quotes. However, it does not  
- require the opening and closing quotes to match
+ require the opening and closing quotes to match
 
     /['"][^'"]*['"]/
 
@@ -4240,7 +5802,7 @@ match either the subexpression to the left or the subexpression to the right.
 
 (…)
 
-Grouping: group items into a single unit that can be used with \*, +, ?, |, and so on. Also remember the characters that match this group for use with later references
+Grouping: group items into a single unit that can be used with \*, +, ?, |, and so on. Also remember the characters that match this group for use with later references
 
 (?:…)
 
@@ -4250,7 +5812,7 @@ Note` (?:...)` syntax:
 
 In pattern` "/([Jj]ava(?:[Ss]cript)?)\sis\s(fun\w*)/`" `\2` refers to the text matched by `(fun\w*)` since `(?:[Ss]cript)?)` in not remembered.
 
-### SPECIFYING MATCH POSITION
+### SPECIFYING MATCH POSITION
 
 _regular expression anchors_ because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.
 
@@ -4262,7 +5824,7 @@ match the word “JavaScript” on a line by itself
 
 `/^JavaScript$/`
 
-To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what’s needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
+To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what's needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
 
 The element `\B` anchors the match to a location that is not a word boundary. Thus, the pattern `/\B[Ss]cript/` matches "JavaScript" and "postscript", but not "script" or "Scripting".
 
@@ -4296,7 +5858,7 @@ Flags are specified after the second / character of a regular expression literal
 
 g
 
-“global” — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String `match()` method and the `RegExp exec()` method in important ways.
+“global” — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String `match()` method and the `RegExp exec()` method in important ways.
 
 i
 
@@ -4320,7 +5882,7 @@ y
 
 “sticky”. should match at the beginning of a string or at the first character following the previous match
 
-### String Methods for Pattern Matching
+### String Methods for Pattern Matching
 
 ### SEARCH()
 
@@ -4350,7 +5912,7 @@ to replace quotation marks in a string with other characters:
 
 `'He said "stop"'.replace(quote, '«$1»')`
 
-‘He said «stop»’
+'He said «stop»'
 
 If your RegExp uses named capture groups, then you can refer to the matching text by name rather than by number:
 
@@ -4358,7 +5920,7 @@ If your RegExp uses named capture groups, then you can refer to the matching tex
 
 `'He said "stop"'.replace(quote, '«$<quotedText>»')`
 
-‘He said «stop»’
+'He said «stop»'
 
 Instead of passing a replacement string as the second argument to replace(), you can also pass a function that will be invoked to compute the replacement value.
 
@@ -4468,14 +6030,14 @@ Surprisingly, if you call `split()` with a RegExp delimiter and the regular expr
 
 \[“Testing”, “br/”,”1,2,3"\]
 
-### The RegExp Class
+### The RegExp Class
 
 The `RegExp()` constructor is useful when a regular expression is being dynamically created and thus cannot be represented with the regular expression literal syntax.
 
     let zipcode = new RegExp("\\d{5}", "g");
 
 `let exactMatch = /JavaScript/;`  
- `let caseInsensitive = new RegExp(exactMatch, "i");`
+ `let caseInsensitive = new RegExp(exactMatch, "i");`
 
 ### TEST()
 
@@ -4497,7 +6059,7 @@ Returns true or false by calling `exec()`.
 
     }
 
-### THE LASTINDEX PROPERTY AND REGEXP REUSE
+### THE LASTINDEX PROPERTY AND REGEXP REUSE
 
 The use of the `lastIndex` property with the g and y flags is a particularly awkward part of this API. When you use these flags, you need to be particularly careful when calling the `match(), exec()`, or `test()` methods because the behavior of these methods depends on `lastIndex`, and the value of `lastIndex` depends on what you have previously done with the RegExp object.
 
@@ -4511,7 +6073,7 @@ To find the index of all &lt;p&gt; tags within a string of HTML text:
 
     }
 
-If the html string contains at least one &lt;p&gt; tag, then it will loop forever. For each iteration of the loop, we’re creating a new RegExp object with `lastIndex` set to 0, so `exec()` always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we’re using the same RegExp object for each iteration of the loop.
+If the html string contains at least one &lt;p&gt; tag, then it will loop forever. For each iteration of the loop, we're creating a new RegExp object with `lastIndex` set to 0, so `exec()` always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we're using the same RegExp object for each iteration of the loop.
 
 On the other hand, sometimes reusing a RegExp object is the wrong thing to do. Suppose, for example, that we want to loop through all of the words in a dictionary to find words that contain pairs of double letters.
 
@@ -4537,7 +6099,7 @@ On the other hand, sometimes reusing a RegExp object is the wrong thing to do. S
 
 Because we set the g flag on the RegExp, the `lastIndex` property is changed after successful matches, and the `test()` method (which is based on `exec()`) starts searching for a match at the position specified by `lastIndex`. After matching the "pp" in "apple", `lastIndex` is 3, and so we start searching the word "book" at position 3 and do not see the "oo" that it contains.
 
-### Dates and Times
+### Dates and Times
 
     let now = new Date();
 
@@ -4600,9 +6162,9 @@ The static Date.now() method returns the current time as a timestamp and is help
 adds three months and two weeks to the current date:
 
 `let d = new Date();`  
- `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
+ `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
 
-### Formatting and Parsing Date Strings
+### Formatting and Parsing Date Strings
 
     let d = new Date(2020, 0, 1, 17, 10, 30);
 
@@ -4616,11 +6178,11 @@ adds three months and two weeks to the current date:
 
     d.toLocaleDateString()
 
-“1/1/2020”: ‘en-US’ locale
+“1/1/2020”: 'en-US' locale
 
     d.toLocaleTimeString()
 
-“5:10:30 PM”: ‘en-US’ locale
+“5:10:30 PM”: 'en-US' locale
 
     d.toISOString()
 
@@ -4670,7 +6232,7 @@ You should feel free to define your own Error subclasses that best encapsulate t
 
 HTTPError
 
-### JSON Serialization and Parsing
+### JSON Serialization and Parsing
 
 JavaScript supports JSON serialization and deserialization with the two functions `JSON.stringify()` and `JSON.parse().`
 
@@ -4678,7 +6240,7 @@ JavaScript supports JSON serialization and deserialization with the two function
 
     let s = JSON.stringify(o);
 
-s == ‘{“s”:””,”n”:0,”a”:\[true,false,null\]}’
+s == '{“s”:””,”n”:0,”a”:\[true,false,null\]}'
 
     let copy = JSON.parse(s);
 
@@ -4716,7 +6278,7 @@ If you need to re-create Date objects (or modify the parsed object inany other w
 
     });
 
-### The Console API
+### The Console API
 
 Console functions that print their arguments like console.log() have a little-known feature: if the first argument is a string that includes `%s, %i, %d, %f, %o, %O, or %c`, then this first argument is treated as format string, and the values of subsequent arguments are substituted into the string in place of the two-character % sequences.
 
@@ -4885,7 +6447,7 @@ The iterator method of an iterable object does not have a conventional name but 
 When you want to iterate though a “partially used” iterator:
 
 `let list = [1,2,3,4,5];`  
- `let iter = list[Symbol.iterator]();`
+ `let iter = list[Symbol.iterator]();`
 
 `let head = iter.next().value;`
 
@@ -4895,7 +6457,7 @@ head == 1
 
 tail == \[2,3,4,5\]
 
-### Implementing Iterable Objects
+### Implementing Iterable Objects
 
 we will implement the Range class one more time, making it iterable without relying on a generator.
 
@@ -5021,7 +6583,7 @@ Return an iterable object that filters the specified iterable, iterating only th
 
 Particularly useful when the values to be iterated are not the elements of a data structure, but the result of a computation.
 
-To create a generator, you must first define a generator function — defined with the keyword `function*` rather than `function`
+To create a generator, you must first define a generator function — defined with the keyword `function*` rather than `function`
 
 When you invoke a generator function, it does not actually execute the function body, but instead returns a generator object. This generator object is an iterator.
 
@@ -5145,7 +6707,7 @@ generator function that yields Fibonacci numbers
 
     }
 
-If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.
+If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.
 
 Use it in a `for/of` loop, however
 
@@ -5273,7 +6835,7 @@ Another problem with callbacks is that they can make handling errors difficult. 
 
 Note that Promises represent the future results of single asynchronous computations. They cannot be used to represent repeated asynchronous computations, however.
 
-We can’t use Promises to replace `setInterval()` because that function invokes a callback function repeatedly, which is something that Promises are just not designed to do.
+We can't use Promises to replace `setInterval()` because that function invokes a callback function repeatedly, which is something that Promises are just not designed to do.
 
 ### Using Promises
 
@@ -5295,13 +6857,13 @@ Unlike many event listeners, though, a Promise represents a single computation, 
 
     getJSON("/api/user/profile").then(displayUserProfile);
 
-### HANDLING ERRORS WITH PROMISES
+### HANDLING ERRORS WITH PROMISES
 
 Asynchronous operations, particularly those that involve networking, can typically fail in a number of ways, and robust code has to be written to handle the errors that will inevitably occur.
 
 `getJSON("/api/user/profile").then(displayUserProfile, handleProfileError);`
 
-if `getJSON()` runs normally, it passes its result to `displayUserProfile()`. If there is an error (the user is not logged in, the server is down, the user’s internet connection dropped, the request timed out, etc.), then `getJSON()` passes an Error object to `handleProfileError()`.
+if `getJSON()` runs normally, it passes its result to `displayUserProfile()`. If there is an error (the user is not logged in, the server is down, the user's internet connection dropped, the request timed out, etc.), then `getJSON()` passes an Error object to `handleProfileError()`.
 
 In practice, it is rare to see two functions passed to then(). There is a better and more idiomatic way of handling errors when working with Promises.
 
@@ -5357,7 +6919,7 @@ But although the initial Promise is fulfilled, the body of the response may not 
 
 There is a second `then()` in the chain, which means that the first invocation of the `then()` method must itself return a Promise. That is not how Promises work, however.
 
-When we write a chain of `.then()` invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the `then()` method returns a new Promise object. That new Promise object is not fulfilled until the function passed to `then()` is complete.
+When we write a chain of `.then()` invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the `then()` method returns a new Promise object. That new Promise object is not fulfilled until the function passed to `then()` is complete.
 
     fetch(theURL)       // task 1; returns promise 1
 
@@ -5369,11 +6931,11 @@ When we write a chain of `.then()` invocations, we are not registering multiple
 
 There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”
 
-fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
+fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
 
-“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
+“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
 
-Let’s consider:
+Let's consider:
 
     function c1(response) {
 
@@ -5421,19 +6983,19 @@ So if c returns a non-Promise, that return value becomes the value of p, p is fu
 
 At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the “resolved” state of a Promise means
 
-the Promise has become associated with, or “locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
+the Promise has become associated with, or “locked onto,” another Promise. We don't know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
 
-Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
+Let's bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
 
-### More on Promises and Errors
+### More on Promises and Errors
 
-With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
+With synchronous code, if you leave out error-handling code, you'll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the `.catch()` method makes it easy to handle errors when working with Promises.
 
 THE CATCH AND FINALLY METHODS
 
-The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
+The `.catch()` method of a Promise is simply a shorthand way to call `.then()` with null as the first argument and an error-handling callback as the second argument.
 
-Normal exceptions don’t work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
+Normal exceptions don't work with asynchronous code. The `.catch()` method of Promises is an alternative that does work for asynchronous code.
 
     fetch("/api/user/profile")
 
@@ -5497,27 +7059,27 @@ Normal exceptions don’t work with asynchronous code. The `.catch()` method of
 
 p1 is the Promise returned by the `fetch()` call
 
-p2 is the Promise returned by the first `.then()` call
+p2 is the Promise returned by the first `.then()` call
 
-c1 is the callback that we pass to that .`then()` call
+c1 is the callback that we pass to that .`then()` call
 
-p3 is the Promise returned by the second `.then()` call
+p3 is the Promise returned by the second `.then()` call
 
 c2 is the callback we pass to that call
 
-c3 is the callback that we pass to the `.catch()` call
+c3 is the callback that we pass to the `.catch()` call
 
-The first thing that could fail is the fetch() request itself. Let’s say p1 was rejected with a NetworkError object.
+The first thing that could fail is the fetch() request itself. Let's say p1 was rejected with a NetworkError object.
 
-We didn’t pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
+We didn't pass an error-handling callback function as the second argument to the `.then()` call, so p2 rejects as well with the same NetworkError object.
 
 Without a handler, though, p2 is rejected, and then p3 is rejected for the same reason.
 
 At this point, the c3 error-handling callback is called, and the NetworkError-specific code within it runs.
 
-There are a couple of things worth noting about this code. First, notice that the error object thrown with a regular, synchronous throw statement ends up being handled asynchronously with a `.catch()` method invocation in a Promise chain. This should make it clear why this shorthand method is preferred over passing a second argument to .`then()`, and also why it is so idiomatic to end Promise chains with a `.catch()` call.
+There are a couple of things worth noting about this code. First, notice that the error object thrown with a regular, synchronous throw statement ends up being handled asynchronously with a `.catch()` method invocation in a Promise chain. This should make it clear why this shorthand method is preferred over passing a second argument to .`then()`, and also why it is so idiomatic to end Promise chains with a `.catch()` call.
 
-it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If one of the stages in your Promise chain can fail with an error, and if the error is some kind of recoverable error that should not stop the rest of the chain from running, then you can insert a `.catch()` call in the chain, resulting in code that might look like this:
+it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If one of the stages in your Promise chain can fail with an error, and if the error is some kind of recoverable error that should not stop the rest of the chain from running, then you can insert a `.catch()` call in the chain, resulting in code that might look like this:
 
     startAsyncOperation()
 
@@ -5531,10 +7093,10 @@ it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If o
 
     .catch(logStageThreeAndFourErrors);
 
-If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
+If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
 
-Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
- the error stops propagating.
+Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
+ the error stops propagating.
 
 Sometimes, in complex network environments, errors can occur more or less at random, and it can be appropriate to handle those errors by simply retrying the asynchronous request.
 
@@ -5546,7 +7108,7 @@ Sometimes, in complex network environments, errors can occur more or less at ran
 
     .catch(displayDatabaseError);
 
-### Promises in Parallel
+### Promises in Parallel
 
 Sometimes,we want to execute a number of asynchronous operations in parallel. The function `Promise.all()` can do this. `Promise.all()` takes an array of Promise objects as its input and returns a Promise.
 
@@ -5563,7 +7125,7 @@ The returned Promise will be rejected if any of the input Promises are rejected.
     .catch(e => console.error(e));
 
 The Promise returned by `Promise.all()` rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, `Promise.allSettled()` takes an array of input  
- Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled" or "rejected." If the status is "fulfilled", then the object will also have a value property that gives the fulfillment value. And if the status is "rejected", then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
+ Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled" or "rejected." If the status is "fulfilled", then the object will also have a value property that gives the fulfillment value. And if the status is "rejected", then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
 
     Promise.allSettled([Promise.resolve(1), Promise.reject(2),3]).then(results => {
 
@@ -5579,13 +7141,13 @@ Occasionally, you may want to run a number of Promises at once but may only care
 
 ### Making Promises
 
-### Promises in Sequence
+### Promises in Sequence
 
-### async and await
+### async and await
 
 These new keywords dramatically simplify the use of Promises and allow us to write Promise-based, asynchronous code that looks like synchronous code that blocks while waiting for network responses or other asynchronous events.
 
-Asynchronous code can’t return a value or throw an exception the way that regular synchronous code can. And this is why Promises are designed the way the are. The value of a fulfilled Promise is like the return value of a synchronous function. And the value of a rejected Promise is like a value thrown by a synchronous function.
+Asynchronous code can't return a value or throw an exception the way that regular synchronous code can. And this is why Promises are designed the way the are. The value of a fulfilled Promise is like the return value of a synchronous function. And the value of a rejected Promise is like a value thrown by a synchronous function.
 
 `async` and `await` take efficient, Promise-based code and hide the Promises so that your asynchronous code can be as easy to read and as easy to reason about as inefficient, blocking, synchronous code.
 
@@ -5617,9 +7179,9 @@ The `getHighScore()` function is declared `async`, so it returns a Promise. And 
 
     displayHighScore(await getHighScore());
 
-### Awaiting Multiple Promises
+### Awaiting Multiple Promises
 
-Suppose that we’ve written our `getJSON()` function using async:
+Suppose that we've written our `getJSON()` function using async:
 
     async function getJSON(url) {
 
@@ -5651,7 +7213,7 @@ You can call fetch() on each URL to get an array of Promises:
 
     const promises = urls.map(url => fetch(url));
 
-We could now use` Promise.all()` to wait for all the Promises in the array to be fulfilled. But suppose we want the results of the first fetch as soon as they become available and don’t want to wait for all the URLs to be fetched.
+We could now use` Promise.all()` to wait for all the Promises in the array to be fulfilled. But suppose we want the results of the first fetch as soon as they become available and don't want to wait for all the URLs to be fetched.
 
     for(const promise of promises) {
 

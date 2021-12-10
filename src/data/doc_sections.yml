@@ -3,21 +3,21 @@ sections:
     - about
     - articles
     - audio
+    - career
     - community
     - content
+    - data-structures
     - docs
     - faq
-    - javascript
     - interact
+    - javascript
+    - interview
     - leetcode
     - projects
+    - python
     - quick-reference
     - react
-    - other-content
-    - tips
-    - tools
-    - python
-    - projects
-    - tutorials
     - reference
-    - career
+    - tools
+    - tips
+    - tutorials

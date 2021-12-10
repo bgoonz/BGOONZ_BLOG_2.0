@@ -113,10 +113,10 @@ Stackbit allows you to easily implement the basics of SEO in your Jamstack site 
 
 ### [](https://www.stackbit.com/docs/studio-guides/managing-seo/#pre_requisites)Pre-requisites
 
--   You'll need a Stackbit account, if you don't have one [you can create one for free](https://app.stackbit.com/register)
+-   You'll need a Stackbit account, if you don't have one [you can create one for free](https://app.stackbit.com/register)
 -   You'll need a site created with Stackbit that uses one of our themes
 
-If you prefer to use your own theme, check out ["How to enable SEO features in a custom theme on Stackbit"](https://www.stackbit.com/docs/reference/seo-tools/)
+If you prefer to use your own theme, check out ["How to enable SEO features in a custom theme on Stackbit"](https://www.stackbit.com/docs/reference/seo-tools/)
 
 ### [](https://www.stackbit.com/docs/studio-guides/managing-seo/#seo_overview)SEO overview
 
@@ -157,17 +157,17 @@ By default, the social tags (Facebook and Twitter) will be the same as the gener
 
 However, if you want to have different meta title and meta description tags for the page, on Facebook, and on Twitter, you can do that by editing them individually and saving the changes.
 
-Important to note! Images for Twitter must be less than 5MB in size. JPG, PNG, WEBP, and GIF formats are supported, but only the first frame of an animated GIF will be used. SVG is not supported.
+Important to note! Images for Twitter must be less than 5MB in size. JPG, PNG, WEBP, and GIF formats are supported, but only the first frame of an animated GIF will be used. SVG is not supported.
 
 #### Open Graph Type (og:type)
 
-In the social tab of Stackbit Studio's SEO tools you can find the `og:type` (open graph type tag) field.
+In the social tab of Stackbit Studio's SEO tools you can find the `og:type` (open graph type tag) field.
 
 ![Open Graph Type filed in SEO panel](https://www.stackbit.com/docs/images/seo-og-type.png)
 
-With `og:type` field you can help Facebook understand your content. Also, this tag impacts how your content shows up in Facebook news feed. Each page should have a single `og:type` tag, that means multiple `og:type` values are not possible.
+With `og:type` field you can help Facebook understand your content. Also, this tag impacts how your content shows up in Facebook news feed. Each page should have a single `og:type` tag, that means multiple `og:type` values are not possible.
 
-The most common `og:type` tag values are `website`, `article`, `profile` and `video`. Output example:
+The most common `og:type` tag values are `website`, `article`, `profile` and `video`. Output example:
 
 ```
 <meta property="og:type" content="website" />
@@ -176,17 +176,17 @@ The most common `og:type` tag values are `website`, `article`, `profile` a
 
 Copy
 
-For example, if you have a site with a home page, blog and about page, you can set `og:type` to `website` for your home page, `og:type` `article` for all posts and `og:type` `profile` for your about page. If you have a general website with no specific content, you can set `og:type` to `website` for all your site pages. Actually, if you don't define the `og:type` at all, Facebook will read it as `og:type` `website` by default.
+For example, if you have a site with a home page, blog and about page, you can set `og:type` to `website` for your home page, `og:type` `article` for all posts and `og:type` `profile` for your about page. If you have a general website with no specific content, you can set `og:type` to `website` for all your site pages. Actually, if you don't define the `og:type` at all, Facebook will read it as `og:type` `website` by default.
 
-You can see the full list of supported `og:type` values [here](https://ogp.me/#object-type).
+You can see the full list of supported `og:type` values [here](https://ogp.me/#object-type).
 
 #### Twitter Card Type (twitter:card)
 
-In the social tab of Stackbit Studio's SEO tools you can find the `twitter:card` field.
+In the social tab of Stackbit Studio's SEO tools you can find the `twitter:card` field.
 
 ![Twitter Card Type](https://www.stackbit.com/docs/images/twitter-card.png)
 
-The `twitter:card` is required and defines the type of card, which will be one of the following: `summary`, `summary_large_image`, `app`, or `player`. You can find more about the difference between Twitter Card types in the [Twitter's help for developers](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards).
+The `twitter:card` is required and defines the type of card, which will be one of the following: `summary`, `summary_large_image`, `app`, or `player`. You can find more about the difference between Twitter Card types in the [Twitter's help for developers](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards).
 
 ### [](https://www.stackbit.com/docs/studio-guides/managing-seo/#alt_image_tags)ALT image tags
 

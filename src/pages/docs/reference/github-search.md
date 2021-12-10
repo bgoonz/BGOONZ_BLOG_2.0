@@ -1,6 +1,6 @@
 ---
 title: Github Search
-weight: 1
+weight: 0
 excerpt: The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. Its designed to help you find the one result youre looking for (or maybe the few results youre looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.
 seo:
     title: "The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It's designed to help you find the one result you're looking for (or maybe the few results you're looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.:"
@@ -1063,7 +1063,7 @@ Default: `1` |
           "name": "ruby",
           "display_name": "Ruby",
           "short_description": "Ruby is a scripting language designed for simplified object-oriented programming.",
-          "description": "Ruby was developed by Yukihiro \"Matz\" Matsumoto in 1995 with the intent of having an easily readable programming language. It is integrated with the Rails framework to create dynamic web-applications. Ruby's syntax is similar to that of Perl and Python.",
+          "description": "Ruby was developed by Yukihiro \"Matz\" Matsumoto in 1995 with the intent of having an easily readable programming language. It is integrated with the Rails framework to create dynamic web-applications. Ruby's syntax is similar to that of Perl and Python.",
           "created_by": "Yukihiro Matsumoto",
           "released": "December 21, 1995",
           "created_at": "2016-11-28T22:03:59Z",

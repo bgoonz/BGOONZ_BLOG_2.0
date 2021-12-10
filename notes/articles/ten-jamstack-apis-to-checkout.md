@@ -24,21 +24,21 @@ template: docs
 
 # Extending JAMstack: 10 APIs and Tools to check out in 2020
 
-> The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let’s take a look at an extensive list of APIs and tools you can leverage.
+> The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let's take a look at an extensive list of APIs and tools you can leverage.
 
-The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let’s take a look at an extensive list of APIs and tools you can leverage.
+The ongoing conversation about JAMstack has moved from being just a stack for creating static sites to a stack for developing dynamic web applications. Let's take a look at an extensive list of APIs and tools you can leverage.
 
-The JAMstack ecosystem has evolved over the past few years. It’s been getting more popular as people have moved on from the mistaken notion that only static sites can be rendered using this architecture. We see developers and companies adopting it and creating fast and dynamic web applications with helpful services and APIs while maintaining the benefits of the JAMstack, which prioritizes performance, scalability and developer experience.
+The JAMstack ecosystem has evolved over the past few years. It's been getting more popular as people have moved on from the mistaken notion that only static sites can be rendered using this architecture. We see developers and companies adopting it and creating fast and dynamic web applications with helpful services and APIs while maintaining the benefits of the JAMstack, which prioritizes performance, scalability and developer experience.
 
 ## The "A" in the JAMstack
 
-The **A** in **JAMstack** stands for APIs. We no longer need to worry about dealing with traditional back-end - server-side operations can now be abstracted into reusable APIs and accessed over HTTPS with JavaScript. These can be third-party services or your custom function written as [Functions as a Service](https://en.wikipedia.org/wiki/Function_as_a_service) (serverless functions). Let’s explore a list of useful APIs and related tools that can make your JAMstack projects dynamic.
+The **A** in **JAMstack** stands for APIs. We no longer need to worry about dealing with traditional back-end - server-side operations can now be abstracted into reusable APIs and accessed over HTTPS with JavaScript. These can be third-party services or your custom function written as [Functions as a Service](https://en.wikipedia.org/wiki/Function_as_a_service) (serverless functions). Let's explore a list of useful APIs and related tools that can make your JAMstack projects dynamic.
 
 ## 10 APIs to check out in 2020
 
 ### 1\. [Algolia](https://www.algolia.com/)
 
-Have you ever thought of adding search functionality to your website before you start wondering what the best way to implement this feature is. Great news! [Algolia](https://www.algolia.com/) is a platform for all things related to the search and discovery experience. It is a hosted search engine capable of delivering real-time results from the first keystroke. Algolia’s API lets you quickly develop tailored, fast search and discovery experiences within your website.
+Have you ever thought of adding search functionality to your website before you start wondering what the best way to implement this feature is. Great news! [Algolia](https://www.algolia.com/) is a platform for all things related to the search and discovery experience. It is a hosted search engine capable of delivering real-time results from the first keystroke. Algolia's API lets you quickly develop tailored, fast search and discovery experiences within your website.
 
 ![Algolia](https://www.stackbit.com/images/1578919674-algoliasm.png)
 
@@ -68,7 +68,7 @@ FaunaDB is a globally-distributed, serverless, cloud database management system 
 
 ### 6\. [Netlify Forms](https://www.netlify.com/products/forms/)
 
-Netlify Forms is a great service for integrating forms into your JAMstack site. There is no JavaScript required, Netlify’s build bots make it work by parsing your HTML files directly at deploy time. This means that there's no need for you to make an API call or include extra JavaScript on your site. You only need to pass a `netlify` attribute or `data-netlify="true"` for JavaScript rendered forms to your `<form>` tag. Note that your site needs to be deployed to Netlify for this to work as you will be receiving all form submissions via your Netlify dashboard.
+Netlify Forms is a great service for integrating forms into your JAMstack site. There is no JavaScript required, Netlify's build bots make it work by parsing your HTML files directly at deploy time. This means that there's no need for you to make an API call or include extra JavaScript on your site. You only need to pass a `netlify` attribute or `data-netlify="true"` for JavaScript rendered forms to your `<form>` tag. Note that your site needs to be deployed to Netlify for this to work as you will be receiving all form submissions via your Netlify dashboard.
 
 ![Netlify Forms](https://www.stackbit.com/images/1578919725-netlifyformssm.png)
 

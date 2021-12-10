@@ -13,16 +13,16 @@ template: docs
 
 # Job Boards and The Hunt
 
-I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the…
+I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the…
 
 ---
 
-### Job Boards and The Hunt
+### Job Boards and The Hunt
 
-#### I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the process that you’ve already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you’ll get where your going in the blink of an eye!
+#### I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the process that you've already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you'll get where your going in the blink of an eye!
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 ---
 
@@ -32,15 +32,15 @@ As a candidate, there are key next steps that you can and should after every int
 
 **Send a thank you email within 24 business hours**
 
-**Do not miss this step!** It takes less than five minutes and can make the difference between you and another candidate. It also keeps you fresh in your interviewers’ memories. For example:
+**Do not miss this step!** It takes less than five minutes and can make the difference between you and another candidate. It also keeps you fresh in your interviewers' memories. For example:
 
 ‍
 
 _Hi (name),_
 
-> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team._
+> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team's priorities), I'm even more excited to bring my skills in (1–3 relevant skills) to the team._
 
-> _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out._
+> _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don't hesitate to reach out._
 
 > _Thank you for your consideration,_
 
@@ -48,23 +48,23 @@ _Hi (name),_
 
 **Follow up**
 
-Don’t wait for the company to reach out to you! Be proactive in showing your interest by checking in to see where you stand in the process. If a company indicates a deadline by which you will hear back, and the deadline has passed, follow-up!
+Don't wait for the company to reach out to you! Be proactive in showing your interest by checking in to see where you stand in the process. If a company indicates a deadline by which you will hear back, and the deadline has passed, follow-up!
 
 **Check your email and phone regularly  
 ‍\***  
-\*Don’t ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
+\*Don't ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
 
 ‍
 
 **Be prepared  
 ‍\***  
-\*You might be invited for another interview on short notice; review the description regularly so it doesn’t slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won’t be the only job you’ll need them for anyway!)
+\*You might be invited for another interview on short notice; review the description regularly so it doesn't slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won't be the only job you'll need them for anyway!)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>
 
 ---
 
-> Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
+> Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
 ### Update (remote work edition):
 
@@ -145,7 +145,7 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 -   <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
 -   <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
 
-**I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don’t have 15 minutes to make up a job experience every time I want to read a review.**
+**I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don't have 15 minutes to make up a job experience every time I want to read a review.**
 
 ---
 
@@ -156,13 +156,13 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-#### First off I am going to introduce a few different categories for those of you who are completely overwhelmed by the prospect of even selecting a job board let alone establishing a competitive presence on one. Here’s a few catorizations I think are worth distinguishing for one and other.
+#### First off I am going to introduce a few different categories for those of you who are completely overwhelmed by the prospect of even selecting a job board let alone establishing a competitive presence on one. Here's a few catorizations I think are worth distinguishing for one and other.
 
 ### 1. Interpersonal Connections
 
-Seek to leverage the connections you have with people you know and companies you want to work with. I know that that’s a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most <a href="https://www.investopedia.com/terms/r/returnoninvestment.asp" class="markup--anchor markup--p-anchor">RO</a>I efficient way to produce a desirable result. (Sorry introverts… 2020 may have been your year but this is our world. 😘)
+Seek to leverage the connections you have with people you know and companies you want to work with. I know that that's a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most <a href="https://www.investopedia.com/terms/r/returnoninvestment.asp" class="markup--anchor markup--p-anchor">RO</a>I efficient way to produce a desirable result. (Sorry introverts… 2020 may have been your year but this is our world. 😘)
 
-**If personal connections don’t come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
+**If personal connections don't come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
 
 1.  <span id="2139">Before or after submitting an application, **identify 1–3 professionals to reach out to** at the company to express interest in opportunities.</span>
 2.  <span id="fb8b">**Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.</span>
@@ -178,14 +178,14 @@ I am going to devote a lot of time to this one because it is the largest and mos
 
 LinkedIn now has <a href="https://news.linkedin.com/about-us#Statistics" class="markup--anchor markup--p-anchor">almost 740 million members</a> with over 55 million registered companies. (for comparison 12.3 million people visited Indeed in October, up 19.6 percent. <a href="http://www.monster.com/" class="markup--anchor markup--p-anchor">Monster.com</a> attracted 12.1 million people, and <a href="http://www.careerbuilder.com/" class="markup--anchor markup--p-anchor">CareerBuilder.com</a>attractedd 11.3 million in that same time) and LinkedIn is the most-used social media platform amongst Fortune 500 companies as it provides far more networking capabilities than pure recruitment.
 
-If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you _will_ be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
+If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you _will_ be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It's a developer's market; there's not enough people out there, especially in America.
 
-Here’s my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
+Here's my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
 <a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.linkedin.com/in/bryan-guner-046199128/"><strong>Bryan Guner - Web Developer - Freelance | LinkedIn</strong><br />
 <em>View Bryan Guner's profile on LinkedIn, the world's largest professional community. Bryan has 5 jobs listed on their…</em>www.linkedin.com</a><a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-Here’s A Linkedin Checklist I will be using before I return to the job hunt!
+Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 <a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d"><strong>LinkedIn</strong><br />
 <em>Personal and Contact Information:</em>www.notion.so</a><a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -205,34 +205,34 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 -   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
 -   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
 
-### Do’s:
+### Do's:
 
 **Spend a good portion of your time learning and reading. Your jobs teach you so much about an organization and the business.**
 
-**Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They’re not just doing this out of the kindness of their hearts, just like you… they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time…treat it like an interview.**
+**Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They're not just doing this out of the kindness of their hearts, just like you… they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time…treat it like an interview.**
 
-> _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
+> _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher's past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
 <a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong><br />
 <em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-> Engage in networking. I would recommend **finding and connecting with current attendee of any software development bootcamp**. They’re all (for the most part) programatically encouraged to connect network and engage in peer skill promotion (even if they have no idea of you skill level). If that weren’t enough reason, all of them come from a cohort of other individuals being instructed to do the same. Once you have a few in your network other’s will seek you out through Linkedin recommendations algorithm.
+> Engage in networking. I would recommend **finding and connecting with current attendee of any software development bootcamp**. They're all (for the most part) programatically encouraged to connect network and engage in peer skill promotion (even if they have no idea of you skill level). If that weren't enough reason, all of them come from a cohort of other individuals being instructed to do the same. Once you have a few in your network other's will seek you out through Linkedin recommendations algorithm.
 
-> **Note to prospective employers please just skip the next few sentences and don’t ask why…😅**
+> **Note to prospective employers please just skip the next few sentences and don't ask why…😅**
 
-> **Of the 214 people that vouched for me… I guestimate about only 80 actually know me in any respectable capacity, and of those, only probably 30 or so are familiar with my competency in the skills they endorsed. It all boils down to the strategies that bootcamps instill in their students. It’s the polar opposite of a zero sum game and they’re more than happy to exchange personal recommendations with you. They’re also far more driven to consistently engage with other members of the linkedin ecosystem because they need to a network to help compensate for their lack of a four year degree and the connections you make in that time.**
+> **Of the 214 people that vouched for me… I guestimate about only 80 actually know me in any respectable capacity, and of those, only probably 30 or so are familiar with my competency in the skills they endorsed. It all boils down to the strategies that bootcamps instill in their students. It's the polar opposite of a zero sum game and they're more than happy to exchange personal recommendations with you. They're also far more driven to consistently engage with other members of the linkedin ecosystem because they need to a network to help compensate for their lack of a four year degree and the connections you make in that time.**
 
 <figure><img src="https://cdn-images-1.medium.com/max/400/1*E519LWHx8W3CXw6c5FXgqg.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/1000/1*AUDMmyZrugM3SSy_0axgfQ.jpeg" class="graf-image" /></figure>
 
-> Build your personal brand. Developing your brand will not only help you attract clients or recruits if you decide to start a business, but will also help you find great job opportunities. You can post anything you take pride in so long as it’s fairly professional. Definitely make use of the featured section to showcase your work.
+> Build your personal brand. Developing your brand will not only help you attract clients or recruits if you decide to start a business, but will also help you find great job opportunities. You can post anything you take pride in so long as it's fairly professional. Definitely make use of the featured section to showcase your work.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*DlqWg94B670bgin5STdJNg.png" class="graf-image" /></figure>### Don’t:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*DlqWg94B670bgin5STdJNg.png" class="graf-image" /></figure>### Don't:
 
-#### Don’t Use LinkedIn’s Default Headline
+#### Don't Use LinkedIn's Default Headline
 
 LinkedIn automatically populates your headline with your current job title and company name. I hope it goes without saying… but as a rule avoid signaling to prospective employers the depths of your laziness by using any stock responses LinkedIn provides you.
 
-#### Don’t Go Ham On Keyword Placment
+#### Don't Go Ham On Keyword Placment
 
 Placing keywords strategically into your LinkedIn profile is virtually the only way to ensure being flagged by search algorithms as a potential candidate.You could be forgiven for being tempted to heed the advice of your inner lizard brain, and just stuffing your profile with buzzwords but this will likely trigger a spam account checker and result in worse outcomes than the absence of said keywords.
 
@@ -240,27 +240,27 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 ---
 
-### Why it matters*¿*
+### Why it matters*¿*
 
 #### Are We Really All Connected by Just Six Degrees of Separation?
 
-Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you’re effectively connected to the Queen of England, Jim Belushi or even yo mamma.
+Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
 ---
 
-### Back to the other Job Board Niches:
+### Back to the other Job Board Niches:
 
 **_3. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
-**_4. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
+**_4. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn't have otherwise come across.
 
-**_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
+**_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you're not looking for traditional full-time employment or remote work.
 
 -   <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-### Lastly Here’s A Github Profile Guide:
+### Lastly Here's A Github Profile Guide:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*0nYkgla6oc0uImSZJElpdw.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*wIhqnhU5zoyIr1GwZ2UTNA.jpeg" class="graf-image" /></figure>Medium is causing strange formatting… they normally form a grid!
 
@@ -418,7 +418,7 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 -   [**Templatemo**](https://templatemo.com/tag/portfolio)
 -   [**One Page Love**](https://onepagelove.com/templates/free-templates)
 
-1. Once you’ve decided on a template, download it to your machine.
+1. Once you've decided on a template, download it to your machine.
 2. Rename the folder `{$yourGitHubUserName}.github.io`, (e.g. if my GitHub
    username were QueenOfTheBeyhive, I would name my repo
    `QueenOfTheBeyhive.github.io`). This will be important for deployment to GitHub
@@ -517,12 +517,12 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 
 **10:22:12 From Alexis Kozak to Everyone : Scenario 1**
 
--   It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that’s currently having to maintain a very manual workaround. What do you do?
+-   It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that's currently having to maintain a very manual workaround. What do you do?
 
 **10:24:40 From Alexis Kozak to Everyone : Scenario 2**
 
--   An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn’t right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
+-   An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn't right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
 
 **10:28:11 From Alexis Kozak to Everyone : Scenario 3**
 
--   A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You’ve implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you’re included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you’re told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn’t work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?
+-   A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You've implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you're included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you're told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn't work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?

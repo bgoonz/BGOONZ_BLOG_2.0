@@ -23,105 +23,798 @@ seo:
         - name: 'twitter:description'
           value: This is the My Sites page
 template: docs
-weight: 1
+weight: 0
 ---
 
-<iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="1600px" width="100%" style="zoom:0.75;align-self:center;"></iframe>
+<iframe src="https://random-static-html-deploys.netlify.app/my-websites/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 
-2.  [Learn Redux](https://learning-redux42.netlify.app/)
 
-3.  [ Data Structures Website ](https://trusting-dijkstra-4d3b17.netlify.app)
+<h1> Links </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://links4242.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-4.  [Web-Dev-Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/intro-js2.html)
 
-5.  [ Recursion ](https://zen-lamport-5aab2c.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-6.  [React Documentation Site](https://csb-ov0d1-bgoonz.vercel.app/)
+<h1> Wikipedia Viewer</h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/wikipedia-viewer.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-7.  [ Blogs-from-webdevhub ](https://amazing-hodgkin-33aea6.netlify.app)
 
-8.  [ Realty Website Demo ](https://angry-fermat-dcf5dd.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-9.  [ Best-Prac & Tools ](https://boring-heisenberg-f425d8.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://web-dev-resource-hub.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-10. [site-analysis](https://site-analysis.netlify.app/)
 
-11. [ a/AOpen Notes ](https://clever-bartik-b5ba19.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-12. [ Iframe Embed Playground ](https://code-playground.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-13. [ Triggered Effects Guitar Platform ](https://condescending-lewin-c96727.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://learning-redux42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>/
 
-14. [ Live Form ](https://determined-dijkstra-666766.netlify.app)
 
-15. [ Interview Questions ](https://determined-dijkstra-ee7390.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-16. [ Resources Compilation ](https://eager-northcutt-456076.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-17. [ React Blog Depreciated ](https://ecstatic-jang-593fd1.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://trusting-dijkstra-4d3b17.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-18. [ MihirBeg.com ](https://eloquent-sammet-ba1810.netlify.app)
 
-19. [ Embeded Html Projects ](https://embedable-content.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-20. [ Cheat Sheets ](https://festive-borg-e4d856.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-21. [ Early Version Of WebDevHub ](https://focused-pasteur-0faac8.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>/intro-js2.html
 
-22. [ My Gists ](https://gists42.netlify.app)
 
-23. [ DS-Algo-Links ](https://gracious-raman-474030.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-24. [ Video Chat App ](https://happy-mestorf-0f8e75.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-25. [ Ciriculumn ](https://hungry-shaw-30d504.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://zen-lamport-5aab2c.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-26. [ Cheat Sheets ](https://inspiring-jennings-d14689.netlify.app)
 
-27. [ Links ](https://links4242.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-28. [ Medium Articles ](https://modest-booth-4e17df.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-29. [ NextJS Blog Template ](https://modest-torvalds-34afbc.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://csb-ov0d1-bgoonz.vercel.app/
 
-30. [ React Demo ](https://modest-varahamihira-772b59.netlify.app)
 
-31. [ Ecomerce Norwex V1 ](https://nervous-swartz-0ab2cc.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-32. [ Gifs ](https://objective-borg-a327cd.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-33. [ Excel2HTML ](https://pedantic-wing-adbf82.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://amazing-hodgkin-33aea6.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-34. [ Data Structures Site ](https://pensive-meitner-1ea8c4.netlify.app)
 
-35. [ Portfolio ](https://portfolio42.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-36. [ Page Templates ](https://priceless-shaw-86ccb2.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-37. [ Photo Gallary ](https://quizzical-mcnulty-fa09f2.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://angry-fermat-dcf5dd.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-38. [ Coffee Website ](https://relaxed-bhaskara-dc85ec.netlify.app)
 
-39. [ Awesome Resources ](https://romantic-hamilton-514b79.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-40. [ Cheat Sheets ](https://silly-lichterman-b22b5f.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-41. [ Link City ](https://silly-shirley-ec955e.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://boring-heisenberg-f425d8.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
 
-42. [ VSCODE Extensions ](https://stoic-mccarthy-2c335f.netlify.app)
 
-43. [ webdevhub manual attempt ](https://web-dev-resource-hub-manual-deploy.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-44. [ Norwex Resources ](https://wonderful-pasteur-392fbe.netlify.app)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-45. [idk ](https://zen-bhabha-bd046f.netlify.app)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://site-analysis.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>/
 
-46. [heroku bare bones template](https://getting-started42.herokuapp.com/)
 
-47. [bad reads](https://bad-reads42.herokuapp.com/)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-48. [docusaurus](https://documentation-site-react2.vercel.app/)
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
 
-49. [stackbit](https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326)
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://clever-bartik-b5ba19.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://code-playground.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://condescending-lewin-c96727.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://determined-dijkstra-666766.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://eager-northcutt-456076.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://ecstatic-jang-593fd1.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://eloquent-sammet-ba1810.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://embedable-content.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://festive-borg-e4d856.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://focused-pasteur-0faac8.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://gists42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://gracious-raman-474030.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://happy-mestorf-0f8e75.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://hungry-shaw-30d504.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://inspiring-jennings-d14689.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://links4242.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://modest-booth-4e17df.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://modest-torvalds-34afbc.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://modest-varahamihira-772b59.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://nervous-swartz-0ab2cc.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://objective-borg-a327cd.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://pedantic-wing-adbf82.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://pensive-meitner-1ea8c4.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+ 
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sanity-gatsby-portfolio-3-web-4dmiq19t.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+ <br>
+ 
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://project-portfolio42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://portfolio42.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://priceless-shaw-86ccb2.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://quizzical-mcnulty-fa09f2.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://relaxed-bhaskara-dc85ec.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://romantic-hamilton-514b79.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://silly-lichterman-b22b5f.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://silly-shirley-ec955e.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://stoic-mccarthy-2c335f.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://web-dev-resource-hub-manual-deploy.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https
+://wonderful-pasteur-392fbe.netlify.app/" height="800px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" 
+       frameborder="0" ></iframe>
+
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>

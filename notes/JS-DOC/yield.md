@@ -31,7 +31,7 @@ If an optional value is passed to the generator's `next()` method, that value be
 
 Between the generator's code path, its `yield` operators, and the ability to specify a new starting value by passing it to [`Generator.prototype.next()`](../global_objects/generator/next), generators offer enormous power and control.
 
-**Warning:** Unfortunately, `next()` is asymmetric, but that can’t be helped: It always sends a value to the currently suspended `yield`, but returns the operand of the following `yield`.
+**Warning:** Unfortunately, `next()` is asymmetric, but that can't be helped: It always sends a value to the currently suspended `yield`, but returns the operand of the following `yield`.
 
 ## Examples
 

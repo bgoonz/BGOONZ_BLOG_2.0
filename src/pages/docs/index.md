@@ -36,8 +36,8 @@ excerpt: docs quick reference
 # Actual Docs:
 
 <br>
-
 <br>
+
        <div id="search" />
 <br>
                <div id="search" className="inner"></div>
@@ -45,11 +45,21 @@ excerpt: docs quick reference
 <h1>  Docs</h1>
 <br>
 
-<iframe class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1600px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
+<hr>
+<br>
+
+<h1>Gitpod Docs</h1>
+<br>
+
+<iframe class="inner" src="https://archive-42.github.io/my-docs-gitpod-html/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+
+<br>
+<hr>
+<br>
+
 
 ---
 

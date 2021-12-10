@@ -1,6 +1,6 @@
 ---
 title: The-package-lock.json-file
-weight: 1
+weight: 0
 seo:
     title: ''
     description: ''

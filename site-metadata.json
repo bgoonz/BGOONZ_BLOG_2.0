@@ -49,6 +49,14 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
+                    },
+                    {
+                        "label": "JavaScript",
+                        "url": "javascript",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
                     }
                 ],
                 "type": "action_menu"
@@ -106,6 +114,25 @@
                     }
                 ],
                 "new_window": true
+            },
+            {
+                "label": "Job Search",
+                "url": "/docs/interview/job-search-nav/",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [
+                    {
+                        "label": "Job Boards",
+                        "url": "interview/job-boards",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ]
             },
             {
                 "label": "Archive",
@@ -170,11 +197,11 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "https://github.com/bgoonz/UsefulResourceRepo2.0"
+                "url": "docs/tools/Archive"
             },
             {
                 "label": "Projects",
-                "url": "https://project-portfolio42.netlify.app/",
+                "url": "docs/projects",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
@@ -236,7 +263,7 @@
                     {
                         "label": "DTW-Guitar-FX-Automation",
                         "url": "https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering",
-                        "style": "link",
+                        "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
@@ -245,7 +272,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "External Nav",
+                "label": "External",
                 "url": "https://bgoonz-blog-v3-0.netlify.app/",
                 "style": "primary",
                 "icon_class": "dev",
@@ -474,7 +501,7 @@
         "links": [
             {
                 "label": "BLM",
-                "url": "https://optimistic-lewin-8586ae.netlify.app/blm.zip",
+                "url": "https://random-static-html-deploys.netlify.app/blm.html",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": true,
