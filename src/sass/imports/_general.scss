@@ -46,8 +46,8 @@ iframe {
     border: 1px dotted black;
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
-    width: 1200px;
-    resize: both;
+    width: 1000px;
+    resize: both!important;
     overflow: scroll;
 }
 
