@@ -22,13 +22,13 @@ Introduction to python taught through example problems. Solutions are included i
 
 #### Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of this page for you to practice and refactor.
 
-### Python Practice Problems
+### Python Practice Problems
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" /></figure>
 
 ---
 
-#### Here are some other articles for reference if you need them:
+#### Here are some other articles for reference if you need them:
 
 <a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong><br />
 <em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -38,7 +38,7 @@ Introduction to python taught through example problems. Solutions are included i
 
 ---
 
-### Here are the problems without solutions for you to practice with:
+### Here are the problems without solutions for you to practice with:
 
 ---
 
@@ -74,7 +74,7 @@ Extras:
 
 ### Problem 4
 
-Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a divisor is, it is a number that divides evenly into another number.
+Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don't know what a divisor is, it is a number that divides evenly into another number.
 
 For example, `13` is a divisor of `26` because `26 / 13` has no remainder.)
 
@@ -94,13 +94,13 @@ Bonus:
 
 Ask the user for a string and print out whether this string is a `palindrome` or not. (A palindrome is a string that reads the same forwards and backwards.)
 
-> Here’s 5 ways to reverse a string (courtesy of <a href="https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/" class="markup--anchor markup--pullquote-anchor">geeksforgeeks</a>)
+> Here's 5 ways to reverse a string (courtesy of <a href="https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/" class="markup--anchor markup--pullquote-anchor">geeksforgeeks</a>)
 
 ---
 
 ### Problem 7
 
-Let’s say I give you a list saved in a variable: a = `[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]`.
+Let's say I give you a list saved in a variable: a = `[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]`.
 
 Write one line of Python that takes this list a and makes a new list that has only the `even` elements of this list in it.
 
@@ -156,8 +156,8 @@ Write a program to determine whether a given input is a `Toeplitz` matrix.
 Given a positive integer `N`, find the smallest number of steps it will take to reach `1`.
 
 There are two kinds of permitted steps:  
- — -&gt; You may decrement N to N — 1.  
- — -&gt; If `a * b = N`, you may decrement `N to the larger of a and b`.
+ — -&gt; You may decrement N to N — 1.  
+ — -&gt; If `a * b = N`, you may decrement `N to the larger of a and b`.
 
 For example, given 100, you can reach 1 in 5 steps with the following route:  
 `100 -> 10 -> 9 -> 3 -> 2 -> 1.`
@@ -176,7 +176,7 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
 

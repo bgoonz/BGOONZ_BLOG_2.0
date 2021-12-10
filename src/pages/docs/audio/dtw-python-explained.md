@@ -12,7 +12,7 @@ template: docs
 
 # Dynamic Time Warping Algorithm Explained (Python)
 
-In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is *Dynamic Time Warping (DTW)*. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.
+In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is *Dynamic Time Warping (DTW)*. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.
 
 As part of Walmart Real Estate team, I am working on understanding the energy consumption pattern of different assets like refrigeration units, dehumidifiers, lighting, etc. installed in the retail stores.This will help in improving quality of data collected from IoT sensors, detect and prevent faults in the systems and improve energy consumption forecasting and planning. This analysis involves time series of energy consumption during different times of a day i.e. different days of a week, weeks of a month and months of a year. Time series forecasting often gives bad predictions when there is sudden shift in phase of the energy consumption due to unknown factors. For example if the defrost schedule, items refresh routine for a refrigeration unit, or weather changes suddenly and are not captured to explain the phase shifts of energy consumption, it is important to detect these change points.
 
@@ -30,7 +30,7 @@ The peak at 2 am got shifted to 4 am. DTW when run recursively for consecutive d
 
 The training data can be restricted to Tuesday onwards to improve the prediction of energy consumption in future in this case as phase shift was detected on Tuesday. The setup improved the predictions substantially ( > 50%) for the stores for which the reason of shift was not known. This was not possible by traditional ways of one to one comparison of signals.
 
-In this blog, I will explain how DTW algorithm works and throw some light on the calculation of the similarity score between two time series and its implementation in python. Most of the contents in this blog have been sourced from this [paper](https://ieeexplore.ieee.org/document/1163055), also mentioned in the references section below.
+In this blog, I will explain how DTW algorithm works and throw some light on the calculation of the similarity score between two time series and its implementation in python. Most of the contents in this blog have been sourced from this [paper](https://ieeexplore.ieee.org/document/1163055), also mentioned in the references section below.
 
 2\. Why do we need DTW ?
 
@@ -46,7 +46,7 @@ DTW compares amplitude of first signal at time T with amplitude of second signal
 
 ![](https://miro.medium.com/max/630/1*6Yzt8SiQ-kTRx8pFqDZXkw.png)
 
-3. How it works?
+3. How it works?
 
 Let us take two time series signals P and Q
 
@@ -58,7 +58,7 @@ Series 2 (Q): 1,7,3,4,1,10,5,4,7,4
 
 ![](https://miro.medium.com/max/630/1*x8-vv9W3cfmdd0mW_1MLTg.png)
 
-*Step 1 :* Empty Cost Matrix Creation
+*Step 1 :* Empty Cost Matrix Creation
 
 Create an empty cost matrix M with x and y labels as amplitudes of the two series to be compared.
 
@@ -124,7 +124,7 @@ The full table will look like this:
 
 ![](https://miro.medium.com/max/630/1*7pphf0WWYElhtohnQPFPNA.png)
 
-*Step 3:* Warping Path Identification
+*Step 3:* Warping Path Identification
 
 Identify the warping path starting from top right corner of the matrix and traversing to bottom left. The traversal path is identified based on the neighbour with minimum value.
 
@@ -154,7 +154,7 @@ Let this warping path series be called as d.
 
 d = [15,15,14,13,11,9,8,8,4,4,3,0]
 
-*Step 4:* Final Distance Calculation
+*Step 4:* Final Distance Calculation
 
 Time normalised distance , D
 
@@ -200,7 +200,7 @@ In this post, we will go over the mathematics behind DTW. Then, two illustrative
 
 # Formulation
 
-Let's assume we have two sequences like the following:
+Let's assume we have two sequences like the following:
 
 _𝑋=𝑥[1], 𝑥[2], ..., x[i], ..., x[n]_
 
@@ -208,7 +208,7 @@ _Y=y[1], y[2], ..., y[j], ..., y[m]_
 
 The sequences 𝑋 and 𝑌 can be arranged to form an 𝑛-by-𝑚 grid, where each point (𝑖, j) is the alignment between 𝑥[𝑖] and 𝑦[𝑗].
 
-A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the *distance* between them. 𝑊 is a sequence of grid points (𝑖, 𝑗). We will see an example of the warping path later.
+A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the *distance* between them. 𝑊 is a sequence of grid points (𝑖, 𝑗). We will see an example of the warping path later.
 
 ## Warping Path and DTW distance
 
@@ -256,7 +256,7 @@ In addition to the above three constraints, there are other less frequent condit
 
 -   Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
 
-An acceptable warping path has combinations of chess king moves that are:
+An acceptable warping path has combinations of chess king moves that are:
 
 -   Horizontal moves: (𝑖, 𝑗) → (𝑖, 𝑗+1)
 -   Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
@@ -276,32 +276,32 @@ savefig_options = dict(format="png", dpi=300, bbox_inches="tight")# Computation 
 from scipy.spatial.distance import euclidean\
 from fastdtw import fastdtw
 
-Let's define a method to compute the accumulated cost matrix *D* for the warp path. The cost matrix uses the Euclidean distance to calculate the distance between every two points. The methods to compute the Euclidean distance matrix and accumulated cost matrix are defined below:
+Let's define a method to compute the accumulated cost matrix *D* for the warp path. The cost matrix uses the Euclidean distance to calculate the distance between every two points. The methods to compute the Euclidean distance matrix and accumulated cost matrix are defined below:
 
 # Example 1
 
-In this example, we have two sequences *x* and *y* with different lengths.
+In this example, we have two sequences *x* and *y* with different lengths.
 
 # Create two sequences\
 
 x = [3, 1, 2, 2, 1]\
 y = [2, 0, 0, 3, 3, 1, 0]
 
-We cannot calculate the Euclidean distance between *x* and *y* since they don't have equal lengths.
+We cannot calculate the Euclidean distance between *x* and *y* since they don't have equal lengths.
 
 ![](https://miro.medium.com/max/60/1*ADzLGLGGq13onO72EO_ZpQ.png?q=20)
 
 ![](https://miro.medium.com/max/630/1*ADzLGLGGq13onO72EO_ZpQ.png)
 
-Example 1: Euclidean distance between x and y (is it possible? 🤔) (Image by Author)
+Example 1: Euclidean distance between x and y (is it possible? 🤔) (Image by Author)
 
 # Compute DTW distance and warp path
 
-Many Python packages calculate the DTW by just providing the sequences and the type of distance (usually Euclidean). Here, we use a popular Python implementation of DTW that is [FastDTW](https://github.com/slaypni/fastdtw) which is an approximate DTW algorithm with lower time and memory complexities [2].
+Many Python packages calculate the DTW by just providing the sequences and the type of distance (usually Euclidean). Here, we use a popular Python implementation of DTW that is [FastDTW](https://github.com/slaypni/fastdtw) which is an approximate DTW algorithm with lower time and memory complexities [2].
 
 dtw_distance, warp_path = fastdtw(x, y, dist=euclidean)
 
-Note that we are using [SciPy](https://pypi.org/project/scipy/)'s distance function *Euclidean* that we imported earlier. For a better understanding of the warp path, let's first compute the accumulated cost matrix and then visualize the path on a grid. The following code will plot a heatmap of the accumulated cost matrix.
+Note that we are using [SciPy](https://pypi.org/project/scipy/)'s distance function *Euclidean* that we imported earlier. For a better understanding of the warp path, let's first compute the accumulated cost matrix and then visualize the path on a grid. The following code will plot a heatmap of the accumulated cost matrix.
 
 cost_matrix = compute_accumulated_cost_matrix(x, y)
 
@@ -331,7 +331,7 @@ print(np.flipud(cost_matrix)) # Flipping the cost matrix for easier comparison w
 
 The cost matrix is printed above has similar values to the heatmap.
 
-Now let's plot the two sequences and connect the mapping points. The code to plot the DTW distance between *x* and *y* is given below.
+Now let's plot the two sequences and connect the mapping points. The code to plot the DTW distance between *x* and *y* is given below.
 
 Example 1: Python code to plot (and save) the DTW distance between x and y
 
@@ -339,7 +339,7 @@ Example 1: Python code to plot (and save) the DTW distance between x and y
 
 ![](https://miro.medium.com/max/630/1*bF9I-49iVW9b2MvDbRBZxA.png)
 
-Example 1: DTW distance between x and y (Image by Author)
+Example 1: DTW distance between x and y (Image by Author)
 
 # Example 2
 
@@ -347,7 +347,7 @@ In this example, we will use two sinusoidal signals and see how they will be mat
 
 Example 2: Generate two sinusoidal signals (x1 and x2) with different lengths
 
-Just like Example 1, let's calculate the DTW distance and the warp path for *x1 *and *x2 *signals using FastDTW package.
+Just like Example 1, let's calculate the DTW distance and the warp path for *x1 *and *x2 *signals using FastDTW package.
 
 distance, warp_path = fastdtw(x1, x2, dist=euclidean)
 
@@ -357,7 +357,7 @@ Example 2: Python code to plot (and save) the DTW distance between x1 and x2
 
 ![](https://miro.medium.com/max/630/1*Bzubc5uGFXd_-Sj7W_QFjg.png)
 
-Example 2: DTW distance between x1 and x2 (Image by Author)
+Example 2: DTW distance between x1 and x2 (Image by Author)
 
 As can be seen in above figure, the DTW distance between the two signals is particularly powerful when the signals have similar patterns. The extrema (maximum and minimum points) between the two signals are correctly mapped. Moreover, unlike Euclidean distance, we may see many-to-one mapping when DTW distance is used, particularly if the two signals have different lengths.
 
@@ -369,30 +369,30 @@ The issue is around the head and tail of time-series that do not properly match.
 
 DTW is an algorithm to find an optimal alignment between two sequences and a useful distance metric to have in our toolbox. This technique is useful when we are working with two non-linear sequences, particularly if one sequence is a non-linear stretched/shrunk version of the other. The warping path is a combination of "chess king" moves that starts from the head of two sequences and ends with their tails.
 
-You can find the Jupyter notebook for this blog post [here](https://github.com/e-alizadeh/medium/blob/master/notebooks/intro_to_dtw.ipynb). Thanks for reading!
+You can find the Jupyter notebook for this blog post [here](https://github.com/e-alizadeh/medium/blob/master/notebooks/intro_to_dtw.ipynb). Thanks for reading!
 
 # References
 
-[1] Donald J. Berndt and James Clifford, [Using Dynamic Time Warping to Find Patterns in Time Series](https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf), 3rd International Conference on Knowledge Discovery and Data Mining
+[1] Donald J. Berndt and James Clifford, [Using Dynamic Time Warping to Find Patterns in Time Series](https://www.aaai.org/Papers/Workshops/1994/WS-94-03/WS94-03-031.pdf), 3rd International Conference on Knowledge Discovery and Data Mining
 
-[2] Salvador, S. and P. Chan, [FastDTW: Toward accurate dynamic time warping in linear time and space](https://cs.fit.edu/~pkc/papers/tdm04.pdf)(2007), Intelligent Data Analysis
+[2] Salvador, S. and P. Chan, [FastDTW: Toward accurate dynamic time warping in linear time and space](https://cs.fit.edu/~pkc/papers/tdm04.pdf)(2007), Intelligent Data Analysis
 
-[3] Diego Furtado Silva, *et al.*, [On the effect of endpoints on dynamic time warping](https://core.ac.uk/display/147806669) (2016), SIGKDD Workshop on Mining and Learning from Time Series
+[3] Diego Furtado Silva, *et al.*, [On the effect of endpoints on dynamic time warping](https://core.ac.uk/display/147806669) (2016), SIGKDD Workshop on Mining and Learning from Time Series
 
 # Useful Links
 
-[1] <https://nipunbatra.github.io/blog/ml/2014/05/01/dtw.html>
+[1] <https://nipunbatra.github.io/blog/ml/2014/05/01/dtw.html>
 
-[2] <https://databricks.com/blog/2019/04/30/understanding-dynamic-time-warping.html>
+[2] <https://databricks.com/blog/2019/04/30/understanding-dynamic-time-warping.html>
 
-Sounds like time traveling or some kind of future technic, however, it is not. Dynamic Time Warping is used to compare the similarity or calculate the distance between two arrays or time series with different length.
+Sounds like time traveling or some kind of future technic, however, it is not. Dynamic Time Warping is used to compare the similarity or calculate the distance between two arrays or time series with different length.
 
 Suppose we want to calculate the distance of two equal-length arrays:
 
 a = [1, 2, 3]\
 b = [3, 2, 2]
 
-How to do that? One obvious way is to match up `a` and `b` in 1-to-1 fashion and sum up the total distance of each component. This sounds easy, but what if `a` and `b` have different lengths?
+How to do that? One obvious way is to match up `a` and `b` in 1-to-1 fashion and sum up the total distance of each component. This sounds easy, but what if `a` and `b` have different lengths?
 
 a = [1, 2, 3]\
 b = [2, 2, 2, 3, 4]
@@ -407,7 +407,7 @@ Yes, in a lot of scenarios DTW is playing a key role.
 
 ## Sound Pattern Recognition
 
-One use case is to detect the sound pattern of the same kind. Suppose we want to recognise the voice of a person by analysing his sound track, and we are able to collect his sound track of saying `Hello` in one scenario. However, people speak in the same word in different ways, what if he speaks hello in a much slower pace like `Heeeeeeelloooooo` , we will need an algorithm to match up the sound track of different lengths and be able to identify they come from the same person.
+One use case is to detect the sound pattern of the same kind. Suppose we want to recognise the voice of a person by analysing his sound track, and we are able to collect his sound track of saying `Hello` in one scenario. However, people speak in the same word in different ways, what if he speaks hello in a much slower pace like `Heeeeeeelloooooo` , we will need an algorithm to match up the sound track of different lengths and be able to identify they come from the same person.
 
 ![](https://miro.medium.com/max/60/1*gi1TtOqFCsb2M_U7iAUAag.png?q=20)
 
@@ -446,11 +446,11 @@ In general, DTW is a method that calculates an optimal match between two given s
 -   Every index from the first sequence must be matched with one or more indices from the other sequence and vice versa
 -   The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
 -   The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
--   The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
+-   The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
 
 The optimal match is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
 
-To summarise is that *head and tail must be positionally matched, no cross-match and no left out.*
+To summarise is that *head and tail must be positionally matched, no cross-match and no left out.*
 
 # Implementation
 
@@ -460,7 +460,7 @@ The implementation of the algorithm looks extremely concise:
 
 ![](https://miro.medium.com/max/630/1*fGr2Mj7fEB7tEyqAzcp2LA.png)
 
-where `DTW[i, j]` is the distance between `s[1:i]` and `t[1:j]` with the best alignment.
+where `DTW[i, j]` is the distance between `s[1:i]` and `t[1:j]` with the best alignment.
 
 The key lies in:
 
@@ -468,7 +468,7 @@ DTW[i, j] := cost + minimum(DTW[i-1, j ],\
  DTW[i , j-1],\
  DTW[i-1, j-1])
 
-Which is saying that the cost of between two arrays with length `i and j` equals *the distance between the tails + the minimum of cost in arrays with length *`*i-1, j*`_ , _`*i, j-1*`_ , and _`*i-1, j-1*`_ ._
+Which is saying that the cost of between two arrays with length `i and j` equals *the distance between the tails + the minimum of cost in arrays with length *`*i-1, j*`_ , _`*i, j-1*`_ , and _`*i-1, j-1*`_ ._
 
 Put it in python would be:
 
@@ -478,7 +478,7 @@ Example:
 
 ![](https://miro.medium.com/max/630/1*eogOkXkOUzi6Cq7U9BgiLg.png)
 
-The distance between `a and b` would be the last element of the matrix, which is 2.
+The distance between `a and b` would be the last element of the matrix, which is 2.
 
 ## Add Window Constraint
 
@@ -487,13 +487,13 @@ One issue of the above algorithm is that we allow one element in an array to mat
 a = [1, 2, 3]\
 b = [1, 2, 2, 2, 2, 2, 2, 2, ..., 5]
 
-To minimise the distance, the element 2 in array `a` would match all the 2 in array `b` , which causes an array `b` to bent severely. To avoid this, we can add a window constraint to limit the number of elements one can match:
+To minimise the distance, the element 2 in array `a` would match all the 2 in array `b` , which causes an array `b` to bent severely. To avoid this, we can add a window constraint to limit the number of elements one can match:
 
 ![](https://miro.medium.com/max/60/1*0_xypte7FHDWJuuBexEvHg.png?q=20)
 
 ![](https://miro.medium.com/max/630/1*0_xypte7FHDWJuuBexEvHg.png)
 
-The key difference is that now each element is confined to match elements in range `i --- w` and `i + w` . The `w := max(w, abs(n-m))` guarantees all indices can be matched up.
+The key difference is that now each element is confined to match elements in range `i --- w` and `i + w` . The `w := max(w, abs(n-m))` guarantees all indices can be matched up.
 
 The implementation and example would be:
 
@@ -503,6 +503,6 @@ The implementation and example would be:
 
 # Apply a Package
 
-There is also contributed packages available on Pypi to use directly. Here I demonstrate an example using [fastdtw](https://pypi.org/project/fastdtw/):
+There is also contributed packages available on Pypi to use directly. Here I demonstrate an example using [fastdtw](https://pypi.org/project/fastdtw/):
 
 It gives you the distance of two lists and index mapping(the example can extend to a multi-dimension array).

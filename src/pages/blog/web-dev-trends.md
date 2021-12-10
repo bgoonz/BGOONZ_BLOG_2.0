@@ -5,12 +5,12 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: post
-thumb_image: images/27697c1a901d3b3673aeb98edae4d2ae (2)-35ae1413.png
+thumb_image: images/webdev.png
 ---
 
 **1. AI Chatbots**![](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
@@ -27,7 +27,7 @@ Developers will continue to use SPA for building responsive sites and apps in 20
 
 **3. JavaScript Frameworks**
 
-JavaScript continues to remain one of the [**most preferred web development languages**](https://blog.sagipl.com/top-programming-languages/) owing to its flexibility, power and evolving frameworks.
+JavaScript continues to remain one of the [**most preferred web development languages**](https://blog.sagipl.com/top-programming-languages/) owing to its flexibility, power and evolving frameworks.
 
 This year too, we will see many new applications being developed in this developer-friendly language.
 
@@ -35,13 +35,13 @@ This year too, we will see many new applications being developed in this develop
 
 These are special web applications which are designed to load with progressive enhancement.
 
-Because of its fast-loading and high functionality features, PWA will continue to remain one of the year’s hottest web trends.
+Because of its fast-loading and high functionality features, PWA will continue to remain one of the year's hottest web trends.
 
 **5. Mobile-Friendly Website**
 
 Mobile-responsive sites are the ones that are designed to work smoothly across devices of all sizes.
 
-Owing to Google’s mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.
+Owing to Google's mobile-first index and other search guidelines, developers will keep offering mobile-optimized sites this year and beyond.
 
 **6. Blockchain Technology**
 
@@ -51,7 +51,7 @@ Blockchain, which was founded as a technology for secure digital payments, is no
 
 Motion UI (User Interface) is a technology for creating visually appealing apps, especially animations, graphics, and transitions.
 
-Owing to its great ability for [creating an interactive web design](https://www.sagipl.com/website-design/), Motion UI will be a primary tool for web developers in 2021.
+Owing to its great ability for [creating an interactive web design](https://www.sagipl.com/website-design/), Motion UI will be a primary tool for web developers in 2021.
 
 **8. Accelerated Mobile Pages (AMP)**
 
@@ -73,14 +73,14 @@ From digital reality to visualization to 3D replicas, AR/VR will be used for enh
 
 **11. Voice Search**
 
-Following Google’s increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.
+Following Google's increased focus on voice search queries, websites based on voice search optimization are now trending more than ever.
 
 As the number of people using voice searches will increase this year, so will the demand for websites optimized for the same.
 
-**12.** **Push Notification**
+**12.** **Push Notification**
 
 Push Notification is replacing the Newsletter service. It is not very old but maintaining a high conversion rate better than Newsletters.
 
 Services and platforms like Onesignal, ZoPush, Push Engage are improving day by day, so it will be in trend in upcoming years and web developers also have to take care of it.
 
-SAG IPL is a leading global [web development company](https://www.sagipl.com/web-development/) providing modern web/app development services to clients worldwide.
+SAG IPL is a leading global [web development company](https://www.sagipl.com/web-development/) providing modern web/app development services to clients worldwide.

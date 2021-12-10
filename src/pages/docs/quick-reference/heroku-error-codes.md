@@ -46,7 +46,7 @@ Last updated August 04, 2021
 -   [R13 - Attach error](https://devcenter.heroku.com/articles/error-codes#r13-attach-error)
 -   [R14 - Memory quota exceeded](https://devcenter.heroku.com/articles/error-codes#r14-memory-quota-exceeded)
 -   [R15 - Memory quota vastly exceeded](https://devcenter.heroku.com/articles/error-codes#r15-memory-quota-vastly-exceeded)
--   [R16 - Detached](https://devcenter.heroku.com/articles/error-codes#r16-detached)
+-   [R16 - Detached](https://devcenter.heroku.com/articles/error-codes#r16-detached)
 -   [R17 - Checksum error](https://devcenter.heroku.com/articles/error-codes#r17-checksum-error)
 -   [R99 - Platform error](https://devcenter.heroku.com/articles/error-codes#r99-platform-error)
 -   [L10 - Drain buffer overflow](https://devcenter.heroku.com/articles/error-codes#l10-drain-buffer-overflow)
@@ -85,9 +85,9 @@ The solution is to increase your app's throughput by adding more dynos, tuning y
 
 ## [H12 - Request timeout](https://devcenter.heroku.com/articles/error-codes#h12-request-timeout)
 
-For more information on request timeouts (including recommendations for resolving them), take a look at [our article on the topic](https://devcenter.heroku.com/articles/request-timeout).
+For more information on request timeouts (including recommendations for resolving them), take a look at [our article on the topic](https://devcenter.heroku.com/articles/request-timeout).
 
-An HTTP [request took longer than 30 seconds](https://devcenter.heroku.com/articles/request-timeout) to complete. In the example below, a Rails app takes 37 seconds to render the page; the HTTP router returns a 503 prior to Rails completing its request cycle, but the Rails process continues and the completion message shows after the router message.
+An HTTP [request took longer than 30 seconds](https://devcenter.heroku.com/articles/request-timeout) to complete. In the example below, a Rails app takes 37 seconds to render the page; the HTTP router returns a 503 prior to Rails completing its request cycle, but the Rails process continues and the completion message shows after the router message.
 
 ```
 2010-10-06T21:51:07-07:00 app[web.2]: Processing PostController#list (for 75.36.147.245 at 2010-10-06 21:51:07) [GET]
@@ -100,7 +100,7 @@ An HTTP [request took longer than 30 seconds](https://devcenter.heroku.com/arti
 
 This 30-second limit is measured by the router, and includes all time spent in the dyno, including the kernel's incoming connection queue and the app itself.
 
-See [Request Timeout](https://devcenter.heroku.com/articles/request-timeout) for more, as well as a language-specific article on this error:
+See [Request Timeout](https://devcenter.heroku.com/articles/request-timeout) for more, as well as a language-specific article on this error:
 
 -   [H12 - Request Timeout in Ruby (MRI)](https://devcenter.heroku.com/articles/h12-request-timeout-in-ruby-mri)
 
@@ -113,9 +113,9 @@ This error is thrown when a process in your web dyno accepts a connection but th
 
 ```
 
-One example where this might happen is when a [Unicorn web server](https://devcenter.heroku.com/articles/rails-unicorn) is configured with a timeout shorter than 30s and a request has not been processed by a worker before the timeout happens. In this case, Unicorn closes the connection before any data is written, resulting in an H13.
+One example where this might happen is when a [Unicorn web server](https://devcenter.heroku.com/articles/rails-unicorn) is configured with a timeout shorter than 30s and a request has not been processed by a worker before the timeout happens. In this case, Unicorn closes the connection before any data is written, resulting in an H13.
 
-An [example of an H13 can be found here](https://github.com/hunterloftis/heroku-node-errcodes/tree/master/h13).
+An [example of an H13 can be found here](https://github.com/hunterloftis/heroku-node-errcodes/tree/master/h13).
 
 ## [H14 - No web dynos running](https://devcenter.heroku.com/articles/error-codes#h14-no-web-dynos-running)
 
@@ -126,7 +126,7 @@ $ heroku ps:scale web=1
 
 ```
 
-Use the `heroku ps` command to determine the state of your web dynos.
+Use the `heroku ps` command to determine the state of your web dynos.
 
 ```
 2010-10-06T21:51:37-07:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno= connect= service= status=503 bytes=
@@ -135,7 +135,7 @@ Use the `heroku ps` command to determine the state of your web dynos.
 
 ## [H15 - Idle connection](https://devcenter.heroku.com/articles/error-codes#h15-idle-connection)
 
-The dyno did not send a full response and was [terminated due to 55 seconds of inactivity](https://devcenter.heroku.com/articles/request-timeout). For example, the response indicated a `Content-Length` of 50 bytes which were not sent in time.
+The dyno did not send a full response and was [terminated due to 55 seconds of inactivity](https://devcenter.heroku.com/articles/request-timeout). For example, the response indicated a `Content-Length` of 50 bytes which were not sent in time.
 
 ```
 2010-10-06T21:51:37-07:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno=web.1 connect=1ms service=55449ms status=503 bytes=18
@@ -148,7 +148,7 @@ Heroku no longer emits H16 errors
 
 ## [H17 - Poorly formatted HTTP response](https://devcenter.heroku.com/articles/error-codes#h17-poorly-formatted-http-response)
 
-Our HTTP routing stack has no longer accepts responses that are missing a reason phrase in the [status line](https://datatracker.ietf.org/doc/html/rfc7230#section-3.1.2). 'HTTP/1.1 200 OK' will work with the new router, but 'HTTP/1.1 200' will not.
+Our HTTP routing stack has no longer accepts responses that are missing a reason phrase in the [status line](https://datatracker.ietf.org/doc/html/rfc7230#section-3.1.2). 'HTTP/1.1 200 OK' will work with the new router, but 'HTTP/1.1 200' will not.
 
 This error message is logged when a router detects a malformed HTTP response coming from a dyno.
 
@@ -166,7 +166,7 @@ An H18 signifies that the socket connected, some data was sent as part of a resp
 
 ```
 
-An [example of an H18 can be found here](https://github.com/hunterloftis/heroku-node-errcodes/tree/master/h18).
+An [example of an H18 can be found here](https://github.com/hunterloftis/heroku-node-errcodes/tree/master/h18).
 
 ## [H19 - Backend connection timeout](https://devcenter.heroku.com/articles/error-codes#h19-backend-connection-timeout)
 
@@ -188,11 +188,11 @@ The router will enqueue requests for 75 seconds while waiting for starting proce
 
 ```
 
-The Ruby on Rails [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) can sometimes fail to run during [git push](https://devcenter.heroku.com/articles/git), and will instead attempt to run when your app's [dynos](https://devcenter.heroku.com/articles/dynos) boot. Since the Rails asset pipeline is a slow process, this can cause H20 boot timeout errors.
+The Ruby on Rails [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html) can sometimes fail to run during [git push](https://devcenter.heroku.com/articles/git), and will instead attempt to run when your app's [dynos](https://devcenter.heroku.com/articles/dynos) boot. Since the Rails asset pipeline is a slow process, this can cause H20 boot timeout errors.
 
-This error differs from [R10](https://devcenter.heroku.com/articles/error-codes#r10-boot-timeout) in that the H20 75-second timeout includes platform tasks such as internal state propagation, requests between internal components, slug download, unpacking, container preparation, etc... The R10 60-second timeout applies solely to application startup tasks.
+This error differs from [R10](https://devcenter.heroku.com/articles/error-codes#r10-boot-timeout) in that the H20 75-second timeout includes platform tasks such as internal state propagation, requests between internal components, slug download, unpacking, container preparation, etc... The R10 60-second timeout applies solely to application startup tasks.
 
-If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
+If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
 
 ## [H21 - Backend connection refused](https://devcenter.heroku.com/articles/error-codes#h21-backend-connection-refused)
 
@@ -214,7 +214,7 @@ A routing node has detected an elevated number of HTTP client connections attemp
 
 ## [H23 - Endpoint misconfigured](https://devcenter.heroku.com/articles/error-codes#h23-endpoint-misconfigured)
 
-A routing node has detected a [websocket handshake](https://tools.ietf.org/html/rfc6455#section-1.3), specifically the 'Sec-Websocket-Version' header in the request, that came from an endpoint (upstream proxy) that does not support websockets.
+A routing node has detected a [websocket handshake](https://tools.ietf.org/html/rfc6455#section-1.3), specifically the 'Sec-Websocket-Version' header in the request, that came from an endpoint (upstream proxy) that does not support websockets.
 
 ```
 2010-10-06T21:51:07-07:00 heroku[router]: at=error code=H23 desc="Endpoint misconfigured" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno= connect= service= status=503 bytes=
@@ -278,7 +278,7 @@ This error is logged when a request has been identified as belonging to a specif
 
 ### [Unsupported expect header value](https://devcenter.heroku.com/articles/error-codes#unsupported-expect-header-value)
 
-The request has an `expect` header, and its value is not `100-Continue`, the only expect value handled by the router. A request with an unsupported `expect` value is terminated with the status code `417 Expectation Failed`.
+The request has an `expect` header, and its value is not `100-Continue`, the only expect value handled by the router. A request with an unsupported `expect` value is terminated with the status code `417 Expectation Failed`.
 
 ```
 2014-05-14T17:17:37.456997+00:00 heroku[router]: at=error code=H26 desc="Request Error" cause="unsupported expect header value" method=GET path="/" host=myapp.herokuapp.com request_id=3f336f1a-9be3-4791-afe3-596a1f2a481f fwd="17.17.17.17" dyno= connect= service= status=417 bytes=
@@ -287,7 +287,7 @@ The request has an `expect` header, and its value is not `100-Continue`, the 
 
 ### [Bad header](https://devcenter.heroku.com/articles/error-codes#bad-header)
 
-The request has an HTTP header with a value that is either impossible to parse, or not handled by the router, such as `connection: ,`.
+The request has an HTTP header with a value that is either impossible to parse, or not handled by the router, such as `connection: ,`.
 
 ```
 2014-05-14T17:17:37.456997+00:00 heroku[router]: at=error code=H26 desc="Request Error" cause="bad header" method=GET path="/" host=myapp.herokuapp.com request_id=3f336f1a-9be3-4791-afe3-596a1f2a481f fwd="17.17.17.17" dyno= connect= service= status=400 bytes=
@@ -314,13 +314,13 @@ The client socket was closed either in the middle of the request or before a res
 
 ## [H28 - Client Connection Idle](https://devcenter.heroku.com/articles/error-codes#h28-client-connection-idle)
 
-The client did not send a full request and was [terminated due to 55 seconds of inactivity](https://devcenter.heroku.com/articles/request-timeout#long-polling-and-streaming-responses). For example, the client indicated a `Content-Length` of 50 bytes which were not sent in time.
+The client did not send a full request and was [terminated due to 55 seconds of inactivity](https://devcenter.heroku.com/articles/request-timeout#long-polling-and-streaming-responses). For example, the client indicated a `Content-Length` of 50 bytes which were not sent in time.
 
 `2010-10-06T21:51:37-07:00 heroku[router]: at=warning code=H28 desc="Client Connection Idle" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno=web.1 connect=1ms service=55449ms status=499 bytes=18`
 
 ## [H31 - Misdirected Request](https://devcenter.heroku.com/articles/error-codes#h31-misdirected-request)
 
-The client sent a request to the wrong endpoint. This could be because the client used stale DNS information or is accessing the app through a CDN that has stale DNS information. Verify that [DNS is correctly configured for your app](https://devcenter.heroku.com/articles/custom-domains). If a CDN is configured for the app, consider contacting your CDN provider.
+The client sent a request to the wrong endpoint. This could be because the client used stale DNS information or is accessing the app through a CDN that has stale DNS information. Verify that [DNS is correctly configured for your app](https://devcenter.heroku.com/articles/custom-domains). If a CDN is configured for the app, consider contacting your CDN provider.
 
 If you and your app users can successfully access the app in a browser (or however the app is used), this may not be cause for concern. The errors may be caused by clients (typically web-crawlers) with cached DNS entries trying to access a now-invalid endpoint or IP address for your app.
 
@@ -342,7 +342,7 @@ This is not an error, but we give it a code for the sake of completeness. Note t
 
 ## [H81 - Blank app](https://devcenter.heroku.com/articles/error-codes#h81-blank-app)
 
-No code has been pushed to this application. To get rid of this message you need to do one [deploy](https://devcenter.heroku.com/articles/git#deploying-code). This is not an error, but we give it a code for the sake of completeness.
+No code has been pushed to this application. To get rid of this message you need to do one [deploy](https://devcenter.heroku.com/articles/git#deploying-code). This is not an error, but we give it a code for the sake of completeness.
 
 ```
 2010-10-06T21:51:07-07:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno= connect= service= status=503 bytes=
@@ -351,7 +351,7 @@ No code has been pushed to this application. To get rid of this message you need
 
 ## [H82 - Free dyno quota exhausted](https://devcenter.heroku.com/articles/error-codes#h82-free-dyno-quota-exhausted)
 
-This indicates that an account's [free dyno hour quota](https://devcenter.heroku.com/articles/free-dyno-hours) is exhausted and that apps running free dynos are sleeping. You can view your app's free dyno usage in the [Heroku dashboard](https://dashboard.heroku.com/account/billing).
+This indicates that an account's [free dyno hour quota](https://devcenter.heroku.com/articles/free-dyno-hours) is exhausted and that apps running free dynos are sleeping. You can view your app's free dyno usage in the [Heroku dashboard](https://dashboard.heroku.com/account/billing).
 
 ```
 2015-10-06T21:51:07-07:00 heroku[router]: at=info code=H82 desc="Free dyno quota exhausted" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno= connect= service= status=503 bytes=
@@ -362,7 +362,7 @@ This indicates that an account's [free dyno hour quota](https://devcenter.herok
 
 H99 and R99 are the only error codes that represent errors in the Heroku platform.
 
-This indicates an internal error in the Heroku platform. Unlike all of the other errors which will require action from you to correct, this one does not require action from you. Try again in a minute, or check [the status site](http://status.heroku.com/).
+This indicates an internal error in the Heroku platform. Unlike all of the other errors which will require action from you to correct, this one does not require action from you. Try again in a minute, or check [the status site](http://status.heroku.com/).
 
 ```
 2010-10-06T21:51:07-07:00 heroku[router]: at=error code=H99 desc="Platform error" method=GET path="/" host=myapp.herokuapp.com fwd=17.17.17.17 dyno= connect= service= status=503 bytes=
@@ -371,7 +371,7 @@ This indicates an internal error in the Heroku platform. Unlike all of the other
 
 ## [R10 - Boot timeout](https://devcenter.heroku.com/articles/error-codes#r10-boot-timeout)
 
-A web process took longer than 60 seconds to bind to its assigned `$PORT`. When this happens, the dyno's process is killed and the dyno is considered crashed. Crashed dynos are restarted according to the dyno manager's [restart policy](https://devcenter.heroku.com/articles/dynos#automatic-dyno-restarts).
+A web process took longer than 60 seconds to bind to its assigned `$PORT`. When this happens, the dyno's process is killed and the dyno is considered crashed. Crashed dynos are restarted according to the dyno manager's [restart policy](https://devcenter.heroku.com/articles/dynos#automatic-dyno-restarts).
 
 ```
 2011-05-03T17:31:38+00:00 heroku[web.1]: State changed from created to starting
@@ -387,9 +387,9 @@ This error is often caused by a process being unable to reach an external resour
 
 Common solutions are to access external resources asynchronously, so they don't block startup, and to reduce the amount of application code or its dependencies.
 
-If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
+If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
 
-One exception is for apps using the [Java buildpack](https://devcenter.heroku.com/articles/java-support), [Gradle buildpack](https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku), [heroku-deploy toolbelt plugin](https://devcenter.heroku.com/articles/war-deployment#deployment-with-the-heroku-cli), or [Heroku Maven plugin](https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin), which will be allowed 90 seconds to bind to their assigned port.
+One exception is for apps using the [Java buildpack](https://devcenter.heroku.com/articles/java-support), [Gradle buildpack](https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku), [heroku-deploy toolbelt plugin](https://devcenter.heroku.com/articles/war-deployment#deployment-with-the-heroku-cli), or [Heroku Maven plugin](https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin), which will be allowed 90 seconds to bind to their assigned port.
 
 ## [R12 - Exit timeout](https://devcenter.heroku.com/articles/error-codes#r12-exit-timeout)
 
@@ -409,7 +409,7 @@ A process failed to exit within 30 seconds of being sent a SIGTERM indicating th
 
 ## [R13 - Attach error](https://devcenter.heroku.com/articles/error-codes#r13-attach-error)
 
-A dyno started with `heroku run` failed to attach to the invoking client.
+A dyno started with `heroku run` failed to attach to the invoking client.
 
 ```
 2011-06-29T02:13:29+00:00 app[run.3]: Awaiting client
@@ -421,7 +421,7 @@ A dyno started with `heroku run` failed to attach to the invoking client.
 
 ## [R14 - Memory quota exceeded](https://devcenter.heroku.com/articles/error-codes#r14-memory-quota-exceeded)
 
-A dyno requires memory in excess of its [quota](https://devcenter.heroku.com/articles/dynos#memory-behavior). If this error occurs, the dyno will [page to swap space](http://en.wikipedia.org/wiki/Paging) to continue running, which may cause degraded process performance. The R14 error is calculated by total memory swap, rss and cache.
+A dyno requires memory in excess of its [quota](https://devcenter.heroku.com/articles/dynos#memory-behavior). If this error occurs, the dyno will [page to swap space](http://en.wikipedia.org/wiki/Paging) to continue running, which may cause degraded process performance. The R14 error is calculated by total memory swap, rss and cache.
 
 ```
 2011-05-03T17:40:10+00:00 app[worker.1]: Working
@@ -439,7 +439,7 @@ If you are getting a large number of R14 errors, your application performance is
 
 ## [R15 - Memory quota vastly exceeded](https://devcenter.heroku.com/articles/error-codes#r15-memory-quota-vastly-exceeded)
 
-A dyno requires vastly more memory than its [quota](https://devcenter.heroku.com/articles/dynos#memory-behavior) and is consuming excessive swap space. If this error occurs, the dyno will be forcibly killed with `SIGKILL` (which cannot be caught or handled) by the platform. The R15 error is calculated by total memory swap and rss; cache is not included.
+A dyno requires vastly more memory than its [quota](https://devcenter.heroku.com/articles/dynos#memory-behavior) and is consuming excessive swap space. If this error occurs, the dyno will be forcibly killed with `SIGKILL` (which cannot be caught or handled) by the platform. The R15 error is calculated by total memory swap and rss; cache is not included.
 
 ```
 2011-05-03T17:40:10+00:00 app[worker.1]: Working
@@ -452,13 +452,13 @@ A dyno requires vastly more memory than its [quota](https://devcenter.heroku.co
 
 In Private Spaces, dynos exceeding their memory quota do not use swap space and thus do not emit R14 errors.
 
-Private Space dynos vastly exceeding their memory quota generally will emit R15 errors but occasionally the platform may shut down the dyno before the R15 is sent, causing the error to be dropped. *If* an R15 is emitted it will only be visible in the app log stream but not in the dashboard [Application Metrics](https://devcenter.heroku.com/articles/metrics) interface. Other non-R15 types of errors from Private Space dynos are correctly surfaced in the Application Metrics interface.
+Private Space dynos vastly exceeding their memory quota generally will emit R15 errors but occasionally the platform may shut down the dyno before the R15 is sent, causing the error to be dropped. *If* an R15 is emitted it will only be visible in the app log stream but not in the dashboard [Application Metrics](https://devcenter.heroku.com/articles/metrics) interface. Other non-R15 types of errors from Private Space dynos are correctly surfaced in the Application Metrics interface.
 
 For Private Space dynos vastly exceeding their memory quota the platform kills dyno processes consuming large amounts of memory, but may not kill the dyno itself.
 
-## [R16 - Detached](https://devcenter.heroku.com/articles/error-codes#r16-detached)
+## [R16 - Detached](https://devcenter.heroku.com/articles/error-codes#r16-detached)
 
-An attached dyno is continuing to run after being sent `SIGHUP` when its external connection was closed. This is usually a mistake, though some apps might want to do this intentionally.
+An attached dyno is continuing to run after being sent `SIGHUP` when its external connection was closed. This is usually a mistake, though some apps might want to do this intentionally.
 
 ```
 2011-05-03T17:32:03+00:00 heroku[run.1]: Awaiting client
@@ -472,7 +472,7 @@ An attached dyno is continuing to run after being sent `SIGHUP` when its exter
 
 ## [R17 - Checksum error](https://devcenter.heroku.com/articles/error-codes#r17-checksum-error)
 
-This indicates an error with runtime [slug checksum](https://devcenter.heroku.com/articles/slug-checksums) verification. If the checksum does not match or there is another problem with the checksum when launch a dyno, an R17 error will occur and the dyno will fail to launch. Check the log stream for details about the error.
+This indicates an error with runtime [slug checksum](https://devcenter.heroku.com/articles/slug-checksums) verification. If the checksum does not match or there is another problem with the checksum when launch a dyno, an R17 error will occur and the dyno will fail to launch. Check the log stream for details about the error.
 
 ```
 2016-08-16T12:39:56.439438+00:00 heroku[web.1]: State changed from provisioning to starting
@@ -481,13 +481,13 @@ This indicates an error with runtime [slug checksum](https://devcenter.heroku.c
 
 ```
 
-If this error occurs, try deploying a new release with a correct checksum or rolling back to an older release. Ensure the checksum is [formatted and calculated correctly](https://devcenter.heroku.com/articles/slug-checksums) with the SHA256 algorithm. The checksum must start with `SHA256:` followed by the calculated SHA256 value for the compressed slug. If you did not manually calculate the checksum and error continues to occur, please contact Heroku support.
+If this error occurs, try deploying a new release with a correct checksum or rolling back to an older release. Ensure the checksum is [formatted and calculated correctly](https://devcenter.heroku.com/articles/slug-checksums) with the SHA256 algorithm. The checksum must start with `SHA256:` followed by the calculated SHA256 value for the compressed slug. If you did not manually calculate the checksum and error continues to occur, please contact Heroku support.
 
 ## [R99 - Platform error](https://devcenter.heroku.com/articles/error-codes#r99-platform-error)
 
 R99 and H99 are the only error codes that represent errors in the Heroku platform.
 
-This indicates an internal error in the Heroku platform. Unlike all of the other errors which will require action from you to correct, this one does not require action from you. Try again in a minute, or check [the status site](http://status.heroku.com/).
+This indicates an internal error in the Heroku platform. Unlike all of the other errors which will require action from you to correct, this one does not require action from you. Try again in a minute, or check [the status site](http://status.heroku.com/).
 
 ## [L10 - Drain buffer overflow](https://devcenter.heroku.com/articles/error-codes#l10-drain-buffer-overflow)
 
@@ -496,13 +496,13 @@ This indicates an internal error in the Heroku platform. Unlike all of the other
 
 ```
 
-The number of log messages being generated has temporarily exceeded the rate at which they can be received by a drain consumer (such as a log management add-on) and Logplex, [Heroku's logging system](https://devcenter.heroku.com/articles/logging), has discarded some messages in order to handle the rate difference.
+The number of log messages being generated has temporarily exceeded the rate at which they can be received by a drain consumer (such as a log management add-on) and Logplex, [Heroku's logging system](https://devcenter.heroku.com/articles/logging), has discarded some messages in order to handle the rate difference.
 
 A common cause of L10 error messages is the exhaustion of capacity in a log consumer. If a log management add-on or similar system can only accept so many messages per time period, your application may experience L10s after crossing that threshold.
 
 Another common cause of L10 error messages is a sudden burst of log messages from a dyno. As each line of dyno output (e.g. a line of a stack trace) is a single log message, and Logplex limits the total number of un-transmitted log messages it will keep in memory to 1024 messages, a burst of lines from a dyno can overflow buffers in Logplex. In order to allow the log stream to catch up, Logplex will discard messages where necessary, keeping newer messages in favor of older ones.
 
-You may need to investigate reducing the volume of log lines output by your application (e.g. condense multiple log lines into a smaller, single-line entry). You can also use the `heroku logs -t` command to get a live feed of logs and find out where your problem might be. A single dyno stuck in a loop that generates log messages can force an L10 error, as can a problematic code path that causes all dynos to generate a multi-line stack trace for some code paths.
+You may need to investigate reducing the volume of log lines output by your application (e.g. condense multiple log lines into a smaller, single-line entry). You can also use the `heroku logs -t` command to get a live feed of logs and find out where your problem might be. A single dyno stuck in a loop that generates log messages can force an L10 error, as can a problematic code path that causes all dynos to generate a multi-line stack trace for some code paths.
 
 ## [L11 - Tail buffer overflow](https://devcenter.heroku.com/articles/error-codes#l11-tail-buffer-overflow)
 
@@ -549,4 +549,4 @@ You should check that:
 
 ## [L15 - Tail buffer temporarily unavailable](https://devcenter.heroku.com/articles/error-codes#l15-tail-buffer-temporarily-unavailable)
 
-The tail buffer that stores the last 1500 lines of your logs is temporarily unavailable. Run `heroku logs` again. If you still encounter the error, run `heroku logs -t` to stream your logs (which does not use the tail buffer).
+The tail buffer that stores the last 1500 lines of your logs is temporarily unavailable. Run `heroku logs` again. If you still encounter the error, run `heroku logs -t` to stream your logs (which does not use the tail buffer).

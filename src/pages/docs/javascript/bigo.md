@@ -1,7 +1,7 @@
 ---
 title: A Very Quick Guide To Calculating Big O Computational Complexity
 weight: 0
-excerpt: lorem-ipsum
+excerpt: A quick guide to big O
 seo:
     title: ''
     description: ''
@@ -26,22 +26,22 @@ For a more complete guide… checkout :
 
 -   way we analyze how efficient algorithms are without getting too mired in details
 
--   can model how much time any function will take given n inputs
+-   can model how much time any function will take given n inputs
 
 -   interested in order of magnitude of number of the exact figure
 
 -   O absorbs all fluff and n = biggest term
 
--   Big O of 3x^2 +x + 1 = O(n^2)
+-   Big O of 3x^2 +x + 1 = O(n^2)
 
 # Time Complexity
 
 no loops or exit & return = O(1)
 
-0 nested loops = O(n)
-1 nested loops = O(n^2)
-2 nested loops = O(n^3)
-3 nested loops = O(n^4)
+0 nested loops = O(n)
+1 nested loops = O(n^2)
+2 nested loops = O(n^3)
+3 nested loops = O(n^4)
 
 **recursive**: as you add more terms, increase in time as you add input diminishes
 **recursion**: when you define something in terms of itself, a function that calls itself
@@ -55,7 +55,7 @@ no loops or exit & return = O(1)
 **iterative**: use loops instead of recursion (preferred)
 \- favor readability over performance
 
-O(n log(n)) & O(log(n)): dividing/halving
+O(n log(n)) & O(log(n)): dividing/halving
 
 -   if code employs recursion/divide-and-conquer strategy
 
@@ -69,7 +69,7 @@ O(n log(n)) & O(log(n)): dividing/halving
 
 -   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
 
--   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn’t increase very much
+-   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
 
 -   halving
 

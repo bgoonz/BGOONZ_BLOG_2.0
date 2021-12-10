@@ -130,7 +130,7 @@ React.createElement(
 )
 
 // Clone and return a new React element using element as the starting point.
-// The resulting element will have the original element’s props with the new props merged in shallowly.
+// The resulting element will have the original element's props with the new props merged in shallowly.
 React.cloneElement(
   element,
   [props],
@@ -189,7 +189,7 @@ class Component extends React.Component {
     this.state = {
       active: true,
 
-      // In rare cases, it’s okay to initialize state based on props.
+      // In rare cases, it's okay to initialize state based on props.
       // This effectively “forks” the props and sets the state with the initial props.
       // If you “fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
       // to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
@@ -212,7 +212,7 @@ class Component extends React.Component {
   // Invoked immediately after a component is mounted.
   // Initialization that requires DOM nodes should go here.
   // If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
-  // This method is a good place to set up any subscriptions. If you do that, don’t forget to unsubscribe in componentWillUnmount().
+  // This method is a good place to set up any subscriptions. If you do that, don't forget to unsubscribe in componentWillUnmount().
   componentDidMount() { }
 
   // Invoked before a mounted component receives new props.
@@ -220,7 +220,7 @@ class Component extends React.Component {
   // you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
   componentWillReceiveProps(nextProps) { }
 
-  // Let React know if a component’s output is not affected by the current change in state or props.
+  // Let React know if a component's output is not affected by the current change in state or props.
   // The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
   // shouldComponentUpdate() is invoked before rendering when new props or state are being received. Defaults to true.
   // This method is not called for the initial render or when forceUpdate() is used.
@@ -251,7 +251,7 @@ class Component extends React.Component {
 
   // This method is required.
   // It should be pure, meaning that it does not modify component state,
-  // it returns the same result each time it’s invoked, and
+  // it returns the same result each time it's invoked, and
   // it does not directly interact with the browser (use lifecycle methods for this)
   // It must return one of the following types: react elements, string and numbers, portals, null or booleans.
   render() {
@@ -260,7 +260,7 @@ class Component extends React.Component {
 
     // Contains data specific to this component that may change over time.
     // The state is user-defined, and it should be a plain JavaScript object.
-    // If you don’t use it in render(), it shouldn’t be in the state.
+    // If you don't use it in render(), it shouldn't be in the state.
     // For example, you can put timer IDs directly on the instance.
     // Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made.
     // Treat this.state as if it were immutable.
@@ -283,7 +283,7 @@ Component.defaultProps = {
 
 component = new Component();
 
-// By default, when your component’s state or props change, your component will re-render.
+// By default, when your component's state or props change, your component will re-render.
 // If your render() method depends on some other data, you can tell React that the component needs re-rendering by calling forceUpdate().
 // Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 component.forceUpdate(callback)
@@ -334,7 +334,7 @@ ReactDOM.createPortal(child, container)
 // request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 ReactDOMServer.renderToString(element)
 
-// Similar to renderToString, except this doesn’t create extra DOM attributes that React uses
+// Similar to renderToString, except this doesn't create extra DOM attributes that React uses
 // internally, such as data-reactroot. This is useful if you want to use React as a simple static
 // page generator, as stripping away the extra attributes can save some bytes.
 ReactDOMServer.renderToStaticMarkup(element)
@@ -345,7 +345,7 @@ ReactDOMServer.renderToStaticMarkup(element)
 // request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 ReactDOMServer.renderToNodeStream(element)
 
-// Similar to renderToNodeStream, except this doesn’t create extra DOM attributes that React uses
+// Similar to renderToNodeStream, except this doesn't create extra DOM attributes that React uses
 // internally, such as data-reactroot. This is useful if you want to use React as a simple static
 // page generator, as stripping away the extra attributes can save some bytes.
 ReactDOMServer.renderToStaticNodeStream(element)

@@ -1,7 +1,7 @@
 ---
 title: Web Standards Checklist
 weight: 0
-excerpt: (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
+excerpt: (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
 seo:
     title: 'Web Standards Checklist'
     description: 'as an aid for developers who are interested in moving towards web standards'
@@ -12,9 +12,9 @@ template: docs
 
 ## Web Standards Checklist
 
-The term web standards can mean different things to different people. For some, it is '_table-free sites_', for others it is '_using valid code_'. However, web standards are much broader than that. A site built to web standards should *adhere to standards* (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
+The term web standards can mean different things to different people. For some, it is '_table-free sites_', for others it is '_using valid code_'. However, web standards are much broader than that. A site built to web standards should *adhere to standards* (HTML, XHTML, XML, CSS, XSLT, DOM, MathML, SVG etc) and *pursue best practices* (valid code, accessible code, semantically correct code, user-friendly URLs etc).
 
-In other words, a site built to web standards should ideally be *lean, clean, CSS-based, accessible, usable and search engine friendly*.
+In other words, a site built to web standards should ideally be *lean, clean, CSS-based, accessible, usable and search engine friendly*.
 
 ### About the checklist
 
@@ -93,7 +93,7 @@ More:
 
 #### 1.2 Does the site use a Character set?
 
-> If a user agent (eg. a browser) is unable to detect the character encoding used in a Web document, the user may be presented with unreadable text. This information is particularly important for those maintaining and extending a multilingual site, but  declaring the character encoding of the document is important for anyone producing XHTML/HTML or CSS.
+> If a user agent (eg. a browser) is unable to detect the character encoding used in a Web document, the user may be presented with unreadable text. This information is particularly important for those maintaining and extending a multilingual site, but  declaring the character encoding of the document is important for anyone producing XHTML/HTML or CSS.
 >
 > _[Tutorial: Character sets & encodings in XHTML, HTML and CSS](http://www.w3.org/International/tutorials/tutorial-char-enc/)_
 
@@ -348,7 +348,7 @@ It is a common assumption amongst developers that average screen sizes are incre
 >
 > _[Clear language](http://www.juicystudio.com/tutorial/accessibility/clear.asp)_
 
-#### 5.6 Does the site have a sitemap page and contact page? Are they  easy to find?
+#### 5.6 Does the site have a sitemap page and contact page? Are they  easy to find?
 
 > Most site maps fail to convey multiple levels of the site's information architecture. In usability tests, users often overlook site maps or can't find them. Complexity is also a problem: a map should be a map, not a navigational challenge of its own.
 >
@@ -364,7 +364,7 @@ Some users like to go back to a site's home page after navigating to content wit
 
 #### 5.9 Are links underlined?
 
-> To maximise the [perceived affordance](http://www.jnd.org/dn.mss/affordances-and-design.html) of clickability, colour and underline the link text. Users shouldn't have to guess or scrub the page to find out where they can click.
+> To maximise the [perceived affordance](http://www.jnd.org/dn.mss/affordances-and-design.html) of clickability, colour and underline the link text. Users shouldn't have to guess or scrub the page to find out where they can click.
 >
 > _[Guidelines for Visualizing Links](http://www.useit.com/alertbox/20040510.html)_
 

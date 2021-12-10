@@ -382,7 +382,7 @@ D
 -   [`DOMException`](https://developer.mozilla.org/en-US/docs/Web/API/DOMException)
 -   [`DOMHighResTimeStamp`](https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp)
 -   [`DOMImplementation`](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation)
--   [`DOMMatrix` (WebKitCSSMatrix)](https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix)
+-   [`DOMMatrix` (WebKitCSSMatrix)](https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix)
 -   [`DOMMatrixReadOnly`](https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly)
 -   [`DOMParser`](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser)
 -   [`DOMPoint`](https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint)

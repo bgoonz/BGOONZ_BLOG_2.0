@@ -19,16 +19,16 @@ CSS Selectors
 
 ---
 
-### Learn CSS So That Your Site Doesn’t Look Like Garbage
+### Learn CSS So That Your Site Doesn't Look Like Garbage
 
 ### CSS Selectors
 
--   <span id="62c3">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
--   <span id="d60d">`Type Selectors` : Matches by node name.</span>
--   <span id="9826">`Class Selectors` : Matches by class name.</span>
--   <span id="10a7">`ID Selectors` : Matches by ID name.</span>
--   <span id="64c0">`Universal Selectors` : Selects all HTML elements on a page.</span>
--   <span id="9c6b">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
+-   <span id="62c3">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
+-   <span id="d60d">`Type Selectors` : Matches by node name.</span>
+-   <span id="9826">`Class Selectors` : Matches by class name.</span>
+-   <span id="10a7">`ID Selectors` : Matches by ID name.</span>
+-   <span id="64c0">`Universal Selectors` : Selects all HTML elements on a page.</span>
+-   <span id="9c6b">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
 
 <!-- -->
 
@@ -51,7 +51,7 @@ CSS Selectors
 
 **Class Selectors**
 
--   <span id="fddf">Used to select all elements of a certain class denoted with a `.[class name]`</span>
+-   <span id="fddf">Used to select all elements of a certain class denoted with a `.[class name]`</span>
 -   <span id="72af">You can assign multiple classes to a DOM element by separating them with a space.</span>
 
 **Compound Class Selectors**
@@ -65,7 +65,7 @@ CSS Selectors
     <div class="box orange"></div>
     <div class="circle orange"></div>
 
--   <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
+-   <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
 -   <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a _descendant selector_.</span>
 
 <!-- -->
@@ -79,7 +79,7 @@ CSS Selectors
 
 **CSS Combinators**
 
--   <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
+-   <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
 -   <span id="71a6">Be careful not to use too many of them as they will make your CSS far too complex.</span>
 -   <span id="6032">`Descendant Selectors`</span>
 -   <span id="6f41">Separated by a space.</span>
@@ -97,22 +97,22 @@ CSS Selectors
 
 **Pseudo-Classes**
 
--   <span id="b638">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
+-   <span id="b638">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
 -   <span id="0360">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
 -   <span id="91ee">`a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`</span>
 -   <span id="27ac">Some common pseudo-classes that are frequently used are:</span>
--   <span id="9b2b">`active` : ‘push down’, when ele are activated.</span>
--   <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
--   <span id="58da">`disabled` : any disabled element.</span>
--   <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
--   <span id="40fc">`focus` : elements that have current focus.</span>
--   <span id="ed43">`hover` : elements that have cursor hovering over it.</span>
--   <span id="6fa2">`invalid` : any form elements in an invalid state from client-side form validation.</span>
--   <span id="7811">`last-child` : last element in a group of children/siblings.</span>
--   <span id="1bdf">`not(selector)` : elements that do not match the provided selector.</span>
--   <span id="be5c">`required` : form elements that are required.</span>
--   <span id="43ed">`valid` : form elements in a valid state.</span>
--   <span id="6460">`visited` : anchor tags of whih the user has already been to the URL that the href points to.</span>
+-   <span id="9b2b">`active` : 'push down', when ele are activated.</span>
+-   <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
+-   <span id="58da">`disabled` : any disabled element.</span>
+-   <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
+-   <span id="40fc">`focus` : elements that have current focus.</span>
+-   <span id="ed43">`hover` : elements that have cursor hovering over it.</span>
+-   <span id="6fa2">`invalid` : any form elements in an invalid state from client-side form validation.</span>
+-   <span id="7811">`last-child` : last element in a group of children/siblings.</span>
+-   <span id="1bdf">`not(selector)` : elements that do not match the provided selector.</span>
+-   <span id="be5c">`required` : form elements that are required.</span>
+-   <span id="43ed">`valid` : form elements in a valid state.</span>
+-   <span id="6460">`visited` : anchor tags of whih the user has already been to the URL that the href points to.</span>
 
 `Pseudo-Selectors`
 
@@ -139,9 +139,9 @@ CSS Selectors
 
 **CSS Rules**
 
--   <span id="919a">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
--   <span id="555f">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
--   <span id="a1db">`The Four Number Calculation` : listed in increasing order of importance.</span>
+-   <span id="919a">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
+-   <span id="555f">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
+-   <span id="a1db">`The Four Number Calculation` : listed in increasing order of importance.</span>
 
 Who has the most IDs? If no one, continue.
 
@@ -172,27 +172,27 @@ Last Read in the browser wins.
 
 ---
 
-### CSS: Type, Properties, and Imports
+### CSS: Type, Properties, and Imports
 
 **Typography**
 
--   <span id="d6fc">`font-family` : change the font.</span>
+-   <span id="d6fc">`font-family` : change the font.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" /></figure>-   <span id="daba">Remember that not all computers have the same fonts on them.</span>
 -   <span id="0aa8">You can import web fonts via an api by using</span>
 -   <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
 -   <span id="d8ff">And then reference it in your font-family.</span>
--   <span id="ee9f">`font-size` : Changes the size of your font.</span>
+-   <span id="ee9f">`font-size` : Changes the size of your font.</span>
 -   <span id="782e">Keep in mind the two kind of units CSS uses:</span>
--   <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
--   <span id="2884">`Relative` : Em, Rem.</span>
+-   <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
+-   <span id="2884">`Relative` : Em, Rem.</span>
 -   <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span>
 -   <span id="5a5d">Rem: Calulates relative to the parent element always.</span>
--   <span id="79b0">`font-style` : Used to set a font to italics.</span>
--   <span id="f464">`font-weight` : Used to make a font bold.</span>
--   <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
--   <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
--   <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
+-   <span id="79b0">`font-style` : Used to set a font to italics.</span>
+-   <span id="f464">`font-weight` : Used to make a font bold.</span>
+-   <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
+-   <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
+-   <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
 
 **Background-Images**
 
@@ -200,14 +200,14 @@ Last Read in the browser wins.
 
 ---
 
-### CSS: Colors, Borders, and Shadows
+### CSS: Colors, Borders, and Shadows
 
 **Colors**
 
 -   <span id="6bed">You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.</span>
 -   <span id="38fb">rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.</span>
--   <span id="cb05">**Color** : Property used to change the color of text.</span>
--   <span id="6f05">**Background-Color** : Property to change the backgrounf color of an element.</span>
+-   <span id="cb05">**Color** : Property used to change the color of text.</span>
+-   <span id="6f05">**Background-Color** : Property to change the backgrounf color of an element.</span>
 
 **Borders**
 
@@ -222,15 +222,15 @@ Last Read in the browser wins.
 
 ---
 
-### The Box Model
+### The Box Model
 
-**Box Model** : A concept that basically boils down that every DOM element has a box around it.
+**Box Model** : A concept that basically boils down that every DOM element has a box around it.
 
-Imagine a gift, inside is the gift, wrapped in foam all around (padding), and the giftbox outside of it (border) and then a wrapping paper on the giftbox (margin).- For items that are using `block` as it’s display, the browser will follow these rules to layout the element: - The box fills 100% of the available container space. - Every new box takes on a new line/row. - Width and Height properties are respected. - Padding, Margin, and Border will push other elements away from the box. - Certain elements have `block` as their default display, such as: divs, headers, and paragraphs.- For items that are using `inline` as it’s display, the browser will follow these rules to layout the element: - Each box appears in a single line until it fills up the space. - Width and height are **not** respected. - Padding, Margin, and Border are applied but they **do not** push other elements away from the box. - Certain elements have `inline` as their default display, such as: span tags, anchors, and images.
+Imagine a gift, inside is the gift, wrapped in foam all around (padding), and the giftbox outside of it (border) and then a wrapping paper on the giftbox (margin).- For items that are using `block` as it's display, the browser will follow these rules to layout the element: - The box fills 100% of the available container space. - Every new box takes on a new line/row. - Width and Height properties are respected. - Padding, Margin, and Border will push other elements away from the box. - Certain elements have `block` as their default display, such as: divs, headers, and paragraphs.- For items that are using `inline` as it's display, the browser will follow these rules to layout the element: - Each box appears in a single line until it fills up the space. - Width and height are **not** respected. - Padding, Margin, and Border are applied but they **do not** push other elements away from the box. - Certain elements have `inline` as their default display, such as: span tags, anchors, and images.
 
 **Standard Box Model vs Border-Box**- As per the standard Box Model, the width and height pertains to the content of the box and excludes any additional padding, borders, and margins.
 
-This bothered many programmers so they created the **border box** to include the calculation of the entire box’s height and width.
+This bothered many programmers so they created the **border box** to include the calculation of the entire box's height and width.
 
 **Inline-Block**- Inline-block uses the best features of both `block` and `inline`. - Elements still get laid out left to right. - Layout takes into account specified width and height.
 
@@ -253,9 +253,9 @@ This bothered many programmers so they created the **border box** to include the
 
 **Relative Positioning**
 
--   <span id="adc3">Remains in it’s original position in the page flow.</span>
--   <span id="9533">It is positioned _RELATIVE_ to the it’s _ORIGINAL PLACE_ on the page flow.</span>
--   <span id="8c0b">Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.</span>
+-   <span id="adc3">Remains in it's original position in the page flow.</span>
+-   <span id="9533">It is positioned _RELATIVE_ to the it's _ORIGINAL PLACE_ on the page flow.</span>
+-   <span id="8c0b">Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.</span>
 
 <!-- -->
 
@@ -270,7 +270,7 @@ This bothered many programmers so they created the **border box** to include the
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*mMCUEQ94L4_zxwNc" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*TgjpfTmdczESRAfU.png" class="graf-image" /></figure>**Absolute Positioning**
 
--   <span id="d597">Absolute elements are removed from the normal page flow and other elements around it act like it’s not there. (how we can easily achieve some layering)</span>
+-   <span id="d597">Absolute elements are removed from the normal page flow and other elements around it act like it's not there. (how we can easily achieve some layering)</span>
 -   <span id="eb5b">Here are some examples to illustration absolute positioning:</span>
 
 <!-- -->
@@ -283,8 +283,8 @@ This bothered many programmers so they created the **border box** to include the
       top: 60px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it’s top-left corner.</span>
--   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
+-   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
 
 <!-- -->
 
@@ -311,7 +311,7 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" /></figure>-   <span id="528a">Example where the absolute element has it’s bottom property modified.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" /></figure>-   <span id="528a">Example where the absolute element has it's bottom property modified.</span>
 
 <!-- -->
 
@@ -323,18 +323,18 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" /></figure>-   <span id="f676">If we removed the container’s relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" /></figure>-   <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
 
 **Fixed Positioning**
 
--   <span id="fe31">Another positioning that removes it’s element from the page flow, and automatically positions it’s parent as the HTML doc itself.</span>
+-   <span id="fe31">Another positioning that removes it's element from the page flow, and automatically positions it's parent as the HTML doc itself.</span>
 -   <span id="2388">Fixed also uses top, right, bottom, and left.</span>
 -   <span id="3903">Useful for things like nav bars or other features we want to keep visible as the user scrolls.</span>
 
 **Sticky Positioning**
 
--   <span id="8ae2">Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any _scrolling_ ancestors.</span>
--   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it’s viewport — then it sticks!</span>
+-   <span id="8ae2">Remains in it's original position in the page flow, and it is positioned relative to it's closest block-level ancestor and any _scrolling_ ancestors.</span>
+-   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it's viewport — then it sticks!</span>
 -   <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
 -   <span id="9080">A good example are headers in a scrollable list.</span>
 
@@ -342,18 +342,18 @@ This bothered many programmers so they created the **border box** to include the
 
 ---
 
-### Flexible Box Model
+### Flexible Box Model
 
 -   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
 -   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
 -   <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
--   <span id="ba98">To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
+-   <span id="ba98">To 'clear' a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
 
 -   <span id="e23b">Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>-   <span id="b505">Flexbox layout applies styles to the parent element, and it’s children.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>-   <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
 
 <!-- -->
 
@@ -369,22 +369,22 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="f0d8">`align-content` redistributes extra space on the cross axis.</span>
 -   <span id="531c">By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.</span>
 -   <span id="39b0">Some other properties we can use on flex items are:</span>
--   <span id="ec38">`flex-grow` : dictates amount of avail. space the item should take up.</span>
--   <span id="0916">`flex-shrink` : defines the ability for a flex item to shrink.</span>
--   <span id="4dda">`flex-basis` : Default size of an element before the remaining space is distributed.</span>
--   <span id="d9f2">`flex` : shorthand for grow, shrink and basis.</span>
--   <span id="f127">`align-self` : Overrides default alignment in the container.</span>
+-   <span id="ec38">`flex-grow` : dictates amount of avail. space the item should take up.</span>
+-   <span id="0916">`flex-shrink` : defines the ability for a flex item to shrink.</span>
+-   <span id="4dda">`flex-basis` : Default size of an element before the remaining space is distributed.</span>
+-   <span id="d9f2">`flex` : shorthand for grow, shrink and basis.</span>
+-   <span id="f127">`align-self` : Overrides default alignment in the container.</span>
 
 ---
 
 ### Grid Layout
 
--   <span id="cc4f">CSS Grid is a 2d layout system that let’s use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)</span>
+-   <span id="cc4f">CSS Grid is a 2d layout system that let's use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)</span>
 
 **Bootstrap vs CSS Grid**
 
 -   <span id="4af2">Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.</span>
--   <span id="e404">Grid applies style to a parent container and it’s child elements.</span>
+-   <span id="e404">Grid applies style to a parent container and it's child elements.</span>
 
 <!-- -->
 
@@ -417,7 +417,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="26c3">Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.</span>
 -   <span id="a117">`Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.</span>
 -   <span id="17ae">Combine areas with templates to define how much space an area should take up.</span>
--   <span id="f90a">`Grid Gaps` can be used to create ‘gutters’ between grid item.s</span>
+-   <span id="f90a">`Grid Gaps` can be used to create 'gutters' between grid item.s</span>
 -   <span id="d7c0">The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.</span>
 -   <span id="cef6">We can also `implicitly` define grids.</span>
 
@@ -431,7 +431,7 @@ This bothered many programmers so they created the **border box** to include the
       grid-auto-rows: 50px;
     }
 
--   <span id="e6d3">Any grid items that aren’t explicity placed are automatically placed or _re-flowed_</span>
+-   <span id="e6d3">Any grid items that aren't explicity placed are automatically placed or _re-flowed_</span>
 
 **Spanning Columns & Rows**
 
@@ -459,7 +459,7 @@ This bothered many programmers so they created the **border box** to include the
 **Grid Areas**
 
 -   <span id="9dd0">We use the grid areas in conjunction with grid-container property to **define sections of the layout**.</span>
--   <span id="5ec2">We can then assign named sections to individual element’s css rules.</span>
+-   <span id="5ec2">We can then assign named sections to individual element's css rules.</span>
 
 **Justify & Align Self**
 
@@ -483,22 +483,22 @@ This bothered many programmers so they created the **border box** to include the
 
 The Pseudo Class Selector `hover` activates when the cursor goes over the selected element.
 
-**Content Overflow**- You can apply an `overflow` content property to an element if it’s inner contents are spilling over.
+**Content Overflow**- You can apply an `overflow` content property to an element if it's inner contents are spilling over.
 
-There are three members in the overflow family: — `overflow-x` : Apply horizontally. - `overflow-y` : Apply vertically. - `overflow` : Apply both directions.
+There are three members in the overflow family: — `overflow-x` : Apply horizontally. - `overflow-y` : Apply vertically. - `overflow` : Apply both directions.
 
 ### Transitions
 
 -   <span id="b5a7">Transitions provide a way to control animation speed when changing CSS properties.</span>
--   <span id="2e1b">**Implicit Transitions** : Animations that involve transitioning between two states.</span>
+-   <span id="2e1b">**Implicit Transitions** : Animations that involve transitioning between two states.</span>
 
 **Defining Transitions**
 
--   <span id="bbd6">`transition-property` : specifies the name of the CSS property to apply the transition.</span>
--   <span id="6340">`transition-duration` : during of the transition.</span>
--   <span id="7463">`transition-delay` : time before the transition should start.</span>
+-   <span id="bbd6">`transition-property` : specifies the name of the CSS property to apply the transition.</span>
+-   <span id="6340">`transition-duration` : during of the transition.</span>
+-   <span id="7463">`transition-delay` : time before the transition should start.</span>
 
-**Examples** :
+**Examples** :
 
     #delay {
       font-size: 14px;
@@ -537,7 +537,7 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
 -   <span id="6474">BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.</span>
 -   <span id="6d0c">**BEM** stands for `block`, `element`, `modifier`.</span>
 -   <span id="3eb9">**Block**</span>
--   <span id="f6b4">A standalone entity that is meaningful on it’s own.</span>
+-   <span id="f6b4">A standalone entity that is meaningful on it's own.</span>
 -   <span id="7e86">Can be nested and interact with one another.</span>
 -   <span id="338e">Holistic entities without DOM rep can be blocks.</span>
 -   <span id="f2f0">May consist latin letters, digits, and dashes.</span>
@@ -546,7 +546,7 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
 -   <span id="1b95">Part of a block and has no standalone meaning.</span>
 -   <span id="b5cf">Any element that is semantically tied to a block.</span>
 -   <span id="10e2">May consist latin letters, digits, and dashes.</span>
--   <span id="9b79">Formed by using two underscores after it’s block name.</span>
+-   <span id="9b79">Formed by using two underscores after it's block name.</span>
 -   <span id="e282">Any DOM node within a block can be an element.</span>
 -   <span id="a0dc">Element classes should be used independently.</span>
 -   <span id="26f1">**Modifier**</span>
@@ -575,11 +575,11 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
     .form__submit--disabled {
     }
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:

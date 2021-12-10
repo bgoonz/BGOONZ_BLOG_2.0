@@ -18,12 +18,10 @@ template: docs
 # Actual Docs:
 
 <br>
-
+<br>
+<br>
 <br>
 
-<br>
-
-<br>
 <h1>  Docs</h1>
 <br>
 

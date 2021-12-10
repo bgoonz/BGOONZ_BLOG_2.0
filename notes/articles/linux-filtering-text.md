@@ -20,10 +20,10 @@ $ man awk
 
 [![freestar](https://a.pub.network/core/imgs/fslogo-green.svg)](https://freestar.com/?utm_medium=ad_container&utm_source=branding&utm_name=tecmint_incontent)
 
-**sed** is a powerful stream editor for filtering and transforming text. We’ve already written a two useful articles on sed, that you can go through it here:
+**sed** is a powerful stream editor for filtering and transforming text. We've already written a two useful articles on sed, that you can go through it here:
 
-1.  [How to use GNU ‘sed’ Command to Create, Edit, and Manipulate files in Linux](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
-2.  [15 Useful ‘sed’ Command Tips and Tricks for Daily Linux System Administration Tasks](https://www.tecmint.com/linux-sed-command-tips-tricks/)
+1.  [How to use GNU 'sed' Command to Create, Edit, and Manipulate files in Linux](https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/)
+2.  [15 Useful 'sed' Command Tips and Tricks for Daily Linux System Administration Tasks](https://www.tecmint.com/linux-sed-command-tips-tricks/)
 
 The sed man page has added control options and instructions:
 
@@ -47,7 +47,7 @@ Below are some basic grep commands:
 **tecmint@TecMint ~ $** cat /etc/passwd | grep "aronkilik"
 **aaronkilik:x:1001:1001::/home/aaronkilik:**
 
-You can read more about [What’s Difference Between Grep, Egrep and Fgrep in Linux?](https://www.tecmint.com/difference-between-grep-egrep-and-fgrep-in-linux/).
+You can read more about [What's Difference Between Grep, Egrep and Fgrep in Linux?](https://www.tecmint.com/difference-between-grep-egrep-and-fgrep-in-linux/).
 
 ### 4\. head Command
 
@@ -137,10 +137,10 @@ windowsmint.com
 
 You can use **sort** command in many ways, go through some of the useful articles on sort command as follows:
 
-1.  [14 Useful Examples of Linux ‘sort’ Command – Part 1](https://www.tecmint.com/sort-command-linux/)
-2.  [7 Interesting Linux ‘sort’ Command Examples – Part 2](https://www.tecmint.com/linux-sort-command-examples/)
+1.  [14 Useful Examples of Linux 'sort' Command – Part 1](https://www.tecmint.com/sort-command-linux/)
+2.  [7 Interesting Linux 'sort' Command Examples – Part 2](https://www.tecmint.com/linux-sort-command-examples/)
 3.  [How to Find and Sort Files Based on Modification Date and Time](https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/)
-4.  [How to Sort Output of ‘ls’ Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
+4.  [How to Sort Output of 'ls' Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
 
 ### 7\. uniq Command
 
@@ -241,7 +241,7 @@ $ tr options set1 set2
 
 Take a look at the examples below, in the first command, `set1( [:upper:] )` represents the case of input characters (all upper case).
 
-Then `set2([:lower:])` represents the case in which the resultant characters will be. It’s same thing in the second example and the escape sequence `\n` means print output on a new line:
+Then `set2([:lower:])` represents the case in which the resultant characters will be. It's same thing in the second example and the escape sequence `\n` means print output on a new line:
 
 **tecmint@TecMint ~ $** **echo "WWW.TECMINT.COM" | tr \[:upper:\] \[:lower:\]**
 www.tecmint.com
@@ -283,7 +283,7 @@ You can use it to view large files like so:
 
 ### 12\. less Command
 
-**less** is the opposite of **more** command above but it offers extra features and it’s a little faster with large files.
+**less** is the opposite of **more** command above but it offers extra features and it's a little faster with large files.
 
 Use it in the same way as more:
 
@@ -313,9 +313,9 @@ Use it in the same way as more:
 \[ 0.000000\] BIOS-e820: \[mem 0x00000000a5eb0000-0x00000000aaabefff\] usable
 :
 
-Learn Why [‘less’ is Faster Than ‘more’ Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) for effective file navigation in Linux.
+Learn Why ['less' is Faster Than 'more' Command](https://www.tecmint.com/linux-more-command-and-less-command-examples/) for effective file navigation in Linux.
 
-That’s all for now, do let us know of any [useful command line tools](https://www.tecmint.com/tag/linux-tricks/) not mentioned here, that act as a text filters in Linux via the comment section below.
+That's all for now, do let us know of any [useful command line tools](https://www.tecmint.com/tag/linux-tricks/) not mentioned here, that act as a text filters in Linux via the comment section below.
 
 ## If You Appreciate What We Do Here On TecMint, You Should Consider:
 

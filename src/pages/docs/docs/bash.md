@@ -14,40 +14,40 @@ template: docs
 
 # Bash Commands That Save Me Time and Frustration
 
-Here’s a list of bash commands that stand between me and insanity.
+Here's a list of bash commands that stand between me and insanity.
 
 ---
 
 ### Bash Commands That Save Me Time and Frustration
 
-#### Here’s a list of bash commands that stand between me and insanity.
+#### Here's a list of bash commands that stand between me and insanity.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
 
-> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"><strong>github repository</strong></a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
+> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"><strong>github repository</strong></a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough"><strong>bgoonz/bash-commands-walkthrough</strong><br />
 <em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-> The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
+> The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
-**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
+**I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you're like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" /></figure>
 
-### Here’s a Cheatsheet:
+### Here's a Cheatsheet:
 
 ### Getting Started (Advanced Users Skip Section):
 
 ---
 
-#### ✔ Check the Current Directory ➡ `pwd`:
+#### ✔ Check the Current Directory ➡ `pwd`:
 
-On the command line, it’s important to know the directory we are currently working on. For that, we can use `pwd` command.
+On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I’m working on my Desktop directory.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I'm working on my Desktop directory.
 
-#### ✔ Display List of Files ➡ `ls`:
+#### ✔ Display List of Files ➡ `ls`:
 
 To see the list of files and directories in the current directory use `ls` command in your CLI.
 
@@ -56,9 +56,9 @@ To see the list of files and directories in the current directory use `ls` comma
 -   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
 -   <span id="5cd8">Some useful `ls` command options:-</span>
 
-OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
+OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
-#### ✔ Create a Directory ➡ `mkdir`:
+#### ✔ Create a Directory ➡ `mkdir`:
 
 We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
@@ -66,19 +66,19 @@ We can create a new folder using the `mkdir` command. To use it type `mkdir fold
 
 I created a cli-practice directory in my working directory i.e. Desktop directory.
 
-#### ✔ Move Between Directories ➡ `cd`:
+#### ✔ Move Between Directories ➡ `cd`:
 
-It’s used to change directory or to move other directories. To use it type `cd directory_name`.
+It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" /></figure>Can use `pwd` command to confirm your directory name.
 
-Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.
+Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
-#### ✔ Parent Directory ➡ `..`:
+#### ✔ Parent Directory ➡ `..`:
 
-We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
+We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
 
-#### ✔ Create Files ➡ `touch`:
+#### ✔ Create Files ➡ `touch`:
 
 We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
@@ -86,13 +86,13 @@ We can create an empty file by typing `touch file_name`. It's going to create a 
 
 Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
-#### ✔ Display the Content of a File ➡ `cat`:
+#### ✔ Display the Content of a File ➡ `cat`:
 
 We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif" class="graf-image" /></figure>Shows the content of my hello.txt file.
 
-#### ✔ Move Files & Directories ➡ `mv`:
+#### ✔ Move Files & Directories ➡ `mv`:
 
 To move a file and directory, we use `mv` command.
 
@@ -108,7 +108,7 @@ Before using this command, we are going to create two more directories and anoth
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif" class="graf-image" /></figure>Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
-#### ✔ Rename Files & Directories ➡ `mv`:
+#### ✔ Rename Files & Directories ➡ `mv`:
 
 `mv` command can also be used to rename a file and a directory.
 
@@ -116,7 +116,7 @@ You can rename a file by typing `mv old_file_name new_file_name` & also rename a
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif" class="graf-image" /></figure>Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
-#### ✔ Copy Files & Directories ➡ `cp`:
+#### ✔ Copy Files & Directories ➡ `cp`:
 
 To do this, we use the `cp` command.
 
@@ -130,7 +130,7 @@ _The_ `-r` _option for "recursive" means that it will copy all of the files incl
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
 
-#### ✔ Remove Files & Directories ➡ `rm`:
+#### ✔ Remove Files & Directories ➡ `rm`:
 
 To do this, we use the `rm` command.
 
@@ -142,11 +142,11 @@ To do this, we use the `rm` command.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
-#### ✔ Clear Screen ➡ `clear`:
+#### ✔ Clear Screen ➡ `clear`:
 
 Clear command is used to clear the terminal screen.
 
-#### ✔ Home Directory ➡ `~`:
+#### ✔ Home Directory ➡ `~`:
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
@@ -172,7 +172,7 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 ---
 
-### 3.) Clean up unnecessary files/folders in git repo:
+### 3.) Clean up unnecessary files/folders in git repo:
 
     find . -empty -type f -print -delete #Remove empty files
 
@@ -208,11 +208,11 @@ The following output from my bash shell corresponds to the directory:
     pwd
     /mnt/c/Users/bryan/Downloads/bash-commands/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master
 
-> **After printing the working directory for good measure:**
+> **After printing the working directory for good measure:**
 
     find . -empty -type f -print -delete
 
-> **The above command deletes empty files recursively starting from the directory in which it was run:**
+> **The above command deletes empty files recursively starting from the directory in which it was run:**
 
     ./CONTENT/DS-n-Algos/File-System/file-utilities/node_modules/line-reader/test/data/empty_file.txt
     ./CONTENT/DS-n-Algos/_Extra-Practice/free-code-camp/nodejs/http-collect.js
@@ -223,7 +223,7 @@ The following output from my bash shell corresponds to the directory:
     ./node_modules/web-dev-utils/Markdown-Templates/Markdown-Templates-master/filled-out-readme.md
     |01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o>
 
-> **The command seen below deletes empty folders recursively starting from the directory in which it was run:**
+> **The command seen below deletes empty folders recursively starting from the directory in which it was run:**
 
     find . -empty -type d -print -delete
 
@@ -237,15 +237,15 @@ The following output from my bash shell corresponds to the directory:
     ./.git/refs/tags
     |01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o>
 
-> **The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files**
+> **The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files**
 
     find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.**
+**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo's you wish to keep exclusively for your own reference.**
 
-### !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
+### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
 ---
 
@@ -339,7 +339,7 @@ The following output from my bash shell corresponds to the directory:
 
 ---
 
-### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
+### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
     wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off
 
@@ -367,7 +367,7 @@ The following output from my bash shell corresponds to the directory:
 
     badFolder Implementing Private Fields for JavaScript
 
-    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I'll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, June 8, 2021 by Matthew Gaudet
 
@@ -387,9 +387,9 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Wednesday, May 19, 2021 by Gabriele Svelto badFolder
 
-    Introducing Firefox’s new Site Isolation Security Architecture
+    Introducing Firefox's new Site Isolation Security Architecture
 
-    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox's new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, May 18, 2021 by Anny Gakhokidze
 
@@ -399,15 +399,15 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-**_I modified the command slightly to apply only to files called ‘result.md’:_**
+**_I modified the command slightly to apply only to files called 'result.md':_**
 
-> The result is :
+> The result is :
 
     Hacks Blog
 
     Read more at hacks.mozilla.org
 
-    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+    When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I'll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, June 8, 2021 by Matthew Gaudet
 
@@ -419,9 +419,9 @@ The following output from my bash shell corresponds to the directory:
 
     Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
 
-    Introducing Firefox’s new Site Isolation Security Architecture
+    Introducing Firefox's new Site Isolation Security Architecture
 
-    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+    Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox's new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
 
     Posted Tuesday, May 18, 2021 by Anny Gakhokidze
 
@@ -440,13 +440,13 @@ The following output from my bash shell corresponds to the directory:
 
 ### 7.) Execute command recursively:
 
-**Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…**
+**Here I have modified the command I wish to run recursively to account for the fact that the 'find' command already works recursively, by appending the -maxdepth 1 flag…**
 
-> **I am essentially removing the recursive action of the find command…**
+> **I am essentially removing the recursive action of the find command…**
 
 **That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory… is working properly!**
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
+<figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
 **The results of said operation can be found in the** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run" class="markup--anchor markup--p-anchor"><strong>following directory</strong></a>
 
@@ -456,7 +456,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" /></figure>
 
-#### The final result is:
+#### The final result is:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" /></figure>
 
@@ -494,7 +494,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 **Here are some of the other commands I will cover in greater detail… at a later time:**
 
-### 9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js
+### 9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js
 
     sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
@@ -506,7 +506,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 11. Sanatize file and folder names to remove illegal characters and reserved words.
+### 11. Sanatize file and folder names to remove illegal characters and reserved words.
 
     sanitize() {
       shopt -s extglob;
@@ -533,7 +533,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 12. Start postgresql in terminal
+### 12. Start postgresql in terminal
 
     sudo -u postgres psql
 
@@ -550,7 +550,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 14. Batch Download Videos
+### 14. Batch Download Videos
 
     #!/bin/bash
 
@@ -570,19 +570,19 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ---
 
-### 15. Change File Extension from ‘.txt’ to .doc for all files in working directory.
+### 15. Change File Extension from '.txt' to .doc for all files in working directory.
 
     sudo apt install rename
 
     rename 's/\.txt$/.doc/' *.txt
 
-### 16. Recursivley change any file with extension .js.download to .js
+### 16. Recursivley change any file with extension .js.download to .js
 
     find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
 ---
 
-### 17. Copy folder structure including only files of a specific extension into an ouput Folder
+### 17. Copy folder structure including only files of a specific extension into an ouput Folder
 
     find . -name '*.md' | cpio -pdm './../outputFolder'
 
@@ -593,7 +593,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Part 2 of this series:
+### Part 2 of this series:
 
 <a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong><br />
 <em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
@@ -1149,9 +1149,9 @@ sudo sed -i '/author/d' ./*
 > Notes:
 > //...syntax of uniq...//
 > $uniq [OPTION] [INPUT[OUTPUT]]
-> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output.
+> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output.
 
-Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
+Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
 ###### code:
 
@@ -2785,7 +2785,7 @@ ALT+.   # pastes last word from the last command. Pressing it repeatedly travers
 ALT+U   # capitalizes every character from the current cursor position to the end of the word
 ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
 ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
-ALT+R   # reverts any changes to a command you’ve pulled from your history if you’ve edited it.
+ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
 ALT+?   # list possible completions to what is typed
 ALT+^   # expand line to most recent match from history
 

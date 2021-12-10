@@ -9,7 +9,7 @@ The `Object.assign()` method copies all [enumerable](propertyisenumerable) [own 
 ### Parameters
 
 `target`  
-The target object — what to apply the sources’ properties to, which is returned after it is modified.
+The target object — what to apply the sources' properties to, which is returned after it is modified.
 
 `sources`  
 The source object(s) — objects containing the properties you want to apply.

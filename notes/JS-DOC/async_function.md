@@ -13,7 +13,7 @@ Async functions may also be defined [as expressions](../operators/async_function
 ### Parameters
 
 `name`  
-The function’s name.
+The function's name.
 
 `param`  
 The name of an argument to be passed to the function.

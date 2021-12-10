@@ -47,7 +47,7 @@ A regular expression pattern is composed of simple characters, such as `/abc/`, 
 
 The last example includes **parentheses, which are used as a memory device**. _The match made with this part of the pattern is remembered for later use._
 
-### Using simple patterns
+### Using simple patterns
 
 Simple patterns are constructed of characters for which you want to find a direct match.
 
@@ -67,15 +67,15 @@ For example, to match _a single_ `"a"` _followed by zero or more_ `"b"`_s follow
 
 > the `*` after `"b"` means "0 or more occurrences of the preceding item." In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor"><strong>Assertions</strong></a>** : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor"><strong>Assertions</strong></a>** : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html" class="markup--anchor markup--p-anchor"><strong>Character classes</strong></a>** : Distinguish different types of characters. For example, distinguishing between letters and digits.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html" class="markup--anchor markup--p-anchor"><strong>Character classes</strong></a>** : Distinguish different types of characters. For example, distinguishing between letters and digits.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Groups_and_Ranges.html" class="markup--anchor markup--p-anchor"><strong>Groups and ranges</strong></a>** : Indicate groups and ranges of expression characters.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Groups_and_Ranges.html" class="markup--anchor markup--p-anchor"><strong>Groups and ranges</strong></a>** : Indicate groups and ranges of expression characters.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Quantifiers.html" class="markup--anchor markup--p-anchor"><strong>Quantifiers</strong></a>** : Indicate numbers of characters or expressions to match.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Quantifiers.html" class="markup--anchor markup--p-anchor"><strong>Quantifiers</strong></a>** : Indicate numbers of characters or expressions to match.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Unicode_Property_Escapes.html" class="markup--anchor markup--p-anchor"><strong>Unicode property escapes</strong></a>** : Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Unicode_Property_Escapes.html" class="markup--anchor markup--p-anchor"><strong>Unicode property escapes</strong></a>** : Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.**
 
 If you want to look at all the special characters that can be used in regular expressions in a single table, see the following:
 
@@ -231,7 +231,7 @@ The occurrences of `/d(b+)d/g` in the two statements are different regular expre
 
 If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.
 
-### \[Advanced searching with flags\]
+### \[Advanced searching with flags\]
 
 Regular expressions have **six optional flags** that allow for functionality like global and case insensitive searching.
 
@@ -247,7 +247,7 @@ Flag Description Corresponding property
 
 `m` Multi-line search. `RegExp.prototype.multiline`
 
-`s` Allows `.` to match newline characters. `RegExp.prototype.dotAll`
+`s` Allows `.` to match newline characters. `RegExp.prototype.dotAll`
 
 `u` "unicode"; treat a pattern as a sequence of unicode code points. `RegExp.prototype.unicode`
 
@@ -284,17 +284,17 @@ with:
 
 and get the same result.
 
-The behavior associated with the `g` flag is different when the `.exec()` method is used.
+The behavior associated with the `g` flag is different when the `.exec()` method is used.
 
 The roles of "class" and "argument" get reversed:
 
-In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument,
+In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument,
 
-while in the case of `.exec()`, it is the regular expression that owns the method, with the string being the argument.
+while in the case of `.exec()`, it is the regular expression that owns the method, with the string being the argument.
 
 Contrast this `str.match(re)` versus `re.exec(str)`.
 
-The `g` flag is used with the `.exec()` method to get iterative progression.
+The `g` flag is used with the `.exec()` method to get iterative progression.
 
     let xArray; while(xArray = re.exec(str)) console.log(xArray);
     // produces:
@@ -306,11 +306,11 @@ The `m` flag is used to specify that a multiline input string should be treated 
 
 If the `m` flag is used, `^` and `$` match at the start or end of any line within the input string instead of the start or end of the entire string.
 
-### Using special characters to verify input
+### Using special characters to verify input
 
 In the following example, the user is expected to enter a phone number. When the user presses the "Check" button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
 
-Within non-capturing parentheses `(?:` , the regular expression looks for three numeric characters `\d{3}` OR `|` a left parenthesis `\(` followed by three digits` \d{3}`, followed by a close parenthesis `\)`, (end non-capturing parenthesis `)`), followed by one dash, forward slash, or decimal point and when found, remember the character `([-\/\.])`, followed by three digits `\d{3}`, followed by the remembered match of a dash, forward slash, or decimal point `\1`, followed by four digits `\d{4}`.
+Within non-capturing parentheses `(?:` , the regular expression looks for three numeric characters `\d{3}` OR `|` a left parenthesis `\(` followed by three digits` \d{3}`, followed by a close parenthesis `\)`, (end non-capturing parenthesis `)`), followed by one dash, forward slash, or decimal point and when found, remember the character `([-\/\.])`, followed by three digits `\d{3}`, followed by the remembered match of a dash, forward slash, or decimal point `\1`, followed by four digits `\d{4}`.
 
 The `Change` event activated when the user presses Enter sets the value of `RegExp.input`.
 
@@ -339,11 +339,11 @@ The `Change` event activated when the user presses Enter sets the value of `RegE
 
 ### Cheat Sheet
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*VmpGy_BYCekOncdyrgSrxw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*VmpGy_BYCekOncdyrgSrxw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
 
-> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz’s</strong> gists · GitHub</a>
+> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
