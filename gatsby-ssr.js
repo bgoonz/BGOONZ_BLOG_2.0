@@ -7,24 +7,19 @@
 const React = require("react");
 const withPrefix = require("./src/utils/withPrefix").default;
 
-exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
+exports.onRenderBody = function({ setHeadComponents, setPostBodyComponents }) {
 
     setHeadComponents([
-
+        
     ]);
 
     setPostBodyComponents([
         <React.Fragment>
-            <script src={withPrefix('js/plugins.js')} />
-            <script src={withPrefix('js/main.js')} />
-            <script src={withPrefix('js/page-load.js')} />
-            <script src={withPrefix('js/page-unload.js')} />
-            <script src={withPrefix('js/blm.js')} />
-            <script src={withPrefix('js/addthis.js')} />
-            <script src={withPrefix('js/analytics.js')} />
-            <script src={withPrefix('js/google-search.js')} />
-            <script src={withPrefix('js/prism.js')} />
-            <script src={withPrefix('js/prism.js')} />
+            <script src={withPrefix('js/plugins.js')}/>
+            <script src={withPrefix('js/main.js')}/>
+            <script src={withPrefix('js/page-load.js')}/>
+            <script src={withPrefix('js/page-unload.js')}/>
+            
         </React.Fragment>
     ]);
 

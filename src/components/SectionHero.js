@@ -1,38 +1,27 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { withPrefix, markdownify } from '../utils';
+import { toStyleObj, withPrefix, markdownify } from '../utils';
 import CtaButtons from './CtaButtons';
 
 export default class SectionHero extends React.Component {
     render() {
-        const section = _.get(this.props, 'section');
-        const sectionId = _.get(section, 'section_id');
-        const title = _.get(section, 'title');
-        const content = _.get(section, 'content');
-        const actions = _.get(section, 'actions');
-        const backgroundImage = _.get(section, 'image');
-
+        let section = _.get(this.props, 'section', null);
         return (
-            <section id={sectionId} className="block block-hero has-gradient outer">
-                {backgroundImage && (
-                    <div
-                        className="bg-img"
-                        style={{
-                            backgroundImage: `url('${withPrefix(backgroundImage)}')`
-                        }}
-                    />
+            <section id={_.get(section, 'section_id', null)} className="block block-hero has-gradient outer">
+                {_.get(section, 'image', null) && (
+                    <div className="bg-img" style={toStyleObj("background-image: url('" + withPrefix(_.get(section, 'image', null)) + "')")} />
                 )}
                 <div className="inner-sm">
-                    {title && (
+                    {_.get(section, 'title', null) && (
                         <div className="block-header">
-                            <h1 className="block-title">{title}</h1>
+                            <h1 className="block-title">{_.get(section, 'title', null)}</h1>
                         </div>
                     )}
-                    {content && <div className="block-content">{markdownify(content)}</div>}
-                    {!_.isEmpty(actions) && (
+                    {_.get(section, 'content', null) && <div className="block-content">{markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'actions', null) && (
                         <div className="block-buttons">
-                            <CtaButtons actions={actions} />
+                            <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
                         </div>
                     )}
                 </div>
