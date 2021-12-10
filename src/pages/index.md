@@ -47,9 +47,7 @@ sections:
             style: link
         image_alt: python
         title: Python Guide
-        title_url: >-
-
-          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+        title_url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
         image: images/smiling-maple.png
       - content: |
 
