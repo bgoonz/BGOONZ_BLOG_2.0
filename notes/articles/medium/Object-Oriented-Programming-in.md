@@ -289,7 +289,7 @@ Defining Methods
 
     console.log(bookTitles.join(", ")); // The Fellowship of the Ring, The Two Towers
 
--   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are *defined directly on the constructor function* — whereas instance methods need to be defined on the _prototype_ object.</span>
+-   <span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are _defined directly on the constructor function_ — whereas instance methods need to be defined on the _prototype_ object.</span>
 
 <!-- -->
 

@@ -141,11 +141,11 @@ My Awesome JavaScript List Part 2
 
 ---
 
->  
+>
 
 > CLI
 
->  
+>
 
 > · ​<a href="https://github.com/klaussinani/qoa" class="markup--anchor markup--pullquote-anchor">qoa</a> — Minimal interactive command-line prompts.
 
@@ -153,7 +153,7 @@ My Awesome JavaScript List Part 2
 
 > Test
 
->  
+>
 
 > · ​<a href="https://github.com/unexpectedjs/unexpected" class="markup--anchor markup--pullquote-anchor">Unexpected</a> — Extensible BDD assertion toolkit. (<a href="https://unexpected.js.org/" class="markup--anchor markup--pullquote-anchor">Docs</a>)
 
@@ -169,11 +169,11 @@ My Awesome JavaScript List Part 2
 
 ---
 
->  
+>
 
 > State management
 
->  
+>
 
 > · ​<a href="https://github.com/jaredpalmer/mutik" class="markup--anchor markup--pullquote-anchor">Mutik</a> — Tiny (495B) immutable state management library based on Immer.
 
@@ -209,21 +209,21 @@ My Awesome JavaScript List Part 2
 
 ---
 
->  
+>
 
 > API bindings
 
->  
+>
 
 > · ​<a href="https://github.com/dilame/instagram-private-api" class="markup--anchor markup--pullquote-anchor">NodeJS Instagram private API client</a>​
 
 ---
 
->  
+>
 
 > DB
 
->  
+>
 
 > · ​<a href="https://github.com/sql-js/sql.js" class="markup--anchor markup--pullquote-anchor">sql.js</a> — SQLite compiled to JavaScript. Allows you to create a relational database and query it entirely in the browser. (<a href="https://sql.js.org/#/" class="markup--anchor markup--pullquote-anchor">Docs</a>) (<a href="https://news.ycombinator.com/item?id=25008308" class="markup--anchor markup--pullquote-anchor">HN</a>)
 
@@ -235,11 +235,11 @@ My Awesome JavaScript List Part 2
 
 ---
 
->  
+>
 
 > React
 
-> This is gonna be a big section…. 
+> This is gonna be a big section….
 
 > · ​<a href="https://github.com/tanem/state-machines-in-react" class="markup--anchor markup--pullquote-anchor">state-machines-in-react</a> — Small React, xstate and Framer Motion demo.
 
@@ -807,7 +807,7 @@ My Awesome JavaScript List Part 2
 
 > MISC
 
->  
+>
 
 > · ​<a href="https://github.com/mxstbr/micro-github" class="markup--anchor markup--pullquote-anchor">micro github</a> — Tiny microservice that makes adding authentication with GitHub to your application easy.
 
