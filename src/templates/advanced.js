@@ -1,30 +1,33 @@
 import React from 'react';
 import _ from 'lodash';
-import {graphql} from 'gatsby';
 
-import components, {Layout} from '../components/index';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-  query($url: String) {
-    sitePage(path: {eq: $url}) {
-      id
-    }
-  }
-`;
+import components, { Layout } from '../components/index';
+import { getPageUrl } from '../utils';
 
 export default class Advanced extends React.Component {
     render() {
+        const data = _.get(this.props, 'data');
+        const config = _.get(data, 'config');
+        const posts = _.get(this.props, 'posts');
+        const docs = _.get(this.props, 'docs');
+        const page = _.get(this.props, 'page');
+        const sections = _.get(page, 'sections');
+        const pageUrl = getPageUrl(page);
+
         return (
-            <Layout {...this.props}>
-            {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-                let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-                let Component = components[component];
-                return (
-                  <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />
-                )
-            })}
+            <Layout page={page} config={config}>
+                {_.map(sections, (section, index) => {
+                    const sectionType = _.get(section, 'type');
+                    const component = _.upperFirst(_.camelCase(sectionType));
+                    if (!component) {
+                        throw new Error(`page section does not have the 'type' property, page: ${pageUrl}`);
+                    }
+                    const Component = components[component];
+                    if (!Component) {
+                        throw new Error(`no component matching the page section's type: ${sectionType}`);
+                    }
+                    return <Component key={index} section={section} data={data} posts={posts} docs={docs} />;
+                })}
             </Layout>
         );
     }
