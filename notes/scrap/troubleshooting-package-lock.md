@@ -140,57 +140,52 @@ As you can see in the following  `package-lock.json`example, webpack  `4.28.1`  
     ...\
 ...
 
-> The  `package-lock.json  `will update and change whenever you, an other dev or the build server executes  `npm install`  and a new version of a used package is available!
+> The `package-lock.json `will update and change whenever you, an other dev or the build server executes `npm install` and a new version of a used package is available!
 
 > In such a large repository like the npm registry, things can fail, even if all the people try to stick to SemVer and don't brake anything, in the end we are all human.
 >
 > In our case, a referenced package was deleted by npm registry because it was vulnerable, and our build server broke. (because of our wrong setup of version definitions and npm install)
 
-The right way
--------------
+## The right way
 
-If we use  `npm ci`  it will only install the packages in the versions mentioned in the  `package-lock.json`  (under  *dependencies*).\
+If we use `npm ci` it will only install the packages in the versions mentioned in the `package-lock.json` (under _dependencies_).\
 No magic updates of packages on the build server anymore. It's that simple.
 
-> Just update your build task / build server / CI to execute  `npm ci`  instead of  `npm install`.
+> Just update your build task / build server / CI to execute `npm ci` instead of `npm install`.
 
-What about development environments?
-====================================
+# What about development environments?
 
 The same situation could also help on development environments. Especially if you work in a team with other developers, where they maybe don't want to deal with node/npm stuff.
 
-If the developers make a  `npm ci`  instead of an  `npm install`  everyone in the team will have the same versions of all the packages. This should mitigate further issues with any updated packages as it might happen with the install task.
+If the developers make a `npm ci` instead of an `npm install` everyone in the team will have the same versions of all the packages. This should mitigate further issues with any updated packages as it might happen with the install task.
 
-Package updates
----------------
+## Package updates
 
 Now you can delegate the task for updating packages to a developer. Merge conflicts will not happen anymore / at least not that often. Of course you should do updates regularly and always check for vulnerabilities.\
-`npm audit`  or other tools can help you here:
+`npm audit` or other tools can help you here:
 
 -   <https://docs.npmjs.com/cli/audit>
 -   <https://docs.npmjs.com/cli/outdated>
 -   <https://docs.npmjs.com/cli/update>
 
-Merge conflicts
----------------
+## Merge conflicts
 
-If I did understand correctly, one needs to merge the  `package.json`  only and then you can make a npm install to update the lock file again.\
+If I did understand correctly, one needs to merge the `package.json` only and then you can make a npm install to update the lock file again.\
 I also found out that there is a package which can help out further:
 
--   Have a look at  [npm-merge-driver](https://www.npmjs.com/package/npm-merge-driver)  --- automatic merging of lockfiles
+-   Have a look at [npm-merge-driver](https://www.npmjs.com/package/npm-merge-driver) --- automatic merging of lockfiles
 
 > I did not yet try it out...
 
-Challenges
-==========
+# Challenges
 
 There might be further challenges, depending on your workflows or setups. Please take care and take note for the following cases:
 
--   `npm ci`  will take a bit longer, when it has to delete the  `node_modules`
--   adding  `npm ci`to your "project open" might help other devs
+-   `npm ci` will take a bit longer, when it has to delete the `node_modules`
+-   adding `npm ci`to your "project open" might help other devs
 -   what about switching branches?
--   make sure  `npm ci`  is not running too often (not on every local build) --- maybe use  [build-if-changed](https://www.npmjs.com/package/build-if-changed)  or similar helpers
--   And for the future, keep an eye on  [tink](https://www.npmjs.com/package/tink)
+-   make sure `npm ci` is not running too often (not on every local build) --- maybe use [build-if-changed](https://www.npmjs.com/package/build-if-changed) or similar helpers
+-   And for the future, keep an eye on [tink](https://www.npmjs.com/package/tink)
 
 > I am thinking about improving and automating the install for other devs in my team, but right now it still seems the best to simply do it manually.
 
@@ -198,17 +193,16 @@ There might be further challenges, depending on your workflows or setups. Please
 
 ![](https://miro.medium.com/max/473/0*-_vexX_n4O45q-3X)
 
-Photo by  [Matt Sclarandis](https://unsplash.com/@motornomad?utm_source=medium&utm_medium=referral)  on  [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Matt Sclarandis](https://unsplash.com/@motornomad?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
-Conclusion
-==========
+# Conclusion
 
 So, now you should:
 
 -   No random surprising fails anymore because of updated packages
--   Use  `npm ci`  , especially on build servers / CI
--   Know how the  `package-lock.json`is used for
--   Understand behaviour and usage of  `npm install`  better
--   Understand why  `npm install`  will change the  `package-lock.json`
+-   Use `npm ci` , especially on build servers / CI
+-   Know how the `package-lock.json`is used for
+-   Understand behaviour and usage of `npm install` better
+-   Understand why `npm install` will change the `package-lock.json`
 -   Learned maybe also more about the semantical versions (SemVer)
 -   Learned to lookup the documentation and follow the changes of new npm releases

@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Embed-The-Web
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Embed-The-Web
 seo:
     title: ''
     description: ''
@@ -11,8 +11,3 @@ template: docs
 ---
 
 ## Lorem ipsum
-
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
--   Lorem ipsum
--   dolor sit amet
