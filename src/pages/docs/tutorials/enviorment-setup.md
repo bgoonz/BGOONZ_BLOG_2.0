@@ -3,7 +3,7 @@ title: Enviorment Setup Tutorial
 weight: 0
 excerpt: more tools that I have created or collaborated on.
 seo:
-    title: ''
+    title: 'Enviorment Setup Tutorial'
     description: 'embeded developer tools and utilities'
     robots: []
     extra: []

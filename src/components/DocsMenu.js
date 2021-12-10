@@ -1,63 +1,130 @@
 import React from 'react';
+import Router from 'next/router';
 import _ from 'lodash';
 
-import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
-import DocsSubmenu from './DocsSubmenu';
+import { getPage, getPages, getPageUrl, classNames, Link, withPrefix, pathJoin } from '../utils';
 
 export default class DocsMenu extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleWindowResize = this.handleWindowResize.bind(this);
+        this.handleRouteChange = this.handleRouteChange.bind(this);
+        this.docsMenuOpenRef = React.createRef();
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.handleWindowResize, true);
+        Router.events.on('routeChangeStart', this.handleRouteChange);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowResize, true);
+        Router.events.off('routeChangeStart', this.handleRouteChange);
+    }
+
+    handleWindowResize() {
+        const menuOpenElm = _.get(this.docsMenuOpenRef, 'current.offsetParent');
+        if (menuOpenElm === null) {
+            document.body.classList.remove('docs-menu--opened');
+        }
+    }
+
+    handleRouteChange() {
+        document.body.classList.remove('docs-menu--opened');
+    }
+
+    handleDocsMenuToggle(event) {
+        event.preventDefault();
+        document.body.classList.toggle('docs-menu--opened');
+    }
+
+    handleDocsSubMenuToggle(event) {
+        event.preventDefault();
+        event.currentTarget.parentNode.classList.toggle('active');
+    }
+
+    renderDocsRootLink(docsRootPath, docs, pageUrl) {
+        const docsRootPage = getPage(docs, docsRootPath);
+        const docsRootPageUrl = getPageUrl(docsRootPage);
+        const docsRootPageTitle = _.get(docsRootPage, 'title');
+
+        return (
+            <li
+                className={classNames('docs-menu-item', {
+                    current: pageUrl === docsRootPageUrl
+                })}
+            >
+                <Link href={withPrefix(docsRootPageUrl)}>{docsRootPageTitle}</Link>
+            </li>
+        );
+    }
+
+    renderDocsSectionLink(docsSection, index, docsRootPath, docs, pageUrl) {
+        const docsSectionPath = pathJoin(docsRootPath, docsSection);
+        const docsSectionPage = getPage(docs, docsSectionPath);
+        const docsSectionPageUrl = getPageUrl(docsSectionPage);
+        const docsSectionPageTitle = _.get(docsSectionPage, 'title');
+        const docsSectionChildPages = _.orderBy(getPages(docs, docsSectionPath), 'weight');
+
+        return (
+            <li
+                key={index}
+                className={classNames('docs-menu-item', {
+                    'has-children': !_.isEmpty(docsSectionChildPages),
+                    current: pageUrl === docsSectionPageUrl,
+                    active: pageUrl.startsWith(docsSectionPageUrl)
+                })}
+            >
+                <Link href={withPrefix(docsSectionPageUrl)}>{docsSectionPageTitle}</Link>
+                {!_.isEmpty(docsSectionChildPages) && (
+                    <React.Fragment>
+                        <button className="docs-submenu-toggle" onClick={this.handleDocsSubMenuToggle.bind(this)}>
+                            <span className="screen-reader-text">Submenu</span>
+                            <span className="icon-angle-right" aria-hidden="true" />
+                        </button>
+                        <ul className="docs-submenu">
+                            {_.map(docsSectionChildPages, (docsChildPage, index) => this.renderDocsChildLink(docsChildPage, index, pageUrl))}
+                        </ul>
+                    </React.Fragment>
+                )}
+            </li>
+        );
+    }
+
+    renderDocsChildLink(docsChildPage, index, pageUrl) {
+        const docsChildPageUrl = getPageUrl(docsChildPage);
+        const docsChildPageTitle = _.get(docsChildPage, 'title');
+
+        return (
+            <li
+                key={index}
+                className={classNames('docs-menu-item', {
+                    current: pageUrl === docsChildPageUrl
+                })}
+            >
+                <Link href={withPrefix(docsChildPageUrl)}>{docsChildPageTitle}</Link>
+            </li>
+        );
+    }
+
     render() {
-        let site = _.get(this.props, 'site', null);
-        let page = _.get(this.props, 'page', null);
-        let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
-        let root_page = getPage(this.props.pageContext.pages, root_docs_path);
+        const page = _.get(this.props, 'page');
+        const pageUrl = getPageUrl(page);
+        const docs = _.get(this.props, 'docs');
+        const docsConfig = _.get(this.props, 'docsConfig');
+        const docSections = _.get(docsConfig, 'sections');
+        const docsRootPath = _.get(docsConfig, 'root_docs_path');
+
         return (
             <nav id="docs-nav" className="docs-nav">
                 <div id="docs-nav-inside" className="docs-nav-inside sticky">
-                    <button id="docs-nav-toggle" className="docs-nav-toggle">
-                        Navigate Docs
-                        <span className="icon-angle-right" aria-hidden="true" />
+                    <button id="docs-nav-toggle" className="docs-nav-toggle" ref={this.docsMenuOpenRef} onClick={this.handleDocsMenuToggle.bind(this)}>
+                        Navigate Docs <span className="icon-angle-right" aria-hidden="true" />
                     </button>
                     <div className="docs-nav-menu">
                         <ul id="docs-menu" className="docs-menu">
-                            <li
-                                className={classNames('docs-menu-item', {
-                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
-                                })}
-                            >
-                                <Link to={withPrefix(_.get(root_page, 'url', null))}>{_.get(root_page, 'frontmatter.title', null)}</Link>
-                            </li>
-                            {_.map(_.get(site, 'data.doc_sections.sections', null), (section, section_idx) => {
-                                let section_path = pathJoin(root_docs_path, section);
-                                let section_page = getPage(this.props.pageContext.pages, section_path);
-                                let child_pages = _.orderBy(getPages(this.props.pageContext.pages, section_path), 'frontmatter.weight');
-                                let child_count = _.size(child_pages);
-                                let has_children = child_count > 0 ? true : false;
-                                let is_current_page = _.get(page, 'url', null) === _.get(section_page, 'url', null) ? true : false;
-                                let is_active = _.get(page, 'url', null).startsWith(_.get(section_page, 'url', null));
-                                return (
-                                    <React.Fragment key={section_idx + '.1'}>
-                                        <li
-                                            key={section_idx}
-                                            className={classNames('docs-menu-item', {
-                                                'has-children': has_children,
-                                                current: is_current_page,
-                                                active: is_active
-                                            })}
-                                        >
-                                            <Link to={withPrefix(_.get(section_page, 'url', null))}>{_.get(section_page, 'frontmatter.title', null)}</Link>
-                                            {has_children && (
-                                                <React.Fragment>
-                                                    <button className="docs-submenu-toggle">
-                                                        <span className="screen-reader-text">Submenu</span>
-                                                        <span className="icon-angle-right" aria-hidden="true" />
-                                                    </button>
-                                                    <DocsSubmenu {...this.props} child_pages={child_pages} page={page} site={site} />
-                                                </React.Fragment>
-                                            )}
-                                        </li>
-                                    </React.Fragment>
-                                );
-                            })}
+                            {this.renderDocsRootLink(docsRootPath, docs, pageUrl)}
+                            {_.map(docSections, (docsSection, index) => this.renderDocsSectionLink(docsSection, index, docsRootPath, docs, pageUrl))}
                         </ul>
                     </div>
                 </div>
