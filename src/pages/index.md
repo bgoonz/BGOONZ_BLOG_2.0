@@ -41,9 +41,7 @@ sections:
           Autor Unknown”  .*
         actions:
           - label: View Posts
-            url: >-
-
-              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+            url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
             style: link
         image_alt: python
         title: Python Guide
