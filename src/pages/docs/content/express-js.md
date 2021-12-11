@@ -1,4 +1,15 @@
-
+---
+title: Queries and Mutations (Gatsby)
+weight: 0
+excerpt: Queries and Mutations
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
 
 
 
