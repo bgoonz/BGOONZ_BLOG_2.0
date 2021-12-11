@@ -1,4 +1,14 @@
-
+---
+title: lists-and-keys
+weight: 0
+excerpt: lists-and-keys
+seo:
+    title: 'lists-and-keys'
+    description: 'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity'
+    robots: []
+    extra: []
+template: docs
+---
 
 React Hooks provide us with access to core React functionalities within the context of function components. Traditionally, to optimize React, developers have had to switch between function and class components, however, React Hooks allow us to use function components throughout projects to build both small and large applications.
 
