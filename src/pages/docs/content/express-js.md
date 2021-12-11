@@ -1,7 +1,7 @@
 ---
 title: Writing middleware for use in Express apps
 weight: 0
-excerpt: Queries and Mutations
+excerpt: Writing middleware for use in Express apps
 seo:
     title: ''
     description: ''
