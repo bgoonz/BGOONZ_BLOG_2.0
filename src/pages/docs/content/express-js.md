@@ -4,7 +4,7 @@ weight: 0
 excerpt: Writing middleware for use in Express apps
 seo:
     title: ''
-    description: ''
+    description: 'Writing middleware for use in Express apps'
     robots: []
     extra: []
     type: stackbit_page_meta
