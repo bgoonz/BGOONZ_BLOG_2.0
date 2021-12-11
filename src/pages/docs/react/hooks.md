@@ -1,9 +1,9 @@
 ---
-title: lists-and-keys
+title: Underated React Hooks
 weight: 0
-excerpt: lists-and-keys
+excerpt: Underated React Hooks
 seo:
-    title: 'lists-and-keys'
+    title: 'Underated React Hooks'
     description: 'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity'
     robots: []
     extra: []
