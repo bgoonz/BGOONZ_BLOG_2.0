@@ -3,7 +3,7 @@ title: Best practices for using iframes in React
 weight: 0
 excerpt: Best practices for using iframes in React
 seo:
-    title: 'lists-and-keys'
+    title: 'Best practices for using iframes in React'
     description: 'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity'
     robots: []
     extra: []
