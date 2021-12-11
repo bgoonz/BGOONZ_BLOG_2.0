@@ -1,5 +1,5 @@
 ---
-title: Queries and Mutations (Gatsby)
+title: Writing middleware for use in Express apps
 weight: 0
 excerpt: Queries and Mutations
 seo:
