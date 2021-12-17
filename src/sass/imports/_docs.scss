@@ -296,6 +296,7 @@ box-shadow:
     }
 
     .post.type-docs {
+        flex:auto;
         -ms-flex: 1 1 auto;
         align-content: center;
     }
@@ -313,12 +314,12 @@ box-shadow:
     }
 
     .docs-nav {
-        width: 8.5em;
+        width: 10.5em;
     }
 
     #page-nav {
-        font-size: 12px;
-        margin: 4em;
+        font-size: 14mapx;
+        margin: 6em;
     }
 
     #docs-nav-toggle {

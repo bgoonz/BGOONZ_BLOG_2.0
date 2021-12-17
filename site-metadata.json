@@ -268,7 +268,7 @@
                         "new_window": false,
                         "no_follow": false
                     },
-                       {
+                    {
                         "label": "Embeds Blog",
                         "url": "https://friendly-panda-b61ab.netlify.app/",
                         "style": "primary",
@@ -347,11 +347,10 @@
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
-                    },
+                    }
                 ],
                 "type": "action_menu"
             },
-         
             {
                 "label": "Tools",
                 "url": "/docs/tools",
