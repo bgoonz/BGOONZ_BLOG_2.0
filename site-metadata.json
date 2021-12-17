@@ -313,23 +313,45 @@
                         "no_follow": false,
                         "type": "action"
                     },
+                    {
+                        "label": "Project Centric",
+                        "url": "https://project-portfolio42.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Wordpress Blog",
+                        "url": "https://web-dev-hub.com/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Portfolio Gallery",
+                        "url": "https://project-portfolio42.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "github-stats-website",
+                        "url": "https://bgoonz.github.io/github-stats-website/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
                 ],
                 "type": "action_menu"
             },
-            {
-                "label": "External",
-                "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
-                 
-                    
-                ],
-                "type": "action_menu"
-            },
+         
             {
                 "label": "Tools",
                 "url": "/docs/tools",
