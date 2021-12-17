@@ -280,51 +280,7 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [
-                    {
-                        "label": "Embeds Blog",
-                        "url": "https://friendly-panda-b61ab.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "alt-blogs",
-                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Games",
-                        "url": "https://bgoonz-games.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Blog Backup",
-                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Cover Letter",
-                        "url": "https://bgoonz-cv.netlify.app/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
+                 
                     {
                         "label": "Project Centric",
                         "url": "https://project-portfolio42.netlify.app/",
