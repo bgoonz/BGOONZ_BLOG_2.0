@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: NaN
 weight: 0
 excerpt: lorem-ipsum
 seo:
