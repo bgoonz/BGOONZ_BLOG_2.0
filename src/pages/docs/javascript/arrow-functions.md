@@ -3,10 +3,10 @@ title: JS Fat Arrow Functions
 weight: 0
 excerpt: JS Fat Arrow Functions
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: JS Fat Arrow Functions
+  description: ''
+  robots: []
+  extra: []
 template: docs
 ---
 
