@@ -1,3 +1,31 @@
+---
+title: Data Structures Stack and Queue
+excerpt: >-
+    In this section you'll learn how to add syntax highlighting, examples,
+    callouts and much more.
+seo:
+    title:  Data Structures Stack and Queue
+    description: This is the  Data Structures page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value:  Data Structures
+          keyName: property
+        - name: 'og:description'
+          value: This is the  Data Structures Stack and Queue page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value:  Data Structures
+        - name: 'twitter:description'
+          value: This is the  Data Structures  Stack and Queue page
+template: docs
+weight: 0
+---
+
 
 
 
