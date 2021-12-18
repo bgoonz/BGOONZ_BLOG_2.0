@@ -1,7 +1,7 @@
 ---
 title: User Guide - pip 
 weight: 0
-excerpt: lorem-ipsum
+excerpt: User Guide - pip 
 seo:
     title: ''
     description: ''
