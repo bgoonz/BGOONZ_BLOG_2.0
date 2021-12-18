@@ -1,7 +1,7 @@
 ---
 title: Python Cheat Sheet
 weight: 0
-excerpt: lorem-ipsum
+excerpt: cheat sheet for python developers
 seo:
     title: python cheat sheet
     description: cheat sheet for python developers
