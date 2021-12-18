@@ -618,28 +618,17 @@ models:
         name: icon_class
         label: Icon
         options:
-          - label: dev
-            value: dev
-          - label: facebook
-            value: facebook
-          - label: github
-            value: github
-          - label: instagram
-            value: instagram
-          - label: linkedin
-            value: linkedin
-          - label: pinterest
-            value: pinterest
-          - label: reddit
-            value: reddit
-          - label: twitter
-            value: twitter
-          - label: vimeo
-            value: vimeo
-          - label: youtube
-            value: youtube
-          - label: ''
-            value: ''
+          - dev
+          - facebook
+          - github
+          - instagram
+          - linkedin
+          - pinterest
+          - reddit
+          - twitter
+          - vimeo
+          - youtube
+          - bgoonz
       - type: boolean
         name: new_window
         label: Open in new tab/window
