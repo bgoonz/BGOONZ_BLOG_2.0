@@ -149,6 +149,7 @@ models:
       - name: file
         type: file
         label: file
+        description: embedded file
     labelField: root_docs_path
   docs:
     type: page
