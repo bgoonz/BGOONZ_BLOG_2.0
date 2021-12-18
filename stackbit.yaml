@@ -630,6 +630,8 @@ models:
           - youtube
           - bgoonz
         description: logo
+        default: https://bgoonz-blog.netlify.app/images/DgqLkQjTmk.png
+        readOnly: true
       - type: boolean
         name: new_window
         label: Open in new tab/window
