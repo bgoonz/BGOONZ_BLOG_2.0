@@ -146,6 +146,8 @@ models:
           slug representing the section.
         items:
           type: markdown
+      - name: ''
+        type: string
     labelField: root_docs_path
   docs:
     type: page
