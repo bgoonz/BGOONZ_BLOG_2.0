@@ -1,7 +1,7 @@
 ---
 title: google-sheets-api
 weight: 0
-excerpt: lorem-ipsum
+excerpt: google-sheets-api
 seo:
     title: ''
     description: ''
