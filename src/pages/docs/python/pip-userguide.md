@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: User Guide - pip 
 weight: 0
 excerpt: lorem-ipsum
 seo:
