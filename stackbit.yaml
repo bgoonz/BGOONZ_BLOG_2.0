@@ -633,11 +633,6 @@ models:
         label: Open in new tab/window
         default: false
       - type: boolean
-        name: no_follow
-        label: No follow
-        default: false
-        description: Add rel="nofollow" attribute to the link
-      - type: boolean
         name: has_subnav
         label: Has Sub-Navigation
         default: false
