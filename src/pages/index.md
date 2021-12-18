@@ -153,7 +153,7 @@ sections:
         image: images/iter-zoomed.PNG
     type: section_grid
   - title: Tools
-    section_id: lorem-ipsum
+    section_id: Tools
     image_alt: lorem-ipsum
     image_position: left
     content: |+
