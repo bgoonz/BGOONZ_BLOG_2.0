@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Comprehensive Python Guide
 weight: 0
 excerpt: lorem-ipsum
 seo:
