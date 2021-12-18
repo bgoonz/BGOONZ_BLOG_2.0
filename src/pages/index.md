@@ -154,7 +154,7 @@ sections:
     type: section_grid
   - title: Tools
     section_id: Tools
-    image_alt: lorem-ipsum
+    image_alt: dev tools
     image_position: left
     content: |+
 
