@@ -150,6 +150,8 @@ models:
         type: file
         label: file
         description: embedded file
+        default: delete-me.md
+        readOnly: true
     labelField: root_docs_path
   docs:
     type: page
