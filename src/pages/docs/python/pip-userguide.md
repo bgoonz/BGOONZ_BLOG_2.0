@@ -13,7 +13,7 @@ template: docs
 
 
 
-# User Guide - pip documentation v21.3.1
+# User Guide - pip 
 
 > ## Excerpt
 > pip is a command line program. When you install pip, a pip command is added
