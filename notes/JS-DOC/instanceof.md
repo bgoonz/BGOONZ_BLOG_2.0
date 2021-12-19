@@ -144,7 +144,10 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Relational Operators' in that specification.</span></a></td></tr></tbody></table>
 
 `instanceof`

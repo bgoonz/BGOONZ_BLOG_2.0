@@ -44,7 +44,10 @@ The following example creates an array-like object `a`, containing three element
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-array.prototype.reverse</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -167,7 +167,10 @@
                                     title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"
                                     rel="noopener"
                                     target="_blank"
-                                    ><strong class="markup--strong markup--p-strong">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br /><em
+                                    ><strong class="markup--strong markup--p-strong">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong> 
+<br/>
+
+<em
                                         class="markup--em markup--p-em"
                                         >If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will </em
                                     >bryanguner.medium.com</a
@@ -532,7 +535,13 @@
                             <p name="00f2" id="00f2" class="graf graf--p graf-after--li">— Selects all columns from the friends table</p>
                             <pre name="178f" id="178f" class="graf graf--pre graf-after--p">SELECT<br>*<br>FROM<br>friends;</pre>
                             <p name="274c" id="274c" class="graf graf--p graf-after--pre">
-                                — Selects the first_name column from the friends table (remember whitespace is ignored)<br />SELECT name<br />FROM friends;
+                                — Selects the first_name column from the friends table (remember whitespace is ignored) 
+<br/>
+
+SELECT name 
+<br/>
+
+FROM friends;
                             </p>
                             <ul class="postList">
                                 <li name="ef22" id="ef22" class="graf graf--li graf-after--p">
@@ -542,7 +551,10 @@
                             </ul>
                             <p name="d615" id="d615" class="graf graf--p graf-after--li">
                                 — Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the
-                                “puppies” table. We indicate the table name by table.column<br />
+                                “puppies” table. We indicate the table name by table.column 
+<br/>
+
+
                                 — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field
                                 headers
                             </p>
@@ -618,7 +630,10 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 </li>
                             </ul>
                             <p name="7276" id="7276" class="graf graf--p graf-after--li">
-                                — We are providing the table name, then multiple records to insert<br />
+                                — We are providing the table name, then multiple records to insert 
+<br/>
+
+
                                 — The values are listed in the order that they are defined on the table
                             </p>
                             <pre
@@ -894,8 +909,20 @@ const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;', password: '&lt;&lt
                                 class="graf graf--pre graf-after--li"
                             >const airportsByNameSql = `<br>SELECT name, faa_id<br>FROM airports<br>WHERE UPPER(name) LIKE UPPER($1)<br>`;</pre>
                             <p name="fff4" id="fff4" class="graf graf--p graf-after--pre">
-                                async function selectAirportsByName(name) {<br />const results = await pool.query(airportsByNameSql, [ `%${name}%` ]);<br />console.log(results.rows);<br />pool.end();
-                                // invoking end() will close our connection to the database<br />}
+                                async function selectAirportsByName(name) { 
+<br/>
+
+const results = await pool.query(airportsByNameSql, [ `%${name}%` ]); 
+<br/>
+
+console.log(results.rows); 
+<br/>
+
+pool.end();
+                                // invoking end() will close our connection to the database 
+<br/>
+
+}
                             </p>
                             <pre
                                 name="20be"
@@ -1481,8 +1508,17 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre
                             >await Pet.findByPk(1, {<br>        include: [Pet, Owner]<br>    })</pre>
                             <p name="8186" id="8186" class="graf graf--p graf-after--pre">
                                 Include can also take an object with keys <code class="markup--code markup--p-code">model</code> and
-                                <code class="markup--code markup--p-code">include</code>.<br />This is in case you have nested associations.<br />In this case
-                                Owner doesn&#39;t have an association with PetType, but<br />Pet does, so we want to include PetType onto the Pet Model.
+                                <code class="markup--code markup--p-code">include</code>. 
+<br/>
+
+This is in case you have nested associations. 
+<br/>
+
+In this case
+                                Owner doesn&#39;t have an association with PetType, but 
+<br/>
+
+Pet does, so we want to include PetType onto the Pet Model.
                             </p>
                             <pre
                                 name="e81d"
@@ -1492,7 +1528,10 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre
                             <h3 name="2a72" id="2a72" class="graf graf--h3 graf-after--pre">toJSON method</h3>
                             <p name="d5d1" id="d5d1" class="graf graf--p graf-after--h3">
                                 The confusingly named toJSON() method does <strong class="markup--strong markup--p-strong">not</strong> return a JSON string but
-                                instead<br />returns a POJO for the instance.
+                                instead 
+<br/>
+
+returns a POJO for the instance.
                             </p>
                             <pre
                                 name="40f4"
@@ -1617,7 +1656,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                             <h3 name="219c" id="219c" class="graf graf--h3 graf-after--p">Documentation</h3>
                             <p name="17c9" id="17c9" class="graf graf--p graf-after--h3">
                                 For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these
-                                are the specific sections with just the lists:<br /><strong class="markup--strong markup--p-strong"
+                                are the specific sections with just the lists: 
+<br/>
+
+<strong class="markup--strong markup--p-strong"
                                     >Sequelize Data Types:</strong
                                 >
                                 <a
@@ -1627,7 +1669,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/data-types.html</em></a
-                                ><br /><strong class="markup--strong markup--p-strong">Validations:</strong>
+                                > 
+<br/>
+
+<strong class="markup--strong markup--p-strong">Validations:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/models-definition.html#validations"
                                     data-href="https://sequelize.org/v5/manual/models-definition.html#validations"
@@ -1635,8 +1680,14 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/models-definition.html#validations</em></a
-                                ><br />When you access the data in your queries, here are the operators available, again because the docs are hard to navigate,
-                                this is the specific section with the list of operators.<br /><strong class="markup--strong markup--p-strong"
+                                > 
+<br/>
+
+When you access the data in your queries, here are the operators available, again because the docs are hard to navigate,
+                                this is the specific section with the list of operators. 
+<br/>
+
+<strong class="markup--strong markup--p-strong"
                                     >Operators:</strong
                                 >
                                 <a
@@ -1646,9 +1697,15 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/querying.html#operators</em></a
-                                ><br />The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of
+                                > 
+<br/>
+
+The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of
                                 explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they
-                                mean an item stored in your table.<br /><strong class="markup--strong markup--p-strong">Create/Update/Destroy:</strong>
+                                mean an item stored in your table. 
+<br/>
+
+<strong class="markup--strong markup--p-strong">Create/Update/Destroy:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/instances.html"
                                     data-href="https://sequelize.org/v5/manual/instances.html"
@@ -1667,7 +1724,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong> 
+<br/>
+
+<em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you
                                         need…</em
@@ -1686,7 +1746,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong> 
+<br/>
+
+<em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
                                     >github.com</a
@@ -1706,7 +1769,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://goofy-euclid-1cd736.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://goofy-euclid-1cd736.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong><br /><em
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong> 
+<br/>
+
+<em
                                         class="markup--em markup--mixtapeEmbed-em"
                                         >Edit description</em
                                     >goofy-euclid-1cd736.netlify.app</a

@@ -101,7 +101,10 @@ template: docs
 
 Here's a repo where I hoard resource lists!
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong><br />
+<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong> 
+<br/>
+
+
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ## MOAR!
@@ -543,10 +546,16 @@ Metrics:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<br/>
+
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<br/>
+
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Ada

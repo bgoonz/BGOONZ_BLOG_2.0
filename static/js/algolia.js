@@ -4726,3 +4726,12 @@ e = self, t = function () {
             }, r(864), r(744)
       })()
 }, "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.algoliasearchNetlify = t() : e.algoliasearchNetlify = t();
+
+
+algoliasearchNetlify({
+      appId: "O6OT9G9U8Z",
+      apiKey: "b0cb3d390176e1ff4bd1ecb12fc15730",
+      siteId: "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
+      branch: "master",
+      selector: "div#search"
+});

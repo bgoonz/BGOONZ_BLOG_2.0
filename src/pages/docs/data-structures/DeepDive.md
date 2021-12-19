@@ -1297,7 +1297,10 @@ Seeks to solve the shortcomings of the matrix implementation. It uses an object 
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
 <strong>bgoonz's gists</strong>
-<br />
+ 
+<br/>
+
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 

@@ -35,7 +35,10 @@ The following example (see the validate.html [source code](https://github.com/md
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-validate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-validate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<br/>
+
+
 <span class="small">#dom-webassembly-validate</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

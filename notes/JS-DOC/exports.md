@@ -60,7 +60,10 @@ The `exports[0]` output looks like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<br/>
+
+
 <span class="small">#dom-module-exports</span></a></td></tr></tbody></table>
 
 `exports`

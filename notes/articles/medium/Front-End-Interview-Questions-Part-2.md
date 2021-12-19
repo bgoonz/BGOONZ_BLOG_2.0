@@ -14,7 +14,10 @@ These will focus more on vocabulary and concepts than the application driven app
 
 ### Here's part one for reference:
 
-<a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong><br />
+<a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong> 
+<br/>
+
+
 <em>Questions….Answers… and links to the missing pieces.</em><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
@@ -256,15 +259,24 @@ Header, payload, signature
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<br/>
+
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<br/>
+
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<br/>
+
+
 <em>preview of the Web-Dev-Hub</em>best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 19, 2021](https://medium.com/p/86ddc0e91443).

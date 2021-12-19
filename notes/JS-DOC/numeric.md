@@ -24,7 +24,10 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sec-Intl.Locale.prototype.numeric</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

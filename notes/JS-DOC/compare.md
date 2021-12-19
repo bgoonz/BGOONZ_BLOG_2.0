@@ -41,7 +41,10 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sec-intl.collator.prototype.compare</span></a></td></tr></tbody></table>
 
 `compare`

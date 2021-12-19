@@ -58,7 +58,10 @@ When called with a `buffer`, and optionally a `byteOffset` and a `length` argume
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-typedarray-constructors</span></a></td></tr></tbody></table>
 
 `Int32Array`

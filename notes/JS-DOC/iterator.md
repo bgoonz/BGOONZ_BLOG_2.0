@@ -74,7 +74,10 @@ If an iterable's `@@iterator` method does not return an iterator object, then it
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Symbol.iterator' in that specification.</span></a></td></tr></tbody></table>
 
 `iterator`

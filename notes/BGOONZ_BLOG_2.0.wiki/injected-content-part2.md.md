@@ -259,23 +259,68 @@ Inject analytics or other scripts into the HTML of your site.---
     searcg
 
     ```html
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
 
     <div id="search"></div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
+     
+<br/>
+
+
     ```
 
 ---

@@ -27,7 +27,10 @@ The `toTimeString()` method is especially useful because compliant engines imple
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.totimestring">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.totimestring">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-date.prototype.totimestring</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -26,7 +26,10 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Division operator' in that specification.</span></a></td></tr></tbody></table>
 
 `Division`

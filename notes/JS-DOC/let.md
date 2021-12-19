@@ -237,7 +237,10 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
 
 `let`

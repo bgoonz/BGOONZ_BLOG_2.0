@@ -601,10 +601,16 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to version control code
 
-<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong><br />
+<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong> 
+<br/>
+
+
 <em>Basic Git Work Flow.</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e"><strong>Github Repositories That Will Teach You How To Code For Free!</strong><br />
+<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e"><strong>Github Repositories That Will Teach You How To Code For Free!</strong> 
+<br/>
+
+
 <em>Update: here's a repo full of helpful repos:</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="223a">**\[📰\]** <a href="https://dev.to/yankee/mastering-git-stash-workflow-223" class="markup--anchor markup--li-anchor"><strong>Mastering Git Stash Workflow</strong></a></span>

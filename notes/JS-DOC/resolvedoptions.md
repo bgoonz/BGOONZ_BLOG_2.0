@@ -67,7 +67,10 @@ The values provided for these properties in the `options` argument or filled in 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

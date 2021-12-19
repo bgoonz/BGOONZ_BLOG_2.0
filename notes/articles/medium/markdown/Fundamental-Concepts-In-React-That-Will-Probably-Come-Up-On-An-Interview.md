@@ -8,7 +8,10 @@ Incomplete Article
 
 #### Incomplete Article
 
-<strong>A list of all of my articles to link to future posts</strong><br />
+<strong>A list of all of my articles to link to future posts</strong> 
+<br/>
+
+
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 **Explain how React uses a tree data structure called the “virtual DOM” to model the DOM**

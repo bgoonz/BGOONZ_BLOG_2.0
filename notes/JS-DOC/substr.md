@@ -72,7 +72,10 @@ Microsoft's JScript does not support negative values for the start index. To use
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substr">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substr">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-string.prototype.substr</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

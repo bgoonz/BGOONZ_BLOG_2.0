@@ -78,7 +78,10 @@ You can also send a value with next(value) into the generator. 'step' evaluates 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-YieldExpression">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-YieldExpression">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#prod-YieldExpression</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

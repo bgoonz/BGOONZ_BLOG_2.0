@@ -36,7 +36,10 @@ The following code divides two numeric values. If the result is greater than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-number.min_value</span></a></td></tr></tbody></table>
 
 `MIN_VALUE`

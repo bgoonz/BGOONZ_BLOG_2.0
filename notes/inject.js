@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 let div = window.createElement('div');
 div.id('search');
 div.style = 'z-index:-1; position:absolute;width: 300px;height: 300px;bottom: 0px;right: 25%;left: 50 %;';

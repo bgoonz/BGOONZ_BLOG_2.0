@@ -5,3 +5,6 @@ command = "npm run build"
 
 [functions]
   directory = "functions"
+
+[[plugins]]
+package = "@netlify/plugin-gatsby"  

@@ -21,7 +21,10 @@ The following example assigns the hours portion of the current time to the varia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-date.prototype.getutchours</span></a></td></tr></tbody></table>
 
 `getUTCHours`
