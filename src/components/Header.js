@@ -20,6 +20,7 @@ export default class Header extends React.Component {
                         <div className="site-branding">
                             {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
                                 <p className="site-logo">
+                                    <div id="search" />
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         <img
                                             src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}
@@ -37,7 +38,8 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-           
+                        <div id="search">
+                        </div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">

@@ -1,9 +1,22 @@
+---
+title: Form Validation  JavaScript
+weight: 0
+excerpt: Form Validation  JavaScript
+seo:
+    title: 'Form Validation  JavaScript'
+    description: 'embeded developer tools and utilities'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
 
 
 
-# Form Validation < JavaScript
+## Form Validation  JavaScript
 
 > ## Excerpt
+
 > Validation of form elements using JavaScript.  Examples for different form elements including: text input, checkbox, combo box, radio buttons and checkbox arrays.  Restricting text input to alphanumeric characters and spaces.  How to use selectedIndex.
 
 ---
@@ -54,8 +67,6 @@ You'll see that the all validation scripts presented on this and subsequent page
 <details>
 
 <summary>HTML5 Form Validation</summary>
-
-
 
 Before you ask, and someone always does, these examples will currently work in the following browsers: Safari 5, Chrome 6, Opera 9, Firefox 4 Beta and the iPhone/iPad. Also each browser has a slightly different default behaviour.
 
@@ -151,15 +162,15 @@ We have a separate article with details on [validating passwords using HTML5](ht
 
 Other HTML5 input types include:
 
--   color
--   date
--   datetime
--   datetime-local
--   month
--   search
--   tel
--   time
--   week
+- color
+- date
+- datetime
+- datetime-local
+- month
+- search
+- tel
+- time
+- week
 
 The search input will, in some browsers, change the styles to match the browser or operating system default search field format. You can see this demonstrated in the Search input above.
 
