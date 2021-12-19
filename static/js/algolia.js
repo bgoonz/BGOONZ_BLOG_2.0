@@ -4733,5 +4733,5 @@ algoliasearchNetlify({
       apiKey: "b0cb3d390176e1ff4bd1ecb12fc15730",
       siteId: "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
       branch: "master",
-      selector: "div#search"
+      selector: "div.search"
 });
