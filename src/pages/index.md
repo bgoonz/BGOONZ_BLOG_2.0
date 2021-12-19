@@ -156,7 +156,7 @@ sections:
     section_id: Tools
     image_alt: dev tools
     image_position: left
-    content: |+
+    content: |-
 
  <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
