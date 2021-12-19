@@ -1,15 +1,6 @@
 [build]
+publish = "public"
 command = "npm run build"
-publish = "public/"
 
-[[plugins]]
-package = "@netlify/plugin-gatsby"
-package = "netlify-plugin-lighthouse"
-
-
-# Configuration for a local plugin
-[[plugins]]
-package = "/plugins/netlify-plugin-hello-world"
-
-[functions]
-  directory = "functions"
+  [build.environment]
+  NODE_VERSION = "12"
