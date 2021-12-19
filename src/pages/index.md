@@ -157,11 +157,8 @@ sections:
     image_alt: dev tools
     image_position: left
     content: |-
-<iframe class="block-content" width="100%  width="1200px!important"
-height="1000px!important"
-src="https://search-awesome.vercel.app/"  
-frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"  src="https://search-awesome.vercel.app/"   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: features-two-col
