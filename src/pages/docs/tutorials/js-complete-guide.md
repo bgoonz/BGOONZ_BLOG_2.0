@@ -1,3 +1,14 @@
+---
+title: Install PostgreSQL
+weight: 0
+excerpt: Walkthroughs of various development activities and skills
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: docs
+---
 
 
 
