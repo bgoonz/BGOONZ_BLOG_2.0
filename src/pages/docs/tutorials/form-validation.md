@@ -13,7 +13,7 @@ template: docs
 
 
 
-# Form Validation  JavaScript
+## Form Validation  JavaScript
 
 > ## Excerpt
 
