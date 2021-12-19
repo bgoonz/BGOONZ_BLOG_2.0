@@ -11,7 +11,7 @@ Basic Git Work Flow.
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*68fyM5AI85U_I3vo.jpg" class="graf-image" /></figure>For More Advanced Readers, or those with very limited free time… here's an abridged Git Reference.
 
 <a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong><br />
-<em>Refs</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Refs</em><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### What's a distributed version control system?
 

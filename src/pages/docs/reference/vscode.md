@@ -691,7 +691,7 @@ _No real advantage over just using Spotify normally… it's problematic enough i
 In the interest of not making the reader scroll endlessly as I often do… I've made a separate post for that here. If you've made it this far, I thank you!
 
 <a href="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f"><strong>My Favorite VSCode <em>Themes</em></strong><br />
-Themesbryanguner.medium.com</a><a href="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+Themes<a href="https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
 

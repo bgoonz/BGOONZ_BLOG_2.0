@@ -295,8 +295,8 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xYo5Z7lROn4tLQu9.gif" class="graf-image" /></figure>### If you found this guide helpful feel free to checkout my other articles:
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong><br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ### OR GitHub/gists where I host similar content:
 

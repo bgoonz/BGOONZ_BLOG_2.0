@@ -257,8 +257,8 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 
 **If you found this guide helpful feel free to checkout my other articles:**
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong><br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 **Further resources:**
 
