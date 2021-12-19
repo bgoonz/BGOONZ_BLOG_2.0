@@ -20,7 +20,7 @@ export default class Header extends React.Component {
                         <div className="site-branding">
                             {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
                                 <p className="site-logo">
-                                    <div id="search" />
+                              
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         <img
                                             src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}
@@ -30,8 +30,8 @@ export default class Header extends React.Component {
                                 </p>
                             ) : (
                                 <p className="site-title">
-                                    {' '}
-                                    WebDevHub
+                                        {'  WebDevHub '}
+                                  
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
                                     </Link>
