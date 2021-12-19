@@ -156,9 +156,12 @@ sections:
     section_id: Tools
     image_alt: dev tools
     image_position: left
-    content: |+
-
-
+    content: |-
+<iframe class="block-content" width="100%  width="1200px!important"
+height="1000px!important"
+src="https://search-awesome.vercel.app/"  
+frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: features-two-col
@@ -190,7 +193,7 @@ sections:
             style: link
         image: images/My Post.png
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
+    section_id: showcase
     image_alt: rotating pages
     image_position: left
     content: |-
