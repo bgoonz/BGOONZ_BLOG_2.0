@@ -1,5 +1,5 @@
 ---
-title: Install PostgreSQL
+title: Complete Guide To JavaScript
 weight: 0
 excerpt: Walkthroughs of various development activities and skills
 seo:
@@ -12,7 +12,7 @@ template: docs
 
 
 
-![JS](./images/javascript_for_everyone.png)
+
 - [Introduction](#introduction)
 - [Setup](#setup)
 - [Requirements](#requirements)
