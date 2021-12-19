@@ -25,8 +25,7 @@ template: docs
 
 <div align="center">
 
-<iframe src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style="   position: fixed;bottom: 50;right: 50;"frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+<iframe src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style="   position: absolute;bottom: 10;right:10;"frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ## ➤ _Email_ [bryan.guner@gmail.com](#) _Phone_ [551-254-5505](551-254-5505)
 
@@ -34,7 +33,7 @@ template: docs
 
 ### [💻WEBSITE💻](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
 
-- [**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/raw/master/bryan_guner_resume_2021-V8.pdf)
+-   [**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/raw/master/bryan_guner_resume_2021-V8.pdf)
 
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)
 <a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>
@@ -51,10 +50,9 @@ template: docs
 
 <h1  align="center">💻 Check Out My Repos ⬇️ </h1>  
   
-
 <!-- if you want it to default to open then use <details open>  instead-->
 
- ### Repo List: _**CLICK The Arrow Below To See Repo List**_
+### Repo List: _**CLICK The Arrow Below To See Repo List**_
 
 <details>
 <summary><span style="align-self: center; margin: auto; font-family: papyrus; font-size: 2em;"> ===➤(_CLICK TO SEE MORE_)➤</span></summary>
@@ -97,21 +95,15 @@ template: docs
 
 </details>  
   
-  
-
 <br>
 
 <br>
-  
-  
   
 [![Bryan's github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz&bg_color=000000&color=700069&line=ff0000&point=0cad00&area=true&hide_border=true)](https://github.com/bgoonz/github-readme-activity-graph)
 
 <h4 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h4>
 
-
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:770; height:420;">
-
 
 ### 🛠
 
@@ -123,10 +115,6 @@ template: docs
 
 </center>
 
-  
-  
-
-
 <div align="center">
 
 <h3 align="center">Languages and Tools:</h3>
@@ -136,16 +124,15 @@ template: docs
 
 <div align="center">
   
-  
-  | [GitHub](https://github.com/bgoonz)       | [Gitlab](https://gitlab.com/bryan.guner.dev)      | [Bitbucket](https://bitbucket.org/bgoonz/)      | [Medium](https://bryanguner.medium.com/)      | [code pen](https://codepen.io/bgoonz)       |
-|---    |---    |---    |---    |---    |
-| [Replit](https://repl.it/@bgoonz/)      |  [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)     | [Redit](https://www.reddit.com/user/bgoonz1)       | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)      |  [dev.to](https://dev.to/bgoonz)     |
-| [runkit](https://runkit.com/bgoonz)        | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)      | [npm](https://www.npmjs.com/~bgoonz11)      | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)      | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)      |
-| [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)      | [Notion](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)      |  [AngelList](https://angel.co/u/bryan-guner)      | [StackShare](https://stackshare.io/bryanguner)      | [Plunk](http://plnkr.co/account/plunks)       | [Tealfeed](https://tealfeed.com/bryan_759844)
-| [giphy](https://giphy.com/channel/bryanguner)      | [kofi](https://ko-fi.com/bgoonz)        | [Codewars](https://www.codewars.com/users/bgoonz)       | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)       | [Glitch](https://glitch.com/@bgoonz)       | [YHYPE](https://yhype.me/github/accounts/bgoonz) 
-| [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)        | [Netlify](https://app.netlify.com/user/settings#profile)      | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)      | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured)      | [Free Code Camp](https://www.freecodecamp.org/bgoonz)
-| [wordpress](https://web-dev-hub.com/)       | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)      | [Vinmeo](https://vimeo.com/user128661018)      |  [js fiddle](https://jsfiddle.net/user/bgoonz/)     | [hashnode](https://hashnode.com/@bgoonz/joinme)      |
-| [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com)       | [Gittee](https://gitee.com/bgoonz)      |  [Wakatime](https://wakatime.com/@bgoonz42)      |  [Hubpages](https://hubpages.com/@bryanguner)     | [Gitbook](https://bryan-guner.gitbook.io/web-dev-hub-docs/)      |
+  | [GitHub](https://github.com/bgoonz)                                                                                        | [Gitlab](https://gitlab.com/bryan.guner.dev)                                        | [Bitbucket](https://bitbucket.org/bgoonz/)        | [Medium](https://bryanguner.medium.com/)                                  | [code pen](https://codepen.io/bgoonz)                                        |
+  | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+  | [Replit](https://repl.it/@bgoonz/)                                                                                         | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) | [Redit](https://www.reddit.com/user/bgoonz1)      | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                | [dev.to](https://dev.to/bgoonz)                                              |
+  | [runkit](https://runkit.com/bgoonz)                                                                                        | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                | [npm](https://www.npmjs.com/~bgoonz11)            | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)         |
+  | [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)                          | [Notion](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)    | [AngelList](https://angel.co/u/bryan-guner)       | [StackShare](https://stackshare.io/bryanguner)                            | [Plunk](http://plnkr.co/account/plunks)                                      | [Tealfeed](https://tealfeed.com/bryan_759844)         |
+  | [giphy](https://giphy.com/channel/bryanguner)                                                                              | [kofi](https://ko-fi.com/bgoonz)                                                    | [Codewars](https://www.codewars.com/users/bgoonz) | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [Glitch](https://glitch.com/@bgoonz)                                         | [YHYPE](https://yhype.me/github/accounts/bgoonz)      |
+  | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)                                    | [Netlify](https://app.netlify.com/user/settings#profile)                            | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)                                       | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured) | [Free Code Camp](https://www.freecodecamp.org/bgoonz) |
+  | [wordpress](https://web-dev-hub.com/)                                                                                      | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                 | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            | [hashnode](https://hashnode.com/@bgoonz/joinme)                              |
+  | [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com) | [Gittee](https://gitee.com/bgoonz)                                                  | [Wakatime](https://wakatime.com/@bgoonz42)        | [Hubpages](https://hubpages.com/@bryanguner)                              | [Gitbook](https://bryan-guner.gitbook.io/web-dev-hub-docs/)                  |
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=my-lambda-projects&repo=LAMBDA_LABS_FAMILY_PROMISE)](https://github.com/my-lambda-projects/LAMBDA_LABS_FAMILY_PROMISE)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Leetcode-JS-PY-MD)](https://github.com/bgoonz/Leetcode-JS-PY-MD)
@@ -166,29 +153,27 @@ template: docs
 <details>
 <summary>About Me</summary>
   
-  
-  
 ![statistics](https://github.com/bgoonz/bgoonz/blob/master/summary_50.png?raw=true)
 
-- 🔭 Contract Web Development **Relational Concepts**
+-   🔭 Contract Web Development **Relational Concepts**
 
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
 
-- 🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
+-   🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
 
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+-   👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
 
-- 💬 Ask me about **Anything:**
+-   💬 Ask me about **Anything:**
 
-- 📫 How to reach me **bryan.guner@gmail.com**
+-   📫 How to reach me **bryan.guner@gmail.com**
 
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
-### i really like music :headphones:
+### i really like music :headphones
 
 #### What's the most useful business-related book you've ever read?
 
@@ -242,7 +227,8 @@ Creating things that change my every day life.
 
 | | ## Portfolio:
 
-# [netlify](https://portfolio42.netlify.app/) 
+# [netlify](https://portfolio42.netlify.app/)
+
 </div>
 
 </details>
@@ -283,9 +269,9 @@ Creating things that change my every day life.
 
 _**A**_[_**web development blog**_](https://bgoonz-blog.netlify.app/)_**featuring convenient web development tools and interactive content**_
 
-- Implemented 4 Gatsby page models and GraphQL schema to fetch markdown content and feed it into react components.
-- Designed and integrated a set of convenient web-hosted [developer tools](https://bgoonz-blog.netlify.app/docs/tools/) and GUI interfaces.
-- Added interactive content including comments, [video conferencing](https://bgoonz-blog.netlify.app/docs/interact/video-chat/), [data-structure visualization](https://bgoonz-blog.netlify.app/docs/interact/other-sites/), [games](https://bgoonz-blog.netlify.app/docs/interact/) and full text search.
+-   Implemented 4 Gatsby page models and GraphQL schema to fetch markdown content and feed it into react components.
+-   Designed and integrated a set of convenient web-hosted [developer tools](https://bgoonz-blog.netlify.app/docs/tools/) and GUI interfaces.
+-   Added interactive content including comments, [video conferencing](https://bgoonz-blog.netlify.app/docs/interact/video-chat/), [data-structure visualization](https://bgoonz-blog.netlify.app/docs/interact/other-sites/), [games](https://bgoonz-blog.netlify.app/docs/interact/) and full text search.
 
 ---
 
@@ -295,9 +281,9 @@ _**A**_[_**web development blog**_](https://bgoonz-blog.netlify.app/)_**featurin
 
 [_**Platform**_](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/SR%20Project%20II%20Presentation.pdf)_**designed to analyze a time sequence of notes and autonomously trigger guitar effects at**_[_**a predetermined point in the song**_](https://youtu.be/pRKjaprdWx4)
 
-- Used pure data to filter a guitar signal before executing frequency domain analysis and implementing [custom built guitar effects.](https://youtu.be/krRVGoK9NcA)
-- Implemented the Dynamic Time Warping algorithm in C++ and Python to generate a time agnostic measure of similarity between performances.
-- Autonomously activated or adjusted guitar effects at multiple pre-designated sections of performance.
+-   Used pure data to filter a guitar signal before executing frequency domain analysis and implementing [custom built guitar effects.](https://youtu.be/krRVGoK9NcA)
+-   Implemented the Dynamic Time Warping algorithm in C++ and Python to generate a time agnostic measure of similarity between performances.
+-   Autonomously activated or adjusted guitar effects at multiple pre-designated sections of performance.
 
 ---
 
@@ -307,10 +293,10 @@ _**A**_[_**web development blog**_](https://bgoonz-blog.netlify.app/)_**featurin
 
 _**A**_[_**website**_](https://youtu.be/onquAh1Bl0g)_**for visualizing and practicing data structures and algorithms in JavaScript &amp; Python**_
 
-- Implemented an repl.it backend to enable commenting using express and the fs **module** to write user comments to a storage.json file.
-- Developed proprietary npm package to recursively walk the project directory structure and generate a [site navigation page](https://ds-algo-official.netlify.app/sitemap.html).
-- Created multiple embedded data structure visualizations that interact with user input.
-- Automated the generation and submission of a [sitemap](https://ds-algo-official.netlify.app/sitemap.xml)to (Google, Bing, and Yandex) on every build.
+-   Implemented an repl.it backend to enable commenting using express and the fs **module** to write user comments to a storage.json file.
+-   Developed proprietary npm package to recursively walk the project directory structure and generate a [site navigation page](https://ds-algo-official.netlify.app/sitemap.html).
+-   Created multiple embedded data structure visualizations that interact with user input.
+-   Automated the generation and submission of a [sitemap](https://ds-algo-official.netlify.app/sitemap.xml)to (Google, Bing, and Yandex) on every build.
 
 ---
 
@@ -322,10 +308,10 @@ _**A**_[_**website**_](https://youtu.be/onquAh1Bl0g)_**for visualizing and pract
 
 **Product Development Engineer |** [_**Cembre**_](https://www.cembre.com/)_**, Edison, NJ**\_\_|_**Oct 2019 - Mar 2020**
 
-- Converted client&#39;s product needs into [technical specs](https://www.cembre.com/family/details/5202) to be sent to the development team in Italy.
-- Reorganized internal file server structure and conducted system integration and product demonstrations.
-- Presided over internal and end user software trainings in addition to producing customer facing documentation.
-- Conducted [electrical conductivity &amp; tensile testing of electrical components](https://drive.google.com/drive/folders/1USAQtiQ3jLm3fiRCxIm4TEkWGlq4fO6j?usp=sharing) and presided over troubleshooting railroad hardware and software in North America.
+-   Converted client&#39;s product needs into [technical specs](https://www.cembre.com/family/details/5202) to be sent to the development team in Italy.
+-   Reorganized internal file server structure and conducted system integration and product demonstrations.
+-   Presided over internal and end user software trainings in addition to producing customer facing documentation.
+-   Conducted [electrical conductivity &amp; tensile testing of electrical components](https://drive.google.com/drive/folders/1USAQtiQ3jLm3fiRCxIm4TEkWGlq4fO6j?usp=sharing) and presided over troubleshooting railroad hardware and software in North America.
 
 [**Family Promise**](https://familypromise.org/) **Service Tracker**
 
@@ -335,9 +321,9 @@ _**A**_[_**website**_](https://youtu.be/onquAh1Bl0g)_**for visualizing and pract
 
 _**An**_[_**app**_](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadmap)_**built to helps local communities provide services to address the root causes of family homelessness**_
 
-- Collaborated on state management using Redux to handle application state and middleware using redux-promise &amp; redux-thunk.
-- Built two graphic visuals of the user hierarchy and the scope of their permissions as well as maintained the team&#39;s [docs](https://bryan-guner.gitbook.io/my-docs/v/lambda-labs/).
-- Created Figma UI mockups for possible future developments, such as displaying metrics data and map pinpoint functionality.
+-   Collaborated on state management using Redux to handle application state and middleware using redux-promise &amp; redux-thunk.
+-   Built two graphic visuals of the user hierarchy and the scope of their permissions as well as maintained the team&#39;s [docs](https://bryan-guner.gitbook.io/my-docs/v/lambda-labs/).
+-   Created Figma UI mockups for possible future developments, such as displaying metrics data and map pinpoint functionality.
 
 <br>
 
@@ -362,8 +348,7 @@ Six-month immersive software development course with a focus on [full stack web 
 _**References &amp; further work experience available upon request.**_
 
 </div>
-    
-    
+
 </details>
 
 <details>
@@ -413,7 +398,7 @@ _**References &amp; further work experience available upon request.**_
       <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
       <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
     </tr>
-    
+
   </tbody>
 
 <p align="center">
@@ -422,7 +407,7 @@ _**References &amp; further work experience available upon request.**_
 
 ---
 
-## ➤ Weekly-Quick-Snips:
+## ➤ Weekly-Quick-Snips
 
 ### replaceAll
 
@@ -460,7 +445,7 @@ const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets
 
 ---
 
-### Fibonacci in Python:
+### Fibonacci in Python
 
 ```py
 def fib_iter(n):
@@ -481,7 +466,7 @@ for i in range(10):
 
 ---
 
-#### Yesterday's Snippet of the day:
+#### Yesterday's Snippet of the day
 
 ---
 
@@ -530,13 +515,12 @@ print(quicksort([9,8,7,6,5,4,3,2,1]))
   
   <summary>See Older Snippets!</summary>
   
-  
-  #### This Week's snippets: 
+#### This Week's snippets
   
   ---
   
-  
    >will replace any spaces in file names with an underscore!
+
 ```bash
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
   ## TAKING IT A STEP FURTHER:
@@ -562,45 +546,42 @@ cd "${f}"
 }
 RecurseDirs "./"
 
-````
+```
 
+---
 
- ---
- ### Copy to clipboard jQuerry
- > Language: Javascript/Jquery
+### Copy to clipboard jQuerry
 
+> Language: Javascript/Jquery
 
->In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
-
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
-$(document).ready(function() {
-  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
-$('code span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim(); //.text();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
+$(document).ready(function () {
+    $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+    $('code span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim(); //.text();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
 
-$('pre span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
-})
-
-
-````
+    $('pre span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
+});
+```
 
 ---
 
@@ -608,10 +589,10 @@ $('pre span.command-copy').click(function(e) {
 
 ```js
 //APPEND-DIR.js
-const fs = require("fs");
-let cat = require("child_process").execSync("cat *").toString("UTF-8");
-fs.writeFile("output.md", cat, (err) => {
-  if (err) throw err;
+const fs = require('fs');
+let cat = require('child_process').execSync('cat *').toString('UTF-8');
+fs.writeFile('output.md', cat, (err) => {
+    if (err) throw err;
 });
 ```
 
@@ -638,22 +619,22 @@ passing in an array (secondArr) it returns a new array containing the elements
 common to both firstArr and secondArr.
 */
 function intersection(firstArr) {
-  return (secondArr) => {
-    let common = [];
-    for (let i = 0; i < firstArr.length; i++) {
-      let el = firstArr[i];
-      if (secondArr.indexOf(el) > -1) {
-        common.push(el);
-      }
-    }
-    return common;
-  };
+    return (secondArr) => {
+        let common = [];
+        for (let i = 0; i < firstArr.length; i++) {
+            let el = firstArr[i];
+            if (secondArr.indexOf(el) > -1) {
+                common.push(el);
+            }
+        }
+        return common;
+    };
 }
-let abc = intersection(["a", "b", "c"]); // returns a function
-console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+let abc = intersection(['a', 'b', 'c']); // returns a function
+console.log(abc(['b', 'd', 'c'])); // returns [ 'b', 'c' ]
 
-let fame = intersection(["f", "a", "m", "e"]); // returns a function
-console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
+let fame = intersection(['f', 'a', 'm', 'e']); // returns a function
+console.log(fame(['a', 'f', 'z', 'b'])); // returns [ 'f', 'a' ]
 ```
 
 ---
@@ -672,32 +653,23 @@ Second is partrecurSum() that recursively concatenates the required sum into an 
 //                            start                           end
 
 function recurSum(arr, start = 0, sum = 0) {
-  if (start < arr.length) {
-    return recurSum(arr, start + 1, sum + arr[start]);
-  }
-  return sum;
+    if (start < arr.length) {
+        return recurSum(arr, start + 1, sum + arr[start]);
+    }
+    return sum;
 }
 
 function rPartSumsArr(arr, partSum = [], start = 0, end = arr.length - 1) {
-  if (start <= end) {
-    return rPartSumsArr(
-      arr,
-      partSum.concat(recurSum(arr, start)),
-      ++start,
-      end
-    );
-  }
-  return partSum.reverse();
+    if (start <= end) {
+        return rPartSumsArr(arr, partSum.concat(recurSum(arr, start)), ++start, end);
+    }
+    return partSum.reverse();
 }
 
-console.log(
-  "------------------------------------------------rPartSumArr------------------------------------------------"
-);
-console.log("rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]: ", rPartSumsArr(arr));
-console.log("rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]: ", rPartSumsArr(arr1));
-console.log(
-  "------------------------------------------------rPartSumArr------------------------------------------------"
-);
+console.log('------------------------------------------------rPartSumArr------------------------------------------------');
+console.log('rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]: ', rPartSumsArr(arr));
+console.log('rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]: ', rPartSumsArr(arr1));
+console.log('------------------------------------------------rPartSumArr------------------------------------------------');
 /*
 ------------------------------------------------rPartSumArr------------------------------------------------
 rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]:  [ 10, 16, 18, 23, 24, 25 ]
@@ -712,7 +684,7 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 
 ```js
 function camelToKebab(value) {
-  return value.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+    return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
 ```
 
@@ -722,10 +694,10 @@ function camelToKebab(value) {
 
 ```js
 function camel(str) {
-  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
-    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
-    return index === 0 ? match.toLowerCase() : match.toUpperCase();
-  });
+    return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
+        if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
+        return index === 0 ? match.toLowerCase() : match.toUpperCase();
+    });
 }
 ```
 
@@ -735,26 +707,26 @@ function camel(str) {
 
 ```js
 function addTwoNumbers(l1, l2) {
-  let result = new ListNode(0);
-  let currentNode = result;
-  let carryOver = 0;
-  while (l1 != null || l2 != null) {
-    let v1 = 0;
-    let v2 = 0;
-    if (l1 != null) v1 = l1.val;
-    if (l2 != null) v2 = l2.val;
-    let sum = v1 + v2 + carryOver;
-    carryOver = Math.floor(sum / 10);
-    sum = sum % 10;
-    currentNode.next = new ListNode(sum);
-    currentNode = currentNode.next;
-    if (l1 != null) l1 = l1.next;
-    if (l2 != null) l2 = l2.next;
-  }
-  if (carryOver > 0) {
-    currentNode.next = new ListNode(carryOver);
-  }
-  return result.next;
+    let result = new ListNode(0);
+    let currentNode = result;
+    let carryOver = 0;
+    while (l1 != null || l2 != null) {
+        let v1 = 0;
+        let v2 = 0;
+        if (l1 != null) v1 = l1.val;
+        if (l2 != null) v2 = l2.val;
+        let sum = v1 + v2 + carryOver;
+        carryOver = Math.floor(sum / 10);
+        sum = sum % 10;
+        currentNode.next = new ListNode(sum);
+        currentNode = currentNode.next;
+        if (l1 != null) l1 = l1.next;
+        if (l2 != null) l2 = l2.next;
+    }
+    if (carryOver > 0) {
+        currentNode.next = new ListNode(carryOver);
+    }
+    return result.next;
 }
 ```
 
@@ -767,23 +739,23 @@ function addTwoNumbers(l1, l2) {
 //expression in JavaScript
 
 let isAlphaNumeric = (char) => {
-  char = char.toString();
-  let id = char.charCodeAt(0);
-  if (
-    !(id > 47 && id < 58) && // if not numeric(0-9)
-    !(id > 64 && id < 91) && // if not letter(A-Z)
-    !(id > 96 && id < 123) // if not letter(a-z)
-  ) {
-    return false;
-  }
-  return true;
+    char = char.toString();
+    let id = char.charCodeAt(0);
+    if (
+        !(id > 47 && id < 58) && // if not numeric(0-9)
+        !(id > 64 && id < 91) && // if not letter(A-Z)
+        !(id > 96 && id < 123) // if not letter(a-z)
+    ) {
+        return false;
+    }
+    return true;
 };
 
-console.log(isAlphaNumeric("A")); //true
+console.log(isAlphaNumeric('A')); //true
 console.log(isAlphaNumeric(2)); //true
-console.log(isAlphaNumeric("z")); //true
-console.log(isAlphaNumeric(" ")); //false
-console.log(isAlphaNumeric("!")); //false
+console.log(isAlphaNumeric('z')); //true
+console.log(isAlphaNumeric(' ')); //false
+console.log(isAlphaNumeric('!')); //false
 ```
 
 ---
@@ -792,16 +764,16 @@ console.log(isAlphaNumeric("!")); //false
 
 ```js
 function replaceWords(str, before, after) {
-  if (/^[A-Z]/.test(before)) {
-    after = after[0].toUpperCase() + after.substring(1);
-  } else {
-    after = after[0].toLowerCase() + after.substring(1);
-  }
-  return str.replace(before, after);
+    if (/^[A-Z]/.test(before)) {
+        after = after[0].toUpperCase() + after.substring(1);
+    } else {
+        after = after[0].toLowerCase() + after.substring(1);
+    }
+    return str.replace(before, after);
 }
-console.log(replaceWords("Let us go to the store", "store", "mall")); //"Let us go to the mall"
-console.log(replaceWords("He is Sleeping on the couch", "Sleeping", "sitting")); //"He is Sitting on the couch"
-console.log(replaceWords("His name is Tom", "Tom", "john"));
+console.log(replaceWords('Let us go to the store', 'store', 'mall')); //"Let us go to the mall"
+console.log(replaceWords('He is Sleeping on the couch', 'Sleeping', 'sitting')); //"He is Sitting on the couch"
+console.log(replaceWords('His name is Tom', 'Tom', 'john'));
 //"His name is John"
 ```
 
@@ -811,11 +783,7 @@ console.log(replaceWords("His name is Tom", "Tom", "john"));
 
 ```js
 /*Simple Function to flatten an array into a single layer */
-const flatten = (array) =>
-  array.reduce(
-    (accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele),
-    []
-  );
+const flatten = (array) => array.reduce((accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele), []);
 ```
 
 ---
@@ -836,16 +804,16 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ```js
 function longestCommonPrefix(strs) {
-  let prefix = "";
-  if (strs.length === 0) return prefix;
-  for (let i = 0; i < strs[0].length; i++) {
-    const character = strs[0][i];
-    for (let j = 0; j < strs.length; j++) {
-      if (strs[j][i] !== character) return prefix;
+    let prefix = '';
+    if (strs.length === 0) return prefix;
+    for (let i = 0; i < strs[0].length; i++) {
+        const character = strs[0][i];
+        for (let j = 0; j < strs.length; j++) {
+            if (strs[j][i] !== character) return prefix;
+        }
+        prefix = prefix + character;
     }
-    prefix = prefix + character;
-  }
-  return prefix;
+    return prefix;
 }
 ```
 
@@ -886,9 +854,6 @@ function longestCommonPrefix(strs) {
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat&logo=gitlab)&nbsp;
-![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)   
+![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
   
-  
-  
-  
-  # Useful Links: 
+# Useful Links
