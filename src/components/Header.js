@@ -92,7 +92,16 @@ export default class Header extends React.Component {
                 </div>
 
                 <div>
-                    <div id="search" className="gcse-search search"></div>
+                    <div id="search" className="gcse-search search" style={{
+                        zIndex: 100000,
+                        fill: 'black',
+                        color: '#fff',
+                        position: 'fixed',
+                        top: '0px',
+                        border: 0,
+                       right: '0px',
+                        transform: 'scale(-1.5, 1.5)'
+                    }}></div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
