@@ -157,7 +157,7 @@ sections:
     image_alt: dev tools
     image_position: left
     content: |+
-
+https://search-awesome.vercel.app/
 
     actions: []
     type: section_content
