@@ -3,5 +3,6 @@
             "**/.git": false
       },
       "search.useGlobalIgnoreFiles": true,
-      "search.useIgnoreFiles": false
+      "search.useIgnoreFiles": false,
+      "python.pythonPath": "/bin/python3"
 }
