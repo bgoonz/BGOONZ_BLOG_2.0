@@ -4671,7 +4671,10 @@ image: images/green-spruce-4e3a1745.png
      You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
 
      ```html
-     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the conditions<br />
+     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the conditions 
+<br/>
+
+
      ```
 
      ```javascript

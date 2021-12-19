@@ -14,7 +14,10 @@ REST is a generally agreed-upon set of principles and constraints. They are reco
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Part 1:
 
-<a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a"><strong>The ExpressJS Way To Write APIs</strong><br />
+<a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a"><strong>The ExpressJS Way To Write APIs</strong> 
+<br/>
+
+
 <em>This article will cover the basics of express from the perspective of a beginner without concerning its self with the…</em>medium.com</a><a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
@@ -1513,10 +1516,16 @@ If we want that to override this default, we can delete or update with **cascade
         .onDelete('CASCADE')
     })
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure><a href="https://expressjs.com/en/starter/basic-routing.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/starter/basic-routing.html"><strong>Express basic routing</strong><br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure><a href="https://expressjs.com/en/starter/basic-routing.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/starter/basic-routing.html"><strong>Express basic routing</strong> 
+<br/>
+
+
 <em>Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI…</em>expressjs.com</a><a href="https://expressjs.com/en/starter/basic-routing.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong><br />
+<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong> 
+<br/>
+
+
 <em>Middleware functions are functions that have access to the request object ( req), the response object ( res), and the…</em>expressjs.com</a><a href="https://expressjs.com/en/guide/writing-middleware.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 25, 2021](https://medium.com/p/d9edbf68cf9a).

@@ -2170,10 +2170,16 @@ export default class Footer extends React.Component {
                 <div id="search"></div>
                 <div>
                     <center>
-                        <br />
+                         
+<br/>
+
+
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
                         <div id="search"> {Script} </div>
-                        <br />
+                         
+<br/>
+
+
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
@@ -2345,7 +2351,10 @@ export default class Header extends React.Component {
             <header id="masthead" className="site-header outer">
                 {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
 
-                <br />
+                 
+<br/>
+
+
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">

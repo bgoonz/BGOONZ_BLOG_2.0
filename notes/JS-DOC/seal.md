@@ -92,7 +92,10 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Object.seal' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

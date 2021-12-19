@@ -50,7 +50,10 @@ Following example describes how `Symbol.toPrimitive` property can modify the pri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.toprimitive">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.toprimitive">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-symbol.toprimitive</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

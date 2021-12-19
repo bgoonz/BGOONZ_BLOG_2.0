@@ -148,10 +148,16 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _there are special instances in HTML called “self-closing tags”, or tags that don't require both an opening and closing tag before another tag can start._
 
-> _For example the line-break tag can be written as_ `<br>` _or as_ `<br />,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
+> _For example the line-break tag can be written as_ `<br>` _or as_ ` 
+<br/>
+
+,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
 
 > _In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.  
-> The line-break tag, for example, must always be written as_ `<br />` _in order to be valid JSX that can be transpiled.  
+> The line-break tag, for example, must always be written as_ ` 
+<br/>
+
+` _in order to be valid JSX that can be transpiled.  
 > A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
@@ -169,7 +175,10 @@ The code editor has a JSX element similar to what you created in the last challe
 
     const JSX = (
       <div>
-        <h2>Welcome to React!</h2> <br />
+        <h2>Welcome to React!</h2>  
+<br/>
+
+
         <p>Be sure to close all tags!</p>
         <hr />
       </div>
@@ -372,7 +381,10 @@ Note: The text is considered a child of the div element, so you will not be able
 
 For more content follow me on GitHub:
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> 
+<br/>
+
+
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>

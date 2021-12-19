@@ -40,7 +40,10 @@ Because `sign()` is a static method of `Math`, you always use it as `Math.sign()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-math.sign</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

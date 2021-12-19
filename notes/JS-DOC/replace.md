@@ -137,7 +137,10 @@ The regular expression `test` checks for any number that ends with `F`. The numb
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'String.prototype.replace' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -32,12 +32,18 @@ YAML elements are mostly based on Key-Value pairs. We may see them as strict KV:
 
 or a a key with a complex/compound value:
 
-Name: **< the key**<br />
+Name: **< the key** 
+<br/>
+
+
 AnotherName: someValue **< the value**
 
 YAML is a superset of JSON, so we can utilize JSON style sequences and maps in our constructs:
 
-a_json_style_map: {"K": "V"}<br />
+a_json_style_map: {"K": "V"} 
+<br/>
+
+
 a_json_style_sequence: \["pink", "red", "red", "cat", 123, 234, 345\]
 
 ### Spaces/indenting
@@ -61,7 +67,10 @@ Defining the start and end of a document is optional. To start a document insert
 
 Comments are defined by placing a hash in front of an item '`#`'. Comments can be made at the start of a line of anywhere in the line:
 
-\# this is a comment<br />
+\# this is a comment 
+<br/>
+
+
 Key: Value #this another comment
 
 ### SCALAR
@@ -82,21 +91,45 @@ Collections & Lists
 
 List and collection members are lines that begin at the same indentation level, starting with a dash followed by a space.
 
-\# a collection of fancy cars<br />
-Fancy-Cars<br />
+\# a collection of fancy cars 
+<br/>
 
-- Porsche<br />
-- Aston Martin<br />
+
+Fancy-Cars 
+<br/>
+
+
+
+- Porsche 
+<br/>
+
+
+- Aston Martin 
+<br/>
+
+
 - Bentley
 
 ### Multi-line collections
 
 Complex keys can be catered for by placing a question mark followed by a pipe symbol to flag the start of a complex key:
 
-? |<br />
-starting a complex<br />
-key with many<br />
-lines<br />
+? | 
+<br/>
+
+
+starting a complex 
+<br/>
+
+
+key with many 
+<br/>
+
+
+lines 
+<br/>
+
+
 : and here comes the value!
 
 ###
@@ -105,29 +138,80 @@ Nested collections
 
 You can also have deep nested collections:
 
-\# Car information<br />
+\# Car information 
+<br/>
 
-- Driver<br />
-    name: Francis Black<br />
-    age: 21<br />
-    Driving license type:<br /> - full car license<br /> - racing license formula V : details<br />
-    license id: ABC12345<br />
+
+
+- Driver 
+<br/>
+
+
+    name: Francis Black 
+<br/>
+
+
+    age: 21 
+<br/>
+
+
+    Driving license type: 
+<br/>
+
+ - full car license 
+<br/>
+
+ - racing license formula V : details 
+<br/>
+
+
+    license id: ABC12345 
+<br/>
+
+
     expiry date: 2017-12-28
 
 ### Dictionaries
 
 Dictionaries comprise a key:value format with contents indented.
 
-CarDetails:<br />
-make: Porsche<br />
-model: 911<br />
+CarDetails: 
+<br/>
+
+
+make: Porsche 
+<br/>
+
+
+model: 911 
+<br/>
+
+
 fuel: Petrol
 
 You can merge and mix-up collections of lists and dictionaries like this:
 
-\# Car information<br />
+\# Car information 
+<br/>
 
-- Driver<br />
-    name: Francis Black<br />
-    age: 21<br />
-    Driving license type:<br /> - full car license<br /> - racing license formula V
+
+
+- Driver 
+<br/>
+
+
+    name: Francis Black 
+<br/>
+
+
+    age: 21 
+<br/>
+
+
+    Driving license type: 
+<br/>
+
+ - full car license 
+<br/>
+
+ - racing license formula V

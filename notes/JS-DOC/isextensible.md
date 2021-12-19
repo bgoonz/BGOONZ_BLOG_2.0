@@ -57,7 +57,10 @@ If the `target` argument to this method is not an object (a primitive), then it 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-reflect.isextensible</span></a></td></tr></tbody></table>
 
 `isExtensible`

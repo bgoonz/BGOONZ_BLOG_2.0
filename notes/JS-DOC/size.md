@@ -19,7 +19,10 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-get-map.prototype.size</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

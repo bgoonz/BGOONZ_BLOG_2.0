@@ -68,7 +68,10 @@ Tip: Soft skills can be a difference maker. If it's a choice between a skilled p
 
 Tip: Yes, you're interviewing for a web developer job, but remember to look to other experiences in your life for inspiration. Examples like the time you helped improve the ordering system at the cafe you worked at or put together a volunteer fundraising effort to save the music program at your kids' school all speak to the breadth of your problem solving abilities and experiences.
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<br/>
+
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 6, 2021](https://medium.com/p/bf5c079f7461).

@@ -94,7 +94,10 @@ Using `matchAll`, you can access capture groups easily:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-string.prototype.matchall</span></a></td></tr></tbody></table>
 
 `matchAll`

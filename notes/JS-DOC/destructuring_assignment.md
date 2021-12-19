@@ -379,7 +379,10 @@ When deconstructing an object, if a property is not accessed in itself, it will 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-destructuring-assignment</span></a></td></tr></tbody></table>
 
 `Destructuring_assignment`

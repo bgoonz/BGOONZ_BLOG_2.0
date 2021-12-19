@@ -14,7 +14,10 @@ export default class Header extends React.Component {
             <header id="masthead" className="site-header outer">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
 
-                <br />
+                 
+<br/>
+
+
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">

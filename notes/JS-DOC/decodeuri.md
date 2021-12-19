@@ -42,7 +42,10 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-decodeuri-encodeduri</span></a></td></tr></tbody></table>
 
 `decodeURI`

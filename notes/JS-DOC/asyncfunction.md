@@ -58,7 +58,10 @@ Invoking the `AsyncFunction` constructor as a function (without using the `new` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-async-function-objects</span></a></td></tr></tbody></table>
 
 `AsyncFunction`

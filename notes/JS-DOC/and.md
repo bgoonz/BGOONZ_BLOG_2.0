@@ -52,7 +52,10 @@ For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-atomics.and</span></a></td></tr></tbody></table>
 
 `and`

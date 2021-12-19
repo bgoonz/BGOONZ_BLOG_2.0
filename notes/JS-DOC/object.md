@@ -248,7 +248,10 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Object' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

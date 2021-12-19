@@ -40,7 +40,10 @@ Flags in the `flags` property are sorted alphabetically (from left to right, e.g
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-get-regexp.prototype.flags</span></a></td></tr></tbody></table>
 
 `flags`

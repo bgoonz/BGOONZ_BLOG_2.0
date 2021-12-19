@@ -45,7 +45,10 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-math.sinh</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

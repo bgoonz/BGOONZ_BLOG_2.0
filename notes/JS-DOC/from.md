@@ -128,7 +128,10 @@ In ES2015, the class syntax allows sub-classing of both built-in and user-define
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Array.from' in that specification.</span></a></td><td>ECMAScript 2015</td></tr></tbody></table>
 
 `from`

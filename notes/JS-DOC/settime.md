@@ -29,7 +29,10 @@ Use the `setTime()` method to help assign a date and time to another [`Date`](..
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'Date.prototype.setTime' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -6,7 +6,10 @@ Authentication
 
 ### Long List Of Invaluable NodeJS Resources
 
-<strong>A list of all of my articles to link to future posts</strong><br />
+<strong>A list of all of my articles to link to future posts</strong> 
+<br/>
+
+
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kSmfKjzYhx8ejpwQ.png" class="graf-image" /></figure>### Authentication

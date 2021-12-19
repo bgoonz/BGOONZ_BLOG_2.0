@@ -12,7 +12,10 @@ And why this programming paradigm shouldn't make you cringe.
 
 #### <a href="https://www.deadcoderising.com/2017-06-13-why-pure-functions-4-benefits-to-embrace-2/" class="markup--anchor markup--h4-anchor">Source</a>
 
-<a href="https://www.deadcoderising.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.deadcoderising.com/"><strong>Dead Code Rising</strong><br />
+<a href="https://www.deadcoderising.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.deadcoderising.com/"><strong>Dead Code Rising</strong> 
+<br/>
+
+
 <em>The last couple of weeks I've been using a lot of hours playing around with GatsbyJS, and it's been a blast! Gatsby is…</em>www.deadcoderising.com</a><a href="https://www.deadcoderising.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*Ey6rNclUY-Rp3iqM9Ytnag.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*w0txnjkmBo2z0COv.png" class="graf-image" /></figure>**Memoization** is a design paradigm used to reduce the overall number of  
@@ -131,7 +134,10 @@ _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<br/>
+
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 4, 2021](https://medium.com/p/86685d811182).

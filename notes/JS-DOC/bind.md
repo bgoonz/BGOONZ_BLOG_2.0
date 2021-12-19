@@ -290,7 +290,10 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-function.prototype.bind</span></a></td></tr></tbody></table>
 
 `bind`

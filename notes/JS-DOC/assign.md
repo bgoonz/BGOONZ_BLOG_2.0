@@ -223,7 +223,10 @@ The properties are overwritten by other objects that have the same properties la
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-object.assign</span></a></td></tr></tbody></table>
 
 `assign`

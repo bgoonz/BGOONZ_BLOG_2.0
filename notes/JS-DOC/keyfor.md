@@ -31,7 +31,10 @@ A string representing the key for the given symbol if one is found on the global
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-symbol.keyfor</span></a></td></tr></tbody></table>
 
 `keyFor`
