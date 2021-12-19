@@ -81,11 +81,11 @@
 
         .post-inside {
             background: #fff;
-            border: 1px solid $gray-300;
-            border-radius: $border-radius;
+            border: 1px solid $gray-350;
+            border-radius: $border-radius+10;
             box-shadow: $box-shadow;
-            padding: 0.3em;
-            width: 70vw;
+            padding: 0.5em;
+            width: 50vw;
         }
 
         .post-title {
