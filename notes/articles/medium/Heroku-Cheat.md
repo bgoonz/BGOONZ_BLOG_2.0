@@ -8,8 +8,8 @@ a cheatsheet for using heroku-cli
 
 #### a cheatsheet for using heroku-cli
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*x5-iOqgNLWiBDKov.gif" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*x5-iOqgNLWiBDKov.gif" class="graf-image" /></figure>
+
 
 ### `create` - Create an app
 

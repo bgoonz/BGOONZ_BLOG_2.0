@@ -15,7 +15,7 @@ These will focus more on vocabulary and concepts than the application driven app
 ### Here's part one for reference:
 
 <a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong><br />
-<em>Questions….Answers… and links to the missing pieces.</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Questions….Answers… and links to the missing pieces.</em><a href="https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="0232">**­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**</span>
 

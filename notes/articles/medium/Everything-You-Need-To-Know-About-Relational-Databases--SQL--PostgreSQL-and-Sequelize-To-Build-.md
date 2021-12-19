@@ -19,7 +19,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 -   <span id="5808"><a href="https://www.postgresql.org/docs/9.5/static/index.html" class="markup--anchor markup--li-anchor">PostgreSQL</a> This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!</span>
 
 <a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br />
-<em>If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will</em> bryanguner.medium.com</a>
+<em>If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will</em> 
 
 -   <span id="bb49">However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend <a href="https://www.elephantsql.com/" class="markup--anchor markup--li-anchor">ElephantSQL</a>. I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.</span>
 -   <span id="539a"><a href="http://docs.sequelizejs.com/en/latest/" class="markup--anchor markup--li-anchor">Sequelize</a> In addition, we re going to use Sequelize, which is a database <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" class="markup--anchor markup--li-anchor">ORM</a> that will interface with the Postgres database for us.</span>

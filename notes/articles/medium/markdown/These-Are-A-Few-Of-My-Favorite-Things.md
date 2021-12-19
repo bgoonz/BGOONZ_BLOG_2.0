@@ -8,8 +8,8 @@ A web development student's declassified school survival guide.
 
 #### A web development student's declassified school survival guide.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><strong>A list of all of my articles to link to future posts</strong><br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 Also here's an even better list by someone I don't know but would be doing you a disservice by failing to include… **There's very little overlap so you should probably read both :**
 

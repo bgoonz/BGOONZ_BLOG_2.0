@@ -8,8 +8,8 @@ In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session 
 
 #### In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+
+
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zo9j6MVAbEaxG8Be.gif" class="graf-image" /></figure>-   <span id="d5d8">A server process, which manages the database files, accepts connections to the database from client applications, and performs database actions on behalf of the clients. The database server program is called `postgres`.</span>
 -   <span id="91d1">The user's client (frontend) application that wants to perform database operations. Client applications can be very diverse in nature: a client could be a text-oriented tool, a graphical application, a web server that accesses the database to display web pages, or a specialized database maintenance tool. Some client applications are supplied with the PostgreSQL distribution; most are developed by users.</span>
@@ -50,7 +50,7 @@ SQL is used with Relational Database Management Systems, or RDBMS. These are dat
 ### Here's a guide on how to get setup with PSQL:
 
 <a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br />
-<em>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will…</em><a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Here's a Cheatsheet I made:
 

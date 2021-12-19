@@ -8,8 +8,8 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 #### I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the process that you've already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you'll get where your going in the blink of an eye!
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong><br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ---
 
