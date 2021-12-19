@@ -153,6 +153,10 @@ export default class Header extends React.Component {
                                     </td>
                                 </tr>
                             </tbody>
+        
+              
+            
+            </table>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
