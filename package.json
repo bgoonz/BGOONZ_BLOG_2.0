@@ -21,6 +21,8 @@
     "gatsby-plugin-typescript": "2.4.4",
     "gatsby-source-filesystem": "2.3.10",
     "gatsby-transformer-remark": "2.8.14",
+    "gatsby-plugin-algolia": "^0.22.0",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "js-yaml": "3.12.2",
     "lodash": "4.17.11",
     "marked": "0.6.1",
