@@ -1,9 +1,23 @@
 root_docs_path: /docs
 sections:
-  - about
-  - getting-started
-  - ui-components
-  - manage-content
-  - tools
-  - faq
-  - community
+    - about
+    - articles
+    - audio
+    - career
+    - community
+    - content
+    - css
+    - data-structures
+    - docs
+    - faq
+    - interact
+    - javascript
+    - leetcode
+    - projects
+    - python
+    - quick-reference
+    - react
+    - reference
+    - tools
+    - tips
+    - tutorials

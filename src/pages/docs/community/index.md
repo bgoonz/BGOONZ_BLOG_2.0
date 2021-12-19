@@ -1,49 +1,61 @@
 ---
-title: Where To Get Support
+title: Community
 excerpt: >-
-  We'd love it if you participate in the Libris community. Find out how to get
-  connected.
+    We'd love it if you participate in the Libris community. Find out how to get
+    connected.
 seo:
-  title: Where To Get Support
-  description: This is the community page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Where To Get Support
-      keyName: property
-    - name: 'og:description'
-      value: This is the community page
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Where To Get Support
-    - name: 'twitter:description'
-      value: This is the community page
+    title: 'Connect '
+    description: This is the community page
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Where To Get Support
+          keyName: property
+        - name: 'og:description'
+          value: This is the community page
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Where To Get Support
+        - name: 'twitter:description'
+          value: This is the community page
 template: docs
 ---
 
-<div class="note">
-  <strong>Note:</strong> 
-  This is the demo content for demonstration purpose only. The primary function of this content is to show you what this theme can do. There is a more detailed explanation in the <strong>Getting Started</strong> section.
+<div align="center">
+
+## ➤ Connect with me:
+
+<p align="center">
+  <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
+  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
+  </p>
+
 </div>
 
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit.** Donec ut nulla laoreet, finibus purus sit amet, ullamcorper felis. Aliquam sagittis consectetur ullamcorper. Ut dapibus ex a nibh euismod tincidunt. Vestibulum quam velit, placerat vel ipsum eget, vulputate aliquet nibh. Cras hendrerit, justo a sagittis pharetra, ante elit imperdiet quam, eget euismod mauris lacus at eros. Sed et est interdum leo ultricies feugiat non non est. Aenean sit amet sollicitudin tellus, at pellentesque massa. Vestibulum dapibus magna quis dui ultrices vestibulum.
+<div align="center">
 
-## Stack Overflow
+| [GitHub](https://github.com/bgoonz)                                                                                        | [Gitlab](https://gitlab.com/bryan.guner.dev)                                        | [Bitbucket](https://bitbucket.org/bgoonz/)        | [Medium](https://bryanguner.medium.com/)                                  | [code pen](https://codepen.io/bgoonz)                                        |
+| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Replit](https://repl.it/@bgoonz/)                                                                                         | [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN) | [Redit](https://www.reddit.com/user/bgoonz1)      | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                | [dev.to](https://dev.to/bgoonz)                                              |
+| [runkit](https://runkit.com/bgoonz)                                                                                        | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                | [npm](https://www.npmjs.com/~bgoonz11)            | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)         |
+| [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)                          | [Notion](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)    | [AngelList](https://angel.co/u/bryan-guner)       | [StackShare](https://stackshare.io/bryanguner)                            | [Plunk](http://plnkr.co/account/plunks)                                      |
+| [giphy](https://giphy.com/channel/bryanguner)                                                                              | [kofi](https://ko-fi.com/bgoonz)                                                    | [Codewars](https://www.codewars.com/users/bgoonz) | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [Glitch](https://glitch.com/@bgoonz)                                         |
+| [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)                                    | [Netlify](https://app.netlify.com/user/settings#profile)                            | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)                                       | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured) |
+| [wordpress](https://web-dev-hub.com/)                                                                                      | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                 | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            |                                                                              |
+| [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com) | [Gittee](https://gitee.com/bgoonz)                                                  | [Wakatime](https://wakatime.com/@bgoonz42)        |                                                                           |                                                                              |
+|                                                                                                                            |                                                                                     |                                                   |                                                                           |                                                                              |
+|                                                                                                                            |                                                                                     |                                                   |                                                                           |                                                                              |
 
-Suspendisse hendrerit maximus metus in placerat. In ligula magna, efficitur sed ultrices non, iaculis ut ligula. Sed finibus efficitur cursus. Proin quis molestie purus. Vestibulum ut magna eget tortor tempor egestas eget eu orci. Integer porta cursus rutrum. Quisque porta suscipit sem, et tincidunt felis malesuada vel. 
+---
 
-## Popular Discussion Forums
+<br>
+<a class="twitter-timeline" href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw">Tweets by bgooonz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Donec eget tellus magna. Duis eu metus sem. Donec nec ullamcorper dui. Phasellus turpis mauris, lacinia ac imperdiet eu, dapibus eu metus. Vestibulum porta lectus vel dui eleifend pretium. Nulla facilisi. Nam luctus quam at velit congue tincidunt. Ut tempus justo at urna varius commodo.
-
-## Twitter
-
-Vestibulum maximus volutpat eros a lobortis. Duis cursus neque id sollicitudin vehicula. Morbi varius dapibus est, sed bibendum diam aliquam eu. Morbi maximus consequat sem id vestibulum.
-
-Nam semper, augue pharetra commodo commodo, magna augue ornare ligula, ut gravida nisi nulla vel velit. Quisque tincidunt posuere ex eget luctus.
-
-**Sed a dui in turpis porttitor hendrerit quis id odio.**
+    
+    
+    
+<iframe src="https://discord.com/widget?id=739632674276245685&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>    
