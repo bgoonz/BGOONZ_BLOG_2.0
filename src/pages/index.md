@@ -193,7 +193,7 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             style: link
         image: images/My Post.png
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
+    section_id: showcase
     image_alt: rotating pages
     image_position: left
     content: |-
