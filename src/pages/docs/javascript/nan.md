@@ -9,7 +9,7 @@ seo:
   extra: []
 template: docs
 ---
-NaN (Not-a-Number) is the only JavaScript value not equal to itself when comparing with any of the comparison operators. NaN is often the result of meaningless or invalid math computations, so it doesn't make sense for two NaN values to be considered equal.
+NaN (Not-a-Number) is the only JavaScript value not equal to itself when comparing with any of the comparison operators. NaN is often the result of meaningless or invalid math computations, so it doesn't make sense for two NaN values to be considered equal.
 
 > x = Math.sqrt(-1); // NaN
 >
