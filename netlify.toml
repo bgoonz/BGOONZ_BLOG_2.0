@@ -1,10 +1,17 @@
 [build]
-publish = "public"
 command = "npm run build"
+publish = "public/"
 
+[[plugins]]
+package = "@netlify/plugin-gatsby"
+package = "netlify-plugin-lighthouse"
+
+  [plugins.inputs]
+  output_path = "reports/lighthouse.html"
+
+# Configuration for a local plugin
+[[plugins]]
+package = "/plugins/netlify-plugin-hello-world"
 
 [functions]
   directory = "functions"
-
-[[plugins]]
-package = "@netlify/plugin-gatsby"  
