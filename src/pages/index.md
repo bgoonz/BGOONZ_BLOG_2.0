@@ -158,7 +158,11 @@ sections:
     image_position: left
     content: |+
 https://search-awesome.vercel.app/
-
+ <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://random-static-html-deploys.netlify.app/showcase2.html"  
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: features-two-col
