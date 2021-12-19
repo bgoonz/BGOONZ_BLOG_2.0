@@ -38,8 +38,121 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-                        <div id="search">
-                        </div>
+
+                        <table cellPadding={0} cellSpacing={0} border={0}>
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style={{
+                                            fontFamily: 'Arial, Helvetica, sans-serif',
+                                            fontSize: '7.5pt'
+                                        }}
+                                    >
+                                        <center>
+                                            <table
+                                                width="95%"
+                                                cellPadding={0}
+                                                cellSpacing={0}
+                                                border={0}
+                                                style={{
+                                                    fontFamily: 'Arial, Helvetica, sans-serif',
+                                                    fontSize: '7.5pt'
+                                                }}
+                                            >
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="left"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">
+                                                                index
+                                                            </a>
+                                                        </td>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="center"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">
+                                                                sitemap
+                                                            </a>
+                                                        </td>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="right"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&pid=a">
+                                                                advanced
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+
+                                        <form
+                                            style={{
+                                                margin: '0px',
+                                                marginTop: '2px'
+                                            }}
+                                            action="https://search.freefind.com/find.html"
+                                            method="get"
+                                            acceptCharset="utf-8"
+                                            target="_self"
+                                        >
+                                            <input type="hidden" name="si" defaultValue={14588965} />
+                                            <input type="hidden" name="pid" defaultValue="r" />
+                                            <input type="hidden" name="n" defaultValue={0} />
+                                            <input type="hidden" name="_charset_" defaultValue />
+                                            <input type="hidden" name="bcd" defaultValue="÷" />
+                                            <input type="text" name="query" size={15} />
+                                            <input type="submit" defaultValue="search" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style={{
+                                            textAlign: 'center',
+                                            fontFamily: 'Arial, Helvetica, sans-serif',
+                                            fontSize: '7.5pt',
+                                            paddingTop: '4px'
+                                        }}
+                                    >
+                                        <a
+                                            style={{
+                                                textDecoration: 'none',
+                                                color: 'transparent'
+                                            }}
+                                            href="https://www.freefind.com"
+                                            rel="nofollow"
+                                        >
+                                            search engine
+                                        </a>
+                                        <a
+                                            style={{
+                                                textDecoration: 'none',
+                                                color: 'transparent'
+                                            }}
+                                            href="https://www.freefind.com"
+                                            rel="nofollow"
+                                        >
+                                            by
+                                            <span style={{ color: 'transparent' }}>freefind</span>
+                                        </a>
+                          
+                                    </td>
+                                </tr>
+                            </tbody>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -93,14 +206,13 @@ export default class Header extends React.Component {
 
                 <div>
                     <div id="search" className="gcse-search search" style={{
-                        zIndex: 100000,
-                        fill: 'black',
+                    
                         color: '#fff',
                         position: 'fixed',
                         top: '0px',
                         border: 0,
                        right: '0px',
-                        transform: 'scale(-1.5, 1.5)'
+   
                     }}></div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
