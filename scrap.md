@@ -1,3 +1,25 @@
+# old netlify.toml
+
+[build]
+command = "npm run build"
+publish = "public/"
+
+[[plugins]]
+package = "@netlify/plugin-gatsby"
+package = "netlify-plugin-lighthouse"
+
+
+# Configuration for a local plugin
+[[plugins]]
+package = "/plugins/netlify-plugin-hello-world"
+
+[functions]
+  directory = "functions"
+---
+
+
+
+
 "@stackbit/gatsby-plugin-menus": "0.0.4",
 "babel-runtime": "6.26.0",
 "chokidar": "3.4.0",
@@ -80,8 +102,8 @@
 
 
 {
-    "name": "stackbit-libris-theme",
-    "description": "Stackbit Libris Theme",
+    "name": "bgoonzblog",
+    "description": "bgoonzblog",
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
