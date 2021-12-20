@@ -1,7 +1,7 @@
 ---
 title: Tips
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Quick Coding Tips
 seo:
   title: ''
   description: ''
@@ -9,4 +9,15 @@ seo:
   extra: []
 template: docs
 ---
-## Lorem ipsum
+
+
+
+# Navigation:
+
+- [Array Methods](./array-methods.md)
+- [Insert Into An Array](./insert-into-array.md)
+- [Using Yarn](./using-yarn.md)  
+
+
+
+
