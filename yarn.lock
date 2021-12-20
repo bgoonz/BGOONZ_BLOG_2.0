@@ -9164,9 +9164,9 @@ node-sass-utils@1.1.2:
   resolved "https://registry.yarnpkg.com/node-sass-utils/-/node-sass-utils-1.1.2.tgz#d03639cfa4fc962398ba3648ab466f0db7cc2131"
   integrity sha1-0DY5z6T8liOYujZIq0ZvDbfMITE=
 
-node-sass@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-7.0.0.tgz#33ee7c2df299d51f682f13d79f3d2a562225788e"
+node-sass@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-3.0.0.tgz#33ee7c2df299d51f682f13d79f3d2a562225788e"
   integrity sha512-6yUnsD3L8fVbgMX6nKQqZkjRcG7a/PpmF0pEyeWf+BgbTj2ToJlCYrnUifL2KbjV5gIY22I3oppahBWA3B+jUg==
   dependencies:
     async-foreach "^0.1.3"
