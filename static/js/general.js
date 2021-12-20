@@ -19,3 +19,14 @@ $(window).on('beforeunload', function () {
                         "marginLeft": ($(window).scrollLeft()) + "px"
                   }, "slow");
     } );
+
+
+
+
+
+
+
+
+
+
+    
