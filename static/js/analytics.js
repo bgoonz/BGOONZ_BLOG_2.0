@@ -1,9 +1,5 @@
 (function (sttc) {
-    /* 
- 
- Copyright The Closure Library Authors. 
- SPDX-License-Identifier: Apache-2.0 
-*/
+  
     var aa, ba;
     function ca(a) {
         var b = 0;

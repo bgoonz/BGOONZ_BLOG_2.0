@@ -720,6 +720,6 @@ No
 -   [`getter`](functions/get)
 -   [`setter`](functions/set)
 -   [`Method definitions`](functions/method_definitions)
--   [Functions and function scope](functions)
+-   Functions and function scope
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a>

@@ -1,12 +1,11 @@
 const siteMetadata = require('./site-metadata.json')
-require("dotenv").config()
+
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-source-data`,
-        `gatsby-plugin-algolia`,
         `gatsby-transformer-remark`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -23,7 +22,6 @@ module.exports = {
             resolve: `gatsby-remark-page-creator`,
             options: {}
         },
-        
         {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {

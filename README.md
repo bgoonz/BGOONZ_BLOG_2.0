@@ -7,9 +7,10 @@
 </div>
 
 ---
+
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)  ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 </div>
 <div align="center">
@@ -17,8 +18,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)
 
 </div>
-
----
 
 <details>
 
@@ -30,7 +29,7 @@
 
 # To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
 
-find . -iname "*.jpg"
+find . -iname "\*.jpg"
 
 # To find directories
 
@@ -50,11 +49,11 @@ find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
 # To find files with extension '.txt' and remove them
 
-find ./path/ -name '*.txt' -exec rm '{}' \;
+find ./path/ -name '\*.txt' -exec rm '{}' \;
 
 # To find files with extension '.txt' and look for a string into them
 
-find ./path/ -name '*.txt' | xargs grep 'string'
+find ./path/ -name '\*.txt' | xargs grep 'string'
 
 # To find files with size bigger than 5 Mebibyte and sort them by size
 
@@ -82,7 +81,7 @@ find . -maxdepth 2 -name build -type d
 
 # To search all files who are not in .git directory
 
-find . ! -iwholename '*.git*' -type f
+find . ! -iwholename '_.git_' -type f
 
 # To find all files that have the same node (hard link) as MY_FILE_HERE
 
@@ -92,22 +91,20 @@ find . -type f -samefile MY_FILE_HERE 2>/dev/null
 
 find . -type f -exec chmod 644 {} \;
 
----
-
 # 1. Remove spaces from file and folder names and then remove numbers from files and folder names
 
 ### Description: need to : `sudo apt install rename`
 
->Notes: Issue when renaming file without numbers collides with existing file name...
+> Notes: Issue when renaming file without numbers collides with existing file name...
 
-###### code
+#### code
 
 ```sh
-find . -name "* *" -type d | rename 's/ /_/g'   
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -125,7 +122,7 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 >Notes: this includes the contents of the file it's self...
 
 
-###### code:
+#### code:
 
 
 ```js
@@ -139,7 +136,7 @@ fs.writeFile('output.md', cat, err => {
 });
 
 
-```
+````
 
 ---
 
@@ -147,7 +144,7 @@ fs.writeFile('output.md', cat, err => {
 
 ### Description
 
->Notes:       ==>     sudo apt install wget
+> Notes: ==> sudo apt install wget
 
 ###### code
 
@@ -163,14 +160,14 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
->Notes:   To clear up clutter in repositories that only get used on your local machine.
+> Notes: To clear up clutter in repositories that only get used on your local machine.
 
 ###### code
 
 ```sh
 
 
-find . -empty -type d -print -delete        
+find . -empty -type d -print -delete
 
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
@@ -185,9 +182,9 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # 4. clone all of a user's git repositories
 
-### Description: clone all of a user or organization's git  repositories
+### Description: clone all of a user or organization's git repositories
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -280,7 +277,7 @@ git push -u origin preview
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -300,7 +297,7 @@ find . -name "*.zip" -type f -print -delete
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -320,7 +317,7 @@ git stash pop
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -336,11 +333,11 @@ prettier --write .
 
 ---
 
-# 9.  Pandoc
+# 9. Pandoc
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -365,12 +362,12 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
 ```sh
-sudo apt install tree 
+sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
 sudo apt install black -y
@@ -395,7 +392,7 @@ npm-recursive-install
 
 ### Description: my standard repo utis package
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -406,11 +403,11 @@ npm i @bgoonz11/repoutils
 
 ---
 
-# 12.  Unix Tree Package Usage
+# 12. Unix Tree Package Usage
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -438,7 +435,7 @@ tree -f >README.md
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -459,10 +456,10 @@ find . -type d -exec rename 's/-main//g' {} +
 
 
 
-rename 's/\.js\.download$/.js/' *.js\.download 
+rename 's/\.js\.download$/.js/' *.js\.download
 
 
-rename 's/\.html\.markdown$/.md/' *.html\.markdown 
+rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
 
 find . -type d -exec rename 's/es6//g' {} +
@@ -476,7 +473,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -519,7 +516,7 @@ done
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -535,21 +532,17 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ### Description: combine the contents of every file in the contaning directory
 
->Notes: this includes the contents of the file it's self...
+> Notes: this includes the contents of the file it's self...
 
 ###### code
 
 ```js
 //APPEND-DIR.js
 const fs = require('fs');
-let cat = require('child_process')
-  .execSync('cat *')
-  .toString('UTF-8');
-fs.writeFile('output.md', cat, err => {
-  if (err) throw err;
+let cat = require('child_process').execSync('cat *').toString('UTF-8');
+fs.writeFile('output.md', cat, (err) => {
+    if (err) throw err;
 });
-
-
 ```
 
 ---
@@ -558,14 +551,14 @@ fs.writeFile('output.md', cat, err => {
 
 ### Description: followed by replace `'#' with '_'` in directory name
 
->Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
+> Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 
 ###### code
 
 ```sh
 find . -name "* *" -type f | rename 's/_//g'
 
-find . -name "* *" -type d | rename 's/#/_/g'   
+find . -name "* *" -type d | rename 's/#/_/g'
 
 ```
 
@@ -575,7 +568,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -602,7 +595,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 ### Description
 
->Notes: Remove lines not containing `'.js'`
+> Notes: Remove lines not containing `'.js'`
 
 ```sh
 
@@ -634,10 +627,10 @@ sudo sed -i '/author/d' ./*
 
 ### Description
 
->Notes:
- //...syntax of uniq...//
-$uniq [OPTION] [INPUT[OUTPUT]]
-The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output.
+> Notes:
+> //...syntax of uniq...//
+> $uniq [OPTION] [INPUT[OUTPUT]]
+> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output.
 
 Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
@@ -655,7 +648,7 @@ uniq -u input.txt output.txt
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -698,7 +691,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -711,11 +704,11 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-# usage: 
+# usage:
 # - zipdir thedir
 # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add 'zip' command this way: 
+# if in windows/git-bash, add 'zip' command this way:
 # https://stackoverflow.com/a/55749636/1482990
 
 
@@ -727,7 +720,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -744,7 +737,7 @@ source doit.sh
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -854,7 +847,7 @@ cmd $listing --sort=extension >>$html
 
 ### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
 
->Notes: Useful Follow up Code:
+> Notes: Useful Follow up Code:
 
 ```sh
 
@@ -972,7 +965,7 @@ cmd $listing --sort=extension >>$html
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -985,15 +978,15 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_in
 
 ---
 
-# 27.  OVERWRITE LOCAL CHANGES
+# 27. OVERWRITE LOCAL CHANGES
 
 ### Description
 
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
->Notes:
-First, run a fetch to update all origin/<branch> refs to latest:
+> Notes:
+> First, run a fetch to update all origin/<branch> refs to latest:
 
 ###### code
 
@@ -1024,15 +1017,15 @@ git reset --hard origin/master
 
 ### Description: To remove a submodule you need to
 
->Notes:
+> Notes:
 
 > Delete the relevant section from the .gitmodules file.
-Stage the .gitmodules changes git add .gitmodules
-Delete the relevant section from .git/config.
-Run git rm --cached path_to_submodule (no trailing slash).
-Run rm -rf .git/modules/path_to_submodule (no trailing slash).
-Commit git commit -m "Removed submodule "
-Delete the now untracked submodule files rm -rf path_to_submodule
+> Stage the .gitmodules changes git add .gitmodules
+> Delete the relevant section from .git/config.
+> Run git rm --cached path_to_submodule (no trailing slash).
+> Run rm -rf .git/modules/path_to_submodule (no trailing slash).
+> Commit git commit -m "Removed submodule "
+> Delete the now untracked submodule files rm -rf path_to_submodule
 
 ###### code
 
@@ -1046,7 +1039,7 @@ git submodule deinit
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1074,7 +1067,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1090,7 +1083,7 @@ git remote remove origin
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1107,7 +1100,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1124,7 +1117,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ### Description: ES5 --> ES6
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1153,12 +1146,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1167,12 +1160,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 
 
@@ -1184,7 +1177,7 @@ lebab --replace ./ --transform includes
 
 ### Description: Open Powershell as Administrator
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1203,7 +1196,7 @@ lebab --replace ./ --transform includes
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1222,7 +1215,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1243,7 +1236,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1261,7 +1254,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1288,7 +1281,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
->Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
 ```sh
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -1306,23 +1299,23 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ### Description: replaces spaces in file and folder names with an `_` underscore
 
->Notes: need to run `sudo apt install rename` to use this command
+> Notes: need to run `sudo apt install rename` to use this command
 
 ###### code
 
 ```sh
 
-find . -name "* *" -type d | rename 's/ /_/g'   
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
 ---
 
-# 41.  Zip Each subdirectories in a given directory into their own zip file
+# 41. Zip Each subdirectories in a given directory into their own zip file
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1339,7 +1332,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1349,18 +1342,18 @@ PARAM (
     [string] $ZipFilesPath = "./",
     [string] $UnzipPath = "./RESULT"
 )
- 
+
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
- 
+
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
- 
+
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
- 
- 
+
+
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
@@ -1374,7 +1367,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1389,7 +1382,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ### Description: to working directory
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1407,7 +1400,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ### Description: rename existing readme to blueprint.md
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1424,7 +1417,7 @@ npx @appnest/readme generate
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1438,7 +1431,7 @@ sudo -u postgres psql
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1475,7 +1468,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ### Description
 
->Notes:
+> Notes:
 
 ###### code
 
@@ -1489,54 +1482,48 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
 
----
-
 </details>
-
----
 
 ---
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
----
-
 ## Wiki Nav
 
-- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
-- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
-- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
-- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
-- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
-- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
-- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
-- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
-- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
-- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
-- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
-- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
-- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
-- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
-- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
-- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
-- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
-- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
-- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
-- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
-- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
-- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
-- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
-- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
-- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
-- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
-- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
-- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
-- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
-- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
-- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
-- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
-- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
-- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+-   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+-   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+-   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+-   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+-   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+-   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+-   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+-   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+-   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+-   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+-   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+-   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+-   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+-   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+-   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+-   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+-   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+-   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+-   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+-   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+-   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+-   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+-   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+-   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+-   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+-   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+-   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+-   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+-   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+-   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+-   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+-   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+-   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+-   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
@@ -2359,9 +2346,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+-   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -2389,24 +2376,24 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
 
-- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
-- **`/plugins`** This folder hosts any project-specific (“local”) plugins that aren’t published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
-- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
-- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. “src” is a convention for “source code”.
+-   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+-   **`/plugins`** This folder hosts any project-specific (“local”) plugins that aren’t published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+-   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+-   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. “src” is a convention for “source code”.
 
-  - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-  - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-  - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-  - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
-- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+-   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
 
-- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
-- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+-   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+-   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+-   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+-   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
 
