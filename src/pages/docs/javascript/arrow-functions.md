@@ -3,19 +3,10 @@ title: JS Fat Arrow Functions
 weight: 0
 excerpt: JS Fat Arrow Functions
 seo:
-  title: JS Fat Arrow Functions
-  description: >+
-    A few important things to notice here:
-
-    We've lost function and {} because all of our callback functions are one
-    liners.
-
-    We've lost () around the argument list when there's just one argument (rest
-    arguments are an exception, eg (...args) => ...)
-
-
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 

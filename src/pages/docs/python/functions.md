@@ -1,7 +1,7 @@
 ---
-title: Functions
+title: lorem-ipsum
 weight: 0
-excerpt: Functions
+excerpt: lorem-ipsum
 seo:
     title: ''
     description: ''

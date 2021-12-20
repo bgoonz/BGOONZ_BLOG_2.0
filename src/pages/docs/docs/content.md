@@ -1286,7 +1286,7 @@ Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bo
 
 Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
 
- Open an Ubuntu terminal if you don't have one open already.
+‌Open an Ubuntu terminal if you don't have one open already.
 
 1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
 2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[](mailto:your@email.com)<your@email.com>" with your real email.
@@ -1320,9 +1320,9 @@ Test if you have Node.js installed by opening an Ubuntu terminal and typing `nod
 
 You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
 
- In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
+‌In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
 
- Mocha.js
+‌Mocha.js
 
 Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
 
@@ -1334,4 +1334,4 @@ Ubuntu does not come with Python 3. Install it using the command `sudo apt insta
 
 As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
 
- 
+‌
