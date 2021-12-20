@@ -117,7 +117,7 @@
             },
             {
                 "label": "Job Search",
-                "url": "/docs/ career/job-search-nav/",
+                "url": "/docs/career/job-search-nav/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
