@@ -40,11 +40,11 @@ a {
     position: absolute;
     margin: auto;
     appearance: auto;
-    user-select: none;
+
     white-space: pre;
     align-items: flex-start;
     text-align: center;
-    cursor: default;
+
     box-sizing: border-box;
     background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
     color: -internal-light-dark(black, white);
@@ -52,13 +52,14 @@ a {
     border-width: 2px;
     border-style: outset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+
    
     height: 100px;
   width: 300px;
   position: relative;
   display: flex;
   margin:auto;
+}
     .site-search {
         position: absolute;
         margin: auto;
@@ -70,13 +71,13 @@ a {
         height: 80px;
         background: rgb(1, 10, 87);
         border-radius: 15px;
-        transition: all 1s;
+
         box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 
         // box-shadow: 0 0 25px 0 crimson;
      
     }
-}
+
 
  
 iframe {
