@@ -1,9 +1,9 @@
 .docs-content {
     padding-top: 4.5em;
     width: 95%;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .post-content {
     width: 90%;
@@ -81,11 +81,11 @@
 
         .post-inside {
             background: #fff;
-            border: 1px solid $gray-350;
-            border-radius: $border-radius+10;
+            border: 1px solid $gray-300;
+            border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.5em;
-            width: 50vw;
+            padding: 0.3em;
+            width: 70vw;
         }
 
         .post-title {
@@ -116,15 +116,15 @@
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
         margin: 0 0.3125em 0.9375em;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     }
 
     .docs-item-link {
         border: 1px solid $gray-300;
         border-radius: $border-radius-sm;
-
+        
         color: $gray-700;
         display: block;
         font-weight: bold;
@@ -168,7 +168,10 @@
     list-style: none;
     margin: 0.7em;
     padding: 0;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
     & > .docs-menu-item > a {
         padding: 0.3em 0;
         border-radius: 20px;
@@ -228,7 +231,7 @@
 
 #page-nav {
     text-overflow: wrap;
-    text-transform: capitalize;
+  text-transform: capitalize;
     .page-nav-title {
         font-size: 1em;
         margin: 0 0 0.625em;
@@ -277,7 +280,7 @@
         &.type-docs {
             .post-title,
             .post-content {
-                // padding-left: 8%;
+                padding-left: 8%;
                 padding-right: 7%;
             }
         }
@@ -293,7 +296,6 @@
     }
 
     .post.type-docs {
-        flex: auto;
         -ms-flex: 1 1 auto;
         align-content: center;
     }
@@ -311,12 +313,12 @@
     }
 
     .docs-nav {
-        width: 10.5em;
+        width: 8.5em;
     }
 
     #page-nav {
-        font-size: 14mapx;
-        margin: 6em;
+        font-size: 12px;
+        margin: 4em;
     }
 
     #docs-nav-toggle {
