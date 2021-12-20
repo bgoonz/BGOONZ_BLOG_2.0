@@ -282,7 +282,7 @@ This part of the JavaScript section on MDN serves as a repository of facts about
 
 ## Functions
 
-This chapter documents how to work with [JavaScript functions](functions) to develop your applications.
+This chapter documents how to work with JavaScript functions to develop your applications.
 
 -   [`arguments`](functions/arguments)
 -   [Arrow functions](functions/arrow_functions)

@@ -4,7 +4,7 @@ Classes are a template for creating objects. They encapsulate data with code to 
 
 ## Defining classes
 
-Classes are in fact "special [functions](functions)", and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
+Classes are in fact "special functions", and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
 
 ### Class declarations
 
@@ -708,7 +708,7 @@ No
 
 ## See also
 
--   [Functions](functions)
+-   Functions
 -   [class declaration](statements/class)
 -   [class expression](operators/class)
 -   [Public class fields](classes/public_class_fields)
