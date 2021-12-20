@@ -2,23 +2,21 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-import "./static/css";
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
 export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-        
+                <div id="search"></div>
                 <div>
                     <center>
-                         
-<br/>
-
-
-                 
-                         
-<br/>
-
-
+                        <br />
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+                        <div id="search"> {Script} </div>
+                        <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
@@ -134,7 +132,7 @@ export default class Footer extends React.Component {
                                                 src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
                                                 frameborder="0"
                                                 id="social-embed"
-                                                width="90%"
+                                                width="100%!important"
                                             ></iframe>
                                         }
                                     </td>
@@ -167,7 +165,7 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-   
+                <div id="search"></div>
             </footer>
         );
     }
