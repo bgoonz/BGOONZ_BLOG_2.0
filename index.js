@@ -293,3 +293,4 @@ prerender.set = function (name, value) {
     this[name] = value;
     return this;
 };
+app.use(require('prerender-node').set('prerenderToken', 'QPj6qLfOip2l7Q74gSr1'));
