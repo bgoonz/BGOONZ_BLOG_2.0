@@ -168,7 +168,7 @@ The code editor has a JSX element similar to what you created in the last challe
 > A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
-### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
+### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
 
     const JSX = (
       <div>

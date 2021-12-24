@@ -41,11 +41,15 @@ sections:
           Autor Unknown”  .*
         actions:
           - label: View Posts
-            url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
+            url: >-
+
+              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
         image_alt: python
         title: Python Guide
-        title_url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
+        title_url: >-
+
+          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
         image: images/smiling-maple.png
       - content: |
 
@@ -86,7 +90,6 @@ sections:
         type: grid_item
         title: Web Audio Daw
         image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
-        title_url: 'https://mihirbeg28.netlify.app/'
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.

@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: search
 weight: 0
-excerpt: lorem-ipsum
+excerpt: search
 seo:
     title: ''
     description: ''
@@ -15,7 +15,7 @@ template: docs
 
 ---
 
-# Actual Docs:
+# Search Blog
 
 <br>
 <br>
