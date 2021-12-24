@@ -189,7 +189,6 @@ This can be achieved with a combination of [`Math.random()`](math/random) and [`
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Math' in that specification.</span></a></td></tr></tbody></table>
 
 `E`

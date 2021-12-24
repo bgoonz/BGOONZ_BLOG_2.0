@@ -11,14 +11,12 @@ A web development student's declassified school survival guide.
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><strong>A list of all of my articles to link to future posts</strong> 
 <br/>
 
-
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 Also here's an even better list by someone I don't know but would be doing you a disservice by failing to include… **There's very little overlap so you should probably read both :**
 
-<a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c"><strong>25 Free Resources to Learn Web Development</strong> 
+<a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c"><strong>25 Free Resources to Learn Web Development</strong>
 <br/>
-
 
 <em>Start where you are, use what you have, and do what you can.</em>medium.com</a><a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -58,9 +56,8 @@ To learn more about how Bit can help unlock these benefits for you just <a href=
 
 ### 11.)Dillinger:
 
-<a href="https://dillinger.io/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dillinger.io/"><strong>Online Markdown Editor - Dillinger, the Last Markdown Editor ever.</strong> 
+<a href="https://dillinger.io/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dillinger.io/"><strong>Online Markdown Editor - Dillinger, the Last Markdown Editor ever.</strong>
 <br/>
-
 
 <em>Dillinger is an online cloud based HTML5 filled Markdown Editor. Sync with Dropbox, Github, Google Drive or OneDrive…</em>dillinger.io</a><a href="https://dillinger.io/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -133,9 +130,8 @@ And if you want to learn more math and computer science theory, we also have tho
 
 CloudConvert is a German-based conversion site that was launched in 2012. Today, it's one of the most popular format converters, boasting of over 10,000 customers and at least four files per second.
 
-<a href="https://cloudconvert.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://cloudconvert.com/"><strong>CloudConvert</strong> 
+<a href="https://cloudconvert.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://cloudconvert.com/"><strong>CloudConvert</strong>
 <br/>
-
 
 <em>CloudConvert is your Swiss army knife for file conversions. We support nearly all audio, video, document, ebook…</em>cloudconvert.com</a><a href="https://cloudconvert.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -237,9 +233,8 @@ Dirhtml is not installable, just unzip and run dirhtml.exe.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*mS1VExsEeK5jYwHPFWA-aQ.png" class="graf-image" /></figure>Problems, questions? Email the author: <a href="mailto:dirhtml@enware.info" class="markup--anchor markup--p-anchor">dirhtml@enware.info</a>
 
-<a href="https://dirhtml.en.uptodown.com/windows" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dirhtml.en.uptodown.com/windows"><strong>Dirhtml (Windows)</strong> 
+<a href="https://dirhtml.en.uptodown.com/windows" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dirhtml.en.uptodown.com/windows"><strong>Dirhtml (Windows)</strong>
 <br/>
-
 
 <em>Dirhtml is a lite application that creates HTML files listing the content of a certain folder with links to each file…</em>dirhtml.en.uptodown.com</a><a href="https://dirhtml.en.uptodown.com/windows" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -253,9 +248,8 @@ Dirhtml is a good choice if you are planning to create a directory of your files
 
 It's how I create site navigation as it appears here:
 
-<a href="https://lambda-resources.netlify.app/directory.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-resources.netlify.app/directory.html"><strong>Site Navigation</strong> 
+<a href="https://lambda-resources.netlify.app/directory.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-resources.netlify.app/directory.html"><strong>Site Navigation</strong>
 <br/>
-
 
 <em>Edit description</em>lambda-resources.netlify.app</a><a href="https://lambda-resources.netlify.app/directory.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -267,9 +261,8 @@ This enables me to take a folder full of my notes … no matter the file extensi
 
 ### 5.) **Google Colaboratory**
 
-<a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk"><strong>Google Colaboratory</strong> 
+<a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk"><strong>Google Colaboratory</strong>
 <br/>
-
 
 <em>Edit description</em>colab.research.google.com</a><a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -293,9 +286,8 @@ Users who are interested in more reliable access to better resources may be inte
 
 <a href="https://jupyter.org/" class="markup--anchor markup--p-anchor">Jupyter</a> is the open-source project on which Colab is based. Colab allows you to use and share Jupyter notebooks with others without having to download, install, or run anything.
 
-<a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/notebooks/basic_features_overview.ipynb"><strong>Google Colaboratory</strong> 
+<a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/notebooks/basic_features_overview.ipynb"><strong>Google Colaboratory</strong>
 <br/>
-
 
 <em>Edit description</em>colab.research.google.com</a><a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -303,9 +295,8 @@ Users who are interested in more reliable access to better resources may be inte
 
 Here's a repo where I backup my gists… I keep hundreds:
 
-<a href="https://github.com/bgoonz/my-gists" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/my-gists"><strong>bgoonz/my-gists</strong> 
+<a href="https://github.com/bgoonz/my-gists" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/my-gists"><strong>bgoonz/my-gists</strong>
 <br/>
-
 
 <em>Contribute to bgoonz/my-gists development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/my-gists" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -313,9 +304,8 @@ Here's a repo where I backup my gists… I keep hundreds:
 
 ### 7.) Screen To Gif:
 
-<a href="https://github.com/NickeManarin/ScreenToGif/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/NickeManarin/ScreenToGif/"><strong>NickeManarin/ScreenToGif</strong> 
+<a href="https://github.com/NickeManarin/ScreenToGif/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/NickeManarin/ScreenToGif/"><strong>NickeManarin/ScreenToGif</strong>
 <br/>
-
 
 <em>This tool allows you to record a selected area of your screen, live feed from your webcam or live drawings from a…</em>github.com</a><a href="https://github.com/NickeManarin/ScreenToGif/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -476,9 +466,8 @@ In the search result section, you can not only see a list of files that match yo
 
 -   <span id="24ae">Source:</span>
 
-<a href="https://www.ctrl.blog/entry/review-filelocator.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.ctrl.blog/entry/review-filelocator.html"><strong>FileLocator Lite and Pro review</strong> 
+<a href="https://www.ctrl.blog/entry/review-filelocator.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.ctrl.blog/entry/review-filelocator.html"><strong>FileLocator Lite and Pro review</strong>
 <br/>
-
 
 <em>Find "everything" with Lite Finding even more and do it faster with Pro Windows and tabs management, and keyboard…</em>www.ctrl.blog</a><a href="https://www.ctrl.blog/entry/review-filelocator.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -490,9 +479,8 @@ In the search result section, you can not only see a list of files that match yo
 
 The best note taking app ever:
 
-<a href="https://www.notion.so/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/"><strong>Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.</strong> 
+<a href="https://www.notion.so/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/"><strong>Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.</strong>
 <br/>
-
 
 <em>A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team.</em>www.notion.so</a><a href="https://www.notion.so/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -524,9 +512,8 @@ Systems that keep notes organized. Add any type of content.
 
 ### Gitbook:
 
-<a href="https://www.gitbook.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.gitbook.com/"><strong>GitBook - Where software teams break knowledge silos.</strong> 
+<a href="https://www.gitbook.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.gitbook.com/"><strong>GitBook - Where software teams break knowledge silos.</strong>
 <br/>
-
 
 <em>Centralize your knowledge and collaborate with your team in a single, organized workspace for increased efficiency…</em>www.gitbook.com</a><a href="https://www.gitbook.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -534,9 +521,8 @@ GitBook started as a simple open source tool designed to let developers quickly 
 
 Not only does this tool allow you to seamlessly create documentation and notes in perfect synchrony with the git repo of your choice .. you can also import/export html, markdown and pdf documents and the cherry on top… it turns your notes into a beautiful website…. 11/10 would recommend.
 
-<a href="https://bryan-guner.gitbook.io/lambda-website" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryan-guner.gitbook.io/lambda-website"><strong>Closure-and-Scope</strong> 
+<a href="https://bryan-guner.gitbook.io/lambda-website" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryan-guner.gitbook.io/lambda-website"><strong>Closure-and-Scope</strong>
 <br/>
-
 
 <em>Variables are used to store information to be referenced and manipulated in a computer program. A variable's sole…</em>bryan-guner.gitbook.io</a><a href="https://bryan-guner.gitbook.io/lambda-website" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

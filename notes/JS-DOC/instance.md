@@ -54,7 +54,6 @@ This also demonstrates how the `exports` property is used to access exported fun
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#instances</span></a></td></tr></tbody></table>
 
 `Instance`

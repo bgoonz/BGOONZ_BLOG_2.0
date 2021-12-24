@@ -177,7 +177,6 @@ In basic use without specifying a locale, `DateTimeFormat` uses the default loca
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-
 <span class="small">#sec-intl-datetimeformat-constructor</span></a></td></tr></tbody></table>
 
 `DateTimeFormat`

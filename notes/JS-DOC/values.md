@@ -68,7 +68,6 @@ example:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-%typedarray%.prototype.values</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

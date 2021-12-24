@@ -36,7 +36,6 @@ The following example uses string methods to change the formatting of a string:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-string.prototype.bold</span></a></td></tr></tbody></table>
 
 `bold`

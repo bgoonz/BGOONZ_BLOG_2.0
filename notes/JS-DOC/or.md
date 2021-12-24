@@ -55,7 +55,6 @@ For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-atomics.or</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

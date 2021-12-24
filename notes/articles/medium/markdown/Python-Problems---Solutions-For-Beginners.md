@@ -16,15 +16,13 @@ Introduction to python taught through example problems. Solutions are included i
 
 #### Here are some other articles for reference if you need them:
 
-<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong> 
+<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong>
 <br/>
-
 
 <em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong> 
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong>
 <br/>
-
 
 <em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -42,9 +40,8 @@ The `datetime` module supplies classes for manipulating dates and times.
 
 While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation.
 
-<a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html"><strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong> 
+<a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html"><strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong>
 <br/>
-
 
 <em>Only one concrete class, the class, is supplied by the module. The class can represent simple timezones with fixed…</em>docs.python.org</a><a href="https://docs.python.org/3/library/datetime.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -77,9 +74,8 @@ For example, `13` is a divisor of `26` because `26 / 13` has no remainder.)
 
 Take two lists, and write a program that returns a list that contains only the elements that are `common between the lists (without duplicates)`. Make sure your program works on two lists of different sizes.
 
-<a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html"><strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong> 
+<a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html"><strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong>
 <br/>
-
 
 <em>Source code: Lib/random.py This module implements pseudo-random number generators for various distributions. For…</em>docs.python.org</a><a href="https://docs.python.org/3/library/random.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -170,15 +166,13 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 ### My Blog:
 
-<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<strong>A list of all of my articles to link to future posts</strong> 
+<strong>A list of all of my articles to link to future posts</strong>
 <br/>
-
 
 <em>You should probably skip this one… seriously it's just for internal use!</em><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -188,9 +182,8 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 Thanks for being a part of our community! <a href="https://www.youtube.com/channel/UC3v9kBR_ab4UHXXdknz8Fbg?sub_confirmation=1" class="markup--anchor markup--p-anchor">Subscribe to our YouTube channel</a> or join the <a href="https://skilled.dev/" class="markup--anchor markup--p-anchor"><strong>Skilled.dev coding interview course</strong></a>.
 
-<a href="https://skilled.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://skilled.dev"><strong>Coding Interview Questions + Land Your Dev Job | Skilled.dev</strong> 
+<a href="https://skilled.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://skilled.dev"><strong>Coding Interview Questions + Land Your Dev Job | Skilled.dev</strong>
 <br/>
-
 
 <em>Coding interview course taught in Python</em>skilled.dev</a><a href="https://skilled.dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

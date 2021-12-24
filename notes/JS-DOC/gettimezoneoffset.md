@@ -48,7 +48,6 @@ In a time zone that doesn't annually shift in and out of Daylight Saving Time (D
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-date.prototype.gettimezoneoffset</span></a></td></tr></tbody></table>
 
 `getTimezoneOffset`

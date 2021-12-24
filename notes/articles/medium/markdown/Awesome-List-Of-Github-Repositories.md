@@ -6,9 +6,8 @@ Platforms
 
 ### Awesome List Of Github Repositories
 
-<a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong> 
+<a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong>
 <br/>
-
 
 <em>Top repos for new developers all in one place. Contribute to bgoonz/awesome-4-new-developers development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/awesome-4-new-developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

@@ -55,7 +55,6 @@ The value of the global is then changed, first to `42` using the `Global.value` 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#dom-global-global</span></a></td></tr></tbody></table>
 
 `Global`

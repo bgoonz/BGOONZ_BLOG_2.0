@@ -129,7 +129,6 @@ In the example below, we invoke the `display` function without passing the first
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Function.prototype.call' in that specification.</span></a></td></tr></tbody></table>
 
 `call`

@@ -22,7 +22,6 @@ The unsigned right shift assignment operator (_`>>>=`_) moves the specified amou
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

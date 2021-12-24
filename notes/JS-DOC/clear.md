@@ -31,7 +31,6 @@ The `clear()` method removes all elements from a `Set` object.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-set.prototype.clear</span></a></td></tr></tbody></table>
 
 `clear`

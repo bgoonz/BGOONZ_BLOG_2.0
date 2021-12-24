@@ -38,7 +38,6 @@ The `BigInt.asUintN()` method can be useful to stay in the range of 64-bit arith
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-bigint.asuintn</span></a></td></tr></tbody></table>
 
 `asUintN`

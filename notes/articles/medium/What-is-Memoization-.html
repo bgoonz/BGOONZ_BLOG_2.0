@@ -115,11 +115,10 @@
                                     data-href="https://www.deadcoderising.com/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://www.deadcoderising.com/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Dead Code Rising</strong> 
-<br/>
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Dead Code Rising</strong>
+                                    <br />
 
-<em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >The last couple of weeks I&#39;ve been using a lot of hours playing around with GatsbyJS, and it&#39;s been a blast!
                                         Gatsby is…</em
                                     >www.deadcoderising.com</a
@@ -151,17 +150,16 @@
                                 />
                             </figure>
                             <p name="f6e8" id="f6e8" class="graf graf--p graf-after--figure">
-                                <strong class="markup--strong markup--p-strong">Memoization</strong> is a design paradigm used to reduce the overall number
-                                of 
-<br/>
+                                <strong class="markup--strong markup--p-strong">Memoization</strong> is a design paradigm used to reduce the overall number of
+                                <br />
 
-calculations that can occur in algorithms that use recursive algorithms.
+                                calculations that can occur in algorithms that use recursive algorithms.
                             </p>
                             <p name="9bc1" id="9bc1" class="graf graf--p graf-after--p">
-                                Recall that recursion solves a large problem by dividing it into smaller 
-<br/>
+                                Recall that recursion solves a large problem by dividing it into smaller
+                                <br />
 
-sub-problems that are more manageable.
+                                sub-problems that are more manageable.
                             </p>
                             <p name="bb4d" id="bb4d" class="graf graf--p graf-after--p">
                                 Memoization will store the results of the sub-problems in some other data structure, meaning that you avoid duplicate
@@ -178,24 +176,23 @@ sub-problems that are more manageable.
                             <ul class="postList">
                                 <li name="0b0b" id="0b0b" class="graf graf--li graf-after--p">The function is recursive.</li>
                                 <li name="65a0" id="65a0" class="graf graf--li graf-after--li">
-                                    The additional data structure used is typically an object (we refer to this as 
-<br/>
+                                    The additional data structure used is typically an object (we refer to this as
+                                    <br />
 
-the memo).
+                                    the memo).
                                 </li>
                             </ul>
                             <p name="d308" id="d308" class="graf graf--p graf-after--li">
-                                This is a trade-off between the time it takes to run an algorithm (without 
-<br/>
+                                This is a trade-off between the time it takes to run an algorithm (without
+                                <br />
 
-memoization) and the memory used to run the
-                                algorithm (with memoization).
+                                memoization) and the memory used to run the algorithm (with memoization).
                             </p>
                             <p name="3b08" id="3b08" class="graf graf--p graf-after--p">
-                                Usually, memoization is a good trade-off when dealing with large data or 
-<br/>
+                                Usually, memoization is a good trade-off when dealing with large data or
+                                <br />
 
-calculations.
+                                calculations.
                             </p>
                             <p name="93da" id="93da" class="graf graf--p graf-after--p">
                                 You cannot always apply this technique to recursive problems. The problem must have an “overlapping subproblem structure” for
@@ -207,19 +204,19 @@ calculations.
                             </p>
                             <p name="c1d1" id="c1d1" class="graf graf--p graf-after--p">Here's an example of a problem that has such a structure:</p>
                             <blockquote name="3cb2" id="3cb2" class="graf graf--blockquote graf-after--p">
-                                Using pennies, nickels, dimes, and quarters, how many combinations 
-<br/>
+                                Using pennies, nickels, dimes, and quarters, how many combinations
+                                <br />
 
-of coins are there that total 27 cents?
+                                of coins are there that total 27 cents?
                             </blockquote>
                             <p name="f734" id="f734" class="graf graf--p graf-after--blockquote">
-                                Along the way to calculating the possible coin combination of 27 
-<br/>
+                                Along the way to calculating the possible coin combination of 27
+                                <br />
 
-cents, you should also calculate the smallest coin
-                                combination of 25 cents as well as 21 cents and any smaller total that comprises a fraction of the total combination of 27 (so
-                                long as there is a one-cent piece; if there are only nickels and up, the problem deviates from this approach on a technicality
-                                but in essence, it is still calculated in the same manner, that is to say as a component of that bigger problem).
+                                cents, you should also calculate the smallest coin combination of 25 cents as well as 21 cents and any smaller total that
+                                comprises a fraction of the total combination of 27 (so long as there is a one-cent piece; if there are only nickels and up, the
+                                problem deviates from this approach on a technicality but in essence, it is still calculated in the same manner, that is to say
+                                as a component of that bigger problem).
                             </p>
                             <p name="a0aa" id="a0aa" class="graf graf--p graf-after--p">
                                 Remember, a computer is stupid and must check every possibility exhaustively to ensure that no possible combination is missed
@@ -233,18 +230,14 @@ cents, you should also calculate the smallest coin
                                 <script src="https://gist.github.com/bgoonz/2d6ba2a328f9c04075dc094ca2c531f0.js"></script>
                             </figure>
                             <p name="4b01" id="4b01" class="graf graf--p graf-after--figure">
-                                From this plain <code class="markup--code markup--p-code">factorial</code> above, it is clear that every time you call 
-<br/>
+                                From this plain <code class="markup--code markup--p-code">factorial</code> above, it is clear that every time you call
+                                <br />
 
-<code
-                                    class="markup--code markup--p-code"
-                                    >factorial(6)</code
-                                >
-                                you should get the same result of <code class="markup--code markup--p-code">720</code> each time. The code is 
-<br/>
+                                <code class="markup--code markup--p-code">factorial(6)</code>
+                                you should get the same result of <code class="markup--code markup--p-code">720</code> each time. The code is
+                                <br />
 
-somewhat
-                                inefficient because you must go down the full recursive stack for each top-level call to
+                                somewhat inefficient because you must go down the full recursive stack for each top-level call to
                                 <code class="markup--code markup--p-code">factorial(6)</code>.
                             </p>
                             <p name="6ac3" id="6ac3" class="graf graf--p graf-after--p">
@@ -257,18 +250,16 @@ somewhat
                             </figure>
                             <p name="e6ec" id="e6ec" class="graf graf--p graf-after--figure">
                                 The <code class="markup--code markup--p-code">memo</code> object above will map an argument of
-                                <code class="markup--code markup--p-code">factorial</code> to its return 
-<br/>
+                                <code class="markup--code markup--p-code">factorial</code> to its return
+                                <br />
 
-value. That is, the keys will be arguments and
-                                their values will be the 
-<br/>
+                                value. That is, the keys will be arguments and their values will be the
+                                <br />
 
-corresponding results returned. By using the memo, you are able to avoid 
-<br/>
+                                corresponding results returned. By using the memo, you are able to avoid
+                                <br />
 
-duplicate recursive
-                                calls!
+                                duplicate recursive calls!
                             </p>
                             <p name="55ee" id="55ee" class="graf graf--p graf-after--p">
                                 By the time your first call to <code class="markup--code markup--p-code">factorial(6) </code>returns, you will not have just the
@@ -280,20 +271,19 @@ duplicate recursive
                             <p name="2240" id="2240" class="graf graf--p graf-after--p">Perhaps you're not convinced because:</p>
                             <ul class="postList">
                                 <li name="9fd5" id="9fd5" class="graf graf--li graf-after--p">
-                                    You didn't improve the speed of the algorithm by an order of Big-O (it is 
-<br/>
+                                    You didn't improve the speed of the algorithm by an order of Big-O (it is
+                                    <br />
 
-still O(n)).
+                                    still O(n)).
                                 </li>
                                 <li name="3867" id="3867" class="graf graf--li graf-after--li">The code uses some global variable, so it's kind of ugly.</li>
                             </ul>
                             <h3 name="7545" id="7545" class="graf graf--h3 graf-after--li">Memoizing the Fibonacci generator</h3>
                             <p name="b42d" id="b42d" class="graf graf--p graf-after--h3">
-                                Here's a <em class="markup--em markup--p-em">naive</em> implementation of a function that calculates the Fibonacci 
-<br/>
+                                Here's a <em class="markup--em markup--p-em">naive</em> implementation of a function that calculates the Fibonacci
+                                <br />
 
-number
-                                for a given input.
+                                number for a given input.
                             </p>
                             <pre
                                 name="fcad"
@@ -302,15 +292,14 @@ number
                             >function fib(n) {<br>  if (n === 1 || n === 2) return 1;<br>  return fib(n - 1) + fib(n - 2);<br>}</pre>
                             <pre name="8605" id="8605" class="graf graf--pre graf-after--pre">fib(6);     // =&gt; 8</pre>
                             <p name="6dc7" id="6dc7" class="graf graf--p graf-after--pre">
-                                The time complexity of this function is not super intuitive to describe because 
-<br/>
+                                The time complexity of this function is not super intuitive to describe because
+                                <br />
 
-the code branches twice recursively. Fret
-                                not! You'll find it useful to 
-<br/>
+                                the code branches twice recursively. Fret not! You'll find it useful to
+                                <br />
 
-visualize the calls needed to do this with a tree. When reasoning about the time complexity
-                                for recursive functions, draw a tree that helps you see the calls. Every node of the tree represents a call of the recursion:
+                                visualize the calls needed to do this with a tree. When reasoning about the time complexity for recursive functions, draw a tree
+                                that helps you see the calls. Every node of the tree represents a call of the recursion:
                             </p>
                             <figure name="874d" id="874d" class="graf graf--figure graf-after--p">
                                 <img
@@ -324,11 +313,10 @@ visualize the calls needed to do this with a tree. When reasoning about the time
                             <ul class="postList">
                                 <li name="47ea" id="47ea" class="graf graf--li graf-after--figure">
                                     <em class="markup--em markup--li-em">n </em>, the height of this tree will be
-                                    <code class="markup--code markup--li-code">n</code>. You derive this by following 
-<br/>
+                                    <code class="markup--code markup--li-code">n</code>. You derive this by following
+                                    <br />
 
-the path going straight down the left
-                                    side of the tree.
+                                    the path going straight down the left side of the tree.
                                 </li>
                                 <li name="855a" id="855a" class="graf graf--li graf-after--li">
                                     each internal node leads to two more nodes. Overall, this means that the tree will have roughly 2n nodes.
@@ -358,16 +346,15 @@ the path going straight down the left
                                 <script src="https://gist.github.com/bgoonz/53cfa037f5dea574fbfed77fc70e7718.js"></script>
                             </figure>
                             <p name="40bd" id="40bd" class="graf graf--p graf-after--figure">
-                                You can see the marked nodes (function calls) that access the memo in green. 
-<br/>
+                                You can see the marked nodes (function calls) that access the memo in green.
+                                <br />
 
-It's easy to see that this version of the
-                                Fibonacci generator will do far fewer 
-<br/>
+                                It's easy to see that this version of the Fibonacci generator will do far fewer
+                                <br />
 
-computations as <code class="markup--code markup--p-code">n</code> grows larger! In
-                                fact, this memoization has brought the time complexity down to linear <code class="markup--code markup--p-code">O(n)</code> time
-                                because the tree only branches on the left side. This is an enormous gain if you recall the complexity of class hierarchy.
+                                computations as <code class="markup--code markup--p-code">n</code> grows larger! In fact, this memoization has brought the time
+                                complexity down to linear <code class="markup--code markup--p-code">O(n)</code> time because the tree only branches on the left
+                                side. This is an enormous gain if you recall the complexity of class hierarchy.
                             </p>
                             <h3 name="dc1a" id="dc1a" class="graf graf--h3 graf-after--p">The memoization formula</h3>
                             <p name="68e9" id="68e9" class="graf graf--p graf-after--h3">
@@ -376,34 +363,32 @@ computations as <code class="markup--code markup--p-code">n</code> grows larger!
                             </p>
                             <p name="bb33" id="bb33" class="graf graf--p graf-after--p">
                                 You'll find it most useful to draw out the visual tree first. If you notice duplicate sub-trees, time to memoize. Here are the
-                                hard and fast 
-<br/>
+                                hard and fast
+                                <br />
 
-rules you can use to memoize a slow algorithm:
+                                rules you can use to memoize a slow algorithm:
                             </p>
                             <ol class="postList">
                                 <li name="002b" id="002b" class="graf graf--li graf-after--p">
                                     Write the unoptimized, brute force recursion and make sure it works.
                                 </li>
                                 <li name="d106" id="d106" class="graf graf--li graf-after--li">
-                                    Add the memo object as an additional argument to the function. The keys will 
-<br/>
+                                    Add the memo object as an additional argument to the function. The keys will
+                                    <br />
 
-represent unique arguments to the
-                                    function, and their values will represent the results for those arguments.
+                                    represent unique arguments to the function, and their values will represent the results for those arguments.
                                 </li>
                                 <li name="ab4e" id="ab4e" class="graf graf--li graf-after--li">
-                                    Add a base case condition to the function that returns the stored value if 
-<br/>
+                                    Add a base case condition to the function that returns the stored value if
+                                    <br />
 
-the function's argument is in the memo.
+                                    the function's argument is in the memo.
                                 </li>
                                 <li name="3e67" id="3e67" class="graf graf--li graf-after--li">
-                                    Before you return the result of the recursive case, store it in the memo as a 
-<br/>
+                                    Before you return the result of the recursive case, store it in the memo as a
+                                    <br />
 
-value and make the function's argument
-                                    its key.
+                                    value and make the function's argument its key.
                                 </li>
                             </ol>
                             <p name="f1c1" id="f1c1" class="graf graf--p graf-after--li">Here's the solution to the aforementioned coin problem:</p>
@@ -431,11 +416,10 @@ value and make the function's argument
                                     data-href="https://bgoonz-blog.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://bgoonz-blog.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong> 
-<br/>
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong>
+                                    <br />
 
-<em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em
                                     >bgoonz-blog.netlify.app</a
                                 ><a

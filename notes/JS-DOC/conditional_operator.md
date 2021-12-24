@@ -66,7 +66,6 @@ The ternary operator is right-associative, which means it can be "chained" in th
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-conditional-operator</span></a></td></tr></tbody></table>
 
 `Conditional_Operator`

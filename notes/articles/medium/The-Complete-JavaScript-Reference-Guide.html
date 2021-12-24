@@ -281,9 +281,8 @@
                             </p>
                             <ul class="postList">
                                 <li name="cf5b" id="cf5b" class="graf graf--li graf-after--p">
-                                    Whenever you have a smaller number % a larger number, the answer will just be the initial small number.  
-<br/>
-
+                                    Whenever you have a smaller number % a larger number, the answer will just be the initial small number.
+                                    <br />
 
                                     console.log(7 % 10) // =&gt; 7;
                                 </li>
@@ -302,32 +301,24 @@
                                     <em class="markup--em markup--li-em">best to choose one and stick with it for consistency</em>.
                                 </li>
                                 <li name="f8ad" id="f8ad" class="graf graf--li graf-after--li">
-                                    If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work. 
-<br/>
+                                    If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.
+                                    <br />
 
+                                    “That's a great string”; (valid)
+                                    <br />
 
-                                    “That's a great string”; (valid) 
-<br/>
+                                    <br />
 
+                                    'Shakespeare wrote, “To be or not to be”'; (valid)
+                                    <br />
 
-                                     
-<br/>
-
-
-                                    'Shakespeare wrote, “To be or not to be”'; (valid) 
-<br/>
-
-
-                                     
-<br/>
-
+                                    <br />
 
                                     'That's a bad string'; (invalid)
                                 </li>
                                 <li name="b2cb" id="b2cb" class="graf graf--li graf-after--li">
-                                    Alt. way to add other quotes within strings is to use template literals. 
-<br/>
-
+                                    Alt. way to add other quotes within strings is to use template literals.
+                                    <br />
 
                                     `This is a temp'l'ate literal ${function}` // use ${} to invoke functions within.
                                 </li>
@@ -338,21 +329,17 @@
                                 <li name="f633" id="f633" class="graf graf--li graf-after--li">empty strings have a length of zero.</li>
                                 <li name="0a07" id="0a07" class="graf graf--li graf-after--li">
                                     <strong class="markup--strong markup--li-strong">indices</strong> : indexes of data that begin at 0, can call upon index by
-                                    using the bracket notation [ ]. 
-<br/>
+                                    using the bracket notation [ ].
+                                    <br />
 
+                                    console.log(“bootcamp”[0]); // =&gt; “b”
+                                    <br />
 
-                                    console.log(“bootcamp”[0]); // =&gt; “b” 
-<br/>
+                                    console.log(“bootcamp”[10]); // =&gt; “undefined”
+                                    <br />
 
-
-                                    console.log(“bootcamp”[10]); // =&gt; “undefined” 
-<br/>
-
-
-                                    console.log(“boots”[1 * 2]); // =&gt; “o” 
-<br/>
-
+                                    console.log(“boots”[1 * 2]); // =&gt; “o”
+                                    <br />
 
                                     console.log(“boots”[“boot”.length-1]); // =&gt; “t”
                                 </li>
@@ -364,13 +351,11 @@
                                 </li>
                                 <li name="2271" id="2271" class="graf graf--li graf-after--li">
                                     <strong class="markup--strong markup--li-strong">indexOf()</strong> : method used to find the first index of a given
-                                    character within a string. 
-<br/>
+                                    character within a string.
+                                    <br />
 
-
-                                    console.log(“bagel”.indexOf(“b”)); // =&gt; 0 
-<br/>
-
+                                    console.log(“bagel”.indexOf(“b”)); // =&gt; 0
+                                    <br />
 
                                     console.log(“bagel”.indexOf(“z”)); // =&gt; -1
                                 </li>
@@ -400,13 +385,11 @@
                                     >) are used to establish logic in our code.
                                 </li>
                                 <li name="139b" id="139b" class="graf graf--li graf-after--li">
-                                    <strong class="markup--strong markup--li-strong">!</strong> (not) : reverses a Boolean value. 
-<br/>
+                                    <strong class="markup--strong markup--li-strong">!</strong> (not) : reverses a Boolean value.
+                                    <br />
 
-
-                                    console.log(!true); // =&gt; false 
-<br/>
-
+                                    console.log(!true); // =&gt; false
+                                    <br />
 
                                     console.log(!!false); // =&gt; false
                                 </li>
@@ -417,9 +400,8 @@
                                 <li name="99ad" id="99ad" class="graf graf--li graf-after--li">
                                     <strong class="markup--strong markup--li-strong">Short-Circuit Evaluation</strong> : Because JS evalutes from left to right,
                                     expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop
-                                    evaluating and yield true instead of wasting resources on processing the rest of the statement. 
-<br/>
-
+                                    evaluating and yield true instead of wasting resources on processing the rest of the statement.
+                                    <br />
 
                                     console.log(true || !false) // =&gt; stops after it sees “true ||”
                                 </li>
@@ -477,13 +459,11 @@
                             <ul class="postList">
                                 <li name="c73d" id="c73d" class="graf graf--li graf-after--p">
                                     We initialize a variable by using the <strong class="markup--strong markup--li-strong">let</strong> keyword and a
-                                    <strong class="markup--strong markup--li-strong">=</strong> single equals sign (assignment operator).  
-<br/>
+                                    <strong class="markup--strong markup--li-strong">=</strong> single equals sign (assignment operator).
+                                    <br />
 
-
-                                    let bootcamp = “App Academy”; 
-<br/>
-
+                                    let bootcamp = “App Academy”;
+                                    <br />
 
                                     console.log(bootcamp); // “App Academy”
                                 </li>
@@ -491,13 +471,11 @@
                                     JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).
                                 </li>
                                 <li name="ad76" id="ad76" class="graf graf--li graf-after--li">
-                                    If you do not declare a value for a variable, undefined is automatically set.  
-<br/>
+                                    If you do not declare a value for a variable, undefined is automatically set.
+                                    <br />
 
-
-                                    let bootcamp; 
-<br/>
-
+                                    let bootcamp;
+                                    <br />
 
                                     console.log(bootcamp); // undefined
                                 </li>
@@ -514,21 +492,17 @@
                                 <strong class="markup--strong markup--p-strong">Assignment Shorthand</strong>
                             </p>
                             <p name="8d9f" id="8d9f" class="graf graf--p graf-after--p">
-                                let num = 0; 
-<br/>
+                                let num = 0;
+                                <br />
 
+                                num += 10; // same as num = num + 10
+                                <br />
 
-                                num += 10; // same as num = num + 10 
-<br/>
+                                num -= 2; // same as num = num — 2
+                                <br />
 
-
-                                num -= 2; // same as num = num — 2 
-<br/>
-
-
-                                num /= 4; // same as num = num / 4 
-<br/>
-
+                                num /= 4; // same as num = num / 4
+                                <br />
 
                                 num *= 7; // same as num = num * 7
                             </p>
@@ -2694,17 +2668,14 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                             <pre name="f3b0" id="f3b0" class="graf graf--pre graf-after--pre">};</pre>
                             <p name="1cf0" id="1cf0" class="graf graf--p graf-after--pre"><code class="markup--code markup--p-code">new</code></p>
                             <p name="6b85" id="6b85" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let o = new Object(); </code> 
-<br/>
+                                <code class="markup--code markup--p-code">let o = new Object(); </code>
+                                <br />
 
+                                <code class="markup--code markup--p-code">let a = new Array(); </code>
+                                <br />
 
-                                <code class="markup--code markup--p-code">let a = new Array(); </code> 
-<br/>
-
-
-                                <code class="markup--code markup--p-code">let d = new Date(); </code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let d = new Date(); </code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let r = new Map();</code>
                             </p>
@@ -2922,17 +2893,15 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                             <pre name="cf99" id="cf99" class="graf graf--pre graf-after--pre">};</pre>
                             <p name="4632" id="4632" class="graf graf--p graf-after--pre">←&gt;</p>
                             <p name="dc20" id="dc20" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let x = 1, y = 2;</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let x = 1, y = 2;</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let o = { x, y };</code>
                             </p>
                             <h3 name="ef1d" id="ef1d" class="graf graf--h3 graf-after--p">Computer Property Names</h3>
                             <p name="3d93" id="3d93" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">const PROPERTY_NAME = &quot;p1&quot;;</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">const PROPERTY_NAME = &quot;p1&quot;;</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">function computePropertyName() { return &quot;p&quot; + 2; }</code>
                             </p>
@@ -2964,17 +2933,14 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                                 You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
                             </p>
                             <p name="21b8" id="21b8" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let position = { x: 0, y: 0 };</code> 
-<br/>
+                                <code class="markup--code markup--p-code">let position = { x: 0, y: 0 };</code>
+                                <br />
 
+                                <code class="markup--code markup--p-code">let dimensions = { width: 100, height: 75 };</code>
+                                <br />
 
-                                <code class="markup--code markup--p-code">let dimensions = { width: 100, height: 75 };</code> 
-<br/>
-
-
-                                <code class="markup--code markup--p-code">let rect = { ...position, ...dimensions };</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let rect = { ...position, ...dimensions };</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">rect.x + rect.y + rect.width + rect.height</code>
                             </p>
@@ -3061,9 +3027,8 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                                 create a copy of an array — modifying the copy does not change the original
                             </p>
                             <p name="c595" id="c595" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let original = [1,2,3];</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let original = [1,2,3];</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let copy = [...original];</code>
                             </p>
@@ -3283,22 +3248,19 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                             <p name="8f01" id="8f01" class="graf graf--p graf-after--p">[2,3,4,5,6]</p>
                             <p name="5704" id="5704" class="graf graf--p graf-after--p">MAP()</p>
                             <p name="7466" id="7466" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let a = [1, 2, 3];</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let a = [1, 2, 3];</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">a.map(x =&gt; x*x)</code>
                             </p>
                             <p name="fbc2" id="fbc2" class="graf graf--p graf-after--p">[1, 4, 9]</p>
                             <p name="771f" id="771f" class="graf graf--p graf-after--p">FILTER()</p>
                             <p name="75e7" id="75e7" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let a = [5, 4, 3, 2, 1];</code> 
-<br/>
+                                <code class="markup--code markup--p-code">let a = [5, 4, 3, 2, 1];</code>
+                                <br />
 
-
-                                <code class="markup--code markup--p-code">a.filter(x =&gt; x &lt; 3) </code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">a.filter(x =&gt; x &lt; 3) </code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">a.filter((x,i) =&gt; i % 2 === 0)</code>
                             </p>
@@ -3411,10 +3373,8 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                             <p name="452c" id="452c" class="graf graf--p graf-after--p">[1, 2, 3, 4]</p>
                             <p name="7cef" id="7cef" class="graf graf--p graf-after--p">[1, 2, 3, 4]</p>
                             <p name="de45" id="de45" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let phrases = [&quot;hello world&quot;, &quot;the definitive guide&quot;];</code
-                                > 
-<br/>
-
+                                <code class="markup--code markup--p-code">let phrases = [&quot;hello world&quot;, &quot;the definitive guide&quot;];</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let words = phrases.flatMap(phrase =&gt; phrase.split(&quot; &quot;));</code>
                             </p>
@@ -3537,9 +3497,8 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;</pre
                             </p>
                             <h3 name="30a0" id="30a0" class="graf graf--h3 graf-after--p">Array Searching and Sorting Methods</h3>
                             <p name="47c1" id="47c1" class="graf graf--p graf-after--h3">
-                                INDEXOF() 
-<br/>
-
+                                INDEXOF()
+                                <br />
 
                                 LASTINDEXOF()
                             </p>
@@ -3580,9 +3539,8 @@ a.sort(); // a == [&quot;Bug&quot;,&quot;Dog&quot;,&quot;ant&quot;,&quot;cat&quo
                             <p name="964b" id="964b" class="graf graf--p graf-after--p"><code class="markup--code markup--p-code">[4, 33, 222, 1111]</code></p>
                             <p name="7686" id="7686" class="graf graf--p graf-after--p">REVERSE()</p>
                             <p name="6626" id="6626" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let a = [1,2,3];</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let a = [1,2,3];</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">a.reverse();</code>
                             </p>
@@ -4672,13 +4630,11 @@ throw new TypeError(`Cannot parse Range from &quot;${s}&quot;.`)</pre
                                 <code class="markup--code markup--p-code">toString()</code> method
                             </p>
                             <p name="6044" id="6044" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">Span.prototype.toString = function() {</code> 
-<br/>
+                                <code class="markup--code markup--p-code">Span.prototype.toString = function() {</code>
+                                <br />
 
-
-                                <code class="markup--code markup--p-code">return `(${this.from}... +${this.to - this.from})`;</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">return `(${this.from}... +${this.to - this.from})`;</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">};</code>
                             </p>
@@ -4943,9 +4899,8 @@ let n = new Map([[&quot;one&quot;, 1],[&quot;two&quot;, 2]]);</pre
                             <p name="26ee" id="26ee" class="graf graf--p graf-after--p">
                                 If you want to iterate just the keys or just the associated values of a map, use the
                                 <code class="markup--code markup--p-code">keys()</code> and <code class="markup--code markup--p-code">values()</code> methods:
-                                these return iterable objects that iterate keys and values, in insertion order. (The 
-<br/>
-
+                                these return iterable objects that iterate keys and values, in insertion order. (The
+                                <br />
 
                                 <code class="markup--code markup--p-code">entries()</code>
                                 method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
@@ -5179,9 +5134,8 @@ let n = new Map([[&quot;one&quot;, 1],[&quot;two&quot;, 2]]);</pre
                             <p name="7425" id="7425" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Match</strong></p>
                             <p name="9e38" id="9e38" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Pattern</strong></p>
                             <p name="38ca" id="38ca" class="graf graf--p graf-after--p">
-                                zero or more characters within single or double quotes. However, it does not 
-<br/>
-
+                                zero or more characters within single or double quotes. However, it does not
+                                <br />
 
                                 require the opening and closing quotes to match
                             </p>
@@ -5486,9 +5440,8 @@ let text = &quot;Visit my blog at http://www.example.com/~david&quot;;</pre
                             </p>
                             <pre name="ad41" id="ad41" class="graf graf--pre graf-after--p">let zipcode = new RegExp(&quot;\\d{5}&quot;, &quot;g&quot;);</pre>
                             <p name="626c" id="626c" class="graf graf--p graf-after--pre">
-                                <code class="markup--code markup--p-code">let exactMatch = /JavaScript/;</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let exactMatch = /JavaScript/;</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let caseInsensitive = new RegExp(exactMatch, &quot;i&quot;);</code>
                             </p>
@@ -5613,9 +5566,8 @@ console.log(`Spline reticulation took ${endTime -startTime}ms.`);</pre
                             >
                             <p name="4875" id="4875" class="graf graf--p graf-after--pre">adds three months and two weeks to the current date:</p>
                             <p name="caf9" id="caf9" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let d = new Date();</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let d = new Date();</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">d.setMonth(d.getMonth() + 3, d.getDate() + 14);</code>
                             </p>
@@ -5942,9 +5894,8 @@ for(let result = iterator.next(); !result.done; result =iterator.next()) {</pre
                             <pre name="f614" id="f614" class="graf graf--pre graf-after--pre">}</pre>
                             <p name="2c72" id="2c72" class="graf graf--p graf-after--pre">When you want to iterate though a “partially used” iterator:</p>
                             <p name="7fbf" id="7fbf" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">let list = [1,2,3,4,5];</code> 
-<br/>
-
+                                <code class="markup--code markup--p-code">let list = [1,2,3,4,5];</code>
+                                <br />
 
                                 <code class="markup--code markup--p-code">let iter = list[Symbol.iterator]();</code>
                             </p>
@@ -6557,9 +6508,8 @@ displayErrorMessage(&quot;Something is wrong with our server!&quot;);</pre
                             <p name="fc1d" id="fc1d" class="graf graf--p graf-after--p">
                                 Once an error has been passed to a <code class="markup--code markup--p-code">.catch()</code> callback, it stops propagating down
                                 the Promise chain. A <code class="markup--code markup--p-code">.catch()</code> callback can throw a new error, but if it returns
-                                normally, than that return value is used to resolve and/or fulfill the associated Promise, and 
-<br/>
-
+                                normally, than that return value is used to resolve and/or fulfill the associated Promise, and
+                                <br />
 
                                 the error stops propagating.
                             </p>
@@ -6594,9 +6544,8 @@ promises = urls.map(url =&gt; fetch(url).then(r =&gt; r.text()));</pre
                             <p name="b408" id="b408" class="graf graf--p graf-after--pre">
                                 The Promise returned by <code class="markup--code markup--p-code">Promise.all()</code> rejects when any of the input Promises is
                                 rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In
-                                ES2020, <code class="markup--code markup--p-code">Promise.allSettled()</code> takes an array of input 
-<br/>
-
+                                ES2020, <code class="markup--code markup--p-code">Promise.allSettled()</code> takes an array of input
+                                <br />
 
                                 Promises and returns a Promise, just like Promise.all() does. But
                                 <code class="markup--code markup--p-code">Promise.allSettled()</code> never rejects the returned Promise, and it does not
@@ -6737,11 +6686,10 @@ let [value1, value2] = await Promise.all([getJSON(url1), getJSON(url2)]);</pre
                                     data-href="https://github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong> 
-<br/>
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong>
+                                    <br />
 
-<em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
                                     >github.com</a
                                 ><a
@@ -6759,13 +6707,10 @@ let [value1, value2] = await Promise.all([getJSON(url1), getJSON(url2)]);</pre
                                     data-href="https://goofy-euclid-1cd736.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://goofy-euclid-1cd736.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong> 
-<br/>
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong>
+                                    <br />
 
-<em
-                                        class="markup--em markup--mixtapeEmbed-em"
-                                        >Edit description</em
-                                    >goofy-euclid-1cd736.netlify.app</a
+                                    <em class="markup--em markup--mixtapeEmbed-em">Edit description</em>goofy-euclid-1cd736.netlify.app</a
                                 ><a
                                     href="https://goofy-euclid-1cd736.netlify.app/"
                                     class="js-mixtapeImage mixtapeImage u-ignoreBlock"

@@ -114,7 +114,6 @@ You can use `Intl` to format dates and numbers in a form that's conventional for
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-
 <span class="small">#intl-object</span></a></td></tr></tbody></table>
 
 `Collator`

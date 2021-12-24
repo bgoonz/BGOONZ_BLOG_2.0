@@ -10,9 +10,8 @@ Basic Git Work Flow.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*68fyM5AI85U_I3vo.jpg" class="graf-image" /></figure>For More Advanced Readers, or those with very limited free time… here's an abridged Git Reference.
 
-<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong> 
+<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong>
 <br/>
-
 
 <em>Refs</em><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -201,9 +200,8 @@ OR:
 
 ### My Git Reference Repo:
 
-<a href="https://github.com/bgoonz/github-reference-repo" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/github-reference-repo"><strong>bgoonz/github-reference-repo</strong> 
+<a href="https://github.com/bgoonz/github-reference-repo" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/github-reference-repo"><strong>bgoonz/github-reference-repo</strong>
 <br/>
-
 
 <em>Cloning a repo and changing the remote url Basic Git Workflow (These steps are only for when you initially clone a…</em>github.com</a><a href="https://github.com/bgoonz/github-reference-repo" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -1061,23 +1059,20 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

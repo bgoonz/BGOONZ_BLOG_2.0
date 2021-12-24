@@ -46,7 +46,6 @@ Error name, defaults to `AggregateError`.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-aggregate-error-objects</span></a></td></tr></tbody></table>
 
 `AggregateError`

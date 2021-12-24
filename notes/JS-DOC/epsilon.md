@@ -42,7 +42,6 @@ The `EPSILON` property has a value of approximately `2.2204460492503130808472633
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-number.epsilon</span></a></td></tr></tbody></table>
 
 `EPSILON`

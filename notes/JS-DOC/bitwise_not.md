@@ -42,7 +42,6 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-bitwise-not-operator</span></a></td></tr></tbody></table>
 
 `Bitwise_NOT`

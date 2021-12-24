@@ -42,7 +42,6 @@ The following example displays the word "MDN" as a hypertext link that returns t
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'String.prototype.link' in that specification.</span></a></td></tr></tbody></table>
 
 `link`

@@ -8,9 +8,6 @@ JAMstack websites don't use the microservices architecture, but they go for the 
 
 #### JAMstack websites don't use the microservices architecture, but they go for the <a href="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/" class="markup--anchor markup--h4-anchor" title="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/">micro frontends architecture</a>. Each static page with HTML and JavaScript is a micro frontend. And they can use any REST API, including the one built on the <a href="https://relevant.software/blog/microservices-on-aws/" class="markup--anchor markup--h4-anchor">microservices</a> architecture.
 
-
-
-
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kFwbfuUYkD3-jQq-.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### JAM stands for JavaScript, API & Markup.
 
 > _“A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup”_

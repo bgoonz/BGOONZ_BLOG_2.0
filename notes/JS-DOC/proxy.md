@@ -402,7 +402,6 @@ Now in order to create a complete sample `traps` list, for didactic purposes, we
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Proxy' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

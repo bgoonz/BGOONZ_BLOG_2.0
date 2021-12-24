@@ -95,7 +95,6 @@ Note that the first call does not log anything, because the generator was not yi
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-generator.prototype.next</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -39,7 +39,6 @@ The following function returns the base 10 logarithm of e:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10e">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-math.log10e</span></a></td></tr></tbody></table>
 
 `LOG10E`

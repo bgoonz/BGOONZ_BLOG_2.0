@@ -12,9 +12,6 @@ This will be a running list as I make updates!
 
 ---
 
-
-
-
 ---
 
 ### Update Terms:

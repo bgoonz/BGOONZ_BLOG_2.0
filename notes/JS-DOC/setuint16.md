@@ -41,7 +41,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-dataview.prototype.setuint16</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

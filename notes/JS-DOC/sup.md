@@ -38,7 +38,6 @@ The following example uses the [`sub()`](sub) and `sup()` methods to format a st
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.sup">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-string.prototype.sup</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

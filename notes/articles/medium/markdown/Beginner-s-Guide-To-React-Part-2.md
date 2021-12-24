@@ -10,9 +10,8 @@ As I learn to build web applications in React I will blog about it in this serie
 
 #### For more resources visit:
 
-<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong> 
+<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong>
 <br/>
-
 
 <em>A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…</em>github.com</a><a href="https://github.com/bgoonz/React_Notes_V3" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -560,25 +559,22 @@ React allows you to interface with other libraries and frameworks. This example 
 
 React-Tutorial-1:
 
-<a href="https://replit.com/@bgoonz/react-tutorial-1" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/react-tutorial-1"><strong>react-tutorial-1</strong> 
+<a href="https://replit.com/@bgoonz/react-tutorial-1" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/react-tutorial-1"><strong>react-tutorial-1</strong>
 <br/>
-
 
 <em>A React repl by bgoonz</em>replit.com</a><a href="https://replit.com/@bgoonz/react-tutorial-1" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 React Boilerplate:
 
-<a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js"><strong>React.js + Babel + Webpack Boilerplate</strong> 
+<a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js"><strong>React.js + Babel + Webpack Boilerplate</strong>
 <br/>
-
 
 <em>Created by @eankeen | The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…</em>replit.com</a><a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 For more resources visit:
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
