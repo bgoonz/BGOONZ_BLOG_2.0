@@ -1,0 +1,3296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style data-href="/styles.50a7047aac52da7af1aa.css" id="gatsby-global-css">html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}hr{box-sizing:content-box;height:0;overflow:visible}a{background-color:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:700}.font-fira-sans b,.font-fira-sans strong{font-weight:600}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none;vertical-align:middle}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}html{font-family:Lato,Helvetica,Arial,sans-serif;font-size:110%}body{background:#f8f8fa;color:#424b5f;line-height:1.625;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;overflow:auto;font-size:larger}#search{z-index:-1}a{color:#00c6ff;text-decoration:underline;transition:color .3s ease}a:hover{color:#424b5f}iframe{border-radius:20px;border:4px solid gold;height:1500px!important;width:98%;resize:both!important;overflow:scroll}h1,h2,h3,h4,h5,h6{color:#283040;font-weight:700;line-height:1.2;margin:1.5em 0 .5em;text-rendering:optimizeLegibility}h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child{margin-top:0}h1{font-size:2.9em}h2{font-size:2em}h3{font-size:1.75em}h4{font-size:1.25em}h5{font-size:1.125em}h6{font-size:1em}p{margin:0 0 1em}ins,mark{background:#fff7e6;color:#283040;padding:.15em;text-decoration:none}pre{background:#283040;border-radius:3px;color:#f8f8fa;font-size:.875em;line-height:1.5;margin:1.14286em 0;overflow:auto;padding:1.5em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal}pre:first-child{margin-top:0}:not(pre)>code{background:#ecedf2;border-radius:3px;color:#424b5f;font-size:.875rem;padding:.15em;white-space:normal}blockquote{border-left:5px solid #00c6ff;font-size:1.25em;line-height:1.4;margin:1.25em 0;padding:0 0 0 1em}blockquote:first-child{margin-top:0}blockquote p{margin-bottom:.5em}blockquote cite,blockquote small{color:#67758d;display:block;font-size:.75em;font-style:normal;font-weight:400;line-height:1.5;margin-top:.5em}dl{margin:0}dt{font-weight:700}dd,ol,ul{margin:0 0 1em}ul{list-style:disc;padding:0 0 0 1.125em}ol{list-style:decimal;padding:0 0 0 1.5em}li>ol,li>ul{margin-bottom:0}hr{background-color:#dde0e7;border:0;height:1px;margin:1.875em 0}hr:first-child{margin-top:0}img{height:auto;max-width:100%;border-radius:10px}@media only screen and (min-width:841px){blockquote{font-size:1.5em;line-height:1.3}h1{font-size:2.5em}h2{font-size:2.125em}h3{font-size:1.875em}h4{font-size:1.5em}h5{font-size:1.25em}h6{font-size:1.125em}}.gcse-search{width:30%;height:50%}table{border-collapse:collapse;border-spacing:0;line-height:1.5;margin:0;max-width:100%;width:100%}caption,table{text-align:left}caption{color:#67758d;font-size:.875em;font-style:normal;margin-bottom:1em}td,th{border-bottom:1px solid #dde0e7;padding:.5em 5px}th{color:#283040;font-weight:700}:not(.responsive-table)>table{display:block;margin:1.875em 0;overflow-x:auto;-webkit-overflow-scrolling:touch}:not(.responsive-table)>table:first-child{margin-top:0}:not(.responsive-table)>table tbody,:not(.responsive-table)>table thead,:not(.responsive-table)>table tr{width:100%}:not(.responsive-table)>table td{min-width:10em}.responsive-table{display:block;margin:1.875em 0;overflow-x:auto;width:100%}.responsive-table:first-child{margin-top:0}label{color:#283040;font-weight:700;line-height:1.5;margin-bottom:.25em}input[type=checkbox]+label,input[type=radio]+label{font-weight:400;cursor:pointer;padding-left:.25em;padding-right:1em}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{background:#fff;border:1px solid #dde0e7;border-radius:3px;box-shadow:none;box-sizing:border-box;color:#283040;display:block;font-size:1em;font-weight:400;line-height:1.5;max-width:100%;padding:.5em;width:100%}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{outline:0}:-ms-input-placeholder{color:#9aa4b9;opacity:1}::placeholder{color:#9aa4b9;opacity:1}.form-row{margin-bottom:1em}.form-submit{margin-top:1.66667em}.button{align-items:center;background:#00c6ff;border:0;border-radius:1.75em;box-shadow:none;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-flex;font-size:1em;font-weight:700;justify-content:center;letter-spacing:.035em;line-height:1.2;opacity:1;padding:.9em 2.14285em;text-decoration:none;transition:.3s ease;vertical-align:middle}.button:active,.button:focus,.button:hover{color:#fff;opacity:.8;outline:0}.button-secondary{background:0!important;box-shadow:inset 0 0 0 2px currentColor;color:#00c6ff}.button-secondary:active,.button-secondary:focus,.button-secondary:hover{box-shadow:inset 0 0 0 3px currentColor;color:#00c6ff;opacity:1}.button-icon{background:0!important;border:0;color:#000;font-size:1.2em;font-weight:400;letter-spacing:normal;padding:.25em}.button-icon:active,.button-icon:focus,.button-icon:hover{color:#00c6ff;opacity:1}#menu-close,#menu-open,.docs-nav .docs-nav-toggle,.docs-nav .docs-submenu-toggle,.submenu-toggle{background:0;border:0;border-radius:0;box-shadow:none;color:inherit;cursor:pointer;display:block;font-size:inherit;height:30px;padding:0;position:relative;width:30px}#menu-close:active,#menu-close:focus,#menu-close:hover,#menu-open:active,#menu-open:focus,#menu-open:hover,.docs-nav .docs-nav-toggle:active,.docs-nav .docs-nav-toggle:focus,.docs-nav .docs-nav-toggle:hover,.docs-nav .docs-submenu-toggle:active,.docs-nav .docs-submenu-toggle:focus,.docs-nav .docs-submenu-toggle:hover,.submenu-toggle:active,.submenu-toggle:focus,.submenu-toggle:hover{outline:0}.icon{color:inherit;fill:#fff;flex-shrink:0;height:1em;line-height:1;width:1em}.icon-close,.icon-menu{background:#fff;border-radius:1px;color:inherit;height:2px;left:50%;margin-top:-1px;margin-left:-12px;position:absolute;top:50%;width:24px}.icon-close:after,.icon-close:before,.icon-menu:after,.icon-menu:before{background:#fff;border-radius:1px;content:"";height:100%;left:0;position:absolute;width:100%}.icon-menu:before{top:-6px}.icon-menu:after{bottom:-6px}.icon-close{background:0;margin-left:-14px;width:28px}.icon-close:before{top:0;transform:rotate(45deg)}.icon-close:after{top:0;transform:rotate(-45deg)}.icon-angle-right{background:0;border-color:#fff;border-style:solid;border-width:1px 1px 0 0;box-sizing:border-box;height:8px;left:50%;margin-left:-4px;margin-top:-4px;position:absolute;top:50%;width:8px;transform:rotate(45deg)}.docs-nav-toggle .icon-angle-right{height:12px;left:auto;margin-left:0;margin-right:9px;margin-top:-6px;right:0;width:12px}.docs-section-item .icon-angle-right{left:auto;margin-left:0;margin-right:15px;right:0}.screen-reader-text{clip:rect(1px,1px,1px,1px);-webkit-clip-path:polygon(0 0,0 0,0 0,0 0);clip-path:polygon(0 0,0 0,0 0,0 0);height:1px;overflow:hidden;position:absolute!important;width:1px;word-wrap:normal!important}.line-left{position:relative}.line-left:after{background:#00c6ff;display:block;content:"";height:100%;left:-1px;position:absolute;top:0;width:5px}.js-reframe{margin:1.875em 0}.js-reframe:first-child{margin-top:0}.important,.note{border-radius:5px;color:#283040;margin:1.875em 0;padding:1em 1.125em}.important:first-child,.note:first-child{margin-top:0}.note{background:#fff7e6;border-left:5px solid #fcb41d}.important{background:#ffe9e6;border-left:5px solid #fc381d}.has-gradient{background:#00c6ff;background:linear-gradient(90deg,#0072ff,#00c6ff);color:#fff;position:relative}.has-gradient a:not(.button),.has-gradient h1,.has-gradient h2,.has-gradient h3,.has-gradient h4,.has-gradient h5,.has-gradient h6{color:inherit!important}.has-gradient a:not(.button):hover{opacity:.8}.has-gradient .button:not(.button-secondary){background-color:#fff;color:#00c6ff}.has-gradient .button:not(.button-secondary):active,.has-gradient .button:not(.button-secondary):focus,.has-gradient .button:not(.button-secondary):hover{opacity:.85}.has-gradient .button-secondary{color:#fff!important}.has-gradient .inner-sm{position:relative}.bg-img{animation:fadeIn20 .75s ease-in-out;background-position:50%;background-size:cover;bottom:0;left:0;opacity:.2;position:absolute;right:0;top:0}.grid{display:flex;flex-wrap:wrap;margin-left:-.9375em;margin-right:-.9375em}.grid-item{box-sizing:border-box;padding-left:.9375em;padding-right:.9375em;position:relative;width:100%}.grid-center{justify-content:center}.grid-swap{flex-direction:row-reverse}.grid-middle{align-items:center}@media only screen and (min-width:641px){.grid-col-2 .grid-item{flex:0 0 50%;max-width:50%}}@media only screen and (min-width:761px){.grid-col-3 .grid-item{flex:0 0 33.333%;max-width:33.333%}}@media only screen and (max-width:600px){.grid{margin-left:-1.5vw;margin-right:-1.5vw}.grid-item{padding-left:1.5vw;padding-right:1.5vw}}@keyframes fadeIn20{0%{opacity:0}to{opacity:.2}}.site{display:flex;flex-direction:column;min-height:100vh;position:relative}.site-content{box-sizing:border-box;flex-grow:1;width:100%}.outer{padding-left:150px;padding-right:150px}.inner,.inner-md,.inner-sm{margin-left:auto;margin-right:auto;max-width:95%}.site-header{background:#000;background-image:url(https://i.imgur.com/CEYEZp8.jpeg);padding-bottom:.2em;padding-top:.2em}.site-header-inside{align-items:center;display:flex}.site-branding{flex:0 1 auto}.site-title{color:#283040;font-size:1.5em;font-weight:700;line-height:1.2;margin:0}.site-logo{margin:0}.site-logo img{max-height:36px}.menu,.submenu{list-style:none;margin:0;padding:0}.menu-item{position:relative}.menu-item.current{color:#00c6ff}.menu-item a:not(.button){display:inline-block;font-size:.9375em;line-height:1.5}#masthead a:not(.button){color:inherit;display:inline-block;text-decoration:none}#masthead a:not(.button):hover{color:#00c6ff}#masthead .site-branding a:hover{color:inherit}@media only screen and (min-width:801px){#menu-close,#menu-open{display:none}.site-navigation{margin-left:auto}.menu{align-items:center;display:flex}.menu-item{display:inline-block;margin:0 0 0 1.25em;padding-bottom:.1875em;padding-top:.1875em}.menu-item a{padding-bottom:.5em;padding-top:.5em}.menu-item a.button:not(.button-icon){padding-left:1.25em;padding-right:1.25em}.menu-item.has-children>a{padding-right:15px;position:relative}.menu-item.has-children>a:after{background:0;border-color:currentcolor;border-style:solid;border-width:1px 1px 0 0;box-sizing:border-box;content:"";height:6px;position:absolute;right:0;top:50%;width:6px;transform:translateY(-50%) rotate(135deg)}.menu-item.has-children>a.button:not(.button-icon){padding-right:2.25em}.menu-item.has-children>a.button:not(.button-icon):after{right:1.25em}.menu-item .submenu-toggle{display:none}.menu-item.has-children:hover>.submenu{opacity:1;transition:margin .3s,opacity .2s;visibility:visible}.submenu{background:#fff;border:1px solid #dde0e7;border-radius:3px;box-shadow:0 1px 2px 0 rgba(0,0,0,.08);left:0;min-width:180px;opacity:0;padding:.5em 0;position:absolute;text-align:left;top:100%;transition:opacity .2s,visibility 0s .2s;visibility:hidden;width:100%;z-index:99}.submenu .menu-item{display:block;margin:0;padding:0 1em}.submenu a:not(.button-icon){display:block}.submenu a.button:not(.button-icon){margin:.5em 0}}@media only screen and (max-width:800px){.site{overflow:hidden;position:relative}.site-branding{margin-right:.625em}.site-header:after{background:rgba(66,75,95,.6);content:"";left:0;opacity:0;transition:opacity .15s ease-in-out,visibility 0s ease-in-out .15s;z-index:998}.site-header:after,.site-navigation{height:100vh;position:absolute;top:0;visibility:hidden;width:100%}.site-navigation{background:#fff;box-sizing:border-box;margin:0;max-width:360px;-webkit-overflow-scrolling:touch;right:-100%;transition:right .3s ease-in-out,visibility 0s ease-in-out .3s;z-index:999}.site-nav-inside{height:100%;overflow:auto;-webkit-overflow-scrolling:touch;position:relative}.menu--opened .site{height:100%;left:0;overflow:hidden;position:fixed;top:0;transform:translateZ(0);width:100%;z-index:997}.menu--opened .site-navigation{right:0;transition:right .3s ease-in-out;visibility:visible}.menu--opened .site-header:after{opacity:1;transition-delay:0s;visibility:visible}.menu{padding:calc(3vw + 2.8125em) 3vw 3em}.submenu{border-top:1px solid #dde0e7;display:none;padding-left:1em}.menu-item{display:block;margin:0}.menu-item:not(.menu-button){border-bottom:1px solid #dde0e7}.menu-item:not(.menu-button):first-child{border-top:1px solid #dde0e7}.menu-item a.button-icon,.menu-item a:not(.button){padding:.75em 0}.menu-item a:not(.button){display:block}.menu-item a.button:not(.button-icon){width:100%}.menu-item.has-children>a{margin-right:2em}.menu-item .menu-item:first-child{border-top:0}.menu-item .menu-item:last-child{border-bottom:0}.menu-item .submenu-toggle{color:#67758d;height:2.8125em;position:absolute;right:0;top:0}.menu-item.active .submenu-toggle .icon-angle-right{transform:rotate(135deg)}.menu-item.active .submenu{display:block}.menu-button>.button:not(.button-icon){margin-bottom:1.25em;margin-top:1.25em}.menu-button+.menu-button>.button:not(.button-icon){margin-top:0}#menu-open{margin-left:auto}#menu-close{display:block;position:absolute;right:3vw;top:3vw}}.post{margin-bottom:2.5em}.post-feed:last-child,.post-full:last-child{margin-bottom:5em}.has-gradient.page-header,.has-gradient.post-header{padding-bottom:9.5em;padding-top:3.75em;text-align:center}.has-gradient .page-title,.has-gradient .post-title{color:inherit;font-size:2.25em;margin:0}.page-subtitle,.post-subtitle{font-size:1.125em;line-height:1.5;margin:.5em 0 0;position:relative}.post-title a{color:inherit!important;text-decoration:none}.post-thumbnail{border:0;border-radius:5px 5px 0 0;display:block;margin:0}.post-thumbnail img{border-radius:5px 5px 0 0;width:100%}.post-feed,.post-full .post-content{margin-top:-5em;position:relative}.post-feed .post,.post-full .post-content{background:#fff;border:1px solid #dde0e7;border-radius:5px;box-shadow:0 1px 2px 0 rgba(0,0,0,.08)}.post-full .post-content{padding:1.5em}.post-full .post-meta{margin:0 0 .5em}.post-feed .post{padding:0 0 2.5em}.post-feed .post-meta{color:#67758d;font-size:.875em;margin:0 0 .5em;padding-left:1.71428em;padding-right:1.71428em}.post-feed .post-header{margin:0 0 1.25em;padding-top:1.875em}.post-feed .post-title{font-size:1.5em;margin:0;padding-left:1em;padding-right:1em}.post-feed .post-excerpt{margin-bottom:1.25em;padding-left:1.5em;padding-right:1.5em}.post-feed .read-more{margin:0;padding-left:1.5em;padding-right:1.5em}.post-feed .read-more-link{font-weight:700;text-decoration:none}.post-feed .read-more-link:after{font-size:1.125em;content:"\2192";line-height:1.5;margin-left:5px}.post-feed .read-more-link:hover{color:#424b5f}@media only screen and (min-width:641px){.has-gradient .page-title,.has-gradient .post-title{font-size:3em}.page-subtitle,.post-subtitle{font-size:1.25em}.post-full .post-meta{font-size:1.125em}.post-feed .post-excerpt,.post-feed .post-meta,.post-feed .post-title,.post-feed .read-more,.post-full .post-content{padding-left:7%;padding-right:7%}}@media only screen and (max-width:1000px){.post{margin-bottom:4vw}}.docs-content{padding-top:2.5em;width:100%}.post-content{width:95%}.post.type-docs{margin-bottom:3.625em}.post.type-docs h1{font-size:1.975em}.post.type-docs h2{font-size:1.6em}.post.type-docs h3{font-size:1.45em}.post.type-docs h4{font-size:1.35em}.post.type-docs h5,.post.type-docs h6{font-size:1.2em}.post.type-docs .hash-link{float:left;font-size:1.25rem;height:1em;line-height:1;margin-left:-1.1em;opacity:0;text-align:center;text-decoration:none;transition:opacity .4s;width:1em}.post.type-docs .hash-link:before{content:"#";display:inline-block}.post.type-docs .hash-link:focus,.post.type-docs .hash-link:hover{color:#00c6ff}.post.type-docs h2 .hash-link{margin-top:.72em}.post.type-docs h3 .hash-link{margin-top:.5em}.post.type-docs h2:focus .hash-link,.post.type-docs h2:hover .hash-link,.post.type-docs h3:focus .hash-link,.post.type-docs h3:hover .hash-link{opacity:.9}.post.type-docs .post-inside{background:#fff;border:1px solid #dde0e7;border-radius:5px;box-shadow:0 1px 2px 0 rgba(0,0,0,.08);padding:.5em;width:80vw}.post.type-docs .post-title{font-size:2em;margin:0 0 1.55em;padding:0 1.2em}.post.type-docs .post-content{padding:.775em;word-wrap:break-word}#docs-section-items{display:flex;flex-wrap:wrap;list-style:none;margin-left:-.3125em;margin-right:-.3125em;padding:0}#docs-section-items .docs-section-item{flex:1 1 240px;margin:0 .3125em .9375em}#docs-section-items .docs-item-link{border:1px solid #dde0e7;border-radius:3px;color:#283040;display:block;font-weight:700;padding:.9375em;position:relative;text-decoration:none;transition:border-color .3s ease,color .3s ease}#docs-section-items .docs-item-link:hover{border-color:#00c6ff;color:#00c6ff}.docs-nav{margin-bottom:1.875em}.docs-nav .docs-nav-toggle{color:#283040;font-size:1.125em;margin:0;padding-right:15px;text-align:left}.docs-nav .docs-submenu-toggle{color:#67758d;position:absolute;right:0;top:0}#docs-menu{color:#283040;font-weight:700;line-height:1.5;list-style:none;margin:.5em;padding:0}#docs-menu>.docs-menu-item>a{padding:.1875em 0;border-radius:20px;margin:auto}#docs-menu a{color:inherit;display:block;text-decoration:none}#docs-menu .current,#docs-menu .current-parent,#docs-menu a:hover{color:#00c6ff}.docs-submenu{border-left:1px solid #dde0e7;color:#424b5f;display:none;font-size:.9375em;font-weight:400;list-style:none;margin-top:.625rem;padding-left:1rem}.docs-menu-item{color:inherit;margin-bottom:.625rem}.docs-menu-item.has-children{padding-right:30px;position:relative}.docs-menu-item.has-children.active .docs-submenu{display:block}.docs-menu-item.has-children.active>.docs-submenu-toggle .icon-angle-right{transform:rotate(135deg)}#page-nav{text-overflow:wrap}#page-nav .page-nav-title{font-size:1em;margin:0 0 .625em}#page-nav ul{font-size:.875rem;line-height:1.5;list-style:none;padding:0}#page-nav ul ul{border-left:1px solid #dde0e7;margin-top:.625rem;padding-left:1.25rem}#page-nav li{margin-bottom:.625rem}#page-nav li.active>a{color:#00c6ff}#page-nav a{color:#424b5f;display:block;text-decoration:none}#page-nav a:hover{color:#00c6ff}#page-nav .page-nav-title:only-child{display:none}@media only screen and (min-width:1200px){.post.type-docs .post-content,.post.type-docs .post-title{padding-left:8%;padding-right:7%}}@media only screen and (min-width:1200px){.docs-content{display:flex;padding-top:3.75em;width:100%}.post.type-docs{-ms-flex:1 1 auto;align-content:center}.docs-nav,.page-nav{-ms-flex-negative:0;margin-bottom:5.625em}.docs-nav .sticky,.page-nav .sticky{position:-webkit-sticky;position:sticky;top:1.875em}.docs-nav{width:8.5em}#page-nav{font-size:12px;margin:4em}#docs-nav-toggle{display:none}}@media only screen and (min-width:1091px){#page-nav{display:block}}@media only screen and (max-width:800px){.docs-nav{background:#fff;border:1px solid #dde0e7;border-radius:5px;box-shadow:0 1px 2px 0 rgba(0,0,0,.08);box-sizing:border-box;margin-bottom:5%;padding:1em}.docs-nav-menu{display:none}.docs-menu--opened .docs-nav-menu{display:block}.docs-menu--opened .docs-nav-toggle .icon-angle-right{transform:rotate(135deg)}#docs-menu{border-top:1px solid #dde0e7;margin-top:1.25em;padding-top:1.25em}}.block{padding-top:3.75em}.block:not(.block-hero){background:#fff}.block:last-child{padding-bottom:3.75em}.block-header,.block-image{margin-bottom:1.5em}.block-title{align-self:center;margin:0}.block-subtitle{color:#67758d;line-height:1.5;margin-bottom:0}.block-subtitle:not(:first-child){margin-top:.5em}.block-buttons,.grid-item-buttons{align-items:center;display:flex;flex-wrap:wrap;margin-bottom:.9375em}.block-buttons a,.grid-item-buttons a{font-weight:700;text-decoration:none}.block-buttons{justify-content:center}.block-buttons a{margin:0 .375em .75em}.grid-item-buttons a{margin:0 .75em .75em 0}.has-gradient .block-subtitle{color:inherit}.block-hero .block-buttons:not(:first-child),.block-text .block-buttons:not(:first-child){margin-top:1.875em}.block-text .grid-item{max-width:680px;text-align:center}.block-text .block-title{font-size:1.875em}@media only screen and (min-width:641px){.block-text .block-content{font-size:1.125em}.block-text .block-title{font-size:2.125em}}@media only screen and (min-width:801px){.block-text .grid-item:not(:only-child){flex:0 0 50%;max-width:90%}.block-body:not(:only-child) .block-buttons{justify-content:flex-start}.block-body:not(:only-child) .block-buttons a{margin-left:0;margin-right:.75em}}@media only screen and (min-width:1001px){.block-image:not(:only-child){padding-right:.5em}.grid-swap .block-image:not(:only-child){padding-left:.5em;padding-right:.9375em}}.block-cta .has-gradient{border-radius:5px;margin-bottom:1.875em;padding:3.75em 3vw 1.875em}.block-cta .block-header{max-width:680px;text-align:center}.block-cta .block-title{font-size:1.875em}.block-cta .block-subtitle{font-size:1.125em}@media only screen and (min-width:641px){.block-title{font-size:2.125em}}@media only screen and (min-width:801px){.block-cta .has-gradient{padding-left:7%;padding-right:7%}.block-cta .block-header{flex:0 0 66.666%;max-width:66.666%;text-align:left}.block-cta .block-buttons{flex:0 0 50%;margin-top:0;max-width:50%}}.block-hero+.block-grid:not(.has-header){background:0;padding-top:0}.block-grid .block-header{margin-bottom:2em;text-align:center}.block-grid .block-title{font-size:1.875em}.block-grid .grid-item{text-align:center;display:flex;flex-direction:column;margin-bottom:1.875em}.grid-item-inside{background:#fff;border:1px solid #dde0e7;border-radius:3px;box-shadow:0 1px 2px 0 rgba(0,0,0,.08);box-sizing:border-box;flex-grow:1;padding-bottom:.75em}.grid-item-image{display:block;width:100%}.grid-item-image,.grid-item-image img{border-radius:3px 3px 0 0}.grid-item-title{font-size:1.5em;margin:1em 0 .5em;padding-left:1em;padding-right:1em}.grid-item-title:first-child{margin-top:1.25em}.grid-item-title a{color:inherit!important;text-decoration:none}.grid-item-buttons,.grid-item-content{padding-left:1.5em;padding-right:1.5em}.grid-item-content{margin-bottom:1.25em}.grid-item-buttons a:not(.button):after{font-size:1.125em;content:"\2192";line-height:1.5;margin-left:5px}@media only screen and (max-width:1000px){.block-grid .grid-item{margin-bottom:4vw}}.block-hero{padding-bottom:7.5em;position:relative;text-align:center}.block-hero .block-header{margin-bottom:.75em}.block-hero .block-title{font-size:2.25em}.block-hero .block-content{font-size:1.125em;line-height:1.5}.block-hero+.block{margin-top:-5em;position:relative}@media only screen and (min-width:641px){.block-hero .block-title{font-size:3em}.block-hero .block-content{font-size:1.25em}.block-hero .block-buttons a{font-size:1em}}.site-footer{background-color:#000;background-image:url(https://i.imgur.com/CEYEZp8.jpeg);padding-bottom:1.5em;padding-top:1.5em;color:#fff!important}#colophon a:not(.button){color:inherit}#colophon a:not(.button):focus,#colophon a:not(.button):hover{color:#00c6ff}.site-info,.social-links{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;font-size:.675em;line-height:1.2}.site-info .button:not(.button-icon),.social-links .button:not(.button-icon){font-size:inherit;line-height:1.2;padding:.3em 1em}.site-info{margin:.25em 0 0;text-align:center}.site-info .copyright,.site-info>a{margin:0 4px .2em 0}.social-links{margin-top:.5375em}.social-links a{margin:0 50px .2em}.social-links .icon{font-size:20px}@media only screen and (min-width:641px){.site-footer-inside{align-items:flex-start;display:flex}.site-info{text-align:left}.site-info,.social-links{justify-content:flex-start}.social-links{flex:0 0 auto;flex-wrap:nowrap;margin-left:auto;margin-top:0}.social-links a{margin-left:20px;margin-right:0}}.palette-green a:not(.button){color:#20c86e}.palette-green a:not(.button):hover{color:#424b5f}.palette-green blockquote{border-color:#20c86e}.palette-green .button,.palette-green .line-left:after{background:#20c86e}.palette-green .has-gradient{background:#20c86e;background:linear-gradient(90deg,#1ba65b,#20c86e)}.palette-green #colophon a:not(.button):hover,.palette-green #docs-menu .current,.palette-green #docs-menu .current-parent,.palette-green #docs-menu a:hover,.palette-green #masthead a:not(.button):hover,.palette-green #page-nav a:hover,.palette-green #page-nav li.active>a,.palette-green .button-icon:active,.palette-green .button-icon:focus,.palette-green .button-icon:hover,.palette-green .button-secondary,.palette-green .has-gradient .button:not(.button-secondary),.palette-green .menu-item.current,.palette-green .post.type-docs .hash-link:focus,.palette-green .post.type-docs .hash-link:hover{color:#20c86e}.palette-green #docs-section-items .docs-item-link:hover{border-color:#20c86e;color:#20c86e}.palette-navy a:not(.button){color:#1b2024}.palette-navy a:not(.button):hover{color:#424b5f}.palette-navy blockquote{border-color:#1b2024}.palette-navy .button,.palette-navy .line-left:after{background:#1b2024}.palette-navy .has-gradient{background:#1b2024;background:linear-gradient(90deg,#000428,#1b2024)}.palette-navy #colophon a:not(.button):hover,.palette-navy #docs-menu .current,.palette-navy #docs-menu .current-parent,.palette-navy #docs-menu a:hover,.palette-navy #masthead a:not(.button):hover,.palette-navy #page-nav a:hover,.palette-navy #page-nav li.active>a,.palette-navy .button-icon:active,.palette-navy .button-icon:focus,.palette-navy .button-icon:hover,.palette-navy .button-secondary,.palette-navy .has-gradient .button:not(.button-secondary),.palette-navy .menu-item.current,.palette-navy .post.type-docs .hash-link:focus,.palette-navy .post.type-docs .hash-link:hover{color:#1b2024}.palette-navy #docs-section-items .docs-item-link:hover{border-color:#1b2024;color:#1b2024}.palette-violet a:not(.button){color:#8e2de2}.palette-violet a:not(.button):hover{color:#424b5f}.palette-violet blockquote{border-color:#8e2de2}.palette-violet .button,.palette-violet .line-left:after{background:#8e2de2}.palette-violet .has-gradient{background:#8e2de2;background:linear-gradient(90deg,#4a00e0,#8e2de2)}.palette-violet #colophon a:not(.button):hover,.palette-violet #docs-menu .current,.palette-violet #docs-menu .current-parent,.palette-violet #docs-menu a:hover,.palette-violet #masthead a:not(.button):hover,.palette-violet #page-nav a:hover,.palette-violet #page-nav li.active>a,.palette-violet .button-icon:active,.palette-violet .button-icon:focus,.palette-violet .button-icon:hover,.palette-violet .button-secondary,.palette-violet .has-gradient .button:not(.button-secondary),.palette-violet .menu-item.current,.palette-violet .post.type-docs .hash-link:focus,.palette-violet .post.type-docs .hash-link:hover{color:#8e2de2}.palette-violet #docs-section-items .docs-item-link:hover{border-color:#8e2de2;color:#8e2de2}</style>
+<meta name="generator" content="Gatsby 2.32.8"/>
+<title data-react-helmet="true">Useful Snippets | webdevhub</title>
+<link data-react-helmet="true" rel="preconnect" href="https://fonts.gstatic.com"/>
+<link data-react-helmet="true" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link data-react-helmet="true" rel="icon" href="/images/webdevhublogo2.PNG"/>
+<meta data-react-helmet="true" charSet="utf-8"/>
+<meta data-react-helmet="true" name="viewport" content="width=device-width, initialScale=1.0"/>
+<meta data-react-helmet="true" name="description" content=""/>
+<meta data-react-helmet="true" name="robots" content=""/>
+<link as="script" rel="preload" href="/webpack-runtime-7059fe0afa2407e27b1a.js"/>
+<link as="script" rel="preload" href="/framework-ee588a66ec21b993116b.js"/>
+<link as="script" rel="preload" href="/app-a18a86fe88835f322f3c.js"/>
+<link as="script" rel="preload" href="/styles-7d4153d260c0197f0043.js"/>
+<link as="script" rel="preload" href="/29107295-519d329e2c1acb586ba7.js"/>
+<link as="script" rel="preload" href="/commons-d40de8dfcbb72ad3503c.js"/>
+<link as="script" rel="preload" href="/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js"/>
+<link as="fetch" rel="preload" href="/page-data/docs/docs/content/page-data.json" crossorigin="anonymous"/>
+<link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+<!-- End Google Tag Manager -->
+<!--FIREBASE----------------------------------------------------------------------->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.8.1/firebase-app.js">
+</script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.8.1/firebase-analytics.js">
+</script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js">
+</script>
+
+<!--Google Tag----------------------------------------------------------------------->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9B63M34E1');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+
+  </script>
+  <script type="text/javascript">
+    function hideLoader() {
+      $( '#loading' ).hide();
+    }
+    $( window ).ready( hideLoader );
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+    setTimeout( hideLoader, 10 * 1000 );
+    $( window ).on( 'beforeunload', function () {
+      $( window ).scrollTop( 0 );
+    } );
+  </script>
+
+  <script>
+    $( window ).scroll( function () {
+      $( "#back" ).stop().animate( {
+        "marginTop": ( $( window ).scrollTop() ) + "px",
+        "marginLeft": ( $( window ).scrollLeft() ) + "px"
+      }, "slow" );
+    } );
+  </script>
+<script>
+        window.addEventListener( 'DOMContentLoaded', ( event ) => {
+          console.log( 'DOM fully loaded and parsed' );
+          const scrollToTop = () => {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if ( c > 0 ) {
+              window.requestAnimationFrame( scrollToTop );
+              window.scrollTo( 0, c - c / 8 );
+            }
+          };
+          scrollToTop();
+        } );
+
+      </script>
+<script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4W5MG3DG4T');
+</script>
+
+<script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+<style>blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ol[class],
+p,
+ul[class] {
+  margin: 0
+}
+
+body {
+  min-height: 110vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6
+}
+
+
+
+
+
+article>*+* {
+  margin-top: 1em
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  line-height: 1.75
+}
+
+img {
+  height: auto
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/media/ZillaSlab-Bold.subset.0beac26b.woff2) format("woff2"), url(/static/media/ZillaSlab-Bold.subset.72026b3c.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: zillaslab;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/media/ZillaSlab-Regular.subset.ce3a756d.woff2) format("woff2"), url(/static/media/ZillaSlab-Regular.subset.7e4c05c9.woff) format("woff")
+}
+
+h1,
+h2,
+h3 {
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  line-height: 1.2
+}
+
+h1 {
+  font-size: 1.802rem
+}
+
+@media (min-width:47.9385em) {
+  h1 {
+    font-size: 3.052rem
+  }
+}
+
+h2 {
+  font-size: 1.602rem
+}
+
+@media (min-width:47.9385em) {
+  h2 {
+    font-size: 2.441rem
+  }
+}
+
+h3 {
+  font-size: 1.424rem;
+
+
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  font-weight: 400;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0 6px;
+  margin: 24px 0
+}
+
+@media (min-width:47.9385em) {
+  h3 {
+    font-size: 1.953rem
+  }
+}
+
+h4 {
+  font-size: 1.266rem
+}
+
+@media (min-width:47.9385em) {
+  h4 {
+    font-size: 1.563rem
+  }
+}
+
+h5 {
+  font-size: 1.125rem
+}
+
+@media (min-width:47.9385em) {
+  h5 {
+    font-size: 1.25rem
+  }
+}
+
+p {
+  margin-bottom: 24px
+}
+
+a:link,
+a:visited {
+
+  text-decoration: none
+}
+
+a:link:active,
+a:link:focus,
+a:link:hover,
+a:visited:active,
+a:visited:focus,
+a:visited:hover {
+  text-decoration: underline
+}
+
+blockquote {
+  max-width: 45rem;
+  max-width: 85ch;
+  font-size: 1.125rem;
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  font-weight: 400;
+  margin-bottom: 24px
+}
+
+@media (min-width:47.9385em) {
+  blockquote {
+    font-size: 1.25rem
+  }
+}
+
+blockquote:after,
+blockquote:before {
+  background-image: linear-gradient(90deg, #00356a, #83d0f2);
+  content: "";
+  display: block;
+  height: 5px;
+  margin-bottom: 12px
+}
+
+blockquote:after {
+  margin-top: 12px
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0
+}
+
+a {
+
+  text-decoration: none
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline
+}
+
+a code {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none
+}
+
+
+dl dt {
+  font-weight: 700
+}
+
+dl dd {
+  margin: 0 24px 24px
+}
+
+
+
+</style>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" href="logo-circle.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="HTML">
+  <meta name="Author" content="Bryan Guner">
+  <meta name="keywords" content="HTML, Meta Tags, Metadata">
+  <meta name="description" content="Learning about Web Development.">
+  <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@bgoonz">
+  <meta name="twitter:creator" content="@bgoonz">
+  <meta name="twitter:image:src" content="/logo-circle.png">
+  <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner">
+  <meta name="twitter:description" content="The new home of my blog resource sharing website.">
+  <link
+    href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
+    rel="apple-touch-icon">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
+<meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU" />
+<style>
+
+
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin: 0 3em 3em 0;
+	border-radius: 50%;
+	padding: .25em;
+	width: 80px;
+	height: 80px;
+  background-color: #F8F8F8;
+  
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+	svg {
+		fill: #000;
+		width: 24px;
+		height: 12px;
+	}
+
+	&:hover {
+		background-color: #E8E8E8;
+
+		svg {
+			fill: #000000;
+		}
+	}
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+	position: absolute;
+	clip-path: inset(50%);
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+
+	&:focus {
+		display: block;
+		top: 5px;
+		left: 5px;
+		z-index: 100000; // Above WP toolbar
+		clip-path: none;
+		background-color: #eee;
+		padding: 15px 23px 14px;
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		line-height: normal;
+		color: #444;
+		font-size: 1em;
+		clip: auto !important;
+	}
+}
+</style>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDHEGb8XzHTqWyHezNyXGFRRwVZbvQmd3E",
+    authDomain: "bgoonzblog20.firebaseapp.com",
+    projectId: "bgoonzblog20",
+    storageBucket: "bgoonzblog20.appspot.com",
+    messagingSenderId: "44896241794",
+    appId: "1:44896241794:web:81523d6aa975fccb51cc9b",
+    measurementId: "G-F56YP2Y17L"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F56YP2Y17L');
+</script>
+<!-- HTML Meta Tags -->
+<title>Web-Dev-Hub</title>
+<meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Web-Dev-Hub">
+<meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
+<meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="bgoonz-blog.netlify.app">
+<meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+<meta name="twitter:title" content="Web-Dev-Hub">
+<meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
+<meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+<meta property="og:image" content="https://mugshotbot.com/m/DROicc16">
+<meta property="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+    </script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: "O6OT9G9U8Z",
+        apiKey: "b0cb3d390176e1ff4bd1ecb12fc15730",
+        siteId: "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
+        branch: "master",
+        selector: "div#search"
+      });
+    </script>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js">
+</script>
+<!-- Start of tcnj Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=0abd6b56-951c-423b-92e0-dfeac77b6820"> </script>
+<!-- End of tcnj Zendesk Widget script -->
+</head>
+<body class="palette-navy">
+<noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
+<div id="___gatsby">
+<div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"/>
+<div id="page" class="site">
+<header id="masthead" class="site-header outer">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"/>
+<br/>
+<div class="inner">
+<div class="site-header-inside">
+<div class="site-branding">
+<p class="site-logo">
+<a href="/">
+<img src="https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png" alt="webdevhub logo"/>
+</a>
+</p>
+</div>
+<div id="search" class="inner">
+</div>
+<nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+<div class="site-nav-inside">
+<button id="menu-close" class="menu-toggle">
+<span class="screen-reader-text">Open Menu</span>
+<span class="icon-close" aria-hidden="true">
+</span>
+</button>
+<ul class="menu">
+<li class="menu-item has-children menu-button">
+<a class="button" href="/docs/sitemap">Navigation</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a class="button" href="/docs">Docs</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/showcase">Showcase</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/docs/faq/contact">Contact!</a>
+</li>
+<li class="menu-item menu-button">
+<a target="_blank" rel="noopener " class="button" href="/docs/python/python-ds">Python</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a target="_blank" rel="noopener " class="button" href="/blog/">Blog</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a href="https://bgoonz.blogspot.com/" target="_blank" rel="noopener " class="button">Blog-Post-Archive</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+</li>
+<li class="menu-item menu-button">
+<a target="_blank" rel="noopener " class="button" href="/docs/articles/ds-algo-overview/">ds-algo</a>
+</li>
+<li class="menu-item menu-button">
+<a target="_blank" rel="noopener " class="button" href="/blog/platform-docs/">platform docs</a>
+</li>
+<li class="menu-item menu-button">
+<a target="_blank" rel="noopener " class="button" href="/docs/articles/nodejs/">nodejs</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/blogWcomments/">Blog w Comments</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a href="https://github.com/bgoonz/UsefulResourceRepo2.0" target="_blank" rel="noopener " class="button">Archive</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://github.com/bgoonz/Learning-Assets" target="_blank" rel="noopener " class="button">Resource-Archive-Server</a>
+</li>
+<li class="menu-item menu-button">
+<a href="#" class="button">Bootcamp Resources</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://web-dev-resource-hub.netlify.app/" target="_blank" rel="noopener " class="button">OG-Blog</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/docs/gallery">Gallery</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/docs">Top Repos</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a class="button" href="/docs/audio/audio">Audio</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a class="button" href="/docs/audio/audio">DTW-guitar-effects</a>
+</li>
+<li class="menu-item menu-button">
+<a class="button" href="/docs/audio/dfft">Fast Fourier Transform</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a href="https://project-portfolio42.netlify.app/" target="_blank" rel="noopener " class="button">Projects</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a href="https://potluck-landing.netlify.app/" target="_blank" rel="noopener " class="button">Potluck Planner</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://meditate42app.netlify.app/" target="_blank" rel="noopener " class="button">Meditation App</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://panoramic-eggplant-452e4.netlify.app/" target="_blank" rel="noopener " class="button">WebAudioLab</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz.github.io/searchAwesome/" target="_blank" rel="noopener " class="button">SearchAwesome</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bg-portfolio.netlify.app/" target="_blank" rel="noopener " class="button">Condensed -Portfolio</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz-blog-v3-0.netlify.app/" target="_blank" rel="noopener " class="button">Blog Backup</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://web-dev-hub.com/" target="_blank" rel="noopener " class="button">Wordpress Blog</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+</li>
+</ul>
+</li>
+<li class="menu-item has-children menu-button">
+<a class="button" href="/docs/tools">Tools</a>
+<button class="submenu-toggle">
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+<span class="screen-reader-text">Sub-menu</span>
+</button>
+<ul class="submenu">
+<li class="menu-item menu-button">
+<a href="https://githtmlpreview.netlify.app/" target="_blank" rel="noopener " class="button">Github HTML Previewer</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://devtools42.netlify.app/" target="_blank" rel="noopener " class="button">Text Tools</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://ternary42.netlify.app/" target="_blank" rel="noopener " class="button">Ternary 2 If Else</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://determined-dijkstra-ee7390.netlify.app/" target="_blank" rel="noopener " class="button">Job Search Resources</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://github.com/bgoonz/web-dev-setup-checker" target="_blank" rel="noopener " class="button">Setup Checker</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://potluck-landing.netlify.app/" target="_blank" rel="noopener " class="button">PotluckPlanner</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+</li>
+<li class="menu-item menu-button">
+<a href="https://github.com/search/advanced" target="_blank" rel="noopener " class="button button-icon">
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+</path>
+</svg>
+<span class="screen-reader-text">Github-Advanced-Search</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<button id="menu-open" class="menu-toggle">
+<span class="screen-reader-text">Close Menu</span>
+<span class="icon-menu" aria-hidden="true">
+</span>
+</button>
+</div>
+</div>
+<div>
+<a class="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 250 250" style="z-index:100000;fill:black;color:#fff;position:fixed;top:0px;border:0;left:0px;transform:scale(-1.5, 1.5)">
+<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+</path>
+<path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px">
+</path>
+<path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
+</path>
+</svg>
+</a>
+</div>
+</header>
+<main id="content" class="site-content">
+<div class="inner outer">
+<div class="docs-content">
+<nav id="docs-nav" class="docs-nav">
+<div id="docs-nav-inside" class="docs-nav-inside sticky">
+<button id="docs-nav-toggle" class="docs-nav-toggle">Navigate Docs<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<div class="docs-nav-menu">
+<ul id="docs-menu" class="docs-menu">
+<li class="docs-menu-item">
+<a href="/docs/">Docs</a>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/about/">About</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/about/job-search/">Job Search</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/about/intrests/">Youtube</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/about/resume/">Resume</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/about/eng-portfolio/">Engineering Portfolio</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/about/hobbies-n-interests/">My Hobbies &amp; Interests</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/articles/">Articles</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/articles/http/">The HTTP Protocol</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/how-the-web-works/">How The Web Works</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-package-manager/">Sorting Algorithms</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/npm/">Introduction to npm</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/understanding-firebase/">Firebase</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/the-uniform-resource-locator-(url)/">The Uniform Resource Locator (URL)</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/semantic-html/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/web-standards-checklist/">Web Standards Checklist</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/webdev-tools/">Web Developer Tools</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-cli-args/">where-is-npm-pack</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-repl/">The-package-lock.json-file</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-run-cli/">node-cli-args</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-env-variables/">Node Export Module</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/v8/">npm global or local packages</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-js-language/">packagejson</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-common-modules/">Common Modules</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/buffers/">Node Buffers</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/dev-dep/">Dev Dependencies</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/event-loop/">The Node.js Event Loop</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/basic-web-dev/">Web Dev Review</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/fs-module/">Fs-Module</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/install/">Install</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/intro/">Intro To Node</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/module-exports/">module-exports</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/nodejs/">Javascript and Node</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/npx/">The npx Node.js Package Runner</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/nodevsbrowser/">Node vs Browser</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/reading-files/">Reading Files</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/os-module/">OS-Module</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/semantic/">Semantic Versioning</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/writing-files/">Writing Files</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/articles/node-api-express/">Node APIs With Express</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/audio/">Audio</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/audio/audio-feature-extraction/">Audio Feature Extraction</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/audio/audio/">Audio</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/audio/dynamic-time-warping/">dynamic-time-warping</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/audio/dtw-python-explained/">Dynamic Time Warping Algorithm Explained (Python)</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/audio/dfft/">Discrete Fast Fourier Transform</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/audio/discrete-fft/">Fast Fourier Transform</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/community/">Community</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/community/video-chat/">Video Chat</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/content/">Content</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/content/data-structures-algo/">RECENT PROJECTS</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/history-api/">History API</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/trouble-shooting/">Trouble Shooting</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/projects/">Projects</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/archive/">Archive</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/gatsby-Queries-Mutations/">Queries and Mutations (Gatsby)</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/recent-projects/">Embeded Websites &amp; Projects</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/content/algo/">Algorithms &amp; Data Structures</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children active">
+<a href="/docs/docs/">Documentation</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/docs/what-does-it-mean-2-render/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/bash/">Bash Commands That Save Me Time and Frustration</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/appendix/">Apendix</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/await-keyword/">Await </a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/git-reference/">Git Reference</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/data-structures-docs/">Data Structures Docs</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/git-repos/">Git Repo List</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/markdown/">Markdown</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/regex-in-js/">Regular Expressions</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/sitemap/">Sitemap</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/css/">Learn Css</a>
+</li>
+<li class="docs-menu-item current">
+<a aria-current="page" class="" href="/docs/docs/content/">Useful Snippets</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/docs/no-whiteboarding/">lorem-ipsum</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/faq/">FAQ</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/faq/plug-ins/">Plug-ins</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/faq/contact/">Contact!</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/javascript/">Javascript</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/javascript/clean-code/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/javascript/review/">Javascript Concepts Review</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/javascript/constructor-functions/">Constructor Functions</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/javascript/bigo/">A Very Quick Guide To Calculating Big O Computational Complexity</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/interact/">Interactive Examples</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/interact/callstack-visual/">Callstack Visualizer</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/interact/jupyter-notebooks/">Jupyter Notebooks</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/interact/video-chat/">Zumzi Video Conferencing (Mesibo API Backend)</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/interact/other-sites/">Other Websites</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/interact/clock/">Clock</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/medium/">Medium</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/medium/my-websites/">My Sites</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/medium/medium-links/">Medium</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/quick-reference/">Quick Reference</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/how-2-reinstall-npm/">How To Reinstall NPM and Node.js On Your System</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/git-bash/">Git Bash</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/awesome-static/">Awesome Static Site Resources</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/markdown-dropdowns/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/heroku-error-codes/">Heroku Error Codes</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/quick-links/">Quick Links</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/psql/">Postgresql Cheat Sheet</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/psql-setup/">PostgreSQL Setup</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/pull-request-rubric/">Pull Request Template</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/understanding-path/">Understanding PATH</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/resources/">Developer Resources</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/minifiction/">How To Minify Code For Better Web Performance </a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/topRepos/">Top Repos</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/google-firebase/">Firebase (Firebasics)</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/installation/">Installation</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/awesome-lists/">Awesome Lists</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/github-search/">Github Search</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/new-repo-instructions/">new-repo-git</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/notes-template/">Notes Template</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/vscode/">vscode</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/Emmet/">Emmet Cheat Sheet</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/create-react-app/">Getting Started W Create React App</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/quick-reference/vscode-themes/">vscode-themes</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/react/">React</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/react/cheatsheet/">React Cheat Sheets:</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/demo/">React Class Components Demo</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/jsx/">Introducing JSX</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/render-elements/">Rendering Elements With React</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/react-in-depth/">React In Depth</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/react2/">Intro To React</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/createReactApp/">npx-create-react-app</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/react/react-docs/">React Docs</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/tools/">Tools</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/tools/data-structures/">Data Structures</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/tools/dev-utilities/">General Utilities</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/tools/more-tools/">more tools</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/tools/cloudstorage/">The google cloud cheat sheet</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/tools/markdown-html/">md and html</a>
+</li>
+</ul>
+</li>
+<li class="docs-menu-item has-children">
+<a href="/docs/python/">My Python Docs</a>
+<button class="docs-submenu-toggle">
+<span class="screen-reader-text">Submenu</span>
+<span class="icon-angle-right" aria-hidden="true">
+</span>
+</button>
+<ul class="docs-submenu">
+<li class="docs-menu-item">
+<a href="/docs/python/basics/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/flow-control/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/google-sheets-api/">google-sheets-api</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/functions/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/intro-for-js-devs/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/examples/">Practice</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/python-ds/">Python General Notes</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/cheat-sheet/">Python Cheat Sheet</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/comprehensive-guide/">lorem-ipsum</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/snippets/">Python Snippets</a>
+</li>
+<li class="docs-menu-item">
+<a href="/docs/python/at-length/">Python at length</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<article class="post type-docs">
+<div class="post-inside">
+<header class="post-header">
+<h1 class="post-title line-left">Useful Snippets</h1>
+</header>
+<div class="post-content">
+<h3>A list of all of my articles to link to future posts</h3>
+<p>
+<a href="https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104" title="https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104">
+<strong>Scope, Closures &amp; Context In JavaScript</strong>
+<br/>
+<em>&quot;JavaScript&#x27;s global scope is like a public toilet. You can&#x27;t avoid going in there, but try to limit your contact with...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/scope-closures-context-in-javascript-f126f1523104">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827" title="https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827">
+<strong>Fundamental Javascript Concepts You Should Understand</strong>
+<br/>
+<em>Plain Old JS Object Lesson Concepts</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0" title="https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0">
+<strong>Mutability And Reference VS Privative Types in JavaScript</strong>
+<br/>
+<em>Mutability &amp;&amp; Primitive &amp;&amp; Reference Examples</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777" title="https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777">
+<strong>Array Callback Methods Implemented With For Loops</strong>
+<br/>
+<em>How to implement array callback methods in JavaScript</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/" title="https://javascript.plainenglish.io">
+<strong>JavaScript in Plain English</strong>
+<br/>
+<em>New JavaScript and Web Development articles every day.</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186" title="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186">
+<strong>Beginner&#x27;s Guide To React Part 2</strong>
+<br/>
+<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3" title="https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3">
+<strong>A Very Quick Guide To Calculating Big O Computational Complexity</strong>
+<br/>
+<em>Big O: big picture, broad strokes, not details</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" title="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad">
+<strong>Introduction to React for Complete Beginners</strong>
+<br/>
+<em>All of the code examples below will be included a second time at the bottom of this article as an embedded gist.</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" title="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7">
+<strong>Scheduling: setTimeout and setInterval</strong>
+<br/>
+<em>We may decide to execute a function not right now, but at a later time. That&#x27;s called &quot;scheduling a call&quot;.</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/css-animations-d196a20099a5" title="https://bryanguner.medium.com/css-animations-d196a20099a5">
+<strong>LocalStorage VS SessionStorage</strong>
+<br/>
+<em>Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/css-animations-d196a20099a5">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" title="https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b">
+<strong>These Are The Bash Shell Commands That Stand Between Me And Insanity.</strong>
+<br/>
+<em>I will not profess to be a bash shell wizard... but I have managed to scour some pretty helpful little scripts from Stack...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" title="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07">
+<strong>How To Implement Native(ES6) Data Structures Using Arrays &amp; Objects</strong>
+<br/>
+<em>Smart data structures and dumb code works better than the other way around -&quot;Eric S. Raymond&quot;</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/objects-in-javascript-cc578a781e1d" title="https://medium.com/codex/objects-in-javascript-cc578a781e1d">
+<strong>Objects in Javascript</strong>
+<br/>
+<em>Codepen with examples for you to practice with below!</em>medium.com</a>
+<a href="https://medium.com/codex/objects-in-javascript-cc578a781e1d">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1" title="https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1">
+<strong>The Beginner&#x27;s Guide To JavaScript</strong>
+<br/>
+<em>Part 1</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb" title="https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb">
+<strong>Web Developer Resource List Part 4</strong>
+<br/>
+<em>A all encompassing list of tools and resources for web developers</em>medium.com</a>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers" title="https://medium.com/star-gazers">
+<strong>Star Gazers</strong>
+<br/>
+<em>The place that enthusiastic and stargazer to everything.</em>medium.com</a>
+<a href="https://medium.com/star-gazers">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a" title="https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a">
+<strong>VSCode Extensions Specifically for JavaScript Development</strong>
+<br/>
+<em>VSCode Extensions that are indispensable in JavaScript development</em>medium.com</a>
+<a href="https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb" title="https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb">
+<strong>Fundamental Data Structures in JavaScript</strong>
+<br/>
+<em>A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a" title="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a">
+<strong>Web Development Resources Part 3</strong>
+<br/>
+<em>I&#x27;m the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it&#x27;s lists of...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/web-development-interview-part-3-826ae81a9107" title="https://medium.com/codex/web-development-interview-part-3-826ae81a9107">
+<strong>Web Development Interview Part 3💻</strong>
+<br/>
+<em>This installment is going to be the least technically demanding thus far however these questions are a more realistic...</em>medium.com</a>
+<a href="https://medium.com/codex/web-development-interview-part-3-826ae81a9107">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24" title="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24">
+<strong>The Best Cloud-Based Code Playgrounds of 2021 (Part 1)</strong>
+<br/>
+<em>A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443">
+<strong>Front End Interview Questions Part 2</strong>
+<br/>
+<em>These will focus more on vocabulary and concepts than the application driven approach in my last post!</em>medium.com</a>
+<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263" title="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263">
+<strong>Web Developer Resource List Part 2</strong>
+<br/>
+<em>Because I compile these things compulsively anyway...</em>medium.com</a>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a" title="https://levelup.gitconnected.com/http-basics-8f02a96a834a">
+<strong>HTTP Basics</strong>
+<br/>
+<em>&quot;If you want to build a ship, don&#x27;t drum up the men and women to gather wood, divide the work, and give orders...</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35" title="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35">
+<strong>JavaScript Frameworks &amp; Libraries</strong>
+<br/>
+<em>My Awesome JavaScript List Part 2</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74" title="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74">
+<strong>My &#x27;awesome&#x27; list of JavaScript resources</strong>
+<br/>
+<em>Everyone&#x27;s seen the &#x27;Awesome&#x27; lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931" title="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931">
+<strong>Everything You Need to Get Started With VSCode + Extensions &amp; Resources</strong>
+<br/>
+<em>Commands:</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f" title="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f">
+<strong>My Favorite VSCode <em>Themes</em>
+</strong>
+<br/>
+Themeslevelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333" title="https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333">
+<strong>Object Oriented Programming in JavaScript</strong>
+<br/>
+<em>Object-Oriented Programming</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1" title="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1">
+<strong>JavaScript Rotate (Array) ProblemWalkthrough</strong>
+<br/>
+<em>Explanation for Rotate Right</em>medium.com</a>
+<a href="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/" title="https://bryanguner.medium.com/">
+<strong>Bryan Guner - Medium</strong>
+<br/>
+<em>A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31" title="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31">
+<strong>Postgresql Cheat Sheet</strong>
+<br/>
+<em>PostgreSQL commands</em>medium.com</a>
+<a href="https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931" title="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931">
+<strong>Everything You Need to Get Started With VSCode + Extensions &amp; Resources</strong>
+<br/>
+<em>Commands:</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc" title="https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc">
+<strong>Super Simple Intro To HTML</strong>
+<br/>
+<em>What is HTML, CSS &amp; JS and why do we need all three?</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107">
+<strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong>
+<br/>
+<em>Basic Git Work Flow.</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" title="https://bryanguner.medium.com/git-tricks-57e8d0292285">
+<strong>Git-Tricks</strong>
+<br/>
+<em>Refs</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" title="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522">
+<strong>A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</strong>
+<br/>
+<em>Curating Complexity: A Guide to Big-O Notation</em>medium.com</a>
+<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb">
+<strong>Python Study Guide for a JavaScript Programmer</strong>
+<br/>
+<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb" title="https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb">
+<strong>Lists Stacks and Queue&#x27;s In JavaScript</strong>
+<br/>
+<em>A simple to follow guide to these fundamental data structures with animated gifs, diagrams, and code examples!</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/lists-stacks-and-queues-in-javascript-88466fae0fbb">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a" title="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a">
+<strong>Web Development Resources Part 3</strong>
+<br/>
+<em>I&#x27;m the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it&#x27;s lists of...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74" title="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74">
+<strong>My &#x27;awesome&#x27; list of JavaScript resources</strong>
+<br/>
+<em>Everyone&#x27;s seen the &#x27;Awesome&#x27; lists on GitHub... and they are indeed awesome... so today I am going to attempt to curate my...</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263" title="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263">
+<strong>Web Developer Resource List Part 2</strong>
+<br/>
+<em>Because I compile these things compulsively anyway...</em>medium.com</a>
+<a href="https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107" title="https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107">
+<strong>Web Development Interview Part 3💻</strong>
+<br/>
+<em>This installment is going to be the least technically demanding thus far however these questions are a more realistic...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107">
+</a>
+</p>
+<p>
+<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822">
+<strong>The Web Developer&#x27;s Technical Interview</strong>
+<br/>
+<em>Questions....Answers... and links to the missing pieces.</em>medium.com</a>
+<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443">
+<strong>Front End Interview Questions Part 2</strong>
+<br/>
+<em>These will focus more on vocabulary and concepts than the application driven approach in my last post!</em>medium.com</a>
+<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6" title="https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6">
+<strong>Running List Of Interesting Articles, Tools and Ideas... as I Explore Them</strong>
+<br/>
+<em>Translation if you read this today (3/21/2021) it will be exceedingly short... because it&#x27;s just gonna accumulate entries...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24" title="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24">
+<strong>The Best Cloud-Based Code Playgrounds of 2021 (Part 1)</strong>
+<br/>
+<em>A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4" title="https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4">
+<strong>Fundamental Data Structures In JavaScript</strong>
+<br/>
+<em>Data structures in JavaScript</em>medium.com</a>
+<a href="https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a" title="https://levelup.gitconnected.com/http-basics-8f02a96a834a">
+<strong>HTTP Basics</strong>
+<br/>
+<em>&quot;If you want to build a ship, don&#x27;t drum up the men and women to gather wood, divide the work, and give orders...</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35" title="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35">
+<strong>JavaScript Frameworks &amp; Libraries</strong>
+<br/>
+<em>My Awesome JavaScript List Part 2</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35">
+</a>
+</p>
+<p>
+<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" title="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s">
+<strong>bgoonz/Cumulative-Resource-List</strong>
+<br/>
+<em>List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...</em>github.com</a>
+<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f" title="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f">
+<strong>My Favorite VSCode <em>Themes</em>
+</strong>
+<br/>
+Themeslevelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1" title="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1">
+<strong>JavaScript Rotate (Array) ProblemWalkthrough</strong>
+<br/>
+<em>Explanation for Rotate Right</em>medium.com</a>
+<a href="https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98" title="https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98">
+<strong>Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...</strong>
+<br/>
+<em>For Front end developers who like myself struggle with making the jump to fullstack.</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db" title="https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db">
+<strong>The Complete JavaScript Reference Guide</strong>
+<br/>
+<em>You will want to bookmark this</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db">
+</a>
+</p>
+<p>
+<a href="https://medium.com/geekculture/modules-in-javascript-a55333e35978" title="https://medium.com/geekculture/modules-in-javascript-a55333e35978">
+<strong>Modules in Javascript</strong>
+<br/>
+<em>Differences between Node.js and browsers</em>medium.com</a>
+<a href="https://medium.com/geekculture/modules-in-javascript-a55333e35978">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3" title="https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3">
+<strong>An Introduction to Markdown (Bonus Markdown Templates Included)</strong>
+<br/>
+<em>Basic Syntax Guide</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d" title="https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d">
+<strong>Web Dev Resources</strong>
+<br/>
+<em>Web Development</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d">
+</a>
+</p>
+<p>
+<a href="https://medium.com/codex/regular-expressions-4d8fb3eb146b" title="https://medium.com/codex/regular-expressions-4d8fb3eb146b">
+<strong>Regular Expressions</strong>
+<br/>
+<em>description:</em>medium.com</a>
+<a href="https://medium.com/codex/regular-expressions-4d8fb3eb146b">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab" title="https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab">
+<strong>A Collection of my most useful Gist Entries</strong>
+<br/>
+<em>This list is in no particular order!</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a" title="https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a">
+<strong>VsCode Extension Readme Compilation</strong>
+<br/>
+<em>Markdown PDF</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/vscode-extension-readme-compilation-92c60342cc8a">
+</a>
+</p>
+<p>
+<a href="https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a" title="https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a">
+<strong>Learn CSS So That Your Site Doesn&#x27;t Look Like Garbage</strong>
+<br/>
+<em>CSS Selectors</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089">
+<strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong>
+<br/>
+<em>If you follow this guide to a tee... you will install PostgreSQL itself on your Windows installation. Then, you will...</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37" title="https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37">
+<strong>Emmet Cheat Sheet</strong>
+<br/>
+<em>EMMET</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca" title="https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca">
+<strong>Express Quick Sheet</strong>
+<br/>
+<em>Settings</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986" title="https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986">
+<strong>Deploy React App To Heroku Using Postgres &amp; Express</strong>
+<br/>
+<em>Heroku is an web application that makes deploying applications easy for a beginner.</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986">
+</a>
+</p>
+<p>
+<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" title="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe">
+<strong>Basic Web Development Environment Setup</strong>
+<br/>
+<em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe">
+</a>
+</p>
+<p>
+<a href="https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4" title="https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4">
+<strong>
+<em>Fetch</em> Quick Sheet</strong>
+<br/>
+Fetchbryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4">
+</a>
+</p>
+<p>By <a href="https://medium.com/@bryanguner">Bryan Guner</a> on <a href="https://medium.com/p/1f6f88ebdf5b">March 22, 2021</a>.</p>
+<p>
+<a href="https://medium.com/@bryanguner/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b">Canonical link</a>
+</p>
+<p>Exported from <a href="https://medium.com/">Medium</a> on July 13, 2021.</p>
+<p>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-list-of-my-articles.md">view raw</a>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-list-of-my-articles-md">A-list-of-my-articles.md</a> hosted with ❤ by <a href="https://github.com/">GitHub</a>
+</p>
+<h1>A Very Quick Guide To Calculating Big O Computational Complexity</h1>
+<p>Big O: big picture, broad strokes, not details</p>
+<hr/>
+<h3>A Very Quick Guide To Calculating Big O Computational Complexity</h3>
+<p>
+<strong>Big O</strong>: big picture, broad strokes, not details</p>
+<p>For a more complete guide... checkout :</p>
+<p>
+<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" title="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522">
+<strong>A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</strong>
+<br/>
+<em>Curating Complexity: A Guide to Big-O Notation</em>medium.com</a>
+<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522">
+</a>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67">
+<img src="https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67"/>
+</a>
+</p>
+<p>- way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given <code>n</code> inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of <code>3x^2 +x + 1</code> = <code>O(n^2)</code>
+</p>
+<h3>Time Complexity</h3>
+<p>no loops or exit &amp; return = O(1)</p>
+<p>0 nested loops = <code>O(n)</code>
+<br/>
+1 nested loops = <code>O(n^2)</code>
+<br/>
+2 nested loops = <code>O(n^3)</code>
+<br/>
+3 nested loops = <code>O(n^4)</code>
+</p>
+<p>
+<strong>recursive</strong>: as you add more terms, increase in time as you add input diminishes<br/>
+<strong>recursion</strong>: when you define something in terms of itself, a function that calls itself</p>
+<ul>
+<li>used because of ability to maintain state at diffferent levels of recursion</li>
+<li>inherently carries large footprint</li>
+<li>every time function called, you add call to stack</li>
+</ul>
+<p>
+<strong>iterative</strong>: use loops instead of recursion (preferred)</p>
+<ul>
+<li>favor readability over performance</li>
+</ul>
+<p>
+<code>O(n log(n))</code> &amp; <code>O(log(n))</code>: dividing/halving</p>
+<ul>
+<li>if code employs recursion/divide-and-conquer strategy</li>
+<li>what power do i need to power my base to get n</li>
+</ul>
+<h3>Time Definitions</h3>
+<ul>
+<li>
+<strong>constant</strong>: does not scale with input, will take same amount of time</li>
+<li>for any input size n, constant time performs same number of operations every time</li>
+<li>
+<strong>logarithmic</strong>: increases number of operations it performs as logarithmic function of input size n</li>
+<li>function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn&#x27;t increase very much</li>
+<li>halving</li>
+<li>
+<strong>linear</strong>: increases number of operations it performs as linear function of input size n</li>
+<li>number of additional operations needed to perform grows in direct proportion to increase in input size n</li>
+<li>
+<strong>log-linear</strong>: increases number of operations it performs as log-linear function of input size n</li>
+<li>looking over every element and doing work on each one</li>
+<li>
+<strong>quadratic</strong>: increases number of operations it performs as quadratic function of input size n</li>
+<li>
+<strong>exponential</strong>: increases number of operations it performs as exponential function of input size n</li>
+<li>number of nested loops increases as function of n</li>
+<li>
+<strong>polynomial</strong>: as size of input increases, runtime/space used will grow at a faster rate</li>
+<li>
+<strong>factorial</strong>: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs</li>
+<li>
+<strong>rate of growth</strong>: how fast a function grows with input size</li>
+</ul>
+<p>
+<a href="https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67">
+<img src="https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67"/>
+</a>
+</p>
+<h3>Space Complexity</h3>
+<ul>
+<li>How does the space usage scale/change as input gets very large?</li>
+<li>What auxiliary space does your algorithm use or is it in place (constant)?</li>
+<li>Runtime stack space counts as part of space complexity unless told otherwise.</li>
+</ul>
+<h3>Sorting Algorithms</h3>
+<p>
+<a href="https://camo.githubusercontent.com/3b0a3eba225e72bbd6f86cb081b8696137f089fcda73495a5a07645fb05f150e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a4868586d4732634e64673879345a43435147547975512e706e67">
+<img src="https://camo.githubusercontent.com/3b0a3eba225e72bbd6f86cb081b8696137f089fcda73495a5a07645fb05f150e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a4868586d4732634e64673879345a43435147547975512e706e67"/>
+</a>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/abfb2575e02cdc2fd9e9a4f1742e317c864f4fe15e584a980948ae5319680c42/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a554c6558785643446b4637334777687378794d5f32672e706e67">
+<img src="https://camo.githubusercontent.com/abfb2575e02cdc2fd9e9a4f1742e317c864f4fe15e584a980948ae5319680c42/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a554c6558785643446b4637334777687378794d5f32672e706e67"/>
+</a>
+</p>
+<h3>Data Structures</h3>
+<p>
+<a href="https://camo.githubusercontent.com/a5aa2e2f1b4f1e079dbec74d0c22a1527c41b79b05c5aa78082368c952632cb3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a686b5a576c556746794f53614c443555736b763074512e706e67">
+<img src="https://camo.githubusercontent.com/a5aa2e2f1b4f1e079dbec74d0c22a1527c41b79b05c5aa78082368c952632cb3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a686b5a576c556746794f53614c443555736b763074512e706e67"/>
+</a>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/dd60451585672884f84cc3381ab7ace9b426c0f462e69ce4ebf80028d9969558/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f323536302f312a434f6a7a756e6a302d46734d4a30643776375a2d36672e706e67">
+<img src="https://camo.githubusercontent.com/dd60451585672884f84cc3381ab7ace9b426c0f462e69ce4ebf80028d9969558/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f323536302f312a434f6a7a756e6a302d46734d4a30643776375a2d36672e706e67"/>
+</a>
+</p>
+<p>For similar content check out my GitHub:</p>
+<p>
+<a href="https://github.com/bgoonz" title="https://github.com/bgoonz">
+<strong>bgoonz - Overview</strong>
+<br/>
+_Web Developer, Electrical Engineer _</a>
+<em>
+<a href="https://bryanguner.medium.com/">https://bryanguner.medium.com/</a> <a href="https://portfolio42.netlify.app/%E2%80%A6">https://portfolio42.netlify.app/...</a>
+</em>github.com<a href="https://github.com/bgoonz">
+</a>
+</p>
+<p>By <a href="https://medium.com/@bryanguner">Bryan Guner</a> on <a href="https://medium.com/p/eb1557e85fa3">May 19, 2021</a>.</p>
+<p>
+<a href="https://medium.com/@bryanguner/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3">Canonical link</a>
+</p>
+<p>Exported from <a href="https://medium.com/">Medium</a> on July 13, 2021.</p>
+<p>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-Very-Qui.md">view raw</a>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-very-qui-md">A-Very-Qui.md</a> hosted with ❤ by <a href="https://github.com/">GitHub</a>
+</p>
+<h1>Array Callback Methods Implemented With For Loops</h1>
+<p>How to implement array callback methods in JavaScript</p>
+<hr/>
+<h3>Array Callback Methods Implemented With For Loops</h3>
+<h4>How to implement array callback methods in JavaScript</h4>
+<p>
+<a href="https://camo.githubusercontent.com/66698fc55382cdcada06a280bbd01030f2d8b3a1f6590aa4b380086ac26537b3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57704b714f6454735450687661707557">
+<img src="https://camo.githubusercontent.com/66698fc55382cdcada06a280bbd01030f2d8b3a1f6590aa4b380086ac26537b3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57704b714f6454735450687661707557"/>
+</a>
+</p>
+<h4>Functions are called &quot;First Class Objects&quot; in JavaScript because:</h4>
+<ul>
+<li>A function is an instance of the Object type</li>
+<li>A function can have properties and has a link back to its constructor method</li>
+<li>You can store the function in a variable</li>
+<li>You can pass the function as a parameter to another function</li>
+<li>You can return the function from a function</li>
+</ul>
+<p>What do you think will be printed in the following:</p>
+<h4>Anonymous callback, a named callback</h4>
+<pre>
+<code>function foo(callback) {
+    console.log(&#x27;grape&#x27;);
+    callback();
+}
+
+function bar() {
+    console.log(&#x27;banana&#x27;);
+}
+
+const fruitBasket = function() {
+    console.log(&#x27;apple&#x27;);
+    bar();
+    foo(bar);
+    foo(function() {
+        console.log(&#x27;orange&#x27;);
+    });
+    console.log(&#x27;pear&#x27;);
+};
+
+fruitBasket();
+</code>
+</pre>
+<h4>Function that takes in a value and two callbacks. The function should return the result of the callback who&#x27;s invocation results in a larger value.</h4>
+<pre>
+<code>function greaterValue(value, cb1, cb2) {
+    // compare cb1 invoked with value to cb2 invoked with value
+    // return the greater result
+
+    let res1 = cb1(value);
+    let res2 = cb2(value);
+    if (res1 &gt; res2) {
+        // if this is false, we move out of if statement
+        return res1;
+    }
+    return res2;
+}
+
+let negate = function(num) {
+    return num * -1;
+};
+
+let addOne = function(num) {
+    return num + 1;
+};
+
+console.log(greaterValue(3, negate, addOne));
+console.log(greaterValue(-2, negate, addOne));
+</code>
+</pre>
+<p>
+<em>Note: we do not invoke</em> <code>negate</code> <em>or</em> <code>addOne</code> <em>(by using</em> <code>()</code> <em>to call them), we are passing the function itself.</em>
+</p>
+<h4>Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.</h4>
+<pre>
+<code>function myMap(arr, callback) {
+    // iterate through the array, perform the cb on each element
+    // return a new array with those new values
+    let mapped = [];
+
+    for (let i = 0; i &lt; arr.length; i++) {
+        // remember that map passes three args with each element.
+        let val = callback(arr[i], i, arr);
+        mapped.push(val);
+    }
+
+    return mapped;
+}
+
+let double = function(num) {
+    return num * 2;
+};
+console.log(myMap([1, 2, 3], double));
+</code>
+</pre>
+<h4>Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.</h4>
+<pre>
+<code>function myFilter(arr, callback) {
+    let filtered = [];
+
+    for (let i = 0; i &lt; arr.length; i++) {
+        let element = arr[i];
+
+        if (callback(element, i, arr)) {
+            filtered.push(element);
+        }
+    }
+
+    return filtered;
+}
+</code>
+</pre>
+<h4>Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.</h4>
+<pre>
+<code>function myEvery(arr, callback) {
+    for (let i = 0; i &lt; arr.length; i++) {
+        let element = arr[i];
+
+        if (callback(element, i, arr) === false) {
+            return false;
+        }
+    }
+    return true;
+}
+</code>
+</pre>
+<h3>Further Examples of the above concepts</h3>
+<pre>
+<code>const createMeowValue = () =&gt; {
+  console.log(this.name);
+  let meow = function () {
+    console.log(this);
+    console.log(this.name + &#x27; meows&#x27;);
+  }
+  meow = meow.bind(this);
+  return meow;
+};
+
+const name = &#x27;Fluffy&#x27;;
+
+const cat = {
+  name: name,
+  age: 12,
+  createMeow: function () {
+    console.log(this.name);
+    let meow = () =&gt; {
+      const hello = &#x27;hello&#x27;;
+      console.log(this.name + &#x27; meows&#x27;);
+    };
+    let world = &#x27;&#x27;;
+    if (true) {
+      world = &#x27;world&#x27;;
+    }
+    console.log(world);
+    // meow = meow.bind(this);
+    return meow;
+  }
+};
+
+cat.newKey = function () {
+  const outermostContext = this;
+  const innerFunc = () =&gt; {
+    secondContext = this;
+    console.log(secondContext === outermostContext)
+    return function () {
+      innermostContext = this;
+    }
+  };
+  return innerFunc.bind(outermostContext);
+};
+
+const meow = cat.createMeow(); // method-style invocation
+meow(); // function-style invocation
+
+console.log(&#x27;-------&#x27;)
+
+const createMeow = cat.createMeow;
+const globalMeow = createMeow(); // function-style
+globalMeow(); // function-style
+
+function createSmoothie(ingredient) {
+  const ingredients = [ingredient];
+  return ingredients;
+}
+
+// console.log(createSmoothie(&#x27;banana&#x27;));
+// console.log(createSmoothie(&#x27;apple&#x27;));
+
+// one parameter only
+// first argument is a string
+// return an array
+// DO NOT USE forEach
+</code>
+</pre>
+<p>References:</p>
+<p>
+<a href="https://open.appacademy.io/learn" title="https://open.appacademy.io/learn">
+<strong>App Academy Open</strong>
+<br/>
+<em>App Academy Open is the first free, online web development course that&#x27;s meant to get you hired as a developer. Get...</em>open.appacademy.io</a>
+<a href="https://open.appacademy.io/learn">
+</a>
+</p>
+<p>
+<a href="https://developer.mozilla.org/en-US/" title="https://developer.mozilla.org/en-US/">
+<strong>MDN Web Docs</strong>
+<br/>
+<em>Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on...</em>developer.mozilla.org</a>
+<a href="https://developer.mozilla.org/en-US/">
+</a>
+</p>
+<p>
+<a href="https://javascript.info/callbacks" title="https://javascript.info/callbacks">
+<strong>Introduction: callbacks</strong>
+<br/>
+<em>To demonstrate the use of callbacks, promises and other abstract concepts, we&#x27;ll be using some browser methods...</em>javascript.info</a>
+<a href="https://javascript.info/callbacks">
+</a>
+</p>
+<p>
+<em>More content at</em> <a href="http://plainenglish.io/">
+<strong>
+<em>plainenglish.io</em>
+</strong>
+</a>
+</p>
+<p>By <a href="https://medium.com/@bryanguner">Bryan Guner</a> on <a href="https://medium.com/p/d08875df6777">May 27, 2021</a>.</p>
+<p>
+<a href="https://medium.com/@bryanguner/array-callback-methods-implemented-with-for-loops-d08875df6777">Canonical link</a>
+</p>
+<p>Exported from <a href="https://medium.com/">Medium</a> on July 13, 2021.</p>
+<p>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Array-Call.md">view raw</a>
+<a href="https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-array-call-md">Array-Call.md</a> hosted with ❤ by <a href="https://github.com/">GitHub</a>
+</p>
+<h1>Bash Commands That Save Me Time and Frustration</h1>
+<p>Here&#x27;s a list of bash commands that stand between me and insanity.</p>
+<hr/>
+<h3>Bash Commands That Save Me Time and Frustration</h3>
+<h4>Here&#x27;s a list of bash commands that stand between me and insanity.</h4>
+<p>
+<a href="https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067">
+<img src="https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067"/>
+</a>
+</p>
+<p>
+<strong>This article will be accompanied by the following</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough">
+<strong>github repository</strong>
+</a> <strong>which will contain all the commands listed as well as folders that demonstrate before and after usage!</strong>
+</p>
+<p>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough" title="https://github.com/bgoonz/bash-commands-walkthrough">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br/>
+<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough">
+</a>
+</p>
+<blockquote>
+<p>The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme">readme</a> for this git repo will provide a much more condensed list... whereas this article will break up the commands with explanations... images &amp; links!</p>
+</blockquote>
+<p>
+<strong>I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted... or ... if you&#x27;re like me for instance; and like to use an extension to grab the markdown content of a page... the code will be included rather than just a link to the gist!</strong>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966">
+<img src="https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966"/>
+</a>
+</p>
+<h3>Here&#x27;s a Cheatsheet:</h3>
+<h3>Getting Started (Advanced Users Skip Section):</h3>
+<hr/>
+<h4>✔ Check the Current Directory ➡ <code>pwd</code>:</h4>
+<p>On the command line, it&#x27;s important to know the directory we are currently working on. For that, we can use <code>pwd</code> command.</p>
+<p>
+<a href="https://camo.githubusercontent.com/ede56713024434b9c0c8008f54475a7f4fcdcd15427580cbc504793e43a15b6d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a64696d7a4c55726d44493455666576362e676966">
+<img src="https://camo.githubusercontent.com/ede56713024434b9c0c8008f54475a7f4fcdcd15427580cbc504793e43a15b6d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a64696d7a4c55726d44493455666576362e676966"/>
+</a>
+</p>
+<p>It shows that I&#x27;m working on my Desktop directory.</p>
+<h4>✔ Display List of Files ➡ <code>ls</code>:</h4>
+<p>To see the list of files and directories in the current directory use <code>ls</code> command in your CLI.</p>
+<p>
+<a href="https://camo.githubusercontent.com/e9cfe3bfa6f8d2ff3cc9f7959a7896facb58708e7e707d012ad989edb589b6ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48487a56724b324374545077546459542e676966">
+<img src="https://camo.githubusercontent.com/e9cfe3bfa6f8d2ff3cc9f7959a7896facb58708e7e707d012ad989edb589b6ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48487a56724b324374545077546459542e676966"/>
+</a>
+</p>
+<p>Shows all of my files and directories of my Desktop directory.</p>
+<ul>
+<li>To show the contents of a directory pass the directory name to the <code>ls</code> command i.e. <code>ls directory_name</code>.</li>
+<li>Some useful <code>ls</code> command options:-</li>
+</ul>
+<p>OptionDescriptionls -alist all files including hidden file starting with &#x27;.&#x27;ls -llist with the long formatls -lalist long format including hidden files</p>
+<h4>✔ Create a Directory ➡ <code>mkdir</code>:</h4>
+<p>We can create a new folder using the <code>mkdir</code> command. To use it type <code>mkdir folder_name</code>.</p>
+<p>
+<a href="https://camo.githubusercontent.com/8c10a898b8f52be59dc0723ab2dd0784c22c12a325ffe5cc64a38f07341ef90e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d33644479433976524a42555a5378522e676966">
+<img src="https://camo.githubusercontent.com/8c10a898b8f52be59dc0723ab2dd0784c22c12a325ffe5cc64a38f07341ef90e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d33644479433976524a42555a5378522e676966"/>
+</a>
+</p>
+<p>Use <code>ls</code> command to see the directory is created or not.</p>
+<p>I created a cli-practice directory in my working directory i.e. Desktop directory.</p>
+<h4>✔ Move Between Directories ➡ <code>cd</code>:</h4>
+<p>It&#x27;s used to change directory or to move other directories. To use it type <code>cd directory_name</code>.</p>
+<p>
+<a href="https://camo.githubusercontent.com/d78e325dda59d59be4bd151dd85d3b1966324cb205da2eb540f1372e8195b280/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33344b4778543247386f4e4d446e49632e676966">
+<img src="https://camo.githubusercontent.com/d78e325dda59d59be4bd151dd85d3b1966324cb205da2eb540f1372e8195b280/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33344b4778543247386f4e4d446e49632e676966"/>
+</a>
+</p>
+<p>Can use <code>pwd</code> command to confirm your directory name.</p>
+<p>Changed my directory to the cli-practice directory. And the rest of the tutorial I&#x27;m gonna work within this directory.</p>
+<h4>✔ Parent Directory ➡ <code>..</code>:</h4>
+<p>We have seen <code>cd</code> command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol <code>..</code> after <code>cd</code> command, like <code>cd ..</code>
+</p>
+<h4>✔ Create Files ➡ <code>touch</code>:</h4>
+<p>We can create an empty file by typing <code>touch file_name</code>. It&#x27;s going to create a new file in the current directory (the directory you are currently in) with your provided name.</p>
+<p>
+<a href="https://camo.githubusercontent.com/97e82f91cb8cfcf342cf97e8b572b49d1bc264cbe9929c7e23d0f72589d6708d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a78753177747637674a324e4d765036302e676966">
+<img src="https://camo.githubusercontent.com/97e82f91cb8cfcf342cf97e8b572b49d1bc264cbe9929c7e23d0f72589d6708d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a78753177747637674a324e4d765036302e676966"/>
+</a>
+</p>
+<p>I created a hello.txt file in my current working directory. Again you can use <code>ls</code> command to see the file is created or not.</p>
+<p>Now open your hello.txt file in your text editor and write <em>Hello Everyone!</em> into your hello.txt file and save it.</p>
+<h4>✔ Display the Content of a File ➡ <code>cat</code>:</h4>
+<p>We can display the content of a file using the <code>cat</code> command. To use it type <code>cat file_name</code>.</p>
+<p>
+<a href="https://camo.githubusercontent.com/ffe71e48a1a9bd9b118265c18a81e0b49a515cf40453416134dfca52567bb82c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a694b6635773951464e43654c527638612e676966">
+<img src="https://camo.githubusercontent.com/ffe71e48a1a9bd9b118265c18a81e0b49a515cf40453416134dfca52567bb82c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a694b6635773951464e43654c527638612e676966"/>
+</a>
+</p>
+<p>Shows the content of my hello.txt file.</p>
+<h4>✔ Move Files &amp; Directories ➡ <code>mv</code>:</h4>
+<p>To move a file and directory, we use <code>mv</code> command.</p>
+<p>By typing <code>mv file_to_move destination_directory</code>, you can move a file to the specified directory.</p>
+<p>By entering <code>mv directory_to_move destination_directory</code>, you can move all the files and directories under that directory.</p>
+<p>Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.</p>
+<p>
+<code>mkdir html css touch bye.txt</code>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/7197994733b63ae597fb12ba8c29509ed3c714f274d4e51542c64a942c069336/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a70696141517a5f4d51707a6f374450482e676966">
+<img src="https://camo.githubusercontent.com/7197994733b63ae597fb12ba8c29509ed3c714f274d4e51542c64a942c069336/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a70696141517a5f4d51707a6f374450482e676966"/>
+</a>
+</p>
+<p>Yes, we can use multiple directories &amp; files names one after another to create multiple directories &amp; files in one command.</p>
+<p>
+<a href="https://camo.githubusercontent.com/5db5a79472f5bffa91c5bfd8c892437523b68072d930c7b4334c8b622ecb55de/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356a6d6a5f5a794e7a34364775514b7a2e676966">
+<img src="https://camo.githubusercontent.com/5db5a79472f5bffa91c5bfd8c892437523b68072d930c7b4334c8b622ecb55de/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356a6d6a5f5a794e7a34364775514b7a2e676966"/>
+</a>
+</p>
+<p>Moved my bye.txt file into my css directory and then moved my css directory into my html directory.</p>
+<h4>✔ Rename Files &amp; Directories ➡ <code>mv</code>:</h4>
+<p>
+<code>mv</code> command can also be used to rename a file and a directory.</p>
+<p>You can rename a file by typing <code>mv old_file_name new_file_name</code> &amp; also rename a directory by typing <code>mv old_directory_name new_directory_name</code>.</p>
+<p>
+<a href="https://camo.githubusercontent.com/3feb1289a79b907796c1d736e119730dc3d2dbcd60c6ba072ee226cc8cb69b75/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a575456753164643667722d6e6d5768442e676966">
+<img src="https://camo.githubusercontent.com/3feb1289a79b907796c1d736e119730dc3d2dbcd60c6ba072ee226cc8cb69b75/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a575456753164643667722d6e6d5768442e676966"/>
+</a>
+</p>
+<p>Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.</p>
+<h4>✔ Copy Files &amp; Directories ➡ <code>cp</code>:</h4>
+<p>To do this, we use the <code>cp</code> command.</p>
+<ul>
+<li>You can copy a file by entering <code>cp file_to_copy new_file_name</code>.</li>
+</ul>
+<p>
+<a href="https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966">
+<img src="https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966"/>
+</a>
+</p>
+<p>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.</p>
+<ul>
+<li>You can also copy a directory by adding the <code>-r</code> option, like <code>cp -r directory_to_copy new_directory_name</code>.</li>
+</ul>
+<p>
+<em>The</em> <code>-r</code> <em>option for &quot;recursive&quot; means that it will copy all of the files including the files inside of subfolders.</em>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966">
+<img src="https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966"/>
+</a>
+</p>
+<p>Here I copied all of the files from the folder to folder-copy.</p>
+<h4>✔ Remove Files &amp; Directories ➡ <code>rm</code>:</h4>
+<p>To do this, we use the <code>rm</code> command.</p>
+<ul>
+<li>To remove a file, you can use the command like <code>rm file_to_remove</code>.</li>
+</ul>
+<p>
+<a href="https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966">
+<img src="https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966"/>
+</a>
+</p>
+<p>Here I removed my hi.txt file.</p>
+<ul>
+<li>To remove a directory, use the command like <code>rm -r directory_to_remove</code>.</li>
+</ul>
+<p>
+<a href="https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966">
+<img src="https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966"/>
+</a>
+</p>
+<p>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.</p>
+<h4>✔ Clear Screen ➡ <code>clear</code>:</h4>
+<p>Clear command is used to clear the terminal screen.</p>
+<h4>✔ Home Directory ➡ <code>~</code>:</h4>
+<p>The Home directory is represented by <code>~</code>. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use <code>cd ~</code> command. Or we can only use <code>cd</code> command.</p>
+<hr/>
+<h3>MY COMMANDS:</h3>
+<h3>1.) Recursively unzip zip files and then delete the archives when finished:</h3>
+<p>
+<strong>here is a</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip">
+<strong>folde</strong>
+</a>
+<strong>r containing the before and after... I had to change folder names slightly due to a limit on the length of file-paths in a github repo.</strong>
+</p>
+<pre>
+<code>find . -name &quot;*.zip&quot; | while read filename; do unzip -o -d &quot;`dirname &quot;$filename&quot;`&quot; &quot;$filename&quot;; done;
+
+find . -name &quot;*.zip&quot; -type f -print -delete
+</code>
+</pre>
+<hr/>
+<h3>2.) Install node modules recursively:</h3>
+<pre>
+<code>npm i -g recursive-install
+
+npm-recursive-install
+</code>
+</pre>
+<hr/>
+<h3>3.) Clean up unnecessary files/folders in git repo:</h3>
+<pre>
+<code>find . -empty -type f -print -delete #Remove empty files
+
+# -------------------------------------------------------
+find . -empty -type d -print -delete #Remove empty folders
+
+# -------------------------------------------------------
+
+# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
+
+find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
+
+# -------------------------------------------------------
+
+# This will remove the filenames you see listed below that just take up space if a repo has been downloaded for use exclusively in your personal file system (in which case the following files just take up space)# Disclaimer... you should not use this command in a repo that you intend to use with your work as it removes files that attribute the work to their original creators!
+
+find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o -name &quot;*CHANGELOG.txt&quot; -o -name &quot;*LICENSE.txt&quot; -o -name &quot;*CONTRIBUTING.txt&quot; -name &quot;*HISTORY.md&quot; -o -name &quot;*LICENSE&quot; -o -name &quot;*SECURITY.md&quot; -o -name &quot;*RELEASE.md&quot; -o -name &quot;*CHANGELOG.md&quot; -o -name &quot;*LICENSE.md&quot; -o -name &quot;*CODE_OF_CONDUCT.md&quot; -o -name &quot;\*CONTRIBUTING.md&quot; \) -exec rm -rf -- {} +
+</code>
+</pre>
+<h4>In Action:</h4>
+<p>The following output from my bash shell corresponds to the directory:</p>
+<p>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br/>
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master">
+</a>
+</p>
+<h4>which was created by running the aforementioned commands in in a perfect copy of this directory:</h4>
+<p>
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL">
+<strong>bgoonz/DS-ALGO-OFFICIAL</strong>
+<br/>
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...</em>github.com</a>
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL">
+</a>
+</p>
+<blockquote>
+<p>
+<strong>.....below is the terminal output for the following commands:</strong>
+</p>
+</blockquote>
+<pre>
+<code>pwd
+/mnt/c/Users/bryan/Downloads/bash-commands/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master
+</code>
+</pre>
+<blockquote>
+<p>
+<strong>After printing the working directory for good measure:</strong>
+</p>
+</blockquote>
+<pre>
+<code>find . -empty -type f -print -delete
+</code>
+</pre>
+<blockquote>
+<p>
+<strong>The above command deletes empty files recursively starting from the directory in which it was run:</strong>
+</p>
+</blockquote>
+<pre>
+<code>./CONTENT/DS-n-Algos/File-System/file-utilities/node_modules/line-reader/test/data/empty_file.txt
+./CONTENT/DS-n-Algos/_Extra-Practice/free-code-camp/nodejs/http-collect.js
+./CONTENT/Resources/Comments/node_modules/mime/.npmignore
+./markdown/tree2.md
+./node_modules/loadashes6/lodash/README.md
+./node_modules/loadashes6/lodash/release.md
+./node_modules/web-dev-utils/Markdown-Templates/Markdown-Templates-master/filled-out-readme.md
+|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;
+</code>
+</pre>
+<blockquote>
+<p>
+<strong>The command seen below deletes empty folders recursively starting from the directory in which it was run:</strong>
+</p>
+</blockquote>
+<pre>
+<code>find . -empty -type d -print -delete
+</code>
+</pre>
+<blockquote>
+<p>The resulting directories....</p>
+</blockquote>
+<pre>
+<code>|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;
+
+find . -empty -type d -print -delete
+./.git/branches
+./.git/objects/info
+./.git/refs/tags
+|01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;
+</code>
+</pre>
+<blockquote>
+<p>
+<strong>The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files</strong>
+</p>
+</blockquote>
+<pre>
+<code>find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
+</code>
+</pre>
+<p>
+<strong>The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, &amp; HISTORY files that take up pointless space in repo&#x27;s you wish to keep exclusively for your own reference.</strong>
+</p>
+<h3>!!!Use with caution as this command removes the attribution of the work from it&#x27;s original authors!!!!!</h3>
+<p>
+<a href="https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455">
+<img src="https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455" alt="!!!Use with caution as this command removes the attribution of the work from it&#x27;s original authors!!!!!"/>
+</a>
+</p>
+<p>!!!Use with caution as this command removes the attribution of the work from it&#x27;s original authors!!!!!find . ( -name &quot;<em>SECURITY.txt&quot; -o -name &quot;</em>RELEASE.txt&quot; -o -name &quot;<em>CHANGELOG.txt&quot; -o -name &quot;</em>LICENSE.txt&quot; -o -name &quot;<em>CONTRIBUTING.txt&quot; -name &quot;</em>HISTORY.md&quot; -o -name &quot;<em>LICENSE&quot; -o -name &quot;</em>SECURITY.md&quot; -o -name &quot;<em>RELEASE.md&quot; -o -name &quot;</em>CHANGELOG.md&quot; -o -name &quot;<em>LICENSE.md&quot; -o -name &quot;</em>CODE<em>OF</em>CONDUCT.md&quot; -o -name &quot;*CONTRIBUTING.md&quot; ) -exec rm -rf -- {} +</p>
+<hr/>
+<h3>4.) Generate index.html file that links to all other files in working directory:</h3>
+<pre>
+<code>#!/bin/sh
+# find ./ | grep -i &quot;\.*$&quot; &gt;files
+find ./ | sed -E -e &#x27;s/([^ ]+[ ]+){8}//&#x27; | grep -i &quot;\.*$&quot;&gt;files
+listing=&quot;files&quot;
+out=&quot;&quot;
+html=&quot;index.html&quot;
+out=&quot;basename $out.html&quot;
+html=&quot;index.html&quot;
+cmd() {
+  echo &#x27;  &lt;!DOCTYPE html&gt;&#x27;
+  echo &#x27;&lt;html&gt;&#x27;
+  echo &#x27;&lt;head&gt;&#x27;
+  echo &#x27;  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;&#x27;
+  echo &#x27;  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;&#x27;
+  echo &#x27;&lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/prism.css&quot;&gt;&#x27;
+  echo &#x27; &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/style.css&quot;&gt;&#x27;
+  echo &#x27; &lt;script async defer src=&quot;./assets/prism.js&quot;&gt;&lt;/script&gt;&#x27;
+  echo &quot;  &lt;title&gt; directory &lt;/title&gt;&quot;
+  echo &quot;&quot;
+  echo &#x27;&lt;style&gt;&#x27;
+echo &#x27;    a {&#x27;
+echo &#x27;      color: black;&#x27;
+echo &#x27;    }&#x27;
+echo &#x27;&#x27;
+echo &#x27;    li {&#x27;
+echo &#x27;      border: 1px solid black !important;&#x27;
+echo &#x27;      font-size: 20px;&#x27;
+echo &#x27;      letter-spacing: 0px;&#x27;
+echo &#x27;      font-weight: 700;&#x27;
+echo &#x27;      line-height: 16px;&#x27;
+echo &#x27;      text-decoration: none !important;&#x27;
+echo &#x27;      text-transform: uppercase;&#x27;
+echo &#x27;      background: #194ccdaf !important;&#x27;
+echo &#x27;      color: black !important;&#x27;
+echo &#x27;      border: none;&#x27;
+echo &#x27;      cursor: pointer;&#x27;
+echo &#x27;      justify-content: center;&#x27;
+echo &#x27;      padding: 30px 60px;&#x27;
+echo &#x27;      height: 48px;&#x27;
+echo &#x27;      text-align: center;&#x27;
+echo &#x27;      white-space: normal;&#x27;
+echo &#x27;      border-radius: 10px;&#x27;
+echo &#x27;      min-width: 45em;&#x27;
+echo &#x27;      padding: 1.2em 1em 0;&#x27;
+echo &#x27;      box-shadow: 0 0 5px;&#x27;
+echo &#x27;      margin: 1em;&#x27;
+echo &#x27;      display: grid;&#x27;
+echo &#x27;      -webkit-border-radius: 10px;&#x27;
+echo &#x27;      -moz-border-radius: 10px;&#x27;
+echo &#x27;      -ms-border-radius: 10px;&#x27;
+echo &#x27;      -o-border-radius: 10px;&#x27;
+echo &#x27;    }&#x27;
+echo &#x27;  &lt;/style&gt;&#x27;
+  echo &#x27;&lt;/head&gt;&#x27;
+  echo &#x27;&lt;body&gt;&#x27;
+  echo &quot;&quot;
+  # continue with the HTML stuff
+  echo &quot;&quot;
+  echo &quot;&quot;
+  echo &quot;&lt;ul&gt;&quot;
+  awk &#x27;{print &quot;&lt;li&gt;&lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&quot;}&#x27; $listing
+  # awk &#x27;{print &quot;&lt;li&gt;&quot;};
+  #  {print &quot; &lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&lt;/a&gt;&lt;/li&gt;&amp;nbsp;&quot;}&#x27; \ $listing
+  echo &quot;&quot;
+  echo &quot;&lt;/ul&gt;&quot;
+  echo &quot;&lt;/body&gt;&quot;
+  echo &quot;&lt;/html&gt;&quot;
+}
+cmd $listing --sort=extension &gt;&gt;$html
+</code>
+</pre>
+<h4>In Action:</h4>
+<p>
+<strong>I will use this copy of my Data Structures Practice Site to demonstrate the result:</strong>
+</p>
+<p>
+<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" title="https://github.com/side-projects-42/DS-Bash-Examples-Deploy">
+<strong>side-projects-42/DS-Bash-Examples-Deploy</strong>
+<br/>
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...</em>github.com</a>
+<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy">
+</a>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67">
+<img src="https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67"/>
+</a>
+</p>
+<h4>The result is a index.html file that contains a list of links to each file in the directory:</h4>
+<blockquote>
+<p>here is a link to and photo of the resulting html file:</p>
+</blockquote>
+<p>
+<a href="https://quirky-meninsky-4181b5.netlify.app/" title="https://quirky-meninsky-4181b5.netlify.app/">
+<strong>index.html</strong>
+<br/>
+<em>CONTENT/DS-n-Algos/</em>quirky-meninsky-4181b5.netlify.app</a>
+<a href="https://quirky-meninsky-4181b5.netlify.app/">
+</a>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67">
+<img src="https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67"/>
+</a>
+</p>
+<hr/>
+<h3>5.) Download all links to a files of a specified extension on a user provided (url) webpage:</h3>
+<pre>
+<code>wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off
+</code>
+</pre>
+<blockquote>
+<p>The result is stored in <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf">this directory:</a>
+</p>
+</blockquote>
+<p>
+<a href="https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67">
+<img src="https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67"/>
+</a>
+</p>
+<hr/>
+<h3>6.)Recursively remove lines of text containing the string badFolder from files in the working directory.</h3>
+<pre>
+<code>find . -type f -exec sed -i &#x27;/badFolder/d&#x27; ./* {} \;
+
+# OR
+
+find . -name &#x27;result.md&#x27;  -type f -exec sed -i &#x27;/badFolder/d&#x27; ./* {} \;
+</code>
+</pre>
+<p>
+<strong>As an example I will run this command on a file containing the text:</strong>
+</p>
+<pre>
+<code>Hacks Blog
+
+Read more at hacks.mozilla.org
+
+badFolder
+
+badFolder Implementing Private Fields for JavaScript
+
+When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey-- the JavaScript engine which powers Firefox. To understand more, I&#x27;ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, June 8, 2021 by Matthew Gaudet
+
+Looking fine with Firefox 89
+
+Firefox 89 has smartened up and brings with it a slimmed-down, slightly more minimalist interface.badFolder Along with this new look, we get some great styling features including a force-colours feature for media queries and better control over how fonts are displayed. The long-awaited top-level await keyword for JavaScript modules is now enabled, as well as the PerformanceEventTiming interface, which is another addition to the performance suite of APIs: 89 really has been working out!The post Looking fine with Firefox 89 appeared first on Mozilla Hacks - the Web developer blog.
+
+badFolder
+
+Posted Tuesday, June 1, 2021 by Chris Mills
+
+badFolder
+
+Improving Firefox stability on Linux
+
+Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Wednesday, May 19, 2021 by Gabriele Svelto badFolder
+
+Introducing Firefox&#x27;s new Site Isolation Security Architecture
+
+Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox&#x27;s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, May 18, 2021 by Anny Gakhokidze
+
+Pyodide Spin Out and 0.17 Release
+
+We are happy to announce that Pyodide has become an independent and community-driven project. We are also pleased to announce the 0.17 release for Pyodide with many new features and improvements. Pyodide consists of the CPython 3.8 interpreter compiled to WebAssembly which allows Python to run in the browser.The post Pyodide Spin Out and 0.17 Release appeared first on Mozilla Hacks - the Web developer blog. badFolder
+
+Posted Thursday, April 22, 2021 by Teon Brooks
+</code>
+</pre>
+<p>
+<strong>
+<em>I modified the command slightly to apply only to files called &#x27;result.md&#x27;:</em>
+</strong>
+</p>
+<blockquote>
+<p>The result is :</p>
+</blockquote>
+<pre>
+<code>Hacks Blog
+
+Read more at hacks.mozilla.org
+
+When implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey-- the JavaScript engine which powers Firefox. To understand more, I&#x27;ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, June 8, 2021 by Matthew Gaudet
+
+Looking fine with Firefox 89
+
+Posted Tuesday, June 1, 2021 by Chris Mills
+
+Improving Firefox stability on Linux
+
+Roughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.
+
+Introducing Firefox&#x27;s new Site Isolation Security Architecture
+
+Like any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox&#x27;s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.
+
+Posted Tuesday, May 18, 2021 by Anny Gakhokidze
+
+Pyodide Spin Out and 0.17 Release
+
+Posted Thursday, April 22, 2021 by Teon Brooks
+</code>
+</pre>
+<p>
+<a href="https://camo.githubusercontent.com/4308e370c8f20afdfd06a497dcd7eb257b61b498a18c23a3c9584675b38b1a10/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a55703561732d4d6b4863486276495f715831417150772e706e67">
+<img src="https://camo.githubusercontent.com/4308e370c8f20afdfd06a497dcd7eb257b61b498a18c23a3c9584675b38b1a10/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a55703561732d4d6b4863486276495f715831417150772e706e67"/>
+</a>
+</p>
+<p>
+<strong>the test.txt and result.md files can be found here:</strong>
+</p>
+<p>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br/>
+<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text">
+</a>
+</p>
+<hr/>
+<h3>7.) Execute command recursively:</h3>
+<p>
+<strong>Here I have modified the command I wish to run recursively to account for the fact that the &#x27;find&#x27; command already works recursively, by appending the -maxdepth 1 flag...</strong>
+</p>
+<blockquote>
+<p>
+<strong>I am essentially removing the recursive action of the find command...</strong>
+</p>
+</blockquote>
+<p>
+<strong>That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the <em>find/pandoc</em> line once in every subfolder of the working directory... is working properly!</strong>
+</p>
+<p>
+<a href="https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67">
+<img src="https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67"/>
+</a>
+</p>
+<p>
+<strong>Run in the folder shown to the left... we would expect every .md file to be accompanied by a newly generated html file by the same name.</strong>
+</p>
+<p>
+<strong>The results of said operation can be found in the</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run">
+<strong>following directory</strong>
+</a>
+</p>
+<h4>In Action:</h4>
+<p>🢃 Below 🢃</p>
+<p>
+<a href="https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966">
+<img src="https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966"/>
+</a>
+</p>
+<h4>The final result is:</h4>
+<p>
+<a href="https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67">
+<img src="https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67"/>
+</a>
+</p>
+<p>
+<em>If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder.</em>
+</p>
+<pre>
+<code>function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$&#x27;\n&#x27;
+    for f in &quot;$@&quot;
+    do
+
+#Replace the line below with your own command!
+
+#find ./ -iname &quot;*.md&quot; -maxdepth 1 -type f -exec sh -c &#x27;pandoc --standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#x27; {} \;
+
+#####################################################
+# YOUR CODE BELOW!
+
+#####################################################
+
+if [[ -d &quot;${f}&quot; ]]; then
+            cd &quot;${f}&quot;
+            RecurseDirs $(ls -1 &quot;.&quot;)
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs &quot;./&quot;
+</code>
+</pre>
+<hr/>
+<h3>TBC....</h3>
+<p>
+<strong>Here are some of the other commands I will cover in greater detail... at a later time:</strong>
+</p>
+<h3>9. Copy any text between <script> tags in a file called example.html to be inserted into a new file: out.js&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sed -n -e &#x27;/&amp;#x3C;script&gt;/,/&amp;#x3C;\/script&gt;/p&#x27; example.html &gt;out.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;10. Recursively Delete node_modules folders&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;find . -name &#x27;node_modules&#x27; -type d -print -prune -exec rm -rf &#x27;{}&#x27; +
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;11. Sanatize file and folder names to remove illegal characters and reserved words.&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sanitize() {
+  shopt -s extglob;
+
+  filename=$(basename &quot;$1&quot;)
+  directory=$(dirname &quot;$1&quot;)
+
+  filename_clean=$(echo &quot;$filename&quot; | sed -e &#x27;s/[\\/:\*\?&quot;&amp;#x3C;&gt;\|\x01-\x1F\x7F]//g&#x27; -e &#x27;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#x27; -e &#x27;s/^\.*$//&#x27; -e &#x27;s/^$/NONAME/&#x27;)
+
+  if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
+  then
+    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
+  fi
+}
+
+export -f sanitize
+
+sanitize_dir() {
+  find &quot;$1&quot; -depth -exec bash -c &#x27;sanitize &quot;$0&quot;&#x27; {} \;
+
+}
+
+sanitize_dir &#x27;/path/to/somewhere&#x27;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;12. Start postgresql in terminal&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sudo -u postgres psql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;13. Add closing body and script tags to each html file in working directory.&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;for f in * ; do
+  mv &quot;$f&quot; &quot;$f.html&quot;
+doneecho &quot;&amp;#x3C;form&gt;
+ &amp;#x3C;input type=&quot;button&quot; value=&quot;Go back!&quot; onclick=&quot;history.back()&quot;&gt;
+&amp;#x3C;/form&gt;
+  &amp;#x3C;/body&gt;&amp;#x3C;/html&gt;&quot; | tee -a *.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;14. Batch Download Videos&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+link=&quot;#insert url here#&quot;
+#links were a set of strings with just the index of the video as the variable
+
+num=3
+#first video was numbered 3 - weird.
+
+ext=&quot;.mp4&quot;
+
+while [ $num -le 66 ]
+do
+      wget $link$num$ext -P ~/Downloads/
+      num=$(($num+1))
+done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;15. Change File Extension from &#x27;.txt&#x27; to .doc for all files in working directory.&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install rename
+
+rename &#x27;s/\.txt$/.doc/&#x27; *.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;16. Recursivley change any file with extension .js.download to .js&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;find . -name &quot;*.\.js\.download&quot; -exec rename &#x27;s/\.js\.download$/.js/&#x27; &#x27;{}&#x27; +
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;17. Copy folder structure including only files of a specific extension into an ouput Folder&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;find . -name &#x27;*.md&#x27; | cpio -pdm &#x27;./../outputFolder&#x27;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h3&gt;Discover More:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://bgoonz-blog.netlify.app/&quot; title=&quot;https://bgoonz-blog.netlify.app/&quot;&gt;&lt;strong&gt;Web-Dev-Hub&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...&lt;/em&gt;bgoonz-blog.netlify.app&lt;/a&gt;&lt;a href=&quot;https://bgoonz-blog.netlify.app/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Part 2 of this series:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682&quot; title=&quot;https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682&quot;&gt;&lt;strong&gt;Medium&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Continued!!!medium.com&lt;/em&gt;&lt;/a&gt;&lt;a href=&quot;https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@bryanguner&quot;&gt;Bryan Guner&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/920fb6ab9d0a&quot;&gt;June 29, 2021&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt; on July 13, 2021.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Bash-Comma.md&quot;&gt;view raw&lt;/a&gt;&lt;a href=&quot;https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-bash-comma-md&quot;&gt;Bash-Comma.md&lt;/a&gt; hosted with ❤ by &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Basic Web Development Environment Setup&lt;/h1&gt;
+&lt;p&gt;Windows Subsystem for Linux (WSL) and Ubuntu&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Basic Web Development Environment Setup&lt;/h3&gt;
+&lt;h4&gt;Windows Subsystem for Linux (WSL) and Ubuntu&lt;/h4&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://camo.githubusercontent.com/305c753492ee50b499a95b10c6a817c07821f73ff6c734b45b073b8a7aeafebd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61714b503164724e486d4e6d33347a7a2e6a7067&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/305c753492ee50b499a95b10c6a817c07821f73ff6c734b45b073b8a7aeafebd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61714b503164724e486d4e6d33347a7a2e6a7067&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Test if you have Ubuntu installed by typing &quot;Ubuntu&quot; in the search box in the bottom app bar that reads &quot;Type here to search&quot;. If you see a search result that reads &lt;strong&gt;&quot;Ubuntu 20.04 LTS&quot;&lt;/strong&gt; with &quot;App&quot; under it, then you have it installed.&lt;/p&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the application search box in the bottom bar, type &quot;PowerShell&quot; to find the application named &quot;Windows PowerShell&quot;&lt;/li&gt;
+&lt;li&gt;Right-click on &quot;Windows PowerShell&quot; and choose &quot;Run as administrator&quot; from the popup menu&lt;/li&gt;
+&lt;li&gt;In the blue PowerShell window, type the following: &lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Restart your computer&lt;/li&gt;
+&lt;li&gt;In the application search box in the bottom bar, type &quot;Store&quot; to find the application named &quot;Microsoft Store&quot;&lt;/li&gt;
+&lt;li&gt;Click &quot;Microsoft Store&quot;&lt;/li&gt;
+&lt;li&gt;Click the &quot;Search&quot; button in the upper-right corner of the window&lt;/li&gt;
+&lt;li&gt;Type in &quot;Ubuntu&quot;&lt;/li&gt;
+&lt;li&gt;Click &quot;Run Linux on Windows (Get the apps)&quot;&lt;/li&gt;
+&lt;li&gt;Click the orange tile labeled &lt;strong&gt;&quot;Ubuntu&quot;&lt;/strong&gt; Note that there are 3 versions in the Microsoft Store... you want the one just entitled &#x27;Ubuntu&#x27;&lt;/li&gt;
+&lt;li&gt;Click &quot;Install&quot;&lt;/li&gt;
+&lt;li&gt;After it downloads, click &quot;Launch&quot;&lt;/li&gt;
+&lt;li&gt;If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose &quot;Pin to taskbar&quot;&lt;/li&gt;
+&lt;li&gt;When prompted to &quot;Enter new UNIX username&quot;, type your first name with no spaces&lt;/li&gt;
+&lt;li&gt;When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)&lt;/li&gt;
+&lt;li&gt;Confirm your installation by typing the command &lt;code&gt;whoami &#x27;as in who-am-i&#x27;&lt;/code&gt;followed by Enter at the prompt (it should print your first name)&lt;/li&gt;
+&lt;li&gt;You need to update your packages, so type &lt;code&gt;sudo apt update&lt;/code&gt; (if prompted for your password, enter it)&lt;/li&gt;
+&lt;li&gt;You need to upgrade your packages, so type &lt;code&gt;sudo apt upgrade&lt;/code&gt; (if prompted for your password, enter it)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Git&lt;/h3&gt;
+&lt;p&gt;Git comes with Ubuntu, so there&#x27;s nothing to install. However, you should configure it using the following instructions.&lt;/p&gt;
+&lt;p&gt;‌Open an Ubuntu terminal if you don&#x27;t have one open already.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You need to configure Git, so type &lt;code&gt;git config --global user.name &quot;Your Name&quot;&lt;/code&gt; with replacing &quot;Your Name&quot; with your real name.&lt;/li&gt;
+&lt;li&gt;You need to configure Git, so type &lt;code&gt;git config --global user.email your@email.com&lt;/code&gt; with replacing &quot;&lt;a href=&quot;mailto:your@email.com&quot;&gt;&lt;/a&gt;&lt;a href=&quot;mailto:your@email.com&quot;&gt;your@email.com&lt;/a&gt;&quot; with your real email.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note: if you want git to remember your login credentials type:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git config --global credential.helper store
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;h3&gt;Google Chrome&lt;/h3&gt;
+&lt;p&gt;Test if you have Chrome installed by typing &quot;Chrome&quot; in the search box in the bottom app bar that reads &quot;Type here to search&quot;. If you see a search result that reads &quot;Chrome&quot; with &quot;App&quot; under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.&lt;/p&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Microsoft Edge, the blue &quot;e&quot; in the task bar, and type in &lt;a href=&quot;http://chrome.google.com/&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://chrome.google.com/&quot;&gt;http://chrome.google.com&lt;/a&gt;. Click the &quot;Download Chrome&quot; button. Click the &quot;Accept and Install&quot; button after reading the terms of service. Click &quot;Save&quot; in the &quot;What do you want to do with ChromeSetup.exe&quot; dialog at the bottom of the window. When you have the option to &quot;Run&quot; it, do so. Answer the questions as you&#x27;d like. Set it as the default browser.&lt;/li&gt;
+&lt;li&gt;Right-click on the Chrome icon in the task bar and choose &quot;Pin to taskbar&quot;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Node.js&lt;/h3&gt;
+&lt;p&gt;Test if you have Node.js installed by opening an Ubuntu terminal and typing &lt;code&gt;node --version&lt;/code&gt;. If it reports &quot;Command &#x27;node&#x27; not found&quot;, then you need to follow these directions.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the Ubuntu terminal, type &lt;code&gt;sudo apt update&lt;/code&gt; and press Enter&lt;/li&gt;
+&lt;li&gt;In the Ubuntu terminal, type &lt;code&gt;sudo apt install build-essential&lt;/code&gt; and press Enter&lt;/li&gt;
+&lt;li&gt;In the Ubuntu terminal, type &lt;code&gt;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash&lt;/code&gt; and press Enter&lt;/li&gt;
+&lt;li&gt;In the Ubuntu terminal, type &lt;code&gt;. ./.bashrc&lt;/code&gt; and press Enter&lt;/li&gt;
+&lt;li&gt;In the Ubuntu terminal, type &lt;code&gt;nvm install --lts&lt;/code&gt; and press Enter&lt;/li&gt;
+&lt;li&gt;Confirm that &lt;strong&gt;node&lt;/strong&gt; is installed by typing &lt;code&gt;node --version&lt;/code&gt; and seeing it print something that is not &quot;Command not found&quot;!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unzip&lt;/h3&gt;
+&lt;p&gt;You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.&lt;/p&gt;
+&lt;p&gt;‌In the Ubuntu terminal type: &lt;code&gt;sudo apt install unzip&lt;/code&gt; and press Enter&lt;/p&gt;
+&lt;p&gt;‌Mocha.js&lt;/p&gt;
+&lt;p&gt;Test if you have Mocha.js installed by opening an Ubuntu terminal and typing &lt;code&gt;which mocha&lt;/code&gt;. If it prints a path, then you&#x27;re good. Otherwise, if it prints nothing, install Mocha.js by typing &lt;code&gt;npm install -g mocha&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;h3&gt;Python 3&lt;/h3&gt;
+&lt;p&gt;Ubuntu does not come with Python 3. Install it using the command &lt;code&gt;sudo apt install python3&lt;/code&gt;. Test it by typing &lt;code&gt;python3 --version&lt;/code&gt; and seeing it print a number.&lt;/p&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;h3&gt;Note about WSL&lt;/h3&gt;
+&lt;p&gt;‌&lt;/p&gt;
+&lt;p&gt;As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you &lt;strong&gt;close&lt;/strong&gt; Visual Studio Code before running those commands in the Ubuntu terminal.&lt;/p&gt;
+&lt;p&gt;‌&lt;/p&gt;</script>
+</h3>
+</div>
+</div>
+</article>
+<nav id="page-nav" class="page-nav">
+<div id="page-nav-inside" class="page-nav-inside sticky">
+<h2 class="page-nav-title">Jump to Section</h2>
+<div id="page-nav-link-container">
+</div>
+</div>
+</nav>
+</div>
+<div id="search" class="inner">
+</div>
+</div>
+</main>
+<footer id="colophon" class="site-footer outer">
+<div>
+<center>
+<br/>
+<div id="search">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"/> <!-- --> </div>
+<br/>
+<table cellPadding="0" cellSpacing="0" border="0">
+<tbody>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif;font-size:7.5pt">
+<center>
+<table width="95%" cellPadding="0" cellSpacing="0" border="0" style="font-family:Arial, Helvetica, sans-serif;font-size:7.5pt">
+<tbody>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif;font-size:7.5pt" align="left">
+<a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">index</a>
+</td>
+<td style="font-family:Arial, Helvetica, sans-serif;font-size:7.5pt" align="center">
+<a target="_blank" href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a>
+</td>
+<td style="font-family:Arial, Helvetica, sans-serif;font-size:7.5pt" align="right">
+<a target="_blank" href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<form style="margin:0px;margin-top:2px" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+<input type="hidden" name="si" value="14588965"/>
+<input type="hidden" name="pid" value="r"/>
+<input type="hidden" name="n" value="0"/>
+<input type="hidden" name="_charset_" value="true"/>
+<input type="hidden" name="bcd" value="÷"/>
+<input type="text" name="query" size="15"/>
+<input type="submit" value="search"/>
+</form>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:7.5pt;padding-top:4px">
+<a style="text-decoration:none;color:transparent" href="https://www.freefind.com" rel="nofollow">search engine</a>
+<a style="text-decoration:none;color:transparent" href="https://www.freefind.com" rel="nofollow">by<span style="color:transparent">freefind</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table></center></div><div class="inner"><div id="search" class="inner"></div><div class="site-footer-inside"><p class="site-info"><span class="copyright">@bgoonz on almost every platform</span><a href="https://bryanguner.medium.com/" target="_blank" rel="noopener " class="button">Medium</a><a href="https://optimistic-lewin-8586ae.netlify.app/blm.zip" target="_blank" rel="noopener " class="button">BLM</a> </p><div class="social-links"><a href="https://twitter.com/bgooonz" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"></path></svg><span class="screen-reader-text">Twitter</span></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg><span class="screen-reader-text">LinkedIn</span></a><a href="https://github.com/bgoonz" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="screen-reader-text">GitHub</span></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path></svg><span class="screen-reader-text">Youtube</span></a><a href="https://www.instagram.com/bgoonz/?hl=en" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"></path></svg><span class="screen-reader-text">Instagram</span></a><a href="https://dev.to/bgoonz" target="_blank" rel="noopener " class="button button-icon"><svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"></path></svg><span class="screen-reader-text">dev.to</span></a> </div> </div></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src='https://d33wubrfki0l68.cloudfront.net/bundles/492853c4910f5ea5e92cdb4a8714356ebfbd989e.js'></script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/docs/content/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1bf7ed01c6819b9b496d.js"],"app":["/app-a18a86fe88835f322f3c.js"],"component---src-templates-advanced-js":["/component---src-templates-advanced-js-c66268766ef5c957450f.js"],"component---src-templates-blog-js":["/component---src-templates-blog-js-36eb4fae1add87ca6010.js"],"component---src-templates-docs-js":["/component---src-templates-docs-js-bf431cbe6f6b991ffc34.js"],"component---src-templates-page-js":["/component---src-templates-page-js-3811de6d35c8d5e9d800.js"],"component---src-templates-post-js":["/component---src-templates-post-js-d6ee8a7502d16baf00c6.js"]};/*]]>*/</script><script nomodule src='https://d33wubrfki0l68.cloudfront.net/js/3d98646e835d7cdf837c679e2043464189d20cac/polyfill-1bf7ed01c6819b9b496d.js'></script><script async src='https://d33wubrfki0l68.cloudfront.net/bundles/380cb3c9850dda97875b134ee933446638ca3985.js'></script><!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+
+<script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+
+<!-- Initialise MakerBadge with options -->
+
+<script>
+  BLMBadge.init({
+       layout:1,
+       theme:'dark',
+       promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+       promoLink : 'https://minnesotafreedomfund.org/',
+       message : 'To be silent is to be complicit. Black lives matter.',
+       title : '#BlackLivesMatter',
+       imageAlt: "Black Lives Matter Badge"
+})
+</script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+      <?php
+        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+        echo "<a href='$url'></a><a href="//pdfcrowd.com/url_to_pdf/?"
+onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+Save to PDF
+</a><!-- google-site-verification: googled2b1865dedd985a4.html -->
+
+<script async>
+
+    // Set a variable for our button element.
+    const scrollToTopButton = document.getElementById('js-top');
+
+    // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+    const scrollFunc = () => {
+        // Get the current scroll value
+        let y = window.scrollY;
+
+        // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+        if (y > 0) {
+            scrollToTopButton.className = "top-link show";
+        } else {
+            scrollToTopButton.className = "top-link hide";
+        }
+    };
+
+    window.addEventListener("scroll", scrollFunc);
+
+    const scrollToTop1 = () => {
+        // Let's set a variable for the number of pixels we are from the top of the document.
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+        // We'll also animate that scroll with requestAnimationFrame:
+        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop1);
+            // ScrollTo takes an x and a y coordinate.
+            // Increase the '10' value to get a smoother/slower scroll!
+            window.scrollTo(0, c - c / 10);
+        }
+    };
+
+    // When the button is clicked, run our ScrolltoTop function above!
+    scrollToTopButton.onclick = function (e) {
+        e.preventDefault();
+        scrollToTop1();
+    }
+
+</script>
+
+<div>
+<a class="top-link hide" href="" id="js-top">
+    <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+
+</script>
+<script type="text/javascript">
+    function hideLoader() {
+        $('#loading').hide();
+    }
+    $(window).ready(hideLoader);
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+    setTimeout(hideLoader, 10 * 1000);
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
+    });
+</script>
+
+<script>
+    $(window).scroll(function () {
+        $("#back").stop().animate({
+            "marginTop": ($(window).scrollTop()) + "px",
+            "marginLeft": ($(window).scrollLeft()) + "px"
+        }, "slow");
+    });
+</script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+        const scrollToTop = () => {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, c - c / 8);
+            }
+        };
+        scrollToTop();
+    });
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+
+</script>
+<script type="text/javascript">
+    function hideLoader() {
+        $('#loading').hide();
+    }
+    $(window).ready(hideLoader);
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+    setTimeout(hideLoader, 10 * 1000);
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
+    });
+</script>
+
+<script>
+    $(window).scroll(function () {
+        $("#back").stop().animate({
+            "marginTop": ($(window).scrollTop()) + "px",
+            "marginLeft": ($(window).scrollLeft()) + "px"
+        }, "slow");
+    });
+</script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+        const scrollToTop1 = () => {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) {
+                window.requestAnimationFrame(scrollToTop1);
+                window.scrollTo(0, c - c / 8);
+            }
+        };
+        scrollToTop1();
+    });
+
+</script><script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript><iframe src="https://bgoonz.github.io/fb-and-twitter-api-embeds/" frameborder="0"   width="100%!important"></iframe><meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+
+
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}
+
+
+
+</style><div style="text-align:center;padding:1em 0;"> <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/5128581"><span style="color:gray;">Current local time in</span><br />New York City, United States</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FNew_York" width="100%" height="90" frameborder="0" seamless></iframe> </div><script>
+FB.api(
+  '/https://sanity-gatsby-portfolio-3-web-4dmiq19t.netlify.app/',
+  'GET',
+  {},
+  function(response) {
+      // Insert your code here
+  }
+);
+
+</script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '448469606483680',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script><!-- Start of tcnj Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=0abd6b56-951c-423b-92e0-dfeac77b6820"> </script>
+<!-- End of tcnj Zendesk Widget script --></body></html>
