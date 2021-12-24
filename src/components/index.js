@@ -1,5 +1,6 @@
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
+import DarkToggle from './DarkToggle/index';
 import DocsMenu from './DocsMenu';
 import DocsSubmenu from './DocsSubmenu';
 import Footer from './Footer';
@@ -16,6 +17,7 @@ import addScript from './../hooks/addScript';
 export {
     ActionLink,
     CtaButtons,
+    DarkToggle,
     DocsMenu,
     DocsSubmenu,
     Footer,
@@ -32,6 +34,7 @@ export {
 };
 
 export default {
+    DarkToggle,
     ActionLink,
     CtaButtons,
     DocsMenu,
