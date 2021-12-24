@@ -4,7 +4,7 @@
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-</div>
+
  
  
 ---
@@ -33,6 +33,10 @@
 | Live chat            | Smartsupp ; LiveChat : Mesibo API                        |
 | JavaScript libraries | Lodash ; Dojo ; core-js ; jQuery                         |
 
+</div>
+ 
+ 
+ 
 ---
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
