@@ -51,7 +51,10 @@ If the `revoke()` function gets called, the proxy becomes unusable: Any trap to 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-proxy.revocable</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

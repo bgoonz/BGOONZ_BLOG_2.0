@@ -152,7 +152,10 @@ It doesn't work if the string contains grapheme clusters, even when using a unic
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-string.prototype.split</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -95,7 +95,10 @@ The inverted order of the logs is due to the fact that the `then` handlers are c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-promise.resolve</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

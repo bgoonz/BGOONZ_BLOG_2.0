@@ -365,7 +365,10 @@ Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-promise-objects</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

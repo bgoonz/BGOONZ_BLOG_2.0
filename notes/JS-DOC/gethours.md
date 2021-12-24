@@ -23,7 +23,10 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-date.prototype.gethours</span></a></td></tr></tbody></table>
 
 `getHours`

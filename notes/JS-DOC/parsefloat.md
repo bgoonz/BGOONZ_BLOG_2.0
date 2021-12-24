@@ -61,7 +61,10 @@ The following examples both return `900719925474099300`, losing precision as the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'parseFloat' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

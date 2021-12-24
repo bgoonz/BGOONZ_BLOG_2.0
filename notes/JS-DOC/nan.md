@@ -61,7 +61,10 @@ Additionally, some array methods cannot find `NaN`, while others can.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-value-properties-of-the-global-object-nan</span></a></td></tr></tbody></table>
 
 `NaN`

@@ -33,7 +33,10 @@ Sometimes, it is convenient to be able to identify the most likely locale langua
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sec-Intl.Locale.prototype.maximize</span></a></td></tr></tbody></table>
 
 `maximize`

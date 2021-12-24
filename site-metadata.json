@@ -117,7 +117,7 @@
             },
             {
                 "label": "Job Search",
-                "url": "/docs/interview/job-search-nav/",
+                "url": "/docs/career/job-search-nav/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -126,7 +126,7 @@
                 "subnav_links": [
                     {
                         "label": "Job Boards",
-                        "url": "interview/job-boards",
+                        "url": " career/job-boards",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -267,19 +267,7 @@
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
-                    }
-                ],
-                "type": "action_menu"
-            },
-            {
-                "label": "External",
-                "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
+                    },
                     {
                         "label": "Embeds Blog",
                         "url": "https://friendly-panda-b61ab.netlify.app/",

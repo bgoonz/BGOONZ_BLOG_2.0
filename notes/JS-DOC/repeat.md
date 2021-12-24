@@ -80,7 +80,10 @@ This method has been added to the ECMAScript 2015 specification and may not be a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'String.prototype.repeat' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

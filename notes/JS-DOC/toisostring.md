@@ -22,7 +22,10 @@ The above example uses parsing of a non–standard string value that may not be 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toisostring">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toisostring">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-date.prototype.toisostring</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

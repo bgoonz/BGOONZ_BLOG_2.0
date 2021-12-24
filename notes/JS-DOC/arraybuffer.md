@@ -42,7 +42,10 @@ In this example, we create a 8-byte buffer with a [`Int32Array`](int32array) vie
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-arraybuffer-objects</span></a></td></tr></tbody></table>
 
 `ArrayBuffer`

@@ -77,7 +77,10 @@ Note that the results shown in the code above can vary between browsers and brow
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sec-the-intl-collator-constructor</span></a></td></tr></tbody></table>
 
 `Collator`

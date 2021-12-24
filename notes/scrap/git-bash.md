@@ -1,7 +1,7 @@
 ---
-title:  Understanding Git Bash
+title: Understanding Git Bash
 weight: 0
-excerpt:  Understanding Git Bash
+excerpt: Understanding Git Bash
 seo:
     title: ' Understanding Git Bash'
     description: ' Understanding Git Bash'
@@ -9,9 +9,6 @@ seo:
     extra: []
 template: docs
 ---
-
-
-
 
 # Understanding Git Bash
 

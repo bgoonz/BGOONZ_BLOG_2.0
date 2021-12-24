@@ -45,7 +45,8 @@ export default function htmlToReact(html) {
                             convertChildren(node.children, index)
                         }
 
-                       </ScriptTag>
+                        <
+                        /ScriptTag>
 
                     );
 
@@ -86,7 +87,8 @@ export default function htmlToReact(html) {
                             convertChildren(node.children, index)
                         }
 
-                       </Link>
+                        <
+                        /Link>
 
                     );
 

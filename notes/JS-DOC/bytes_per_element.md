@@ -36,7 +36,10 @@ no
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-typedarray.bytes_per_element</span></a></td></tr></tbody></table>
 
 `BYTES_PER_ELEMENT`

@@ -107,7 +107,10 @@ Notice, the output list length can be different from the input list length.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-array.prototype.flatmap</span></a></td></tr></tbody></table>
 
 `flatMap`

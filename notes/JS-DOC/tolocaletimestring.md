@@ -101,8 +101,14 @@ The results provided by `toLocaleTimeString()` can be customized using the `opti
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaletimestring">ECMAScript Language Specification (ECMAScript)<br />
-<span class="small">#sec-date.prototype.tolocaletimestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaletimestring">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
+<span class="small">#sec-date.prototype.tolocaletimestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
+
 <span class="small">#sup-date.prototype.tolocaletimestring</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

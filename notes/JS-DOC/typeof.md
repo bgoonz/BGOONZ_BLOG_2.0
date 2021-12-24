@@ -175,7 +175,10 @@ For checking non-existent variables that would otherwise throw a [`ReferenceErro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262) 
+<br/>
+
+
 <span class="small">The definition of 'The typeof Operator' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

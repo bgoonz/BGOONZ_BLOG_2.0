@@ -47,7 +47,10 @@ A [`Boolean`](../boolean) indicating whether or not the given value is a number 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-number.issafeinteger</span></a></td></tr></tbody></table>
 
 `isSafeInteger`

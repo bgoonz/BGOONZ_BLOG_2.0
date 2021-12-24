@@ -20,7 +20,10 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<br/>
+
+
 <span class="small">#dom-memory-buffer</span></a></td></tr></tbody></table>
 
 `buffer`

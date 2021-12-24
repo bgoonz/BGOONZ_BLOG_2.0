@@ -50,7 +50,10 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-math.log</span></a></td></tr></tbody></table>
 
 `log`

@@ -31,7 +31,10 @@ The second statement below assigns the value 11 to the variable `month`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+
 <span class="small">#sec-date.prototype.getmonth</span></a></td></tr></tbody></table>
 
 `getMonth`
