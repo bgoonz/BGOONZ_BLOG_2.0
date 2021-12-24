@@ -4,13 +4,39 @@
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-</div>
+
  
  
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+
+
+---
+
+
+### Technologies Used:
+
+| URL                  | https://bgoonz-blog.netlify.app                          |
+|----------------------|----------------------------------------------------------|
+| Miscellaneous        | webpack ; Prism                                          |
+| Widgets              | Facebook ; AddThis                                       |
+| Analytics            | Moat ; Google Analytics ; Google Ads Conversion Tracking |
+| Comment systems      | Facebook API & REPL.it Database                          |
+| Security             |  Netlify Access                                          | 
+| Font scripts         | Google Font API                                          |
+| CDN                  | Unpkg ; jsDelivr ; jQuery CDN ; Netlify                  |
+| Marketing automation | MailChimp                                                | 
+| Advertising          | Google AdSense                                           |
+| Tag managers         | Google Tag Manager                                       |
+| Live chat            | Smartsupp ; LiveChat : Mesibo API                        |
+| JavaScript libraries | Lodash ; Dojo ; core-js ; jQuery                         |
+
+</div>
+ 
+ 
+ 
 ---
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
