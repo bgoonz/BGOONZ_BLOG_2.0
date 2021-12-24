@@ -1,6 +1,6 @@
 ---
 title: How to exit from a Node.js program
-description: 'Learn how to terminate a Node.js app in the best possible way'
+description: "Learn how to terminate a Node.js app in the best possible way"
 ---
 
 There are various ways to terminate a Node.js application.
@@ -38,14 +38,14 @@ A program will gracefully exit when all the processing is done.
 Many times with Node.js we start servers, like this HTTP server:
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hi!');
+app.get("/", (req, res) => {
+  res.send("Hi!");
 });
 
-app.listen(3000, () => console.log('Server ready'));
+app.listen(3000, () => console.log("Server ready"));
 ```
 
 This program is never going to end. If you call `process.exit()`, any currently pending or running request is going to be aborted. This is _not nice_.
@@ -55,20 +55,20 @@ In this case you need to send the command a SIGTERM signal, and handle that with
 > Note: `process` does not require a "require", it's automatically available.
 
 ```js
-const express = require('express');
+const express = require("express");
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hi!');
+app.get("/", (req, res) => {
+  res.send("Hi!");
 });
 
-const server = app.listen(3000, () => console.log('Server ready'));
+const server = app.listen(3000, () => console.log("Server ready"));
 
-process.on('SIGTERM', () => {
-    server.close(() => {
-        console.log('Process terminated');
-    });
+process.on("SIGTERM", () => {
+  server.close(() => {
+    console.log("Process terminated");
+  });
 });
 ```
 
@@ -81,7 +81,7 @@ process.on('SIGTERM', () => {
 You can send this signal from inside the program, in another function:
 
 ```js
-process.kill(process.pid, 'SIGTERM');
+process.kill(process.pid, "SIGTERM");
 ```
 
 Or from another Node.js running program, or any other app running in your system that knows the PID of the process you want to terminate.

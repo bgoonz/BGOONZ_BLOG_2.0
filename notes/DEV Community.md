@@ -37,41 +37,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofi)
 
@@ -87,41 +87,41 @@ I work in ReactJS, ASP.NET Core, Node.JS, React JS, Wordpress
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Beed, Maharashtra
+  Beed, Maharashtra
 
--   education
+- education
 
-    M. E. in Software Engineering
+  M. E. in Software Engineering
 
--   work
+- work
 
-    Full Stack Web Developer at Ambika Recharge Solution Pvt. Ltd.
+  Full Stack Web Developer at Ambika Recharge Solution Pvt. Ltd.
 
--   Joined
+- Joined
 
-    Aug 22, 2019
+  Aug 22, 2019
 
 =======
 
--   Location
+- Location
 
-    Beed, Maharashtra
+  Beed, Maharashtra
 
--   education
+- education
 
-    M. E. in Software Engineering
+  M. E. in Software Engineering
 
--   work
+- work
 
-    Full Stack Web Developer at Ambika Recharge Solution Pvt. Ltd.
+  Full Stack Web Developer at Ambika Recharge Solution Pvt. Ltd.
 
--   Joined
+- Joined
 
-        Aug 22, 2019
+      Aug 22, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20 • Edited on Oct 1](https://dev.to/iamrohitsawai/comment/15gii)
 
@@ -137,35 +137,35 @@ A code is like love ❤, it is created with clear intentions at the beginning �
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Jammu & Kashmir, India
+  Jammu & Kashmir, India
 
--   work
+- work
 
-    System Engineer at TCS
+  System Engineer at TCS
 
--   Joined
+- Joined
 
-    Aug 3, 2020
+  Aug 3, 2020
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Jammu & Kashmir, India
+  Jammu & Kashmir, India
 
--   work
+- work
 
-    System Engineer at TCS
+  System Engineer at TCS
 
--   Joined
+- Joined
 
-        Aug 3, 2020
+      Aug 3, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/sumit/comment/16o5f)
 
@@ -187,41 +187,41 @@ Frontend developer at Saama technologies
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Trichy
+  Trichy
 
--   education
+- education
 
-    B.E Computer science
+  B.E Computer science
 
--   work
+- work
 
-    Front-end developer at Saama technologies
+  Front-end developer at Saama technologies
 
--   Joined
+- Joined
 
-    Jun 29, 2020
+  Jun 29, 2020
 
 =======
 
--   Location
+- Location
 
-    Trichy
+  Trichy
 
--   education
+- education
 
-    B.E Computer science
+  B.E Computer science
 
--   work
+- work
 
-    Front-end developer at Saama technologies
+  Front-end developer at Saama technologies
 
--   Joined
+- Joined
 
-        Jun 29, 2020
+      Jun 29, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/aashiqincode/comment/15glj)
 
@@ -237,33 +237,33 @@ Just trying to write cleaner code each day | My story - https://youtu.be/Zr73Kfb
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Cleveland, Ohio
+  Cleveland, Ohio
 
--   education
+- education
 
-    Bachelor in Corporate Finance, Self Taught Dev
+  Bachelor in Corporate Finance, Self Taught Dev
 
--   Joined
+- Joined
 
-    Feb 20, 2020
+  Feb 20, 2020
 
 =======
 
--   Location
+- Location
 
-    Cleveland, Ohio
+  Cleveland, Ohio
 
--   education
+- education
 
-    Bachelor in Corporate Finance, Self Taught Dev
+  Bachelor in Corporate Finance, Self Taught Dev
 
--   Joined
+- Joined
 
-        Feb 20, 2020
+      Feb 20, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/zachgoll/comment/17213)
 
@@ -279,27 +279,27 @@ Full Stack Developer - System Architect - Agile Developer
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    India
+  India
 
--   Joined
+- Joined
 
-    Sep 4, 2017
+  Sep 4, 2017
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    India
+  India
 
--   Joined
+- Joined
 
-        Sep 4, 2017
+      Sep 4, 2017
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/ankitmpatel/comment/15gff)
 
@@ -315,25 +315,25 @@ trying to learn more
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    EveryWhere
+  EveryWhere
 
--   Joined
+- Joined
 
-    Jun 2, 2020
+  Jun 2, 2020
 
 =======
 
--   Location
+- Location
 
-    EveryWhere
+  EveryWhere
 
--   Joined
+- Joined
 
-        Jun 2, 2020
+      Jun 2, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/hyperx837/comment/16i22)
 
@@ -349,41 +349,41 @@ After a long military career, I decided on a new path, something more productive
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    United Kingdom
+  United Kingdom
 
--   education
+- education
 
-    Easthampstead Park Comprehensive
+  Easthampstead Park Comprehensive
 
--   work
+- work
 
-    Freelance at Self Employed
+  Freelance at Self Employed
 
--   Joined
+- Joined
 
-    Jun 9, 2018
+  Jun 9, 2018
 
 =======
 
--   Location
+- Location
 
-    United Kingdom
+  United Kingdom
 
--   education
+- education
 
-    Easthampstead Park Comprehensive
+  Easthampstead Park Comprehensive
 
--   work
+- work
 
-    Freelance at Self Employed
+  Freelance at Self Employed
 
--   Joined
+- Joined
 
-        Jun 9, 2018
+      Jun 9, 2018
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Sep 30 '20](https://dev.to/ajax27/comment/15g11)
 
@@ -403,33 +403,33 @@ Writing code for 30+ years and still enjoy it...
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Krakow, Poland
+  Krakow, Poland
 
--   work
+- work
 
-    Senior Software Architect
+  Senior Software Architect
 
--   Joined
+- Joined
 
-    Mar 14, 2019
+  Mar 14, 2019
 
 =======
 
--   Location
+- Location
 
-    Krakow, Poland
+  Krakow, Poland
 
--   work
+- work
 
-    Senior Software Architect
+  Senior Software Architect
 
--   Joined
+- Joined
 
-        Mar 14, 2019
+      Mar 14, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 12 '20](https://dev.to/siy/comment/16l0l)
 
@@ -467,33 +467,33 @@ Polyglot programmer now focusing on Elixir/Phoenix FP
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Plant City, FL
+  Plant City, FL
 
--   work
+- work
 
-    Fullstack developer
+  Fullstack developer
 
--   Joined
+- Joined
 
-    Mar 17, 2019
+  Mar 17, 2019
 
 =======
 
--   Location
+- Location
 
-    Plant City, FL
+  Plant City, FL
 
--   work
+- work
 
-    Fullstack developer
+  Fullstack developer
 
--   Joined
+- Joined
 
-        Mar 17, 2019
+      Mar 17, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/alamba78/comment/15i0l)
 
@@ -509,41 +509,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofb)
 
@@ -563,41 +563,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p0g)
 
@@ -612,33 +612,33 @@ Polyglot programmer now focusing on Elixir/Phoenix FP
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Plant City, FL
+  Plant City, FL
 
--   work
+- work
 
-    Fullstack developer
+  Fullstack developer
 
--   Joined
+- Joined
 
-    Mar 17, 2019
+  Mar 17, 2019
 
 =======
 
--   Location
+- Location
 
-    Plant City, FL
+  Plant City, FL
 
--   work
+- work
 
-    Fullstack developer
+  Fullstack developer
 
--   Joined
+- Joined
 
-        Mar 17, 2019
+      Mar 17, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/alamba78/comment/16p59)
 
@@ -652,41 +652,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 16 '20](https://dev.to/natescode/comment/16p5a)
 
@@ -708,41 +708,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720e)
 
@@ -762,27 +762,27 @@ I'm a full time child protection social worker, aiming to make the transition in
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Ireland
+  Ireland
 
--   Joined
+- Joined
 
-    May 27, 2020
+  May 27, 2020
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Ireland
+  Ireland
 
--   Joined
+- Joined
 
-        May 27, 2020
+      May 27, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 2 '20](https://dev.to/cjcon90/comment/15ij9)
 
@@ -798,33 +798,33 @@ Husband and Dad 👨‍👩‍👧‍👦 DevOps Engineer 🛠️🤖🤘🏼 Ge
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    DMV, US
+  DMV, US
 
--   work
+- work
 
-    DevOps Engineer
+  DevOps Engineer
 
--   Joined
+- Joined
 
-    Aug 8, 2018
+  Aug 8, 2018
 
 =======
 
--   Location
+- Location
 
-    DMV, US
+  DMV, US
 
--   work
+- work
 
-    DevOps Engineer
+  DevOps Engineer
 
--   Joined
+- Joined
 
-        Aug 8, 2018
+      Aug 8, 2018
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Sep 30 '20](https://dev.to/jep/comment/15fl1)
 
@@ -858,41 +858,41 @@ Collapse Expand
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Bamberg, Germany
+  Bamberg, Germany
 
--   education
+- education
 
-    Studying "Software Systems Science (BSc)" in Bamberg, Germany
+  Studying "Software Systems Science (BSc)" in Bamberg, Germany
 
--   work
+- work
 
-    Computer Science Student
+  Computer Science Student
 
--   Joined
+- Joined
 
-    Jul 18, 2019
+  Jul 18, 2019
 
 =======
 
--   Location
+- Location
 
-    Bamberg, Germany
+  Bamberg, Germany
 
--   education
+- education
 
-    Studying "Software Systems Science (BSc)" in Bamberg, Germany
+  Studying "Software Systems Science (BSc)" in Bamberg, Germany
 
--   work
+- work
 
-    Computer Science Student
+  Computer Science Student
 
--   Joined
+- Joined
 
-        Jul 18, 2019
+      Jul 18, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20 • Edited on Oct 10](https://dev.to/lbeul/comment/16jp0)
 
@@ -908,33 +908,33 @@ Ship it when it's ready.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Breizh
+  Breizh
 
--   work
+- work
 
-    Day Dreamer
+  Day Dreamer
 
--   Joined
+- Joined
 
-    Sep 10, 2020
+  Sep 10, 2020
 
 =======
 
--   Location
+- Location
 
-    Breizh
+  Breizh
 
--   work
+- work
 
-    Day Dreamer
+  Day Dreamer
 
--   Joined
+- Joined
 
-        Sep 10, 2020
+      Sep 10, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/allestri/comment/15h0g)
 
@@ -950,36 +950,36 @@ Collapse Expand
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Student at Still un-employed but will start working as a freelancer.
+  Student at Still un-employed but will start working as a freelancer.
 
--   Joined
+- Joined
 
-    Aug 15, 2020
+  Aug 15, 2020
 
 =======
 [Yash_Jaiswal](https://dev.to/dabjazz)
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Student at Still un-employed but will start working as a freelancer.
+  Student at Still un-employed but will start working as a freelancer.
 
--   Joined
+- Joined
 
-        Aug 15, 2020
+      Aug 15, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 7 '20](https://dev.to/dabjazz/comment/16ge6)
 
@@ -1022,41 +1022,41 @@ I am a Full stack .NET Developer, I like to work with C#, Asp.Net Core, SQL, Mon
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    India
+  India
 
--   education
+- education
 
-    MSC SE
+  MSC SE
 
--   work
+- work
 
-    Software Engineer
+  Software Engineer
 
--   Joined
+- Joined
 
-    Dec 23, 2019
+  Dec 23, 2019
 
 =======
 
--   Location
+- Location
 
-    India
+  India
 
--   education
+- education
 
-    MSC SE
+  MSC SE
 
--   work
+- work
 
-    Software Engineer
+  Software Engineer
 
--   Joined
+- Joined
 
-        Dec 23, 2019
+      Dec 23, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20 • Edited on Oct 27](https://dev.to/shaijut/comment/15hd1)
 
@@ -1072,35 +1072,35 @@ I dig into web tech, document my learning journey in plain English and blog abou
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Malta
+  Malta
 
--   work
+- work
 
-    I am mentoring beginner web developers and running a tech newsletter at https://tutorialhell.substack.com/subscribe
+  I am mentoring beginner web developers and running a tech newsletter at https://tutorialhell.substack.com/subscribe
 
--   Joined
+- Joined
 
-    Aug 22, 2018
+  Aug 22, 2018
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Malta
+  Malta
 
--   work
+- work
 
-    I am mentoring beginner web developers and running a tech newsletter at https://tutorialhell.substack.com/subscribe
+  I am mentoring beginner web developers and running a tech newsletter at https://tutorialhell.substack.com/subscribe
 
--   Joined
+- Joined
 
-        Aug 22, 2018
+      Aug 22, 2018
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/sandorturanszky/comment/16i5d)
 
@@ -1119,42 +1119,42 @@ Collapse Expand
 <<<<<<< HEAD
 👨🏿‍💻 Software Developer @CGI_Global 🖼 Content Creator. Sharing the mindset and content so you work hard to grow stronger than your past self ☯️
 
--   Location
+- Location
 
-    London, UK
+  London, UK
 
--   education
+- education
 
-    Bachelor Degree Computer Science
+  Bachelor Degree Computer Science
 
--   work
+- work
 
-    Full-Stack Developer at Freelance
+  Full-Stack Developer at Freelance
 
--   Joined
+- Joined
 
-    Feb 11, 2020
+  Feb 11, 2020
 
 =======
 👨🏿‍💻 Software Developer @CGI_Global 🖼 Content Creator. Sharing the mindset and content so you work hard to grow stronger than your past self ☯️
 
--   Location
+- Location
 
-    London, UK
+  London, UK
 
--   education
+- education
 
-    Bachelor Degree Computer Science
+  Bachelor Degree Computer Science
 
--   work
+- work
 
-    Full-Stack Developer at Freelance
+  Full-Stack Developer at Freelance
 
--   Joined
+- Joined
 
-        Feb 11, 2020
+      Feb 11, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 4 '20](https://dev.to/andrewbaisden/comment/15nlh)
 
@@ -1170,41 +1170,41 @@ Programmer • Developer • learner Although A computer science engineer workin
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Jabalpur, India
+  Jabalpur, India
 
--   education
+- education
 
-    B.E. in CSE
+  B.E. in CSE
 
--   work
+- work
 
-    System Engineer at TATA consultancy services
+  System Engineer at TATA consultancy services
 
--   Joined
+- Joined
 
-    Jul 13, 2020
+  Jul 13, 2020
 
 • [Oct 15 '20 • Edited on Oct 15](https://dev.to/ptprashanttripathi/comment/16ome)
 
 # Hi, I'm a newbie I have learned
 
--   Location
+- Location
 
-    Jabalpur, India
+  Jabalpur, India
 
--   education
+- education
 
-    B.E. in CSE
+  B.E. in CSE
 
--   work
+- work
 
-    System Engineer at TATA consultancy services
+  System Engineer at TATA consultancy services
 
--   Joined
+- Joined
 
-    Jul 13, 2020
+  Jul 13, 2020
 
 • [Oct 15 '20 • Edited on Oct 15](https://dev.to/ptprashanttripathi/comment/16ome)
 
@@ -1243,36 +1243,36 @@ Collapse Expand
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Student at Still un-employed but will start working as a freelancer.
+  Student at Still un-employed but will start working as a freelancer.
 
--   Joined
+- Joined
 
-    Aug 15, 2020
+  Aug 15, 2020
 
 =======
 [Yash_Jaiswal](https://dev.to/dabjazz)
 
 I'm a 3rd year IT(ISE) student exploring various tech-field. I am currently learning flutter & starting cloud computing.
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Student at Still un-employed but will start working as a freelancer.
+  Student at Still un-employed but will start working as a freelancer.
 
--   Joined
+- Joined
 
-        Aug 15, 2020
+      Aug 15, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 3 '20](https://dev.to/dabjazz/comment/15kd0)
 
@@ -1296,41 +1296,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofe)
 
@@ -1346,41 +1346,41 @@ Software developer who loves philosophy and animals.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Serbia
+  Serbia
 
--   education
+- education
 
-    Electrical engineer of multimedia
+  Electrical engineer of multimedia
 
--   work
+- work
 
-    Software developer at Inviggo
+  Software developer at Inviggo
 
--   Joined
+- Joined
 
-    Sep 12, 2018
+  Sep 12, 2018
 
 =======
 
--   Location
+- Location
 
-    Serbia
+  Serbia
 
--   education
+- education
 
-    Electrical engineer of multimedia
+  Electrical engineer of multimedia
 
--   work
+- work
 
-    Software developer at Inviggo
+  Software developer at Inviggo
 
--   Joined
+- Joined
 
-        Sep 12, 2018
+      Sep 12, 2018
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [May 16](https://dev.to/stojakovic99/comment/1egfk)
 
@@ -1414,19 +1414,19 @@ I will learning too harder and never give up....
 
 <<<<<<< HEAD
 
--   Email
--   Joined
+- Email
+- Joined
 
-    Sep 17, 2020
+  Sep 17, 2020
 
 =======
 
--   Email
--   Joined
+- Email
+- Joined
 
-        Sep 17, 2020
+      Sep 17, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20](https://dev.to/devdev606/comment/16jp3)
 
@@ -1446,41 +1446,41 @@ I build things for fun.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Vienna, Austria
+  Vienna, Austria
 
--   education
+- education
 
-    M.Sc, M.Eng, Computer Science, Business Informatics
+  M.Sc, M.Eng, Computer Science, Business Informatics
 
--   work
+- work
 
-    Software Engineer at Freelance
+  Software Engineer at Freelance
 
--   Joined
+- Joined
 
-    Jun 23, 2021
+  Jun 23, 2021
 
 =======
 
--   Location
+- Location
 
-    Vienna, Austria
+  Vienna, Austria
 
--   education
+- education
 
-    M.Sc, M.Eng, Computer Science, Business Informatics
+  M.Sc, M.Eng, Computer Science, Business Informatics
 
--   work
+- work
 
-    Software Engineer at Freelance
+  Software Engineer at Freelance
 
--   Joined
+- Joined
 
-        Jun 23, 2021
+      Jun 23, 2021
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Jun 27](https://dev.to/amboulouma/comment/1fmdl)
 
@@ -1494,41 +1494,41 @@ Software Engineer, then father, then CTO, then father again, then cofounder, the
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    France
+  France
 
--   education
+- education
 
-    IT Engineer Master degree, executive MBA
+  IT Engineer Master degree, executive MBA
 
--   work
+- work
 
-    CMO at ScaleDynamics
+  CMO at ScaleDynamics
 
--   Joined
+- Joined
 
-    Feb 25, 2019
+  Feb 25, 2019
 
 • [Oct 3 '20 • Edited on Oct 3](https://dev.to/domis66/comment/15jep)
 
 # Awesome list! And so realize today it's way harder to become a fullstack developer it used to be.... You might want to consider some platforms helping you down that road, just like ScaleDynamics
 
--   Location
+- Location
 
-    France
+  France
 
--   education
+- education
 
-    IT Engineer Master degree, executive MBA
+  IT Engineer Master degree, executive MBA
 
--   work
+- work
 
-    CMO at ScaleDynamics
+  CMO at ScaleDynamics
 
--   Joined
+- Joined
 
-    Feb 25, 2019
+  Feb 25, 2019
 
 • [Oct 3 '20 • Edited on Oct 3](https://dev.to/domis66/comment/15jep)
 
@@ -1547,36 +1547,36 @@ Collapse Expand
 
 I am a beginner at Javascript for desktop applications, open source enthusiast and evangelist!
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Engineer at Self employed
+  Engineer at Self employed
 
--   Joined
+- Joined
 
-    May 5, 2020
+  May 5, 2020
 
 =======
 [miss_multitasker](https://dev.to/swathipai13)
 
 I am a beginner at Javascript for desktop applications, open source enthusiast and evangelist!
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Engineer at Self employed
+  Engineer at Self employed
 
--   Joined
+- Joined
 
-        May 5, 2020
+      May 5, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Dec 20 '20](https://dev.to/swathipai13/comment/19d66)
 
@@ -1600,35 +1600,35 @@ Hype-Driven Developer
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Istanbul
+  Istanbul
 
--   work
+- work
 
-    Full-Stack
+  Full-Stack
 
--   Joined
+- Joined
 
-    May 28, 2020
+  May 28, 2020
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Istanbul
+  Istanbul
 
--   work
+- work
 
-    Full-Stack
+  Full-Stack
 
--   Joined
+- Joined
 
-        May 28, 2020
+      May 28, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 1 '20](https://dev.to/farukbigez/comment/15i0i)
 
@@ -1654,33 +1654,33 @@ Actually the pug from Dune (1984)
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Portland, Oregon
+  Portland, Oregon
 
--   work
+- work
 
-    Developer Advocate at New Relic
+  Developer Advocate at New Relic
 
--   Joined
+- Joined
 
-    Apr 30, 2019
+  Apr 30, 2019
 
 =======
 
--   Location
+- Location
 
-    Portland, Oregon
+  Portland, Oregon
 
--   work
+- work
 
-    Developer Advocate at New Relic
+  Developer Advocate at New Relic
 
--   Joined
+- Joined
 
-        Apr 30, 2019
+      Apr 30, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 9 '20](https://dev.to/nocnica/comment/16ipk)
 
@@ -1696,33 +1696,33 @@ Hey, I'm an undergrad majoring in Electronics with minor in CS. I do WebDev proj
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    India
+  India
 
--   education
+- education
 
-    Electronics with Minor CS, IIT Guwahati
+  Electronics with Minor CS, IIT Guwahati
 
--   Joined
+- Joined
 
-    Oct 1, 2020
+  Oct 1, 2020
 
 =======
 
--   Location
+- Location
 
-    India
+  India
 
--   education
+- education
 
-    Electronics with Minor CS, IIT Guwahati
+  Electronics with Minor CS, IIT Guwahati
 
--   Joined
+- Joined
 
-        Oct 1, 2020
+      Oct 1, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 10 '20](https://dev.to/iaryan/comment/16j9a)
 
@@ -1738,33 +1738,33 @@ just doing stuff
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Chicago
+  Chicago
 
--   work
+- work
 
-    Game Developer
+  Game Developer
 
--   Joined
+- Joined
 
-    Oct 10, 2020
+  Oct 10, 2020
 
 =======
 
--   Location
+- Location
 
-    Chicago
+  Chicago
 
--   work
+- work
 
-    Game Developer
+  Game Developer
 
--   Joined
+- Joined
 
-        Oct 10, 2020
+      Oct 10, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 11 '20](https://dev.to/rahulh123/comment/16kdc)
 
@@ -1780,41 +1780,41 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-    May 2, 2020
+  May 2, 2020
 
 =======
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-        May 2, 2020
+      May 2, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 6 '20](https://dev.to/fluxthedev/comment/168m4)
 
@@ -1830,41 +1830,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1720n)
 
@@ -1880,41 +1880,41 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-    May 2, 2020
+  May 2, 2020
 
 =======
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-        May 2, 2020
+      May 2, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/fluxthedev/comment/17226)
 
@@ -1928,41 +1928,41 @@ I'm a Midwest-based Software Engineer.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-    Aug 9, 2019
+  Aug 9, 2019
 
 =======
 
--   Location
+- Location
 
-    Minneapolis, MN
+  Minneapolis, MN
 
--   education
+- education
 
-    AAS
+  AAS
 
--   work
+- work
 
-    Software Engineer at Barings LLC
+  Software Engineer at Barings LLC
 
--   Joined
+- Joined
 
-        Aug 9, 2019
+      Aug 9, 2019
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 19 '20](https://dev.to/natescode/comment/1722a)
 
@@ -1976,41 +1976,41 @@ Hello! John here 27 7 and have been active in my web developer career for 6 year
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-    May 2, 2020
+  May 2, 2020
 
 =======
 
--   Location
+- Location
 
-    Columbus, Ohio
+  Columbus, Ohio
 
--   education
+- education
 
-    Bachelors in Multimedia Design and Development
+  Bachelors in Multimedia Design and Development
 
--   work
+- work
 
-    Application developer at Nationwide Insurance
+  Application developer at Nationwide Insurance
 
--   Joined
+- Joined
 
-        May 2, 2020
+      May 2, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 22 '20](https://dev.to/fluxthedev/comment/17549)
 
@@ -2026,35 +2026,35 @@ An experienced software developer with a strong background in developing award-w
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Ibadan, Nigeria
+  Ibadan, Nigeria
 
--   work
+- work
 
-    Chief Technology Officer at Epower.ng
+  Chief Technology Officer at Epower.ng
 
--   Joined
+- Joined
 
-    Jan 20, 2018
+  Jan 20, 2018
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Ibadan, Nigeria
+  Ibadan, Nigeria
 
--   work
+- work
 
-    Chief Technology Officer at Epower.ng
+  Chief Technology Officer at Epower.ng
 
--   Joined
+- Joined
 
-        Jan 20, 2018
+      Jan 20, 2018
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 21 '20](https://dev.to/devhammed/comment/1736f)
 
@@ -2074,33 +2074,33 @@ Developer. Artist. Human.
 
 <<<<<<< HEAD
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Software Engineer
+  Software Engineer
 
--   Joined
+- Joined
 
-    Feb 1, 2020
+  Feb 1, 2020
 
 =======
 
--   Location
+- Location
 
-    India
+  India
 
--   work
+- work
 
-    Software Engineer
+  Software Engineer
 
--   Joined
+- Joined
 
-        Feb 1, 2020
+      Feb 1, 2020
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Oct 12 '20](https://dev.to/z00md/comment/16len)
 
@@ -2120,43 +2120,43 @@ I am passionate to learn new Technologies
 
 <<<<<<< HEAD
 
--   Email
--   Location
+- Email
+- Location
 
-    Pakistan
+  Pakistan
 
--   education
+- education
 
-    Masters in Information Technology
+  Masters in Information Technology
 
--   work
+- work
 
-    Lab Engineer at RIUF
+  Lab Engineer at RIUF
 
--   Joined
+- Joined
 
-    Feb 11, 2021
+  Feb 11, 2021
 
 =======
 
--   Email
--   Location
+- Email
+- Location
 
-    Pakistan
+  Pakistan
 
--   education
+- education
 
-    Masters in Information Technology
+  Masters in Information Technology
 
--   work
+- work
 
-    Lab Engineer at RIUF
+  Lab Engineer at RIUF
 
--   Joined
+- Joined
 
-        Feb 11, 2021
+      Feb 11, 2021
 
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 • [Feb 12](https://dev.to/tayyabtariq242/comment/1bcf7)
 

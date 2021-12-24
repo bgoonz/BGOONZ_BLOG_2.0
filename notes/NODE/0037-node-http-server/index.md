@@ -1,6 +1,6 @@
 ---
-title: 'Build an HTTP Server'
-description: 'How to build an HTTP server with Node.js'
+title: "Build an HTTP Server"
+description: "How to build an HTTP server with Node.js"
 ---
 
 Here is a sample Hello World HTTP web server:
@@ -51,11 +51,11 @@ we set the statusCode property to 200, to indicate a successful response.
 We also set the Content-Type header:
 
 ```js
-res.setHeader('Content-Type', 'text/plain');
+res.setHeader("Content-Type", "text/plain");
 ```
 
 and we end close the response, adding the content as an argument to `end()`:
 
 ```js
-res.end('Hello World\n');
+res.end("Hello World\n");
 ```

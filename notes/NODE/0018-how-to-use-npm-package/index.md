@@ -1,6 +1,6 @@
 ---
 title: How to use or execute a package installed using npm
-description: 'How to include and use in your code a package installed in your node_modules folder'
+description: "How to include and use in your code a package installed in your node_modules folder"
 ---
 
 When you install using `npm` a package into your `node_modules` folder, or also globally, how do you use it in your Node.js code?
@@ -16,7 +16,7 @@ This is going to install the package in the local `node_modules` folder.
 To use it in your code, you just need to import it into your program using `require`:
 
 ```js
-const _ = require('lodash');
+const _ = require("lodash");
 ```
 
 What if your package is an executable?

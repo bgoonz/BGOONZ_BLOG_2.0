@@ -3,20 +3,17 @@ title: Font End Interview
 weight: 0
 excerpt: Font End Interview
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
   type: stackbit_page_meta
 template: docs
 ---
 
-
-
-
 Web Developer Job Interview Questions
 
-------------------------------------------------------------------------
+---
 
 ### Front End Behavioral Interview
 

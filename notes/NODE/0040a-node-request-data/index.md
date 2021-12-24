@@ -1,6 +1,6 @@
 ---
 title: Get HTTP request body data using Node.js
-description: 'Find out how to extract the data sent as JSON through an HTTP request body using Node.js'
+description: "Find out how to extract the data sent as JSON through an HTTP request body using Node.js"
 ---
 
 Here is how you can extract the data that was sent as JSON in the request body.
@@ -10,29 +10,29 @@ If you are using Express, that's quite simple: use the `body-parser` Node.js mod
 For example, to get the body of this request:
 
 ```js
-const axios = require('axios');
+const axios = require("axios");
 
-axios.post('https://whatever.com/todos', {
-    todo: 'Buy the milk'
+axios.post("https://whatever.com/todos", {
+  todo: "Buy the milk",
 });
 ```
 
 This is the matching server-side code:
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.use(
-    express.urlencoded({
-        extended: true
-    })
+  express.urlencoded({
+    extended: true,
+  })
 );
 
 app.use(express.json());
 
-app.post('/todos', (req, res) => {
-    console.log(req.body.todo);
+app.post("/todos", (req, res) => {
+  console.log(req.body.todo);
 });
 ```
 
@@ -48,13 +48,13 @@ We first get the data by listening to the stream `data` events, and when the dat
 
 ```js
 const server = http.createServer((req, res) => {
-    // we can access HTTP headers
-    req.on('data', (chunk) => {
-        console.log(`Data chunk available: ${chunk}`);
-    });
-    req.on('end', () => {
-        //end of data
-    });
+  // we can access HTTP headers
+  req.on("data", (chunk) => {
+    console.log(`Data chunk available: ${chunk}`);
+  });
+  req.on("end", () => {
+    //end of data
+  });
 });
 ```
 
@@ -62,12 +62,12 @@ So to access the data, assuming we expect to receive a string, we must put it in
 
 ```js
 const server = http.createServer((req, res) => {
-    let data = '';
-    req.on('data', (chunk) => {
-        data += chunk;
-    });
-    req.on('end', () => {
-        JSON.parse(data).todo; // 'Buy the milk'
-    });
+  let data = "";
+  req.on("data", (chunk) => {
+    data += chunk;
+  });
+  req.on("end", () => {
+    JSON.parse(data).todo; // 'Buy the milk'
+  });
 });
 ```

@@ -1,39 +1,36 @@
 ---
 title: Data Structures
 excerpt: >-
-    In this section you'll learn how to add syntax highlighting, examples,
-    callouts and much more.
+  In this section you'll learn how to add syntax highlighting, examples,
+  callouts and much more.
 seo:
-    title:  Data Structures
-    description: This is the  Data Structures page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value:  Data Structures
-          keyName: property
-        - name: 'og:description'
-          value: This is the  Data Structures page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value:  Data Structures
-        - name: 'twitter:description'
-          value: This is the  Data Structures page
+  title: Data Structures
+  description: This is the  Data Structures page
+  extra:
+    - name: "og:type"
+      value: website
+      keyName: property
+    - name: "og:title"
+      value: Data Structures
+      keyName: property
+    - name: "og:description"
+      value: This is the  Data Structures page
+      keyName: property
+    - name: "twitter:card"
+      value: summary
+    - name: "twitter:title"
+      value: Data Structures
+    - name: "twitter:description"
+      value: This is the  Data Structures page
 template: docs
 weight: 0
 ---
 
-
-
-Fundamental Data Structures In JavaScript
-=========================================
+# Fundamental Data Structures In JavaScript
 
 Data structures in JavaScript
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -57,74 +54,74 @@ Data structures in JavaScript
 
 #### Videos
 
--   <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
--   <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
--   <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
--   <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
--   <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
--   <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
--   <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
+- <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
+- <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
+- <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
+- <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
+- <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
+- <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
+- <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
 
 #### Books
 
--   <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
--   <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
--   <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
--   <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
--   <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
+- <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
+- <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
+- <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
+- <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
+- <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
 
 #### Coding practice
 
--   <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
--   <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
--   <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
--   <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
--   <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
--   <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
--   <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
--   <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
--   <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
--   <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
--   <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
--   <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
--   <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
--   <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
+- <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
+- <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
+- <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
+- <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
+- <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
+- <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
+- <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
+- <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
+- <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
+- <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
+- <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
+- <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
+- <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
+- <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
 
 #### Courses
 
--   <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
--   <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
--   <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
--   <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
--   <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
+- <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
+- <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
+- <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
+- <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
+- <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
 
 #### Guides
 
--   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
--   <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
--   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+- <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+- <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+- <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
+- <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
+- <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
-### ***space***
+### **_space_**
 
-> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
+> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
 
-### *time*
+### _time_
 
-> *The time complexity for a data structure is in general more diverse than its space complexity.*
+> _The time complexity for a data structure is in general more diverse than its space complexity._
 
-### *Several operations*
+### _Several operations_
 
-> *In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element.*
+> _In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element._
 
-### *Dependent on data*
+### _Dependent on data_
 
-> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
+> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
--   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
--   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
--   <span id="881c">**The average-case complexity: when the data looks average**</span>
+- <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
+- <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
+- <span id="881c">**The average-case complexity: when the data looks average**</span>
 
 ### Big O notation
 
@@ -138,9 +135,9 @@ An Array data structure, or simply an Array, is a data structure consisting of a
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-*Complexity*  
-*Average*  
-*Access Search Insertion Deletion*
+_Complexity_  
+_Average_  
+_Access Search Insertion Deletion_
 
 O(1) O(n) O(1) O(n)
 
@@ -148,9 +145,9 @@ O(1) O(n) O(1) O(n)
 
 1.  <span id="b953">The index of an array **runs in sequence**</span>
 
-2. This could be useful for storing data that are required to be ordered, such as rankings or queues
+2.  This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3. In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3.  In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
@@ -168,7 +165,7 @@ The main difference is that object’s “index” need not be numbers and is no
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*avbxLAFocSV6vsl5.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*3GJiRoLyEoZ_aIlO" class="graf-image" /></figure>### *Definition*
 
-> *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
+> _A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia_
 
 Hash Tables are considered the more efficient data structure for lookup and for this reason, they are widely used.
 
@@ -176,9 +173,9 @@ Complexity
 Average  
 Access Search Insertion Deletion
 
--   <span id="f63f">O(1) O(1) O(1)</span>
+- <span id="f63f">O(1) O(1) O(1)</span>
 
-> *The code*
+> _The code_
 
 Note, here I am storing another object for every hash in my Hash Table.
 
@@ -190,7 +187,7 @@ Sets are pretty much what it sounds like. It’s the same intuition as Set in Ma
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AIQljh9p8Baw9TnE.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG" class="graf-image" /></figure>### *Definition*
 
-> *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
+> _A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia_
 
 The Set data structure is usually used to test whether elements belong to set of values. Rather then only containing elements, Sets are more used to perform operations on multiple values at once with methods such as union, intersect, etc…
 
@@ -198,15 +195,15 @@ Complexity
 Average  
 Access Search Insertion Deletion
 
--   <span id="daa6">O(n) O(n) O(n)</span>
+- <span id="daa6">O(n) O(n) O(n)</span>
 
-> *The code*
+> _The code_
 
 ### The Singly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*fLs64rV-Xq19aVCA.gif" class="graf-image" /></figure>### *Definition*
 
-> *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
+> _A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence._
 
 Linked Lists are among the simplest and most common data structures because it allows for efficient insertion or removal of elements from any position in the sequence.
 
@@ -215,15 +212,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
-------------------------------------------------------------------------
+---
 
 ### The Doubly Linked List
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*TQXiR-L_itiG3WP-.gif" class="graf-image" /></figure>### *Definition*
 
-> *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
+> _A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia_
 
 Having two node links allow traversal in either direction but adding or removing a node in a doubly linked list requires changing more links than the same operations on a Singly Linked List.
 
@@ -232,15 +229,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Stack
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*qsjYW-Lvfo22ecLE.gif" class="graf-image" /></figure>
 
-### *Definition*
+### _Definition_
 
-> *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
+> _A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia_
 
 A Stack often has a third method peek which allows to check the last pushed element without popping it.
 
@@ -249,13 +246,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Queue
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*YvfuX5tKP7-V0p7v.gif" class="graf-image" /></figure>### *Definition*
 
-> *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
+> _A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed._
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
@@ -264,13 +261,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(n)
 
-> *The code*
+> _The code_
 
 ### The Tree
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>### *Definition*
 
-> *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
+> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
 
 Complexity  
 Average  
@@ -284,15 +281,15 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*q31mL1kjFWlIzw3l.gif" class="graf-image" /></figure>### *Definition*
 
-> *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references.*
+> _A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references._
 
--   <span id="f896">A graph is **any** collection of nodes and edges.</span>
--   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
--   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
--   <span id="8f45">Any number of edges may leave a given node</span>
--   <span id="51cf">A Path is a sequence of nodes on a graph</span>
+- <span id="f896">A graph is **any** collection of nodes and edges.</span>
+- <span id="fbda">Much more relaxed in structure than a tree.</span>
+- <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
+- <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
+- <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+- <span id="8f45">Any number of edges may leave a given node</span>
+- <span id="51cf">A Path is a sequence of nodes on a graph</span>
 
 ### Cycle Visual
 
@@ -306,12 +303,9 @@ Adjacency matrix: Data are stored in a two-dimensional matrix, in which the rows
 
 Graph
 
-> *The code*
+> _The code_
 
-------------------------------------------------------------------------
-
-
-
+---
 
 # Leetcode
 
@@ -386,18 +380,18 @@ Dynamic array can be used.
  * @return {number}
  */
 let numDistinct = function (s, t) {
-    const lens = s.length;
-    const lent = t.length;
-    const dp = new Array(lent + 1).fill(0);
-    dp[0] = 1;
-    for (let i = 1; i <= lens; i++) {
-        for (let j = lent; j >= 1; j--) {
-            if (s[i - 1] === t[j - 1]) {
-                dp[j] += dp[j - 1];
-            }
-        }
+  const lens = s.length;
+  const lent = t.length;
+  const dp = new Array(lent + 1).fill(0);
+  dp[0] = 1;
+  for (let i = 1; i <= lens; i++) {
+    for (let j = lent; j >= 1; j--) {
+      if (s[i - 1] === t[j - 1]) {
+        dp[j] += dp[j - 1];
+      }
     }
-    return dp[lent];
+  }
+  return dp[lent];
 };
 ```
 
@@ -436,9 +430,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -472,8 +466,8 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -489,19 +483,19 @@ For every `node`:
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-    if (!root) {
-        return;
+  if (!root) {
+    return;
+  }
+  if (root.left !== null) {
+    root.left.next = root.right;
+    connect(root.left);
+  }
+  if (root.right !== null) {
+    if (root.next !== null) {
+      root.right.next = root.next.left;
     }
-    if (root.left !== null) {
-        root.left.next = root.right;
-        connect(root.left);
-    }
-    if (root.right !== null) {
-        if (root.next !== null) {
-            root.right.next = root.next.left;
-        }
-        connect(root.right);
-    }
+    connect(root.right);
+  }
 };
 ```
 
@@ -523,27 +517,27 @@ Level order traversal.
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-    if (!root) {
-        return;
-    }
+  if (!root) {
+    return;
+  }
 
-    const queue = [NaN, root];
-    while (queue.length > 1) {
-        const node = queue.shift();
-        if (node !== node) {
-            for (let i = 0; i < queue.length; i++) {
-                queue[i].next = queue[i + 1] || null;
-            }
-            queue.push(NaN);
-        } else {
-            if (node.left !== null) {
-                queue.push(node.left);
-            }
-            if (node.right !== null) {
-                queue.push(node.right);
-            }
-        }
+  const queue = [NaN, root];
+  while (queue.length > 1) {
+    const node = queue.shift();
+    if (node !== node) {
+      for (let i = 0; i < queue.length; i++) {
+        queue[i].next = queue[i + 1] || null;
+      }
+      queue.push(NaN);
+    } else {
+      if (node.left !== null) {
+        queue.push(node.left);
+      }
+      if (node.right !== null) {
+        queue.push(node.right);
+      }
     }
+  }
 };
 ```
 
@@ -581,8 +575,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -632,28 +626,28 @@ This also means post-order traversal is required.
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-    if (!root) {
-        return;
+  if (!root) {
+    return;
+  }
+  let next = null;
+  for (let node = root.next; node !== null; node = node.next) {
+    if (node.left !== null) {
+      next = node.left;
+      break;
     }
-    let next = null;
-    for (let node = root.next; node !== null; node = node.next) {
-        if (node.left !== null) {
-            next = node.left;
-            break;
-        }
-        if (node.right !== null) {
-            next = node.right;
-            break;
-        }
+    if (node.right !== null) {
+      next = node.right;
+      break;
     }
-    if (root.right !== null) {
-        root.right.next = next;
-    }
-    if (root.left !== null) {
-        root.left.next = root.right || next;
-    }
-    connect(root.right);
-    connect(root.left);
+  }
+  if (root.right !== null) {
+    root.right.next = next;
+  }
+  if (root.left !== null) {
+    root.left.next = root.right || next;
+  }
+  connect(root.right);
+  connect(root.left);
 };
 ```
 
@@ -675,27 +669,27 @@ Level order traversal. Exact same as [116. Populating Next Right Pointers in Eac
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 let connect = function (root) {
-    if (!root) {
-        return;
-    }
+  if (!root) {
+    return;
+  }
 
-    const queue = [NaN, root];
-    while (queue.length > 1) {
-        const node = queue.shift();
-        if (node !== node) {
-            for (let i = 0; i < queue.length; i++) {
-                queue[i].next = queue[i + 1] || null;
-            }
-            queue.push(NaN);
-        } else {
-            if (node.left !== null) {
-                queue.push(node.left);
-            }
-            if (node.right !== null) {
-                queue.push(node.right);
-            }
-        }
+  const queue = [NaN, root];
+  while (queue.length > 1) {
+    const node = queue.shift();
+    if (node !== node) {
+      for (let i = 0; i < queue.length; i++) {
+        queue[i].next = queue[i + 1] || null;
+      }
+      queue.push(NaN);
+    } else {
+      if (node.left !== null) {
+        queue.push(node.left);
+      }
+      if (node.right !== null) {
+        queue.push(node.right);
+      }
     }
+  }
 };
 ```
 
@@ -746,22 +740,22 @@ Dynamic Programming 101.
  * @return {number[][]}
  */
 let generate = function (numRows) {
-    if (numRows <= 0) {
-        return [];
-    }
+  if (numRows <= 0) {
+    return [];
+  }
 
-    const result = [[1]];
-    for (let i = 1; i < numRows; i++) {
-        const lastRow = result[i - 1];
-        const row = [1];
-        for (let j = 1; j < i; j++) {
-            row[j] = lastRow[j] + lastRow[j - 1];
-        }
-        row.push(1);
-        result.push(row);
+  const result = [[1]];
+  for (let i = 1; i < numRows; i++) {
+    const lastRow = result[i - 1];
+    const row = [1];
+    for (let j = 1; j < i; j++) {
+      row[j] = lastRow[j] + lastRow[j - 1];
     }
+    row.push(1);
+    result.push(row);
+  }
 
-    return result;
+  return result;
 };
 ```
 
@@ -813,19 +807,19 @@ State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)`
  * @return {number[]}
  */
 let getRow = function (rowIndex) {
-    if (rowIndex < 0) {
-        return [];
-    }
+  if (rowIndex < 0) {
+    return [];
+  }
 
-    const row = [1];
-    for (let i = 1; i <= rowIndex; i++) {
-        for (let j = i - 1; j > 0; j--) {
-            row[j] += row[j - 1];
-        }
-        row.push(1);
+  const row = [1];
+  for (let i = 1; i <= rowIndex; i++) {
+    for (let j = i - 1; j > 0; j--) {
+      row[j] += row[j - 1];
     }
+    row.push(1);
+  }
 
-    return row;
+  return row;
 };
 ```
 
@@ -880,19 +874,19 @@ Dynamic array can be used.
  * @return {number}
  */
 let minimumTotal = function (triangle) {
-    if (triangle.length <= 0) {
-        return 0;
-    }
+  if (triangle.length <= 0) {
+    return 0;
+  }
 
-    const dp = [triangle[0][0]];
-    for (let i = 1; i < triangle.length; i++) {
-        dp[i] = dp[i - 1] + triangle[i][i];
-        for (let j = i - 1; j >= 1; j--) {
-            dp[j] = Math.min(dp[j], dp[j - 1]) + triangle[i][j];
-        }
-        dp[0] += triangle[i][0];
+  const dp = [triangle[0][0]];
+  for (let i = 1; i < triangle.length; i++) {
+    dp[i] = dp[i - 1] + triangle[i][i];
+    for (let j = i - 1; j >= 1; j--) {
+      dp[j] = Math.min(dp[j], dp[j - 1]) + triangle[i][j];
     }
-    return Math.min(...dp);
+    dp[0] += triangle[i][0];
+  }
+  return Math.min(...dp);
 };
 ```
 
@@ -954,17 +948,17 @@ Because `price[j]` is lower that the base, using `j` as new base is guaranteed t
  * @return {number}
  */
 let maxProfit = function (prices) {
-    let max = 0;
-    let base = prices[0];
-    for (let i = 1; i < prices.length; i++) {
-        const profit = prices[i] - base;
-        if (profit > max) {
-            max = profit;
-        } else if (profit < 0) {
-            base = prices[i];
-        }
+  let max = 0;
+  let base = prices[0];
+  for (let i = 1; i < prices.length; i++) {
+    const profit = prices[i] - base;
+    if (profit > max) {
+      max = profit;
+    } else if (profit < 0) {
+      base = prices[i];
     }
-    return max;
+  }
+  return max;
 };
 ```
 
@@ -1032,13 +1026,13 @@ Sell immediately after the price drops. Or in other perspective, it is the sum o
  * @return {number}
  */
 let maxProfit = function (prices) {
-    let max = 0;
-    for (let i = 1; i < prices.length; i++) {
-        if (prices[i] > prices[i - 1]) {
-            max += prices[i] - prices[i - 1];
-        }
+  let max = 0;
+  for (let i = 1; i < prices.length; i++) {
+    if (prices[i] > prices[i - 1]) {
+      max += prices[i] - prices[i - 1];
     }
-    return max;
+  }
+  return max;
 };
 ```
 
@@ -1114,28 +1108,28 @@ Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
  * @return {number}
  */
 let maxProfit = function (prices) {
-    const len = prices.length;
-    if (len <= 1) {
-        return 0;
-    }
+  const len = prices.length;
+  if (len <= 1) {
+    return 0;
+  }
 
-    const dp = [0];
+  const dp = [0];
 
-    let min = prices[0];
-    for (let i = 1; i < len; i++) {
-        dp[i] = Math.max(dp[i - 1], prices[i] - min);
-        min = Math.min(prices[i], min);
-    }
+  let min = prices[0];
+  for (let i = 1; i < len; i++) {
+    dp[i] = Math.max(dp[i - 1], prices[i] - min);
+    min = Math.min(prices[i], min);
+  }
 
-    let p2 = 0;
-    let max = prices[len - 1];
-    for (let i = len - 2; i >= 0; i--) {
-        max = Math.max(prices[i], max);
-        p2 = Math.max(p2, max - prices[i]);
-        dp[i] += p2;
-    }
+  let p2 = 0;
+  let max = prices[len - 1];
+  for (let i = len - 2; i >= 0; i--) {
+    max = Math.max(prices[i], max);
+    p2 = Math.max(p2, max - prices[i]);
+    dp[i] += p2;
+  }
 
-    return Math.max(...dp);
+  return Math.max(...dp);
 };
 ```
 
@@ -1195,14 +1189,14 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
-    1.  `node.val` plus the max sum of a path that ends with `node.left`.
-    2.  `node.val` plus the max sum of a path that starts with `node.right`.
-    3.  `node.val` plus the max sum of both paths.
-    4.  Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
-    1.  The max-sum path is somewhere under the `node.left` subtree.
-    2.  The max-sum path is somewhere under the `node.right` subtree.
+- With `node.val`
+  1.  `node.val` plus the max sum of a path that ends with `node.left`.
+  2.  `node.val` plus the max sum of a path that starts with `node.right`.
+  3.  `node.val` plus the max sum of both paths.
+  4.  Just `node.val` (the max sum of both paths are negative).
+- Without`node.val` (disconnected)
+  1.  The max-sum path is somewhere under the `node.left` subtree.
+  2.  The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -1223,7 +1217,7 @@ Define a function that returns two values. The max sum of a path that may or may
  * @return {number}
  */
 let maxPathSum = function (root) {
-    return Math.max(..._maxPathSum(root));
+  return Math.max(..._maxPathSum(root));
 };
 
 /**
@@ -1231,13 +1225,20 @@ let maxPathSum = function (root) {
  * @return {number[]}
  */
 function _maxPathSum(root) {
-    if (!root) {
-        return [-Infinity, -Infinity];
-    }
+  if (!root) {
+    return [-Infinity, -Infinity];
+  }
 
-    const left = _maxPathSum(root.left);
-    const right = _maxPathSum(root.right);
-    return [Math.max(left[0], right[0], root.val + Math.max(0, left[1], right[1], left[1] + right[1])), Math.max(left[1], right[1], 0) + root.val];
+  const left = _maxPathSum(root.left);
+  const right = _maxPathSum(root.right);
+  return [
+    Math.max(
+      left[0],
+      right[0],
+      root.val + Math.max(0, left[1], right[1], left[1] + right[1])
+    ),
+    Math.max(left[1], right[1], 0) + root.val,
+  ];
 }
 ```
 
@@ -1258,9 +1259,9 @@ Just return the later (max sum of a path that ends with `root`). Maintain a glob
  * @return {number}
  */
 let maxPathSum = function (root) {
-    const global = { max: -Infinity };
-    _maxPathSum(root, global);
-    return global.max;
+  const global = { max: -Infinity };
+  _maxPathSum(root, global);
+  return global.max;
 };
 
 /**
@@ -1270,15 +1271,15 @@ let maxPathSum = function (root) {
  * @return {number[]}
  */
 function _maxPathSum(root, global) {
-    if (!root) {
-        return -Infinity;
-    }
+  if (!root) {
+    return -Infinity;
+  }
 
-    const left = _maxPathSum(root.left, global);
-    const right = _maxPathSum(root.right, global);
-    const localMax = Math.max(left, right, 0) + root.val;
-    global.max = Math.max(global.max, localMax, root.val + left + right);
-    return localMax;
+  const left = _maxPathSum(root.left, global);
+  const right = _maxPathSum(root.right, global);
+  const localMax = Math.max(left, right, 0) + root.val;
+  global.max = Math.max(global.max, localMax, root.val + left + right);
+  return localMax;
 }
 ```
 
@@ -1330,8 +1331,8 @@ Output: false
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-    const clean = s.toLowerCase().split(/[^a-z0-9]*/);
-    return clean.join('') === clean.reverse().join('');
+  const clean = s.toLowerCase().split(/[^a-z0-9]*/);
+  return clean.join("") === clean.reverse().join("");
 };
 ```
 
@@ -1345,13 +1346,13 @@ Remove non-alphanumeric characters then compare.
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-    const clean = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    for (let i = 0, j = clean.length - 1; i < j; i++, j--) {
-        if (clean[i] !== clean[j]) {
-            return false;
-        }
+  const clean = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  for (let i = 0, j = clean.length - 1; i < j; i++, j--) {
+    if (clean[i] !== clean[j]) {
+      return false;
     }
-    return true;
+  }
+  return true;
 };
 ```
 
@@ -1365,35 +1366,47 @@ Compare the char codes.
  * @return {boolean}
  */
 let isPalindrome = function (s) {
-    for (let i = 0, j = s.length - 1; i < j; i++, j--) {
-        let left = s.charCodeAt(i);
-        while (i < j && (left < 48 || (left > 57 && left < 65) || (left > 90 && left < 97) || left > 122)) {
-            left = s.charCodeAt(++i);
-        }
-        if (i >= j) {
-            return true;
-        }
-        if (left >= 65 && left <= 90) {
-            left += 32;
-        }
-
-        let right = s.charCodeAt(j);
-        while (i < j && (right < 48 || (right > 57 && right < 65) || (right > 90 && right < 97) || right > 122)) {
-            right = s.charCodeAt(--j);
-        }
-        if (i >= j) {
-            return true;
-        }
-        if (right >= 65 && right <= 90) {
-            right += 32;
-        }
-
-        if (left !== right) {
-            return false;
-        }
+  for (let i = 0, j = s.length - 1; i < j; i++, j--) {
+    let left = s.charCodeAt(i);
+    while (
+      i < j &&
+      (left < 48 ||
+        (left > 57 && left < 65) ||
+        (left > 90 && left < 97) ||
+        left > 122)
+    ) {
+      left = s.charCodeAt(++i);
+    }
+    if (i >= j) {
+      return true;
+    }
+    if (left >= 65 && left <= 90) {
+      left += 32;
     }
 
-    return true;
+    let right = s.charCodeAt(j);
+    while (
+      i < j &&
+      (right < 48 ||
+        (right > 57 && right < 65) ||
+        (right > 90 && right < 97) ||
+        right > 122)
+    ) {
+      right = s.charCodeAt(--j);
+    }
+    if (i >= j) {
+      return true;
+    }
+    if (right >= 65 && right <= 90) {
+      right += 32;
+    }
+
+    if (left !== right) {
+      return false;
+    }
+  }
+
+  return true;
 };
 ```
 
@@ -1423,11 +1436,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1475,57 +1488,57 @@ The items in the queue are not just words now. Parent nodes are also kept so tha
  * @return {string[][]}
  */
 function findLadders(beginWord, endWord, wordList) {
-    wordList = new Set(wordList);
-    if (!wordList.has(endWord)) {
-        return [];
+  wordList = new Set(wordList);
+  if (!wordList.has(endWord)) {
+    return [];
+  }
+
+  const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+
+  const result = [];
+  let isEndWordFound = false;
+  const levelWords = new Set();
+  const queue = [[beginWord, null], null];
+  while (queue.length > 1) {
+    const node = queue.shift();
+
+    if (node === null) {
+      if (isEndWordFound) {
+        break;
+      }
+      levelWords.forEach((word) => wordList.delete(word));
+      levelWords.clear();
+      queue.push(null);
+      continue;
     }
 
-    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
+    const word = node[0];
 
-    const result = [];
-    let isEndWordFound = false;
-    const levelWords = new Set();
-    const queue = [[beginWord, null], null];
-    while (queue.length > 1) {
-        const node = queue.shift();
+    for (let i = word.length - 1; i >= 0; i--) {
+      const head = word.slice(0, i);
+      const tail = word.slice(i + 1);
 
-        if (node === null) {
-            if (isEndWordFound) {
-                break;
+      for (let c = 0; c < 26; c++) {
+        if (ALPHABET[c] !== word[i]) {
+          const w = head + ALPHABET[c] + tail;
+          if (w === endWord) {
+            const path = [endWord];
+            for (let n = node; n !== null; n = n[1]) {
+              path.unshift(n[0]);
             }
-            levelWords.forEach((word) => wordList.delete(word));
-            levelWords.clear();
-            queue.push(null);
-            continue;
+            result.push(path);
+            isEndWordFound = true;
+          }
+          if (wordList.has(w)) {
+            levelWords.add(w);
+            queue.push([w, node]);
+          }
         }
-
-        const word = node[0];
-
-        for (let i = word.length - 1; i >= 0; i--) {
-            const head = word.slice(0, i);
-            const tail = word.slice(i + 1);
-
-            for (let c = 0; c < 26; c++) {
-                if (ALPHABET[c] !== word[i]) {
-                    const w = head + ALPHABET[c] + tail;
-                    if (w === endWord) {
-                        const path = [endWord];
-                        for (let n = node; n !== null; n = n[1]) {
-                            path.unshift(n[0]);
-                        }
-                        result.push(path);
-                        isEndWordFound = true;
-                    }
-                    if (wordList.has(w)) {
-                        levelWords.add(w);
-                        queue.push([w, node]);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 
-    return result;
+  return result;
 }
 ```
 
@@ -1553,11 +1566,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1606,43 +1619,43 @@ To find all the next words, instead of filtering the `wordList`, enumerate all 2
  * @return {number}
  */
 let ladderLength = function (beginWord, endWord, wordList) {
-    wordList = new Set(wordList);
-    if (!wordList.has(endWord)) {
-        return 0;
-    }
-
-    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
-
-    let level = 1;
-    const queue = [beginWord, null];
-    while (queue.length > 1) {
-        const word = queue.shift();
-
-        if (word === null) {
-            level++;
-            queue.push(null);
-            continue;
-        }
-
-        for (let i = word.length - 1; i >= 0; i--) {
-            const head = word.slice(0, i);
-            const tail = word.slice(i + 1);
-
-            for (let c = 0; c < 26; c++) {
-                if (ALPHABET[c] !== word[i]) {
-                    const word = head + ALPHABET[c] + tail;
-                    if (word === endWord) {
-                        return level + 1;
-                    }
-                    if (wordList.delete(word)) {
-                        queue.push(word);
-                    }
-                }
-            }
-        }
-    }
-
+  wordList = new Set(wordList);
+  if (!wordList.has(endWord)) {
     return 0;
+  }
+
+  const ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+
+  let level = 1;
+  const queue = [beginWord, null];
+  while (queue.length > 1) {
+    const word = queue.shift();
+
+    if (word === null) {
+      level++;
+      queue.push(null);
+      continue;
+    }
+
+    for (let i = word.length - 1; i >= 0; i--) {
+      const head = word.slice(0, i);
+      const tail = word.slice(i + 1);
+
+      for (let c = 0; c < 26; c++) {
+        if (ALPHABET[c] !== word[i]) {
+          const word = head + ALPHABET[c] + tail;
+          if (word === endWord) {
+            return level + 1;
+          }
+          if (wordList.delete(word)) {
+            queue.push(word);
+          }
+        }
+      }
+    }
+  }
+
+  return 0;
 };
 ```
 
@@ -1686,23 +1699,23 @@ Build a Set from the list. Pick a number, find all it's adjacent numbers that ar
  * @return {number}
  */
 let longestConsecutive = function (nums) {
-    const numSet = new Set(nums);
-    let maxCount = 0;
-    while (numSet.size > 0) {
-        const num = numSet.values().next().value;
-        numSet.delete(num);
-        let count = 1;
-        for (let n = num + 1; numSet.delete(n); n++) {
-            count++;
-        }
-        for (let n = num - 1; numSet.delete(n); n--) {
-            count++;
-        }
-        if (count > maxCount) {
-            maxCount = count;
-        }
+  const numSet = new Set(nums);
+  let maxCount = 0;
+  while (numSet.size > 0) {
+    const num = numSet.values().next().value;
+    numSet.delete(num);
+    let count = 1;
+    for (let n = num + 1; numSet.delete(n); n++) {
+      count++;
     }
-    return maxCount;
+    for (let n = num - 1; numSet.delete(n); n--) {
+      count++;
+    }
+    if (count > maxCount) {
+      maxCount = count;
+    }
+  }
+  return maxCount;
 };
 ```
 
@@ -1776,11 +1789,11 @@ To write a clean solution for this promblem, use `0` as indicator of leaf node. 
  * @return {number}
  */
 let sumNumbers = function (root, sum = 0) {
-    if (!root) {
-        return 0;
-    }
-    sum = sum * 10 + root.val;
-    return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
+  if (!root) {
+    return 0;
+  }
+  sum = sum * 10 + root.val;
+  return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
 };
 ```
 
@@ -1845,72 +1858,72 @@ So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor o
  * @return {void} Do not return anything, modify board in-place instead.
  */
 let solve = function (board) {
-    const height = board.length;
-    if (height <= 1) {
-        return;
+  const height = board.length;
+  if (height <= 1) {
+    return;
+  }
+  const width = board[0].length;
+  if (width <= 1) {
+    return;
+  }
+
+  const rowend = height - 1;
+  const colend = width - 1;
+
+  const queue = [];
+
+  for (let row = 0; row < height; row++) {
+    if (board[row][0] === "O") {
+      board[row][0] = "#";
+      queue.push(row, 0);
     }
-    const width = board[0].length;
-    if (width <= 1) {
-        return;
+    if (board[row][colend] === "O") {
+      board[row][colend] = "#";
+      queue.push(row, colend);
     }
+  }
 
-    const rowend = height - 1;
-    const colend = width - 1;
-
-    const queue = [];
-
-    for (let row = 0; row < height; row++) {
-        if (board[row][0] === 'O') {
-            board[row][0] = '#';
-            queue.push(row, 0);
-        }
-        if (board[row][colend] === 'O') {
-            board[row][colend] = '#';
-            queue.push(row, colend);
-        }
+  for (let col = 0; col < width; col++) {
+    if (board[0][col] === "O") {
+      board[0][col] = "#";
+      queue.push(0, col);
     }
+    if (board[rowend][col] === "O") {
+      board[rowend][col] = "#";
+      queue.push(rowend, col);
+    }
+  }
 
+  while (queue.length > 0) {
+    const row = queue.shift();
+    const col = queue.shift();
+    if (row < rowend && board[row + 1][col] === "O") {
+      board[row + 1][col] = "#";
+      queue.push(row + 1, col);
+    }
+    if (row > 0 && board[row - 1][col] === "O") {
+      board[row - 1][col] = "#";
+      queue.push(row - 1, col);
+    }
+    if (board[row][col + 1] === "O") {
+      board[row][col + 1] = "#";
+      queue.push(row, col + 1);
+    }
+    if (board[row][col - 1] === "O") {
+      board[row][col - 1] = "#";
+      queue.push(row, col - 1);
+    }
+  }
+
+  for (let row = 0; row < height; row++) {
     for (let col = 0; col < width; col++) {
-        if (board[0][col] === 'O') {
-            board[0][col] = '#';
-            queue.push(0, col);
-        }
-        if (board[rowend][col] === 'O') {
-            board[rowend][col] = '#';
-            queue.push(rowend, col);
-        }
+      if (board[row][col] === "#") {
+        board[row][col] = "O";
+      } else if (board[row][col] === "O") {
+        board[row][col] = "X";
+      }
     }
-
-    while (queue.length > 0) {
-        const row = queue.shift();
-        const col = queue.shift();
-        if (row < rowend && board[row + 1][col] === 'O') {
-            board[row + 1][col] = '#';
-            queue.push(row + 1, col);
-        }
-        if (row > 0 && board[row - 1][col] === 'O') {
-            board[row - 1][col] = '#';
-            queue.push(row - 1, col);
-        }
-        if (board[row][col + 1] === 'O') {
-            board[row][col + 1] = '#';
-            queue.push(row, col + 1);
-        }
-        if (board[row][col - 1] === 'O') {
-            board[row][col - 1] = '#';
-            queue.push(row, col - 1);
-        }
-    }
-
-    for (let row = 0; row < height; row++) {
-        for (let col = 0; col < width; col++) {
-            if (board[row][col] === '#') {
-                board[row][col] = 'O';
-            } else if (board[row][col] === 'O') {
-                board[row][col] = 'X';
-            }
-        }
-    }
+  }
 };
 ```
 
@@ -1980,24 +1993,24 @@ DFS. Cache the visited node before entering the next recursion.
  * @return {UndirectedGraphNode}
  */
 let cloneGraph = function (graph) {
-    const cache = {};
-    return _clone(graph);
+  const cache = {};
+  return _clone(graph);
 
-    function _clone(graph) {
-        if (!graph) {
-            return graph;
-        }
-        const label = graph.label;
-        if (!cache[label]) {
-            cache[label] = new UndirectedGraphNode(label);
-            cache[label].neighbors = graph.neighbors.map(_clone);
-        }
-        return cache[label];
+  function _clone(graph) {
+    if (!graph) {
+      return graph;
     }
+    const label = graph.label;
+    if (!cache[label]) {
+      cache[label] = new UndirectedGraphNode(label);
+      cache[label].neighbors = graph.neighbors.map(_clone);
+    }
+    return cache[label];
+  }
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp 'binary-tree-upside-down')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp "binary-tree-upside-down")
 
 ```js
 /**
@@ -2012,37 +2025,37 @@ let cloneGraph = function (graph) {
  * @return {TreeNode}
  */
 const upsideDownBinaryTree = function (root) {
-    let curr = root;
-    let next = null;
-    let temp = null;
-    let prev = null;
-    while (curr !== null) {
-        next = curr.left;
-        curr.left = temp;
-        temp = curr.right;
-        curr.right = prev;
-        prev = curr;
-        curr = next;
-    }
-    return prev;
+  let curr = root;
+  let next = null;
+  let temp = null;
+  let prev = null;
+  while (curr !== null) {
+    next = curr.left;
+    curr.left = temp;
+    temp = curr.right;
+    curr.right = prev;
+    prev = curr;
+    curr = next;
+  }
+  return prev;
 };
 
 // another
 
 const upsideDownBinaryTree = function (root) {
-    if (root == null || root.left == null) {
-        return root;
-    }
-    const newRoot = upsideDownBinaryTree(root.left);
-    root.left.left = root.right;
-    root.left.right = root;
-    root.left = null;
-    root.right = null;
-    return newRoot;
+  if (root == null || root.left == null) {
+    return root;
+  }
+  const newRoot = upsideDownBinaryTree(root.left);
+  root.left.left = root.right;
+  root.left.right = root;
+  root.left = null;
+  root.right = null;
+  return newRoot;
 };
 ```
 
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png "maximum-sum-circular-subarray")
 
 ```js
 /**
@@ -2050,19 +2063,19 @@ const upsideDownBinaryTree = function (root) {
  * @return {number}
  */
 const maxSubarraySumCircular = function (A) {
-    let minSum = Infinity,
-        sum = 0,
-        maxSum = -Infinity,
-        curMax = 0,
-        curMin = 0;
-    for (let a of A) {
-        sum += a;
-        curMax = Math.max(curMax + a, a);
-        maxSum = Math.max(maxSum, curMax);
-        curMin = Math.min(curMin + a, a);
-        minSum = Math.min(minSum, curMin);
-    }
-    return maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
+  let minSum = Infinity,
+    sum = 0,
+    maxSum = -Infinity,
+    curMax = 0,
+    curMin = 0;
+  for (let a of A) {
+    sum += a;
+    curMax = Math.max(curMax + a, a);
+    maxSum = Math.max(maxSum, curMax);
+    curMin = Math.min(curMin + a, a);
+    minSum = Math.min(minSum, curMin);
+  }
+  return maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
 };
 ```
 
@@ -2099,8 +2112,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -2160,14 +2173,14 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
-![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg "meeting-room-ii")
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg "meeting-room-ii")
 
 ```javascript
 /**
@@ -2175,22 +2188,22 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
  * @return {number}
  */
 const minMeetingRooms = function (intervals) {
-    const len = intervals.length;
-    const starts = new Array(len);
-    const ends = new Array(len);
-    for (let i = 0; i < len; i++) {
-        starts[i] = intervals[i][0];
-        ends[i] = intervals[i][1];
-    }
-    starts.sort((a, b) => a - b);
-    ends.sort((a, b) => a - b);
-    let rooms = 0;
-    let endsIdx = 0;
-    for (let i = 0; i < len; i++) {
-        if (starts[i] < ends[endsIdx]) rooms++;
-        else endsIdx++;
-    }
-    return rooms;
+  const len = intervals.length;
+  const starts = new Array(len);
+  const ends = new Array(len);
+  for (let i = 0; i < len; i++) {
+    starts[i] = intervals[i][0];
+    ends[i] = intervals[i][1];
+  }
+  starts.sort((a, b) => a - b);
+  ends.sort((a, b) => a - b);
+  let rooms = 0;
+  let endsIdx = 0;
+  for (let i = 0; i < len; i++) {
+    if (starts[i] < ends[endsIdx]) rooms++;
+    else endsIdx++;
+  }
+  return rooms;
 };
 ```
 

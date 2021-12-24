@@ -1,6 +1,6 @@
 ---
-title: 'JavaScript Asynchronous Programming and Callbacks'
-description: 'JavaScript is synchronous by default, and is single threaded. This means that code cannot create new threads and run in parallel. Find out what asynchronous code means and how it looks like'
+title: "JavaScript Asynchronous Programming and Callbacks"
+description: "JavaScript is synchronous by default, and is single threaded. This means that code cannot create new threads and run in parallel. Find out what asynchronous code means and how it looks like"
 ---
 
 ## Asynchronicity in Programming Languages
@@ -42,8 +42,8 @@ More recently, Node.js introduced a non-blocking I/O environment to extend this 
 You can't know when a user is going to click a button. So, you **define an event handler for the click event**. This event handler accepts a function, which will be called when the event is triggered:
 
 ```js
-document.getElementById('button').addEventListener('click', () => {
-    //item clicked
+document.getElementById("button").addEventListener("click", () => {
+  //item clicked
 });
 ```
 
@@ -54,9 +54,9 @@ A callback is a simple function that's passed as a value to another function, an
 It's common to wrap all your client code in a `load` event listener on the `window` object, which runs the callback function only when the page is ready:
 
 ```js
-window.addEventListener('load', () => {
-    //window loaded
-    //do what you want
+window.addEventListener("load", () => {
+  //window loaded
+  //do what you want
 });
 ```
 
@@ -66,7 +66,7 @@ One common example is by using timers:
 
 ```js
 setTimeout(() => {
-    // runs after 2 seconds
+  // runs after 2 seconds
 }, 2000);
 ```
 
@@ -75,11 +75,11 @@ XHR requests also accept a callback, in this example by assigning a function to 
 ```js
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-        xhr.status === 200 ? console.log(xhr.responseText) : console.error('error');
-    }
+  if (xhr.readyState === 4) {
+    xhr.status === 200 ? console.log(xhr.responseText) : console.error("error");
+  }
 };
-xhr.open('GET', 'https://yoursite.com');
+xhr.open("GET", "https://yoursite.com");
 xhr.send();
 ```
 
@@ -90,15 +90,15 @@ How do you handle errors with callbacks? One very common strategy is to use what
 If there is no error, the object is `null`. If there is an error, it contains some description of the error and other information.
 
 ```js
-fs.readFile('/file.json', (err, data) => {
-    if (err !== null) {
-        //handle error
-        console.log(err);
-        return;
-    }
+fs.readFile("/file.json", (err, data) => {
+  if (err !== null) {
+    //handle error
+    console.log(err);
+    return;
+  }
 
-    //no errors, process data
-    console.log(data);
+  //no errors, process data
+  console.log(data);
 });
 ```
 
@@ -109,14 +109,14 @@ Callbacks are great for simple cases!
 However every callback adds a level of nesting, and when you have lots of callbacks, the code starts to be complicated very quickly:
 
 ```js
-window.addEventListener('load', () => {
-    document.getElementById('button').addEventListener('click', () => {
-        setTimeout(() => {
-            items.forEach((item) => {
-                //your code here
-            });
-        }, 2000);
-    });
+window.addEventListener("load", () => {
+  document.getElementById("button").addEventListener("click", () => {
+    setTimeout(() => {
+      items.forEach((item) => {
+        //your code here
+      });
+    }, 2000);
+  });
 });
 ```
 

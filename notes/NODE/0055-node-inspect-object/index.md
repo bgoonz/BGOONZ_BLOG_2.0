@@ -1,6 +1,6 @@
 ---
 title: How to log an object in Node.js
-description: 'Logging objects in Node.js'
+description: "Logging objects in Node.js"
 ---
 
 When you type `console.log()` into a JavaScript program that runs in the browser, that is going to create a nice entry in the Browser Console:
@@ -65,7 +65,7 @@ where `2` is the number of spaces to use for indentation.
 Another option is to use
 
 ```js
-require('util').inspect.defaultOptions.depth = null;
+require("util").inspect.defaultOptions.depth = null;
 console.log(obj);
 ```
 

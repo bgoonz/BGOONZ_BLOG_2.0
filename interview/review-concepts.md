@@ -1,20 +1,17 @@
 ---
-title:  Review Of Concepts
+title: Review Of Concepts
 weight: 0
 excerpt: Basic Concepts review
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
   type: stackbit_page_meta
 template: docs
 ---
 
-
 <div id="search"></div>
-
-
 
 # Review-Of-Previous-Concepts
 

@@ -1,6 +1,6 @@
 ---
-title: 'The Node.js Event Loop'
-description: 'The Event Loop is one of the most important aspects to understand about Node.js'
+title: "The Node.js Event Loop"
+description: "The Event Loop is one of the most important aspects to understand about Node.js"
 ---
 
 ## Introduction

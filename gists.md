@@ -21,7 +21,6 @@ template: docs
 <hr>
 <br>
 
-
 ---
 
 ## Featured Gists:

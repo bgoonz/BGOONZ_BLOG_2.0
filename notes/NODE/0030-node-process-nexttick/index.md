@@ -1,6 +1,6 @@
 ---
-title: 'Understanding process.nextTick()'
-description: 'The Node.js process.nextTick function interacts with the event loop in a special way'
+title: "Understanding process.nextTick()"
+description: "The Node.js process.nextTick function interacts with the event loop in a special way"
 ---
 
 As you try to understand the Node.js event loop, one important part of it is `process.nextTick()`.
@@ -11,7 +11,7 @@ When we pass a function to `process.nextTick()`, we instruct the engine to invok
 
 ```js
 process.nextTick(() => {
-    //do something
+  //do something
 });
 ```
 

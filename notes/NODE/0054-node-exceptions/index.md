@@ -1,6 +1,6 @@
 ---
 title: Error handling in Node.js
-description: 'How to handle errors during the execution of a Node.js application'
+description: "How to handle errors during the execution of a Node.js application"
 ---
 
 Errors in Node.js are handled through exceptions.
@@ -24,14 +24,14 @@ In Node.js, we don't throw strings, we just throw Error objects.
 An error object is an object that is either an instance of the Error object, or extends the Error class, provided in the [Error core module](https://nodejs.org/api/errors.html):
 
 ```js
-throw new Error('Ran out of coffee');
+throw new Error("Ran out of coffee");
 ```
 
 or
 
 ```js
 class NotEnoughCoffeeError extends Error {
-    //...
+  //...
 }
 throw new NotEnoughCoffeeError();
 ```
@@ -44,7 +44,7 @@ Any exception raised in the lines of code included in the `try` block is handled
 
 ```js
 try {
-    //lines of code
+  //lines of code
 } catch (e) {}
 ```
 
@@ -59,9 +59,9 @@ If an uncaught exception gets thrown during the execution of your program, your 
 To solve this, you listen for the `uncaughtException` event on the `process` object:
 
 ```js
-process.on('uncaughtException', (err) => {
-    console.error('There was an uncaught error', err);
-    process.exit(1); //mandatory (as per the Node.js docs)
+process.on("uncaughtException", (err) => {
+  console.error("There was an uncaught error", err);
+  process.exit(1); //mandatory (as per the Node.js docs)
 });
 ```
 
@@ -73,23 +73,23 @@ Using promises you can chain different operations, and handle errors at the end:
 
 ```js
 doSomething1()
-    .then(doSomething2)
-    .then(doSomething3)
-    .catch((err) => console.error(err));
+  .then(doSomething2)
+  .then(doSomething3)
+  .catch((err) => console.error(err));
 ```
 
 How do you know where the error occurred? You don't really know, but you can handle errors in each of the functions you call (`doSomethingX`), and inside the error handler throw a new error, that's going to call the outside `catch` handler:
 
 ```js
 const doSomething1 = () => {
+  //...
+  try {
     //...
-    try {
-        //...
-    } catch (err) {
-        //... handle it locally
-        throw new Error(err.message);
-    }
-    //...
+  } catch (err) {
+    //... handle it locally
+    throw new Error(err.message);
+  }
+  //...
 };
 ```
 
@@ -97,19 +97,19 @@ To be able to handle errors locally without handling them in the function we cal
 
 ```js
 doSomething1()
-    .then(() => {
-        return doSomething2().catch((err) => {
-            //handle error
-            throw err; //break the chain!
-        });
-    })
-    .then(() => {
-        return doSomething2().catch((err) => {
-            //handle error
-            throw err; //break the chain!
-        });
-    })
-    .catch((err) => console.error(err));
+  .then(() => {
+    return doSomething2().catch((err) => {
+      //handle error
+      throw err; //break the chain!
+    });
+  })
+  .then(() => {
+    return doSomething2().catch((err) => {
+      //handle error
+      throw err; //break the chain!
+    });
+  })
+  .catch((err) => console.error(err));
 ```
 
 ## Error handling with async/await
@@ -118,10 +118,10 @@ Using async/await, you still need to catch errors, and you do it this way:
 
 ```js
 async function someFunction() {
-    try {
-        await someOtherFunction();
-    } catch (err) {
-        console.error(err.message);
-    }
+  try {
+    await someOtherFunction();
+  } catch (err) {
+    console.error(err.message);
+  }
 }
 ```

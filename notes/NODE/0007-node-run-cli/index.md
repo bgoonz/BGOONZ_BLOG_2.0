@@ -1,6 +1,6 @@
 ---
 title: Run Node.js scripts from the command line
-description: 'How to run any Node.js script from the CLI'
+description: "How to run any Node.js script from the CLI"
 ---
 
 The usual way to run a Node.js program is to run the `node` globally available command (once you install Node.js) and pass the name of the file you want to execute.

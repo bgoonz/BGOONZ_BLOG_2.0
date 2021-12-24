@@ -1,6 +1,6 @@
 ---
 title: Discover JavaScript Timers
-description: 'When writing JavaScript code, you might want to delay the execution of a function. Learn how to use setTimeout and setInterval to schedule functions in the future'
+description: "When writing JavaScript code, you might want to delay the execution of a function. Learn how to use setTimeout and setInterval to schedule functions in the future"
 ---
 
 ## `setTimeout()`
@@ -11,11 +11,11 @@ This is the job of `setTimeout`. You specify a callback function to execute late
 
 ```js
 setTimeout(() => {
-    // runs after 2 seconds
+  // runs after 2 seconds
 }, 2000);
 
 setTimeout(() => {
-    // runs after 50 milliseconds
+  // runs after 50 milliseconds
 }, 50);
 ```
 
@@ -23,7 +23,7 @@ This syntax defines a new function. You can call whatever other function you wan
 
 ```js
 const myFunction = (firstParam, secondParam) => {
-    // do something
+  // do something
 };
 
 // runs after 2 seconds
@@ -34,7 +34,7 @@ setTimeout(myFunction, 2000, firstParam, secondParam);
 
 ```js
 const id = setTimeout(() => {
-    // should run after 2 seconds
+  // should run after 2 seconds
 }, 2000);
 
 // I changed my mind
@@ -47,10 +47,10 @@ If you specify the timeout delay to `0`, the callback function will be executed 
 
 ```js
 setTimeout(() => {
-    console.log('after ');
+  console.log("after ");
 }, 0);
 
-console.log(' before ');
+console.log(" before ");
 ```
 
 will print `before after`.
@@ -65,7 +65,7 @@ This is especially useful to avoid blocking the CPU on intensive tasks and let o
 
 ```js
 setInterval(() => {
-    // runs every 2 seconds
+  // runs every 2 seconds
 }, 2000);
 ```
 
@@ -73,7 +73,7 @@ The function above runs every 2 seconds unless you tell it to stop, using `clear
 
 ```js
 const id = setInterval(() => {
-    // runs every 2 seconds
+  // runs every 2 seconds
 }, 2000);
 
 clearInterval(id);
@@ -83,11 +83,11 @@ It's common to call `clearInterval` inside the setInterval callback function, to
 
 ```js
 const interval = setInterval(() => {
-    if (App.somethingIWait === 'arrived') {
-        clearInterval(interval);
-        return;
-    }
-    // otherwise do things
+  if (App.somethingIWait === "arrived") {
+    clearInterval(interval);
+    return;
+  }
+  // otherwise do things
 }, 100);
 ```
 
@@ -111,9 +111,9 @@ To avoid this, you can schedule a recursive setTimeout to be called when the cal
 
 ```js
 const myFunction = () => {
-    // do something
+  // do something
 
-    setTimeout(myFunction, 1000);
+  setTimeout(myFunction, 1000);
 };
 
 setTimeout(myFunction, 1000);

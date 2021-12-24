@@ -3,9 +3,9 @@
 > Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.
 
 <<<<<<< HEAD
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
 =======
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
@@ -332,23 +332,23 @@ console.log(animalCount.test("15 pigchickens"));
 
 <<<<<<< HEAD
 
--   [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
--   [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
--   [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
--   [](#p_KItk5iNp9m)We are now at position 6 (the start of _pigs_) and at the three-way branch in the diagram. We don’t see _cow_ or _chicken_ here, but we do see _pig_, so we take that branch.
--   [](#p_SowlGZC6lM)At position 9, after the three-way branch, one path skips the _s_ box and goes straight to the final word boundary, while the other path matches an _s_. There is an _s_ character here, not a word boundary, so we go through the _s_ box.
--   [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
+- [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
+- [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
+- [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
+- [](#p_KItk5iNp9m)We are now at position 6 (the start of _pigs_) and at the three-way branch in the diagram. We don’t see _cow_ or _chicken_ here, but we do see _pig_, so we take that branch.
+- [](#p_SowlGZC6lM)At position 9, after the three-way branch, one path skips the _s_ box and goes straight to the final word boundary, while the other path matches an _s_. There is an _s_ character here, not a word boundary, so we go through the _s_ box.
+- [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
 
 ## [](#h_NFMtGK0tD3)Backtracking
 
 =======
 
--   [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
--   [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
--   [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
--   [](#p_KItk5iNp9m)We are now at position 6 (the start of _pigs_) and at the three-way branch in the diagram. We don’t see _cow_ or _chicken_ here, but we do see _pig_, so we take that branch.
--   [](#p_SowlGZC6lM)At position 9, after the three-way branch, one path skips the _s_ box and goes straight to the final word boundary, while the other path matches an _s_. There is an _s_ character here, not a word boundary, so we go through the _s_ box.
--   [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
+- [](#p_bgxoerTVW4)At position 4, there is a word boundary, so we can move past the first box.
+- [](#p_YCV1/H+Rbe)Still at position 4, we find a digit, so we can also move past the second box.
+- [](#p_fQdWHxKgCF)At position 5, one path loops back to before the second (digit) box, while the other moves forward through the box that holds a single space character. There is a space here, not a digit, so we must take the second path.
+- [](#p_KItk5iNp9m)We are now at position 6 (the start of _pigs_) and at the three-way branch in the diagram. We don’t see _cow_ or _chicken_ here, but we do see _pig_, so we take that branch.
+- [](#p_SowlGZC6lM)At position 9, after the three-way branch, one path skips the _s_ box and goes straight to the final word boundary, while the other path matches an _s_. There is an _s_ character here, not a word boundary, so we go through the _s_ box.
+- [](#p_oJRMcnDoAt)We’re at position 10 (the end of the string) and can match only a word boundary. The end of a string counts as a word boundary, so we go through the last box and have successfully matched this string.
 
 ## [](#h_NFMtGK0tD3)Backtracking
 
@@ -649,18 +649,18 @@ outputdir=/home/marijn/enemies/davaeorn
 
 <<<<<<< HEAD
 
--   [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
--   [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
--   [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
--   [](#p_bCaQwCXJCi)Anything else is invalid.
+- [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
+- [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
+- [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
+- [](#p_bCaQwCXJCi)Anything else is invalid.
 
 =======
 
--   [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
--   [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
--   [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
--   [](#p_bCaQwCXJCi)Anything else is invalid.
-    > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
+- [](#p_jIewfc/40B)Blank lines and lines starting with semicolons are ignored.
+- [](#p_O/dGCr+aR5)Lines wrapped in `[` and `]` start a new section.
+- [](#p_l2Yjl1fUVB)Lines containing an alphanumeric identifier followed by an `=` character add a setting to the current section.
+- [](#p_bCaQwCXJCi)Anything else is invalid.
+  > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 [](#p_clbD+OAS4y)Our task is to convert a string like this into an object whose properties hold strings for settings written before the first section header and subobjects for sections, with those subobjects holding the section’s settings.
 
@@ -950,11 +950,11 @@ console.log(\`Incorrectly accepted '${str}'\`);
 [](#p_WHNmLsGl4C)Finally, to make the _e_ case insensitive, either add an `i` option to the regular expression or use `[eE]`.
 
 <<<<<<< HEAD
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
 
 # [Source](https://eloquentjavascript.net/09_regexp.html)
 
-[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html 'previous chapter') [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html 'cover') [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html 'next chapter')
+[◀](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/08_error.html "previous chapter") [◆](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/index.html "cover") [▶](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/10_modules.html "next chapter")
 
 [Source](https://eloquentjavascript.net/09_regexp.html)
 

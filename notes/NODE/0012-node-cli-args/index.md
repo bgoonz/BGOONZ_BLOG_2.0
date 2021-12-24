@@ -1,6 +1,6 @@
 ---
 title: Node.js, accept arguments from the command line
-description: 'How to accept arguments in a Node.js program passed from the command line'
+description: "How to accept arguments in a Node.js program passed from the command line"
 ---
 
 You can pass any number of arguments when invoking a Node.js application using
@@ -39,7 +39,7 @@ You can iterate over all the arguments (including the node path and the file pat
 
 ```js
 process.argv.forEach((val, index) => {
-    console.log(`${index}: ${val}`);
+  console.log(`${index}: ${val}`);
 });
 ```
 
@@ -72,8 +72,8 @@ node app.js name=joe
 parse it. The best way to do so is by using the [`minimist`](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
 
 ```js
-const args = require('minimist')(process.argv.slice(2));
-args['name']; //joe
+const args = require("minimist")(process.argv.slice(2));
+args["name"]; //joe
 ```
 
 This time you need to use double dashes before each argument name:
