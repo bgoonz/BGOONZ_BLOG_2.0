@@ -29,17 +29,16 @@ seo:
       relativeUrl: true
 template: docs
 ---
-# <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;"></span>
+# <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;"> SITEMAP </span>
 
-***
+
 
 #
 
-<div id="search>
+\ <div id="search" className=" />
 
 # - [**✅HOME🌍**](https://bgoonz-blog.netlify.app/)
 
-***
 
 ### [**✅blog/🌍**](https://bgoonz-blog.netlify.app/blog/)
 

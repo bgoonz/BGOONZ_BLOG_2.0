@@ -4,6 +4,7 @@
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
+
 </div>
 
 ---
@@ -1425,6 +1426,32 @@ npx @appnest/readme generate
 sudo -u postgres psql
 ```
 
+
+
+---
+
+
+### Technologies Used:
+
+| URL                  | https://bgoonz-blog.netlify.app                          |
+|----------------------|----------------------------------------------------------|
+| Miscellaneous        | webpack ; Prism                                          |
+| Widgets              | Facebook ; AddThis                                       |
+| Analytics            | Moat ; Google Analytics ; Google Ads Conversion Tracking |
+| Comment systems      | Facebook API & REPL.it Database                          |
+| Security             |  Netlify Access                                          | 
+| Font scripts         | Google Font API                                          |
+| CDN                  | Unpkg ; jsDelivr ; jQuery CDN ; Netlify                  |
+| Marketing automation | MailChimp                                                | 
+| Advertising          | Google AdSense                                           |
+| Tag managers         | Google Tag Manager                                       |
+| Live chat            | Smartsupp ; LiveChat : Mesibo API                        |
+| JavaScript libraries | Lodash ; Dojo ; core-js ; jQuery                         |
+
+</div>
+ 
+ 
+ 
 ---
 
 # 96. URL To Subscribe To YouTube Channel
