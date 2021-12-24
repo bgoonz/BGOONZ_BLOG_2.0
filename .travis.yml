@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
+script:
+  - cd test/support/express3 && npm install
+  - cd ../express4 && npm install
+  - cd ../../..
+  - npm test

@@ -111,7 +111,7 @@ module.exports = {
                 // The migration is an incremental process so we import TypeScript modules
                 // from JavaScript files.
                 // By default, `import/resolver` only supports JavaScript modules.
-                extensions: ['.js', '.ts', '.tsx'],
+                extensions: ['.js'],
             },
         },
     },
