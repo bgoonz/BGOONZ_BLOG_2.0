@@ -6857,3 +6857,9 @@ algoliasearchNetlify({
     branch: 'master',
     selector: 'div.search'
 });
+window.onload = function () {
+    let searchbar = document.createElement('div');
+
+    searchbar.id = 'search';
+    document.body.appendChild(searchbar);
+};
