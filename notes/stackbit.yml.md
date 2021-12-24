@@ -76,82 +76,82 @@ Read the following sections to learn how to configure `stackbit.yaml`
 
 You can create and edit your Stackbit Content Model using the [Content Model screen](https://www.stackbit.com/docs/user-manual/modeling-content/) in the Stackbit Studio.
 
--   [
+- [
 
-    Properties
+  Properties
 
-    This section describes the base properties of stackbit.yaml and when to use them
+  This section describes the base properties of stackbit.yaml and when to use them
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/properties/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/properties/)
 
--   [
+- [
 
-    Import
+  Import
 
-    Importing initial theme content into the CMS
+  Importing initial theme content into the CMS
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/import/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/import/)
 
--   [
+- [
 
-    Assets
+  Assets
 
-    Assets define how files, such as images, are stored and handled in a project
+  Assets define how files, such as images, are stored and handled in a project
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/assets/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/assets/)
 
--   [
+- [
 
-    Logic Fields
+  Logic Fields
 
-    List of fields used in static site generation logic.
+  List of fields used in static site generation logic.
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/logic-fields/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/logic-fields/)
 
--   [
+- [
 
-    Models
+  Models
 
-    Models define the structure of site content
+  Models define the structure of site content
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/models/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/models/)
 
--   [
+- [
 
-    Page models
+  Page models
 
-    Page models define the structure of site pages
+  Page models define the structure of site pages
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/page-models/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/page-models/)
 
--   [
+- [
 
-    Data models
+  Data models
 
-    Data models define the structure of site data files such as JSON, TOML, or YAML
+  Data models define the structure of site data files such as JSON, TOML, or YAML
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/data-models/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/data-models/)
 
--   [
+- [
 
-    Object models
+  Object models
 
-    Object models define the structure of data nested inside page or data models
+  Object models define the structure of data nested inside page or data models
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/object-models/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/object-models/)
 
--   [
+- [
 
-    Model Fields
+  Model Fields
 
-    Model fields define the fields that make up a particular model
+  Model fields define the fields that make up a particular model
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/fields/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/fields/)
 
--   [
+- [
 
-    Examples
+  Examples
 
-    stackbit.yaml examples
+  stackbit.yaml examples
 
-    ](https://www.stackbit.com/docs/reference/stackbit-yaml/examples/)
+  ](https://www.stackbit.com/docs/reference/stackbit-yaml/examples/)
