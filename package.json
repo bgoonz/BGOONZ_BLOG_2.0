@@ -27,7 +27,7 @@
         "marked": "^4.0.8",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
-        "node-sass": "^7.0.0",
+        "node-sass": "^3.0.0",
         "node-sass-utils": "1.1.2",
         "prerender-node": "^3.4.0",
         "react": "16.5.1",
