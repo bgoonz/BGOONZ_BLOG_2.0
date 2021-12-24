@@ -1,31 +1,30 @@
 ---
 title: Mini Projects
 excerpt: >-
-    In this section you'll learn how to add syntax highlighting, examples,
-    callouts and much more.
+  In this section you'll learn how to add syntax highlighting, examples,
+  callouts and much more.
 seo:
-    title: Mini Projects
-    description: This is the Mini Projects page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Mini Projects
-          keyName: property
-        - name: 'og:description'
-          value: This is the Mini Projects page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Mini Projects
-        - name: 'twitter:description'
-          value: This is the Mini Projects page
+  title: Mini Projects
+  description: This is the Mini Projects page
+  extra:
+    - name: "og:type"
+      value: website
+      keyName: property
+    - name: "og:title"
+      value: Mini Projects
+      keyName: property
+    - name: "og:description"
+      value: This is the Mini Projects page
+      keyName: property
+    - name: "twitter:card"
+      value: summary
+    - name: "twitter:title"
+      value: Mini Projects
+    - name: "twitter:description"
+      value: This is the Mini Projects page
 template: docs
 weight: 0
 ---
-
 
 <br>
 <hr>
@@ -78,7 +77,6 @@ weight: 0
 <hr>
 <br>
 
-
 <br>
 <hr>
 <br>
@@ -112,8 +110,6 @@ weight: 0
 
 <hr>
 <br>
-
-
 
 <br>
 <hr>
@@ -149,8 +145,6 @@ weight: 0
 <hr>
 <br>
 
-
-
 <br>
 <hr>
 <br>
@@ -184,8 +178,6 @@ weight: 0
 
 <hr>
 <br>
-
-
 
 <br>
 <hr>
@@ -221,8 +213,6 @@ weight: 0
 <hr>
 <br>
 
-
-
 <br>
 <hr>
 <br>
@@ -257,8 +247,6 @@ weight: 0
 <hr>
 <br>
 
-
-
 <br>
 <hr>
 <br>
@@ -293,8 +281,6 @@ weight: 0
 <hr>
 <br>
 
-
-
 <br>
 <hr>
 <br>
@@ -328,6 +314,3 @@ weight: 0
 
 <hr>
 <br>
-
-
-

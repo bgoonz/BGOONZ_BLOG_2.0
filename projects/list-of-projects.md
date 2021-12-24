@@ -1,38 +1,37 @@
 ---
 title: List Of Projects
 excerpt: >-
-    We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to
-    get connected.
+  We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to
+  get connected.
 seo:
-    title: List Of Projects
-    description: |+
-        introductory-react-part-2
-        a-very-quick-guide-to-calculating-big-o-computational-complexity
-        introduction-to-react css-animations
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: List Of Projects Articles
-          keyName: property
-        - name: 'og:description'
-          value: |+
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: List Of Projectss
-        - name: 'twitter:description'
-          value: This is the community page
-        - name: 'og:image'
-          value: images/beige-maple.png
-          keyName: property
-          relativeUrl: true
+  title: List Of Projects
+  description: |+
+    introductory-react-part-2
+    a-very-quick-guide-to-calculating-big-o-computational-complexity
+    introduction-to-react css-animations
+  extra:
+    - name: "og:type"
+      value: website
+      keyName: property
+    - name: "og:title"
+      value: List Of Projects Articles
+      keyName: property
+    - name: "og:description"
+      value: |+
+      keyName: property
+    - name: "twitter:card"
+      value: summary
+    - name: "twitter:title"
+      value: List Of Projectss
+    - name: "twitter:description"
+      value: This is the community page
+    - name: "og:image"
+      value: images/beige-maple.png
+      keyName: property
+      relativeUrl: true
 template: docs
 weight: 0
 ---
-
 
 1.  [ WEB DEV RESOURCE HUB ](https://web-dev-resource-hub.netlify.app)
 
@@ -132,14 +131,9 @@ weight: 0
 
 49. [stackbit](https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326)
 
-
-
-
 ---
 
-
 # More:
-
 
 - [https://determined-dijkstra-ee7390](https://determined-dijkstra-ee7390)
 - [https://bgoonz-blog](https://bgoonz-blog.netlify.app)
@@ -699,7 +693,7 @@ weight: 0
 
 ---
 
-- [https://github.com/bgoonz/https___mihirbeg.com_](https://github.com/bgoonz/https___mihirbeg.com_)
+- [https://github.com/bgoonz/https*\_\_mihirbeg.com*](https://github.com/bgoonz/https___mihirbeg.com_)
 - [https://web-dev-resource-hub](https://web-dev-resource-hub.netlify.app)
 
 ---

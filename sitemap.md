@@ -8,30 +8,31 @@ seo:
     This website contains docs, blogs, a personal portfolio spread out across
     multiple pages as well as interactive animations and tools.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Web Dev Hub
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: Navigation Home
       keyName: property
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Web Dev Hub
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: Navigation Home
-    - name: 'og:image'
+    - name: "og:image"
       value: images/background.gif
       keyName: property
       relativeUrl: true
 template: docs
 ---
+
 # <span style="align-self:center;margin:auto; font-family:Papyrus; font-size:2em;"></span>
 
-***
+---
 
 #
 
@@ -39,7 +40,7 @@ template: docs
 
 # - [**✅HOME🌍**](https://bgoonz-blog.netlify.app/)
 
-***
+---
 
 ### [**✅blog/🌍**](https://bgoonz-blog.netlify.app/blog/)
 
@@ -71,11 +72,11 @@ template: docs
 
 ### [**✅blog/web-scraping/🌍**](https://bgoonz-blog.netlify.app/blog/web-scraping/)
 
-***
+---
 
 ### [**✅⇒🌍**](https://bgoonz-blog.netlify.app/docs/)
 
-***
+---
 
 ### [**✅⇒about/🌍**](https://bgoonz-blog.netlify.app/docs/about/)
 
@@ -87,7 +88,7 @@ template: docs
 
 ### [**✅⇒about/resume/🌍**](https://bgoonz-blog.netlify.app/docs/about/resume/)
 
-***
+---
 
 ### [**✅⇒articles/🌍**](https://bgoonz-blog.netlify.app/docs/articles/)
 
@@ -143,7 +144,7 @@ template: docs
 
 ### [**✅⇒articles/semantic/🌍**](https://bgoonz-blog.netlify.app/docs/articles/semantic/)
 
-### [**✅⇒articles/the-uniform-resource-locator-(url)/🌍**](https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-\(url\)/)
+### [**✅⇒articles/the-uniform-resource-locator-(url)/🌍**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)/>)
 
 ### [**✅⇒articles/understanding-firebase/🌍**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase/)
 
@@ -155,7 +156,7 @@ template: docs
 
 ### [**✅⇒articles/writing-files/🌍**](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
 
-***
+---
 
 ### [**✅⇒audio/🌍**](https://bgoonz-blog.netlify.app/docs/audio/)
 
@@ -167,13 +168,13 @@ template: docs
 
 ### [**✅⇒audio/dynamic-time-warping/🌍**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping/)
 
-***
+---
 
 ### [**✅⇒community/🌍**](https://bgoonz-blog.netlify.app/docs/community/)
 
 ### [**✅⇒community/video-chat/🌍**](https://bgoonz-blog.netlify.app/docs/community/video-chat/)
 
-***
+---
 
 ### [**✅⇒content/🌍**](https://bgoonz-blog.netlify.app/docs/content/)
 
@@ -195,7 +196,7 @@ template: docs
 
 ### [**✅⇒content/trouble-shooting/🌍**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
 
-***
+---
 
 ### [**✅⇒docs/🌍**](https://bgoonz-blog.netlify.app/docs/docs/)
 
@@ -219,7 +220,7 @@ template: docs
 
 ### [**✅⇒docs/sitemap/🌍**](https://bgoonz-blog.netlify.app/docs/docs/sitemap/)
 
-***
+---
 
 ### [**✅⇒faq/🌍**](https://bgoonz-blog.netlify.app/docs/faq/)
 
@@ -227,7 +228,7 @@ template: docs
 
 ### [**✅⇒faq/plug-ins/🌍**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins/)
 
-***
+---
 
 ### [**✅⇒gallery/🌍**](https://bgoonz-blog.netlify.app/docs/gallery/)
 
@@ -243,7 +244,7 @@ template: docs
 
 ### [**✅⇒interact/video-chat/🌍**](https://bgoonz-blog.netlify.app/docs/interact/video-chat/)
 
-***
+---
 
 ### [**✅⇒javascript/🌍**](https://bgoonz-blog.netlify.app/docs/javascript/)
 
@@ -251,7 +252,7 @@ template: docs
 
 ### [**✅⇒javascript/constructor-functions/🌍**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions/)
 
-***
+---
 
 ### [**✅⇒medium/🌍**](https://bgoonz-blog.netlify.app/docs/medium/)
 
@@ -259,7 +260,7 @@ template: docs
 
 ### [**✅⇒medium/my-websites/🌍**](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
 
-***
+---
 
 ### [**✅⇒python/🌍**](https://bgoonz-blog.netlify.app/docs/python/)
 
@@ -271,7 +272,7 @@ template: docs
 
 ### [**✅⇒python/snippets/🌍**](https://bgoonz-blog.netlify.app/docs/python/snippets/)
 
-***
+---
 
 ### [**✅⇒quick-reference/🌍**](https://bgoonz-blog.netlify.app/docs/quick-reference/)
 
@@ -317,7 +318,7 @@ template: docs
 
 ### [**✅⇒quick-reference/vscode/🌍**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode/)
 
-***
+---
 
 ### [**✅⇒react/🌍**](https://bgoonz-blog.netlify.app/docs/react/)
 
@@ -329,11 +330,11 @@ template: docs
 
 ### [**✅⇒react/react2/🌍**](https://bgoonz-blog.netlify.app/docs/react/react2/)
 
-***
+---
 
 ### [**✅⇒sitemap/🌍**](https://bgoonz-blog.netlify.app/docs/sitemap/)
 
-***
+---
 
 ### [**✅⇒tools/🌍**](https://bgoonz-blog.netlify.app/docs/tools/)
 
@@ -671,7 +672,7 @@ template: docs
 
 <br>
 
-### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-\(url\))
+### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
 
 <br>
 

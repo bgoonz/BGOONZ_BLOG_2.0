@@ -3,8 +3,8 @@ title: Reference
 weight: 0
 excerpt: helpful reference guides
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: docs
@@ -21,7 +21,6 @@ template: docs
 # SearchAwesome:
 
 <iframe src="https://search-awesome.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-
 
 # Job Search:
 

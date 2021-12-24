@@ -48,7 +48,7 @@ If you don’t already have an Algolia account, [create one](https://www.algolia
 
 Then, go to [the ‘API Keys’ section of your Algolia profile](https://www.algolia.com/api-keys). It should look like this screenshot, only with letters and numbers instead of black boxes:
 
-[![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png 'The API Keys section of the Algolia profile')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
+[![The API Keys section of the Algolia profile](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/321ea/algolia-api-keys.png "The API Keys section of the Algolia profile")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/7d7464953fdefee4e5dff0ce845f0834/d26de/algolia-api-keys.png)
 
 Copy out the Application ID, Search-Only API Key, and Admin API Key from Algolia and create a file called `.env` in the root of your project (`gatsby-algolia-guide` if created as described above). This file contains your [project environment variables](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-to/local-development/environment-variables). Replace the placeholders with your copied values:
 
@@ -102,7 +102,7 @@ Check that `graphql resulted in` is followed by the number of pages in your proj
 
 Log in to your Algolia account, go to “Indices” and then select the “Page” index and you should see your indexed page data.
 
-[![Algolia index displaying the indexed page](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png 'Algolia index displaying the indexed page')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png)
+[![Algolia index displaying the indexed page](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/321ea/algolia-index.png "Algolia index displaying the indexed page")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/4fbad40aaf341ec977e903213c235827/b8471/algolia-index.png)
 
 ### [](#troubleshooting)Troubleshooting
 
@@ -116,10 +116,10 @@ Now that there is data in the index, it is time to build the user interface for 
 
 The guide will use the following frameworks:
 
--   [React InstantSearch](https://community.algolia.com/react-instantsearch), a component library provided by Algolia for easily building search interfaces.
--   [Algolia Search](https://www.npmjs.com/package/algoliasearch) provides the API client for calling Algolia.
--   [Styled Components](https://styled-components.com/) for embedding the CSS in the code, integrated using the [Gatsby styled component plugin](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/plugins/gatsby-plugin-styled-components/).
--   [Styled Icons](https://styled-icons.js.org/) provides the magnifying glass icon for the search bar.
+- [React InstantSearch](https://community.algolia.com/react-instantsearch), a component library provided by Algolia for easily building search interfaces.
+- [Algolia Search](https://www.npmjs.com/package/algoliasearch) provides the API client for calling Algolia.
+- [Styled Components](https://styled-components.com/) for embedding the CSS in the code, integrated using the [Gatsby styled component plugin](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/plugins/gatsby-plugin-styled-components/).
+- [Styled Icons](https://styled-icons.js.org/) provides the magnifying glass icon for the search bar.
 
 Styled Components can also be replaced by any other CSS solution you prefer.
 
@@ -221,7 +221,7 @@ Note that this is where you define the search indices you wish to search. They a
 
 Running `gatsby develop` should now give you a working search that looks something like this:
 
-[![Search widget displaying search results](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png 'Search widget displaying search results')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png)
+[![Search widget displaying search results](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/321ea/algolia-final-search.png "Search widget displaying search results")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/c2b0e4bba13a5850a9c9454f9a1b3886/e6c84/algolia-final-search.png)
 
 You can also play around with it at [https://janosh.io/blog](https://janosh.io/blog).
 
@@ -231,7 +231,7 @@ If you try to deploy the project to Netlify, the deployment will fail with the e
 
 You therefore need to declare the same environment variables you put in `.env` in Netlify. Go to your Netlify site dashboard under **Settings > Build & deploy > Environment > Environment variables** and enter the keys `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY` and `ALGOLIA_ADMIN_KEY` with the same values as you used in the `.env` file. After a redeploy, the search should now work!
 
-[![Netlify environment variable configuration](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png 'Netlify environment variable configuration')](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png)
+[![Netlify environment variable configuration](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/321ea/algolia-netlify-env.png "Netlify environment variable configuration")](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/static/3106f00be7f21a1b1749ee8498cdafd8/22284/algolia-netlify-env.png)
 
 The Netlify documentation has more information on [how to configure environment variables in Netlify](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables). Also see the [Environment Variables](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/how-to/local-development/environment-variables) guide for an overview of environment variables in Gatsby.
 

@@ -3,21 +3,22 @@ title: Enviorment Setup Tutorial
 weight: 0
 excerpt: more tools that I have created or collaborated on.
 seo:
-    title: ''
-    description: 'embeded developer tools and utilities'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ""
+  description: "embeded developer tools and utilities"
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
+# Basic Web Development Environment Setup
 
-Basic Web Development Environment Setup
-=======================================
-Windows Subsystem for Linux (WSL) and Ubuntu
-------------------------------------------------------------------------
+## Windows Subsystem for Linux (WSL) and Ubuntu
+
 ### Basic Web Development Environment Setup
+
 #### Windows Subsystem for Linux (WSL) and Ubuntu
+
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
 1.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
 2.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>

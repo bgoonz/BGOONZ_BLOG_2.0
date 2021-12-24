@@ -3,10 +3,10 @@ title: Installing Node
 weight: 0
 excerpt: Installing Node
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ""
+  description: ""
+  robots: []
+  extra: []
 template: docs
 ---
 
@@ -61,8 +61,8 @@ For CentOS/RHEL 7 Node.js is available via [Software Collections](https://www.so
 
 These resources provide packages compatible with CentOS, Fedora, and RHEL.
 
--   [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap) maintained and supported at <https://github.com/nodejs/snap>
--   [Node.js binary distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) maintained and supported by [NodeSource](https://github.com/nodesource/distributions)
+- [Node.js snaps](https://nodejs.org/en/download/package-manager/#snap) maintained and supported at <https://github.com/nodejs/snap>
+- [Node.js binary distributions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) maintained and supported by [NodeSource](https://github.com/nodesource/distributions)
 
 ## Debian and Ubuntu based Linux distributions[](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
@@ -298,10 +298,10 @@ pkg_add node
 
 Node.js is available in the main repositories under the following packages:
 
--   openSUSE Leap 15.2: `nodejs10`, `nodejs12`, `nodejs14`
--   openSUSE Tumbleweed: `nodejs16`
--   SUSE Linux Enterprise Server (SLES) 12: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP5/#intro-modulesExtensionsRelated).)
--   SUSE Linux Enterprise Server (SLES) 15 SP2: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/#Intro.Module).)
+- openSUSE Leap 15.2: `nodejs10`, `nodejs12`, `nodejs14`
+- openSUSE Tumbleweed: `nodejs16`
+- SUSE Linux Enterprise Server (SLES) 12: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/12-SP5/#intro-modulesExtensionsRelated).)
+- SUSE Linux Enterprise Server (SLES) 15 SP2: `nodejs10`, `nodejs12`, and `nodejs14` (The "Web and Scripting Module" must be [enabled](https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/#Intro.Module).)
 
 For example, to install Node.js 14.x on openSUSE Leap 15.2, run the following as root:
 

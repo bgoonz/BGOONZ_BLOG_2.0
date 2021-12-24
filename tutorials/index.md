@@ -3,11 +3,11 @@ title: Tutorials
 weight: 0
 excerpt: Walkthroughs of various development activities and skills
 seo:
-  title: ''
-  description: ''
+  title: ""
+  description: ""
   robots: []
   extra: []
 template: docs
 ---
-This section is dedicated to coding walkthroughs:
 
+This section is dedicated to coding walkthroughs:
