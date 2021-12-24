@@ -10656,6 +10656,11 @@
   "resolved" "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
+"prerender-node@^3.4.0":
+  "integrity" "sha512-tzJCfjU7SbQyu7e4yxHyQ3AS8zRPSoigIieoR+xbRx7UaNbra41yvHZVdyn2A4gdfWML4iSzwBUpfdNytgPCGw=="
+  "resolved" "https://registry.npmjs.org/prerender-node/-/prerender-node-3.4.0.tgz"
+  "version" "3.4.0"
+
 "prettier@^2.0.5":
   "integrity" "sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
