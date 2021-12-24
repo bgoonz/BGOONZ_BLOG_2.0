@@ -115,7 +115,6 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#dom-webassembly-instantiate</span></a></td></tr></tbody></table>
 
 `instantiate`

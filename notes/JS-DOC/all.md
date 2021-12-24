@@ -183,7 +183,6 @@ It is possible to change this behavior by handling possible rejections:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
 
 `all`

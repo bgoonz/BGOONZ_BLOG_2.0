@@ -37,7 +37,6 @@ If a parameter you specify is outside of the expected range, `setUTCMonth()` att
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-date.prototype.setutcmonth</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

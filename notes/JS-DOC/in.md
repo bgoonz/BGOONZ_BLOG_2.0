@@ -90,7 +90,6 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
 
 `in`

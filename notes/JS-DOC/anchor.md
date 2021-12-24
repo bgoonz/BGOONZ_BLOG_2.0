@@ -42,7 +42,6 @@ will output the following HTML:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-string.prototype.anchor</span></a></td></tr></tbody></table>
 
 `anchor`

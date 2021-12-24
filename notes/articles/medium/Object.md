@@ -11,7 +11,6 @@ Objects store unordered key-value pairs. With Objects we can not rely on indices
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*6jQe76YcAOKHZtjr.png" class="graf-image" /></figure><strong>A list of all of my articles to link to future posts</strong> 
 <br/>
 
-
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ### Iterating Through Objects

@@ -188,21 +188,18 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
 
 References:
 
-<a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong> 
+<a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong>
 <br/>
-
 
 <em>App Academy Open is the first free, online web development course that's meant to get you hired as a developer. Get…</em>open.appacademy.io</a><a href="https://open.appacademy.io/learn" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong> 
+<a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong>
 <br/>
-
 
 <em>Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong> 
+<a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong>
 <br/>
-
 
 <em>To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods…</em>javascript.info</a><a href="https://javascript.info/callbacks" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

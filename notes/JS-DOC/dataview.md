@@ -139,7 +139,6 @@ Stores an unsigned 64-bit integer (unsigned long long) value at the specified by
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-dataview-objects</span></a></td></tr></tbody></table>
 
 `DataView`

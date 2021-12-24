@@ -113,7 +113,6 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-object.keys</span></a></td></tr></tbody></table>
 
 `keys`

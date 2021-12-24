@@ -151,7 +151,6 @@ Returns a new _array iterator_ object that contains the values for each index in
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#table-49</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -8,9 +8,6 @@ My Bash Cheatsheet Index:
 
 #### My Bash Cheatsheet Index:
 
-
-
-
 ### Table Of Contents:
 
 > One Liners

@@ -48,7 +48,6 @@ This can be emulated with the following function:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-math.log10</span></a></td></tr></tbody></table>
 
 `log10`

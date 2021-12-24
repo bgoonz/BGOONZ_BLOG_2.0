@@ -77,7 +77,6 @@ The following code violates an invariant.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></a></td></tr></tbody></table>
 
 `has`

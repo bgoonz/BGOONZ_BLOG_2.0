@@ -88,7 +88,6 @@ Stack trace. Inherited from [`Error`](error).
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

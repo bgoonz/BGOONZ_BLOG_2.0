@@ -51,7 +51,6 @@ This returns 2 because in floating points, the value is actually the decimal tra
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-number.max_safe_integer</span></a></td></tr></tbody></table>
 
 `MAX_SAFE_INTEGER`

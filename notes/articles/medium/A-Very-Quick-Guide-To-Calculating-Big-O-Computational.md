@@ -10,9 +10,8 @@ Big O: big picture, broad strokes, not details
 
 For a more complete guide… checkout :
 
-<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522"><strong>A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</strong> 
+<a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522"><strong>A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</strong>
 <br/>
-
 
 <em>Curating Complexity: A Guide to Big-O Notation</em>medium.com</a><a href="https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -81,9 +80,8 @@ no loops or exit & return = O(1)
 
 For similar content check out my GitHub:
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

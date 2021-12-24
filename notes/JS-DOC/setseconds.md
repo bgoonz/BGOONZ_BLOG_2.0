@@ -37,7 +37,6 @@ If a parameter you specify is outside of the expected range, `setSeconds()` atte
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-date.prototype.setseconds</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

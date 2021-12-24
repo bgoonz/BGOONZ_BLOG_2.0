@@ -207,7 +207,6 @@ Note that when the currency sign is "accounting", parentheses might be used inst
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-
 <span class="small">#sec-intl-numberformat-constructor</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

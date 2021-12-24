@@ -8,13 +8,10 @@ Random Things to Remember
 
 #### Random Things to Remember
 
-<strong>A list of all of my articles to link to future posts</strong> 
+<strong>A list of all of my articles to link to future posts</strong>
 <br/>
 
-
- 
 <br/>
-
 
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 

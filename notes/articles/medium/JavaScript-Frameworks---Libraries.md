@@ -12,9 +12,8 @@ My Awesome JavaScript List Part 2
 
 **_…well… not really… here's the rest of my stash:_**
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s"><strong>bgoonz/Cumulative-Resource-List</strong> 
+<a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s"><strong>bgoonz/Cumulative-Resource-List</strong>
 <br/>
-
 
 <em>List of useful cheats heets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a…</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -1576,23 +1575,20 @@ My Awesome JavaScript List Part 2
 
 If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or checkout my personal resource site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

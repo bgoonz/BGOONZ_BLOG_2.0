@@ -106,7 +106,6 @@ The following example provides the special encoding required within UTF-8 [`Cont
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'encodeURIComponent' in that specification.</span></a></td></tr></tbody></table>
 
 `encodeURIComponent`

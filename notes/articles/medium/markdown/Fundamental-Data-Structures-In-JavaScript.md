@@ -12,17 +12,15 @@ Data structures in JavaScript
 
 <span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
-<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong> 
+<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong>
 <br/>
-
 
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong> 
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong>
 <br/>
-
 
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -287,15 +285,13 @@ Graph
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -303,9 +299,8 @@ Graph
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

@@ -21,7 +21,6 @@ By default, the `message` property is an empty string, but this behavior can be 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-error.prototype.message</span></a></td></tr></tbody></table>
 
 `message`

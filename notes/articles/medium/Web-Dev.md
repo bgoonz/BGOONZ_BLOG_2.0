@@ -94,9 +94,8 @@ Web Development
 
 Here's a repo where I hoard resource lists!
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong> 
+<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong>
 <br/>
-
 
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -106,17 +105,15 @@ Here's a repo where I hoard resource lists!
 
 > <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong> 
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
 <br/>
-
 
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

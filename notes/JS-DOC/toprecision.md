@@ -49,7 +49,6 @@ If `precision` is not between `1` and `100` (inclusive), a [`RangeError`](../ran
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.toprecision">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-number.prototype.toprecision</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

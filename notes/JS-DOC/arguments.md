@@ -171,7 +171,6 @@ And also:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
 
 `arguments`

@@ -197,7 +197,6 @@ This example shows how to load functionality on to a page based on a user action
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-imports</span></a></td></tr></tbody></table>
 
 `import`

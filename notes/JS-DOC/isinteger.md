@@ -56,7 +56,6 @@ If the target value is an integer, return `true`, otherwise return `false`. If t
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-number.isinteger</span></a></td></tr></tbody></table>
 
 `isInteger`

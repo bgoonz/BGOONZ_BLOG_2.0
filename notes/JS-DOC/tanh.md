@@ -43,7 +43,6 @@ This can be emulated with the help of the [`Math.exp()`](exp) function:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tanh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-math.tanh</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -12,9 +12,7 @@ export default class Footer extends React.Component {
             <footer id="colophon" className="site-footer outer">
                 <div>
                     <center>
-                         
-<br/>
-
+                        <br />
 
                         <div id="search">
                             <link
@@ -23,9 +21,8 @@ export default class Footer extends React.Component {
                             />{' '}
                             {Script}{' '}
                         </div>
-                         
-<br/>
 
+                        <br />
 
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>

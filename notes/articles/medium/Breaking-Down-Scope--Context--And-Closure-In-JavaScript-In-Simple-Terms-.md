@@ -11,9 +11,8 @@
 
 Here's another (much) more simple article I wrote on the subject:
 
-<a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/bgoonz/closures-in-javascript-1moc"><strong>Closures In Javascript</strong> 
+<a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/bgoonz/closures-in-javascript-1moc"><strong>Closures In Javascript</strong>
 <br/>
-
 
 <em>Answer A closure is a function defined inside another function and has access to its lexical scope even when it is…</em>dev.to</a><a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -32,9 +31,8 @@ I made this website in support of the article… it links to a navigation page a
 
 Quiz yourself with this website I made:
 
-<a href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-interview-prep-quiz-website.netlify.app/index.html"><strong>WebDevQuizzes</strong> 
+<a href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-interview-prep-quiz-website.netlify.app/index.html"><strong>WebDevQuizzes</strong>
 <br/>
-
 
 <em>Resource-sharing-hub</em>web-dev-interview-prep-quiz-website.netlify.app</a><a href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -60,9 +58,8 @@ Quiz yourself with this website I made:
 
 > <a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--blockquote-anchor"><strong>“Spaced repetition</strong></a> is an <a href="https://en.wikipedia.org/wiki/Evidence-based_learning" class="markup--anchor markup--blockquote-anchor">evidence-based learning</a> technique that is usually performed with <a href="https://en.wikipedia.org/wiki/Flashcard" class="markup--anchor markup--blockquote-anchor" title="Flashcard">flashcards</a>. Newly introduced and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological <a href="https://en.wikipedia.org/wiki/Spacing_effect" class="markup--anchor markup--blockquote-anchor" title="Spacing effect">spacing effect</a>. The use of spaced repetition has been proven to increase rate of learning.”
 
-<a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://en.wikipedia.org/wiki/Spaced_repetition"><strong>Spaced repetition — Wikipedia</strong> 
+<a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://en.wikipedia.org/wiki/Spaced_repetition"><strong>Spaced repetition — Wikipedia</strong>
 <br/>
-
 
 <em>Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced…</em>en.wikipedia.org</a><a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -698,9 +695,8 @@ From there the _scope chain_ is initialized next, and the value of `this` is det
 
 -   <span id="af9a"><a href="https://javascript.info/closure" class="markup--anchor markup--li-anchor">source</a></span>
 
-<a href="https://replit.com/@bgoonz/scope-closure-context" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/scope-closure-context"><strong>scope-closure-context</strong> 
+<a href="https://replit.com/@bgoonz/scope-closure-context" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/scope-closure-context"><strong>scope-closure-context</strong>
 <br/>
-
 
 <em>To accompany my medium article on the subject</em>replit.com</a><a href="https://replit.com/@bgoonz/scope-closure-context" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -748,17 +744,15 @@ Variables declared with `let` and `const` have block scope. `var` doesn't have b
 
 ### Check out my blog!
 
-<a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://best-celery-b2d7c.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://best-celery-b2d7c.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>preview of the Web-Dev-Hub</em>best-celery-b2d7c.netlify.app</a><a href="https://best-celery-b2d7c.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Ask Me Anything:
 
-<a href="https://github.com/bgoonz/ask-me-anything" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/ask-me-anything"><strong>bgoonz/ask-me-anything</strong> 
+<a href="https://github.com/bgoonz/ask-me-anything" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/ask-me-anything"><strong>bgoonz/ask-me-anything</strong>
 <br/>
-
 
 <em>I get questions by email, occasionally. This way anyone can read the answer! Anything means anything. Personal…</em>github.com</a><a href="https://github.com/bgoonz/ask-me-anything" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

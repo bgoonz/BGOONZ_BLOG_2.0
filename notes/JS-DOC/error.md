@@ -183,7 +183,6 @@ See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.c
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-error-objects</span></a></td></tr></tbody></table>
 
 `Error`

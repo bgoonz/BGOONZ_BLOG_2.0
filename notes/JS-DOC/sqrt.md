@@ -40,7 +40,6 @@ Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-math.sqrt</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

@@ -131,7 +131,6 @@ Instead of passing a literal string or integer value when creating the new objec
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-new-operator</span></a></td></tr></tbody></table>
 
 `new`

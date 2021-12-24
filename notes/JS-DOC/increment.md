@@ -35,7 +35,6 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Increment operator' in that specification.</span></a></td></tr></tbody></table>
 
 `Increment`
