@@ -228,13 +228,6 @@ sections:
         icon_class: dev
         new_window: false
         no_follow: false
-      - label: Collaborate
-        url: >-
-          https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
       - label: Subscribe (Youtube)
         url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
         style: primary
