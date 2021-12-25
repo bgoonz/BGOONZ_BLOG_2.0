@@ -32,8 +32,8 @@ sections:
                 https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
           - content: |
                 *Python has a built in help function that let's you see a description
-                of the source code without having to navigate to it… “-SickNasty …
-                Autor Unknown”  .*
+                of the source code without having to navigate to it… "-SickNasty …
+                Autor Unknown"  .*
             actions:
                 - label: View Posts
                   url: >-
