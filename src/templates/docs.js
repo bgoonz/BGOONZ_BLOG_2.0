@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import {graphql} from 'gatsby';
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 import {Layout} from '../components/index';
 import DocsMenu from '../components/DocsMenu';
@@ -47,6 +48,7 @@ export default class Docs extends React.Component {
                           </React.Fragment>);
                       })())}
                     </div>
+                    <Disqus />
                   </div>
                 </article>
                 <nav id="page-nav" className="page-nav">
