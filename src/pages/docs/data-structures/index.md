@@ -41,17 +41,17 @@ Data structures in JavaScript
 
 ### Data structures in JavaScript
 
-<span class="graf-dropCap">H</span>ere’s a website I created to practice data structures!
+<span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
 <a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s the repo that the website is built on:
+<span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
 <a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
+<span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
 
 ### Resources (article content below):
 
@@ -108,7 +108,7 @@ Data structures in JavaScript
 
 ### ***space***
 
-> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
+> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
 
 ### *time*
 
@@ -150,7 +150,7 @@ O(1) O(n) O(1) O(n)
 
 2. This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3. In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3. In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
