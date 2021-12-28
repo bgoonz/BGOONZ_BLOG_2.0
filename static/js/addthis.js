@@ -1,4 +1,6 @@
-
+/*!
+AddThis - v8.28.7 - 20201026;
+*/
 !(function (e) {
     function t(n) {
         if (a[n]) return a[n].exports;
