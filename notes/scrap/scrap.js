@@ -87,17 +87,16 @@ const JSONToFile = ( obj, filename ) =>
 JSONToFile( { test: 'is passed' }, 'testJsonFile' );
 // writes the object to 'testJsonFile.json'
 
-const JSONtoCSV = ( arr, columns, delimiter = ',' ) =>
-    [
+function JSONtoCSV ( arr, columns, delimiter = ',' ) {
+    return [
         columns.join( delimiter ),
-        ...arr.map( obj =>
-            columns.reduce(
-                ( acc, key ) =>
-                    `${ acc }${ !acc.length ? '' : delimiter }"${ !obj[ key ] ? '' : obj[ key ] }"`,
-                ''
-            )
+        ...arr.map( obj => columns.reduce(
+            ( acc, key ) => `${ acc }${ !acc.length ? '' : delimiter }"${ !obj[ key ] ? '' : obj[ key ] }"`,
+            ''
+        )
         ),
     ].join( '\n' );
+}
 
 JSONtoCSV(
     [ { a: 1, b: 2 }, { a: 3, b: 4, c: 5 }, { a: 6 }, { b: 7 } ],
@@ -109,21 +108,19 @@ JSONtoCSV(
     ';'
 ); // 'a;b\n"1";"2"\n"3";"4"\n"6";""\n"";"7"'
 
-const RGBToHSB = ( r, g, b ) => {
+function RGBToHSB ( r, g, b ) {
     r /= 255;
     g /= 255;
     b /= 255;
-    const v = Math.max( r, g, b ),
-        n = v - Math.min( r, g, b );
-    const h =
-        n === 0 ? 0 : n && v === r ? ( g - b ) / n : v === g ? 2 + ( b - r ) / n : 4 + ( r - g ) / n;
+    const v = Math.max( r, g, b ), n = v - Math.min( r, g, b );
+    const h = n === 0 ? 0 : n && v === r ? ( g - b ) / n : v === g ? 2 + ( b - r ) / n : 4 + ( r - g ) / n;
     return [ 60 * ( h < 0 ? h + 6 : h ), v && ( n / v ) * 100, v * 100 ];
-};
+}
 
 RGBToHSB( 252, 111, 48 );
 // [18.529411764705856, 80.95238095238095, 98.82352941176471]
 
-const RGBToHSL = ( r, g, b ) => {
+function RGBToHSL ( r, g, b ) {
     r /= 255;
     g /= 255;
     b /= 255;
@@ -141,7 +138,7 @@ const RGBToHSL = ( r, g, b ) => {
         100 * ( s ? ( l <= 0.5 ? s / ( 2 * l - s ) : s / ( 2 - ( 2 * l - s ) ) ) : 0 ),
         ( 100 * ( 2 * l - s ) ) / 2,
     ];
-};
+}
 
 RGBToHSL( 45, 23, 11 ); // [21.17647, 60.71428, 10.98039]
 
@@ -175,10 +172,27 @@ UUIDGeneratorBrowser(); // '7982fcfe-5721-4632-bede-6000885be57d'
 
 const crypto = require( 'crypto' );
 
-const UUIDGeneratorNode = () =>
-    ( [ 1e7 ] + -1e3 + -4e3 + -8e3 + -1e11 ).replace( /[018]/g, c =>
-        ( c ^ ( crypto.randomBytes( 1 )[ 0 ] & ( 15 >> ( c / 4 ) ) ) ).toString( 16 )
+function UUIDGeneratorNode () {
+    return ( [ 1e7 ] + -1e3 + -4e3 + -8e3 + -1e11 ).replace( /[018]/g, c => ( c ^ ( crypto.randomBytes( 1 )[ 0 ] & ( 15 >> ( c / 4 ) ) ) ).toString( 16 )
     );
+}
+
+
+const createEventHub = () => ( {
+    hub: Object.create( null ),
+    emit ( event, data ) {
+        ( this.hub[ event ] || [] ).forEach( handler => handler( data ) );
+    }
+ on ( event, handler ) {
+        if ( !this.hub[ event ] ) this.hub[ event ] = [];
+        this.hub[ event ].push( handler );
+    }
+ off ( event, handler ) {
+        const i = ( this.hub[ event ] || [] ).findIndex( h => h === handler );
+        if ( i > -1 ) this.hub[ event ].splice( i, 1 );
+    }
+} );,
+
 
 UUIDGeneratorNode(); // '79c7c136-60ee-40a2-beb2-856f1feabefc'
 
@@ -188,7 +202,9 @@ const accumulate = ( ...nums ) =>
 accumulate( 1, 2, 3, 4 ); // [1, 3, 6, 10]
 accumulate( ...[ 1, 2, 3, 4 ] ); // [1, 3, 6, 10]
 
-const addClass = ( el, className ) => el.classList.add( className );
+function addClass ( el, className ) {
+    return el.classList.add( className );
+}
 
 addClass( document.querySelector( 'p' ), 'special' );
 // The paragraph will now have the 'special' class
@@ -1494,12 +1510,12 @@ const decapitalize = ( [ first, ...rest ], upperRest = false ) =>
 decapitalize( 'FooBar' ); // 'fooBar'
 decapitalize( 'FooBar', true ); // 'fOOBAR'
 
-const deepClone = obj => {
-    if ( obj === null ) return null;
+function deepClone ( obj ) {
+    if ( obj === null )
+        return null;
     let clone = Object.assign( {}, obj );
     Object.keys( clone ).forEach(
-        key =>
-        ( clone[ key ] =
+        key => ( clone[ key ] =
             typeof obj[ key ] === 'object' ? deepClone( obj[ key ] ) : obj[ key ] )
     );
     if ( Array.isArray( obj ) ) {
@@ -1507,7 +1523,7 @@ const deepClone = obj => {
         return Array.from( clone );
     }
     return clone;
-};
+}
 
 const a = { foo: 'bar', obj: { a: 1, b: 2 } };
 const b = deepClone( a ); // a !== b, a.obj !== b.obj
@@ -1517,12 +1533,13 @@ const deepFlatten = arr =>
 
 deepFlatten( [ 1, [ 2 ], [ [ 3 ], 4 ], 5 ] ); // [1, 2, 3, 4, 5]
 
-const deepFreeze = obj => {
+function deepFreeze ( obj ) {
     Object.keys( obj ).forEach( prop => {
-        if ( typeof obj[ prop ] === 'object' ) deepFreeze( obj[ prop ] );
+        if ( typeof obj[ prop ] === 'object' )
+            deepFreeze( obj[ prop ] );
     } );
     return Object.freeze( obj );
-};
+}
 
 'use strict';
 
@@ -1590,11 +1607,12 @@ const upperKeysObj = deepMapKeys( obj, key => key.toUpperCase() );
 }
 */
 
-const deepMerge = ( a, b, fn ) =>
-    [ ...new Set( [ ...Object.keys( a ), ...Object.keys( b ) ] ) ].reduce(
+function deepMerge ( a, b, fn ) {
+    return [ ...new Set( [ ...Object.keys( a ), ...Object.keys( b ) ] ) ].reduce(
         ( acc, key ) => ( { ...acc, [ key ]: fn( key, a[ key ], b[ key ] ) } ),
         {}
     );
+}
 
 deepMerge(
     { a: true, b: { c: [ 1, 2, 3 ] } },
@@ -2577,14 +2595,14 @@ Logs: {
 }
 */
 
-const httpPost = ( url, data, callback, err = console.error ) => {
+function httpPost ( url, data, callback, err = console.error ) {
     const request = new XMLHttpRequest();
     request.open( 'POST', url, true );
     request.setRequestHeader( 'Content-type', 'application/json; charset=utf-8' );
     request.onload = () => callback( request.responseText );
     request.onerror = () => err( request );
     request.send( data );
-};
+}
 
 const newPost = {
     userId: 1,
@@ -2642,10 +2660,10 @@ Logs: {
 }
 */
 
-const httpsRedirect = () => {
+function httpsRedirect () {
     if ( location.protocol !== 'https:' )
         location.replace( 'https://' + location.href.split( '//' )[ 1 ] );
-};
+}
 
 httpsRedirect();
 // If you are on http://mydomain.com, you are redirected to https://mydomain.com
@@ -2668,10 +2686,11 @@ const sumForLoop = () => {
 Math.round( hz( sumReduce ) ); // 572
 Math.round( hz( sumForLoop ) ); // 4784
 
-const inRange = ( n, start, end = null ) => {
-    if ( end && start > end ) [ end, start ] = [ start, end ];
+function inRange ( n, start, end = null ) {
+    if ( end && start > end )
+        [ end, start ] = [ start, end ];
     return end == null ? n >= 0 && n < start : n >= start && n < end;
-};
+}
 
 inRange( 3, 2, 5 ); // true
 inRange( 3, 4 ); // true
