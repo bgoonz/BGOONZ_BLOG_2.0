@@ -193,7 +193,7 @@ sections:
     actions: []
     type: section_content
   - title: lorem-ipsum
-    section_id: lorem-ipsum
+    section_id: webaudio daw
     image_alt: portfolio
     image_position: left
     content: >-
