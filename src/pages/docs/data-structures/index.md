@@ -4,14 +4,14 @@ excerpt: >-
     In this section you'll learn how to add syntax highlighting, examples,
     callouts and much more.
 seo:
-    title:  Data Structures
+    title: Data Structures
     description: This is the  Data Structures page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value:  Data Structures
+          value: Data Structures
           keyName: property
         - name: 'og:description'
           value: This is the  Data Structures page
@@ -19,21 +19,18 @@ seo:
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value:  Data Structures
+          value: Data Structures
         - name: 'twitter:description'
           value: This is the  Data Structures page
 template: docs
 weight: 0
 ---
 
-
-
-Fundamental Data Structures In JavaScript
-=========================================
+# Fundamental Data Structures In JavaScript
 
 Data structures in JavaScript
 
-------------------------------------------------------------------------
+---
 
 #### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
@@ -41,90 +38,90 @@ Data structures in JavaScript
 
 ### Data structures in JavaScript
 
-<span class="graf-dropCap">H</span>ere’s a website I created to practice data structures!
+<span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
 <a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s the repo that the website is built on:
+<span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
 <a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
+<span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
 
-### Resources (article content below):
+### Resources (article content below)
 
 #### Videos
 
--   <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
--   <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
--   <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
--   <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
--   <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
--   <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
--   <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
+- <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
+- <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
+- <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
+- <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
+- <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
+- <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
+- <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
 
 #### Books
 
--   <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
--   <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
--   <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
--   <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
--   <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
+- <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
+- <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
+- <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
+- <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
+- <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
 
 #### Coding practice
 
--   <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
--   <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
--   <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
--   <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
--   <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
--   <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
--   <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
--   <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
--   <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
--   <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
--   <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
--   <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
--   <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
--   <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
+- <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
+- <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
+- <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
+- <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
+- <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
+- <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
+- <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
+- <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
+- <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
+- <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
+- <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
+- <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
+- <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
+- <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
 
 #### Courses
 
--   <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
--   <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
--   <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
--   <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
--   <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
+- <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
+- <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
+- <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
+- <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
+- <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
 
 #### Guides
 
--   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
--   <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
--   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+- <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+- <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+- <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
+- <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
+- <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
-### ***space***
+### **_space_**
 
-> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
+> _The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around._
 
-### *time*
+### _time_
 
-> *The time complexity for a data structure is in general more diverse than its space complexity.*
+> _The time complexity for a data structure is in general more diverse than its space complexity._
 
-### *Several operations*
+### _Several operations_
 
-> *In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element.*
+> _In contrary to algorithms, when you look at the time complexity for data structures you need to express it for several operations that you can do with data structures. It can be adding elements, deleting elements, accessing an element or even searching for an element._
 
-### *Dependent on data*
+### _Dependent on data_
 
-> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
+> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
--   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
--   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
--   <span id="881c">**The average-case complexity: when the data looks average**</span>
+- <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
+- <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
+- <span id="881c">**The average-case complexity: when the data looks average**</span>
 
 ### Big O notation
 
@@ -138,29 +135,29 @@ An Array data structure, or simply an Array, is a data structure consisting of a
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-*Complexity*  
-*Average*  
-*Access Search Insertion Deletion*
+_Complexity_  
+_Average_  
+_Access Search Insertion Deletion_
 
 O(1) O(n) O(1) O(n)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*-BJ2hU-CZO2kuzu4x5a53g.png" class="graf-image" /></figure>indexvalue0 … this is the first value, stored at zero position
 
-1.  <span id="b953">The index of an array **runs in sequence**</span>
+1. <span id="b953">The index of an array **runs in sequence**</span>
 
 2. This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3. In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3. In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
 Think of objects as a logical grouping of a bunch of properties.
 
-Properties could be some variable that it’s storing or some methods that it’s using.
+Properties could be some variable that it's storing or some methods that it's using.
 
 I also visualize an object as a table.
 
-The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.
+The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
@@ -168,7 +165,7 @@ The main difference is that object’s “index” need not be numbers and is no
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*avbxLAFocSV6vsl5.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*3GJiRoLyEoZ_aIlO" class="graf-image" /></figure>### *Definition*
 
-> *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
+> _A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia_
 
 Hash Tables are considered the more efficient data structure for lookup and for this reason, they are widely used.
 
@@ -176,9 +173,9 @@ Complexity
 Average  
 Access Search Insertion Deletion
 
--   <span id="f63f">O(1) O(1) O(1)</span>
+- <span id="f63f">O(1) O(1) O(1)</span>
 
-> *The code*
+> _The code_
 
 Note, here I am storing another object for every hash in my Hash Table.
 
@@ -186,11 +183,11 @@ Note, here I am storing another object for every hash in my Hash Table.
 
 ### Sets
 
-Sets are pretty much what it sounds like. It’s the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
+Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AIQljh9p8Baw9TnE.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG" class="graf-image" /></figure>### *Definition*
 
-> *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
+> _A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia_
 
 The Set data structure is usually used to test whether elements belong to set of values. Rather then only containing elements, Sets are more used to perform operations on multiple values at once with methods such as union, intersect, etc…
 
@@ -198,15 +195,15 @@ Complexity
 Average  
 Access Search Insertion Deletion
 
--   <span id="daa6">O(n) O(n) O(n)</span>
+- <span id="daa6">O(n) O(n) O(n)</span>
 
-> *The code*
+> _The code_
 
 ### The Singly Linked List
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*fLs64rV-Xq19aVCA.gif" class="graf-image" /></figure>### *Definition*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*fLs64rV-Xq19aVCA.gif" class="graf-image" /></figure>###*Definition*
 
-> *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
+> _A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence._
 
 Linked Lists are among the simplest and most common data structures because it allows for efficient insertion or removal of elements from any position in the sequence.
 
@@ -215,15 +212,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
-------------------------------------------------------------------------
+---
 
 ### The Doubly Linked List
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*TQXiR-L_itiG3WP-.gif" class="graf-image" /></figure>### *Definition*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*TQXiR-L_itiG3WP-.gif" class="graf-image" /></figure>###*Definition*
 
-> *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
+> _A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia_
 
 Having two node links allow traversal in either direction but adding or removing a node in a doubly linked list requires changing more links than the same operations on a Singly Linked List.
 
@@ -232,15 +229,15 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Stack
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/0*qsjYW-Lvfo22ecLE.gif" class="graf-image" /></figure>
 
-### *Definition*
+### _Definition_
 
-> *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
+> _A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia_
 
 A Stack often has a third method peek which allows to check the last pushed element without popping it.
 
@@ -249,13 +246,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(1)
 
-> *The code*
+> _The code_
 
 ### The Queue
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*YvfuX5tKP7-V0p7v.gif" class="graf-image" /></figure>### *Definition*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*YvfuX5tKP7-V0p7v.gif" class="graf-image" /></figure>###*Definition*
 
-> *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
+> _A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed._
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
@@ -264,13 +261,13 @@ Average
 Access Search Insertion Deletion  
 O(n) O(n) O(1) O(n)
 
-> *The code*
+> _The code_
 
 ### The Tree
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>### *Definition*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>###*Definition*
 
-> *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
+> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
 
 Complexity  
 Average  
@@ -282,17 +279,17 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 ### The Graph
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*q31mL1kjFWlIzw3l.gif" class="graf-image" /></figure>### *Definition*
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*q31mL1kjFWlIzw3l.gif" class="graf-image" /></figure>###*Definition*
 
-> *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references.*
+> _A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references._
 
--   <span id="f896">A graph is **any** collection of nodes and edges.</span>
--   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
--   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
--   <span id="8f45">Any number of edges may leave a given node</span>
--   <span id="51cf">A Path is a sequence of nodes on a graph</span>
+- <span id="f896">A graph is **any** collection of nodes and edges.</span>
+- <span id="fbda">Much more relaxed in structure than a tree.</span>
+- <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
+- <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
+- <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+- <span id="8f45">Any number of edges may leave a given node</span>
+- <span id="51cf">A Path is a sequence of nodes on a graph</span>
 
 ### Cycle Visual
 
@@ -306,12 +303,9 @@ Adjacency matrix: Data are stored in a two-dimensional matrix, in which the rows
 
 Graph
 
-> *The code*
+> _The code_
 
-------------------------------------------------------------------------
-
-
-
+---
 
 # Leetcode
 
@@ -323,7 +317,7 @@ Graph
 
 ## ➤ [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
 
-### Problem:
+### Problem
 
 Given a string **S** and a string **T**, count the number of distinct subsequences of **S** which equals **T**.
 
@@ -365,7 +359,7 @@ A subsequence of a string is a new string which is formed from the original stri
     babgbag
         ^^^
 
-### Solution:
+### Solution
 
 Define `f(i, j)` to be the number of ways that generate `T[0...j)` from `S[0...i)`.
 
@@ -405,11 +399,11 @@ let numDistinct = function (s, t) {
 
 Difficulty: Medium
 Related Topics:
-"Tree": https://leetcode.com/tag/tree
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Tree": <https://leetcode.com/tag/tree>
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
 Similar Questions:
-"Populating Next Right Pointers in Each Node II": https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii
-"Binary Tree Right Side View": https://leetcode.com/problems/binary-tree-right-side-view
+"Populating Next Right Pointers in Each Node II": <https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii>
+"Binary Tree Right Side View": <https://leetcode.com/problems/binary-tree-right-side-view>
 
 ---
 
@@ -417,7 +411,7 @@ Similar Questions:
 
 ## ➤ [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)
 
-### Problem:
+### Problem
 
 Given a binary tree
 
@@ -436,11 +430,16 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
+
+
+```
+
+
 
 Given the following perfect binary tree,
 
@@ -464,7 +463,7 @@ After calling your function, the tree should look like:
 
 ```
 
-### Solution:
+### Solution
 
 #### ONE
 
@@ -472,8 +471,8 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -551,10 +550,10 @@ let connect = function (root) {
 
 Difficulty: Medium
 Related Topics:
-"Tree": https://leetcode.com/tag/tree
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Tree": <https://leetcode.com/tag/tree>
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
 Similar Questions:
-"Populating Next Right Pointers in Each Node": https://leetcode.com/problems/populating-next-right-pointers-in-each-node
+"Populating Next Right Pointers in Each Node": <https://leetcode.com/problems/populating-next-right-pointers-in-each-node>
 
 ---
 
@@ -562,7 +561,7 @@ Similar Questions:
 
 ## ➤ [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)
 
-### Problem:
+### Problem
 
 Given a binary tree
 
@@ -581,8 +580,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -608,7 +607,7 @@ After calling your function, the tree should look like:
 
 ```
 
-### Solution:
+### Solution
 
 #### ONE
 
@@ -703,9 +702,9 @@ let connect = function (root) {
 
 Difficulty: Easy
 Related Topics:
-"Array": https://leetcode.com/tag/array
+"Array": <https://leetcode.com/tag/array>
 Similar Questions:
-"Pascal's Triangle II": https://leetcode.com/problems/pascals-triangle-ii
+"Pascal's Triangle II": <https://leetcode.com/problems/pascals-triangle-ii>
 
 ---
 
@@ -713,7 +712,7 @@ Similar Questions:
 
 ## ➤ [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
 
-### Problem:
+### Problem
 
 Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal's triangle.
 
@@ -736,7 +735,7 @@ Output:
 
 ```
 
-### Solution:
+### Solution
 
 Dynamic Programming 101.
 
@@ -769,9 +768,9 @@ let generate = function (numRows) {
 
 Difficulty: Easy
 Related Topics:
-"Array": https://leetcode.com/tag/array
+"Array": <https://leetcode.com/tag/array>
 Similar Questions:
-"Pascal's Triangle": https://leetcode.com/problems/pascals-triangle
+"Pascal's Triangle": <https://leetcode.com/problems/pascals-triangle>
 
 ---
 
@@ -779,7 +778,7 @@ Similar Questions:
 
 ## ➤ [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
 
-### Problem:
+### Problem
 
 Given a non-negative index _k_ where _k_ ≤ 33, return the *k*th index row of the Pascal's triangle.
 
@@ -801,7 +800,7 @@ Output: [1,3,3,1]
 
 Could you optimize your algorithm to use only _O_(_k_) extra space?
 
-### Solution:
+### Solution
 
 Dynamic Programming 101 with dynamic array.
 
@@ -833,8 +832,8 @@ let getRow = function (rowIndex) {
 
 Difficulty: Medium
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+"Array": <https://leetcode.com/tag/array>
+"Dynamic Programming": <https://leetcode.com/tag/dynamic-programming>
 
 ---
 
@@ -842,7 +841,7 @@ Related Topics:
 
 ## ➤ [120. Triangle](https://leetcode.com/problems/triangle/description/)
 
-### Problem:
+### Problem
 
 Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
 
@@ -864,7 +863,7 @@ The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + *
 
 Bonus point if you are able to do this using only _O_(_n_) extra space, where _n_ is the total number of rows in the triangle.
 
-### Solution:
+### Solution
 
 Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i][j]`.
 
@@ -900,14 +899,14 @@ let minimumTotal = function (triangle) {
 
 Difficulty: Easy
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+"Array": <https://leetcode.com/tag/array>
+"Dynamic Programming": <https://leetcode.com/tag/dynamic-programming>
 Similar Questions:
-"Maximum Subarray": https://leetcode.com/problems/maximum-subarray
-"Best Time to Buy and Sell Stock II": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
-"Best Time to Buy and Sell Stock III": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
-"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
-"Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+"Maximum Subarray": <https://leetcode.com/problems/maximum-subarray>
+"Best Time to Buy and Sell Stock II": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii>
+"Best Time to Buy and Sell Stock III": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii>
+"Best Time to Buy and Sell Stock IV": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv>
+"Best Time to Buy and Sell Stock with Cooldown": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown>
 
 ---
 
@@ -915,7 +914,7 @@ Similar Questions:
 
 ## ➤ [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
-### Problem:
+### Problem
 
 Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
@@ -942,7 +941,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ```
 
-### Solution:
+### Solution
 
 Only care about positive profits. Take the frist item as base and scan to the right. If we encounter an item `j` whose price `price[j]` is lower than the base (which means if we sell now the profit would be negative), we sell `j-1` instead and make `j` the new base.
 
@@ -972,14 +971,14 @@ let maxProfit = function (prices) {
 
 Difficulty: Easy
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"Greedy": https://leetcode.com/tag/greedy
+"Array": <https://leetcode.com/tag/array>
+"Greedy": <https://leetcode.com/tag/greedy>
 Similar Questions:
-"Best Time to Buy and Sell Stock": https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-"Best Time to Buy and Sell Stock III": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
-"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
-"Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
-"Best Time to Buy and Sell Stock with Transaction Fee": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
+"Best Time to Buy and Sell Stock": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock>
+"Best Time to Buy and Sell Stock III": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii>
+"Best Time to Buy and Sell Stock IV": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv>
+"Best Time to Buy and Sell Stock with Cooldown": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown>
+"Best Time to Buy and Sell Stock with Transaction Fee": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee>
 
 ---
 
@@ -987,7 +986,7 @@ Similar Questions:
 
 ## ➤ [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
-### Problem:
+### Problem
 
 Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
@@ -1022,7 +1021,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
     Output: 0
     Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
-### Solution:
+### Solution
 
 Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs (buy in then immediately sell out).
 
@@ -1046,13 +1045,13 @@ let maxProfit = function (prices) {
 
 Difficulty: Hard
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+"Array": <https://leetcode.com/tag/array>
+"Dynamic Programming": <https://leetcode.com/tag/dynamic-programming>
 Similar Questions:
-"Best Time to Buy and Sell Stock": https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-"Best Time to Buy and Sell Stock II": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
-"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
-"Maximum Sum of 3 Non-Overlapping Subarrays": https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays
+"Best Time to Buy and Sell Stock": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock>
+"Best Time to Buy and Sell Stock II": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii>
+"Best Time to Buy and Sell Stock IV": <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv>
+"Maximum Sum of 3 Non-Overlapping Subarrays": <https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays>
 
 ---
 
@@ -1060,7 +1059,7 @@ Similar Questions:
 
 ## ➤ [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
 
-### Problem:
+### Problem
 
 Say you have an array for which the *i*th element is the price of a given stock on day _i_.
 
@@ -1092,7 +1091,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
     Output: 0
     Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
-### Solution:
+### Solution
 
 Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won't be any intersection. We may complete at most _two_ transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
 
@@ -1143,13 +1142,13 @@ let maxProfit = function (prices) {
 
 Difficulty: Hard
 Related Topics:
-"Tree": https://leetcode.com/tag/tree
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Tree": <https://leetcode.com/tag/tree>
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
 Similar Questions:
-"Path Sum": https://leetcode.com/problems/path-sum
-"Sum Root to Leaf Numbers": https://leetcode.com/problems/sum-root-to-leaf-numbers
-"Path Sum IV": https://leetcode.com/problems/path-sum-iv
-"Longest Univalue Path": https://leetcode.com/problems/longest-univalue-path
+"Path Sum": <https://leetcode.com/problems/path-sum>
+"Sum Root to Leaf Numbers": <https://leetcode.com/problems/sum-root-to-leaf-numbers>
+"Path Sum IV": <https://leetcode.com/problems/path-sum-iv>
+"Longest Univalue Path": <https://leetcode.com/problems/longest-univalue-path>
 
 ---
 
@@ -1157,7 +1156,7 @@ Similar Questions:
 
 ## ➤ [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
 
-### Problem:
+### Problem
 
 Given a **non-empty** binary tree, find the maximum path sum.
 
@@ -1191,18 +1190,18 @@ Output: 42
 
 ```
 
-### Solution:
+### Solution
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
-    1.  `node.val` plus the max sum of a path that ends with `node.left`.
-    2.  `node.val` plus the max sum of a path that starts with `node.right`.
-    3.  `node.val` plus the max sum of both paths.
-    4.  Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
-    1.  The max-sum path is somewhere under the `node.left` subtree.
-    2.  The max-sum path is somewhere under the `node.right` subtree.
+- With `node.val`
+    1. `node.val` plus the max sum of a path that ends with `node.left`.
+    2. `node.val` plus the max sum of a path that starts with `node.right`.
+    3. `node.val` plus the max sum of both paths.
+    4. Just `node.val` (the max sum of both paths are negative).
+- Without`node.val` (disconnected)
+    1. The max-sum path is somewhere under the `node.left` subtree.
+    2. The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -1286,11 +1285,11 @@ function _maxPathSum(root, global) {
 
 Difficulty: Easy
 Related Topics:
-"Two Pointers": https://leetcode.com/tag/two-pointers
-"String": https://leetcode.com/tag/string
+"Two Pointers": <https://leetcode.com/tag/two-pointers>
+"String": <https://leetcode.com/tag/string>
 Similar Questions:
-"Palindrome Linked List": https://leetcode.com/problems/palindrome-linked-list
-"Valid Palindrome II": https://leetcode.com/problems/valid-palindrome-ii
+"Palindrome Linked List": <https://leetcode.com/problems/palindrome-linked-list>
+"Valid Palindrome II": <https://leetcode.com/problems/valid-palindrome-ii>
 
 ---
 
@@ -1298,7 +1297,7 @@ Similar Questions:
 
 ## ➤ [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
 
-### Problem:
+### Problem
 
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
@@ -1320,7 +1319,7 @@ Output: false
 
 ```
 
-### Solution:
+### Solution
 
 #### ONE
 
@@ -1401,12 +1400,12 @@ let isPalindrome = function (s) {
 
 Difficulty: Hard
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"String": https://leetcode.com/tag/string
-"Backtracking": https://leetcode.com/tag/backtracking
-"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+"Array": <https://leetcode.com/tag/array>
+"String": <https://leetcode.com/tag/string>
+"Backtracking": <https://leetcode.com/tag/backtracking>
+"Breadth-first Search": <https://leetcode.com/tag/breadth-first-search>
 Similar Questions:
-"Word Ladder": https://leetcode.com/problems/word-ladder
+"Word Ladder": <https://leetcode.com/problems/word-ladder>
 
 ---
 
@@ -1414,20 +1413,20 @@ Similar Questions:
 
 ## ➤ [126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)
 
-### Problem:
+### Problem
 
 Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
 
-1.  Only one letter can be changed at a time
-2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1. Only one letter can be changed at a time
+2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1459,7 +1458,7 @@ Explanation: The endWord "cog" is not in wordList, therefore no possible transfo
 
 ```
 
-### Solution:
+### Solution
 
 This is just like [127. Word Ladder](./127.%20Word%20Ladder).
 
@@ -1533,10 +1532,10 @@ function findLadders(beginWord, endWord, wordList) {
 
 Difficulty: Medium
 Related Topics:
-"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+"Breadth-first Search": <https://leetcode.com/tag/breadth-first-search>
 Similar Questions:
-"Word Ladder II": https://leetcode.com/problems/word-ladder-ii
-"Minimum Genetic Mutation": https://leetcode.com/problems/minimum-genetic-mutation
+"Word Ladder II": <https://leetcode.com/problems/word-ladder-ii>
+"Minimum Genetic Mutation": <https://leetcode.com/problems/minimum-genetic-mutation>
 
 ---
 
@@ -1544,20 +1543,20 @@ Similar Questions:
 
 ## ➤ [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
 
-### Problem:
+### Problem
 
 Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
 
-1.  Only one letter can be changed at a time.
-2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+1. Only one letter can be changed at a time.
+2. Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1588,7 +1587,7 @@ Explanation: The endWord "cog" is not in wordList, therefore no possible transfo
 
 ```
 
-### Solution:
+### Solution
 
 Think of it as building a tree, with `begineWord` as root and `endWord` as leaves.
 
@@ -1650,10 +1649,10 @@ let ladderLength = function (beginWord, endWord, wordList) {
 
 Difficulty: Hard
 Related Topics:
-"Array": https://leetcode.com/tag/array
-"Union Find": https://leetcode.com/tag/union-find
+"Array": <https://leetcode.com/tag/array>
+"Union Find": <https://leetcode.com/tag/union-find>
 Similar Questions:
-"Binary Tree Longest Consecutive Sequence": https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
+"Binary Tree Longest Consecutive Sequence": <https://leetcode.com/problems/binary-tree-longest-consecutive-sequence>
 
 ---
 
@@ -1661,7 +1660,7 @@ Similar Questions:
 
 ## ➤ [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 
-### Problem:
+### Problem
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
@@ -1676,7 +1675,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 
 ```
 
-### Solution:
+### Solution
 
 Build a Set from the list. Pick a number, find all it's adjacent numbers that are also in the Set. Count them and remove them all from the Set. Repeat until the Set is empty. Time complexity O(n + n) = O(n).
 
@@ -1710,11 +1709,11 @@ let longestConsecutive = function (nums) {
 
 Difficulty: Medium
 Related Topics:
-"Tree": https://leetcode.com/tag/tree
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Tree": <https://leetcode.com/tag/tree>
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
 Similar Questions:
-"Path Sum": https://leetcode.com/problems/path-sum
-"Binary Tree Maximum Path Sum": https://leetcode.com/problems/binary-tree-maximum-path-sum
+"Path Sum": <https://leetcode.com/problems/path-sum>
+"Binary Tree Maximum Path Sum": <https://leetcode.com/problems/binary-tree-maximum-path-sum>
 
 ---
 
@@ -1722,7 +1721,7 @@ Similar Questions:
 
 ## ➤ [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
 
-### Problem:
+### Problem
 
 Given a binary tree containing digits from `0-9` only, each root-to-leaf path could represent a number.
 
@@ -1759,7 +1758,7 @@ Find the total sum of all root-to-leaf numbers.
     The root-to-leaf path 4->0 represents the number 40.
     Therefore, sum = 495 + 491 + 40 = 1026.
 
-### Solution:
+### Solution
 
 To write a clean solution for this promblem, use `0` as indicator of leaf node. If all the children get `0`, it is a leaf node, return the sum of current level.
 
@@ -1788,12 +1787,12 @@ let sumNumbers = function (root, sum = 0) {
 
 Difficulty: Medium
 Related Topics:
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
-"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
-"Union Find": https://leetcode.com/tag/union-find
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
+"Breadth-first Search": <https://leetcode.com/tag/breadth-first-search>
+"Union Find": <https://leetcode.com/tag/union-find>
 Similar Questions:
-"Number of Islands": https://leetcode.com/problems/number-of-islands
-"Walls and Gates": https://leetcode.com/problems/walls-and-gates
+"Number of Islands": <https://leetcode.com/problems/number-of-islands>
+"Walls and Gates": <https://leetcode.com/problems/walls-and-gates>
 
 ---
 
@@ -1801,7 +1800,7 @@ Similar Questions:
 
 ## ➤ [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)
 
-### Problem:
+### Problem
 
 Given a 2D board containing `'X'` and `'O'` (**the letter O**), capture all regions surrounded by `'X'`.
 
@@ -1831,7 +1830,7 @@ X O X X
 
 Surrounded regions shouldn't be on the border, which means that any `'O'` on the border of the board are not flipped to `'X'`. Any `'O'` that is not on the border and it is not connected to an `'O'` on the border will be flipped to `'X'`. Two cells are connected if they are adjacent cells connected horizontally or vertically.
 
-### Solution:
+### Solution
 
 Find all the `O`s that are connected to the `O`s on the border, change them to `#`. Then scan the board, change `O` to `X` and `#` back to `O`.
 
@@ -1918,11 +1917,11 @@ let solve = function (board) {
 
 Difficulty: Medium
 Related Topics:
-"Depth-first Search": https://leetcode.com/tag/depth-first-search
-"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
-"Graph": https://leetcode.com/tag/graph
+"Depth-first Search": <https://leetcode.com/tag/depth-first-search>
+"Breadth-first Search": <https://leetcode.com/tag/breadth-first-search>
+"Graph": <https://leetcode.com/tag/graph>
 Similar Questions:
-"Copy List with Random Pointer": https://leetcode.com/problems/copy-list-with-random-pointer
+"Copy List with Random Pointer": <https://leetcode.com/problems/copy-list-with-random-pointer>
 
 ---
 
@@ -1930,7 +1929,7 @@ Similar Questions:
 
 ## ➤ [133. Clone Graph](https://leetcode.com/problems/clone-graph/description/)
 
-### Problem:
+### Problem
 
 Given the head of a graph, return a deep copy (clone) of the graph. Each node in the graph contains a `label` (`int`) and a list (`List[UndirectedGraphNode]`) of its `neighbors`. There is an edge between the given node and each of the nodes in its neighbors.
 
@@ -1944,9 +1943,9 @@ As an example, consider the serialized graph `{0,1,2#1,2#2,2}`.
 
 The graph has a total of three nodes, and therefore contains three parts as separated by `#`.
 
-1.  First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
-2.  Second node is labeled as `1`. Connect node `1` to node `2`.
-3.  Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
+1. First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
+2. Second node is labeled as `1`. Connect node `1` to node `2`.
+3. Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
 
 Visually, the graph looks like the following:
 
@@ -1962,7 +1961,7 @@ Visually, the graph looks like the following:
 
 **Note**: The information about the tree serialization is only meant so that you can understand error output if you get a wrong answer. You don't need to understand the serialization to solve the problem.
 
-### Solution:
+### Solution
 
 DFS. Cache the visited node before entering the next recursion.
 
@@ -2099,8 +2098,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -2131,8 +2130,8 @@ Given a root node reference of a BST and a key, delete the node with the given k
 
 Basically, the deletion can be divided into two stages:
 
-1.  Search for a node to remove.
-2.  If the node is found, delete the node.
+1. Search for a node to remove.
+2. If the node is found, delete the node.
 
 **Follow up:** Can you solve it with time complexity `O(height of tree)`?
 
@@ -2160,11 +2159,11 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
 [Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')

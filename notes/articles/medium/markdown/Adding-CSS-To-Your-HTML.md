@@ -116,7 +116,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### HTML:
 
-    <body> <div class=”menu”> <div class=”is-active”>Belka</div> <div> <div class=”is-active”>Strelka</div> </div> </div> </body> <div class=”is-active”> Laika </div> </body>
+    <body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>
 
 -   <span id="b452">Belka would be the only element selected.</span>
 

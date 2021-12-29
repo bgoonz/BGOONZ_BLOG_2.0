@@ -24,7 +24,7 @@ All other values are _objects_ including arrays and functions.
 
 Objects are class free, can contain other objects and can inherit properties from their prototypes (which can _reduce object initialisation time and memory consumption_).
 
-In other programming languages, objects are referred to as, “dictionaries”, “maps”, or “associative arrays”.
+In other programming languages, objects are referred to as, "dictionaries", "maps", or "associative arrays".
 
 -   <span id="2839">Objects are indexed with `keys` instead of numbers.</span>
 -   <span id="faa0">Order is not guaranteed within an Object.</span>

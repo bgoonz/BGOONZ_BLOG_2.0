@@ -155,22 +155,25 @@
                             <pre name="b40a" id="b40a" class="graf graf--pre graf-after--h3">find . -type f -exec rename 's/string1/string2/g' {} +</pre>
                             <h3 name="c466" id="c466" class="graf graf--h3 graf-after--pre">Remove numbers from file names</h3>
                             <pre name="9721" id="9721" class="graf graf--pre graf-after--h3">
-find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \”&amp;\” \”\1\2\”|' | sh</pre
+find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&amp;\" \"\1\2\"|' | sh</pre
                             >
                             <h3 name="dbe0" id="dbe0" class="graf graf--h3 graf-after--pre">
                                 Delete files within size range ( for when GitHub cries about file size):
                             </h3>
                             <pre name="1c7c" id="1c7c" class="graf graf--pre graf-after--h3">find . -size +386b -a -size -390b -exec rm -f {} \;</pre>
                             <h3 name="a850" id="a850" class="graf graf--h3 graf-after--pre">Create symbolic link to working directory</h3>
-                            <pre name="0467" id="0467" class="graf graf--pre graf-after--h3">ln -s “$(pwd)” ~/mylink</pre>
+                            <pre name="0467" id="0467"
+                              class="graf graf--pre graf-after--h3">ln -s "$(pwd)" ~/mylink</pre>
                             <h3 name="8486" id="8486" class="graf graf--h3 graf-after--pre">
                                 <strong class="markup--strong markup--h3-strong">Remove any traces of a git repository:</strong>
                             </h3>
                             <pre name="b841" id="b841" class="graf graf--pre graf-after--h3">
-find . \( -name “.git” -o -name “.gitignore” -o -name “.gitmodules” -o -name “.gitattributes” \) -exec rm -rf — {} +</pre
+find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf — {} +
+</pre
                             >
                             <h3 name="9be7" id="9be7" class="graf graf--h3 graf-after--pre">Replace spaces in filenames with underscores</h3>
-                            <pre name="92b5" id="92b5" class="graf graf--pre graf-after--h3">for file in *; do mv “$file” `echo $file | tr ' ' '_'` ; done</pre>
+                            <pre name="92b5" id="92b5"
+                              class="graf graf--pre graf-after--h3">for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done</pre>
                             <h3 name="0569" id="0569" class="graf graf--h3 graf-after--pre">Remove Empty Files and Folders:</h3>
                             <pre
                                 name="cf5a"

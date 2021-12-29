@@ -75,7 +75,7 @@ I'm a Midwest-based Software Engineer.
 
 • [Oct 15 '20](https://dev.to/natescode/comment/16ofi)
 
-Agreed plus “full stack” is a fancy way of companies getting someone to do two jobs for the price of one. It takes years to get good at front end or backend, let alone both
+Agreed plus "full stack" is a fancy way of companies getting someone to do two jobs for the price of one. It takes years to get good at front end or backend, let alone both
 
 Collapse Expand
 
@@ -748,7 +748,7 @@ I'm a Midwest-based Software Engineer.
 
 I agree. In some ways it's a good first language: no install needed, visual feedback, tons of resources etc. but in others it isn't: dynamically typed, quirks, prototypal, weird type system etc.
 
-One definitely needs statically typed OOP languages like C# or Java to get the fundamentals down. Too many wannabes hate on statically typed languages because they're “hard”.
+One definitely needs statically typed OOP languages like C# or Java to get the fundamentals down. Too many wannabes hate on statically typed languages because they're "hard".
 
 Either way, if one's gonna be a full stack Dev then they have to learn JS, or you're by definition not full-stack which is my argument on the whole roadmap.
 

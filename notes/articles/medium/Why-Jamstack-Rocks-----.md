@@ -10,7 +10,7 @@ JAMstack websites don't use the microservices architecture, but they go for the 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kFwbfuUYkD3-jQq-.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### JAM stands for JavaScript, API & Markup.
 
-> _“A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup”_
+> _"A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup"_
 
 > _— Mathias Biilmann (CEO & Co-founder of Netlify)._
 

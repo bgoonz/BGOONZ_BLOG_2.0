@@ -28,7 +28,7 @@ Also here's an even better list by someone I don't know but would be doing you a
 
 ### 12.)Bit.Dev:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*-bAeyLeg08WTkGPg.gif" class="graf-image" /></figure><a href="https://bit.dev/" class="markup--anchor markup--p-anchor"><strong>Bit.dev</strong></a> **the world's best and only component marketplace solution provided as a service**. It's enterprise-grade in every way and provides all features out of the box. Bit empowers organizations with a “Lego-box” where all developers can push, discover, and reuse every component.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*-bAeyLeg08WTkGPg.gif" class="graf-image" /></figure><a href="https://bit.dev/" class="markup--anchor markup--p-anchor"><strong>Bit.dev</strong></a> **the world's best and only component marketplace solution provided as a service**. It's enterprise-grade in every way and provides all features out of the box. Bit empowers organizations with a "Lego-box" where all developers can push, discover, and reuse every component.
 
 This means much faster development, less time and effort spent re-inventing the wheel, and 100% focus on innovation.
 
@@ -149,7 +149,7 @@ CloudConvert supports over 200 formats from audio, spreadsheet, video, document,
 
 ### 4.) Pandoc:
 
-Pandoc dubs itself a “markup format” converter. It can take a document in one of the supported formats and convert only its markup to another format. Maintaining the look and feel of the document is not a priority.
+Pandoc dubs itself a "markup format" converter. It can take a document in one of the supported formats and convert only its markup to another format. Maintaining the look and feel of the document is not a priority.
 
 Plug-ins for custom formats can also be written in <a href="https://en.wikipedia.org/wiki/Lua_%28programming_language%29" class="markup--anchor markup--p-anchor" title="Lua (programming language)">Lua</a>, which has been used to create an exporting tool for the <a href="https://en.wikipedia.org/wiki/Journal_Article_Tag_Suite" class="markup--anchor markup--p-anchor" title="Journal Article Tag Suite">Journal Article Tag Suite</a>, for example
 
@@ -270,7 +270,7 @@ This enables me to take a folder full of my notes … no matter the file extensi
 
 **What is Colaboratory?**
 
-Colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser and is especially well suited to machine learning, data analysis, and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing free access to computing resources including GPUs.
+Colaboratory, or "Colab" for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser and is especially well suited to machine learning, data analysis, and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing free access to computing resources including GPUs.
 
 **Is it really free to use?**
 
@@ -410,7 +410,7 @@ I am currently building myself a new blog site… I sometimes develop it locally
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*vewSClaL-mtlJ1VPU77ZqQ.jpeg" class="graf-image" /></figure>Stackbit takes all the tools you'd need for a site's stack (theme, static site generator, CMS, and deployment) and quickly bundles them together for you. It offers options in each category, so you can mix and match the tools in your stack that best suit your needs.
 
-At this point, you may be thinking, Ok, but “fast” is a relative term in this space… how “fast” are we really talking here?
+At this point, you may be thinking, Ok, but "fast" is a relative term in this space… how "fast" are we really talking here?
 
 Great question. Let me put it to you this way: you could literally throw a HotPocket in the microwave, go build an incredibly sleek JAMstack site, and you'd still be waiting for your food to be cool enough to eat.
 
@@ -432,7 +432,7 @@ For example, suppose your site uses <a href="https://www.gatsbyjs.com/" class="m
 
 If your site uses <a href="https://gohugo.io/" class="markup--anchor markup--p-anchor">Hugo</a>, Stackbit executes `hugo server` and routes page requests to Hugo's development server running internally on `http://localhost`<a href="http://localhost." class="markup--anchor markup--p-anchor">.</a>
 
-You can see the logs of how Stackbit pulls your repository, installs dependencies, and runs your SSG's development server by clicking on the “Logs” button in the “Advanced Tools” bottom bar:
+You can see the logs of how Stackbit pulls your repository, installs dependencies, and runs your SSG's development server by clicking on the "Logs" button in the "Advanced Tools" bottom bar:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Ak-yJ2z4qySTXyvk.png" class="graf-image" /></figure>### Preview Updates
 

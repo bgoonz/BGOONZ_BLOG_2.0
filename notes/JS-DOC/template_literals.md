@@ -192,7 +192,7 @@ This means that a tagged template like the following is problematic, because, pe
 
 Tagged templates should allow the embedding of languages (for example [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language), or [LaTeX](https://en.wikipedia.org/wiki/LaTeX)), where other escapes sequences are common. The ECMAScript proposal [Template Literal Revision](https://tc39.github.io/proposal-template-literal-revision/) (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.
 
-However, illegal escape sequences must still be represented in the “cooked” representation. They will show up as [`undefined`](global_objects/undefined) element in the “cooked” array:
+However, illegal escape sequences must still be represented in the "cooked” representation. They will show up as [`undefined`](global_objects/undefined) element in the "cooked” array:
 
     function latex(str) {
       return { "cooked": str[0], "raw": str.raw[0] }

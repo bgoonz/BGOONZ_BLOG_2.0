@@ -61,13 +61,13 @@ A validation tool which checks for common issues in your JavaScript. You'd usual
 
 ### Polyfill
 
-This is a concept that typically means providing JavaScript which tests for features that are missing (prototypes not defined, etc) and “fills” them by providing an implementation.
+This is a concept that typically means providing JavaScript which tests for features that are missing (prototypes not defined, etc) and "fills" them by providing an implementation.
 
 ### Promise
 
 Asynchronous calls typically return a promise (or deferred). This is an object which has a state: it can be given handlers for when it's fulfilled or rejected.
 
-Ember makes use of these in places like the model hook for a route. Until the promise resolves, Ember is able to put the route into a “loading” state.
+Ember makes use of these in places like the model hook for a route. Until the promise resolves, Ember is able to put the route into a "loading" state.
 
 -   <span id="a026"><a href="https://promisesaplus.com/" class="markup--anchor markup--li-anchor" title="https://promisesaplus.com/">An open standard for sound, interoperable JavaScript promises</a></span>
 -   <span id="f0eb"><a href="http://emberjs.com/guides/routing/asynchronous-routing/#toc_a-word-on-promises" class="markup--anchor markup--li-anchor" title="http://emberjs.com/guides/routing/asynchronous-routing/#toc_a-word-on-promises">emberjs.com — A word on promises</a></span>
@@ -80,24 +80,24 @@ Server Side Rendering
 
 ### Transpile
 
-When related to JavaScript, this can be part of your build process which “transpiles” (converts) your ES6 syntax JavaScript to JavaScript that is supported by current browsers.
+When related to JavaScript, this can be part of your build process which "transpiles" (converts) your ES6 syntax JavaScript to JavaScript that is supported by current browsers.
 
-Besides ES6, you'll see a lot of content about compiling/transpiling CoffeeScript, a short-hand language which can “compile” to JavaScript.
+Besides ES6, you'll see a lot of content about compiling/transpiling CoffeeScript, a short-hand language which can "compile" to JavaScript.
 
 -   <span id="3730">Ember CLI specifically uses <a href="https://babeljs.io/" class="markup--anchor markup--li-anchor" title="https://babeljs.io/">Babel</a> via the <a href="https://github.com/babel/ember-cli-babel" class="markup--anchor markup--li-anchor" title="https://github.com/babel/ember-cli-babel">ember-cli-babel</a> plugin.</span>
 
 ### Shadow DOM
 
-Not to be confused with Virtual DOM. Shadow DOM is still a work in progress, but basically a proposed way to have an “isolated” DOM encapsulated within your app's DOM.
+Not to be confused with Virtual DOM. Shadow DOM is still a work in progress, but basically a proposed way to have an "isolated" DOM encapsulated within your app's DOM.
 
-Creating a re-usable “widget” or control might be a good use-case for this. Browsers implement some of their controls using their own version of a shadow DOM.
+Creating a re-usable "widget" or control might be a good use-case for this. Browsers implement some of their controls using their own version of a shadow DOM.
 
 -   <span id="0bcb"><a href="http://www.w3.org/TR/shadow-dom/" class="markup--anchor markup--li-anchor" title="http://www.w3.org/TR/shadow-dom/">W3C Working Draft</a></span>
 -   <span id="df28"><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/" class="markup--anchor markup--li-anchor" title="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></span>
 
 ### Virtual DOM
 
-Not to be confused with Shadow DOM. The concept of a virtual DOM means abstracting your code (or in our case, Ember) away from using the browser's DOM in favor of a “virtual” DOM that can easily be accessed for read/writes or even serialized.
+Not to be confused with Shadow DOM. The concept of a virtual DOM means abstracting your code (or in our case, Ember) away from using the browser's DOM in favor of a "virtual" DOM that can easily be accessed for read/writes or even serialized.
 
 ---
 
@@ -187,7 +187,7 @@ System (DNS)**.
 names (and other internet resources). The directory stores already registered  
 domain names along with their corresponding IP addresses.
 
-<a href="https://en.wikipedia.org/wiki/Hexadecimal" class="markup--anchor markup--p-anchor"><strong>Hexadecimal</strong></a> — Uses 16 different symbols. “0”-”9" to represent the values 0 to 9 and “A”-”F” (“a”-”f” is acceptable too) to represent the values 10 to 15. It's common to use  
+<a href="https://en.wikipedia.org/wiki/Hexadecimal" class="markup--anchor markup--p-anchor"><strong>Hexadecimal</strong></a> — Uses 16 different symbols. "0"-"9" to represent the values 0 to 9 and "A"-"F" ("a"-"f" is acceptable too) to represent the values 10 to 15. It's common to use  
 hexadecimals when working in CSS to assign colors to your elements.
 
 The hexadecimal for dwyl's logo color is \#4bc0a9 (teal).  
@@ -268,8 +268,8 @@ feature of C++, Scala, Ruby, Haskell and Rust.
 **Progressive Web App (PWA)** — PWAs are traditional websites that are enhanced  
 with modern web technologies, allowing them to provide a more app-like  
 experience. They offer functionality such as being saved as a tile on your  
-mobile home screen, working offline and push notifications. The “progressive”  
-part means they're “progressively enhanced” with newer features, which means  
+mobile home screen, working offline and push notifications. The "progressive"  
+part means they're "progressively enhanced" with newer features, which means  
 they'll also work in older browsers that don't support the new features. Unlike  
 native apps, they don't have to be updated/listed in the app store although it  
 is possible to list them in the app store when this is desired.
@@ -308,9 +308,9 @@ text within it is a paragraph whereas a `<nav>` tag should contain navigation
 content and a `<footer>` should appear at the end of the page.
 
 **Syntactic Sugar** — syntactic sugar refers to syntax in a language that is  
-designed to make things easier to read. The syntax makes the language “sweeter”  
+designed to make things easier to read. The syntax makes the language "sweeter"  
 to use as things can be expressed more clearly or concisely. Something can be  
-considered “syntactic sugar” if it could be removed from the language without  
+considered "syntactic sugar" if it could be removed from the language without  
 removing any functionality on what the language can do. For example ternary  
 operators in Javascript: `x ? a : b` doesn't require the ternary operator syntax  
 it could also be expressed with an `if/else` statement:
@@ -321,10 +321,10 @@ it could also be expressed with an `if/else` statement:
      { b }
 
 **Technical Debt** — Technical  
-debt is the time/cost of “re-working” a feature (or entire app) because corners  
-were cut the first time it was built. Think of Technical Debt like a “loan shark”  
-for your project, if you take “shortcuts” to implement a feature quickly (e.g:  
-by skipping tests) you will pay for it later and usually with “interest”. For  
+debt is the time/cost of "re-working" a feature (or entire app) because corners  
+were cut the first time it was built. Think of Technical Debt like a "loan shark"  
+for your project, if you take "shortcuts" to implement a feature quickly (e.g:  
+by skipping tests) you will pay for it later and usually with "interest". For  
 more detail see: <a href="https://github.com/dwyl/product-owner-guide#what-is-technical-debt" class="markup--anchor markup--p-anchor">https://github.com/dwyl/product-owner-guide#what-is-technical-debt</a>
 
 **Transmission Control Protocol (TCP)** -  

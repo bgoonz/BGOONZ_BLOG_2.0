@@ -916,7 +916,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.sv
 
 -   [Let's build a node.js GraphQL server for fetching Spotify REST API, in German](https://blog.codecentric.de/2017/09/graphql-mit-spotify-teil-1-server/) | [in English](https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server/)
 
--   [“Client-side only” realtime web applications with Firebase, GraphQL and apollo-client 2.0](https://medium.com/@pierrecriulanscy/client-side-only-realtime-web-applications-with-firebase-graphql-and-apollo-client-2-0-9606160f7cf8)
+-   ["Client-side only" realtime web applications with Firebase, GraphQL and apollo-client 2.0](https://medium.com/@pierrecriulanscy/client-side-only-realtime-web-applications-with-firebase-graphql-and-apollo-client-2-0-9606160f7cf8)
 
 ## Tutorials
 

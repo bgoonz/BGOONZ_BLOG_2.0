@@ -195,7 +195,7 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 -   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
 -   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
 -   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
--   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+-   <span id="0f5a">\[ \] I **did not** use pronouns such as: "I," "we," "they, "you," "me," "us"</span>
 -   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
 -   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
 -   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>

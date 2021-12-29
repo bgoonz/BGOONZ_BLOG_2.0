@@ -12,7 +12,6 @@ template: docs
 
 # Job Search Docs:
 
-
 <br>
 <br>
 <br>
@@ -30,6 +29,3 @@ template: docs
 <br>
 <br>
 <br>
-
-
-

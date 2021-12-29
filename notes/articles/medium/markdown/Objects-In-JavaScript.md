@@ -12,7 +12,7 @@ The object is a data structure that stores other data, similar to how an array s
 
 ### **The Object**
 
-In other programming languages, objects are referred to as, “dictionaries”, “maps”, or “associative arrays”.
+In other programming languages, objects are referred to as, "dictionaries", "maps", or "associative arrays".
 
 -   <span id="53af">Objects are indexed with `keys` instead of numbers.</span>
 -   <span id="2cc0">Order is not guaranteed within an Object.</span>
@@ -79,7 +79,7 @@ In other programming languages, objects are referred to as, “dictionaries”, 
             bark: "Bowowowowo"
         }
 
--   <span id="ec54">We can also use **dot notation** **“.”** to access key/value pairs in an object.</span>
+-   <span id="ec54">We can also use **dot notation** **"."** to access key/value pairs in an object.</span>
 -   <span id="cd22">One thing to note is that when using dot notation, we do not have to use string quotes as the key.</span>
 
 #### **Bracket Notation vs Dot Notation**

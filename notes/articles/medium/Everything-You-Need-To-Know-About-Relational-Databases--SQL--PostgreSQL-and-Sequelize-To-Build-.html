@@ -549,8 +549,9 @@
                                 </li>
                             </ul>
                             <p name="d615" id="d615" class="graf graf--p graf-after--li">
-                                — Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the
-                                “puppies” table. We indicate the table name by table.column
+                                — Notice here we are indicating that we want the "name" field from the "friends" table
+                                as well as the "name" field from the
+                                "puppies" table. We indicate the table name by table.column
                                 <br />
 
                                 — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field
@@ -924,7 +925,9 @@ const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;', password: '&lt;&lt
                                 name="20be"
                                 id="20be"
                                 class="graf graf--pre graf-after--p"
-                            >// Get the airport name from the command line and store it<br>// in the variable “name”. Pass that value to the<br>// selectAirportsByName function.<br>const name = process.argv[2];<br>// console.log(name);<br>selectAirportsByName(name);</pre>
+                            >// Get the airport name from the command line and store it<br>// in the variable "name".
+                            Pass that value to the<br>// selectAirportsByName function.<br>const name =
+                            process.argv[2];<br>// console.log(name);<br>selectAirportsByName(name);</pre>
                             <p name="2cac" id="2cac" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">ORM</strong></p>
                             <p name="e058" id="e058" class="graf graf--p graf-after--p">
                                 1. How to install, configure, and use Sequelize, an ORM for JavaScript
@@ -975,7 +978,15 @@ CREATE DATABASE example_app_production WITH OWNER example_user</pre
                                 name="3bab"
                                 id="3bab"
                                 class="graf graf--pre graf-after--li"
-                            >{<br>“development”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_development”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>},<br>“test”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_test”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>},<br>“production”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_production”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>}<br>}</pre>
+                            >{<br>"development": {<br>"username": "sequelize_recipe_box_app",<br>"password":
+                            "HfKfK79k",<br>"database": "recipe_box_development",<br>"host": "127.0.0.1",<br>"dialect":
+                            "postgres",<br>"seederStorage": "sequelize"<br>},<br>"test": {<br>"username":
+                            "sequelize_recipe_box_app",<br>"password": "HfKfK79k",<br>"database":
+                            "recipe_box_test",<br>"host": "127.0.0.1",<br>"dialect": "postgres",<br>"seederStorage":
+                            "sequelize"<br>},<br>"production": {<br>"username":
+                            "sequelize_recipe_box_app",<br>"password": "HfKfK79k",<br>"database":
+                            "recipe_box_production",<br>"host": "127.0.0.1",<br>"dialect":
+                            "postgres",<br>"seederStorage": "sequelize"<br>}<br>}</pre>
                             <p name="0240" id="0240" class="graf graf--p graf-after--pre">
                                 1. How to use database migrations to make your database grow with your application in a source-control enabled way
                             </p>
@@ -987,7 +998,7 @@ CREATE DATABASE example_app_production WITH OWNER example_user</pre
                                 </li>
                             </ul>
                             <pre name="7ce9" id="7ce9" class="graf graf--pre graf-after--li">
-npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”</pre
+npx sequelize-cli model:generate — name Cat — attributes "firstName:string,specialSkill:string"</pre
                             >
                             <ul class="postList">
                                 <li name="bc91" id="bc91" class="graf graf--li graf-after--pre">
@@ -1186,7 +1197,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                 <li name="aa61" id="aa61" class="graf graf--li graf-after--li">{ where: { field: value } } =&gt; WHERE field = value</li>
                             </ul>
                             <pre name="c50b" id="c50b" class="graf graf--pre graf-after--li">
-const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.log(JSON.stringify(cats, null, 2));</pre
+const cats = await Cat.findAll({ where: { firstName: "Markov" } }); console.log(JSON.stringify(cats, null, 2));</pre
                             >
                             <p name="3bf9" id="3bf9" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">OR in the WHERE clause</strong>
@@ -1203,7 +1214,9 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 name="aa84"
                                 id="aa84"
                                 class="graf graf--pre graf-after--p"
-                            >const cats = await Cat.findAll({ where: { firstName: [“Markov”, “Curie”] } });const cats = await Cat.findAll({<br>    where: {<br>        firstName: &quot;Markov&quot;,<br>        age: 4<br>    }<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
+                            >const cats = await Cat.findAll({ where: { firstName: ["Markov", "Curie"] } });const cats =
+                            await Cat.findAll({<br> where: {<br> firstName: &quot;Markov&quot;,<br> age: 4<br>
+                            }<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
                             <pre name="2363" id="2363" class="graf graf--pre graf-after--pre">console.log(JSON.stringify(cats, null, 2));</pre>
                             <p name="942b" id="942b" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">AND in the WHERE clause</strong>
@@ -1221,7 +1234,8 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 <li name="dd6a" id="dd6a" class="graf graf--li graf-after--h3">
                                     By requiring Op from the sequelize library we can provide more advanced comparison operators
                                 </li>
-                                <li name="0a01" id="0a01" class="graf graf--li graf-after--li">const { Op } = require(“sequelize”);</li>
+                                <li name="0a01" id="0a01" class="graf graf--li graf-after--li">const { Op } =
+                                  require("sequelize");</li>
                                 <li name="8936" id="8936" class="graf graf--li graf-after--li">Op.ne: Not equal operator</li>
                             </ul>
                             <pre
@@ -1261,7 +1275,7 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 </li>
                                 <li name="f9f9" id="f9f9" class="graf graf--li graf-after--li">
                                     const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order:
-                                    [[“age”, “DESC”], “firstName”], }); console.log(JSON.stringify(cats, null, 2));
+                                    [["age", "DESC"], "firstName"], }); console.log(JSON.stringify(cats, null, 2));
                                 </li>
                             </ul>
                             <pre
@@ -1294,7 +1308,8 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 </li>
                             </ul>
                             <pre name="f26a" id="f26a" class="graf graf--pre graf-after--li">
-// finds the oldest cat const cat = await Cat.findOne({ order: [[“age”, “DESC”]], }); console.log(JSON.stringify(cat, null, 2));</pre
+// finds the oldest cat const cat = await Cat.findOne({ order: [["age", "DESC"]], }); console.log(JSON.stringify(cat,
+null, 2));</pre
                             >
                             <ul class="postList">
                                 <li name="3bc7" id="3bc7" class="graf graf--li graf-after--pre">

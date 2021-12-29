@@ -477,7 +477,7 @@ Probably, this is a more difficult way to do ls -l \*.txt, but this is for educa
 
     ls -l | grep "\.txt$"
 
-> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\\.txt$”.
+> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex "\\.txt$".
 
 ### Variables
 
@@ -491,7 +491,7 @@ You have no need to declare a variable, just assigning a value to its reference 
                 STR="Hello World!"
                 echo $STR
 
-Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the '$' in at the beginning. Please notice (try it!) that if you don't use the '$' sign, the output of the program will be different, and probably not what you want it to be.
+Line 2 creates a variable called STR and assigns the string "Hello World!" to it. Then the VALUE of this variable is retrieved by putting the '$' in at the beginning. Please notice (try it!) that if you don't use the '$' sign, the output of the program will be different, and probably not what you want it to be.
 
 ### A very simple backup script (little bit better)
 

@@ -416,7 +416,7 @@ Update:
 
 #### Readiness
 
--   <span id="232f"><a href="https://www.reddit.com/r/learnprogramming/comments/59paoi/self_taught_front_end_devs_when_did_you_know_that/" class="markup--anchor markup--li-anchor">Self taught front end devs… When did you know that you were “Job ready”?</a></span>
+-   <span id="232f"><a href="https://www.reddit.com/r/learnprogramming/comments/59paoi/self_taught_front_end_devs_when_did_you_know_that/" class="markup--anchor markup--li-anchor">Self taught front end devs… When did you know that you were "Job ready"?</a></span>
 -   <span id="7775"><a href="https://www.reddit.com/r/cscareerquestions/comments/53avew/people_who_are_selftaught_developers_how_long_did/" class="markup--anchor markup--li-anchor">People who are self-taught developers, how long did it take you to get your first job?</a></span>
 -   <span id="5835"><a href="https://www.reddit.com/r/learnprogramming/comments/52c3os/when_do_you_know_when_youre_ready_to_start/" class="markup--anchor markup--li-anchor">When do you know when you're ready to start interviewing?</a></span>
 -   <span id="c14c"><a href="https://www.reddit.com/r/cscareerquestions/comments/516gps/software_developers_what_is_the_best_advice_you/" class="markup--anchor markup--li-anchor">Software developers- what is the best advice you have for people learning CS?</a></span>

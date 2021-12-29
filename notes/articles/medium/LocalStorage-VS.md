@@ -73,7 +73,7 @@ That's allowed for historical reasons, and mostly works, but generally not recom
 
 ### Looping over keys
 
-As we've seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+As we've seen, the methods provide "get/set/remove by key" functionality. But how to get all saved values or keys?
 
 Unfortunately, storage objects are not iterable.
 
@@ -102,7 +102,7 @@ It iterates over keys, but also outputs few built-in fields that we don't need:
       alert(`${key}: ${localStorage.getItem(key)}`);
     }
 
-…Or just get the “own” keys with `Object.keys` and then loop over them if needed:
+…Or just get the "own" keys with `Object.keys` and then loop over them if needed:
 
     let keys = Object.keys(localStorage);
     for(let key of keys) {

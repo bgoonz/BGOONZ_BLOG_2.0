@@ -109,11 +109,11 @@ See more about [Browser Support](https://www.gatsbyjs.com/docs/how-to/custom-con
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#mapping-node-types)Mapping node types
 
-Gatsby includes an advanced feature that lets you create “mappings” between node types.
+Gatsby includes an advanced feature that lets you create "mappings” between node types.
 
 > Note: Gatsby v2.2 introduced a new way to create foreign-key relations between node types with [the `@link` GraphQL field extension](https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization/#foreign-key-fields).
 
-For instance, imagine you have a multi-author markdown blog where you want to “link” from each blog post to the author information stored in a YAML file named `author.yaml`:
+For instance, imagine you have a multi-author markdown blog where you want to "link” from each blog post to the author information stored in a YAML file named `author.yaml`:
 
 ```
 ---title: A blog postauthor: Kyle Mathews---A treatise on the efficacy of bezoar for treating agricultural pesticide poisoning.

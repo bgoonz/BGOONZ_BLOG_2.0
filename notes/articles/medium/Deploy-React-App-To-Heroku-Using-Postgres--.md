@@ -18,7 +18,7 @@ In the following phases, you will configure your application to work in producti
 
 If you haven't created a Heroku account yet, create one <a href="https://signup.heroku.com/" class="markup--anchor markup--p-anchor">here</a>.
 
-Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the “Resources” tab in your new application, click “Find more add-ons” and add the “Heroku Postgres” add-on with the free Hobby Dev setting.
+Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the "Resources" tab in your new application, click "Find more add-ons" and add the "Heroku Postgres" add-on with the free Hobby Dev setting.
 
 In your terminal, install the <a href="https://devcenter.heroku.com/articles/heroku-command-line" class="markup--anchor markup--p-anchor">Heroku CLI</a>. Afterwards, login to Heroku in your terminal by running the following:
 
@@ -123,7 +123,7 @@ Finally, commit your changes.
 
 ### Phase 3: Deploy to Heroku
 
-Once you're finished setting this up, navigate to your application's Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
+Once you're finished setting this up, navigate to your application's Heroku dashboard. Under "Settings" there is a section for "Config Vars". Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
 
 Add environment variables for `JWT_EXPIRES_IN` and `JWT_SECRET` and any other environment variables you need for production.
 

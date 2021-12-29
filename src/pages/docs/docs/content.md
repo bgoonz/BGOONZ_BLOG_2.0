@@ -94,7 +94,7 @@ template: docs
 [**Everything You Need to Get Started With VSCode + Extensions & Resources**\
 *Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 'https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931')[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode _Themes_**\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**Object Oriented Programming in JavaScript**\
@@ -166,7 +166,7 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 [**bgoonz/Cumulative-Resource-List**\
 *List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s 'https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s')[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode _Themes_**\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**JavaScript Rotate (Array) ProblemWalkthrough**\
@@ -214,7 +214,7 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 [**Basic Web Development Environment Setup**\
 *Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe 'https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe')[](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
 
-[***Fetch* Quick Sheet**\
+[**_Fetch_ Quick Sheet**\
 Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4 'https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4')[](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
@@ -242,7 +242,7 @@ For a more complete guide... checkout :
 
 [![](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)
 
-- way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
+-   way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
 
 ### Time Complexity
 
@@ -397,7 +397,7 @@ console.log(greaterValue(-2, negate, addOne));
 
 ```
 
-*Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
+_Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them), we are passing the function itself._
 
 #### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
 
@@ -539,7 +539,7 @@ References:
 [**Introduction: callbacks**\
 *To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks 'https://javascript.info/callbacks')[](https://javascript.info/callbacks)
 
-*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
+_More content at_ [**_plainenglish.io_**](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
 
@@ -631,7 +631,7 @@ We can create an empty file by typing `touch file_name`. It's going to create a 
 
 I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
 #### ✔ Display the Content of a File ➡ `cat`:
 
@@ -683,7 +683,7 @@ Copied my hi.txt file content into hello.txt file. For confirmation open your he
 
 -   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
-*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
+_The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
 [![](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)
 
@@ -1053,7 +1053,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 > **I am essentially removing the recursive action of the find command...**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory... is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory... is working properly!**
 
 [![](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)
 

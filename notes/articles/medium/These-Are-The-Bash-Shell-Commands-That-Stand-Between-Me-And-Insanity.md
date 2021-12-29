@@ -22,7 +22,7 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 
 ### Remove numbers from file names
 
-    find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \”&\” \”\1\2\”|' | sh
+    find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 ### Delete files within size range ( for when GitHub cries about file size):
 
@@ -30,15 +30,15 @@ I will not profess to be a bash shell wizard… but I have managed to scour some
 
 ### Create symbolic link to working directory
 
-    ln -s “$(pwd)” ~/mylink
+    ln -s "$(pwd)" ~/mylink
 
 ### **Remove any traces of a git repository:**
 
-    find . \( -name “.git” -o -name “.gitignore” -o -name “.gitmodules” -o -name “.gitattributes” \) -exec rm -rf — {} +
+    find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf — {} +
 
 ### Replace spaces in filenames with underscores
 
-    for file in *; do mv “$file” `echo $file | tr ' ' '_'` ; done
+    for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
 
 ### Remove Empty Files and Folders:
 

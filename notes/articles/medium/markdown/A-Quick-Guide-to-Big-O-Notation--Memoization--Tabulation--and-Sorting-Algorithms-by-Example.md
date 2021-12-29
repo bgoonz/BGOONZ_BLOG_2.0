@@ -60,7 +60,7 @@ Common Complexity Classes
 
 #### `O(n) Linear`
 
-> **Linear algorithm's will access each item of the input “once”.**
+> **Linear algorithm's will access each item of the input "once".**
 
 ### `O(nlog(n)) Log Linear Time`
 

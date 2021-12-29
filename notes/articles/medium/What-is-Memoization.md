@@ -23,7 +23,7 @@ calculations that can occur in algorithms that use recursive algorithms.
 Recall that recursion solves a large problem by dividing it into smaller  
 sub-problems that are more manageable.
 
-Memoization will store the results of the sub-problems in some other data structure, meaning that you avoid duplicate calculations and only “solve” each subproblem once.
+Memoization will store the results of the sub-problems in some other data structure, meaning that you avoid duplicate calculations and only "solve" each subproblem once.
 
 This approach is near synonymous with another computer science term you may have heard before — caching. However, caching as a practice is not achieved exclusively by memoizing. Think of a cache as a little bucket where we will keep important information we don't want to forget in the near future but that isn't vitally important or part of the long-term makeup of our application. It's less important than the things we need to store in memory but more important than a variable we can discard as soon as we use it once.
 
@@ -39,7 +39,7 @@ memoization) and the memory used to run the algorithm (with memoization).
 Usually, memoization is a good trade-off when dealing with large data or  
 calculations.
 
-You cannot always apply this technique to recursive problems. The problem must have an “overlapping subproblem structure” for memoization to be effective.
+You cannot always apply this technique to recursive problems. The problem must have an "overlapping subproblem structure" for memoization to be effective.
 
 Generally speaking, computer memory is cheap and human time is incalculably valuable so we may opt for this approach even when the largest gains on paper can be made from converting RAM at the expense of execution speed.
 

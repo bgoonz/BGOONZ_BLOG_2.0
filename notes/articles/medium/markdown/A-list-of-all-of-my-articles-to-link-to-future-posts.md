@@ -277,7 +277,7 @@ You should probably skip this one… seriously it's just for internal use!
 <a href="https://medium.com/codex/scope-closures-context-in-javascript-f126f1523104" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/scope-closures-context-in-javascript-f126f1523104"><strong>Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.</strong>
 <br/>
 
-<em>“JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with…</em>medium.com</a><a href="https://medium.com/codex/scope-closures-context-in-javascript-f126f1523104" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>"JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with…</em>medium.com</a><a href="https://medium.com/codex/scope-closures-context-in-javascript-f126f1523104" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/codex/these-are-a-few-of-my-favorite-things-82e8b6e61879" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/these-are-a-few-of-my-favorite-things-82e8b6e61879"><strong>These Are A Few Of My Favorite Things</strong>
 <br/>
@@ -322,7 +322,7 @@ You should probably skip this one… seriously it's just for internal use!
 <a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7"><strong>Scheduling: setTimeout and setInterval</strong>
 <br/>
 
-<em>We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/css-animations-d196a20099a5" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/css-animations-d196a20099a5"><strong>LocalStorage VS SessionStorage</strong>
 <br/>
@@ -337,7 +337,7 @@ You should probably skip this one… seriously it's just for internal use!
 <a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07"><strong>How To Implement Native(ES6) Data Structures Using Arrays &amp; Objects</strong>
 <br/>
 
-<em>Smart data structures and dumb code works better than the other way around -“Eric S. Raymond”</em><a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Smart data structures and dumb code works better than the other way around -"Eric S. Raymond"</em><a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/codex/objects-in-javascript-cc578a781e1d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/objects-in-javascript-cc578a781e1d"><strong>Objects in Javascript</strong>
 <br/>
@@ -397,7 +397,7 @@ You should probably skip this one… seriously it's just for internal use!
 <a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/http-basics-8f02a96a834a"><strong>HTTP Basics</strong>
 <br/>
 
-<em>“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/http-basics-8f02a96a834a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35"><strong>JavaScript Frameworks &amp; Libraries</strong>
 <br/>

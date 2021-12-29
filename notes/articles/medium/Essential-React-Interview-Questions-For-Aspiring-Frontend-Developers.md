@@ -83,7 +83,7 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **2. Create virtual DOM nodes using JSX** To create a React virtual DOM node using JSX, define HTML syntax in a JavaScript file.
 
-> Here, the JavaScript hello variable is set to a React virtual DOM h1 element with the text “Hello World!”.
+> Here, the JavaScript hello variable is set to a React virtual DOM h1 element with the text "Hello World!".
 
 > You can also nest virtual DOM nodes in each other just like how you do it in HTML with the real DOM.
 
@@ -101,11 +101,11 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **6. Attach an event listener to an actual DOM node using a virtual node**
 
-The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called <a href="https://reactjs.org/docs/reconciliation.html" class="markup--anchor markup--p-anchor">reconciliation</a>.
+The virtual DOM (VDOM) is a programming concept where an ideal, or "virtual", representation of a UI is kept in memory and synced with the "real" DOM by a library such as ReactDOM. This process is called <a href="https://reactjs.org/docs/reconciliation.html" class="markup--anchor markup--p-anchor">reconciliation</a>.
 
 This approach enables the declarative API of React: You tell React what state you want the UI to be in, and it makes sure the DOM matches that state. This abstracts out the attribute manipulation, event handling, and manual DOM updating that you would otherwise have to use to build your app.
 
-Since “virtual DOM” is more of a pattern than a specific technology, people sometimes say it to mean different things. In React world, the term “virtual DOM” is usually associated with <a href="https://reactjs.org/docs/rendering-elements.html" class="markup--anchor markup--p-anchor">React elements</a> since they are the objects representing the user interface. React, however, also uses internal objects called “fibers” to hold additional information about the component tree. They may also be considered a part of “virtual DOM” implementation in React.
+Since "virtual DOM" is more of a pattern than a specific technology, people sometimes say it to mean different things. In React world, the term "virtual DOM" is usually associated with <a href="https://reactjs.org/docs/rendering-elements.html" class="markup--anchor markup--p-anchor">React elements</a> since they are the objects representing the user interface. React, however, also uses internal objects called "fibers" to hold additional information about the component tree. They may also be considered a part of "virtual DOM" implementation in React.
 
 ### Is the Shadow DOM the same as the Virtual DOM?
 
@@ -203,7 +203,7 @@ Sometimes you just want to use some CLI tools but you don't want to install them
 <!-- -->
 
 -   <span id="7a12">You can also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="markup--anchor markup--li-anchor">interpolate values</a> into JSX.</span>
--   <span id="f405">Set a variable to the string, “world”, and replace the string of “world” in the NavLinks JSX element with the variable wrapped in curly braces:</span>
+-   <span id="f405">Set a variable to the string, "world", and replace the string of "world" in the NavLinks JSX element with the variable wrapped in curly braces:</span>
 
 > **Accessing props:**
 
@@ -211,7 +211,7 @@ To access our props object in another component we pass it the props argument an
 
 ### Reminder:
 
-Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
 
 ### Function and Class Components
 
@@ -221,7 +221,7 @@ The simplest way to define a component is to write a JavaScript function:
       return <h1>Hello, {props.name}</h1>;
     }
 
-This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. We call such components “function components” because they are literally JavaScript functions.
+This function is a valid React component because it accepts a single "props" (which stands for properties) object argument with data and returns a React element. We call such components "function components" because they are literally JavaScript functions.
 
 You can also use an <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes" class="markup--anchor markup--p-anchor">ES6 class</a> to define a component:
 

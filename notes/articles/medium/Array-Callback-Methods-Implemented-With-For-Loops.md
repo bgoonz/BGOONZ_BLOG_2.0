@@ -8,13 +8,13 @@ How to implement array callback methods in JavaScript
 
 #### How to implement array callback methods in JavaScript
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called “First Class Objects” in JavaScript because:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called "First Class Objects" in JavaScript because:
 
--   <span id="1df8">A function is an instance of the Object type</span>
--   <span id="6e67">A function can have properties and has a link back to its constructor method</span>
--   <span id="c7cf">You can store the function in a variable</span>
--   <span id="b709">You can pass the function as a parameter to another function</span>
--   <span id="2c3c">You can return the function from a function</span>
+- <span id="1df8">A function is an instance of the Object type</span>
+- <span id="6e67">A function can have properties and has a link back to its constructor method</span>
+- <span id="c7cf">You can store the function in a variable</span>
+- <span id="b709">You can pass the function as a parameter to another function</span>
+- <span id="2c3c">You can return the function from a function</span>
 
 What do you think will be printed in the following:
 
@@ -41,7 +41,7 @@ What do you think will be printed in the following:
 
     fruitBasket();
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value
 
     function greaterValue(value, cb1, cb2) {
         // compare cb1 invoked with value to cb2 invoked with value
@@ -69,7 +69,7 @@ What do you think will be printed in the following:
 
 _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them), we are passing the function itself._
 
-#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
+#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map
 
     function myMap(arr, callback) {
         // iterate through the array, perform the cb on each element
@@ -90,7 +90,7 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
     };
     console.log(myMap([1, 2, 3], double));
 
-#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.
+#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter
 
     function myFilter(arr, callback) {
         let filtered = [];
@@ -106,7 +106,7 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
         return filtered;
     }
 
-#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.
+#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every
 
     function myEvery(arr, callback) {
         for (let i = 0; i < arr.length; i++) {

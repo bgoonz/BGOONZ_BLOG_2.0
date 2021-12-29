@@ -57,7 +57,7 @@ If we could only see the `ranchers` table, we would know that John, Jane, and Je
 
 Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in" class="markup--anchor markup--p-anchor">SQLTryIT (Links to an external site.)</a>.
 
-How many records in the products table belong to the category “confections”?
+How many records in the products table belong to the category "confections"?
 
 ### Objective 2 — query data from multiple tables
 
@@ -352,7 +352,7 @@ There should no be `knex` code in the endpoints themselves.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### A database is a collection of data organized for easy retrieval and manipulation.
 
-We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.
+We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related" data, are the oldest and most common type of database in use today.
 
 ### Data Persistence
 
@@ -1386,7 +1386,7 @@ This table has two issues. There is no proper id field (as multiple farms may ha
 
 <a href="https://www.notion.so/075ad6dd99ac48698625d7b56ca67bef" class="markup--anchor markup--p-anchor">Untitled</a>
 
-While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn't good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.
+While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn't good either, as its another example of denormalization. There is no "array" data type in a relational database, so each field must contain only one data point.
 
 <a href="https://www.notion.so/375a15b0cb3f444a8698cd6cb3a08fe0" class="markup--anchor markup--p-anchor">Untitled</a>
 
@@ -1458,7 +1458,7 @@ This is the most common type of relationship between entities. Some other exampl
 -   <span id="cc42">One `user` can have many `posts`.</span>
 -   <span id="dae3">One `post` can have many `comments`.</span>
 
-Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the `farms` and `ranchers` tables.
+Manage this type of relationship by adding a foreign key on the "many" table of the relationship that points to the primary key on the "one" table. Consider the `farms` and `ranchers` tables.
 
 <a href="https://www.notion.so/7dfd2e69c9804a01845f2e9b716a5ac2" class="markup--anchor markup--p-anchor">Untitled</a>
 

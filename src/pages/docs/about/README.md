@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
@@ -19,8 +18,7 @@ template: docs
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 </div>
- 
- 
+
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -31,70 +29,70 @@ template: docs
 
 ---
 
-## Wiki Nav:
+## Wiki Nav
 
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
--   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
--   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
--   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
--   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
--   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
--   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
--   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
--   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
--   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
--   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
--   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
--   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
--   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
--   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
--   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
--   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
--   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
--   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
--   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
--   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
--   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
--   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
--   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
--   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
--   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
--   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
--   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
--   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
--   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
--   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
--   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
--   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
--   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
-## Dependencies:
+## Dependencies
 
 <details>
   <summary>Click to expand!</summary>
   <br>
 
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
 
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
 `4.10.5`
 
 ![@ghost**](https://avatars.githubusercontent.com/u/10137?s=40&v=4)@algolia/requester-common
 `4.10.5`
 
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
 `4.10.5`
 
-[![@stackbit**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus ](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
+[![@stackbit**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
 `0.0.4`
 
-[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest ](https://github.com/facebook/jest)babel-jest
+[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest)babel-jest
 `^ 24.7.1`
 
-[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby ](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
+[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
 `^ 0.1.11`
 
 [![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby) `^ 2.5.0`
@@ -105,17 +103,17 @@ template: docs
 
 [![@lodash**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)](https://github.com/lodash)[lodash / lodash](https://github.com/lodash/lodash) `^ 4.17.11`
 
-[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react ](https://github.com/facebook/react)react-test-renderer
+[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react](https://github.com/facebook/react)react-test-renderer
 `^ 16.8.6`
 
-[![@getkirby-v2**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin ](https://github.com/getkirby-v2/algolia-plugin)algolia
+[![@getkirby-v2**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin](https://github.com/getkirby-v2/algolia-plugin)algolia
 `0.0.0`
 
 [![@ecomfe**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)](https://github.com/ecomfe)[ecomfe / babel-runtime](https://github.com/ecomfe/babel-runtime) `6.26.0`
 
 [![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / chokidar](https://github.com/paulmillr/chokidar) `3.4.0`
 
-[![@DefinitelyTyped**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped ](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
+[![@DefinitelyTyped**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
 `^ 13`
 
 [![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / anymatch](https://github.com/micromatch/anymatch) `~ 3.1.1`
@@ -154,7 +152,7 @@ template: docs
 
 [![@JedWatson**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)](https://github.com/JedWatson)[JedWatson / classnames](https://github.com/JedWatson/classnames) `2.2.6`
 
-[![@bestiejs**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js ](https://github.com/bestiejs/benchmark.js)benchmark
+[![@bestiejs**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js](https://github.com/bestiejs/benchmark.js)benchmark
 `^ 1.0.0`
 
 [![@browserify**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)](https://github.com/browserify)[browserify / browserify](https://github.com/browserify/browserify) `^ 14.1.0`
@@ -165,241 +163,241 @@ template: docs
 
 [![@documentationjs**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)](https://github.com/documentationjs)[documentationjs / documentation](https://github.com/documentationjs/documentation) `^ 13.2.5`
 
-[![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel ](https://github.com/babel/babel)@babel/core
+[![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel](https://github.com/babel/babel)@babel/core
 `7.12.3`
 
-[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy ](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 </details>
 
 ---
 
-## Docs Structure:
+## Docs Structure
 
 <details>
 <summary> Docs Structure  </summary>
 
 ```
 ├── blog
-│   ├── 300-react-questions.md
-│   ├── awesome-graphql.md
-│   ├── big-o-complexity.md
-│   ├── blog-archive.md
-│   ├── blogwcomments.md
-│   ├── data-structures.md
-│   ├── flow-control-in-python.md
-│   ├── functions-in-python.md
-│   ├── git-gateway.md
-│   ├── index.md
-│   ├── interview-questions-js.md
-│   ├── netlify-cms.md
-│   ├── platform-docs.md
-│   ├── python-for-js-dev.md
-│   ├── python-resources.md
-│   ├── web-dev-trends.md
-│   └── web-scraping.md
+│   ├── 300-react-questions.md
+│   ├── awesome-graphql.md
+│   ├── big-o-complexity.md
+│   ├── blog-archive.md
+│   ├── blogwcomments.md
+│   ├── data-structures.md
+│   ├── flow-control-in-python.md
+│   ├── functions-in-python.md
+│   ├── git-gateway.md
+│   ├── index.md
+│   ├── interview-questions-js.md
+│   ├── netlify-cms.md
+│   ├── platform-docs.md
+│   ├── python-for-js-dev.md
+│   ├── python-resources.md
+│   ├── web-dev-trends.md
+│   └── web-scraping.md
 ├── docs
-│   ├── about
-│   │   ├── eng-portfolio.md
-│   │   ├── ideas-for-this-website.md
-│   │   ├── index.md
-│   │   ├── intrests.md
-│   │   ├── job-search.md
-│   │   └── resume.md
-│   ├── articles
-│   │   ├── basic-web-dev.md
-│   │   ├── buffers.md
-│   │   ├── dev-dep.md
-│   │   ├── event-loop.md
-│   │   ├── fs-module.md
-│   │   ├── how-the-web-works.md
-│   │   ├── http.md
-│   │   ├── index.md
-│   │   ├── install.md
-│   │   ├── intro.md
-│   │   ├── modules.md
-│   │   ├── nextjs.md
-│   │   ├── node-api-express.md
-│   │   ├── node-cli-args.md
-│   │   ├── node-common-modules.md
-│   │   ├── node-env-variables.md
-│   │   ├── node-js-language.md
-│   │   ├── node-package-manager.md
-│   │   ├── node-repl.md
-│   │   ├── node-run-cli.md
-│   │   ├── nodejs.md
-│   │   ├── nodevsbrowser.md
-│   │   ├── npm.md
-│   │   ├── npx.md
-│   │   ├── os-module.md
-│   │   ├── reading-files.md
-│   │   ├── semantic-html.md
-│   │   ├── semantic.md
-│   │   ├── the-uniform-resource-locator-(url).md
-│   │   ├── understanding-firebase.md
-│   │   ├── v8.md
-│   │   ├── web-standards-checklist.md
-│   │   ├── webdev-tools.md
-│   │   └── writing-files.md
-│   ├── audio
-│   │   ├── audio-feature-extraction.md
-│   │   ├── audio.md
-│   │   ├── dfft.md
-│   │   ├── discrete-fft.md
-│   │   ├── dtw-python-explained.md
-│   │   ├── dynamic-time-warping.md
-│   │   ├── index.md
-│   │   └── web-audio-api.md
-│   ├── career
-│   │   ├── dev-interview.md
-│   │   ├── index.md
-│   │   ├── interview-dos-n-donts.md
-│   │   └── job-boards.md
-│   ├── community
-│   │   ├── an-open-letter-2-future-developers.md
-│   │   ├── index.md
-│   │   └── video-chat.md
-│   ├── content
-│   │   ├── algo.md
-│   │   ├── archive.md
-│   │   ├── gatsby-Queries-Mutations.md
-│   │   ├── history-api.md
-│   │   ├── index.md
-│   │   ├── main-projects.md
-│   │   └── trouble-shooting.md
-│   ├── data-structures
-│   │   └── index.md
-│   ├── docs
-│   │   ├── appendix.md
-│   │   ├── art-of-command-line.md
-│   │   ├── bash.md
-│   │   ├── content.md
-│   │   ├── css.md
-│   │   ├── data-structures-docs.md
-│   │   ├── es-6-features.md
-│   │   ├── git-reference.md
-│   │   ├── git-repos.md
-│   │   ├── html-spec.md
-│   │   ├── index.md
-│   │   ├── markdown.md
-│   │   ├── no-whiteboarding.md
-│   │   ├── node-docs-complete.md
-│   │   ├── node-docs-full.md
-│   │   ├── regex-in-js.md
-│   │   └── sitemap.md
-│   ├── faq
-│   │   ├── contact.md
-│   │   ├── index.md
-│   │   └── plug-ins.md
-│   ├── gists.md
-│   ├── index.md
-│   ├── interact
-│   │   ├── callstack-visual.md
-│   │   ├── clock.md
-│   │   ├── index.md
-│   │   ├── jupyter-notebooks.md
-│   │   ├── other-sites.md
-│   │   └── video-chat.md
-│   ├── interview
-│   │   ├── index.md
-│   │   ├── job-search-nav.md
-│   │   └── review-concepts.md
-│   ├── javascript
-│   │   ├── arrow-functions.md
-│   │   ├── asyncjs.md
-│   │   ├── await-keyword.md
-│   │   ├── bigo.md
-│   │   ├── clean-code.md
-│   │   ├── constructor-functions.md
-│   │   ├── index.md
-│   │   ├── promises.md
-│   │   ├── review.md
-│   │   └── this-is-about-this.md
-│   ├── leetcode
-│   │   └── index.md
-│   ├── privacy-policy.md
-│   ├── projects
-│   │   ├── embeded-websites.md
-│   │   ├── index.md
-│   │   ├── list-of-projects.md
-│   │   ├── mini-projects.md
-│   │   └── my-websites.md
-│   ├── python
-│   │   ├── at-length.md
-│   │   ├── cheat-sheet.md
-│   │   ├── comprehensive-guide.md
-│   │   ├── examples.md
-│   │   ├── flow-control.md
-│   │   ├── functions.md
-│   │   ├── google-sheets-api.md
-│   │   ├── index.md
-│   │   ├── intro-for-js-devs.md
-│   │   ├── python-ds.md
-│   │   └── snippets.md
-│   ├── quick-reference
-│   │   ├── Emmet.md
-│   │   ├── all-emojis.md
-│   │   ├── create-react-app.md
-│   │   ├── git-bash.md
-│   │   ├── git-tricks.md
-│   │   ├── google-firebase.md
-│   │   ├── heroku-error-codes.md
-│   │   ├── index.md
-│   │   ├── installation.md
-│   │   ├── markdown-dropdowns.md
-│   │   ├── minifiction.md
-│   │   ├── new-repo-instructions.md
-│   │   ├── psql-setup.md
-│   │   ├── pull-request-rubric.md
-│   │   ├── quick-links.md
-│   │   ├── topRepos.md
-│   │   ├── understanding-path.md
-│   │   └── vscode-themes.md
-│   ├── react
-│   │   ├── ajax-n-apis.md
-│   │   ├── cheatsheet.md
-│   │   ├── createReactApp.md
-│   │   ├── demo.md
-│   │   ├── dont-use-index-as-keys.md
-│   │   ├── index.md
-│   │   ├── jsx.md
-│   │   ├── react-docs.md
-│   │   ├── react-in-depth.md
-│   │   ├── react2.md
-│   │   └── render-elements.md
-│   ├── reference
-│   │   ├── awesome-lists.md
-│   │   ├── awesome-static.md
-│   │   ├── bash-commands.md
-│   │   ├── bookmarks.md
-│   │   ├── embed-the-web.md
-│   │   ├── github-search.md
-│   │   ├── google-cloud.md
-│   │   ├── how-2-reinstall-npm.md
-│   │   ├── how-to-kill-a-process.md
-│   │   ├── index.md
-│   │   ├── installing-node.md
-│   │   ├── intro-to-nodejs.md
-│   │   ├── notes-template.md
-│   │   ├── psql.md
-│   │   ├── resources.md
-│   │   ├── vscode.md
-│   │   └── web-api's.md
-│   ├── search.md
-│   ├── sitemap.md
-│   ├── tips
-│   │   ├── array-methods.md
-│   │   ├── index.md
-│   │   └── insert-into-array.md
-│   ├── tools
-│   │   ├── Archive.md
-│   │   ├── data-structures.md
-│   │   ├── dev-utilities.md
-│   │   ├── index.md
-│   │   └── markdown-html.md
-│   └── tutorials
-│       ├── enviorment-setup.md
-│       └── index.md
+│   ├── about
+│   │   ├── eng-portfolio.md
+│   │   ├── ideas-for-this-website.md
+│   │   ├── index.md
+│   │   ├── intrests.md
+│   │   ├── job-search.md
+│   │   └── resume.md
+│   ├── articles
+│   │   ├── basic-web-dev.md
+│   │   ├── buffers.md
+│   │   ├── dev-dep.md
+│   │   ├── event-loop.md
+│   │   ├── fs-module.md
+│   │   ├── how-the-web-works.md
+│   │   ├── http.md
+│   │   ├── index.md
+│   │   ├── install.md
+│   │   ├── intro.md
+│   │   ├── modules.md
+│   │   ├── nextjs.md
+│   │   ├── node-api-express.md
+│   │   ├── node-cli-args.md
+│   │   ├── node-common-modules.md
+│   │   ├── node-env-variables.md
+│   │   ├── node-js-language.md
+│   │   ├── node-package-manager.md
+│   │   ├── node-repl.md
+│   │   ├── node-run-cli.md
+│   │   ├── nodejs.md
+│   │   ├── nodevsbrowser.md
+│   │   ├── npm.md
+│   │   ├── npx.md
+│   │   ├── os-module.md
+│   │   ├── reading-files.md
+│   │   ├── semantic-html.md
+│   │   ├── semantic.md
+│   │   ├── the-uniform-resource-locator-(url).md
+│   │   ├── understanding-firebase.md
+│   │   ├── v8.md
+│   │   ├── web-standards-checklist.md
+│   │   ├── webdev-tools.md
+│   │   └── writing-files.md
+│   ├── audio
+│   │   ├── audio-feature-extraction.md
+│   │   ├── audio.md
+│   │   ├── dfft.md
+│   │   ├── discrete-fft.md
+│   │   ├── dtw-python-explained.md
+│   │   ├── dynamic-time-warping.md
+│   │   ├── index.md
+│   │   └── web-audio-api.md
+│   ├── career
+│   │   ├── dev-interview.md
+│   │   ├── index.md
+│   │   ├── interview-dos-n-donts.md
+│   │   └── job-boards.md
+│   ├── community
+│   │   ├── an-open-letter-2-future-developers.md
+│   │   ├── index.md
+│   │   └── video-chat.md
+│   ├── content
+│   │   ├── algo.md
+│   │   ├── archive.md
+│   │   ├── gatsby-Queries-Mutations.md
+│   │   ├── history-api.md
+│   │   ├── index.md
+│   │   ├── main-projects.md
+│   │   └── trouble-shooting.md
+│   ├── data-structures
+│   │   └── index.md
+│   ├── docs
+│   │   ├── appendix.md
+│   │   ├── art-of-command-line.md
+│   │   ├── bash.md
+│   │   ├── content.md
+│   │   ├── css.md
+│   │   ├── data-structures-docs.md
+│   │   ├── es-6-features.md
+│   │   ├── git-reference.md
+│   │   ├── git-repos.md
+│   │   ├── html-spec.md
+│   │   ├── index.md
+│   │   ├── markdown.md
+│   │   ├── no-whiteboarding.md
+│   │   ├── node-docs-complete.md
+│   │   ├── node-docs-full.md
+│   │   ├── regex-in-js.md
+│   │   └── sitemap.md
+│   ├── faq
+│   │   ├── contact.md
+│   │   ├── index.md
+│   │   └── plug-ins.md
+│   ├── gists.md
+│   ├── index.md
+│   ├── interact
+│   │   ├── callstack-visual.md
+│   │   ├── clock.md
+│   │   ├── index.md
+│   │   ├── jupyter-notebooks.md
+│   │   ├── other-sites.md
+│   │   └── video-chat.md
+│   ├── interview
+│   │   ├── index.md
+│   │   ├── job-search-nav.md
+│   │   └── review-concepts.md
+│   ├── javascript
+│   │   ├── arrow-functions.md
+│   │   ├── asyncjs.md
+│   │   ├── await-keyword.md
+│   │   ├── bigo.md
+│   │   ├── clean-code.md
+│   │   ├── constructor-functions.md
+│   │   ├── index.md
+│   │   ├── promises.md
+│   │   ├── review.md
+│   │   └── this-is-about-this.md
+│   ├── leetcode
+│   │   └── index.md
+│   ├── privacy-policy.md
+│   ├── projects
+│   │   ├── embeded-websites.md
+│   │   ├── index.md
+│   │   ├── list-of-projects.md
+│   │   ├── mini-projects.md
+│   │   └── my-websites.md
+│   ├── python
+│   │   ├── at-length.md
+│   │   ├── cheat-sheet.md
+│   │   ├── comprehensive-guide.md
+│   │   ├── examples.md
+│   │   ├── flow-control.md
+│   │   ├── functions.md
+│   │   ├── google-sheets-api.md
+│   │   ├── index.md
+│   │   ├── intro-for-js-devs.md
+│   │   ├── python-ds.md
+│   │   └── snippets.md
+│   ├── quick-reference
+│   │   ├── Emmet.md
+│   │   ├── all-emojis.md
+│   │   ├── create-react-app.md
+│   │   ├── git-bash.md
+│   │   ├── git-tricks.md
+│   │   ├── google-firebase.md
+│   │   ├── heroku-error-codes.md
+│   │   ├── index.md
+│   │   ├── installation.md
+│   │   ├── markdown-dropdowns.md
+│   │   ├── minifiction.md
+│   │   ├── new-repo-instructions.md
+│   │   ├── psql-setup.md
+│   │   ├── pull-request-rubric.md
+│   │   ├── quick-links.md
+│   │   ├── topRepos.md
+│   │   ├── understanding-path.md
+│   │   └── vscode-themes.md
+│   ├── react
+│   │   ├── ajax-n-apis.md
+│   │   ├── cheatsheet.md
+│   │   ├── createReactApp.md
+│   │   ├── demo.md
+│   │   ├── dont-use-index-as-keys.md
+│   │   ├── index.md
+│   │   ├── jsx.md
+│   │   ├── react-docs.md
+│   │   ├── react-in-depth.md
+│   │   ├── react2.md
+│   │   └── render-elements.md
+│   ├── reference
+│   │   ├── awesome-lists.md
+│   │   ├── awesome-static.md
+│   │   ├── bash-commands.md
+│   │   ├── bookmarks.md
+│   │   ├── embed-the-web.md
+│   │   ├── github-search.md
+│   │   ├── google-cloud.md
+│   │   ├── how-2-reinstall-npm.md
+│   │   ├── how-to-kill-a-process.md
+│   │   ├── index.md
+│   │   ├── installing-node.md
+│   │   ├── intro-to-nodejs.md
+│   │   ├── notes-template.md
+│   │   ├── psql.md
+│   │   ├── resources.md
+│   │   ├── vscode.md
+│   │   └── web-api's.md
+│   ├── search.md
+│   ├── sitemap.md
+│   ├── tips
+│   │   ├── array-methods.md
+│   │   ├── index.md
+│   │   └── insert-into-array.md
+│   ├── tools
+│   │   ├── Archive.md
+│   │   ├── data-structures.md
+│   │   ├── dev-utilities.md
+│   │   ├── index.md
+│   │   └── markdown-html.md
+│   └── tutorials
+│       ├── enviorment-setup.md
+│       └── index.md
 ├── index.md
 ├── privacy-policy.md
 ├── readme.md
@@ -1206,7 +1204,7 @@ template: docs
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1. **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
@@ -1215,7 +1213,7 @@ template: docs
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
 
-1.  **Start developing.**
+1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
@@ -1224,11 +1222,11 @@ template: docs
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+1. **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link:_`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
@@ -1250,23 +1248,23 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for "source code".
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
 10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
 
@@ -1278,9 +1276,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -1308,28 +1306,28 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
 
--   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
--   **`/plugins`** This folder hosts any project-specific (“local”) plugins that aren’t published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
--   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
--   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. “src” is a convention for “source code”.
+- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+- **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+    - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
--   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
 
--   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
--   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
--   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
--   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
 
-The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it’s common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
+The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
 
 ---
 
@@ -1341,15 +1339,15 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 
 ---
 
-In this guide, you’ll learn Gatsby’s approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
+In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby’s approach to layouts
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby's approach to layouts
 
-Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React’s compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
+Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
 
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
 
-Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com’s layout component.
+Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
 
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
 
@@ -1366,16 +1364,16 @@ import React from "react"export default function Layout({ children }) {  return 
 If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
 
 ```
-import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>      <h1>I’m in a layout!</h1>    </Layout>  );}
+import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>      <h1>I'm in a layout!</h1>    </Layout>  );}
 ```
 
 Repeat for every page and template that needs this layout.
 
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
 
-As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The “top level” component is the page itself. As a result, when the “top level” component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
+As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
 
-If you need to set a wrapper component around page components that won’t get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
+If you need to set a wrapper component around page components that won't get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
 
 Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
 
@@ -1392,10 +1390,10 @@ Gatsby can use Markdown files to create pages in your site. You add plugins to r
 
 Here are the steps Gatsby follows for making this happen.
 
-1.  Read files into Gatsby from the filesystem
-2.  Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
-3.  Add a Markdown file
-4.  Create a Collection Route component for the Markdown files
+1. Read files into Gatsby from the filesystem
+2. Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
+3. Add a Markdown file
+4. Create a Collection Route component for the Markdown files
 
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
 
@@ -1413,11 +1411,11 @@ Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path`
 module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
 ```
 
-Completing the above step means that you’ve “sourced” the Markdown files from the filesystem. You can now “transform” the Markdown to HTML and the YAML frontmatter to JSON.
+Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
 
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
 
-You’ll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
 
 ### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
 
@@ -1437,7 +1435,7 @@ Create a folder in the `/src` directory of your Gatsby application called `markd
 
 ### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
 
-When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called “frontmatter” and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
+When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
 
 src/markdown-pages/post-1.md
 
@@ -1459,11 +1457,11 @@ import React from "react"import { graphql } from "gatsby"export default function
 
 Two things are important in the file above:
 
-1.  A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query’s result.
+1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
 
     **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
 
-2.  The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
+2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
 
 Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
 
@@ -1477,7 +1475,7 @@ For more information, have a look in the working example `using-markdown-pages`.
 
 ---
 
-# SOURCECODE:
+# SOURCECODE
 
 ```
 
@@ -1630,7 +1628,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 ---
 
-# Source Code:
+# Source Code
 
 <details>
 <summary> Folder Structure (src)  </summary>
@@ -1639,291 +1637,291 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 .
 ├── Combined_____-_____Doc.md
 ├── components
-│   ├── ActionLink.js
-│   ├── CtaButtons.js
-│   ├── DarkToggle
-│   │   ├── index.js
-│   │   └── styles.js
-│   ├── DocsMenu.js
-│   ├── DocsSubmenu.js
-│   ├── Footer.js
-│   ├── Header.js
-│   ├── Icon.js
-│   ├── Layout.js
-│   ├── SectionContent.js
-│   ├── SectionCta.js
-│   ├── SectionDocs.js
-│   ├── SectionGrid.js
-│   ├── SectionHero.js
-│   ├── Submenu.js
-│   ├── global.css
-│   └── index.js
+│   ├── ActionLink.js
+│   ├── CtaButtons.js
+│   ├── DarkToggle
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── DocsMenu.js
+│   ├── DocsSubmenu.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Icon.js
+│   ├── Layout.js
+│   ├── SectionContent.js
+│   ├── SectionCta.js
+│   ├── SectionDocs.js
+│   ├── SectionGrid.js
+│   ├── SectionHero.js
+│   ├── Submenu.js
+│   ├── global.css
+│   └── index.js
 ├── data
-│   └── doc_sections.yml
+│   └── doc_sections.yml
 ├── hooks
-│   ├── addScript.js
-│   ├── index.js
-│   ├── useDarkMode.js
-│   ├── useEventListener.js
-│   ├── useMediaQuery.js
-│   ├── useOnClickOutside.js
-│   ├── useQueryParam.js
-│   ├── useSize.js
-│   └── useStorage.js
+│   ├── addScript.js
+│   ├── index.js
+│   ├── useDarkMode.js
+│   ├── useEventListener.js
+│   ├── useMediaQuery.js
+│   ├── useOnClickOutside.js
+│   ├── useQueryParam.js
+│   ├── useSize.js
+│   └── useStorage.js
 ├── html.js
 ├── pages
-│   ├── blog
-│   │   ├── 300-react-questions.md
-│   │   ├── awesome-graphql.md
-│   │   ├── big-o-complexity.md
-│   │   ├── blog-archive.md
-│   │   ├── blogwcomments.md
-│   │   ├── data-structures.md
-│   │   ├── flow-control-in-python.md
-│   │   ├── functions-in-python.md
-│   │   ├── git-gateway.md
-│   │   ├── index.md
-│   │   ├── interview-questions-js.md
-│   │   ├── netlify-cms.md
-│   │   ├── platform-docs.md
-│   │   ├── python-for-js-dev.md
-│   │   ├── python-resources.md
-│   │   ├── web-dev-trends.md
-│   │   └── web-scraping.md
-│   ├── docs
-│   │   ├── about
-│   │   │   ├── eng-portfolio.md
-│   │   │   ├── ideas-for-this-website.md
-│   │   │   ├── index.md
-│   │   │   ├── intrests.md
-│   │   │   ├── job-search.md
-│   │   │   └── resume.md
-│   │   ├── articles
-│   │   │   ├── basic-web-dev.md
-│   │   │   ├── buffers.md
-│   │   │   ├── dev-dep.md
-│   │   │   ├── event-loop.md
-│   │   │   ├── fs-module.md
-│   │   │   ├── how-the-web-works.md
-│   │   │   ├── http.md
-│   │   │   ├── index.md
-│   │   │   ├── install.md
-│   │   │   ├── intro.md
-│   │   │   ├── modules.md
-│   │   │   ├── nextjs.md
-│   │   │   ├── node-api-express.md
-│   │   │   ├── node-cli-args.md
-│   │   │   ├── node-common-modules.md
-│   │   │   ├── node-env-variables.md
-│   │   │   ├── node-js-language.md
-│   │   │   ├── node-package-manager.md
-│   │   │   ├── node-repl.md
-│   │   │   ├── node-run-cli.md
-│   │   │   ├── nodejs.md
-│   │   │   ├── nodevsbrowser.md
-│   │   │   ├── npm.md
-│   │   │   ├── npx.md
-│   │   │   ├── os-module.md
-│   │   │   ├── reading-files.md
-│   │   │   ├── semantic-html.md
-│   │   │   ├── semantic.md
-│   │   │   ├── the-uniform-resource-locator-(url).md
-│   │   │   ├── understanding-firebase.md
-│   │   │   ├── v8.md
-│   │   │   ├── web-standards-checklist.md
-│   │   │   ├── webdev-tools.md
-│   │   │   └── writing-files.md
-│   │   ├── audio
-│   │   │   ├── audio-feature-extraction.md
-│   │   │   ├── audio.md
-│   │   │   ├── dfft.md
-│   │   │   ├── discrete-fft.md
-│   │   │   ├── dtw-python-explained.md
-│   │   │   ├── dynamic-time-warping.md
-│   │   │   ├── index.md
-│   │   │   └── web-audio-api.md
-│   │   ├── career
-│   │   │   ├── dev-interview.md
-│   │   │   ├── index.md
-│   │   │   ├── interview-dos-n-donts.md
-│   │   │   └── job-boards.md
-│   │   ├── community
-│   │   │   ├── an-open-letter-2-future-developers.md
-│   │   │   ├── index.md
-│   │   │   └── video-chat.md
-│   │   ├── content
-│   │   │   ├── algo.md
-│   │   │   ├── archive.md
-│   │   │   ├── gatsby-Queries-Mutations.md
-│   │   │   ├── history-api.md
-│   │   │   ├── index.md
-│   │   │   ├── main-projects.md
-│   │   │   └── trouble-shooting.md
-│   │   ├── data-structures
-│   │   │   └── index.md
-│   │   ├── docs
-│   │   │   ├── appendix.md
-│   │   │   ├── art-of-command-line.md
-│   │   │   ├── bash.md
-│   │   │   ├── content.md
-│   │   │   ├── css.md
-│   │   │   ├── data-structures-docs.md
-│   │   │   ├── es-6-features.md
-│   │   │   ├── git-reference.md
-│   │   │   ├── git-repos.md
-│   │   │   ├── html-spec.md
-│   │   │   ├── index.md
-│   │   │   ├── markdown.md
-│   │   │   ├── no-whiteboarding.md
-│   │   │   ├── node-docs-complete.md
-│   │   │   ├── node-docs-full.md
-│   │   │   ├── regex-in-js.md
-│   │   │   └── sitemap.md
-│   │   ├── faq
-│   │   │   ├── contact.md
-│   │   │   ├── index.md
-│   │   │   └── plug-ins.md
-│   │   ├── gists.md
-│   │   ├── index.md
-│   │   ├── interact
-│   │   │   ├── callstack-visual.md
-│   │   │   ├── clock.md
-│   │   │   ├── index.md
-│   │   │   ├── jupyter-notebooks.md
-│   │   │   ├── other-sites.md
-│   │   │   └── video-chat.md
-│   │   ├── interview
-│   │   │   ├── index.md
-│   │   │   ├── job-search-nav.md
-│   │   │   └── review-concepts.md
-│   │   ├── javascript
-│   │   │   ├── arrow-functions.md
-│   │   │   ├── asyncjs.md
-│   │   │   ├── await-keyword.md
-│   │   │   ├── bigo.md
-│   │   │   ├── clean-code.md
-│   │   │   ├── constructor-functions.md
-│   │   │   ├── index.md
-│   │   │   ├── promises.md
-│   │   │   ├── review.md
-│   │   │   └── this-is-about-this.md
-│   │   ├── leetcode
-│   │   │   └── index.md
-│   │   ├── privacy-policy.md
-│   │   ├── projects
-│   │   │   ├── embeded-websites.md
-│   │   │   ├── index.md
-│   │   │   ├── list-of-projects.md
-│   │   │   ├── mini-projects.md
-│   │   │   └── my-websites.md
-│   │   ├── python
-│   │   │   ├── at-length.md
-│   │   │   ├── cheat-sheet.md
-│   │   │   ├── comprehensive-guide.md
-│   │   │   ├── examples.md
-│   │   │   ├── flow-control.md
-│   │   │   ├── functions.md
-│   │   │   ├── google-sheets-api.md
-│   │   │   ├── index.md
-│   │   │   ├── intro-for-js-devs.md
-│   │   │   ├── python-ds.md
-│   │   │   └── snippets.md
-│   │   ├── quick-reference
-│   │   │   ├── Emmet.md
-│   │   │   ├── all-emojis.md
-│   │   │   ├── create-react-app.md
-│   │   │   ├── git-bash.md
-│   │   │   ├── git-tricks.md
-│   │   │   ├── google-firebase.md
-│   │   │   ├── heroku-error-codes.md
-│   │   │   ├── index.md
-│   │   │   ├── installation.md
-│   │   │   ├── markdown-dropdowns.md
-│   │   │   ├── minifiction.md
-│   │   │   ├── new-repo-instructions.md
-│   │   │   ├── psql-setup.md
-│   │   │   ├── pull-request-rubric.md
-│   │   │   ├── quick-links.md
-│   │   │   ├── topRepos.md
-│   │   │   ├── understanding-path.md
-│   │   │   └── vscode-themes.md
-│   │   ├── react
-│   │   │   ├── ajax-n-apis.md
-│   │   │   ├── cheatsheet.md
-│   │   │   ├── createReactApp.md
-│   │   │   ├── demo.md
-│   │   │   ├── dont-use-index-as-keys.md
-│   │   │   ├── index.md
-│   │   │   ├── jsx.md
-│   │   │   ├── react-docs.md
-│   │   │   ├── react-in-depth.md
-│   │   │   ├── react2.md
-│   │   │   └── render-elements.md
-│   │   ├── reference
-│   │   │   ├── awesome-lists.md
-│   │   │   ├── awesome-static.md
-│   │   │   ├── bash-commands.md
-│   │   │   ├── bookmarks.md
-│   │   │   ├── embed-the-web.md
-│   │   │   ├── github-search.md
-│   │   │   ├── google-cloud.md
-│   │   │   ├── how-2-reinstall-npm.md
-│   │   │   ├── how-to-kill-a-process.md
-│   │   │   ├── index.md
-│   │   │   ├── installing-node.md
-│   │   │   ├── intro-to-nodejs.md
-│   │   │   ├── notes-template.md
-│   │   │   ├── psql.md
-│   │   │   ├── resources.md
-│   │   │   ├── vscode.md
-│   │   │   └── web-api's.md
-│   │   ├── search.md
-│   │   ├── sitemap.md
-│   │   ├── tips
-│   │   │   ├── array-methods.md
-│   │   │   ├── index.md
-│   │   │   └── insert-into-array.md
-│   │   ├── tools
-│   │   │   ├── Archive.md
-│   │   │   ├── data-structures.md
-│   │   │   ├── dev-utilities.md
-│   │   │   ├── index.md
-│   │   │   └── markdown-html.md
-│   │   └── tutorials
-│   │       ├── enviorment-setup.md
-│   │       └── index.md
-│   ├── index.md
-│   ├── privacy-policy.md
-│   ├── readme.md
-│   └── showcase.md
+│   ├── blog
+│   │   ├── 300-react-questions.md
+│   │   ├── awesome-graphql.md
+│   │   ├── big-o-complexity.md
+│   │   ├── blog-archive.md
+│   │   ├── blogwcomments.md
+│   │   ├── data-structures.md
+│   │   ├── flow-control-in-python.md
+│   │   ├── functions-in-python.md
+│   │   ├── git-gateway.md
+│   │   ├── index.md
+│   │   ├── interview-questions-js.md
+│   │   ├── netlify-cms.md
+│   │   ├── platform-docs.md
+│   │   ├── python-for-js-dev.md
+│   │   ├── python-resources.md
+│   │   ├── web-dev-trends.md
+│   │   └── web-scraping.md
+│   ├── docs
+│   │   ├── about
+│   │   │   ├── eng-portfolio.md
+│   │   │   ├── ideas-for-this-website.md
+│   │   │   ├── index.md
+│   │   │   ├── intrests.md
+│   │   │   ├── job-search.md
+│   │   │   └── resume.md
+│   │   ├── articles
+│   │   │   ├── basic-web-dev.md
+│   │   │   ├── buffers.md
+│   │   │   ├── dev-dep.md
+│   │   │   ├── event-loop.md
+│   │   │   ├── fs-module.md
+│   │   │   ├── how-the-web-works.md
+│   │   │   ├── http.md
+│   │   │   ├── index.md
+│   │   │   ├── install.md
+│   │   │   ├── intro.md
+│   │   │   ├── modules.md
+│   │   │   ├── nextjs.md
+│   │   │   ├── node-api-express.md
+│   │   │   ├── node-cli-args.md
+│   │   │   ├── node-common-modules.md
+│   │   │   ├── node-env-variables.md
+│   │   │   ├── node-js-language.md
+│   │   │   ├── node-package-manager.md
+│   │   │   ├── node-repl.md
+│   │   │   ├── node-run-cli.md
+│   │   │   ├── nodejs.md
+│   │   │   ├── nodevsbrowser.md
+│   │   │   ├── npm.md
+│   │   │   ├── npx.md
+│   │   │   ├── os-module.md
+│   │   │   ├── reading-files.md
+│   │   │   ├── semantic-html.md
+│   │   │   ├── semantic.md
+│   │   │   ├── the-uniform-resource-locator-(url).md
+│   │   │   ├── understanding-firebase.md
+│   │   │   ├── v8.md
+│   │   │   ├── web-standards-checklist.md
+│   │   │   ├── webdev-tools.md
+│   │   │   └── writing-files.md
+│   │   ├── audio
+│   │   │   ├── audio-feature-extraction.md
+│   │   │   ├── audio.md
+│   │   │   ├── dfft.md
+│   │   │   ├── discrete-fft.md
+│   │   │   ├── dtw-python-explained.md
+│   │   │   ├── dynamic-time-warping.md
+│   │   │   ├── index.md
+│   │   │   └── web-audio-api.md
+│   │   ├── career
+│   │   │   ├── dev-interview.md
+│   │   │   ├── index.md
+│   │   │   ├── interview-dos-n-donts.md
+│   │   │   └── job-boards.md
+│   │   ├── community
+│   │   │   ├── an-open-letter-2-future-developers.md
+│   │   │   ├── index.md
+│   │   │   └── video-chat.md
+│   │   ├── content
+│   │   │   ├── algo.md
+│   │   │   ├── archive.md
+│   │   │   ├── gatsby-Queries-Mutations.md
+│   │   │   ├── history-api.md
+│   │   │   ├── index.md
+│   │   │   ├── main-projects.md
+│   │   │   └── trouble-shooting.md
+│   │   ├── data-structures
+│   │   │   └── index.md
+│   │   ├── docs
+│   │   │   ├── appendix.md
+│   │   │   ├── art-of-command-line.md
+│   │   │   ├── bash.md
+│   │   │   ├── content.md
+│   │   │   ├── css.md
+│   │   │   ├── data-structures-docs.md
+│   │   │   ├── es-6-features.md
+│   │   │   ├── git-reference.md
+│   │   │   ├── git-repos.md
+│   │   │   ├── html-spec.md
+│   │   │   ├── index.md
+│   │   │   ├── markdown.md
+│   │   │   ├── no-whiteboarding.md
+│   │   │   ├── node-docs-complete.md
+│   │   │   ├── node-docs-full.md
+│   │   │   ├── regex-in-js.md
+│   │   │   └── sitemap.md
+│   │   ├── faq
+│   │   │   ├── contact.md
+│   │   │   ├── index.md
+│   │   │   └── plug-ins.md
+│   │   ├── gists.md
+│   │   ├── index.md
+│   │   ├── interact
+│   │   │   ├── callstack-visual.md
+│   │   │   ├── clock.md
+│   │   │   ├── index.md
+│   │   │   ├── jupyter-notebooks.md
+│   │   │   ├── other-sites.md
+│   │   │   └── video-chat.md
+│   │   ├── interview
+│   │   │   ├── index.md
+│   │   │   ├── job-search-nav.md
+│   │   │   └── review-concepts.md
+│   │   ├── javascript
+│   │   │   ├── arrow-functions.md
+│   │   │   ├── asyncjs.md
+│   │   │   ├── await-keyword.md
+│   │   │   ├── bigo.md
+│   │   │   ├── clean-code.md
+│   │   │   ├── constructor-functions.md
+│   │   │   ├── index.md
+│   │   │   ├── promises.md
+│   │   │   ├── review.md
+│   │   │   └── this-is-about-this.md
+│   │   ├── leetcode
+│   │   │   └── index.md
+│   │   ├── privacy-policy.md
+│   │   ├── projects
+│   │   │   ├── embeded-websites.md
+│   │   │   ├── index.md
+│   │   │   ├── list-of-projects.md
+│   │   │   ├── mini-projects.md
+│   │   │   └── my-websites.md
+│   │   ├── python
+│   │   │   ├── at-length.md
+│   │   │   ├── cheat-sheet.md
+│   │   │   ├── comprehensive-guide.md
+│   │   │   ├── examples.md
+│   │   │   ├── flow-control.md
+│   │   │   ├── functions.md
+│   │   │   ├── google-sheets-api.md
+│   │   │   ├── index.md
+│   │   │   ├── intro-for-js-devs.md
+│   │   │   ├── python-ds.md
+│   │   │   └── snippets.md
+│   │   ├── quick-reference
+│   │   │   ├── Emmet.md
+│   │   │   ├── all-emojis.md
+│   │   │   ├── create-react-app.md
+│   │   │   ├── git-bash.md
+│   │   │   ├── git-tricks.md
+│   │   │   ├── google-firebase.md
+│   │   │   ├── heroku-error-codes.md
+│   │   │   ├── index.md
+│   │   │   ├── installation.md
+│   │   │   ├── markdown-dropdowns.md
+│   │   │   ├── minifiction.md
+│   │   │   ├── new-repo-instructions.md
+│   │   │   ├── psql-setup.md
+│   │   │   ├── pull-request-rubric.md
+│   │   │   ├── quick-links.md
+│   │   │   ├── topRepos.md
+│   │   │   ├── understanding-path.md
+│   │   │   └── vscode-themes.md
+│   │   ├── react
+│   │   │   ├── ajax-n-apis.md
+│   │   │   ├── cheatsheet.md
+│   │   │   ├── createReactApp.md
+│   │   │   ├── demo.md
+│   │   │   ├── dont-use-index-as-keys.md
+│   │   │   ├── index.md
+│   │   │   ├── jsx.md
+│   │   │   ├── react-docs.md
+│   │   │   ├── react-in-depth.md
+│   │   │   ├── react2.md
+│   │   │   └── render-elements.md
+│   │   ├── reference
+│   │   │   ├── awesome-lists.md
+│   │   │   ├── awesome-static.md
+│   │   │   ├── bash-commands.md
+│   │   │   ├── bookmarks.md
+│   │   │   ├── embed-the-web.md
+│   │   │   ├── github-search.md
+│   │   │   ├── google-cloud.md
+│   │   │   ├── how-2-reinstall-npm.md
+│   │   │   ├── how-to-kill-a-process.md
+│   │   │   ├── index.md
+│   │   │   ├── installing-node.md
+│   │   │   ├── intro-to-nodejs.md
+│   │   │   ├── notes-template.md
+│   │   │   ├── psql.md
+│   │   │   ├── resources.md
+│   │   │   ├── vscode.md
+│   │   │   └── web-api's.md
+│   │   ├── search.md
+│   │   ├── sitemap.md
+│   │   ├── tips
+│   │   │   ├── array-methods.md
+│   │   │   ├── index.md
+│   │   │   └── insert-into-array.md
+│   │   ├── tools
+│   │   │   ├── Archive.md
+│   │   │   ├── data-structures.md
+│   │   │   ├── dev-utilities.md
+│   │   │   ├── index.md
+│   │   │   └── markdown-html.md
+│   │   └── tutorials
+│   │       ├── enviorment-setup.md
+│   │       └── index.md
+│   ├── index.md
+│   ├── privacy-policy.md
+│   ├── readme.md
+│   └── showcase.md
 ├── sass
-│   ├── imports
-│   │   ├── _animations.scss
-│   │   ├── _buttons.scss
-│   │   ├── _docs.scss
-│   │   ├── _footer.scss
-│   │   ├── _forms.scss
-│   │   ├── _functions.scss
-│   │   ├── _general.scss
-│   │   ├── _header.scss
-│   │   ├── _helpers.scss
-│   │   ├── _icons.scss
-│   │   ├── _palettes.scss
-│   │   ├── _posts.scss
-│   │   ├── _prism.scss
-│   │   ├── _reset.scss
-│   │   ├── _sections.scss
-│   │   ├── _structure.scss
-│   │   ├── _tables.scss
-│   │   └── _variables.scss
-│   └── main.scss
+│   ├── imports
+│   │   ├── _animations.scss
+│   │   ├── _buttons.scss
+│   │   ├── _docs.scss
+│   │   ├── _footer.scss
+│   │   ├── _forms.scss
+│   │   ├── _functions.scss
+│   │   ├── _general.scss
+│   │   ├── _header.scss
+│   │   ├── _helpers.scss
+│   │   ├── _icons.scss
+│   │   ├── _palettes.scss
+│   │   ├── _posts.scss
+│   │   ├── _prism.scss
+│   │   ├── _reset.scss
+│   │   ├── _sections.scss
+│   │   ├── _structure.scss
+│   │   ├── _tables.scss
+│   │   └── _variables.scss
+│   └── main.scss
 ├── templates
-│   ├── advanced.js
-│   ├── blog.js
-│   ├── docs.js
-│   ├── page.js
-│   ├── post.js
-│   └── templates.md
+│   ├── advanced.js
+│   ├── blog.js
+│   ├── docs.js
+│   ├── page.js
+│   ├── post.js
+│   └── templates.md
 └── utils
     ├── attribute.js
     ├── blm-badge.js
@@ -1950,15 +1948,15 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
 <summary> Click To See Component Sourcecode  </summary>
 
-# Component Structure:
+# Component Structure
 
 ```
 .
 ├── ActionLink.js
 ├── CtaButtons.js
 ├── DarkToggle
-│   ├── index.js
-│   └── styles.js
+│   ├── index.js
+│   └── styles.js
 ├── DocsMenu.js
 ├── DocsSubmenu.js
 ├── Footer.js
@@ -3226,7 +3224,6 @@ export default class Post extends React.Component {
         );
     }
 }
-
 ```
 
 </details>
