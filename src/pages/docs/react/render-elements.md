@@ -42,7 +42,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 >
 
-> One might confuse elements with a more widely known concept of “components”. We will introduce components in the [next section](https://reactjs.org/docs/components-and-props.html). Elements are what components are “made of”, and we encourage you to read this section before jumping ahead.
+> One might confuse elements with a more widely known concept of "components". We will introduce components in the [next section](https://reactjs.org/docs/components-and-props.html). Elements are what components are "made of", and we encourage you to read this section before jumping ahead.
 
 
 
@@ -54,7 +54,7 @@ Let's say there is a \<div> somewhere in your HTML file:
 
 
 
-We call this a “root” DOM node because everything inside it will be managed by React DOM.
+We call this a "root" DOM node because everything inside it will be managed by React DOM.
 
 
 
@@ -70,7 +70,7 @@ To render a React element into a root DOM node, pass both to [ReactDOM.render()]
 
 
 
-It displays “Hello, world” on the page.
+It displays "Hello, world" on the page.
 
 
 
@@ -131,4 +131,3 @@ Even though we create an element describing the whole UI tree on every tick, onl
 
 
 In our experience, thinking about how the UI should look at any given moment, rather than how to change it over time, eliminates a whole class of bugs.
-

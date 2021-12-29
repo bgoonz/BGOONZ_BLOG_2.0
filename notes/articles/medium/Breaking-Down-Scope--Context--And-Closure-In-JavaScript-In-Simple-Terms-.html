@@ -88,7 +88,8 @@
             <h1 class="p-name">Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.</h1>
         </header>
         <section data-field="subtitle" class="p-summary">
-            “JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with surfaces when you…
+            "JavaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your
+            contact with surfaces when you…
         </section>
         <section data-field="body" class="e-content">
             <section name="e560" class="section section--body section--first">
@@ -101,7 +102,12 @@
                         <figure name="bd74" id="bd74" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*5M3vbTjiEYMUWvLu" data-width="6000" data-height="4000" data-unsplash-photo-id="4hbJ-eymZ1o" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*5M3vbTjiEYMUWvLu">
                             <figcaption class="imageCaption">Photo by <a href="https://unsplash.com/@florianolv?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com/@florianolv?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-creator noopener" target="_blank">Florian Olivo</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-source noopener" target="_blank">Unsplash</a></figcaption>
                         </figure>
-                        <p name="4c60" id="4c60" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf--startsWithDoubleQuote graf-after--figure"><span class="graf-dropCap"><span class="graf-dropCapQuote">“</span>J</span>avaScript's global scope is like a public toilet. You can't avoid going in there, but try to limit your contact with surfaces when you do.”<br>― <strong class="markup--strong markup--p-strong">Dmitry Baranowski</strong></p>
+                        <p name="4c60" id="4c60"
+                          class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf--startsWithDoubleQuote graf-after--figure">
+                          <span class="graf-dropCap"><span class="graf-dropCapQuote">"</span>J</span>avaScript's global
+                          scope is like a public toilet. You can't avoid going in there, but try to limit your contact
+                          with surfaces when you do."<br>― <strong class="markup--strong markup--p-strong">Dmitry
+                            Baranowski</strong></p>
                         <p name="b736" id="b736" class="graf graf--p graf-after--p">Here's another (much) more simple article I wrote on the subject:</p>
                         <div name="4250" id="4250" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://dev.to/bgoonz/closures-in-javascript-1moc" data-href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dev.to/bgoonz/closures-in-javascript-1moc"><strong class="markup--strong markup--mixtapeEmbed-strong">Closures In Javascript</strong><br><em class="markup--em markup--mixtapeEmbed-em">Answer A closure is a function defined inside another function and has access to its lexical scope even when it is…</em>dev.to</a><a href="https://dev.to/bgoonz/closures-in-javascript-1moc" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="b15c3539975d0aefd2ecf4c33448e133" data-thumbnail-img-id="0*gg5eRc4Qyjn8q8V2" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*gg5eRc4Qyjn8q8V2);"></a></div>
                         <p name="b34d" id="b34d" class="graf graf--p graf-after--mixtapeEmbed">I made this website in support of the article… it links to a navigation page as well as the repo where more examples are kept…</p>
@@ -122,19 +128,52 @@
                         <div name="488f" id="488f" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" data-href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-interview-prep-quiz-website.netlify.app/index.html"><strong class="markup--strong markup--mixtapeEmbed-strong">WebDevQuizzes</strong><br><em class="markup--em markup--mixtapeEmbed-em">Resource-sharing-hub</em>web-dev-interview-prep-quiz-website.netlify.app</a><a href="https://web-dev-interview-prep-quiz-website.netlify.app/index.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock" data-media-id="61419dab371e3b714ec4e46278ac1718"></a></div>
                         <h3 name="2699" id="2699" class="graf graf--h3 graf-after--mixtapeEmbed">Vocab (most of these will be detailed many times over in this article!)</h3>
                         <ul class="postList">
-                            <li name="4f93" id="4f93" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">Scope:</strong> “Scope is the set of rules that determines where and how a variable (identifier) can be looked-up.” — Kyle Simpson, You Don't Know JS: Scope &amp; Closure</li>
+                            <li name="4f93" id="4f93" class="graf graf--li graf-after--h3"><strong
+                                class="markup--strong markup--li-strong">Scope:</strong> "Scope is the set of rules that
+                              determines where and how a variable (identifier) can be looked-up." — Kyle Simpson, You
+                              Don't Know JS: Scope &amp; Closure</li>
                             <li name="ceff" id="ceff" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Function Scope:</strong> Every variable defined in a function, is available for the entirety of that function.</li>
-                            <li name="b34e" id="b34e" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Global Scope:</strong> “The scope that is visible in all other scopes.” — MDN</li>
+                            <li name="b34e" id="b34e" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">Global Scope:</strong> "The scope that is
+                              visible in all other scopes." — MDN</li>
                             <li name="df88" id="df88" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Global Variable:</strong> A variable defined at the Global Scope.</li>
                             <li name="ae7a" id="ae7a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">IIFE:</strong> Imediatly-Invoked Function Expression — a function wrapped in <code class="markup--code markup--li-code">()</code> to create an expression, and immediatly followed by a pair of <code class="markup--code markup--li-code">()</code> to invoke that function imediatly.</li>
-                            <li name="42a6" id="42a6" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Closure:</strong> “Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.” — MDN</li>
-                            <li name="023f" id="023f" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Variable Shadowing:</strong> “occurs when a variable declared within a certain scope … has the same name as a variable declared in an outer scope.” — Wikipedia</li>
-                            <li name="7ba5" id="7ba5" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">for statement:</strong> “The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement or a set of statements executed in the loop.” — MDN</li>
-                            <li name="6f95" id="6f95" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">initialization:</strong> “An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable. This expression may optionally declare new variables with the var keyword. These variables are not local to the loop, i.e. they are in the same scope the for loop is in. The result of this expression is discarded.” — MDN</li>
-                            <li name="c763" id="c763" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">condition:</strong> “An expression to be evaluated before each loop iteration. If this expression evaluates to true, statement is executed. This conditional test is optional. If omitted, the condition always evaluates to true. If the expression evaluates to false, execution skips to the first expression following the for construct.” — MDN</li>
-                            <li name="0954" id="0954" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">final-expression:</strong> “An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of condition. Generally used to update or increment the counter variable.” — MDN</li>
-                            <li name="76ee" id="76ee" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">statement:</strong> “A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ … }) to group those statements.” — MDN</li>
-                            <li name="31bf" id="31bf" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Arrays:</strong> “JavaScript arrays are used to store multiple values in a single variable.” — W3Schools</li>
+                            <li name="42a6" id="42a6" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">Closure:</strong> "Closures are functions that
+                              refer to independent (free) variables. In other words, the function defined in the closure
+                              'remembers' the environment in which it was created." — MDN</li>
+                            <li name="023f" id="023f" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">Variable Shadowing:</strong> "occurs when a
+                              variable declared within a certain scope … has the same name as a variable declared in an
+                              outer scope." — Wikipedia</li>
+                            <li name="7ba5" id="7ba5" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">for statement:</strong> "The for statement
+                              creates a loop that consists of three optional expressions, enclosed in parentheses and
+                              separated by semicolons, followed by a statement or a set of statements executed in the
+                              loop." — MDN</li>
+                            <li name="6f95" id="6f95" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">initialization:</strong> "An expression
+                              (including assignment expressions) or variable declaration. Typically used to initialize a
+                              counter variable. This expression may optionally declare new variables with the var
+                              keyword. These variables are not local to the loop, i.e. they are in the same scope the
+                              for loop is in. The result of this expression is discarded." — MDN</li>
+                            <li name="c763" id="c763" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">condition:</strong> "An expression to be
+                              evaluated before each loop iteration. If this expression evaluates to true, statement is
+                              executed. This conditional test is optional. If omitted, the condition always evaluates to
+                              true. If the expression evaluates to false, execution skips to the first expression
+                              following the for construct." — MDN</li>
+                            <li name="0954" id="0954" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">final-expression:</strong> "An expression to be
+                              evaluated at the end of each loop iteration. This occurs before the next evaluation of
+                              condition. Generally used to update or increment the counter variable." — MDN</li>
+                            <li name="76ee" id="76ee" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">statement:</strong> "A statement that is
+                              executed as long as the condition evaluates to true. To execute multiple statements within
+                              the loop, use a block statement ({ … }) to group those statements." — MDN</li>
+                            <li name="31bf" id="31bf" class="graf graf--li graf-after--li"><strong
+                                class="markup--strong markup--li-strong">Arrays:</strong> "JavaScript arrays are used to
+                              store multiple values in a single variable." — W3Schools</li>
                     </div>
                     <div class="section-inner sectionLayout--fullWidth">
                         </ul>
@@ -142,7 +181,26 @@
                     </div>
                     <div class="section-inner sectionLayout--insetColumn">
                         <h4 name="7907" id="7907" class="graf graf--h4 graf-after--figure">I am going to try something new this article… it's called <strong class="markup--strong markup--h4-strong">spaced repetition.</strong></h4>
-                        <blockquote name="d2e0" id="d2e0" class="graf graf--blockquote graf--hasDropCapModel graf--startsWithDoubleQuote graf-after--h4"><a href="https://en.wikipedia.org/wiki/Spaced_repetition" data-href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--blockquote-strong">“Spaced repetition</strong></a> is an <a href="https://en.wikipedia.org/wiki/Evidence-based_learning" data-href="https://en.wikipedia.org/wiki/Evidence-based_learning" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">evidence-based learning</a> technique that is usually performed with <a href="https://en.wikipedia.org/wiki/Flashcard" data-href="https://en.wikipedia.org/wiki/Flashcard" class="markup--anchor markup--blockquote-anchor" title="Flashcard" rel="noopener" target="_blank">flashcards</a>. Newly introduced and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological <a href="https://en.wikipedia.org/wiki/Spacing_effect" data-href="https://en.wikipedia.org/wiki/Spacing_effect" class="markup--anchor markup--blockquote-anchor" title="Spacing effect" rel="noopener" target="_blank">spacing effect</a>. The use of spaced repetition has been proven to increase rate of learning.”</blockquote>
+                        <blockquote name="d2e0" id="d2e0"
+                          class="graf graf--blockquote graf--hasDropCapModel graf--startsWithDoubleQuote graf-after--h4">
+                          <a href="https://en.wikipedia.org/wiki/Spaced_repetition"
+                            data-href="https://en.wikipedia.org/wiki/Spaced_repetition"
+                            class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><strong
+                              class="markup--strong markup--blockquote-strong">"Spaced repetition</strong></a> is an <a
+                            href="https://en.wikipedia.org/wiki/Evidence-based_learning"
+                            data-href="https://en.wikipedia.org/wiki/Evidence-based_learning"
+                            class="markup--anchor markup--blockquote-anchor" rel="noopener"
+                            target="_blank">evidence-based learning</a> technique that is usually performed with <a
+                            href="https://en.wikipedia.org/wiki/Flashcard"
+                            data-href="https://en.wikipedia.org/wiki/Flashcard"
+                            class="markup--anchor markup--blockquote-anchor" title="Flashcard" rel="noopener"
+                            target="_blank">flashcards</a>. Newly introduced and more difficult flashcards are shown
+                          more frequently, while older and less difficult flashcards are shown less frequently in order
+                          to exploit the psychological <a href="https://en.wikipedia.org/wiki/Spacing_effect"
+                            data-href="https://en.wikipedia.org/wiki/Spacing_effect"
+                            class="markup--anchor markup--blockquote-anchor" title="Spacing effect" rel="noopener"
+                            target="_blank">spacing effect</a>. The use of spaced repetition has been proven to increase
+                          rate of learning."</blockquote>
                         <div name="df75" id="df75" class="graf graf--mixtapeEmbed graf-after--blockquote graf--trailing"><a href="https://en.wikipedia.org/wiki/Spaced_repetition" data-href="https://en.wikipedia.org/wiki/Spaced_repetition" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://en.wikipedia.org/wiki/Spaced_repetition"><strong class="markup--strong markup--mixtapeEmbed-strong">Spaced repetition — Wikipedia</strong><br><em class="markup--em markup--mixtapeEmbed-em">Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced…</em>en.wikipedia.org</a><a href="https://en.wikipedia.org/wiki/Spaced_repetition" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="95195ea4682196a0957c39326164a522" data-thumbnail-img-id="0*S_6EJeVIl2ByFWnW" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*S_6EJeVIl2ByFWnW);"></a></div>
                     </div>
                 </div>
@@ -171,7 +229,18 @@
                         <ul class="postList">
                             <li name="8522" id="8522" class="graf graf--li graf-after--h3">The <code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">scope</strong></code> of a program in JS is the set of variables that are available for use within the program.</li>
                             <li name="dc76" id="dc76" class="graf graf--li graf-after--li">Scope in JavaScript defines which variables and functions you have access to, depending on where you are (a <em class="markup--em markup--li-em">physical position</em>) within your code.</li>
-                            <li name="1243" id="1243" class="graf graf--li graf-after--li">The current context of execution. The context in which <a href="https://developer.mozilla.org/en-US/docs/Glossary/Value" data-href="https://developer.mozilla.org/en-US/docs/Glossary/Value" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">values</a> and <strong class="markup--strong markup--li-strong">expressions</strong> are “visible” or can be referenced. If a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Variable" data-href="https://developer.mozilla.org/en-US/docs/Glossary/Variable" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--li-strong">variable</strong></a> or other expression is not “in the current scope,” then it is unavailable for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.</li>
+                            <li name="1243" id="1243" class="graf graf--li graf-after--li">The current context of
+                              execution. The context in which <a
+                                href="https://developer.mozilla.org/en-US/docs/Glossary/Value"
+                                data-href="https://developer.mozilla.org/en-US/docs/Glossary/Value"
+                                class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">values</a> and
+                              <strong class="markup--strong markup--li-strong">expressions</strong> are "visible" or can
+                              be referenced. If a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Variable"
+                                data-href="https://developer.mozilla.org/en-US/docs/Glossary/Variable"
+                                class="markup--anchor markup--li-anchor" rel="noopener" target="_blank"><strong
+                                  class="markup--strong markup--li-strong">variable</strong></a> or other expression is
+                              not "in the current scope," then it is unavailable for use. Scopes can also be layered in
+                              a hierarchy, so that child scopes have access to parent scopes, but not vice versa.</li>
                         </ul>
                         <figure name="5e76" id="5e76" class="graf graf--figure graf--layoutOutsetLeft graf-after--li"><img class="graf-image" data-image-id="1*RaM-5KbhUOZ_HoP5j-kNWQ.png" data-width="969" data-height="601" src="https://cdn-images-1.medium.com/max/600/1*RaM-5KbhUOZ_HoP5j-kNWQ.png"></figure>
                         <ul class="postList">
@@ -229,7 +298,10 @@
                     <div class="section-inner sectionLayout--insetColumn">
                         <h3 name="c5d7" id="c5d7" class="graf graf--h3 graf--leading">Slightly modified excerpt from:</h3>
                         <h4 name="4fe2" id="4fe2" class="graf graf--h4 graf-after--h3"><a href="https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/" data-href="https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">source</a> : https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/</h4>
-                        <p name="cbb9" id="cbb9" class="graf graf--p graf-after--h4">The first <em class="markup--em markup--p-em">Execution Context</em> ( a word that we don't have to worry about the exact meaning of yet) that gets created when the JavaScript engine runs your code is called the “Global Execution Context”.</p>
+                        <p name="cbb9" id="cbb9" class="graf graf--p graf-after--h4">The first <em
+                            class="markup--em markup--p-em">Execution Context</em> ( a word that we don't have to worry
+                          about the exact meaning of yet) that gets created when the JavaScript engine runs your code is
+                          called the "Global Execution Context".</p>
                         <p name="7824" id="7824" class="graf graf--p graf-after--p">Initially this Execution Context will consist of two things —</p>
                         <ul class="postList">
                             <li name="ba1b" id="ba1b" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">a global object</strong></li>
@@ -289,9 +361,11 @@
                         <p name="114f" id="114f" class="graf graf--p graf--leading">In the Global <code class="markup--code markup--p-code">Creation</code> phase, the JavaScript engine will</p>
                         <ol class="postList">
                             <li name="0634" id="0634" class="graf graf--li graf-after--p">Create a global object.</li>
-                            <li name="ed12" id="ed12" class="graf graf--li graf-after--li">Create an object called “this”.</li>
+                            <li name="ed12" id="ed12" class="graf graf--li graf-after--li">Create an object called
+                              "this".</li>
                             <li name="b1a7" id="b1a7" class="graf graf--li graf-after--li">Set up memory space for variables and functions.</li>
-                            <li name="7656" id="7656" class="graf graf--li graf-after--li">Assign variable declarations a default value of “undefined” while placing any function declarations in memory.</li>
+                            <li name="7656" id="7656" class="graf graf--li graf-after--li">Assign variable declarations
+                              a default value of "undefined" while placing any function declarations in memory.</li>
                         </ol>
                         <p name="6c9f" id="6c9f" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">It's not until the </strong><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">Execution</strong></code><strong class="markup--strong markup--p-strong"> phase where the JavaScript engine starts running your code line by line and executing it.</strong></p>
                         <p name="3375" id="3375" class="graf graf--p graf-after--p">We can see this flow from<strong class="markup--strong markup--p-strong"> </strong><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">Creation</strong></code><strong class="markup--strong markup--p-strong"> phase to </strong><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">Execution</strong></code><strong class="markup--strong markup--p-strong"> phase</strong> in the GIF <strong class="markup--strong markup--p-strong">below. </strong>🠗🠗🠗🠗🠗🠗</p>
@@ -368,7 +442,10 @@
                         <p name="c2c3" id="c2c3" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Hoisting with function-scoped variables</strong></p>
                         <pre name="72d1" id="72d1" class="graf graf--pre graf-after--p">function test() {<br>  // var hoistedVar;<br>  console.log(hoistedVar); // =&gt;  undefined<br>  var hoistedVar = 10;<br>}</pre>
                         <ul class="postList">
-                            <li name="b52d" id="b52d" class="graf graf--li graf-after--pre">Even though we initially declared &amp; initialized our variable underneath the console.log var variables are “hoisted” to the top, but only in declaration (default value undefined until the exaction arrives at the line on which it was initialized.</li>
+                            <li name="b52d" id="b52d" class="graf graf--li graf-after--pre">Even though we initially
+                              declared &amp; initialized our variable underneath the console.log var variables are
+                              "hoisted" to the top, but only in declaration (default value undefined until the exaction
+                              arrives at the line on which it was initialized.</li>
                         </ul>
                         <h3 name="a0d5" id="a0d5" class="graf graf--h3 graf-after--li">Scope Spaced Repetition:</h3>
                         <p name="e9a9" id="e9a9" class="graf graf--p graf-after--h3">Scope is defined as which variables we currently have access to and where. So far in this course, we have mostly been working in <code class="markup--code markup--p-code">global</code> scope, in that we can access any variable we have created, anywhere in our code. There are a couple different levels of scope: <code class="markup--code markup--p-code">block</code> level scope is used in <code class="markup--code markup--p-code">if</code> statements and <code class="markup--code markup--p-code">for</code> loops. In <code class="markup--code markup--p-code">block</code> level scope, a variable declared using either <code class="markup--code markup--p-code">let</code> or <code class="markup--code markup--p-code">const</code> is only available within the statement or loop (like <code class="markup--code markup--p-code">i</code> in a <code class="markup--code markup--p-code">for</code> loop). Similarly, there is function scope, where <code class="markup--code markup--p-code">temperature</code> exists inside the function, but not elsewhere in your code file.</p>
@@ -530,7 +607,10 @@
                             <li name="3c6e" id="3c6e" class="graf graf--li graf-after--p">If we try to invoke this on our global function in strict mode we will no longer be able to access it and instead just get undefined.</li>
                         </ul>
                         <p name="300a" id="300a" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Changing Context using Bind</strong></p>
-                        <p name="6bac" id="6bac" class="graf graf--p graf--startsWithDoubleQuote graf-after--p">“The simplest use of <code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">bind()</strong></code> is to make a function that, no matter how it is called, is called with a particular this value&quot;.</p>
+                        <p name="6bac" id="6bac" class="graf graf--p graf--startsWithDoubleQuote graf-after--p">"The
+                          simplest use of <code class="markup--code markup--p-code"><strong
+                              class="markup--strong markup--p-strong">bind()</strong></code> is to make a function that,
+                          no matter how it is called, is called with a particular this value&quot;.</p>
                         <figure name="e41f" id="e41f" class="graf graf--figure graf--iframe graf-after--p">
                             <script src="https://gist.github.com/bgoonz/550835dfb10f803c6cbd16fd43e3e4e6.js"></script>
                         </figure>
@@ -686,12 +766,13 @@
                         <h3 name="0e83" id="0e83" class="graf graf--h3 graf-after--figure">AND</h3>
                         <p name="4154" id="4154" class="graf graf--p graf-after--h3">A <em class="markup--em markup--p-em">lexical environment</em> is an abstraction that holds <strong class="markup--strong markup--p-strong">identifier-variable mapping</strong>. I<strong class="markup--strong markup--p-strong">dentifier</strong> refers to the name of variables/functions, and <strong class="markup--strong markup--p-strong">the variable </strong>is the reference to actual object [including function object] or primitive value.</p>
                         <p name="907d" id="907d" class="graf graf--p graf-after--p">This is similar to an object with a method on it…</p>
-                        <p name="b759" id="b759" class="graf graf--p graf-after--p">In the picture below… sayHi (and name) are identifiers and the function and (string “bryan”) are variable values.</p>
+                        <p name="b759" id="b759" class="graf graf--p graf-after--p">In the picture below… sayHi (and
+                          name) are identifiers and the function and (string "bryan") are variable values.</p>
                         <figure name="29fb" id="29fb" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ewwHx4vO170sT3tneB--2A.png" data-width="229" data-height="155" src="https://cdn-images-1.medium.com/max/800/1*ewwHx4vO170sT3tneB--2A.png"></figure>
                         <h4 name="874e" id="874e" class="graf graf--h4 graf-after--figure">Accessing variables outside of the immediate lexical scope creates a closure.</h4>
                         <p name="f667" id="f667" class="graf graf--p graf-after--h4">A closure is to put it simply, when a nested function is defined inside of another function gains access to the outer functions variables.</p>
                         <p name="286a" id="286a" class="graf graf--p graf-after--p">Returning the nested function from the 'parent function' that enclosed the nested function definition, allows you to maintain access to the local variables, (arguments, and potentially even more inner function declarations) of its outer function… without exposing the variables or arguments of outer function…. to any of the other functions that were not declared inside of it.</p>
-                        <h3 name="2047" id="2047" class="graf graf--h3 graf-after--p">What is “this” Context</h3>
+                        <h3 name="2047" id="2047" class="graf graf--h3 graf-after--p">What is "this" Context</h3>
                         <p name="89d3" id="89d3" class="graf graf--p graf-after--h3">Context is most often determined by how a function is invoked.</p>
                         <p name="cf2b" id="cf2b" class="graf graf--p graf-after--p">When a function is called as a method of an object, <code class="markup--code markup--p-code">this</code> is set to the object the method is called on:</p>
                         <figure name="1a72" id="1a72" class="graf graf--figure graf--iframe graf-after--p">
@@ -705,7 +786,9 @@
                         <p name="4f14" id="4f14" class="graf graf--p graf-after--figure">When called as an unbound function, <code class="markup--code markup--p-code">this</code> will default to the global context or window object in the browser. However, if the function is executed in <em class="markup--em markup--p-em">strict mode</em>, the context will default to undefined.</p>
                         <h3 name="23af" id="23af" class="graf graf--h3 graf-after--p">Execution Context Spaced Repetition:</h3>
                         <p name="6200" id="6200" class="graf graf--p graf-after--h3">JavaScript is a single threaded language, meaning only one task can be executed at a time. When the JavaScript interpreter initially executes code, it first enters into a global execution context by default. Each invocation of a function from this point on will result in the creation of a new execution context.</p>
-                        <p name="cfa1" id="cfa1" class="graf graf--p graf-after--p">This is where confusion often sets in, the term<strong class="markup--strong markup--p-strong"> “execution context” is actually for all intents and purposes referring more to scope and not context.</strong></p>
+                        <p name="cfa1" id="cfa1" class="graf graf--p graf-after--p">This is where confusion often sets
+                          in, the term<strong class="markup--strong markup--p-strong"> "execution context" is actually
+                            for all intents and purposes referring more to scope and not context.</strong></p>
                         <p name="1710" id="1710" class="graf graf--p graf-after--p">It is an unfortunate naming convention, however it is the terminology as defined by the ECMAScript specification, so we're kind of stuck with it.</p>
                         <p name="014c" id="014c" class="graf graf--p graf-after--p">Each time a new execution context is created it is appended to the top of the <em class="markup--em markup--p-em">execution stack (call stack).</em></p>
                         <p name="d820" id="d820" class="graf graf--p graf-after--p">The browser will always execute the current execution context that is atop the execution stack. Once completed, it will be removed from the top of the stack and control will return to the execution context below.</p>

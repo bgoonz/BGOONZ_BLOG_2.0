@@ -2460,7 +2460,7 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
           <li>
             <p><strong><code>/src</code></strong>: This directory will contain all of the code related to what you will
               see on the front-end of your site (what you see in the browser) such as your site header or a page
-              template. <code>src</code> is a convention for “source code”.</p>
+              template. <code>src</code> is a convention for "source code”.</p>
           </li>
           <li>
             <p><strong><code>.gitignore</code></strong>: This file tells git which files it should not track / not
@@ -2557,7 +2557,7 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
           <li><strong><code>/.cache</code></strong> <em>Automatically generated.</em> This folder is an internal cache
             created automatically by Gatsby. The files inside this folder are not meant for modification. Should be
             added to the <code>.gitignore</code> file if not added already.</li>
-          <li><strong><code>/plugins</code></strong> This folder hosts any project-specific (“local”) plugins that
+          <li><strong><code>/plugins</code></strong> This folder hosts any project-specific ("local”) plugins that
             aren't published as an <code>npm</code> package. Check out the <a
               href="https://www.gatsbyjs.com/docs/plugins/">plugin docs</a> for more detail.</li>
           <li><strong><code>/public</code></strong> <em>Automatically generated.</em> The output of the build process
@@ -2566,7 +2566,7 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
           <li>
             <p><strong><code>/src</code></strong> This directory will contain all of the code related to what you will
               see on the frontend of your site (what you see in the browser), like your site header, or a page template.
-              “src” is a convention for “source code”.</p>
+              "src” is a convention for "source code”.</p>
             <ul>
               <li><strong><code>/api</code></strong> JavaScript and TypeScript files under <code>src/api</code> become
                 functions automatically with paths based on their file name. Check out the <a
@@ -2681,8 +2681,8 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
         [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How
         to prevent layout components from unmounting</h2>
       <div>
-        <p>As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The “top
-          level” component is the page itself. As a result, when the “top level” component changes between pages, React
+        <p>As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top
+          level” component is the page itself. As a result, when the "top level” component changes between pages, React
           will re-render all children. This means that shared components like navigations will unmount and remount. This
           will break CSS transitions or React state within those shared components.</p>
         <p>If you need to set a wrapper component around page components that won't get unmounted on page changes, use
@@ -2729,8 +2729,8 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
           <code>path</code> option is how you set the directory to search for files.</p>
         <pre><code>module.exports = {  siteMetadata: {    title: &quot;My Gatsby Site&quot;,  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
 </code></pre>
-        <p>Completing the above step means that you've “sourced” the Markdown files from the filesystem. You can now
-          “transform” the Markdown to HTML and the YAML frontmatter to JSON.</p>
+        <p>Completing the above step means that you've "sourced” the Markdown files from the filesystem. You can now
+          "transform” the Markdown to HTML and the YAML frontmatter to JSON.</p>
       </div>
       <h2
         id="https-www-gatsbyjs-com-docs-how-to-routing-adding-markdown-pages-transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark-transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark">
@@ -2764,7 +2764,7 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
             href="https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files"></a>Frontmatter
           for metadata in Markdown files</h3>
         <p>When you create a Markdown file, you can include a set of key/value pairs that can be used to provide
-          additional data relevant to specific pages in the GraphQL data layer. This data is called “frontmatter” and is
+          additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter” and is
           denoted by the triple dashes at the start and end of the block. This block will be parsed by
           <code>gatsby-transformer-remark</code> as YAML. You can then query the data through the GraphQL API from your
           React components.</p>

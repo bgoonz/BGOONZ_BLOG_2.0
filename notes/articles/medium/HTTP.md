@@ -1,17 +1,17 @@
 # HTTP Basics
 
-“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
+"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
 
 ---
 
 ### HTTP Basics
 
-> _“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
+> _"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
 -   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
 -   <span id="1ad1">Term used to refer to content in computing.</span>
--   <span id="5ad0">What makes the Web a “web”.</span>
+-   <span id="5ad0">What makes the Web a "web”.</span>
 -   <span id="11eb">Most fundamental part of how we interact.</span>
 -   <span id="41da">`Hyperlinks` : Links; references between HT resources.</span>
 -   <span id="b0a1">`TP` : Transfer Protocol - set of guidelines surrounding the transmission of data.</span>

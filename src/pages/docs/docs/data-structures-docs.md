@@ -74,7 +74,7 @@ Following are the various types of linked lists available.
 
 ## 3. Stacks <a id="ca20"></a>
 
-A **stack** is a **LIFO** \(Last In First Out — the element placed at last can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as “stack” because it resembles a real-world stack — a stack of plates.Image by [congerdesign](https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987)
+A **stack** is a **LIFO** \(Last In First Out — the element placed at last can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as "stack" because it resembles a real-world stack — a stack of plates.Image by [congerdesign](https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987)
 
 ![](https://miro.medium.com/max/473/1*e4XWkyzxdOreblbPlbOCyw.jpeg)
 
@@ -102,7 +102,7 @@ Furthermore, the following additional functions are provided for a stack in orde
 
 ## 4. Queues <a id="0e94"></a>
 
-A **queue** is a **FIFO** \(First In First Out — the element placed at first can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as “queue” because it resembles a real-world queue — people waiting in a queue.![](https://miro.medium.com/max/60/1*GbtPRh9OWh1jtCtCa9czIg.jpeg?q=20)Image by [Sabine Felidae](https://pixabay.com/users/sheadquarters-5187/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119)
+A **queue** is a **FIFO** \(First In First Out — the element placed at first can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as "queue" because it resembles a real-world queue — people waiting in a queue.![](https://miro.medium.com/max/60/1*GbtPRh9OWh1jtCtCa9czIg.jpeg?q=20)Image by [Sabine Felidae](https://pixabay.com/users/sheadquarters-5187/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119)
 
 ![](https://miro.medium.com/max/473/1*GbtPRh9OWh1jtCtCa9czIg.jpeg)
 
@@ -157,7 +157,7 @@ From the last two examples given above, we can see that **collision** can arise 
 
 -   Used to implement database indexes.
 -   Used to implement associative arrays.
--   Used to implement the “set” data structure.
+-   Used to implement the "set" data structure.
 
 ## 6. Trees <a id="1c0f"></a>
 

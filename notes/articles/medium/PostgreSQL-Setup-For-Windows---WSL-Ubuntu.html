@@ -183,7 +183,8 @@
                                 (GUI) administration tool for PostgreSQL.
                             </p>
                             <p name="c9f8" id="c9f8" class="graf graf--p graf-after--p">
-                                When you read “installation”, that means the actual OS that's running on your machine. So, you have a Windows installation,
+                                When you read "installation", that means the actual OS that's running on your machine.
+                                So, you have a Windows installation,
                                 Windows 10, that's running when you boot your computer. Then, when you start the Ubuntu installation, it's as if there's a
                                 completely separate computer running inside your computer. It's like having two completely different laptops.
                             </p>
@@ -288,7 +289,8 @@
                                 class="graf graf--pre graf-after--p"
                             >echo &quot;deb <a href="http://apt.postgresql.org/pub/repos/apt/" data-href="http://apt.postgresql.org/pub/repos/apt/" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">http://apt.postgresql.org/pub/repos/apt/</a> `lsb_release -cs`-pgdg main&quot; | sudo tee  /etc/apt/sources.list.d/pgdg.list</pre>
                             <p name="70b1" id="70b1" class="graf graf--p graf-after--pre">
-                                The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a
+                                The last line of output of those two commands running should read "OK". If it does not,
+                                try copying and pasting them one at a
                                 time.
                             </p>
                             <p name="2875" id="2875" class="graf graf--p graf-after--p">
@@ -302,7 +304,8 @@
                                 following command.
                             </p>
                             <pre name="7a9e" id="7a9e" class="graf graf--pre graf-after--p">sudo apt install postgresql-client-12 postgresql-common</pre>
-                            <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to install them, please tell it “Y”.</p>
+                            <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to
+                              install them, please tell it "Y".</p>
                             <p name="aeab" id="aeab" class="graf graf--p graf-after--p">
                                 Test that it installed by typing <code class="markup--code markup--p-code">psql --version</code>. You should see it print out
                                 information about the version of the installed tools. If it tells you that it can&#39;t find the command, try these instructions
@@ -377,7 +380,7 @@ psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; 
                             >
                             <p name="30d6" id="30d6" class="graf graf--p graf-after--pre">
                                 It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct
-                                password, you should see “CREATE ROLE”.
+                                password, you should see "CREATE ROLE".
                             </p>
                             <p name="cb4f" id="cb4f" class="graf graf--p graf-after--p">
                                 Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and
@@ -430,7 +433,8 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                     rel="noopener"
                                     target="_blank"
                                     >Postbird releases page on GitHub</a
-                                >. Click the installer for Windows which you can recognize because it's the only file in the list that ends with “.exe”.
+                                >. Click the installer for Windows which you can recognize because it's the only file in
+                                the list that ends with ".exe".
                             </p>
                             <figure name="9688" id="9688" class="graf graf--figure graf-after--p">
                                 <img
@@ -460,8 +464,9 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 philosophical reasons.
                             </p>
                             <p name="de94" id="de94" class="graf graf--p graf-after--p">
-                                Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More
-                                info” and the “Run anyway” button.
+                                Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers
+                                do, then click the link that reads "More
+                                info" and the "Run anyway" button.
                             </p>
                             <figure name="a64c" id="a64c" class="graf graf--figure graf-after--p">
                                 <img
@@ -473,8 +478,10 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 />
                             </figure>
                             <p name="acd8" id="acd8" class="graf graf--p graf-after--figure">
-                                When it's done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the
-                                password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running
+                                When it's done installing, it will launch itself. Test it out by typing the "postgres"
+                                into the "Username" field and the
+                                password from your installation in the "Password" field. Click the Connect button. It
+                                should properly connect to the running
                             </p>
                             <p name="4506" id="4506" class="graf graf--p graf-after--p">
                                 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any

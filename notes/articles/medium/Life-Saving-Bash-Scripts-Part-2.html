@@ -501,7 +501,7 @@ for f in */; do nf=$(echo &quot;$f&quot; |sed -e &#39;s/[^A-Za-z0-9.]/./g&#39; -
                                 />
                             </figure>
                             <h3 name="2bda" id="2bda" class="graf graf--h3 graf-after--figure">
-                                15.) Recursively remove from all html files any lines containing the string “badText”
+                                15.) Recursively remove from all html files any lines containing the string "badText"
                             </h3>
                             <pre
                                 name="a42b"
@@ -573,7 +573,7 @@ for f in */; do nf=$(echo &quot;$f&quot; |sed -e &#39;s/[^A-Za-z0-9.]/./g&#39; -
                             </figure>
                             <h3 name="3245" id="3245" class="graf graf--h3 graf-after--figure">19.) Convert from Markdown==⇒ HTML</h3>
                             <pre name="928c" id="928c" class="graf graf--pre graf-after--h3">
-find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” -o “${0%.md}.html”' {} \;</pre
+find ./ -iname "*.md" -type f -exec sh -c 'pandoc — standalone "${0}" -o "${0%.md}.html"' {} \;</pre
                             >
                             <figure name="3c21" id="3c21" class="graf graf--figure graf-after--pre">
                                 <img
@@ -586,7 +586,8 @@ find ./ -iname “*.md” -type f -exec sh -c 'pandoc — standalone “${0}” 
                             </figure>
                             <h3 name="285c" id="285c" class="graf graf--h3 graf-after--figure">20.) Convert from HTML ==⇒ Markdown</h3>
                             <pre name="ff5c" id="ff5c" class="graf graf--pre graf-after--h3">
-find ./ -iname “*.html” -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict “${0}” -o “${0%.html}.md”' {} \;</pre
+find ./ -iname "*.html" -type f -exec sh -c 'pandoc — wrap=none — from html — to markdown_strict "${0}" -o
+"${0%.html}.md"' {} \;</pre
                             >
                             <figure name="5740" id="5740" class="graf graf--figure graf--iframe graf-after--pre">
                                 <script src="https://gist.github.com/bgoonz/678b509a905f71139ae40f49bce1f8df.js"></script>

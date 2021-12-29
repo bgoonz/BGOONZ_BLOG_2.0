@@ -226,7 +226,7 @@ To have a module execute code multiple times, export a function, and call that f
 
 #### Module caching caveats[#](https://nodejs.org/api/modules.html#modules_module_caching_caveats)
 
-Modules are cached based on their resolved filename. Since modules may resolve to a different filename based on the location of the calling module (loading from `node_modules` folders), it is not a *guarantee* that `require('foo')` will always return the exact same object, if it would resolve to different files.
+Modules are cached based on their resolved filename. Since modules may resolve to a different filename based on the location of the calling module (loading from `node_modules` folders), it is not a _guarantee_ that `require('foo')` will always return the exact same object, if it would resolve to different files.
 
 Additionally, on case-insensitive file systems or operating systems, different resolved filenames can point to the same file, but the cache will still treat them as different modules and will reload the file multiple times. For example, `require('./foo')` and `require('./FOO')` return two different objects, irrespective of whether or not `./foo` and `./FOO` are the same file.
 
@@ -744,7 +744,7 @@ Added in: v0.5.1
 
 The `module.require()` method provides a way to load a module as if `require()` was called from the original module.
 
-In order to do this, it is necessary to get a reference to the `module` object. Since `require()` returns the `module.exports`, and the `module` is typically *only* available within a specific module's code, it must be explicitly exported in order to be used.
+In order to do this, it is necessary to get a reference to the `module` object. Since `require()` returns the `module.exports`, and the `module` is typically _only_ available within a specific module's code, it must be explicitly exported in order to be used.
 
 ### The `Module` object[#](https://nodejs.org/api/modules.html#modules_the_module_object_1)
 

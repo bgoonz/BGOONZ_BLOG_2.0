@@ -13,7 +13,7 @@ In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session 
 
 As is typical of client/server applications, the client and the server can be on different hosts. In that case they communicate over a TCP/IP network connection. You should keep this in mind, because the files that can be accessed on a client machine might not be accessible (or might only be accessible using a different file name) on the database server machine.
 
-The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts (“forks”) a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original `postgres` process. Thus, the master server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
+The PostgreSQL server can handle multiple concurrent connections from clients. To achieve this it starts ("forks") a new process for each connection. From that point on, the client and the new server process communicate without intervention by the original `postgres` process. Thus, the master server process is always running, waiting for client connections, whereas client and associated server processes come and go. (All of this is of course invisible to the user. We only mention it here for completeness.)
 
 ### What is SQL?
 
@@ -80,7 +80,7 @@ The <a href="https://careerkarma.com/blog/sql-select/" class="markup--anchor mar
 
 The <a href="https://careerkarma.com/blog/sql-where/" class="markup--anchor markup--p-anchor">WHERE</a> statement allows you to select a record based on a condition.
 
-For instance, you could select all of the names in an Employees table that start with the letter “B”. You could select all the people in an Employees table who have worked for a business for at least four years.
+For instance, you could select all of the names in an Employees table that start with the letter "B". You could select all the people in an Employees table who have worked for a business for at least four years.
 
 ### Ordering Data
 

@@ -33,7 +33,7 @@ $(window).load(function() {
       top: twitterPos.top,
       left: twitterPos.left
     }, 250);
-    
+
     $('#github').animate({
       top: githubPos.top + 10,
       left: githubPos.left - 6
@@ -45,7 +45,7 @@ $(window).load(function() {
       top: githubPos.top,
       left: githubPos.left
     }, 250);
-    
+
     $('#stack').animate({
       top: stackPos.top + 10,
       left: stackPos.left - 3
@@ -57,7 +57,7 @@ $(window).load(function() {
       top: stackPos.top,
       left: stackPos.left
     }, 250);
-    
+
     $('#linkedin').animate({
       top: linkedinPos.top + 10,
       left: linkedinPos.left
@@ -69,7 +69,7 @@ $(window).load(function() {
       top: linkedinPos.top,
       left: linkedinPos.left
     }, 250);
-    
+
     $('#code').animate({
       top: codePos.top + 10,
       left: codePos.left + 3
@@ -81,7 +81,7 @@ $(window).load(function() {
       top: codePos.top,
       left: codePos.left
     }, 250);
-    
+
     $('#plus').animate({
       top: plusPos.top + 10,
       left: plusPos.left + 6
@@ -93,7 +93,7 @@ $(window).load(function() {
       top: plusPos.top,
       left: plusPos.left
     }, 250);
-    
+
     $('#mail').animate({
       top: mailPos.top + 10,
       left: mailPos.left + 10

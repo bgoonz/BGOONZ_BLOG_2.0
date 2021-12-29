@@ -801,7 +801,7 @@ code:
 
 > _Notes:_
 
-> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m “Removed submodule “ Delete the now untracked submodule files rm -rf path_to_submodule_
+> _Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm — cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m "Removed submodule " Delete the now untracked submodule files rm -rf path_to_submodule_
 
 code:
 
@@ -987,7 +987,7 @@ code:
 
 ### 39. Remove string from file names recursively
 
-### Description: In the example below I am using this command to remove the string “-master” from all file names in the working directory and all of it's sub directories.
+### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
 
 code:
 

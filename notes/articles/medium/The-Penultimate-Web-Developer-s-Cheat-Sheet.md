@@ -547,7 +547,7 @@ Python has two primitive loop commands:
 -   <span id="2b5b">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
--   <span id="897a">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
+-   <span id="897a">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
 

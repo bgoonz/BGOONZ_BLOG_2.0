@@ -2588,7 +2588,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <a href="https://github.com/antontarasenko/awesome-economics" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/antontarasenko/awesome-economics"><strong>GitHub — antontarasenko/awesome-economics: A curated collection of links for economists</strong>
 <br/>
 
-<em>A curated collection of links for economists. Part of the “Awesome X” series. The list is periodically updated with new…</em>github.com</a><a href="https://github.com/antontarasenko/awesome-economics" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A curated collection of links for economists. Part of the "Awesome X" series. The list is periodically updated with new…</em>github.com</a><a href="https://github.com/antontarasenko/awesome-economics" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/sublimino/awesome-funny-markov" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sublimino/awesome-funny-markov"><strong>GitHub — sublimino/awesome-funny-markov: A curated list of delightfully amusing and facetious…</strong>
 <br/>
@@ -2733,7 +2733,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <a href="https://github.com/angrykoala/awesome-esolangs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/angrykoala/awesome-esolangs"><strong>GitHub — angrykoala/awesome-esolangs: Curated list of awesome Esoteric languages and resources</strong>
 <br/>
 
-<em>Curated list of awesome esoteric programming languages, resources and related projects. “An esoteric programming…</em>github.com</a><a href="https://github.com/angrykoala/awesome-esolangs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Curated list of awesome esoteric programming languages, resources and related projects. "An esoteric programming…</em>github.com</a><a href="https://github.com/angrykoala/awesome-esolangs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/roaldnefs/awesome-prometheus" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/roaldnefs/awesome-prometheus"><strong>GitHub — roaldnefs/awesome-prometheus: A curated list of awesome Prometheus resources, projects and…</strong>
 <br/>
@@ -2793,7 +2793,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 <a href="https://github.com/nayafia/awesome-maintainers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/nayafia/awesome-maintainers"><strong>GitHub — nayafia/awesome-maintainers: Talks, blog posts, and interviews about the experience of…</strong>
 <br/>
 
-<em>Talks, blog posts, and interviews about the experience of being an open source maintainer @brettcannon, Python “The…</em>github.com</a><a href="https://github.com/nayafia/awesome-maintainers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Talks, blog posts, and interviews about the experience of being an open source maintainer @brettcannon, Python "The…</em>github.com</a><a href="https://github.com/nayafia/awesome-maintainers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://github.com/xxczaki/awesome-calculators" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/xxczaki/awesome-calculators"><strong>GitHub — xxczaki/awesome-calculators: 😎 A curated list of resources related to calculators!</strong>
 <br/>
@@ -2910,7 +2910,7 @@ GeoJSON utilities that will make your life easier.github.com</a><a href="https:/
 
 <em>Disclaimer: I know people really dislike and, sometimes, get angry about ads on sites and apps. As they are widely used…</em>github.com</a><a href="https://github.com/cenoura/awesome-ads" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/philsturgeon/awesome-earth" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/philsturgeon/awesome-earth"><strong>GitHub — philsturgeon/awesome-earth: “What can I do about the climate crisis?” Here are 326 things…</strong>
+<a href="https://github.com/philsturgeon/awesome-earth" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/philsturgeon/awesome-earth"><strong>GitHub — philsturgeon/awesome-earth: "What can I do about the climate crisis?" Here are 326 things…</strong>
 <br/>
 
 <em>The world is simultaneously underwater and on fire, and people want to know what they can do about it. Let's share…</em>github.com</a><a href="https://github.com/philsturgeon/awesome-earth" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

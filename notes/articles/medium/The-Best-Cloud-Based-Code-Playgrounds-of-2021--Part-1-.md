@@ -104,7 +104,7 @@ Once you enter code, just hit **Run** in the top actions bar, and the fourth pan
 
 ### Embed Options
 
-> **_&lt;iframe src=”https://stackblitz.com/edit/angular?embed=1"&gt;&lt;/iframe&gt;_**
+> **_&lt;iframe src="https://stackblitz.com/edit/angular?embed=1"&gt;&lt;/iframe&gt;_**
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*6QF4ywBOMVFtS_MukRkLKw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*5ekSGpNwJ28hI9Aog8V4DQ.png" class="graf-image" /></figure>🡩 **Alternatively, you can also use StackBlitz's** <a href="https://developer.stackblitz.com/docs/platform/embedding#open-and-embed-stackblitz-projects" class="markup--anchor markup--blockquote-anchor"><strong>Javascript SDK methods</strong></a> **for easily embedding StackBlitz projects on the page & avoid all the hassles of creating/configuring iframes.**
 

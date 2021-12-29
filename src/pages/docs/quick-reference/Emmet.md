@@ -137,7 +137,7 @@ Items can be grouped together using `()`
 
 ### Class and ID
 
-Class and Id in Emmet can be done using  `.` and `#`
+Class and Id in Emmet can be done using `.` and `#`
 
 `div.heading`
 

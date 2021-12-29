@@ -8,7 +8,7 @@ How to implement array callback methods in JavaScript
 
 #### How to implement array callback methods in JavaScript
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called “First Class Objects” in JavaScript because:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called "First Class Objects" in JavaScript because:
 
 -   <span id="1df8">A function is an instance of the Object type</span>
 -   <span id="6e67">A function can have properties and has a link back to its constructor method</span>

@@ -53,7 +53,7 @@ This is the stuff that comes up on interviews…
 
 ### Callbacks Lesson Concepts
 
--   <span id="133e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
+-   <span id="133e">Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.</span>
 -   <span id="22a1">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
 -   <span id="5b83">supports same basic operations as other types (strings, bools, numbers)</span>
 -   <span id="2419">higher-order functions take functions as arguments or return functions as values</span>
@@ -83,7 +83,7 @@ This is the stuff that comes up on interviews…
 
 #### Explain the difference between `const`, `let`, and `var` declarations
 
-> `var` _is function scoped—so if you declare it anywhere in a function, the declaration_ **_(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted"_** _so it will_ **_exist in memory as “undefined”_** _which is bad and unpredictable_
+> `var` _is function scoped—so if you declare it anywhere in a function, the declaration_ **_(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted"_** _so it will_ **_exist in memory as "undefined"_** _which is bad and unpredictable_
 
 > `var` _will also allow you to redeclare a variable, while_ `let` _or_ `const` _will raise a syntax error. you shouldn't be able to do that!_
 
@@ -123,11 +123,11 @@ This is the stuff that comes up on interviews…
 
 ### Implement a closure and explain how the closure effects scope
 
-#### a closure is “the combination of a function and the lexical environment within which that function was declared”
+#### a closure is "the combination of a function and the lexical environment within which that function was declared"
 
--   <span id="bb50">**alternatively, “when an inner function uses or changes variables in an outer function”**</span>
+-   <span id="bb50">**alternatively, "when an inner function uses or changes variables in an outer function"**</span>
 -   <span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span>
--   <span id="a9e4">the set of all these available variables is “lexical environemnt”</span>
+-   <span id="a9e4">the set of all these available variables is "lexical environemnt"</span>
 -   <span id="8562">closure keeps reference to all variables \*\* even if the outer function has returned</span>
 -   <span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function 'closed' over …each function has a private mutable state that cannot be accessed externally</span>
 -   <span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span>

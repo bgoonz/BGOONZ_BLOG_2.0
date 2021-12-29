@@ -53,7 +53,7 @@ thumb_image_alt: python logo
 
 # # is used to make comments in your code.
 
-> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… "-SickNasty … Autor Unknown"_
 
 # Numbers
 
@@ -87,9 +87,9 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   _“\*\*” : Double asterisk for exponent._
+-   _"\*\*" : Double asterisk for exponent._
 
--   _“//” : Integer Division._
+-   _"//" : Integer Division._
 
 -   **There are no spaces between math operations in Python.**
 
@@ -129,7 +129,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 -   **You can use + to concatenate strings, just like in JS.**
 
--   **You can also use “\*” to repeat strings or multiply strings.**
+-   **You can also use "\*" to repeat strings or multiply strings.**
 
 -   **Use the format() function to use placeholders in a string to input values later on.**
 

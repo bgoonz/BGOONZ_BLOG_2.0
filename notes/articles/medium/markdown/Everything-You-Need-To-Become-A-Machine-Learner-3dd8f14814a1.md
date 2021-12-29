@@ -10,9 +10,9 @@ This list of resources is specifically targeted at Web Developers and Data Scien
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KLzv9YgXVEYUpnk8.jpg" class="graf-image" /></figure>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> _The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
+> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
 
-> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as “the field of study that gives computers the ability to learn without explicitly being programmed.”_
+> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>-   <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
 -   <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
@@ -54,7 +54,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="5ed8">\[ \] <a href="https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp#" class="markup--anchor markup--li-anchor">Real-world AI Case Studies</a></span>
 -   <span id="a586">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
 -   <span id="30ce">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
--   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses “Machine Learning in Networking”</a> `0:48:44`</span>
+-   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses "Machine Learning in Networking"</a> `0:48:44`</span>
 -   <span id="afd6">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
 -   <span id="1629">\[ \] <a href="https://www.youtube.com/watch?v=z_OGYzT_MBo" class="markup--anchor markup--li-anchor">Eric Colson, Chief Algorithms Officer, Stitch Fix</a> `0:53:57`</span>
 -   <span id="ad62">\[ \] <a href="https://www.youtube.com/watch?v=p0cQUErM5xs" class="markup--anchor markup--li-anchor">Claudia Perlich, Advisor to Dstillery and Adjunct Professor NYU Stern School of Business</a> `0:51:59`</span>
@@ -211,7 +211,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to setup data annotation efficiently
 
-**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The “What”, The “Why” and The “How”</strong></a>
+**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The "What", The "Why" and The "How"</strong></a>
 
 -   <span id="83ea">**\[📰\]** <a href="https://towardsdatascience.com/we-need-synthetic-data-e6f90a8532a4" class="markup--anchor markup--li-anchor"><strong>We need Synthetic Data</strong></a></span>
 -   <span id="82da">**\[📰\]** <a href="https://trishalaneeraj.github.io/2020-07-05/weak-supervision" class="markup--anchor markup--li-anchor"><strong>Weak Supervision for Online Discussions</strong></a></span>

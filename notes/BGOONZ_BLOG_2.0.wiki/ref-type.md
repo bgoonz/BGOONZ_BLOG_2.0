@@ -105,7 +105,7 @@ Here `hi = user.hi` puts the function into the variable, and then on the last li
 
 **To make `user.hi()` calls work, JavaScript uses a trick – the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
 
-The Reference Type is a “specification type”. We can't explicitly use it, but it is used internally by the language.
+The Reference Type is a "specification type”. We can't explicitly use it, but it is used internally by the language.
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
@@ -120,9 +120,9 @@ The result of a property access `user.hi` is not a function, but a value of Refe
 
 When parentheses `()` are called on the Reference Type, they receive the full information about the object and its method, and can set the right `this` (`=user` in this case).
 
-Reference type is a special “intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
+Reference type is a special "intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
 
-Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation “loses” `this`.
+Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation "loses” `this`.
 
 So, as the result, the value of `this` is only passed the right way if the function is called directly using a dot `obj.method()` or square brackets `obj['method']()` syntax (they do the same here). There are various ways to solve this problem such as [func.bind()](bind.html#solution-2-bind).
 
@@ -130,7 +130,7 @@ So, as the result, the value of `this` is only passed the right way if the funct
 
 Reference Type is an internal type of the language.
 
-Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special “reference type” value that stores both the property value and the object it was taken from.
+Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special "reference type” value that stores both the property value and the object it was taken from.
 
 That's for the subsequent method call `()` to get the object and set `this` to it.
 
