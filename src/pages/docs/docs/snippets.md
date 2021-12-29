@@ -256,44 +256,44 @@ no loops or exit & return = O(1)
 **recursive**: as you add more terms, increase in time as you add input diminishes\
 **recursion**: when you define something in terms of itself, a function that calls itself
 
--   used because of ability to maintain state at diffferent levels of recursion
--   inherently carries large footprint
--   every time function called, you add call to stack
+- used because of ability to maintain state at diffferent levels of recursion
+- inherently carries large footprint
+- every time function called, you add call to stack
 
 **iterative**: use loops instead of recursion (preferred)
 
--   favor readability over performance
+- favor readability over performance
 
 `O(n log(n))` & `O(log(n))`: dividing/halving
 
--   if code employs recursion/divide-and-conquer strategy
--   what power do i need to power my base to get n
+- if code employs recursion/divide-and-conquer strategy
+- what power do i need to power my base to get n
 
 ### Time Definitions
 
--   **constant**: does not scale with input, will take same amount of time
--   for any input size n, constant time performs same number of operations every time
--   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
--   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
--   halving
--   **linear**: increases number of operations it performs as linear function of input size n
--   number of additional operations needed to perform grows in direct proportion to increase in input size n
--   **log-linear**: increases number of operations it performs as log-linear function of input size n
--   looking over every element and doing work on each one
--   **quadratic**: increases number of operations it performs as quadratic function of input size n
--   **exponential**: increases number of operations it performs as exponential function of input size n
--   number of nested loops increases as function of n
--   **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
--   **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
--   **rate of growth**: how fast a function grows with input size
+- **constant**: does not scale with input, will take same amount of time
+- for any input size n, constant time performs same number of operations every time
+- **logarithmic**: increases number of operations it performs as logarithmic function of input size n
+- function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
+- halving
+- **linear**: increases number of operations it performs as linear function of input size n
+- number of additional operations needed to perform grows in direct proportion to increase in input size n
+- **log-linear**: increases number of operations it performs as log-linear function of input size n
+- looking over every element and doing work on each one
+- **quadratic**: increases number of operations it performs as quadratic function of input size n
+- **exponential**: increases number of operations it performs as exponential function of input size n
+- number of nested loops increases as function of n
+- **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
+- **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
+- **rate of growth**: how fast a function grows with input size
 
 [![](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)
 
 ### Space Complexity
 
--   How does the space usage scale/change as input gets very large?
--   What auxiliary space does your algorithm use or is it in place (constant)?
--   Runtime stack space counts as part of space complexity unless told otherwise.
+- How does the space usage scale/change as input gets very large?
+- What auxiliary space does your algorithm use or is it in place (constant)?
+- Runtime stack space counts as part of space complexity unless told otherwise.
 
 ### Sorting Algorithms
 
@@ -310,7 +310,7 @@ no loops or exit & return = O(1)
 For similar content check out my GitHub:
 
 [**bgoonz - Overview**\
-_Web Developer, Electrical Engineer _](https://github.com/bgoonz 'https://github.com/bgoonz')*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer_](https://github.com/bgoonz 'https://github.com/bgoonz')*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/eb1557e85fa3).
 
@@ -332,13 +332,13 @@ How to implement array callback methods in JavaScript
 
 [![](https://camo.githubusercontent.com/66698fc55382cdcada06a280bbd01030f2d8b3a1f6590aa4b380086ac26537b3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57704b714f6454735450687661707557)](https://camo.githubusercontent.com/66698fc55382cdcada06a280bbd01030f2d8b3a1f6590aa4b380086ac26537b3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57704b714f6454735450687661707557)
 
-#### Functions are called "First Class Objects" in JavaScript because:
+#### Functions are called "First Class Objects" in JavaScript because
 
--   A function is an instance of the Object type
--   A function can have properties and has a link back to its constructor method
--   You can store the function in a variable
--   You can pass the function as a parameter to another function
--   You can return the function from a function
+- A function is an instance of the Object type
+- A function can have properties and has a link back to its constructor method
+- You can store the function in a variable
+- You can pass the function as a parameter to another function
+- You can return the function from a function
 
 What do you think will be printed in the following:
 
@@ -368,7 +368,7 @@ fruitBasket();
 
 ```
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value
 
 ```
 function greaterValue(value, cb1, cb2) {
@@ -399,7 +399,7 @@ console.log(greaterValue(-2, negate, addOne));
 
 *Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
 
-#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
+#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map
 
 ```
 function myMap(arr, callback) {
@@ -423,7 +423,7 @@ console.log(myMap([1, 2, 3], double));
 
 ```
 
-#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.
+#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter
 
 ```
 function myFilter(arr, callback) {
@@ -442,7 +442,7 @@ function myFilter(arr, callback) {
 
 ```
 
-#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.
+#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every
 
 ```
 function myEvery(arr, callback) {
@@ -557,7 +557,7 @@ Here's a list of bash commands that stand between me and insanity.
 
 ### Bash Commands That Save Me Time and Frustration
 
-#### Here's a list of bash commands that stand between me and insanity.
+#### Here's a list of bash commands that stand between me and insanity
 
 [![](https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067)](https://camo.githubusercontent.com/22b34f635d2c806b42121947a66b17cb69fe0b64d935cbdeabe81c3bccc74e8e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77304a3875366a5754696b59565a7a572e6a7067)
 
@@ -572,13 +572,13 @@ Here's a list of bash commands that stand between me and insanity.
 
 [![](https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966)](https://camo.githubusercontent.com/a3dd21a18d0fcf7ac3c80b09877c193ba4f84657dcebde6487aea381d9aba9bf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a336d5f5563514f41794b7449704851366a394a7a5a772e676966)
 
-### Here's a Cheatsheet:
+### Here's a Cheatsheet
 
-### Getting Started (Advanced Users Skip Section):
+### Getting Started (Advanced Users Skip Section)
 
 ---
 
-#### ✔ Check the Current Directory ➡ `pwd`:
+#### ✔ Check the Current Directory ➡ `pwd`
 
 On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
@@ -586,7 +586,7 @@ On the command line, it's important to know the directory we are currently worki
 
 It shows that I'm working on my Desktop directory.
 
-#### ✔ Display List of Files ➡ `ls`:
+#### ✔ Display List of Files ➡ `ls`
 
 To see the list of files and directories in the current directory use `ls` command in your CLI.
 
@@ -594,12 +594,12 @@ To see the list of files and directories in the current directory use `ls` comma
 
 Shows all of my files and directories of my Desktop directory.
 
--   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
--   Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
-#### ✔ Create a Directory ➡ `mkdir`:
+#### ✔ Create a Directory ➡ `mkdir`
 
 We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
@@ -609,7 +609,7 @@ Use `ls` command to see the directory is created or not.
 
 I created a cli-practice directory in my working directory i.e. Desktop directory.
 
-#### ✔ Move Between Directories ➡ `cd`:
+#### ✔ Move Between Directories ➡ `cd`
 
 It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
@@ -619,11 +619,11 @@ Can use `pwd` command to confirm your directory name.
 
 Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
-#### ✔ Parent Directory ➡ `..`:
+#### ✔ Parent Directory ➡ `..`
 
 We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
 
-#### ✔ Create Files ➡ `touch`:
+#### ✔ Create Files ➡ `touch`
 
 We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
@@ -633,7 +633,7 @@ I created a hello.txt file in my current working directory. Again you can use `l
 
 Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
 
-#### ✔ Display the Content of a File ➡ `cat`:
+#### ✔ Display the Content of a File ➡ `cat`
 
 We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
@@ -641,7 +641,7 @@ We can display the content of a file using the `cat` command. To use it type `ca
 
 Shows the content of my hello.txt file.
 
-#### ✔ Move Files & Directories ➡ `mv`:
+#### ✔ Move Files & Directories ➡ `mv`
 
 To move a file and directory, we use `mv` command.
 
@@ -661,7 +661,7 @@ Yes, we can use multiple directories & files names one after another to create m
 
 Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
-#### ✔ Rename Files & Directories ➡ `mv`:
+#### ✔ Rename Files & Directories ➡ `mv`
 
 `mv` command can also be used to rename a file and a directory.
 
@@ -671,17 +671,17 @@ You can rename a file by typing `mv old_file_name new_file_name` & also rename a
 
 Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
-#### ✔ Copy Files & Directories ➡ `cp`:
+#### ✔ Copy Files & Directories ➡ `cp`
 
 To do this, we use the `cp` command.
 
--   You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 *The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
 
@@ -689,35 +689,35 @@ Copied my hi.txt file content into hello.txt file. For confirmation open your he
 
 Here I copied all of the files from the folder to folder-copy.
 
-#### ✔ Remove Files & Directories ➡ `rm`:
+#### ✔ Remove Files & Directories ➡ `rm`
 
 To do this, we use the `rm` command.
 
--   To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
--   To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 
 I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
-#### ✔ Clear Screen ➡ `clear`:
+#### ✔ Clear Screen ➡ `clear`
 
 Clear command is used to clear the terminal screen.
 
-#### ✔ Home Directory ➡ `~`:
+#### ✔ Home Directory ➡ `~`
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
 ---
 
-### MY COMMANDS:
+### MY COMMANDS
 
-### 1.) Recursively unzip zip files and then delete the archives when finished:
+### 1.) Recursively unzip zip files and then delete the archives when finished
 
 **here is a** [**folde**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip)**r containing the before and after... I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
@@ -730,7 +730,7 @@ find . -name "*.zip" -type f -print -delete
 
 ---
 
-### 2.) Install node modules recursively:
+### 2.) Install node modules recursively
 
 ```
 npm i -g recursive-install
@@ -741,7 +741,7 @@ npm-recursive-install
 
 ---
 
-### 3.) Clean up unnecessary files/folders in git repo:
+### 3.) Clean up unnecessary files/folders in git repo
 
 ```
 find . -empty -type f -print -delete #Remove empty files
@@ -763,14 +763,14 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt
 
 ```
 
-#### In Action:
+#### In Action
 
 The following output from my bash shell corresponds to the directory:
 
 [**bgoonz/bash-commands-walkthrough**\
 *Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master 'https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master')[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
 
-#### which was created by running the aforementioned commands in in a perfect copy of this directory:
+#### which was created by running the aforementioned commands in in a perfect copy of this directory
 
 [**bgoonz/DS-ALGO-OFFICIAL**\
 *Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL 'https://github.com/bgoonz/DS-ALGO-OFFICIAL')[](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
@@ -833,7 +833,7 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 **The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo's you wish to keep exclusively for your own reference.**
 
-### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
+### !!!Use with caution as this command removes the attribution of the work from it's original authors
 
 [![!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)
 
@@ -841,7 +841,7 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 ---
 
-### 4.) Generate index.html file that links to all other files in working directory:
+### 4.) Generate index.html file that links to all other files in working directory
 
 ```
 #!/bin/sh
@@ -916,7 +916,7 @@ cmd $listing --sort=extension >>$html
 
 ```
 
-#### In Action:
+#### In Action
 
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
@@ -925,7 +925,7 @@ cmd $listing --sort=extension >>$html
 
 [![](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)
 
-#### The result is a index.html file that contains a list of links to each file in the directory:
+#### The result is a index.html file that contains a list of links to each file in the directory
 
 > here is a link to and photo of the resulting html file:
 
@@ -936,7 +936,7 @@ cmd $listing --sort=extension >>$html
 
 ---
 
-### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
+### 5.) Download all links to a files of a specified extension on a user provided (url) webpage
 
 ```
 wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off
@@ -949,7 +949,7 @@ wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K
 
 ---
 
-### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
+### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory
 
 ```
 find . -type f -exec sed -i '/badFolder/d' ./* {} \;
@@ -1047,7 +1047,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 ---
 
-### 7.) Execute command recursively:
+### 7.) Execute command recursively
 
 **Here I have modified the command I wish to run recursively to account for the fact that the 'find' command already works recursively, by appending the -maxdepth 1 flag...**
 
@@ -1061,13 +1061,13 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 **The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
 
-#### In Action:
+#### In Action
 
 🢃 Below 🢃
 
 [![](https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966)](https://camo.githubusercontent.com/5f6bdf3692deea17ec807a6bb770b7474de94190813abae568dde34f9f8b5422/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6b39633151524b593037544c4a6e7039536538396c512e676966)
 
-#### The final result is:
+#### The final result is
 
 [![](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)
 
@@ -1104,7 +1104,7 @@ RecurseDirs "./"
 
 ---
 
-### TBC....
+### TBC
 
 **Here are some of the other commands I will cover in greater detail... at a later time:**
 
@@ -1126,7 +1126,7 @@ find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
 ---
 
-### 11\. Sanatize file and folder names to remove illegal characters and reserved words.
+### 11\. Sanatize file and folder names to remove illegal characters and reserved words
 
 ```
 sanitize() {
@@ -1165,7 +1165,7 @@ sudo -u postgres psql
 
 ---
 
-### 13\. Add closing body and script tags to each html file in working directory.
+### 13\. Add closing body and script tags to each html file in working directory
 
 ```
 for f in * ; do
@@ -1202,7 +1202,7 @@ done
 
 ---
 
-### 15\. Change File Extension from '.txt' to .doc for all files in working directory.
+### 15\. Change File Extension from '.txt' to .doc for all files in working directory
 
 ```
 sudo apt install rename
@@ -1229,12 +1229,12 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 
 ---
 
-### Discover More:
+### Discover More
 
 [**Web-Dev-Hub**\
 *Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
 
-### Part 2 of this series:
+### Part 2 of this series
 
 [**Medium**\
 _Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 'https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682')[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
@@ -1263,15 +1263,15 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
 
-1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
-2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
-3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-4.  Restart your computer
-5.  In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
-6.  Click "Microsoft Store"
-7.  Click the "Search" button in the upper-right corner of the window
-8.  Type in "Ubuntu"
-9.  Click "Run Linux on Windows (Get the apps)"
+1. In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
+2. Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
+3. In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4. Restart your computer
+5. In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
+6. Click "Microsoft Store"
+7. Click the "Search" button in the upper-right corner of the window
+8. Type in "Ubuntu"
+9. Click "Run Linux on Windows (Get the apps)"
 10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store... you want the one just entitled 'Ubuntu'
 11. Click "Install"
 12. After it downloads, click "Launch"
@@ -1288,13 +1288,13 @@ Git comes with Ubuntu, so there's nothing to install. However, you should config
 
 ‌Open an Ubuntu terminal if you don't have one open already.
 
-1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[](mailto:your@email.com)<your@email.com>" with your real email.
+1. You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
+2. You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[](mailto:your@email.com)<your@email.com>" with your real email.
 
 **Note: if you want git to remember your login credentials type:**
 
 ```
-$ git config --global credential.helper store
+git config --global credential.helper store
 
 ```
 
@@ -1302,19 +1302,19 @@ $ git config --global credential.helper store
 
 Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-1.  Open Microsoft Edge, the blue "e" in the task bar, and type in [](http://chrome.google.com/)[http://chrome.google.com](http://chrome.google.com/). Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.
-2.  Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".
+1. Open Microsoft Edge, the blue "e" in the task bar, and type in [](http://chrome.google.com/)[http://chrome.google.com](http://chrome.google.com/). Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.
+2. Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".
 
 ### Node.js
 
 Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
 
-1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
-2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
-3.  In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
-5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+1. In the Ubuntu terminal, type `sudo apt update` and press Enter
+2. In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3. In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
+4. In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5. In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6. Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
 
 ### Unzip
 
