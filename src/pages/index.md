@@ -192,8 +192,8 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
-    section_id: webaudio daw
+  - title: Web Audio Daw
+    section_id: lorem-ipsum
     image_alt: portfolio
     image_position: left
     content: >-
