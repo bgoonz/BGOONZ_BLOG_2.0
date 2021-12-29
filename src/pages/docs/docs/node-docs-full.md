@@ -664,3 +664,279 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+
+
+Node.js can be installed in different ways. This post highlights the most common and convenient ones.
+
+Official packages for all the major platforms are available at [https://nodejs.dev/download/](https://nodejs.dev/download/).
+
+One very convenient way to install Node.js is through a package manager. In this case, every operating system has its own.
+
+Other package managers for MacOS, Linux, and Windows are listed in [https://nodejs.dev/download/package-manager/](https://nodejs.dev/download/package-manager/)
+
+`nvm` is a popular way to run Node.js. It allows you to easily switch the Node.js version, and install new versions to try and easily rollback if something breaks, for example.
+
+It is also very useful to test your code with old Node.js versions.
+
+See [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) for more information about this option.
+
+In any case, when Node.js is installed you'll have access to the `node` executable program in the command line.
+
+# How much JavaScript do you need to know to use Node.js
+
+As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
+
+While learning to code, you might also be confused at where does JavaScript end, and where Node.js begins, and vice versa.
+
+I would recommend you to have a good grasp of the main JavaScript concepts before diving into Node.js:
+
+-   Lexical Structure
+-   Expressions
+-   Types
+-   Classes
+-   Variables
+-   Functions
+-   this
+-   Arrow Functions
+-   Loops
+-   Scopes
+-   Arrays
+-   Template Literals
+-   Semicolons
+-   Strict Mode
+-   ECMAScript 6, 2016, 2017
+
+With those concepts in mind, you are well on your road to become a proficient JavaScript developer, in both the browser and in Node.js.
+
+The following concepts are also key to understand asynchronous programming, which is one of the fundamental parts of Node.js:
+
+-   [Asynchronous programming and callbacks](https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
+-   [Timers](https://nodejs.dev/learn/discover-javascript-timers)
+-   [Promises](https://nodejs.dev/learn/understanding-javascript-promises)
+-   [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
+-   Closures
+-   [The Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
+
+# Differences between Node.js and the Browser
+
+
+Both the browser and Node.js use JavaScript as their programming language.
+
+Building apps that run in the browser is a completely different thing than building a Node.js application.
+
+Despite the fact that it's always JavaScript, there are some key differences that make the experience radically different.
+
+From the perspective of a frontend developer who extensively uses JavaScript, Node.js apps bring with them a huge advantage: the comfort of programming everything - the frontend and the backend - in a single language.
+
+You have a huge opportunity because we know how hard it is to fully, deeply learn a programming language, and by using the same language to perform all your work on the web - both on the client and on the server, you're in a unique position of advantage.
+
+What changes is the ecosystem.
+
+In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node.js, of course. You don't have the `document`, `window` and all the other objects that are provided by the browser.
+
+And in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+
+Another big difference is that in Node.js you control the environment. Unless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on. Compared to the browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convenient.
+
+This means that you can write all the modern ES6-7-8-9 JavaScript that your Node.js version supports.
+
+Since JavaScript moves so fast, but browsers can be a bit slow to upgrade, sometimes on the web you are stuck with using older JavaScript / ECMAScript releases.
+
+You can use Babel to transform your code to be ES5-compatible before shipping it to the browser, but in Node.js, you won't need that.
+
+Another difference is that Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
+
+In practice, this means that for the time being you use `require()` in Node.js and `import` in the browser.
+
+
+# The V8 JavaScript Engine
+
+V8 is the name of the JavaScript engine that powers Google Chrome. It's the thing that takes our JavaScript and executes it while browsing with Chrome.
+
+V8 provides the runtime environment in which JavaScript executes. The DOM, and the other Web Platform APIs are provided by the browser.
+
+The cool thing is that the JavaScript engine is independent of the browser in which it's hosted. This key feature enabled the rise of Node.js. V8 was chosen to be the engine that powered Node.js back in 2009, and as the popularity of Node.js exploded, V8 became the engine that now powers an incredible amount of server-side code written in JavaScript.
+
+The Node.js ecosystem is huge and thanks to V8 which also powers desktop apps, with projects like Electron.
+
+## [](https://nodejs.dev/learn#other-js-engines)Other JS engines
+
+Other browsers have their own JavaScript engine:
+
+-   Firefox has [**SpiderMonkey**](https://spidermonkey.dev/)
+-   Safari has [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) (also called Nitro)
+-   Edge was originally based on [**Chakra**](https://github.com/Microsoft/ChakraCore) but has more recently been [rebuilt using Chromium](https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium) and the V8 engine.
+
+and many others exist as well.
+
+All those engines implement the [ECMA ES-262 standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm), also called ECMAScript, the standard used by JavaScript.
+
+## [](https://nodejs.dev/learn#the-quest-for-performance)The quest for performance
+
+V8 is written in C++, and it's continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.
+
+In this V8 introduction, we will ignore the implementation details of V8: they can be found on more authoritative sites (e.g. the [V8 official site](https://v8.dev/)), and they change over time, often radically.
+
+V8 is always evolving, just like the other JavaScript engines around, to speed up the Web and the Node.js ecosystem.
+
+On the web, there is a race for performance that's been going on for years, and we (as users and developers) benefit a lot from this competition because we get faster and more optimized machines year after year.
+
+## [](https://nodejs.dev/learn#compilation)Compilation
+
+JavaScript is generally considered an interpreted language, but modern JavaScript engines no longer just interpret JavaScript, they compile it.
+
+This has been happening since 2009, when the SpiderMonkey JavaScript compiler was added to Firefox 3.5, and everyone followed this idea.
+
+JavaScript is internally compiled by V8 with **just-in-time** (JIT) **compilation** to speed up the execution.
+
+This might seem counter-intuitive, but since the introduction of Google Maps in 2004, JavaScript has evolved from a language that was generally executing a few dozens of lines of code to complete applications with thousands to hundreds of thousands of lines running in the browser.
+
+Our applications can now run for hours inside a browser, rather than being just a few form validation rules or simple scripts.
+
+In this _new world_, compiling JavaScript makes perfect sense because while it might take a little bit more to have the JavaScript _ready_, once done it's going to be much more performant than purely interpreted code.
+
+
+# Run Node.js scripts from the command line
+
+
+The usual way to run a Node.js program is to run the `node` globally available command (once you install Node.js) and pass the name of the file you want to execute.
+
+If your main Node.js application file is `app.js`, you can call it by typing:
+
+BASH
+
+node app.js
+
+Above, you are explicitly telling the shell to run your script with `node`. You can also embed this information into your JavaScript file with a "shebang" line. The "shebang" is the first line in the file, and tells the OS which interpreter to use for running the script. Below is the first line of JavaScript:
+
+BASH
+
+#!/usr/bin/node
+
+Above, we are explicitly giving the absolute path of interpreter. Not all operating systems have `node` in the bin folder, but all should have `env`. You can tell the OS to run `env` with node as parameter:
+
+BASH
+
+#!/usr/bin/env node
+
+// your code
+
+To use a shebang, your file should have executable permission. You can give `app.js` the executable permission by running:
+
+BASH
+
+chmod u+x app.js
+
+While running the command, make sure you are in the same directory which contains the `app.js` file.
+
+
+# How to exit from a Node.js program
+
+
+
+---
+created: 2021-11-27T11:28:53 (UTC -05:00)
+tags: []
+source: https://nodejs.dev/learn
+author: 
+---
+
+# How to exit from a Node.js program
+
+> ## Excerpt
+> Learn how to terminate a Node.js app in the best possible way
+
+---
+There are various ways to terminate a Node.js application.
+
+When running a program in the console you can close it with `ctrl-C`, but what we want to discuss here is programmatically exiting.
+
+Let's start with the most drastic one, and see why you're better off _not_ using it.
+
+The `process` core module provides a handy method that allows you to programmatically exit from a Node.js program: `process.exit()`.
+
+When Node.js runs this line, the process is immediately forced to terminate.
+
+This means that any callback that's pending, any network request still being sent, any filesystem access, or processes writing to `stdout` or `stderr` - all is going to be ungracefully terminated right away.
+
+If this is fine for you, you can pass an integer that signals the operating system the exit code:
+
+JS
+
+process.exit(1)
+
+By default the exit code is `0`, which means success. Different exit codes have different meaning, which you might want to use in your own system to have the program communicate to other programs.
+
+You can read more on exit codes at [https://nodejs.org/api/process.html#process\_exit\_codes](https://nodejs.org/api/process.html#process_exit_codes)
+
+You can also set the `process.exitCode` property:
+
+JS
+
+process.exitCode \= 1
+
+and when the program ends, Node.js will return that exit code.
+
+A program will gracefully exit when all the processing is done.
+
+Many times with Node.js we start servers, like this HTTP server:
+
+JS
+
+const express \= require('express')
+
+const app \= express()
+
+app.get('/', (req, res) \=> {
+
+ res.send('Hi!')
+
+})
+
+app.listen(3000, () \=> console.log('Server ready'))
+
+> Express is a framework that uses the http module under the hood, app.listen() returns an instance of http. You would use https.createServer if you needed to serve your app using HTTPS, as app.listen only uses the http module.
+
+This program is never going to end. If you call `process.exit()`, any currently pending or running request is going to be aborted. This is _not nice_.
+
+In this case you need to send the command a SIGTERM signal, and handle that with the process signal handler:
+
+> Note: `process` does not require a "require", it's automatically available.
+
+JS
+
+const express \= require('express')
+
+const app \= express()
+
+app.get('/', (req, res) \=> {
+
+ res.send('Hi!')
+
+})
+
+const server \= app.listen(3000, () \=> console.log('Server ready'))
+
+process.on('SIGTERM', () \=> {
+
+ server.close(() \=> {
+
+ console.log('Process terminated')
+
+ })
+
+})
+
+> What are signals? Signals are a POSIX intercommunication system: a notification sent to a process in order to notify it of an event that occurred.
+
+`SIGKILL` is the signal that tells a process to immediately terminate, and would ideally act like `process.exit()`.
+
+`SIGTERM` is the signal that tells a process to gracefully terminate. It is the signal that's sent from process managers like `upstart` or `supervisord` and many others.
+
+You can send this signal from inside the program, in another function:
+
+JS
+
+process.kill(process.pid, 'SIGTERM')
+
+Or from another Node.js running program, or any other app running in your system that knows the PID of the process you want to terminate.

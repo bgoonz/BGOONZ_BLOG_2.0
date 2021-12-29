@@ -1,7 +1,7 @@
 ---
 title: Firebase
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Firebasics
 seo:
     title: ''
     description: ''

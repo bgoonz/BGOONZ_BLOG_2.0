@@ -1,6 +1,6 @@
 ---
 title: Other Websites
-weight: 1
+weight: 0
 seo:
     title: Typography
     description: This is the typography page

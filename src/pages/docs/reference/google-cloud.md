@@ -1,6 +1,6 @@
 ---
 title: Google Cloud
-weight: 1
+weight: 0
 excerpt: lorem-ipsum
 seo:
     title: ''

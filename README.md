@@ -1,7 +1,65 @@
 <div align="center">
+<<<<<<< HEAD
+=======
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
+##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+</div>
+ 
+ 
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+---
+
+![Preview](https://i.imgur.com/nieW1vp.png)
+
+---
+
+## Wiki Nav:
+
+-   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+-   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+-   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+-   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+-   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+-   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+-   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+-   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+-   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+-   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+-   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+-   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+-   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+-   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+-   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+-   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+-   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+-   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+-   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+-   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+-   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+-   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+-   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+-   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+-   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+-   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+-   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+-   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+-   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+-   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+-   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+-   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+-   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+-   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
+
+# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+
+<<<<<<< HEAD
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 
@@ -19,10 +77,353 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)[![CodeQL](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml)
 
 </div>
+=======
+## Dependencies:
+
+<details>
+  <summary>Click to expand!</summary>
+  <br>
+
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
+`^ 4.10.3`
+
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
+`4.10.5`
+
+![@ghost**](https://avatars.githubusercontent.com/u/10137?s=40&v=4)@algolia/requester-common
+`4.10.5`
+
+[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript ](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
+`4.10.5`
+
+[![@stackbit**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus ](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
+`0.0.4`
+
+[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest ](https://github.com/facebook/jest)babel-jest
+`^ 24.7.1`
+
+[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby ](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
+`^ 0.1.11`
+
+[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby) `^ 2.5.0`
+
+[![@keyz**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)](https://github.com/keyz)[keyz / identity-obj-proxy](https://github.com/keyz/identity-obj-proxy) `^ 3.0.0`
+
+[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest) `^ 24.7.1`
+
+[![@lodash**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)](https://github.com/lodash)[lodash / lodash](https://github.com/lodash/lodash) `^ 4.17.11`
+
+[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react ](https://github.com/facebook/react)react-test-renderer
+`^ 16.8.6`
+
+[![@getkirby-v2**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin ](https://github.com/getkirby-v2/algolia-plugin)algolia
+`0.0.0`
+
+[![@ecomfe**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)](https://github.com/ecomfe)[ecomfe / babel-runtime](https://github.com/ecomfe/babel-runtime) `6.26.0`
+
+[![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / chokidar](https://github.com/paulmillr/chokidar) `3.4.0`
+
+[![@DefinitelyTyped**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped ](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
+`^ 13`
+
+[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / anymatch](https://github.com/micromatch/anymatch) `~ 3.1.1`
+
+[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / braces](https://github.com/micromatch/braces) `~ 3.0.2`
+
+[![@chaijs**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)](https://github.com/chaijs)[chaijs / chai](https://github.com/chaijs/chai) `^ 4.2`
+
+[![@microsoft**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)](https://github.com/microsoft)[microsoft / dtslint](https://github.com/microsoft/dtslint) `^ 3.3.0`
+
+[![@eslint**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)](https://github.com/eslint)[eslint / eslint](https://github.com/eslint/eslint) `^ 6.6.0`
+
+[![@fsevents**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)](https://github.com/fsevents)[fsevents / fsevents](https://github.com/fsevents/fsevents) `~ 2.1.2`
+
+[![@gulpjs**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)](https://github.com/gulpjs)[gulpjs / glob-parent](https://github.com/gulpjs/glob-parent) `~ 5.1.0`
+
+[![@sindresorhus**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)](https://github.com/sindresorhus)[sindresorhus / is-binary-path](https://github.com/sindresorhus/is-binary-path) `~ 2.1.0`
+
+[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / is-glob](https://github.com/micromatch/is-glob) `~ 4.0.1`
+
+[![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 7.0.0`
+
+[![@jonschlinkert**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)](https://github.com/jonschlinkert)[jonschlinkert / normalize-path](https://github.com/jonschlinkert/normalize-path) `~ 3.0.0`
+
+[![@istanbuljs**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)](https://github.com/istanbuljs)[istanbuljs / nyc](https://github.com/istanbuljs/nyc) `^ 15.0.0`
+
+[![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / readdirp](https://github.com/paulmillr/readdirp) `~ 3.4.0`
+
+[![@isaacs**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)](https://github.com/isaacs)[isaacs / rimraf](https://github.com/isaacs/rimraf) `^ 3.0.0`
+
+[![@sinonjs**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)](https://github.com/sinonjs)[sinonjs / sinon](https://github.com/sinonjs/sinon) `^ 9.0.1`
+
+[![@domenic**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)](https://github.com/domenic)[domenic / sinon-chai](https://github.com/domenic/sinon-chai) `^ 3.3.0`
+
+[![@anodynos**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)](https://github.com/anodynos)[anodynos / upath](https://github.com/anodynos/upath) `^ 1.2.0`
+
+[![@JedWatson**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)](https://github.com/JedWatson)[JedWatson / classnames](https://github.com/JedWatson/classnames) `2.2.6`
+
+[![@bestiejs**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js ](https://github.com/bestiejs/benchmark.js)benchmark
+`^ 1.0.0`
+
+[![@browserify**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)](https://github.com/browserify)[browserify / browserify](https://github.com/browserify/browserify) `^ 14.1.0`
+
+[![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 2.1.0`
+
+[![@jeromedecoster**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)](https://github.com/jeromedecoster)[jeromedecoster / opn-cli](https://github.com/jeromedecoster/opn-cli) `^ 3.1.0`
+
+[![@documentationjs**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)](https://github.com/documentationjs)[documentationjs / documentation](https://github.com/documentationjs/documentation) `^ 13.2.5`
+
+[![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel ](https://github.com/babel/babel)@babel/core
+`7.12.3`
+
+[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy ](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
+</details>
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 <details>
 
+<<<<<<< HEAD
 <summary>Bash Commands</summary>
+=======
+## Docs Structure:
+
+<details>
+<summary> Docs Structure  </summary>
+
+```
+├── blog
+│   ├── 300-react-questions.md
+│   ├── awesome-graphql.md
+│   ├── big-o-complexity.md
+│   ├── blog-archive.md
+│   ├── blogwcomments.md
+│   ├── data-structures.md
+│   ├── flow-control-in-python.md
+│   ├── functions-in-python.md
+│   ├── git-gateway.md
+│   ├── index.md
+│   ├── interview-questions-js.md
+│   ├── netlify-cms.md
+│   ├── platform-docs.md
+│   ├── python-for-js-dev.md
+│   ├── python-resources.md
+│   ├── web-dev-trends.md
+│   └── web-scraping.md
+├── docs
+│   ├── about
+│   │   ├── eng-portfolio.md
+│   │   ├── ideas-for-this-website.md
+│   │   ├── index.md
+│   │   ├── intrests.md
+│   │   ├── job-search.md
+│   │   └── resume.md
+│   ├── articles
+│   │   ├── basic-web-dev.md
+│   │   ├── buffers.md
+│   │   ├── dev-dep.md
+│   │   ├── event-loop.md
+│   │   ├── fs-module.md
+│   │   ├── how-the-web-works.md
+│   │   ├── http.md
+│   │   ├── index.md
+│   │   ├── install.md
+│   │   ├── intro.md
+│   │   ├── modules.md
+│   │   ├── nextjs.md
+│   │   ├── node-api-express.md
+│   │   ├── node-cli-args.md
+│   │   ├── node-common-modules.md
+│   │   ├── node-env-variables.md
+│   │   ├── node-js-language.md
+│   │   ├── node-package-manager.md
+│   │   ├── node-repl.md
+│   │   ├── node-run-cli.md
+│   │   ├── nodejs.md
+│   │   ├── nodevsbrowser.md
+│   │   ├── npm.md
+│   │   ├── npx.md
+│   │   ├── os-module.md
+│   │   ├── reading-files.md
+│   │   ├── semantic-html.md
+│   │   ├── semantic.md
+│   │   ├── the-uniform-resource-locator-(url).md
+│   │   ├── understanding-firebase.md
+│   │   ├── v8.md
+│   │   ├── web-standards-checklist.md
+│   │   ├── webdev-tools.md
+│   │   └── writing-files.md
+│   ├── audio
+│   │   ├── audio-feature-extraction.md
+│   │   ├── audio.md
+│   │   ├── dfft.md
+│   │   ├── discrete-fft.md
+│   │   ├── dtw-python-explained.md
+│   │   ├── dynamic-time-warping.md
+│   │   ├── index.md
+│   │   └── web-audio-api.md
+│   ├── career
+│   │   ├── dev-interview.md
+│   │   ├── index.md
+│   │   ├── interview-dos-n-donts.md
+│   │   └── job-boards.md
+│   ├── community
+│   │   ├── an-open-letter-2-future-developers.md
+│   │   ├── index.md
+│   │   └── video-chat.md
+│   ├── content
+│   │   ├── algo.md
+│   │   ├── archive.md
+│   │   ├── gatsby-Queries-Mutations.md
+│   │   ├── history-api.md
+│   │   ├── index.md
+│   │   ├── main-projects.md
+│   │   └── trouble-shooting.md
+│   ├── data-structures
+│   │   └── index.md
+│   ├── docs
+│   │   ├── appendix.md
+│   │   ├── art-of-command-line.md
+│   │   ├── bash.md
+│   │   ├── content.md
+│   │   ├── css.md
+│   │   ├── data-structures-docs.md
+│   │   ├── es-6-features.md
+│   │   ├── git-reference.md
+│   │   ├── git-repos.md
+│   │   ├── html-spec.md
+│   │   ├── index.md
+│   │   ├── markdown.md
+│   │   ├── no-whiteboarding.md
+│   │   ├── node-docs-complete.md
+│   │   ├── node-docs-full.md
+│   │   ├── regex-in-js.md
+│   │   └── sitemap.md
+│   ├── faq
+│   │   ├── contact.md
+│   │   ├── index.md
+│   │   └── plug-ins.md
+│   ├── gists.md
+│   ├── index.md
+│   ├── interact
+│   │   ├── callstack-visual.md
+│   │   ├── clock.md
+│   │   ├── index.md
+│   │   ├── jupyter-notebooks.md
+│   │   ├── other-sites.md
+│   │   └── video-chat.md
+│   ├── interview
+│   │   ├── index.md
+│   │   ├── job-search-nav.md
+│   │   └── review-concepts.md
+│   ├── javascript
+│   │   ├── arrow-functions.md
+│   │   ├── asyncjs.md
+│   │   ├── await-keyword.md
+│   │   ├── bigo.md
+│   │   ├── clean-code.md
+│   │   ├── constructor-functions.md
+│   │   ├── index.md
+│   │   ├── promises.md
+│   │   ├── review.md
+│   │   └── this-is-about-this.md
+│   ├── leetcode
+│   │   └── index.md
+│   ├── privacy-policy.md
+│   ├── projects
+│   │   ├── embeded-websites.md
+│   │   ├── index.md
+│   │   ├── list-of-projects.md
+│   │   ├── mini-projects.md
+│   │   └── my-websites.md
+│   ├── python
+│   │   ├── at-length.md
+│   │   ├── cheat-sheet.md
+│   │   ├── comprehensive-guide.md
+│   │   ├── examples.md
+│   │   ├── flow-control.md
+│   │   ├── functions.md
+│   │   ├── google-sheets-api.md
+│   │   ├── index.md
+│   │   ├── intro-for-js-devs.md
+│   │   ├── python-ds.md
+│   │   └── snippets.md
+│   ├── quick-reference
+│   │   ├── Emmet.md
+│   │   ├── all-emojis.md
+│   │   ├── create-react-app.md
+│   │   ├── git-bash.md
+│   │   ├── git-tricks.md
+│   │   ├── google-firebase.md
+│   │   ├── heroku-error-codes.md
+│   │   ├── index.md
+│   │   ├── installation.md
+│   │   ├── markdown-dropdowns.md
+│   │   ├── minifiction.md
+│   │   ├── new-repo-instructions.md
+│   │   ├── psql-setup.md
+│   │   ├── pull-request-rubric.md
+│   │   ├── quick-links.md
+│   │   ├── topRepos.md
+│   │   ├── understanding-path.md
+│   │   └── vscode-themes.md
+│   ├── react
+│   │   ├── ajax-n-apis.md
+│   │   ├── cheatsheet.md
+│   │   ├── createReactApp.md
+│   │   ├── demo.md
+│   │   ├── dont-use-index-as-keys.md
+│   │   ├── index.md
+│   │   ├── jsx.md
+│   │   ├── react-docs.md
+│   │   ├── react-in-depth.md
+│   │   ├── react2.md
+│   │   └── render-elements.md
+│   ├── reference
+│   │   ├── awesome-lists.md
+│   │   ├── awesome-static.md
+│   │   ├── bash-commands.md
+│   │   ├── bookmarks.md
+│   │   ├── embed-the-web.md
+│   │   ├── github-search.md
+│   │   ├── google-cloud.md
+│   │   ├── how-2-reinstall-npm.md
+│   │   ├── how-to-kill-a-process.md
+│   │   ├── index.md
+│   │   ├── installing-node.md
+│   │   ├── intro-to-nodejs.md
+│   │   ├── notes-template.md
+│   │   ├── psql.md
+│   │   ├── resources.md
+│   │   ├── vscode.md
+│   │   └── web-api's.md
+│   ├── search.md
+│   ├── sitemap.md
+│   ├── tips
+│   │   ├── array-methods.md
+│   │   ├── index.md
+│   │   └── insert-into-array.md
+│   ├── tools
+│   │   ├── Archive.md
+│   │   ├── data-structures.md
+│   │   ├── dev-utilities.md
+│   │   ├── index.md
+│   │   └── markdown-html.md
+│   └── tutorials
+│       ├── enviorment-setup.md
+│       └── index.md
+├── index.md
+├── privacy-policy.md
+├── readme.md
+├── showcase.md
+└── tree.md
+
+23 directories, 202 files
+
+```
+
+# SITEMAP
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ## My Commands
 
@@ -954,6 +1355,7 @@ echo '  </style>'
 
   echo "</html>"
 
+<<<<<<< HEAD
 }
 
 cmd $listing --sort=extension >>$html
@@ -1488,8 +1890,292 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 
 ```
+=======
+</details>
 
 ---
+
+---
+
+---
+
+<details>
+<summary> ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
+#
+
+---
+
+## 🚀 Quick start
+
+1.  **Create a Gatsby site.**
+
+    Use the Gatsby CLI to create a new site, specifying the default starter.
+
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
+
+1.  **Start developing.**
+
+    Navigate into your new site's directory and start it up.
+
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories you'll see in a Gatsby project.
+
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+-   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
+
+[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+---
+
+# Gatsby Project Structure | Gatsby
+
+> ## Excerpt
+>
+> Inside a Gatsby project, you may see some or all of the following folders and files: Folders /.cache Automatically generated. This folder…
+
+---
+
+Inside a Gatsby project, you may see some or all of the following folders and files:
+
+```
+/|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
+```
+
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
+
+-   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+-   **`/plugins`** This folder hosts any project-specific (“local”) plugins that aren’t published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+-   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+-   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. “src” is a convention for “source code”.
+
+    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+
+-   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
+
+-   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+-   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+-   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+-   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
+
+The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it’s common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
+
+---
+
+# Layout Components | Gatsby
+
+> ## Excerpt
+>
+> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
+
+---
+
+In this guide, you’ll learn Gatsby’s approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby’s approach to layouts
+
+Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React’s compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
+
+Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com’s layout component.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
+
+It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
+
+Here is an example of a very basic layout component at `src/components/layout.js`:
+
+```
+import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>      {children}    </div>  )}
+```
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
+
+If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
+
+```
+import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>      <h1>I’m in a layout!</h1>    </Layout>  );}
+```
+
+Repeat for every page and template that needs this layout.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
+
+As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The “top level” component is the page itself. As a result, when the “top level” component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
+
+If you need to set a wrapper component around page components that won’t get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
+
+Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
+
+# Adding Markdown Pages | Gatsby
+
+> ## Excerpt
+>
+> Gatsby can use Markdown files to create pages in your site.
+> You add plugins to read and understand folders with Markdown files and from them…
+
+---
+
+Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
+
+Here are the steps Gatsby follows for making this happen.
+
+1.  Read files into Gatsby from the filesystem
+2.  Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
+3.  Add a Markdown file
+4.  Create a Collection Route component for the Markdown files
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
+
+Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
+
+`npm install gatsby-source-filesystem`
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
+
+Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
+
+```
+module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
+```
+
+Completing the above step means that you’ve “sourced” the Markdown files from the filesystem. You can now “transform” the Markdown to HTML and the YAML frontmatter to JSON.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+
+You’ll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+
+`npm install gatsby-transformer-remark`
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+
+Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
+
+```
+module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
+```
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)Add a Markdown file
+
+Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
+
+### [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
+
+When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called “frontmatter” and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
+
+src/markdown-pages/post-1.md
+
+```
+---slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
+```
+
+What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
+
+Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
+
+src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
+
+```
+import React from "react"import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">      <div className="blog-post">        <h1>{frontmatter.title}</h1>        <h2>{frontmatter.date}</h2>        <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />      </div>    </div>  )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: { eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
+```
+
+Two things are important in the file above:
+
+1.  A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query’s result.
+
+    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
+
+2.  The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
+
+Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
+
+This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
+
+For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
+
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)Other tutorials
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
+
+</details>
 
 # 98
 
@@ -1513,6 +2199,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ---
 
+<<<<<<< HEAD
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
 ## Wiki Nav
@@ -1890,9 +2577,15 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 └── tree.md
 
 23 directories, 202 files
+=======
+# SOURCECODE:
+
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ```
 
+<<<<<<< HEAD
 # SITEMAP
 
 # [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
@@ -1900,9 +2593,15 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
 
 ### [**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
+=======
+21 directories, 119 files
+bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
 
+<<<<<<< HEAD
 ### [**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
 
 ### [**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
@@ -1910,9 +2609,363 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
 
 ### [**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
+=======
+# Source Code:
+
+<details>
+<summary> Folder Structure (src)  </summary>
+
+```
+.
+├── Combined_____-_____Doc.md
+├── components
+│   ├── ActionLink.js
+│   ├── CtaButtons.js
+│   ├── DarkToggle
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── DocsMenu.js
+│   ├── DocsSubmenu.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Icon.js
+│   ├── Layout.js
+│   ├── SectionContent.js
+│   ├── SectionCta.js
+│   ├── SectionDocs.js
+│   ├── SectionGrid.js
+│   ├── SectionHero.js
+│   ├── Submenu.js
+│   ├── global.css
+│   └── index.js
+├── data
+│   └── doc_sections.yml
+├── hooks
+│   ├── addScript.js
+│   ├── index.js
+│   ├── useDarkMode.js
+│   ├── useEventListener.js
+│   ├── useMediaQuery.js
+│   ├── useOnClickOutside.js
+│   ├── useQueryParam.js
+│   ├── useSize.js
+│   └── useStorage.js
+├── html.js
+├── pages
+│   ├── blog
+│   │   ├── 300-react-questions.md
+│   │   ├── awesome-graphql.md
+│   │   ├── big-o-complexity.md
+│   │   ├── blog-archive.md
+│   │   ├── blogwcomments.md
+│   │   ├── data-structures.md
+│   │   ├── flow-control-in-python.md
+│   │   ├── functions-in-python.md
+│   │   ├── git-gateway.md
+│   │   ├── index.md
+│   │   ├── interview-questions-js.md
+│   │   ├── netlify-cms.md
+│   │   ├── platform-docs.md
+│   │   ├── python-for-js-dev.md
+│   │   ├── python-resources.md
+│   │   ├── web-dev-trends.md
+│   │   └── web-scraping.md
+│   ├── docs
+│   │   ├── about
+│   │   │   ├── eng-portfolio.md
+│   │   │   ├── ideas-for-this-website.md
+│   │   │   ├── index.md
+│   │   │   ├── intrests.md
+│   │   │   ├── job-search.md
+│   │   │   └── resume.md
+│   │   ├── articles
+│   │   │   ├── basic-web-dev.md
+│   │   │   ├── buffers.md
+│   │   │   ├── dev-dep.md
+│   │   │   ├── event-loop.md
+│   │   │   ├── fs-module.md
+│   │   │   ├── how-the-web-works.md
+│   │   │   ├── http.md
+│   │   │   ├── index.md
+│   │   │   ├── install.md
+│   │   │   ├── intro.md
+│   │   │   ├── modules.md
+│   │   │   ├── nextjs.md
+│   │   │   ├── node-api-express.md
+│   │   │   ├── node-cli-args.md
+│   │   │   ├── node-common-modules.md
+│   │   │   ├── node-env-variables.md
+│   │   │   ├── node-js-language.md
+│   │   │   ├── node-package-manager.md
+│   │   │   ├── node-repl.md
+│   │   │   ├── node-run-cli.md
+│   │   │   ├── nodejs.md
+│   │   │   ├── nodevsbrowser.md
+│   │   │   ├── npm.md
+│   │   │   ├── npx.md
+│   │   │   ├── os-module.md
+│   │   │   ├── reading-files.md
+│   │   │   ├── semantic-html.md
+│   │   │   ├── semantic.md
+│   │   │   ├── the-uniform-resource-locator-(url).md
+│   │   │   ├── understanding-firebase.md
+│   │   │   ├── v8.md
+│   │   │   ├── web-standards-checklist.md
+│   │   │   ├── webdev-tools.md
+│   │   │   └── writing-files.md
+│   │   ├── audio
+│   │   │   ├── audio-feature-extraction.md
+│   │   │   ├── audio.md
+│   │   │   ├── dfft.md
+│   │   │   ├── discrete-fft.md
+│   │   │   ├── dtw-python-explained.md
+│   │   │   ├── dynamic-time-warping.md
+│   │   │   ├── index.md
+│   │   │   └── web-audio-api.md
+│   │   ├── career
+│   │   │   ├── dev-interview.md
+│   │   │   ├── index.md
+│   │   │   ├── interview-dos-n-donts.md
+│   │   │   └── job-boards.md
+│   │   ├── community
+│   │   │   ├── an-open-letter-2-future-developers.md
+│   │   │   ├── index.md
+│   │   │   └── video-chat.md
+│   │   ├── content
+│   │   │   ├── algo.md
+│   │   │   ├── archive.md
+│   │   │   ├── gatsby-Queries-Mutations.md
+│   │   │   ├── history-api.md
+│   │   │   ├── index.md
+│   │   │   ├── main-projects.md
+│   │   │   └── trouble-shooting.md
+│   │   ├── data-structures
+│   │   │   └── index.md
+│   │   ├── docs
+│   │   │   ├── appendix.md
+│   │   │   ├── art-of-command-line.md
+│   │   │   ├── bash.md
+│   │   │   ├── content.md
+│   │   │   ├── css.md
+│   │   │   ├── data-structures-docs.md
+│   │   │   ├── es-6-features.md
+│   │   │   ├── git-reference.md
+│   │   │   ├── git-repos.md
+│   │   │   ├── html-spec.md
+│   │   │   ├── index.md
+│   │   │   ├── markdown.md
+│   │   │   ├── no-whiteboarding.md
+│   │   │   ├── node-docs-complete.md
+│   │   │   ├── node-docs-full.md
+│   │   │   ├── regex-in-js.md
+│   │   │   └── sitemap.md
+│   │   ├── faq
+│   │   │   ├── contact.md
+│   │   │   ├── index.md
+│   │   │   └── plug-ins.md
+│   │   ├── gists.md
+│   │   ├── index.md
+│   │   ├── interact
+│   │   │   ├── callstack-visual.md
+│   │   │   ├── clock.md
+│   │   │   ├── index.md
+│   │   │   ├── jupyter-notebooks.md
+│   │   │   ├── other-sites.md
+│   │   │   └── video-chat.md
+│   │   ├── interview
+│   │   │   ├── index.md
+│   │   │   ├── job-search-nav.md
+│   │   │   └── review-concepts.md
+│   │   ├── javascript
+│   │   │   ├── arrow-functions.md
+│   │   │   ├── asyncjs.md
+│   │   │   ├── await-keyword.md
+│   │   │   ├── bigo.md
+│   │   │   ├── clean-code.md
+│   │   │   ├── constructor-functions.md
+│   │   │   ├── index.md
+│   │   │   ├── promises.md
+│   │   │   ├── review.md
+│   │   │   └── this-is-about-this.md
+│   │   ├── leetcode
+│   │   │   └── index.md
+│   │   ├── privacy-policy.md
+│   │   ├── projects
+│   │   │   ├── embeded-websites.md
+│   │   │   ├── index.md
+│   │   │   ├── list-of-projects.md
+│   │   │   ├── mini-projects.md
+│   │   │   └── my-websites.md
+│   │   ├── python
+│   │   │   ├── at-length.md
+│   │   │   ├── cheat-sheet.md
+│   │   │   ├── comprehensive-guide.md
+│   │   │   ├── examples.md
+│   │   │   ├── flow-control.md
+│   │   │   ├── functions.md
+│   │   │   ├── google-sheets-api.md
+│   │   │   ├── index.md
+│   │   │   ├── intro-for-js-devs.md
+│   │   │   ├── python-ds.md
+│   │   │   └── snippets.md
+│   │   ├── quick-reference
+│   │   │   ├── Emmet.md
+│   │   │   ├── all-emojis.md
+│   │   │   ├── create-react-app.md
+│   │   │   ├── git-bash.md
+│   │   │   ├── git-tricks.md
+│   │   │   ├── google-firebase.md
+│   │   │   ├── heroku-error-codes.md
+│   │   │   ├── index.md
+│   │   │   ├── installation.md
+│   │   │   ├── markdown-dropdowns.md
+│   │   │   ├── minifiction.md
+│   │   │   ├── new-repo-instructions.md
+│   │   │   ├── psql-setup.md
+│   │   │   ├── pull-request-rubric.md
+│   │   │   ├── quick-links.md
+│   │   │   ├── topRepos.md
+│   │   │   ├── understanding-path.md
+│   │   │   └── vscode-themes.md
+│   │   ├── react
+│   │   │   ├── ajax-n-apis.md
+│   │   │   ├── cheatsheet.md
+│   │   │   ├── createReactApp.md
+│   │   │   ├── demo.md
+│   │   │   ├── dont-use-index-as-keys.md
+│   │   │   ├── index.md
+│   │   │   ├── jsx.md
+│   │   │   ├── react-docs.md
+│   │   │   ├── react-in-depth.md
+│   │   │   ├── react2.md
+│   │   │   └── render-elements.md
+│   │   ├── reference
+│   │   │   ├── awesome-lists.md
+│   │   │   ├── awesome-static.md
+│   │   │   ├── bash-commands.md
+│   │   │   ├── bookmarks.md
+│   │   │   ├── embed-the-web.md
+│   │   │   ├── github-search.md
+│   │   │   ├── google-cloud.md
+│   │   │   ├── how-2-reinstall-npm.md
+│   │   │   ├── how-to-kill-a-process.md
+│   │   │   ├── index.md
+│   │   │   ├── installing-node.md
+│   │   │   ├── intro-to-nodejs.md
+│   │   │   ├── notes-template.md
+│   │   │   ├── psql.md
+│   │   │   ├── resources.md
+│   │   │   ├── vscode.md
+│   │   │   └── web-api's.md
+│   │   ├── search.md
+│   │   ├── sitemap.md
+│   │   ├── tips
+│   │   │   ├── array-methods.md
+│   │   │   ├── index.md
+│   │   │   └── insert-into-array.md
+│   │   ├── tools
+│   │   │   ├── Archive.md
+│   │   │   ├── data-structures.md
+│   │   │   ├── dev-utilities.md
+│   │   │   ├── index.md
+│   │   │   └── markdown-html.md
+│   │   └── tutorials
+│   │       ├── enviorment-setup.md
+│   │       └── index.md
+│   ├── index.md
+│   ├── privacy-policy.md
+│   ├── readme.md
+│   └── showcase.md
+├── sass
+│   ├── imports
+│   │   ├── _animations.scss
+│   │   ├── _buttons.scss
+│   │   ├── _docs.scss
+│   │   ├── _footer.scss
+│   │   ├── _forms.scss
+│   │   ├── _functions.scss
+│   │   ├── _general.scss
+│   │   ├── _header.scss
+│   │   ├── _helpers.scss
+│   │   ├── _icons.scss
+│   │   ├── _palettes.scss
+│   │   ├── _posts.scss
+│   │   ├── _prism.scss
+│   │   ├── _reset.scss
+│   │   ├── _sections.scss
+│   │   ├── _structure.scss
+│   │   ├── _tables.scss
+│   │   └── _variables.scss
+│   └── main.scss
+├── templates
+│   ├── advanced.js
+│   ├── blog.js
+│   ├── docs.js
+│   ├── page.js
+│   ├── post.js
+│   └── templates.md
+└── utils
+    ├── attribute.js
+    ├── blm-badge.js
+    ├── classNames.js
+    ├── cycler.js
+    ├── getData.js
+    ├── getPage.js
+    ├── getPageByFilePath.js
+    ├── getPages.js
+    ├── htmlToReact.js
+    ├── index.js
+    ├── link.js
+    ├── markdownify.js
+    ├── pathJoin.js
+    ├── toStyleObj.js
+    ├── toUrl.js
+    └── withPrefix.js
+
+32 directories, 272 files
+```
+
+</details>
+
+<details>
+<summary> Click To See Component Sourcecode  </summary>
+
+# Component Structure:
+
+```
+.
+├── ActionLink.js
+├── CtaButtons.js
+├── DarkToggle
+│   ├── index.js
+│   └── styles.js
+├── DocsMenu.js
+├── DocsSubmenu.js
+├── Footer.js
+├── Header.js
+├── Icon.js
+├── Layout.js
+├── SectionContent.js
+├── SectionCta.js
+├── SectionDocs.js
+├── SectionGrid.js
+├── SectionHero.js
+├── Submenu.js
+├── global.css
+└── index.js
+
+```
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
 
+<<<<<<< HEAD
 ### [**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
 
 ### [**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
@@ -1922,9 +2975,49 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
 
 ### [**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
+=======
+export default class ActionLink extends React.Component {
+    render() {
+        let action = _.get(this.props, 'action', null);
+        return (
+            <Link
+                to={withPrefix(_.get(action, 'url', null))}
+                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
+                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
+                    ? {
+                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
+                      }
+                    : null)}
+                className={classNames({
+                    button: _.get(action, 'style', null) !== 'link',
+                    'button-secondary': _.get(action, 'style', null) === 'secondary',
+                    'button-icon': _.get(action, 'style', null) === 'icon'
+                })}
+            >
+                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
+                    <React.Fragment>
+                        <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
+                        <span className="screen-reader-text">{_.get(action, 'label', null)}</span>
+                    </React.Fragment>
+                ) : (
+                    _.get(action, 'label', null)
+                )}
+            </Link>
+        );
+    }
+}
+```
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
 
+<<<<<<< HEAD
 ### [**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
 
 ### [**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
@@ -1932,6 +3025,32 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
 
 ### [**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
+=======
+export default class CtaButtons extends React.Component {
+    render() {
+        let actions = _.get(this.props, 'actions', null);
+        return _.map(actions, (action, action_idx) => (
+            <Link
+                key={action_idx}
+                to={withPrefix(_.get(action, 'url', null))}
+                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
+                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
+                    ? {
+                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
+                      }
+                    : null)}
+                className={classNames({
+                    button: _.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
+                    'button-secondary': _.get(action, 'style', null) === 'secondary'
+                })}
+            >
+                {_.get(action, 'label', null)}
+            </Link>
+        ));
+    }
+}
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
 
@@ -1943,11 +3062,17 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
 
 ### [**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
 
 ### [**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
 
@@ -1955,6 +3080,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
 
 ### [**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
@@ -1966,39 +3092,355 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
 
 ### [**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
+=======
+```js
+import _ from 'lodash';
+import React from 'react';
+import { htmlToReact } from '../utils';
+import ActionLink from './ActionLink';
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
+export default class Footer extends React.Component {
+    render() {
+        return (
+            <footer id="colophon" className="site-footer outer">
+                <div id="search"></div>
+                <div>
+                    <center>
+                        <br />
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+                        <div id="search"> {Script} </div>
+                        <br />
+                        <table cellPadding={0} cellSpacing={0} border={0}>
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style={{
+                                            fontFamily: 'Arial, Helvetica, sans-serif',
+                                            fontSize: '7.5pt'
+                                        }}
+                                    >
+                                        <center>
+                                            <table
+                                                width="95%"
+                                                cellPadding={0}
+                                                cellSpacing={0}
+                                                border={0}
+                                                style={{
+                                                    fontFamily: 'Arial, Helvetica, sans-serif',
+                                                    fontSize: '7.5pt'
+                                                }}
+                                            >
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="left"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">
+                                                                index
+                                                            </a>
+                                                        </td>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="center"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">
+                                                                sitemap
+                                                            </a>
+                                                        </td>
+                                                        <td
+                                                            style={{
+                                                                fontFamily: 'Arial, Helvetica, sans-serif',
+                                                                fontSize: '7.5pt'
+                                                            }}
+                                                            align="right"
+                                                        >
+                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&pid=a">
+                                                                advanced
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+
+                                        <form
+                                            style={{
+                                                margin: '0px',
+                                                marginTop: '2px'
+                                            }}
+                                            action="https://search.freefind.com/find.html"
+                                            method="get"
+                                            acceptCharset="utf-8"
+                                            target="_self"
+                                        >
+                                            <input type="hidden" name="si" defaultValue={14588965} />
+                                            <input type="hidden" name="pid" defaultValue="r" />
+                                            <input type="hidden" name="n" defaultValue={0} />
+                                            <input type="hidden" name="_charset_" defaultValue />
+                                            <input type="hidden" name="bcd" defaultValue="÷" />
+                                            <input type="text" name="query" size={15} />
+                                            <input type="submit" defaultValue="search" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style={{
+                                            textAlign: 'center',
+                                            fontFamily: 'Arial, Helvetica, sans-serif',
+                                            fontSize: '7.5pt',
+                                            paddingTop: '4px'
+                                        }}
+                                    >
+                                        <a
+                                            style={{
+                                                textDecoration: 'none',
+                                                color: 'transparent'
+                                            }}
+                                            href="https://www.freefind.com"
+                                            rel="nofollow"
+                                        >
+                                            search engine
+                                        </a>
+                                        <a
+                                            style={{
+                                                textDecoration: 'none',
+                                                color: 'transparent'
+                                            }}
+                                            href="https://www.freefind.com"
+                                            rel="nofollow"
+                                        >
+                                            by
+                                            <span style={{ color: 'transparent' }}>freefind</span>
+                                        </a>
+                                        {
+                                            <iframe
+                                                src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+                                                frameborder="0"
+                                                id="social-embed"
+                                                width="100%!important"
+                                            ></iframe>
+                                        }
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                            Save to PDF
+                        </a>
+                    </center>
+                </div>
+
+                <div className="inner">
+                    <div id="search" className="inner"></div>
+                    <div className="site-footer-inside">
+                        <p className="site-info">
+                            {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
+                                <span className="copyright">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
+                            )}
+                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
+                                <ActionLink key={action_idx} {...this.props} action={action} />
+                            ))}{' '}
+                        </p>
+                        {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
+                            <div className="social-links">
+                                {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
+                                    <ActionLink key={action_idx} {...this.props} action={action} />
+                                ))}{' '}
+                            </div>
+                        )}{' '}
+                    </div>
+                </div>
+                <div id="search"></div>
+            </footer>
+        );
+    }
+}
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
 
 ### [**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
 
 ### [**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
+=======
+export default class Header extends React.Component {
+    render() {
+        return (
+            <header id="masthead" className="site-header outer">
+                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
+
+                <br />
+                <div className="inner">
+                    <div className="site-header-inside">
+                        <div className="site-branding">
+                            {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
+                                <p className="site-logo">
+                                    <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
+                                        <img
+                                            src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}
+                                            alt={_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img_alt', null)}
+                                        />
+                                    </Link>
+                                </p>
+                            ) : (
+                                <p className="site-title">
+                                    {' '}
+                                    WebDevHub
+                                    <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
+                                        {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
+                                    </Link>
+                                </p>
+                            )}
+                        </div>
+                        <div id="search" className="inner"></div>
+                        {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
+                            <React.Fragment>
+                                <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
+                                    <div className="site-nav-inside">
+                                        <button id="menu-close" className="menu-toggle">
+                                            <span className="screen-reader-text">Open Menu</span>
+                                            <span className="icon-close" aria-hidden="true" />
+                                        </button>
+                                        <ul className="menu">
+                                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null), (action, action_idx) => {
+                                                let page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
+                                                let action_url = _.trim(_.get(action, 'url', null), '/');
+                                                return (
+                                                    <li
+                                                        key={action_idx}
+                                                        className={classNames('menu-item', {
+                                                            'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
+                                                            current: page_url === action_url,
+                                                            'menu-button': _.get(action, 'style', null) !== 'link'
+                                                        })}
+                                                    >
+                                                        <ActionLink {...this.props} action={action} />
+                                                        {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
+                                                            <React.Fragment>
+                                                                <button className="submenu-toggle">
+                                                                    <span className="icon-angle-right" aria-hidden="true" />
+                                                                    <span className="screen-reader-text">Sub-menu</span>
+                                                                </button>
+                                                                <Submenu
+                                                                    {...this.props}
+                                                                    submenu={_.get(action, 'subnav_links', null)}
+                                                                    menu_class={'submenu'}
+                                                                    page={this.props.pageContext}
+                                                                />
+                                                            </React.Fragment>
+                                                        )}
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <button id="menu-open" className="menu-toggle">
+                                    <span className="screen-reader-text">Close Menu</span>
+                                    <span className="icon-menu" aria-hidden="true" />
+                                </button>
+                            </React.Fragment>
+                        )}
+                    </div>
+                </div>
+
+                <div>
+                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+                        <svg
+                            aria-hidden="true"
+                            width={40}
+                            height={40}
+                            viewBox="0 0 250 250"
+                            style={{
+                                zIndex: 100000,
+                                fill: 'black',
+                                color: '#fff',
+                                position: 'fixed',
+                                top: '0px',
+                                border: 0,
+                                left: '0px',
+                                transform: 'scale(-1.5, 1.5)'
+                            }}
+                        >
+                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                            <path
+                                className="octo-arm"
+                                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                                fill="currentColor"
+                                style={{ transformOrigin: '130px 106px' }}
+                            ></path>
+                            <path
+                                className="octo-body"
+                                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+        );
+    }
+}
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
 
 ### [**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
 
 ### [**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
 
 ### [**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
 
 ### [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
 
 ### [**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
+=======
+```js
+import React from 'react';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
 
 ### [**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
@@ -2010,6 +3452,69 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
 
 ### [**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
+=======
+import { withPrefix, attribute } from '../utils';
+import '../sass/main.scss';
+import Header from './Header';
+import Footer from './Footer';
+import addScript from './../hooks/addScript';
+const Script = (props) => {
+    importScript('./../hooks/addScript.js');
+};
+export default class Body extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <Helmet>
+                    <title>
+                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
+                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
+                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
+                    </title>
+                    <meta charSet="utf-8" />
+                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
+                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
+                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
+                        <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')} />
+                    )}
+                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
+                        let key_name = _.get(meta, 'keyName', null) || 'name';
+                        return _.get(meta, 'relativeUrl', null) ? (
+                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
+                                (() => {
+                                    let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
+                                    let rel_url = withPrefix(_.get(meta, 'value', null));
+                                    let full_url = domain + rel_url;
+                                    return <meta key={meta_idx} {...attribute(key_name, _.get(meta, 'name', null))} content={full_url} />;
+                                })()
+                        ) : (
+                            <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
+                        );
+                    })}
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
+                        <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
+                    )}
+                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
+                </Helmet>
+                <div id="page" className="site">
+                    <Header {...this.props} />
+                    {/* INSERT SEARCH BAR HERE */}
+                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" /> */}
+                    <main id="content" className="site-content">
+                        {this.props.children}
+                    </main>
+                    <Footer {...this.props} />
+                </div>
+            </React.Fragment>
+        );
+    }
+}
+```
+
+---
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
 
@@ -2019,11 +3524,17 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
 
 ### [**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
 
 ### [**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
 
@@ -2031,11 +3542,17 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
 
 ### [**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
 
 ### [**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
 
@@ -2043,11 +3560,17 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
 
 ### [**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
 
 ### [**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
 
@@ -2055,11 +3578,17 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
 
 ### [**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
 
 ### [**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
 
@@ -2067,16 +3596,23 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ### [**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
 
 ### [**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
 
 ### [**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
 
 ### [**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
 
 ### [**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
@@ -2088,9 +3624,64 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
 
 ### [**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
+=======
+```js
+import ActionLink from './ActionLink';
+import CtaButtons from './CtaButtons';
+import DocsMenu from './DocsMenu';
+import DocsSubmenu from './DocsSubmenu';
+import Footer from './Footer';
+import Header from './Header';
+import Icon from './Icon';
+import SectionContent from './SectionContent';
+import SectionCta from './SectionCta';
+import SectionDocs from './SectionDocs';
+import SectionGrid from './SectionGrid';
+import SectionHero from './SectionHero';
+import Submenu from './Submenu';
+import Layout from './Layout';
+import addScript from './../hooks/addScript';
+export {
+    ActionLink,
+    CtaButtons,
+    DocsMenu,
+    DocsSubmenu,
+    Footer,
+    Header,
+    Icon,
+    SectionContent,
+    SectionCta,
+    SectionDocs,
+    SectionGrid,
+    SectionHero,
+    Submenu,
+    addScript,
+    Layout
+};
+
+export default {
+    ActionLink,
+    CtaButtons,
+    DocsMenu,
+    DocsSubmenu,
+    Footer,
+    Header,
+    Icon,
+    SectionContent,
+    SectionCta,
+    SectionDocs,
+    SectionGrid,
+    SectionHero,
+    Submenu,
+    Layout,
+    addScript
+};
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
 
 ### [**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
@@ -2168,9 +3759,220 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ### [**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
 
 ### [**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
+=======
+<details>
+<summary> Click To See Template Sourcecode  </summary>
+
+# Templates
+
+```
+
+├── advanced.js
+├── blog.js
+├── docs.js
+├── page.js
+└── post.js
+```
+
+```js
+import React from 'react';
+import _ from 'lodash';
+import { graphql } from 'gatsby';
+
+import components, { Layout } from '../components/index';
+
+// this minimal GraphQL query ensures that when 'gatsby develop' is running,
+// any changes to content files are reflected in browser
+export const query = graphql`
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
+    }
+`;
+
+export default class Advanced extends React.Component {
+    render() {
+        return (
+            <Layout {...this.props}>
+                {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
+                    let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
+                    let Component = components[component];
+                    return <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />;
+                })}
+            </Layout>
+        );
+    }
+}
+```
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+import moment from 'moment-strftime';
+import { graphql } from 'gatsby';
+
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, getPages, Link } from '../utils';
+
+// this minimal GraphQL query ensures that when 'gatsby develop' is running,
+// any changes to content files are reflected in browser
+export const query = graphql`
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
+    }
+`;
+
+export default class Blog extends React.Component {
+    render() {
+        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
+        return (
+            <Layout {...this.props}>
+                <header className="page-header has-gradient outer">
+                    {_.get(this.props, 'pageContext.frontmatter.image', null) && (
+                        <div
+                            className="bg-img"
+                            style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
+                        />
+                    )}
+                    <div className="inner-sm">
+                        <h1 className="page-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                        {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                            <p className="page-subtitle">{_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
+                        )}
+                    </div>
+                </header>
+                <div className="inner-md outer">
+                    <div className="post-feed">
+                        {_.map(display_posts, (post, post_idx) => (
+                            <article key={post_idx} className="post">
+                                {_.get(post, 'frontmatter.thumb_image', null) && (
+                                    <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
+                                        <img
+                                            src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))}
+                                            alt={_.get(this.props, 'pageContext.frontmatter.thumb_image_alt', null)}
+                                        />
+                                    </Link>
+                                )}
+                                <header className="post-header">
+                                    <div className="post-meta">
+                                        <time className="published" dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>
+                                            {moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}
+                                        </time>
+                                    </div>
+                                    <h2 className="post-title line-left">
+                                        <Link to={withPrefix(_.get(post, 'url', null))} rel="bookmark">
+                                            {_.get(post, 'frontmatter.title', null)}
+                                        </Link>
+                                    </h2>
+                                </header>
+                                {_.get(post, 'frontmatter.excerpt', null) && (
+                                    <React.Fragment>
+                                        <p className="post-excerpt">{_.get(post, 'frontmatter.excerpt', null)}</p>
+                                        {_.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true &&
+                                            _.get(this.props, 'pageContext.frontmatter.more_link_text', null) && (
+                                                <p className="read-more">
+                                                    <Link className="read-more-link" to={withPrefix(_.get(post, 'url', null))}>
+                                                        {_.get(this.props, 'pageContext.frontmatter.more_link_text', null)}
+                                                    </Link>
+                                                </p>
+                                            )}
+                                    </React.Fragment>
+                                )}
+                            </article>
+                        ))}
+                    </div>
+                </div>
+            </Layout>
+        );
+    }
+}
+```
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+import { graphql } from 'gatsby';
+
+import { Layout } from '../components/index';
+import DocsMenu from '../components/DocsMenu';
+import { htmlToReact, getPages, Link, withPrefix } from '../utils';
+
+// this minimal GraphQL query ensures that when 'gatsby develop' is running,
+// any changes to content files are reflected in browser
+export const query = graphql`
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
+    }
+`;
+
+export default class Docs extends React.Component {
+    render() {
+        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
+        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
+        return (
+            <Layout {...this.props}>
+                <div className="inner outer">
+                    <div className="docs-content">
+                        <DocsMenu {...this.props} page={this.props.pageContext} site={this.props.pageContext.site} />
+                        <article className="post type-docs">
+                            <div className="post-inside">
+                                <header className="post-header">
+                                    <h1 className="post-title line-left">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                                </header>
+                                <div className="post-content">
+                                    {htmlToReact(_.get(this.props, 'pageContext.html', null))}
+                                    {root_docs_path !== current_page_url &&
+                                        (() => {
+                                            let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
+                                            let child_count = _.size(child_pages);
+                                            let has_children = child_count > 0 ? true : false;
+                                            return (
+                                                <React.Fragment>
+                                                    {has_children && (
+                                                        <ul id="docs-section-items" className="docs-section-items">
+                                                            {_.map(child_pages, (child_page, child_page_idx) => (
+                                                                <li key={child_page_idx} className="docs-section-item">
+                                                                    <Link to={withPrefix(_.get(child_page, 'url', null))} className="docs-item-link">
+                                                                        {_.get(child_page, 'frontmatter.title', null)}
+                                                                        <span className="icon-angle-right" aria-hidden="true" />
+                                                                    </Link>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    )}
+                                                </React.Fragment>
+                                            );
+                                        })()}
+                                </div>
+                            </div>
+                        </article>
+                        <nav id="page-nav" className="page-nav">
+                            <div id="page-nav-inside" className="page-nav-inside sticky">
+                                <h2 className="page-nav-title">Jump to Section</h2>
+                                <div id="page-nav-link-container" />
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </Layout>
+        );
+    }
+}
+```
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 
 ### [**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
 
+<<<<<<< HEAD
 ### [**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
 
 ### [**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
@@ -4327,4 +6129,112 @@ export default class Post extends React.Component {
 }
 ```
 
+=======
+```js
+import React from 'react';
+import _ from 'lodash';
+import { graphql } from 'gatsby';
+
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, htmlToReact } from '../utils';
+
+// this minimal GraphQL query ensures that when 'gatsby develop' is running,
+// any changes to content files are reflected in browser
+export const query = graphql`
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
+    }
+`;
+
+export default class Page extends React.Component {
+    render() {
+        return (
+            <Layout {...this.props}>
+                <article className="post post-full">
+                    <header className="post-header has-gradient outer">
+                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
+                            <div
+                                className="bg-img"
+                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
+                            />
+                        )}
+                        <div className="inner-sm">
+                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                <div className="post-subtitle">{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
+                            )}
+                        </div>
+                    </header>
+                    <div className="inner-md outer">
+                        <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
+                    </div>
+                </article>
+            </Layout>
+        );
+    }
+}
+```
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+import moment from 'moment-strftime';
+import { graphql } from 'gatsby';
+
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, htmlToReact } from '../utils';
+
+// this minimal GraphQL query ensures that when 'gatsby develop' is running,
+// any changes to content files are reflected in browser
+export const query = graphql`
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
+    }
+`;
+
+export default class Post extends React.Component {
+    render() {
+        return (
+            <Layout {...this.props}>
+                <article className="post post-full">
+                    <header className="post-header has-gradient outer">
+                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
+                            <div
+                                className="bg-img"
+                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
+                            />
+                        )}
+                        <div className="inner-sm">
+                            <div className="post-meta">
+                                <time
+                                    className="published"
+                                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
+                                >
+                                    {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
+                                </time>
+                            </div>
+                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                <div className="post-subtitle">{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
+                            )}
+                        </div>
+                    </header>
+                    <div className="inner-md outer">
+                        <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
+                    </div>
+                </article>
+            </Layout>
+        );
+    }
+}
+
+```
+
+>>>>>>> 1bdd0a8cd0ae03a0ac8e58163f76f45cf8757e1a
 </details>

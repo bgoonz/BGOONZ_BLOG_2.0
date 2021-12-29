@@ -123,6 +123,7 @@
 // Grid
 .grid {
     display: -ms-flexbox;
+    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
     display: flex;
     border-radius: 5px;
     -ms-flex-wrap: wrap;
@@ -133,6 +134,7 @@
 
 .grid-item {
     box-sizing: border-box;
+    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;    
     padding-left: $grid-gap / 2;
     padding-right: $grid-gap / 2;
     position: relative;

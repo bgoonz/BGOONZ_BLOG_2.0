@@ -1,6 +1,6 @@
 ---
 title: Awesome Lists
-weight: 1
+weight: 0
 excerpt: this is an awesome list of awesome lists
 seo:
     title: ''

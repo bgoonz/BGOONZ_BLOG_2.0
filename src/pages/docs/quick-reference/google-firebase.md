@@ -1,6 +1,6 @@
 ---
 title: Firebase (Firebasics)
-weight: 1
+weight: 0
 excerpt: "Add Firebase to your JavaScript project\_Note"
 seo:
     title: "Add Firebase to your JavaScript project\_Note:"

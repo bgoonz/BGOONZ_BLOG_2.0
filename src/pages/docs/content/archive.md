@@ -1,6 +1,6 @@
 ---
 title: Archive
-weight: 1
+weight: 0
 seo:
     title: ''
     description: ''
