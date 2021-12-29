@@ -170,7 +170,7 @@ sections:
             new_window: false
             no_follow: false
             type: action
-        image: images/bryan_guner_resume_2021-v4IMG.jpeg
+        image: images/image-of-resume.png
         title_url: >-
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
@@ -180,7 +180,6 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-        image: images/My Post.png
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
@@ -193,9 +192,9 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Web Audio Daw
     section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+    image_alt: portfolio
     image_position: left
     content: >-
       Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non
