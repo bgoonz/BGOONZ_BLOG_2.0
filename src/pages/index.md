@@ -170,7 +170,7 @@ sections:
             new_window: false
             no_follow: false
             type: action
-        image: images/bryan_guner_resume_2021-v4IMG.jpeg
+        image: images/image-of-resume.png
         title_url: >-
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
