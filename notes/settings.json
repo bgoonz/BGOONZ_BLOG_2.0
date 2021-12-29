@@ -1,0 +1,771 @@
+{
+  //----------------beginning of editor settings--------------------\\
+  //Controls if empty lines should be ignored with toggle, add or remove actions for line comments.
+  "editor.comments.ignoreEmptyLines": false,
+  //emove trailing auto inserted whitespace.
+  "editor.trimAutoWhitespace": false,
+  //Scrolling speed multiplier when pressing Alt.
+  "editor.fastScrollSensitivity": 7,
+  //Controls whether remembered suggestion selections are shared between multiple workspaces and windows (needs #editor.suggestSelection#).
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.minimap.maxColumn": 50,
+  //Controls the font size in pixels.
+  "editor.fontSize": 16,
+  "editor.fontFamily": " 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "300",
+  //Controls the letter spacing in pixels.
+  "editor.letterSpacing": 1,
+  "editor.lineHeight": 28,
+  "editor.fontLigatures": true,
+  "editor.detectIndentation": true,
+  // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  // Enable/Disable ActiveFileInStatusBar
+  // Show fullpath or relative path in status bar.
+  // Reveal the active file in the file system.
+  // Controls the delay in ms after which quick suggestions will show up.
+  "editor.quickSuggestionsDelay": 18,
+  // Controls if suggestions should automatically show up when typing trigger characters
+  "editor.suggestOnTriggerCharacters": true,
+  // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.tabCompletion": "on",
+  // Controls whether sorting favours words that appear close to the cursor
+  "editor.suggest.localityBonus": true,
+  // Controls how suggestions are pre-selected when showing the suggest list
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": true,
+  // Enable parameter hints
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.showTypeParameters": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.largeFileOptimizations": false,
+  "editor.renderControlCharacters": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.renderIndentGuides": false,
+    "editor.matchBrackets": "near"
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "markdownlint.config": { //
+    "default": true,
+    "MD033": false,
+    "MD046": false,
+    "MD045": false,
+    "MD001": false,
+    "MD025": false,
+    "MD007": {
+      "indent": 4
+    },
+    "no-hard-tabs": false
+  }
+  "javascript.suggest.names": true,
+  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\bash.exe",
+  "terminal.integrated.shell.windows": "c:\\Users\\bryan\\AppData\\Local\\Microsoft\\WindowsApps\\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\\ubuntu2004.exe",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.editorAssociations": {
+    "*.md": "default",
+    "*.ipynb": "jupyter-notebook"
+  },
+  //---------------------------end of workbench----------------------\\
+  //!------------------------------------------------------------
+
+  //---------------leetcode---------------------------------
+
+  //-------------------------------autocomplete----------------------------------------------------------
+  "path-autocomplete.extensionOnImport": true,
+  "path-intellisense.extensionOnImport": true,
+  //-------------------MARKDOWN----------------------------------------------------------------------------
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  //---------------------------end of extensions----------------------\\
+  //!-------------------------------------------------------------------
+  //--------------beginning of language-features settingsr------------\\
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  //---markdown---\\
+  //---typescript---\\
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.enable": false,
+  "typescript.reportStyleChecksAsWarnings": false,
+  "typescript.tsserver.useSeparateSyntaxServer": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  //---emmet---//
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "jsx-sublime-babel-tags": "javascriptreact"
+  },
+  "terminal.integrated.fontFamily": "monospace",
+  //----------------------end of terminal--------------------\\
+  //!-----------------------------------------------------------------
+  //--------------beginning of file settings------------\\
+  "files.exclude": {
+    "_MACOSX": true,
+    "*__MACOSX": true,
+    "*.class": true,
+    "*.dll": true,
+    "*.ini": true,
+    "*.obj": true,
+    "*.psd": true,
+    "*.pyc": true,
+    "*.pyo": true,
+    "*.sublime-workspace": true,
+    "**__MACOSX": true,
+    "**_MACOSX": true,
+    "**/__MACOSX": true,
+    "**/_MACOSX": true,
+    "**/.classpath": true,
+    "**/.DS_Store": true,
+    "**/.factorypath": true,
+    "**/.git": false,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": false,
+    "**/*.dist": true,
+    "**/**.ini": true,
+    "**/desktop.ini": true,
+    "*/_MACOSX": true,
+    "*/**/coverage/": true,
+    "*/**/infinitewp/": true,
+    "/*ini": true,
+    "desktop.ini": true,
+    "xmlrpc.php": true
+  },
+  "files.associations": {
+    "*.m": "matlab",
+    "*.md": "markdown",
+    "*.tex": "doctex",
+    "*.html": "html",
+    "*.jsx": "javascriptreact",
+    "*.db": "sqlite"
+  },
+  "breadcrumbs.filePath": "off",
+  "files.autoSave": "afterDelay",
+  //------------------end of file appearence------------------------------\\
+  //!-----------------------------------------------------------------
+  //====================MISC=====================\\
+  // Render vertical rulers after a certain number of
+  // monospace characters. Use multiple values for multiple
+  // rulers. No rulers are drawn if array is empty
+  "editor.rulers": [ 100 ],
+  "update.mode": "start",
+  "git.autofetch": true,
+  "git.allowForcePush": true,
+  "diffEditor.codeLens": true,
+  "python.languageServer": "Pylance",
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.associations": {},
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "sync.quietSync": true,
+
+  "beautify.ignore": "",
+
+  "[latex]": {
+    "breadcrumbs.showProperties": true,
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+  "markdown.allAvailableLanguages": true,
+  "markdown.preview.breaks": true,
+  "explorer.confirmDelete": false,
+  "python.analysis.cacheFolderPath": "C:\\Users\\15512\\OneDrive\\Documents\\App_Academy_Personal\\misc\\python-analysis-cache",
+  "python.pythonPath": "C:\\Python310\\python.exe",
+  "gitlens.views.repositories.files.layout": "list",
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "editor.renderIndentGuides": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.maxMemoryForLargeFilesMB": 8000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "markdown-preview-enhanced.singlePreview": false,
+  "workbench.tree.indent": 18,
+  "workbench.tree.renderIndentGuides": "always",
+  "debug.onTaskErrors": "showErrors",
+  "problems.showCurrentInStatus": true,
+  "settingsSync.ignoredSettings": [
+    "-php.validate.executablePath",
+    "-python.defaultInterpreterPath"
+  ],
+  "workbench.colorTheme": "Monokai",
+  "php.validate.executablePath": "C:\\tools\\php80\\php.exe",
+  "liveServer.settings.useWebExt": true,
+  "git.detectSubmodulesLimit": 5,
+  "git.ignoreMissingGitWarning": true,
+  "task.quickOpen.skip": true,
+  "editor.matchBrackets": false,
+  "editor.wordWrapColumn": 150,
+  "problems.decorations.enabled": false,
+  "outline.problems.badges": false,
+  "html.validate.styles": false,
+  "css.lint.fontFaceProperties": "ignore",
+  "editor.unusualLineTerminators": "auto",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.formatOnSaveMode": "modifications",
+  // Ignore extension recommendations
+  "extensions.ignoreRecommendations": true,
+  // Confirm before synchronizing git repositories
+  "git.confirmSync": false,
+  // Commit all changes when there are no staged changes
+  "git.enableSmartCommit": true,
+  // Whether to lint Python files using pylint
+  "python.linting.pylintEnabled": true,
+  // Overrides colors from the currently selected color theme.
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1d771d",
+    "statusBar.foreground": "#eeffff",
+    "titleBar.activeBackground": "#282b3c",
+    "titleBar.activeForeground": "#eeefff",
+    "workbench.fontAliasing": "antialiased",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.background": "#090300",
+    "terminal.foreground": "#A5A2A2",
+    "terminalCursor.background": "#A5A2A2",
+    "terminalCursor.foreground": "#A5A2A2",
+    "terminal.ansiBlack": "#090300",
+    "terminal.ansiBlue": "#01A0E4",
+    "terminal.ansiBrightBlack": "#5C5855",
+    "terminal.ansiBrightBlue": "#01A0E4",
+    "terminal.ansiBrightCyan": "#B5E4F4",
+    "terminal.ansiBrightGreen": "#01A252",
+    "terminal.ansiBrightMagenta": "#A16A94",
+    "terminal.ansiBrightRed": "#DB2D20",
+    "terminal.ansiBrightWhite": "#F7F7F7",
+    "terminal.ansiBrightYellow": "#FDED02",
+    "terminal.ansiCyan": "#B5E4F4",
+    "terminal.ansiGreen": "#01A252",
+    "terminal.ansiMagenta": "#A16A94",
+    "terminal.ansiRed": "#DB2D20",
+    "terminal.ansiWhite": "#A5A2A2",
+    "terminal.ansiYellow": "#FDED02"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [ {
+        "scope": [ "entity.name.function", "support.function" ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.marker",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.text",
+        "settings": {}
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.marker",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.text",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.scope",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      }
+    ]
+  },
+  "files.insertFinalNewline": true,
+  "[java]": {},
+
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.codeLens.enabled": false,
+
+  "python.defaultInterpreterPath": "C:\\Users\\bryan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+  "workbench.settings.openDefaultSettings": false,
+  "workbench.editor.labelFormat": "short",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.trimFinalNewlines": true,
+  "files.eol": "\n",
+  "window.titleBarStyle": "native",
+
+  "files.autoSaveDelay": 500,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "C_Cpp.updateChannel": "Insiders",
+
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "extensions.autoUpdate": true,
+  "editor.wordWrap": "on",
+  "[xml]": {
+    "editor.defaultFormatter": "mikeburgh.xml-format"
+  },
+  "gitlens.views.remotes.files.layout": "tree",
+  "gitlens.views.stashes.files.layout": "tree",
+  "diffEditor.renderSideBySide": false,
+
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "push:command",
+    "branch-create:command"
+  ],
+
+  "editor.renderWhitespace": "all",
+  "editor.cursorStyle": "line-thin",
+  "editor.accessibilityPageSize": 20,
+  "editor.accessibilitySupport": "off",
+
+  "workbench.productIconTheme": "fluent-icons",
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.sortOrder": "alphabetical",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.openBrowser": false,
+  "[scss]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+
+  "editor.inlineSuggest.enabled": true,
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.banner": "always",
+  "security.workspace.trust.startupPrompt": "never",
+  "files.watcherExclude": {
+    "**/.git/objects/**": false,
+    "**/.git/subtree-cache/**": false,
+    "**/node_modules/*/**": false,
+    "/**node_modules": true
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "githubPullRequests.remotes": [ "origin", "upstream", "preview" ],
+  "window.zoomLevel": -2,
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "/mnt/c/Windows/System32/bash.exe",
+      "args": [ "-d", "Ubuntu-20.04" ]
+    }
+  },
+  "grunt.autoDetect": "on",
+  "git.ignoreRebaseWarning": true
+  //---------------------------Extension descriptions----------------------\\
+
+  //  - formulahendry.auto-close-tag: Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text
+  //  - njpwerner.autodocstring: Automatically generates detailed docstrings for python functions
+  //  - heyimfuzz.banner-comments: Converts selected lines into banner comments using figlet fonts.
+  //  - HookyQR.beautify: Beautify code in place for VS Code
+  //  - aaron-bond.better-comments: Improve your code commenting by annotating with alert, informational, TODOs, and more!
+  //  - formulahendry.code-runner: Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran
+  //  - SlySherZ.comment-box: Transform text into a configurable comment box
+  //  - paulmolluzzo.convert-css-in-js: CSS-in-JS autocomplete and conversion
+  //  - ms-vscode.cpptools: C/C++ IntelliSense, debugging, and code browsing.
+  //  - vscode.css-language-features: Provides rich language support for CSS, LESS and SCSS files.
+  //  - ria.elastic: Elasticsearch client like Kibana console for vscode
+  //  - Wscats.eno: 🚀Easy to compile ts, tsx, scss, less, stylus, jade, pug and es6+ on save without using a build task.
+  //  - codezombiech.gitignore: Language support for .gitignore files. Lets you pull .gitignore files from the https://github.com/github/gitignore repository.
+  //  - vscode.html-language-features: Provides rich language support for HTML and Handlebar files
+  //  - redhat.java: Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...
+  //  - AhadCove.js-quick-console: Quickly print out log messages
+  //  - vscode.json-language-features: Provides rich language support for JSON files.
+  //  - sallar.json-to-js-object: Convert a JSON Object to Javascript Object
+  //  - ms-toolsai.jupyter: Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
+  //  - bierner.lit-html: Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings
+  //  - runem.lit-plugin: Syntax highlighting, type checking and code completion for lit-html
+  //  - yzhang.markdown-all-in-one: All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
+  //  - mervin.markdown-formatter:  A Markdown Plugin for code artist
+  //  - vscode.markdown-language-features: Provides rich language support for Markdown.
+  //  - fcrespo82.markdown-table-formatter: A simple markdown plugin to format tables.
+  //  - darkriszty.markdown-table-prettify: Transforms markdown tables to be more readable.
+  //  - vscode.php-language-features: Provides rich language support for PHP files.
+  //  - esbenp.prettier-vscode: Code formatter using prettier
+  //  - ms-python.python: Linting, Debugging (multi-threaded, remote), Intellisense, Jupyter Notebooks, code formatting, refactoring, unit tests, snippets, and more.
+  //  - mgesbert.python-path: Python imports utils.
+  //  - Wscats.qf: 🧣Beautify sass, less, scss, typescript, javascript, jade and pug.
+  //  - ms-vscode.references-view: Reference Search results as separate, stable view in the sidebar
+  //  - plibither8.remove-comments: Remove all comments from your code at once! Unclutter and undocument your code in one go!
+  //  - usernamehw.remove-empty-lines: Remove blank lines from document or selection.
+  //  - rebornix.ruby: Ruby language support and debugging for Visual Studio Code
+  //  - vscode.search-result: Provides syntax highlighting and language features for tabbed search results.
+  //  - jerrygoyal.shortcut-menu-bar: Add buttons like beautify,list files,undo,redo,save all etc to editor menu bar in Visual Studio Code.
+  //  - vscode.typescript-language-features: Provides rich language support for JavaScript and TypeScript.
+  //  - KevinRose.vsc-python-indent: Correct python indentation.
+  //  - RandomFractalsInc.vscode-data-preview: Data Preview 🈸 extension for importing 📤 viewing 🔎 slicing 🔪 dicing 🎲 charting 📊 & exporting 📥 large JSON array/config, YAML, Apache Arrow, Avro & Excel data files
+  //  - ms-azuretools.vscode-docker: Makes it easy to create, manage, and debug containerized applications.
+  //  - dai-shi.vscode-es-beautifier: vscode plugin for es-beautifier
+  //  - dbaeumer.vscode-eslint: Integrates ESLint JavaScript into VS Code.
+  //  - lacroixdavid1.vscode-format-context-menu: VSCode extension to format multiple files with right click context menu
+  //  - ecmel.vscode-html-css: CSS Intellisense for HTML
+  //  - henry-li.vscode-import-formatter: Sort the leading imports/requires for ES6.
+  //  - vscjava.vscode-java-debug: A lightweight Java debugger for Visual Studio Code
+  //  - mgmcdermott.vscode-language-babel: VSCode syntax highlighting for today's JavaScript
+  //  - kortina.vscode-markdown-notes: Navigate notes with [[wiki-links]], backlinks, and #tags (like Bear, Roam, etc). Automatically create notes from new inline [[wiki-links]]. Use Peek Definition to preview linked notes.
+  //  - zhangrenyang.vscode-plugin-remove-js-comments: remove-js-comments
+  //  - ms-ossdata.vscode-postgresql: Develop Postgres everywhere
+  //  - ms-python.vscode-pylance: A performant, feature-rich language server for Python in VS Code
+  //  - sibiraj-s.vscode-scss-formatter: A Visual Studio Code Extension to format SCSS
+  //  - chenxsan.vscode-standardjs: Integrates JavaScript Standard Style into VS Code.
+  //  - redhat.vscode-yaml: YAML Language Support by Red Hat, with built-in Kubernetes syntax support
+  //  - almenon.arepl: real-time python scratchpad
+  //  - steoates.autoimport: Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX
+  //  - nick-rudenko.back-n-forth: Adds go back/forward buttons for easier navigation
+  //  - CoenraadS.bracket-pair-colorizer: A customizable extension for colorizing matching brackets
+  //  - Shan.code-settings-sync: Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
+  //  - adpyke.codesnap: 📷 Take beautiful screenshots of your code
+  //  - codespaces-contrib.codeswing: An interactive coding environment for building web applications (aka swings).
+  //  - naumovs.color-highlight: Highlight web colors in your editor
+  //  - ExodiusStudios.comment-anchors: Place anchor tags within comments for easy file & workspace navigation.
+  //  - stackbreak.comment-divider: Divide your code by sections with styled separators.
+  //  - vscode.configuration-editing: Provides capabilities (advanced IntelliSense, auto-fixing) in configuration files like settings, launch, and extension recommendation files.
+  //  - sporiley.css-auto-prefix: Autoprefixes certain attributes in CSS
+  //  - iocave.customize-ui: Advanced VSCode user interface customizations. Very experimental.
+  //  - vscode.debug-auto-launch: Helper for auto-attach feature when node-debug extensions are not active.
+  //  - vscode.debug-server-ready: Open URI in browser if server under debugging is ready.
+  //  - hediet.debug-visualizer: A visual watch window that lets you visualize your data structures while debugging.
+  //  - msjsdiag.debugger-for-chrome: Debug your JavaScript code in the Chrome browser, or any other target that supports the Chrome Debugger protocol.
+  //  - docsmsft.docs-markdown: Docs Markdown Extension
+  //  - bierner.docs-view: Display documentation in the sidebar or panel.
+  //  - inu1255.easy-snippet: make what you select as a snippet
+  //  - EditorConfig.EditorConfig: EditorConfig Support for Visual Studio Code
+  //  - vscode.emmet: Emmet support for VS Code
+  //  - bierner.emojisense: Adds suggestions and autocomplete for emoji
+  //  - RedVanWorkshop.explorer-exclude-vscode-extension: Explorer Exclude lets you easily Hide Files & Folders with Dynamic Filter Options.  Add a New 'Hidden Items' Explorer Pane for you to Manage and Quickly Toggle Visibility of Hidden Items.
+  //  - vscode.extension-editing: Provides linting capabilities for authoring extensions.
+  //  - alexbabichev.formatter-pug: Syntax highlighting for Pug templates
+  //  - bierner.gif-player: Add a play/pause button and a scrubber for controlling gif playback.
+  //  - vsls-contrib.gistfs: Manage your code snippets, developer notes and interactive samples using GitHub Gists and repositories.
+  //  - vscode.git: Git SCM Integration
+  //  - vscode.git-ui: Git SCM UI Integration
+  //  - donjayamanne.githistory: View git log, file history, compare branches or commits
+  //  - vscode.github: GitHub
+  //  - vscode.github-authentication: GitHub Authentication Provider
+  //  - eamodio.gitlens: Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
+  //  - vscode.grunt: Extension to add Grunt capabilities to VS Code.
+  //  - spywhere.guides: An extension for more guide lines
+  //  - vscode.gulp: Extension to add Gulp capabilities to VSCode.
+  //  - hediet.hediet-power-tools: This extension brings selected power tools to VS Code.
+  //  - riazxrazor.html-to-jsx: Converts html code to React JSX
+  //  - vscode.image-preview: Provides VS Code's built-in image preview
+  //  - oderwat.indent-rainbow: Makes indentation easier to read
+  //  - brunnerh.insert-unicode: Search for unicode characters and insert them into documents.
+  //  - vscode.jake: Extension to add Jake capabilities to VS Code.
+  //  - DSnake.java-debug: A simple debug extension for the Java
+  //  - caolin.java-run: run java code fast and simple
+  //  - donjayamanne.javadebugger: Java Debugger (break points, variables, stack trace etc)
+  //  - ms-vscode.js-debug: An extension for debugging Node.js programs and Chrome.
+  //  - ms-vscode.js-debug-companion: Companion extension to js-debug that provides capability for remote debugging
+  //  - joostlubach.js-index: Builds a JS/TS index out of files in the directory.
+  //  - hdg.live-html-previewer: Edit and preview HTML documents in VS Code
+  //  - ritwickdey.LiveServer: Launch a development local Server with live reload feature for static & dynamic pages
+  //  - bierner.markdown-checkbox: Adds checkbox support to the built-in markdown preview
+  //  - manuth.markdown-converter: A markdown-converter for Visual Studio Code
+  //  - bierner.markdown-emoji: Adds emoji syntax support to VS Code's built-in markdown preview
+  //  - jebbs.markdown-extended: Extended syntaxes to built-in markdown & What you see is what you get exporter.
+  //  - hancel.markdown-image: Easy to insert a image to markdown
+  //  - svsool.markdown-kit: Collection of commands and utilities for managing Markdown notes in VSCode
+  //  - yzane.markdown-pdf: Convert Markdown to PDF
+  //  - shd101wyy.markdown-preview-enhanced: Markdown Preview Enhanced ported to vscode
+  //  - mdickin.markdown-shortcuts: Shortcuts for Markdown editing
+  //  - AlanWalk.markdown-toc: Markdown TOC(Table Of Contents) Plugin for Visual Studio Code.
+  //  - PKief.material-icon-theme: Material Design Icons for Visual Studio Code
+  //  - vscode.merge-conflict: Highlighting and commands for inline merge conflicts.
+  //  - vscode.microsoft-authentication: Microsoft authentication provider
+  //  - iocave.monkey-patch: Inject custom javascript into vscode
+  //  - ms-vscode.node-debug: Node.js debugging support (versions < 8.0)
+  //  - ms-vscode.node-debug2: Node.js debugging support
+  //  - leizongmin.node-module-intellisense: Autocompletes Node.js modules in import statements
+  //  - vscode.npm: Extension to add task support for npm scripts.
+  //  - christian-kohler.npm-intellisense: Visual Studio Code plugin that autocompletes npm modules in import statements
+  //  - lukaserat.npm-scripts: Easy access to your project's npm scripts
+  //  - techer.open-in-browser: This allows you to open the current file in your default browser or application.
+  //  - ionutvmi.path-autocomplete: Provides path completion for visual studio code.
+  //  - christian-kohler.path-intellisense: Visual Studio Code plugin that autocompletes filenames
+  //  - brapifra.phpserver: Serve your Project with PHP
+  //  - mohsen1.prettify-json: Visual Studio Code Prettify JSON Extension
+  //  - Fooxly.provision-bar: Providing a simple way to view all notes in your workspace based on keywords.
+  //  - vscode.python: Provides syntax highlighting, bracket matching and folding in Python files.
+  //  - WallabyJs.quokka-vscode: JavaScript and TypeScript playground in your editor.
+  //  - ms-vscode-remote.remote-wsl: Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set.
+  //  - mutantdino.resourcemonitor: Displays current CPU stats, memory/disk consumption, and battery percentage remaining.
+  //  - burkeholland.simple-react-snippets: Dead simple React snippets you will actually use
+  //  - bierner.speech: Text to speech
+  //  - hediet.tasks-statusbar: This extension adds buttons to the status bar to quickly start and kill tasks.
+  //  - Tyriar.terminal-tabs: Adds tabs for each terminal process to the status bar
+  //  - stuart.unique-window-colors: Automatically adds a unique color to each window's activityBar and titleBar.
+  //  - qinjia.view-in-browser: view a html file in system's default browser
+  //  - hediet.vscode-drawio: This unofficial extension integrates Draw.io into VS Code.
+  //  - ms-edgedevtools.vscode-edge-devtools: Use the Microsoft Edge Tools from within VS Code to see your site's runtime HTML structure, alter its layout, fix styling issues as well as see your site's network requests.
+  //  - NuclleaR.vscode-extension-auto-import: Automatically finds, parses and provides code actions and code completion for all available imports. Works with JavaScript and TypeScript. [Forked]
+  //  - sleistner.vscode-fileutils: A convenient way of creating, duplicating, moving, renaming and deleting files and directories.
+  //  - kisstkondoros.vscode-gutter-preview: Shows image preview in the gutter and on hover
+  //  - vscode-icons-team.vscode-icons: Icons for Visual Studio Code
+  //  - vscjava.vscode-java-test: Run and debug JUnit or TestNG test cases
+  //  - pajoma.vscode-journal: Lightweight journal and simple notes support for Visual Studio Code
+  //  - whtouche.vscode-js-console-utils: Help insert and remove console.(*) statements
+  //  - wangtao0101.vscode-js-import: Intelligent and fast import extension for js in vscode, support import position option and adding import to existing import statement.
+  //  - ms-vscode.vscode-js-profile-table: Text visualizer for profiles taken from the JavaScript debugger
+  //  - ms-kubernetes-tools.vscode-kubernetes-tools: Develop, deploy and debug Kubernetes applications
+  //  - LeetCode.vscode-leetcode: Solve LeetCode problems in VS Code
+  //  - telesoho.vscode-markdown-paste-image: A smartly paste for markdown.
+  //  - slevesque.vscode-multiclip: Override the regular Copy and Cut commands to keep selections in a clipboard ring
+  //  - fknop.vscode-npm: npm commands for VSCode
+  //  - cweijan.vscode-office: View word,excel files in vscode.
+  //  - pdconsec.vscode-print: Syntax-coloured line-numbered printing in VS Code.
+  //  - msjsdiag.vscode-react-native: Debugging and integrated commands for React Native
+  //  - yatki.vscode-surround: A simple yet powerful extension to add wrapper templates around your code blocks.
+  //  - jkjustjoshing.vscode-text-pastry: Extend the power of multiple selections in VS Code. Modify selections, insert numeric sequences, incremental numbers, generate uuids, date ranges, insert continuously from a word list and more.
+  //  - VisualStudioExptTeam.vscodeintellicode: AI-assisted development
+  //  - WallabyJs.wallaby-vscode: Accelerated Distraction-free JavaScript Testing.
+  //  - Fooxly.workspace: A more focussed view on your files
+  //  - AnchovyStudios.zip-extract-all: Extract all zip files inside a folder
+
+  //------------------beginning of extension settingsr---------------\\
+  "customizeUI.fontSizeMap": {
+    "13px": "11px",
+    "12px": "11px",
+    "window-title": "12px", // Window title font when using custom titlebar
+    "tab-title": "12px", // Used for editor tab titles
+    "monospace": "10.5px", // Used for monospace fonts in user interface
+    "menu": "13px" // Used for menu items (windows only)
+  },
+  "customizeUI.listRowHeight": 20, // shrink rows to match XCode
+  "customizeUI.stylesheet": {
+    ".search-view .search-widgets-container": "padding-top: 0px !important",
+    ".suggest-input-container": "padding: 3px 4px 3px !important;"
+  },
+  "markdown.preview.openMarkdownLinks": "inEditor",
+  "vsicons.presets.jsOfficial": true,
+  "settingsSync.ignoredExtensions": [ "doi.fileheadercomment" ],
+  "better-comments.tags": [ {
+      "tag": "!",
+      "color": "#FF0000",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "?",
+      "color": "#0080FF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#008000",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#9400D3",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "#",
+      "color": "#0080FF",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "#F0FFFF",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "-",
+      "color": "#FFFF00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "&",
+      "color": "#0B0000",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#FFFFFF",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#9D1027",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "$",
+      "color": "#FFFFFF",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "#000000",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "_",
+      "color": "#00FF00",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "%",
+      "color": "#5BCF90",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    }
+  ],
+}

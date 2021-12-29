@@ -160,7 +160,7 @@ BigFiles are virtual files spanning multiple file systems and are addressable by
 
 #### 4.2.2 Repository
 
-![](http://infolab.stanford.edu/~backrub/repos.gif)
+![repository](http://infolab.stanford.edu/~backrub/repos.gif)
 
 Figure 2. Repository Data Structure
 
@@ -182,7 +182,7 @@ A hit list corresponds to a list of occurrences of a particular word in a partic
 
 Our compact encoding uses two bytes for every hit. There are two types of hits: fancy hits and plain hits. Fancy hits include hits occurring in a URL, title, anchor text, or meta tag. Plain hits include everything else. A plain hit consists of a capitalization bit, font size, and 12 bits of word position in a document (all positions higher than 4095 are labeled 4096). Font size is represented relative to the rest of the document using three bits (only 7 values are actually used because 111 is the flag that signals a fancy hit). A fancy hit consists of a capitalization bit, the font size set to 7 to indicate it is a fancy hit, 4 bits to encode the type of fancy hit, and 8 bits of position. For anchor hits, the 8 bits of position are split into 4 bits for position in anchor and 4 bits for a hash of the docID the anchor occurs in. This gives us some limited phrase searching as long as there are not that many anchors for a particular word. We expect to update the way that anchor hits are stored to allow for greater resolution in the position and docIDhash fields. We use font size relative to the rest of the document because when searching, you do not want to rank otherwise identical documents differently just because one of the documents is in a larger font.
 
-![](http://infolab.stanford.edu/~backrub/barrels.gif)
+![barrels](http://infolab.stanford.edu/~backrub/barrels.gif)
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
 
@@ -322,19 +322,19 @@ It is important for a search engine to crawl and index efficiently. This way inf
 
 Improving the performance of search was not the major focus of our research up to this point. The current version of Google answers most queries in between 1 and 10 seconds. This time is mostly dominated by disk IO over NFS (since disks are spread over a number of machines). Furthermore, Google does not have any optimizations such as query caching, subindices on common terms, and other common optimizations. We intend to speed up Google considerably through distribution and hardware, software, and algorithmic improvements. Our target is to be able to handle several hundred queries per second. Table 2 has some sample query times from the current version of Google. They are repeated to show the speedups resulting from cached IO.
 
-**Initial Query**
+> **Initial Query**
 
-**Same Query Repeated (IO mostly cached)**
+> **Same Query Repeated (IO mostly cached)**
 
-**Query**
+> **Query**
 
-**CPU Time(s)**
+> **CPU Time(s)**
 
-**Total Time(s)**
+> **Total Time(s)**
 
-**CPU Time(s)**
+> **CPU Time(s)**
 
-**Total Time(s)**
+> **Total Time(s)**
 
 al gore
 
