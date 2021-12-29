@@ -92,7 +92,7 @@ post-inside {
       border-radius: $border-radius;
       box-shadow: $box-shadow;
       padding: 0.3em;
-      width: 70vw;
+      width: 50vw;
     }
 
     .post-title {
@@ -301,8 +301,8 @@ post-inside {
 
 @media only screen and (min-width: 1200px) {
   .docs-content {
-    display: -ms-flexbox;
-    display: flex;
+
+
     padding-top: 4em;
     width: 100%;
   }
