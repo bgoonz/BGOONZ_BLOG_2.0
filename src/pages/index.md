@@ -179,7 +179,7 @@ sections:
         actions:
           - label: Learn More
             url: /showcase
-            style: link
+            style: secondary
         image_alt: portfolio of websites
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
