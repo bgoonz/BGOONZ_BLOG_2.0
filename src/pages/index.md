@@ -162,10 +162,10 @@ sections:
         actions:
           - label: Learn More
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: secondary
+            style: link
           - label: Download PDF
             url: '#'
-            style: link
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
