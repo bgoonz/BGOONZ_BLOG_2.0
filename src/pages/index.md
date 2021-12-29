@@ -236,7 +236,7 @@ sections:
         no_follow: false
     type: section_cta
     subtitle: get in touch! +1 (551) - 254 - 5505
-* seo:
+seo:
   title: Web-Dev-Hub
   description: |-
     bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
