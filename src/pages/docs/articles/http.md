@@ -50,7 +50,7 @@ The HTTP redirect is a server response that can be used to indicate that a resou
 
 ## HTTP Verbs
 
--   GET - get a resource, _Idempotent_
+-   GET - get a resource, *Idempotent*
 
 -   POST - send some data to a resource
 

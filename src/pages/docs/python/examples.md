@@ -119,7 +119,7 @@ Generate a random number between `1 and 100 (including 1 and 100)`. Ask the user
 > Remember to use the user input from the very first exercise.
 
 **Extras:**  
-Keep the game going until the user types `"exit"`.  
+Keep the game going until the user types `“exit”`.  
 Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
 ### Problem 10

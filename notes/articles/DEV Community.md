@@ -24,21 +24,21 @@ Let's get started!
 
 ---
 
--   [Overview](#overview)
--   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
-    -   [Adding new things](#adding-new-things)
--   [Making changes](#making-changes)
--   [Branching](#branching)
--   [Merging](#merging)
-    -   [Fast-Forward merging](#fast-forward-merging)
-    -   [Merging divergent branches](#merging-divergent-branches)
-    -   [Resolving conflicts](#resolving-conflicts)
--   [Rebasing](#rebasing)
-    -   [Resolving conflicts](#resolving-conflicts-1)
--   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
--   [Cherry-picking](#cherry-picking)
--   [Rewriting history](#rewriting-history)
--   [Reading history](#reading-history)
+- [Overview](#overview)
+- [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+    - [Adding new things](#adding-new-things)
+- [Making changes](#making-changes)
+- [Branching](#branching)
+- [Merging](#merging)
+    - [Fast-Forward merging](#fast-forward-merging)
+    - [Merging divergent branches](#merging-divergent-branches)
+    - [Resolving conflicts](#resolving-conflicts)
+- [Rebasing](#rebasing)
+    - [Resolving conflicts](#resolving-conflicts-1)
+- [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
+- [Cherry-picking](#cherry-picking)
+- [Rewriting history](#rewriting-history)
+- [Reading history](#reading-history)
 
 ---
 
@@ -54,21 +54,21 @@ Let's get started!
 
 ---
 
--   [Overview](#overview)
--   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
-    -   [Adding new things](#adding-new-things)
--   [Making changes](#making-changes)
--   [Branching](#branching)
--   [Merging](#merging)
-    -   [Fast-Forward merging](#fast-forward-merging)
-    -   [Merging divergent branches](#merging-divergent-branches)
-    -   [Resolving conflicts](#resolving-conflicts)
--   [Rebasing](#rebasing)
-    -   [Resolving conflicts](#resolving-conflicts-1)
--   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
--   [Cherry-picking](#cherry-picking)
--   [Rewriting history](#rewriting-history)
--   [Reading history](#reading-history)
+- [Overview](#overview)
+- [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+    - [Adding new things](#adding-new-things)
+- [Making changes](#making-changes)
+- [Branching](#branching)
+- [Merging](#merging)
+    - [Fast-Forward merging](#fast-forward-merging)
+    - [Merging divergent branches](#merging-divergent-branches)
+    - [Resolving conflicts](#resolving-conflicts)
+- [Rebasing](#rebasing)
+    - [Resolving conflicts](#resolving-conflicts-1)
+- [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
+- [Cherry-picking](#cherry-picking)
+- [Rewriting history](#rewriting-history)
+- [Reading history](#reading-history)
 
 ---
 
@@ -187,6 +187,7 @@ In that state the changes are only in your _Working Directory_.
 <<<<<<< HEAD
 If you want to see what has changed in your _Working Directory_ you can run `git diff`, and right now see this:  
 =======
+
 If you want to see what has changed in your _Working Directory_ you can run `git diff`, and right now see this:
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -217,6 +218,7 @@ If we now run `git status` we'll see that there's two changes, the one we alread
 <<<<<<< HEAD
 We can have a look at the `git diff` between the _Working Directory_ and what we've already moved to the _Staging Area_, to show what has changed since we last felt ready to _stage_ our changes for a _commit_.  
 =======
+
 We can have a look at the `git diff` between the _Working Directory_ and what we've already moved to the _Staging Area_, to show what has changed since we last felt ready to _stage_ our changes for a _commit_.
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -250,6 +252,7 @@ If we have a look at the `git log` we'll not only see a list of all the commits 
 <<<<<<< HEAD
 Right now the `git log` looks something like this:  
 =======
+
 Right now the `git log` looks something like this:
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -286,9 +289,10 @@ Right now the `git log` looks something like this:
 
 In there we see a few interesting things:
 
--   The first two commits are made by me.
--   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
--   # The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
+- The first two commits are made by me.
+- Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+
+- # The latest commit in the _Local Repository_ is the one we just made, and now we know its hash
 
             Add text to Bob
 
@@ -316,9 +320,9 @@ In there we see a few interesting things:
 
 In there we see a few interesting things:
 
--   The first two commits are made by me.
--   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
--   The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
+- The first two commits are made by me.
+- Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+- The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 > Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html) .
@@ -422,6 +426,7 @@ Remember when we `cloned` the _Remote Repository_ a while ago? At that point it 
 <<<<<<< HEAD
 The _master_ we just went ahead and started working on, and one I called "tutorial*wip" on which I commit all the changes I make to this tutorial.
 =======
+
 The \_master* we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial.
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -476,9 +481,10 @@ As we've already `checked out` master, we can now `git merge change_alice`.
 As there are no other _conflicting_ changes to `Alice.txt`, and we've changed nothing on _master_, this will go through without a hitch in what is called a _fast forward_ merge.
 
 <<<<<<< HEAD
-In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_ one already is.
+In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_one already is.
 =======
-In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_ one already is.
+
+In the diagrams below, you can see that this just means that the_master_pointer can simply be advanced to where the_change_alice_ one already is.
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
@@ -530,6 +536,7 @@ When you try that, you'll see the following output
 <<<<<<< HEAD
 `Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result.`
 =======
+
 `Auto-merging Bob.txt CONFLICT (content): Merge conflict in Bob.txt Automatic merge failed; fix conflicts and then commit the result.`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -548,6 +555,7 @@ If you open `Bob.txt` you'll see something similar to this (I've truncated whate
 <<<<<<< HEAD  
 Hi! I'm Bob. I've been here for a while now.  
 =======  
+
 <<<<<<< HEAD
 Hi! I'm Bobby. I'm new here.
 
@@ -572,6 +580,7 @@ So go ahead and change the file to something like this:
 <<<<<<< HEAD
 `Hi! I'm Bobby. I've been here for a while now. [...]`
 =======
+
 `Hi! I'm Bobby. I've been here for a while now. [...]`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -624,6 +633,7 @@ The output of that command gives us a nice hint at what is happening in it:
 <<<<<<< HEAD
 `First, rewinding head to replay your work on top of it... Applying: Add Patrick`
 =======
+
 `First, rewinding head to replay your work on top of it... Applying: Add Patrick`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -718,6 +728,7 @@ If you run `git status` now, you'll see another great example of git commands te
 <<<<<<< HEAD
 `git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch)`
 =======
+
 `git status On branch fetching_changes_sample Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded. (use "git pull" to update your local branch)`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -740,6 +751,7 @@ If you now try to do a `git pull` you'll see the following error:
 <<<<<<< HEAD
 `git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting`
 =======
+
 `git pull Updating df3ad1d..418e6f0 error: Your local changes to the following files would be overwritten by merge: Alice.txt Please commit your changes or stash them before you merge. Aborting`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -786,6 +798,7 @@ If you now run `git status` you will see, that both branches have one commit on 
 <<<<<<< HEAD
 `git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours)`
 =======
+
 `git status On branch fetching_changes_sample Your branch and 'origin/fetching_changes_sample' have diverged, and have 1 and 1 different commits each, respectively. (use "git pull" to merge the remote branch into yours)`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -902,11 +915,12 @@ Wait, did I say we're done? No, you'll clearly see that we've made some mistakes
 
 <<<<<<< HEAD
 
--   We forgot to add the changes to `Bob.txt`
--   # We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+- We forgot to add the changes to `Bob.txt`
 
-*   We forgot to add the changes to `Bob.txt`
-*   We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+- # We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+
+- We forgot to add the changes to `Bob.txt`
+- We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 ### [](#amending-the-last-commit)Amending the last Commit
@@ -971,14 +985,16 @@ For me it looks like this:
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
--   Put both changes to `Alice.txt` in a single commit
--   # Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+- Put both changes to `Alice.txt` in a single commit
+
+- # Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+
     `git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
--   Put both changes to `Alice.txt` in a single commit
--   Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+- Put both changes to `Alice.txt` in a single commit
+- Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 To change the three new commits, we'll want to rebase onto the commit just before them. That commit for me is `df3ad1d`, but we can also reference it as the third commit from the current _HEAD_ as `HEAD~3`
@@ -997,7 +1013,7 @@ pick 0b22064 Add more text to Alice
 
 #
 
-# Commands:
+# Commands
 
 # p, pick = use commit
 
@@ -1015,15 +1031,15 @@ pick 0b22064 Add more text to Alice
 
 #
 
-# These lines can be re-ordered; they are executed from top to bottom.
+# These lines can be re-ordered; they are executed from top to bottom
 
 #
 
-# If you remove a line here THAT COMMIT WILL BE LOST.
+# If you remove a line here THAT COMMIT WILL BE LOST
 
 #
 
-# However, if you remove everything, the rebase will be aborted.
+# However, if you remove everything, the rebase will be aborted
 
 #
 
@@ -1036,7 +1052,7 @@ pick 0b22064 Add more text to Alice
 
 #
 
-# Commands:
+# Commands
 
 # p, pick = use commit
 
@@ -1054,15 +1070,15 @@ pick 0b22064 Add more text to Alice
 
 #
 
-# These lines can be re-ordered; they are executed from top to bottom.
+# These lines can be re-ordered; they are executed from top to bottom
 
 #
 
-# If you remove a line here THAT COMMIT WILL BE LOST.
+# If you remove a line here THAT COMMIT WILL BE LOST
 
 #
 
-# However, if you remove everything, the rebase will be aborted.
+# However, if you remove everything, the rebase will be aborted
 
 #
 
@@ -1186,6 +1202,7 @@ If you look at the `git log` again, you'll see that there's two new commits in p
 <<<<<<< HEAD
 `git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 =======
+
 `git log --oneline 105177b (HEAD -> interactiveRebase) Add Bob ed78fa1 Add a lot very important text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
@@ -1277,6 +1294,7 @@ You'll probably see a lot of output, but the first few lines on the top should b
 <<<<<<< HEAD
 `git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase`
 =======
+
 `git reflog 105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase 105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice 9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3 0b22064 HEAD@{4}: commit: Add more text to Alice 062ef13 HEAD@{5}: commit: Add Bob.txt 9e06fca HEAD@{6}: commit: Add text to Alice df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase`
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
