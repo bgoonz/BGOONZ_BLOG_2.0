@@ -182,6 +182,7 @@ sections:
             url: /showcase
             style: secondary
         image_alt: portfolio of websites
+        image: images/portfolio-pic-494ea398.png
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
