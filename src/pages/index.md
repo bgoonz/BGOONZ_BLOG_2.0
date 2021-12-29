@@ -194,8 +194,8 @@ sections:
     type: section_content
   - title: Latest & Greatest
     section_id: new content
-    image_alt: portfolio
-    image_position: left
+    image_alt: animated gif
+    image_position: right
     content: >-
       Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non
       efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
