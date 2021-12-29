@@ -193,7 +193,7 @@ sections:
     actions: []
     type: section_content
   - title: Latest & Greatest
-    section_id: lorem-ipsum
+    section_id: new content
     image_alt: portfolio
     image_position: left
     content: >-
@@ -230,6 +230,7 @@ sections:
       dui. Integer vel convallis justo.
     actions: []
     type: section_content
+    image: images/cool annimation.gif
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
