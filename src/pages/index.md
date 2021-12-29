@@ -180,7 +180,7 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-        image: images/portfolio-pic-630d2501.png
+        image_alt: portfolio of websites
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
@@ -197,8 +197,10 @@ sections:
     section_id: new content
     image_alt: animated gif
     image_position: right
-    content: |
+    content: |+
       # ***What I've been working on lately:***
+
+      ## Web Dev Utilitiy Tools
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
@@ -206,7 +208,7 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         ---
 
-        
+
     actions: []
     type: section_content
     image: images/cool annimation.gif
