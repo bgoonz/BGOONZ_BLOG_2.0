@@ -60,6 +60,7 @@ export default class Docs extends React.Component {
                   </div>
                 </nav>
               </div>
+                < Disqus / >
             </div>
             </Layout>
         );
