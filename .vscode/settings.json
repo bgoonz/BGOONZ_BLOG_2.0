@@ -4,6 +4,5 @@
       },
       "search.useGlobalIgnoreFiles": true,
       "search.useIgnoreFiles": false,
-      "python.pythonPath": "/bin/python3",
-      "terminal.integrated.environmentChangesIndicator": "on"
+      "python.pythonPath": "/bin/python3"
 }
