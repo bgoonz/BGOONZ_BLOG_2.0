@@ -1,7 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
 import {graphql} from 'gatsby';
-
+import {
+  Disqus,
+  CommentCount
+} from 'gatsby-plugin-disqus'
 import {Layout} from '../components/index';
 import DocsMenu from '../components/DocsMenu';
 import {htmlToReact, getPages, Link, withPrefix} from '../utils';
@@ -53,6 +56,7 @@ export default class Docs extends React.Component {
                   <div id="page-nav-inside" className="page-nav-inside sticky">
                     <h2 className="page-nav-title">Jump to Section</h2>
                     <div id="page-nav-link-container" />
+                     < Disqus />
                   </div>
                 </nav>
               </div>
