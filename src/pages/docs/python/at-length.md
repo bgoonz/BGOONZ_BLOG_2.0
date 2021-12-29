@@ -31,7 +31,7 @@ Let's talk about the different data types.
 Strings are usually presented in a text format. We will declare a string variable, as shown below.
 
 ```python
-name = "john"school = "Alliance Francaise"
+name = “john”school = “Alliance Francaise”
 ```
 
 When we run `print(name)`, the output will be `john`.
@@ -101,7 +101,7 @@ students = [] #list example
 Elements in a list are usually separated by a comma, as shown below.
 
 ```python
-students = ["john", "Mary Thomas", "John Smith"]
+students = [“john”, “Mary Thomas”, “John Smith”]
 ```
 
 Each element in the above `students` list has an index. By default, the first index is 0. So the item at index \[0\] is `john`, while the value at index `1` is `Mary Thomas`. A list of integers will look as follows.
@@ -169,7 +169,7 @@ Loops are critical because they allow us to iterate through lists, check for dif
 1. For loops As noted, we can use a for loop to iterate through a list, as shown below:
 
 ```python
-student_list = ["John Doore","Matu Smith"]for x in student_list:    print(x)
+student_list = [“John Doore”,”Matu Smith”]for x in student_list:    print(x)
 ```
 
 The `for` loop above will print every item in the student_list.
@@ -214,7 +214,7 @@ _helloworld.py_
 print('Hello world!')
 ```
 
-> Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards.
+> Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -469,11 +469,11 @@ This video should help you get up and running with Python 3
 
 -   ​[Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)​
 
-Installing Python is really a cakewalk. Search for "Python download" on [www.google.com](http://www.google.com/). Download the installable and install it.
+Installing Python is really a cakewalk. Search for “Python download” on [www.google.com](http://www.google.com/). Download the installable and install it.
 
 A quick word of caution on Windows
 
--   Make sure that you have the check-box "Add Python 3.6 to PATH", checked.
+-   Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
 
 Once you have installed Python, you can launch the Python Shell.
 
@@ -605,13 +605,13 @@ Using our knowledge of school math, let's try `5 X 5`.
     >>> 5 X 5    File "< stdin >", line 1    5 X 5      ^    SyntaxError: invalid syntax
 ```
 
-The Python Shell hits back at us, saying "_invalid syntax_". This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a "**SyntaxError**".
+The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
 
 The reason why it complains, is because '`X`' is not a valid **operator** in Python.
 
 The way you can do multiplication is by using the '`*`' _operator_ .
 
-"_5 into 5_" is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
+“_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
 ```python
     >>> 5 * 6    30
@@ -626,13 +626,13 @@ There are a wide range of other operators in Python:
     >>> 5 + 611>>> 5 - 6-1
     ```
 
-`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
+`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs “to the power of”. “`10` to the power of `3`” is `10 * 10 * 10`, or `1000`.
 
 ```python
     >>> 10 / 2    5.0    >>> 10 ** 3    1000
 ```
 
-Another interesting operator is `%`, called "_modulo_", which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
+Another interesting operator is `%`, called “_modulo_”, which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
 
 Let's look at some terminology:
 
@@ -729,7 +729,7 @@ Let's say we type in `5+6+10`, without any spaces between the operands, and the 
 
 In an expression, using spaces makes it easier for you to read it, but it's not mandatory. `5 + 6 + 10` is easier to read than `5+6+10`, but does not make any difference to the Python compiler.
 
-The next puzzle tries to evaluate `5 / 2`, which is "`5` divided by `2`". What would be the output? `2.5`.
+The next puzzle tries to evaluate `5 / 2`, which is “`5` divided by `2`”. What would be the output? `2.5`.
 
 ```python
     >>> 5/2    2.5
@@ -810,7 +810,7 @@ There are a number of in-built functions in Python to help print strings. One of
     >>> print Hello      File "<stdin>", line 1        print Hello                  ^    SyntaxError: Missing parentheses in call to 'print'. Did you mean print(Hello)?
 ```
 
-The Python compiler gives you an error, that says "missing parentheses".
+The Python compiler gives you an error, that says “missing parentheses”.
 
 Will `print(Hello)` work?
 
@@ -895,13 +895,13 @@ Consider `abs()` \(which stands for absolute value\), a method that accepts a nu
     >>> abs 10.5      File "<stdin>", line 1        abs 10.5               ^    SyntaxError: invalid syntax    >>> abs(10.5)    10.5
 ```
 
-If you pass in a string value, will it work? It complains, "`abs()` function will not work with a string, it only works with numeric values".
+If you pass in a string value, will it work? It complains, “`abs()` function will not work with a string, it only works with numeric values”.
 
 ```python
     >>> abs("10.5")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: bad operand type for abs(): 'str'
 ```
 
-Let's say you want to use a function that computes "to the power of", for instance "`2` to the power of `5`". In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
+Let's say you want to use a function that computes “to the power of”, for instance “`2` to the power of `5`”. In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
 
 Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow(2 5)`. `pow(2, 5)` is the correct syntax.
 
@@ -911,7 +911,7 @@ Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow
 
 You'll see that `32` is printed.
 
-Let's see another example, "`10` to the power of `3`". `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
+Let's see another example, “`10` to the power of `3`”. `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
 
 ```python
     >>> pow(10, 3)    1000    >>> 10 ** 3    1000
@@ -1102,7 +1102,7 @@ Now let's take a different scenario. We remove all the parameters passed to `for
     >>> print("{0} * {1} = {4}".format(5,8))    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    IndexError: tuple index out of range
 ```
 
-It says `IndexError`, which means :"you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?"
+It says `IndexError`, which means :“you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?”
 
 Let's look at a few more things related to other data types. We try to format the following inside `print()`: `{0} * {1} = {2}`, and would pass in `2.5`, `2`, and `2.5 * 2` . Here, `2` is an integer value, but `2.5` is a floating point value. You can see that it prints `2.5 * 2 = 5.0`. So this approach of formatting values with `print()`, works also with floating point data as well.
 
@@ -1143,7 +1143,7 @@ Let's try a different approach.
 
 What would happen if you replace `1` with `index`, and `5 * 1` with `5 * index`, and try to run it?
 
-It gives an error! It says: "index is not defined".
+It gives an error! It says: “index is not defined”.
 
 Let's try and fix this, and execute `index = 2`. What would happen?
 
@@ -1244,7 +1244,7 @@ What if I try to refer to a variable which is not yet created?
     >>> count    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'count' is not defined    >>> print(count)    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'count' is not defined
 ```
 
-Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: "`count` is not defined, I have no idea what count is."
+Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: “`count` is not defined, I have no idea what count is.”
 
 Once you assign a value to a variable, you can use it.
 
@@ -1316,13 +1316,13 @@ Let's try `j = 2 * i`.
 
 In mathematics, When we execute `j = i`, it means `j` and `i` are equal.
 
-In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is "No"!
+In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is “No”!
 
 ```python
     >>> 5 = j      File "<stdin>", line 1    SyntaxError: can't assign to literal
 ```
 
-The Python Shell throws an error, saying "Can't assign to literal", as `5` is a literal.
+The Python Shell throws an error, saying “Can't assign to literal”, as `5` is a literal.
 
 Let's create a couple of variables. `num1 = 5` and `num2 = 3`. We would want to add these and create a fresh variable. Let's say the name of the variable is `sum`.
 
@@ -1700,10 +1700,10 @@ We will now leave you with two exercises, based on what we have learned about me
 
 1. Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
 2. Write and execute a method, that prints four statements:
-    1. "I have created my first variable."
-    2. "I've created in my first loop."
-    3. "I've created my first method."
-    4. "I am excited to learn Python." You need to print these four statements on four consecutive lines.
+    1. “I have created my first variable.”
+    2. “I've created in my first loop.”
+    3. “I've created my first method.”
+    4. “I am excited to learn Python.” You need to print these four statements on four consecutive lines.
 
 **Solutions**
 
@@ -1760,7 +1760,7 @@ Earlier, we wrote code for `print_hello_world_thrice()`, which prints the messag
 
 Let's say you want to print it five times. You would need to write another method that does what you need. Doesn't that seem monotonous?
 
-Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print "Hello World" five times?
+Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print “Hello World” five times?
 
 The `5` which we are passing here is called an **argument**.
 
@@ -1778,7 +1778,7 @@ Although we are not doing exactly what we set out to, let's see what would happe
     >>> print_hello_world()    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: print_hello_world() missing 1 required positional argument: 'no_of_times'
 ```
 
-Error! Something like "Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value". Let's pass in a value, such as `5`.
+Error! Something like “Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value”. Let's pass in a value, such as `5`.
 
 ```python
     >>> print_hello_world(5)    Hello World    5    >>> print_hello_world(10)    Hello World    10    >>> print_hello_world(100)    Hello World    100
@@ -1851,7 +1851,7 @@ In this step, Let's look at a few exercises related to the method parameter.
     >>> def print_numbers(n):    ...    for i in range(1, n+1):    ...       print(i)    ...    >>> print_numbers(5)    1    2    3    4    5    >>>
 ```
 
-If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as "Camel Case".
+If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as “Camel Case”.
 
 That's NOT how Python programmers name their methods. Pythonic way is to use underscore `_` to separate words in the method name, as in `print_numbers()`.
 
@@ -1881,7 +1881,7 @@ In this step, let's look at creating a method with multiple parameters.
 
 **Snippet-01:**
 
-`print_hello_world` accepts one parameter and prints "Hello World" the specified number of times.
+`print_hello_world` accepts one parameter and prints “Hello World” the specified number of times.
 
 ```python
     >>> def print_hello_world(no_of_times):    ...    for i in range(1,no_of_times+1):    ...       print("Hello World")    ...
@@ -1901,7 +1901,7 @@ A good programmer tries to create a more generic solution.
 
 The good programmer that you are, you created a new method called `print_string(str, no_of_times)` accepting a text parameter, in addition to `no_of_times`.
 
-Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: "I need `no_of_times` to be present in here".
+Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: “I need `no_of_times` to be present in here”.
 
 ```python
     >>> print_string("Welcome to Python")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: print_string() missing 1 required positional argument: 'no_of_times'
@@ -2347,7 +2347,7 @@ Here's the video guide for this step
 
 -   ​[Installing VSCode](https://www.youtube.com/watch?v=pI_cnCXpCTU)​
 
-Go to Google and type in "VSCode Community Edition Download". Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
+Go to Google and type in “VSCode Community Edition Download”. Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
 
 You'll go to a page where you can choose the operating system: whether you are on Windows, Mac, or Linux.
 
@@ -2574,11 +2574,11 @@ In this step, we:
 
 We will now shift our attention to the `bool` data type.
 
-A boolean value is something which can be either "true" or "false".
+A boolean value is something which can be either “true” or “false”.
 
 **Snippet-01:**
 
-In Python, "true" is represented by `True`, and "false" by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
+In Python, “true” is represented by `True`, and “false” by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
 
 ```python
     >>> True    True    >>> False    False    >>> true    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'true' is not defined    >>> false    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'false' is not defined
@@ -3171,7 +3171,7 @@ Let's do the reverse.
     >>> int('45')    45    >>> int('45.56')    ValueError: invalid literal for int()
 ```
 
-if we do `int('45.56')`, you can see that it throws an error. It says "I cannot convert this to an `int`, as `45.56` is an invalid integer".
+if we do `int('45.56')`, you can see that it throws an error. It says “I cannot convert this to an `int`, as `45.56` is an invalid integer”.
 
 You can also pass an additional parameter to `int` indicating the numeric system - 16 for Hexa decimal, 8 for Octal etc. Default is 10 - Decimal.
 
@@ -3209,7 +3209,7 @@ When we execute `message.upper()`, a new string is created, and it is returned b
 
 Once you define a string in Python, you'll not be able to change the value of it.
 
-You can use - "OK. I can do something of this kind: `message = message.upper()`".
+You can use - “OK. I can do something of this kind: `message = message.upper()`”.
 
 What would happen now?
 
@@ -3265,7 +3265,7 @@ In Python, whether you're talking about a string, or you're talking about a sing
     >>> message[0]    'H'    >>> message[1]    'e'    >>> message[2]    'l'    >>> message[3]    'l'    >>> message[100]    IndexError: string index out of range
 ```
 
-It says: "The given index is out of the range of the value of that specific string".
+It says: “The given index is out of the range of the value of that specific string”.
 
 Let's say we would want to print all the characters in this string.
 
@@ -3804,8 +3804,8 @@ Let's talk about the different data types.
 Strings are usually presented in a text format. We will declare a string variable, as shown below.
 
 ```python
-name = "john"
-school = "Alliance Francaise"
+name = “john”
+school = “Alliance Francaise”
 ```
 
 When we run `print(name)`, the output will be `john`.
@@ -3885,7 +3885,7 @@ students = [] #list example
 Elements in a list are usually separated by a comma, as shown below.
 
 ```python
-students = ["john", "Mary Thomas", "John Smith"]
+students = [“john”, “Mary Thomas”, “John Smith”]
 ```
 
 Each element in the above `students` list has an index. By default, the first index is 0. So the item at index \[0\] is `john`, while the value at index `1` is `Mary Thomas`. A list of integers will look as follows.
@@ -3966,7 +3966,7 @@ Loops are critical because they allow us to iterate through lists, check for dif
 1. For loops As noted, we can use a for loop to iterate through a list, as shown below:
 
 ```python
-student_list = ["John Doore","Matu Smith"]
+student_list = [“John Doore”,”Matu Smith”]
 for x in student_list:
     print(x)
 ```
@@ -4037,7 +4037,7 @@ _helloworld.py_
 print('Hello world!')
 ```
 
-> Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards.
+> Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -4410,11 +4410,11 @@ This video should help you get up and running with Python 3
 
 -   [Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)
 
-Installing Python is really a cakewalk. Search for "Python download" on [www.google.com](http://www.google.com/). Download the installable and install it.
+Installing Python is really a cakewalk. Search for “Python download” on [www.google.com](http://www.google.com/). Download the installable and install it.
 
 A quick word of caution on Windows
 
--   Make sure that you have the check-box "Add Python 3.6 to PATH", checked.
+-   Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
 
 Once you have installed Python, you can launch the Python Shell.
 
@@ -4550,13 +4550,13 @@ Using our knowledge of school math, let's try `5 X 5`.
     SyntaxError: invalid syntax
 ```
 
-The Python Shell hits back at us, saying "_invalid syntax_". This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a "**SyntaxError**".
+The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
 
 The reason why it complains, is because '`X`' is not a valid **operator** in Python.
 
 The way you can do multiplication is by using the '`*`' _operator_ .
 
-"_5 into 5_" is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
+“_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
 ```python
     >>> 5 * 6
@@ -4575,7 +4575,7 @@ There are a wide range of other operators in Python:
     -1
     ```
 
-`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
+`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs “to the power of”. “`10` to the power of `3`” is `10 * 10 * 10`, or `1000`.
 
 ```python
     >>> 10 / 2
@@ -4584,7 +4584,7 @@ There are a wide range of other operators in Python:
     1000
 ```
 
-Another interesting operator is `%`, called "_modulo_", which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
+Another interesting operator is `%`, called “_modulo_”, which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
 
 Let's look at some terminology:
 
@@ -4698,7 +4698,7 @@ Let's say we type in `5+6+10`, without any spaces between the operands, and the 
 
 In an expression, using spaces makes it easier for you to read it, but it's not mandatory. `5 + 6 + 10` is easier to read than `5+6+10`, but does not make any difference to the Python compiler.
 
-The next puzzle tries to evaluate `5 / 2`, which is "`5` divided by `2`". What would be the output? `2.5`.
+The next puzzle tries to evaluate `5 / 2`, which is “`5` divided by `2`”. What would be the output? `2.5`.
 
 ```python
     >>> 5/2
@@ -4794,7 +4794,7 @@ There are a number of in-built functions in Python to help print strings. One of
     SyntaxError: Missing parentheses in call to 'print'. Did you mean print(Hello)?
 ```
 
-The Python compiler gives you an error, that says "missing parentheses".
+The Python compiler gives you an error, that says “missing parentheses”.
 
 Will `print(Hello)` work?
 
@@ -4896,7 +4896,7 @@ Consider `abs()` \(which stands for absolute value\), a method that accepts a nu
     10.5
 ```
 
-If you pass in a string value, will it work? It complains, "`abs()` function will not work with a string, it only works with numeric values".
+If you pass in a string value, will it work? It complains, “`abs()` function will not work with a string, it only works with numeric values”.
 
 ```python
     >>> abs("10.5")
@@ -4905,7 +4905,7 @@ If you pass in a string value, will it work? It complains, "`abs()` function wil
     TypeError: bad operand type for abs(): 'str'
 ```
 
-Let's say you want to use a function that computes "to the power of", for instance "`2` to the power of `5`". In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
+Let's say you want to use a function that computes “to the power of”, for instance “`2` to the power of `5`”. In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
 
 Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow(2 5)`. `pow(2, 5)` is the correct syntax.
 
@@ -4926,7 +4926,7 @@ Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow
 
 You'll see that `32` is printed.
 
-Let's see another example, "`10` to the power of `3`". `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
+Let's see another example, “`10` to the power of `3`”. `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
 
 ```python
     >>> pow(10, 3)
@@ -5177,7 +5177,7 @@ Now let's take a different scenario. We remove all the parameters passed to `for
     IndexError: tuple index out of range
 ```
 
-It says `IndexError`, which means :"you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?"
+It says `IndexError`, which means :“you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?”
 
 Let's look at a few more things related to other data types. We try to format the following inside `print()`: `{0} * {1} = {2}`, and would pass in `2.5`, `2`, and `2.5 * 2` . Here, `2` is an integer value, but `2.5` is a floating point value. You can see that it prints `2.5 * 2 = 5.0`. So this approach of formatting values with `print()`, works also with floating point data as well.
 
@@ -5225,7 +5225,7 @@ Let's try a different approach.
 
 What would happen if you replace `1` with `index`, and `5 * 1` with `5 * index`, and try to run it?
 
-It gives an error! It says: "index is not defined".
+It gives an error! It says: “index is not defined”.
 
 Let's try and fix this, and execute `index = 2`. What would happen?
 
@@ -5358,7 +5358,7 @@ What if I try to refer to a variable which is not yet created?
     NameError: name 'count' is not defined
 ```
 
-Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: "`count` is not defined, I have no idea what count is."
+Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: “`count` is not defined, I have no idea what count is.”
 
 Once you assign a value to a variable, you can use it.
 
@@ -5458,7 +5458,7 @@ Let's try `j = 2 * i`.
 
 In mathematics, When we execute `j = i`, it means `j` and `i` are equal.
 
-In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is "No"!
+In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is “No”!
 
 ```python
     >>> 5 = j
@@ -5466,7 +5466,7 @@ In prgramming, the value of the expression on right hand side is assigned to the
     SyntaxError: can't assign to literal
 ```
 
-The Python Shell throws an error, saying "Can't assign to literal", as `5` is a literal.
+The Python Shell throws an error, saying “Can't assign to literal”, as `5` is a literal.
 
 Let's create a couple of variables. `num1 = 5` and `num2 = 3`. We would want to add these and create a fresh variable. Let's say the name of the variable is `sum`.
 
@@ -6063,10 +6063,10 @@ We will now leave you with two exercises, based on what we have learned about me
 
 1. Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
 2. Write and execute a method, that prints four statements:
-    1. "I have created my first variable."
-    2. "I've created in my first loop."
-    3. "I've created my first method."
-    4. "I am excited to learn Python." You need to print these four statements on four consecutive lines.
+    1. “I have created my first variable.”
+    2. “I've created in my first loop.”
+    3. “I've created my first method.”
+    4. “I am excited to learn Python.” You need to print these four statements on four consecutive lines.
 
 **Solutions**
 
@@ -6160,7 +6160,7 @@ Earlier, we wrote code for `print_hello_world_thrice()`, which prints the messag
 
 Let's say you want to print it five times. You would need to write another method that does what you need. Doesn't that seem monotonous?
 
-Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print "Hello World" five times?
+Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print “Hello World” five times?
 
 The `5` which we are passing here is called an **argument**.
 
@@ -6184,7 +6184,7 @@ Although we are not doing exactly what we set out to, let's see what would happe
     TypeError: print_hello_world() missing 1 required positional argument: 'no_of_times'
 ```
 
-Error! Something like "Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value". Let's pass in a value, such as `5`.
+Error! Something like “Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value”. Let's pass in a value, such as `5`.
 
 ```python
     >>> print_hello_world(5)
@@ -6314,7 +6314,7 @@ In this step, Let's look at a few exercises related to the method parameter.
     >>>
 ```
 
-If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as "Camel Case".
+If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as “Camel Case”.
 
 That's NOT how Python programmers name their methods. Pythonic way is to use underscore `_` to separate words in the method name, as in `print_numbers()`.
 
@@ -6353,7 +6353,7 @@ In this step, let's look at creating a method with multiple parameters.
 
 **Snippet-01:**
 
-`print_hello_world` accepts one parameter and prints "Hello World" the specified number of times.
+`print_hello_world` accepts one parameter and prints “Hello World” the specified number of times.
 
 ```python
     >>> def print_hello_world(no_of_times):
@@ -6383,7 +6383,7 @@ A good programmer tries to create a more generic solution.
 
 The good programmer that you are, you created a new method called `print_string(str, no_of_times)` accepting a text parameter, in addition to `no_of_times`.
 
-Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: "I need `no_of_times` to be present in here".
+Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: “I need `no_of_times` to be present in here”.
 
 ```python
     >>> print_string("Welcome to Python")
@@ -7045,7 +7045,7 @@ Here's the video guide for this step
 
 -   [Installing VSCode](https://www.youtube.com/watch?v=pI_cnCXpCTU)
 
-Go to Google and type in "VSCode Community Edition Download". Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
+Go to Google and type in “VSCode Community Edition Download”. Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
 
 You'll go to a page where you can choose the operating system: whether you are on Windows, Mac, or Linux.
 
@@ -7341,11 +7341,11 @@ In this step, we:
 
 We will now shift our attention to the `bool` data type.
 
-A boolean value is something which can be either "true" or "false".
+A boolean value is something which can be either “true” or “false”.
 
 **Snippet-01:**
 
-In Python, "true" is represented by `True`, and "false" by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
+In Python, “true” is represented by `True`, and “false” by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
 
 ```python
     >>> True
@@ -8288,7 +8288,7 @@ Let's do the reverse.
     ValueError: invalid literal for int()
 ```
 
-if we do `int('45.56')`, you can see that it throws an error. It says "I cannot convert this to an `int`, as `45.56` is an invalid integer".
+if we do `int('45.56')`, you can see that it throws an error. It says “I cannot convert this to an `int`, as `45.56` is an invalid integer”.
 
 You can also pass an additional parameter to `int` indicating the numeric system - 16 for Hexa decimal, 8 for Octal etc. Default is 10 - Decimal.
 
@@ -8344,7 +8344,7 @@ When we execute `message.upper()`, a new string is created, and it is returned b
 
 Once you define a string in Python, you'll not be able to change the value of it.
 
-You can use - "OK. I can do something of this kind: `message = message.upper()`".
+You can use - “OK. I can do something of this kind: `message = message.upper()`”.
 
 What would happen now?
 
@@ -8415,7 +8415,7 @@ In Python, whether you're talking about a string, or you're talking about a sing
     IndexError: string index out of range
 ```
 
-It says: "The given index is out of the range of the value of that specific string".
+It says: “The given index is out of the range of the value of that specific string”.
 
 Let's say we would want to print all the characters in this string.
 

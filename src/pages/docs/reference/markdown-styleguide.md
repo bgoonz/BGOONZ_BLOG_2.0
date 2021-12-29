@@ -1,3 +1,17 @@
+---
+title: Markdown Lint Styleguide
+weight: 0
+excerpt: Markdown Lint Styleguide
+seo:
+    title: 'Markdown Lint Styleguide'
+    description: 'This document contains a description of all rules, what they are checking for,
+as well as examples of documents that break the rule and corrected
+versions of the examples.'
+    robots: []
+    extra: []
+template: docs
+---
+
 # Rules
 
 This document contains a description of all rules, what they are checking for,

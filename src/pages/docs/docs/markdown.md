@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-## Markdown
+## Markdown:
 
 ## Why markdown?
 
@@ -31,7 +31,7 @@ The basics of markdown can be found [here](https://guides.github.com/features/ma
 
 ### `left` alignment
 
-<img align="left" width="100" height="100" src="https://bgoonz-blog.netlify.app/images/fillmurray.jpg">
+<img align="left" width="100" height="100" src="http://www.fillmurray.com/100/100">
 
 This is the code you need to align images to the left:
 
@@ -88,9 +88,9 @@ Collapsing large blocks of Markdown text
 <details>
 <summary>To make sure markdown is rendered correctly in the collapsed section...</summary>
 
-1. Put an **empty line** after the `<summary>` block.
-2. _Insert your markdown syntax_
-3. Put an **empty line** before the `</details>` tag
+1.  Put an **empty line** after the `<summary>` block.
+2.  _Insert your markdown syntax_
+3.  Put an **empty line** before the `</details>` tag
 
 </details>
 
@@ -196,9 +196,9 @@ Show DEMO
 
 Serverless.com is comprised of 3 separate repositories
 
--   <https://github.com/serverless/blog>
--   <https://github.com/serverless/serverless> | Shoutout to [Phenomic.io](https://phenomic.io/)
--   <https://github.com/serverless/site>
+-   https://github.com/serverless/blog
+-   https://github.com/serverless/serverless | Shoutout to [Phenomic.io](https://phenomic.io/)
+-   https://github.com/serverless/site
 
 **Why multiple repos?**
 

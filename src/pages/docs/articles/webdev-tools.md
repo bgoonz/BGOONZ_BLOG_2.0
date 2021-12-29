@@ -140,7 +140,7 @@ You'll find all the relevant features you'd expect for each stage of the develop
 
 The Command-line Interface (CLI) is probably the most notable feature though. it allows you to initialise, develop, scaffold and maintain Angular apps right from the command shell.
 
-**💡Pro Tip:** A JavaScript library is a collection or "library" of prewritten code snippets that can be used to repeat common JavaScript functions. It's also important to note, that which JavaScript framework you use often depends on your client's/business' stack.
+**💡Pro Tip:** A JavaScript library is a collection or “library” of prewritten code snippets that can be used to repeat common JavaScript functions. It's also important to note, that which JavaScript framework you use often depends on your client's/business' stack.
 
 ### 9. React
 
@@ -152,11 +152,11 @@ React is one of the most popular of the many JavaScript frameworks available. Us
 
 ### 10. Vue
 
-Yet another JavaScript library, like React, [Vue](https://vuejs.org/) (or Vue.js) is built for working with user interfaces. Labelling itself as a more "approachable, versatile and performant" alternative, it helps you create a more maintainable and testable codebase.
+Yet another JavaScript library, like React, [Vue](https://vuejs.org/) (or Vue.js) is built for working with user interfaces. Labelling itself as a more “approachable, versatile and performant” alternative, it helps you create a more maintainable and testable codebase.
 
 As with other leading frameworks, Vue allows you to take a webpage and split it up into reusable components. Each component then has its own HTML, CSS and JS needed to render that piece of the page—making it faster to make granular changes.
 
-Vue offers a more "batteries-included" approach to web application development. It's simple to use and comes with [comprehensive documentation](https://vuejs.org/v2/guide/) and templates to guide you along.
+Vue offers a more “batteries-included” approach to web application development. It's simple to use and comes with [comprehensive documentation](https://vuejs.org/v2/guide/) and templates to guide you along.
 
 ### 11. Meteor
 
@@ -176,7 +176,7 @@ If you're looking to learn NET then there are plenty of resources. Microsoft has
 
 ## Front-End Frameworks
 
-Front-end frameworks (or "CSS frameworks") are packages containing pre-written, standardised code for easy application. It's kind of like a coding dictionary to help you quickly complete actions without having to come up with code yourself.
+Front-end frameworks (or “CSS frameworks”) are packages containing pre-written, standardised code for easy application. It's kind of like a coding dictionary to help you quickly complete actions without having to come up with code yourself.
 
 Keep in mind that there is some crossover with tools we've previously covered. For example, according to the [State of JavaScript 2020](https://2020.stateofjs.com/en-US/technologies/javascript-flavors/)\*, in the US, React, Angular and Vue \*are the three most popular front-end frameworks.
 
@@ -190,7 +190,7 @@ It features Sass variables and mixins (so you can assign variables to a name and
 
 ### 14. Semantic UI
 
-[Semantic UI](https://semantic-ui.com/) is a component framework for theming websites using what they call "human-friendly HTML" (sorry dogs). What they mean by this is that the tool uses words and classes as exchangeable concepts, giving you the same benefits as BEM without the headache.
+[Semantic UI](https://semantic-ui.com/) is a component framework for theming websites using what they call “human-friendly HTML” (sorry dogs). What they mean by this is that the tool uses words and classes as exchangeable concepts, giving you the same benefits as BEM without the headache.
 
 But the real strength here is the breadth of Semantic UI's components. Whether it's elements, collections, views, modules of behaviours, the whole gamut of interface design is covered.
 
@@ -208,7 +208,7 @@ From the animations to UI elements and everything between, there's a real focus 
 
 ### 17. ChromeDevTools
 
-[Chrome DevTools](https://developer.chrome.com/docs/devtools/) is the name for the web development tools built into the Google Chrome web browser. No need to download any programs or check if it's got MacOS compatibility—just right click in the browser, choose "Inspect" and get stuck in.
+[Chrome DevTools](https://developer.chrome.com/docs/devtools/) is the name for the web development tools built into the Google Chrome web browser. No need to download any programs or check if it's got MacOS compatibility—just right click in the browser, choose “Inspect” and get stuck in.
 
 It doesn't have as many features as the other options on this list, but it does let you edit pages and diagnose problems with your sites. View and manipulate the DOM, change a page's style sheets (CSS) or use it as a JavaScript debugger.
 
@@ -216,15 +216,15 @@ It doesn't have as many features as the other options on this list, but it does 
 
 We love [Svelte](https://svelte.dev/) for two reasons. One, it just sounds awesome and two, it's all about empowering folks to build their projects with \*way less code, \*which is something we're passionate about here at Paperform.
 
-Technically, Svelte isn't a framework or a library. It's a "compiler", and it's gained quite a reputation in the web dev community for being one of the best frontend frameworks on the market. It's lightweight, SEO-optimised and unlike tools like React or Vue, doesn't require heavy browser processing.
+Technically, Svelte isn't a framework or a library. It's a “compiler”, and it's gained quite a reputation in the web dev community for being one of the best frontend frameworks on the market. It's lightweight, SEO-optimised and unlike tools like React or Vue, doesn't require heavy browser processing.
 
-Svelte's "killer app" is that is has no virtual Dom. This means there's considerably less re-renders of the UI, leading to a lightning fast experience. Some devs will be put off by this, but it makes it an ideal option for beginners or smaller projects.
+Svelte's “killer app” is that is has no virtual Dom. This means there's considerably less re-renders of the UI, leading to a lightning fast experience. Some devs will be put off by this, but it makes it an ideal option for beginners or smaller projects.
 
 ### 19. Ember
 
 [Ember.js](https://emberjs.com/) is an open-source JavaScript web framework released back in 2011. Since then it's been adopted by a large chunk of the web dev community and it's easy to see why—using it's simple and, whether you're creating feature-rich apps or client-side websites, the user experience is seamless.
 
-Working with Ember is a "batteries included" experience. Out of the box you have all the tools to start building UIs that work on any device. The built-in development environment comes with fast rebuilds, auto-reload and a test runner. Ember Data also lets you set up asynchronous relationships and keep models up to date across your app, which is perfect for remote work.
+Working with Ember is a “batteries included” experience. Out of the box you have all the tools to start building UIs that work on any device. The built-in development environment comes with fast rebuilds, auto-reload and a test runner. Ember Data also lets you set up asynchronous relationships and keep models up to date across your app, which is perfect for remote work.
 
 Not sold? Some of the biggest and best development teams in the world use Ember to iterate on their products, including Netflix, Intercom and Apple. Convinced?
 
@@ -270,7 +270,7 @@ On top of that there's a heap of automated testing tools to play with. Open-sour
 
 ### 24. GitKraken
 
-[GitKraken](https://www.gitkraken.com/) bills itself as the "easiest, safest and most powerful" way to use Git. They understand that Git can be difficult to learn, which is why they offer exhaustive docs, as well as integrations with GitHub, GitLab and Azure DevOps to make adding remotes easy.
+[GitKraken](https://www.gitkraken.com/) bills itself as the “easiest, safest and most powerful” way to use Git. They understand that Git can be difficult to learn, which is why they offer exhaustive docs, as well as integrations with GitHub, GitLab and Azure DevOps to make adding remotes easy.
 
 The UI is equal parts gorgeous and intuitive. One particularly helpful feature is the ability to map complicated commands to a single button or click of the keyboard. If you're working with a team, the visual commit graph also assists you to quickly view who made code changes and when.
 
@@ -408,7 +408,7 @@ Often the success of a project isn't simply down to technical brilliance—it re
 
 ### 38. ClickUp
 
-Product management tools should do two things: simplify your processes and help you ship products faster. [ClickUp](https://clickup.com/) does both. With an expansive suite of tools, it is truly "one app to replace them all", covering tasks, docs, chat, goals and more.
+Product management tools should do two things: simplify your processes and help you ship products faster. [ClickUp](https://clickup.com/) does both. With an expansive suite of tools, it is truly “one app to replace them all”, covering tasks, docs, chat, goals and more.
 
 Whether you're working solo or in a team, ClickUp lets you map out tasks, better plan your work and see your overall product vision. The major benefit here is the dizzying versatility of the platform. From building mind maps to planning tasks on a Kanban board, you can build out your own custom product management setup.
 
@@ -438,7 +438,7 @@ Slack isn't just for teams, either. Communities allow you to connect with people
 
 ### 42. Zoom
 
-Occasionally an app or program hits levels of popularity so high that it becomes the noun for what it's used for. This happened to Google long ago ("I'll Google it") and it happened to video chat tool [Zoom](https://zoom.us/) in the last year and a half (RIP Skype).
+Occasionally an app or program hits levels of popularity so high that it becomes the noun for what it's used for. This happened to Google long ago (“I'll Google it”) and it happened to video chat tool [Zoom](https://zoom.us/) in the last year and a half (RIP Skype).
 
 This happened for a reason: Zoom is awesome. While nothing replaces the feeling of face-to-face communication, it's the next best thing. Whether you want to chat to your family across the country or liaise with web design clients, it makes video calls ridiculously easy.
 
@@ -470,11 +470,11 @@ For example, let's say you're working with a theme colour that you keep having t
 
 ### 45. Stack Overflow
 
-Okay, so this isn't technically a tool. However, it's not hyperbole on the [Stack Overflow](https://stackoverflow.com/) website when it says, "every developer has a tab open to Stack Overflow". Ask around—they do. It's the most popular and comprehensive web development community on the internet.
+Okay, so this isn't technically a tool. However, it's not hyperbole on the [Stack Overflow](https://stackoverflow.com/) website when it says, “every developer has a tab open to Stack Overflow”. Ask around—they do. It's the most popular and comprehensive web development community on the internet.
 
 Stack Overflow is a public platform that aims to build the single most definitive collection of coding questions and answers. Developers, system admins and data scientists of every shape and size rely on it for accurate information to difficult technical challenges.
 
-We're talking the real nitty gritty. If you want to know why InvokeAsync shows an an error in a Blazor component, how to undo the most recent local commits in Git, or why HTML thinks the tag "chucknorris" is a colour, this is the place for you.
+We're talking the real nitty gritty. If you want to know why InvokeAsync shows an an error in a Blazor component, how to undo the most recent local commits in Git, or why HTML thinks the tag “chucknorris” is a colour, this is the place for you.
 
 While it's undoubtedly a gold mine of useful resources, it's important to note that the community can be a bit toxic when it comes to welcoming new web developers. Stack Overflow mods are aware of this (and have added new guidelines in response) but do be wary—and look for existing answers before asking a query of your own.
 
