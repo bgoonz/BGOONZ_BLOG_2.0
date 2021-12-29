@@ -1,6 +1,6 @@
 ## Russian Dolls
 
-Oleg has *N* dolls of various sizes. He can place the smaller dolls inside the larger ones, but dolls of the exact same size cannot be placed inside each other. He needs to find the minimum number of dolls that remain when the maximum number of dolls have been packed.
+Oleg has *N* dolls of various sizes. He can place the smaller dolls inside the larger ones, but dolls of the exact same size cannot be placed inside each other. He needs to find the minimum number of dolls that remain when the maximum number of dolls have been packed.
 
 ###
 
@@ -8,15 +8,15 @@ Oleg has *N* dolls of various sizes. He can place the smaller dolls inside the
 
 ### Input
 
-The first line of input contains an integer *N*, representing the number of dolls initially.\
-The second line consists of *N* space-separated integers representing the size of dolls.
+The first line of input contains an integer *N*, representing the number of dolls initially.\
+The second line consists of *N* space-separated integers representing the size of dolls.
 
 ###
 
 ### Constraints
 
-1 ≤ *N* ≤ 105\
-1 ≤ *size of doll* ≤ 105
+1 ≤ *N* ≤ 105\
+1 ≤ *size of doll* ≤ 105
 
 ###
 
@@ -35,7 +35,7 @@ Output
 
 2
 
-Explanation: In order to be left with the minimum number of dolls, Oleg will do the following:
+Explanation: In order to be left with the minimum number of dolls, Oleg will do the following:
 
 -   Puts doll at index 1 inside doll at index 3 i.e doll of size two in size three.
 -   Puts doll at index 2 inside box at index 4 i.e doll of size two in size three
