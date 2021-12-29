@@ -180,7 +180,6 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-        image: images/My Post.png
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
