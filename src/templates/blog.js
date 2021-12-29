@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import {graphql} from 'gatsby';
-
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 import {Layout} from '../components/index';
 import {toStyleObj, withPrefix, getPages, Link} from '../utils';
 
