@@ -98,7 +98,7 @@ sections:
       - title: Convolutional Neural Networks
         title_url: neural networks
         image_alt: neural networks
-        content: >+
+        content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
@@ -140,7 +140,7 @@ sections:
       - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |+
+        content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
           conducting fusion experiments with tritium — a rare and radioactive
@@ -170,7 +170,7 @@ sections:
             new_window: false
             no_follow: false
             type: action
-        image: images/bryan_guner_resume_2021-v4IMG.jpeg
+        image: images/image-of-resume.png
         title_url: >-
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
@@ -180,7 +180,6 @@ sections:
           - label: Learn More
             url: /showcase
             style: link
-        image: images/My Post.png
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
@@ -193,6 +192,16 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - title: Latest & Greatest
+    section_id: new content
+    image_alt: animated gif
+    image_position: right
+    content: |+
+      # ***What I've been working on lately:***
+
+    actions: []
+    type: section_content
+    image: images/cool annimation.gif
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
