@@ -164,8 +164,9 @@ sections:
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
           - label: Download PDF
-            url: '#'
-            style: link
+            url: >-
+              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
@@ -179,7 +180,9 @@ sections:
         actions:
           - label: Learn More
             url: /showcase
-            style: link
+            style: secondary
+        image_alt: portfolio of websites
+        image: images/portfolio-pic-494ea398.png
   - title: Blog-Archive-And-Mini-Projects
     section_id: lorem-ipsum
     image_alt: rotating pages
@@ -198,6 +201,15 @@ sections:
     image_position: right
     content: |+
       # ***What I've been working on lately:***
+
+      ## Web Dev Utilitiy Tools
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        ---
+
 
     actions: []
     type: section_content
