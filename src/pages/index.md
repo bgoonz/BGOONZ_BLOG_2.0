@@ -164,7 +164,8 @@ sections:
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
           - label: Download PDF
-            url: '#'
+            url: >-
+              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
             style: secondary
             icon_class: dev
             new_window: false
