@@ -192,7 +192,7 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-  - title: Web Audio Daw
+  - title: Latest & Greatest
     section_id: lorem-ipsum
     image_alt: portfolio
     image_position: left
