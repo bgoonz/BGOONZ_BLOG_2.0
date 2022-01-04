@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
                 <div>
                     <center>
                         <br />
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+            
                         <div id="search"> {Script} </div>
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
@@ -127,14 +127,14 @@ export default class Footer extends React.Component {
                                             by
                                             <span style={{ color: 'transparent' }}>freefind</span>
                                         </a>
-                                        {
+                                        {/* {
                                             <iframe
                                                 src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
                                                 frameborder="0"
                                                 id="social-embed"
                                                 width="100%!important"
                                             ></iframe>
-                                        }
+                                        } */}
                                     </td>
                                 </tr>
                             </tbody>
