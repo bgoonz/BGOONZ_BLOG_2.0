@@ -151,7 +151,7 @@ sections:
           tokamak with any significant amount of tritium.
         actions: []
         type: grid_item
-        image: images/iter-zoomed.PNG
+        image: images/iter-c7508519.jpg
     type: section_grid
   - section_id: features-two-col
     type: section_grid
