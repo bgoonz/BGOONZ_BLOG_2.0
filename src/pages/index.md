@@ -119,7 +119,7 @@ sections:
         image: images/jamstack.png
       - title: Asynchronous JavaScript
         title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        image_alt: async js
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions: []
         type: grid_item
