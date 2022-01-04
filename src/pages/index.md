@@ -135,7 +135,7 @@ sections:
             new_window: false
             no_follow: false
         type: grid_item
-        image: images/njdevils.jpg
+        image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: lorem-ipsum
@@ -151,7 +151,7 @@ sections:
           tokamak with any significant amount of tritium.
         actions: []
         type: grid_item
-        image: images/iter-zoomed.PNG
+        image: images/iter-c7508519.jpg
     type: section_grid
   - section_id: features-two-col
     type: section_grid
