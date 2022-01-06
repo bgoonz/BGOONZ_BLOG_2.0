@@ -1,7 +1,7 @@
 ---
 title: Big-O Notation
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Why is looking at runtime not a reliable method of calculating time complexity?
 seo:
   title: ''
   description: 'A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example'
