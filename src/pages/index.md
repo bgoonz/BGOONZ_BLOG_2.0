@@ -132,7 +132,7 @@ sections:
         image: images/eventloop.gif
       - title: NJ Devils
         image_alt: nj-devils
-        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
+        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devil-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
           - label: lorem-ipsum
             url: '#'
@@ -199,6 +199,9 @@ sections:
         src="https://random-static-html-deploys.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+        ---
+<br>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -207,17 +210,34 @@ sections:
     image_position: right
     content: |+
       # ***What I've been working on lately:***
-
       ## Web Dev Utilitiy Tools
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz-blog.netlify.app/docs/tools"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+        ---
+<br>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
         ---
+<br>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+        ---
+<br>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -233,21 +253,14 @@ sections:
       efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
       pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque
       imperdiet venenatis.
-              
       > Vestibulum ullamcorper risus auctor eleifend consequat.
-
-
       ![Placeholder
       Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)
-
-
       In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl
       elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam
       malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis.
       Vestibulum quis elit magna. Vestibulum accumsan blandit consequat.
       Phasellus quis posuere quam.
-
-
       Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum
       ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo
       euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat
