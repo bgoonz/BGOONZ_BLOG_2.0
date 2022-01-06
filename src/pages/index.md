@@ -1,4 +1,4 @@
-    ---
+---
     title: Web Dev Hub Home
     sections:
     - section_id: Intro
