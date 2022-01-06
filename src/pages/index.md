@@ -42,7 +42,7 @@ sections:
         image_alt: python
         title: Python Guide
         title_url: >-
-          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+          https://bgoonz-blog.netlify.app/docs/python/
         image: images/smiling-maple.png
       - content: |
           <div id="search"></div> <div id="search" />
@@ -118,12 +118,12 @@ sections:
         type: grid_item
         image: images/jamstack.png
       - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: Asynchronous JavaScript
+        image_alt: Asynchronous JavaScript
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions:
-          - label: lorem-ipsum
-            url: '#'
+          - label: Read More
+            url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
             style: link
             icon_class: dev
             new_window: false
@@ -134,8 +134,8 @@ sections:
         image_alt: nj-devils
         content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
-          - label: lorem-ipsum
-            url: '#'
+          - label: Nj Devils Website
+            url: 'https://www.allaboutthejersey.com/'
             style: link
             icon_class: dev
             new_window: false
@@ -144,8 +144,8 @@ sections:
         image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: 'https://www.allaboutthejersey.com/'
+        image_alt: nj devils team photo
         content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
@@ -194,12 +194,9 @@ sections:
     image_alt: showcase
     image_position: left
     content: |-
-    <iframeclass="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
+    <iframeclass="block-content" width="100%  width="1200px!important" height="1000px!important"
+        src="https://random-static-html-deploys.netlify.app/" frameborder="0" picture-in-picture" allowfullscreen></iframe>
+  actions: []
     type: section_content
   - title: Latest & Greatest
     section_id: new content
@@ -213,41 +210,17 @@ sections:
   <iframe class="block-content" width="100%  width=" 1200px!important" height="1000px!important"
       src="https://cheatsheets-42.netlify.app/" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="block-content" width="100%  width=" 1200px!important" height="1000px!important"
-      src="https://github.com/bgoonz/fb-and-twitter-api-embeds" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-          encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+  - title: Social Media
+    section_id: social
+    image_alt: social media embed
     image_position: left
     content: >-
-      Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non
-      efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
-      pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque
-      imperdiet venenatis.
-      > Vestibulum ullamcorper risus auctor eleifend consequat.
-      ![Placeholder
-      Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)
-      In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl
-      elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam
-      malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis.
-      Vestibulum quis elit magna. Vestibulum accumsan blandit consequat.
-      Phasellus quis posuere quam.
-      Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum
-      ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo
-      euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat
-      et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque
-      lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat
-      efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis
-      ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus
-      ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris,
-      viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus,
-      vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna
-      non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac
-      dui. Integer vel convallis justo.
+      <iframe class="block-content" width="100%  width=" 1200px!important" height="1000px!important"
+      src="https://github.com/bgoonz/fb-and-twitter-api-embeds" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: Web Audio DAW
@@ -280,7 +253,7 @@ sections:
         no_follow: false
         type: action
       - label: email
-        url: 'mailto:bryan.guner@gmail.com'
+        url: 'https://mailto:bryan.guner@gmail.com'
         style: primary
         icon_class: dev
         new_window: false
