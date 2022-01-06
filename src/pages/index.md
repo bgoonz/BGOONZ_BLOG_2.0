@@ -194,8 +194,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: |-
-    <iframeclass="block-content" width="100%  width="1200px!important" height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/" frameborder="0" picture-in-picture" allowfullscreen></iframe>
+   <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://random-static-html-deploys.netlify.app/" frameborder="0" picture-in-picture" allowfullscreen></iframe>
   actions: []
     type: section_content
   - title: Latest & Greatest
