@@ -1,37 +1,11 @@
--   ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+[Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+---------------------------------------------------------------------------------------------
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+Control the post processing and optimizations Netlify can do for you
 
-    <!-- Initialise MakerBadge with options -->
+### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)
 
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
-    </script>
-    ```
-
-    Remove
-
--   before `</body>`
-
-    addthis
-
-    ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-    ```
-
-    Remove
+Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
@@ -542,19 +516,6 @@
 
 -   before `</body>`
 
-    print2pdf
-
-    ```
-    <a href="//pdfcrowd.com/url_to_pdf/?"
-    onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
-    Save to PDF
-    </a>
-    ```
-
-    Remove
-
--   before `</body>`
-
     scroll2topsvg
 
     ```
@@ -686,28 +647,6 @@
 
     Remove
 
--   before `</body>`
-
-    tawk-chat
-
-    ```
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/613041ecd6e7610a49b3326a/1feidq23q';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    ```
-
-    Remove
-
 -   before `</head>`
 
     firebase-cdn
@@ -742,35 +681,6 @@
 
 -   before `</head>`
 
-    add-this-suggested-pages
-
-    ```
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-    ```
-
-    Remove
-
--   before `</body>`
-
-    auth-firestore-cloud
-
-    ```
-    <script>// Allow read/write access on all documents to any user signed in to the application
-    service cloud.firestore {
-      match /databases/{database}/documents {
-        match /{document=**} {
-          allow read, write: if request.auth != null;
-        }
-      }
-    }
-    </script>
-    ```
-
-    Remove
-
--   before `</head>`
-
     analytics
 
     ```
@@ -782,26 +692,6 @@
       gtag('js', new Date());
 
       gtag('config', 'G-F56YP2Y17L');
-    </script>
-    ```
-
-    Remove
-
--   before `</head>`
-
-    search-script
-
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-    <script type="text/javascript">
-      algoliasearchNetlify({
-        appId: 'O6OT9G9U8Z',
-        apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
-        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
-        branch: 'master',
-        selector: 'div#search',
-      });
     </script>
     ```
 
@@ -856,95 +746,193 @@
 
     Remove
 
-[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
+-   before `</head>`
 
-Add snippet
+    algolia-head
 
-### [Asset optimization](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#asset-optimization)
+    ```
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+      <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+      <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+        </script>
+        <script type="text/javascript">
+          algoliasearchNetlify({
+            appId: "O6OT9G9U8Z",
+            apiKey: "b0cb3d390176e1ff4bd1ecb12fc15730",
+            siteId: "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
+            branch: "master",
+            selector: "div#search"
+          });
+        </script>
+    ```
 
-URLs
+    Remove
 
-Pretty URLs
+-   before `</body>`
 
-CSS
+    fb
 
-Bundle & Minify
+    ```
+    <script>
+    FB.api(
+      '/https://sanity-gatsby-portfolio-3-web-4dmiq19t.netlify.app/',
+      'GET',
+      {},
+      function(response) {
+          // Insert your code here
+      }
+    );
 
-JS
+    </script>
 
-Bundle & Minify
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '448469606483680',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    ```
 
-Images
+    Remove
 
-Lossless compression
+-   before `</body>`
 
-Edit settings
+    stackbit-widget
 
-### [Prerendering](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#prerendering)
+    ```
+    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326"></script>
+    ```
 
-Beta
+    Remove
 
-Prerendering enabled with Netlify
+-   before `</head>`
 
-Edit settings
+    blm
 
-### [Form detection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#form-detection)
+    ```
+    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you're not using Netlify Forms, you can disable form detection to speed up deploy time.
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
 
-[Learn more about form detection in the docs](https://docs.netlify.com/site-deploys/post-processing/form-detection/)
+    <!-- Initialise MakerBadge with options -->
 
-Edit settings
+    <script>
+      BLMBadge.init({
+           layout:2,
+           theme:'dark',
+           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+           promoLink : 'https://minnesotafreedomfund.org/',
+           message : 'To be silent is to be complicit. Black lives matter.',
+           title : '#BlackLivesMatter',
+           imageAlt: "Black Lives Matter Badge"
+    })
+    </script>
+    ```
 
-[Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
--------------------------------------------------------------------------------------------------------
+    Remove
 
-Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
+-   before `</body>`
 
-### [Outgoing notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#outgoing-notifications)
+    addthis
 
-Add notification
+    ```
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    ```
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
+    Remove
 
-    Options
+-   before `</body>`
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
+    add-this
 
-    Options
+    ```
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    ```
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
+    Remove
 
-    Options
+-   before `</head>`
 
--   Add rich details to commits when Deploy Preview starts
+    meta
 
-    Options
+    ```
+    <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU" />
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" href="logo-circle.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="HTML">
+      <meta name="Author" content="Bryan Guner">
+      <meta name="keywords" content="HTML, Meta Tags, Metadata">
+      <meta name="description" content="Learning about Web Development.">
+      <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+      <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@bgoonz">
+      <meta name="twitter:creator" content="@bgoonz">
+      <meta name="twitter:image:src" content="/logo-circle.png">
+      <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner">
+      <meta name="twitter:description" content="The new home of my blog resource sharing website.">
+    <meta property="twitter:card" content="summary_large_image">
+      <link
+        href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
+        rel="apple-touch-icon">
+      <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
+    <meta property="og:image" content="https://mugshotbot.com/m/DROicc16">
+    ```
 
--   Add rich details to commits when Deploy Preview succeeds
+    Remove
 
-    Options
+-   before `</body>`
 
--   Add rich details to commits when Deploy Preview fails
+    test
 
-    Options
+-   before `</body>`
 
--   Email bryan.guner@gmail.com when deploy request is pending
+    search
 
-    Options
+    ```
+    <script>
+    let div = window.createElement('div');
+    div.id('search');
+    div.style = 'z-index:-1; position:absolute;width: 300px;height: 300px;bottom: 0px;right: 25%;left: 50 %;';
+    let docscontent = window.getElementByClassName('docs-content');
+    docscontent.appendChild(div);
 
--   Email bryan.guner@gmail.com when deploy request is accepted
+    let div1 = window.createElement('div');
+    div1.id('search');
+    div1.style = 'z-index:-1; position:absolute;width: 300px;height: 300px;background:#063;bottom: 0px;right: 25%;left: 50 %;margin-left: -150px';
+    let header = window.getElementByClassName('site-header-inside');
+    header.appendChild('div1');
 
-    Options
+    </script>
+    ```
 
--   Email bryan.guner@gmail.com when deploy request is rejected
+    Remove
 
-    Options
+-   before `</head>`
 
--   [Docs](https://www.netlify.com/docs/)
--   [Pricing](https://www.netlify.com/pricing/)
--   [Support](https://www.netlify.com/support)
--   [News](https://www.netlify.com/news/)
--   [Terms](https://www.netlify.com/tos/)
+    links-highlight
 
-© 2021 Netlify
+    ```
+    <style>
+
+    a {
+    color:blue;
+    text-decoration: underline!important;
+    }
+
+    </style>
+    ```
+
+    Remove
