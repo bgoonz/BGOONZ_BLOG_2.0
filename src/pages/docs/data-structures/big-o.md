@@ -3,7 +3,7 @@ title: Big-O Notation
 weight: 0
 excerpt: Why is looking at runtime not a reliable method of calculating time complexity?
 seo:
-  title: ''
+  title: 'Big-O Notation'
   description: 'A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example'
   robots: []
   extra: []
