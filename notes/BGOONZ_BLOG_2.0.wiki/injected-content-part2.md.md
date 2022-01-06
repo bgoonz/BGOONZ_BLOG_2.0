@@ -276,7 +276,6 @@ Inject analytics or other scripts into the HTML of your site.---
 
     <div id="search"></div>
 
-
 <br/>
 
 <br/>

@@ -708,10 +708,8 @@
                             </p>
                             <p name="931d" id="931d" class="graf graf--p graf-after--p">
                                 Here is your first new word in Git-speak: <em class="markup--em markup--p-em">repository</em>, often shortened to
-                                <em class="markup--em markup--p-em">repo</em>. A Git repo comprises all the source code
-                                for a particular project. In the "dark
-                                ages" example above, the repo is the first directory you created, where work is saved
-                                to, and which acts as the source for code
+                                <em class="markup--em markup--p-em">repo</em>. A Git repo comprises all the source code for a particular project. In the "dark
+                                ages" example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code
                                 shared to others. Without a repo, Git has nothing to act on.
                             </p>
                             <p name="1ef1" id="1ef1" class="graf graf--p graf-after--p">
@@ -739,10 +737,8 @@
                                 default, Git abbreviates hashes to 7 characters. You'll follow this convention, too.
                             </p>
                             <p name="9207" id="9207" class="graf graf--p graf-after--p">
-                                Git provides a helpful way for us to "alias" a commit in plain English as well. These
-                                aliases are called
-                                <em class="markup--em markup--p-em">refs</em>, short for "references". A special one
-                                that Git creates for all repositories is
+                                Git provides a helpful way for us to "alias" a commit in plain English as well. These aliases are called
+                                <em class="markup--em markup--p-em">refs</em>, short for "references". A special one that Git creates for all repositories is
                                 <code class="markup--code markup--p-code">HEAD</code>, which references the most recent commit. You&#39;ll learn more about
                                 creating your own refs when you learn about &quot;branching&quot;.
                             </p>
@@ -753,8 +749,7 @@
                                 the commit history is made up of changes you've already committed. You'll look more at these three lists soon.
                             </p>
                             <p name="4b8d" id="4b8d" class="graf graf--p graf-after--p">
-                                Git only cares about changes that are "tracked". To track a file, you must add it to the
-                                commit history. The working directory
+                                Git only cares about changes that are "tracked". To track a file, you must add it to the commit history. The working directory
                                 will always show the changes, even if they aren't tracked. In the commit history, you'll only have a history of files that have
                                 been formally tracked by your repository.
                             </p>
@@ -813,8 +808,7 @@
                                 class="graf graf--pre graf-after--pre"
                             ><code class="markup--code markup--pre-code">&gt; git add .</code></pre>
                             <p name="b90a" id="b90a" class="graf graf--p graf-after--pre">
-                                Adding a file (or files) moves them from Git's working directory to the staging area.
-                                You can see what's been "staged" and what
+                                Adding a file (or files) moves them from Git's working directory to the staging area. You can see what's been "staged" and what
                                 hasn't by using <code class="markup--code markup--p-code">git status</code>:
                             </p>
                             <figure name="179a" id="179a" class="graf graf--figure graf-after--p">
@@ -827,10 +821,8 @@
                                 />
                             </figure>
                             <p name="97e3" id="97e3" class="graf graf--p graf-after--figure">
-                                In this example, "Changes to be committed" is your staging area and "Changes not staged
-                                for commit" is your working directory.
-                                Notice that you also have "Untracked files", Git's way of reminding us that you may have
-                                forgotten to
+                                In this example, "Changes to be committed" is your staging area and "Changes not staged for commit" is your working directory.
+                                Notice that you also have "Untracked files", Git's way of reminding us that you may have forgotten to
                                 <code class="markup--code markup--p-code">git add</code> a file to your repo. Most Git commands will include a bit of help text
                                 in the output, so always read the messages carefully before moving forward. Thanks, Git!
                             </p>
@@ -899,8 +891,7 @@
                                 class="graf graf--pre graf-after--p"
                             ><code class="markup--code markup--pre-code">&gt; git commit -m &quot;Fix typo&quot;</code></pre>
                             <p name="183c" id="183c" class="graf graf--p graf-after--pre">
-                                This will commit your changes with the message "Fix typo" and avoid opening your default
-                                text editor. Remember the commit
+                                This will commit your changes with the message "Fix typo" and avoid opening your default text editor. Remember the commit
                                 messages are how you make your project's history friendly to humans, so don't use the
                                 <code class="markup--code markup--p-code">-m</code> flag as an excuse to write lame commit messages! A commit message should
                                 always explain why changes were made in clear, concise language. It is also best practice to use imperative voice in commit
@@ -999,8 +990,7 @@
                             <h3 name="506a" id="506a" class="graf graf--h3 graf-after--p">Connect-W-Github</h3>
                             <p name="aff4" id="aff4" class="graf graf--p graf-after--h3">
                                 Git can act as a great history tool and source code backup for your local projects, but it can also help you work with a team!
-                                Git is classified as a "DVCS", or "Distributed Version Control System". This means it
-                                has built-in support for managing code
+                                Git is classified as a "DVCS", or "Distributed Version Control System". This means it has built-in support for managing code
                                 both locally and from a distant source.
                             </p>
                             <p name="ed4a" id="ed4a" class="graf graf--p graf-after--p">
@@ -1141,8 +1131,7 @@
                                 code merged into your default branch? This is done by a process called a <em class="markup--em markup--p-em">Pull Request</em>.
                             </p>
                             <p name="4057" id="4057" class="graf graf--p graf-after--p">
-                                A pull request (or "PR") is a feature specific to GitHub, not a feature of Git. It's a
-                                safety net to prevent bugs, and it's a
+                                A pull request (or "PR") is a feature specific to GitHub, not a feature of Git. It's a safety net to prevent bugs, and it's a
                                 critical part of the collaboration workflow. Here's a high-level of overview of how it works:
                             </p>
                             <p name="5234" id="5234" class="graf graf--p graf-after--p">You push your code up to GitHub in its own branch.</p>
@@ -1178,8 +1167,7 @@
                                 Comparing changes with <code class="markup--code markup--p-code">git diff</code>
                             </p>
                             <p name="076b" id="076b" class="graf graf--p graf-after--p">
-                                Browsing through our code "checkpoints" with <code
-                                  class="markup--code markup--p-code">git checkout</code>
+                                Browsing through our code "checkpoints" with <code class="markup--code markup--p-code">git checkout</code>
                             </p>
                             <h3 name="87de" id="87de" class="graf graf--h3 graf-after--p">Seeing changes in real time</h3>
                             <p name="dc61" id="dc61" class="graf graf--p graf-after--h3">
@@ -1434,8 +1422,7 @@
                             </p>
                             <p name="3af8" id="3af8" class="graf graf--p graf-after--p">
                                 A practical example of when a soft reset would be handy is joining some small commits into a larger one. We'll pretend we've
-                                been struggling with "their", "there", and "they're" in our app. Here's our commit
-                                history:Those commit messages aren't great:
+                                been struggling with "their", "there", and "they're" in our app. Here's our commit history:Those commit messages aren't great:
                                 they're not very explanatory, and they don't provide a lot of value in our commit history. We'll fix them with a soft reset:
                             </p>
                             <pre
@@ -1486,8 +1473,7 @@
                                 commits.
                             </p>
                             <p name="446e" id="446e" class="graf graf--p graf-after--p">
-                                Mixed resets are a good option when you want to alter a change in a previous commit.
-                                Let's use a mixed reset with our "their",
+                                Mixed resets are a good option when you want to alter a change in a previous commit. Let's use a mixed reset with our "their",
                                 "there", "they're" example again.
                             </p>
                             <p name="a7a9" id="a7a9" class="graf graf--p graf-after--p">We'll start with "they're":</p>
@@ -1519,8 +1505,7 @@
                                 you there.
                             </p>
                             <p name="8262" id="8262" class="graf graf--p graf-after--p">
-                                It's our last round with "their", "there", and "they're". We've tried it all three ways
-                                and decided we don't need to use that
+                                It's our last round with "their", "there", and "they're". We've tried it all three ways and decided we don't need to use that
                                 word at all! Let's walk through a hard reset to get rid of our changes.
                             </p>
                             <p name="4876" id="4876" class="graf graf--p graf-after--p">We'll start in the same place we began for our soft reset:</p>
@@ -1657,8 +1642,7 @@
                                 though our commits have the same content, they have a new hash assigned, meaning they're entirely new commits! This is what we
                                 mean by "rewriting history": we've actually changed how Git refers to these changes now.
                             </p>
-                            <h3 name="d544" id="d544" class="graf graf--h3 graf--startsWithDoubleQuote graf-after--p">
-                              "Golden Rule of Git"</h3>
+                            <h3 name="d544" id="d544" class="graf graf--h3 graf--startsWithDoubleQuote graf-after--p">"Golden Rule of Git"</h3>
                             <p name="0166" id="0166" class="graf graf--p graf-after--h3">
                                 These tools can all feel pretty nifty, but be very wary of using them too much! While they can augment your Git skills from good
                                 to great, they can also have catastrophic side effects.
@@ -1821,8 +1805,7 @@
                                 id="a6f9"
                                 class="graf graf--pre graf-after--p"
                             ><code class="markup--code markup--pre-code">git diff<br>git diff all_checks.py<br>git diff --staged</code></pre>
-                            <h3 name="f2a6" id="f2a6" class="graf graf--h3 graf-after--pre">How to see changes using
-                              "git add -p":</h3>
+                            <h3 name="f2a6" id="f2a6" class="graf graf--h3 graf-after--pre">How to see changes using "git add -p":</h3>
                             <p name="b646" id="b646" class="graf graf--p graf-after--h3">
                                 This command opens a prompt and asks if you want to stage changes or not, and includes other options.
                             </p>
@@ -2310,8 +2293,7 @@
                                     >
                                 </li>
                                 <li name="74d7" id="74d7" class="graf graf--li graf-after--li">
-                                    On Windows, if you are using PuTTY, go to your session properties, then navigate to
-                                    "Connection" and under "Sending of null
+                                    On Windows, if you are using PuTTY, go to your session properties, then navigate to "Connection" and under "Sending of null
                                     packets to keep session active", set
                                     <code class="markup--code markup--li-code">Seconds between keepalives (0 to turn off)</code> to
                                     <code class="markup--code markup--li-code">60</code>.
