@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-### A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+# A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
 ![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
 
