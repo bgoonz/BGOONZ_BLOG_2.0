@@ -1,1020 +1,595 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</title>
-        <style>
-            * {
-                font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-            }
+<!DOCTYPE html><html><head>
+      <title>A-Quick-Guide-to-Big-O-Notation--Memoization--Tabulation--and-Sorting-Algorithms-by-Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////workspace/.vscode-remote/extensions/shd101wyy.markdown-preview-enhanced-0.6.1/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
 
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-            }
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
 
-            h1 {
-                font-size: 50px;
-                margin-bottom: 17px;
-                color: #333;
-            }
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
 
-            h2 {
-                font-size: 24px;
-                line-height: 1.6;
-                margin: 30px 0 0 0;
-                margin-bottom: 18px;
-                margin-top: 33px;
-                color: #333;
-            }
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
 
-            h3 {
-                font-size: 30px;
-                margin: 10px 0 20px 0;
-                color: #333;
-            }
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
 
-            header {
-                width: 640px;
-                margin: auto;
-            }
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
 
-            section {
-                width: 640px;
-                margin: auto;
-            }
+.token.cdata {
+  color: #183691;
+}
 
-            section p {
-                margin-bottom: 27px;
-                font-size: 20px;
-                line-height: 1.6;
-                color: #333;
-            }
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
 
-            section img {
-                max-width: 640px;
-            }
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
 
-            footer {
-                padding: 0 20px;
-                margin: 50px 0;
-                text-align: center;
-                font-size: 12px;
-            }
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
 
-            .aspectRatioPlaceholder {
-                max-width: auto !important;
-                max-height: auto !important;
-            }
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
 
-            .aspectRatioPlaceholder-fill {
-                padding-bottom: 0 !important;
-            }
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
 
-            header,
-            section[data-field='subtitle'],
-            section[data-field='description'] {
-                display: none;
-            }
-        </style>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css" />
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
     </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting">A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting</h1>
 
-    <body>
-        <article class="h-entry">
-            <header>
-                <h1 class="p-name">A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example</h1>
-            </header>
-            <section data-field="subtitle" class="p-summary">Curating Complexity: A Guide to Big-O Notation</section>
-            <section data-field="body" class="e-content">
-                <section name="ac05" class="section section--body section--first">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="794e" id="794e" class="graf graf--h3 graf--leading graf--title">
-                                A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
-                            </h3>
-                            <figure name="33dc" id="33dc" class="graf graf--figure graf-after--h3">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*yjlSk3T9c2_14in1.png"
-                                    data-width="1000"
-                                    data-height="704"
-                                    data-is-featured="true"
-                                    src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png"
-                                />
-                            </figure>
-                            <p name="398e" id="398e" class="graf graf--p graf-after--figure">
-                                <strong class="markup--strong markup--p-strong"
-                                    ><em class="markup--em markup--p-em">Curating Complexity: A Guide to Big-O Notation</em></strong
-                                >
-                            </p>
-                            <figure name="aa3a" id="aa3a" class="graf graf--figure graf--iframe graf-after--p">
-                                <iframe
-                                    src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true&amp;amp%3Breferrer=https%3A%2F%2Fbryanguner.medium.com"
-                                    width="700"
-                                    height="525"
-                                    frameborder="0"
-                                    scrolling="no"
-                                ></iframe>
-                            </figure>
-                            <div name="b07b" id="b07b" class="graf graf--mixtapeEmbed graf-after--figure">
-                                <a
-                                    href="https://replit.com/@bgoonz/Medium-article-comp-complex"
-                                    data-href="https://replit.com/@bgoonz/Medium-article-comp-complex"
-                                    class="markup--anchor markup--mixtapeEmbed-anchor"
-                                    title="https://replit.com/@bgoonz/Medium-article-comp-complex"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Medium-article-comp-complex</strong>
-                                    <br />
+<h2 class="mume-header" id="curating-complexity-a-guide-to-big-o-notation">Curating Complexity: A Guide to Big-O Notation</h2>
 
-                                    <em class="markup--em markup--mixtapeEmbed-em">A Node.js repl by bgoonz</em>replit.com</a
-                                ><a
-                                    href="https://replit.com/@bgoonz/Medium-article-comp-complex"
-                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                                    data-media-id="a7852e583a021edfc7ce8a04145e0a0e"
-                                    data-thumbnail-img-id="0*DJBe9dmlpfxCF47e"
-                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*DJBe9dmlpfxCF47e)"
-                                ></a>
-                            </div>
-                        </div>
-                        <div class="section-inner sectionLayout--fullWidth">
-                            <figure name="6851" id="6851" class="graf graf--figure graf--iframe graf--layoutFillWidth graf-after--mixtapeEmbed">
-                                <iframe
-                                    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io"
-                                    width="null"
-                                    height="null"
-                                    frameborder="0"
-                                    scrolling="no"
-                                ></iframe>
-                            </figure>
-                        </div>
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <ul class="postList">
-                                <li name="b70f" id="b70f" class="graf graf--li graf-after--figure">
-                                    Why is looking at runtime not a reliable method of calculating time complexity?
-                                </li>
-                                <li name="2b21" id="2b21" class="graf graf--li graf-after--li">
-                                    Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
-                                </li>
-                                <li name="1e1a" id="1e1a" class="graf graf--li graf-after--li">
-                                    How many background processes ran concurrently with our program that was being tested?
-                                </li>
-                                <li name="1cad" id="1cad" class="graf graf--li graf-after--li">
-                                    We also need to ask if our code remains performant if we increase the size of the input.
-                                </li>
-                                <li name="3cb7" id="3cb7" class="graf graf--li graf-after--li">
-                                    The real question we need to answering is:
-                                    <code class="markup--code markup--li-code">How does our performance scale?</code>.
-                                </li>
-                            </ul>
-                            <h3 name="5fc8" id="5fc8" class="graf graf--h3 graf-after--li">big 'O' notation</h3>
-                            <ul class="postList">
-                                <li name="9b21" id="9b21" class="graf graf--li graf-after--h3">
-                                    Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
-                                </li>
-                                <li name="c0e6" id="c0e6" class="graf graf--li graf-after--li">
-                                    Since we use mathematical functions in Big-O, there are a few big picture ideas that we'll want to keep in mind:
-                                </li>
-                                <li name="2e86" id="2e86" class="graf graf--li graf-after--li">The function should be defined by the size of the input.</li>
-                                <li name="07b0" id="07b0" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">Smaller</code> Big O is better (lower time complexity)
-                                </li>
-                                <li name="f1b0" id="f1b0" class="graf graf--li graf-after--li">Big O is used to describe the worst case scenario.</li>
-                                <li name="e11f" id="e11f" class="graf graf--li graf-after--li">
-                                    Big O is simplified to show only its most dominant mathematical term.
-                                </li>
-                            </ul>
-                            <h3 name="6083" id="6083" class="graf graf--h3 graf-after--li">Simplifying Math Terms</h3>
-                            <ul class="postList">
-                                <li name="64a4" id="64a4" class="graf graf--li graf-after--h3">
-                                    We can use the following rules to simplify the our Big O functions:
-                                </li>
-                                <li name="a2c2" id="a2c2" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">Simplify Products</code> : If the function is a product of many terms, we drop
-                                    the terms that don&#39;t depend on n.
-                                </li>
-                                <li name="b058" id="b058" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">Simplify Sums</code> : If the function is a sum of many terms, we drop the
-                                    non-dominant terms.
-                                </li>
-                                <li name="eb32" id="eb32" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">n</code> : size of the input
-                                </li>
-                                <li name="c042" id="c042" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">T(f)</code> : unsimplified math function
-                                </li>
-                                <li name="7b41" id="7b41" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code">O(f)</code> : simplified math function.
-                                </li>
-                            </ul>
-                            <p name="9e91" id="9e91" class="graf graf--p graf-after--li">
-                                <code class="markup--code markup--p-code">Putting it all together</code>
-                            </p>
-                            <figure name="6e23" id="6e23" class="graf graf--figure graf-after--p">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="1*TT8uuv1x3nmGUw5rvtoZ8A.png"
-                                    data-width="416"
-                                    data-height="723"
-                                    src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png"
-                                />
-                            </figure>
-                            <ul class="postList">
-                                <li name="d18b" id="d18b" class="graf graf--li graf-after--figure">First we apply the product rule to drop all constants.</li>
-                                <li name="4335" id="4335" class="graf graf--li graf-after--li graf--trailing">
-                                    Then we apply the sum rule to select the single most dominant term.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section name="7935" class="section section--body">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="915e" id="915e" class="graf graf--h3 graf--leading">Complexity Classes</h3>
-                            <p name="2b3e" id="2b3e" class="graf graf--p graf-after--h3">Common Complexity Classes</p>
-                            <h4 name="e9a1" id="e9a1" class="graf graf--h4 graf-after--p">There are 7 major classes in Time Complexity</h4>
-                            <figure name="5465" id="5465" class="graf graf--figure graf-after--h4">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="1*6zKhmJoHkvDbrd8jfUDf3A.png"
-                                    data-width="496"
-                                    data-height="321"
-                                    src="https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png"
-                                />
-                            </figure>
-                            <h4 name="a022" id="a022" class="graf graf--h4 graf-after--figure">
-                                <code class="markup--code markup--h4-code">O(1) Constant</code>
-                            </h4>
-                            <blockquote name="d1f0" id="d1f0" class="graf graf--blockquote graf-after--h4">
-                                <strong class="markup--strong markup--blockquote-strong"
-                                    >The algorithm takes roughly the same number of steps for any input size.</strong
-                                >
-                            </blockquote>
-                            <figure name="e677" id="e677" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/91b823971e8faac788f38ff670efc19d#file-constant-js.js"></script>
-                            </figure>
-                            <h4 name="81af" id="81af" class="graf graf--h4 graf-after--figure">
-                                <code class="markup--code markup--h4-code">O(log(n)) Logarithmic</code>
-                            </h4>
-                            <blockquote name="0f76" id="0f76" class="graf graf--blockquote graf-after--h4">
-                                <strong class="markup--strong markup--blockquote-strong"
-                                    >In most cases our hidden base of Logarithmic time is 2, log complexity algorithm's will typically display 'halving' the
-                                    size of the input (like binary search!)</strong
-                                >
-                            </blockquote>
-                            <figure name="0bcd" id="0bcd" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/a1e6dec81f0639818db7f9a8e76b3992.js"></script>
-                            </figure>
-                            <h4 name="be35" id="be35" class="graf graf--h4 graf-after--figure">
-                                <code class="markup--code markup--h4-code">O(n) Linear</code>
-                            </h4>
-                            <blockquote name="59f1" id="59f1" class="graf graf--blockquote graf-after--h4">
-                                <strong class="markup--strong markup--blockquote-strong">Linear algorithm's will access each item of the input "once".</strong>
-                            </blockquote>
-                            <figure name="5243" id="5243" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/cc953ba2bd6e1d6f524a6d8b297aad5b.js"></script>
-                            </figure>
-                            <h3 name="b965" id="b965" class="graf graf--h3 graf-after--figure">
-                                <code class="markup--code markup--h3-code">O(nlog(n)) Log Linear Time</code>
-                            </h3>
-                            <blockquote name="90c3" id="90c3" class="graf graf--blockquote graf-after--h3">
-                                <strong class="markup--strong markup--blockquote-strong"
-                                    >Combination of linear and logarithmic behavior, we will see features from both classes.</strong
-                                >
-                            </blockquote>
-                            <blockquote name="1c92" id="1c92" class="graf graf--blockquote graf-after--blockquote">
-                                Algorithm's that are log-linear will use<strong class="markup--strong markup--blockquote-strong">
-                                    both recursion AND iteration.</strong
-                                >
-                            </blockquote>
-                            <figure name="7d2b" id="7d2b" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/e9bd6337c17f1623a4da088574ed0d8e.js"></script>
-                            </figure>
-                            <h3 name="fb10" id="fb10" class="graf graf--h3 graf-after--figure">
-                                <code class="markup--code markup--h3-code">O(nc) Polynomial</code>
-                            </h3>
-                            <blockquote name="820a" id="820a" class="graf graf--blockquote graf-after--h3">
-                                <strong class="markup--strong markup--blockquote-strong">C is a fixed constant.</strong>
-                            </blockquote>
-                            <figure name="7e11" id="7e11" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/3e6096e66bac80b962435b7d873cdbe9.js"></script>
-                            </figure>
-                            <h3 name="2736" id="2736" class="graf graf--h3 graf-after--figure">
-                                <code class="markup--code markup--h3-code">O(c^n) Exponential</code>
-                            </h3>
-                            <blockquote name="393f" id="393f" class="graf graf--blockquote graf-after--h3">
-                                <strong class="markup--strong markup--blockquote-strong"
-                                    >C is now the number of recursive calls made in each stack frame.</strong
-                                >
-                            </blockquote>
-                            <blockquote name="78e2" id="78e2" class="graf graf--blockquote graf-after--blockquote">
-                                <strong class="markup--strong markup--blockquote-strong">Algorithm's with exponential time are VERY SLOW.</strong>
-                            </blockquote>
-                            <figure name="0881" id="0881" class="graf graf--figure graf--iframe graf-after--blockquote graf--trailing">
-                                <script src="https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705.js"></script>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-                <section name="c3ad" class="section section--body">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="715f" id="715f" class="graf graf--h3 graf--leading">Memoization</h3>
-                            <ul class="postList">
-                                <li name="b3b0" id="b3b0" class="graf graf--li graf-after--h3">
-                                    Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use
-                                    recursive strategies to solve.
-                                </li>
-                                <li name="2583" id="2583" class="graf graf--li graf-after--li">
-                                    MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only
-                                    'solve' each problem once.
-                                </li>
-                                <li name="65c9" id="65c9" class="graf graf--li graf-after--li">Two features that comprise memoization:</li>
-                            </ul>
-                            <ol class="postList">
-                                <li name="b2d2" id="b2d2" class="graf graf--li graf-after--li">FUNCTION MUST BE RECURSIVE.</li>
-                                <li name="91a3" id="91a3" class="graf graf--li graf-after--li">
-                                    Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)
-                                </li>
-                            </ol>
-                            <figure name="9f52" id="9f52" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="1*4U79jBMjU2wKE_tyYcD_3A.png"
-                                    data-width="915"
-                                    data-height="571"
-                                    src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png"
-                                />
-                            </figure>
-                            <figure name="1681" id="1681" class="graf graf--figure graf-after--figure">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="1*Qh42KZgcCxmVt6WrTasCVw.png"
-                                    data-width="910"
-                                    data-height="636"
-                                    src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png"
-                                />
-                            </figure>
-                            <h3 name="0763" id="0763" class="graf graf--h3 graf-after--figure">Memoizing Factorial</h3>
-                            <figure name="1a08" id="1a08" class="graf graf--figure graf--iframe graf-after--h3">
-                                <script src="https://gist.github.com/eengineergz/0f92023740a44e3b41a0defb227ade37#file-memoizing-factorial-js.js"></script>
-                            </figure>
-                            <p name="644f" id="644f" class="graf graf--p graf-after--figure">
-                                Our memo object is <em class="markup--em markup--p-em">mapping</em> out our arguments of factorial to it's return value.
-                            </p>
-                            <ul class="postList">
-                                <li name="854a" id="854a" class="graf graf--li graf-after--p">Keep in mind we didn't improve the speed of our algorithm.</li>
-                            </ul>
-                            <h3 name="c6ac" id="c6ac" class="graf graf--h3 graf-after--li">Memoizing Fibonacci</h3>
-                            <figure name="9950" id="9950" class="graf graf--figure graf-after--h3">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*2XaPj7UGKZYFjYhb"
-                                    data-width="760"
-                                    data-height="452"
-                                    src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb"
-                                />
-                            </figure>
-                            <ul class="postList">
-                                <li name="5be6" id="5be6" class="graf graf--li graf-after--figure">
-                                    Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.
-                                </li>
-                            </ul>
-                            <h3 name="860d" id="860d" class="graf graf--h3 graf-after--li">The Memoization Formula</h3>
-                            <blockquote name="654d" id="654d" class="graf graf--blockquote graf-after--h3">
-                                <em class="markup--em markup--blockquote-em">Rules:</em>
-                            </blockquote>
-                            <ol class="postList">
-                                <li name="b3f0" id="b3f0" class="graf graf--li graf-after--blockquote">
-                                    <em class="markup--em markup--li-em">Write the unoptimized brute force recursion (make sure it works);</em>
-                                </li>
-                                <li name="b36e" id="b36e" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Add memo object as an additional argument .</em>
-                                </li>
-                                <li name="f81f" id="f81f" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Add a base case condition that returns the stored value if the function's argument is in the memo.</em
-                                    >
-                                </li>
-                                <li name="1b0f" id="1b0f" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Before returning the result of the recursive case, store it in the memo as a value and make the function's argument
-                                        it's key.</em
-                                    >
-                                </li>
-                            </ol>
-                            <h4 name="dad0" id="dad0" class="graf graf--h4 graf-after--li">Things to remember</h4>
-                            <ol class="postList">
-                                <li name="bc4a" id="bc4a" class="graf graf--li graf-after--h4">
-                                    <em class="markup--em markup--li-em"
-                                        >When solving DP problems with Memoization, it is helpful to draw out the visual tree first.</em
-                                    >
-                                </li>
-                                <li name="7bb1" id="7bb1" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">When you notice duplicate sub-tree's that means we can memoize.</em>
-                                </li>
-                            </ol>
-                            <figure name="7877" id="7877" class="graf graf--figure graf--iframe graf-after--li graf--trailing">
-                                <script src="https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de.js"></script>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-                <section name="f862" class="section section--body">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="c4a7" id="c4a7" class="graf graf--h3 graf--leading">Tabulation</h3>
-                            <h4 name="d926" id="d926" class="graf graf--h4 graf-after--h3">Tabulation Strategy</h4>
-                            <blockquote name="a701" id="a701" class="graf graf--blockquote graf-after--h4">Use When:</blockquote>
-                            <ul class="postList">
-                                <li name="f5b0" id="f5b0" class="graf graf--li graf-after--blockquote">
-                                    <strong class="markup--strong markup--li-strong">The function is iterative and not recursive.</strong>
-                                </li>
-                                <li name="015c" id="015c" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">The accompanying DS is usually an array.</em>
-                                </li>
-                            </ul>
-                            <figure name="db73" id="db73" class="graf graf--figure graf--iframe graf-after--li">
-                                <script src="https://gist.github.com/eengineergz/a57bf449f5a8b16eedd1aa9fd71707e2.js"></script>
-                            </figure>
-                            <h4 name="e9d4" id="e9d4" class="graf graf--h4 graf-after--figure">Steps for tabulation</h4>
-                            <ul class="postList">
-                                <li name="8918" id="8918" class="graf graf--li graf-after--h4">
-                                    <em class="markup--em markup--li-em">Create a table array based off the size of the input.</em>
-                                </li>
-                                <li name="b4e7" id="b4e7" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Initialize some values in the table to 'answer' the trivially small subproblem.</em>
-                                </li>
-                                <li name="072e" id="072e" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Iterate through the array and fill in the remaining entries.</em>
-                                </li>
-                                <li name="192e" id="192e" class="graf graf--li graf-after--li graf--trailing">
-                                    <em class="markup--em markup--li-em">Your final answer is usually the last entry in the table.</em>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section name="fc52" class="section section--body">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="7366" id="7366" class="graf graf--h3 graf--leading">Memo and Tab Demo with Fibonacci</h3>
-                            <blockquote name="bf6c" id="bf6c" class="graf graf--blockquote graf-after--h3">
-                                <em class="markup--em markup--blockquote-em">Normal Recursive Fibonacci</em>
-                            </blockquote>
-                            <pre
-                                name="8ad4"
-                                id="8ad4"
-                                class="graf graf--pre graf-after--blockquote"
-                            >function fibonacci(n) {<br>  if (n &lt;= 2) return 1;<br>  return fibonacci(n - 1) + fibonacci(n - 2);<br>}</pre>
-                            <blockquote name="0fee" id="0fee" class="graf graf--blockquote graf-after--pre">
-                                <em class="markup--em markup--blockquote-em">Memoization Fibonacci 1</em>
-                            </blockquote>
-                            <figure name="8b3d" id="8b3d" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/504a9120ca40bbb4a246549937c43a12.js"></script>
-                            </figure>
-                            <blockquote name="9fa9" id="9fa9" class="graf graf--blockquote graf-after--figure">
-                                <em class="markup--em markup--blockquote-em">Memoization Fibonacci 2</em>
-                            </blockquote>
-                            <figure name="9c13" id="9c13" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/07d315d92b3458a8640cee31bce9c236.js"></script>
-                            </figure>
-                            <blockquote name="7002" id="7002" class="graf graf--blockquote graf-after--figure">
-                                <em class="markup--em markup--blockquote-em">Tabulated Fibonacci</em>
-                            </blockquote>
-                            <figure name="4ba2" id="4ba2" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/b1b1f7e259193ecdc432350b6199f2d3.js"></script>
-                            </figure>
-                            <h3 name="a8cd" id="a8cd" class="graf graf--h3 graf-after--figure">Example of Linear Search</h3>
-                            <figure name="4301" id="4301" class="graf graf--figure graf--iframe graf-after--h3">
-                                <script src="https://gist.github.com/eengineergz/e98354b287ce2f80da4ab943399eb555.js"></script>
-                            </figure>
-                            <ul class="postList">
-                                <li name="84b2" id="84b2" class="graf graf--li graf-after--figure">
-                                    <em class="markup--em markup--li-em">Worst Case Scenario: The term does not even exist in the array.</em>
-                                </li>
-                                <li name="30dc" id="30dc" class="graf graf--li graf-after--li graf--trailing">
-                                    <em class="markup--em markup--li-em"
-                                        >Meaning: If it doesn't exist then our for loop would run until the end therefore making our time complexity O(n).</em
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section name="87aa" class="section section--body section--last">
-                    <div class="section-divider">
-                        <hr class="section-divider" />
-                    </div>
-                    <div class="section-content">
-                        <div class="section-inner sectionLayout--insetColumn">
-                            <h3 name="5bf0" id="5bf0" class="graf graf--h3 graf--leading">Sorting Algorithms</h3>
-                            <h3 name="ad34" id="ad34" class="graf graf--h3 graf-after--h3">Bubble Sort</h3>
-                            <p name="dfab" id="dfab" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Quadratic O(n^2)
-                            </p>
-                            <ul class="postList">
-                                <li name="ce1e" id="ce1e" class="graf graf--li graf-after--p">
-                                    The inner for-loop contributes to O(n), however in a worst case scenario the while loop will need to run n times before
-                                    bringing all n elements to their final resting spot.
-                                </li>
-                            </ul>
-                            <p name="96e2" id="96e2" class="graf graf--p graf-after--li">
-                                <code class="markup--code markup--p-code">Space Complexity</code>: O(1)
-                            </p>
-                            <ul class="postList">
-                                <li name="664f" id="664f" class="graf graf--li graf-after--p">
-                                    Bubble Sort will always use the same amount of memory regardless of n.
-                                </li>
-                            </ul>
-                            <figure name="24a9" id="24a9" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*Ck9aeGY-d5tbz7dT"
-                                    data-width="901"
-                                    data-height="535"
-                                    src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT"
-                                />
-                            </figure>
-                            <figure name="fa7c" id="fa7c" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/e67e56bed7c5a20a54851867ba5efef6.js"></script>
-                            </figure>
-                            <ul class="postList">
-                                <li name="4115" id="4115" class="graf graf--li graf-after--figure">
-                                    The first major sorting algorithm one learns in introductory programming courses.
-                                </li>
-                                <li name="ecd4" id="ecd4" class="graf graf--li graf-after--li">
-                                    Gives an intro on how to convert unsorted data into sorted data.
-                                </li>
-                            </ul>
-                            <blockquote name="a636" id="a636" class="graf graf--blockquote graf-after--li">
-                                It's almost never used in production code because:
-                            </blockquote>
-                            <ul class="postList">
-                                <li name="3cb1" id="3cb1" class="graf graf--li graf-after--blockquote">
-                                    <em class="markup--em markup--li-em">It's not efficient</em>
-                                </li>
-                                <li name="4eac" id="4eac" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">It's not commonly used</em>
-                                </li>
-                                <li name="d730" id="d730" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">There is stigma attached to it</em>
-                                </li>
-                                <li name="8da7" id="8da7" class="graf graf--li graf-after--li">
-                                    <code class="markup--code markup--li-code"><em class="markup--em markup--li-em">Bubbling Up</em></code
-                                    ><em class="markup--em markup--li-em">
-                                        : Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em
-                                    >
-                                </li>
-                                <li name="8447" id="8447" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Bubble sort, sorts an array of integers by bubbling the largest integer to the top.</em
-                                    >
-                                </li>
-                            </ul>
-                            <figure name="e086" id="e086" class="graf graf--figure graf--iframe graf-after--li">
-                                <script src="https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053.js"></script>
-                            </figure>
-                            <figure name="a10d" id="a10d" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54.js"></script>
-                            </figure>
-                            <ul class="postList">
-                                <li name="dcd2" id="dcd2" class="graf graf--li graf-after--figure">
-                                    <em class="markup--em markup--li-em">Worst Case &amp; Best Case are always the same because it makes nested loops.</em>
-                                </li>
-                                <li name="9a6a" id="9a6a" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)</em
-                                    >
-                                </li>
-                            </ul>
-                            <h3 name="dda6" id="dda6" class="graf graf--h3 graf-after--li">Selection Sort</h3>
-                            <p name="f82a" id="f82a" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Quadratic O(n^2)
-                            </p>
-                            <ul class="postList">
-                                <li name="646d" id="646d" class="graf graf--li graf-after--p">
-                                    Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested
-                                    we will get O(n²);
-                                </li>
-                            </ul>
-                            <p name="89a7" id="89a7" class="graf graf--p graf-after--li">
-                                <code class="markup--code markup--p-code">Space Complexity</code>: O(1)
-                            </p>
-                            <ul class="postList">
-                                <li name="45ae" id="45ae" class="graf graf--li graf-after--p">
-                                    Selection Sort will always use the same amount of memory regardless of n.
-                                </li>
-                            </ul>
-                            <figure name="134a" id="134a" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*AByxtBjFrPVVYmyu"
-                                    data-width="604"
-                                    data-height="737"
-                                    src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu"
-                                />
-                            </figure>
-                            <figure name="0cd4" id="0cd4" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/4abc0fe0bf01599b0c4104b0ba633402.js"></script>
-                            </figure>
-                            <ul class="postList">
-                                <li name="c618" id="c618" class="graf graf--li graf-after--figure">
-                                    Selection sort organizes the smallest elements to the start of the array.
-                                </li>
-                            </ul>
-                            <figure name="3ed0" id="3ed0" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*GeYNxlRcbt2cf0rY"
-                                    data-width="640"
-                                    data-height="262"
-                                    src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY"
-                                />
-                            </figure>
-                            <blockquote name="fcaa" id="fcaa" class="graf graf--blockquote graf-after--figure">
-                                Summary of how Selection Sort should work:
-                            </blockquote>
-                            <ol class="postList">
-                                <li name="2277" id="2277" class="graf graf--li graf-after--blockquote">
-                                    <em class="markup--em markup--li-em">Set MIN to location 0</em>
-                                </li>
-                                <li name="c76c" id="c76c" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Search the minimum element in the list.</em>
-                                </li>
-                                <li name="79d3" id="79d3" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Swap with value at location Min</em>
-                                </li>
-                                <li name="4ede" id="4ede" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Increment Min to point to next element.</em>
-                                </li>
-                                <li name="a649" id="a649" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Repeat until list is sorted.</em>
-                                </li>
-                            </ol>
-                            <figure name="72bb" id="72bb" class="graf graf--figure graf--iframe graf-after--li">
-                                <script src="https://gist.github.com/eengineergz/61f130c8e0097572ed908fe2629bdee0.js"></script>
-                            </figure>
-                            <h3 name="1ce8" id="1ce8" class="graf graf--h3 graf-after--figure">Insertion Sort</h3>
-                            <p name="cafe" id="cafe" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Quadratic O(n^2)
-                            </p>
-                            <ul class="postList">
-                                <li name="95ea" id="95ea" class="graf graf--li graf-after--p">
-                                    Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested
-                                    we will get O(n²);
-                                </li>
-                            </ul>
-                            <p name="119f" id="119f" class="graf graf--p graf-after--li">
-                                <code class="markup--code markup--p-code">Space Complexity</code>: O(n)
-                            </p>
-                            <ul class="postList">
-                                <li name="f6fa" id="f6fa" class="graf graf--li graf-after--p">
-                                    Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.
-                                </li>
-                            </ul>
-                            <figure name="5242" id="5242" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*gbNU6wrszGPrfAZG"
-                                    data-width="562"
-                                    data-height="569"
-                                    src="https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG"
-                                />
-                            </figure>
-                            <figure name="b8fa" id="b8fa" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/a9f4b8596c7546ac92746db659186d8c.js"></script>
-                            </figure>
-                            <h3 name="377f" id="377f" class="graf graf--h3 graf-after--figure">Merge Sort</h3>
-                            <p name="4b0d" id="4b0d" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Log Linear O(nlog(n))
-                            </p>
-                            <ul class="postList">
-                                <li name="44b2" id="44b2" class="graf graf--li graf-after--p">
-                                    Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge
-                                    function contributes O(n) therefore our time complexity is O(nlog(n));
-                                    <code class="markup--code markup--li-code">Space Complexity</code>: O(n)
-                                </li>
-                                <li name="9a83" id="9a83" class="graf graf--li graf-after--li">We are linear O(n) time because we are creating subArrays.</li>
-                            </ul>
-                            <figure name="526a" id="526a" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*GeU8YwwCoK8GiSTD"
-                                    data-width="510"
-                                    data-height="500"
-                                    src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD"
-                                />
-                            </figure>
-                            <figure name="cc87" id="cc87" class="graf graf--figure graf-after--figure">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*IxqGb72XDVDeeiMl"
-                                    data-width="618"
-                                    data-height="595"
-                                    src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl"
-                                />
-                            </figure>
-                            <h3 name="3aa9" id="3aa9" class="graf graf--h3 graf-after--figure">Example of Merge Sort</h3>
-                            <figure name="5d54" id="5d54" class="graf graf--figure graf--iframe graf-after--h3">
-                                <script src="https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48.js"></script>
-                            </figure>
-                            <figure name="157f" id="157f" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64.js"></script>
-                            </figure>
-                            <figure name="5f13" id="5f13" class="graf graf--figure graf-after--figure">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*HMCR--9niDt5zY6M"
-                                    data-width="510"
-                                    data-height="500"
-                                    src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M"
-                                />
-                            </figure>
-                            <ul class="postList">
-                                <li name="48b4" id="48b4" class="graf graf--li graf-after--figure">
-                                    <strong class="markup--strong markup--li-strong">Merge sort is O(nlog(n)) time.</strong>
-                                </li>
-                                <li name="c598" id="c598" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">We need a function for merging and a function for sorting.</em>
-                                </li>
-                            </ul>
-                            <blockquote name="4eb4" id="4eb4" class="graf graf--blockquote graf-after--li">Steps:</blockquote>
-                            <ol class="postList">
-                                <li name="213f" id="213f" class="graf graf--li graf-after--blockquote">
-                                    <em class="markup--em markup--li-em">If there is only one element in the list, it is already sorted; return the array.</em>
-                                </li>
-                                <li name="6214" id="6214" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Otherwise, divide the list recursively into two halves until it can no longer be divided.</em
-                                    >
-                                </li>
-                                <li name="3cc8" id="3cc8" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Merge the smallest lists into new list in a sorted order.</em>
-                                </li>
-                            </ol>
-                            <h3 name="b50b" id="b50b" class="graf graf--h3 graf-after--li">Quick Sort</h3>
-                            <p name="7e8d" id="7e8d" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Quadratic O(n^2)
-                            </p>
-                            <ul class="postList">
-                                <li name="8e34" id="8e34" class="graf graf--li graf-after--p">
-                                    Even though the average time complexity O(nLog(n)), the worst case scenario is always quadratic.
-                                </li>
-                            </ul>
-                            <p name="060c" id="060c" class="graf graf--p graf-after--li">
-                                <code class="markup--code markup--p-code">Space Complexity</code>: O(n)
-                            </p>
-                            <ul class="postList">
-                                <li name="626b" id="626b" class="graf graf--li graf-after--p">
-                                    Our space complexity is linear O(n) because of the partition arrays we create.
-                                </li>
-                                <li name="7e3a" id="7e3a" class="graf graf--li graf-after--li">QS is another Divide and Conquer strategy.</li>
-                                <li name="233d" id="233d" class="graf graf--li graf-after--li">Some key ideas to keep in mind:</li>
-                                <li name="1173" id="1173" class="graf graf--li graf-after--li">
-                                    It is easy to sort elements of an array relative to a particular target value.
-                                </li>
-                                <li name="8634" id="8634" class="graf graf--li graf-after--li">An array of 0 or 1 elements is already trivially sorted.</li>
-                            </ul>
-                            <figure name="4dd0" id="4dd0" class="graf graf--figure graf-after--li">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*WLl_HpdBGXYx284T"
-                                    data-width="608"
-                                    data-height="272"
-                                    src="https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T"
-                                />
-                            </figure>
-                            <figure name="10ba" id="10ba" class="graf graf--figure graf-after--figure">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*-LyHJXGPTYsWLDZf"
-                                    data-width="757"
-                                    data-height="788"
-                                    src="https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf"
-                                />
-                            </figure>
-                            <figure name="84ff" id="84ff" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/24bcbc5248a8c4e1671945e9512da57e.js"></script>
-                            </figure>
-                            <h3 name="a2ba" id="a2ba" class="graf graf--h3 graf-after--figure">Binary Search</h3>
-                            <p name="bd8a" id="bd8a" class="graf graf--p graf-after--h3">
-                                <code class="markup--code markup--p-code">Time Complexity</code>: Log Time O(log(n))
-                            </p>
-                            <p name="3071" id="3071" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">Space Complexity</code>: O(1)
-                            </p>
-                            <figure name="4123" id="4123" class="graf graf--figure graf-after--p">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="0*-naVYGTXzE2Yoali"
-                                    data-width="1600"
-                                    data-height="891"
-                                    src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali"
-                                />
-                            </figure>
-                            <blockquote name="7ab6" id="7ab6" class="graf graf--blockquote graf-after--figure">
-                                <em class="markup--em markup--blockquote-em">Recursive Solution</em>
-                            </blockquote>
-                            <figure name="0b31" id="0b31" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/c82c00a4bcba4b69b7d326d6cad3ac8c.js"></script>
-                            </figure>
-                            <blockquote name="e60f" id="e60f" class="graf graf--blockquote graf-after--figure">
-                                <em class="markup--em markup--blockquote-em">Min Max Solution</em>
-                            </blockquote>
-                            <figure name="bbc5" id="bbc5" class="graf graf--figure graf--iframe graf-after--blockquote">
-                                <script src="https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751.js"></script>
-                            </figure>
-                            <figure name="d869" id="d869" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a.js"></script>
-                            </figure>
-                            <ul class="postList">
-                                <li name="6fb1" id="6fb1" class="graf graf--li graf-after--figure">
-                                    <em class="markup--em markup--li-em">Must be conducted on a sorted array.</em>
-                                </li>
-                                <li name="383b" id="383b" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.</em
-                                    >
-                                </li>
-                                <li name="c940" id="c940" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Binary Search is part of Divide and Conquer.</em>
-                                </li>
-                            </ul>
-                            <h3 name="d7dd" id="d7dd" class="graf graf--h3 graf-after--li">Insertion Sort</h3>
-                            <ul class="postList">
-                                <li name="26b7" id="26b7" class="graf graf--li graf-after--h3">
-                                    <strong class="markup--strong markup--li-strong"
-                                        >Works by building a larger and larger sorted region at the left-most end of the array.</strong
-                                    >
-                                </li>
-                            </ul>
-                            <blockquote name="0f8a" id="0f8a" class="graf graf--blockquote graf-after--li">Steps:</blockquote>
-                            <ol class="postList">
-                                <li name="8c1f" id="8c1f" class="graf graf--li graf-after--blockquote">
-                                    <em class="markup--em markup--li-em">If it is the first element, and it is already sorted; return 1.</em>
-                                </li>
-                                <li name="1451" id="1451" class="graf graf--li graf-after--li"><em class="markup--em markup--li-em">Pick next element.</em></li>
-                                <li name="0f8b" id="0f8b" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Compare with all elements in the sorted sub list</em>
-                                </li>
-                                <li name="4d78" id="4d78" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em"
-                                        >Shift all the elements in the sorted sub list that is greater than the value to be sorted.</em
-                                    >
-                                </li>
-                                <li name="9131" id="9131" class="graf graf--li graf-after--li"><em class="markup--em markup--li-em">Insert the value</em></li>
-                                <li name="6c8a" id="6c8a" class="graf graf--li graf-after--li">
-                                    <em class="markup--em markup--li-em">Repeat until list is sorted.</em>
-                                </li>
-                            </ol>
-                            <figure name="4938" id="4938" class="graf graf--figure graf--iframe graf-after--li">
-                                <script src="https://gist.github.com/eengineergz/ffead1de0836c4bcc6445780a604f617.js"></script>
-                            </figure>
-                            <h3 name="3695" id="3695" class="graf graf--h3 graf-after--figure">
-                                If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
-                            </h3>
-                            <div name="1c2f" id="1c2f" class="graf graf--mixtapeEmbed graf-after--h3">
-                                <a
-                                    href="https://gist.github.com/bgoonz"
-                                    data-href="https://gist.github.com/bgoonz"
-                                    class="markup--anchor markup--mixtapeEmbed-anchor"
-                                    title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong>
-                                    <br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image"></figure>***Curating Complexity: A Guide to Big-O Notation***
+<hr>
+<p><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong><br>
+<br></a></p><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex">
+</a><p><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>A Node.js repl by bgoonz</strong>replit.com</a><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<ul>
+<li><span id="b70f">Why is looking at runtime not a reliable method of calculating time complexity?</span></li>
+<li><span id="2b21">Not all computers are made equal( some may be stronger and therefore boost our runtime speed )</span></li>
+<li><span id="1e1a">How many background processes ran concurrently with our program that was being tested?</span></li>
+<li><span id="1cad">We also need to ask if our code remains performant if we increase the size of the input.</span></li>
+<li><span id="3cb7">The real question we need to answering is: <code>How does our performance scale?</code>.</span></li>
+</ul>
+<h3 class="mume-header" id="big-o-notation">big &apos;O&apos; notation</h3>
 
-                                    <em class="markup--em markup--mixtapeEmbed-em"
-                                        >Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python
-                                        |…</em
-                                    >gist.github.com</a
-                                ><a
-                                    href="https://gist.github.com/bgoonz"
-                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                                    data-media-id="ab25adbb500306703daab23d08a7739a"
-                                    data-thumbnail-img-id="0*3O67jrqm3EHjTK2H"
-                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*3O67jrqm3EHjTK2H)"
-                                ></a>
-                            </div>
-                            <div name="3585" id="3585" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed">
-                                <a
-                                    href="https://github.com/bgoonz"
-                                    data-href="https://github.com/bgoonz"
-                                    class="markup--anchor markup--mixtapeEmbed-anchor"
-                                    title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong>
-                                    <br />
+<ul>
+<li><span id="9b21">Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.</span></li>
+<li><span id="c0e6">Since we use mathematical functions in Big-O, there are a few big picture ideas that we&apos;ll want to keep in mind:</span></li>
+<li><span id="2e86">The function should be defined by the size of the input.</span></li>
+<li><span id="07b0"><code>Smaller</code> Big O is better (lower time complexity)</span></li>
+<li><span id="f1b0">Big O is used to describe the worst case scenario.</span></li>
+<li><span id="e11f">Big O is simplified to show only its most dominant mathematical term.</span></li>
+</ul>
+<h3 class="mume-header" id="simplifying-math-terms">Simplifying Math Terms</h3>
 
-                                    <em class="markup--em markup--mixtapeEmbed-em"
-                                        >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
-                                    >github.com</a
-                                ><a
-                                    href="https://github.com/bgoonz"
-                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                                    data-media-id="6ee74d5200d495ddc7ddad0c92bd6dce"
-                                    data-thumbnail-img-id="0*Udg3rbeFyslZ9dyl"
-                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*Udg3rbeFyslZ9dyl)"
-                                ></a>
-                            </div>
-                            <h3 name="cb1a" id="cb1a" class="graf graf--h3 graf-after--mixtapeEmbed">Or Checkout my personal Resource Site:</h3>
-                            <div name="8a50" id="8a50" class="graf graf--mixtapeEmbed graf-after--h3">
-                                <a
-                                    href="https://bgoonz-blog.netlify.app/"
-                                    data-href="https://bgoonz-blog.netlify.app/"
-                                    class="markup--anchor markup--mixtapeEmbed-anchor"
-                                    title="https://bgoonz-blog.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong>
-                                    <br />
+<ul>
+<li><span id="64a4">We can use the following rules to simplify the our Big O functions:</span></li>
+<li><span id="a2c2"><code>Simplify Products</code> : If the function is a product of many terms, we drop the terms that don&apos;t depend on n.</span></li>
+<li><span id="b058"><code>Simplify Sums</code> : If the function is a sum of many terms, we drop the non-dominant terms.</span></li>
+<li><span id="eb32"><code>n</code> : size of the input</span></li>
+<li><span id="c042"><code>T(f)</code> : unsimplified math function</span></li>
+<li><span id="7b41"><code>O(f)</code> : simplified math function.</span></li>
+</ul>
+<p><code>Putting it all together</code></p>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png" class="graf-image"></figure>-   <span id="d18b">First we apply the product rule to drop all constants.</span>
+-   <span id="4335">Then we apply the sum rule to select the single most dominant term.</span>
+<hr>
+<h3 class="mume-header" id="complexity-classes">Complexity Classes</h3>
 
-                                    <em class="markup--em markup--mixtapeEmbed-em"
-                                        >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em
-                                    >bgoonz-blog.netlify.app</a
-                                ><a
-                                    href="https://bgoonz-blog.netlify.app/"
-                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                                    data-media-id="a2f1abe4ed6a87b0b90d28e55f930d20"
-                                    data-thumbnail-img-id="0*MGabeSINrLT_H7Pc"
-                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*MGabeSINrLT_H7Pc)"
-                                ></a>
-                            </div>
-                            <figure name="c5db" id="c5db" class="graf graf--figure graf-after--mixtapeEmbed">
-                                <img
-                                    class="graf-image"
-                                    data-image-id="1*VCmj_H9AHs41oC9Yx1hZFQ.png"
-                                    data-width="1228"
-                                    data-height="674"
-                                    src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png"
-                                />
-                            </figure>
-                            <figure name="df8c" id="df8c" class="graf graf--figure graf--iframe graf-after--figure">
-                                <script src="https://gist.github.com/bgoonz/af844eda5a20b0fdc0b813304401602b.js"></script>
-                            </figure>
-                            <h3 name="5b9e" id="5b9e" class="graf graf--h3 graf-after--figure">Discover More:</h3>
-                            <div name="1e6c" id="1e6c" class="graf graf--mixtapeEmbed graf-after--h3">
-                                <a
-                                    href="https://bgoonz-blog.netlify.app/"
-                                    data-href="https://bgoonz-blog.netlify.app/"
-                                    class="markup--anchor markup--mixtapeEmbed-anchor"
-                                    title="https://bgoonz-blog.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Hub</strong>
-                                    <br />
+<p>Common Complexity Classes</p>
+<h4 class="mume-header" id="there-are-7-major-classes-in-time-complexity">There are 7 major classes in Time Complexity</h4>
 
-                                    <em class="markup--em markup--mixtapeEmbed-em"
-                                        >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em
-                                    >bgoonz-blog.netlify.app</a
-                                ><a
-                                    href="https://bgoonz-blog.netlify.app/"
-                                    class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                                    data-media-id="a2f1abe4ed6a87b0b90d28e55f930d20"
-                                    data-thumbnail-img-id="0*yHs_xDis1qQ8JjWg"
-                                    style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*yHs_xDis1qQ8JjWg)"
-                                ></a>
-                            </div>
-                        </div>
-                        <div class="section-inner sectionLayout--fullWidth">
-                            <figure name="2ad5" id="2ad5" class="graf graf--figure graf--iframe graf--layoutFillWidth graf-after--mixtapeEmbed graf--trailing">
-                                <iframe
-                                    src="https://replit.com/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;amp%3Breferrer=https%3A%2F%2Fbryanguner.medium.com&amp;lite=true"
-                                    width="null"
-                                    height="null"
-                                    frameborder="0"
-                                    scrolling="no"
-                                ></iframe>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <footer>
-                <p>
-                    By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on
-                    <a href="https://medium.com/p/803ff193c522"><time class="dt-published" datetime="2021-02-27T05:38:43.274Z">February 27, 2021</time></a
-                    >.
-                </p>
-                <p>
-                    <a
-                        href="https://medium.com/@bryanguner/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522"
-                        class="p-canonical"
-                        >Canonical link</a
-                    >
-                </p>
-                <p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2021.</p>
-            </footer>
-        </article>
-    </body>
-</html>
+<figure class="mume-header" id="o1-constant"><img src="https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png" class="graf-image"></figure>####  `O(1) Constant`
+
+<blockquote>
+<p><strong>The algorithm takes roughly the same number of steps for any input size.</strong></p>
+</blockquote>
+<h4 class="mume-header" id="ologn-logarithmic"><code>O(log(n)) Logarithmic</code></h4>
+
+<blockquote>
+<p><strong>In most cases our hidden base of Logarithmic time is 2, log complexity algorithm&apos;s will typically display &apos;halving&apos; the size of the input (like binary search!)</strong></p>
+</blockquote>
+<h4 class="mume-header" id="on-linear"><code>O(n) Linear</code></h4>
+
+<blockquote>
+<p><strong>Linear algorithm&apos;s will access each item of the input &quot;once&quot;.</strong></p>
+</blockquote>
+<h3 class="mume-header" id="onlogn-log-linear-time"><code>O(nlog(n)) Log Linear Time</code></h3>
+
+<blockquote>
+<p><strong>Combination of linear and logarithmic behavior, we will see features from both classes.</strong></p>
+</blockquote>
+<blockquote>
+<p>Algorithm&apos;s that are log-linear will use <strong>both recursion AND iteration.</strong></p>
+</blockquote>
+<h3 class="mume-header" id="onc-polynomial"><code>O(nc) Polynomial</code></h3>
+
+<blockquote>
+<p><strong>C is a fixed constant.</strong></p>
+</blockquote>
+<h3 class="mume-header" id="ocn-exponential"><code>O(c^n) Exponential</code></h3>
+
+<blockquote>
+<p><strong>C is now the number of recursive calls made in each stack frame.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Algorithm&apos;s with exponential time are VERY SLOW.</strong></p>
+</blockquote>
+<hr>
+<h3 class="mume-header" id="memoization">Memoization</h3>
+
+<ul>
+<li><span id="b3b0">Memoization : a design pattern used to reduce the overall number of calculations that can occur in algorithms that use recursive strategies to solve.</span></li>
+<li><span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only &apos;solve&apos; each problem once.</span></li>
+<li><span id="65c9">Two features that comprise memoization:</span></li>
+</ul>
+<ol>
+<li><span id="b2d2">FUNCTION MUST BE RECURSIVE.</span></li>
+<li><span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo&#x2026; or sometimes cache!)</span></li>
+</ol>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image"></figure><figure class="mume-header" id="memoizing-factorial"><img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image"></figure>###  Memoizing Factorial
+
+<p>Our memo object is <em>mapping</em> out our arguments of factorial to it&apos;s return value.</p>
+<ul>
+<li><span id="854a">Keep in mind we didn&apos;t improve the speed of our algorithm.</span></li>
+</ul>
+<h3 class="mume-header" id="memoizing-fibonacci">Memoizing Fibonacci</h3>
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb" class="graf-image"></figure>-   <span id="5be6">Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.</span>
+<h3 class="mume-header" id="the-memoization-formula">The Memoization Formula</h3>
+
+<blockquote>
+<p><em>Rules:</em></p>
+</blockquote>
+<ol>
+<li><span id="b3f0"><em>Write the unoptimized brute force recursion (make sure it works);</em></span></li>
+<li><span id="b36e"><em>Add memo object as an additional argument .</em></span></li>
+<li><span id="f81f"><em>Add a base case condition that returns the stored value if the function&apos;s argument is in the memo.</em></span></li>
+<li><span id="1b0f"><em>Before returning the result of the recursive case, store it in the memo as a value and make the function&apos;s argument it&apos;s key.</em></span></li>
+</ol>
+<h4 class="mume-header" id="things-to-remember">Things to remember</h4>
+
+<ol>
+<li><span id="bc4a"><em>When solving DP problems with Memoization, it is helpful to draw out the visual tree first.</em></span></li>
+<li><span id="7bb1"><em>When you notice duplicate sub-tree&apos;s that means we can memoize.</em></span></li>
+</ol>
+<hr>
+<h3 class="mume-header" id="tabulation">Tabulation</h3>
+
+<h4 class="mume-header" id="tabulation-strategy">Tabulation Strategy</h4>
+
+<blockquote>
+<p>Use When:</p>
+</blockquote>
+<ul>
+<li><span id="f5b0"><strong>The function is iterative and not recursive.</strong></span></li>
+<li><span id="015c"><em>The accompanying DS is usually an array.</em></span></li>
+</ul>
+<h4 class="mume-header" id="steps-for-tabulation">Steps for tabulation</h4>
+
+<ul>
+<li><span id="8918"><em>Create a table array based off the size of the input.</em></span></li>
+<li><span id="b4e7"><em>Initialize some values in the table to &apos;answer&apos; the trivially small subproblem.</em></span></li>
+<li><span id="072e"><em>Iterate through the array and fill in the remaining entries.</em></span></li>
+<li><span id="192e"><em>Your final answer is usually the last entry in the table.</em></span></li>
+</ul>
+<hr>
+<h3 class="mume-header" id="memo-and-tab-demo-with-fibonacci">Memo and Tab Demo with Fibonacci</h3>
+
+<blockquote>
+<p><em>Normal Recursive Fibonacci</em></p>
+</blockquote>
+<pre class="language-text">function fibonacci(n) {
+  if (n &lt;= 2) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+</pre>
+<blockquote>
+<p><em>Memoization Fibonacci 1</em></p>
+</blockquote>
+<blockquote>
+<p><em>Memoization Fibonacci 2</em></p>
+</blockquote>
+<blockquote>
+<p><em>Tabulated Fibonacci</em></p>
+</blockquote>
+<h3 class="mume-header" id="example-of-linear-search">Example of Linear Search</h3>
+
+<ul>
+<li><span id="84b2"><em>Worst Case Scenario: The term does not even exist in the array.</em></span></li>
+<li><span id="30dc"><em>Meaning: If it doesn&apos;t exist then our for loop would run until the end therefore making our time complexity O(n).</em></span></li>
+</ul>
+<hr>
+<h3 class="mume-header" id="sorting-algorithms">Sorting Algorithms</h3>
+
+<h3 class="mume-header" id="bubble-sort">Bubble Sort</h3>
+
+<p><code>Time Complexity</code>: Quadratic O(n^2)</p>
+<ul>
+<li><span id="ce1e">The inner for-loop contributes to O(n), however in a worst case scenario the while loop will need to run n times before bringing all n elements to their final resting spot.</span></li>
+</ul>
+<p><code>Space Complexity</code>: O(1)</p>
+<ul>
+<li><span id="664f">Bubble Sort will always use the same amount of memory regardless of n.</span></li>
+</ul>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT" class="graf-image"></figure>-   <span id="4115">The first major sorting algorithm one learns in introductory programming courses.</span>
+-   <span id="ecd4">Gives an intro on how to convert unsorted data into sorted data.</span>
+<blockquote>
+<p>It&apos;s almost never used in production code because:</p>
+</blockquote>
+<ul>
+<li>
+<p><span id="3cb1"><em>It&apos;s not efficient</em></span></p>
+</li>
+<li>
+<p><span id="4eac"><em>It&apos;s not commonly used</em></span></p>
+</li>
+<li>
+<p><span id="d730"><em>There is stigma attached to it</em></span></p>
+</li>
+<li>
+<p><span id="8da7"><code>Bubbling Up</code><em>: Term that infers that an item is in motion, moving in some direction, and has some final resting destination.</em></span></p>
+</li>
+<li>
+<p><span id="8447"><em>Bubble sort, sorts an array of integers by bubbling the largest integer to the top.</em></span></p>
+</li>
+<li>
+<p><span id="dcd2"><em>Worst Case &amp; Best Case are always the same because it makes nested loops.</em></span></p>
+</li>
+<li>
+<p><span id="9a6a"><em>Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n&#xB2;)</em></span></p>
+</li>
+</ul>
+<h3 class="mume-header" id="selection-sort">Selection Sort</h3>
+
+<p><code>Time Complexity</code>: Quadratic O(n^2)</p>
+<ul>
+<li><span id="646d">Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n&#xB2;);</span></li>
+</ul>
+<p><code>Space Complexity</code>: O(1)</p>
+<ul>
+<li><span id="45ae">Selection Sort will always use the same amount of memory regardless of n.</span></li>
+</ul>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu" class="graf-image"></figure>-   <span id="c618">Selection sort organizes the smallest elements to the start of the array.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image"></figure>Summary of how Selection Sort should work:
+<ol>
+<li><span id="2277"><em>Set MIN to location 0</em></span></li>
+<li><span id="c76c"><em>Search the minimum element in the list.</em></span></li>
+<li><span id="79d3"><em>Swap with value at location Min</em></span></li>
+<li><span id="4ede"><em>Increment Min to point to next element.</em></span></li>
+<li><span id="a649"><em>Repeat until list is sorted.</em></span></li>
+</ol>
+<h3 class="mume-header" id="insertion-sort">Insertion Sort</h3>
+
+<p><code>Time Complexity</code>: Quadratic O(n^2)</p>
+<ul>
+<li><span id="95ea">Our outer loop will contribute O(n) while the inner loop will contribute O(n / 2) on average. Because our loops are nested we will get O(n&#xB2;);</span></li>
+</ul>
+<p><code>Space Complexity</code>: O(n)</p>
+<ul>
+<li><span id="f6fa">Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.</span></li>
+</ul>
+<figure class="mume-header" id="merge-sort"><img src="https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG" class="graf-image"></figure>###  Merge Sort
+
+<p><code>Time Complexity</code>: Log Linear O(nlog(n))</p>
+<ul>
+<li><span id="44b2">Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); <code>Space Complexity</code>: O(n)</span></li>
+<li><span id="9a83">We are linear O(n) time because we are creating subArrays.</span></li>
+</ul>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD" class="graf-image"></figure><figure class="mume-header" id="example-of-merge-sort"><img src="https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl" class="graf-image"></figure>###  Example of Merge Sort
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M" class="graf-image"></figure>-   <span id="48b4">**Merge sort is O(nlog(n)) time.**</span>
+-   <span id="c598">*We need a function for merging and a function for sorting.*</span>
+<blockquote>
+<p>Steps:</p>
+</blockquote>
+<ol>
+<li><span id="213f"><em>If there is only one element in the list, it is already sorted; return the array.</em></span></li>
+<li><span id="6214"><em>Otherwise, divide the list recursively into two halves until it can no longer be divided.</em></span></li>
+<li><span id="3cc8"><em>Merge the smallest lists into new list in a sorted order.</em></span></li>
+</ol>
+<h3 class="mume-header" id="quick-sort">Quick Sort</h3>
+
+<p><code>Time Complexity</code>: Quadratic O(n^2)</p>
+<ul>
+<li><span id="8e34">Even though the average time complexity O(nLog(n)), the worst case scenario is always quadratic.</span></li>
+</ul>
+<p><code>Space Complexity</code>: O(n)</p>
+<ul>
+<li><span id="626b">Our space complexity is linear O(n) because of the partition arrays we create.</span></li>
+<li><span id="7e3a">QS is another Divide and Conquer strategy.</span></li>
+<li><span id="233d">Some key ideas to keep in mind:</span></li>
+<li><span id="1173">It is easy to sort elements of an array relative to a particular target value.</span></li>
+<li><span id="8634">An array of 0 or 1 elements is already trivially sorted.</span></li>
+</ul>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T" class="graf-image"></figure><figure class="mume-header" id="binary-search"><img src="https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf" class="graf-image"></figure>###  Binary Search
+
+<p><code>Time Complexity</code>: Log Time O(log(n))</p>
+<p><code>Space Complexity</code>: O(1)</p>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali" class="graf-image"></figure>*Recursive Solution*
+<blockquote>
+<p><em>Min Max Solution</em></p>
+</blockquote>
+<ul>
+<li><span id="6fb1"><em>Must be conducted on a sorted array.</em></span></li>
+<li><span id="383b"><em>Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing.</em></span></li>
+<li><span id="c940"><em>Binary Search is part of Divide and Conquer.</em></span></li>
+</ul>
+<h3 class="mume-header" id="insertion-sort-1">Insertion Sort</h3>
+
+<ul>
+<li><span id="26b7"><strong>Works by building a larger and larger sorted region at the left-most end of the array.</strong></span></li>
+</ul>
+<blockquote>
+<p>Steps:</p>
+</blockquote>
+<ol>
+<li><span id="8c1f"><em>If it is the first element, and it is already sorted; return 1.</em></span></li>
+<li><span id="1451"><em>Pick next element.</em></span></li>
+<li><span id="0f8b"><em>Compare with all elements in the sorted sub list</em></span></li>
+<li><span id="4d78"><em>Shift all the elements in the sorted sub list that is greater than the value to be sorted.</em></span></li>
+<li><span id="9131"><em>Insert the value</em></span></li>
+<li><span id="6c8a"><em>Repeat until list is sorted.</em></span></li>
+</ol>
+<h3 class="mume-header" id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content">If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content</h3>
+
+<p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz&apos;s gists</strong><br>
+<br></a></p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
+</a><p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">**Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |&#x2026;**gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz&#x200A;&#x2014;&#x200A;Overview</strong><br>
+<br></a></p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+</a><p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">**Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize&#x2026;**github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<h3 class="mume-header" id="or-checkout-my-personal-resource-site">Or Checkout my personal Resource Site</h3>
+
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br>
+<br></a></p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+</a><p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of&#x2026;**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<figure class="mume-header" id="discover-more"><img src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png" class="graf-image"></figure>###  Discover More:
+
+<p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br>
+<br></a></p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+</a><p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of&#x2026;**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
+<p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/803ff193c522">February 27, 2021</a>.</p>
+<p><a href="https://medium.com/@bryanguner/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522" class="p-canonical">Canonical link</a></p>
+<p>Exported from <a href="https://medium.com">Medium</a> on August 31, 2021.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

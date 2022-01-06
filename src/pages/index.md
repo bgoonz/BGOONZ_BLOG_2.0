@@ -190,11 +190,11 @@ sections:
         image_alt: portfolio of websites
         image: images/portfolio-pic-494ea398.png
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
-    image_alt: rotating pages
+    section_id: Mini Projects
+    image_alt: showcase
     image_position: left
     content: |-
-      <iframe class="block-content" width="100%  width="1200px!important"
+      <iframeclass="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://random-static-html-deploys.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -207,18 +207,18 @@ sections:
     image_position: right
     content: |+
       # ***What I've been working on lately:***
-
-      ## Web Dev Utilitiy Tools  <iframe class="block-content" width="100%  width="1200px!important"
+      ## Web Dev Utilitiy Tools
+      <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="block-content" width="100%  width="1200px!important"
+      <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="block-content" width="100%  width="1200px!important"
+      <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -235,21 +235,14 @@ sections:
       efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
       pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque
       imperdiet venenatis.
-
       > Vestibulum ullamcorper risus auctor eleifend consequat.
-
-
       ![Placeholder
       Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)
-
-
       In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl
       elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam
       malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis.
       Vestibulum quis elit magna. Vestibulum accumsan blandit consequat.
       Phasellus quis posuere quam.
-
-
       Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum
       ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo
       euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat
