@@ -1,7 +1,7 @@
 ---
 title: Audio
 weight: 0
-excerpt: Audio Projects and tools
+excerpt: 'Audio Projects and tools '
 seo:
   title: Audio Projects
   description: A collection of web audio projects
