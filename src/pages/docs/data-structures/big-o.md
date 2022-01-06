@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Big-O Notation
 weight: 0
 excerpt: lorem-ipsum
 seo:
