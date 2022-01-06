@@ -3,6 +3,5 @@
   @each $key in $keys {
     $map: map-get($map, $key);
   }
-
   @return $map;
 }
