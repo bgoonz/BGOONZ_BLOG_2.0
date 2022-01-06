@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: ''
-  description: ''
+  description: 'A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example'
   robots: []
   extra: []
 template: docs
