@@ -4,15 +4,136 @@
 
 <div align="center">
 
-![codehealth](https://github.com/bgoonz/BGOONZ_BLOG_2.0/raw/master/static/images/codehealth.JPG)
+>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
+
+
 
 ##### [WEBSITE](https://bgoonz-blog.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
 
-![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)[![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
+
+
+</div>
+
+
+
+-   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
+-   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+
+-   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+
+-   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+
+-   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+
+-   [ajax starter.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ajax-starter.md)
+
+-   [analytics.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/analytics.md)
+
+-   [anatomy of search engine.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/anatomy-of-search-engine.md)
+
+-   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+
+-   [BasicWebDevelopmentEnvironmentSetup.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/BasicWebDevelopmentEnvironmentSetup.md)
+
+-   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+
+-   [config info.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/config-info.md)
+
+-   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+
+-   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+
+-   [custom search bar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/custom-search-bar.md)
+
+-   [Data Structures.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures.md)
+
+-   [dependency graph.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/dependency-graph.md)
+
+-   [DOM standard.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/DOM-standard.md)
+
+-   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+
+-   [github actions full doc.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/github-actions-full-doc.md)
+
+-   [google custom search.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/google-custom-search.md)
+
+-   [google search algo.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/google-search-algo.md)
+
+-   [google webmaster guidelines.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/google-webmaster-guidelines.md)
+
+-   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+
+-   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+
+-   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+
+-   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+
+-   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+
+-   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+
+-   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+
+-   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+
+-   [list of links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/list-of-links.md)
+
+-   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+
+-   [netlify tips.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/netlify-tips.md)
+
+-   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+
+-   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+
+-   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+
+-   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+
+-   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+
+-   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+
+-   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+
+-   [search engine simulation.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/search-engine-simulation.md)
+
+-   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+
+-   [sourcecode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/sourcecode.md)
+
+-   [STABLE_POINTS.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/STABLE_POINTS.md)
+
+-   [stack overflow site search.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stack-overflow-site-search.md)
+
+-   [tech used 2021.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used-2021.md)
+
+-   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+
+-   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+
+-   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+
+-   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+
+-   [ways to improve site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ways-to-improve-site.md)
+
+-   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+
+-   [webhooks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/webhooks.md)
+
+-   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+
+[](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/_Sidebar/_edit "Edit sidebar")
+
+Sitemap:
+========
 
 ![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/raw/master/static/images/blog-img.png)
 
-</div>
+
 
 ## Docs Structure:
 
@@ -41,7 +162,7 @@
 │   │   ├── algo.md
 │   │   ├── article-compilation.md
 │   │   ├── basic-web-dev.md
-│   │   ├── gists.md
+│   │   ├── gallery.md
 │   │   ├── index.md
 │   │   ├── install.md
 │   │   ├── intro.md
@@ -159,7 +280,7 @@
 
 ## Dependency graph
 
-These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as [package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json'), […/backup/package-lock.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage-lock.json 'notes/backup/package-lock.json'), and […/backup/package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage.json 'notes/backup/package.json').
+These dependencies are defined in **BGOONZ_BLOG_2.0**’s manifest files, such as [package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json'), […/backup/package-lock.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage-lock.json 'notes/backup/package-lock.json'), and […/backup/package.json](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#notes%252Fbackup%252Fpackage.json 'notes/backup/package.json').
 
 <button> [![@babel](https://avatars.githubusercontent.com/u/9637642?s=40&v=4) ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel) [ babel / babel ](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/babel/babel) @babel/helper-builder-binary-assignment-operator-visitor
 
@@ -294,26 +415,14 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&layout=compact&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
 |  |  |
 |:----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Languages**    | ![](https://img.shields.io/badge/Lang-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-CSS-informational?style=flat&logo=CSS%20Wizardry&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/Lang-SQL-informational?style=flat&logo=SQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-Java-informational?style=flat&logo=Java&logoColor=white&color=00FF00)  
-<br/>
+| **Languages**    | ![](https://img.shields.io/badge/Lang-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-CSS-informational?style=flat&logo=CSS%20Wizardry&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/Lang-SQL-informational?style=flat&logo=SQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-Java-informational?style=flat&logo=Java&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Lang-Python-informational?style=flat&logo=Python&logoColor=white&color=00FF00)   ![](https://img.shields.io/badge/Lang-TypeScript-informational?style=flat&logo=TypeScript&logoColor=white&color=00FF00) |
+| **Libraries**    | ![](https://img.shields.io/badge/Lib-Bootstrap-informational?style=flat&logo=Bootstrap&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lib-React-informational?style=flat&logo=React&logoColor=white&color=00FF00)  |
+| **Frameworks**   | ![](https://img.shields.io/badge/FW-Redux-informational?style=flat&logo=Redux&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Node.js-informational?style=flat&logo=Node.js&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Express-informational?style=flat&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/FW-PowerShell-informational?style=flat&logo=PowerShell&logoColor=white&color=00FF00) |
+| **Databases**    | ![](https://img.shields.io/badge/DB-PostgreSQL-informational?style=flat&logo=PostgreSQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/DB-MySQL-informational?style=flat&logo=MySQL&logoColor=white&color=00FF00) |
+| **Testing**      | ![](https://img.shields.io/badge/Test-Jest-informational?style=flat&logo=Jest&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-Cypress-informational?style=flat&logo=Cypress&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-JUnit-informational?style=flat&logo=JUnit&logoColor=white&color=00FF00) |
+| **Other**        | ![](https://img.shields.io/badge/Editor-VS%20Code-informational?style=flat&logo=visualstudiocode&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Editor-IntelliJ%20IDEA-informational?style=flat&logo=intellijidea&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Tools-ESLint-informational?style=flat&logo=ESLint&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Postman-informational?style=flat&logo=Postman&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=Git&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=00FF00)  <br />![](https://img.shields.io/badge/OS-Windows%2010-informational?style=flat&logo=Windows&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Code-LESS-informational?style=flat&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Code-Emmet-informational?style=flat&logoColor=white&color=00FF00) |
 
-![](https://img.shields.io/badge/Lang-Python-informational?style=flat&logo=Python&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-TypeScript-informational?style=flat&logo=TypeScript&logoColor=white&color=00FF00) |
-| **Libraries** | ![](https://img.shields.io/badge/Lib-Bootstrap-informational?style=flat&logo=Bootstrap&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lib-React-informational?style=flat&logo=React&logoColor=white&color=00FF00) |
-| **Frameworks** | ![](https://img.shields.io/badge/FW-Redux-informational?style=flat&logo=Redux&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Node.js-informational?style=flat&logo=Node.js&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Express-informational?style=flat&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-PowerShell-informational?style=flat&logo=PowerShell&logoColor=white&color=00FF00) |
-| **Databases** | ![](https://img.shields.io/badge/DB-PostgreSQL-informational?style=flat&logo=PostgreSQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/DB-MySQL-informational?style=flat&logo=MySQL&logoColor=white&color=00FF00) |
-| **Testing** | ![](https://img.shields.io/badge/Test-Jest-informational?style=flat&logo=Jest&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-Cypress-informational?style=flat&logo=Cypress&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-JUnit-informational?style=flat&logo=JUnit&logoColor=white&color=00FF00) |
-| **Other** | ![](https://img.shields.io/badge/Editor-VS%20Code-informational?style=flat&logo=visualstudiocode&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Editor-IntelliJ%20IDEA-informational?style=flat&logo=intellijidea&logoColor=white&color=00FF00)  
-<br/>
-
-![](https://img.shields.io/badge/Tools-ESLint-informational?style=flat&logo=ESLint&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Postman-informational?style=flat&logo=Postman&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=Git&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=00FF00)  
-<br/>
-
-![](https://img.shields.io/badge/OS-Windows%2010-informational?style=flat&logo=Windows&logoColor=white&color=00FF00)  
-<br/>
-
-![](https://img.shields.io/badge/Code-LESS-informational?style=flat&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Code-Emmet-informational?style=flat&logoColor=white&color=00FF00) |
-
-<br/>
+ <br />
 
 </div>
 
@@ -350,8 +459,7 @@ These dependencies are defined in **BGOONZ_BLOG_2.0**'s manifest files, such as 
 
 |
 
-  <h3 align="left">Support:</h3><p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br>
-<br>
+  <h3 align="left">Support:</h3><p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br><br>
   
 </div>
 
