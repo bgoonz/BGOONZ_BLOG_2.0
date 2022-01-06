@@ -211,14 +211,14 @@ sections:
 
     <iframe class="block-content" width="100%  width=" 1200px!important" height="1000px!important" src="https://cheatsheets-42.netlify.app/" frameborder="0"></iframe>
 
-        actions: []
-        type: section_content
-        image: images/cool annimation.gif
-    - title: Social Media
-        section_id: social
-        image_alt: social media embed
-        image_position: left
-        content: >-
+    actions: []
+    type: section_content
+    image: images/cool annimation.gif
+  - title: Social Media
+    section_id: social
+    image_alt: social media embed
+    image_position: left
+    content: >-
       <iframe class="block-content" width="100%  width=" 1200px!important" height="1000px!important"
       src="https://github.com/bgoonz/fb-and-twitter-api-embeds" frameborder="0"  ></iframe>
     actions: []
