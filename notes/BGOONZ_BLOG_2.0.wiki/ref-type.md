@@ -1,18 +1,18 @@
 EN
 
--   <a href="https://ar.javascript.info/reference-type"
--   <a href="reference-type.html"
--   <a href="https://es.javascript.info/reference-type"
--   <a href="https://fr.javascript.info/reference-type"
--   <a href="https://it.javascript.info/reference-type"
-    reference-type"
+- <a href="https://ar.javascript.info/reference-type"
+- <a href="reference-type.html"
+- <a href="https://es.javascript.info/reference-type"
+- <a href="https://fr.javascript.info/reference-type"
+- <a href="https://it.javascript.info/reference-type"
+  reference-type"
 
 <!-- -->
 
--   <a href="https://ko.javascript.info/reference-type"
--   <a href="
--   <a href="https://tr.javascript.info/"
--   <a href="https://zh.javascript.info/reference-type"
+- <a href="https://ko.javascript.info/reference-type"
+- <a href="
+- <a href="https://tr.javascript.info/"
+- <a href="https://zh.javascript.info/reference-type"
 
 We want to make this open-source project available for people all around the world.
 
@@ -42,7 +42,7 @@ Search
 
 This article covers an advanced topic, to understand certain edge-cases better.
 
-It's not important. Many experienced developers live fine without knowing it. Read on if you want to know how things work under the hood.
+It’s not important. Many experienced developers live fine without knowing it. Read on if you want to know how things work under the hood.
 
 A dynamically evaluated method call can lose `this`.
 
@@ -64,7 +64,7 @@ For instance:
 
 On the last line there is a conditional operator that chooses either `user.hi` or `user.bye`. In this case the result is `user.hi`.
 
-Then the method is immediately called with parentheses `()`. But it doesn't work correctly!
+Then the method is immediately called with parentheses `()`. But it doesn’t work correctly!
 
 As you can see, the call results in an error, because the value of `"this"` inside the call becomes `undefined`.
 
@@ -72,11 +72,11 @@ This works (object dot method):
 
     user.hi();
 
-This doesn't (evaluated method):
+This doesn’t (evaluated method):
 
     (user.name == "John" ? user.hi : user.bye)(); // Error!
 
-Why? If we want to understand why it happens, let's get under the hood of how `obj.method()` call works.
+Why? If we want to understand why it happens, let’s get under the hood of how `obj.method()` call works.
 
 ## <a href="reference-type.html#reference-type-explained" id="reference-type-explained" class="main__anchor">Reference type explained</a>
 
@@ -101,17 +101,17 @@ If we put these operations on separate lines, then `this` will be lost for sure:
     let hi = user.hi;
     hi(); // Error, because this is undefined
 
-Here `hi = user.hi` puts the function into the variable, and then on the last line it is completely standalone, and so there's no `this`.
+Here `hi = user.hi` puts the function into the variable, and then on the last line it is completely standalone, and so there’s no `this`.
 
 **To make `user.hi()` calls work, JavaScript uses a trick – the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
 
-The Reference Type is a "specification type”. We can't explicitly use it, but it is used internally by the language.
+The Reference Type is a “specification type”. We can’t explicitly use it, but it is used internally by the language.
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
--   `base` is the object.
--   `name` is the property name.
--   `strict` is true if `use strict` is in effect.
+- `base` is the object.
+- `name` is the property name.
+- `strict` is true if `use strict` is in effect.
 
 The result of a property access `user.hi` is not a function, but a value of Reference Type. For `user.hi` in strict mode it is:
 
@@ -120,9 +120,9 @@ The result of a property access `user.hi` is not a function, but a value of Refe
 
 When parentheses `()` are called on the Reference Type, they receive the full information about the object and its method, and can set the right `this` (`=user` in this case).
 
-Reference type is a special "intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
+Reference type is a special “intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
 
-Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation "loses” `this`.
+Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation “loses” `this`.
 
 So, as the result, the value of `this` is only passed the right way if the function is called directly using a dot `obj.method()` or square brackets `obj['method']()` syntax (they do the same here). There are various ways to solve this problem such as [func.bind()](bind.html#solution-2-bind).
 
@@ -130,9 +130,9 @@ So, as the result, the value of `this` is only passed the right way if the funct
 
 Reference Type is an internal type of the language.
 
-Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special "reference type” value that stores both the property value and the object it was taken from.
+Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special “reference type” value that stores both the property value and the object it was taken from.
 
-That's for the subsequent method call `()` to get the object and set `this` to it.
+That’s for the subsequent method call `()` to get the object and set `this` to it.
 
 For all other operations, the reference type automatically becomes the property value (a function in our case).
 
@@ -155,7 +155,7 @@ What is the result of this code?
 
     (user.go)()
 
-P.S. There's a pitfall :)
+P.S. There’s a pitfall :)
 
 solution
 
@@ -195,7 +195,7 @@ If we insert the semicolon, all is fine:
 
     (user.go)() // John
 
-Please note that parentheses around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there's no effect. Only the semicolon thing matters.
+Please note that parentheses around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there’s no effect. Only the semicolon thing matters.
 
 ### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of "this"</a>
 
@@ -226,9 +226,9 @@ But calls `(1)` and `(2)` works differently from `(3)` and `(4)`. Why?
 
 solution
 
-Here's the explanations.
+Here’s the explanations.
 
-1.  That's a regular object method call.
+1.  That’s a regular object method call.
 
 2.  The same, parentheses do not change the order of operations here, the dot is first anyway.
 
@@ -255,23 +255,23 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
--   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
--   <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
--   <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
+- <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
+- <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
 
--   <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
--   <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
+- <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
+- <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -279,7 +279,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/04-reference-type" class="sidebar__link">Edit on GitHub</a>
 
--   <a href="about.html" class="page-footer__link">about the project</a>
--   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
--   <a href="terms.html" class="page-footer__link">terms of usage</a>
--   <a href="privacy.html" class="page-footer__link">privacy policy</a>
+- <a href="about.html" class="page-footer__link">about the project</a>
+- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+- <a href="terms.html" class="page-footer__link">terms of usage</a>
+- <a href="privacy.html" class="page-footer__link">privacy policy</a>
