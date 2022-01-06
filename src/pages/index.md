@@ -190,18 +190,15 @@ sections:
         image_alt: portfolio of websites
         image: images/portfolio-pic-494ea398.png
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
+    section_id: Projects
     image_alt: rotating pages
     image_position: left
-    content: |-
-      <iframe class="block-content" width="100%  width="1200px!important"
+    content: |
+    <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://random-static-html-deploys.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-        ---
-<br>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -211,36 +208,21 @@ sections:
     content: |+
       # ***What I've been working on lately:***
       ## Web Dev Utilitiy Tools
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz-blog.netlify.app/docs/tools"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-        ---
-<br>
-      <iframe class="block-content" width="100%  width="1200px!important"
+  <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-        ---
-<br>
-      <iframe class="block-content" width="100%  width="1200px!important"
+  <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-        ---
-<br>
-      <iframe class="block-content" width="100%  width="1200px!important"
+  <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
         src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
     actions: []
     type: section_content
     image: images/cool annimation.gif
