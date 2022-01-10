@@ -190,11 +190,11 @@ img {
     scroll-snap-align: center;
 }
 img:hover {
-Filter: brightness(110%);
+    filter: brightness(110%);
 }
 figure {
-  overflow: auto;
-  scroll-snap-type: inline mandatory;
+    overflow: auto;
+    scroll-snap-type: inline mandatory;
 }
 @media only screen and (min-width: 641px) {
     blockquote {
