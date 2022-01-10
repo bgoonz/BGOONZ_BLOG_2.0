@@ -181,7 +181,9 @@ object,
 video {
     max-width: 100%;
 }
-
+div.wrapper:hover img:not(:hover) {
+Filter: brightness(50%);
+}
 img {
     height: auto;
     max-width: 100%;
