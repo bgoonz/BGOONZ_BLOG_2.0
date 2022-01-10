@@ -2564,6 +2564,13 @@ For more information, have a look in the working example `using-markdown-pages`.
 
 </details>
 
+  
+---
+
+# Technoloy:
+  
+![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
+  
 ---
 
 # SOURCECODE
