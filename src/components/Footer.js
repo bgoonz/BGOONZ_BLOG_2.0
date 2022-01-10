@@ -136,7 +136,7 @@ export default class Footer extends React.Component {
                             Save to PDF
                         </a>
                     </center>
-      <a aria-current="page" className href="/"><img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" /></a>
+      <a aria-current="page" className="site-logo" href="/"><img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" /></a>
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
