@@ -181,18 +181,20 @@ object,
 video {
     max-width: 100%;
 }
-
+div.wrapper:hover img:not(:hover) {
+Filter: brightness(50%);
+}
 img {
     height: auto;
     max-width: 100%;
     scroll-snap-align: center;
 }
 img:hover {
-    filter: brightness(110%);
+Filter: brightness(110%);
 }
 figure {
-    overflow: auto;
-    scroll-snap-type: inline mandatory;
+  overflow: auto;
+  scroll-snap-type: inline mandatory;
 }
 @media only screen and (min-width: 641px) {
     blockquote {
