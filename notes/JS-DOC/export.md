@@ -207,7 +207,9 @@ This is what it would look like using code snippets:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-exports</span></a></td></tr></tbody></table>
 
 `export`

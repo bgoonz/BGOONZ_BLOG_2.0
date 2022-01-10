@@ -51,7 +51,9 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'String.fromCharCode' in that specification.</span></a></td></tr></tbody></table>
 
 `fromCharCode`

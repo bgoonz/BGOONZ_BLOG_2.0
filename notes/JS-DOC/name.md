@@ -180,7 +180,9 @@ If a [`Symbol`](../symbol) is used a function name and the symbol has a descript
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-function-instances-name</span></a></td></tr></tbody></table>
 
 `name`

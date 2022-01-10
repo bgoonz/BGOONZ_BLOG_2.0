@@ -33,7 +33,9 @@ Because `MIN_SAFE_INTEGER` is a static property of [`Number`](../number), you al
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-number.min_safe_integer</span></a></td></tr></tbody></table>
 
 `MIN_SAFE_INTEGER`

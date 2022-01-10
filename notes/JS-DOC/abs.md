@@ -38,7 +38,9 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'Math.abs' in that specification.</span></a></td></tr></tbody></table>
 
 `abs`

@@ -243,7 +243,9 @@ Calls `callbackFn` once for each value present in the `Set` object, in insertion
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-set-objects</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

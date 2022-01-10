@@ -208,7 +208,9 @@ See also [Function composition](<https://en.wikipedia.org/wiki/Function_composit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

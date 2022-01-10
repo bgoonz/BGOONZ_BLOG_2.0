@@ -242,7 +242,9 @@ If you define multiple values then the last value is returned.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-eval-x</span></a></td></tr></tbody></table>
 
 `eval`

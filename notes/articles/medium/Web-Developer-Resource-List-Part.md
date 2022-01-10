@@ -23,18 +23,18 @@ A all encompassing list of tools and resources for web developers
 
 ### 📦 Finding and vetting npm packages
 
--   <span id="9bc6"><a href="https://www.pikapkg.com/" class="markup--anchor markup--li-anchor">pika</a>: A searchable catalog of modern “module” packages on npm</span>
+-   <span id="9bc6"><a href="https://www.pikapkg.com/" class="markup--anchor markup--li-anchor">pika</a>: A searchable catalog of modern "module" packages on npm</span>
 -   <span id="10f9"><a href="https://npms.io/" class="markup--anchor markup--li-anchor">npms</a>: A better and open source search for node packages</span>
 -   <span id="ecb9"><a href="https://github.com/maticzav/emma-cli" class="markup--anchor markup--li-anchor">emma</a>: 📦 Terminal assistant to find and install node packages</span>
 -   <span id="e1df"><a href="https://github.com/harksys/npmvet" class="markup--anchor markup--li-anchor">npmvet</a>: A simple CLI tool for vetting npm package versions</span>
--   <span id="e831"><a href="https://bundlephobia.com/" class="markup--anchor markup--li-anchor">Bundlephobia</a>: See the “cost” of any npm package</span>
+-   <span id="e831"><a href="https://bundlephobia.com/" class="markup--anchor markup--li-anchor">Bundlephobia</a>: See the "cost" of any npm package</span>
 -   <span id="28aa"><a href="https://snyk.io" class="markup--anchor markup--li-anchor">Snyk</a>: Find any security vulnerabilities for any npm package. Search their database here: `https://snyk.io/vuln/npm:{package}` e.g. <a href="https://snyk.io/vuln/npm:react" class="markup--anchor markup--li-anchor">https://snyk.io/vuln/npm:react</a></span>
 -   <span id="b4da"><a href="https://runpkg.com/" class="markup--anchor markup--li-anchor">runpkg</a>: Explore, learn about and perform static analysis on npm packages in the browser</span>
 
 ### 🎨 CSS
 
--   <span id="dd16"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="markup--anchor markup--li-anchor">CSS Tricks “Complete Guide to Flexbox”</a></span>
--   <span id="2333"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="markup--anchor markup--li-anchor">CSS Tricks “Complete Guide to Grid”</a></span>
+-   <span id="dd16"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="markup--anchor markup--li-anchor">CSS Tricks "Complete Guide to Flexbox"</a></span>
+-   <span id="2333"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="markup--anchor markup--li-anchor">CSS Tricks "Complete Guide to Grid"</a></span>
 -   <span id="dba6"><a href="http://cubic-bezier.com/#.17,.67,.83,.67" class="markup--anchor markup--li-anchor">Cubic bezier curve creator</a></span>
 -   <span id="b920"><a href="http://matthewlein.com/ceaser/" class="markup--anchor markup--li-anchor">Ceaser</a>: Cubic bezier curve generator</span>
 -   <span id="7f1c"><a href="https://csstriggers.com/" class="markup--anchor markup--li-anchor">CSS Triggers</a>: find out what CSS properties trigger Paint/Layout/Composite renders</span>
@@ -99,7 +99,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="4622"><a href="https://github.com/fuhton/timedstorage" class="markup--anchor markup--li-anchor">timedstorage</a>: A library for storing and expiring objects in window.localstorage</span>
 -   <span id="007a"><a href="https://github.com/stevemao/left-pad" class="markup--anchor markup--li-anchor">left-pad</a>: String left pad</span>
 -   <span id="ea51"><a href="https://github.com/tiaanduplessis/dont-go" class="markup--anchor markup--li-anchor">dont-go</a>: A small client-side library with zero dependencies to change the title and/or favicon of the page when it is inactive</span>
--   <span id="57da"><a href="https://github.com/hybridables/always-done" class="markup--anchor markup--li-anchor">always-done</a>: Handle completion and errors with elegance! Support for async/await, promises, callbacks, streams and observables. A drop-in replacement for async-done — pass 100% of its tests plus more</span>
+-   <span id="57da"><a href="https://github.com/hybridables/always-done" class="markup--anchor markup--li-anchor">always-done</a>: Handle completion and errors with elegance! Support for async/await, promises, callbacks, streams and observables. A drop-in replacement for async-done — pass 100% of its tests plus more</span>
 -   <span id="a7b3"><a href="https://github.com/words" class="markup--anchor markup--li-anchor">words</a>: Linguistic javascript modules</span>
 -   <span id="0e04"><a href="https://github.com/davidtheclark/no-scroll" class="markup--anchor markup--li-anchor">no-scroll</a>: Disable scrolling on an element that would otherwise scroll</span>
 -   <span id="cc78"><a href="https://github.com/catamphetamine/libphonenumber-js" class="markup--anchor markup--li-anchor">libphonenumber-js</a>: A simpler (and smaller) rewrite of Google Android's libphonenumber library</span>
@@ -146,7 +146,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="6310"><a href="https://github.com/jshttp/http-errors" class="markup--anchor markup--li-anchor">http-errors</a>: Create HTTP Errors</span>
 -   <span id="73b9"><a href="https://github.com/hapijs/boom" class="markup--anchor markup--li-anchor">boom</a>: HTTP-friendly error objects</span>
 -   <span id="560b"><a href="https://github.com/denoland/deno" class="markup--anchor markup--li-anchor">deno</a>: A secure JavaScript and TypeScript runtime</span>
--   <span id="32e7"><a href="https://github.com/micromatch/nanomatch" class="markup--anchor markup--li-anchor">nanomatch</a>: Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but without support for extended globs (extglobs), posix brackets or braces, and with complete Bash 4.3 wildcard support: (“\*”, “\*\*”, and “?”)</span>
+-   <span id="32e7"><a href="https://github.com/micromatch/nanomatch" class="markup--anchor markup--li-anchor">nanomatch</a>: Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but without support for extended globs (extglobs), posix brackets or braces, and with complete Bash 4.3 wildcard support: ("\*", "\*\*", and "?")</span>
 -   <span id="9286"><a href="https://github.com/sindresorhus/yn" class="markup--anchor markup--li-anchor">yn</a>: Parse yes/no like values</span>
 -   <span id="1238"><a href="https://github.com/AvianFlu/ncp" class="markup--anchor markup--li-anchor">ncp</a>: Asynchronous recursive file copying with Node.js</span>
 
@@ -275,7 +275,7 @@ A all encompassing list of tools and resources for web developers
 
 ### Server-rendered React
 
--   <span id="ea38"><a href="https://nextjs.org/" class="markup--anchor markup--li-anchor">Next.js</a> (<a href="https://github.com/zeit/next.js" class="markup--anchor markup--li-anchor">repo</a>): — Framework for server-rendered or statically-exported React apps</span>
+-   <span id="ea38"><a href="https://nextjs.org/" class="markup--anchor markup--li-anchor">Next.js</a> (<a href="https://github.com/zeit/next.js" class="markup--anchor markup--li-anchor">repo</a>): — Framework for server-rendered or statically-exported React apps</span>
 -   <span id="50fe"><a href="https://github.com/zeit/next-plugins" class="markup--anchor markup--li-anchor">next-plugins</a></span>
 
 ### Static site generators
@@ -319,7 +319,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="3944"><a href="https://hub.github.com/" class="markup--anchor markup--li-anchor">hub</a>: hub is an extension to command-line git that helps you do everyday GitHub tasks without ever leaving the terminal</span>
 -   <span id="5d4e"><a href="https://github.com/zeit/serve" class="markup--anchor markup--li-anchor">serve</a>: Static file serving and directory listing</span>
 -   <span id="4548"><a href="https://github.com/agarrharr/awesome-cli-apps" class="markup--anchor markup--li-anchor">awesome-cli-apps</a>: A curated list of command line apps</span>
--   <span id="6d80"><a href="https://github.com/SpaceVim/SpaceVim" class="markup--anchor markup--li-anchor">SpaceVim</a>: A community-driven modular vim distribution — The ultimate vim configuration</span>
+-   <span id="6d80"><a href="https://github.com/SpaceVim/SpaceVim" class="markup--anchor markup--li-anchor">SpaceVim</a>: A community-driven modular vim distribution — The ultimate vim configuration</span>
 
 ### Tooling
 
@@ -358,13 +358,13 @@ A all encompassing list of tools and resources for web developers
 -   <span id="b585"><a href="https://facebook.github.io/jest/" class="markup--anchor markup--li-anchor">Jest</a>: Delightful JavaScript Testing</span>
 -   <span id="9799"><a href="https://github.com/Raathigesh/majestic" class="markup--anchor markup--li-anchor">majestic</a>: Zero config UI for Jest</span>
 -   <span id="c9c7"><a href="https://github.com/mattphillips/jest-chain" class="markup--anchor markup--li-anchor">jest-chain</a>: Chain Jest matchers together to create one powerful assertion 🃏⛓</span>
--   <span id="bde5"><a href="https://github.com/jest-community/jest-extended" class="markup--anchor markup--li-anchor">jest-extended</a>: — Additional Jest matchers 🃏💪</span>
+-   <span id="bde5"><a href="https://github.com/jest-community/jest-extended" class="markup--anchor markup--li-anchor">jest-extended</a>: — Additional Jest matchers 🃏💪</span>
 -   <span id="3c2c"><a href="https://github.com/jest-community/snapshot-diff" class="markup--anchor markup--li-anchor">snapshot-diff</a>: Diffing snapshot utility for Jest</span>
 -   <span id="d454"><a href="https://github.com/hustcc/jest-date-mock" class="markup--anchor markup--li-anchor">jest-date-mock</a>: 🌗 Mock `Date` when run unit test cases with jest. Make tests of Date easier</span>
 -   <span id="938d"><a href="https://cypress.io" class="markup--anchor markup--li-anchor">Cypress</a>: end-to-end testing</span>
 -   <span id="e1fa"><a href="https://github.com/kentcdodds/cypress-testing-library" class="markup--anchor markup--li-anchor">cypress-testing-library</a>: 🐅 Simple and complete custom Cypress commands and utilities that encourage good testing practices</span>
 -   <span id="eaf4"><a href="https://github.com/avanslaars/cypress-axe" class="markup--anchor markup--li-anchor">cypress-axe</a>: Custom commands for Cypress to run a11y checks with axe-core</span>
--   <span id="3a32"><a href="https://github.com/bahmutov/start-server-and-test" class="markup--anchor markup--li-anchor">start-server-and-test</a>: — Starts server, waits for URL, then runs test command; when the tests end, shuts down server</span>
+-   <span id="3a32"><a href="https://github.com/bahmutov/start-server-and-test" class="markup--anchor markup--li-anchor">start-server-and-test</a>: — Starts server, waits for URL, then runs test command; when the tests end, shuts down server</span>
 -   <span id="3040"><a href="https://github.com/kentcdodds/dom-testing-library" class="markup--anchor markup--li-anchor">dom-testing-library</a>: 🐙 Simple and complete DOM testing utilities that encourage good testing practices</span>
 -   <span id="4cd8"><a href="https://github.com/testing-library/react-testing-library" class="markup--anchor markup--li-anchor">react-testing-library 🐐</a>: Simple and complete React DOM testing utilities that encourage good testing practices</span>
 -   <span id="ec40"><a href="https://react-testing-examples.com/" class="markup--anchor markup--li-anchor">react-testing-library</a>: React Testing Examples</span>
@@ -386,7 +386,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="2feb"><a href="https://eslint.org" class="markup--anchor markup--li-anchor">Eslint</a></span>
 -   <span id="2b9a"><a href="https://github.com/prettier/eslint-plugin-prettier" class="markup--anchor markup--li-anchor">eslint-plugin-prettier</a>: ESLint plugin for prettier formatting</span>
 -   <span id="9669"><a href="https://github.com/prettier/eslint-config-prettier" class="markup--anchor markup--li-anchor">eslint-config-prettier</a>: Turns off all rules that are unnecessary or might conflict with Prettier</span>
--   <span id="d317"><a href="https://github.com/yannickcr/eslint-plugin-react" class="markup--anchor markup--li-anchor">eslint-plugin-react</a>: — React specific linting rules for ESLint</span>
+-   <span id="d317"><a href="https://github.com/yannickcr/eslint-plugin-react" class="markup--anchor markup--li-anchor">eslint-plugin-react</a>: — React specific linting rules for ESLint</span>
 
 ### Miscellaneous
 
@@ -419,7 +419,7 @@ A all encompassing list of tools and resources for web developers
 ### GraphQL
 
 -   <span id="424b"><a href="https://www.graphqlbin.com" class="markup--anchor markup--li-anchor">GraphQL Playground</a></span>
--   <span id="10af"><a href="https://www.apollographql.com/" class="markup--anchor markup--li-anchor">Apollo GraphQL</a>: Apollo Data Graph Platform — unify APIs, microservices, and databases into a data graph that you can query with GraphQL</span>
+-   <span id="10af"><a href="https://www.apollographql.com/" class="markup--anchor markup--li-anchor">Apollo GraphQL</a>: Apollo Data Graph Platform — unify APIs, microservices, and databases into a data graph that you can query with GraphQL</span>
 -   <span id="0526"><a href="https://www.apollographql.com/docs/react/" class="markup--anchor markup--li-anchor">Apollo Client (React)</a>: Apollo React GraphQL Docs</span>
 -   <span id="6eab"><a href="https://github.com/Saeris/graphql-directives" class="markup--anchor markup--li-anchor">graphql-directives</a>: 🧭 A collection of custom GraphQL Schema Directives for use with Apollo Server</span>
 -   <span id="0f7d"><a href="https://github.com/FormidableLabs/urql" class="markup--anchor markup--li-anchor">urql</a>: The highly customizable and versatile GraphQL client</span>
@@ -496,10 +496,10 @@ A all encompassing list of tools and resources for web developers
 ### Design Systems and documentation
 
 -   <span id="571f"><a href="https://storybook.js.org/" class="markup--anchor markup--li-anchor">Storybook</a>: UI dev environment you'll love to use</span>
--   <span id="7371"><a href="https://github.com/styleguidist/react-styleguidist" class="markup--anchor markup--li-anchor">react-styleguidist</a>: — Isolated React component development environment with a living style guide</span>
+-   <span id="7371"><a href="https://github.com/styleguidist/react-styleguidist" class="markup--anchor markup--li-anchor">react-styleguidist</a>: — Isolated React component development environment with a living style guide</span>
 -   <span id="f2ff"><a href="https://docusaurus.io/" class="markup--anchor markup--li-anchor">Docusaurus</a>: Easy to Maintain Open Source Documentation Websites</span>
 -   <span id="1d27"><a href="https://www.docz.site/" class="markup--anchor markup--li-anchor">Docz</a></span>
--   <span id="4ffc"><a href="https://github.com/mrmartineau/design-system-utils" class="markup--anchor markup--li-anchor">design-system-utils</a>: — Design system framework for modern front-end projects</span>
+-   <span id="4ffc"><a href="https://github.com/mrmartineau/design-system-utils" class="markup--anchor markup--li-anchor">design-system-utils</a>: — Design system framework for modern front-end projects</span>
 -   <span id="d120"><a href="https://docute.org/" class="markup--anchor markup--li-anchor">Docute</a>: The fastest way to create a documentation site for your project</span>
 -   <span id="eb8e"><a href="https://github.com/seek-oss/playroom" class="markup--anchor markup--li-anchor">playroom</a>: Design with JSX, powered by your own component library</span>
 
@@ -536,7 +536,7 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 
 -   <span id="3edd"><a href="http://modularscale.com/" class="markup--anchor markup--li-anchor">Modular Scale</a></span>
 -   <span id="7e68"><a href="https://codepen.io/getflourish/full/vXqewy/" class="markup--anchor markup--li-anchor">Adaptive Modular Scale</a></span>
--   <span id="0711"><a href="http://type-scale.com/" class="markup--anchor markup--li-anchor">Type Scale — A Visual Calculator</a></span>
+-   <span id="0711"><a href="http://type-scale.com/" class="markup--anchor markup--li-anchor">Type Scale — A Visual Calculator</a></span>
 
 ### IDEs and Text Editors
 
@@ -572,20 +572,28 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 
 ### If you found this guide helpful feel free to checkout my other articles:
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong>
+<br/>
+
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ### OR GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
+<br/>
+
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 28, 2021](https://medium.com/p/fd686892b9eb).

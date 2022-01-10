@@ -204,7 +204,9 @@ The following examples tests the behavior of the `every` method when the array i
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-array.prototype.every</span></a></td></tr></tbody></table>
 
 `every`

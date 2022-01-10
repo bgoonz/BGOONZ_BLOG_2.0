@@ -16,7 +16,7 @@ Inspiration:
 
 #### Free Code Camp:
 
-> Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons — all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.
+> Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons — all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.
 
 #### Chris Coyier
 
@@ -32,7 +32,7 @@ Inspiration:
 
 #### <a href="https://www.youtube.com/channel/UCu44AnfqsP-sRxmZHdnhblw" class="markup--anchor markup--h4-anchor">Dave Xiang</a>
 
-> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, “Software Developer Life.”
+> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, "Software Developer Life."
 
 #### Google TechTalks
 
@@ -40,7 +40,7 @@ Inspiration:
 
 #### mycodeschool
 
-> mycodeschool is an educational initiative. Our aim is to present some core concepts of computer programming through illustrated examples and creative teaching techniques. You can send your feedback to mycodeschool \[at\] gmail \[dot\] com Visit: <a href="http://www.mycodeschool.com" class="markup--anchor markup--blockquote-anchor">www.mycodeschool.com</a> Some good resources to learn and practice programming: TopCoder — <a href="http://community.topcoder.com/tc" class="markup--anchor markup--blockquote-anchor">http://community.topcoder.com/tc</a> Codeforces — <a href="http://codeforces.com/" class="markup--anchor markup--blockquote-anchor">http://codeforces.com/</a> Some good resources to practice for programming interviews: Nice article on how to Ace a coding interview — <a href="https://www.linkedin.com/today/post/article/20141120061048-6976444-ace-the-coding-interview-every-time" class="markup--anchor markup--blockquote-anchor">https://www.linkedin.com/today/post/article/20141120061048-6976444-ace-the-coding-interview-every-time</a> <a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--blockquote-anchor">http://www.geeksforgeeks.org/</a> <a href="http://www.careercup.com/" class="markup--anchor markup--blockquote-anchor">http://www.careercup.com/</a>
+> mycodeschool is an educational initiative. Our aim is to present some core concepts of computer programming through illustrated examples and creative teaching techniques. You can send your feedback to mycodeschool \[at\] gmail \[dot\] com Visit: <a href="http://www.mycodeschool.com" class="markup--anchor markup--blockquote-anchor">www.mycodeschool.com</a> Some good resources to learn and practice programming: TopCoder — <a href="http://community.topcoder.com/tc" class="markup--anchor markup--blockquote-anchor">http://community.topcoder.com/tc</a> Codeforces — <a href="http://codeforces.com/" class="markup--anchor markup--blockquote-anchor">http://codeforces.com/</a> Some good resources to practice for programming interviews: Nice article on how to Ace a coding interview — <a href="https://www.linkedin.com/today/post/article/20141120061048-6976444-ace-the-coding-interview-every-time" class="markup--anchor markup--blockquote-anchor">https://www.linkedin.com/today/post/article/20141120061048-6976444-ace-the-coding-interview-every-time</a> <a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--blockquote-anchor">http://www.geeksforgeeks.org/</a> <a href="http://www.careercup.com/" class="markup--anchor markup--blockquote-anchor">http://www.careercup.com/</a>
 
 #### Siraj Raval
 

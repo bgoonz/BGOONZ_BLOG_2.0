@@ -38,7 +38,9 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-dataview.prototype.getuint16</span></a></td></tr></tbody></table>
 
 `getUint16`

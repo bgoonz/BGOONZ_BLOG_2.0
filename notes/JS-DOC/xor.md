@@ -52,7 +52,9 @@ For example, a bitwise XOR of `5 ^ 1` results in `0100` which is 4 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.xor">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.xor">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-atomics.xor</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

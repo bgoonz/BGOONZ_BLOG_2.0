@@ -14,12 +14,14 @@ REST is a generally agreed-upon set of principles and constraints. They are reco
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Part 1:
 
-<a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a"><strong>The ExpressJS Way To Write APIs</strong><br />
+<a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a"><strong>The ExpressJS Way To Write APIs</strong>
+<br/>
+
 <em>This article will cover the basics of express from the perspective of a beginner without concerning its self with the…</em>medium.com</a><a href="https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
 
-### 0 — &gt; Explain the role of a foreign key
+### 0 — &gt; Explain the role of a foreign key
 
 ### Overview
 
@@ -39,9 +41,9 @@ If we could only see the `ranchers` table, we would know that John, Jane, and Je
 
 Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in" class="markup--anchor markup--p-anchor">SQLTryIT</a>
 
-How many records in the products table belong to the category “confections”?
+How many records in the products table belong to the category "confections"?
 
-### Objective 2 — query data from multiple tables
+### Objective 2 — query data from multiple tables
 
 Now that we understand the basics of querying data from a single table, let's move on to selecting data from multiple tables using JOIN operations.
 
@@ -105,11 +107,11 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
-The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
+The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
 1.  <span id="31e6">SQL EQUI JOIN :</span>
 
-The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
+The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
 1.  <span id="d86b">SQL NON EQUI JOIN :</span>
 
@@ -117,7 +119,7 @@ The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equa
 
 **SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
-The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
+The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
 1.  <span id="c9b5">SQL INNER JOIN</span>
 
@@ -301,7 +303,7 @@ There should no be `knex` code in the endpoints themselves.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### A database is a collection of data organized for easy retrieval and manipulation.
 
-We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.
+We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related" data, are the oldest and most common type of database in use today.
 
 ### Data Persistence
 
@@ -698,8 +700,8 @@ Beyond datatypes, we may add additional **constraints** on each field. Some exam
 
 -   <span id="14ca">**Not Null:** The field cannot be left empty</span>
 -   <span id="b533">**Unique:** No two records can have the same value in this field</span>
--   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
--   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
+-   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
+-   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
@@ -1121,11 +1123,11 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
-The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
+The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN
 
 1.  <span id="2bb1">SQL EQUI JOIN :</span>
 
-The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
+The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.
 
 1.  <span id="a9be">SQL NON EQUI JOIN :</span>
 
@@ -1133,7 +1135,7 @@ The **SQL NON EQUI JOIN** is a join uses comparison operator other than the equa
 
 **SQL EQUI JOIN : INNER JOIN and OUTER JOIN**
 
-The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
+The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN
 
 1.  <span id="cf44">SQL INNER JOIN</span>
 
@@ -1301,7 +1303,7 @@ This table has two issues. There is no proper id field (as multiple farms may ha
 
 <a href="https://www.notion.so/075ad6dd99ac48698625d7b56ca67bef" class="markup--anchor markup--p-anchor">Untitled</a>
 
-While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn't good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.
+While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn't good either, as its another example of denormalization. There is no "array" data type in a relational database, so each field must contain only one data point.
 
 <a href="https://www.notion.so/375a15b0cb3f444a8698cd6cb3a08fe0" class="markup--anchor markup--p-anchor">Untitled</a>
 
@@ -1367,7 +1369,7 @@ This is the most common type of relationship between entities. Some other exampl
 -   <span id="cc42">One `user` can have many `posts`.</span>
 -   <span id="dae3">One `post` can have many `comments`.</span>
 
-Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the `farms` and `ranchers` tables.
+Manage this type of relationship by adding a foreign key on the "many" table of the relationship that points to the primary key on the "one" table. Consider the `farms` and `ranchers` tables.
 
 <a href="https://www.notion.so/7dfd2e69c9804a01845f2e9b716a5ac2" class="markup--anchor markup--p-anchor">Untitled</a>
 
@@ -1513,10 +1515,14 @@ If we want that to override this default, we can delete or update with **cascade
         .onDelete('CASCADE')
     })
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure><a href="https://expressjs.com/en/starter/basic-routing.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/starter/basic-routing.html"><strong>Express basic routing</strong><br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure><a href="https://expressjs.com/en/starter/basic-routing.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/starter/basic-routing.html"><strong>Express basic routing</strong> 
+<br/>
+
 <em>Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI…</em>expressjs.com</a><a href="https://expressjs.com/en/starter/basic-routing.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong><br />
+<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong>
+<br/>
+
 <em>Middleware functions are functions that have access to the request object ( req), the response object ( res), and the…</em>expressjs.com</a><a href="https://expressjs.com/en/guide/writing-middleware.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 25, 2021](https://medium.com/p/d9edbf68cf9a).

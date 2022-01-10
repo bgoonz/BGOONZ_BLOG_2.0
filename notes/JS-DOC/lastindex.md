@@ -49,7 +49,9 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-properties-of-regexp-instances</span></a></td></tr></tbody></table>
 
 `lastIndex`

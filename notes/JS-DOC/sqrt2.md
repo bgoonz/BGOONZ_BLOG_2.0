@@ -36,7 +36,9 @@ The following function returns the square root of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

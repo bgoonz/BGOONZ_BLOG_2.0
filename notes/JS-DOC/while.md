@@ -39,7 +39,9 @@ After completing the third pass, the condition `n` &lt; 3 is no longer true, so 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-while-statement</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

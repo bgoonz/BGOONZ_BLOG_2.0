@@ -56,7 +56,9 @@ The following example shows how to create a List formatter returning formatted p
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
 <span class="small">#listformat-objects</span></a></td></tr></tbody></table>
 
 `ListFormat`

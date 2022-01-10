@@ -88,7 +88,9 @@ This is also _not_ the same as being equal according to the [`===`](https://deve
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'Object.is' in that specification.</span></a></td></tr></tbody></table>
 
 `is`

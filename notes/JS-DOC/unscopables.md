@@ -59,7 +59,9 @@ You can also set `unscopables` for your own objects.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.unscopables">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.unscopables">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-symbol.unscopables</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

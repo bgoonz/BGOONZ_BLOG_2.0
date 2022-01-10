@@ -133,7 +133,7 @@ Plain Old JS Object Lesson Concepts
 
 ### Callbacks Lesson Concepts
 
--   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
+-   <span id="a16e">Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.</span>
 -   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
 -   <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
 -   <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
@@ -223,7 +223,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
 -   <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
 -   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"</span>
--   <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
+-   <span id="a54b">so it will exist in memory as "undefined" which is bad and unpredictable</span>
 -   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!</span>
 -   <span id="1f74">`const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
 -   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>
@@ -239,7 +239,7 @@ Plain Old JS Object Lesson Concepts
 -   <span id="c21b">includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)</span>
 -   <span id="51ad">for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped</span>
 -   <span id="09f1">inner scope does not have access to variables in the outer scope</span>
--   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
+-   <span id="587e">scope chaining — if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found</span>
 -   <span id="6ea5">so an inner scope can access outer scope variables</span>
 -   <span id="5188">but an outer scope can never access inner scope variables</span>
 
@@ -269,7 +269,7 @@ Plain Old JS Object Lesson Concepts
 <!-- -->
 
     let obj = {
-    name: “my object”,
+    name: "my object",
     unboundFunc: function () {
 
     return this.name;
@@ -400,12 +400,12 @@ Plain Old JS Object Lesson Concepts
 
 -   <span id="ae61">when we use `this` in a method it refers to the object that the method is invoked on</span>
 -   <span id="29a2">it will let you access other pieces of information from within that object, or even other methods</span>
--   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
+-   <span id="c41d">method style invocation — `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)</span>
 -   <span id="c99d">context is set every time we invoke a function</span>
 -   <span id="fa43">function style invocation sets the context to the global object no matter what</span>
 -   <span id="8cc1">being inside an object does not make the context that object! you still have to use method-style invocation</span>
 -   <span id="f578">Utilize the built in `Function#bind` on a callback to maintain the context of this</span>
--   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
+-   <span id="26ba">when we call bind on a function, we get an exotic function back — so the context will always be the same for that new function</span>
 
 <!-- -->
 
@@ -483,7 +483,7 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
     // we can use the built in Function.bind to ensure our context, our this , // is the cat object let boundCat = sayMeow.bind(cat);
 
-    boundCat(); // prints “meow”
+    boundCat(); // prints "meow"
 
     -`bind`
        can also work with arguments, so you can have a version of a
@@ -535,14 +535,14 @@ we can use strict mode with `"use strict";` this will prevent you from accessing
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
--   <span id="6f83">Boolean — Primitive</span>
--   <span id="6556">Null — Primitive</span>
--   <span id="0048">Undefined — Primitive</span>
--   <span id="8dec">Number — Primitive</span>
--   <span id="684c">String — Primitive</span>
--   <span id="41c1">Array — Reference</span>
--   <span id="9371">Object — Reference</span>
--   <span id="64c8">Function — Reference</span>
+-   <span id="6f83">Boolean — Primitive</span>
+-   <span id="6556">Null — Primitive</span>
+-   <span id="0048">Undefined — Primitive</span>
+-   <span id="8dec">Number — Primitive</span>
+-   <span id="684c">String — Primitive</span>
+-   <span id="41c1">Array — Reference</span>
+-   <span id="9371">Object — Reference</span>
+-   <span id="64c8">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 
@@ -878,7 +878,9 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
 ### Check Out My New Blog:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 27, 2021](https://medium.com/p/81c4d839b827).

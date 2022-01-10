@@ -31,7 +31,9 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'Date.prototype.getDay' in that specification.</span></a></td></tr></tbody></table>
 
 `getDay`

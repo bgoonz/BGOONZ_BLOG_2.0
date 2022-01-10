@@ -39,7 +39,9 @@ As defined by the ECMAScript 5 specification, `Infinity` is read-only (implement
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-value-properties-of-the-global-object-infinity</span></a></td></tr></tbody></table>
 
 `Infinity`

@@ -29,7 +29,9 @@ const Project = ({ title, cover, date, url, repo, npm, tech, body }) => (
                     <NPM />
                 </a>
             )}
+
             <br />
+
             {tech && (
                 <>
                     <Tech />

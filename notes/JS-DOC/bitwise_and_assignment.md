@@ -18,7 +18,9 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
 
 `Bitwise_AND_assignment`

@@ -33,7 +33,9 @@ In the following example, the `do...while` loop iterates at least once and reite
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-do-while-statement</span></a></td></tr></tbody></table>
 
 `do...while`

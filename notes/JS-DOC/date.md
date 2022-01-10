@@ -261,7 +261,9 @@ In this case, it's important to return only an integer—so a simple division wo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-date-objects</span></a></td></tr></tbody></table>
 
 `Date`

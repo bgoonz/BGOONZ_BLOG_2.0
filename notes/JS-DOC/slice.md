@@ -111,7 +111,9 @@ Anyway, it can be simplified using [`bind`](../function/bind).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-array.prototype.slice</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

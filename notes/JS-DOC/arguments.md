@@ -6,7 +6,7 @@
 
 **Note:** If you're writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
-**Note:** “Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn't have [`Array`](../global_objects/array)'s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
+**Note:** "Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn't have [`Array`](../global_objects/array)'s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
 
 The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function's arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry's index at `0`.
 
@@ -168,7 +168,9 @@ And also:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
 
 `arguments`

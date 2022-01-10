@@ -22,7 +22,9 @@ The `toLowerCase()` method returns the value of the string converted to lower ca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolowercase">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolowercase">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'String.prototype.toLowerCase' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

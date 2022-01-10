@@ -10,9 +10,9 @@ This list of resources is specifically targeted at Web Developers and Data Scien
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*KLzv9YgXVEYUpnk8.jpg" class="graf-image" /></figure>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> _The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
+> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
 
-> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as “the field of study that gives computers the ability to learn without explicitly being programmed.”_
+> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>-   <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
 -   <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
@@ -52,21 +52,21 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c28f">\[📰\] <a href="http://nlathia.github.io/2020/10/Monzo-ML.html" class="markup--anchor markup--li-anchor">Machine Learning @ Monzo in 2020</a></span>
 -   <span id="9f2f">\[📰\] <a href="https://dropbox.tech/machine-learning/how-image-search-works-at-dropbox" class="markup--anchor markup--li-anchor">How image search works at Dropbox</a></span>
 -   <span id="5ed8">\[ \] <a href="https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp#" class="markup--anchor markup--li-anchor">Real-world AI Case Studies</a></span>
--   <span id="a586">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
--   <span id="30ce">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
--   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses “Machine Learning in Networking”</a> `0:48:44`</span>
+-   <span id="a586">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
+-   <span id="30ce">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
+-   <span id="fdf3">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses "Machine Learning in Networking"</a> `0:48:44`</span>
 -   <span id="afd6">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
 -   <span id="1629">\[ \] <a href="https://www.youtube.com/watch?v=z_OGYzT_MBo" class="markup--anchor markup--li-anchor">Eric Colson, Chief Algorithms Officer, Stitch Fix</a> `0:53:57`</span>
 -   <span id="ad62">\[ \] <a href="https://www.youtube.com/watch?v=p0cQUErM5xs" class="markup--anchor markup--li-anchor">Claudia Perlich, Advisor to Dstillery and Adjunct Professor NYU Stern School of Business</a> `0:51:59`</span>
--   <span id="0655">\[ \] <a href="https://www.youtube.com/watch?v=imlp8DGNkk0" class="markup--anchor markup--li-anchor">Jeff Dean, Google Senior Fellow and SVP Google AI — Deep Learning to Solve Challenging Problems</a> `0:58:45`</span>
+-   <span id="0655">\[ \] <a href="https://www.youtube.com/watch?v=imlp8DGNkk0" class="markup--anchor markup--li-anchor">Jeff Dean, Google Senior Fellow and SVP Google AI — Deep Learning to Solve Challenging Problems</a> `0:58:45`</span>
 -   <span id="7cd5">\[ \] <a href="https://www.youtube.com/watch?v=suamFkw9jws" class="markup--anchor markup--li-anchor">James Parr, Director of Frontier Development Lab (NASA), FDL Europe &amp; CEO, Trillium Technologies</a> `0:55:46`</span>
--   <span id="e285">\[ \] <a href="https://www.youtube.com/watch?v=uyLT7EfWmsg" class="markup--anchor markup--li-anchor">Daphne Koller, Founder &amp; CEO of Insitro — In Conversation with Carlos Bustamante</a> `0:49:29`</span>
--   <span id="9fb5">\[ \] <a href="https://www.youtube.com/watch?v=4owh40tJ0wA" class="markup--anchor markup--li-anchor">Eric Horvitz, Microsoft Research — AI in the Open World: Advances, Aspirations, and Rough Edges</a> `0:56:11`</span>
--   <span id="466e">\[ \] <a href="https://www.youtube.com/watch?v=5u35GY24A0Q" class="markup--anchor markup--li-anchor">Tony Jebara, Netflix — Machine Learning for Recommendation and Personalization</a> `0:55:20`</span>
+-   <span id="e285">\[ \] <a href="https://www.youtube.com/watch?v=uyLT7EfWmsg" class="markup--anchor markup--li-anchor">Daphne Koller, Founder &amp; CEO of Insitro — In Conversation with Carlos Bustamante</a> `0:49:29`</span>
+-   <span id="9fb5">\[ \] <a href="https://www.youtube.com/watch?v=4owh40tJ0wA" class="markup--anchor markup--li-anchor">Eric Horvitz, Microsoft Research — AI in the Open World: Advances, Aspirations, and Rough Edges</a> `0:56:11`</span>
+-   <span id="466e">\[ \] <a href="https://www.youtube.com/watch?v=5u35GY24A0Q" class="markup--anchor markup--li-anchor">Tony Jebara, Netflix — Machine Learning for Recommendation and Personalization</a> `0:55:20`</span>
 -   <span id="1f3e">\[💻\] <a href="https://www.datacamp.com/courses/analyzing-police-activity-with-pandas" class="markup--anchor markup--li-anchor">Analyzing Police Activity with pandas</a></span>
 -   <span id="0d82">\[💻\] <a href="https://www.datacamp.com/courses/hr-analytics-in-python-predicting-employee-churn" class="markup--anchor markup--li-anchor">HR Analytics in Python: Predicting Employee Churn</a></span>
 -   <span id="b6e9">\[💻\] <a href="https://www.datacamp.com/courses/predicting-customer-churn-in-python" class="markup--anchor markup--li-anchor">Predicting Customer Churn in Python</a></span>
--   <span id="98fb">\[📺 \] <a href="https://www.youtube.com/watch?v=wDxTWp3KMMs" class="markup--anchor markup--li-anchor">How does YouTube recommend videos? — AI EXPLAINED!</a> `0:33:53`</span>
+-   <span id="98fb">\[📺 \] <a href="https://www.youtube.com/watch?v=wDxTWp3KMMs" class="markup--anchor markup--li-anchor">How does YouTube recommend videos? — AI EXPLAINED!</a> `0:33:53`</span>
 -   <span id="a85b">\[📺 \] <a href="https://www.youtube.com/watch?v=sIoHFPGOY0I" class="markup--anchor markup--li-anchor">How does Google Translate's AI work?</a> `0:15:02`</span>
 -   <span id="ac0e">\[📺 \] <a href="https://www.youtube.com/watch?v=mbOkL39Uabs" class="markup--anchor markup--li-anchor">Data Science in Finance</a> `0:17:52`</span>
 -   <span id="73d9">\[📺 \] <a href="https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc" class="markup--anchor markup--li-anchor">The Age of AI</a></span>
@@ -91,16 +91,16 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="edad">\[📺 \] <a href="https://www.youtube.com/watch?v=Sx3Fpw0XCXk" class="markup--anchor markup--li-anchor">Google Wave: Natural Language Processing</a></span>
 -   <span id="cb09">\[📺 \] <a href="https://www.youtube.com/watch?v=U1yT_4xcglY" class="markup--anchor markup--li-anchor">Natural Language Understanding in Alexa</a></span>
 -   <span id="37bb">\[📺 \] <a href="https://www.youtube.com/watch?v=Dkg1ULBASNA" class="markup--anchor markup--li-anchor">The Machine Learning Behind Alexa's AI Systems</a></span>
--   <span id="3c50">\[📺 \] <a href="https://www.youtube.com/watch?v=mJqFI7vhqdA" class="markup--anchor markup--li-anchor">Ines Montani Keynote — Applied NLP Thinking</a></span>
+-   <span id="3c50">\[📺 \] <a href="https://www.youtube.com/watch?v=mJqFI7vhqdA" class="markup--anchor markup--li-anchor">Ines Montani Keynote — Applied NLP Thinking</a></span>
 -   <span id="5c43">\[📺 \] <a href="https://youtu.be/25_kBogrzrs" class="markup--anchor markup--li-anchor">Lecture 9: Lukas Biewald</a></span>
 -   <span id="ea14">\[📺 \] <a href="https://youtu.be/vF7UgqaegVI" class="markup--anchor markup--li-anchor">Lecture 13: Research Directions</a></span>
 -   <span id="7bd5">\[📺 \] <a href="https://youtu.be/hZd3X_nGdew" class="markup--anchor markup--li-anchor">Lecture 14: Jeremy Howard</a></span>
 -   <span id="269c">\[📺 \] <a href="https://youtu.be/yvMgcLKuvVg" class="markup--anchor markup--li-anchor">Lecture 15: Richard Socher</a></span>
 -   <span id="7a15">\[📺 \] <a href="https://www.youtube.com/watch?v=pOnRSYSNuXI" class="markup--anchor markup--li-anchor">Machine learning across industries with Vicki Boykis</a> `0:34:02`</span>
--   <span id="fe46">\[📺 \] <a href="https://www.youtube.com/watch?v=n_CTGZSq4m0" class="markup--anchor markup--li-anchor">Rachael Tatman — Conversational A.I. and Linguistics</a> `0:36:51`</span>
--   <span id="039e">\[📺 \] <a href="https://www.youtube.com/watch?v=NbiG8ZuRsqU" class="markup--anchor markup--li-anchor">Nicolas Koumchatzky — Machine Learning in Production for Self Driving Cars</a> `0:44:56`</span>
--   <span id="db4e">\[📺 \] <a href="https://www.youtube.com/watch?v=_Ot35PspXw4" class="markup--anchor markup--li-anchor">Brandon Rohrer — Machine Learning in Production for Robots</a> `0:34:31`</span>
--   <span id="b256">\[📺 \] <a href="https://youtu.be/g6bOwQdCJrc" class="markup--anchor markup--li-anchor">[CVPR'21 WAD] Keynote — Andrej Karpathy, Tesla</a></span>
+-   <span id="fe46">\[📺 \] <a href="https://www.youtube.com/watch?v=n_CTGZSq4m0" class="markup--anchor markup--li-anchor">Rachael Tatman — Conversational A.I. and Linguistics</a> `0:36:51`</span>
+-   <span id="039e">\[📺 \] <a href="https://www.youtube.com/watch?v=NbiG8ZuRsqU" class="markup--anchor markup--li-anchor">Nicolas Koumchatzky — Machine Learning in Production for Self Driving Cars</a> `0:44:56`</span>
+-   <span id="db4e">\[📺 \] <a href="https://www.youtube.com/watch?v=_Ot35PspXw4" class="markup--anchor markup--li-anchor">Brandon Rohrer — Machine Learning in Production for Robots</a> `0:34:31`</span>
+-   <span id="b256">\[📺 \] <a href="https://youtu.be/g6bOwQdCJrc" class="markup--anchor markup--li-anchor">[CVPR'21 WAD] Keynote — Andrej Karpathy, Tesla</a></span>
 
 ---
 
@@ -174,7 +174,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 · **\[📺 \]** <a href="https://www.youtube.com/watch?v=ejWkDviM5QM" class="markup--anchor markup--p-anchor"><strong>Hugging Face, Transformers | NLP Research and Open Source | Interview with Julien Chaumond</strong></a>
 
-· **\[📺 \]** <a href="https://www.youtube.com/watch?v=nJAmN6gWdK8&amp;ab_channel=PyData" class="markup--anchor markup--p-anchor"><strong>Vincent Warmerdam — Playing by the Rules-Based-Systems | PyData Eindhoven 2020</strong></a>
+· **\[📺 \]** <a href="https://www.youtube.com/watch?v=nJAmN6gWdK8&amp;ab_channel=PyData" class="markup--anchor markup--p-anchor"><strong>Vincent Warmerdam — Playing by the Rules-Based-Systems | PyData Eindhoven 2020</strong></a>
 
 · **\[📺 \]** <a href="https://youtu.be/xNGI0B_Sn1E?list=LL" class="markup--anchor markup--p-anchor"><strong>Building intuitions before building models</strong></a>
 
@@ -198,7 +198,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="b02e">**\[ \]** <a href="https://youtu.be/TKYr4sS1SFw" class="markup--anchor markup--li-anchor"><strong>Lesson 5.2: Our Ecosystem, Venture Capital, &amp; Hypergrowth</strong></a></span>
 -   <span id="84fd">**\[ \]** <a href="https://youtu.be/upU-_ECq80Y" class="markup--anchor markup--li-anchor"><strong>Lesson 5.3: Losing the Forest for the Trees, guest lecture by Ali Alkhatib</strong></a></span>
 -   <span id="e153">**\[ \]** <a href="https://youtu.be/Nzvoc7aaEzw" class="markup--anchor markup--li-anchor"><strong>Lesson 6: Algorithmic Colonialism, and Next Steps</strong></a></span>
--   <span id="2b0c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=AoYD4eB3Vo4" class="markup--anchor markup--li-anchor"><strong>Lecture 9: Ethics (Full Stack Deep Learning — Spring 2021)</strong></a> **1:04:50**</span>
+-   <span id="2b0c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=AoYD4eB3Vo4" class="markup--anchor markup--li-anchor"><strong>Lecture 9: Ethics (Full Stack Deep Learning — Spring 2021)</strong></a> **1:04:50**</span>
 -   <span id="8a98">**\[📺 \]** <a href="https://www.youtube.com/watch?v=0wCJKw3-siY" class="markup--anchor markup--li-anchor"><strong>SE4AI: Ethics and Fairness</strong></a> **1:18:37**</span>
 -   <span id="b466">**\[📺 \]** <a href="https://www.youtube.com/watch?v=5ZdrNYvTmq8" class="markup--anchor markup--li-anchor"><strong>SE4AI: Security</strong></a> **1:18:24**</span>
 -   <span id="0995">**\[📺 \]** <a href="https://www.youtube.com/watch?v=xRlFDXV3-8E" class="markup--anchor markup--li-anchor"><strong>SE4AI: Safety</strong></a> **1:17:37**</span>
@@ -211,7 +211,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to setup data annotation efficiently
 
-**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The “What”, The “Why” and The “How”</strong></a>
+**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--p-anchor"><strong>Create A Synthetic Image Dataset — The "What", The "Why" and The "How"</strong></a>
 
 -   <span id="83ea">**\[📰\]** <a href="https://towardsdatascience.com/we-need-synthetic-data-e6f90a8532a4" class="markup--anchor markup--li-anchor"><strong>We need Synthetic Data</strong></a></span>
 -   <span id="82da">**\[📰\]** <a href="https://trishalaneeraj.github.io/2020-07-05/weak-supervision" class="markup--anchor markup--li-anchor"><strong>Weak Supervision for Online Discussions</strong></a></span>
@@ -219,13 +219,13 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c1b1">**\[📰\]** <a href="https://medium.com/jigsaw/creating-labeled-datasets-and-exploring-the-role-of-human-raters-56367b6db298" class="markup--anchor markup--li-anchor"><strong>Exploring the Role of Human Raters in Creating NLP Datasets</strong></a></span>
 -   <span id="9636">**\[📰\]** <a href="https://towardsdatascience.com/inter-annotator-agreement-2f46c6d37bf3" class="markup--anchor markup--li-anchor"><strong>Inter-Annotator Agreement (IAA)</strong></a></span>
 -   <span id="5e61">**\[📰\]** <a href="https://learnaitech.com/how-to-compute-inter-rater-reliablity-metrics-cohens-kappa-fleisss-kappa-cronbach-alpha-kripndorff-alpha-scotts-pi-inter-class-correlation-in-python/" class="markup--anchor markup--li-anchor"><strong>How to compute inter-rater reliability metrics (Cohen's Kappa, Fleiss's Kappa, Cronbach Alpha, Krippendorff Alpha, Scott's Pi, Inter-class correlation) in Python</strong></a></span>
--   <span id="d899">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yu15Nf5eJEE" class="markup--anchor markup--li-anchor"><strong>Snorkel: Dark Data and Machine Learning — Christopher Ré</strong></a></span>
+-   <span id="d899">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yu15Nf5eJEE" class="markup--anchor markup--li-anchor"><strong>Snorkel: Dark Data and Machine Learning — Christopher Ré</strong></a></span>
 -   <span id="6598">**\[📺 \]** <a href="https://youtu.be/59BKHO_xBPA" class="markup--anchor markup--li-anchor"><strong>Training a NER Model with Prodigy and Transfer Learning</strong></a></span>
--   <span id="bd05">**\[📺 \]** <a href="https://youtu.be/l4scwf8KeIA" class="markup--anchor markup--li-anchor"><strong>Training a New Entity Type with Prodigy — annotation powered by active learning</strong></a></span>
+-   <span id="bd05">**\[📺 \]** <a href="https://youtu.be/l4scwf8KeIA" class="markup--anchor markup--li-anchor"><strong>Training a New Entity Type with Prodigy — annotation powered by active learning</strong></a></span>
 -   <span id="9e49">**\[📺 \]** <a href="https://youtu.be/PCwpO3mLhZk?list=PLcD_yLvcdUll95mAnBDV0rZKhfClJMZMr" class="markup--anchor markup--li-anchor"><strong>ECCV 2020 WSL tutorial: 4. Human-in-the-loop annotations</strong></a></span>
 -   <span id="e288">**\[📺 \]** <a href="https://youtu.be/V33Ut36eUsY?list=LL" class="markup--anchor markup--li-anchor"><strong>Active Learning: Why Smart Labeling is the Future of Data Annotation | Alectio</strong></a></span>
--   <span id="6d3e">**\[📺 \]** <a href="https://www.youtube.com/watch?v=QlPiiyd8zQI" class="markup--anchor markup--li-anchor"><strong>Lecture 8: Data Management (Full Stack Deep Learning — Spring 2021)</strong></a> **0:59:42**</span>
--   <span id="1790">**\[📺 \]** <a href="https://www.youtube.com/watch?v=iFvk9cGbIZ4" class="markup--anchor markup--li-anchor"><strong>Lab 6: Data Labeling (Full Stack Deep Learning — Spring 2021)</strong></a> **0:05:06**</span>
+-   <span id="6d3e">**\[📺 \]** <a href="https://www.youtube.com/watch?v=QlPiiyd8zQI" class="markup--anchor markup--li-anchor"><strong>Lecture 8: Data Management (Full Stack Deep Learning — Spring 2021)</strong></a> **0:59:42**</span>
+-   <span id="1790">**\[📺 \]** <a href="https://www.youtube.com/watch?v=iFvk9cGbIZ4" class="markup--anchor markup--li-anchor"><strong>Lab 6: Data Labeling (Full Stack Deep Learning — Spring 2021)</strong></a> **0:05:06**</span>
 -   <span id="84ce">**\[📺 \]** <a href="https://youtu.be/T5jv8-xZhZI" class="markup--anchor markup--li-anchor"><strong>Lecture 6: Data Management</strong></a></span>
 -   <span id="992e">**\[📺 \]** <a href="https://www.youtube.com/watch?v=60lBFv9tyWk" class="markup--anchor markup--li-anchor"><strong>SE4AI: Data Quality</strong></a> **1:07:15**</span>
 -   <span id="1fa7">**\[📺 \]** <a href="https://www.youtube.com/watch?v=6e6aI4yjAxc" class="markup--anchor markup--li-anchor"><strong>SE4AI: Data Programming and Intro to Big Data Processing</strong></a> **0:33:04**</span>
@@ -384,8 +384,8 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="3663">**\[💻\]** <a href="https://www.datacamp.com/courses/exploratory-data-analysis-in-python" class="markup--anchor markup--li-anchor"><strong>Exploratory Data Analysis in Python</strong></a></span>
 -   <span id="ce8a">**\[ \]** <a href="https://www.edx.org/course/data-science-essentials-microsoft-dat203-1x-5" class="markup--anchor markup--li-anchor"><strong>edX: Data Science Essentials</strong></a></span>
 -   <span id="4b71">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/creating-an-analytical-dataset--ud977" class="markup--anchor markup--li-anchor"><strong>Creating an Analytical Dataset</strong></a></span>
--   <span id="7775">**\[📺 \]** <a href="https://www.youtube.com/watch?v=XpOBSaktb6s" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–04 — Preprocessing</strong></a> **1:07:40**</span>
--   <span id="edac">**\[📺 \]** <a href="https://www.youtube.com/watch?v=FDhyS6Xjxa8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–11 — Model Inspection and Feature Selection</strong></a> **1:15:15**</span>
+-   <span id="7775">**\[📺 \]** <a href="https://www.youtube.com/watch?v=XpOBSaktb6s" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–04 — Preprocessing</strong></a> **1:07:40**</span>
+-   <span id="edac">**\[📺 \]** <a href="https://www.youtube.com/watch?v=FDhyS6Xjxa8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–11 — Model Inspection and Feature Selection</strong></a> **1:15:15**</span>
 
 ### Be able to experiment in a notebook
 
@@ -394,10 +394,10 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="e915">**\[ \]** <a href="https://calmcode.io/ipywidgets/introduction.html" class="markup--anchor markup--li-anchor"><strong>Calmcode: ipywidgets</strong></a></span>
 -   <span id="b06d">**\[ \]** <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html" class="markup--anchor markup--li-anchor"><strong>Documentation: Jupyter Lab</strong></a></span>
 -   <span id="b0cb">**\[ \]** <a href="https://www.pluralsight.com/courses/jupyter-notebook-python" class="markup--anchor markup--li-anchor"><strong>Pluralsight: Getting Started with Jupyter Notebook and Python</strong></a></span>
--   <span id="e3fc">**\[📺 \]** <a href="https://www.youtube.com/watch?v=kFhhCOeYcGw" class="markup--anchor markup--li-anchor"><strong>William Horton — A Brief History of Jupyter Notebooks</strong></a></span>
+-   <span id="e3fc">**\[📺 \]** <a href="https://www.youtube.com/watch?v=kFhhCOeYcGw" class="markup--anchor markup--li-anchor"><strong>William Horton — A Brief History of Jupyter Notebooks</strong></a></span>
 -   <span id="9dde">**\[📺 \]** <a href="https://www.youtube.com/watch?v=9Q6sLbz37gk" class="markup--anchor markup--li-anchor"><strong>I Like Notebooks</strong></a></span>
 -   <span id="0c6a">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7jiPeIFXb6U" class="markup--anchor markup--li-anchor"><strong>I don't like notebooks.- Joel Grus (Allen Institute for Artificial Intelligence)</strong></a></span>
--   <span id="f215">**\[📺 \]** <a href="https://www.youtube.com/watch?v=hGHwu1h3l6g" class="markup--anchor markup--li-anchor"><strong>Ryan Herr — After model.fit, before you deploy| JupyterCon 2020</strong></a></span>
+-   <span id="f215">**\[📺 \]** <a href="https://www.youtube.com/watch?v=hGHwu1h3l6g" class="markup--anchor markup--li-anchor"><strong>Ryan Herr — After model.fit, before you deploy| JupyterCon 2020</strong></a></span>
 -   <span id="c187">**\[📺 \]** <a href="https://www.youtube.com/watch?v=ZJTop5uqC2U&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>nbdev live coding with Hamel Husain</strong></a></span>
 -   <span id="6fe1">**\[📺 \]** <a href="https://www.youtube.com/watch?v=A5YyoCKxEOU&amp;feature=emb_logo" class="markup--anchor markup--li-anchor"><strong>How to Use JupyterLab</strong></a></span>
 
@@ -455,12 +455,12 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="a134">**\[📰\]** <a href="https://towardsdatascience.com/entropy-cross-entropy-and-kl-divergence-17138ffab87b" class="markup--anchor markup--li-anchor"><strong>Entropy, Cross Entropy, and KL Divergence</strong></a></span>
 -   <span id="d4cb">**\[📰\]** <a href="https://medium.com/acing-ai/interview-guide-to-probability-distributions-a6dfb08c3766" class="markup--anchor markup--li-anchor"><strong>Interview Guide to Probability Distributions</strong></a></span>
 -   <span id="34dc">**\[📰\]** <a href="https://pabloinsente.github.io/intro-linear-algebra" class="markup--anchor markup--li-anchor"><strong>Introduction to Linear Algebra for Applied Machine Learning with Python</strong></a></span>
--   <span id="5a78">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/entropy-of-a-probability-distribution-explained-in-laymans-terms-8a4139b329bc" class="markup--anchor markup--li-anchor"><strong>Entropy of a probability distribution — in layman's terms</strong></a></span>
--   <span id="1e69">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/what-is-kl-divergence-d1fb7921ee5b" class="markup--anchor markup--li-anchor"><strong>KL Divergence — in layman's terms</strong></a></span>
+-   <span id="5a78">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/entropy-of-a-probability-distribution-explained-in-laymans-terms-8a4139b329bc" class="markup--anchor markup--li-anchor"><strong>Entropy of a probability distribution — in layman's terms</strong></a></span>
+-   <span id="1e69">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/what-is-kl-divergence-d1fb7921ee5b" class="markup--anchor markup--li-anchor"><strong>KL Divergence — in layman's terms</strong></a></span>
 -   <span id="e619">**\[📰\]** <a href="https://www.simonwardjones.co.uk/posts/probability_distributions/" class="markup--anchor markup--li-anchor"><strong>Probability Distributions</strong></a></span>
 -   <span id="69b6">**\[📰\]** <a href="https://www.dhruvonmath.com/2018/12/31/matrices/" class="markup--anchor markup--li-anchor"><strong>Relearning Matrices as Linear Functions</strong></a></span>
--   <span id="6ed7">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/02/25/eigenvectors/" class="markup--anchor markup--li-anchor"><strong>You Could Have Come Up With Eigenvectors — Here's How</strong></a></span>
--   <span id="8aa6">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/03/20/pagerank/" class="markup--anchor markup--li-anchor"><strong>PageRank — How Eigenvectors Power the Algorithm Behind Google Search</strong></a></span>
+-   <span id="6ed7">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/02/25/eigenvectors/" class="markup--anchor markup--li-anchor"><strong>You Could Have Come Up With Eigenvectors — Here's How</strong></a></span>
+-   <span id="8aa6">**\[📰\]** <a href="https://www.dhruvonmath.com/2019/03/20/pagerank/" class="markup--anchor markup--li-anchor"><strong>PageRank — How Eigenvectors Power the Algorithm Behind Google Search</strong></a></span>
 -   <span id="8f65">**\[📰\]** <a href="https://www.dhruvonmath.com/2020/07/26/who-cares-about-eigenvectors/" class="markup--anchor markup--li-anchor"><strong>Interactive Visualization of Why Eigenvectors Matter</strong></a></span>
 -   <span id="da3a">**\[📰\]** <a href="https://medium.com/swlh/cross-entropy-and-kl-divergence-522d9f71bd3d" class="markup--anchor markup--li-anchor"><strong>Cross-Entropy and KL Divergence</strong></a></span>
 -   <span id="b691">**\[📰\]** <a href="https://medium.com/swlh/why-randomness-is-information-f2468966b29d" class="markup--anchor markup--li-anchor"><strong>Why Randomness Is Information?</strong></a></span>
@@ -524,7 +524,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="46c7">**\[ \]** <a href="https://www.youtube.com/watch?v=A82brFpdr9g" class="markup--anchor markup--li-anchor"><strong>StatQuickie: Standard Deviation vs Standard Error</strong></a> **0:02:52**</span>
 -   <span id="02e2">**\[ \]** <a href="https://www.youtube.com/watch?v=XNgt7F6FqDU" class="markup--anchor markup--li-anchor"><strong>StatQuest: The standard error</strong></a> **0:11:43**</span>
 -   <span id="dc46">**\[ \]** <a href="https://www.youtube.com/watch?v=Exk0OoRG0PQ" class="markup--anchor markup--li-anchor"><strong>StatQuest: Technical and Biological Replicates</strong></a> **0:05:27**</span>
--   <span id="5057">**\[ \]** <a href="https://www.youtube.com/watch?v=67zCIqdeXpo" class="markup--anchor markup--li-anchor"><strong>StatQuest — Sample Size and Effective Sample Size, Clearly Explained</strong></a> **0:06:32**</span>
+-   <span id="5057">**\[ \]** <a href="https://www.youtube.com/watch?v=67zCIqdeXpo" class="markup--anchor markup--li-anchor"><strong>StatQuest — Sample Size and Effective Sample Size, Clearly Explained</strong></a> **0:06:32**</span>
 -   <span id="011f">**\[ \]** <a href="https://www.youtube.com/watch?v=RiEZ_hEf96A" class="markup--anchor markup--li-anchor"><strong>Bar Charts Are Better than Pie Charts</strong></a> **0:01:45**</span>
 -   <span id="eaf8">**\[ \]** <a href="https://www.youtube.com/watch?v=fHLhBnmwUM0" class="markup--anchor markup--li-anchor"><strong>StatQuest: Boxplots, Clearly Explained</strong></a> **0:02:33**</span>
 -   <span id="4f2c">**\[ \]** <a href="https://www.youtube.com/watch?v=VSi0Z04fWj0" class="markup--anchor markup--li-anchor"><strong>StatQuest: Logs (logarithms), clearly explained</strong></a> **0:15:37**</span>
@@ -555,7 +555,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 -   <span id="19e0">**\[📰\]** <a href="https://towardsdatascience.com/pydantic-688e897cfd3a" class="markup--anchor markup--li-anchor"><strong>pydantic</strong></a></span>
 -   <span id="00ed">**\[📰\]** <a href="https://www.jeremyjordan.me/ml-projects-guide/" class="markup--anchor markup--li-anchor"><strong>Organizing machine learning projects: project management guidelines</strong></a></span>
--   <span id="c83c">**\[📰\]** <a href="https://theaisummer.com/logging-debugging/" class="markup--anchor markup--li-anchor"><strong>Logging and Debugging in Machine Learning — How to use Python debugger and the logging module to find errors in your AI application</strong></a></span>
+-   <span id="c83c">**\[📰\]** <a href="https://theaisummer.com/logging-debugging/" class="markup--anchor markup--li-anchor"><strong>Logging and Debugging in Machine Learning — How to use Python debugger and the logging module to find errors in your AI application</strong></a></span>
 -   <span id="436c">**\[📰\]** <a href="https://theaisummer.com/best-practices-deep-learning-code/" class="markup--anchor markup--li-anchor"><strong>Best practices to write Deep Learning code: Project structure, OOP, Type checking and documentation</strong></a></span>
 -   <span id="a5e4">**\[📰\]** <a href="https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573" class="markup--anchor markup--li-anchor"><strong>Configuring Google Colab Like A Pro</strong></a></span>
 -   <span id="4572">**\[📰\]** <a href="https://handyman.dulare.com/stop-using-print-start-using-loguru-in-python/" class="markup--anchor markup--li-anchor"><strong>Stop using print, start using loguru in Python</strong></a></span>
@@ -594,17 +594,21 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c453">**\[📺 \]** <a href="https://uniroma1.zoom.us/rec/share/W6zWeel0z0w561Rza8iaoP39daROQ7MN144R2VYSksMhSBrh6l1MPrd_jIUFiy4s.fpA9W3TdJdXg_2Hx?startTime=1620983293000" class="markup--anchor markup--li-anchor"><strong>Continuous integration</strong></a></span>
 -   <span id="00d5">**\[📺 \]** <a href="https://www.youtube.com/watch?v=IUhvO8QjWd8&amp;list=LL&amp;index=2" class="markup--anchor markup--li-anchor"><strong>Data Engineering +Machine Learning + Software Engineering // Satish Chandra Gupta // MLOps Coffee Sessions #16</strong></a></span>
 -   <span id="ea96">**\[📺 \]** <a href="https://www.youtube.com/watch?v=VuQaS0FFUFY" class="markup--anchor markup--li-anchor"><strong>OO Design and Testing Patterns for Machine Learning with Chris Gerpheide</strong></a></span>
--   <span id="a9b4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=WkUBx3g2QfQ&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>Tutorial: Sebastian Witowski — Modern Python Developer's Toolkit</strong></a></span>
--   <span id="0e69">**\[📺 \]** <a href="https://www.youtube.com/watch?v=8daKeuaWgjk" class="markup--anchor markup--li-anchor"><strong>Lecture 13:Machine Learning Teams (Full Stack Deep Learning — Spring 2021)</strong></a> **0:58:13**</span>
--   <span id="a731">**\[📺 \]** <a href="https://www.youtube.com/watch?v=pxisK6RMn1s" class="markup--anchor markup--li-anchor"><strong>Lecture 5:Machine Learning Projects (Full Stack Deep Learning — Spring 2021)</strong></a> **1:13:14**</span>
--   <span id="735d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=760Mc_b3_N0" class="markup--anchor markup--li-anchor"><strong>Lecture 6: Infrastructure &amp; Tooling (Full Stack Deep Learning — Spring 2021)</strong></a> **1:07:21**</span>
+-   <span id="a9b4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=WkUBx3g2QfQ&amp;feature=youtu.be" class="markup--anchor markup--li-anchor"><strong>Tutorial: Sebastian Witowski — Modern Python Developer's Toolkit</strong></a></span>
+-   <span id="0e69">**\[📺 \]** <a href="https://www.youtube.com/watch?v=8daKeuaWgjk" class="markup--anchor markup--li-anchor"><strong>Lecture 13:Machine Learning Teams (Full Stack Deep Learning — Spring 2021)</strong></a> **0:58:13**</span>
+-   <span id="a731">**\[📺 \]** <a href="https://www.youtube.com/watch?v=pxisK6RMn1s" class="markup--anchor markup--li-anchor"><strong>Lecture 5:Machine Learning Projects (Full Stack Deep Learning — Spring 2021)</strong></a> **1:13:14**</span>
+-   <span id="735d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=760Mc_b3_N0" class="markup--anchor markup--li-anchor"><strong>Lecture 6: Infrastructure &amp; Tooling (Full Stack Deep Learning — Spring 2021)</strong></a> **1:07:21**</span>
 
 ### Be able to version control code
 
-<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong><br />
+<a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107"><strong>Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources)</strong>
+<br/>
+
 <em>Basic Git Work Flow.</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e"><strong>Github Repositories That Will Teach You How To Code For Free!</strong><br />
+<a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e"><strong>Github Repositories That Will Teach You How To Code For Free!</strong>
+<br/>
+
 <em>Update: here's a repo full of helpful repos:</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="223a">**\[📰\]** <a href="https://dev.to/yankee/mastering-git-stash-workflow-223" class="markup--anchor markup--li-anchor"><strong>Mastering Git Stash Workflow</strong></a></span>
@@ -636,7 +640,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="9057">**\[📰\]** <a href="https://maxhalford.github.io/blog/online-learning-evaluation/" class="markup--anchor markup--li-anchor"><strong>The correct way to evaluate online machine learning models</strong></a></span>
 -   <span id="5504">**\[📰\]** <a href="https://gibsonbiddle.medium.com/4-proxy-metrics-a82dd30ca810" class="markup--anchor markup--li-anchor"><strong>Proxy Metrics</strong></a></span>
 -   <span id="d95c">**\[📺 \]** <a href="https://youtu.be/YGuVuZpTop0" class="markup--anchor markup--li-anchor"><strong>Accuracy as a Failure</strong></a></span>
--   <span id="0fbd">**\[📺 \]** <a href="https://www.youtube.com/watch?v=trg3YkCsjqE" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–09 — Model Evaluation and Metrics</strong></a> **1:18:23**</span>
+-   <span id="0fbd">**\[📺 \]** <a href="https://www.youtube.com/watch?v=trg3YkCsjqE" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–09 — Model Evaluation and Metrics</strong></a> **1:18:23**</span>
 -   <span id="1a54">**\[📺 \]** <a href="https://www.youtube.com/watch?v=fSytzGwwBVw" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Cross Validation</strong></a> **0:06:04**</span>
 -   <span id="9218">**\[📺 \]** <a href="https://www.youtube.com/watch?v=Kdsp6soqA7o" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: The Confusion Matrix</strong></a> **0:07:12**</span>
 -   <span id="e12b">**\[📺 \]** <a href="https://www.youtube.com/watch?v=vP06aMoz4v8" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Sensitivity and Specificity</strong></a> **0:11:46**</span>
@@ -647,7 +651,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be familiar with inner working of models
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*lWNHX7DPE_R6kQWW.png" class="graf-image" /></figure>***Bays theorem is super interesting and applicable ==&gt; — \[📰\]*** <a href="https://www.jeremyjordan.me/naive-bayes-classification/" class="markup--anchor markup--blockquote-anchor"><strong><em>Naive Bayes classification</em></strong></a>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*lWNHX7DPE_R6kQWW.png" class="graf-image" /></figure>***Bays theorem is super interesting and applicable ==&gt; — \[📰\]*** <a href="https://www.jeremyjordan.me/naive-bayes-classification/" class="markup--anchor markup--blockquote-anchor"><strong><em>Naive Bayes classification</em></strong></a>
 
 -   <span id="527a">**\[📰\]** <a href="https://www.jeremyjordan.me/linear-regression/" class="markup--anchor markup--li-anchor"><strong>Linear regression</strong></a></span>
 -   <span id="3879">**\[📰\]** <a href="https://www.jeremyjordan.me/polynomial-regression/" class="markup--anchor markup--li-anchor"><strong>Polynomial regression</strong></a></span>
@@ -664,9 +668,9 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="89d4">**\[📰\]** <a href="https://theaisummer.com/Neural_Network_from_scratch_part2/" class="markup--anchor markup--li-anchor"><strong>Neural Network from scratch-part 2</strong></a></span>
 -   <span id="8f0b">**\[📰\]** <a href="https://tsumansapkota.github.io/algorithm/2020/06/06/Perceptron-to-DeepNeuralNets/" class="markup--anchor markup--li-anchor"><strong>Perceptron to Deep-Neural-Network</strong></a></span>
 -   <span id="b036">**\[📰\]** <a href="https://www.geeksforgeeks.org/one-vs-rest-strategy-for-multi-class-classification/" class="markup--anchor markup--li-anchor"><strong>One-vs-Rest strategy for Multi-Class Classification</strong></a></span>
--   <span id="e4ce">**\[📰\]** <a href="https://radiant-brushlands-42789.herokuapp.com/towardsdatascience.com/multi-class-classification-one-vs-all-one-vs-one-94daed32a87b" class="markup--anchor markup--li-anchor"><strong>Multi-class Classification — One-vs-All &amp; One-vs-One</strong></a></span>
+-   <span id="e4ce">**\[📰\]** <a href="https://radiant-brushlands-42789.herokuapp.com/towardsdatascience.com/multi-class-classification-one-vs-all-one-vs-one-94daed32a87b" class="markup--anchor markup--li-anchor"><strong>Multi-class Classification — One-vs-All &amp; One-vs-One</strong></a></span>
 -   <span id="4ceb">**\[📰\]** <a href="https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/" class="markup--anchor markup--li-anchor"><strong>One-vs-Rest and One-vs-One for Multi-Class Classification</strong></a></span>
--   <span id="3022">**\[📰\]** <a href="https://theaisummer.com/Deep-Learning-Algorithms/" class="markup--anchor markup--li-anchor"><strong>Deep Learning Algorithms — The Complete Guide</strong></a></span>
+-   <span id="3022">**\[📰\]** <a href="https://theaisummer.com/Deep-Learning-Algorithms/" class="markup--anchor markup--li-anchor"><strong>Deep Learning Algorithms — The Complete Guide</strong></a></span>
 -   <span id="2a3e">**\[📰\]** <a href="https://medium.com/acing-ai/machine-learning-techniques-primer-60edd9d14863" class="markup--anchor markup--li-anchor"><strong>Machine Learning Techniques Primer</strong></a></span>
 -   <span id="28d6">**\[ \]** <a href="https://www.aws.training/learningobject/video?id=27233" class="markup--anchor markup--li-anchor"><strong>AWS: Understanding Neural Networks</strong></a></span>
 -   <span id="2ae3">**\[📖\]** <a href="https://www.manning.com/books/grokking-deep-learning" class="markup--anchor markup--li-anchor"><strong>Grokking Deep Learning</strong></a></span>
@@ -676,8 +680,8 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="7336">**\[💻\]** <a href="https://www.datacamp.com/courses/ensemble-methods-in-python" class="markup--anchor markup--li-anchor"><strong>Ensemble Methods in Python</strong></a></span>
 -   <span id="0d8b">**\[ \]** <a href="https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF" class="markup--anchor markup--li-anchor"><strong>StatQuest: Machine Learning</strong></a></span>
 -   <span id="d299">**\[ \]** <a href="https://www.youtube.com/watch?v=PaFPbb66DxQ" class="markup--anchor markup--li-anchor"><strong>StatQuest: Fitting a line to data, aka least squares, aka linear regression.</strong></a> **0:09:21**</span>
--   <span id="eff8">**\[ \]** <a href="https://www.youtube.com/watch?v=nk2CQITm_eo" class="markup--anchor markup--li-anchor"><strong>StatQuest: Linear Models Pt.1 — Linear Regression</strong></a> **0:27:26**</span>
--   <span id="b980">**\[ \]** <a href="https://www.youtube.com/watch?v=NF5_btOaCig" class="markup--anchor markup--li-anchor"><strong>StatQuest: StatQuest: Linear Models Pt.2 — t-tests and ANOVA</strong></a> **0:11:37**</span>
+-   <span id="eff8">**\[ \]** <a href="https://www.youtube.com/watch?v=nk2CQITm_eo" class="markup--anchor markup--li-anchor"><strong>StatQuest: Linear Models Pt.1 — Linear Regression</strong></a> **0:27:26**</span>
+-   <span id="b980">**\[ \]** <a href="https://www.youtube.com/watch?v=NF5_btOaCig" class="markup--anchor markup--li-anchor"><strong>StatQuest: StatQuest: Linear Models Pt.2 — t-tests and ANOVA</strong></a> **0:11:37**</span>
 -   <span id="3baf">**\[ \]** <a href="https://www.youtube.com/watch?v=ARfXDSkQf1Y" class="markup--anchor markup--li-anchor"><strong>StatQuest: Odds and Log(Odds), Clearly Explained!!!</strong></a> **0:11:30**</span>
 -   <span id="cfe0">**\[ \]** <a href="https://www.youtube.com/watch?v=8nm0G-1uJzA" class="markup--anchor markup--li-anchor"><strong>StatQuest: Odds Ratios and Log(Odds Ratios), Clearly Explained!!!</strong></a> **0:16:20**</span>
 -   <span id="e325">**\[ \]** <a href="https://www.youtube.com/watch?v=yIYKR4sgzI8" class="markup--anchor markup--li-anchor"><strong>StatQuest: Logistic Regression</strong></a> **0:08:47**</span>
@@ -692,7 +696,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="0162">**\[ \]** <a href="https://www.youtube.com/watch?v=1dKRdX9bfIo" class="markup--anchor markup--li-anchor"><strong>Regularization Part 3: Elastic Net Regression</strong></a> **0:05:19**</span>
 -   <span id="0498">**\[ \]** <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ" class="markup--anchor markup--li-anchor"><strong>StatQuest: Principal Component Analysis (PCA), Step-by-Step</strong></a> **0:21:57**</span>
 -   <span id="f339">**\[ \]** <a href="https://www.youtube.com/watch?v=HMOI_lkzW08" class="markup--anchor markup--li-anchor"><strong>StatQuest: PCA main ideas in only 5 minutes!!!</strong></a> **0:06:04**</span>
--   <span id="4b6d">**\[ \]** <a href="https://www.youtube.com/watch?v=oRvgq966yZg" class="markup--anchor markup--li-anchor"><strong>StatQuest: PCA — Practical Tips</strong></a> **0:08:19**</span>
+-   <span id="4b6d">**\[ \]** <a href="https://www.youtube.com/watch?v=oRvgq966yZg" class="markup--anchor markup--li-anchor"><strong>StatQuest: PCA — Practical Tips</strong></a> **0:08:19**</span>
 -   <span id="b77e">**\[ \]** <a href="https://www.youtube.com/watch?v=Lsue2gEM9D0" class="markup--anchor markup--li-anchor"><strong>StatQuest: PCA in Python</strong></a> **0:11:37**</span>
 -   <span id="d1f6">**\[ \]** <a href="https://www.youtube.com/watch?v=azXCzI57Yfc" class="markup--anchor markup--li-anchor"><strong>StatQuest: Linear Discriminant Analysis (LDA) clearly explained.</strong></a> **0:15:12**</span>
 -   <span id="6bdf">**\[ \]** <a href="https://www.youtube.com/watch?v=GEn-_dAyYME" class="markup--anchor markup--li-anchor"><strong>StatQuest: MDS and PCoA</strong></a> **0:08:18**</span>
@@ -703,10 +707,10 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="8b43">**\[ \]** <a href="https://www.youtube.com/watch?v=O2L2Uv9pdDA" class="markup--anchor markup--li-anchor"><strong>Naive Bayes, Clearly Explained!!!</strong></a> **0:15:12**</span>
 -   <span id="9288">**\[ \]** <a href="https://www.youtube.com/watch?v=H3EjCKtlVog" class="markup--anchor markup--li-anchor"><strong>Gaussian Naive Bayes, Clearly Explained!!!</strong></a> **0:09:41**</span>
 -   <span id="98e7">**\[ \]** <a href="https://www.youtube.com/watch?v=7VeUPuFGJHk" class="markup--anchor markup--li-anchor"><strong>StatQuest: Decision Trees</strong></a> **0:17:22**</span>
--   <span id="6b4d">**\[ \]** <a href="https://www.youtube.com/watch?v=wpNl-JwwplA" class="markup--anchor markup--li-anchor"><strong>StatQuest: Decision Trees, Part 2 — Feature Selection and Missing Data</strong></a> **0:05:16**</span>
+-   <span id="6b4d">**\[ \]** <a href="https://www.youtube.com/watch?v=wpNl-JwwplA" class="markup--anchor markup--li-anchor"><strong>StatQuest: Decision Trees, Part 2 — Feature Selection and Missing Data</strong></a> **0:05:16**</span>
 -   <span id="6aab">**\[ \]** <a href="https://www.youtube.com/watch?v=g9c66TUylZ4" class="markup--anchor markup--li-anchor"><strong>Regression Trees, Clearly Explained!!!</strong></a> **0:22:33**</span>
 -   <span id="6572">**\[ \]** <a href="https://www.youtube.com/watch?v=D0efHEJsfHo" class="markup--anchor markup--li-anchor"><strong>How to Prune Regression Trees, Clearly Explained!!!</strong></a> **0:16:15**</span>
--   <span id="8982">**\[ \]** <a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ" class="markup--anchor markup--li-anchor"><strong>StatQuest: Random Forests Part 1 — Building, Using and Evaluating</strong></a> **0:09:54**</span>
+-   <span id="8982">**\[ \]** <a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ" class="markup--anchor markup--li-anchor"><strong>StatQuest: Random Forests Part 1 — Building, Using and Evaluating</strong></a> **0:09:54**</span>
 -   <span id="e757">**\[ \]** <a href="https://www.youtube.com/watch?v=sQ870aTKqiM" class="markup--anchor markup--li-anchor"><strong>StatQuest: Random Forests Part 2: Missing data and clustering</strong></a> **0:11:53**</span>
 -   <span id="3d39">**\[ \]** <a href="https://www.youtube.com/watch?v=wl1myxrtQHQ" class="markup--anchor markup--li-anchor"><strong>The Chain Rule</strong></a> **0:18:23**</span>
 -   <span id="de12">**\[ \]** <a href="https://www.youtube.com/watch?v=sDv4f4s2SB8" class="markup--anchor markup--li-anchor"><strong>Gradient Descent, Step-by-Step</strong></a> **0:23:54**</span>
@@ -729,18 +733,18 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="77eb">**\[ \]** <a href="https://www.youtube.com/watch?v=q90UDEgYqeI" class="markup--anchor markup--li-anchor"><strong>Decision Trees in Python from Start to Finish</strong></a> **1:06:23**</span>
 -   <span id="8fbb">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/classification-models--ud978" class="markup--anchor markup--li-anchor"><strong>Classification Models</strong></a></span>
 -   <span id="fd92">**\[📺 \]** <a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch in Python</strong></a></span>
--   <span id="a3f5">**\[ \]** <a href="https://www.youtube.com/watch?v=Wo5dMEP_BbI" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.1 Intro and Neuron Code</strong></a> **0:16:59**</span>
--   <span id="4889">**\[ \]** <a href="https://www.youtube.com/watch?v=lGLto9Xd7bU" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.2 Coding a Layer</strong></a> **0:15:06**</span>
--   <span id="c9ce">**\[ \]** <a href="https://www.youtube.com/watch?v=tMrbN67U9d4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.3 The Dot Product</strong></a> **0:25:17**</span>
--   <span id="caa0">**\[ \]** <a href="https://www.youtube.com/watch?v=TEWy9vZcxW4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.4 Batches, Layers, and Objects</strong></a> **0:33:46**</span>
--   <span id="be9d">**\[ \]** <a href="https://www.youtube.com/watch?v=gmjzbpSVY1A" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.5 Hidden Layer Activation Functions</strong></a> **0:40:05**</span>
+-   <span id="a3f5">**\[ \]** <a href="https://www.youtube.com/watch?v=Wo5dMEP_BbI" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.1 Intro and Neuron Code</strong></a> **0:16:59**</span>
+-   <span id="4889">**\[ \]** <a href="https://www.youtube.com/watch?v=lGLto9Xd7bU" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.2 Coding a Layer</strong></a> **0:15:06**</span>
+-   <span id="c9ce">**\[ \]** <a href="https://www.youtube.com/watch?v=tMrbN67U9d4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.3 The Dot Product</strong></a> **0:25:17**</span>
+-   <span id="caa0">**\[ \]** <a href="https://www.youtube.com/watch?v=TEWy9vZcxW4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.4 Batches, Layers, and Objects</strong></a> **0:33:46**</span>
+-   <span id="be9d">**\[ \]** <a href="https://www.youtube.com/watch?v=gmjzbpSVY1A" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.5 Hidden Layer Activation Functions</strong></a> **0:40:05**</span>
 -   <span id="9109">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7_YzyMYC2zM" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–03 Supervised learning and model validation</strong></a> **1:12:00**</span>
--   <span id="746d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=-OOsfj5Revo" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–05 — Linear Models for Regression</strong></a> **1:06:54**</span>
--   <span id="acfe">**\[📺 \]** <a href="https://www.youtube.com/watch?v=_dqBhUrq09U" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–06 — Linear Models for Classification</strong></a> **1:07:50**</span>
--   <span id="00d0">**\[📺 \]** <a href="https://www.youtube.com/watch?v=nomd5ylZ2dw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–07 — Decision Trees and Random Forests</strong></a> **1:07:58**</span>
--   <span id="2bc4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yrTW5YTmFjw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–08 — Gradient Boosting</strong></a> **1:02:12**</span>
--   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–18 — Neural Networks</strong></a> **1:19:36**</span>
--   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
+-   <span id="746d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=-OOsfj5Revo" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–05 — Linear Models for Regression</strong></a> **1:06:54**</span>
+-   <span id="acfe">**\[📺 \]** <a href="https://www.youtube.com/watch?v=_dqBhUrq09U" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–06 — Linear Models for Classification</strong></a> **1:07:50**</span>
+-   <span id="00d0">**\[📺 \]** <a href="https://www.youtube.com/watch?v=nomd5ylZ2dw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–07 — Decision Trees and Random Forests</strong></a> **1:07:58**</span>
+-   <span id="2bc4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yrTW5YTmFjw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–08 — Gradient Boosting</strong></a> **1:02:12**</span>
+-   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–18 — Neural Networks</strong></a> **1:19:36**</span>
+-   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
 
 ---
 
@@ -754,7 +758,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="9398">**\[📰\]** <a href="https://amaarora.github.io/2020/07/18/label-smoothing.html" class="markup--anchor markup--li-anchor"><strong>Label Smoothing Explained using Microsoft Excel</strong></a></span>
 -   <span id="ec7d">**\[📰\]** <a href="https://www.rossidata.com/DropoutTensorFlowUncertaintyErrorMNIST" class="markup--anchor markup--li-anchor"><strong>Uncertainty Quantification Part 4: Leveraging Dropout in Neural Networks (CNNs)</strong></a></span>
 -   <span id="31cd">**\[📰\]** <a href="https://wandb.ai/authors/class-imbalance/reports/Simple-Ways-to-Tackle-Class-Imbalance--VmlldzoxODA3NTk" class="markup--anchor markup--li-anchor"><strong>Simple Ways to Tackle Class Imbalance</strong></a></span>
--   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
+-   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
 -   <span id="a96b">**\[📺 \]** <a href="https://youtu.be/GwGTwPcG0YM" class="markup--anchor markup--li-anchor"><strong>Lecture 10: Troubleshooting Deep Neural Networks</strong></a></span>
 
 ---
@@ -764,7 +768,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 <a href="https://./cnn.png" class="markup--anchor markup--p-anchor"><strong>CNN</strong></a>
 
 -   <span id="c2e0">**\[📰\]** <a href="https://glassboxmedicine.com/2019/12/07/connections-log-likelihood-cross-entropy-kl-divergence-logistic-regression-and-neural-networks/" class="markup--anchor markup--li-anchor"><strong>Connections: Log Likelihood, Cross Entropy, KL Divergence, Logistic Regression, and Neural Networks</strong></a></span>
--   <span id="deee">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/mle-and-map-in-laymans-terms-8527061b15a6" class="markup--anchor markup--li-anchor"><strong>MLE and MAP — in layman's terms</strong></a></span>
+-   <span id="deee">**\[📰\]** <a href="https://medium.com/@ajitrajasekharan/mle-and-map-in-laymans-terms-8527061b15a6" class="markup--anchor markup--li-anchor"><strong>MLE and MAP — in layman's terms</strong></a></span>
 -   <span id="564c">**\[ \]** <a href="https://ruder.io/optimizing-gradient-descent/" class="markup--anchor markup--li-anchor"><strong>An overview of gradient descent optimization algorithms</strong></a></span>
 -   <span id="7ef3">**\[📰\]** <a href="https://ruder.io/deep-learning-optimization-2017/" class="markup--anchor markup--li-anchor"><strong>Optimization for Deep Learning Highlights in 2017</strong></a></span>
 -   <span id="3712">**\[📰\]** <a href="https://www.jeremyjordan.me/gradient-descent/" class="markup--anchor markup--li-anchor"><strong>Gradient descent</strong></a></span>
@@ -825,7 +829,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 -   <span id="9c90">\[ \] <a href="https://www.coursera.org/learn/introduction-tensorflow" class="markup--anchor markup--li-anchor">Coursera: Introduction to Tensorflow</a></span>
 -   <span id="3447">\[ \] <a href="https://www.coursera.org/learn/convolutional-neural-networks-tensorflow" class="markup--anchor markup--li-anchor">Coursera: Convolutional Neural Networks in TensorFlow</a></span>
--   <span id="ad53">\[ \] <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xrwRnXk_yCPtnqqo4_u2YGL" class="markup--anchor markup--li-anchor">Deeplizard: Keras — Python Deep Learning Neural Network API</a></span>
+-   <span id="ad53">\[ \] <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xrwRnXk_yCPtnqqo4_u2YGL" class="markup--anchor markup--li-anchor">Deeplizard: Keras — Python Deep Learning Neural Network API</a></span>
 -   <span id="15e3">\[📖\] <a href="https://www.manning.com/books/deep-learning-with-python" class="markup--anchor markup--li-anchor">Deep Learning with Python (Page: 276)</a></span>
 -   <span id="068e">\[💻\] <a href="https://www.datacamp.com/courses/deep-learning-in-python" class="markup--anchor markup--li-anchor">Deep Learning in Python</a></span>
 -   <span id="958b">\[💻\] <a href="https://www.datacamp.com/courses/convolutional-neural-networks-for-image-processing" class="markup--anchor markup--li-anchor">Convolutional Neural Networks for Image Processing</a></span>
@@ -844,7 +848,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="b1ee">\[📰\] <a href="https://towardsdatascience.com/7-tips-for-squeezing-maximum-performance-from-pytorch-ca4a40951259" class="markup--anchor markup--li-anchor">7 Tips To Maximize PyTorch Performance</a></span>
 -   <span id="afe0">\[📰\] <a href="https://amaarora.github.io/2020/07/12/oganized-pytorch.html" class="markup--anchor markup--li-anchor">An introduction to PyTorch Lightning with comparisons to PyTorch</a></span>
 -   <span id="e7f7">\[📰\] <a href="https://towardsdatascience.com/converting-from-keras-to-pytorch-lightning-be40326d7b7d" class="markup--anchor markup--li-anchor">Converting From Keras To PyTorch Lightning</a></span>
--   <span id="65a0">\[📰\] <a href="https://towardsdatascience.com/from-pytorch-to-pytorch-lightning-a-gentle-introduction-b371b7caaf09" class="markup--anchor markup--li-anchor">From PyTorch to PyTorch Lightning — A gentle introduction</a></span>
+-   <span id="65a0">\[📰\] <a href="https://towardsdatascience.com/from-pytorch-to-pytorch-lightning-a-gentle-introduction-b371b7caaf09" class="markup--anchor markup--li-anchor">From PyTorch to PyTorch Lightning — A gentle introduction</a></span>
 -   <span id="f13b">\[📰\] <a href="https://seannaren.medium.com/introducing-pytorch-lightning-sharded-train-sota-models-with-half-the-memory-7bcc8b4484f2" class="markup--anchor markup--li-anchor">Introducing PyTorch Lightning Sharded: Train SOTA Models, With Half The Memory</a></span>
 -   <span id="0c54">\[📰\] <a href="https://towardsdatascience.com/sharded-a-new-technique-to-double-the-size-of-pytorch-models-3af057466dba" class="markup--anchor markup--li-anchor">Sharded: A New Technique To Double The Size Of PyTorch Models</a></span>
 -   <span id="bfc7">\[📰\] <a href="https://towardsdatascience.com/understanding-bidirectional-rnn-in-pytorch-5bd25a5dd66" class="markup--anchor markup--li-anchor">Understanding Bidirectional RNN in PyTorch</a></span>
@@ -852,16 +856,16 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="8cd2">\[📰\] <a href="https://spell.ml/blog/model-pruning-in-pytorch-X9pXQRAAACIAcH9h" class="markup--anchor markup--li-anchor">A developer-friendly guide to model pruning in PyTorch</a></span>
 -   <span id="67fb">\[📰\] <a href="https://spell.ml/blog/pytorch-quantization-X8e7wBAAACIAHPhT" class="markup--anchor markup--li-anchor">A developer-friendly guide to model quantization with PyTorch</a></span>
 -   <span id="f59d">\[📰\] <a href="https://spell.ml/blog/pytorch-training-tricks-YAnJqBEAACkARhgD" class="markup--anchor markup--li-anchor">Tricks for training PyTorch models to convergence more quickly</a></span>
--   <span id="a9d0">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-bolts-from-boosted-regression-on-tpus-to-pre-trained-gans-5cebdb1f99fe" class="markup--anchor markup--li-anchor">PyTorch Lightning Bolts — From Linear, Logistic Regression on TPUs to pre-trained GANs</a></span>
+-   <span id="a9d0">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-bolts-from-boosted-regression-on-tpus-to-pre-trained-gans-5cebdb1f99fe" class="markup--anchor markup--li-anchor">PyTorch Lightning Bolts — From Linear, Logistic Regression on TPUs to pre-trained GANs</a></span>
 -   <span id="4c2b">\[📰\] <a href="https://towardsdatascience.com/scaling-logistic-regression-for-multi-gpu-tpu-training-b4898d5049ff" class="markup--anchor markup--li-anchor">Scaling Logistic Regression Via Multi-GPU/TPU Training</a></span>
 -   <span id="3a7e">\[📰\] <a href="https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255" class="markup--anchor markup--li-anchor">Training Neural Nets on Larger Batches: Practical Tips for 1-GPU, Multi-GPU &amp; Distributed setups</a></span>
--   <span id="7e26">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-0-9-synced-batchnorm-datamodules-and-final-api-aae885398a9d" class="markup--anchor markup--li-anchor">PyTorch Lightning 0.9 — synced BatchNorm, DataModules and final API!</a></span>
+-   <span id="7e26">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-0-9-synced-batchnorm-datamodules-and-final-api-aae885398a9d" class="markup--anchor markup--li-anchor">PyTorch Lightning 0.9 — synced BatchNorm, DataModules and final API!</a></span>
 -   <span id="3a58">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-metrics-35cb5ab31857" class="markup--anchor markup--li-anchor">PyTorch Lightning: Metrics</a></span>
 -   <span id="ef3a">\[📰\] <a href="https://medium.com/pytorch/pytorch-multi-gpu-metrics-and-more-in-pytorch-lightning-0-8-1-b7cadd04893e" class="markup--anchor markup--li-anchor">PyTorch Multi-GPU Metrics Library and More in PyTorch Lightning 0.8.1</a></span>
 -   <span id="33c5">\[📰\] <a href="https://spell.ml/blog/pytorch-distributed-data-parallel-XvEaABIAAB8Ars0e" class="markup--anchor markup--li-anchor">Distributed model training in PyTorch using DistributedDataParallel</a></span>
 -   <span id="c456">\[📰\] <a href="https://spell.ml/blog/pytorch-distributed-data-parallel-XvEaABIAAB8Ars0e" class="markup--anchor markup--li-anchor">Distributed model training in PyTorch using DistributedDataParallel</a></span>
--   <span id="b777">\[📰\] <a href="https://rockt.github.io/2018/04/30/einsum" class="markup--anchor markup--li-anchor">EINSUM IS ALL YOU NEED — EINSTEIN SUMMATION IN DEEP LEARNING</a></span>
--   <span id="53a2">\[📰\] <a href="https://efficientdl.com/faster-deep-learning-in-pytorch-a-guide/" class="markup--anchor markup--li-anchor">Faster Deep Learning Training with PyTorch — a 2021 Guide</a></span>
+-   <span id="b777">\[📰\] <a href="https://rockt.github.io/2018/04/30/einsum" class="markup--anchor markup--li-anchor">EINSUM IS ALL YOU NEED — EINSTEIN SUMMATION IN DEEP LEARNING</a></span>
+-   <span id="53a2">\[📰\] <a href="https://efficientdl.com/faster-deep-learning-in-pytorch-a-guide/" class="markup--anchor markup--li-anchor">Faster Deep Learning Training with PyTorch — a 2021 Guide</a></span>
 -   <span id="6876">\[📰\] <a href="https://huggingface.co/blog/zero-deepspeed-fairscale" class="markup--anchor markup--li-anchor">Fit More and Train Faster With ZeRO via DeepSpeed and FairScale</a></span>
 -   <span id="6204">\[📰\] <a href="https://medium.com/pytorch/pytorch-lightning-v1-2-0-43a032ade82b" class="markup--anchor markup--li-anchor">PyTorch Lightning V1.2.0- DeepSpeed, Pruning, Quantization, SWA</a></span>
 -   <span id="a60d">\[📰\] <a href="https://www.scottcondron.com/jupyter/visualisation/audio/2020/12/02/dataloaders-samplers-collate.html" class="markup--anchor markup--li-anchor">But what are PyTorch DataLoaders really?</a></span>
@@ -880,7 +884,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="2e90">\[ \] <a href="https://colab.research.google.com/github/davidbau/how-to-read-pytorch/blob/master/notebooks//5-Pytorch-Dataloader.ipynb" class="markup--anchor markup--li-anchor">Notebook: Datasets and Dataloaders</a></span>
 -   <span id="91bc">\[ \] <a href="https://pytorch-lightning.readthedocs.io/en/latest/" class="markup--anchor markup--li-anchor">Documentation: Pytorch Lightning</a></span>
 -   <span id="cec6">\[💻\] <a href="https://www.datacamp.com/courses/deep-learning-with-pytorch" class="markup--anchor markup--li-anchor">Introduction to Deep Learning with PyTorch</a></span>
--   <span id="bd97">\[ \] <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xrfNyHZsM6ufI0iZENK9xgG" class="markup--anchor markup--li-anchor">Deeplizard: Neural Network Programming — Deep Learning with PyTorch</a></span>
+-   <span id="bd97">\[ \] <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xrfNyHZsM6ufI0iZENK9xgG" class="markup--anchor markup--li-anchor">Deeplizard: Neural Network Programming — Deep Learning with PyTorch</a></span>
 -   <span id="f319">\[🅤\]ꭏ <a href="https://www.udacity.com/course/deep-learning-pytorch--ud188" class="markup--anchor markup--li-anchor">Intro to Deep Learning with PyTorch</a></span>
 -   <span id="768b">\[📺 \] <a href="https://www.youtube.com/playlist?list=PLaMu-SDt_RB5NUm67hU2pdE75j6KaIOv2" class="markup--anchor markup--li-anchor">PyTorch Lightning 101</a></span>
 -   <span id="a8aa">\[ \] <a href="https://youtu.be/OMDn66kM9Qc?list=PLaMu-SDt_RB5NUm67hU2pdE75j6KaIOv2" class="markup--anchor markup--li-anchor">Training a classification model on MNIST with PyTorch</a></span>
@@ -895,7 +899,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="b828">\[ \] <a href="https://www.youtube.com/watch?v=wspdT8hRCWs" class="markup--anchor markup--li-anchor">[PART 2] Skin Cancer Detection with PyTorch</a> `0:21:57`</span>
 -   <span id="6ed0">\[ \] <a href="https://www.youtube.com/watch?v=zFqsuXs6-Us" class="markup--anchor markup--li-anchor">[PART 3] Skin Cancer Detection with PyTorch</a> `0:22:24`</span>
 -   <span id="e985">\[📺 \] <a href="https://www.pytorchlightning.ai/tutorials" class="markup--anchor markup--li-anchor">Learn with Lightning</a></span>
--   <span id="8947">\[📺 \] <a href="https://www.youtube.com/watch?v=0_PgWWmauHk" class="markup--anchor markup--li-anchor">PyTorch Tutorial — RNN &amp; LSTM &amp; GRU — Recurren Neural Nets</a> `00:15:51`</span>
+-   <span id="8947">\[📺 \] <a href="https://www.youtube.com/watch?v=0_PgWWmauHk" class="markup--anchor markup--li-anchor">PyTorch Tutorial — RNN &amp; LSTM &amp; GRU — Recurren Neural Nets</a> `00:15:51`</span>
 -   <span id="ba72">\[📺 \] <a href="https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m" class="markup--anchor markup--li-anchor">Pytorch Zero to All</a></span>
 -   <span id="1dfc">\[ \] <a href="https://www.youtube.com/watch?v=SKq-pmkekTk" class="markup--anchor markup--li-anchor">PyTorch Lecture 01: Overview</a> `0:10:18`</span>
 -   <span id="d02d">\[ \] <a href="https://www.youtube.com/watch?v=l-Fe9Ekxxj4" class="markup--anchor markup--li-anchor">PyTorch Lecture 02: Linear Model</a> `0:12:52`</span>
@@ -908,8 +912,8 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="f9c7">\[ \] <a href="https://www.youtube.com/watch?v=lvNdl7yg4Pg" class="markup--anchor markup--li-anchor">PyTorch Lecture 09: Softmax Classifier</a> `0:18:47`</span>
 -   <span id="21d5">\[ \] <a href="https://www.youtube.com/watch?v=LgFNRIFxuUo" class="markup--anchor markup--li-anchor">PyTorch Lecture 10: Basic CNN</a> `0:15:52`</span>
 -   <span id="320d">\[ \] <a href="https://www.youtube.com/watch?v=hqYfqNAQIjE" class="markup--anchor markup--li-anchor">PyTorch Lecture 11: Advanced CNN</a> `0:12:58`</span>
--   <span id="1cdb">\[ \] <a href="https://www.youtube.com/watch?v=ogZi5oIo4fI" class="markup--anchor markup--li-anchor">PyTorch Lecture 12: RNN1 — Basics</a> `0:28:47`</span>
--   <span id="0f70">\[ \] <a href="https://www.youtube.com/watch?v=1vGOQAel2yU" class="markup--anchor markup--li-anchor">PyTorch Lecture 13: RNN 2 — Classification</a> `0:17:22`</span>
+-   <span id="1cdb">\[ \] <a href="https://www.youtube.com/watch?v=ogZi5oIo4fI" class="markup--anchor markup--li-anchor">PyTorch Lecture 12: RNN1 — Basics</a> `0:28:47`</span>
+-   <span id="0f70">\[ \] <a href="https://www.youtube.com/watch?v=1vGOQAel2yU" class="markup--anchor markup--li-anchor">PyTorch Lecture 13: RNN 2 — Classification</a> `0:17:22`</span>
 -   <span id="7bff">\[ \] <a href="https://www.youtube.com/watch?v=jaPVoObpdO0" class="markup--anchor markup--li-anchor">PyTorch Developer Day 2020 | Full Livestream</a></span>
 -   <span id="9d46">\[📺 \] <a href="https://www.youtube.com/watch?app=desktop&amp;v=0HQCK_l-njI" class="markup--anchor markup--li-anchor">Lightning Chat: How a Grandmaster Won a Kaggle Competition Using Pytorch Lightning</a></span>
 -   <span id="7517">\[📺 \] <a href="https://youtu.be/Dk88zv1KYMI" class="markup--anchor markup--li-anchor">Production Inference Deployment with PyTorch</a></span>
@@ -935,7 +939,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="ae27">\[ \] <a href="https://www.aws.training/learningobject/video?id=27160" class="markup--anchor markup--li-anchor">AWS: Introduction to Amazon SageMaker Neo</a></span>
 -   <span id="5c1d">\[ \] <a href="https://www.aws.training/learningobject/video?id=19443" class="markup--anchor markup--li-anchor">AWS: Introduction to Amazon Transcribe</a></span>
 -   <span id="ac81">\[ \] <a href="https://www.aws.training/learningobject/video?id=19442" class="markup--anchor markup--li-anchor">AWS: Introduction to Amazon Translate</a></span>
--   <span id="ef16">\[ \] <a href="https://www.aws.training/learningobject/video?id=27165" class="markup--anchor markup--li-anchor">AWS: Introduction to AWS Marketplace — Machine Learning Category</a></span>
+-   <span id="ef16">\[ \] <a href="https://www.aws.training/learningobject/video?id=27165" class="markup--anchor markup--li-anchor">AWS: Introduction to AWS Marketplace — Machine Learning Category</a></span>
 -   <span id="b1eb">\[ \] <a href="https://www.aws.training/learningobject/curriculum?id=27271" class="markup--anchor markup--li-anchor">AWS: Machine Learning Exam Basics</a></span>
 -   <span id="5916">\[ \] <a href="https://www.aws.training/learningobject/video?id=27236" class="markup--anchor markup--li-anchor">AWS: Neural Machine Translation with Sockeye</a></span>
 -   <span id="e71a">\[ \] <a href="https://www.aws.training/learningobject/wbc?id=27200" class="markup--anchor markup--li-anchor">AWS: Process Model: CRISP-DM on the AWS Stack</a></span>

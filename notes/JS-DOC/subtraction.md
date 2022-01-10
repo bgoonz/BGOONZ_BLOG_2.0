@@ -19,7 +19,9 @@ The subtraction operator (`-`) subtracts the two operands, producing their diffe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-subtraction-operator-minus">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-subtraction-operator-minus">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-subtraction-operator-minus</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

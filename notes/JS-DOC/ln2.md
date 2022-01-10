@@ -36,7 +36,9 @@ The following function returns the natural log of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-math.ln2</span></a></td></tr></tbody></table>
 
 `LN2`

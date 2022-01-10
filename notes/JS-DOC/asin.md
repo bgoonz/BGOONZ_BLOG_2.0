@@ -38,7 +38,9 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-math.asin</span></a></td></tr></tbody></table>
 
 `asin`

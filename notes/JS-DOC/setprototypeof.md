@@ -163,7 +163,9 @@ Using the older [`Object.prototype.__proto__`](proto) property, we can easily de
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-object.setprototypeof</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

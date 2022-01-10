@@ -183,7 +183,7 @@
                                 (GUI) administration tool for PostgreSQL.
                             </p>
                             <p name="c9f8" id="c9f8" class="graf graf--p graf-after--p">
-                                When you read “installation”, that means the actual OS that's running on your machine. So, you have a Windows installation,
+                                When you read "installation", that means the actual OS that's running on your machine. So, you have a Windows installation,
                                 Windows 10, that's running when you boot your computer. Then, when you start the Ubuntu installation, it's as if there's a
                                 completely separate computer running inside your computer. It's like having two completely different laptops.
                             </p>
@@ -288,7 +288,7 @@
                                 class="graf graf--pre graf-after--p"
                             >echo &quot;deb <a href="http://apt.postgresql.org/pub/repos/apt/" data-href="http://apt.postgresql.org/pub/repos/apt/" class="markup--anchor markup--pre-anchor" rel="noopener" target="_blank">http://apt.postgresql.org/pub/repos/apt/</a> `lsb_release -cs`-pgdg main&quot; | sudo tee  /etc/apt/sources.list.d/pgdg.list</pre>
                             <p name="70b1" id="70b1" class="graf graf--p graf-after--pre">
-                                The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a
+                                The last line of output of those two commands running should read "OK". If it does not, try copying and pasting them one at a
                                 time.
                             </p>
                             <p name="2875" id="2875" class="graf graf--p graf-after--p">
@@ -302,7 +302,7 @@
                                 following command.
                             </p>
                             <pre name="7a9e" id="7a9e" class="graf graf--pre graf-after--p">sudo apt install postgresql-client-12 postgresql-common</pre>
-                            <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to install them, please tell it “Y”.</p>
+                            <p name="6006" id="6006" class="graf graf--p graf-after--pre">If it asks you if you want to install them, please tell it "Y".</p>
                             <p name="aeab" id="aeab" class="graf graf--p graf-after--p">
                                 Test that it installed by typing <code class="markup--code markup--p-code">psql --version</code>. You should see it print out
                                 information about the version of the installed tools. If it tells you that it can&#39;t find the command, try these instructions
@@ -377,7 +377,7 @@ psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; 
                             >
                             <p name="30d6" id="30d6" class="graf graf--p graf-after--pre">
                                 It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct
-                                password, you should see “CREATE ROLE”.
+                                password, you should see "CREATE ROLE".
                             </p>
                             <p name="cb4f" id="cb4f" class="graf graf--p graf-after--p">
                                 Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and
@@ -430,7 +430,7 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                     rel="noopener"
                                     target="_blank"
                                     >Postbird releases page on GitHub</a
-                                >. Click the installer for Windows which you can recognize because it's the only file in the list that ends with “.exe”.
+                                >. Click the installer for Windows which you can recognize because it's the only file in the list that ends with ".exe".
                             </p>
                             <figure name="9688" id="9688" class="graf graf--figure graf-after--p">
                                 <img
@@ -460,8 +460,8 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 philosophical reasons.
                             </p>
                             <p name="de94" id="de94" class="graf graf--p graf-after--p">
-                                Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More
-                                info” and the “Run anyway” button.
+                                Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads "More
+                                info" and the "Run anyway" button.
                             </p>
                             <figure name="a64c" id="a64c" class="graf graf--figure graf-after--p">
                                 <img
@@ -473,8 +473,8 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                 />
                             </figure>
                             <p name="acd8" id="acd8" class="graf graf--p graf-after--figure">
-                                When it's done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the
-                                password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running
+                                When it's done installing, it will launch itself. Test it out by typing the "postgres" into the "Username" field and the
+                                password from your installation in the "Password" field. Click the Connect button. It should properly connect to the running
                             </p>
                             <p name="4506" id="4506" class="graf graf--p graf-after--p">
                                 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any
@@ -493,7 +493,12 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                             </p>
                             <h3 name="5948" id="5948" class="graf graf--h3 graf-after--p">Setting up node-postgres</h3>
                             <p name="1e61" id="1e61" class="graf graf--p graf-after--h3">First, we install node-postgres.</p>
-                            <p name="6703" id="6703" class="graf graf--p graf-after--p">$ node -v<br />v14.2</p>
+                            <p name="6703" id="6703" class="graf graf--p graf-after--p">
+                                $ node -v
+                                <br />
+
+                                v14.2
+                            </p>
                             <p name="32f3" id="32f3" class="graf graf--p graf-after--p">$ npm init -y</p>
                             <p name="b768" id="b768" class="graf graf--p graf-after--p">We initiate a new Node application.</p>
                             <p name="be45" id="be45" class="graf graf--p graf-after--p">npm i pg</p>
@@ -505,11 +510,31 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                             <p name="cea8" id="cea8" class="graf graf--p graf-after--p">cars.sql</p>
                             <p name="0f28" id="0f28" class="graf graf--p graf-after--p">DROP TABLE IF EXISTS cars;</p>
                             <p name="92e8" id="92e8" class="graf graf--p graf-after--p">
-                                CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);<br />INSERT INTO cars(name, price) VALUES('Audi',
-                                52642);<br />INSERT INTO cars(name, price) VALUES('Mercedes', 57127);<br />INSERT INTO cars(name, price) VALUES('Skoda',
-                                9000);<br />INSERT INTO cars(name, price) VALUES('Volvo', 29000);<br />INSERT INTO cars(name, price) VALUES('Bentley',
-                                350000);<br />INSERT INTO cars(name, price) VALUES('Citroen', 21000);<br />INSERT INTO cars(name, price) VALUES('Hummer',
-                                41400);<br />INSERT INTO cars(name, price) VALUES('Volkswagen', 21600);
+                                CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Audi', 52642);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Mercedes', 57127);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Skoda', 9000);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Volvo', 29000);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Bentley', 350000);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Citroen', 21000);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Hummer', 41400);
+                                <br />
+
+                                INSERT INTO cars(name, price) VALUES('Volkswagen', 21600);
                             </p>
                             <p name="abb9" id="abb9" class="graf graf--p graf-after--p">
                                 In some of the examples, we use this <code class="markup--code markup--p-code">cars</code> table.
@@ -628,8 +653,10 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                     data-href="https://github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
                                     >github.com</a
                                 ><a
@@ -647,8 +674,10 @@ localhost:5432:*:«your Ubuntu user name»:«the password you just used»</pre
                                     data-href="https://bgoonz-blog.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://bgoonz-blog.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Stackbit Web-Dev-HubTheme</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Stackbit Web-Dev-HubTheme</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em
                                     >bgoonz-blog.netlify.app</a
                                 ><a

@@ -57,7 +57,9 @@ Thus from the above example of class `C` and `D`, it seems that `new.target` poi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-built-in-function-objects</span></a></td></tr></tbody></table>
 
 `new.target`

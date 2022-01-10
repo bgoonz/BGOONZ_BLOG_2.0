@@ -1,12 +1,12 @@
 # How To Implement Native(ES6) Data Structures Using Arrays & Objects
 
-Smart data structures and dumb code works better than the other way around -“Eric S. Raymond”
+Smart data structures and dumb code works better than the other way around -"Eric S. Raymond”
 
 ---
 
 ### How To Implement Native(ES6) Data Structures Using Arrays & Objects
 
-<a href="https://www.azquotes.com/quote/636065?ref=data-structures" class="markup--anchor markup--p-anchor">Smart data structures and dumb code works better than the other way around</a> <a href="https://twitter.com/esrtweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="markup--anchor markup--p-anchor"><strong>-“Eric S. Raymond”</strong></a>
+<a href="https://www.azquotes.com/quote/636065?ref=data-structures" class="markup--anchor markup--p-anchor">Smart data structures and dumb code works better than the other way around</a> <a href="https://twitter.com/esrtweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="markup--anchor markup--p-anchor"><strong>-"Eric S. Raymond”</strong></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*ZBBOzoXj5SgXtZb7.png" alt="https://data-flair.training/blogs/javascript-data-structures/" class="graf-image" /><figcaption><a href="https://data-flair.training/blogs/javascript-data-structures/" class="markup--anchor markup--figure-anchor">https://data-flair.training/blogs/javascript-data-structures/</a></figcaption></figure>#### *Abstract Data type (ADT) is a type (or class) for objects whose behavior is*
 
@@ -28,19 +28,21 @@ Since abstract data types don't specify an implementation, this means it's also 
 
 Further Reading:
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#map_object" class="markup--anchor markup--p-anchor">Keyed collections — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#map_object" class="markup--anchor markup--p-anchor">Keyed collections — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages" class="markup--anchor markup--p-anchor">Details of the object model — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages" class="markup--anchor markup--p-anchor">Details of the object model — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="markup--anchor markup--p-anchor">Set — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="markup--anchor markup--p-anchor">Set — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="markup--anchor markup--p-anchor">Map — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" class="markup--anchor markup--p-anchor">Map — JavaScript | MDN (mozilla.org)</a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" class="markup--anchor markup--p-anchor">JavaScript data types and data structures — JavaScript | MDN (mozilla.org)</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" class="markup--anchor markup--p-anchor">JavaScript data types and data structures — JavaScript | MDN (mozilla.org)</a>
 
 ### For more content… go to :
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 15, 2021](https://medium.com/p/ce953b9f6a07).

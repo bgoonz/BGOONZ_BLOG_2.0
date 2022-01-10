@@ -43,7 +43,9 @@ In comparison to the global [`isFinite()`](../isfinite) function, this method do
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-number.isfinite</span></a></td></tr></tbody></table>
 
 `isFinite`

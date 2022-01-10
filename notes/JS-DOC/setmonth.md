@@ -41,7 +41,9 @@ The current day of month will have an impact on the behavior of this method. Con
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-date.prototype.setmonth</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

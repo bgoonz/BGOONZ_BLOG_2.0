@@ -101,7 +101,9 @@ In this example, we have a function that fetches an image and returns a blob. We
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
 
 `any`

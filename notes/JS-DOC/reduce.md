@@ -430,7 +430,9 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

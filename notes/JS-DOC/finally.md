@@ -53,7 +53,9 @@ The `finally()` method is very similar to calling `.then(onFinally, onFinally)` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-promise.prototype.finally</span></a></td></tr></tbody></table>
 
 `finally`

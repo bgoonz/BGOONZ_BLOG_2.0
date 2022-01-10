@@ -59,7 +59,9 @@ This example shows that we're creating and accessing the table from JavaScript, 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<br/>
+
 <span class="small">#tables</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

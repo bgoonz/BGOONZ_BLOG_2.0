@@ -547,7 +547,7 @@ Python has two primitive loop commands:
 -   <span id="2b5b">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
--   <span id="897a">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
+-   <span id="897a">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
 
@@ -614,7 +614,9 @@ Python has two primitive loop commands:
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>

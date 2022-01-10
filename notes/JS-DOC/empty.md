@@ -52,7 +52,9 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-empty-statement</span></a></td></tr></tbody></table>
 
 `Empty`

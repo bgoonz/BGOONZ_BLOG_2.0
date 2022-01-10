@@ -85,7 +85,9 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
 
 `concat`

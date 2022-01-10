@@ -49,7 +49,9 @@ Just in the same manner at which you can check if an object is an instance of a 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-symbol.hasinstance</span></a></td></tr></tbody></table>
 
 `hasInstance`

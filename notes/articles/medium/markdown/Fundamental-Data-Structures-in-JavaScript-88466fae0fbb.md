@@ -20,11 +20,11 @@ They also come up in software engineering interviews quite often.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OYmTpAK6tyDQzoIE.gif" class="graf-image" /></figure>### What is a Linked List?
 
-A Linked List data structure represents a linear sequence of “vertices” (or “nodes”), and tracks three important properties.
+A Linked List data structure represents a linear sequence of "vertices" (or "nodes"), and tracks three important properties.
 
 **Linked List Properties:**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*z-i1wE6QPOtqxGiW_B6WuA.png" class="graf-image" /></figure>The data being tracked by a particular Linked List does not live inside the Linked List instance itself. Instead, each vertex is actually an instance of an even simpler, smaller data structure, often referred to as a “Node”.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*z-i1wE6QPOtqxGiW_B6WuA.png" class="graf-image" /></figure>The data being tracked by a particular Linked List does not live inside the Linked List instance itself. Instead, each vertex is actually an instance of an even simpler, smaller data structure, often referred to as a "Node".
 
 Depending on the type of Linked List (there are many), Node instances track some very important properties as well.
 
@@ -36,7 +36,7 @@ Depending on the type of Linked List (there are many), Node instances track some
 
 Linked Lists contain _ordered_ data, just like arrays. The first node in the list is, indeed, first. From the perspective of the very first node in the list, the _next_ node is the second node. From the perspective of the second node in the list, the _previous_ node is the first node, and the _next_ node is the third node. And so it goes.
 
-#### “So…this sounds a lot like an Array…”
+#### "So…this sounds a lot like an Array…"
 
 Admittedly, this does _sound_ a lot like an Array so far, and that's because Arrays and Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between Arrays and Linked Lists, and that is how they _physically store_ their data. (As opposed to how they _represent_ the order of their data.)
 
@@ -44,7 +44,7 @@ Recall that Arrays contain _contiguous_ data. Each element of an array is actual
 
 _An Array's contiguous data being stored in a continuous block of addresses in memory._
 
-Unlike Arrays, Linked Lists contain _non-contiguous_ data. Though Linked Lists _represent_ data that is ordered linearly, that mental model is just that — an interpretation of the _representation_ of information, not reality.
+Unlike Arrays, Linked Lists contain _non-contiguous_ data. Though Linked Lists _represent_ data that is ordered linearly, that mental model is just that — an interpretation of the _representation_ of information, not reality.
 
 In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List's Nodes are not stored in a single continuous block of addresses. Rather, Linked List Nodes live at randomly distributed addresses throughout your machine! The only reason we know which node comes next in the list is because we've assigned its reference to the current node's `next` pointer.
 
@@ -83,22 +83,22 @@ Before we begin our analysis, here is a quick summary of the Time and Space cons
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-### Time Complexity — Access and Search
+### Time Complexity — Access and Search
 
 #### Scenarios
 
 1.  <span id="16fe">We have a Linked List, and we'd like to find the 8th item in the list.</span>
-2.  <span id="a9f7">We have a Linked List of sorted alphabet letters, and we'd like to see if the letter “Q” is inside that list.</span>
+2.  <span id="a9f7">We have a Linked List of sorted alphabet letters, and we'd like to see if the letter "Q" is inside that list.</span>
 
 #### Discussion
 
 Unlike Arrays, Linked Lists Nodes are not stored contiguously in memory, and thereby do not have an indexed set of memory addresses at which we can quickly lookup individual nodes in constant time. Instead, we must begin at the head of the list (or possibly at the tail, if we have a Doubly Linked List), and iterate through the list until we arrive at the node of interest.
 
-In Scenario 1, we'll know we're there because we've iterated 8 times. In Scenario 2, we'll know we're there because, while iterating, we've checked each node's value and found one that matches our target value, “Q”.
+In Scenario 1, we'll know we're there because we've iterated 8 times. In Scenario 2, we'll know we're there because, while iterating, we've checked each node's value and found one that matches our target value, "Q".
 
 In the worst case scenario, we may have to traverse the entire Linked List until we arrive at the final node. This makes both Access & Search **Linear Time** operations.
 
-### Time Complexity — Insertion and Deletion
+### Time Complexity — Insertion and Deletion
 
 #### Scenarios
 
@@ -117,7 +117,7 @@ Since we have our Linked List Nodes stored in a non-contiguous manner that relie
 
 And we're done, in Constant Time. No iterating across the entire list necessary.
 
-“But hold on one second,” you may be thinking. “In order to insert a new node in the middle of the list, don't we have to lookup its position? Doesn't that take linear time?!”
+"But hold on one second," you may be thinking. "In order to insert a new node in the middle of the list, don't we have to lookup its position? Doesn't that take linear time?!"
 
 Yes, it is tempting to call insertion or deletion in the middle of a Linked List a linear time operation since there is lookup involved. However, it's usually the case that you'll already have a reference to the node where your desired insertion or deletion will occur.
 
@@ -146,7 +146,7 @@ In Scenario 2, we _are_ creating a new Linked List. If the number of nodes we cr
 
 ### Stacks and Queues
 
-Stacks and Queues aren't really “data structures” by the strict definition of the term. The more appropriate terminology would be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules governing their user-facing behaviors rather than their core implementations.
+Stacks and Queues aren't really "data structures" by the strict definition of the term. The more appropriate terminology would be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules governing their user-facing behaviors rather than their core implementations.
 
 For the sake of simplicity, we'll refer to them as data structures and ADTs interchangeably throughout the course, but the distinction is an important one to be familiar with as you level up as an engineer.
 
@@ -180,7 +180,7 @@ If you can imagine a queue of humans waiting…again, for literally anything…y
 
 People add themselves to the _back_ of a queue, wait their turn in line, and make their way toward the _front_. People exit from the _front_ of a queue, but only when they have made their way to being first in line.
 
-We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be “cutting” the line, and other humans don't seem to appreciate that.
+We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be "cutting" the line, and other humans don't seem to appreciate that.
 
 Note: We can use JavaScript Arrays to implement a basic queue. `Array#push` adds to the back (enqueue) and `Array#shift` will remove from the front (dequeue). In the exercise that follows, we'll build our own Queue class from scratch (without using any arrays). In an interview setting, your evaluator may be okay with you using an array as a queue.
 
@@ -204,7 +204,7 @@ Data Structure Operation Time Complexity (Avg)Time Complexity (Worst)Space Compl
 
 Before moving forward, see if you can reason to yourself why each operation has the time and space complexity listed above!
 
-#### Time Complexity — Access and Search
+#### Time Complexity — Access and Search
 
 When the Stack ADT was first conceived, its inventor definitely did not prioritize searching and accessing individual Nodes or values in the list. The same idea applies for the Queue ADT. There are certainly better data structures for speedy search and lookup, and if these operations are a priority for your use case, it would be best to choose something else!
 
@@ -212,7 +212,7 @@ Search and Access are both linear time operations for Stacks and Queues, and tha
 
 This is a linear time operation, O(n).
 
-#### Time Complexity — Insertion and Deletion
+#### Time Complexity — Insertion and Deletion
 
 For Stacks and Queues, insertion and deletion is what it's all about. If there is one feature a Stack absolutely must have, it's constant time insertion and removal to and from the `top` of the Stack (FIFO). The same applies for Queues, but with insertion occurring at the `back` and removal occurring at the `front` (LIFO).
 
@@ -257,18 +257,26 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 
 **If you found this guide helpful feel free to checkout my other articles:**
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong>
+<br/>
+
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 **Further resources:**
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
+<br/>
+
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 **Here's a live code editor where you can mess with any of the examples:**

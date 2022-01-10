@@ -40,7 +40,9 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'Bitwise OR expression' in that specification.</span></a></td></tr></tbody></table>
 
 `Bitwise_OR`

@@ -12,12 +12,16 @@ Data structures in JavaScript
 
 <span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
-<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
+<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong>
+<br/>
+
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong>
+<br/>
+
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
@@ -69,11 +73,11 @@ Data structures in JavaScript
 
 #### Guides
 
--   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+-   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+-   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
 -   <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
 -   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+-   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
 ### **_space_**
 
@@ -129,7 +133,7 @@ Properties could be some variable that it's storing or some methods that it's us
 
 I also visualize an object as a table.
 
-The main difference is that object's “index” need not be numbers and is not necessarily sequenced.
+The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
@@ -239,7 +243,7 @@ O(n) O(n) O(1) O(n)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>### *Definition*
 
-> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
+> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
 
 Complexity  
 Average  
@@ -259,7 +263,7 @@ To get a full overview of the time and space complexity of the Tree data structu
 -   <span id="fbda">Much more relaxed in structure than a tree.</span>
 -   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+-   <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 -   <span id="8f45">Any number of edges may leave a given node</span>
 -   <span id="51cf">A Path is a sequence of nodes on a graph</span>
 
@@ -281,17 +285,23 @@ Graph
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 5, 2021](https://medium.com/p/8f9f709c15b4).

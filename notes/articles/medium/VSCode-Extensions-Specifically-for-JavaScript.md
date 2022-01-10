@@ -39,7 +39,7 @@ VSCode Extensions that are indispensable in JavaScript development
 
 ### Code Runner
 
--   <span id="b696">Puts a “Play” button in your toolbar and let's you run code files by pressing it.</span>
+-   <span id="b696">Puts a "Play" button in your toolbar and let's you run code files by pressing it.</span>
 -   <span id="d9c1"><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" class="markup--anchor markup--li-anchor" title="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner</a></span>
 
 ### Code Runner
@@ -116,9 +116,9 @@ Here are just some of the **features** that GitLens provides,
 -   <span id="8920"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-code-lens-" class="markup--anchor markup--li-anchor" title="Jump to Git Code Lens"><strong>authorship code lens</strong></a> showing the most recent commit and number of authors at the top of files and/or on code blocks</span>
 -   <span id="4256">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#status-bar-blame-" class="markup--anchor markup--li-anchor" title="Jump to Status Bar Blame"><strong>status bar blame</strong></a> annotation showing the commit and author who last modified the current line</span>
 -   <span id="05e9">on-demand **file annotations** in the editor gutter, including</span>
--   <span id="fb38"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-blame-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Blame"><strong>blame</strong></a> — shows the commit and author who last modified each line of a file</span>
--   <span id="c964"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-changes-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Changes"><strong>changes</strong></a> — highlights any local (unpublished) changes or lines changed by the most recent commit</span>
--   <span id="8e28"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-heatmap-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Heatmap"><strong>heatmap</strong></a> — shows how recently lines were changed, relative to all the other changes in the file and to now (hot vs. cold)</span>
+-   <span id="fb38"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-blame-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Blame"><strong>blame</strong></a> — shows the commit and author who last modified each line of a file</span>
+-   <span id="c964"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-changes-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Changes"><strong>changes</strong></a> — highlights any local (unpublished) changes or lines changed by the most recent commit</span>
+-   <span id="8e28"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#gutter-heatmap-" class="markup--anchor markup--li-anchor" title="Jump to Gutter Heatmap"><strong>heatmap</strong></a> — shows how recently lines were changed, relative to all the other changes in the file and to now (hot vs. cold)</span>
 -   <span id="f31e">many rich **Side Bar views**</span>
 -   <span id="454e">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#commits-view-" class="markup--anchor markup--li-anchor" title="Jump to the Commits view"><strong><em>Commits</em> view</strong></a> to visualize, explore, and manage Git commits</span>
 -   <span id="20b4">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#repositories-view-" class="markup--anchor markup--li-anchor" title="Jump to the Repositories view"><strong><em>Repositories</em> view</strong></a> to visualize, explore, and manage Git repositories</span>
@@ -131,12 +131,12 @@ Here are just some of the **features** that GitLens provides,
 -   <span id="f2ad">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#contributors-view-" class="markup--anchor markup--li-anchor" title="Jump to the Contributors view"><strong><em>Contributors</em> view</strong></a> to visualize, navigate, and explore contributors</span>
 -   <span id="6446">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#search--compare-view-" class="markup--anchor markup--li-anchor" title="Jump to the Search &amp; Compare view"><strong><em>Search &amp; Compare</em> view</strong></a> to search and explore commit histories by message, author, files, id, etc, or visualize comparisons between branches, tags, commits, and more</span>
 -   <span id="0738">a <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#git-command-palette-" class="markup--anchor markup--li-anchor" title="Jump to the Git Command Palette"><strong>Git Command Palette</strong></a> to provide guided (step-by-step) access to many common Git commands, as well as quick access to</span>
--   <span id="8275"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-commit-access-" class="markup--anchor markup--li-anchor" title="Jump to Quick Commit Access">commits</a> — history and search</span>
+-   <span id="8275"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-commit-access-" class="markup--anchor markup--li-anchor" title="Jump to Quick Commit Access">commits</a> — history and search</span>
 -   <span id="44ae"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-stash-access-" class="markup--anchor markup--li-anchor" title="Jump to Quick Stash Access">stashes</a></span>
--   <span id="ad5f"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-status-access-" class="markup--anchor markup--li-anchor" title="Jump to Quick Status Access">status</a> — current branch and working tree status</span>
+-   <span id="ad5f"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#quick-status-access-" class="markup--anchor markup--li-anchor" title="Jump to Quick Status Access">status</a> — current branch and working tree status</span>
 -   <span id="ea4a">a user-friendly <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#interactive-rebase-editor-" class="markup--anchor markup--li-anchor" title="Jump to the Interactive Rebase Editor"><strong>interactive rebase editor</strong></a> to easily configure an interactive rebase session</span>
--   <span id="692c"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#terminal-links-" class="markup--anchor markup--li-anchor" title="Jump to Terminal Links"><strong>terminal links</strong></a> — `ctrl+click` on autolinks in the integrated terminal to quickly jump to more details for commits, branches, tags, and more</span>
--   <span id="7671">rich <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remote-provider-integrations-" class="markup--anchor markup--li-anchor" title="Jump to Remote Provider Integrations"><strong>remote provider integrations</strong></a> — GitHub, GitLab, Bitbucket, Azure DevOps</span>
+-   <span id="692c"><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#terminal-links-" class="markup--anchor markup--li-anchor" title="Jump to Terminal Links"><strong>terminal links</strong></a> — `ctrl+click` on autolinks in the integrated terminal to quickly jump to more details for commits, branches, tags, and more</span>
+-   <span id="7671">rich <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens#remote-provider-integrations-" class="markup--anchor markup--li-anchor" title="Jump to Remote Provider Integrations"><strong>remote provider integrations</strong></a> — GitHub, GitLab, Bitbucket, Azure DevOps</span>
 -   <span id="eaa9">issue and pull request auto-linking</span>
 -   <span id="c6bf">rich hover information provided for linked issues and pull requests (GitHub only)</span>
 -   <span id="5769">associates pull requests with branches and commits (GitHub only)</span>
@@ -167,7 +167,7 @@ Here are just some of the **features** that GitLens provides,
 
 ### Table of contents
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*T1aP3qXU9HHLvrkZ.png" class="graf-image" /></figure>-   <span id="ca4e">Run command “**Create Table of Contents**” to insert a new table of contents.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*T1aP3qXU9HHLvrkZ.png" class="graf-image" /></figure>-   <span id="ca4e">Run command "**Create Table of Contents**" to insert a new table of contents.</span>
 -   <span id="1bbc">The TOC is **automatically updated** on file save by default. To disable, please change the `toc.updateOnSave` option.</span>
 -   <span id="e5a8">The **indentation type (tab or spaces)** of TOC can be configured per file. Find the setting in the right bottom corner of VS Code's status bar.</span>
 -   <span id="385b">***Note***: Be sure to also check the `list.indentationSize` option.</span>
@@ -295,20 +295,28 @@ Quokka.js is a developer productivity tool for rapid JavaScript / TypeScript pro
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xYo5Z7lROn4tLQu9.gif" class="graf-image" /></figure>### If you found this guide helpful feel free to checkout my other articles:
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<strong>A list of all of my articles to link to future posts</strong>
+<br/>
+
+<em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ### OR GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong><br />
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
+<br/>
+
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 23, 2021](https://medium.com/p/ea91305cbd4a).

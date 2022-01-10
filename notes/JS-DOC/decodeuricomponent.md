@@ -53,7 +53,9 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-decodeuricomponent-encodeduricomponent</span></a></td></tr></tbody></table>
 
 `decodeURIComponent`

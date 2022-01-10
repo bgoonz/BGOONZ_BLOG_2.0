@@ -113,7 +113,9 @@ This version might be used in for loops and the like when it is unknown whether 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-string.prototype.charcodeat</span></a></td></tr></tbody></table>
 
 `charCodeAt`

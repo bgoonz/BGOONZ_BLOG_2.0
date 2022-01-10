@@ -87,7 +87,7 @@
                 <h1 class="p-name">Scheduling: setTimeout and setInterval</h1>
             </header>
             <section data-field="subtitle" class="p-summary">
-                We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
+                We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".
             </section>
             <section data-field="body" class="e-content">
                 <section name="9ecb" class="section section--body section--first section--last">
@@ -98,7 +98,7 @@
                         <div class="section-inner sectionLayout--insetColumn">
                             <h3 name="7c04" id="7c04" class="graf graf--h3 graf--leading graf--title">Scheduling: setTimeout and setInterval</h3>
                             <p name="0d64" id="0d64" class="graf graf--p graf-after--h3">
-                                We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
+                                We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".
                             </p>
                             <figure name="d268" id="d268" class="graf graf--figure graf-after--p">
                                 <img
@@ -130,8 +130,10 @@ let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)</pre
                             >
                             <p name="f646" id="f646" class="graf graf--p graf-after--pre">Parameters:</p>
                             <p name="e256" id="e256" class="graf graf--p graf-after--p">
-                                <code class="markup--code markup--p-code">func|code</code>: Function or a string of code to execute.<br />Usually, that&#39;s a
-                                function. For historical reasons, a string of code can be passed, but that&#39;s not recommended.
+                                <code class="markup--code markup--p-code">func|code</code>: Function or a string of code to execute.
+                                <br />
+
+                                Usually, that&#39;s a function. For historical reasons, a string of code can be passed, but that&#39;s not recommended.
                             </p>
                             <p name="2ed2" id="2ed2" class="graf graf--p graf-after--p">
                                 <code class="markup--code markup--p-code">delay</code>: The delay before running, in milliseconds (1000 ms = 1 second), by
@@ -244,7 +246,7 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 class="graf graf--pre graf-after--pre"
                             >// after 5 seconds stop<br>setTimeout(() =&gt; { clearInterval(timerId); alert(&#39;stop&#39;); }, 5000);</pre>
                             <p name="dcae" id="dcae" class="graf graf--p graf-after--pre">
-                                ```smart header = “Time goes on while <code class="markup--code markup--p-code">alert</code> is shown”
+                                ```smart header = "Time goes on while <code class="markup--code markup--p-code">alert</code> is shown"
                             </p>
                             <p name="7890" id="7890" class="graf graf--p graf-after--p">
                                 In most browsers, including Chrome and Firefox, the internal timer continues &quot;ticking&quot; while showing
@@ -401,13 +403,13 @@ let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)</pre
                                 will invoke it only after the currently executing script is complete.
                             </p>
                             <p name="bc98" id="bc98" class="graf graf--p graf-after--p">
-                                So the function is scheduled to run “right after” the current script.
+                                So the function is scheduled to run "right after" the current script.
                             </p>
-                            <p name="bf97" id="bf97" class="graf graf--p graf-after--p">For instance, this outputs “Hello”, then immediately “World”:</p>
+                            <p name="bf97" id="bf97" class="graf graf--p graf-after--p">For instance, this outputs "Hello", then immediately "World":</p>
                             <pre name="4875" id="4875" class="graf graf--pre graf-after--p">setTimeout(() =&gt; alert(&quot;World&quot;));</pre>
                             <pre name="57ee" id="57ee" class="graf graf--pre graf-after--pre">alert(&quot;Hello&quot;);</pre>
                             <p name="a385" id="a385" class="graf graf--p graf-after--pre">
-                                The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current
+                                The first line "puts the call into calendar after 0ms". But the scheduler will only "check the calendar" after the current
                                 script is complete, so <code class="markup--code markup--p-code">&quot;Hello&quot;</code> is first, and
                                 <code class="markup--code markup--p-code">&quot;World&quot;</code> -- after it.
                             </p>

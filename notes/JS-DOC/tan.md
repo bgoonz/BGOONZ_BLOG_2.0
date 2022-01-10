@@ -36,7 +36,9 @@ Because the `Math.tan()` function accepts radians, but it is often easier to wor
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tan">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tan">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-math.tan</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

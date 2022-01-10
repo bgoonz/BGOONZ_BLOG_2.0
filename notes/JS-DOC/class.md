@@ -66,7 +66,9 @@ If you want to refer to the current class inside the class body, you can create 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-class-definitions</span></a></td></tr></tbody></table>
 
 `class`

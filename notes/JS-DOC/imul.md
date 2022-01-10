@@ -68,7 +68,9 @@ However, the following function is more performant because it is likely that bro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-math.imul</span></a></td></tr></tbody></table>
 
 `imul`

@@ -43,7 +43,9 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API) 
+<br/>
+
 <span class="small">#dom-webassembly-instantiatestreaming</span></a></td></tr></tbody></table>
 
 `instantiateStreaming`

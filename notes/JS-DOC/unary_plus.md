@@ -32,7 +32,9 @@ Although unary negation (`-`) also can convert non-numbers, unary plus is the fa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-plus-operator">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-plus-operator">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-unary-plus-operator</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

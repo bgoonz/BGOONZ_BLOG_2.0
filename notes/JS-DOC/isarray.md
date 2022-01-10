@@ -24,7 +24,7 @@ The value to be checked.
 
 If the value is an [`Array`](../array), `true` is returned; otherwise, `false` is.
 
-See the article [“Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
+See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
 
 ## Examples
 
@@ -67,7 +67,9 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-array.isarray</span></a></td></tr></tbody></table>
 
 `isArray`

@@ -194,7 +194,7 @@
                             </h4>
                             <ul class="postList">
                                 <li name="6af3" id="6af3" class="graf graf--li graf-after--h4">
-                                    Method names should be grouped together into granular collections called “interfaces”
+                                    Method names should be grouped together into granular collections called "interfaces"
                                 </li>
                             </ul>
                             <h4 name="fd47" id="fd47" class="graf graf--h4 graf-after--li">
@@ -202,7 +202,7 @@
                             </h4>
                             <ul class="postList">
                                 <li name="e90d" id="e90d" class="graf graf--li graf-after--h4">
-                                    Don't use more than one dot (not counting the one after “this”).
+                                    Don't use more than one dot (not counting the one after "this").
                                 </li>
                                 <li name="6cbd" id="6cbd" class="graf graf--li graf-after--li">
                                     A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the
@@ -255,7 +255,7 @@
                                 class="graf graf--pre graf-after--p"
                             >const fellowshipOfTheRing = {<br>  title: &quot;The Fellowship of the Ring&quot;,<br>  series: &quot;The Lord of the Rings&quot;,<br>  author: &quot;J.R.R. Tolkien&quot;,<br>};</pre>
                             <ul class="postList">
-                                <li name="9071" id="9071" class="graf graf--li graf-after--pre">The above literal is a “Book” object type.</li>
+                                <li name="9071" id="9071" class="graf graf--li graf-after--pre">The above literal is a "Book" object type.</li>
                                 <li name="a5d6" id="a5d6" class="graf graf--li graf-after--li">
                                     <code class="markup--code markup--li-code">Object Type</code> is defined by it&#39;s attributes and behaviors.
                                 </li>
@@ -423,7 +423,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                                     We cannot use arrow functions when defining methods on a constructor function's prototype property.
                                 </li>
                                 <li name="4f33" id="4f33" class="graf graf--li graf-after--li graf--trailing">
-                                    Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick
+                                    Arrow functions don't include their own this binding; therefore it will not reference the current instance — always stick
                                     with the function () keyword.
                                 </li>
                             </ul>
@@ -498,7 +498,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                             >function test() {<br>  console.log(&quot;This works!&quot;);<br>}</pre>
                             <ul class="postList">
                                 <li name="bf4e" id="bf4e" class="graf graf--li graf-after--pre">
-                                    In JS you can call a function before it's declared — this is known as
+                                    In JS you can call a function before it's declared — this is known as
                                     <code class="markup--code markup--li-code">hoisting</code>.
                                 </li>
                                 <li name="8dd6" id="8dd6" class="graf graf--li graf-after--li">
@@ -563,8 +563,8 @@ console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The
                             >
                             <ul class="postList">
                                 <li name="133d" id="133d" class="graf graf--li graf-after--pre">
-                                    If we go back to an example of how constructor functions also use static methods — we see that static methods are
-                                    <em class="markup--em markup--li-em">defined directly on the constructor function</em> — whereas instance methods need to be
+                                    If we go back to an example of how constructor functions also use static methods — we see that static methods are
+                                    <em class="markup--em markup--li-em">defined directly on the constructor function</em> — whereas instance methods need to be
                                     defined on the <em class="markup--em markup--li-em">prototype</em> object.
                                 </li>
                             </ul>
@@ -762,16 +762,14 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                 class="graf graf--pre graf-after--pre"
                             ><strong class="markup--strong markup--pre-strong">module.exports = { Book, Movie, };</strong></pre>
                             <h4 name="5b6d" id="5b6d" class="graf graf--h4 graf-after--pre">Syntax for importing modules:</h4>
-                            <pre
-                                name="4b43"
-                                id="4b43"
-                                class="graf graf--pre graf-after--h4"
-                            ><strong class="markup--strong markup--pre-strong">const classes = require(“./classes”);</strong></pre>
+                            <pre name="4b43" id="4b43" class="graf graf--pre graf-after--h4"><strong class="markup--strong markup--pre-strong">const classes =
+                              require("./classes");</strong></pre>
                             <pre
                                 name="f2ab"
                                 id="f2ab"
                                 class="graf graf--pre graf-after--pre"
-                            ><strong class="markup--strong markup--pre-strong">const { Book, Movie } = require(“./classes”);</strong></pre>
+                            ><strong class="markup--strong markup--pre-strong">const { Book, Movie } =
+                              require("./classes");</strong></pre>
                             <h4 name="832e" id="832e" class="graf graf--h4 graf-after--pre">Using Single Item Modules</h4>
                             <ul class="postList">
                                 <li name="0b43" id="0b43" class="graf graf--li graf-after--h4">
@@ -986,7 +984,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     <code class="markup--code markup--li-code">Interface Segregation Principle</code>
                                 </li>
                                 <li name="37db" id="37db" class="graf graf--li graf-after--li">
-                                    Method names should be grouped together into granular collections called “interfaces”.
+                                    Method names should be grouped together into granular collections called "interfaces".
                                 </li>
                                 <li name="7861" id="7861" class="graf graf--li graf-after--li">
                                     <code class="markup--code markup--li-code">Dependency Inversion Principle</code>
@@ -1025,7 +1023,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                             <h3 name="3b3c" id="3b3c" class="graf graf--h3 graf-after--li">When to ignore the Law of Demeter</h3>
                             <ul class="postList">
                                 <li name="770a" id="770a" class="graf graf--li graf-after--h3">
-                                    When you work with objects that come from code that you didn't create — you will often have to break the LoD.
+                                    When you work with objects that come from code that you didn't create — you will often have to break the LoD.
                                 </li>
                             </ul>
                             <pre
@@ -1051,8 +1049,10 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python
                                         |…</em
                                     >gist.github.com</a
@@ -1070,8 +1070,10 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     data-href="https://github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
                                     >github.com</a
                                 ><a
@@ -1089,10 +1091,10 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                                     data-href="https://web-dev-resource-hub.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://web-dev-resource-hub.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Resource-Hub</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
-                                        >Edit description</em
-                                    >web-dev-resource-hub.netlify.app</a
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">Web-Dev-Resource-Hub</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em">Edit description</em>web-dev-resource-hub.netlify.app</a
                                 ><a
                                     href="https://web-dev-resource-hub.netlify.app/"
                                     class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"

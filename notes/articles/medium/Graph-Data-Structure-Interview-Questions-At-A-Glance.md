@@ -398,7 +398,7 @@ dives down the graph as far as it can before backtracking and exploring another 
 -   <span id="8d05">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="6fac">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*nN2X6TCy0JSh4mfL.gif" alt="Cycles in a graph" class="graf-image" /><figcaption>Cycles in a graph</figcaption></figure>-   <span id="783b">Cycles are not always "isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*0EdGqDUlj_HEnyEc.png" class="graf-image" /></figure>-   <span id="fe92">Any number of edges may leave a given node</span>
 -   <span id="915b">A Path is a sequence of nodes on a graph</span>
@@ -411,28 +411,28 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*u8Nu829gPtxU6J0siwljJA.png" class="graf-image" /></figure>### Dense Graph
 
--   <span id="7b24">Dense Graph — A graph with lots of edges.</span>
--   <span id="5682">“Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as “many edges”? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:</span>
+-   <span id="7b24">Dense Graph — A graph with lots of edges.</span>
+-   <span id="5682">"Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as "many edges”? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:</span>
 -   <span id="0e05">Let's find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).</span>
--   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see “loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
+-   <span id="59d8">Why? Because each node could potentially connect with all other nodes and with itself (see "loop” below). Therefore, the maximum number of edges that the graph can have is |V|\\\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have.”</span>
 -   <span id="146f">When the number of edges in the graph is close to the maximum number of edges, the graph is dense.</span>
 
 ### Sparse Graph
 
--   <span id="5e53">Sparse Graph — Few edges</span>
+-   <span id="5e53">Sparse Graph — Few edges</span>
 -   <span id="37f5">When the number of edges in the graph is significantly fewer than the maximum number of edges, the graph is sparse.</span>
 
 ### Weighted Graph
 
--   <span id="755c">Weighted Graph — Edges have a cost or a weight to traversal</span>
+-   <span id="755c">Weighted Graph — Edges have a cost or a weight to traversal</span>
 
 ### Directed Graph
 
--   <span id="416f">Directed Graph — Edges only go one direction</span>
+-   <span id="416f">Directed Graph — Edges only go one direction</span>
 
 ### _Undirected_ Graph
 
--   <span id="6030">Undirected Graph — Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
+-   <span id="6030">Undirected Graph — Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated</span>
 
 ### Node Class
 

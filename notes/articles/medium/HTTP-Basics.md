@@ -1,17 +1,17 @@
 # HTTP Basics
 
-“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
+"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to…
 
 ---
 
 ### HTTP Basics
 
-> _“If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
+> _"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.” — Antoine de Saint-Exupery;_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LUQe60D2FeVzDEi8.png" class="graf-image" /></figure>-   <span id="cb9d">`HTTP` : Hypertext Transfer Protocol.</span>
 -   <span id="8248">`HT` : Hypertext - content with references to other content.</span>
 -   <span id="1ad1">Term used to refer to content in computing.</span>
--   <span id="5ad0">What makes the Web a “web”.</span>
+-   <span id="5ad0">What makes the Web a "web”.</span>
 -   <span id="11eb">Most fundamental part of how we interact.</span>
 -   <span id="41da">`Hyperlinks` : Links; references between HT resources.</span>
 -   <span id="b0a1">`TP` : Transfer Protocol - set of guidelines surrounding the transmission of data.</span>
@@ -75,7 +75,7 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Headers**
 
--   <span id="682b">Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span>
+-   <span id="682b">Key-Value pairs that come after the request line — they appear on sep. lines and define metadata needed to process the request.</span>
 -   <span id="5e4d">Some common headers:</span>
 -   <span id="2971">`Host` : Root path for our URI.</span>
 -   <span id="21e1">`User-Agent` : Displays information about which browser the request originated from.</span>
@@ -129,10 +129,10 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Status**
 
--   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server's intentions. (`status line`)</span>
+-   <span id="f3f8">First line of an HTTP response — gives us a high level overview of the server's intentions. (`status line`)</span>
 -   <span id="5353">`HTTP/1.1 200 OK`</span>
 -   <span id="5882">`HTTP status codes` : numeric way of representing a server's response.</span>
--   <span id="78bc">Follow the structure: x: xxx — xxx;</span>
+-   <span id="78bc">Follow the structure: x: xxx — xxx;</span>
 
 ### `Status codes 100 - 199: Informational`
 
@@ -171,17 +171,23 @@ Each individual request is sent to a server, which handles it and provides an an
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
 **Currently under development and very buggy!**
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 If you want to learn more and get some practice in … download <a href="https://www.postman.com/" class="markup--anchor markup--p-anchor">Postman</a> and start going through some tutorials!

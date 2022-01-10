@@ -26,7 +26,9 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<br/>
+
 <span class="small">#sec-Intl.Locale.prototype.region</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

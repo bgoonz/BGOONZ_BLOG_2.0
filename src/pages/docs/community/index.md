@@ -27,6 +27,12 @@ template: docs
 
 <div align="center">
 
+<iframe
+                                                src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+                                                frameborder="0"
+                                                id="social-embed"
+                                                width="100%!important"
+                                            ></iframe>
 ## ➤ Connect with me:
 
 <p align="center">

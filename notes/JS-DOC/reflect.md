@@ -81,7 +81,9 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-reflect-object</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

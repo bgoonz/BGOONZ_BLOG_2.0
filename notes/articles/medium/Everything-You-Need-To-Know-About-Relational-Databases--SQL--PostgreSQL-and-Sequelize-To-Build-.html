@@ -167,8 +167,10 @@
                                     title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"
                                     rel="noopener"
                                     target="_blank"
-                                    ><strong class="markup--strong markup--p-strong">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br /><em
-                                        class="markup--em markup--p-em"
+                                    ><strong class="markup--strong markup--p-strong">PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--p-em"
                                         >If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will </em
                                     >bryanguner.medium.com</a
                                 >
@@ -532,7 +534,13 @@
                             <p name="00f2" id="00f2" class="graf graf--p graf-after--li">— Selects all columns from the friends table</p>
                             <pre name="178f" id="178f" class="graf graf--pre graf-after--p">SELECT<br>*<br>FROM<br>friends;</pre>
                             <p name="274c" id="274c" class="graf graf--p graf-after--pre">
-                                — Selects the first_name column from the friends table (remember whitespace is ignored)<br />SELECT name<br />FROM friends;
+                                — Selects the first_name column from the friends table (remember whitespace is ignored)
+                                <br />
+
+                                SELECT name
+                                <br />
+
+                                FROM friends;
                             </p>
                             <ul class="postList">
                                 <li name="ef22" id="ef22" class="graf graf--li graf-after--p">
@@ -541,9 +549,12 @@
                                 </li>
                             </ul>
                             <p name="d615" id="d615" class="graf graf--p graf-after--li">
-                                — Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the
-                                “puppies” table. We indicate the table name by table.column<br /> — We are also aliasing these fields with the AS keyword so
-                                that our returned results have friend_name and puppy_name as field headers
+                                — Notice here we are indicating that we want the "name" field from the "friends" table as well as the "name" field from the
+                                "puppies" table. We indicate the table name by table.column
+                                <br />
+
+                                — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field
+                                headers
                             </p>
                             <pre
                                 name="774f"
@@ -617,8 +628,10 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs &gt; 50; — OR SEL
                                 </li>
                             </ul>
                             <p name="7276" id="7276" class="graf graf--p graf-after--li">
-                                — We are providing the table name, then multiple records to insert<br /> — The values are listed in the order that they are
-                                defined on the table
+                                — We are providing the table name, then multiple records to insert
+                                <br />
+
+                                — The values are listed in the order that they are defined on the table
                             </p>
                             <pre
                                 name="f963"
@@ -893,14 +906,27 @@ const pool = new Pool({ username: '&lt;&lt;username&gt;&gt;', password: '&lt;&lt
                                 class="graf graf--pre graf-after--li"
                             >const airportsByNameSql = `<br>SELECT name, faa_id<br>FROM airports<br>WHERE UPPER(name) LIKE UPPER($1)<br>`;</pre>
                             <p name="fff4" id="fff4" class="graf graf--p graf-after--pre">
-                                async function selectAirportsByName(name) {<br />const results = await pool.query(airportsByNameSql, [ `%${name}%` ]);<br />console.log(results.rows);<br />pool.end();
-                                // invoking end() will close our connection to the database<br />}
+                                async function selectAirportsByName(name) {
+                                <br />
+
+                                const results = await pool.query(airportsByNameSql, [ `%${name}%` ]);
+                                <br />
+
+                                console.log(results.rows);
+                                <br />
+
+                                pool.end(); // invoking end() will close our connection to the database
+                                <br />
+
+                                }
                             </p>
                             <pre
                                 name="20be"
                                 id="20be"
                                 class="graf graf--pre graf-after--p"
-                            >// Get the airport name from the command line and store it<br>// in the variable “name”. Pass that value to the<br>// selectAirportsByName function.<br>const name = process.argv[2];<br>// console.log(name);<br>selectAirportsByName(name);</pre>
+                            >// Get the airport name from the command line and store it<br>// in the variable "name".
+                            Pass that value to the<br>// selectAirportsByName function.<br>const name =
+                            process.argv[2];<br>// console.log(name);<br>selectAirportsByName(name);</pre>
                             <p name="2cac" id="2cac" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">ORM</strong></p>
                             <p name="e058" id="e058" class="graf graf--p graf-after--p">
                                 1. How to install, configure, and use Sequelize, an ORM for JavaScript
@@ -951,7 +977,15 @@ CREATE DATABASE example_app_production WITH OWNER example_user</pre
                                 name="3bab"
                                 id="3bab"
                                 class="graf graf--pre graf-after--li"
-                            >{<br>“development”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_development”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>},<br>“test”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_test”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>},<br>“production”: {<br>“username”: “sequelize_recipe_box_app”,<br>“password”: “HfKfK79k”,<br>“database”: “recipe_box_production”,<br>“host”: “127.0.0.1”,<br>“dialect”: “postgres”,<br>“seederStorage”: “sequelize”<br>}<br>}</pre>
+                            >{<br>"development": {<br>"username": "sequelize_recipe_box_app",<br>"password":
+                            "HfKfK79k",<br>"database": "recipe_box_development",<br>"host": "127.0.0.1",<br>"dialect":
+                            "postgres",<br>"seederStorage": "sequelize"<br>},<br>"test": {<br>"username":
+                            "sequelize_recipe_box_app",<br>"password": "HfKfK79k",<br>"database":
+                            "recipe_box_test",<br>"host": "127.0.0.1",<br>"dialect": "postgres",<br>"seederStorage":
+                            "sequelize"<br>},<br>"production": {<br>"username":
+                            "sequelize_recipe_box_app",<br>"password": "HfKfK79k",<br>"database":
+                            "recipe_box_production",<br>"host": "127.0.0.1",<br>"dialect":
+                            "postgres",<br>"seederStorage": "sequelize"<br>}<br>}</pre>
                             <p name="0240" id="0240" class="graf graf--p graf-after--pre">
                                 1. How to use database migrations to make your database grow with your application in a source-control enabled way
                             </p>
@@ -963,7 +997,7 @@ CREATE DATABASE example_app_production WITH OWNER example_user</pre
                                 </li>
                             </ul>
                             <pre name="7ce9" id="7ce9" class="graf graf--pre graf-after--li">
-npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”</pre
+npx sequelize-cli model:generate — name Cat — attributes "firstName:string,specialSkill:string"</pre
                             >
                             <ul class="postList">
                                 <li name="bc91" id="bc91" class="graf graf--li graf-after--pre">
@@ -1070,7 +1104,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                 <li name="ad49" id="ad49" class="graf graf--li graf-after--li">
                                     Seed files can be used to populate our database with starter data.
                                 </li>
-                                <li name="9058" id="9058" class="graf graf--li graf-after--li">npx sequelize-cli seed:generate — name add-cats</li>
+                                <li name="9058" id="9058" class="graf graf--li graf-after--li">npx sequelize-cli seed:generate — name add-cats</li>
                                 <li name="d2cf" id="d2cf" class="graf graf--li graf-after--li">
                                     up indicates what to create when we seed our database, down indicates what to delete if we want to unseed the database.
                                 </li>
@@ -1162,7 +1196,7 @@ npx sequelize-cli model:generate — name Cat — attributes “firstName:string
                                 <li name="aa61" id="aa61" class="graf graf--li graf-after--li">{ where: { field: value } } =&gt; WHERE field = value</li>
                             </ul>
                             <pre name="c50b" id="c50b" class="graf graf--pre graf-after--li">
-const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.log(JSON.stringify(cats, null, 2));</pre
+const cats = await Cat.findAll({ where: { firstName: "Markov" } }); console.log(JSON.stringify(cats, null, 2));</pre
                             >
                             <p name="3bf9" id="3bf9" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">OR in the WHERE clause</strong>
@@ -1179,7 +1213,9 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 name="aa84"
                                 id="aa84"
                                 class="graf graf--pre graf-after--p"
-                            >const cats = await Cat.findAll({ where: { firstName: [“Markov”, “Curie”] } });const cats = await Cat.findAll({<br>    where: {<br>        firstName: &quot;Markov&quot;,<br>        age: 4<br>    }<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
+                            >const cats = await Cat.findAll({ where: { firstName: ["Markov", "Curie"] } });const cats =
+                            await Cat.findAll({<br> where: {<br> firstName: &quot;Markov&quot;,<br> age: 4<br>
+                            }<br>});<br>console.log(JSON.stringify(cats, null, 2));</pre>
                             <pre name="2363" id="2363" class="graf graf--pre graf-after--pre">console.log(JSON.stringify(cats, null, 2));</pre>
                             <p name="942b" id="942b" class="graf graf--p graf-after--pre">
                                 <strong class="markup--strong markup--p-strong">AND in the WHERE clause</strong>
@@ -1197,7 +1233,7 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 <li name="dd6a" id="dd6a" class="graf graf--li graf-after--h3">
                                     By requiring Op from the sequelize library we can provide more advanced comparison operators
                                 </li>
-                                <li name="0a01" id="0a01" class="graf graf--li graf-after--li">const { Op } = require(“sequelize”);</li>
+                                <li name="0a01" id="0a01" class="graf graf--li graf-after--li">const { Op } = require("sequelize");</li>
                                 <li name="8936" id="8936" class="graf graf--li graf-after--li">Op.ne: Not equal operator</li>
                             </ul>
                             <pre
@@ -1237,7 +1273,7 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 </li>
                                 <li name="f9f9" id="f9f9" class="graf graf--li graf-after--li">
                                     const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order:
-                                    [[“age”, “DESC”], “firstName”], }); console.log(JSON.stringify(cats, null, 2));
+                                    [["age", "DESC"], "firstName"], }); console.log(JSON.stringify(cats, null, 2));
                                 </li>
                             </ul>
                             <pre
@@ -1270,7 +1306,8 @@ const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.
                                 </li>
                             </ul>
                             <pre name="f26a" id="f26a" class="graf graf--pre graf-after--li">
-// finds the oldest cat const cat = await Cat.findOne({ order: [[“age”, “DESC”]], }); console.log(JSON.stringify(cat, null, 2));</pre
+// finds the oldest cat const cat = await Cat.findOne({ order: [["age", "DESC"]], }); console.log(JSON.stringify(cat,
+null, 2));</pre
                             >
                             <ul class="postList">
                                 <li name="3bc7" id="3bc7" class="graf graf--li graf-after--pre">
@@ -1480,8 +1517,16 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre
                             >await Pet.findByPk(1, {<br>        include: [Pet, Owner]<br>    })</pre>
                             <p name="8186" id="8186" class="graf graf--p graf-after--pre">
                                 Include can also take an object with keys <code class="markup--code markup--p-code">model</code> and
-                                <code class="markup--code markup--p-code">include</code>.<br />This is in case you have nested associations.<br />In this case
-                                Owner doesn&#39;t have an association with PetType, but<br />Pet does, so we want to include PetType onto the Pet Model.
+                                <code class="markup--code markup--p-code">include</code>.
+                                <br />
+
+                                This is in case you have nested associations.
+                                <br />
+
+                                In this case Owner doesn&#39;t have an association with PetType, but
+                                <br />
+
+                                Pet does, so we want to include PetType onto the Pet Model.
                             </p>
                             <pre
                                 name="e81d"
@@ -1491,7 +1536,10 @@ Class.hasMany(models.Student, { foreignKey: &#39;classId&#39; });</pre
                             <h3 name="2a72" id="2a72" class="graf graf--h3 graf-after--pre">toJSON method</h3>
                             <p name="d5d1" id="d5d1" class="graf graf--p graf-after--h3">
                                 The confusingly named toJSON() method does <strong class="markup--strong markup--p-strong">not</strong> return a JSON string but
-                                instead<br />returns a POJO for the instance.
+                                instead
+                                <br />
+
+                                returns a POJO for the instance.
                             </p>
                             <pre
                                 name="40f4"
@@ -1616,9 +1664,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                             <h3 name="219c" id="219c" class="graf graf--h3 graf-after--p">Documentation</h3>
                             <p name="17c9" id="17c9" class="graf graf--p graf-after--h3">
                                 For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these
-                                are the specific sections with just the lists:<br /><strong class="markup--strong markup--p-strong"
-                                    >Sequelize Data Types:</strong
-                                >
+                                are the specific sections with just the lists:
+                                <br />
+
+                                <strong class="markup--strong markup--p-strong">Sequelize Data Types:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/data-types.html"
                                     data-href="https://sequelize.org/v5/manual/data-types.html"
@@ -1626,7 +1675,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/data-types.html</em></a
-                                ><br /><strong class="markup--strong markup--p-strong">Validations:</strong>
+                                >
+                                <br />
+
+                                <strong class="markup--strong markup--p-strong">Validations:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/models-definition.html#validations"
                                     data-href="https://sequelize.org/v5/manual/models-definition.html#validations"
@@ -1634,10 +1686,14 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/models-definition.html#validations</em></a
-                                ><br />When you access the data in your queries, here are the operators available, again because the docs are hard to navigate,
-                                this is the specific section with the list of operators.<br /><strong class="markup--strong markup--p-strong"
-                                    >Operators:</strong
                                 >
+                                <br />
+
+                                When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is
+                                the specific section with the list of operators.
+                                <br />
+
+                                <strong class="markup--strong markup--p-strong">Operators:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/querying.html#operators"
                                     data-href="https://sequelize.org/v5/manual/querying.html#operators"
@@ -1645,9 +1701,15 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     rel="noopener"
                                     target="_blank"
                                     ><em class="markup--em markup--p-em">https://sequelize.org/v5/manual/querying.html#operators</em></a
-                                ><br />The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of
+                                >
+                                <br />
+
+                                The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of
                                 explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they
-                                mean an item stored in your table.<br /><strong class="markup--strong markup--p-strong">Create/Update/Destroy:</strong>
+                                mean an item stored in your table.
+                                <br />
+
+                                <strong class="markup--strong markup--p-strong">Create/Update/Destroy:</strong>
                                 <a
                                     href="https://sequelize.org/v5/manual/instances.html"
                                     data-href="https://sequelize.org/v5/manual/instances.html"
@@ -1666,8 +1728,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://gist.github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://gist.github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz's gists</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you
                                         need…</em
                                     >gist.github.com</a
@@ -1685,8 +1749,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://github.com/bgoonz"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://github.com/bgoonz"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">bgoonz — Overview</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em"
                                         >Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em
                                     >github.com</a
                                 ><a
@@ -1705,10 +1771,10 @@ const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle So
                                     data-href="https://goofy-euclid-1cd736.netlify.app/"
                                     class="markup--anchor markup--mixtapeEmbed-anchor"
                                     title="https://goofy-euclid-1cd736.netlify.app/"
-                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong><br /><em
-                                        class="markup--em markup--mixtapeEmbed-em"
-                                        >Edit description</em
-                                    >goofy-euclid-1cd736.netlify.app</a
+                                    ><strong class="markup--strong markup--mixtapeEmbed-strong">a/A-Student-Resources</strong>
+                                    <br />
+
+                                    <em class="markup--em markup--mixtapeEmbed-em">Edit description</em>goofy-euclid-1cd736.netlify.app</a
                                 ><a
                                     href="https://goofy-euclid-1cd736.netlify.app/"
                                     class="js-mixtapeImage mixtapeImage u-ignoreBlock"

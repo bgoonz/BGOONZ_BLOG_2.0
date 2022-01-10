@@ -8,12 +8,9 @@ JAMstack websites don't use the microservices architecture, but they go for the 
 
 #### JAMstack websites don't use the microservices architecture, but they go for the <a href="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/" class="markup--anchor markup--h4-anchor" title="https://relevant.software/blog/scale-frontend-micro-frontends-architecture/">micro frontends architecture</a>. Each static page with HTML and JavaScript is a micro frontend. And they can use any REST API, including the one built on the <a href="https://relevant.software/blog/microservices-on-aws/" class="markup--anchor markup--h4-anchor">microservices</a> architecture.
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
-
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kFwbfuUYkD3-jQq-.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*ScYd6pUibdFOSaiSuJsaTA.png" class="graf-image" /></figure>### JAM stands for JavaScript, API & Markup.
 
-> _“A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup”_
+> _"A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup"_
 
 > _— Mathias Biilmann (CEO & Co-founder of Netlify)._
 
@@ -80,7 +77,7 @@ Jamstack sites might utilise such services at build time, and also at run time d
 
 But why does this templating operation need to happen on the server? Do we _really_ need databases and server-side software (which opens up dozens of security holes along the way) just to create a simple blog? At a time when browsers themselves have become operating systems, capable of interacting with countless APIs and running complex applications client-side, and when front-end development is dominated by JavaScript-based automation using npm, haven't we outgrown this model?
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*zUEq7vaq3GKgq1dr.png" class="graf-image" /></figure>Static site generators like Jekyll and Hugo are part of what makes this possible. They essentially replace PHP as our templating system, but instead of running on a server and generating content on-the-fly, they **run locally** as part of your development process. Your HTML is generated up-front, and your website — now a collection of easily-cached static files — can be distributed to users by a blisteringly fast CDN (content distribution network).
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*zUEq7vaq3GKgq1dr.png" class="graf-image" /></figure>Static site generators like Jekyll and Hugo are part of what makes this possible. They essentially replace PHP as our templating system, but instead of running on a server and generating content on-the-fly, they **run locally** as part of your development process. Your HTML is generated up-front, and your website — now a collection of easily-cached static files — can be distributed to users by a blisteringly fast CDN (content distribution network).
 
 > <a href="https://builtvisible.com/go-static-try-jamstack/" class="markup--anchor markup--blockquote-anchor">-source</a>
 

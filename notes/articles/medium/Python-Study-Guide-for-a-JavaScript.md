@@ -25,7 +25,7 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… "-SickNasty … Autor Unknown"_
 
 ---
 
@@ -88,8 +88,8 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
--   <span id="03b4">_“//” : Integer Division._</span>
+-   <span id="8cf4">_"\*\*" : Double asterisk for exponent._</span>
+-   <span id="03b4">_"//" : Integer Division._</span>
 -   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
@@ -114,23 +114,23 @@ No Decimal Point
 
 **Use the** `len()` **function to get the length of a string.**
 
-    print(len(“Spaghetti”)) # => 9
+    print(len("Spaghetti")) # => 9
 
 ### **Python uses** `zero-based indexing`
 
 #### Python allows negative indexing (thank god!)
 
-    print(“Spaghetti”[-1]) # => i
+    print("Spaghetti"[-1]) # => i
 
-    print(“Spaghetti”[-4]) # => e
+    print("Spaghetti"[-4]) # => e
 
 -   <span id="7567">Python let's you use ranges</span>
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
-    print(“Spaghetti”[1:4]) # => pag
-    print(“Spaghetti”[4:-1]) # => hett
-    print(“Spaghetti”[4:4]) # => (empty string)
+    print("Spaghetti"[1:4]) # => pag
+    print("Spaghetti"[4:-1]) # => hett
+    print("Spaghetti"[4:4]) # => (empty string)
 
 -   <span id="1366">The end range is exclusive just like `slice` in JS.</span>
 
@@ -166,7 +166,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     '''.count('the '))                # => 4
 
 -   <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
--   <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
+-   <span id="ed0a">**You can also use "\*" to repeat strings or multiply strings.**</span>
 -   <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
 
 <!-- -->
@@ -829,7 +829,7 @@ _Prints Key: color Value: red_
 
 **Looping over string**
 
-    for c in “abcdefg”:
+    for c in "abcdefg":
     print(c)
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
@@ -845,7 +845,7 @@ _keyword args with default values_
     def example(arg_1, arg_2, *args, **kwargs):
     pass
 
-    def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
+    def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):
     pass
 
 ---
@@ -912,29 +912,39 @@ sets were killed in favor of set() class.**
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
+<br/>
+
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Python Cheat Sheet:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/5cfdf3d2bdfb).

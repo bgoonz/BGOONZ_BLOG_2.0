@@ -77,7 +77,9 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
 
 `Equality`

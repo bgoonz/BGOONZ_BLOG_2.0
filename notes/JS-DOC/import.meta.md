@@ -53,8 +53,12 @@ Such file-specific argument passing may be complementary to that used in the app
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript)<br />
-<span class="small">#prod-ImportMeta</span></a></td></tr><tr class="even"><td><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#prod-ImportMeta</span></a></td></tr><tr class="even"><td><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)
+<br/>
+
 <span class="small">#hostgetimportmetaproperties</span></a></td></tr></tbody></table>
 
 `import.meta`

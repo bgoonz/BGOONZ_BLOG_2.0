@@ -10,8 +10,10 @@ Basic Git Work Flow.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*68fyM5AI85U_I3vo.jpg" class="graf-image" /></figure>For More Advanced Readers, or those with very limited free time… here's an abridged Git Reference.
 
-<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong><br />
-<em>Refs</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/git-tricks-57e8d0292285"><strong>Git-Tricks</strong>
+<br/>
+
+<em>Refs</em><a href="https://bryanguner.medium.com/git-tricks-57e8d0292285" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### What's a distributed version control system?
 
@@ -29,7 +31,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 ### Table Of Contents:
 
-<a href="#editing-understanding-git-a-beginners-guide-containing-cheat-sheets--resources--medium" class="markup--anchor markup--p-anchor"><em>Editing Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources) — Medium</em></a>
+<a href="#editing-understanding-git-a-beginners-guide-containing-cheat-sheets--resources--medium" class="markup--anchor markup--p-anchor"><em>Editing Understanding Git (A Beginners Guide Containing Cheat Sheets &amp; Resources) — Medium</em></a>
 
 > <a href="#whats-a-distributed-version-controlsystem" class="markup--anchor markup--blockquote-anchor"><strong><em>What's a distributed version control system?</em></strong></a>
 
@@ -99,7 +101,7 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 
 > `working-on-the-header`
 
-> <a href="#golden-rule-ofgit" class="markup--anchor markup--blockquote-anchor"><em>“Golden Rule of Git”</em></a>
+> <a href="#golden-rule-ofgit" class="markup--anchor markup--blockquote-anchor"><em>"Golden Rule of Git"</em></a>
 
 > **How 2's**
 
@@ -132,13 +134,13 @@ Working in repositories keeps development projects organized and protected. Deve
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*jk3-RTC0rRV_OF931B4Fsg.png" class="graf-image" /></figure>### 3. Next,
 
-**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
+**_copy the .git link that is on the next page. Do not do any other steps on this page — That is for when you do not clone a repo._**
 
 ---
 
 ### These are the commands GitHub provides when you create a new Repo:
 
-#### Quick setup — if you've done this kind of thing before
+#### Quick setup — if you've done this kind of thing before
 
 Set up in Desktop
 
@@ -198,20 +200,22 @@ OR:
 
 ### My Git Reference Repo:
 
-<a href="https://github.com/bgoonz/github-reference-repo" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/github-reference-repo"><strong>bgoonz/github-reference-repo</strong><br />
+<a href="https://github.com/bgoonz/github-reference-repo" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/github-reference-repo"><strong>bgoonz/github-reference-repo</strong>
+<br/>
+
 <em>Cloning a repo and changing the remote url Basic Git Workflow (These steps are only for when you initially clone a…</em>github.com</a><a href="https://github.com/bgoonz/github-reference-repo" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Git basics
 
 Like many disciplines, learning Git is just a matter of learning a new language. You'll cover a lot of new vocabulary in this lesson! Remember that the vocabulary you'll learn will allow you to communicate clearly with other developers worldwide, so it's important to understand the meaning of each term.
 
-It's also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you'll focus on the commands you'll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you're getting started.
+It's also important to note that Git is a complex and powerful tool. As such, its documentation and advanced examples may be tough to understand. As your knowledge grows, you may choose to dive deeper into Git. Today, you'll focus on the commands you'll use every day — possibly for the rest of your programming career! Get comfortable with these commands and resist the urge to copy/paste or create keyboard shortcuts as you're getting started.
 
 ### A glance into GIT
 
 Before you look at any practical examples, let's talk about how Git works behind the scenes.
 
-Here is your first new word in Git-speak: _repository_, often shortened to _repo_. A Git repo comprises all the source code for a particular project. In the “dark ages” example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code shared to others. Without a repo, Git has nothing to act on.
+Here is your first new word in Git-speak: _repository_, often shortened to _repo_. A Git repo comprises all the source code for a particular project. In the "dark ages" example above, the repo is the first directory you created, where work is saved to, and which acts as the source for code shared to others. Without a repo, Git has nothing to act on.
 
 Git manages your project as a series of _commits_. A commit is a collection of changes grouped towards a shared purpose. By tracking these commits, you can see your project on a timeline instead of only as a finished project:
 
@@ -219,11 +223,11 @@ Git manages your project as a series of _commits_. A commit is a collection of c
 
 A Git hash is 40 characters long, but you only need the first few characters to identify which hash you're referring to. By default, Git abbreviates hashes to 7 characters. You'll follow this convention, too.
 
-Git provides a helpful way for us to “alias” a commit in plain English as well. These aliases are called _refs_, short for “references”. A special one that Git creates for all repositories is `HEAD`, which references the most recent commit. You'll learn more about creating your own refs when you learn about "branching".
+Git provides a helpful way for us to "alias" a commit in plain English as well. These aliases are called _refs_, short for "references". A special one that Git creates for all repositories is `HEAD`, which references the most recent commit. You'll learn more about creating your own refs when you learn about "branching".
 
 Git maintains three separate lists of changes: the _working directory_, the _staging area_, and the _commit history_. The working directory includes all of your in-progress changes, the staging area is reserved for changes you're ready to commit, and the commit history is made up of changes you've already committed. You'll look more at these three lists soon.
 
-Git only cares about changes that are “tracked”. To track a file, you must add it to the commit history. The working directory will always show the changes, even if they aren't tracked. In the commit history, you'll only have a history of files that have been formally tracked by your repository.
+Git only cares about changes that are "tracked". To track a file, you must add it to the commit history. The working directory will always show the changes, even if they aren't tracked. In the commit history, you'll only have a history of files that have been formally tracked by your repository.
 
 ### Tracking changes in a repository
 
@@ -249,13 +253,13 @@ What good is an empty repo? Not much! To add content to your repository, use `gi
 
     > git add .
 
-Adding a file (or files) moves them from Git's working directory to the staging area. You can see what's been “staged” and what hasn't by using `git status`:
+Adding a file (or files) moves them from Git's working directory to the staging area. You can see what's been "staged" and what hasn't by using `git status`:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*iiehU7FvC-JK90x6Fr0q6g.png" class="graf-image" /></figure>In this example, “Changes to be committed” is your staging area and “Changes not staged for commit” is your working directory. Notice that you also have “Untracked files”, Git's way of reminding us that you may have forgotten to `git add` a file to your repo. Most Git commands will include a bit of help text in the output, so always read the messages carefully before moving forward. Thanks, Git!
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*iiehU7FvC-JK90x6Fr0q6g.png" class="graf-image" /></figure>In this example, "Changes to be committed" is your staging area and "Changes not staged for commit" is your working directory. Notice that you also have "Untracked files", Git's way of reminding us that you may have forgotten to `git add` a file to your repo. Most Git commands will include a bit of help text in the output, so always read the messages carefully before moving forward. Thanks, Git!
 
 Once you're happy with your files and have staged them, you'll use `git commit` to push them into the commit history. It's significantly more work to make changes after a commit, so be sure your files are staged and exactly as you'd like them before running this command. Your default text editor will pop up, and you'll be asked to enter a commit message for this group of changes.
 
-**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you'll discuss in the near future. It's visually bare and may just look like terminal text to you! If this happens, don't worry — just type `:q` and press your "return" key to exit.
+**Heads Up:** You may find yourself in an unfamiliar place! The default text editor for MacOS (and many variants of Linux) is called _Vim_. Vim is a terminal-based text editor you'll discuss in the near future. It's visually bare and may just look like terminal text to you! If this happens, don't worry — just type `:q` and press your "return" key to exit.
 
 You'll want to ensure that future commit messages open in a more familiar editor. You can run the following commands in your terminal to ensure that Visual Studio Code is your `git commit` editor from now on:
 
@@ -271,7 +275,7 @@ Once you close your editor, the commit will be added to your repository's commit
 
     > git commit -m "Fix typo"
 
-This will commit your changes with the message “Fix typo” and avoid opening your default text editor. Remember the commit messages are how you make your project's history friendly to humans, so don't use the `-m` flag as an excuse to write lame commit messages! A commit message should always explain why changes were made in clear, concise language. It is also best practice to use imperative voice in commit messages (i.e. use "Fix typo" instead of "Fixing the typo" or "Typo was fixed").
+This will commit your changes with the message "Fix typo" and avoid opening your default text editor. Remember the commit messages are how you make your project's history friendly to humans, so don't use the `-m` flag as an excuse to write lame commit messages! A commit message should always explain why changes were made in clear, concise language. It is also best practice to use imperative voice in commit messages (i.e. use "Fix typo" instead of "Fixing the typo" or "Typo was fixed").
 
 ### Branches and workflow
 
@@ -305,7 +309,7 @@ As you can imagine, branching can get _very_ complicated. Your repository's hist
 
 ### Connect-W-Github
 
-Git can act as a great history tool and source code backup for your local projects, but it can also help you work with a team! Git is classified as a “DVCS”, or “Distributed Version Control System”. This means it has built-in support for managing code both locally and from a distant source.
+Git can act as a great history tool and source code backup for your local projects, but it can also help you work with a team! Git is classified as a "DVCS", or "Distributed Version Control System". This means it has built-in support for managing code both locally and from a distant source.
 
 You can refer to a repository source that's not local as a _remote_. Your Git repository can have any number of remotes, but you'll usually only have one. By default you'll refer to the primary remote of a repo as the `origin`.
 
@@ -351,7 +355,7 @@ You now know how to push your changes up, but what about getting the changes you
 
 If you're paying close attention, you may have noticed that there's a missing step in your workflows so far: how do you get your code merged into your default branch? This is done by a process called a _Pull Request_.
 
-A pull request (or “PR”) is a feature specific to GitHub, not a feature of Git. It's a safety net to prevent bugs, and it's a critical part of the collaboration workflow. Here's a high-level of overview of how it works:
+A pull request (or "PR") is a feature specific to GitHub, not a feature of Git. It's a safety net to prevent bugs, and it's a critical part of the collaboration workflow. Here's a high-level of overview of how it works:
 
 You push your code up to GitHub in its own branch.
 
@@ -373,13 +377,13 @@ You'll create and manage your pull requests via GitHub's web portal, instead of 
 
 ### Browsing Your Git Repository
 
-Repositories can feel intimidating at first, but it won't take you long to navigate code like you own the place — because you do! Let's discuss a few tools native to Git that help us browse our changes over time.
+Repositories can feel intimidating at first, but it won't take you long to navigate code like you own the place — because you do! Let's discuss a few tools native to Git that help us browse our changes over time.
 
 We'll be covering:
 
 Comparing changes with `git diff`
 
-Browsing through our code “checkpoints” with `git checkout`
+Browsing through our code "checkpoints" with `git checkout`
 
 ### Seeing changes in real time
 
@@ -401,7 +405,7 @@ In the code itself, lines that were removed are prefixed with a `-` and lines th
 
 Remember that, by default, `git diff` compares the current working directory to the last commit. You can compare the staging area instead of the working directory with `git diff --staged`. This is another great way to double-check your work before pushing up to a remote branch.
 
-You're also not limited to your current branch — or even your current commit! You can pass a base & target branch to compare, and you can use some special characters to help you browse faster! Here are a few examples:
+You're also not limited to your current branch — or even your current commit! You can pass a base & target branch to compare, and you can use some special characters to help you browse faster! Here are a few examples:
 
     # See differences between the 'feature'
 
@@ -461,7 +465,7 @@ That said, you'll likely use shortcuts like `git checkout -` far more often than
 
 ### Git 'Do-Overs': Reset & Rebase
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you'd like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and “time travel”.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*5yBLWI2EMAqgm01n.jpg" class="graf-image" /></figure>Git is designed to protect you — not only from others, but also from yourself! Of course, there are times where you'd like to exercise your own judgement, even if it may not be the best thing to do. For this, Git provides some helpful tools to change commits and "time travel".
 
 Before we talk about these, a warning: **The commands in this lesson are destructive!** If used improperly, you could lose work, damage a teammate's branch, or even rewrite the history of your entire project. You should exercise caution when using these on production code, and don't hesitate to ask for help if you're unsure what a command might do.
 
@@ -489,7 +493,7 @@ A soft reset will move our `HEAD` ref to the commit we've specified, and will le
 
 This means you won't lose any code, though you will lose commit messages.
 
-A practical example of when a soft reset would be handy is joining some small commits into a larger one. We'll pretend we've been struggling with “their”, “there”, and “they're” in our app. Here's our commit history:Those commit messages aren't great: they're not very explanatory, and they don't provide a lot of value in our commit history. We'll fix them with a soft reset:
+A practical example of when a soft reset would be handy is joining some small commits into a larger one. We'll pretend we've been struggling with "their", "there", and "they're" in our app. Here's our commit history:Those commit messages aren't great: they're not very explanatory, and they don't provide a lot of value in our commit history. We'll fix them with a soft reset:
 
     git reset --soft 9c5e2fc
 
@@ -505,9 +509,9 @@ If soft resets are the safest form of `git reset`, mixed resets are the most ave
 
 In a mixed reset, your changes are preserved, but they're moved from the commit history directly to the working directory. This means you'll have to use `git add` to choose everything you want in future commits.
 
-Mixed resets are a good option when you want to alter a change in a previous commit. Let's use a mixed reset with our “their”, “there”, “they're” example again.
+Mixed resets are a good option when you want to alter a change in a previous commit. Let's use a mixed reset with our "their", "there", "they're" example again.
 
-We'll start with “they're”:
+We'll start with "they're":
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*I71W4NpNdNz8NPr7i2tcAQ.png" class="graf-image" /></figure>Notice again that you don't lose your code with a mixed reset, but you do lose your commit messages & hashes. The difference between `--soft` and `--mixed` comes down to whether you'll be keeping the code exactly the same before re-committing it or making changes.
 
@@ -517,7 +521,7 @@ Hard resets are the most dangerous type of reset in Git. Hard resets adjust your
 
 There are very few good uses for a hard reset, but one is to get yourself out of a tight spot. Let's say you've made a few changes to your repository but you now realize those changes were unnecessary. You'd like to move back in time so that your code looks exactly as it did before any changes were made. `git reset --hard` can take you there.
 
-It's our last round with “their”, “there”, and “they're”. We've tried it all three ways and decided we don't need to use that word at all! Let's walk through a hard reset to get rid of our changes.
+It's our last round with "their", "there", and "they're". We've tried it all three ways and decided we don't need to use that word at all! Let's walk through a hard reset to get rid of our changes.
 
 We'll start in the same place we began for our soft reset:
 
@@ -527,7 +531,7 @@ We'll start in the same place we began for our soft reset:
 
 Our Git log output is much simpler now:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*1NovgUyM_ed7h5MozcBY-g.png" class="graf-image" /></figure>It's empty — no changes in your working directory and no changes in your staging area. This is major difference between a hard reset and a soft/mixed reset: you will lose *all your changes* back to the commit you've reset to.
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*1NovgUyM_ed7h5MozcBY-g.png" class="graf-image" /></figure>It's empty — no changes in your working directory and no changes in your staging area. This is major difference between a hard reset and a soft/mixed reset: you will lose *all your changes* back to the commit you've reset to.
 
 If your teammate came rushing in to tell you that the boss has changed their mind and wants that homepage text after all, you're going to be re-doing all that work! Be very confident that the changes you're losing are unimportant before embarking on a hard reset.
 
@@ -559,13 +563,13 @@ We can use `git rebase` to move our changes silently onto the latest version of 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*1cH8OazC0L0pxZzfCdwXog.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*GswbfYSlQ3q0VeCdv29cww.png" class="graf-image" /></figure>### `working-on-the-header`
 
-See how we changed the color of our commits after the rebase? Take a close look at the commit history changes as well. Even though our commits have the same content, they have a new hash assigned, meaning they're entirely new commits! This is what we mean by “rewriting history”: we've actually changed how Git refers to these changes now.
+See how we changed the color of our commits after the rebase? Take a close look at the commit history changes as well. Even though our commits have the same content, they have a new hash assigned, meaning they're entirely new commits! This is what we mean by "rewriting history": we've actually changed how Git refers to these changes now.
 
-### “Golden Rule of Git”
+### "Golden Rule of Git"
 
 These tools can all feel pretty nifty, but be very wary of using them too much! While they can augment your Git skills from good to great, they can also have catastrophic side effects.
 
-There's a “Golden Rule of Git” you should know that directly relates to both `git reset` and `git rebase`:
+There's a "Golden Rule of Git" you should know that directly relates to both `git reset` and `git rebase`:
 
 **_Never change the history of a branch that's shared with others._**
 
@@ -671,7 +675,7 @@ This command will cause the Git log to show some statistics about the changes in
 
     git log --stat
 
-### How to see changes made before committing them using “diff” in Git:
+### How to see changes made before committing them using "diff" in Git:
 
 You can pass a file as a parameter to only see changes on a specific file.  
 `git diff` shows only unstaged changes by default.
@@ -682,7 +686,7 @@ We can call diff with the `--staged` flag to see any staged changes.
     git diff all_checks.py
     git diff --staged
 
-### How to see changes using “git add -p”:
+### How to see changes using "git add -p":
 
 This command opens a prompt and asks if you want to stage changes or not, and includes other options.
 
@@ -738,7 +742,7 @@ You can revert an old commit using its commit id. This opens the editor so you c
 
 ### How to create a new branch in Git:
 
-By default, you have one branch, the main branch. With this command, you can create a new branch. Git won't switch to it automatically — you will need to do it manually with the next command.
+By default, you have one branch, the main branch. With this command, you can create a new branch. Git won't switch to it automatically — you will need to do it manually with the next command.
 
     git branch branch_name
 
@@ -975,7 +979,7 @@ Configuring both the client and the server is unnecessary.
 
 -   <span id="7ae1">On UNIX, edit `~/.ssh/config` (create the file if it doesn't exist) and add or edit:</span>
 -   <span id="542f">`Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`</span>
--   <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to “Connection” and under “Sending of null packets to keep session active”, set `Seconds between keepalives (0 to turn off)` to `60`.</span>
+-   <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to "Connection" and under "Sending of null packets to keep session active", set `Seconds between keepalives (0 to turn off)` to `60`.</span>
 
 **To configure SSH on the server side**, edit `/etc/ssh/sshd_config` and add:
 
@@ -1055,15 +1059,21 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 12, 2021](https://medium.com/p/b50c9c01a107).

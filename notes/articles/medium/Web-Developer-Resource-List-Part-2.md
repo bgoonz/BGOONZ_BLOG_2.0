@@ -56,7 +56,7 @@ Because I compile these things compulsively anyway…
 
 ### Data Science
 
--   <span id="cf4c"><a href="https://github.com/bulutyazilim/awesome-datascience" class="markup--anchor markup--li-anchor">bulutyazilim — datascience awesome list</a></span>
+-   <span id="cf4c"><a href="https://github.com/bulutyazilim/awesome-datascience" class="markup--anchor markup--li-anchor">bulutyazilim — datascience awesome list</a></span>
 
 ### Grafana
 
@@ -72,8 +72,8 @@ Logging:
 
 Metrics:
 
--   <span id="52cc"><a href="https://github.com/stefanprodan/swarmprom" class="markup--anchor markup--li-anchor">StefanProdan — Prometheus, Grafana, cAdvisor, Node Exporter and Alert Manager</a></span>
--   <span id="d0e5"><a href="https://github.com/mlabouardy/swarm-tick" class="markup--anchor markup--li-anchor">Mlabouardy — Telegraf, InfluxDB, Chronograf, Kapacitor &amp; Slack</a></span>
+-   <span id="52cc"><a href="https://github.com/stefanprodan/swarmprom" class="markup--anchor markup--li-anchor">StefanProdan — Prometheus, Grafana, cAdvisor, Node Exporter and Alert Manager</a></span>
+-   <span id="d0e5"><a href="https://github.com/mlabouardy/swarm-tick" class="markup--anchor markup--li-anchor">Mlabouardy — Telegraf, InfluxDB, Chronograf, Kapacitor &amp; Slack</a></span>
 
 #### Awesome Docker Repos
 
@@ -147,9 +147,9 @@ Metrics:
 
 #### Prometheus / Grafana on Swarm:
 
--   <span id="f482"><a href="https://github.com/stefanprodan/swarmprom" class="markup--anchor markup--li-anchor">StefanProdan — SwarmProm</a></span>
+-   <span id="f482"><a href="https://github.com/stefanprodan/swarmprom" class="markup--anchor markup--li-anchor">StefanProdan — SwarmProm</a></span>
 -   <span id="6ded"><a href="https://medium.com/@soumyadipde/monitoring-in-docker-stacks-its-that-easy-with-prometheus-5d71c1042443" class="markup--anchor markup--li-anchor">Monitoring with Prometheus</a></span>
--   <span id="2631"><a href="https://github.com/uschtwill/docker_monitoring_logging_alerting" class="markup--anchor markup--li-anchor">UschtWill — Prometheus Grafana Elastalert</a></span>
+-   <span id="2631"><a href="https://github.com/uschtwill/docker_monitoring_logging_alerting" class="markup--anchor markup--li-anchor">UschtWill — Prometheus Grafana Elastalert</a></span>
 -   <span id="2849"><a href="https://github.com/chmod666org/docker-swarm-prometheus" class="markup--anchor markup--li-anchor">Chmod-Org Promethus with Blackbox</a></span>
 -   <span id="3995"><a href="https://finestructure.co/blog/2016/5/16/monitoring-with-prometheus-grafana-docker-part-1" class="markup--anchor markup--li-anchor">Finestructure: Prometheus Tutorial</a></span>
 
@@ -178,7 +178,7 @@ Metrics:
 
 #### Jenkins
 
--   <span id="e55e"><a href="https://modess.io/jenkins-php/" class="markup--anchor markup--li-anchor">Modess — PHP with Jenkins</a></span>
+-   <span id="e55e"><a href="https://modess.io/jenkins-php/" class="markup--anchor markup--li-anchor">Modess — PHP with Jenkins</a></span>
 -   <span id="e077"><a href="https://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511" class="markup--anchor markup--li-anchor">CI/CD Nodejs Tutorial with Jenkins</a></span>
 -   <span id="8663"><a href="https://medium.com/@mosheezderman/how-to-set-up-ci-cd-pipeline-for-a-node-js-app-with-jenkins-c51581cc783c" class="markup--anchor markup--li-anchor">CI/CD Nodejs Tutorial with Jenkins @medium</a></span>
 -   <span id="c17d"><a href="https://github.com/shazChaudhry/docker-swarm-mode" class="markup--anchor markup--li-anchor">Epic CICD workflow with Jenkins, Gitlab, Sonar, Nexus</a></span>
@@ -190,7 +190,7 @@ Metrics:
 #### Travis-CI
 
 -   <span id="5050"><a href="https://docs.travis-ci.com/user/getting-started/" class="markup--anchor markup--li-anchor">Getting Started with Travis-CI (Original Docs)</a></span>
--   <span id="1f71"><a href="https://github.com/dwyl/learn-travis" class="markup--anchor markup--li-anchor">Getting Started with Travis-CI (dwyl — nodejs)</a></span>
+-   <span id="1f71"><a href="https://github.com/dwyl/learn-travis" class="markup--anchor markup--li-anchor">Getting Started with Travis-CI (dwyl — nodejs)</a></span>
 -   <span id="12a1"><a href="https://matthewmoisen.com/blog/how-to-set-up-travis-ci-with-github-for-a-python-project/" class="markup--anchor markup--li-anchor">Blog Site with Travis-CI (Python)</a></span>
 -   <span id="74dd"><a href="https://github.com/softwaresaved/build_and_test_examples/blob/master/travis/HelloWorld.md" class="markup--anchor markup--li-anchor">Build Tests with Python on Travis-CI</a></span>
 -   <span id="0c8a"><a href="https://www.raywenderlich.com/109418/travis-ci-tutorial" class="markup--anchor markup--li-anchor">Moving app with Travis-CI</a></span>
@@ -222,7 +222,7 @@ Metrics:
 -   <span id="8921"><a href="https://www.elastic.co/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster" class="markup--anchor markup--li-anchor">How Many Shards in my Cluster</a></span>
 -   <span id="8e3f"><a href="https://www.elastic.co/blog/managing-time-based-indices-efficiently" class="markup--anchor markup--li-anchor">Managing Time-Based Indices Efficiently</a></span>
 -   <span id="bdc6"><a href="https://bonsai.io/2016/01/11/ideal-elasticsearch-cluster" class="markup--anchor markup--li-anchor">Elasticsearch Best Practices (Bonsai.io)</a></span>
--   <span id="300c"><a href="https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-scale-up/" class="markup--anchor markup--li-anchor">AWS ES — Scaling up my Domain</a></span>
+-   <span id="300c"><a href="https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-scale-up/" class="markup--anchor markup--li-anchor">AWS ES — Scaling up my Domain</a></span>
 
 #### Elasticsearch Cheetsheets:
 
@@ -422,8 +422,8 @@ Metrics:
 
 -   <span id="d7dc"><a href="https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/" class="markup--anchor markup--li-anchor">Ubuntu OpenVPN Script</a></span>
 -   <span id="2198"><a href="https://github.com/hwdsl2/setup-ipsec-vpn" class="markup--anchor markup--li-anchor">Ubuntu IPSec Script</a></span>
--   <span id="7fec"><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04" class="markup--anchor markup--li-anchor">DO — Setup OpenVPN on Ubuntu</a></span>
--   <span id="bbff"><a href="https://www.elastichosts.com/blog/linux-l2tpipsec-vpn-client/" class="markup--anchor markup--li-anchor">Elasticshosts — IPSec VPN</a></span>
+-   <span id="7fec"><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04" class="markup--anchor markup--li-anchor">DO — Setup OpenVPN on Ubuntu</a></span>
+-   <span id="bbff"><a href="https://www.elastichosts.com/blog/linux-l2tpipsec-vpn-client/" class="markup--anchor markup--li-anchor">Elasticshosts — IPSec VPN</a></span>
 -   <span id="43f7"><a href="https://github.com/bedefaced/vpn-install" class="markup--anchor markup--li-anchor">PPTP/IPSec/OpenVPN Auto Install</a></span>
 
 ### Website Templates
@@ -437,23 +437,29 @@ Metrics:
 #### Python Flask:
 
 -   <span id="a98a"><a href="https://gist.github.com/dAnjou/2874714" class="markup--anchor markup--li-anchor">Python Flask Upload Example</a></span>
--   <span id="2c23"><a href="https://github.com/humiaozuzu/awesome-flask#awesome-flask" class="markup--anchor markup--li-anchor">Awesome Flask — humiaozuzu</a></span>
--   <span id="b710"><a href="https://github.com/greyli?tab=repositories" class="markup--anchor markup--li-anchor">Awesome Flask Apps — Greyli</a></span>
+-   <span id="2c23"><a href="https://github.com/humiaozuzu/awesome-flask#awesome-flask" class="markup--anchor markup--li-anchor">Awesome Flask — humiaozuzu</a></span>
+-   <span id="b710"><a href="https://github.com/greyli?tab=repositories" class="markup--anchor markup--li-anchor">Awesome Flask Apps — Greyli</a></span>
 -   <span id="f396"><a href="https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https" class="markup--anchor markup--li-anchor">Flask over HTTPS (MG)</a></span>
 -   <span id="9d33"><a href="https://speakerdeck.com/mitsuhiko/advanced-flask-patterns-1" class="markup--anchor markup--li-anchor">Flask Advanced Patterns</a></span>
 -   <span id="adf1"><a href="https://github.com/tojrobinson/flask-mvc" class="markup--anchor markup--li-anchor">Flask MVC Boilerplate</a></span>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
+
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 19, 2021](https://medium.com/p/9c5cb56ab263).

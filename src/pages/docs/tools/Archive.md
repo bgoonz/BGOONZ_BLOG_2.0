@@ -28,6 +28,10 @@ template: docs
 <br>
 <hr>
 <br>
+ <iframe  style="z-index:-1!important; overflow:scroll;resize:both;"  width="400" height="575"
+            src="https://bgoonz.blogspot.com/"  
+           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
@@ -64,6 +68,18 @@ template: docs
 <br>
 <br>
 <br>
+<br>
+
+<h1>  Cloud Storage </h1>
+<br>
+
+<h2> Up to 1TB of cloud Storage for file sharing!</h2>
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="1000px" width="1300px">
+</iframe>
+
+<br>
+<br>
+<hr>
 <hr>
 <br>
 <br>

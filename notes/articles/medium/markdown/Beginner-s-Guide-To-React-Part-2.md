@@ -10,7 +10,9 @@ As I learn to build web applications in React I will blog about it in this serie
 
 #### For more resources visit:
 
-<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong><br />
+<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong>
+<br/>
+
 <em>A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…</em>github.com</a><a href="https://github.com/bgoonz/React_Notes_V3" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://gist.github.com/bgoonz/e07d9e7917ae9e98807358d1e7cc4a67" class="markup--anchor markup--p-anchor">Use this appendix to get any prerequisite concepts and terminology under your belt:</a>
@@ -23,12 +25,12 @@ As I learn to build web applications in React I will blog about it in this serie
 
 ### React Demo
 
--   <span id="91c8">ex1 — A Basic React Component</span>
--   <span id="78f6">ex2 — A Basic React Class Component</span>
--   <span id="1e73">ex3 — A Class Component with State</span>
--   <span id="ba57">ex4 — A Class Component that Updates State</span>
--   <span id="203a">ex5 — A Class Component that Iterates through State</span>
--   <span id="8087">ex6 — An Example of Parent and Child Components</span>
+-   <span id="91c8">ex1 — A Basic React Component</span>
+-   <span id="78f6">ex2 — A Basic React Class Component</span>
+-   <span id="1e73">ex3 — A Class Component with State</span>
+-   <span id="ba57">ex4 — A Class Component that Updates State</span>
+-   <span id="203a">ex5 — A Class Component that Iterates through State</span>
+-   <span id="8087">ex6 — An Example of Parent and Child Components</span>
 
 With regards to converting an existing HTML, CSS, and JS site into React, first you'll want to think about how to break up your site into components,
 
@@ -525,7 +527,7 @@ PropTypes allow you to declare the type (string, number, function, etc) of each 
 
 ### Excerpt from the React website:
 
-### React — A JavaScript library for building user interfaces
+### React — A JavaScript library for building user interfaces
 
 > _A JavaScript library for building user interfaces_
 
@@ -557,17 +559,23 @@ React allows you to interface with other libraries and frameworks. This example 
 
 React-Tutorial-1:
 
-<a href="https://replit.com/@bgoonz/react-tutorial-1" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/react-tutorial-1"><strong>react-tutorial-1</strong><br />
+<a href="https://replit.com/@bgoonz/react-tutorial-1" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/react-tutorial-1"><strong>react-tutorial-1</strong>
+<br/>
+
 <em>A React repl by bgoonz</em>replit.com</a><a href="https://replit.com/@bgoonz/react-tutorial-1" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 React Boilerplate:
 
-<a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js"><strong>React.js + Babel + Webpack Boilerplate</strong><br />
+<a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js"><strong>React.js + Babel + Webpack Boilerplate</strong>
+<br/>
+
 <em>Created by @eankeen | The ultimate trifecta - React, Babel, and Webpack - complete with hot module reloading and a…</em>replit.com</a><a href="https://replit.com/@bgoonz/Reactjs-Babel-Webpack-Boilerplate#index.js" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 For more resources visit:
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 19, 2021](https://medium.com/p/cda01615a186).

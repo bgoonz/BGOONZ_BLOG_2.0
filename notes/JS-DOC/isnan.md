@@ -74,7 +74,9 @@ You can use this, for example, to test whether an argument to a function is arit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262) 
+<br/>
+
 <span class="small">The definition of 'isNaN' in that specification.</span></a></td></tr></tbody></table>
 
 `isNaN`

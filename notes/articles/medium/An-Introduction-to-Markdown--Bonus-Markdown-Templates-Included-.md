@@ -6,7 +6,9 @@ Basic Syntax Guide
 
 ### An Introduction to Markdown (Bonus Markdown Templates Included)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png" class="graf-image" /></figure><a href="https://github.com/bgoonz/Markdown-Templates.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Markdown-Templates.git"><strong>bgoonz/Markdown-Templates</strong><br />
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png" class="graf-image" /></figure><a href="https://github.com/bgoonz/Markdown-Templates.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Markdown-Templates.git"><strong>bgoonz/Markdown-Templates</strong> 
+<br/>
+
 <em>One Paragraph of project description goes here These instructions will get you a copy of the project up and running on…</em>github.com</a><a href="https://github.com/bgoonz/Markdown-Templates.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Basic Syntax Guide
@@ -256,12 +258,16 @@ which gives you:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
+<br/>
+
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/3497ce56de3).

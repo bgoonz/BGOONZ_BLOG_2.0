@@ -38,7 +38,9 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#prod-BitwiseANDExpression</span></a></td></tr></tbody></table>
 
 `Bitwise_AND`

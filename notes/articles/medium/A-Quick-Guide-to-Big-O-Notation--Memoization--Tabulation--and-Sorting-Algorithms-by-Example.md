@@ -1,15 +1,17 @@
-# A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+# A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting
 
-Curating Complexity: A Guide to Big-O Notation
-
----
-
-### A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
+##  Curating Complexity: A Guide to Big-O Notation
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" /></figure>***Curating Complexity: A Guide to Big-O Notation***
 
-<a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong><br />
-<em>A Node.js repl by bgoonz</em>replit.com</a><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+---
+
+
+
+<a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong>
+<br/>
+
+**A Node.js repl by bgoonz**replit.com</a><a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 -   <span id="b70f">Why is looking at runtime not a reliable method of calculating time complexity?</span>
 -   <span id="2b21">Not all computers are made equal( some may be stronger and therefore boost our runtime speed )</span>
@@ -58,7 +60,7 @@ Common Complexity Classes
 
 #### `O(n) Linear`
 
-> **Linear algorithm's will access each item of the input “once”.**
+> **Linear algorithm's will access each item of the input "once".**
 
 ### `O(nlog(n)) Log Linear Time`
 
@@ -84,8 +86,8 @@ Common Complexity Classes
 -   <span id="2583">MZ stores the results of the sub-problems in some other data structure, so that we can avoid duplicate calculations and only 'solve' each problem once.</span>
 -   <span id="65c9">Two features that comprise memoization:</span>
 
-1.  <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
-2.  <span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span>
+1. <span id="b2d2">FUNCTION MUST BE RECURSIVE.</span>
+2. <span id="91a3">Our additional Data Structure is usually an object (we refer to it as our memo… or sometimes cache!)</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png" class="graf-image" /></figure>### Memoizing Factorial
 
@@ -101,15 +103,15 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 > _Rules:_
 
-1.  <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
-2.  <span id="b36e">_Add memo object as an additional argument ._</span>
-3.  <span id="f81f">_Add a base case condition that returns the stored value if the function's argument is in the memo._</span>
-4.  <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function's argument it's key._</span>
+1. <span id="b3f0">_Write the unoptimized brute force recursion (make sure it works);_</span>
+2. <span id="b36e">_Add memo object as an additional argument ._</span>
+3. <span id="f81f">_Add a base case condition that returns the stored value if the function's argument is in the memo._</span>
+4. <span id="1b0f">_Before returning the result of the recursive case, store it in the memo as a value and make the function's argument it's key._</span>
 
 #### Things to remember
 
-1.  <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
-2.  <span id="7bb1">_When you notice duplicate sub-tree's that means we can memoize._</span>
+1. <span id="bc4a">_When solving DP problems with Memoization, it is helpful to draw out the visual tree first._</span>
+2. <span id="7bb1">_When you notice duplicate sub-tree's that means we can memoize._</span>
 
 ---
 
@@ -173,7 +175,7 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 -   <span id="3cb1">_It's not efficient_</span>
 -   <span id="4eac">_It's not commonly used_</span>
 -   <span id="d730">_There is stigma attached to it_</span>
--   <span id="8da7">`Bubbling Up`_ : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
+-   <span id="8da7">`Bubbling Up`_: Term that infers that an item is in motion, moving in some direction, and has some final resting destination._</span>
 -   <span id="8447">_Bubble sort, sorts an array of integers by bubbling the largest integer to the top._</span>
 
 <!-- -->
@@ -195,11 +197,11 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY" class="graf-image" /></figure>Summary of how Selection Sort should work:
 
-1.  <span id="2277">_Set MIN to location 0_</span>
-2.  <span id="c76c">_Search the minimum element in the list._</span>
-3.  <span id="79d3">_Swap with value at location Min_</span>
-4.  <span id="4ede">_Increment Min to point to next element._</span>
-5.  <span id="a649">_Repeat until list is sorted._</span>
+1. <span id="2277">_Set MIN to location 0_</span>
+2. <span id="c76c">_Search the minimum element in the list._</span>
+3. <span id="79d3">_Swap with value at location Min_</span>
+4. <span id="4ede">_Increment Min to point to next element._</span>
+5. <span id="a649">_Repeat until list is sorted._</span>
 
 ### Insertion Sort
 
@@ -225,9 +227,9 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 > Steps:
 
-1.  <span id="213f">_If there is only one element in the list, it is already sorted; return the array._</span>
-2.  <span id="6214">_Otherwise, divide the list recursively into two halves until it can no longer be divided._</span>
-3.  <span id="3cc8">_Merge the smallest lists into new list in a sorted order._</span>
+1. <span id="213f">_If there is only one element in the list, it is already sorted; return the array._</span>
+2. <span id="6214">_Otherwise, divide the list recursively into two halves until it can no longer be divided._</span>
+3. <span id="3cc8">_Merge the smallest lists into new list in a sorted order._</span>
 
 ### Quick Sort
 
@@ -263,30 +265,38 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 > Steps:
 
-1.  <span id="8c1f">_If it is the first element, and it is already sorted; return 1._</span>
-2.  <span id="1451">_Pick next element._</span>
-3.  <span id="0f8b">_Compare with all elements in the sorted sub list_</span>
-4.  <span id="4d78">_Shift all the elements in the sorted sub list that is greater than the value to be sorted._</span>
-5.  <span id="9131">_Insert the value_</span>
-6.  <span id="6c8a">_Repeat until list is sorted._</span>
+1. <span id="8c1f">_If it is the first element, and it is already sorted; return 1._</span>
+2. <span id="1451">_Pick next element._</span>
+3. <span id="0f8b">_Compare with all elements in the sorted sub list_</span>
+4. <span id="4d78">_Shift all the elements in the sorted sub list that is greater than the value to be sorted._</span>
+5. <span id="9131">_Insert the value_</span>
+6. <span id="6c8a">_Repeat until list is sorted._</span>
 
-### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
+<br/>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…**gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Or Checkout my personal Resource Site:
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+**Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…**github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+### Or Checkout my personal Resource Site
+
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
+**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png" class="graf-image" /></figure>### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
+**Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…**bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [February 27, 2021](https://medium.com/p/803ff193c522).
 

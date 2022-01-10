@@ -31,7 +31,9 @@ The static `Promise.reject` function returns a `Promise` that is rejected. For d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

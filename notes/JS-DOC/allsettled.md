@@ -44,7 +44,9 @@ For each outcome object, a `status` string is present. If the status is `fulfill
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-promise.allsettled</span></a></td></tr></tbody></table>
 
 `allSettled`

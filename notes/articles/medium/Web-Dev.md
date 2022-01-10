@@ -41,11 +41,11 @@ Web Development
 
 ### React
 
--   <span id="524d"><a href="https://www.youtube.com/channel/UCZkjWyyLvzWeoVWEpRemrDQ" class="markup--anchor markup--li-anchor">React Casts — Series of React tutorials by Cassio</a></span>
+-   <span id="524d"><a href="https://www.youtube.com/channel/UCZkjWyyLvzWeoVWEpRemrDQ" class="markup--anchor markup--li-anchor">React Casts — Series of React tutorials by Cassio</a></span>
 -   <span id="4e2f"><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" class="markup--anchor markup--li-anchor">React Dev Tool Google Chrome Extension</a></span>
 -   <span id="f6ec"><a href="https://github.com/facebookincubator/create-react-app" class="markup--anchor markup--li-anchor">create-react-app: Create React apps with no build configuration.</a></span>
 -   <span id="e294"><a href="https://www.javascriptstuff.com/react-starter-projects/" class="markup--anchor markup--li-anchor">Find the perfect React starter template</a></span>
--   <span id="df74"><a href="https://github.com/jaredpalmer/formik" class="markup--anchor markup--li-anchor">Formik — Build forms in React, without the tears 😭</a></span>
+-   <span id="df74"><a href="https://github.com/jaredpalmer/formik" class="markup--anchor markup--li-anchor">Formik — Build forms in React, without the tears 😭</a></span>
 
 ### Redux
 
@@ -94,7 +94,9 @@ Web Development
 
 Here's a repo where I hoard resource lists!
 
-<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong><br />
+<a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Cumulative-Resource-List.git"><strong>bgoonz/Cumulative-Resource-List</strong>
+<br/>
+
 <em>Inspired by Awesome Lists. Contribute to bgoonz/Cumulative-Resource-List development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Cumulative-Resource-List.git" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
@@ -103,12 +105,16 @@ Here's a repo where I hoard resource lists!
 
 > <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
+<br/>
+
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
+<br/>
+
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 7, 2021](https://medium.com/p/ec1975773d7d).

@@ -72,7 +72,9 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-encodeuri-uri</span></a></td></tr></tbody></table>
 
 `encodeURI`

@@ -8,7 +8,7 @@ How to implement array callback methods in JavaScript
 
 #### How to implement array callback methods in JavaScript
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called “First Class Objects” in JavaScript because:
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" class="graf-image" /></figure>#### Functions are called "First Class Objects" in JavaScript because:
 
 -   <span id="1df8">A function is an instance of the Object type</span>
 -   <span id="6e67">A function can have properties and has a link back to its constructor method</span>
@@ -41,7 +41,7 @@ What do you think will be printed in the following:
 
     fruitBasket();
 
-#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value.
+#### Function that takes in a value and two callbacks. The function should return the result of the callback who's invocation results in a larger value
 
     function greaterValue(value, cb1, cb2) {
         // compare cb1 invoked with value to cb2 invoked with value
@@ -69,7 +69,7 @@ What do you think will be printed in the following:
 
 _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them), we are passing the function itself._
 
-#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.
+#### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map
 
     function myMap(arr, callback) {
         // iterate through the array, perform the cb on each element
@@ -90,7 +90,7 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
     };
     console.log(myMap([1, 2, 3], double));
 
-#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.
+#### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter
 
     function myFilter(arr, callback) {
         let filtered = [];
@@ -106,7 +106,7 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
         return filtered;
     }
 
-#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.
+#### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every
 
     function myEvery(arr, callback) {
         for (let i = 0; i < arr.length; i++) {
@@ -188,13 +188,19 @@ _Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them),
 
 References:
 
-<a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong><br />
+<a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong>
+<br/>
+
 <em>App Academy Open is the first free, online web development course that's meant to get you hired as a developer. Get…</em>open.appacademy.io</a><a href="https://open.appacademy.io/learn" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong><br />
+<a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong>
+<br/>
+
 <em>Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong><br />
+<a href="https://javascript.info/callbacks" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong>Introduction: callbacks</strong>
+<br/>
+
 <em>To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods…</em>javascript.info</a><a href="https://javascript.info/callbacks" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 _More content at_ <a href="http://plainenglish.io" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>

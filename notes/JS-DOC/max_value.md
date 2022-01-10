@@ -36,7 +36,9 @@ The following code multiplies two numeric values. If the result is less than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-number.max_value</span></a></td></tr></tbody></table>
 
 `MAX_VALUE`

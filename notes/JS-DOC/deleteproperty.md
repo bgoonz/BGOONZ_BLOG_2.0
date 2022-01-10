@@ -74,7 +74,9 @@ The following code traps the [`delete`](../../../operators/delete) operator.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript)<br />
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span></a></td></tr></tbody></table>
 
 `deleteProperty`
