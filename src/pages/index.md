@@ -166,7 +166,7 @@ sections:
     grid_items:
       - title: Resume
         actions:
-          - label: Learn More
+          - label: 'View '
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: link
           - label: lorem-ipsum
