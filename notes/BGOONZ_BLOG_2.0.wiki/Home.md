@@ -4,18 +4,13 @@
 
 <div align="center">
 
->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
+> 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
 
 # Notion Page: [notion](https://www.notion.so/webdevhub42/Bgoonz-Blog-2-0-a82c419db97b4224bb1e4fdec981cbfb)
 
-
 ##### [WEBSITE](https://bgoonz-blog.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gatsbyjs.io/)
 
-
-
 </div>
-
-
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
@@ -127,14 +122,11 @@
 
 -   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
-[](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/_Sidebar/_edit "Edit sidebar")
+[](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/_Sidebar/_edit 'Edit sidebar')
 
-Sitemap:
-========
+# Sitemap:
 
 ![blog](https://github.com/bgoonz/BGOONZ_BLOG_2.0/raw/master/static/images/blog-img.png)
-
-
 
 ## Docs Structure:
 

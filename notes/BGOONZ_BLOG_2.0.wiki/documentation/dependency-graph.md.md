@@ -1,11 +1,10 @@
-Dependency graph
-----------------
+## Dependency graph
 
 [Dependencies](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/dependencies)[Dependents](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/dependents)[Dependabot](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/updates)
 
-These dependencies are defined in BGOONZ_BLOG_2.0's manifest files, such as [package.json](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json "package.json").
+These dependencies are defined in BGOONZ_BLOG_2.0's manifest files, such as [package.json](https://github.com/bgoonz/BGOONZ_BLOG_2.0/network/dependencies#package.json 'package.json').
 
- Dependencies defined in [package.json](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/package.json "package.json") 25
+Dependencies defined in [package.json](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/package.json 'package.json') 25
 
 [![@stackbit](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus ](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
 
