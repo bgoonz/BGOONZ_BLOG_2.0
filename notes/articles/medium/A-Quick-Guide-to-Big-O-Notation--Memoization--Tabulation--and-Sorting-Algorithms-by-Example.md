@@ -1,12 +1,10 @@
 # A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting
 
-##  Curating Complexity: A Guide to Big-O Notation
+## Curating Complexity: A Guide to Big-O Notation
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png" class="graf-image" /></figure>***Curating Complexity: A Guide to Big-O Notation***
 
 ---
-
-
 
 <a href="https://replit.com/@bgoonz/Medium-article-comp-complex" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://replit.com/@bgoonz/Medium-article-comp-complex"><strong>Medium-article-comp-complex</strong>
 <br/>

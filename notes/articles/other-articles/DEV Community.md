@@ -24,21 +24,21 @@ Let's get started!
 
 ---
 
-- [Overview](#overview)
-- [Getting a _Remote Repository_](#getting-a-_remote-repository_)
-    - [Adding new things](#adding-new-things)
-- [Making changes](#making-changes)
-- [Branching](#branching)
-- [Merging](#merging)
-    - [Fast-Forward merging](#fast-forward-merging)
-    - [Merging divergent branches](#merging-divergent-branches)
-    - [Resolving conflicts](#resolving-conflicts)
-- [Rebasing](#rebasing)
-    - [Resolving conflicts](#resolving-conflicts-1)
-- [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
-- [Cherry-picking](#cherry-picking)
-- [Rewriting history](#rewriting-history)
-- [Reading history](#reading-history)
+-   [Overview](#overview)
+-   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+    -   [Adding new things](#adding-new-things)
+-   [Making changes](#making-changes)
+-   [Branching](#branching)
+-   [Merging](#merging)
+    -   [Fast-Forward merging](#fast-forward-merging)
+    -   [Merging divergent branches](#merging-divergent-branches)
+    -   [Resolving conflicts](#resolving-conflicts)
+-   [Rebasing](#rebasing)
+    -   [Resolving conflicts](#resolving-conflicts-1)
+-   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
+-   [Cherry-picking](#cherry-picking)
+-   [Rewriting history](#rewriting-history)
+-   [Reading history](#reading-history)
 
 ---
 
@@ -54,21 +54,21 @@ Let's get started!
 
 ---
 
-- [Overview](#overview)
-- [Getting a _Remote Repository_](#getting-a-_remote-repository_)
-    - [Adding new things](#adding-new-things)
-- [Making changes](#making-changes)
-- [Branching](#branching)
-- [Merging](#merging)
-    - [Fast-Forward merging](#fast-forward-merging)
-    - [Merging divergent branches](#merging-divergent-branches)
-    - [Resolving conflicts](#resolving-conflicts)
-- [Rebasing](#rebasing)
-    - [Resolving conflicts](#resolving-conflicts-1)
-- [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
-- [Cherry-picking](#cherry-picking)
-- [Rewriting history](#rewriting-history)
-- [Reading history](#reading-history)
+-   [Overview](#overview)
+-   [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+    -   [Adding new things](#adding-new-things)
+-   [Making changes](#making-changes)
+-   [Branching](#branching)
+-   [Merging](#merging)
+    -   [Fast-Forward merging](#fast-forward-merging)
+    -   [Merging divergent branches](#merging-divergent-branches)
+    -   [Resolving conflicts](#resolving-conflicts)
+-   [Rebasing](#rebasing)
+    -   [Resolving conflicts](#resolving-conflicts-1)
+-   [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
+-   [Cherry-picking](#cherry-picking)
+-   [Rewriting history](#rewriting-history)
+-   [Reading history](#reading-history)
 
 ---
 
@@ -289,40 +289,40 @@ Right now the `git log` looks something like this:
 
 In there we see a few interesting things:
 
-- The first two commits are made by me.
-- Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+-   The first two commits are made by me.
+-   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
 
-- # The latest commit in the _Local Repository_ is the one we just made, and now we know its hash
+-   # The latest commit in the _Local Repository_ is the one we just made, and now we know its hash
 
-            Add text to Bob
+              Add text to Bob
 
-        commit 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e (origin/master, origin/HEAD)
-        Author: {YOU} <{YOUR EMAIL}>
-        Date:   Sun Jan 27 13:35:41 2019 +0100
+          commit 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e (origin/master, origin/HEAD)
+          Author: {YOU} <{YOUR EMAIL}>
+          Date:   Sun Jan 27 13:35:41 2019 +0100
 
-            Add Bob
+              Add Bob
 
-        commit 71a6a9b299b21e68f9b0c61247379432a0b6007c
-        Author: UnseenWizzard <nicola.riedmann@live.de>
-        Date:   Fri Jan 25 20:06:57 2019 +0100
+          commit 71a6a9b299b21e68f9b0c61247379432a0b6007c
+          Author: UnseenWizzard <nicola.riedmann@live.de>
+          Date:   Fri Jan 25 20:06:57 2019 +0100
 
-            Add Alice
+              Add Alice
 
-        commit ddb869a0c154f6798f0caae567074aecdfa58c46
-        Author: Nico Riedmann <UnseenWizzard@users.noreply.github.com>
-        Date:   Fri Jan 25 19:25:23 2019 +0100
+          commit ddb869a0c154f6798f0caae567074aecdfa58c46
+          Author: Nico Riedmann <UnseenWizzard@users.noreply.github.com>
+          Date:   Fri Jan 25 19:25:23 2019 +0100
 
-            Add Tutorial Text
+              Add Tutorial Text
 
-              Changes to the tutorial are all squashed into this commit on master, to keep the log free of clutter that distracts from the tutorial
+                Changes to the tutorial are all squashed into this commit on master, to keep the log free of clutter that distracts from the tutorial
 
-              See the tutorial_wip branch for the actual commit history
+                See the tutorial_wip branch for the actual commit history
 
 In there we see a few interesting things:
 
-- The first two commits are made by me.
-- Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
-- The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
+-   The first two commits are made by me.
+-   Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+-   The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 > Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html) .
@@ -424,10 +424,10 @@ But we don't just want to blindly do that. We're here to understand what's actua
 Remember when we `cloned` the _Remote Repository_ a while ago? At that point it didn't only contain this tutorial and `Alice.txt` but actually two branches.
 
 <<<<<<< HEAD
-The _master_ we just went ahead and started working on, and one I called "tutorial*wip" on which I commit all the changes I make to this tutorial.
+The _master_ we just went ahead and started working on, and one I called "tutorial\*wip" on which I commit all the changes I make to this tutorial.
 =======
 
-The \_master* we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial.
+The \_master\* we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial.
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
@@ -481,10 +481,10 @@ As we've already `checked out` master, we can now `git merge change_alice`.
 As there are no other _conflicting_ changes to `Alice.txt`, and we've changed nothing on _master_, this will go through without a hitch in what is called a _fast forward_ merge.
 
 <<<<<<< HEAD
-In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the _change_alice_one already is.
+In the diagrams below, you can see that this just means that the _master_ pointer can simply be advanced to where the \_change_alice_one already is.
 =======
 
-In the diagrams below, you can see that this just means that the_master_pointer can simply be advanced to where the_change_alice_ one already is.
+In the diagrams below, you can see that this just means that the*master_pointer can simply be advanced to where the_change_alice* one already is.
 
 > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
@@ -554,7 +554,7 @@ If you open `Bob.txt` you'll see something similar to this (I've truncated whate
 `  
 <<<<<<< HEAD  
 Hi! I'm Bob. I've been here for a while now.  
-=======  
+=======
 
 <<<<<<< HEAD
 Hi! I'm Bobby. I'm new here.
@@ -915,12 +915,12 @@ Wait, did I say we're done? No, you'll clearly see that we've made some mistakes
 
 <<<<<<< HEAD
 
-- We forgot to add the changes to `Bob.txt`
+-   We forgot to add the changes to `Bob.txt`
 
-- # We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+-   # We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
 
-- We forgot to add the changes to `Bob.txt`
-- We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+-   We forgot to add the changes to `Bob.txt`
+-   We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 ### [](#amending-the-last-commit)Amending the last Commit
@@ -985,16 +985,16 @@ For me it looks like this:
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
-- Put both changes to `Alice.txt` in a single commit
+-   Put both changes to `Alice.txt` in a single commit
 
-- # Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+-   # Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
 
     `git log --oneline 0b22064 (HEAD -> interactiveRebase) Add more text to Alice 062ef13 Add Bob.txt 9e06fca Add text to Alice df3ad1d (origin/master, origin/HEAD, master) Add Alice 800a947 Add Tutorial Text`
 
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`:
 
-- Put both changes to `Alice.txt` in a single commit
-- Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
+-   Put both changes to `Alice.txt` in a single commit
+-   Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
     > > > > > > > bed43c0156f1c7fa6aedd1d8e3c3ff5c475148e4
 
 To change the three new commits, we'll want to rebase onto the commit just before them. That commit for me is `df3ad1d`, but we can also reference it as the third commit from the current _HEAD_ as `HEAD~3`

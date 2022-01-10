@@ -1,5 +1,4 @@
-What are data structures
-------------------------
+## What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
 
@@ -21,8 +20,7 @@ JavaScript has primitive and non-primitive data structures. Primitive data stru
 
 Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.
 
-1\. Array
----------
+## 1\. Array
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
@@ -44,8 +42,7 @@ Disadvantages
 -   Basic spreadsheets
 -   Within complex structures such as hash tables
 
-2\. Queues
-----------
+## 2\. Queues
 
 Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.
 
@@ -71,8 +68,7 @@ Disadvantages
 -   Convenient way to store order-sensitive data such as stored voicemails
 -   Ensures the oldest data is processed first
 
-3\. Linked List
----------------
+## 3\. Linked List
 
 Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.
 
@@ -95,8 +91,7 @@ Disadvantages
 
 -   Best used when data must be added and removed in quick succession from unknown locations
 
-4\. Trees
----------
+## 4\. Trees
 
 Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.
 
@@ -135,10 +130,9 @@ Disadvantages
 -   Storing hierarchical data such as a file location.
 -   Binary search trees are excellent for tasks needing searching or ordering of data.
 
-> *Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter.*
+> _Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter._
 
-5\. Graphs
-----------
+## 5\. Graphs
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
@@ -146,9 +140,9 @@ Graphs are a relation-based data structure helpful for storing web-like relation
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
-*V = {a, b, c, d}*
+_V = {a, b, c, d}_
 
-*E = {ab, ac, bc, cd}*
+_E = {ab, ac, bc, cd}_
 
 While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.
 
@@ -167,8 +161,7 @@ Disadvantages
 -   Network representations
 -   Modeling social networks, such as Facebook.
 
-6\. Hash Tables (Map)
----------------------
+## 6\. Hash Tables (Map)
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
@@ -193,8 +186,7 @@ Disadvantages
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 
-Data structure interview questions
-----------------------------------
+## Data structure interview questions
 
 For many developers and programmers, data structures are most important for [cracking Javascript coding interviews](https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained). Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.
 
@@ -240,17 +232,17 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 function removeEven(arr) {
 
-    var odds = []
+var odds = []
 
-    for (let number of arr) {
+for (let number of arr) {
 
-        if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
+if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
 
-            odds.push(number) //If it isn't even append it to the empty list
+odds.push(number) //If it isn't even append it to the empty list
 
-    }
+}
 
-  return odds // Return the new list
+return odds // Return the new list
 
 }
 
@@ -272,7 +264,7 @@ This approach starts with the first element of the array. If that current elemen
 
 function removeEven(arr) {
 
-    return arr.filter((v => (v % 2) != 0))
+return arr.filter((v => (v % 2) != 0))
 
 }
 
@@ -370,53 +362,53 @@ Stack.js
 
 module.exports = class Stack {
 
-    constructor() {
+constructor() {
 
-        this.items = [];
+this.items = [];
 
-        this.top = null;
+this.top = null;
 
-    }
+}
 
-    getTop() {
+getTop() {
 
-        if (this.items.length == 0)
+if (this.items.length == 0)
 
-            return null;
+return null;
 
-        return this.top;
+return this.top;
 
-    }
+}
 
-    isEmpty() {
+isEmpty() {
 
-        return this.items.length == 0;
+return this.items.length == 0;
 
-    }
+}
 
-    size() {
+size() {
 
-        return this.items.length;
+return this.items.length;
 
-    }
+}
 
-    push(element) {
+push(element) {
 
-        this.items.push(element);
+this.items.push(element);
 
-        this.top = element;
+this.top = element;
 
-    }
+}
 
-    pop() {
+pop() {
 
-        if (this.items.length != 0) {
+if (this.items.length != 0) {
 
-            if (this.items.length == 1) {
+if (this.items.length == 1) {
 
-                this.top = null;
+this.top = null;
 
-                return this.items.pop();
+return this.items.pop();
 
 Run
 
@@ -515,45 +507,45 @@ Queue.js
 
 module.exports = class Queue {
 
-    constructor() {
+constructor() {
 
-        this.items = [];
+this.items = [];
 
-        this.front = null;
+this.front = null;
 
-        this.back = null;
+this.back = null;
 
-    }
+}
 
-    isEmpty() {
+isEmpty() {
 
-        return this.items.length == 0;
+return this.items.length == 0;
 
-    }
+}
 
-    getFront() {
+getFront() {
 
-        if (this.items.length != 0) {
+if (this.items.length != 0) {
 
-            return this.items[0];
+return this.items[0];
 
-        } else
+} else
 
-            return null;
+return null;
 
-    }
+}
 
-    size() {
+size() {
 
-        return this.items.length;
+return this.items.length;
 
-    }
+}
 
-    enqueue(element) {
+enqueue(element) {
 
-        this.items.push(element);
+this.items.push(element);
 
-    }
+}
 
 Run
 
@@ -664,53 +656,53 @@ const Node = require('./Node.js');
 
 module.exports = class LinkedList {
 
-  constructor() {
+constructor() {
 
-    this.head = null;
+this.head = null;
 
-  }
+}
 
-  //Insertion At Head  
+//Insertion At Head
 
-  insertAtHead(newData) {
+insertAtHead(newData) {
 
-    let tempNode = new Node(newData);
+let tempNode = new Node(newData);
 
-    tempNode.nextElement = this.head;
+tempNode.nextElement = this.head;
 
-    this.head = tempNode;
+this.head = tempNode;
 
-    return this; //returning the updated list
+return this; //returning the updated list
 
-  }
+}
 
-  isEmpty() {
+isEmpty() {
 
-    return (this.head == null);
+return (this.head == null);
 
-  }
+}
 
-  //function to print the linked list
+//function to print the linked list
 
-  printList() {
+printList() {
 
-    if (this.isEmpty()) {
+if (this.isEmpty()) {
 
-      console.log("Empty List");
+console.log("Empty List");
 
-      return false;
+return false;
 
-    } else {
+} else {
 
-      let temp = this.head;
+let temp = this.head;
 
-      while (temp != null) {
+while (temp != null) {
 
-        process.stdout.write(String(temp.data));
+process.stdout.write(String(temp.data));
 
-        process.stdout.write(" -> ");
+process.stdout.write(" -> ");
 
-        temp = temp.nextElement;
+temp = temp.nextElement;
 
 Run
 
@@ -820,53 +812,53 @@ const Node = require('./Node.js');
 
 module.exports = class BinarySearchTree {
 
-    constructor(rootValue) {
+constructor(rootValue) {
 
-        this.root = new Node(rootValue);
+this.root = new Node(rootValue);
 
-    }
+}
 
-    insert(currentNode, newValue) {
+insert(currentNode, newValue) {
 
-        if (currentNode === null) {
+if (currentNode === null) {
 
-            currentNode = new Node(newValue);
+currentNode = new Node(newValue);
 
-        } else if (newValue < currentNode.val) {
+} else if (newValue < currentNode.val) {
 
-            currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
+currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
 
-        } else {
+} else {
 
-            currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
+currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
 
-        }
+}
 
-        return currentNode;
+return currentNode;
 
-    }
+}
 
-    insertBST(newValue) {
+insertBST(newValue) {
 
-        if(this.root==null){
+if(this.root==null){
 
-            this.root=new Node(newValue);
+this.root=new Node(newValue);
 
-            return;
+return;
 
-        }
+}
 
-        this.insert(this.root, newValue);
+this.insert(this.root, newValue);
 
-    }
+}
 
-    preOrderPrint(currentNode) {
+preOrderPrint(currentNode) {
 
-        if (currentNode !== null) {
+if (currentNode !== null) {
 
-            console.log(currentNode.val);
+console.log(currentNode.val);
 
-            this.preOrderPrint(currentNode.leftChild);
+this.preOrderPrint(currentNode.leftChild);
 
 Run
 
@@ -974,43 +966,43 @@ const Node = require('./Node.js');
 
 module.exports = class Graph {
 
-  constructor(vertices) {
+constructor(vertices) {
 
-    this.vertices = vertices;
+this.vertices = vertices;
 
-    this.list = [];
+this.list = [];
 
-    var it;
+var it;
 
-    for (it = 0; it < vertices; it++) {
+for (it = 0; it < vertices; it++) {
 
-      let temp = new LinkedList();
+let temp = new LinkedList();
 
-      this.list.push(temp);
+this.list.push(temp);
 
-    }
+}
 
-  }
+}
 
-  addEdge(source, destination) {
+addEdge(source, destination) {
 
-    if (source < this.vertices && destination < this.vertices)
+if (source < this.vertices && destination < this.vertices)
 
-    this.list[source].insertAtHead(destination);
+this.list[source].insertAtHead(destination);
 
-    return this;
+return this;
 
-  }
+}
 
-  printGraph() {
+printGraph() {
 
-    console.log(">>Adjacency List of Directed Graph<<");
+console.log(">>Adjacency List of Directed Graph<<");
 
-    var i;
+var i;
 
-    for (i = 0; i < this.list.length; i++) {
+for (i = 0; i < this.list.length; i++) {
 
-      process.stdout.write("|" + String(i) + "| => ");
+process.stdout.write("|" + String(i) + "| => ");
 
 Run
 
@@ -1090,45 +1082,45 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 
 function minHeapify(heap, index) {
 
-    var left = index * 2;
+var left = index \* 2;
 
-    var right = (index * 2) + 1;
+var right = (index \* 2) + 1;
 
-    var smallest = index;
+var smallest = index;
 
-    if ((heap.length > left) && (heap[smallest] > heap[left])) {
+if ((heap.length > left) && (heap[smallest] > heap[left])) {
 
-        smallest = left
+smallest = left
 
-    }
+}
 
-    if ((heap.length > right) && (heap[smallest] > heap[right]))
+if ((heap.length > right) && (heap[smallest] > heap[right]))
 
-        smallest = right
+smallest = right
 
-    if (smallest != index) {
+if (smallest != index) {
 
-        var tmp = heap[smallest]
+var tmp = heap[smallest]
 
-        heap[smallest] = heap[index]
+heap[smallest] = heap[index]
 
-        heap[index] = tmp
+heap[index] = tmp
 
-        minHeapify(heap, smallest)
+minHeapify(heap, smallest)
 
-    }
+}
 
-    return heap;
+return heap;
 
 }
 
 function convertMax(maxHeap) {
 
-    for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--)
+for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--)
 
-        maxHeap = minHeapify(maxHeap, i)
+maxHeap = minHeapify(maxHeap, i)
 
-    return maxHeap
+return maxHeap
 
 }
 

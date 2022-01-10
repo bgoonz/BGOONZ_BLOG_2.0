@@ -896,8 +896,7 @@ With each deploy, Netlify scans new and changed HTML files for forms to enable h
 
 Edit settings
 
-[Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
--------------------------------------------------------------------------------------------------------
+## [Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
 
 Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
 
