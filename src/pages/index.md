@@ -166,9 +166,9 @@ sections:
     grid_items:
       - title: Resume
         actions:
-          - label: 'View '
+          - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
+            style: secondary
           - label: lorem-ipsum
             url: '#'
             style: link
