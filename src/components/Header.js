@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-
+import SearchBar from './SearchBar'
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
@@ -38,6 +38,7 @@ export default class Header extends React.Component {
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
                                     <div className="site-nav-inside">
+                                        <SearchBar classNames={'link_bold'} lng="en" />
                                         <button id="menu-close" className="menu-toggle">
                                             <span className="screen-reader-text">Open Menu</span>
                                             <span className="icon-close" aria-hidden="true" />
@@ -47,14 +48,12 @@ export default class Header extends React.Component {
                                                 let page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
                                                 let action_url = _.trim(_.get(action, 'url', null), '/');
                                                 return (
-                                                    <li
-                                                        key={action_idx}
+                                                    <li key={action_idx}
                                                         className={classNames('menu-item', {
                                                             'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
                                                             current: page_url === action_url,
                                                             'menu-button': _.get(action, 'style', null) !== 'link'
-                                                        })}
-                                                    >
+                                                        })}              >
                                                         <ActionLink {...this.props} action={action} />
                                                         {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
                                                             <React.Fragment>
@@ -86,7 +85,7 @@ export default class Header extends React.Component {
                 </div>
 
                 <div>
-                    <div id="search" className="gcse-search search"></div>
+                  
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
