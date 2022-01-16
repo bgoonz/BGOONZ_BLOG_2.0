@@ -86,7 +86,7 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: angolia
+        title_url: 'https://www.algolia.com/doc/'
         image_alt: angolia
         content: |
           ## Full Text Search
