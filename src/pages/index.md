@@ -174,9 +174,9 @@ sections:
         actions:
           - label: Learn More
             url: 'https://www.iter.org/'
-            style: link
+            style: secondary
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
         type: grid_item
         image: images/iter-c7508519.jpg
