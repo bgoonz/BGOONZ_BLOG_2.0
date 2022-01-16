@@ -24,10 +24,10 @@ sections:
           complexity?
         actions:
           - label: Get Started
-            url: /docs
+            url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
             style: link
         title: A Quick Guide To Big O
-        image: images/my-back.png
+        image: images/outdated-packages-732a4523.png
         title_url: >-
           https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
       - content: |
@@ -86,7 +86,7 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: angolia
+        title_url: 'https://www.algolia.com/doc/'
         image_alt: angolia
         content: |
           ## Full Text Search
@@ -96,13 +96,20 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: neural networks
+        title_url: >-
+          https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
         image_alt: neural networks
         content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
@@ -165,11 +172,11 @@ sections:
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
         actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
+          - label: Learn More
+            url: 'https://www.iter.org/'
+            style: secondary
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
         type: grid_item
         image: images/iter-c7508519.jpg
