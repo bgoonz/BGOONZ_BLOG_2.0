@@ -536,6 +536,14 @@ body {
 body {
     margin: 0;
 }
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
 
 html {
     --font-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
