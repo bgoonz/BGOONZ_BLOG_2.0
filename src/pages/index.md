@@ -237,7 +237,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |
-      Tool Showcase
+      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
     actions: []
     type: section_content
     title: Tools Showcase
