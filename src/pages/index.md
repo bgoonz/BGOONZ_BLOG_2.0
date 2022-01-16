@@ -238,7 +238,7 @@ sections:
     actions: []
     type: section_content
     image: images/cool annimation.gif
-  - section_id: lorem-ipsum
+  - section_id: tools
     image_alt: lorem-ipsum
     image_position: left
     content: >-
