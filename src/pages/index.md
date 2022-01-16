@@ -202,7 +202,8 @@ sections:
     image_position: left
     content: |-
         <iframe src="https://random-static-html-deploys.netlify.app/"    class="block-content" width="100%  width="1200px!important"
-        height="1000px!important"></iframe>
+        height="1000px!important">
+        </iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
