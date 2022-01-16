@@ -37,7 +37,7 @@ export default function Link({
         return (
 
             <
-            GatsbyLink to = {
+            GatsbyLink to={
                 to
             }
             activeClassName = {
