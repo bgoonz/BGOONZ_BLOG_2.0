@@ -13,12 +13,6 @@ template: docs
 
 # Archive
 
-<br>
-<br>
-<br>
-<h1> Archive</h1>
-<br>
-
 <iframe src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
@@ -324,7 +318,6 @@ template: docs
 <hr>
 <br>
 <br>
-
 
 <h1> Border Builder </h1>
 <br>
