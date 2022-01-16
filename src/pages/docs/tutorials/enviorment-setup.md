@@ -1,5 +1,5 @@
 ---
-title: Enviorment Setup Tutorial
+title: Basic Bash Proficiency
 weight: 0
 excerpt: more tools that I have created or collaborated on.
 seo:
