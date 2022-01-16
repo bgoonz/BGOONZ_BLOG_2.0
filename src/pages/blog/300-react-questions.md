@@ -1,25 +1,15 @@
 ---
 title: Es6 Features
-
 subtitle: lorem-ipsum
-
-date: '2021-11-24'
-
+date: '2022-01-16'
 thumb_image_alt: lorem-ipsum
-
 excerpt: lorem-ipsum
-
 seo:
-    title: ''
-
-    description: ''
-
-    robots: []
-
-    extra: []
-
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: post
-
 thumb_image: images/es6.jpg
 ---
 
