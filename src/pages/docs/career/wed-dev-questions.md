@@ -1,9 +1,9 @@
 ---
 title: Javascript Practice
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Javascript Practice
 seo:
-    title: ''
+    title: 'Javascript Practice'
     description: ''
     robots: []
     extra: []
