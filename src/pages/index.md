@@ -201,9 +201,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: |-
-        <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/"
+        <iframe src="https://random-static-html-deploys.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
