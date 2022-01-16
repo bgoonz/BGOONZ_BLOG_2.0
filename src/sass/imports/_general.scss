@@ -557,11 +557,6 @@ html {
     color: white;
 }
 
-@include breakpoint(baby-bear) {
-    html {
-        font-size: 11px;
-    }
-}
 
 ::-webkit-scrollbar {
     width: 20px;
