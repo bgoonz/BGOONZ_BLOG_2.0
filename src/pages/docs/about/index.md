@@ -809,3 +809,5 @@ function longestCommonPrefix(strs) {
 </details>
 
 </center>
+
+</details>
