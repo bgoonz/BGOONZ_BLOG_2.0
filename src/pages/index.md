@@ -145,7 +145,7 @@ sections:
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
         title_url: 'https://www.iter.org/'
-        image_alt: lorem-ipsum
+        image_alt: Nuclear Fusion
         content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
