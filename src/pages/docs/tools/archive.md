@@ -3,7 +3,7 @@ title: Archive
 weight: 0
 excerpt: more tools that I have created or collaborated on.
 seo:
-    title: ''
+    title: 'Embed Archive'
     description: 'embeded developer tools and utilities'
     robots: []
     extra: []
