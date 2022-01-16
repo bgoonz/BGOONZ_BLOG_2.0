@@ -1,42 +1,31 @@
 .docs-content {
-  padding-top: 4.5em;
-  width: 95%;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding-top: 2.5em;
 }
-.post-content {
-  width: 90%;
-}
-post-inside {
-  resize: both;
-}
+
 .post {
   &.type-docs {
-    margin-bottom: 3.625em;
+    margin-bottom: 5.625em;
+    max-width: $container-md;
 
     h1 {
-      font-size: 1.975em;
+      font-size: 1.875em;
     }
-
+  
     h2 {
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
-
+  
     h3 {
-      font-size: 1.45em;
+      font-size: 1.25em;
     }
-
+  
     h4 {
-      font-size: 1.35em;
+      font-size: 1.125em;
     }
-
+  
     h5,
     h6 {
-      font-size: 1.2em;
+      font-size: 1em;
     }
 
     .hash-link {
@@ -48,12 +37,12 @@ post-inside {
       opacity: 0;
       text-align: center;
       text-decoration: none;
-      -webkit-transition: opacity 0.2s;
-      transition: opacity 0.4s;
+      -webkit-transition: opacity .2s;
+      transition: opacity .2s;
       width: 1em;
 
       &:before {
-        content: '\0023';
+        content: "\0023";
         display: inline-block;
       }
 
@@ -61,7 +50,7 @@ post-inside {
       &:focus {
         color: $color-primary;
       }
-      }
+    }
 
     h2 {
       .hash-link {
@@ -77,35 +66,32 @@ post-inside {
 
     h2,
     h3 {
-
       &:hover,
       &:focus {
         .hash-link {
           opacity: 1;
         }
       }
-      }
+    }
 
     .post-inside {
       background: #fff;
       border: 1px solid $gray-300;
       border-radius: $border-radius;
       box-shadow: $box-shadow;
-      padding: 0.3em;
-      width: 50vw;
+      padding: 2.5em 0;
     }
 
     .post-title {
       font-size: 1.875em;
       margin: 0 0 1.25em;
-      padding: 0 2em;
+      padding: 0 1em;
     }
 
     .post-content {
-      padding: 0.975em;
-      word-wrap: break-word;
+      padding: 0 1.875em;
     }
-    }
+  }
 }
 
 #docs-section-items {
@@ -119,37 +105,28 @@ post-inside {
   padding: 0;
 
   .docs-section-item {
-    border-radius: 5px;
     -ms-flex: 1 1 240px;
     flex: 1 1 240px;
     margin: 0 0.3125em 0.9375em;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
+  }
 
   .docs-item-link {
     border: 1px solid $gray-300;
     border-radius: $border-radius-sm;
-
     color: $gray-700;
     display: block;
     font-weight: bold;
     padding: 0.9375em;
     position: relative;
-    text-transform: capitalize;
     text-decoration: none;
-    -webkit-transition: border-color 0.3s ease, color 0.3s ease;
-    transition: border-color 0.3s ease, color 0.3s ease;
-
+    -webkit-transition: border-color .3s ease, color .3s ease;
+    transition: border-color .3s ease, color .3s ease;
+  
     &:hover {
       border-color: $color-primary;
       color: $color-primary;
     }
-    }
+  }
 }
 
 .docs-nav {
@@ -159,8 +136,9 @@ post-inside {
     color: $gray-700;
     font-size: 1.125em;
     margin: 0;
-    padding-right: 15px;
+    padding-right: 30px;
     text-align: left;
+    width: 100%;
   }
 
   .docs-submenu-toggle {
@@ -176,19 +154,12 @@ post-inside {
   font-weight: bold;
   line-height: 1.5;
   list-style: none;
-  margin: 0.7em;
+  margin: 0;
   padding: 0;
-  box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
-    &>.docs-menu-item>a {
-      padding: 0.3em 0;
-      border-radius: 20px;
-
-    margin: auto;
-    }
+  & > .docs-menu-item > a {
+    padding: 0.1875em 0;
+  }
 
   a {
     color: inherit;
@@ -198,7 +169,7 @@ post-inside {
     &:hover {
       color: $color-primary;
     }
-    }
+  }
 
   .current,
   .current-parent {
@@ -210,11 +181,11 @@ post-inside {
   border-left: 1px solid $gray-300;
   color: $gray-600;
   display: none;
-  font-size: 1;
+  font-size: 0.9375em;
   font-weight: normal;
   list-style: none;
   margin-top: 0.625rem;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 .docs-menu-item {
@@ -222,27 +193,27 @@ post-inside {
   margin-bottom: 0.625rem;
 
   &.has-children {
-    padding-right: 20px;
+    padding-right: 30px;
     position: relative;
-
+  
     &.active {
       .docs-submenu {
         display: block;
       }
-
-      &>.docs-submenu-toggle {
+  
+      & > .docs-submenu-toggle {
         .icon-angle-right {
           -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
         }
       }
-      }
-      }
+    }
+  }
 }
 
 #page-nav {
-  text-overflow: wrap;
-  text-transform: capitalize;
+  display: none;
+
   .page-nav-title {
     font-size: 1em;
     margin: 0 0 0.625em;
@@ -259,15 +230,15 @@ post-inside {
       margin-top: 0.625rem;
       padding-left: 1.25rem;
     }
-    }
+  }
 
   li {
     margin-bottom: 0.625rem;
 
-    &.active>a {
+    &.active > a {
       color: $color-primary;
     }
-    }
+  }
 
   a {
     color: $gray-600;
@@ -277,45 +248,46 @@ post-inside {
     &:hover {
       color: $color-primary;
     }
-    }
+  }
 
-  .page-nav-title {
-    &:only-child {
-      display: none;
+  .page-nav-inside {
+    display: none;
+  
+    &.has-links {
+      display: block;
     }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 641px) {
   .post {
     &.type-docs {
-
       .post-title,
       .post-content {
-        padding-left: 8%;
+        padding-left: 7%;
         padding-right: 7%;
       }
-      }
-      }
+    }
+  }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 801px) {
   .docs-content {
-
-
-    padding-top: 4em;
-    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3.75em;
   }
 
   .post.type-docs {
     -ms-flex: 1 1 auto;
-    flex: auto;
-    align-content: center;
+    flex: 1 1 auto;
+    overflow: hidden;
   }
 
   .docs-nav,
   .page-nav {
     -ms-flex-negative: 0;
+    flex-shrink: 0;
     margin-bottom: 5.625em;
 
     .sticky {
@@ -323,15 +295,16 @@ post-inside {
       position: sticky;
       top: 1.875em;
     }
-    }
+  }
 
   .docs-nav {
-    width: 8.5em;
+    padding-right: 1.5em;
+    width: 12.5em;
   }
 
   #page-nav {
-    font-size: 12px;
-    margin: 4em;
+    padding-left: 1.5em;
+    width: 9.5em;
   }
 
   #docs-nav-toggle {
@@ -345,7 +318,7 @@ post-inside {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .docs-nav {
     background: #fff;
     border: 1px solid $gray-300;
@@ -353,7 +326,7 @@ post-inside {
     box-shadow: $box-shadow;
     box-sizing: border-box;
     margin-bottom: 5%;
-    padding: 1em 1em;
+    padding: 0.75em 1em;
   }
 
   .docs-nav-menu {
@@ -371,7 +344,7 @@ post-inside {
         transform: rotate(135deg);
       }
     }
-    }
+  }
 
   #docs-menu {
     border-top: 1px solid $gray-300;
@@ -379,3 +352,4 @@ post-inside {
     padding-top: 1.25em;
   }
 }
+
