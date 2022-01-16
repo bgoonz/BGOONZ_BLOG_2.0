@@ -260,6 +260,8 @@ sections:
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+
+      https://bgoonz-blog.netlify.app/docs/tools/
     actions: []
     type: section_content
     title: Tools Showcase
