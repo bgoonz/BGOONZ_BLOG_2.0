@@ -155,7 +155,13 @@ sections:
           design — the world's most developed approach to fusion energy. It is
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
         type: grid_item
         image: images/iter-c7508519.jpg
     type: section_grid
