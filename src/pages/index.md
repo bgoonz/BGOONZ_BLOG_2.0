@@ -173,7 +173,7 @@ sections:
           tokamak with any significant amount of tritium.
         actions:
           - label: Learn More
-            url: '#'
+            url: 'https://www.iter.org/'
             style: link
             icon_class: dev
             new_window: false
