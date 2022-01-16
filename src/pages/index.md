@@ -96,7 +96,8 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: neural networks
+        title_url: >-
+          https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
         image_alt: neural networks
         content: >
           Artificial neural networks, usually simply called neural networks, are
