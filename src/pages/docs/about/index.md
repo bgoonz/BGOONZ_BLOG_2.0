@@ -47,7 +47,7 @@ template: docs
 
 <details>
 
-<summary>   </summary>   
+<summary>  See More </summary>   
 
 
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:570; height:420;">
