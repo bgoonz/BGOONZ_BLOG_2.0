@@ -11,7 +11,15 @@ seo:
 template: docs
 ---
 
+# Archive
 
+<br>
+<br>
+<br>
+<h1> Archive</h1>
+<br>
+
+<iframe src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -35,13 +43,10 @@ template: docs
 
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <h1>     Resource Archive           </h1>
 <br>
 <br>
@@ -62,7 +67,6 @@ template: docs
 <br>
 <h1> Google Drive</h1>
 <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
-
 
 <br>
 <br>
@@ -95,13 +99,10 @@ template: docs
 <iframe src="https://archive.org/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <h1>   Lambda Student Site </h1>
 <br>
 <br>
@@ -113,13 +114,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
@@ -137,13 +135,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
@@ -152,13 +147,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <h1>  Interview     </h1>
 <br>
 <br>
@@ -170,17 +162,14 @@ template: docs
 <br>
 <br>
 <br>
+<hr>
 <br>
 <br>
+
 <hr>
 <br>
 <br>
 <br>
-<br>
-<hr>
-<br>
-<br>
-<br>
 
 <br>
 <br>
@@ -188,8 +177,6 @@ template: docs
 <br>
 <br>
 <br>
-
-
 
 <h1>   Speach Recognition api </h1>
 <br>
@@ -209,9 +196,6 @@ template: docs
 <br>
 <br>
 
-
-
-
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
 <br>
@@ -229,9 +213,6 @@ template: docs
 
 <br>
 <br>
-
-
-
 
 <br>
 <br>
@@ -263,13 +244,10 @@ template: docs
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <h1> Text Tools     </h1>
 <br>
 <br>
@@ -281,13 +259,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
@@ -304,13 +279,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
@@ -328,13 +300,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
@@ -352,13 +321,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 
 <h1> Border Builder </h1>
 <br>
@@ -371,13 +337,10 @@ template: docs
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>
 <br>
 <br>
-<br>
-<br>
+
 <hr>
 <br>
 <br>
