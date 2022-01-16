@@ -1,3 +1,14 @@
+---
+title: 'React Cheat Sheets:'
+weight: 0
+excerpt: cheat sheet
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+template: docs
+---
 
 
 
