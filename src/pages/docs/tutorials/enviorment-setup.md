@@ -1,7 +1,7 @@
 ---
 title: Basic Bash Proficiency
 weight: 0
-excerpt: more tools that I have created or collaborated on.
+excerpt: 
 seo:
     title: ''
     description: 'embeded developer tools and utilities'
