@@ -24,7 +24,7 @@ sections:
           complexity?
         actions:
           - label: Get Started
-            url: /docs
+            url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
             style: link
         title: A Quick Guide To Big O
         image: images/my-back.png
