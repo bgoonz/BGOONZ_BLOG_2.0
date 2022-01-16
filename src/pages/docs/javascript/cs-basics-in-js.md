@@ -1,7 +1,7 @@
 ---
 title: CS Basics
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Computer Science Basics In JavaScript
 seo:
   title: ''
   description: ''
