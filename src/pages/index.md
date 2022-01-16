@@ -172,7 +172,7 @@ sections:
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
         actions:
-          - label: lorem-ipsum
+          - label: Learn More
             url: '#'
             style: link
             icon_class: dev
