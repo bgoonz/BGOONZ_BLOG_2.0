@@ -144,7 +144,7 @@ sections:
         image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
+        title_url: 'https://www.iter.org/'
         image_alt: lorem-ipsum
         content: |
           # Break Even Nuclear Fusion Candidate
