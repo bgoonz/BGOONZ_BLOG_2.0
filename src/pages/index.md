@@ -209,7 +209,7 @@ sections:
             url: /showcase
             style: secondary
         image_alt: portfolio of websites
-        image: images/portfolio-pic-494ea398.png
+        image: images/portfolio-91689538.jpg
   - title: Blog-Archive-And-Mini-Projects
     section_id: Mini Projects
     image_alt: showcase
