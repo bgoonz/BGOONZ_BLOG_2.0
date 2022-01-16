@@ -5,6 +5,7 @@ html {
 }
 iframe{
     overflow: auto;
+    resize: both;
 }
 body {
     background: $gray-100;
