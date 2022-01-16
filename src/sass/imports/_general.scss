@@ -518,3 +518,85 @@ figure {
                         }
                   }
    
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+}
+html {
+  --font-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+  --ff-rounded: "Nunito", sans-serif;
+  --ff-gothic: "AlternateGothicPro-No1", system-ui, sans-serif;
+
+  --color-light: #f3f4f6;
+
+  font-family: var(--ff-rounded);
+  line-height: 1.5;
+  font-size: 1rem;
+  --user-font-scale: 1rem - 16px;
+  font-size: clamp(
+    0.875rem,
+    0.4626rem + 1.0309vw + var(--user-font-scale),
+    1.125rem
+  );
+  background: #130931;
+  background: linear-gradient(180deg, #18083c 0%, #58359c 100%);
+  color: white;
+}
+@include breakpoint(baby-bear) {
+  html {
+    font-size: 11px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f1a195, #b475dc);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #43346e;
+  box-shadow: inset 1px 0 10px rgba(black, 0.5);
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+a {
+  color: #9058b5;
+}
+a:hover,
+a:focus {
+  text-decoration-color: #e1d6eb;
+}
