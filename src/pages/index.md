@@ -260,8 +260,12 @@ sections:
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
-
-      https://bgoonz-blog.netlify.app/docs/tools/
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
     actions: []
     type: section_content
     title: Tools Showcase
