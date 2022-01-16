@@ -266,6 +266,7 @@ sections:
       sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
     actions: []
     type: section_content
+    title: Tools Showcase
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
