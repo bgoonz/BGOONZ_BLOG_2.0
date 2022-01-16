@@ -8581,4 +8581,6000 @@ Another use of the word is when talking about _Glossary("Node.js"_)
 
 In _Glossary("JavaScript"_), `null` is marked as one of the _Glossary("Primitive", "primitive values"_), because its behavior is seemingly primitive.
 
-But 
+But in certain cases, `null` is not as "primitive" as it first seems! Every Object is derived from `null` value, and therefore `typeof` operator returns `object` for it:
+
+```js
+typeof null === 'object' // true
+```
+
+#### See also
+
+- [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+- The JavaScript global object: _jsxref("null"_)
+- _Interwiki("wikipedia", "Null pointer"_) on Wikipedia
+- **[Glossary](/en-US/docs/Glossary)**
+
+  - _Glossary("JavaScript"_)
+  - _Glossary("string"_)
+  - _Glossary("number"_)
+  - _Glossary("bigint"_)
+  - _Glossary("boolean"_)
+  - _Glossary("null"_)
+  - _Glossary("undefined"_)
+  - _Glossary("symbol"_)
+
+---
+
+
+## Term:  Nullish value
+  - Glossary
+  - JavaScript
+  - 'Null'
+  - Primitive
+  - undefined
+---
+
+
+> In [JavaScript](/en-US/docs/Glossary/JavaScript), a nullish value is the value which is either _JSxRef("null"_) or _JSxRef("undefined"_). Nullish values are always [falsy](/en-US/docs/Glossary/Falsy).
+
+---
+
+
+## Term:  Number
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> In _Glossary("JavaScript"_), **Number** is a numeric data type in the [double-precision 64-bit floating point format (IEEE 754)](https://en.wikipedia.org/wiki/Double_precision_floating-point_format). In other programming languages different numeric types exist; for example, Integers, Floats, Doubles, or Bignums.
+
+#### See also
+
+- _Interwiki("wikipedia", "Data type#Numeric_types", "Numeric types"_) on Wikipedia
+- The JavaScript type: [`Number`](/en-US/docs/Web/JavaScript/Data_structures#number_type)
+- The JavaScript global object _jsxref("Number"_)
+- [Glossary:](/en-US/docs/Glossary)
+
+  - _Glossary("JavaScript"_)
+  - _Glossary("Primitive"_)
+
+---
+
+
+## Term:  Object reference
+  - CodingScripting
+  - Glossary
+---
+
+
+> A link to an **_glossary("object"_)**. Object references can be used exactly like the linked objects.
+
+The concept of object references becomes clear when assigning the same object to more than one **_glossary("property"_)**. Rather than holding a copy of the object, each assigned property holds object references that link to the same object, so that when the object changes all properties referring to the object reflect the change.
+
+#### See also
+
+- _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+
+---
+
+
+## Term:  Object
+  - CodingScripting
+  - Glossary
+  - Intro
+  - Object
+---
+
+
+> In JavaScript, objects can be seen as a collection of properties. With the [object literal syntax](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals), a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using _key_ values. A _key_ value is either a _Glossary("String", "String value"_) or a _Glossary("Symbol", "Symbol value"_).
+
+There are two types of object properties: The [_data_ property](/en-US/docs/Web/JavaScript/Data_structures#data_property) and the [_accessor_ property](/en-US/docs/Web/JavaScript/Data_structures#accessor_property).
+
+> **Note:** It’s important to recognize it’s accessor _property_ — not accessor _method_. We can give a JavaScript object class-_like_ accessors by using a function as a value — but that doesn't make the object a class.
+
+#### See also
+
+- [Detailed explanation of JavaScript objects](/en-US/docs/Web/JavaScript/Data_structures#objects) in the [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures) article
+- _jsxref("Object"_) in the [JavaScript reference](/en-US/docs/Web/JavaScript/Reference)
+
+---
+
+
+## Term:  OOP
+  - Beginner
+  - CodingScripting
+  - Glossary
+---
+
+
+> **OOP** (Object-Oriented Programming) is an approach in programming in which data is encapsulated within **_glossary("object","objects"_)** and the object itself is operated on, rather than its component parts.
+
+_glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-based model ([as opposed to class-based](/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages)).
+
+#### See also
+
+- _Interwiki("wikipedia", "Object-oriented programming"_) on Wikipedia
+- [Introduction to object-oriented JavaScript](/en-US/docs/Learn/JavaScript/Objects)
+
+---
+
+
+## Term:  OpenGL
+  - CodingScripting
+  - Glossary
+  - OpenGL
+---
+
+
+> **OpenGL** (**Open Graphics Library**) is a cross-language, multi-platform application programming interface (API) for rendering 2D and 3D vector graphics. The API is typically used to interact with a graphics processing unit (GPU), to achieve hardware-accelerated rendering.
+
+#### See also
+
+- _Interwiki("wikipedia", "OpenGL"_) on Wikipedia
+- [OpenGL](https://www.opengl.org/)
+
+---
+
+
+## Term:  OpenSSL
+  - Glossary
+  - Security
+---
+
+
+> OpenSSL is an open-source implementation of _glossary("SSL"_) and _glossary("TLS"_).
+
+#### See also
+
+- _Interwiki("wikipedia", "OpenSSL"_) on Wikipedia
+- [Official website](https://www.openssl.org/)
+
+---
+
+
+## Term:  Opera Browser
+  - Browser
+  - Glossary
+  - Navigation
+  - Opera
+  - Opera Browser
+---
+
+
+> **Opera** is the fifth most used web _glossary("browser"_), publicly released in 1996 and initially running on Windows only. Opera uses _glossary("Blink"_) as its layout engine since 2013 (before that, _glossary("Presto"_)). Opera also exists in mobile and tablet versions.
+
+#### See also
+
+- _Interwiki("wikipedia", "Opera Browser"_) on Wikipedia
+- [Opera browser web site](https://www.opera.com/)
+
+---
+
+
+## Term:  Operand
+  - CodingScripting
+  - Glossary
+---
+
+
+> An **operand** is the part of an instruction representing the data manipulated by the _glossary("operator"_). For example, when you add two numbers, the numbers are the operand and "+" is the operator.
+
+#### See also
+
+- _Interwiki("wikipedia", "Operand"_) on Wikipedia
+
+---
+
+
+## Term:  Operator
+  - CodingScripting
+  - Glossary
+---
+
+
+> Reserved **syntax** consisting of punctuation or alphanumeric characters that carries out built-in functionality. For example, in JavaScript the addition operator ("+") adds numbers together and concatenates strings, whereas the "not" operator ("!") negates an expression — for example making a `true` statement return `false`.
+
+#### See also
+
+- _Interwiki("wikipedia", "Operator (computer programming)"_) on Wikipedia
+- [JavaScript operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+
+---
+
+
+## Term:  Origin
+  - Glossary
+  - Security
+  - WebMechanics
+  - origin
+---
+
+
+> Web content's **origin** is defined by the _scheme_ (protocol), _hostname_ (domain), and _port_ of the _Glossary("URL"_) used to access it. Two objects have the same origin only when the scheme, hostname, and port all match.
+
+Some operations are restricted to same-origin content, and this restriction can be lifted using _Glossary("CORS"_).
+
+## Examples
+
+These are same origin because they have the same scheme (`http`) and hostname (`example.com`), and the different file path does not matter:
+
+- `http://example.com/app1/index.html`
+- `http://example.com/app2/index.html`
+
+These are same origin because a server delivers HTTP content through port 80 by default:
+
+- `http://Example.com:80`
+- `http://example.com`
+
+These are not same origin because they use different schemes:
+
+- `http://example.com/app1`
+- `https://example.com/app2`
+
+These are not same origin because they use different hostnames:
+
+- `http://example.com`
+- `http://www.example.com`
+- `http://myapp.example.com`
+
+These are not same origin because they use different ports:
+
+- `http://example.com`
+- `http://example.com:8080`
+
+#### See also
+
+- [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+- _Glossary("Site"_)
+- [HTML specification: origin](https://html.spec.whatwg.org/multipage/origin.html#origin)
+
+---
+
+
+## Term:  OTA
+  - Glossary
+  - Infrastructure
+  - Intro
+  - OTA
+  - Over the air
+  - updates
+---
+
+
+> _Over The Air_ (**OTA**) refers to automatic updating of software on connected devices from a central server. All device owners receiving a given set of updates are on the same "channel", and each device often can access several channels (e.g. for production or engineering builds).
+
+#### See also
+
+- _Interwiki("wikipedia", "Over-the-air programming"_) on Wikipedia
+
+---
+
+
+## Term:  OWASP
+  - Glossary
+  - Security
+---
+
+
+> **OWASP** (Open Web Application Security Project) is a non-profit organization and worldwide network that works for security in Free Software, especially on the Web.
+
+#### See also
+
+- [Official website](https://www.owasp.org)
+
+---
+
+
+## Term:  P2P
+  - Glossary
+  - Infrastructure
+  - Networking
+  - P2P
+---
+
+
+> P2P (Peer-to-peer) is a computer networking architecture in which all participating nodes (_peers_) have equal privileges and share the workload. P2P differs from a client-server network architecture, where multiple _client_ nodes connect to centralized _servers_ for services. P2P is commonly found in Blockchain Applications.
+
+#### See also
+
+- [P2P](https://en.wikipedia.org/wiki/Peer-to-peer) on Wikipedia
+
+---
+
+
+## Term:  PAC
+  - CodingScripting
+  - Glossary
+---
+
+
+> A Proxy Auto-Configuration file (**PAC file**) is a file which contains a function, `FindProxyForURL()`, which is used by the browser to determine whether requests (including HTTP, HTTPS, and FTP) should go directly to the destination or if they need to be forwarded through a web proxy server.
+
+```js
+function FindProxyForURL(url, host) {
+  /* ... */
+}
+
+ret = FindProxyForURL(url, host)
+```
+
+See [Proxy Auto-Configuration (PAC) file](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) for details about how these are used and how to create new ones.
+
+#### See also
+
+- [PAC](https://en.wikipedia.org/wiki/Proxy_auto-config "Read about PAC files on Wikipedia") on Wikipedia
+- [Proxy Auto-Configuration file](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) on MDN
+
+---
+
+
+## Term:  Packet
+  - Glossary
+  - Network packet
+  - Packet
+  - Reference
+  - TCP
+  - Web Performance
+  - payload
+---
+
+
+> A packet, or network packet, is a formatted chunk of data sent over a network. The main components of a network packet are the user data and control information. The user data is known as the _payload_. The control information is the information for delivering the payload. It consists of network addresses for the source and destination, sequencing information, and error detection codes and is generally found in packet headers and footer.
+
+## What a packet contains
+
+### Hop limit
+
+A hop occurs when a packet is passed from one network to the next network. It is a field that is decreases by one each time a packet goes through, once it reaches 0 it has failed and the packet is discarded.
+
+Over time the number packets can cause traversing within closed circuits, the number of packets circulating would build up and then ultimately lead to the networking in failing.
+
+### Error detection and correction
+
+Error detection and correction are codes that are used to detect and apply corrections to the errors that occur when data is transmitted to the receiver. There are two types of error corrections backward and forward error correction. Backward error correction is when the receiver requests the sender to retransmit the entire data unit. Forward error correction is when the receiver uses the error-correcting code which automatically corrects the errors
+
+At the transmitter, the calculation is performed before the packet is sent. When received at the destination, the checksum is recalculated, and compared with the one in the packet.
+
+### Priority
+
+This field indicates which packet should have higher priority over the others. The high priority queue is emptied more quickly than lower priority queues when the network is congested.
+
+### Addresses
+
+When routing network packets it requires two network addresses the source address of the sending host, and the destination address of the receiving host.
+
+### User Data - Payload
+
+Payload is the data that is carried on behalf of an application. It is usually of variable length, up to a maximum that is set by the network protocol and sometimes the equipment on the route.
+
+## References used
+
+- <https://en.wikipedia.org/wiki/Network_packet>
+- [https://en.m.wikipedia.org/wiki/Hop\_(networking)](<https://en.wikipedia.org/wiki/Hop_(networking)>)
+- <https://www.techradar.com/news/computing/how-error-detection-and-correction-works-1080736>
+
+---
+
+
+## Term:  Page load time
+  - Glossary
+  - Timings
+  - Web Performance
+  - metrics
+  - page load time
+---
+
+
+> **Page load time** is the time it takes for a page to load, measured from [navigation start](/en-US/docs/Web/API/PerformanceTiming/navigationStart) to the [start of the load event](/en-US/docs/Web/API/PerformanceTiming/loadEventStart).
+
+```js
+let time = performance.timing;
+
+let pageloadtime = time.loadEventStart - time.navigationStart;
+```
+
+While page load time 'sounds' like the perfect web performance metric, it isn't. Load times can vary greatly between users depending on device capabilities, network conditions, and, to a lesser extent, distance from the server. The development environment, where page load time is measured, is likely an optimal experience, not reflective of your users' reality. In addition, web performance isn't just about when the load event happens. It's also about [perceived performance](/en-US/docs/Glossary/Perceived_performance), responsiveness, [jank](/en-US/docs/Glossary/Jank) and jitter.
+
+#### See also
+
+- [Navigation and resource timing](/en-US/docs/Web/Performance/Navigation_and_resource_timings)
+- _domxref("PerformanceNavigationTiming"_)
+- _domxref("PerformanceResourceTiming"_),
+
+---
+
+
+## Term:  Page prediction
+  - Glossary
+  - Security
+  - Web Performance
+  - page prediction
+---
+
+
+> **Page Prediction** is a browser feature or script which, when enabled, tells the browser to download resources the user is likely to visit before the user requests the content. Page prediction improves performance by enabling almost instant loading of predicted content. However, page prediction may also download content a user does not seek.
+
+Some web applications include a prediction feature completing search text and address bar URLs based on browsing history and related searches. For example, as the user types in the address bar, the browser might send the current text in the address bar to the search engine before the user submits the request.
+
+Although browser page prediction and prediction services enable faster page loads, they consume additional bandwidth. Also, pre-loaded websites and embedded content can set and read their cookies as if they were visited even if they weren't.
+
+#### See also
+
+- [prerender](/en-US/docs/Glossary/prerender)
+- [prefetch](/en-US/docs/Glossary/Prefetch)
+
+---
+
+
+## Term:  Parameter
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> A parameter is a named variable passed into a _Glossary("function"_). Parameter variables are used to import _Glossary("argument","arguments"_) into functions.
+
+For example:
+
+```js
+function example(parameter) {
+  console.log(parameter); // Output = foo
+}
+
+const argument = 'foo';
+
+example(argument);
+```
+
+
+Note the difference between _parameters_ and _arguments_:
+
+- Function parameters are the names listed in the function's definition.
+- Function _Glossary("argument","arguments"_) are the real values passed to the function.
+- Parameters are initialized to the values of the arguments supplied.
+
+Two kinds of parameters:
+
+- input parameters
+  - : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
+- output/return parameters
+  - : primarily return multiple values from a function, but not recommended since they cause confusion
+
+#### See also
+
+- [Difference between _parameter_ and _argument_](https://en.wikipedia.org/wiki/Parameter_%28computer_programming%29#Parameters_and_arguments) on Wikipedia
+- [Function declaration](/en-US/docs/Web/JavaScript/Reference/Statements/function)
+- [Function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function)
+
+---
+
+
+## Term:  Parent object
+  - CodingScripting
+  - Glossary
+  - NeedsContent
+---
+
+
+> The _glossary("object"_) to which a given _glossary("property"_) or _glossary("method"_) belongs.
+
+#### See also
+
+- [Discussion of Inheritance and prototypes in JavaScript](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+---
+
+
+## Term:  Parse
+  - Browser
+  - CSS
+  - CodingScripting
+  - Glossary
+  - HTML
+  - JavaScript
+  - Web Performance
+---
+
+
+> Parsing means analyzing and converting a program into an internal format that a runtime environment can actually run, for example the _glossary("JavaScript"_) engine inside browsers.
+
+
+
+When the browser encounters CSS styles, it parses the text into the CSS Object Model (or _glossary('CSSOM'_)), a data structure it then uses for styling layouts and painting. The browser then creates a render tree from both these structures to be able to paint the content to the screen. JavaScript is also downloaded, parsed, and then execute.
+
+JavaScript parsing is done during _glossary("compile time"_) or whenever the _glossary("parser"_) is invoked, such as during a call to a method.
+
+#### See also
+
+- [Parse](https://en.wikipedia.org/wiki/Parsing) on Wikipedia
+
+---
+
+
+## Term:  Parser
+  - CodingScripting
+  - Glossary
+---
+
+
+> A **parser** is the module of a compiler or interpreter that _glossary("parse","parses"_) a source code file.
+
+More generally, it's a piece of software that parses text and transforms its content to another representation.
+
+#### See also
+
+- [Parser](https://en.wikipedia.org/wiki/Parsing#Parser) on Wikipedia
+
+---
+
+
+## Term:  Payload body
+  - HTTP
+  - HTTP Header
+---
+
+
+> The HTTP message *payload body* is the *information* ("payload") part of the data that is sent in the HTTP Message Body (if any), prior to _HTTPHeader("Transfer-Encoding","transfer encoding"_) being applied. If transfer encoding is not used, the _payload body_ and _message body_ are the same thing!
+
+For example, in this response the message body contains only the payload body: "Mozilla Developer Network":
+
+```plain
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+Mozilla Developer Network
+```
+
+By contrast, the below response uses _transfer encoding_ to encode the payload body into chunks. The payload body (information) sent is still "Mozilla Developer Network", but the message body includes additional data to separate the chunks:
+
+```plain
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Transfer-Encoding: chunked
+
+7\r\n
+Mozilla\r\n
+9\r\n
+Developer\r\n
+7\r\n
+Network\r\n
+0\r\n
+\r\n
+```
+
+For more information see [RFC 7230, section 3.3: Message Body](https://datatracker.ietf.org/doc/html/rfc7230#section-3.3) and [RFC 7230, section 3.3.1: Transfer-Encoding](https://datatracker.ietf.org/doc/html/rfc7230#section-3.3.1).
+
+---
+
+
+## Term:  Payload header
+  - Glossary
+  - Payload header
+  - Headers
+  - WebMechanics
+---
+
+
+> A **payload header** is an _Glossary("HTTP_header", "HTTP header"_) that describes the payload information related to safe transport and reconstruction of the original resource _Glossary("Representation header", "representation"_), from one or more messages. This includes information like the length of the message payload, which part of the resource is carried in this payload (for a multi-part message), any encoding applied for transport, message integrity checks, etc.
+
+Payload headers may be present in both HTTP request and response messages (i.e. in any message that is carrying payload data).
+
+The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Content-Range"_), _HTTPHeader("Trailer"_), and _HTTPHeader("Transfer-Encoding"_).
+
+#### See also
+
+- [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+
+  - _HTTPHeader("Content-Length"_)
+  - _HTTPHeader("Content-Range"_)
+  - _HTTPHeader("Trailer"_)
+  - _HTTPHeader("Transfer-Encoding"_)
+  - _Glossary("Representation header"_)
+
+- [RFC 7231, section 3.3: Payload semantics](https://datatracker.ietf.org/doc/html/rfc7231#section-3.3)
+
+---
+
+
+## Term:  PDF
+  - Composing
+  - Glossary
+  - PDF
+  - Portable Document Format
+---
+
+
+> **PDF** (Portable Document Format) is a file format used to share documentation without depending on any particular software implementation, hardware platform, or operating system. PDF provides a digital image of a printed document, and keeps the same appearance when printed.
+
+#### See also
+
+- _Interwiki("wikipedia", "Portable Document Format", "PDF"_) on Wikipedia
+
+---
+
+
+## Term:  Perceived performance
+  - Glossary
+  - Perceived Performance
+  - Reference
+  - Web Performance
+---
+
+
+> **Perceived performance** is a measure of how fast, responsive, and reliable a website _feels_ to its users. The perception of how well a site is performing can have more impact on the user experience that the actual load and response times.
+
+#### See also
+
+- [Perceived performance](/en-US/docs/Learn/Performance/Perceived_performance)
+
+---
+
+
+## Term:  Percent-encoding
+  - Glossary
+  - WebMechanics
+---
+
+
+> **Percent-encoding** is a mechanism to encode 8-bit characters that have specific meaning in the context of _Glossary("URL", "URLs"_). It is sometimes called URL encoding. The encoding consists of substitution: A '%' followed by the hexadecimal representation of the ASCII value of the replace character.
+
+Special characters needing encoding are: `':'`, `'/'`, `'?'`, `'#'`, `'['`, `']'`, `'@'`, `'!'`, `'$'`, `'&'`, `"'"`, `'('`, `')'`, `'*'`, `'+'`, `','`, `';'`, `'='`, as well as `'%'` itself. Other characters don't need to be encoded, though they could.
+
+| Character | Encoding     |
+| --------- | ------------ |
+| `':'`     | `%3A`        |
+| `'/'`     | `%2F`        |
+| `'?'`     | `%3F`        |
+| `'#'`     | `%23`        |
+| `'['`     | `%5B`        |
+| `']'`     | `%5D`        |
+| `'@'`     | `%40`        |
+| `'!'`     | `%21`        |
+| `'$'`     | `%24`        |
+| `'&'`     | `%26`        |
+| `"'"`     | `%27`        |
+| `'('`     | `%28`        |
+| `')'`     | `%29`        |
+| `'*'`     | `%2A`        |
+| `'+'`     | `%2B`        |
+| `','`     | `%2C`        |
+| `';'`     | `%3B`        |
+| `'='`     | `%3D`        |
+| `'%'`     | `%25`        |
+| `' '`     | `%20` or `+` |
+
+Depending on the context, the character `' '` is translated to a `'+'` (like in the percent-encoding version used in an `application/x-www-form-urlencoded` message), or in `'%20'` like on URLs.
+
+#### See also
+
+- Definition of [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding) in Wikipedia.
+- _RFC(3986_), section 2.1, where this encoding is defined.
+
+---
+
+
+## Term:  PHP
+  - Beginner
+  - CodingScripting
+  - Glossary
+  - Infrastructure
+  - Intro
+  - PHP
+---
+
+
+> PHP (a recursive initialism for PHP: Hypertext Preprocessor) is an open-source server-side scripting language that can be embedded into HTML to build web applications and dynamic websites.
+
+## Examples
+
+### Basic syntax
+
+```php
+  // start of PHP code
+<?php
+     // PHP code goes here
+ ?>
+// end of PHP code
+```
+
+### Printing data on screen
+
+```php
+<?php
+   echo "Hello World!";
+?>
+```
+
+### PHP variables
+
+```php
+<?php
+ // variables
+ $nome='Danilo';
+ $sobrenome='Santos';
+ $pais='Brasil';
+ $email='danilocarsan@gmailcom';
+
+ // printing the variables
+ echo $nome;
+ echo $sobrenome;
+ echo $pais;
+ echo $email;
+?>
+```
+
+#### See also
+
+- [Official website](https://php.net/)
+- _Interwiki("wikipedia", "PHP"_) on Wikipedia
+- [PHP](https://en.wikibooks.org/wiki/PHP_Programming) on Wikibooks
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Java"_)
+  - _Glossary("JavaScript"_)
+  - _Glossary("Python"_)
+  - _Glossary("Ruby"_)
+
+---
+
+
+## Term:  Pixel
+  - Design
+  - Glossary
+  - Graphics
+---
+
+
+> A pixel is the smallest building block of a graphical display like a computer screen.
+
+Display resolution is expressed in the unit of pixels. eg: A “800 x 600” pixel resolution means that 800 pixels can be displayed in width and 600 pixels in height.
+
+#### See also
+
+- [Pixel ](https://en.wikipedia.org/wiki/Pixel)on Wikipedia
+
+---
+
+
+## Term:  Placeholder names
+  - Cryptography
+  - Glossary
+  - Security
+---
+
+
+> Placeholder names are commonly used in cryptography to indicate the participants in a conversation, without resorting to terminology such as "Party A," "eavesdropper," and "malicious attacker."
+
+The most commonly used names are:
+
+- _Alice_ and _Bob_, two parties who want to send messages to each other, occasionally joined by _Carol_, a third participant
+- _Eve_, a passive attacker who is eavesdropping on Alice and Bob's conversation
+- _Mallory_, an active attacker ("man-in-the-middle") who is able to modify their conversation and replay old messages
+
+---
+
+
+## Term:  Plaintext
+  - Cryptography
+  - Glossary
+  - Security
+---
+
+
+> Plaintext refers to information that is being used as an input to an _Glossary("encryption"_) _Glossary("algorithm"_), or to _Glossary("ciphertext"_) that has been decrypted.
+
+It is frequently used interchangeably with the term _cleartext_, which more loosely refers to any information, such as a text document, image, etc., that has not been encrypted and can be read by a human or computer without additional processing.
+
+---
+
+
+## Term:  Plugin
+---
+
+
+> A browser plugin is a software component that users can install to handle content that the browser can't support natively. Browser plugins are usually written using the [NPAPI](https://en.wikipedia.org/wiki/NPAPI) (Netscape Plugin Application Programming Interface) architecture.
+
+The most well-known and widely used plugin was the Adobe Flash player, which enabled browsers to run _Glossary("Adobe Flash"_) content.
+
+As browsers have become more powerful, plugins have become less useful. Plugins also have a history of causing security and performance problems for web users.
+
+Between 2016 and 2021 browser vendors worked on a deprecation roadmap for plugins and in particular for Adobe Flash, and today plugins are no longer supported by any major browsers.
+
+Plugins should not be confused with browser extensions, which unlike plugins are distributed as source code rather than binaries, and which are still supported by browsers, notably using the _Glossary("WebExtensions"_) system.
+
+#### See also
+
+- [Adobe Flash end-of-life announcement](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update#gs.g8mmgf)
+
+---
+
+
+## Term:  PNG
+  - Beginner
+  - Composing
+  - Glossary
+  - Infrastructure
+  - PNG
+---
+
+
+> **PNG** (Portable Network Graphics) is a graphics file format that supports lossless data compression.
+
+#### See also
+
+- [PNG ](https://en.wikipedia.org/wiki/Portable_Network_Graphics)on Wikipedia
+
+---
+
+
+## Term:  Polyfill
+  - Browser Support
+  - CodingScripting
+  - Glossary
+  - JavaScript
+  - polyfill
+---
+
+
+> A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
+
+For example, a polyfill could be used to mimic the functionality of a _cssxref("text-shadow"_) in IE7 using proprietary IE filters, or mimic rem units or media queries by using JavaScript to dynamically adjust the styling as appropriate, or whatever else you require.
+
+The reason why polyfills are not used exclusively is for better functionality and better performance. Native implementations of APIs can do more and are faster than polyfills. For example, the [Object.create polyfill](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#polyfill) only contains the functionalities that are possible in a non-native implementation of Object.create.
+
+Other times, polyfills are used to address issues where browsers implement the same features in different ways. The polyfill uses non-standard features in a certain browser to give JavaScript a standards-compliant way to access the feature. Although this reason for polyfilling is very rare today, it was especially prevalent back in the days of IE6 and Netscape where each browser implemented JavaScript very differently. The [1st version of JQuery](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js) was an early example of a polyfill. It was essentially a compilation of browser-specific workarounds to provide JavaScript developers with a single common API that worked in all browsers. At the time, JavaScript developers were having major problems trying to get their website to work across all devices because there was such a discrepancy between browsers that the website might have to be programmed radically differently and have a much different user interface based upon the user's browser. Thus, the JavaScript developer had access to only a very tiny handful of JavaScript APIs that worked more-or-less consistently across all browsers. Using a polyfill to handle browser-specific implementations is less common today because modern browsers mostly implement a broad set of APIs according to standard semantics.
+
+#### See also
+
+- [What is a polyfill?](https://remysharp.com/2010/10/08/what-is-a-polyfill) (article by Remy Sharp, the originator of the term)
+
+---
+
+
+## Term:  Polymorphism
+  - CodingScripting
+  - Glossary
+---
+
+
+> Polymorphism is the presentation of one interface for multiple data types.
+
+For example, integers, floats, and doubles are implicitly polymorphic: regardless of their different types, they can all be added, subtracted, multiplied, and so on.
+
+In the case of _glossary("OOP"_), by making the _glossary("class"_) responsible for its code as well as its own data, polymorphism can be achieved in that each class has its own _glossary("function"_) that (once called) behaves properly for any _glossary("object"_).
+
+#### See also
+
+- [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29) on Wikipedia
+
+---
+
+
+## Term:  POP3
+  - Beginner
+  - Glossary
+  - Infrastructure
+---
+
+
+> **POP3** (Post Office Protocol) is a very common _glossary("protocol"_) for getting emails from a mail server over a _glossary("TCP"_) connection. POP3 does not support folders, unlike the more recent _Glossary("IMAP"_), which is harder to implement because of its more complex structure.
+
+Clients usually retrieve all messages and then delete them from the server, but POP3 does allow retaining a copy on the server. Nearly all email servers and clients currently support POP3.
+
+#### See also
+
+- _Interwiki("wikipedia", "Post Office Protocol", "POP"_) on Wikipedia
+- [RFC 1734](https://datatracker.ietf.org/doc/html/rfc1734) (Specification of POP3 authentication mechanism)
+- [RFC 1939](https://datatracker.ietf.org/doc/html/rfc1939) (Specification of POP3)
+- [RFC 2449](https://datatracker.ietf.org/doc/html/rfc2449) (Specification of POP3 extension mechanism)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+  - _Glossary("IMAP"_)
+
+---
+
+
+## Term:  Port
+  - Glossary
+  - Intro
+  - Security
+  - computer network
+  - port
+---
+
+
+> For a computer connected to a network with an _Glossary("IP address"_), a **port** is a communication endpoint. Ports are designated by numbers, and below 1024 each port is associated by default with a specific _Glossary("protocol"_).
+
+For example, the default port for the _Glossary("HTTP"_) protocol is 80 and the default port for the HTTPS protocol is 443, so a _Glossary("HTTP"_) server waits for requests on those ports. Each Internet protocol is associated with a default port: _Glossary("SMTP"_) (25), _Glossary("POP"_) (110), _Glossary("IMAP"_) (143), _Glossary("IRC"_) (194), and so on.
+
+#### See also
+
+- _Interwiki("wikipedia", "Port (computer networking)" , "Port"_) on Wikipedia
+
+---
+
+
+## Term:  Prefetch
+  - Glossary
+  - Prefetch
+  - Reference
+  - Web Performance
+---
+
+
+> Prefetching is when content is downloaded in the background, this is based on the assumption that the content will likely be requested, enabling the content to load instantly if and when the user requests it. The content is downloaded and cached for anticipated future use without the user making an explicit request for it.
+
+### DNS Prefetching
+
+Domain lookups can be slow, especially with network latency on mobile phones. They are most relevant when there are a plethora of links to external websites that may be clicked on, like search engine results, DNS prefetching resolves domain names in advance thereby speeding up load times by reducing the time associated with domain lookup at request time.
+
+    <link rel="dns-prefetch" href="https://example.com/">
+
+### Link prefetching
+
+Link prefetching is a performance optimization technique that works by assuming which links the user is likely to click, then downloading the content of those links. If the user decides to click on one of the links, then the page will be rendered instantly as the content has already been downloaded.
+
+The prefetch hints are sent in HTTP headers:
+
+    Link: ; rel=dns-prefetch,
+          ; as=script; rel=preload,
+          ; rel=prerender,
+          ; as=style; rel=preload
+
+### Prefetch attribute value
+
+Browsers will prefetch content when the prefetch [`<link>`](/en-US/docs/Web/HTML/Element/link) tag directs it to, giving the developer control over what resources should be prefetched.
+
+     <link rel="prefetch" href="https://www.example.com/solutions" />
+
+#### See also
+
+- defer
+- async
+- [preload](/en-US/docs/Web/HTML/Link_types/preload)
+- [page prediction](/en-US/docs/Glossary/Page_prediction)
+- [lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+
+---
+
+
+## Term:  Preflight request
+  - CORS
+  - Glossary
+  - HTTP
+  - Preflight
+  - request
+---
+
+
+> A CORS preflight request is a _Glossary("CORS"_) request that checks to see if the CORS protocol is understood and a server is aware using specific methods and headers.
+
+It is an _HTTPMethod("OPTIONS"_) request, using three HTTP request headers: _HTTPHeader("Access-Control-Request-Method"_), _HTTPHeader("Access-Control-Request-Headers"_), and the _HTTPHeader("Origin"_) header.
+
+A preflight request is automatically issued by a browser and in normal cases, front-end developers don't need to craft such requests themselves. It appears when request is qualified as ["to be preflighted"](/en-US/docs/Web/HTTP/CORS#preflighted_requests) and omitted for [simple requests](/en-US/docs/Web/HTTP/CORS#simple_requests).
+
+For example, a client might be asking a server if it would allow a _HTTPMethod("DELETE"_) request, before sending a `DELETE` request, by using a preflight request:
+
+```plain
+OPTIONS /resource/foo
+Access-Control-Request-Method: DELETE
+Access-Control-Request-Headers: origin, x-requested-with
+Origin: https://foo.bar.org
+```
+
+If the server allows it, then it will respond to the preflight request with an _HTTPHeader("Access-Control-Allow-Methods"_) response header, which lists `DELETE`:
+
+```plain
+HTTP/1.1 204 No Content
+Connection: keep-alive
+Access-Control-Allow-Origin: https://foo.bar.org
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 86400
+```
+
+The preflight response can be optionally cached for the requests created in the same _Glossary("URL"_) using _HTTPHeader("Access-Control-Max-Age"_) header like in the above example.
+
+#### See also
+
+- _Glossary("CORS"_)
+- _HTTPMethod("OPTIONS"_)
+
+---
+
+
+## Term:  Prerender
+  - Glossary
+  - Prefetch
+  - Security
+  - Web Performance
+  - prerender
+---
+
+
+> With prerendering, the content is [prefetched](/en-US/docs/Glossary/Prefetch) and then rendered in the background by the browser as if the content had been rendered into an invisible separate tab. When the user navigates to the prerendered content, the current content is replaced by the prerendered content instantly.
+
+```html
+<link rel="prerender" href="https://example.com/content/to/prerender">
+```
+
+#### See also
+
+- [prefetch](/en-US/docs/Glossary/Prefetch)
+
+---
+
+
+## Term:  Presto
+  - Glossary
+  - Infrastructure
+---
+
+
+> Presto was the proprietary browser layout engine used to power the _Glossary("Opera browser"_) until version 15. Since then, the Opera browser is based on Chromium, which uses the _Glossary('Blink'_) layout engine.
+
+#### See also
+
+- [Presto layout engine](https://en.wikipedia.org/wiki/Presto_%28layout_engine%29) on Wikipedia
+
+---
+
+
+## Term:  Primitive
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> In _Glossary("JavaScript"_), a **primitive** (primitive value, primitive data type) is data that is not an _Glossary("object"_) and has no _glossary("method","methods"_). There are 7 primitive data types: _Glossary("string"_), _Glossary("number"_), _Glossary("bigint"_), _Glossary("boolean"_), _Glossary("undefined"_), _Glossary("symbol"_), and _Glossary("null"_).
+
+Most of the time, a primitive value is represented directly at the lowest level of the language implementation.
+
+All primitives are **immutable**, i.e., they cannot be altered. It is important not to confuse a primitive itself with a variable assigned a primitive value. The variable may be reassigned a new value, but the existing value can not be changed in the ways that objects, arrays, and functions can be altered.
+
+## Example
+
+This example will help you understand that primitive values are **immutable.**
+
+### JavaScript
+
+```js
+// Using a string method doesn't mutate the string
+var bar = "baz";
+console.log(bar);               // baz
+bar.toUpperCase();
+console.log(bar);               // baz
+
+// Using an array method mutates the array
+var foo = [];
+console.log(foo);               // []
+foo.push("plugh");
+console.log(foo);               // ["plugh"]
+
+// Assignment gives the primitive a new (not a mutated) value
+bar = bar.toUpperCase();       // BAZ
+```
+
+A primitive can be replaced, but it can't be directly altered.
+
+## Primitive wrapper objects in JavaScript
+
+Except for `null` and `undefined`, all primitive values have object equivalents that wrap around the primitive values:
+
+- _jsxref("String"_) for the string primitive.
+- _jsxref("Number"_) for the number primitive.
+- _jsxref("BigInt"_) for the bigint primitive.
+- _jsxref("Boolean"_) for the boolean primitive.
+- _jsxref("Symbol"_) for the symbol primitive.
+
+The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf) method returns the primitive value.
+
+#### See also
+
+- [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+- _Interwiki("wikipedia", "Primitive data type"_) (Wikipedia)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("JavaScript"_)
+  - _Glossary("string"_)
+  - _Glossary("number"_)
+  - _Glossary("bigint"_)
+  - _Glossary("boolean"_)
+  - _Glossary("null"_)
+  - _Glossary("undefined"_)
+  - _Glossary("symbol"_)
+
+---
+
+
+## Term:  privileged code
+  - privileged
+---
+
+
+> **Privileged code** - Javascript code of your extension. For example, code in content scripts.
+
+**Non-privileged** - Javascript on web-page.
+
+---
+
+
+## Term:  Privileged
+  - Glossary
+  - Security
+---
+
+
+> Users are said to be **privileged** when they are granted additional rights to a system, or given ultimate access to content in a higher priority level when compared to normal users.
+
+#### See also
+
+- _Interwiki("wikipedia", "Privilege (computing)"_) on Wikipedia
+- [Information Security Tutorial](/en-US/docs/Web/Security/Information_Security_Basics)
+
+---
+
+
+## Term:  Progressive Enhancement
+  - Accessibility
+  - Design
+  - Glossary
+---
+
+
+> **Progressive enhancement** is a design philosophy that provides a baseline of essential content and functionality to as many users as possible, while delivering the best possible experience only to users of the most modern browsers that can run all the required code.
+
+The word _progressive_ in _progressive enhancement_ means creating a design that achieves a simpler-but-still-usable experience for users of older browsers and devices with limited capabilities, while at the same time being a design that **progresses the user experience up** to a more-compelling, fully-featured experience for users of newer browsers and devices with richer capabilities.
+
+[Feature detection](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) is generally used to determine whether browsers can handle more modern functionality, while [polyfills](/en-US/docs/Glossary/Polyfill) are often used to add missing features with JavaScript.
+
+Special notice should be taken of accessibility. Acceptable alternatives should be provided where possible.
+
+Progressive enhancement is a useful technique that allows web developers to focus on developing the best possible websites while making those websites work on multiple unknown user agents. _Glossary("Graceful degradation"_) is related but is not the same thing and is often seen as going in the opposite direction to progressive enhancement. In reality both approaches are valid and can often complement one another.
+
+#### See also
+
+- _Interwiki("wikipedia", "Progressive enhancement"_) at Wikipedia
+- [What is Progressive Enhancement, and why it matters](https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/) at freeCodeCamp
+- [Progressive Enhancement reading list 2021](https://www.quirksmode.org/blog/archives/2021/02/progressive_enh_1.html) at QuirksMode
+- [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) by Aaron Gustafson; a 2008 _A List Apart_ article which first “placed progressive enhancement at the forefront of web developer thinking”
+- [Inclusive Web Design For the Future with Progressive Enhancement](http://hesketh.com/publications/inclusive_web_design_for_the_future/) ([related article)](http://www.hesketh.com/progressive_enhancement_and_the_future_of_web_design.html) by Steve Champeon and Nick Finck; a 2003 SXSW presentation cited by Aaron Gustafson as “unveiling a blueprint for a new way of approaching web development”, and naming it “progressive enhancement”
+
+---
+
+
+## Term:  Progressive web apps
+  - Composing
+  - Glossary
+  - Progressive web apps
+---
+
+
+> Progressive web apps is a term used to describe the modern state of web app development. This involves taking standard web sites/apps that enjoy all the best parts of the Web — such as discoverability via search engines, being linkable via _Glossary("URL"_)s, and working across multiple form factors — and supercharging them with modern APIs (such as [Service Workers](/en-US/docs/Web/API/Service_Worker_API) and [Push](/en-US/docs/Web/API/Push_API)) and features that confer other benefits more commonly attributed to native apps.
+
+These features include being installable, working offline, and being easy to sync with and re-engage the user from the server.
+
+#### See also
+
+- The [App Center](/en-US/docs/Web/Progressive_web_apps) on MDN
+- [Progressive web apps](https://web.dev/progressive-web-apps/) on Google Developers
+
+---
+
+
+## Term:  Promise
+  - Glossary
+  - Promise
+  - Promises
+  - asynchronous
+---
+
+
+> A **_jsxref("Promise"_)** is an _Glossary("object"_) that's returned by a _Glossary("function"_) that has not yet completed its work. The promise literally represents a promise made by the function that it will eventually return a result through the promise object.
+
+When the called function finishes its work _Glossary("asynchronous", "asynchronously"_), a function on the promise object called a resolution (or fulfillment, or completion) handler is called to let the original caller know that the task is complete.
+
+#### See also
+
+- _interwiki("wikipedia", "Futures and promises"_)
+- _jsxref("Promise"_) in the [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference).
+- [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
+
+---
+
+
+## Term:  Property
+  - Disambiguation
+  - Glossary
+---
+
+
+> The term **property** can have several meanings depending on the context. It may refer to:
+
+_GlossaryDisambiguation}}
+
+---
+
+
+## Term:  Protocol
+  - Glossary
+  - Infrastructure
+  - Protocols
+---
+
+
+> A **protocol** is a system of rules that define how data is exchanged within or between computers. Communications between devices require that the devices agree on the format of the data that is being exchanged. The set of rules that defines a format is called a protocol.
+
+#### See also
+
+- _Interwiki("wikipedia", "Communications protocol"_) on Wikipedia
+- [RFC Official Internet Protocol Standards](https://www.rfc-editor.org/search/standards.php)
+- [HTTP overview](/en-US/docs/Web/HTTP/Overview)
+- Glossary:
+
+  - _glossary("TCP"_)
+  - _glossary("Packet"_)
+
+---
+
+
+## Term:  Prototype-based programming
+  - CodingScripting
+  - Glossary
+---
+
+
+> **Prototype-based programming** is a style of _Glossary("OOP", "object-oriented programming"_) in which _Glossary('Class', 'classes'_) are not explicitly defined, but rather derived by adding properties and methods to an instance of another class or, less frequently, adding them to an empty object.
+
+In simple words: this type of style allows the creation of an _Glossary('Object', 'object'_) without first defining its _Glossary('Class', 'class'_).
+
+#### See also
+
+- _Interwiki("wikipedia", "Prototype-based programming", "Prototype-based programming"_) on Wikipedia
+
+---
+
+
+## Term:  Prototype
+  - Apps
+  - Composing
+  - Glossary
+---
+
+
+> A prototype is a model that displays the appearance and behavior of an application or product early in the development lifecycle.
+
+See [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+#### See also
+
+- _Interwiki("wikipedia", "Software Prototyping"_) on Wikipedia
+
+---
+
+
+## Term:  Proxy server
+  - Glossary
+  - Proxy
+  - Server
+---
+
+
+> A **proxy server** is an intermediate program or computer used when navigating through different networks of the Internet. They facilitate access to content on the World Wide Web. A proxy intercepts requests and serves back responses; it may forward the requests, or not (for example in the case of a cache), and it may modify it (for example changing its headers, at the boundary between two networks).
+
+A proxy can be on the user's local computer, or anywhere between the user's computer and a destination server on the Internet. In general there are two main types of proxy servers:
+
+- A **forward proxy** that handles requests from and to anywhere on the Internet.
+- A **reverse proxy** taking requests from the Internet and forwarding them to servers in an internal network.
+
+#### See also
+
+- [Proxy servers and tunneling](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling)
+- [Proxy server](https://en.wikipedia.org/wiki/Proxy_server) on Wikipedia
+
+---
+
+
+## Term:  Pseudo-class
+  - CSS
+  - CodingScripting
+  - Glossary
+  - Selector
+---
+
+
+> In CSS, a **pseudo-class** selector targets elements depending on their state rather than on information from the document tree. For example, the selector `a`_ cssxref(":visited") }} applies styles only to links that the user has already followed.
+
+#### See also
+
+- [Pseudo-class documentation](/en-US/docs/Web/CSS/Pseudo-classes)
+
+---
+
+
+## Term:  Pseudo-element
+  - CSS
+  - CodingScripting
+  - Glossary
+---
+
+
+> In CSS, a **pseudo-element** selector applies styles to parts of your document content in scenarios where there isn't a specific HTML element to select. For example, rather than putting the first letter of each paragraph in its own element, you can style them all with `p`_ Cssxref("::first-letter") }}.
+
+#### See also
+
+- [Pseudo-elements](/en-US/docs/Web/CSS/Pseudo-elements)
+
+---
+
+
+## Term:  Pseudocode
+  - CodingScripting
+  - Glossary
+  - Pseudocode
+---
+
+
+> Pseudocode refers to code-like syntax that is generally used to indicate to humans how some code syntax works, or illustrate the design of an item of code architecture. It **won't** work if you try to run it as code.
+
+#### See also
+
+- _interwiki("wikipedia", "Pseudocode", "Pseudocode"_) on Wikipedia.
+
+---
+
+
+## Term:  Public-key cryptography
+  - Cryptography
+  - Glossary
+  - Public-key cryptography
+  - Security
+---
+
+
+> Public-key cryptography — or _asymmetric cryptography_ — is a cryptographic system in which keys come in pairs. The transformation performed by one of the keys can only be undone with the other key. One key (the _private key_) is kept secret while the other is made public.
+
+When used for digital signatures, the private key is used to sign and the public key to verify. This means that anyone can verify a signature, but only the owner of the corresponding private key could have generated it.
+
+When used for encryption, the public key is used to encrypt and the private key is used to decrypt. This gives public-key encryption systems an advantage over symmetric encryption systems in that the encryption key can be made public. Anyone could encrypt a message to the owner of the private key, but only the owner of the private key could decrypt it. However, they are typically much slower than symmetric algorithms and the size of message they can encrypt is proportional to the size of the key, so they do not scale well for long messages.
+
+As a result, it's common for an encryption system to use a symmetric algorithm to encrypt the message, then a public-key system to encrypt the symmetric key. This arrangement can confer the benefits of both systems.
+
+Commonly used public-key cryptosystems are RSA (for both signing and encryption), DSA (for signing) and Diffie-Hellman (for key agreement).
+
+#### See also
+
+- [Web Crypto API](/en-US/docs/Web/API/Web_Crypto_API)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Symmetric-key cryptography"_)
+
+---
+
+
+## Term:  Python
+  - CodingScripting
+  - Glossary
+  - Language
+  - Python
+  - programming
+---
+
+
+> **Python** is a high level general-purpose programming language. It uses a multi-paradigm approach, meaning it supports procedural, object-oriented, and some functional programming constructs.
+
+It was created by Guido van Rossum as a successor to another language (called ABC) between 1985 and 1990, and is currently used on a large array of domains like web development, desktop applications, data science, DevOps, and automation/productivity.
+
+Python is developed under an OSI-approved open source license, making it freely usable and distributable, even for commercial use. Python's license is administered by the [Python Software Foundation](https://www.python.org/psf).
+
+#### See also
+
+- _interwiki('wikipedia','Python (programming language)','Python'_) on Wikipedia
+- [Official Python docs tutorials](https://docs.python.org/3/tutorial/index.html)
+- [Tutorials Point Python tutorial](https://www.tutorialspoint.com/python/index.htm)
+- [AlphaCodingSkills Python Tutorial](https://www.alphacodingskills.com/python/python-tutorial.php)
+- [Django Web Framework (Python)](/en-US/docs/Learn/Server-side/Django) on MDN
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Java"_)
+  - _Glossary("JavaScript"_)
+  - _Glossary("PHP"_)
+  - _Glossary("Python"_)
+  - _Glossary("Ruby"_)
+
+---
+
+
+## Term:  Quality values
+  - Glossary
+  - WebMechanics
+---
+
+
+> **Quality values**, or _q-values_ and _q-factors_, are used to describe the order of priority of values in a comma-separated list. It is a special syntax allowed in some [HTTP headers](/en-US/docs/Web/HTTP/Headers) and in HTML.
+
+The importance of a value is marked by the suffix `';q='` immediately followed by a value between `0` and `1` included, with up to three decimal digits, the highest value denoting the highest priority. When not present, the default value is `1`.
+
+## Examples
+
+The following syntax
+
+```plain
+text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+```
+
+indicates the order of priority:
+
+| Value                                   | Priority |
+| --------------------------------------- | -------- |
+| `text/html` and `application/xhtml+xml` | `1.0`    |
+| `application/xml`                       | `0.9`    |
+| `*/*`                                   | `0.8`    |
+
+If there is no priority defined for the first two values, the order in the list is irrelevant. Nevertheless, with the same quality, more specific values have priority over less specific ones:
+
+```plain
+text/html;q=0.8,text/*;q=0.8,*/*;q=0.8
+```
+
+| Value       | Priority                      |
+| ----------- | ----------------------------- |
+| `text/html` | `0.8` (but totally specified) |
+| `text/*`    | `0.8` (partially specified)   |
+| `*/*`       | `0.8` (not specified)         |
+
+Some syntax, like the one of _HTTPHeader("Accept"_), allow additional specifiers like `text/html;level=1`. These increase the specificity of the value. Their use is extremely rare.
+
+## Browser-specific information
+
+### Firefox
+
+Starting with Firefox 18, the quality factor values are clamped to 2 decimal places. They used to be clamped to only 1 decimal place in earlier versions (_bug(672448_)).
+
+## More information
+
+- [HTTP headers](/en-US/docs/Web/HTTP/Headers) using q-values in their syntax: _HTTPHeader("Accept"_), _HTTPHeader("Accept-Language"_), _HTTPHeader("TE"_).
+- [Header field definitions.](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+
+---
+
+
+## Term:  Quaternion
+  - Definition
+  - Glossary
+  - Orientation
+  - Quaternion
+  - WebXR
+  - rotation
+---
+
+
+> A **quaternion** is the quotient of two 3D vectors and is used in 3D graphics and in accelerometer-based sensors to represent orientation or rotational data.
+
+While mathematical quaternions are more involved than this, the **unit quaternions** (or **rotational quaternions**) used to represent rotation while using [WebGL](/en-US/docs/Glossary/WebGL) or [WebXR](/en-US/docs/Web/API/WebXR_Device_API), for example, are represented using the same syntax as a 3D point. As such, the type _domxref("DOMPoint"_) (or _domxref("DOMPointReadOnly"_)) is used to store quaternions.
+
+#### See also
+
+- _interwiki("wikipedia", "Quaternions and spatial rotation"_) on Wikipedia
+- _interwiki("wikipedia", "Quaternion"_) on Wikipedia
+- _domxref("XRRigidTransform.orientation"_) in the WebXR Device API reference
+
+---
+
+
+## Term:  QUIC
+  - Glossary
+  - HTTP
+  - QUIC
+  - Reference
+  - Web Performance
+---
+
+
+> **Quick UDP Internet Connection**, or **QUIC**, is an experimental multiplexed transport protocol implemented on UDP. It was developed by Google as a way to experiment with ways to improve TCP and web application delivery.
+
+As TCP is built into the kernel of many operating systems being able to experiment with changes, test them and implement modifications is an extremely slow process. The creation of QUIC allows developers to conduct experiments and try new things faster.
+
+QUIC was designed to support the semantics of HTTP/2. It provides multiplexing, flow control, security and congestion control.
+
+Key features of QUIC include:
+
+- Reduction in connection establishment time.
+- Improved congestion control.
+- Multiplexing without head-of-line blocking.
+- Forward error correction.
+- Connection migration.
+
+There is limited browser and server support for QUIC today.
+
+### Resources
+
+- [Chromium Projects Documentation](https://www.chromium.org/quic)
+- [IETF Draft](https://datatracker.ietf.org/doc/html/draft-tsvwg-quic-protocol-02)
+
+#### See also
+
+- [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+
+---
+
+
+## Term:  RAIL
+  - Glossary
+  - RAIL
+  - Timings
+  - Web Performance
+---
+
+
+> **RAIL**, an acronym for **Response, Animation, Idle, and Load**, is a performance model originated by the Google Chrome team in 2015, focused on user experience and performance within the browser. The performance mantra of RAIL is "Focus on the user; the end goal isn't to make your site perform fast on any specific device, it's to make users happy." There are 4 stages of interaction: page load, idle, response to input, and scrolling and animation. In acronym order, the main tenets are:
+
+- **Response**
+  - : Respond to users immediately, acknowledging any user input in **100ms** or less.
+- **Animation**
+  - : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
+- **Idle**
+  - : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
+- **Load**
+  - : Deliver interactive content in less than **1 second**.
+
+#### See also
+
+- [Recommended Web Performance Timings: How long is too long](/en-US/docs/Web/Performance/How_long_is_too_long)
+
+---
+
+
+## Term:  Raster image
+  - CUR
+  - Documents
+  - Glossary
+  - ICO
+  - JPEG
+  - PNG
+  - gif
+  - raster image
+---
+
+
+> A **_raster image_** is an image file defined as a grid of pixels. They’re also referred to as _bitmaps_. Common raster image formats on the Web are [JPEG](/en-US/docs/Glossary/jpeg), [PNG](/en-US/docs/Glossary/PNG), [GIF](/en-US/docs/Glossary/gif), and [ICO](<https://en.wikipedia.org/wiki/ICO_(file_format)>).
+
+Raster image files usually contain one set of dimensions, but the ICO and CUR formats, used for favicons and [CSS cursor images](/en-US/docs/Web/CSS/cursor), can contain multiple sizes.
+
+#### See also
+
+- _glossary("Vector images"_)
+
+---
+
+
+## Term:  RDF
+  - CodingScripting
+  - Glossary
+  - Infrastructure
+  - OpenPractices
+  - WebMechanics
+---
+
+
+> **RDF** (Resource Description Framework) is a language developed by W3C for representing information on the World Wide Web, such as Webpages. RDF provides a standard way of encoding resource information so that it can be exchanged in a fully automated way between applications.
+
+#### See also
+
+- _Interwiki("wikipedia", "Resource Description Framework"_) on Wikipedia
+
+---
+
+
+## Term:  Real User Monitoring (RUM)
+  - Glossary
+  - RUM
+  - Reference
+  - Web Performance
+---
+
+
+> **Real User Monitoring** or RUM measures the performance of a page from real users' machines. Generally, a third party script injects a script on each page to measure and report page load data for every request made. This technique monitors an application’s actual user interactions. In RUM, the third party script collects performance metrics from the real users' browsers. RUM helps identify how an application is being used, including the geographic distribution of users and the impact of that distribution on the end user experience.
+
+#### See also
+
+- [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
+- [Synthetic Monitoring](/en-US/docs/Glossary/Synthetic_monitoring)
+- [Beacon](/en-US/docs/Glossary/beacon)
+
+---
+
+
+## Term:  Recursion
+  - CodingScripting
+  - Glossary
+---
+
+
+> The act of a function calling itself, recursion is used to solve problems that contain smaller sub-problems. A recursive function can receive two inputs: a base case (ends recursion) or a recursive case (resumes recursion).
+
+## Examples
+
+### Recursive function calls itself until condition met
+
+The following Python code defines a function that takes a number, prints it, and then calls itself again with the number's value -1. It keeps going until the number is equal to 0, in which case it stops.
+
+```js
+def recurse(x):
+   if x > 0:
+       print(x)
+       recurse(x - 1)
+
+recurse(10)
+```
+
+The output will look like this:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+#### See also
+
+- _Interwiki("wikipedia", "Recursion (computer science)"_) on Wikipedia
+- [More details about recursion in JavaScript](/en-US/docs/Web/JavaScript/Guide/Functions#recursion)
+
+---
+
+
+## Term:  Reference
+  - CodingScripting
+  - Glossary
+  - NeedsContent
+---
+
+
+> In the context of **_glossary("object","objects"_)**, this is an **_glossary("object reference"_)**. On MDN, we could be talking about the _glossary("JavaScript"_) reference itself.
+
+In computing, a reference is a value that indirectly accesses data to retrieve a variable or a record in a computer's memory or other storage device.
+
+#### See also
+
+- _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+
+---
+
+
+## Term:  Reflow
+  - Glossary
+  - WebMechanics
+---
+
+
+> **Reflow** happens when a _glossary("browser"_) must process and draw part or all of a webpage again, such as after an update on an interactive site.
+
+#### See also
+
+- [Google article "Minimizing browser reflow"](https://developers.google.com/speed/articles/reflow)
+
+---
+
+
+## Term:  Regular expression
+  - CodingScripting
+  - Glossary
+  - Regular Expression
+---
+
+
+> **Regular expressions** (or *regex*) are rules that govern which sequences of characters come up in a search.
+
+Regular expressions are implemented in various languages, but the best-known implementation is the Perl Implementation, which has given rise to its own ecosystem of implementations called PCRE (_Perl Compatible Regular Expression_). On the Web, _glossary("JavaScript"_) provides another regex implementation through the _jsxref("RegExp"_) object.
+
+#### See also
+
+- _Interwiki("wikipedia", "Regular expressions"_) on Wikipedia
+- [Interactive tutorial](https://regexone.com/)
+- [Visualized Regular Expression](https://regexper.com/)
+- [Writing regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+---
+
+
+## Term:  Rendering engine
+  - Glossary
+  - Infrastructure
+  - Rendering engine
+  - Web browser engine
+---
+
+
+> A **rendering engine** is software that draws text and images on the screen. The engine draws structured text from a document (often _glossary("HTML"_)), and formats it properly based on the given style declarations (often given in _glossary("CSS"_)). Examples of layout engines: _glossary("Blink"_), _glossary("Gecko"_), EdgeHTML, _glossary("WebKit"_).
+
+#### See also
+
+- _Interwiki("wikipedia", "Web browser engine"_) on Wikipedia
+- [Venkatraman.R - Behind Browsers (Part 1, Basics) ](https://medium.com/@ramsunvtech/behind-browser-basics-part-1-b733e9f3c0e6)
+
+---
+
+
+## Term:  Repo
+  - Glossary
+  - Infrastructure
+  - Intro
+  - Repo
+  - Repository
+---
+
+
+> In a revision control system like _Glossary("Git"_) or _Glossary("SVN"_), a repo (i.e. "repository") is a place that hosts an application's code source, together with various metadata.
+
+#### See also
+
+- [Repository](https://en.wikipedia.org/wiki/Repository_%28revision_control%29) on Wikipedia
+
+---
+
+
+## Term:  Reporting directive
+  - CSP
+  - HTTP
+  - Policy
+  - Reporting
+  - Security
+  - Violation
+---
+
+
+> **_Glossary("CSP"_) reporting directives** are used in a _HTTPHeader("Content-Security-Policy"_) header and control the reporting process of CSP violations.
+
+See [Reporting directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#reporting_directives) for a complete list.
+
+#### See also
+
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("CSP"_)
+  - _Glossary("Fetch directive"_)
+  - _Glossary("Document directive"_)
+  - _Glossary("Navigation directive"_)
+
+- Reference
+
+  - <https://www.w3.org/TR/CSP/#directives-reporting>
+  - _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+  - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+  - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) _deprecated_inline}}
+  - _HTTPHeader("Content-Security-Policy"_)
+
+---
+
+
+## Term:  Representation header
+  - Glossary
+  - WebMechanics
+---
+
+
+> A **representation header** is an _glossary("HTTP_header", "HTTP header"_) that describes the particular _representation_ of the resource sent in an HTTP message body.
+
+Representations are different forms of a particular resource.
+For example, the same data might be formatted as a particular media type such as XML or JSON, localised to a particular written language or geographical region, and/or compressed or otherwise encoded for transmission.
+The underlying resource is the same in each case, but its representation is different.
+
+Clients specify the formats that they prefer to be sent during [content negotiation](/en-US/docs/Web/HTTP/Content_negotiation) (using `Accept-*` headers), and the representation headers tell the client the format of the _selected representation_ they actually received.
+
+Representation headers may be present in both HTTP request and response messages.
+If sent as a response to a `HEAD` request, they describe the body content that _would_ be selected if the resource was actually requested.
+
+Representation headers include: _HTTPHeader("Content-Type"_), _HTTPHeader("Content-Encoding"_), _HTTPHeader("Content-Language"_), and _HTTPHeader("Content-Location"_).
+
+#### See also
+
+- [RFC 7231, section 3: Representations](https://datatracker.ietf.org/doc/html/rfc7231#section-3)
+- [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+- _Glossary("Payload header"_)
+- _glossary("Entity header"_)
+- _HTTPHeader("Digest"_)/ _HTTPHeader("Want-Digest"_)
+
+---
+
+
+## Term:  Request header
+  - Glossary
+  - WebMechanics
+---
+
+
+> A **request header** is an _glossary("HTTP header"_) that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response. For example, the _HTTPHeader("Accept", "Accept-*"_) headers indicate the allowed and preferred formats of the response. Other headers can be used to supply authentication credentials (e.g.  _HTTPHeader("Authorization"_)), to control caching, or to get information about the user agent or referrer, etc.
+
+Not all headers that can appear in a request are referred to as *request headers* by the specification. For example, the _HTTPHeader("Content-Type"_) header is referred to as a _glossary("representation header"_).
+
+In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request headers as _glossary('simple header', 'simple headers'_), request headers that are always considered authorized and are not explicitly listed in responses to _glossary("preflight request", "preflight"_) requests.
+
+The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
+
+```bash
+GET /home.html HTTP/1.1
+Host: developer.mozilla.org
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://developer.mozilla.org/testpage.html
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+If-Modified-Since: Mon, 18 Jul 2016 02:36:04 GMT
+If-None-Match: "c561c68d0ba92bbeb8b0fff2a9199f722e3a621a"
+Cache-Control: max-age=0
+```
+
+#### See also
+
+- [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+- [RFC 7231, section 5: Request header fields](https://datatracker.ietf.org/doc/html/rfc7231#section-5)
+
+---
+
+
+## Term:  Resource Timing
+  - Glossary
+  - Timings
+  - Web Performance
+---
+
+
+> Diagnosing performance issues requires performance data at the granularity of the resource. The [Resource Timing API](/en-US/docs/Web/API/Resource_Timing_API) is a JavaScript API that is able to capture timing information for each individual resource that is fetched when a page is loaded.
+
+#### See also
+
+- [Using the resource timing API](/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API)
+- [Server Timing](https://www.w3.org/TR/server-timing/)
+
+---
+
+
+## Term:  Response header
+  - Glossary
+  - WebMechanics
+---
+
+
+> A **response header** is an _glossary("HTTP header"_) that can be used in an HTTP response and that doesn't relate to the content of the message. Response headers, like _HTTPHeader("Age"_), _HTTPHeader("Location"_) or _HTTPHeader("Server"_) are used to give a more detailed context of the response.
+
+Not all headers appearing in a response are categorized as *response headers* by the specification. For example, the _HTTPHeader("Content-Type"_) header is a _glossary("representation header"_) indicating the original type of data in the body of the response message (prior to the encoding in the _HTTPHeader("Content-Encoding"_) representation header being applied). However, "conversationally" all headers are usually referred to as response headers in a response message.
+
+The following shows a few response and representation headers after a _HTTPMethod("GET"_) request.
+
+```plain
+200 OK
+Access-Control-Allow-Origin: *
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+Date: Mon, 18 Jul 2016 16:06:00 GMT
+Etag: "c561c68d0ba92bbeb8b0f612a9199f722e3a621a"
+Keep-Alive: timeout=5, max=997
+Last-Modified: Mon, 18 Jul 2016 02:36:04 GMT
+Server: Apache
+Set-Cookie: mykey=myvalue; expires=Mon, 17-Jul-2017 16:06:00 GMT; Max-Age=31449600; Path=/; secure
+Transfer-Encoding: chunked
+Vary: Cookie, Accept-Encoding
+X-Backend-Server: developer2.webapp.scl3.mozilla.com
+X-Cache-Info: not cacheable; meta data too large
+X-kuma-revision: 1085259
+x-frame-options: DENY
+```
+
+#### See also
+
+- [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Representation header"_)
+  - _Glossary("HTTP header"_)
+  - _Glossary("Response header"_)
+  - _Glossary("Fetch metadata response header"_)
+  - _Glossary("Request header"_)
+
+---
+
+
+## Term:  Responsive web design
+  - Accessibility
+  - Design
+  - Glossary
+  - Responsive web design
+---
+
+
+> _Responsive Web Design_ (**RWD**) is a Web development concept focusing on making sites look and behave optimally on all personal computing devices, from desktop to mobile.
+
+#### See also
+
+- [Summary and resources](/en-US/docs/Web/Progressive_web_apps)
+- [Pros and cons of going responsive](/en-US/docs/Web/Progressive_web_apps)
+- [Responsive Web Design](https://msdn.microsoft.com/en-us/magazine/hh653584.aspx)
+
+---
+
+
+## Term:  REST
+  - Architecture
+  - Beginner
+  - Glossary
+  - HTTP
+  - Rest
+  - WebMechanics
+---
+
+
+> **REST** (Representational State Transfer) refers to a group of software architecture design constraints that bring about efficient, reliable and scalable distributed systems.
+
+The basic idea of REST is that a resource, e.g. a document, is transferred via well-recognized, language-agnostic, and reliably standardized client/server interactions. Services are deemed RESTful when they adhere to these constraints.
+
+HTTP APIs in general are sometimes colloquially referred to as RESTful APIs, RESTful services, or REST services, although they don't necessarily adhere to all REST constraints. Beginners can assume a REST API means an HTTP service that can be called using standard web libraries and tools.
+
+#### See also
+
+- [restapitutorial.com](https://www.restapitutorial.com/)
+- [restcookbook.com](https://restcookbook.com/)
+- _Interwiki("wikipedia", "Representational_state_transfer", "REST"_) on Wikipedia
+- [REST Architecture](https://www.service-architecture.com/articles/web-services/representational_state_transfer_rest.html)
+
+---
+
+
+## Term:  RGB
+  - Beginner
+  - CSS
+  - Design
+  - Guide
+---
+
+
+> Red Green Blue (RGB) is a color model that represents colors as mixtures of three underlying components (or channels), namely, red, green, and blue. Each color is described by a sequence of three numbers (typically between 0.0 and 1.0, or between 0 and 255) that represent the different intensities (or contributions) of red, green, and blue, in determining the final color.
+
+There are many ways to describe the RGB components of a color. In _Glossary("CSS"_) they can be represented as a single 24-bit integer in hexadecimal notation (for example, ` #``add `8e6 is light blue), or in functional notation as three separate 8-bit integers (for example, rgb(46, 139, 87) is sea green). In _Glossary("OpenGL"_), _Glossary("WebGL"_), and _Glossary("GLSL"_) the red-green-blue components are fractions (floating-point numbers between  0.0  and 1.0), although in the actual color buffer they are typically stored as 8-bit integers. Graphically, a color can be represented as a point in a three-dimensional grid or cube, where each dimension (or axis) corresponds to a different channel.
+
+#### See also
+
+- [RGB color model on Wikipedia](https://en.wikipedia.org/wiki/RGB_color_model)
+- [CSS data type: \<color>](/en-US/docs/Web/CSS/color_value)
+
+---
+
+
+## Term:  RIL
+  - B2G
+  - Firefox OS
+  - Glossary
+  - Infrastructure
+  - Intro
+  - Mobile
+  - Telephony
+---
+
+
+> RIL (Radio Interface Layer) is a mobile operating system component which communicates between the device's software and the device's phone, radio, or modem hardware.
+
+#### See also
+
+- _Interwiki("wikipedia", "Radio Interface Layer"_) on Wikipedia
+
+---
+
+
+## Term:  Random Number Generator
+  - CodingScripting
+  - Glossary
+---
+
+
+> A **PRNG** (pseudorandom number generator) is an algorithm that outputs numbers in a complex, seemingly unpredictable pattern. Truly random numbers (say, from a radioactive source) are utterly unpredictable, whereas all algorithms are predictable, and a PRNG returns the same numbers when passed the same starting parameters or *seed*.
+
+PRNGs can be used for a variety of applications, such as games.
+
+A cryptographically secure PRNG is a PRNG with certain extra properties making it suitable for use in cryptography. These include:
+
+- that it's computationally unfeasible for an attacker (without knowledge of the seed) to predict its output
+- that if an attacker can work out its current state, this should not enable the attacker to work out previously emitted numbers.
+
+Most PRNGs are not cryptographically secure.
+
+#### See also
+
+- _Interwiki("wikipedia", "Pseudorandom number generator"_) on Wikipedia
+- _jsxref("Math.random()"_), a built-in JavaScript PRNG function. Note that this is not a cryptographically secure PRNG.
+- _domxref("Crypto.getRandomValues()"_): this is intended to provide cryptographically secure numbers.
+
+---
+
+
+## Term:  Robots.txt
+  - Glossary
+  - Infrastructure
+---
+
+
+> Robots.txt is a file which is usually placed in the root of any website. It decides whether _Glossary("crawler", "crawlers"_) are permitted or forbidden access to the web site.
+
+For example, the site admin can forbid crawlers to visit a certain folder (and all the files therein contained) or to crawl a specific file, usually to prevent those files being indexed by other search engines.
+
+#### See also
+
+- _Interwiki("wikipedia", "Robots.txt"_) on Wikipedia
+- <https://developers.google.com/search/reference/robots_txt>
+- Standard specification draft: [https://datatracker.ietf.org/doc/html/draft-rep-wg-topic](https://datatracker.ietf.org/doc/html/draft-rep-wg-topic-00)
+- <https://www.robotstxt.org/>
+
+---
+
+
+## Term:  Round Trip Time (RTT)
+  - Beginner
+  - Glossary
+  - Performance
+  - Resource
+  - Round Trip Time
+  - Web Performance
+---
+
+
+> **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
+
+```bash
+$ ping example.com
+PING example.com (216.58.194.174): 56 data bytes
+64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
+64 bytes from 216.58.194.174: icmp_seq=1 ttl=55 time=23.781 ms
+64 bytes from 216.58.194.174: icmp_seq=2 ttl=55 time=24.287 ms
+64 bytes from 216.58.194.174: icmp_seq=3 ttl=55 time=34.904 ms
+64 bytes from 216.58.194.174: icmp_seq=4 ttl=55 time=26.119 ms
+--- google.com ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 23.781/26.828/34.904/4.114 ms
+```
+
+In the above example, the average round trip time is shown on the final line as 26.8ms.
+
+#### See also
+
+- [Time to First Byte (TTFB)](/en-US/docs/Glossary/time_to_first_byte)
+- [Latency](/en-US/docs/Glossary/Latency)
+
+---
+
+
+## Term:  Routers
+  - Intro
+---
+
+
+> There are three definitions for **routers** on the web:
+
+1.  For the network layer, the router is a networking device that decides data _Glossary('Packet'_)s directions. They are distributed by retailers allowing user interaction to the internet.
+2.  For a _Glossary('SPA', 'Single-page application' _) in the application layer, a router is a library that decides what web page is presented by a given _Glossary('URL'_). This middleware module is used for all URL functions, as these are given a path to a file that is rendered to open the next page.
+3.  In the implementation of an _Glossary('API'_) in a service layer, a router is a software component that parses a request and directs or routes the request to various handlers within a program. The router code usually accepts a response from the handler and facilitates its return to the requester.
+
+#### See also
+
+For network layer context:
+
+- _Interwiki("wikipedia", "Router (computing)"_) on Wikipedia
+
+For SPA in application layer context, most of the popular SPA frameworks has its routing library:
+
+- [Angular router](https://angular.io/guide/router)
+- [React router](https://reacttraining.com/react-router)
+- [Vue router](https://router.vuejs.org)
+
+---
+
+
+## Term:  RSS
+  - Glossary
+  - OpenPractices
+  - RSS
+  - Sharing
+  - WebMechanics
+---
+
+
+> **RSS** (Really Simple Syndication) refers to several XML document formats designed for publishing site updates. When you subscribe to a website's RSS feed, the website sends information and updates to your RSS reader in an RSS document called a _feed_, so you don't need to check all your favorite websites manually.
+
+#### See also
+
+- _Interwiki("wikipedia", "RSS"_) on Wikipedia
+- [Latest specification](https://www.rssboard.org/rss-specification)
+
+---
+
+
+## Term:  Rsync
+---
+
+
+> [Rsync](https://rsync.samba.org/) is an open-source file synchronizing tool that provides incremental file transfer It can be used over insecure and secure transports (like SSH).  It is available on most Unix-based systems (such as macOS and Linux) and Windows. There are also GUI-based tools that use rsync, for example, [Acrosync](https://acrosync.com/mac.html).
+
+A basic command looks like this:
+
+```bash
+rsync [-options] SOURCE user@x.x.x.x:DESTINATION
+```
+
+- `-options` is a dash followed by one or more letters, for example `-v` for verbose error messages, and `-b` to make backups. See the full list of options at the [rsync man page.](https://linux.die.net/man/1/rsync) (Search for "Options summary.")
+- `SOURCE` is the path to the local file or directory that you want to copy or synchronize
+- `user@` is the credentials of the user on the remote server you want to copy files over to.
+- `x.x.x.x` is the IP address of the remote server.
+- `DESTINATION` is the path to the location you want to copy your directory or files to on the remote server.
+
+You can also make a connection over SSH using the `-e` option as shown:
+
+```bash
+rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
+```
+
+There are numerous examples on the Internet, including those at the [official website](https://rsync.samba.org/examples.html), and at the [Wikipedia entry](https://en.wikipedia.org/wiki/Rsync#Examples) for rsync.
+
+---
+
+
+## Term:  RTCP (RTP Control Protocol)
+  - Glossary
+  - Media
+  - Networking
+  - Protocol
+  - RTCP
+  - control
+---
+
+
+> The **RTP Control Protocol** (**RTCP**) is a partner to the _Glossary("RTP"_) protocol. RTCP is used to provide control and statistical information about an RTP media streaming session.
+
+This lets control and statistics packets be separated logically and functionally from the media streaming while using the underlying packet delivery layer to transmit the RTCP signals as well as the RTP and media contents.
+
+RTCP periodically transmits control packets to all of an RTP session's participants, using the same mechanism that is being used to transmit the data packets. That underlying protocol handles the multiplexing of the data and control packets and may use separate network ports for each type of packet.
+
+#### See also
+
+- [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
+- _interwiki("wikipedia", "RTP Control Protocol"_)
+- _RFC(3550, 6, "RFC 3550 Section 6"_)
+
+---
+
+
+## Term:  RTF
+  - Composing
+  - Format
+  - Glossary
+  - RTF
+  - Rich Text Format
+---
+
+
+> RTF (Rich Text Format) is a plain-text-based file format with support for formatting instructions (like bold or italic).
+
+Three programmers in the Microsoft Word team created RTF in the 1980s, and Microsoft continued to develop the format until 2008. However, many word-processing programs can still read and write RTF.
+
+#### See also
+
+- _Interwiki("wikipedia", "Rich Text Format"_) on Wikipedia
+- [final specification from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=10725)
+
+---
+
+
+## Term:  RTL (Right to Left)
+  - Composing
+  - Glossary
+  - Localization
+---
+
+
+> **RTL** (**Right To Left**) is a _Glossary("locale"_) property indicating that text is written from right to left.
+
+For example, the `he` locale (for Hebrew) specifies right-to-left. Arabic (`ar`) is another common language written RTL.
+
+The opposite of RTL, LTR (Left To Right) is used in other languages, including English (`en`, `en-US`, `en-GB`, etc.), Spanish (`es`), and French (`fr`).
+
+#### See also
+
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Localization"_)
+  - _Glossary("LTR", "LTR (Left to Right)"_)
+  - _Glossary("RTL", "RTL (Right to Left)"_)
+
+---
+
+
+## Term:  RTP (Real-time Transport Protocol) and SRTP (Secure RTP)
+  - Glossary
+  - Network
+  - Protocol
+  - RTP
+---
+
+
+> The **Real-time Transport Protocol** (**RTP**) is a network protocol which described how to transmit various media (audio, video) from one endpoint to another in a real-time fashion. RTP is suitable for video-streaming application, telephony over _glossary("IP"_) like Skype and conference technologies.
+
+The secure version of RTP, **SRTP**, is used by [WebRTC](/en-US/docs/Web/API/WebRTC_API), and uses encryption and authentication to minimize the risk of denial-of-service attacks and security breaches.
+
+RTP is rarely used alone; instead, it is used in conjunction with other protocols like _glossary("RTSP"_) and _glossary("SDP"_).
+
+#### See also
+
+- [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
+- _Interwiki("wikipedia", "Real-time_Transport_Protocol","RTP"_) on Wikipedia
+- _RFC(3550_) (one of the documents that specify precisely how the protocol works)
+
+---
+
+
+## Term:  'RTSP: Real-time streaming protocol'
+  - Glossary
+  - Real-time streaming protocol
+  - Reference
+  - rtsp
+---
+
+
+> Real-time streaming protocol (RTSP) is a network protocol that controls how the streaming of a media should occur between a _glossary("server"_) and a _glossary("client"_). Basically, RTSP is the protocol that describes what happens when you click "Pause"/"Play" when streaming a video. If your computer were a remote control and the streaming server a television, RTSP would describe how the instruction of the remote control affects the TV.
+
+#### See also
+
+- _Interwiki("wikipedia", "Real_Time_Streaming_Protocol","RTSP"_) on Wikipedia
+- [RFC 7826](https://datatracker.ietf.org/doc/html/rfc7826) (one of the documents that specifies precisely how the protocol works)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("RTSP"_)
+
+---
+
+
+## Term:  Ruby
+  - CodingScripting
+  - Glossary
+  - Ruby
+---
+
+
+> **Ruby** is an open-source programming language. In a _glossary("world wide web","Web"_) context, Ruby is often used server-side with the *Ruby On Rails* (ROR) framework to produce websites/apps.
+
+Ruby is also a method for annotating east Asian text in HTML documents to provide pronunciation information; see the _HTMLElement("ruby"_) element.
+
+#### See also
+
+- [Ruby](https://en.wikipedia.org/wiki/Ruby_%28programming_language%29) on Wikipedia
+- [Ruby's official web site](https://www.ruby-lang.org)
+- [Ruby On Rails' official web site](https://rubyonrails.org/)
+
+---
+
+
+## Term:  Safe
+  - Glossary
+  - Disambiguation
+---
+
+
+> The term **safe** can have several meanings depending on the context. It may refer to:
+
+_GlossaryDisambiguation}}
+
+---
+
+
+## Term:  Same-origin policy
+  - Glossary
+  - Same-origin policy
+  - origin
+---
+
+
+> The **[same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)** is a critical security mechanism that restricts how a document or script loaded from one _Glossary("origin"_) can interact with a resource from another origin.
+
+It helps isolate potentially malicious documents, reducing possible attack vectors.
+
+#### See also
+
+- [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+  - _Glossary("CORS"_)
+  - _Glossary("origin"_)
+
+---
+
+
+## Term:  SCM
+  - CodingScripting
+  - Glossary
+  - SCM
+---
+
+
+> SCM (Source Control Management) is a system for managing source code. Usually it refers to the use of software to handle versioning of source files. A programmer can modify source code files without being afraid of editing out useful stuff, because a SCM keeps track of how the source code has changed and who made the changes.
+
+Some SCM systems include CVS, SVN, GIT.
+
+#### See also
+
+- _Interwiki("wikipedia", "Revision control"_) on Wikipedia
+
+---
+
+
+## Term:  Scope
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> The current context of execution. The context in which _glossary("value","values"_) and **expressions** are "visible" or can be referenced. If a **_glossary("variable"_)** or other expression is not "in the current scope," then it is unavailable for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
+
+A **_glossary("function"_)** serves as a **closure** in _glossary("JavaScript"_), and thus creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions. For instance, the following is invalid:
+
+```js
+function exampleFunction() {
+    var x = "declared inside function";  // x can only be used in exampleFunction
+    console.log("Inside function");
+    console.log(x);
+}
+
+console.log(x);  // Causes error
+```
+
+However, the following code is valid due to the variable being declared outside the function, making it global:
+
+```js
+var x = "declared outside function";
+
+exampleFunction();
+
+function exampleFunction() {
+    console.log("Inside function");
+    console.log(x);
+}
+
+console.log("Outside function");
+console.log(x);
+```
+
+#### See also
+
+- _Interwiki("wikipedia", "Scope (computer science)"_) on Wikipedia
+
+---
+
+
+## Term:  Screen reader
+  - Accessibility
+  - Glossary
+  - Screen reader
+  - Voice Over
+  - Voiceover
+---
+
+
+> Screen readers are software applications that attempt to convey what is seen on a screen display in a non-visual way, usually as text to speech, but also into braille or sound icons. Screen readers are essential to people who are blind, as well as useful to people who are visually impaired, illiterate, or have a learning disability. There are some browser extension screen readers, but most screen readers operate system-wide for all user applications, not just the browser.
+
+In terms of web accessibility, most user agents provide an accessibility object model and screen readers interact with dedicated accessibility APIs, using various operating system features and employing hooking techniques.
+
+## VoiceOver
+
+macOS comes with VoiceOver, a built-in screen reader. To access VoiceOver, go to System Preferences > Accessibility > VoiceOver. You can also toggle VoiceOver on and off with fn+command + F5. VoiceOver both reads aloud and displays content. The content read aloud is displayed in a dark grey box.
+
+Desktop/laptop screen reader users navigate websites with a keyboard or other non-pointing device. The best way to emulate use is to do the same.
+
+Just like keyboard navigation without VoiceOver, you can navigate through interactive elements using the tab key and the arrow keys:
+
+- Next interactive element: Tab
+- Previous interactive element: Shift + Tab
+- Next radio button in a same named-group: right or down arrow
+- Previous radio button in a same named-group: left or up arrow
+
+Navigating through the content of a page is done with the tab key and a series of other keys along with Control + Option keys
+
+- Next heading: Control + Option + H
+- Next list: Control + Option + X
+- Next graphic: Control + Option + G
+- Next table: Control + Option + T
+- Down an HTML hierarchical order Control + Option + right arrow
+- Previous heading: Shift + Control + Option + H
+- Previous list: Shift + Control + Option + X
+- Previous graphic: Shift + Control + Option + G
+- Previous table: Shift + Control + Option + T
+- Up an HTML hierarchical order: Control + Option + left arrow
+
+#### See also
+
+- [ARIA](/en-US/docs/Web/Accessibility/ARIA)
+
+---
+
+
+## Term:  Script-supporting element
+  - Glossary
+  - HTML
+  - HTML Content Categories
+  - scripts
+---
+
+
+> In an _Glossary("HTML"_) document, **script-supporting elements** are those elements that don't directly contribute to the appearance or layout of the page; instead, they're either scripts or contain information that's only used by scripts.
+
+These elements may be important, but do not affect the displayed page unless the page's scripts explicitly cause them to do so.
+
+There are only two script-supporting elements: _HTMLElement("script"_) and _HTMLElement("template"_).
+
+#### See also
+
+_SectionOnPage("/en-US/docs/Web/HTML/Kinds_of_HTML_content", "Script-supporting elements"_)
+
+---
+
+
+## Term:  Block (scripting)
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> In _glossary("JavaScript"_), a block is a collection of related _glossary("statement","statements"_) enclosed in braces ("{}"). For example, you can put a block of statements after an _jsxref("Statements/if...else","if (condition)"_) block, indicating that the interpreter should run the code inside the block if the condition is true, or skip the whole block if the condition is false.
+
+#### See also
+
+- [JavaScript block statement](/en-US/docs/Web/JavaScript/Reference/Statements/block)
+
+---
+
+
+## Term:  Scroll container
+  - Glossary
+  - scroll container
+---
+
+
+> A **scroll container** is created by applying `overflow: scroll` to a container, or `overflow: auto` when there is enough content to cause overflow.
+
+The scroll container allows the user to scroll through parts of the overflow region that would otherwise be clipped and hidden from view. The visible part of the scroll container is referred to as the _glossary("Scrollport", "scrollport"_).
+
+#### See also
+
+- [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+  - _glossary("Scroll container"_)
+  - _glossary("Scrollport"_)
+
+- Related CSS Properties:
+
+  - _cssxref("overflow"_)
+
+---
+
+
+## Term:  Scrollport
+  - Glossary
+  - scrollport
+---
+
+
+> The **scrollport** is the visual viewport of a _glossary("Scroll container", "scroll container"_) in a document. A scroll container is created by applying `overflow: scroll` to a container, or `overflow: auto` when there is enough content to cause overflow. The scrollport coincides with the padding box of that container and represents the content that can be seen as the box is scrolled.
+
+#### See also
+
+- [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+  - _glossary("Scroll container"_)
+  - _glossary("Scrollport"_)
+
+- Related CSS Properties:
+
+  - _cssxref("overflow"_)
+
+---
+
+
+## Term:  SCTP
+  - Glossary
+  - Infrastructure
+  - SCTP
+  - WebRTC
+---
+
+
+> **SCTP** (Stream Control Transmission _glossary("Protocol"_)) is an _Glossary("IETF"_) standard for a transport protocol which enables the reliable, in-order transmission of messages while offering congestion control, multi-homing, and other features to improve reliability and stability of the connection. It's used for sending traditional telephone calls over the Internet, but is also used for _Glossary("WebRTC"_) data.
+
+#### See also
+
+- _RFC(4960, "Stream Control Transmission Protocol"_)
+- _Interwiki("wikipedia", "Stream Control Transmission Protocol"_) on Wikipedia
+
+---
+
+
+## Term:  SDP
+  - Advanced
+  - Collaborating
+  - Glossary
+  - Infrastructure
+  - Protocol
+  - WebRTC
+---
+
+
+> **SDP** (Session Description _glossary("Protocol"_)) is the standard describing a _Glossary("P2P","peer-to-peer"_) connection. SDP contains the _Glossary("codec"_), source address, and timing information of audio and video.
+
+Here is a typical SDP message:
+
+       v=0
+       o=alice 2890844526 2890844526 IN IP4 host.anywhere.com
+       s=
+       c=IN IP4 host.anywhere.com
+       t=0 0
+       m=audio 49170 RTP/AVP 0
+       a=rtpmap:0 PCMU/8000
+       m=video 51372 RTP/AVP 31
+       a=rtpmap:31 H261/90000
+       m=video 53000 RTP/AVP 32
+       a=rtpmap:32 MPV/90000
+
+SDP is never used alone, but by protocols like _Glossary("RTP"_) and _Glossary("RTSP"_). SDP is also as component of _Glossary("WebRTC"_), which uses SDP as a way of describing a session.
+
+#### See also
+
+- [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+- _Interwiki("wikipedia", "Session Description Protocol"_) on Wikipedia
+
+---
+
+
+## Term:  Search engine
+  - Definition
+  - Glossary
+  - Indexing
+  - Search Engine
+  - Searching
+  - Web Crawling
+  - WebMechanics
+  - World Wide Web
+  - details
+  - google
+---
+
+
+> A search engine is a software system that collects information from the _Glossary("World Wide Web"_) and presents it to users who are looking for specific information.
+
+A search engine conducts the following processes:
+
+- **Web crawling:** Searching web sites by navigating _Glossary("Hyperlink", "Hyperlinks"_) on web pages, both within a site, and from one site to another. A web site owner can exclude areas of the site from being accessed by a search engine's _web crawler_ (or _spider_), by defining "robot exclusion" information in a file named `robots.txt`.
+- **Indexing:** Associating keywords and other information with specific web pages that have been crawled. This enables users to find relevant pages as quickly as possible.
+- **Searching:** Looking for relevant web pages based on queries consisting of key words and other commands to the search engine. The search engine finds the URLs of pages that match the query, and ranks them based on their relevance. It then presents results to the user in order of the ranking.
+
+The most popular search engine is Google. Other top search engines include Yahoo!, Bing, Baidu, and AOL.
+
+#### See also
+
+- [Web search engine](https://en.wikipedia.org/wiki/Web_search_engine) on Wikipedia
+- [Search engine](https://www.webopedia.com/TERM/S/search_engine.html) on Webopedia
+- [How Internet search engines work](https://computer.howstuffworks.com/internet/basics/search-engine.htm) on How Stuff Works
+
+---
+
+
+## Term:  Second-level Domain
+  - Glossary
+  - Infrastructure
+---
+
+
+> A Second Level Domain (_Glossary("SLD"_)) is the part of the domain name that is located right before a Top Level Domain (_Glossary("TLD"_)).
+
+For example, in `mozilla.org` the SLD is `mozilla` and the TLD is `org`.
+
+A domain name is not limited to a TLD and an SLD. Additional subdomains can be created in order to provide additional information about various functions of a server or to delimit areas under the same domain. For example, `www` is a commonly used subdomain to indicate the domain points to a web server.
+
+As another example, in `developer.mozilla.org`, the `developer` subdomain is used to specify that the subdomain contains the developer section of the Mozilla website.
+
+#### See also
+
+- _Interwiki("wikipedia", "Second-level domain", "SLD"_) (Wikipedia)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("DNS"_)
+  - _Glossary("Domain"_)
+  - _Glossary("Domain name"_)
+  - _Glossary("TLD"_)
+
+---
+
+
+## Term:  Secure Context
+  - Glossary
+  - Security
+  - Secure contexts
+---
+
+
+> A **secure context** is a `Window` or `Worker` in which certain minimum standards of authentication and confidentiality are met. Many Web APIs and features are only accessible in secure contexts, reducing the opportunity for misuse by malicious code.
+
+For more information see: [Web > Security > Secure Contexts](/en-US/docs/Web/Security/Secure_Contexts).
+
+---
+
+
+## Term:  Signature (security)
+  - Cryptography
+  - Glossary
+  - Privacy
+  - Security
+---
+
+
+> A **signature**, or _digital signature_, is a _glossary("protocol"_) showing that a message is authentic.
+
+From the _glossary("hash"_) of a given message, the **signing process** first generates a digital signature linked to the signing entity, using the entity's private _glossary("key"_).
+
+On receiving the message, the **verification process**
+
+- _authenticates the sender -_ uses the sender's public key to _glossary("decryption","decrypt"_) the signature and recover the hash, which can only be created with the sender's private key, and
+- _checks message integrity -_ compares the hash with a newly calculated one from the received document (the two hashes will differ if the document has been tampered with)
+
+The system fails if the private key is compromised or the recipient is deceitfully given the wrong public key.
+
+#### See also
+
+- _Interwiki("wikipedia", "Digital signature"_) on Wikipedia
+- See _glossary("digest"_), _glossary("encryption"_)
+
+---
+
+
+## Term:  Self-Executing Anonymous Function
+  - Glossary
+---
+
+
+> A _glossary("JavaScript"_) _glossary("function"_) that runs as soon as it is defined. Also known as an _glossary("IIFE"_) (Immediately Invoked Function Expression).
+
+See the IIFE glossary page linked above for more information.
+
+---
+
+
+## Term:  Semantics
+  - CodingScripting
+  - Glossary
+  - HTML
+  - semantics
+---
+
+
+> In programming, **Semantics** refers to the _meaning_ of a piece of code — for example "what effect does running that line of JavaScript have?", or "what purpose or role does that HTML element have" (rather than "what does it look like?".)
+
+## Semantics in JavaScript
+
+In JavaScript, consider a function that takes a string parameter, and returns an _htmlelement("li"_) element with that string as its `textContent`. Would you need to look at the code to understand what the function did if it was called `build('Peach')`, or `createLiWithContent('Peach')`?
+
+## Semantics in CSS
+
+In CSS, consider styling a list with `li` elements representing different types of fruits. Would you know what part of the DOM is being selected with `div > ul > li`, or `.fruits__item`?
+
+## Semantics in HTML
+
+In HTML, for example, the _htmlelement("h1"_) element is a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."
+
+```html
+<h1>This is a top level heading</h1>
+```
+
+By default, most browser's [user agent stylesheet](/en-US/docs/Web/CSS/Cascade#user-agent_stylesheets) will style an _htmlelement("h1"_) with a large font size to make it _look_ like a heading (although you could style it to look like anything you wanted).
+
+On the other hand, you could make any element _look_ like a top level heading. Consider the following:
+
+```html
+<span style="font-size: 32px; margin: 21px 0;">Is this a top level heading?</span>
+```
+
+This will render it to look like a top level heading, but it has no semantic value, so it will not get any extra benefits as described above. It is therefore a good idea to use the right HTML element for the right job.
+
+HTML should be coded to represent the _data_ that will be populated and not based on its default presentation styling. Presentation (how it should look), is the sole responsibility of [CSS](/en-US/docs/Web/CSS).
+
+Some of the benefits from writing semantic markup are as follows:
+
+- Search engines will consider its contents as important keywords to influence the page's search rankings (see _glossary("SEO"_))
+- Screen readers can use it as a signpost to help visually impaired users navigate a page
+- Finding blocks of meaningful code is significantly easier than searching through endless `div`s with or without semantic or namespaced classes
+- Suggests to the developer the type of data that will be populated
+- Semantic naming mirrors proper custom element/component naming
+
+When approaching which markup to use, ask yourself, "What element(s) best describe/represent the data that I'm going to populate?" For example, is it a list of data?; ordered, unordered?; is it an article with sections and an aside of related information?; does it list out definitions?; is it a figure or image that needs a caption?; should it have a header and a footer in addition to the global site-wide header and footer?; etc.
+
+## Semantic elements
+
+These are _some_ of the roughly 100 semantic [elements](/en-US/docs/Web/HTML/Element) available:
+
+- _htmlelement("article"_)
+- _htmlelement("aside"_)
+- _htmlelement("details"_)
+- _htmlelement("figcaption"_)
+- _htmlelement("figure"_)
+- _htmlelement("footer"_)
+- _htmlelement("header"_)
+- _htmlelement("main"_)
+- _htmlelement("mark"_)
+- _htmlelement("nav"_)
+- _htmlelement("section"_)
+- _htmlelement("summary"_)
+- _htmlelement("time"_)
+
+#### See also
+
+- [HTML element reference](/en-US/docs/Web/HTML/Element#inline_text_semantics) on MDN
+- [Using HTML sections and outlines](/en-US/docs/Web/HTML/Element/Heading_Elements#problems_solved_by_html5) on MDN
+- _interwiki("wikipedia", "Semantics#Computer_science", "The meaning of semantics in computer science"_) on Wikipedia
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("SEO"_)
+
+- Semantic elements in HTML:
+
+  - _htmlelement("article"_)
+  - _htmlelement("aside"_)
+  - _htmlelement("details"_)
+  - _htmlelement("figcaption"_)
+  - _htmlelement("figure"_)
+  - _htmlelement("footer"_)
+  - _htmlelement("header"_)
+  - _htmlelement("main"_)
+  - _htmlelement("mark"_)
+  - _htmlelement("nav"_)
+  - _htmlelement("section"_)
+  - _htmlelement("summary"_)
+  - _htmlelement("time"_)
+
+---
+
+
+## Term:  SEO
+  - Glossary
+  - Intro
+  - SEO
+  - Search
+  - WebMechanic
+---
+
+
+> **SEO** (Search Engine Optimization) is the process of making a website more visible in search results, also termed improving search rankings.
+
+Search engines _Glossary("Crawler", "crawl"_) the web, following links from page to page, and index the content found. When you search, the search engine displays the indexed content. Crawlers follow rules. If you follow those rules closely when doing SEO for a website, you give the site the best chances of showing up among the first results, increasing traffic and possibly revenue (for ecommerce and ads).
+
+Search engines give some guidelines for SEO, but big search engines keep result ranking as a trade secret. SEO combines official search engine guidelines, empirical knowledge, and theoretical knowledge from science papers or patents.
+
+SEO methods fall into three broad classes:
+
+- technical
+  - : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
+- copywriting
+  - : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
+- popularity
+  - : You get most traffic when other established sites link to your site.
+
+#### See also
+
+- _Interwiki("wikipedia", "SEO"_) on Wikipedia
+- [Google Search Central](https://developers.google.com/search/docs)
+
+---
+
+
+## Term:  Serialization
+  - CodingScripting
+  - Glossary
+  - JavaScript
+  - Serialization
+---
+
+
+> The process whereby an object or data structure is translated into a format suitable for transferral over a network, or storage (e.g. in an array buffer or file format).
+
+In _Glossary("JavaScript"_), for example, you can serialize an object to a _Glossary("JSON"_) _Glossary("string"_) by calling the _Glossary("function"_) _jsxref("JSON.stringify()"_).
+
+_Glossary("CSS"_) values are serialized by calling the function _domxref("CSSStyleDeclaration.getPropertyValue()"_).
+
+#### See also
+
+- [Serialization](https://en.wikipedia.org/wiki/Serialization) on Wikipedia
+
+---
+
+
+## Term:  Server Timing
+  - Glossary
+  - Reference
+  - Server Timing
+  - Web Performance
+---
+
+
+> The [Server Timing specification](https://www.w3.org/TR/server-timing/) enables the server to communicate performance metrics from the request-response cycle to the user agent, and utilizes a JavaScript interface to allow applications to collect, process, and act on these metrics to optimize application delivery.
+
+#### See also
+
+- <https://www.w3.org/TR/server-timing/>
+- [Resource Timing](https://www.w3.org/TR/resource-timing/)
+
+---
+
+
+## Term:  Server
+  - Glossary
+  - Infrastructure
+  - Networking
+  - Protocol
+  - Server
+---
+
+
+> A server is a software or hardware offering a service to a user, usually referred to as client.  A hardware server is a shared computer on a network, usually powerful and housed in a data center.  A software server (often running on a hardware server) is a program that provides services to client programs or a _glossary("UI","user interface"_) to human clients.
+
+Services are provided generally over local area networks or wide area networks such as the internet. A client program and server program traditionally connect by passing messages encoded using a _glossary("protocol"_) over an _glossary("API"_).
+
+For example:
+
+- An Internet-connected Web server is sending a _glossary("HTML"_) file to your browser software so that you can read this page
+- Local area network server for file, name, mail, print, and fax
+- Minicomputers, mainframes, and super computers at data centers
+
+#### See also
+
+- [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+- _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+
+---
+
+
+## Term:  Session Hijacking
+  - Glossary
+  - Security
+  - session hijacking
+---
+
+
+> **Session hijacking** occurs when an attacker takes over a valid session between two computers. The attacker steals a valid session ID in order to break into the system and snoop data.
+
+Most authentication occurs only at the start of a _glossary("TCP"_) session. In TCP session hijacking, an attacker gains access by taking over a TCP session between two machines in mid session.
+
+![](session_hijacking_3.jpg)
+
+### Session hijacking occurs because
+
+- no account lockout for invalid session IDs
+- weak session-ID generation algorithm
+- insecure handling
+- indefinite session expiration time
+- short session IDs
+- transmission in plain text
+
+### Session hijacking process
+
+1.  **Sniff**, that is perform a man-in-the-middle (MITM) attack, place yourself between victim and server.
+2.  **Monitor** packets flowing between server and user.
+3.  **Break** the victim machine's connection.
+4.  **Take control** of the session.
+5.  **Inject** new packets to the server using the Victim's Session ID.
+
+### Protection against session hijacking
+
+- create a secure communication channel with SSH (secure shell)
+- pass authentication cookies over HTTPS connection
+- implement logout functionality so the user can end the session
+- generate the session ID after successful login
+- pass encrypted data between the users and the web server
+- use a string or long random number as a session key
+
+#### See also
+
+- _Interwiki("wikipedia", "Session hijacking"_) on Wikipedia
+
+---
+
+
+## Term:  SGML
+  - CodingScripting
+  - Composing
+  - Glossary
+  - SGML
+---
+
+
+> The _Standard Generalized Markup Language_ (**SGML**) is an _Glossary("ISO"_) specification for defining declarative markup languages.
+
+On the web, _Glossary("HTML"_) 4, _Glossary("XHTML"_), and _Glossary("XML"_) are popular SGML-based languages. It is worth noting that since its fifth edition, HTML is no longer SGML-based and has its own parsing rules.
+
+#### See also
+
+- _Interwiki("wikipedia", "SGML"_) on Wikipedia
+- [Introduction to SGML](https://www.isgmlug.org/)
+
+---
+
+
+## Term:  Shadow tree
+  - DOM
+  - Glossary
+  - Shadow Tree
+  - shadow dom
+---
+
+
+> A **shadow tree** is a tree of DOM _Glossary("node", "nodes"_) whose topmost node is a **shadow root**; that is, the topmost node within a **shadow DOM**. A shadow tree is a hidden set of standard DOM nodes which is attached to a standard DOM node that serves as a host. The hidden nodes are not directly visible using regular DOM functionality, but require the use of a special [Shadow DOM API](/en-US/docs/Web/Web_Components/Using_shadow_DOM) to access.
+
+Nodes within the shadow tree are not affected by anything applied outside the shadow tree, and vice versa. This provides a way to encapsulate implementation details, which is especially useful for custom elements and other advanced design paradigms.
+
+#### See also
+
+- [Using shadow DOM](/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+- _domxref("Element.shadowRoot"_) and _domxref("Element.attachShadow()"_)
+- _domxref("ShadowRoot"_)
+- _HTMLElement("slot"_)
+
+---
+
+
+## Term:  Shim
+  - CodingScripting
+  - Glossary
+---
+
+
+> A **shim** is a piece of code used to correct the behavior of code that already exists, usually by adding new API that works around the problem. This differs from a _Glossary("polyfill"_), which implements a new API that is not supported by the stock browser as shipped.
+
+#### See also
+
+- _Interwiki("wikipedia", "Shim (computing)", "Shim"_) on Wikipedia
+
+---
+
+
+## Term:  Signature
+  - Disambiguation
+  - Glossary
+---
+
+
+> The term **signature** can have several meanings depending on the context. It may refer to:
+
+_GlossaryDisambiguation}}
+
+#### See also
+
+- _Interwiki("wikipedia", "Signature_(disambiguation)", "Signature"_) on Wikipedia
+
+---
+
+
+## Term:  SIMD
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> SIMD (pronounced "sim-dee") is short for **Single Instruction/Multiple Data** which is one _Interwiki("wikipedia","Flynn%27s_taxonomy","classification of computer architectures"_). SIMD allows one same operation to be performed on multiple data points resulting in data level parallelism and thus performance gains — for example, for 3D graphics and video processing, physics simulations or cryptography, and other domains.
+
+See also _Glossary("SISD"_) for a sequential architecture with no parallelism in either the instructions or the data sets.
+
+#### See also
+
+- _Interwiki("wikipedia", "SIMD"_) on Wikipedia
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("SIMD"_)
+  - _Glossary("SISD"_)
+
+---
+
+
+## Term:  Simple header
+  - CORS
+  - Glossary
+  - HTTP
+  - Infrastructure
+---
+
+
+> Old term for _Glossary("CORS-safelisted request header"_).
+
+---
+
+
+## Term:  Simple response header
+  - CORS
+  - Glossary
+  - HTTP
+---
+
+
+> Old term for _Glossary("CORS-safelisted response header"_).
+
+---
+
+
+## Term:  SISD
+  - CodingScripting
+  - Glossary
+---
+
+
+> SISD is short for **Single Instruction/Single Data** which is one _Interwiki("wikipedia","Flynn%27s_taxonomy","classification of computer architectures"_). In SISD architecture, a single processor executes a single instruction and operates on a single data point in memory.
+
+See also _Glossary("SIMD"_) for a parallel architecture that allows one same operation to be performed on multiple data points.
+
+#### See also
+
+- _Interwiki("wikipedia", "SISD"_) on Wikipedia
+
+---
+
+
+## Term:  Site map
+  - Accessibility
+  - Glossary
+  - Search
+  - Site map
+---
+
+
+> A **site map** or **sitemap** is a list of pages of a web site.
+
+Structured listings of a site's page help with [search engine optimization](/en-US/docs/Glossary/SEO), providing a link for web crawlers such as search engines to follow. Site maps also help users with site navigation by providing an overview of a site's content in a single glance.
+
+---
+
+
+## Term:  Site
+  - Glossary
+  - Security
+  - WebMechanics
+---
+
+
+> The _site_ of a piece of web content is determined by the _registrable domain_ of the host within the origin. This is computed by consulting a _Public Suffix List_ to find the portion of the host which is counted as the _public suffix_ (e.g. `com`, `org` or `co.uk`).
+
+The concept of a _site_ is used in [SameSite cookies](/en-US/docs/Web/HTTP/Headers/Set-Cookie#directives), as well as a web application's [Cross-Origin Resource Policy](</en-US/docs/Web/HTTP/Cross-Origin_Resource_Policy_(CORP)>).
+
+## Examples
+
+These are the same site because the registrable domain of _mozilla.org_ is the same (different host and files path don't matter):
+
+- `https://developer.mozilla.org/en-US/docs/`
+- `https://support.mozilla.org/en-US/`
+
+These are the same site because scheme and port are not relevant:
+
+- `http://example.com:8080`
+- `https://example.com`
+
+These are not same site because the registrable domain of the two URLs differs:
+
+- `https://developer.mozilla.org/en-US/docs/`
+- `https://example.com`
+
+#### See also
+
+- [What is a URL](/en-US/docs/Learn/Common_questions/What_is_a_URL)
+- _Glossary("Origin"_)
+- [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+
+---
+
+
+## Term:  SLD
+  - Glossary
+  - Infrastructure
+---
+
+
+> An SLD ([Second Level Domain](/en-US/docs/Glossary/Second-level_Domain)) is the part of the domain name that is located right before a _Top Level Domain_ (_Glossary("TLD"_)). For example, in `mozilla.org` the SLD is `mozilla` and the TLD is `org`.
+
+See [Second Level Domain](/en-US/docs/Glossary/Second-level_Domain) for more information.
+
+---
+
+
+## Term:  Sloppy mode
+  - CodingScripting
+  - Glossary
+  - JavaScript
+  - Sloppy
+---
+
+
+> _Glossary("ECMAScript"_) 5 and later let scripts opt in to a new [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode), which alters the semantics of JavaScript in several ways to improve its resiliency and which make it easier to understand what's going on when there are problems.
+
+The normal, non-strict mode of JavaScript is sometimes referred to as **sloppy mode**. This isn't an official designation, but you are likely to come across it if you spend time doing serious JavaScript code.
+
+#### See also
+
+- "[Strict Mode](http://speakingjs.com/es5/ch07.html#strict_mode)" in chapter 7 ("JavaScript Syntax") in the book Speaking _JavaScript_.
+
+---
+
+
+## Term:  Slug
+  - Community
+  - Glossary
+  - Intermediate
+  - MDN
+  - URL
+  - Web
+---
+
+
+> A Slug is the unique identifying part of a web address, typically at the end of the URL. In the context of MDN, it is the portion of the URL following "_\<locale>/docs/_".
+
+
+#### See also
+
+
+---
+
+
+## Term:  Smoke Test
+  - Composing
+  - Glossary
+  - Intro
+  - QA
+  - Testing
+---
+
+
+> A smoke test consists of functional or unit tests of critical software functionality. Smoke testing comes before further, in-depth testing.
+
+Smoke testing answers questions like
+
+- "Does the program start up correctly?"
+- "Do the main control buttons function?"
+- "Can you save a simple blank new test user account?"
+
+If this basic functionality fails, there is no point investing time in more detailed QA work at this stage.
+
+#### See also
+
+- _Interwiki("wikipedia", "Smoke testing (software)"_) on Wikipedia
+
+---
+
+
+## Term:  SMPTE (Society of Motion Picture and Television Engineers)
+  - Engineers
+  - Glossary
+  - Motion Picture
+  - Movies
+  - SMPTE
+  - Specifications
+  - Television
+  - standards
+---
+
+
+> The **Society of Motion Picture and Television Engineers** (**[SMPTE](https://www.smpte.org/)**) is the professional association of engineers and scientists that develop and define standards and technologies used to create, broadcast, store, and present entertainment media.
+
+For example, SMPTE defines the standards used for digital cinema used by modern digital movie theaters.
+
+---
+
+
+## Term:  SMTP
+  - Beginner
+  - Collaboration
+  - Glossary
+  - Infrastructure
+  - Sharing
+---
+
+
+> **SMTP** (Simple Mail Transfer Protocol) is a _glossary("protocol"_) used to send a new email.  Like _glossary("POP"_) and _glossary("NNTP"_), it is a _Glossary("state machine"_)-driven protocol.
+
+The protocol is relatively straightforward. Primary complications include supporting various authentication mechanisms ([GSSAPI](https://en.wikipedia.org/wiki/Generic_Security_Services_Application_Program_Interface), [CRAM-MD5](https://en.wikipedia.org/wiki/CRAM-MD5), [NTLM](https://en.wikipedia.org/wiki/NTLM), MSN, AUTH LOGIN, AUTH PLAIN, etc.), handling error responses, and falling back when authentication mechanisms fail (e.g., the server claims to support a mechanism, but doesn't).
+
+#### See also
+
+- _Interwiki("wikipedia", "SMTP"_) (Wikipedia)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _glossary("NNTP"_)
+  - _glossary("POP"_)
+  - _glossary("protocol"_)
+  - _Glossary("state machine"_)
+
+---
+
+
+## Term:  Snap positions
+  - Glossary
+  - snap positions
+---
+
+
+> A [scroll container](/en-US/docs/Glossary/Scroll_container) may set **snap positions** — points that the [scrollport](/en-US/docs/Glossary/Scrollport) will stop moving at after a scrolling operation is completed. This allows a scrolling experience that gives the effect of paging through content rather than needing to drag content into view.
+
+Defining Snap positions on the scroll container was introduced in the [CSS Scroll Snap specification](/en-US/docs/Web/CSS/CSS_Scroll_Snap).
+
+---
+
+
+## Term:  SOAP
+  - Glossary
+  - Infrastructure
+  - SOAP
+  - WebMechanics
+---
+
+
+> **SOAP** (Simple Object Access Protocol) is a _glossary('protocol'_) for transmitting data in _glossary('XML'_) format.
+
+#### See also
+
+- _Interwiki("wikipedia", "SOAP"_) on Wikipedia
+- [Specification](https://www.w3.org/TR/soap12-part1/)
+
+---
+
+
+## Term:  SPA (Single-page application)
+  - Glossary
+  - SPA
+  - single-page app
+---
+
+
+> An SPA (Single-page application) is a web app implementation that loads only a single web document, and then updates the body content of that single document via JavaScript APIs such as _domxref("XMLHttpRequest"_) and [Fetch](/en-US/docs/Web/API/Fetch_API) when different content is to be shown.
+
+This therefore allows users to use websites without loading whole new pages from the server, which can result in performance gains and a more dynamic experience, with some tradeoff disadvantages such as SEO, more effort required to maintain state, implement navigation, and do meaningful performance monitoring.
+
+#### See also
+
+- _Interwiki("wikipedia", "Single-page application"_) (Wikipedia)
+- [Understanding client-side JavaScript frameworks](/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("API"_)
+  - _Glossary("AJAX"_)
+  - _Glossary("JavaScript"_)
+
+- Popular SPA frameworks:
+
+  - [React](https://reactjs.org/)
+  - [Angular](https://angular.io/)
+  - [Vue.JS](https://vuejs.org/)
+
+---
+
+
+## Term:  Specification
+  - Glossary
+  - OpenPractices
+  - Standardization
+---
+
+
+> A **specification** is a document that lays out in detail what functionality or attributes a product must include before delivery. In the context of describing the Web, the term "specification" (often shortened to "spec") generally means a document describing a language, technology, or _Glossary("API"_) which makes up the complete set of open Web technologies.
+
+#### See also
+
+- _Interwiki("wikipedia", "Specification"_) on Wikipedia
+
+---
+
+
+## Term:  Speculative parsing
+  - Advanced
+  - HTML
+  - HTML5
+  - NeedsUpdate
+  - Web Development
+  - Web Performance
+---
+
+
+> Traditionally in browsers the HTML parser ran on the main thread and was blocked after a `</script>` tag until the script has been retrieved from the network and executed. Some HTML parser, such as Firefox since Firefox 4, support speculative parsing off of the main thread. It parses ahead while scripts are being downloaded and executed. The HTML parser starts speculative loads for scripts, style sheets and images it finds ahead in the stream and runs the HTML tree construction algorithm speculatively. The upside is that when a speculation succeeds, there's no need to reparse the part of the incoming file that was already scanned for scripts, style sheets and images. The downside is that there's more work lost when the speculation fails.
+
+This document helps you avoid the kind of things that make speculation fail and slow down the loading of your page.
+
+To make speculative loads of linked scripts, style sheets and images successful, avoid _domxref('document.write'_). If you use a `<base>` element to override the base URI of your page, put the element in the non-scripted part of the document. Don't add it via `document.write()` or _domxref('document.createElement'_).
+
+## Avoiding losing tree builder output
+
+Speculative tree building fails when `document.write()` changes the tree builder state such that the speculative state after the `</script>` tag no longer holds when all the content inserted by `document.write()` has been parsed. However, only unusual uses of `document.write()` cause trouble. Here are the things to avoid:
+
+- Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div></div>");</script>` is OK.
+- Don't write an unfinished token. `<script>document.write("<div></div");</script>` is bad.
+- Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
+- Don't format part of a table. `<table><script>document.write("<tr><td>Hello World!</td></tr>");</script></table>` is bad.
+
+---
+
+
+## Term:  Speed index
+  - Glossary
+  - Performance
+  - Reference
+  - Web Performance
+---
+
+
+> **Speed Index** (SI) is a page load performance metric that shows you how quickly the contents of a page are visibly populated. It is the average time at which visible parts of the page are displayed. Expressed in milliseconds, and dependent on the size of the viewport, the lower the score, the better.
+
+![Calculation of SpeedIndex](speedindex.png)
+
+The calculation calculates what percent of the page is visually complete at every 100ms interval until the page is visually complete.  The overall score, the above the fold metric, is a sum of the individual 10 times per second intervals of the percent of the screen that is not-visually complete**.**
+
+#### See also
+
+- [Learn web performance](/en-US/docs/Learn/Performance)
+
+---
+
+
+## Term:  SQL Injection
+  - Glossary
+  - Security
+  - Sql
+  - Sql Injection
+  - Webapp
+---
+
+
+> SQL injection takes advantage of Web apps that fail to validate user input. Hackers can maliciously pass SQL commands through the Web app for execution by a backend database.
+
+SQL injection can gain unauthorized access to a database or to retrieve information directly from the database. Many data breaches are due to SQL injection.
+
+[![](sql_inj_xss.gif)](https://www.acunetix.com/wp-content/uploads/2010/09/sql_inj_xss.gif)
+
+## How It Works
+
+![](updates_loginscreen.png)
+
+After entering username and password, behind the GUI the SQL queries work as follows:
+
+```sql
+"SELECT Count(*) FROM Users WHERE Username=' " + txt.User.Text+" ' AND Password=' "+ txt.Password.Text+" ' ";
+```
+
+Now suppose User enters the User## Term: admin and Password: passwd123, so after clicking on the Log in button, SQL query will run as follows:
+
+```sql
+"SELECT Count(*) FROM Users WHERE Username=' admin ' AND Password=' passwd123 ' ";
+```
+
+If the credentials are correct, then the user is allowed to log in, so it's a very simple (and therefore insecure) mechanism. Hackers use this insecurity to gain unauthorized access.
+
+Hackers use a simple string called a Magical String, for example:
+
+**User## Term: _admin_**
+
+**Password: _anything 'or'1'='1_**
+
+After clicking on the login button, the SQL query will work as follows:
+
+```sql
+"SELECT Count(*) FROM Users WHERE Username=' admin ' AND Password=' anything 'or'1'='1 ' ";
+```
+
+Just take a closer look at the above query's password section.
+
+    Password=' anything 'or'1'='1 '
+
+The password is not 'anything', hence password=anything results in FALSE, but '1'='1' is a TRUE statement and hence returns a TRUE value. Finally, due to the OR operator, the value ( FALSE OR TRUE ) is TRUE, so authentication bypasses successfully. Just due to a simple string (Magical String) the entire database is compromised.
+
+## How To Prevent
+
+Before executing the queries for the user credentials, make some changes like the following:
+
+```sql
+$id = $_GET['id']
+
+(1) $id = Stripslashes($id)
+
+(2) $id = mysql_real_escape_String($id)
+```
+
+So due to (1) each single quote (') in the input string is replaced with double quotes ("), and due to (2) before every (') it adds (/). The revised magical string fails to bypass the authentication, and your database stays secure.
+
+#### See also
+
+- _Interwiki("wikipedia", "SQL injection"_) on Wikipedia
+- [Explanation of SQL injection ](https://www.owasp.org/index.php/SQL_Injection)on OWASP (Open Web Application Security Project)
+
+---
+
+
+## Term:  SQL
+  - CodingScripting
+  - Database
+  - Glossary
+  - Sql
+---
+
+
+> **SQL** (Structured Query Language) is a descriptive computer language designed for updating, retrieving, and calculating data in table-based databases.
+
+#### See also
+
+- _Interwiki("wikipedia", "SQL"_) on Wikipedia
+- [Learn SQL on sqlzoo.net](https://sqlzoo.net/wiki/SQL_Tutorial)
+- [Tutorials Point](https://www.tutorialspoint.com/sql/)
+
+---
+
+
+## Term:  SRI
+  - CSP
+  - Security
+---
+
+
+> **Subresource Integrity** (SRI) is a security feature that enables browsers to verify that files they fetch (for example, from a _Glossary("CDN"_)) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched file must match.
+
+#### See also
+
+- [Subresource Integrity](/en-US/docs/Web/Security/Subresource_Integrity)
+- _HTTPHeader("Content-Security-Policy"_): _CSP("require-sri-for"_)
+
+---
+
+
+## Term:  Secure Sockets Layer (SSL)
+  - Glossary
+  - SSL
+  - Security
+  - TLS
+  - Web Performance
+---
+
+
+> Secure Sockets Layer, or SSL, was the old standard security technology for creating an encrypted network link between a server and client, ensuring all data passed is private and secure. The current version of SSL is version 3.0, released by Netscape in 1996, and has been superseded by the _Glossary("TLS", "Transport Layer Security (TLS)"_) protocol.
+
+#### See also
+
+- _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
+- [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("HTTPS"_)
+  - _Glossary("TLS"_)
+
+---
+
+
+## Term:  Stacking context
+  - CSS
+  - CodingScripting
+  - Glossary
+---
+
+
+> **Stacking context** refers to how elements on a webpage appear to sit on top of other elements, just as you can arrange index cards on your desk to lie side-by-side or overlap each other.
+
+#### See also
+
+- [Further explanation and example](/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+
+---
+
+
+## Term:  State machine
+  - CodingScripting
+  - Finite
+  - Glossary
+  - Input
+  - Mealy
+  - Moore
+  - State Machine
+  - Turing Machine
+---
+
+
+> A state machine is a mathematical abstraction used to design algorithms. A state machine reads a set of inputs and changes to a different state based on those inputs.
+
+A state is a description of the status of a system waiting to execute a transition. A transition is a set of actions to execute when a condition is fulfilled or an event received. In a state diagram, circles represent each possible state and arrows represent transitions between states.
+
+Looking at the final state, you can discern something about the series of inputs leading to that state.
+
+There are two types of basic state machines:
+
+- deterministic finite state machine
+  - : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
+- non-deterministic finite state machine
+  - : Given some state, an input can lead to more than one different state.
+
+_Figure 1: Deterministic Finite State Machine_
+
+![](statemachine1.png)
+
+In _Figure 1_, the state begins in State 1; the state changes to State 2 given input 'X', or to State 3 given input 'Y'.
+
+_Figure 2: Non-Deterministic Finite State Machine_
+
+[![](statemachine2.png)](http://postimg.org/image/mpq3nz82h/)
+
+In _Figure 2_, given input 'X', the state can persist or change to State 2.
+
+Note that any _Glossary("regular expression"_) can be represented by a state machine.
+
+#### See also
+
+- _Interwiki("wikipedia", "Finite-state machine"_) on Wikipedia
+- _Interwiki("wikipedia", "UML state machine"_) on Wikipedia
+- _Interwiki("wikipedia", "Moore machine"_) on Wikipedia
+- _Interwiki("wikipedia", "Mealy machine"_) on Wikipedia
+
+---
+
+
+## Term:  Statement
+  - Beginner
+  - CodingScripting
+  - Glossary
+---
+
+
+> In a computer programming language, a **statement** is a line of code commanding a task. Every program consists of a sequence of statements.
+
+#### See also
+
+- _Interwiki("wikipedia", "Statement (computer science)"_) on Wikipedia
+- [JavaScript statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
+
+---
+
+
+## Term:  Static method
+  - CodingScripting
+  - Glossary
+  - JavaScript
+  - Method
+  - Static
+  - Static Method
+---
+
+
+> A static method (or _static function_) is a _Glossary("method"_) defined as a member of an _Glossary("object"_) but is accessible directly from an API object's constructor, rather than from an object instance created via the constructor.
+
+In a [Web API](/en-US/docs/Web/API), a static method is one which is defined by an interface but can be called without instantiating an object of that type first.
+
+Methods called on object instances are called _instance methods_.
+
+## Examples
+
+In the [Notifications API](/en-US/docs/Web/API/Notifications_API), the _domxref("Notification.requestPermission()"_) method is called on the actual _domxref("Notification"_) constructor itself — it is a static method:
+
+```js
+let promise = Notification.requestPermission();
+```
+
+The _domxref("Notification.close()"_) method on the other hand, is an instance method — it is called on an specific notification object instance to close the system notification it represents:
+
+```js
+let myNotification = new Notification('This is my notification');
+
+myNotification.close();
+```
+
+#### See also
+
+- [Static Method](https://www.techopedia.com/definition/24034/static-method) on Techopedia
+- [static](/en-US/docs/Web/JavaScript/Reference/Classes/static)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Object"_)
+  - _Glossary("Method"_)
+
+---
+
+
+## Term:  Static typing
+  - CodingScripting
+  - Glossary
+  - Type
+---
+
+
+> A **statically-typed** language is a language (such as Java, C, or C++) where variable types are known at compile time. In most of these languages, types must be expressly indicated by the programmer; in other cases (such as OCaml), type inference allows the programmer to not indicate their variable types.
+
+#### See also
+
+- _Interwiki("wikipedia", "Type system"_) on Wikipedia
+
+---
+
+
+## Term:  Strict mode
+  - Glossary
+  - JavaScript
+  - Reference
+---
+
+
+> JavaScript's **strict mode** is a way to _opt in_ to a restricted variant of JavaScript, thereby implicitly opting-out of "_Glossary("Sloppy_mode", "sloppy mode"_)". Strict mode isn't just a subset: it _intentionally_ has different semantics from normal code.
+
+Strict mode for an entire script is invoked by including the statement `"use strict";` before any other statements.
+
+#### See also
+
+- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+- [Transitioning to strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Sloppy mode"_)
+
+---
+
+
+## Term:  Stringifier
+  - CodingScripting
+  - Glossary
+  - Stringifier
+---
+
+
+> An _Glossary("object", "object's"_) stringifier is any _Glossary("attribute"_) or _Glossary("method"_) that is defined to provide a textual representation of the object for use in situations where a _Glossary("string"_) is expected.
+
+#### See also
+- Stringifiers in [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#stringifier)
+
+---
+
+
+## Term:  String
+  - Beginner
+  - CodingScripting
+  - Glossary
+  - String
+---
+
+
+> In any computer programming language, a string is a sequence of _Glossary("character","characters"_) used to represent text.
+
+In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "primitive values"_) and the _jsxref("String"_) object is a _Glossary("wrapper"_) around a String primitive.
+
+#### See also
+
+- _Interwiki("wikipedia", "String (computer science)"_) on Wikipedia
+- [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures#string_type)
+
+---
+
+
+## Term:  STUN
+  - Glossary
+  - Infrastructure
+  - STUN
+  - WebMechanics
+  - WebRTC
+---
+
+
+> **STUN** (Session Traversal Utilities for NAT) is an auxiliary protocol for transmitting data around a _glossary("NAT"_) (Network Address Translator). STUN returns the _glossary("IP address"_), _glossary("port"_), and connectivity status of a networked computer behind a NAT.
+
+#### See also
+
+- _Interwiki("wikipedia", "STUN"_) on Wikipedia
+- [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+
+### Technical reference
+
+- [Specification](https://datatracker.ietf.org/doc/html/rfc5389)
+
+---
+
+
+## Term:  Style origin
+  - CSS
+  - Glossary
+  - Style
+  - Style Origin
+  - origin
+---
+
+
+> In _Glossary("CSS"_), there are three categories of sources for style changes. These categories are called **style origins**. They are the **user agent origin**, **user origin**, and the **author origin**.
+
+- User-agent origin
+  - : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
+- User origin
+  - : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
+- Author origin
+  - : The author origin is the style origin which contains all of the styles which are part of the document, whether embedded within the _Glossary("HTML"_) or loaded from an external stylesheet file.
+
+The style origins are used to determine where to stop rolling back (or backtracking through) the cascade of styles that have been applied to an element when removing styles, such as when using the _cssxref("unset"_) or _cssxref("revert"_) keywords.
+
+#### See also
+
+- [CSS Cascading and Inheritance: Cascading Origins](https://drafts.csswg.org/css-cascade-4/#cascading-origins)
+
+---
+
+
+## Term:  Stylesheet
+  - Glossary
+  - StyleSheet
+---
+
+
+> A **stylesheet** is a set of CSS rules used to control the layout and design of a webpage or document. _Internal_ stylesheets are placed inside a _htmlelement("style"_) element inside the _htmlelement("head"_) of a web document, and _external_ stylesheets are placed inside a separate `.css` file, which is applied to a document by referencing the file inside a _htmlelement("link"_) element in the document's head.
+
+External stylesheets are generally preferred because they allow you to control the styling of multiple pages from a single place, rather than having to repeat the CSS across each page.
+
+#### See also
+
+- [CSS first steps](/en-US/docs/Learn/CSS/First_steps)
+- Stylesheets on [Wikipedia](<https://en.wikipedia.org/wiki/Style_sheet_(web_development)>)
+
+---
+
+
+## Term:  SVG
+  - Beginner
+  - CodingScripting
+  - Glossary
+  - Graphics
+  - SVG
+  - l10n:priority
+---
+
+
+> _Scalable Vector Graphics_ (**SVG**) is a 2D vector image format based on an _Glossary("XML"_) syntax.
+
+The _Glossary("W3C"_) began work on SVG in the late 1990s, but SVG only became popular when _Glossary("Microsoft Internet Explorer", "Internet Explorer"_) 9 came out with SVG support. All major _Glossary("browser","browsers"_) now support SVG.
+
+
+As a [vector image format](https://en.wikipedia.org/wiki/Vector_graphics), SVG graphics can scale infinitely, making them invaluable in _Glossary("responsive web design", "responsive design"_), since you can create interface elements and graphics that scale to any screen size. SVG also provides a useful set of tools, such as clipping, masking, filters, and animations.
+
+#### See also
+
+- _Interwiki("wikipedia", "SVG"_) on Wikipedia
+- [W3.org's SVG Primer](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
+- [SVG documentation on MDN](/en-US/docs/Web/SVG)
+- [Latest SVG specification](https://www.w3.org/TR/SVG/)
+
+---
+
+
+## Term:  SVN
+  - Collaborating
+  - Glossary
+---
+
+
+> Apache Subversion (**SVN**) is a free source control management (_Glossary("SCM"_)) system. It allows developers to keep a history of text and code modifications. Although SVN can also handle binary files, we do not recommend that you use it for such files.
+
+#### See also
+
+- _Interwiki("wikipedia", "Apache Subversion"_) on Wikipedia
+- [Official website](https://subversion.apache.org/)
+
+---
+
+
+## Term:  Symbol
+  - Data Type
+  - ECMAScript 2015
+  - Glossary
+  - JavaScript
+  - Sharing
+  - Symbol
+---
+
+
+> In _Glossary("JavaScript"_), Symbol is a _Glossary("Primitive", "primitive value"_).
+
+A value having the data type **Symbol** can be referred to as a "Symbol value". In a JavaScript runtime environment, a symbol value is created by invoking the function _jsxref("Symbol"_), which dynamically produces an anonymous, unique value. A symbol may be used as an object property.
+
+Symbol can have an optional description, but for debugging purposes only.
+
+A **Symbol** value represents a unique identifier. For example:
+
+```js
+// Here are two symbols with the same description:
+let Sym1 = Symbol("Sym")
+let Sym2 = Symbol("Sym")
+
+console.log(Sym1 === Sym2) // returns "false"
+// Symbols are guaranteed to be unique.
+// Even if we create many symbols with the same description,
+// they are different values.
+```
+
+> **Note:** If you are familiar with Ruby (or another language) that also has a feature called _"symbols"_, please don’t be misled. JavaScript symbols are different.
+
+_Symbol_ type is a new feature in ECMAScript 2015. There is no ECMAScript 5 equivalent for Symbol.
+
+In some programming languages, the symbol data type is referred to as an "atom."
+
+### Symbols don't "Auto-Convert" to strings
+
+Most values in JavaScript support implicit conversion to a string. For instance, we can `alert` almost any value, and it will work. Symbols are special. They don’t auto-convert.
+
+For example:
+
+```js
+let Sym = Symbol("Sym")
+alert(Sym)  // TypeError: Cannot convert a Symbol value to a string
+```
+
+That’s a "language guard" against messing up, because strings and symbols are fundamentally different, and should not occasionally convert one into another.
+
+If you really want to show a symbol, we need to call `.toString()` on it.
+
+```js
+let Sym = Symbol("Sym")
+alert(Sym.toString())  // Symbol(Sym), now it works
+```
+
+Or you can use the `symbol.description` property to get its description:
+
+```js
+let _Sym = Symbol("Sym");
+
+alert(_Sym.description); // Sym
+```
+
+### Well-known symbols
+
+The _jsxref("Symbol"_) class has constants for so-called _well-known symbols_. These symbols let you configure how JS treats an object, by using them as property keys.
+
+Examples of well-known symbols are: _jsxref("Symbol.iterator"_) for array-like objects, or _jsxref("Symbol.search"_) for string objects.
+
+They are listed in the specification in the [Well-known symbols](https://tc39.github.io/ecma262/#sec-well-known-symbols) table:
+
+- `Symbol.hasInstance`
+- `Symbol.isConcatSpreadable`
+- `Symbol.iterator`
+- `Symbol.toPrimitive`
+- …and so on.
+
+### Global symbol registry
+
+There is a global symbol registry holding all available symbols. The methods that access the registry are _jsxref("Symbol.for()"_) and _jsxref("Symbol.keyFor()"_); these mediate between the global symbol table (or "registry") and the run-time environment. The global symbol registry is mostly built by JavaScript's compiler infrastructure, and the global symbol registry's content is not available to JavaScript's run-time infrastructure, except through these reflective methods.
+
+The method `Symbol.for(tokenString)` returns a symbol value from the registry, and `Symbol.keyFor(symbolValue)` returns a token string from the registry; each is the other's inverse, so the following is `true`:
+
+```js
+Symbol.keyFor(Symbol.for("tokenString")) === "tokenString" // true
+```
+
+#### See also
+
+- _Interwiki("wikipedia", "Symbol (programming)"_) on Wikipedia
+- [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+- [Symbols in ECMAScript 6](https://2ality.com/2014/12/es6-symbols.html)
+- _jsxref("Symbol"_) in the MDN JS reference
+- _jsxref("Object.getOwnPropertySymbols()"_)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("JavaScript"_)
+  - _Glossary("Primitive"_)
+
+---
+
+
+## Term:  Symmetric-key cryptography
+  - Cryptography
+  - Glossary
+  - Security
+  - Symmetric-key cryptography
+---
+
+
+> Symmetric-key cryptography is a term used for cryptographic algorithms that use the same key for encryption and for decryption. The key is usually called a "symmetric key" or a "secret key".
+
+This is usually contrasted with _Glossary("public-key cryptography"_), in which keys are generated in pairs and the transformation made by one key can only be reversed using the other key.
+
+Symmetric-key algorithms should be secure when used properly and are highly efficient, so they can be used to encrypt large amounts of data without having a negative effect on performance.
+
+Most symmetric-key algorithms currently in use are block ciphers: this means that they encrypt data one block at a time. The size of each block is fixed and determined by the algorithm: for example _Glossary("AES"_) uses 16-byte blocks. Block ciphers are always used with a __Glossary("Block cipher mode of operation", "mode"_)_, which specifies how to securely encrypt messages that are longer than the block size. For example, AES is a cipher, while CTR, CBC, and GCM are all modes. Using an inappropriate mode, or using a mode incorrectly, can completely undermine the security provided by the underlying cipher.
+
+#### See also
+
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Block cipher mode of operation"_)
+  - _Glossary("Cryptography"_)
+  - _Glossary("Cryptographic hash function"_)
+  - _Glossary("Symmetric-key cryptography"_)
+
+---
+
+
+## Term:  Synchronous
+  - Glossary
+  - Web
+  - WebMechanics
+---
+
+
+> *Synchronous* refers to real-time communication where each party receives (and if necessary, processes and replies to) messages instantly (or as near to instantly as possible).
+
+A human example is the telephone — during a telephone call you tend to respond to another person immediately.
+
+Many programming commands are also synchronous — for example when you type in a calculation, the environment will return the result to you instantly, unless you program it not to.
+
+#### See also
+
+- _glossary("Asynchronous"_)
+- [Synchronous and asynchronous requests](/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests) using the [XMLHttpRequest()](/en-US/docs/Web/API/XMLHttpRequest) _glossary("API"_)
+
+---
+
+
+## Term:  Syntax error
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> An _Glossary("exception"_) caused by the incorrect use of a pre-defined _Glossary("syntax"_). Syntax errors are detected while compiling or parsing source code.
+
+For example, if you leave off a closing brace (`}`) when defining a _Glossary("JavaScript"_) function, you trigger a syntax error.  Browser development tools display _Glossary("JavaScript"_) and _Glossary("CSS"_) syntax errors in the console.
+
+#### See also
+
+- _Interwiki("wikipedia", "Syntax error"_) on Wikipedia
+- _jsxref("SyntaxError"_) JavaScript object
+
+---
+
+
+## Term:  Syntax
+  - CodingScripting
+  - Glossary
+  - Syntax
+---
+
+
+> Syntax specifies the required combination and sequence of _Glossary("character","characters"_) making up correctly structured code. Syntax generally includes grammar and the rules that apply to writing it, such as indentation requirements in Python.
+
+Syntax varies from language to language (e.g., syntax is different in _Glossary("HTML"_) and _Glossary("JavaScript"_)). Although languages can share few similarities in terms of their syntaxes for example "operand operator operand" rule in javaScript and python. This does not mean the two languages share similarities with syntax.
+
+Syntax applies both to programming languages (commands to the computer) and markup languages (document structure information) alike.
+
+Syntax only governs ordering and structure; the instructions must also be _meaningful_, which is the province of _Glossary("semantics"_).
+
+Code must have correct syntax in order to _Glossary("compile"_) correctly, otherwise a _Glossary("syntax error"_) occurs. Even small errors, like a missing parenthesis, can stop source code from compiling successfully.
+
+Frameworks are said to have a "clean" syntax if they produce simple, readable, concise results. If a codebase uses "a lot of syntax", it requires more characters to achieve the same functionality.
+
+#### See also
+
+- _Interwiki("wikipedia", "Syntax (programming languages)"_) on Wikipedia
+
+---
+
+
+## Term:  Synthetic monitoring
+  - Glossary
+  - RUM
+  - Reference
+  - Synthetic monitoring
+  - Web Performance
+---
+
+
+> **Synthetic monitoring** involves monitoring the performance of a page in a 'laboratory' environment, typically with automation tooling in an environment that is as consistent as possible.
+
+With a consistent baseline, synthetic monitoring is good for measuring the effects of code changes on performance. However, it doesn't necessarily reflect what users are experiencing.
+
+Synthetic Monitoring involves deploying scripts to simulate the path an end-user might take through a web application, reporting back the performance of the simulator experiences. Examples of popular synthetic monitoring tools include [WebPageTest](https://webpagetest.org) and [Lighthouse](https://developers.google.com/web/tools/lighthouse/). The traffic measured is not of your actual users, but rather synthetically generated traffic collecting data on page performance.
+
+Unlike [RUM](/en-US/docs/Glossary/Real_User_Monitoring), synthetic monitoring provides a narrow view of performance that doesn't account for user differences, making it useful in getting basic data about an application's performance and spot-checking performance in development environments. Combined with other tools, such as network throttling, can provide excellent insight into potential problem areas.
+
+#### See also
+
+- [Real User Monitoring (RUM)](/en-US/docs/Glossary/Real_User_Monitoring)
+- [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
+- [Beacon](/en-US/docs/Glossary/beacon)
+
+---
+
+
+## Term:  Table Grid Box
+  - Glossary
+  - CSS
+  - Tables
+---
+
+
+> The **Table Grid Box** is a block level box which contains all of the table internal boxes, excluding the caption. The box which includes the caption is referred to as the [Table Wrapper Box](/en-US/docs/Glossary/Table_Wrapper_Box).
+
+---
+
+
+## Term:  Table Wrapper Box
+  - Glossary
+  - CSS
+  - Tables
+---
+
+
+> The **Table Wrapper Box** is the box generated around [table grid boxes](/en-US/docs/Glossary/Table_Grid_Box) which accounts for the space needed for any caption displayed for the table. This box will become the containing block for absolutely positioned items where the table is the containing block.
+
+---
+
+
+## Term:  Tag
+  - CodingScripting
+  - Glossary
+  - HTML
+  - Intro
+---
+
+
+> In _Glossary("HTML"_), a **tag** is used for creating an _Glossary("element"_).
+
+The name of an HTML element is the name used in angle brackets such as `<p>` for paragraph. Note that the end tag's name is preceded by a slash character, `</p>`, and that in _glossary("empty element", "empty elements"_), the end tag is neither required nor allowed. If _Glossary("attribute", "attributes"_) are not mentioned, default values are used in each case.
+
+#### See also
+
+- _Interwiki("wikipedia", "HTML element"_) on Wikipedia
+- [HTML elements syntax](https://html.spec.whatwg.org/multipage/syntax.html#elements-2) on _glossary("WHATWG"_)
+- [Introduction to HTML](/en-US/docs/Learn/HTML/Introduction_to_HTML)
+
+---
+
+
+## Term:  TCP handshake
+  - Glossary
+  - Networking
+  - SSL
+  - Security
+  - TCP
+  - TCP handshake
+  - TLS
+  - Web Performance
+---
+
+
+> _glossary('Transmission Control Protocol (TCP)','TCP (Transmission Control Protocol)'_) uses a **three-way handshake** (aka TCP-handshake, three message handshake, and/or SYN-SYN-ACK) to set up a TCP/IP connection over an IP based network.
+
+The three messages transmitted by TCP to negotiate and start a TCP session are nicknamed SYN, _SYN-ACK_, and ACK for **SYN**chronize, **SYN**chronize-**ACK**nowledgement, and **ACK**nowledge respectively. The three message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data such as HTTP browser requests.
+
+The host, generally the browser, sends a TCP SYNchronize packet to the server. The server receives the SYN and sends back a SYNchronize-ACKnowledgement. The host receives the server's SYN-ACK and sends an ACKnowledge. The server receives ACK and the TCP socket connection is established.
+
+This handshake step happens after a _glossary('DNS', 'DNS lookup'_) and before the _glossary('TLS'_) handshake, when creating a secure connection. The connection can be terminated independently by each side of the connection via a four-way handshake.
+
+#### See also
+
+- [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
+- _Glossary("HTTPS"_)
+- _Interwiki("wikipedia", "Transport Layer Security"_) on Wikipedia
+
+---
+
+
+## Term:  TCP slow start
+  - Glossary
+  - Infrastructure
+  - Networking
+  - TCP
+  - Transmission Control Protocol
+  - Web Performance
+  - data
+---
+
+
+> _glossary('TCP'_) slow start helps buildup transmission speeds to the network's capabilities. It does this without initially knowing what those capabilities are and without creating congestion. _glossary('TCP'_) slow start is an algorithm used to detect the available bandwidth for packet transmission, and balances the speed of a network connection. It prevents the appearance of network congestion whose capabilities are initially unknown, and slowly increases the volume of information diffused until the network's maximum capacity is found.
+
+To implement TCP slow start, the congestion window (_cwnd_) sets an upper limit on the amount of data a source can transmit over the network before receiving an acknowledgment (ACK). The slow start threshold (_ssthresh_) determines the (de)activation of slow start. When a new connection is made, cwnd is initialized to one TCP data or acknowledgment packet, and waits for an acknowledgement, or ACK. When that ACK is received, the congestion window is incremented until the _cwnd_ is greater than _ssthresh_. Slow start also terminates when congestion is experienced.
+
+## Congestion control
+
+Congestion itself is a state that happens within a network layer when the message traffic is too busy it slows the network response time. The server sends data in TCP packets, the user's client then confirms delivery by returning acknowledgements, or ACKs. The connection has a limited capacity depending on hardware and network conditions. If the server sends too many packets too quickly, they will be dropped. Meaning, there will be no acknowledgement. The server registers this as missing ACKs. Congestion control algorithms use this flow of sent packets and ACKs to determine a send rate.
+
+#### See also
+
+- [Populating the page: how browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+- [http overview](/en-US/docs/Web/HTTP/Overview)
+
+---
+
+
+## Term:  TCP
+  - Glossary
+  - Infrastructure
+  - Networking
+  - TCP
+  - Transmission Control Protocol
+  - data
+---
+
+
+> **TCP (Transmission Control Protocol)** is an important network _Glossary("protocol"_) that lets two hosts connect and exchange data streams.  TCP guarantees the delivery of data and packets in the same order as they were sent.  Vint Cerf and Bob Kahn, who were DARPA scientists at the time, designed TCP in the 1970s.
+
+TCP's role is to ensure the packets are reliably delivered, error free.  TCP has concurrence control, which means the initial requests start small, increasing in size to the levels of bandwidth the computers, servers, and network can support.
+
+#### See also
+
+- _Interwiki("wikipedia", "Transmission Control Protocol"_) (Wikipedia)
+- [HTTP Overview](/en-US/docs/Web/HTTP/Overview)
+- [How browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("IPv4"_)
+  - _Glossary("IPv6"_)
+  - _Glossary("Packet"_)
+
+---
+
+
+## Term:  Telnet
+  - Glossary
+  - Infrastructure
+---
+
+
+> **Telnet** is a command line tool and an underlying TCP/IP protocol for accessing remote computers.
+
+#### See also
+
+- _interwiki('wikipedia','Telnet'_) on Wikipedia
+
+---
+
+
+## Term:  Texel
+  - 3D
+  - Drawing
+  - Glossary
+  - Graphics
+  - Texel
+  - Texture
+---
+
+
+> A **Texel** is a single-pixel within a texture map, which is an image that gets used (in whole or in part) as the image presented on a polygon's surface within a 3D rendered image. It is not to be confused with pixel which is the unit of screen space. This is one of the main differences between Texel’s and pixels, pixels are image data. Texel components are made up of subjective data, therefore they can be an image as well as a depth map.
+
+The process of mapping the appropriate Texel’s to their corresponding points on a polygon is called **texture mapping**, which is a stage of the process of rendering a 3D image for display. Texture mapping is typically done prior to lighting the scene; however, in WebGL, lighting is performed as part of the texture mapping process.
+
+Textures are characterised by collections of Texel’s, as how images are characterised by collections of pixels. When texture mapping occurs the renderer maps Texel’s to the appropriate pixels.
+
+#### See also
+
+- _interwiki("wikipedia", "Texel (graphics)"_) on Wikipedia
+- [Using textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Using_textures_in_WebGL)
+- [Lighting in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Lighting_in_WebGL)
+- [Animating textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Animating_textures_in_WebGL)
+
+---
+
+
+## Term:  Thread
+  - Glossary
+  - Thread
+  - asynchronous
+---
+
+
+> Thread in computer science is the execution of running multiple tasks or programs at the same time. Each unit capable of executing code is called a **thread**.
+
+
+However, modern _Glossary("JavaScript"_) offers ways to create additional threads, each executing independently while possibly communicating between one another. This is done using technologies such as **[web workers](/en-US/docs/Web/API/Web_Workers_API)**, which can be used to spin off a sub-program which runs concurrently with the main thread in a thread of its own. This allows slow, complex, or long-running tasks to be executed independently of the main thread, preserving the overall performance of the site or app—as well as that of the browser overall. This also allows individuals to take advantage of modern multi-core processors.
+
+A special type of worker, called a **[service worker](/en-US/docs/Web/API/Service_Worker_API)**, can be created which can be left behind by a site—with the user's permission—to run even when the user isn't currently using that site. This is used to create sites capable of notifying the user when things happen while they're not actively engaged with a site. Such as notifying a user they have received new email even though they're not currently logged into their mail service.
+
+Overall it can be observed these threads within our operating system are extremely helpful. They help minimize the context switching time, enables more efficient communication and allows further use of the multiprocessor architecture.
+
+#### See also
+
+- [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
+- [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
+- [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Main thread"_)
+
+---
+
+
+## Term:  Three js
+  - Browser
+  - CodingScripting
+  - JavaScript
+  - Programming Language
+  - three.js
+---
+
+
+> three.js is a _Glossary("JavaScript"_)-based _Glossary("WebGL"_) engine that can run GPU-powered games and other graphics-powered apps straight from the _Glossary("browser"_). The three.js library provides many features and _Glossary("API","APIs"_) for drawing 3D scenes in your browser.
+
+#### See also
+
+- _Interwiki("wikipedia", "Three.js"_) on Wikipedia
+- [three.js official website](https://threejs.org/)
+
+---
+
+
+## Term:  Time to first byte
+  - Glossary
+  - Performance
+  - Reference
+  - Web Performance
+---
+
+
+> **Time to First Byte** (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server.  This time includes [DNS](/en-US/docs/Glossary/DNS) lookup and establishing the connection using a [TCP](/en-US/docs/Glossary/TCP) handshake and [SSL](/en-US/docs/Glossary/SSL) handshake if the request is made over [https](/en-US/docs/Glossary/https).
+
+TTFB is the time it takes between the start of the request and the start of the response, in milliseconds:
+
+    TTFB = responseStart - navigationStart
+
+#### See also
+
+- [A typical HTTP session](/en-US/docs/Web/HTTP/Session)
+- [PerformanceResourceTiming](/en-US/docs/Web/API/PerformanceResourceTiming)
+- [PerformanceTiming](/en-US/docs/Web/API/PerformanceTiming)
+
+---
+
+
+## Term:  Time to interactive
+  - Glossary
+  - Performance
+  - Reference
+  - Web Performance
+---
+
+
+> **Time to Interactive** (TTI) is a non-standardized web performance 'progress' metric defined as the point in time when the last [Long Task](/en-US/docs/Web/API/Long_Tasks_API) finished and was followed by 5 seconds of network and main thread inactivity.
+
+TTI, proposed by the Web Incubator Community Group in 2018, is intended to provide a metric that describes when a page or application contains useful content and the main thread is idle and free to respond to user interactions, including having event handlers registered.
+
+#### Caveat:
+
+TTI is derived by leveraging information from the _domxref("Long Tasks API"_). Although available in some performance monitoring tools, TTI is not a part of any official web specification at the time of writing.
+
+#### See also
+
+- [Definition of TTI](https://github.com/WICG/time-to-interactive) from Web Incubator Community Group
+- [Time to Interactive — focusing on human-centric metrics](https://building.calibreapp.com/time-to-interactive-focusing-on-the-human-centric-metrics-22eb7e64dd23) by Radimir Bitsov
+- [Tracking TTI](https://web.dev/user-centric-performance-metrics/#tracking_tti)
+
+---
+
+
+## Term:  TLD
+  - Glossary
+  - Web
+  - WebMechanics
+---
+
+
+> A TLD (_top-level domain_) is the most generic _Glossary("domain"_) in the Internet's hierarchical _Glossary("DNS"_) (domain name system). A TLD is the final component of a _Glossary("domain name"_), for example, "org" in `developer.mozilla.org`.
+
+_Glossary("ICANN"_) (Internet Corporation for Assigned Names and Numbers) designates organizations to manage each TLD. Depending on how strict an administrating organization might be, TLD often serves as a clue to the purpose, ownership, or nationality of a website.
+
+Consider an example Internet address: `https://developer.mozilla.org`
+Here org is the TLD; mozilla.org is the second-level domain name; and developer is a subdomain name. All together, these constitute a fully-qualified domain name; the addition of https\:// makes this a complete URL.
+
+_Glossary("IANA"_) today distinguishes the following groups of top-level domains:
+
+- country-code top-level domains (ccTLD)
+  - : Two-character domains established for countries or territories. Example: _.us_ for United States.
+- internationalized country code top-level domains (IDN ccTLD)
+  - : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
+- generic top-level domains (gTLD)
+  - : Top-level domains with three or more characters.
+- unsponsored top-level domains
+  - : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
+- sponsored top-level domains (sTLD)
+  - : These domains are proposed and sponsored by private organizations that decide whether an applicant is eligible to use the TLD, based on community theme concepts.
+- infrastructure top-level domain
+  - : This group consists of one domain, the _Glossary("ARPA", "Address and Routing Parameter Area"_) (ARPA).
+
+#### See also
+
+- _Interwiki("wikipedia", "TLD"_) on Wikipedia
+- [List of top-level domains](https://www.iana.org/domains/root/db)
+
+---
+
+
+## Term:  Transport Layer Security (TLS)
+  - Cryptography
+  - Glossary
+  - Infrastructure
+  - Security
+  - Web Performance
+---
+
+
+> **Transport Layer Security (TLS)**, formerly known as _Glossary("SSL", "Secure Sockets Layer (SSL)"_), is a _Glossary("protocol"_) used by applications to communicate securely across a network, preventing tampering with and eavesdropping on email, web browsing, messaging, and other protocols. Both SSL and TLS are client / server protocols that ensure communication privacy by using cryptographic protocols to provide security over a network. When a server and client communicate using TLS, it ensures that no third party can eavesdrop or tamper with any message.
+
+All modern browsers support the TLS protocol, requiring the server to provide a valid _Glossary("Digital certificate", "digital certificate"_) confirming its identity in order to establish a secure connection. It is possible for both the client and server to mutually authenticate each other, if both parties provide their own individual digital certificates.
+
+> **Note:** TLS 1.0 and 1.1 support will be removed from all major browsers in early 2020; you'll need to make sure your web server supports TLS 1.2 or 1.3 going forward. From version 74 onwards, Firefox will return a [Secure Connection Failed](https://support.mozilla.org/en-US/kb/secure-connection-failed-firefox-did-not-connect) error when connecting to servers using the older TLS versions (_bug(1606734_)).
+
+#### See also
+
+- _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
+- [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246) (The Transport Layer Security Protocol, Version 1.2)
+- [Transport Layer Security](/en-US/docs/Web/Security/Transport_Layer_Security)
+- [OWASP: Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("HTTPS"_)
+  - _Glossary("SSL"_)
+
+---
+
+
+## Term:  TOFU
+  - HTTP
+  - SSH
+  - Security
+---
+
+
+> **Trust On First Use** **(TOFU**) is a security model in which a client needs to create a trust relationship with an unknown server. To do that, clients will look for identifiers (for example public keys) stored locally. If an identifier is found, the client can establish the connection. If no identifier is found, the client can prompt the user to determine if the client should trust the identifier.
+
+TOFU is used in the SSH protocol, in [HTTP Public Key Pinning](/en-US/docs/Web/HTTP/Public_Key_Pinning) (_Glossary("HPKP"_)) where the browsers will accept the first public key returned by the server, and in _HTTPHeader("Strict-Transport-Security"_)  (_Glossary("HSTS"_)) where a browser will obey the redirection rule.
+
+#### See also
+
+- [HTTP Public Key Pinning](/en-US/docs/Web/HTTP/Public_Key_Pinning) (_Glossary("HPKP"_))
+- _HTTPHeader("Public-Key-Pins"_)
+- Wikipedia: [TOFU](https://en.wikipedia.org/wiki/Trust_on_first_use)
+
+---
+
+
+## Term:  Transferable objects
+  - Transferable
+  - Workers
+---
+
+
+> 
+**Transferable objects** are objects that own resources that can be _transferred_ from one context to another, ensuring that the resources are only available in one context at a time.
+Following a transfer, the original object is no longer usable; it no longer points to the transferred resource, and any attempt to read or write the object will throw an exception.
+
+_Transferrable objects_ are commonly use to share resources that can only be safely exposed to a single JavaScript thread at a time.
+For example, an _jsxref("ArrayBuffer"_) is a transferrable object that owns a block of memory.
+When such a buffer is transferred between threads, the associated memory resource is detached from the original buffer and attached to the buffer object created in the new thread.
+The buffer object in the original thread is no longer usable because it no longer owns a memory resource.
+
+Transferring may also be used when creating deep copies of objects with _domxref("structuredClone()"_).
+Following the cloning operation, the transferred resources are moved rather than copied to the cloned object.
+
+The mechanism used to transfer an object's resources depends on the object.
+For example, when an _jsxref("ArrayBuffer"_) is transferred between threads, the memory resource that it points to is _literally_ moved between contexts in a fast and efficient zero-copy operation.
+Other objects may be transferred by copying the associated resource and then deleting it from the old context.
+
+Not all objects are transferable.
+A list of transferable objects is [provided below](#supported_objects).
+
+## Transferring objects between threads
+
+The code below demonstrates how transferring works when sending a message from a main thread to a _domxref("Web Workers API", "web worker thread","","true"_).
+The _jsxref("Uint8Array"_) is copied (duplicated) in the worker while its buffer is transferred.
+After transfer any attempt to read or write `uInt8Array` from the main thread will throw, but you can still check the `byteLength` to confirm it is now zero.
+
+```js
+// Create an 8MB "file" and fill it.
+var uInt8Array = new Uint8Array(1024 * 1024 * 8); // 8MB
+for (var i = 0; i < uInt8Array.length; ++i) {
+  uInt8Array[i] = i;
+}
+console.log(uInt8Array.byteLength);  // 8388608
+
+// Transfer the underlying buffer to a worker
+worker.postMessage(uInt8Array, [uInt8Array.buffer]);
+console.log(uInt8Array.byteLength);  // 0
+```
+
+> **Note:** [Typed arrays](en-US/docs/Web/JavaScript/Typed_arrays) like _jsxref("Int32Array"_) and _jsxref("Uint8Array"_), are serializable, but not transferable.
+> However their underlying buffer is an _jsxref("ArrayBuffer"_), which is a transferable object.
+> We could have sent `uInt8Array.buffer` in the data parameter, but not `uInt8Array` in the transfer array.
+
+
+### Transferring during a cloning operation
+
+The code below shows a _domxref("structuredClone()"_) operation where the underlying buffer is copied from the original object to the clone.
+
+```js
+const original = new Uint8Array(1024);
+const clone = structuredClone(original);
+console.log(original.byteLength);  // 1024
+console.log(clone.byteLength);  // 1024
+
+original[0] = 1;
+console.log(clone[0]);  // 0
+
+// Transferring the Uint8Array would throw an exception as it is not a transferrable object
+// const transferred = structuredClone(original, {transfer: [original]}); 
+
+// We can transfer Uint8Array.buffer.
+const transferred = structuredClone(original, {transfer: [original.buffer]});
+console.log(transferred.byteLength);  // 1024
+console.log(transferred[0]);  // 1
+
+// After transferring Uint8Array.buffer cannot be used.
+console.log(original.byteLength);  // 0
+```
+
+## Supported objects
+
+The items that can be _transferred_ are:
+- _jsxref("ArrayBuffer"_)
+- _domxref("MessagePort"_)
+- _domxref("ReadableStream"_)
+- _domxref("WritableStream"_)
+- _domxref("TransformStream"_)
+- _domxref("AudioData"_)
+- _domxref("ImageBitmap"_)
+- _domxref("VideoFrame"_)
+- _domxref("OffscreenCanvas"_)
+
+
+> **Note:** Transferrable objects are marked up in [Web IDL files](https://github.com/w3c/webref/tree/main/ed/idl) with the attribute `Transferrable`.
+
+#### See also
+
+- [Transferable Objects: Lightning Fast!](https://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast)
+- [Using Web Workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+- [Transferable objects in the HTML specification](https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects)
+- _domxref("DedicatedWorkerGlobalScope.postMessage()"_)
+---
+
+
+## Term:  Transient activation
+  - Transient activation
+  - Glossary
+  - JavaScript
+---
+
+
+> **Transient activation** (or "transient user activation") is a window state that indicates a user has recently pressed a button, moved a mouse, used a menu, or performed some other user interaction.
+
+This state is sometimes used as a mechanism for ensuring that a web API can only function if triggered by user interaction.
+For example, scripts cannot arbitrarily launch a popup that requires _transient activation_ ⁠—it must be triggered from a UI element's event handler.
+
+Examples of APIs that require _transient activation_ are:
+- _domxref("MediaDevices.selectAudioOutput()"_)
+
+> **Note:** Transient activation expires after a timeout (if not renewed by further interaction), and may also be "consumed" by some APIs.
+
+#### See also
+
+- _domxref("MediaDevices.selectAudioOutput()"_)
+- [HTML Living Standard > Transient activation](https://html.spec.whatwg.org/multipage/interaction.html#transient-activation)
+
+
+
+---
+
+
+## Term:  Tree shaking
+  - JavaScript
+  - Modules
+  - Statement
+  - Web Performance
+  - export
+  - import
+  - tree shaking
+---
+
+
+> **Tree shaking** is a term commonly used within a JavaScript context to describe the removal of dead code.
+
+It relies on the [import](/en-US/docs/Web/JavaScript/Reference/Statements/import) and [export](/en-US/docs/Web/JavaScript/Reference/Statements/export) statements in ES2015 to detect if code modules are exported and imported for use between JavaScript files.
+
+In modern JavaScript applications, we use module bundlers (e.g., [webpack](https://webpack.js.org/) or [Rollup](https://github.com/rollup/rollup)) to automatically remove dead code when bundling multiple JavaScript files into single files. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+#### See also
+
+- ["Benefits of dead code elimination during bundling"](https://exploringjs.com/es6/ch_modules.html#_benefit-dead-code-elimination-during-bundling) in Axel Rauschmayer's book: "Exploring JS: Modules"
+- [Tree shaking implementation with webpack](https://webpack.js.org/guides/tree-shaking/)
+
+---
+
+
+## Term:  Trident
+  - Browser
+  - Glossary
+  - Infrastructure
+  - Trident
+---
+
+
+> Trident (or MSHTML) was a layout engine that powered _Glossary("Microsoft Internet Explorer","Internet Explorer"_). A Trident _Glossary("fork"_) called _EdgeHTML_ replaced Trident in Internet Explorer's successor, _Glossary("Microsoft Edge","Edge"_).
+
+#### See also
+
+- [Trident layout engine](https://en.wikipedia.org/wiki/Trident_%28layout_engine%29) on Wikipedia
+
+---
+
+
+## Term:  Truthy
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> In _Glossary("JavaScript"_), a **truthy** value is a value that is considered `true` when encountered in a _Glossary("Boolean"_) context. All values are truthy unless they are defined as _Glossary("Falsy", "falsy"_) (i.e., except for `false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, and `NaN`).
+
+_Glossary("JavaScript"_) uses _Glossary("Type_Coercion", "type coercion"_) in Boolean contexts.
+
+Examples of _truthy_ values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
+
+```js
+if (true)
+if ({})
+if ([])
+if (42)
+if ("0")
+if ("false")
+if (new Date())
+if (-42)
+if (12n)
+if (3.14)
+if (-3.14)
+if (Infinity)
+if (-Infinity)
+```
+
+### The logical AND operator, &&
+
+If the first object is truthy, the [logical AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND) returns the second operand:
+
+```js
+true && "dog"
+// returns "dog"
+
+[] && "dog"
+// returns "dog"
+```
+
+#### See also
+
+- _Glossary("Falsy"_)
+- _Glossary("Type_Coercion", "Type coercion"_)
+- _Glossary("Boolean"_)
+
+---
+
+
+## Term:  TTL
+  - Caching
+  - Domain Name System
+  - Glossary
+  - Infrastructure
+  - Networking
+  - Performance
+---
+
+
+> Time To Live (TTL) can refer to either the lifetime of a packet in a network, or the expiry time of cached data.
+
+## Networking
+
+In networking, the TTL, embedded in the packet, is a usually defined as a number of hops or as an expiration timestamp after which the packet is dropped. It provides a way to avoids network congestion, but releasing packets after they roamed the network too long.
+
+## Caching
+
+In the context of caching, TTL (as an unsigned 32-bit integer) being a part of the _Glossary("Response header", "HTTP response header"_) or the _Glossary("DNS"_) query, indicates the amount of time in seconds during which the resource can be cached by the requester.
+
+#### See also
+
+- _Interwiki("wikipedia", "Time to live", "TTL"_) on Wikipedia
+- [RFC 2181](https://datatracker.ietf.org/doc/html/rfc2181#section-8) on IETF
+- [RFC1035](https://datatracker.ietf.org/doc/html/rfc1035) on IETF
+
+---
+
+
+## Term:  TURN
+  - Glossary
+  - Infrastructure
+  - TURN
+  - WebMechanics
+  - WebRTC
+---
+
+
+> **TURN** (Traversal Using Relays around NAT) is a _Glossary('protocol'_) enabling a computer to receive and send data from behind a _glossary("NAT", "Network Address Translator"_) (NAT) or firewall. TURN is used by _Glossary("WebRTC"_) to allow any two devices on the Internet to enter a peer-to-peer connection.
+
+#### See also
+
+- _Interwiki("wikipedia", "TURN"_) on Wikipedia
+- [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+- [Specification](https://www.ietf.org/rfc/rfc5766.txt)
+- [Specification update for IPv6](https://www.ietf.org/rfc/rfc6156.txt)
+
+---
+
+
+## Term:  Type coercion
+  - Coercion
+  - JavaScript
+  - Type coercion
+---
+
+
+> Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). __Glossary("Type conversion"_)_ is similar to _type coercion_ because they both convert values from one data type to another with one key difference — _type coercion_ is implicit whereas _type conversion_ can be either implicit _or_ explicit.
+
+## Examples
+
+```js
+const value1 = '5';
+const value2 = 9;
+let sum = value1 + value2;
+
+console.log(sum);
+```
+
+In the above example, JavaScript has _coerced_ the `9` from a number into a string and then concatenated the two values together, resulting in a string of `59`. JavaScript had a choice between a string or a number and decided to use a string.
+
+The compiler could have coerced the `5` into a number and returned a sum of `14`, but it did not. To return this result, you'd have to explicitly convert the `5` to a number using the _jsxref("Global_Objects/Number", "Number()"_) method:
+
+```js
+sum = Number(value1) + value2;
+```
+
+#### See also
+
+- _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Type"_)
+  - _Glossary("Type conversion"_)
+
+---
+
+
+## Term:  Type conversion
+  - CodingScripting
+  - Glossary
+  - Type casting
+  - Type conversion
+---
+
+
+> Type conversion (or typecasting) means transfer of data from one data type to another. _Implicit conversion_ happens when the compiler automatically assigns data types, but the source code can also _explicitly_ require a conversion to take place. For example, given the instruction `5+2.0`, the floating point `2.0` is implicitly typecasted into an integer, but given the instruction `Number("0x11")`, the string "0x11" is explicitly typecasted as the number 17.
+
+#### See also
+
+- _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("Type"_)
+  - _Glossary("Type coercion"_)
+
+---
+
+
+## Term:  Type
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> **Type** is a characteristic of a _glossary("value"_) affecting what kind of data it can store, and the structure that the data will adhere to. For example, a _Glossary("boolean"_) [Data Type](/en-US/docs/Web/JavaScript/Data_structures) can hold only a `true` or `false` value at any given time, whereas a _Glossary("string"_) has the ability to hold a string or a sequence of characters, a _Glossary("number"_) can hold numerical values of any kind, and so on.
+
+A value's data type also affects the operations that are valid on that value. For example, a value of type number can be multiplied by another number, but not by a string - even if that string contains _only_ a number, such as the string "2".
+
+Types also provides us with useful knowledge about the comparison between different values. Comparison between structured types is not always an easy assumption, as even if the previous data structure is the same, there could be inherited structures inside of the [Prototype Chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+
+If you are unsure of the type of a value, you can use the [`typeof`](/en-US/docs/Web/JavaScript/Reference/Operators/typeof) operator.
+
+#### See also
+
+- _Interwiki("wikipedia", "Data type"_) on Wikipedia
+- [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+- [Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("JavaScript"_)
+  - _Glossary("string"_)
+  - _Glossary("number"_)
+  - _Glossary("bigint"_)
+  - _Glossary("boolean"_)
+  - _Glossary("null"_)
+  - _Glossary("undefined"_)
+  - _Glossary("symbol"_)
+
+---
+
+
+## Term:  UDP (User Datagram Protocol)
+  - Glossary
+  - Infrastructure
+  - Networking
+  - Protocols
+  - UDP
+---
+
+
+> **UDP** (User Datagram Protocol) is a long standing _glossary("protocol"_) used together with _glossary("IPv6","IP"_) for sending data when transmission speed and efficiency matter more than security and reliability.
+
+UDP uses a simple [connectionless communication](https://en.wikipedia.org/wiki/Connectionless_communication "Connectionless communication") model with a minimum of protocol mechanism. UDP provides [checksums](https://en.wikipedia.org/wiki/Checksum) for data integrity, and [port numbers](https://en.wikipedia.org/wiki/Port_numbers "Port numbers") for addressing different functions at the source and destination of the datagram. It has no [handshaking](https://en.wikipedia.org/wiki/Handshaking) dialogues, and thus exposes the user's program to any [unreliability](<https://en.wikipedia.org/wiki/Reliability_(computer_networking)> "Reliability (computer networking)") of the underlying network; There is no guarantee of delivery, ordering, or duplicate protection. If error-correction facilities are needed at the network interface level, an application may use the [Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol "Transmission Control Protocol") (TCP) or [Stream Control Transmission Protocol](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol "Stream Control Transmission Protocol") (SCTP) which are designed for this purpose.
+
+UDP is suitable for purposes where error checking and correction are either not necessary or are performed in the application; UDP avoids the overhead of such processing in the [protocol stack](https://en.wikipedia.org/wiki/Protocol_stack "Protocol stack"). Time-sensitive applications often use UDP because dropping packets is preferable to waiting for packets delayed due to [retransmission](<https://en.wikipedia.org/wiki/Retransmission_(data_networks)> "Retransmission (data networks)"), which may not be an option in a [real-time system](https://en.wikipedia.org/wiki/Real-time_system "Real-time system").
+
+#### See also
+
+- _Interwiki("wikipedia", "User Datagram Protocol"_) on Wikipedia
+- [Specification](https://datatracker.ietf.org/doc/html/rfc768)
+
+---
+
+
+## Term:  UI
+  - Accessibility
+  - Design
+  - Glossary
+---
+
+
+> **User Interface** (UI) is anything that facilitates the interaction between a user and a machine. In the world of computers, it can be anything from a keyboard, a joystick, a screen or a program. In case of computer software, it can be a command-line prompt, a webpage, a user input form, or the front-end of any application.
+
+#### See also
+
+- _interwiki("wikipedia", "User_interface", "User interface"_) on Wikipedia
+- _interwiki("wikipedia", "Front_end_development", "Front end development"_) on Wikipedia
+
+---
+
+
+## Term:  undefined
+  - CodingScripting
+  - Glossary
+  - JavaScript
+  - NeedsContent
+---
+
+
+> **`undefined`** is a _Glossary("primitive"_) value automatically assigned to _glossary("variable", "variables"_) that have just been declared, or to formal _Glossary("Argument","arguments"_) for which there are no actual arguments.
+
+## Example
+
+```js
+var x; //create a variable but assign it no value
+
+console.log("x's value is", x) //logs "x's value is undefined"
+```
+
+#### See also
+
+- _Interwiki("wikipedia", "Undefined value"_) on Wikipedia
+- [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+
+---
+
+
+## Term:  Unicode
+  - Infrastructure
+---
+
+
+> Unicode is a standard _Glossary("Character set","character set"_) that numbers and defines _Glossary("Character","characters"_) from the world's different languages, writing systems, and symbols.
+
+By assigning each character a number, programmers can create _Glossary("Character encoding","character encodings"_), to let computers store, process, and transmit any combination of languages in the same file or program.
+
+Before Unicode, it was difficult and error-prone to mix languages in the same data. For example, one character set would store Japanese characters, and another would store the Arabic alphabet. If it was not clearly marked which parts of the data were in which character set, other programs and computers would display the text incorrectly, or damage it during processing. If you've ever seen text where characters like curly quotes (`“”`) were replaced with gibberish like `Ã‚Â£`, then you've seen this problem, known as _Interwiki("wikipedia", "Mojibake"_).
+
+The most common Unicode character encoding on the Web is _Glossary("UTF-8"_). Other encodings exist, like UTF-16 or the obsolete UCS-2, but UTF-8 is recommended.
+
+#### See also
+
+- _Interwiki("wikipedia", "Unicode"_) on Wikipedia
+- [The Unicode Standard: A Technical Introduction](https://www.unicode.org/standard/principles.html)
+
+---
+
+
+## Term:  URI
+  - Glossary
+  - HTTP
+  - Search
+  - URI
+  - URL
+---
+
+
+> A **URI** _(Uniform Resource Identifier)_ is a string that refers to a resource.
+
+The most common are _Glossary("URL","URL"_)s, which identify the resource by giving its location on the Web. _Glossary("URN","URN"_)s, by contrast, refer to a resource by a name, in a given namespace, such as the ISBN of a book.
+
+#### See also
+
+- _Interwiki("wikipedia", "URI"_) on Wikipedia
+- [RFC 3986 on URI](https://datatracker.ietf.org/doc/html/rfc3986)
+
+---
+
+
+## Term:  URL
+  - Glossary
+  - Infrastructure
+  - l10n:priority
+---
+
+
+> **Uniform Resource Locator** (**URL**) is a text string that specifies where a resource (such as a web page, image, or video) can be found on the Internet.
+
+In the context of _Glossary("HTTP"_), URLs are called "Web address" or "link". Your _glossary("browser"_) displays URLs in its address bar, for example: `https://developer.mozilla.org` Some browsers display only the part of a URL after the "//", that is, the _Glossary("Domain name"_).
+
+URLs can also be used for file transfer (_Glossary("FTP"_)) , emails (_Glossary("SMTP"_)), and other applications.
+
+#### See also
+
+- _Interwiki("wikipedia", "URL"_) on Wikipedia
+- [Understanding URLs and their structure](/en-US/docs/Learn/Common_questions/What_is_a_URL)
+- The syntax of URLs is defined in the [URL Living Standard](https://url.spec.whatwg.org/)
+
+---
+
+
+## Term:  URN
+  - Glossary
+  - Intro
+  - Navigation
+  - urn
+---
+
+
+> URN (Uniform Resource Name) is a _Glossary("URI"_) in a standard format, referring to a resource without specifying its location or whether it exists. This example comes from [RFC3986](https://www.ietf.org/rfc/rfc3986.txt): `urn:oasis:names:specification:docbook:dtd:xml:4.1.2`
+
+#### See also
+
+- _Interwiki("wikipedia", "URN"_) on Wikipedia
+
+---
+
+
+## Term:  Usenet
+  - Glossary
+  - WebMechanics
+---
+
+
+> Usenet is an internet discussion system where each post is duplicated on many servers. The equivalent of Internet forums in its day, Usenet functioned like a bulletin board system.
+
+#### See also
+
+- _Interwiki("wikipedia", "Usenet"_) on Wikipedia
+
+---
+
+
+## Term:  User agent
+  - Browser
+  - Glossary
+  - UA
+  - User-agent
+  - Web Browser
+  - WebMechanics
+  - agent
+  - user agent
+  - userAgent
+---
+
+
+> A user agent is a computer program representing a person, for example, a _Glossary("Browser","browser"_) in a _Glossary("World Wide Web", "Web"_) context.
+
+Besides a browser, a user agent could be a bot scraping webpages, a download manager, or another app accessing the Web. Along with each request they make to the server, browsers include a self-identifying _HTTPHeader("User-Agent"_) _Glossary("HTTP"_) header called a user agent (UA) string. This string often identifies the browser, its version number, and its host operating system.
+
+Spam bots, download managers, and some browsers often send a fake UA string to announce themselves as a different client. This is known as _user agent spoofing_.
+
+The user agent string can be accessed with _Glossary("JavaScript"_) on the client side using the _domxref("Navigator/userAgent", "NavigatorID.userAgent"_) property.
+
+A typical user agent string looks like this: `"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0"`.
+
+#### See also
+
+- _interwiki("wikipedia", "User agent"_) on Wikipedia
+- _domxref("Navigator/userAgent", "NavigatorID.userAgent"_)
+- [Browser detection using the user agent](/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent)
+- _RFC(2616, "14.43"_): The `User-Agent` header
+- [Glossary:](/en-US/docs/Glossary)
+
+  - _Glossary("Browser"_)
+
+- HTTP Headers
+
+  - _HTTPHeader("User-agent"_)
+
+---
+
+
+## Term:  UTF-8
+  - CodingScripting
+  - Glossary
+  - HTML
+  - JavaScript
+  - Utf-8
+---
+
+
+> UTF-8 (UCS Transformation Format 8) is the World Wide Web's most common _Glossary("Character encoding", "character encoding"_). Each character is represented by one to four bytes. UTF-8 is backward-compatible with _Glossary("ASCII"_) and can represent any standard Unicode character.
+
+The first 128 UTF-8 characters precisely match the first 128 ASCII characters (numbered 0-127), meaning that existing ASCII text is already valid UTF-8. All other characters use two to four bytes. Each byte has some bits reserved for encoding purposes. Since non-ASCII characters require more than one byte for storage, they run the risk of being corrupted if the bytes are separated and not recombined.
+
+#### See also
+
+- _Interwiki("wikipedia", "UTF-8"_) on Wikipedia
+- [FAQ about UTF-8 on Unicode website](https://www.unicode.org/faq/utf_bom.html#UTF8)
+
+---
+
+
+## Term:  UUID
+  - Glossary
+  - Infrastructure
+---
+
+
+> A **Universally Unique Identifier** (**UUID**) is a label used to uniquely identify a resource among all other resources of that type.
+
+Computer systems generate UUIDs locally using very large random numbers.
+In theory the IDs may not be globally unique, but the probability of duplicates is vanishingly small.
+If systems really need absolutely unique IDs then these might be allocated by a central authority.
+
+UUIDs are 128-bit values that are canonically represented as a 36-character string in the format `123e4567-e89b-12d3-a456-426614174000` (5 hex strings separated by hyphens).
+There are a number of versions that differ slightly in the way they are calculated; for example, the inclusion of temporal information.
+
+The formal definition can be found in: [RFC4122: A Universally Unique IDentifier (UUID) URN Namespace](https://www.rfc-editor.org/rfc/rfc4122).
+
+#### See also
+
+- _Interwiki("wikipedia", "UUID"_) on Wikipedia
+- [`Crypto.randomUUID()`](/en-US/docs/Web/API/Crypto/randomUUID)
+---
+
+
+## Term:  UX
+  - Accessibility
+  - Composing
+  - Design
+  - Glossary
+  - Navigation
+---
+
+
+> **UX** is an acronym that stands for User eXperience. It is the study of the interaction between users and a system. Its goal is to make a system easy to interact with from the user's point of view.
+
+The system can be any kind of product or application that an end user is meant to interact with. UX studies undertaken on a web page for example can demonstrate whether it is easy for users to understand the page, navigate to different areas, and complete common tasks, and where such processes could have less friction.
+
+#### See also
+
+- _Interwiki("wikipedia", "User experience"_) on Wikipedia
+
+---
+
+
+## Term:  Validator
+  - Beginner
+  - Glossary
+  - Security
+---
+
+
+> A validator is a program that checks for syntax errors in code. Validators can be created for any format or language, but in our context we speak of tools that check _Glossary("HTML"_), _Glossary("CSS"_), and _Glossary("XML"_).
+
+#### See also
+
+- _Interwiki("wikipedia", "Validator"_) on Wikipedia
+- [Short list of validators](/en-US/docs/Tools/Validators)
+
+---
+
+
+## Term:  Value
+  - CodingScripting
+  - Glossary
+  - NeedsContent
+---
+
+
+> In the context of data or an object **_Glossary("Wrapper", "wrapper"_)** around that data, the value is the **_Glossary("Primitive","primitive value"_)** that the object wrapper contains. In the context of a **_Glossary("Variable","variable"_)** or **_Glossary("Property","property"_)**, the value can be either a primitive or an **_Glossary("Object reference","object reference"_)**.
+
+#### See also
+
+- _Interwiki("wikipedia", "Primitive wrapper class"_) on Wikipedia
+
+---
+
+
+## Term:  Variable
+  - CodingScripting
+  - Glossary
+  - JavaScript
+---
+
+
+> A variable is a named reference to a _Glossary("Value", "value"_). That way an unpredictable value can be accessed through a predetermined name.
+
+#### See also
+
+- _Interwiki("wikipedia", "Variable (computer science)"_) on Wikipedia
+- [Declaring variables in JavaScript](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
+- [`var` statement in JavaScript](/en-US/docs/Web/JavaScript/Reference/Statements/var)
+
+---
+
+
+## Term:  Vendor Prefix
+  - CodingScripting
+  - Glossary
+---
+
+
+> Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties and JavaScript APIs, so developers can experiment with new ideas while—in theory—preventing their experiments from being relied upon and then breaking web developers' code during the standardization process. Developers should wait to include the unprefixed property until browser behavior is standardized.
+
+> **Note:** Browser vendors are working to stop using vendor prefixes for experimental features. Web developers have been using them on production Web sites, despite their experimental nature. This has made it more difficult for browser vendors to ensure compatibility and to work on new features; it's also been harmful to smaller browsers who wind up forced to add other browsers' prefixes in order to load popular web sites.
+>
+> Lately, the trend is to add experimental features behind user-controlled flags or preferences, and to create smaller specifications which can reach a stable state much more quickly.
+
+## CSS prefixes
+
+The major browsers use the following prefixes:
+
+- `-webkit-` (Chrome, Safari, newer versions of Opera, almost all iOS browsers including Firefox for iOS; basically, any WebKit based browser)
+- `-moz-` (Firefox)
+- `-o-` (old pre-WebKit versions of Opera)
+- `-ms-` (Internet Explorer and Microsoft Edge)
+
+Sample usage:
+
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4s ease;
+
+## API prefixes
+
+Historically, vendors have also used prefixes for experimental APIs. If an entire interface is experimental, then the interface's name is prefixed (but not the properties or methods within). If an experimental property or method is added to a standardized interface, then the individual method or property is prefixed.
+
+### Interface prefixes
+
+Prefixes for interface names are upper-cased:
+
+- `WebKit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+- `Moz` (Firefox)
+- `O` (Older, pre-WebKit, versions of Opera)
+- `MS` (Internet Explorer and Microsoft Edge)
+
+### Property and method prefixes
+
+The prefixes for properties and methods are lower-case:
+
+- `webkit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+- `moz` (Firefox)
+- `o` (Old, pre-WebKit, versions of Opera)
+- `ms` (Internet Explorer and Microsoft Edge)
+
+Sample usage:
+
+```js
+var requestAnimationFrame = window.requestAnimationFrame ||
+                            window.mozRequestAnimationFrame ||
+                            window.webkitRequestAnimationFrame ||
+                            window.oRequestAnimationFrame ||
+                            window.msRequestAnimationFrame;
+```
+
+#### See also
+
+- _Interwiki("wikipedia", "CSS_hack#Browser_prefixes", "Vendor prefix"_) on Wikipedia
+
+---
+
+
+## Term:  Viewport
+  - CodingScripting
+  - Glossary
+  - Layout
+  - viewport
+---
+
+
+> A viewport represents a polygonal (normally rectangular) area in computer graphics that is currently being viewed. In web browser terms, it refers to the part of the document you're viewing which is currently visible in its window (or the screen, if the document is being viewed in full screen mode). Content outside the viewport is not visible onscreen until scrolled into view.
+
+The portion of the viewport that is currently visible is called the **_Glossary("visual viewport"_)**. This can be smaller than the layout viewport, such as when the user has pinched-zoomed. The _Glossary("layout viewport"_) remains the same, but the visual viewport became smaller.
+
+#### See also
+
+- [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
+- _Interwiki("wikipedia", "Viewport"_) on Wikipedia
+- [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
+- _Glossary("Visual viewport"_) in the MDN Glossary
+- _Glossary("Layout viewport"_) in the MDN Glossary
+
+---
+
+
+## Term:  Visual Viewport
+  - Glossary
+  - VisualViewport
+  - viewport
+  - visual viewport
+---
+
+
+> The portion of the _Glossary("viewport"_) that is currently visible is called the visual viewport. This can be smaller than the layout viewport, such as when the user has pinched-zoomed. The visual viewport is the visual portion of a screen excluding on-screen keyboards, areas outside of a pinch-zoom area, or any other on-screen artifact that doesn't scale with the dimensions of a page.
+
+#### See also
+
+- [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
+- _Interwiki("wikipedia", "Viewport"_) on Wikipedia
+- [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
+- _Glossary("Viewport"_) in the MDN Glossary
+- _Glossary("Layout viewport"_) in the MDN Glossary
+
+---
+
+
+## Term:  VoIP
+  - Glossary
+  - Infrastructure
+  - VoIP
+---
+
+
+> VoIP (Voice over Internet Protocol) is a technology used to transmit voice messages over IP (Internet Protocol) networks. Common VoIP packages include Skype, Msn Messenger, Yahoo and many more. Everything transferred through VoIP is digital. It is also known as IP telephony, or broadband telephony. The main reason for using VoIP technology is because of cost.
+
+VoIP allows you to make a call directly from a computer, a special VoIP phone, or a traditional phone connected to a special adapter. A high speed internet connection is required for VoIP. Usually, telephone calls over the Internet do not incur further charges beyond what the user is paying for Internet access, much in the same way that the user doesn't pay for sending individual emails over the Internet.
+
+#### See also
+
+- _Interwiki("wikipedia", "VoIP"_) on Wikipedia
+
+---
+
+
+## Term:  W3C
+  - Community
+  - Consortium
+  - Glossary
+  - Intro
+  - W3C
+  - Web consortium
+---
+
+
+> The _World Wide Web Consortium_ (W3C) is an international body that maintains _Glossary("World Wide Web", "Web-related"_) rules and frameworks.
+
+It consists of over 350 member-organizations that jointly develop Web standards, run outreach programs, and maintain an open forum for talking about the Web. The W3C coordinates companies in the industry to make sure they implement the same W3C standards.
+
+Each standard passes through four stages of maturity: Working Draft (WD), Candidate Recommendation (CR), Proposed Recommendation (PR), and W3C Recommendation (REC).
+
+#### See also
+
+- [W3C website](https://www.w3.org/)
+- _Interwiki("wikipedia", "World Wide Web Consortium", "W3C"_) on Wikipedia
+
+---
+
+
+## Term:  WAI
+  - Accessibility
+  - Glossary
+---
+
+
+> WAI or Web Accessibility Initiative is an effort by the World Wide Web Consortium (W3C) to improve accessibility for people with various challenges, who may need a nonstandard _Glossary("browser"_) or devices.
+
+#### See also
+
+- [WAI website](https://www.w3.org/WAI/)
+- _Interwiki("wikipedia", "Web Accessibility Initiative"_) on Wikipedia
+
+---
+
+
+## Term:  WCAG
+  - Accessibility
+  - Glossary
+  - WCAG
+  - Web Guidelines
+---
+
+
+> _Web Content Accessibility Guidelines_ (**WCAG**) are a recommendation published by the _Glossary("WAI","Web Accessibility Initiative"_) group at the _Glossary("W3C"_). They outline a set of guidelines for making content accessible primarily for people with disabilities but also for limited-resource devices such as mobile phones.
+
+WCAG 2.0 which superseded WCAG 1.0 was published as a W3C Recommendation on 11 December 2008. It consists of 12 guidelines organized under 4 principles (perceivable, operable, understandable, and robust) and each guideline has testable success criteria.
+
+WCAG uses three levels of conformance:
+
+- Priority 1: Web developers **must** satisfy these requirements, otherwise it will be impossible for one or more groups to access the Web content. Conformance to this level is described as A.
+- Priority 2: Web developers **should** satisfy these requirements, otherwise some groups will find it difficult to access the Web content. Conformance to this level is described as AA or Double-A.
+- Priority 3: Web developers **may** satisfy these requirements, in order to make it easier for some groups to access the Web content. Conformance to this level is described as AAA or Triple-A.
+
+#### See also
+
+- _Interwiki("wikipedia", "Web Content Accessibility Guidelines", "WCAG"_) on Wikipedia
+- [Accessibility information on MDN](/en-US/docs/Web/Accessibility/Information_for_Web_authors)
+- [The WCAG 2.0 recommendation at the W3C](https://www.w3.org/TR/WCAG20/)
+
+---
+
+
+## Term:  Web performance
+  - Glossary
+  - Perceived Performance
+  - Reference
+  - Web Performance
+---
+
+
+> **Web performance** is the objective time from when a request for content is made until the requested content is displayed in the user's browser, objective render times, and the subjective user experience of load time and runtime.
+
+Objectively, it is measurable time, in milliseconds, it takes for the web page or web application to be downloaded, painted in the user's web browser, and become responsive and interactive. It is the frames per second and times the main thread is not available for user interactions. Subjectively, it is the user's perception of whether the time it takes between the time the user requests the content and the time until the user feels the content requested is available and usable _feels_ slow or fast.
+
+#### See also
+
+- [Learn about web performance](/en-US/docs/Learn/Performance)
+- [Perceived performance](/en-US/docs/Glossary/Perceived_performance)
+
+---
+
+
+## Term:  Web server
+  - web server
+  - web-server
+---
+
+
+> A web server is a piece of software that often runs on a hardware server offering service to a user, usually referred to as the client. A server, on the other hand, is a piece of hardware that lives in a room full of computers, commonly known as a data center.
+
+#### See also
+
+- [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+- _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+
+---
+
+
+## Term:  Web standards
+  - Glossary
+  - Infrastructure
+  - Web Standards
+  - standards
+  - web specifications
+---
+
+
+> Web standards are rules established by international standards bodies and defining how the _Glossary("World Wide Web", "Web"_) works (and sometimes controlling the _Glossary("Internet"_) as well).
+
+Several standards bodies are responsible for defining different aspects of the Web, and all the standards must coordinate to keep the Web maximally usable and accessible. Web standards also must evolve to improve the current status and adapt to new circumstances.
+
+This non-exhaustive list gives you an idea of which standards websites and network systems must conform to:
+
+- **IETF** (Internet Engineering Task Force): Internet standards (STD), which among other things govern set-up and use of _Glossary("URI", "URIs"_), _Glossary("HTTP"_), and _Glossary("MIME"_)
+- **_Glossary("W3C"_)**: specifications for markup language (e.g., _Glossary("HTML"_)), style definitions (i.e., _Glossary("CSS"_)), _Glossary("DOM"_), _Glossary("Accessibility", "accessibility"_)
+- **IANA** (Internet Assigned Numbers Authority): name and number registries
+- **Ecma Intl.:** scripting standards, most prominently for _Glossary("JavaScript"_)
+- **_Glossary("ISO"_)** (International Organization for Standardization): standards governing a diverse array of aspects, including character encodings, website management, and user-interface design
+
+#### See also
+
+- _Interwiki("wikipedia", "Web standards"_) on Wikipedia
+
+---
+
+
+## Term:  WebAssembly
+  - Glossary
+  - Infrastructure
+---
+
+
+> **WebAssembly** (abbr. _Wasm_) is an open _Glossary("binary"_) programming format that can be run in modern web _Glossary("Browser", "browsers"_) in order to gain performance and/or provide new features for web pages.
+
+#### See also
+
+- _interwiki('wikipedia','WebAssembly'_) on Wikipedia
+- [Official website](https://webassembly.org/)
+- [WebAssembly](/en-US/docs/WebAssembly) on MDN
+
+---
+
+
+## Term:  WebDAV
+  - Glossary
+  - Infrastructure
+---
+
+
+> **WebDAV** (_Web Distributed Authoring and Versioning_) is an _Glossary("HTTP"_) Extension that lets web developers update their content remotely from a client.
+
+WebDAV is rarely used alone, but two extensions are very common: _Glossary("CalDAV"_) (remote-access calendar) and _Glossary("CardDAV"_) (remote-access address book).
+
+WebDAV allows clients to
+
+- add, delete, and retrieve webpage metadata (e.g. author or creation date)
+- link pages of any media type to related pages
+- create sets of documents and retrieve hierarchical list
+- copy and move webpages
+- lock a document from being edited by more than one person at a time
+
+#### See also
+
+- _Interwiki("wikipedia", "WebDAV"_) on Wikipedia
+- Specifications:
+
+  - _rfc(2518_)
+  - _rfc(3253_)
+  - _rfc(3744_)
+
+---
+
+
+## Term:  WebExtensions
+  - CodingScripting
+  - Glossary
+  - NeedsContent
+  - WebExtensions
+---
+
+
+> WebExtensions is a cross-browser system for developing browser extensions in Firefox. This system provides APIs, which to a large extent are supported across different browsers like Mozilla Firefox, Google Chrome, Opera Browser, Microsoft Edge, or Apple Safari.
+
+#### See also
+
+- [Browser extensions](/en-US/docs/Mozilla/Add-ons/WebExtensions) on MDN
+
+---
+
+
+## Term:  WebGL
+  - Advanced
+  - CodingScripting
+  - Glossary
+  - Web Graphics
+  - WebGL
+---
+
+
+> **WebGL** (_Web Graphics Library_) is a _Glossary("JavaScript"_) _Glossary("API"_) that draws interactive 2D and 3D graphics.
+
+The [Khronos Group](https://www.khronos.org/) maintains WebGL, which is based on _Glossary("OpenGL"_) ES 2.0.
+
+You can invoke WebGL within the _Glossary("HTML"_) _HTMLElement("canvas"_) element, which provides a rendering surface.
+
+All major _Glossary("Browser","browsers"_) now support WebGL, but its availability depends also on external factors (e.g. GPU support).
+
+#### See also
+
+- _Interwiki("wikipedia", "WebGL"_) on Wikipedia
+- [Check for WebGL support](https://get.webgl.org/)
+- [WebGL on MDN](/en-US/docs/Web/API/WebGL_API)
+- [Support table for WebGL](https://caniuse.com/#feat=webgl)
+
+---
+
+
+## Term:  WebIDL
+  - CodingScripting
+  - Glossary
+  - WebIDL
+---
+
+
+> **WebIDL** is the interface description language used to describe the _Glossary("type", "data types"_), _Glossary("interface", "interfaces"_), _Glossary("method", "methods"_), _Glossary("property", "properties"_), and other components which make up a Web application programming interface (_Glossary("API"_)). It uses a somewhat stylized syntax which is independent of any specific programming language, so that the underlying code which is used to build each API can be written in whatever language is most appropriate, while still being possible to map the API's components to JavaScript-compatible constructs.
+
+WebIDL is used in nearly every API _Glossary("specification"_) for the Web, and due to its standard format and syntax, the programmers who create Web browsers can more easily ensure that their browsers are compatible with one another, regardless of how they choose to write the code to implement the API.
+
+#### See also
+
+- [Specification](https://www.w3.org/TR/WebIDL/)
+- [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file)
+- [WebIDL bindings](/en-US/docs/Mozilla/WebIDL_bindings)
+- _interwiki("wikipedia", "WebIDL"_)
+
+---
+
+
+## Term:  WebKit
+  - Browser
+  - Glossary
+  - Intro
+  - Web
+  - WebKit
+  - WebMechanics
+---
+
+
+> _WebKit_ is a framework that displays properly-formatted webpages based on their markup. _Glossary("Apple Safari"_) depends on WebKit, and so do many mobile browsers (since WebKit is highly portable and customizable).
+
+WebKit began life as a fork of KDE's KHTML and KJS libraries, but many individuals and companies have since contributed (including KDE, Apple, Google, and Nokia).
+
+WebKit is an Apple trademark, and the framework is distributed under a BSD-form license. However, two important components fall under the _Glossary("LGPL"_): the **WebCore** rendering library and the **JavaScriptCore** engine.
+
+#### See also
+
+- _Interwiki("wikipedia", "WebKit"_) on Wikipedia
+- [WebKit CSS extensions](/en-US/docs/Web/CSS/WebKit_Extensions)
+
+---
+
+
+## Term:  WebM
+  - Composing
+  - Glossary
+  - Infrastructure
+  - WebM
+---
+
+
+> **WebM** is royalty-free and is an open web video format natively supported in Mozilla Firefox.
+
+#### See also
+
+- [WebM ](https://en.wikipedia.org/wiki/WebM)on Wikipedia
+
+---
+
+
+## Term:  WebP
+  - Beginner
+  - Composing
+  - Glossary
+  - Infrastructure
+  - WebP
+---
+
+
+> **WebP** is a lossless and lossy compression image format developed by Google.
+
+#### See also
+
+- [WebP ](https://en.wikipedia.org/wiki/WebP)on Wikipedia
+
+---
+
+
+## Term:  WebRTC
+  - CodingScripting
+  - Glossary
+  - Infrastructure
+  - JavaScript
+  - P2P
+  - VoIP
+  - Web
+  - WebRTC
+---
+
+
+> **WebRTC** (_Web Real-Time Communication_) is an _Glossary("API"_) that can be used by video-chat, voice-calling, and P2P-file-sharing Web apps.
+
+WebRTC consists mainly of these parts:
+
+- _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
+  - : Grants access to a device's camera and/or microphone, and can plug in their signals to a RTC connection.
+- _domxref("RTCPeerConnection"_)
+  - : An interface to configure video chat or voice calls.
+- _domxref("RTCDataChannel"_)
+  - : Provides a method to set up a _Glossary("P2P", "peer-to-peer"_) data pathway between browsers.
+
+#### See also
+
+- _Interwiki("wikipedia", "WebRTC"_) on Wikipedia
+- [WebRTC API on MDN](/en-US/docs/Web/API/WebRTC_API)
+- [Browser support for WebRTC](https://caniuse.com/rtcpeerconnection)
+
+---
+
+
+## Term:  WebSockets
+  - Connection
+  - Glossary
+  - Infrastructure
+  - Networking
+  - Protocols
+  - Web
+  - WebSocket
+---
+
+
+> _WebSocket_ is a _Glossary("protocol"_) that allows for a persistent _Glossary("TCP"_) connection between _Glossary("Server", "server"_) and client so they can exchange data at any time.
+
+Any client or server application can use WebSocket, but principally web _Glossary("Browser", "browsers"_) and web servers. Through WebSocket, servers can pass data to a client without prior client request, allowing for dynamic content updates.
+
+#### See also
+
+- _Interwiki("wikipedia", "Websocket"_) on Wikipedia
+- [WebSocket reference on MDN](/en-US/docs/Web/API/WebSocket)
+- [Writing WebSocket client applications](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
+- [Writing WebSocket servers](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
+
+---
+
+
+## Term:  WebVTT
+  - Audio
+  - CodingScripting
+  - Glossary
+  - Video
+  - Web
+  - WebVTT
+---
+
+
+> WebVTT (Web Video Text Tracks) is a _Glossary("W3C"_) specification for a file format marking up text track resources in combination with the HTML _HTMLElement("track"_) element.
+
+WebVTT files provide metadata that is time-aligned with audio or video content like captions or subtitles for video content, text video descriptions, chapters for content navigation, and more.
+
+#### See also
+
+- _Interwiki("wikipedia", "WebVTT"_) on Wikipedia
+- [WebVTT](/en-US/docs/Web/API/WebVTT_API) on MDN
+- [Specification](https://www.w3.org/TR/webvtt1/)
+
+---
+
+
+## Term:  WHATWG
+  - Community
+  - DOM
+  - Glossary
+  - HTML
+  - HTML5
+  - WHATWG
+  - Web
+  - standards
+---
+
+
+> The WHATWG (_Web Hypertext Application Technology Working Group_) is a community that [maintains and develops web standards](https://spec.whatwg.org/), including _Glossary("DOM"_), Fetch, and _Glossary("HTML"_). Employees of Apple, Mozilla, and Opera established WHATWG in 2004.
+
+#### See also
+
+- _Interwiki("wikipedia", "WHATWG"_) on Wikipedia
+- [WHATWG website](https://whatwg.org/)
+
+---
+
+
+## Term:  Whitespace
+  - Glossary
+  - Lexical Grammar
+  - whitespace
+---
+
+
+> **Whitespace** refers to _Glossary("Character", "characters"_) which are used to provide horizontal or vertical space between other characters. Whitespace is often used to separate tokens in _Glossary("HTML"_), _Glossary("CSS"_), _Glossary("JavaScript"_), and other computer languages.
+
+Whitespace characters and their usage vary among languages.
+
+## In HTML
+
+The [Infra Living Standard](https://infra.spec.whatwg.org/#ascii-whitespace) defines five characters as “ASCII whitespace”: U+0009 TAB, U+000A LF, U+000C FF, U+000D CR, and U+0020 SPACE.
+
+## In JavaScript
+
+The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space) defines several Unicode codepoints as “white space”: U+0009 CHARACTER TABULATION \<TAB>, U+000B LINE TABULATION \<VT>, U+000C FORM FEED \<FF>, U+0020 SPACE \<SP>, U+00A0 NO-BREAK SPACE \<NBSP>, U+FEFF ZERO WIDTH NO-BREAK SPACE \<ZWNBSP>, and any other Unicode “Space_Separator” code points \<USP>.
+
+#### See also
+
+- _interwiki("wikipedia", "Whitespace character"_) (Wikipedia)
+- [How whitespace is handled by HTML, CSS, and in the DOM](/en-US/docs/Web/API/Document_Object_Model/Whitespace)
+- _cssxref("white-space"_)
+- Specifications
+
+  - [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
+  - [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
+
+- [Glossary](/en-US/docs/Glossary)
+
+  1.  _Glossary("Character"_)
+
+---
+
+
+## Term:  WindowProxy
+  - Glossary
+  - Window
+  - WindowProxy
+---
+
+
+> A _`WindowProxy`_ object is a wrapper for a [`Window`](/en-US/docs/Web/API/Window) object. A `WindowProxy` object exists in every [browsing context](/en-US/docs/Glossary/Browsing_context). All operations performed on a `WindowProxy` object will also be applied to the underlying `Window` object it currently wraps. Therefore, interacting with a `WindowProxy` object is almost identical to directly interacting with a `Window` object. When a browsing context is navigated, the `Window` object its `WindowProxy` wraps is changed.
+
+#### See also
+
+- HTML specification: [WindowProxy section](https://html.spec.whatwg.org/multipage/window-object.html#the-windowproxy-exotic-object)
+- Stack Overflow question: [WindowProxy and Window objects?](https://stackoverflow.com/q/16092835/)
+
+---
+
+
+## Term:  World Wide Web
+  - Glossary
+  - Infrastructure
+  - WWW
+  - World Wide Web
+---
+
+
+> The _World Wide Web_—commonly referred to as **WWW**, **W3**, or **the Web**—is an interconnected system of public webpages accessible through the _Glossary("Internet"_). The Web is not the same as the Internet: the Web is one of many applications built on top of the Internet.
+
+Tim Berners-Lee proposed the architecture of what became known as the World Wide Web. He created the first web _Glossary("Server","server"_), web _Glossary("Browser","browser"_), and webpage on his computer at the CERN physics research lab in 1990. In 1991, he announced his creation on the alt.hypertext newsgroup, marking the moment the Web was first made public.
+
+The system we know today as "the Web" consists of several components:
+
+- The **_Glossary("HTTP"_)** protocol governs data transfer between a server and a client.
+- To access a Web component, a client supplies a unique universal identifier, called a **_Glossary("URL"_)** (uniform resource locator) or _Glossary("URI"_) (uniform resource identifier) (formally called Universal Document Identifier (UDI)).
+- **_Glossary("HTML"_)** (hypertext markup language) is the most common format for publishing web documents.
+
+Linking, or connecting resources through _Glossary("Hyperlink","hyperlinks"_), is a defining concept of the Web, aiding its identity as a collection of connected documents.
+
+Soon after inventing the Web, Tim Berners-Lee founded the _Glossary("W3C"_) (World Wide Web Consortium) to standardize and develop the Web further. This consortium consists of core Web interest groups, such as web browser developers, government entities, researchers, and universities. Its mission includes education and outreach.
+
+#### See also
+
+- [Learn the Web](/en-US/docs/Learn)
+- _Interwiki("wikipedia", "World Wide Web"_) on Wikipedia
+- [The W3C website](https://w3.org)
+
+---
+
+
+## Term:  Wrapper
+  - CodingScripting
+  - Glossary
+  - Wrapper
+---
+
+
+> In programming languages such as JavaScript, a wrapper is a function that is intended to call one or more other functions, sometimes purely for convenience, and sometimes adapting them to do a slightly different task in the process.
+
+For example, SDK Libraries for AWS are examples of wrappers.
+
+#### See also
+
+- _Interwiki("wikipedia", "Wrapper function"_) (Wikipedia)
+- [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+  - _Glossary("API"_)
+  - _Glossary("Class"_)
+  - _Glossary("Function"_)
+
+---
+
+
+## Term:  XForms
+  - CodingScripting
+  - Glossary
+  - Deprecated
+  - XForms
+---
+
+
+> **XForms** is a convention for building Web forms and processing form data in the _glossary("XML"_) format.
+
+> **Note:** No major browser supports XForms any longer—we suggest using [HTML5 forms](/en-US/docs/Learn/Forms) instead.
+
+---
+
+
+## Term:  XHR (XMLHttpRequest)
+  - API
+  - Beginner
+  - CodingScripting
+  - Glossary
+  - XMLHttpRequest
+---
+
+
+> _domxref("XMLHttpRequest"_) (XHR) is a _Glossary("JavaScript"_) _Glossary("API"_) to create _Glossary("AJAX"_) requests. Its methods provide the ability to send network requests between the _Glossary("browser"_) and a _Glossary("server"_).
+
+#### See also
+
+- _interwiki("wikipedia", "XMLHttpRequest"_) on Wikipedia
+- [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
+- The _domxref("XMLHttpRequest"_) object
+- The [documentation on MDN about how to use XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+
+---
+
+
+## Term:  XHTML
+  - CodingScripting
+  - Glossary
+  - XHTML
+---
+
+
+> **XHTML** is a term that was historically used to describe HTML documents written to conform with _Glossary("XML"_) syntax rules.
+
+#### See also
+
+- [XHTML](/en-US/docs/Web/Guide/HTML/XHTML)
+
+---
+
+
+## Term:  XInclude
+  - CodingScripting
+  - Glossary
+---
+
+
+> [XML Inclusions (XInclude)](https://www.w3.org/TR/xinclude/#text-included-items) is a W3C Recommendation to allow inclusion of XML more different sources in a more convenient fashion than XML external entities. When used in conjunction with XPointer (Firefox supports a subset of it, and is used in the code sample below), XInclude can also target just specific portions of a document for inclusion. Firefox does not support it natively, but the following function aims to allow its use with documents passed into it.
+
+### Code sample
+
+
+(Note that this has not been thoroughly tested for all circumstances and may not necessarily reflect the standard behavior completely.)
+
+Note also that if you wish to allow xml:base, you will need the [xml:base function](/en-US/docs/Archive/Add-ons/Code_snippets/XML/base_function), and the line beginning `var href = ...` should become:
+
+```js
+var href = getXmlBaseLink (/* XLink sans xml:base */ xinclude.getAttribute('href'), /* Element to query from */ xinclude);
+```
+
+```js
+function resolveXIncludes(docu) {
+    // http://www.w3.org/TR/xinclude/#xml-included-items
+    var xincludes = docu.getElementsByTagNameNS('http://www.w3.org/2001/XInclude', 'include');
+    if (xincludes) {
+        for (i=0; i < xincludes.length; i++) {
+            var xinclude = xincludes[i];
+            var href = xinclude.getAttribute('href');
+            var parse = xinclude.getAttribute('parse');
+            var xpointer = xinclude.getAttribute('xpointer');
+            var encoding = xinclude.getAttribute('encoding'); // e.g., UTF-8 // "text/xml or application/xml or matches text/*+xml or application/*+xml" before encoding (then UTF-8)
+            var accept = xinclude.getAttribute('accept'); // header "Accept: "+x
+            var acceptLanguage = xinclude.getAttribute('accept-language'); // "Accept-Language: "+x
+            var xiFallback = xinclude.getElementsByTagNameNS('http://www.w3.org/2001/XInclude', 'fallback')[0]; // Only one such child is allowed
+            if (href === '' || href === null) { // Points to same document if empty (null is equivalent to empty string)
+                href = null; // Set for uniformity in testing below
+                if (parse === 'xml' && xpointer === null) {
+                    alert('There must be an XPointer attribute present if "href" is empty an parse is "xml"');
+                    return false;
+                }
+            }
+            else if (href.match(/#$/, '') || href.match(/^#/, '')) {
+                alert('Fragment identifiers are disallowed in an XInclude "href" attribute');
+                return false;
+            }
+            var j;
+            var xincludeParent = xinclude.parentNode;
+            try {
+                netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect UniversalBrowserRead'); // Necessary with file:///-located files trying to reach external sites
+                if (href !== null) {
+                    var response, responseType;
+                    var request = new XMLHttpRequest();
+                    request.open('GET', href, false);
+                    request.setRequestHeader('If-Modified-Since', 'Thu, 1 Jan 1970 00:00:00 GMT');
+                    request.setRequestHeader('Cache-Control', 'no-cache');
+                    if (accept) {
+                        request.setRequestHeader('Accept', accept);
+                    }
+                    if (acceptLanguage) {
+                        request.setRequestHeader('Accept-Language', acceptLanguage);
+                    }
+                    switch (parse) {
+                        case 'text':
+                            // Priority should be on media type:
+
+                            var contentType = request.getResponseHeader('Content-Type');
+
+                            //text/xml; charset="utf-8" // Send to get headers first?
+                            // Fix: We test for file extensions as well in case file:// doesn't return content type (as seems to be the case); can some other tool be used in FF (or IE) to detect encoding of local file? Probably just need BOM test since other encodings must be specified
+                            var patternXML = /\.(svg|xml|xul|rdf|xhtml)$/;
+                            if ((contentType && contentType.match(/[text|application]\/(.*)\+?xml/)) || (href.indexOf('file://') === 0 && href.match(patternXML))) {
+                                /* Grab the response as text (see below for that routine) and then find encoding within*/
+                               var encName = '([A-Za-z][A-Za-z0-9._-]*)';
+                               var pattern = new RegExp('^<\\?xml\\s+.*encoding\\s*=\\s*([\'"])'+encName+'\\1.*\\?>'); // Check document if not?
+                               // Let the request be processed below
+                            }
+                            else {
+                                if (encoding === '' || encoding === null) { // Encoding has no effect on XML
+                                    encoding = 'utf-8';
+                                }
+                                request.overrideMimeType('text/plain; charset='+encoding); //'x-user-defined'
+                            }
+                            responseType = 'responseText';
+                            break;
+                        case null:
+                        case 'xml':
+                            responseType = 'responseXML';
+                            break;
+                        default:
+                            alert('XInclude element contains an invalid "parse" attribute value');
+                            return false;
+                            break;
+                    }
+                    request.send(null);
+                    if((request.status === 200 || request.status === 0) && request[responseType] !== null) {
+                        response = request[responseType];
+                         if (responseType === 'responseXML') {
+                            // apply xpointer (only xpath1() subset is supported)
+                            var responseNodes;
+                            if (xpointer) {
+                                var xpathResult = response.evaluate(
+                                                                 xpointer,
+                                                                 response,
+                                                                 null,
+                                                                 XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+                                                                 null
+                                                              );
+                                var a = [];
+                                for(var k = 0; k < xpathResult.snapshotLength; k++) {
+                                a[k] = xpathResult.snapshotItem(k);
+                                }
+                                responseNodes = a;
+                            }
+                            else { // Otherwise, the response must be a single well-formed document response
+                                responseNodes = [response.documentElement]; // Put in array so can be treated the same way as the above
+                            }
+                            // PREPEND ANY NODE(S) (AS XML) THEN REMOVE XINCLUDE
+                            for (j=0; j < responseNodes.length ; j++) {
+                                xincludeParent.insertBefore(responseNodes[j], xinclude);
+                            }
+                            xincludeParent.removeChild(xinclude);
+                         }
+                         else if (responseType === 'responseText') {
+                             if (encName) {
+                                  var encodingType = response.match(pattern);
+                                  if (encodingType) {
+                                      encodingType = encodingType[2];
+                                  }
+                                  else {
+                                      encodingType = 'utf-8';
+                                  }
+                                  // Need to make a whole new request apparently since cannot convert the encoding after receiving it (to know what the encoding was)
+                                  var request2 = new XMLHttpRequest();
+                                  request2.overrideMimeType('text/plain; charset='+encodingType);
+                                  request2.open('GET', href, false);
+                                  request2.setRequestHeader('If-Modified-Since', 'Thu, 1 Jan 1970 00:00:00 GMT');
+                                  request2.setRequestHeader('Cache-Control', 'no-cache');
+                                  request2.send(null);
+                                  response = request2[responseType]; // Update the response for processing
+                             }
+
+                             // REPLACE XINCLUDE WITH THE RESPONSE AS TEXT
+                             var textNode = docu.createTextNode(response);                             xincludeParent.replaceChild(textNode, xinclude);
+                         }
+
+                        // replace xinclude in doc with response now (as plain text or XML)
+                    }
+                }
+            }
+            catch (e) { // Use xi:fallback if XInclude retrieval above failed
+                var xiFallbackChildren = xiFallback.childNodes;
+                // PREPEND ANY NODE(S) THEN REMOVE XINCLUDE
+                for (j=0; j < xiFallbackChildren.length ; j++) {
+                    xincludeParent.insertBefore(xiFallbackChildren[j], xinclude);
+                }
+                xincludeParent.removeChild(xinclude);
+            }
+        }
+    }
+    return docu;
+}
+```
+
+---
+
+
+## Term:  XLink
+  - CodingScripting
+  - Glossary
+---
+
+
+> XLink is a W3C standard which is used to describe links between XML and XML or other documents. Some its behaviors are left to the implementation to determine how to handle.
+
+Simple XLinks are "supported" in Firefox (at least in SVG and MathML), though they do not work as links if one loads a plain XML document with XLinks and attempts to click on the relevant points in the XML tree.
+
+For those who may have found XLink 1.0 cumbersome for regular links, XLink 1.1 drops the need to specify `xlink:type="simple"` for simple links.
+
+XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), and other important standards.
+
+### Specifications
+
+- [XLink 1.0](https://www.w3.org/TR/xlink/)
+- [XLink 1.1](https://www.w3.org/TR/xlink11/) (currently a Working Draft)
+
+##### See also
+
+- [XML](/en-US/docs/Web/XML)
+- [Code snippets:getAttributeNS](/en-US/docs/Web/API/Element/getAttributeNS) - a wrapper for dealing with some browsers not supporting this DOM method
+
+---
+
+
+## Term:  XML
+  - CodingScripting
+  - Glossary
+  - XML
+  - l10n:priority
+---
+
+
+> eXtensible Markup Language (XML) is a generic markup language specified by the W3C. The information technology (IT) industry uses many languages based on XML as data-description languages.
+
+
+#### See also
+
+- [XML introduction](/en-US/docs/Web/XML/XML_introduction)
+
+---
+
+
+## Term:  XPath
+  - CodingScripting
+  - Glossary
+  - XML
+  - XPath
+---
+
+
+> **XPath** is a query language that can access sections and content in an _glossary("XML"_) document.
+
+#### See also
+
+- [XPath documentation on MDN](/en-US/docs/Web/XPath)
+- [XPath specification](https://www.w3.org/TR/xpath-30/)
+- [Official website](https://www.w3.org/standards/techs/xpath#w3c_all)
+- _Interwiki("wikipedia", "XPath"_) on Wikipedia
+
+---
+
+
+## Term:  XQuery
+  - CodingScripting
+  - Glossary
+  - XML
+  - XQuery
+---
+
+
+> **XQuery** is a computer language for updating, retrieving, and calculating data in _glossary("XML"_) databases.
+
+#### See also
+
+- [Official website](https://www.w3.org/XML/Query/)
+- _Interwiki("wikipedia", "XQuery"_) on Wikipedia
+
+---
+
+
+## Term:  XSLT
+  - CodingScripting
+  - Glossary
+  - XML
+  - XSLT
+---
+
+
+> _eXtensible Stylesheet Language Transformations_ (**XSLT**) is a declarative language used to convert _Glossary("XML"_) documents into other XML documents, _Glossary("HTML"_), _Glossary("PDF"_), plain text, and so on.
+
+XSLT has its own processor that accepts XML input, or any format convertible to an XQuery and XPath Data Model. The XSLT processor produces a new document based on the XML document and an XSLT stylesheet, making no changes to the original files in the process.
+
+#### See also
+
+- _Interwiki("wikipedia", "XSLT"_) on Wikipedia
+- [XSLT documentation on MDN](/en-US/docs/Web/XSLT)
+
