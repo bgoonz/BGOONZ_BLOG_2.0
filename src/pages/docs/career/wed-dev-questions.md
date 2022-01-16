@@ -1,5 +1,5 @@
 ---
-title: Job Board
+title: Javascript Practice
 weight: 0
 excerpt: lorem-ipsum
 seo:
