@@ -108,7 +108,21 @@ sections:
       - title: Jamstack
         title_url: jamstack
         image_alt: jamstack
-        content: "> Why Jamstack Jamstack is the new standard architecture for the...\n>\n\n**\n\n> *web. Using Git workflows and modern build tools, pre-rendered content\n> is served to a CDN and made dynamic through APIs and serverless\n> functions. Technologies in the stack include JavaScript frameworks,\n> Static Site Generators, Headless CMSs, and CDNs.*\n\n![](https://cdn-images-1.medium.com/max/800/0\\*zUEq7vaq3GKgq1dr.png)<https://jamstack.org/>\n\nStatic site generators like Jekyll and Hugo are part of what makes this possible. They essentially replace PHP as our templating system, but instead of running on a server and generating content on-the-fly, they\_**run locally**\_as part of your development process. Your HTML is generated up-front, and your website — now a collection of easily-cached static files — can be distributed to users by a blisteringly fast CDN (content distribution network).\n"
+        content: >
+          > Why Jamstack Jamstack is the new standard architecture for the...
+
+
+          \*\*
+
+
+          > *web. Using Git workflows and modern build tools, pre-rendered
+          content
+
+          > is served to a CDN and made dynamic through APIs and serverless
+
+          > functions. Technologies in the stack include JavaScript frameworks,
+
+          > Static Site Generators, Headless CMSs, and CDNs.*
         actions: []
         type: grid_item
         image: images/jamstack.png
@@ -200,10 +214,13 @@ sections:
     section_id: Mini Projects
     image_alt: showcase
     image_position: left
-    content: |-
-        <iframe src="https://random-static-html-deploys.netlify.app/"    class="block-content" width="100%  width="1200px!important"
-        height="1000px!important">
-        </iframe>
+    content: >-
+      <iframe src="https://random-static-html-deploys.netlify.app/"   
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
