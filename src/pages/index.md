@@ -126,7 +126,7 @@ sections:
             url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
             style: secondary
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
         type: grid_item
         image: images/eventloop.gif
