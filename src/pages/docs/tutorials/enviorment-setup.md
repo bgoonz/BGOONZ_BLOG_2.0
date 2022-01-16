@@ -4,7 +4,7 @@ weight: 0
 excerpt: 
 seo:
     title: ''
-    description: 'embeded developer tools and utilities'
+    description: 'bash shell tutorial'
     robots: []
     extra: []
     type: stackbit_page_meta
