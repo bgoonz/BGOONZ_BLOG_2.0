@@ -3,7 +3,7 @@ title: 'React Quiz Questions'
 weight: 0
 excerpt: cheat sheet
 seo:
-    title: ''
+    title: 'React Quiz Questions'
     description: ''
     robots: []
     extra: []
