@@ -1,3 +1,22 @@
+---
+title: React Patterns & Use Cases
+weight: 0
+excerpt: React Patterns & Use Cases
+seo:
+    title: React Patterns & Use Cases
+    description: React Patterns & Use Cases
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/py-code.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:title'
+          value: python cheat sheet
+          keyName: name
+          relativeUrl: false
+template: docs
+---
 
 
 
