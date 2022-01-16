@@ -232,7 +232,7 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
-        src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
