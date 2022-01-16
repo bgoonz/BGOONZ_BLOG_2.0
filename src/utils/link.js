@@ -38,44 +38,44 @@ export default function Link({
 
             <
             GatsbyLink to={
-                to
-            }
-            activeClassName = {
-                activeClassName
-            }
-            partiallyActive = {
-                partiallyActive
-            } {
+                    to
+                }
+                activeClassName={
+                    activeClassName
+                }
+                partiallyActive={
+                    partiallyActive
+                } {
                 ...other
-            } >
+                } >
 
-            {
-                children
-            }
+                {
+                    children
+                }
 
-            <
+                <
             /GatsbyLink>
-
-        );
-
-    }
-
-    return (
-
-        <
-        a href = {
-            to
-        } {
-            ...other
-        } >
-
-        {
-            children
+    
+            );
+    
         }
-
+    
+        return (
+    
         <
+        a href={
+                        to
+                    } {
+                    ...other
+                    } >
+
+                    {
+                        children
+                    }
+
+                    <
         /a>
-
-    );
-
+            
+                );
+            
 }
