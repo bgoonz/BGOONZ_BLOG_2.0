@@ -1,7 +1,7 @@
 ---
 title: React Questions
 subtitle: react excel sheet
-date: '2022-01-16'
+date: '2022-01-17'
 thumb_image_alt: es6
 excerpt: lorem-ipsum
 seo:
