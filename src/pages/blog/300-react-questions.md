@@ -1,6 +1,6 @@
 ---
 title: React Questions
-subtitle: ECMAScript 2015 was the second major revision to JavaScript.
+subtitle: react excel sheet
 date: '2022-01-16'
 thumb_image_alt: es6
 excerpt: lorem-ipsum
