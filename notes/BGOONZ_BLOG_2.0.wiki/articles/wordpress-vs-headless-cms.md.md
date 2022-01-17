@@ -1,10 +1,10 @@
 ## Introduction:
 
--   _What is a Content Management System (CMS)?_
+-   _What is a Content Management System (CMS)?_
 
-A content management system, or CMS, is a software program that allows users to create and maintain websites without having to write them from the ground up or even knowing how to code.
+A content management system, or CMS, is a software program that allows users to create and maintain websites without having to write them from the ground up or even knowing how to code.
 
-A content management system (CMS) allows you to generate, manage, change, and publish material using a user-friendly interface. Rather than coding, you may change the look and functionality of your site by downloading or purchasing templates and plugins. You can have several users collaborating in the same tool's backend, among other things.
+A content management system (CMS) allows you to generate, manage, change, and publish material using a user-friendly interface. Rather than coding, you may change the look and functionality of your site by downloading or purchasing templates and plugins. You can have several users collaborating in the same tool's backend, among other things.
 
 -   _Evolution of CMS: The new scaffolding_
 
@@ -16,7 +16,7 @@ Now fast forward to 2010s, the DXP platform emerged, where we could create and d
 
 We have come along with CMSs indeed.
 
-## WordPress CMS: The choice of an all-inclusive frontend and backend
+## WordPress CMS: The choice of an all-inclusive frontend and backend
 
 WordPress is an open-source platform for building websites. WordPress is a content management system (CMS) developed in PHP that uses a MySQL database.
 
@@ -24,7 +24,7 @@ Any website that uses WordPress as its content management system is referred to 
 
 Bear in mind that some WP REST API and AngularJS expertise will be required to build a WordPress-powered frontend application. On the other hand, with WordPress as the backend, you will be able to create any application. With a combination of either of these, you can deviate from the common WordPress theme and admin model. (Keep in mind you will need the help of wireframes forbuilding a WordPress-powered frontend application)
 
-There are a few things you should know if you're just getting started with WordPress. To begin, you must first understand the distinction between WordPress.com and WordPress.org.
+There are a few things you should know if you're just getting started with WordPress. To begin, you must first understand the distinction between WordPress.com and WordPress.org.
 
 If you're unfamiliar with WordPress, the distinction between WordPress.com and WordPress.org might be perplexing.
 
@@ -104,7 +104,7 @@ Since the content in your headless CMS isn't tied to any particular front-end di
 
 Headless CMS isn't just about textual content anymore. It now integrates other forms of media like audio and video.
 
-### The Challenges of Using a Headless CMS
+### The Challenges of Using a Headless CMS
 
 -   Rigid presentation
 
@@ -122,7 +122,7 @@ To adapt to managing various systems, a headless CMS team would need to extend i
 
 Because this architecture does not include notions such as sitemaps and pages, content editors may need to adapt to the unique content structure on the website or other channels.
 
-### Use Cases for A Headless CMS
+### Use Cases for A Headless CMS
 
 Headless CMS can be ideal for the following use cases:
 
@@ -304,7 +304,7 @@ This is especially true in a disconnected setup. You may wind up with two system
 
 Users must be credentialed differently in a headless CMS than in a linked CMS. This might be a time-consuming process, but it does result in a more secure workplace.
 
-### Use Cases for a WordPress Headless CMS
+### Use Cases for a WordPress Headless CMS
 
 A WP Headless CMS is best used for
 
@@ -350,13 +350,13 @@ A team that requires the headless version will appreciate the flexibility this g
 
 At the same time, you're still entrusting transaction processing to your headless eCommerce solution, allowing you to make use of their backend system.
 
-You can find some examples of headless e-commerce websites [here](https://www.solutelabs.com/blog/top-10-headless-ecommerce-websites-built-on-jamstack)​
+You can find some examples of headless e-commerce websites [here](https://www.solutelabs.com/blog/top-10-headless-ecommerce-websites-built-on-jamstack)​
 
-## Popular Headless CMS's:
+## Popular Headless CMS's:
 
 There are many popular headless CMS's in the market right now, like Magnolia, Agility, or even Contentful. But Sanity takes the cake in terms of fame. It is arguably one of the most popular Headless CMS's. Hence, it only fits that we talk about it.
 
-### Sanity: A Headless CMS
+### Sanity: A Headless CMS
 
 Sanity Studio is a headless real-time CMS built with JavaScript and React that you may modify.
 
@@ -370,7 +370,7 @@ Sanity Studio is a headless real-time CMS built with JavaScript and React that y
 
 -   JavaScript could be used to provide field validations, arrange documents, and establish starting values in an advanced block editor for structured content.
 
-#### Reasons to opt for Sanity.
+#### Reasons to opt for Sanity.
 
 -   _Easy to get started with_
 
@@ -402,7 +402,7 @@ Although fundamental JavaScript expertise is required to get started with Sanity
 
 Because Sanity is a cloud-hosted CMS with a real-time content studio, all data is instantaneously synchronized. PostgreSQL, ElasticSearch, and JavaScript, and lightning-fast React form the foundation of the system. It saves logical object structures rather than HTML, XML, or rich text in the database. For example, you don't have to read HTML if you want Alexa to read from your text fields. Sanity comes with well-maintained JavaScript, HTML, and PHP clients, allowing you to get up and running quickly with your preferred front-end architecture.
 
-#### Some Cool Projects Powered by Sanity
+#### Some Cool Projects Powered by Sanity
 
 -   _Agnes_
 

@@ -7,291 +7,291 @@
 .
 ├── Combined_____-_____Doc.md
 ├── components
-│   ├── ActionLink.js
-│   ├── CtaButtons.js
-│   ├── DarkToggle
-│   │   ├── index.js
-│   │   └── styles.js
-│   ├── DocsMenu.js
-│   ├── DocsSubmenu.js
-│   ├── Footer.js
-│   ├── Header.js
-│   ├── Icon.js
-│   ├── Layout.js
-│   ├── SectionContent.js
-│   ├── SectionCta.js
-│   ├── SectionDocs.js
-│   ├── SectionGrid.js
-│   ├── SectionHero.js
-│   ├── Submenu.js
-│   ├── global.css
-│   └── index.js
+│   ├── ActionLink.js
+│   ├── CtaButtons.js
+│   ├── DarkToggle
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── DocsMenu.js
+│   ├── DocsSubmenu.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Icon.js
+│   ├── Layout.js
+│   ├── SectionContent.js
+│   ├── SectionCta.js
+│   ├── SectionDocs.js
+│   ├── SectionGrid.js
+│   ├── SectionHero.js
+│   ├── Submenu.js
+│   ├── global.css
+│   └── index.js
 ├── data
-│   └── doc_sections.yml
+│   └── doc_sections.yml
 ├── hooks
-│   ├── addScript.js
-│   ├── index.js
-│   ├── useDarkMode.js
-│   ├── useEventListener.js
-│   ├── useMediaQuery.js
-│   ├── useOnClickOutside.js
-│   ├── useQueryParam.js
-│   ├── useSize.js
-│   └── useStorage.js
+│   ├── addScript.js
+│   ├── index.js
+│   ├── useDarkMode.js
+│   ├── useEventListener.js
+│   ├── useMediaQuery.js
+│   ├── useOnClickOutside.js
+│   ├── useQueryParam.js
+│   ├── useSize.js
+│   └── useStorage.js
 ├── html.js
 ├── pages
-│   ├── blog
-│   │   ├── 300-react-questions.md
-│   │   ├── awesome-graphql.md
-│   │   ├── big-o-complexity.md
-│   │   ├── blog-archive.md
-│   │   ├── blogwcomments.md
-│   │   ├── data-structures.md
-│   │   ├── flow-control-in-python.md
-│   │   ├── functions-in-python.md
-│   │   ├── git-gateway.md
-│   │   ├── index.md
-│   │   ├── interview-questions-js.md
-│   │   ├── netlify-cms.md
-│   │   ├── platform-docs.md
-│   │   ├── python-for-js-dev.md
-│   │   ├── python-resources.md
-│   │   ├── web-dev-trends.md
-│   │   └── web-scraping.md
-│   ├── docs
-│   │   ├── about
-│   │   │   ├── eng-portfolio.md
-│   │   │   ├── ideas-for-this-website.md
-│   │   │   ├── index.md
-│   │   │   ├── intrests.md
-│   │   │   ├── job-search.md
-│   │   │   └── resume.md
-│   │   ├── articles
-│   │   │   ├── basic-web-dev.md
-│   │   │   ├── buffers.md
-│   │   │   ├── dev-dep.md
-│   │   │   ├── event-loop.md
-│   │   │   ├── fs-module.md
-│   │   │   ├── how-the-web-works.md
-│   │   │   ├── http.md
-│   │   │   ├── index.md
-│   │   │   ├── install.md
-│   │   │   ├── intro.md
-│   │   │   ├── modules.md
-│   │   │   ├── nextjs.md
-│   │   │   ├── node-api-express.md
-│   │   │   ├── node-cli-args.md
-│   │   │   ├── node-common-modules.md
-│   │   │   ├── node-env-variables.md
-│   │   │   ├── node-js-language.md
-│   │   │   ├── node-package-manager.md
-│   │   │   ├── node-repl.md
-│   │   │   ├── node-run-cli.md
-│   │   │   ├── nodejs.md
-│   │   │   ├── nodevsbrowser.md
-│   │   │   ├── npm.md
-│   │   │   ├── npx.md
-│   │   │   ├── os-module.md
-│   │   │   ├── reading-files.md
-│   │   │   ├── semantic-html.md
-│   │   │   ├── semantic.md
-│   │   │   ├── the-uniform-resource-locator-(url).md
-│   │   │   ├── understanding-firebase.md
-│   │   │   ├── v8.md
-│   │   │   ├── web-standards-checklist.md
-│   │   │   ├── webdev-tools.md
-│   │   │   └── writing-files.md
-│   │   ├── audio
-│   │   │   ├── audio-feature-extraction.md
-│   │   │   ├── audio.md
-│   │   │   ├── dfft.md
-│   │   │   ├── discrete-fft.md
-│   │   │   ├── dtw-python-explained.md
-│   │   │   ├── dynamic-time-warping.md
-│   │   │   ├── index.md
-│   │   │   └── web-audio-api.md
-│   │   ├── career
-│   │   │   ├── dev-interview.md
-│   │   │   ├── index.md
-│   │   │   ├── interview-dos-n-donts.md
-│   │   │   └── job-boards.md
-│   │   ├── community
-│   │   │   ├── an-open-letter-2-future-developers.md
-│   │   │   ├── index.md
-│   │   │   └── video-chat.md
-│   │   ├── content
-│   │   │   ├── algo.md
-│   │   │   ├── archive.md
-│   │   │   ├── gatsby-Queries-Mutations.md
-│   │   │   ├── history-api.md
-│   │   │   ├── index.md
-│   │   │   ├── main-projects.md
-│   │   │   └── trouble-shooting.md
-│   │   ├── data-structures
-│   │   │   └── index.md
-│   │   ├── docs
-│   │   │   ├── appendix.md
-│   │   │   ├── art-of-command-line.md
-│   │   │   ├── bash.md
-│   │   │   ├── content.md
-│   │   │   ├── css.md
-│   │   │   ├── data-structures-docs.md
-│   │   │   ├── es-6-features.md
-│   │   │   ├── git-reference.md
-│   │   │   ├── git-repos.md
-│   │   │   ├── html-spec.md
-│   │   │   ├── index.md
-│   │   │   ├── markdown.md
-│   │   │   ├── no-whiteboarding.md
-│   │   │   ├── node-docs-complete.md
-│   │   │   ├── node-docs-full.md
-│   │   │   ├── regex-in-js.md
-│   │   │   └── sitemap.md
-│   │   ├── faq
-│   │   │   ├── contact.md
-│   │   │   ├── index.md
-│   │   │   └── plug-ins.md
-│   │   ├── gists.md
-│   │   ├── index.md
-│   │   ├── interact
-│   │   │   ├── callstack-visual.md
-│   │   │   ├── clock.md
-│   │   │   ├── index.md
-│   │   │   ├── jupyter-notebooks.md
-│   │   │   ├── other-sites.md
-│   │   │   └── video-chat.md
-│   │   ├── interview
-│   │   │   ├── index.md
-│   │   │   ├── job-search-nav.md
-│   │   │   └── review-concepts.md
-│   │   ├── javascript
-│   │   │   ├── arrow-functions.md
-│   │   │   ├── asyncjs.md
-│   │   │   ├── await-keyword.md
-│   │   │   ├── bigo.md
-│   │   │   ├── clean-code.md
-│   │   │   ├── constructor-functions.md
-│   │   │   ├── index.md
-│   │   │   ├── promises.md
-│   │   │   ├── review.md
-│   │   │   └── this-is-about-this.md
-│   │   ├── leetcode
-│   │   │   └── index.md
-│   │   ├── privacy-policy.md
-│   │   ├── projects
-│   │   │   ├── embeded-websites.md
-│   │   │   ├── index.md
-│   │   │   ├── list-of-projects.md
-│   │   │   ├── mini-projects.md
-│   │   │   └── my-websites.md
-│   │   ├── python
-│   │   │   ├── at-length.md
-│   │   │   ├── cheat-sheet.md
-│   │   │   ├── comprehensive-guide.md
-│   │   │   ├── examples.md
-│   │   │   ├── flow-control.md
-│   │   │   ├── functions.md
-│   │   │   ├── google-sheets-api.md
-│   │   │   ├── index.md
-│   │   │   ├── intro-for-js-devs.md
-│   │   │   ├── python-ds.md
-│   │   │   └── snippets.md
-│   │   ├── quick-reference
-│   │   │   ├── Emmet.md
-│   │   │   ├── all-emojis.md
-│   │   │   ├── create-react-app.md
-│   │   │   ├── git-bash.md
-│   │   │   ├── git-tricks.md
-│   │   │   ├── google-firebase.md
-│   │   │   ├── heroku-error-codes.md
-│   │   │   ├── index.md
-│   │   │   ├── installation.md
-│   │   │   ├── markdown-dropdowns.md
-│   │   │   ├── minifiction.md
-│   │   │   ├── new-repo-instructions.md
-│   │   │   ├── psql-setup.md
-│   │   │   ├── pull-request-rubric.md
-│   │   │   ├── quick-links.md
-│   │   │   ├── topRepos.md
-│   │   │   ├── understanding-path.md
-│   │   │   └── vscode-themes.md
-│   │   ├── react
-│   │   │   ├── ajax-n-apis.md
-│   │   │   ├── cheatsheet.md
-│   │   │   ├── createReactApp.md
-│   │   │   ├── demo.md
-│   │   │   ├── dont-use-index-as-keys.md
-│   │   │   ├── index.md
-│   │   │   ├── jsx.md
-│   │   │   ├── react-docs.md
-│   │   │   ├── react-in-depth.md
-│   │   │   ├── react2.md
-│   │   │   └── render-elements.md
-│   │   ├── reference
-│   │   │   ├── awesome-lists.md
-│   │   │   ├── awesome-static.md
-│   │   │   ├── bash-commands.md
-│   │   │   ├── bookmarks.md
-│   │   │   ├── embed-the-web.md
-│   │   │   ├── github-search.md
-│   │   │   ├── google-cloud.md
-│   │   │   ├── how-2-reinstall-npm.md
-│   │   │   ├── how-to-kill-a-process.md
-│   │   │   ├── index.md
-│   │   │   ├── installing-node.md
-│   │   │   ├── intro-to-nodejs.md
-│   │   │   ├── notes-template.md
-│   │   │   ├── psql.md
-│   │   │   ├── resources.md
-│   │   │   ├── vscode.md
-│   │   │   └── web-api's.md
-│   │   ├── search.md
-│   │   ├── sitemap.md
-│   │   ├── tips
-│   │   │   ├── array-methods.md
-│   │   │   ├── index.md
-│   │   │   └── insert-into-array.md
-│   │   ├── tools
-│   │   │   ├── Archive.md
-│   │   │   ├── data-structures.md
-│   │   │   ├── dev-utilities.md
-│   │   │   ├── index.md
-│   │   │   └── markdown-html.md
-│   │   └── tutorials
-│   │       ├── enviorment-setup.md
-│   │       └── index.md
-│   ├── index.md
-│   ├── privacy-policy.md
-│   ├── readme.md
-│   └── showcase.md
+│   ├── blog
+│   │   ├── 300-react-questions.md
+│   │   ├── awesome-graphql.md
+│   │   ├── big-o-complexity.md
+│   │   ├── blog-archive.md
+│   │   ├── blogwcomments.md
+│   │   ├── data-structures.md
+│   │   ├── flow-control-in-python.md
+│   │   ├── functions-in-python.md
+│   │   ├── git-gateway.md
+│   │   ├── index.md
+│   │   ├── interview-questions-js.md
+│   │   ├── netlify-cms.md
+│   │   ├── platform-docs.md
+│   │   ├── python-for-js-dev.md
+│   │   ├── python-resources.md
+│   │   ├── web-dev-trends.md
+│   │   └── web-scraping.md
+│   ├── docs
+│   │   ├── about
+│   │   │   ├── eng-portfolio.md
+│   │   │   ├── ideas-for-this-website.md
+│   │   │   ├── index.md
+│   │   │   ├── intrests.md
+│   │   │   ├── job-search.md
+│   │   │   └── resume.md
+│   │   ├── articles
+│   │   │   ├── basic-web-dev.md
+│   │   │   ├── buffers.md
+│   │   │   ├── dev-dep.md
+│   │   │   ├── event-loop.md
+│   │   │   ├── fs-module.md
+│   │   │   ├── how-the-web-works.md
+│   │   │   ├── http.md
+│   │   │   ├── index.md
+│   │   │   ├── install.md
+│   │   │   ├── intro.md
+│   │   │   ├── modules.md
+│   │   │   ├── nextjs.md
+│   │   │   ├── node-api-express.md
+│   │   │   ├── node-cli-args.md
+│   │   │   ├── node-common-modules.md
+│   │   │   ├── node-env-variables.md
+│   │   │   ├── node-js-language.md
+│   │   │   ├── node-package-manager.md
+│   │   │   ├── node-repl.md
+│   │   │   ├── node-run-cli.md
+│   │   │   ├── nodejs.md
+│   │   │   ├── nodevsbrowser.md
+│   │   │   ├── npm.md
+│   │   │   ├── npx.md
+│   │   │   ├── os-module.md
+│   │   │   ├── reading-files.md
+│   │   │   ├── semantic-html.md
+│   │   │   ├── semantic.md
+│   │   │   ├── the-uniform-resource-locator-(url).md
+│   │   │   ├── understanding-firebase.md
+│   │   │   ├── v8.md
+│   │   │   ├── web-standards-checklist.md
+│   │   │   ├── webdev-tools.md
+│   │   │   └── writing-files.md
+│   │   ├── audio
+│   │   │   ├── audio-feature-extraction.md
+│   │   │   ├── audio.md
+│   │   │   ├── dfft.md
+│   │   │   ├── discrete-fft.md
+│   │   │   ├── dtw-python-explained.md
+│   │   │   ├── dynamic-time-warping.md
+│   │   │   ├── index.md
+│   │   │   └── web-audio-api.md
+│   │   ├── career
+│   │   │   ├── dev-interview.md
+│   │   │   ├── index.md
+│   │   │   ├── interview-dos-n-donts.md
+│   │   │   └── job-boards.md
+│   │   ├── community
+│   │   │   ├── an-open-letter-2-future-developers.md
+│   │   │   ├── index.md
+│   │   │   └── video-chat.md
+│   │   ├── content
+│   │   │   ├── algo.md
+│   │   │   ├── archive.md
+│   │   │   ├── gatsby-Queries-Mutations.md
+│   │   │   ├── history-api.md
+│   │   │   ├── index.md
+│   │   │   ├── main-projects.md
+│   │   │   └── trouble-shooting.md
+│   │   ├── data-structures
+│   │   │   └── index.md
+│   │   ├── docs
+│   │   │   ├── appendix.md
+│   │   │   ├── art-of-command-line.md
+│   │   │   ├── bash.md
+│   │   │   ├── content.md
+│   │   │   ├── css.md
+│   │   │   ├── data-structures-docs.md
+│   │   │   ├── es-6-features.md
+│   │   │   ├── git-reference.md
+│   │   │   ├── git-repos.md
+│   │   │   ├── html-spec.md
+│   │   │   ├── index.md
+│   │   │   ├── markdown.md
+│   │   │   ├── no-whiteboarding.md
+│   │   │   ├── node-docs-complete.md
+│   │   │   ├── node-docs-full.md
+│   │   │   ├── regex-in-js.md
+│   │   │   └── sitemap.md
+│   │   ├── faq
+│   │   │   ├── contact.md
+│   │   │   ├── index.md
+│   │   │   └── plug-ins.md
+│   │   ├── gists.md
+│   │   ├── index.md
+│   │   ├── interact
+│   │   │   ├── callstack-visual.md
+│   │   │   ├── clock.md
+│   │   │   ├── index.md
+│   │   │   ├── jupyter-notebooks.md
+│   │   │   ├── other-sites.md
+│   │   │   └── video-chat.md
+│   │   ├── interview
+│   │   │   ├── index.md
+│   │   │   ├── job-search-nav.md
+│   │   │   └── review-concepts.md
+│   │   ├── javascript
+│   │   │   ├── arrow-functions.md
+│   │   │   ├── asyncjs.md
+│   │   │   ├── await-keyword.md
+│   │   │   ├── bigo.md
+│   │   │   ├── clean-code.md
+│   │   │   ├── constructor-functions.md
+│   │   │   ├── index.md
+│   │   │   ├── promises.md
+│   │   │   ├── review.md
+│   │   │   └── this-is-about-this.md
+│   │   ├── leetcode
+│   │   │   └── index.md
+│   │   ├── privacy-policy.md
+│   │   ├── projects
+│   │   │   ├── embeded-websites.md
+│   │   │   ├── index.md
+│   │   │   ├── list-of-projects.md
+│   │   │   ├── mini-projects.md
+│   │   │   └── my-websites.md
+│   │   ├── python
+│   │   │   ├── at-length.md
+│   │   │   ├── cheat-sheet.md
+│   │   │   ├── comprehensive-guide.md
+│   │   │   ├── examples.md
+│   │   │   ├── flow-control.md
+│   │   │   ├── functions.md
+│   │   │   ├── google-sheets-api.md
+│   │   │   ├── index.md
+│   │   │   ├── intro-for-js-devs.md
+│   │   │   ├── python-ds.md
+│   │   │   └── snippets.md
+│   │   ├── quick-reference
+│   │   │   ├── Emmet.md
+│   │   │   ├── all-emojis.md
+│   │   │   ├── create-react-app.md
+│   │   │   ├── git-bash.md
+│   │   │   ├── git-tricks.md
+│   │   │   ├── google-firebase.md
+│   │   │   ├── heroku-error-codes.md
+│   │   │   ├── index.md
+│   │   │   ├── installation.md
+│   │   │   ├── markdown-dropdowns.md
+│   │   │   ├── minifiction.md
+│   │   │   ├── new-repo-instructions.md
+│   │   │   ├── psql-setup.md
+│   │   │   ├── pull-request-rubric.md
+│   │   │   ├── quick-links.md
+│   │   │   ├── topRepos.md
+│   │   │   ├── understanding-path.md
+│   │   │   └── vscode-themes.md
+│   │   ├── react
+│   │   │   ├── ajax-n-apis.md
+│   │   │   ├── cheatsheet.md
+│   │   │   ├── createReactApp.md
+│   │   │   ├── demo.md
+│   │   │   ├── dont-use-index-as-keys.md
+│   │   │   ├── index.md
+│   │   │   ├── jsx.md
+│   │   │   ├── react-docs.md
+│   │   │   ├── react-in-depth.md
+│   │   │   ├── react2.md
+│   │   │   └── render-elements.md
+│   │   ├── reference
+│   │   │   ├── awesome-lists.md
+│   │   │   ├── awesome-static.md
+│   │   │   ├── bash-commands.md
+│   │   │   ├── bookmarks.md
+│   │   │   ├── embed-the-web.md
+│   │   │   ├── github-search.md
+│   │   │   ├── google-cloud.md
+│   │   │   ├── how-2-reinstall-npm.md
+│   │   │   ├── how-to-kill-a-process.md
+│   │   │   ├── index.md
+│   │   │   ├── installing-node.md
+│   │   │   ├── intro-to-nodejs.md
+│   │   │   ├── notes-template.md
+│   │   │   ├── psql.md
+│   │   │   ├── resources.md
+│   │   │   ├── vscode.md
+│   │   │   └── web-api's.md
+│   │   ├── search.md
+│   │   ├── sitemap.md
+│   │   ├── tips
+│   │   │   ├── array-methods.md
+│   │   │   ├── index.md
+│   │   │   └── insert-into-array.md
+│   │   ├── tools
+│   │   │   ├── Archive.md
+│   │   │   ├── data-structures.md
+│   │   │   ├── dev-utilities.md
+│   │   │   ├── index.md
+│   │   │   └── markdown-html.md
+│   │   └── tutorials
+│   │       ├── enviorment-setup.md
+│   │       └── index.md
+│   ├── index.md
+│   ├── privacy-policy.md
+│   ├── readme.md
+│   └── showcase.md
 ├── sass
-│   ├── imports
-│   │   ├── _animations.scss
-│   │   ├── _buttons.scss
-│   │   ├── _docs.scss
-│   │   ├── _footer.scss
-│   │   ├── _forms.scss
-│   │   ├── _functions.scss
-│   │   ├── _general.scss
-│   │   ├── _header.scss
-│   │   ├── _helpers.scss
-│   │   ├── _icons.scss
-│   │   ├── _palettes.scss
-│   │   ├── _posts.scss
-│   │   ├── _prism.scss
-│   │   ├── _reset.scss
-│   │   ├── _sections.scss
-│   │   ├── _structure.scss
-│   │   ├── _tables.scss
-│   │   └── _variables.scss
-│   └── main.scss
+│   ├── imports
+│   │   ├── _animations.scss
+│   │   ├── _buttons.scss
+│   │   ├── _docs.scss
+│   │   ├── _footer.scss
+│   │   ├── _forms.scss
+│   │   ├── _functions.scss
+│   │   ├── _general.scss
+│   │   ├── _header.scss
+│   │   ├── _helpers.scss
+│   │   ├── _icons.scss
+│   │   ├── _palettes.scss
+│   │   ├── _posts.scss
+│   │   ├── _prism.scss
+│   │   ├── _reset.scss
+│   │   ├── _sections.scss
+│   │   ├── _structure.scss
+│   │   ├── _tables.scss
+│   │   └── _variables.scss
+│   └── main.scss
 ├── templates
-│   ├── advanced.js
-│   ├── blog.js
-│   ├── docs.js
-│   ├── page.js
-│   ├── post.js
-│   └── templates.md
+│   ├── advanced.js
+│   ├── blog.js
+│   ├── docs.js
+│   ├── page.js
+│   ├── post.js
+│   └── templates.md
 └── utils
     ├── attribute.js
     ├── blm-badge.js
@@ -325,8 +325,8 @@
 ├── ActionLink.js
 ├── CtaButtons.js
 ├── DarkToggle
-│   ├── index.js
-│   └── styles.js
+│   ├── index.js
+│   └── styles.js
 ├── DocsMenu.js
 ├── DocsSubmenu.js
 ├── Footer.js

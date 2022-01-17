@@ -124,7 +124,7 @@ class Component extends React.Component {
   // Invoked before a mounted component receives new props.
   // If you need to update the state in response to prop changes (for example, to reset it),
   // you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
-  componentWillReceiveProps(nextProps) { }
+  componentWillReceiveProps(nextProps) { }
 
   // Let React know if a component’s output is not affected by the current change in state or props.
   // The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
@@ -138,7 +138,7 @@ class Component extends React.Component {
   // Note that you cannot call this.setState() here; nor should you do anything else
   // (e.g. dispatch a Redux action) that would trigger an update to a React component before componentWillUpdate() returns.
   // If you need to update state in response to props changes, use componentWillReceiveProps() instead.
-  componentWillUpdate(nextProps, nextState) { }
+  componentWillUpdate(nextProps, nextState) { }
 
   // Invoked immediately after updating occurs. This method is not called for the initial render.
   // Use this as an opportunity to operate on the DOM when the component has been updated.

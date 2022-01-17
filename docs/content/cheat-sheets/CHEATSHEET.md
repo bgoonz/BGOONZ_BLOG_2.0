@@ -3709,7 +3709,7 @@ componentDidMount() { }
 
 ```js
 
-componentWillReceiveProps(nextProps) { }
+componentWillReceiveProps(nextProps) { }
 
 ```
 
@@ -3775,7 +3775,7 @@ shouldComponentUpdate(nextProps, nextState) { }
 
 ```js
 
-componentWillUpdate(nextProps, nextState) { }
+componentWillUpdate(nextProps, nextState) { }
 
 ```
 

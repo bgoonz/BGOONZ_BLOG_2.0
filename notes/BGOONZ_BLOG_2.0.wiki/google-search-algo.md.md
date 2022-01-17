@@ -1,12 +1,12 @@
-The Google search engine is so ubiquitous around the world today that it is considered a complete reference for information. Google search engine has various functions and algorithms.
+The Google search engine is so ubiquitous around the world today that it is considered a complete reference for information. Google search engine has various functions and algorithms.
 
-Google search engine does not need to be introduced. You all know Google search engine well and everyone has been involved with this search engine to some extent. One is looking for the information it needs, the other has a site, and is looking for ways to improve its site ranking in the Google search engine. However, each of us has used Google many times as an information source.
+Google search engine does not need to be introduced. You all know Google search engine well and everyone has been involved with this search engine to some extent. One is looking for the information it needs, the other has a site, and is looking for ways to improve its site ranking in the Google search engine. However, each of us has used Google many times as an information source.
 
 ![](https://qph.fs.quoracdn.net/main-qimg-c03852bffd1b94868d04bebeebf20cf4-lq)
 
 But the question that may come to your mind is how the Google search engine works.
 
-The work of Google search engine starts when a person or company registers a site link in it, that is, before the user searches. When you submit a site link, Google starts crawling your pages and sitemap and collecting the available information.
+The work of Google search engine starts when a person or company registers a site link in it, that is, before the user searches. When you submit a site link, Google starts crawling your pages and sitemap and collecting the available information.
 
 Each time Google crawls a page, in addition to checking the information on that page, it analyzes all the links that exist and are linked to other internal pages.
 
@@ -44,11 +44,11 @@ At each general change, Google's algorithm has reviewed how the sites are displa
 
 Google algorithms each have different purposes, but in general, the purpose of all of them is generally to select the best websites to display on the search results page for users.
 
-now ; Briefly, we name some of Google's algorithms as captions.
+now ; Briefly, we name some of Google's algorithms as captions.
 
-1.Panda algorithm was first introduced in February 2011 with the advent of languages, and its task was to prevent copying, writing or photographing.
+1.Panda algorithm was first introduced in February 2011 with the advent of languages, and its task was to prevent copying, writing or photographing.
 
-2.The Penguin algorithm was introduced in April 2012, which focuses on site links and backlinks.
+2.The Penguin algorithm was introduced in April 2012, which focuses on site links and backlinks.
 
 3.Hummingbird Algorithm; When you type something into Google, examples of repetitive keywords are shown to you by the Google browser.
 
@@ -60,7 +60,7 @@ Mobilegddon algorithm :
 
 This algorithm is the latest algorithm introduced by Google and is being launched, but has not been fully launched yet.
 
-The main purpose of this algorithm is to remove all websites that can not be displayed on mobiles and tablets!
+The main purpose of this algorithm is to remove all websites that can not be displayed on mobiles and tablets!
 
 Payday Loan algorithm :
 
