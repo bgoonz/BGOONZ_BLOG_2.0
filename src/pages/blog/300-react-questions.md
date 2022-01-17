@@ -10,7 +10,7 @@ seo:
   robots: []
   extra: []
 template: post
-thumb_image: images/es6.jpg
+thumb_image: images/web-development-abstract.jpg
 ---
 
 ## React Interview Questions & Answers
