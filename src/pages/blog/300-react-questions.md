@@ -1,5 +1,5 @@
 ---
-title: Es6 Features
+title: React Questions
 subtitle: ECMAScript 2015 was the second major revision to JavaScript.
 date: '2022-01-16'
 thumb_image_alt: es6
