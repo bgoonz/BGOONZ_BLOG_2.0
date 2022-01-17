@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: gr
 subtitle: lorem-ipsum
 date: '2022-01-17'
 thumb_image_alt: lorem-ipsum
