@@ -2,6 +2,10 @@
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
+  
+  https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app
+  
+  
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 </div>
