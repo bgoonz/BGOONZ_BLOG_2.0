@@ -6,7 +6,7 @@ A somewhat straight forward suggestion if you don't want some type of Google Sea
 
 I will use PHP for my description of how this is done.
 
-With this in mind, first learn how to read entire pages (i.e. webpages) into a string: <http://php.net/manual/en/function.file-get-contents.php>
+With this in mind, first learn how to read entire pages (i.e. webpages) into a string: <http://php.net/manual/en/function.file-get-contents.php>
 
 ```
 //YOU WILL HAVE TO LINE THIS UP WITH YOUR WORKING FILE NAMES
@@ -91,7 +91,7 @@ Example:
 
 <form action="search.php" method="post">
 
-    <input type="text" name="findMe" placeholder="Search Yacht">
+    <input type="text" name="findMe" placeholder="Search Yacht">
 
 </form>
 
@@ -109,7 +109,7 @@ $search = $_POST['findMe'];
 
 if (stripos($home, $search) !== false) {//USING EXAMPLE.COM TO SHOW IT WORKS
 
-    echo '<a href="'.$homePageName.'">'.$homePageName.'</a>';
+    echo '<a href="'.$homePageName.'">'.$homePageName.'</a>';
 
 }
 
