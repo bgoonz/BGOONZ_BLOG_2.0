@@ -37,45 +37,45 @@ export default function Link({
         return (
 
             <
-            GatsbyLink to = {
-                to
-            }
-            activeClassName = {
-                activeClassName
-            }
-            partiallyActive = {
-                partiallyActive
-            } {
+            GatsbyLink to={
+                    to
+                }
+                activeClassName={
+                    activeClassName
+                }
+                partiallyActive={
+                    partiallyActive
+                } {
                 ...other
-            } >
+                } >
 
-            {
-                children
-            }
+                {
+                    children
+                }
 
-            <
+                <
             /GatsbyLink>
-
-        );
-
-    }
-
-    return (
-
-        <
-        a href = {
-            to
-        } {
-            ...other
-        } >
-
-        {
-            children
+    
+            );
+    
         }
-
+    
+        return (
+    
         <
+        a href={
+                        to
+                    } {
+                    ...other
+                    } >
+
+                    {
+                        children
+                    }
+
+                    <
         /a>
-
-    );
-
+            
+                );
+            
 }

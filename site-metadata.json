@@ -267,19 +267,7 @@
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
-                    }
-                ],
-                "type": "action_menu"
-            },
-            {
-                "label": "External",
-                "url": "https://bgoonz-blog-v3-0.netlify.app/",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [
+                    },
                     {
                         "label": "Embeds Blog",
                         "url": "https://friendly-panda-b61ab.netlify.app/",
@@ -513,5 +501,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/enhanced (1).png"
+    "favicon": "images/favicon-750d4390.png"
 }

@@ -264,14 +264,14 @@
     &.type-docs {
       .post-title,
       .post-content {
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 4%;
+        padding-right: 4%;
       }
     }
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
   .docs-content {
     display: -ms-flexbox;
     display: flex;
@@ -340,8 +340,8 @@
 
     .docs-nav-toggle {
       .icon-angle-right {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
+        -webkit-transform: rotate(145deg);
+        transform: rotate(145deg);
       }
     }
   }

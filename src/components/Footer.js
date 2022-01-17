@@ -132,11 +132,11 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a className="save2PDF" href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
                             Save to PDF
                         </a>
                     </center>
-      <a aria-current="page" className href="/"><img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" /></a>
+      <a aria-current="page" className="site-logo" href="/"><img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" /></a>
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
