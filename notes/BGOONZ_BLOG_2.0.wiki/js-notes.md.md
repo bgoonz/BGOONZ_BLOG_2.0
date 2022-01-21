@@ -378,11 +378,11 @@ of the structure of the object (including it's prototype chain).
 ---
 
 title: Exercise
-layout_data:
+layout*data:
 description: |
 Create a local variable with name `foo` and value `42`.
 Use `log(foo)` to log the value of `foo`.
-Remember to open your browser's _developer tools_ to view the log output.
+Remember to open your browser's \_developer tools* to view the log output.
 assertion: |
 assert(
 /var foo\s\*=.+;?$/m.test(source),
@@ -673,8 +673,8 @@ they exist.
 ---
 
 title: Demo
-layout_data:
-description: Which value does this code log and why? Think about the answer _before_ you
+layout*data:
+description: Which value does this code log and why? Think about the answer \_before* you
 run the code.
 
 ---
@@ -829,8 +829,8 @@ console.log(bar); // reference error
 ---
 
 title: Demo
-layout_data:
-description: Which value does this code log and why? Think about the solution _before_ you
+layout*data:
+description: Which value does this code log and why? Think about the solution \_before* you
 run the code.
 
 ---
