@@ -686,6 +686,9 @@ arr.values()                                         // Returns a new Array Iter
 ---
 
 
+<details>
+
+<summary>  See More </summary>   
 
 
 
@@ -7232,3 +7235,6 @@ We could now use` Promise.all()` to wait for all the Promises in the array to be
     }
 
 both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
+
+
+</details>
