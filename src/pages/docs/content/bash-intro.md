@@ -1,3 +1,13 @@
+---
+title:  Tuning Command Line History in Bash - ShellHacks
+weight: 0
+seo:
+    title: ' Tuning Command Line History in Bash - ShellHacks'
+    description: ' Tips that can help you to improve you Bash history file. You will learn how to add date and time to bash history file, increase history size, ignore specific commands and much more … Every command that you enter, is stored in the file ~/.bash_history. Run history to see your last commands.'
+    robots: []
+    extra: []
+template: docs
+---
 # 7 Tips - Tuning Command Line History in Bash - ShellHacks
 
 > 7 Tips that can help you to improve you Bash history file. You will learn how to add date and time to bash history file, increase history size, ignore specific commands and much more … Every command that you enter, is stored in the file ~/.bash_history. Run history to see your last commands. You can […]
