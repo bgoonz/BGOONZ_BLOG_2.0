@@ -52,7 +52,7 @@
                     },
                     {
                         "label": "JavaScript",
-                        "url": "javascript",
+                        "url": "/docs/javascript",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -168,15 +168,7 @@
                         "no_follow": false,
                         "type": "action"
                     },
-                    {
-                        "label": "Gallery",
-                        "url": "/docs/gallery",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
+                 
                     {
                         "label": "Top Repos",
                         "url": "/docs",
