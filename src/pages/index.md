@@ -150,8 +150,8 @@ sections:
         image_alt: nj-devils
         content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
-          - label: lorem-ipsum
-            url: '#'
+          - label: nj-devils link
+            url: 'https://www.allaboutthejersey.com/'
             style: link
             icon_class: dev
             new_window: false
@@ -248,9 +248,8 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-    image: images/cool annimation.gif
   - section_id: tools
-    image_alt: lorem-ipsum
+    image_alt: web tools
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
