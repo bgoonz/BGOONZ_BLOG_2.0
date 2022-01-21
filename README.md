@@ -23,6 +23,9 @@
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/aac9892cd5e6fe8241ce?action=collection%2Fimport#?env%5Bblog%5D=dW5kZWZpbmVk)![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+  
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-bgoonz-blog-netlify-app-2022-01-20-23_58_59.png?raw=true)
+  
 </div>
 
 <details>
