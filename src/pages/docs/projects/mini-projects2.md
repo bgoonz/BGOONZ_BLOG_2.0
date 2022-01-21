@@ -156,7 +156,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>  </h1>
+<h1> Fractions Website </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://kguner-fractions-website.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -173,7 +173,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>   </h1>
+<h1>  Dev Journal </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://dev-journal42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -192,7 +192,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>  </h1>
+<h1> Blood Sugars for  </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sanity-gatsby-hey-sugar-5.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
