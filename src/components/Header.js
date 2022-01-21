@@ -86,12 +86,14 @@ export default class Header extends React.Component {
                 </div>
 
                 <div>
-                    <div id="sb-search-example" style={{
+                    <div id="sb-search-example" >
+
+                        {/* style={{
                         position: 'fixed',
                         top: '20px',
                         border: 0,
                         left: '100px',
-                    }}>
+                    }} */}
                         <div className="sb-search-icon" id="myCustomSearchButtonID">
                             <i className="sb-icon"></i>
                             <p>Search</p>
