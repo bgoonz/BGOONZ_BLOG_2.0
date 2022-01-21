@@ -30,6 +30,7 @@ seo:
       relativeUrl: true
 template: post
 thumb_image: images/webscrape.jpeg
+thumb_image_alt: webscraping
 ---
 
 # Web Scraping with Node.js
