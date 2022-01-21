@@ -16,8 +16,6 @@ sections:
             image: images/futuristic-mars.gif
             content: >
                 Preview html files by pasting their url into the search bar
-
-
                 **Access-Control-Allow-Origin Header When Site A tries to fetch
                 content from Site B**
             actions:
@@ -107,13 +105,10 @@ sections:
             image_alt: lorem-ipsum
             content: >+
                 ## Potluck Planner
-
-
                 If you have ever tried to organize a potluck through text messages,
                 online to-do lists or spreadsheets, you'll understand why this app is
                 essential.In the world of social gatherings and potlucks the "Potluck
                 Planner" is king. This is your place for all things pot luck.
-
             actions: []
             type: grid_item
             image: images/potluck-planner.JPG
@@ -140,7 +135,6 @@ sections:
             image_alt: lorem-ipsum
             content: |+
                 Made using jQuery and Vanilla JS
-
             actions:
                 - label: Go To Live Site
                   url: 'https://mihirbegmusiclab.netlify.app/'
@@ -168,10 +162,10 @@ seo:
           value: Showcase
           keyName: property
         - name: 'og:description'
-          value: This is the showcase page
+          value: project showcase
           keyName: property
         - name: 'og:image'
-          value: images/5.jpg
+          value: images/My Post-4ecb169f.png
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'

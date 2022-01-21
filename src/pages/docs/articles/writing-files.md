@@ -5,7 +5,9 @@ excerpt: >-
     it for your project.
 seo:
     title: Writing Files
-    description: This is the Writing Files page
+    description: >-
+        This is the Writing Files page. The easiest way to write to files in Node.js
+        is to use the fs.writeFile() API. const fs = require('fs');
     extra:
         - name: 'og:type'
           value: website
@@ -96,3 +98,41 @@ fs.appendFile('file.log', content, (err) => {
 All those methods write the full content to the file before returning the control back to your program (in the async version, this means executing the callback)
 
 In this case, a better option is to write the file content using streams.
+
+72
+
+[](https://stackoverflow.com/posts/11194896/timeline)
+
+Here's a sketch. Error handling is left as an exercise for the reader.
+
+```js
+let fs = require('fs'),
+    path = require('path');
+
+function dirTree(filename) {
+    let stats = fs.lstatSync(filename),
+        info = {
+            path: filename,
+            name: path.basename(filename)
+        };
+
+    if (stats.isDirectory()) {
+        info.type = 'folder';
+        info.children = fs.readdirSync(filename).map(function (child) {
+            return dirTree(filename + '/' + child);
+        });
+    } else {
+        // Assuming it's a file. In real life it could be a symlink or
+        // something else!
+        info.type = 'file';
+    }
+
+    return info;
+}
+
+if (module.parent == undefined) {
+    // node dirTree.js ~/foo/bar
+    let util = require('util');
+    console.log(util.inspect(dirTree(process.argv[2]), false, null));
+}
+```
