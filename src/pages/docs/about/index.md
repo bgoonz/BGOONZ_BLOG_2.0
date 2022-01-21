@@ -225,7 +225,7 @@ Creating things that change my every day life.
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
 
-| **Cembre:** Edison, NJ           | Nov 2019 – Mar 2020 |
+| **Cembre:** Edison, NJ           | Nov 2019 - Mar 2020 |
 | -------------------------------- | ------------------- |
 | **Product Development Engineer** |
 |                                  |
@@ -245,10 +245,10 @@ Creating things that change my every day life.
 
 # ➤ Education
 
-| **B.S. Electrical Engineering, TCNJ, ** Ewing NJ | 2014 – 2019 |
+| **B.S. Electrical Engineering, TCNJ, ** Ewing NJ | 2014 - 2019 |
 | ------------------------------------------------ | ----------- |
 
-**Capstone Project – Team Lead**
+**Capstone Project - Team Lead**
 
 -   Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
 -   Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.

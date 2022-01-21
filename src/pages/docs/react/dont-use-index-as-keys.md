@@ -16,7 +16,7 @@ template: docs
 
 
 
-# Lists and Keys – React
+# Lists and Keys - React
 
 > ## Excerpt
 > A JavaScript library for building user interfaces
@@ -342,7 +342,7 @@ It is true that sometimes generating new ids is redundant and may be avoided. Fo
 
 To help you decide, I put together three conditions which these examples have in common:
 
-1.  the list and items are static–they are not computed and do not change;
+1.  the list and items are static-they are not computed and do not change;
 2.  the items in the list have no ids;
 3.  the list is _never_ reordered or filtered.
 
