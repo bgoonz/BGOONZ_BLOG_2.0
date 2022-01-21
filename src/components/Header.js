@@ -10,7 +10,12 @@ export default class Header extends React.Component {
         return (
             <header id="masthead" className="site-header outer">
                 {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
-
+                <div id="sb-search-example">
+                    <div className="sb-search-icon" id="myCustomSearchButtonID">
+                        <i className="sb-icon"></i>
+                        <p>Search</p>
+                    </div>
+                </div>
                 <br />
                 <div className="inner">
                     <div className="site-header-inside">
