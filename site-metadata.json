@@ -76,7 +76,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-            
                     {
                         "label": "platform docs",
                         "url": "blog/platform-docs/",
@@ -120,6 +119,14 @@
                         "label": "Job Boards",
                         "url": "interview/job-boards",
                         "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
@@ -218,7 +225,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-                 
                     {
                         "label": "SearchAwesome",
                         "url": "https://search-awesome.vercel.app/",
