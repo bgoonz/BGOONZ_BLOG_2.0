@@ -22,6 +22,7 @@ seo:
       value: This is the About page
 template: docs
 thumb_img: images/chrome_z7gswAaLMg.png
+date: '2022-01-21'
 ---
 
 <div align="center">
