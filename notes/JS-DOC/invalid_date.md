@@ -21,7 +21,7 @@ A string leading to an invalid date has been provided to [`Date`](../global_obje
 
 ### Invalid cases
 
-Unrecognizable strings or dates containing illegal element values in ISO formatted strings usually return [`NaN`](../global_objects/nan). However, depending on the implementation, non–conforming ISO format strings, may also throw `RangeError: invalid date`, like the following cases in Firefox:
+Unrecognizable strings or dates containing illegal element values in ISO formatted strings usually return [`NaN`](../global_objects/nan). However, depending on the implementation, non-conforming ISO format strings, may also throw `RangeError: invalid date`, like the following cases in Firefox:
 
     new Date('foo-bar 2014');
     new Date('2014-25-23').toISOString();

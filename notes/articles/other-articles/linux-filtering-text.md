@@ -137,8 +137,8 @@ windowsmint.com
 
 You can use **sort** command in many ways, go through some of the useful articles on sort command as follows:
 
-1.  [14 Useful Examples of Linux 'sort' Command – Part 1](https://www.tecmint.com/sort-command-linux/)
-2.  [7 Interesting Linux 'sort' Command Examples – Part 2](https://www.tecmint.com/linux-sort-command-examples/)
+1.  [14 Useful Examples of Linux 'sort' Command - Part 1](https://www.tecmint.com/sort-command-linux/)
+2.  [7 Interesting Linux 'sort' Command Examples - Part 2](https://www.tecmint.com/linux-sort-command-examples/)
 3.  [How to Find and Sort Files Based on Modification Date and Time](https://www.tecmint.com/find-and-sort-files-modification-date-and-time-in-linux/)
 4.  [How to Sort Output of 'ls' Command By Last Modified Date and Time](https://www.tecmint.com/sort-ls-output-by-last-modified-date-and-time/)
 
