@@ -183,6 +183,8 @@ models:
         label: Date
       - name: thumb_img
         type: image
+        label: Image (docs)
+        description: The image shown in the blog feed
     labelField: title
   advanced:
     type: page
