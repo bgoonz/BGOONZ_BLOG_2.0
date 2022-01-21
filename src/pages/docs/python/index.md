@@ -566,7 +566,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
     print('{:%Y-%m-%d %H:%M:%S}'.format(d))
-    '2020–07–04 12:15:58'
+    '2020-07-04 12:15:58'
 
 ### Percentage
 

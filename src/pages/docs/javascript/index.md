@@ -1917,7 +1917,7 @@ function name(parameter1, parameter2, parameter3) {
 
 }
 
-As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier - there are also a number of default functions.
 
 ### Outputting Data
 
@@ -5633,11 +5633,11 @@ Any character except newline or another Unicode line terminator. Or, if the `Reg
 
 `\w`
 
-Any ASCII word character. Equivalent to \[a-zA-Z0–9\_\].
+Any ASCII word character. Equivalent to \[a-zA-Z0-9\_\].
 
 `\W`
 
-Equivalent to \[^a-zA-Z0–9\_\]
+Equivalent to \[^a-zA-Z0-9\_\]
 
 `\s`
 
@@ -5649,7 +5649,7 @@ Any character that is not Unicode whitespace.
 
 `\d`
 
-Equivalent to \[0–9\].
+Equivalent to \[0-9\].
 
 `\D`
 
@@ -6186,7 +6186,7 @@ adds three months and two weeks to the current date:
 
     d.toISOString()
 
-“2020–01–02T01:10:30.000Z”
+“2020-01-02T01:10:30.000Z”
 
 there is also a static Date.parse() method that takes a string as its argument, attempts to parse it as a date and time, and returns a timestamp representing that date. `Date.parse()` is able to parse the same strings that the `Date()` constructor can and is guaranteed to be able to parse the output of` toISOString(), toUTCString()`, and` toString()`.
 

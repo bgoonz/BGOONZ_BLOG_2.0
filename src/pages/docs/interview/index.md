@@ -183,7 +183,7 @@ template: docs
 
 * [12 Essential AngularJS Interview Questions from Toptal](http://www.toptal.com/angular-js/interview-questions)
 * [An AngularJS exam with questions from beginner to expert by @gdi2290 from @AngularClass](https://github.com/gdi2290/ngExam)
-* [29 AngularJS Interview Questions – Can You Answer Them All? Great Article from Codementor](https://www.codementor.io/angularjs/tutorial/angularjs-interview-questions-sample-answers)
+* [29 AngularJS Interview Questions - Can You Answer Them All? Great Article from Codementor](https://www.codementor.io/angularjs/tutorial/angularjs-interview-questions-sample-answers)
 * [AngularJS interview questions and answers for experienced developers](http://www.web-technology-experts-notes.in/2014/11/angularjs-interview-questions-and-answers-for-experienced.html)
 * [AngularJS Interview Questions which have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of AngularJS](http://www.tutorialspoint.com/angularjs/angularjs_interview_questions.htm)
 * [This article discusses the top 50 Most occurred AngularJS interview question with answers](http://www.codeproject.com/Articles/891718/AngularJS-Interview-Questions-and-Answers)
@@ -349,7 +349,7 @@ template: docs
 ### Java
 
 * [List of Java programs for interview Categoriwise](https://onurdesk.com/category/interview/interview-program-java/)
-* [115 Java Interview Questions and Answers – The ULTIMATE List](http://www.javacodegeeks.com/2014/04/java-interview-questions-and-answers.html)
+* [115 Java Interview Questions and Answers - The ULTIMATE List](http://www.javacodegeeks.com/2014/04/java-interview-questions-and-answers.html)
 * [37 Java Interview Questions to Practice With from Codementor](https://www.codementor.io/java/tutorial/java-interview-sample-questions-answers)
 * [21 Essential Java Interview Questions](http://www.toptal.com/java/interview-questions)
 * [Top 30 Core Java Interview Questions](https://www.janbasktraining.com/blog/core-java-interview-questions-answers/)
@@ -672,7 +672,7 @@ template: docs
 * [Top Blockchain Interview Questions](https://intellipaat.com/interview-question/blockchain-interview-questions/)
 * [Blockchain Developer Interview Questions and Answers](https://applicature.com/blog/blockchain-interview-questions)
 * [10 Essential Blockchain Interview Questions ](https://www.toptal.com/blockchain/interview-questions)
-* [Top 30 Blockchain Interview Questions – For Freshers to Experienced](https://data-flair.training/blogs/blockchain-interview-questions/)
+* [Top 30 Blockchain Interview Questions - For Freshers to Experienced](https://data-flair.training/blogs/blockchain-interview-questions/)
 * [Most Frequently Asked Blockchain Interview Questions](https://www.digitalvidya.com/blog/blockchain-interview-questions/)
 
 ## Coding exercises

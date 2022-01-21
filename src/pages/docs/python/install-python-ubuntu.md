@@ -1,3 +1,17 @@
+---
+title: How to install Python 2.7 on Ubuntu 20.04 LTS
+weight: 0
+excerpt: Working commands to install Python 2.7 on Ubuntu 20.04 LTS Linux along with Pip 2 to install and run various server applications.
+seo:
+    title: 'How to install Python 2.7 on Ubuntu 20.04 LTS'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
+
 # How to install Python 2.7 on Ubuntu 20.04 LTS
 
 > Working commands to install Python 2.7 on Ubuntu 20.04 LTS Linux along with Pip 2 to install and run various server applications.
