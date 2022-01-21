@@ -249,7 +249,7 @@ sections:
     actions: []
     type: section_content
   - section_id: tools
-    image_alt: lorem-ipsum
+    image_alt: web tools
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
