@@ -191,12 +191,6 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
           - label: Download PDF
             url: >-
               https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
