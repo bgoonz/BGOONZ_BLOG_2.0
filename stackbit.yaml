@@ -181,7 +181,7 @@ models:
       - name: date
         type: date
         label: Date
-      - name: ''
+      - name: thumb_img
         type: image
     labelField: title
   advanced:
