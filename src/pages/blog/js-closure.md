@@ -2,7 +2,7 @@
 title: graphql
 subtitle: lorem-ipsum
 date: '2022-01-17'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: graphql logo
 excerpt: lorem-ipsum
 seo:
   title: ''
