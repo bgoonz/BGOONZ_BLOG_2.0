@@ -126,6 +126,6 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 -   [`Reflect.has()`](../global_objects/reflect/has)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in</a>

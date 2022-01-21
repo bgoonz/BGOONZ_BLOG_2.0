@@ -610,7 +610,7 @@ Calling a function is just like calling another program, you just write its name
                quit
                echo foo
 
-> Lines 2–4 contain the 'quit' function. Lines 5–7 contain the 'hello' function If you are not absolutely sure about what this script does, please try it!.
+> Lines 2-4 contain the 'quit' function. Lines 5-7 contain the 'hello' function If you are not absolutely sure about what this script does, please try it!.
 
 > Notice that a functions don't need to be declared in any specific order.
 

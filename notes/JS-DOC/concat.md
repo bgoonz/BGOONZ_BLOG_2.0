@@ -122,6 +122,6 @@ The following code concatenates nested arrays and demonstrates retention of refe
 -   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
 -   [`splice`](splice) — add/remove elements from the specified location of the array
 -   [`String.prototype.concat()`](../string/concat)
--   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) – control flattening.
+-   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>

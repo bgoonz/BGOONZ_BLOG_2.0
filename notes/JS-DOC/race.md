@@ -87,7 +87,7 @@ If the iterable contains one or more non-promise value and/or an already settled
     // Promise { <state>: "fulfilled", <value>: 100 }
     // Promise { <state>: "fulfilled", <value>: "non-Promise value" }
 
-### Using Promise.race – examples with setTimeout
+### Using Promise.race - examples with setTimeout
 
     var p1 = new Promise(function(resolve, reject) {
         setTimeout(() => resolve('one'), 500);
@@ -238,6 +238,6 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race</a>
