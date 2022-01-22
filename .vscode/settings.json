@@ -18,5 +18,8 @@
             "notificationsInfoIcon.foreground": "#0D9373",
             "editor.selectionBackground": "#0D937333"
         }
-    }
+    },
+    "cSpell.words": [
+        "algoliasearch"
+    ]
 }
