@@ -168,7 +168,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-                 
                     {
                         "label": "Top Repos",
                         "url": "/docs",
@@ -479,7 +478,7 @@
                 "type": "action"
             },
             {
-                "label": "lorem-ipsum",
+                "label": "Docs",
                 "url": "#",
                 "style": "link",
                 "icon_class": "dev",
