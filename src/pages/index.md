@@ -8,7 +8,7 @@ sections:
     content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js) ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab) ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)\n"
     actions:
       - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
+        url: 'https://bgoonz-blog.netlify.app/docs/faq/contact/'
         style: secondary
         icon_class: linkedin
         new_window: true
@@ -148,10 +148,10 @@ sections:
         image: images/eventloop.gif
       - title: NJ Devils
         image_alt: nj-devils
-        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
+        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
-          - label: lorem-ipsum
-            url: '#'
+          - label: nj-devils link
+            url: 'https://www.allaboutthejersey.com/'
             style: link
             icon_class: dev
             new_window: false
@@ -191,12 +191,6 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
           - label: Download PDF
             url: >-
               https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
@@ -254,9 +248,8 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-    image: images/cool annimation.gif
   - section_id: tools
-    image_alt: lorem-ipsum
+    image_alt: web tools
     image_position: left
     content: |
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase

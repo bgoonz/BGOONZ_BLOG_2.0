@@ -59,6 +59,6 @@ See the table above for the six valid regular expression flags that are allowed 
 ## See also
 
 -   [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
--   [XRegEx flags](https://xregexp.com/flags/) – regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
+-   [XRegEx flags](https://xregexp.com/flags/) - regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag</a>

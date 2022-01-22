@@ -24,12 +24,12 @@ Asymptotic Notation is the hardware independent notation used to tell the time a
 The following are the Asymptotic rates of growth from best to worst:
 
 - constant growth - `O(1)` Runtime is constant and does not grow with `n`
-- logarithmic growth – `O(log n)` Runtime grows logarithmically in proportion to `n`
-- linear growth – `O(n)` Runtime grows directly in proportion to `n`
-- superlinear growth – `O(n log n)` Runtime grows in proportion _and_ logarithmically to `n`
-- polynomial growth – `O(n^c)` Runtime grows quicker than previous all based on `n`
-- exponential growth – `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
-- factorial growth – `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
+- logarithmic growth - `O(log n)` Runtime grows logarithmically in proportion to `n`
+- linear growth - `O(n)` Runtime grows directly in proportion to `n`
+- superlinear growth - `O(n log n)` Runtime grows in proportion _and_ logarithmically to `n`
+- polynomial growth - `O(n^c)` Runtime grows quicker than previous all based on `n`
+- exponential growth - `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
+- factorial growth - `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
   small values of `n`
   [(source: Soumyadeep Debnath, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
   Visualized below; the x-axis representing input size and the y-axis representing complexity:
@@ -499,6 +499,12 @@ Check for issues in your website:
   Check for issues in your code: \* Jest Axe, you can add unit tests for accessibility \* React Axe, test your React application with the axe-core accessibility testing library. Results will show in the Chrome DevTools console. \* eslint-plugin-jsx-a11y, pairing this plugin with an editor lint plugin, you can bake accessibility standards into your application in real-time.
   Check for individual issues: \* Color Contrast checkers \* Use a screen reader \* Use only keyboard to navigate your site
 
+
+
+<details>
+
+<summary>  See More </summary>   
+
 ### <span style="color:red;"> Don't forget:
 
 - None of the tools will replace manual testing
@@ -552,7 +558,7 @@ The `defer` attribute downloads the script while the document is still parsing b
 The `async` attribute downloads the script during parsing the document but will pause the parser to execute the script before it has fully finished parsing. `async` scripts will not necessarily execute in order.
 Note: both attributes must only be used if the script has a `src` attribute (i.e. not an inline script).
 
-```{.sourceCode .html}
+```html
 <script src="myscript.js"></script>
 <script src="myscript.js" defer></script>
 <script src="myscript.js" async></script>
@@ -675,7 +681,7 @@ The BEM methodology is a naming convention for CSS classes in order to keep CSS 
 
 Here is an example with the class names on markup:
 
-```{.sourceCode .html}
+```html
 <nav class="navbar">
   <a href="/" class="navbar__link navbar__link--active"></a>
   <a href="/" class="navbar__link"></a>
@@ -686,7 +692,7 @@ Here is an example with the class names on markup:
 In this case, `navbar` is the Block, `navbar__link` is an Element that makes no sense outside of the `navbar` component, and `navbar__link--active` is a Modifier that indicates a different state for the `navbar__link` Element.
 Since Modifiers are verbose, many opt to use `is-*` flags instead as modifiers.
 
-```{.sourceCode .html}
+```html
 <a href="/" class="navbar__link is-active"></a>
 ```
 
@@ -1681,7 +1687,7 @@ for (const sortedWord in collectedAnagrams) {
 
 ### <span style="color:red;"> Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.
 
-```{.sourceCode .html}
+```html
 <div class="row">
   <div class="col-2"></div>
   <div class="col-7"></div>
@@ -1984,7 +1990,7 @@ A browser is said to "support" a specification if it handles valid documents acc
 
 In HTML, the attribute name is in all lowercase and is given a string invoking a function defined somewhere:
 
-```{.sourceCode .html}
+```html
 <button onclick="handleClick()"></button>
 ```
 
@@ -1996,7 +2002,7 @@ In React, the attribute name is camelCase and are passed the function reference 
 
 In HTML, `false` can be returned to prevent default behavior, whereas in React `preventDefault` has to be called explicitly.
 
-```{.sourceCode .html}
+```html
 <a href="#" onclick="console.log('The link was clicked.'); return false" />
 ```
 
@@ -2217,7 +2223,7 @@ const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
 Landmark roles is a way to identify different sections of a page like the main content or a navigation region. The Landmarks helps assistive technology users to navigate a page, allowing them skip over areas of it.
 For example,
 
-```{.sourceCode .html}
+```html
 <div id="header" role="banner">Header of the Page</div>
 <div id="content" role="main">Main Content Goes Here</div>
 ```
@@ -3556,7 +3562,7 @@ myObject = "hello"; // Error
 
 The virtual DOM (VDOM) is a representation of the real DOM in the form of plain JavaScript objects. These objects have properties to describe the real DOM nodes they represent: the node name, its attributes, and child nodes.
 
-```{.sourceCode .html}
+```html
 <div class="counter">
   <h1>0</h1>
   <button>-</button>
@@ -4330,3 +4336,7 @@ const myObject = {}
 myObject.prop = "hello!" // No error
 myObject = "hello" // Error
 ```
+
+
+
+</details>

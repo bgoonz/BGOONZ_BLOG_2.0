@@ -1,10 +1,10 @@
 ---
-title: lorem-ipsum
+title: Python Functions
 weight: 0
-excerpt: lorem-ipsum
+excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement.
 seo:
     title: ''
-    description: ''
+    description: 'When creating a function using the def statement, you can specify what the return value should be with a return statement.'
     robots: []
     extra: []
 template: docs

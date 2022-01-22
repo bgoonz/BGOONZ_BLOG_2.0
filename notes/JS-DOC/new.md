@@ -165,6 +165,6 @@ Instead of passing a literal string or integer value when creating the new objec
 -   [`Reflect.construct()`](../global_objects/reflect/construct)
 -   [`Object`](../global_objects/object)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a>

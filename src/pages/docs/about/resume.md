@@ -123,7 +123,7 @@ _**An**_[_**app**_](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadma
 
 Six-month immersive software development course with a focus on [full stack web development](https://gist.github.com/bgoonz/17494dab0042a6f70eda7929c08c878f). Over 2000 hours of work invested including class time, homework, and projects.
 
-**B.S.** [**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/) **, TCNJ, Ewing NJ** **2014 – 2019**
+**B.S.** [**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/) **, TCNJ, Ewing NJ** **2014 - 2019**
 
 [2 **Curriculum link**](https://github.com/bgoonz/random-static-html-page-deploy/blob/master/ElectricalEngineeringCurriculum.pdf)
 

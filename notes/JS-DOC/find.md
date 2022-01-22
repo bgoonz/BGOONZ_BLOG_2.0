@@ -170,10 +170,10 @@ No
 
 ## See also
 
--   [`Array.prototype.findIndex()`](findindex) – find and return an index
--   [`Array.prototype.includes()`](includes) – test whether a value exists in the array
--   [`Array.prototype.filter()`](filter) – remove all non-matching elements
--   [`Array.prototype.every()`](every) – test all elements
--   [`Array.prototype.some()`](some) – test until one element matches
+-   [`Array.prototype.findIndex()`](findindex) - find and return an index
+-   [`Array.prototype.includes()`](includes) - test whether a value exists in the array
+-   [`Array.prototype.filter()`](filter) - remove all non-matching elements
+-   [`Array.prototype.every()`](every) - test all elements
+-   [`Array.prototype.some()`](some) - test until one element matches
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a>

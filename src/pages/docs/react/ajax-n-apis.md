@@ -11,7 +11,7 @@ template: docs
 ---
 
 
-# AJAX and APIs – React
+# AJAX and APIs - React
 
 > ## Excerpt
 > A JavaScript library for building user interfaces
