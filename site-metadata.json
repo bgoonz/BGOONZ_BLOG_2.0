@@ -480,7 +480,7 @@
             {
                 "label": "Docs",
                 "url": "https://bryan-guner.gitbook.io/my-docs/",
-                "style": "link",
+                "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
                 "no_follow": false
