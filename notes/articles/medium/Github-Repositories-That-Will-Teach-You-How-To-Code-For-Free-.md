@@ -756,7 +756,7 @@ A list of workshopper/adventure-based tutorials for various things. Inspired by 
 
 ### The Art of Command Line
 
-_Note: I'm planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it's very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. –_<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>_,_ <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>_. Thank you!_
+_Note: I'm planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it's very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. -_<a href="https://github.com/jlevy" class="markup--anchor markup--p-anchor"><em>jlevy</em></a>_,_ <a href="https://www.holloway.com/" class="markup--anchor markup--p-anchor"><em>Holloway</em></a>_. Thank you!_
 
 -   <span id="714a"><a href="https://github.com/jlevy/the-art-of-command-line#meta" class="markup--anchor markup--li-anchor">Meta</a></span>
 -   <span id="eb25"><a href="https://github.com/jlevy/the-art-of-command-line#basics" class="markup--anchor markup--li-anchor">Basics</a></span>

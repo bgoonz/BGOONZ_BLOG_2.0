@@ -53,6 +53,6 @@ The snippet below illustrates how to find and filter (thus causing data loss) a 
 ## See also
 
 -   [`JSON.stringify`](../global_objects/json/stringify)
--   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) – Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
+-   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) - Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value</a>

@@ -764,7 +764,7 @@ template: docs
 
 -   [Mutually Human Software](https://www.mutuallyhuman.com/) | MI, OH, WA | Collaborative problem analysis and design exercise, pairing exercise
 
--   [Nanobox](https://nanobox.io/) | Lehi, UT; Remote | A phone/video/person-to–person interview with a look at past projects (github, bitbucket, source code, etc.)
+-   [Nanobox](https://nanobox.io/) | Lehi, UT; Remote | A phone/video/person-to-person interview with a look at past projects (github, bitbucket, source code, etc.)
 
 -   [Native Instruments](https://www.native-instruments.com/) | Berlin, Germany | Takehome programming assignment and personal interviews with part of the hiring team.
 
@@ -798,7 +798,7 @@ template: docs
 
 -   [Noa](https://www.noa.one/) | Berlin, Germany; San Francisco, CA | 1 technical chat, 2-3 cultural chats with colleagues from different departments in the team, if these work a pair programming exercise
 
--   [NodeSource](http://nodesource.com/careers) | Remote | A person-to–person walk through of a past project of yours
+-   [NodeSource](http://nodesource.com/careers) | Remote | A person-to-person walk through of a past project of yours
 
 -   [Nomoko,camera](https://www.nomoko.world/jobs) | Zurich, Switzerland | Three interrogations
 
@@ -1048,7 +1048,7 @@ template: docs
 
 -   [SocialCops](http://www.socialcops.com/) | New Delhi, India | A mini project (to be done within 8 days), followed by a discussion with the team you're applying to. Then as the final step, a call with one of the founders.
 
--   [Softwear](http://nl.softwear.nl/vacatures) | Amsterdam, Netherlands | Writing software for the fashion industry – remotely – in an international team.
+-   [Softwear](http://nl.softwear.nl/vacatures) | Amsterdam, Netherlands | Writing software for the fashion industry - remotely - in an international team.
 
 -   [Sogilis](http://sogilis.com/) | Grenoble, France | Discussion about interests, practices, and motivation. Presentation/code review/pair programming on a personal or professional project.
 

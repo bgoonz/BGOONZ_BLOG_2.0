@@ -2143,16 +2143,15 @@ To replace a child with node within a parent, run these steps:
 12. Set removedNodes to « child ».
 13. [Remove](https://dom.spec.whatwg.org/#concept-node-remove) child with the _suppress observers flag_ set.
 
-
     The above can only be false if child is node.
 
-12. Let nodes be node’s [children](https://dom.spec.whatwg.org/#concept-tree-child) if node is a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node); otherwise « node ».
+14. Let nodes be node’s [children](https://dom.spec.whatwg.org/#concept-tree-child) if node is a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node); otherwise « node ».
 
-13. [Insert](https://dom.spec.whatwg.org/#concept-node-insert) node into parent before referenceChild with the _suppress observers flag_ set.
+15. [Insert](https://dom.spec.whatwg.org/#concept-node-insert) node into parent before referenceChild with the _suppress observers flag_ set.
 
-14. [Queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with nodes, removedNodes, previousSibling, and referenceChild.
+16. [Queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with nodes, removedNodes, previousSibling, and referenceChild.
 
-15. Return child.
+17. Return child.
 
 To replace all with a node within a parent, run these steps:
 
@@ -2203,18 +2202,17 @@ To remove a node, with an optional _suppress observers flag_, run these steps:
 
 19. If node is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with node, callback name "`disconnectedCallback`", and an empty argument list.
 
-
     It is intentional for now that [custom](https://dom.spec.whatwg.org/#concept-element-custom) [elements](https://dom.spec.whatwg.org/#concept-element) do not get parent passed. This might change in the future if there is a need.
 
-18. For each [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) descendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), then:
+20. For each [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) descendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), then:
 
-1.  Run the [removing steps](https://dom.spec.whatwg.org/#concept-node-remove-ext) with descendant.
-1.  If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name "`disconnectedCallback`", and an empty argument list.
-1.  For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
+21. Run the [removing steps](https://dom.spec.whatwg.org/#concept-node-remove-ext) with descendant.
+22. If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name "`disconnectedCallback`", and an empty argument list.
+23. For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
 
-1.  If _suppress observers flag_ is unset, then [queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with « », « node », oldPreviousSibling, and oldNextSibling.
+24. If _suppress observers flag_ is unset, then [queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with « », « node », oldPreviousSibling, and oldNextSibling.
 
-1.  Run the [children changed steps](https://dom.spec.whatwg.org/#concept-node-children-changed-ext) for parent.
+25. Run the [children changed steps](https://dom.spec.whatwg.org/#concept-node-children-changed-ext) for parent.
 
 #### 4.2.4. Mixin `[NonElementParentNode](https://dom.spec.whatwg.org/#nonelementparentnode)`[](https://dom.spec.whatwg.org/#interface-nonelementparentnode)
 
@@ -9222,11 +9220,13 @@ The `deleteContents()` method steps are:
 4.  Let nodes to remove be a list of all the [nodes](https://dom.spec.whatwg.org/#concept-node) that are [contained](https://dom.spec.whatwg.org/#contained) in [this](https://webidl.spec.whatwg.org/#this), in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), omitting any [node](https://dom.spec.whatwg.org/#concept-node) whose [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is also [contained](https://dom.spec.whatwg.org/#contained) in [this](https://webidl.spec.whatwg.org/#this).
 5.  If original start node is an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, set new node to original start node and new offset to original start offset.
 6.  Otherwise:
+
     1.  Let reference node equal original start node.
     2.  While reference node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not null and is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, set reference node to its [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
     3.  Set new node to the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of reference node, and new offset to one plus the [index](https://dom.spec.whatwg.org/#concept-tree-index) of reference node.
 
         If reference node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) were null, it would be the [root](https://dom.spec.whatwg.org/#concept-range-root) of [this](https://webidl.spec.whatwg.org/#this), so would be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, and we could not reach this point.
+
 7.  If original start node is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original start node, offset original start offset, count original start node’s [length](https://dom.spec.whatwg.org/#concept-node-length) minus original start offset, data the empty string.
 8.  For each node in nodes to remove, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), [remove](https://dom.spec.whatwg.org/#concept-node-remove) node.
 9.  If original end node is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original end node, offset 0, count original end offset and data the empty string.
@@ -9252,12 +9252,10 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
 9.  Let last partially contained child be null.
 10. If original end node is _not_ an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original start node, set last partially contained child to the last [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range.
 
-
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
 12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-
 
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
@@ -9271,7 +9269,6 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
 
 18. If first partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
-
     In this case, first partially contained child is original start node.
 
     1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of original start node.
@@ -9279,15 +9276,14 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
     4.  [Replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original start node, offset original start offset, count original start node’s [length](https://dom.spec.whatwg.org/#concept-node-length) minus original start offset, and data the empty string.
 
-16. Otherwise, if first partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
-1.  Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  For each contained child in contained children, [append](https://dom.spec.whatwg.org/#concept-node-append) contained child to fragment.
-1.  If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
+19. Otherwise, if first partially contained child is not null:
+20. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
+21. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+22. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
+23. Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
+24. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+25. For each contained child in contained children, [append](https://dom.spec.whatwg.org/#concept-node-append) contained child to fragment.
+26. If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
     In this case, last partially contained child is original end node.
 
@@ -9296,14 +9292,14 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
     4.  [Replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original end node, offset 0, count original end offset, and data the empty string.
 
-19. Otherwise, if last partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
-1.  Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (new node, new offset).
-1.  Return fragment.
+27. Otherwise, if last partially contained child is not null:
+28. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
+29. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+30. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
+31. Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
+32. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+33. Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (new node, new offset).
+34. Return fragment.
 
 [Range/extractContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents 'The Range.extractContents() method moves contents of the Range from the document tree into a DocumentFragment.')
 
@@ -9344,17 +9340,14 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
 9.  Let last partially contained child be null.
 10. If original end node is _not_ an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original start node, set last partially contained child to the last [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range.
 
-
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
 12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
 13. If first partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
 
     In this case, first partially contained child is original start node.
 
@@ -9363,16 +9356,15 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
 
 14. Otherwise, if first partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
-1.  Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  For each contained child in contained children:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of contained child with the _clone children flag_ set.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
+15. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
+16. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+17. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
+18. Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
+19. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+20. For each contained child in contained children:
+21. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of contained child with the _clone children flag_ set.
+22. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+23. If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
     In this case, last partially contained child is original end node.
 
@@ -9380,13 +9372,13 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
     2.  Set the [data](https://dom.spec.whatwg.org/#concept-cd-data) of clone to the result of [substringing data](https://dom.spec.whatwg.org/#concept-cd-substring) with node original end node, offset 0, and count original end offset.
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
 
-17. Otherwise, if last partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
-1.  Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  Return fragment.
+24. Otherwise, if last partially contained child is not null:
+25. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
+26. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+27. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
+28. Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
+29. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+30. Return fragment.
 
 [Range/cloneContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/cloneContents 'The Range.cloneContents() returns a DocumentFragment copying the objects of type Node included in the Range.')
 
@@ -9497,7 +9489,7 @@ The `cloneRange()` method steps are to return a new [live range](https://dom.spe
 
 [Range/detach](https://developer.mozilla.org/en-US/docs/Web/API/Range/detach 'The Range.detach() method does nothing. It used to disable the Range object and enable the browser to release associated resources. The method has been kept for compatibility.')
 
-Firefox1–15Safari1+Chrome1+
+Firefox1-15Safari1+Chrome1+
 
 ---
 
@@ -9509,7 +9501,7 @@ Edge (Legacy)12+IE9+
 
 ---
 
-Firefox for Android4–15iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
+Firefox for Android4-15iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
 The `detach()` method steps are to do nothing. Its functionality (disabling a `[Range](https://dom.spec.whatwg.org/#range)` object) was removed, but the method itself is preserved for compatibility.
 

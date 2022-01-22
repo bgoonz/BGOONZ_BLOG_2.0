@@ -65,6 +65,6 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Left shift assignment operator](left_shift_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift</a>

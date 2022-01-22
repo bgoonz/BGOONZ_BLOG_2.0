@@ -1,10 +1,10 @@
 ---
-title: Mini Projects
+title: Mini Projects 2
 excerpt: >-
     In this section you'll learn how to add syntax highlighting, examples,
     callouts and much more.
 seo:
-    title: Mini Projects
+    title: Mini Projects 2
     description: This is the Mini Projects page
     extra:
         - name: 'og:type'
@@ -156,7 +156,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>  </h1>
+<h1> Fractions Website </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://kguner-fractions-website.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -173,7 +173,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>   </h1>
+<h1>  Dev Journal </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://dev-journal42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -192,7 +192,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>  </h1>
+<h1> Blood Sugars for  </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sanity-gatsby-hey-sugar-5.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -209,7 +209,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>   </h1>
+<h1> Norwex Ecommerce  </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://friendly-amaranth-51833.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -228,7 +228,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>  </h1>
+<h1> Sidebar Blog </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sidebar-blog.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -245,7 +245,7 @@ weight: 0
 <br>
 <hr>
 <br>
-<h1>   </h1>
+<h1>  Markdown Templates  </h1>
 <br>
 <iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
                                                        
@@ -256,78 +256,4 @@ weight: 0
 
 <hr>
 <br>
-
-
-
-<br>
-<hr>
-<br>
-<hr>
-<br>
-<h1>  </h1>
-<br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="  " height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-                                                       
-<br>
-<br>
-
-<hr>
-
-<hr>
-<br>
-
-<br>
-<hr>
-<br>
-<hr>
-<br>
-<h1>   </h1>
-<br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="  " height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-                                                       
-<br>
-<br>
-
-<hr>
-
-<hr>
-<br>
-
-
-
-<br>
-<hr>
-<br>
-<hr>
-<br>
-<h1>  </h1>
-<br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="  " height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-                                                       
-<br>
-<br>
-
-<hr>
-
-<hr>
-<br>
-
-<br>
-<hr>
-<br>
-<hr>
-<br>
-<h1>   </h1>
-<br>
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="  " height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-                                                       
-<br>
-<br>
-
-<hr>
-
-<hr>
-<br>
-
-
 
