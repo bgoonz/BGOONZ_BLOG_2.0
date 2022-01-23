@@ -543,7 +543,7 @@ However, this can be amended by putting the line break after the arrow or using 
 ### Parsing order
 
 Although the arrow in an arrow function is not an operator, arrow functions have special parsing rules that interact differently with [operator precedence](../operators/operator_precedence) compared to regular functions.
-
+```js
     let callback;
 
     callback = callback || function() {}; // ok
