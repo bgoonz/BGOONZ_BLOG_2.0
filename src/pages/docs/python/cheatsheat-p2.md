@@ -1,5 +1,5 @@
 ---
-title: Python Cheat Sheet
+title: Python Cheat Sheet Part 2
 weight: 0
 excerpt: lorem-ipsum
 seo:
