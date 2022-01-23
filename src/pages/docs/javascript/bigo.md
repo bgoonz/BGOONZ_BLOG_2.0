@@ -1,5 +1,5 @@
 ---
-title: A Very Quick Guide To Calculating Big O Computational Complexity
+title: g Big O Computational Complexity
 weight: 0
 excerpt: A quick guide to big O
 seo:
