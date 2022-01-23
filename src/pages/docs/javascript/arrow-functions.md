@@ -409,11 +409,11 @@ For example `call`, `apply` and [`bind`](../global_objects/function/bind) work a
     // bind
     const bound = add.bind(obj)
     console.log(bound(1, 2, 3)) // result 2026
-
+```
 Perhaps the greatest benefit of using Arrow functions is with DOM-level methods (setTimeout, setInterval, addEventListener) that usually required some kind of closure, call, apply or bind to ensure the function executed in the proper scope.
 
 **Traditional Example:**
-
+```js
     let obj = {
         count : 10,
         doSomethingLater : function (){
