@@ -443,7 +443,7 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
 ### No binding of `arguments`
 
 Arrow functions do not have their own [`arguments` object](arguments). Thus, in this example, `arguments` is a reference to the arguments of the enclosing scope:
-
+```js
     let arguments = [1, 2, 3];
     let arr = () => arguments[0];
 
@@ -455,7 +455,7 @@ Arrow functions do not have their own [`arguments` object](arguments). Thus, in 
     }
 
     foo(3); // 3 + 3 = 6
-
+```
 In most cases, using [rest parameters](rest_parameters) is a good alternative to using an `arguments` object.
 
     function foo(n) {
