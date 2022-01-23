@@ -257,7 +257,7 @@ Likewise, if the body requires **additional lines** of processing, you'll need t
       let chuck = 42;
       return a + b + chuck;
     }
-
+```
 And finally, for **named functions** we treat arrow expressions like variables
 
     // Traditional Function
