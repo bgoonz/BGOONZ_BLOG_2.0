@@ -439,7 +439,7 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
     }
 
     obj.doSomethingLater();
-
+```
 ### No binding of `arguments`
 
 Arrow functions do not have their own [`arguments` object](arguments). Thus, in this example, `arguments` is a reference to the arguments of the enclosing scope:
