@@ -598,7 +598,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
         console.log('I happen later');
       }, 1);
     }, 1);
-
+```
 ## Specifications
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
