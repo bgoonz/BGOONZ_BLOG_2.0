@@ -3,7 +3,7 @@ title: Jamstack Resources
 weight: 0
 excerpt: Jamstack Resources
 seo:
-  title: ''
+  title: 'Jamstack Resources'
   description: ''
   robots: []
   extra: []
