@@ -162,7 +162,7 @@ log('hello'); // hello
 
 To reiterate, fat arrow functions don't have their own `this` and `arguments`. Having said that, you can still get all arguments passed into the arrow functions using rest parameters (also known as spread operator):
 
-```
+```js
 function log(msg) {
   const print = (...args) => console.log(args[0]);
   print(`LOG: ${msg}`);
