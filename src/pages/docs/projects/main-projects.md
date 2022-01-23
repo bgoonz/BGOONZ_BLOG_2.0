@@ -849,3 +849,5 @@ template: docs
 ---
 
 - [https://github.com/bgoonz/atlassian-templates](https://github.com/bgoonz/atlassian-templates)
+
+</details>
