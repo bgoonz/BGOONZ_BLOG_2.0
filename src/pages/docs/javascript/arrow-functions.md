@@ -59,7 +59,7 @@ const getVerifiedToken = selector => {
 
 Here's the really fun bit. Because our function has only one statement, we can still get rid of the `{}` and it will look almost exactly like [CoffeeScript](http://coffeescript.org/) syntax:
 
-```
+```js
 const getVerifiedToken = selector =>
   getUsers()
     .then(users => users[0])
