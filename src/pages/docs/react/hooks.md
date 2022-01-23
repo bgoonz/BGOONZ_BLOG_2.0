@@ -1,3 +1,14 @@
+---
+title: React Class Components Demo
+weight: 0
+excerpt: React Class Components Demo
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+template: docs
+---
 
 
 
