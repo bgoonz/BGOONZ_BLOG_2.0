@@ -4,7 +4,7 @@ weight: 0
 excerpt: Jamstack Resources
 seo:
   title: 'Jamstack Resources'
-  description: ''
+  description: 'Jamstack Resources'
   robots: []
   extra: []
 template: docs
