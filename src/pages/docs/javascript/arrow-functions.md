@@ -201,7 +201,7 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:  
 NOTE: Each step along the way is a valid "arrow function"
-
+```js
     // Traditional Function
     function (a){
       return a + 100;
