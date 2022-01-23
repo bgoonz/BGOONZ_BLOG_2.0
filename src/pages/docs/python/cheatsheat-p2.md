@@ -1,4 +1,22 @@
-
+---
+title: Python Cheat Sheet
+weight: 0
+excerpt: lorem-ipsum
+seo:
+    title: python cheat sheet
+    description: cheat sheet for python developers
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/py-code.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:title'
+          value: python cheat sheet
+          keyName: name
+          relativeUrl: false
+template: docs
+---
 
 
 
