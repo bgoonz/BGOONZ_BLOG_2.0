@@ -134,7 +134,7 @@ As stated previously, arrow function expressions are best suited for non-method 
 
     'use strict';
 
-    var obj = { // does not create a new scope
+    let obj = { // does not create a new scope
       i: 10,
       b: () => console.log(this.i, this),
       c: function() {
@@ -149,7 +149,7 @@ Arrow functions do not have their own `this`. Another example involving [`Object
 
     'use strict';
 
-    var obj = {
+    let obj = {
       a: 10
     };
 
@@ -170,7 +170,7 @@ For example `call`, `apply` and [`bind`](../global_objects/function/bind) work a
     // Traditional Example
     // ----------------------
     // A simplistic object with its very own "this".
-    var obj = {
+    let obj = {
         num: 100
     }
 
@@ -178,21 +178,21 @@ For example `call`, `apply` and [`bind`](../global_objects/function/bind) work a
     window.num = 2020; // yikes!
 
     // A simple traditional function to operate on "this"
-    var add = function (a, b, c) {
+    let add = function (a, b, c) {
       return this.num + a + b + c;
     }
 
     // call
-    var result = add.call(obj, 1, 2, 3) // establishing the scope as "obj"
+    let result = add.call(obj, 1, 2, 3) // establishing the scope as "obj"
     console.log(result) // result 106
 
     // apply
     const arr = [1, 2, 3]
-    var result = add.apply(obj, arr) // establishing the scope as "obj"
+    let result = add.apply(obj, arr) // establishing the scope as "obj"
     console.log(result) // result 106
 
     // bind
-    var result = add.bind(obj) // establishing the scope as "obj"
+    let result = add.bind(obj) // establishing the scope as "obj"
     console.log(result(1, 2, 3)) // result 106
 
 With Arrow functions, since our `add` function is essentially created on the `window` (global) scope, it will assume `this` is the window.
@@ -202,7 +202,7 @@ With Arrow functions, since our `add` function is essentially created on the `wi
     // ----------------------
 
     // A simplistic object with its very own "this".
-    var obj = {
+    let obj = {
         num: 100
     }
 
@@ -210,7 +210,7 @@ With Arrow functions, since our `add` function is essentially created on the `wi
     window.num = 2020; // yikes!
 
     // Arrow Function
-    var add = (a, b, c) => this.num + a + b + c;
+    let add = (a, b, c) => this.num + a + b + c;
 
     // call
     console.log(add.call(obj, 1, 2, 3)) // result 2026
@@ -227,7 +227,7 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
 
 **Traditional Example:**
 
-    var obj = {
+    let obj = {
         count : 10,
         doSomethingLater : function (){
             setTimeout(function(){ // the function executes on the window scope
@@ -241,7 +241,7 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
 
 **Arrow Example:**
 
-    var obj = {
+    let obj = {
         count : 10,
         doSomethingLater : function(){ // of course, arrow functions are not suited for methods
             setTimeout( () => { // since the arrow function was created within the "obj", it assumes the object's "this"
@@ -257,13 +257,13 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
 
 Arrow functions do not have their own [`arguments` object](arguments). Thus, in this example, `arguments` is a reference to the arguments of the enclosing scope:
 
-    var arguments = [1, 2, 3];
-    var arr = () => arguments[0];
+    let arguments = [1, 2, 3];
+    let arr = () => arguments[0];
 
     arr(); // 1
 
     function foo(n) {
-      var f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
+      let f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
       return f();
     }
 
@@ -272,7 +272,7 @@ Arrow functions do not have their own [`arguments` object](arguments). Thus, in 
 In most cases, using [rest parameters](rest_parameters) is a good alternative to using an `arguments` object.
 
     function foo(n) {
-      var f = (...args) => args[0] + n;
+      let f = (...args) => args[0] + n;
       return f(10);
     }
 
@@ -282,14 +282,14 @@ In most cases, using [rest parameters](rest_parameters) is a good alternative to
 
 Arrow functions cannot be used as constructors and will throw an error when used with `new`.
 
-    var Foo = () => {};
-    var foo = new Foo(); // TypeError: Foo is not a constructor
+    let Foo = () => {};
+    let foo = new Foo(); // TypeError: Foo is not a constructor
 
 ### Use of `prototype` property
 
 Arrow functions do not have a `prototype` property.
 
-    var Foo = () => {};
+    let Foo = () => {};
     console.log(Foo.prototype); // undefined
 
 ### Use of the `yield` keyword
@@ -302,50 +302,50 @@ Arrow functions can have either a "concise body" or the usual "block body".
 
 In a concise body, only an expression is specified, which becomes the implicit return value. In a block body, you must use an explicit `return` statement.
 
-    var func = x => x * x;
+    let func = x => x * x;
     // concise body syntax, implied "return"
 
-    var func = (x, y) => { return x + y; };
+    let func = (x, y) => { return x + y; };
     // with block body, explicit "return" needed
 
 ### Returning object literals
 
 Keep in mind that returning object literals using the concise body syntax `params => {object:literal}` will not work as expected.
 
-    var func = () => { foo: 1 };
+    let func = () => { foo: 1 };
     // Calling func() returns undefined!
 
-    var func = () => { foo: function() {} };
+    let func = () => { foo: function() {} };
     // SyntaxError: function statement requires a name
 
 This is because the code inside braces ({}) is parsed as a sequence of statements (i.e. `foo` is treated like a label, not a key in an object literal).
 
 You must wrap the object literal in parentheses:
 
-    var func = () => ({ foo: 1 });
+    let func = () => ({ foo: 1 });
 
 ### Line breaks
 
 An arrow function cannot contain a line break between its parameters and its arrow.
 
-    var func = (a, b, c)
+    let func = (a, b, c)
       => 1;
     // SyntaxError: expected expression, got '=>'
 
 However, this can be amended by putting the line break after the arrow or using parentheses/braces as seen below to ensure that the code stays pretty and fluffy. You can also put line breaks between arguments.
 
-    var func = (a, b, c) =>
+    let func = (a, b, c) =>
       1;
 
-    var func = (a, b, c) => (
+    let func = (a, b, c) => (
       1
     );
 
-    var func = (a, b, c) => {
+    let func = (a, b, c) => {
       return 1
     };
 
-    var func = (
+    let func = (
       a,
       b,
       c
@@ -377,7 +377,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
     // Returns "foobar"
     // (this is an Immediately Invoked Function Expression)
 
-    var simple = a => a > 15 ? 15 : a;
+    let simple = a => a > 15 ? 15 : a;
     simple(16); // 15
     simple(10); // 10
 
@@ -385,15 +385,15 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
     // Easy array filtering, mapping, ...
 
-    var arr = [5, 6, 13, 0, 1, 18, 23];
+    let arr = [5, 6, 13, 0, 1, 18, 23];
 
-    var sum = arr.reduce((a, b) => a + b);
+    let sum = arr.reduce((a, b) => a + b);
     // 66
 
-    var even = arr.filter(v => v % 2 == 0);
+    let even = arr.filter(v => v % 2 == 0);
     // [6, 0, 18]
 
-    var double = arr.map(v => v * 2);
+    let double = arr.map(v => v * 2);
     // [10, 12, 26, 0, 2, 36, 46]
 
     // More concise promise chains
