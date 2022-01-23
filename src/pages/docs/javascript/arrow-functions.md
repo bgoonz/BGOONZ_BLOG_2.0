@@ -281,12 +281,12 @@ Multiple params require parentheses. With simple expression return is not needed
     (param1, paramN) => expression
 
 Multiline statements require body brackets and return:
-
+```js
     param => {
       let a = 1;
       return a + param;
     }
-
+```
 Multiple params require parentheses. Multiline statements require body brackets and return:
 
     (param1, paramN) => {
