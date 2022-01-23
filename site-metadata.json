@@ -168,7 +168,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-                 
                     {
                         "label": "Top Repos",
                         "url": "/docs",
@@ -466,6 +465,14 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false
             }
         ],
         "links": [
@@ -477,6 +484,14 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
+            },
+            {
+                "label": "Docs",
+                "url": "https://bryan-guner.gitbook.io/my-docs/",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false
             },
             {
                 "label": "lorem-ipsum",
