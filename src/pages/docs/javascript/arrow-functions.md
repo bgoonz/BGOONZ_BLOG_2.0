@@ -382,7 +382,7 @@ For example `call`, `apply` and [`bind`](../global_objects/function/bind) work a
     let result = add.bind(obj) // establishing the scope as "obj"
     console.log(result(1, 2, 3)) // result 106
 
-With Arrow functions, since our `add` function is essentially created on the `window` (global) scope, it will assume `this` is the window.
+//With Arrow functions, since our `add` function is essentially created on the `window` (global) scope, it will assume `this` is the window.
 
     // ----------------------
     // Arrow Example
