@@ -599,25 +599,6 @@ Although the arrow in an arrow function is not an operator, arrow functions have
       }, 1);
     }, 1);
 ```
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
-
-`Arrow_functions`
-
-45
-
-12
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-No
-
 32
 
 10
