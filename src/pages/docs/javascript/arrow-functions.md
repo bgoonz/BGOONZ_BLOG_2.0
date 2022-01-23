@@ -259,7 +259,7 @@ Likewise, if the body requires **additional lines** of processing, you'll need t
     }
 ```
 And finally, for **named functions** we treat arrow expressions like variables
-
+```js
     // Traditional Function
     function bob (a){
       return a + 100;
@@ -267,7 +267,7 @@ And finally, for **named functions** we treat arrow expressions like variables
 
     // Arrow Function
     let bob = a => a + 100;
-
+```
 ## Syntax
 
 ### Basic syntax
