@@ -1,10 +1,10 @@
 ---
 title: Flow Control
 weight: 0
-excerpt: Flow Control
+excerpt: These operators evaluate to True or False depending on the values you give them.
 seo:
     title: 'Flow Control'
-    description: ''
+    description: 'These operators evaluate to True or False depending on the values you give them.'
     robots: []
     extra: []
 template: docs
