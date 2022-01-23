@@ -3,7 +3,7 @@ title: Flow Control
 weight: 0
 excerpt: Flow Control
 seo:
-    title: ''
+    title: 'Flow Control'
     description: ''
     robots: []
     extra: []
