@@ -22,7 +22,7 @@ template: docs
 
 
 
-# Rendering Elements&#xA;&#xA;
+# Rendering Elements
 
 
 
