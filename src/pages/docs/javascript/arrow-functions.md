@@ -331,7 +331,7 @@ As stated previously, arrow function expressions are best suited for non-method 
 
     obj.b(); // prints undefined, Window {...} (or the global object)
     obj.c(); // prints 10, Object {...}
-
+```
 Arrow functions do not have their own `this`. Another example involving [`Object.defineProperty()`](../global_objects/object/defineproperty):
 
     'use strict';
