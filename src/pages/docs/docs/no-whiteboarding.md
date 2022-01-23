@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-## A - C&#xA;&#xA;
+## A - C
 
 -   [Ableton](https://www.ableton.com/en/about) | Berlin, Germany | Take-home programming task (discussed via Skype), then pair programming and debugging session on-site
 
