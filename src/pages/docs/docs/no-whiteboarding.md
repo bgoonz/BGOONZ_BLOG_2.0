@@ -3,7 +3,7 @@ title: Companies that don't whiteboard
 weight: 0
 excerpt: Companies that don't whiteboard
 seo:
-    title: ''
+    title: 'Companies that don't whiteboard'
     description: ''
     robots: []
     extra: []
