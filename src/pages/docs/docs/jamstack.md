@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Jamstack Resources
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Jamstack Resources
 seo:
   title: ''
   description: ''
