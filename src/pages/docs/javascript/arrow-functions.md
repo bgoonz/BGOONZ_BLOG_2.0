@@ -73,7 +73,7 @@ Yep, the example above is completely valid ES2015 syntax (I was also surprised t
 
 There's one caveat, however, with omitting `{}` from arrow functions -- how do you return an empty object, eg `{}`?
 
-```
+```js
 const emptyObject = () => {};
 emptyObject(); // ?
 
