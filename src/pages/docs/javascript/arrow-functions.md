@@ -352,7 +352,7 @@ Arrow functions do not have their own `this`. Another example involving [`Object
 The `call`, `apply` and [`bind`](../global_objects/function/bind) methods are **NOT suitable** for Arrow functions -- as they were designed to allow methods to execute within different scopes -- because **Arrow functions establish "this" based on the scope the Arrow function is defined within.**
 
 For example `call`, `apply` and [`bind`](../global_objects/function/bind) work as expected with Traditional functions, because we establish the scope for each of the methods:
-
+```js
     // ----------------------
     // Traditional Example
     // ----------------------
