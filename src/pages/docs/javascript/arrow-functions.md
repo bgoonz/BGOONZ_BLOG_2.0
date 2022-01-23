@@ -81,7 +81,7 @@ emptyObject(); // ?
 
 Unfortunately there's no way to distinguish between empty block `{}` and an object `{}`. Because of that `emptyObject()` evaluates to `undefined` and `{}` interpreted as empty block. To return an empty object from fat arrow functions you have to surround it with brackets like so `({})`:
 
-```
+```js
 const emptyObject = () => ({});
 emptyObject(); // {}
 
@@ -89,7 +89,7 @@ emptyObject(); // {}
 
 Here's all of the above together:
 
-```
+```js
 function () { return 1; }
 () => { return 1; }
 () => 1
