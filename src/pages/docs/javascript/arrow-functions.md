@@ -243,7 +243,7 @@ For example, if you have **multiple arguments** or **no arguments**, you'll need
     let a = 4;
     let b = 2;
     () => a + b + 100;
-
+```
 Likewise, if the body requires **additional lines** of processing, you'll need to re-introduce brackets **PLUS the "return"** (arrow functions do not magically guess what or when you want to "return"):
 
     // Traditional Function
