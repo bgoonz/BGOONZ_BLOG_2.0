@@ -126,7 +126,7 @@ $('.current-time').each(function () {
 
 When attempting to reference the DOM element `this` set by `each` in the `setInterval` callback, we unfortunately get a brand new `this` that belongs to the callback itself. A common way around this is to declare `that` or `self` variable:
 
-```
+```js
 $('.current-time').each(function () {
   var self = this;
 
