@@ -1,7 +1,7 @@
 ---
 title: Python Cheat Sheet
 weight: 0
-excerpt: lorem-ipsum
+excerpt: You can name a variable anything as long as it obeys the following three rules
 seo:
     title: python cheat sheet
     description: cheat sheet for python developers
