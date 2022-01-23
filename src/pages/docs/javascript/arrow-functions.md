@@ -139,7 +139,7 @@ $('.current-time').each(function () {
 
 The fat arrow functions allow you to solve this problem because they don't introduce their own `this`:
 
-```
+```js
 $('.current-time').each(function () {
   setInterval(() => $(this).text(Date.now()), 1000);
 });
