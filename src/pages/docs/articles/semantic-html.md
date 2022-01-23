@@ -134,7 +134,7 @@ One final note about the use of classes to convey new semantics. It is possible 
 
 Note that I have to encode the HTML markup as entity references using the & notation so that they appear correctly when you view them in the web browser (view source to check this out). Having more than one class name means that I can apply standard styling to code examples and special style for different languages. It also means that I could write a script to pull out all of the examples in a given language if I wanted to check their syntax etc.
 
-# A View of HTML&#xA;&#xA;
+# A View of HTML
 
 Rather than being a chapter that will teach you the HTML language this will be a chapter about the language, how it works, why it has the structures it does and what you should and shouldn't do with it.
 
