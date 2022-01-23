@@ -318,7 +318,7 @@ To return an object literal expression requires parentheses around expression:
 ### Arrow functions used as methods
 
 As stated previously, arrow function expressions are best suited for non-method functions. Let's see what happens when we try to use them as methods:
-
+```js
     'use strict';
 
     let obj = { // does not create a new scope
