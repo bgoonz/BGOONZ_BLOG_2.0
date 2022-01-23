@@ -553,7 +553,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
     callback = callback || (() => {});    // ok
 
-## Examples
+// Examples
 
 ### Basic usage
 
