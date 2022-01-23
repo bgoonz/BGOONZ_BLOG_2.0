@@ -223,7 +223,7 @@ NOTE: Each step along the way is a valid "arrow function"
 **Note:** As shown above, the { brackets } and ( parentheses ) and "return" are optional, but may be required.
 
 For example, if you have **multiple arguments** or **no arguments**, you'll need to re-introduce parentheses around the arguments:
-
+```js
     // Traditional Function
     function (a, b){
       return a + b + 100;
