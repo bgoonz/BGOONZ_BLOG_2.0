@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Companies that don't whiteboard
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Companies that don't whiteboard
 seo:
     title: ''
     description: ''
