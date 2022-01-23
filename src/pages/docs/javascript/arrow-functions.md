@@ -555,7 +555,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
 // Examples
 
-### Basic usage
+//  Basic usage
 
     // An empty arrow function returns undefined
     let empty = () => {};
