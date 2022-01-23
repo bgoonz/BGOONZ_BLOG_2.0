@@ -1,5 +1,5 @@
 ---
-title: React Class Components Demo
+title: React Hooks
 weight: 0
 excerpt: React Class Components Demo
 seo:
