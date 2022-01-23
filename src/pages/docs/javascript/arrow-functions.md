@@ -27,7 +27,7 @@ function getVerifiedToken(selector) {
 
 Above is more or less plausible piece of code written using classical JavaScript `function` syntax. Here is what the same code could look like rewritten using the arrow syntax:
 
-```
+```js
 function getVerifiedToken(selector) {
   return getUsers(selector)
     .then(users => users[0])
