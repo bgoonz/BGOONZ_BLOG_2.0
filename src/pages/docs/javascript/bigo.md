@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-# A Very Quick Guide To Calculating Big O Computational Complexity&#xA;&#xA;
+# A Very Quick Guide To Calculating Big O Computational Complexity
 
 **Big O**: big picture, broad strokes, not details
 
