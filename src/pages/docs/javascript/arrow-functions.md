@@ -115,7 +115,7 @@ function () { return arguments[0]; }
 
 The story of clobbering `this` in JavaScript is a really old one. Each `function` in JavaScript defines its own `this` context, which is as easy to get around as it is annoying. The example below tries to display a clock that updates every second using jQuery:
 
-```
+```js
 $('.current-time').each(function () {
   setInterval(function () {
     $(this).text(Date.now());
