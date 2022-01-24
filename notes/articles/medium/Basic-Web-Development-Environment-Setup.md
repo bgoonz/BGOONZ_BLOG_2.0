@@ -8,35 +8,35 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 #### Windows Subsystem for Linux (WSL) and Ubuntu
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
 
-1.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
+1.  <span id="110a">In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"</span>
 
-2.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>
+2.  <span id="54fd">Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu</span>
 
 3.  <span id="a018">In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`</span>
 
 4.  <span id="6269">Restart your computer</span>
 
-5.  <span id="6dd9">In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</span>
+5.  <span id="6dd9">In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"</span>
 
-6.  <span id="eb4e">Click “Microsoft Store”</span>
+6.  <span id="eb4e">Click "Microsoft Store"</span>
 
-7.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
+7.  <span id="74c1">Click the "Search" button in the upper-right corner of the window</span>
 
-8.  <span id="9d35">Type in “Ubuntu”</span>
+8.  <span id="9d35">Type in "Ubuntu"</span>
 
-9.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
+9.  <span id="4205">Click "Run Linux on Windows (Get the apps)"</span>
 
-10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'</span>
+10. <span id="1799">Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'</span>
 
-11. <span id="edec">Click “Install”</span>
+11. <span id="edec">Click "Install"</span>
 
-12. <span id="2935">After it downloads, click “Launch”</span>
+12. <span id="2935">After it downloads, click "Launch"</span>
 
-13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”</span>
+13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"</span>
 
-14. <span id="669c">When prompted to “Enter new UNIX username”, type your first name with no spaces</span>
+14. <span id="669c">When prompted to "Enter new UNIX username", type your first name with no spaces</span>
 
 15. <span id="e9c1">When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</span>
 
@@ -62,11 +62,11 @@ Open an Ubuntu terminal if you don't have one open already.
 
 ### Google Chrome
 
-Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
+1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
 
-2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
+2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".</span>
 
 ### Node.js
 

@@ -34,7 +34,7 @@ ALGOLIA_INDEX_NAME=XXX
 
 ```js
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+    path: `.env.${process.env.NODE_ENV}`
 });
 
 // gatsby-config.js
@@ -60,45 +60,45 @@ const myQuery = `{
 }`;
 
 const queries = [
-  {
-    query: myQuery,
-    transformer: ({ data }) => data.pages.nodes, // optional
-    indexName: 'index name to target', // overrides main index name, optional
-    settings: {
-      // optional, any index settings
-      // Note: by supplying settings, you will overwrite all existing settings on the index
-    },
-    matchFields: ['slug', 'modified'], // Array<String> overrides main match fields, optional
-    mergeSettings: false, // optional, defaults to false.  See notes on mergeSettings below
-  },
+    {
+        query: myQuery,
+        transformer: ({ data }) => data.pages.nodes, // optional
+        indexName: 'index name to target', // overrides main index name, optional
+        settings: {
+            // optional, any index settings
+            // Note: by supplying settings, you will overwrite all existing settings on the index
+        },
+        matchFields: ['slug', 'modified'], // Array<String> overrides main match fields, optional
+        mergeSettings: false // optional, defaults to false.  See notes on mergeSettings below
+    }
 ];
 
 module.exports = {
-  plugins: [
-    {
-      // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        // Use Admin API key without GATSBY_ prefix, so that the key isn't exposed in the application
-        // Tip: use Search API key with GATSBY_ prefix to access the service from within components
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
-        queries,
-        chunkSize: 10000, // default: 1000
-        settings: {
-          // optional, any index settings
-          // Note: by supplying settings, you will overwrite all existing settings on the index
-        },
-        enablePartialUpdates: true, // default: false
-        matchFields: ['slug', 'modified'], // Array<String> default: ['modified']
-        concurrentQueries: false, // default: true
-        skipIndexing: true, // default: false, useful for e.g. preview deploys or local development
-        continueOnFailure: false, // default: false, don't fail the build if algolia indexing fails
-        algoliasearchOptions: undefined, // default: { timeouts: { connect: 1, read: 30, write: 30 } }, pass any different options to the algoliasearch constructor
-      },
-    },
-  ],
+    plugins: [
+        {
+            // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
+            resolve: `gatsby-plugin-algolia`,
+            options: {
+                appId: process.env.ALGOLIA_APP_ID,
+                // Use Admin API key without GATSBY_ prefix, so that the key isn't exposed in the application
+                // Tip: use Search API key with GATSBY_ prefix to access the service from within components
+                apiKey: process.env.ALGOLIA_API_KEY,
+                indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
+                queries,
+                chunkSize: 10000, // default: 1000
+                settings: {
+                    // optional, any index settings
+                    // Note: by supplying settings, you will overwrite all existing settings on the index
+                },
+                enablePartialUpdates: true, // default: false
+                matchFields: ['slug', 'modified'], // Array<String> default: ['modified']
+                concurrentQueries: false, // default: true
+                skipIndexing: true, // default: false, useful for e.g. preview deploys or local development
+                continueOnFailure: false, // default: false, don't fail the build if algolia indexing fails
+                algoliasearchOptions: undefined // default: { timeouts: { connect: 1, read: 30, write: 30 } }, pass any different options to the algoliasearch constructor
+            }
+        }
+    ]
 };
 ```
 
@@ -135,7 +135,7 @@ You can set settings for each index individually (per query), or otherwise it wi
 
 ### Merge Settings
 
-`mergeSettings` allows you to preserve settings changes made on the Algolia website.  The default behavior (`mergeSettings: false`) will wipe out your index settings and replace them with settings from the config on each build.
+`mergeSettings` allows you to preserve settings changes made on the Algolia website. The default behavior (`mergeSettings: false`) will wipe out your index settings and replace them with settings from the config on each build.
 
 When set to true, the config index settings will be merged with the existing index settings in Algolia (with the config index settings taking precendence).
 

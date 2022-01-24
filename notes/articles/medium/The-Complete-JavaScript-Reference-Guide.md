@@ -50,7 +50,7 @@ Nothing too ground breaking here, but pay close attention to the exact way we wr
 
 ### Syntax
 
-We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
+We refer to the exact arrangement of the symbols, characters, and keywords as **syntax**. These details matter — your computer will only be able to "understand" proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!
 
 As you write your first lines of code in this new language, you may make many syntax errors. Don't get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.
 
@@ -104,23 +104,23 @@ The **string** data type is a primitive data type that used to represent textual
 
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
 -   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     “That's a great string”; (valid)
-    'Shakespeare wrote, “To be or not to be”'; (valid)
+     "That's a great string"; (valid)
+    'Shakespeare wrote, "To be or not to be"'; (valid)
     'That's a bad string'; (invalid)</span>
 -   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
      \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
 -   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 -   <span id="f633">empty strings have a length of zero.</span>
 -   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-     console.log(“bootcamp”\[0\]); // =&gt; “b”  
-     console.log(“bootcamp”\[10\]); // =&gt; “undefined”  
-     console.log(“boots”\[1 \* 2\]); // =&gt; “o”  
-     console.log(“boots”\[“boot”.length-1\]); // =&gt; “t”</span>
+     console.log("bootcamp"\[0\]); // =&gt; "b"  
+     console.log("bootcamp"\[10\]); // =&gt; "undefined"  
+     console.log("boots"\[1 \* 2\]); // =&gt; "o"  
+     console.log("boots"\["boot".length-1\]); // =&gt; "t"</span>
 -   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
 -   <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
 -   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
-     console.log(“bagel”.indexOf(“b”)); // =&gt; 0  
-     console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span>
+     console.log("bagel".indexOf("b")); // =&gt; 0  
+     console.log("bagel".indexOf("z")); // =&gt; -1</span>
 -   <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
 -   <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
 -   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
@@ -134,8 +134,8 @@ The **Boolean** data type is the simplest data type since there are only two val
      console.log(!true); // =&gt; false  
      console.log(!!false); // =&gt; false</span>
 -   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
-     console.log(true || !false) // =&gt; stops after it sees “true ||”</span>
+-   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+     console.log(true || !false) // =&gt; stops after it sees "true ||"</span>
 
 **Comparison Operators**
 
@@ -150,7 +150,7 @@ All comparison operators will result in a boolean output.
 -   <span id="0c13">**===** (equal to)</span>
 -   <span id="b73a">**!==** (not equal to)</span>
 
-Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!
+Fun Fact: "a" &lt; "b" is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so "a" is less than "b" because it appears earlier!
 
 If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.
 
@@ -169,8 +169,8 @@ Loose Equality, will return true even if the values are of a different type, due
 Variables are used to store information to be referenced and manipulated in a program.
 
 -   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).  
-     let bootcamp = “App Academy”;  
-     console.log(bootcamp); // “App Academy”</span>
+     let bootcamp = "App Academy";  
+     console.log(bootcamp); // "App Academy"</span>
 -   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
 -   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.  
      let bootcamp;  
@@ -254,13 +254,13 @@ Objects are certain kinds of variables. They are variables that can have their o
 
 var person = {
 
-firstName:”John”,
+firstName:"John",
 
-lastName:”Doe”,
+lastName:"Doe",
 
 age:20,
 
-nationality:”German”
+nationality:"German"
 
 };
 
@@ -268,7 +268,7 @@ nationality:”German”
 
 Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here's how to create one in JavaScript:
 
-var fruit = \[“Banana”, “Apple”, “Pear”\];
+var fruit = \["Banana", "Apple", "Pear"\];
 
 Now you have an array called `fruit` which contains three items that you can use for future operations.
 
@@ -344,7 +344,7 @@ function name(parameter1, parameter2, parameter3) {
 
 }
 
-As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+As you can see, it consists of the `function` keyword plus a name. The function's parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier - there are also a number of default functions.
 
 ### Outputting Data
 
@@ -409,7 +409,7 @@ A similar concept to `if else` is the `switch` statement. However, using the swi
 
 Strings are what JavaScript calls to text that does not perform a function but can appear on the screen.
 
-var person = “John Doe”;
+var person = "John Doe";
 
 In this case, `John Doe` is the string.
 
@@ -515,7 +515,7 @@ In JavaScript, you can also work with numbers, constants and perform mathematica
 
 -   <span id="3554">`MAX_VALUE` — The maximum numeric value representable in JavaScript</span>
 -   <span id="c55d">`MIN_VALUE` — Smallest positive numeric value representable in JavaScript</span>
--   <span id="49e0">`NaN` — The “Not-a-Number” value</span>
+-   <span id="49e0">`NaN` — The "Not-a-Number" value</span>
 -   <span id="3024">`NEGATIVE_INFINITY` — The negative Infinity value</span>
 -   <span id="0bf4">`POSITIVE_INFINITY` — Positive Infinity value</span>
 
@@ -846,7 +846,7 @@ JavaScript also has a built-in error object. It has two properties:
 The error property can return six different values as its name:
 
 -   <span id="b389">`EvalError` — An error has occurred in the `eval()` function</span>
--   <span id="570c">`RangeError` — A number is “out of range”</span>
+-   <span id="570c">`RangeError` — A number is "out of range"</span>
 -   <span id="2352">`ReferenceError` — An illegal reference has occurred</span>
 -   <span id="5019">`SyntaxError` — A syntax error has occurred</span>
 -   <span id="0527">`TypeError` — A type error has occurred</span>
@@ -874,23 +874,23 @@ hex
 
 `n.toFixed(0)`
 
-“123457”
+"123457"
 
 `n.toFixed(5)`
 
-“123456.78900”
+"123456.78900"
 
 `n.toExponential(3)`
 
-“1.235e+5”
+"1.235e+5"
 
 `n.toPrecision(7)`
 
-“123456.8”
+"123456.8"
 
 `n.toPrecision(10)`
 
-“123456.7890”
+"123456.7890"
 
 `parseInt("3 blind mice")`
 
@@ -946,23 +946,23 @@ hex
 
 `n.toFixed(0)`
 
-“123457”
+"123457"
 
 `n.toFixed(5)`
 
-“123456.78900”
+"123456.78900"
 
 `n.toExponential(3)`
 
-“1.235e+5”
+"1.235e+5"
 
 `n.toPrecision(7)`
 
-“123456.8”
+"123456.8"
 
 `n.toPrecision(10)`
 
-“123456.7890”
+"123456.7890"
 
 `parseInt("3 blind mice")`
 
@@ -994,11 +994,11 @@ hex
 
 `parseInt(".1")`
 
-NaN: integers can't start with “.”
+NaN: integers can't start with "."
 
 `parseFloat("$72.47")`
 
-NaN: numbers can't start with “$”
+NaN: numbers can't start with "$"
 
 Supply Radix
 
@@ -1084,7 +1084,7 @@ y == \[2,3,4\]
 
 `let [first, ...rest] = "Hello";`
 
-first == “H”; rest ==\[“e”,”l”,”l”,”o”\]
+first == "H"; rest ==\["e","l","l","o"\]
 
 Destructuring assignment can also be performed when the righthand side is an object value.
 
@@ -1130,7 +1130,7 @@ JavaScript has the ability to interpret strings of JavaScript source code, evalu
 
 `eval("3+2")`
 
-Because of security issues, some web servers use the HTTP “Content-Security-Policy” header to disable` eval()` for an entire website.
+Because of security issues, some web servers use the HTTP "Content-Security-Policy" header to disable` eval()` for an entire website.
 
 ### First-Defined (??)
 
@@ -1146,7 +1146,7 @@ The first-defined operator `??` evaluates to its first defined operand: if its l
 
 ### delete Operator
 
-Deleting an array element leaves a “hole” in the array and does not change the array's length. The resulting array is sparse.
+Deleting an array element leaves a "hole" in the array and does not change the array's length. The resulting array is sparse.
 
 ### void Operator
 
@@ -1300,7 +1300,7 @@ The differences between strict mode and non-strict mode are the following:
 
 · In strict mode, code passed to `eval() `cannot declare variables or define functions in the caller's scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the `eval()`. This scope is discarded when the `eval()` returns.
 
-· In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has “magical” behavior in which elements of the array and named function parameters both refer to the same value.
+· In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has "magical" behavior in which elements of the array and named function parameters both refer to the same value.
 
 · In strict mode, a `SyntaxError `is thrown if the `delete `operator is followed by an unqualified identifier such as a variable, function, or function parameter. (In non-strict mode, such a `delete `expression does nothing and evaluates to false.)
 
@@ -1563,11 +1563,11 @@ The functions `JSON.stringify()` and` JSON.parse()` serialize and restore JavaSc
 
 `let s = JSON.stringify(o);`
 
-s == '{“x”:1,”y”:{“z”:\[false,null,””\]}}'
+s == '{"x":1,"y":{"z":\[false,null,""\]}}'
 
 `let p = JSON.parse(s);`
 
-p == {x: 1, y: {z: \[false,null, “”\]}}
+p == {x: 1, y: {z: \[false,null, ""\]}}
 
 ### Object methods
 
@@ -1575,7 +1575,7 @@ p == {x: 1, y: {z: \[false,null, “”\]}}
 
 `let s = { x: 1, y: 1 }.toString();`
 
-s == “\[object Object\]”
+s == "\[object Object\]"
 
 ### Extended Object Literal Syntax
 
@@ -1635,7 +1635,7 @@ The point of Symbols is not security, but to define a safe extension mechanism f
 
 ### Spread Operator
 
-You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:
+You can copy the properties of an existing object into a new object using the "spread operator" … inside an object literal:
 
 `let position = { x: 0, y: 0 };`  
  `let dimensions = { width: 100, height: 75 };`  
@@ -1751,15 +1751,15 @@ create a copy of an array — modifying the copy does not change the original
 
 `let digits = [..."0123456789ABCDEF"];`
 
-\[“0”,”1",”2",”3",”4",”5",”6",”7",”8",”9",”A”,”B”,”C”,”D”,”E”,”F”\]
+\["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"\]
 
 `let letters = [..."hello world"];`
 
-\[“h”,”e”,”l”,”l””o”,””,”w”,”o””r”,”l”,”d”\]
+\["h","e","l","l""o","","w","o""r","l","d"\]
 
 `[...new Set(letters)]`
 
-\[“h”,”e”,”l”,”o”,””,”w”,”r”,”d”\]
+\["h","e","l","o","","w","r","d"\]
 
 ### Array.of()
 
@@ -1793,7 +1793,7 @@ It is also a simple way to make a copy of an array:
 
 What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the `length` property for you.
 
-JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.
+JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string "1", then uses that string as a property name.
 
 It is helpful to clearly distinguish an array index from an object property name. All indexes are property names, but only property names that are integers between 0 and 231 are indexes. All arrays are objects, and you can create properties of any name on them. If you use properties that are array indexes, however, arrays have the special behavior of updating their `length` property as needed.
 
@@ -1801,7 +1801,7 @@ Note that you can index an array using numbers that are negative or that are not
 
 `a[-1.23] = true;`
 
-This creates a property named “-1.23”
+This creates a property named "-1.23"
 
 `a["1000"] = 0;`
 
@@ -1811,7 +1811,7 @@ This the 1001st element of the array
 
 Array index 1. Same as a\[1\] = 1;
 
-The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don't get an error; you simply get `undefined`.
+The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an "out of bounds" error. When you try to query a nonexistent property of any object, you don't get an error; you simply get `undefined`.
 
 ### Sparse Arrays
 
@@ -2089,7 +2089,7 @@ When you invoke `reduce()` with no initial value, it uses the first element of t
 `let phrases = ["hello world", "the definitive guide"];`  
  `let words = phrases.flatMap(phrase => phrase.split(" "));`
 
-\[“hello”, “world”, “the”, “definitive”, “guide”\];
+\["hello", "world", "the", "definitive", "guide"\];
 
 Calling `a.flatMap(f)` is the same as (but more efficient than) `a.map(f).flat()`:
 
@@ -2173,9 +2173,9 @@ SPLICE
 
 \[4\]; a is now \[1\]
 
-\[\]; a is now \[1,2,”a”,”b”,3,4,5\]
+\[\]; a is now \[1,2,"a","b",3,4,5\]
 
-\[“a”,”b”\]; a is now \[1,2,\[1,2\],3,3,4,5\]
+\["a","b"\]; a is now \[1,2,\[1,2\],3,3,4,5\]
 
 FILL()
 
@@ -2295,31 +2295,31 @@ The `join()` method converts all the elements of an array to strings and concate
 
 `a.join("")`
 
-“1,2,3”
+"1,2,3"
 
-“1 2 3”
+"1 2 3"
 
-“123”
+"123"
 
 `let b = new Array(10);`
 
 `b.join("-")`
 
-“ — — — — -”
+" — — — — -"
 
 Arrays, like all JavaScript objects, have a `toString()` method. For an array, this method works just like the `join()` method with no arguments:
 
 `[1,2,3].toString()`
 
-“1,2,3”
+"1,2,3"
 
 `["a", "b", "c"].toString()`
 
-“a,b,c”
+"a,b,c"
 
 `[1, [2,"c"]].toString()`
 
-“1,2,c”
+"1,2,c"
 
 ### Static Array Functions
 
@@ -2367,19 +2367,19 @@ Since array-like objects do not inherit from `Array.prototype`, you cannot invok
 
 `Array.prototype.join.call(a, "+")`
 
-“a+b+c”
+"a+b+c"
 
 `Array.prototype.join.call("JavaScript", " ")`
 
-“J a v a S c r i p t”
+"J a v a S c r i p t"
 
 `Array.prototype.map.call(a, x => x.toUpperCase())`
 
-\[“A”,”B”,”C”\]
+\["A","B","C"\]
 
 `Array.from(a)`
 
-\[“a”,”b”,”c”\]
+\["a","b","c"\]
 
 ### Strings as Arrays
 
@@ -2409,7 +2409,7 @@ In addition to the arguments, each invocation has another value — the invocati
 
     }
 
-Function declaration statements are “hoisted” to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.
+Function declaration statements are "hoisted" to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.
 
 ### Function Expressions
 
@@ -2783,7 +2783,7 @@ or:
 
 `operate2("add", "hello", operate2("add", " ", "world"))`
 
-// “hello world”
+// "hello world"
 
 `operate2("pow", 10, 2)`
 
@@ -2791,7 +2791,7 @@ or:
 
 ### Defining Your Own Function Properties
 
-When a function needs a “static” variable whose value persists across invocations, it is often convenient to use a property of the function itself.
+When a function needs a "static" variable whose value persists across invocations, it is often convenient to use a property of the function itself.
 
 For example, suppose you want to write a function that returns a unique integer whenever it is invoked. The function must never return the same value twice. In order to manage this, the function needs to keep track of the values it has already returned, and this information must persist across function invocations.
 
@@ -2899,7 +2899,7 @@ Closures become interesting when they are invoked from a different scope than th
 
 `checkscope()`
 
-“local scope”
+"local scope"
 
     let scope = "global scope";
 
@@ -2915,7 +2915,7 @@ Closures become interesting when they are invoked from a different scope than th
 
 `let s = checkscope()();`
 
-“local scope”
+"local scope"
 
 Closures capture the local variables of a single function invocation and can use those variables as private state.
 
@@ -3047,7 +3047,7 @@ Define a private variable and two nested functions to get and set the value of t
 
 `o.getName()`
 
-“Frank”
+"Frank"
 
 `o.setName(0);`
 
@@ -3261,7 +3261,7 @@ true
 
 `r.toString()`
 
-“(1…3)”
+"(1…3)"
 
 `[...r]`
 
@@ -3311,7 +3311,7 @@ true
 
 `r.toString()`
 
-“(1…3)”
+"(1…3)"
 
 `[...r]`
 
@@ -3921,7 +3921,7 @@ Iterate over map:
 
 `[...m]`
 
-\[\[“x”, 1\], \[“y”, 2\]\]
+\[\["x", 1\], \["y", 2\]\]
 
 `for(let [key, value] of m) {...}`
 
@@ -4010,7 +4010,7 @@ Typed arrays are not true arrays, but they re-implement most array methods, so y
 
 `ints.fill(3).map(x=>x*x).join("")`
 
-“9999999999”
+"9999999999"
 
 Remember that typed arrays have fixed lengths, so the length property is read-only, and methods that change the length of the array (such as` push(), pop(), unshift(), shift(),` and `splice()`) are not implemented for typed arrays. Methods that alter the contents of an array without changing the length (such as `sort(), reverse()`, and `fill()`) are implemented.
 
@@ -4060,11 +4060,11 @@ Any character except newline or another Unicode line terminator. Or, if the `Reg
 
 `\w`
 
-Any ASCII word character. Equivalent to \[a-zA-Z0–9\_\].
+Any ASCII word character. Equivalent to \[a-zA-Z0-9\_\].
 
 `\W`
 
-Equivalent to \[^a-zA-Z0–9\_\]
+Equivalent to \[^a-zA-Z0-9\_\]
 
 `\s`
 
@@ -4076,7 +4076,7 @@ Any character that is not Unicode whitespace.
 
 `\d`
 
-Equivalent to \[0–9\].
+Equivalent to \[0-9\].
 
 `\D`
 
@@ -4134,7 +4134,7 @@ Match exactly three word characters and an optional digit
 
     r = /\s+java\s+/;
 
-Match “java” with one or more spaces before and after
+Match "java" with one or more spaces before and after
 
     r = /[^(]*/;
 
@@ -4180,7 +4180,7 @@ Note that using non-greedy repetition may not always produce the results you exp
 
 `/ab|cd|ef/`
 
-“ab” or the string “cd” or the string “ef”.
+"ab" or the string "cd" or the string "ef".
 
 `/\d{3}|[a-z]{4}/`
 
@@ -4188,19 +4188,19 @@ either three digits or four lowercase letters.
 
 `/a|ab/`
 
-matches only the first letter “a”
+matches only the first letter "a"
 
 `()`
 
 `/java(script)?/`
 
-matches “java” followed by the optional “script”
+matches "java" followed by the optional "script"
 
 `/(ab|cd)+|ef/`
 
-matches “java” followed by the optional “script”
+matches "java" followed by the optional "script"
 
-If the left alternative matches, the right alternative is ignored, even if it would have produced a “better” match
+If the left alternative matches, the right alternative is ignored, even if it would have produced a "better" match
 
 Another purpose of parentheses in regular expressions is to define subpatterns within the complete pattern. When a regular expression is successfully matched against a target string, it is possible to extract the portions of the target string that matched any particular parenthesized subpattern. For example, suppose you are looking for one or more lowercase letters followed by one or more digits. You might use the pattern `/[a-z]+\d+/`. But suppose you only really care about the digits at the end of each match. If you put that part of the pattern in parentheses (/\[a-z\]+(\\d+)/), you can extract the digits from any matches you find,
 
@@ -4247,11 +4247,11 @@ _regular expression anchors_ because they anchor the pattern to a specific posit
 
 **Pattern**
 
-match the word “JavaScript” on a line by itself
+match the word "JavaScript" on a line by itself
 
 `/^JavaScript$/`
 
-To search for “Java” as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what's needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
+To search for "Java" as a word by itself you can try the pattern `/\sJava\s/`, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java" at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what's needed. So instead of matching actual space characters with \\s, match (or anchor to) word boundaries with \\b. The resulting expression is `/\bJava\b/`.
 
 The element `\B` anchors the match to a location that is not a word boundary. Thus, the pattern `/\B[Ss]cript/` matches "JavaScript" and "postscript", but not "script" or "Scripting".
 
@@ -4269,9 +4269,9 @@ to match the name of a common programming language, but only if it is followed b
 
 `/[Jj]ava([Ss]cript)?(?=\:)/`
 
-matches the word “JavaScript” in “JavaScript: The DefinitiveGuide”
+matches the word "JavaScript" in "JavaScript: The DefinitiveGuide"
 
-does not match “Java” in “Java in a Nutshell”
+does not match "Java" in "Java in a Nutshell"
 
 If you instead introduce an assertion with `(?!`, it is a negative lookahead assertion.
 
@@ -4285,7 +4285,7 @@ Flags are specified after the second / character of a regular expression literal
 
 g
 
-“global” — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String `match()` method and the `RegExp exec()` method in important ways.
+"global" — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String `match()` method and the `RegExp exec()` method in important ways.
 
 i
 
@@ -4293,11 +4293,11 @@ case-insensitive
 
 m
 
-“multiline” mode
+"multiline" mode
 
 s
 
-useful when working with text that includes newlines.Normally, a “.” in a regular expression matches any character except a line terminator. When the s flag is used, however, “.” will match any character, including line terminators.
+useful when working with text that includes newlines.Normally, a "." in a regular expression matches any character except a line terminator. When the s flag is used, however, "." will match any character, including line terminators.
 
 u
 
@@ -4307,7 +4307,7 @@ Setting the u flag on a RegExp also allows you to use the new `\u{...}` escape s
 
 y
 
-“sticky”. should match at the beginning of a string or at the first character following the previous match
+"sticky". should match at the beginning of a string or at the first character following the previous match
 
 ### String Methods for Pattern Matching
 
@@ -4357,13 +4357,13 @@ Example to convert decimal integers in a string to hexadecimal:
 
 `s.replace(/\d+/gu, n => parseInt(n).toString(16))`
 
-“f times f is e1”
+"f times f is e1"
 
 ### MATCH()
 
 `"7 plus 8 equals 15".match(/\d+/g)`
 
-\[“7”, “8”, “15”\]
+\["7", "8", "15"\]
 
 If the regular expression does not have the `g` flag set, `match()` does not do a global search; it simply searches for the first match. In this nonglobal case, `match()` still returns an array, but the array elements are completely different.
 
@@ -4381,19 +4381,19 @@ Thus, if `match()` returns an array a, a\[0\] contains the complete match, a\[1\
 
     fullurl = match[0];
 
-<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">“http://www.example.com/~david</a>"
+<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"http://www.example.com/~david</a>"
 
     protocol = match[1];
 
-“http”
+"http"
 
     host = match[2];
 
-<a href="http://www.example.com/" class="markup--anchor markup--p-anchor">“www.example.com</a>"
+<a href="http://www.example.com/" class="markup--anchor markup--p-anchor">"www.example.com</a>"
 
     path = match[3];
 
-“~david”
+"~david"
 
 In this non-global case, the array returned by match() also has some object properties in addition to the numbered array elements.
 
@@ -4411,7 +4411,7 @@ if the regular expression contains named capture groups, then the returned array
 
 `match[0]`
 
-<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">“http://www.example.com/~david</a>"
+<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"http://www.example.com/~david</a>"
 
 `match.input`
 
@@ -4423,15 +4423,15 @@ text
 
 `match.groups.protocol`
 
-“http”
+"http"
 
 `match.groups.host`
 
-<a href="http://www.example.com/" class="markup--anchor markup--p-anchor">“www.example.com</a>"
+<a href="http://www.example.com/" class="markup--anchor markup--p-anchor">"www.example.com</a>"
 
 `match.groups.path`
 
-“~david”
+"~david"
 
 There are also important but less dramatic differences in behavior when the y flag is set. Refer to book for examples.
 
@@ -4443,11 +4443,11 @@ Instead of returning an array of matching substrings like `match()` does, howeve
 
 `"123,456,789".split(",")`
 
-\[“123”, “456”,”789"\]
+\["123", "456","789"\]
 
 `"1, 2, 3,\n4, 5".split(/\s*,\s*/)`
 
-\[“1”, “2”, “3”, “4”,”5"\]
+\["1", "2", "3", "4","5"\]
 
 Surprisingly, if you call `split()` with a RegExp delimiter and the regular expression includes capturing groups, then the text that matches the capturing groups will be included in the returned array.
 
@@ -4455,7 +4455,7 @@ Surprisingly, if you call `split()` with a RegExp delimiter and the regular expr
 
 `"Testing<br/>1,2,3".split(htmlTag)`
 
-\[“Testing”, “br/”,”1,2,3"\]
+\["Testing", "br/","1,2,3"\]
 
 ### The RegExp Class
 
@@ -4522,7 +4522,7 @@ On the other hand, sometimes reusing a RegExp object is the wrong thing to do. S
 
 `doubleLetterWords`
 
-\[“apple”, “coffee”\]: “book” is missing!
+\["apple", "coffee"\]: "book" is missing!
 
 Because we set the g flag on the RegExp, the `lastIndex` property is changed after successful matches, and the `test()` method (which is based on `exec()`) starts searching for a match at the position specified by `lastIndex`. After matching the "pp" in "apple", `lastIndex` is 3, and so we start searching the word "book" at position 3 and do not see the "oo" that it contains.
 
@@ -4597,23 +4597,23 @@ adds three months and two weeks to the current date:
 
     d.toString()
 
-“Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)”
+"Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)"
 
     d.toUTCString()
 
-“Thu, 02 Jan 2020 01:10:30 GMT”
+"Thu, 02 Jan 2020 01:10:30 GMT"
 
     d.toLocaleDateString()
 
-“1/1/2020”: 'en-US' locale
+"1/1/2020": 'en-US' locale
 
     d.toLocaleTimeString()
 
-“5:10:30 PM”: 'en-US' locale
+"5:10:30 PM": 'en-US' locale
 
     d.toISOString()
 
-“2020–01–02T01:10:30.000Z”
+"2020-01-02T01:10:30.000Z"
 
 there is also a static Date.parse() method that takes a string as its argument, attempts to parse it as a date and time, and returns a timestamp representing that date. `Date.parse()` is able to parse the same strings that the `Date()` constructor can and is guaranteed to be able to parse the output of` toISOString(), toUTCString()`, and` toString()`.
 
@@ -4653,7 +4653,7 @@ You should feel free to define your own Error subclasses that best encapsulate t
 
     error.message
 
-“404 Not Found:<a href="http://example.com/" class="markup--anchor markup--p-anchor">http://example.com/</a>"
+"404 Not Found:<a href="http://example.com/" class="markup--anchor markup--p-anchor">http://example.com/</a>"
 
     error.name
 
@@ -4667,11 +4667,11 @@ JavaScript supports JSON serialization and deserialization with the two function
 
     let s = JSON.stringify(o);
 
-s == '{“s”:””,”n”:0,”a”:\[true,false,null\]}'
+s == '{"s":"","n":0,"a":\[true,false,null\]}'
 
     let copy = JSON.parse(s);
 
-copy == {s: “”, n: 0, a:\[true, false, null\]}
+copy == {s: "", n: 0, a:\[true, false, null\]}
 
 Inefficient way of creating a deep copy of an object
 
@@ -4689,7 +4689,7 @@ Typically, you pass only a single argument to `JSON.stringify()` and `JSON.parse
 
 If `JSON.stringify()` is asked to serialize a value that is not natively supported by the JSON format, it looks to see if that value has a `toJSON()` method, and if so, it calls that method and then stringifies the return value in place of the original value. Date objects implement `toJSON()`: it returns the same string that `toISOString()` method does.
 
-If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a “reviver” function as the second argument to `JSON.parse()`.
+If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a "reviver" function as the second argument to `JSON.parse()`.
 
     let data = JSON.parse(text, function(key, value) {
 
@@ -4715,39 +4715,39 @@ Console functions that print their arguments like console.log() have a little-kn
 
     url.href
 
-<a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">“https://example.com:8000/path/name</a>?q=term\#fragment"
+<a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">"https://example.com:8000/path/name</a>?q=term\#fragment"
 
     url.origin
 
-<a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">“https://example.com:8000</a>"
+<a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">"https://example.com:8000</a>"
 
     url.protocol
 
-“https:”
+"https:"
 
     url.host
 
-<a href="http://example.com/" class="markup--anchor markup--p-anchor">“example.com</a>:8000”
+<a href="http://example.com/" class="markup--anchor markup--p-anchor">"example.com</a>:8000"
 
     url.hostname
 
-<a href="http://example.com/" class="markup--anchor markup--p-anchor">“example.com</a>”
+<a href="http://example.com/" class="markup--anchor markup--p-anchor">"example.com</a>"
 
     url.port
 
-“8000”
+"8000"
 
     url.pathname
 
-“/path/name”
+"/path/name"
 
     url.search
 
-“?q=term”
+"?q=term"
 
     url.hash
 
-“\#fragment”
+"\#fragment"
 
     let url = new URL("https://example.com");
 
@@ -4761,7 +4761,7 @@ Add a query parameter
 
     url.toString()
 
-<a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">“https://example.com/api/search?q=test</a>"
+<a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">"https://example.com/api/search?q=test</a>"
 
 One of the important features of the URL class is that it correctly adds punctuation and escapes special characters in URLs when that is needed
 
@@ -4771,17 +4771,17 @@ One of the important features of the URL class is that it correctly adds punctua
 
     url.pathname
 
-“/path%20with%20spaces”
+"/path%20with%20spaces"
 
     url.search = "q=foo#bar";
 
     url.search
 
-“?q=foo%23bar”
+"?q=foo%23bar"
 
     url.href
 
-<a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">“https://example.com/path%20with%20spaces?q=foo%23bar</a>"
+<a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">"https://example.com/path%20with%20spaces?q=foo%23bar</a>"
 
 Often, however, HTTP requests encode the values of multiple form fields or multiple API parameters into the query portion of a URL. In this format, the query portion of the URL is a question mark followed by one or more name/value pairs, which are separated from one another by ampersands.
 
@@ -4791,25 +4791,25 @@ If you want to encode these kinds of name/value pairs into the query portion of 
 
 `url.search`
 
-“”
+""
 
 `url.searchParams.append("q", "term");`
 
 `url.search`
 
-“?q=term”
+"?q=term"
 
 `url.searchParams.set("q", "x");`
 
 `url.search`
 
-“?q=x”
+"?q=x"
 
 `url.searchParams.append("opts", "1");`
 
 `url.search`
 
-“?q=x&opts=1”
+"?q=x&opts=1"
 
 The value of the searchParams property is a URLSearchParams object.
 
@@ -4823,13 +4823,13 @@ The value of the searchParams property is a URLSearchParams object.
 
 `params.toString()`
 
-“q=term&opts=exact”
+"q=term&opts=exact"
 
 `url.search = params;`
 
 `url.href`
 
-<a href="http://example.com/" class="markup--anchor markup--p-anchor">“http://example.com/</a>?q=term&opts=exact"
+<a href="http://example.com/" class="markup--anchor markup--p-anchor">"http://example.com/</a>?q=term&opts=exact"
 
 ### Timers
 
@@ -4871,7 +4871,7 @@ The iterator method of an iterable object does not have a conventional name but 
 
     }
 
-When you want to iterate though a “partially used” iterator:
+When you want to iterate though a "partially used" iterator:
 
 `let list = [1,2,3,4,5];`  
  `let iter = list[Symbol.iterator]();`
@@ -5102,7 +5102,7 @@ In classes and object literals, we can use shorthand notation to omit the functi
 
 `[...o.g()]`
 
-\[“x”, “y”, “z”, “g”\]
+\["x", "y", "z", "g"\]
 
 Generators often make it particularly easy to define iterable classes.
 
@@ -5356,11 +5356,11 @@ When we write a chain of `.then()` invocations, we are not registering multiple 
 
 ### Resolving Promises
 
-There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”
+There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be "resolved."
 
 fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has `.text(), .json(),` and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.
 
-“task 2” calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
+"task 2" calls the `.json()` method and returns its value. This is the fourth Promise object, and it is the return value of the `callback1()` function.
 
 Let's consider:
 
@@ -5408,9 +5408,9 @@ When you pass a callback c to the `then()` method, `then()` returns a Promise p 
 
 So if c returns a non-Promise, that return value becomes the value of p, p is fulfilled and we are done. But if the return value v is itself a Promise, then p is resolved but not yet fulfilled.
 
-At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the “resolved” state of a Promise means
+At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the "resolved" state of a Promise means
 
-the Promise has become associated with, or “locked onto,” another Promise. We don't know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.
+the Promise has become associated with, or "locked onto," another Promise. We don't know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is "resolved" in the sense that its fate now depends entirely on what happens to Promise v.
 
 Let's bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .`json()` method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.
 

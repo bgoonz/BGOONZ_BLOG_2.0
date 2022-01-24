@@ -30,8 +30,8 @@ This method receives two [`Date`](../../date)s and formats the date range in the
     console.log(fmt1.formatRange(date1, date2));
     console.log(fmt1.formatRange(date1, date3));
     // > '1/10/07, 10:00 AM'
-    // > '1/10/07, 10:00 – 11:00 AM'
-    // > '1/10/07, 10:00 AM – 1/20/07, 10:00 AM'
+    // > '1/10/07, 10:00 - 11:00 AM'
+    // > '1/10/07, 10:00 AM - 1/20/07, 10:00 AM'
 
     let fmt2 = new Intl.DateTimeFormat("en", {
         year: 'numeric',
@@ -43,7 +43,7 @@ This method receives two [`Date`](../../date)s and formats the date range in the
     console.log(fmt2.formatRange(date1, date3));
     // > 'Jan 10, 2007'
     // > 'Jan 10, 2007'
-    // > 'Jan 10 – 20, 2007'
+    // > 'Jan 10 - 20, 2007'
 
 ## Specifications
 

@@ -1,8 +1,0 @@
-{
-      "files.exclude": {
-            "**/.git": false
-      },
-      "search.useGlobalIgnoreFiles": true,
-      "search.useIgnoreFiles": false,
-      "python.pythonPath": "/bin/python3"
-}

@@ -521,7 +521,7 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif" class="graf-image" /></figure>### <a href="https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent" class="markup--anchor markup--h3-anchor">Paste and Indent</a>
 
-> _Paste code with “correct” indentation_
+> _Paste code with "correct" indentation_
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines" class="markup--anchor markup--h3-anchor">Sort Lines</a>
 

@@ -133,7 +133,7 @@ A set of questions you should use before handing off your application to the cli
 
 -   <span id="0251">Make pages primarily for users, not for search engines.</span>
 -   <span id="f565">Don't deceive your users.</span>
--   <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you'd feel comfortable explaining what you've done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn't exist?”</span>
+-   <span id="5f8a">Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you'd feel comfortable explaining what you've done to a website that competes with you, or to a Google employee. Another useful test is to ask, "Does this help my users? Would I do this if search engines didn't exist?"</span>
 -   <span id="9acc">Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.</span>
 
 ### Specific guidelines
@@ -266,7 +266,7 @@ Web crawlers (like Google's bots) read through your website to get an understand
 
 Historically, this has meant using the following semantic tags:
 
--   <span id="93f0">h1–h6 (heading tags)</span>
+-   <span id="93f0">h1-h6 (heading tags)</span>
 -   <span id="f999">p (paragraph tags)</span>
 -   <span id="c0ab">ul/ol (unordered and ordered Lists)</span>
 

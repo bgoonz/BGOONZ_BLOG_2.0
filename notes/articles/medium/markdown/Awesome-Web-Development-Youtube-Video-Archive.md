@@ -24,7 +24,7 @@ Inspiration:
 
 #### Computer History Museum:
 
-> Welcome to the Computer History Museum channel on YouTube. We're committed to preserving and presenting the history and stories of the Information Age. Here on YouTube we offer videos of the many lectures and events at the museum and also historic computer films. We also feature video from our well–known Revolutionaries television series. Be sure to check out the Computer History Museum website for even more information including online exhibits, upcoming events and our collection of computing artifacts: <a href="http://www.computerhistory.org." class="markup--anchor markup--blockquote-anchor">http://www.computerhistory.org.</a>
+> Welcome to the Computer History Museum channel on YouTube. We're committed to preserving and presenting the history and stories of the Information Age. Here on YouTube we offer videos of the many lectures and events at the museum and also historic computer films. We also feature video from our well-known Revolutionaries television series. Be sure to check out the Computer History Museum website for even more information including online exhibits, upcoming events and our collection of computing artifacts: <a href="http://www.computerhistory.org." class="markup--anchor markup--blockquote-anchor">http://www.computerhistory.org.</a>
 
 #### Computerphile
 
@@ -32,7 +32,7 @@ Inspiration:
 
 #### <a href="https://www.youtube.com/channel/UCu44AnfqsP-sRxmZHdnhblw" class="markup--anchor markup--h4-anchor">Dave Xiang</a>
 
-> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, “Software Developer Life.”
+> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, "Software Developer Life."
 
 #### Google TechTalks
 

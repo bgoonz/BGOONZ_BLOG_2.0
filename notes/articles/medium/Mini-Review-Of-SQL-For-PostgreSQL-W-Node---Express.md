@@ -197,13 +197,13 @@ What is a Query?
     INSERT INTO pies VALUES('Raspberry', 20.99);
     INSERT INTO pies VALUES('Mixed Berry', 21.45);
 
-**Populating a database via &lt; (“left caret”)**
+**Populating a database via &lt; ("left caret")**
 
 -   <span id="0880">Syntax :  
     `psql -d [database] < [path_to_file/file.sql]`  
     `psql -d bakery < path_to_my_file/seed-data.sql`</span>
 
-**Populating the database via | (“pipe”)**
+**Populating the database via | ("pipe")**
 
 -   <span id="e1ff">Syntax :  
     `cat [path_to_file/file.sql] | psql -d [database]`  

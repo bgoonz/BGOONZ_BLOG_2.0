@@ -59,7 +59,7 @@ Part 1
 -   <span id="a287">**//** : notation for creating a code comment in JS.</span>
 -   <span id="e2e6">**code comment** : useful for annotating pieces of code to explain how something works, ignored by computer.</span>
 
-> **_“Simplicity is prerequisite for reliability.” — Edsger W. Dijkstra_**
+> **_"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra_**
 
 ---
 
@@ -135,7 +135,7 @@ The **boolean** data type is the simplest data type since there are only two val
 -   <span id="295f">**De Morgan's Law** : Common mistake in boolean logic is incorrectly distributing ! across parentheses.</span>
 -   <span id="7400">`!(A || B) === !A && !B; !(A && B) === !A || !B;`</span>
 -   <span id="26c2">In summary, to correctly distribute ! across parentheses we must also flip the operation within.</span>
--   <span id="a8c1">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.</span>
+-   <span id="a8c1">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.</span>
 -   <span id="58a3">`console.log(true || !false); // => stops after it sees "true ||"`</span>
 
 ---
@@ -153,7 +153,7 @@ All comparison operators will result in a boolean output.
 -   <span id="fb41">**===** (equal to)</span>
 -   <span id="0fd1">**!==** (not equal to)</span>
 
-> _Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!_
+> _Fun Fact: "a" &lt; "b" is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so "a" is less than "b" because it appears earlier!_
 
 > _If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser._
 

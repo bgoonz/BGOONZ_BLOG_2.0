@@ -319,7 +319,7 @@ Python has two primitive loop commands:
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
--   <span id="acbb">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
+-   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
 
@@ -362,7 +362,7 @@ Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor 
 
     print('Hello world!')
 
-> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
+> _Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -672,49 +672,49 @@ First things first, let's import the stuff that we need, like this:
 
 Now, we need some variables to hold some of the player data.
 
-    name = input(“Name Please:  “) #We'll use this to get the name from the user
-    nickname = input(“Nickname: “)
+    name = input("Name Please:  ") #We'll use this to get the name from the user
+    nickname = input("Nickname: ")
 
 Ok, now we have the player's name and nickname, let's welcome them to the game
 
-    print(“Hello and welcome “ + name)
+    print("Hello and welcome " + name)
 
 Now for the story. The most important part of all stories is the introduction, so let's print our introduction
 
-    print(“Long ago, there was a magical meal known as Summuh and Spich Atip”) #We can drop a line by making a new print statement, or we can use the escape code \n
-    print(“It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it's power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was “ + name + “\n so ” + nickname + ' headed out to find this great power, and stop the war…')
+    print("Long ago, there was a magical meal known as Summuh and Spich Atip") #We can drop a line by making a new print statement, or we can use the escape code \n
+    print("It was said that this meal had the power to save lives, restore peace, and stop evil\nBecuase it was so powerful, it was hidden away on a mountain that could not be climbed\nBut it's power brought unwanted attention, and a great war broke out.\nFinally, the leaders of the good side chose a single hero to go and find the Summah and Spich Atip, that hero was " + name + "\n so " + nickname + ' headed out to find this great power, and stop the war…')
 
 Now, we'll give the player their first choice
 
-    print(“After hiking through the wastelands for a long time, you come to a massive ravine, there is only a single way across\nA rickety old bridge, taking that could be very dangerous, but… maybe you could jump across?”)
-    choice1 = input(“[1]  Take the bridge     [2] Try and jump over”)
+    print("After hiking through the wastelands for a long time, you come to a massive ravine, there is only a single way across\nA rickety old bridge, taking that could be very dangerous, but… maybe you could jump across?")
+    choice1 = input("[1]  Take the bridge     [2] Try and jump over")
     #Now we check to see what the player chose
     If choice1 == '1':
-      print(“You slowly walk across the bride, it creakes ominously, then suddenly breaks! You flail through the air before hitting the ground a thousand feet below. Judging by the fact that you hit the ground with the equivalent force of being hit by a cement truck moving at 125 miles an hour, you are dead…”)
+      print("You slowly walk across the bride, it creakes ominously, then suddenly breaks! You flail through the air before hitting the ground a thousand feet below. Judging by the fact that you hit the ground with the equivalent force of being hit by a cement truck moving at 125 miles an hour, you are dead…")
       #The player lost, so now we'll boot them out of the program with the exit command
       exit()
     #Then we check to see if they made the other choice, we can do with with else if, written as elif
     elif choice1 == '2':
-      print(“You make the jump! You see a feather hit the bridge, the weight breakes it and sends it to the bottom of the ravine\nGood thing you didn't use that bridge.”)
+      print("You make the jump! You see a feather hit the bridge, the weight breakes it and sends it to the bottom of the ravine\nGood thing you didn't use that bridge.")
     #Now we can continue the story
-    print(“A few more hours of travel and you come to the unclimbable mountain.”)
-    choice2 == input(“[1]   Give up    [2]    Try and climb the mountain”)
+    print("A few more hours of travel and you come to the unclimbable mountain.")
+    choice2 == input("[1]   Give up    [2]    Try and climb the mountain")
     if choice2 == '1':
-      print(“You gave up and lost…”)
+      print("You gave up and lost…")
       #now we exit them again
       exit()
     elif choice2 == '1':
-      print(“you continue up the mountain. Climbing is hard, but finally you reach the top.\nTo your surprise there is a man standing at the top of the mountain, he is very old.”)
-      print(“Old Man: Hey “ + nickname)
-      print(“You: How do you know my name!?!”)
-      print(“Old Man: Because you have a name tag on…”)
-      print(“You: Oh, well, were is the Summuh and Spich Atip?”)
-      print(“Old Man: Summuh and Spich Atip? You must mean the Pita Chips and Hummus”)
-      print(“You: Pita…chips…humus, what power do those have?”)
-      print(“Old Man: Pretty simple kid, their organic…”)
+      print("you continue up the mountain. Climbing is hard, but finally you reach the top.\nTo your surprise there is a man standing at the top of the mountain, he is very old.")
+      print("Old Man: Hey " + nickname)
+      print("You: How do you know my name!?!")
+      print("Old Man: Because you have a name tag on…")
+      print("You: Oh, well, were is the Summuh and Spich Atip?")
+      print("Old Man: Summuh and Spich Atip? You must mean the Pita Chips and Hummus")
+      print("You: Pita…chips…humus, what power do those have?")
+      print("Old Man: Pretty simple kid, their organic…")
       #Now let's clear the screen
       os.system('clear')
-      print(“YOU WON!!!”)
+      print("YOU WON!!!")
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
 
@@ -722,7 +722,7 @@ There you have it, a pretty simple choose your own ending story. You can make it
 
 Ever make secret messages as a kid? I used to. Anyways, here's the way you can make a program to encode messages! It's pretty simple. First things first, let's get the message the user wants to encode, we'll use input() for that:
 
-    message = input(“Message you would like encoded: “)
+    message = input("Message you would like encoded: ")
 
 Now we need to split that string into a list of characters, this part is a bit more complicated.
 
@@ -768,15 +768,15 @@ Next, we get a random number from the list
 Now, we need to ask the user for input, we'll to this with a while loop
 
     while True:
-      # We could use guess = input(“What do you think my number is?   “), but that would produce a string, and numbers are integers, so we'll convert the input into an integer
-      guess = int(input(“What do you think my number is?   “))
+      # We could use guess = input("What do you think my number is?   "), but that would produce a string, and numbers are integers, so we'll convert the input into an integer
+      guess = int(input("What do you think my number is?   "))
       #Next, we'll check if that number is equal to the number we picked
       if guess == num:
         break   #this will remove us from the loop, so we can display the win message
       else:
-        print(“Nope, that isn't it”)
+        print("Nope, that isn't it")
     #outside our loop, we'll have the win message that is displayed if the player gets the correct number.
-    print(“You won!”)
+    print("You won!")
 
 Have fun with this!
 
@@ -785,7 +785,7 @@ Have fun with this!
 Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'  
 Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
-    message = input(“What would you like to save?”)
+    message = input("What would you like to save?")
 
 Now we'll open our file and save that text
 
@@ -816,7 +816,7 @@ Who doesn't love a good dare? Here is a program that can generate random dares. 
     #now we'll generate a dare
     while True:
       if input() == '': #this will trigger if they hit enter
-        print(“I dare you to “ + random.choice(list1) + ' ' + random.choice(list2) + ' in front of '  + random.choice(list3)
+        print("I dare you to " + random.choice(list1) + ' ' + random.choice(list2) + ' in front of '  + random.choice(list3)
 
 ### Discover More:
 

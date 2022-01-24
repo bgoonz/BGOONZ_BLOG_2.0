@@ -42,7 +42,7 @@ Tip: Having an effective communication strategy with stakeholders doesn't mean y
 
 ### 9. GIVE ME AN EXAMPLE OF HOW YOU'D DESCRIBE WEB DEVELOPMENT (WHAT IT IS, WHY IT IS IMPORTANT) TO SOMEONE WHO IS COMPLETELY NEW TO TECH.
 
-Tip: As a web developer you'll find yourself in situations where you need to talk “tech” with non-techies. Making your work make sense to people who have no idea what it is you actually do is a valuable skill. Take off your developer hat for a day and think of some ways to describe web development to someone who doesn't know Java from JavaScript.
+Tip: As a web developer you'll find yourself in situations where you need to talk "tech" with non-techies. Making your work make sense to people who have no idea what it is you actually do is a valuable skill. Take off your developer hat for a day and think of some ways to describe web development to someone who doesn't know Java from JavaScript.
 
 ### 10. GIVE AN EXAMPLE OF A WEBSITE OR WEB APPLICATION THAT YOU DON'T LIKE, POINT OUT WHAT'S WRONG WITH IT AND WHAT YOU WOULD CHANGE.
 

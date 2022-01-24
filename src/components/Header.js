@@ -10,7 +10,7 @@ export default class Header extends React.Component {
         return (
             <header id="masthead" className="site-header outer">
                 {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
-
+            
                 <br />
                 <div className="inner">
                     <div className="site-header-inside">
@@ -34,7 +34,6 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-           
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -87,7 +86,19 @@ export default class Header extends React.Component {
                 </div>
 
                 <div>
-                    <div id="search" className="gcse-search search"></div>
+                    <div id="sb-search-example" >
+
+                        {/* style={{
+                        position: 'fixed',
+                        top: '20px',
+                        border: 0,
+                        left: '100px',
+                    }} */}
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon"></i>
+                            <p>Search</p>
+                        </div>
+                    </div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"

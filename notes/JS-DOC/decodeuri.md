@@ -21,7 +21,7 @@ Throws an [`URIError`](urierror) ("malformed URI sequence") exception when `enco
 
 ## Description
 
-Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character “`#`” is not decoded from escape sequences.
+Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character "`#`” is not decoded from escape sequences.
 
 ## Examples
 

@@ -6,7 +6,7 @@ An in-depth look into the world of React.
 
 ### React in Depth: A Comprehensive Guide
 
-#### A deep dive into the world of React.
+#### A deep dive into the world of React
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>
 
@@ -305,7 +305,7 @@ Props in JSX
 
     <MyComponent message="hello world" /> <MyComponent message={'hello world'} /> <MyComponent message="&lt;3" /> <MyComponent message={'❤'} />
 
--   <span id="48df">`Props Default to “True”`</span>
+-   <span id="48df">`Props Default to "True”`</span>
 
 <!-- -->
 
@@ -410,7 +410,7 @@ The Diffing Algorithm
 
     <div className=”before” title=”stuff” /> <div className=”after” title=”stuff” />
 
-    <div style={{ color: “red”, fontWeight: “bold” }} /> <div style={{color: 'green', fontWeight: 'bold'}} />
+    <div style={{ color: "red”, fontWeight: "bold” }} /> <div style={{color: 'green', fontWeight: 'bold'}} />
 
 -   <span id="0a0c">Component Elements Of The Same Type</span>
 -   <span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span>
@@ -500,7 +500,7 @@ Default Prop Values
 -   <span id="0940">Install React Router with:</span>
 -   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
 -   <span id="f07f">Import `Browser Router` from package.</span>
--   <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
+-   <span id="9e4e">import { BrowserRouter } from "react-router-dom”;</span>
 -   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
 -   <span id="adfa">Wrap it around components.</span>
 -   <span id="0276">Creates a `React Context` that passes routing information down to all its descendant components.</span>
@@ -544,7 +544,7 @@ Default Prop Values
 -   <span id="0d3e">Difference between `component` and `render` is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.</span>
 -   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path=”/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path=”/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
 -   <span id="a2d3">Also useful if you need to pass in specific props to a component.</span>
--   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: “Andrew” }, 2: { name: “Raymond” }, }; &lt;Route path=”/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
+-   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: "Andrew” }, 2: { name: "Raymond” }, }; &lt;Route path=”/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
 
 Route path params
 
@@ -693,14 +693,14 @@ Alt. version using `props.match`
 -   <span id="77f2">Create React App uses webpack and Babel under the hood to build applications. The Create React App build process</span>
 -   <span id="222f">What happens when you run `npm start`:</span>
 
-1.  <span id="d245">.env variables are loaded.</span>
-2.  <span id="6209">list of browsers to support are checked.</span>
-3.  <span id="1c34">config'd HTTP port checked for availability.</span>
-4.  <span id="950b">application compiler is configured and created.</span>
-5.  <span id="8e30">`webpack-dev-starter` is started</span>
-6.  <span id="48cc">`webpack-dev-starter` compiles app.</span>
-7.  <span id="68ad">`index.html` is loaded into browser</span>
-8.  <span id="e670">file watcher is started to watch for changes. Ejecting</span>
+1. <span id="d245">.env variables are loaded.</span>
+2. <span id="6209">list of browsers to support are checked.</span>
+3. <span id="1c34">config'd HTTP port checked for availability.</span>
+4. <span id="950b">application compiler is configured and created.</span>
+5. <span id="8e30">`webpack-dev-starter` is started</span>
+6. <span id="48cc">`webpack-dev-starter` compiles app.</span>
+7. <span id="68ad">`index.html` is loaded into browser</span>
+8. <span id="e670">file watcher is started to watch for changes. Ejecting</span>
 
 -   <span id="428b">There is a script in Create React App called `eject` that allows you to 'eject' your application and expose all the hidden stuff. Preparing to deploy a React application for production</span>
 -   <span id="eb79">Defining Env Variables</span>
@@ -1529,8 +1529,8 @@ Providing default values for props
 -   <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
 -   <span id="801d">It's good to pick one approach and use it consistently, either:</span>
 
-1.  <span id="2e3e">Class Properties & Arrow Functions</span>
-2.  <span id="cc27">Bind Method & This Keyword The `SyntheticEvent` object</span>
+1. <span id="2e3e">Class Properties & Arrow Functions</span>
+2. <span id="cc27">Bind Method & This Keyword The `SyntheticEvent` object</span>
 
 -   <span id="f177">Synthetic Event Objects: Cross Browser wrappeds around the browser's native event.</span>
 -   <span id="418f">Includes the use of stopPropagation() and preventDefault();</span>
@@ -1723,9 +1723,9 @@ Note About Client-side vs server-side validation
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" /></figure>-   <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
 
-1.  <span id="8e64">Loading (Mounting)</span>
-2.  <span id="7e94">Updating</span>
-3.  <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
+1. <span id="8e64">Loading (Mounting)</span>
+2. <span id="7e94">Updating</span>
+3. <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
 
 -   <span id="7740">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
 -   <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
@@ -1733,23 +1733,23 @@ Note About Client-side vs server-side validation
 -   <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
 -   <span id="7bd8">`Mounting`</span>
 
-1.  <span id="6f9e">`constructor` method is called</span>
-2.  <span id="e9c7">`render` method is called</span>
-3.  <span id="eef3">React updates the `DOM`</span>
-4.  <span id="19bb">`componentDidMount` is called</span>
+1. <span id="6f9e">`constructor` method is called</span>
+2. <span id="e9c7">`render` method is called</span>
+3. <span id="eef3">React updates the `DOM`</span>
+4. <span id="19bb">`componentDidMount` is called</span>
 
 -   <span id="85f1">`Updating`</span>
 -   <span id="94f5">When component receives new `props`</span>
 
-1.  <span id="e635">`render` method is called</span>
-2.  <span id="70f9">React updates the `DOM`</span>
-3.  <span id="9507">`componentDidUpdate` is called</span>
+1. <span id="e635">`render` method is called</span>
+2. <span id="70f9">React updates the `DOM`</span>
+3. <span id="9507">`componentDidUpdate` is called</span>
 
 -   <span id="b00a">When `setState` is called</span>
 
-1.  <span id="6864">`render` method is called</span>
-2.  <span id="e13b">React updates the `DOM`</span>
-3.  <span id="c459">`componentDidUpdate` is called</span>
+1. <span id="6864">`render` method is called</span>
+2. <span id="e13b">React updates the `DOM`</span>
+3. <span id="c459">`componentDidUpdate` is called</span>
 
 -   <span id="bfdd">`Unmounting`</span>
 -   <span id="10c1">The moment before a class component is removed from the component tree:</span>
@@ -1810,7 +1810,7 @@ Setting up a Consumer
 -   <span id="3c8b">Gives us ability to store information in an organized manner in a web app and quickly retrieve that information from anywhere in the app.</span>
 -   <span id="695d">`Redux`</span>
 -   <span id="00d5">Client Side Data Management</span>
--   <span id="dd41">Controls “Frontend State”</span>
+-   <span id="dd41">Controls "Frontend State”</span>
 -   <span id="d828">NOT Your Database</span>
 -   <span id="855a">NOT Component State</span>
 -   <span id="4c1a">Just used for managing Data</span>
@@ -1829,9 +1829,9 @@ Setting up a Consumer
 -   <span id="8bb8">Make Changes to Frontend State Where did Redux come from?</span>
 -   <span id="6d0b">There are three central philosophies of Redux:</span>
 
-1.  <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
-2.  <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
-3.  <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
+1. <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
+2. <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
+3. <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
 
 -   <span id="117f">When doing a project with simpler global state requirements, it may be better to choose React's Context API over Redux.</span>
 -   <span id="5d3d">Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary</span>
@@ -2460,7 +2460,7 @@ The `<NavLink>` works just like a `<Link>`, but with a little extra functionalit
 
 The `activeClassName` prop of the `NavLink` component allows you to set a CSS class name for styling the `NavLink` when its route is active. By default, the `activeClassName` is already set to `active`. This means that you simply need to add an `.active` class to your CSS file to add active styling to your link. A `NavLink` will be active if its `to` prop path matches the current URL.
 
-Let's change your “Users”, “Hello”, and “Andrew's Profile” links to be different colors and have a larger font size when active.
+Let's change your "Users”, "Hello”, and "Andrew's Profile” links to be different colors and have a larger font size when active.
 
     <NavLink to="/">App</NavLink>
     <NavLink activeClassName="red" to="/users">Users</NavLink>
@@ -2701,7 +2701,7 @@ In this article, you learned:
 
 ### React Builds
 
-A “build” is the process of converting code into something that can actually execute or run on the target platform. A “front-end build” is a process of preparing a front-end or client-side application for the browser.
+A "build” is the process of converting code into something that can actually execute or run on the target platform. A "front-end build” is a process of preparing a front-end or client-side application for the browser.
 
 With React applications, that means (at a minimum) converting JSX to something that browsers can actually understand. When using Create React App, the build process is automatically configured to do that and a lot more.
 
@@ -2776,7 +2776,7 @@ At a high level, here's what happens when you run `npm start`:
 
 ### Ejecting
 
-Create React App provides a script that you can run to “eject” your application from the Create React App tooling. When you eject your application, all of the hidden stuff is exposed so that you can review and customize it.
+Create React App provides a script that you can run to "eject” your application from the Create React App tooling. When you eject your application, all of the hidden stuff is exposed so that you can review and customize it.
 
 > _The need to customize Create React App rarely happens. Also, don't eject an actual project as it's a one-way trip! Once a Create React App project has been ejected, there's no going back (though you could always undo the ejection process by reverting to an earlier commit if you're using source control)._
 
@@ -3059,7 +3059,7 @@ Your `Green`, `Indigo`, `Orange`, `Violet`, and `Yellow` components will look so
 
     export default Color;
 
-Now start your server and verify you can see the “Rainbow Router!” header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
+Now start your server and verify you can see the "Rainbow Router!” header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
 
 ### Phase 1: Routes
 
@@ -3136,7 +3136,7 @@ Begin by using the <a href="https://github.com/facebook/create-react-app" class=
 
     npx create-react-app exploring-react-builds --template @appacademy/simple
 
-> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the _`.git` _file._
+> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the_`.git` _file._
 
 Update the `App` component:
 
@@ -3418,7 +3418,7 @@ Now run your application using `npm start`. Open your browser's developer tools 
 
 The JSX in the component's `render` method has been converted to JavaScript but the `ClassComponent` ES2015 class is left alone. This makes sense though as JSX isn't natively supported by any browser while ES2015 classes have been natively supported by browsers for awhile now.
 
-But what if you need to target a version of a browser that doesn't support ES2015 classes? You can use the <a href="https://caniuse.com/#feat=es6-class" class="markup--anchor markup--p-anchor">“Can I use…”</a> website to see when browsers started supporting ES2105 (or ES6) classes. Starting with version 49, Chrome natively supported classes. But imagine that you need to support Chrome going back to version 30, a version of Chrome that doesn't support classes.
+But what if you need to target a version of a browser that doesn't support ES2015 classes? You can use the <a href="https://caniuse.com/#feat=es6-class" class="markup--anchor markup--p-anchor">"Can I use…”</a> website to see when browsers started supporting ES2105 (or ES6) classes. Starting with version 49, Chrome natively supported classes. But imagine that you need to support Chrome going back to version 30, a version of Chrome that doesn't support classes.
 
 Change the `browserslist.development` property in the `package.json` file to this:
 
@@ -3684,8 +3684,8 @@ Open a browser and browse to the URL `http://localhost:9000/`. You should see yo
 
 Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
--   <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
--   <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
+-   <span id="58e7"><a href="<<http://localhost:9000/image>>" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
+-   <span id="3fa9"><a href="<<http://localhost:9000/class-component>>" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
 

@@ -73,8 +73,8 @@ Plus resources for learning data structures and algorithms in python at the bott
     print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 -   <span id="995c">The arithmetic operators are the same between JS and Python, with two additions:</span>
--   <span id="794f">“\*\*” : Double asterisk for exponent.</span>
--   <span id="dff1">“//” : Integer Division.</span>
+-   <span id="794f">"\*\*" : Double asterisk for exponent.</span>
+-   <span id="dff1">"//" : Integer Division.</span>
 -   <span id="658b">There are no spaces between math operations in Python.</span>
 -   <span id="d944">Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.</span>
 -   <span id="4180">There are no `++` and `--` in Python, the only shorthand operators are:</span>
@@ -150,7 +150,7 @@ Plus resources for learning data structures and algorithms in python at the bott
     '''.count('the '))                # => 4
 
 -   <span id="1bbc">You can use `+` to concatenate strings, just like in JS.</span>
--   <span id="c0f6">You can also use “\*” to repeat strings or multiply strings.</span>
+-   <span id="c0f6">You can also use "\*" to repeat strings or multiply strings.</span>
 -   <span id="4d7f">Use the `format()` function to use placeholders in a string to input values later on.</span>
 
 <!-- -->
@@ -1320,7 +1320,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 -   <span id="e36d"><a href="https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html" class="markup--anchor markup--li-anchor">Combinatorics Algorithms for Coding Interviews (2018)</a></span>
 -   <span id="ac6d"><a href="https://github.com/ZoranPandovski/al-go-rithms" class="markup--anchor markup--li-anchor">Algorithms written in different programming languages</a> (<a href="https://zoranpandovski.github.io/al-go-rithms/" class="markup--anchor markup--li-anchor">Web</a>)</span>
 -   <span id="ca55"><a href="https://johnlekberg.com/blog/2020-10-25-seq-align.html" class="markup--anchor markup--li-anchor">Solving the Sequence Alignment problem in Python (2020)</a></span>
--   <span id="e21b"><a href="https://github.com/bingmann/sound-of-sorting" class="markup--anchor markup--li-anchor">The Sound of Sorting</a> — Visualization and “Audibilization” of Sorting Algorithms. (<a href="https://panthema.net/2013/sound-of-sorting/" class="markup--anchor markup--li-anchor">Web</a>)</span>
+-   <span id="e21b"><a href="https://github.com/bingmann/sound-of-sorting" class="markup--anchor markup--li-anchor">The Sound of Sorting</a> — Visualization and "Audibilization" of Sorting Algorithms. (<a href="https://panthema.net/2013/sound-of-sorting/" class="markup--anchor markup--li-anchor">Web</a>)</span>
 -   <span id="d619"><a href="https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/" class="markup--anchor markup--li-anchor">Miniselect: Practical and Generic Selection Algorithms (2020)</a></span>
 -   <span id="0e30"><a href="https://chasewilson.dev/blog/slowest-quicksort/" class="markup--anchor markup--li-anchor">The Slowest Quicksort (2019)</a></span>
 -   <span id="9e0b"><a href="https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/" class="markup--anchor markup--li-anchor">Functional Algorithm Design (2020)</a></span>
@@ -1333,7 +1333,7 @@ Plus resources for learning data structures and algorithms in python at the bott
 ### Data Structures:
 
 -   <span id="b39d"><a href="https://github.com/floyernick/Data-Structures-and-Algorithms" class="markup--anchor markup--li-anchor">Data Structures and Algorithms implementation in Go</a></span>
--   <span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I “recognize” and know by name?</a></span>
+-   <span id="1c2b"><a href="https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name" class="markup--anchor markup--li-anchor">Which algorithms/data structures should I "recognize" and know by name?</a></span>
 -   <span id="8e46"><a href="https://xlinux.nist.gov/dads/" class="markup--anchor markup--li-anchor">Dictionary of Algorithms and Data Structures</a></span>
 -   <span id="987b"><a href="https://g1thubhub.github.io/data-structure-zoo.html" class="markup--anchor markup--li-anchor">Phil's Data Structure Zoo</a></span>
 -   <span id="617d"><a href="https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf" class="markup--anchor markup--li-anchor">The Periodic Table of Data Structures</a> (<a href="https://news.ycombinator.com/item?id=18314555" class="markup--anchor markup--li-anchor">HN</a>)</span>

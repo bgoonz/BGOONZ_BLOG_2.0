@@ -90,6 +90,6 @@ No
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 -   [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global</a>

@@ -133,7 +133,7 @@ Properties could be some variable that it's storing or some methods that it's us
 
 I also visualize an object as a table.
 
-The main difference is that object's “index” need not be numbers and is not necessarily sequenced.
+The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
@@ -243,7 +243,7 @@ O(n) O(n) O(1) O(n)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*yUiQ-NaPKeLQnN7n" class="graf-image" /></figure>### *Definition*
 
-> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
+> _A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia_
 
 Complexity  
 Average  
@@ -263,7 +263,7 @@ To get a full overview of the time and space complexity of the Tree data structu
 -   <span id="fbda">Much more relaxed in structure than a tree.</span>
 -   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+-   <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 -   <span id="8f45">Any number of edges may leave a given node</span>
 -   <span id="51cf">A Path is a sequence of nodes on a graph</span>
 

@@ -19,7 +19,7 @@ As pointed out in a previous article that deals with reading data from files, fi
 
 The common methods to operate with files are `open()` to open a file, `seek()` to set the file's current position at the given offset, and `close()` to close the file afterwards. The `open()` method returns a file handle that represents a <a href="https://docs.python.org/3/glossary.html#term-file-object" class="markup--anchor markup--p-anchor">file object</a> to be used to access the file for reading, writing, or appending.
 
-Writing to a file requires a few decisions — the name of the file in which to store data and the access mode of the file. Available are two modes, writing to a new file (and overwriting any existing data) and appending data at the end of a file that already exists. The according abbreviations are “w”, and “a”, and have to be specified before opening a file.
+Writing to a file requires a few decisions — the name of the file in which to store data and the access mode of the file. Available are two modes, writing to a new file (and overwriting any existing data) and appending data at the end of a file that already exists. The according abbreviations are "w", and "a", and have to be specified before opening a file.
 
 In this article we will explain how to write data to a file line by line, as a list of lines, and appending data at the end of a file.
 
@@ -66,7 +66,7 @@ This happens because **the** `writelines()` **method does not automatically add 
 
 _Listing 5_
 
-Now, the output file “helloworld.txt” has the desired content as shown in _Listing 6_:
+Now, the output file "helloworld.txt" has the desired content as shown in _Listing 6_:
 
     $ cat helloworld.txt
     a first line of text

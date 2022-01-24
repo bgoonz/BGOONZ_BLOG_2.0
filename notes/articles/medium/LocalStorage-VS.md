@@ -73,7 +73,7 @@ That's allowed for historical reasons, and mostly works, but generally not recom
 
 ### Looping over keys
 
-As we've seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+As we've seen, the methods provide "get/set/remove by key" functionality. But how to get all saved values or keys?
 
 Unfortunately, storage objects are not iterable.
 
@@ -102,7 +102,7 @@ It iterates over keys, but also outputs few built-in fields that we don't need:
       alert(`${key}: ${localStorage.getItem(key)}`);
     }
 
-…Or just get the “own” keys with `Object.keys` and then loop over them if needed:
+…Or just get the "own" keys with `Object.keys` and then loop over them if needed:
 
     let keys = Object.keys(localStorage);
     for(let key of keys) {
@@ -162,11 +162,11 @@ That's exactly because `sessionStorage` is bound not only to the origin, but als
 
 When the data gets updated in `localStorage` or `sessionStorage`, <a href="https://www.w3.org/TR/webstorage/#the-storage-event" class="markup--anchor markup--p-anchor">storage</a> event triggers, with properties:
 
--   <span id="9c38">`key` – the key that was changed (`null` if `.clear()` is called).</span>
--   <span id="1cd8">`oldValue` – the old value (`null` if the key is newly added).</span>
--   <span id="df18">`newValue` – the new value (`null` if the key is removed).</span>
--   <span id="bda8">`url` – the url of the document where the update happened.</span>
--   <span id="cb21">`storageArea` – either `localStorage` or `sessionStorage` object where the update happened.</span>
+-   <span id="9c38">`key` - the key that was changed (`null` if `.clear()` is called).</span>
+-   <span id="1cd8">`oldValue` - the old value (`null` if the key is newly added).</span>
+-   <span id="df18">`newValue` - the new value (`null` if the key is removed).</span>
+-   <span id="bda8">`url` - the url of the document where the update happened.</span>
+-   <span id="cb21">`storageArea` - either `localStorage` or `sessionStorage` object where the update happened.</span>
 
 The important thing is: the event triggers on all `window` objects where the storage is accessible, except the one that caused it.
 

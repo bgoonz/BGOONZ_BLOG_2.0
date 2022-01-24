@@ -8,7 +8,7 @@ sections:
     content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js) ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab) ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)\n"
     actions:
       - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
+        url: 'https://bgoonz-blog.netlify.app/docs/faq/contact/'
         style: secondary
         icon_class: linkedin
         new_window: true
@@ -24,10 +24,10 @@ sections:
           complexity?
         actions:
           - label: Get Started
-            url: /docs
+            url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
             style: link
         title: A Quick Guide To Big O
-        image: images/my-back.png
+        image: images/outdated-packages-732a4523.png
         title_url: >-
           https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
       - content: |
@@ -86,7 +86,7 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: angolia
+        title_url: 'https://www.algolia.com/doc/'
         image_alt: angolia
         content: |
           ## Full Text Search
@@ -96,37 +96,13 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: neural networks
+        title_url: >-
+          https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
         image_alt: neural networks
-        content: >+
+        content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-        actions: []
-        type: grid_item
-        image: images/neural.PNG
-      - title: Jamstack
-        title_url: jamstack
-        image_alt: jamstack
-        content: |
-          ##### Why Jamstack Jamstack is the new standard architecture for the
-          web. Using Git workflows and modern build tools, pre-rendered content
-          is served to a CDN and made dynamic through APIs and serverless
-          functions. Technologies in the stack include JavaScript frameworks,
-          Static Site Generators, Headless CMSs, and CDNs.
-        actions: []
-        type: grid_item
-        image: images/jamstack.png
-      - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
-        actions: []
-        type: grid_item
-        image: images/eventloop.gif
-      - title: NJ Devils
-        image_alt: nj-devils
-        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
           - label: lorem-ipsum
             url: '#'
@@ -135,12 +111,58 @@ sections:
             new_window: false
             no_follow: false
         type: grid_item
-        image: images/njdevils.jpg
-        title_url: 'https://www.allaboutthejersey.com/'
-      - title: ITER Fusion Reactor Experiment (Southern France)
+        image: images/neural.PNG
+      - title: Jamstack
+        title_url: jamstack
+        image_alt: jamstack
+        content: >
+          > Why Jamstack Jamstack is the new standard architecture for the...
+
+
+          \*\*
+
+
+          > *web. Using Git workflows and modern build tools, pre-rendered
+          content
+
+          > is served to a CDN and made dynamic through APIs and serverless
+
+          > functions. Technologies in the stack include JavaScript frameworks,
+
+          > Static Site Generators, Headless CMSs, and CDNs.*
+        actions: []
+        type: grid_item
+        image: images/jamstack.png
+      - title: Asynchronous JavaScript
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
-        content: |+
+        content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
+        actions:
+          - label: lorem-ipsum
+            url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
+            style: secondary
+            icon_class: dev
+            new_window: true
+            no_follow: false
+        type: grid_item
+        image: images/eventloop.gif
+      - title: NJ Devils
+        image_alt: nj-devils
+        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
+        actions:
+          - label: nj-devils link
+            url: 'https://www.allaboutthejersey.com/'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+        type: grid_item
+        image: images/njdev-219301cd.jpg
+        title_url: 'https://www.allaboutthejersey.com/'
+      - title: ITER Fusion Reactor Experiment (Southern France)
+        title_url: 'https://www.iter.org/'
+        image_alt: Nuclear Fusion
+        content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
           conducting fusion experiments with tritium — a rare and radioactive
@@ -149,9 +171,15 @@ sections:
           design — the world's most developed approach to fusion energy. It is
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
-        actions: []
+        actions:
+          - label: Learn More
+            url: 'https://www.iter.org/'
+            style: secondary
+            icon_class: dev
+            new_window: true
+            no_follow: false
         type: grid_item
-        image: images/iter-zoomed.PNG
+        image: images/iter-c7508519.jpg
     type: section_grid
   - section_id: features-two-col
     type: section_grid
@@ -160,17 +188,18 @@ sections:
     grid_items:
       - title: Resume
         actions:
-          - label: Learn More
+          - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
+            style: secondary
           - label: Download PDF
-            url: '#'
-            style: link
+            url: >-
+              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
             type: action
-        image: images/bryan_guner_resume_2021-v4IMG.jpeg
+        image: images/image-of-resume.png
         title_url: >-
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
@@ -179,20 +208,54 @@ sections:
         actions:
           - label: Learn More
             url: /showcase
-            style: link
-        image: images/My Post.png
+            style: secondary
+        image_alt: portfolio of websites
+        image: images/portfolio-91689538.jpg
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
-    image_alt: rotating pages
+    section_id: Mini Projects
+    image_alt: showcase
     image_position: left
-    content: |-
+    content: >-
+      <iframe src="https://random-static-html-deploys.netlify.app/"   
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
+    actions: []
+    type: section_content
+  - title: Latest & Greatest
+    section_id: new content
+    image_alt: animated gif
+    image_position: right
+    content: |
+      # ***What I've been working on lately:***
+      ## Web Dev Utilitiy Tools
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/"
+        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://cheatsheets-42.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+  - section_id: tools
+    image_alt: web tools
+    image_position: left
+    content: |
+      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+    actions: []
+    type: section_content
+    title: Tools Showcase
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left

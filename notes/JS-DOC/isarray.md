@@ -24,7 +24,7 @@ The value to be checked.
 
 If the value is an [`Array`](../array), `true` is returned; otherwise, `false` is.
 
-See the article [“Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
+See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
 
 ## Examples
 
