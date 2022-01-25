@@ -1,4 +1,4 @@
-# VS Code Performance - How to Optimize Visual Studio Code and Choose the "Best" Extensions
+# VS Code Performance – How to Optimize Visual Studio Code and Choose the "Best" Extensions
 
 > ## Excerpt
 >

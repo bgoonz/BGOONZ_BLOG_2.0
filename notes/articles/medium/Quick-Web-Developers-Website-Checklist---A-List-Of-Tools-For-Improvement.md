@@ -266,7 +266,7 @@ Web crawlers (like Google's bots) read through your website to get an understand
 
 Historically, this has meant using the following semantic tags:
 
--   <span id="93f0">h1-h6 (heading tags)</span>
+-   <span id="93f0">h1–h6 (heading tags)</span>
 -   <span id="f999">p (paragraph tags)</span>
 -   <span id="c0ab">ul/ol (unordered and ordered Lists)</span>
 

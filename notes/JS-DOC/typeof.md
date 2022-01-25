@@ -252,6 +252,6 @@ Some non-standard IE properties return other values ([tc39/ecma262\#1440 (commen
 -   [`instanceof`](instanceof)
 -   [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)
 
-© 2005-2021 MDN contributors.  
+© 2005–2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof</a>

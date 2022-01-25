@@ -216,7 +216,7 @@ Update:
 
 #### Projects
 
--   <span id="1d0e"><a href="https://javascript30.com/" class="markup--anchor markup--li-anchor">JS 30 For 30-30 Projects for 30 Days</a></span>
+-   <span id="1d0e"><a href="https://javascript30.com/" class="markup--anchor markup--li-anchor">JS 30 For 30–30 Projects for 30 Days</a></span>
 -   <span id="3a4d"><a href="https://enlight.ml/" class="markup--anchor markup--li-anchor">Learn to Code with Projects — enlight.ml</a></span>
 -   <span id="a2e4"><a href="https://medium.com/@___aerox___/the-beginning-of-an-adventure-13-weeks-of-javascript-78107605d533#.xgqnrstd1" class="markup--anchor markup--li-anchor">13 Weeks of JavaScript (Medium)</a> — TONS of links to JS resources</span>
 

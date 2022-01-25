@@ -58,7 +58,7 @@ Also unsupported is the unary operator (`+`), [in order to not break asm.js](htt
     const multi = previousMaxSafe * 2n
     // ↪ 18014398509481982n
 
-    const subtr = multi - 10n
+    const subtr = multi – 10n
     // ↪ 18014398509481972n
 
     const mod = multi % 10n
@@ -68,7 +68,7 @@ Also unsupported is the unary operator (`+`), [in order to not break asm.js](htt
     // ↪ 18014398509481984n
 
     bigN * -1n
-    // ↪ -18014398509481984n
+    // ↪ –18014398509481984n
 
 The `/` operator also works as expected with whole numbers — but operations with a fractional result will be truncated when used with a BigInt value — they won't return any fractional digits.
 

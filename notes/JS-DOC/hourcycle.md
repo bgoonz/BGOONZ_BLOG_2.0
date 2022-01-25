@@ -8,7 +8,7 @@ There are 2 main types of time keeping conventions (clocks) used around the worl
 
 ### Valid hour cycle types
 
-<table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1-12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0-23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0-11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1-24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
+<table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
 
 ## Examples
 

@@ -57,7 +57,7 @@ The for...in loop [shouldn't be used for Array iteration](../statements/for...in
 ## See also
 
 -   `for...in`
--   `for...of` - also disallows an initializer in both strict and non-strict mode.
--   `for` - preferred for array iteration, allows to define an initializer.
+-   `for...of` – also disallows an initializer in both strict and non-strict mode.
+-   `for` – preferred for array iteration, allows to define an initializer.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer</a>

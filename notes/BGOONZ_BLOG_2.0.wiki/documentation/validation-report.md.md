@@ -64,6 +64,7 @@
 
 10. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
 
+
     [From line 37, column 4545; to line 37, column 4738](#l37c4738)
 
     Attributes for element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element):
@@ -92,41 +93,51 @@
 
 11. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 37, column 4545; to line 37, column 4738](#l37c4738)
 
 12. **Error**: The `allowtransparency` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
+
 
     [From line 37, column 4545; to line 37, column 4738](#l37c4738)
 
 13. **Error**: Bad value for attribute `id` on element [`h2`](https://html.spec.whatwg.org/multipage/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements): An ID must not be the empty string.
 
+
     [From line 37, column 5483; to line 37, column 5492](#l37c5492)
 
 14. **Warning**: Empty heading.
+
 
     [From line 37, column 5483; to line 37, column 5492](#l37c5492)
 
 15. **Error**: Bad value `/neural networks` for attribute `href` on element [`a`](https://html.spec.whatwg.org/multipage/#the-a-element): Illegal character in path segment: space is not allowed.
 
+
     [From line 37, column 5732; to line 37, column 5758](#l37c5758)
 
 16. **Error**: An `img` element must have an `alt` attribute, except under certain conditions. For details, consult [guidance on providing text alternatives for images](http://www.w3.org/wiki/HTML/Usage/TextAlternatives 'About providing text alternatives for images.').
+
 
     [From line 37, column 7136; to line 37, column 7166](#l37c7166)
 
 17. **Error**: Bad value `/images/My Post.png` for attribute `src` on element [`img`](https://html.spec.whatwg.org/multipage/#the-img-element): Illegal character in path segment: space is not allowed.
 
+
     [From line 37, column 7575; to line 37, column 7606](#l37c7606)
 
 18. **Error**: An `img` element must have an `alt` attribute, except under certain conditions. For details, consult [guidance on providing text alternatives for images](http://www.w3.org/wiki/HTML/Usage/TextAlternatives 'About providing text alternatives for images.').
+
 
     [From line 37, column 7575; to line 37, column 7606](#l37c7606)
 
 19. **Error**: Bad value `Mini Projects` for attribute `id` on element [`section`](https://html.spec.whatwg.org/multipage/#the-section-element): An ID must not contain whitespace.
 
+
     [From line 37, column 7887; to line 37, column 7945](#l37c7945)
 
 20. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
+
 
     [From line 37, column 8142; to line 39, column 68](#l39c68)
 
@@ -156,9 +167,11 @@
 
 21. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 37, column 8142; to line 39, column 68](#l39c68)
 
 22. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
+
 
     [From line 39, column 528; to line 41, column 69](#l41c69)
 
@@ -188,9 +201,11 @@
 
 23. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 39, column 528; to line 41, column 69](#l41c69)
 
 24. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
+
 
     [From line 41, column 399; to line 43, column 68](#l43c68)
 
@@ -220,17 +235,21 @@
 
 25. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 41, column 399; to line 43, column 68](#l43c68)
 
 26. **Error**: Duplicate ID `lorem-ipsum`.
+
 
     [From line 43, column 145; to line 43, column 201](#l43c201)
 
 27. **Warning**: The first occurrence of ID `lorem-ipsum` was here.
 
+
     [From line 41, column 146; to line 41, column 202](#l41c202)
 
 28. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
+
 
     [From line 43, column 397; to line 45, column 69](#l45c69)
 
@@ -260,9 +279,11 @@
 
 29. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 43, column 397; to line 45, column 69](#l45c69)
 
 30. **Error**: Attribute `allow` not allowed on element [`iframe`](https://html.spec.whatwg.org/multipage/#the-iframe-element) at this point.
+
 
     [From line 45, column 417; to line 47, column 68](#l47c68)
 
@@ -292,17 +313,21 @@
 
 31. **Error**: The `frameborder` attribute on the `iframe` element is obsolete. [Use CSS instead](http://wiki.whatwg.org/wiki/Presentational_elements_and_attributes 'About using CSS instead of presentational elements and attributes.').
 
+
     [From line 45, column 417; to line 47, column 68](#l47c68)
 
 32. **Error**: Duplicate ID `lorem-ipsum`.
+
 
     [From line 47, column 145; to line 47, column 200](#l47c200)
 
 33. **Warning**: The first occurrence of ID `lorem-ipsum` was here.
 
+
     [From line 41, column 146; to line 41, column 202](#l41c202)
 
 34. **Warning**: This document appears to be written in English. Consider adding `lang="en"` (or variant) to the `html` start tag.
+
 
     [From line 1, column 16; to line 1, column 21](#l1c21)
 

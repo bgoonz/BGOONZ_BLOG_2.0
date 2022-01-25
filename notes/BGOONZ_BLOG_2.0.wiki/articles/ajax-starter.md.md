@@ -23,7 +23,7 @@ The [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpR
 
 -   [Analyzing and manipulating the response of the server](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#handling_responses)
 -   [Monitoring the progress of a request](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#monitoring_progress)
--   [Submitting forms and upload binary files](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#submitting_forms_and_uploading_files) - in _pure_ Ajax, or using [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) objects
+-   [Submitting forms and upload binary files](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#submitting_forms_and_uploading_files) – in _pure_ Ajax, or using [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) objects
 -   Using Ajax within [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker)
 
 [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)

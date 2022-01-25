@@ -18,7 +18,7 @@ A string representing the given date in the [ISO 8601](https://en.wikipedia.org/
 
     console.log(today.toISOString())  // Returns 2011-10-05T14:48:00.000Z
 
-The above example uses parsing of a non-standard string value that may not be correctly parsed in non-Mozilla browsers.
+The above example uses parsing of a non–standard string value that may not be correctly parsed in non–Mozilla browsers.
 
 ## Specifications
 

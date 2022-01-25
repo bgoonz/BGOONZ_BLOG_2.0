@@ -759,7 +759,7 @@ Since [`DOMString`](/en-US/docs/Web/API/DOMString "/en-US/docs/Web/API/DOMString
 
 Here are the two possible methods.
 
-### Solution #1 - escaping the string before encoding it
+### Solution #1 – escaping the string before encoding it
 
 ```js
 function utf8_to_b64( str ) {
@@ -788,7 +788,7 @@ function b64EncodeUnicode(str) {
  b64EncodeUnicode('✓ à la mode'); // "4pyTIMOgIGxhIG1vZGU="
 ```
 
-### Solution #2 - rewriting `atob()` and `btoa()` using `TypedArray`s and UTF-8
+### Solution #2 – rewriting `atob()` and `btoa()` using `TypedArray`s and UTF-8
 
 > **Note:** The following code is also useful to get an [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from a Base64 string and/or viceversa ([see below](#appendix_decode_a_base64_string_to_uint8array_or_arraybuffer)).
 
@@ -2556,7 +2556,7 @@ These attacks succeed if the Web app does not employ enough validation or encodi
 - _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
 - [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
 - [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
-- [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+- [XSS Attack – Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
 
 ---
 
@@ -5713,7 +5713,7 @@ _ EmbedLiveSample('Example', '300', '280') }}
 
 In terms of grid sizing, gaps act as if they were a regular grid track however nothing can be placed into the gap. The gap acts as if the grid line at that location has gained extra size, so any grid item placed after that line begins at the end of the gap.
 
-The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to “the gutter size” unless you know that your design has not introduced any additional space with one of these methods.
+The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap – therefore the grid-gap properties should not be seen as equal to “the gutter size” unless you know that your design has not introduced any additional space with one of these methods.
 
 #### See also
 
@@ -8106,7 +8106,7 @@ As minification makes code less legible to humans, developer tools have 'prettif
 
 > A **manipulator-in-the-middle attack** (MitM) intercepts a communication between two systems. For example, a Wi-Fi router can be compromised.
 
-Comparing this to physical mail: If you're writing letters to each other, the mail carrier can intercept each letter you mail. They open it, read it, eventually modify it, and then repackage the letter and only then send it to whom you intended to sent the letter for. The original recipient would then mail you a letter back, and the mail carrier would again open the letter, read it, eventually modify it, repackage it, and give it to you. You wouldn't know there's a manipulator in the middle in your communication channel - the mail carrier is invisible to you and to your recipient.
+Comparing this to physical mail: If you're writing letters to each other, the mail carrier can intercept each letter you mail. They open it, read it, eventually modify it, and then repackage the letter and only then send it to whom you intended to sent the letter for. The original recipient would then mail you a letter back, and the mail carrier would again open the letter, read it, eventually modify it, repackage it, and give it to you. You wouldn't know there's a manipulator in the middle in your communication channel – the mail carrier is invisible to you and to your recipient.
 
 In physical mail and in online communication, MITM attacks are tough to defend. A few tips:
 
@@ -8310,7 +8310,7 @@ Web frameworks such as [AngularJS](https://en.wikipedia.org/wiki/AngularJS) and 
 
 #### See also
 
-- _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+- _interwiki("wikipedia", "Model–view–controller"_) on Wikipedia
 
 ---
 

@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-## The HTTP Protocol
+## The HTTP Protocol&#xA;&#xA;
 
 -   Requires: a connection between client and server
 

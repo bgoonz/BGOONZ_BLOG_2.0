@@ -1051,7 +1051,7 @@ print('{:,}'.format(1234567890))
 ```text
 d = datetime.datetime(2020, 7, 4, 12, 15, 58)
 print('{:%Y-%m-%d %H:%M:%S}'.format(d))
-'2020-07-04 12:15:58'
+'2020–07–04 12:15:58'
 ```
 
 ## **Percentage**

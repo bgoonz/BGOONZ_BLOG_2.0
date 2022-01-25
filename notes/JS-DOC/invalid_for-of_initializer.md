@@ -46,7 +46,7 @@ You need to remove the initializer (`value = 50`) in the head of the `for-of` lo
 ## See also
 
 -   `for...of`
--   `for...in` - disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
--   `for` - allows to define an initializer when iterating.
+-   `for...in` – disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
+-   `for` – allows to define an initializer when iterating.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer</a>

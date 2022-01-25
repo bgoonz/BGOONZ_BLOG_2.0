@@ -14,7 +14,7 @@ The JavaScript exception "illegal character" occurs when there is an invalid or 
 
 ## What went wrong?
 
-There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`-`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
+There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`–`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
 
 ## Examples
 
@@ -25,8 +25,8 @@ Some characters look similar, but will cause the parser to fail interpreting you
     "This looks like a string”;  // SyntaxError: illegal character
                                  // " and ” are not " but look like this
 
-    42 - 13;                     // SyntaxError: illegal character
-                                 // - is not - but looks like this
+    42 – 13;                     // SyntaxError: illegal character
+                                 // – is not - but looks like this
 
     var foo = 'bar';             // SyntaxError: illegal character
                                  // <37e> is not ; but looks like this

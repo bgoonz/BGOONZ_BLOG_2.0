@@ -52,7 +52,7 @@
                     },
                     {
                         "label": "JavaScript",
-                        "url": "/docs/javascript",
+                        "url": "javascript",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -77,6 +77,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Top Blog Posts",
+                        "url": "https://blog-w-comments.vercel.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "platform docs",
                         "url": "blog/platform-docs/",
                         "style": "primary",
@@ -95,11 +104,11 @@
                         "type": "action"
                     },
                     {
-                        "label": "Blog with Comments",
-                        "url": "https://blog-w-comments.vercel.app/",
+                        "label": "Blog w Comments",
+                        "url": "/blogWcomments/",
                         "style": "primary",
                         "icon_class": "dev",
-                        "new_window": true,
+                        "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -119,14 +128,6 @@
                         "label": "Job Boards",
                         "url": "interview/job-boards",
                         "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    },
-                    {
-                        "label": "lorem-ipsum",
-                        "url": "#",
-                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
@@ -169,6 +170,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Gallery",
+                        "url": "/docs/gallery",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Top Repos",
                         "url": "/docs",
                         "style": "primary",
@@ -187,7 +197,7 @@
                     }
                 ],
                 "type": "action_menu",
-                "url": "/docs/tools/archive/"
+                "url": "docs/tools/Archive"
             },
             {
                 "label": "Projects",
@@ -217,8 +227,17 @@
                         "type": "action"
                     },
                     {
+                        "label": "WebAudioLab",
+                        "url": "https://panoramic-eggplant-452e4.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "SearchAwesome",
-                        "url": "https://search-awesome.vercel.app/",
+                        "url": "https://bgoonz.github.io/searchAwesome/",
                         "style": "primary",
                         "icon_class": "github",
                         "new_window": true,
@@ -465,14 +484,6 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false
             }
         ],
         "links": [
@@ -484,22 +495,6 @@
                 "new_window": true,
                 "no_follow": false,
                 "type": "action"
-            },
-            {
-                "label": "Docs",
-                "url": "https://bryan-guner.gitbook.io/my-docs/",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": true,
-                "no_follow": false
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "#",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false
             }
         ],
         "content": "@bgoonz on almost every platform"

@@ -2043,3 +2043,89 @@ Guner
  <br>
  <br>
 <br>
+<!-------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="3D Drag out menu with guitar"
+src="https://codepen.io/bgoonz/embed/QWpmXxq?height=375&theme=dark&default-tab=css,result" frameborder="no"
+loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href='https://codepen.io/bgoonz/pen/QWpmXxq'>3D Drag out menu with guitar</a> by Bryan C
+Guner
+(<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+<br>
+<!-------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<iframe loading="lazy" height="575" style="width: 90%;" scrolling="no"
+title="Navigation bar with circle flexible highlight POC"
+src="https://codepen.io/bgoonz/embed/eYvMwKL?height=375&theme=dark&default-tab=css,result" frameborder="no"
+loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href='https://codepen.io/bgoonz/pen/eYvMwKL'>Navigation bar with circle flexible highlight
+  POC</a> by
+Bryan C Guner
+(<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+<br>
+<!-------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="gsuiOscilloscope"
+src="https://codepen.io/bgoonz/embed/eYvrgpe?height=375&theme=dark&default-tab=js,result" frameborder="no"
+loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href='https://codepen.io/bgoonz/pen/eYvrgpe'>gsuiOscilloscope</a> by Bryan C Guner
+(<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+<br>
+<!-------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<iframe loading="lazy" height="510" style="width: 90%;" scrolling="no" title="random quote(React.js)"
+src="https://codepen.io/bgoonz/embed/ZEeoyKv?height=510&theme-id=dark&default-tab=js,result" frameborder="no"
+loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href='https://codepen.io/bgoonz/pen/ZEeoyKv'>random quote(React.js)</a> by Bryan C Guner
+(<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+<br>
+<!-------------------------------------------------------------------------------------->
+<br>
+<br>
+<br>
+<iframe loading="lazy" height="575" style="width: 90%;" scrolling="no" title="Web Audio API: Lightning Talk"
+src="https://codepen.io/bgoonz/embed/GRWdvNm?height=375&theme-id=dark&default-tab=js,result" frameborder="no"
+loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href='https://codepen.io/bgoonz/pen/GRWdvNm'>Web Audio API: Lightning Talk</a> by Bryan C
+Guner
+(<a href='https://codepen.io/bgoonz'>@bgoonz</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+ <br>
+ <br>
+<hr>
+ <br>
+ <br>
+<br>
+<br>

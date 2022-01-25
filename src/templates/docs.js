@@ -45,7 +45,6 @@ export default class Docs extends React.Component {
                   <h1 className="post-title line-left">
                     {_.get(this.props, "pageContext.frontmatter.title", null)}
                   </h1>
-                    <div id="disqus_recommendations"></div>
                 </header>
                 <div className="post-content">
                   {htmlToReact(_.get(this.props, "pageContext.html", null))}

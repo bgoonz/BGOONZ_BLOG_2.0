@@ -21,7 +21,7 @@ Or [`NaN`](nan) when the first non-whitespace character cannot be converted to a
 
 `parseFloat` is a function property of the global object.
 
--   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`-`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
+-   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`–`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
 -   A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
 -   Leading and trailing spaces in the argument are ignored.
 -   If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).

@@ -250,7 +250,7 @@ console.log(removeEven([3, 2, 41, 3, 34]))
 
 Run
 
-This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
+This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in *O(n)O(n).*
 
 #### Solution #2: Using filter() and lambda function
 
@@ -417,7 +417,7 @@ This process will iterate over the string one character at a time. We can determ
 1.  The stack is empty.
 2.  The top element in the stack is not the right type.
 
-If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is _O(n)_.
+If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is *O(n)*.
 
 ### Queue: Generate Binary Numbers from 1 to n
 
@@ -556,13 +556,13 @@ The key is to generate consecutive binary numbers by appending 0 and 1 to previo
 
 Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.
 
-Since a queue follows the _First-In First-Out_ property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
+Since a queue follows the *First-In First-Out* property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
 
 Look at the code above. On line 7, `1` is enqueued. To generate the sequence of binary numbers, a number is dequeued and stored in the array `result`. On lines 11-12, we append `0` and `1` to produce the next numbers.
 
 Those new numbers are also enqueued at lines 14-15. The queue will take integer values, so it converts the string to an integer as it is enqueued.
 
-The time complexity of this solution is in _O(n)O(n)_ since constant-time operations are executed for n times.
+The time complexity of this solution is in *O(n)O(n)* since constant-time operations are executed for n times.
 
 ### Linked List: Reverse a linked list
 
@@ -714,7 +714,7 @@ We use a loop to iterate through the input list. For a `current` node, its link 
 -   Line 25 - Use `next` to go to the next node
 -   Line 29 - We reset the `head` pointer to point at the last node
 
-Since the list is traversed only once, the algorithm runs in _O(n)_.
+Since the list is traversed only once, the algorithm runs in *O(n)*.
 
 ### Tree: Find the Minimum Value in a Binary Search Tree
 
@@ -1130,4 +1130,4 @@ console.log(convertMax(maxHeap))
 
 Run
 
-We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes _O(nlog(n))O(nlog(n))_ time.
+We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes *O(nlog(n))O(nlog(n))* time.
