@@ -132,6 +132,6 @@ Note that in the last case there are no newly created objects.
 -   [`in`](../../operators/in)
 -   [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
-© 2005-2021 MDN contributors.  
+© 2005–2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</a>

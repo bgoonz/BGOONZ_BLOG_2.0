@@ -27,7 +27,7 @@ As a candidate, there are key next steps that you can and should after every int
 
 _Hi (name),_
 
-> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team's priorities), I'm even more excited to bring my skills in (1-3 relevant skills) to the team._
+> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team's priorities), I'm even more excited to bring my skills in (1–3 relevant skills) to the team._
 
 > _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don't hesitate to reach out._
 
@@ -276,7 +276,7 @@ WOMEN Networks
 
 #### EMAIL NO. 1: SOMEONE YOU USED TO WORK CLOSELY WITH
 
-Perhaps it's your supervisor from your college internship. Or maybe it's your favorite colleague from one of your previous jobs. Either way, nobody knows your skills and preferences better than the people you used to work side-by-side with-meaning they can be a huge help in your job search.
+Perhaps it's your supervisor from your college internship. Or maybe it's your favorite colleague from one of your previous jobs. Either way, nobody knows your skills and preferences better than the people you used to work side-by-side with–meaning they can be a huge help in your job search.
 
 _Hey \[Name\],_
 
@@ -295,7 +295,7 @@ _\[Your Name\]_
 
 ### EMAIL NO. 2: SOMEONE WHO WORKS IN YOUR DESIRED INDUSTRY
 
-Sending a note to someone who is already employed in the field you're eager to be a part of is always helpful, but especially when you're making a career change. Chances are good that he or she is connected to other people in the industry-some of whom might even be hiring.
+Sending a note to someone who is already employed in the field you're eager to be a part of is always helpful, but especially when you're making a career change. Chances are good that he or she is connected to other people in the industry–some of whom might even be hiring.
 
 _Hello \[Name\],_
 
@@ -331,7 +331,7 @@ Seek to leverage the connections you have with people you know and companies you
 
 **If personal connections don't come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
 
-1.  <span id="2139">Before or after submitting an application, **identify 1-3 professionals to reach out to** at the company to express interest in opportunities.</span>
+1.  <span id="2139">Before or after submitting an application, **identify 1–3 professionals to reach out to** at the company to express interest in opportunities.</span>
 2.  <span id="fb8b">**Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.</span>
 3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** _OR_ **If you have yet to hear back after 3 business days, follow-up.**</span>
 
@@ -366,7 +366,7 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 #### Experience Section
 
 -   <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
--   <span id="eca7">\[ \] I **have** written 2-4 power statements for each experience listed (okay to copy and paste from resume)</span>
+-   <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
 -   <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
 -   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
 -   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>

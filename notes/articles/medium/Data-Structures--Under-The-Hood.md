@@ -452,7 +452,7 @@ But we can simplify.
 -   <span id="d63d">We know the number of nodes on the last level is 2^{h-1},</span>
 -   <span id="1c97">So:</span>
 
-**n = 2^{h-1} \* 2-1  
+**n = 2^{h-1} \* 2–1  
 n = 2^{h-1} \* 2¹ — 1  
 n = 2^{h-1+1}- 1  
 n = 2^{h} — 1**

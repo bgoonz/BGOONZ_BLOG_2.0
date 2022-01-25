@@ -216,12 +216,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ---
 
-
-<details>
-
-<summary>  See More </summary>   
-
-
 ### Variables and Expressions
 
 -   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.</span>
@@ -572,7 +566,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
     print('{:%Y-%m-%d %H:%M:%S}'.format(d))
-    '2020-07-04 12:15:58'
+    '2020–07–04 12:15:58'
 
 ### Percentage
 
@@ -963,5 +957,3 @@ Or Checkout my personal Resource Site:
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-</details>

@@ -262,7 +262,7 @@ TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.sma
 
 ---
 
-XFN / Rel attr. (Xhtml Friends Network) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
+XFN / Rel attr. (Xhtml Friends Network)  ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 NOFOLLOW: [byfreefind](https://www.freefind.com/)\
 NOFOLLOW: [search engine](https://www.freefind.com/)\
 NOOPENER : [dev.to](https://dev.to/bgoonz)\

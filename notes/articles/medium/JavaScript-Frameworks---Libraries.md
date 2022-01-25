@@ -715,7 +715,7 @@ My Awesome JavaScript List Part 2
 
 > <a href="https://github.com/cameronroe/react-star-rating" class="markup--anchor markup--pullquote-anchor">react-star-rating</a> — A simple star rating component built with React.
 
-> <a href="https://github.com/ikr/react-star-rating-input" class="markup--anchor markup--pullquote-anchor">react-star-rating-input</a> — React.js component for entering 0-5 (or more) stars.
+> <a href="https://github.com/ikr/react-star-rating-input" class="markup--anchor markup--pullquote-anchor">react-star-rating-input</a> — React.js component for entering 0–5 (or more) stars.
 
 > Drag and Drop
 

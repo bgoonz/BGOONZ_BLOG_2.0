@@ -30,7 +30,6 @@ export default class Blog extends React.Component {
                   {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
                   <p className="page-subtitle">{_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
                   )}
-                  <div id="disqus_recommendations"></div>
                 </div>
               </header>
               <div className="inner-md outer">
