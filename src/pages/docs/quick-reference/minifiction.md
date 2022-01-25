@@ -24,7 +24,7 @@ Now, to minify a file called like_button.js, run in the terminal:
 
 This will produce a file called like_button.min.js with the minified code in the same directory. If you're typing this often, you can [create an npm script](https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633) to give this command a name.
 
-## How to Minify Your Minify your HTML, CSS and JavaScript Using an Online Tool&#xA;&#xA;
+## How to Minify Your Minify your HTML, CSS and JavaScript Using an Online Tool
 
 Many of these online tools have a similar process which involve the following steps:
 
@@ -53,7 +53,7 @@ That's it!
 
 Repeat the same process to minify your site's JavaScript and Html file(s) as well.
 
-### Overview&#xA;&#xA;
+### Overview
 
 Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.
 

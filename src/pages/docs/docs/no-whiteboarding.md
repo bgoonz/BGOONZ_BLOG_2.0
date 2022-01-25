@@ -1,16 +1,16 @@
 ---
-title: lorem-ipsum
+title: Companies that don't whiteboard
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Companies that don't whiteboard
 seo:
-    title: ''
+    title: 'Companies that don't whiteboard'
     description: ''
     robots: []
     extra: []
 template: docs
 ---
 
-## A - C&#xA;&#xA;
+## A - C
 
 -   [Ableton](https://www.ableton.com/en/about) | Berlin, Germany | Take-home programming task (discussed via Skype), then pair programming and debugging session on-site
 

@@ -12,7 +12,7 @@ template: docs
 
 # History Api
 
-# &#xA;&#xA;
+# 
 
 The DOM [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object provides access to the browser's session history (not to be confused for [WebExtensions history](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/history)) through the [history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history) object. It exposes useful methods and properties that let you navigate back and forth through the user's history, and manipulate the contents of the history stack.
 
@@ -138,7 +138,7 @@ You can read the state of the current history entry without waiting for a popsta
 
 -   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
 
-# Window.historyCopy to Clipboard&#xA;&#xA;
+# Window.historyCopy to Clipboard
 
 The Window.history read-only property returns a reference to the [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object, which provides an interface for manipulating the browser *session history* (pages visited in the tab or frame that the current page is loaded in).
 

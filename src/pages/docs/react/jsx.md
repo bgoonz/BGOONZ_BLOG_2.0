@@ -22,7 +22,7 @@ template: docs
 
 
 
-# Introducing JSX&#xA;&#xA;
+# Introducing JSX
 
 
 

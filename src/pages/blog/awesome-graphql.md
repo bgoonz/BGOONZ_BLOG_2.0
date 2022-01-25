@@ -1,12 +1,10 @@
 ---
 title: Awesome GraphQL
 subtitle: The Death Of REST
-date: '2021-09-30'
-thumb_image_alt: lorem-ipsum
-excerpt: lorem-ipsum
+excerpt: Graphql Resources
 seo:
-    title: ''
-    description: ''
+    title: 'Awesome GraphQL'
+    description: 'Graphql Resources'
     robots: []
     extra: []
 template: post
@@ -14,7 +12,7 @@ thumb_image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_L
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
 ---
 
-## Table of Contents&#xA;&#xA;
+## Table of Contents
 
 -   [Specification](https://github.com/dhruv-kumar-jha/awesome-graphql#spec)
 

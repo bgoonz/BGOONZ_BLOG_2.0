@@ -14,7 +14,7 @@ template: docs
 
 Classical JavaScript function syntax doesn't provide for any flexibility, be that a 1 statement function or an unfortunate multi-page function. Every time you need a function you have to type out the dreaded `function () {}`. More concise function syntax was one of the many reasons why [CoffeeScript](http://coffeescript.org/) gained so much momentum back in the day. This is especially pronounced in the case of tiny callback functions. Lets look at a Promise chain:
 
-```
+```js
 function getVerifiedToken(selector) {
   return getUsers(selector)
     .then(function (users) { return users[0]; })
@@ -81,7 +81,7 @@ emptyObject(); // ?
 
 Unfortunately there's no way to distinguish between empty block `{}` and an object `{}`. Because of that `emptyObject()` evaluates to `undefined` and `{}` interpreted as empty block. To return an empty object from fat arrow functions you have to surround it with brackets like so `({})`:
 
-```
+```js
 const emptyObject = () => ({});
 emptyObject(); // {}
 
@@ -89,7 +89,7 @@ emptyObject(); // {}
 
 Here's all of the above together:
 
-```
+```js
 function () { return 1; }
 () => { return 1; }
 () => 1
@@ -115,7 +115,7 @@ function () { return arguments[0]; }
 
 The story of clobbering `this` in JavaScript is a really old one. Each `function` in JavaScript defines its own `this` context, which is as easy to get around as it is annoying. The example below tries to display a clock that updates every second using jQuery:
 
-```
+```js
 $('.current-time').each(function () {
   setInterval(function () {
     $(this).text(Date.now());
@@ -126,7 +126,7 @@ $('.current-time').each(function () {
 
 When attempting to reference the DOM element `this` set by `each` in the `setInterval` callback, we unfortunately get a brand new `this` that belongs to the callback itself. A common way around this is to declare `that` or `self` variable:
 
-```
+```js
 $('.current-time').each(function () {
   var self = this;
 
@@ -139,7 +139,7 @@ $('.current-time').each(function () {
 
 The fat arrow functions allow you to solve this problem because they don't introduce their own `this`:
 
-```
+```js
 $('.current-time').each(function () {
   setInterval(() => $(this).text(Date.now()), 1000);
 });
@@ -162,7 +162,7 @@ log('hello'); // hello
 
 To reiterate, fat arrow functions don't have their own `this` and `arguments`. Having said that, you can still get all arguments passed into the arrow functions using rest parameters (also known as spread operator):
 
-```
+```js
 function log(msg) {
   const print = (...args) => console.log(args[0]);
   print(`LOG: ${msg}`);
@@ -201,7 +201,7 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:  
 NOTE: Each step along the way is a valid "arrow function"
-
+```js
     // Traditional Function
     function (a){
       return a + 100;
@@ -219,11 +219,11 @@ NOTE: Each step along the way is a valid "arrow function"
 
     // 3. Remove the argument parentheses
     a => a + 100;
-
+```
 **Note:** As shown above, the { brackets } and ( parentheses ) and "return" are optional, but may be required.
 
 For example, if you have **multiple arguments** or **no arguments**, you'll need to re-introduce parentheses around the arguments:
-
+```js
     // Traditional Function
     function (a, b){
       return a + b + 100;
@@ -243,9 +243,9 @@ For example, if you have **multiple arguments** or **no arguments**, you'll need
     let a = 4;
     let b = 2;
     () => a + b + 100;
-
+```
 Likewise, if the body requires **additional lines** of processing, you'll need to re-introduce brackets **PLUS the "return"** (arrow functions do not magically guess what or when you want to "return"):
-
+```js
     // Traditional Function
     function (a, b){
       let chuck = 42;
@@ -257,9 +257,9 @@ Likewise, if the body requires **additional lines** of processing, you'll need t
       let chuck = 42;
       return a + b + chuck;
     }
-
+```
 And finally, for **named functions** we treat arrow expressions like variables
-
+```js
     // Traditional Function
     function bob (a){
       return a + 100;
@@ -267,7 +267,7 @@ And finally, for **named functions** we treat arrow expressions like variables
 
     // Arrow Function
     let bob = a => a + 100;
-
+```
 ## Syntax
 
 ### Basic syntax
@@ -281,12 +281,12 @@ Multiple params require parentheses. With simple expression return is not needed
     (param1, paramN) => expression
 
 Multiline statements require body brackets and return:
-
+```js
     param => {
       let a = 1;
       return a + param;
     }
-
+```
 Multiple params require parentheses. Multiline statements require body brackets and return:
 
     (param1, paramN) => {
@@ -318,7 +318,7 @@ To return an object literal expression requires parentheses around expression:
 ### Arrow functions used as methods
 
 As stated previously, arrow function expressions are best suited for non-method functions. Let's see what happens when we try to use them as methods:
-
+```js
     'use strict';
 
     let obj = { // does not create a new scope
@@ -331,7 +331,7 @@ As stated previously, arrow function expressions are best suited for non-method 
 
     obj.b(); // prints undefined, Window {...} (or the global object)
     obj.c(); // prints 10, Object {...}
-
+```
 Arrow functions do not have their own `this`. Another example involving [`Object.defineProperty()`](../global_objects/object/defineproperty):
 
     'use strict';
@@ -352,7 +352,7 @@ Arrow functions do not have their own `this`. Another example involving [`Object
 The `call`, `apply` and [`bind`](../global_objects/function/bind) methods are **NOT suitable** for Arrow functions -- as they were designed to allow methods to execute within different scopes -- because **Arrow functions establish "this" based on the scope the Arrow function is defined within.**
 
 For example `call`, `apply` and [`bind`](../global_objects/function/bind) work as expected with Traditional functions, because we establish the scope for each of the methods:
-
+```js
     // ----------------------
     // Traditional Example
     // ----------------------
@@ -382,7 +382,7 @@ For example `call`, `apply` and [`bind`](../global_objects/function/bind) work a
     let result = add.bind(obj) // establishing the scope as "obj"
     console.log(result(1, 2, 3)) // result 106
 
-With Arrow functions, since our `add` function is essentially created on the `window` (global) scope, it will assume `this` is the window.
+//With Arrow functions, since our `add` function is essentially created on the `window` (global) scope, it will assume `this` is the window.
 
     // ----------------------
     // Arrow Example
@@ -409,11 +409,11 @@ With Arrow functions, since our `add` function is essentially created on the `wi
     // bind
     const bound = add.bind(obj)
     console.log(bound(1, 2, 3)) // result 2026
-
+```
 Perhaps the greatest benefit of using Arrow functions is with DOM-level methods (setTimeout, setInterval, addEventListener) that usually required some kind of closure, call, apply or bind to ensure the function executed in the proper scope.
 
 **Traditional Example:**
-
+```js
     let obj = {
         count : 10,
         doSomethingLater : function (){
@@ -439,11 +439,11 @@ Perhaps the greatest benefit of using Arrow functions is with DOM-level methods 
     }
 
     obj.doSomethingLater();
-
+```
 ### No binding of `arguments`
 
 Arrow functions do not have their own [`arguments` object](arguments). Thus, in this example, `arguments` is a reference to the arguments of the enclosing scope:
-
+```js
     let arguments = [1, 2, 3];
     let arr = () => arguments[0];
 
@@ -455,7 +455,7 @@ Arrow functions do not have their own [`arguments` object](arguments). Thus, in 
     }
 
     foo(3); // 3 + 3 = 6
-
+```
 In most cases, using [rest parameters](rest_parameters) is a good alternative to using an `arguments` object.
 
     function foo(n) {
@@ -520,7 +520,7 @@ An arrow function cannot contain a line break between its parameters and its arr
     // SyntaxError: expected expression, got '=>'
 
 However, this can be amended by putting the line break after the arrow or using parentheses/braces as seen below to ensure that the code stays pretty and fluffy. You can also put line breaks between arguments.
-
+```js
     let func = (a, b, c) =>
       1;
 
@@ -539,11 +539,11 @@ However, this can be amended by putting the line break after the arrow or using 
     ) => 1;
 
     // no SyntaxError thrown
-
+```
 ### Parsing order
 
 Although the arrow in an arrow function is not an operator, arrow functions have special parsing rules that interact differently with [operator precedence](../operators/operator_precedence) compared to regular functions.
-
+```js
     let callback;
 
     callback = callback || function() {}; // ok
@@ -553,9 +553,9 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
     callback = callback || (() => {});    // ok
 
-## Examples
+// Examples
 
-### Basic usage
+//  Basic usage
 
     // An empty arrow function returns undefined
     let empty = () => {};
@@ -598,72 +598,4 @@ Although the arrow in an arrow function is not an operator, arrow functions have
         console.log('I happen later');
       }, 1);
     }, 1);
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
-
-`Arrow_functions`
-
-45
-
-12
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-No
-
-32
-
-10
-
-45
-
-45
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-32
-
-10
-
-5.0
-
-`trailing_comma`
-
-58
-
-12
-
-52
-
-No
-
-45
-
-10
-
-58
-
-58
-
-52
-
-43
-
-10
-
-7.0
-
-## See also
-
--   ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+```
