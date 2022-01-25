@@ -2,15 +2,15 @@
 name: Gatsby Publish
 
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
-        with:
-          access-token: ${{ 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 }}
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - uses: enriikke/gatsby-gh-pages-action@v2
+              with:
+                  access-token: ${{ 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 }}

@@ -1,4 +1,4 @@
-Git History on master by all authors 
+Git History on master by all authors
 
 Merge pull request #1564 from bgoonz/master
 3e3b8baab (HEAD -> master, origin/master, origin/HEAD) by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 22 2022 (2 days ago)
@@ -62,7 +62,7 @@ bigo.md: changed
 829b8e7fa by Stackbit Code Editor <projects@stackbit.com>, Sat Jan 22 2022 (2 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_animations.scss: removed
+\_animations.scss: removed
 9b1cccc77 by Stackbit Code Editor <projects@stackbit.com>, Sat Jan 22 2022 (2 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
@@ -99,7 +99,7 @@ ffb04efe8 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 2
 Merge pull request #1560 from bgoonz/preview
 68d7afa15 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 22 2022 (2 days ago)
 
-site-metadata.json: Multiple updates: * updated social_links in footer * updated links in footer * updated new_window in links
+site-metadata.json: Multiple updates: _ updated social_links in footer _ updated links in footer \* updated new_window in links
 cb64efe0c by Bryan Guner <bryan.guner@gmail.com>, Sat Jan 22 2022 (2 days ago)
 1 file changed, 17 insertions(+), 1 deletion(-)
 
@@ -559,39 +559,39 @@ Merge pull request #1514 from bgoonz/master
 cb61e53c2 by bgoonz <bryan.guner@gmail.con>, Fri Jan 21 2022 (4 days ago)
 25 files changed, 147 insertions(+), 231 deletions(-)
 
-_header.scss: changed
+\_header.scss: changed
 7420113fa by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 052e90ccd by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 114b9759a by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 3 insertions(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 681bec603 by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+)
 
-_header.scss: changed
+\_header.scss: changed
 209b2bc6d by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 367f6f6f8 by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 a7c5581fc by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_header.scss: changed
+\_header.scss: changed
 62f0400ca by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_docs.scss: changed
+\_docs.scss: changed
 a7c2fbc5e by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 5 insertions(+), 5 deletions(-)
 
@@ -620,7 +620,7 @@ jamstack.md: added
 1fa357f64 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 20 insertions(+)
 
-index.md: Multiple updates: * updated actions in grid_items * updated type in actions * updated label in actions * updated url in actions * updated style in actions
+index.md: Multiple updates: _ updated actions in grid_items _ updated type in actions _ updated label in actions _ updated url in actions \* updated style in actions
 39539d581 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 6 deletions(-)
 
@@ -731,7 +731,7 @@ css-positioning.md: updated markdown_content
 f1813f461 by Bryan Guner <bryan.guner@gmail.com>, Mon Jan 17 2022 (7 days ago)
 1 file changed, 44 insertions(+), 6 deletions(-)
 
-009._Palindrome_Number.md: changed
+009.\_Palindrome_Number.md: changed
 4b29b81c6 by Stackbit Code Editor <projects@stackbit.com>, Mon Jan 17 2022 (7 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
@@ -749,7 +749,7 @@ a63aef5c6 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Mon Jan 1
 Merge pull request #1496 from bgoonz/preview
 bbe3178e7 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Mon Jan 17 2022 (7 days ago)
 
-004._Median_of_Two_Sorted_Arrays.md: changed
+004.\_Median_of_Two_Sorted_Arrays.md: changed
 1277dcb92 by Stackbit Code Editor <projects@stackbit.com>, Mon Jan 17 2022 (7 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
@@ -928,7 +928,7 @@ index.md: changed
 3fb56d2cf by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 11 insertions(+)
 
-_general.scss: changed
+\_general.scss: changed
 7a292fb9d by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 20 deletions(-)
 
@@ -994,66 +994,66 @@ favicon-750d4390.png: added
 0c7364e2c by Bryan Guner <bryan.guner@gmail.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-_posts.scss: changed
+\_posts.scss: changed
 59dd9d7cd by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 3 insertions(+), 9 deletions(-)
 
-_sections.scss: changed
+\_sections.scss: changed
 317326a36 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 3 insertions(+), 3 deletions(-)
 
-_tables.scss: changed
+\_tables.scss: changed
 8ec48fdf5 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-_structure.scss: changed
+\_structure.scss: changed
 cfd94136d by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_reset.scss: changed
+\_reset.scss: changed
 b5b576f29 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-_prism.scss: changed
+\_prism.scss: changed
 1fa5fa3c6 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 14 insertions(+), 13 deletions(-)
 
-_structure.scss: changed
+\_structure.scss: changed
 d5fd47add by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_palettes.scss: changed
+\_palettes.scss: changed
 a8b22ada9 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 9 insertions(+), 9 deletions(-)
 
-_variables.scss: changed
+\_variables.scss: changed
 1b505b882 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 28 insertions(+), 28 deletions(-)
 
-_tables.scss: changed
+\_tables.scss: changed
 ce979f5de by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-_structure.scss: changed
+\_structure.scss: changed
 8de1d3e00 by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 1 insertion(+), 1 deletion(-)
 
-_reset.scss: changed
+\_reset.scss: changed
 954c17bbb by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-_prism.scss: changed
+\_prism.scss: changed
 545423c4c by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 13 insertions(+), 14 deletions(-)
 
-_palettes.scss: changed
+\_palettes.scss: changed
 e2bfa692f by Stackbit Code Editor <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 9 insertions(+), 9 deletions(-)
 
 Merge pull request #1487 from bgoonz/master
 4a3b2dd7a by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sun Jan 16 2022 (8 days ago)
 
-Update _general.scss
+Update \_general.scss
 ba570ce2c by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sun Jan 16 2022 (8 days ago)
 1 file changed, 1 insertion(+), 199 deletions(-)
 
@@ -1100,4 +1100,4 @@ Merge pull request #1479 from bgoonz/master
 Merge pull request #1478 from bgoonz/preview
 5f445f7dc by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sun Jan 16 2022 (8 days ago)
 
-··· 
+···
