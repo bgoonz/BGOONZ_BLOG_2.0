@@ -1,3 +1,0 @@
-tasks:
-    - init: npm install && npm run build && make
-      command: npm run start
