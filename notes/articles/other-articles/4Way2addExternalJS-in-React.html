@@ -1,0 +1,80 @@
+﻿<h2 id="react-hooks-and-other-methods">React Hooks and other methods</h2>
+<p>Despite the wide availability of npm packages, at times, we might need to rely on a few external libraries that require us to import some JS files.</p>
+<p>
+    For features used across the application, we can simply add JS files to <code>head</code> using the <code>&lt;script&gt;</code> tag in our global
+    <code>index.html</code> file.
+</p>
+<p>
+    However, for the features that are used in specific components, this makes no sense. Since React doesn't support the <code>&lt;script&gt;</code> tag in
+    <code>Component</code><em>,</em> here are a few ways of appending JS files to specific components.
+</p>
+<p>This is the easiest way of loading JS files for a beginner.</p>
+<p>
+    <a href="https://www.npmjs.com/package/react-script-tag">React-script-tag</a> is an npm package that provides a React <code>&lt;script&gt;</code> tag that
+    supports universal rendering. All standard <code>&lt;script&gt;</code>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">attributes</a> like <code>async</code>, <code>src</code>, <code>type</code>, and
+    <code>defer</code> are supported, including <code>onLoad</code> and <code>onError</code> callbacks.
+</p>
+<p>
+    <strong>import</strong> ScriptTag <strong>from</strong> 'react-script-tag';const Demo = props ⇒ (
+    <br />
+
+    <strong>&lt;<strong>ScriptTag type</strong>=</strong>&quot;text/javascript&quot; src**=**&quot;/path/to/resource.js&quot;
+    <strong
+        >/&gt;
+        <br />
+
+        )</strong
+    >
+</p>
+<p>
+    We also have an <code>isHydrating</code> flag, which is a <code>boolean</code> value. It defaults to <code>false</code> and must be <code>true</code> if the
+    client is <code>hydrate()</code>ing the server render.
+</p>
+<p>You can read more about <code>hydrate()</code> <a href="https://reactjs.org/docs/react-dom.html#hydrate">in the React docs</a>.</p>
+<p>
+    <a href="https://www.npmjs.com/package/react-helmet">Helmet</a> is a React component that manages all your changes to the document head. It is another
+    simple, beginner-friendly package that supports both server-side and client-side rendering.
+</p>
+<p><a href="https://github.com/nfl/react-helmet">Helmet</a> takes plain HTML tags and outputs plain HTML tags.</p>
+<p>Note: React Helmet is heavier than react-script-tag, so I wouldn't recommend using it if your only purpose is to use <code>script</code> tags.</p>
+<p>
+    Though the above solutions are simple to achieve, it requires us to add additional packages that might bulk up our application. If you have some experience
+    coding, then you can do:
+</p>
+<p>If you are appending JS files in more than one component, it is best to have a custom file that returns a function to do this.</p>
+<p>In your component:</p>
+<p>
+    If you don't want to retain the appended JS file on page redirection/reload, you should remove the script in the <code>componentDidUnmount</code> lifecycle
+    method. To achieve this:
+</p>
+<p>And in your component:</p>
+<p>
+    If you are a fan of Hooks in React, then <code>useEffect</code> is a great way to append external JS files. You can read my article on
+    <a
+        href="https://medium.com/better-programming/tips-for-using-reacts-useeffect-effectively-dfe6ae951421?source=friends_link&amp;sk=87e8a3137afd3b78b22651508f340c57"
+        >using the Effect Hook</a
+    >.
+</p>
+<p>
+    To give a gist <code>useEffect</code> is similar to <code>componentDidMount</code> and <code>componentDidUpdate</code> life cycle methods in React class
+    components.
+</p>
+<p>
+    If your effect returns a function, React will run it when it is time to clean up, basically the <code>componentDidUnmount</code> lifecycle method. This is
+    where we will remove the appended script.
+</p>
+<p>
+    React allows us to build <a href="https://reactjs.org/docs/hooks-custom.html">custom Hooks</a>, which let us extract component logic into reusable
+    functions. The logic to append an external JS file to a component could be stored as a custom Hook as below:
+</p>
+<p>Which could be used in components as below:</p>
+<p>
+    import importScript from 'customHooks/importScript';const Demo = props ⇒ {
+    <br />
+
+    importScript(&quot;/path/to/resource.js&quot;);
+    <br />
+
+    }
+</p>
