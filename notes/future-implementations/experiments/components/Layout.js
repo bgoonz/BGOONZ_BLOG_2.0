@@ -7,10 +7,8 @@ import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
+
 export default class Body extends React.Component {
     render() {
         return (
