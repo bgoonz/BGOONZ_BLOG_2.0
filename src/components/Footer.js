@@ -2,14 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-<<<<<<< HEAD
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
-=======
 
->>>>>>> 22ec51e06 (hi)
 export default class Footer extends React.Component {
     render() {
         return (
