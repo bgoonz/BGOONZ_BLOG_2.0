@@ -29,4 +29,3 @@ I'm very grateful to Chris Jean for sharing his excellent PHP-ICO tool which can
 If you find this tool useful, please Tweet, Share, Like, +1 and if you are really keen, include attribution in your humans.txt file! Thanks.
 
 iconifier.net is provided for free by Webilicious® Web Design and Development Services - Joomla!® website creation, maintainance and security specialists - http://webilicious.com.au.
-
