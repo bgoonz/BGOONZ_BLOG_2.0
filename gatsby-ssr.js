@@ -4,14 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-const React = require("react");
-const withPrefix = require("./src/utils/withPrefix").default;
+const React = require('react');
+const withPrefix = require('./src/utils/withPrefix').default;
 
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
-
-    setHeadComponents([
-
-    ]);
+    setHeadComponents([]);
 
     setPostBodyComponents([
         <React.Fragment>
@@ -29,5 +26,4 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/plugins.js')} />
         </React.Fragment>
     ]);
-
 };
