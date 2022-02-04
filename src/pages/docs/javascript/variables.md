@@ -1,10 +1,16 @@
-title: Basics declarations
-tip-number: 47
-tip-username: adaniloff
-tip-username-profile: https://github.com/adaniloff
-tip-tldr: Understand and work with declarations.
+---
+title: Javascript Concepts Review
+weight: 0
+excerpt: Javascript Concepts Review
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+template: docs
+---
 
--   /en/basics-declarations/
+
 
 Below, different ways to declare variables in JavaScript.
 Comments and console.log should be enough to explain what's happening here:
@@ -77,5 +83,3 @@ This last line is explicit by itself.
 You can test this and see the result [thanks to babel](<https://babeljs.io/repl/#?experimental=false&evaluate=true&loose=false&spec=false&code=var%20y%2C%20x%20%3D%20y%20%3D%201%20%2F%2F%3D%3D%20var%20x%3B%20var%20y%3B%20x%20%3D%20y%20%3D%201%0Aconsole.log('--%3E%201%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%0A%2F%2F%20Will%20print%0A%2F%2F--%3E%201%3A%20x%20%3D%201%2C%20y%20%3D%201%0A%0A%3B(()%20%3D%3E%20%7B%20%0A%20%20var%20x%20%3D%20y%20%3D%202%20%2F%2F%20%3D%3D%20var%20x%3B%20y%20%3D%202%3B%0A%20%20console.log('2.0%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%7D)()%0Aconsole.log('--%3E%202.1%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%0A%2F%2F%20Will%20print%0A%2F%2F2.0%3A%20x%20%3D%202%2C%20y%20%3D%202%0A%2F%2F--%3E%202.1%3A%20x%20%3D%201%2C%20y%20%3D%202%0A%0A%3B(()%20%3D%3E%20%7B%20%0A%20%20var%20x%2C%20y%20%3D%203%20%2F%2F%20%3D%3D%20var%20x%3B%20var%20y%20%3D%203%3B%0A%20%20console.log('3.0%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%7D)()%0Aconsole.log('--%3E%203.1%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%0A%2F%2F%20Will%20print%0A%2F%2F3.0%3A%20x%20%3D%20undefined%2C%20y%20%3D%203%0A%2F%2F--%3E%203.1%3A%20x%20%3D%201%2C%20y%20%3D%202%0A%0A%3B(()%20%3D%3E%20%7B%20%0A%20%20var%20y%2C%20x%20%3D%20y%20%3D%204%20%2F%2F%20%3D%3D%20var%20x%3B%20var%20y%3B%20x%20%3D%20y%20%3D%203%0A%20%20console.log('4.0%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%7D)()%0Aconsole.log('--%3E%204.1%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%0A%2F%2F%20Will%20print%0A%2F%2F4.0%3A%20x%20%3D%204%2C%20y%20%3D%204%0A%2F%2F--%3E%204.1%3A%20x%20%3D%201%2C%20y%20%3D%202%0A%0Ax%20%3D%205%20%2F%2F%20%3D%3D%20x%20%3D%205%0Aconsole.log('--%3E%205%3A'%2C%20%60x%20%3D%20%24%7Bx%7D%2C%20y%20%3D%20%24%7By%7D%60)%0A%0A%2F%2F%20Will%20print%0A%2F%2F--%3E%205%3A%20x%20%3D%205%2C%20y%20%3D%202>).
 
 More informations available on the [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var).
-
-Special thanks to @kurtextrem for his collaboration :)!
