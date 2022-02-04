@@ -1558,7 +1558,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 <details>
   <summary>Click to expand!</summary>
-  
+
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
 
