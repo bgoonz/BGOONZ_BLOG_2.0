@@ -1,10 +1,10 @@
 .site {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 110vh;
-  position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
 }
 
 .site-content {
@@ -12,28 +12,27 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 100%;
-    resize: both;
 }
 
 .outer {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 98%;
+    max-width: 95%;
 }
 
 .inner-md {
     margin-left: auto;
     margin-right: auto;
-    max-width: 98%;
+    max-width: 95%;
 }
 
 .inner-sm {
     margin-left: auto;
     margin-right: auto;
-    max-width: 98%;
+    max-width: 95%;
 }
