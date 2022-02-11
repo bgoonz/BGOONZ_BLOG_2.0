@@ -1,4 +1,14 @@
-
+---
+title: React By Usecase
+weight: 0
+excerpt: cheat sheet
+seo:
+    title: 'React By Usecase'
+    description: 'Of course, if you get a DOM node for the component via refs, you can do anything you want with the DOM nodes of other components, but it will likely mess up React.'
+    robots: []
+    extra: []
+template: docs
+---
 
 
 
