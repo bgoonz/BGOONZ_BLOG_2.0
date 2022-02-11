@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Providing Structured Data  |  Programmable Search Engine
+=======
+# Providing Structured Data | Programmable Search Engine
+>>>>>>> af65185bd (-update)
 
 > ## Excerpt
 >
@@ -54,9 +58,15 @@ The following snippet shows the previous HTML code extended with a format called
 The [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets?view=cse&url=http://www.urbanspoon.com/r/6/765421/restaurant/Pizza-My-Heart-Santa-Cruz) shows the information Google Search extracts from this page:
 
 hreview\-aggregate  
+<<<<<<< HEAD
   item hcard  
     fn \= Pizza My Heartrating  
     average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
+=======
+ item hcard  
+ fn \= Pizza My Heartrating  
+ average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
+>>>>>>> af65185bd (-update)
 count \= 12
 
 Programmable Search Engine uses a subset of the information available for Google Search; this subset is shown at the bottom of the testing tool page:
@@ -365,9 +375,15 @@ Once you have found a page with structured data, you can view that page's source
 From a page with this markup, Google extracts the following data for use in rich snippets:
 
 hcard  
+<<<<<<< HEAD
   fn \= Godzilla Gigantis n  
     family\-name \= Gigantis given\-name \= Godzilla adr  
     locality \= Tokyo title \= Senior Giant Monster
+=======
+ fn \= Godzilla Gigantis n  
+ family\-name \= Gigantis given\-name \= Godzilla adr  
+ locality \= Tokyo title \= Senior Giant Monster
+>>>>>>> af65185bd (-update)
 
 Programmable Search Engine extracts the following subset of that data for use in structured search:
 
@@ -386,7 +402,11 @@ Structured data can be used in several Programmable Search Engine features inclu
 
 ---
 
+<<<<<<< HEAD
 # Customizing Results Snippets  |  Programmable Search Engine
+=======
+# Customizing Results Snippets | Programmable Search Engine
+>>>>>>> af65185bd (-update)
 
 > ## Excerpt
 >
@@ -457,7 +477,11 @@ Custom Snippets works well with several other Programmable Search Engine feature
 
 ---
 
+<<<<<<< HEAD
 # Filtering and sorting search results  |  Programmable Search Engine
+=======
+# Filtering and sorting search results | Programmable Search Engine
+>>>>>>> af65185bd (-update)
 
 > ## Excerpt
 >
