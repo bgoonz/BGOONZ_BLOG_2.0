@@ -12,27 +12,28 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 100%;
+    resize: both;
 }
 
 .outer {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 95%;
+    max-width: 98%;
 }
 
 .inner-md {
     margin-left: auto;
     margin-right: auto;
-    max-width: 95%;
+    max-width: 98%;
 }
 
 .inner-sm {
     margin-left: auto;
     margin-right: auto;
-    max-width: 95%;
+    max-width: 98%;
 }
