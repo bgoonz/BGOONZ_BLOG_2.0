@@ -10,10 +10,6 @@ seo:
 template: docs
 ---
 
-
-
-
-
 ## Inserting an item into an existing array
 
 Inserting an item into an existing array is a daily common task. You can add elements to the end of an array using push, to the beginning using unshift, or to the middle using splice.
@@ -5587,8 +5583,7 @@ We all know that JavaScript is loosely typed and in some cases it fall behind sp
 ```javascript
 0 == ' '; //true
 
-(null ==
-    undefined[1]) == //true
+(null == undefined[1]) == //true
     true; //true
 ```
 
@@ -5675,8 +5670,7 @@ function reject(obj, keys) {
 // or, reusing pick
 
 function reject(obj, keys) {
-    const vkeys = Object.keys(obj)
-    .filter((k) => !keys.includes(k));
+    const vkeys = Object.keys(obj).filter((k) => !keys.includes(k));
 
     return pick(obj, vkeys);
 }

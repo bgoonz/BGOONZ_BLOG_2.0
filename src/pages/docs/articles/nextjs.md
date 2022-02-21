@@ -13,9 +13,11 @@ template: docs
 ## # Nextjs for everyone — with some basic knowledge of React
 
 > ## Excerpt
+>
 > With some basic React and JavaScript knowledge, you’ll be on your wayNext.js is a JavaScript framework created by Zeit. It lets you build server-side rendering and static web applications using React. It’s a great tool to build your next website. It has many great features and advantages,
 
 ---
+
 #### With some basic React and JavaScript knowledge, you’ll be on your way
 
 **Next.js** is a JavaScript framework created by [Zeit](https://zeit.co/). It lets you build server-side rendering and static web applications using React. It’s a great tool to build your next website. It has many great features and advantages, which can make Nextjs your first option for building your next web application.
