@@ -98,11 +98,9 @@ class Link extends React.Component {
 
 ---
 
-
 <details>
 
 <summary> see more </summary>
-
 
 > React.Component · render() · componentDidMount() · props/state · dangerouslySetInnerHTML · React is a JavaScript library for building user interfaces. This guide targets React v15 to v16.
 
@@ -210,7 +208,7 @@ class Link extends React.Component {
 // good for state transitions
 
 this.setState((prevState, props) => {
-  return { count: prevState.count + props.step };
+    return { count: prevState.count + props.step };
 });
 ```
 
@@ -269,7 +267,7 @@ defaultProps
 
 ```js
 React.Children.map(this.props.children, (child, i) => {
-  return child;
+    return child;
 });
 ```
 
@@ -277,7 +275,7 @@ React.Children.map(this.props.children, (child, i) => {
 
 ```js
 React.Children.forEach(this.props.children, (child, i) => {
-  console.log(child + " at index: " + i);
+    console.log(child + ' at index: ' + i);
 });
 ```
 
@@ -304,30 +302,30 @@ React.Children.toArray(this.props.children);
 ```js
 // requires 'prop-types' library
 
-import { string } from "prop-types";
+import { string } from 'prop-types';
 
 class Cowboy extends React.Component {
-  childContextTypes: {
-    salutation: string,
-  };
+    childContextTypes: {
+        salutation: string
+    };
 
-  getChildContext() {
-    return { salutation: "Howdy" };
-  }
+    getChildContext() {
+        return { salutation: 'Howdy' };
+    }
 
-  render() {
-    return React.Children.only(this.props.children);
-  }
+    render() {
+        return React.Children.only(this.props.children);
+    }
 }
 
 const Greeting = (props, context) => (
-  <div>
-    {context.salutation} {props.name}.
-  </div>
+    <div>
+        {context.salutation} {props.name}.
+    </div>
 );
 
 Greeting.contextTypes = {
-  salutation: PropTypes.string,
+    salutation: PropTypes.string
 };
 
 // <Greeting name="Michael" />
@@ -375,13 +373,13 @@ Greeting.contextTypes = {
 ### Components
 
 ```js
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Hello extends React.Component {
-  render() {
-    return <div className="message-box">Hello {this.props.name}</div>;
-  }
+    render() {
+        return <div className="message-box">Hello {this.props.name}</div>;
+    }
 }
 
 const el = document.body;
@@ -458,35 +456,35 @@ See: [States](https://reactjs.org/docs/tutorial.html#reactive-state)
 
 ```js
 class Info extends Component {
-  render() {
-    const { avatar, username } = this.props;
+    render() {
+        const { avatar, username } = this.props;
 
-    return (
-      <div>
-        <UserAvatar src={avatar} />
-        <UserProfile username={username} />
-      </div>
-    );
-  }
+        return (
+            <div>
+                <UserAvatar src={avatar} />
+                <UserProfile username={username} />
+            </div>
+        );
+    }
 }
 ```
 
 As of React v16.2.0, fragments can be used to return multiple children without adding extra wrapping nodes to the DOM.
 
 ```js
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
 class Info extends Component {
-  render() {
-    const { avatar, username } = this.props;
+    render() {
+        const { avatar, username } = this.props;
 
-    return (
-      <Fragment>
-        <UserAvatar src={avatar} />
-        <UserProfile username={username} />
-      </Fragment>
-    );
-  }
+        return (
+            <Fragment>
+                <UserAvatar src={avatar} />
+                <UserProfile username={username} />
+            </Fragment>
+        );
+    }
 }
 ```
 
@@ -498,13 +496,13 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
 
 ```js
 <AlertBox>
-  <h1>You have pending notifications</h1>
+    <h1>You have pending notifications</h1>
 </AlertBox>;
 
 class AlertBox extends Component {
-  render() {
-    return <div className="alert-box">{this.props.children}</div>;
-  }
+    render() {
+        return <div className="alert-box">{this.props.children}</div>;
+    }
 }
 ```
 
@@ -516,7 +514,7 @@ Children are passed as the `children` property.
 
 ```js
 Hello.defaultProps = {
-  color: "blue",
+    color: 'blue'
 };
 ```
 
@@ -526,10 +524,10 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 
 ```js
 class Hello extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { visible: true };
-  }
+    constructor(props) {
+        super(props);
+        this.state = { visible: true };
+    }
 }
 ```
 
@@ -539,7 +537,7 @@ And without constructor using [Babel](https://babeljs.io/) with [proposal-class-
 
 ```js
 class Hello extends Component {
-  state = { visible: true };
+    state = { visible: true };
 }
 ```
 
@@ -551,7 +549,7 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 
 ```js
 function MyComponent({ name }) {
-  return <div className="message-box">Hello {name}</div>;
+    return <div className="message-box">Hello {name}</div>;
 }
 ```
 
@@ -626,17 +624,17 @@ See: [Component specs](https://facebook.github.io/react/docs/component-specs.htm
 ### State Hook
 
 ```js
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function Example() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
-  );
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
 }
 ```
 
@@ -648,30 +646,30 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 
 ```js
 function ExampleWithManyStates() {
-  const [age, setAge] = useState(42);
-  const [fruit, setFruit] = useState("banana");
-  const [todos, setTodos] = useState([{ text: "Learn Hooks" }]);
+    const [age, setAge] = useState(42);
+    const [fruit, setFruit] = useState('banana');
+    const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
 }
 ```
 
 ### Effect hook
 
 ```js
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 function Example() {
-  const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  }, [count]);
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    }, [count]);
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
-  );
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
 }
 ```
 
@@ -684,26 +682,26 @@ By default, React runs the effects after every render — including the first re
 #### Define FriendStatus
 
 ```js
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {
-  const [isOnline, setIsOnline] = useState(null);
+    const [isOnline, setIsOnline] = useState(null);
 
-  useEffect(() => {
-    function handleStatusChange(status) {
-      setIsOnline(status.isOnline);
+    useEffect(() => {
+        function handleStatusChange(status) {
+            setIsOnline(status.isOnline);
+        }
+
+        ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+        return () => {
+            ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+        };
+    }, [props.friend.id]);
+
+    if (isOnline === null) {
+        return 'Loading...';
     }
-
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-    return () => {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-    };
-  }, [props.friend.id]);
-
-  if (isOnline === null) {
-    return "Loading...";
-  }
-  return isOnline ? "Online" : "Offline";
+    return isOnline ? 'Online' : 'Offline';
 }
 ```
 
@@ -713,12 +711,12 @@ Effects may also optionally specify how to “clean up” after them by returnin
 
 ```js
 function FriendStatus(props) {
-  const isOnline = useFriendStatus(props.friend.id);
+    const isOnline = useFriendStatus(props.friend.id);
 
-  if (isOnline === null) {
-    return "Loading...";
-  }
-  return isOnline ? "Online" : "Offline";
+    if (isOnline === null) {
+        return 'Loading...';
+    }
+    return isOnline ? 'Online' : 'Offline';
 }
 ```
 
@@ -758,17 +756,17 @@ Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#a
 
 ```js
 class MyComponent extends Component {
-  render() {
-    return (
-      <div>
-        <input ref={(el) => (this.input = el)} />
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <input ref={(el) => (this.input = el)} />
+            </div>
+        );
+    }
 
-  componentDidMount() {
-    this.input.focus();
-  }
+    componentDidMount() {
+        this.input.focus();
+    }
 }
 ```
 
@@ -780,17 +778,13 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ```js
 class MyComponent extends Component {
-  render() {
-    <input
-      type="text"
-      value={this.state.value}
-      onChange={(event) => this.onChange(event)}
-    />;
-  }
+    render() {
+        <input type="text" value={this.state.value} onChange={(event) => this.onChange(event)} />;
+    }
 
-  onChange(event) {
-    this.setState({ value: event.target.value });
-  }
+    onChange(event) {
+        this.setState({ value: event.target.value });
+    }
 }
 ```
 
@@ -806,9 +800,9 @@ See: [Events](https://reactjs.org/docs/events.html)
 <VideoPlayer src="video.mp4" />;
 
 class VideoPlayer extends Component {
-  render() {
-    return <VideoEmbed {...this.props} />;
-  }
+    render() {
+        return <VideoEmbed {...this.props} />;
+    }
 }
 ```
 
@@ -853,7 +847,7 @@ See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
 
 ```js
 function markdownify() {
-  return "<p>...</p>";
+    return '<p>...</p>';
 }
 <div dangerouslySetInnerHTML={{ __html: markdownify() }} />;
 ```
@@ -864,17 +858,17 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
 
 ```js
 class TodoList extends Component {
-  render() {
-    const { items } = this.props;
+    render() {
+        const { items } = this.props;
 
-    return (
-      <ul>
-        {items.map((item) => (
-          <TodoItem item={item} key={item.key} />
-        ))}
-      </ul>
-    );
-  }
+        return (
+            <ul>
+                {items.map((item) => (
+                    <TodoItem item={item} key={item.key} />
+                ))}
+            </ul>
+        );
+    }
 }
 ```
 
@@ -890,8 +884,8 @@ Always supply a `key` property.
 
 ```js
 <Fragment>
-  {showPopup && <Popup />}
-  ...
+    {showPopup && <Popup />}
+    ...
 </Fragment>
 ```
 
@@ -979,7 +973,7 @@ See: [Portals](https://reactjs.org/docs/portals.html)
 ### Hydration
 
 ```js
-const el = document.getElementById("app");
+const el = document.getElementById('app');
 ReactDOM.hydrate(<App />, el);
 ```
 
@@ -992,7 +986,7 @@ See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 ### PropTypes
 
 ```js
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 ```
 
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
@@ -1050,11 +1044,11 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 
 ```js
 MyComponent.propTypes = {
-  email: PropTypes.string,
-  seats: PropTypes.number,
-  callback: PropTypes.func,
-  isClosed: PropTypes.bool,
-  any: PropTypes.any,
+    email: PropTypes.string,
+    seats: PropTypes.number,
+    callback: PropTypes.func,
+    isClosed: PropTypes.bool,
+    any: PropTypes.any
 };
 ```
 
@@ -1062,7 +1056,7 @@ MyComponent.propTypes = {
 
 ```js
 MyCo.propTypes = {
-  name: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired
 };
 ```
 
@@ -1070,9 +1064,9 @@ MyCo.propTypes = {
 
 ```js
 MyCo.propTypes = {
-  element: PropTypes.element,
+    element: PropTypes.element,
 
-  node: PropTypes.node,
+    node: PropTypes.node
 };
 ```
 
@@ -1080,7 +1074,7 @@ MyCo.propTypes = {
 
 ```js
 MyCo.propTypes = {
-  direction: PropTypes.oneOf(["left", "right"]),
+    direction: PropTypes.oneOf(['left', 'right'])
 };
 ```
 
@@ -1088,18 +1082,18 @@ MyCo.propTypes = {
 
 ```js
 MyCo.propTypes = {
-  list: PropTypes.array,
-  ages: PropTypes.arrayOf(PropTypes.number),
-  user: PropTypes.object,
-  user: PropTypes.objectOf(PropTypes.number),
-  message: PropTypes.instanceOf(Message),
+    list: PropTypes.array,
+    ages: PropTypes.arrayOf(PropTypes.number),
+    user: PropTypes.object,
+    user: PropTypes.objectOf(PropTypes.number),
+    message: PropTypes.instanceOf(Message)
 };
 
 MyCo.propTypes = {
-  user: PropTypes.shape({
-    name: PropTypes.string,
-    age: PropTypes.number,
-  }),
+    user: PropTypes.shape({
+        name: PropTypes.string,
+        age: PropTypes.number
+    })
 };
 ```
 
@@ -1109,19 +1103,15 @@ Use `.array[Of]`, `.object[Of]`, `.instanceOf`, `.shape`.
 
 ```js
 MyCo.propTypes = {
-  customProp: (props, key, componentName) => {
-    if (!/matchme/.test(props[key])) {
-      return new Error("Validation failed!");
+    customProp: (props, key, componentName) => {
+        if (!/matchme/.test(props[key])) {
+            return new Error('Validation failed!');
+        }
     }
-  },
 };
 ```
 
 </details>
-
-
-
-
 
 ---
 
