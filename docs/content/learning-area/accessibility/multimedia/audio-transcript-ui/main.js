@@ -14,55 +14,53 @@ player.removeAttribute('controls');
 
 // Define constructor for player controls object
 
-playPauseBtn.onclick = function () {
-    if (player.paused) {
-        player.play();
-        playPauseBtn.textContent = 'Pause';
-    } else {
-        player.pause();
-        playPauseBtn.textContent = 'Play';
-    }
+playPauseBtn.onclick = function() {
+  if (player.paused) {
+    player.play();
+    playPauseBtn.textContent = 'Pause';
+  } else {
+    player.pause();
+    playPauseBtn.textContent = 'Play';
+  }
 };
 
-stopBtn.onclick = function () {
+stopBtn.onclick = function() {
+  player.pause();
+  player.currentTime = 0;
+  playPauseBtn.textContent = 'Play';
+};
+
+rwdBtn.onclick = function() { player.currentTime -= 3; };
+
+fwdBtn.onclick = function() {
+  player.currentTime += 3;
+  if (player.currentTime >= player.duration || player.paused) {
     player.pause();
     player.currentTime = 0;
     playPauseBtn.textContent = 'Play';
+  }
 };
 
-rwdBtn.onclick = function () {
-    player.currentTime -= 3;
-};
+player.ontimeupdate = function() {
+  let minutes = Math.floor(player.currentTime / 60);
+  let seconds = Math.floor(player.currentTime - minutes * 60);
+  let minuteValue;
+  let secondValue;
 
-fwdBtn.onclick = function () {
-    player.currentTime += 3;
-    if (player.currentTime >= player.duration || player.paused) {
-        player.pause();
-        player.currentTime = 0;
-        playPauseBtn.textContent = 'Play';
-    }
-};
+  if (minutes < 10) {
+    minuteValue = '0' + minutes;
+  } else {
+    minuteValue = minutes;
+  }
 
-player.ontimeupdate = function () {
-    let minutes = Math.floor(player.currentTime / 60);
-    let seconds = Math.floor(player.currentTime - minutes * 60);
-    let minuteValue;
-    let secondValue;
+  if (seconds < 10) {
+    secondValue = '0' + seconds;
+  } else {
+    secondValue = seconds;
+  }
 
-    if (minutes < 10) {
-        minuteValue = '0' + minutes;
-    } else {
-        minuteValue = minutes;
-    }
-
-    if (seconds < 10) {
-        secondValue = '0' + seconds;
-    } else {
-        secondValue = seconds;
-    }
-
-    mediaTime = minuteValue + ':' + secondValue;
-    timeLabel.textContent = mediaTime;
+  mediaTime = minuteValue + ':' + secondValue;
+  timeLabel.textContent = mediaTime;
 };
 
 // Control transcript display
@@ -70,12 +68,12 @@ player.ontimeupdate = function () {
 const transcript = document.querySelector('.transcript');
 const transcriptBtn = document.querySelector('.transcript-container button');
 
-transcriptBtn.onclick = function () {
-    if (transcriptBtn.textContent === 'Show transcript') {
-        transcript.style.height = '150px';
-        transcriptBtn.textContent = 'Hide transcript';
-    } else {
-        transcript.style.height = '0';
-        transcriptBtn.textContent = 'Show transcript';
-    }
+transcriptBtn.onclick = function() {
+  if (transcriptBtn.textContent === 'Show transcript') {
+    transcript.style.height = '150px';
+    transcriptBtn.textContent = 'Hide transcript';
+  } else {
+    transcript.style.height = '0';
+    transcriptBtn.textContent = 'Show transcript';
+  }
 };

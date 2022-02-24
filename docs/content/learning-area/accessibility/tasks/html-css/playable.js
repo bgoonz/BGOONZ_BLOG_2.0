@@ -7,14 +7,14 @@ var htmlCode = textareaHTML.value;
 var cssCode = textareaCSS.value;
 
 function fillCode() {
-    editable.innerHTML = textareaCSS.value;
-    section.innerHTML = textareaHTML.value;
+  editable.innerHTML = textareaCSS.value;
+  section.innerHTML = textareaHTML.value;
 }
 
-reset.addEventListener('click', function () {
-    textareaHTML.value = htmlCode;
-    textareaCSS.value = cssCode;
-    fillCode();
+reset.addEventListener('click', function() {
+  textareaHTML.value = htmlCode;
+  textareaCSS.value = cssCode;
+  fillCode();
 });
 
 textareaHTML.addEventListener('input', fillCode);
