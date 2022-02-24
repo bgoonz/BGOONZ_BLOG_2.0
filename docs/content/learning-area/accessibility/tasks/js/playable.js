@@ -5,19 +5,19 @@ var reset = document.getElementById('reset');
 var jsCode = textareaJS.value;
 
 function fillCode() {
-  editable.textContent = textareaJS.value;
-  try {
-    eval(editable.textContent);
-  } catch (e) {
-    let para = document.createElement('p');
-    para.textContent = e;
-    section.appendChild(para);
-  }
+    editable.textContent = textareaJS.value;
+    try {
+        eval(editable.textContent);
+    } catch (e) {
+        let para = document.createElement('p');
+        para.textContent = e;
+        section.appendChild(para);
+    }
 }
 
-reset.addEventListener('click', function() {
-  textareaJS.value = jsCode;
-  fillCode();
+reset.addEventListener('click', function () {
+    textareaJS.value = jsCode;
+    fillCode();
 });
 
 textareaJS.addEventListener('input', fillCode);
