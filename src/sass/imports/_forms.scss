@@ -4,8 +4,8 @@ label {
   line-height: 1.5;
   margin-bottom: 0.25em;
 
-  input[type=checkbox] + &,
-  input[type=radio] + & {
+  input[type='checkbox']+&,
+  input[type='radio']+& {
     font-weight: normal;
     cursor: pointer;
     padding-left: 0.25em;
@@ -13,13 +13,13 @@ label {
   }
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="search"],
-input[type="url"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+input[type='search'],
+input[type='url'],
 select,
 textarea {
   background: #fff;
