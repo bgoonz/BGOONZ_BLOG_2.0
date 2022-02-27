@@ -1,48 +1,21 @@
-import ActionLink from './ActionLink';
-import CtaButtons from './CtaButtons';
-import DocsMenu from './DocsMenu';
-import DocsSubmenu from './DocsSubmenu';
+import Action from './Action';
+import ActionIcon from './ActionIcon';
 import Footer from './Footer';
+import FormField from './FormField';
 import Header from './Header';
-import Icon from './Icon';
-import SectionContent from './SectionContent';
-import SectionCta from './SectionCta';
-import SectionDocs from './SectionDocs';
-import SectionGrid from './SectionGrid';
-import SectionHero from './SectionHero';
-import Submenu from './Submenu';
+import HeaderAlt from './HeaderAlt';
 import Layout from './Layout';
+import Icon from './Icon';
 
-export {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
-    Footer,
-    Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    Layout
-};
+export { Action, ActionIcon, Footer, FormField, Header, HeaderAlt, Layout, Icon };
 
 export default {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
+    Action,
+    ActionIcon,
     Footer,
+    FormField,
     Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    Layout
+    HeaderAlt,
+    Layout,
+    Icon
 };
