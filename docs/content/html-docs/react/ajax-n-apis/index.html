@@ -4902,7 +4902,7 @@
   &quot;items&quot;: [
     { &quot;id&quot;: 1, &quot;name&quot;: &quot;Apples&quot;,  &quot;price&quot;: &quot;$2&quot; },
     { &quot;id&quot;: 2, &quot;name&quot;: &quot;Peaches&quot;, &quot;price&quot;: &quot;$5&quot; }
-  ] 
+  ]
 }
 </code></pre>
                     <pre><code class="language-js">class MyComponent extends React.Component {
@@ -4925,9 +4925,9 @@
             items: result.items
           });
         },
-        
-        
-        
+
+
+
         (error) =&gt; {
           this.setState({
             isLoaded: true,
@@ -4963,9 +4963,9 @@
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
-  
-  
-  
+
+
+
   useEffect(() =&gt; {
     fetch(&quot;https://api.example.com/items&quot;)
       .then(res =&gt; res.json())
@@ -4974,9 +4974,9 @@
           setIsLoaded(true);
           setItems(result);
         },
-        
-        
-        
+
+
+
         (error) =&gt; {
           setIsLoaded(true);
           setError(error);
@@ -5163,10 +5163,10 @@ header.appendChild('div1');
 </script><!-- Default Statcounter code for 2
 https://bgoonz-blog.netlify.app/ -->
 <script type="text/javascript">
-var sc_project=12702211; 
-var sc_invisible=0; 
-var sc_security="011fbeb6"; 
-var sc_text=3; 
+var sc_project=12702211;
+var sc_invisible=0;
+var sc_security="011fbeb6";
+var sc_text=3;
 var scJsHost = "https:///";
 document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+

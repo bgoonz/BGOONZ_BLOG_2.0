@@ -4924,10 +4924,10 @@
                     <p>The <code>replace</code> function can also be <strong>passed a callback</strong> as its second
                       parameter, and this is invaluable in cases where the replacement you want can’t be described in a
                       simple expression. For example:</p>
-                    <pre><code>isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i, 
+                    <pre><code>isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i,
   function(match, lang, country)
   {
-    return lang.toLowerCase() 
+    return lang.toLowerCase()
       + (country ? country.toUpperCase() : &#x27;&#x27;);
   });
 </code></pre>
@@ -4952,7 +4952,7 @@
                     <p>Here’s another example, that combines the multi-line comment expression from the previous
                       section, with a callback that extracts and saves the text of each comment:</p>
                     <pre><code>let comments = [];
-str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm, 
+str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
   function(match)
   {
     comments.push(match);
@@ -4961,7 +4961,7 @@ str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
                     <p>Since nothing is returned, the original string remains unchanged. Although if we wanted to
                       extract <em>and</em> remove the comments, we could simply return and assign an empty-string:</p>
                     <pre><code>let comments = [];
-str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm, 
+str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
   function(match)
   {
     comments.push(match);
@@ -4992,7 +4992,7 @@ str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
                       the match in which all non-whitespace is converted to space, and which is delimited with a
                       noncharacter either side:</p>
                     <pre><code>let comments = [];
-csstext = csstext.replace(/(\/\*([^*]|(\*+([^*\/])))*\*+\/)/gm, 
+csstext = csstext.replace(/(\/\*([^*]|(\*+([^*\/])))*\*+\/)/gm,
   function(match)
   {
     comments.push(match);
@@ -5004,7 +5004,7 @@ csstext = csstext.replace(/(\/\*([^*]|(\*+([^*\/])))*\*+\/)/gm,
                     <p>Then the originals can be restored simply by replacing each delimited space with its
                       corresponding saved comment — and since the delimiters are single characters, we only need a
                       <strong>simple character class</strong> to match each pair:</p>
-                    <pre><code>csstext = csstext.replace(/(\ufddf[^\ufddf]+\ufddf)/gim, 
+                    <pre><code>csstext = csstext.replace(/(\ufddf[^\ufddf]+\ufddf)/gim,
   function()
   {
     return comments.shift();
@@ -5173,10 +5173,10 @@ header.appendChild('div1');
 </script><!-- Default Statcounter code for 2
 https://bgoonz-blog.netlify.app/ -->
 <script type="text/javascript">
-var sc_project=12702211; 
-var sc_invisible=0; 
-var sc_security="011fbeb6"; 
-var sc_text=3; 
+var sc_project=12702211;
+var sc_invisible=0;
+var sc_security="011fbeb6";
+var sc_text=3;
 var scJsHost = "https:///";
 document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+

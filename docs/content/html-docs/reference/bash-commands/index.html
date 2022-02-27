@@ -4913,7 +4913,7 @@
                       <p>Notes: Issue when renaming file without numbers collides with existing file name...</p>
                     </blockquote>
                     <h6>code:</h6>
-                    <pre><code class="language-sh">find . -name &quot;* *&quot; -type d | rename &#x27;s/ /_/g&#x27;   
+                    <pre><code class="language-sh">find . -name &quot;* *&quot; -type d | rename &#x27;s/ /_/g&#x27;
 find . -name &quot;* *&quot; -type f | rename &#x27;s/ /_/g&#x27;
 </code></pre>
                     <pre><code class="language-sh">```sh
@@ -4962,7 +4962,7 @@ fs.writeFile(&#x27;output.md&#x27;, cat, err =&gt; {
                       <p>Notes: To clear up clutter in repositories that only get used on your local machine.</p>
                     </blockquote>
                     <h6>code:</h6>
-                    <pre><code class="language-sh">find . -empty -type d -print -delete        
+                    <pre><code class="language-sh">find . -empty -type d -print -delete
 
 
 find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
@@ -5087,7 +5087,7 @@ find ./ -iname &quot;*.docx&quot; -type f -exec sh -c &#x27;pandoc &quot;${0}&qu
                       <p>Notes:</p>
                     </blockquote>
                     <h6>code:</h6>
-                    <pre><code class="language-sh">sudo apt install tree 
+                    <pre><code class="language-sh">sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
 sudo apt install black -y
@@ -5154,10 +5154,10 @@ find . -type d -exec rename &#x27;s/-main//g&#x27; {} +
 
 
 
-rename &#x27;s/\.js\.download$/.js/&#x27; *.js\.download 
+rename &#x27;s/\.js\.download$/.js/&#x27; *.js\.download
 
 
-rename &#x27;s/\.html\.markdown$/.md/&#x27; *.html\.markdown 
+rename &#x27;s/\.html\.markdown$/.md/&#x27; *.html\.markdown
 
 
 find . -type d -exec rename &#x27;s/es6//g&#x27; {} +
@@ -5230,7 +5230,7 @@ fs.writeFile(&#x27;output.md&#x27;, cat, err =&gt; {
                     <h6>code:</h6>
                     <pre><code class="language-sh">find . -name &quot;* *&quot; -type f | rename &#x27;s/_//g&#x27;
 
-find . -name &quot;* *&quot; -type d | rename &#x27;s/#/_/g&#x27;   
+find . -name &quot;* *&quot; -type d | rename &#x27;s/#/_/g&#x27;
 </code></pre>
                     <hr />
                     <h1>18. Filter &amp; delete files by name and extension</h1>
@@ -5342,11 +5342,11 @@ zip -r $1.$TSTAMP.zip $1 -x &quot;**.git/*&quot; -x &quot;**node_modules/*&quot;
 
 printf &quot;\nCreated: $1.$TSTAMP.zip\n&quot;
 
-# usage: 
+# usage:
 # - zipdir thedir
 # - zip thedir -x &quot;**anotherexcludedsubdir/*&quot;    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add &#x27;zip&#x27; command this way: 
+# if in windows/git-bash, add &#x27;zip&#x27; command this way:
 # https://stackoverflow.com/a/55749636/1482990
 </code></pre>
                     <hr />
@@ -5703,12 +5703,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -5717,12 +5717,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 </code></pre>
                     <hr />
@@ -5811,7 +5811,7 @@ find . -type d -exec rename &#x27;s/-master//g&#x27; {} +
                       <p>Notes: need to run <code>sudo apt install rename</code> to use this command</p>
                     </blockquote>
                     <h6>code:</h6>
-                    <pre><code class="language-sh">find . -name &quot;* *&quot; -type d | rename &#x27;s/ /_/g&#x27;   
+                    <pre><code class="language-sh">find . -name &quot;* *&quot; -type d | rename &#x27;s/ /_/g&#x27;
 find . -name &quot;* *&quot; -type f | rename &#x27;s/ /_/g&#x27;
 </code></pre>
                     <hr />
@@ -5883,18 +5883,18 @@ find . -name &quot;* *&quot; -type f | rename &#x27;s/ /_/g&#x27;
     [string] $ZipFilesPath = &quot;./&quot;,
     [string] $UnzipPath = &quot;./RESULT&quot;
 )
- 
+
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
- 
+
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
- 
+
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity &quot;Unzipping to $($UnzipPath)&quot; -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status &quot;File $($Progress) of $($ZipFiles.Count)&quot;
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
- 
- 
+
+
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
@@ -6167,7 +6167,7 @@ echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
 read &lt;varname&gt;               # reads a string from the input and assigns it to a variable
-read -p &quot;prompt&quot; &lt;varname&gt;   # same as above but outputs a prompt to ask user for value 
+read -p &quot;prompt&quot; &lt;varname&gt;   # same as above but outputs a prompt to ask user for value
 column -t &lt;filename&gt;         # display info in pretty columns (often used with pipe)
 let &lt;varname&gt; = &lt;equation&gt;   # performs mathematical calculation using operators like +, -, *, /, %
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
@@ -6464,9 +6464,9 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
 ##############################################################################
-# COLORS AND BACKGROUNDS 
+# COLORS AND BACKGROUNDS
 ##############################################################################
-# note: \e or \x1B also work instead of \033 
+# note: \e or \x1B also work instead of \033
 # Reset
 Color_Off=&#x27;\033[0m&#x27; # Text Reset
 
@@ -6523,7 +6523,7 @@ On_White=&#x27;\033[47m&#x27; # White
 
 # Example of usage
 echo -e &quot;${Green}This is GREEN text${Color_Off} and normal text&quot;
-echo -e &quot;${Red}${On_White}This is Red test on White background${Color_Off}&quot; 
+echo -e &quot;${Red}${On_White}This is Red test on White background${Color_Off}&quot;
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf &quot;${Red} This is red \n&quot;
 </code></pre>
@@ -6689,10 +6689,10 @@ header.appendChild('div1');
 </script><!-- Default Statcounter code for 2
 https://bgoonz-blog.netlify.app/ -->
 <script type="text/javascript">
-var sc_project=12702211; 
-var sc_invisible=0; 
-var sc_security="011fbeb6"; 
-var sc_text=3; 
+var sc_project=12702211;
+var sc_invisible=0;
+var sc_security="011fbeb6";
+var sc_text=3;
 var scJsHost = "https:///";
 document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
