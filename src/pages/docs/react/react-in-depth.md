@@ -1,95 +1,49 @@
 ---
-
 title: React In Depth
-
 weight: 0
-
-excerpt: lorem-ipsum
-
+excerpt: React embraces the fact that rendering logic is...
 seo:
-
     title: Intro To React
-
     description: >-
-
         React embraces the fact that rendering logic is inherently coupled with
-
         other UI logic: how events are handled, how the state changes over time.
-
     robots: []
-
     extra:
-
         - name: 'og:description'
-
           value: >-
-
               React embraces the fact that rendering logic is inherently coupled with
-
               other UI logic: how events are handled, how the state changes over time.
-
           keyName: property
-
           relativeUrl: false
-
         - name: 'og:title'
-
           value: Intro To React
-
           keyName: property
-
           relativeUrl: false
-
         - name: 'og:image'
-
           value: images/kind-whale.gif
-
           keyName: property
-
           relativeUrl: true
-
         - name: 'twitter:title'
-
           value: Intro To React
-
           keyName: name
-
           relativeUrl: false
-
         - name: 'twitter:description'
-
           value: >-
-
               React embraces the fact that rendering logic is inherently coupled with
-
               other UI logic: how events are handled, how the state changes over time.
-
           keyName: name
-
           relativeUrl: false
-
         - name: 'twitter:card'
-
           value: react_img_intro
-
           keyName: name
-
           relativeUrl: false
-
         - name: 'og:type'
-
           value: website
-
           keyName: property
-
           relativeUrl: false
-
     type: stackbit_page_meta
-
 template: docs
-
 ---
-
 
 
 # React In Depth

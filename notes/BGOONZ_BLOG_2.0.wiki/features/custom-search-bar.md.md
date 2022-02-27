@@ -78,9 +78,16 @@ First of all, you need to enable Image Search in the [Control Panel](https://pr
 -   Minimal UI customization options
 -   It can be shut down or changed at any time. Google is known for killing products ruthlessly without considering the user base.
 
+<<<<<<< HEAD
 Though this might sound great to have Google search on your website, there is no free lunch.  Google shows ads to cover up for this service.  Now say, your site is about shoes of brand X.  when people search on your site for a shoe you have,  Google shows an ad of your competitor brand Y and **places it above** your site results.  Your visitors are going to believe that you indeed are recommending brand Y yourself.  If you are going to monetize your visitors, then this will drastically reduce your income.
 
-Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website.  Method 2 will give an alternative but paid solution to this problem.
+# Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website.  Method 2 will give an alternative but paid solution to this problem.
+
+Though this might sound great to have Google search on your website, there is no free lunch. Google shows ads to cover up for this service. Now say, your site is about shoes of brand X. when people search on your site for a shoe you have, Google shows an ad of your competitor brand Y and **places it above** your site results. Your visitors are going to believe that you indeed are recommending brand Y yourself. If you are going to monetize your visitors, then this will drastically reduce your income.
+
+Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
+
+> > > > > > > af65185bd (-update)
 
 ## Google search bar for your website using Expertrec
 
@@ -109,7 +116,12 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 3.  Real-time support to help you take live your search on your website- You can be sure that search results don’t
 4.  Full control over search results.
 
+<<<<<<< HEAD
 Happy searching.  Here is the signup link again [https://cse.expertrec.com?platform=cse](https://cse.expertrec.com/?platform=cse)
+=======
+Happy searching. Here is the signup link again [https://cse.expertrec.com?platform=cse](https://cse.expertrec.com/?platform=cse)
+
+> > > > > > > af65185bd (-update)
 
 ## Google search box using a plugin for WordPress websites
 
@@ -222,7 +234,15 @@ A search bar is necessary for a good website. Creating your own search engine fr
 
 ---
 
+<<<<<<< HEAD
+
 # Implementing search box  |  Programmable Search Engine
+
+=======
+
+# Implementing search box | Programmable Search Engine
+
+> > > > > > > af65185bd (-update)
 
 > ## Excerpt
 >

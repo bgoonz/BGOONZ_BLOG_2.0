@@ -1,7 +1,7 @@
 ---
-title: AsynchAsynchronous JavaScript
+title: Asynchronous-JS
 weight: 0
-excerpt: AsynchAsynchronous JavaScript
+excerpt: Asynchronous-JS
 seo:
     title: ''
     description: ''

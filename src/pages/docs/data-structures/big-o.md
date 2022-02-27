@@ -48,7 +48,7 @@ template: docs
 - First we apply the product rule to drop all constants.
 - Then we apply the sum rule to select the single most dominant term.
 
-* * * * *
+---
 
 ### Complexity Classes
 
@@ -200,7 +200,7 @@ function exponential3n(n) {
 
 [view raw](https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705/raw/68270be48d6a30bb5d889ca83ee6810813018601/exponential.js)[exponential.js ](https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705#file-exponential-js)hosted with ❤ by [GitHub](https://github.com/)
 
-* * * * *
+---
 
 ### Memoization
 
@@ -255,7 +255,7 @@ Our memo object is *mapping* out our arguments of factorial to it's return value
 
 [view raw](https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de/raw/2c3d2998221f0b375bcece6dab8916c598ff9e03/fastfib.js)[fastfib.js ](https://gist.github.com/eengineergz/c15feb228a51a3543625009c8fd0b6de#file-fastfib-js)hosted with ❤ by [GitHub](https://github.com/)
 
-* * * * *
+---
 
 ### Tabulation
 
@@ -288,7 +288,7 @@ Our memo object is *mapping* out our arguments of factorial to it's return value
 - *Iterate through the array and fill in the remaining entries.*
 - *Your final answer is usually the last entry in the table.*
 
-* * * * *
+---
 
 ### Memo and Tab Demo with Fibonacci
 
@@ -364,7 +364,7 @@ function fibonacci(n) {\
 - *Worst Case Scenario: The term does not even exist in the array.*
 - *Meaning: If it doesn't exist then our for loop would run until the end therefore making our time complexity O(n).*
 
-* * * * *
+---
 
 ### Sorting Algorithms
 

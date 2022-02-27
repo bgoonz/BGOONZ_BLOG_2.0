@@ -262,6 +262,7 @@ TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.sm
 
 ---
 
+<<<<<<< HEAD
 XFN / Rel attr. (Xhtml Friends Network)  ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 NOFOLLOW: [byfreefind](https://www.freefind.com/)\
 NOFOLLOW: [search engine](https://www.freefind.com/)\
@@ -299,6 +300,46 @@ NOOPENER : [ds-algo](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-over
 NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
 NOOPENER : [Blog](https://bgoonz-blog.netlify.app/blog/)\
 NOOPENER : [Python](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+=======
+XFN / Rel attr. (Xhtml Friends Network) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
+NOFOLLOW: [byfreefind](https://www.freefind.com/)\
+NOFOLLOW: [search engine](https://www.freefind.com/)\
+NOOPENER : [dev.to](https://dev.to/bgoonz)\
+NOOPENER : [Instagram](https://www.instagram.com/bgoonz/?hl=en)\
+NOOPENER : [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA)\
+NOOPENER : [GitHub](https://github.com/bgoonz)\
+NOOPENER : [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)\
+NOOPENER : [Twitter](https://twitter.com/bgooonz)\
+NOOPENER : [BLM](https://optimistic-lewin-8586ae.netlify.app/blm.zip)\
+NOOPENER : [Medium](https://bryanguner.medium.com/)\
+NOOPENER : [Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)\
+NOOPENER : [Contact](https://sidebar-blog.netlify.app/contact/)\
+NOOPENER : [Github-Advanced-Search](https://github.com/search/advanced)\
+NOOPENER : [PotluckPlanner](https://potluck-landing.netlify.app/)\
+NOOPENER : [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)\
+NOOPENER : [Job Search Resources](https://determined-dijkstra-ee7390.netlify.app/)\
+NOOPENER : [Ternary 2 If Else](https://ternary42.netlify.app/)\
+NOOPENER : [Text Tools](https://devtools42.netlify.app/)\
+NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
+NOOPENER : [Wordpress Blog](https://web-dev-hub.com/)\
+NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
+NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
+NOOPENER : [SearchAwesome](https://bgoonz.github.io/searchAwesome/)\
+NOOPENER : [WebAudioLab](https://panoramic-eggplant-452e4.netlify.app/)\
+NOOPENER : [Meditation App](https://meditate42app.netlify.app/)\
+NOOPENER : [Potluck Planner](https://potluck-landing.netlify.app/)\
+NOOPENER : [Projects](https://project-portfolio42.netlify.app/)\
+NOOPENER : [OG-Blog](https://web-dev-resource-hub.netlify.app/)\
+NOOPENER : [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)\
+NOOPENER : [Archive](https://github.com/bgoonz/UsefulResourceRepo2.0)\
+NOOPENER : [nodejs](https://bgoonz-blog.netlify.app/docs/articles/nodejs/)\
+NOOPENER : [platform docs](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
+NOOPENER : [ds-algo](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-overview/)\
+NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
+NOOPENER : [Blog](https://bgoonz-blog.netlify.app/blog/)\
+NOOPENER : [Python](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+
+> > > > > > > af65185bd (-update)
 
 HTML.
 

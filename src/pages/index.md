@@ -24,10 +24,10 @@ sections:
           complexity?
         actions:
           - label: Get Started
-            url: /docs
+            url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
             style: link
         title: A Quick Guide To Big O
-        image: images/my-back.png
+        image: images/outdated-packages-732a4523.png
         title_url: >-
           https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
       - content: |
@@ -86,7 +86,7 @@ sections:
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: angolia
+        title_url: 'https://www.algolia.com/doc/'
         image_alt: angolia
         content: |
           ## Full Text Search
@@ -96,24 +96,40 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: neural networks
+        title_url: >-
+          https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
         image_alt: neural networks
         content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
         title_url: jamstack
         image_alt: jamstack
-        content: |
-          ##### Why Jamstack Jamstack is the new standard architecture for the
-          web. Using Git workflows and modern build tools, pre-rendered content
-          is served to a CDN and made dynamic through APIs and serverless
-          functions. Technologies in the stack include JavaScript frameworks,
-          Static Site Generators, Headless CMSs, and CDNs.
+        content: >
+          > Why Jamstack Jamstack is the new standard architecture for the...
+
+
+          \*\*
+
+
+          > *web. Using Git workflows and modern build tools, pre-rendered
+          content
+
+          > is served to a CDN and made dynamic through APIs and serverless
+
+          > functions. Technologies in the stack include JavaScript frameworks,
+
+          > Static Site Generators, Headless CMSs, and CDNs.*
         actions: []
         type: grid_item
         image: images/jamstack.png
@@ -123,10 +139,10 @@ sections:
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions:
           - label: lorem-ipsum
-            url: '#'
-            style: link
+            url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
+            style: secondary
             icon_class: dev
-            new_window: false
+            new_window: true
             no_follow: false
         type: grid_item
         image: images/eventloop.gif
@@ -144,8 +160,8 @@ sections:
         image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: 'https://www.iter.org/'
+        image_alt: Nuclear Fusion
         content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
@@ -155,7 +171,13 @@ sections:
           design — the world's most developed approach to fusion energy. It is
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
-        actions: []
+        actions:
+          - label: Learn More
+            url: 'https://www.iter.org/'
+            style: secondary
+            icon_class: dev
+            new_window: true
+            no_follow: false
         type: grid_item
         image: images/iter-c7508519.jpg
     type: section_grid
@@ -194,17 +216,18 @@ sections:
             url: /showcase
             style: secondary
         image_alt: portfolio of websites
-        image: images/portfolio-pic-494ea398.png
+        image: images/portfolio-91689538.jpg
   - title: Blog-Archive-And-Mini-Projects
     section_id: Mini Projects
     image_alt: showcase
     image_position: left
-    content: |-
-      <iframeclass="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    content: >-
+      <iframe src="https://random-static-html-deploys.netlify.app/"   
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -226,41 +249,26 @@ sections:
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
-        src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
+  - section_id: tools
     image_alt: lorem-ipsum
     image_position: left
-    content: >-
-      Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non
-      efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
-      pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque
-      imperdiet venenatis. > Vestibulum ullamcorper risus auctor eleifend
-      consequat. ![Placeholder
-      Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)
-      In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl
-      elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam
-      malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis.
-      Vestibulum quis elit magna. Vestibulum accumsan blandit consequat.
-      Phasellus quis posuere quam. Vivamus mollis in tellus ac ullamcorper.
-      Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna
-      et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget
-      mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros.
-      Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet
-      elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare
-      lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut
-      purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac
-      auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam.
-      Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam
-      ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam
-      sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+    content: |
+      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
     actions: []
     type: section_content
+    title: Tools Showcase
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
