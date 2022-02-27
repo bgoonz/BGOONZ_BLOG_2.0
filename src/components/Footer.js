@@ -1,4 +1,4 @@
-make
+
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';

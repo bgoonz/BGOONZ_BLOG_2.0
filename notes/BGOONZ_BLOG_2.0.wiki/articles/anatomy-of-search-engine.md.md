@@ -26,13 +26,14 @@ Computer Science Department, Stanford University, Stanford, CA 94305
 ### Abstract
 
 > In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)  
-<<<<<<< HEAD
+> <<<<<<< HEAD
 >        To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
 >        Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
-=======
->  To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
+> =======
+> To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
 >  Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
->>>>>>> af65185bd (-update)
+>
+> > > > > > > af65185bd (-update)
 >
 > **Keywords**: World Wide Web, Search Engines, Information Retrieval, PageRank, Google
 
@@ -59,7 +60,8 @@ These tasks are becoming increasingly difficult as the Web grows. However, hardw
 Our main goal is to improve the quality of web search engines. In 1994, some people believed that a complete search index would make it possible to find anything easily. According to [Best of the Web 1994 -- Navigators,](http://botw.org/1994/awards/navigators.html)  "The best navigation service should make it easy to find almost anything on the Web (once all the data is entered)."  However, the Web of 1997 is quite different. Anyone who has used a search engine recently, can readily testify that the completeness of the index is not the only factor in the quality of search results. "Junk results" often wash out any results that a user is interested in. In fact, as of November 1997, only one of the top four commercial search engines finds itself (returns its own search page in response to its name in the top ten results). One of the main causes of this problem is that the number of documents in the indices has been increasing by many orders of magnitude, but the user's ability to look at documents has not. People are still only willing to look at the first few tens of results. Because of this, as the collection size grows, we need tools that have very high precision (number of relevant documents returned, say in the top tens of results). Indeed, we want our notion of "relevant" to only include the very best documents since there may be tens of thousands of slightly relevant documents. This very high precision is important even at the expense of recall (the total number of relevant documents the system is able to return). There is quite a bit of recent optimism that the use of more hypertextual information can help improve search and other applications \[[Marchiori 97](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Spertus 97](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Weiss 96](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Kleinberg 98](http://infolab.stanford.edu/~backrub/google.html#ref)\]. In particular, link structure \[[Page 98](http://infolab.stanford.edu/~backrub/google.html#ref)\] and link text provide a lot of information for making relevance judgments and quality filtering. Google makes use of both link structure and anchor text (see Sections [2.1](http://infolab.stanford.edu/~backrub/google.html#pr) and [2.2](http://infolab.stanford.edu/~backrub/google.html#anchor)).
 =======
 Our main goal is to improve the quality of web search engines. In 1994, some people believed that a complete search index would make it possible to find anything easily. According to [Best of the Web 1994 -- Navigators,](http://botw.org/1994/awards/navigators.html) "The best navigation service should make it easy to find almost anything on the Web (once all the data is entered)." However, the Web of 1997 is quite different. Anyone who has used a search engine recently, can readily testify that the completeness of the index is not the only factor in the quality of search results. "Junk results" often wash out any results that a user is interested in. In fact, as of November 1997, only one of the top four commercial search engines finds itself (returns its own search page in response to its name in the top ten results). One of the main causes of this problem is that the number of documents in the indices has been increasing by many orders of magnitude, but the user's ability to look at documents has not. People are still only willing to look at the first few tens of results. Because of this, as the collection size grows, we need tools that have very high precision (number of relevant documents returned, say in the top tens of results). Indeed, we want our notion of "relevant" to only include the very best documents since there may be tens of thousands of slightly relevant documents. This very high precision is important even at the expense of recall (the total number of relevant documents the system is able to return). There is quite a bit of recent optimism that the use of more hypertextual information can help improve search and other applications \[[Marchiori 97](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Spertus 97](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Weiss 96](http://infolab.stanford.edu/~backrub/google.html#ref)\] \[[Kleinberg 98](http://infolab.stanford.edu/~backrub/google.html#ref)\]. In particular, link structure \[[Page 98](http://infolab.stanford.edu/~backrub/google.html#ref)\] and link text provide a lot of information for making relevance judgments and quality filtering. Google makes use of both link structure and anchor text (see Sections [2.1](http://infolab.stanford.edu/~backrub/google.html#pr) and [2.2](http://infolab.stanford.edu/~backrub/google.html#anchor)).
->>>>>>> af65185bd (-update)
+
+> > > > > > > af65185bd (-update)
 
 #### 1.3.2 Academic Search Engine Research
 
@@ -262,18 +264,20 @@ Lexicon
 <<<<<<< HEAD
 Temporary Anchor Data   
 =======
-Temporary Anchor Data  
->>>>>>> af65185bd (-update)
-(not in total)
+Temporary Anchor Data
+
+> > > > > > > af65185bd (-update)
+> > > > > > > (not in total)
 
 6.6 GB
 
 <<<<<<< HEAD
 Document Index Incl.   
 =======
-Document Index Incl.  
->>>>>>> af65185bd (-update)
-Variable Width Data
+Document Index Incl.
+
+> > > > > > > af65185bd (-update)
+> > > > > > > Variable Width Data
 
 9.7 GB
 
@@ -311,11 +315,13 @@ Table 1. Statistics
 
 <<<<<<< HEAD
 
-
 ###  5.2 System Performance
+
 =======
+
 ### 5.2 System Performance
->>>>>>> af65185bd (-update)
+
+> > > > > > > af65185bd (-update)
 
 It is important for a search engine to crawl and index efficiently. This way information can be kept up to date and major changes to the system can be tested relatively quickly. For Google, the major operations are Crawling, Indexing, and Sorting. It is difficult to measure how long crawling took overall because disks filled up, name servers crashed, or any number of other problems which stopped the system. In total it took roughly 9 days to download the 26 million pages (including errors). However, once the system was running smoothly, it ran much faster, downloading the last 11 million pages in just 63 hours, averaging just over 4 million pages per day or 48.5 pages per second. We ran the indexer and the crawler simultaneously. The indexer ran just faster than the crawlers. This is largely because we spent just enough time optimizing the indexer so that it would not be a bottleneck. These optimizations included bulk updates to the document index and placement of critical data structures on the local disk. The indexer runs at roughly 54 pages per second. The sorters can be run completely in parallel; using four machines, the whole process of sorting takes about 24 hours.
 
