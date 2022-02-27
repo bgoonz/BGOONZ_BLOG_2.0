@@ -9,7 +9,6 @@ seo:
 come across the definition of recursion,'
   robots: []
   extra: []
-template: docs
 ---
 
 If you've been on the business for some time, you have, most likely,
