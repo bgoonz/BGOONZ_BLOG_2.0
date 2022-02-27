@@ -1,7 +1,7 @@
 ---
 title: Recursion
 weight: 0
-excerpt:If you've been on the business for some time, you have, most likely,
+excerpt: If you've been on the business for some time, you have, most likely,
 come across the definition of recursion
 seo:
   title: 'Recursion'
@@ -31,21 +31,21 @@ factorial function.
 For the sake of completeness, let's look at how this executes for
 `n = 6`:
 
--   factorial(6)
-    -   6 \* factorial(5)
-        -   5 \* factorial (4)
-            -   4 \* factorial(3)
-                -   3 \* factorial(2)
-                    -   2 \* factorial(1)
-                        -   1 \* factorial(0)
-                            -   1
-                        -   (resuming previous execution) 1 \* 1 = 1
-                    -   (resuming...) 2 \* 1 = 2
-                -   (...) 3 \* 2 = 6
-            -   ... 4 \* 6 = 24
-        -   5 \* 24 = 120
-    -   6 \* 120 = 720
--   factorial(6) = 720
+- factorial(6)
+  - 6 \* factorial(5)
+    - 5 \* factorial (4)
+      - 4 \* factorial(3)
+        - 3 \* factorial(2)
+          - 2 \* factorial(1)
+            - 1 \* factorial(0)
+              - 1
+            - (resuming previous execution) 1 \* 1 = 1
+          - (resuming...) 2 \* 1 = 2
+        - (...) 3 \* 2 = 6
+      - ... 4 \* 6 = 24
+    - 5 \* 24 = 120
+  - 6 \* 120 = 720
+- factorial(6) = 720
 
 Now, we must be very cautious as to what's happening so we can understand
 what is to come next.
@@ -89,23 +89,23 @@ function factorial(n) {
 
 Let's take a look at how this gets executed:
 
--   factorial(6)
-    -   inner anonymous function (iaf) gets called with (n = 6, res = 1)
-        -   iaf(5, 1 \* 6)
-            -   iaf(4, 6 \* 5)
-                -   iaf(3, 30 \* 4)
-                    -   iaf(2, 120 \* 3)
-                        -   iaf(1, 360 \* 2)
-                            -   iaf(0, 720)
-                                -   720
-                            -   720
-                        -   720
-                    -   720
-                -   720
-            -   720
-        -   720
-    -   iaf (6, 1) = 720
--   factorial(6) = 720
+- factorial(6)
+  - inner anonymous function (iaf) gets called with (n = 6, res = 1)
+    - iaf(5, 1 \* 6)
+      - iaf(4, 6 \* 5)
+        - iaf(3, 30 \* 4)
+          - iaf(2, 120 \* 3)
+            - iaf(1, 360 \* 2)
+              - iaf(0, 720)
+                - 720
+              - 720
+            - 720
+          - 720
+        - 720
+      - 720
+    - 720
+  - iaf (6, 1) = 720
+- factorial(6) = 720
 
 You might notice that we didn't need to perform any calculation after unwinding
 the stack. We just returned a value. But, according to our rules, we had to save
@@ -116,15 +116,15 @@ Scheme it's mandatory for such chains to be optimized with tail call
 optimization. This ensures that our stack is not filled with unnecessary frames.
 Our previous calculation would look, thus, this way:
 
--   factorial(6)
--   iaf(6, 1)
--   iaf(5, 6)
--   iaf(4, 30)
--   iaf(3, 120)
--   iaf(2, 360)
--   iaf(1, 720)
--   iaf(0, 720)
--   720
+- factorial(6)
+- iaf(6, 1)
+- iaf(5, 6)
+- iaf(4, 30)
+- iaf(3, 120)
+- iaf(2, 360)
+- iaf(1, 720)
+- iaf(0, 720)
+- 720
 
 Which in turns, looks an awfully lot like
 
