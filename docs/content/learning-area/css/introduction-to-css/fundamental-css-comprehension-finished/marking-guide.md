@@ -53,7 +53,7 @@ The overall mark awarded is out of 35. Work out their final mark, and then divid
 
 <dl>
 <dt>"Write a ruleset that targets both the card header, and card footer..." (3 marks)</dt>
-<dd>The correct rule should look <a href="https://github.com/mdn/learning-area/blob/master/css/introduction-to-css/fundamental-css-comprehension-finished/style.css#L30-L33">something like this</a>. Since the default font size as set on the <code>&lt;html&gt;</code> element is 10px, 1em is 10px, so the height (30px) should be represented by 3em, and the padding by 1em. 10 + 30 + 10 = 50.  
+<dd>The correct rule should look <a href="https://github.com/mdn/learning-area/blob/master/css/introduction-to-css/fundamental-css-comprehension-finished/style.css#L30-L33">something like this</a>. Since the default font size as set on the <code>&lt;html&gt;</code> element is 10px, 1em is 10px, so the height (30px) should be represented by 3em, and the padding by 1em. 10 + 30 + 10 = 50.
 </dd>
 <dt>"The default margin applied to the <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> elements by the browser will interfere with our design" (3 marks)</dt>
 <dd>The correct rule should look <a href="https://github.com/mdn/learning-area/blob/master/css/introduction-to-css/fundamental-css-comprehension-finished/style.css#L24-L26">something like this</a>. Simply setting the margin to 0 on all paragraphs and the <code>&lt;h2&gt;</code> should be fine.</dd>
