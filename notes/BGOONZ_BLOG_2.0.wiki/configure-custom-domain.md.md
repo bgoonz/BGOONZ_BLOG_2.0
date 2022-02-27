@@ -17,7 +17,8 @@ Special handling for apex and `www`
 If you assign an apex domain or a `www` subdomain to your site, Netlify will automatically add *both* the apex domain and the `www` subdomain. For more information, visit the section on [apex domains and `www` subdomains](https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains).
 =======
 If you assign an apex domain or a `www` subdomain to your site, Netlify will automatically add _both_ the apex domain and the `www` subdomain. For more information, visit the section on [apex domains and `www` subdomains](https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains).
->>>>>>> af65185bd (-update)
+
+> > > > > > > af65185bd (-update)
 
 ## [#](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-a-subdomain)Configure a subdomain
 

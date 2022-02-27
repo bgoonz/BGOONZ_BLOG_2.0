@@ -14,12 +14,13 @@ Internet Archive encourages developers to add media to archive.org as well as to
 <<<<<<< HEAD
 We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress.  If you have feedback, please email us at <info@archive.org>.
 
-You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
-=======
+# You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
+
 We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress. If you have feedback, please email us at <info@archive.org>.
 
 You may also want to see [community-maintained API information](https://archive.readme.io/) for archive.org.
->>>>>>> af65185bd (-update)
+
+> > > > > > > af65185bd (-update)
 
 **General**\
 [Overview of how items are structured](http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/)
