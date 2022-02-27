@@ -1,138 +1,101 @@
-/**
- * Icons
- */
+// SVG icons
 .icon {
-    color: inherit;
-    fill: currentColor;
-    flex-shrink: 0;
-    height: 1em;
-    line-height: 1;
-    width: 1em;
+  color: inherit;
+  fill: currentColor;
+  flex-shrink: 0;
+  height: 1em;
+  line-height: 1;
+  width: 1em;
+}
+
+// CSS icons
+.icon-menu,
+.icon-close {
+  background: currentColor;
+  border-radius: 1px;
+  color: inherit;
+  height: 2px;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -12px;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+
+  &:before,
+  &:after {
+    background: currentColor;
+    border-radius: 1px;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .icon-menu {
-    background: currentColor;
-    border-radius: 1px;
-    color: inherit;
-    height: 2px;
-    margin-top: -1px;
-    margin-left: -12px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transition: -webkit-transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    -webkit-transition: transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    width: 30px;
+  &:before {
+    top: -6px;
+  }
 
-    &:before,
-    &:after {
-        background: currentColor;
-        border-radius: 1px;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        width: 100%;
-    }
-
-    &:before {
-        top: -8px;
-        -webkit-transition: top 75ms ease 0.12s, opacity 75ms ease;
-        transition: top 75ms ease 0.12s, opacity 75ms ease;
-    }
-
-    &:after {
-        bottom: -8px;
-        -webkit-transition: bottom 75ms ease 0.12s, -webkit-transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-        -webkit-transition: bottom 75ms ease 0.12s, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-        transition: bottom 75ms ease 0.12s, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
+  &:after {
+    bottom: -6px;
+  }
 }
 
-.menu--opened {
-    .icon-menu {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        -webkit-transition-delay: 0.12s;
-        transition-delay: 0.12s;
-        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+.icon-close {
+  background: 0;
+  margin-left: -14px;
+  width: 28px;
 
-        &:before {
-            top: 0;
-            -webkit-transition: top 75ms ease, opacity 75ms ease 0.12s;
-            transition: top 75ms ease, opacity 75ms ease 0.12s;
-            opacity: 0;
-        }
+  &:before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
-        &:after {
-            bottom: 0;
-            -webkit-transition: bottom 75ms ease, -webkit-transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-            -webkit-transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-            transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-        }
-    }
+  &:after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 }
 
-.icon-arrow-left,
-.icon-arrow-right {
-    background: currentColor;
-    color: inherit;
-    height: 2px;
-    left: 50%;
-    margin-left: -6px;
-    margin-top: -1px;
-    position: absolute;
-    top: 50%;
-    width: 12px;
-
-    &:before {
-        border-style: solid;
-        content: '';
-        position: absolute;
-        height: 0;
-        margin-top: -4px;
-        top: 50%;
-        width: 0;
-    }
+.icon-angle-right {
+  background: 0;
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  box-sizing: border-box;
+  height: 8px;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.icon-arrow-left:before {
-    border-width: 4px 4px 4px 0;
-    border-color: transparent currentColor transparent transparent;
-    left: -2px;
-}
-
-.icon-arrow-right:before {
-    border-width: 4px 0 4px 4px;
-    border-color: transparent transparent transparent currentColor;
-    right: -2px;
-}
-
-.icon-arrow-up {
-    background: currentColor;
-    color: inherit;
+.docs-nav-toggle {
+  .icon-angle-right {
     height: 12px;
-    left: 50%;
-    margin-left: -1px;
+    left: auto;
+    margin-left: 0;
+    margin-right: 9px;
     margin-top: -6px;
-    position: absolute;
-    top: 50%;
-    width: 2px;
+    right: 0;
+    width: 12px;
+  }
+}
 
-    &:before {
-        border-color: transparent transparent currentColor transparent;
-        border-style: solid;
-        border-width: 0 4px 4px 4px;
-        content: '';
-        left: 50%;
-        position: absolute;
-        height: 0;
-        margin-left: -4px;
-        top: -2px;
-        width: 0;
-    }
+.docs-section-item {
+  .icon-angle-right {
+    left: auto;
+    margin-left: 0;
+    margin-right: 15px;
+    right: 0;
+  }
 }
