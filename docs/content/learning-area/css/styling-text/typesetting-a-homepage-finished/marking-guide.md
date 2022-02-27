@@ -81,6 +81,6 @@ The overall mark awarded is out of 40. Work out their final mark, and then divid
     <li>Give the links appropriate styling to make them look nice and fit in with the style of the page. This could include center aligned text, line height, larger font size, color, border, whatever, as long as it looks ok.</li>
     <li>Give the focus and hover states different styling so the nav menu responds when interacted with.</li>
     <li>Give the active state a different style again, so it is obvious when a link becomes activated.</li>
-  </ul>  
+  </ul>
 </dd>
 </dl>

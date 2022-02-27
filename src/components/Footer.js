@@ -9,7 +9,6 @@ export default class Footer extends React.Component {
             <footer id="colophon" className="site-footer outer">
                 <div>
                     <center>
-                    
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
@@ -77,7 +76,8 @@ export default class Footer extends React.Component {
                                             action="https://search.freefind.com/find.html"
                                             method="get"
                                             acceptCharset="utf-8"
-                                            target="_self">
+                                            target="_self"
+                                        >
                                             <input type="hidden" name="si" defaultValue={14588965} />
                                             <input type="hidden" name="pid" defaultValue="r" />
                                             <input type="hidden" name="n" defaultValue={0} />
@@ -95,14 +95,16 @@ export default class Footer extends React.Component {
                                             fontFamily: 'Arial, Helvetica, sans-serif',
                                             fontSize: '7.5pt',
                                             paddingTop: '4px'
-                                        }} >
+                                        }}
+                                    >
                                         <a
                                             style={{
                                                 textDecoration: 'none',
                                                 color: 'transparent'
                                             }}
                                             href="https://www.freefind.com"
-                                            rel="nofollow">
+                                            rel="nofollow"
+                                        >
                                             search engine
                                         </a>
                                         <a
@@ -111,7 +113,8 @@ export default class Footer extends React.Component {
                                                 color: 'transparent'
                                             }}
                                             href="https://www.freefind.com"
-                                            rel="nofollow">
+                                            rel="nofollow"
+                                        >
                                             by
                                             <span style={{ color: 'transparent' }}>freefind</span>
                                         </a>
@@ -127,14 +130,22 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-                        <a className="save2PDF" href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a
+                            className="save2PDF"
+                            href="//pdfcrowd.com/url_to_pdf/?"
+                            onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"
+                        >
                             Save to PDF
                         </a>
                     </center>
-      <a aria-current="page" className="site-logo" href="/"><img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" /></a>
+                    <a aria-current="page" className="site-logo" href="/">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png"
+                            alt="webdevhub logo"
+                        />
+                    </a>
                 </div>
                 <div className="inner">
-               
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
