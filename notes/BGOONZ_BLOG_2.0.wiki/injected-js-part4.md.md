@@ -1,4 +1,5 @@
-## [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+[Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+---------------------------------------------------------------------------------------------
 
 Control the post processing and optimizations Netlify can do for you
 

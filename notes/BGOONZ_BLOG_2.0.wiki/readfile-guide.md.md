@@ -1,11 +1,10 @@
+
 # File processing in Node.js: A comprehensive guide - LogRocket Blog
 
 > ## Excerpt
->
 > In this guide, walk through file processing in Node.js, from handling files and editing metadata to working with links and directories.
 
 ---
-
 As a Node.js developer, there’s a good chance that at some point you’ve imported the `fs` module and written some code that’s interacted with the file system.
 
 What you might not know is that the `fs` module is a fully-featured, standards-based, cross-platform module that exposes not one, but three APIs that cater to synchronous and asynchronous programming styles.
@@ -100,7 +99,7 @@ All of the functions available in the `FileHandle` class are also available as t
 
 Reading a file seems like such a simple task. However, there are several different options that can be specified depending on what you need to do with a file:
 
-const data \= await fsPromises.readFile(path); const noData \= await fsPromises.readFile(path, { flag: 'w'}); const base64data \= await fsPromises.readFile(path, { encoding: 'base64' }); const controller \= new AbortController(); const { signal } \= controller; const promise \= fsPromises.readFile(path, { signal: signal }); console.log(\`started reading file at ${path}\`); controller.abort(); console.log('read operation aborted before it could be completed') await promise;
+ const data \= await fsPromises.readFile(path);  const noData \= await fsPromises.readFile(path, { flag: 'w'});  const base64data \= await fsPromises.readFile(path, { encoding: 'base64' });  const controller \= new AbortController(); const { signal } \= controller; const promise \= fsPromises.readFile(path, { signal: signal }); console.log(\`started reading file at ${path}\`); controller.abort(); console.log('read operation aborted before it could be completed') await promise;
 
 Example 1 is as simple as it gets, if all you want to do is get the contents of a file.
 
@@ -114,7 +113,7 @@ Example 4 demonstrates how to interrupt a file read operation and abort it. This
 
 The `copyFile` function can make a copy of a file and give you some control over what happens if the destination file exists already:
 
-await fsPromises.copyFile('source.txt', 'dest.txt'); await fsPromises.copyFile('source.txt', 'dest.txt', fs.constants.COPYFILE_EXCL);
+ await fsPromises.copyFile('source.txt', 'dest.txt');  await fsPromises.copyFile('source.txt', 'dest.txt', fs.constants.COPYFILE\_EXCL); 
 
 Example 1 will overwrite `dest.txt` if it exists already. In example 2, we pass in the `COPYFILE_EXCL` flag to override the default behavior and fail if `dest.txt` exists already.
 
@@ -128,7 +127,7 @@ There are three ways to write to a file:
 
 Each of these functions helps to implement different use cases.
 
-await fsPromises.appendFile('data.txt', '67890'); await fsPromises.appendFile('data2.txt', '123'); await fsPromises.writeFile('data3.txt', '67890'); await fsPromises.writeFile('data4.txt', '12345'); await fsPromises.truncate('data5.txt', 5);
+  await fsPromises.appendFile('data.txt', '67890');   await fsPromises.appendFile('data2.txt', '123');    await fsPromises.writeFile('data3.txt', '67890');   await fsPromises.writeFile('data4.txt', '12345');   await fsPromises.truncate('data5.txt', 5); 
 
 Examples 1 and 2 demonstrate how to use the `appendFile` function to append data to existing or new files. If a file doesn’t exist, `appendFile` will create it first.
 
@@ -140,7 +139,7 @@ Example 5 demonstrates how to use the `truncate` function to trim the contents o
 
 The promise API provides a single, performant `watch` function that can watch a file for changes.
 
-const abortController \= new AbortController(); const { signal } \= abortController; setTimeout(() \=> abortController.abort(), 3000); const watchEventAsyncIterator \= fsPromises.watch(path, { signal }); setTimeout(() \=> { fs.writeFileSync(path, 'new data'); console.log(\`modified ${path}\`); }, 1000); for await (const event of watchEventAsyncIterator) { console.log(\`'${event.eventType}' watch event was raised for ${event.filename}\`); }
+const abortController \= new AbortController(); const { signal } \= abortController; setTimeout(() \=> abortController.abort(), 3000); const watchEventAsyncIterator \= fsPromises.watch(path, { signal }); setTimeout(() \=> { fs.writeFileSync(path, 'new data'); console.log(\`modified ${path}\`); }, 1000); for await (const event of watchEventAsyncIterator) { console.log(\`'${event.eventType}' watch event was raised for ${event.filename}\`); }    
 
 The `watch` function can watch a file for changes indefinitely. Each time a change is observed, a watch event is raised. The `watch` function returns an async iterable, which is essentially a way for the function to return an unbounded series of promises. On line 12, we take advantage of the `for await … of` syntactic sugar to wait for and iterate each watch event as it is received.
 
@@ -154,7 +153,7 @@ So far, we have focused on reading and modifying the contents of a file, but you
 
 The `stat` function is used to retrieve file metadata, or “statistics” like file size, permissions, and ownership.
 
-const fileStats \= await fsPromises.stat('file1.txt'); console.log(fileStats) console.log(\`size of file1.txt is ${fileStats.size}\`);
+ const fileStats \= await fsPromises.stat('file1.txt'); console.log(fileStats)                      console.log(\`size of file1.txt is ${fileStats.size}\`);
 
 This example demonstrates the full list of metadata that can be retrieved for a file or directory.
 
@@ -166,7 +165,7 @@ const newAccessTime \= new Date(2020,0,1); const newModificationTime \= new Date
 
 The `realpath` function is useful for resolving relative paths and symbolic links to full paths:
 
-const realPath \= await fsPromises.realpath('./test1.txt'); console.log(realPath); const symLinkRealPath \= await fsPromises.realpath('./symlink1'); console.log(symLinkRealPath);
+ const realPath \= await fsPromises.realpath('./test1.txt'); console.log(realPath);   const symLinkRealPath \= await fsPromises.realpath('./symlink1'); console.log(symLinkRealPath); 
 
 ## File permissions and ownership
 
@@ -174,7 +173,7 @@ Please keep in mind as we continue in this section that file permission and owne
 
 If you are not sure whether your application has the necessary permissions to access or execute files on [the file system](https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/), you can use the `access` function to test it:
 
-try { await fsPromises.access('test1.txt'); console.log('test1.txt can be accessed'); } catch (err) { } try { await fsPromises.access('test2.txt', fs.constants.X_OK); } catch(err) { }
+ try { await fsPromises.access('test1.txt'); console.log('test1.txt can be accessed'); } catch (err) {  }  try { await fsPromises.access('test2.txt', fs.constants.X\_OK); } catch(err) {  }
 
 File permissions can be modified using the `chmod` function. For example, we can remove execute access from a file by passing a special mode string:
 
@@ -184,7 +183,7 @@ The `00666` mode string is a special five-digit number that is composed of multi
 
 File ownership can also be modified using the `chown` function:
 
-// set user and group ownership on a file const root_uid\= 0; const root_gid \= 0; await fsPromises.chown('test1.txt', root_uid, root_gid);
+// set user and group ownership on a file const root\_uid\= 0; const root\_gid \= 0; await fsPromises.chown('test1.txt', root\_uid, root\_gid);
 
 In this example, we update the file so that it is owned by the root user and root group. The `uid` of the root user and `gid` of the root group are always `0` on Linux.
 
@@ -204,11 +203,11 @@ On the other hand, a hard link pointing to a file will still be valid and contai
 
 We can easily create soft and hard links with the `fs` module. Use the `symlink` function to create soft links and the `link` function to create hard links.
 
-const softLink \= await fsPromises.symlink('file.txt', 'softLinkedFile.txt'); const hardLink \= await fsPromises.link('file.txt', 'hardLinkedFile.txt');
+ const softLink \= await fsPromises.symlink('file.txt', 'softLinkedFile.txt');  const hardLink \= await fsPromises.link('file.txt', 'hardLinkedFile.txt');
 
 What if you want to determine the underlying file that a link points to? This is where the `readlink` function comes in.
 
-\> console.log(await fsPromises.readlink('softLinkedFile.txt')); console.log(await fsPromises.readLink('hardLinkedFile.txt'));
+\> console.log(await fsPromises.readlink('softLinkedFile.txt'));   console.log(await fsPromises.readLink('hardLinkedFile.txt')); 
 
 The `readlink` function can read soft links, but not hard links. A hard link is indistinguishable from the original file it links to. In fact, all files are technically hard links. The `readlink` function essentially sees it as just another regular file and throws an `EINVAL` error.
 
@@ -220,7 +219,7 @@ The `unlink` function actually serves as a general purpose function that can als
 
 You can modify a soft link’s metadata much like you would a normal file’s:
 
-const linkStats \= await fsPromises.lstat(path); const newAccessTime \= new Date(2020,0,1); const newModifyTime \= new Date(2020,0,1); await fsPromises.lutimes('softLinkedFile.txt', newAccessTime, newModifyTime); await fsPromises.lchmod('softLinkedFile.txt', '00666'); const root_uid\= 0; const root_gid \= 0; await fsPromises.lchown('softLinkedFile.txt', root_uid, root_gid);
+ const linkStats \= await fsPromises.lstat(path);  const newAccessTime \= new Date(2020,0,1); const newModifyTime \= new Date(2020,0,1); await fsPromises.lutimes('softLinkedFile.txt', newAccessTime, newModifyTime);  await fsPromises.lchmod('softLinkedFile.txt', '00666');  const root\_uid\= 0; const root\_gid \= 0; await fsPromises.lchown('softLinkedFile.txt', root\_uid, root\_gid);
 
 Aside from each function being prefixed with an `l`, these functions operate identically to their equivalent file functions.
 
@@ -236,7 +235,7 @@ Be sure to call the `close` function to release the handle on the directory when
 
 The `fs` module also includes functions that hide the opening and closing of directory resource handles for you. For example, you can create, rename, and delete directories:
 
-await fsPromises.mkdir('sampleDir'); await fsPromises.mkdir('nested1/nested2/nested3', { recursive: true }); await fsPromises.rename('sampleDir', 'sampleDirRenamed'); await fsPromises.rmdir('sampleDirRenamed'); await fsPromises.rm('nested1', { recursive: true }); await fsPromises.rm('nested1', { recursive: true, force: true });
+ await fsPromises.mkdir('sampleDir');  await fsPromises.mkdir('nested1/nested2/nested3', { recursive: true });  await fsPromises.rename('sampleDir', 'sampleDirRenamed');  await fsPromises.rmdir('sampleDirRenamed');  await fsPromises.rm('nested1', { recursive: true });  await fsPromises.rm('nested1', { recursive: true, force: true });
 
 Examples 2, 5, and 6 demonstrate the `recursive` option, which is especially helpful if you don’t know if a path will exist before creating or deleting it.
 
@@ -244,7 +243,7 @@ There are two options to read the contents of a directory. By default, the `read
 
 You can pass the `withFileTypes` option to get a list of `Dirent` directory entry objects instead. These objects contain the name and type of each file system object in the requested directory. For example:
 
-const files \= await fsPromises.readdir('anotherDir'); for (const file in files) { console.log(file); } const dirents \= await fsPromises.readdir('anotherDir', {withFileTypes: true}); for (const entry in dirents) { if (entry.isFile()) { console.log(\`file name: ${entry.name}\`); } else if (entry.isDirectory()) { console.log(\`directory name: ${entry.name}\`); } else if (entry.isSymbolicLink()) { console.log(\`symbolic link name: ${entry.name}\`); } }
+ const files \= await fsPromises.readdir('anotherDir'); for (const file in files) { console.log(file); }  const dirents \= await fsPromises.readdir('anotherDir', {withFileTypes: true}); for (const entry in dirents) { if (entry.isFile()) { console.log(\`file name: ${entry.name}\`); } else if (entry.isDirectory()) { console.log(\`directory name: ${entry.name}\`); } else if (entry.isSymbolicLink()) { console.log(\`symbolic link name: ${entry.name}\`); } }
 
 The `readdir` function does not provide a recursive option to read the contents of sub-directories. You’ll have to write your own recursive function or rely on a third-party module like [`recursive-readdir]()`](https://www.npmjs.com/package/recursive-readdir).
 
