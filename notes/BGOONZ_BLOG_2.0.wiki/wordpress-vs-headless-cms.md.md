@@ -1,12 +1,13 @@
-## Introduction:
+Introduction:
+-------------
 
--   _What is a Content Management System (CMS)?_
+-   *What is a Content Management System (CMS)?*
 
 A content management system, or CMS, is a software program that allows users to create and maintain websites without having to write them from the ground up or even knowing how to code.
 
 A content management system (CMS) allows you to generate, manage, change, and publish material using a user-friendly interface. Rather than coding, you may change the look and functionality of your site by downloading or purchasing templates and plugins. You can have several users collaborating in the same tool's backend, among other things.
 
--   _Evolution of CMS: The new scaffolding_
+-   *Evolution of CMS: The new scaffolding*
 
 Like all good things, CMS's emerged in their final form after a lot of evolution throughout the years.
 
@@ -16,7 +17,8 @@ Now fast forward to 2010s, the DXP platform emerged, where we could create and d
 
 We have come along with CMSs indeed.
 
-## WordPress CMS: The choice of an all-inclusive frontend and backend
+WordPress CMS: The choice of an all-inclusive frontend and backend
+------------------------------------------------------------------
 
 WordPress is an open-source platform for building websites. WordPress is a content management system (CMS) developed in PHP that uses a MySQL database.
 
@@ -46,7 +48,8 @@ iii.) You'll need a domain name and web hosting from another trustworthy busines
 
 iv.) If you don't want to install WordPress manually, most web providers offer a WordPress "fast install" or "done-for-you" installation to assist you in getting started.
 
-## Headless CMS: The alternative
+Headless CMS: The alternative
+-----------------------------
 
 Content, images, HTML, and CSS were all thrown into one massive bucket in the conventional CMS style to manage content. Because the material was intertwined with code, it was hard to reuse.
 
@@ -58,7 +61,8 @@ Any back-end content management system in which the content repository "body" is
 
 Some conventional CMS solutions have a "headless API" that lets you deliver content to a different display layer. Because the presentation layer is isolated from the body, this is referred to as "headless."
 
-## Headless CMS: Benefits & Drawbacks
+Headless CMS: Benefits & Drawbacks
+----------------------------------
 
 ### The Advantage of the Headless CMS Architecture
 
@@ -84,7 +88,7 @@ Most headless CMS-s use an API-first approach that allows developers to stream i
 
 Find out how to create GraphQL APIs here​.
 
-![Create APIs with Hasura to save 30%+ app dev costs](https://cdn.sanity.io/images/ay6gmb6r/production/3c59f37c1399b5e98fd9b34c040a8b3c93fed2dd-2853x813.png?w=729&fm=webp&fit=max&auto=format 'Create APIs with Hasura to save 30%+ app dev costs')[
+![Create APIs with Hasura to save 30%+ app dev costs](https://cdn.sanity.io/images/ay6gmb6r/production/3c59f37c1399b5e98fd9b34c040a8b3c93fed2dd-2853x813.png?w=729&fm=webp&fit=max&auto=format "Create APIs with Hasura to save 30%+ app dev costs")[
 
 ](https://www.solutelabs.com/blog/hasura-api-development)
 
@@ -150,7 +154,8 @@ Applications include:
 
 3\. Ecommerce Sites
 
-## WordPress: Benefits & Drawbacks
+WordPress: Benefits & Drawbacks
+-------------------------------
 
 ### Advantages of WordPress
 
@@ -264,7 +269,8 @@ WordPress has been used to create several community websites that may be seen on
 
 Do you create software, tools, or apps? To build a company website, you'll need a website foundation. You may easily configure your WordPress installation to seem like a professional company website if you have an adequate understanding of how front-end technology works, as seen in the Raven Tools site!
 
-## WordPress as a Headless CMS: Decoupled or client-side development
+WordPress as a Headless CMS: Decoupled or client-side development
+-----------------------------------------------------------------
 
 Headless WordPress is a type of web app development that is sometimes referred to as decoupled or client-side development. It uses WordPress for content management and a custom frontend stack to show that content to site visitors. While there are numerous advantages to a site created using headless WordPress, one of the most important is decoupling content editing teams and programmers.
 
@@ -352,7 +358,8 @@ At the same time, you're still entrusting transaction processing to your headles
 
 You can find some examples of headless e-commerce websites [here](https://www.solutelabs.com/blog/top-10-headless-ecommerce-websites-built-on-jamstack)​
 
-## Popular Headless CMS's:
+Popular Headless CMS's:
+-----------------------
 
 There are many popular headless CMS's in the market right now, like Magnolia, Agility, or even Contentful. But Sanity takes the cake in terms of fame. It is arguably one of the most popular Headless CMS's. Hence, it only fits that we talk about it.
 
@@ -360,51 +367,51 @@ There are many popular headless CMS's in the market right now, like Magnolia, Ag
 
 Sanity Studio is a headless real-time CMS built with JavaScript and React that you may modify.
 
--   It has efficient editing and a quick UI for complex fields.
+- It has efficient editing and a quick UI for complex fields.
 
--   It works on tiny screens and is responsive.
+- It works on tiny screens and is responsive.
 
--   Customizable input components and plug-in architecture
+- Customizable input components and plug-in architecture
 
--   Personalize your look with your images.
+- Personalize your look with your images.
 
--   JavaScript could be used to provide field validations, arrange documents, and establish starting values in an advanced block editor for structured content.
+- JavaScript could be used to provide field validations, arrange documents, and establish starting values in an advanced block editor for structured content.
 
 #### Reasons to opt for Sanity.
 
--   _Easy to get started with_
+-   *Easy to get started with*
 
 Sanity.io is easy to get started by simply installing the CLI from npm and creating a new project. Sanity's starter projects, on the other hand, will help you get started in seconds with a pre-configured Sanity Studio and a functioning front-end with a variety of frameworks to pick from, all deployed to Netlify and with source code on GitHub.
 
--   _Better APIs_
+-   *Better APIs*
 
 The main advantage of a headless CMS is its API-first design, which allows you to access content via APIs.
 
 For reading, writing, querying, and patching documents, Sanity provides two robust APIs:
 
--   The live, uncached API in api.sanity.io.
+- The live, uncached API in api.sanity.io.
 
--   The CDN-distributed, cached API in apicdn.sanity.io.
+- The CDN-distributed, cached API in apicdn.sanity.io.
 
 To query your material, Sanity now supports the use of GROQ and GraphQL APIs. The platform's Data Store is hosted in the cloud and may be reached through the Sanity API, either through Sanity's client libraries or directly over the HTTP API.
 
--   _Better editing tools_
+-   *Better editing tools*
 
 Sanity's editor, often known as the Sanity Studio, is an open-source program that lets you build content models using basic JavaScript. Sanity Studio is a single-page React.js app that you may edit or expand with your React.js components. Its sophisticated capabilities allow you to change your editors' processes.
 
 Sanity Studio includes fundamental features such as Block Content, Structure Builder, and a Dashboard plugin in addition to customization.
 
--   _Headless content models that are easy to use_
+-   *Headless content models that are easy to use*
 
 Although fundamental JavaScript expertise is required to get started with Sanity, it is not difficult to locate someone knowledgeable with the popular online programming language. Content writers, graphic and interaction designers, and technology specialists may cooperate on the information architecture using Sanity. Front-end developers can save time by using APIs to access content fields immediately.
 
--   _Mature Tech Stack_
+-   *Mature Tech Stack*
 
 Because Sanity is a cloud-hosted CMS with a real-time content studio, all data is instantaneously synchronized. PostgreSQL, ElasticSearch, and JavaScript, and lightning-fast React form the foundation of the system. It saves logical object structures rather than HTML, XML, or rich text in the database. For example, you don't have to read HTML if you want Alexa to read from your text fields. Sanity comes with well-maintained JavaScript, HTML, and PHP clients, allowing you to get up and running quickly with your preferred front-end architecture.
 
 #### Some Cool Projects Powered by Sanity
 
--   _Agnes_
+-   *Agnes*
 
 A sophisticated rental real estate site developed with Gatsby, Sanity, and Shopify features a headless Shopify shop that gets listing data through API.
 
@@ -414,7 +421,7 @@ The Sanity Studio is designed to handle many building and development sites whil
 
 Homepage editing environment
 
--   _Jamstack Explorers_
+-   *Jamstack Explorers*
 
 Jamstack Explorers is a free learning tool built by the Netlify team to help you navigate the incredible Jamstack ecosystem.
 
@@ -424,7 +431,7 @@ The project features a user login feature that allows users to keep track of the
 
 ![Youtube Play](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCI+PGxpbmVhckdyYWRpZW50IGlkPSJQZ0JfVUhhMjloMFRwRlZfbW9KSTlhIiB4MT0iOS44MTYiIHgyPSI0MS4yNDYiIHkxPSI5Ljg3MSIgeTI9IjQxLjMwMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y0NGY1YSIvPjxzdG9wIG9mZnNldD0iLjQ0MyIgc3RvcC1jb2xvcj0iI2VlM2Q0YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U1MjAzMCIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNQZ0JfVUhhMjloMFRwRlZfbW9KSTlhKSIgZD0iTTQ1LjAxMiwzNC41NmMtMC40MzksMi4yNC0yLjMwNCwzLjk0Ny00LjYwOCw0LjI2N0MzNi43ODMsMzkuMzYsMzAuNzQ4LDQwLDIzLjk0NSw0MAljLTYuNjkzLDAtMTIuNzI4LTAuNjQtMTYuNDU5LTEuMTczYy0yLjMwNC0wLjMyLTQuMTctMi4wMjctNC42MDgtNC4yNjdDMi40MzksMzIuMTA3LDIsMjguNDgsMiwyNHMwLjQzOS04LjEwNywwLjg3OC0xMC41NgljMC40MzktMi4yNCwyLjMwNC0zLjk0Nyw0LjYwOC00LjI2N0MxMS4xMDcsOC42NCwxNy4xNDIsOCwyMy45NDUsOHMxMi43MjgsMC42NCwxNi40NTksMS4xNzNjMi4zMDQsMC4zMiw0LjE3LDIuMDI3LDQuNjA4LDQuMjY3CUM0NS40NTEsMTUuODkzLDQ2LDE5LjUyLDQ2LDI0QzQ1Ljg5LDI4LjQ4LDQ1LjQ1MSwzMi4xMDcsNDUuMDEyLDM0LjU2eiIvPjxwYXRoIGQ9Ik0zMi4zNTIsMjIuNDRsLTExLjQzNi03LjYyNGMtMC41NzctMC4zODUtMS4zMTQtMC40MjEtMS45MjUtMC4wOTNDMTguMzgsMTUuMDUsMTgsMTUuNjgzLDE4LDE2LjM3Ngl2MTUuMjQ4YzAsMC42OTMsMC4zOCwxLjMyNywwLjk5MSwxLjY1NGMwLjI3OCwwLjE0OSwwLjU4MSwwLjIyMiwwLjg4NCwwLjIyMmMwLjM2NCwwLDAuNzI2LTAuMTA2LDEuMDQtMC4zMTVsMTEuNDM2LTcuNjI0CWMwLjUyMy0wLjM0OSwwLjgzNS0wLjkzMiwwLjgzNS0xLjU2QzMzLjE4NywyMy4zNzIsMzIuODc0LDIyLjc4OSwzMi4zNTIsMjIuNDR6IiBvcGFjaXR5PSIuMDUiLz48cGF0aCBkPSJNMjAuNjgxLDE1LjIzN2wxMC43OSw3LjE5NGMwLjY4OSwwLjQ5NSwxLjE1MywwLjkzOCwxLjE1MywxLjUxM2MwLDAuNTc1LTAuMjI0LDAuOTc2LTAuNzE1LDEuMzM0CWMtMC4zNzEsMC4yNy0xMS4wNDUsNy4zNjQtMTEuMDQ1LDcuMzY0Yy0wLjkwMSwwLjYwNC0yLjM2NCwwLjQ3Ni0yLjM2NC0xLjQ5OVYxNi43NDRDMTguNSwxNC43MzksMjAuMDg0LDE0LjgzOSwyMC42ODEsMTUuMjM3eiIgb3BhY2l0eT0iLjA3Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5LDMxLjU2OFYxNi40MzNjMC0wLjc0MywwLjgyOC0xLjE4NywxLjQ0Ny0wLjc3NGwxMS4zNTIsNy41NjhjMC41NTMsMC4zNjgsMC41NTMsMS4xOCwwLDEuNTQ5CWwtMTEuMzUyLDcuNTY4QzE5LjgyOCwzMi43NTUsMTksMzIuMzEyLDE5LDMxLjU2OHoiLz48L3N2Zz4=)![video](https://img.youtube.com/vi/PPtmowJoe3s/sddefault.jpg)
 
--   _Figma_
+-   *Figma*
 
 Figma is a web-based graphics editing and UI design application. It may be used for various graphic design tasks, including wireframing websites, building mobile app interfaces, prototyping designs, and creating social media posts.
 
@@ -436,7 +443,7 @@ Arcade, an online sandbox where you can mix and match all of the library's eleme
 
 Sanity also offers a fully-featured Figma library comprising all of the components, icons, font styles, and effects included in the project if you want to prototype your Sanity UI experiences with design tools.
 
--   _Middlesbrough Town Centre App_
+-   *Middlesbrough Town Centre App*
 
 The app was built using Flutter, Sanity, and Figma to help a small town in the UK called Middlesbrough.
 

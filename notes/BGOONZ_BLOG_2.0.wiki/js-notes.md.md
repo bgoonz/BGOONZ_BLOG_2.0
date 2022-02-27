@@ -113,10 +113,8 @@ at the beginning of it.
 [strict mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
 
 ---
-
 title: Scope
 chapter: Scope
-
 ---
 
 Unlike other programming languages, JavaScript only has **function scope**, not
@@ -164,14 +162,12 @@ function foo() {
 ```
 
 ---
-
 toc: What is this?
 chapter: this
 style: |
-h1 {
-text-align: center
-}
-
+    h1 {
+      text-align: center
+    }
 ---
 
 # What is `this`?
@@ -214,25 +210,23 @@ foo.call(bar);
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 ---
-
 title: JavaScript Basics
 toc: Title
 chapter: Intro
 layout: Center
 style: |
-.exerslide-slide .Center-wrapper {
-text-align: left;
-}
-.exerslide-slide h1 {
-color: #444;
-font-size: 400%;
-margin-bottom: 50px;
-text-align: center;
-}
+    .exerslide-slide .Center-wrapper {
+      text-align: left;
+    }
+    .exerslide-slide h1 {
+      color: #444;
+      font-size: 400%;
+      margin-bottom: 50px;
+      text-align: center;
+    }
 scale:
-content_width: 39
-column_width: 0.6
-
+    content_width: 39
+    column_width: 0.6
 ---
 
 A quick introduction to basic and important concepts of JavaScript
@@ -251,8 +245,8 @@ Found a problem with style or content? Or do you have suggestions for improving
 the content? Please [file an issue on GitHub][jsbasics-issues].
 
 ---
-
-## title: Booleans, numbers and strings
+title: Booleans, numbers and strings
+---
 
 The **Boolean** data type has two values, `true` and `false`.
 
@@ -309,13 +303,11 @@ var bar = 'baz';
 [ieee754]: http://en.wikipedia.org/wiki/IEEE_floating_point
 
 ---
-
 title: Demo
 layout_data:
-description: Run the code and have a look at the output. Is it what you expect?
-Try some other values / operators and look at the output (remember to open
-the console).
-
+    description: Run the code and have a look at the output. Is it what you expect?
+        Try some other values / operators and look at the output (remember to open
+        the console).
 ---
 
 var a = 10;
@@ -327,10 +319,8 @@ log(a + c);
 log(b + Number(c));
 
 ---
-
 title: Constructor functions
 chapter: Constructors/Classes
-
 ---
 
 JavaScript doesn't have classes like class-based OOP languages have, but it has
@@ -376,20 +366,18 @@ of the structure of the object (including it's prototype chain).
 [new]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
 
 ---
-
 title: Exercise
-layout*data:
-description: |
-Create a local variable with name `foo` and value `42`.
-Use `log(foo)` to log the value of `foo`.
-Remember to open your browser's \_developer tools* to view the log output.
-assertion: |
-assert(
-/var foo\s\*=.+;?$/m.test(source),
-"It doesn't look like you have declared a variable (hint: var)."
-);
-assert(output[0] === 42, "Don't forget to log the value");
-
+layout_data:
+    description: |
+        Create a local variable with name `foo` and value `42`.
+        Use `log(foo)` to log the value of `foo`.
+        Remember to open your browser's *developer tools* to view the log output.
+    assertion: |
+        assert(
+          /var foo\s*=.+;?$/m.test(source),
+          "It doesn't look like you have declared a variable (hint: var)."
+        );
+        assert(output[0] === 42, "Don't forget to log the value");
 ---
 
 // Create variable
@@ -398,8 +386,8 @@ assert(output[0] === 42, "Don't forget to log the value");
 log(foo);
 
 ---
-
-## title: Hoisting
+title: Hoisting
+---
 
 This behavior becomes more understandable after we introduce **hoisting**.
 Before a JavaScript function is even executed, the engine finds all variable and
@@ -455,13 +443,11 @@ To get more details on hoisting see [this article][hoisting].
 [hoisting]: http://dmitrysoshnikov.com/notes/note-4-two-words-about-hoisting/
 
 ---
-
 toc: this - an example
 style: |
-h1 {
-text-align: center
-}
-
+    h1 {
+      text-align: center
+    }
 ---
 
 # `this` - an example
@@ -493,17 +479,15 @@ function produces depends on which object the function is called (_how_ it is
 called).
 
 ---
-
 title: What this presentation is not about
 layout: Center
 style: |
-.exerslide-slide .Center-wrapper {
-text-align: left;
-}
-.exerslide-slide h1 {
-text-align: center;
-}
-
+    .exerslide-slide .Center-wrapper {
+      text-align: left;
+    }
+    .exerslide-slide h1 {
+      text-align: center;
+    }
 ---
 
 JavaScript is predominantly run in browsers to make websites interactive. In
@@ -514,33 +498,31 @@ This presentation is exclusively about JavaScript, the _language_, not the
 environment in which the JavaScript code runs!
 
 ---
-
 title: Exercise
 layout_data:
-description: Create three variables `x`, `y`, `z`, where `x` contains a string value,
-`y` a number and `z` a boolean value. Log the values with `log`.
-assertion: |
-assert(
-output.some(function(x) { return typeof x === 'string' }),
-'Your log must contain a string.'
-);
-assert(
-output.some(function(x) { return typeof x === 'number' }),
-'Your log must contain a number.'
-);
-assert(
-output.some(function(x) { return typeof x === 'boolean' }),
-'Your log must contain a boolean.'
-);
-
+    description: Create three variables `x`, `y`, `z`, where `x` contains a string value,
+        `y` a number and `z` a boolean value. Log the values with `log`.
+    assertion: |
+        assert(
+          output.some(function(x) { return typeof x === 'string' }),
+          'Your log must contain a string.'
+        );
+        assert(
+          output.some(function(x) { return typeof x === 'number' }),
+          'Your log must contain a number.'
+        );
+        assert(
+          output.some(function(x) { return typeof x === 'boolean' }),
+          'Your log must contain a boolean.'
+        );
 ---
 
 // Hint: You can pass multiple arguments to log:
 // log(a, b)
 
 ---
-
-## toc: "ES6's class declarations"
+toc: "ES6's class declarations"
+---
 
 # Syntactic sugar: ES6's `class` declarations
 
@@ -574,8 +556,8 @@ does not change.
 [classes]: http://wiki.ecmascript.org/doku.php?id=strawman:maximally_minimal_classes
 
 ---
-
-## title: Comparison operators
+title: Comparison operators
+---
 
 As already established at the beginning, JavaScript is _dynamically typed_. It
 also performs _type conversion_, if a specific data type is expected and not
@@ -648,18 +630,16 @@ comments).
 [comparison table]: https://dorey.github.io/JavaScript-Equality-Table/
 
 ---
-
 title: ES5, ES2015 and beyond
 layout: Center
 
 style: |
-.exerslide-slide .Center-wrapper {
-text-align: left;
-}
-.exerslide-slide h1 {
-text-align: center;
-}
-
+    .exerslide-slide .Center-wrapper {
+      text-align: left;
+    }
+    .exerslide-slide h1 {
+      text-align: center;
+    }
 ---
 
 This tutorial primarily focuses on JavaScript following the [ECMAScript 5][es5]
@@ -671,12 +651,10 @@ versions, it will point differences to/alternatives for certain ES5 features if
 they exist.
 
 ---
-
 title: Demo
-layout*data:
-description: Which value does this code log and why? Think about the answer \_before* you
-run the code.
-
+layout_data:
+    description: Which value does this code log and why? Think about the answer *before* you
+        run the code.
 ---
 
 var bar = 42;
@@ -688,15 +666,13 @@ log(bar);
 foo();
 
 ---
-
 title: Exercise
 layout_data:
-description: Which value does the code log and why? How can it be changed to log the value
-of `obj.foo`?
-assertion: |
-assert(output[0] === 42, 'The code should only log 42');
-assert(/log\s*\(\s*this\.foo\s\*\)/.test(source), "Looks like you tried to be clever. Don't modify log(this.foo).");
-
+    description: Which value does the code log and why? How can it be changed to log the value
+        of `obj.foo`?
+    assertion: |
+        assert(output[0] === 42, 'The code should only log 42');
+        assert(/log\s*\(\s*this\.foo\s*\)/.test(source), "Looks like you tried to be clever. Don't modify log(this.foo).");
 ---
 
 var obj = {
@@ -710,8 +686,8 @@ var foo = obj.bar;
 foo();
 
 ---
-
-## title: Closures
+title: Closures
+---
 
 [Wikipedia describes closures as][closures]:
 
@@ -747,14 +723,13 @@ understand what it implies.
 [functions]: http://www.ecma-international.org/ecma-262/5.1/#sec-13
 
 ---
-
 title: Exercise
 layout_data:
-description: Run the code and have a look at the output. Is it what you expect?
-What are reasons for this output? Modify the code, so that it prints
-the result you would expect.
-assertion: |
-var values = [" ", "0", 0];
+    description: Run the code and have a look at the output. Is it what you expect?
+        What are reasons for this output? Modify the code, so that it prints
+        the result you would expect.
+    assertion: |
+        var values = [" ", "0", 0];
 
         var c = 1;
         for (var i = 0, l = values.length; i < l; i++) {
@@ -769,7 +744,6 @@ var values = [" ", "0", 0];
             c += 2;
           }
         }
-
 ---
 
 var values = [" ", "0", 0];
@@ -784,8 +758,8 @@ values[i] == values[j]
 }
 
 ---
-
-## title: null and undefined
+title: null and undefined
+---
 
 JavaScript has two data types to express the **absence of a value**, null and
 undefined.
@@ -827,12 +801,10 @@ console.log(bar); // reference error
 </div>
 
 ---
-
 title: Demo
-layout*data:
-description: Which value does this code log and why? Think about the solution \_before* you
-run the code.
-
+layout_data:
+    description: Which value does this code log and why? Think about the solution *before* you
+        run the code.
 ---
 
 var foo = 42;
@@ -843,18 +815,16 @@ foo = 21;
 bar();
 
 ---
-
 title: Exercise
 layout_data:
-description: Which values does this code log and why? Modify the code so that it logs the
-values as "expected".
-assertion: assert(
-output.every(function(x, i) {
-return x === i;
-}),
-'The code should output the loop variable of each iteration, i.e. 0, 1, 2'
-);
-
+    description: Which values does this code log and why? Modify the code so that it logs the
+        values as "expected".
+    assertion: assert(
+        output.every(function(x, i) {
+        return x === i;
+        }),
+        'The code should output the loop variable of each iteration, i.e. 0, 1, 2'
+        );
 ---
 
 var functionArray = [];
@@ -869,29 +839,27 @@ functionArray[j]();
 }
 
 ---
-
 title: Exercise
 layout_data:
-description: Log the values `null` and `undefined`.
-assertion: |
-assert(
-output.some(function(x) { return x === null }),
-'Your log must contain null.'
-);
-assert(
-output.some(function(x) { return x === void 0; }),
-'Your log must contain undefined.'
-);
-assert(
-source.indexOf('undefined') === -1,
-'Try to log undefined without writing it in the source code.'
-);
-
+    description: Log the values `null` and `undefined`.
+    assertion: |
+        assert(
+          output.some(function(x) { return x === null }),
+          'Your log must contain null.'
+        );
+        assert(
+          output.some(function(x) { return x === void 0; }),
+          'Your log must contain undefined.'
+        );
+        assert(
+          source.indexOf('undefined') === -1,
+          'Try to log undefined without writing it in the source code.'
+        );
 ---
 
 ---
-
-## title: Property access
+title: Property access
+---
 
 Properties of objects can be accessed in two ways:
 
@@ -945,8 +913,8 @@ console.log(obj.foo);
 ```
 
 ---
-
-## title: Objects
+title: Objects
+---
 
 Everything else besides primitive data type values is an _object_.
 
@@ -1105,26 +1073,24 @@ _functions_, which are explained in the next slides.
 [built-in objects]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ---
-
 title: Exercise
 layout_data:
-description: Log the two properties of the object using dot and bracket notation.
-assertion: assert(
-source.indexOf('obj.foo') > -1,
-'Access property foo with dot notation'
-);
-assert(
-/obj\[(42|'42'|"42")\]/.test(source),
-'How exactly did you want to access property 42?'
-);
-
+    description: Log the two properties of the object using dot and bracket notation.
+    assertion: assert(
+        source.indexOf('obj.foo') > -1,
+        'Access property foo with dot notation'
+        );
+        assert(
+        /obj\[(42|'42'|"42")\]/.test(source),
+        'How exactly did you want to access property 42?'
+        );
 ---
 
 var obj = {foo: 'bar', 42: 'answer'};
 
 ---
-
-## title: Prototypes (1)
+title: Prototypes (1)
+---
 
 You may have heard that JavaScript is a _"[prototype-based
 language][prototype]"_, unlike other languages, such as Java, which are
@@ -1250,8 +1216,8 @@ Object.getPrototypeOf(b) === a; // true
 [object.create]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
 
 ---
-
-## title: Prototypes (2)
+title: Prototypes (2)
+---
 
 Now we know what prototypes are, but not what they _do_ or which problem they
 solve.
@@ -1333,8 +1299,8 @@ chain is then _shadowed_, similar to variable shadowing in scopes.
 </div>
 
 ---
-
-## title: 'Built-in objects: Arrays and functions'
+title: 'Built-in objects: Arrays and functions'
+---
 
 ## Arrays
 
@@ -1419,8 +1385,8 @@ Similar to arrays, function objects also have a dedicated prototype,
 :::
 
 ---
-
-## title: Control structures
+title: Control structures
+---
 
 JavaScript provides the same control structures known from other C-like
 languages:
@@ -1465,12 +1431,10 @@ for (var v of arr) {
 </div>
 
 ---
-
 title: Demo
 layout_data:
-description: Run this code and look at the output. Do you notice anything unexpected?
-If yes, why do you think this is the case?
-
+    description: Run this code and look at the output. Do you notice anything unexpected?
+        If yes, why do you think this is the case?
 ---
 
 var obj = {foo: 0, bar: 1, 42: 2};
@@ -1480,19 +1444,18 @@ log('property: ' + prop, 'value: ' + obj[prop]);
 }
 
 ---
-
 title: Exercise
 layout_data:
-description: |
-Log two value: an object which has a property `foo` and a value `"bar"`,
-and an array with the values `1`, `2` and `42`.
-assertion: |
-assert(
-output.some(function(x) {
-return JSON.stringify(x) === JSON.stringify({foo: 'bar'});
-}),
-'Your log must contain an object with property "foo" and value "bar". Hint: `{key: value}`.'
-);
+    description: |
+        Log two value: an object which has a property `foo` and a value `"bar"`,
+        and an array with the values `1`, `2` and `42`.
+    assertion: |
+        assert(
+          output.some(function(x) {
+            return JSON.stringify(x) === JSON.stringify({foo: 'bar'});
+          }),
+          'Your log must contain an object with property "foo" and value "bar". Hint: `{key: value}`.'
+        );
 
         assert(
           output.some(function(x) {
@@ -1500,12 +1463,11 @@ return JSON.stringify(x) === JSON.stringify({foo: 'bar'});
           }),
           'Your log must contain an array with values 1, 2 and 42. Hint: `[value, ...]`.'
         );
-
 ---
 
 ---
-
-## title: Resources
+title: Resources
+---
 
 -   [MDN JavaScript Guide][mdn], [Eloquent JavaScript][eloquent] &mdash; basic
     JavaScript introduction.
@@ -1541,8 +1503,8 @@ return JSON.stringify(x) === JSON.stringify({foo: 'bar'});
 [debug]: https://developers.google.com/chrome-developer-tools/docs/javascript-debugging
 
 ---
-
-## title: Function definitions
+title: Function definitions
+---
 
 There are two syntactic constructs to create functions: function **declaration**
 and function **expressions**.
@@ -1591,8 +1553,8 @@ generates an error (function declaration without name), but
 does not, because the grouping operator (`(...)`) can only contain expressions.
 
 ---
-
-## title: Function Calls
+title: Function Calls
+---
 
 Like other C-like languages, functions are called by putting `()` after the
 function reference:
@@ -6970,7 +6932,6 @@ button.onclick = () => void getYear();
 ```
 
 ---
-
 layout: post
 
 title: What is the promise executor?
@@ -6979,8 +6940,9 @@ tip-username: loverajoel
 tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: The method received as an argument for the promise.
 
-categories: - en - javascript
-
+categories:
+    - en
+    - javascript
 ---
 
 All `Promise` instances accept a method as an argument called the executor. This executor takes two methods as arguments: resolve and reject. Within the executor, if resolve is called, the `Promise` instance becomes fulfilled. If an exception is thrown, reject is called instead, and the `Promise` instance becomes rejected.
@@ -6997,7 +6959,6 @@ new Promise(executor).then((result) => {
 ```
 
 ---
-
 layout: post
 
 title: What is the JavaScript ternary operator?
@@ -7006,8 +6967,9 @@ tip-username: loverajoel
 tip-username-profile: https://www.twitter.com/loverajoel
 tip-tldr: The ternary operator is a shortcut for the if statement.
 
-categories: - en - javascript
-
+categories:
+    - en
+    - javascript
 ---
 
 The ternary operator is a shortcut for the `if` statement. It consists of three operands; a question mark, a condition, and an expression to execute if the condition is true, followed by a colon and another expression to execute if it's false.

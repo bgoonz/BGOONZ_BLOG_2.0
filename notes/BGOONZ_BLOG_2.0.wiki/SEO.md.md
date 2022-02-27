@@ -1,7 +1,7 @@
 # SEO Report for [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 
-### But first:
 
+### But first:
 ##### Seo Resources:
 
 [![](https://www.google.com/s2/favicons?domain=https://search.google.com/test/mobile-friendly)](https://search.google.com/test/mobile-friendly?referer=seo-extension.com&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Is your page is **Mobile Friendly ?**](https://search.google.com/test/mobile-friendly?referer=seo-extension.com&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
@@ -20,7 +20,7 @@
 
 [![](https://www.google.com/s2/favicons?domain=https://www.google.be/)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)[Check **Microdata, Microformats** and **RDFa**](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)
 
----
+* * * * *
 
 SEO
 
@@ -50,7 +50,7 @@ Security/Malware
 
 [![](https://www.google.com/s2/favicons?domain=http://www.google.com/)](http://www.google.com/safebrowsing/diagnostic?site=bgoonz-blog.netlify.app)[Safe Browsing (Google)](http://www.google.com/safebrowsing/diagnostic?site=bgoonz-blog.netlify.app)
 
----
+* * * * *
 
 Other (whois,...)
 
@@ -73,12 +73,15 @@ Other (whois,...)
 [![](https://www.google.com/s2/favicons?domain=https://www.quantcast.com)](https://www.quantcast.com/bgoonz-blog.netlify.app)[quantcast.com](https://www.quantcast.com/bgoonz-blog.netlify.app)
 
 ---
-
+---
+---
 ---
 
----
 
----
+
+
+
+
 
 Title ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 11 characters
@@ -119,20 +122,20 @@ Lang ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.pn
 
 Lang attribut of HTML element is missing.
 
-| H1  | H2  | H3  | H4  | H5  | H6 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | Images ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | Links ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) |
-| --- | --- | --- | --- | --- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| 3   | 10  | 29  | 1   | 0   | 1                                                                               | 26                                                                                  | 137                                                                                |
+| H1 | H2 | H3 | H4 | H5 | H6 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | Images ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | Links ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 10 | 29 | 1 | 0 | 1 | 26 | 137 |
 
 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/ga-icon-na.png) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
 [Robots.txt](https://bgoonz-blog.netlify.app/robots.txt) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | [Sitemap.xml](https://bgoonz-blog.netlify.app/sitemap.xml) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
----
+* * * * *
 
 ALL LINKS\
-APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'apple-touch-icon')\
-APPLE-TOUCH-ICON : [logo-canvas.png](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png 'apple-touch-icon')\
-ICON : [webdevhublogo2.PNG](https://bgoonz-blog.netlify.app/images/webdevhublogo2.PNG 'icon')\
+APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png "apple-touch-icon")\
+APPLE-TOUCH-ICON : [logo-canvas.png](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png "apple-touch-icon")\
+ICON : [webdevhublogo2.PNG](https://bgoonz-blog.netlify.app/images/webdevhublogo2.PNG "icon")\
 PRECONNECT : https://fonts.gstatic.com\
 PREFETCH : component---src-templates-advanced-js-c66268766ef5c957450f.js\
 PREFETCH : component---src-templates-blog-js-36eb4fae1add87ca6010.js\
@@ -164,14 +167,14 @@ PRELOAD : integrator.js\
 PRELOAD : page-data.json\
 PRELOAD : styles-7d4153d260c0197f0043.js\
 PRELOAD : webpack-runtime-7059fe0afa2407e27b1a.js\
-SHORTCUT ICON : [favicon.ico](https://bgoonz-blog.netlify.app/favicon.ico 'shortcut icon')\
+SHORTCUT ICON : [favicon.ico](https://bgoonz-blog.netlify.app/favicon.ico "shortcut icon")\
 STYLESHEET : [default.min.css](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css)\
 STYLESHEET : [algoliasearchNetlify.css](https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css)\
 STYLESHEET : [bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css)\
 STYLESHEET : <https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap>\
 STYLESHEET : [css](https://fonts.googleapis.com/css?family=Raleway:200,100,400)
 
----
+* * * * *
 
 ALL METAS\
 AUTHOR : Bryan Guner\
@@ -202,9 +205,9 @@ HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnO
 HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
-OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 'DROicc16')\
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 "DROicc16")\
 OG:TITLE : Web-Dev-Hub\
 OG:TITLE : Web-Dev-Hub\
 OG:TYPE : website\
@@ -219,9 +222,9 @@ TWITTER:DESCRIPTION : The new home of my blog resource sharing website.\
 TWITTER:DESCRIPTION : Web-Dev-Hub\
 TWITTER:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 TWITTER:DOMAIN : bgoonz-blog.netlify.app\
-TWITTER:IMAGE : [4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg '4.jpg')\
-TWITTER:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
-TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'logo-circle.png')\
+TWITTER:IMAGE : [4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg "4.jpg")\
+TWITTER:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png "code.png")\
+TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png "logo-circle.png")\
 TWITTER:SITE : @bgoonz\
 TWITTER:TITLE : Web Development Resource Hub Bryan Guner\
 TWITTER:TITLE : Web-Dev-Hub\
@@ -232,7 +235,7 @@ VIEWPORT : width=device-width, initial-scale=1.0\
 VIEWPORT : width=device-width, initial-scale=1\
 VIEWPORT : width=device-width, initialScale=1.0
 
----
+* * * * *
 
 ALL SCRIPTS\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js) jquery.min.js](https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js)\
@@ -260,9 +263,8 @@ TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.go
 TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L&l=dataLayer&cx=c) js](https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L&l=dataLayer&cx=c)\
 TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.smartsuppchat.com/loader.js?) loader.js](https://www.smartsuppchat.com/loader.js?)
 
----
+* * * * *
 
-<<<<<<< HEAD
 XFN / Rel attr. (Xhtml Friends Network)  ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 NOFOLLOW: [byfreefind](https://www.freefind.com/)\
 NOFOLLOW: [search engine](https://www.freefind.com/)\
@@ -300,50 +302,12 @@ NOOPENER : [ds-algo](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-over
 NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
 NOOPENER : [Blog](https://bgoonz-blog.netlify.app/blog/)\
 NOOPENER : [Python](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-=======
-XFN / Rel attr. (Xhtml Friends Network) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
-NOFOLLOW: [byfreefind](https://www.freefind.com/)\
-NOFOLLOW: [search engine](https://www.freefind.com/)\
-NOOPENER : [dev.to](https://dev.to/bgoonz)\
-NOOPENER : [Instagram](https://www.instagram.com/bgoonz/?hl=en)\
-NOOPENER : [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA)\
-NOOPENER : [GitHub](https://github.com/bgoonz)\
-NOOPENER : [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)\
-NOOPENER : [Twitter](https://twitter.com/bgooonz)\
-NOOPENER : [BLM](https://optimistic-lewin-8586ae.netlify.app/blm.zip)\
-NOOPENER : [Medium](https://bryanguner.medium.com/)\
-NOOPENER : [Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)\
-NOOPENER : [Contact](https://sidebar-blog.netlify.app/contact/)\
-NOOPENER : [Github-Advanced-Search](https://github.com/search/advanced)\
-NOOPENER : [PotluckPlanner](https://potluck-landing.netlify.app/)\
-NOOPENER : [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)\
-NOOPENER : [Job Search Resources](https://determined-dijkstra-ee7390.netlify.app/)\
-NOOPENER : [Ternary 2 If Else](https://ternary42.netlify.app/)\
-NOOPENER : [Text Tools](https://devtools42.netlify.app/)\
-NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
-NOOPENER : [Wordpress Blog](https://web-dev-hub.com/)\
-NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
-NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
-NOOPENER : [SearchAwesome](https://bgoonz.github.io/searchAwesome/)\
-NOOPENER : [WebAudioLab](https://panoramic-eggplant-452e4.netlify.app/)\
-NOOPENER : [Meditation App](https://meditate42app.netlify.app/)\
-NOOPENER : [Potluck Planner](https://potluck-landing.netlify.app/)\
-NOOPENER : [Projects](https://project-portfolio42.netlify.app/)\
-NOOPENER : [OG-Blog](https://web-dev-resource-hub.netlify.app/)\
-NOOPENER : [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)\
-NOOPENER : [Archive](https://github.com/bgoonz/UsefulResourceRepo2.0)\
-NOOPENER : [nodejs](https://bgoonz-blog.netlify.app/docs/articles/nodejs/)\
-NOOPENER : [platform docs](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
-NOOPENER : [ds-algo](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-overview/)\
-NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
-NOOPENER : [Blog](https://bgoonz-blog.netlify.app/blog/)\
-NOOPENER : [Python](https://bgoonz-blog.netlify.app/docs/python/python-ds)
 
-> > > > > > > af65185bd (-update)
+
 
 HTML.
 
----
+* * * * *
 
 **<H1>** I am a musician, electrical engineer & web developer
 
@@ -433,11 +397,18 @@ HTML.
 
 **<H4>** Current local time inNew York City, United States
 
----
+* * * * *
 
-| H1  | H2  | H3  | H4  | H5  | H6 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) |
-| --- | --- | --- | --- | --- | ------------------------------------------------------------------------------- |
-| 3   | 10  | 29  | 1   | 0   | 1                                                                               |
+| H1 | H2 | H3 | H4 | H5 | H6 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 10 | 29 | 1 | 0 | 1 |
+
+
+
+
+
+
+
 
 IMAGES ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 26
@@ -448,7 +419,7 @@ without ALT\
 without TITLE\
 26
 
----
+* * * * *
 
 Analyze and optimize your images with
 
@@ -560,6 +531,10 @@ Title: /\
 ALT: Black Lives Matter Badge\
 Title: / |
 
+
+
+
+
 LINKS ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 137
 
@@ -572,7 +547,7 @@ internal unique\
 without TITLE\
 103
 
----
+* * * * *
 
 LINKS <A />
 
@@ -916,6 +891,19 @@ Title: /\
 | mailto:bryan.guner@gmail.com (email)\
 Title: / |
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 OPEN GRAPH (Facebook) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
 | og:type\
@@ -997,3 +985,22 @@ Schema.org (itemtype only) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpn
 | No DATA has been found for Schema.org (itemtype only) |
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/no-logo.png)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)[Click here to check **Schema.org structure** of this page (Google validator)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
