@@ -1,38 +1,59 @@
+/**
+ * Structure
+ */
 .site {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-}
-
-.site-content {
-  box-sizing: border-box;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-}
-
-.outer {
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $container;
+    max-width: 1200px;
 }
 
-.inner-md {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $container-md;
+img {
+    border: 3px solid black;
 }
 
-.inner-sm {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $container-sm;
+.site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 2.5em 4vw 1.66667em;
+
+    @media only screen and (min-width: 801px) {
+        margin-left: 30vw;
+    }
+
+    @media only screen and (min-width: 1091px) {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    @media only screen and (min-width: 1501px) {
+        margin-left: 450px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+}
+
+.site-main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-bottom: 1.66667em;
 }

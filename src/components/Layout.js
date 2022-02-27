@@ -1,61 +1,79 @@
 import React from 'react';
-
 import { Helmet } from 'react-helmet';
 import _ from 'lodash';
 
-import { withPrefix, attribute } from '../utils';
-import '../sass/main.scss';
-import Header from './Header';
-import Footer from './Footer';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+import { withPrefix, classNames } from '../utils';
+
 export default class Body extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleVideoEmbeds = this.handleVideoEmbeds.bind(this);
+    }
+
+    componentDidMount() {
+        this.handleVideoEmbeds();
+    }
+
+    componentDidUpdate() {
+        this.handleVideoEmbeds();
+    }
+
+    handleVideoEmbeds() {
+        const videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+        noframe(videoEmbeds.join(','), '.post-content');
+    }
+
     render() {
+        const page = _.get(this.props, 'page');
+        const pageTitle = _.get(page, 'title');
+        const config = _.get(this.props, 'config');
+        const configTitle = _.get(config, 'title');
+        const palette = _.get(config, 'palette', 'yellow');
+        const favicon = _.get(config, 'favicon');
+        const domain = _.trim(_.get(config, 'domain', ''), '/');
+        const seo = _.get(page, 'seo');
+        const seoTitle = _.get(seo, 'title');
+        const title = seoTitle ? seoTitle : [pageTitle, configTitle].join(' | ');
+        const seoDescription = _.get(seo, 'description', '');
+        const seoRobots = _.get(seo, 'robots', []).join(',');
+        const seoExtra = _.get(seo, 'extra', []).map((meta, metaIdx) => {
+            const keyName = _.get(meta, 'keyName', 'name');
+            const name = _.get(meta, 'name');
+            if (!name) {
+                return null;
+            }
+            const nameAttr = { [keyName]: name };
+            const relativeUrl = _.get(meta, 'relativeUrl');
+            let value = _.get(meta, 'value');
+            if (!value) {
+                return null;
+            }
+            if (relativeUrl) {
+                if (!domain) {
+                    return null;
+                }
+                value = domain + withPrefix(value);
+            }
+            return <meta key={metaIdx} {...nameAttr} content={value} />;
+        });
+
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>
-                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
-                    </title>
+                    <title>{title}</title>
                     <meta charSet="utf-8" />
-                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
-                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
-                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
-                        <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')} />
-                    )}
-                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
-                        let key_name = _.get(meta, 'keyName', null) || 'name';
-                        return _.get(meta, 'relativeUrl', null) ? (
-                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
-                                (() => {
-                                    let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
-                                    let rel_url = withPrefix(_.get(meta, 'value', null));
-                                    let full_url = domain + rel_url;
-                                    return <meta key={meta_idx} {...attribute(key_name, _.get(meta, 'name', null))} content={full_url} />;
-                                })()
-                        ) : (
-                            <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
-                        );
-                    })}
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="google" content="notranslate" />
+                    <meta name="description" content={seoDescription} />
+                    {!_.isEmpty(seoRobots) && <meta name="robots" content={seoRobots} />}
+                    {seoExtra}
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
-                        <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
-                    )}
-                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
+                    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+                    {favicon && <link rel="icon" href={withPrefix(favicon)} />}
+                    <body className={classNames(`palette-${palette}`)} />
                 </Helmet>
                 <div id="page" className="site">
-                    <Header {...this.props} />
-                    {/* INSERT SEARCH BAR HERE */}
-                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" /> */}
-                    <main id="content" className="site-content">
-                        {this.props.children}
-                    </main>
-                    <Footer {...this.props} />
+                    {this.props.children}
                 </div>
             </React.Fragment>
         );
