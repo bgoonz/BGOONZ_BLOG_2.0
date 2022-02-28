@@ -6,7 +6,11 @@ seo:
   title: Job Hunt
   description: Job search guidance for front end web developers.
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/7-b052e510.jpg
+      keyName: property
+      relativeUrl: true
 template: docs
 ---
 
