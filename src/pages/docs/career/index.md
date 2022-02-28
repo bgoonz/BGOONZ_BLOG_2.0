@@ -3,7 +3,7 @@ title: Career
 weight: 0
 excerpt: Reference materials and descriptions of fundamental concepts as well as visua
 seo:
-  title: ''
+  title: Job Hunt
   description: Job search guidance for front end web developers.
   robots: []
   extra: []
