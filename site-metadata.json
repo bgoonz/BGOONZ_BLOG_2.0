@@ -135,13 +135,13 @@
                     {
                         "label": "Interviewing-Tips",
                         "url": "https://bgoonz-blog.netlify.app/docs/career/",
-                        "style": "secondary",
+                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
                     },
                     {
-                        "label": "lorem-ipsum",
+                        "label": "Interview Questions",
                         "url": "#",
                         "style": "link",
                         "icon_class": "dev",
