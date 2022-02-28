@@ -138,7 +138,7 @@ sections:
         image_alt: lorem-ipsum
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions:
-          - label: Learn About Bl
+          - label: Learn About Blocking Code
             url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
             style: secondary
             icon_class: dev
