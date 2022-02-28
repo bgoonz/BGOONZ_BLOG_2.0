@@ -28,36 +28,80 @@ weight: 0
 
 
 
-Fundamental Data Structures In JavaScript
-=========================================
 
-Data structures in JavaScript
 
-------------------------------------------------------------------------
+Data structures
 
-#### <a href="http://medium.com/codex" class="markup--anchor markup--h4-anchor">CODEX</a>
 
-### Fundamental Data Structures In JavaScript
+<br>https://ds-unit-5-lambda.netlify.app/#.
+<br>
+<br>
+<br>
+
+<h1>   Algorithms </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<br>
+<br>
+<br>
+
+<h1>  The Algos Bgoonz Branch </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<h1>  Python Data Structures</h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-unit-5-lambda.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<h1>   Leetcode </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/Leetcode-JS-PY-MD/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<h1>   Algorithms </h1>
+<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<br>
+<br>
+<br>
+
 
 ### Data structures in JavaScript
 
-<span class="graf-dropCap">H</span>ere’s a website I created to practice data structures!
+<span class="graf-dropCap">H</span>ere's a website I created to practice data structures!
 
-<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong> 
-<br/>
-
-
+<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong><br />
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s the repo that the website is built on:
+<span class="graf-dropCap">H</span>ere's the repo that the website is built on:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong> 
-<br/>
-
-
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
 <em>Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<span class="graf-dropCap">H</span>ere’s a live code editor where you can mess with any of the examples…
+<span class="graf-dropCap">H</span>ere's a live code editor where you can mess with any of the examples…
 
 ### Resources (article content below):
 
@@ -106,15 +150,15 @@ Data structures in JavaScript
 
 #### Guides
 
--   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+-   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+-   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
 -   <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
 -   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+-   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
 ### ***space***
 
-> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can’t have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
+> *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
 
 ### *time*
 
@@ -144,8 +188,8 @@ An Array data structure, or simply an Array, is a data structure consisting of a
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-*Complexity*  
-*Average*  
+*Complexity*
+*Average*
 *Access Search Insertion Deletion*
 
 O(1) O(n) O(1) O(n)
@@ -156,17 +200,17 @@ O(1) O(n) O(1) O(n)
 
 2. This could be useful for storing data that are required to be ordered, such as rankings or queues
 
-3. In JavaScript, array’s value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
+3. In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ### 2. Objects
 
 Think of objects as a logical grouping of a bunch of properties.
 
-Properties could be some variable that it’s storing or some methods that it’s using.
+Properties could be some variable that it's storing or some methods that it's using.
 
 I also visualize an object as a table.
 
-The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.
+The main difference is that object's “index” need not be numbers and is not necessarily sequenced.
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*KVZkD2zrgEa_47igW8Hq8g.png" class="graf-image" /></figure>
 
@@ -178,8 +222,8 @@ The main difference is that object’s “index” need not be numbers and is no
 
 Hash Tables are considered the more efficient data structure for lookup and for this reason, they are widely used.
 
-Complexity  
-Average  
+Complexity
+Average
 Access Search Insertion Deletion
 
 -   <span id="f63f">O(1) O(1) O(1)</span>
@@ -192,7 +236,7 @@ Note, here I am storing another object for every hash in my Hash Table.
 
 ### Sets
 
-Sets are pretty much what it sounds like. It’s the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
+Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AIQljh9p8Baw9TnE.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*gOE33ANZP2ujbjIG" class="graf-image" /></figure>### *Definition*
 
@@ -200,8 +244,8 @@ Sets are pretty much what it sounds like. It’s the same intuition as Set in Ma
 
 The Set data structure is usually used to test whether elements belong to set of values. Rather then only containing elements, Sets are more used to perform operations on multiple values at once with methods such as union, intersect, etc…
 
-Complexity  
-Average  
+Complexity
+Average
 Access Search Insertion Deletion
 
 -   <span id="daa6">O(n) O(n) O(n)</span>
@@ -216,9 +260,9 @@ Access Search Insertion Deletion
 
 Linked Lists are among the simplest and most common data structures because it allows for efficient insertion or removal of elements from any position in the sequence.
 
-Complexity  
-Average  
-Access Search Insertion Deletion  
+Complexity
+Average
+Access Search Insertion Deletion
 O(n) O(n) O(1) O(1)
 
 > *The code*
@@ -233,9 +277,9 @@ O(n) O(n) O(1) O(1)
 
 Having two node links allow traversal in either direction but adding or removing a node in a doubly linked list requires changing more links than the same operations on a Singly Linked List.
 
-Complexity  
-Average  
-Access Search Insertion Deletion  
+Complexity
+Average
+Access Search Insertion Deletion
 O(n) O(n) O(1) O(1)
 
 > *The code*
@@ -250,9 +294,9 @@ O(n) O(n) O(1) O(1)
 
 A Stack often has a third method peek which allows to check the last pushed element without popping it.
 
-Complexity  
-Average  
-Access Search Insertion Deletion  
+Complexity
+Average
+Access Search Insertion Deletion
 O(n) O(n) O(1) O(1)
 
 > *The code*
@@ -265,9 +309,9 @@ O(n) O(n) O(1) O(1)
 
 As for the Stack data structure, a peek operation is often added to the Queue data structure. It returns the value of the front element without dequeuing it.
 
-Complexity  
-Average  
-Access Search Insertion Deletion  
+Complexity
+Average
+Access Search Insertion Deletion
 O(n) O(n) O(1) O(n)
 
 > *The code*
@@ -278,10 +322,10 @@ O(n) O(n) O(1) O(n)
 
 > *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the “children”), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
 
-Complexity  
-Average  
-Access Search Insertion Deletion  
-O(n) O(n) O(n) O(n)  
+Complexity
+Average
+Access Search Insertion Deletion
+O(n) O(n) O(n) O(n)
 To get a full overview of the time and space complexity of the Tree data structure, have a look to this excellent Big O cheat sheet.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*DCdQiB6XqBJCrFRz12BwqA.png" class="graf-image" /></figure>*The code*
@@ -294,7 +338,7 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 -   <span id="f896">A graph is **any** collection of nodes and edges.</span>
 -   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn’t need to have a root node (not every node needs to be accessible from a single node)</span>
+-   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
 -   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
 -   <span id="4afc">Cycles are not always “isolated”, they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
 -   <span id="8f45">Any number of edges may leave a given node</span>
@@ -304,10 +348,10 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*dn1BqCdXdFg4FCVSz6uArA.png" class="graf-image" /></figure>A Graph data structure may also associate to each edge some edge value, such as a symbolic label or a numeric attribute (cost, capacity, length, etc.).
 
-Representation  
+Representation
 There are different ways of representing a graph, each of them with its own advantages and disadvantages. Here are the main 2:
 
-Adjacency list: For every vertex a list of adjacent vertices is stored. This can be viewed as storing the list of edges. This data structure allows the storage of additional data on the vertices and edges.  
+Adjacency list: For every vertex a list of adjacent vertices is stored. This can be viewed as storing the list of edges. This data structure allows the storage of additional data on the vertices and edges.
 Adjacency matrix: Data are stored in a two-dimensional matrix, in which the rows represent source vertices and columns represent destination vertices. The data on the edges and vertices must be stored externally.
 
 Graph

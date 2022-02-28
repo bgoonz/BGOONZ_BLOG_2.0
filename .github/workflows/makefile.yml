@@ -1,0 +1,27 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+ runs-on: googleworkspace
+    build:BGOONZ_BLOG_2.0/.github/workflows/makefile.yml
+
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: configure
+      run: ./configure
+
+    - name: Install dependencies
+      run: make
+
+    - name: Run check
+      run: make check
+
+    - name: Run distcheck
+      run: make distcheck

@@ -27,12 +27,6 @@ template: docs
 <br>
 <br>
 
-
-<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/PROJECTS/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-
-
-
-
 # Family Promise Project:
 
 # Table of contents

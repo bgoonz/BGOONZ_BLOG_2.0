@@ -168,7 +168,6 @@ Private instance methods may be generator, async, or async generator functions. 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal) 
 <br/>
 
-
 <span class="small">#prod-PrivateIdentifier</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

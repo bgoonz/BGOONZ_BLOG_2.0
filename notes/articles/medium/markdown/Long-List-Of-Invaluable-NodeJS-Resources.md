@@ -6,9 +6,8 @@ Authentication
 
 ### Long List Of Invaluable NodeJS Resources
 
-<strong>A list of all of my articles to link to future posts</strong> 
+<strong>A list of all of my articles to link to future posts</strong>
 <br/>
-
 
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 

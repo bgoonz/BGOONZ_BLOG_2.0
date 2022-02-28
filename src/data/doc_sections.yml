@@ -12,6 +12,7 @@ sections:
     - faq
     - interact
     - javascript
+    - interview
     - leetcode
     - projects
     - python
@@ -21,3 +22,5 @@ sections:
     - tools
     - tips
     - tutorials
+
+

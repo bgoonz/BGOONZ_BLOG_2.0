@@ -40,7 +40,6 @@ The output looks like this:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#dom-module-imports</span></a></td></tr></tbody></table>
 
 `imports`

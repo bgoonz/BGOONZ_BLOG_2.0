@@ -58,10 +58,8 @@ The following snippet creates a new `LinkError` instance, and logs its details t
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
-<span class="small">#exceptiondef-linkerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript) 
+<span class="small">#exceptiondef-linkerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
 <br/>
-
 
 <span class="small">#sec-native-error-types-used-in-this-standard</span></a></td></tr></tbody></table>
 

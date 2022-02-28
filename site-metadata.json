@@ -117,7 +117,7 @@
             },
             {
                 "label": "Job Search",
-                "url": "/docs/ career/job-search-nav/",
+                "url": "/docs/interview/job-search-nav/",
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -126,8 +126,16 @@
                 "subnav_links": [
                     {
                         "label": "Job Boards",
-                        "url": " career/job-boards",
+                        "url": "interview/job-boards",
                         "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
@@ -501,5 +509,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/favicon.png"
+    "favicon": "images/enhanced (1).png"
 }

@@ -22,7 +22,6 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
 
 `Left_shift_assignment`

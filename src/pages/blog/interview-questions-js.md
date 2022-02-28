@@ -1046,7 +1046,7 @@ image: images/green-spruce-4e3a1745.png
 
 66. ### What is a strict mode in javascript
 
-    Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
+    Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
 
 67. ### Why do you need strict mode
 
@@ -2072,7 +2072,7 @@ image: images/green-spruce-4e3a1745.png
 
 152. ### What is the need of tree shaking
 
-     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
+     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a "Hello World" Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
 
 153. ### Is it recommended to use eval
 
@@ -4124,7 +4124,7 @@ image: images/green-spruce-4e3a1745.png
 
 296. ### What is jQuery
 
-     jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+     jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of "Write less, do more". For example, you can display welcome message on the page load using jQuery as below,
 
      ```javascript
      $(document).ready(function () {
@@ -4626,7 +4626,7 @@ image: images/green-spruce-4e3a1745.png
 
 326. ### What are the problems with postmessage target origin as wildcard
 
-     The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “\*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
+     The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard "\*" as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
 
      ```javascript
      targetWindow.postMessage(message, '*');
@@ -4634,7 +4634,7 @@ image: images/green-spruce-4e3a1745.png
 
 327. ### How do you avoid receiving postMessages from attackers
 
-     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker's origin, which gives an impression that the receiver received the message from the actual sender's window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker's origin, which gives an impression that the receiver received the message from the actual sender's window. You can avoid this issue by validating the origin of the message on the receiver's end using the "message.origin" attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
 
      ```javascript
      //Listener on http://www.some-receiver.com/
@@ -4671,10 +4671,7 @@ image: images/green-spruce-4e3a1745.png
      You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
 
      ```html
-     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the conditions 
-<br/>
-
-
+     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the conditions<br />
      ```
 
      ```javascript
@@ -4708,7 +4705,7 @@ image: images/green-spruce-4e3a1745.png
      alert(buffer.byteLength); // 16
      ```
 
-     To manipulate an ArrayBuffer, we need to use a “view” object.
+     To manipulate an ArrayBuffer, we need to use a "view" object.
 
      ```javascript
      //Create a DataView referring to the buffer
@@ -5745,7 +5742,7 @@ image: images/green-spruce-4e3a1745.png
          and then you forgot to add `done` block to `then` block leads to silent errors.
 
      3. **Extend ES6 Promises by Bluebird:**
-        Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a “default” onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
+        Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a "default" onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
 
          ```javascript
          Promise.onPossiblyUnhandledRejection(function (error) {
@@ -6916,7 +6913,7 @@ processArray([1, 2, 3, 4]);
 
 ##### Answer: 1
 
-Even though “processArray” is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside a synchronous function then it throws a syntax error.
+Even though "processArray" is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside a synchronous function then it throws a syntax error.
 
 </p>
 

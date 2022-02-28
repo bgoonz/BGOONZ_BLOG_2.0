@@ -334,7 +334,6 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-object.create</span></a></td></tr></tbody></table>
 
 `create`

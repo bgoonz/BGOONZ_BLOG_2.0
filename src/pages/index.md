@@ -24,10 +24,10 @@ sections:
           complexity?
         actions:
           - label: Get Started
-            url: /docs
+            url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
             style: link
         title: A Quick Guide To Big O
-        image: images/my-back.png
+        image: images/outdated-packages-732a4523.png
         title_url: >-
           https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
       - content: |
@@ -36,11 +36,13 @@ sections:
           Autor Unknown"  .*
         actions:
           - label: View Posts
-            url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
+            url: >-
+              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             style: link
         image_alt: python
         title: Python Guide
-        title_url: 'https://bgoonzblog20master.gatsbyjs.io/docs/python/'
+        title_url: >-
+          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
         image: images/smiling-maple.png
       - content: |
           <div id="search"></div> <div id="search" />
@@ -78,14 +80,13 @@ sections:
         type: grid_item
         title: Web Audio Daw
         image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
-        title_url: 'https://mihirbeg28.netlify.app/'
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
     col_number: three
     grid_items:
       - title: Angolia
-        title_url: angolia
+        title_url: 'https://www.algolia.com/doc/'
         image_alt: angolia
         content: |
           ## Full Text Search
@@ -95,24 +96,40 @@ sections:
         type: grid_item
         image: images/spectacular-turmeric.png
       - title: Convolutional Neural Networks
-        title_url: neural networks
+        title_url: >-
+          https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
         image_alt: neural networks
         content: >
           Artificial neural networks, usually simply called neural networks, are
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
         type: grid_item
         image: images/neural.PNG
       - title: Jamstack
         title_url: jamstack
         image_alt: jamstack
-        content: |
-          ##### Why Jamstack Jamstack is the new standard architecture for the
-          web. Using Git workflows and modern build tools, pre-rendered content
-          is served to a CDN and made dynamic through APIs and serverless
-          functions. Technologies in the stack include JavaScript frameworks,
-          Static Site Generators, Headless CMSs, and CDNs.
+        content: >
+          > Why Jamstack Jamstack is the new standard architecture for the...
+
+
+          \*\*
+
+
+          > *web. Using Git workflows and modern build tools, pre-rendered
+          content
+
+          > is served to a CDN and made dynamic through APIs and serverless
+
+          > functions. Technologies in the stack include JavaScript frameworks,
+
+          > Static Site Generators, Headless CMSs, and CDNs.*
         actions: []
         type: grid_item
         image: images/jamstack.png
@@ -120,7 +137,13 @@ sections:
         title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
-        actions: []
+        actions:
+          - label: lorem-ipsum
+            url: 'https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/'
+            style: secondary
+            icon_class: dev
+            new_window: true
+            no_follow: false
         type: grid_item
         image: images/eventloop.gif
       - title: NJ Devils
@@ -134,11 +157,11 @@ sections:
             new_window: false
             no_follow: false
         type: grid_item
-        image: images/njdevils.jpg
+        image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: 'https://www.iter.org/'
+        image_alt: Nuclear Fusion
         content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
@@ -148,19 +171,16 @@ sections:
           design — the world's most developed approach to fusion energy. It is
           the first time since 1997 that researchers have done experiments in a
           tokamak with any significant amount of tritium.
-        actions: []
+        actions:
+          - label: Learn More
+            url: 'https://www.iter.org/'
+            style: secondary
+            icon_class: dev
+            new_window: true
+            no_follow: false
         type: grid_item
-        image: images/iter-zoomed.PNG
+        image: images/iter-c7508519.jpg
     type: section_grid
-  - title: Tools
-    section_id: Tools
-    image_alt: dev tools
-    image_position: left
-    content: |+
-
-
-    actions: []
-    type: section_content
   - section_id: features-two-col
     type: section_grid
     title: Resume & Portfolio
@@ -168,17 +188,24 @@ sections:
     grid_items:
       - title: Resume
         actions:
-          - label: Learn More
+          - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
-          - label: Download PDF
+            style: secondary
+          - label: lorem-ipsum
             url: '#'
             style: link
             icon_class: dev
             new_window: false
             no_follow: false
+          - label: Download PDF
+            url: >-
+              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
+            style: secondary
+            icon_class: dev
+            new_window: false
+            no_follow: false
             type: action
-        image: images/resume.png
+        image: images/image-of-resume.png
         title_url: >-
           https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
       - title: Showcase
@@ -187,20 +214,61 @@ sections:
         actions:
           - label: Learn More
             url: /showcase
-            style: link
-        image: images/My Post.png
+            style: secondary
+        image_alt: portfolio of websites
+        image: images/portfolio-91689538.jpg
   - title: Blog-Archive-And-Mini-Projects
-    section_id: lorem-ipsum
-    image_alt: rotating pages
+    section_id: Mini Projects
+    image_alt: showcase
     image_position: left
-    content: |-
+    content: >-
+      <iframe src="https://random-static-html-deploys.netlify.app/"   
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
+    actions: []
+    type: section_content
+  - title: Latest & Greatest
+    section_id: new content
+    image_alt: animated gif
+    image_position: right
+    content: |
+      # ***What I've been working on lately:***
+      ## Web Dev Utilitiy Tools
       <iframe class="block-content" width="100%  width="1200px!important"
       height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/showcase2.html"  
+        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://cheatsheets-42.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
+    image: images/cool annimation.gif
+  - section_id: tools
+    image_alt: lorem-ipsum
+    image_position: left
+    content: |
+      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+      <iframe class="block-content" width="100%  width="1200px!important"
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+    actions: []
+    type: section_content
+    title: Tools Showcase
   - section_id: Web Audio DAW
     image_alt: medium
     image_position: left
@@ -232,13 +300,6 @@ sections:
         type: action
       - label: email
         url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
-      - label: Collaborate
-        url: >-
-          https://webdevhub.jetbrains.space/oauth/auth/invite/419dd305ba717a392a02aa5b4e41e09c
         style: primary
         icon_class: dev
         new_window: false

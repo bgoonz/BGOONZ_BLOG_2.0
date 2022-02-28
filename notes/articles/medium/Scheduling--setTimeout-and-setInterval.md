@@ -1,12 +1,12 @@
 # Scheduling: setTimeout and setInterval
 
-We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".
 
 ---
 
 ### Scheduling: setTimeout and setInterval
 
-We may decide to execute a function not right now, but at a later time. That's called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That's called "scheduling a call".
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" /></figure>There are two methods for it:
 
@@ -109,7 +109,7 @@ The following example will show the message every 2 seconds. After 5 seconds, th
     // after 5 seconds stop
     setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
 
-\`\`\`smart header = “Time goes on while `alert` is shown”
+\`\`\`smart header = "Time goes on while `alert` is shown"
 
 In most browsers, including Chrome and Firefox, the internal timer continues "ticking" while showing `alert/confirm/prompt`.
 
@@ -212,15 +212,15 @@ There's a special use case: `setTimeout(func, 0)`, or just `setTimeout(func)`.
 
 This schedules the execution of `func` as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.
 
-So the function is scheduled to run “right after” the current script.
+So the function is scheduled to run "right after" the current script.
 
-For instance, this outputs “Hello”, then immediately “World”:
+For instance, this outputs "Hello", then immediately "World":
 
     setTimeout(() => alert("World"));
 
     alert("Hello");
 
-The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so `"Hello"` is first, and `"World"` -- after it.
+The first line "puts the call into calendar after 0ms". But the scheduler will only "check the calendar" after the current script is complete, so `"Hello"` is first, and `"World"` -- after it.
 
 There are also advanced browser-related use cases of a zero-delay timeout, that we'll discuss in the chapter info:event-loop.
 

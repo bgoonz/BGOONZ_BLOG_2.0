@@ -42,7 +42,7 @@ Tip: Having an effective communication strategy with stakeholders doesn't mean y
 
 ### 9. GIVE ME AN EXAMPLE OF HOW YOU'D DESCRIBE WEB DEVELOPMENT (WHAT IT IS, WHY IT IS IMPORTANT) TO SOMEONE WHO IS COMPLETELY NEW TO TECH.
 
-Tip: As a web developer you'll find yourself in situations where you need to talk “tech” with non-techies. Making your work make sense to people who have no idea what it is you actually do is a valuable skill. Take off your developer hat for a day and think of some ways to describe web development to someone who doesn't know Java from JavaScript.
+Tip: As a web developer you'll find yourself in situations where you need to talk "tech" with non-techies. Making your work make sense to people who have no idea what it is you actually do is a valuable skill. Take off your developer hat for a day and think of some ways to describe web development to someone who doesn't know Java from JavaScript.
 
 ### 10. GIVE AN EXAMPLE OF A WEBSITE OR WEB APPLICATION THAT YOU DON'T LIKE, POINT OUT WHAT'S WRONG WITH IT AND WHAT YOU WOULD CHANGE.
 
@@ -68,9 +68,8 @@ Tip: Soft skills can be a difference maker. If it's a choice between a skilled p
 
 Tip: Yes, you're interviewing for a web developer job, but remember to look to other experiences in your life for inspiration. Examples like the time you helped improve the ordering system at the cafe you worked at or put together a volunteer fundraising effort to save the music program at your kids' school all speak to the breadth of your problem solving abilities and experiences.
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

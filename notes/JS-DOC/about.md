@@ -26,7 +26,7 @@ JavaScript applications consist of statements with an appropriate syntax. A sing
 [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)  
 This chapter documents all the JavaScript language operators, expressions and keywords.
 
-[Functions](functions)  
+Functions  
 Chapter about JavaScript functions.
 
 [Classes](classes)  

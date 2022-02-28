@@ -111,7 +111,6 @@ The following code also uses `break` statements with labeled blocks, but generat
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Break statement' in that specification.</span></a></td></tr></tbody></table>
 
 `break`

@@ -67,7 +67,6 @@ The third statement assigns the value 95 to the variable `year`, representing th
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-date.prototype.getyear</span></a></td></tr></tbody></table>
 
 `getYear`

@@ -11,14 +11,12 @@ A web development student's declassified school survival guide.
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Eqy-CWnqZ9WhcXxF" alt="Photo by Christin Hume on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Christin Hume</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><strong>A list of all of my articles to link to future posts</strong> 
 <br/>
 
-
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 Also here's an even better list by someone I don't know but would be doing you a disservice by failing to include… **There's very little overlap so you should probably read both :**
 
-<a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c"><strong>25 Free Resources to Learn Web Development</strong> 
+<a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c"><strong>25 Free Resources to Learn Web Development</strong>
 <br/>
-
 
 <em>Start where you are, use what you have, and do what you can.</em>medium.com</a><a href="https://medium.com/swlh/25-free-resources-to-learn-web-development-dd9b7479e06c" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -30,7 +28,7 @@ Also here's an even better list by someone I don't know but would be doing you a
 
 ### 12.)Bit.Dev:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*-bAeyLeg08WTkGPg.gif" class="graf-image" /></figure><a href="https://bit.dev/" class="markup--anchor markup--p-anchor"><strong>Bit.dev</strong></a> **the world's best and only component marketplace solution provided as a service**. It's enterprise-grade in every way and provides all features out of the box. Bit empowers organizations with a “Lego-box” where all developers can push, discover, and reuse every component.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*-bAeyLeg08WTkGPg.gif" class="graf-image" /></figure><a href="https://bit.dev/" class="markup--anchor markup--p-anchor"><strong>Bit.dev</strong></a> **the world's best and only component marketplace solution provided as a service**. It's enterprise-grade in every way and provides all features out of the box. Bit empowers organizations with a "Lego-box" where all developers can push, discover, and reuse every component.
 
 This means much faster development, less time and effort spent re-inventing the wheel, and 100% focus on innovation.
 
@@ -58,9 +56,8 @@ To learn more about how Bit can help unlock these benefits for you just <a href=
 
 ### 11.)Dillinger:
 
-<a href="https://dillinger.io/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dillinger.io/"><strong>Online Markdown Editor - Dillinger, the Last Markdown Editor ever.</strong> 
+<a href="https://dillinger.io/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dillinger.io/"><strong>Online Markdown Editor - Dillinger, the Last Markdown Editor ever.</strong>
 <br/>
-
 
 <em>Dillinger is an online cloud based HTML5 filled Markdown Editor. Sync with Dropbox, Github, Google Drive or OneDrive…</em>dillinger.io</a><a href="https://dillinger.io/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -133,9 +130,8 @@ And if you want to learn more math and computer science theory, we also have tho
 
 CloudConvert is a German-based conversion site that was launched in 2012. Today, it's one of the most popular format converters, boasting of over 10,000 customers and at least four files per second.
 
-<a href="https://cloudconvert.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://cloudconvert.com/"><strong>CloudConvert</strong> 
+<a href="https://cloudconvert.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://cloudconvert.com/"><strong>CloudConvert</strong>
 <br/>
-
 
 <em>CloudConvert is your Swiss army knife for file conversions. We support nearly all audio, video, document, ebook…</em>cloudconvert.com</a><a href="https://cloudconvert.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -153,7 +149,7 @@ CloudConvert supports over 200 formats from audio, spreadsheet, video, document,
 
 ### 4.) Pandoc:
 
-Pandoc dubs itself a “markup format” converter. It can take a document in one of the supported formats and convert only its markup to another format. Maintaining the look and feel of the document is not a priority.
+Pandoc dubs itself a "markup format" converter. It can take a document in one of the supported formats and convert only its markup to another format. Maintaining the look and feel of the document is not a priority.
 
 Plug-ins for custom formats can also be written in <a href="https://en.wikipedia.org/wiki/Lua_%28programming_language%29" class="markup--anchor markup--p-anchor" title="Lua (programming language)">Lua</a>, which has been used to create an exporting tool for the <a href="https://en.wikipedia.org/wiki/Journal_Article_Tag_Suite" class="markup--anchor markup--p-anchor" title="Journal Article Tag Suite">Journal Article Tag Suite</a>, for example
 
@@ -237,9 +233,8 @@ Dirhtml is not installable, just unzip and run dirhtml.exe.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*mS1VExsEeK5jYwHPFWA-aQ.png" class="graf-image" /></figure>Problems, questions? Email the author: <a href="mailto:dirhtml@enware.info" class="markup--anchor markup--p-anchor">dirhtml@enware.info</a>
 
-<a href="https://dirhtml.en.uptodown.com/windows" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dirhtml.en.uptodown.com/windows"><strong>Dirhtml (Windows)</strong> 
+<a href="https://dirhtml.en.uptodown.com/windows" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://dirhtml.en.uptodown.com/windows"><strong>Dirhtml (Windows)</strong>
 <br/>
-
 
 <em>Dirhtml is a lite application that creates HTML files listing the content of a certain folder with links to each file…</em>dirhtml.en.uptodown.com</a><a href="https://dirhtml.en.uptodown.com/windows" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -253,9 +248,8 @@ Dirhtml is a good choice if you are planning to create a directory of your files
 
 It's how I create site navigation as it appears here:
 
-<a href="https://lambda-resources.netlify.app/directory.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-resources.netlify.app/directory.html"><strong>Site Navigation</strong> 
+<a href="https://lambda-resources.netlify.app/directory.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://lambda-resources.netlify.app/directory.html"><strong>Site Navigation</strong>
 <br/>
-
 
 <em>Edit description</em>lambda-resources.netlify.app</a><a href="https://lambda-resources.netlify.app/directory.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -267,9 +261,8 @@ This enables me to take a folder full of my notes … no matter the file extensi
 
 ### 5.) **Google Colaboratory**
 
-<a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk"><strong>Google Colaboratory</strong> 
+<a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk"><strong>Google Colaboratory</strong>
 <br/>
-
 
 <em>Edit description</em>colab.research.google.com</a><a href="https://colab.research.google.com/github/bgoonz/Jupyter-Notebooks/blob/master/02-Web-Scraping-Exercise-Solutions.ipynb#scrollTo=3dvl7SQ6C8wk" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -277,7 +270,7 @@ This enables me to take a folder full of my notes … no matter the file extensi
 
 **What is Colaboratory?**
 
-Colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser and is especially well suited to machine learning, data analysis, and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing free access to computing resources including GPUs.
+Colaboratory, or "Colab" for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser and is especially well suited to machine learning, data analysis, and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing free access to computing resources including GPUs.
 
 **Is it really free to use?**
 
@@ -293,9 +286,8 @@ Users who are interested in more reliable access to better resources may be inte
 
 <a href="https://jupyter.org/" class="markup--anchor markup--p-anchor">Jupyter</a> is the open-source project on which Colab is based. Colab allows you to use and share Jupyter notebooks with others without having to download, install, or run anything.
 
-<a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/notebooks/basic_features_overview.ipynb"><strong>Google Colaboratory</strong> 
+<a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://colab.research.google.com/notebooks/basic_features_overview.ipynb"><strong>Google Colaboratory</strong>
 <br/>
-
 
 <em>Edit description</em>colab.research.google.com</a><a href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -303,9 +295,8 @@ Users who are interested in more reliable access to better resources may be inte
 
 Here's a repo where I backup my gists… I keep hundreds:
 
-<a href="https://github.com/bgoonz/my-gists" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/my-gists"><strong>bgoonz/my-gists</strong> 
+<a href="https://github.com/bgoonz/my-gists" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/my-gists"><strong>bgoonz/my-gists</strong>
 <br/>
-
 
 <em>Contribute to bgoonz/my-gists development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/my-gists" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -313,9 +304,8 @@ Here's a repo where I backup my gists… I keep hundreds:
 
 ### 7.) Screen To Gif:
 
-<a href="https://github.com/NickeManarin/ScreenToGif/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/NickeManarin/ScreenToGif/"><strong>NickeManarin/ScreenToGif</strong> 
+<a href="https://github.com/NickeManarin/ScreenToGif/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/NickeManarin/ScreenToGif/"><strong>NickeManarin/ScreenToGif</strong>
 <br/>
-
 
 <em>This tool allows you to record a selected area of your screen, live feed from your webcam or live drawings from a…</em>github.com</a><a href="https://github.com/NickeManarin/ScreenToGif/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -420,7 +410,7 @@ I am currently building myself a new blog site… I sometimes develop it locally
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*vewSClaL-mtlJ1VPU77ZqQ.jpeg" class="graf-image" /></figure>Stackbit takes all the tools you'd need for a site's stack (theme, static site generator, CMS, and deployment) and quickly bundles them together for you. It offers options in each category, so you can mix and match the tools in your stack that best suit your needs.
 
-At this point, you may be thinking, Ok, but “fast” is a relative term in this space… how “fast” are we really talking here?
+At this point, you may be thinking, Ok, but "fast" is a relative term in this space… how "fast" are we really talking here?
 
 Great question. Let me put it to you this way: you could literally throw a HotPocket in the microwave, go build an incredibly sleek JAMstack site, and you'd still be waiting for your food to be cool enough to eat.
 
@@ -442,7 +432,7 @@ For example, suppose your site uses <a href="https://www.gatsbyjs.com/" class="m
 
 If your site uses <a href="https://gohugo.io/" class="markup--anchor markup--p-anchor">Hugo</a>, Stackbit executes `hugo server` and routes page requests to Hugo's development server running internally on `http://localhost`<a href="http://localhost." class="markup--anchor markup--p-anchor">.</a>
 
-You can see the logs of how Stackbit pulls your repository, installs dependencies, and runs your SSG's development server by clicking on the “Logs” button in the “Advanced Tools” bottom bar:
+You can see the logs of how Stackbit pulls your repository, installs dependencies, and runs your SSG's development server by clicking on the "Logs" button in the "Advanced Tools" bottom bar:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Ak-yJ2z4qySTXyvk.png" class="graf-image" /></figure>### Preview Updates
 
@@ -476,9 +466,8 @@ In the search result section, you can not only see a list of files that match yo
 
 -   <span id="24ae">Source:</span>
 
-<a href="https://www.ctrl.blog/entry/review-filelocator.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.ctrl.blog/entry/review-filelocator.html"><strong>FileLocator Lite and Pro review</strong> 
+<a href="https://www.ctrl.blog/entry/review-filelocator.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.ctrl.blog/entry/review-filelocator.html"><strong>FileLocator Lite and Pro review</strong>
 <br/>
-
 
 <em>Find "everything" with Lite Finding even more and do it faster with Pro Windows and tabs management, and keyboard…</em>www.ctrl.blog</a><a href="https://www.ctrl.blog/entry/review-filelocator.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -490,9 +479,8 @@ In the search result section, you can not only see a list of files that match yo
 
 The best note taking app ever:
 
-<a href="https://www.notion.so/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/"><strong>Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.</strong> 
+<a href="https://www.notion.so/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/"><strong>Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.</strong>
 <br/>
-
 
 <em>A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team.</em>www.notion.so</a><a href="https://www.notion.so/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -524,9 +512,8 @@ Systems that keep notes organized. Add any type of content.
 
 ### Gitbook:
 
-<a href="https://www.gitbook.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.gitbook.com/"><strong>GitBook - Where software teams break knowledge silos.</strong> 
+<a href="https://www.gitbook.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.gitbook.com/"><strong>GitBook - Where software teams break knowledge silos.</strong>
 <br/>
-
 
 <em>Centralize your knowledge and collaborate with your team in a single, organized workspace for increased efficiency…</em>www.gitbook.com</a><a href="https://www.gitbook.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -534,9 +521,8 @@ GitBook started as a simple open source tool designed to let developers quickly 
 
 Not only does this tool allow you to seamlessly create documentation and notes in perfect synchrony with the git repo of your choice .. you can also import/export html, markdown and pdf documents and the cherry on top… it turns your notes into a beautiful website…. 11/10 would recommend.
 
-<a href="https://bryan-guner.gitbook.io/lambda-website" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryan-guner.gitbook.io/lambda-website"><strong>Closure-and-Scope</strong> 
+<a href="https://bryan-guner.gitbook.io/lambda-website" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryan-guner.gitbook.io/lambda-website"><strong>Closure-and-Scope</strong>
 <br/>
-
 
 <em>Variables are used to store information to be referenced and manipulated in a computer program. A variable's sole…</em>bryan-guner.gitbook.io</a><a href="https://bryan-guner.gitbook.io/lambda-website" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

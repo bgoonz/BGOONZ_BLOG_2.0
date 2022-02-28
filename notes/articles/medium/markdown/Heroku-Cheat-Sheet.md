@@ -10,7 +10,6 @@ a cheatsheet for using heroku-cli
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*x5-iOqgNLWiBDKov.gif" class="graf-image" /></figure>
 
-
 ### `create` - Create an app
 
     heroku create sushi

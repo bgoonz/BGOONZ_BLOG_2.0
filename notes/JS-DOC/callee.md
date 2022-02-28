@@ -104,7 +104,6 @@ However, in a case like the following, there are not alternatives to `arguments.
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
 
 `callee`

@@ -22,14 +22,14 @@ Explain event delegation.
 -   <span id="87c0">Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?</span>
 -   <span id="604c">Explain `Function.prototype.bind`.</span>
 -   <span id="65d9">What's the difference between feature detection, feature inference, and using the UA string?</span>
--   <span id="022a">Explain “hoisting”.</span>
+-   <span id="022a">Explain "hoisting".</span>
 -   <span id="04c6">Describe event bubbling.</span>
 -   <span id="ed30">Describe event capturing.</span>
--   <span id="7471">What's the difference between an “attribute” and a “property”?</span>
+-   <span id="7471">What's the difference between an "attribute" and a "property"?</span>
 -   <span id="c83d">What are the pros and cons of extending built-in JavaScript objects?</span>
 -   <span id="8fbf">What is the difference between `==` and `===`?</span>
 -   <span id="0901">Explain the same-origin policy with regards to JavaScript.</span>
--   <span id="fd25">Why is it called a Ternary operator, what does the word “Ternary” indicate?</span>
+-   <span id="fd25">Why is it called a Ternary operator, what does the word "Ternary" indicate?</span>
 -   <span id="552f">What is strict mode? What are some of the advantages/disadvantages of using it?</span>
 -   <span id="bf1a">What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?</span>
 -   <span id="e73c">What tools and techniques do you use debugging JavaScript code?</span>

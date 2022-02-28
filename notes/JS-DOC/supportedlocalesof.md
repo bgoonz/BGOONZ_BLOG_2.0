@@ -42,7 +42,6 @@ Assuming a runtime that supports Indonesian and German but not Balinese in date 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-
 <span class="small">#sec-Intl.RelativeTimeFormat.supportedLocalesOf</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

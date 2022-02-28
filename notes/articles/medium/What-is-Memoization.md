@@ -12,9 +12,8 @@ And why this programming paradigm shouldn't make you cringe.
 
 #### <a href="https://www.deadcoderising.com/2017-06-13-why-pure-functions-4-benefits-to-embrace-2/" class="markup--anchor markup--h4-anchor">Source</a>
 
-<a href="https://www.deadcoderising.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.deadcoderising.com/"><strong>Dead Code Rising</strong> 
+<a href="https://www.deadcoderising.com/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.deadcoderising.com/"><strong>Dead Code Rising</strong>
 <br/>
-
 
 <em>The last couple of weeks I've been using a lot of hours playing around with GatsbyJS, and it's been a blast! Gatsby is…</em>www.deadcoderising.com</a><a href="https://www.deadcoderising.com/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -24,7 +23,7 @@ calculations that can occur in algorithms that use recursive algorithms.
 Recall that recursion solves a large problem by dividing it into smaller  
 sub-problems that are more manageable.
 
-Memoization will store the results of the sub-problems in some other data structure, meaning that you avoid duplicate calculations and only “solve” each subproblem once.
+Memoization will store the results of the sub-problems in some other data structure, meaning that you avoid duplicate calculations and only "solve" each subproblem once.
 
 This approach is near synonymous with another computer science term you may have heard before — caching. However, caching as a practice is not achieved exclusively by memoizing. Think of a cache as a little bucket where we will keep important information we don't want to forget in the near future but that isn't vitally important or part of the long-term makeup of our application. It's less important than the things we need to store in memory but more important than a variable we can discard as soon as we use it once.
 
@@ -40,7 +39,7 @@ memoization) and the memory used to run the algorithm (with memoization).
 Usually, memoization is a good trade-off when dealing with large data or  
 calculations.
 
-You cannot always apply this technique to recursive problems. The problem must have an “overlapping subproblem structure” for memoization to be effective.
+You cannot always apply this technique to recursive problems. The problem must have an "overlapping subproblem structure" for memoization to be effective.
 
 Generally speaking, computer memory is cheap and human time is incalculably valuable so we may opt for this approach even when the largest gains on paper can be made from converting RAM at the expense of execution speed.
 
@@ -134,9 +133,8 @@ _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

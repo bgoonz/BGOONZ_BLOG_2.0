@@ -37,7 +37,6 @@ Note the return value of `grow()` here is the previous number of WebAssembly pag
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#dom-memory-grow</span></a></td></tr></tbody></table>
 
 `grow`

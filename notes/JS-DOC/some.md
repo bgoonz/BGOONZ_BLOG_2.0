@@ -159,7 +159,6 @@ To mimic the function of the `includes()` method, this custom function returns `
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-array.prototype.some</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

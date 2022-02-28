@@ -35,10 +35,10 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
 
--   <span id="2ea7">\[ \] Use the “clearfix hack” on the floated element and add a float to the parent element.</span>
--   <span id="53b9">\[ \] Use the overflow property on the floated element or the “clearfix hack” on either the floated or parent element.</span>
--   <span id="0f0b">\[ \] Use the “clearfix hack” on the floated element or the overflow property on the parent element.</span>
--   <span id="3558">\[x\] Use the “clearfix hack” on the parent element or use the overflow property with a value other than “visible.”</span>
+-   <span id="2ea7">\[ \] Use the "clearfix hack" on the floated element and add a float to the parent element.</span>
+-   <span id="53b9">\[ \] Use the overflow property on the floated element or the "clearfix hack" on either the floated or parent element.</span>
+-   <span id="0f0b">\[ \] Use the "clearfix hack" on the floated element or the overflow property on the parent element.</span>
+-   <span id="3558">\[x\] Use the "clearfix hack" on the parent element or use the overflow property with a value other than "visible."</span>
 
 #### Q4. What element(s) do the following selectors match to?
 
@@ -443,7 +443,7 @@ Plus Css Cheat Sheet (82 questions total)
 -   <span id="0eb4">\[x\] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.</span>
 -   <span id="e353">\[ \] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.</span>
 
-#### Q35. When using flexbox, the “justify-content” property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
+#### Q35. When using flexbox, the "justify-content" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
 
 -   <span id="cd2a">\[x\] justify-content: space-around;</span>
 -   <span id="bd21">\[ \] justify-content: center;</span>
@@ -843,10 +843,10 @@ Plus Css Cheat Sheet (82 questions total)
 
 #### Q72. A universal selector is specified using a(n) \_.
 
--   <span id="052b">\[ \] “h1” string</span>
--   <span id="34cd">\[ \] “a” character</span>
--   <span id="5064">\[ \] “p” character</span>
--   <span id="7a51">\[x\] “\*” character</span>
+-   <span id="052b">\[ \] "h1" string</span>
+-   <span id="34cd">\[ \] "a" character</span>
+-   <span id="5064">\[ \] "p" character</span>
+-   <span id="7a51">\[x\] "\*" character</span>
 
 #### Q73. In the following CSS code, `'h1'` is the \_, while `'color'` is the \_.
 
@@ -856,7 +856,7 @@ Plus Css Cheat Sheet (82 questions total)
 
 -   <span id="ecb8">\[ \] property; declaration</span>
 -   <span id="4ebb">\[ \] declaration; rule</span>
--   <span id="cbea">\[ \] “p” character</span>
+-   <span id="cbea">\[ \] "p" character</span>
 -   <span id="d058">\[x\] selector; property</span>
 
 #### Q74. What is an alternate way to define the following CSS rule?

@@ -69,7 +69,6 @@ The following example shows how to create a relative time formatter returning fo
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-
 <span class="small">#relativetimeformat-objects</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

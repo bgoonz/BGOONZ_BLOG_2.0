@@ -1,4 +1,9 @@
 (function (opts_) {
+    /*
+
+    Copyright The Closure Library Authors.
+    SPDX-License-Identifier: Apache-2.0
+   */
     var g = this || self,
         k = function (a, b) {
             function d() {}
@@ -263,9 +268,9 @@
     },
     protocol: 'https',
     rawCss: '.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}',
-    cse_token: 'AJvRUv3GTiRYA5ZloKwmPlK0FTkv:1639939135728',
+    cse_token: 'AJvRUv0-sBpklfS8nj5FY16GCTPF:1638319172452',
     isHostedPage: false,
     exp: ['csqr', 'cc'],
-    cselibVersion: 'ff97a008b4153450',
-    usqp: 'CAM\u003d'
+    cselibVersion: '54e62135847a1703',
+    usqp: 'CAI\u003d'
 });

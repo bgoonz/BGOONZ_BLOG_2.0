@@ -23,18 +23,18 @@ A all encompassing list of tools and resources for web developers
 
 ### 📦 Finding and vetting npm packages
 
--   <span id="9bc6"><a href="https://www.pikapkg.com/" class="markup--anchor markup--li-anchor">pika</a>: A searchable catalog of modern “module” packages on npm</span>
+-   <span id="9bc6"><a href="https://www.pikapkg.com/" class="markup--anchor markup--li-anchor">pika</a>: A searchable catalog of modern "module" packages on npm</span>
 -   <span id="10f9"><a href="https://npms.io/" class="markup--anchor markup--li-anchor">npms</a>: A better and open source search for node packages</span>
 -   <span id="ecb9"><a href="https://github.com/maticzav/emma-cli" class="markup--anchor markup--li-anchor">emma</a>: 📦 Terminal assistant to find and install node packages</span>
 -   <span id="e1df"><a href="https://github.com/harksys/npmvet" class="markup--anchor markup--li-anchor">npmvet</a>: A simple CLI tool for vetting npm package versions</span>
--   <span id="e831"><a href="https://bundlephobia.com/" class="markup--anchor markup--li-anchor">Bundlephobia</a>: See the “cost” of any npm package</span>
+-   <span id="e831"><a href="https://bundlephobia.com/" class="markup--anchor markup--li-anchor">Bundlephobia</a>: See the "cost" of any npm package</span>
 -   <span id="28aa"><a href="https://snyk.io" class="markup--anchor markup--li-anchor">Snyk</a>: Find any security vulnerabilities for any npm package. Search their database here: `https://snyk.io/vuln/npm:{package}` e.g. <a href="https://snyk.io/vuln/npm:react" class="markup--anchor markup--li-anchor">https://snyk.io/vuln/npm:react</a></span>
 -   <span id="b4da"><a href="https://runpkg.com/" class="markup--anchor markup--li-anchor">runpkg</a>: Explore, learn about and perform static analysis on npm packages in the browser</span>
 
 ### 🎨 CSS
 
--   <span id="dd16"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="markup--anchor markup--li-anchor">CSS Tricks “Complete Guide to Flexbox”</a></span>
--   <span id="2333"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="markup--anchor markup--li-anchor">CSS Tricks “Complete Guide to Grid”</a></span>
+-   <span id="dd16"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="markup--anchor markup--li-anchor">CSS Tricks "Complete Guide to Flexbox"</a></span>
+-   <span id="2333"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="markup--anchor markup--li-anchor">CSS Tricks "Complete Guide to Grid"</a></span>
 -   <span id="dba6"><a href="http://cubic-bezier.com/#.17,.67,.83,.67" class="markup--anchor markup--li-anchor">Cubic bezier curve creator</a></span>
 -   <span id="b920"><a href="http://matthewlein.com/ceaser/" class="markup--anchor markup--li-anchor">Ceaser</a>: Cubic bezier curve generator</span>
 -   <span id="7f1c"><a href="https://csstriggers.com/" class="markup--anchor markup--li-anchor">CSS Triggers</a>: find out what CSS properties trigger Paint/Layout/Composite renders</span>
@@ -146,7 +146,7 @@ A all encompassing list of tools and resources for web developers
 -   <span id="6310"><a href="https://github.com/jshttp/http-errors" class="markup--anchor markup--li-anchor">http-errors</a>: Create HTTP Errors</span>
 -   <span id="73b9"><a href="https://github.com/hapijs/boom" class="markup--anchor markup--li-anchor">boom</a>: HTTP-friendly error objects</span>
 -   <span id="560b"><a href="https://github.com/denoland/deno" class="markup--anchor markup--li-anchor">deno</a>: A secure JavaScript and TypeScript runtime</span>
--   <span id="32e7"><a href="https://github.com/micromatch/nanomatch" class="markup--anchor markup--li-anchor">nanomatch</a>: Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but without support for extended globs (extglobs), posix brackets or braces, and with complete Bash 4.3 wildcard support: (“\*”, “\*\*”, and “?”)</span>
+-   <span id="32e7"><a href="https://github.com/micromatch/nanomatch" class="markup--anchor markup--li-anchor">nanomatch</a>: Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but without support for extended globs (extglobs), posix brackets or braces, and with complete Bash 4.3 wildcard support: ("\*", "\*\*", and "?")</span>
 -   <span id="9286"><a href="https://github.com/sindresorhus/yn" class="markup--anchor markup--li-anchor">yn</a>: Parse yes/no like values</span>
 -   <span id="1238"><a href="https://github.com/AvianFlu/ncp" class="markup--anchor markup--li-anchor">ncp</a>: Asynchronous recursive file copying with Node.js</span>
 
@@ -572,31 +572,27 @@ Accessibility is an extremely important part of any web project. While the SOW, 
 
 ### If you found this guide helpful feel free to checkout my other articles:
 
-<strong>A list of all of my articles to link to future posts</strong> 
+<strong>A list of all of my articles to link to future posts</strong>
 <br/>
-
 
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
 ### OR GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

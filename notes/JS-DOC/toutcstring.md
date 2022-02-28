@@ -32,7 +32,6 @@ Prior to ECMAScript 2018, the format of the return value varied according to the
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toutcstring">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-date.prototype.toutcstring</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

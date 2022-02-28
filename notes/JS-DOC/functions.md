@@ -464,7 +464,6 @@ Note that in the `if` test, a reference to `noFunc` is used—there are no brack
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
 
 `Functions`
@@ -720,6 +719,6 @@ No
 -   [`getter`](functions/get)
 -   [`setter`](functions/set)
 -   [`Method definitions`](functions/method_definitions)
--   [Functions and function scope](functions)
+-   Functions and function scope
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a>

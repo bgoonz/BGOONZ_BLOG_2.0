@@ -39,7 +39,6 @@ The following function returns 1 over the square root of 2:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-math.sqrt1_2</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

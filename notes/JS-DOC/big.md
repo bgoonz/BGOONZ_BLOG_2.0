@@ -41,7 +41,6 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-string.prototype.big</span></a></td></tr></tbody></table>
 
 `big`

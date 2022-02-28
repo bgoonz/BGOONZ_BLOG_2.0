@@ -6,9 +6,8 @@ Platforms
 
 ### Awesome List Of Github Repositories
 
-<a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong> 
+<a href="https://github.com/bgoonz/awesome-4-new-developers" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/awesome-4-new-developers"><strong>GitHub - bgoonz/awesome-4-new-developers: Top repos for new developers all in one place</strong>
 <br/>
-
 
 <em>Top repos for new developers all in one place. Contribute to bgoonz/awesome-4-new-developers development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/awesome-4-new-developers" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -119,7 +118,7 @@ Platforms
 -   <span id="5e50"><a href="https://github.com/hachiojipm/awesome-perl#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hachiojipm/awesome-perl#readme">Perl</a></span>
 -   <span id="20ef"><a href="https://github.com/kdabir/awesome-groovy#readme" class="markup--anchor markup--li-anchor" title="https://github.com/kdabir/awesome-groovy#readme">Groovy</a></span>
 -   <span id="75c5"><a href="https://github.com/yissachar/awesome-dart#readme" class="markup--anchor markup--li-anchor" title="https://github.com/yissachar/awesome-dart#readme">Dart</a></span>
--   <span id="327e"><a href="https://github.com/akullpp/awesome-java#readme" class="markup--anchor markup--li-anchor" title="https://github.com/akullpp/awesome-java#readme">Java</a> — Popular secure object-oriented language designed for flexibility to “write once, run anywhere”.</span>
+-   <span id="327e"><a href="https://github.com/akullpp/awesome-java#readme" class="markup--anchor markup--li-anchor" title="https://github.com/akullpp/awesome-java#readme">Java</a> — Popular secure object-oriented language designed for flexibility to "write once, run anywhere".</span>
 -   <span id="aa9a"><a href="https://github.com/eleventigers/awesome-rxjava#readme" class="markup--anchor markup--li-anchor" title="https://github.com/eleventigers/awesome-rxjava#readme">RxJava</a></span>
 -   <span id="44f2"><a href="https://github.com/KotlinBy/awesome-kotlin#readme" class="markup--anchor markup--li-anchor" title="https://github.com/KotlinBy/awesome-kotlin#readme">Kotlin</a></span>
 -   <span id="b8b9"><a href="https://github.com/ocaml-community/awesome-ocaml#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ocaml-community/awesome-ocaml#readme">OCaml</a></span>
@@ -599,7 +598,7 @@ Platforms
 -   <span id="691a"><a href="https://github.com/gamontal/awesome-katas#readme" class="markup--anchor markup--li-anchor" title="https://github.com/gamontal/awesome-katas#readme">Katas</a></span>
 -   <span id="bdb1"><a href="https://github.com/drewrwilson/toolsforactivism#readme" class="markup--anchor markup--li-anchor" title="https://github.com/drewrwilson/toolsforactivism#readme">Tools for Activism</a></span>
 -   <span id="64c1"><a href="https://github.com/dylanrees/citizen-science#readme" class="markup--anchor markup--li-anchor" title="https://github.com/dylanrees/citizen-science#readme">Citizen Science</a> — For community-based and non-institutional scientists.</span>
--   <span id="1746"><a href="https://github.com/hobbyquaker/awesome-mqtt#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hobbyquaker/awesome-mqtt#readme">MQTT</a> — “Internet of Things” connectivity protocol.</span>
+-   <span id="1746"><a href="https://github.com/hobbyquaker/awesome-mqtt#readme" class="markup--anchor markup--li-anchor" title="https://github.com/hobbyquaker/awesome-mqtt#readme">MQTT</a> — "Internet of Things" connectivity protocol.</span>
 -   <span id="c7b3"><a href="https://github.com/daviddias/awesome-hacking-locations#readme" class="markup--anchor markup--li-anchor" title="https://github.com/daviddias/awesome-hacking-locations#readme">Hacking Spots</a></span>
 -   <span id="dd14"><a href="https://github.com/cristianoliveira/awesome4girls#readme" class="markup--anchor markup--li-anchor" title="https://github.com/cristianoliveira/awesome4girls#readme">For Girls</a></span>
 -   <span id="d88f"><a href="https://github.com/vorpaljs/awesome-vorpal#readme" class="markup--anchor markup--li-anchor" title="https://github.com/vorpaljs/awesome-vorpal#readme">Vorpal</a> — Node.js CLI framework.</span>

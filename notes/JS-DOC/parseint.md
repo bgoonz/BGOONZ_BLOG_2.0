@@ -176,7 +176,6 @@ The radix is coerced to a `Number`:
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-parseint-string-radix</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

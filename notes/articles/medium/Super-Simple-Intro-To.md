@@ -8,7 +8,7 @@ What is HTML, CSS & JS and why do we need all three?
 
 #### What is HTML, CSS & JS and why do we need all three?
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" /></figure>HTML stands for “Hypertext Markup Language”. Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for “Cascading Style Sheets” which means it's the “Style” it's how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*KxF-AuqgX7UklUa4.png" class="graf-image" /></figure>HTML stands for "Hypertext Markup Language". Basically, HTML is the structure for the website, words, bullet points, data tables, etc. CSS stands for "Cascading Style Sheets" which means it's the "Style" it's how to make your website look professional, and look visually appealing. JS is how to make your website actually \*\*work\*\*.
 
 For example, if you created something like YouTube and one of the options you can watch videos, you used HTML for the title, you used CSS for the color/s, and you have to make it actually work! So when you click on it it will run the video. This is an example of the three programming languages working in unison to form an experience you're already familiar with if you're reading this…
 
@@ -130,11 +130,11 @@ Many inline tags are used to format text. For example, a **&lt;strong&gt;&lt;/st
 
 Hyperlinks are also inline elements that require **_&lt;a&gt;&lt;/a&gt;_** tags and **href** attributes to indicate the link's destination:
 
-1.  <span id="f67d">**&lt;a** **href=**”https://example.com/"**&gt;**Click me!**&lt;/a&gt;**</span>
+1.  <span id="f67d">**&lt;a** **href=**"https://example.com/"**&gt;**Click me!**&lt;/a&gt;**</span>
 
 Images are inline elements too. You can add one using **_&lt;img&gt;_** without any closing tag. But you will also need to use the **_src_** attribute to specify the image path, for example:
 
-1.  <span id="3924">**&lt;img** **src=**”/images/example.jpg” **alt=**”Example image”**&gt;**</span>
+1.  <span id="3924">**&lt;img** **src=**"/images/example.jpg" **alt=**"Example image"**&gt;**</span>
 
 #### **BODY**: This contains everything you want to display on the Web Page.
 
@@ -214,23 +214,20 @@ that super small text at the bottom is actually one giant button:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

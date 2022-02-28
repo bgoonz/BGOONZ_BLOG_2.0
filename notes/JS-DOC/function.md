@@ -194,7 +194,6 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
 
 `function*`

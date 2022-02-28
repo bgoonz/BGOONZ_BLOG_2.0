@@ -250,7 +250,6 @@ Property definitions that do not use "colon" notation are not prototype mutation
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Object Initializer' in that specification.</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

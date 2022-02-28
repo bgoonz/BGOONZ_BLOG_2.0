@@ -22,7 +22,7 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 -   <span id="c6dc"><a href="https://github.com/trekhleb/javascript-algorithms" class="markup--anchor markup--li-anchor">JavaScript Algorithms</a> — Algorithms and data structures implemented in JavaScript with explanations and links to further readings.</span>
 -   <span id="b6b7"><a href="http://es6-features.org/" class="markup--anchor markup--li-anchor">EC6 Features</a></span>
 -   <span id="a5e3"><a href="https://github.com/ryanmcdermott/clean-code-javascript" class="markup--anchor markup--li-anchor">Clean Code concepts adapted for JavaScript</a></span>
--   <span id="29b5"><a href="https://news.ycombinator.com/item?id=17324538" class="markup--anchor markup--li-anchor">Ask HN: “Expert Level” JavaScript questions?</a></span>
+-   <span id="29b5"><a href="https://news.ycombinator.com/item?id=17324538" class="markup--anchor markup--li-anchor">Ask HN: "Expert Level" JavaScript questions?</a></span>
 -   <span id="a0ae"><a href="https://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical/16872315#16872315" class="markup--anchor markup--li-anchor">Benefits of prototypal inheritance over classical?</a></span>
 -   <span id="f8c3"><a href="https://github.com/nathan/pax" class="markup--anchor markup--li-anchor">Pax</a> — Fastest JavaScript bundler in the galaxy.</span>
 -   <span id="e63e"><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" class="markup--anchor markup--li-anchor">Philip Roberts: What the heck is the event loop anyway? (2014)</a></span>
@@ -267,23 +267,20 @@ Everyone's seen the 'Awesome' lists on GitHub… and they are indeed awesome… 
 
 If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Or checkout my personal resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

@@ -32,7 +32,7 @@ Inspiration:
 
 #### <a href="https://www.youtube.com/channel/UCu44AnfqsP-sRxmZHdnhblw" class="markup--anchor markup--h4-anchor">Dave Xiang</a>
 
-> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, “Software Developer Life.”
+> Hello! My name is David Xiang. I am a software developer based in New York City. I am a self-proclaimed micro-influencer, focused on helping software developers understand their industry better. To see what I look like and get a feel for my content, please check out some of my YouTube videos. Besides coding, I also enjoy writing and am lucky enough to have some generous tech friends who have shared their experiences with me. I've published their stories — and some of my own — in my book, "Software Developer Life."
 
 #### Google TechTalks
 

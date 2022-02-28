@@ -21,7 +21,7 @@ Throws an [`URIError`](urierror) ("malformed URI sequence") exception when `enco
 
 ## Description
 
-Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character “`#`” is not decoded from escape sequences.
+Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character "`#`” is not decoded from escape sequences.
 
 ## Examples
 
@@ -44,7 +44,6 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript) 
 <br/>
-
 
 <span class="small">#sec-decodeuri-encodeduri</span></a></td></tr></tbody></table>
 

@@ -218,7 +218,7 @@ let key = 'length'; localStorage[key] = 5; // Error, can't assign length</pre
                             </ol>
                             <h3 name="8a4c" id="8a4c" class="graf graf--h3 graf-after--li">Looping over keys</h3>
                             <p name="0479" id="0479" class="graf graf--p graf-after--h3">
-                                As we've seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+                                As we've seen, the methods provide "get/set/remove by key" functionality. But how to get all saved values or keys?
                             </p>
                             <p name="fae3" id="fae3" class="graf graf--p graf-after--p">Unfortunately, storage objects are not iterable.</p>
                             <p name="4f5e" id="4f5e" class="graf graf--p graf-after--p">One way is to loop over them as over an array:</p>
@@ -249,7 +249,7 @@ let key = 'length'; localStorage[key] = 5; // Error, can't assign length</pre
                                 class="graf graf--pre graf-after--p"
                             >for(let key in localStorage) {<br>  if (!localStorage.hasOwnProperty(key)) {<br>    continue; // skip keys like &quot;setItem&quot;, &quot;getItem&quot; etc<br>  }<br>  alert(`${key}: ${localStorage.getItem(key)}`);<br>}</pre>
                             <p name="1e46" id="1e46" class="graf graf--p graf-after--pre">
-                                …Or just get the “own” keys with <code class="markup--code markup--p-code">Object.keys</code> and then loop over them if needed:
+                                …Or just get the "own" keys with <code class="markup--code markup--p-code">Object.keys</code> and then loop over them if needed:
                             </p>
                             <pre
                                 name="3144"

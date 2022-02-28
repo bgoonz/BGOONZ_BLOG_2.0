@@ -18,11 +18,10 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 -   <span id="11a6"><a href="https://expressjs.com/" class="markup--anchor markup--li-anchor">Express</a> As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.</span>
 -   <span id="5808"><a href="https://www.postgresql.org/docs/9.5/static/index.html" class="markup--anchor markup--li-anchor">PostgreSQL</a> This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!</span>
 
-<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong> 
+<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong>
 <br/>
 
-
-<em>If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will</em> 
+<em>If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will</em>
 
 -   <span id="bb49">However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend <a href="https://www.elephantsql.com/" class="markup--anchor markup--li-anchor">ElephantSQL</a>. I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.</span>
 -   <span id="539a"><a href="http://docs.sequelizejs.com/en/latest/" class="markup--anchor markup--li-anchor">Sequelize</a> In addition, we re going to use Sequelize, which is a database <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" class="markup--anchor markup--li-anchor">ORM</a> that will interface with the Postgres database for us.</span>
@@ -217,7 +216,7 @@ FROM friends;
 
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
-— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
+— Notice here we are indicating that we want the "name” field from the "friends” table as well as the "name” field from the "puppies” table. We indicate the table name by table.column  
  — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
 
     SELECT
@@ -440,7 +439,7 @@ pool.end(); // invoking end() will close our connection to the database
 }
 
     // Get the airport name from the command line and store it
-    // in the variable “name”. Pass that value to the
+    // in the variable "name”. Pass that value to the
     // selectAirportsByName function.
     const name = process.argv[2];
     // console.log(name);
@@ -477,29 +476,29 @@ pool.end(); // invoking end() will close our connection to the database
 <!-- -->
 
     {
-    “development”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_development”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "development”: {
+    "username”: "sequelize_recipe_box_app”,
+    "password”: "HfKfK79k”,
+    "database”: "recipe_box_development”,
+    "host”: "127.0.0.1”,
+    "dialect”: "postgres”,
+    "seederStorage”: "sequelize”
     },
-    “test”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_test”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "test”: {
+    "username”: "sequelize_recipe_box_app”,
+    "password”: "HfKfK79k”,
+    "database”: "recipe_box_test”,
+    "host”: "127.0.0.1”,
+    "dialect”: "postgres”,
+    "seederStorage”: "sequelize”
     },
-    “production”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_production”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "production”: {
+    "username”: "sequelize_recipe_box_app”,
+    "password”: "HfKfK79k”,
+    "database”: "recipe_box_production”,
+    "host”: "127.0.0.1”,
+    "dialect”: "postgres”,
+    "seederStorage”: "sequelize”
     }
     }
 
@@ -511,7 +510,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 <!-- -->
 
-    npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”
+    npx sequelize-cli model:generate — name Cat — attributes "firstName:string,specialSkill:string”
 
 -   <span id="bc91">Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.</span>
 -   <span id="4d04">Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: 'Categories' }.</span>
@@ -696,7 +695,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 <!-- -->
 
-    const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.log(JSON.stringify(cats, null, 2));
+    const cats = await Cat.findAll({ where: { firstName: "Markov” } }); console.log(JSON.stringify(cats, null, 2));
 
 **OR in the WHERE clause**
 
@@ -704,7 +703,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 { where: { field: \[value1, value2\] } =&gt; WHERE field IN (value1, value2)
 
-    const cats = await Cat.findAll({ where: { firstName: [“Markov”, “Curie”] } });const cats = await Cat.findAll({
+    const cats = await Cat.findAll({ where: { firstName: ["Markov”, "Curie”] } });const cats = await Cat.findAll({
         where: {
             firstName: "Markov",
             age: 4
@@ -722,7 +721,7 @@ pool.end(); // invoking end() will close our connection to the database
 ### Sequelize Op operator
 
 -   <span id="dd6a">By requiring Op from the sequelize library we can provide more advanced comparison operators</span>
--   <span id="0a01">const { Op } = require(“sequelize”);</span>
+-   <span id="0a01">const { Op } = require("sequelize”);</span>
 -   <span id="8936">Op.ne: Not equal operator</span>
 
 <!-- -->
@@ -779,7 +778,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 -   <span id="4ee4">Just like the where clause, we can pass an order key to specify we want our results ordered</span>
 -   <span id="46a6">The key order points to an array with the fields that we want to order by</span>
 -   <span id="ba7f">By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)</span>
--   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\[“age”, “DESC”\], “firstName”\], }); console.log(JSON.stringify(cats, null, 2));</span>
+-   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\["age”, "DESC”\], "firstName”\], }); console.log(JSON.stringify(cats, null, 2));</span>
 
 <!-- -->
 
@@ -814,7 +813,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 
 <!-- -->
 
-    // finds the oldest cat const cat = await Cat.findOne({ order: [[“age”, “DESC”]], }); console.log(JSON.stringify(cat, null, 2));
+    // finds the oldest cat const cat = await Cat.findOne({ order: [["age”, "DESC”]], }); console.log(JSON.stringify(cat, null, 2));
 
 -   <span id="3bc7">**Querying with Associations**</span>
 
@@ -1260,15 +1259,13 @@ The documentation for building, saving, creating, updating and destroying is lin
 
 #### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -1276,9 +1273,8 @@ Or Checkout my personal Resource Site:
 
 (Under construction… may be broken at any time)
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong> 
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
 <br/>
-
 
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

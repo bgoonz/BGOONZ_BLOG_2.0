@@ -8,9 +8,8 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 #### I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the process that you've already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you'll get where your going in the blink of an eye!
 
-<strong>A list of all of my articles to link to future posts</strong> 
+<strong>A list of all of my articles to link to future posts</strong>
 <br/>
-
 
 <em>You should probably skip this one… seriously it's just for internal use!</em>
 
@@ -317,9 +316,8 @@ _\[Your Name\]_
 
 > Also here is a repo of compiled job search and interviewing resources:
 
-<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong> 
+<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong>
 <br/>
-
 
 <em>Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there's a few…</em>github.com</a><a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -351,17 +349,15 @@ If you put your resume and skills on LinkedIn.com as a software Engineer, and st
 
 Here's my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
-<a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.linkedin.com/in/bryan-guner-046199128/"><strong>Bryan Guner - Web Developer - Freelance | LinkedIn</strong> 
+<a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.linkedin.com/in/bryan-guner-046199128/"><strong>Bryan Guner - Web Developer - Freelance | LinkedIn</strong>
 <br/>
-
 
 <em>View Bryan Guner's profile on LinkedIn, the world's largest professional community. Bryan has 5 jobs listed on their…</em>www.linkedin.com</a><a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
-<a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d"><strong>LinkedIn</strong> 
+<a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d"><strong>LinkedIn</strong>
 <br/>
-
 
 <em>Personal and Contact Information:</em>www.notion.so</a><a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
@@ -375,7 +371,7 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 -   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
 -   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
 -   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
--   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+-   <span id="0f5a">\[ \] I **did not** use pronouns such as: "I," "we," "they, "you," "me," "us"</span>
 -   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
 -   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
 -   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
@@ -388,9 +384,8 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 > _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher's past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
-<a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong> 
+<a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong>
 <br/>
-
 
 <em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -508,9 +503,8 @@ Resources and Study Guides
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

@@ -14,15 +14,13 @@ This installment is going to be the least technically demanding thus far however
 
 #### Here's parts one and two; they're both much more technical in nature than this one!
 
-<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong> 
+<a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer's Technical Interview</strong>
 <br/>
-
 
 <em>Questions….Answers… and links to the missing pieces.</em>medium.com</a><a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443"><strong>Front End Interview Questions Part 2</strong> 
+<a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443"><strong>Front End Interview Questions Part 2</strong>
 <br/>
-
 
 <em>These will focus more on vocabulary and concepts than the application driven approach in my last post!</em>medium.com</a><a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -34,7 +32,7 @@ This installment is going to be the least technically demanding thus far however
 
 > **_⚫_**Tell me about yourself
 
-> **_⚫====&gt;_**“Tell me about yourself” is one of the most common and important interview questions. However, it can be daunting, as it's one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
+> **_⚫====&gt;_**"Tell me about yourself" is one of the most common and important interview questions. However, it can be daunting, as it's one you need to get right. After all, not only is it your first impression on the interviewer, but you also need to be simultaneously professional and authentic when answering it.
 
 > **_⚫_**So how can you give a good answer without oversharing? To help you structure your answer, we'll give you a rough guideline: start with a short introduction, talk about the present, recount the past, and mention your future goals.
 
@@ -88,9 +86,9 @@ _Current Experience_
 
 > **_⚫_**How you ensure all projects will be delivered with acceptable quality
 
-> **_⚫_**At what milestones you believe it's ok to deliver something “less than perfect”
+> **_⚫_**At what milestones you believe it's ok to deliver something "less than perfect"
 
-> **_⚫_**How you decide when to go back and improve the “minimum viable projects” delivered earlier in the project's timeline
+> **_⚫_**How you decide when to go back and improve the "minimum viable projects" delivered earlier in the project's timeline
 
 ### Professional Skills
 
@@ -130,7 +128,7 @@ _Current Experience_
 
 ### Commitment to the company
 
-> **_⚫Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you “Where do you see yourself in 5 years?” then you don't have to stress too much about showing your long-term commitment when answering this question. However, if you haven't had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
+> **_⚫Are you passionate about the company and will you stay committed to this company? If the interviewer already asked you "Where do you see yourself in 5 years?" then you don't have to stress too much about showing your long-term commitment when answering this question. However, if you haven't had the opportunity to show your commitment to the company, the most organic way to show your commitment is to talk about your long term plans in the company. Here are some things you can talk about:_**
 
 > **_⚫_**Projects you want to start
 
@@ -142,7 +140,7 @@ _Current Experience_
 
 ### Why should we hire you?
 
-> **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: “Why should we hire you?” Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you'll be a good hire.
+> **_⚫_**Ultimately, every single question interviewers ask you is related to this overarching question: "Why should we hire you?" Interviewers want to know, as confidently as possible, that you will be a good hire. Therefore, your answer should confirm that you'll be a good hire.
 
 > **_⚫_**Unlike the more specific questions we've outlined above, this question is a generic question that requires a concise but powerful answer. Think about this as your elevator pitch — you should be able to sell yourself to the interview within a matter of minutes.
 
@@ -206,7 +204,7 @@ Professional growth opportunities
 
 > **_⚫_**How to answer salary expectations?
 
-> **_⚫_**“What are you salary expectations?” can be a daunting question. If talking about money wasn't uncomfortable enough already, most job seekers worry that proposing the “wrong number” would cost them the job — or land them a job offer with a disappointing salary. Not great.
+> **_⚫_**"What are you salary expectations?" can be a daunting question. If talking about money wasn't uncomfortable enough already, most job seekers worry that proposing the "wrong number" would cost them the job — or land them a job offer with a disappointing salary. Not great.
 
 ---
 
@@ -242,9 +240,8 @@ Professional growth opportunities
 
 ### Here's the repo that I use to practice my technical chops for interviews:
 
-<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong> 
+<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong>
 <br/>
-
 
 <em>Tech Interview Asymptotic Notation Data Structures Algorithms Algorithm Basics Search Algorithms Sorting Algorithms…</em>github.com</a><a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -358,23 +355,20 @@ Professional growth opportunities
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

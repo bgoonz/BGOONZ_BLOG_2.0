@@ -71,7 +71,6 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span></a></td></tr></tbody></table>
 
 `getOwnPropertyDescriptors`

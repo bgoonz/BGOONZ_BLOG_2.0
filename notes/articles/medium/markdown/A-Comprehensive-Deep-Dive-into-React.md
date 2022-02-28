@@ -10,7 +10,6 @@ An in-depth look into the world of React.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>
 
-
 ### Random Things to Remember
 
 -   <span id="1e39">Using `()` implictly returns components.</span>
@@ -306,7 +305,7 @@ Props in JSX
 
     <MyComponent message="hello world" /> <MyComponent message={'hello world'} /> <MyComponent message="&lt;3" /> <MyComponent message={'❤'} />
 
--   <span id="48df">`Props Default to “True”`</span>
+-   <span id="48df">`Props Default to "True"`</span>
 
 <!-- -->
 
@@ -409,9 +408,9 @@ The Diffing Algorithm
 
 <!-- -->
 
-    <div className=”before” title=”stuff” /> <div className=”after” title=”stuff” />
+    <div className="before" title="stuff" /> <div className="after" title="stuff" />
 
-    <div style={{ color: “red”, fontWeight: “bold” }} /> <div style={{color: 'green', fontWeight: 'bold'}} />
+    <div style={{ color: "red", fontWeight: "bold" }} /> <div style={{color: 'green', fontWeight: 'bold'}} />
 
 -   <span id="0a0c">Component Elements Of The Same Type</span>
 -   <span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span>
@@ -501,7 +500,7 @@ Default Prop Values
 -   <span id="0940">Install React Router with:</span>
 -   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
 -   <span id="f07f">Import `Browser Router` from package.</span>
--   <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
+-   <span id="9e4e">import { BrowserRouter } from "react-router-dom";</span>
 -   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
 -   <span id="adfa">Wrap it around components.</span>
 -   <span id="0276">Creates a `React Context` that passes routing information down to all its descendant components.</span>
@@ -543,9 +542,9 @@ Default Prop Values
 -   <span id="594b">Causes extra work for React.</span>
 -   <span id="5320">Preferred for inline rendering of simple functional components.</span>
 -   <span id="0d3e">Difference between `component` and `render` is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.</span>
--   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path=”/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path=”/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
+-   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path="/hello" component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path="/hello" render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
 -   <span id="a2d3">Also useful if you need to pass in specific props to a component.</span>
--   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: “Andrew” }, 2: { name: “Raymond” }, }; &lt;Route path=”/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
+-   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: "Andrew" }, 2: { name: "Raymond" }, }; &lt;Route path="/users" render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
 
 Route path params
 
@@ -1276,7 +1275,7 @@ Updating State
 
 -   <span id="3fdc">Let's say we want to update our state with a new quote.</span>
 -   <span id="eddc">We can set up event listeners in React similarly to how we did them before.</span>
--   <span id="106c">&lt;button type=”button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
+-   <span id="106c">&lt;button type="button" onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
 -   <span id="a77a">`onClick` is the event listener.</span>
 -   <span id="f406">`{this.changeQuote}` is the event handler method.</span>
 -   <span id="7dca">Our Class Component File should now look like this with the new additions:</span>
@@ -1811,7 +1810,7 @@ Setting up a Consumer
 -   <span id="3c8b">Gives us ability to store information in an organized manner in a web app and quickly retrieve that information from anywhere in the app.</span>
 -   <span id="695d">`Redux`</span>
 -   <span id="00d5">Client Side Data Management</span>
--   <span id="dd41">Controls “Frontend State”</span>
+-   <span id="dd41">Controls "Frontend State"</span>
 -   <span id="d828">NOT Your Database</span>
 -   <span id="855a">NOT Component State</span>
 -   <span id="4c1a">Just used for managing Data</span>
@@ -2461,7 +2460,7 @@ The `<NavLink>` works just like a `<Link>`, but with a little extra functionalit
 
 The `activeClassName` prop of the `NavLink` component allows you to set a CSS class name for styling the `NavLink` when its route is active. By default, the `activeClassName` is already set to `active`. This means that you simply need to add an `.active` class to your CSS file to add active styling to your link. A `NavLink` will be active if its `to` prop path matches the current URL.
 
-Let's change your “Users”, “Hello”, and “Andrew's Profile” links to be different colors and have a larger font size when active.
+Let's change your "Users", "Hello", and "Andrew's Profile" links to be different colors and have a larger font size when active.
 
     <NavLink to="/">App</NavLink>
     <NavLink activeClassName="red" to="/users">Users</NavLink>
@@ -2702,7 +2701,7 @@ In this article, you learned:
 
 ### React Builds
 
-A “build” is the process of converting code into something that can actually execute or run on the target platform. A “front-end build” is a process of preparing a front-end or client-side application for the browser.
+A "build" is the process of converting code into something that can actually execute or run on the target platform. A "front-end build" is a process of preparing a front-end or client-side application for the browser.
 
 With React applications, that means (at a minimum) converting JSX to something that browsers can actually understand. When using Create React App, the build process is automatically configured to do that and a lot more.
 
@@ -2777,7 +2776,7 @@ At a high level, here's what happens when you run `npm start`:
 
 ### Ejecting
 
-Create React App provides a script that you can run to “eject” your application from the Create React App tooling. When you eject your application, all of the hidden stuff is exposed so that you can review and customize it.
+Create React App provides a script that you can run to "eject" your application from the Create React App tooling. When you eject your application, all of the hidden stuff is exposed so that you can review and customize it.
 
 > _The need to customize Create React App rarely happens. Also, don't eject an actual project as it's a one-way trip! Once a Create React App project has been ejected, there's no going back (though you could always undo the ejection process by reverting to an earlier commit if you're using source control)._
 
@@ -3060,7 +3059,7 @@ Your `Green`, `Indigo`, `Orange`, `Violet`, and `Yellow` components will look so
 
     export default Color;
 
-Now start your server and verify you can see the “Rainbow Router!” header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
+Now start your server and verify you can see the "Rainbow Router!" header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
 
 ### Phase 1: Routes
 
@@ -3419,7 +3418,7 @@ Now run your application using `npm start`. Open your browser's developer tools 
 
 The JSX in the component's `render` method has been converted to JavaScript but the `ClassComponent` ES2015 class is left alone. This makes sense though as JSX isn't natively supported by any browser while ES2015 classes have been natively supported by browsers for awhile now.
 
-But what if you need to target a version of a browser that doesn't support ES2015 classes? You can use the <a href="https://caniuse.com/#feat=es6-class" class="markup--anchor markup--p-anchor">“Can I use…”</a> website to see when browsers started supporting ES2105 (or ES6) classes. Starting with version 49, Chrome natively supported classes. But imagine that you need to support Chrome going back to version 30, a version of Chrome that doesn't support classes.
+But what if you need to target a version of a browser that doesn't support ES2015 classes? You can use the <a href="https://caniuse.com/#feat=es6-class" class="markup--anchor markup--p-anchor">"Can I use…"</a> website to see when browsers started supporting ES2105 (or ES6) classes. Starting with version 49, Chrome natively supported classes. But imagine that you need to support Chrome going back to version 30, a version of Chrome that doesn't support classes.
 
 Change the `browserslist.development` property in the `package.json` file to this:
 

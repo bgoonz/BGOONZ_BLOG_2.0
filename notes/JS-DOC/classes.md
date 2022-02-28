@@ -4,7 +4,7 @@ Classes are a template for creating objects. They encapsulate data with code to 
 
 ## Defining classes
 
-Classes are in fact "special [functions](functions)", and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
+Classes are in fact "special functions", and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
 
 ### Class declarations
 
@@ -381,7 +381,6 @@ If you're experimenting with code in a web browser, such as the Firefox Web Cons
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
 <br/>
 
-
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
 
 `Classes`
@@ -708,7 +707,7 @@ No
 
 ## See also
 
--   [Functions](functions)
+-   Functions
 -   [class declaration](statements/class)
 -   [class expression](operators/class)
 -   [Public class fields](classes/public_class_fields)

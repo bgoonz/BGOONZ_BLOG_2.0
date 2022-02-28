@@ -99,9 +99,8 @@ To create an `Intl.DisplayNames` for a locale and get the display name for curre
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
-
 
 <span class="small">#intl-displaynames-objects</span></a></td></tr></tbody></table>
 
@@ -237,6 +236,6 @@ No
 
 ## See also
 
--   [`Intl`](../intl)
+- [`Intl`](../intl)
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames</a>
+<a href="<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames>" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames</a>

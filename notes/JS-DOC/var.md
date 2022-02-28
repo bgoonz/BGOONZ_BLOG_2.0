@@ -194,7 +194,6 @@ Variables that appear to be implicit globals may be references to variables in a
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-variable-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-variable-statement</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

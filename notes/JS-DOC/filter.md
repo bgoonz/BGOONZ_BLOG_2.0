@@ -243,7 +243,6 @@ The following examples tests the behavior of the `filter` method when the array 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>
 
 `filter`

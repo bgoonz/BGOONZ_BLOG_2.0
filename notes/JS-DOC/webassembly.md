@@ -73,7 +73,6 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#webassembly-namespace">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#webassembly-namespace</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

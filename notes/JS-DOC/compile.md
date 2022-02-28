@@ -43,7 +43,6 @@ The following example compiles the loaded simple.wasm byte code using the `compi
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-
 <span class="small">#dom-webassembly-compile</span></a></td></tr></tbody></table>
 
 `compile`

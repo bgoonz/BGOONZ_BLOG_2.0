@@ -40,7 +40,6 @@ The following table shows the state of `result` after running this script:
 <table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown"</code></p><p><code>result[2] === "Jumps"</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index. 
 <br/>
 
-
 The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn't contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td><td><p><code>indices[0] === Array [ 4, 25 ]</code></p><p><code>indices[1] === Array [ 10, 15 ]</code></p><p><code>indices[2] === Array [ 20, 25 ]</code></p><p><code>indices.groups === undefined</code></p><p><code>indices.length === 3</code></p></td></tr><tr class="odd"><td><code>input</code></td><td>The original string that was matched against.</td><td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td></tr></tbody></table>
 
 The following table shows the state of `re` after running this script:
@@ -88,7 +87,6 @@ This will log a message containing `'hello world!'`.
 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript) 
 <br/>
-
 
 <span class="small">#sec-regexp.prototype.exec</span></a></td></tr></tbody></table>
 

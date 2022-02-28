@@ -190,7 +190,6 @@ To make an object immutable, recursively freeze each property which is of type o
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-object.freeze</span></a></td></tr></tbody></table>
 
 `freeze`

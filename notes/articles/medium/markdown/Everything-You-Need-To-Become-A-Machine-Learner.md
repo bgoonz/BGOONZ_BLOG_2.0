@@ -14,9 +14,9 @@ Part 1:
 
 <span class="graf-dropCap">M</span>achine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> _The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
+> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"><em>Boris Katz</em></a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
 
-> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as “the field of study that gives computers the ability to learn without explicitly being programmed.”_
+> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BaIm4BXgHJN8EJFI.png" class="graf-image" /></figure>-   <span id="0908">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
 -   <span id="efe1">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
@@ -60,7 +60,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="357c">\[ \] <a href="https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp#" class="markup--anchor markup--li-anchor">Real-world AI Case Studies</a></span>
 -   <span id="616c">\[ \] <a href="https://www.youtube.com/watch?v=ZVJTqAuPvTU&amp;list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib&amp;index=7" class="markup--anchor markup--li-anchor">Andrej Karpathy on AI at Tesla (Full Stack Deep Learning — August 2018)</a></span>
 -   <span id="0ee0">\[ \] <a href="https://youtu.be/8PjTWFfjkeY?list=PL1T8fO7ArWlf4EkqeguoD70LsnOJ7c9Ib" class="markup--anchor markup--li-anchor">Jai Ranganathan at Data Science at Uber (Full Stack Deep Learning — August 2018)</a></span>
--   <span id="3818">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses “Machine Learning in Networking”</a> `0:48:44`</span>
+-   <span id="3818">\[ \] <a href="https://www.youtube.com/watch?v=9XdGZVohnno" class="markup--anchor markup--li-anchor">John Apostolopoulos of Cisco discusses "Machine Learning in Networking"</a> `0:48:44`</span>
 -   <span id="1306">\[ \] <a href="https://www.youtube.com/watch?v=Fw8adDBBfog" class="markup--anchor markup--li-anchor">Joaquin Candela, Director of Applied Machine Learning , Facebook in conversation with Esteban Arcaute</a> `0:52:27`</span>
 -   <span id="4833">\[ \] <a href="https://www.youtube.com/watch?v=z_OGYzT_MBo" class="markup--anchor markup--li-anchor">Eric Colson, Chief Algorithms Officer, Stitch Fix</a> `0:53:57`</span>
 -   <span id="3c8e">\[ \] <a href="https://www.youtube.com/watch?v=p0cQUErM5xs" class="markup--anchor markup--li-anchor">Claudia Perlich, Advisor to Dstillery and Adjunct Professor NYU Stern School of Business</a> `0:51:59`</span>
@@ -217,7 +217,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 <a href="https://www.youtube.com/watch?v=iPmQ5ezQNPY" class="markup--anchor markup--p-anchor">https://www.youtube.com/watch?v=iPmQ5ezQNPY</a>
 
--   <span id="2ca0">**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--li-anchor"><strong>Create A Synthetic Image Dataset — The “What”, The “Why” and The “How”</strong></a></span>
+-   <span id="2ca0">**\[📰\]** <a href="https://towardsdatascience.com/create-a-synthetic-image-dataset-the-what-the-why-and-the-how-f820e6b6f718" class="markup--anchor markup--li-anchor"><strong>Create A Synthetic Image Dataset — The "What", The "Why" and The "How"</strong></a></span>
 -   <span id="08c6">**\[📰\]** <a href="https://towardsdatascience.com/we-need-synthetic-data-e6f90a8532a4" class="markup--anchor markup--li-anchor"><strong>We need Synthetic Data</strong></a></span>
 -   <span id="0a44">**\[📰\]** <a href="https://trishalaneeraj.github.io/2020-07-05/weak-supervision" class="markup--anchor markup--li-anchor"><strong>Weak Supervision for Online Discussions</strong></a></span>
 -   <span id="7f6f">**\[📰\]** <a href="https://towardsdatascience.com/ml-infrastructure-tools-for-data-preparation-70d79e70f8d4" class="markup--anchor markup--li-anchor"><strong>Machine Learning Infrastructure Tools for Data Preparation</strong></a></span>
@@ -308,39 +308,33 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Resources:
 
-<a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65"><strong>Bash Proficiency In Under 15 Minutes</strong> 
+<a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65"><strong>Bash Proficiency In Under 15 Minutes</strong>
 <br/>
-
 
 <em>Cheat sheet and in-depth explanations located below main article contents… The UNIX shell program interprets user…</em><a href="https://bryanguner.medium.com/bash-proficiency-in-under-15-minutes-3ec9d4e2e65" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b"><strong>These Are The Bash Shell Commands That Stand Between Me And Insanity</strong> 
+<a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b"><strong>These Are The Bash Shell Commands That Stand Between Me And Insanity</strong>
 <br/>
-
 
 <em>I will not profess to be a bash shell wizard… but I have managed to scour some pretty helpful little scripts from Stack…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong> 
+<a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a"><strong>Bash Commands That Save Me Time and Frustration</strong>
 <br/>
-
 
 <em>Here's a list of bash commands that stand between me and insanity.</em>medium.com</a><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong> 
+<a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Life Saving Bash Scripts Part 2</strong>
 <br/>
-
 
 <em>I am not saying they're in any way special compared with other bash scripts… but when I consider that you can never…</em>medium.com</a><a href="https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong> 
+<a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb"><strong>What Are Bash Aliases And Why Should You Be Using Them!</strong>
 <br/>
-
 
 <em>A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…</em><a href="https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-d3077114aea7"><strong>BASH CHEAT SHEET</strong> 
+<a href="https://bryanguner.medium.com/bash-d3077114aea7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/bash-d3077114aea7"><strong>BASH CHEAT SHEET</strong>
 <br/>
-
 
 <em>My Bash Cheatsheet Index:</em><a href="https://bryanguner.medium.com/bash-d3077114aea7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

@@ -18,7 +18,7 @@ In the following phases, you will configure your application to work in producti
 
 If you haven't created a Heroku account yet, create one <a href="https://signup.heroku.com/" class="markup--anchor markup--p-anchor">here</a>.
 
-Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the “Resources” tab in your new application, click “Find more add-ons” and add the “Heroku Postgres” add-on with the free Hobby Dev setting.
+Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the "Resources" tab in your new application, click "Find more add-ons" and add the "Heroku Postgres" add-on with the free Hobby Dev setting.
 
 In your terminal, install the <a href="https://devcenter.heroku.com/articles/heroku-command-line" class="markup--anchor markup--p-anchor">Heroku CLI</a>. Afterwards, login to Heroku in your terminal by running the following:
 
@@ -123,7 +123,7 @@ Finally, commit your changes.
 
 ### Phase 3: Deploy to Heroku
 
-Once you're finished setting this up, navigate to your application's Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
+Once you're finished setting this up, navigate to your application's Heroku dashboard. Under "Settings" there is a section for "Config Vars". Click the `Reveal Config Vars` button to see all your production environment variables. You should have a `DATABASE_URL` environment variable already from the Heroku Postgres add-on.
 
 Add environment variables for `JWT_EXPIRES_IN` and `JWT_SECRET` and any other environment variables you need for production.
 
@@ -175,9 +175,8 @@ The logs may clue you into why you are experiencing errors or different behavior
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -189,9 +188,8 @@ The logs may clue you into why you are experiencing errors or different behavior
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

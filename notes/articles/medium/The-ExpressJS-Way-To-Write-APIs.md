@@ -114,9 +114,8 @@ Some of the drawbacks of Express are:
 
 ### Main Features of Express
 
-<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong> 
+<a href="https://expressjs.com/en/guide/writing-middleware.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong>
 <br/>
-
 
 <em>Middleware functions are functions that have access to the request object ( req), the response object ( res), and the…</em>expressjs.com</a><a href="https://expressjs.com/en/guide/writing-middleware.html" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -182,7 +181,7 @@ To stop the server, type `Ctrl + c` at the terminal window.
 
 ### Create an API that can respond to GET requests
 
-The steps necessary to build a simple Web API that returns the string “Hello World” on every incoming `GET` request. The program should return the string every time a request comes into the root route ("/"). For now, you don't need to code along, just read through the steps.
+The steps necessary to build a simple Web API that returns the string "Hello World" on every incoming `GET` request. The program should return the string every time a request comes into the root route ("/"). For now, you don't need to code along, just read through the steps.
 
 To make things easier, we'll use an existing repository as the base for our API. Later in the week, as we learn more about Node.js and Express, we'll create an API from scratch.
 
@@ -228,7 +227,7 @@ Now we're ready to test our API!
 In the terminal, still at the root of our project:
 
 -   <span id="04b6">Type: `npm run server` to run our API. The message _"Api running on port 8000"_ should appear on the terminal.</span>
--   <span id="440e">Open a web browser and navigate to “<a href="http://localhost:8000" class="markup--anchor markup--li-anchor">http://localhost:8000</a>".</span>
+-   <span id="440e">Open a web browser and navigate to "<a href="http://localhost:8000" class="markup--anchor markup--li-anchor">http://localhost:8000</a>".</span>
 
 There we have it, our first API!
 
@@ -554,23 +553,20 @@ Concentrate on the code related to reading the `id` from the `req.params` object
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong> 
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
-
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -627,7 +623,7 @@ To ensure you handle all exceptions, use the following techniques:
 -   <span id="4365"><a href="#use-try-catch" class="markup--anchor markup--li-anchor" title="#use-try-catch">Use try-catch</a></span>
 -   <span id="25cc"><a href="#use-promises" class="markup--anchor markup--li-anchor" title="#use-promises">Use promises</a></span>
 
-Before diving into these topics, you should have a basic understanding of Node/Express error handling: using error-first callbacks, and propagating errors in middleware. Node uses an “error-first callback” convention for returning errors from asynchronous functions, where the first parameter to the callback function is the error object, followed by result data in succeeding parameters. To indicate no error, pass null as the first parameter. The callback function must correspondingly follow the error-first callback convention to meaningfully handle the error. And in Express, the best practice is to use the next() function to propagate errors through the middleware chain.
+Before diving into these topics, you should have a basic understanding of Node/Express error handling: using error-first callbacks, and propagating errors in middleware. Node uses an "error-first callback" convention for returning errors from asynchronous functions, where the first parameter to the callback function is the error object, followed by result data in succeeding parameters. To indicate no error, pass null as the first parameter. The callback function must correspondingly follow the error-first callback convention to meaningfully handle the error. And in Express, the best practice is to use the next() function to propagate errors through the middleware chain.
 
 For more on the fundamentals of error handling, see:
 
@@ -648,7 +644,7 @@ Try-catch is a JavaScript language construct that you can use to catch exception
 
 Use a tool such as <a href="http://jshint.com/" class="markup--anchor markup--p-anchor" title="http://jshint.com/">JSHint</a> or <a href="http://www.jslint.com/" class="markup--anchor markup--p-anchor" title="http://www.jslint.com/">JSLint</a> to help you find implicit exceptions like <a href="http://www.jshint.com/docs/options/#undef" class="markup--anchor markup--p-anchor" title="http://www.jshint.com/docs/options/#undef">reference errors on undefined variables</a>.
 
-Here is an example of using try-catch to handle a potential process-crashing exception. This middleware function accepts a query field parameter named “params” that is a JSON object.
+Here is an example of using try-catch to handle a potential process-crashing exception. This middleware function accepts a query field parameter named "params" that is a JSON object.
 
     app.get('/search', function (req, res) {
       // Simulating async operation
@@ -703,18 +699,18 @@ For more information about error-handling by using promises, see <a href="https:
 
 Here are some things you can do in your system environment to improve your app's performance:
 
--   <span id="4d6b"><a href="#set-node_env-to-production" class="markup--anchor markup--li-anchor" title="#set-node_env-to-production">Set NODE_ENV to “production”</a></span>
+-   <span id="4d6b"><a href="#set-node_env-to-production" class="markup--anchor markup--li-anchor" title="#set-node_env-to-production">Set NODE_ENV to "production"</a></span>
 -   <span id="05f1"><a href="#ensure-your-app-automatically-restarts" class="markup--anchor markup--li-anchor" title="#ensure-your-app-automatically-restarts">Ensure your app automatically restarts</a></span>
 -   <span id="c8e0"><a href="#run-your-app-in-a-cluster" class="markup--anchor markup--li-anchor" title="#run-your-app-in-a-cluster">Run your app in a cluster</a></span>
 -   <span id="f4af"><a href="#cache-request-results" class="markup--anchor markup--li-anchor" title="#cache-request-results">Cache request results</a></span>
 -   <span id="4d4a"><a href="#use-a-load-balancer" class="markup--anchor markup--li-anchor" title="#use-a-load-balancer">Use a load balancer</a></span>
 -   <span id="121c"><a href="#use-a-reverse-proxy" class="markup--anchor markup--li-anchor" title="#use-a-reverse-proxy">Use a reverse proxy</a></span>
 
-### Set NODE_ENV to “production”
+### Set NODE_ENV to "production"
 
-The NODE_ENV environment variable specifies the environment in which an application is running (usually, development or production). One of the simplest things you can do to improve performance is to set NODE_ENV to “production.”
+The NODE_ENV environment variable specifies the environment in which an application is running (usually, development or production). One of the simplest things you can do to improve performance is to set NODE_ENV to "production."
 
-Setting NODE_ENV to “production” makes Express:
+Setting NODE_ENV to "production" makes Express:
 
 -   <span id="3499">Cache view templates.</span>
 -   <span id="83b7">Cache CSS files generated from CSS extensions.</span>
@@ -751,7 +747,7 @@ Node applications crash if they encounter an uncaught exception. The foremost th
 
 #### Use a process manager
 
-In development, you started your app simply from the command line with `node server.js` or something similar. But doing this in production is a recipe for disaster. If the app crashes, it will be offline until you restart it. To ensure your app restarts if it crashes, use a process manager. A process manager is a “container” for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
+In development, you started your app simply from the command line with `node server.js` or something similar. But doing this in production is a recipe for disaster. If the app crashes, it will be offline until you restart it. To ensure your app restarts if it crashes, use a process manager. A process manager is a "container" for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
 
 In addition to restarting your app when it crashes, a process manager can enable you to:
 

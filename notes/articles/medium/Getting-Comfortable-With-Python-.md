@@ -12,27 +12,23 @@ An introduction by example
 
 ### My other Python articles:
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong> 
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong>
 <br/>
-
 
 <em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong> 
+<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong>
 <br/>
-
 
 <em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong> 
+<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong>
 <br/>
-
 
 <em>Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong> 
+<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong>
 <br/>
-
 
 <em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a><a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -54,7 +50,7 @@ Note: the empty line after calling the print function. The default end value whe
 
 Using print with a string literal:
 
-    >>> print(“WebDevHub School is awesome!”)
+    >>> print("WebDevHub School is awesome!”)
      WebDevHub School is awesome!
      >>>
 
@@ -62,7 +58,7 @@ Note: how calling print with the string literal printed the exact string we pass
 
 Using print with a variable:
 
-    >>> slogan = “i love lamp”
+    >>> slogan = "i love lamp”
      >>> print(slogan)
      i love lamp
      >>>
@@ -71,9 +67,9 @@ Note: how calling print with the slogan variable prints the value assigned to th
 
 Using print with an expression:
 
-    >>> superlative = “wonderful”
-     >>> school = “WebDevHub School”
-     >>> print(school + “ is “ + superlative)
+    >>> superlative = "wonderful”
+     >>> school = "WebDevHub School”
+     >>> print(school + " is " + superlative)
      WebDevHub School is wonderful
      >>>
 
@@ -87,11 +83,11 @@ Using print with other object types:
      123.456
      >>> print(False)
      False
-     >>> print([“WebDevHub”, “School”, 2, 0, 2, 0])
+     >>> print(["WebDevHub”, "School”, 2, 0, 2, 0])
      ['WebDevHub', 'School', 2, 0, 2, 0]
-     >>> print((“WebDevHub”, “School”))
+     >>> print(("WebDevHub”, "School”))
      ('WebDevHub', 'School')
-     >>> print({“school”: “WebDevHub School”, “year”: 2021})
+     >>> print({"school”: "WebDevHub School”, "year”: 2021})
      {'school': 'WebDevHub School', 'year': 2021}
      >>>
 
@@ -105,23 +101,23 @@ Now, let's look at how we can pass multiple arguments into the print function. U
 
 We can pass multiple objects, all of the same or different types, into print.
 
-    >>> print(“WebDevHub School”, 2021, True)
+    >>> print("WebDevHub School”, 2021, True)
      WebDevHub School 2021 True
      >>>
 
-Note: how each object we passed in was converted to a string and then output to the screen. Note: also that print used “ “ as the default separator value.
+Note: how each object we passed in was converted to a string and then output to the screen. Note: also that print used " " as the default separator value.
 
 We can change the separator value by assigning a value to the keyword argument sep.
 
-    >>> print(“WebDevHub School”, 2021, True, sep=”!!!”)
+    >>> print("WebDevHub School”, 2021, True, sep=”!!!”)
      WebDevHub School!!!2021!!!True
-     >>> print(“WebDevHub School”, 2021, True, sep=”\\t”)
+     >>> print("WebDevHub School”, 2021, True, sep=”\\t”)
      WebDevHub School 2021 True
-     >>> print(“WebDevHub School”, 2021, True, sep=”\\n”)
+     >>> print("WebDevHub School”, 2021, True, sep=”\\n”)
      WebDevHub School
      2021
      True
-     >>> print(“WebDevHub School”, 2021, True, sep=””)
+     >>> print("WebDevHub School”, 2021, True, sep=””)
      WebDevHub School2021True
      >>>
 
@@ -131,7 +127,7 @@ You can also specify the end value by assigning a value to the end keyword argum
 
 Here is how you can change the default end value (which is \\\\n) when calling the print function.
 
-    >>> print(“Are you a WebDevHub School student?”, end=” (Y or N)”)
+    >>> print("Are you a WebDevHub School student?”, end=” (Y or N)”)
      Are you a WebDevHub School student? (Y or N)>>>
 
 Customizing the end value when calling the print function can be useful and necessary in some circumstances.
@@ -156,23 +152,23 @@ Python is unique because indentation instead of some other character marks block
 
 **Whitespace Characters**
 
-Whitespace is any character represented by something that appears empty (usually \\\\t or “ “). The characters that Python considers to be whitespace can be seen by printing out the value of string.whitespace from the string library.
+Whitespace is any character represented by something that appears empty (usually \\\\t or " "). The characters that Python considers to be whitespace can be seen by printing out the value of string.whitespace from the string library.
 
     >>> import string
      >>> string.whitespace
      ' \\t\\n\\r\\x0b\\x0c'
      >>>
 
-Note: the characters are “ “ (space), \\\\t (tab), \\\\n (newline), \\\\r (return), \\\\x0b (unicode line tabulation), and \\\\x0c (unicode form feed).
+Note: the characters are " " (space), \\\\t (tab), \\\\n (newline), \\\\r (return), \\\\x0b (unicode line tabulation), and \\\\x0c (unicode form feed).
 
-You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with “ “, \\\\t, and \\\\n.
+You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with " ", \\\\t, and \\\\n.
 
 **Logical Lines of Code**
 
 Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end (a statement or a definition) is marked by a \\\\n.
 
-    >>> first = “WebDevHub”
-     >>> second = “School”
+    >>> first = "WebDevHub”
+     >>> second = "School”
      >>> first + second
      'WebDevHubSchool'
      >>> first \\
@@ -191,7 +187,7 @@ Whitespace (indentation) can denote code blocks. Python gives meaning to the amo
 
     >>> if True:
      … if True:
-     File “<stdin>”, line 2
+     File "<stdin>”, line 2
      if True:
      ^
      IndentationError: expected an indented block

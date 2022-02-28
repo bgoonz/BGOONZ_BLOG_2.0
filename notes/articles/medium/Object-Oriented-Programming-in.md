@@ -57,11 +57,11 @@ Object-Oriented Programming
 
 #### `The Interface Segregation Principle`
 
--   <span id="6af3">Method names should be grouped together into granular collections called “interfaces”</span>
+-   <span id="6af3">Method names should be grouped together into granular collections called "interfaces"</span>
 
 #### `The Law Of Demeter`
 
--   <span id="e90d">Don't use more than one dot (not counting the one after “this”).</span>
+-   <span id="e90d">Don't use more than one dot (not counting the one after "this").</span>
 -   <span id="6cbd">A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables</span>
 
 #### `The Liskov Substitution Principle`
@@ -93,7 +93,7 @@ Defining a constructor function _Example of an object using object initializatio
       author: "J.R.R. Tolkien",
     };
 
--   <span id="9071">The above literal is a “Book” object type.</span>
+-   <span id="9071">The above literal is a "Book" object type.</span>
 -   <span id="a5d6">`Object Type` is defined by it's attributes and behaviors.</span>
 
 > `Behaviors` **are represented by methods.**
@@ -450,9 +450,9 @@ Introducing Node.js modules
 
 #### Syntax for importing modules:
 
-    const classes = require(“./classes”);
+    const classes = require("./classes");
 
-    const { Book, Movie } = require(“./classes”);
+    const { Book, Movie } = require("./classes");
 
 #### Using Single Item Modules
 
@@ -588,7 +588,7 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 -   <span id="450f">A class is open for extension and closed for modification.</span>
 -   <span id="d4c9">Creating new functionality can happen in child classes, and not the original class.</span>
 -   <span id="9cb7">`Interface Segregation Principle`</span>
--   <span id="37db">Method names should be grouped together into granular collections called “interfaces”.</span>
+-   <span id="37db">Method names should be grouped together into granular collections called "interfaces".</span>
 -   <span id="7861">`Dependency Inversion Principle`</span>
 -   <span id="40a9">Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance.</span>
 
@@ -622,23 +622,20 @@ _Subtype Requirement: Let ϕ(x) be a property provable about objects x of type T
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong> 
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong>
 <br/>
-
 
 <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Or Checkout my personal Resource Site:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong> 
+<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/"><strong>Web-Dev-Resource-Hub</strong>
 <br/>
-
 
 <em>Edit description</em>web-dev-resource-hub.netlify.app</a><a href="https://web-dev-resource-hub.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 

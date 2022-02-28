@@ -53,7 +53,6 @@ The shift() method is often used in condition inside while loop. In the followin
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-array.prototype.shift</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

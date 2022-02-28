@@ -69,7 +69,6 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-object.prototype.isprototypeof</span></a></td></tr></tbody></table>
 
 `isPrototypeOf`

@@ -11,16 +11,12 @@ export default class Header extends React.Component {
             <header id="masthead" className="site-header outer">
                 {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
 
-                 
-<br/>
-
-
+                <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
                             {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
                                 <p className="site-logo">
-                                    <div id="search" />
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         <img
                                             src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}
@@ -38,7 +34,6 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-           
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">

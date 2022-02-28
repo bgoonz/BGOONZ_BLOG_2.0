@@ -5,8 +5,8 @@ date: '2021-10-14'
 thumb_image_alt: lorem-ipsum
 excerpt: wubalubadubdub
 seo:
-    title: ''
-    description: ''
+    title: 'Functions in Python'
+    description: 'Functions in Python'
     robots: []
     extra: []
 template: post

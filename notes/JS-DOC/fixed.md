@@ -32,7 +32,6 @@ The following example uses the `fixed` method to change the formatting of a stri
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-string.prototype.fixed</span></a></td></tr></tbody></table>
 
 `fixed`

@@ -34,7 +34,7 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 ### What is React?
 
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called "components”.
 
 React has a few different kinds of components, but we'll start with `React.Component` subclasses:
 
@@ -57,9 +57,9 @@ React has a few different kinds of components, but we'll start with `React.Compo
 
 We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
 
-Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for “properties”), and returns a hierarchy of views to display via the `render` method.
+Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for "properties”), and returns a hierarchy of views to display via the `render` method.
 
-The `render` method returns a _description_ of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
+The `render` method returns a _description_ of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX” which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
 
     return React.createElement('div', {className: 'shopping-list'},
       React.createElement('h1', /* ... h1 children ... */),
@@ -146,19 +146,20 @@ The code editor has a JSX element similar to what you created in the last challe
 
 > _In HTML, almost all tags have both an opening and closing tag:_ `<div></div>;` _the closing tag always has a forward slash before the tag name that you are closing._
 
-> _there are special instances in HTML called “self-closing tags”, or tags that don't require both an opening and closing tag before another tag can start._
+> _there are special instances in HTML called "self-closing tags”, or tags that don't require both an opening and closing tag before another tag can start._
 
-> _For example the line-break tag can be written as_ `<br>` _or as_ ` 
-<br/>
+> _For example the line-break tag can be written as_ `<br>` _or as_ `
+> <br/>
 
-,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
+,`_but should never be written as_`<br></br>`_, since it doesn't contain any content._
 
 > _In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.  
-> The line-break tag, for example, must always be written as_ ` 
-<br/>
+> The line-break tag, for example, must always be written as_ `
+> <br/>
 
-` _in order to be valid JSX that can be transpiled.  
-> A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
+` \_in order to be valid JSX that can be transpiled.
+
+> A* `<div>`*, on the other hand, can be written as* `<div />`\_or*`<div></div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
 ### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
@@ -175,9 +176,9 @@ The code editor has a JSX element similar to what you created in the last challe
 
     const JSX = (
       <div>
-        <h2>Welcome to React!</h2>  
-<br/>
+        <h2>Welcome to React!</h2>
 
+<br/>
 
         <p>Be sure to close all tags!</p>
         <hr />
@@ -381,9 +382,8 @@ Note: The text is considered a child of the div element, so you will not be able
 
 For more content follow me on GitHub:
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong> 
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
 <br/>
-
 
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

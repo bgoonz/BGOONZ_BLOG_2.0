@@ -299,7 +299,6 @@ This change should be backwards-compatible as long as you pass the result of `JS
 <table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json.stringify">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-
 <span class="small">#sec-json.stringify</span></a></td></tr></tbody></table>
 
 ## Browser compatibility

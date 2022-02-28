@@ -2,27 +2,13 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
 export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div id="search"></div>
                 <div>
                     <center>
-                         
-<br/>
-
-
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-                        <div id="search"> {Script} </div>
-                         
-<br/>
-
-
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
@@ -82,7 +68,6 @@ export default class Footer extends React.Component {
                                                 </tbody>
                                             </table>
                                         </center>
-
                                         <form
                                             style={{
                                                 margin: '0px',
@@ -133,26 +118,34 @@ export default class Footer extends React.Component {
                                             by
                                             <span style={{ color: 'transparent' }}>freefind</span>
                                         </a>
-                                        {
+                                        {/* {
                                             <iframe
                                                 src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
                                                 frameborder="0"
                                                 id="social-embed"
                                                 width="100%!important"
                                             ></iframe>
-                                        }
+                                        } */}
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a
+                            className="save2PDF"
+                            href="//pdfcrowd.com/url_to_pdf/?"
+                            onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"
+                        >
                             Save to PDF
                         </a>
                     </center>
+                    <a aria-current="page" className="site-logo" href="/">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png"
+                            alt="webdevhub logo"
+                        />
+                    </a>
                 </div>
-
                 <div className="inner">
-                    <div id="search" className="inner"></div>
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
@@ -171,7 +164,6 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                <div id="search"></div>
             </footer>
         );
     }

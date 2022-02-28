@@ -16,9 +16,8 @@
 -   <span id="bc9b">Click on each snippet card to view the whole snippet, including code, explanation and examples.</span>
 -   <span id="9c80">You can use the button on the right side of a snippet card to copy the code to clipboard.</span>
 
-<a href="https://github.com/30-seconds/30-seconds-of-code" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/30-seconds/30-seconds-of-code"><strong>30-seconds/30-seconds-of-code</strong> 
+<a href="https://github.com/30-seconds/30-seconds-of-code" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/30-seconds/30-seconds-of-code"><strong>30-seconds/30-seconds-of-code</strong>
 <br/>
-
 
 <em>Short JavaScript code snippets for all your development needs Visit our website to view our snippet collection. Use the…</em>github.com</a><a href="https://github.com/30-seconds/30-seconds-of-code" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -34,9 +33,8 @@ Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a
 
 You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at <a href="http://railsgirls.com/" class="markup--anchor markup--p-anchor">http://railsgirls.com</a>
 
-<a href="https://github.com/railsgirls/railsgirls.github.io" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsgirls/railsgirls.github.io"><strong>railsgirls/railsgirls.github.io</strong> 
+<a href="https://github.com/railsgirls/railsgirls.github.io" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsgirls/railsgirls.github.io"><strong>railsgirls/railsgirls.github.io</strong>
 <br/>
-
 
 <em>The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by…</em>github.com</a><a href="https://github.com/railsgirls/railsgirls.github.io" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -48,13 +46,12 @@ You can use our materials and instructions to roll out your own workshop in your
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*jHzkV4R9dWh08WfI" class="graf-image" /></figure>### Overview
 
-This is a Sinatra app, deployed at <a href="http://docs.railsbridge.org/" class="markup--anchor markup--p-anchor">http://docs.railsbridge.org</a>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop “Suggestotron” curriculum.
+This is a Sinatra app, deployed at <a href="http://docs.railsbridge.org/" class="markup--anchor markup--p-anchor">http://docs.railsbridge.org</a>. The RailsBridge documentation project is home to a few subprojects, including the RailsBridge installfest instructions, which leads students through the various complicated setup instructions for getting Ruby, Rails, Git, etc. installed on their computer (whatever combination of computer, OS, and version they happened to bring to the workshop!), as well as the RailsBridge workshop "Suggestotron” curriculum.
 
-Each subproject (a “site”) comprises files stored under the “sites” directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The “en” means “English” — see “Locales” below.)
+Each subproject (a "site”) comprises files stored under the "sites” directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The "en” means "English” — see "Locales” below.)
 
-<a href="https://github.com/railsbridge/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsbridge/docs"><strong>railsbridge/docs</strong> 
+<a href="https://github.com/railsbridge/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/railsbridge/docs"><strong>railsbridge/docs</strong>
 <br/>
-
 
 <em>This is a Sinatra app, deployed at http://docs.railsbridge.org. The RailsBridge documentation project is home to a few…</em>github.com</a><a href="https://github.com/railsbridge/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -68,9 +65,8 @@ Each subproject (a “site”) comprises files stored under the “sites” dire
 
 Our full-stack web development and machine learning curriculum is completely free and self-paced. We have thousands of interactive coding challenges to help you expand your skills.
 
-<a href="https://github.com/freeCodeCamp/freeCodeCamp" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/freeCodeCamp/freeCodeCamp"><strong>freeCodeCamp/freeCodeCamp</strong> 
+<a href="https://github.com/freeCodeCamp/freeCodeCamp" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/freeCodeCamp/freeCodeCamp"><strong>freeCodeCamp/freeCodeCamp</strong>
 <br/>
-
 
 <em>freeCodeCamp.org is a friendly community where you can learn to code for free. It is run by a donor-supported 501(c)(3)…</em>github.com</a><a href="https://github.com/freeCodeCamp/freeCodeCamp" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -88,9 +84,8 @@ Make sure to see <a href="https://github.com/leachim6/hello-world/blob/master/co
 
 ### Languages (774 total)
 
-<a href="https://github.com/leachim6/hello-world" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/leachim6/hello-world"><strong>leachim6/hello-world</strong> 
+<a href="https://github.com/leachim6/hello-world" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/leachim6/hello-world"><strong>leachim6/hello-world</strong>
 <br/>
-
 
 <em>Hello World in every computer language. As I watch the collection expand, this project has blown up more than I ever…</em>github.com</a><a href="https://github.com/leachim6/hello-world" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -129,9 +124,8 @@ The open-source curriculum for learning Data Science. Foundational in both theor
 -   <span id="b4c8"><a href="https://github.com/datasciencemasters/go#notation" class="markup--anchor markup--li-anchor">Notation</a></span>
 -   <span id="f6e5"><a href="https://github.com/datasciencemasters/go#contribute" class="markup--anchor markup--li-anchor">Contribute</a></span>
 
-<a href="https://github.com/datasciencemasters/go" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/datasciencemasters/go"><strong>datasciencemasters/go</strong> 
+<a href="https://github.com/datasciencemasters/go" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/datasciencemasters/go"><strong>datasciencemasters/go</strong>
 <br/>
-
 
 <em>The open-source curriculum for learning Data Science. Foundational in both theory and technologies, the OSDSM breaks…</em>github.com</a><a href="https://github.com/datasciencemasters/go" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -143,9 +137,8 @@ The open-source curriculum for learning Data Science. Foundational in both theor
 
 A list of programming tutorials in which learners build an application from scratch. These tutorials are divided into different primary programming languages. Some have intermixed technologies and languages.
 
-<a href="https://github.com/tuvtran/project-based-learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tuvtran/project-based-learning"><strong>tuvtran/project-based-learning</strong> 
+<a href="https://github.com/tuvtran/project-based-learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tuvtran/project-based-learning"><strong>tuvtran/project-based-learning</strong>
 <br/>
-
 
 <em>A list of programming tutorials in which learners build an application from scratch. These tutorials are divided into…</em>github.com</a><a href="https://github.com/tuvtran/project-based-learning" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -159,15 +152,13 @@ A list of programming tutorials in which learners build an application from scra
 
 ### 100+ Python Projects Challenge
 
-<a href="https://github.com/zhiwehu/100_plus_Python_Projects_Challenge" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/zhiwehu/100_plus_Python_Projects_Challenge"><strong>zhiwehu/100_plus_Python_Projects_Challenge</strong> 
+<a href="https://github.com/zhiwehu/100_plus_Python_Projects_Challenge" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/zhiwehu/100_plus_Python_Projects_Challenge"><strong>zhiwehu/100_plus_Python_Projects_Challenge</strong>
 <br/>
-
 
 <em>100+ Python Projects Challenge. Contribute to zhiwehu/100_plus_Python_Projects_Challenge development by creating an…</em>github.com</a><a href="https://github.com/zhiwehu/100_plus_Python_Projects_Challenge" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://github.com/zhiwehu/Python-programming-exercises" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/zhiwehu/Python-programming-exercises"><strong>zhiwehu/Python-programming-exercises</strong> 
+<a href="https://github.com/zhiwehu/Python-programming-exercises" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/zhiwehu/Python-programming-exercises"><strong>zhiwehu/Python-programming-exercises</strong>
 <br/>
-
 
 <em>100+ Python challenge programming exercises. https://github.com/zhiwehu/100_plus_Python_Projects_Challenge Hey guys I…</em>github.com</a><a href="https://github.com/zhiwehu/Python-programming-exercises" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -187,9 +178,8 @@ If you are looking to contribute, then explore this list, look at `first-timers-
 
 If you are not a programmer but would like to contribute, check out the <a href="https://github.com/szabgab/awesome-for-non-programmers" class="markup--anchor markup--p-anchor">Awesome for non-programmers</a> list.
 
-<a href="https://github.com/MunGell/awesome-for-beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/MunGell/awesome-for-beginners"><strong>MunGell/awesome-for-beginners</strong> 
+<a href="https://github.com/MunGell/awesome-for-beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/MunGell/awesome-for-beginners"><strong>MunGell/awesome-for-beginners</strong>
 <br/>
-
 
 <em>A list of awesome beginners-friendly projects. Contribute to MunGell/awesome-for-beginners development by creating an…</em>github.com</a><a href="https://github.com/MunGell/awesome-for-beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -211,9 +201,8 @@ Navigate to <a href="https://open.appacademy.io/" class="markup--anchor markup--
 
 The rest of the courses from our legendary Full-Stack curriculum are available to you from the moment you sign up. To switch, simply click the 'Course Outline' at the top of the page. The menu should have a 'Switch' button which will list all available courses.
 
-<a href="https://github.com/appacademy/welcome-to-open" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/appacademy/welcome-to-open"><strong>appacademy/welcome-to-open</strong> 
+<a href="https://github.com/appacademy/welcome-to-open" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/appacademy/welcome-to-open"><strong>appacademy/welcome-to-open</strong>
 <br/>
-
 
 <em>tl;dr: click here to learn to code for free With App Academy Open you'll get free access to App Academy's entire…</em>github.com</a><a href="https://github.com/appacademy/welcome-to-open" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -225,9 +214,8 @@ The rest of the courses from our legendary Full-Stack curriculum are available t
 
 This project should help anyone to find new resources but especially beginners in the field to have something they can look things up.
 
-<a href="https://github.com/lostdesign/webgems" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/lostdesign/webgems"><strong>lostdesign/webgems</strong> 
+<a href="https://github.com/lostdesign/webgems" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/lostdesign/webgems"><strong>lostdesign/webgems</strong>
 <br/>
-
 
 <em>A curated list of resources for devs and designers. Join me on devcord.com if you are up for a chit chat :) Permalink…</em>github.com</a><a href="https://github.com/lostdesign/webgems" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -253,9 +241,8 @@ If you think that these can be improved in any way, please do suggest.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*zDLSDOi0lFNFJJR9" class="graf-image" /></figure>### Back-end Roadmap
 
-<a href="https://github.com/kamranahmedse/developer-roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/kamranahmedse/developer-roadmap"><strong>kamranahmedse/developer-roadmap</strong> 
+<a href="https://github.com/kamranahmedse/developer-roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/kamranahmedse/developer-roadmap"><strong>kamranahmedse/developer-roadmap</strong>
 <br/>
-
 
 <em>Roadmap to becoming a web developer in 2021 Below you find a set of charts demonstrating the paths that you can take…</em>github.com</a><a href="https://github.com/kamranahmedse/developer-roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -283,9 +270,8 @@ To receive updates <a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap/starg
 
 The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job.
 
-<a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/AMAI-GmbH/AI-Expert-Roadmap"><strong>AMAI-GmbH/AI-Expert-Roadmap</strong> 
+<a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/AMAI-GmbH/AI-Expert-Roadmap"><strong>AMAI-GmbH/AI-Expert-Roadmap</strong>
 <br/>
-
 
 <em>Roadmap to becoming an Artificial Intelligence Expert in 2021 Below you find a set of charts demonstrating the paths…</em>github.com</a><a href="https://github.com/AMAI-GmbH/AI-Expert-Roadmap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -293,9 +279,8 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 
 ### trekhleb/javascript-algorithms
 
-<a href="https://github.com/trekhleb/javascript-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/trekhleb/javascript-algorithms"><strong>trekhleb/javascript-algorithms</strong> 
+<a href="https://github.com/trekhleb/javascript-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/trekhleb/javascript-algorithms"><strong>trekhleb/javascript-algorithms</strong>
 <br/>
-
 
 <em>This repository contains JavaScript based examples of many popular algorithms and data structures. Each algorithm and…</em>github.com</a><a href="https://github.com/trekhleb/javascript-algorithms" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -305,25 +290,22 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*L4rPP_J7lICKyU87LNsVdA.gif" class="graf-image" /></figure>#### this is the repo for the website:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong> 
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong>
 <br/>
-
 
 <em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 #### Here's the website:
 
-<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong> 
+<a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/"><strong>directory</strong>
 <br/>
-
 
 <em>Edit description</em>ds-algo-official-c3dw6uapg-bgoonz.vercel.app</a><a href="https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 #### this is just the codebase without the website infrastructure :
 
-<a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Data-Structures-Algos-Codebase"><strong>bgoonz/Data-Structures-Algos-Codebase</strong> 
+<a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/Data-Structures-Algos-Codebase"><strong>bgoonz/Data-Structures-Algos-Codebase</strong>
 <br/>
-
 
 <em>Contribute to bgoonz/Data-Structures-Algos-Codebase development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/bgoonz/Data-Structures-Algos-Codebase" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -337,9 +319,8 @@ here's a list of what's covered
 
 Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and HTML basics. Each lesson includes pre- and post-lesson quizzes, written instructions to complete the lesson, a solution, an assignment and more. Our project-based pedagogy allows you to learn while building, a proven way for new skills to 'stick'.
 
-<a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/microsoft/Web-Dev-For-Beginners"><strong>microsoft/Web-Dev-For-Beginners</strong> 
+<a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/microsoft/Web-Dev-For-Beginners"><strong>microsoft/Web-Dev-For-Beginners</strong>
 <br/>
-
 
 <em>Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and…</em>github.com</a><a href="https://github.com/microsoft/Web-Dev-For-Beginners" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -361,9 +342,8 @@ See ways of <a href="https://github.com/thekarangoel/Projects/blob/master/CONTRI
 
 You can find implementations of these projects in many other languages by other users in <a href="https://github.com/thekarangoel/Projects-Solutions" class="markup--anchor markup--p-anchor">this repo</a>.
 
-<a href="https://github.com/karan/Projects" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karan/Projects"><strong>karan/Projects</strong> 
+<a href="https://github.com/karan/Projects" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karan/Projects"><strong>karan/Projects</strong>
 <br/>
-
 
 <em>A list of practical projects that anyone can solve in any programming language (See solutions). These projects are…</em>github.com</a><a href="https://github.com/karan/Projects" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -385,9 +365,8 @@ Research if the stuff you're including is actually awesome. Only put stuff on th
 
 This badge is for Awesome lists.
 
-<a href="https://github.com/sindresorhus/awesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sindresorhus/awesome"><strong>sindresorhus/awesome</strong> 
+<a href="https://github.com/sindresorhus/awesome" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/sindresorhus/awesome"><strong>sindresorhus/awesome</strong>
 <br/>
-
 
 <em>What is an awesome list? Contribution guide Creating a list Twitter Stickers &amp; t-shirts Just type to go here. Check out…</em>github.com</a><a href="https://github.com/sindresorhus/awesome" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -423,9 +402,8 @@ In addition to coding interviews, system design is a required component of the t
 
 Practice common system design interview questions and compare your results with sample solutions: discussions, code, and diagrams.
 
-<a href="https://github.com/donnemartin/system-design-primer" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/donnemartin/system-design-primer"><strong>donnemartin/system-design-primer</strong> 
+<a href="https://github.com/donnemartin/system-design-primer" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/donnemartin/system-design-primer"><strong>donnemartin/system-design-primer</strong>
 <br/>
-
 
 <em>Learn how to design large-scale systems. Prep for the system design interview. Learning how to design scalable systems…</em>github.com</a><a href="https://github.com/donnemartin/system-design-primer" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -480,9 +458,8 @@ Practice common system design interview questions and compare your results with 
 -   <span id="8bd5"><a href="http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html" class="markup--anchor markup--li-anchor">JavaScript / Pseudocode: <em>Computer Graphics from scratch</em></a></span>
 -   <span id="82bb"><a href="http://aosabook.org/en/500L/a-3d-modeller.html" class="markup--anchor markup--li-anchor">Python: <em>A 3D Modeller</em></a></span>
 
-<a href="https://github.com/danistefanovic/build-your-own-x" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/danistefanovic/build-your-own-x"><strong>danistefanovic/build-your-own-x</strong> 
+<a href="https://github.com/danistefanovic/build-your-own-x" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/danistefanovic/build-your-own-x"><strong>danistefanovic/build-your-own-x</strong>
 <br/>
-
 
 <em>🤓 Build your own (insert technology here). Contribute to danistefanovic/build-your-own-x development by creating an…</em>github.com</a><a href="https://github.com/danistefanovic/build-your-own-x" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -500,9 +477,8 @@ For information on contributing to this project, please see the <a href="https:/
 
 NOTE: A passing build status indicates all listed APIs are available since the last update. A failing build status indicates that 1 or more services may be unavailable at the moment.
 
-<a href="https://github.com/public-apis/public-apis" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/public-apis/public-apis"><strong>public-apis/public-apis</strong> 
+<a href="https://github.com/public-apis/public-apis" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/public-apis/public-apis"><strong>public-apis/public-apis</strong>
 <br/>
-
 
 <em>A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.</em>github.com</a><a href="https://github.com/public-apis/public-apis" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -520,9 +496,8 @@ The list was moved to GitHub by Victor Felder for collaborative updating and mai
 
 The <a href="https://ebookfoundation.org/" class="markup--anchor markup--p-anchor">Free Ebook Foundation</a> now administers the repo, a not-for-profit organization devoted to promoting the creation, distribution, archiving, and sustainability of free ebooks. <a href="https://ebookfoundation.org/contributions.html" class="markup--anchor markup--p-anchor">Donations</a> to the Free Ebook Foundation are tax-deductible in the US.
 
-<a href="https://github.com/EbookFoundation/free-programming-books" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/EbookFoundation/free-programming-books"><strong>EbookFoundation/free-programming-books</strong> 
+<a href="https://github.com/EbookFoundation/free-programming-books" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/EbookFoundation/free-programming-books"><strong>EbookFoundation/free-programming-books</strong>
 <br/>
-
 
 <em>This page is available as an easy-to-read website at https://ebookfoundation.github.io/. This list was originally a…</em>github.com</a><a href="https://github.com/EbookFoundation/free-programming-books" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -592,9 +567,8 @@ The <a href="https://ebookfoundation.org/" class="markup--anchor markup--p-ancho
 -   <span id="5f0f"><a href="https://github.com/amitness/learning#be-familiar-with-the-hiring-pipeline" class="markup--anchor markup--li-anchor">Be familiar with the hiring pipeline</a></span>
 -   <span id="d9c9"><a href="https://github.com/amitness/learning#broaden-perspective" class="markup--anchor markup--li-anchor">Broaden Perspective</a></span>
 
-<a href="https://github.com/amitness/learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/amitness/learning"><strong>amitness/learning</strong> 
+<a href="https://github.com/amitness/learning" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/amitness/learning"><strong>amitness/learning</strong>
 <br/>
-
 
 <em>Becoming better at data science every day. Contribute to amitness/learning development by creating an account on…</em>github.com</a><a href="https://github.com/amitness/learning" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -637,9 +611,8 @@ Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" class="m
 -   <span id="9b9a"><a href="https://github.com/mhinz/vim-galore#sessions" class="markup--anchor markup--li-anchor">Sessions</a></span>
 -   <span id="d89b"><a href="https://github.com/mhinz/vim-galore#locality" class="markup--anchor markup--li-anchor">Locality</a></span>
 
-<a href="https://github.com/mhinz/vim-galore" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/mhinz/vim-galore"><strong>mhinz/vim-galore</strong> 
+<a href="https://github.com/mhinz/vim-galore" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/mhinz/vim-galore"><strong>mhinz/vim-galore</strong>
 <br/>
-
 
 <em>Vim is a text editor with a long line of ancestors that goes back to qed. Bram Moolenaar released it in 1991. The…</em>github.com</a><a href="https://github.com/mhinz/vim-galore" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -662,9 +635,8 @@ If you want to contribute, please read the <a href="https://github.com/tayllan/a
 -   <span id="5c0a"><a href="https://github.com/tayllan/awesome-algorithms#online-judges" class="markup--anchor markup--li-anchor">Online Judges</a></span>
 -   <span id="90f4"><a href="https://github.com/tayllan/awesome-algorithms#tools" class="markup--anchor markup--li-anchor">Tools</a></span>
 
-<a href="https://github.com/tayllan/awesome-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tayllan/awesome-algorithms"><strong>tayllan/awesome-algorithms</strong> 
+<a href="https://github.com/tayllan/awesome-algorithms" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/tayllan/awesome-algorithms"><strong>tayllan/awesome-algorithms</strong>
 <br/>
-
 
 <em>A curated list of awesome places to learn and/or practice algorithms. Inspired by awesome-awesomeness and all the other…</em>github.com</a><a href="https://github.com/tayllan/awesome-algorithms" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -747,9 +719,8 @@ _(RethinkDB, SailsJs, NodeJS, Git, Startup Class, etc)_
 Free Learn to code and help nonprofits. An open source community of people who learn to code and help nonprofits.  
 _(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)_
 
-<a href="https://github.com/karlhorky/learn-to-program" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karlhorky/learn-to-program"><strong>karlhorky/learn-to-program</strong> 
+<a href="https://github.com/karlhorky/learn-to-program" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/karlhorky/learn-to-program"><strong>karlhorky/learn-to-program</strong>
 <br/>
-
 
 <em>Foundation in Web Development The Internet is filled with an ever-expanding number of courses, books and guides for…</em>github.com</a><a href="https://github.com/karlhorky/learn-to-program" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -765,9 +736,8 @@ A list of workshopper/adventure-based tutorials for various things. Inspired by 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*nAZdLxs9x2JUBwMJ" class="graf-image" /></figure>If you know of any other workshopper/adventure tutorials, feel free to fork/PR or open a new issue. This list will also serve as a wish-list of types: if you want a workshopper that is not listed here, open a pull request and I'll see about getting it started.
 
-<a href="https://github.com/therebelrobot/awesome-workshopper" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/therebelrobot/awesome-workshopper"><strong>therebelrobot/awesome-workshopper</strong> 
+<a href="https://github.com/therebelrobot/awesome-workshopper" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/therebelrobot/awesome-workshopper"><strong>therebelrobot/awesome-workshopper</strong>
 <br/>
-
 
 <em>A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based…</em>github.com</a><a href="https://github.com/therebelrobot/awesome-workshopper" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -795,9 +765,8 @@ _Note: I'm planning to revise this and looking for a new co-author to help with 
 
 This work is the result of <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/AUTHORS.md" class="markup--anchor markup--p-anchor">many authors and translators</a>. Some of this <a href="http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands" class="markup--anchor markup--p-anchor">originally</a> <a href="http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix" class="markup--anchor markup--p-anchor">appeared</a> on <a href="http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know" class="markup--anchor markup--p-anchor">Quora</a>, but it has since moved to GitHub, where people more talented than the original author have made numerous improvements. <a href="https://airtable.com/shrzMhx00YiIVAWJg" class="markup--anchor markup--p-anchor">Please submit a question</a> if you have a question related to the command line. <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/CONTRIBUTING.md" class="markup--anchor markup--p-anchor">Please contribute</a> if you see an error or something that could be better!
 
-<a href="https://github.com/jlevy/the-art-of-command-line" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/jlevy/the-art-of-command-line"><strong>jlevy/the-art-of-command-line</strong> 
+<a href="https://github.com/jlevy/the-art-of-command-line" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/jlevy/the-art-of-command-line"><strong>jlevy/the-art-of-command-line</strong>
 <br/>
-
 
 <em>Master the command line, in one page. Contribute to jlevy/the-art-of-command-line development by creating an account on…</em>github.com</a><a href="https://github.com/jlevy/the-art-of-command-line" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -811,9 +780,8 @@ Due to <a href="https://github.com/papers-we-love/papers-we-love/blob/master/.gi
 
 If you enjoy the papers, perhaps stop by a local chapter meetup and join in on the vibrant discussions around them. You can also discuss _PWL_ events, the content in this repository, and/or anything related to _PWL_ on our <a href="https://paperswelove.slack.com/messages/general/" class="markup--anchor markup--p-anchor">Slack</a>, after <a href="http://papersweloveslack.herokuapp.com/" class="markup--anchor markup--p-anchor">signing-up</a> to join it, or on our _\#paperswelove_ IRC channel on freenode.
 
-<a href="https://github.com/papers-we-love/papers-we-love" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/papers-we-love/papers-we-love"><strong>papers-we-love/papers-we-love</strong> 
+<a href="https://github.com/papers-we-love/papers-we-love" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/papers-we-love/papers-we-love"><strong>papers-we-love/papers-we-love</strong>
 <br/>
-
 
 <em>Papers We Love ( PWL) is a community built around reading, discussing and learning more about academic computer science…</em>github.com</a><a href="https://github.com/papers-we-love/papers-we-love" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -829,9 +797,8 @@ This is a list of <a href="https://en.wikipedia.org/wiki/Free_software" class="m
 
 See <a href="https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/.github/CONTRIBUTING.md" class="markup--anchor markup--p-anchor">Contributing</a>.
 
-<a href="https://github.com/awesome-selfhosted/awesome-selfhosted" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/awesome-selfhosted/awesome-selfhosted"><strong>awesome-selfhosted/awesome-selfhosted</strong> 
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/awesome-selfhosted/awesome-selfhosted"><strong>awesome-selfhosted/awesome-selfhosted</strong>
 <br/>
-
 
 <em>A list of Free Software network services and web applications which can be hosted on your own servers …</em>github.com</a><a href="https://github.com/awesome-selfhosted/awesome-selfhosted" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -851,9 +818,8 @@ This list is the result of Pull Requests, reviews, ideas and work done by 900+ p
 
 _NOTE:_ This list is only for as-a-Service offerings, not for self-hosted software. For a service to be eligible it has to offer a free tier and not just a free trial. If the free tier is time-bucketed it has to be for at least a year. We also consider the free tier from a security perspective, so SSO is fine but I will not accept services that restrict TLS to paid-only tiers.
 
-<a href="https://github.com/ripienaar/free-for-dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/ripienaar/free-for-dev"><strong>ripienaar/free-for-dev</strong> 
+<a href="https://github.com/ripienaar/free-for-dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/ripienaar/free-for-dev"><strong>ripienaar/free-for-dev</strong>
 <br/>
-
 
 <em>Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to…</em>github.com</a><a href="https://github.com/ripienaar/free-for-dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -865,9 +831,9 @@ _NOTE:_ This list is only for as-a-Service offerings, not for self-hosted softwa
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*OGbTycPsogJHNqrZ.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*u2EbjIkzp7eZwBtY.png" class="graf-image" /></figure>### See how the exact same Medium.com clone (called <a href="https://demo.realworld.io/" class="markup--anchor markup--h3-anchor">Conduit</a>) is built using different <a href="https://codebase.show/projects/realworld?category=frontend" class="markup--anchor markup--h3-anchor">frontends</a> and <a href="https://codebase.show/projects/realworld?category=backend" class="markup--anchor markup--h3-anchor">backends</a>. Yes, you can mix and match them, because they all adhere to the same <a href="https://github.com/gothinkster/realworld/blob/master/spec" class="markup--anchor markup--h3-anchor">API spec</a> 😮😎
 
-While most “todo” demos provide an excellent cursory glance at a framework's capabilities, they typically don't convey the knowledge & perspective required to actually build _real_ applications with it.
+While most "todo” demos provide an excellent cursory glance at a framework's capabilities, they typically don't convey the knowledge & perspective required to actually build _real_ applications with it.
 
-RealWorld solves this by allowing you to choose any frontend (React, Angular 2, & more) and any backend (Node, Django, & more) and see how they power a real world, beautifully designed fullstack app called “<a href="https://demo.realworld.io/" class="markup--anchor markup--p-anchor">Conduit</a>”.
+RealWorld solves this by allowing you to choose any frontend (React, Angular 2, & more) and any backend (Node, Django, & more) and see how they power a real world, beautifully designed fullstack app called "<a href="https://demo.realworld.io/" class="markup--anchor markup--p-anchor">Conduit</a>”.
 
 _Read the_ <a href="https://medium.com/@ericsimons/introducing-realworld-6016654d36b5" class="markup--anchor markup--p-anchor"><em>full blog post announcing RealWorld on Medium.</em></a>
 
@@ -908,9 +874,8 @@ Forks, tutorials, workshops, and other resources based on the RealWorld project:
 -   <span id="b517"><a href="https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962" class="markup--anchor markup--li-anchor">A Real-World Comparison of Front-End Frameworks with Benchmarks 2018</a></span>
 -   <span id="e813"><a href="https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c" class="markup--anchor markup--li-anchor">A Real-World Comparison of Front-End Frameworks with Benchmarks 2017</a></span>
 
-<a href="https://github.com/gothinkster/realworld" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/gothinkster/realworld"><strong>gothinkster/realworld</strong> 
+<a href="https://github.com/gothinkster/realworld" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/gothinkster/realworld"><strong>gothinkster/realworld</strong>
 <br/>
-
 
 <em>"The mother of all demo apps" - Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many…</em>github.com</a><a href="https://github.com/gothinkster/realworld" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -947,9 +912,8 @@ Some resources possess an emoticon to help you understand which type of content 
 
 > _You can contribute to the_ Front-End Checklist App _reading the_ <a href="https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md" class="markup--anchor markup--blockquote-anchor"><em>CONTRIBUTING.md file</em></a> _which explains everything about the project._
 
-<a href="https://github.com/thedaviddias/Front-End-Checklist" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/thedaviddias/Front-End-Checklist"><strong>thedaviddias/Front-End-Checklist</strong> 
+<a href="https://github.com/thedaviddias/Front-End-Checklist" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/thedaviddias/Front-End-Checklist"><strong>thedaviddias/Front-End-Checklist</strong>
 <br/>
-
 
 <em>The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website…</em>github.com</a><a href="https://github.com/thedaviddias/Front-End-Checklist" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -959,9 +923,8 @@ Some resources possess an emoticon to help you understand which type of content 
 
 Thanks for being a part of our community! <a href="https://www.youtube.com/channel/UC3v9kBR_ab4UHXXdknz8Fbg?sub_confirmation=1" class="markup--anchor markup--p-anchor">Subscribe to our YouTube channel</a> or join the <a href="https://skilled.dev/" class="markup--anchor markup--p-anchor"><strong>Skilled.dev coding interview course</strong></a>.
 
-<a href="https://skilled.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://skilled.dev"><strong>Coding Interview Questions + Land Your Dev Job | Skilled.dev</strong> 
+<a href="https://skilled.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://skilled.dev"><strong>Coding Interview Questions + Land Your Dev Job | Skilled.dev</strong>
 <br/>
-
 
 <em>The course to master the coding interview</em> skilled.dev</a><a href="https://skilled.dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
