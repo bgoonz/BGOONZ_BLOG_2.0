@@ -6,7 +6,7 @@ thumb_image_alt: lorem-ipsum
 excerpt: wubalubadubdub
 seo:
     title: 'Functions in Python'
-    description: ''
+    description: 'Functions in Python'
     robots: []
     extra: []
 template: post
