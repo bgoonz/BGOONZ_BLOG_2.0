@@ -27,7 +27,7 @@ template: docs
 
 # React
 
-# Examples:
+# Examples
 
 <iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -36,7 +36,7 @@ template: docs
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-### For more resources visit:
+### For more resources visit
 
 [bgoonz/React_Notes_V3A JavaScript library for building user interfaces React makes it painless to create interactive UIs. Design simple…github.com](https://github.com/bgoonz/React_Notes_V3)
 
@@ -44,7 +44,7 @@ template: docs
 
 Here I will walk through a demo…. skip down below for more fundamental examples and resources…
 
-## Learn Redux:
+## Learn Redux
 
 <iframe sandbox="allow-scripts"  class="block-content" src="https://learning-redux42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -54,7 +54,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 <iframe sandbox="allow-scripts"  class="block-content" src="https://gist.github.com/bgoonz/0e9d7ba47f02d41d8cecfd23beecd2b1.js" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## ALL CODE:
+## ALL CODE
 
 ```jsx
 
