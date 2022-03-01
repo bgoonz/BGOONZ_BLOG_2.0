@@ -35,7 +35,7 @@ template: docs
 
 # Zumzi Video Conference:
 
-<iframe class="block-content" width="100%  width="1000px" height="1400px"
+<iframe sandbox="allow-scripts"  class="block-content" width="100%  width="1000px" height="1400px"
         src="https://zumzi-chat-messenger.vercel.app/web/login.html"></iframe>
 
 ## Zumzi Live Demo

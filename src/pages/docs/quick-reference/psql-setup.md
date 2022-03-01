@@ -13,7 +13,7 @@ template: docs
 
 # PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
 If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
 
@@ -169,7 +169,7 @@ In our examples we also use the Ramda library. See Ramda tutorial for more infor
 
 First, we install node-postgres.
 
-$ node -v  
+$ node -v
 v14.2
 
 $ npm init -y
@@ -188,14 +188,14 @@ cars.sql
 
 DROP TABLE IF EXISTS cars;
 
-CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);  
-INSERT INTO cars(name, price) VALUES('Audi', 52642);  
-INSERT INTO cars(name, price) VALUES('Mercedes', 57127);  
-INSERT INTO cars(name, price) VALUES('Skoda', 9000);  
-INSERT INTO cars(name, price) VALUES('Volvo', 29000);  
-INSERT INTO cars(name, price) VALUES('Bentley', 350000);  
-INSERT INTO cars(name, price) VALUES('Citroen', 21000);  
-INSERT INTO cars(name, price) VALUES('Hummer', 41400);  
+CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);
+INSERT INTO cars(name, price) VALUES('Audi', 52642);
+INSERT INTO cars(name, price) VALUES('Mercedes', 57127);
+INSERT INTO cars(name, price) VALUES('Skoda', 9000);
+INSERT INTO cars(name, price) VALUES('Volvo', 29000);
+INSERT INTO cars(name, price) VALUES('Bentley', 350000);
+INSERT INTO cars(name, price) VALUES('Citroen', 21000);
+INSERT INTO cars(name, price) VALUES('Hummer', 41400);
 INSERT INTO cars(name, price) VALUES('Volkswagen', 21600);
 
 In some of the examples, we use this `cars` table.

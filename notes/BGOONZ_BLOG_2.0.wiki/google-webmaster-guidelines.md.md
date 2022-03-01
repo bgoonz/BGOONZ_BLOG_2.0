@@ -5,7 +5,7 @@
 > Follow Google's Webmaster Guidelines, including quality and SEO guidelines, designed to help Google better find, index, and rank your site.
 
 ---
-<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=yFxNda5Z4eE&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
+<iframe sandbox="allow-scripts"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=yFxNda5Z4eE&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
 
 Following the [General guidelines](https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en&_ga=2.47561892.2010395531.1639933504-972587081.1639933504&visit_id=1639931578542-8725338968151920159&rd=1#general) will help Google find, index, and rank your site.
 
@@ -55,7 +55,7 @@ These quality guidelines cover the most common forms of deceptive or manipulativ
 
 If you believe that another site is abusing Google's quality guidelines, please let us know by [filing a spam report](https://www.google.com/webmasters/tools/spamreport). Google prefers developing scalable and automated solutions to problems, and will use the report for further improving our spam detection systems.
 
-<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/2oPj5_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=2oPj5_9WxpA&amp;enablejsapi=1&amp;widgetid=3" id="widget4"></iframe>
+<iframe sandbox="allow-scripts"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/2oPj5_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=2oPj5_9WxpA&amp;enablejsapi=1&amp;widgetid=3" id="widget4"></iframe>
 
 ### Basic principles
 
@@ -141,7 +141,7 @@ Ensure that the URL linked to by your `<a>` tag is an actual web address that Go
 > A sitemap provides information that helps Google more intelligently crawl your site. Discover how a sitemap works and determine if you need one.
 
 ---
-<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="640" height="360" src="https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=JlamLfyFjTA&amp;enablejsapi=1&amp;widgetid=1" id="widget2" data-title="YouTube video player"></iframe>
+<iframe sandbox="allow-scripts"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="640" height="360" src="https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=JlamLfyFjTA&amp;enablejsapi=1&amp;widgetid=1" id="widget2" data-title="YouTube video player"></iframe>
 
 A _sitemap_ is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files. For example, when the page was last updated and any alternate language versions of the page.
 

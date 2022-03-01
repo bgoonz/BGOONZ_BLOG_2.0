@@ -12,12 +12,12 @@ template: docs
 ---
 *   [Data Structures Interactive](https://ds-algo-official.netlify.app/)
 
-<iframe src="https://ds-algo-official.netlify.app/" height="900px" width="100%">
+<iframe sandbox="allow-scripts"  src="https://ds-algo-official.netlify.app/" height="900px" width="100%">
 </iframe>
 
 *   [Games](https://bgoonz-games.netlify.app/)
 
-<iframe src="https://bgoonz-games.netlify.app/" height="900px" width="100%">
+<iframe sandbox="allow-scripts"  src="https://bgoonz-games.netlify.app/" height="900px" width="100%">
 </iframe>
 
 
@@ -26,7 +26,7 @@ template: docs
 
 
 
-<iframe src="https://random-static-html-deploys.netlify.app/embeds_notion" height="900px" width="100%">
+<iframe sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app/embeds_notion" height="900px" width="100%">
 </iframe>
 
 

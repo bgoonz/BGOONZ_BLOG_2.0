@@ -16,7 +16,7 @@ thumb_image: images/3.jpg
 
 ## Blog Archive
 
- <iframe  style="z-index:-1!important; overflow:scroll;resize:both;"  width="400" height="575"
+ <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;"  width="400" height="575"
             src="https://bgoonz.blogspot.com/"  
            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
