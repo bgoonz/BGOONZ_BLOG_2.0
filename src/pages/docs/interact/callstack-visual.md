@@ -12,7 +12,7 @@ template: docs
 
 <script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
 
-<iframe height="1000px" width="1400px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts"  height="1000px" width="1400px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
   Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -27,7 +27,7 @@ template: docs
 
 ## Callstack Visualizer
 
-<iframe src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
+<iframe sandbox="allow-scripts"  src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
 </iframe>
 
 ###### About the Call Stack

@@ -50,7 +50,7 @@ template: docs
 
 
 
-<iframe src="https://codesandbox.io/embed/react-gists-4s3ll?fontsize=14&hidenavigation=1&theme=dark"
+<iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/react-gists-4s3ll?fontsize=14&hidenavigation=1&theme=dark"
 
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
 

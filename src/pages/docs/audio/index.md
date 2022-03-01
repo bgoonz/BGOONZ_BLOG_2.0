@@ -15,11 +15,11 @@ template: docs
 <br>
 <br>
 
-<iframe width="100%" height="500" frameborder="0"
+<iframe sandbox="allow-scripts"  width="100%" height="500" frameborder="0"
 src="https://bgoonz.github.io/extracting-features-from-audio/"></iframe>
 <hr>
 <br>
-<iframe width="100%" height="500" frameborder="0"
+<iframe sandbox="allow-scripts"  width="100%" height="500" frameborder="0"
 src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
 <br>
 <br>

@@ -15,7 +15,7 @@ template: docs
 
 <h2>Gist Archive</h2>
 
-<iframe src="https://bgoonzgist.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://bgoonzgist.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -198,7 +198,7 @@ console.log(isAppleDevice);
 ```js
 /*
  function named intersection(firstArr) that takes in an array and
-returns a function. 
+returns a function.
 When the function returned by intersection is invoked
 passing in an array (secondArr) it returns a new array containing the elements
 common to both firstArr and secondArr.

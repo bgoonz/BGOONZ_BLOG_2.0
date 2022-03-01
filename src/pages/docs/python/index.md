@@ -15,7 +15,7 @@ template: docs
 <h1>  Python Resources</h1>
 <br>
 
-<iframe class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -203,7 +203,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
--   <span id="445b">_Shorthand way to use format function is:  
+-   <span id="445b">_Shorthand way to use format function is:
     _`print(f'Your name is {first_name} {last_name}')`</span>
 
 #### Some useful string methods.
@@ -245,7 +245,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
--   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
+-   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:
     _`print(float("nan"))`</span>
 -   <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
 -   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
@@ -550,8 +550,8 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 #### Formatted Strings
 
-> Remember that in Python join() is called on a string with an array/list passed in as the argument.  
-> Python has a very powerful formatting engine.  
+> Remember that in Python join() is called on a string with an array/list passed in as the argument.
+> Python has a very powerful formatting engine.
 > format() is also applied directly to strings.
 
     shopping_list = ['bread','milk','eggs']
@@ -591,16 +591,16 @@ You can think of this as roughly equivalent to the slice method called on a Java
     Programming Script : A set of code that runs in a linear fashion.
     The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.
 
-**Python can be used to display html, css, and JS.**  
+**Python can be used to display html, css, and JS.**
 _It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
 #### Sequence : The most basic data structure in Python where the index determines the order.
 
-> List  
-> Tuple  
-> Range  
+> List
+> Tuple
+> Range
 > Collections : Unordered data structures, hashable values.
 
 ---
@@ -647,8 +647,8 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 **Declared using one to three parameters**.
 
-> Start : opt. default 0, first \# in sequence.  
-> Stop : required next number past the last number in the sequence.  
+> Start : opt. default 0, first \# in sequence.
+> Stop : required next number past the last number in the sequence.
 > Step : opt. default 1, difference between each number in the sequence.
 
     range(5) # [0, 1, 2, 3, 4]
@@ -682,11 +682,11 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Common Uses:
 
-> Removing Duplicates  
-> Membership Testing  
+> Removing Duplicates
+> Membership Testing
 > Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
 
-**Standard Set is mutable, Python has a immutable version called frozenset.  
+**Standard Set is mutable, Python has a immutable version called frozenset.
 Sets created by putting comma seperated values inside braces:**
 
     school_bag = {'book','paper','pencil','pencil','book','book','book','eraser'}
@@ -721,7 +721,7 @@ Sets created by putting comma seperated values inside braces:**
 
 #### (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
 
-> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
 > Functions that analyze iterable
 
 **len(iterable) : returns the count of the number of items.**
@@ -730,7 +730,7 @@ Sets created by putting comma seperated values inside braces:**
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-_key optional function which converts an item to a value to be compared.  
+_key optional function which converts an item to a value to be compared.
 min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
@@ -743,7 +743,7 @@ _There is a faster way to concatenate an array of strings into one string, so do
 
 ### Working with dictionaries
 
-**dir(dictionary) : returns the list of keys in the dictionary.  
+**dir(dictionary) : returns the list of keys in the dictionary.
 Working with sets**
 
 **Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
@@ -880,7 +880,7 @@ _keyword args with default values_
 
 ### **Importing in Python**
 
-**Modules are similar to packages in Node.js**  
+**Modules are similar to packages in Node.js**
 Come in different types:
 
 Built-In,
@@ -895,10 +895,10 @@ Custom.
 
 ### **Terms**
 
-> module : Python code in a separate file.  
-> package : Path to a directory that contains modules.  
-> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.  
-> submodule : Another file in a module's folder.  
+> module : Python code in a separate file.
+> package : Path to a directory that contains modules.
+> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.
+> submodule : Another file in a module's folder.
 > function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
@@ -924,10 +924,10 @@ _Use multiple lines for clarity when importing._
 
 **format() was introduced with P3**
 
-**All strings in P3 are unicode and encoded.  
+**All strings in P3 are unicode and encoded.
 md5 was removed.**
 
-**ConfigParser was renamed to configparser  
+**ConfigParser was renamed to configparser
 sets were killed in favor of set() class.**
 
 #### **print was a statement in P2, but is a function in P3.**

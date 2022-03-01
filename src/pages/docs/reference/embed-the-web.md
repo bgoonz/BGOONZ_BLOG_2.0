@@ -111,7 +111,7 @@ solution.addEventListener('click', function() {
   updateCode();
 });
 
-const htmlSolution = '<iframe width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>\n\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37995.65748333395!2d-2.273568166412784!3d53.473310471916975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae6c05743d3d%3A0xf82fddd1e49fc0a1!2sThe+Lowry!5e0!3m2!1sen!2suk!4v1518171785211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>\n</iframe>';
+const htmlSolution = '<iframe sandbox="allow-scripts"  width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>\n\n<iframe sandbox="allow-scripts"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37995.65748333395!2d-2.273568166412784!3d53.473310471916975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae6c05743d3d%3A0xf82fddd1e49fc0a1!2sThe+Lowry!5e0!3m2!1sen!2suk!4v1518171785211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>\n</iframe>';
 let solutionEntry = htmlSolution;
 
 textarea.addEventListener('input', updateCode);
@@ -148,8 +148,8 @@ function insertAtCaret(text) {
 
 
 textarea.onkeyup = function(){
-  
-  
+
+
   if(solution.value === 'Show solution') {
     userEntry = textarea.value;
   } else {
@@ -171,7 +171,7 @@ There are some serious [Security concerns](https://developer.mozilla.org/en-US/d
   <style> iframe { border: none } </style>
 </head>
 <body>
-  <iframe src="https://developer.mozilla.org/en-US/docs/Glossary"
+  <iframe sandbox="allow-scripts"  src="https://developer.mozilla.org/en-US/docs/Glossary"
           width="100%" height="500" allowfullscreen sandbox>
     <p>
       <a href="/en-US/docs/Glossary">
@@ -283,10 +283,10 @@ _accurate_ [media type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_t
 
 height and width (in CSS pixels) of the box controlled by the plugin
 
-[`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed#attr-height)  
+[`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed#attr-height)
 [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed#attr-width)
 
-[`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object#attr-height)  
+[`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object#attr-height)
 [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object#attr-width)
 
 names and values, to feed the plugin as parameters

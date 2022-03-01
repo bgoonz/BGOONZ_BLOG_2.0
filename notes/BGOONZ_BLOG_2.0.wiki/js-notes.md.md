@@ -28,7 +28,7 @@ Variables that don't explicitly get assigned an initial value have the value
 
 Since ES2015, `let` and `const` can be used in addition to `var`. We will learn
 how they differ from `var` later. For now, lets have a look how `const` differs
-from `var` or `let`: `const` can be assigned a value only _once_ (*const*ant).  
+from `var` or `let`: `const` can be assigned a value only _once_ (*const*ant).
 Reassigning a value will either throw an error (in strict mode, see below) or
 is silently ignored:
 
@@ -7012,25 +7012,25 @@ If you are new to JavaScript, start with the [guide](https://developer.mozilla.o
 
 In the JavaScript reference you can find the following chapters:
 
-[Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)  
+[Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 This chapter documents all the JavaScript standard built-in objects, along with their methods and properties.
 
-[Statements and declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)  
+[Statements and declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 JavaScript applications consist of statements with an appropriate syntax. A single statement may span multiple lines. Multiple statements may occur on a single line if each statement is separated by a semicolon. This isn't a keyword, but a group of keywords.
 
-[Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)  
+[Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 This chapter documents all the JavaScript language operators, expressions and keywords.
 
-Functions  
+Functions
 Chapter about JavaScript functions.
 
-[Classes](classes)  
+[Classes](classes)
 Chapter about JavaScript classes introduced in ECMAScript 2015.
 
-[Errors](errors)  
+[Errors](errors)
 Chapter about specific errors, exceptions and warnings thrown by JavaScript.
 
-[New in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript)  
+[New in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript)
 Chapter about JavaScript version history.
 
 ### More reference pages
@@ -7051,7 +7051,7 @@ The `Math.abs()` function returns the absolute value of a number. That is, it re
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -7081,7 +7081,7 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Math.abs' in that specification.</span></a></td></tr></tbody></table>
@@ -7120,8 +7120,8 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs</a>
 
 # Math.acos()
@@ -7136,7 +7136,7 @@ The `Math.acos()` function returns the arccosine (in radians) of a number, that 
 
 ### Parameters
 
-`x`  
+`x`
 A number representing a cosine, where `x` is between `-1` and `1`.
 
 ### Return value
@@ -7164,7 +7164,7 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acos">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acos">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.acos</span></a></td></tr></tbody></table>
@@ -7204,8 +7204,8 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos</a>
 
 # Math.acosh()
@@ -7220,7 +7220,7 @@ The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that 
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -7253,7 +7253,7 @@ For all *x* ≥ 1, we have $\\operatorname{arcosh}(x) = \\ln\\left( {x + \\s
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.acosh</span></a></td></tr></tbody></table>
@@ -7292,8 +7292,8 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh</a>
 
 # Atomics.add()
@@ -7306,13 +7306,13 @@ The static ` Atomics``.add() ` method adds a given value at a given position in 
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to add a `value` to.
 
-`value`  
+`value`
 The number to add.
 
 ### Return value
@@ -7336,7 +7336,7 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.add">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.add">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.add</span></a></td></tr></tbody></table>
@@ -7436,7 +7436,7 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-addition-operator-plus">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-addition-operator-plus">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Addition operator' in that specification.</span></a></td></tr></tbody></table>
@@ -7479,8 +7479,8 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition</a>
 
 # AggregateError
@@ -7489,15 +7489,15 @@ The `AggregateError` object represents an error when several errors need to be w
 
 ## Constructor
 
-[`AggregateError()`](aggregateerror/aggregateerror)  
+[`AggregateError()`](aggregateerror/aggregateerror)
 Creates a new `AggregateError` object.
 
 ## Instance properties
 
-[`AggregateError.prototype.message`](error/message)  
+[`AggregateError.prototype.message`](error/message)
 Error message, defaults to `""`.
 
-[`AggregateError.prototype.name`](error/name)  
+[`AggregateError.prototype.name`](error/name)
 Error name, defaults to `AggregateError`.
 
 ## Examples
@@ -7528,7 +7528,7 @@ Error name, defaults to `AggregateError`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-aggregate-error-objects</span></a></td></tr></tbody></table>
@@ -7602,7 +7602,7 @@ The `Promise.all()` method takes an iterable of promises as an input, and return
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an [`Array`](../array).
 
 ### Return value
@@ -7774,7 +7774,7 @@ It is possible to change this behavior by handling possible rejections:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
@@ -7810,8 +7810,8 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</a>
 
 # Promise.allSettled()
@@ -7828,7 +7828,7 @@ In comparison, the Promise returned by [`Promise.all()`](all) may be more approp
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An [iterable](../../iteration_protocols) object, such as an [`Array`](../array), in which each member is a `Promise`.
 
 ### Return value
@@ -7860,7 +7860,7 @@ For each outcome object, a `status` string is present. If the status is `fulfill
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.allsettled</span></a></td></tr></tbody></table>
@@ -7899,8 +7899,8 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled</a>
 
 # Warning: -file- is being assigned a //\# sourceMappingURL, but already has one
@@ -7956,7 +7956,7 @@ The `anchor()` method creates a string beginning with an `<a name="...">` start 
 
 ### Parameters
 
-`name`  
+`name`
 A string representing a `name` value to put into the generated `<a name="...">` start tag.
 
 ### Return value
@@ -7981,7 +7981,7 @@ will output the following HTML:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.anchor</span></a></td></tr></tbody></table>
@@ -8018,8 +8018,8 @@ No
 
 -   [`String.prototype.link()`](link)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor</a>
 
 # Atomics.and()
@@ -8032,13 +8032,13 @@ The static ` Atomics``.and() ` method computes a bitwise AND with a given value 
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to compute the bitwise AND.
 
-`value`  
+`value`
 The number to compute the bitwise AND with.
 
 ### Return value
@@ -8076,7 +8076,7 @@ For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.and</span></a></td></tr></tbody></table>
@@ -8153,7 +8153,7 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An [iterable](../../iteration_protocols#the_iterable_protocol) object, such as an [`Array`](../array).
 
 ### Return value
@@ -8246,7 +8246,7 @@ In this example, we have a function that fetches an image and returns a blob. We
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
@@ -8284,8 +8284,8 @@ No
 -   [`Promise.all()`](all)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any</a>
 
 # Function.prototype.apply()
@@ -8299,12 +8299,12 @@ The `apply()` method calls a function with a given `this` value, and `arguments`
 
 ### Parameters
 
-`thisArg`  
+`thisArg`
 The value of `this` provided for the call to `func`.
 
 Note that `this` may not be the actual value seen by the method: if the method is a function in [non-strict mode](../../strict_mode) code, [`null`](../null) and [`undefined`](../undefined) will be replaced with the global object, and primitive values will be boxed. This argument is required.
 
-`argsArray` <span class="badge inline optional">Optional</span>  
+`argsArray` <span class="badge inline optional">Optional</span>
 An array-like object, specifying the arguments with which `func` should be called, or [`null`](../null) or [`undefined`](../undefined) if no arguments should be provided to the function.
 
 Starting with ECMAScript 5 these arguments can be a generic array-like object instead of an array. See below for [browser compatibility](#browser_compatibility) information.
@@ -8492,13 +8492,13 @@ The type of individual arguments can be determined by indexing `arguments`:
 
 ## Properties
 
-[`arguments.callee`](arguments/callee)  
+[`arguments.callee`](arguments/callee)
 Reference to the currently executing function that the arguments belong to. Forbidden in strict mode.
 
-[`arguments.length`](arguments/length)  
+[`arguments.length`](arguments/length)
 The number of arguments that were passed to the function.
 
-[`arguments[@@iterator]`](arguments/@@iterator)  
+[`arguments[@@iterator]`](arguments/@@iterator)
 Returns a new [Array iterator](../global_objects/array/@@iterator) object that contains the values for each index in `arguments`.
 
 ## Examples
@@ -8600,7 +8600,7 @@ And also:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
@@ -8892,7 +8892,7 @@ To help explain these properties and elements, see this example and then refer t
 
 The properties and elements returned from this match are as follows:
 
-<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code> 
+<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code>
 <br/>
 
 <span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr class="even"><td><code>index</code>
@@ -8908,126 +8908,126 @@ The properties and elements returned from this match are as follows:
 
 ## Constructor
 
-[`Array()`](array/array)  
+[`Array()`](array/array)
 Creates a new `Array` object.
 
 ## Static properties
 
-[`get Array[@@species]`](array/@@species)  
+[`get Array[@@species]`](array/@@species)
 The constructor function is used to create derived objects.
 
 ## Static methods
 
-[`Array.from()`](array/from)  
+[`Array.from()`](array/from)
 Creates a new `Array` instance from an array-like or iterable object.
 
-[`Array.isArray()`](array/isarray)  
+[`Array.isArray()`](array/isarray)
 Returns `true` if the argument is an array, or `false` otherwise.
 
-[`Array.of()`](array/of)  
+[`Array.of()`](array/of)
 Creates a new `Array` instance with a variable number of arguments, regardless of number or type of the arguments.
 
 ## Instance properties
 
-[`Array.prototype.length`](array/length)  
+[`Array.prototype.length`](array/length)
 Reflects the number of elements in an array.
 
-[`Array.prototype[@@unscopables]`](array/@@unscopables)  
+[`Array.prototype[@@unscopables]`](array/@@unscopables)
 A symbol containing property names to exclude from a [`with`](../statements/with) binding scope.
 
 ## Instance methods
 
-[`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>  
+[`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>
 Returns the array item at the given index. Accepts negative integers, which count back from the last item.
 
-[`Array.prototype.concat()`](array/concat)  
+[`Array.prototype.concat()`](array/concat)
 Returns a new array that is this array joined with other array(s) and/or value(s).
 
-[`Array.prototype.copyWithin()`](array/copywithin)  
+[`Array.prototype.copyWithin()`](array/copywithin)
 Copies a sequence of array elements within the array.
 
-[`Array.prototype.entries()`](array/entries)  
+[`Array.prototype.entries()`](array/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array.
 
-[`Array.prototype.every()`](array/every)  
+[`Array.prototype.every()`](array/every)
 Returns `true` if every element in this array satisfies the testing function.
 
-[`Array.prototype.fill()`](array/fill)  
+[`Array.prototype.fill()`](array/fill)
 Fills all the elements of an array from a start index to an end index with a static value.
 
-[`Array.prototype.filter()`](array/filter)  
+[`Array.prototype.filter()`](array/filter)
 Returns a new array containing all elements of the calling array for which the provided filtering function returns `true`.
 
-[`Array.prototype.find()`](array/find)  
+[`Array.prototype.find()`](array/find)
 Returns the found `element` in the array, if some element in the array satisfies the testing function, or `undefined` if not found.
 
-[`Array.prototype.findIndex()`](array/findindex)  
+[`Array.prototype.findIndex()`](array/findindex)
 Returns the found index in the array, if an element in the array satisfies the testing function, or `-1` if not found.
 
-[`Array.prototype.forEach()`](array/foreach)  
+[`Array.prototype.forEach()`](array/foreach)
 Calls a function for each element in the array.
 
-[`Array.prototype.includes()`](array/includes)  
+[`Array.prototype.includes()`](array/includes)
 Determines whether the array contains a value, returning `true` or `false` as appropriate.
 
-[`Array.prototype.indexOf()`](array/indexof)  
+[`Array.prototype.indexOf()`](array/indexof)
 Returns the first (least) index of an element within the array equal to an element, or `-1` if none is found.
 
-[`Array.prototype.join()`](array/join)  
+[`Array.prototype.join()`](array/join)
 Joins all elements of an array into a string.
 
-[`Array.prototype.keys()`](array/keys)  
+[`Array.prototype.keys()`](array/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array.
 
-[`Array.prototype.lastIndexOf()`](array/lastindexof)  
+[`Array.prototype.lastIndexOf()`](array/lastindexof)
 Returns the last (greatest) index of an element within the array equal to an element, or `-1` if none is found.
 
-[`Array.prototype.map()`](array/map)  
+[`Array.prototype.map()`](array/map)
 Returns a new array containing the results of calling a function on every element in this array.
 
-[`Array.prototype.pop()`](array/pop)  
+[`Array.prototype.pop()`](array/pop)
 Removes the last element from an array and returns that element.
 
-[`Array.prototype.push()`](array/push)  
+[`Array.prototype.push()`](array/push)
 Adds one or more elements to the end of an array, and returns the new `length` of the array.
 
-[`Array.prototype.reduce()`](array/reduce)  
+[`Array.prototype.reduce()`](array/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
 
-[`Array.prototype.reduceRight()`](array/reduceright)  
+[`Array.prototype.reduceRight()`](array/reduceright)
 Apply a function against an accumulator&gt; and each value of the array (from right-to-left) as to reduce it to a single value.
 
-[`Array.prototype.reverse()`](array/reverse)  
+[`Array.prototype.reverse()`](array/reverse)
 Reverses the order of the elements of an array _in place_. (First becomes the last, last becomes first.)
 
-[`Array.prototype.shift()`](array/shift)  
+[`Array.prototype.shift()`](array/shift)
 Removes the first element from an array and returns that element.
 
-[`Array.prototype.slice()`](array/slice)  
+[`Array.prototype.slice()`](array/slice)
 Extracts a section of the calling array and returns a new array.
 
-[`Array.prototype.some()`](array/some)  
+[`Array.prototype.some()`](array/some)
 Returns `true` if at least one element in this array satisfies the provided testing function.
 
-[`Array.prototype.sort()`](array/sort)  
+[`Array.prototype.sort()`](array/sort)
 Sorts the elements of an array in place and returns the array.
 
-[`Array.prototype.splice()`](array/splice)  
+[`Array.prototype.splice()`](array/splice)
 Adds and/or removes elements from an array.
 
-[`Array.prototype.toLocaleString()`](array/tolocalestring)  
+[`Array.prototype.toLocaleString()`](array/tolocalestring)
 Returns a localized string representing the array and its elements. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`Array.prototype.toString()`](array/tostring)  
+[`Array.prototype.toString()`](array/tostring)
 Returns a string representing the array and its elements. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Array.prototype.unshift()`](array/unshift)  
+[`Array.prototype.unshift()`](array/unshift)
 Adds one or more elements to the front of an array, and returns the new `length` of the array.
 
-[`Array.prototype.values()`](array/values)  
+[`Array.prototype.values()`](array/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-[`Array.prototype[@@iterator]()`](array/@@iterator)  
+[`Array.prototype[@@iterator]()`](array/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples
@@ -9159,27 +9159,27 @@ The `ArrayBuffer()` constructor creates a new `ArrayBuffer` of the given length 
 
 ## Constructor
 
-[`ArrayBuffer()`](arraybuffer/arraybuffer)  
+[`ArrayBuffer()`](arraybuffer/arraybuffer)
 Creates a new `ArrayBuffer` object.
 
 ## Static properties
 
-[`get ArrayBuffer[@@species]`](arraybuffer/@@species)  
+[`get ArrayBuffer[@@species]`](arraybuffer/@@species)
 The constructor function that is used to create derived objects.
 
 ## Static methods
 
-[`ArrayBuffer.isView(arg)`](arraybuffer/isview)  
+[`ArrayBuffer.isView(arg)`](arraybuffer/isview)
 Returns `true` if `arg` is one of the ArrayBuffer views, such as [typed array objects](typedarray) or a [`DataView`](dataview). Returns `false` otherwise.
 
 ## Instance properties
 
-[`ArrayBuffer.prototype.byteLength`](arraybuffer/bytelength)  
+[`ArrayBuffer.prototype.byteLength`](arraybuffer/bytelength)
 The read-only size, in bytes, of the `ArrayBuffer`. This is established when the array is constructed and cannot be changed.
 
 ## Instance methods
 
-[`ArrayBuffer.prototype.slice()`](arraybuffer/slice)  
+[`ArrayBuffer.prototype.slice()`](arraybuffer/slice)
 Returns a new `ArrayBuffer` whose contents are a copy of this `ArrayBuffer`'s bytes from `begin` (inclusive) up to `end` (exclusive). If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
 
 ## Examples
@@ -9193,7 +9193,7 @@ In this example, we create a 8-byte buffer with a [`Int32Array`](int32array) vie
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arraybuffer-objects</span></a></td></tr></tbody></table>
@@ -9380,7 +9380,7 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 ### Comparing traditional functions to arrow functions
 
-Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:  
+Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:
 NOTE: Each step along the way is a valid "arrow function"
 
     // Traditional Function
@@ -9782,7 +9782,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
@@ -9861,7 +9861,7 @@ $$\\forall x \\in \\lbrack{- 1};1\\rbrack,\\;\\mathtt{\\operatorname{Math.asin}(
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -9889,7 +9889,7 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.asin</span></a></td></tr></tbody></table>
@@ -9929,8 +9929,8 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin</a>
 
 # Math.asinh()
@@ -9945,7 +9945,7 @@ The `Math.asinh()` function returns the hyperbolic arcsine of a number, that is
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -9985,7 +9985,7 @@ Because `asinh()` is a static method of `Math`, you always use it as `Math.asinh
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asinh">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asinh">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.asinh</span></a></td></tr></tbody></table>
@@ -10024,8 +10024,8 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh</a>
 
 # BigInt.asIntN()
@@ -10038,10 +10038,10 @@ The `BigInt.asIntN` static method clamps a BigInt value to a signed integer valu
 
 ### Parameters
 
-`bits`  
+`bits`
 The amount of bits available for the integer size.
 
-`bigint`  
+`bigint`
 The BigInt value to clamp to fit into the supplied bits.
 
 ### Returns
@@ -10065,7 +10065,7 @@ The `BigInt.asIntN()` method can be useful to stay in the range of 64-bit arithm
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asintn">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asintn">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-bigint.asintn</span></a></td></tr></tbody></table>
@@ -10113,10 +10113,10 @@ The `Object.assign()` method copies all [enumerable](propertyisenumerable) [own 
 
 ### Parameters
 
-`target`  
+`target`
 The target object — what to apply the sources' properties to, which is returned after it is modified.
 
-`sources`  
+`sources`
 The source object(s) — objects containing the properties you want to apply.
 
 ### Return value
@@ -10328,7 +10328,7 @@ The properties are overwritten by other objects that have the same properties la
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.assign</span></a></td></tr></tbody></table>
@@ -10365,8 +10365,8 @@ No
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign</a>
 
 # BigInt.asUintN()
@@ -10379,10 +10379,10 @@ The `BigInt.asUintN` static method clamps a BigInt value to an unsigned integer 
 
 ### Parameters
 
-`bits`  
+`bits`
 The amount of bits available for the integer size.
 
-`bigint`  
+`bigint`
 The BigInt value to clamp to fit into the supplied bits.
 
 ### Returns
@@ -10406,7 +10406,7 @@ The `BigInt.asUintN()` method can be useful to stay in the range of 64-bit arith
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-bigint.asuintn</span></a></td></tr></tbody></table>
@@ -10458,13 +10458,13 @@ Async functions may also be defined [as expressions](../operators/async_function
 
 ### Parameters
 
-`name`  
+`name`
 The function's name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function. The `await` mechanism may be used.
 
 ### Return value
@@ -10637,7 +10637,7 @@ For example, in the following code an unhandled promise rejection error will be 
 
 In `sequentialStart`, execution suspends 2 seconds for the first `await`, and then another second for the second `await`. The second timer is not created until the first has already fired, so the code finishes after 3 seconds.
 
-In `concurrentStart`, both timers are created and then `await`ed. The timers run concurrently, which means the code finishes in 2 rather than 3 seconds, i.e. the slowest timer.  
+In `concurrentStart`, both timers are created and then `await`ed. The timers run concurrently, which means the code finishes in 2 rather than 3 seconds, i.e. the slowest timer.
 However, the `await` calls still run in series, which means the second `await` will wait for the first one to finish. In this case, the result of the fastest timer is processed after the slowest.
 
 If you wish to safely perform two or more jobs in parallel, you must await a call to `Promise.all`, or `Promise.allSettled`.
@@ -10700,7 +10700,7 @@ This highlights the subtle difference between `return foo;` and `return await fo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-async-function-definitions</span></a></td></tr></tbody></table>
@@ -10738,8 +10738,8 @@ No
 -   [`await`](../operators/await)
 -   ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>
 
 # AsyncFunction
@@ -10758,10 +10758,10 @@ Note that `AsyncFunction` is _not_ a global object. It can be obtained with the 
 
 ### Parameters
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function definition.
 
 ## Description
@@ -10802,7 +10802,7 @@ Invoking the `AsyncFunction` constructor as a function (without using the `new` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-async-function-objects</span></a></td></tr></tbody></table>
@@ -10898,7 +10898,7 @@ There are currently no built-in JavaScript objects that have the `[Symbol.asyncI
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.asynciterator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.asynciterator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.asynciterator</span></a></td></tr></tbody></table>
@@ -10934,8 +10934,8 @@ No
 -   [Iteration protocols](../../iteration_protocols)
 -   [for await... of](../../statements/for-await...of)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator</a>
 
 # Array.prototype.at()
@@ -10950,7 +10950,7 @@ This is not to suggest there is anything wrong with using the square bracket not
 
 ### Parameters
 
-`index`  
+`index`
 The index (position) of the array element to be returned. Supports relative indexing from the end of the array when passed a negative index; i.e. if a negative number is used, the element returned will be found by counting back from the end of the array.
 
 ### Return value
@@ -11011,7 +11011,7 @@ $$\\mathtt{\\operatorname{Math.atan}(x)} = \\arctan(x) = \\text{the\\ unique}\\;
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -11042,7 +11042,7 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.atan</span></a></td></tr></tbody></table>
@@ -11082,8 +11082,8 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan</a>
 
 # Math.atan2()
@@ -11096,10 +11096,10 @@ The `Math.atan2()` function returns the angle in the plane (in radians) between 
 
 ### Parameters
 
-`y`  
+`y`
 The y coordinate of the point.
 
-`x`  
+`x`
 The x coordinate of the point
 
 ### Return value
@@ -11137,7 +11137,7 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan2">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan2">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.atan2</span></a></td></tr></tbody></table>
@@ -11177,8 +11177,8 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2</a>
 
 # Math.atanh()
@@ -11193,7 +11193,7 @@ The `Math.atanh()` function returns the hyperbolic arctangent of a number, that 
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -11227,7 +11227,7 @@ For |_x_| &lt; 1, we have $\\operatorname{artanh}(x) = \\frac{1}{2}\\ln\\lef
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atanh">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atanh">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.atanh</span></a></td></tr></tbody></table>
@@ -11266,8 +11266,8 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh</a>
 
 # Atomics
@@ -11288,40 +11288,40 @@ The `wait()` and `notify()` methods are modeled on Linux futexes ("fast user-spa
 
 ## Static methods
 
-[`Atomics.add()`](atomics/add)  
+[`Atomics.add()`](atomics/add)
 Adds the provided value to the existing value at the specified index of the array. Returns the old value at that index.
 
-[`Atomics.and()`](atomics/and)  
+[`Atomics.and()`](atomics/and)
 Computes a bitwise AND on the value at the specified index of the array with the provided value. Returns the old value at that index.
 
-[`Atomics.compareExchange()`](atomics/compareexchange)  
+[`Atomics.compareExchange()`](atomics/compareexchange)
 Stores a value at the specified index of the array, if it equals a value. Returns the old value.
 
-[`Atomics.exchange()`](atomics/exchange)  
+[`Atomics.exchange()`](atomics/exchange)
 Stores a value at the specified index of the array. Returns the old value.
 
-[`Atomics.isLockFree(size)`](atomics/islockfree)  
+[`Atomics.isLockFree(size)`](atomics/islockfree)
 An optimization primitive that can be used to determine whether to use locks or atomic operations. Returns `true` if an atomic operation on arrays of the given element size will be implemented using a hardware atomic operation (as opposed to a lock). Experts only.
 
-[`Atomics.load()`](atomics/load)  
+[`Atomics.load()`](atomics/load)
 Returns the value at the specified index of the array.
 
-[`Atomics.notify()`](atomics/notify)  
+[`Atomics.notify()`](atomics/notify)
 Notifies agents that are waiting on the specified index of the array. Returns the number of agents that were notified.
 
-[`Atomics.or()`](atomics/or)  
+[`Atomics.or()`](atomics/or)
 Computes a bitwise OR on the value at the specified index of the array with the provided value. Returns the old value at that index.
 
-[`Atomics.store()`](atomics/store)  
+[`Atomics.store()`](atomics/store)
 Stores a value at the specified index of the array. Returns the value.
 
-[`Atomics.sub()`](atomics/sub)  
+[`Atomics.sub()`](atomics/sub)
 Subtracts a value at the specified index of the array. Returns the old value at that index.
 
-[`Atomics.wait()`](atomics/wait)  
+[`Atomics.wait()`](atomics/wait)
 Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either "`ok`", "`not-equal`", or "`timed-out`". If waiting is not allowed in the calling agent then it throws an [`Error`](error) exception. (Most browsers will not allow `wait()` on the browser's main thread.)
 
-[`Atomics.xor()`](atomics/xor)  
+[`Atomics.xor()`](atomics/xor)
 Computes a bitwise XOR on the value at the specified index of the array with the provided value. Returns the old value at that index.
 
 ## Examples
@@ -11382,7 +11382,7 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics-object</span></a></td></tr></tbody></table>
@@ -12154,10 +12154,10 @@ The `await` operator is used to wait for a [`Promise`](../global_objects/promise
 
     [rv] = await expression;
 
-`expression`  
+`expression`
 A [`Promise`](../global_objects/promise) or any value to wait for.
 
-`rv`  
+`rv`
 Returns the fulfilled value of the promise, or the value itself if it's not a `Promise`.
 
 ## Description
@@ -12499,7 +12499,7 @@ An [`Intl.Locale`](../locale) object represents a parsed local and options for t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.baseName</span></a></td></tr></tbody></table>
@@ -12576,7 +12576,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.big</span></a></td></tr></tbody></table>
@@ -12612,8 +12612,8 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.small()`](small)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big</a>
 
 # BigInt
@@ -12785,26 +12785,26 @@ A BigInt value behaves like a Number value in cases where:
 
 ## Constructor
 
-[`BigInt()`](bigint/bigint)  
+[`BigInt()`](bigint/bigint)
 Creates a new BigInt value.
 
 ## Static methods
 
-[`BigInt.asIntN()`](bigint/asintn)  
+[`BigInt.asIntN()`](bigint/asintn)
 Clamps a BigInt value to a signed integer value, and returns that value.
 
-[`BigInt.asUintN()`](bigint/asuintn)  
+[`BigInt.asUintN()`](bigint/asuintn)
 Clamps a BigInt value to an unsigned integer value, and returns that value.
 
 ## Instance methods
 
-[`BigInt.prototype.toLocaleString()`](bigint/tolocalestring)  
+[`BigInt.prototype.toLocaleString()`](bigint/tolocalestring)
 Returns a string with a language-sensitive representation of this BigInt value. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`BigInt.prototype.toString()`](bigint/tostring)  
+[`BigInt.prototype.toString()`](bigint/tostring)
 Returns a string representing this BigInt value in the specified radix (base). Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`BigInt.prototype.valueOf()`](bigint/valueof)  
+[`BigInt.prototype.valueOf()`](bigint/valueof)
 Returns this BigInt value. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
 ## Usage recommendations
@@ -12864,7 +12864,7 @@ Instead of throwing, `JSON.stringify` now produces a string like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-bigint-objects</span></a></td></tr></tbody></table>
@@ -13064,117 +13064,117 @@ The `BigInt64Array` typed array represents an array of 64-bit signed integers in
 
 ## Constructor
 
-[`BigInt64Array()`](bigint64array/bigint64array)  
+[`BigInt64Array()`](bigint64array/bigint64array)
 Creates a new `BigInt64Array` object.
 
 ## Static properties
 
-[`BigInt64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`BigInt64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `8` in the case of a `BigInt64Array`.
 
-[`BigInt64Array.name`](typedarray/name)  
+[`BigInt64Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is "BigInt64Array".
 
 ## Static methods
 
-[`BigInt64Array.from()`](typedarray/from)  
+[`BigInt64Array.from()`](typedarray/from)
 Creates a new `BigInt64Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`BigInt64Array.of()`](typedarray/of)  
+[`BigInt64Array.of()`](typedarray/of)
 Creates a new `BigInt64Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`BigInt64Array.prototype.buffer`](typedarray/buffer)  
+[`BigInt64Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `BigInt64Array`. This is fixed at construction time and thus **read only**.
 
-[`BigInt64Array.prototype.byteLength`](typedarray/bytelength)  
+[`BigInt64Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `BigInt64Array` from the start of its [`ArrayBuffer`](arraybuffer). This is fixed at construction time and thus **read only.**
 
-[`BigInt64Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`BigInt64Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `BigInt64Array` from the start of its [`ArrayBuffer`](arraybuffer). This is fixed at construction time and thus **read only.**
 
-[`BigInt64Array.prototype.length`](typedarray/length)  
+[`BigInt64Array.prototype.length`](typedarray/length)
 Returns the number of elements hold in the `BigInt64Array`. This is fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`BigInt64Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`BigInt64Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`BigInt64Array.prototype.entries()`](typedarray/entries)  
+[`BigInt64Array.prototype.entries()`](typedarray/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`BigInt64Array.prototype.every()`](typedarray/every)  
+[`BigInt64Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`BigInt64Array.prototype.fill()`](typedarray/fill)  
+[`BigInt64Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`BigInt64Array.prototype.filter()`](typedarray/filter)  
+[`BigInt64Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns true. See also [`Array.prototype.filter()`](array/filter).
 
-[`BigInt64Array.prototype.find()`](typedarray/find)  
+[`BigInt64Array.prototype.find()`](typedarray/find)
 Returns the found value in the array if an element in the array satisfies the provided testing function, or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`BigInt64Array.prototype.findIndex()`](typedarray/findindex)  
+[`BigInt64Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array if an element in the array satisfies the provided testing function, or -1 if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`BigInt64Array.prototype.forEach()`](typedarray/foreach)  
+[`BigInt64Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`BigInt64Array.prototype.includes()`](typedarray/includes)  
+[`BigInt64Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`BigInt64Array.prototype.indexOf()`](typedarray/indexof)  
+[`BigInt64Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`BigInt64Array.prototype.join()`](typedarray/join)  
+[`BigInt64Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`BigInt64Array.prototype.keys()`](typedarray/keys)  
+[`BigInt64Array.prototype.keys()`](typedarray/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`BigInt64Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`BigInt64Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`BigInt64Array.prototype.map()`](typedarray/map)  
+[`BigInt64Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`BigInt64Array.prototype.reduce()`](typedarray/reduce)  
+[`BigInt64Array.prototype.reduce()`](typedarray/reduce)
 Applies a function against an accumulator and each value of the array (from left-to-right) so as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`BigInt64Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`BigInt64Array.prototype.reduceRight()`](typedarray/reduceright)
 Applies a function against an accumulator and each value of the array (from right-to-left) so as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`BigInt64Array.prototype.reverse()`](typedarray/reverse)  
+[`BigInt64Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`BigInt64Array.prototype.set()`](typedarray/set)  
+[`BigInt64Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`BigInt64Array.prototype.slice()`](typedarray/slice)  
+[`BigInt64Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`BigInt64Array.prototype.some()`](typedarray/some)  
+[`BigInt64Array.prototype.some()`](typedarray/some)
 Returns true if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`BigInt64Array.prototype.sort()`](typedarray/sort)  
+[`BigInt64Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`BigInt64Array.prototype.subarray()`](typedarray/subarray)  
+[`BigInt64Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `BigUint64Array` from the given start and end element index.
 
-[`BigInt64Array.prototype.values()`](typedarray/values)  
+[`BigInt64Array.prototype.values()`](typedarray/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
-[`BigInt64Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
+[`BigInt64Array.prototype.toLocaleString()`](typedarray/tolocalestring)
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
 
-[`BigInt64Array.prototype.toString()`](typedarray/tostring)  
+[`BigInt64Array.prototype.toString()`](typedarray/tostring)
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
-[`BigInt64Array.prototype[@@iterator]()`](typedarray/@@iterator)  
+[`BigInt64Array.prototype[@@iterator]()`](typedarray/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples
@@ -13208,7 +13208,7 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
@@ -13279,117 +13279,117 @@ The `BigUint64Array` typed array represents an array of 64-bit unsigned integers
 
 ## Constructor
 
-[`BigUint64Array()`](biguint64array/biguint64array)  
+[`BigUint64Array()`](biguint64array/biguint64array)
 Creates a new `BigUint64Array` object.
 
 ## Static properties
 
-[`BigUint64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`BigUint64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `8` in the case of a `BigUint64Array`.
 
-[`BigUint64Array.name`](typedarray/name)  
+[`BigUint64Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `BigUint64Array` type this is "BigUint64Array".
 
 ## Static methods
 
-[`BigUint64Array.from()`](typedarray/from)  
+[`BigUint64Array.from()`](typedarray/from)
 Creates a new `BigUint64Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`BigUint64Array.of()`](typedarray/of)  
+[`BigUint64Array.of()`](typedarray/of)
 Creates a new `BigUint64Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`BigUint64Array.prototype.buffer`](typedarray/buffer)  
+[`BigUint64Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `BigUint64Array`. This is fixed at construction time and thus **read only**.
 
-[`BigUint64Array.prototype.byteLength`](typedarray/bytelength)  
+[`BigUint64Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `BigUint64Array` from the start of its [`ArrayBuffer`](arraybuffer). This is fixed at construction time and thus **read only.**
 
-[`BigUint64Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`BigUint64Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `BigUint64Array` from the start of its [`ArrayBuffer`](arraybuffer). This is fixed at construction time and thus **read only.**
 
-[`BigUint64Array.prototype.length`](typedarray/length)  
+[`BigUint64Array.prototype.length`](typedarray/length)
 Returns the number of elements hold in the `BigUint64Array`. This is fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`BigUint64Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`BigUint64Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`BigUint64Array.prototype.entries()`](typedarray/entries)  
+[`BigUint64Array.prototype.entries()`](typedarray/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`BigUint64Array.prototype.every()`](typedarray/every)  
+[`BigUint64Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`BigUint64Array.prototype.fill()`](typedarray/fill)  
+[`BigUint64Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`BigUint64Array.prototype.filter()`](typedarray/filter)  
+[`BigUint64Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns true. See also [`Array.prototype.filter()`](array/filter).
 
-[`BigUint64Array.prototype.find()`](typedarray/find)  
+[`BigUint64Array.prototype.find()`](typedarray/find)
 Returns the found value in the array if an element in the array satisfies the provided testing function, or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`BigUint64Array.prototype.findIndex()`](typedarray/findindex)  
+[`BigUint64Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array if an element in the array satisfies the provided testing function, or -1 if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`BigUint64Array.prototype.forEach()`](typedarray/foreach)  
+[`BigUint64Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`BigUint64Array.prototype.includes()`](typedarray/includes)  
+[`BigUint64Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`BigUint64Array.prototype.indexOf()`](typedarray/indexof)  
+[`BigUint64Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`BigUint64Array.prototype.join()`](typedarray/join)  
+[`BigUint64Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`BigUint64Array.prototype.keys()`](typedarray/keys)  
+[`BigUint64Array.prototype.keys()`](typedarray/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`BigUint64Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`BigUint64Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`BigUint64Array.prototype.map()`](typedarray/map)  
+[`BigUint64Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`BigUint64Array.prototype.reduce()`](typedarray/reduce)  
+[`BigUint64Array.prototype.reduce()`](typedarray/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) so as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`BigUint64Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`BigUint64Array.prototype.reduceRight()`](typedarray/reduceright)
 Applies a function against an accumulator and each value of the array (from right-to-left) so as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`BigUint64Array.prototype.reverse()`](typedarray/reverse)  
+[`BigUint64Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`BigUint64Array.prototype.set()`](typedarray/set)  
+[`BigUint64Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`BigUint64Array.prototype.slice()`](typedarray/slice)  
+[`BigUint64Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`BigUint64Array.prototype.some()`](typedarray/some)  
+[`BigUint64Array.prototype.some()`](typedarray/some)
 Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`BigUint64Array.prototype.sort()`](typedarray/sort)  
+[`BigUint64Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`BigUint64Array.prototype.subarray()`](typedarray/subarray)  
+[`BigUint64Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `BigUint64Array` from the given start and end element index.
 
-[`BigUint64Array.prototype.values()`](typedarray/values)  
+[`BigUint64Array.prototype.values()`](typedarray/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
-[`BigUint64Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
+[`BigUint64Array.prototype.toLocaleString()`](typedarray/tolocalestring)
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
 
-[`BigUint64Array.prototype.toString()`](typedarray/tostring)  
+[`BigUint64Array.prototype.toString()`](typedarray/tostring)
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
-[`BigUint64Array.prototype[@@iterator]()`](typedarray/@@iterator)  
+[`BigUint64Array.prototype[@@iterator]()`](typedarray/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples
@@ -13423,7 +13423,7 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
@@ -13501,10 +13501,10 @@ The `bind()` method creates a new function that, when called, has its `this` key
 
 ### Parameters
 
-`thisArg`  
+`thisArg`
 The value to be passed as the `this` parameter to the target function `func` when the bound function is called. The value is ignored if the bound function is constructed using the [`new`](../../operators/new) operator. When using `bind` to create a function (supplied as a callback) inside a `setTimeout`, any primitive value passed as `thisArg` is converted to object. If no arguments are provided to `bind `, or if the `thisArg` is `null` or `undefined`, the `this` of the executing scope is treated as the `thisArg` for the new function.
 
-`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>  
+`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>
 Arguments to prepend to arguments provided to the bound function when invoking `func`.
 
 ### Return value
@@ -13517,16 +13517,16 @@ The `bind()` function creates a new **bound function**, which is an _exotic func
 
 A bound function has the following internal properties:
 
-`[[BoundTargetFunction]]`  
+`[[BoundTargetFunction]]`
 The wrapped function object
 
-`[[BoundThis]]`  
+`[[BoundThis]]`
 The value that is always passed as `this` value when calling the wrapped function.
 
-`[[BoundArguments]]`  
+`[[BoundArguments]]`
 A list of values whose elements are used as the first arguments to any call to the wrapped function.
 
-`[[Call]]`  
+`[[Call]]`
 Executes code associated with this object. Invoked via a function call expression. The arguments to the internal method are a `this` value and a list containing the arguments passed to the function by a call expression.
 
 When a bound function is called, it calls internal method `[[Call]]` on `[[BoundTargetFunction]]`, with following arguments `Call(boundThis, ...args)`. Where `boundThis` is `[[BoundThis]]`, `args` is `[[BoundArguments]]`, followed by the arguments passed by the function call.
@@ -13780,7 +13780,7 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function.prototype.bind</span></a></td></tr></tbody></table>
@@ -13859,7 +13859,7 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-BitwiseANDExpression</span></a></td></tr></tbody></table>
@@ -13895,8 +13895,8 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise AND assignment operator](bitwise_and_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND</a>
 
 # Bitwise AND assignment (&=)
@@ -13919,7 +13919,7 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -13955,8 +13955,8 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise AND operator](bitwise_and)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment</a>
 
 # Bitwise NOT (~)
@@ -14000,7 +14000,7 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-bitwise-not-operator</span></a></td></tr></tbody></table>
@@ -14035,8 +14035,8 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT</a>
 
 # Bitwise OR (|)
@@ -14081,7 +14081,7 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Bitwise OR expression' in that specification.</span></a></td></tr></tbody></table>
@@ -14117,8 +14117,8 @@ Bitwise ORing any number `x` with `0` yields `x`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise OR assignment operator](bitwise_or_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR</a>
 
 # Bitwise OR assignment (|=)
@@ -14143,7 +14143,7 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -14180,8 +14180,8 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 -   [Bitwise OR operator](bitwise_or)
 -   [Logical OR assignment (`||=`)](logical_or_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment</a>
 
 # Bitwise XOR (^)
@@ -14226,7 +14226,7 @@ Bitwise XORing any number `x` with `0` yields `x`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseXORExpression">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseXORExpression">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Bitwise XOR expression' in that specification.</span></a></td></tr></tbody></table>
@@ -14262,8 +14262,8 @@ Bitwise XORing any number `x` with `0` yields `x`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise XOR assignment operator](bitwise_xor_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR</a>
 
 # Bitwise XOR assignment (^=)
@@ -14293,7 +14293,7 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -14329,8 +14329,8 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise XOR operator](bitwise_xor)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment</a>
 
 # String.prototype.blink()
@@ -14370,7 +14370,7 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.blink">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.blink">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.blink</span></a></td></tr></tbody></table>
@@ -14407,8 +14407,8 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink</a>
 
 # block
@@ -14429,10 +14429,10 @@ A **block statement** (or **compound statement** in other languages) is used to 
       StatementList
     }
 
-`StatementList`  
+`StatementList`
 Statements grouped within the block statement.
 
-`LabelIdentifier`  
+`LabelIdentifier`
 An optional [label](label) for visual identification or as a target for [`break`](break).
 
 ## Description
@@ -14483,7 +14483,7 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-block">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-block">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-block</span></a></td></tr></tbody></table>
@@ -14520,8 +14520,8 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 -   [`if...else`](if...else)
 -   [`let`](let)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block</a>
 
 # String.prototype.bold()
@@ -14559,7 +14559,7 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.bold</span></a></td></tr></tbody></table>
@@ -14596,8 +14596,8 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold</a>
 
 # Boolean
@@ -14643,15 +14643,15 @@ Do not use a `Boolean` object in place of a `Boolean` primitive.
 
 ## Constructor
 
-[`Boolean()`](boolean/boolean)  
+[`Boolean()`](boolean/boolean)
 Creates a new `Boolean` object.
 
 ## Instance methods
 
-[`Boolean.prototype.toString()`](boolean/tostring)  
+[`Boolean.prototype.toString()`](boolean/tostring)
 Returns a string of either `true` or `false` depending upon the value of the object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Boolean.prototype.valueOf()`](boolean/valueof)  
+[`Boolean.prototype.valueOf()`](boolean/valueof)
 Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
 ## Examples
@@ -14675,7 +14675,7 @@ Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-boolean-objects</span></a></td></tr></tbody></table>
@@ -14828,7 +14828,7 @@ The `break` terminates the current loop, [`switch`](switch), or [label](label) s
 
     break [label];
 
-`label` <span class="badge inline optional">Optional</span>  
+`label` <span class="badge inline optional">Optional</span>
 Identifier associated with the label of the statement. If the statement is not a loop or [`switch`](switch), this is required.
 
 ## Description
@@ -14930,7 +14930,7 @@ The following code also uses `break` statements with labeled blocks, but generat
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Break statement' in that specification.</span></a></td></tr></tbody></table>
@@ -14967,8 +14967,8 @@ The following code also uses `break` statements with labeled blocks, but generat
 -   [label](label)
 -   [`switch`](switch)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break</a>
 
 # WebAssembly.Memory.prototype.buffer
@@ -14993,7 +14993,7 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-memory-buffer</span></a></td></tr></tbody></table>
@@ -15034,8 +15034,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer</a>
 
 # SharedArrayBuffer.prototype.byteLength
@@ -15055,7 +15055,7 @@ The `byteLength` property is an accessor property whose set accessor function is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span></a></td></tr></tbody></table>
@@ -15124,8 +15124,8 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 -   [`SharedArrayBuffer`](../sharedarraybuffer)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength</a>
 
 # TypedArray.prototype.byteOffset
@@ -15150,7 +15150,7 @@ The `byteOffset` property is an accessor property whose set accessor function is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-%typedarray%.prototype.byteoffset</span></a></td></tr></tbody></table>
@@ -15186,8 +15186,8 @@ The `byteOffset` property is an accessor property whose set accessor function is
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset</a>
 
 # TypedArray.BYTES_PER_ELEMENT
@@ -15228,7 +15228,7 @@ no
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-typedarray.bytes_per_element</span></a></td></tr></tbody></table>
@@ -15264,8 +15264,8 @@ no
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT</a>
 
 # Intl.Locale.prototype.calendar
@@ -15298,7 +15298,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.calendar</span></a></td></tr></tbody></table>
@@ -15350,14 +15350,14 @@ The `call()` method calls a function with a given `this` value and arguments pro
 
 ### Parameters
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 The value to use as `this` when calling `func`.
 
 **Note:** In certain cases, `thisArg` may not be the actual value seen by the method.
 
 If the method is a function in [non-strict mode](../../strict_mode), [`null`](../null) and [`undefined`](../undefined) will be replaced with the global object, and primitive values will be converted to objects.
 
-`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>  
+`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>
 Arguments for the function.
 
 ### Return value
@@ -15464,7 +15464,7 @@ In the example below, we invoke the `display` function without passing the first
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Function.prototype.call' in that specification.</span></a></td></tr></tbody></table>
@@ -15664,7 +15664,7 @@ However, in a case like the following, there are not alternatives to `arguments.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
@@ -16127,7 +16127,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.caseFirst</span></a></td></tr></tbody></table>
@@ -16179,10 +16179,10 @@ The `catch()` method returns a [`Promise`](../promise) and deals with rejected c
 
 ### Parameters
 
-`onRejected`  
+`onRejected`
 A [`Function`](../function) called when the `Promise` is rejected. This function has one argument:
 
-`reason`  
+`reason`
 The rejection reason.
 
 The Promise returned by `catch()` is rejected if `onRejected` throws an error or returns a Promise which is itself rejected; otherwise, it is resolved.
@@ -16306,7 +16306,7 @@ The `catch` method is used for error handling in promise composition. Since it r
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.prototype.catch</span></a></td></tr></tbody></table>
@@ -16342,8 +16342,8 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.prototype.then()`](then)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch</a>
 
 # Math.cbrt()
@@ -16358,7 +16358,7 @@ $$\\mathtt{Math.cbrt(x)} = \\sqrt\[3\]{x} = \\text{the\\ unique}\\; y\\;\\text{s
 
 ### Parameters
 
-x  
+x
 A number.
 
 ### Return value
@@ -16398,7 +16398,7 @@ For all *x* ≥ 0, have $\\sqrt\[3\]{x} = x^{1/3}$ so this can be emulated b
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cbrt">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cbrt">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.cbrt</span></a></td></tr></tbody></table>
@@ -16434,8 +16434,8 @@ No
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt</a>
 
 # Math.ceil()
@@ -16450,7 +16450,7 @@ The `Math.ceil()` function always rounds a number up to the next largest integer
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -16547,7 +16547,7 @@ The following example shows example usage of `Math.ceil()`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.ceil</span></a></td></tr></tbody></table>
@@ -16586,8 +16586,8 @@ The following example shows example usage of `Math.ceil()`.
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil</a>
 
 # String.prototype.charAt()
@@ -16600,7 +16600,7 @@ The [`String`](../string) object's `charAt()` method returns a new string consis
 
 ### Parameters
 
-`index`  
+`index`
 An integer between `0` and `str.length - 1`. If the `index` cannot be converted to the integer or no `index` is provided, the default is `0`, so the first character of `str` is returned.
 
 ### Return value
@@ -16782,7 +16782,7 @@ While the previous example may be more useful for programs that must support non
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.charAt' in that specification.</span></a></td></tr></tbody></table>
@@ -16823,8 +16823,8 @@ While the previous example may be more useful for programs that must support non
 -   [`String.fromCodePoint()`](fromcodepoint)
 -   [JavaScript has a Unicode problem – Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a>
 
 # String.prototype.charCodeAt()
@@ -16839,7 +16839,7 @@ The UTF-16 code unit matches the Unicode code point for code points which can be
 
 ### Parameters
 
-`index`  
+`index`
 An integer greater than or equal to `0` and less than the `length` of the string. If `index` is not a number, it defaults to `0`.
 
 ### Return value
@@ -16942,7 +16942,7 @@ This version might be used in for loops and the like when it is unknown whether 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.charcodeat</span></a></td></tr></tbody></table>
@@ -16980,8 +16980,8 @@ This version might be used in for loops and the like when it is unknown whether 
 -   [`String.fromCodePoint()`](fromcodepoint)
 -   [`String.prototype.codePointAt()`](codepointat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt</a>
 
 # class expression
@@ -17052,7 +17052,7 @@ If you want to refer to the current class inside the class body, you can create 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-class-definitions</span></a></td></tr></tbody></table>
@@ -17089,8 +17089,8 @@ No
 -   [class declaration](../statements/class)
 -   [Classes](../classes)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class</a>
 
 # Classes
@@ -17473,7 +17473,7 @@ If you're experimenting with code in a web browser, such as the Firefox Web Cons
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
@@ -17843,7 +17843,7 @@ The `clear()` method removes all elements from a `Set` object.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-set.prototype.clear</span></a></td></tr></tbody></table>
@@ -17879,8 +17879,8 @@ The `clear()` method removes all elements from a `Set` object.
 -   [`Set`](../set)
 -   [`Set.prototype.delete()`](delete)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear</a>
 
 # Math.clz32()
@@ -17893,7 +17893,7 @@ The `Math.clz32()` function returns the number of leading zero bits in the 32-bi
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -18019,7 +18019,7 @@ The following polyfill is the most efficient.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.clz32</span></a></td></tr></tbody></table>
@@ -18055,8 +18055,8 @@ No
 -   [`Math`](../math)
 -   [`Math.imul`](imul)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32</a>
 
 # String.prototype.codePointAt()
@@ -18069,7 +18069,7 @@ The `codePointAt()` method returns a non-negative integer that is the UTF-16 cod
 
 ### Parameters
 
-`pos`  
+`pos`
 Position of an element in `str` to return the code point value from.
 
 ### Return value
@@ -18157,7 +18157,7 @@ The following extends Strings to include the `codePointAt()` function as specifi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.codepointat">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.codepointat">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.codepointat</span></a></td></tr></tbody></table>
@@ -18195,8 +18195,8 @@ No
 -   [`String.prototype.charCodeAt()`](charcodeat)
 -   [`String.prototype.charAt()`](charat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt</a>
 
 # Intl.Locale.prototype.collation
@@ -18233,7 +18233,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.collation</span></a></td></tr></tbody></table>
@@ -18282,32 +18282,32 @@ The `Intl.Collator()` constructor creates [`Intl.Collator`](../collator) objects
 
 ### Parameters
 
-`locales` <span class="badge inline optional">Optional</span>  
+`locales` <span class="badge inline optional">Optional</span>
 Optional. A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl page](../../intl#locale_identification_and_negotiation).
 
 The following Unicode extension keys are allowed:
 
 **Note:** These keys can usually also be set with `options` (as listed below). When both are set, the `options` property takes precedence.
 
-`co`  
+`co`
 Variant collations for certain locales. Possible values include: "`big5han`", "`dict`", "`direct`", "`ducet`", "`gb2312`", "`phonebk`", "`phonetic`", "`pinyin`", "`reformed`", "`searchjl`", "`stroke`", "`trad`", "`unihan`". This option can be also be set through the `options` property "`collation`".
 
-`kn`  
+`kn`
 Whether numeric collation should be used, such that "1" &lt; "2" &lt; "10". Possible values are "`true`" and "`false`". This option can be also be set through the `options` property "`numeric`".
 
-`kf`  
+`kf`
 Whether upper case or lower case should sort first. Possible values are "`upper`", "`lower`", or "`false`" (use the locale's default). This option can be also be set through the `options` property "`caseFirst`".
 
-`options` <span class="badge inline optional">Optional</span>  
+`options` <span class="badge inline optional">Optional</span>
 An object with some or all of the following properties:
 
-`localeMatcher`  
+`localeMatcher`
 The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
-`usage`  
+`usage`
 Whether the comparison is for sorting or for searching for matching strings. Possible values are "`sort`" and "`search`"; the default is "`sort`".
 
-`sensitivity`  
+`sensitivity`
 Which differences in the strings should lead to non-zero result values. Possible values are:
 
 -   "`base`": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.
@@ -18317,20 +18317,20 @@ Which differences in the strings should lead to non-zero result values. Possible
 
 The default is "`variant`" for usage "`sort`"; it's locale dependent for usage "`search`".
 
-`ignorePunctuation`  
+`ignorePunctuation`
 Whether punctuation should be ignored. Possible values are `true` and `false`; the default is `false`.
 
-`numeric`  
+`numeric`
 Whether numeric collation should be used, such that "1" &lt; "2" &lt; "10". Possible values are `true` and `false`; the default is `false`.
 
 **Note:** This option can also be set through the `kn` Unicode extension key; if both are provided, this `options` property takes precedence.
 
-`caseFirst`  
+`caseFirst`
 Whether upper case or lower case should sort first. Possible values are "`upper`", "`lower`", or "`false`" (use the locale's default). This option can be set through an `options` property or through a Unicode extension key; if both are provided, the `options` property takes precedence.
 
 **Note:** This option can also be set through the `kf` Unicode extension key; if both are provided, this `options` property takes precedence.
 
-`collation`  
+`collation`
 Variant collations for certain locales. Possible values include: "`big5han`", "`dict`", "`direct`", "`ducet`", "`gb2312`", "`phonebk`" (only supported in German), "`phonetic`", "`pinyin`", "`reformed`", "`searchjl`", "`stroke`", "`trad`", "`unihan`".
 
 **Note:** This option can also be set through the `co` Unicode extension key; if both are provided, this `options` property takes precedence.
@@ -18349,7 +18349,7 @@ Note that the results shown in the code above can vary between browsers and brow
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-the-intl-collator-constructor</span></a></td></tr></tbody></table>
@@ -18503,7 +18503,7 @@ The **comma operator** (`,`) evaluates each of its operands (from left to right)
 
 ### Parameters
 
-`expr1`, `expr2`, `expr3`...  
+`expr1`, `expr2`, `expr3`...
 One or more expressions, the last of which is returned as the value of the compound expression.
 
 ## Usage notes
@@ -18545,7 +18545,7 @@ Another example that one could make with comma operator is processing before ret
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-comma-operator</span></a></td></tr></tbody></table>
@@ -18580,8 +18580,8 @@ Another example that one could make with comma operator is processing before ret
 
 -   [`for` loop](../statements/for)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator</a>
 
 # Intl.Collator.prototype.compare()
@@ -18594,8 +18594,8 @@ The `Intl.Collator.prototype.compare()` method compares two strings according to
 
 ### Parameters
 
-`string1`  
-`string2`  
+`string1`
+`string2`
 The strings to compare against each other.
 
 ## Description
@@ -18627,7 +18627,7 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.collator.prototype.compare</span></a></td></tr></tbody></table>
@@ -18675,16 +18675,16 @@ The static ` Atomics``.compareExchange() ` method exchanges a given replacement 
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to exchange a `value`.
 
-`expectedValue`  
+`expectedValue`
 The value to check for equality.
 
-`replacementValue`  
+`replacementValue`
 The number to exchange.
 
 ### Return value
@@ -18709,7 +18709,7 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.compareexchange">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.compareexchange">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.compareexchange</span></a></td></tr></tbody></table>
@@ -18783,8 +18783,8 @@ The table below details the differences between the methods available on the `Ob
 
 <table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Method Name</th><th><code>Object</code></th><th><code>Reflect</code></th></tr></thead><tbody><tr class="odd"><td><code>defineProperty()</code></td><td><a href="../object/defineproperty"><code>Object.defineProperty()</code></a> returns the object that was passed to the function. Returns a <code>TypeError</code> if the property was not successfully defined on the object.</td><td><a href="defineproperty"><code>Reflect.defineProperty()</code></a> returns <code>true</code> if the property was defined on the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>defineProperties()</code></td><td><a href="../object/defineproperties"><code>Object.defineProperties()</code></a> returns the objects that were passed to the function. Returns a <code>TypeError</code> if any properties were not successfully defined on the object.</td><td>N/A</td></tr><tr class="odd"><td><code>set()</code></td><td>N/A</td><td><a href="set"><code>Reflect.set()</code></a> returns <code>true</code> if the property was set successfully on the object and <code>false</code> if it was not. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="even"><td><code>get()</code></td><td>N/A</td><td><a href="get"><code>Reflect.get()</code></a> returns the value of the property. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="odd"><td><code>deleteProperty()</code></td><td>N/A</td><td><a href="deleteproperty"><code>Reflect.deleteProperty()</code></a> returns <code>true</code> if the property was deleted from the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>getOwnPropertyDescriptor()</code></td><td><a href="../object/getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object argument passed in, and returns <code>undefined</code> if it does not exist. However, if an object is not passed in as the first argument, it will be coerced into an object.</td><td><a href="getownpropertydescriptor"><code>Reflect.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object. Returns <code>undefined</code> if it does not exist, and a <code>TypeError</code> if anything other than an object (a primitive) is passed in as the first argument.</td></tr><tr class="odd"><td><code>getOwnPropertyDescriptors()</code></td><td><a href="../object/getownpropertydescriptors"><code>Object.getOwnPropertyDescriptors()</code></a> returns an object containing a property descriptor of each passed-in object. Returns an empty object if the passed-in object has no owned property descriptors.</td><td>N/A</td></tr><tr class="even"><td><code>getPrototypeOf()</code></td><td><a href="../object/getprototypeof"><code>Object.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties. Throws a <code>TypeError</code> for non-objects in ES5, but coerces non-objects in ES2015.</td><td><a href="getprototypeof"><code>Reflect.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties, and throws a <code>TypeError</code> for non-objects.</td></tr><tr class="odd"><td><code>setPrototypeOf()</code></td><td><a href="../object/setprototypeof"><code>Object.setPrototypeOf()</code></a> returns the object itself if its prototype was set successfully. Throws a <code>TypeError</code> if the prototype being set was anything other than an <code>Object</code> or <code>null</code>, or if the prototype for the object being modified is non-extensible.</td><td><a href="setprototypeof"><code>Reflect.setPrototypeOf()</code></a> returns <code>true</code> if the prototype was successfully set on the object and <code>false</code> if it wasn't (including if the prototype is non-extensible). Throws a <code>TypeError</code> if the target passed in was not an <code>Object</code>, or if the prototype being set was anything other than an <code>Object</code> or <code>null</code>.</td></tr><tr class="even"><td><code>isExtensible()</code></td><td><a href="../object/isextensible"><code>Object.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> in ES5 if the first argument is not an object (a primitive). In ES2015, it will be coerced into a non-extensible, ordinary object and will return <code>false</code>.</td><td><p><a href="isextensible"><code>Reflect.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> if the first argument is not an object (a primitive).</p></td></tr><tr class="odd"><td><code>preventExtensions()</code></td><td><p><a href="../object/preventextensions"><code>Object.preventExtensions()</code></a> returns the object that is being made non-extensible. Throws a <code>TypeError</code>in ES5 if the argument is not an object (a primitive). In ES2015, treats the argument as a non-extensible, ordinary object and returns the object itself.</p></td><td><a href="preventextensions"><code>Reflect.preventExtensions()</code></a> returns <code>true</code> if the object has been made non-extensible, and <code>false</code> if it has not. Throws a <code>TypeError</code> if the argument is not an object (a primitive).</td></tr><tr class="even"><td><code>keys()</code></td><td><a href="../object/keys"><code>Object.keys()</code></a> returns an <code>Array</code> of strings that map to the target object's own (enumerable) property keys. Throws a <code>TypeError</code> in ES5 if the target is not an object, but coerces non-object targets into objects in ES2015.</td><td>N/A</td></tr><tr class="odd"><td><code>ownKeys()</code></td><td>N/A</td><td><a href="ownkeys"><code>Reflect.ownKeys()</code></a> returns an <code>Array</code> of property names that map to the target object's own property keys. Throws a <code>TypeError</code> if the target is not an <code>Object</code>.</td></tr></tbody></table>
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/Comparing_Reflect_and_Object_methods" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/Comparing_Reflect_and_Object_methods</a>
 
 # WebAssembly.compile()
@@ -18797,7 +18797,7 @@ The `WebAssembly.compile()` function compiles WebAssembly binary code into a [`W
 
 ### Parameters
 
-_bufferSource_  
+_bufferSource_
 A [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [ArrayBuffer](../arraybuffer) containing the binary code of the .wasm module you want to compile.
 
 ### Return value
@@ -18829,7 +18829,7 @@ The following example compiles the loaded simple.wasm byte code using the `compi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-webassembly-compile</span></a></td></tr></tbody></table>
@@ -18870,8 +18870,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile</a>
 
 # WebAssembly.CompileError
@@ -18880,35 +18880,35 @@ The `WebAssembly.CompileError` object indicates an error during WebAssembly deco
 
 ## Constructor
 
-[`WebAssembly.CompileError()`](compileerror/compileerror)  
+[`WebAssembly.CompileError()`](compileerror/compileerror)
 Creates a new `WebAssembly.CompileError` object.
 
 ## Instance properties
 
-[`WebAssembly.CompileError.prototype.message`](../error/message)  
+[`WebAssembly.CompileError.prototype.message`](../error/message)
 Error message. Although ECMA-262 specifies that [`URIError`](../urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](../error/message).
 
-[`WebAssembly.CompileError.prototype.name`](../error/name)  
+[`WebAssembly.CompileError.prototype.name`](../error/name)
 Error name. Inherited from [`Error`](../error).
 
-[`WebAssembly.CompileError.prototype.fileName`](../error/filename)  
+[`WebAssembly.CompileError.prototype.fileName`](../error/filename)
 Path to file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.CompileError.prototype.lineNumber`](../error/linenumber)  
+[`WebAssembly.CompileError.prototype.lineNumber`](../error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.CompileError.prototype.columnNumber`](../error/columnnumber)  
+[`WebAssembly.CompileError.prototype.columnNumber`](../error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.CompileError.prototype.stack`](../error/stack)  
+[`WebAssembly.CompileError.prototype.stack`](../error/stack)
 Stack trace. Inherited from [`Error`](../error).
 
 ## Instance methods
 
-[`WebAssembly.CompileError.prototype.toSource()`](../error/tosource)  
+[`WebAssembly.CompileError.prototype.toSource()`](../error/tosource)
 Returns code that could eval to the same error. Inherited from [`Error`](../error).
 
-[`WebAssembly.CompileError.prototype.toString()`](../error/tostring)  
+[`WebAssembly.CompileError.prototype.toString()`](../error/tostring)
 Returns a string representing the specified `Error` object.. Inherited from [`Error`](../error).
 
 ## Examples
@@ -18931,7 +18931,7 @@ The following snippet creates a new `CompileError` instance, and logs its detail
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#exceptiondef-compileerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
@@ -19005,8 +19005,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError</a>
 
 # WebAssembly.compileStreaming()
@@ -19019,7 +19019,7 @@ The `WebAssembly.compileStreaming()` function compiles a [`WebAssembly.Module`](
 
 ### Parameters
 
-_source_  
+_source_
 A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object or a promise that will fulfill with one, representing the underlying source of a .wasm module you want to stream and compile.
 
 ### Return value
@@ -19047,7 +19047,7 @@ The resulting module instance is then instantiated using [`WebAssembly.instantia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming">WebAssembly Web API (WebAssembly Web API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming">WebAssembly Web API (WebAssembly Web API)
 <br/>
 
 <span class="small">#dom-webassembly-compilestreaming</span></a></td></tr></tbody></table>
@@ -19084,8 +19084,8 @@ No
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming</a>
 
 # Array.prototype.concat()
@@ -19101,7 +19101,7 @@ The `concat()` method is used to merge two or more arrays. This method does not 
 
 ### Parameters
 
-`valueN` <span class="badge inline optional">Optional</span>  
+`valueN` <span class="badge inline optional">Optional</span>
 Arrays and/or values to concatenate into a new array. If all `valueN` parameters are omitted, `concat` returns a shallow copy of the existing array on which it is called. See the description below for more details.
 
 ### Return value
@@ -19175,7 +19175,7 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
@@ -19226,13 +19226,13 @@ The **conditional (ternary) operator** is the only JavaScript operator that take
 
 ### Parameters
 
-`condition`  
+`condition`
 An expression whose value is used as a condition.
 
-`exprIfTrue`  
+`exprIfTrue`
 An expression which is evaluated if the `condition` evaluates to a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value (one which equals or can be converted to `true`).
 
-`exprIfFalse`  
+`exprIfFalse`
 An expression which is executed if the `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) (that is, has a value which can be converted to `false`).
 
 ## Description
@@ -19281,7 +19281,7 @@ The ternary operator is right-associative, which means it can be "chained" in th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-conditional-operator</span></a></td></tr></tbody></table>
@@ -19320,8 +19320,8 @@ The ternary operator is right-associative, which means it can be "chained" in th
 -   [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 -   [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a>
 
 # const
@@ -19332,10 +19332,10 @@ Constants are block-scoped, much like variables declared using the `let` keyword
 
     const name1 = value1 [, name2 = value2 [, ... [, nameN = valueN]]];
 
-`nameN`  
+`nameN`
 The constant's name, which can be any legal [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier).
 
-`valueN`  
+`valueN`
 The constant's value. This can be any legal [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#expressions), including a function expression.
 
 The [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -19430,7 +19430,7 @@ const also works on objects and arrays.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
@@ -19471,8 +19471,8 @@ const also works on objects and arrays.
 -   [`let`](let)
 -   [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const</a>
 
 # Reflect.construct()
@@ -19486,13 +19486,13 @@ The static `Reflect.construct()` method acts like the [`new`](../../operators/ne
 
 ### Parameters
 
-`target`  
+`target`
 The target function to call.
 
-`argumentsList`  
+`argumentsList`
 An array-like object specifying the arguments with which `target` should be called.
 
-`newTarget` <span class="badge inline optional">Optional</span>  
+`newTarget` <span class="badge inline optional">Optional</span>
 The constructor whose prototype should be used. See also the [`new.target`](../../operators/new.target) operator. If `newTarget` is not present, its value defaults to `target`.
 
 ### Return value
@@ -19590,7 +19590,7 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target` operato
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.construct">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.construct">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-reflect.construct</span></a></td></tr></tbody></table>
@@ -19627,8 +19627,8 @@ No
 -   [`new`](../../operators/new)
 -   `new.target`
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct</a>
 
 # Object.prototype.constructor
@@ -19809,7 +19809,7 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.prototype.constructor' in that specification.</span></a></td></tr></tbody></table>
@@ -19846,8 +19846,8 @@ or assign parent constructor identifier to a separate property on the Child cons
 -   [Class constructor](../../classes/constructor)
 -   Glossary: [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor</a>
 
 # continue
@@ -19858,7 +19858,7 @@ The `continue` terminates execution of the statements in the current iteration o
 
     continue [label];
 
-`label`  
+`label`
 Identifier associated with the label of the statement.
 
 ## Description
@@ -19949,7 +19949,7 @@ Output:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-continue-statement">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-continue-statement">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Continue statement' in that specification.</span></a></td></tr></tbody></table>
@@ -19985,8 +19985,8 @@ Output:
 -   [`break`](break)
 -   [label](label)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue</a>
 
 # Array.prototype.copyWithin()
@@ -20001,17 +20001,17 @@ The `copyWithin()` method shallow copies part of an array to another location in
 
 ### Parameters
 
-`target`  
+`target`
 Zero-based index at which to copy the sequence to. If negative, `target` will be counted from the end.
 
 If `target` is at or greater than `arr.length`, nothing will be copied. If `target` is positioned after `start`, the copied sequence will be trimmed to fit `arr.length`.
 
-`start` <span class="badge inline optional">Optional</span>  
+`start` <span class="badge inline optional">Optional</span>
 Zero-based index at which to start copying elements from. If negative, `start` will be counted from the end.
 
 If `start` is omitted, `copyWithin` will copy from index `0`.
 
-`end` <span class="badge inline optional">Optional</span>  
+`end` <span class="badge inline optional">Optional</span>
 Zero-based index at which to end copying elements from. `copyWithin` copies up to but not including `end`. If negative, `end` will be counted from the end.
 
 If `end` is omitted, `copyWithin` will copy until the last index (default to `arr.length`).
@@ -20059,7 +20059,7 @@ The `copyWithin` method is a mutable method. It does not alter the length of `th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.copywithin">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.copywithin">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.copywithin</span></a></td></tr></tbody></table>
@@ -20107,7 +20107,7 @@ The `Math.cos()` static function returns the [cosine](https://en.wikipedia.org/w
 
 ### Parameters
 
-`x`  
+`x`
 The angle in radians for which to return the cosine.
 
 ### Return value
@@ -20132,7 +20132,7 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cos">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cos">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.cos</span></a></td></tr></tbody></table>
@@ -20172,8 +20172,8 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos</a>
 
 # Math.cosh()
@@ -20188,7 +20188,7 @@ $$\\mathtt{\\operatorname{Math.cosh(x)}} = \\frac{e^{x} + e^{- x}}{2}$$
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -20224,7 +20224,7 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cosh">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cosh">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.cosh</span></a></td></tr></tbody></table>
@@ -20263,8 +20263,8 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh</a>
 
 # Object.create()
@@ -20278,10 +20278,10 @@ The `Object.create()` method creates a new object, using an existing object as t
 
 ### Parameters
 
-`proto`  
+`proto`
 The object which should be the prototype of the newly-created object.
 
-`propertiesObject` <span class="badge inline optional">Optional</span>  
+`propertiesObject` <span class="badge inline optional">Optional</span>
 If specified and not [`undefined`](../undefined), an object whose enumerable own properties (that is, those properties defined upon itself and _not_ enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of [`Object.defineProperties()`](defineproperties).
 
 ### Return value
@@ -20600,7 +20600,7 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.create</span></a></td></tr></tbody></table>
@@ -20639,8 +20639,8 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 -   [`Reflect.construct()`](../reflect/construct)
 -   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create</a>
 
 # WebAssembly.Module.customSections()
@@ -20653,10 +20653,10 @@ The `WebAssembly.customSections()` function returns a copy of the contents of al
 
 ### Parameters
 
-_module_  
+_module_
 The [`WebAssembly.Module`](../module) object whose custom sections are being considered.
 
-_sectionName_  
+_sectionName_
 The string name of the desired custom section.
 
 ### Return value
@@ -20696,7 +20696,7 @@ We then do a check using `WebAssembly.Module.customSections`, looking to see whe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-customsections">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-customsections">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-module-customsections</span></a></td></tr></tbody></table>
@@ -20737,8 +20737,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections</a>
 
 # TypeError: cyclic object value
@@ -20850,80 +20850,80 @@ Alternatively, if you need full 64-bit range, you can create a [`BigInt`](bigint
 
 ## Constructor
 
-[`DataView()`](dataview/dataview)  
+[`DataView()`](dataview/dataview)
 Creates a new `DataView` object.
 
 ## Instance properties
 
-[`DataView.prototype.buffer`](dataview/buffer)  
+[`DataView.prototype.buffer`](dataview/buffer)
 The [`ArrayBuffer`](arraybuffer) referenced by this view. Fixed at construction time and thus **read only.**
 
-[`DataView.prototype.byteLength`](dataview/bytelength)  
+[`DataView.prototype.byteLength`](dataview/bytelength)
 The length (in bytes) of this view from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`DataView.prototype.byteOffset`](dataview/byteoffset)  
+[`DataView.prototype.byteOffset`](dataview/byteoffset)
 The offset (in bytes) of this view from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`DataView.prototype.getInt8()`](dataview/getint8)  
+[`DataView.prototype.getInt8()`](dataview/getint8)
 Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getUint8()`](dataview/getuint8)  
+[`DataView.prototype.getUint8()`](dataview/getuint8)
 Gets an unsigned 8-bit integer (unsigned byte) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getInt16()`](dataview/getint16)  
+[`DataView.prototype.getInt16()`](dataview/getint16)
 Gets a signed 16-bit integer (short) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getUint16()`](dataview/getuint16)  
+[`DataView.prototype.getUint16()`](dataview/getuint16)
 Gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getInt32()`](dataview/getint32)  
+[`DataView.prototype.getInt32()`](dataview/getint32)
 Gets a signed 32-bit integer (long) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getUint32()`](dataview/getuint32)  
+[`DataView.prototype.getUint32()`](dataview/getuint32)
 Gets an unsigned 32-bit integer (unsigned long) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getFloat32()`](dataview/getfloat32)  
+[`DataView.prototype.getFloat32()`](dataview/getfloat32)
 Gets a signed 32-bit float (float) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getFloat64()`](dataview/getfloat64)  
+[`DataView.prototype.getFloat64()`](dataview/getfloat64)
 Gets a signed 64-bit float (double) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getBigInt64()`](dataview/getbigint64)  
+[`DataView.prototype.getBigInt64()`](dataview/getbigint64)
 Gets a signed 64-bit integer (long long) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.getBigUint64()`](dataview/getbiguint64)  
+[`DataView.prototype.getBigUint64()`](dataview/getbiguint64)
 Gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setInt8()`](dataview/setint8)  
+[`DataView.prototype.setInt8()`](dataview/setint8)
 Stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setUint8()`](dataview/setuint8)  
+[`DataView.prototype.setUint8()`](dataview/setuint8)
 Stores an unsigned 8-bit integer (unsigned byte) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setInt16()`](dataview/setint16)  
+[`DataView.prototype.setInt16()`](dataview/setint16)
 Stores a signed 16-bit integer (short) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setUint16()`](dataview/setuint16)  
+[`DataView.prototype.setUint16()`](dataview/setuint16)
 Stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setInt32()`](dataview/setint32)  
+[`DataView.prototype.setInt32()`](dataview/setint32)
 Stores a signed 32-bit integer (long) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setUint32()`](dataview/setuint32)  
+[`DataView.prototype.setUint32()`](dataview/setuint32)
 Stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setFloat32()`](dataview/setfloat32)  
+[`DataView.prototype.setFloat32()`](dataview/setfloat32)
 Stores a signed 32-bit float (float) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setFloat64()`](dataview/setfloat64)  
+[`DataView.prototype.setFloat64()`](dataview/setfloat64)
 Stores a signed 64-bit float (double) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setBigInt64()`](dataview/setbigint64)  
+[`DataView.prototype.setBigInt64()`](dataview/setbigint64)
 Stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the view.
 
-[`DataView.prototype.setBigUint64()`](dataview/setbiguint64)  
+[`DataView.prototype.setBigUint64()`](dataview/setbiguint64)
 Stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the view.
 
 ## Examples
@@ -20938,7 +20938,7 @@ Stores an unsigned 64-bit integer (unsigned long long) value at the specified by
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview-objects</span></a></td></tr></tbody></table>
@@ -21625,166 +21625,166 @@ In addition to methods to read and alter individual components of the local date
 
 ## Constructor
 
-[`Date()`](date/date)  
+[`Date()`](date/date)
 When called as a function, returns a string representation of the current date and time, exactly as `new Date().toString()` does.
 
-[`new Date()`](date/date)  
+[`new Date()`](date/date)
 When called as a constructor, returns a new `Date` object.
 
 ## Static methods
 
-[`Date.now()`](date/now)  
+[`Date.now()`](date/now)
 Returns the numeric value corresponding to the current time—the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
 
-[`Date.parse()`](date/parse)  
+[`Date.parse()`](date/parse)
 Parses a string representation of a date and returns the number of milliseconds since 1 January, 1970, 00:00:00 UTC, with leap seconds ignored.
 
 **Note:** Parsing of strings with `Date.parse` is strongly discouraged due to browser differences and inconsistencies.
 
-[`Date.UTC()`](date/utc)  
+[`Date.UTC()`](date/utc)
 Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.
 
 ## Instance methods
 
-[`Date.prototype.getDate()`](date/getdate)  
+[`Date.prototype.getDate()`](date/getdate)
 Returns the day of the month (`1`–`31`) for the specified date according to local time.
 
-[`Date.prototype.getDay()`](date/getday)  
+[`Date.prototype.getDay()`](date/getday)
 Returns the day of the week (`0`–`6`) for the specified date according to local time.
 
-[`Date.prototype.getFullYear()`](date/getfullyear)  
+[`Date.prototype.getFullYear()`](date/getfullyear)
 Returns the year (4 digits for 4-digit years) of the specified date according to local time.
 
-[`Date.prototype.getHours()`](date/gethours)  
+[`Date.prototype.getHours()`](date/gethours)
 Returns the hour (`0`–`23`) in the specified date according to local time.
 
-[`Date.prototype.getMilliseconds()`](date/getmilliseconds)  
+[`Date.prototype.getMilliseconds()`](date/getmilliseconds)
 Returns the milliseconds (`0`–`999`) in the specified date according to local time.
 
-[`Date.prototype.getMinutes()`](date/getminutes)  
+[`Date.prototype.getMinutes()`](date/getminutes)
 Returns the minutes (`0`–`59`) in the specified date according to local time.
 
-[`Date.prototype.getMonth()`](date/getmonth)  
+[`Date.prototype.getMonth()`](date/getmonth)
 Returns the month (`0`–`11`) in the specified date according to local time.
 
-[`Date.prototype.getSeconds()`](date/getseconds)  
+[`Date.prototype.getSeconds()`](date/getseconds)
 Returns the seconds (`0`–`59`) in the specified date according to local time.
 
-[`Date.prototype.getTime()`](date/gettime)  
+[`Date.prototype.getTime()`](date/gettime)
 Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC. (Negative values are returned for prior times.)
 
-[`Date.prototype.getTimezoneOffset()`](date/gettimezoneoffset)  
+[`Date.prototype.getTimezoneOffset()`](date/gettimezoneoffset)
 Returns the time-zone offset in minutes for the current locale.
 
-[`Date.prototype.getUTCDate()`](date/getutcdate)  
+[`Date.prototype.getUTCDate()`](date/getutcdate)
 Returns the day (date) of the month (`1`–`31`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCDay()`](date/getutcday)  
+[`Date.prototype.getUTCDay()`](date/getutcday)
 Returns the day of the week (`0`–`6`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCFullYear()`](date/getutcfullyear)  
+[`Date.prototype.getUTCFullYear()`](date/getutcfullyear)
 Returns the year (4 digits for 4-digit years) in the specified date according to universal time.
 
-[`Date.prototype.getUTCHours()`](date/getutchours)  
+[`Date.prototype.getUTCHours()`](date/getutchours)
 Returns the hours (`0`–`23`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)  
+[`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)
 Returns the milliseconds (`0`–`999`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMinutes()`](date/getutcminutes)  
+[`Date.prototype.getUTCMinutes()`](date/getutcminutes)
 Returns the minutes (`0`–`59`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMonth()`](date/getutcmonth)  
+[`Date.prototype.getUTCMonth()`](date/getutcmonth)
 Returns the month (`0`–`11`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCSeconds()`](date/getutcseconds)  
+[`Date.prototype.getUTCSeconds()`](date/getutcseconds)
 Returns the seconds (`0`–`59`) in the specified date according to universal time.
 
-[`Date.prototype.getYear()`](date/getyear)  
+[`Date.prototype.getYear()`](date/getyear)
 Returns the year (usually 2–3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
 
-[`Date.prototype.setDate()`](date/setdate)  
+[`Date.prototype.setDate()`](date/setdate)
 Sets the day of the month for a specified date according to local time.
 
-[`Date.prototype.setFullYear()`](date/setfullyear)  
+[`Date.prototype.setFullYear()`](date/setfullyear)
 Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to local time.
 
-[`Date.prototype.setHours()`](date/sethours)  
+[`Date.prototype.setHours()`](date/sethours)
 Sets the hours for a specified date according to local time.
 
-[`Date.prototype.setMilliseconds()`](date/setmilliseconds)  
+[`Date.prototype.setMilliseconds()`](date/setmilliseconds)
 Sets the milliseconds for a specified date according to local time.
 
-[`Date.prototype.setMinutes()`](date/setminutes)  
+[`Date.prototype.setMinutes()`](date/setminutes)
 Sets the minutes for a specified date according to local time.
 
-[`Date.prototype.setMonth()`](date/setmonth)  
+[`Date.prototype.setMonth()`](date/setmonth)
 Sets the month for a specified date according to local time.
 
-[`Date.prototype.setSeconds()`](date/setseconds)  
+[`Date.prototype.setSeconds()`](date/setseconds)
 Sets the seconds for a specified date according to local time.
 
-[`Date.prototype.setTime()`](date/settime)  
+[`Date.prototype.setTime()`](date/settime)
 Sets the [`Date`](date) object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC. Use negative numbers for times prior.
 
-[`Date.prototype.setUTCDate()`](date/setutcdate)  
+[`Date.prototype.setUTCDate()`](date/setutcdate)
 Sets the day of the month for a specified date according to universal time.
 
-[`Date.prototype.setUTCFullYear()`](date/setutcfullyear)  
+[`Date.prototype.setUTCFullYear()`](date/setutcfullyear)
 Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to universal time.
 
-[`Date.prototype.setUTCHours()`](date/setutchours)  
+[`Date.prototype.setUTCHours()`](date/setutchours)
 Sets the hour for a specified date according to universal time.
 
-[`Date.prototype.setUTCMilliseconds()`](date/setutcmilliseconds)  
+[`Date.prototype.setUTCMilliseconds()`](date/setutcmilliseconds)
 Sets the milliseconds for a specified date according to universal time.
 
-[`Date.prototype.setUTCMinutes()`](date/setutcminutes)  
+[`Date.prototype.setUTCMinutes()`](date/setutcminutes)
 Sets the minutes for a specified date according to universal time.
 
-[`Date.prototype.setUTCMonth()`](date/setutcmonth)  
+[`Date.prototype.setUTCMonth()`](date/setutcmonth)
 Sets the month for a specified date according to universal time.
 
-[`Date.prototype.setUTCSeconds()`](date/setutcseconds)  
+[`Date.prototype.setUTCSeconds()`](date/setutcseconds)
 Sets the seconds for a specified date according to universal time.
 
-[`Date.prototype.setYear()`](date/setyear)  
+[`Date.prototype.setYear()`](date/setyear)
 Sets the year (usually 2–3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
 
-[`Date.prototype.toDateString()`](date/todatestring)  
+[`Date.prototype.toDateString()`](date/todatestring)
 Returns the "date" portion of the [`Date`](date) as a human-readable string like `'Thu Apr 12 2018'`.
 
-[`Date.prototype.toISOString()`](date/toisostring)  
+[`Date.prototype.toISOString()`](date/toisostring)
 Converts a date to a string following the ISO 8601 Extended Format.
 
-[`Date.prototype.toJSON()`](date/tojson)  
+[`Date.prototype.toJSON()`](date/tojson)
 Returns a string representing the [`Date`](date) using [`toISOString()`](date/toisostring). Intended for use by [`JSON.stringify()`](json/stringify).
 
-[`Date.prototype.toGMTString()`](date/togmtstring)  
+[`Date.prototype.toGMTString()`](date/togmtstring)
 Returns a string representing the [`Date`](date) based on the GMT (UTC) time zone. Use [`toUTCString()`](date/toutcstring) instead.
 
-[`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)  
+[`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)
 Returns a string with a locality sensitive representation of the date portion of this date based on system settings.
 
-<span class="page-not-created">`Date.prototype.toLocaleFormat()`</span>  
+<span class="page-not-created">`Date.prototype.toLocaleFormat()`</span>
 Converts a date to a string, using a format string.
 
-[`Date.prototype.toLocaleString()`](date/tolocalestring)  
+[`Date.prototype.toLocaleString()`](date/tolocalestring)
 Returns a string with a locality-sensitive representation of this date. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)  
+[`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)
 Returns a string with a locality-sensitive representation of the time portion of this date, based on system settings.
 
-[`Date.prototype.toString()`](date/tostring)  
+[`Date.prototype.toString()`](date/tostring)
 Returns a string representing the specified [`Date`](date) object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Date.prototype.toTimeString()`](date/totimestring)  
+[`Date.prototype.toTimeString()`](date/totimestring)
 Returns the "time" portion of the [`Date`](date) as a human-readable string.
 
-[`Date.prototype.toUTCString()`](date/toutcstring)  
+[`Date.prototype.toUTCString()`](date/toutcstring)
 Converts a date to a string using the UTC timezone.
 
-[`Date.prototype.valueOf()`](date/valueof)  
+[`Date.prototype.valueOf()`](date/valueof)
 Returns the primitive value of a [`Date`](date) object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
 ## Examples
@@ -21864,7 +21864,7 @@ In this case, it's important to return only an integer—so a simple division wo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date-objects</span></a></td></tr></tbody></table>
@@ -23269,22 +23269,22 @@ The `Intl.DateTimeFormat()` constructor creates [`Intl.DateTimeFormat`](../datet
 
 ### Parameters
 
-`locales` <span class="badge inline optional">Optional</span>  
+`locales` <span class="badge inline optional">Optional</span>
 A string with a BCP 47 language tag, or an array of such strings. To use the browser's default locale, pass an empty array. Unicode extension are supported (for example "`en-US-u-ca-buddhist`"). For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension keys are allowed:
 
-`nu`  
+`nu`
 Numbering system. Possible values include: "`arab`", "`arabext`", "`bali`", "`beng`", "`deva`", "`fullwide`", "`gujr`", "`guru`", "`hanidec`", "`khmr`", "`knda`", "`laoo`", "`latn`", "`limb`", "`mlym`", "`mong`", "`mymr`", "`orya`", "`tamldec`", "`telu`", "`thai`", "`tibt`".
 
-`ca`  
+`ca`
 Calendar. Possible values include: "`buddhist`", "`chinese`", "`coptic`", "`ethiopia`", "`ethiopic`", "`gregory`", "`hebrew`", "`indian`", "`islamic`", "`iso8601`", "`japanese`", "`persian`", "`roc`".
 
-`hc`  
+`hc`
 Hour cycle. Possible values include: "`h11`", "`h12`", "`h23`", "`h24`".
 
-`options` <span class="badge inline optional">Optional</span>  
+`options` <span class="badge inline optional">Optional</span>
 An object with some or all of the following properties:
 
-`dateStyle`  
+`dateStyle`
 The date formatting style to use when calling `format()`. Possible values include:
 
 -   "`full`"
@@ -23294,7 +23294,7 @@ The date formatting style to use when calling `format()`. Possible values includ
 
 **Note:** `dateStyle` can be used with `timeStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
-`timeStyle`  
+`timeStyle`
 The time formatting style to use when calling `format()`. Possible values include:
 
 -   "`full`"
@@ -23304,28 +23304,28 @@ The time formatting style to use when calling `format()`. Possible values includ
 
 **Note:** `timeStyle` can be used with `dateStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
-`calendar`  
+`calendar`
 Calendar. Possible values include: "`buddhist`", "`chinese`", " `coptic`", "`ethiopia`", "`ethiopic`", "`gregory`", " `hebrew`", "`indian`", "`islamic`", "`iso8601`", " `japanese`", "`persian`", "`roc`".
 
-`dayPeriod`  
+`dayPeriod`
 The way day periods should be expressed. Possible values include: "`narrow`", "`short`", " `long`".
 
-`numberingSystem`  
+`numberingSystem`
 Numbering System. Possible values include: "`arab`", "`arabext`", " `bali`", "`beng`", "`deva`", "`fullwide`", " `gujr`", "`guru`", "`hanidec`", "`khmr`", " `knda`", "`laoo`", "`latn`", "`limb`", "`mlym`", " `mong`", "`mymr`", "`orya`", "`tamldec`", " `telu`", "`thai`", "`tibt`".
 
-`localeMatcher`  
+`localeMatcher`
 The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
-`timeZone`  
+`timeZone`
 The time zone to use. The only value implementations must recognize is "`UTC`"; the default is the runtime's default time zone. Implementations may also recognize the time zone names of the [IANA time zone database](https://www.iana.org/time-zones), such as "`Asia/Shanghai`", "`Asia/Kolkata`", "`America/New_York`".
 
-`hour12`  
+`hour12`
 Whether to use 12-hour time (as opposed to 24-hour time). Possible values are `true` and `false`; the default is locale dependent. This option overrides the `hc` language tag and/or the `hourCycle` option in case both are present.
 
-`hourCycle`  
+`hourCycle`
 The hour cycle to use. Possible values are "`h11`", "`h12`", "`h23`", or "`h24`". This option overrides the `hc` language tag, if both are present, and the `hour12` option takes precedence in case both options have been specified.
 
-`formatMatcher`  
+`formatMatcher`
 The format matching algorithm to use. Possible values are "`basic`" and "`best fit`"; the default is "`best fit`". See the following paragraphs for information about the use of this property.
 
 The following properties describe the date-time components to use in formatted output, and their desired representations. Implementations are required to support at least the following subsets:
@@ -23340,27 +23340,27 @@ The following properties describe the date-time components to use in formatted o
 
 Implementations may support other subsets, and requests will be negotiated against all available subset-representation combinations to find the best match. Two algorithms are available for this negotiation and selected by the `formatMatcher` property: A [fully specified "`basic`" algorithm](https://www.ecma-international.org/ecma-402/1.0/#BasicFormatMatcher) and an implementation-dependent "`best fit`" algorithm.
 
-`weekday`  
+`weekday`
 The representation of the weekday. Possible values are:
 
 -   "`long`" (e.g., `Thursday`)
 -   "`short`" (e.g., `Thu`)
 -   "`narrow`" (e.g., `T`). Two weekdays may have the same narrow style for some locales (e.g. `Tuesday`'s narrow style is also `T`).
 
-`era`  
+`era`
 The representation of the era. Possible values are:
 
 -   "`long`" (e.g., `Anno Domini`)
 -   "`short`" (e.g., `AD`)
 -   "`narrow`" (e.g., `A`)
 
-`year`  
+`year`
 The representation of the year. Possible values are:
 
 -   "`numeric`" (e.g., `2012`)
 -   "`2-digit`" (e.g., `12`)
 
-`month`  
+`month`
 The representation of the month. Possible values are:
 
 -   "`numeric`" (e.g., `2`)
@@ -23369,22 +23369,22 @@ The representation of the month. Possible values are:
 -   "`short`" (e.g., `Mar`)
 -   "`narrow`" (e.g., `M`). Two months may have the same narrow style for some locales (e.g. `May`'s narrow style is also `M`).
 
-`day`  
+`day`
 The representation of the day. Possible values are:
 
 -   "`numeric`" (e.g., `1`)
 -   "`2-digit`" (e.g., `01`)
 
-`hour`  
+`hour`
 The representation of the hour. Possible values are "`numeric`", "`2-digit`".
 
-`minute`  
+`minute`
 The representation of the minute. Possible values are "`numeric`", "`2-digit`".
 
-`second`  
+`second`
 The representation of the second. Possible values are "`numeric`", "`2-digit`".
 
-`fractionalSecondDigits`  
+`fractionalSecondDigits`
 The number of digits used to represent fractions of a second (any additional digits are truncated). Possible values are:
 
 -   `0` (Fractional part dropped.)
@@ -23392,7 +23392,7 @@ The number of digits used to represent fractions of a second (any additional dig
 -   `2` (Fractional part represented as 2 digits. For example, 736 is formatted as `73`.)
 -   `3` (Fractional part represented as 3 digits. For example, 736 is formatted as `736`.)
 
-`timeZoneName`  
+`timeZoneName`
 The representation of the time zone name. Possible values are:
 
 -   "`long`" (e.g., `British Summer Time`)
@@ -23433,7 +23433,7 @@ In basic use without specifying a locale, `DateTimeFormat` uses the default loca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl-datetimeformat-constructor</span></a></td></tr></tbody></table>
@@ -23670,7 +23670,7 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-debugger-statement</span></a></td></tr></tbody></table>
@@ -23706,8 +23706,8 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 -   [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 -   [The Debugger in the Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger</a>
 
 # decodeURI()
@@ -23720,7 +23720,7 @@ The `decodeURI()` function decodes a Uniform Resource Identifier (URI) previousl
 
 ### Parameters
 
-`encodedURI`  
+`encodedURI`
 A complete, encoded Uniform Resource Identifier.
 
 ### Return value
@@ -23754,7 +23754,7 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-decodeuri-encodeduri</span></a></td></tr></tbody></table>
@@ -23803,7 +23803,7 @@ The `decodeURIComponent()` function decodes a Uniform Resource Identifier (URI) 
 
 ### Parameters
 
-`encodedURI`  
+`encodedURI`
 An encoded component of a Uniform Resource Identifier.
 
 ### Return value
@@ -23848,7 +23848,7 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-decodeuricomponent-encodeduricomponent</span></a></td></tr></tbody></table>
@@ -23921,7 +23921,7 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-decrement-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-decrement-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-postfix-decrement-operator</span></a></td></tr></tbody></table>
@@ -23964,8 +23964,8 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a>
 
 # Default parameters
@@ -24148,7 +24148,7 @@ You can use default value assignment with the [destructuring assignment](../oper
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -24247,40 +24247,40 @@ The `Object.defineProperties()` method defines new or modifies existing properti
 
 ### Parameters
 
-`obj`  
+`obj`
 The object on which to define or modify properties.
 
-`props`  
+`props`
 An object whose keys represent the names of properties to be defined or modified and whose values are objects describing those properties. Each value in `props` must be either a data descriptor or an accessor descriptor; it cannot be both (see [`Object.defineProperty()`](defineproperty) for more details).
 
 Data descriptors and accessor descriptors may optionally contain the following keys:
 
-`configurable`  
-`true` if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.  
+`configurable`
+`true` if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
 `false`
 
-`enumerable`  
-`true` if and only if this property shows up during enumeration of the properties on the corresponding object.  
+`enumerable`
+`true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 `false`
 
 A data descriptor also has the following optional keys:
 
-`value`  
-The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).  
+`value`
+The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).
 **Defaults to [`undefined`](../undefined).**
 
-`writable`  
-`true` if and only if the value associated with the property may be changed with an [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators).  
+`writable`
+`true` if and only if the value associated with the property may be changed with an [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators).
 `false`
 
 An accessor descriptor also has the following optional keys:
 
-`get`  
-A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. The function's return value will be used as the value of the property.  
+`get`
+A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. The function's return value will be used as the value of the property.
 **Defaults to [`undefined`](../undefined).**
 
-`set`  
-A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter. The function will receive as its only argument the new value being assigned to the property.  
+`set`
+A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter. The function will receive as its only argument the new value being assigned to the property.
 **Defaults to [`undefined`](../undefined).**
 
 If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is treated as a data descriptor. If a descriptor has both `value` or `writable` and `get` or `set` keys, an exception is thrown.
@@ -24373,7 +24373,7 @@ Assuming a pristine execution environment with all names and properties referrin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.defineproperties</span></a></td></tr></tbody></table>
@@ -24410,8 +24410,8 @@ Assuming a pristine execution environment with all names and properties referrin
 -   [`Object.keys()`](keys)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties</a>
 
 # Object.defineProperty()
@@ -24424,13 +24424,13 @@ The static method `Object.defineProperty()` defines a new property directly on a
 
 ### Parameters
 
-`obj`  
+`obj`
 The object on which to define the property.
 
-`prop`  
+`prop`
 The name or [`Symbol`](../symbol) of the property to be defined or modified.
 
-`descriptor`  
+`descriptor`
 The descriptor for the property being defined or modified.
 
 ### Return value
@@ -24445,32 +24445,32 @@ Property descriptors present in objects come in two main flavors: data descripto
 
 Both data and accessor descriptors are objects. They share the following optional keys (please note: the **defaults** mentioned here are in the case of defining properties using `Object.defineProperty()`):
 
-`configurable`  
-`true` if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.  
+`configurable`
+`true` if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
 `false`
 
-`enumerable`  
-`true` if and only if this property shows up during enumeration of the properties on the corresponding object.  
+`enumerable`
+`true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 `false`
 
 A **data descriptor** also has the following optional keys:
 
-`value`  
-The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).  
+`value`
+The value associated with the property. Can be any valid JavaScript value (number, object, function, etc).
 **Defaults to [`undefined`](../undefined).**
 
-`writable`  
-`true` if the value associated with the property may be changed with an [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators).  
+`writable`
+`true` if the value associated with the property may be changed with an [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators).
 `false`
 
 An **accessor descriptor** also has the following optional keys:
 
-`get`  
-A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. When the property is accessed, this function is called without arguments and with `this` set to the object through which the property is accessed (this may not be the object on which the property is defined due to inheritance). The return value will be used as the value of the property.  
+`get`
+A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter. When the property is accessed, this function is called without arguments and with `this` set to the object through which the property is accessed (this may not be the object on which the property is defined due to inheritance). The return value will be used as the value of the property.
 **Defaults to [`undefined`](../undefined).**
 
-`set`  
-A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter. When the property is assigned, this function is called with one argument (the value being assigned to the property) and with `this` set to the object through which the property is assigned.  
+`set`
+A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter. When the property is assigned, this function is called with one argument (the value being assigned to the property) and with `this` set to the object through which the property is assigned.
 **Defaults to [`undefined`](../undefined).**
 
 If a descriptor has neither of `value`, `writable`, `get` and `set` keys, it is treated as a data descriptor. If a descriptor has both \[`value` or `writable`\] and \[`get` or `set`\] keys, an exception is thrown.
@@ -24819,7 +24819,7 @@ Unlike accessor properties, value properties are always set on the object itself
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.defineproperty</span></a></td></tr></tbody></table>
@@ -24895,8 +24895,8 @@ Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?i
 -   [`Object.create()`](create)
 -   [`Reflect.defineProperty()`](../reflect/defineproperty)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty</a>
 
 # delete operator
@@ -24914,10 +24914,10 @@ Where `expression` should evaluate to a [property](https://developer.mozilla.org
 
 ### Parameters
 
-`object`  
+`object`
 The name of an object, or an expression evaluating to an object.
 
-`property`  
+`property`
 The property to delete.
 
 ### Return value
@@ -25118,7 +25118,7 @@ If instead, you want to remove an array element by changing the contents of the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-delete-operator</span></a></td></tr></tbody></table>
@@ -25155,8 +25155,8 @@ If instead, you want to remove an array element by changing the contents of the 
 -   [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)
 -   [`Map.prototype.delete()`](../global_objects/map/delete)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</a>
 
 # SyntaxError: applying the 'delete' operator to an unqualified name is deprecated
@@ -25235,10 +25235,10 @@ The `handler.deleteProperty()` method is a trap for the [`delete`](../../../oper
 
 The following parameters are passed to the `deleteProperty()` method. `this` is bound to the handler.
 
-`target`  
+`target`
 The target object.
 
-`property`  
+`property`
 The name or [`Symbol`](../../symbol) of the property to delete.
 
 ### Return value
@@ -25296,7 +25296,7 @@ The following code traps the [`delete`](../../../operators/delete) operator.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span></a></td></tr></tbody></table>
@@ -25334,8 +25334,8 @@ No
 -   [`delete`](../../../operators/delete) operator
 -   [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty</a>
 
 # ReferenceError: deprecated caller or arguments usage
@@ -25779,7 +25779,7 @@ The read-only `description` property is a string returning the optional descript
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.prototype.description</span></a></td></tr></tbody></table>
@@ -25823,8 +25823,8 @@ No support for an undefined description.
 -   [`Symbol.prototype.toString()`](tostring)
 -   Polyfill: <https://npmjs.com/symbol.prototype.description>
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description</a>
 
 # Destructuring assignment
@@ -26208,7 +26208,7 @@ When deconstructing an object, if a property is not accessed in itself, it will 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-destructuring-assignment</span></a></td></tr></tbody></table>
@@ -26328,8 +26328,8 @@ No
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
 -   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a>
 
 # Function.displayName
@@ -26438,20 +26438,20 @@ The `Intl.DisplayNames` object enables the consistent translation of language, r
 
 ## Constructor
 
-[`Intl.DisplayNames()`](displaynames/displaynames)  
+[`Intl.DisplayNames()`](displaynames/displaynames)
 Creates a new `Intl.DisplayNames` object.
 
 ## Static methods
 
-[`Intl.DisplayNames.supportedLocalesOf()`](displaynames/supportedlocalesof)  
+[`Intl.DisplayNames.supportedLocalesOf()`](displaynames/supportedlocalesof)
 Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-[`Intl.DisplayNames.prototype.of()`](displaynames/of)  
+[`Intl.DisplayNames.prototype.of()`](displaynames/of)
 This method receives a `code` and returns a string based on the locale and options provided when instantiating `Intl.DisplayNames`.
 
-[`Intl.DisplayNames.prototype.resolvedOptions()`](displaynames/resolvedoptions)  
+[`Intl.DisplayNames.prototype.resolvedOptions()`](displaynames/resolvedoptions)
 Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.
 
 ## Examples
@@ -26533,7 +26533,7 @@ To create an `Intl.DisplayNames` for a locale and get the display name for curre
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#intl-displaynames-objects</span></a></td></tr></tbody></table>
@@ -26702,7 +26702,7 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Division operator' in that specification.</span></a></td></tr></tbody></table>
@@ -26745,8 +26745,8 @@ The division operator (`/`) produces the quotient of its operands where the left
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division</a>
 
 # do...while
@@ -26759,10 +26759,10 @@ The `do...while` creates a loop that executes a specified statement until the te
        statement
     while (condition);
 
-`statement`  
+`statement`
 A statement that is executed at least once and is re-executed each time the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements.
 
-`condition`  
+`condition`
 An expression evaluated after each pass through the loop. If `condition` evaluates to true, the `statement` is re-executed. When `condition` evaluates to false, control passes to the statement following the `do...while`.
 
 ## Examples
@@ -26784,7 +26784,7 @@ In the following example, the `do...while` loop iterates at least once and reite
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-do-while-statement</span></a></td></tr></tbody></table>
@@ -26820,8 +26820,8 @@ In the following example, the `do...while` loop iterates at least once and reite
 -   [`while`](while)
 -   [`for`](for)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while</a>
 
 # RegExp.prototype.dotAll
@@ -26878,7 +26878,7 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.dotAll</span></a></td></tr></tbody></table>
@@ -26920,8 +26920,8 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll</a>
 
 # Math.E
@@ -26962,7 +26962,7 @@ The following function returns e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.e">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.e">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.e</span></a></td></tr></tbody></table>
@@ -26999,8 +26999,8 @@ The following function returns e:
 -   [`Math.log()`](log)
 -   [`Math.log1p()`](log1p)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E</a>
 
 # empty
@@ -27057,7 +27057,7 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-empty-statement</span></a></td></tr></tbody></table>
@@ -27092,8 +27092,8 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 -   [`Block statement`](block)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty</a>
 
 # encodeURI()
@@ -27106,7 +27106,7 @@ The `encodeURI()` function encodes a [URI](https://developer.mozilla.org/en-US/d
 
 ### Parameters
 
-`URI`  
+`URI`
 A complete URI.
 
 ### Return value
@@ -27170,7 +27170,7 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-encodeuri-uri</span></a></td></tr></tbody></table>
@@ -27219,7 +27219,7 @@ The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.or
 
 ### Parameters
 
-`str`  
+`str`
 String. A component of a URI.
 
 ### Return value
@@ -27314,7 +27314,7 @@ The following example provides the special encoding required within UTF-8 [`Cont
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'encodeURIComponent' in that specification.</span></a></td></tr></tbody></table>
@@ -27364,10 +27364,10 @@ The `endsWith()` method determines whether a string ends with the characters of 
 
 ### Parameters
 
-`searchString`  
+`searchString`
 The characters to be searched for at the end of `str`.
 
-`length` <span class="badge inline optional">Optional</span>  
+`length` <span class="badge inline optional">Optional</span>
 If provided, it is used as the length of `str`. Defaults to `str.length`.
 
 ### Return value
@@ -27403,7 +27403,7 @@ This method has been added to the ECMAScript 6 specification and may not be avai
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.endswith</span></a></td></tr></tbody></table>
@@ -27441,8 +27441,8 @@ No
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith</a>
 
 # Object.entries()
@@ -27457,7 +27457,7 @@ The order of the array returned by `Object.entries()` does not depend on how an 
 
 ### Parameters
 
-`obj`  
+`obj`
 The object whose own enumerable string-keyed property `[key, value]` pairs are to be returned.
 
 ### Return value
@@ -27544,7 +27544,7 @@ Using [Array Destructuring](../../operators/destructuring_assignment#array_destr
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.entries' in that specification.</span></a></td></tr></tbody></table>
@@ -27588,8 +27588,8 @@ No
 -   [`Map.prototype.keys()`](../map/keys)
 -   [`Map.prototype.values()`](../map/values)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries</a>
 
 # Number.EPSILON
@@ -27633,7 +27633,7 @@ The `EPSILON` property has a value of approximately `2.2204460492503130808472633
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.epsilon</span></a></td></tr></tbody></table>
@@ -27668,8 +27668,8 @@ No
 
 -   The [`Number`](../number) object it belongs to
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON</a>
 
 # SyntaxError: test for equality (==) mistyped as assignment (=)?
@@ -27796,7 +27796,7 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
@@ -27833,8 +27833,8 @@ Note that strings constructed using `new String()` are objects. If you compare o
 -   [Strict equality operator](strict_equality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality</a>
 
 # Error
@@ -27849,69 +27849,69 @@ Runtime errors result in new `Error` objects being created and thrown.
 
 Besides the generic `Error` constructor, there are other core error constructors in JavaScript. For client-side exceptions, see [Exception handling statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#exception_handling_statements).
 
-[`EvalError`](evalerror)  
+[`EvalError`](evalerror)
 Creates an instance representing an error that occurs regarding the global function [`eval()`](eval).
 
-[`RangeError`](rangeerror)  
+[`RangeError`](rangeerror)
 Creates an instance representing an error that occurs when a numeric variable or parameter is outside of its valid range.
 
-[`ReferenceError`](referenceerror)  
+[`ReferenceError`](referenceerror)
 Creates an instance representing an error that occurs when de-referencing an invalid reference.
 
-[`SyntaxError`](syntaxerror)  
+[`SyntaxError`](syntaxerror)
 Creates an instance representing a syntax error.
 
-[`TypeError`](typeerror)  
+[`TypeError`](typeerror)
 Creates an instance representing an error that occurs when a variable or parameter is not of a valid type.
 
-[`URIError`](urierror)  
+[`URIError`](urierror)
 Creates an instance representing an error that occurs when [`encodeURI()`](encodeuri) or [`decodeURI()`](decodeuri) are passed invalid parameters.
 
-[`AggregateError`](aggregateerror)  
+[`AggregateError`](aggregateerror)
 Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by [`Promise.any()`](promise/any).
 
-[`InternalError`](internalerror) <span class="icon non-standard" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This API has not been standardized. </span>  
+[`InternalError`](internalerror) <span class="icon non-standard" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This API has not been standardized. </span>
 Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion".
 
 ## Constructor
 
-[`Error()`](error/error)  
+[`Error()`](error/error)
 Creates a new `Error` object.
 
 ## Static methods
 
-<span class="page-not-created">`Error.captureStackTrace()`</span>  
+<span class="page-not-created">`Error.captureStackTrace()`</span>
 A non-standard **V8** function that creates the [`stack`](error/stack) property on an Error instance.
 
 ## Instance properties
 
-[`Error.prototype.message`](error/message)  
+[`Error.prototype.message`](error/message)
 Error message.
 
-[`Error.prototype.name`](error/name)  
+[`Error.prototype.name`](error/name)
 Error name.
 
-<span class="page-not-created">`Error.prototype.description`</span>  
+<span class="page-not-created">`Error.prototype.description`</span>
 A non-standard Microsoft property for the error description. Similar to [`message`](error/message).
 
-<span class="page-not-created">`Error.prototype.number`</span>  
+<span class="page-not-created">`Error.prototype.number`</span>
 A non-standard Microsoft property for an error number.
 
-[`Error.prototype.fileName`](error/filename)  
+[`Error.prototype.fileName`](error/filename)
 A non-standard Mozilla property for the path to the file that raised this error.
 
-[`Error.prototype.lineNumber`](error/linenumber)  
+[`Error.prototype.lineNumber`](error/linenumber)
 A non-standard Mozilla property for the line number in the file that raised this error.
 
-[`Error.prototype.columnNumber`](error/columnnumber)  
+[`Error.prototype.columnNumber`](error/columnnumber)
 A non-standard Mozilla property for the column number in the line that raised this error.
 
-[`Error.prototype.stack`](error/stack)  
+[`Error.prototype.stack`](error/stack)
 A non-standard Mozilla property for a stack trace.
 
 ## Instance methods
 
-[`Error.prototype.toString()`](error/tostring)  
+[`Error.prototype.toString()`](error/tostring)
 Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
 ## Examples
@@ -28019,7 +28019,7 @@ See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-error-objects</span></a></td></tr></tbody></table>
@@ -28398,7 +28398,7 @@ The `eval()` function evaluates JavaScript code represented as a string.
 
 ### Parameters
 
-`string`  
+`string`
 A string representing a JavaScript expression, statement, or sequence of statements. The expression can include variables and properties of existing objects.
 
 ### Return value
@@ -28630,7 +28630,7 @@ If you define multiple values then the last value is returned.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-eval-x</span></a></td></tr></tbody></table>
@@ -28675,27 +28675,27 @@ The `EvalError` object indicates an error regarding the global [`eval()`](eval) 
 
 ## Constructor
 
-[`EvalError()`](evalerror/evalerror)  
+[`EvalError()`](evalerror/evalerror)
 Creates a new `EvalError` object.
 
 ## Instance properties
 
-[`EvalError.prototype.message`](error/message)  
+[`EvalError.prototype.message`](error/message)
 Error message. Although ECMA-262 specifies that [`EvalError`](evalerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
 
-[`EvalError.prototype.name`](error/name)  
+[`EvalError.prototype.name`](error/name)
 Error name. Inherited from [`Error`](error).
 
-[`EvalError.prototype.fileName`](error/filename)  
+[`EvalError.prototype.fileName`](error/filename)
 Path to file that raised this error. Inherited from [`Error`](error).
 
-[`EvalError.prototype.lineNumber`](error/linenumber)  
+[`EvalError.prototype.lineNumber`](error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](error).
 
-[`EvalError.prototype.columnNumber`](error/columnnumber)  
+[`EvalError.prototype.columnNumber`](error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](error).
 
-[`EvalError.prototype.stack`](error/stack)  
+[`EvalError.prototype.stack`](error/stack)
 Stack trace. Inherited from [`Error`](error).
 
 ## Examples
@@ -28718,7 +28718,7 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-evalerror">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-evalerror">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-native-error-types-used-in-this-standard-evalerror</span></a></td></tr></tbody></table>
@@ -28805,19 +28805,19 @@ The `every()` method tests whether all elements in the array pass the test imple
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 A function to test for each element, taking three arguments:
 
-`element`  
+`element`
 The current element being processed in the array.
 
-`index` <span class="badge inline optional">Optional</span>  
+`index` <span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array` <span class="badge inline optional">Optional</span>  
+`array` <span class="badge inline optional">Optional</span>
 The array `every` was called upon.
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 A value to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -28988,7 +28988,7 @@ The following examples tests the behavior of the `every` method when the array i
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.every</span></a></td></tr></tbody></table>
@@ -29038,13 +29038,13 @@ The static `Atomics.exchange()` method stores a given value at a given position 
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to exchange a `value`.
 
-`value`  
+`value`
 The number to exchange.
 
 ### Return value
@@ -29068,7 +29068,7 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.exchange">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.exchange">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.exchange</span></a></td></tr></tbody></table>
@@ -29152,7 +29152,7 @@ If you are executing a match to find its index position in the string, use [`Str
 
 ### Parameters
 
-`str`  
+`str`
 The string against which to match the regular expression.
 
 ### Return value
@@ -29173,7 +29173,7 @@ Consider the following example:
 
 The following table shows the state of `result` after running this script:
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown"</code></p><p><code>result[2] === "Jumps"</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index. 
+<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown"</code></p><p><code>result[2] === "Jumps"</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index.
 <br/>
 
 The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn't contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td><td><p><code>indices[0] === Array [ 4, 25 ]</code></p><p><code>indices[1] === Array [ 10, 15 ]</code></p><p><code>indices[2] === Array [ 20, 25 ]</code></p><p><code>indices.groups === undefined</code></p><p><code>indices.length === 3</code></p></td></tr><tr class="odd"><td><code>input</code></td><td>The original string that was matched against.</td><td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td></tr></tbody></table>
@@ -29221,7 +29221,7 @@ This will log a message containing `'hello world!'`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-regexp.prototype.exec</span></a></td></tr></tbody></table>
@@ -29257,8 +29257,8 @@ This will log a message containing `'hello world!'`.
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`RegExp`](../regexp)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec</a>
 
 # Math.exp()
@@ -29271,7 +29271,7 @@ The `Math.exp()` function returns `ex`, where `x` is the argument, and `e` is [E
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -29292,7 +29292,7 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.exp">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.exp">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.exp</span></a></td></tr></tbody></table>
@@ -29333,8 +29333,8 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/exp" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/exp</a>
 
 # Math.expm1()
@@ -29347,7 +29347,7 @@ The `Math.expm1()` function returns `ex - 1`, where `x` is the argument, and [e]
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -29368,7 +29368,7 @@ Because `expm1()` is a static method of `Math`, you always use it as `Math.expm1
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.expm1">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.expm1">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.expm1</span></a></td></tr></tbody></table>
@@ -29409,8 +29409,8 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1</a>
 
 # Exponentiation (\*\*)
@@ -29466,7 +29466,7 @@ To force the base of an exponentiation expression to be a negative number:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-exp-operator</span></a></td></tr></tbody></table>
@@ -29509,8 +29509,8 @@ No
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation</a>
 
 # export
@@ -29556,7 +29556,7 @@ There are two types of exports:
     export { import1 as name1, import2 as name2, …, nameN } from …;
     export { default, … } from …;
 
-`nameN`  
+`nameN`
 Identifier to be exported (so that it can be imported via [`import`](import) in another script).
 
 ## Description
@@ -29722,7 +29722,7 @@ This is what it would look like using code snippets:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-exports</span></a></td></tr></tbody></table>
@@ -29825,8 +29825,8 @@ No
 -   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
 -   [Axel Rauschmayer's book: "Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a>
 
 # WebAssembly.Module.exports()
@@ -29839,7 +29839,7 @@ The `WebAssembly.Module.exports()` function returns an array containing descript
 
 ### Parameters
 
-_module_  
+_module_
 A [`WebAssembly.Module`](../module) object.
 
 ### Return value
@@ -29891,7 +29891,7 @@ The `exports[0]` output looks like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-module-exports</span></a></td></tr></tbody></table>
@@ -29932,8 +29932,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports</a>
 
 # extends
@@ -29985,7 +29985,7 @@ This example extends the built-in [`Date`](../global_objects/date) object. This 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'extends' in that specification.</span></a></td></tr></tbody></table>
@@ -30127,13 +30127,13 @@ The `fill()` method changes all elements in an array to a static value, from a s
 
 ### Parameters
 
-`value`  
+`value`
 Value to fill the array with. (Note all elements in the array will be this exact value.)
 
-`start` <span class="badge inline optional">Optional</span>  
+`start` <span class="badge inline optional">Optional</span>
 Start index, default `0`.
 
-`end` <span class="badge inline optional">Optional</span>  
+`end` <span class="badge inline optional">Optional</span>
 End index, default `arr.length`.
 
 ### Return value
@@ -30231,7 +30231,7 @@ This example shows how to create a matrix of all 1, like the _ones()_ function o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.fill' in that specification.</span></a></td></tr></tbody></table>
@@ -30292,21 +30292,21 @@ The `filter()` method **creates a new array** with all elements that pass the te
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function is a predicate, to test each element of the array. Return a value that coerces to `true` to keep the element, or to `false` otherwise.
 
 It accepts three arguments:
 
-`element`  
+`element`
 The current element being processed in the array.
 
-`index`<span class="badge inline optional">Optional</span>  
+`index`<span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array`<span class="badge inline optional">Optional</span>  
+`array`<span class="badge inline optional">Optional</span>
 The array `filter` was called upon.
 
-`thisArg`<span class="badge inline optional">Optional</span>  
+`thisArg`<span class="badge inline optional">Optional</span>
 Value to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -30511,7 +30511,7 @@ The following examples tests the behavior of the `filter` method when the array 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>
@@ -30568,7 +30568,7 @@ This helps to avoid duplicating code in both the promise's [`then()`](then) and 
 
 ### Parameters
 
-`onFinally`  
+`onFinally`
 A [`Function`](../function) called when the `Promise` is settled.
 
 ### Return value
@@ -30607,7 +30607,7 @@ The `finally()` method is very similar to calling `.then(onFinally, onFinally)` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.prototype.finally</span></a></td></tr></tbody></table>
@@ -30644,8 +30644,8 @@ No
 -   [`Promise.prototype.then()`](then)
 -   [`Promise.prototype.catch()`](catch)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally</a>
 
 # Array.prototype.find()
@@ -30676,19 +30676,19 @@ The `find()` method returns the value of the first element in the provided array
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function to execute on each value in the array, taking 3 arguments:
 
-`element`  
+`element`
 The current element in the array.
 
-`index` <span class="badge inline optional">Optional</span>  
+`index` <span class="badge inline optional">Optional</span>
 The index (position) of the current element in the array.
 
-`array` <span class="badge inline optional">Optional</span>  
+`array` <span class="badge inline optional">Optional</span>
 The array that `find` was called on.
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 Object to use as [`this`](../../operators/this) inside `callbackFn`.
 
 ### Return value
@@ -30787,7 +30787,7 @@ The following examples show that nonexistent and deleted elements _are_ visited,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.find">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.find">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.find</span></a></td></tr></tbody></table>
@@ -30853,19 +30853,19 @@ See also the [`find()`](find) method, which returns the **value** of a found ele
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function to execute on each value in the typed array, taking three arguments:
 
-`element`  
+`element`
 The current element being processed in the typed array.
 
-`index`  
+`index`
 The index of the current element being processed in the typed array.
 
-`array`  
+`array`
 The typed array `findIndex()` was called upon.
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 Object to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -30944,7 +30944,7 @@ The following example finds the index of an element in the typed array that is a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-%typedarray%.prototype.findindex</span></a></td></tr></tbody></table>
@@ -30980,8 +30980,8 @@ No
 -   [`TypedArray.prototype.find()`](find)
 -   [`TypedArray.prototype.indexOf()`](indexof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex</a>
 
 # String.prototype.fixed()
@@ -31015,7 +31015,7 @@ The following example uses the `fixed` method to change the formatting of a stri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.fixed</span></a></td></tr></tbody></table>
@@ -31052,8 +31052,8 @@ The following example uses the `fixed` method to change the formatting of a stri
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed</a>
 
 # RegExp.prototype.flags
@@ -31098,7 +31098,7 @@ Flags in the `flags` property are sorted alphabetically (from left to right, e.g
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.flags</span></a></td></tr></tbody></table>
@@ -31133,8 +31133,8 @@ No
 
 -   [`RegExp.prototype.source`](source)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags</a>
 
 # Array.prototype.flat()
@@ -31148,7 +31148,7 @@ The `flat()` method creates a new array with all sub-array elements concatenated
 
 ### Parameters
 
-`depth` <span class="badge inline optional">Optional</span>  
+`depth` <span class="badge inline optional">Optional</span>
 The depth level specifying how deep a nested array structure should be flattened. Defaults to 1.
 
 ### Return value
@@ -31258,7 +31258,7 @@ The flat method removes empty slots in arrays:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.flat' in that specification.</span></a></td></tr></tbody></table>
@@ -31322,19 +31322,19 @@ The `flatMap()` method returns a new array formed by applying a given callback f
 
 ### Parameters
 
-`callback`  
+`callback`
 Function that produces an element of the new Array, taking three arguments:
 
-`currentValue`  
+`currentValue`
 The current element being processed in the array.
 
-`index`<span class="badge inline optional">Optional</span>  
+`index`<span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array`<span class="badge inline optional">Optional</span>  
+`array`<span class="badge inline optional">Optional</span>
 The array `map` was called upon.
 
-`thisArg`<span class="badge inline optional">Optional</span>  
+`thisArg`<span class="badge inline optional">Optional</span>
 Value to use as `this` when executing `callback`.
 
 ### Return value
@@ -31408,7 +31408,7 @@ Notice, the output list length can be different from the input list length.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.flatmap</span></a></td></tr></tbody></table>
@@ -31455,117 +31455,117 @@ The `Float32Array` typed array represents an array of 32-bit floating point numb
 
 ## Constructor
 
-[`Float32Array()`](float32array/float32array)  
+[`Float32Array()`](float32array/float32array)
 Creates a new `Float32Array` object.
 
 ## Static properties
 
-[`Float32Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`Float32Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `4` in the case of an `Float32Array`.
 
-[`Float32Array.name`](typedarray/name)  
+[`Float32Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `Float32Array` type: "Float32Array".
 
 ## Static methods
 
-[`Float32Array.from()`](typedarray/from)  
+[`Float32Array.from()`](typedarray/from)
 Creates a new `Float32Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`Float32Array.of()`](typedarray/of)  
+[`Float32Array.of()`](typedarray/of)
 Creates a new `Float32Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`Float32Array.prototype.buffer`](typedarray/buffer)  
+[`Float32Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Float32Array` Fixed at construction time and thus **read only**.
 
-[`Float32Array.prototype.byteLength`](typedarray/bytelength)  
+[`Float32Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `Float32Array`. Fixed at construction time and thus **read only.**
 
-[`Float32Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`Float32Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `Float32Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Float32Array.prototype.length`](typedarray/length)  
+[`Float32Array.prototype.length`](typedarray/length)
 Returns the number of elements hold in the `Float32Array`. Fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`Float32Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`Float32Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`Float32Array.prototype.entries()`](typedarray/entries)  
+[`Float32Array.prototype.entries()`](typedarray/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`Float32Array.prototype.every()`](typedarray/every)  
+[`Float32Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`Float32Array.prototype.fill()`](typedarray/fill)  
+[`Float32Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`Float32Array.prototype.filter()`](typedarray/filter)  
+[`Float32Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns true. See also [`Array.prototype.filter()`](array/filter).
 
-[`Float32Array.prototype.find()`](typedarray/find)  
+[`Float32Array.prototype.find()`](typedarray/find)
 Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`Float32Array.prototype.findIndex()`](typedarray/findindex)  
+[`Float32Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`Float32Array.prototype.forEach()`](typedarray/foreach)  
+[`Float32Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`Float32Array.prototype.includes()`](typedarray/includes)  
+[`Float32Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`Float32Array.prototype.indexOf()`](typedarray/indexof)  
+[`Float32Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`Float32Array.prototype.join()`](typedarray/join)  
+[`Float32Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`Float32Array.prototype.keys()`](typedarray/keys)  
+[`Float32Array.prototype.keys()`](typedarray/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`Float32Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`Float32Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`Float32Array.prototype.map()`](typedarray/map)  
+[`Float32Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`Float32Array.prototype.reduce()`](typedarray/reduce)  
+[`Float32Array.prototype.reduce()`](typedarray/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`Float32Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`Float32Array.prototype.reduceRight()`](typedarray/reduceright)
 Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`Float32Array.prototype.reverse()`](typedarray/reverse)  
+[`Float32Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`Float32Array.prototype.set()`](typedarray/set)  
+[`Float32Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`Float32Array.prototype.slice()`](typedarray/slice)  
+[`Float32Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`Float32Array.prototype.some()`](typedarray/some)  
+[`Float32Array.prototype.some()`](typedarray/some)
 Returns true if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`Float32Array.prototype.sort()`](typedarray/sort)  
+[`Float32Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`Float32Array.prototype.subarray()`](typedarray/subarray)  
+[`Float32Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `Float32Array` from the given start and end element index.
 
-[`Float32Array.prototype.values()`](typedarray/values)  
+[`Float32Array.prototype.values()`](typedarray/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
-[`Float32Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
+[`Float32Array.prototype.toLocaleString()`](typedarray/tolocalestring)
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
 
-[`Float32Array.prototype.toString()`](typedarray/tostring)  
+[`Float32Array.prototype.toString()`](typedarray/tostring)
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
-[`Float32Array.prototype[@@iterator]()`](typedarray/@@iterator)  
+[`Float32Array.prototype[@@iterator]()`](typedarray/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples
@@ -31599,7 +31599,7 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#table-49</span></a></td></tr></tbody></table>
@@ -31670,117 +31670,117 @@ The `Float64Array` typed array represents an array of 64-bit floating point numb
 
 ## Constructor
 
-[`Float64Array()`](float64array/float64array)  
+[`Float64Array()`](float64array/float64array)
 Creates a new `Float64Array` object.
 
 ## Static properties
 
-[`Float64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`Float64Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `8` in the case of an `Float64Array`.
 
-[`Float64Array.name`](typedarray/name)  
+[`Float64Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `Float64Array` type: "Float64Array".
 
 ## Static methods
 
-[`Float64Array.from()`](typedarray/from)  
+[`Float64Array.from()`](typedarray/from)
 Creates a new `Float64Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`Float64Array.of()`](typedarray/of)  
+[`Float64Array.of()`](typedarray/of)
 Creates a new `Float64Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`Float64Array.prototype.buffer`](typedarray/buffer)  
+[`Float64Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Float64Array` Fixed at construction time and thus **read only**.
 
-[`Float64Array.prototype.byteLength`](typedarray/bytelength)  
+[`Float64Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `Float64Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Float64Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`Float64Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `Float64Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Float64Array.prototype.length`](typedarray/length)  
+[`Float64Array.prototype.length`](typedarray/length)
 Returns the number of elements hold in the `Float64Array`. Fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`Float64Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`Float64Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`Float64Array.prototype.entries()`](typedarray/entries)  
+[`Float64Array.prototype.entries()`](typedarray/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`Float64Array.prototype.every()`](typedarray/every)  
+[`Float64Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`Float64Array.prototype.fill()`](typedarray/fill)  
+[`Float64Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`Float64Array.prototype.filter()`](typedarray/filter)  
+[`Float64Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns true. See also [`Array.prototype.filter()`](array/filter).
 
-[`Float64Array.prototype.find()`](typedarray/find)  
+[`Float64Array.prototype.find()`](typedarray/find)
 Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`Float64Array.prototype.findIndex()`](typedarray/findindex)  
+[`Float64Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`Float64Array.prototype.forEach()`](typedarray/foreach)  
+[`Float64Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`Float64Array.prototype.includes()`](typedarray/includes)  
+[`Float64Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`Float64Array.prototype.indexOf()`](typedarray/indexof)  
+[`Float64Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`Float64Array.prototype.join()`](typedarray/join)  
+[`Float64Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`Float64Array.prototype.keys()`](typedarray/keys)  
+[`Float64Array.prototype.keys()`](typedarray/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`Float64Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`Float64Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`Float64Array.prototype.map()`](typedarray/map)  
+[`Float64Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`Float64Array.prototype.reduce()`](typedarray/reduce)  
+[`Float64Array.prototype.reduce()`](typedarray/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`Float64Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`Float64Array.prototype.reduceRight()`](typedarray/reduceright)
 Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`Float64Array.prototype.reverse()`](typedarray/reverse)  
+[`Float64Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`Float64Array.prototype.set()`](typedarray/set)  
+[`Float64Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`Float64Array.prototype.slice()`](typedarray/slice)  
+[`Float64Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`Float64Array.prototype.some()`](typedarray/some)  
+[`Float64Array.prototype.some()`](typedarray/some)
 Returns true if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`Float64Array.prototype.sort()`](typedarray/sort)  
+[`Float64Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`Float64Array.prototype.subarray()`](typedarray/subarray)  
+[`Float64Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `Float64Array` from the given start and end element index.
 
-[`Float64Array.prototype.values()`](typedarray/values)  
+[`Float64Array.prototype.values()`](typedarray/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
-[`Float64Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
+[`Float64Array.prototype.toLocaleString()`](typedarray/tolocalestring)
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
 
-[`Float64Array.prototype.toString()`](typedarray/tostring)  
+[`Float64Array.prototype.toString()`](typedarray/tostring)
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
-[`Float64Array.prototype[@@iterator]()`](typedarray/@@iterator)  
+[`Float64Array.prototype[@@iterator]()`](typedarray/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples
@@ -31814,7 +31814,7 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#table-49</span></a></td></tr></tbody></table>
@@ -31889,7 +31889,7 @@ The `Math.floor()` function returns the largest integer less than or equal to a 
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -31970,7 +31970,7 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.floor">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.floor">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.floor</span></a></td></tr></tbody></table>
@@ -32009,8 +32009,8 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor</a>
 
 # String.prototype.fontcolor()
@@ -32029,7 +32029,7 @@ The `fontcolor()` method creates a [`<font>`](https://developer.mozilla.org/en-U
 
 ### Parameters
 
-`color`  
+`color`
 A string expressing the color as a hexadecimal RGB triplet or as a string literal. String literals for color names are listed in the [CSS color reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value).
 
 ### Return value
@@ -32060,7 +32060,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontcolor">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontcolor">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.fontcolor</span></a></td></tr></tbody></table>
@@ -32095,8 +32095,8 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 -   [`String.prototype.fontsize()`](fontsize)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor</a>
 
 # String.prototype.fontsize()
@@ -32115,7 +32115,7 @@ The `fontsize()` method creates a [`<font>`](https://developer.mozilla.org/en-US
 
 ### Parameters
 
-`size`  
+`size`
 An integer between 1 and 7, a string representing a signed integer between 1 and 7.
 
 ### Return value
@@ -32144,7 +32144,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontsize">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontsize">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.fontsize</span></a></td></tr></tbody></table>
@@ -32180,8 +32180,8 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 -   [`String.prototype.big()`](big)
 -   [`String.prototype.small()`](small)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontsize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontsize</a>
 
 # for await...of
@@ -32196,10 +32196,10 @@ The `for await...of` creates a loop iterating over async iterable objects as wel
       statement
     }
 
-`variable`  
+`variable`
 On each iteration a value of a different property is assigned to `variable`. `variable` may be declared with `const`, `let`, or `var`.
 
-`iterable`  
+`iterable`
 Object whose iterable properties are to be iterated over.
 
 ## Examples
@@ -32387,7 +32387,7 @@ To make `finally` blocks of a sync generator to be always called use appropriate
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -32423,8 +32423,8 @@ No
 -   [`Symbol.asyncIterator`](../global_objects/symbol/asynciterator)
 -   [`for...of`](for...of)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of</a>
 
 # Warning: JavaScript 1.6's for-each-in loops are deprecated
@@ -32588,10 +32588,10 @@ The `for...in` iterates over all [enumerable properties](https://developer.mozil
     for (variable in object)
       statement
 
-`variable`  
+`variable`
 A different property name is assigned to `variable` on each iteration.
 
-`object`  
+`object`
 Object whose non-Symbol enumerable properties are iterated over.
 
 ## Description
@@ -32666,7 +32666,7 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -32724,8 +32724,8 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 -   [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in</a>
 
 # for...of
@@ -32738,10 +32738,10 @@ The `for...of` creates a loop iterating over [iterable objects](../iteration_pro
       statement
     }
 
-`variable`  
+`variable`
 On each iteration a value of a different property is assigned to `variable`. `variable` may be declared with `const`, `let`, or `var`.
 
-`iterable`  
+`iterable`
 Object whose iterable properties are iterated.
 
 ## Examples
@@ -32987,7 +32987,7 @@ This loop iterates and logs **values** that `iterable`, as an [iterable object](
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -33080,8 +33080,8 @@ No
 -   [`Map.prototype.forEach()`](../global_objects/map/foreach)
 -   [`Object.entries()`](../global_objects/object/entries) – Useful when using `for...of` over an object.
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of</a>
 
 # for
@@ -33093,18 +33093,18 @@ The **for statement** creates a loop that consists of three optional expressions
     for ([initialization]; [condition]; [final-expression])
        statement
 
-`initialization`  
+`initialization`
 An expression (including assignment expressions) or variable declaration evaluated once before the loop begins. Typically used to initialize a counter variable. This expression may optionally declare new variables with `var` or `let` keywords. Variables declared with `var` are not local to the loop, i.e. they are in the same scope the `for` loop is in. Variables declared with `let` are local to the statement.
 
 The result of this expression is discarded.
 
-`condition`  
+`condition`
 An expression to be evaluated before each loop iteration. If this expression evaluates to true, `statement` is executed. This conditional test is optional. If omitted, the condition always evaluates to true. If the expression evaluates to false, execution skips to the first expression following the `for` construct.
 
-`final-expression`  
+`final-expression`
 An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of `condition`. Generally used to update or increment the counter variable.
 
-`statement`  
+`statement`
 A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements. To execute no statement within the loop, use an [empty](empty) statement (`;`).
 
 ## Examples
@@ -33183,7 +33183,7 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-for-statement</span></a></td></tr></tbody></table>
@@ -33224,8 +33224,8 @@ The following `for` cycle calculates the offset position of a node in the `final
 -   [`for...in`](for...in)
 -   [`for...of`](for...of)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for</a>
 
 # Array.prototype.forEach()
@@ -33251,19 +33251,19 @@ The `forEach()` method executes a provided function once for each array element.
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function to execute on each element. It accepts between one and three arguments:
 
-`element`  
+`element`
 The current element being processed in the array.
 
-`index` <span class="badge inline optional">Optional</span>  
+`index` <span class="badge inline optional">Optional</span>
 The index of `element` in the array.
 
-`array` <span class="badge inline optional">Optional</span>  
+`array` <span class="badge inline optional">Optional</span>
 The array `forEach()` was called upon.
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 Value to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -33530,7 +33530,7 @@ The following example is only here for learning purpose. If you want to flatten 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.foreach</span></a></td></tr></tbody></table>
@@ -33584,7 +33584,7 @@ The `Intl.DateTimeFormat.prototype.format()` method formats a date according to 
 
 ### Parameters
 
-`date`  
+`date`
 The date to format.
 
 ## Description
@@ -33637,7 +33637,7 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.datetimeformat.prototype.format</span></a></td></tr></tbody></table>
@@ -33726,7 +33726,7 @@ This method receives two [`Date`](../../date)s and formats the date range in the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.datetimeformat.prototype.formatRange</span></a></td></tr></tbody></table>
@@ -33806,7 +33806,7 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span></a></td></tr></tbody></table>
@@ -33854,7 +33854,7 @@ The `Intl.DateTimeFormat.prototype.formatToParts()` method allows locale-aware f
 
 ### Parameters
 
-`date` <span class="badge inline optional">Optional</span>  
+`date` <span class="badge inline optional">Optional</span>
 The date to format.
 
 ### Return value
@@ -33872,46 +33872,46 @@ The `formatToParts()` method is useful for custom formatting of date strings. It
 
 Possible types are the following:
 
-day  
+day
 The string used for the day, for example "`17`".
 
-dayPeriod  
+dayPeriod
 The string used for the day period, for example, "`AM`", "`PM`", "`in the morning`", or "`noon`"
 
-era  
+era
 The string used for the era, for example "`BC`" or "`AD`".
 
-fractionalSecond  
+fractionalSecond
 The string used for the fractional seconds, for example "`0`" or "`00`" or "`000`".
 
-hour  
+hour
 The string used for the hour, for example "`3`" or "`03`".
 
-literal  
+literal
 The string used for separating date and time values, for example "`/`", "`,`", "`o'clock`", "`de`", etc.
 
-minute  
+minute
 The string used for the minute, for example "`00`".
 
-month  
+month
 The string used for the month, for example "`12`".
 
-relatedYear  
+relatedYear
 The string used for the related 4-digit Gregorian year, in the event that the calendar's representation would be a yearName instead of a year, for example "`2019`".
 
-second  
+second
 The string used for the second, for example "`07`" or "`42`".
 
-timeZoneName  
+timeZoneName
 The string used for the name of the time zone, for example "`UTC`".
 
-weekday  
+weekday
 The string used for the weekday, for example "`M`", "`Monday`", or "`Montag`".
 
-year  
+year
 The string used for the year, for example "`2012`" or "`96`".
 
-yearName  
+yearName
 The string used for the yearName in relevant contexts, for example "`geng-zi`"
 
 ## Polyfill
@@ -34045,7 +34045,7 @@ And `formatToParts`:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></a></td></tr></tbody></table>
@@ -34108,7 +34108,7 @@ The `Object.freeze()` method **freezes** an object. A frozen object can no longe
 
 ### Parameters
 
-`obj`  
+`obj`
 The object to freeze.
 
 ### Return value
@@ -34287,7 +34287,7 @@ To make an object immutable, recursively freeze each property which is of type o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.freeze</span></a></td></tr></tbody></table>
@@ -34326,8 +34326,8 @@ To make an object immutable, recursively freeze each property which is of type o
 -   [`Object.seal()`](seal)
 -   [`Object.isSealed()`](issealed)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze</a>
 
 # Array.from()
@@ -34353,13 +34353,13 @@ The `Array.from()` static method creates a new, shallow-copied `Array` instance 
 
 ### Parameters
 
-`arrayLike`  
+`arrayLike`
 An array-like or iterable object to convert to an array.
 
-`mapFn` <span class="badge inline optional">Optional</span>  
+`mapFn` <span class="badge inline optional">Optional</span>
 Map function to call on every element of the array.
 
-`thisArg` <span class="badge inline optional">Optional</span>  
+`thisArg` <span class="badge inline optional">Optional</span>
 Value to use as `this` when executing `mapFn`.
 
 ### Return value
@@ -34375,8 +34375,8 @@ A new [`Array`](../array) instance.
 
 `Array.from()` has an optional parameter `mapFn`, which allows you to execute a [`map()`](map) function on each element of the array being created.
 
-More clearly, `Array.from(obj, mapFn, thisArg)`  
-has the same result as `Array.from(obj).map(mapFn, thisArg)`,  
+More clearly, `Array.from(obj, mapFn, thisArg)`
+has the same result as `Array.from(obj).map(mapFn, thisArg)`,
 except that it does not create an intermediate array.
 
 **Note:** This is especially important for certain array subclasses, like [typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), since the intermediate array would necessarily have values truncated to fit into the appropriate type.
@@ -34460,7 +34460,7 @@ In ES2015, the class syntax allows sub-classing of both built-in and user-define
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.from' in that specification.</span></a></td><td>ECMAScript 2015</td></tr></tbody></table>
@@ -34657,7 +34657,7 @@ The static `String.fromCharCode()` method returns a string created from the spec
 
 ### Parameters
 
-`num1, ..., numN`  
+`num1, ..., numN`
 A sequence of numbers that are UTF-16 code units. The range is between `0` and `65535` (`0xFFFF`). Numbers greater than `0xFFFF` are truncated. No validity checks are performed.
 
 ### Return value
@@ -34698,7 +34698,7 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.fromCharCode' in that specification.</span></a></td></tr></tbody></table>
@@ -34736,8 +34736,8 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 -   [`String.prototype.charCodeAt()`](charcodeat)
 -   [`String.prototype.codePointAt()`](codepointat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode</a>
 
 # String.fromCodePoint()
@@ -34752,7 +34752,7 @@ The static `String.fromCodePoint()` method returns a string created by using the
 
 ### Parameters
 
-`num1, ..., numN`  
+`num1, ..., numN`
 A sequence of code points.
 
 ### Return value
@@ -34846,7 +34846,7 @@ Invalid input:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.fromcodepoint</span></a></td></tr></tbody></table>
@@ -34884,8 +34884,8 @@ No
 -   [`String.prototype.codePointAt()`](codepointat)
 -   [`String.prototype.charCodeAt()`](charcodeat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint</a>
 
 # Object.fromEntries()
@@ -34898,7 +34898,7 @@ The `Object.fromEntries()` method transforms a list of key-value pairs into an o
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An iterable such as [`Array`](../array) or [`Map`](../map) or other objects implementing the [iterable protocol](../../iteration_protocols#the_iterable_protocol).
 
 ### Return value
@@ -34945,7 +34945,7 @@ With `Object.fromEntries`, its reverse method [`Object.entries()`](entries), and
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.fromentries</span></a></td></tr></tbody></table>
@@ -34985,8 +34985,8 @@ No
 -   [`Map.prototype.keys()`](../map/keys)
 -   [`Map.prototype.values()`](../map/values)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries</a>
 
 # Math.fround()
@@ -34999,7 +34999,7 @@ The `Math.fround()` function returns the nearest [32-bit single precision](https
 
 ### Parameters
 
-`doubleFloat`  
+`doubleFloat`
 A [`Number`](../number). If the parameter is of a different type, it will get converted to a number or to [`NaN`](../nan) if it cannot be converted.
 
 ### Return value
@@ -35069,7 +35069,7 @@ Supporting older browsers is slower, but also possible:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.fround</span></a></td></tr></tbody></table>
@@ -35104,8 +35104,8 @@ No
 
 -   [`Math.round()`](round)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround</a>
 
 # function\*
@@ -35120,13 +35120,13 @@ You can also define generator functions using the [`GeneratorFunction`](../globa
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param` <span class="badge inline optional">Optional</span>  
+`param` <span class="badge inline optional">Optional</span>
 The name of a formal parameter for the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ## Description
@@ -35137,8 +35137,8 @@ Generators in JavaScript -- especially when combined with Promises -- are a very
 
 Calling a generator function does not execute its body immediately; an [iterator](../iteration_protocols#iterator) object for the function is returned instead. When the iterator's `next()` method is called, the generator function's body is executed until the first [`yield`](../operators/yield) expression, which specifies the value to be returned from the iterator or, with [`yield*`](../operators/yield*), delegates to another generator function. The `next()` method returns an object with a `value` property containing the yielded value and a `done` property which indicates whether the generator has yielded its last value, as a boolean. Calling the `next()` method with an argument will resume the generator function execution, replacing the `yield` expression where an execution was paused with the argument from `next()`.
 
-A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.  
-Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.  
+A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.
+Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.
 When a generator is finished, subsequent `next()` calls will not execute any of that generator's code, they will just return an object of this form: `{value: undefined, done: true}`.
 
 ## Examples
@@ -35301,7 +35301,7 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
@@ -35427,8 +35427,8 @@ No
     -   [Task.js](https://github.com/mozilla/task.js)
     -   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>
 
 # Function expression
@@ -35449,13 +35449,13 @@ As of ES2015, you can also use [arrow functions](../functions/arrow_functions).
 
 ### Parameters
 
-`name` <span class="badge inline optional">Optional</span>  
+`name` <span class="badge inline optional">Optional</span>
 The function name. Can be omitted, in which case the function is _anonymous_. The name is only local to the function body.
 
-`paramN` <span class="badge inline optional">Optional</span>  
+`paramN` <span class="badge inline optional">Optional</span>
 The name of an argument to be passed to the function.
 
-`statements` <span class="badge inline optional">Optional</span>  
+`statements` <span class="badge inline optional">Optional</span>
 The statements which comprise the body of the function.
 
 ## Description
@@ -35539,7 +35539,7 @@ An anonymous function is created and called:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -35608,8 +35608,8 @@ No
 -   [async function](../statements/async_function)
 -   [async function expression](async_function)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a>
 
 # Functions
@@ -35670,13 +35670,13 @@ There is a special syntax for declaring functions (see [function statement](stat
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The function expression (`function` expression)
@@ -35687,13 +35687,13 @@ A function expression is similar to and has the same syntax as a function declar
        statements
     }
 
-`name`  
+`name`
 The function name. Can be omitted, in which case the function becomes known as an anonymous function.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 Here is an example of an **anonymous** function expression (the `name` is not used):
@@ -35728,13 +35728,13 @@ There is a special syntax for generator function declarations (see [`function* s
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The generator function expression (`function*` expression)
@@ -35745,13 +35745,13 @@ A generator function expression is similar to and has the same syntax as a gener
        statements
     }
 
-`name`  
+`name`
 The function name. Can be omitted, in which case the function becomes known as an anonymous function.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The arrow function expression (=&gt;)
@@ -35764,10 +35764,10 @@ An arrow function expression has a shorter syntax and lexically binds its `this`
 
     param => expression
 
-`param`  
+`param`
 The name of an argument. Zero arguments need to be indicated with `()`. For only one argument, the parentheses are not required. (like `foo => 1`)
 
-`statements` or `expression`  
+`statements` or `expression`
 Multiple statements need to be enclosed in brackets. A single expression requires no brackets. The expression is also the implicit return value of the function.
 
 ### The `Function` constructor
@@ -35778,10 +35778,10 @@ As all other objects, [`Function`](global_objects/function) objects can be creat
 
     new Function (arg1, arg2, ... argN, functionBody)
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Zero or more names to be used by the function as formal parameters. Each must be a proper JavaScript identifier.
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function body.
 
 Invoking the `Function` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
@@ -35796,10 +35796,10 @@ As all other objects, [`GeneratorFunction`](global_objects/generatorfunction) ob
 
     new GeneratorFunction (arg1, arg2, ... argN, functionBody)
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Zero or more names to be used by the function as formal argument names. Each must be a string that conforms to the rules for a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function definition.
 
 Invoking the `GeneratorFunction` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
@@ -35829,10 +35829,10 @@ You can refer to a function's arguments within the function by using the `argume
 
 You can define getters (accessor methods) and setters (mutator methods) on any standard built-in object or user-defined object that supports the addition of new properties. The syntax for defining getters and setters uses the object literal syntax.
 
-[get](functions/get)  
+[get](functions/get)
 Binds an object property to a function that will be called when that property is looked up.
 
-[set](functions/set)  
+[set](functions/set)
 Binds an object property to a function to be called when there is an attempt to set that property.
 
 ### Method definition syntax
@@ -36075,7 +36075,7 @@ Note that in the `if` test, a reference to `noFunc` is used—there are no brack
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -36359,13 +36359,13 @@ This object cannot be instantiated directly. Instead, a `Generator` instance can
 
 ## Instance methods
 
-[`Generator.prototype.next()`](generator/next)  
+[`Generator.prototype.next()`](generator/next)
 Returns a value yielded by the [`yield`](../operators/yield) expression.
 
-[`Generator.prototype.return()`](generator/return)  
+[`Generator.prototype.return()`](generator/return)
 Returns the given value and finishes the generator.
 
-[`Generator.prototype.throw()`](generator/throw)  
+[`Generator.prototype.throw()`](generator/throw)
 Throws an error to a generator (also finishes the generator, unless caught from within that generator).
 
 ## Examples
@@ -36391,7 +36391,7 @@ With a generator function, values are not evaluated until they are needed. There
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generator-objects</span></a></td></tr></tbody></table>
@@ -36525,10 +36525,10 @@ Note that `GeneratorFunction` is not a global object. It could be obtained by ev
 
 ### Parameters
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function definition.
 
 ## Description
@@ -36556,7 +36556,7 @@ Invoking the `GeneratorFunction` constructor as a function (without using the `n
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generatorfunction-objects</span></a></td></tr></tbody></table>
@@ -36609,10 +36609,10 @@ The `get` syntax binds an object property to a function that will be called when
 
 ### Parameters
 
-`prop`  
+`prop`
 The name of the property to bind to the given function.
 
-`expression`  
+`expression`
 Starting with ECMAScript 2015, you can also use expressions for a computed property name to bind to the given function.
 
 ## Description
@@ -36721,7 +36721,7 @@ When using `get` the property will be defined on the instance's prototype, while
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Method definitions' in that specification.</span></a></td></tr></tbody></table>
@@ -36800,10 +36800,10 @@ The `getBigInt64()` method gets a signed 64-bit integer (long long) at the speci
 
 ### Parameters
 
-byteOffset  
+byteOffset
 The offset, in bytes, from the start of the view to read the data from.
 
-littleEndian  
+littleEndian
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -36812,7 +36812,7 @@ A [`BigInt`](../bigint).
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such that it would read beyond the end of the view.
 
 ## Description
@@ -36829,7 +36829,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbigint64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbigint64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getbigint64</span></a></td></tr></tbody></table>
@@ -36879,10 +36879,10 @@ The `getBigUint64()` method gets an unsigned 64-bit integer (unsigned long long)
 
 ### Parameters
 
-byteOffset  
+byteOffset
 The offset, in bytes, from the start of the view to read the data from.
 
-littleEndian  
+littleEndian
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -36891,7 +36891,7 @@ A [`BigInt`](../bigint).
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such that it would read beyond the end of the view.
 
 ## Description
@@ -36908,7 +36908,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getbiguint64</span></a></td></tr></tbody></table>
@@ -36957,7 +36957,7 @@ The `Intl.getCanonicalLocales()` method returns an array containing the canonica
 
 ### Parameters
 
-`locales`  
+`locales`
 A list of [`String`](../string) values for which to get the canonical locale names.
 
 ### Return value
@@ -36980,7 +36980,7 @@ An array containing the canonical locale names.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.getcanonicallocales</span></a></td></tr></tbody></table>
@@ -37044,7 +37044,7 @@ The second statement below assigns the value 25 to the variable `day`, based on 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getdate</span></a></td></tr></tbody></table>
@@ -37116,7 +37116,7 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Date.prototype.getDay' in that specification.</span></a></td></tr></tbody></table>
@@ -37166,10 +37166,10 @@ The `getFloat32()` method gets a signed 32-bit float (float) at the specified by
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -37178,7 +37178,7 @@ A signed 32-bit float number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -37195,7 +37195,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getfloat32</span></a></td></tr></tbody></table>
@@ -37244,10 +37244,10 @@ The `getFloat64()` method gets a signed 64-bit float (double) at the specified b
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -37256,7 +37256,7 @@ A signed 64-bit float number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -37273,7 +37273,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getfloat64</span></a></td></tr></tbody></table>
@@ -37340,7 +37340,7 @@ The following example assigns the four-digit value of the current year to the va
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getfullyear</span></a></td></tr></tbody></table>
@@ -37404,7 +37404,7 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.gethours</span></a></td></tr></tbody></table>
@@ -37453,10 +37453,10 @@ The `getInt16()` method gets a signed 16-bit integer (short) at the specified by
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -37465,7 +37465,7 @@ A signed 16-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -37482,7 +37482,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint16">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint16">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getint16</span></a></td></tr></tbody></table>
@@ -37531,10 +37531,10 @@ The `getInt32()` method gets a signed 32-bit integer (long) at the specified byt
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in bytes, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -37543,7 +37543,7 @@ A signed 32-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -37560,7 +37560,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getint32</span></a></td></tr></tbody></table>
@@ -37608,7 +37608,7 @@ The `getInt8()` method gets a signed 8-bit integer (byte) at the specified byte 
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
 ### Return value
@@ -37617,7 +37617,7 @@ A signed 8-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -37634,7 +37634,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getint8</span></a></td></tr></tbody></table>
@@ -37695,7 +37695,7 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmilliseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getmilliseconds</span></a></td></tr></tbody></table>
@@ -37758,7 +37758,7 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getminutes">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getminutes">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getminutes</span></a></td></tr></tbody></table>
@@ -37829,7 +37829,7 @@ The second statement below assigns the value 11 to the variable `month`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getmonth</span></a></td></tr></tbody></table>
@@ -37877,10 +37877,10 @@ The `Object.getOwnPropertyDescriptor()` method returns an object describing the 
 
 ### Parameters
 
-`obj`  
+`obj`
 The object in which to look for the property.
 
-`prop`  
+`prop`
 The name or [`Symbol`](../symbol) of the property whose description is to be retrieved.
 
 ### Return value
@@ -37893,22 +37893,22 @@ This method permits examination of the precise description of a property. A prop
 
 A property descriptor is a record with some of the following attributes:
 
-`value`  
+`value`
 The value associated with the property (data descriptors only).
 
-`writable`  
+`writable`
 `true` if and only if the value associated with the property may be changed (data descriptors only).
 
-`get`  
+`get`
 A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter (accessor descriptors only).
 
-`set`  
+`set`
 A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter (accessor descriptors only).
 
-`configurable`  
+`configurable`
 `true` if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
 
-`enumerable`  
+`enumerable`
 `true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 
 ## Examples
@@ -37975,7 +37975,7 @@ In ES5, if the first argument to this method is not an object (a primitive), the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.getownpropertydescriptor</span></a></td></tr></tbody></table>
@@ -38015,8 +38015,8 @@ In Internet Explorer 8, this was only supported on DOM objects and with some non
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Reflect.getOwnPropertyDescriptor()`](../reflect/getownpropertydescriptor)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor</a>
 
 # Object.getOwnPropertyDescriptors()
@@ -38029,7 +38029,7 @@ The `Object.getOwnPropertyDescriptors()` method returns all own property descrip
 
 ### Parameters
 
-`obj`  
+`obj`
 The object for which to get all own property descriptors.
 
 ### Return value
@@ -38042,22 +38042,22 @@ This method permits examination of the precise description of all own properties
 
 A property descriptor is a record with some of the following attributes:
 
-`value`  
+`value`
 The value associated with the property (data descriptors only).
 
-`writable`  
+`writable`
 `true` if and only if the value associated with the property may be changed (data descriptors only).
 
-`get`  
+`get`
 A function which serves as a getter for the property, or [`undefined`](../undefined) if there is no getter (accessor descriptors only).
 
-`set`  
+`set`
 A function which serves as a setter for the property, or [`undefined`](../undefined) if there is no setter (accessor descriptors only).
 
-`configurable`  
+`configurable`
 `true` if and only if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
 
-`enumerable`  
+`enumerable`
 `true` if and only if this property shows up during enumeration of the properties on the corresponding object.
 
 ## Examples
@@ -38089,7 +38089,7 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span></a></td></tr></tbody></table>
@@ -38126,8 +38126,8 @@ No
 -   [`Object.defineProperty()`](defineproperty)
 -   [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors</a>
 
 # Object.getOwnPropertyNames()
@@ -38140,7 +38140,7 @@ The `Object.getOwnPropertyNames()` method returns an array of all properties (in
 
 ### Parameters
 
-`obj`  
+`obj`
 The object whose enumerable and non-enumerable properties are to be returned.
 
 ### Return value
@@ -38238,7 +38238,7 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.getownpropertynames</span></a></td></tr></tbody></table>
@@ -38278,8 +38278,8 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 -   [`Object.keys()`](keys)
 -   [`Array.forEach()`](../array/foreach)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames</a>
 
 # Object.getOwnPropertySymbols()
@@ -38292,7 +38292,7 @@ The `Object.getOwnPropertySymbols()` method returns an array of all symbol prope
 
 ### Parameters
 
-`obj`  
+`obj`
 The object whose symbol properties are to be returned.
 
 ### Return value
@@ -38324,7 +38324,7 @@ As all objects have no own symbol properties initially, `Object.getOwnPropertySy
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertysymbols">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertysymbols">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.getownpropertysymbols</span></a></td></tr></tbody></table>
@@ -38360,8 +38360,8 @@ No
 -   [`Object.getOwnPropertyNames()`](getownpropertynames)
 -   [`Symbol`](../symbol)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols</a>
 
 # handler.getPrototypeOf()
@@ -38380,7 +38380,7 @@ The `handler.getPrototypeOf()` method is a trap for the `[[GetPrototypeOf]]` int
 
 The following parameter is passed to the `getPrototypeOf()` method. `this` is bound to the handler.
 
-`target`  
+`target`
 The target object.
 
 ### Return value
@@ -38459,7 +38459,7 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></a></td></tr></tbody></table>
@@ -38497,8 +38497,8 @@ No
 -   [`Object.getPrototypeOf()`](../../object/getprototypeof)
 -   [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf</a>
 
 # Date.prototype.getSeconds()
@@ -38526,7 +38526,7 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getseconds</span></a></td></tr></tbody></table>
@@ -38706,7 +38706,7 @@ Subtracting two subsequent `getTime()` calls on newly generated [`Date`](../date
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettime">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettime">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.gettime</span></a></td></tr></tbody></table>
@@ -38792,7 +38792,7 @@ In a time zone that doesn't annually shift in and out of Daylight Saving Time (D
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.gettimezoneoffset</span></a></td></tr></tbody></table>
@@ -38840,10 +38840,10 @@ The `getUint16()` method gets an unsigned 16-bit integer (unsigned short) at the
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -38852,7 +38852,7 @@ An unsigned 16-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -38869,7 +38869,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getuint16</span></a></td></tr></tbody></table>
@@ -38918,10 +38918,10 @@ The `getUint32()` method gets an unsigned 32-bit integer (unsigned long) at the 
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is read.
 
 ### Return value
@@ -38930,7 +38930,7 @@ An unsigned 32-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -38947,7 +38947,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getuint32</span></a></td></tr></tbody></table>
@@ -38995,7 +38995,7 @@ The `getUint8()` method gets an unsigned 8-bit integer (unsigned byte) at the sp
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to read the data.
 
 ### Return value
@@ -39004,7 +39004,7 @@ An unsigned 8-bit integer number.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ## Description
@@ -39021,7 +39021,7 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint8">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint8">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.getuint8</span></a></td></tr></tbody></table>
@@ -39082,7 +39082,7 @@ The following example assigns the day of month of the current date to the variab
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcdate">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcdate">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcdate</span></a></td></tr></tbody></table>
@@ -39144,7 +39144,7 @@ The following example assigns the weekday portion of the current date to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcday">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcday">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcday</span></a></td></tr></tbody></table>
@@ -39210,7 +39210,7 @@ The following example assigns the four-digit value of the current year to the va
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcfullyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcfullyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcfullyear</span></a></td></tr></tbody></table>
@@ -39271,7 +39271,7 @@ The following example assigns the hours portion of the current time to the varia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutchours</span></a></td></tr></tbody></table>
@@ -39334,7 +39334,7 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcmilliseconds</span></a></td></tr></tbody></table>
@@ -39395,7 +39395,7 @@ The following example assigns the minutes portion of the current time to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcminutes">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcminutes">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcminutes</span></a></td></tr></tbody></table>
@@ -39456,7 +39456,7 @@ The following example assigns the month portion of the current date to the varia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmonth">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmonth">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcmonth</span></a></td></tr></tbody></table>
@@ -39517,7 +39517,7 @@ The following example assigns the seconds portion of the current time to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getutcseconds</span></a></td></tr></tbody></table>
@@ -39621,7 +39621,7 @@ The third statement assigns the value 95 to the variable `year`, representing th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.getyear</span></a></td></tr></tbody></table>
@@ -39670,13 +39670,13 @@ A `WebAssembly.Global()` constructor creates a new `Global` object representing 
 
 ### Parameters
 
-_descriptor_  
+_descriptor_
 A `GlobalDescriptor` dictionary object, which contains two properties:
 
 -   `value`: A [`USVString`](https://developer.mozilla.org/en-US/docs/Web/API/USVString) representing the data type of the global. This can be one of `i32`, `i64`, `f32`, and `f64`. USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a String when returned in JavaScript; it's generally only used for APIs that perform text processing and need a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by the browser to Unicode 'replacement character' U+FFFD, (�).
 -   `mutable`: A boolean value that determines whether the global is mutable or not. By default, this is `false`.
 
-_value_  
+_value_
 The value the variable contains. This can be any value, as long as its type matches the variable's data type. If no value is specified, a typed 0 value is used, as specified by the [`DefaultValue` algorithm](https://webassembly.github.io/spec/js-api/#defaultvalue).
 
 ## Examples
@@ -39714,7 +39714,7 @@ The value of the global is then changed, first to `42` using the `Global.value` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-global-global</span></a></td></tr></tbody></table>
@@ -39752,8 +39752,8 @@ No
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 -   [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global</a>
 
 # globalThis
@@ -39776,7 +39776,7 @@ yes
 
 ## Description
 
-Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window/window), [`self`](https://developer.mozilla.org/en-US/docs/Web/API/Window/self), or [`frames`](https://developer.mozilla.org/en-US/docs/Web/API/Window/frames) - but in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) only `self` will work. In Node.js none of these work, and you must instead use `global`.  
+Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window/window), [`self`](https://developer.mozilla.org/en-US/docs/Web/API/Window/self), or [`frames`](https://developer.mozilla.org/en-US/docs/Web/API/Window/frames) - but in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) only `self` will work. In Node.js none of these work, and you must instead use `global`.
 The `this` keyword could be used inside functions running in non–strict mode, but `this` will be `undefined` in Modules and inside functions running in strict mode. You can also use `Function('return this')()`, but environments that disable [`eval()`](eval), like [CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP) in browsers, prevent use of [`Function`](function) in this way.
 
 The `globalThis` property provides a standard way of accessing the global `this` value (and hence the global object itself) across environments. Unlike similar properties such as `window` and `self`, it's guaranteed to work in window and non-window contexts. In this way, you can access the global object in a consistent manner without having to know which environment the code is being run in. To help you remember the name, just remember that in global scope the `this` value is `globalThis`.
@@ -39816,7 +39816,7 @@ With `globalThis` available, the additional search for the global across environ
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-globalthis</span></a></td></tr></tbody></table>
@@ -39915,7 +39915,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -39952,8 +39952,8 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Less than operator](less_than)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than</a>
 
 # Greater than or equal (&gt;=)
@@ -40017,7 +40017,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -40054,8 +40054,8 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Less than operator](less_than)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal</a>
 
 # Grouping operator ( )
@@ -40094,7 +40094,7 @@ Overriding multiplication and division first, then addition and subtraction to e
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-grouping-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-grouping-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-grouping-operator</span></a></td></tr></tbody></table>
@@ -40131,8 +40131,8 @@ Overriding multiplication and division first, then addition and subtraction to e
 -   [`delete`](delete)
 -   [`typeof`](typeof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a>
 
 # WebAssembly.Memory.prototype.grow()
@@ -40145,7 +40145,7 @@ The `grow()` protoype method of the `Memory` object increases the size of the me
 
 ### Parameters
 
-_number_  
+_number_
 The number of WebAssembly pages you want to grow the memory by (each one is 64KiB in size).
 
 ### Return value
@@ -40171,7 +40171,7 @@ Note the return value of `grow()` here is the previous number of WebAssembly pag
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-memory-grow</span></a></td></tr></tbody></table>
@@ -40212,8 +40212,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow</a>
 
 # handler.has()
@@ -40231,10 +40231,10 @@ The `handler.has()` method is a trap for the [`in`](../../../operators/in) opera
 
 The following parameters are passed to `has()` method. `this` is bound to the handler.
 
-`target`  
+`target`
 The target object.
 
-`prop`  
+`prop`
 The name or [`Symbol`](../../symbol) of the property to check for existence.
 
 ### Return value
@@ -40292,7 +40292,7 @@ The following code violates an invariant.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></a></td></tr></tbody></table>
@@ -40330,8 +40330,8 @@ No
 -   [`in`](../../../operators/in) operator
 -   [`Reflect.has()`](../../reflect/has)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has</a>
 
 # SyntaxError: Unexpected '\#' used outside of class body
@@ -40436,7 +40436,7 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.hasIndices</span></a></td></tr></tbody></table>
@@ -40509,8 +40509,8 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices</a>
 
 # Symbol.hasInstance
@@ -40564,7 +40564,7 @@ Just in the same manner at which you can check if an object is an instance of a 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.hasinstance</span></a></td></tr></tbody></table>
@@ -40599,8 +40599,8 @@ No
 
 -   [`instanceof`](../../operators/instanceof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance</a>
 
 # Object.prototype.hasOwnProperty()
@@ -40613,7 +40613,7 @@ The `hasOwnProperty()` method returns a boolean indicating whether the object ha
 
 ### Parameters
 
-prop  
+prop
 The [`String`](../string) name or [Symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol) of the property to test.
 
 ### Return value
@@ -40698,7 +40698,7 @@ Note that in the last case there are no newly created objects.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.prototype.hasownproperty</span></a></td></tr></tbody></table>
@@ -40737,8 +40737,8 @@ Note that in the last case there are no newly created objects.
 -   [`in`](../../operators/in)
 -   [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</a>
 
 # Intl.Locale.prototype.hourCycle
@@ -40773,7 +40773,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.hourCycle</span></a></td></tr></tbody></table>
@@ -40826,7 +40826,7 @@ $$\\mathtt{\\operatorname{Math.hypot}(v\_{1},v\_{2},\\ldots,v\_{n})} = \\sqrt{\\
 
 ### Parameters
 
-`value1, value2, ...`  
+`value1, value2, ...`
 Numbers.
 
 ### Return value
@@ -40896,7 +40896,7 @@ A polyfill that avoids underflows and overflows:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.hypot</span></a></td></tr></tbody></table>
@@ -40933,8 +40933,8 @@ No
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot</a>
 
 # SyntaxError: identifier starts immediately after numeric literal
@@ -40996,13 +40996,13 @@ The `if` statement executes a statement if a specified condition is [truthy](htt
        statement2
     }
 
-`condition`  
+`condition`
 An [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#expressions) that is considered to be either [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
 
-`statement1`  
+`statement1`
 Statement that is executed if condition is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy). Can be any statement, including further nested `if` statements. To execute multiple statements, use a [block](block) statement (`{ ... }`) to group those statements. To execute no statements, use an [empty](empty) statement.
 
-`statement2`  
+`statement2`
 Statement that is executed if `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) and the `else` clause exists. Can be any statement, including block statements and further nested `if` statements.
 
 ## Description
@@ -41082,7 +41082,7 @@ If you need to use an assignment in a conditional expression, a common practice 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-if-statement</span></a></td></tr></tbody></table>
@@ -41119,8 +41119,8 @@ If you need to use an assignment in a conditional expression, a common practice 
 -   [`switch`](switch)
 -   [Conditional operator](../operators/conditional_operator)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</a>
 
 # RegExp.prototype.ignoreCase
@@ -41157,7 +41157,7 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.ignorecase">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.ignorecase">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.ignorecase</span></a></td></tr></tbody></table>
@@ -41225,8 +41225,8 @@ You cannot change this property directly.
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase</a>
 
 # SyntaxError: illegal character
@@ -41322,19 +41322,19 @@ Backward compatibility can be ensured using attribute `nomodule` on the [`<scrip
     import "module-name";
     var promise = import("module-name");
 
-`defaultExport`  
+`defaultExport`
 Name that will refer to the default export from the module.
 
-`module-name`  
+`module-name`
 The module to import from. This is often a relative or absolute path name to the `.js` file containing the module. Certain bundlers may permit or require the use of the extension; check your environment. Only single quoted and double quoted Strings are allowed.
 
-`name`  
+`name`
 Name of the module object that will be used as a kind of namespace when referring to the imports.
 
-`exportN`  
+`exportN`
 Name of the exports to be imported.
 
-`aliasN`  
+`aliasN`
 Names that will refer to the named imports.
 
 ## Description
@@ -41494,7 +41494,7 @@ This example shows how to load functionality on to a page based on a user action
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-imports</span></a></td></tr></tbody></table>
@@ -41603,8 +41603,8 @@ No
 -   Axel Rauschmayer's book: ["Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 -   The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a>
 
 # import.meta
@@ -41662,7 +41662,7 @@ Such file-specific argument passing may be complementary to that used in the app
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-ImportMeta</span></a></td></tr><tr class="even"><td><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)
@@ -41701,8 +41701,8 @@ No
 -   [`import`](import)
 -   [`export`](export)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta</a>
 
 # WebAssembly.Module.imports()
@@ -41715,7 +41715,7 @@ The `WebAssembly.imports()` function returns an array containing descriptions of
 
 ### Parameters
 
-_module_  
+_module_
 A [`WebAssembly.Module`](../module) object.
 
 ### Return value
@@ -41744,7 +41744,7 @@ The output looks like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-module-imports</span></a></td></tr></tbody></table>
@@ -41785,8 +41785,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports</a>
 
 # Math.imul()
@@ -41799,10 +41799,10 @@ The `Math.imul()` function returns the result of the C-like 32-bit multiplicatio
 
 ### Parameters
 
-`a`  
+`a`
 First number.
 
-`b`  
+`b`
 Second number.
 
 ### Return value
@@ -41859,7 +41859,7 @@ However, the following function is more performant because it is likely that bro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.imul</span></a></td></tr></tbody></table>
@@ -41894,8 +41894,8 @@ No
 
 -   [Emscripten](https://en.wikipedia.org/wiki/Emscripten)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul</a>
 
 # in operator
@@ -41908,10 +41908,10 @@ The `in` returns `true` if the specified property is in the specified object or 
 
 ### Parameters
 
-`prop`  
+`prop`
 A string or symbol representing a property name or array index (non-symbols will be coerced to strings).
 
-`object`  
+`object`
 Object to check if it (or its prototype chain) <span class="short_text">contains</span> the property with specified name (`prop`).
 
 ## Examples
@@ -41987,7 +41987,7 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -42026,8 +42026,8 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 -   [`Reflect.has()`](../global_objects/reflect/has)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in</a>
 
 # TypeError: cannot use 'in' operator to search for 'x' in 'y'
@@ -42104,12 +42104,12 @@ The `includes()` method determines whether an array includes a certain value amo
 
 ### Parameters
 
-`searchElement`  
+`searchElement`
 The value to search for.
 
 **Note:** When comparing strings and characters, `includes()` is _case-sensitive_.
 
-`fromIndex` <span class="badge inline optional">Optional</span>  
+`fromIndex` <span class="badge inline optional">Optional</span>
 The position in this array at which to begin searching for `searchElement`.
 
 The first element to be searched is found at `fromIndex` for positive values of `fromIndex`, or at `arr.length + fromIndex` for negative values of `fromIndex` (using the [absolute value](#) of `fromIndex` as the number of elements from the end of the array at which to start the search).
@@ -42169,7 +42169,7 @@ The example below illustrates `includes()` method called on the function's [argu
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.includes">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.includes">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.includes</span></a></td></tr></tbody></table>
@@ -42244,7 +42244,7 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Increment operator' in that specification.</span></a></td></tr></tbody></table>
@@ -42287,8 +42287,8 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a>
 
 # JavaScript reference
@@ -42602,10 +42602,10 @@ The `indexOf()` method returns the first index at which a given element can be f
 
 ### Parameters
 
-`searchElement`  
+`searchElement`
 Element to locate in the array.
 
-`fromIndex` <span class="badge inline optional">Optional</span>  
+`fromIndex` <span class="badge inline optional">Optional</span>
 The index to start the search at. If the index is greater than or equal to the array's length, -1 is returned, which means the array will not be searched. If the provided index value is a negative number, it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. If the provided index is 0, then the whole array will be searched. Default: 0 (entire array is searched).
 
 ### Return value
@@ -42755,7 +42755,7 @@ However, if you are more interested in all the little technical bits defined by 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.indexof">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.indexof">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.indexof</span></a></td></tr></tbody></table>
@@ -42856,7 +42856,7 @@ To prevent this, and require that different types are considered to be different
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
@@ -42893,8 +42893,8 @@ To prevent this, and require that different types are considered to be different
 -   [Strict equality operator](strict_equality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality</a>
 
 # Infinity
@@ -42938,7 +42938,7 @@ As defined by the ECMAScript 5 specification, `Infinity` is read-only (implement
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-value-properties-of-the-global-object-infinity</span></a></td></tr></tbody></table>
@@ -42983,12 +42983,12 @@ A `WebAssembly.Instance` object is a stateful, executable instance of a [`WebAss
 
 ## Constructor
 
-[`WebAssembly.Instance()`](instance/instance)  
+[`WebAssembly.Instance()`](instance/instance)
 Creates a new `Instance` object.
 
 ## Instance properties
 
-[`Instance.prototype.exports`](instance/exports)  
+[`Instance.prototype.exports`](instance/exports)
 Returns an object containing as its members all the functions exported from the WebAssembly module instance, to allow them to be accessed and used by JavaScript. Read-only.
 
 ## Examples
@@ -43030,7 +43030,7 @@ This also demonstrates how the `exports` property is used to access exported fun
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#instances</span></a></td></tr></tbody></table>
@@ -43131,8 +43131,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance</a>
 
 # instanceof
@@ -43145,10 +43145,10 @@ The `instanceof` tests to see if the `prototype` property of a constructor appea
 
 ### Parameters
 
-`object`  
+`object`
 The object to test.
 
-`constructor`  
+`constructor`
 Function to test against
 
 ## Description
@@ -43281,7 +43281,7 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Relational Operators' in that specification.</span></a></td></tr></tbody></table>
@@ -43318,8 +43318,8 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 -   [`Symbol.hasInstance`](../global_objects/symbol/hasinstance)
 -   [`Object.prototype.isPrototypeOf`](../global_objects/object/isprototypeof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof</a>
 
 # WebAssembly.instantiate()
@@ -43339,10 +43339,10 @@ The `WebAssembly.instantiate()` function allows you to compile and instantiate W
 
 #### Parameters
 
-_bufferSource_  
+_bufferSource_
 A [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [`ArrayBuffer`](../arraybuffer) containing the binary code of the .wasm module you want to compile.
 
-_importObject_ <span class="badge inline optional">Optional</span>  
+_importObject_ <span class="badge inline optional">Optional</span>
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of the compiled module or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -43363,10 +43363,10 @@ A `Promise` that resolves to a `ResultObject` which contains two fields:
 
 #### Parameters
 
-_module_  
+_module_
 The [`WebAssembly.Module`](module) object to be instantiated.
 
-_importObject_ <span class="badge inline optional">Optional</span>  
+_importObject_ <span class="badge inline optional">Optional</span>
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of `module` or else a [`WebAssembly.LinkError`](linkerror) is thrown.
 
 #### Return value
@@ -43436,7 +43436,7 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#dom-webassembly-instantiate</span></a></td></tr></tbody></table>
@@ -43477,8 +43477,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate</a>
 
 # WebAssembly.instantiateStreaming()
@@ -43491,10 +43491,10 @@ The `WebAssembly.instantiateStreaming()` function compiles and instantiates a We
 
 ### Parameters
 
-_source_  
+_source_
 A [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object or a promise that will fulfill with one, representing the underlying source of a .wasm module you want to stream, compile, and instantiate.
 
-_importObject_ <span class="badge inline optional">Optional</span>  
+_importObject_ <span class="badge inline optional">Optional</span>
 An object containing the values to be imported into the newly-created `Instance`, such as functions or [`WebAssembly.Memory`](memory) objects. There must be one matching property for each declared import of the compiled module or else a `WebAssembly.LinkError` is thrown.
 
 ### Return value
@@ -43526,7 +43526,7 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API)
 <br/>
 
 <span class="small">#dom-webassembly-instantiatestreaming</span></a></td></tr></tbody></table>
@@ -43563,8 +43563,8 @@ No
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming</a>
 
 # Int16Array
@@ -43573,117 +43573,117 @@ The `Int16Array` typed array represents an array of twos-complement 16-bit signe
 
 ## Constructor
 
-[`Int16Array()`](int16array/int16array)  
+[`Int16Array()`](int16array/int16array)
 Creates a new `Int16Array` object.
 
 ## Static properties
 
-[`Int16Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`Int16Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `2` in the case of an `Int16Array`.
 
-[`Int16Array.name`](typedarray/name)  
+[`Int16Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `Int16Array` type: "`Int16Array`".
 
 ## Static methods
 
-[`Int16Array.from()`](typedarray/from)  
+[`Int16Array.from()`](typedarray/from)
 Creates a new `Int16Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`Int16Array.of()`](typedarray/of)  
+[`Int16Array.of()`](typedarray/of)
 Creates a new `Int16Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`Int16Array.prototype.buffer`](typedarray/buffer)  
+[`Int16Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Int16Array`. Fixed at construction time and thus **read only**.
 
-[`Int16Array.prototype.byteLength`](typedarray/bytelength)  
+[`Int16Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `Int16Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Int16Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`Int16Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `Int16Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Int16Array.prototype.length`](typedarray/length)  
+[`Int16Array.prototype.length`](typedarray/length)
 Returns the number of elements held in the `Int16Array`. Fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`Int16Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`Int16Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`Int16Array.prototype.entries()`](typedarray/entries)  
+[`Int16Array.prototype.entries()`](typedarray/entries)
 Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`Int16Array.prototype.every()`](typedarray/every)  
+[`Int16Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`Int16Array.prototype.fill()`](typedarray/fill)  
+[`Int16Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`Int16Array.prototype.filter()`](typedarray/filter)  
+[`Int16Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
 
-[`Int16Array.prototype.find()`](typedarray/find)  
+[`Int16Array.prototype.find()`](typedarray/find)
 Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`Int16Array.prototype.findIndex()`](typedarray/findindex)  
+[`Int16Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`Int16Array.prototype.forEach()`](typedarray/foreach)  
+[`Int16Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`Int16Array.prototype.includes()`](typedarray/includes)  
+[`Int16Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`Int16Array.prototype.indexOf()`](typedarray/indexof)  
+[`Int16Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`Int16Array.prototype.join()`](typedarray/join)  
+[`Int16Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`Int16Array.prototype.keys()`](typedarray/keys)  
+[`Int16Array.prototype.keys()`](typedarray/keys)
 Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`Int16Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`Int16Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`Int16Array.prototype.map()`](typedarray/map)  
+[`Int16Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`Int16Array.prototype.reduce()`](typedarray/reduce)  
+[`Int16Array.prototype.reduce()`](typedarray/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`Int16Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`Int16Array.prototype.reduceRight()`](typedarray/reduceright)
 Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`Int16Array.prototype.reverse()`](typedarray/reverse)  
+[`Int16Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`Int16Array.prototype.set()`](typedarray/set)  
+[`Int16Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`Int16Array.prototype.slice()`](typedarray/slice)  
+[`Int16Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`Int16Array.prototype.some()`](typedarray/some)  
+[`Int16Array.prototype.some()`](typedarray/some)
 Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`Int16Array.prototype.sort()`](typedarray/sort)  
+[`Int16Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`Int16Array.prototype.subarray()`](typedarray/subarray)  
+[`Int16Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `Int16Array` from the given start and end element index.
 
-[`Int16Array.prototype.values()`](typedarray/values)  
+[`Int16Array.prototype.values()`](typedarray/values)
 Returns a new **array iterator object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).**
 
-**[`Int16Array.prototype.toLocaleString()`](typedarray/tolocalestring)**  
+**[`Int16Array.prototype.toLocaleString()`](typedarray/tolocalestring)**
 **Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).**
 
-**[`Int16Array.prototype.toString()`](typedarray/tostring)**  
+**[`Int16Array.prototype.toString()`](typedarray/tostring)**
 **Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).**
 
-**[`Int16Array.prototype[@@iterator]()`](typedarray/@@iterator)**  
+**[`Int16Array.prototype[@@iterator]()`](typedarray/@@iterator)**
 **Returns a new _array iterator_ object that contains the values for each index in the array.**
 
 ## Examples
@@ -43717,7 +43717,7 @@ Returns a new **array iterator object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#table-49</span></a></td></tr></tbody></table>
@@ -43799,16 +43799,16 @@ The `Int32Array()` typed array constructor creates an array of twos-complement 3
 
 ### Parameters
 
-`length`  
+`length`
 When called with a `length` argument, an internal array buffer is created in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
 
-`typedArray`  
+`typedArray`
 When called with a `typedArray` argument, which can be an object of any of the typed array types (such as `Int32Array`), the `typedArray` gets copied into a new typed array. Each value in `typedArray` is converted to the corresponding type of the constructor before being copied into the new array. The length of the new typed array will be same as the length of the `typedArray` argument.
 
-`object`  
+`object`
 When called with an `object` argument, a new typed array is created as if by the `TypedArray.from()` method.
 
-`buffer`, `byteOffset`, `length`  
+`buffer`, `byteOffset`, `length`
 When called with a `buffer`, and optionally a `byteOffset` and a `length` argument, a new typed array view is created that views the specified [`ArrayBuffer`](arraybuffer). The `byteOffset` and `length` parameters specify the memory range that will be exposed by the typed array view. If both are omitted, all of `buffer` is viewed; if only `length` is omitted, the remainder of `buffer` is viewed.
 
 ## Examples
@@ -43842,7 +43842,7 @@ When called with a `buffer`, and optionally a `byteOffset` and a `length` argume
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-typedarray-constructors</span></a></td></tr></tbody></table>
@@ -43975,117 +43975,117 @@ The `Int8Array` typed array represents an array of twos-complement 8-bit signed 
 
 ## Constructor
 
-[`Int8Array()`](int8array/int8array)  
+[`Int8Array()`](int8array/int8array)
 Creates a new `Int8Array` object.
 
 ## Static properties
 
-[`Int8Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)  
+[`Int8Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
 Returns a number value of the element size. `1` in the case of an `Int8Array`.
 
-[`Int8Array.name`](typedarray/name)  
+[`Int8Array.name`](typedarray/name)
 Returns the string value of the constructor name. In the case of the `Int8Array` type: "`Int8Array`".
 
 ## Static methods
 
-[`Int8Array.from()`](typedarray/from)  
+[`Int8Array.from()`](typedarray/from)
 Creates a new `Int8Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
 
-[`Int8Array.of()`](typedarray/of)  
+[`Int8Array.of()`](typedarray/of)
 Creates a new `Int8Array` with a variable number of arguments. See also [`Array.of()`](array/of).
 
 ## Instance properties
 
-[`Int8Array.prototype.buffer`](typedarray/buffer)  
+[`Int8Array.prototype.buffer`](typedarray/buffer)
 Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Int8Array`. Fixed at construction time and thus **read only**.
 
-[`Int8Array.prototype.byteLength`](typedarray/bytelength)  
+[`Int8Array.prototype.byteLength`](typedarray/bytelength)
 Returns the length (in bytes) of the `Int8Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Int8Array.prototype.byteOffset`](typedarray/byteoffset)  
+[`Int8Array.prototype.byteOffset`](typedarray/byteoffset)
 Returns the offset (in bytes) of the `Int8Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
 
-[`Int8Array.prototype.length`](typedarray/length)  
+[`Int8Array.prototype.length`](typedarray/length)
 Returns the number of elements held in the `Int8Array`. Fixed at construction time and thus **read only.**
 
 ## Instance methods
 
-[`Int8Array.prototype.copyWithin()`](typedarray/copywithin)  
+[`Int8Array.prototype.copyWithin()`](typedarray/copywithin)
 Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
 
-[`Int8Array.prototype.entries()`](typedarray/entries)  
+[`Int8Array.prototype.entries()`](typedarray/entries)
 Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
 
-[`Int8Array.prototype.every()`](typedarray/every)  
+[`Int8Array.prototype.every()`](typedarray/every)
 Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
 
-[`Int8Array.prototype.fill()`](typedarray/fill)  
+[`Int8Array.prototype.fill()`](typedarray/fill)
 Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
 
-[`Int8Array.prototype.filter()`](typedarray/filter)  
+[`Int8Array.prototype.filter()`](typedarray/filter)
 Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
 
-[`Int8Array.prototype.find()`](typedarray/find)  
+[`Int8Array.prototype.find()`](typedarray/find)
 Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
 
-[`Int8Array.prototype.findIndex()`](typedarray/findindex)  
+[`Int8Array.prototype.findIndex()`](typedarray/findindex)
 Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
 
-[`Int8Array.prototype.forEach()`](typedarray/foreach)  
+[`Int8Array.prototype.forEach()`](typedarray/foreach)
 Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
 
-[`Int8Array.prototype.includes()`](typedarray/includes)  
+[`Int8Array.prototype.includes()`](typedarray/includes)
 Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
 
-[`Int8Array.prototype.indexOf()`](typedarray/indexof)  
+[`Int8Array.prototype.indexOf()`](typedarray/indexof)
 Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
 
-[`Int8Array.prototype.join()`](typedarray/join)  
+[`Int8Array.prototype.join()`](typedarray/join)
 Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
 
-[`Int8Array.prototype.keys()`](typedarray/keys)  
+[`Int8Array.prototype.keys()`](typedarray/keys)
 Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
 
-[`Int8Array.prototype.lastIndexOf()`](typedarray/lastindexof)  
+[`Int8Array.prototype.lastIndexOf()`](typedarray/lastindexof)
 Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
 
-[`Int8Array.prototype.map()`](typedarray/map)  
+[`Int8Array.prototype.map()`](typedarray/map)
 Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
 
-[`Int8Array.prototype.reduce()`](typedarray/reduce)  
+[`Int8Array.prototype.reduce()`](typedarray/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
 
-[`Int8Array.prototype.reduceRight()`](typedarray/reduceright)  
+[`Int8Array.prototype.reduceRight()`](typedarray/reduceright)
 Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
 
-[`Int8Array.prototype.reverse()`](typedarray/reverse)  
+[`Int8Array.prototype.reverse()`](typedarray/reverse)
 Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
 
-[`Int8Array.prototype.set()`](typedarray/set)  
+[`Int8Array.prototype.set()`](typedarray/set)
 Stores multiple values in the typed array, reading input values from a specified array.
 
-[`Int8Array.prototype.slice()`](typedarray/slice)  
+[`Int8Array.prototype.slice()`](typedarray/slice)
 Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
 
-[`Int8Array.prototype.some()`](typedarray/some)  
+[`Int8Array.prototype.some()`](typedarray/some)
 Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
 
-[`Int8Array.prototype.sort()`](typedarray/sort)  
+[`Int8Array.prototype.sort()`](typedarray/sort)
 Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
 
-[`Int8Array.prototype.subarray()`](typedarray/subarray)  
+[`Int8Array.prototype.subarray()`](typedarray/subarray)
 Returns a new `Int8Array` from the given start and end element index.
 
-[`Int8Array.prototype.values()`](typedarray/values)  
+[`Int8Array.prototype.values()`](typedarray/values)
 Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
 
-[`Int8Array.prototype.toLocaleString()`](typedarray/tolocalestring)  
+[`Int8Array.prototype.toLocaleString()`](typedarray/tolocalestring)
 Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
 
-[`Int8Array.prototype.toString()`](typedarray/tostring)  
+[`Int8Array.prototype.toString()`](typedarray/tostring)
 Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
 
-[`Int8Array.prototype[@@iterator]()`](typedarray/@@iterator)  
+[`Int8Array.prototype[@@iterator]()`](typedarray/@@iterator)
 Returns a new _array iterator_ object that contains the values for each index in the array.
 
 ## Examples
@@ -44119,7 +44119,7 @@ Returns a new _array iterator_ object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'TypedArray constructors' in that specification.</span></a></td></tr></tbody></table>
@@ -44201,27 +44201,27 @@ Example cases are mostly when something is too large, e.g.:
 
 ## Constructor
 
-[`InternalError()`](internalerror/internalerror)  
+[`InternalError()`](internalerror/internalerror)
 Creates a new `InternalError` object.
 
 ## Instance properties
 
-[`InternalError.prototype.message`](error/message)  
+[`InternalError.prototype.message`](error/message)
 Error message. Inherited from [`Error`](error).
 
-[`InternalError.prototype.name`](error/name)  
+[`InternalError.prototype.name`](error/name)
 Error name. Inherited from [`Error`](error).
 
-[`InternalError.prototype.fileName`](error/filename)  
+[`InternalError.prototype.fileName`](error/filename)
 Path to file that raised this error. Inherited from [`Error`](error).
 
-[`InternalError.prototype.lineNumber`](error/linenumber)  
+[`InternalError.prototype.lineNumber`](error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](error).
 
-[`InternalError.prototype.columnNumber`](error/columnnumber)  
+[`InternalError.prototype.columnNumber`](error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](error).
 
-[`InternalError.prototype.stack`](error/stack)  
+[`InternalError.prototype.stack`](error/stack)
 Stack trace. Inherited from [`Error`](error).
 
 ## Examples
@@ -44321,33 +44321,33 @@ The `Intl` object is the namespace for the ECMAScript Internationalization API, 
 
 ## Constructor properties
 
-[`Intl.Collator()`](intl/collator/collator)  
+[`Intl.Collator()`](intl/collator/collator)
 Constructor for collators, which are objects that enable language-sensitive string comparison.
 
-[`Intl.DateTimeFormat()`](intl/datetimeformat/datetimeformat)  
+[`Intl.DateTimeFormat()`](intl/datetimeformat/datetimeformat)
 Constructor for objects that enable language-sensitive date and time formatting.
 
-[`Intl.DisplayNames()`](intl/displaynames/displaynames)  
+[`Intl.DisplayNames()`](intl/displaynames/displaynames)
 Constructor for objects that enable the consistent translation of language, region and script display names.
 
-[`Intl.ListFormat()`](intl/listformat/listformat)  
+[`Intl.ListFormat()`](intl/listformat/listformat)
 Constructor for objects that enable language-sensitive list formatting.
 
-[`Intl.Locale()`](intl/locale/locale)  
+[`Intl.Locale()`](intl/locale/locale)
 Constructor for objects that represents a Unicode locale identifier.
 
-[`Intl.NumberFormat()`](intl/numberformat/numberformat)  
+[`Intl.NumberFormat()`](intl/numberformat/numberformat)
 Constructor for objects that enable language-sensitive number formatting.
 
-[`Intl.PluralRules()`](intl/pluralrules/pluralrules)  
+[`Intl.PluralRules()`](intl/pluralrules/pluralrules)
 Constructor for objects that enable plural-sensitive formatting and language-specific rules for plurals.
 
-[`Intl.RelativeTimeFormat()`](intl/relativetimeformat/relativetimeformat)  
+[`Intl.RelativeTimeFormat()`](intl/relativetimeformat/relativetimeformat)
 Constructor for objects that enable language-sensitive relative time formatting.
 
 ## Static methods
 
-[`Intl.getCanonicalLocales()`](intl/getcanonicallocales)  
+[`Intl.getCanonicalLocales()`](intl/getcanonicallocales)
 Returns canonical locale names.
 
 ## Locale identification and negotiation
@@ -44428,7 +44428,7 @@ You can use `Intl` to format dates and numbers in a form that's conventional for
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#intl-object</span></a></td></tr></tbody></table>
@@ -45166,10 +45166,10 @@ The `Object.is()` method determines whether two values are [the same value](http
 
 ### Parameters
 
-`value1`  
+`value1`
 The first value to compare.
 
-`value2`  
+`value2`
 The second value to compare.
 
 ### Return value
@@ -45246,7 +45246,7 @@ This is also _not_ the same as being equal according to the [`===`](https://deve
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.is' in that specification.</span></a></td></tr></tbody></table>
@@ -45281,8 +45281,8 @@ No
 
 -   [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) — a comparison of all three built-in sameness facilities
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is</a>
 
 # TypeError: 'x' is not iterable
@@ -45412,7 +45412,7 @@ The `Array.isArray()` method determines whether the passed value is an [`Array`]
 
 ### Parameters
 
-`value`  
+`value`
 The value to be checked.
 
 ### Return value
@@ -45466,7 +45466,7 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.isarray</span></a></td></tr></tbody></table>
@@ -45571,7 +45571,7 @@ For array-like objects, the default is to not spread. `Symbol.isConcatSpreadable
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.isconcatspreadable">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.isconcatspreadable">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.isconcatspreadable</span></a></td></tr></tbody></table>
@@ -45606,8 +45606,8 @@ No
 
 -   [`Array.prototype.concat()`](../array/concat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable</a>
 
 # Reflect.isExtensible()
@@ -45620,7 +45620,7 @@ The static `Reflect.isExtensible()` method determines if an object is extensible
 
 ### Parameters
 
-`target`  
+`target`
 The target object which to check if it is extensible.
 
 ### Return value
@@ -45669,7 +45669,7 @@ If the `target` argument to this method is not an object (a primitive), then it 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-reflect.isextensible</span></a></td></tr></tbody></table>
@@ -45705,8 +45705,8 @@ No
 -   [`Reflect`](../reflect)
 -   [`Object.isExtensible()`](../object/isextensible)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible</a>
 
 # Number.isFinite()
@@ -45719,7 +45719,7 @@ The `Number.isFinite()` method determines whether the passed value is a finite n
 
 ### Parameters
 
-`value`  
+`value`
 The value to be tested for finiteness.
 
 ### Return value
@@ -45754,7 +45754,7 @@ In comparison to the global [`isFinite()`](../isfinite) function, this method do
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.isfinite</span></a></td></tr></tbody></table>
@@ -45790,8 +45790,8 @@ No
 -   The [`Number`](../number) object it belongs to.
 -   The global function [`isFinite`](../isfinite).
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite</a>
 
 # Object.isFrozen()
@@ -45804,7 +45804,7 @@ The `Object.isFrozen()` determines if an object is [frozen](freeze).
 
 ### Parameters
 
-`obj`  
+`obj`
 The object which should be checked.
 
 ### Return value
@@ -45913,7 +45913,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.isfrozen">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.isfrozen">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.isFrozen' in that specification.</span></a></td></tr></tbody></table>
@@ -45952,8 +45952,8 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.seal()`](seal)
 -   [`Object.isSealed()`](issealed)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen</a>
 
 # Number.isInteger()
@@ -45966,7 +45966,7 @@ The `Number.isInteger()` method determines whether the passed value is an intege
 
 ### Parameters
 
-`value`  
+`value`
 The value to be tested for being an integer.
 
 ### Return value
@@ -46011,7 +46011,7 @@ If the target value is an integer, return `true`, otherwise return `false`. If t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.isinteger</span></a></td></tr></tbody></table>
@@ -46046,8 +46046,8 @@ No
 
 -   The [`Number`](../number) object it belongs to.
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger</a>
 
 # Atomics.isLockFree()
@@ -46060,7 +46060,7 @@ The static ` Atomics``.isLockFree() ` method is used to determine whether to use
 
 ### Parameters
 
-`size`  
+`size`
 The size in bytes to check.
 
 ### Return value
@@ -46082,7 +46082,7 @@ A [`Boolean`](../boolean) indicating whether the operation is lock free.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.islockfree</span></a></td></tr></tbody></table>
@@ -46157,7 +46157,7 @@ The `isNaN()` function determines whether a value is [`NaN`](nan) or not. Becaus
 
 ### Parameters
 
-`value`  
+`value`
 The value to be tested.
 
 ### Return value
@@ -46223,7 +46223,7 @@ You can use this, for example, to test whether an argument to a function is arit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'isNaN' in that specification.</span></a></td></tr></tbody></table>
@@ -46273,7 +46273,7 @@ The `isPrototypeOf()` method checks if an object exists in another object's prot
 
 ### Parameters
 
-`object`  
+`object`
 The object whose prototype chain will be searched.
 
 ### Return value
@@ -46282,7 +46282,7 @@ A [`Boolean`](../boolean) indicating whether the calling object lies in the prot
 
 ### Errors thrown
 
-[`TypeError`](../typeerror)  
+[`TypeError`](../typeerror)
 A [`TypeError`](../typeerror) is thrown if `prototypeObj` is undefined or null.
 
 ## Description
@@ -46329,7 +46329,7 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.prototype.isprototypeof</span></a></td></tr></tbody></table>
@@ -46367,8 +46367,8 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 -   [`Object.setPrototypeOf()`](setprototypeof)
 -   [`Object/proto`](proto)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf</a>
 
 # Number.isSafeInteger()
@@ -46392,7 +46392,7 @@ For larger integers, consider using the [`BigInt`](../bigint) type.
 
 ### Parameters
 
-`testValue`  
+`testValue`
 The value to be tested for being a safe integer.
 
 ### Return value
@@ -46420,7 +46420,7 @@ A [`Boolean`](../boolean) indicating whether or not the given value is a number 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.issafeinteger</span></a></td></tr></tbody></table>
@@ -46458,8 +46458,8 @@ No
 -   [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger</a>
 
 # Object.isSealed()
@@ -46472,7 +46472,7 @@ The `Object.isSealed()` method determines if an object is sealed.
 
 ### Parameters
 
-`obj`  
+`obj`
 The object which should be checked.
 
 ### Return value
@@ -46543,7 +46543,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.isSealed' in that specification.</span></a></td></tr></tbody></table>
@@ -46582,8 +46582,8 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.freeze()`](freeze)
 -   [`Object.isFrozen()`](isfrozen)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed</a>
 
 # ArrayBuffer.isView()
@@ -46596,7 +46596,7 @@ The `ArrayBuffer.isView()` method determines whether the passed value is one of 
 
 ### Parameters
 
-`value`  
+`value`
 The value to be checked.
 
 ### Return value
@@ -46624,7 +46624,7 @@ The value to be checked.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer.isview">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer.isview">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arraybuffer.isview</span></a></td></tr></tbody></table>
@@ -46695,7 +46695,7 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.italics">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.italics">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.italics</span></a></td></tr></tbody></table>
@@ -46732,8 +46732,8 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.bold()`](bold)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/italics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/italics</a>
 
 # Iteration protocols
@@ -47122,7 +47122,7 @@ If an iterable's `@@iterator` method does not return an iterator object, then it
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Symbol.iterator' in that specification.</span></a></td></tr></tbody></table>
@@ -47162,8 +47162,8 @@ No
 -   [`Map.prototype[@@iterator]()`](../map/@@iterator)
 -   [`Set.prototype[@@iterator]()`](../set/@@iterator)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator</a>
 
 # Array.prototype.join()
@@ -47177,7 +47177,7 @@ The `join()` method creates and returns a new string by concatenating all of the
 
 ### Parameters
 
-`separator` <span class="badge inline optional">Optional</span>  
+`separator` <span class="badge inline optional">Optional</span>
 Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (","). If `separator` is an empty string, all elements are joined without any characters in between them.
 
 ### Return value
@@ -47215,7 +47215,7 @@ The following example joins array-like object (`arguments`), by calling [`Functi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.join">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.join">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.join' in that specification.</span></a></td></tr></tbody></table>
@@ -47264,13 +47264,13 @@ The `JSON` object contains methods for parsing [JavaScript Object Notation](http
 
 JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and [`null`](null). It is based upon JavaScript syntax but is distinct from it: some JavaScript is _not_ JSON.
 
-**Objects and Arrays**  
+**Objects and Arrays**
 Property names must be double-quoted strings; [trailing commas](../trailing_commas) are forbidden.
 
-**Numbers**  
+**Numbers**
 Leading zeros are prohibited. A decimal point must be followed by at least one digit. `NaN` and `Infinity` are unsupported.
 
-**Any JSON text is a valid JavaScript expression...**  
+**Any JSON text is a valid JavaScript expression...**
 ...But only in JavaScript engines that have implemented the [proposal to make all JSON text valid ECMA-262](https://github.com/tc39/proposal-json-superset). In engines that haven't implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON; but their use in these features in JavaScript string literals is a [`SyntaxError`](syntaxerror).
 
 Consider this example where [`JSON.parse()`](json/parse) parses the string as JSON and [`Global_Objects/eval`](eval) executes the string as JavaScript:
@@ -47337,10 +47337,10 @@ Insignificant [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whi
 
 ## Static methods
 
-[`JSON.parse(text[, reviver])`](json/parse)  
+[`JSON.parse(text[, reviver])`](json/parse)
 Parse the string `text` as JSON, optionally transform the produced value and its properties, and return the value. Any violations of the JSON syntax, including those pertaining to the differences between JavaScript and JSON, cause a [`SyntaxError`](syntaxerror) to be thrown. The `reviver` option allows for interpreting what the `replacer` has used to stand in for other datatypes.
 
-[`JSON.stringify(value[, replacer[, space]])`](json/stringify)  
+[`JSON.stringify(value[, replacer[, space]])`](json/stringify)
 Return a JSON string corresponding to the specified value, optionally including only certain properties or replacing property values in a user-defined manner. By default, all instances of [`undefined`](undefined) are replaced with [`null`](null), and other unsupported native data types are censored. The `replacer` option allows for specifying other behavior.
 
 ## Examples
@@ -47366,7 +47366,7 @@ Return a JSON string corresponding to the specified value, optionally including 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-json-object</span></a></td></tr></tbody></table>
@@ -47595,7 +47595,7 @@ The `Symbol.keyFor(sym)` method retrieves a shared symbol key from the global sy
 
 ### Parameters
 
-`sym`  
+`sym`
 Symbol, required. The symbol to find a key for.
 
 ### Return value
@@ -47618,7 +47618,7 @@ A string representing the key for the given symbol if one is found on the global
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.keyfor</span></a></td></tr></tbody></table>
@@ -47653,8 +47653,8 @@ No
 
 -   [`Symbol.for()`](for)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor</a>
 
 # Object.keys()
@@ -47667,7 +47667,7 @@ The `Object.keys()` method returns an array of a given object's own enumerable p
 
 ### Parameters
 
-`obj`  
+`obj`
 The object of which the enumerable's own properties are to be returned.
 
 ### Return value
@@ -47769,7 +47769,7 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.keys</span></a></td></tr></tbody></table>
@@ -47809,8 +47809,8 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 -   [`Object.values()`](values)
 -   [`Object.entries()`](entries)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys</a>
 
 # label
@@ -47822,10 +47822,10 @@ The **labeled statement** can be used with [`break`](break) or [`continue`](cont
     label :
       statement
 
-`label`  
+`label`
 Any JavaScript identifier that is not a reserved word.
 
-`statement`  
+`statement`
 A JavaScript statement. `break` can be used with any labeled statement, and `continue` can be used with looping labeled statements.
 
 ## Description
@@ -47955,7 +47955,7 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Labelled statement' in that specification.</span></a></td></tr></tbody></table>
@@ -47991,8 +47991,8 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 -   [`break`](break)
 -   [`continue`](continue)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label</a>
 
 # Intl.Locale.prototype.language
@@ -48023,7 +48023,7 @@ While the language subtag must be specified, the [`Locale`](../locale) construct
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.language</span></a></td></tr></tbody></table>
@@ -48112,7 +48112,7 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-properties-of-regexp-instances</span></a></td></tr></tbody></table>
@@ -48154,8 +48154,8 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex</a>
 
 # Array.prototype.lastIndexOf()
@@ -48169,10 +48169,10 @@ The `lastIndexOf()` method returns the last index at which a given element can b
 
 ### Parameters
 
-`searchElement`  
+`searchElement`
 Element to locate in the array.
 
-`fromIndex` <span class="badge inline optional">Optional</span>  
+`fromIndex` <span class="badge inline optional">Optional</span>
 The index at which to start searching backwards. Defaults to the array's length minus one (`arr.length - 1`), i.e. the whole array will be searched. If the index is greater than or equal to the length of the array, the whole array will be searched. If negative, it is taken as the offset from the end of the array. Note that even when the index is negative, the array is still searched from back to front. If the calculated index is less than 0, -1 is returned, i.e. the array will not be searched.
 
 ### Return value
@@ -48260,7 +48260,7 @@ Again, note that this implementation aims for absolute compatibility with `lastI
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.lastindexof</span></a></td></tr></tbody></table>
@@ -48316,7 +48316,7 @@ For example, `9 << 2` yields 36:
                       --------------------------------
     9 << 2 (base 10): 00000000000000000000000000100100 (base 2) = 36 (base 10)
 
-Bitwise shifting any number `x` to the left by `y` bits yields `x * 2 ** y`.  
+Bitwise shifting any number `x` to the left by `y` bits yields `x * 2 ** y`.
 So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 ## Examples
@@ -48329,7 +48329,7 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-left-shift-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-left-shift-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-left-shift-operator</span></a></td></tr></tbody></table>
@@ -48365,8 +48365,8 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Left shift assignment operator](left_shift_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift</a>
 
 # Left shift assignment (&lt;&lt;=)
@@ -48390,7 +48390,7 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -48426,8 +48426,8 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Left shift operator](left_shift)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment</a>
 
 # Array.prototype.length
@@ -48518,7 +48518,7 @@ The following example shortens the array `numbers` to a length of 3 if the curre
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-array-instances-length">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-array-instances-length">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-properties-of-array-instances-length</span></a></td></tr></tbody></table>
@@ -48628,7 +48628,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
@@ -48665,8 +48665,8 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Greater than or equal operator](greater_than_or_equal)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than</a>
 
 # Less than or equal (&lt;=)
@@ -48730,7 +48730,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Relational operators' in that specification.</span></a></td></tr></tbody></table>
@@ -48767,8 +48767,8 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Greater than or equal operator](greater_than_or_equal)
 -   [Less than operator](less_than)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal</a>
 
 # let
@@ -48781,10 +48781,10 @@ The `let` statement declares a block-scoped local variable, optionally initializ
 
 ### Parameters
 
-`nameN`  
+`nameN`
 The names of the variable or variables to declare. Each must be a legal JavaScript identifier.
 
-` value``N ` <span class="badge inline optional">Optional</span>  
+` value``N ` <span class="badge inline optional">Optional</span>
 For each variable declared, you may optionally specify its initial value to any legal JavaScript expression.
 
 Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -49010,7 +49010,7 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
@@ -49085,8 +49085,8 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 -   [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
 -   [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</a>
 
 # Lexical grammar
@@ -49544,7 +49544,7 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Lexical Grammar' in that specification.</span></a></td></tr></tbody></table>
@@ -50080,7 +50080,7 @@ The `link()` method creates a string representing the code for an [`<a>`](https:
 
 ### Parameters
 
-`url`  
+`url`
 Any string that specifies the `href` attribute of the `<a>` element; it should be a valid URL (relative or absolute), with any `&` characters escaped as `&amp;`, and any `"` characters escaped as `&quot;`.
 
 ### Return value
@@ -50107,7 +50107,7 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.link' in that specification.</span></a></td></tr></tbody></table>
@@ -50142,8 +50142,8 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 -   [`String.prototype.anchor()`](anchor)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link</a>
 
 # WebAssembly.LinkError
@@ -50152,35 +50152,35 @@ The `WebAssembly.LinkError` object indicates an error during module instantiatio
 
 ## Constructor
 
-[`WebAssembly.LinkError()`](linkerror/linkerror)  
+[`WebAssembly.LinkError()`](linkerror/linkerror)
 Creates a new `WebAssembly.LinkError` object.
 
 ## Instance properties
 
-[`WebAssembly.LinkError.prototype.message`](../error/message)  
+[`WebAssembly.LinkError.prototype.message`](../error/message)
 Error message. Although ECMA-262 specifies that [`URIError`](../urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](../error/message).
 
-[`WebAssembly.LinkError.prototype.name`](../error/name)  
+[`WebAssembly.LinkError.prototype.name`](../error/name)
 Error name. Inherited from [`Error`](../error).
 
-[`WebAssembly.LinkError.prototype.fileName`](../error/filename)  
+[`WebAssembly.LinkError.prototype.fileName`](../error/filename)
 Path to file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.LinkError.prototype.lineNumber`](../error/linenumber)  
+[`WebAssembly.LinkError.prototype.lineNumber`](../error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.LinkError.prototype.columnNumber`](../error/columnnumber)  
+[`WebAssembly.LinkError.prototype.columnNumber`](../error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.LinkError.prototype.stack`](../error/stack)  
+[`WebAssembly.LinkError.prototype.stack`](../error/stack)
 Stack trace. Inherited from [`Error`](../error).
 
 ## Instance methods
 
-[`WebAssembly.LinkError.prototype.toSource()`](../error/tosource)  
+[`WebAssembly.LinkError.prototype.toSource()`](../error/tosource)
 Returns code that could eval to the same error. Inherited from [`Error`](../error).
 
-[`WebAssembly.LinkError.prototype.toString()`](../error/tostring)  
+[`WebAssembly.LinkError.prototype.toString()`](../error/tostring)
 Returns a string representing the specified `Error` object.. Inherited from [`Error`](../error).
 
 ## Examples
@@ -50203,7 +50203,7 @@ The following snippet creates a new `LinkError` instance, and logs its details t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#exceptiondef-linkerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
@@ -50277,8 +50277,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError</a>
 
 # Intl.ListFormat
@@ -50287,20 +50287,20 @@ The `Intl.ListFormat` object enables language-sensitive list formatting.
 
 ## Constructor
 
-[`Intl.ListFormat()`](listformat/listformat)  
+[`Intl.ListFormat()`](listformat/listformat)
 Creates a new `Intl.ListFormat` object.
 
 ## Static methods
 
-[`Intl.ListFormat.supportedLocalesOf()`](listformat/supportedlocalesof)  
+[`Intl.ListFormat.supportedLocalesOf()`](listformat/supportedlocalesof)
 Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-[`Intl.ListFormat.prototype.format()`](listformat/format)  
+[`Intl.ListFormat.prototype.format()`](listformat/format)
 Returns a language-specific formatted string representing the elements of the list.
 
-[`Intl.ListFormat.prototype.formatToParts()`](listformat/formattoparts)  
+[`Intl.ListFormat.prototype.formatToParts()`](listformat/formattoparts)
 Returns an array of objects representing the different components that can be used to format a list of values in a locale-aware fashion.
 
 ## Examples
@@ -50339,7 +50339,7 @@ The following example shows how to create a List formatter returning formatted p
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#listformat-objects</span></a></td></tr></tbody></table>
@@ -50544,7 +50544,7 @@ The following function returns the natural log of 10:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln10">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln10">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.ln10</span></a></td></tr></tbody></table>
@@ -50581,8 +50581,8 @@ The following function returns the natural log of 10:
 -   [`Math.log()`](log)
 -   [`Math.log10()`](log10)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10</a>
 
 # Math.LN2
@@ -50623,7 +50623,7 @@ The following function returns the natural log of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.ln2</span></a></td></tr></tbody></table>
@@ -50660,8 +50660,8 @@ The following function returns the natural log of 2:
 -   [`Math.log()`](log)
 -   [`Math.log2()`](log2)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2</a>
 
 # Atomics.load()
@@ -50674,10 +50674,10 @@ The static ` Atomics``.load() ` method returns a value at a given position in th
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to load from.
 
 ### Return value
@@ -50701,7 +50701,7 @@ The value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.load">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.load">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.load</span></a></td></tr></tbody></table>
@@ -50779,50 +50779,50 @@ Traditionally, the Intl API used strings to represent locales, just as Unicode d
 
 ## Constructor
 
-[`Intl.Locale()`](locale/locale)  
+[`Intl.Locale()`](locale/locale)
 Creates a new `Locale` object.
 
 ## Instance properties
 
-[`Intl.Locale.prototype.baseName`](locale/basename)  
+[`Intl.Locale.prototype.baseName`](locale/basename)
 Returns basic, core information about the `Locale` in the form of a substring of the complete data string.
 
-[`Intl.Locale.prototype.calendar`](locale/calendar)  
+[`Intl.Locale.prototype.calendar`](locale/calendar)
 Returns the part of the `Locale` that indicates the Locale's calendar era.
 
-[`Intl.Locale.prototype.caseFirst`](locale/casefirst)  
+[`Intl.Locale.prototype.caseFirst`](locale/casefirst)
 Returns whether case is taken into account for the locale's collation rules.
 
-[`Intl.Locale.prototype.collation`](locale/collation)  
+[`Intl.Locale.prototype.collation`](locale/collation)
 Returns the collation type for the `Locale`, which is used to order strings according to the locale's rules.
 
-[`Intl.Locale.prototype.hourCycle`](locale/hourcycle)  
+[`Intl.Locale.prototype.hourCycle`](locale/hourcycle)
 Returns the time keeping format convention used by the locale.
 
-[`Intl.Locale.prototype.language`](locale/language)  
+[`Intl.Locale.prototype.language`](locale/language)
 Returns the language associated with the locale.
 
-[`Intl.Locale.prototype.numberingSystem`](locale/numberingsystem)  
+[`Intl.Locale.prototype.numberingSystem`](locale/numberingsystem)
 Returns the numeral system used by the locale.
 
-[`Intl.Locale.prototype.numeric`](locale/numeric)  
+[`Intl.Locale.prototype.numeric`](locale/numeric)
 Returns whether the locale has special collation handling for numeric characters.
 
-[`Intl.Locale.prototype.region`](locale/region)  
+[`Intl.Locale.prototype.region`](locale/region)
 Returns the region of the world (usually a country) associated with the locale.
 
-[`Intl.Locale.prototype.script`](locale/script)  
+[`Intl.Locale.prototype.script`](locale/script)
 Returns the script used for writing the particular language used in the locale.
 
 ## Instance methods
 
-[`Intl.Locale.prototype.maximize()`](locale/maximize)  
+[`Intl.Locale.prototype.maximize()`](locale/maximize)
 Gets the most likely values for the language, script, and region of the locale based on existing values.
 
-[`Intl.Locale.prototype.minimize()`](locale/minimize)  
+[`Intl.Locale.prototype.minimize()`](locale/minimize)
 Gets the most likely values for the language, script, and region of the locale based on existing values.
 
-[`Intl.Locale.prototype.toString()`](locale/tostring)  
+[`Intl.Locale.prototype.toString()`](locale/tostring)
 Returns the Locale's full locale identifier string.
 
 ## Examples
@@ -50842,7 +50842,7 @@ The constructor also takes an optional configuration object argument, which can 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#locale-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#locale-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#locale-objects</span></a></td></tr></tbody></table>
@@ -51259,10 +51259,10 @@ The new `locales` and `options` arguments let applications specify the language 
 
 ### Parameters
 
-`compareString`  
+`compareString`
 The string against which the `referenceStr` is compared.
 
-`locales` and `options`  
+`locales` and `options`
 These arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation-dependent.
 
 See the [`Intl.Collator()` constructor](../intl/collator/collator) for details on these parameters and how to use them.
@@ -51353,7 +51353,7 @@ The results provided by `localeCompare()` can be customized using the `options` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.localecompare">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.localecompare">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.localecompare</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-String.prototype.localeCompare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
@@ -51443,8 +51443,8 @@ No
 
 -   [`Intl.Collator`](../intl/collator)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare</a>
 
 # Math.log()
@@ -51461,7 +51461,7 @@ The JavaScript `Math.log()` function is equivalent to _ln(x)_ in mathematics.
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -51499,7 +51499,7 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log</span></a></td></tr></tbody></table>
@@ -51538,8 +51538,8 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log</a>
 
 # Math.log10()
@@ -51554,7 +51554,7 @@ The `Math.log10()` function returns the base 10 logarithm of a number, that is
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -51589,7 +51589,7 @@ This can be emulated with the following function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log10</span></a></td></tr></tbody></table>
@@ -51628,8 +51628,8 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10</a>
 
 # Math.LOG10E
@@ -51670,7 +51670,7 @@ The following function returns the base 10 logarithm of e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10e">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10e">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log10e</span></a></td></tr></tbody></table>
@@ -51707,8 +51707,8 @@ The following function returns the base 10 logarithm of e:
 -   [`Math.log()`](log)
 -   [`Math.log10()`](log10)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG10E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG10E</a>
 
 # Math.log1p()
@@ -51723,7 +51723,7 @@ The `Math.log1p()` function returns the natural logarithm (base [`e`](e)) of 1 +
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -51751,7 +51751,7 @@ Because `log1p()` is a static method of `Math`, you always use it as `Math.log1p
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log1p">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log1p">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log1p</span></a></td></tr></tbody></table>
@@ -51791,8 +51791,8 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p</a>
 
 # Math.log2()
@@ -51807,7 +51807,7 @@ The `Math.log2()` function returns the base 2 logarithm of a number, that is
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -51843,7 +51843,7 @@ This Polyfill emulates the `Math.log2` function. Note that it returns imprecise 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log2</span></a></td></tr></tbody></table>
@@ -51882,8 +51882,8 @@ No
 -   [`Math.log1p()`](log1p)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2</a>
 
 # Math.LOG2E
@@ -51924,7 +51924,7 @@ The following function returns the base 2 logarithm of e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2e">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2e">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.log2e</span></a></td></tr></tbody></table>
@@ -51961,8 +51961,8 @@ The following function returns the base 2 logarithm of e:
 -   [`Math.log()`](log)
 -   [`Math.log2()`](log2)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG2E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG2E</a>
 
 # Logical AND (&&)
@@ -52063,7 +52063,7 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalANDExpression">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalANDExpression">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-LogicalANDExpression</span></a></td></tr></tbody></table>
@@ -52100,8 +52100,8 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a>
 
 # Logical NOT (!)
@@ -52164,7 +52164,7 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Logical NOT expression' in that specification.</span></a></td></tr></tbody></table>
@@ -52201,8 +52201,8 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT</a>
 
 # Logical OR (||)
@@ -52306,7 +52306,7 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalORExpression">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalORExpression">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Logical OR expression' in that specification.</span></a></td></tr></tbody></table>
@@ -52344,8 +52344,8 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR</a>
 
 # Logical OR assignment (||=)
@@ -52392,7 +52392,7 @@ Note: Pay attention to the value returned by the API you're checking against. If
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -52432,8 +52432,8 @@ No
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment</a>
 
 # SyntaxError: Malformed formal parameter
@@ -52600,51 +52600,51 @@ The correct usage for storing data in the Map is through the `set(key, value)` m
 
 ## Constructor
 
-[`Map()`](map/map)  
+[`Map()`](map/map)
 Creates a new `Map` object.
 
 ## Static properties
 
-[`get Map[@@species]`](map/@@species)  
+[`get Map[@@species]`](map/@@species)
 The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-[`Map.prototype.size`](map/size)  
+[`Map.prototype.size`](map/size)
 Returns the number of key/value pairs in the `Map` object.
 
 ## Instance methods
 
-[`Map.prototype.clear()`](map/clear)  
+[`Map.prototype.clear()`](map/clear)
 Removes all key-value pairs from the `Map` object.
 
-[`Map.prototype.delete(key)`](map/delete)  
+[`Map.prototype.delete(key)`](map/delete)
 Returns `true` if an element in the `Map` object existed and has been removed, or `false` if the element does not exist. `Map.prototype.has(key)` will return `false` afterwards.
 
-[`Map.prototype.get(key)`](map/get)  
+[`Map.prototype.get(key)`](map/get)
 Returns the value associated to the `key`, or `undefined` if there is none.
 
-[`Map.prototype.has(key)`](map/has)  
+[`Map.prototype.has(key)`](map/has)
 Returns a boolean asserting whether a value has been associated to the `key` in the `Map` object or not.
 
-[`Map.prototype.set(key, value)`](map/set)  
+[`Map.prototype.set(key, value)`](map/set)
 Sets the `value` for the `key` in the `Map` object. Returns the `Map` object.
 
 ### Iteration methods
 
-[`Map.prototype[@@iterator]()`](map/@@iterator)  
+[`Map.prototype[@@iterator]()`](map/@@iterator)
 Returns a new Iterator object that contains `[key, value]` for each element in the `Map` object in insertion order.
 
-[`Map.prototype.keys()`](map/keys)  
+[`Map.prototype.keys()`](map/keys)
 Returns a new Iterator object that contains the **keys** for each element in the `Map` object in insertion order.
 
-[`Map.prototype.values()`](map/values)  
+[`Map.prototype.values()`](map/values)
 Returns a new Iterator object that contains the **values** for each element in the `Map` object in insertion order.
 
-[`Map.prototype.entries()`](map/entries)  
+[`Map.prototype.entries()`](map/entries)
 Returns a new Iterator object that contains `[key, value]` for each element in the `Map` object in insertion order.
 
-[`Map.prototype.forEach(callbackFn[, thisArg])`](map/foreach)  
+[`Map.prototype.forEach(callbackFn[, thisArg])`](map/foreach)
 Calls `callbackFn` once for each key-value pair present in the `Map` object, in insertion order. If a `thisArg` parameter is provided to `forEach`, it will be used as the `this` value for each callback.
 
 ## Examples
@@ -52806,7 +52806,7 @@ Maps can be merged with Arrays, too:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Map' in that specification.</span></a></td></tr></tbody></table>
@@ -53267,7 +53267,7 @@ The `match()` method retrieves the result of matching a _string_ against a [regu
 
 ### Parameters
 
-`regexp`  
+`regexp`
 A regular expression object.
 
 If `regexp` is a non-`RegExp` object, it is implicitly converted to a [`RegExp`](../regexp) by using `new RegExp(regexp)`.
@@ -53285,13 +53285,13 @@ An [`Array`](../array) whose contents depend on the presence or absence of the g
 
 As explained above, some results contain additional properties as described below.
 
-`groups`  
+`groups`
 An object of named capturing groups whose keys are the names and values are the capturing groups or [`undefined`](../undefined) if no named capturing groups were defined. See [Groups and Ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges) for more information.
 
-`index`  
+`index`
 The index of the search at which the result was found.
 
-`input`  
+`input`
 A copy of the search string.
 
 ## Description
@@ -53379,7 +53379,7 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.match' in that specification.</span></a></td></tr></tbody></table>
@@ -53417,8 +53417,8 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match</a>
 
 # String.prototype.matchAll()
@@ -53431,7 +53431,7 @@ The `matchAll()` method returns an iterator of all results matching a string aga
 
 ### Parameters
 
-`regexp`  
+`regexp`
 A regular expression object.
 
 If a non-`RegExp` object `obj` is passed, it is implicitly converted to a [`RegExp`](../regexp) by using `new RegExp(obj)`.
@@ -53517,7 +53517,7 @@ Using `matchAll`, you can access capture groups easily:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.matchall</span></a></td></tr></tbody></table>
@@ -53557,8 +53557,8 @@ No
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll</a>
 
 # Math
@@ -53577,135 +53577,135 @@ This means that different browsers can give a different result. Even the same Ja
 
 ## Static properties
 
-[`Math.E`](math/e)  
+[`Math.E`](math/e)
 Euler's constant and the base of natural logarithms; approximately `2.718`.
 
-[`Math.LN2`](math/ln2)  
+[`Math.LN2`](math/ln2)
 Natural logarithm of `2`; approximately `0.693`.
 
-[`Math.LN10`](math/ln10)  
+[`Math.LN10`](math/ln10)
 Natural logarithm of `10`; approximately `2.303`.
 
-[`Math.LOG2E`](math/log2e)  
+[`Math.LOG2E`](math/log2e)
 Base-2 logarithm of `E`; approximately `1.443`.
 
-[`Math.LOG10E`](math/log10e)  
+[`Math.LOG10E`](math/log10e)
 Base-10 logarithm of `E`; approximately `0.434`.
 
-[`Math.PI`](math/pi)  
+[`Math.PI`](math/pi)
 Ratio of the a circle's circumference to its diameter; approximately `3.14159`.
 
-[`Math.SQRT1_2`](math/sqrt1_2)  
+[`Math.SQRT1_2`](math/sqrt1_2)
 Square root of ½ (or equivalently, <sup>1</sup>/<sub>√2</sub>); approximately `0.707`.
 
-[`Math.SQRT2`](math/sqrt2)  
+[`Math.SQRT2`](math/sqrt2)
 Square root of `2`; approximately `1.414`.
 
 ## Static methods
 
-[`Math.abs(x)`](math/abs)  
+[`Math.abs(x)`](math/abs)
 Returns the absolute value of `x`.
 
-[`Math.acos(x)`](math/acos)  
+[`Math.acos(x)`](math/acos)
 Returns the arccosine of `x`.
 
-[`Math.acosh(x)`](math/acosh)  
+[`Math.acosh(x)`](math/acosh)
 Returns the hyperbolic arccosine of `x`.
 
-[`Math.asin(x)`](math/asin)  
+[`Math.asin(x)`](math/asin)
 Returns the arcsine of `x`.
 
-[`Math.asinh(x)`](math/asinh)  
+[`Math.asinh(x)`](math/asinh)
 Returns the hyperbolic arcsine of a number.
 
-[`Math.atan(x)`](math/atan)  
+[`Math.atan(x)`](math/atan)
 Returns the arctangent of `x`.
 
-[`Math.atanh(x)`](math/atanh)  
+[`Math.atanh(x)`](math/atanh)
 Returns the hyperbolic arctangent of `x`.
 
-[`Math.atan2(y, x)`](math/atan2)  
+[`Math.atan2(y, x)`](math/atan2)
 Returns the arctangent of the quotient of its arguments.
 
-[`Math.cbrt(x)`](math/cbrt)  
+[`Math.cbrt(x)`](math/cbrt)
 Returns the cube root of `x`.
 
-[`Math.ceil(x)`](math/ceil)  
+[`Math.ceil(x)`](math/ceil)
 Returns the smallest integer greater than or equal to `x`.
 
-[`Math.clz32(x)`](math/clz32)  
+[`Math.clz32(x)`](math/clz32)
 Returns the number of leading zero bits of the 32-bit integer `x`.
 
-[`Math.cos(x)`](math/cos)  
+[`Math.cos(x)`](math/cos)
 Returns the cosine of `x`.
 
-[`Math.cosh(x)`](math/cosh)  
+[`Math.cosh(x)`](math/cosh)
 Returns the hyperbolic cosine of `x`.
 
-[`Math.exp(x)`](math/exp)  
+[`Math.exp(x)`](math/exp)
 Returns `Ex`, where `x` is the argument, and `E` is Euler's constant (`2.718`…, the base of the natural logarithm).
 
-[`Math.expm1(x)`](math/expm1)  
+[`Math.expm1(x)`](math/expm1)
 Returns subtracting `1` from `exp(x)`.
 
-[`Math.floor(x)`](math/floor)  
+[`Math.floor(x)`](math/floor)
 Returns the largest integer less than or equal to `x`.
 
-[`Math.fround(x)`](math/fround)  
+[`Math.fround(x)`](math/fround)
 Returns the nearest [single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) float representation of `x`.
 
-[`Math.hypot([x[, y[, …]]])`](math/hypot)  
+[`Math.hypot([x[, y[, …]]])`](math/hypot)
 Returns the square root of the sum of squares of its arguments.
 
-[`Math.imul(x, y)`](math/imul)  
+[`Math.imul(x, y)`](math/imul)
 Returns the result of the 32-bit integer multiplication of `x` and `y`.
 
-[`Math.log(x)`](math/log)  
+[`Math.log(x)`](math/log)
 Returns the natural logarithm (㏒<sub>e</sub>; also, ㏑) of `x`.
 
-[`Math.log1p(x)`](math/log1p)  
+[`Math.log1p(x)`](math/log1p)
 Returns the natural logarithm (㏒<sub>e</sub>; also ㏑) of `1 + x` for the number `x`.
 
-[`Math.log10(x)`](math/log10)  
+[`Math.log10(x)`](math/log10)
 Returns the base-10 logarithm of `x`.
 
-[`Math.log2(x)`](math/log2)  
+[`Math.log2(x)`](math/log2)
 Returns the base-2 logarithm of `x`.
 
-[`Math.max([x[, y[, …]]])`](math/max)  
+[`Math.max([x[, y[, …]]])`](math/max)
 Returns the largest of zero or more numbers.
 
-[`Math.min([x[, y[, …]]])`](math/min)  
+[`Math.min([x[, y[, …]]])`](math/min)
 Returns the smallest of zero or more numbers.
 
-[`Math.pow(x, y)`](math/pow)  
+[`Math.pow(x, y)`](math/pow)
 Returns base `x` to the exponent power `y` (that is, `xy`).
 
-[`Math.random()`](math/random)  
+[`Math.random()`](math/random)
 Returns a pseudo-random number between `0` and `1`.
 
-[`Math.round(x)`](math/round)  
+[`Math.round(x)`](math/round)
 Returns the value of the number `x` rounded to the nearest integer.
 
-[`Math.sign(x)`](math/sign)  
+[`Math.sign(x)`](math/sign)
 Returns the sign of the `x`, indicating whether `x` is positive, negative, or zero.
 
-[`Math.sin(x)`](math/sin)  
+[`Math.sin(x)`](math/sin)
 Returns the sine of `x`.
 
-[`Math.sinh(x)`](math/sinh)  
+[`Math.sinh(x)`](math/sinh)
 Returns the hyperbolic sine of `x`.
 
-[`Math.sqrt(x)`](math/sqrt)  
+[`Math.sqrt(x)`](math/sqrt)
 Returns the positive square root of `x`.
 
-[`Math.tan(x)`](math/tan)  
+[`Math.tan(x)`](math/tan)
 Returns the tangent of `x`.
 
-[`Math.tanh(x)`](math/tanh)  
+[`Math.tanh(x)`](math/tanh)
 Returns the hyperbolic tangent of `x`.
 
-[`Math.trunc(x)`](math/trunc)  
+[`Math.trunc(x)`](math/trunc)
 Returns the integer portion of `x`, removing any fractional digits.
 
 ## Examples
@@ -53749,7 +53749,7 @@ This can be achieved with a combination of [`Math.random()`](math/random) and [`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Math' in that specification.</span></a></td></tr></tbody></table>
@@ -54891,7 +54891,7 @@ The `Math.max()` function returns the largest of the zero or more numbers given 
 
 ### Parameters
 
-`value1, value2, ...`  
+`value1, value2, ...`
 Zero or more numbers among which the largest value will be selected and returned.
 
 ### Return value
@@ -54938,7 +54938,7 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.max</span></a></td></tr></tbody></table>
@@ -54973,8 +54973,8 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 -   [`Math.min()`](min)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max</a>
 
 # Number.MAX_SAFE_INTEGER
@@ -55027,7 +55027,7 @@ This returns 2 because in floating points, the value is actually the decimal tra
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.max_safe_integer</span></a></td></tr></tbody></table>
@@ -55064,8 +55064,8 @@ No
 -   [`Number.isSafeInteger()`](issafeinteger)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER</a>
 
 # Number.MAX_VALUE
@@ -55106,7 +55106,7 @@ The following code multiplies two numeric values. If the result is less than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.max_value</span></a></td></tr></tbody></table>
@@ -55142,8 +55142,8 @@ The following code multiplies two numeric values. If the result is less than or 
 -   [`Number.MIN_VALUE`](min_value)
 -   The [`Number`](../number) object it belongs to
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE</a>
 
 # Intl.Locale.prototype.maximize()
@@ -55181,7 +55181,7 @@ Sometimes, it is convenient to be able to identify the most likely locale langua
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.maximize</span></a></td></tr></tbody></table>
@@ -55228,17 +55228,17 @@ A memory created by JavaScript or in WebAssembly code will be accessible and mut
 
 ## Constructor
 
-[`WebAssembly.Memory()`](memory/memory)  
+[`WebAssembly.Memory()`](memory/memory)
 Creates a new `Memory` object.
 
 ## Instance properties
 
-[`Memory.prototype.buffer`](memory/buffer)  
+[`Memory.prototype.buffer`](memory/buffer)
 An accessor property that returns the buffer contained in the memory.
 
 ## Instance methods
 
-[`Memory.prototype.grow()`](memory/grow)  
+[`Memory.prototype.grow()`](memory/grow)
 Increases the size of the memory instance by a specified number of WebAssembly pages (each one is 64KB in size).
 
 ## Examples
@@ -55279,7 +55279,7 @@ This memory's `buffer` property will return a `SharedArrayBuffer`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#memories</span></a></td></tr></tbody></table>
@@ -55410,8 +55410,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory</a>
 
 # Error.prototype.message
@@ -55434,7 +55434,7 @@ By default, the `message` property is an empty string, but this behavior can be 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-error.prototype.message</span></a></td></tr></tbody></table>
@@ -55643,7 +55643,7 @@ The shorthand syntax also supports computed property names.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-method-definitions</span></a></td></tr></tbody></table>
@@ -55773,7 +55773,7 @@ The static function `Math.min()` returns the lowest-valued number passed into it
 
 ### Parameters
 
-`value1, value2, ...`  
+`value1, value2, ...`
 Zero or more numbers among which the lowest value will be selected and returned.
 
 ### Return value
@@ -55815,7 +55815,7 @@ may be written as this
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.min</span></a></td></tr></tbody></table>
@@ -55850,8 +55850,8 @@ may be written as this
 
 -   [`Math.max()`](max)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min</a>
 
 # Number.MIN_SAFE_INTEGER
@@ -55889,7 +55889,7 @@ Because `MIN_SAFE_INTEGER` is a static property of [`Number`](../number), you al
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.min_safe_integer</span></a></td></tr></tbody></table>
@@ -55926,8 +55926,8 @@ No
 -   [`Number.isSafeInteger()`](issafeinteger)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER</a>
 
 # Number.MIN_VALUE
@@ -55968,7 +55968,7 @@ The following code divides two numeric values. If the result is greater than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.min_value</span></a></td></tr></tbody></table>
@@ -56003,8 +56003,8 @@ The following code divides two numeric values. If the result is greater than or 
 
 -   [`Number.MAX_VALUE`](max_value)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE</a>
 
 # Intl.Locale.prototype.minimize()
@@ -56043,7 +56043,7 @@ This method carries out the reverse of [`maximize()`](maximize), removing any la
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.minimize</span></a></td></tr></tbody></table>
@@ -56659,18 +56659,18 @@ A `WebAssembly.Module` object contains stateless WebAssembly code that has alrea
 
 ## Constructor
 
-[`WebAssembly.Module()`](module/module)  
+[`WebAssembly.Module()`](module/module)
 Creates a new `Module` object.
 
 ## Static properties
 
-[`WebAssembly.Module.customSections()`](module/customsections)  
+[`WebAssembly.Module.customSections()`](module/customsections)
 Given a `Module` and string, returns a copy of the contents of all custom sections in the module with the given string name.
 
-[`WebAssembly.Module.exports()`](module/exports)  
+[`WebAssembly.Module.exports()`](module/exports)
 Given a `Module`, returns an array containing descriptions of all the declared exports.
 
-[`WebAssembly.Module.imports()`](module/imports)  
+[`WebAssembly.Module.imports()`](module/imports)
 Given a `Module`, returns an array containing descriptions of all the declared imports.
 
 ## Examples
@@ -56707,7 +56707,7 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#modules">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#modules">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#modules</span></a></td></tr></tbody></table>
@@ -56868,8 +56868,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module</a>
 
 # TypeError: More arguments needed
@@ -56949,7 +56949,7 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.multiline">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.multiline">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.multiline</span></a></td></tr></tbody></table>
@@ -57017,8 +57017,8 @@ You cannot change this property directly.
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline</a>
 
 # Multiplication (\*)
@@ -57047,7 +57047,7 @@ The multiplication operator (`*`) produces the product of the operands.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
@@ -57090,8 +57090,8 @@ The multiplication operator (`*`) produces the product of the operands.
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication</a>
 
 # Function.name
@@ -57276,7 +57276,7 @@ If a [`Symbol`](../symbol) is used a function name and the symbol has a descript
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function-instances-name</span></a></td></tr></tbody></table>
@@ -57430,7 +57430,7 @@ Additionally, some array methods cannot find `NaN`, while others can.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-value-properties-of-the-global-object-nan</span></a></td></tr></tbody></table>
@@ -57521,7 +57521,7 @@ In the following example, the variable `smallNumber` is assigned a value that is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.negative_infinity">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.negative_infinity">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.negative_infinity</span></a></td></tr></tbody></table>
@@ -57559,8 +57559,8 @@ In the following example, the variable `smallNumber` is assigned a value that is
 -   [`Infinity`](../infinity)
 -   [`isFinite()`](../isfinite)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY</a>
 
 # RangeError: repeat count must be non-negative
@@ -57610,10 +57610,10 @@ The `new` lets developers create an instance of a user-defined object type or of
 
 ### Parameters
 
-`constructor`  
+`constructor`
 A class or function that specifies the type of the object instance.
 
-`arguments`  
+`arguments`
 A list of values that the `constructor` will be called with.
 
 ## Description
@@ -57730,7 +57730,7 @@ Instead of passing a literal string or integer value when creating the new objec
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-new-operator</span></a></td></tr></tbody></table>
@@ -57767,8 +57767,8 @@ Instead of passing a literal string or integer value when creating the new objec
 -   [`Reflect.construct()`](../global_objects/reflect/construct)
 -   [`Object`](../global_objects/object)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a>
 
 # new.target
@@ -57830,7 +57830,7 @@ Thus from the above example of class `C` and `D`, it seems that `new.target` poi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-built-in-function-objects</span></a></td></tr></tbody></table>
@@ -57868,8 +57868,8 @@ No
 -   `new`
 -   `this`
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target</a>
 
 # Generator.prototype.next()
@@ -57882,7 +57882,7 @@ The `next()` method returns an object with two properties `done` and `value`. Yo
 
 ### Parameters
 
-`value`  
+`value`
 The value to send to the generator.
 
 The value will be assigned as a result of a `yield` expression. For example, in `variable = yield expression`, the value passed to the `.next()` function will be assigned to `variable`.
@@ -57891,12 +57891,12 @@ The value will be assigned as a result of a `yield` expression. For example, in 
 
 An [`Object`](../object) with two properties:
 
-`done` (boolean)  
+`done` (boolean)
 Has the value `true` if the iterator is past the end of the iterated sequence. In this case `value` optionally specifies the _return value_ of the iterator.
 
 Has the value `false` if the iterator was able to produce the next value in the sequence. This is equivalent of not specifying the `done` property altogether.
 
-`value`  
+`value`
 Any JavaScript value returned by the iterator. Can be omitted when `done` is `true`.
 
 ## Examples
@@ -57966,7 +57966,7 @@ Note that the first call does not log anything, because the generator was not yi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generator.prototype.next</span></a></td></tr></tbody></table>
@@ -58282,21 +58282,21 @@ The `normalize()` method returns the Unicode Normalization Form of the string.
 
 ### Parameters
 
-`form` <span class="badge inline optional">Optional</span>  
+`form` <span class="badge inline optional">Optional</span>
 One of `"NFC"`, `"NFD"`, `"NFKC"`, or `"NFKD"`, specifying the Unicode Normalization Form. If omitted or [`undefined`](../undefined), `"NFC"` is used.
 
 These values have the following meanings:
 
-`"NFC"`  
+`"NFC"`
 Canonical Decomposition, followed by Canonical Composition.
 
-`"NFD"`  
+`"NFD"`
 Canonical Decomposition.
 
-`"NFKC"`  
+`"NFKC"`
 Compatibility Decomposition, followed by Canonical Composition.
 
-`"NFKD"`  
+`"NFKD"`
 Compatibility Decomposition.
 
 ### Return value
@@ -58305,7 +58305,7 @@ A string containing the Unicode Normalization Form of the given string.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 A [`RangeError`](../rangeerror) is thrown if `form` isn't one of the values specified above.
 
 ## Description
@@ -58442,7 +58442,7 @@ As with canonical normalization, you can ask for decomposed or composed compatib
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.normalize</span></a></td></tr></tbody></table>
@@ -58508,8 +58508,8 @@ No
 -   [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
 -   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize</a>
 
 # RangeError: argument is not a valid code point
@@ -58850,7 +58850,7 @@ However, a function can access all variables and functions defined inside the sc
 
 The static ` Atomics``.notify() ` method notifies up some agents that are sleeping in the wait queue.
 
-**Note:** This operation works with a shared [`Int32Array`](../int32array) only.  
+**Note:** This operation works with a shared [`Int32Array`](../int32array) only.
 It will return `0` on non-shared `ArrayBuffer` objects.
 
 ## Syntax
@@ -58859,13 +58859,13 @@ It will return `0` on non-shared `ArrayBuffer` objects.
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 A shared [`Int32Array`](../int32array).
 
-`index`  
+`index`
 The position in the `typedArray` to wake up on.
 
-`count` <span class="badge inline optional">Optional</span>  
+`count` <span class="badge inline optional">Optional</span>
 The number of sleeping agents to notify. Defaults to [`+Infinity`](../infinity).
 
 ### Return value
@@ -58900,7 +58900,7 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.notify">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.notify">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.notify</span></a></td></tr></tbody></table>
@@ -59034,7 +59034,7 @@ This method was standardized in ECMA-262 5<sup>th</sup> edition. Engines which h
 
 ### Reduced time precision
 
-To offer protection against timing attacks and fingerprinting, the precision of `Date.now()` might get rounded depending on browser settings.  
+To offer protection against timing attacks and fingerprinting, the precision of `Date.now()` might get rounded depending on browser settings.
 In Firefox, the `privacy.reduceTimerPrecision` preference is enabled by default and defaults to 20µs in Firefox 59; in 60 it will be 2ms.
 
     // reduced time precision (2ms) in Firefox 60
@@ -59055,7 +59055,7 @@ In Firefox, you can also enable `privacy.resistFingerprinting`, the precision wi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.now">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.now">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.now</span></a></td></tr></tbody></table>
@@ -59160,7 +59160,7 @@ When checking for `null` or `undefined`, beware of the [differences between equa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-null-value</span></a></td></tr></tbody></table>
@@ -59327,7 +59327,7 @@ The nullish coalescing operator treats `undefined` and `null` as specific values
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-CoalesceExpression</span></a></td></tr></tbody></table>
@@ -59394,8 +59394,8 @@ No
 -   [The logical OR (`||`) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2)
 -   [Default parameters in functions](../functions/default_parameters)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator</a>
 
 # Number
@@ -59430,76 +59430,76 @@ When used as a function, `Number(value)` converts a string or other value to the
 
 ## Constructor
 
-[`Number()`](number/number)  
+[`Number()`](number/number)
 Creates a new `Number` value.
 
 ## Static properties
 
-[`Number.EPSILON`](number/epsilon)  
+[`Number.EPSILON`](number/epsilon)
 The smallest interval between two representable numbers.
 
-[`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)  
+[`Number.MAX_SAFE_INTEGER`](number/max_safe_integer)
 The maximum safe integer in JavaScript (`253 - 1`).
 
-[`Number.MAX_VALUE`](number/max_value)  
+[`Number.MAX_VALUE`](number/max_value)
 The largest positive representable number.
 
-[`Number.MIN_SAFE_INTEGER`](number/min_safe_integer)  
+[`Number.MIN_SAFE_INTEGER`](number/min_safe_integer)
 The minimum safe integer in JavaScript (`-(253 - 1)`).
 
-[`Number.MIN_VALUE`](number/min_value)  
+[`Number.MIN_VALUE`](number/min_value)
 The smallest positive representable number—that is, the positive number closest to zero (without actually being zero).
 
-[`Number.NaN`](number/nan)  
+[`Number.NaN`](number/nan)
 Special "**N**ot **a** **N**umber" value.
 
-[`Number.NEGATIVE_INFINITY`](number/negative_infinity)  
+[`Number.NEGATIVE_INFINITY`](number/negative_infinity)
 Special value representing negative infinity. Returned on overflow.
 
-[`Number.POSITIVE_INFINITY`](number/positive_infinity)  
+[`Number.POSITIVE_INFINITY`](number/positive_infinity)
 Special value representing infinity. Returned on overflow.
 
-[`Number.prototype`](number)  
+[`Number.prototype`](number)
 Allows the addition of properties to the `Number` object.
 
 ## Static methods
 
-[`Number.isNaN()`](number/isnan)  
+[`Number.isNaN()`](number/isnan)
 Determine whether the passed value is `NaN`.
 
-[`Number.isFinite()`](number/isfinite)  
+[`Number.isFinite()`](number/isfinite)
 Determine whether the passed value is a finite number.
 
-[`Number.isInteger()`](number/isinteger)  
+[`Number.isInteger()`](number/isinteger)
 Determine whether the passed value is an integer.
 
-[`Number.isSafeInteger()`](number/issafeinteger)  
+[`Number.isSafeInteger()`](number/issafeinteger)
 Determine whether the passed value is a safe integer (number between `-(253 - 1)` and `253 - 1`).
 
-[`Number.parseFloat(string)`](number/parsefloat)  
+[`Number.parseFloat(string)`](number/parsefloat)
 This is the same as the global [`parseFloat()`](parsefloat) function.
 
-[`Number.parseInt(string, [radix])`](number/parseint)  
+[`Number.parseInt(string, [radix])`](number/parseint)
 This is the same as the global [`parseInt()`](parseint) function.
 
 ## Instance methods
 
-[`Number.prototype.toExponential(fractionDigits)`](number/toexponential)  
+[`Number.prototype.toExponential(fractionDigits)`](number/toexponential)
 Returns a string representing the number in exponential notation.
 
-[`Number.prototype.toFixed(digits)`](number/tofixed)  
+[`Number.prototype.toFixed(digits)`](number/tofixed)
 Returns a string representing the number in fixed-point notation.
 
-[`Number.prototype.toLocaleString([locales [, options]])`](number/tolocalestring)  
+[`Number.prototype.toLocaleString([locales [, options]])`](number/tolocalestring)
 Returns a string with a language sensitive representation of this number. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`Number.prototype.toPrecision(precision)`](number/toprecision)  
+[`Number.prototype.toPrecision(precision)`](number/toprecision)
 Returns a string representing the number to a specified precision in fixed-point or exponential notation.
 
-[`Number.prototype.toString([radix])`](number/tostring)  
+[`Number.prototype.toString([radix])`](number/tostring)
 Returns a string representing the specified object in the specified radix ("base"). Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Number.prototype.valueOf()`](number/valueof)  
+[`Number.prototype.valueOf()`](number/valueof)
 Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
 ## Examples
@@ -59554,7 +59554,7 @@ This logs `819199440000`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number-objects</span></a></td></tr></tbody></table>
@@ -60214,22 +60214,22 @@ The `Intl.NumberFormat()` constructor creates [`Intl.NumberFormat`](../numberfor
 
 ### Parameters
 
-`locales` <span class="badge inline optional">Optional</span>  
+`locales` <span class="badge inline optional">Optional</span>
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension key is allowed:
 
-`nu`  
+`nu`
 The numbering system to be used. Possible values include: "`adlm`", "`ahom`", "`arab`", "`arabext`", "`bali`", "`beng`", "`bhks`", "`brah`", "`cakm`", "`cham`", "`deva`", "`diak`", "`fullwide`", "`gong`", "`gonm`", "`gujr`", "`guru`", "`hanidec`", "`hmng`", "`hmnp`", "`java`", "`kali`", "`khmr`", "`knda`", "`lana`", "`lanatham`", "`laoo`", "`latn`", "`lepc`", "`limb`", "`mathbold`", "`mathdbl`", "`mathmono`", "`mathsanb`", "`mathsans`", "`mlym`", "`modi`", "`mong`", "`mroo`", "`mtei`", "`mymr`", "`mymrshan`", "`mymrtlng`", "`newa`", "`nkoo`", "`olck`", "`orya`", "`osma`", "`rohg`", "`saur`", "`segment`", "`shrd`", "`sind`", "`sinh`", "`sora`", "`sund`", "`takr`", "`talu`", "`tamldec`", "`telu`", "`thai`", "`tibt`", "`tirh`", "`vaii`", "`wara`", "`wcho`". — see the [standard Unicode numeral systems list](../locale/numberingsystem).
 
-`options` <span class="badge inline optional">Optional</span>  
+`options` <span class="badge inline optional">Optional</span>
 An object with some or all of the following properties:
 
-`compactDisplay`  
+`compactDisplay`
 Only used when `notation` is "`compact`". Takes either "`short`" (default) or "`long`".
 
-`currency`  
+`currency`
 The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as "`USD`" for the US dollar, "`EUR`" for the euro, or "`CNY`" for the Chinese RMB — see the [Current currency & funds code list](https://www.currency-iso.org/en/home/tables/table-a1.html). There is no default value; if the `style` is "`currency`", the `currency` property must be provided.
 
-`currencyDisplay`  
+`currencyDisplay`
 How to display the currency in currency formatting. Possible values are:
 
 -   "`symbol`" to use a localized currency symbol such as €, this is the default value,
@@ -60237,13 +60237,13 @@ How to display the currency in currency formatting. Possible values are:
 -   "`code`" to use the ISO currency code,
 -   "`name`" to use a localized currency name such as "`dollar`",
 
-`currencySign`  
+`currencySign`
 In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to "`accounting`". The default value is "`standard`".
 
-`localeMatcher`  
+`localeMatcher`
 The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
-`notation`  
+`notation`
 The formatting that should be displayed for the number, the defaults is "`standard`"
 
 -   "`standard`" plain number formatting
@@ -60251,10 +60251,10 @@ The formatting that should be displayed for the number, the defaults is "`standa
 -   "`engineering`" return the exponent of ten when divisible by three
 -   "`compact`" string representing exponent, defaults is using the "short" form.
 
-`numberingSystem`  
+`numberingSystem`
 Numbering System. Possible values include: "`arab`", "`arabext`", " `bali`", "`beng`", "`deva`", "`fullwide`", " `gujr`", "`guru`", "`hanidec`", "`khmr`", " `knda`", "`laoo`", "`latn`", "`limb`", "`mlym`", " `mong`", "`mymr`", "`orya`", "`tamldec`", " `telu`", "`thai`", "`tibt`".
 
-`signDisplay`  
+`signDisplay`
 When to display the sign for the number; defaults to "`auto`"
 
 -   "`auto`" sign display for negative numbers only
@@ -60262,7 +60262,7 @@ When to display the sign for the number; defaults to "`auto`"
 -   "`always`" always display sign
 -   "`exceptZero`" sign display for positive and negative numbers, but not zero
 
-`style`  
+`style`
 The formatting style to use , the default is "`decimal`".
 
 -   "`decimal`" for plain number formatting.
@@ -60270,34 +60270,34 @@ The formatting style to use , the default is "`decimal`".
 -   "`percent`" for percent formatting
 -   "`unit`" for unit formatting
 
-`unit`  
+`unit`
 The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with "`-per-`" to make a compound unit. There is no default value; if the `style` is "`unit`", the `unit` property must be provided.
 
-`unitDisplay`  
+`unitDisplay`
 The unit formatting style to use in `unit` formatting, the defaults is "`short`".
 
 -   "`long`" (e.g., `16 litres`)
 -   "`short`" (e.g., `16 l`)
 -   "`narrow`" (e.g., `16l`)
 
-`useGrouping`  
+`useGrouping`
 Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
-`minimumIntegerDigits`  
+`minimumIntegerDigits`
 The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.
 
-`minimumFractionDigits`  
+`minimumFractionDigits`
 The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information).
 
-`maximumFractionDigits`  
+`maximumFractionDigits`
 The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
 
-`minimumSignificantDigits`  
+`minimumSignificantDigits`
 The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.
 
-`maximumSignificantDigits`  
+`maximumSignificantDigits`
 The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
 
 ## Examples
@@ -60408,7 +60408,7 @@ Note that when the currency sign is "accounting", parentheses might be used inst
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl-numberformat-constructor</span></a></td></tr></tbody></table>
@@ -60694,7 +60694,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.numberingSystem</span></a></td></tr></tbody></table>
@@ -60788,7 +60788,7 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.numeric</span></a></td></tr></tbody></table>
@@ -60881,112 +60881,112 @@ There isn't any method in an Object itself to delete its own properties (such as
 
 ## Constructor
 
-[`Object()`](object/object)  
+[`Object()`](object/object)
 Creates a new `Object` object. It is a wrapper for the given value.
 
 ## Static methods
 
-[`Object.assign()`](object/assign)  
+[`Object.assign()`](object/assign)
 Copies the values of all enumerable own properties from one or more source objects to a target object.
 
-[`Object.create()`](object/create)  
+[`Object.create()`](object/create)
 Creates a new object with the specified prototype object and properties.
 
-[`Object.defineProperty()`](object/defineproperty)  
+[`Object.defineProperty()`](object/defineproperty)
 Adds the named property described by a given descriptor to an object.
 
-[`Object.defineProperties()`](object/defineproperties)  
+[`Object.defineProperties()`](object/defineproperties)
 Adds the named properties described by the given descriptors to an object.
 
-[`Object.entries()`](object/entries)  
+[`Object.entries()`](object/entries)
 Returns an array containing all of the `[key, value]` pairs of a given object's **own** enumerable string properties.
 
-[`Object.freeze()`](object/freeze)  
+[`Object.freeze()`](object/freeze)
 Freezes an object. Other code cannot delete or change its properties.
 
-[`Object.fromEntries()`](object/fromentries)  
+[`Object.fromEntries()`](object/fromentries)
 Returns a new object from an iterable of `[key, value]` pairs. (This is the reverse of [`Object.entries`](object/entries)).
 
-[`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor)  
+[`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor)
 Returns a property descriptor for a named property on an object.
 
-[`Object.getOwnPropertyDescriptors()`](object/getownpropertydescriptors)  
+[`Object.getOwnPropertyDescriptors()`](object/getownpropertydescriptors)
 Returns an object containing all own property descriptors for an object.
 
-[`Object.getOwnPropertyNames()`](object/getownpropertynames)  
+[`Object.getOwnPropertyNames()`](object/getownpropertynames)
 Returns an array containing the names of all of the given object's **own** enumerable and non-enumerable properties.
 
-[`Object.getOwnPropertySymbols()`](object/getownpropertysymbols)  
+[`Object.getOwnPropertySymbols()`](object/getownpropertysymbols)
 Returns an array of all symbol properties found directly upon a given object.
 
-[`Object.getPrototypeOf()`](object/getprototypeof)  
+[`Object.getPrototypeOf()`](object/getprototypeof)
 Returns the prototype (internal `[[Prototype]]` property) of the specified object.
 
-[`Object.is()`](object/is)  
+[`Object.is()`](object/is)
 Compares if two values are the same value. Equates all `NaN` values (which differs from both Abstract Equality Comparison and Strict Equality Comparison).
 
-[`Object.isExtensible()`](object/isextensible)  
+[`Object.isExtensible()`](object/isextensible)
 Determines if extending of an object is allowed.
 
-[`Object.isFrozen()`](object/isfrozen)  
+[`Object.isFrozen()`](object/isfrozen)
 Determines if an object was frozen.
 
-[`Object.isSealed()`](object/issealed)  
+[`Object.isSealed()`](object/issealed)
 Determines if an object is sealed.
 
-[`Object.keys()`](object/keys)  
+[`Object.keys()`](object/keys)
 Returns an array containing the names of all of the given object's **own** enumerable string properties.
 
-[`Object.preventExtensions()`](object/preventextensions)  
+[`Object.preventExtensions()`](object/preventextensions)
 Prevents any extensions of an object.
 
-[`Object.seal()`](object/seal)  
+[`Object.seal()`](object/seal)
 Prevents other code from deleting properties of an object.
 
-[`Object.setPrototypeOf()`](object/setprototypeof)  
+[`Object.setPrototypeOf()`](object/setprototypeof)
 Sets the object's prototype (its internal `[[Prototype]]` property).
 
-[`Object.values()`](object/values)  
+[`Object.values()`](object/values)
 Returns an array containing the values that correspond to all of a given object's **own** enumerable string properties.
 
 ## Instance properties
 
-[`Object.prototype.constructor`](object/constructor)  
+[`Object.prototype.constructor`](object/constructor)
 Specifies the function that creates an object's prototype.
 
-[`Object/proto`](object/proto)  
+[`Object/proto`](object/proto)
 Points to the object which was used as prototype when the object was instantiated.
 
 ## Instance methods
 
-[`Object.prototype.__defineGetter__()`](object/__definegetter__)  
+[`Object.prototype.__defineGetter__()`](object/__definegetter__)
 Associates a function with a property that, when accessed, executes that function and returns its return value.
 
-[`Object.prototype.__defineSetter__()`](object/__definesetter__)  
+[`Object.prototype.__defineSetter__()`](object/__definesetter__)
 Associates a function with a property that, when set, executes that function which modifies the property.
 
-[`Object.prototype.__lookupGetter__()`](object/__lookupgetter__)  
+[`Object.prototype.__lookupGetter__()`](object/__lookupgetter__)
 Returns the function associated with the specified property by the [`__defineGetter__()`](object/__definegetter__) method.
 
-[`Object.prototype.__lookupSetter__()`](object/__lookupsetter__)  
+[`Object.prototype.__lookupSetter__()`](object/__lookupsetter__)
 Returns the function associated with the specified property by the [`__defineSetter__()`](object/__definesetter__) method.
 
-[`Object.prototype.hasOwnProperty()`](object/hasownproperty)  
+[`Object.prototype.hasOwnProperty()`](object/hasownproperty)
 Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.
 
-[`Object.prototype.isPrototypeOf()`](object/isprototypeof)  
+[`Object.prototype.isPrototypeOf()`](object/isprototypeof)
 Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object.
 
-[`Object.prototype.propertyIsEnumerable()`](object/propertyisenumerable)  
+[`Object.prototype.propertyIsEnumerable()`](object/propertyisenumerable)
 Returns a boolean indicating if the internal [ECMAScript \[\[Enumerable\]\] attribute](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties) is set.
 
-[`Object.prototype.toLocaleString()`](object/tolocalestring)  
+[`Object.prototype.toLocaleString()`](object/tolocalestring)
 Calls [`toString()`](object/tostring).
 
-[`Object.prototype.toString()`](object/tostring)  
+[`Object.prototype.toString()`](object/tostring)
 Returns a string representation of the object.
 
-[`Object.prototype.valueOf()`](object/valueof)  
+[`Object.prototype.valueOf()`](object/valueof)
 Returns the primitive value of the specified object.
 
 ## Examples
@@ -61105,7 +61105,7 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object' in that specification.</span></a></td></tr></tbody></table>
@@ -62349,7 +62349,7 @@ Property definitions that do not use "colon" notation are not prototype mutation
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object Initializer' in that specification.</span></a></td></tr></tbody></table>
@@ -62521,8 +62521,8 @@ No
 -   [Method definitions](../functions/method_definitions)
 -   [Lexical grammar](../lexical_grammar)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer</a>
 
 # TypedArray.of()
@@ -62549,7 +62549,7 @@ Where `TypedArray` is one of:
 
 ### Parameters
 
-`elementN`  
+`elementN`
 Elements of which to create the typed array.
 
 ### Return value
@@ -62574,7 +62574,7 @@ Some subtle distinctions between [`Array.of()`](../array/of) and `TypedArray.of(
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of '%TypedArray%.of' in that specification.</span></a></td></tr></tbody></table>
@@ -62640,8 +62640,8 @@ No
 -   [`TypedArray.from()`](from)
 -   [`Array.of()`](../array/of)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of</a>
 
 # Operator precedence
@@ -63069,8 +63069,8 @@ left-to-right
 
 `… , …`
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>
 
 # Optional chaining (?.)
@@ -63214,7 +63214,7 @@ The [nullish coalescing operator](nullish_coalescing_operator) may be used after
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-OptionalExpression</span></a></td></tr></tbody></table>
@@ -63287,8 +63287,8 @@ No
 
 -   The [Nullish Coalescing Operator](nullish_coalescing_operator)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining</a>
 
 # Atomics.or()
@@ -63301,13 +63301,13 @@ The static ` Atomics``.or() ` method computes a bitwise OR with a given value at
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to compute the bitwise OR.
 
-`value`  
+`value`
 The number to compute the bitwise OR with.
 
 ### Return value
@@ -63345,7 +63345,7 @@ For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.or</span></a></td></tr></tbody></table>
@@ -63457,7 +63457,7 @@ The `handler.ownKeys()` method is a trap for [`Reflect.ownKeys()`](../../reflect
 
 The following parameter is passed to the `ownKeys()` method. `this` is bound to the handler.
 
-`target`  
+`target`
 The target object.
 
 ### Return value
@@ -63524,7 +63524,7 @@ The following code violates an invariant.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span></a></td></tr></tbody></table>
@@ -63596,8 +63596,8 @@ In Firefox 42, the implementation got updated to reflect the final ES2015 specif
 -   [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
 -   [`Reflect.ownKeys()`](../../reflect/ownkeys)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys</a>
 
 # String.prototype.padEnd()
@@ -63611,10 +63611,10 @@ The `padEnd()` method pads the current string with a given string (repeated, if 
 
 ### Parameters
 
-`targetLength`  
+`targetLength`
 The length of the resulting string once the current `str` has been padded. If the value is lower than `str.length`, the current string will be returned as-is.
 
-`padString` <span class="badge inline optional">Optional</span>  
+`padString` <span class="badge inline optional">Optional</span>
 The string to pad the current `str` with. If `padString` is too long to stay within `targetLength`, it will be truncated: for left-to-right languages the left-most part and for right-to-left languages the right-most will be applied. The default value for this parameter is "" (`U+0020`).
 
 ### Return value
@@ -63632,7 +63632,7 @@ A [`String`](../string) of the specified `targetLength` with the `padString` app
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.padend</span></a></td></tr></tbody></table>
@@ -63698,8 +63698,8 @@ No
 -   [`String.prototype.padStart()`](padstart)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd</a>
 
 # String.prototype.padStart()
@@ -63713,10 +63713,10 @@ The `padStart()` method pads the current string with another string (multiple ti
 
 ### Parameters
 
-`targetLength`  
+`targetLength`
 The length of the resulting string once the current `str` has been padded. If the value is less than `str.length`, then `str` is returned as-is.
 
-`padString` <span class="badge inline optional">Optional</span>  
+`padString` <span class="badge inline optional">Optional</span>
 The string to pad the current `str` with. If `padString` is too long to stay within the `targetLength`, it will be truncated from the end. The default value is "" (`U+0020 'SPACE'`).
 
 ### Return value
@@ -63747,7 +63747,7 @@ A [`String`](../string) of the specified `targetLength` with `padString` applied
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.padstart</span></a></td></tr></tbody></table>
@@ -63813,8 +63813,8 @@ No
 -   [`String.prototype.padEnd()`](padend)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart</a>
 
 # Date.parse()
@@ -63835,7 +63835,7 @@ Implicit call:
 
 ### Parameters
 
-`dateString`  
+`dateString`
 A string representing [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format). (Other formats may be used, but results are implementation-dependent.)
 
 ### Return value
@@ -63947,7 +63947,7 @@ Returns `14400000` no matter the local time zone as a time zone GMT (UTC) is pro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.parse</span></a></td></tr></tbody></table>
@@ -64055,7 +64055,7 @@ The `parseFloat()` function parses an argument (converting it to a string first 
 
 ### Parameters
 
-`string`  
+`string`
 The value to parse. If this argument is not a string, then it is converted to one using the `ToString` abstract operation. Leading [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) in this argument is ignored.
 
 ### Return value
@@ -64108,7 +64108,7 @@ The following examples both return `900719925474099300`, losing precision as the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'parseFloat' in that specification.</span></a></td></tr></tbody></table>
@@ -64190,10 +64190,10 @@ The `parseInt()` function parses a string argument and returns an integer of the
 
 ### Parameters
 
-`string`  
+`string`
 The value to parse. If this argument is not a string, then it is converted to one using the `ToString` abstract operation. Leading [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) in this argument is ignored.
 
-`radix` <span class="badge inline optional">Optional</span>  
+`radix` <span class="badge inline optional">Optional</span>
 An integer between `2` and `36` that represents the _radix_ (the base in mathematical numeral systems) of the `string`. Be careful—this does **_not_** default to `10`! If the radix value is not of the `Number` type it will be coerced to a `Number`.
 
 **Warning:** The [description below](#description) explains in more detail what happens when `radix` is not provided.
@@ -64354,7 +64354,7 @@ The radix is coerced to a `Number`:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-parseint-string-radix</span></a></td></tr></tbody></table>
@@ -64490,7 +64490,7 @@ The following function uses `Math.PI` to calculate the circumference of a circle
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pi">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pi">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.pi</span></a></td></tr></tbody></table>
@@ -64555,8 +64555,8 @@ Samsung Internet
 
 -   [`Math`](../math)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI</a>
 
 # Planned changes to shared memory
@@ -64605,8 +64605,8 @@ The WebAssembly Threads proposal also defines a new set of [atomic](https://gith
 -   `Cross-Origin-Resource-Policy`: [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header), new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
 -   `postMessage()` changes and [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated): [whatwg/html issue \#4732](https://github.com/whatwg/html/issues/4732), [whatwg/html issue \#4872](https://github.com/whatwg/html/issues/4872), [draft specification](https://github.com/whatwg/html/pull/4734).
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes</a>
 
 # Intl.PluralRules() constructor
@@ -64621,16 +64621,16 @@ The `Intl.PluralRules()` constructor creates [`Intl.PluralRules`](../pluralrules
 
 ### Parameters
 
-`locales` <span class="badge inline optional">Optional</span>  
+`locales` <span class="badge inline optional">Optional</span>
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page.
 
-`options` <span class="badge inline optional">Optional</span>  
+`options` <span class="badge inline optional">Optional</span>
 An object with some or all of the following properties:
 
-`localeMatcher`  
+`localeMatcher`
 The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
-`type`  
+`type`
 The type to use. Possible values are:
 
 -   "`cardinal`" for cardinal numbers (refering to the quantity of things). This is the default value.
@@ -64638,19 +64638,19 @@ The type to use. Possible values are:
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
-`minimumIntegerDigits`  
+`minimumIntegerDigits`
 The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.
 
-`minimumFractionDigits`  
+`minimumFractionDigits`
 The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information).
 
-`maximumFractionDigits`  
+`maximumFractionDigits`
 The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
 
-`minimumSignificantDigits`  
+`minimumSignificantDigits`
 The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.
 
-`maximumSignificantDigits`  
+`maximumSignificantDigits`
 The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
 
 ## Examples
@@ -64691,7 +64691,7 @@ The results can be customized using the `options` argument, which has one proper
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl-pluralrules-constructor</span></a></td></tr></tbody></table>
@@ -64809,7 +64809,7 @@ The following code creates the `myFish` array-like object containing four elemen
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.pop' in that specification.</span></a></td></tr></tbody></table>
@@ -64932,7 +64932,7 @@ In the following example, the variable `bigNumber` is assigned a value that is l
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-number.positive_infinity</span></a></td></tr></tbody></table>
@@ -65000,8 +65000,8 @@ Samsung Internet
 -   [`Infinity`](../infinity)
 -   [`isFinite()`](../isfinite)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY</a>
 
 # Math.pow()
@@ -65014,10 +65014,10 @@ The `Math.pow()` function returns the `base` to the `exponent` power, as in `bas
 
 ### Parameters
 
-`base`  
+`base`
 The base number.
 
-`exponent`  
+`exponent`
 The exponent used to raise the `base`.
 
 ### Return value
@@ -65057,7 +65057,7 @@ Because `pow()` is a static method of `Math`, use it as `Math.pow()`, rather tha
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.pow</span></a></td></tr></tbody></table>
@@ -65126,8 +65126,8 @@ Samsung Internet
 -   [`Math.sqrt()`](sqrt)
 -   [Exponentiation operator](../../operators/exponentiation)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow</a>
 
 # RangeError: precision is out of range
@@ -65202,7 +65202,7 @@ The `Object.preventExtensions()` method prevents new properties from ever being 
 
 ### Parameters
 
-`obj`  
+`obj`
 The object which should be made non-extensible.
 
 ### Return value
@@ -65272,7 +65272,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.preventextensions</span></a></td></tr></tbody></table>
@@ -65368,8 +65368,8 @@ Samsung Internet
 -   [`Object.isFrozen()`](isfrozen)
 -   [`Reflect.preventExtensions()`](../reflect/preventextensions)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions</a>
 
 # Private class fields
@@ -65539,7 +65539,7 @@ Private instance methods may be generator, async, or async generator functions. 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal)
 <br/>
 
 <span class="small">#prod-PrivateIdentifier</span></a></td></tr></tbody></table>
@@ -65745,7 +65745,7 @@ If we change this so that the `<iframe>` in the document is listening to post me
 
     <!-- y.html -->
     <!DOCTYPE html>
-    <iframe src="x.html"></iframe>
+    <iframe sandbox="allow-scripts"  src="x.html"></iframe>
     <script>
       const bound = frames[0].postMessage.bind(frames[0], "some data", "*");
       Promise.resolve(undefined).then(bound);
@@ -65767,37 +65767,37 @@ In the above example, the inner text of the `<iframe>` will be updated only if t
 
 ## Constructor
 
-[`Promise()`](promise/promise)  
+[`Promise()`](promise/promise)
 Creates a new `Promise` object. The constructor is primarily used to wrap functions that do not already support promises.
 
 ## Static methods
 
-[`Promise.all(iterable)`](promise/all)  
+[`Promise.all(iterable)`](promise/all)
 Wait for all promises to be resolved, or for any to be rejected.
 
 If the returned promise resolves, it is resolved with an aggregating array of the values from the resolved promises, in the same order as defined in the iterable of multiple promises.
 
 If it rejects, it is rejected with the reason from the first promise in the iterable that was rejected.
 
-[`Promise.allSettled(iterable)`](promise/allsettled)  
+[`Promise.allSettled(iterable)`](promise/allsettled)
 Wait until all promises have settled (each may resolve or reject).
 
 Returns a Promise that resolves after all of the given promises have either resolved or rejected, with an array of objects that each describe the outcome of each promise.
 
-[`Promise.any(iterable)`](promise/any)  
+[`Promise.any(iterable)`](promise/any)
 Takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.
 
-[`Promise.race(iterable)`](promise/race)  
+[`Promise.race(iterable)`](promise/race)
 Wait until any of the promises is resolved or rejected.
 
 If the returned promise resolves, it is resolved with the value of the first promise in the iterable that resolved.
 
 If it rejects, it is rejected with the reason from the first promise that was rejected.
 
-[`Promise.reject(reason)`](promise/reject)  
+[`Promise.reject(reason)`](promise/reject)
 Returns a new `Promise` object that is rejected with the given reason.
 
-[`Promise.resolve(value)`](promise/resolve)  
+[`Promise.resolve(value)`](promise/resolve)
 Returns a new `Promise` object that is resolved with the given value. If the value is a thenable (i.e. has a `then` method), the returned promise will "follow" that thenable, adopting its eventual state; otherwise, the returned promise will be fulfilled with the value.
 
 Generally, if you don't know if a value is a promise or not, [`Promise.resolve(value)`](promise/resolve) it instead and work with the return value as a promise.
@@ -65806,13 +65806,13 @@ Generally, if you don't know if a value is a promise or not, [`Promise.resolve(v
 
 See the [Microtask guide](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide) to learn more about how these methods use the Microtask queue and services.
 
-[`Promise.prototype.catch()`](promise/catch)  
+[`Promise.prototype.catch()`](promise/catch)
 Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled.
 
-[`Promise.prototype.then()`](promise/then)  
+[`Promise.prototype.then()`](promise/then)
 Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler, or to its original settled value if the promise was not handled (i.e. if the relevant handler `onFulfilled` or `onRejected` is not a function).
 
-[`Promise.prototype.finally()`](promise/finally)  
+[`Promise.prototype.finally()`](promise/finally)
 Appends a handler to the promise, and returns a new promise that is resolved when the original promise is resolved. The handler is called when the promise is settled, whether fulfilled or rejected.
 
 ## Examples
@@ -65980,7 +65980,7 @@ Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise-objects</span></a></td></tr></tbody></table>
@@ -66375,7 +66375,7 @@ There was attempt to access an object for which you have no permission. This is 
     <!DOCTYPE html>
     <html>
       <head>
-        <iframe id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
+        <iframe sandbox="allow-scripts"  id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
         <script>
           onload = function() {
             console.log(frames[0].document);
@@ -66495,7 +66495,7 @@ For example, the following syntax is often seen in many scripts.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Property Accessors' in that specification.</span></a></td></tr></tbody></table>
@@ -66562,8 +66562,8 @@ Samsung Internet
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)
 -   [Optional chaining](optional_chaining)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors</a>
 
 # Object.prototype.propertyIsEnumerable()
@@ -66576,7 +66576,7 @@ The `propertyIsEnumerable()` method returns a Boolean indicating whether the spe
 
 ### Parameters
 
-`prop`  
+`prop`
 The name of the property to test.
 
 ### Return value
@@ -66653,7 +66653,7 @@ The following example demonstrates the enumerability of user-defined vs. built-i
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.prototype.propertyisenumerable</span></a></td></tr></tbody></table>
@@ -66721,8 +66721,8 @@ Samsung Internet
 -   [`Object.keys()`](keys)
 -   [`Object.defineProperty()`](defineproperty)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable</a>
 
 # Object.prototype.\_\_proto\_\_
@@ -66815,7 +66815,7 @@ The `__proto__` property is a simple accessor property on [`Object.prototype`](.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-additional-properties-of-the-object.prototype-object</span></a></td></tr></tbody></table>
@@ -66882,8 +66882,8 @@ Samsung Internet
 -   [`Object.getPrototypeOf()`](getprototypeof)
 -   [`Object.setPrototypeOf()`](setprototypeof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a>
 
 # Proxy
@@ -66958,12 +66958,12 @@ With the help of the [`Reflect`](reflect) class we can give some accessors the o
 
 ## Constructor
 
-[`Proxy()`](proxy/proxy)  
+[`Proxy()`](proxy/proxy)
 Creates a new `Proxy` object.
 
 ## Static methods
 
-[`Proxy.revocable()`](proxy/revocable)  
+[`Proxy.revocable()`](proxy/revocable)
 Creates a revocable `Proxy` object.
 
 ## Examples
@@ -67287,7 +67287,7 @@ Now in order to create a complete sample `traps` list, for didactic purposes, we
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Proxy' in that specification.</span></a></td></tr></tbody></table>
@@ -67636,7 +67636,7 @@ Getters and setters are special methods that bind to a class property and are ca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal)
 <br/>
 
 <span class="small">#prod-FieldDefinition</span></a></td></tr></tbody></table>
@@ -67725,7 +67725,7 @@ The `push()` method adds one or more elements to the end of an array and returns
 
 ### Parameters
 
-`elementN`  
+`elementN`
 The element(s) to add to the end of the array.
 
 ### Return value
@@ -67793,7 +67793,7 @@ Note that although `obj` is not an array, the method `push` successfully increme
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.push</span></a></td></tr></tbody></table>
@@ -67873,7 +67873,7 @@ The `Promise.race()` method returns a promise that fulfills or rejects as soon a
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An iterable object, such as an [`Array`](../array). See [iterable](../../iteration_protocols#the_iterable_protocol).
 
 ### Return value
@@ -68037,7 +68037,7 @@ If the iterable contains one or more non-promise value and/or an already settled
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.race</span></a></td></tr></tbody></table>
@@ -68103,8 +68103,8 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race</a>
 
 # Math.random()
@@ -68163,7 +68163,7 @@ While the `getRandomInt()` function above is inclusive at the minimum, it's excl
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Math.random' in that specification.</span></a></td></tr></tbody></table>
@@ -68228,8 +68228,8 @@ Samsung Internet
 
 -   [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</a>
 
 # RangeError
@@ -68248,27 +68248,27 @@ This can be encountered when:
 
 ## Constructor
 
-[`RangeError()`](rangeerror/rangeerror)  
+[`RangeError()`](rangeerror/rangeerror)
 Creates a new `RangeError` object.
 
 ## Instance properties
 
-[`RangeError.prototype.message`](error/message)  
+[`RangeError.prototype.message`](error/message)
 Error message. Although ECMA-262 specifies that [`RangeError`](rangeerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
 
-[`RangeError.prototype.name`](error/name)  
+[`RangeError.prototype.name`](error/name)
 Error name. Inherited from [`Error`](error).
 
-[`RangeError.prototype.fileName`](error/filename)  
+[`RangeError.prototype.fileName`](error/filename)
 Path to file that raised this error. Inherited from [`Error`](error).
 
-[`RangeError.prototype.lineNumber`](error/linenumber)  
+[`RangeError.prototype.lineNumber`](error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](error).
 
-[`RangeError.prototype.columnNumber`](error/columnnumber)  
+[`RangeError.prototype.columnNumber`](error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](error).
 
-[`RangeError.prototype.stack`](error/stack)  
+[`RangeError.prototype.stack`](error/stack)
 Stack trace. Inherited from [`Error`](error).
 
 ## Examples
@@ -68319,7 +68319,7 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span></a></td></tr></tbody></table>
@@ -68429,13 +68429,13 @@ The static `String.raw()` method is a tag function of [template literals](../../
 
 ### Parameters
 
-`callSite`  
+`callSite`
 Well-formed template call site object, like `{ raw: ['foo', 'bar', 'baz'] }`.
 
-`...substitutions`  
+`...substitutions`
 Contains substitution values.
 
-`templateString`  
+`templateString`
 A [template literal](../../template_literals), optionally with substitutions (`${...}`).
 
 ### Return value
@@ -68444,7 +68444,7 @@ The raw string form of a given template literal.
 
 ### Exceptions
 
-[`TypeError`](../typeerror)  
+[`TypeError`](../typeerror)
 A [`TypeError`](../typeerror) is thrown if the first argument is not a well-formed object.
 
 ## Description
@@ -68492,7 +68492,7 @@ In most cases, `String.raw()` is used with template literal. The first syntax me
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.raw</span></a></td></tr></tbody></table>
@@ -68559,8 +68559,8 @@ No
 -   [`String`](../string)
 -   [Lexical grammar](../../lexical_grammar)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a>
 
 # TypeError: "x" is read-only
@@ -68714,24 +68714,24 @@ Your **reducer** function's returned value is assigned to the accumulator, whose
 
 ### Parameters
 
-`callback`  
+`callback`
 A function to execute on each element in the array (except for the first, if no `initialValue` is supplied).
 
 It takes four arguments:
 
-`accumulator`  
+`accumulator`
 The accumulator accumulates callback's return values. It is the accumulated value previously returned in the last invocation of the callback—or `initialValue`, if it was supplied (see below).
 
-`currentValue`  
+`currentValue`
 The current element being processed in the array.
 
-`index` <span class="badge inline optional">Optional</span>  
+`index` <span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array. Starts from index `0` if an `initialValue` is provided. Otherwise, it starts from index `1`.
 
-`array` <span class="badge inline optional">Optional</span>  
+`array` <span class="badge inline optional">Optional</span>
 The array `reduce()` was called upon.
 
-`initialValue` <span class="badge inline optional">Optional</span>  
+`initialValue` <span class="badge inline optional">Optional</span>
 A value to use as the first argument to the first call of the `callback`. If no `initialValue` is supplied, the first element in the array will be used as the initial `accumulator` value and skipped as `currentValue`. Calling `reduce()` on an empty array without an `initialValue` will throw a [`TypeError`](../typeerror).
 
 ### Return value
@@ -69113,7 +69113,7 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
@@ -69281,22 +69281,22 @@ See also [`Array.prototype.reduce()`](reduce) for left-to-right.
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function to execute on each value in the array, taking four arguments:
 
-`accumulator`  
+`accumulator`
 The value previously returned in the last invocation of the callback, or `initialValue`, if supplied. (See below.)
 
-`currentValue`  
+`currentValue`
 The current element being processed in the array.
 
-`index`<span class="badge inline optional">Optional</span>  
+`index`<span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array`<span class="badge inline optional">Optional</span>  
+`array`<span class="badge inline optional">Optional</span>
 The array `reduceRight()` was called upon.
 
-`initialValue` <span class="badge inline optional">Optional</span>  
+`initialValue` <span class="badge inline optional">Optional</span>
 Value to use as accumulator to the first call of the `callbackFn`. If no initial value is supplied, the last element in the array will be used and skipped. Calling reduce or reduceRight on an empty array without an initial value creates a `TypeError`.
 
 ### Return value
@@ -69465,7 +69465,7 @@ See also [Function composition](<https://en.wikipedia.org/wiki/Function_composit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
@@ -69538,27 +69538,27 @@ The `ReferenceError` object represents an error when a non-existent variable is 
 
 ## Constructor
 
-[`ReferenceError()`](referenceerror/referenceerror)  
+[`ReferenceError()`](referenceerror/referenceerror)
 Creates a new `ReferenceError` object.
 
 ## Instance properties
 
-[`ReferenceError.prototype.message`](error/message)  
+[`ReferenceError.prototype.message`](error/message)
 Error message. Although ECMA-262 specifies that [`ReferenceError`](referenceerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
 
-[`ReferenceError.prototype.name`](error/name)  
+[`ReferenceError.prototype.name`](error/name)
 Error name. Inherited from [`Error`](error).
 
-[`ReferenceError.prototype.fileName`](error/filename)  
+[`ReferenceError.prototype.fileName`](error/filename)
 Path to file that raised this error. Inherited from [`Error`](error).
 
-[`ReferenceError.prototype.lineNumber`](error/linenumber)  
+[`ReferenceError.prototype.lineNumber`](error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](error).
 
-[`ReferenceError.prototype.columnNumber`](error/columnnumber)  
+[`ReferenceError.prototype.columnNumber`](error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](error).
 
-[`ReferenceError.prototype.stack`](error/stack)  
+[`ReferenceError.prototype.stack`](error/stack)
 Stack trace. Inherited from [`Error`](error).
 
 ## Examples
@@ -69593,7 +69593,7 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span></a></td></tr></tbody></table>
@@ -69700,43 +69700,43 @@ Some of these methods are also the same as corresponding methods on [`Object`](o
 
 ## Static methods
 
-[`Reflect.apply(target, thisArgument, argumentsList)`](reflect/apply)  
+[`Reflect.apply(target, thisArgument, argumentsList)`](reflect/apply)
 Calls a `target` function with arguments as specified by the `argumentsList` parameter. See also [`Function.prototype.apply()`](function/apply).
 
-[`Reflect.construct(target, argumentsList[, newTarget])`](reflect/construct)  
+[`Reflect.construct(target, argumentsList[, newTarget])`](reflect/construct)
 The [`new` operator](../operators/new) as a function. Equivalent to calling `new target(...argumentsList)`. Also provides the option to specify a different prototype.
 
-[`Reflect.defineProperty(target, propertyKey, attributes)`](reflect/defineproperty)  
+[`Reflect.defineProperty(target, propertyKey, attributes)`](reflect/defineproperty)
 Similar to [`Object.defineProperty()`](object/defineproperty). Returns a [`Boolean`](boolean) that is `true` if the property was successfully defined.
 
-[`Reflect.deleteProperty(target, propertyKey)`](reflect/deleteproperty)  
+[`Reflect.deleteProperty(target, propertyKey)`](reflect/deleteproperty)
 The [`delete` operator](../operators/delete) as a function. Equivalent to calling `delete target[propertyKey]`.
 
-[`Reflect.get(target, propertyKey[, receiver])`](reflect/get)  
+[`Reflect.get(target, propertyKey[, receiver])`](reflect/get)
 Returns the value of the property. Works like getting a property from an object (`target[propertyKey]`) as a function.
 
-[`Reflect.getOwnPropertyDescriptor(target, propertyKey)`](reflect/getownpropertydescriptor)  
+[`Reflect.getOwnPropertyDescriptor(target, propertyKey)`](reflect/getownpropertydescriptor)
 Similar to [`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor). Returns a property descriptor of the given property if it exists on the object, [`undefined`](undefined) otherwise.
 
-[`Reflect.getPrototypeOf(target)`](reflect/getprototypeof)  
+[`Reflect.getPrototypeOf(target)`](reflect/getprototypeof)
 Same as [`Object.getPrototypeOf()`](object/getprototypeof).
 
-[`Reflect.has(target, propertyKey)`](reflect/has)  
+[`Reflect.has(target, propertyKey)`](reflect/has)
 Returns a [`Boolean`](boolean) indicating whether the target has the property. Either as own or inherited. Works like the [`in` operator](../operators/in) as a function.
 
-[`Reflect.isExtensible(target)`](reflect/isextensible)  
+[`Reflect.isExtensible(target)`](reflect/isextensible)
 Same as [`Object.isExtensible()`](object/isextensible). Returns a [`Boolean`](boolean) that is `true` if the target is extensible.
 
-[`Reflect.ownKeys(target)`](reflect/ownkeys)  
+[`Reflect.ownKeys(target)`](reflect/ownkeys)
 Returns an array of the target object's own (not inherited) property keys.
 
-[`Reflect.preventExtensions(target)`](reflect/preventextensions)  
+[`Reflect.preventExtensions(target)`](reflect/preventextensions)
 Similar to [`Object.preventExtensions()`](object/preventextensions). Returns a [`Boolean`](boolean) that is `true` if the update was successful.
 
-[`Reflect.set(target, propertyKey, value[, receiver])`](reflect/set)  
+[`Reflect.set(target, propertyKey, value[, receiver])`](reflect/set)
 A function that assigns values to properties. Returns a [`Boolean`](boolean) that is `true` if the update was successful.
 
-[`Reflect.setPrototypeOf(target, prototype)`](reflect/setprototypeof)  
+[`Reflect.setPrototypeOf(target, prototype)`](reflect/setprototypeof)
 A function that sets the prototype of an object. Returns a [`Boolean`](boolean) that is `true` if the update was successful.
 
 ## Examples
@@ -69769,7 +69769,7 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-reflect-object</span></a></td></tr></tbody></table>
@@ -70217,73 +70217,73 @@ Note that several of the [`RegExp`](regexp) properties have both long and short 
 
 ## Constructor
 
-[`RegExp()`](regexp/regexp)  
+[`RegExp()`](regexp/regexp)
 Creates a new `RegExp` object.
 
 ## Static properties
 
-[`get RegExp[@@species]`](regexp/@@species)  
+[`get RegExp[@@species]`](regexp/@@species)
 The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-[`RegExp.prototype.flags`](regexp/flags)  
+[`RegExp.prototype.flags`](regexp/flags)
 A string that contains the flags of the `RegExp` object.
 
-[`RegExp.prototype.dotAll`](regexp/dotall)  
+[`RegExp.prototype.dotAll`](regexp/dotall)
 Whether `.` matches newlines or not.
 
-[`RegExp.prototype.global`](regexp/global)  
+[`RegExp.prototype.global`](regexp/global)
 Whether to test the regular expression against all possible matches in a string, or only against the first.
 
-[`RegExp.prototype.hasIndices`](regexp/hasindices)  
+[`RegExp.prototype.hasIndices`](regexp/hasindices)
 Whether the regular expression result exposes the start and end indices of captured substrings.
 
-[`RegExp.prototype.ignoreCase`](regexp/ignorecase)  
+[`RegExp.prototype.ignoreCase`](regexp/ignorecase)
 Whether to ignore case while attempting a match in a string.
 
-[`RegExp.prototype.multiline`](regexp/multiline)  
+[`RegExp.prototype.multiline`](regexp/multiline)
 Whether or not to search in strings across multiple lines.
 
-[`RegExp.prototype.source`](regexp/source)  
+[`RegExp.prototype.source`](regexp/source)
 The text of the pattern.
 
-[`RegExp.prototype.sticky`](regexp/sticky)  
+[`RegExp.prototype.sticky`](regexp/sticky)
 Whether or not the search is sticky.
 
-[`RegExp.prototype.unicode`](regexp/unicode)  
+[`RegExp.prototype.unicode`](regexp/unicode)
 Whether or not Unicode features are enabled.
 
-[`RegExp: lastIndex`](regexp/lastindex)  
+[`RegExp: lastIndex`](regexp/lastindex)
 The index at which to start the next match.
 
 ## Instance methods
 
-[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>  
+[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>
 (Re-)compiles a regular expression during execution of a script.
 
-[`RegExp.prototype.exec()`](regexp/exec)  
+[`RegExp.prototype.exec()`](regexp/exec)
 Executes a search for a match in its string parameter.
 
-[`RegExp.prototype.test()`](regexp/test)  
+[`RegExp.prototype.test()`](regexp/test)
 Tests for a match in its string parameter.
 
-[`RegExp.prototype.toString()`](regexp/tostring)  
+[`RegExp.prototype.toString()`](regexp/tostring)
 Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`RegExp.prototype[@@match]()`](regexp/@@match)  
+[`RegExp.prototype[@@match]()`](regexp/@@match)
 Performs match to given string and returns match result.
 
-[`RegExp.prototype[@@matchAll]()`](regexp/@@matchall)  
+[`RegExp.prototype[@@matchAll]()`](regexp/@@matchall)
 Returns all matches of the regular expression against a string.
 
-[`RegExp.prototype[@@replace]()`](regexp/@@replace)  
+[`RegExp.prototype[@@replace]()`](regexp/@@replace)
 Replaces matches in given string with new substring.
 
-[`RegExp.prototype[@@search]()`](regexp/@@search)  
+[`RegExp.prototype[@@search]()`](regexp/@@search)
 Searches the match in given string and returns the index the pattern found in the string.
 
-[`RegExp.prototype[@@split]()`](regexp/@@split)  
+[`RegExp.prototype[@@split]()`](regexp/@@split)
 Splits given string into an array by separating the string into substrings.
 
 ## Examples
@@ -70380,7 +70380,7 @@ The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/Java
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-regexp-regular-expression-objects</span></a></td></tr></tbody></table>
@@ -71306,7 +71306,7 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.region</span></a></td></tr></tbody></table>
@@ -71384,7 +71384,7 @@ The `Promise.reject()` method returns a `Promise` object that is rejected with a
 
 ### Parameters
 
-`reason`  
+`reason`
 Reason why this `Promise` rejected.
 
 ### Return value
@@ -71407,7 +71407,7 @@ The static `Promise.reject` function returns a `Promise` that is rejected. For d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
@@ -71472,8 +71472,8 @@ No
 
 -   [`Promise`](../promise)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject</a>
 
 # Intl.RelativeTimeFormat
@@ -71482,23 +71482,23 @@ The `Intl.RelativeTimeFormat` object enables language-sensitive relative time fo
 
 ## Constructor
 
-[`Intl.RelativeTimeFormat()`](relativetimeformat/relativetimeformat)  
+[`Intl.RelativeTimeFormat()`](relativetimeformat/relativetimeformat)
 Creates a new `Intl.RelativeTimeFormat` object.
 
 ## Static methods
 
-[`Intl.RelativeTimeFormat.supportedLocalesOf()`](relativetimeformat/supportedlocalesof)  
+[`Intl.RelativeTimeFormat.supportedLocalesOf()`](relativetimeformat/supportedlocalesof)
 Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
 
 ## Instance methods
 
-[`Intl.RelativeTimeFormat.prototype.format()`](relativetimeformat/format)  
+[`Intl.RelativeTimeFormat.prototype.format()`](relativetimeformat/format)
 Formats a `value` and a `unit` according to the locale and formatting options of the given [`Intl.RelativeTimeFormat`](relativetimeformat) object.
 
-[`Intl.RelativeTimeFormat.prototype.formatToParts()`](relativetimeformat/formattoparts)  
+[`Intl.RelativeTimeFormat.prototype.formatToParts()`](relativetimeformat/formattoparts)
 Returns an [`Array`](../array) of objects representing the relative time format in parts that can be used for custom locale-aware formatting.
 
-[`Intl.RelativeTimeFormat.prototype.resolvedOptions()`](relativetimeformat/resolvedoptions)  
+[`Intl.RelativeTimeFormat.prototype.resolvedOptions()`](relativetimeformat/resolvedoptions)
 Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.
 
 ## Examples
@@ -71544,7 +71544,7 @@ The following example shows how to create a relative time formatter returning fo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#relativetimeformat-objects</span></a></td></tr></tbody></table>
@@ -71780,7 +71780,7 @@ Note that while in most languages, '%' is a remainder operator, in some (e.g. [P
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
@@ -71853,8 +71853,8 @@ Samsung Internet
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a>
 
 # String.prototype.repeat()
@@ -71867,7 +71867,7 @@ The `repeat()` method constructs and returns a new string which contains the spe
 
 ### Parameters
 
-`count`  
+`count`
 An integer between `0` and [`+Infinity`](../number/positive_infinity), indicating the number of times to repeat the string.
 
 ### Return value
@@ -71939,7 +71939,7 @@ This method has been added to the ECMAScript 2015 specification and may not be a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.repeat' in that specification.</span></a></td></tr></tbody></table>
@@ -72004,8 +72004,8 @@ No
 
 -   [`String.prototype.concat()`](concat)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a>
 
 # String.prototype.replace()
@@ -72024,16 +72024,16 @@ The original string is left unchanged.
 
 ### Parameters
 
-`regexp` (pattern)  
+`regexp` (pattern)
 A [`RegExp`](../regexp) object or literal. The match or matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`.
 
-`substr`  
+`substr`
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is _not_ interpreted as a regular expression. Only the first occurrence will be replaced.
 
-`newSubstr` (replacement)  
+`newSubstr` (replacement)
 The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)" section below.
 
-`replacerFunction` (replacement)  
+`replacerFunction` (replacement)
 A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)" section below.
 
 ### Return value
@@ -72147,7 +72147,7 @@ The regular expression `test` checks for any number that ends with `F`. The numb
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.replace' in that specification.</span></a></td></tr></tbody></table>
@@ -72219,8 +72219,8 @@ A replacement function as second argument is not supported.
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace</a>
 
 # String.prototype.replaceAll()
@@ -72241,16 +72241,16 @@ The original string is left unchanged.
 
 ### Parameters
 
-`regexp` (pattern)  
+`regexp` (pattern)
 A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global ("g") flag will throw a `TypeError`: "replaceAll must be called with a global RegExp".
 
-`substr`  
+`substr`
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is _not_ interpreted as a regular expression.
 
-`newSubstr` (replacement)  
+`newSubstr` (replacement)
 The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)" section below.
 
-`replacerFunction` (replacement)  
+`replacerFunction` (replacement)
 A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)" section below.
 
 ### Return value
@@ -72300,7 +72300,7 @@ This will work:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'String.prototype.replaceAll' in that specification.</span></a></td></tr></tbody></table>
@@ -72368,8 +72368,8 @@ No
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll</a>
 
 # SyntaxError: "x" is a reserved identifier
@@ -72449,7 +72449,7 @@ The `Promise.resolve()` method returns a [`Promise`](../promise) object that is 
 
 ### Parameters
 
-`value`  
+`value`
 Argument to be resolved by this `Promise`. Can also be a `Promise` or a thenable to resolve.
 
 ### Return value
@@ -72536,7 +72536,7 @@ The inverted order of the logs is due to the fact that the `then` handlers are c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.resolve</span></a></td></tr></tbody></table>
@@ -72601,8 +72601,8 @@ No
 
 -   [`Promise`](../promise)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</a>
 
 # Intl.NumberFormat.prototype.resolvedOptions()
@@ -72621,38 +72621,38 @@ A new object with properties reflecting the locale and number formatting options
 
 The resulting object has the following properties:
 
-`locale`  
+`locale`
 The BCP 47 language tag for the locale actually used. If any Unicode extension values were requested in the input BCP 47 language tag that led to this locale, the key-value pairs that were requested and are supported for this locale are included in `locale`.
 
-`numberingSystem`  
+`numberingSystem`
 The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key "`nu`" or filled in as a default.
 
-`notation`  
+`notation`
 The value provided for this property in the `options` argument, if present, or "`standard`" filled in as a default.
 
-`compactDisplay`  
-The value provided for this property in the `options` argument, or "`short`" filled in as a default.  
+`compactDisplay`
+The value provided for this property in the `options` argument, or "`short`" filled in as a default.
 This property is only present if the `notation` is set to "compact".
 
-`signDisplay`  
+`signDisplay`
 The value provided for this property in the `options` argument, or "`auto`" filled in as a default.
 
-`useGrouping`  
+`useGrouping`
 The values provided for these properties in the `options` argument or filled in as defaults.
 
-`currency`  
-`currencyDisplay`  
+`currency`
+`currencyDisplay`
 The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is "`currency`".
 
 Only one of the following two groups of properties is included:
 
-`minimumIntegerDigits`  
-`minimumFractionDigits`  
-`maximumFractionDigits`  
+`minimumIntegerDigits`
+`minimumFractionDigits`
+`maximumFractionDigits`
 The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if neither `minimumSignificantDigits` nor `maximumSignificantDigits` was provided in the `options` argument.
 
-`minimumSignificantDigits`  
-`maximumSignificantDigits`  
+`minimumSignificantDigits`
+`maximumSignificantDigits`
 The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if at least one of them was provided in the `options` argument.
 
 ## Examples
@@ -72674,7 +72674,7 @@ The values provided for these properties in the `options` argument or filled in 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
@@ -72908,7 +72908,7 @@ To use `Array` methods on the `arguments` object, it must be converted to a real
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
@@ -73055,7 +73055,7 @@ The `return` statement ends function execution and specifies a value to be retur
 
     return [expression];
 
-`expression`  
+`expression`
 The expression whose value is to be returned. If omitted, `undefined` is returned instead.
 
 ## Description
@@ -73143,7 +73143,7 @@ See also the article about [Closures](https://developer.mozilla.org/en-US/docs/W
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-return-statement</span></a></td></tr></tbody></table>
@@ -73209,8 +73209,8 @@ Samsung Internet
 -   [Functions](../functions)
 -   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return</a>
 
 # Array.prototype.reverse()
@@ -73259,7 +73259,7 @@ The following example creates an array-like object `a`, containing three element
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.reverse</span></a></td></tr></tbody></table>
@@ -73338,10 +73338,10 @@ The `Proxy.revocable()` method is used to create a revocable [`Proxy`](../proxy)
 
 ### Parameters
 
-`target`  
+`target`
 A target object to wrap with `Proxy`. It can be any sort of object, including a native array, a function, or even another proxy.
 
-`handler`  
+`handler`
 An object whose properties are functions define the behavior of proxy `p` when an operation is performed on it.
 
 ### Return value
@@ -73352,10 +73352,10 @@ A newly created revocable `Proxy` object is returned.
 
 A revocable `Proxy` is an object with following two properties `{proxy: proxy, revoke: revoke}`.
 
-`proxy`  
+`proxy`
 A Proxy object created with `new Proxy(target, handler)` call.
 
-`revoke`  
+`revoke`
 A function with no argument to invalidate (switch off) the `proxy`.
 
 If the `revoke()` function gets called, the proxy becomes unusable: Any trap to a handler will throw a [`TypeError`](../typeerror). Once a proxy is revoked, it will remain revoked and can be garbage collected. Calling `revoke()` again has no effect.
@@ -73381,7 +73381,7 @@ If the `revoke()` function gets called, the proxy becomes unusable: Any trap to 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-proxy.revocable</span></a></td></tr></tbody></table>
@@ -73446,8 +73446,8 @@ No
 
 -   [`Proxy`](../proxy)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable</a>
 
 # Right shift (&gt;&gt;)
@@ -73483,7 +73483,7 @@ Likewise, `-9 >> 2` yields `-3`, because the sign is preserved:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#prod-BitwiseORExpression</span></a></td></tr></tbody></table>
@@ -73549,8 +73549,8 @@ Samsung Internet
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Right shift assignment operator](right_shift_assignment)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift</a>
 
 # Right shift assignment (&gt;&gt;=)
@@ -73574,7 +73574,7 @@ The right shift assignment operator (`>>=`) moves the specified amount of bits t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
@@ -73640,8 +73640,8 @@ Samsung Internet
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Right shift operator](right_shift)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment</a>
 
 # Math.round()
@@ -73654,7 +73654,7 @@ The `Math.round()` function returns the value of a number rounded to the nearest
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -73679,7 +73679,7 @@ Because `round()` is a static method of `Math`, you always use it as `Math.round
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.round</span></a></td></tr></tbody></table>
@@ -73750,8 +73750,8 @@ Samsung Internet
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</a>
 
 # WebAssembly.RuntimeError
@@ -73760,35 +73760,35 @@ The `WebAssembly.RuntimeError` object is the error type that is thrown whenever 
 
 ## Constructor
 
-[`WebAssembly.RuntimeError()`](runtimeerror/runtimeerror)  
+[`WebAssembly.RuntimeError()`](runtimeerror/runtimeerror)
 Creates a new `WebAssembly.RuntimeError` object.
 
 ## Instance properties
 
-[`WebAssembly.RuntimeError.prototype.message`](../error/message)  
+[`WebAssembly.RuntimeError.prototype.message`](../error/message)
 Error message. Although ECMA-262 specifies that [`URIError`](../urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](../error/message).
 
-[`WebAssembly.RuntimeError.prototype.name`](../error/name)  
+[`WebAssembly.RuntimeError.prototype.name`](../error/name)
 Error name. Inherited from [`Error`](../error).
 
-[`WebAssembly.RuntimeError.prototype.fileName`](../error/filename)  
+[`WebAssembly.RuntimeError.prototype.fileName`](../error/filename)
 Path to file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.RuntimeError.prototype.lineNumber`](../error/linenumber)  
+[`WebAssembly.RuntimeError.prototype.lineNumber`](../error/linenumber)
 Line number in file that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.RuntimeError.prototype.columnNumber`](../error/columnnumber)  
+[`WebAssembly.RuntimeError.prototype.columnNumber`](../error/columnnumber)
 Column number in line that raised this error. Inherited from [`Error`](../error).
 
-[`WebAssembly.RuntimeError.prototype.stack`](../error/stack)  
+[`WebAssembly.RuntimeError.prototype.stack`](../error/stack)
 Stack trace. Inherited from [`Error`](../error).
 
 ## Instance methods
 
-[`WebAssembly.RuntimeError.prototype.toSource()`](../error/tosource)  
+[`WebAssembly.RuntimeError.prototype.toSource()`](../error/tosource)
 Returns code that could eval to the same error. Inherited from [`Error`](../error).
 
-[`WebAssembly.RuntimeError.prototype.toString()`](../error/tostring)  
+[`WebAssembly.RuntimeError.prototype.toString()`](../error/tostring)
 Returns a string representing the specified `Error` object.. Inherited from [`Error`](../error).
 
 ## Examples
@@ -73811,7 +73811,7 @@ The following snippet creates a new `RuntimeError` instance, and logs its detail
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
 <br/>
 
 <span class="small">#exceptiondef-runtimeerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
@@ -73915,8 +73915,8 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError</a>
 
 # Intl.Locale.prototype.script
@@ -73947,7 +73947,7 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-Intl.Locale.prototype.script</span></a></td></tr></tbody></table>
@@ -74025,7 +74025,7 @@ The `Object.seal()` method seals an object, preventing new properties from being
 
 ### Parameters
 
-`obj`  
+`obj`
 The object which should be sealed.
 
 ### Return value
@@ -74109,7 +74109,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object.seal' in that specification.</span></a></td></tr></tbody></table>
@@ -74178,8 +74178,8 @@ Samsung Internet
 -   [`Object.freeze()`](freeze)
 -   [`Object.isFrozen()`](isfrozen)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal</a>
 
 # String.prototype.search()
@@ -74192,7 +74192,7 @@ The `search()` method executes a search for a match between a regular expression
 
 ### Parameters
 
-`regexp`  
+`regexp`
 A [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) object.
 
 If a non-RegExp object `regexp` is passed, it is implicitly converted to a [`RegExp`](../regexp) with `new RegExp(regexp)`.
@@ -74221,7 +74221,7 @@ The following example searches a string with two different regex objects to show
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.search">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.search">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.search</span></a></td></tr></tbody></table>
@@ -74314,8 +74314,8 @@ No
 -   [`String.prototype.match()`](match)
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search</a>
 
 # Intl.PluralRules.select()
@@ -74328,7 +74328,7 @@ The `Intl.PluralRules.prototype.select()` method returns a string indicating whi
 
 ### Parameters
 
-`number`  
+`number`
 The number to get a plural rule for.
 
 ### Return value
@@ -74360,7 +74360,7 @@ This function selects a pluralization category according to the locale and forma
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
 <span class="small">#sec-intl.pluralrules.prototype.select</span></a></td></tr></tbody></table>
@@ -74443,50 +74443,50 @@ Because each value in the `Set` has to be unique, the value equality will be che
 
 ## Constructor
 
-[`Set()`](set/set)  
+[`Set()`](set/set)
 Creates a new `Set` object.
 
 ## Static properties
 
-[`get Set[@@species]`](set/@@species)  
+[`get Set[@@species]`](set/@@species)
 The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-[`Set.prototype.size`](set/size)  
+[`Set.prototype.size`](set/size)
 Returns the number of values in the `Set` object.
 
 ## Instance methods
 
-[`Set.prototype.add(value)`](set/add)  
+[`Set.prototype.add(value)`](set/add)
 Appends `value` to the `Set` object. Returns the `Set` object with added value.
 
-[`Set.prototype.clear()`](set/clear)  
+[`Set.prototype.clear()`](set/clear)
 Removes all elements from the `Set` object.
 
-[`Set.prototype.delete(value)`](set/delete)  
+[`Set.prototype.delete(value)`](set/delete)
 Removes the element associated to the `value` and returns a boolean asserting whether an element was successfully removed or not. `Set.prototype.has(value)` will return `false` afterwards.
 
-[`Set.prototype.has(value)`](set/has)  
+[`Set.prototype.has(value)`](set/has)
 Returns a boolean asserting whether an element is present with the given value in the `Set` object or not.
 
 ### Iteration methods
 
-[`Set.prototype[@@iterator]()`](set/@@iterator)  
+[`Set.prototype[@@iterator]()`](set/@@iterator)
 Returns a new iterator object that yields the **values** for each element in the `Set` object in insertion order.
 
-[`Set.prototype.keys()`](set/values)  
+[`Set.prototype.keys()`](set/values)
 Returns a new iterator object that yields the values for each element in the `Set` object in insertion order. (For Sets, this is the same as the `values()` method.)
 
-[`Set.prototype.values()`](set/values)  
+[`Set.prototype.values()`](set/values)
 Returns a new iterator object that yields the **values** for each element in the `Set` object in insertion order. (For Sets, this is the same as the `keys()` method.)
 
-[`Set.prototype.entries()`](set/entries)  
+[`Set.prototype.entries()`](set/entries)
 Returns a new iterator object that contains `[value, value]` for each element in the `Set` object, in insertion order.
 
 This is similar to the [`Map`](map) object, so that each entry's _key_ is the same as its _value_ for a `Set`.
 
-[`Set.prototype.forEach(callbackFn[, thisArg])`](set/foreach)  
+[`Set.prototype.forEach(callbackFn[, thisArg])`](set/foreach)
 Calls `callbackFn` once for each value present in the `Set` object, in insertion order. If a `thisArg` parameter is provided, it will be used as the `this` value for each invocation of `callbackFn`.
 
 ## Examples
@@ -74672,7 +74672,7 @@ Calls `callbackFn` once for each value present in the `Set` object, in insertion
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-set-objects</span></a></td></tr></tbody></table>
@@ -75108,13 +75108,13 @@ The `setBigInt64()` method stores a signed 64-bit integer (long long) value at t
 
 ### Parameters
 
-byteOffset  
+byteOffset
 The offset, in bytes, from the start of the view to store the data from.
 
-value  
+value
 The value to set as a [`BigInt`](../bigint). The highest possible value that fits in a signed 64-bit integer is `2n ** (64n -1n) - 1n`<span class="blob-code-inner blob-code-marker"> (`9223372036854775807n`). Upon overflow, it will be negative (</span>`-9223372036854775808n`<span class="blob-code-inner blob-code-marker">).</span>
 
-littleEndian  
+littleEndian
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75123,7 +75123,7 @@ littleEndian
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
 
 ## Examples
@@ -75137,7 +75137,7 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setbigint64</span></a></td></tr></tbody></table>
@@ -75217,13 +75217,13 @@ The `setBigUint64()` method stores an unsigned 64-bit integer (unsigned long lon
 
 ### Parameters
 
-byteOffset  
+byteOffset
 The offset, in bytes, from the start of the view to store the data from.
 
-value  
+value
 The value to set as a [`BigInt`](../bigint). The highest possible value that fits in an unsigned 64-bit integer is `2n ** 64n - 1n`<span class="blob-code-inner blob-code-marker"> (</span>`18446744073709551615n`<span class="blob-code-inner blob-code-marker">). Upon overflow, it will be zero (</span>`0n`<span class="blob-code-inner blob-code-marker">).</span>
 
-littleEndian  
+littleEndian
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75232,7 +75232,7 @@ littleEndian
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
 
 ## Examples
@@ -75246,7 +75246,7 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setbiguint64</span></a></td></tr></tbody></table>
@@ -75327,7 +75327,7 @@ To instead change the day of the month for a given [`Date`](../date) instance ba
 
 ### Parameters
 
-`dayValue`  
+`dayValue`
 An integer representing the day of the month.
 
 ### Return value
@@ -75356,7 +75356,7 @@ If a negative number is provided for `dayValue`, the date will be set counting b
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Date.prototype.setDate' in that specification.</span></a></td></tr></tbody></table>
@@ -75435,13 +75435,13 @@ The `setFloat32()` method stores a signed 32-bit float (float) value at the spec
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75450,7 +75450,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -75464,7 +75464,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setfloat32</span></a></td></tr></tbody></table>
@@ -75543,13 +75543,13 @@ The `setFloat64()` method stores a signed 64-bit float (double) value at the spe
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 64-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75558,7 +75558,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -75572,7 +75572,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setfloat64</span></a></td></tr></tbody></table>
@@ -75652,13 +75652,13 @@ The `setFullYear()` method sets the full year for a specified date according to 
 
 ### Parameters
 
-`yearValue`  
+`yearValue`
 An integer specifying the numeric value of the year, for example, 1995.
 
-`monthValue`  
+`monthValue`
 Optional. An integer between 0 and 11 representing the months January through December.
 
-`dateValue`  
+`dateValue`
 Optional. An integer between 1 and 31 representing the day of the month. If you specify the `dateValue` parameter, you must also specify the `monthValue`.
 
 ### Return value
@@ -75680,7 +75680,7 @@ If a parameter you specify is outside of the expected range, `setFullYear()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setfullyear</span></a></td></tr></tbody></table>
@@ -75762,16 +75762,16 @@ The `setHours()` method sets the hours for a specified date according to local t
 
 ### Parameters
 
-`hoursValue`  
+`hoursValue`
 Ideally, an integer between 0 and 23, representing the hour. If a value greater than 23 is provided, the datetime will be incremented by the extra hours.
 
-`minutesValue`  
+`minutesValue`
 Optional. Ideally, an integer between 0 and 59, representing the minutes. If a value greater than 59 is provided, the datetime will be incremented by the extra minutes.
 
-`secondsValue`  
+`secondsValue`
 Optional. Ideally, an integer between 0 and 59, representing the seconds. If a value greater than 59 is provided, the datetime will be incremented by the extra seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
 
-`msValue`  
+`msValue`
 Optional. Ideally, a number between 0 and 999, representing the milliseconds. If a value greater than 999 is provided, the datetime will be incremented by the extra milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
@@ -75793,7 +75793,7 @@ If a parameter you specify is outside of the expected range, `setHours()` attemp
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.sethours">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.sethours">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.sethours</span></a></td></tr></tbody></table>
@@ -75872,13 +75872,13 @@ The `setInt16()` method stores a signed 16-bit integer (short) value at the spec
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75887,7 +75887,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -75901,7 +75901,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint16">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint16">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setint16</span></a></td></tr></tbody></table>
@@ -75980,13 +75980,13 @@ The `setInt32()` method stores a signed 32-bit integer (long) value at the speci
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -75995,7 +75995,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -76009,7 +76009,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setint32</span></a></td></tr></tbody></table>
@@ -76087,10 +76087,10 @@ The `setInt8()` method stores a signed 8-bit integer (byte) value at the specifi
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
 ### Return value
@@ -76099,7 +76099,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -76113,7 +76113,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setint8</span></a></td></tr></tbody></table>
@@ -76191,7 +76191,7 @@ The `setMilliseconds()` method sets the milliseconds for a specified date accord
 
 ### Parameters
 
-`millisecondsValue`  
+`millisecondsValue`
 A number between 0 and 999, representing the milliseconds.
 
 ### Return value
@@ -76211,7 +76211,7 @@ If you specify a number outside the expected range, the date information in the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmilliseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setmilliseconds</span></a></td></tr></tbody></table>
@@ -76291,13 +76291,13 @@ The `setMinutes()` method sets the minutes for a specified date according to loc
 
 ### Parameters
 
-`minutesValue`  
+`minutesValue`
 An integer between 0 and 59, representing the minutes.
 
-`secondsValue`  
+`secondsValue`
 Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
 
-`msValue`  
+`msValue`
 Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
@@ -76319,7 +76319,7 @@ If a parameter you specify is outside of the expected range, `setMinutes()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setminutes</span></a></td></tr></tbody></table>
@@ -76398,10 +76398,10 @@ The `setMonth()` method sets the month for a specified date according to the cur
 
 ### Parameters
 
-`monthValue`  
+`monthValue`
 A zero-based integer representing the month of the year offset from the start of the year. So, 0 represents January, 11 represents December, -1 represents December of the previous year, and 12 represents January of the following year.
 
-`dayValue`  
+`dayValue`
 Optional. An integer from 1 to 31, representing the day of the month.
 
 ### Return value
@@ -76430,7 +76430,7 @@ The current day of month will have an impact on the behavior of this method. Con
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setmonth</span></a></td></tr></tbody></table>
@@ -76512,10 +76512,10 @@ Because this feature is a part of the language, it is still the burden on engine
 
 ### Parameters
 
-`obj`  
+`obj`
 The object which is to have its prototype set.
 
-`prototype`  
+`prototype`
 The object's new prototype (an object or [`null`](../null)).
 
 ### Return value
@@ -76663,7 +76663,7 @@ Using the older [`Object.prototype.__proto__`](proto) property, we can easily de
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.setprototypeof</span></a></td></tr></tbody></table>
@@ -76731,8 +76731,8 @@ Samsung Internet
 -   [`Object.getPrototypeOf()`](getprototypeof)
 -   [`Object.prototype.__proto__`](proto)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf</a>
 
 # Date.prototype.setSeconds()
@@ -76746,10 +76746,10 @@ The `setSeconds()` method sets the seconds for a specified date according to loc
 
 ### Parameters
 
-`secondsValue`  
+`secondsValue`
 An integer between 0 and 59, representing the seconds.
 
-`msValue` <span class="badge inline optional">Optional</span>  
+`msValue` <span class="badge inline optional">Optional</span>
 Optional. A number between 0 and 999, representing the milliseconds.
 
 ### Return value
@@ -76771,7 +76771,7 @@ If a parameter you specify is outside of the expected range, `setSeconds()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setseconds</span></a></td></tr></tbody></table>
@@ -76849,7 +76849,7 @@ The `setTime()` method sets the [`Date`](../date) object to the time represented
 
 ### Parameters
 
-`timeValue`  
+`timeValue`
 An integer representing the number of milliseconds since 1 January 1970, 00:00:00 UTC.
 
 ### Return value
@@ -76870,7 +76870,7 @@ Use the `setTime()` method to help assign a date and time to another [`Date`](..
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Date.prototype.setTime' in that specification.</span></a></td></tr></tbody></table>
@@ -76949,13 +76949,13 @@ The `setUint16()` method stores an unsigned 16-bit integer (unsigned short) valu
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -76964,7 +76964,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -76978,7 +76978,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setuint16</span></a></td></tr></tbody></table>
@@ -77057,13 +77057,13 @@ The `setUint32()` method stores an unsigned 32-bit integer (unsigned long) value
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
-`littleEndian`  
+`littleEndian`
 <span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
 
 ### Return value
@@ -77072,7 +77072,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -77086,7 +77086,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setuint32</span></a></td></tr></tbody></table>
@@ -77164,10 +77164,10 @@ The `setUint8()` method stores an unsigned 8-bit integer (byte) value at the spe
 
 ### Parameters
 
-`byteOffset`  
+`byteOffset`
 The offset, in byte, from the start of the view where to store the data.
 
-`value`  
+`value`
 The value to set.
 
 ### Return value
@@ -77176,7 +77176,7 @@ The value to set.
 
 ### Errors thrown
 
-[`RangeError`](../rangeerror)  
+[`RangeError`](../rangeerror)
 Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
 
 ## Examples
@@ -77190,7 +77190,7 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-dataview.prototype.setuint8</span></a></td></tr></tbody></table>
@@ -77270,7 +77270,7 @@ To instead change the day of the month for a given [`Date`](../date) instance ba
 
 ### Parameters
 
-`dayValue`  
+`dayValue`
 An integer from 1 to 31, representing the day of the month.
 
 ### Return value
@@ -77290,7 +77290,7 @@ If a parameter you specify is outside of the expected range, `setUTCDate()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcdate">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcdate">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcdate</span></a></td></tr></tbody></table>
@@ -77370,13 +77370,13 @@ The `setUTCFullYear()` method sets the full year for a specified date according 
 
 ### Parameters
 
-`yearValue`  
+`yearValue`
 An integer specifying the numeric value of the year, for example, 1995.
 
-`monthValue`  
+`monthValue`
 Optional. An integer between 0 and 11 representing the months January through December.
 
-`dayValue`  
+`dayValue`
 Optional. An integer between 1 and 31 representing the day of the month. If you specify the `dayValue` parameter, you must also specify the `monthValue`.
 
 ### Return value
@@ -77398,7 +77398,7 @@ If a parameter you specify is outside of the expected range, `setUTCFullYear()` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcfullyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcfullyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcfullyear</span></a></td></tr></tbody></table>
@@ -77479,16 +77479,16 @@ The `setUTCHours()` method sets the hour for a specified date according to unive
 
 ### Parameters
 
-`hoursValue`  
+`hoursValue`
 An integer between 0 and 23, representing the hour.
 
-`minutesValue`  
+`minutesValue`
 Optional. An integer between 0 and 59, representing the minutes.
 
-`secondsValue`  
+`secondsValue`
 Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
 
-`msValue`  
+`msValue`
 Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
@@ -77510,7 +77510,7 @@ If a parameter you specify is outside of the expected range, `setUTCHours()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutchours</span></a></td></tr></tbody></table>
@@ -77588,7 +77588,7 @@ The `setUTCMilliseconds()` method sets the milliseconds for a specified date acc
 
 ### Parameters
 
-`millisecondsValue`  
+`millisecondsValue`
 A number between 0 and 999, representing the milliseconds.
 
 ### Return value
@@ -77608,7 +77608,7 @@ If a parameter you specify is outside of the expected range, `setUTCMilliseconds
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmilliseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcmilliseconds</span></a></td></tr></tbody></table>
@@ -77688,13 +77688,13 @@ The `setUTCMinutes()` method sets the minutes for a specified date according to 
 
 ### Parameters
 
-`minutesValue`  
+`minutesValue`
 An integer between 0 and 59, representing the minutes.
 
-`secondsValue`  
+`secondsValue`
 Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
 
-`msValue`  
+`msValue`
 Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
 
 ### Return value
@@ -77716,7 +77716,7 @@ If a parameter you specify is outside of the expected range, `setUTCMinutes()` a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcminutes</span></a></td></tr></tbody></table>
@@ -77795,10 +77795,10 @@ The `setUTCMonth()` method sets the month for a specified date according to univ
 
 ### Parameters
 
-`monthValue`  
+`monthValue`
 An integer between 0 and 11, representing the months January through December.
 
-`dayValue`  
+`dayValue`
 Optional. An integer from 1 to 31, representing the day of the month.
 
 ### Return value
@@ -77820,7 +77820,7 @@ If a parameter you specify is outside of the expected range, `setUTCMonth()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcmonth</span></a></td></tr></tbody></table>
@@ -77899,10 +77899,10 @@ The `setUTCSeconds()` method sets the seconds for a specified date according to 
 
 ### Parameters
 
-`secondsValue`  
+`secondsValue`
 An integer between 0 and 59, representing the seconds.
 
-`msValue`  
+`msValue`
 Optional. A number between 0 and 999, representing the milliseconds.
 
 ### Return value
@@ -77924,7 +77924,7 @@ If a parameter you specify is outside of the expected range, `setUTCSeconds()` a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcseconds">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcseconds">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setutcseconds</span></a></td></tr></tbody></table>
@@ -78006,7 +78006,7 @@ The `setYear()` method sets the year for a specified date according to local tim
 
 ### Parameters
 
-`yearValue`  
+`yearValue`
 An integer.
 
 ### Return value
@@ -78031,7 +78031,7 @@ The first two lines set the year to 1996. The third sets the year to 2000.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date.prototype.setyear</span></a></td></tr></tbody></table>
@@ -78164,17 +78164,17 @@ See also [Planned changes to shared memory](sharedarraybuffer/planned_changes) w
 
 ## Constructor
 
-[`SharedArrayBuffer()`](sharedarraybuffer/sharedarraybuffer)  
+[`SharedArrayBuffer()`](sharedarraybuffer/sharedarraybuffer)
 Creates a new `SharedArrayBuffer` object.
 
 ## Instance properties
 
-[`SharedArrayBuffer.prototype.byteLength`](sharedarraybuffer/bytelength)  
+[`SharedArrayBuffer.prototype.byteLength`](sharedarraybuffer/bytelength)
 The size, in bytes, of the array. This is established when the array is constructed and cannot be changed. **Read only.**
 
 ## Instance methods
 
-[`SharedArrayBuffer.prototype.slice(begin, end)`](sharedarraybuffer/slice)  
+[`SharedArrayBuffer.prototype.slice(begin, end)`](sharedarraybuffer/slice)
 Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive. If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
 
 ## Examples
@@ -78200,7 +78200,7 @@ Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArray
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-sharedarraybuffer-objects</span></a></td></tr></tbody></table>
@@ -78539,7 +78539,7 @@ The shift() method is often used in condition inside while loop. In the followin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.shift</span></a></td></tr></tbody></table>
@@ -78619,7 +78619,7 @@ The `Math.sign()` function returns either a **positive** or **negative** +/- 1, 
 
 ### Parameters
 
-`x`  
+`x`
 A number. If this argument is not a `number`, it is implicitly converted to one.
 
 ### Return value
@@ -78651,7 +78651,7 @@ Because `sign()` is a static method of `Math`, you always use it as `Math.sign()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sign</span></a></td></tr></tbody></table>
@@ -78721,8 +78721,8 @@ No
 -   [`Math.round()`](round)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a>
 
 # Math.sin()
@@ -78735,7 +78735,7 @@ The `Math.sin()` function returns the sine of a number.
 
 ### Parameters
 
-`x`  
+`x`
 A number (given in radians).
 
 ### Return value
@@ -78759,7 +78759,7 @@ Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sin</span></a></td></tr></tbody></table>
@@ -78829,8 +78829,8 @@ Samsung Internet
 -   [`Math.cos()`](cos)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin</a>
 
 # Math.sinh()
@@ -78845,7 +78845,7 @@ $$\\mathtt{\\operatorname{Math.sinh(x)}} = \\frac{e^{x} - e^{- x}}{2}$$
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -78880,7 +78880,7 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sinh</span></a></td></tr></tbody></table>
@@ -78949,8 +78949,8 @@ No
 -   [`Math.cosh()`](cosh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh</a>
 
 # Map.prototype.size
@@ -78974,7 +78974,7 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-map.prototype.size</span></a></td></tr></tbody></table>
@@ -79043,8 +79043,8 @@ From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.pro
 
 -   [`Map`](../map)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size</a>
 
 # Array.prototype.slice()
@@ -79059,7 +79059,7 @@ The `slice()` method returns a shallow copy of a portion of an array into a new 
 
 ### Parameters
 
-`start` <span class="badge inline optional">Optional</span>  
+`start` <span class="badge inline optional">Optional</span>
 Zero-based index at which to start extraction.
 
 A negative index can be used, indicating an offset from the end of the sequence. `slice(-2)` extracts the last two elements in the sequence.
@@ -79068,7 +79068,7 @@ If `start` is undefined, `slice` starts from the index `0`.
 
 If `start` is greater than the index range of the sequence, an empty array is returned.
 
-`end` <span class="badge inline optional">Optional</span>  
+`end` <span class="badge inline optional">Optional</span>
 Zero-based index _before_ which to end extraction. `slice` extracts up to but not including `end`. For example, `slice(1,4)` extracts the second element through the fourth element (elements indexed 1, 2, and 3).
 
 A negative index can be used, indicating an offset from the end of the sequence. `slice(2,-1)` extracts the third element through the second-to-last element in the sequence.
@@ -79160,7 +79160,7 @@ Anyway, it can be simplified using [`bind`](../function/bind).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.slice</span></a></td></tr></tbody></table>
@@ -79267,7 +79267,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.small</span></a></td></tr></tbody></table>
@@ -79333,8 +79333,8 @@ Samsung Internet
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.big()`](big)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small</a>
 
 # Array.prototype.some()
@@ -79360,19 +79360,19 @@ The `some()` method tests whether at least one element in the array passes the t
 
 ### Parameters
 
-`callback`  
+`callback`
 A function to test for each element, taking three arguments:
 
-`element`  
+`element`
 The current element being processed in the array.
 
-`index`<span class="badge inline optional">Optional</span>  
+`index`<span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array`<span class="badge inline optional">Optional</span>  
+`array`<span class="badge inline optional">Optional</span>
 The array `some()` was called upon.
 
-`thisArg`<span class="badge inline optional">Optional</span>  
+`thisArg`<span class="badge inline optional">Optional</span>
 A value to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -79495,7 +79495,7 @@ To mimic the function of the `includes()` method, this custom function returns `
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.some</span></a></td></tr></tbody></table>
@@ -79587,13 +79587,13 @@ The time and space complexity of the sort cannot be guaranteed as it depends on 
 
 ### Parameters
 
-`compareFunction` <span class="badge inline optional">Optional</span>  
+`compareFunction` <span class="badge inline optional">Optional</span>
 Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
 
-`firstEl`  
+`firstEl`
 The first element for comparison.
 
-`secondEl`  
+`secondEl`
 The second element for comparison.
 
 ### Return value
@@ -79788,7 +79788,7 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>
@@ -79922,7 +79922,7 @@ Starting with ECMAScript 5, the `source` property no longer returns an empty str
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.source</span></a></td></tr></tbody></table>
@@ -80065,8 +80065,8 @@ No
 
 -   [`RegExp.prototype.flags`](flags)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source</a>
 
 # Symbol.species
@@ -80109,7 +80109,7 @@ You might want to return [`Array`](../array) objects in your derived array class
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-symbol.species</span></a></td></tr></tbody></table>
@@ -80175,8 +80175,8 @@ No
 -   [`Map[@@species]`](../map/@@species)
 -   [`Set[@@species]`](../set/@@species)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species</a>
 
 # Array.prototype.splice()
@@ -80192,21 +80192,21 @@ The `splice()` method changes the contents of an array by removing or replacing 
 
 ### Parameters
 
-`start`  
+`start`
 The index at which to start changing the array.
 
 If greater than the length of the array, `start` will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many element as item\[n\*\] provided.
 
 If negative, it will begin that many elements from the end of the array. (In this case, the origin `-1`, meaning `-n` is the index of the `n`<sup>th</sup> last element, and is therefore equivalent to the index of `array.length - n`.) If `array.length + start` is less than `0`, it will begin from index `0`.
 
-`deleteCount` <span class="badge inline optional">Optional</span>  
+`deleteCount` <span class="badge inline optional">Optional</span>
 An integer indicating the number of elements in the array to remove from `start`.
 
 If `deleteCount` is omitted, or if its value is equal to or larger than `array.length - start` (that is, if it is equal to or greater than the number of elements left in the array, starting at `start`), then all the elements from `start` to the end of the array will be deleted.
 
 If `deleteCount` is `0` or negative, no elements are removed. In this case, you should specify at least one new element (see below).
 
-`item1, item2, ...` <span class="badge inline optional">Optional</span>  
+`item1, item2, ...` <span class="badge inline optional">Optional</span>
 The elements to add to the array, beginning from `start`. If you do not specify any elements, `splice()` will only remove elements from the array.
 
 ### Return value
@@ -80289,7 +80289,7 @@ If the specified number of elements to insert differs from the number of element
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.splice</span></a></td></tr></tbody></table>
@@ -80372,7 +80372,7 @@ The `split()` method divides a [`String`](../string) into an ordered list of sub
 
 ### Parameters
 
-`separator` <span class="badge inline optional">Optional</span>  
+`separator` <span class="badge inline optional">Optional</span>
 The pattern describing where each split should occur. The `separator` can be a simple string or it can be a [regular expression](../regexp).
 
 -   The simplest case is when `separator` is just a single character; this is used to split a delimited string. For example, a string containing tab separated values (TSV) could be parsed by passing a tab character as the separator, like this: `myString.split("\t")`.
@@ -80383,7 +80383,7 @@ The pattern describing where each split should occur. The `separator` can be a s
 
 **Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
 
-`limit` <span class="badge inline optional">Optional</span>  
+`limit` <span class="badge inline optional">Optional</span>
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
 
 -   The array may contain fewer entries than `limit` if the end of the string is reached before the limit is reached.
@@ -80514,7 +80514,7 @@ It doesn't work if the string contains grapheme clusters, even when using a unic
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.split</span></a></td></tr></tbody></table>
@@ -80583,8 +80583,8 @@ Samsung Internet
 -   [`Array.prototype.join()`](../array/join)
 -   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a>
 
 # Spread syntax (...)
@@ -80811,7 +80811,7 @@ When using spread syntax for function calls, be aware of the possibility of exce
 
 **No specification found**
 
-No specification data found for `javascript.operators.spread`.  
+No specification data found for `javascript.operators.spread`.
 [Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
 
 ## Browser compatibility
@@ -80927,8 +80927,8 @@ No
 -   [Rest parameters](../functions/rest_parameters) (also '`...`')
 -   [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`')
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a>
 
 # Math.sqrt()
@@ -80943,7 +80943,7 @@ $$\\forall x \\geq 0,\\mathtt{Math.sqrt(x)} = \\sqrt{x} = \\text{the\\ unique}\\
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
@@ -80970,7 +80970,7 @@ Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sqrt</span></a></td></tr></tbody></table>
@@ -81038,8 +81038,8 @@ Samsung Internet
 -   [`Math.log()`](log)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt</a>
 
 # Math.SQRT1_2
@@ -81080,7 +81080,7 @@ The following function returns 1 over the square root of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sqrt1_2</span></a></td></tr></tbody></table>
@@ -81146,8 +81146,8 @@ Samsung Internet
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2</a>
 
 # Math.SQRT2
@@ -81188,7 +81188,7 @@ The following function returns the square root of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
@@ -81254,8 +81254,8 @@ Samsung Internet
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2</a>
 
 # Error.prototype.stack
@@ -81433,10 +81433,10 @@ The `startsWith()` method determines whether a string begins with the characters
 
 ### Parameters
 
-`searchString`  
+`searchString`
 The characters to be searched for at the start of this string.
 
-`position` <span class="badge inline optional">Optional</span>  
+`position` <span class="badge inline optional">Optional</span>
 The position in this string at which to begin searching for `searchString`. Defaults to `0`.
 
 ### Return value
@@ -81475,7 +81475,7 @@ A more robust (fully ES2015 specification compliant), but less performant and co
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.startswith</span></a></td></tr></tbody></table>
@@ -81543,8 +81543,8 @@ No
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith</a>
 
 # static
@@ -81641,7 +81641,7 @@ Static members are not directly accessible using the [`this`](../operators/this)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
@@ -81799,7 +81799,7 @@ Examples of correct behavior:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-get-regexp.prototype.sticky</span></a></td></tr></tbody></table>
@@ -81923,8 +81923,8 @@ No
 -   [`RegExp.prototype.source`](source)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky</a>
 
 # Warning: unreachable code after return statement
@@ -82002,13 +82002,13 @@ The static ` Atomics``.store() ` method stores a given value at the given positi
 
 ### Parameters
 
-`typedArray`  
+`typedArray`
 An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
 
-`index`  
+`index`
 The position in the `typedArray` to store a `value` in.
 
-`value`  
+`value`
 The number to store.
 
 ### Return value
@@ -82031,7 +82031,7 @@ The value that has been stored.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.store">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.store">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-atomics.store</span></a></td></tr></tbody></table>
@@ -82188,7 +82188,7 @@ The most notable difference between this operator and the [equality](equality) (
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
@@ -82255,8 +82255,8 @@ Samsung Internet
 -   [Inequality operator](inequality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality</a>
 
 # Strict inequality (!==)
@@ -82319,7 +82319,7 @@ Like the strict equality operator, the strict inequality operator will always co
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
@@ -82386,8 +82386,8 @@ Samsung Internet
 -   [Inequality operator](inequality)
 -   [Strict equality operator](strict_equality)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality</a>
 
 # Strict mode
@@ -82846,7 +82846,7 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string.prototype.strike</span></a></td></tr></tbody></table>

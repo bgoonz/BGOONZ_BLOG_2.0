@@ -10,7 +10,7 @@ seo:
 template: docs
 ---
 
-<iframe src="https://replit.com/@bgoonz/interview-2#index.js"
+<iframe sandbox="allow-scripts"  src="https://replit.com/@bgoonz/interview-2#index.js"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="medium-articles"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"

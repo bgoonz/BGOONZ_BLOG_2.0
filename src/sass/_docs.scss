@@ -10,24 +10,24 @@
         margin-bottom: 3.625em;
 
         h1 {
-            font-size: 1.975em;
+            font-size: 1.875em;
         }
 
         h2 {
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         h3 {
-            font-size: 1.45em;
+            font-size: 1.25em;
         }
 
         h4 {
-            font-size: 1.35em;
+            font-size: 1.125em;
         }
 
         h5,
         h6 {
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         .hash-link {
@@ -88,11 +88,11 @@
         .post-title {
             font-size: 1.875em;
             margin: 0 0 1.25em;
-            padding: 0 2em;
+            padding: 0 1em;
         }
 
         .post-content {
-            padding: 0.975em;
+            padding: 0.775em;
             word-wrap: break-word;
         }
     }
@@ -157,14 +157,11 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0.7em;
+    margin: 0.5em;
     padding: 0;
 
     & > .docs-menu-item > a {
-        padding: 0.3em 0;
-        border-radius: 20px;
-
-        margin: auto;
+        padding: 0.1875em 0;
     }
 
     a {
@@ -187,7 +184,7 @@
     border-left: 1px solid $gray-300;
     color: $gray-600;
     display: none;
-    font-size: 1;
+    font-size: 0.9375em;
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
@@ -199,7 +196,7 @@
     margin-bottom: 0.625rem;
 
     &.has-children {
-        padding-right: 20px;
+        padding-right: 30px;
         position: relative;
 
         &.active {
@@ -279,7 +276,7 @@
     .docs-content {
         display: -ms-flexbox;
         display: flex;
-        padding-top: 4em;
+        padding-top: 3.75em;
         width: 100%;
     }
 

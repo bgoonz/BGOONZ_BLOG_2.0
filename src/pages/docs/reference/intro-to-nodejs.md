@@ -96,7 +96,7 @@ Many of those established over time as popular options. Here is a non-comprehens
 
 # Extended Version:
 
-<iframe src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
+<iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
      style="width:100%; height:400px; border:2; border-radius: 15px; overflow:auto;resize:both;"
      title="nodejs-examples"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
