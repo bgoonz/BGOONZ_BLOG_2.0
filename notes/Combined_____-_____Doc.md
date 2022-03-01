@@ -56722,4 +56722,37430 @@ The `padStart()` method pads the current string with another string (multiple ti
 The length of the resulting string once the current `str` has been padded. If the value is less than `str.length`, then `str` is returned as-is.
 
 `padString` <span class="badge inline optional">Optional</span>
-The string to pad the current `str` with. If `padString` is too long to stay within the `targetLength`, it will be truncated from 
+The string to pad the current `str` with. If `padString` is too long to stay within the `targetLength`, it will be truncated from the end. The default value is "" (`U+0020 'SPACE'`).
+
+### Return value
+
+A [`String`](../string) of the specified `targetLength` with `padString` applied from the start.
+
+## Examples
+
+### Basic examples
+
+    'abc'.padStart(10);         // "       abc"
+    'abc'.padStart(10, "foo");  // "foofoofabc"
+    'abc'.padStart(6,"123465"); // "123abc"
+    'abc'.padStart(8, "0");     // "00000abc"
+    'abc'.padStart(1);          // "abc"
+
+### Fixed width string number conversion
+
+    // Javascript version of: (unsigned)
+    //  printf "%0*d" width num
+    function leftFillNum(num, targetLength) {
+        return num.toString().padStart(targetLength, 0);
+    }
+
+    const num = 123;
+    console.log(leftFillNum(num, 5));
+    // expected output: "00123"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.padstart</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`padStart`
+
+57
+
+15
+
+48
+
+No
+
+44
+
+10
+
+57
+
+57
+
+48
+
+43
+
+10
+
+7.0
+
+## See also
+
+-   [`String.prototype.padEnd()`](padend)
+-   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart</a>
+
+# Date.parse()
+
+The `Date.parse()` method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or `NaN` if the string is unrecognized or, in some cases, contains illegal date values (e.g. 2015-02-31).
+
+It is not recommended to use `Date.parse` as until ES5, parsing of strings was entirely implementation dependent. There are still many differences in how different hosts parse date strings, therefore date strings should be manually parsed (a library can help if many different formats are to be accommodated).
+
+## Syntax
+
+Direct call:
+
+    Date.parse(dateString)
+
+Implicit call:
+
+    new Date(dateString)
+
+### Parameters
+
+`dateString`
+A string representing [a simplification of the ISO 8601 calendar date extended format](#date_time_string_format). (Other formats may be used, but results are implementation-dependent.)
+
+### Return value
+
+A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 UTC and the date obtained by parsing the given string representation of a date. If the argument doesn't represent a valid date, [`NaN`](../nan) is returned.
+
+## Description
+
+The `parse()` method takes a date string (such as "`2011-10-10T14:48:00`") and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+This function is useful for setting date values based on string values, for example in conjunction with the [`setTime()`](settime) method and the [`Date`](../date) object.
+
+### Date Time String Format
+
+The standard string representation of a date time string is a simplification of the ISO 8601 calendar date extended format. (See the section [Date Time String Format](https://tc39.github.io/ecma262/#sec-date-time-string-format) in the ECMAScript specification for more details.)
+
+For example, "`2011-10-10`" (_date-only_ form), "`2011-10-10T14:48:00`" (_date-time_ form), or "`2011-10-10T14:48:00.000+09:00`" (_date-time_ form with milliseconds and time zone) can be passed and will be parsed. When the time zone offset is absent, date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time.
+
+While time zone specifiers are used during date string parsing to interpret the argument, the value returned is always the number of milliseconds between January 1, 1970 00:00:00 UTC and the point in time represented by the argument or `NaN`.
+
+Because `parse()` is a static method of [`Date`](../date), it is called as `Date.parse()` rather than as a method of a [`Date`](../date) instance.
+
+### Fall-back to implementation-specific date formats
+
+**Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
+
+The ECMAScript specification states: If the String does not conform to the standard format the function may fall back to any implementation–specific heuristics or implementation–specific parsing algorithm. Unrecognizable strings or dates containing illegal element values in ISO formatted strings shall cause `Date.parse()` to return [`NaN`](../nan).
+
+However, invalid values in date strings not recognized as simplified ISO format as defined by ECMA-262 may or may not result in [`NaN`](../nan), depending on the browser and values provided, e.g.:
+
+    // Non-ISO string with invalid date values
+    new Date('23/25/2014');
+
+will be treated as a local date of 25 November, 2015 in Firefox 30 and an invalid date in Safari 7.
+
+However, if the string is recognized as an ISO format string and it contains invalid values, it will return [`NaN`](../nan) in all browsers compliant with ES5 and later:
+
+    // ISO string with invalid values
+    new Date('2014-25-23').toISOString();
+    // throws "RangeError: invalid date" in all ES5-compliant browsers
+
+SpiderMonkey's implementation-specific heuristic can be found in [`jsdate.cpp`](https://dxr.mozilla.org/mozilla-central/source/js/src/jsdate.cpp?rev=64553c483cd1#889). The string "`10 06 2014`" is an example of a non-conforming ISO format and thus falls back to a custom routine. See also this [rough outline](https://bugzilla.mozilla.org/show_bug.cgi?id=1023155#c6) on how the parsing works.
+
+    new Date('10 06 2014');
+
+will be treated as a local date of 6 October, 2014, and not 10 June, 2014.
+
+Other examples:
+
+    new Date('foo-bar 2014').toString();
+    // returns: "Invalid Date"
+
+    Date.parse('foo-bar 2014');
+    // returns: NaN
+
+### Differences in assumed time zone
+
+**Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
+
+Given a non-standard date string of "`March 7, 2014`", `parse()` assumes a local time zone, but given a simplification of the ISO 8601 calendar date extended format such as "`2014-03-07`", it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore [`Date`](../date) objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
+
+## Examples
+
+### Using `Date.parse()`
+
+The following calls all return `1546300800000`. The first according to ES5 will imply UTC time, and the others are specifying UTC timezone via the ISO date specification (`Z` and `+00:00`)
+
+    Date.parse("2019-01-01")
+    Date.parse("2019-01-01T00:00:00.000Z")
+    Date.parse("2019-01-01T00:00:00.000+00:00")
+
+The following call, which does not specify a time zone will be set to 2019-01-01 at 00:00:00 in the local timezone of the system.
+
+    Date.parse("2019-01-01T00:00:00")
+
+### Non-standard date strings
+
+**Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
+
+If `IPOdate` is an existing [`Date`](../date) object, it can be set to August 9, 1995 (local time) as follows:
+
+    IPOdate.setTime(Date.parse('Aug 9, 1995'));
+
+Some other examples of parsing non-standard date strings:
+
+    Date.parse('Aug 9, 1995');
+
+Returns `807937200000` in time zone GMT-0300, and other values in other time zones, since the string does not specify a time zone and is not ISO format, therefore the time zone defaults to local.
+
+    Date.parse('Wed, 09 Aug 1995 00:00:00 GMT');
+
+Returns `807926400000` no matter the local time zone as GMT (UTC) is provided.
+
+    Date.parse('Wed, 09 Aug 1995 00:00:00');
+
+Returns `807937200000` in time zone GMT-0300, and other values in other time zones, since there is no time zone specifier in the argument and it is not ISO format, so is treated as local.
+
+    Date.parse('Thu, 01 Jan 1970 00:00:00 GMT');
+
+Returns `0` no matter the local time zone as a time zone GMT (UTC) is provided.
+
+    Date.parse('Thu, 01 Jan 1970 00:00:00');
+
+Returns `14400000` in time zone GMT-0400, and other values in other time zones, since no time zone is provided and the string is not in ISO format, therefore the local time zone is used.
+
+    Date.parse('Thu, 01 Jan 1970 00:00:00 GMT-0400');
+
+Returns `14400000` no matter the local time zone as a time zone GMT (UTC) is provided.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.parse</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`parse`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`iso_8601`
+
+6
+
+12
+
+4
+
+9
+
+6
+
+5.1
+
+≤37
+
+18
+
+4
+
+10.1
+
+5.1
+
+1.0
+
+### Compatibility notes
+
+-   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like "`2017-04-16`" ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
+-   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`" is interpreted as January 1<sup>st</sup>, 2042.
+
+## See also
+
+-   [`Date.UTC()`](utc)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse</a>
+
+# parseFloat()
+
+The `parseFloat()` function parses an argument (converting it to a string first if needed) and returns a floating point number.
+
+## Syntax
+
+    parseFloat(string)
+
+### Parameters
+
+`string`
+The value to parse. If this argument is not a string, then it is converted to one using the `ToString` abstract operation. Leading [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) in this argument is ignored.
+
+### Return value
+
+A floating point number parsed from the given `string`.
+
+Or [`NaN`](nan) when the first non-whitespace character cannot be converted to a number.
+
+## Description
+
+`parseFloat` is a function property of the global object.
+
+-   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`–`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
+-   A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
+-   Leading and trailing spaces in the argument are ignored.
+-   If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).
+-   `parseFloat` can also parse and return [`Infinity`](infinity).
+-   `parseFloat` converts [`BigInt`](bigint) syntax to [`Numbers`](number), losing precision. This happens because the trailing `n` character is discarded.
+
+Consider [`Number(value)`](number) for stricter parsing, which converts to [`NaN`](nan) for arguments with invalid characters anywhere.
+
+`parseFloat` will parse non-string objects if they have a [`toString`](object/tostring) or [`valueOf`](object/valueof) method. The returned value is the same as if `parseFloat` had been called on the result of those methods.
+
+## Examples
+
+### `parseFloat` returning a number
+
+The following examples all return `3.14`:
+
+    parseFloat(3.14);
+    parseFloat('3.14');
+    parseFloat('  3.14  ');
+    parseFloat('314e-2');
+    parseFloat('0.0314E+2');
+    parseFloat('3.14some non-digit characters');
+    parseFloat({ toString: function() { return "3.14" } });
+
+### `parseFloat` returning `NaN`
+
+The following example returns `NaN`:
+
+    parseFloat('FF2');
+
+### `parseFloat` and `BigInt`
+
+The following examples both return `900719925474099300`, losing precision as the integer is too large to be represented as a float:
+
+    parseFloat(900719925474099267n);
+    parseFloat('900719925474099267n');
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'parseFloat' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`parseFloat`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`parseInt()`](parseint)
+-   [`Number.parseFloat()`](number/parsefloat)
+-   [`Number.parseInt()`](number/parseint)
+-   [`Number.toFixed()`](number/tofixed)
+-   [`isNaN()`](isnan)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat</a>
+
+# parseInt()
+
+The `parseInt()` function parses a string argument and returns an integer of the specified [radix](https://en.wikipedia.org/wiki/Radix) (the base in mathematical numeral systems).
+
+## Syntax
+
+    parseInt(string)
+    parseInt(string, radix)
+
+### Parameters
+
+`string`
+The value to parse. If this argument is not a string, then it is converted to one using the `ToString` abstract operation. Leading [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) in this argument is ignored.
+
+`radix` <span class="badge inline optional">Optional</span>
+An integer between `2` and `36` that represents the _radix_ (the base in mathematical numeral systems) of the `string`. Be careful—this does **_not_** default to `10`! If the radix value is not of the `Number` type it will be coerced to a `Number`.
+
+**Warning:** The [description below](#description) explains in more detail what happens when `radix` is not provided.
+
+### Return value
+
+An integer parsed from the given `string`.
+
+Or [`NaN`](nan) when
+
+-   the `radix` is smaller than `2` or bigger than `36`, or
+-   the first non-whitespace character cannot be converted to a number.
+
+## Description
+
+The `parseInt` function converts its first argument to a string, parses that string, then returns an integer or `NaN`.
+
+If not `NaN`, the return value will be the integer that is the first argument taken as a number in the specified `radix`. (For example, a `radix` of `10` converts from a decimal number, `8` converts from octal, `16` from hexadecimal, and so on.)
+
+For radices above `10`, letters of the English alphabet indicate numerals greater than `9`. For example, for hexadecimal numbers (base `16`), `A` through `F` are used.
+
+If `parseInt` encounters a character that is not a numeral in the specified `radix`, it ignores it and all succeeding characters and returns the integer value parsed up to that point. `parseInt` truncates numbers to integer values. Leading and trailing spaces are allowed.
+
+Because some numbers use the `e` character in their string representation (e.g. `6.022e23` for 6.022 × 10<sup>23</sup>), using `parseInt` to truncate numbers will produce unexpected results when used on very large or very small numbers. `parseInt` should _not_ be used as a substitute for [`Math.floor()`](math/floor).
+
+`parseInt` understands exactly two signs: `+` for positive, and `-` for negative (since ECMAScript 1). It is done as an initial step in the parsing after whitespace is removed. If no signs are found, the algorithm moves to the following step; otherwise, it removes the sign and runs the number-parsing on the rest of the string.
+
+A value passed as the radix argument is coerced to a Number (if necessary), then if the value is 0, `NaN` or `Infinity` (undefined is coerced to `NaN`), JavaScript assumes the following:
+
+1.  If the input `string` begins with "`0x`" or "`0X`" (a zero, followed by lowercase or uppercase X), `radix` is assumed to be `16` and the rest of the string is parsed as a hexadecimal number.
+2.  If the input `string` begins with any other value, the radix is `10` (decimal).
+
+Else if the radix value (coerced if necessary) is not in range \[2, 36\] (inclusive) `parseInt` returns `NaN`.
+
+If the first character cannot be converted to a number with the radix in use, `parseInt` returns `NaN`.
+
+For arithmetic purposes, the `NaN` value is not a number in any radix. You can call the [`isNaN`](isnan) function to determine if the result of `parseInt` is `NaN`. If `NaN` is passed on to arithmetic operations, the operation result will also be `NaN`.
+
+To convert a number to its string literal in a particular radix, use `thatNumber.toString(radix)`.
+
+**Warning:** `parseInt` converts a [`BigInt`](bigint) to a [`Number`](number) and loses precision in the process. This is because trailing non-numeric values, including "`n`", are discarded.
+
+### Octal interpretations with no radix
+
+Please note that following information doesn't apply to recent implementations as of 2021.
+
+Although discouraged by ECMAScript 3, many ECMAScript 3 implementations had interpreted a numeric string beginning with a leading `0` as octal. The following might have had an octal result, or it might have had a decimal result.
+
+    parseInt('0e0')  // 0
+    parseInt('08')   // 0, because '8' is not an octal digit.
+
+The ECMAScript 5 specification of the function `parseInt` no longer allows implementations to treat Strings beginning with a `0` character as octal values. Many implementations have adopted this behavior as of 2021.
+
+    parseInt('0e0')  // 0
+    parseInt('08')   // 8
+
+### A stricter parse function
+
+It is sometimes useful to have a stricter way to parse integers.
+
+Regular expressions can help:
+
+    function filterInt(value) {
+      if (/^[-+]?(\d+|Infinity)$/.test(value)) {
+        return Number(value)
+      } else {
+        return NaN
+      }
+    }
+
+    console.log(filterInt('421'))                // 421
+    console.log(filterInt('-421'))               // -421
+    console.log(filterInt('+421'))               // 421
+    console.log(filterInt('Infinity'))           // Infinity
+    console.log(filterInt('421e+0'))             // NaN
+    console.log(filterInt('421hop'))             // NaN
+    console.log(filterInt('hop1.61803398875'))   // NaN
+    console.log(filterInt('1.61803398875'))      // NaN
+
+## Examples
+
+### Using parseInt
+
+The following examples all return `15`:
+
+    parseInt('0xF', 16)
+    parseInt('F', 16)
+    parseInt('17', 8)
+    parseInt(021, 8)
+    parseInt('015', 10)    // but `parseInt(015, 8)` will return 13
+    parseInt(15.99, 10)
+    parseInt('15,123', 10)
+    parseInt('FXX123', 16)
+    parseInt('1111', 2)
+    parseInt('15 * 3', 10)
+    parseInt('15e2', 10)
+    parseInt('15px', 10)
+    parseInt('12', 13)
+
+The following examples all return `NaN`:
+
+    parseInt('Hello', 8)  // Not a number at all
+    parseInt('546', 2)    // Digits other than 0 or 1 are invalid for binary radix
+
+The following examples all return `-15`:
+
+    parseInt('-F', 16)
+    parseInt('-0F', 16)
+    parseInt('-0XF', 16)
+    parseInt(-15.1, 10)
+    parseInt('-17', 8)
+    parseInt('-15', 10)
+    parseInt('-1111', 2)
+    parseInt('-15e1', 10)
+    parseInt('-12', 13)
+
+The following examples all return `4`.
+
+    parseInt(4.7, 10)
+    parseInt(4.7 * 1e22, 10)        // Very large number becomes 4
+    parseInt(0.00000000000434, 10)  // Very small number becomes 4
+
+If the number is greater than 1e+21 (including) or less than 1e-7 (including), it will return `1`. (when using radix 10).
+
+    parseInt(0.0000001,10);
+    parseInt(0.000000123,10);
+    parseInt(1e-7,10);
+    parseInt(1000000000000000000000,10);
+    parseInt(123000000000000000000000,10);
+    parseInt(1e+21,10);
+
+The following example returns `224`:
+
+    parseInt('0e0', 16)
+
+[`BigInt`](bigint) values lose precision:
+
+    parseInt('900719925474099267n')
+    // 900719925474099300
+
+`parseInt` doesn't work with [numeric separators](../lexical_grammar#numeric_separators):
+
+    parseInt('123_456')
+    // 123
+
+The radix is coerced to a `Number`:
+
+    const obj = {
+      valueOf() {return 8}
+    };
+    parseInt('11', obj); // 9
+
+    obj.valueOf = function() {return 1};
+    parseInt('11', obj); // NaN
+
+    obj.valueOf = function() {return Infinity};
+    parseInt('11', obj); // 11
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-parseint-string-radix</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`parseInt`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`leading_zero_strings_as_decimal`
+
+23
+
+12
+
+21
+
+9
+
+15
+
+6
+
+4.4
+
+25
+
+21
+
+14
+
+6
+
+1.5
+
+## See also
+
+-   [`parseFloat()`](parsefloat)
+-   [`Number.parseFloat()`](number/parsefloat)
+-   [`Number.parseInt()`](number/parseint)
+-   [`isNaN()`](isnan)
+-   [`Number.toString()`](number/tostring)
+-   [`Object.valueOf`](object/valueof)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a>
+
+# Math.PI
+
+The `Math.PI` property represents the ratio of the circumference of a circle to its diameter, approximately 3.14159:
+
+` M``a``t``h``.``P``I ` = *π* ≈ 3.14159
+
+Property attributes of `Math.PI`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Description
+
+Because `PI` is a static property of `Math`, you always use it as `Math.PI`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.PI
+
+The following function uses `Math.PI` to calculate the circumference of a circle with a passed radius.
+
+    function calculateCircumference(radius) {
+      return Math.PI * (radius + radius);
+    }
+
+    calculateCircumference(1);  // 6.283185307179586
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pi">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.pi</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`PI`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math`](../math)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI</a>
+
+# Planned changes to shared memory
+
+There is standardization work ongoing that enables developers to create [`SharedArrayBuffer`](../sharedarraybuffer) objects again, but changes are needed in order to be use these across threads (i.e., `postMessage()` for `SharedArrayBuffer` objects throws by default). These changes provide further isolation between sites and help reduce the impact of attacks with high-resolution timers, which can be created with shared memory.
+
+**Note:** Starting with Firefox 79, the features described in this document are enabled by default.
+
+Chrome intends to implement similar restrictions.
+
+## New HTTP header bonanza
+
+As a baseline requirement, documents will need to be in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
+
+For top-level documents, two headers will need to be set:
+
+-   [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
+-   [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
+
+With these two headers set, `postMessage()` will no longer throw for `SharedArrayBuffer` objects and shared memory across threads is therefore available.
+
+Nested documents and dedicated workers will need to set the [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) header as well with the same value. No further changes are needed for same-origin nested documents and subresources. Same-site (but cross-origin) nested documents and subresources will need to set the [`Cross-Origin-Resource-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy) header with `same-site` as value. And their cross-origin (and cross-site) counterparts need to set the same header with `cross-origin` as value. Note that setting the [`Cross-Origin-Resource-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy) header to any other value than `same-origin` opens up the resource to potential attacks, such as [Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>).
+
+Note that the [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) header limits your ability to retain a reference to popups. Direct access between two top-level window contexts will essentially only work if they are same-origin and carry the same two headers with the same two values.
+
+## API changes
+
+As a result of this newly required environment, there are a couple API implications:
+
+-   The `Atomics` object is always available.
+-   `SharedArrayBuffer` objects are in principle always available, but unfortunately the constructor on the global object is hidden, unless the two headers mentioned above are set, for compatibility with web content. There is hope that this restriction can be removed in the future. `WebAssembly.Memory` can still be used to get an instance.
+-   Unless the two headers mentioned above are set, the various `postMessage()` APIs will throw for `SharedArrayBuffer` objects. If they are set, `postMessage()` on `Window` objects and dedicated workers will function and allow for memory sharing.
+-   To avoid having to check whether `postMessage()` throws, [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated) is being standardized (a getter that returns a boolean; `true` if the headers are set), available in window and worker contexts.
+
+## WebAssembly Shared Memory
+
+The WebAssembly [Threads](https://github.com/WebAssembly/threads/blob/master/proposals/threads/Overview.md) proposal allows `WebAssembly.Memory` objects to be created with a new `shared` constructor flag. When this flag is set to `true`, the constructed `Memory` object can be shared between workers via `postMessage()`, just like `SharedArrayBuffer`, and the backing `buffer` of the `Memory` object is a `SharedArrayBuffer`. Therefore, the requirements listed above for sharing a `SharedArrayBuffer` between workers also apply to sharing a `WebAssembly.Memory`.
+
+The WebAssembly Threads proposal also defines a new set of [atomic](https://github.com/WebAssembly/threads/blob/master/proposals/threads/Overview.md#atomic-memory-accesses) instructions. Just as `SharedArrayBuffer` and its methods are unconditionally enabled (and only sharing between threads is gated on the new headers), the WebAssembly atomic instructions are also unconditionally allowed.
+
+## Further reading
+
+-   [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit).
+-   `Cross-Origin-Opener-Policy`: [whatwg/html issue \#3740](https://github.com/whatwg/html/issues/3740), [draft specification](https://gist.github.com/annevk/6f2dd8c79c77123f39797f6bdac43f3e).
+-   `Cross-Origin-Embedder-Policy`: [whatwg/html issue \#4175](https://github.com/whatwg/html/issues/4175), [draft specification](https://mikewest.github.io/corpp/).
+-   `Cross-Origin-Resource-Policy`: [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header), new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
+-   `postMessage()` changes and [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated): [whatwg/html issue \#4732](https://github.com/whatwg/html/issues/4732), [whatwg/html issue \#4872](https://github.com/whatwg/html/issues/4872), [draft specification](https://github.com/whatwg/html/pull/4734).
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes</a>
+
+# Intl.PluralRules() constructor
+
+The `Intl.PluralRules()` constructor creates [`Intl.PluralRules`](../pluralrules) objects.
+
+## Syntax
+
+    new Intl.PluralRules()
+    new Intl.PluralRules(locales)
+    new Intl.PluralRules(locales, options)
+
+### Parameters
+
+`locales` <span class="badge inline optional">Optional</span>
+A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page.
+
+`options` <span class="badge inline optional">Optional</span>
+An object with some or all of the following properties:
+
+`localeMatcher`
+The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+
+`type`
+The type to use. Possible values are:
+
+-   "`cardinal`" for cardinal numbers (refering to the quantity of things). This is the default value.
+-   "`ordinal`" for ordinal number (refering to the ordering or ranking of things, e.g. "1st", "2nd", "3rd" in English).
+
+The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
+
+`minimumIntegerDigits`
+The minimum number of integer digits to use. Possible values are from 1 to 21; the default is 1.
+
+`minimumFractionDigits`
+The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0; the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information).
+
+`maximumFractionDigits`
+The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of `minimumFractionDigits` and 3; the default for currency formatting is the larger of `minimumFractionDigits` and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html) (2 if the list doesn't provide that information); the default for percent formatting is the larger of `minimumFractionDigits` and 0.
+
+`minimumSignificantDigits`
+The minimum number of significant digits to use. Possible values are from 1 to 21; the default is 1.
+
+`maximumSignificantDigits`
+The maximum number of significant digits to use. Possible values are from 1 to 21; the default is 21.
+
+## Examples
+
+### Basic usage
+
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. "dog" and "dogs".
+
+    var pr = new Intl.PluralRules();
+
+    pr.select(0);
+    // → 'other' if in US English locale
+
+    pr.select(1);
+    // → 'one' if in US English locale
+
+    pr.select(2);
+    // → 'other' if in US English locale
+
+### Using options
+
+The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. "1st", "2nd", "3rd", "4th", "42nd" and so forth.
+
+    var pr = new Intl.PluralRules('en-US', { type: 'ordinal' });
+
+    pr.select(0);
+    // → 'other'
+    pr.select(1);
+    // → 'one'
+    pr.select(2);
+    // → 'two'
+    pr.select(3);
+    // → 'few'
+    pr.select(4);
+    // → 'other'
+    pr.select(42);
+    // → 'two'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-intl-pluralrules-constructor</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`PluralRules`
+
+63
+
+18
+
+58
+
+No
+
+50
+
+13
+
+63
+
+63
+
+58
+
+46
+
+13
+
+8.0
+
+## See also
+
+-   [`Intl.PluralRules`](../pluralrules)
+-   [`Intl`](../../intl)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules</a>
+
+# Array.prototype.pop()
+
+The `pop()` method removes the **last** element from an array and returns that element. This method changes the length of the array.
+
+## Syntax
+
+    pop()
+
+### Return value
+
+The removed element from the array; [`undefined`](../undefined) if the array is empty.
+
+## Description
+
+The `pop` method removes the last element from an array and returns that value to the caller.
+
+`pop` is intentionally generic; this method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.
+
+If you call `pop()` on an empty array, it returns [`undefined`](../undefined).
+
+[`Array.prototype.shift()`](shift) has similar behavior to `pop`, but applied to the first element in an array.
+
+## Examples
+
+### Removing the last element of an array
+
+The following code creates the `myFish` array containing four elements, then removes its last element.
+
+    var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+
+    var popped = myFish.pop();
+
+    console.log(myFish); // ['angel', 'clown', 'mandarin' ]
+
+    console.log(popped); // 'sturgeon'
+
+### Using apply( ) or call ( ) on array-like objects
+
+The following code creates the `myFish` array-like object containing four elements and a length parameter, then removes its last element and decrements the length parameter.
+
+    var myFish = {0:'angel', 1:'clown', 2:'mandarin', 3:'sturgeon', length: 4};
+
+    var popped = Array.prototype.pop.call(myFish); //same syntax for using apply( )
+
+    console.log(myFish); // {0:'angel', 1:'clown', 2:'mandarin', length: 3}
+
+    console.log(popped); // 'sturgeon'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Array.prototype.pop' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`pop`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.push()`](push)
+-   [`Array.prototype.shift()`](shift)
+-   [`Array.prototype.unshift()`](unshift)
+-   [`Array.prototype.concat()`](concat)
+-   [`Array.prototype.splice()`](splice)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop</a>
+
+# Number.POSITIVE_INFINITY
+
+The `Number.POSITIVE_INFINITY` property represents the positive Infinity value.
+
+Property attributes of `Number.POSITIVE_INFINITY`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Description
+
+The value of `Number.POSITIVE_INFINITY` is the same as the value of the global object's [`Infinity`](../infinity) property.
+
+This value behaves slightly differently than mathematical infinity:
+
+-   Any positive value, including `POSITIVE_INFINITY`, multiplied by `POSITIVE_INFINITY` is `POSITIVE_INFINITY`.
+-   Any negative value, including [`NEGATIVE_INFINITY`](negative_infinity), multiplied by `POSITIVE_INFINITY` is [`NEGATIVE_INFINITY`](negative_infinity).
+-   Any positive number divided by `POSITIVE_INFINITY` is positive Zero.
+-   Any negative number divided by `POSITIVE_INFINITY` is negative Zero.
+-   Zero multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
+-   [`NaN`](../nan) multiplied by `POSITIVE_INFINITY` is [`NaN`](../nan).
+-   `POSITIVE_INFINITY`, divided by any negative value except [`NEGATIVE_INFINITY`](negative_infinity), is [`NEGATIVE_INFINITY`](negative_infinity).
+-   `POSITIVE_INFINITY`, divided by any positive value except `POSITIVE_INFINITY`, is `POSITIVE_INFINITY`.
+-   `POSITIVE_INFINITY`, divided by either [`NEGATIVE_INFINITY`](negative_infinity) or `POSITIVE_INFINITY`, is [`NaN`](../nan).
+
+You might use the `Number.POSITIVE_INFINITY` property to indicate an error condition that returns a finite number in case of success. Note, however, that [`isFinite`](../isfinite) would be more appropriate in such a case.
+
+Because `POSITIVE_INFINITY` is a static property of [`Number`](../number), you always use it as `Number.POSITIVE_INFINITY`, rather than as a property of a [`Number`](../number) object you created.
+
+## Examples
+
+### Using POSITIVE_INFINITY
+
+In the following example, the variable `bigNumber` is assigned a value that is larger than the maximum value. When the [`if`](../../statements/if...else) statement executes, `bigNumber` has the value `Infinity`, so `bigNumber` is set to a more manageable value before continuing.
+
+    var bigNumber = Number.MAX_VALUE * 2;
+
+    if (bigNumber == Number.POSITIVE_INFINITY) {
+      bigNumber = returnFinite();
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-number.positive_infinity</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`POSITIVE_INFINITY`
+
+1
+
+12
+
+1
+
+4
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Number.NEGATIVE_INFINITY`](negative_infinity)
+-   [`Number.isFinite()`](isfinite)
+-   [`Infinity`](../infinity)
+-   [`isFinite()`](../isfinite)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY</a>
+
+# Math.pow()
+
+The `Math.pow()` function returns the `base` to the `exponent` power, as in `baseexponent`.
+
+## Syntax
+
+    Math.pow(base, exponent)
+
+### Parameters
+
+`base`
+The base number.
+
+`exponent`
+The exponent used to raise the `base`.
+
+### Return value
+
+A number representing the given base taken to the power of the given exponent.
+
+## Description
+
+The `Math.pow()` function returns the `base` to the `exponent` power, as in `baseexponent`, the `base` and the `exponent` are in decimal numeral system.
+
+Because `pow()` is a static method of `Math`, use it as `Math.pow()`, rather than as a method of a `Math` object you created. (`Math` has no constructor.) If the base is negative and the exponent is not an integer, the result is NaN.
+
+## Examples
+
+### Using Math.pow()
+
+    // simple
+    Math.pow(7, 2);    // 49
+    Math.pow(7, 3);    // 343
+    Math.pow(2, 10);   // 1024
+    // fractional exponents
+    Math.pow(4, 0.5);  // 2 (square root of 4)
+    Math.pow(8, 1/3);  // 2 (cube root of 8)
+    Math.pow(2, 0.5);  // 1.4142135623730951 (square root of 2)
+    Math.pow(2, 1/3);  // 1.2599210498948732 (cube root of 2)
+    // signed exponents
+    Math.pow(7, -2);   // 0.02040816326530612 (1/49)
+    Math.pow(8, -1/3); // 0.5
+    // signed bases
+    Math.pow(-7, 2);   // 49 (squares are positive)
+    Math.pow(-7, 3);   // -343 (cubes can be negative)
+    Math.pow(-7, 0.5); // NaN (negative numbers don't have a real square root)
+    // due to "even" and "odd" roots laying close to each other,
+    // and limits in the floating number precision,
+    // negative bases with fractional exponents always return NaN
+    Math.pow(-7, 1/3); // NaN
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.pow</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`pow`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.cbrt()`](cbrt)
+-   [`Math.exp()`](exp)
+-   [`Math.log()`](log)
+-   [`Math.sqrt()`](sqrt)
+-   [Exponentiation operator](../../operators/exponentiation)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow</a>
+
+# RangeError: precision is out of range
+
+The JavaScript exception "precision is out of range" occurs when a number that's outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
+
+## Message
+
+    RangeError: The number of fractional digits is out of range (Edge)
+    RangeError: The precision is out of range (Edge)
+    RangeError: precision {0} out of range (Firefox)
+    RangeError: toExponential() argument must be between 0 and 20 (Chrome)
+    RangeError: toFixed() digits argument must be between 0 and 20 (Chrome)
+    RangeError: toPrecision() argument must be between 1 and 21 (Chrome)
+
+## Error type
+
+[`RangeError`](../global_objects/rangeerror)
+
+## What went wrong?
+
+There was an out of range precision argument in one of these methods:
+
+-   [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
+-   [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
+-   [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
+
+The allowed range for these methods is usually between 0 and 20 (or 21). However, the ECMAScript specification allows to extend this range.
+
+<table><thead><tr class="header"><th>Method</th><th>Firefox (SpiderMonkey)</th><th>Chrome, Opera (V8)</th></tr></thead><tbody><tr class="odd"><td><a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a></td><td>0 to 100</td><td>0 to 20</td></tr><tr class="even"><td><a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a></td><td>-20 to 100</td><td>0 to 20</td></tr><tr class="odd"><td><a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a></td><td>1 to 100</td><td>1 to 21</td></tr></tbody></table>
+
+## Examples
+
+### Invalid cases
+
+    77.1234.toExponential(-1);  // RangeError
+    77.1234.toExponential(101); // RangeError
+
+    2.34.toFixed(-100);         // RangeError
+    2.34.toFixed(1001);         // RangeError
+
+    1234.5.toPrecision(-1);     // RangeError
+    1234.5.toPrecision(101);    // RangeError
+
+### Valid cases
+
+    77.1234.toExponential(4); // 7.7123e+1
+    77.1234.toExponential(2); // 7.71e+1
+
+    2.34.toFixed(1); // 2.3
+    2.35.toFixed(1); // 2.4 (note that it rounds up in this case)
+
+    5.123456.toPrecision(5); // 5.1235
+    5.123456.toPrecision(2); // 5.1
+    5.123456.toPrecision(1); // 5
+
+## See also
+
+-   [`Number.prototype.toExponential()`](../global_objects/number/toexponential)
+-   [`Number.prototype.toFixed()`](../global_objects/number/tofixed)
+-   [`Number.prototype.toPrecision()`](../global_objects/number/toprecision)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Precision_range</a>
+
+# Object.preventExtensions()
+
+The `Object.preventExtensions()` method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).
+
+## Syntax
+
+    Object.preventExtensions(obj)
+
+### Parameters
+
+`obj`
+The object which should be made non-extensible.
+
+### Return value
+
+The object being made non-extensible.
+
+## Description
+
+An object is extensible if new properties can be added to it. `Object.preventExtensions()` marks an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible. Note that the properties of a non-extensible object, in general, may still be _deleted_. Attempting to add new properties to a non-extensible object will fail, either silently or by throwing a [`TypeError`](../typeerror) (most commonly, but not exclusively, when in [strict mode](../../strict_mode)).
+
+`Object.preventExtensions()` only prevents addition of own properties. Properties can still be added to the object prototype.
+
+This method makes the `[[prototype]]` of the target immutable; any `[[prototype]]` re-assignment will throw a `TypeError`. This behavior is specific to the internal `[[prototype]]` property, other properties of the target object will remain mutable.
+
+There is no way to make an object extensible again once it has been made non-extensible.
+
+## Examples
+
+### Using Object.preventExtensions
+
+    // Object.preventExtensions returns the object
+    // being made non-extensible.
+    var obj = {};
+    var obj2 = Object.preventExtensions(obj);
+    obj === obj2; // true
+
+    // Objects are extensible by default.
+    var empty = {};
+    Object.isExtensible(empty); // === true
+
+    // ...but that can be changed.
+    Object.preventExtensions(empty);
+    Object.isExtensible(empty); // === false
+
+    // Object.defineProperty throws when adding
+    // a new property to a non-extensible object.
+    var nonExtensible = { removable: true };
+    Object.preventExtensions(nonExtensible);
+    Object.defineProperty(nonExtensible, 'new', {
+      value: 8675309
+    }); // throws a TypeError
+
+    // In strict mode, attempting to add new properties
+    // to a non-extensible object throws a TypeError.
+    function fail() {
+      'use strict';
+      // throws a TypeError
+      nonExtensible.newProperty = 'FAIL';
+    }
+    fail();
+
+A non-extensible object's prototype is immutable:
+
+    var fixed = Object.preventExtensions({});
+    // throws a 'TypeError'.
+    fixed.__proto__ = { oh: 'hai' };
+
+### Non-object coercion
+
+In ES5, if the argument to this method is not an object (a primitive), then it will cause a [`TypeError`](../typeerror). In ES2015, a non-object argument will be treated as if it was a non-extensible ordinary object, return it.
+
+    Object.preventExtensions(1);
+    // TypeError: 1 is not an object (ES5 code)
+
+    Object.preventExtensions(1);
+    // 1                             (ES2015 code)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-object.preventextensions</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`preventExtensions`
+
+6
+
+12
+
+4
+
+9
+
+12
+
+5.1
+
+1
+
+18
+
+4
+
+12
+
+6
+
+1.0
+
+`ES2015_behavior`
+
+44
+
+12
+
+35
+
+11
+
+31
+
+9
+
+44
+
+44
+
+35
+
+32
+
+9
+
+4.0
+
+## See also
+
+-   [`Object.isExtensible()`](isextensible)
+-   [`Object.seal()`](seal)
+-   [`Object.isSealed()`](issealed)
+-   [`Object.freeze()`](freeze)
+-   [`Object.isFrozen()`](isfrozen)
+-   [`Reflect.preventExtensions()`](../reflect/preventextensions)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions</a>
+
+# Private class fields
+
+Class properties are public by default and can be examined or modified outside the class. There is however [a stage 3 proposal](https://github.com/tc39/proposal-private-methods) to allow defining private class fields using a hash `#` prefix.
+
+## Syntax
+
+    class ClassWithPrivateField {
+      #privateField
+    }
+
+    class ClassWithPrivateMethod {
+      #privateMethod() {
+        return 'hello world'
+      }
+    }
+
+    class ClassWithPrivateStaticField {
+      static #PRIVATE_STATIC_FIELD
+    }
+
+## Examples
+
+### Private static fields
+
+Private fields are accessible on the class constructor from inside the class declaration itself.
+
+The limitation of static variables being called by only static methods still holds.
+
+    class ClassWithPrivateStaticField {
+      static #PRIVATE_STATIC_FIELD
+
+      static publicStaticMethod() {
+        ClassWithPrivateStaticField.#PRIVATE_STATIC_FIELD = 42
+        return ClassWithPrivateStaticField.#PRIVATE_STATIC_FIELD
+      }
+    }
+
+    console.assert(ClassWithPrivateStaticField.publicStaticMethod() === 42)
+
+Private static fields are added to the class constructor at class evaluation time.
+
+There is a provenance restriction on private static fields. Only the class which defines the private static field can access the field.
+
+This can lead to unexpected behavior when using `this`.
+
+    class BaseClassWithPrivateStaticField {
+      static #PRIVATE_STATIC_FIELD
+
+      static basePublicStaticMethod() {
+        this.#PRIVATE_STATIC_FIELD = 42
+        return this.#PRIVATE_STATIC_FIELD
+      }
+    }
+
+    class SubClass extends BaseClassWithPrivateStaticField { }
+
+    let error = null
+
+    try {
+      SubClass.basePublicStaticMethod()
+    } catch(e) { error = e}
+
+    console.assert(error instanceof TypeError)
+
+### Private instance fields
+
+Private instance fields are declared with **\# names** (pronounced "_hash names_"), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
+
+The encapsulation is enforced by the language. It is a syntax error to refer to `#` names from out of scope.
+
+    class ClassWithPrivateField {
+      #privateField
+
+      constructor() {
+        this.#privateField = 42
+        this.#randomField = 444 // Syntax error
+      }
+    }
+
+    const instance = new ClassWithPrivateField()
+    instance.#privateField === 42 // Syntax error
+
+### Private methods
+
+#### Private static methods
+
+Like their public equivalent, private static methods are called on the class itself, not instances of the class. Like private static fields, they are only accessible from inside the class declaration.
+
+Private static methods may be generator, async, and async generator functions.
+
+    class ClassWithPrivateStaticMethod {
+      static #privateStaticMethod() {
+        return 42
+      }
+
+      static publicStaticMethod1() {
+        return ClassWithPrivateStaticMethod.#privateStaticMethod();
+      }
+
+      static publicStaticMethod2() {
+        return this.#privateStaticMethod();
+      }
+    }
+
+    console.assert(ClassWithPrivateStaticMethod.publicStaticMethod1() === 42);
+    console.assert(ClassWithPrivateStaticMethod.publicStaticMethod2() === 42);
+
+This can lead to unexpected behavior when using `this`. In the following example `this` refers to the `Derived` class (not the `Base` class) when we try to call `Derived.publicStaticMethod2()`, and thus exhibits the same "provenance restriction" as mentioned above:
+
+    class Base {
+      static #privateStaticMethod() {
+        return 42;
+      }
+      static publicStaticMethod1() {
+        return Base.#privateStaticMethod();
+      }
+      static publicStaticMethod2() {
+        return this.#privateStaticMethod();
+      }
+    }
+
+    class Derived extends Base {}
+
+    console.log(Derived.publicStaticMethod1()); // 42
+    console.log(Derived.publicStaticMethod2()); // TypeError
+
+#### Private instance methods
+
+Private instance methods are methods available on class instances whose access is restricted in the same manner as private instance fields.
+
+    class ClassWithPrivateMethod {
+      #privateMethod() {
+        return 'hello world'
+      }
+
+      getPrivateMessage() {
+        return this.#privateMethod()
+      }
+    }
+
+    const instance = new ClassWithPrivateMethod()
+    console.log(instance.getPrivateMessage())
+    // expected output: "hello world"
+
+Private instance methods may be generator, async, or async generator functions. Private getters and setters are also possible:
+
+    class ClassWithPrivateAccessor {
+      #message
+
+      get #decoratedMessage() {
+        return `✨${this.#message}✨`
+      }
+      set #decoratedMessage(msg) {
+        this.#message = msg
+      }
+
+      constructor() {
+        this.#decoratedMessage = 'hello world'
+        console.log(this.#decoratedMessage)
+      }
+    }
+
+    new ClassWithPrivateAccessor();
+    // expected output: "✨hello world✨"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal)
+<br/>
+
+<span class="small">#prod-PrivateIdentifier</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Private_class_fields`
+
+74
+
+79
+
+No
+
+Available only in nightly builds. See [bug 1562054](https://bugzil.la/1562054).
+
+No
+
+62
+
+14.1
+
+74
+
+74
+
+No
+
+Available only in nightly builds. See [bug 1562054](https://bugzil.la/1562054).
+
+53
+
+14.5
+
+No
+
+## See also
+
+-   [Public class fields](public_class_fields)
+-   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
+-   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
+-   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a>
+
+# Promise
+
+The `Promise` object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+**Note:** This feature is available in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API).
+
+To learn about the way promises work and how you can use them, we advise you to read [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) first.
+
+## Description
+
+A `Promise` is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a _promise_ to supply the value at some point in the future.
+
+A `Promise` is in one of these states:
+
+-   _pending_: initial state, neither fulfilled nor rejected.
+-   _fulfilled_: meaning that the operation was completed successfully.
+-   _rejected_: meaning that the operation failed.
+
+A pending promise can either be _fulfilled_ with a value or _rejected_ with a reason (error). When either of these options happens, the associated handlers queued up by a promise's `then` method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+
+As the `Promise.prototype.then()` and `Promise.prototype.catch()` methods return promises, they can be chained.
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyEAAAEpCAMAAACz/N2FAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAJkUExURf////3//u/u7v///ikmdM73/xAQEAAAAPjSewsKCv//+dP4/xkZGSAgH6ioqPbHafD+/y0sLHx8e/j4+Nj6/wYEBfLy8icmJvv7+/fPd/X//0FCQoKCgtPR0zc3OOTk5VVVVf/98rS0tLm5uazt/nZ2dhQUFPb39s3NzYiIiCIthf/wsyUoejIxMpaWltvb29bX1ygOAqSkpA9ErI2Nja+urwEDEltbW0ZGRjw8PHwxDnFxcbzy/0ESMufn58jIx0tKSqDn/WpqauCVNOvr60USPr6+vmBgX/bMcf/zwvn//5ubm97e3xdUuf/76t36/05OTuzr1sPDw/nairTw/xEvjOLg4GVlZQAAB1FRUScPO+b8/+v+/6CfodiHMKZgI//63//xu8j1//zgli6J2c51I5DZ+G3K9oO/4So7gCMDEv/2zQUNLf/41lwXHTmX4fzloCESUEYjDJGRkeunPNiiZFW58HC664DV+f7qqsF9M+reuTFioyZ40DkXCs739jEZVQQWOnGx2pE1IM2NUw4bZKV8R8dpH+azb0MdUg44kxthwb5YFz1/wYg3DYpHGwMTUubz5eysRS4iZq/h+VMaOvbqyQEHQ6Lc9idZlVWW1em+f7jY5G0jLPC3UrN2MqhBEy4NLPXfvRcwWfXarBc3aR9Bb2Oq1hAldR5syJ+/5Fg7GH6SyOzJkw4yf0YSIlkQBEao6N26obrn+05+rcbh8tn39uTl1WCIiqK4ccXq/MKYasCmqkxBh2F/bnw+WIlfOChBopB2S0SNyLC002pakM/165yjvEVmV7C0komhfJaxz2mFEBIAABnBSURBVHja7J35XxNJGocraZKQDkiQ0wjIHZBLRFEiAQEVOQS5FEEhiOAFirqiMiog4wEoILreo3jfB473zDjuzoyr81dtdXcCBBLIhBiS+H0+/JDqVHdjpx7e961CihAAAAAAAAAAAAAAAAAAAAAAAAAAAHsjszN44sDJDHHp2wEAQwCAIQDAEABgCAwBMASGABgCQwAMgSEAwBAAYAgAMAQAGAIADAEAhgDwXRkStzLSa74vDAEwxKwhF/5UwhDwvRgS9mOy7HYjaa6Vp55Rn96Szzb0ztl+IrnzgIjdfzT1sO9oF779tk828H6+L/d6+8/EXejJn7wRhgBXNKSsaltJ7RrV4INrT7UHB3uKmzWt7jvOnG2rKKbv/KDZkj/SRWgLWVbZzWMltSnV+p7CyTAEuKIhRfPydW0pysHjj1RiZcvKrLKOdPc95WSOW3tDr4q58yjf0EUttHlD3tSsUZL6qiyhp0Q4GYYAVzREd8I75HGKsuiXvU2vfHVDwzW9Snc3CXF3az/NxY/RLmqhLRhy8kg+qdM2Cj0lwskwBLigIUzOsw9kMEV56zVzS7NFlHNZ00r0hpzsVZGnT1SGLmqhPSaGaLP0huhPhiHA9Qxhc3p8b2lSNtY8e/2DZreoLHkgXW+IZE7Vtgt9NG4YugjtOG3WmDpEcEl/MgwBLphl1WlSb/99dDiv34+buNqpocFBb0jY/uTUy4rRLkK7uf/imLksoaf+ZBgCXNAQPfoAoOtqHZOBmewyetz4fQaGABc2RKDoVEe6HW8HgHMZwgw2XcmHIQCGuObtAIAhAMAQAGAIADAEhgAYAkMADIEhAIbAEABgCAAwBAAYAgAMAQCGAOBghmA/dQAAAAAAAAAAAAAAAPhuCAyS62dr5cF4GgBMZIE374g8HI8CAFOsC+EECcKDAMAE4ih5NhUkFE8CgIn4x0qXJBGZn7cPngUA4/FJ9FjO1eey6BV4GACMQ7TQM62Uf4VpLAAmEO7tbZi+wjQWcEbiVkbSr9XxitFDTIut/l57aZrnQhGeMXAxQ4iNDIlZ7pGI2hw4HYyO36ycvbq38t755j5Z01HZwPt4hdDmtjpv+mgLQ5JCpbFqPG3ghIYIm5W3PL9fUttTPBJD9G0vbo/zgWkbkpEtjxLjWQPnNITfrDwnZSM5pM0aMURoXzr9UEW89kzTEG6BMANPGjgp/GblbxoqpVJpU6PBkHZ9e2i3iJRNL8sSFggBcFJEwmblOWuUpChYORpD+LZ62jHEsEAIgJPCCpuV12uPldyo8I2jiZY2ixqib3N1SJ/1dcjoAiEAzoqwWTl7am/l3Uukuf/itf6L3FyW0Obmst51W2vImAVCAJy7Xh/zc5+x0TWxQAiAebBACIB5sEAIgHmwQAiAebBACIB5sEAIgHmwQAiAebBACMAkYIEQAPNggRAA82CBEADzYIEQOCnYVxCASQ1x4bsBAEMAgCEAwBAAYAgMATAEhgAYAkMADIEhAMAQAGAIADAEABgCAAwBAIYAAENgCIAhMATAEBgCYIij3419eR4fE4AhZtF1fUnYKlZyL8Pwt37BzBgStzLS3U1i6gf4jweMD+S94P67uWHTqdXxCl1t5/v5vvSF8R7rRtDLn7qSb6Uhh46++vrYo+lVMSFe833xiQGHMqTlt3FjMm/XAbFY7C8aMaTu340X/lROacjO3yOtNOR6xZu2K8W3NEdUVx+nvEHKBawmTGmtIc19soH35/6b3HlAxF7dW3nvPHHffoJv1ewWsfuPpm7/2XAkb9dW7gzup7kXFzo+D9FTDTHE3e2T/O7Xx6mHq40uw10+kl7JKkPCTm7Z+XtuwO3HPcV5mnvbulpJ2MsP+LDBP9ejaGh4WjFkx5mzbRXFLc/vl9T2FOtbuq6DpOzmsZLalGr9kfGG0BiS5TViyI4rFzQDl67ebDS+DL088fpPtVWGNGu25v1VzVz4+kTV0h1Jv0jeT42o3sE/9MN/aFiUk7JxOobsKSdz4hXcRQ5ps/iWmySuu5ytWaMk9VWGI3wdkjpsxpBzm9mGh6qdPx0cdxlqyCFuO1ArDCn61beo9tWCX35LJ9d7qukXofkgX73b0ZKWjnTUQE6sx8vPQ8N0SNZ3R06zDnGPb2+olEqlTY18y01Sf25z2Mkj+aROaziSt+t+YWFhtRlD3CRswxHOEOPLcIbQfqOGzE5Yv2+VZRNTXMWT98nz9jEVzbfoVz5b06ui1Xvp2a4vIfcaRfYyhBZbGGrOmV0x149fevqI6qGjOfp0DVHk0IhRFKwcNUSIITQcGAwxZFnMYIV5Q4wvM8GQwOCFUUujPdfOnpVk2RBnGIbo+v5Qn+5R3HkxTKt3X3Lo+RV12wOJDZ8l86/Ln+S3G4lxLcbth/2RjyGGA/uTO9+d24yx5xTQ4oMZTNnIvj3b1cpyw3ISAjN9TBpS9OuHOL0B8Yp67bGSGxW+hqHdXT5ShxgZ4l617ZZmEkPGXUabZSrLyoiIXeItDVmfWOpvyfgVPf1rc92nhC9VWVwooZYUcxmcTQ1J/ePtjQcK4yLKq2rbD5oB3hDhwBzuwHEY4hypK8NlV9p317paqR71HeWTdo6QJgSVBk4wpO5Fa3P/xfeCIeypvZV3LxH90OYqdcNclpEhulp559/bzRtifBl6+UhzlbpPzKZlc6M9N1gSThhuJ/ed/6um1Tvhsj82p1dlU0MeKEjdrq1GRVT76Ycq4rWHN0Q4cPKhisZtGOLQqevohCfNrtrkh9/krCnrKJ8yzYrw85PKjS2ZvHZm+TlaW8BOPts7Lzw21OJwwtDqnZvjItZN301iCFWjWdNqVER9HqLfeJmQZfEH2rkDq5FlOXTqypUe/E/yxcU6Ibsq66BhhC8ZJldELpPJ/Pyikyw0ZOKKobVYsmLoE1PAh5OgxYWiKRIufo6LxHG1zTeIIWOLqLExRDhAYwhBDHHs1FUoPaoJl87weqRTUaged55MOt+7IjwqwI8a4rHA0hhCwsb/1om137Hlv3WyLjwoNECall2Q6T/VHBdNuL7BhykxLqK4D7NvYNQQyWrUIY6fugqlB5+L1/PZFQ0fnB58om6Swk3rA6I3LIqVy+QhYmKxITZ7TsJ3ZvHd1JkF2WnSgNCg8EJ7fpjP+v24hMCoiOISgnfdYwyhBzo/2nSKwLUNmYHUlWGF0kNJvOYreD16JwsfgTH7Qj0Ccgu41CpbJs8NJPY3xLq7FRrCSYzaTh8mzVKZqXrdeSRMpAHHTV0ZfW5Fw9ZBVp9dmQ4f/hFBc6UhyxZn6NueskXTGrP2NUT4J2Qm8uEkNnydXQyZEq/j55v7j6gw+B06dRVKD3Z/8pZ8Xg9TfTJmLUuQLg1aNSadF0sjiLMZIlQdhYuDNnhGz11WEOMz04YUtSWnHlZg7Dt26kr1YAblHpczr4lMRo8FBbkBHqH7YsatfsQkEec0RB9OShPXh0i9Q2Mj5s34B4+x79ipK1d6sG9f55sqOzIXrY32Xr+w0B5j1r6GCOEkadbstVw42RSD3aedxZAZSF2F0mO8muLw2XOlaVHhYruOWTIDdxML4WRJbEQGRqELGGL71JWXw0iQdbOyvaOXx5b6zNCYnYG7BdJwstzTY2nUwuBAE29PzCmBY9v0za4sCk5c4um5JDFYNNNjdibuJl61LzdBnpC7KGLFuDcmzEsQ8aI0D/k33TFe7jk3UY3B7kCoS4OW/5+9c3Fu4rjj+EmCUw7uFEuyJWG9pehVKlkoErLRIClClSA2jjCpXQdUSIaGFEJp6pY2hT5m8pyQkklmkgwp7RDotB1omClDkk5pMh3alE7zT/VOd7IlWSfrfXfS9zNj3519d6vb3a9297d7vx+pz+mcMqqzEqRmiep8WZptTnQ1zckm23aZLiYG3CtTOWMuxtuPvBouo6mOvMfnIK0Gr0mOdVaK1NSFON+c8K9nNc6PpvTRoTxmhonLP6+kTG0oCMtIMhaUQ2Nzwr2eRdNZny5Sv8Zm3jwsf1tO2gOFSEjtMhKUg1j76o0nmbp1mnl/dGipFxgjSkYaGpeRoBzEaVjrH1oZYtqzsTEqGdnYP5osI4FCWgik4X0xR2GIiZdd41My8rB/iCwjgULEBdL4zjE1zCn4GfPYlIz09o/OlpFAIdVcaxTE1DCf1EiNS8lIbP/ofBkJFDIij6qQjyul/aO7ZSSd5sz4zEtBIYNITSL7Rw/LSAAUMszUJLB/9LiMBEAhw0xNAvuHobdlJAAKGWZqCrN/gDFUSKsAYrwTpkF+XEz9QyGKVcgPv5jkHflBIWCMFdI6gFi7bmWhEDDSbYhYADE+9BcUAsZdISIBxAg+KAUUAjAOaRpAjOADG0EhoC+5W4nR+OJHE03/2WkwGAkUsjmAGBQC+qqQH/xUfeT+mdNN/9lpMJjhKESzRQAx9LJAXxVymotOfX7X91/f9qtq5K1qhHi2DTl3gtr7m+OCwajfZbkp8Gl7N9gigBhG6qDPCtnx2zMXdp25em09inw1QjyrkPf+fO2T/T8TDEb9Lks7WYz2tzLA2gsGMQ75zqVju17aiCK/HiGeU8hrt6bVE4LBqO9ladNSDo+qn5UBM4ag323InxYW2E7Jrm3ba6LIC7FLWYUs3v/Ri/c+EwxGfS9Li1mrpei4un+VwS2LVSfysn+AnschmopCaqLIbyjkxqeaG/tOCQajNlMLdfDyzBT3y2+Xz5eze9k5Xf0ZEfsH6FkhREUhNVHk1xXy2XfvfHpx33nBYNT/snSxCqFWl2XUfTm658Onqz/KtH+AVuR7UchGFPmNNuTQO1N7L00KBqO+l+UMpaX0mZ4qw+5vCaOO6krG9lf3DlYhktk/QCs8JO1IhnSZdF9zt13/5B2n5tL6dSqivwppf6w+4HGIZPYP0ArOo9wURU4JXXt5W11mKFugixtwbd2lSfere7Q3n+dW+T5WOX5EWOvbvr13gAqR1P4BtpTIhltSeSvEu9zNDTRHuQiZp9jfR04cnmbbEP6489W9g1RI/+0foDnu5SP3iy+0HcnLsmTTT9W4th7FlYs7vnd5WvOHW4vOJ0/+/PEJViH8sbDWt4N1JwNWiHT2j94LUiHegNzLH5Qvvp/924Nn2lqJpwrGs+ScIUXVhEcYRYW43z7FDcRPvq533K4ohD+urtNqf+3icBQyfPuHDApyoKk9eum4e2GCePmL5559//al/1z5xZOL1y9seVU0suoP+zh3GOHaEDsj2Ya8cXma+OQvB+78nXivohD+WE4Kkdb+MeoKeeTXDy+yBXzod8+fvHJ5gvvC3PHGqZbWy+VyktbnEnzPKl8Xpm3kFMIt7N31zAsfXDl14K3JG/seP757/xP8saAQWfSyFFxdZf2Ai3cjD586eWLvvXdfOU2cvH6BVYdKc+DwtObHh0WHc2ndipkpxjbckHvtxCgrhFvY6/7Jnr1Xdz67b+/N//3yr+fe+fCxyrGgEFmM1KGQ/vet2SHHuydu5m7f2X7uldPut8+ruMaDVQfx6LefIg42X8lj8qT0tGt+YXTKsr0bqDT1XZXaY0IW1l455GqjL5j1iSNlPiA35Lj70ef/eEBd4ORx4PL04vXDE5w6Xv5qJ+He7OMvUDA4/KW1rVy4jqFHOTnMGMohV8/++/gIKUTDDTmOfmz98uG1YztYeRz8+Mt//vcbk5w6mmBZsllJa6idcI5jqBB3b6tOlK0QbiHYc4J/pG3bhYVflRnWz7mp1c6SzDZNO5bc6mKtdopJNP3wm+6Y1BHtWzBVh746Rpzdd4H4/WtfB+4abgWaOodV2Ssm3YJR6WU5yI+r0RDjqpAzV69V/SNt2y7s8TOqnbch2mZpq7cMncJeY/HQ7T1K5W7tzROzQ44dr/7RcPutSeLsg3vHmtsCZyIufzjlMY1CWSr548pYIS89ran6R9q2XdjjZ1Q7Vgg3lactm6cShHOWmpshtDaG3bcZml3gtFJWp3AGpxAdXb1I2LK/9cHKHevOJQy2dh+QG3K479q+Pi52grNcZMw5Xb6z3B2qV+SxiUElY4Vw85JV/0hVT0n8jGp3bYhPnZgiXDqjzkpoDQF2P2xvdsGqweQrCWdws+Rmb/UiYVtKmXR6vlWqPZewh9ttQypDDrHOQV6X40y6XcSOQBzD8VPIhn8kfi/Az6h2p5AAtyG5yLyE1sTtU03D85JqQk0KZ2gJU5YdXggXCVtKvd5vqz2XCFA9Z6fJkwrTrkiXceQRC3fsFEJs+EcS9vgZ1d37n+hCIZUNma/+USvyncvVeko4g/2dZ/LrF/Fbsl4h1XMr/Y4estNYMMyR2XgPUbkQT338FLLhH0nY42dYuanVDhWSF+pxyReIOIT9cLTZBSW25zS7oRAivrZ+Eb9lu1ZcL4u7Y+25RFTfdXZaMiErabVleguVnffbh1aSXsYIhcjnY9bMGGq6SVJLZKvf9MtWihUGv28LETUNTNXcxZ4xt1CjEOPq+kX8lh2ph4P8HWvPJUKGrh5QZV8r+R1tm3RbIXFc49FUiBLsH5o3v7lzEDmjNjeYUlv2UnRbhOsyMc4uXrybd9H6jky6LUnph9OKZJg4MTYKUYD94+CZf00PJGfKxfpjX6sb+RKtE0rOd1gO6ViRMa90atJtTYxOJtKDLUSVM7bKeImxUYjC7B99zBmNiv+RpBzUiZyZTpaX+/646vgcTQ30HTGKsUYCxPgoRGH2jwHmjKrzMU53qZm8vrDfFYkSY45C3v6Uwv5hoPVWV84Qj3kyM2rZfncMJDXBpBtUEUApSGD/CCwHvbqILZWcdTDUFK2fKxV9ofnEUjRtGWWFWIKhWdJqW7Kg0ikLie0fxrS9kJgPpYolh9mvJc2ObDJli+gKdqexf3V20SK1QqJrq36HzxtAfVMgMrJ/qPLRJU85blhZterpKYoJz7K9sbWYN7PQlj3UspaWYxuyMJ/kTLpqVDWlIlf7h2kh442tGXKu2XClN2ZdXTHEy56laF6sG28nbQF5KSStW2GYFV0atQwMGKPTXqgMXrIOM6n1mx2lYoodvBTs6dremK3BN6ykClEnUno62fLVcgAGgiUdXWIHL75iac7M9cYcs5XBize4YK73Ly6ZQgJen8O/uhZFWQEZ9BJnMp5YnO2NcYOX+hgVkinEMBsKwmgF5IerPs4RwtABUMsMVR8rDwoBoK4JaYi3CoUAUNeEFKOS1lkoBMiaqLqNOptt+FeD16yOfWSto4JCgPLQiv+F32n0mtWxjywoBChfIRUfV0TGQdFlbiE0f8h70OK8ZvXkIwsKAcpWiFtDCD6uzDpL0M/VYsHlVcWDFuc1qycfWVAIULZCTrIK4X1c5W2rTMU9g+DyKlD1mtWTjyyM1IHye1m8j6u5SGGmopB1l1eC16yefGRBIUD5CuF9XFHBdFLLeboSXF4RVa9ZPfnIgkKA0hWiFXxcRUg6XvGdxR9ueM3qyUcWFAKU34a0YJPXrBra8pEFhYCRVsgmr1k1tOUjCwoBo60Q5aYGABQCABQCABQCABQChQAoBAoBUAgUAqAQKAQAKASALeusMqJUAKAsAp6c2ZzrW4BBAEaQmbUsaQ3ZkREAiGEs+PT0ig6BDQAQxTnv8jtsGQRWA0AMS8bgoJMxRAEBQJR8LEmHDQU4dAdADFUwNOd3IWQOAOKodSuMOeU1IicAECManyWza1FkBABiBDwpM5NLYEYRAFEWIiXSGgrCDAyAGMaCL0wXMaMIgDjpssvvMGRgBgZADEvG5vC7yphRBEAUta5Ih30FmIEBEEMVDFnJUgQzigCIYkrkGHPOE0BOACBGdC1LzsajyAgAxDB6U2Zm84slmDsBYJ3leZd/rn5GsRBEtgCwgaVgCNPJWL56rCYhEQDqSceS9PqMIkNBIgA0oqrMKM47CSL3//bu7qWpMA7g+GN738RtMC820rAoMAYxBgtGI2JdjIEbY42GSfOFxImRChKtdE1ylvRiKVEU9mIvWFBEN+aFFxFd9Ff1nJ1zgtlZ4FV2+n7gwJ6fF4PBl+c8B9kcJAIY2ddxtt1/eL+LRIBWunr9nQ4SAVo55FK+mJFEAONA5A7S6bK7jhzjswB+c9De3n28t+Mk/wMMGDnNRwAAAAAAAIA9wsFPwgF/KsTUbwdQCEAhAIUAFEIhoBAKAYVQCCiEQgAKASgEoBCAQgAKASgEMGshTqvNcG6ZvH4iFfZ4jwYoBBRiQC3k4TcfhcDkhbifTBffrIpguW79Iq/qzFys/LmxHJaFrHyN1C639dyIONZHhbNc11YT2/oeos9mIrXNlWEKgekKmfz4NldaygbHHz9VrvyL+Vwpek55GZKFjN+5Xylk8/1juVJfSFt5+8euxpf1QtRZUJktUAhMV4glGR0QVxKnglNnhLzc5/t8YqS/sVTuspRp2JM5kB6sRH2NlbV6eyMkvFN6IepscSNkWaMQmK8Q94Wi3W6fGA3KE4e8ehZn02Io0Vhq5xBn2DNY93e/l4UoK+v355faRP7XXVZjVlVmKe6yYMJCknLTyHT5tELUPURuKU2FJD9siQd6ITv2EHUm9xDBHgIznkNGEvO5Z4WAVojQzyHNhSwFXsajA2oNNuUccne5qRBbinMITFqI++Z08fUjoRfi1p5lNRUyFI+t/5j7pNWgPMvavNVciJzVtg0eDVMI/vVCjFh2NVb+8updWqwVshSC/6KQ3fMurF68NxuiEFCIoUwlErvmERQCCml9q2WhEFDInn47gEIACgEoBKAQCgGFUAgohEJAIRQCUAhAIQCFABQC/IVC+D11AAAAAAAAAAAAAAAAAAB2+gmClD1PTc6eHQAAAABJRU5ErkJggg==" width="801" height="297" />
+
+**Note:** Several other languages have mechanisms for lazy evaluation and deferring a computation, which they also call "promises", e.g. Scheme. Promises in JavaScript represent processes that are already happening, which can be chained with callback functions. If you are looking to lazily evaluate an expression, consider the [arrow function](../functions/arrow_functions) with no arguments: `f = () => expression` to create the lazily-evaluated expression, and `f()` to evaluate.
+
+**Note:** A promise is said to be _settled_ if it is either fulfilled or rejected, but not pending. You will also hear the term _resolved_ used with promises — this means that the promise is settled or "locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
+
+### Chained Promises
+
+The methods `promise.then()`, `promise.catch()`, and `promise.finally()` are used to associate further action with a promise that becomes settled.
+
+The `.then()` method takes up to two arguments; the first argument is a callback function for the resolved case of the promise, and the second argument is a callback function for the rejected case. Each `.then()` returns a newly generated promise object, which can optionally be used for chaining; for example:
+
+    const myPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('foo');
+      }, 300);
+    });
+
+    myPromise
+      .then(handleResolvedA, handleRejectedA)
+      .then(handleResolvedB, handleRejectedB)
+      .then(handleResolvedC, handleRejectedC);
+
+Processing continues to the next link of the chain even when a `.then()` lacks a callback function that returns a Promise object. Therefore, a chain can safely omit every _rejection_ callback function until the final `.catch()`.
+
+Handling a rejected promise in each `.then()` has consequences further down the promise chain. Sometimes there is no choice, because an error must be handled immediately. In such cases we must throw an error of some type to maintain error state down the chain. On the other hand, in the absence of an immediate need, it is simpler to leave out error handling until a final `.catch()` statement. A `.catch()` is really just a `.then()` without a slot for a callback function for the case when the promise is resolved.
+
+    myPromise
+    .then(handleResolvedA)
+    .then(handleResolvedB)
+    .then(handleResolvedC)
+    .catch(handleRejectedAny);
+
+Using `Arrow Function Expressions` for the callback functions, an implementation of a promise chain might look something like this:
+
+    promise1
+    .then(value => { return value + ' and bar'; })
+    .then(value => { return value + ' and bar again'; })
+    .then(value => { return value + ' and again'; })
+    .then(value => { return value + ' and again'; })
+    .then(value => { console.log(value) })
+    .catch(err => { console.log(err) });
+
+The termination condition of a promise determines the "settled" state of the next promise in the chain. A "resolved" state indicates a successful completion of the promise, while a "rejected" state indicates a lack of success. The return value of each resolved promise in the chain is passed along to the next `.then()`, while the reason for rejection is passed along to the next rejection-handler function in the chain.
+
+The promises of a chain are nested like Russian dolls, but get popped like the top of a stack. The first promise in the chain is most deeply nested and is the first to pop.
+
+    (promise D, (promise C, (promise B, (promise A) ) ) )
+
+When a `nextValue` is a promise, the effect is a dynamic replacement. The `return` causes a promise to be popped, but the `nextValue` promise is pushed into its place. For the nesting shown above, suppose the `.then()` associated with "promise B" returns a `nextValue` of "promise X". The resulting nesting would look like this:
+
+    (promise D, (promise C, (promise X) ) )
+
+A promise can participate in more than one nesting. For the following code, the transition of `promiseA` into a "settled" state will cause both instances of `.then()` to be invoked.
+
+    const promiseA = new Promise(myExecutorFunc);
+    const promiseB = promiseA.then(handleFulfilled1, handleRejected1);
+    const promiseC = promiseA.then(handleFulfilled2, handleRejected2);
+
+An action can be assigned to an already "settled" promise. In that case, the action (if appropriate) will be performed at the first asynchronous opportunity. Note that promises are guaranteed to be asynchronous. Therefore, an action for an already "settled" promise will occur only after the stack has cleared and a clock-tick has passed. The effect is much like that of `setTimeout(action,10)`.
+
+    const promiseA = new Promise( (resolutionFunc,rejectionFunc) => {
+        resolutionFunc(777);
+    });
+    // At this point, "promiseA" is already settled.
+    promiseA.then( (val) => console.log("asynchronous logging has val:",val) );
+    console.log("immediate logging");
+
+    // produces output in this order:
+    // immediate logging
+    // asynchronous logging has val: 777
+
+### Incumbent settings object tracking
+
+A settings object is an [environment](https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object) that provides additional information when JavaScript code is running. This includes the realm and module map, as well as HTML specific information such as the origin. The incumbent settings object is tracked in order to ensure that the browser knows which one to use for a given piece of user code.
+
+To better picture this, we can take a closer look at how the realm might be an issue. A **realm** can be roughly thought of as the global object. What is unique about realms is that they hold all of the necessary information to run JavaScript code. This includes objects like `Array` and `Error`. Each settings object has its own "copy" of these and they are not shared. That can cause some unexpected behavior in relation to promises. In order to get around this, we track something called the **incumbent settings object**. This represents information specific to the context of the user code responsible for a certain function call.
+
+To illustrate this a bit further we can take a look at how an `<iframe>` embedded in a document communicates with its host. Since all web APIs are aware of the incumbent settings object, the following will work in all browsers:
+
+    <!DOCTYPE html>
+    <iframe></iframe> <!-- we have a realm here -->
+    <script> // we have a realm here as well
+      const bound = frames[0].postMessage.bind(
+        frames[0], "some data", "*");
+        // bound is a built-in function -- there is no user
+        // code on the stack, so which realm do we use?
+      window.setTimeout(bound);
+      // this still works, because we use the youngest
+      // realm (the incumbent) on the stack
+    </script>
+
+The same concept applies to promises. If we modify the above example a little bit, we get this:
+
+    <!DOCTYPE html>
+    <iframe></iframe> <!-- we have a realm here -->
+    <script> // we have a realm here as well
+      const bound = frames[0].postMessage.bind(
+        frames[0], "some data", "*");
+        // bound is a built in function -- there is no user
+        // code on the stack -- which realm do we use?
+      Promise.resolve(undefined).then(bound);
+      // this still works, because we use the youngest
+      // realm (the incumbent) on the stack
+    </script>
+
+If we change this so that the `<iframe>` in the document is listening to post messages, we can observe the effect of the incumbent settings object:
+
+    <!-- y.html -->
+    <!DOCTYPE html>
+    <iframe sandbox="allow-scripts"  src="x.html"></iframe>
+    <script>
+      const bound = frames[0].postMessage.bind(frames[0], "some data", "*");
+      Promise.resolve(undefined).then(bound);
+    </script>
+
+    <!-- x.html -->
+    <!DOCTYPE html>
+    <script>
+    window.addEventListener("message", (event) => {
+      document.querySelector("#text").textContent = "hello";
+      // this code will only run in browsers that track the incumbent settings object
+      console.log(event);
+    }, false);
+    </script>
+
+In the above example, the inner text of the `<iframe>` will be updated only if the incumbent settings object is tracked. This is because without tracking the incumbent, we may end up using the wrong environment to send the message.
+
+**Note:** Currently, incumbent realm tracking is fully implemented in Firefox, and has partial implementations in Chrome and Safari.
+
+## Constructor
+
+[`Promise()`](promise/promise)
+Creates a new `Promise` object. The constructor is primarily used to wrap functions that do not already support promises.
+
+## Static methods
+
+[`Promise.all(iterable)`](promise/all)
+Wait for all promises to be resolved, or for any to be rejected.
+
+If the returned promise resolves, it is resolved with an aggregating array of the values from the resolved promises, in the same order as defined in the iterable of multiple promises.
+
+If it rejects, it is rejected with the reason from the first promise in the iterable that was rejected.
+
+[`Promise.allSettled(iterable)`](promise/allsettled)
+Wait until all promises have settled (each may resolve or reject).
+
+Returns a Promise that resolves after all of the given promises have either resolved or rejected, with an array of objects that each describe the outcome of each promise.
+
+[`Promise.any(iterable)`](promise/any)
+Takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.
+
+[`Promise.race(iterable)`](promise/race)
+Wait until any of the promises is resolved or rejected.
+
+If the returned promise resolves, it is resolved with the value of the first promise in the iterable that resolved.
+
+If it rejects, it is rejected with the reason from the first promise that was rejected.
+
+[`Promise.reject(reason)`](promise/reject)
+Returns a new `Promise` object that is rejected with the given reason.
+
+[`Promise.resolve(value)`](promise/resolve)
+Returns a new `Promise` object that is resolved with the given value. If the value is a thenable (i.e. has a `then` method), the returned promise will "follow" that thenable, adopting its eventual state; otherwise, the returned promise will be fulfilled with the value.
+
+Generally, if you don't know if a value is a promise or not, [`Promise.resolve(value)`](promise/resolve) it instead and work with the return value as a promise.
+
+## Instance methods
+
+See the [Microtask guide](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide) to learn more about how these methods use the Microtask queue and services.
+
+[`Promise.prototype.catch()`](promise/catch)
+Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled.
+
+[`Promise.prototype.then()`](promise/then)
+Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler, or to its original settled value if the promise was not handled (i.e. if the relevant handler `onFulfilled` or `onRejected` is not a function).
+
+[`Promise.prototype.finally()`](promise/finally)
+Appends a handler to the promise, and returns a new promise that is resolved when the original promise is resolved. The handler is called when the promise is settled, whether fulfilled or rejected.
+
+## Examples
+
+### Basic Example
+
+    let myFirstPromise = new Promise((resolve, reject) => {
+      // We call resolve(...) when what we were doing asynchronously was successful, and reject(...) when it failed.
+      // In this example, we use setTimeout(...) to simulate async code.
+      // In reality, you will probably be using something like XHR or an HTML5 API.
+      setTimeout( function() {
+        resolve("Success!")  // Yay! Everything went well!
+      }, 250)
+    })
+
+    myFirstPromise.then((successMessage) => {
+      // successMessage is whatever we passed in the resolve(...) function above.
+      // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+      console.log("Yay! " + successMessage)
+    });
+
+### Example with diverse situations
+
+This example shows diverse techniques for using Promise capabilities and diverse situations that can occur. To understand this, start by scrolling to the bottom of the code block, and examine the promise chain. Upon provision of an initial promise, a chain of promises can follow. The chain is composed of `.then()` calls, and typically (but not necessarily) has a single `.catch()` at the end, optionally followed by `.finally()`. In this example, the promise chain is initiated by a custom-written `new Promise()` construct; but in actual practice, promise chains more typically start with an API function (written by someone else) that returns a promise.
+
+The example function `tetheredGetNumber()` shows that a promise generator will utilize `reject()` while setting up an asynchronous call, or within the call-back, or both. The function `promiseGetWord()` illustrates how an API function might generate and return a promise in a self-contained manner.
+
+Note that the function `troubleWithGetNumber()` ends with a `throw()`. That is forced because an ES6 promise chain goes through all the `.then()` promises, even after an error, and without the "throw()", the error would seem "fixed". This is a hassle, and for this reason, it is common to omit `rejectionFunc` throughout the chain of `.then()` promises, and just have a single `rejectionFunc` in the final `catch()`. The alternative is to throw a special value (in this case "-999", but a custom Error type would be more appropriate).
+
+This code can be run under NodeJS. Comprehension is enhanced by seeing the errors actually occur. To force more errors, change the `threshold` values.
+
+    "use strict";
+
+    // To experiment with error handling, "threshold" values cause errors randomly
+    const THRESHOLD_A = 8; // can use zero 0 to guarantee error
+
+    function tetheredGetNumber(resolve, reject) {
+      try {
+        setTimeout(
+          function() {
+            const randomInt = Date.now();
+            const value = randomInt % 10;
+            try {
+              if(value >= THRESHOLD_A) {
+                throw new Error(`Too large: ${value}`);
+              }
+            } catch(msg) {
+                reject(`Error in callback ${msg}`);
+            }
+          resolve(value);
+          return;
+        }, 500);
+        // To experiment with error at set-up, uncomment the following 'throw'.
+        // throw new Error("Bad setup");
+      } catch(err) {
+        reject(`Error during setup: ${err}`);
+      }
+      return;
+    }
+
+    function determineParity(value) {
+      const isOdd = value % 2 ? true : false ;
+      const parityInfo = { theNumber: value, isOdd: isOdd };
+      return parityInfo;
+    }
+
+    function troubleWithGetNumber(reason) {
+      console.error(`Trouble getting number: ${reason}`);
+      throw -999; // must "throw" something, to maintain error state down the chain
+    }
+
+    function promiseGetWord(parityInfo) {
+      // The "tetheredGetWord()" function gets "parityInfo" as closure variable.
+      const tetheredGetWord = function(resolve,reject) {
+        const theNumber = parityInfo.theNumber;
+        const threshold_B = THRESHOLD_A - 1;
+        if(theNumber >= threshold_B) {
+          reject(`Still too large: ${theNumber}`);
+        } else {
+          parityInfo.wordEvenOdd = parityInfo.isOdd ? 'odd' : 'even';
+          resolve(parityInfo);
+        }
+        return;
+      }
+      return new Promise(tetheredGetWord);
+    }
+
+    (new Promise(tetheredGetNumber))
+      .then(determineParity,troubleWithGetNumber)
+      .then(promiseGetWord)
+      .then((info) => {
+        console.log("Got: ",info.theNumber," , ", info.wordEvenOdd);
+        return info;
+      })
+      .catch((reason) => {
+        if(reason === -999) {
+          console.error("Had previously handled error");
+        }
+        else {
+          console.error(`Trouble with promiseGetWord(): ${reason}`);
+        }
+       })
+      .finally((info) => console.log("All done"));
+
+### Advanced Example
+
+This small example shows the mechanism of a `Promise`. The `testPromise()` method is called each time the [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) is clicked. It creates a promise that will be fulfilled, using [`WindowOrWorkerGlobalScope.setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout), to the promise count (number starting from 1) every 1-3 seconds, at random. The `Promise()` constructor is used to create the promise.
+
+The fulfillment of the promise is logged, via a fulfill callback set using [`p1.then()`](promise/then). A few logs show how the synchronous part of the method is decoupled from the asynchronous completion of the promise.
+
+By clicking the button several times in a short amount of time, you'll even see the different promises being fulfilled one after another.
+
+#### HTML
+
+    <button id="make-promise">Make a promise!</button>
+    <div id="log"></div>
+
+#### JavaScript
+
+    "use strict";
+    let promiseCount = 0;
+
+    function testPromise() {
+      let thisPromiseCount = ++promiseCount;
+      let log = document.getElementById('log');
+      // begin
+      log.insertAdjacentHTML('beforeend', thisPromiseCount + ') Started<br>');
+      // We make a new promise: we promise a numeric count of this promise, starting from 1 (after waiting 3s)
+      let p1 = new Promise((resolve, reject) => {
+        // The executor function is called with the ability to resolve or reject the promise
+        log.insertAdjacentHTML('beforeend', thisPromiseCount + ') Promise constructor<br>');
+        // This is only an example to create asynchronism
+        window.setTimeout(function() {
+            // We fulfill the promise !
+            resolve(thisPromiseCount);
+        }, Math.random() * 2000 + 1000);
+      });
+
+      // We define what to do when the promise is resolved with the then() call,
+      // and what to do when the promise is rejected with the catch() call
+      p1.then(function(val) {
+        // Log the fulfillment value
+        log.insertAdjacentHTML('beforeend', val + ') Promise fulfilled<br>');
+      }).catch((reason) => {
+        // Log the rejection reason
+        console.log(`Handle rejected promise (${reason}) here.`);
+      });
+      // end
+      log.insertAdjacentHTML('beforeend', thisPromiseCount + ') Promise made<br>');
+    }
+
+    if ("Promise" in window) {
+      let btn = document.getElementById("make-promise");
+      btn.addEventListener("click",testPromise);
+    } else {
+      log = document.getElementById('log');
+      log.textContent = "Live example not available as your browser doesn't support the <code>Promise<code> interface.";
+    }
+
+#### Result
+
+### Loading an image with XHR
+
+Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) to load an image is available at the MDN GitHub [js-examples](https://github.com/mdn/js-examples/tree/master/promises-test) repository. You can also [see it in action](https://mdn.github.io/js-examples/promises-test/). Each step is commented on and allows you to follow the Promise and XHR architecture closely.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-promise-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Promise`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`Promise`
+
+32
+
+12
+
+29
+
+Constructor requires a new operator since version 37.
+
+No
+
+19
+
+8
+
+Constructor requires a new operator since version 10.
+
+4.4.3
+
+32
+
+29
+
+Constructor requires a new operator since version 37.
+
+19
+
+8
+
+Constructor requires a new operator since version 10.
+
+2.0
+
+`all`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`allSettled`
+
+76
+
+79
+
+71
+
+No
+
+63
+
+13
+
+76
+
+76
+
+79
+
+54
+
+13
+
+12.0
+
+`any`
+
+85
+
+85
+
+79
+
+No
+
+No
+
+14
+
+85
+
+85
+
+79
+
+No
+
+14
+
+No
+
+`catch`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`finally`
+
+63
+
+18
+
+58
+
+No
+
+50
+
+11.1
+
+63
+
+63
+
+58
+
+46
+
+11.3
+
+8.0
+
+`incumbent_settings_object_tracking`
+
+No
+
+No
+
+50
+
+No
+
+No
+
+No
+
+No
+
+No
+
+50
+
+No
+
+No
+
+No
+
+`race`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`reject`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`resolve`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+`then`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+-   [Promises/A+ specification](https://promisesaplus.com/)
+-   [Venkatraman.R - JS Promise (Part 1, Basics)](https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53)
+-   [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
+-   [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
+-   [Jake Archibald: JavaScript Promises: There and Back Again](https://www.html5rocks.com/en/tutorials/es6/promises/)
+-   [Domenic Denicola: Callbacks, Promises, and Coroutines – Asynchronous Programming Patterns in JavaScript](https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
+-   [Matt Greer: JavaScript Promises ... In Wicked Detail](https://www.mattgreer.org/articles/promises-in-wicked-detail/)
+-   [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
+-   [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
+-   [Promise polyfill](https://github.com/jakearchibald/es6-promise/)
+-   [Udacity: JavaScript Promises](https://www.udacity.com/course/javascript-promises--ud898)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a>
+
+# Error: Permission denied to access property "x"
+
+The JavaScript exception "Permission denied to access property" occurs when there was an attempt to access an object for which you have no permission.
+
+## Message
+
+    Error: Permission denied to access property "x"
+
+## Error type
+
+[`Error`](../global_objects/error).
+
+## What went wrong?
+
+There was attempt to access an object for which you have no permission. This is likely an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element loaded from a different domain for which you violated the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy).
+
+## Examples
+
+### No permission to access document
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <iframe sandbox="allow-scripts"  id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
+        <script>
+          onload = function() {
+            console.log(frames[0].document);
+            // Error: Permission denied to access property "document"
+          }
+        </script>
+      </head>
+      <body></body>
+    </html>
+
+## See also
+
+-   [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
+-   [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Property_access_denied" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Property_access_denied</a>
+
+# Property accessors
+
+**Property accessors** provide access to an object's properties by using the dot notation or the bracket notation.
+
+## Syntax
+
+    object.property
+    object['property']
+
+## Description
+
+One can think of an object as an _associative array_ (a.k.a. _map_, _dictionary_, _hash_, _lookup table_). The _keys_ in this array are the names of the object's properties.
+
+It's typical when speaking of an object's properties to make a distinction between properties and methods. However, the property/method distinction is little more than a convention. A method is a property that can be called (for example, if it has a reference to a [`Function`](../global_objects/function) instance as its value).
+
+There are two ways to access properties: _dot notation_ and _bracket notation_.
+
+### Dot notation
+
+In the `object.property` syntax, the `property` must be a valid JavaScript [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the names of properties are technically "IdentifierNames", not "Identifiers", so reserved words can be used but are not recommended). For example, `object.$1` is valid, while `object.1` is not.
+
+    const variable = object.property_name;
+
+    object.property_name = value;
+
+    const object = {};
+
+    object.$1 = 'foo';
+    console.log(object.$1);  // 'foo'
+
+    object.1 = 'bar';        // SyntaxError
+    console.log(object.1);   // SyntaxError
+
+Here, the method named `createElement` is retrieved from `document` and is called.
+
+    document.createElement('pre')
+
+If you use a method for a numeric literal, and the numeric literal has no exponent and no decimal point, you should leave [white-space(s)](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) before the dot preceding the method call, so that the dot is not interpreted as a decimal point.
+
+    77 .toExponential()
+    // or
+    77
+    .toExponential()
+    // or
+    ;(77).toExponential()
+    // or
+    77..toExponential()
+    // or
+    77.0.toExponential()
+    // because 77. === 77.0, no ambiguity
+
+### Bracket notation
+
+In the `object[property_name]` syntax, the `property_name` is just a string or [Symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol). So, it can be any string, including `'1foo'`, `'!bar!'`, or even `' '` (a space).
+
+    const variable = object[property_name]
+    object[property_name] = value;
+
+This does the exact same thing as the previous example.
+
+    document['createElement']('pre')
+
+A space before bracket notation is allowed.
+
+    document ['createElement']('pre')
+
+### Property names
+
+Property names are string or [Symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol). Any other value, including a number, is coerced to a string. This outputs `'value'`, since `1` is coerced into `'1'`.
+
+    let object = {}
+    object['1'] = 'value'
+    console.log(object[1])
+
+This also outputs `'value'`, since both `foo` and `bar` are converted to the same string.
+
+    let foo = {unique_prop: 1}, bar = {unique_prop: 2}, object = {};
+    object[foo] = 'value'
+    console.log(object[bar])
+
+In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, this string would be "`[object Object]`".
+
+### Method binding
+
+A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is "passed" by the function call. See [method binding](this#method_binding).
+
+## Examples
+
+### Bracket notation vs. `eval`
+
+JavaScript novices often make the mistake of using [`eval()`](../global_objects/eval) where the bracket notation can be used instead.
+
+For example, the following syntax is often seen in many scripts.
+
+    x = eval('document.forms.form_name.elements.' + strFormControl + '.value')
+
+`eval()` is slow and should be avoided whenever possible. Also, `strFormControl` would have to hold an identifier, which is not required for names and `id`s of form controls. It is better to use bracket notation instead:
+
+    x = document.forms['form_name'].elements[strFormControl].value
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Property Accessors' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Property_Accessors`
+
+1
+
+12
+
+1
+
+3
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Object`](../global_objects/object)
+-   [`Object.defineProperty()`](../global_objects/object/defineproperty)
+-   [Optional chaining](optional_chaining)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors</a>
+
+# Object.prototype.propertyIsEnumerable()
+
+The `propertyIsEnumerable()` method returns a Boolean indicating whether the specified property is enumerable and is the object's own property.
+
+## Syntax
+
+    propertyIsEnumerable(prop)
+
+### Parameters
+
+`prop`
+The name of the property to test.
+
+### Return value
+
+A [`Boolean`](../boolean) indicating whether the specified property is enumerable and is the object's own property.
+
+## Description
+
+Every object has a `propertyIsEnumerable` method. This method can determine whether the specified property in an object can be enumerated by a [`for...in`](../../statements/for...in) loop, with the exception of properties inherited through the prototype chain. If the object does not have the specified property, this method returns `false`.
+
+**Note:** Bear in mind that enumerable properties are looped over by [`for...in`](../../statements/for...in) loops, with the exception of [`Symbol`](../symbol)s.
+
+## Examples
+
+### A basic use of `propertyIsEnumerable`
+
+The following example shows the use of `propertyIsEnumerable` on objects and arrays:
+
+    var o = {};
+    var a = [];
+    o.prop = 'is enumerable';
+    a[0] = 'is enumerable';
+
+    o.propertyIsEnumerable('prop');   // returns true
+    a.propertyIsEnumerable(0);        // returns true
+
+### User-defined vs. built-in objects
+
+The following example demonstrates the enumerability of user-defined vs. built-in properties:
+
+    var a = ['is enumerable'];
+
+    a.propertyIsEnumerable(0);          // returns true
+    a.propertyIsEnumerable('length');   // returns false
+
+    Math.propertyIsEnumerable('random');   // returns false
+    this.propertyIsEnumerable('Math');     // returns false
+
+### Direct vs. inherited properties
+
+    var a = [];
+    a.propertyIsEnumerable('constructor');         // returns false
+
+    function firstConstructor() {
+      this.property = 'is not enumerable';
+    }
+
+    firstConstructor.prototype.firstMethod = function() {};
+
+    function secondConstructor() {
+      this.method = function() { return 'is enumerable'; };
+    }
+
+    secondConstructor.prototype = new firstConstructor;
+    secondConstructor.prototype.constructor = secondConstructor;
+
+    var o = new secondConstructor();
+    o.arbitraryProperty = 'is enumerable';
+
+    o.propertyIsEnumerable('arbitraryProperty');   // returns true
+    o.propertyIsEnumerable('method');              // returns true
+    o.propertyIsEnumerable('property');            // returns false
+
+    o.property = 'is enumerable';
+
+    o.propertyIsEnumerable('property');            // returns true
+
+    // These return false as they are on the prototype which
+    // propertyIsEnumerable does not consider (even though the last two
+    // are iteratable with for-in)
+    o.propertyIsEnumerable('prototype');   // returns false (as of JS 1.8.1/FF3.6)
+    o.propertyIsEnumerable('constructor'); // returns false
+    o.propertyIsEnumerable('firstMethod'); // returns false
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-object.prototype.propertyisenumerable</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`propertyIsEnumerable`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+-   [`for...in`](../../statements/for...in)
+-   [`Object.keys()`](keys)
+-   [`Object.defineProperty()`](defineproperty)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable</a>
+
+# Object.prototype.\_\_proto\_\_
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+**Warning:** Changing the `[[Prototype]]` of an object is, by the nature of how modern JavaScript engines optimize property accesses, a very slow operation, in **_every_** browser and JavaScript engine. The effects on the performance of altering inheritance are subtle and far-flung, and are not limited to the time spent in `obj.__proto__ = ...` statements, but may extend to **_any_** code that has access to **_any_** object whose `[[Prototype]]` has been altered. If you care about performance you should avoid setting the `[[Prototype]]` of an object. Instead, create a new object with the desired `[[Prototype]]` using [`Object.create()`](create).
+
+**Warning:** While `Object.prototype.__proto__` is supported today in most browsers, its existence and exact behavior has only been standardized in the ECMAScript 2015 specification as a legacy feature to ensure compatibility for web browsers. For better support, use [`Object.getPrototypeOf()`](getprototypeof) instead.
+
+The `__proto__` property of [`Object.prototype`](../object) is an accessor property (a getter function and a setter function) that exposes the internal `[[Prototype]]` (either an object or [`null`](../null)) of the object through which it is accessed.
+
+The use of `__proto__` is controversial and discouraged. It was never originally included in the ECMAScript language spec, but modern browsers implemented it anyway. Only recently was the `__proto__` property standardized by the ECMAScript 2015 specification for compatibility with web browsers, so it will be supported into the future. It is deprecated in favor of [`Object.getPrototypeOf`](getprototypeof)/[`Reflect.getPrototypeOf`](../reflect/getprototypeof) and [`Object.setPrototypeOf`](setprototypeof)/[`Reflect.setPrototypeOf`](../reflect/setprototypeof) (though still, setting the `[[Prototype]]` of an object is a slow operation that should be avoided if performance is a concern).
+
+The `__proto__` property can also be used in an object literal definition to set the object `[[Prototype]]` on creation, as an alternative to [`Object.create()`](create). See: [object initializer / literal syntax](../../operators/object_initializer).
+
+## Description
+
+The `__proto__` getter function exposes the value of the internal `[[Prototype]]` of an object. For objects created using an object literal, this value is [`Object.prototype`](../object). For objects created using array literals, this value is <span class="page-not-created">`Array.prototype`</span>. For functions, this value is [`Function.prototype`](../function). For objects created using `new fun`, where `fun` is one of the built-in constructor functions provided by JavaScript ([`Array`](../array), [`Boolean`](../boolean), [`Date`](../date), [`Number`](../number), [`Object`](../object), [`String`](../string), and so on — including new constructors added as JavaScript evolves), this value is always `fun.prototype`. For objects created using `new fun`, where `fun` is a function defined in a script, this value is the value of `fun.prototype`. (That is, if the constructor didn't return an other object explicitly, or the `fun.prototype` has been reassigned since the instance was created.)
+
+The `__proto__` setter allows the `[[Prototype]]` of an object to be mutated. The object must be extensible according to [`Object.isExtensible()`](isextensible): if it is not, a [`TypeError`](../typeerror) is thrown. The value provided must be an object or [`null`](../null). Providing any other value will do nothing.
+
+To understand how prototypes are used for inheritance, see guide article [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+
+The `__proto__` property is a simple accessor property on [`Object.prototype`](../object) consisting of a getter and setter function. A property access for `__proto__` that eventually consults [`Object.prototype`](../object) will find this property, but an access that does not consult [`Object.prototype`](../object) will not. If some other `__proto__` property is found before [`Object.prototype`](../object) is consulted, that property will hide the one found on [`Object.prototype`](../object).
+
+## Examples
+
+### Using \_\_proto\_\_
+
+    function Circle() {}
+    const shape = {};
+    const circle = new Circle();
+
+    // Set the object prototype.
+    // DEPRECATED. This is for example purposes only. DO NOT DO THIS in real code.
+    shape.__proto__ = circle;
+
+    // Get the object prototype
+    console.log(shape.__proto__ === Circle);  // false
+
+    const ShapeA = function () {};
+    const ShapeB = {
+        a() {
+            console.log('aaa');
+        }
+    };
+    console.log(ShapeA.prototype.__proto__ = ShapeB);
+
+    const shapea = new ShapeA();
+    shapea.a(); // aaa
+    console.log(ShapeA.prototype === shapea.__proto__); // true
+
+    // or
+    const ShapeC = function () {};
+    const ShapeD = {
+        a() {
+            console.log('a');
+        }
+    };
+
+    const shapeC = new ShapeC();
+    shapeC.__proto__ = ShapeD;
+    shapeC.a(); // a
+    console.log(ShapeC.prototype === shapeC.__proto__); // false
+
+    // or
+    function Test() {}
+    Test.prototype.myname = function () {
+        console.log('myname');
+    };
+
+    const a = new Test();
+    console.log(a.__proto__ === Test.prototype); // true
+    a.myname(); // myname
+
+    // or
+    const fn = function () {};
+    fn.prototype.myname = function () {
+        console.log('myname');
+    };
+
+    var obj = {
+        __proto__: fn.prototype
+    };
+
+    obj.myname(); // myname
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-additional-properties-of-the-object.prototype-object</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`proto`
+
+1
+
+12
+
+1
+
+11
+
+10.5
+
+3
+
+1
+
+18
+
+4
+
+11
+
+1
+
+1.0
+
+## See also
+
+-   [`Object.prototype.isPrototypeOf()`](isprototypeof)
+-   [`Object.getPrototypeOf()`](getprototypeof)
+-   [`Object.setPrototypeOf()`](setprototypeof)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a>
+
+# Proxy
+
+The `Proxy` object enables you to create a proxy for another object, which can intercept and redefine fundamental operations for that object.
+
+## Description
+
+A `Proxy` is created with two parameters:
+
+-   `target`: the original object which you want to proxy
+-   `handler`: an object that defines which operations will be intercepted and how to redefine intercepted operations.
+
+For example, this code defines a simple target with just two properties, and an even simpler handler with no properties:
+
+    const target = {
+      message1: "hello",
+      message2: "everyone"
+    };
+
+    const handler1 = {};
+
+    const proxy1 = new Proxy(target, handler1);
+
+Because the handler is empty, this proxy behaves just like the original target:
+
+    console.log(proxy1.message1); // hello
+    console.log(proxy1.message2); // everyone
+
+To customise the proxy, we define functions on the handler object:
+
+    const target = {
+      message1: "hello",
+      message2: "everyone"
+    };
+
+    const handler2 = {
+      get: function(target, prop, receiver) {
+        return "world";
+      }
+    };
+
+    const proxy2 = new Proxy(target, handler2);
+
+Here we've provided an implementation of the [`get()`](proxy/proxy/get) handler, which intercepts attempts to access properties in the target.
+
+Handler functions are sometimes called _traps_, presumably because they trap calls to the target object. The very simple trap in `handler2` above redefines all property accessors:
+
+    console.log(proxy2.message1); // world
+    console.log(proxy2.message2); // world
+
+With the help of the [`Reflect`](reflect) class we can give some accessors the original behavior and redefine others:
+
+    const target = {
+      message1: "hello",
+      message2: "everyone"
+    };
+
+    const handler3 = {
+      get: function (target, prop, receiver) {
+        if (prop === "message2") {
+          return "world";
+        }
+        return Reflect.get(...arguments);
+      },
+    };
+
+    const proxy3 = new Proxy(target, handler3);
+
+    console.log(proxy3.message1); // hello
+    console.log(proxy3.message2); // world
+
+## Constructor
+
+[`Proxy()`](proxy/proxy)
+Creates a new `Proxy` object.
+
+## Static methods
+
+[`Proxy.revocable()`](proxy/revocable)
+Creates a revocable `Proxy` object.
+
+## Examples
+
+### Basic example
+
+In this simple example, the number `37` gets returned as the default value when the property name is not in the object. It is using the [`get()`](proxy/proxy/get) handler.
+
+    const handler = {
+      get: function(obj, prop) {
+        return prop in obj ?
+          obj[prop] :
+          37;
+      }
+    };
+
+    const p = new Proxy({}, handler);
+    p.a = 1;
+    p.b = undefined;
+
+    console.log(p.a, p.b);
+    //  1, undefined
+
+    console.log('c' in p, p.c);
+    //  false, 37
+
+### No-op forwarding proxy
+
+In this example, we are using a native JavaScript object to which our proxy will forward all operations that are applied to it.
+
+    const target = {};
+    const p = new Proxy(target, {});
+
+    p.a = 37;
+    //  operation forwarded to the target
+
+    console.log(target.a);
+    //  37
+    //  (The operation has been properly forwarded!)
+
+Note that while this "no-op" works for JavaScript objects, it does not work for native browser objects like DOM Elements.
+
+### Validation
+
+With a `Proxy`, you can easily validate the passed value for an object. This example uses the [`set()`](proxy/proxy/set) handler.
+
+    let validator = {
+      set: function(obj, prop, value) {
+        if (prop === 'age') {
+          if (!Number.isInteger(value)) {
+            throw new TypeError('The age is not an integer');
+          }
+          if (value > 200) {
+            throw new RangeError('The age seems invalid');
+          }
+        }
+
+        // The default behavior to store the value
+        obj[prop] = value;
+
+        // Indicate success
+        return true;
+      }
+    };
+
+    const person = new Proxy({}, validator);
+
+    person.age = 100;
+    console.log(person.age); // 100
+    person.age = 'young';    // Throws an exception
+    person.age = 300;        // Throws an exception
+
+### Extending constructor
+
+A function proxy could easily extend a constructor with a new constructor. This example uses the [`construct()`](proxy/proxy/construct) and [`apply()`](proxy/proxy/apply) handlers.
+
+    function extend(sup, base) {
+      var descriptor = Object.getOwnPropertyDescriptor(
+        base.prototype, 'constructor'
+      );
+      base.prototype = Object.create(sup.prototype);
+      var handler = {
+        construct: function(target, args) {
+          var obj = Object.create(base.prototype);
+          this.apply(target, obj, args);
+          return obj;
+        },
+        apply: function(target, that, args) {
+          sup.apply(that, args);
+          base.apply(that, args);
+        }
+      };
+      var proxy = new Proxy(base, handler);
+      descriptor.value = proxy;
+      Object.defineProperty(base.prototype, 'constructor', descriptor);
+      return proxy;
+    }
+
+    var Person = function(name) {
+      this.name = name;
+    };
+
+    var Boy = extend(Person, function(name, age) {
+      this.age = age;
+    });
+
+    Boy.prototype.gender = 'M';
+
+    var Peter = new Boy('Peter', 13);
+
+    console.log(Peter.gender);  // "M"
+    console.log(Peter.name);    // "Peter"
+    console.log(Peter.age);     // 13
+
+### Manipulating DOM nodes
+
+Sometimes you want to toggle the attribute or class name of two different elements. Here's how using the [`set()`](proxy/proxy/set) handler.
+
+    let view = new Proxy({
+      selected: null
+    },
+    {
+      set: function(obj, prop, newval) {
+        let oldval = obj[prop];
+
+        if (prop === 'selected') {
+          if (oldval) {
+            oldval.setAttribute('aria-selected', 'false');
+          }
+          if (newval) {
+            newval.setAttribute('aria-selected', 'true');
+          }
+        }
+
+        // The default behavior to store the value
+        obj[prop] = newval;
+
+        // Indicate success
+        return true;
+      }
+    });
+
+    let i1 = view.selected = document.getElementById('item-1');  //giving error here, i1 is null
+    console.log(i1.getAttribute('aria-selected'));
+    //  'true'
+
+    let i2 = view.selected = document.getElementById('item-2');
+    console.log(i1.getAttribute('aria-selected'));
+    //  'false'
+
+    console.log(i2.getAttribute('aria-selected'));
+    //  'true'
+    Note: even if selected: !null, then giving oldval.setAttribute is not a function
+
+### Value correction and an extra property
+
+The `products` proxy object evaluates the passed value and converts it to an array if needed. The object also supports an extra property called `latestBrowser` both as a getter and a setter.
+
+    let products = new Proxy({
+      browsers: ['Internet Explorer', 'Netscape']
+    },
+    {
+      get: function(obj, prop) {
+        // An extra property
+        if (prop === 'latestBrowser') {
+          return obj.browsers[obj.browsers.length - 1];
+        }
+
+        // The default behavior to return the value
+        return obj[prop];
+      },
+      set: function(obj, prop, value) {
+        // An extra property
+        if (prop === 'latestBrowser') {
+          obj.browsers.push(value);
+          return true;
+        }
+
+        // Convert the value if it is not an array
+        if (typeof value === 'string') {
+          value = [value];
+        }
+
+        // The default behavior to store the value
+        obj[prop] = value;
+
+        // Indicate success
+        return true;
+      }
+    });
+
+    console.log(products.browsers);
+    //  ['Internet Explorer', 'Netscape']
+
+    products.browsers = 'Firefox';
+    //  pass a string (by mistake)
+
+    console.log(products.browsers);
+    //  ['Firefox'] <- no problem, the value is an array
+
+    products.latestBrowser = 'Chrome';
+
+    console.log(products.browsers);
+    //  ['Firefox', 'Chrome']
+
+    console.log(products.latestBrowser);
+    //  'Chrome'
+
+### Finding an array item object by its property
+
+This proxy extends an array with some utility features. As you see, you can flexibly "define" properties without using [`Object.defineProperties()`](object/defineproperties). This example can be adapted to find a table row by its cell. In that case, the target will be [`table.rows`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows).
+
+    let products = new Proxy([
+      { name: 'Firefox', type: 'browser' },
+      { name: 'SeaMonkey', type: 'browser' },
+      { name: 'Thunderbird', type: 'mailer' }
+    ],
+    {
+      get: function(obj, prop) {
+        // The default behavior to return the value; prop is usually an integer
+        if (prop in obj) {
+          return obj[prop];
+        }
+
+        // Get the number of products; an alias of products.length
+        if (prop === 'number') {
+          return obj.length;
+        }
+
+        let result, types = {};
+
+        for (let product of obj) {
+          if (product.name === prop) {
+            result = product;
+          }
+          if (types[product.type]) {
+            types[product.type].push(product);
+          } else {
+            types[product.type] = [product];
+          }
+        }
+
+        // Get a product by name
+        if (result) {
+          return result;
+        }
+
+        // Get products by type
+        if (prop in types) {
+          return types[prop];
+        }
+
+        // Get product types
+        if (prop === 'types') {
+          return Object.keys(types);
+        }
+
+        return undefined;
+      }
+    });
+
+    console.log(products[0]);          // { name: 'Firefox', type: 'browser' }
+    console.log(products['Firefox']);  // { name: 'Firefox', type: 'browser' }
+    console.log(products['Chrome']);   // undefined
+    console.log(products.browser);     // [{ name: 'Firefox', type: 'browser' }, { name: 'SeaMonkey', type: 'browser' }]
+    console.log(products.types);       // ['browser', 'mailer']
+    console.log(products.number);      // 3
+
+### A complete `traps` list example
+
+Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a _non-native_ object that is particularly suited to this type of operation: the `docCookies` global object created by [the "little framework" published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
+
+    /*
+      var docCookies = ... get the "docCookies" object here:
+      https://developer.mozilla.org/en-US/docs/DOM/document.cookie#A_little_framework.3A_a_complete_cookies_reader.2Fwriter_with_full_unicode_support
+    */
+
+    var docCookies = new Proxy(docCookies, {
+      get: function (oTarget, sKey) {
+        return oTarget[sKey] || oTarget.getItem(sKey) || undefined;
+      },
+      set: function (oTarget, sKey, vValue) {
+        if (sKey in oTarget) { return false; }
+        return oTarget.setItem(sKey, vValue);
+      },
+      deleteProperty: function (oTarget, sKey) {
+        if (!sKey in oTarget) { return false; }
+        return oTarget.removeItem(sKey);
+      },
+      enumerate: function (oTarget, sKey) {
+        return oTarget.keys();
+      },
+      ownKeys: function (oTarget, sKey) {
+        return oTarget.keys();
+      },
+      has: function (oTarget, sKey) {
+        return sKey in oTarget || oTarget.hasItem(sKey);
+      },
+      defineProperty: function (oTarget, sKey, oDesc) {
+        if (oDesc && 'value' in oDesc) { oTarget.setItem(sKey, oDesc.value); }
+        return oTarget;
+      },
+      getOwnPropertyDescriptor: function (oTarget, sKey) {
+        var vValue = oTarget.getItem(sKey);
+        return vValue ? {
+          value: vValue,
+          writable: true,
+          enumerable: true,
+          configurable: false
+        } : undefined;
+      },
+    });
+
+    /* Cookies test */
+
+    console.log(docCookies.my_cookie1 = 'First value');
+    console.log(docCookies.getItem('my_cookie1'));
+
+    docCookies.setItem('my_cookie1', 'Changed value');
+    console.log(docCookies.my_cookie1);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Proxy' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Proxy`
+
+49
+
+12
+
+18
+
+No
+
+36
+
+10
+
+49
+
+49
+
+18
+
+36
+
+10
+
+5.0
+
+`Proxy`
+
+49
+
+12
+
+18
+
+No
+
+36
+
+10
+
+49
+
+49
+
+18
+
+36
+
+10
+
+5.0
+
+`revocable`
+
+63
+
+12
+
+34
+
+No
+
+50
+
+10
+
+63
+
+63
+
+34
+
+46
+
+10
+
+8.0
+
+## See also
+
+-   ["Proxies are awesome" Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
+-   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
+-   [Tutorial on proxies](https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
+-   [SpiderMonkey specific Old Proxy API](https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API)
+-   <span class="page-not-created">`Object.watch()`</span> is a non-standard feature, but has been supported in Gecko for a long time.
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a>
+
+# Public class fields
+
+**Note:** This page describes experimental features.
+
+Both public and private field declarations are an [experimental feature (stage 3)](https://github.com/tc39/proposal-class-fields) proposed at [TC39](https://tc39.es/), the JavaScript standards committee.
+
+Support in browsers is limited, but the feature can be used through a build step with systems like [Babel](https://babeljs.io/). See the [compat information](#browser_compatibility) below.
+
+Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance.
+
+## Syntax
+
+    class ClassWithInstanceField {
+      instanceField = 'instance field'
+    }
+
+    class ClassWithStaticField {
+      static staticField = 'static field'
+    }
+
+    class ClassWithPublicInstanceMethod {
+      publicMethod() {
+        return 'hello world'
+      }
+    }
+
+## Examples
+
+### Public static fields
+
+Public static fields are useful when you want a field to exist only once per class, not on every class instance you create. This is useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+
+Public static fields are declared using the `static` keyword. They are added to the class constructor at the time of class evaluation using [`Object.defineProperty()`](../global_objects/object/defineproperty). They are accessed again from the class constructor.
+
+    class ClassWithStaticField {
+      static staticField = 'static field'
+    }
+
+    console.log(ClassWithStaticField.staticField)
+    // expected output: "static field"
+
+Fields without initializers are initialized to `undefined`.
+
+    class ClassWithStaticField {
+      static staticField
+    }
+
+    console.assert(ClassWithStaticField.hasOwnProperty('staticField'))
+    console.log(ClassWithStaticField.staticField)
+    // expected output: "undefined"
+
+Public static fields are not reinitialized on subclasses, but can be accessed via the prototype chain.
+
+    class ClassWithStaticField {
+      static baseStaticField = 'base field'
+    }
+
+    class SubClassWithStaticField extends ClassWithStaticField {
+      static subStaticField = 'sub class field'
+    }
+
+    console.log(SubClassWithStaticField.subStaticField)
+    // expected output: "sub class field"
+
+    console.log(SubClassWithStaticField.baseStaticField)
+    // expected output: "base field"
+
+When initializing fields, `this` refers to the class constructor. You can also reference it by name, and use `super` to get the superclass constructor (if one exists).
+
+    class ClassWithStaticField {
+      static baseStaticField = 'base static field'
+      static anotherBaseStaticField = this.baseStaticField
+
+      static baseStaticMethod() { return 'base static method output' }
+    }
+
+    class SubClassWithStaticField extends ClassWithStaticField {
+      static subStaticField = super.baseStaticMethod()
+    }
+
+    console.log(ClassWithStaticField.anotherBaseStaticField)
+    // expected output: "base static field"
+
+    console.log(SubClassWithStaticField.subStaticField)
+    // expected output: "base static method output"
+
+### Public instance fields
+
+Public instance fields exist on every created instance of a class. By declaring a public field, you can ensure the field is always present, and the class definition is more self-documenting.
+
+Public instance fields are added with [`Object.defineProperty()`](../global_objects/object/defineproperty) either at construction time in the base class (before the constructor body runs), or just after `super()` returns in a subclass.
+
+    class ClassWithInstanceField {
+      instanceField = 'instance field'
+    }
+
+    const instance = new ClassWithInstanceField()
+    console.log(instance.instanceField)
+    // expected output: "instance field"
+
+Fields without initializers are initialized to `undefined`.
+
+    class ClassWithInstanceField {
+      instanceField
+    }
+
+    const instance = new ClassWithInstanceField()
+    console.assert(instance.hasOwnProperty('instanceField'))
+    console.log(instance.instanceField)
+    // expected output: "undefined"
+
+Like properties, field names may be computed.
+
+    const PREFIX = 'prefix'
+
+    class ClassWithComputedFieldName {
+        [`${PREFIX}Field`] = 'prefixed field'
+    }
+
+    const instance = new ClassWithComputedFieldName()
+    console.log(instance.prefixField)
+    // expected output: "prefixed field"
+
+When initializing fields `this` refers to the class instance under construction. Just as in public instance methods, if you're in a subclass you can access the superclass prototype using `super`.
+
+    class ClassWithInstanceField {
+      baseInstanceField = 'base field'
+      anotherBaseInstanceField = this.baseInstanceField
+      baseInstanceMethod() { return 'base method output' }
+    }
+
+    class SubClassWithInstanceField extends ClassWithInstanceField {
+      subInstanceField = super.baseInstanceMethod()
+    }
+
+    const base = new ClassWithInstanceField()
+    const sub = new SubClassWithInstanceField()
+
+    console.log(base.anotherBaseInstanceField)
+    // expected output: "base field"
+
+    console.log(sub.subInstanceField)
+    // expected output: "base method output"
+
+### Public methods
+
+#### Public static methods
+
+The `static` keyword defines a static method for a class. Static methods aren't called on instances of the class. Instead, they're called on the class itself. These are often utility functions, such as functions to create or clone objects.
+
+    class ClassWithStaticMethod {
+      static staticMethod() {
+        return 'static method has been called.';
+      }
+    }
+
+    console.log(ClassWithStaticMethod.staticMethod());
+    // expected output: "static method has been called."
+
+The static methods are added to the class constructor with [`Object.defineProperty()`](../global_objects/object/defineproperty) at class evaluation time. These methods are writable, non-enumerable, and configurable.
+
+#### Public instance methods
+
+As the name implies, public instance methods are methods available on class instances.
+
+    class ClassWithPublicInstanceMethod {
+      publicMethod() {
+        return 'hello world'
+      }
+    }
+
+    const instance = new ClassWithPublicInstanceMethod()
+    console.log(instance.publicMethod())
+    // expected output: "hello world"
+
+Public instance methods are added to the class prototype at the time of class evaluation using [`Object.defineProperty()`](../global_objects/object/defineproperty). They are writable, non-enumerable, and configurable.
+
+You may make use of generator, async, and async generator functions.
+
+    class ClassWithFancyMethods {
+      *generatorMethod() { }
+      async asyncMethod() { }
+      async *asyncGeneratorMethod() { }
+    }
+
+Inside instance methods, `this` refers to the instance itself. In subclasses, `super` lets you access the superclass prototype, allowing you to call methods from the superclass.
+
+    class BaseClass {
+      msg = 'hello world'
+      basePublicMethod() {
+        return this.msg
+      }
+    }
+
+    class SubClass extends BaseClass {
+      subPublicMethod() {
+        return super.basePublicMethod()
+      }
+    }
+
+    const instance = new SubClass()
+    console.log(instance.subPublicMethod())
+    // expected output: "hello world"
+
+Getters and setters are special methods that bind to a class property and are called when that property is accessed or set. Use the [get](../functions/get) and [set](../functions/set) syntax to declare a public instance getter or setter.
+
+    class ClassWithGetSet {
+      #msg = 'hello world'
+      get msg() {
+        return this.#msg
+      }
+      set msg(x) {
+        this.#msg = `hello ${x}`
+      }
+    }
+
+    const instance = new ClassWithGetSet()
+    console.log(instance.msg)
+    // expected output: "hello world"
+
+    instance.msg = 'cake'
+    console.log(instance.msg)
+    // expected output: "hello cake"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal)
+<br/>
+
+<span class="small">#prod-FieldDefinition</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Public_class_fields`
+
+72
+
+79
+
+69
+
+No
+
+60
+
+14.1
+
+14-14.1
+
+Doesn't support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
+
+72
+
+72
+
+79
+
+51
+
+14.5
+
+14-14.5
+
+Doesn't support public static fields. See WebKit bug [194095](https://webkit.org/b/194095).
+
+No
+
+## See also
+
+-   [Public and private class fields](https://v8.dev/features/class-fields) article at the v8.dev site.
+-   [Class field declarations for JavaScript](https://github.com/tc39/proposal-class-fields#class-field-declarations-for-javascript) explainer, by the [Public and private instance fields](https://github.com/tc39/proposal-class-fields) authors
+-   [The Semantics of All JS Class Elements](https://rfrn.org/~shu/2018/05/02/the-semantics-of-all-js-class-elements.html)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields</a>
+
+# Array.prototype.push()
+
+The `push()` method adds one or more elements to the end of an array and returns the new length of the array.
+
+## Syntax
+
+    push(element0)
+    push(element0, element1)
+    push(element0, element1, ... , elementN)
+
+### Parameters
+
+`elementN`
+The element(s) to add to the end of the array.
+
+### Return value
+
+The new [`length`](length) property of the object upon which the method was called.
+
+## Description
+
+The `push` method appends values to an array.
+
+`push` is intentionally generic. This method can be used with [`call()`](../function/call) or [`apply()`](../function/apply) on objects resembling arrays. The `push` method relies on a `length` property to determine where to start inserting the given values. If the `length` property cannot be converted into a number, the index used is 0. This includes the possibility of `length` being nonexistent, in which case `length` will also be created.
+
+Although [strings](../string) are native, Array-like objects, they are not suitable in applications of this method, as strings are immutable. Similarly for the native, Array-like object [arguments](../../functions/arguments).
+
+## Examples
+
+### Adding elements to an array
+
+The following code creates the `sports` array containing two elements, then appends two elements to it. The `total` variable contains the new length of the array.
+
+    let sports = ['soccer', 'baseball']
+    let total = sports.push('football', 'swimming')
+
+    console.log(sports)  // ['soccer', 'baseball', 'football', 'swimming']
+    console.log(total)   // 4
+
+### Merging two arrays
+
+This example uses [`apply()`](../function/apply) to push all elements from a second array.
+
+Do _not_ use this method if the second array (`moreVegs` in the example) is very large because the maximum number of parameters that one function can take is limited in practice. See [`apply()`](../function/apply) for more details.
+
+    let vegetables = ['parsnip', 'potato']
+    let moreVegs = ['celery', 'beetroot']
+
+    // Merge the second array into the first one
+    // Equivalent to vegetables.push('celery', 'beetroot')
+    Array.prototype.push.apply(vegetables, moreVegs)
+
+    console.log(vegetables)  // ['parsnip', 'potato', 'celery', 'beetroot']
+
+### Using an object in an array-like fashion
+
+As mentioned above, `push` is intentionally generic, and we can use that to our advantage. `Array.prototype.push` can work on an object just fine, as this example shows.
+
+Note that we don't create an array to store a collection of objects. Instead, we store the collection on the object itself and use `call` on `Array.prototype.push` to trick the method into thinking we are dealing with an array—and it just works, thanks to the way JavaScript allows us to establish the execution context in any way we want.
+
+    let obj = {
+        length: 0,
+
+        addElem: function addElem(elem) {
+            // obj.length is automatically incremented
+            // every time an element is added.
+            [].push.call(this, elem)
+        }
+    }
+
+    // Let's add some empty objects just to illustrate.
+    obj.addElem({})
+    obj.addElem({})
+    console.log(obj.length)
+    // → 2
+
+Note that although `obj` is not an array, the method `push` successfully incremented `obj`'s `length` property just like if we were dealing with an actual array.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.push</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`push`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.pop()`](pop)
+-   [`Array.prototype.shift()`](shift)
+-   [`Array.prototype.unshift()`](unshift)
+-   [`Array.prototype.concat()`](concat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push</a>
+
+# Promise.race()
+
+The `Promise.race()` method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
+
+## Syntax
+
+    Promise.race(iterable);
+
+### Parameters
+
+`iterable`
+An iterable object, such as an [`Array`](../array). See [iterable](../../iteration_protocols#the_iterable_protocol).
+
+### Return value
+
+A **pending** [`Promise`](../promise) that **asynchronously** yields the value of the first promise in the given iterable to fulfill or reject.
+
+## Description
+
+The `race` function returns a `Promise` that is settled the same way (and takes the same value) as the first promise that settles amongst the promises of the iterable passed as an argument.
+
+If the iterable passed is empty, the promise returned will be forever pending.
+
+If the iterable contains one or more non-promise value and/or an already settled promise, then `Promise.race` will resolve to the first of these values found in the iterable.
+
+## Examples
+
+### Asynchronicity of Promise.race
+
+This following example demonstrates the asynchronicity of `Promise.race`:
+
+    // we are passing as argument an array of promises that are already resolved,
+    // to trigger Promise.race as soon as possible
+    var resolvedPromisesArray = [Promise.resolve(33), Promise.resolve(44)];
+
+    var p = Promise.race(resolvedPromisesArray);
+    // immediately logging the value of p
+    console.log(p);
+
+    // using setTimeout we can execute code after the stack is empty
+    setTimeout(function(){
+        console.log('the stack is now empty');
+        console.log(p);
+    });
+
+    // logs, in order:
+    // Promise { <state>: "pending" }
+    // the stack is now empty
+    // Promise { <state>: "fulfilled", <value>: 33 }
+
+An empty iterable causes the returned promise to be forever pending:
+
+    var foreverPendingPromise = Promise.race([]);
+    console.log(foreverPendingPromise);
+    setTimeout(function(){
+        console.log('the stack is now empty');
+        console.log(foreverPendingPromise);
+    });
+
+    // logs, in order:
+    // Promise { <state>: "pending" }
+    // the stack is now empty
+    // Promise { <state>: "pending" }
+
+If the iterable contains one or more non-promise value and/or an already settled promise, then `Promise.race` will resolve to the first of these values found in the array:
+
+    var foreverPendingPromise = Promise.race([]);
+    var alreadyFulfilledProm = Promise.resolve(100);
+
+    var arr = [foreverPendingPromise, alreadyFulfilledProm, "non-Promise value"];
+    var arr2 = [foreverPendingPromise, "non-Promise value", Promise.resolve(100)];
+    var p = Promise.race(arr);
+    var p2 = Promise.race(arr2);
+
+    console.log(p);
+    console.log(p2);
+    setTimeout(function(){
+        console.log('the stack is now empty');
+        console.log(p);
+        console.log(p2);
+    });
+
+    // logs, in order:
+    // Promise { <state>: "pending" }
+    // Promise { <state>: "pending" }
+    // the stack is now empty
+    // Promise { <state>: "fulfilled", <value>: 100 }
+    // Promise { <state>: "fulfilled", <value>: "non-Promise value" }
+
+### Using Promise.race – examples with setTimeout
+
+    var p1 = new Promise(function(resolve, reject) {
+        setTimeout(() => resolve('one'), 500);
+    });
+    var p2 = new Promise(function(resolve, reject) {
+        setTimeout(() => resolve('two'), 100);
+    });
+
+    Promise.race([p1, p2])
+    .then(function(value) {
+      console.log(value); // "two"
+      // Both fulfill, but p2 is faster
+    });
+
+    var p3 = new Promise(function(resolve, reject) {
+        setTimeout(() => resolve('three'), 100);
+    });
+    var p4 = new Promise(function(resolve, reject) {
+        setTimeout(() => reject(new Error('four')), 500);
+    });
+
+    Promise.race([p3, p4])
+    .then(function(value) {
+      console.log(value); // "three"
+      // p3 is faster, so it fulfills
+    }, function(error) {
+      // Not called
+    });
+
+    var p5 = new Promise(function(resolve, reject) {
+        setTimeout(() => resolve('five'), 500);
+    });
+    var p6 = new Promise(function(resolve, reject) {
+        setTimeout(() => reject(new Error('six')), 100);
+    });
+
+    Promise.race([p5, p6])
+    .then(function(value) {
+      // Not called
+    }, function(error) {
+      console.log(error.message); // "six"
+      // p6 is faster, so it rejects
+    });
+
+### Comparison with Promise.any
+
+`Promise.race` takes the first settled [`Promise`](../promise).
+
+    const promise1 = new Promise((resolve, reject) => {
+      setTimeout(resolve, 500, 'one');
+    });
+
+    const promise2 = new Promise((resolve, reject) => {
+      setTimeout(reject, 100, 'two');
+    });
+
+    Promise.race([promise1, promise2]).then((value) => {
+      console.log('succeeded with value:', value);
+    }).catch((reason) => {
+      // Only promise1 is fulfilled, but promise2 is faster
+      console.log('failed with reason:', reason);
+    });
+    // expected output: "failed with reason: two"
+
+[`Promise.any`](any) takes the first fulfilled [`Promise`](../promise).
+
+    const promise1 = new Promise((resolve, reject) => {
+      setTimeout(resolve, 500, 'one');
+    });
+
+    const promise2 = new Promise((resolve, reject) => {
+      setTimeout(reject, 100, 'two');
+    });
+
+    Promise.any([promise1, promise2]).then((value) => {
+      // Only promise1 is fulfilled, even though promise2 settled sooner
+      console.log('succeeded with value:', value);
+    }).catch((reason) => {
+      console.log('failed with reason:', reason);
+    });
+    // expected output: "succeeded with value: one"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-promise.race</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`race`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [`Promise`](../promise)
+-   [`Promise.all()`](all)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race</a>
+
+# Math.random()
+
+The `Math.random()` function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
+
+**Note:** `Math.random()` _does not_ provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method.
+
+## Syntax
+
+    Math.random()
+
+### Return value
+
+A floating-point, pseudo-random number between `0` (inclusive) and 1 (exclusive).
+
+## Examples
+
+Note that as numbers in JavaScript are IEEE 754 floating point numbers with round-to-nearest-even behavior, the ranges claimed for the functions below (excluding the one for `Math.random()` itself) aren't exact. If extremely large bounds are chosen (2<sup>53</sup> or higher), it's possible in _extremely_ rare cases to calculate the usually-excluded upper bound.
+
+### Getting a random number between 0 (inclusive) and 1 (exclusive)
+
+    function getRandom() {
+      return Math.random();
+    }
+
+### Getting a random number between two values
+
+This example returns a random number between the specified values. The returned value is no lower than (and may possibly equal) `min`, and is less than (and not equal) `max`.
+
+    function getRandomArbitrary(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+### Getting a random integer between two values
+
+This example returns a random _integer_ between the specified values. The value is no lower than `min` (or the next integer greater than `min` if `min` isn't an integer), and is less than (but not equal to) `max`.
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    }
+
+**Note:** It might be tempting to use `Math.round()` to accomplish that, but doing so would cause your random numbers to follow a non-uniform distribution, which may not be acceptable for your needs.
+
+### Getting a random integer between two values, inclusive
+
+While the `getRandomInt()` function above is inclusive at the minimum, it's exclusive at the maximum. What if you need the results to be inclusive at both the minimum and the maximum? The `getRandomIntInclusive()` function below accomplishes that.
+
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Math.random' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`random`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</a>
+
+# RangeError
+
+The `RangeError` object indicates an error when a value is not in the set or range of allowed values.
+
+## Description
+
+A `RangeError` is thrown when trying to pass a value as an argument to a function that does not allow a range that includes the value.
+
+This can be encountered when:
+
+-   passing a value that is not one of the allowed string values to [`String.prototype.normalize()`](string/normalize), or
+-   when attempting to create an array of an illegal length with the [`Array`](array) constructor, or
+-   when passing bad values to the numeric methods [`Number.prototype.toExponential()`](number/toexponential), [`Number.prototype.toFixed()`](number/tofixed) or [`Number.prototype.toPrecision()`](number/toprecision).
+
+## Constructor
+
+[`RangeError()`](rangeerror/rangeerror)
+Creates a new `RangeError` object.
+
+## Instance properties
+
+[`RangeError.prototype.message`](error/message)
+Error message. Although ECMA-262 specifies that [`RangeError`](rangeerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
+
+[`RangeError.prototype.name`](error/name)
+Error name. Inherited from [`Error`](error).
+
+[`RangeError.prototype.fileName`](error/filename)
+Path to file that raised this error. Inherited from [`Error`](error).
+
+[`RangeError.prototype.lineNumber`](error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](error).
+
+[`RangeError.prototype.columnNumber`](error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](error).
+
+[`RangeError.prototype.stack`](error/stack)
+Stack trace. Inherited from [`Error`](error).
+
+## Examples
+
+### Using RangeError (for numeric values)
+
+    function check(n)
+    {
+        if( !(n >= -500 && n <= 500) )
+        {
+            throw new RangeError("The argument must be between -500 and 500.")
+        }
+    }
+
+    try
+    {
+        check(2000)
+    }
+    catch(error)
+    {
+        if (error instanceof RangeError)
+        {
+            // Handle the error
+        }
+    }
+
+### Using RangeError (for non-numeric values)
+
+    function check(value)
+    {
+        if(["apple", "banana", "carrot"].includes(value) === false)
+        {
+            throw new RangeError('The argument must be an "apple", "banana", or "carrot".')
+        }
+    }
+
+    try
+    {
+        check("cabbage")
+    }
+    catch(error)
+    {
+        if(error instanceof RangeError)
+        {
+            // Handle the error
+        }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`RangeError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`RangeError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Error`](error)
+-   [`Array`](array)
+-   [`Number.toExponential()`](number/toexponential)
+-   [`Number.toFixed()`](number/tofixed)
+-   [`Number.toPrecision()`](number/toprecision)
+-   [`String.prototype.normalize()`](string/normalize)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError</a>
+
+# String.raw()
+
+The static `String.raw()` method is a tag function of [template literals](../../template_literals). This is _similar_ to the `r` prefix in Python, or the `@` prefix in C\# for string literals. (But it is not _identical_; see explanations in [this issue](https://bugs.chromium.org/p/v8/issues/detail?id=5016).) It's used to get the raw string form of template literals, that is, substitutions (e.g. `${foo}`) are processed, but escapes (e.g. `\n`) are not.
+
+## Syntax
+
+    String.raw(callSite, ...substitutions)
+
+    String.raw`templateString`
+
+### Parameters
+
+`callSite`
+Well-formed template call site object, like `{ raw: ['foo', 'bar', 'baz'] }`.
+
+`...substitutions`
+Contains substitution values.
+
+`templateString`
+A [template literal](../../template_literals), optionally with substitutions (`${...}`).
+
+### Return value
+
+The raw string form of a given template literal.
+
+### Exceptions
+
+[`TypeError`](../typeerror)
+A [`TypeError`](../typeerror) is thrown if the first argument is not a well-formed object.
+
+## Description
+
+In most cases, `String.raw()` is used with template literal. The first syntax mentioned above is only rarely used, because the JavaScript engine will call this with proper arguments for you, (just like with other [tag functions](../../template_literals#tagged_template_literals)).
+
+`String.raw()` is the only built-in tag function of template literals. It works just like the default template function and performs concatenation. You can even re-implement it with normal JavaScript code.
+
+## Examples
+
+### Using String.raw()
+
+    String.raw`Hi\n${2+3}!`;
+    // 'Hi\n5!', the character after 'Hi'
+    // is not a newline character,
+    // '\' and 'n' are two characters.
+
+    String.raw`Hi\u000A!`;
+    // 'Hi\u000A!', same here, this time we will get the
+    //  \, u, 0, 0, 0, A, 6 characters.
+    // All kinds of escape characters will be ineffective
+    // and backslashes will be present in the output string.
+    // You can confirm this by checking the .length property
+    // of the string.
+
+    let name = 'Bob';
+    String.raw`Hi\n${name}!`;
+    // 'Hi\nBob!', substitutions are processed.
+
+    // Normally you would not call String.raw() as a function,
+    // but to simulate `foo${2 + 3}bar${'Java' + 'Script'}baz` you can do:
+    String.raw({
+      raw: ['foo', 'bar', 'baz']
+    }, 2 + 3, 'Java' + 'Script'); // 'foo5barJavaScriptbaz'
+    // Notice the first argument is an object with a 'raw' property,
+    // whose value is an iterable representing the separated strings
+    // in the template literal.
+    // The rest of the arguments are the substitutions.
+
+    // The first argument's 'raw' value can be any iterable, even a string!
+    // For example, 'test' is treated as ['t', 'e', 's', 't'].
+    // The following is equivalent to
+    // `t${0}e${1}s${2}t`:
+    String.raw({ raw: 'test' }, 0, 1, 2); // 't0e1s2t'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.raw</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`raw`
+
+41
+
+12
+
+34
+
+No
+
+No
+
+10
+
+No
+
+41
+
+34
+
+No
+
+10
+
+4.0
+
+## See also
+
+-   [Template literals](../../template_literals)
+-   [`String`](../string)
+-   [Lexical grammar](../../lexical_grammar)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a>
+
+# TypeError: "x" is read-only
+
+The JavaScript [strict mode](../strict_mode)-only exception "is read-only" occurs when a global variable or object property that was assigned to is a read-only property.
+
+## Message
+
+    TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
+    TypeError: "x" is read-only (Firefox)
+    TypeError: 0 is read-only (Firefox)
+    TypeError: Cannot assign to read only property 'x' of #<Object> (Chrome)
+    TypeError: Cannot assign to read only property '0' of [object Array] (Chrome)
+
+## Error type
+
+[`TypeError`](../global_objects/typeerror)
+
+## What went wrong?
+
+The global variable or object property that was assigned to is a read-only property. (Technically, it is a [non-writable data property](../global_objects/object/defineproperty#writable_attribute).)
+
+This error happens only in [strict mode code](../strict_mode). In non-strict code, the assignment is silently ignored.
+
+## Examples
+
+### Invalid cases
+
+Read-only properties are not super common, but they can be created using [`Object.defineProperty()`](../global_objects/object/defineproperty) or [`Object.freeze()`](../global_objects/object/freeze).
+
+    'use strict';
+    var obj = Object.freeze({name: 'Elsa', score: 157});
+    obj.score = 0;  // TypeError
+
+    'use strict';
+    Object.defineProperty(this, 'LUNG_COUNT', {value: 2, writable: false});
+    LUNG_COUNT = 3;  // TypeError
+
+    'use strict';
+    var frozenArray = Object.freeze([0, 1, 2]);
+    frozenArray[0]++;  // TypeError
+
+There are also a few read-only properties built into JavaScript. Maybe you tried to redefine a mathematical constant.
+
+    'use strict';
+    Math.PI = 4;  // TypeError
+
+Sorry, you can't do that.
+
+The global variable `undefined` is also read-only, so you can't silence the infamous "undefined is not a function" error by doing this:
+
+    'use strict';
+    undefined = function() {};  // TypeError: "undefined" is read-only
+
+### Valid cases
+
+    'use strict';
+    var obj = Object.freeze({name: 'Score', points: 157});
+    obj = {name: obj.name, points: 0};   // replacing it with a new object works
+
+    'use strict';
+    var LUNG_COUNT = 2;  // a `var` works, because it's not read-only
+    LUNG_COUNT = 3;  // ok (anatomically unlikely, though)
+
+## See also
+
+-   [`Object.defineProperty()`](../global_objects/object/defineproperty)
+-   [`Object.freeze()`](../global_objects/object/freeze)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only</a>
+
+# SyntaxError: redeclaration of formal parameter "x"
+
+The JavaScript exception "redeclaration of formal parameter" occurs when the same variable name occurs as a function parameter and is then redeclared using a [`let`](../statements/let) assignment in a function body again.
+
+## Message
+
+    SyntaxError: Let/Const redeclaration (Edge)
+    SyntaxError: redeclaration of formal parameter "x" (Firefox)
+    SyntaxError: Identifier "x" has already been declared (Chrome)
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror)
+
+## What went wrong?
+
+The same variable name occurs as a function parameter and is then redeclared using a [`let`](../statements/let) assignment in a function body again. Redeclaring the same variable within the same function or block scope using `let` is not allowed in JavaScript.
+
+## Examples
+
+### Redeclared argument
+
+In this case, the variable "arg" redeclares the argument.
+
+    function f(arg) {
+      let arg = 'foo';
+    }
+
+    // SyntaxError: redeclaration of formal parameter "arg"
+
+If you want to change the value of "arg" in the function body, you can do so, but you do not need to declare the same variable again. In other words: you can omit the `let` keyword. If you want to create a new variable, you need to rename it as conflicts with the function parameter already.
+
+    function f(arg) {
+      arg = 'foo';
+    }
+
+    function f(arg) {
+      let bar = 'foo';
+    }
+
+## See also
+
+-   [`let`](../statements/let)
+-   [`const`](../statements/const)
+-   [`var`](../statements/var)
+-   [Declaring variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter</a>
+
+# Array.prototype.reduce()
+
+The `reduce()` method executes a **reducer** function (that you provide) on each element of the array, resulting in a single output value.
+
+The **reducer** function takes four arguments:
+
+1.  Accumulator
+2.  Current Value
+3.  Current Index
+4.  Source Array
+
+Your **reducer** function's returned value is assigned to the accumulator, whose value is remembered across each iteration throughout the array, and ultimately becomes the final, single resulting value.
+
+## Syntax
+
+    // Arrow function
+    reduce((accumulator, currentValue) => { ... } )
+    reduce((accumulator, currentValue, index) => { ... } )
+    reduce((accumulator, currentValue, index, array) => { ... } )
+    reduce((accumulator, currentValue, index, array) => { ... }, initialValue)
+
+    // Reducer function
+    reduce(reducerFn)
+    reduce(reducerFn, initialValue)
+
+    // Inline reducer function
+    reduce(function reducerFn(accumulator, currentValue) { ... })
+    reduce(function reducerFn(accumulator, currentValue, index) { ... })
+    reduce(function reducerFn(accumulator, currentValue, index, array){ ... })
+    reduce(function reducerFn(accumulator, currentValue, index, array) { ... }, initialValue)
+
+### Parameters
+
+`callback`
+A function to execute on each element in the array (except for the first, if no `initialValue` is supplied).
+
+It takes four arguments:
+
+`accumulator`
+The accumulator accumulates callback's return values. It is the accumulated value previously returned in the last invocation of the callback—or `initialValue`, if it was supplied (see below).
+
+`currentValue`
+The current element being processed in the array.
+
+`index` <span class="badge inline optional">Optional</span>
+The index of the current element being processed in the array. Starts from index `0` if an `initialValue` is provided. Otherwise, it starts from index `1`.
+
+`array` <span class="badge inline optional">Optional</span>
+The array `reduce()` was called upon.
+
+`initialValue` <span class="badge inline optional">Optional</span>
+A value to use as the first argument to the first call of the `callback`. If no `initialValue` is supplied, the first element in the array will be used as the initial `accumulator` value and skipped as `currentValue`. Calling `reduce()` on an empty array without an `initialValue` will throw a [`TypeError`](../typeerror).
+
+### Return value
+
+The single value that results from the reduction.
+
+## Description
+
+The `reduce()` method executes the `callback` once for each assigned value present in the array, taking four arguments:
+
+1.  `accumulator`
+2.  `currentValue`
+3.  `currentIndex`
+4.  `array`
+
+The first time the callback is called, `accumulator` and `currentValue` can be one of two values. If `initialValue` is provided in the call to `reduce()`, then `accumulator` will be equal to `initialValue`, and `currentValue` will be equal to the first value in the array. If no `initialValue` is provided, then `accumulator` will be equal to the first value in the array, and `currentValue` will be equal to the second.
+
+**Note:** If `initialValue` is not provided, `reduce()` will execute the callback function starting at index `1`, skipping the first index. If `initialValue` is provided, it will start at index `0`.
+
+If the array is empty and no `initialValue` is provided, [`TypeError`](../typeerror) will be thrown.
+
+If the array only has one element (regardless of position) and no `initialValue` is provided, or if `initialValue` is provided but the array is empty, the solo value will be returned _without_ calling _`callback`._
+
+It is almost always safer to provide an `initialValue`, because there can be up to _four_ possible output types without `initialValue`, as shown in the following example:
+
+    let maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
+    let maxCallback2 = ( max, cur ) => Math.max( max, cur );
+
+    // reduce without initialValue
+    [ { x: 2 }, { x: 22 }, { x: 42 } ].reduce( maxCallback ); // NaN
+    [ { x: 2 }, { x: 22 }            ].reduce( maxCallback ); // 22
+    [ { x: 2 }                       ].reduce( maxCallback ); // { x: 2 }
+    [                                ].reduce( maxCallback ); // TypeError
+
+    // map & reduce with initialValue; better solution, also works for empty or larger arrays
+    [ { x: 22 }, { x: 42 } ].map( el => el.x )
+                            .reduce( maxCallback2, -Infinity );
+
+### How reduce() works
+
+Suppose the following use of `reduce()` occurred:
+
+    [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
+      return accumulator + currentValue
+    })
+
+The callback would be invoked four times, with the arguments and return values in each call being as follows:
+
+<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr class="even"><td>second call</td><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr class="odd"><td>third call</td><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr class="even"><td>fourth call</td><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+
+The value returned by `reduce()` would be that of the last callback invocation (`10`).
+
+You can also provide an [Arrow Function](../../functions/arrow_functions) instead of a full function. The code below will produce the same output as the code in the block above:
+
+    [0, 1, 2, 3, 4].reduce( (accumulator, currentValue, currentIndex, array) => accumulator + currentValue )
+
+If you were to provide an `initialValue` as the second argument to `reduce()`, the result would look like this:
+
+    [0, 1, 2, 3, 4].reduce((accumulator, currentValue, currentIndex, array) => {
+        return accumulator + currentValue
+    }, 10)
+
+<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>second call</td><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr class="odd"><td>third call</td><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr class="even"><td>fourth call</td><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr class="odd"><td>fifth call</td><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+
+The value returned by `reduce()` in this case would be `20`.
+
+## Polyfill
+
+    // Production steps of ECMA-262, Edition 5, 15.4.4.21
+    // Reference: https://es5.github.io/#x15.4.4.21
+    // https://tc39.github.io/ecma262/#sec-array.prototype.reduce
+    if (!Array.prototype.reduce) {
+      Object.defineProperty(Array.prototype, 'reduce', {
+        value: function(callback /*, initialValue*/) {
+          if (this === null) {
+            throw new TypeError( 'Array.prototype.reduce ' +
+              'called on null or undefined' );
+          }
+          if (typeof callback !== 'function') {
+            throw new TypeError( callback +
+              ' is not a function');
+          }
+
+          // 1. Let O be ? ToObject(this value).
+          var o = Object(this);
+
+          // 2. Let len be ? ToLength(? Get(O, "length")).
+          var len = o.length >>> 0;
+
+          // Steps 3, 4, 5, 6, 7
+          var k = 0;
+          var value;
+
+          if (arguments.length >= 2) {
+            value = arguments[1];
+          } else {
+            while (k < len && !(k in o)) {
+              k++;
+            }
+
+            // 3. If len is 0 and initialValue is not present,
+            //    throw a TypeError exception.
+            if (k >= len) {
+              throw new TypeError( 'Reduce of empty array ' +
+                'with no initial value' );
+            }
+            value = o[k++];
+          }
+
+          // 8. Repeat, while k < len
+          while (k < len) {
+            // a. Let Pk be ! ToString(k).
+            // b. Let kPresent be ? HasProperty(O, Pk).
+            // c. If kPresent is true, then
+            //    i.  Let kValue be ? Get(O, Pk).
+            //    ii. Let accumulator be ? Call(
+            //          callbackfn, undefined,
+            //          « accumulator, kValue, k, O »).
+            if (k in o) {
+              value = callback(value, o[k], k, o);
+            }
+
+            // d. Increase k by 1.
+            k++;
+          }
+
+          // 9. Return accumulator.
+          return value;
+        }
+      });
+    }
+
+**Note:** If you need to support truly obsolete JavaScript engines that do not support [`Object.defineProperty()`](../object/defineproperty), it is best not to polyfill `Array.prototype` methods at all, as you cannot make them **non-enumerable**.
+
+## Examples
+
+### Sum all the values of an array
+
+    let sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue
+    }, 0)
+    // sum is 6
+
+Alternatively written with an arrow function:
+
+    let total = [ 0, 1, 2, 3 ].reduce(
+      ( accumulator, currentValue ) => accumulator + currentValue,
+      0
+    )
+
+### Sum of values in an object array
+
+To sum up the values contained in an array of objects, you **must** supply an `initialValue`, so that each item passes through your function.
+
+    let initialValue = 0
+    let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue.x
+    }, initialValue)
+
+    console.log(sum) // logs 6
+
+Alternatively written with an arrow function:
+
+    let initialValue = 0
+    let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(
+        (accumulator, currentValue) => accumulator + currentValue.x
+        , initialValue
+    )
+
+    console.log(sum) // logs 6
+
+### Flatten an array of arrays
+
+    let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+      function(accumulator, currentValue) {
+        return accumulator.concat(currentValue)
+      },
+      []
+    )
+    // flattened is [0, 1, 2, 3, 4, 5]
+
+Alternatively written with an arrow function:
+
+    let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+      ( accumulator, currentValue ) => accumulator.concat(currentValue),
+      []
+    )
+
+### Counting instances of values in an object
+
+    let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
+
+    let countedNames = names.reduce(function (allNames, name) {
+      if (name in allNames) {
+        allNames[name]++
+      }
+      else {
+        allNames[name] = 1
+      }
+      return allNames
+    }, {})
+    // countedNames is:
+    // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
+
+### Grouping objects by a property
+
+    let people = [
+      { name: 'Alice', age: 21 },
+      { name: 'Max', age: 20 },
+      { name: 'Jane', age: 20 }
+    ];
+
+    function groupBy(objectArray, property) {
+      return objectArray.reduce(function (acc, obj) {
+        let key = obj[property]
+        if (!acc[key]) {
+          acc[key] = []
+        }
+        acc[key].push(obj)
+        return acc
+      }, {})
+    }
+
+    let groupedPeople = groupBy(people, 'age')
+    // groupedPeople is:
+    // {
+    //   20: [
+    //     { name: 'Max', age: 20 },
+    //     { name: 'Jane', age: 20 }
+    //   ],
+    //   21: [{ name: 'Alice', age: 21 }]
+    // }
+
+### Bonding arrays contained in an array of objects using the spread operator and initialValue
+
+    // friends - an array of objects
+    // where object field "books" is a list of favorite books
+    let friends = [{
+      name: 'Anna',
+      books: ['Bible', 'Harry Potter'],
+      age: 21
+    }, {
+      name: 'Bob',
+      books: ['War and peace', 'Romeo and Juliet'],
+      age: 26
+    }, {
+      name: 'Alice',
+      books: ['The Lord of the Rings', 'The Shining'],
+      age: 18
+    }]
+
+    // allbooks - list which will contain all friends' books +
+    // additional list contained in initialValue
+    let allbooks = friends.reduce(function(accumulator, currentValue) {
+      return [...accumulator, ...currentValue.books]
+    }, ['Alphabet'])
+
+    // allbooks = [
+    //   'Alphabet', 'Bible', 'Harry Potter', 'War and peace',
+    //   'Romeo and Juliet', 'The Lord of the Rings',
+    //   'The Shining'
+    // ]
+
+### Remove duplicate items in an array
+
+**Note:** If you are using an environment compatible with [`Set`](../set) and [`Array.from()`](from), you could use `let orderedArray = Array.from(new Set(myArray))` to get an array where duplicate items have been removed.
+
+    let myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
+    let myOrderedArray = myArray.reduce(function (accumulator, currentValue) {
+      if (accumulator.indexOf(currentValue) === -1) {
+        accumulator.push(currentValue)
+      }
+      return accumulator
+    }, [])
+
+    console.log(myOrderedArray)
+
+### Replace .filter().map() with .reduce()
+
+Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array twice, but you can achieve the same effect while traversing only once with [`Array.reduce()`](reduce), thereby being more efficient. (If you like for loops, you can filter and map while traversing once with [`Array.forEach()`](foreach)).
+
+    const numbers = [-5, 6, 2, 0,];
+
+    const doubledPositiveNumbers = numbers.reduce((accumulator, currentValue) => {
+      if (currentValue > 0) {
+        const doubled = currentValue * 2;
+        accumulator.push(doubled);
+      }
+      return accumulator;
+    }, []);
+
+    console.log(doubledPositiveNumbers); // [12, 4]
+
+### Running Promises in Sequence
+
+    /**
+     * Runs promises from array of functions that can return promises
+     * in chained manner
+     *
+     * @param {array} arr - promise arr
+     * @return {Object} promise object
+     */
+    function runPromiseInSequence(arr, input) {
+      return arr.reduce(
+        (promiseChain, currentFunction) => promiseChain.then(currentFunction),
+        Promise.resolve(input)
+      )
+    }
+
+    // promise function 1
+    function p1(a) {
+      return new Promise((resolve, reject) => {
+        resolve(a * 5)
+      })
+    }
+
+    // promise function 2
+    function p2(a) {
+      return new Promise((resolve, reject) => {
+        resolve(a * 2)
+      })
+    }
+
+    // function 3  - will be wrapped in a resolved promise by .then()
+    function f3(a) {
+     return a * 3
+    }
+
+    // promise function 4
+    function p4(a) {
+      return new Promise((resolve, reject) => {
+        resolve(a * 4)
+      })
+    }
+
+    const promiseArr = [p1, p2, f3, p4]
+    runPromiseInSequence(promiseArr, 10)
+      .then(console.log)   // 1200
+
+### Function composition enabling piping
+
+    // Building-blocks to use for composition
+    const double = x => x + x
+    const triple = x => 3 * x
+    const quadruple = x => 4 * x
+
+    // Function composition enabling pipe functionality
+    const pipe = (...functions) => input => functions.reduce(
+        (acc, fn) => fn(acc),
+        input
+    )
+
+    // Composed functions for multiplication of specific values
+    const multiply6 = pipe(double, triple)
+    const multiply9 = pipe(triple, triple)
+    const multiply16 = pipe(quadruple, quadruple)
+    const multiply24 = pipe(double, triple, quadruple)
+
+    // Usage
+    multiply6(6)   // 36
+    multiply9(9)   // 81
+    multiply16(16) // 256
+    multiply24(10) // 240
+
+### Write map using reduce
+
+    if (!Array.prototype.mapUsingReduce) {
+      Array.prototype.mapUsingReduce = function(callback, initialValue) {
+        return this.reduce(function(mappedArray, currentValue, index, array) {
+          mappedArray[index] = callback.call(initialValue, currentValue, index, array)
+          return mappedArray
+        }, [])
+      }
+    }
+
+    [1, 2, , 3].mapUsingReduce(
+      (currentValue, index, array) => currentValue + index + array.length
+    ) // [5, 7, , 10]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Reduce`
+
+3
+
+12
+
+3
+
+9
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+14
+
+4
+
+1.0
+
+## See also
+
+-   [`Array.prototype.reduceRight()`](reduceright)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>
+
+# TypeError: Reduce of empty array with no initial value
+
+The JavaScript exception "reduce of empty array with no initial value" occurs when a reduce function is used.
+
+## Message
+
+    TypeError: reduce of empty array with no initial value
+
+## Error type
+
+[`TypeError`](../global_objects/typeerror)
+
+## What went wrong?
+
+In JavaScript, there are several reduce functions:
+
+-   [`Array.prototype.reduce()`](../global_objects/array/reduce), [`Array.prototype.reduceRight()`](../global_objects/array/reduceright) and
+-   [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce), [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)).
+
+These functions optionally take an `initialValue` (which will be used as the first argument to the first call of the `callback`). However, if no initial value is provided, it will use the first element of the [`Array`](../global_objects/array) or [`TypedArray`](../global_objects/typedarray) as the initial value. This error is raised when an empty array is provided because no initial value can be returned in that case.
+
+## Examples
+
+### Invalid cases
+
+This problem appears frequently when combined with a filter ([`Array.prototype.filter()`](../global_objects/array/filter), [`TypedArray.prototype.filter()`](../global_objects/typedarray/filter)) which will remove all elements of the list. Thus leaving none to be used as the initial value.
+
+    var ints = [0, -1, -2, -3, -4, -5];
+    ints.filter(x => x > 0)         // removes all elements
+        .reduce((x, y) => x + y)    // no more elements to use for the initial value.
+
+Similarly, the same issue can happen if there is a typo in a selector, or an unexpected number of elements in a list:
+
+    var names = document.getElementsByClassName("names");
+    var name_list = Array.prototype.reduce.call(names, (acc, name) => acc + ", " + name);
+
+### Valid cases
+
+These problems can be solved in two different ways.
+
+One way is to actually provide an `initialValue` as the neutral element of the operator, such as 0 for the addition, 1 for a multiplication, or an empty string for a concatenation.
+
+    var ints = [0, -1, -2, -3, -4, -5];
+    ints.filter(x => x > 0)         // removes all elements
+        .reduce((x, y) => x + y, 0) // the initial value is the neutral element of the addition
+
+Another way would be to handle the empty case, either before calling `reduce`, or in the callback after adding an unexpected dummy initial value.
+
+    var names = document.getElementsByClassName("names");
+
+    var name_list1 = "";
+    if (names1.length >= 1)
+      name_list1 = Array.prototype.reduce.call(names, (acc, name) => acc + ", " + name);
+    // name_list1 == "" when names is empty.
+
+    var name_list2 = Array.prototype.reduce.call(names, (acc, name) => {
+      if (acc == "") // initial value
+        return name;
+      return acc + ", " + name;
+    }, "");
+    // name_list2 == "" when names is empty.
+
+## See also
+
+-   [`Array.prototype.reduce()`](../global_objects/array/reduce)
+-   [`Array.prototype.reduceRight()`](../global_objects/array/reduceright)
+-   [`TypedArray.prototype.reduce()`](../global_objects/typedarray/reduce)
+-   [`TypedArray.prototype.reduceRight()`](../global_objects/typedarray/reduceright)
+-   [`Array`](../global_objects/array)
+-   [`TypedArray`](../global_objects/typedarray)
+-   [`Array.prototype.filter()`](../global_objects/array/filter)
+-   [`TypedArray.prototype.filter()`](../global_objects/typedarray/filter)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reduce_of_empty_array_with_no_initial_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reduce_of_empty_array_with_no_initial_value</a>
+
+# Array.prototype.reduceRight()
+
+The `reduceRight()` method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
+
+See also [`Array.prototype.reduce()`](reduce) for left-to-right.
+
+## Syntax
+
+    // Arrow function
+    reduceRight((accumulator, currentValue) => { ... } )
+    reduceRight((accumulator, currentValue, index) => { ... } )
+    reduceRight((accumulator, currentValue, index, array) => { ... } )
+    reduceRight((accumulator, currentValue, index, array) => { ... }, initialValue)
+
+    // Callback function
+    reduceRight(callbackFn)
+    reduceRight(callbackFn, initialValue)
+
+    // Callback reducer function
+    reduceRight(function callbackFn(accumulator, currentValue) { ... })
+    reduceRight(function callbackFn(accumulator, currentValue, index) { ... })
+    reduceRight(function callbackFn(accumulator, currentValue, index, array){ ... })
+    reduceRight(function callbackFn(accumulator, currentValue, index, array) { ... }, thisArg)
+
+### Parameters
+
+`callbackFn`
+Function to execute on each value in the array, taking four arguments:
+
+`accumulator`
+The value previously returned in the last invocation of the callback, or `initialValue`, if supplied. (See below.)
+
+`currentValue`
+The current element being processed in the array.
+
+`index`<span class="badge inline optional">Optional</span>
+The index of the current element being processed in the array.
+
+`array`<span class="badge inline optional">Optional</span>
+The array `reduceRight()` was called upon.
+
+`initialValue` <span class="badge inline optional">Optional</span>
+Value to use as accumulator to the first call of the `callbackFn`. If no initial value is supplied, the last element in the array will be used and skipped. Calling reduce or reduceRight on an empty array without an initial value creates a `TypeError`.
+
+### Return value
+
+The value that results from the reduction.
+
+## Description
+
+`reduceRight` executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments: the initial value (or value from the previous callback call), the value of the current element, the current index, and the array over which iteration is occurring.
+
+The call to the reduceRight `callbackFn` would look something like this:
+
+    arr.reduceRight(function(accumulator, currentValue, index, array) {
+      // ...
+    });
+
+The first time the function is called, the `accumulator` and `currentValue` can be one of two values. If an `initialValue` was provided in the call to `reduceRight`, then `accumulator` will be equal to `initialValue` and `currentValue` will be equal to the last value in the array. If no `initialValue` was provided, then `accumulator` will be equal to the last value in the array and `currentValue` will be equal to the second-to-last value.
+
+If the array is empty and no `initialValue` was provided, [`TypeError`](../typeerror) would be thrown. If the array has only one element (regardless of position) and no `initialValue` was provided, or if `initialValue` is provided but the array is empty, the solo value would be returned without calling `callbackFn`.
+
+Some example run-throughs of the function would look like this:
+
+    [0, 1, 2, 3, 4].reduceRight(function(accumulator, currentValue, index, array) {
+      return accumulator + currentValue;
+    });
+
+The callback would be invoked four times, with the arguments and return values in each call being as follows:
+
+<table><thead><tr class="header"><th><code>callback</code></th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>index</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>4</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>7</code></td></tr><tr class="even"><td>second call</td><td><code>7</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>9</code></td></tr><tr class="odd"><td>third call</td><td><code>9</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>fourth call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+
+The value returned by `reduceRight` would be that of the last callback invocation (`10`).
+
+And if you were to provide an `initialValue`, the result would look like this:
+
+    [0, 1, 2, 3, 4].reduceRight(function(accumulator, currentValue, index, array) {
+      return accumulator + currentValue;
+    }, 10);
+
+<table><thead><tr class="header"><th><code>callback</code></th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>index</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>14</code></td></tr><tr class="even"><td>second call</td><td><code>14</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>17</code></td></tr><tr class="odd"><td>third call</td><td><code>17</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>19</code></td></tr><tr class="even"><td>fourth call</td><td><code>19</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr><tr class="odd"><td>fifth call</td><td><code>20</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+
+The value returned by `reduceRight` this time would be, of course, `20`.
+
+## Polyfill
+
+`reduceRight` was added to the ECMA-262 standard in the 5th edition; as such it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `reduceRight` in implementations which do not natively support it.
+
+    // Production steps of ECMA-262, Edition 5, 15.4.4.22
+    // Reference: https://es5.github.io/#x15.4.4.22
+    if ('function' !== typeof Array.prototype.reduceRight) {
+      Array.prototype.reduceRight = function(callback /*, initialValue*/) {
+        'use strict';
+        if (null === this || 'undefined' === typeof this) {
+          throw new TypeError('Array.prototype.reduce called on null or undefined');
+        }
+        if ('function' !== typeof callback) {
+          throw new TypeError(callback + ' is not a function');
+        }
+        var t = Object(this), len = t.length >>> 0, k = len - 1, value;
+        if (arguments.length >= 2) {
+          value = arguments[1];
+        } else {
+          while (k >= 0 && !(k in t)) {
+            k--;
+          }
+          if (k < 0) {
+            throw new TypeError('Reduce of empty array with no initial value');
+          }
+          value = t[k--];
+        }
+        for (; k >= 0; k--) {
+          if (k in t) {
+            value = callback(value, t[k], k, t);
+          }
+        }
+        return value;
+      };
+    }
+
+## Examples
+
+### Sum up all values within an array
+
+    var sum = [0, 1, 2, 3].reduceRight(function(a, b) {
+      return a + b;
+    });
+    // sum is 6
+
+### Flatten an array of arrays
+
+    var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+        return a.concat(b);
+    }, []);
+    // flattened is [4, 5, 2, 3, 0, 1]
+
+### Run a list of asynchronous functions with callbacks in series each passing their results to the next
+
+    const waterfall = (...functions) => (callback, ...args) =>
+      functions.reduceRight(
+        (composition, fn) => (...results) => fn(composition, ...results),
+        callback
+      )(...args);
+
+    const randInt = max => Math.floor(Math.random() * max)
+
+    const add5 = (callback, x) => {
+      setTimeout(callback, randInt(1000), x + 5);
+    };
+    const mult3 = (callback, x) => {
+      setTimeout(callback, randInt(1000), x * 3);
+    };
+    const sub2 = (callback, x) => {
+      setTimeout(callback, randInt(1000), x - 2);
+    };
+    const split = (callback, x) => {
+      setTimeout(callback, randInt(1000), x, x);
+    };
+    const add = (callback, x, y) => {
+      setTimeout(callback, randInt(1000), x + y);
+    };
+    const div4 = (callback, x) => {
+      setTimeout(callback, randInt(1000), x / 4);
+    };
+
+    const computation = waterfall(add5, mult3, sub2, split, add, div4);
+    computation(console.log, 5) // -> 14
+
+    // same as:
+
+    const computation2 = (input, callback) => {
+      const f6 = x=> div4(callback, x);
+      const f5 = (x, y) => add(f6, x, y);
+      const f4 = x => split(f5, x);
+      const f3 = x => sub2(f4, x);
+      const f2 = x => mult3(f3, x);
+      add5(f2, input);
+    }
+
+### Difference between `reduce` and `reduceRight`
+
+    var a = ['1', '2', '3', '4', '5'];
+    var left  = a.reduce(function(prev, cur)      { return prev + cur; });
+    var right = a.reduceRight(function(prev, cur) { return prev + cur; });
+
+    console.log(left);  // "12345"
+    console.log(right); // "54321"
+
+### Defining composable functions
+
+Function composition is a mechanism for combining functions, in which the output of each function is passed into the next one, and the output of the last function is the final result. In this example we use `reduceRight()` to implement function composition.
+
+See also [Function composition](<https://en.wikipedia.org/wiki/Function_composition_(computer_science)>) on Wikipedia.
+
+    const compose = (...args) => (value) => args.reduceRight((acc, fn) => fn(acc), value)
+
+    // Increment passed number
+    const inc = (n) => n + 1
+
+    // Doubles the passed value
+    const double = (n) => n * 2
+
+    // using composition function
+    console.log(compose(double, inc)(2)); // 6
+
+    // using composition function
+    console.log(compose(inc, double)(2)); // 5
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`ReduceRight`
+
+3
+
+12
+
+3
+
+9
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+14
+
+4
+
+1.0
+
+## See also
+
+-   [`Array.prototype.reduce()`](reduce)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight</a>
+
+# ReferenceError
+
+The `ReferenceError` object represents an error when a non-existent variable is referenced.
+
+## Constructor
+
+[`ReferenceError()`](referenceerror/referenceerror)
+Creates a new `ReferenceError` object.
+
+## Instance properties
+
+[`ReferenceError.prototype.message`](error/message)
+Error message. Although ECMA-262 specifies that [`ReferenceError`](referenceerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
+
+[`ReferenceError.prototype.name`](error/name)
+Error name. Inherited from [`Error`](error).
+
+[`ReferenceError.prototype.fileName`](error/filename)
+Path to file that raised this error. Inherited from [`Error`](error).
+
+[`ReferenceError.prototype.lineNumber`](error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](error).
+
+[`ReferenceError.prototype.columnNumber`](error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](error).
+
+[`ReferenceError.prototype.stack`](error/stack)
+Stack trace. Inherited from [`Error`](error).
+
+## Examples
+
+### Catching a ReferenceError
+
+    try {
+      let a = undefinedVariable
+    } catch (e) {
+      console.log(e instanceof ReferenceError)  // true
+      console.log(e.message)                    // "undefinedVariable is not defined"
+      console.log(e.name)                       // "ReferenceError"
+      console.log(e.fileName)                   // "Scratchpad/1"
+      console.log(e.lineNumber)                 // 2
+      console.log(e.columnNumber)               // 6
+      console.log(e.stack)                      // "@Scratchpad/2:2:7\n"
+    }
+
+### Creating a ReferenceError
+
+    try {
+      throw new ReferenceError('Hello', 'someFile.js', 10)
+    } catch (e) {
+      console.log(e instanceof ReferenceError)  // true
+      console.log(e.message)                    // "Hello"
+      console.log(e.name)                       // "ReferenceError"
+      console.log(e.fileName)                   // "someFile.js"
+      console.log(e.lineNumber)                 // 10
+      console.log(e.columnNumber)               // 0
+      console.log(e.stack)                      // "@Scratchpad/2:2:9\n"
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`ReferenceError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`ReferenceError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Error`](error)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError</a>
+
+# Reflect
+
+**Reflect** is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of [proxy handlers](proxy/proxy). `Reflect` is not a function object, so it's not constructible.
+
+## Description
+
+Unlike most global objects, `Reflect` is not a constructor. You cannot use it with a [`new` operator](../operators/new) or invoke the `Reflect` object as a function. All properties and methods of `Reflect` are static (just like the [`Math`](math) object).
+
+The `Reflect` object provides the following static functions which have the same names as the [proxy handler methods](proxy/proxy).
+
+Some of these methods are also the same as corresponding methods on [`Object`](object), although they do have [some subtle differences](reflect/comparing_reflect_and_object_methods) between them.
+
+## Static methods
+
+[`Reflect.apply(target, thisArgument, argumentsList)`](reflect/apply)
+Calls a `target` function with arguments as specified by the `argumentsList` parameter. See also [`Function.prototype.apply()`](function/apply).
+
+[`Reflect.construct(target, argumentsList[, newTarget])`](reflect/construct)
+The [`new` operator](../operators/new) as a function. Equivalent to calling `new target(...argumentsList)`. Also provides the option to specify a different prototype.
+
+[`Reflect.defineProperty(target, propertyKey, attributes)`](reflect/defineproperty)
+Similar to [`Object.defineProperty()`](object/defineproperty). Returns a [`Boolean`](boolean) that is `true` if the property was successfully defined.
+
+[`Reflect.deleteProperty(target, propertyKey)`](reflect/deleteproperty)
+The [`delete` operator](../operators/delete) as a function. Equivalent to calling `delete target[propertyKey]`.
+
+[`Reflect.get(target, propertyKey[, receiver])`](reflect/get)
+Returns the value of the property. Works like getting a property from an object (`target[propertyKey]`) as a function.
+
+[`Reflect.getOwnPropertyDescriptor(target, propertyKey)`](reflect/getownpropertydescriptor)
+Similar to [`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor). Returns a property descriptor of the given property if it exists on the object, [`undefined`](undefined) otherwise.
+
+[`Reflect.getPrototypeOf(target)`](reflect/getprototypeof)
+Same as [`Object.getPrototypeOf()`](object/getprototypeof).
+
+[`Reflect.has(target, propertyKey)`](reflect/has)
+Returns a [`Boolean`](boolean) indicating whether the target has the property. Either as own or inherited. Works like the [`in` operator](../operators/in) as a function.
+
+[`Reflect.isExtensible(target)`](reflect/isextensible)
+Same as [`Object.isExtensible()`](object/isextensible). Returns a [`Boolean`](boolean) that is `true` if the target is extensible.
+
+[`Reflect.ownKeys(target)`](reflect/ownkeys)
+Returns an array of the target object's own (not inherited) property keys.
+
+[`Reflect.preventExtensions(target)`](reflect/preventextensions)
+Similar to [`Object.preventExtensions()`](object/preventextensions). Returns a [`Boolean`](boolean) that is `true` if the update was successful.
+
+[`Reflect.set(target, propertyKey, value[, receiver])`](reflect/set)
+A function that assigns values to properties. Returns a [`Boolean`](boolean) that is `true` if the update was successful.
+
+[`Reflect.setPrototypeOf(target, prototype)`](reflect/setprototypeof)
+A function that sets the prototype of an object. Returns a [`Boolean`](boolean) that is `true` if the update was successful.
+
+## Examples
+
+### Detecting whether an object contains certain properties
+
+    const duck = {
+      name: 'Maurice',
+      color: 'white',
+      greeting: function() {
+        console.log(`Quaaaack! My name is ${this.name}`);
+      }
+    }
+
+    Reflect.has(duck, 'color');
+    // true
+    Reflect.has(duck, 'haircut');
+    // false
+
+### Returning the object's own keys
+
+    Reflect.ownKeys(duck);
+    // [ "name", "color", "greeting" ]
+
+### Adding a new property to the object
+
+    Reflect.set(duck, 'eyes', 'black');
+    // returns "true" if successful
+    // "duck" now contains the property "eyes: 'black'"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-reflect-object</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Reflect`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`apply`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`construct`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`defineProperty`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`deleteProperty`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`get`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`getOwnPropertyDescriptor`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`getPrototypeOf`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`has`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`isExtensible`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`ownKeys`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`preventExtensions`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`set`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+`setPrototypeOf`
+
+49
+
+12
+
+42
+
+No
+
+36
+
+10
+
+49
+
+49
+
+42
+
+36
+
+10
+
+5.0
+
+## See also
+
+-   The [`Proxy`](proxy) global object.
+-   The [`handler`](proxy/proxy) object.
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect</a>
+
+# RegExp
+
+The `RegExp` object is used for matching text with a pattern.
+
+For an introduction to regular expressions, read the [Regular Expressions chapter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+## Description
+
+### Literal notation and constructor
+
+There are two ways to create a `RegExp` object: a _literal notation_ and a _constructor_.
+
+-   **The literal notation's** parameters are enclosed between slashes and do not use quotation marks.
+-   **The constructor function's** parameters are not enclosed between slashes but do use quotation marks.
+
+The following three expressions create the same regular expression object:
+
+    let re = /ab+c/i; // literal notation
+    let re = new RegExp('ab+c', 'i') // constructor with string pattern as first argument
+    let re = new RegExp(/ab+c/, 'i') // constructor with regular expression literal as first argument (Starting with ECMAScript 6)
+
+The literal notation results in compilation of the regular expression when the expression is evaluated. Use literal notation when the regular expression will remain constant. For example, if you use literal notation to construct a regular expression used in a loop, the regular expression won't be recompiled on each iteration.
+
+The constructor of the regular expression object—for example, `new RegExp('ab+c')`—results in runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and obtain it from another source, such as user input.
+
+### Flags in constructor
+
+Starting with ECMAScript 6, `new RegExp(/ab+c/, 'i')` no longer throws a [`TypeError`](typeerror) (`"can't supply flags when constructing one RegExp from another"`) when the first argument is a `RegExp` and the second `flags` argument is present. A new `RegExp` from the arguments is created instead.
+
+When using the constructor function, the normal string escape rules (preceding special characters with `\` when included in a string) are necessary.
+
+For example, the following are equivalent:
+
+    let re = /\w+/
+    let re = new RegExp('\\w+')
+
+### Perl-like RegExp properties
+
+Note that several of the [`RegExp`](regexp) properties have both long and short (Perl-like) names. Both names always refer to the same value. (Perl is the programming language from which JavaScript modeled its regular expressions.). See also [deprecated `RegExp` properties.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features#regexp_properties)
+
+## Constructor
+
+[`RegExp()`](regexp/regexp)
+Creates a new `RegExp` object.
+
+## Static properties
+
+[`get RegExp[@@species]`](regexp/@@species)
+The constructor function that is used to create derived objects.
+
+## Instance properties
+
+[`RegExp.prototype.flags`](regexp/flags)
+A string that contains the flags of the `RegExp` object.
+
+[`RegExp.prototype.dotAll`](regexp/dotall)
+Whether `.` matches newlines or not.
+
+[`RegExp.prototype.global`](regexp/global)
+Whether to test the regular expression against all possible matches in a string, or only against the first.
+
+[`RegExp.prototype.hasIndices`](regexp/hasindices)
+Whether the regular expression result exposes the start and end indices of captured substrings.
+
+[`RegExp.prototype.ignoreCase`](regexp/ignorecase)
+Whether to ignore case while attempting a match in a string.
+
+[`RegExp.prototype.multiline`](regexp/multiline)
+Whether or not to search in strings across multiple lines.
+
+[`RegExp.prototype.source`](regexp/source)
+The text of the pattern.
+
+[`RegExp.prototype.sticky`](regexp/sticky)
+Whether or not the search is sticky.
+
+[`RegExp.prototype.unicode`](regexp/unicode)
+Whether or not Unicode features are enabled.
+
+[`RegExp: lastIndex`](regexp/lastindex)
+The index at which to start the next match.
+
+## Instance methods
+
+[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>
+(Re-)compiles a regular expression during execution of a script.
+
+[`RegExp.prototype.exec()`](regexp/exec)
+Executes a search for a match in its string parameter.
+
+[`RegExp.prototype.test()`](regexp/test)
+Tests for a match in its string parameter.
+
+[`RegExp.prototype.toString()`](regexp/tostring)
+Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
+
+[`RegExp.prototype[@@match]()`](regexp/@@match)
+Performs match to given string and returns match result.
+
+[`RegExp.prototype[@@matchAll]()`](regexp/@@matchall)
+Returns all matches of the regular expression against a string.
+
+[`RegExp.prototype[@@replace]()`](regexp/@@replace)
+Replaces matches in given string with new substring.
+
+[`RegExp.prototype[@@search]()`](regexp/@@search)
+Searches the match in given string and returns the index the pattern found in the string.
+
+[`RegExp.prototype[@@split]()`](regexp/@@split)
+Splits given string into an array by separating the string into substrings.
+
+## Examples
+
+### Using a regular expression to change data format
+
+The following script uses the [`replace()`](string/replace) method of the [`String`](string) instance to match a name in the format _first last_ and output it in the format _last, first_.
+
+In the replacement text, the script uses `$1` and `$2` to indicate the results of the corresponding matching parentheses in the regular expression pattern.
+
+    let re = /(\w+)\s(\w+)/
+    let str = 'John Smith'
+    let newstr = str.replace(re, '$2, $1')
+    console.log(newstr)
+
+This displays `"Smith, John"`.
+
+### Using regular expression to split lines with different line endings/ends of line/line breaks
+
+The default line ending varies depending on the platform (Unix, Windows, etc.). The line splitting provided in this example works on all platforms.
+
+    let text = 'Some text\nAnd some more\r\nAnd yet\rThis is the end'
+    let lines = text.split(/\r\n|\r|\n/)
+    console.log(lines) // logs [ 'Some text', 'And some more', 'And yet', 'This is the end' ]
+
+Note that the order of the patterns in the regular expression matters.
+
+### Using regular expression on multiple lines
+
+    let s = 'Please yes\nmake my day!'
+
+    s.match(/yes.*day/);
+    // Returns null
+
+    s.match(/yes[^]*day/);
+    // Returns ["yes\nmake my day"]
+
+### Using a regular expression with the sticky flag
+
+The [`sticky`](regexp/sticky) flag indicates that the regular expression performs sticky matching in the target string by attempting to match starting at [`RegExp.prototype.lastIndex`](regexp/lastindex).
+
+    let str = '#foo#'
+    let regex = /foo/y
+
+    regex.lastIndex = 1
+    regex.test(str)      // true
+    regex.lastIndex = 5
+    regex.test(str)      // false (lastIndex is taken into account with sticky flag)
+    regex.lastIndex      // 0 (reset after match failure)
+
+### The difference between the sticky flag and the global flag
+
+With the sticky flag `y`, the next match has to happen at the `lastIndex` position, while with the global flag `g`, the match can happen at the `lastIndex` position or later:
+
+    re = /\d/y;
+    while (r = re.exec("123 456")) console.log(r, "AND re.lastIndex", re.lastIndex);
+
+    // [ '1', index: 0, input: '123 456', groups: undefined ] AND re.lastIndex 1
+    // [ '2', index: 1, input: '123 456', groups: undefined ] AND re.lastIndex 2
+    // [ '3', index: 2, input: '123 456', groups: undefined ] AND re.lastIndex 3
+    //   ... and no more match.
+
+With the global flag `g`, all 6 digits would be matched, not just 3.
+
+### Regular expression and Unicode characters
+
+`\w` and `\W` only matches ASCII based characters; for example, `a` to `z`, `A` to `Z`, `0` to `9`, and `_`.
+
+To match characters from other languages such as Cyrillic or Hebrew, use `\uhhhh`, where `hhhh` is the character's Unicode value in hexadecimal.
+
+This example demonstrates how one can separate out Unicode characters from a word.
+
+    let text = 'Образец text на русском языке'
+    let regex = /[\u0400-\u04FF]+/g
+
+    let match = regex.exec(text)
+    console.log(match[0])        // logs 'Образец'
+    console.log(regex.lastIndex) // logs '7'
+
+    let match2 = regex.exec(text)
+    console.log(match2[0])       // logs 'на' [did not log 'text']
+    console.log(regex.lastIndex) // logs '15'
+
+    // and so on
+
+The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes) feature introduces a solution, by allowing for a statement as simple as `\p{scx=Cyrl}`.
+
+### Extracting sub-domain name from URL
+
+    let url = 'http://xxx.domain.com'
+    console.log(/[^.]+/.exec(url)[0].substr(7)) // logs 'xxx'
+
+**Note:** Instead of using regular expressions for parsing URLs, it is usually better to use the browsers built-in URL parser by using the [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API).
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-regexp-regular-expression-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`RegExp`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`RegExp`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`compile`
+
+1
+
+12
+
+1
+
+4
+
+6
+
+3.1
+
+1
+
+18
+
+4
+
+10.1
+
+2
+
+1.0
+
+`dotAll`
+
+62
+
+79
+
+78
+
+No
+
+49
+
+12
+
+62
+
+62
+
+79
+
+46
+
+12
+
+8.0
+
+`exec`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`flags`
+
+49
+
+79
+
+37
+
+No
+
+39
+
+9
+
+49
+
+49
+
+37
+
+41
+
+9
+
+5.0
+
+`global`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`hasIndices`
+
+90
+
+90
+
+88
+
+No
+
+No
+
+No
+
+90
+
+90
+
+88
+
+No
+
+No
+
+No
+
+`ignoreCase`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`input`
+
+1
+
+12
+
+1
+
+5.5
+
+15
+
+3
+
+1
+
+18
+
+4
+
+14
+
+1
+
+1.0
+
+`lastIndex`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`lastMatch`
+
+1
+
+12
+
+1
+
+5.5
+
+10.5
+
+3
+
+1
+
+18
+
+4
+
+11
+
+1
+
+1.0
+
+`lastParen`
+
+1
+
+12
+
+1
+
+5.5
+
+10.5
+
+3
+
+1
+
+18
+
+4
+
+11
+
+1
+
+1.0
+
+`leftContext`
+
+1
+
+12
+
+1
+
+5.5
+
+8
+
+3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`lookbehind_assertion`
+
+62
+
+79
+
+78
+
+No
+
+49
+
+No
+
+62
+
+62
+
+79
+
+46
+
+No
+
+8.0
+
+`multiline`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`n`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`named_capture_groups`
+
+64
+
+79
+
+78
+
+No
+
+51
+
+11.1
+
+64
+
+64
+
+79
+
+47
+
+11.3
+
+9.0
+
+`property_escapes`
+
+64
+
+79
+
+78
+
+No
+
+51
+
+11.1
+
+64
+
+64
+
+79
+
+47
+
+11.3
+
+9.0
+
+`rightContext`
+
+1
+
+12
+
+1
+
+5.5
+
+8
+
+3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`source`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`sticky`
+
+49
+
+13
+
+3
+
+No
+
+36
+
+10
+
+49
+
+49
+
+4
+
+36
+
+10
+
+5.0
+
+`test`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toSource`
+
+No
+
+No
+
+1-74
+
+Starting in Firefox 74, `toSource()` is no longer available for use by web content. It is still allowed for internal and privileged code.
+
+No
+
+No
+
+No
+
+No
+
+No
+
+4
+
+No
+
+No
+
+No
+
+`toString`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`unicode`
+
+50
+
+12
+
+Case folding is implemented in version 13
+
+46
+
+No
+
+37
+
+10
+
+50
+
+50
+
+46
+
+37
+
+10
+
+5.0
+
+`@@match`
+
+50
+
+13
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`@@matchAll`
+
+73
+
+79
+
+67
+
+No
+
+60
+
+13
+
+73
+
+73
+
+67
+
+52
+
+13
+
+5.0
+
+`@@replace`
+
+50
+
+79
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`@@search`
+
+50
+
+13
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`@@species`
+
+50
+
+13
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`@@split`
+
+50
+
+79
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+### Firefox-specific notes
+
+Starting with Firefox 34, in the case of a capturing group with quantifiers preventing its exercise, the matched text for a capturing group is now `undefined` instead of an empty string:
+
+    // Firefox 33 or older
+    'x'.replace(/x(.)?/g, function(m, group) {
+      console.log("'group:" + group + "'");
+    });
+    // 'group:'
+
+    // Firefox 34 or newer
+    'x'.replace(/x(.)?/g, function(m, group) {
+      console.log("'group:" + group + "'");
+    });
+    // 'group:undefined'
+
+Note that due to web compatibility, `RegExp.$N` will still return an empty string instead of `undefined` ([bug 1053944](https://bugzilla.mozilla.org/show_bug.cgi?id=1053944)).
+
+## See also
+
+-   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+-   [`String.prototype.match()`](string/match)
+-   [`String.prototype.replace()`](string/replace)
+-   [`String.prototype.split()`](string/split)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp</a>
+
+# Intl.Locale.prototype.region
+
+The `Intl.Locale.prototype.region` property is an accessor property that returns the region of the world (usually a country) associated with the locale.
+
+## Description
+
+The region is an essential part of the locale identifier, as it places the locale in a specific area of the world. Knowing the locale's region is vital to identifying differences between locales. For example, English is spoken in the United Kingdom and the United States of America, but there are differences in spelling and other language conventions between those two countries. Knowing the locale's region helps JavaScript programmers make sure that the content from their sites and applications is correctly displayed when viewed from different areas of the world.
+
+## Examples
+
+### Setting the region in the locale identifer string argument
+
+The region is the third part of a valid Unicode language identifier string, and can be set by adding it to the locale identifier string that is passed into the [`Locale`](locale) constructor. The region is a mandatory part of a
+
+    let regionStr = new Intl.Locale("en-Latn-US");
+
+    console.log(regionStr.region); // Prints "US"
+
+### Setting the region via the configuration object
+
+The [`Locale`](locale) constructor takes a configuration object, which can be used to set the region subtag and property.
+
+    let regionObj = new Intl.Locale("fr-Latn", {region: "FR"});
+
+    console.log(regionObj.region); // Prints "FR"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-Intl.Locale.prototype.region</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`region`
+
+74
+
+79
+
+75
+
+No
+
+62
+
+14
+
+74
+
+74
+
+79
+
+53
+
+14
+
+11.0
+
+## See also
+
+-   [`Intl.Locale`](../locale)
+-   [Unicode region chart](https://www.unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region</a>
+
+# Promise.reject()
+
+The `Promise.reject()` method returns a `Promise` object that is rejected with a given reason.
+
+## Syntax
+
+    Promise.reject(reason);
+
+### Parameters
+
+`reason`
+Reason why this `Promise` rejected.
+
+### Return value
+
+A [`Promise`](../promise) that is rejected with the given reason.
+
+## Description
+
+The static `Promise.reject` function returns a `Promise` that is rejected. For debugging purposes and selective error catching, it is useful to make `reason` an `instanceof` [`Error`](../error).
+
+## Examples
+
+### Using the static Promise.reject() method
+
+    Promise.reject(new Error('fail')).then(function() {
+      // not called
+    }, function(error) {
+      console.error(error); // Stacktrace
+    });
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`reject`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [`Promise`](../promise)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject</a>
+
+# Intl.RelativeTimeFormat
+
+The `Intl.RelativeTimeFormat` object enables language-sensitive relative time formatting.
+
+## Constructor
+
+[`Intl.RelativeTimeFormat()`](relativetimeformat/relativetimeformat)
+Creates a new `Intl.RelativeTimeFormat` object.
+
+## Static methods
+
+[`Intl.RelativeTimeFormat.supportedLocalesOf()`](relativetimeformat/supportedlocalesof)
+Returns an array containing those of the provided locales that are supported without having to fall back to the runtime's default locale.
+
+## Instance methods
+
+[`Intl.RelativeTimeFormat.prototype.format()`](relativetimeformat/format)
+Formats a `value` and a `unit` according to the locale and formatting options of the given [`Intl.RelativeTimeFormat`](relativetimeformat) object.
+
+[`Intl.RelativeTimeFormat.prototype.formatToParts()`](relativetimeformat/formattoparts)
+Returns an [`Array`](../array) of objects representing the relative time format in parts that can be used for custom locale-aware formatting.
+
+[`Intl.RelativeTimeFormat.prototype.resolvedOptions()`](relativetimeformat/resolvedoptions)
+Returns a new object with properties reflecting the locale and formatting options computed during initialization of the object.
+
+## Examples
+
+### Basic format usage
+
+The following example shows how to use a relative time formatter for the English language.
+
+    // Create a relative time formatter in your locale
+    // with default values explicitly passed in.
+    const rtf = new Intl.RelativeTimeFormat("en", {
+        localeMatcher: "best fit", // other values: "lookup"
+        numeric: "always", // other values: "auto"
+        style: "long", // other values: "short" or "narrow"
+    });
+
+    // Format relative time using negative value (-1).
+    rtf.format(-1, "day");
+    // > "1 day ago"
+
+    // Format relative time using positive  value (1).
+    rtf.format(1, "day");
+    // > "in 1 day"
+
+### Using formatToParts
+
+The following example shows how to create a relative time formatter returning formatted parts
+
+    const rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
+
+    // Format relative time using the day unit.
+    rtf.formatToParts(-1, "day");
+    // > [{ type: "literal", value: "yesterday"}]
+
+    rtf.formatToParts(100, "day");
+    // > [{ type: "literal", value: "in " },
+    // >  { type: "integer", value: "100", unit: "day" },
+    // >  { type: "literal", value: " days" }]
+
+## Polyfill
+
+[formatjs Intl.RelativeTimeFormat polyfill](https://formatjs.io/docs/polyfills/intl-relativetimeformat)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#relativetimeformat-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`RelativeTimeFormat`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+`RelativeTimeFormat`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+`format`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+`formatToParts`
+
+71
+
+79
+
+70
+
+No
+
+58
+
+14
+
+71
+
+71
+
+79
+
+50
+
+14
+
+10.0
+
+`resolvedOptions`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+`supportedLocalesOf`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+## See also
+
+-   [`Intl`](../intl)
+-   [The Intl.RelativeTimeFormat API](https://developers.google.com/web/updates/2018/10/intl-relativetimeformat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat</a>
+
+# Remainder (%)
+
+The remainder operator (`%`) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
+
+Note that while in most languages, '%' is a remainder operator, in some (e.g. [Python, Perl](https://en.wikipedia.org/wiki/Modulo_operation#In_programming_languages)) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript, in place of `a % n`, use `((a % n ) + n ) % n`.
+
+## Syntax
+
+    Operator: var1 % var2
+
+## Examples
+
+### Remainder with positive dividend
+
+     12 % 5  //  2
+     1 % -2 //  1
+     1 % 2  //  1
+     2 % 3  //  2
+    5.5 % 2 // 1.5
+
+### Remainder with negative dividend
+
+    -12 % 5 // -2
+    -1 % 2  // -1
+    -4 % 2  // -0
+
+### Remainder with NaN
+
+    NaN % 2 // NaN
+
+### Remainder with Infinity
+
+    Infinity % 2 // NaN
+    Infinity % 0 // NaN
+    Infinity % Infinity // NaN
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Remainder`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Addition operator](addition)
+-   [Subtraction operator](subtraction)
+-   [Division operator](division)
+-   [Multiplication operator](multiplication)
+-   [Exponentiation operator](exponentiation)
+-   [Increment operator](increment)
+-   [Decrement operator](decrement)
+-   [Unary negation operator](unary_negation)
+-   [Unary plus operator](unary_plus)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a>
+
+# String.prototype.repeat()
+
+The `repeat()` method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
+## Syntax
+
+    repeat(count)
+
+### Parameters
+
+`count`
+An integer between `0` and [`+Infinity`](../number/positive_infinity), indicating the number of times to repeat the string.
+
+### Return value
+
+A new string containing the specified number of copies of the given string.
+
+### Exceptions
+
+-   [`RangeError`](../../errors/negative_repetition_count): repeat count must be non-negative.
+-   [`RangeError`](../../errors/resulting_string_too_large): repeat count must be less than infinity and not overflow maximum string size.
+
+## Examples
+
+### Using repeat()
+
+    'abc'.repeat(-1)    // RangeError
+    'abc'.repeat(0)     // ''
+    'abc'.repeat(1)     // 'abc'
+    'abc'.repeat(2)     // 'abcabc'
+    'abc'.repeat(3.5)   // 'abcabcabc' (count will be converted to integer)
+    'abc'.repeat(1/0)   // RangeError
+
+    ({ toString: () => 'abc', repeat: String.prototype.repeat }).repeat(2)
+    // 'abcabc' (repeat() is a generic method)
+
+## Polyfill
+
+This method has been added to the ECMAScript 2015 specification and may not be available in all JavaScript implementations yet. However, you can polyfill `String.prototype.repeat()` with the following snippet:
+
+    if (!String.prototype.repeat) {
+      String.prototype.repeat = function(count) {
+        'use strict';
+        if (this == null)
+          throw new TypeError('can\'t convert ' + this + ' to object');
+
+        var str = '' + this;
+        // To convert string to integer.
+        count = +count;
+        // Check NaN
+        if (count != count)
+          count = 0;
+
+        if (count < 0)
+          throw new RangeError('repeat count must be non-negative');
+
+        if (count == Infinity)
+          throw new RangeError('repeat count must be less than infinity');
+
+        count = Math.floor(count);
+        if (str.length == 0 || count == 0)
+          return '';
+
+        // Ensuring count is a 31-bit integer allows us to heavily optimize the
+        // main part. But anyway, most current (August 2014) browsers can't handle
+        // strings 1 << 28 chars or longer, so:
+        if (str.length * count >= 1 << 28)
+          throw new RangeError('repeat count must not overflow maximum string size');
+
+        var maxCount = str.length * count;
+        count = Math.floor(Math.log(count) / Math.log(2));
+        while (count) {
+           str += str;
+           count--;
+        }
+        str += str.substring(0, maxCount - str.length);
+        return str;
+      }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.repeat' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`repeat`
+
+41
+
+12
+
+24
+
+No
+
+28
+
+9
+
+41
+
+36
+
+24
+
+28
+
+9
+
+3.0
+
+## See also
+
+-   [`String.prototype.concat()`](concat)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a>
+
+# String.prototype.replace()
+
+The `replace()` method returns a new string with some or all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a [`RegExp`](../regexp), and the `replacement` can be a string or a function to be called for each match. If `pattern` is a string, only the first occurrence will be replaced.
+
+The original string is left unchanged.
+
+## Syntax
+
+    replace(regexp, newSubstr)
+    replace(regexp, replacerFunction)
+
+    replace(substr, newSubstr)
+    replace(substr, replacerFunction)
+
+### Parameters
+
+`regexp` (pattern)
+A [`RegExp`](../regexp) object or literal. The match or matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`.
+
+`substr`
+A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is _not_ interpreted as a regular expression. Only the first occurrence will be replaced.
+
+`newSubstr` (replacement)
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)" section below.
+
+`replacerFunction` (replacement)
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)" section below.
+
+### Return value
+
+A new string, with some or all matches of a pattern replaced by a replacement.
+
+## Description
+
+This method does not change the calling [`String`](../string) object. It returns a new string.
+
+To perform a global search and replace, include the `g` switch in the regular expression.
+
+### Specifying a string as a parameter
+
+The replacement string can include the following special replacement patterns:
+
+<table><thead><tr class="header"><th>Pattern</th><th>Inserts</th></tr></thead><tbody><tr class="odd"><td><code>$$</code></td><td>Inserts a <code>"$"</code>.</td></tr><tr class="even"><td><code>$&amp;</code></td><td>Inserts the matched substring.</td></tr><tr class="odd"><td><code>$`</code></td><td>Inserts the portion of the string that precedes the matched substring.</td></tr><tr class="even"><td><code>$'</code></td><td>Inserts the portion of the string that follows the matched substring.</td></tr><tr class="odd"><td><code>$n</code></td><td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp"><code>RegExp</code></a> object. Note that this is <code>1</code>-indexed. If a group <code>n</code> is not present (e.g., if group is 3), it will be replaced as a literal (e.g., <code>$3</code>).</td></tr><tr class="even"><td><code>$&lt;Name&gt;</code></td><td>Where <code>Name</code> is a capturing group name. If the group is not in the match, or not in the regular expression, or if a string was passed as the first argument to <code>replace</code> instead of a regular expression, this resolves to a literal (e.g., <code>$&lt;Name&gt;</code>). Only available in browser versions supporting named capturing groups.</td></tr></tbody></table>
+
+### Specifying a function as a parameter
+
+You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function's result (return value) will be used as the replacement string. (**Note:** The above-mentioned special replacement patterns do _not_ apply in this case.)
+
+Note that the function will be invoked multiple times for each full match to be replaced if the regular expression in the first parameter is global.
+
+The arguments to the function are as follows:
+
+<table><thead><tr class="header"><th>Possible name</th><th>Supplied value</th></tr></thead><tbody><tr class="odd"><td><code>match</code></td><td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td></tr><tr class="even"><td><code>p1, p2, ...</code></td><td>The nth string found by a parenthesized capture group (including named capturing groups), provided the first argument to <code>replace()</code> was a <a href="../regexp"><code>RegExp</code></a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td></tr><tr class="odd"><td><code>offset</code></td><td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td></tr><tr class="even"><td><code>string</code></td><td>The whole string being examined.</td></tr><tr class="odd"><td><code>groups</code></td><td>In browser versions supporting named capturing groups, will be an object whose keys are the used group names, and whose values are the matched portions (<code>undefined</code> if not matched).</td></tr></tbody></table>
+
+(The exact number of arguments depends on whether the first argument is a [`RegExp`](../regexp) object—and, if so, how many parenthesized submatches it specifies.)
+
+The following example will set `newString` to `'abc - 12345 - #$*%'`:
+
+    function replacer(match, p1, p2, p3, offset, string) {
+      // p1 is nondigits, p2 digits, and p3 non-alphanumerics
+      return [p1, p2, p3].join(' - ');
+    }
+    let newString = 'abc12345#$*%'.replace(/([^\d]*)(\d*)([^\w]*)/, replacer);
+    console.log(newString);  // abc - 12345 - #$*%
+
+## Examples
+
+### Defining the regular expression in replace()
+
+In the following example, the regular expression is defined in `replace()` and includes the ignore case flag.
+
+    let str = 'Twas the night before Xmas...';
+    let newstr = str.replace(/xmas/i, 'Christmas');
+    console.log(newstr);  // Twas the night before Christmas...
+
+This logs `'Twas the night before Christmas...'`.
+
+**Note:** See [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) for more explanations about regular expressions.
+
+### Using global and ignore with replace()
+
+Global replace can only be done with a regular expression. In the following example, the regular expression includes the [global and ignore case flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2) which permits `replace()` to replace each occurrence of `'apples'` in the string with `'oranges'`.
+
+    let re = /apples/gi;
+    let str = 'Apples are round, and apples are juicy.';
+    let newstr = str.replace(re, 'oranges');
+    console.log(newstr);  // oranges are round, and oranges are juicy.
+
+This logs `'oranges are round, and oranges are juicy'`.
+
+### Switching words in a string
+
+The following script switches the words in the string. For the replacement text, the script uses [capturing groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges) and the `$1` and `$2` replacement patterns.
+
+    let re = /(\w+)\s(\w+)/;
+    let str = 'John Smith';
+    let newstr = str.replace(re, '$2, $1');
+    console.log(newstr);  // Smith, John
+
+This logs `'Smith, John'`.
+
+### Using an inline function that modifies the matched characters
+
+In this example, all occurrences of capital letters in the string are converted to lower case, and a hyphen is inserted just before the match location. The important thing here is that additional operations are needed on the matched item before it is given back as a replacement.
+
+The replacement function accepts the matched snippet as its parameter, and uses it to transform the case and concatenate the hyphen before returning.
+
+    function styleHyphenFormat(propertyName) {
+      function upperToHyphenLower(match, offset, string) {
+        return (offset > 0 ? '-' : '') + match.toLowerCase();
+      }
+      return propertyName.replace(/[A-Z]/g, upperToHyphenLower);
+    }
+
+Given `styleHyphenFormat('borderTop')`, this returns `'border-top'`.
+
+Because we want to further transform the _result_ of the match before the final substitution is made, we must use a function. This forces the evaluation of the match prior to the [`toLowerCase()`](tolowercase) method. If we had tried to do this using the match without a function, the [`toLowerCase()`](tolowercase) would have no effect.
+
+    let newString = propertyName.replace(/[A-Z]/g, '-' + '$&'.toLowerCase());  // won't work
+
+This is because `'$&'.toLowerCase()` would first be evaluated as a string literal (resulting in the same `'$&'`) before using the characters as a pattern.
+
+### Replacing a Fahrenheit degree with its Celsius equivalent
+
+The following example replaces a Fahrenheit degree with its equivalent Celsius degree. The Fahrenheit degree should be a number ending with `"F"`. The function returns the Celsius number ending with `"C"`. For example, if the input number is `"212F"`, the function returns `"100C"`. If the number is `"0F"`, the function returns `"-17.77777777777778C"`.
+
+The regular expression `test` checks for any number that ends with `F`. The number of Fahrenheit degree is accessible to the function through its second parameter, `p1`. The function sets the Celsius number based on the Fahrenheit degree passed in a string to the `f2c()` function. `f2c()` then returns the Celsius number. This function approximates Perl's `s///e` flag.
+
+    function f2c(x) {
+      function convert(str, p1, offset, s) {
+        return ((p1 - 32) * 5/9) + 'C';
+      }
+      let s = String(x);
+      let test = /(-?\d+(?:\.\d*)?)F\b/g;
+      return s.replace(test, convert);
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.replace' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`replace`
+
+1
+
+12
+
+1
+
+5.5
+
+4-5.5
+
+A replacement function as second argument is not supported.
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.replaceAll()`](replaceall)
+-   [`String.prototype.match()`](match)
+-   [`RegExp.prototype.exec()`](../regexp/exec)
+-   [`RegExp.prototype.test()`](../regexp/test)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace</a>
+
+# String.prototype.replaceAll()
+
+The `replaceAll()` method returns a new string with all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a [`RegExp`](../regexp), and the `replacement` can be a string or a function to be called for each match.
+
+The original string is left unchanged.
+
+## Syntax
+
+    replaceAll(regexp, newSubstr)
+    replaceAll(regexp, replacerFunction)
+
+    replaceAll(substr, newSubstr)
+    replaceAll(substr, replacerFunction)
+
+**Note:** When using a \`regexp\` you have to set the global ("g") flag; otherwise, it will throw a `TypeError`: "replaceAll must be called with a global RegExp".
+
+### Parameters
+
+`regexp` (pattern)
+A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global ("g") flag will throw a `TypeError`: "replaceAll must be called with a global RegExp".
+
+`substr`
+A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is _not_ interpreted as a regular expression.
+
+`newSubstr` (replacement)
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)" section below.
+
+`replacerFunction` (replacement)
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)" section below.
+
+### Return value
+
+A new string, with all matches of a pattern replaced by a replacement.
+
+## Description
+
+This method does not change the calling [`String`](../string) object. It returns a new string.
+
+### Specifying a string as a parameter
+
+The replacement string can include the following special replacement patterns:
+
+<table><thead><tr class="header"><th>Pattern</th><th>Inserts</th></tr></thead><tbody><tr class="odd"><td><code>$$</code></td><td>Inserts a <code>"$"</code>.</td></tr><tr class="even"><td><code>$&amp;</code></td><td>Inserts the matched substring.</td></tr><tr class="odd"><td><code>$`</code></td><td>Inserts the portion of the string that precedes the matched substring.</td></tr><tr class="even"><td><code>$'</code></td><td>Inserts the portion of the string that follows the matched substring.</td></tr><tr class="odd"><td><code>$n</code></td><td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp"><code>RegExp</code></a> object. Note that this is <code>1</code>-indexed.</td></tr></tbody></table>
+
+### Specifying a function as a parameter
+
+You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function's result (return value) will be used as the replacement string. (**Note:** The above-mentioned special replacement patterns do _not_ apply in this case.)
+
+Note that if the first argument of an `replaceAll()` invocation is a [`RegExp`](../regexp) object or regular expression literal, the function will be invoked multiple times.
+
+The arguments to the function are as follows:
+
+<table><thead><tr class="header"><th>Possible name</th><th>Supplied value</th></tr></thead><tbody><tr class="odd"><td><code>match</code></td><td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td></tr><tr class="even"><td><code>p1, p2, ...</code></td><td>The nth string found by a parenthesized capture group, provided the first argument to <code>replaceAll()</code> was a <a href="../regexp"><code>RegExp</code></a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td></tr><tr class="odd"><td><code>offset</code></td><td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td></tr><tr class="even"><td><code>string</code></td><td>The whole string being examined.</td></tr></tbody></table>
+
+(The exact number of arguments depends on whether the first argument is a [`RegExp`](../regexp) object—and, if so, how many parenthesized submatches it specifies.)
+
+## Examples
+
+### Using replaceAll
+
+    'aabbcc'.replaceAll('b', '.');
+    // 'aa..cc'
+
+### Non-global regex throws
+
+When using a regular expression search value, it must be global. This won't work:
+
+    'aabbcc'.replaceAll(/b/, '.');
+    TypeError: replaceAll must be called with a global RegExp
+
+This will work:
+
+    'aabbcc'.replaceAll(/b/g, '.');
+    "aa..cc"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.replaceAll' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`replaceAll`
+
+85
+
+85
+
+77
+
+No
+
+71
+
+13.1
+
+85
+
+85
+
+79
+
+60
+
+13.4
+
+No
+
+## See also
+
+-   [`String.prototype.replace()`](replace)
+-   [`String.prototype.match()`](match)
+-   [`RegExp.prototype.exec()`](../regexp/exec)
+-   [`RegExp.prototype.test()`](../regexp/test)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll</a>
+
+# SyntaxError: "x" is a reserved identifier
+
+The JavaScript exception "_variable_ is a reserved identifier" occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
+
+## Message
+
+    SyntaxError: The use of a future reserved word for an identifier is invalid (Edge)
+    SyntaxError: "x" is a reserved identifier (Firefox)
+    SyntaxError: Unexpected reserved word (Chrome)
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror)
+
+## What went wrong?
+
+[Reserved keywords](../lexical_grammar#keywords) will throw in if they are used as identifiers. These are reserved in strict mode and sloppy mode:
+
+-   `enum`
+
+The following are only reserved when they are found in strict mode code:
+
+-   `implements`
+-   `interface`
+-   [`let`](../statements/let)
+-   `package`
+-   `private`
+-   `protected`
+-   `public`
+-   `static`
+
+## Examples
+
+### Strict and non-strict reserved keywords
+
+The `enum` identifier is generally reserved.
+
+    var enum = { RED: 0, GREEN: 1, BLUE: 2 };
+    // SyntaxError: enum is a reserved identifier
+
+In strict mode code, more identifiers are reserved.
+
+    "use strict";
+    var package = ["potatoes", "rice", "fries"];
+    // SyntaxError: package is a reserved identifier
+
+You'll need to rename these variables.
+
+    var colorEnum = { RED: 0, GREEN: 1, BLUE: 2 };
+    var list = ["potatoes", "rice", "fries"];
+
+### Update older browsers
+
+If you are using an older browser that does not yet implement `let` or `class`, for example, you should update to a more recent browser version that does support these new language features.
+
+    "use strict";
+    class DocArchiver {}
+
+    // SyntaxError: class is a reserved identifier
+    // (throws in older browsers only, e.g. Firefox 44 and older)
+
+## See also
+
+-   [Good variable names](https://wiki.c2.com/?GoodVariableNames)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reserved_identifier" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Reserved_identifier</a>
+
+# Promise.resolve()
+
+The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will "follow" that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
+
+## Syntax
+
+    Promise.resolve(value);
+
+### Parameters
+
+`value`
+Argument to be resolved by this `Promise`. Can also be a `Promise` or a thenable to resolve.
+
+### Return value
+
+A [`Promise`](../promise) that is resolved with the given value, or the promise passed as value, if the value was a promise object.
+
+## Description
+
+The static `Promise.resolve` function returns a `Promise` that is resolved.
+
+## Examples
+
+### Using the static Promise.resolve method
+
+    Promise.resolve('Success').then(function(value) {
+      console.log(value); // "Success"
+    }, function(value) {
+      // not called
+    });
+
+### Resolving an array
+
+    var p = Promise.resolve([1,2,3]);
+    p.then(function(v) {
+      console.log(v[0]); // 1
+    });
+
+### Resolving another Promise
+
+    var original = Promise.resolve(33);
+    var cast = Promise.resolve(original);
+    cast.then(function(value) {
+      console.log('value: ' + value);
+    });
+    console.log('original === cast ? ' + (original === cast));
+
+    // logs, in order:
+    // original === cast ? true
+    // value: 33
+
+The inverted order of the logs is due to the fact that the `then` handlers are called asynchronously. See how `then` works [here](then#return_value).
+
+### Resolving thenables and throwing Errors
+
+    // Resolving a thenable object
+    var p1 = Promise.resolve({
+      then: function(onFulfill, onReject) { onFulfill('fulfilled!'); }
+    });
+    console.log(p1 instanceof Promise) // true, object casted to a Promise
+
+    p1.then(function(v) {
+        console.log(v); // "fulfilled!"
+      }, function(e) {
+        // not called
+    });
+
+    // Thenable throws before callback
+    // Promise rejects
+    var thenable = { then: function(resolve) {
+      throw new TypeError('Throwing');
+      resolve('Resolving');
+    }};
+
+    var p2 = Promise.resolve(thenable);
+    p2.then(function(v) {
+      // not called
+    }, function(e) {
+      console.error(e); // TypeError: Throwing
+    });
+
+    // Thenable throws after callback
+    // Promise resolves
+    var thenable = { then: function(resolve) {
+      resolve('Resolving');
+      throw new TypeError('Throwing');
+    }};
+
+    var p3 = Promise.resolve(thenable);
+    p3.then(function(v) {
+      console.log(v); // "Resolving"
+    }, function(e) {
+      // not called
+    });
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-promise.resolve</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`resolve`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [`Promise`](../promise)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</a>
+
+# Intl.NumberFormat.prototype.resolvedOptions()
+
+The `Intl.NumberFormat.prototype.resolvedOptions()` method returns a new object with properties reflecting the locale and number formatting options computed during initialization of this [`Intl/NumberFormat`](../numberformat) object.
+
+## Syntax
+
+    resolvedOptions()
+
+### Return value
+
+A new object with properties reflecting the locale and number formatting options computed during the initialization of the given [`Intl/NumberFormat`](../numberformat) object.
+
+## Description
+
+The resulting object has the following properties:
+
+`locale`
+The BCP 47 language tag for the locale actually used. If any Unicode extension values were requested in the input BCP 47 language tag that led to this locale, the key-value pairs that were requested and are supported for this locale are included in `locale`.
+
+`numberingSystem`
+The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key "`nu`" or filled in as a default.
+
+`notation`
+The value provided for this property in the `options` argument, if present, or "`standard`" filled in as a default.
+
+`compactDisplay`
+The value provided for this property in the `options` argument, or "`short`" filled in as a default.
+This property is only present if the `notation` is set to "compact".
+
+`signDisplay`
+The value provided for this property in the `options` argument, or "`auto`" filled in as a default.
+
+`useGrouping`
+The values provided for these properties in the `options` argument or filled in as defaults.
+
+`currency`
+`currencyDisplay`
+The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is "`currency`".
+
+Only one of the following two groups of properties is included:
+
+`minimumIntegerDigits`
+`minimumFractionDigits`
+`maximumFractionDigits`
+The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if neither `minimumSignificantDigits` nor `maximumSignificantDigits` was provided in the `options` argument.
+
+`minimumSignificantDigits`
+`maximumSignificantDigits`
+The values provided for these properties in the `options` argument or filled in as defaults. These properties are present only if at least one of them was provided in the `options` argument.
+
+## Examples
+
+### Using the `resolvedOptions` method
+
+    var de = new Intl.NumberFormat('de-DE');
+    var usedOptions = de.resolvedOptions();
+
+    usedOptions.locale;                // "de-DE"
+    usedOptions.numberingSystem;       // "latn"
+    usedOptions.notation;              // "standard"
+    usedOptions.signDisplay;           // "auto"
+    usedOption.style;                  // "decimal"
+    usedOptions.minimumIntegerDigits;  // 1
+    usedOptions.minimumFractionDigits; // 0
+    usedOptions.maximumFractionDigits; // 3
+    usedOptions.useGrouping;           // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`resolvedOptions`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+## See also
+
+-   [`Intl.NumberFormat`](../numberformat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/resolvedOptions</a>
+
+# Rest parameters
+
+The **rest parameter** syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
+
+## Syntax
+
+    function f(a, b, ...theArgs) {
+      // ...
+    }
+
+## Description
+
+A function definition's last parameter can be prefixed with "`...`" (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a ["standard" JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
+
+    function myFun(a,  b, ...manyMoreArgs) {
+      console.log("a", a)
+      console.log("b", b)
+      console.log("manyMoreArgs", manyMoreArgs)
+    }
+
+    myFun("one", "two", "three", "four", "five", "six")
+
+    // Console Output:
+    // a, one
+    // b, two
+    // manyMoreArgs, ["three", "four", "five", "six"]
+
+#### Quick reference
+
+A function definition can have only one `...`restParam.
+
+    foo(...one, ...wrong, ...wrong)
+
+The rest parameter must be the last parameter in the function definition.
+
+    foo(...wrong, arg2, arg3)
+
+    foo(arg1, arg2, ...correct)
+
+### The difference between rest parameters and the `arguments` object
+
+There are three main differences between rest parameters and the [`arguments`](arguments) object:
+
+-   The `arguments` object is **not a real array**, while rest parameters are [`Array`](../global_objects/array) instances, meaning methods like [`sort`](../global_objects/array/sort), [`map`](../global_objects/array/map), [`forEach`](../global_objects/array/foreach) or [`pop`](../global_objects/array/pop) can be applied on it directly;
+-   The `arguments` object has additional functionality specific to itself (like the `callee` property).
+-   The `...restParam` bundles all the extra parameters into a single array, therefore it does not contain any named argument defined **before** the `...restParam`. Whereas the `arguments` object contains all of the parameters -- including all of the stuff in the `...restParam` -- **un**bundled.
+
+### From arguments to an array
+
+Rest parameters were introduced to reduce the boilerplate code that was commonly used for converting a set of arguments to an array.
+
+    // Before rest parameters, "arguments" could be converted to a normal array using:
+
+    function f(a, b) {
+
+      let normalArray = Array.prototype.slice.call(arguments)
+      // -- or --
+      let normalArray = [].slice.call(arguments)
+      // -- or --
+      let normalArray = Array.from(arguments)
+
+      let first = normalArray.shift()  // OK, gives the first argument
+      let first = arguments.shift()    // ERROR (arguments is not a normal array)
+    }
+
+    // Now, you can easily gain access to a normal array using a rest parameter
+
+    function f(...args) {
+      let normalArray = args
+      let first = normalArray.shift() // OK, gives the first argument
+    }
+
+## Examples
+
+### Using rest parameters
+
+In this example, the first argument is mapped to `a` and the second to `b`, so these named arguments are used as normal.
+
+However, the third argument, `manyMoreArgs`, will be an array that contains the 3<sup>rd</sup>, 4<sup>th</sup>, 5<sup>th</sup>, 6<sup>th</sup> ... n<sup>th</sup> — as many arguments that the user includes.
+
+    function myFun(a, b, ...manyMoreArgs) {
+      console.log("a", a)
+      console.log("b", b)
+      console.log("manyMoreArgs", manyMoreArgs)
+    }
+
+    myFun("one", "two", "three", "four", "five", "six")
+
+    // a, "one"
+    // b, "two"
+    // manyMoreArgs, ["three", "four", "five", "six"] <-- notice it's an array
+
+Below, even though there is just one value, the last argument still gets put into an array.
+
+    // using the same function definition from example above
+
+    myFun("one", "two", "three")
+
+    // a, "one"
+    // b, "two"
+    // manyMoreArgs, ["three"] <-- notice it's an array, even though there's just one value
+
+Below, the third argument isn't provided, but `manyMoreArgs` is still an array (albeit an empty one).
+
+    // using the same function definition from example above
+
+    myFun("one", "two")
+
+    // a, "one"
+    // b, "two"
+    // manyMoreArgs, [] <-- yip, still an array
+
+### Argument length
+
+Since `theArgs` is an array, a count of its elements is given by the `length` property:
+
+    function fun1(...theArgs) {
+      console.log(theArgs.length)
+    }
+
+    fun1()         // 0
+    fun1(5)        // 1
+    fun1(5, 6, 7)  // 3
+
+### Using rest parameters in combination with ordinary parameters
+
+In the next example, a rest parameter is used to collect all parameters after the first parameter into an array. Each one of the parameter values collected into the array is then multiplied by the first parameter, and the array is returned:
+
+    function multiply(multiplier, ...theArgs) {
+      return theArgs.map(element => {
+        return multiplier * element
+      })
+    }
+
+    let arr = multiply(2, 15, 25, 42)
+    console.log(arr)  // [30, 50, 84]
+
+### Rest parameters are real arrays; the arguments object is not.
+
+`Array` methods can be used on rest parameters, but not on the `arguments` object:
+
+    function sortRestArgs(...theArgs) {
+      let sortedArgs = theArgs.sort()
+      return sortedArgs
+    }
+
+    console.log(sortRestArgs(5, 3, 7, 1)) // 1, 3, 5, 7
+
+    function sortArguments() {
+      let sortedArgs = arguments.sort()
+      return sortedArgs  // this will never happen
+    }
+
+    console.log(sortArguments(5, 3, 7, 1))
+    // throws a TypeError (arguments.sort is not a function)
+
+To use `Array` methods on the `arguments` object, it must be converted to a real array first.
+
+    function sortArguments() {
+      let args = Array.from(arguments)
+      let sortedArgs = args.sort()
+      return sortedArgs
+    }
+    console.log(sortArguments(5, 3, 7, 1))  // 1, 3, 5, 7
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`rest_parameters`
+
+47
+
+12
+
+15
+
+No
+
+34
+
+10
+
+47
+
+47
+
+15
+
+34
+
+10
+
+5.0
+
+`destructuring`
+
+49
+
+79
+
+52
+
+No
+
+36
+
+10
+
+49
+
+49
+
+52
+
+36
+
+10
+
+5.0
+
+## See also
+
+-   [Spread syntax](../operators/spread_syntax) (also '`...`')
+-   [Arguments object](arguments)
+-   [Array](../global_objects/array)
+-   [Functions](../functions)
+-   [Original proposal at ecmascript.org](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)
+-   [JavaScript arguments object and beyond](https://javascriptweblog.wordpress.com/2011/01/18/javascripts-arguments-object-and-beyond/)
+-   [Destructuring assignment](../operators/destructuring_assignment)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters</a>
+
+# RangeError: repeat count must be less than infinity
+
+The JavaScript exception "repeat count must be less than infinity" occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is infinity.
+
+## Message
+
+    RangeError: argument out of range (Edge)
+    RangeError: repeat count must be less than infinity and not overflow maximum string size (Firefox)
+    RangeError: Invalid count value (Chrome)
+
+## Error type
+
+[`RangeError`](../global_objects/rangeerror)
+
+## What went wrong?
+
+The [`String.prototype.repeat()`](../global_objects/string/repeat) method has been used. It has a `count` parameter indicating the number of times to repeat the string. It must be between 0 and less than positive [`Infinity`](../global_objects/infinity) and cannot be a negative number. The range of allowed values can be described like this: \[0, +∞).
+
+The resulting string can also not be larger than the maximum string size, which can differ in JavaScript engines. In Firefox (SpiderMonkey) the maximum string size is 2<sup>28</sup> -1 (`0xFFFFFFF`).
+
+## Examples
+
+### Invalid cases
+
+    'abc'.repeat(Infinity); // RangeError
+    'a'.repeat(2**28);      // RangeError
+
+### Valid cases
+
+    'abc'.repeat(0);    // ''
+    'abc'.repeat(1);    // 'abc'
+    'abc'.repeat(2);    // 'abcabc'
+    'abc'.repeat(3.5);  // 'abcabcabc' (count will be converted to integer)
+
+## See also
+
+-   [`String.prototype.repeat()`](../global_objects/string/repeat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Resulting_string_too_large" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Resulting_string_too_large</a>
+
+# return
+
+The `return` statement ends function execution and specifies a value to be returned to the function caller.
+
+## Syntax
+
+    return [expression];
+
+`expression`
+The expression whose value is to be returned. If omitted, `undefined` is returned instead.
+
+## Description
+
+When a `return` statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. For example, the following function returns the square of its argument, `x`, where `x` is a number.
+
+    function square(x) {
+       return x * x;
+    }
+    var demo = square(3);
+    // demo will equal 9
+
+If the value is omitted, `undefined` is returned instead.
+
+The following return statements all break the function execution:
+
+    return;
+    return true;
+    return false;
+    return x;
+    return x + y / 3;
+
+### Automatic Semicolon Insertion
+
+The `return` statement is affected by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). No line terminator is allowed between the `return` keyword and the expression.
+
+    return
+    a + b;
+
+is transformed by ASI into:
+
+    return;
+    a + b;
+
+The console will warn "unreachable code after return statement".
+
+**Note:** Starting with Firefox 40, a warning is shown in the console if unreachable code is found after a `return` statement.
+
+To avoid this problem (to prevent ASI), you could use parentheses:
+
+    return (
+      a + b
+    );
+
+## Examples
+
+### Interrupt a function
+
+A function immediately stops at the point where `return` is called.
+
+    function counter() {
+      for (var count = 1; ; count++) {  // infinite loop
+        console.log(count + 'A'); // until 5
+          if (count === 5) {
+            return;
+          }
+          console.log(count + 'B');  // until 4
+        }
+      console.log(count + 'C');  // never appears
+    }
+
+    counter();
+
+    // Output:
+    // 1A
+    // 1B
+    // 2A
+    // 2B
+    // 3A
+    // 3B
+    // 4A
+    // 4B
+    // 5A
+
+### Returning a function
+
+See also the article about [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+
+    function magic() {
+      return function calc(x) { return x * 42; };
+    }
+
+    var answer = magic();
+    answer(1337); // 56154
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-return-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`return`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Functions](../functions)
+-   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return</a>
+
+# Array.prototype.reverse()
+
+The `reverse()` method reverses an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_. The first array element becomes the last, and the last array element becomes the first.
+
+## Syntax
+
+    reverse()
+
+### Return value
+
+The reversed array.
+
+## Description
+
+The `reverse` method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
+
+`reverse` is intentionally generic; this method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.
+
+## Examples
+
+### Reversing the elements in an array
+
+The following example creates an array `a`, containing three elements, then reverses the array. The call to `reverse()` returns a reference to the reversed array `a`.
+
+    const a = [1, 2, 3];
+
+    console.log(a); // [1, 2, 3]
+
+    a.reverse();
+
+    console.log(a); // [3, 2, 1]
+
+### Reversing the elements in an array-like object
+
+The following example creates an array-like object `a`, containing three elements and a length property, then reverses the array-like object. The call to `reverse()` returns a reference to the reversed array-like object `a`.
+
+    const a = {0: 1, 1: 2, 2: 3, length: 3};
+
+    console.log(a); // {0: 1, 1: 2, 2: 3, length: 3}
+
+    Array.prototype.reverse.call(a); //same syntax for using apply()
+
+    console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.reverse</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`reverse`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.join()`](join)
+-   [`Array.prototype.sort()`](sort)
+-   [`TypedArray.prototype.reverse()`](../typedarray/reverse)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse</a>
+
+# Proxy.revocable()
+
+The `Proxy.revocable()` method is used to create a revocable [`Proxy`](../proxy) object.
+
+## Syntax
+
+    Proxy.revocable(target, handler);
+
+### Parameters
+
+`target`
+A target object to wrap with `Proxy`. It can be any sort of object, including a native array, a function, or even another proxy.
+
+`handler`
+An object whose properties are functions define the behavior of proxy `p` when an operation is performed on it.
+
+### Return value
+
+A newly created revocable `Proxy` object is returned.
+
+## Description
+
+A revocable `Proxy` is an object with following two properties `{proxy: proxy, revoke: revoke}`.
+
+`proxy`
+A Proxy object created with `new Proxy(target, handler)` call.
+
+`revoke`
+A function with no argument to invalidate (switch off) the `proxy`.
+
+If the `revoke()` function gets called, the proxy becomes unusable: Any trap to a handler will throw a [`TypeError`](../typeerror). Once a proxy is revoked, it will remain revoked and can be garbage collected. Calling `revoke()` again has no effect.
+
+## Examples
+
+### Using Proxy.revocable
+
+    var revocable = Proxy.revocable({}, {
+      get: function(target, name) {
+        return "[[" + name + "]]";
+      }
+    });
+    var proxy = revocable.proxy;
+    console.log(proxy.foo); // "[[foo]]"
+
+    revocable.revoke();
+
+    console.log(proxy.foo); // TypeError is thrown
+    proxy.foo = 1           // TypeError again
+    delete proxy.foo;       // still TypeError
+    typeof proxy            // "object", typeof doesn't trigger any trap
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-proxy.revocable</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`revocable`
+
+63
+
+12
+
+34
+
+No
+
+50
+
+10
+
+63
+
+63
+
+34
+
+46
+
+10
+
+8.0
+
+## See also
+
+-   [`Proxy`](../proxy)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable</a>
+
+# Right shift (&gt;&gt;)
+
+The `>>` shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name "sign-propagating".
+
+## Syntax
+
+    a >> b
+
+## Description
+
+This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name "sign-propagating".
+
+For example, `9 >> 2` yields 2:
+
+    .    9 (base 10): 00000000000000000000000000001001 (base 2)
+                      --------------------------------
+    9 >> 2 (base 10): 00000000000000000000000000000010 (base 2) = 2 (base 10)
+
+Likewise, `-9 >> 2` yields `-3`, because the sign is preserved:
+
+    .    -9 (base 10): 11111111111111111111111111110111 (base 2)
+                       --------------------------------
+    -9 >> 2 (base 10): 11111111111111111111111111111101 (base 2) = -3 (base 10)
+
+## Examples
+
+### Using right shift
+
+     9 >> 2; //  2
+    -9 >> 2; // -3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#prod-BitwiseORExpression</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Right_shift`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+-   [Right shift assignment operator](right_shift_assignment)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift</a>
+
+# Right shift assignment (&gt;&gt;=)
+
+The right shift assignment operator (`>>=`) moves the specified amount of bits to the right and assigns the result to the variable.
+
+## Syntax
+
+    Operator: x >>= y
+    Meaning:  x   = x >> y
+
+## Examples
+
+### Using right shift assignment
+
+    let a = 5; //   (00000000000000000000000000000101)
+    a >>= 2;   // 1 (00000000000000000000000000000001)
+
+    let b = -5; //  (-00000000000000000000000000000101)
+    b >>= 2;  // -2 (-00000000000000000000000000000010)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Right_shift_assignment`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+-   [Right shift operator](right_shift)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment</a>
+
+# Math.round()
+
+The `Math.round()` function returns the value of a number rounded to the nearest integer.
+
+## Syntax
+
+    Math.round(x)
+
+### Parameters
+
+`x`
+A number.
+
+### Return value
+
+The value of the given number rounded to the nearest integer.
+
+## Description
+
+If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value. If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞. **Note that this differs from many languages' `round()` functions, which often round this case to the next integer _away from zero_**, instead giving a different result in the case of negative numbers with a fractional part of exactly 0.5.
+
+Because `round()` is a static method of `Math`, you always use it as `Math.round()`, rather than as a method of a `Math` object you created (`Math` has no constructor).
+
+## Examples
+
+### Using round
+
+    Math.round( 20.49); //  20
+    Math.round( 20.5 ); //  21
+    Math.round( 42   ); //  42
+    Math.round(-20.5 ); // -20
+    Math.round(-20.51); // -21
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.round</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`round`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Number.toPrecision()`](../number/toprecision)
+-   [`Number.toFixed()`](../number/tofixed)
+-   [`Math.abs()`](abs)
+-   [`Math.ceil()`](ceil)
+-   [`Math.floor()`](floor)
+-   [`Math.sign()`](sign)
+-   [`Math.trunc()`](trunc)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</a>
+
+# WebAssembly.RuntimeError
+
+The `WebAssembly.RuntimeError` object is the error type that is thrown whenever WebAssembly specifies a [trap](https://webassembly.org/docs/semantics/#traps).
+
+## Constructor
+
+[`WebAssembly.RuntimeError()`](runtimeerror/runtimeerror)
+Creates a new `WebAssembly.RuntimeError` object.
+
+## Instance properties
+
+[`WebAssembly.RuntimeError.prototype.message`](../error/message)
+Error message. Although ECMA-262 specifies that [`URIError`](../urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](../error/message).
+
+[`WebAssembly.RuntimeError.prototype.name`](../error/name)
+Error name. Inherited from [`Error`](../error).
+
+[`WebAssembly.RuntimeError.prototype.fileName`](../error/filename)
+Path to file that raised this error. Inherited from [`Error`](../error).
+
+[`WebAssembly.RuntimeError.prototype.lineNumber`](../error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](../error).
+
+[`WebAssembly.RuntimeError.prototype.columnNumber`](../error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](../error).
+
+[`WebAssembly.RuntimeError.prototype.stack`](../error/stack)
+Stack trace. Inherited from [`Error`](../error).
+
+## Instance methods
+
+[`WebAssembly.RuntimeError.prototype.toSource()`](../error/tosource)
+Returns code that could eval to the same error. Inherited from [`Error`](../error).
+
+[`WebAssembly.RuntimeError.prototype.toString()`](../error/tostring)
+Returns a string representing the specified `Error` object.. Inherited from [`Error`](../error).
+
+## Examples
+
+### Creating a new RuntimeError instance
+
+The following snippet creates a new `RuntimeError` instance, and logs its details to the console:
+
+    try {
+      throw new WebAssembly.RuntimeError('Hello', 'someFile', 10);
+    } catch (e) {
+      console.log(e instanceof WebAssembly.RuntimeError); // true
+      console.log(e.message);                             // "Hello"
+      console.log(e.name);                                // "RuntimeError"
+      console.log(e.fileName);                            // "someFile"
+      console.log(e.lineNumber);                          // 10
+      console.log(e.columnNumber);                        // 0
+      console.log(e.stack);                               // returns the location where the code was run
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
+<br/>
+
+<span class="small">#exceptiondef-runtimeerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-native-error-types-used-in-this-standard</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`RuntimeError`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`RuntimeError`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+## See also
+
+-   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+-   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+-   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError</a>
+
+# Intl.Locale.prototype.script
+
+The `Intl.Locale.prototype.script` property is an accessor property which returns the script used for writing the particular language used in the locale.
+
+## Description
+
+A script, sometimes called writing system, is one of the core attributes of a locale. It indicates the set of symbols, or glyphs, that are used to write a particular language. For instance, the script associated with English is Latin, whereas the script typically associated with Korean is Hangul. In many cases, denoting a script is not strictly necessary, since the language (which is necessary) is only written in a single script. There are exceptions to this rule, however, and it is important to indicate the script whenever possible, in order to have a complete Unicode language identifier.
+
+## Examples
+
+### Setting the script in the locale identifer string argument
+
+The script is the second part of a valid Unicode language identifier string, and can be set by adding it to the locale identifier string that is passed into the [`Locale`](locale) constructor. Note that the script is not a required part of a locale identifier.
+
+    let scriptStr = new Intl.Locale("en-Latn-US");
+
+    console.log(scriptStr.script); // Prints "Latn"
+
+### Setting the script via the configuration object
+
+The [`Locale`](locale) constructor takes a configuration object, which can be used to set the script subtag and property.
+
+    let scriptObj = new Intl.Locale("fr-FR", {script: "Latn"});
+
+    console.log(scriptObj.script); // Prints "Latn"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-Intl.Locale.prototype.script</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`script`
+
+74
+
+79
+
+75
+
+No
+
+62
+
+14
+
+74
+
+74
+
+79
+
+53
+
+14
+
+11.0
+
+## See also
+
+-   [`Intl.Locale`](../locale)
+-   [Unicode's script subtag specification](https://www.unicode.org/reports/tr35/#unicode_script_subtag_validity)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script</a>
+
+# Object.seal()
+
+The `Object.seal()` method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.
+
+## Syntax
+
+    Object.seal(obj)
+
+### Parameters
+
+`obj`
+The object which should be sealed.
+
+### Return value
+
+The object being sealed.
+
+## Description
+
+By default, objects are [extensible](isextensible) (new properties can be added to them). Sealing an object prevents new properties from being added and marks all existing properties as non-configurable. This has the effect of making the set of properties on the object fixed. Making all properties non-configurable also prevents them from being converted from data properties to accessor properties and vice versa, but it does not prevent the values of data properties from being changed. Attempting to delete or add properties to a sealed object, or to convert a data property to accessor or vice versa, will fail, either silently or by throwing a [`TypeError`](../typeerror) (most commonly, although not exclusively, when in [strict mode](../../strict_mode) code).
+
+The prototype chain remains untouched. However, the [`__proto__`](proto) property is sealed as well.
+
+### Comparison to Object.freeze()
+
+Existing properties in objects frozen with [`Object.freeze()`](freeze) are made immutable. Objects sealed with `Object.seal()` can have their existing properties changed.
+
+## Examples
+
+### Using Object.seal
+
+    var obj = {
+      prop: function() {},
+      foo: 'bar'
+    };
+
+    // New properties may be added, existing properties
+    // may be changed or removed.
+    obj.foo = 'baz';
+    obj.lumpy = 'woof';
+    delete obj.prop;
+
+    var o = Object.seal(obj);
+
+    o === obj; // true
+    Object.isSealed(obj); // === true
+
+    // Changing property values on a sealed object
+    // still works.
+    obj.foo = 'quux';
+
+    // But you can't convert data properties to accessors,
+    // or vice versa.
+    Object.defineProperty(obj, 'foo', {
+      get: function() { return 'g'; }
+    }); // throws a TypeError
+
+    // Now any changes, other than to property values,
+    // will fail.
+    obj.quaxxor = 'the friendly duck';
+    // silently doesn't add the property
+    delete obj.foo;
+    // silently doesn't delete the property
+
+    // ...and in strict mode such attempts
+    // will throw TypeErrors.
+    function fail() {
+      'use strict';
+      delete obj.foo; // throws a TypeError
+      obj.sparky = 'arf'; // throws a TypeError
+    }
+    fail();
+
+    // Attempted additions through
+    // Object.defineProperty will also throw.
+    Object.defineProperty(obj, 'ohai', {
+      value: 17
+    }); // throws a TypeError
+    Object.defineProperty(obj, 'foo', {
+      value: 'eit'
+    }); // changes existing property value
+
+### Non-object coercion
+
+In ES5, if the argument to this method is not an object (a primitive), then it will cause a [`TypeError`](../typeerror). In ES2015, a non-object argument will be treated as if it was a sealed ordinary object by returning it.
+
+    Object.seal(1);
+    // TypeError: 1 is not an object (ES5 code)
+
+    Object.seal(1);
+    // 1                             (ES2015 code)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Object.seal' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`seal`
+
+6
+
+12
+
+4
+
+9
+
+12
+
+5.1
+
+1
+
+18
+
+4
+
+12
+
+6
+
+1.0
+
+## See also
+
+-   [`Object.isSealed()`](issealed)
+-   [`Object.preventExtensions()`](preventextensions)
+-   [`Object.isExtensible()`](isextensible)
+-   [`Object.freeze()`](freeze)
+-   [`Object.isFrozen()`](isfrozen)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal</a>
+
+# String.prototype.search()
+
+The `search()` method executes a search for a match between a regular expression and this [`String`](../string) object.
+
+## Syntax
+
+    search(regexp)
+
+### Parameters
+
+`regexp`
+A [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) object.
+
+If a non-RegExp object `regexp` is passed, it is implicitly converted to a [`RegExp`](../regexp) with `new RegExp(regexp)`.
+
+### Return value
+
+The index of the first match between the regular expression and the given string, or `-1` if no match was found.
+
+## Description
+
+When you want to know whether a pattern is found, and _also_ know its index within a string, use `search()`. (If you only want to know if it exists, use the similar [`test()`](../regexp/test) method on the `RegExp` prototype, which returns a boolean.)
+
+For more information (but slower execution) use [`match()`](match) (similar to the regular expression [`exec()`](../regexp/exec) method).
+
+## Examples
+
+### Using search()
+
+The following example searches a string with two different regex objects to show a successful search (positive value) vs. an unsuccessful search (`-1`)
+
+    let str = "hey JudE"
+    let re = /[A-Z]/g
+    let reDot = /[.]/g
+    console.log(str.search(re))    // returns 4, which is the index of the first capital letter "J"
+    console.log(str.search(reDot)) // returns -1 cannot find '.' dot punctuation
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.search">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.search</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`search`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`flags`
+
+No
+
+No
+
+1-49
+
+No
+
+No
+
+No
+
+No
+
+No
+
+4-49
+
+No
+
+No
+
+No
+
+## See also
+
+-   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+-   [`String.prototype.match()`](match)
+-   [`RegExp.prototype.exec()`](../regexp/exec)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search</a>
+
+# Intl.PluralRules.select()
+
+The `Intl.PluralRules.prototype.select()` method returns a string indicating which plural rule to use for locale-aware formatting.
+
+## Syntax
+
+    select(number)
+
+### Parameters
+
+`number`
+The number to get a plural rule for.
+
+### Return value
+
+A string representing the pluralization category of the `number`, can be one of `zero`, `one`, `two`, `few`, `many` or `other`.
+
+## Description
+
+This function selects a pluralization category according to the locale and formatting options of a [`Intl/PluralRules`](../pluralrules) object.
+
+## Examples
+
+### Using select()
+
+     new Intl.PluralRules('ar-EG').select(0);
+    // → 'zero'
+
+    new Intl.PluralRules('ar-EG').select(1);
+    // → 'one'
+
+    new Intl.PluralRules('ar-EG').select(2);
+    // → 'two'
+
+    new Intl.PluralRules('ar-EG').select(6);
+    // → 'few'
+
+    new Intl.PluralRules('ar-EG').select(18);
+    // → 'many'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-intl.pluralrules.prototype.select</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`select`
+
+63
+
+18
+
+58
+
+No
+
+50
+
+13
+
+63
+
+63
+
+58
+
+46
+
+13
+
+8.0
+
+## See also
+
+-   [`Intl.PluralRules`](../pluralrules)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select</a>
+
+# Set
+
+The `Set` object lets you store unique values of any type, whether [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) or object references.
+
+## Description
+
+`Set` objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the `Set` **may only occur once**; it is unique in the `Set`'s collection.
+
+### Value equality
+
+Because each value in the `Set` has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the `===` operator. Specifically, for `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values. However, this was changed in the ECMAScript 2015 specification. See _"Key equality for -0 and 0"_ in the [browser compatibility](#browser_compatibility) table for details.
+
+[`NaN`](nan) and [`undefined`](undefined) can also be stored in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as `NaN`, even though `NaN !== NaN`).
+
+## Constructor
+
+[`Set()`](set/set)
+Creates a new `Set` object.
+
+## Static properties
+
+[`get Set[@@species]`](set/@@species)
+The constructor function that is used to create derived objects.
+
+## Instance properties
+
+[`Set.prototype.size`](set/size)
+Returns the number of values in the `Set` object.
+
+## Instance methods
+
+[`Set.prototype.add(value)`](set/add)
+Appends `value` to the `Set` object. Returns the `Set` object with added value.
+
+[`Set.prototype.clear()`](set/clear)
+Removes all elements from the `Set` object.
+
+[`Set.prototype.delete(value)`](set/delete)
+Removes the element associated to the `value` and returns a boolean asserting whether an element was successfully removed or not. `Set.prototype.has(value)` will return `false` afterwards.
+
+[`Set.prototype.has(value)`](set/has)
+Returns a boolean asserting whether an element is present with the given value in the `Set` object or not.
+
+### Iteration methods
+
+[`Set.prototype[@@iterator]()`](set/@@iterator)
+Returns a new iterator object that yields the **values** for each element in the `Set` object in insertion order.
+
+[`Set.prototype.keys()`](set/values)
+Returns a new iterator object that yields the values for each element in the `Set` object in insertion order. (For Sets, this is the same as the `values()` method.)
+
+[`Set.prototype.values()`](set/values)
+Returns a new iterator object that yields the **values** for each element in the `Set` object in insertion order. (For Sets, this is the same as the `keys()` method.)
+
+[`Set.prototype.entries()`](set/entries)
+Returns a new iterator object that contains `[value, value]` for each element in the `Set` object, in insertion order.
+
+This is similar to the [`Map`](map) object, so that each entry's _key_ is the same as its _value_ for a `Set`.
+
+[`Set.prototype.forEach(callbackFn[, thisArg])`](set/foreach)
+Calls `callbackFn` once for each value present in the `Set` object, in insertion order. If a `thisArg` parameter is provided, it will be used as the `this` value for each invocation of `callbackFn`.
+
+## Examples
+
+### Using the Set object
+
+    const mySet1 = new Set()
+
+    mySet1.add(1)           // Set [ 1 ]
+    mySet1.add(5)           // Set [ 1, 5 ]
+    mySet1.add(5)           // Set [ 1, 5 ]
+    mySet1.add('some text') // Set [ 1, 5, 'some text' ]
+    const o = {a: 1, b: 2}
+    mySet1.add(o)
+
+    mySet1.add({a: 1, b: 2})   // o is referencing a different object, so this is okay
+
+    mySet1.has(1)              // true
+    mySet1.has(3)              // false, since 3 has not been added to the set
+    mySet1.has(5)              // true
+    mySet1.has(Math.sqrt(25))  // true
+    mySet1.has('Some Text'.toLowerCase()) // true
+    mySet1.has(o)       // true
+
+    mySet1.size         // 5
+
+    mySet1.delete(5)    // removes 5 from the set
+    mySet1.has(5)       // false, 5 has been removed
+
+    mySet1.size         // 4, since we just removed one value
+
+    console.log(mySet1)
+    // logs Set(4) [ 1, "some text", {…}, {…} ] in Firefox
+    // logs Set(4) { 1, "some text", {…}, {…} } in Chrome
+
+### Iterating Sets
+
+    // iterate over items in set
+    // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}
+    for (let item of mySet1) console.log(item)
+
+    // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}
+    for (let item of mySet1.keys()) console.log(item)
+
+    // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}
+    for (let item of mySet1.values()) console.log(item)
+
+    // logs the items in the order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}
+    // (key and value are the same here)
+    for (let [key, value] of mySet1.entries()) console.log(key)
+
+    // convert Set object to an Array object, with Array.from
+    const myArr = Array.from(mySet1) // [1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}]
+
+    // the following will also work if run in an HTML document
+    mySet1.add(document.body)
+    mySet1.has(document.querySelector('body')) // true
+
+    // converting between Set and Array
+    const mySet2 = new Set([1, 2, 3, 4])
+    mySet2.size                    // 4
+    [...mySet2]                    // [1, 2, 3, 4]
+
+    // intersect can be simulated via
+    const intersection = new Set([...mySet1].filter(x => mySet2.has(x)))
+
+    // difference can be simulated via
+    const difference = new Set([...mySet1].filter(x => !mySet2.has(x)))
+
+    // Iterate set entries with forEach()
+    mySet1.forEach(function(value) {
+      console.log(value)
+    })
+
+    // 1
+    // 2
+    // 3
+    // 4
+
+### Implementing basic set operations
+
+    function isSuperset(set, subset) {
+        for (let elem of subset) {
+            if (!set.has(elem)) {
+                return false
+            }
+        }
+        return true
+    }
+
+    function union(setA, setB) {
+        let _union = new Set(setA)
+        for (let elem of setB) {
+            _union.add(elem)
+        }
+        return _union
+    }
+
+    function intersection(setA, setB) {
+        let _intersection = new Set()
+        for (let elem of setB) {
+            if (setA.has(elem)) {
+                _intersection.add(elem)
+            }
+        }
+        return _intersection
+    }
+
+    function symmetricDifference(setA, setB) {
+        let _difference = new Set(setA)
+        for (let elem of setB) {
+            if (_difference.has(elem)) {
+                _difference.delete(elem)
+            } else {
+                _difference.add(elem)
+            }
+        }
+        return _difference
+    }
+
+    function difference(setA, setB) {
+        let _difference = new Set(setA)
+        for (let elem of setB) {
+            _difference.delete(elem)
+        }
+        return _difference
+    }
+
+    // Examples
+    const setA = new Set([1, 2, 3, 4])
+    const setB = new Set([2, 3])
+    const setC = new Set([3, 4, 5, 6])
+
+    isSuperset(setA, setB)          // returns true
+    union(setA, setC)               // returns Set {1, 2, 3, 4, 5, 6}
+    intersection(setA, setC)        // returns Set {3, 4}
+    symmetricDifference(setA, setC) // returns Set {1, 2, 5, 6}
+    difference(setA, setC)          // returns Set {1, 2}
+
+### Relation with Array objects
+
+    let myArray = ['value1', 'value2', 'value3']
+
+    // Use the regular Set constructor to transform an Array into a Set
+    let mySet = new Set(myArray)
+
+    mySet.has('value1')     // returns true
+
+    // Use the spread operator to transform a set into an Array.
+    console.log([...mySet]) // Will show you exactly the same Array as myArray
+
+### Remove duplicate elements from the array
+
+    // Use to remove duplicate elements from the array
+
+    const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5]
+
+    console.log([...new Set(numbers)])
+
+    // [2, 3, 4, 5, 6, 7, 32]
+
+### Relation with Strings
+
+    let text = 'India'
+
+    const mySet = new Set(text)  // Set(5) {'I', 'n', 'd', 'i', 'a'}
+    mySet.size  // 5
+
+    //case sensitive & duplicate ommision
+    new Set("Firefox")  // Set(7) { "F", "i", "r", "e", "f", "o", "x" }
+    new Set("firefox")  // Set(6) { "f", "i", "r", "e", "o", "x" }
+
+### Use Set to ensure the uniqueness of a list of values
+
+    const array = Array
+      .from(document.querySelectorAll('[id]'))
+      .map(function(e) {
+          return e.id
+      });
+
+    const set = new Set(array);
+    console.assert(set.size == array.length);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-set-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Set`
+
+38
+
+12
+
+13
+
+11
+
+25
+
+8
+
+38
+
+38
+
+14
+
+25
+
+8
+
+3.0
+
+`Set`
+
+38
+
+12
+
+13
+
+11
+
+25
+
+8
+
+38
+
+38
+
+14
+
+25
+
+8
+
+3.0
+
+`add`
+
+38
+
+12
+
+13
+
+11
+
+Returns 'undefined' instead of the 'Set' object.
+
+25
+
+8
+
+38
+
+38
+
+14
+
+25
+
+8
+
+3.0
+
+`clear`
+
+38
+
+12
+
+19
+
+11
+
+25
+
+8
+
+38
+
+38
+
+19
+
+25
+
+8
+
+3.0
+
+`delete`
+
+38
+
+12
+
+13
+
+11
+
+25
+
+8
+
+38
+
+38
+
+14
+
+25
+
+8
+
+3.0
+
+`entries`
+
+38
+
+12
+
+24
+
+No
+
+25
+
+8
+
+38
+
+38
+
+24
+
+25
+
+8
+
+3.0
+
+`forEach`
+
+38
+
+12
+
+25
+
+11
+
+25
+
+8
+
+38
+
+38
+
+25
+
+25
+
+8
+
+3.0
+
+`has`
+
+38
+
+12
+
+13
+
+11
+
+25
+
+8
+
+38
+
+38
+
+14
+
+25
+
+8
+
+3.0
+
+`key_equality_for_zeros`
+
+38
+
+12
+
+29
+
+No
+
+25
+
+9
+
+38
+
+38
+
+29
+
+25
+
+9
+
+3.0
+
+`size`
+
+38
+
+12
+
+19
+
+From Firefox 13 to Firefox 18, the `size` property was implemented as a `Set.prototype.size()` method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.
+
+11
+
+25
+
+8
+
+38
+
+38
+
+19
+
+From Firefox 13 to Firefox 18, the `size` property was implemented as a `Set.prototype.size()` method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.
+
+25
+
+8
+
+3.0
+
+`values`
+
+38
+
+38
+
+12
+
+12
+
+24
+
+24
+
+No
+
+25
+
+25
+
+8
+
+8
+
+38
+
+38
+
+38
+
+38
+
+24
+
+24
+
+25
+
+25
+
+8
+
+8
+
+3.0
+
+3.0
+
+`@@iterator`
+
+43
+
+12
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+No
+
+30
+
+9
+
+43
+
+43
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+30
+
+9
+
+4.0
+
+`@@species`
+
+51
+
+13
+
+41
+
+No
+
+38
+
+10
+
+51
+
+51
+
+41
+
+41
+
+10
+
+5.0
+
+## See also
+
+-   [`Map`](map)
+-   [`WeakMap`](weakmap)
+-   [`WeakSet`](weakset)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set</a>
+
+# DataView.prototype.setBigInt64()
+
+The `setBigInt64()` method stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setBigInt64(byteOffset, value)
+    setBigInt64(byteOffset, value, littleEndian)
+
+### Parameters
+
+byteOffset
+The offset, in bytes, from the start of the view to store the data from.
+
+value
+The value to set as a [`BigInt`](../bigint). The highest possible value that fits in a signed 64-bit integer is `2n ** (64n -1n) - 1n`<span class="blob-code-inner blob-code-marker"> (`9223372036854775807n`). Upon overflow, it will be negative (</span>`-9223372036854775808n`<span class="blob-code-inner blob-code-marker">).</span>
+
+littleEndian
+<span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
+
+## Examples
+
+### Using the `setBigInt64` method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setBigInt64(0, 3n);
+    dataview.getBigInt64(0); // 3n
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setbigint64</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setBigInt64`
+
+67
+
+79
+
+68
+
+No
+
+54
+
+No
+
+67
+
+67
+
+68
+
+48
+
+No
+
+9.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+-   [`BigInt`](../bigint)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigInt64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigInt64</a>
+
+# DataView.prototype.setBigUint64()
+
+The `setBigUint64()` method stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setBigUint64(byteOffset, value)
+    setBigUint64(byteOffset, value, littleEndian)
+
+### Parameters
+
+byteOffset
+The offset, in bytes, from the start of the view to store the data from.
+
+value
+The value to set as a [`BigInt`](../bigint). The highest possible value that fits in an unsigned 64-bit integer is `2n ** 64n - 1n`<span class="blob-code-inner blob-code-marker"> (</span>`18446744073709551615n`<span class="blob-code-inner blob-code-marker">). Upon overflow, it will be zero (</span>`0n`<span class="blob-code-inner blob-code-marker">).</span>
+
+littleEndian
+<span class="badge inline optional">Optional</span> Indicates whether the 64-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such that it would store beyond the end of the view.
+
+## Examples
+
+### Using the `setBigUint64` method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setBigUint64(0, 3n);
+    dataview.getBigUint64(0); // 3n
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setbiguint64</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setBigUint64`
+
+67
+
+79
+
+68
+
+No
+
+54
+
+No
+
+67
+
+67
+
+68
+
+48
+
+No
+
+9.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+-   [`BigInt`](../bigint)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigUint64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setBigUint64</a>
+
+# Date.prototype.setDate()
+
+The `setDate()` method changes the day of the month of a given [`Date`](../date) instance, based on local time.
+
+To instead change the day of the month for a given [`Date`](../date) instance based on UTC time, use the [`setUTCDate()`](setutcdate) method.
+
+## Syntax
+
+    setDate(dayValue)
+
+### Parameters
+
+`dayValue`
+An integer representing the day of the month.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the given date (the [`Date`](../date) object is also changed in place).
+
+## Description
+
+If the `dayValue` is outside of the range of date values for the month, `setDate()` will update the [`Date`](../date) object accordingly.
+
+For example, if 0 is provided for `dayValue`, the date will be set to the last day of the previous month.
+
+If a negative number is provided for `dayValue`, the date will be set counting backwards from the last day of the previous month. -1 would result in the date being set to 1 day before the last day of the previous month.
+
+## Examples
+
+### Using setDate()
+
+    var theBigDay = new Date(1962, 6, 7); // 1962-07-07 (7th of July 1962)
+    theBigDay.setDate(24);  // 1962-07-24 (24th of July 1962)
+    theBigDay.setDate(32);  // 1962-08-01 (1st of August 1962)
+    theBigDay.setDate(22);  // 1962-08-22 (22th of August 1962)
+    theBigDay.setDate(0);   // 1962-07-31 (31th of July 1962)
+    theBigDay.setDate(98);  // 1962-10-06 (6th of October 1962)
+    theBigDay.setDate(-50); // 1962-08-11 (11th of August 1962)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Date.prototype.setDate' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setDate`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getDate()`](getdate)
+-   [`Date.prototype.setUTCDate()`](setutcdate)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate</a>
+
+# DataView.prototype.setFloat32()
+
+The `setFloat32()` method stores a signed 32-bit float (float) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setFloat32(byteOffset, value)
+    setFloat32(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 32-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setFloat32 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setFloat32(1, 3);
+    dataview.getFloat32(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat32">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setfloat32</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setFloat32`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat32</a>
+
+# DataView.prototype.setFloat64()
+
+The `setFloat64()` method stores a signed 64-bit float (double) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setFloat64(byteOffset, value)
+    setFloat64(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 64-bit float is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setFloat64 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setFloat64(0, 3);
+    dataview.getFloat64(0); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setfloat64</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setFloat64`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat64" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setFloat64</a>
+
+# Date.prototype.setFullYear()
+
+The `setFullYear()` method sets the full year for a specified date according to local time. Returns new timestamp.
+
+## Syntax
+
+    setFullYear(yearValue)
+    setFullYear(yearValue, monthValue)
+    setFullYear(yearValue, monthValue, dateValue)
+
+### Parameters
+
+`yearValue`
+An integer specifying the numeric value of the year, for example, 1995.
+
+`monthValue`
+Optional. An integer between 0 and 11 representing the months January through December.
+
+`dateValue`
+Optional. An integer between 1 and 31 representing the day of the month. If you specify the `dateValue` parameter, you must also specify the `monthValue`.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `monthValue` and `dateValue` parameters, the values returned from the [`getMonth()`](getmonth) and [`getDate()`](getdate) methods are used.
+
+If a parameter you specify is outside of the expected range, `setFullYear()` attempts to update the other parameters and the date information in the [`Date`](../date) object accordingly. For example, if you specify 15 for `monthValue`, the year is incremented by 1 (`yearValue + 1`), and 3 is used for the month.
+
+## Examples
+
+### Using setFullYear()
+
+    var theBigDay = new Date();
+    theBigDay.setFullYear(1997);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setfullyear</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setFullYear`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+-   [`Date.prototype.setUTCFullYear()`](setutcfullyear)
+-   [`Date.prototype.setYear()`](setyear)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear</a>
+
+# Date.prototype.setHours()
+
+The `setHours()` method sets the hours for a specified date according to local time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated [`Date`](../date) instance.
+
+## Syntax
+
+    setHours(hoursValue)
+    setHours(hoursValue, minutesValue)
+    setHours(hoursValue, minutesValue, secondsValue)
+    setHours(hoursValue, minutesValue, secondsValue, msValue)
+
+### Parameters
+
+`hoursValue`
+Ideally, an integer between 0 and 23, representing the hour. If a value greater than 23 is provided, the datetime will be incremented by the extra hours.
+
+`minutesValue`
+Optional. Ideally, an integer between 0 and 59, representing the minutes. If a value greater than 59 is provided, the datetime will be incremented by the extra minutes.
+
+`secondsValue`
+Optional. Ideally, an integer between 0 and 59, representing the seconds. If a value greater than 59 is provided, the datetime will be incremented by the extra seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
+
+`msValue`
+Optional. Ideally, a number between 0 and 999, representing the milliseconds. If a value greater than 999 is provided, the datetime will be incremented by the extra milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
+
+### Return value
+
+The number of milliseconds between January 1, 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `minutesValue`, `secondsValue`, and `msValue` parameters, the values returned from the [`getMinutes()`](getminutes), [`getSeconds()`](getseconds), and [`getMilliseconds()`](getmilliseconds) methods are used.
+
+If a parameter you specify is outside of the expected range, `setHours()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
+
+## Examples
+
+### Using setHours()
+
+    var theBigDay = new Date();
+    theBigDay.setHours(7);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.sethours">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.sethours</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setHours`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getHours()`](gethours)
+-   [`Date.prototype.setUTCHours()`](setutchours)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours</a>
+
+# DataView.prototype.setInt16()
+
+The `setInt16()` method stores a signed 16-bit integer (short) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setInt16(byteOffset, value)
+    setInt16(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setInt16 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setInt16(1, 3);
+    dataview.getInt16(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint16">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setint16</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setInt16`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt16</a>
+
+# DataView.prototype.setInt32()
+
+The `setInt32()` method stores a signed 32-bit integer (long) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setInt32(byteOffset, value)
+    setInt32(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setInt32 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setInt32(1, 3);
+    dataview.getInt32(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setint32</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setInt32`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt32</a>
+
+# DataView.prototype.setInt8()
+
+The `setInt8()` method stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setInt8(byteOffset, value)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setInt8 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setInt8(1, 3);
+    dataview.getInt8(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setint8</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setInt8`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setInt8</a>
+
+# Date.prototype.setMilliseconds()
+
+The `setMilliseconds()` method sets the milliseconds for a specified date according to local time.
+
+## Syntax
+
+    setMilliseconds(millisecondsValue)
+
+### Parameters
+
+`millisecondsValue`
+A number between 0 and 999, representing the milliseconds.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you specify a number outside the expected range, the date information in the [`Date`](../date) object is updated accordingly. For example, if you specify 1005, the number of seconds is incremented by 1, and 5 is used for the milliseconds.
+
+## Examples
+
+### Using setMilliseconds()
+
+    var theBigDay = new Date();
+    theBigDay.setMilliseconds(100);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmilliseconds">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setmilliseconds</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setMilliseconds`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getMilliseconds()`](getmilliseconds)
+-   [`Date.prototype.setUTCMilliseconds()`](setutcmilliseconds)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds</a>
+
+# Date.prototype.setMinutes()
+
+The `setMinutes()` method sets the minutes for a specified date according to local time.
+
+## Syntax
+
+    setMinutes(minutesValue)
+    setMinutes(minutesValue, secondsValue)
+    setMinutes(minutesValue, secondsValue, msValue)
+
+### Parameters
+
+`minutesValue`
+An integer between 0 and 59, representing the minutes.
+
+`secondsValue`
+Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
+
+`msValue`
+Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `secondsValue` and `msValue` parameters, the values returned from [`getSeconds()`](getseconds) and [`getMilliseconds()`](getmilliseconds) methods are used.
+
+If a parameter you specify is outside of the expected range, `setMinutes()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
+
+## Examples
+
+### Using setMinutes()
+
+    var theBigDay = new Date();
+    theBigDay.setMinutes(45);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setminutes</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setMinutes`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getMinutes()`](getminutes)
+-   [`Date.prototype.setUTCMinutes()`](setutcminutes)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes</a>
+
+# Date.prototype.setMonth()
+
+The `setMonth()` method sets the month for a specified date according to the currently set year.
+
+## Syntax
+
+    setMonth(monthValue)
+    setMonth(monthValue, dayValue)
+
+### Parameters
+
+`monthValue`
+A zero-based integer representing the month of the year offset from the start of the year. So, 0 represents January, 11 represents December, -1 represents December of the previous year, and 12 represents January of the following year.
+
+`dayValue`
+Optional. An integer from 1 to 31, representing the day of the month.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `dayValue` parameter, the value returned from the [`getDate()`](getdate) method is used.
+
+If a parameter you specify is outside of the expected range, `setMonth()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 15 for `monthValue`, the year will be incremented by 1, and 3 will be used for month.
+
+The current day of month will have an impact on the behavior of this method. Conceptually it will add the number of days given by the current day of the month to the 1st day of the new month specified as the parameter, to return the new date. For example, if the current value is 31st August 2016, calling setMonth with a value of 1 will return 2nd March 2016. This is because in 2016 February had 29 days.
+
+## Examples
+
+### Using setMonth()
+
+    var theBigDay = new Date();
+    theBigDay.setMonth(6);
+
+    //Watch out for end of month transitions
+    var endOfMonth = new Date(2016, 7, 31);
+    endOfMonth.setMonth(1);
+    console.log(endOfMonth); //Wed Mar 02 2016 00:00:00
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setmonth</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setMonth`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getMonth()`](getmonth)
+-   [`Date.prototype.setUTCMonth()`](setutcmonth)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth</a>
+
+# Object.setPrototypeOf()
+
+The `Object.setPrototypeOf()` method sets the prototype (i.e., the internal `[[Prototype]]` property) of a specified object to another object or [`null`](../null).
+
+**Warning:** Changing the `[[Prototype]]` of an object is, by the nature of [how modern JavaScript engines optimize property accesses](https://mathiasbynens.be/notes/prototypes), currently a very slow operation in every browser and JavaScript engine. In addition, the effects of altering inheritance are subtle and far-flung, and are not limited to the time spent in the `Object.setPrototypeOf(...)` statement, but may extend to **_any_** code that has access to any object whose `[[Prototype]]` has been altered.
+
+Because this feature is a part of the language, it is still the burden on engine developers to implement that feature performantly (ideally). Until engine developers address this issue, if you are concerned about performance, you should avoid setting the `[[Prototype]]` of an object. Instead, create a new object with the desired `[[Prototype]]` using [`Object.create()`](create).
+
+## Syntax
+
+    Object.setPrototypeOf(obj, prototype)
+
+### Parameters
+
+`obj`
+The object which is to have its prototype set.
+
+`prototype`
+The object's new prototype (an object or [`null`](../null)).
+
+### Return value
+
+The specified object.
+
+## Description
+
+Throws a [`TypeError`](../typeerror) exception if the object whose `[[Prototype]]` is to be modified is non-extensible according to [`Object.isExtensible()`](isextensible). Does nothing if the `prototype` parameter isn't an object or [`null`](../null) (i.e., number, string, boolean, or [`undefined`](../undefined)). Otherwise, this method changes the `[[Prototype]]` of `obj` to the new value.
+
+`Object.setPrototypeOf()` is in the ECMAScript 2015 specification. It is generally considered the proper way to set the prototype of an object, vs. the more controversial [`Object.prototype.__proto__`](proto) property.
+
+## Appending Prototype Chains
+
+A combination of `Object.getPrototypeOf()` and [`Object.prototype.__proto__`](proto) permits appending a whole prototype chain to a new prototype object:
+
+    /**
+    *** Object.appendChain(@object, @prototype)
+    *
+    * Appends the first non-native prototype of a chain to a new prototype.
+    * Returns @object (if it was a primitive value it will transformed into an object).
+    *
+    *** Object.appendChain(@object [, "@arg_name_1", "@arg_name_2", "@arg_name_3", "..."], "@function_body")
+    *** Object.appendChain(@object [, "@arg_name_1, @arg_name_2, @arg_name_3, ..."], "@function_body")
+    *
+    * Appends the first non-native prototype of a chain to the native Function.prototype object, then appends a
+    * new Function(["@arg"(s)], "@function_body") to that chain.
+    * Returns the function.
+    *
+    **/
+
+    Object.appendChain = function(oChain, oProto) {
+      if (arguments.length < 2) {
+        throw new TypeError('Object.appendChain - Not enough arguments');
+      }
+      if (typeof oProto !== 'object' && typeof oProto !== 'string') {
+        throw new TypeError('second argument to Object.appendChain must be an object or a string');
+      }
+
+      var oNewProto = oProto,
+          oReturn = o2nd = oLast = oChain instanceof this ? oChain : new oChain.constructor(oChain);
+
+      for (var o1st = this.getPrototypeOf(o2nd);
+        o1st !== Object.prototype && o1st !== Function.prototype;
+        o1st = this.getPrototypeOf(o2nd)
+      ) {
+        o2nd = o1st;
+      }
+
+      if (oProto.constructor === String) {
+        oNewProto = Function.prototype;
+        oReturn = Function.apply(null, Array.prototype.slice.call(arguments, 1));
+        this.setPrototypeOf(oReturn, oLast);
+      }
+
+      this.setPrototypeOf(o2nd, oNewProto);
+      return oReturn;
+    }
+
+### Usage
+
+#### First example: Appending a chain to a prototype
+
+    function Mammal() {
+      this.isMammal = 'yes';
+    }
+
+    function MammalSpecies(sMammalSpecies) {
+      this.species = sMammalSpecies;
+    }
+
+    MammalSpecies.prototype = new Mammal();
+    MammalSpecies.prototype.constructor = MammalSpecies;
+
+    var oCat = new MammalSpecies('Felis');
+
+    console.log(oCat.isMammal); // 'yes'
+
+    function Animal() {
+      this.breathing = 'yes';
+    }
+
+    Object.appendChain(oCat, new Animal());
+
+    console.log(oCat.breathing); // 'yes'
+
+#### Second example: Transforming a primitive value into an instance of its constructor and append its chain to a prototype
+
+    function MySymbol() {
+      this.isSymbol = 'yes';
+    }
+
+    var nPrime = 17;
+
+    console.log(typeof nPrime); // 'number'
+
+    var oPrime = Object.appendChain(nPrime, new MySymbol());
+
+    console.log(oPrime); // '17'
+    console.log(oPrime.isSymbol); // 'yes'
+    console.log(typeof oPrime); // 'object'
+
+#### Third example: Appending a chain to the Function.prototype object and appending a new function to that chain
+
+    function Person(sName) {
+      this.identity = sName;
+    }
+
+    var george = Object.appendChain(new Person('George'),
+                                    'console.log("Hello guys!!");');
+
+    console.log(george.identity); // 'George'
+    george(); // 'Hello guys!!'
+
+## Examples
+
+### Using Object.setPrototypeOf
+
+    var dict = Object.setPrototypeOf({}, null);
+
+## Polyfill
+
+Using the older [`Object.prototype.__proto__`](proto) property, we can easily define `Object.setPrototypeOf` if it isn't available already:
+
+    if (!Object.setPrototypeOf) {
+        // Only works in Chrome and FireFox, does not work in IE:
+         Object.prototype.setPrototypeOf = function(obj, proto) {
+             if(obj.__proto__) {
+                 obj.__proto__ = proto;
+                 return obj;
+             } else {
+                 // If you want to return prototype of Object.create(null):
+                 var Fn = function() {
+                     for (var key in obj) {
+                         Object.defineProperty(this, key, {
+                             value: obj[key],
+                         });
+                     }
+                 };
+                 Fn.prototype = proto;
+                 return new Fn();
+             }
+         }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-object.setprototypeof</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setPrototypeOf`
+
+34
+
+12
+
+31
+
+11
+
+21
+
+9
+
+37
+
+34
+
+31
+
+21
+
+9
+
+2.0
+
+## See also
+
+-   [`Reflect.setPrototypeOf()`](../reflect/setprototypeof)
+-   [`Object.prototype.isPrototypeOf()`](isprototypeof)
+-   [`Object.getPrototypeOf()`](getprototypeof)
+-   [`Object.prototype.__proto__`](proto)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf</a>
+
+# Date.prototype.setSeconds()
+
+The `setSeconds()` method sets the seconds for a specified date according to local time.
+
+## Syntax
+
+    setSeconds(secondsValue)
+    setSeconds(secondsValue, msValue)
+
+### Parameters
+
+`secondsValue`
+An integer between 0 and 59, representing the seconds.
+
+`msValue` <span class="badge inline optional">Optional</span>
+Optional. A number between 0 and 999, representing the milliseconds.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `msValue` parameter, the value returned from the [`getMilliseconds()`](getmilliseconds) method is used.
+
+If a parameter you specify is outside of the expected range, `setSeconds()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes stored in the [`Date`](../date) object will be incremented by 1, and 40 will be used for seconds.
+
+## Examples
+
+### Using setSeconds()
+
+    var theBigDay = new Date();
+    theBigDay.setSeconds(30);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setseconds</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setSeconds`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getSeconds()`](getseconds)
+-   [`Date.prototype.setUTCSeconds()`](setutcseconds)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds</a>
+
+# Date.prototype.setTime()
+
+The `setTime()` method sets the [`Date`](../date) object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+## Syntax
+
+    setTime(timeValue)
+
+### Parameters
+
+`timeValue`
+An integer representing the number of milliseconds since 1 January 1970, 00:00:00 UTC.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date (effectively, the value of the argument).
+
+## Description
+
+Use the `setTime()` method to help assign a date and time to another [`Date`](../date) object.
+
+## Examples
+
+### Using setTime()
+
+    var theBigDay = new Date('July 1, 1999');
+    var sameAsBigDay = new Date();
+    sameAsBigDay.setTime(theBigDay.getTime());
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Date.prototype.setTime' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setTime`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getTime()`](gettime)
+-   [`Date.prototype.setUTCHours()`](setutchours)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime</a>
+
+# DataView.prototype.setUint16()
+
+The `setUint16()` method stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setUint16(byteOffset, value)
+    setUint16(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 16-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setUint16 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setUint16(1, 3);
+    dataview.getUint16(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setuint16</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUint16`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint16</a>
+
+# DataView.prototype.setUint32()
+
+The `setUint32()` method stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setUint32(byteOffset, value)
+    setUint32(byteOffset, value, littleEndian)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+`littleEndian`
+<span class="badge inline optional">Optional</span> Indicates whether the 32-bit int is stored in [little- or big-endian](https://developer.mozilla.org/en-US/docs/Glossary/Endianness) format. If `false` or `undefined`, a big-endian value is written.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setUint32 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setUint32(1, 3);
+    dataview.getUint32(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setuint32</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUint32`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint32</a>
+
+# DataView.prototype.setUint8()
+
+The `setUint8()` method stores an unsigned 8-bit integer (byte) value at the specified byte offset from the start of the [`DataView`](../dataview).
+
+## Syntax
+
+    setUint8(byteOffset, value)
+
+### Parameters
+
+`byteOffset`
+The offset, in byte, from the start of the view where to store the data.
+
+`value`
+The value to set.
+
+### Return value
+
+[`undefined`](../undefined).
+
+### Errors thrown
+
+[`RangeError`](../rangeerror)
+Thrown if the `byteOffset` is set such as it would store beyond the end of the view.
+
+## Examples
+
+### Using the setUint8 method
+
+    var buffer = new ArrayBuffer(8);
+    var dataview = new DataView(buffer);
+    dataview.setUint8(1, 3);
+    dataview.getUint8(1); // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-dataview.prototype.setuint8</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUint8`
+
+9
+
+12
+
+15
+
+10
+
+12.1
+
+5.1
+
+4
+
+18
+
+15
+
+12.1
+
+4.2
+
+1.0
+
+## See also
+
+-   [`DataView`](../dataview)
+-   [`ArrayBuffer`](../arraybuffer)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint8" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/setUint8</a>
+
+# Date.prototype.setUTCDate()
+
+The `setUTCDate()` method changes the day of the month of a given [`Date`](../date) instance, based on UTC time.
+
+To instead change the day of the month for a given [`Date`](../date) instance based on local time, use the [`setDate()`](setdate) method.
+
+## Syntax
+
+    setUTCDate(dayValue)
+
+### Parameters
+
+`dayValue`
+An integer from 1 to 31, representing the day of the month.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If a parameter you specify is outside of the expected range, `setUTCDate()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 40 for `dayValue`, and the month stored in the [`Date`](../date) object is June, the day will be changed to 10 and the month will be incremented to July.
+
+## Examples
+
+### Using setUTCDate()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCDate(20);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcdate">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcdate</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCDate`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCDate()`](getutcdate)
+-   [`Date.prototype.setDate()`](setdate)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate</a>
+
+# Date.prototype.setUTCFullYear()
+
+The `setUTCFullYear()` method sets the full year for a specified date according to universal time.
+
+## Syntax
+
+    setUTCFullYear(yearValue)
+    setUTCFullYear(yearValue, monthValue)
+    setUTCFullYear(yearValue, monthValue, dayValue)
+
+### Parameters
+
+`yearValue`
+An integer specifying the numeric value of the year, for example, 1995.
+
+`monthValue`
+Optional. An integer between 0 and 11 representing the months January through December.
+
+`dayValue`
+Optional. An integer between 1 and 31 representing the day of the month. If you specify the `dayValue` parameter, you must also specify the `monthValue`.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `monthValue` and `dayValue` parameters, the values returned from the [`getUTCMonth()`](getutcmonth) and [`getUTCDate()`](getutcdate) methods are used.
+
+If a parameter you specify is outside of the expected range, `setUTCFullYear()` attempts to update the other parameters and the date information in the [`Date`](../date) object accordingly. For example, if you specify 15 for `monthValue`, the year is incremented by 1 (`yearValue + 1`), and 3 is used for the month.
+
+## Examples
+
+### Using setUTCFullYear()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCFullYear(1997);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcfullyear">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcfullyear</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCFullYear`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+-   [`Date.prototype.setFullYear()`](setfullyear)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear</a>
+
+# Date.prototype.setUTCHours()
+
+The `setUTCHours()` method sets the hour for a specified date according to universal time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated [`Date`](../date) instance.
+
+## Syntax
+
+    setUTCHours(hoursValue)
+    setUTCHours(hoursValue, minutesValue)
+    setUTCHours(hoursValue, minutesValue, secondsValue)
+    setUTCHours(hoursValue, minutesValue, secondsValue, msValue)
+
+### Parameters
+
+`hoursValue`
+An integer between 0 and 23, representing the hour.
+
+`minutesValue`
+Optional. An integer between 0 and 59, representing the minutes.
+
+`secondsValue`
+Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
+
+`msValue`
+Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
+
+### Return value
+
+The number of milliseconds between January 1, 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `minutesValue`, `secondsValue`, and `msValue` parameters, the values returned from the [`getUTCMinutes()`](getutcminutes), [`getUTCSeconds()`](getutcseconds), and [`getUTCMilliseconds()`](getutcmilliseconds) methods are used.
+
+If a parameter you specify is outside of the expected range, `setUTCHours()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
+
+## Examples
+
+### Using setUTCHours()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCHours(8);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutchours</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCHours`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCHours()`](getutchours)
+-   [`Date.prototype.setHours()`](sethours)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours</a>
+
+# Date.prototype.setUTCMilliseconds()
+
+The `setUTCMilliseconds()` method sets the milliseconds for a specified date according to universal time.
+
+## Syntax
+
+    setUTCMilliseconds(millisecondsValue)
+
+### Parameters
+
+`millisecondsValue`
+A number between 0 and 999, representing the milliseconds.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If a parameter you specify is outside of the expected range, `setUTCMilliseconds()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 1100 for `millisecondsValue`, the seconds stored in the [`Date`](../date) object will be incremented by 1, and 100 will be used for milliseconds.
+
+## Examples
+
+### Using setUTCMilliseconds()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCMilliseconds(500);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmilliseconds">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcmilliseconds</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCMilliseconds`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCMilliseconds()`](getutcmilliseconds)
+-   [`Date.prototype.setMilliseconds()`](setmilliseconds)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMilliseconds</a>
+
+# Date.prototype.setUTCMinutes()
+
+The `setUTCMinutes()` method sets the minutes for a specified date according to universal time.
+
+## Syntax
+
+    setUTCMinutes(minutesValue)
+    setUTCMinutes(minutesValue, secondsValue)
+    setUTCMinutes(minutesValue, secondsValue, msValue)
+
+### Parameters
+
+`minutesValue`
+An integer between 0 and 59, representing the minutes.
+
+`secondsValue`
+Optional. An integer between 0 and 59, representing the seconds. If you specify the `secondsValue` parameter, you must also specify the `minutesValue`.
+
+`msValue`
+Optional. A number between 0 and 999, representing the milliseconds. If you specify the `msValue` parameter, you must also specify the `minutesValue` and `secondsValue`.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `secondsValue` and `msValue` parameters, the values returned from [`getUTCSeconds()`](getutcseconds) and [`getUTCMilliseconds()`](getutcmilliseconds) methods are used.
+
+If a parameter you specify is outside of the expected range, `setUTCMinutes()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 (`minutesValue + 1`), and 40 will be used for seconds.
+
+## Examples
+
+### Using setUTCMinutes()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCMinutes(43);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcminutes</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCMinutes`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCMinutes()`](getutcminutes)
+-   [`Date.prototype.setMinutes()`](setminutes)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMinutes</a>
+
+# Date.prototype.setUTCMonth()
+
+The `setUTCMonth()` method sets the month for a specified date according to universal time.
+
+## Syntax
+
+    setUTCMonth(monthValue)
+    setUTCMonth(monthValue, dayValue)
+
+### Parameters
+
+`monthValue`
+An integer between 0 and 11, representing the months January through December.
+
+`dayValue`
+Optional. An integer from 1 to 31, representing the day of the month.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `dayValue` parameter, the value returned from the [`getUTCDate()`](getutcdate) method is used.
+
+If a parameter you specify is outside of the expected range, `setUTCMonth()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 15 for `monthValue`, the year will be incremented by 1, and 3 will be used for month.
+
+## Examples
+
+### Using setUTCMonth()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCMonth(11);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcmonth</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCMonth`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCMonth()`](getutcmonth)
+-   [`Date.prototype.setMonth()`](setmonth)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth</a>
+
+# Date.prototype.setUTCSeconds()
+
+The `setUTCSeconds()` method sets the seconds for a specified date according to universal time.
+
+## Syntax
+
+    setUTCSeconds(secondsValue)
+    setUTCSeconds(secondsValue, msValue)
+
+### Parameters
+
+`secondsValue`
+An integer between 0 and 59, representing the seconds.
+
+`msValue`
+Optional. A number between 0 and 999, representing the milliseconds.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If you do not specify the `msValue` parameter, the value returned from the [`getUTCMilliseconds()`](getutcmilliseconds) method is used.
+
+If a parameter you specify is outside of the expected range, `setUTCSeconds()` attempts to update the date information in the [`Date`](../date) object accordingly. For example, if you use 100 for `secondsValue`, the minutes stored in the [`Date`](../date) object will be incremented by 1, and 40 will be used for seconds.
+
+## Examples
+
+### Using setUTCSeconds()
+
+    var theBigDay = new Date();
+    theBigDay.setUTCSeconds(20);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcseconds">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setutcseconds</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setUTCSeconds`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getUTCSeconds()`](getutcseconds)
+-   [`Date.prototype.setSeconds()`](setseconds)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCSeconds</a>
+
+# Date.prototype.setYear()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `setYear()` method sets the year for a specified date according to local time. Because `setYear()` does not set full years ("year 2000 problem"), it is no longer used and has been replaced by the [`setFullYear()`](setfullyear) method.
+
+## Syntax
+
+    setYear(yearValue)
+
+### Parameters
+
+`yearValue`
+An integer.
+
+### Return value
+
+The number of milliseconds between 1 January 1970 00:00:00 UTC and the updated date.
+
+## Description
+
+If `yearValue` is a number between 0 and 99 (inclusive), then the year for `dateObj` is set to `1900 + yearValue`. Otherwise, the year for `dateObj` is set to `yearValue`.
+
+## Examples
+
+### Using setYear()
+
+The first two lines set the year to 1996. The third sets the year to 2000.
+
+    var theBigDay = new Date();
+
+    theBigDay.setYear(96);
+    theBigDay.setYear(1996);
+    theBigDay.setYear(2000);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.setyear</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`setYear`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.getFullYear()`](getfullyear)
+-   [`Date.prototype.getUTCFullYear()`](getutcfullyear)
+-   [`Date.prototype.setFullYear()`](setfullyear)
+-   [`Date.prototype.setUTCFullYear()`](setutcfullyear)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear</a>
+
+# SharedArrayBuffer
+
+The `SharedArrayBuffer` object is used to represent a generic, fixed-length raw binary data buffer, similar to the [`ArrayBuffer`](arraybuffer) object, but in a way that they can be used to create views on shared memory. Unlike an `ArrayBuffer`, a `SharedArrayBuffer` cannot become detached.
+
+## Description
+
+### Allocating and sharing memory
+
+To share memory using [`SharedArrayBuffer`](sharedarraybuffer) objects from one agent in the cluster to another (an agent is either the web page's main program or one of its web workers), `postMessage` and [structured cloning](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) is used.
+
+The structured clone algorithm accepts `SharedArrayBuffers` and `TypedArrays` mapped onto `SharedArrayBuffers`. In both cases, the `SharedArrayBuffer` object is transmitted to the receiver resulting in a new, private SharedArrayBuffer object in the receiving agent (just as for [`ArrayBuffer`](arraybuffer)). However, the shared data block referenced by the two `SharedArrayBuffer` objects is the same data block, and a side effect to the block in one agent will eventually become visible in the other agent.
+
+    var sab = new SharedArrayBuffer(1024);
+    worker.postMessage(sab);
+
+### Updating and synchronizing shared memory with atomic operations
+
+Shared memory can be created and updated simultaneously in workers or the main thread. Depending on the system (the CPU, the OS, the Browser) it can take a while until the change is propagated to all contexts. To synchronize, [atomic](atomics) operations are needed.
+
+### APIs which use SharedArrayBuffer objects
+
+-   [`WebGLRenderingContext.bufferData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData)
+-   [`WebGLRenderingContext.bufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData)
+-   [`WebGL2RenderingContext.getBufferSubData()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData)
+
+### Security requirements
+
+Shared memory and high-resolution timers were effectively [disabled at the start of 2018](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/) in light of [Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>). In 2020, a new, secure approach has been standardized to re-enable shared memory. With a few security measures, `postMessage()` will no longer throw for `SharedArrayBuffer` objects and shared memory across threads will be available:
+
+As a baseline requirement, your document needs to be in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
+
+For top-level documents, two headers will need to be set to cross-origin isolate your site:
+
+-   [`Cross-Origin-Opener-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
+-   [`Cross-Origin-Embedder-Policy`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
+
+<!-- -->
+
+    Cross-Origin-Opener-Policy: same-origin
+    Cross-Origin-Embedder-Policy: require-corp
+
+To check if cross origin isolation has been successful, you can test against the `crossOriginIsolated` property available to window and worker contexts:
+
+    if (crossOriginIsolated) {
+      // Post SharedArrayBuffer
+    } else {
+      // Do something else
+    }
+
+See also [Planned changes to shared memory](sharedarraybuffer/planned_changes) which is starting to roll out to browsers (Firefox 79, for example.)
+
+### Always use the new operator to create a SharedArrayBuffer
+
+`SharedArrayBuffer` constructors are required to be constructed with a [`new`](../operators/new) operator. Calling a `SharedArrayBuffer` constructor as a function without `new` will throw a [`TypeError`](typeerror).
+
+    var sab = SharedArrayBuffer(1024);
+    // TypeError: calling a builtin SharedArrayBuffer constructor
+    // without new is forbidden
+
+    var sab = new SharedArrayBuffer(1024);
+
+## Constructor
+
+[`SharedArrayBuffer()`](sharedarraybuffer/sharedarraybuffer)
+Creates a new `SharedArrayBuffer` object.
+
+## Instance properties
+
+[`SharedArrayBuffer.prototype.byteLength`](sharedarraybuffer/bytelength)
+The size, in bytes, of the array. This is established when the array is constructed and cannot be changed. **Read only.**
+
+## Instance methods
+
+[`SharedArrayBuffer.prototype.slice(begin, end)`](sharedarraybuffer/slice)
+Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArrayBuffer`'s bytes from `begin`, inclusive, up to `end`, exclusive. If either `begin` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
+
+## Examples
+
+### Creating a new SharedArrayBuffer
+
+    var sab = new SharedArrayBuffer(1024);
+
+### Slicing the SharedArrayBuffer
+
+    sab.slice();    // SharedArrayBuffer { byteLength: 1024 }
+    sab.slice(2);   // SharedArrayBuffer { byteLength: 1022 }
+    sab.slice(-2);  // SharedArrayBuffer { byteLength: 2 }
+    sab.slice(0, 1); // SharedArrayBuffer { byteLength: 1 }
+
+### Using it in a WebGL buffer
+
+    const canvas = document.querySelector('canvas');
+    const gl = canvas.getContext('webgl');
+    const buffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+    gl.bufferData(gl.ARRAY_BUFFER, sab, gl.STATIC_DRAW);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-sharedarraybuffer-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`SharedArrayBuffer`
+
+68
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+89
+
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep/).
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11
+
+No
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+`SharedArrayBuffer`
+
+68
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+89
+
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep/).
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11
+
+No
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+`byteLength`
+
+68
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+89
+
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep/).
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11
+
+No
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+`slice`
+
+68
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+89
+
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep/).
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+79
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11
+
+No
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+## See also
+
+-   [`Atomics`](atomics)
+-   [`ArrayBuffer`](arraybuffer)
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+-   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) – a simple library providing synchronization and work distribution abstractions.
+-   [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+-   [A Taste of JavaScript's New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer</a>
+
+# Array.prototype.shift()
+
+The `shift()` method removes the **first** element from an array and returns that removed element. This method changes the length of the array.
+
+## Syntax
+
+    shift()
+
+### Return value
+
+The removed element from the array; [`undefined`](../undefined) if the array is empty.
+
+## Description
+
+The `shift` method removes the element at the zeroeth index and shifts the values at consecutive indexes down, then returns the removed value. If the [`length`](length) property is 0, [`undefined`](../undefined) is returned.
+
+`shift` is intentionally generic; this method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property reflecting the last in a series of consecutive, zero-based numerical properties may not behave in any meaningful manner.
+
+[`Array.prototype.pop()`](pop) has similar behavior to `shift`, but applied to the last element in an array.
+
+## Examples
+
+### Removing an element from an array
+
+The following code displays the `myFish` array before and after removing its first element. It also displays the removed element:
+
+    var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+
+    console.log('myFish before:', JSON.stringify(myFish));
+    // myFish before: ['angel', 'clown', 'mandarin', 'surgeon']
+
+    var shifted = myFish.shift();
+
+    console.log('myFish after:', myFish);
+    // myFish after: ['clown', 'mandarin', 'surgeon']
+
+    console.log('Removed this element:', shifted);
+    // Removed this element: angel
+
+### Using shift() method in while loop
+
+The shift() method is often used in condition inside while loop. In the following example every iteration will remove the next element from an array, until it is empty:
+
+    var names = ["Andrew", "Edward", "Paul", "Chris" ,"John"];
+
+    while( typeof (i = names.shift()) !== 'undefined' ) {
+        console.log(i);
+    }
+    // Andrew, Edward, Paul, Chris, John
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.shift</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`shift`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.push()`](push)
+-   [`Array.prototype.pop()`](pop)
+-   [`Array.prototype.unshift()`](unshift)
+-   [`Array.prototype.concat()`](concat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift</a>
+
+# Math.sign()
+
+The `Math.sign()` function returns either a **positive** or **negative** +/- 1, indicating the sign of a number passed into the argument. If the number passed into `Math.sign()` is 0, it will return a +/- 0. Note that if the number is positive, an explicit (+) will **not** be returned.
+
+## Syntax
+
+    Math.sign(x)
+
+### Parameters
+
+`x`
+A number. If this argument is not a `number`, it is implicitly converted to one.
+
+### Return value
+
+A number representing the sign of the given argument:
+
+-   If the argument is positive, returns `1`.
+-   If the argument is negative, returns `-1`.
+-   If the argument is positive zero, returns `0`.
+-   If the argument is negative zero, returns `-0`.
+-   Otherwise, [`NaN`](../nan) is returned.
+
+## Description
+
+Because `sign()` is a static method of `Math`, you always use it as `Math.sign()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.sign()
+
+    Math.sign(3);     //  1
+    Math.sign(-3);    // -1
+    Math.sign('-3');  // -1
+    Math.sign(0);     //  0
+    Math.sign(-0);    // -0
+    Math.sign(NaN);   // NaN
+    Math.sign('foo'); // NaN
+    Math.sign();      // NaN
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sign</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sign`
+
+38
+
+12
+
+25
+
+No
+
+25
+
+9
+
+38
+
+38
+
+25
+
+25
+
+9
+
+3.0
+
+## See also
+
+-   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
+-   [`Math.abs()`](abs)
+-   [`Math.ceil()`](ceil)
+-   [`Math.floor()`](floor)
+-   [`Math.round()`](round)
+-   [`Math.trunc()`](trunc)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a>
+
+# Math.sin()
+
+The `Math.sin()` function returns the sine of a number.
+
+## Syntax
+
+    Math.sin(x)
+
+### Parameters
+
+`x`
+A number (given in radians).
+
+### Return value
+
+The sine of the given number.
+
+## Description
+
+The `Math.sin()` method returns a numeric value between -1 and 1, which represents the sine of the angle given in radians.
+
+Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.sin()
+
+    Math.sin(0);           // 0
+    Math.sin(1);           // 0.8414709848078965
+
+    Math.sin(Math.PI / 2); // 1
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sin</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sin`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.acos()`](acos)
+-   [`Math.asin()`](asin)
+-   [`Math.atan()`](atan)
+-   [`Math.atan2()`](atan2)
+-   [`Math.cos()`](cos)
+-   [`Math.tan()`](tan)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin</a>
+
+# Math.sinh()
+
+The `Math.sinh()` function returns the hyperbolic sine of a number, that can be expressed using the [constant e](e):
+
+$$\\mathtt{\\operatorname{Math.sinh(x)}} = \\frac{e^{x} - e^{- x}}{2}$$
+
+## Syntax
+
+    Math.sinh(x)
+
+### Parameters
+
+`x`
+A number.
+
+### Return value
+
+The hyperbolic sine of the given number.
+
+## Description
+
+Because `sinh()` is a static method of `Math`, you always use it as `Math.sinh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Polyfill
+
+This can be emulated with the help of the [`Math.exp()`](exp) function:
+
+    Math.sinh = Math.sinh || function(x) {
+      return (Math.exp(x) - Math.exp(-x)) / 2;
+    }
+
+or using only one call to the [`Math.exp()`](exp) function:
+
+    Math.sinh = Math.sinh || function(x) {
+      var y = Math.exp(x);
+      return (y - 1 / y) / 2;
+    }
+
+## Examples
+
+### Using Math.sinh()
+
+    Math.sinh(0); // 0
+    Math.sinh(1); // 1.1752011936438014
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sinh</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sinh`
+
+38
+
+12
+
+25
+
+No
+
+25
+
+8
+
+38
+
+38
+
+25
+
+25
+
+8
+
+3.0
+
+## See also
+
+-   [`Math.acosh()`](acosh)
+-   [`Math.asinh()`](asinh)
+-   [`Math.atanh()`](atanh)
+-   [`Math.cosh()`](cosh)
+-   [`Math.tanh()`](tanh)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh</a>
+
+# Map.prototype.size
+
+The `size` accessor property returns the number of elements in a [`Map`](../map) object.
+
+## Description
+
+The value of `size` is an integer representing how many entries the `Map` object has. A set accessor function for `size` is `undefined`; you can not change this property.
+
+## Examples
+
+### Using size
+
+    var myMap = new Map();
+    myMap.set('a', 'alpha');
+    myMap.set('b', 'beta');
+    myMap.set('g', 'gamma');
+
+    myMap.size // 3
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-get-map.prototype.size</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`size`
+
+38
+
+12
+
+19
+
+From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.prototype.size()` method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.
+
+11
+
+25
+
+8
+
+38
+
+38
+
+19
+
+From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.prototype.size()` method, this has been changed to a property in later versions conform to the ECMAScript 2015 specification.
+
+25
+
+8
+
+3.0
+
+## See also
+
+-   [`Map`](../map)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size</a>
+
+# Array.prototype.slice()
+
+The `slice()` method returns a shallow copy of a portion of an array into a new array object selected from `start` to `end` (`end` not included) where `start` and `end` represent the index of items in that array. The original array will not be modified.
+
+## Syntax
+
+    slice()
+    slice(start)
+    slice(start, end)
+
+### Parameters
+
+`start` <span class="badge inline optional">Optional</span>
+Zero-based index at which to start extraction.
+
+A negative index can be used, indicating an offset from the end of the sequence. `slice(-2)` extracts the last two elements in the sequence.
+
+If `start` is undefined, `slice` starts from the index `0`.
+
+If `start` is greater than the index range of the sequence, an empty array is returned.
+
+`end` <span class="badge inline optional">Optional</span>
+Zero-based index _before_ which to end extraction. `slice` extracts up to but not including `end`. For example, `slice(1,4)` extracts the second element through the fourth element (elements indexed 1, 2, and 3).
+
+A negative index can be used, indicating an offset from the end of the sequence. `slice(2,-1)` extracts the third element through the second-to-last element in the sequence.
+
+If `end` is omitted, `slice` extracts through the end of the sequence (`arr.length`).
+
+If `end` is greater than the length of the sequence, `slice` extracts through to the end of the sequence (`arr.length`).
+
+### Return value
+
+A new array containing the extracted elements.
+
+## Description
+
+`slice` does not alter the original array. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
+
+-   For object `slice` copies object references into the new array. Both the original and new array refer to the same object. If an object changes, the changes are visible to both the new and original arrays.
+-   For strings, numbers and booleans (not [`String`](../string), [`Number`](../number) and [`Boolean`](../boolean) objects), `slice` copies the values into the new array. Changes to the string, number, or boolean in one array do not affect the other array.
+
+If a new element is added to either array, the other array is not affected.
+
+## Examples
+
+### Return a portion of an existing array
+
+    let fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+    let citrus = fruits.slice(1, 3)
+
+    // fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
+    // citrus contains ['Orange','Lemon']
+
+### Using slice
+
+In the following example, `slice` creates a new array, `newCar`, from `myCar`. Both include a reference to the object `myHonda`. When the color of `myHonda` is changed to purple, both arrays reflect the change.
+
+    // Using slice, create newCar from myCar.
+    let myHonda = { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } }
+    let myCar = [myHonda, 2, 'cherry condition', 'purchased 1997']
+    let newCar = myCar.slice(0, 2)
+
+    // Display the values of myCar, newCar, and the color of myHonda
+    //  referenced from both arrays.
+    console.log('myCar = ' + JSON.stringify(myCar))
+    console.log('newCar = ' + JSON.stringify(newCar))
+    console.log('myCar[0].color = ' + myCar[0].color)
+    console.log('newCar[0].color = ' + newCar[0].color)
+
+    // Change the color of myHonda.
+    myHonda.color = 'purple'
+    console.log('The new color of my Honda is ' + myHonda.color)
+
+    // Display the color of myHonda referenced from both arrays.
+    console.log('myCar[0].color = ' + myCar[0].color)
+    console.log('newCar[0].color = ' + newCar[0].color)
+
+This script writes:
+
+    myCar = [{color: 'red', wheels: 4, engine: {cylinders: 4, size: 2.2}}, 2,
+             'cherry condition', 'purchased 1997']
+    newCar = [{color: 'red', wheels: 4, engine: {cylinders: 4, size: 2.2}}, 2]
+    myCar[0].color = red
+    newCar[0].color = red
+    The new color of my Honda is purple
+    myCar[0].color = purple
+    newCar[0].color = purple
+
+### Array-like objects
+
+`slice` method can also be called to convert Array-like objects/collections to a new Array. You just [`bind`](../function/bind) the method to the object. The [`arguments`](../../functions/arguments) inside a function is an example of an 'array-like object'.
+
+    function list() {
+      return Array.prototype.slice.call(arguments)
+    }
+
+    let list1 = list(1, 2, 3) // [1, 2, 3]
+
+Binding can be done with the [`call()`](../function/call) method of [`Function`](../function) and it can also be reduced using `[].slice.call(arguments)` instead of `Array.prototype.slice.call`.
+
+Anyway, it can be simplified using [`bind`](../function/bind).
+
+    let unboundSlice = Array.prototype.slice
+    let slice = Function.prototype.call.bind(unboundSlice)
+
+    function list() {
+      return slice(arguments)
+    }
+
+    let list1 = list(1, 2, 3) // [1, 2, 3]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.slice</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`slice`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.splice()`](splice)
+-   [`Function.prototype.call()`](../function/call)
+-   [`Function.prototype.bind()`](../function/bind)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice</a>
+
+# String.prototype.small()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `small()` method creates a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element that causes a string to be displayed in a small font.
+
+## Syntax
+
+    small()
+
+### Return value
+
+A string containing a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) HTML element.
+
+## Description
+
+The `small()` method embeds a string in a `<small>` element: "`<small>str</small>`".
+
+## Examples
+
+### Using small()
+
+The following example uses string methods to change the size of a string:
+
+    var worldString = 'Hello, world';
+
+    console.log(worldString.small());     // <small>Hello, world</small>
+    console.log(worldString.big());       // <big>Hello, world</big>
+    console.log(worldString.fontsize(7)); // <font size="7">Hello, world</fontsize>
+
+With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style) object you can get the element's `style` attribute and manipulate it more generically, for example:
+
+    document.getElementById('yourElemId').style.fontSize = '0.7em';
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.small</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`small`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.fontsize()`](fontsize)
+-   [`String.prototype.big()`](big)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small</a>
+
+# Array.prototype.some()
+
+The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+## Syntax
+
+    // Arrow function
+    some((element) => { ... } )
+    some((element, index) => { ... } )
+    some((element, index, array) => { ... } )
+
+    // Callback function
+    some(callbackFn)
+    some(callbackFn, thisArg)
+
+    // Inline callback function
+    some(function callbackFn(element) { ... })
+    some(function callbackFn(element, index) { ... })
+    some(function callbackFn(element, index, array){ ... })
+    some(function callbackFn(element, index, array) { ... }, thisArg)
+
+### Parameters
+
+`callback`
+A function to test for each element, taking three arguments:
+
+`element`
+The current element being processed in the array.
+
+`index`<span class="badge inline optional">Optional</span>
+The index of the current element being processed in the array.
+
+`array`<span class="badge inline optional">Optional</span>
+The array `some()` was called upon.
+
+`thisArg`<span class="badge inline optional">Optional</span>
+A value to use as `this` when executing `callbackFn`.
+
+### Return value
+
+`true` if the callback function returns a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value for at least one element in the array. Otherwise, `false`.
+
+## Description
+
+The `some()` method executes the `callbackFn` function once for each element present in the array until it finds the one where `callbackFn` returns a _truthy_ value (a value that becomes true when converted to a Boolean). If such an element is found, `some()` immediately returns `true`. Otherwise, `some()` returns `false`. `callbackFn` is invoked only for indexes of the array with assigned values. It is not invoked for indexes which have been deleted or which have never been assigned values.
+
+`callbackFn` is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed.
+
+If a `thisArg` parameter is provided to `some()`, it will be used as the callback's `this` value. Otherwise, the value [`undefined`](../undefined) will be used as its `this` value. The `this` value ultimately observable by `callbackFn` is determined according to [the usual rules for determining the `this` seen by a function](../../operators/this).
+
+`some()` does not mutate the array on which it is called.
+
+The range of elements processed by `some()` is set before the first invocation of `callbackFn`. Elements appended to the array after the call to `some()` begins will not be visited by `callbackFn`. If an existing, unvisited element of the array is changed by `callbackFn`, its value passed to the visiting `callbackFn` will be the value at the time that `some()` visits that element's index. Elements that are deleted are not visited.
+
+**Note:** Calling this method on an empty array returns `false` for any condition!
+
+## Polyfill
+
+`some()` was added to the ECMA-262 standard in the 5<sup>th</sup> edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of `some()` in implementations which do not natively support it.
+
+This algorithm is exactly the one specified in ECMA-262, 5<sup>th</sup> edition, assuming [`Object`](../object) and [`TypeError`](../typeerror) have their original values and that `fun.call` evaluates to the original value of [`Function.prototype.call()`](../function/call).
+
+    // Production steps of ECMA-262, Edition 5, 15.4.4.17
+    // Reference: https://es5.github.io/#x15.4.4.17
+    if (!Array.prototype.some) {
+      Array.prototype.some = function(fun, thisArg) {
+        'use strict';
+
+        if (this == null) {
+          throw new TypeError('Array.prototype.some called on null or undefined');
+        }
+
+        if (typeof fun !== 'function') {
+          throw new TypeError();
+        }
+
+        var t = Object(this);
+        var len = t.length >>> 0;
+
+        for (var i = 0; i < len; i++) {
+          if (i in t && fun.call(thisArg, t[i], i, t)) {
+            return true;
+          }
+        }
+
+        return false;
+      };
+    }
+
+## Examples
+
+### Testing value of array elements
+
+The following example tests whether any element in the array is bigger than 10.
+
+    function isBiggerThan10(element, index, array) {
+      return element > 10;
+    }
+
+    [2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+    [12, 5, 8, 1, 4].some(isBiggerThan10); // true
+
+### Testing array elements using arrow functions
+
+[Arrow functions](../../functions/arrow_functions) provide a shorter syntax for the same test.
+
+    [2, 5, 8, 1, 4].some(x => x > 10);  // false
+    [12, 5, 8, 1, 4].some(x => x > 10); // true
+
+### Checking whether a value exists in an array
+
+To mimic the function of the `includes()` method, this custom function returns `true` if the element exists in the array:
+
+    const fruits = ['apple', 'banana', 'mango', 'guava'];
+
+    function checkAvailability(arr, val) {
+      return arr.some(function(arrVal) {
+        return val === arrVal;
+      });
+    }
+
+    checkAvailability(fruits, 'kela');   // false
+    checkAvailability(fruits, 'banana'); // true
+
+### Checking whether a value exists using an arrow function
+
+    const fruits = ['apple', 'banana', 'mango', 'guava'];
+
+    function checkAvailability(arr, val) {
+      return arr.some(arrVal => val === arrVal);
+    }
+
+    checkAvailability(fruits, 'kela');   // false
+    checkAvailability(fruits, 'banana'); // true
+
+### Converting any value to Boolean
+
+    const TRUTHY_VALUES = [true, 'true', 1];
+
+    function getBoolean(value) {
+      'use strict';
+
+      if (typeof value === 'string') {
+        value = value.toLowerCase().trim();
+      }
+
+      return TRUTHY_VALUES.some(function(t) {
+        return t === value;
+      });
+    }
+
+    getBoolean(false);   // false
+    getBoolean('false'); // false
+    getBoolean(1);       // true
+    getBoolean('true');  // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.some</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`some`
+
+1
+
+12
+
+1.5
+
+9
+
+9.5
+
+3
+
+≤37
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.every()`](every)
+-   [`Array.prototype.forEach()`](foreach)
+-   [`Array.prototype.find()`](find)
+-   [`TypedArray.prototype.some()`](../typedarray/some)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some</a>
+
+# Array.prototype.sort()
+
+The `sort()` method sorts the elements of an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_ and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+The time and space complexity of the sort cannot be guaranteed as it depends on the implementation.
+
+## Syntax
+
+    // Functionless
+    sort()
+
+    // Arrow function
+    sort((firstEl, secondEl) => { ... } )
+
+    // Compare function
+    sort(compareFn)
+
+    // Inline compare function
+    sort(function compareFn(firstEl, secondEl) { ... })
+
+### Parameters
+
+`compareFunction` <span class="badge inline optional">Optional</span>
+Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
+
+`firstEl`
+The first element for comparison.
+
+`secondEl`
+The second element for comparison.
+
+### Return value
+
+The sorted array. Note that the array is sorted _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_, and no copy is made.
+
+## Description
+
+If `compareFunction` is not supplied, all non-`undefined` array elements are sorted by converting them to strings and comparing strings in UTF-16 code units order. For example, "banana" comes before "cherry". In a numeric sort, 9 comes before 80, but because numbers are converted to strings, "80" comes before "9" in the Unicode order. All `undefined` elements are sorted to the end of the array.
+
+**Note:** In UTF-16, Unicode characters above `\uFFFF` are encoded as two surrogate code units, of the range `\uD800`-`\uDFFF`. The value of each code unit is taken separately into account for the comparison. Thus the character formed by the surrogate pair `\uD655\uDE55` will be sorted before the character `\uFF3A`.
+
+If `compareFunction` is supplied, all non-`undefined` array elements are sorted according to the return value of the compare function (all `undefined` elements are sorted to the end of the array, with no call to `compareFunction`). If `a` and `b` are two elements being compared, then:
+
+-   If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
+-   If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
+-   If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
+-   `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
+
+So, the compare function has the following form:
+
+    function compare(a, b) {
+      if (a is less than b by some ordering criterion) {
+        return -1;
+      }
+      if (a is greater than b by the ordering criterion) {
+        return 1;
+      }
+      // a must be equal to b
+      return 0;
+    }
+
+To compare numbers instead of strings, the compare function can subtract `b` from `a`. The following function will sort the array in ascending order (if it doesn't contain `Infinity` and `NaN`):
+
+    function compareNumbers(a, b) {
+      return a - b;
+    }
+
+The `sort` method can be conveniently used with [function expressions](../../operators/function):
+
+    var numbers = [4, 2, 5, 1, 3];
+    numbers.sort(function(a, b) {
+      return a - b;
+    });
+    console.log(numbers);
+
+    // [1, 2, 3, 4, 5]
+
+ES2015 provides [arrow function expressions](../../functions/arrow_functions) with even shorter syntax.
+
+    let numbers = [4, 2, 5, 1, 3];
+    numbers.sort((a, b) => a - b);
+    console.log(numbers);
+
+    // [1, 2, 3, 4, 5]
+
+Arrays of objects can be sorted by comparing the value of one of their properties.
+
+    var items = [
+      { name: 'Edward', value: 21 },
+      { name: 'Sharpe', value: 37 },
+      { name: 'And', value: 45 },
+      { name: 'The', value: -12 },
+      { name: 'Magnetic', value: 13 },
+      { name: 'Zeros', value: 37 }
+    ];
+
+    // sort by value
+    items.sort(function (a, b) {
+      return a.value - b.value;
+    });
+
+    // sort by name
+    items.sort(function(a, b) {
+      var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+      var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+
+      // names must be equal
+      return 0;
+    });
+
+## Examples
+
+### Creating, displaying, and sorting an array
+
+The following example creates four arrays and displays the original array, then the sorted arrays. The numeric arrays are sorted without a compare function, then sorted using one.
+
+    let stringArray = ['Blue', 'Humpback', 'Beluga'];
+    let numericStringArray = ['80', '9', '700'];
+    let numberArray = [40, 1, 5, 200];
+    let mixedNumericArray = ['80', '9', '700', 40, 1, 5, 200];
+
+    function compareNumbers(a, b) {
+      return a - b;
+    }
+
+    stringArray.join(); // 'Blue,Humpback,Beluga'
+    stringArray.sort(); // ['Beluga', 'Blue', 'Humpback']
+
+    numberArray.join(); // '40,1,5,200'
+    numberArray.sort(); // [1, 200, 40, 5]
+    numberArray.sort(compareNumbers); // [1, 5, 40, 200]
+
+    numericStringArray.join(); // '80,9,700'
+    numericStringArray.sort(); // [700, 80, 9]
+    numericStringArray.sort(compareNumbers); // [9, 80, 700]
+
+    mixedNumericArray.join(); // '80,9,700,40,1,5,200'
+    mixedNumericArray.sort(); // [1, 200, 40, 5, 700, 80, 9]
+    mixedNumericArray.sort(compareNumbers); // [1, 5, 9, 40, 80, 200, 700]
+
+### Sorting non-ASCII characters
+
+For sorting strings with non-ASCII characters, i.e. strings with accented characters (e, é, è, a, ä, etc.), strings from languages other than English, use [`String.localeCompare`](../string/localecompare). This function can compare those characters so they appear in the right order.
+
+    var items = ['réservé', 'premier', 'communiqué', 'café', 'adieu', 'éclair'];
+    items.sort(function (a, b) {
+      return a.localeCompare(b);
+    });
+
+    // items is ['adieu', 'café', 'communiqué', 'éclair', 'premier', 'réservé']
+
+### Sorting with map
+
+The `compareFunction` can be invoked multiple times per element within the array. Depending on the `compareFunction`'s nature, this may yield a high overhead. The more work a `compareFunction` does and the more elements there are to sort, it may be more efficient to use [map](map) for sorting. The idea is to traverse the array once to extract the actual values used for sorting into a temporary array, sort the temporary array, and then traverse the temporary array to achieve the right order.
+
+    // the array to be sorted
+    const in = ['delta', 'alpha', 'charlie', 'bravo'];
+
+    // temporary array holds objects with position and sort-value
+    const mapped = in.map((v, i) => {
+      return { i, value: someSlowOperation(v) };
+    })
+
+    // sorting the mapped array containing the reduced values
+    mapped.sort((a, b) => {
+      if (a.value > b.value) {
+        return 1;
+      }
+      if (a.value < b.value) {
+        return -1;
+      }
+      return 0;
+    });
+
+    const result = mapped.map(v => in[v.i]);
+
+There is an open source library available called [mapsort](https://null.house/open-source/mapsort) which applies this approach.
+
+### Sort stability
+
+Since version 10 (or EcmaScript 2019), the [specification](https://tc39.es/ecma262/#sec-array.prototype.sort) dictates that `Array.prototype.sort` is stable.
+
+For example, say you had a list of students alongside their grades. Note that the list of students is already pre-sorted by name in alphabetical order:
+
+    const students = [
+      { name: "Alex",   grade: 15 },
+      { name: "Devlin", grade: 15 },
+      { name: "Eagle",  grade: 13 },
+      { name: "Sam",    grade: 14 },
+    ];
+
+After sorting this array by `grade` in ascending order:
+
+    students.sort((firstItem, secondItem) => firstItem.grade - secondItem.grade);
+
+The `students` variable will then have the following value:
+
+    [
+      { name: "Eagle",  grade: 13 },
+      { name: "Sam",    grade: 14 },
+      { name: "Alex",   grade: 15 }, // original maintained for similar grade (stable sorting)
+      { name: "Devlin", grade: 15 }, // original maintained for similar grade (stable sorting)
+    ];
+
+It's important to note that students that have the same grade (for example, Alex and Devlin), will remain in the same order as before calling the sort. This is what a stable sorting algorithm guarantees.
+
+Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meaning that you could end up with the following:
+
+    [
+      { name: "Eagle",  grade: 13 },
+      { name: "Sam",    grade: 14 },
+      { name: "Devlin", grade: 15 }, // original order not maintained
+      { name: "Alex",   grade: 15 }, // original order not maintained
+    ];
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sort`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`stable`
+
+70
+
+79
+
+3
+
+No
+
+57
+
+10.1
+
+70
+
+70
+
+4
+
+49
+
+10.3
+
+10.0
+
+## See also
+
+-   [`Array.prototype.reverse()`](reverse)
+-   [`String.prototype.localeCompare()`](../string/localecompare)
+-   [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
+-   [V8 sort stability](https://v8.dev/features/stable-sort)
+-   [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</a>
+
+# RegExp.prototype.source
+
+The `source` property returns a [`String`](../string) containing the source text of the regexp object, and it doesn't contain the two forward slashes on both sides and any flags.
+
+Property attributes of `RegExp.prototype.source`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+yes
+
+## Examples
+
+### Using source
+
+    var regex = /fooBar/ig;
+
+    console.log(regex.source); // "fooBar", doesn't contain /.../ and "ig".
+
+### Empty regular expressions and escaping
+
+Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as "\\n") are escaped now.
+
+    new RegExp().source; // "(?:)"
+
+    new RegExp('\n').source === '\n';  // true, prior to ES5
+    new RegExp('\n').source === '\\n'; // true, starting with ES5
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-get-regexp.prototype.source</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`source`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`empty_regex_string`
+
+6
+
+12
+
+38
+
+No
+
+15
+
+5
+
+≤37
+
+18
+
+38
+
+14
+
+4.2
+
+1.0
+
+`escaping`
+
+73
+
+12
+
+38
+
+10
+
+60
+
+6
+
+73
+
+73
+
+38
+
+52
+
+6
+
+No
+
+`prototype_accessor`
+
+48
+
+12
+
+41
+
+4
+
+35
+
+1.3
+
+48
+
+48
+
+41
+
+35
+
+1
+
+5.0
+
+## See also
+
+-   [`RegExp.prototype.flags`](flags)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source</a>
+
+# Symbol.species
+
+The well-known symbol `Symbol.species` specifies a function-valued property that the constructor function uses to create derived objects.
+
+## Description
+
+The `species` accessor property allows subclasses to override the default constructor for objects.
+
+Property attributes of `Symbol.species`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Examples
+
+### Using species
+
+You might want to return [`Array`](../array) objects in your derived array class `MyArray`. For example, when using methods such as [`map()`](../array/map) that return the default constructor, you want these methods to return a parent `Array` object, instead of the `MyArray` object. The `species` symbol lets you do this:
+
+    class MyArray extends Array {
+      // Overwrite species to the parent Array constructor
+      static get [Symbol.species]() { return Array; }
+    }
+    let a = new MyArray(1,2,3);
+    let mapped = a.map(x => x * x);
+
+    console.log(mapped instanceof MyArray); // false
+    console.log(mapped instanceof Array);   // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-symbol.species</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`species`
+
+51
+
+13
+
+41
+
+No
+
+38
+
+10
+
+51
+
+51
+
+41
+
+41
+
+10
+
+5.0
+
+## See also
+
+-   [`Map[@@species]`](../map/@@species)
+-   [`Set[@@species]`](../set/@@species)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species</a>
+
+# Array.prototype.splice()
+
+The `splice()` method changes the contents of an array by removing or replacing existing elements and/or adding new elements [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
+
+## Syntax
+
+    splice(start)
+    splice(start, deleteCount)
+    splice(start, deleteCount, item1)
+    splice(start, deleteCount, item1, item2, itemN)
+
+### Parameters
+
+`start`
+The index at which to start changing the array.
+
+If greater than the length of the array, `start` will be set to the length of the array. In this case, no element will be deleted but the method will behave as an adding function, adding as many element as item\[n\*\] provided.
+
+If negative, it will begin that many elements from the end of the array. (In this case, the origin `-1`, meaning `-n` is the index of the `n`<sup>th</sup> last element, and is therefore equivalent to the index of `array.length - n`.) If `array.length + start` is less than `0`, it will begin from index `0`.
+
+`deleteCount` <span class="badge inline optional">Optional</span>
+An integer indicating the number of elements in the array to remove from `start`.
+
+If `deleteCount` is omitted, or if its value is equal to or larger than `array.length - start` (that is, if it is equal to or greater than the number of elements left in the array, starting at `start`), then all the elements from `start` to the end of the array will be deleted.
+
+If `deleteCount` is `0` or negative, no elements are removed. In this case, you should specify at least one new element (see below).
+
+`item1, item2, ...` <span class="badge inline optional">Optional</span>
+The elements to add to the array, beginning from `start`. If you do not specify any elements, `splice()` will only remove elements from the array.
+
+### Return value
+
+An array containing the deleted elements.
+
+If only one element is removed, an array of one element is returned.
+
+If no elements are removed, an empty array is returned.
+
+## Description
+
+If the specified number of elements to insert differs from the number of elements being removed, the array's `length` will be changed.
+
+## Examples
+
+### Remove 0 (zero) elements before index 2, and insert "drum"
+
+    let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(2, 0, 'drum')
+
+    // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+    // removed is [], no elements removed
+
+### Remove 0 (zero) elements before index 2, and insert "drum" and "guitar"
+
+    let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(2, 0, 'drum', 'guitar')
+
+    // myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"]
+    // removed is [], no elements removed
+
+### Remove 1 element at index 3
+
+    let myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(3, 1)
+
+    // myFish is ["angel", "clown", "drum", "sturgeon"]
+    // removed is ["mandarin"]
+
+### Remove 1 element at index 2, and insert "trumpet"
+
+    let myFish = ['angel', 'clown', 'drum', 'sturgeon']
+    let removed = myFish.splice(2, 1, 'trumpet')
+
+    // myFish is ["angel", "clown", "trumpet", "sturgeon"]
+    // removed is ["drum"]
+
+### Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+
+    let myFish = ['angel', 'clown', 'trumpet', 'sturgeon']
+    let removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue')
+
+    // myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"]
+    // removed is ["angel", "clown"]
+
+### Remove 2 elements, starting from index 2
+
+    let myFish = ['parrot', 'anemone', 'blue', 'trumpet', 'sturgeon']
+    let removed = myFish.splice(2, 2)
+
+    // myFish is ["parrot", "anemone", "sturgeon"]
+    // removed is ["blue", "trumpet"]
+
+### Remove 1 element from index -2
+
+    let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(-2, 1)
+
+    // myFish is ["angel", "clown", "sturgeon"]
+    // removed is ["mandarin"]
+
+### Remove all elements, starting from index 2
+
+    let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(2)
+
+    // myFish is ["angel", "clown"]
+    // removed is ["mandarin", "sturgeon"]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.splice</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`splice`
+
+1
+
+12
+
+1
+
+5.5
+
+From Internet Explorer 5.5 through 8, all elements of the array will not be deleted if `deleteCount` is omitted. This behavior was fixed in Internet Explorer 9.
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`push()`](push) / [`pop()`](pop)— add/remove elements from the end of the array
+-   [`unshift()`](unshift) / [`shift()`](shift)— add/remove elements from the beginning of the array
+-   [`concat()`](concat)— returns a new array comprised of this array joined with other array(s) and/or value(s)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</a>
+
+# String.prototype.split()
+
+The `split()` method divides a [`String`](../string) into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.
+
+## Syntax
+
+    split()
+    split(separator)
+    split(separator, limit)
+
+### Parameters
+
+`separator` <span class="badge inline optional">Optional</span>
+The pattern describing where each split should occur. The `separator` can be a simple string or it can be a [regular expression](../regexp).
+
+-   The simplest case is when `separator` is just a single character; this is used to split a delimited string. For example, a string containing tab separated values (TSV) could be parsed by passing a tab character as the separator, like this: `myString.split("\t")`.
+-   If `separator` contains multiple characters, that entire character sequence must be found in order to split.
+-   If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
+-   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
+-   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters".
+
+**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
+
+`limit` <span class="badge inline optional">Optional</span>
+A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
+
+-   The array may contain fewer entries than `limit` if the end of the string is reached before the limit is reached.
+-   If `limit` is `0`, `[]` is returned.
+
+### Return value
+
+An [`Array`](../array) of strings, split at each point where the `separator` occurs in the given string.
+
+## Description
+
+When found, `separator` is removed from the string, and the substrings are returned in an array.
+
+If `separator` is a regular expression with capturing parentheses, then each time `separator` matches, the results (including any `undefined` results) of the capturing parentheses are spliced into the output array.
+
+If the separator is an array, then that Array is coerced to a String and used as a separator.
+
+## Examples
+
+### Using `split()`
+
+When the string is empty, `split()` returns an array containing one empty string, rather than an empty array. If the string and separator are both empty strings, an empty array is returned.
+
+    const myString = ''
+    const splits = myString.split()
+
+    console.log(splits)
+
+    // ↪ [""]
+
+The following example defines a function that splits a string into an array of strings using `separator`. After splitting the string, the function logs messages indicating the original string (before the split), the separator used, the number of elements in the array, and the individual array elements.
+
+    function splitString(stringToSplit, separator) {
+      const arrayOfStrings = stringToSplit.split(separator)
+
+      console.log('The original string is: ', stringToSplit)
+      console.log('The separator is: ', separator)
+      console.log('The array has ', arrayOfStrings.length, ' elements: ', arrayOfStrings.join(' / '))
+    }
+
+    const tempestString = 'Oh brave new world that has such people in it.'
+    const monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec'
+
+    const space = ' '
+    const comma = ','
+
+    splitString(tempestString, space)
+    splitString(tempestString)
+    splitString(monthString, comma)
+
+This example produces the following output:
+
+    The original string is: "Oh brave new world that has such people in it."
+    The separator is: " "
+    The array has 10 elements: Oh / brave / new / world / that / has / such / people / in / it.
+
+    The original string is: "Oh brave new world that has such people in it."
+    The separator is: "undefined"
+    The array has 1 elements: Oh brave new world that has such people in it.
+
+    The original string is: "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+    The separator is: ","
+    The array has 12 elements: Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec
+
+### Removing spaces from a string
+
+In the following example, `split()` looks for zero or more spaces, followed by a semicolon, followed by zero or more spaces—and, when found, removes the spaces and the semicolon from the string. `nameList` is the array returned as a result of `split()`.
+
+    const names = 'Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand '
+
+    console.log(names)
+
+    const re = /\s*(?:;|$)\s*/
+    const nameList = names.split(re)
+
+    console.log(nameList)
+
+This logs two lines; the first line logs the original string, and the second line logs the resulting array.
+
+    Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand
+    [ "Harry Trump", "Fred Barney", "Helen Rigby", "Bill Abel", "Chris Hand", "" ]
+
+### Returning a limited number of splits
+
+In the following example, `split()` looks for spaces in a string and returns the first 3 splits that it finds.
+
+    const myString = 'Hello World. How are you doing?'
+    const splits = myString.split(' ', 3)
+
+    console.log(splits)
+
+This script displays the following:
+
+    ["Hello", "World.", "How"]
+
+### Splitting with a `RegExp` to include parts of the separator in the result
+
+If `separator` is a regular expression that contains capturing parentheses ` (``) `, matched results are included in the array.
+
+    const myString = 'Hello 1 word. Sentence number 2.'
+    const splits = myString.split(/(\d)/)
+
+    console.log(splits)
+
+This script displays the following:
+
+    [ "Hello ", "1", " word. Sentence number ", "2", "." ]
+
+**Note:** `\d` matches the [character class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes) for digits between 0 and 9.
+
+### Reversing a String using `split()`
+
+**Warning:** This is not a robust way to reverse a string:
+
+    const str = 'asdfghjkl'
+    const strReverse = str.split('').reverse().join('')
+    // 'lkjhgfdsa'
+
+    // split() returns an array on which reverse() and join() can be applied
+
+It doesn't work if the string contains grapheme clusters, even when using a unicode-aware split. (Use, for example, [esrever](https://github.com/mathiasbynens/esrever) instead.)
+
+    const str = 'résumé'
+    const strReverse = str.split(/(?:)/u).reverse().join('')
+    // => "́emuśer"
+
+**Bonus:** use [`===`](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity_strict_equality_(===)>) operator to test if the original string was a palindrome.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.split</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`split`
+
+1
+
+12
+
+1
+
+4
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.charAt()`](charat)
+-   [`String.prototype.indexOf()`](indexof)
+-   [`String.prototype.lastIndexOf()`](lastindexof)
+-   [`Array.prototype.join()`](../array/join)
+-   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a>
+
+# Spread syntax (...)
+
+**Spread syntax** (`...`) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+## Description
+
+Spread syntax can be used when all elements from an object or array need to be included in a list of some kind.
+
+In the above example, the defined function takes `x`, `y`, and `z` as arguments and returns the sum of these values. An array value is also defined.
+
+When we invoke the function, we pass it all the values in the array using the spread syntax and the array name — `...numbers`.
+
+If the array contained more than three numbers, e.g. `[1, 2, 3, 4]`, then it would still work fine, except that all four would be passed, but only the first three would be used unless you added more arguments to the function, e.g.:
+
+    function sum(x, y, z, n) {
+      return x + y + z + n;
+    }
+
+The above example is somewhat rigid; the real value in spread syntax is that it works with the same value, no matter how many elements are contained in the object, array, etc.
+
+It is commonly used when you want to add a new item to a local data store, or display all stored items plus a new addition. A very simple version of this kind of action could look like so:
+
+    let numberStore = [0, 1, 2];
+    let newNumber = 12;
+    numberStore = [...numberStore, newNumber];
+
+In the above example you can rerun the last line as many times as you like, to keep adding an additional 12 to the end of the array.
+
+## Syntax
+
+For function calls:
+
+    myFunction(...iterableObj); // pass all elements of iterableObj as arguments to function myFunction
+
+For array literals or strings:
+
+    [...iterableObj, '4', 'five', 6]; // combine two arrays by inserting all elements from iterableObj
+
+For object literals (new in ECMAScript 2018):
+
+    let objClone = { ...obj }; // pass all key:value pairs from an object
+
+## Rest syntax (parameters)
+
+Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element. See [rest parameters](../functions/rest_parameters).
+
+## Examples
+
+### Spread in function calls
+
+#### Replace apply()
+
+It is common to use [`Function.prototype.apply()`](../global_objects/function/apply) in cases where you want to use the elements of an array as arguments to a function.
+
+    function myFunction(x, y, z) { }
+    let args = [0, 1, 2];
+    myFunction.apply(null, args);
+
+With spread syntax the above can be written as:
+
+    function myFunction(x, y, z) { }
+    let args = [0, 1, 2];
+    myFunction(...args);
+
+Any argument in the argument list can use spread syntax, and the spread syntax can be used multiple times.
+
+    function myFunction(v, w, x, y, z) { }
+    let args = [0, 1];
+    myFunction(-1, ...args, 2, ...[3]);
+
+#### Apply for new operator
+
+When calling a constructor with [`new`](new) it's not possible to **directly** use an array and `apply()` (`apply()` does a `[[Call]]` and not a `[[Construct]]`). However, an array can be easily used with `new` thanks to spread syntax:
+
+    let dateFields = [1970, 0, 1];  // 1 Jan 1970
+    let d = new Date(...dateFields);
+
+To use `new` with an array of parameters without spread syntax, you would have to do it **indirectly** through partial application:
+
+    function applyAndNew(constructor, args) {
+       function partial () {
+          return constructor.apply(this, args);
+       };
+       if (typeof constructor.prototype === "object") {
+          partial.prototype = Object.create(constructor.prototype);
+       }
+       return partial;
+    }
+
+    function myConstructor () {
+       console.log("arguments.length: " + arguments.length);
+       console.log(arguments);
+       this.prop1="val1";
+       this.prop2="val2";
+    };
+
+    let myArguments = ["hi", "how", "are", "you", "mr", null];
+    let myConstructorWithArguments = applyAndNew(myConstructor, myArguments);
+
+    console.log(new myConstructorWithArguments);
+    //  (internal log of myConstructor):           arguments.length: 6
+    //  (internal log of myConstructor):           ["hi", "how", "are", "you", "mr", null]
+    //  (log of "new myConstructorWithArguments"): {prop1: "val1", prop2: "val2"}
+
+### Spread in array literals
+
+#### A more powerful array literal
+
+Without spread syntax, to create a new array using an existing array as one part of it, the array literal syntax is no longer sufficient and imperative code must be used instead using a combination of [`push()`](../global_objects/array/push), [`splice()`](../global_objects/array/splice), [`concat()`](../global_objects/array/concat), etc. With spread syntax this becomes much more succinct:
+
+    let parts = ['shoulders', 'knees'];
+    let lyrics = ['head', ...parts, 'and', 'toes'];
+    //  ["head", "shoulders", "knees", "and", "toes"]
+
+Just like spread for argument lists, `...` can be used anywhere in the array literal, and may be used more than once.
+
+#### Copy an array
+
+    let arr = [1, 2, 3];
+    let arr2 = [...arr]; // like arr.slice()
+
+    arr2.push(4);
+    //  arr2 becomes [1, 2, 3, 4]
+    //  arr remains unaffected
+
+**Note:** Spread syntax effectively goes one level deep while copying an array. Therefore, it may be unsuitable for copying multidimensional arrays, as the following example shows. (The same is true with [`Object.assign()`](../global_objects/object/assign) and spread syntax.)
+
+    let a = [[1], [2], [3]];
+    let b = [...a];
+
+    b.shift().shift();
+    //  1
+
+    //  Oh no!  Now array 'a' is affected as well:
+    a
+    //  [[], [2], [3]]
+
+#### A better way to concatenate arrays
+
+[`Array.prototype.concat()`](../global_objects/array/concat) is often used to concatenate an array to the end of an existing array. Without spread syntax, this is done as:
+
+    let arr1 = [0, 1, 2];
+    let arr2 = [3, 4, 5];
+
+    //  Append all items from arr2 onto arr1
+    arr1 = arr1.concat(arr2);
+
+With spread syntax this becomes:
+
+    let arr1 = [0, 1, 2];
+    let arr2 = [3, 4, 5];
+
+    arr1 = [...arr1, ...arr2];
+    //  arr1 is now [0, 1, 2, 3, 4, 5]
+    // Note: Not to use const otherwise, it will give TypeError (invalid assignment)
+
+[`Array.prototype.unshift()`](../global_objects/array/unshift) is often used to insert an array of values at the start of an existing array. Without spread syntax, this is done as:
+
+    let arr1 = [0, 1, 2];
+    let arr2 = [3, 4, 5];
+
+    //  Prepend all items from arr2 onto arr1
+    Array.prototype.unshift.apply(arr1, arr2)
+
+    //  arr1 is now [3, 4, 5, 0, 1, 2]
+
+With spread syntax, this becomes:
+
+    let arr1 = [0, 1, 2];
+    let arr2 = [3, 4, 5];
+
+    arr1 = [...arr2, ...arr1];
+    //  arr1 is now [3, 4, 5, 0, 1, 2]
+
+**Note:** Unlike `unshift()`, this creates a new `arr1`, and does not modify the original `arr1` array in-place.
+
+### Spread in object literals
+
+The [Rest/Spread Properties for ECMAScript](https://github.com/tc39/proposal-object-rest-spread) proposal (ES2018) added spread properties to [`object literals`](object_initializer#1). It copies own enumerable properties from a provided object onto a new object.
+
+Shallow-cloning (excluding prototype) or merging of objects is now possible using a shorter syntax than [`Object.assign()`](../global_objects/object/assign).
+
+    let obj1 = { foo: 'bar', x: 42 };
+    let obj2 = { foo: 'baz', y: 13 };
+
+    let clonedObj = { ...obj1 };
+    // Object { foo: "bar", x: 42 }
+
+    let mergedObj = { ...obj1, ...obj2 };
+    // Object { foo: "baz", x: 42, y: 13 }
+
+Note that [`Object.assign()`](../global_objects/object/assign) triggers [`setters`](../functions/set), whereas spread syntax doesn't.
+
+Note that you cannot replace or mimic the [`Object.assign()`](../global_objects/object/assign) function:
+
+    let obj1 = { foo: 'bar', x: 42 };
+    let obj2 = { foo: 'baz', y: 13 };
+    const merge = ( ...objects ) => ( { ...objects } );
+
+    let mergedObj1 = merge (obj1, obj2);
+    // Object { 0: { foo: 'bar', x: 42 }, 1: { foo: 'baz', y: 13 } }
+
+    let mergedObj2 = merge ({}, obj1, obj2);
+    // Object { 0: {}, 1: { foo: 'bar', x: 42 }, 2: { foo: 'baz', y: 13 } }
+
+In the above example, the spread syntax does not work as one might expect: it spreads an _array_ of arguments into the object literal, due to the rest parameter.
+
+### Only for iterables
+
+Objects themselves are not iterable, but they become iterable when used in an Array, or with iterating functions such as `map()`, `reduce()`, and `assign()`. When merging 2 objects together with the spread operator, it is assumed another iterating function is used when the merging occurs.
+
+Spread syntax (other than in the case of spread properties) can be applied only to [iterable](../global_objects/symbol/iterator) objects:
+
+    let obj = {'key1': 'value1'};
+    let array = [...obj]; // TypeError: obj is not iterable
+
+### Spread with many values
+
+When using spread syntax for function calls, be aware of the possibility of exceeding the JavaScript engine's argument length limit. See [`apply()`](../global_objects/function/apply) for more details.
+
+## Specifications
+
+**No specification found**
+
+No specification data found for `javascript.operators.spread`.
+[Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`spread_in_arrays`
+
+46
+
+12
+
+16
+
+No
+
+37
+
+8
+
+46
+
+46
+
+16
+
+37
+
+8
+
+5.0
+
+`spread_in_function_calls`
+
+46
+
+12
+
+27
+
+No
+
+37
+
+8
+
+46
+
+46
+
+27
+
+37
+
+8
+
+5.0
+
+`spread_in_object_literals`
+
+60
+
+79
+
+55
+
+No
+
+47
+
+11.1
+
+60
+
+60
+
+55
+
+44
+
+11.3
+
+8.2
+
+## See also
+
+-   [Rest parameters](../functions/rest_parameters) (also '`...`')
+-   [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`')
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a>
+
+# Math.sqrt()
+
+The `Math.sqrt()` function returns the square root of a number, that is
+
+$$\\forall x \\geq 0,\\mathtt{Math.sqrt(x)} = \\sqrt{x} = \\text{the\\ unique}\\; y \\geq 0\\;\\text{such\\ that}\\; y^{2} = x$$
+
+## Syntax
+
+    Math.sqrt(x)
+
+### Parameters
+
+`x`
+A number.
+
+### Return value
+
+The square root of the given number. If the number is negative, [`NaN`](../nan) is returned.
+
+## Description
+
+If the value of `x` is negative, `Math.sqrt()` returns [`NaN`](../nan).
+
+Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.sqrt()
+
+    Math.sqrt(9); // 3
+    Math.sqrt(2); // 1.414213562373095
+
+    Math.sqrt(1);  // 1
+    Math.sqrt(0);  // 0
+    Math.sqrt(-1); // NaN
+    Math.sqrt(-0); // -0
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sqrt</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sqrt`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.cbrt()`](cbrt)
+-   [`Math.exp()`](exp)
+-   [`Math.log()`](log)
+-   [`Math.pow()`](pow)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt</a>
+
+# Math.SQRT1_2
+
+The `Math.SQRT1_2` property represents the square root of 1/2 which is approximately 0.707:
+
+$$\\mathtt{Math.SQRT1\\\_ 2} = \\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}} \\approx 0.707$$
+
+Property attributes of `Math.SQRT1_2`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Description
+
+Because `SQRT1_2` is a static property of `Math`, you always use it as `Math.SQRT1_2`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.SQRT1_2
+
+The following function returns 1 over the square root of 2:
+
+    function getRoot1_2() {
+      return Math.SQRT1_2;
+    }
+
+    getRoot1_2(); // 0.7071067811865476
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sqrt1_2</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`SQRT1_2`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.pow()`](pow)
+-   [`Math.sqrt()`](sqrt)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2</a>
+
+# Math.SQRT2
+
+The `Math.SQRT2` property represents the square root of 2, approximately 1.414:
+
+$$\\mathtt{Math.SQRT2} = \\sqrt{2} \\approx 1.414$$
+
+Property attributes of `Math.SQRT2`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Description
+
+Because `SQRT2` is a static property of `Math`, you always use it as `Math.SQRT2`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.SQRT2
+
+The following function returns the square root of 2:
+
+    function getRoot2() {
+      return Math.SQRT2;
+    }
+
+    getRoot2(); // 1.4142135623730951
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`SQRT2`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.pow()`](pow)
+-   [`Math.sqrt()`](sqrt)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2</a>
+
+# Error.prototype.stack
+
+**Non-standard**
+
+This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.
+
+The non-standard `stack` property of [`Error`](../error) objects offer a trace of which functions were called, in what order, from which line and file, and with what arguments. The stack string proceeds from the most recent calls to earlier ones, leading back to the original global scope call.
+
+## Description
+
+Each step will be separated by a newline, with the first part of the line being the function name (if not a call from the global scope), then by an at (@) sign, the file location (except when the function is the error constructor as the error is being thrown), a colon, and, if there is a file location, the line number. (Note that the [`Error`](../error) object also possesses the `fileName`, `lineNumber` and `columnNumber` properties for retrieving these from the error thrown (but only the error, and not its trace).)
+
+Note that this is the format used by Firefox. There is no standard formatting. However, Safari 6+ and Opera 12- use a very similar format. Browsers using the V8 JavaScript engine (such as Chrome, Opera 15+, Android Browser) and IE10+, on the other hand, uses a different format (see [the archived MSDN error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)).
+
+**Argument values in the stack**: Prior to Firefox 14, the function name would be followed by the argument values converted to string in parentheses immediately before the at (`@`) sign. While an object (or array, etc.) would appear in the converted form `"[object Object]"`, and as such could not be evaluated back into the actual objects, scalar values could be retrieved (though it may be — it is still possible in Firefox 14 — easier to use `arguments.callee.caller.arguments`, as could the function name be retrieved by `arguments.callee.caller.name`). `"undefined"` is listed as `"(void 0)"`. Note that if string arguments were passed in with values such as `"@"`, `"("`, `")"` (or if in file names), you could not easily rely on these for breaking the line into its component parts. Thus, in Firefox 14 and later this is less of an issue.
+
+Different browsers set this value at different times. For example, Firefox sets it when creating an [`Error`](../error) object, while PhantomJS sets it only when throwing the [`Error`](../error), and [archived MSDN docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx) also seem to match the PhantomJS implementation.
+
+## Examples
+
+### Using the stack property
+
+The following HTML markup demonstrates the use of `stack` property.
+
+    <!DOCTYPE HTML>
+    <meta charset="UTF-8">
+    <title>Stack Trace Example</title>
+    <body>
+    <script>
+    function trace() {
+      try {
+        throw new Error('myError');
+      }
+      catch(e) {
+        alert(e.stack);
+      }
+    }
+    function b() {
+      trace();
+    }
+    function a() {
+      b(3, 4, '\n\n', undefined, {});
+    }
+    a('first call, firstarg');
+    </script>
+
+Assuming the above markup is saved as `C:\example.html` on a Windows file system it produces an alert message box with the following text:
+
+Starting with Firefox 30 and later containing the column number:
+
+    trace@file:///C:/example.html:9:17
+    b@file:///C:/example.html:16:13
+    a@file:///C:/example.html:19:13
+    @file:///C:/example.html:21:9
+
+Firefox 14 to Firefox 29:
+
+    trace@file:///C:/example.html:9
+    b@file:///C:/example.html:16
+    a@file:///C:/example.html:19
+    @file:///C:/example.html:21
+
+Firefox 13 and earlier would instead produce the following text:
+
+    Error("myError")@:0
+    trace()@file:///C:/example.html:9
+    b(3,4,"\n\n",(void 0),[object Object])@file:///C:/example.html:16
+    a("first call, firstarg")@file:///C:/example.html:19
+    @file:///C:/example.html:21
+
+### Stack of eval'ed code
+
+Starting with Firefox 30, the error stack of code in `Function()` and `eval()` calls, now produces stacks with more detailed information about the line and column numbers inside these calls. Function calls are indicated with `"> Function"` and eval calls with `"> eval"`.
+
+    try {
+      new Function('throw new Error()')();
+    } catch (e) {
+      console.log(e.stack);
+    }
+
+    // anonymous@file:///C:/example.html line 7 > Function:1:1
+    // @file:///C:/example.html:7:6
+
+    try {
+      eval("eval('FAIL')");
+    } catch (x) {
+      console.log(x.stack);
+    }
+
+    // @file:///C:/example.html line 7 > eval line 1 > eval:1:1
+    // @file:///C:/example.html line 7 > eval:1:1
+    // @file:///C:/example.html:7:6
+
+You can also use the `//# sourceURL` directive to name an eval source. See also [Debug eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources) in the [Debugger](https://developer.mozilla.org/en-US/docs/Tools/Debugger) docs and this [blog post](https://fitzgeraldnick.com/weblog/59/).
+
+## Specifications
+
+Not part of any standard.
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Stack`
+
+3
+
+12
+
+1
+
+10
+
+10.5
+
+6
+
+≤37
+
+18
+
+4
+
+11
+
+6
+
+1.0
+
+## See also
+
+-   [Components.stack](https://developer.mozilla.org/en-US/docs/Components.stack)
+-   External projects: [TraceKit](https://github.com/csnover/TraceKit/) and [javascript-stacktrace](https://github.com/eriwen/javascript-stacktrace)
+-   MSDN: [archived error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)
+-   [Overview of the V8 JavaScript stack trace API](https://github.com/v8/v8/wiki/Stack%20Trace%20API)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Stack" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/Stack</a>
+
+# String.prototype.startsWith()
+
+The `startsWith()` method determines whether a string begins with the characters of a specified string, returning `true` or `false` as appropriate.
+
+## Syntax
+
+    startsWith(searchString)
+    startsWith(searchString, position)
+
+### Parameters
+
+`searchString`
+The characters to be searched for at the start of this string.
+
+`position` <span class="badge inline optional">Optional</span>
+The position in this string at which to begin searching for `searchString`. Defaults to `0`.
+
+### Return value
+
+`true` if the given characters are found at the beginning of the string; otherwise, `false`.
+
+## Description
+
+This method lets you determine whether or not a string begins with another string. This method is case-sensitive.
+
+## Examples
+
+### Using startsWith()
+
+    //startswith
+    let str = 'To be, or not to be, that is the question.'
+
+    console.log(str.startsWith('To be'))          // true
+    console.log(str.startsWith('not to be'))      // false
+    console.log(str.startsWith('not to be', 10))  // true
+
+## Polyfill
+
+This method has been added to the ECMAScript 2015 specification and may not be available in all JavaScript implementations yet. However, you can polyfill `String.prototype.startsWith()` with the following snippet:
+
+    if (!String.prototype.startsWith) {
+        Object.defineProperty(String.prototype, 'startsWith', {
+            value: function(search, rawPos) {
+                var pos = rawPos > 0 ? rawPos|0 : 0;
+                return this.substring(pos, pos + search.length) === search;
+            }
+        });
+    }
+
+A more robust (fully ES2015 specification compliant), but less performant and compact, Polyfill is available [on GitHub by Mathias Bynens](https://github.com/mathiasbynens/String.prototype.startsWith).
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.startswith</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`startsWith`
+
+41
+
+12
+
+17
+
+No
+
+28
+
+9
+
+≤37
+
+36
+
+17
+
+24
+
+9
+
+3.0
+
+## See also
+
+-   [`String.prototype.endsWith()`](endswith)
+-   [`String.prototype.includes()`](includes)
+-   [`String.prototype.indexOf()`](indexof)
+-   [`String.prototype.lastIndexOf()`](lastindexof)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith</a>
+
+# static
+
+The `static` keyword defines a static method or property for a class. Neither static methods nor static properties can be called on instances of the class. Instead, they're called on the class itself.
+
+Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+
+Note that the examples throughout this article use [public class fields](public_class_fields) (including static public class fields), which are not yet part of the ECMAScript specification, but are instead specified in a [Public and private instance fields](https://tc39.es/proposal-class-fields/) proposal at [TC39](https://tc39.es/).
+
+## Syntax
+
+    static methodName() { ... }
+    static propertyName [= value];
+
+## Examples
+
+### Using static members in classes
+
+The following example demonstrates several things:
+
+1.  How a static member (method or property) is defined on a class.
+2.  That a class with a static member can be sub-classed.
+3.  How a static member can and cannot be called.
+
+<!-- -->
+
+    class Triple {
+      static customName = 'Tripler';
+      static description = 'I triple any number you provide';
+      static calculate(n = 1) {
+        return n * 3;
+      }
+    }
+
+    class SquaredTriple extends Triple {
+      static longDescription;
+      static description = 'I square the triple of any number you provide';
+      static calculate(n) {
+        return super.calculate(n) * super.calculate(n);
+      }
+    }
+
+    console.log(Triple.description);            // 'I triple any number you provide'
+    console.log(Triple.calculate());            // 3
+    console.log(Triple.calculate(6));           // 18
+
+    const tp = new Triple();
+
+    console.log(SquaredTriple.calculate(3));    // 81 (not affected by parent's instantiation)
+    console.log(SquaredTriple.description);     // 'I square the triple of any number you provide'
+    console.log(SquaredTriple.longDescription); // undefined
+    console.log(SquaredTriple.customName);      // 'Tripler'
+
+    // This throws because calculate() is a static member, not an instance member.
+    console.log(tp.calculate());                // 'tp.calculate is not a function'
+
+### Calling static members from another static method
+
+In order to call a static method or property within another static method of the same class, you can use the `this` keyword.
+
+    class StaticMethodCall {
+      static staticProperty = 'static property';
+      static staticMethod() {
+        return 'Static method and ' + this.staticProperty + ' has been called';
+      }
+      static anotherStaticMethod() {
+        return this.staticMethod() + ' from another static method';
+      }
+    }
+    StaticMethodCall.staticMethod();
+    // 'Static method and static property has been called'
+
+    StaticMethodCall.anotherStaticMethod();
+    // 'Static method and static property has been called from another static method'
+
+### Calling static members from a class constructor and other methods
+
+Static members are not directly accessible using the [`this`](../operators/this) keyword from non-static methods. You need to call them using the class name: `CLASSNAME.STATIC_METHOD_NAME()` / `CLASSNAME.STATIC_PROPERTY_NAME` or by calling the method as a property of the `constructor`: `this.constructor.STATIC_METHOD_NAME() ` / `this.constructor.STATIC_PROPERTY_NAME`
+
+    class StaticMethodCall {
+      constructor() {
+        console.log(StaticMethodCall.staticProperty); // 'static property'
+        console.log(this.constructor.staticProperty); // 'static property'
+        console.log(StaticMethodCall.staticMethod()); // 'static method has been called.'
+        console.log(this.constructor.staticMethod()); // 'static method has been called.'
+      }
+
+      static staticProperty = 'static property';
+      static staticMethod() {
+        return 'static method has been called.';
+      }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`static`
+
+49
+
+42-49
+
+Strict mode is required.
+
+42-49
+
+13
+
+45
+
+No
+
+36
+
+29-36
+
+Strict mode is required.
+
+29-36
+
+14.1
+
+49
+
+42-49
+
+Strict mode is required.
+
+49
+
+42-49
+
+Strict mode is required.
+
+42-49
+
+45
+
+36
+
+29-36
+
+Strict mode is required.
+
+29-36
+
+14.5
+
+5.0
+
+4.0-5.0
+
+Strict mode is required.
+
+## See also
+
+-   [`class` expression](../operators/class)
+-   [`class` declaration](../statements/class)
+-   [Classes](../classes)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static</a>
+
+# RegExp.prototype.sticky
+
+The `sticky` property reflects whether or not the search is sticky (searches in strings only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression). `sticky` is a read-only property of an individual regular expression object.
+
+Property attributes of `RegExp.prototype.sticky`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+yes
+
+## Description
+
+The value of `sticky` is a [`Boolean`](../boolean) and true if the "`y`" flag was used; otherwise, false. The "`y`" flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
+
+You cannot change this property directly. It is read-only.
+
+## Examples
+
+### Using a regular expression with the sticky flag
+
+    var str = '#foo#';
+    var regex = /foo/y;
+
+    regex.lastIndex = 1;
+    regex.test(str); // true
+    regex.lastIndex = 5;
+    regex.test(str); // false (lastIndex is taken into account with sticky flag)
+    regex.lastIndex; // 0 (reset after match failure)
+
+### Anchored sticky flag
+
+For several versions, Firefox's SpiderMonkey engine had [a bug](https://bugzilla.mozilla.org/show_bug.cgi?id=773687) with regard to the `^` assertion and the sticky flag which allowed expressions starting with the `^` assertion and using the sticky flag to match when they shouldn't. The bug was introduced some time after Firefox 3.6 (which had the sticky flag but not the bug) and fixed in 2015. Perhaps because of the bug, the ES2015 specification [specifically calls out](https://www.ecma-international.org/ecma-262/7.0/index.html#sec-assertion) the fact that:
+
+> When the `y` flag is used with a pattern, ^ always matches only at the beginning of the input, or (if `multiline` is `true`) at the beginning of a line.
+
+Examples of correct behavior:
+
+    var regex = /^foo/y;
+    regex.lastIndex = 2;
+    regex.test('..foo');   // false - index 2 is not the beginning of the string
+
+    var regex2 = /^foo/my;
+    regex2.lastIndex = 2;
+    regex2.test('..foo');  // false - index 2 is not the beginning of the string or line
+    regex2.lastIndex = 2;
+    regex2.test('.\nfoo'); // true - index 2 is the beginning of a line
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-get-regexp.prototype.sticky</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sticky`
+
+49
+
+13
+
+3
+
+No
+
+36
+
+10
+
+49
+
+49
+
+4
+
+36
+
+10
+
+5.0
+
+`anchored_sticky_flag`
+
+49
+
+13
+
+44
+
+No
+
+36
+
+10
+
+49
+
+49
+
+44
+
+36
+
+10
+
+5.0
+
+`prototype_accessor`
+
+49
+
+13
+
+38
+
+No
+
+36
+
+10
+
+49
+
+49
+
+38
+
+36
+
+10
+
+5.0
+
+## See also
+
+-   [`RegExp.lastIndex`](lastindex)
+-   [`RegExp.prototype.dotAll`](dotall)
+-   [`RegExp.prototype.global`](global)
+-   [`RegExp.prototype.hasIndices`](hasindices)
+-   [`RegExp.prototype.ignoreCase`](ignorecase)
+-   [`RegExp.prototype.multiline`](multiline)
+-   [`RegExp.prototype.source`](source)
+-   [`RegExp.prototype.unicode`](unicode)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky</a>
+
+# Warning: unreachable code after return statement
+
+The JavaScript warning "unreachable code after return statement" occurs when using an expression after a [`return`](../statements/return) statement, or when using a semicolon-less return statement but including an expression directly after.
+
+## Message
+
+    Warning: unreachable code after return statement (Firefox)
+
+## Error type
+
+Warning
+
+## What went wrong?
+
+Unreachable code after a return statement might occur in these situations:
+
+-   When using an expression after a [`return`](../statements/return) statement, or
+-   when using a semicolon-less return statement but including an expression directly after.
+
+When an expression exists after a valid `return` statement, a warning is given to indicate that the code after the `return` statement is unreachable, meaning it can never be run.
+
+Why should I have semicolons after `return` statements? In the case of semicolon-less `return` statements, it can be unclear whether the developer intended to return the statement on the following line, or to stop execution and return. The warning indicates that there is ambiguity in the way the `return` statement is written.
+
+Warnings will not be shown for semicolon-less returns if these statements follow it:
+
+-   [`throw`](../statements/throw)
+-   [`break`](../statements/break)
+-   [`var`](../statements/var)
+-   [`function`](../statements/function)
+
+## Examples
+
+### Invalid cases
+
+    function f() {
+      var x = 3;
+      x += 4;
+      return x;   // return exits the function immediately
+      x -= 3;     // so this line will never run; it is unreachable
+    }
+
+    function f() {
+      return     // this is treated like `return;`
+        3 + 4;   // so the function returns, and this line is never reached
+    }
+
+### Valid cases
+
+    function f() {
+      var x = 3;
+      x += 4;
+      x -= 3;
+      return x;  // OK: return after all other statements
+    }
+
+    function f() {
+      return 3 + 4  // OK: semicolon-less return with expression on the same line
+    }
+
+## See also
+
+-   [Automatic Semicolon Insertion](../statements/return#automatic_semicolon_insertion)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Stmt_after_return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Stmt_after_return</a>
+
+# Atomics.store()
+
+The static ` Atomics``.store() ` method stores a given value at the given position in the array and returns that value.
+
+## Syntax
+
+    Atomics.store(typedArray, index, value)
+
+### Parameters
+
+`typedArray`
+An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
+
+`index`
+The position in the `typedArray` to store a `value` in.
+
+`value`
+The number to store.
+
+### Return value
+
+The value that has been stored.
+
+### Exceptions
+
+-   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+-   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+
+## Examples
+
+### Using store()
+
+    var sab = new SharedArrayBuffer(1024);
+    var ta = new Uint8Array(sab);
+
+    Atomics.store(ta, 0, 12); // 12
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.store">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-atomics.store</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`store`
+
+68
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+78
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11.1
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11.3
+
+No
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+## See also
+
+-   [`Atomics`](../atomics)
+-   [`Atomics.load()`](load)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/store" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/store</a>
+
+# Strict equality (===)
+
+The strict equality operator (`===`) checks whether its two operands are equal, returning a Boolean result. Unlike the [equality](equality) operator, the strict equality operator always considers operands of different types to be different.
+
+## Syntax
+
+    x === y
+
+## Description
+
+The strict equality operators (`===` and `!==`) use the [Strict Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.6) to compare two operands.
+
+-   If the operands are of different types, return `false`.
+-   If both operands are objects, return `true` only if they refer to the same object.
+-   If both operands are `null` or both operands are `undefined`, return `true`.
+-   If either operand is `NaN`, return `false`.
+-   Otherwise, compare the two operand's values:
+    -   Numbers must have the same numeric values. `+0` and `-0` are considered to be the same value.
+    -   Strings must have the same characters in the same order.
+    -   Booleans must be both `true` or both `false`.
+
+The most notable difference between this operator and the [equality](equality) (`==`) operator is that if the operands are of different types, the `==` operator attempts to convert them to the same type before comparing.
+
+## Examples
+
+### Comparing operands of the same type
+
+    console.log("hello" === "hello");   // true
+    console.log("hello" === "hola");    // false
+
+    console.log(3 === 3);               // true
+    console.log(3 === 4);               // false
+
+    console.log(true === true);         // true
+    console.log(true === false);        // false
+
+    console.log(null === null);         // true
+
+### Comparing operands of different types
+
+    console.log("3" === 3);           // false
+
+    console.log(true === 1);          // false
+
+    console.log(null === undefined);  // false
+
+### Comparing objects
+
+    const object1 = {
+      name: "hello"
+    }
+
+    const object2 = {
+      name: "hello"
+    }
+
+    console.log(object1 === object2);  // false
+    console.log(object1 === object1);  // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Strict_equality`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Equality operator](equality)
+-   [Inequality operator](inequality)
+-   [Strict inequality operator](strict_inequality)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality</a>
+
+# Strict inequality (!==)
+
+The strict inequality operator (`!==`) checks whether its two operands are not equal, returning a Boolean result. Unlike the [inequality](inequality) operator, the strict inequality operator always considers operands of different types to be different.
+
+## Syntax
+
+    x !== y
+
+## Description
+
+The strict inequality operator checks whether its operands are not equal. It is the negation of the [strict equality](strict_equality) operator so the following two lines will always give the same result:
+
+    x !== y
+
+    !(x === y)
+
+For details of the comparison algorithm, see the page for the [strict equality](strict_equality) operator.
+
+Like the strict equality operator, the strict inequality operator will always consider operands of different types to be different:
+
+    3 !== "3"; // true
+
+## Examples
+
+### Comparing operands of the same type
+
+    console.log("hello" !== "hello");   // false
+    console.log("hello" !== "hola");    // true
+
+    console.log(3 !== 3);               // false
+    console.log(3 !== 4);               // true
+
+    console.log(true !== true);         // false
+    console.log(true !== false);        // true
+
+    console.log(null !== null);         // false
+
+### Comparing operands of different types
+
+    console.log("3" !== 3);           // true
+
+    console.log(true !== 1);          // true
+
+    console.log(null !== undefined);  // true
+
+### Comparing objects
+
+    const object1 = {
+      name: "hello"
+    }
+
+    const object2 = {
+      name: "hello"
+    }
+
+    console.log(object1 !== object2);  // true
+    console.log(object1 !== object1);  // false
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Strict_inequality`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Equality operator](equality)
+-   [Inequality operator](inequality)
+-   [Strict equality operator](strict_equality)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality</a>
+
+# Strict mode
+
+## Strict Mode Overview
+
+**Note:** Sometimes you'll see the default, non-strict mode referred to as **" [sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)"**. This isn't an official term, but be aware of it, just in case.
+
+JavaScript's strict mode, introduced in ECMAScript 5, is a way to _opt in_ to a restricted variant of JavaScript, thereby implicitly opting-out of "[sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)". Strict mode isn't just a subset: it _intentionally_ has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
+
+Strict mode makes several changes to normal JavaScript semantics:
+
+1.  Eliminates some JavaScript silent errors by changing them to throw errors.
+2.  Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
+3.  Prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+See [transitioning to strict mode](strict_mode/transitioning_to_strict_mode), if you want to change your code to work in the restricted variant of JavaScript.
+
+## Invoking strict mode
+
+Strict mode applies to _entire scripts_ or to _individual functions_. It doesn't apply to block statements enclosed in `{}` braces; attempting to apply it to such contexts does nothing. `eval` code, `Function` code, event handler attributes, strings passed to [`WindowTimers.setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout), and related functions are entire scripts, and invoking strict mode in them works as expected.
+
+### Strict mode for scripts
+
+To invoke strict mode for an entire script, put the _exact_ statement `"use strict";` (or `'use strict';`) before any other statements.
+
+    // Whole-script strict mode syntax
+    'use strict';
+    var v = "Hi! I'm a strict mode script!";
+
+This syntax has a trap that has [already bitten](https://bugzilla.mozilla.org/show_bug.cgi?id=579119) [a major site](https://bugzilla.mozilla.org/show_bug.cgi?id=627531): it isn't possible to blindly concatenate conflicting scripts. Consider concatenating a strict mode script with a non-strict mode script: the entire concatenation looks strict! The inverse is also true: non-strict plus strict looks non-strict. Obviously, concatenation of scripts is never ideal, but if you must, consider enabling strict on a function-by-function basis.
+
+You can also take the approach of wrapping the entire contents of a script in a function and having that outer function use strict mode. This eliminates the concatenation problem and it means that you have to explicitly export any shared variables out of the function scope.
+
+### Strict mode for functions
+
+Likewise, to invoke strict mode for a function, put the _exact_ statement `"use strict";` (or `'use strict';`) in the function's body before any other statements.
+
+    function strict() {
+      // Function-level strict mode syntax
+      'use strict';
+      function nested() { return 'And so am I!'; }
+      return "Hi!  I'm a strict mode function!  " + nested();
+    }
+    function notStrict() { return "I'm not strict."; }
+
+### Strict mode for modules
+
+ECMAScript 2015 introduced [JavaScript modules](statements/export) and therefore a 3rd way to enter strict mode. The entire contents of JavaScript modules are automatically in strict mode, with no statement needed to initiate it.
+
+    function strict() {
+        // because this is a module, I'm strict by default
+    }
+    export default strict;
+
+## Changes in strict mode
+
+Strict mode changes both syntax and runtime behavior. Changes generally fall into these categories: changes converting mistakes into errors (as syntax errors or at runtime), changes simplifying how the particular variable for a given use of a name is computed, changes simplifying `eval` and `arguments`, changes making it easier to write "secure" JavaScript, and changes anticipating future ECMAScript evolution.
+
+### Converting mistakes into errors
+
+Strict mode changes some previously-accepted mistakes into errors. JavaScript was designed to be easy for novice developers, and sometimes it gives operations which should be errors non-error semantics. Sometimes this fixes the immediate problem, but sometimes this creates worse problems in the future. Strict mode treats these mistakes as errors so that they're discovered and promptly fixed.
+
+First, strict mode makes it impossible to accidentally create global variables. In normal JavaScript mistyping a variable in an assignment creates a new property on the global object and continues to "work" (although future failure is possible: likely, in modern JavaScript). Assignments, which would accidentally create global variables, instead throw an error in strict mode:
+
+    'use strict';
+                           // Assuming no global variable mistypeVariable exists
+    mistypeVariable = 17;  // this line throws a ReferenceError due to the
+                           // misspelling of variable
+
+Second, strict mode makes assignments which would otherwise silently fail to throw an exception. For example, `NaN` is a non-writable global variable. In normal code assigning to `NaN` does nothing; the developer receives no failure feedback. In strict mode assigning to `NaN` throws an exception. Any assignment that silently fails in normal code (assignment to a non-writable global or property, assignment to a getter-only property, assignment to a new property on a [non-extensible](global_objects/object/preventextensions) object) will throw in strict mode:
+
+    'use strict';
+
+    // Assignment to a non-writable global
+    var undefined = 5; // throws a TypeError
+    var Infinity = 5; // throws a TypeError
+
+    // Assignment to a non-writable property
+    var obj1 = {};
+    Object.defineProperty(obj1, 'x', { value: 42, writable: false });
+    obj1.x = 9; // throws a TypeError
+
+    // Assignment to a getter-only property
+    var obj2 = { get x() { return 17; } };
+    obj2.x = 5; // throws a TypeError
+
+    // Assignment to a new property on a non-extensible object
+    var fixed = {};
+    Object.preventExtensions(fixed);
+    fixed.newProp = 'ohai'; // throws a TypeError
+
+Third, strict mode makes attempts to delete undeletable properties throw (where before the attempt would have no effect):
+
+    'use strict';
+    delete Object.prototype; // throws a TypeError
+
+Fourth, strict mode requires that function parameter names be unique. In normal code the last duplicated argument hides previous identically-named arguments. Those previous arguments remain available through `arguments[i]`, so they're not completely inaccessible. Still, this hiding makes little sense and is probably undesirable (it might hide a typo, for example), so in strict mode duplicate argument names are a syntax error:
+
+    function sum(a, a, c) { // !!! syntax error
+      'use strict';
+      return a + a + c; // wrong if this code ran
+    }
+
+Fifth, a strict mode in ECMAScript 5 [forbids a `0`-prefixed octal literal or octal escape sequence](errors/deprecated_octal). Outside strict mode, a number beginning with a `0`, such as `0644`, is interpreted as an octal number (`0644 === 420`), if all digits are smaller than 8. Octal escape sequences, such as `"\45"`, which is equal to `"%"`, can be used to represent characters by extended-ASCII character code numbers in octal. In strict mode, this is a syntax error. In ECMAScript 2015, octal literals are supported by prefixing a number with "`0o`"; for example:
+
+    var a = 0o10; // ES2015: Octal
+
+Novice developers sometimes believe a leading zero prefix has no semantic meaning, so they might use it as an alignment device — but this changes the number's meaning! A leading zero syntax for the octals is rarely useful and can be mistakenly used, so strict mode makes it a syntax error:
+
+    'use strict';
+    var sum = 015 + // !!! syntax error
+              197 +
+              142;
+
+    var sumWithOctal = 0o10 + 8;
+    console.log(sumWithOctal); // 16
+
+Sixth, strict mode in ECMAScript 2015 forbids setting properties on [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values. Without strict mode, setting properties is ignored (no-op), with strict mode, however, a [`TypeError`](global_objects/typeerror) is thrown.
+
+    (function() {
+    'use strict';
+
+    false.true = '';         // TypeError
+    (14).sailing = 'home';   // TypeError
+    'with'.you = 'far away'; // TypeError
+
+    })();
+
+In ECMAScript 5 strict-mode code, duplicate property names were considered a [`SyntaxError`](global_objects/syntaxerror). With the introduction of [computed property names](operators/object_initializer), making duplication possible at runtime, ECMAScript 2015 removed that restriction.
+
+    'use strict';
+    var o = { p: 1, p: 2 }; // syntax error prior to ECMAScript 2015
+
+### Simplifying variable uses
+
+Strict mode simplifies how variable names map to particular variable definitions in the code. Many compiler optimizations rely on the ability to say that variable _X_ is stored in _that_ location: this is critical to fully optimizing JavaScript code. JavaScript sometimes makes this basic mapping of name to variable definition in the code impossible to perform until runtime. Strict mode removes most cases where this happens, so the compiler can better optimize strict mode code.
+
+First, strict mode prohibits [`with`](statements/with). The problem with `with` is that any name inside the block might map either to a property of the object passed to it, or to a variable in surrounding (or even global) scope, at runtime; it's impossible to know which beforehand. Strict mode makes `with` a syntax error, so there's no chance for a name in a `with` to refer to an unknown location at runtime:
+
+    'use strict';
+    var x = 17;
+    with (obj) { // !!! syntax error
+      // If this weren't strict mode, would this be var x, or
+      // would it instead be obj.x?  It's impossible in general
+      // to say without running the code, so the name can't be
+      // optimized.
+      x;
+    }
+
+The simple alternative of assigning the object to a short name variable, then accessing the corresponding property on that variable, stands ready to replace `with`.
+
+Second, [`eval` of strict mode code does not introduce new variables into the surrounding scope](https://whereswalden.com/2011/01/10/new-es5-strict-mode-support-new-vars-created-by-strict-mode-eval-code-are-local-to-that-code-only/). In normal code `eval("var x;")` introduces a variable `x` into the surrounding function or the global scope. This means that, in general, in a function containing a call to `eval` every name not referring to an argument or local variable must be mapped to a particular definition at runtime (because that `eval` might have introduced a new variable that would hide the outer variable). In strict mode `eval` creates variables only for the code being evaluated, so `eval` can't affect whether a name refers to an outer variable or some local variable:
+
+    var x = 17;
+    var evalX = eval("'use strict'; var x = 42; x;");
+    console.assert(x === 17);
+    console.assert(evalX === 42);
+
+If the function `eval` is invoked by an expression of the form `eval(...)` in strict mode code, the code will be evaluated as strict mode code. The code may explicitly invoke strict mode, but it's unnecessary to do so.
+
+    function strict1(str) {
+      'use strict';
+      return eval(str); // str will be treated as strict mode code
+    }
+    function strict2(f, str) {
+      'use strict';
+      return f(str); // not eval(...): str is strict if and only
+                     // if it invokes strict mode
+    }
+    function nonstrict(str) {
+      return eval(str); // str is strict if and only
+                        // if it invokes strict mode
+    }
+
+    strict1("'Strict mode code!'");
+    strict1("'use strict'; 'Strict mode code!'");
+    strict2(eval, "'Non-strict code.'");
+    strict2(eval, "'use strict'; 'Strict mode code!'");
+    nonstrict("'Non-strict code.'");
+    nonstrict("'use strict'; 'Strict mode code!'");
+
+Thus names in strict mode `eval` code behave identically to names in strict mode code not being evaluated as the result of `eval`.
+
+Third, strict mode forbids deleting plain names. `delete name` in strict mode is a syntax error:
+
+    'use strict';
+
+    var x;
+    delete x; // !!! syntax error
+
+    eval('var y; delete y;'); // !!! syntax error
+
+### Making `eval` and `arguments` simpler
+
+Strict mode makes `arguments` and `eval` less bizarrely magical. Both involve a considerable amount of magical behavior in normal code: `eval` to add or remove bindings and to change binding values, and `arguments` by its indexed properties aliasing named arguments. Strict mode makes great strides toward treating `eval` and `arguments` as keywords, although full fixes will not come until a future edition of ECMAScript.
+
+First, the names `eval` and `arguments` can't be bound or assigned in language syntax. All these attempts to do so are syntax errors:
+
+    'use strict';
+    eval = 17;
+    arguments++;
+    ++eval;
+    var obj = { set p(arguments) { } };
+    var eval;
+    try { } catch (arguments) { }
+    function x(eval) { }
+    function arguments() { }
+    var y = function eval() { };
+    var f = new Function('arguments', "'use strict'; return 17;");
+
+Second, strict mode code doesn't alias properties of `arguments` objects created within it. In normal code within a function whose first argument is `arg`, setting `arg` also sets `arguments[0]`, and vice versa (unless no arguments were provided or `arguments[0]` is deleted). `arguments` objects for strict mode functions store the original arguments when the function was invoked. `arguments[i]` does not track the value of the corresponding named argument, nor does a named argument track the value in the corresponding `arguments[i]`.
+
+    function f(a) {
+      'use strict';
+      a = 42;
+      return [a, arguments[0]];
+    }
+    var pair = f(17);
+    console.assert(pair[0] === 42);
+    console.assert(pair[1] === 17);
+
+Third, `arguments.callee` is no longer supported. In normal code `arguments.callee` refers to the enclosing function. This use case is weak: name the enclosing function! Moreover, `arguments.callee` substantially hinders optimizations like inlining functions, because it must be made possible to provide a reference to the un-inlined function if `arguments.callee` is accessed. `arguments.callee` for strict mode functions is a non-deletable property which throws an error when set or retrieved:
+
+    'use strict';
+    var f = function() { return arguments.callee; };
+    f(); // throws a TypeError
+
+### "Securing" JavaScript
+
+Strict mode makes it easier to write "secure" JavaScript. Some websites now provide ways for users to write JavaScript which will be run by the website _on behalf of other users_. JavaScript in browsers can access the user's private information, so such JavaScript must be partially transformed before it is run, to censor access to forbidden functionality. JavaScript's flexibility makes it effectively impossible to do this without many runtime checks. Certain language functions are so pervasive that performing runtime checks has a considerable performance cost. A few strict mode tweaks, plus requiring that user-submitted JavaScript be strict mode code and that it be invoked in a certain manner, substantially reduce the need for those runtime checks.
+
+First, the value passed as `this` to a function in strict mode is not forced into being an object (a.k.a. "boxed"). For a normal function, `this` is always an object: either the provided object if called with an object-valued `this`; the value, boxed, if called with a Boolean, string, or number `this`; or the global object if called with an `undefined` or `null` `this`. (Use [`call`](global_objects/function/call), [`apply`](global_objects/function/apply), or [`bind`](global_objects/function/bind) to specify a particular `this`.) Not only is automatic boxing a performance cost, but exposing the global object in browsers is a security hazard because the global object provides access to functionality that "secure" JavaScript environments must restrict. Thus for a strict mode function, the specified `this` is not boxed into an object, and if unspecified, `this` will be `undefined`:
+
+    'use strict';
+    function fun() { return this; }
+    console.assert(fun() === undefined);
+    console.assert(fun.call(2) === 2);
+    console.assert(fun.apply(null) === null);
+    console.assert(fun.call(undefined) === undefined);
+    console.assert(fun.bind(true)() === true);
+
+That means, among other things, that in browsers it's no longer possible to reference the `window` object through `this` inside a strict mode function.
+
+Second, in strict mode it's no longer possible to "walk" the JavaScript stack via commonly-implemented extensions to ECMAScript. In normal code with these extensions, when a function `fun` is in the middle of being called, `fun.caller` is the function that most recently called `fun`, and `fun.arguments` is the `arguments` for that invocation of `fun`. Both extensions are problematic for "secure" JavaScript because they allow "secured" code to access "privileged" functions and their (potentially unsecured) arguments. If `fun` is in strict mode, both `fun.caller` and `fun.arguments` are non-deletable properties which throw when set or retrieved:
+
+    function restricted() {
+      'use strict';
+      restricted.caller;    // throws a TypeError
+      restricted.arguments; // throws a TypeError
+    }
+    function privilegedInvoker() {
+      return restricted();
+    }
+    privilegedInvoker();
+
+Third, `arguments` for strict mode functions no longer provide access to the corresponding function call's variables. In some old ECMAScript implementations `arguments.caller` was an object whose properties aliased variables in that function. This is a [security hazard](https://stuff.mit.edu/iap/2008/facebook/) because it breaks the ability to hide privileged values via function abstraction; it also precludes most optimizations. For these reasons no recent browsers implement it. Yet because of its historical functionality, `arguments.caller` for a strict mode function is also a non-deletable property which throws when set or retrieved:
+
+    'use strict';
+    function fun(a, b) {
+      'use strict';
+      var v = 12;
+      return arguments.caller; // throws a TypeError
+    }
+    fun(1, 2); // doesn't expose v (or a or b)
+
+### Paving the way for future ECMAScript versions
+
+Future ECMAScript versions will likely introduce new syntax, and strict mode in ECMAScript 5 applies some restrictions to ease the transition. It will be easier to make some changes if the foundations of those changes are prohibited in strict mode.
+
+First, in strict mode, a short list of identifiers become reserved keywords. These words are `implements`, `interface`, `let`, `package`, `private`, `protected`, `public`, `static`, and `yield`. In strict mode, then, you can't name or use variables or arguments with these names.
+
+    function package(protected) { // !!!
+      'use strict';
+      var implements; // !!!
+
+      interface: // !!!
+      while (true) {
+        break interface; // !!!
+      }
+
+      function private() { } // !!!
+    }
+    function fun(static) { 'use strict'; } // !!!
+
+Two Mozilla-specific caveats: First, if your code is JavaScript 1.7 or greater (for example in chrome code or when using the right `<script type="">`) and is strict mode code, `let` and `yield` have the functionality they've had since those keywords were first introduced. But strict mode code on the web, loaded with `<script src="">` or `<script>...</script>`, won't be able to use `let`/`yield` as identifiers. Second, while ES5 unconditionally reserves the words `class`, `enum`, `export`, `extends`, `import`, and `super`, before Firefox 5 Mozilla reserved them only in strict mode.
+
+Second, [strict mode prohibits function statements that are not at the top level of a script or function](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/). In normal mode in browsers, function statements are permitted "everywhere". _This is not part of ES5 (or even ES3)!_ It's an extension with incompatible semantics in different browsers. Note that function statements outside top level are permitted in ES2015.
+
+    'use strict';
+    if (true) {
+      function f() { } // !!! syntax error
+      f();
+    }
+
+    for (var i = 0; i < 5; i++) {
+      function f2() { } // !!! syntax error
+      f2();
+    }
+
+    function baz() { // kosher
+      function eit() { } // also kosher
+    }
+
+This prohibition isn't strict mode proper because such function statements are an extension of basic ES5. But it is the recommendation of the ECMAScript committee, and browsers will implement it.
+
+## Strict mode in browsers
+
+The major browsers now implement strict mode. However, don't blindly depend on it since there still are numerous [Browser versions used in the wild that only have partial support for strict mode](https://caniuse.com/use-strict) or do not support it at all (e.g. Internet Explorer below version 10!). _Strict mode changes semantics._ Relying on those changes will cause mistakes and errors in browsers which don't implement strict mode. Exercise caution in using strict mode, and back up reliance on strict mode with feature tests that check whether relevant parts of strict mode are implemented. Finally, make sure to _test your code in browsers that do and don't support strict mode_. If you test only in browsers that don't support strict mode, you're very likely to have problems in browsers that do, and vice versa.
+
+## See also
+
+-   [Strict Mode Code in the ECMAScript specification](https://tc39.es/ecma262/#sec-strict-mode-code)
+-   [Where's Walden? » New ES5 strict mode support: now with poison pills!](https://whereswalden.com/2010/09/08/new-es5-strict-mode-support-now-with-poison-pills/)
+-   [Where's Walden? » New ES5 strict mode requirement: function statements not at top level of a program or function are prohibited](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/)
+-   [Where's Walden? » New ES5 strict mode support: new vars created by strict mode eval code are local to that code only](https://whereswalden.com/2011/01/10/new-es5-strict-mode-support-new-vars-created-by-strict-mode-eval-code-are-local-to-that-code-only/)
+-   [JavaScript "use strict" tutorial for beginners.](http://qnimate.com/javascript-strict-mode-in-nutshell/)
+-   [John Resig - ECMAScript 5 Strict Mode, JSON, and More](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
+-   [ECMA-262-5 in detail. Chapter 2. Strict Mode.](http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/)
+-   [Strict mode compatibility table](https://kangax.github.io/compat-table/es5/#Strict_mode)
+-   [Transitioning to strict mode](strict_mode/transitioning_to_strict_mode)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode</a>
+
+# SyntaxError: "use strict" not allowed in function with non-simple parameters
+
+The JavaScript exception "`'use strict'` not allowed in function" occurs when a `"use strict"` directive is used at the top of a function with [default parameters](../functions/default_parameters), [rest parameters](../functions/rest_parameters), or [destructuring parameters](../operators/destructuring_assignment).
+
+## Message
+
+    Edge:
+    Cannot apply strict mode on functions with non-simple parameter list
+
+    Firefox:
+    SyntaxError: "use strict" not allowed in function with default parameter
+    SyntaxError: "use strict" not allowed in function with rest parameter
+    SyntaxError: "use strict" not allowed in function with destructuring parameter
+
+    Chrome:
+    SyntaxError: Illegal 'use strict' directive in function with non-simple parameter list
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror).
+
+## What went wrong?
+
+A `"use strict"` directive is written at the top of a function that has one of the following parameters:
+
+-   [Default parameters](../functions/default_parameters)
+-   [Rest parameters](../functions/rest_parameters)
+-   [Destructuring parameters](../operators/destructuring_assignment)
+
+A `"use strict"` directive is not allowed at the top of such functions per the ECMAScript specification.
+
+## Examples
+
+### Function statement
+
+In this case, the function `sum` has default parameters `a=1` and `b=2`:
+
+    function sum(a = 1, b = 2) {
+      // SyntaxError: "use strict" not allowed in function with default parameter
+      'use strict';
+      return a + b;
+    }
+
+If the function should be in [strict mode](../strict_mode), and the entire script or enclosing function is also okay to be in strict mode, you can move the `"use strict"` directive outside of the function:
+
+    'use strict';
+    function sum(a = 1, b = 2) {
+      return a + b;
+    }
+
+### Function expression
+
+A function expression can use yet another workaround:
+
+    var sum = function sum([a, b]) {
+      // SyntaxError: "use strict" not allowed in function with destructuring parameter
+      'use strict';
+      return a + b;
+    };
+
+This can be converted to the following expression:
+
+    var sum = (function() {
+      'use strict';
+      return function sum([a, b]) {
+        return a + b;
+      };
+    })();
+
+### Arrow function
+
+If an arrow function needs to access the `this` variable, you can use the arrow function as the enclosing function:
+
+    var callback = (...args) => {
+      // SyntaxError: "use strict" not allowed in function with rest parameter
+      'use strict';
+      return this.run(args);
+    };
+
+This can be converted to the following expression:
+
+    var callback = (() => {
+      'use strict';
+      return (...args) => {
+        return this.run(args);
+      };
+    })();
+
+## See also
+
+-   [Strict mode](../strict_mode)
+-   [function statement](../statements/function)
+-   [function expression](../operators/function)
+-   [Default parameters](../functions/default_parameters)
+-   [Rest parameters](../functions/rest_parameters)
+-   [Destructuring parameters](../operators/destructuring_assignment)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Strict_Non_Simple_Params</a>
+
+# String.prototype.strike()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `strike()` method creates a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike) HTML element that causes a string to be displayed as struck-out text.
+
+## Syntax
+
+    strike()
+
+### Return value
+
+A string containing a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike) HTML element.
+
+## Description
+
+The `strike()` method embeds a string in a `<strike>` element: "`<strike>str</strike>`".
+
+## Examples
+
+### Using strike()
+
+The following example uses string methods to change the formatting of a string:
+
+    var worldString = 'Hello, world';
+
+    console.log(worldString.blink()); // <blink>Hello, world</blink>
+    console.log(worldString.bold()); // <b>Hello, world</b>
+    console.log(worldString.italics()); // <i>Hello, world</i>
+    console.log(worldString.strike()); // <strike>Hello, world</strike>
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.strike</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`strike`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.blink()`](blink)
+-   [`String.prototype.bold()`](bold)
+-   [`String.prototype.italics()`](italics)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/strike" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/strike</a>
+
+# String
+
+The `String` object is used to represent and manipulate a sequence of characters.
+
+## Description
+
+Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their [`length`](string/length), to build and concatenate them using the [+ and += string operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators), checking for the existence or location of substrings with the [`indexOf()`](string/indexof) method, or extracting substrings with the [`substring()`](string/substring) method.
+
+### Creating strings
+
+Strings can be created as primitives, from string literals, or as objects, using the [`String()`](string/string) constructor:
+
+    const string1 = "A string primitive";
+    const string2 = 'Also a string primitive';
+    const string3 = `Yet another string primitive`;
+
+    const string4 = new String("A String object");
+
+String primitives and string objects can be used interchangeably in most situations. See "[String primitives and String objects](#string_primitives_and_string_objects)" below.
+
+String literals can be specified using single or double quotes, which are treated identically, or using the backtick character \`. This last form specifies a [template literal](../template_literals): with this form you can interpolate expressions.
+
+### Character access
+
+There are two ways to access an individual character in a string. The first is the [`charAt()`](string/charat) method:
+
+    return 'cat'.charAt(1) // returns "a"
+
+The other way (introduced in ECMAScript 5) is to treat the string as an array-like object, where individual characters correspond to a numerical index:
+
+    return 'cat'[1] // returns "a"
+
+When using bracket notation for character access, attempting to delete or assign a value to these properties will not succeed. The properties involved are neither writable nor configurable. (See [`Object.defineProperty()`](object/defineproperty) for more information.)
+
+### Comparing strings
+
+In C, the `strcmp()` function is used for comparing strings. In JavaScript, you just use the [less-than and greater-than operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators):
+
+    let a = 'a'
+    let b = 'b'
+    if (a < b) { // true
+      console.log(a + ' is less than ' + b)
+    } else if (a > b) {
+      console.log(a + ' is greater than ' + b)
+    } else {
+      console.log(a + ' and ' + b + ' are equal.')
+    }
+
+A similar result can be achieved using the [`localeCompare()`](string/localecompare) method inherited by `String` instances.
+
+Note that `a == b` compares the strings in `a` and `b` for being equal in the usual case-sensitive way. If you wish to compare without regard to upper or lower case characters, use a function similar to this:
+
+    function isEqual(str1, str2)
+    {
+        return str1.toUpperCase() === str2.toUpperCase()
+    } // isEqual
+
+Upper case is used instead of lower case in this function, due to problems with certain UTF-8 character conversions.
+
+### String primitives and String objects
+
+Note that JavaScript distinguishes between `String` objects and [primitive string](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values. (The same is true of [`Boolean`](boolean) and [`Numbers`](number).)
+
+String literals (denoted by double or single quotes) and strings returned from `String` calls in a non-constructor context (that is, called without using the [`new`](../operators/new) keyword) are primitive strings. JavaScript automatically converts primitives to `String` objects, so that it's possible to use `String` object methods for primitive strings. In contexts where a method is to be invoked on a primitive string or a property lookup occurs, JavaScript will automatically wrap the string primitive and call the method or perform the property lookup.
+
+    let s_prim = 'foo'
+    let s_obj = new String(s_prim)
+
+    console.log(typeof s_prim) // Logs "string"
+    console.log(typeof s_obj)  // Logs "object"
+
+String primitives and `String` objects also give different results when using [`eval()`](eval). Primitives passed to `eval` are treated as source code; `String` objects are treated as all other objects are, by returning the object. For example:
+
+    let s1 = '2 + 2'              // creates a string primitive
+    let s2 = new String('2 + 2')  // creates a String object
+    console.log(eval(s1))         // returns the number 4
+    console.log(eval(s2))         // returns the string "2 + 2"
+
+For these reasons, the code may break when it encounters `String` objects when it expects a primitive string instead, although generally, authors need not worry about the distinction.
+
+A `String` object can always be converted to its primitive counterpart with the [`valueOf()`](string/valueof) method.
+
+    console.log(eval(s2.valueOf()))  // returns the number 4
+
+### <span id="escape_sequences">Escape sequences</span>
+
+Special characters can be encoded using escape sequences:
+
+<table><thead><tr class="header"><th>Escape sequence</th><th>Unicode code point</th></tr></thead><tbody><tr class="odd"><td><code>\0</code></td><td>null character (U+0000 NULL)</td></tr><tr class="even"><td><code>\'</code></td><td>single quote (U+0027 APOSTROPHE)</td></tr><tr class="odd"><td><code>\"</code></td><td>double quote (U+0022 QUOTATION MARK)</td></tr><tr class="even"><td><code>\\</code></td><td>backslash (U+005C REVERSE SOLIDUS)</td></tr><tr class="odd"><td><code>\n</code></td><td>newline (U+000A LINE FEED; LF)</td></tr><tr class="even"><td><code>\r</code></td><td>carriage return (U+000D CARRIAGE RETURN; CR)</td></tr><tr class="odd"><td><code>\v</code></td><td>vertical tab (U+000B LINE TABULATION)</td></tr><tr class="even"><td><code>\t</code></td><td>tab (U+0009 CHARACTER TABULATION)</td></tr><tr class="odd"><td><code>\b</code></td><td>backspace (U+0008 BACKSPACE)</td></tr><tr class="even"><td><code>\f</code></td><td>form feed (U+000C FORM FEED)</td></tr><tr class="odd"><td><code>\uXXXX</code>
+<br/>
+
+…where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>–<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td></tr><tr class="even"><td><code>\u{X}</code>…<code>\u{XXXXXX}</code>
+<br/>
+
+…where <code>X</code>…<code>XXXXXX</code> is 1–6 hex digits in the range <code>0</code>–<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+10FFFF</code> (the entirety of Unicode)</td></tr><tr class="odd"><td><code>\xXX</code>
+<br/>
+
+…where <code>XX</code> is exactly 2 hex digits in the range <code>00</code>–<code>FF</code>; e.g., <code>\x0A</code> is the same as <code>\n</code> (LINE FEED); <code>\x21</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks; equivalent to ISO-8859-1)</td></tr></tbody></table>
+
+### Long literal strings
+
+Sometimes, your code will include strings which are very long. Rather than having lines that go on endlessly, or wrap at the whim of your editor, you may wish to specifically break the string into multiple lines in the source code without affecting the actual string contents. There are two ways you can do this.
+
+#### Method 1
+
+You can use the [+](../operators/addition) operator to append multiple strings together, like this:
+
+    let longString = "This is a very long string which needs " +
+                     "to wrap across multiple lines because " +
+                     "otherwise my code is unreadable."
+
+#### Method 2
+
+You can use the backslash character (`\`) at the end of each line to indicate that the string will continue on the next line. Make sure there is no space or any other character after the backslash (except for a line break), or as an indent; otherwise it will not work.
+
+That form looks like this:
+
+    let longString = "This is a very long string which needs \
+    to wrap across multiple lines because \
+    otherwise my code is unreadable."
+
+Both of the above methods result in identical strings.
+
+## Constructor
+
+[`String()`](string/string)
+Creates a new `String` object. It performs type conversion when called as a function, rather than as a constructor, which is usually more useful.
+
+## Static methods
+
+[`String.fromCharCode(num1 [, ...[, numN]])`](string/fromcharcode)
+Returns a string created by using the specified sequence of Unicode values.
+
+[`String.fromCodePoint(num1 [, ...[, numN)`](string/fromcodepoint)
+Returns a string created by using the specified sequence of code points.
+
+[`String.raw()`](string/raw)
+Returns a string created from a raw template string.
+
+## Instance properties
+
+[`String.prototype.length`](string/length)
+Reflects the `length` of the string. Read-only.
+
+## Instance methods
+
+[`String.prototype.at(index)`](string/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>
+Returns the character (exactly one UTF-16 code unit) at the specified `index`. Accepts negative integers, which count back from the last string character.
+
+[`String.prototype.charAt(index)`](string/charat)
+Returns the character (exactly one UTF-16 code unit) at the specified `index`.
+
+[`String.prototype.charCodeAt(index)`](string/charcodeat)
+Returns a number that is the UTF-16 code unit value at the given `index`.
+
+[`String.prototype.codePointAt(pos)`](string/codepointat)
+Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified `pos`.
+
+[`String.prototype.concat(str [, ...strN ])`](string/concat)
+Combines the text of two (or more) strings and returns a new string.
+
+[`String.prototype.includes(searchString [, position])`](string/includes)
+Determines whether the calling string contains `searchString`.
+
+[`String.prototype.endsWith(searchString [, length])`](string/endswith)
+Determines whether a string ends with the characters of the string `searchString`.
+
+[`String.prototype.indexOf(searchValue [, fromIndex])`](string/indexof)
+Returns the index within the calling [`String`](string) object of the first occurrence of `searchValue`, or `-1` if not found.
+
+[`String.prototype.lastIndexOf(searchValue [, fromIndex])`](string/lastindexof)
+Returns the index within the calling [`String`](string) object of the last occurrence of `searchValue`, or `-1` if not found.
+
+[`String.prototype.localeCompare(compareString [, locales [, options]])`](string/localecompare)
+Returns a number indicating whether the reference string `compareString` comes before, after, or is equivalent to the given string in sort order.
+
+[`String.prototype.match(regexp)`](string/match)
+Used to match regular expression `regexp` against a string.
+
+[`String.prototype.matchAll(regexp)`](string/matchall)
+Returns an iterator of all `regexp`'s matches.
+
+[`String.prototype.normalize([form])`](string/normalize)
+Returns the Unicode Normalization Form of the calling string value.
+
+[`String.prototype.padEnd(targetLength [, padString])`](string/padend)
+Pads the current string from the end with a given string and returns a new string of the length `targetLength`.
+
+[`String.prototype.padStart(targetLength [, padString])`](string/padstart)
+Pads the current string from the start with a given string and returns a new string of the length `targetLength`.
+
+[`String.prototype.repeat(count)`](string/repeat)
+Returns a string consisting of the elements of the object repeated `count` times.
+
+[`String.prototype.replace(searchFor, replaceWith)`](string/replace)
+Used to replace occurrences of `searchFor` using `replaceWith`. `searchFor` may be a string or Regular Expression, and `replaceWith` may be a string or function.
+
+[`String.prototype.replaceAll(searchFor, replaceWith)`](string/replaceall)
+Used to replace all occurrences of `searchFor` using `replaceWith`. `searchFor` may be a string or Regular Expression, and `replaceWith` may be a string or function.
+
+[`String.prototype.search(regexp)`](string/search)
+Search for a match between a regular expression `regexp` and the calling string.
+
+[`String.prototype.slice(beginIndex[, endIndex])`](string/slice)
+Extracts a section of a string and returns a new string.
+
+[`String.prototype.split([sep [, limit] ])`](string/split)
+Returns an array of strings populated by splitting the calling string at occurrences of the substring `sep`.
+
+[`String.prototype.startsWith(searchString [, length])`](string/startswith)
+Determines whether the calling string begins with the characters of string `searchString`.
+
+[`String.prototype.substring(indexStart [, indexEnd])`](string/substring)
+Returns a new string containing characters of the calling string from (or between) the specified index (or indeces).
+
+[`String.prototype.toLocaleLowerCase( [locale, ...locales])`](string/tolocalelowercase)
+The characters within a string are converted to lowercase while respecting the current locale.
+
+For most languages, this will return the same as [`toLowerCase()`](string/tolowercase).
+
+[`String.prototype.toLocaleUpperCase( [locale, ...locales])`](string/tolocaleuppercase)
+The characters within a string are converted to uppercase while respecting the current locale.
+
+For most languages, this will return the same as [`toUpperCase()`](string/touppercase).
+
+[`String.prototype.toLowerCase()`](string/tolowercase)
+Returns the calling string value converted to lowercase.
+
+[`String.prototype.toString()`](string/tostring)
+Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
+
+[`String.prototype.toUpperCase()`](string/touppercase)
+Returns the calling string value converted to uppercase.
+
+[`String.prototype.trim()`](string/trim)
+Trims whitespace from the beginning and end of the string. Part of the ECMAScript 5 standard.
+
+[`String.prototype.trimStart()`](string/trimstart)
+Trims whitespace from the beginning of the string.
+
+[`String.prototype.trimEnd()`](string/trimend)
+Trims whitespace from the end of the string.
+
+[`String.prototype.valueOf()`](string/valueof)
+Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
+
+[`String.prototype.@@iterator()`](string/@@iterator)
+Returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value.
+
+## HTML wrapper methods
+
+**Warning:** Deprecated. Avoid these methods.
+
+They are of limited use, as they provide only a subset of the available HTML tags and attributes.
+
+[`String.prototype.anchor()`](string/anchor)
+[`<a name="name">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-name) (hypertext target)
+
+[`String.prototype.big()`](string/big)
+[`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big)
+
+[`String.prototype.blink()`](string/blink)
+[`<blink>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink)
+
+[`String.prototype.bold()`](string/bold)
+[`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
+
+[`String.prototype.fixed()`](string/fixed)
+[`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt)
+
+[`String.prototype.fontcolor()`](string/fontcolor)
+[`<font color="color">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font#attr-color)
+
+[`String.prototype.fontsize()`](string/fontsize)
+[`<font size="size">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font#attr-size)
+
+[`String.prototype.italics()`](string/italics)
+[`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
+
+[`String.prototype.link()`](string/link)
+[`<a href="url">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href) (link to URL)
+
+[`String.prototype.small()`](string/small)
+[`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small)
+
+[`String.prototype.strike()`](string/strike)
+[`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike)
+
+[`String.prototype.sub()`](string/sub)
+[`<sub>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub)
+
+[`String.prototype.sup()`](string/sup)
+[`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)
+
+## Examples
+
+### String conversion
+
+It's possible to use `String` as a more reliable [`toString()`](string/tostring) alternative, as it works when used on [`null`](null), [`undefined`](undefined), and on [`symbols`](symbol). For example:
+
+    let outputStrings = []
+    for (let i = 0, n = inputValues.length; i < n; ++i) {
+      outputStrings.push(String(inputValues[i]));
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`String`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`String`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`anchor`
+
+1
+
+12
+
+1
+
+Starting with version 17, the quotation mark (") is replaced by its HTML reference character (`"`) in strings supplied for the `name` parameter.
+
+No
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`at`
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+`big`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`blink`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`bold`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`charAt`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`charCodeAt`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`codePointAt`
+
+41
+
+12
+
+29
+
+No
+
+28
+
+10
+
+41
+
+41
+
+29
+
+28
+
+10
+
+4.0
+
+`concat`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`endsWith`
+
+41
+
+12
+
+17
+
+No
+
+28
+
+9
+
+≤37
+
+36
+
+17
+
+24
+
+9
+
+3.0
+
+`fixed`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`fontcolor`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`fontsize`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`fromCharCode`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`fromCodePoint`
+
+41
+
+12
+
+29
+
+No
+
+28
+
+10
+
+41
+
+41
+
+29
+
+28
+
+10
+
+4.0
+
+`includes`
+
+41
+
+12
+
+40
+
+18-48
+
+No
+
+28
+
+9
+
+41
+
+41
+
+40
+
+18-48
+
+28
+
+9
+
+4.0
+
+`indexOf`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`italics`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`lastIndexOf`
+
+1
+
+12
+
+1
+
+6
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`length`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`link`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`localeCompare`
+
+1
+
+12
+
+1
+
+5.5
+
+7
+
+3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`match`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`matchAll`
+
+73
+
+79
+
+67
+
+No
+
+60
+
+13
+
+73
+
+73
+
+67
+
+52
+
+13
+
+11.0
+
+`normalize`
+
+34
+
+12
+
+31
+
+No
+
+21
+
+10
+
+No
+
+34
+
+31
+
+21
+
+10
+
+2.0
+
+`padEnd`
+
+57
+
+15
+
+48
+
+No
+
+44
+
+10
+
+57
+
+57
+
+48
+
+43
+
+10
+
+7.0
+
+`padStart`
+
+57
+
+15
+
+48
+
+No
+
+44
+
+10
+
+57
+
+57
+
+48
+
+43
+
+10
+
+7.0
+
+`raw`
+
+41
+
+12
+
+34
+
+No
+
+No
+
+10
+
+No
+
+41
+
+34
+
+No
+
+10
+
+4.0
+
+`repeat`
+
+41
+
+12
+
+24
+
+No
+
+28
+
+9
+
+41
+
+36
+
+24
+
+28
+
+9
+
+3.0
+
+`replace`
+
+1
+
+12
+
+1
+
+5.5
+
+4-5.5
+
+A replacement function as second argument is not supported.
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`replaceAll`
+
+85
+
+85
+
+77
+
+No
+
+71
+
+13.1
+
+85
+
+85
+
+79
+
+60
+
+13.4
+
+No
+
+`search`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`slice`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`small`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`split`
+
+1
+
+12
+
+1
+
+4
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`startsWith`
+
+41
+
+12
+
+17
+
+No
+
+28
+
+9
+
+≤37
+
+36
+
+17
+
+24
+
+9
+
+3.0
+
+`strike`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`sub`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`substr`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`substring`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`sup`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toLocaleLowerCase`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1.3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toLocaleUpperCase`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1.3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toLowerCase`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toSource`
+
+No
+
+No
+
+1-74
+
+Starting in Firefox 74, `toSource()` is no longer available for use by web content. It is still allowed for internal and privileged code.
+
+No
+
+No
+
+No
+
+No
+
+No
+
+4
+
+No
+
+No
+
+No
+
+`toString`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`toUpperCase`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`trim`
+
+4
+
+12
+
+3.5
+
+10
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+11
+
+5
+
+1.0
+
+`trimEnd`
+
+66
+
+4
+
+12
+
+61
+
+3.5
+
+No
+
+53
+
+15
+
+12
+
+66
+
+≤37
+
+66
+
+18
+
+61
+
+4
+
+47
+
+14
+
+12
+
+9.0
+
+1.0
+
+`trimStart`
+
+66
+
+4
+
+12
+
+61
+
+3.5
+
+No
+
+53
+
+15
+
+12
+
+66
+
+≤37
+
+66
+
+18
+
+61
+
+4
+
+47
+
+14
+
+12
+
+9.0
+
+1.0
+
+`unicode_code_point_escapes`
+
+1
+
+12
+
+40
+
+4
+
+4
+
+1
+
+1
+
+18
+
+40
+
+10.1
+
+1
+
+1.0
+
+`valueOf`
+
+1
+
+12
+
+1
+
+4
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`@@iterator`
+
+38
+
+12
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+No
+
+25
+
+9
+
+38
+
+38
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+25
+
+9
+
+3.0
+
+## See also
+
+-   [Text formatting in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting)
+-   [`RegExp`](regexp)
+-   [`DOMString`](https://developer.mozilla.org/en-US/docs/Web/API/DOMString)
+-   [Binary strings](https://developer.mozilla.org/en-US/docs/Web/API/DOMString/Binary)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String</a>
+
+# JSON.stringify()
+
+The `JSON.stringify()` method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.
+
+## Syntax
+
+    JSON.stringify(value)
+    JSON.stringify(value, replacer)
+    JSON.stringify(value, replacer, space)
+
+### Parameters
+
+`value`
+The value to convert to a JSON string.
+
+`replacer` <span class="badge inline optional">Optional</span>
+A function that alters the behavior of the stringification process, or an array of [`String`](../string) and [`Number`](../number) that serve as an allowlist for selecting/filtering the properties of the value object to be included in the JSON string. If this value is [`null`](../null) or not provided, all properties of the object are included in the resulting JSON string.
+
+`space` <span class="badge inline optional">Optional</span>
+A [`String`](../string) or [`Number`](../number) object that's used to insert white space into the output JSON string for readability purposes.
+
+If this is a `Number`, it indicates the number of space characters to use as white space; this number is capped at 10 (if it is greater, the value is just `10`). Values less than 1 indicate that no space should be used.
+
+If this is a `String`, the string (or the first 10 characters of the string, if it's longer than that) is used as white space. If this parameter is not provided (or is [`null`](../null)), no white space is used.
+
+### Return value
+
+A JSON string representing the given value, or undefined.
+
+### Exceptions
+
+-   Throws a [`TypeError`](../typeerror) ("cyclic object value") exception when a circular reference is found.
+-   Throws a [`TypeError`](../typeerror) ("BigInt value can't be serialized in JSON") when trying to stringify a [`BigInt`](../bigint) value.
+
+## Description
+
+`JSON.stringify()` converts a value to JSON notation representing it:
+
+-   If the value has a `toJSON()` method, it's responsible to define what data will be serialized.
+-   [`Boolean`](../boolean), [`Number`](../number), and [`String`](../string) objects are converted to the corresponding primitive values during stringification, in accord with the traditional conversion semantics.
+-   [`undefined`](../undefined), [`Function`](../function)s, and [`Symbol`](../symbol)s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to [`null`](../null) (when found in an array). `JSON.stringify()` can return `undefined` when passing in "pure" values like `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
+-   All [`Symbol`](../symbol)-keyed properties will be completely ignored, even when using the `replacer` function.
+-   The instances of [`Date`](../date) implement the `toJSON()` function by returning a string (the same as `date.toISOString()`). Thus, they are treated as strings.
+-   The numbers [`Infinity`](../infinity) and [`NaN`](../nan), as well as the value [`null`](../null), are all considered `null`.
+-   All the other [`Object`](../object) instances (including [`Map`](../map), [`Set`](../set), [`WeakMap`](../weakmap), and [`WeakSet`](../weakset)) will have only their enumerable properties serialized.
+
+## Examples
+
+### Using JSON.stringify
+
+    JSON.stringify({});                    // '{}'
+    JSON.stringify(true);                  // 'true'
+    JSON.stringify('foo');                 // '"foo"'
+    JSON.stringify([1, 'false', false]);   // '[1,"false",false]'
+    JSON.stringify([NaN, null, Infinity]); // '[null,null,null]'
+    JSON.stringify({ x: 5 });              // '{"x":5}'
+
+    JSON.stringify(new Date(2006, 0, 2, 15, 4, 5))
+    // '"2006-01-02T15:04:05.000Z"'
+
+    JSON.stringify({ x: 5, y: 6 });
+    // '{"x":5,"y":6}'
+    JSON.stringify([new Number(3), new String('false'), new Boolean(false)]);
+    // '[3,"false",false]'
+
+    // String-keyed array elements are not enumerable and make no sense in JSON
+    let a = ['foo', 'bar'];
+    a['baz'] = 'quux';      // a: [ 0: 'foo', 1: 'bar', baz: 'quux' ]
+    JSON.stringify(a);
+    // '["foo","bar"]'
+
+    JSON.stringify({ x: [10, undefined, function(){}, Symbol('')] });
+    // '{"x":[10,null,null,null]}'
+
+    // Standard data structures
+    JSON.stringify([new Set([1]), new Map([[1, 2]]), new WeakSet([{a: 1}]), new WeakMap([[{a: 1}, 2]])]);
+    // '[{},{},{},{}]'
+
+    // TypedArray
+    JSON.stringify([new Int8Array([1]), new Int16Array([1]), new Int32Array([1])]);
+    // '[{"0":1},{"0":1},{"0":1}]'
+    JSON.stringify([new Uint8Array([1]), new Uint8ClampedArray([1]), new Uint16Array([1]), new Uint32Array([1])]);
+    // '[{"0":1},{"0":1},{"0":1},{"0":1}]'
+    JSON.stringify([new Float32Array([1]), new Float64Array([1])]);
+    // '[{"0":1},{"0":1}]'
+
+    // toJSON()
+    JSON.stringify({ x: 5, y: 6, toJSON(){ return this.x + this.y; } });
+    // '11'
+
+    // Symbols:
+    JSON.stringify({ x: undefined, y: Object, z: Symbol('') });
+    // '{}'
+    JSON.stringify({ [Symbol('foo')]: 'foo' });
+    // '{}'
+    JSON.stringify({ [Symbol.for('foo')]: 'foo' }, [Symbol.for('foo')]);
+    // '{}'
+    JSON.stringify({ [Symbol.for('foo')]: 'foo' }, function(k, v) {
+      if (typeof k === 'symbol') {
+        return 'a symbol';
+      }
+    });
+    // undefined
+
+    // Non-enumerable properties:
+    JSON.stringify( Object.create(null, { x: { value: 'x', enumerable: false }, y: { value: 'y', enumerable: true } }) );
+    // '{"y":"y"}'
+
+    // BigInt values throw
+    JSON.stringify({x: 2n});
+    // TypeError: BigInt value can't be serialized in JSON
+
+### The replacer parameter
+
+The `replacer` parameter can be either a function or an array.
+
+**As a function**, it takes two parameters: the key and the value being stringified. The object in which the key was found is provided as the `replacer`'s `this` parameter.
+
+Initially, the `replacer` function is called with an empty string as key representing the object being stringified. It is then called for each property on the object or array being stringified.
+
+It should return the value that should be added to the JSON string, as follows:
+
+-   If you return a [`Number`](../number), [`String`](../string), [`Boolean`](../boolean), or [`null`](../null), the stringified version of that value is used as the property's value.
+-   If you return a [`Function`](../function), [`Symbol`](../symbol), or [`undefined`](../undefined), the property is not included in the output.
+-   If you return any other object, the object is recursively stringified, calling the `replacer` function on each property.
+
+**Note:** You cannot use the `replacer` function to remove values from an array. If you return `undefined` or a function then `null` is used instead.
+
+**Note:** If you wish the `replacer` to distinguish an initial object from a key with an empty string property (since both would give the empty string as key and potentially an object as value), you will have to keep track of the iteration count (if it is beyond the first iteration, it is a genuine empty string key).
+
+#### Example replacer, as a function
+
+    function replacer(key, value) {
+      // Filtering out properties
+      if (typeof value === 'string') {
+        return undefined;
+      }
+      return value;
+    }
+
+    var foo = {foundation: 'Mozilla', model: 'box', week: 45, transport: 'car', month: 7};
+    JSON.stringify(foo, replacer);
+    // '{"week":45,"month":7}'
+
+#### Example replacer, as an array
+
+If `replacer` is an array, the array's values indicate the names of the properties in the object that should be included in the resulting JSON string.
+
+    JSON.stringify(foo, ['week', 'month']);
+    // '{"week":45,"month":7}', only keep "week" and "month" properties
+
+### The space argument
+
+The `space` argument may be used to control spacing in the final string.
+
+-   **If it is a number**, successive levels in the stringification will each be indented by this many space characters (up to 10).
+-   **If it is a string**, successive levels will be indented by this string (or the first ten characters of it).
+
+<!-- -->
+
+    JSON.stringify({ a: 2 }, null, ' ');
+    // '{
+    //  "a": 2
+    // }'
+
+Using a tab character mimics standard pretty-print appearance:
+
+    JSON.stringify({ uno: 1, dos: 2 }, null, '\t');
+    // returns the string:
+    // '{
+    //     "uno": 1,
+    //     "dos": 2
+    // }'
+
+### toJSON() behavior
+
+If an object being stringified has a property named `toJSON` whose value is a function, then the `toJSON()` method customizes JSON stringification behavior: instead of the object being serialized, the value returned by the `toJSON()` method when called will be serialized. `JSON.stringify()` calls `toJSON` with one parameter:
+
+-   if this object is a property value, the property name
+-   if it is in an array, the index in the array, as a string
+-   an empty string if `JSON.stringify()` was directly called on this object
+
+For example:
+
+    var obj = {
+        data: 'data',
+
+        toJSON (key) {
+            if (key)
+                return `Now I am a nested object under key '${key}'`;
+            else
+                return this;
+        }
+    };
+
+    JSON.stringify(obj);
+    // '{"data":"data"}'
+
+    JSON.stringify({ obj }); // Shorthand property names (ES2015).
+    // '{"obj":"Now I am a nested object under key 'obj'"}'
+
+    JSON.stringify([ obj ]);
+    // '["Now I am a nested object under key '0'"]'
+
+### Issue with JSON.stringify() when serializing circular references
+
+Note that since the [JSON format](https://www.json.org/) doesn't support object references (although an [IETF draft exists](https://datatracker.ietf.org/doc/html/draft-pbryan-zyp-json-ref-03)), a [`TypeError`](../typeerror) will be thrown if one attempts to encode an object with circular references.
+
+    const circularReference = {};
+    circularReference.myself = circularReference;
+
+    // Serializing circular references throws "TypeError: cyclic object value"
+    JSON.stringify(circularReference);
+
+To serialize circular references you can use a library that supports them (e.g. [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) by Douglas Crockford) or implement a solution by yourself, which will require finding and replacing (or removing) the cyclic references by serializable values.
+
+### Issue with plain JSON.stringify for use as JavaScript
+
+Historically, JSON was not a completely strict subset of JavaScript. The literal code points U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR could appear literally in string literals and property names in JSON text. But they could not appear literally in similar context in JavaScript text, only using Unicode escapes as `\u2028` and `\u2029`. This recently changed: now both code points may appear literally in strings in JSON and JavaScript both.
+
+Therefore, if compatibility with older JavaScript engines is required, it is perilous to directly substitute the string returned by `JSON.stringify` into a JavaScript string to be passed to `eval` or `new Function` or as part of a [JSONP](https://en.wikipedia.org/wiki/JSONP) URL, and the following utility can be used:
+
+    function jsFriendlyJSONStringify (s) {
+        return JSON.stringify(s).
+            replace(/\u2028/g, '\\u2028').
+            replace(/\u2029/g, '\\u2029');
+    }
+
+    var s = {
+        a: String.fromCharCode(0x2028),
+        b: String.fromCharCode(0x2029)
+    };
+    try {
+        eval('(' + JSON.stringify(s) + ')');
+    } catch (e) {
+        console.log(e); // "SyntaxError: unterminated string literal"
+    }
+
+    // No need for a catch
+    eval('(' + jsFriendlyJSONStringify(s) + ')');
+
+    // console.log in Firefox unescapes the Unicode if
+    //   logged to console, so we use alert
+    alert(jsFriendlyJSONStringify(s)); // {"a":"\u2028","b":"\u2029"}
+
+**Note:** Properties of non-array objects are not guaranteed to be stringified in any particular order. Do not rely on ordering of properties within the same object within the stringification.
+
+    var a = JSON.stringify({ foo: "bar", baz: "quux" })
+    //'{"foo":"bar","baz":"quux"}'
+    var b = JSON.stringify({ baz: "quux", foo: "bar" })
+    //'{"baz":"quux","foo":"bar"}'
+    console.log(a !== b) // true
+
+    // some memoization functions use JSON.stringify to serialize arguments,
+    // which may cause a cache miss when encountering the same object like above
+
+### Example of using JSON.stringify() with localStorage
+
+In a case where you want to store an object created by your user and allowing it to be restored even after the browser has been closed, the following example is a model for the applicability of `JSON.stringify()`:
+
+    // Creating an example of JSON
+    var session = {
+      'screens': [],
+      'state': true
+    };
+    session.screens.push({ 'name': 'screenA', 'width': 450, 'height': 250 });
+    session.screens.push({ 'name': 'screenB', 'width': 650, 'height': 350 });
+    session.screens.push({ 'name': 'screenC', 'width': 750, 'height': 120 });
+    session.screens.push({ 'name': 'screenD', 'width': 250, 'height': 60 });
+    session.screens.push({ 'name': 'screenE', 'width': 390, 'height': 120 });
+    session.screens.push({ 'name': 'screenF', 'width': 1240, 'height': 650 });
+
+    // Converting the JSON string with JSON.stringify()
+    // then saving with localStorage in the name of session
+    localStorage.setItem('session', JSON.stringify(session));
+
+    // Example of how to transform the String generated through
+    // JSON.stringify() and saved in localStorage in JSON object again
+    var restoredSession = JSON.parse(localStorage.getItem('session'));
+
+    // Now restoredSession variable contains the object that was saved
+    // in localStorage
+    console.log(restoredSession);
+
+### Well-formed JSON.stringify()
+
+Engines implementing the [well-formed JSON.stringify specification](https://github.com/tc39/proposal-well-formed-stringify) will stringify lone surrogates, any code point from U+D800 to U+DFFF, using Unicode escape sequences rather than literally. Before this change `JSON.stringify` would output lone surrogates if the input contained any lone surrogates; such strings could not be encoded in valid UTF-8 or UTF-16:
+
+    JSON.stringify("\uD800"); // '"�"'
+
+But with this change `JSON.stringify` represents lone surrogates using JSON escape sequences that _can_ be encoded in valid UTF-8 or UTF-16:
+
+    JSON.stringify("\uD800"); // '"\\ud800"'
+
+This change should be backwards-compatible as long as you pass the result of `JSON.stringify` to APIs such as `JSON.parse` that will accept any valid JSON text, because they will treat Unicode escapes of lone surrogates as identical to the lone surrogates themselves. _Only_ if you are directly interpreting the result of `JSON.stringify` do you need to carefully handle `JSON.stringify`'s two possible encodings of these code points.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json.stringify">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-json.stringify</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`stringify`
+
+3
+
+12
+
+3.5
+
+8
+
+10.5
+
+4
+
+≤37
+
+18
+
+4
+
+11
+
+4
+
+1.0
+
+`well_formed_stringify`
+
+72
+
+79
+
+64
+
+No
+
+60
+
+12.1
+
+72
+
+72
+
+64
+
+50
+
+12.2
+
+No
+
+## See also
+
+-   [`JSON.parse()`](parse)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify</a>
+
+# Atomics.sub()
+
+The static `Atomics.sub()` method substracts a given value at a given position in the array and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
+
+## Syntax
+
+    Atomics.sub(typedArray, index, value)
+
+### Parameters
+
+`typedArray`
+An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
+
+`index`
+The position in the `typedArray` to subtract a `value` from.
+
+`value`
+The number to subtract.
+
+### Return value
+
+The old value at the given position (`typedArray[index]`).
+
+### Exceptions
+
+-   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+-   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+
+## Examples
+
+### Using sub
+
+    const sab = new SharedArrayBuffer(1024);
+    const ta = new Uint8Array(sab);
+    ta[0] = 48;
+
+    Atomics.sub(ta, 0, 12); // returns 48, the old value
+    Atomics.load(ta, 0); // 36
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.sub">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-atomics.sub</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sub`
+
+68
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+78
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11.1
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+60-63
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11.3
+
+No
+
+Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+## See also
+
+-   [`Atomics`](../atomics)
+-   [`Atomics.add()`](add)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/sub" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/sub</a>
+
+# TypedArray.prototype.subarray()
+
+The `subarray()` method returns a new _TypedArray_ on the same [`ArrayBuffer`](../arraybuffer) store and with the same element types as for this _TypedArray_ object. The begin offset is **inclusive** and the end offset is **exclusive**. _TypedArray_ is one of the [typed array types](../typedarray#typedarray_objects).
+
+## Syntax
+
+    subarray()
+    subarray(begin)
+    subarray(begin, end)
+
+### Parameters
+
+`begin` <span class="badge inline optional">Optional</span>
+Element to begin at. The offset is inclusive. The whole array will be included in the new view if this value is not specified.
+
+`end` <span class="badge inline optional">Optional</span>
+Element to end at. The offset is exclusive. If not specified, all elements from the one specified by `begin` to the end of the array are included in the new view.
+
+### Return value
+
+A new [`TypedArray`](../typedarray) object.
+
+## Description
+
+The range specified by `begin` and `end` is clamped to the valid index range for the current array; if the computed length of the new array would be negative, it's clamped to zero. If either `begin` or `end` is negative, it refers to an index from the end of the array instead of from the beginning.
+
+Also note that this is creating a new view on the existing buffer; changes to the new object's contents will impact the original object and vice versa.
+
+## Examples
+
+### Using the subarray() method
+
+    var buffer = new ArrayBuffer(8);
+    var uint8 = new Uint8Array(buffer);
+    uint8.set([1,2,3]);
+
+    console.log(uint8); // Uint8Array [ 1, 2, 3, 0, 0, 0, 0, 0 ]
+
+    var sub = uint8.subarray(0,4);
+
+    console.log(sub);   // Uint8Array [ 1, 2, 3, 0 ]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-%typedarray%.prototype.subarray</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`subarray`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`TypedArray`](../typedarray)
+-   [`ArrayBuffer`](../arraybuffer)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray</a>
+
+# String.prototype.substr()
+
+The `substr()` method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
+
+## Syntax
+
+    substr(start)
+    substr(start, length)
+
+### Parameters
+
+`start`
+The index of the first character to include in the returned substring.
+
+`length`
+Optional. The number of characters to extract.
+
+### Return value
+
+A new string containing the specified part of the given string.
+
+## Description
+
+`substr()` extracts `length` characters from a `str`, counting from the `start` index.
+
+-   If `start` is a positive number, the index starts counting at the start of the string. Its value is capped at `str.length`.
+-   If `start` is a negative number, the index starts counting from the end of the string. Its value is capped at `-str.length`.
+-   Note: In Microsoft JScript, negative values of the `start` argument are not considered to refer to the end of the string.
+-   If `length` is omitted, `substr()` extracts characters to the end of the string.
+-   If `length` is [`undefined`](../undefined), `substr()` extracts characters to the end of the string.
+-   If `length` is a negative number, it is treated as `0`.
+-   For both `start` and `length`, [`NaN`](../nan) is treated as `0`.
+
+## Polyfill
+
+Microsoft's JScript does not support negative values for the start index. To use this feature in JScript, you can use the following code:
+
+    // only run when the substr() function is broken
+    if ('ab'.substr(-1) != 'b') {
+      /**
+       *  Get the substring of a string
+       *  @param  {integer}  start   where to start the substring
+       *  @param  {integer}  length  how many characters to return
+       *  @return {string}
+       */
+      String.prototype.substr = function(substr) {
+        return function(start, length) {
+          // call the original method
+          return substr.call(this,
+            // did we get a negative start, calculate how much it is from the beginning of the string
+            // adjust the start parameter for negative value
+            start < 0 ? this.length + start : start,
+            length)
+        }
+      }(String.prototype.substr);
+    }
+
+## Examples
+
+### Using substr()
+
+    var aString = 'Mozilla';
+
+    console.log(aString.substr(0, 1));   // 'M'
+    console.log(aString.substr(1, 0));   // ''
+    console.log(aString.substr(-1, 1));  // 'a'
+    console.log(aString.substr(1, -1));  // ''
+    console.log(aString.substr(-3));     // 'lla'
+    console.log(aString.substr(1));      // 'ozilla'
+    console.log(aString.substr(-20, 2)); // 'Mo'
+    console.log(aString.substr(20, 2));  // ''
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substr">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.substr</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`substr`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.slice()`](slice)
+-   [`String.prototype.substring()`](substring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr</a>
+
+# String.prototype.substring()
+
+The `substring()` method returns the part of the `string` between the start and end indexes, or to the end of the string.
+
+## Syntax
+
+    substring(indexStart)
+    substring(indexStart, indexEnd)
+
+### Parameters
+
+`indexStart`
+The index of the first character to include in the returned substring.
+
+`indexEnd` <span class="badge inline optional">Optional</span>
+The index of the first character to exclude from the returned substring.
+
+### Return value
+
+A new string containing the specified part of the given string.
+
+## Description
+
+`substring()` extracts characters from `indexStart` up to _but not including_ `indexEnd`. In particular:
+
+-   If `indexEnd` is omitted, `substring()` extracts characters to the end of the string.
+-   If `indexStart` is equal to `indexEnd`, `substring()` returns an empty string.
+-   If `indexStart` is greater than `indexEnd`, then the effect of `substring()` is as if the two arguments were swapped; See example below.
+
+Any argument value that is less than `0` or greater than `stringName.length` is treated as if it were `0` and `stringName.length`, respectively.
+
+Any argument value that is [`NaN`](../nan) is treated as if it were `0`.
+
+## Examples
+
+### Using substring()
+
+The following example uses `substring()` to display characters from the string `'Mozilla'`:
+
+    let anyString = 'Mozilla'
+
+    // Displays 'M'
+    console.log(anyString.substring(0, 1))
+    console.log(anyString.substring(1, 0))
+
+    // Displays 'Mozill'
+    console.log(anyString.substring(0, 6))
+
+    // Displays 'lla'
+    console.log(anyString.substring(4))
+    console.log(anyString.substring(4, 7))
+    console.log(anyString.substring(7, 4))
+
+    // Displays 'Mozilla'
+    console.log(anyString.substring(0, 7))
+    console.log(anyString.substring(0, 10))
+
+### Using substring() with length property
+
+The following example uses the `substring()` method and [`length`](length) property to extract the last characters of a particular string. This method may be easier to remember, given that you don't need to know the starting and ending indices as you would in the above examples.
+
+    // Displays 'illa' the last 4 characters
+    let anyString = 'Mozilla'
+    let anyString4 = anyString.substring(anyString.length - 4)
+    console.log(anyString4)
+
+    // Displays 'zilla' the last 5 characters
+    let anyString = 'Mozilla'
+    let anyString5 = anyString.substring(anyString.length - 5)
+    console.log(anyString5)
+
+### The difference between substring() and substr()
+
+There's a subtle difference between the `substring()` and [`substr()`](substr) methods, so you should be careful not to get them confused.
+
+The arguments of `substring()` represent the starting and ending indexes, while the arguments of `substr()` represent the starting index and the number of characters to include in the returned string.
+
+Furthermore, `substr()` is considered a **legacy feature in ECMAScript** and could be removed from future versions, so it is best to avoid using it if possible.
+
+    let text = 'Mozilla'
+    console.log(text.substring(2,5))  // => "zil"
+    console.log(text.substr(2,3))     // => "zil"
+
+### Differences between substring() and slice()
+
+The `substring()` and [`slice()`](slice) methods are almost identical, but there are a couple of subtle differences between the two, especially in the way negative arguments are dealt with.
+
+The `substring()` method swaps its two arguments if `indexStart` is greater than `indexEnd`, meaning that a string is still returned. The [`slice()`](slice) method returns an empty string if this is the case.
+
+    let text = 'Mozilla'
+    console.log(text.substring(5, 2))  // => "zil"
+    console.log(text.slice(5, 2))      // => ""
+
+If either or both of the arguments are negative or `NaN`, the `substring()` method treats them as if they were `0`.
+
+    console.log(text.substring(-5, 2))  // => "Mo"
+    console.log(text.substring(-5, -2)) // => ""
+
+`slice()` also treats `NaN` arguments as `0`, but when it is given negative values it counts backwards from the end of the string to find the indexes.
+
+    console.log(text.slice(-5, 2))   // => ""
+    console.log(text.slice(-5, -2))  // => "zil"
+
+See the [`slice()`](slice) page for more examples with negative numbers.
+
+### Replacing a substring within a string
+
+The following example replaces a substring within a string. It will replace both individual characters and substrings. The function call at the end of the example changes the string `Brave New World` to `Brave New Web`.
+
+    // Replaces oldS with newS in the string fullS
+    function replaceString(oldS, newS, fullS) {
+      for (let i = 0; i < fullS.length; ++i) {
+        if (fullS.substring(i, i + oldS.length) == oldS) {
+          fullS = fullS.substring(0, i) + newS + fullS.substring(i + oldS.length, fullS.length)
+        }
+      }
+      return fullS
+    }
+
+    replaceString('World', 'Web', 'Brave New World')
+
+Note that this can result in an infinite loop if `oldS` is itself a substring of `newS` — for example, if you attempted to replace '`World`' with '`OtherWorld`' here.
+
+A better method for replacing strings is as follows:
+
+    function replaceString(oldS, newS, fullS) {
+      return fullS.split(oldS).join(newS)
+    }
+
+The code above serves as an example for substring operations. If you need to replace substrings, most of the time you will want to use [`String.prototype.replace()`](replace).
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.substring">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.substring' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`substring`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.substr()`](substr)
+-   [`String.prototype.slice()`](slice)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring</a>
+
+# Subtraction (-)
+
+The subtraction operator (`-`) subtracts the two operands, producing their difference.
+
+## Syntax
+
+    Operator: x - y
+
+## Examples
+
+### Subtraction with numbers
+
+    5 - 3     // 2
+    3 - 5     // -2
+
+### Subtraction with non-numbers
+
+    'foo' - 3 // NaN
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-subtraction-operator-minus">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-subtraction-operator-minus</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Subtraction`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Addition operator](addition)
+-   [Division operator](division)
+-   [Multiplication operator](multiplication)
+-   [Remainder operator](remainder)
+-   [Exponentiation operator](exponentiation)
+-   [Increment operator](increment)
+-   [Decrement operator](decrement)
+-   [Unary negation operator](unary_negation)
+-   [Unary plus operator](unary_plus)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction</a>
+
+# String.prototype.sup()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `sup()` method creates a [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) HTML element that causes a string to be displayed as superscript.
+
+## Syntax
+
+    sup()
+
+### Return value
+
+A string containing a [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) HTML element.
+
+## Description
+
+The `sup()` method embeds a string in a `<sup>` element: "`<sup>str</sup>`".
+
+## Examples
+
+### Using sub() and sup() methods
+
+The following example uses the [`sub()`](sub) and `sup()` methods to format a string:
+
+    var superText = 'superscript';
+    var subText = 'subscript';
+
+    console.log('This is what a ' + superText.sup() + ' looks like.');
+    // "This is what a <sup>superscript</sup> looks like."
+
+    console.log('This is what a ' + subText.sub() + ' looks like.');
+    // "This is what a <sub>subscript</sub> looks like."
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.sup">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.sup</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`sup`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.sub()`](sub)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sup" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sup</a>
+
+# super
+
+The **super** keyword is used to access and call functions on an object's parent.
+
+The `super.prop` and `super[expr]` expressions are valid in any [method definition](../functions/method_definitions) in both [classes](../classes) and [object literals](object_initializer).
+
+## Syntax
+
+    super([arguments]); // calls the parent constructor.
+    super.functionOnParent([arguments]);
+
+## Description
+
+When used in a constructor, the `super` keyword appears alone and must be used before the `this` keyword is used. The `super` keyword can also be used to call functions on a parent object.
+
+## Examples
+
+### Using `super` in classes
+
+This code snippet is taken from the [classes sample](https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html) ([live demo](https://googlechrome.github.io/samples/classes-es6/index.html)). Here `super()` is called to avoid duplicating the constructor parts' that are common between `Rectangle` and `Square`.
+
+    class Rectangle {
+      constructor(height, width) {
+        this.name = 'Rectangle';
+        this.height = height;
+        this.width = width;
+      }
+      sayName() {
+        console.log('Hi, I am a ', this.name + '.');
+      }
+      get area() {
+        return this.height * this.width;
+      }
+      set area(value) {
+        this._area = value;
+      }
+    }
+
+    class Square extends Rectangle {
+      constructor(length) {
+        this.height; // ReferenceError, super needs to be called first!
+
+        // Here, it calls the parent class's constructor with lengths
+        // provided for the Rectangle's width and height
+        super(length, length);
+
+        // Note: In derived classes, super() must be called before you
+        // can use 'this'. Leaving this out will cause a reference error.
+        this.name = 'Square';
+      }
+    }
+
+### Super-calling static methods
+
+You are also able to call super on [static](../classes/static) methods.
+
+    class Rectangle {
+      static logNbSides() {
+        return 'I have 4 sides';
+      }
+    }
+
+    class Square extends Rectangle {
+      static logDescription() {
+        return super.logNbSides() + ' which are all equal';
+      }
+    }
+    Square.logDescription(); // 'I have 4 sides which are all equal'
+
+### Deleting super properties will throw an error
+
+You cannot use the [delete operator](delete) and `super.prop` or `super[expr]` to delete a parent class' property, it will throw a [`ReferenceError`](../global_objects/referenceerror).
+
+    class Base {
+      foo() {}
+    }
+    class Derived extends Base {
+      delete() {
+        delete super.foo; // this is bad
+      }
+    }
+
+    new Derived().delete(); // ReferenceError: invalid delete involving 'super'.
+
+### `super.prop` cannot overwrite non-writable properties
+
+When defining non-writable properties with e.g. [`Object.defineProperty`](../global_objects/object/defineproperty), `super` cannot overwrite the value of the property.
+
+    class X {
+      constructor() {
+        Object.defineProperty(this, 'prop', {
+          configurable: true,
+          writable: false,
+          value: 1
+        });
+      }
+    }
+
+    class Y extends X {
+      constructor() {
+        super();
+      }
+      foo() {
+        super.prop = 2;   // Cannot overwrite the value.
+      }
+    }
+
+    var y = new Y();
+    y.foo(); // TypeError: "prop" is read-only
+    console.log(y.prop); // 1
+
+### Using `super.prop` in object literals
+
+Super can also be used in the [object initializer / literal](object_initializer) notation. In this example, two objects define a method. In the second object, `super` calls the first object's method. This works with the help of [`Object.setPrototypeOf()`](../global_objects/object/setprototypeof) with which we are able to set the prototype of `obj2` to `obj1`, so that `super` is able to find `method1` on `obj1`.
+
+    var obj1 = {
+      method1() {
+        console.log('method 1');
+      }
+    }
+
+    var obj2 = {
+      method2() {
+        super.method1();
+      }
+    }
+
+    Object.setPrototypeOf(obj2, obj1);
+    obj2.method2(); // logs "method 1"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-super-keyword">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'super' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`super`
+
+42
+
+13
+
+45
+
+No
+
+29
+
+7
+
+42
+
+42
+
+45
+
+29
+
+7
+
+4.0
+
+## See also
+
+-   [Classes](../classes)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super</a>
+
+# Intl.RelativeTimeFormat.supportedLocalesOf()
+
+The `Intl.RelativeTimeFormat.supportedLocalesOf()` method returns an array containing those of the provided locales that are supported in date and time formatting without having to fall back to the runtime's default locale.
+
+## Syntax
+
+    Intl.RelativeTimeFormat.supportedLocalesOf(locales)
+    Intl.RelativeTimeFormat.supportedLocalesOf(locales, options)
+
+### Parameters
+
+`locales`
+A string with a BCP 47 language tag, or an array of such strings. For the general form of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page.
+
+`options` <span class="badge inline optional">Optional</span>
+An object that may have the following property:
+
+`localeMatcher`
+The locale matching algorithm to use. Possible values are "`lookup`" and "`best fit`"; the default is "`best fit`". For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+
+### Return value
+
+An array of strings representing a subset of the given locale tags that are supported in date and time formatting without having to fall back to the runtime's default locale.
+
+## Description
+
+Returns an array with a subset of the language tags provided in `locales`. The language tags returned are those for which the runtime supports a locale in date and time formatting that the locale matching algorithm used considers a match, so that it wouldn't have to fall back to the default locale.
+
+## Examples
+
+### Using supportedLocalesOf()
+
+Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, `supportedLocalesOf` returns the Indonesian and German language tags unchanged, even though `pinyin` collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the "`lookup`" algorithm here — a "`best fit`" matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.
+
+    const locales = ['ban', 'id-u-co-pinyin', 'de-ID'];
+    const options = { localeMatcher: 'lookup' };
+    console.log(Intl.RelativeTimeFormat.supportedLocalesOf(locales, options).join(', '));
+    // → "id-u-co-pinyin, de-ID"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sec-Intl.RelativeTimeFormat.supportedLocalesOf</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`supportedLocalesOf`
+
+71
+
+79
+
+65
+
+No
+
+58
+
+14
+
+71
+
+71
+
+65
+
+50
+
+14
+
+10.0
+
+## See also
+
+-   [`Intl.RelativeTimeFormat`](../relativetimeformat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf</a>
+
+# switch
+
+The `switch` statement evaluates an [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators), matching the expression's value to a `case` clause, and executes [statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements) associated with that `case`, as well as statements in `case`s that follow the matching `case`.
+
+## Syntax
+
+    switch (expression) {
+      case value1:
+        //Statements executed when the
+        //result of expression matches value1
+        [break;]
+      case value2:
+        //Statements executed when the
+        //result of expression matches value2
+        [break;]
+      ...
+      case valueN:
+        //Statements executed when the
+        //result of expression matches valueN
+        [break;]
+      [default:
+        //Statements executed when none of
+        //the values match the value of the expression
+        [break;]]
+    }
+
+`expression`
+An expression whose result is matched against each `case` clause.
+
+`case valueN` <span class="badge inline optional">Optional</span>
+A `case` clause used to match against `expression`. If the `expression` matches the specified `valueN`, the statements inside the `case` clause are executed until either the end of the `switch` statement or a `break`.
+
+`default` <span class="badge inline optional">Optional</span>
+A `default` clause; if provided, this clause is executed if the value of `expression` doesn't match any of the `case` clauses.
+
+## Description
+
+A `switch` statement first evaluates its expression. It then looks for the first `case` clause whose expression evaluates to the same value as the result of the input expression (using the [strict comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), `===`) and transfers control to that clause, executing the associated statements. (If multiple `case`s match the provided value, the first `case` that matches is selected, even if the `case`s are not equal to each other.)
+
+If no matching `case` clause is found, the program looks for the optional `default` clause, and if found, transfers control to that clause, executing the associated statements. If no `default` clause is found, the program continues execution at the statement following the end of `switch`. By convention, the `default` clause is the last clause, but it does not need to be so.
+
+The optional `break` statement associated with each `case` label ensures that the program breaks out of `switch` once the matched statement is executed and continues execution at the statement following `switch`. If `break` is omitted, the program continues execution at the next statement in the `switch` statement. The `break` statement is not required if a `return` statement precedes it.
+
+## Examples
+
+### Using `switch`
+
+In the following example, if `expr` evaluates to `Bananas`, the program matches the value with case `case 'Bananas'` and executes the associated statement. When `break` is encountered, the program breaks out of `switch` and executes the statement following `switch`. If `break` were omitted, the statement for the `case 'Cherries'` would also be executed.
+
+    switch (expr) {
+      case 'Oranges':
+        console.log('Oranges are $0.59 a pound.');
+        break;
+      case 'Apples':
+        console.log('Apples are $0.32 a pound.');
+        break;
+      case 'Bananas':
+        console.log('Bananas are $0.48 a pound.');
+        break;
+      case 'Cherries':
+        console.log('Cherries are $3.00 a pound.');
+        break;
+      case 'Mangoes':
+      case 'Papayas':
+        console.log('Mangoes and papayas are $2.79 a pound.');
+        break;
+      default:
+        console.log('Sorry, we are out of ' + expr + '.');
+    }
+
+    console.log("Is there anything else you'd like?");
+
+### What happens if I forgot a `break`?
+
+If you forget a `break` then the script will run from the `case` where the criterion is met and will run the cases after that **regardless if a criterion was met**.
+
+See example here:
+
+    var foo = 0;
+    switch (foo) {
+      case -1:
+        console.log('negative 1');
+        break;
+      case 0: // foo is 0 so criteria met here so this block will run
+        console.log(0);
+        // NOTE: the forgotten break would have been here
+      case 1: // no break statement in 'case 0:' so this case will run as well
+        console.log(1);
+        break; // it encounters this break so will not continue into 'case 2:'
+      case 2:
+        console.log(2);
+        break;
+      default:
+        console.log('default');
+    }
+
+### Can I put a `default` between cases?
+
+Yes, you can! JavaScript will drop you back to the `default` if it can't find a match:
+
+    var foo = 5;
+    switch (foo) {
+      case 2:
+        console.log(2);
+        break; // it encounters this break so will not continue into 'default:'
+      default:
+        console.log('default')
+        // fall-through
+      case 1:
+        console.log('1');
+    }
+
+It also works when you put `default` before all other `case`s.
+
+### Methods for multi-criteria `case`
+
+This technique is also commonly called fall-through.
+
+#### Multi-`case` : single operation
+
+This method takes advantage of the fact that if there is no break below a `case` clause it will continue to execute the next `case` clause regardless if the `case` meets the criteria. (See the section [What happens if I forgot a `break`?](#what_happens_if_i_forgot_a_break))
+
+This is an example of a single operation sequential `case` statement, where four different values perform exactly the same.
+
+    var Animal = 'Giraffe';
+    switch (Animal) {
+      case 'Cow':
+      case 'Giraffe':
+      case 'Dog':
+      case 'Pig':
+        console.log('This animal is not extinct.');
+        break;
+      case 'Dinosaur':
+      default:
+        console.log('This animal is extinct.');
+    }
+
+#### Multi-`case` : chained operations
+
+This is an example of a multiple-operation sequential `case` clause, where, depending on the provided integer, you can receive different output. This shows you that it will traverse in the order that you put the `case` clauses, and it does not have to be numerically sequential. In JavaScript, you can even mix in definitions of strings into these `case` statements as well.
+
+    var foo = 1;
+    var output = 'Output: ';
+    switch (foo) {
+      case 0:
+        output += 'So ';
+      case 1:
+        output += 'What ';
+        output += 'Is ';
+      case 2:
+        output += 'Your ';
+      case 3:
+        output += 'Name';
+      case 4:
+        output += '?';
+        console.log(output);
+        break;
+      case 5:
+        output += '!';
+        console.log(output);
+        break;
+      default:
+        console.log('Please pick a number from 0 to 5!');
+    }
+
+The output from this example:
+
+<table><thead><tr class="header"><th>Value</th><th>Log text</th></tr></thead><tbody><tr class="odd"><td><code>foo</code> is <code>NaN</code> or not <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, or <code>0</code></td><td>Please pick a number from 0 to 5!</td></tr><tr class="even"><td><code>0</code></td><td>Output: So What Is Your Name?</td></tr><tr class="odd"><td><code>1</code></td><td>Output: What Is Your Name?</td></tr><tr class="even"><td><code>2</code></td><td>Output: Your Name?</td></tr><tr class="odd"><td><code>3</code></td><td>Output: Name?</td></tr><tr class="even"><td><code>4</code></td><td>Output: ?</td></tr><tr class="odd"><td><code>5</code></td><td>Output: !</td></tr></tbody></table>
+
+### Block-scope variables within `switch` statements
+
+With ECMAScript 2015 (ES6) support made available in most modern browsers, there will be cases where you would want to use [`let`](let) and [`const`](const) statements to declare block-scoped variables.
+
+Take a look at this example:
+
+    const action = 'say_hello';
+    switch (action) {
+      case 'say_hello':
+        let message = 'hello';
+        console.log(message);
+        break;
+      case 'say_hi':
+        let message = 'hi';
+        console.log(message);
+        break;
+      default:
+        console.log('Empty action received.');
+        break;
+    }
+
+This example will output the error `Uncaught SyntaxError: Identifier 'message' has already been declared` which you were not probably expecting.
+
+This is because the first `let message = 'hello';` conflicts with second let statement `let message = 'hi';` even they're within their own separate case clauses `case 'say_hello':` and `case 'say_hi':`. Ultimately, this is due to both `let` statements being interpreted as duplicate declarations of the same variable name within the same block scope.
+
+We can easily fix this by wrapping our `case` clauses with brackets:
+
+    const action = 'say_hello';
+    switch (action) {
+      case 'say_hello': { // added brackets
+        let message = 'hello';
+        console.log(message);
+        break;
+      } // added brackets
+      case 'say_hi': { // added brackets
+        let message = 'hi';
+        console.log(message);
+        break;
+      } // added brackets
+      default: { // added brackets
+        console.log('Empty action received.');
+        break;
+      } // added brackets
+    }
+
+This code will now output `hello` in the console as it should, without any errors at all.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-switch-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-switch-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`switch`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`if...else`](if...else)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch</a>
+
+# Symbol
+
+`Symbol` is a built-in object whose constructor returns a `symbol` [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) — also called a **Symbol value** or just a **Symbol** — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak [encapsulation](https://developer.mozilla.org/en-US/docs/Glossary/Encapsulation), or a weak form of [information hiding](https://en.wikipedia.org/wiki/Information_hiding).
+
+Every `Symbol()` call is guaranteed to return a unique Symbol. Every `Symbol.for("key")` call will always return the same Symbol for a given value of `"key"`. When `Symbol.for("key")` is called, if a Symbol with the given key can be found in the global Symbol registry, that Symbol is returned. Otherwise, a new Symbol is created, added to the global Symbol registry under the given key, and returned.
+
+## Description
+
+To create a new primitive Symbol, you write `Symbol()` with an optional string as its description:
+
+    let sym1 = Symbol()
+    let sym2 = Symbol('foo')
+    let sym3 = Symbol('foo')
+
+The above code creates three new Symbols. Note that `Symbol("foo")` does not coerce the string `"foo"` into a Symbol. It creates a new Symbol each time:
+
+    Symbol('foo') === Symbol('foo')  // false
+
+The following syntax with the [`new`](../operators/new) operator will throw a [`TypeError`](typeerror):
+
+    let sym = new Symbol()  // TypeError
+
+This prevents authors from creating an explicit `Symbol` wrapper object instead of a new Symbol value and might be surprising as creating explicit wrapper objects around primitive data types is generally possible (for example, `new Boolean`, `new String` and `new Number`).
+
+If you really want to create a `Symbol` wrapper object, you can use the `Object()` function:
+
+    let sym = Symbol('foo')
+    typeof sym      // "symbol"
+    let symObj = Object(sym)
+    typeof symObj   // "object"
+
+### Shared Symbols in the global Symbol registry
+
+The above syntax using the `Symbol()` function will not create a global Symbol that is available in your whole codebase. To create Symbols available across files and even across realms (each of which has its own global scope), use the methods [`Symbol.for()`](symbol/for) and [`Symbol.keyFor()`](symbol/keyfor) to set and retrieve Symbols from the global Symbol registry.
+
+### Finding Symbol properties on objects
+
+The method [`Object.getOwnPropertySymbols()`](object/getownpropertysymbols) returns an array of Symbols and lets you find Symbol properties on a given object. Note that every object is initialized with no own Symbol properties, so that this array will be empty unless you've set Symbol properties on the object.
+
+## Constructor
+
+[`Symbol()`](symbol/symbol)
+Creates a new `Symbol` object. It is incomplete as a constructor because it does not support the syntax "`new Symbol()`".
+
+## Static properties
+
+[`Symbol.asyncIterator`](symbol/asynciterator)
+A method that returns the default AsyncIterator for an object. Used by [`for await...of`](../statements/for-await...of).
+
+[`Symbol.hasInstance`](symbol/hasinstance)
+A method determining if a constructor object recognizes an object as its instance. Used by [`instanceof`](../operators/instanceof).
+
+[`Symbol.isConcatSpreadable`](symbol/isconcatspreadable)
+A Boolean value indicating if an object should be flattened to its array elements. Used by [`Array.prototype.concat()`](array/concat).
+
+[`Symbol.iterator`](symbol/iterator)
+A method returning the default iterator for an object. Used by [`for...of`](../statements/for...of).
+
+[`Symbol.match`](symbol/match)
+A method that matches against a string, also used to determine if an object may be used as a regular expression. Used by [`String.prototype.match()`](string/match).
+
+[`Symbol.matchAll`](symbol/matchall)
+A method that returns an iterator, that yields matches of the regular expression against a string. Used by [`String.prototype.matchAll()`](string/matchall).
+
+[`Symbol.replace`](symbol/replace)
+A method that replaces matched substrings of a string. Used by [`String.prototype.replace()`](string/replace).
+
+[`Symbol.search`](symbol/search)
+A method that returns the index within a string that matches the regular expression. Used by [`String.prototype.search()`](string/search).
+
+[`Symbol.split`](symbol/split)
+A method that splits a string at the indices that match a regular expression. Used by [`String.prototype.split()`](string/split).
+
+[`Symbol.species`](symbol/species)
+A constructor function that is used to create derived objects.
+
+[`Symbol.toPrimitive`](symbol/toprimitive)
+A method converting an object to a primitive value.
+
+[`Symbol.toStringTag`](symbol/tostringtag)
+A string value used for the default description of an object. Used by [`Object.prototype.toString()`](object/tostring).
+
+[`Symbol.unscopables`](symbol/unscopables)
+An object value of whose own and inherited property names are excluded from the `with` environment bindings of the associated object.
+
+## Static methods
+
+[`Symbol.for(key)`](symbol/for)
+Searches for existing Symbols with the given `key` and returns it if found. Otherwise a new Symbol gets created in the global Symbol registry with `key`.
+
+[`Symbol.keyFor(sym)`](symbol/keyfor)
+Retrieves a shared Symbol key from the global Symbol registry for the given Symbol.
+
+## Instance properties
+
+[`Symbol.prototype.description`](symbol/description)
+A read-only string containing the description of the Symbol.
+
+## Instance methods
+
+[`Symbol.prototype.toSource()`](symbol/tosource)
+Returns a string containing the source of the Symbol. Overrides the [`Object.prototype.toSource()`](object/tosource) method.
+
+[`Symbol.prototype.toString()`](symbol/tostring)
+Returns a string containing the description of the Symbol. Overrides the [`Object.prototype.toString()`](object/tostring) method.
+
+[`Symbol.prototype.valueOf()`](symbol/valueof)
+Returns the Symbol. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
+
+[`Symbol.prototype[@@toPrimitive]`](symbol/@@toprimitive)
+Returns the Symbol.
+
+## Examples
+
+### Using the typeof operator with Symbols
+
+The [`typeof`](../operators/typeof) operator can help you to identify Symbols.
+
+    typeof Symbol() === 'symbol'
+    typeof Symbol('foo') === 'symbol'
+    typeof Symbol.iterator === 'symbol'
+
+### Symbol type conversions
+
+Some things to note when working with type conversion of Symbols.
+
+-   When trying to convert a Symbol to a number, a [`TypeError`](typeerror) will be thrown
+    (e.g. `+sym` or `sym | 0`).
+-   When using loose equality, `Object(sym) == sym` returns `true`.
+-   `Symbol("foo") + "bar" `throws a [`TypeError`](typeerror) (can't convert Symbol to string). This prevents you from silently creating a new string property name from a Symbol, for example.
+-   The ["safer" `String(sym)` conversion](string#string_conversion) works like a call to [`Symbol.prototype.toString()`](symbol/tostring) with Symbols, but note that `new String(sym)` will throw.
+
+### Symbols and for...in iteration
+
+Symbols are not enumerable in [`for...in`](../statements/for...in) iterations. In addition, [`Object.getOwnPropertyNames()`](object/getownpropertynames) will not return Symbol object properties, however, you can use [`Object.getOwnPropertySymbols()`](object/getownpropertysymbols) to get these.
+
+    let obj = {}
+
+    obj[Symbol('a')] = 'a'
+    obj[Symbol.for('b')] = 'b'
+    obj['c'] = 'c'
+    obj.d = 'd'
+
+    for (let i in obj) {
+       console.log(i)  // logs "c" and "d"
+    }
+
+### Symbols and JSON.stringify()
+
+Symbol-keyed properties will be completely ignored when using `JSON.stringify()`:
+
+    JSON.stringify({[Symbol('foo')]: 'foo'})
+    // '{}'
+
+For more details, see [`JSON.stringify()`](json/stringify).
+
+### Symbol wrapper objects as property keys
+
+When a Symbol wrapper object is used as a property key, this object will be coerced to its wrapped Symbol:
+
+    let sym = Symbol('foo')
+    let obj = {[sym]: 1}
+    obj[sym]             // 1
+    obj[Object(sym)]     // still 1
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-symbol-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Symbol`
+
+38
+
+12
+
+Edge 12 included Symbol properties in `JSON.stringify()` output.
+
+36
+
+No
+
+25
+
+9
+
+38
+
+38
+
+36
+
+25
+
+9
+
+3.0
+
+`Symbol`
+
+38
+
+12
+
+36
+
+No
+
+25
+
+9
+
+38
+
+38
+
+36
+
+25
+
+9
+
+3.0
+
+`asyncIterator`
+
+63
+
+79
+
+57
+
+No
+
+50
+
+11.1
+
+63
+
+63
+
+57
+
+46
+
+No
+
+8.0
+
+`description`
+
+70
+
+79
+
+63
+
+No
+
+57
+
+12.1
+
+12
+
+No support for an undefined description.
+
+70
+
+70
+
+63
+
+49
+
+12.2
+
+12
+
+No support for an undefined description.
+
+10.0
+
+`for`
+
+40
+
+12
+
+36
+
+No
+
+27
+
+9
+
+40
+
+40
+
+36
+
+27
+
+9
+
+4.0
+
+`hasInstance`
+
+50
+
+15
+
+50
+
+No
+
+37
+
+10
+
+50
+
+50
+
+50
+
+37
+
+10
+
+5.0
+
+`isConcatSpreadable`
+
+48
+
+15
+
+48
+
+No
+
+35
+
+10
+
+48
+
+48
+
+48
+
+35
+
+10
+
+5.0
+
+`iterator`
+
+43
+
+12
+
+36
+
+No
+
+30
+
+10
+
+43
+
+43
+
+36
+
+30
+
+10
+
+4.0
+
+`keyFor`
+
+40
+
+12
+
+36
+
+No
+
+27
+
+9
+
+40
+
+40
+
+36
+
+27
+
+9
+
+4.0
+
+`match`
+
+50
+
+79
+
+40
+
+No
+
+37
+
+10
+
+50
+
+50
+
+40
+
+37
+
+10
+
+5.0
+
+`matchAll`
+
+73
+
+79
+
+67
+
+No
+
+60
+
+13
+
+73
+
+73
+
+67
+
+52
+
+13
+
+No
+
+`replace`
+
+50
+
+79
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`search`
+
+50
+
+79
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`species`
+
+51
+
+13
+
+41
+
+No
+
+38
+
+10
+
+51
+
+51
+
+41
+
+41
+
+10
+
+5.0
+
+`split`
+
+50
+
+79
+
+49
+
+No
+
+37
+
+10
+
+50
+
+50
+
+49
+
+37
+
+10
+
+5.0
+
+`toPrimitive`
+
+47
+
+15
+
+44
+
+No
+
+34
+
+10
+
+47
+
+47
+
+44
+
+34
+
+10
+
+5.0
+
+`toSource`
+
+No
+
+No
+
+36-74
+
+Starting in Firefox 74, `toSource()` is no longer available for use by web content. It is still allowed for internal and privileged code.
+
+No
+
+No
+
+No
+
+No
+
+No
+
+36
+
+No
+
+No
+
+No
+
+`toString`
+
+38
+
+12
+
+36
+
+No
+
+25
+
+9
+
+38
+
+38
+
+36
+
+25
+
+9
+
+3.0
+
+`toStringTag`
+
+49
+
+15
+
+51
+
+No
+
+36
+
+10
+
+49
+
+49
+
+51
+
+36
+
+10
+
+5.0
+
+`unscopables`
+
+45
+
+12
+
+48
+
+No
+
+32
+
+9
+
+45
+
+45
+
+48
+
+32
+
+9
+
+5.0
+
+`valueOf`
+
+38
+
+12
+
+36
+
+No
+
+25
+
+9
+
+38
+
+38
+
+36
+
+25
+
+9
+
+3.0
+
+`@@toPrimitive`
+
+47
+
+15
+
+44
+
+No
+
+34
+
+10
+
+47
+
+47
+
+44
+
+34
+
+10
+
+5.0
+
+## See also
+
+-   [Glossary: Symbol data type](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)
+-   [`typeof`](../operators/typeof)
+-   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+-   ["ES6 In Depth: Symbols" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a>
+
+# SyntaxError
+
+The `SyntaxError` object represents an error when trying to interpret syntactically invalid code. It is thrown when the JavaScript engine encounters tokens or token order that does not conform to the syntax of the language when parsing code.
+
+## Constructor
+
+[`SyntaxError()`](syntaxerror/syntaxerror)
+Creates a new `SyntaxError` object.
+
+## Instance properties
+
+[`SyntaxError.prototype.message`](error/message)
+Error message. Although ECMA-262 specifies that [`SyntaxError`](syntaxerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
+
+[`SyntaxError.prototype.name`](error/name)
+Error name. Inherited from [`Error`](error).
+
+[`SyntaxError.prototype.fileName`](error/filename)
+Path to file that raised this error. Inherited from [`Error`](error).
+
+[`SyntaxError.prototype.lineNumber`](error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](error).
+
+[`SyntaxError.prototype.columnNumber`](error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](error).
+
+[`SyntaxError.prototype.stack`](error/stack)
+Stack trace. Inherited from [`Error`](error).
+
+## Examples
+
+### Catching a SyntaxError
+
+    try {
+      eval('hoo bar');
+    } catch (e) {
+      console.error(e instanceof SyntaxError);
+      console.error(e.message);
+      console.error(e.name);
+      console.error(e.fileName);
+      console.error(e.lineNumber);
+      console.error(e.columnNumber);
+      console.error(e.stack);
+    }
+
+### Creating a SyntaxError
+
+    try {
+      throw new SyntaxError('Hello', 'someFile.js', 10);
+    } catch (e) {
+      console.error(e instanceof SyntaxError); // true
+      console.error(e.message);                // Hello
+      console.error(e.name);                   // SyntaxError
+      console.error(e.fileName);               // someFile.js
+      console.error(e.lineNumber);             // 10
+      console.error(e.columnNumber);           // 0
+      console.error(e.stack);                  // @debugger eval code:3:9
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-syntaxerror">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-native-error-types-used-in-this-standard-syntaxerror</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`SyntaxError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`SyntaxError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Error`](error)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError</a>
+
+# WebAssembly.Table
+
+The `WebAssembly.Table()` object is a JavaScript wrapper object — an array-like structure representing a WebAssembly Table, which stores function references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
+
+**Note:** Tables can currently only store function references, but this will likely be expanded in the future.
+
+## Constructor
+
+[`WebAssembly.Table()`](table/table)
+Creates a new `Table` object.
+
+## Instance properties
+
+[`Table.prototype.length`](table/length)
+Returns the length of the table, i.e. the number of elements.
+
+## Instance methods
+
+[`Table.prototype.get()`](table/get)
+Accessor function — gets the element stored at a given index.
+
+[`Table.prototype.grow()`](table/grow)
+Increases the size of the Table instance by a specified number of elements.
+
+[`Table.prototype.set()`](table/set)
+Sets an element stored at a given index to a given value.
+
+## Examples
+
+### Creating a new WebAssembly Table instance
+
+The following example (see table2.html [source code](https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/table2.html) and [live version](https://mdn.github.io/webassembly-examples/js-api-examples/table2.html)) creates a new WebAssembly Table instance with an initial size of 2 elements. We then print out the table length and contents of the two indexes (retrieved via [`Table.prototype.get()`](table/get) to show that the length is two and both elements are [`null`](../null).
+
+    var tbl = new WebAssembly.Table({initial:2, element:"anyfunc"});
+    console.log(tbl.length);  // "2"
+    console.log(tbl.get(0));  // "null"
+    console.log(tbl.get(1));  // "null"
+
+We then create an import object that contains the table:
+
+    var importObj = {
+      js: {
+        tbl:tbl
+      }
+    };
+
+Finally, we load and instantiate a wasm module (table2.wasm) using the [`WebAssembly.instantiateStreaming()`](instantiatestreaming) method. The table2.wasm module contains two functions (one that returns 42 and another that returns 83) and stores both into elements 0 and 1 of the imported table (see [text representation](https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/table2.wat)). So after instantiation, the table still has length 2, but the elements now contain callable [Exported WebAssembly Functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Exported_functions) which we can call from JS.
+
+    WebAssembly.instantiateStreaming(fetch('table2.wasm'), importObject)
+    .then(function(obj) {
+      console.log(tbl.length);
+      console.log(tbl.get(0)());
+      console.log(tbl.get(1)());
+    });
+
+Note how you've got to include a second function invocation operator at the end of the accessor to actually invoke the referenced function and log the value stored inside it (e.g. `get(0)()` rather than `get(0)`) .
+
+This example shows that we're creating and accessing the table from JavaScript, but the same table is visible and callable inside the wasm instance too.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#tables">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
+<br/>
+
+<span class="small">#tables</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Table`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`Table`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`get`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`grow`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`length`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`set`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+## See also
+
+-   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+-   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+-   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table</a>
+
+# Math.tan()
+
+The `Math.tan()` function returns the tangent of a number.
+
+## Syntax
+
+    Math.tan(x)
+
+### Parameters
+
+`x`
+A number representing an angle in radians.
+
+### Return value
+
+The tangent of the given number.
+
+## Description
+
+The `Math.tan()` method returns a numeric value that represents the tangent of the angle.
+
+Because `tan()` is a static method of `Math`, you always use it as `Math.tan()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.tan()
+
+    Math.tan(1); // 1.5574077246549023
+
+Because the `Math.tan()` function accepts radians, but it is often easier to work with degrees, the following function accepts a value in degrees, converts it to radians and returns the tangent.
+
+    function getTanDeg(deg) {
+      var rad = deg * Math.PI/180;
+      return Math.tan(rad);
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tan">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.tan</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`tan`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.acos()`](acos)
+-   [`Math.asin()`](asin)
+-   [`Math.atan()`](atan)
+-   [`Math.atan2()`](atan2)
+-   [`Math.cos()`](cos)
+-   [`Math.sin()`](sin)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan</a>
+
+# Math.tanh()
+
+The `Math.tanh()` function returns the hyperbolic tangent of a number, that is
+
+$$\\tanh x = \\frac{\\sinh x}{\\cosh x} = \\frac{e^{x} - e^{- x}}{e^{x} + e^{- x}} = \\frac{e^{2x} - 1}{e^{2x} + 1}$$
+
+## Syntax
+
+    Math.tanh(x)
+
+### Parameters
+
+`x`
+A number.
+
+### Return value
+
+The hyperbolic tangent of the given number.
+
+## Description
+
+Because `tanh()` is a static method of `Math`, you always use it as `Math.tanh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Polyfill
+
+This can be emulated with the help of the [`Math.exp()`](exp) function:
+
+    Math.tanh = Math.tanh || function(x){
+        var a = Math.exp(+x), b = Math.exp(-x);
+        return a == Infinity ? 1 : b == Infinity ? -1 : (a - b) / (a + b);
+    }
+
+## Examples
+
+### Using Math.tanh()
+
+    Math.tanh(0);        // 0
+    Math.tanh(Infinity); // 1
+    Math.tanh(1);        // 0.7615941559557649
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.tanh">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.tanh</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`tanh`
+
+38
+
+12
+
+25
+
+No
+
+25
+
+8
+
+38
+
+38
+
+25
+
+25
+
+8
+
+3.0
+
+## See also
+
+-   [`Math.acosh()`](acosh)
+-   [`Math.asinh()`](asinh)
+-   [`Math.atanh()`](atanh)
+-   [`Math.cosh()`](cosh)
+-   [`Math.sinh()`](sinh)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh</a>
+
+# Template literals (Template strings)
+
+Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+
+They were called "template strings" in prior editions of the ES2015 specification.
+
+## Syntax
+
+    `string text`
+
+    `string text line 1
+     string text line 2`
+
+    `string text ${expression} string text`
+
+    tag`string text ${expression} string text`
+
+## Description
+
+Template literals are enclosed by the backtick (\` \`) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) character instead of double or single quotes.
+
+Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (`${expression}`). The expressions in the placeholders and the text between the backticks (\` \`) get passed to a function.
+
+The default function just concatenates the parts into a single string. If there is an expression preceding the template literal (`tag` here), this is called a _tagged template_. In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
+
+To escape a backtick in a template literal, put a backslash (`\`) before the backtick.
+
+    `\`` === '`' // --> true
+
+### Multi-line strings
+
+Any newline characters inserted in the source are part of the template literal.
+
+Using normal strings, you would have to use the following syntax in order to get multi-line strings:
+
+    console.log('string text line 1\n' +
+    'string text line 2');
+    // "string text line 1
+    // string text line 2"
+
+Using template literals, you can do the same like this:
+
+    console.log(`string text line 1
+    string text line 2`);
+    // "string text line 1
+    // string text line 2"
+
+### Expression interpolation
+
+In order to embed expressions within normal strings, you would use the following syntax:
+
+    let a = 5;
+    let b = 10;
+    console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
+    // "Fifteen is 15 and
+    // not 20."
+
+Now, with template literals, you are able to make use of the syntactic sugar, making substitutions like this more readable:
+
+    let a = 5;
+    let b = 10;
+    console.log(`Fifteen is ${a + b} and
+    not ${2 * a + b}.`);
+    // "Fifteen is 15 and
+    // not 20."
+
+### Nesting templates
+
+In certain cases, nesting a template is the easiest (and perhaps more readable) way to have configurable strings. Within a backticked template, it is simple to allow inner backticks by using them inside a placeholder `${ }` within the template.
+
+For instance, if condition a is `true`, then `return` this templated literal.
+
+In ES5:
+
+    let classes = 'header';
+    classes += (isLargeScreen() ?
+      '' : item.isCollapsed ?
+        ' icon-expander' : ' icon-collapser');
+
+In ES2015 with template literals and without nesting:
+
+    const classes = `header ${ isLargeScreen() ? '' :
+      (item.isCollapsed ? 'icon-expander' : 'icon-collapser') }`;
+
+In ES2015 with nested template literals:
+
+    const classes = `header ${ isLargeScreen() ? '' :
+      `icon-${item.isCollapsed ? 'expander' : 'collapser'}` }`;
+
+### Tagged templates
+
+A more advanced form of template literals are _tagged_ templates.
+
+Tags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.
+
+The tag function can then perform whatever operations on these arguments you wish, and return the manipulated string. (Alternatively, it can return something completely different, as described in one of the following examples.)
+
+The name of the function used for the tag can be whatever you want.
+
+    let person = 'Mike';
+    let age = 28;
+
+    function myTag(strings, personExp, ageExp) {
+      let str0 = strings[0]; // "That "
+      let str1 = strings[1]; // " is a "
+      let str2 = strings[2]; // "."
+
+      let ageStr;
+      if (ageExp > 99){
+        ageStr = 'centenarian';
+      } else {
+        ageStr = 'youngster';
+      }
+
+      // We can even return a string built using a template literal
+      return `${str0}${personExp}${str1}${ageStr}${str2}`;
+    }
+
+    let output = myTag`That ${ person } is a ${ age }.`;
+
+    console.log(output);
+    // That Mike is a youngster.
+
+Tag functions don't even need to return a string!
+
+    function template(strings, ...keys) {
+      return (function(...values) {
+        let dict = values[values.length - 1] || {};
+        let result = [strings[0]];
+        keys.forEach(function(key, i) {
+          let value = Number.isInteger(key) ? values[key] : dict[key];
+          result.push(value, strings[i + 1]);
+        });
+        return result.join('');
+      });
+    }
+
+    let t1Closure = template`${0}${1}${0}!`;
+    //let t1Closure = template(["","","","!"],0,1,0);
+    t1Closure('Y', 'A');                      // "YAY!"
+
+    let t2Closure = template`${0}${'foo'}!`;
+    //let t2Closure = template([""," ","!"],0,"foo");
+    t2Closure('Hello', {foo: 'World'}); // "Hello World!"
+
+    let t3Closure = template`I'm ${'name'}. I'm almost ${'age'} years old.`;
+    //let t3Closure = template(["I'm ", ". I'm almost ", " years old."], "name", "age");
+    t3Closure('foo', {name: 'MDN', age: 30}); //"I'm MDN. I'm almost 30 years old."
+    t3Closure({name: 'MDN', age: 30}); //"I'm MDN. I'm almost 30 years old."
+
+### Raw strings
+
+The special `raw` property, available on the first argument to the tag function, allows you to access the raw strings as they were entered, without processing [escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#using_special_characters_in_strings).
+
+    function tag(strings) {
+      console.log(strings.raw[0]);
+    }
+
+    tag`string text line 1 \n string text line 2`;
+    // logs "string text line 1 \n string text line 2" ,
+    // including the two characters '\' and 'n'
+
+In addition, the [`String.raw()`](global_objects/string/raw) method exists to create raw strings—just like the default template function and string concatenation would create.
+
+    let str = String.raw`Hi\n${2+3}!`;
+    // "Hi\n5!"
+
+    str.length;
+    // 6
+
+    Array.from(str).join(',');
+    // "H,i,\,n,5,!"
+
+### Tagged templates and escape sequences
+
+#### ES2016 behavior
+
+As of ECMAScript 2016, tagged templates conform to the rules of the following escape sequences:
+
+-   Unicode escapes started by "`\u`", for example `\u00A9`
+-   Unicode code point escapes indicated by "`\u{}`", for example `\u{2F804}`
+-   Hexadecimal escapes started by "`\x`", for example `\xA9`
+-   Octal literal escapes started by "`\0o`" and followed by one or more digits, for example `\0o251`
+
+This means that a tagged template like the following is problematic, because, per ECMAScript grammar, a parser looks for valid Unicode escape sequences, but finds malformed syntax:
+
+    latex`\unicode`
+    // Throws in older ECMAScript versions (ES2016 and earlier)
+    // SyntaxError: malformed Unicode character escape sequence
+
+#### ES2018 revision of illegal escape sequences
+
+Tagged templates should allow the embedding of languages (for example [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language), or [LaTeX](https://en.wikipedia.org/wiki/LaTeX)), where other escapes sequences are common. The ECMAScript proposal [Template Literal Revision](https://tc39.github.io/proposal-template-literal-revision/) (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.
+
+However, illegal escape sequences must still be represented in the "cooked” representation. They will show up as [`undefined`](global_objects/undefined) element in the "cooked” array:
+
+    function latex(str) {
+      return { "cooked": str[0], "raw": str.raw[0] }
+    }
+
+    latex`\unicode`
+
+    // { cooked: undefined, raw: "\\unicode" }
+
+Note that the escape sequence restriction is only dropped from _tagged_ templates—not from _untagged_ template literals:
+
+    let bad = `bad escape sequence: \unicode`;
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-template-literals">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-template-literals</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Template_literals`
+
+41
+
+12
+
+34
+
+No
+
+28
+
+9
+
+41
+
+41
+
+34
+
+28
+
+9
+
+4.0
+
+`template_literal_revision`
+
+62
+
+79
+
+53
+
+No
+
+49
+
+11
+
+62
+
+62
+
+53
+
+46
+
+11
+
+8.0
+
+## See also
+
+-   [`String`](global_objects/string)
+-   [`String.raw()`](global_objects/string/raw)
+-   [Lexical grammar](lexical_grammar)
+-   [Template-like strings in ES3 compatible syntax](https://gist.github.com/WebReflection/8f227532143e63649804)
+-   ["ES6 in Depth: Template strings" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a>
+
+# RegExp.prototype.test()
+
+The `test()` method executes a search for a match between a regular expression and a specified string. Returns `true` or `false`.
+
+## Syntax
+
+    test(str)
+
+### Parameters
+
+`str`
+The string against which to match the regular expression.
+
+### Returns
+
+`true` if there is a match between the regular expression and the string `str`. Otherwise, `false`.
+
+## Description
+
+Use `test()` whenever you want to know whether a pattern is found in a string. `test()` returns a boolean, unlike the [`String.prototype.search()`](../string/search) method (which returns the index of a match, or `-1` if not found).
+
+To get more information (but with slower execution), use the [`exec()`](exec) method. (This is similar to the [`String.prototype.match()`](../string/match) method.)
+
+As with `exec()` (or in combination with it), `test()` called multiple times on the same global regular expression instance will advance past the previous match.
+
+## Examples
+
+### Using test()
+
+Simple example that tests if "`hello`" is contained at the very beginning of a string, returning a boolean result.
+
+    const str = 'hello world!';
+    const result = /^hello/.test(str);
+
+    console.log(result); // true
+
+The following example logs a message which depends on the success of the test:
+
+    function testInput(re, str) {
+      let midstring;
+      if (re.test(str)) {
+        midstring = 'contains';
+      } else {
+        midstring = 'does not contain';
+      }
+      console.log(`${str}${midstring}${re.source}`);
+    }
+
+### Using test() on a regex with the "global" flag
+
+When a regex has the [global flag](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2) set, `test()` will advance the [`lastIndex`](lastindex) of the regex. ([`RegExp.prototype.exec()`](exec) also advances the `lastIndex` property.)
+
+Further calls to `test(str)` will resume searching `str` starting from `lastIndex`. The `lastIndex` property will continue to increase each time `test()` returns `true`.
+
+**Note:** As long as `test()` returns `true`, `lastIndex` will _not_ reset—even when testing a different string!
+
+When `test()` returns `false`, the calling regex's `lastIndex` property will reset to `0`.
+
+The following example demonstrates this behavior:
+
+    const regex = /foo/g; // the "global" flag is set
+
+    // regex.lastIndex is at 0
+    regex.test('foo')     // true
+
+    // regex.lastIndex is now at 3
+    regex.test('foo')     // false
+
+    // regex.lastIndex is at 0
+    regex.test('barfoo')  // true
+
+    // regex.lastIndex is at 6
+    regex.test('foobar')  //false
+
+    // regex.lastIndex is at 0
+    // (...and so on)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.test">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-regexp.prototype.test</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`test`
+
+1
+
+12
+
+1
+
+4
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+-   [`RegExp`](../regexp)
+-   [`RegExp.prototype`](../regexp)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test</a>
+
+# Promise.prototype.then()
+
+The `then()` method returns a [`Promise`](../promise). It takes up to two arguments: callback functions for the success and failure cases of the `Promise`.
+
+**Note:** If one or both arguments are omitted or are provided non-functions, then `then` will be missing the handler(s), but will not generate any errors. If the `Promise` that `then` is called on adopts a state (`fulfillment` or `rejection`) for which `then` has no handler, the returned promise adopts the final state of the original `Promise` on which `then` was called.
+
+## Syntax
+
+    p.then(onFulfilled[, onRejected]);
+
+    p.then(value => {
+      // fulfillment
+    }, reason => {
+      // rejection
+    });
+
+### Parameters
+
+`onFulfilled` <span class="badge inline optional">Optional</span>
+A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an "Identity" function (it returns the received argument).
+
+`onRejected` <span class="badge inline optional">Optional</span>
+A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a "Thrower" function (it throws an error it received as argument).
+
+### Return value
+
+Once a [`Promise`](../promise) is fulfilled or rejected, the respective handler function (`onFulfilled` or `onRejected`) will be called **asynchronously** (scheduled in the current thread loop). The behavior of the handler function follows a specific set of rules. If a handler function:
+
+-   returns a value, the promise returned by `then` gets resolved with the returned value as its value.
+-   doesn't return anything, the promise returned by `then` gets resolved with an `undefined` value.
+-   throws an error, the promise returned by `then` gets rejected with the thrown error as its value.
+-   returns an already fulfilled promise, the promise returned by `then` gets fulfilled with that promise's value as its value.
+-   returns an already rejected promise, the promise returned by `then` gets rejected with that promise's value as its value.
+-   returns another **pending** promise object, the resolution/rejection of the promise returned by `then` will be subsequent to the resolution/rejection of the promise returned by the handler. Also, the resolved value of the promise returned by `then` will be the same as the resolved value of the promise returned by the handler.
+
+Following, an example to demonstrate the asynchronicity of the `then` method.
+
+    // using a resolved promise, the 'then' block will be triggered instantly,
+    // but its handlers will be triggered asynchronously as demonstrated by the console.logs
+    const resolvedProm = Promise.resolve(33);
+
+    let thenProm = resolvedProm.then(value => {
+        console.log("this gets called after the end of the main stack. the value received and returned is: " + value);
+        return value;
+    });
+    // instantly logging the value of thenProm
+    console.log(thenProm);
+
+    // using setTimeout we can postpone the execution of a function to the moment the stack is empty
+    setTimeout(() => {
+        console.log(thenProm);
+    });
+
+    // logs, in order:
+    // Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+    // "this gets called after the end of the main stack. the value received and returned is: 33"
+    // Promise {[[PromiseStatus]]: "resolved", [[PromiseValue]]: 33}
+
+## Description
+
+As the `then` and [`Promise.prototype.catch()`](catch) methods return promises, they [can be chained](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#chaining) — an operation called _composition_.
+
+## Examples
+
+### Using the `then` method
+
+    var p1 = new Promise((resolve, reject) => {
+      resolve('Success!');
+      // or
+      // reject(new Error("Error!"));
+    });
+
+    p1.then(value => {
+      console.log(value); // Success!
+    }, reason => {
+      console.error(reason); // Error!
+    });
+
+### Chaining
+
+The `then` method returns a `Promise` which allows for method chaining.
+
+If the function passed as handler to `then` returns a `Promise`, an equivalent `Promise` will be exposed to the subsequent `then` in the method chain. The below snippet simulates asynchronous code with the `setTimeout` function.
+
+    Promise.resolve('foo')
+      // 1. Receive "foo", concatenate "bar" to it, and resolve that to the next then
+      .then(function(string) {
+        return new Promise(function(resolve, reject) {
+          setTimeout(function() {
+            string += 'bar';
+            resolve(string);
+          }, 1);
+        });
+      })
+      // 2. receive "foobar", register a callback function to work on that string
+      // and print it to the console, but not before returning the unworked on
+      // string to the next then
+      .then(function(string) {
+        setTimeout(function() {
+          string += 'baz';
+          console.log(string); // foobarbaz
+        }, 1)
+        return string;
+      })
+      // 3. print helpful messages about how the code in this section will be run
+      // before the string is actually processed by the mocked asynchronous code in the
+      // previous then block.
+      .then(function(string) {
+        console.log("Last Then:  oops... didn't bother to instantiate and return " +
+                    "a promise in the prior then so the sequence may be a bit " +
+                    "surprising");
+
+        // Note that `string` will not have the 'baz' bit of it at this point. This
+        // is because we mocked that to happen asynchronously with a setTimeout function
+        console.log(string); // foobar
+      });
+
+    // logs, in order:
+    // Last Then: oops... didn't bother to instantiate and return a promise in the prior then so the sequence may be a bit surprising
+    // foobar
+    // foobarbaz
+
+When a value is returned from within a `then` handler, it will effectively return `Promise.resolve(<value returned by whichever handler was called>)`.
+
+    var p2 = new Promise(function(resolve, reject) {
+      resolve(1);
+    });
+
+    p2.then(function(value) {
+      console.log(value); // 1
+      return value + 1;
+    }).then(function(value) {
+      console.log(value + ' - A synchronous value works'); // 2 - A synchronous value works
+    });
+
+    p2.then(function(value) {
+      console.log(value); // 1
+    });
+
+A `then` call will return a rejected promise if the function throws an error or returns a rejected Promise.
+
+    Promise.resolve()
+      .then(() => {
+        // Makes .then() return a rejected promise
+        throw new Error('Oh no!');
+      })
+      .then(() => {
+        console.log('Not called.');
+      }, error => {
+        console.error('onRejected function called: ' + error.message);
+      });
+
+In all other cases, a resolving Promise is returned. In the following example, the first `then()` will return `42` wrapped in a resolving Promise even though the previous Promise in the chain was rejected.
+
+    Promise.reject()
+      .then(() => 99, () => 42) // onRejected returns 42 which is wrapped in a resolving Promise
+      .then(solution => console.log('Resolved with ' + solution)); // Resolved with 42
+
+In practice, it is often desirable to catch rejected promises rather than use `then`'s two case syntax, as demonstrated below.
+
+    Promise.resolve()
+      .then(() => {
+        // Makes .then() return a rejected promise
+        throw new Error('Oh no!');
+      })
+      .catch(error => {
+        console.error('onRejected function called: ' + error.message);
+      })
+      .then(() => {
+        console.log("I am always called even if the prior then's promise rejects");
+      });
+
+You can also use chaining to implement one function with a Promise-based API on top of another such function.
+
+    function fetch_current_data() {
+      // The fetch() API returns a Promise.  This function
+      // exposes a similar API, except the fulfillment
+      // value of this function's Promise has had more
+      // work done on it.
+      return fetch('current-data.json').then(response => {
+        if (response.headers.get('content-type') != 'application/json') {
+          throw new TypeError();
+        }
+        var j = response.json();
+        // maybe do something with j
+        return j; // fulfillment value given to user of
+                  // fetch_current_data().then()
+      });
+    }
+
+If `onFulfilled` returns a promise, the return value of `then` will be resolved/rejected by the promise.
+
+    function resolveLater(resolve, reject) {
+      setTimeout(function() {
+        resolve(10);
+      }, 1000);
+    }
+    function rejectLater(resolve, reject) {
+      setTimeout(function() {
+        reject(new Error('Error'));
+      }, 1000);
+    }
+
+    var p1 = Promise.resolve('foo');
+    var p2 = p1.then(function() {
+      // Return promise here, that will be resolved to 10 after 1 second
+      return new Promise(resolveLater);
+    });
+    p2.then(function(v) {
+      console.log('resolved', v);  // "resolved", 10
+    }, function(e) {
+      // not called
+      console.error('rejected', e);
+    });
+
+    var p3 = p1.then(function() {
+      // Return promise here, that will be rejected with 'Error' after 1 second
+      return new Promise(rejectLater);
+    });
+    p3.then(function(v) {
+      // not called
+      console.log('resolved', v);
+    }, function(e) {
+      console.error('rejected', e); // "rejected", 'Error'
+    });
+
+### window.setImmediate style promise-based polyfill
+
+Using a [`Function.prototype.bind()`](../function/bind) `Reflect.apply` ([`Reflect.apply()`](../reflect/apply)) method to create a (non-cancellable) [`window.setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate)-style function.
+
+    const nextTick = (() => {
+      const noop = () => {}; // literally
+      const nextTickPromise = () => Promise.resolve().then(noop);
+
+      const rfab = Reflect.apply.bind; // (thisArg, fn, thisArg, [...args])
+      const nextTick = (fn, ...args) => (
+        fn !== undefined
+        ? Promise.resolve(args).then(rfab(null, fn, null))
+        : nextTickPromise(),
+        undefined
+      );
+      nextTick.ntp = nextTickPromise;
+
+      return nextTick;
+    })();
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.then">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-promise.prototype.then</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`then`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [`Promise`](../promise)
+-   [`Promise.prototype.catch()`](catch)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a>
+
+# this
+
+A `this` behaves a little differently in JavaScript compared to other languages. It also has some differences between [strict mode](../strict_mode) and non-strict mode.
+
+In most cases, the value of `this` is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. ES5 introduced the [`bind()`](../global_objects/function/bind) method to [set the value of a function's `this` regardless of how it's called](#The_bind_method), and ES2015 introduced [arrow functions](../functions/arrow_functions) which don't provide their own `this` binding (it retains the `this` value of the enclosing lexical context).
+
+## Syntax
+
+    this
+
+### Value
+
+A property of an execution context (global, function or eval) that, in non–strict mode, is always a reference to an object and in strict mode can be any value.
+
+## Description
+
+### Global context
+
+In the global execution context (outside of any function), `this` refers to the global object whether in strict mode or not.
+
+    // In web browsers, the window object is also the global object:
+    console.log(this === window); // true
+
+    a = 37;
+    console.log(window.a); // 37
+
+    this.b = "MDN";
+    console.log(window.b)  // "MDN"
+    console.log(b)         // "MDN"
+
+**Note:** You can always easily get the global object using the global [`globalThis`](../global_objects/globalthis) property, regardless of the current context in which your code is running.
+
+### Function context
+
+Inside a function, the value of `this` depends on how the function is called.
+
+Since the following code is not in [strict mode](../strict_mode), and because the value of `this` is not set by the call, `this` will default to the global object, which is [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) in a browser.
+
+    function f1() {
+      return this;
+    }
+
+    // In a browser:
+    f1() === window; // true
+
+    // In Node:
+    f1() === globalThis; // true
+
+In strict mode, however, if the value of `this` is not set when entering an execution context, it remains as `undefined`, as shown in the following example:
+
+    function f2() {
+      'use strict'; // see strict mode
+      return this;
+    }
+
+    f2() === undefined; // true
+
+**Note:** In the second example, `this` should be [`undefined`](../global_objects/undefined), because `f2` was called directly and not as a method or property of an object (e.g. `window.f2()`). This feature wasn't implemented in some browsers when they first started to support [strict mode](../strict_mode). As a result, they incorrectly returned the `window` object.
+
+To set the value of `this` to a particular value when calling a function, use [`call()`](../global_objects/function/call), or [`apply()`](../global_objects/function/apply) as in the examples below.
+
+### Class context
+
+The behavior of `this` in [classes](../classes) and functions is similar, since classes are functions under the hood. But there are some differences and caveats.
+
+Within a class constructor, `this` is a regular object. All non-static methods within the class are added to the prototype of `this`:
+
+    class Example {
+      constructor() {
+        const proto = Object.getPrototypeOf(this);
+        console.log(Object.getOwnPropertyNames(proto));
+      }
+      first(){}
+      second(){}
+      static third(){}
+    }
+
+    new Example(); // ['constructor', 'first', 'second']
+
+**Note:** Static methods are not properties of `this`. They are properties of the class itself.
+
+### Derived classes
+
+Unlike base class constructors, derived constructors have no initial `this` binding. Calling [`super()`](super) creates a `this` binding within the constructor and essentially has the effect of evaluating the following line of code, where Base is the inherited class:
+
+    this = new Base();
+
+**Warning:** Referring to `this` before calling `super()` will throw an error.
+
+Derived classes must not return before calling `super()`, unless they return an `Object` or have no constructor at all.
+
+    class Base {}
+    class Good extends Base {}
+    class AlsoGood extends Base {
+      constructor() {
+        return {a: 5};
+      }
+    }
+    class Bad extends Base {
+      constructor() {}
+    }
+
+    new Good();
+    new AlsoGood();
+    new Bad(); // ReferenceError
+
+## Examples
+
+### this in function contexts
+
+    // An object can be passed as the first argument to call or apply and this will be bound to it.
+    var obj = {a: 'Custom'};
+
+    // We declare a variable and the variable is assigned to the global window as its property.
+    var a = 'Global';
+
+    function whatsThis() {
+      return this.a;  // The value of this is dependent on how the function is called
+    }
+
+    whatsThis();          // 'Global' as this in the function isn't set, so it defaults to the global/window object
+    whatsThis.call(obj);  // 'Custom' as this in the function is set to obj
+    whatsThis.apply(obj); // 'Custom' as this in the function is set to obj
+
+### this and object conversion
+
+    function add(c, d) {
+      return this.a + this.b + c + d;
+    }
+
+    var o = {a: 1, b: 3};
+
+    // The first parameter is the object to use as
+    // 'this', subsequent parameters are passed as
+    // arguments in the function call
+    add.call(o, 5, 7); // 16
+
+    // The first parameter is the object to use as
+    // 'this', the second is an array whose
+    // members are used as the arguments in the function call
+    add.apply(o, [10, 20]); // 34
+
+Note that in non–strict mode, with `call` and `apply`, if the value passed as `this` is not an object, an attempt will be made to convert it to an object. Values `null` and `undefined` become the global object. Primitives like `7` or `'foo'` will be converted to an Object using the related constructor, so the primitive number `7` is converted to an object as if by `new Number(7)` and the string `'foo'` to an object as if by `new String('foo')`, e.g.
+
+    function bar() {
+      console.log(Object.prototype.toString.call(this));
+    }
+
+    bar.call(7);     // [object Number]
+    bar.call('foo'); // [object String]
+    bar.call(undefined); // [object global]
+
+### The `bind` method
+
+ECMAScript 5 introduced [`Function.prototype.bind()`](../global_objects/function/bind). Calling `f.bind(someObject)` creates a new function with the same body and scope as `f`, but where `this` occurs in the original function, in the new function it is permanently bound to the first argument of `bind`, regardless of how the function is being used.
+
+    function f() {
+      return this.a;
+    }
+
+    var g = f.bind({a: 'azerty'});
+    console.log(g()); // azerty
+
+    var h = g.bind({a: 'yoo'}); // bind only works once!
+    console.log(h()); // azerty
+
+    var o = {a: 37, f: f, g: g, h: h};
+    console.log(o.a, o.f(), o.g(), o.h()); // 37,37, azerty, azerty
+
+### Arrow functions
+
+In [arrow functions](../functions/arrow_functions), `this` retains the value of the enclosing lexical context's `this`. In global code, it will be set to the global object:
+
+    var globalObject = this;
+    var foo = (() => this);
+    console.log(foo() === globalObject); // true
+
+**Note:** If `this` arg is passed to `call`, `bind`, or `apply` on invocation of an arrow function it will be ignored. You can still prepend arguments to the call, but the first argument (`thisArg`) should be set to `null`.
+
+    // Call as a method of an object
+    var obj = {func: foo};
+    console.log(obj.func() === globalObject); // true
+
+    // Attempt to set this using call
+    console.log(foo.call(obj) === globalObject); // true
+
+    // Attempt to set this using bind
+    foo = foo.bind(obj);
+    console.log(foo() === globalObject); // true
+
+No matter what, `foo`'s `this` is set to what it was when it was created (in the example above, the global object). The same applies to arrow functions created inside other functions: their `this` remains that of the enclosing lexical context.
+
+    // Create obj with a method bar that returns a function that
+    // returns its this. The returned function is created as
+    // an arrow function, so its this is permanently bound to the
+    // this of its enclosing function. The value of bar can be set
+    // in the call, which in turn sets the value of the
+    // returned function.
+    var obj = {
+      bar: function() {
+        var x = (() => this);
+        return x;
+      }
+    };
+
+    // Call bar as a method of obj, setting its this to obj
+    // Assign a reference to the returned function to fn
+    var fn = obj.bar();
+
+    // Call fn without setting this, would normally default
+    // to the global object or undefined in strict mode
+    console.log(fn() === obj); // true
+
+    // But caution if you reference the method of obj without calling it
+    var fn2 = obj.bar;
+    // Calling the arrow function's this from inside the bar method()
+    // will now return window, because it follows the this from fn2.
+    console.log(fn2()() == window); // true
+
+In the above, the function (call it anonymous function A) assigned to `obj.bar` returns another function (call it anonymous function B) that is created as an arrow function. As a result, function B's `this` is permanently set to the `this` of `obj.bar` (function A) when called. When the returned function (function B) is called, its `this` will always be what it was set to initially. In the above code example, function B's `this` is set to function A's `this` which is `obj`, so it remains set to `obj` even when called in a manner that would normally set its `this` to `undefined` or the global object (or any other method as in the previous example in the global execution context).
+
+### As an object method
+
+When a function is called as a method of an object, its `this` is set to the object the method is called on.
+
+In the following example, when `o.f()` is invoked, inside the function `this` is bound to the `o` object.
+
+    var o = {
+      prop: 37,
+      f: function() {
+        return this.prop;
+      }
+    };
+
+    console.log(o.f()); // 37
+
+Note that this behavior is not at all affected by how or where the function was defined. In the previous example, we defined the function inline as the `f` member during the definition of `o`. However, we could have just as easily defined the function first and later attached it to `o.f`. Doing so results in the same behavior:
+
+    var o = {prop: 37};
+
+    function independent() {
+      return this.prop;
+    }
+
+    o.f = independent;
+
+    console.log(o.f()); // 37
+
+This demonstrates that it matters only that the function was invoked from the `f` member of `o`.
+
+Similarly, the `this` binding is only affected by the most immediate member reference. In the following example, when we invoke the function, we call it as a method `g` of the object `o.b`. This time during execution, `this` inside the function will refer to `o.b`. The fact that the object is itself a member of `o` has no consequence; the most immediate reference is all that matters.
+
+    o.b = {g: independent, prop: 42};
+    console.log(o.b.g()); // 42
+
+#### `this` on the object's prototype chain
+
+The same notion holds true for methods defined somewhere on the object's prototype chain. If the method is on an object's prototype chain, `this` refers to the object the method was called on, as if the method were on the object.
+
+    var o = {f: function() { return this.a + this.b; }};
+    var p = Object.create(o);
+    p.a = 1;
+    p.b = 4;
+
+    console.log(p.f()); // 5
+
+In this example, the object assigned to the variable `p` doesn't have its own `f` property, it inherits it from its prototype. But it doesn't matter that the lookup for `f` eventually finds a member with that name on `o`; the lookup began as a reference to `p.f`, so `this` inside the function takes the value of the object referred to as `p`. That is, since `f` is called as a method of `p`, its `this` refers to `p`. This is an interesting feature of JavaScript's prototype inheritance.
+
+#### `this` with a getter or setter
+
+Again, the same notion holds true when a function is invoked from a getter or a setter. A function used as getter or setter has its `this` bound to the object from which the property is being set or gotten.
+
+    function sum() {
+      return this.a + this.b + this.c;
+    }
+
+    var o = {
+      a: 1,
+      b: 2,
+      c: 3,
+      get average() {
+        return (this.a + this.b + this.c) / 3;
+      }
+    };
+
+    Object.defineProperty(o, 'sum', {
+        get: sum, enumerable: true, configurable: true});
+
+    console.log(o.average, o.sum); // 2, 6
+
+### As a constructor
+
+When a function is used as a constructor (with the [`new`](new) keyword), its `this` is bound to the new object being constructed.
+
+**Note:** While the default for a constructor is to return the object referenced by `this`, it can instead return some other object (if the return value isn't an object, then the `this` object is returned).
+
+    /*
+     * Constructors work like this:
+     *
+     * function MyConstructor(){
+     *   // Actual function body code goes here.
+     *   // Create properties on |this| as
+     *   // desired by assigning to them.  E.g.,
+     *   this.fum = "nom";
+     *   // et cetera...
+     *
+     *   // If the function has a return statement that
+     *   // returns an object, that object will be the
+     *   // result of the |new| expression.  Otherwise,
+     *   // the result of the expression is the object
+     *   // currently bound to |this|
+     *   // (i.e., the common case most usually seen).
+     * }
+     */
+
+    function C() {
+      this.a = 37;
+    }
+
+    var o = new C();
+    console.log(o.a); // 37
+
+    function C2() {
+      this.a = 37;
+      return {a: 38};
+    }
+
+    o = new C2();
+    console.log(o.a); // 38
+
+In the last example (`C2`), because an object was returned during construction, the new object that `this` was bound to gets discarded. (This essentially makes the statement "`this.a = 37;`" dead code. It's not exactly dead because it gets executed, but it can be eliminated with no outside effects.)
+
+### As a DOM event handler
+
+When a function is used as an event handler, its `this` is set to the element on which the listener is placed (some browsers do not follow this convention for listeners added dynamically with methods other than [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)).
+
+    // When called as a listener, turns the related element blue
+    function bluify(e) {
+      // Always true
+      console.log(this === e.currentTarget);
+      // true when currentTarget and target are the same object
+      console.log(this === e.target);
+      this.style.backgroundColor = '#A5D9F3';
+    }
+
+    // Get a list of every element in the document
+    var elements = document.getElementsByTagName('*');
+
+    // Add bluify as a click listener so when the
+    // element is clicked on, it turns blue
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', bluify, false);
+    }
+
+### In an inline event handler
+
+When the code is called from an inline [on-event handler](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers), its `this` is set to the DOM element on which the listener is placed:
+
+    <button onclick="alert(this.tagName.toLowerCase());">
+      Show this
+    </button>
+
+The above alert shows `button`. Note however that only the outer code has its `this` set this way:
+
+    <button onclick="alert((function() { return this; })());">
+      Show inner this
+    </button>
+
+In this case, the inner function's `this` isn't set so it returns the global/window object (i.e. the default object in non–strict mode where `this` isn't set by the call).
+
+### this in classes
+
+Just like with regular functions, the value of `this` within methods depends on how they are called. Sometimes it is useful to override this behavior so that `this` within classes always refers to the class instance. To achieve this, bind the class methods in the constructor:
+
+    class Car {
+      constructor() {
+        // Bind sayBye but not sayHi to show the difference
+        this.sayBye = this.sayBye.bind(this);
+      }
+      sayHi() {
+        console.log(`Hello from ${this.name}`);
+      }
+      sayBye() {
+        console.log(`Bye from ${this.name}`);
+      }
+      get name() {
+        return 'Ferrari';
+      }
+    }
+
+    class Bird {
+      get name() {
+        return 'Tweety';
+      }
+    }
+
+    const car = new Car();
+    const bird = new Bird();
+
+    // The value of 'this' in methods depends on their caller
+    car.sayHi(); // Hello from Ferrari
+    bird.sayHi = car.sayHi;
+    bird.sayHi(); // Hello from Tweety
+
+    // For bound methods, 'this' doesn't depend on the caller
+    bird.sayBye = car.sayBye;
+    bird.sayBye();  // Bye from Ferrari
+
+**Note:** Classes are always strict mode code. Calling methods with an undefined `this` will throw an error.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-this-keyword">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'The this keyword' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`this`
+
+1
+
+12
+
+1
+
+4
+
+9.5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Strict mode](../strict_mode)
+-   [Gentle explanation of 'this' keyword in JavaScript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+-   Getting the global context: [`globalThis`](../global_objects/globalthis)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a>
+
+# throw
+
+The `throw` throws a user-defined exception. Execution of the current function will stop (the statements after `throw` won't be executed), and control will be passed to the first [`catch`](try...catch) block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
+
+## Syntax
+
+    throw expression;
+
+`expression`
+The expression to throw.
+
+## Description
+
+Use the `throw` statement to throw an exception. When you throw an exception, `expression` specifies the value of the exception. Each of the following throws an exception:
+
+    throw 'Error2'; // generates an exception with a string value
+    throw 42;       // generates an exception with the value 42
+    throw true;     // generates an exception with the value true
+    throw new Error('Required');  // generates an error object with the message of Required
+
+Also note that the `throw` statement is affected by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion) as no line terminator between the `throw` keyword and the expression is allowed.
+
+## Examples
+
+### Throw an object
+
+You can specify an object when you throw an exception. You can then reference the object's properties in the `catch` block. The following example creates an object of type `UserException` and uses it in a `throw` statement.
+
+    function UserException(message) {
+      this.message = message;
+      this.name = 'UserException';
+    }
+    function getMonthName(mo) {
+      mo = mo - 1; // Adjust month number for array index (1 = Jan, 12 = Dec)
+      var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
+        'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      if (months[mo] !== undefined) {
+        return months[mo];
+      } else {
+        throw new UserException('InvalidMonthNo');
+      }
+    }
+
+    try {
+      // statements to try
+      var myMonth = 15; // 15 is out of bound to raise the exception
+      var monthName = getMonthName(myMonth);
+    } catch (e) {
+      monthName = 'unknown';
+      console.error(e.message, e.name); // pass exception object to err handler
+    }
+
+### Another example of throwing an object
+
+The following example tests an input string for a U.S. zip code. If the zip code uses an invalid format, the throw statement throws an exception by creating an object of type `ZipCodeFormatException`.
+
+    /*
+     * Creates a ZipCode object.
+     *
+     * Accepted formats for a zip code are:
+     *    12345
+     *    12345-6789
+     *    123456789
+     *    12345 6789
+     *
+     * If the argument passed to the ZipCode constructor does not
+     * conform to one of these patterns, an exception is thrown.
+     */
+
+    function ZipCode(zip) {
+      zip = new String(zip);
+      pattern = /[0-9]{5}([- ]?[0-9]{4})?/;
+      if (pattern.test(zip)) {
+        // zip code value will be the first match in the string
+        this.value = zip.match(pattern)[0];
+        this.valueOf = function() {
+          return this.value
+        };
+        this.toString = function() {
+          return String(this.value)
+        };
+      } else {
+        throw new ZipCodeFormatException(zip);
+      }
+    }
+
+    function ZipCodeFormatException(value) {
+      this.value = value;
+      this.message = 'does not conform to the expected format for a zip code';
+      this.toString = function() {
+        return this.value + this.message;
+      };
+    }
+
+    /*
+     * This could be in a script that validates address data
+     * for US addresses.
+     */
+
+    const ZIPCODE_INVALID = -1;
+    const ZIPCODE_UNKNOWN_ERROR = -2;
+
+    function verifyZipCode(z) {
+      try {
+        z = new ZipCode(z);
+      } catch (e) {
+        if (e instanceof ZipCodeFormatException) {
+          return ZIPCODE_INVALID;
+        } else {
+          return ZIPCODE_UNKNOWN_ERROR;
+        }
+      }
+      return z;
+    }
+
+    a = verifyZipCode(95060);         // returns 95060
+    b = verifyZipCode(9560);          // returns -1
+    c = verifyZipCode('a');           // returns -1
+    d = verifyZipCode('95060');       // returns 95060
+    e = verifyZipCode('95060 1234');  // returns 95060 1234
+
+### Rethrow an exception
+
+You can use `throw` to rethrow an exception after you catch it. The following example catches an exception with a numeric value and rethrows it if the value is over 50. The rethrown exception propagates up to the enclosing function or to the top level so that the user sees it.
+
+    try {
+      throw n; // throws an exception with a numeric value
+    } catch (e) {
+      if (e <= 50) {
+        // statements to handle exceptions 1-50
+      } else {
+        // cannot handle this exception, so rethrow
+        throw e;
+      }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-throw-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-throw-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`throw`
+
+1
+
+12
+
+1
+
+5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`try...catch`](try...catch)
+-   [`Error`](../global_objects/error)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw</a>
+
+# Date.prototype.toDateString()
+
+The `toDateString()` method returns the date portion of a [`Date`](../date) object in English in the following format separated by spaces:
+
+1.  First three letters of the week day name
+2.  First three letters of the month name
+3.  Two digit day of the month, padded on the left a zero if necessary
+4.  Four digit year (at least), padded on the left with zeros if necessary
+
+E.g. "Thu Jan 01 1970".
+
+## Syntax
+
+    toDateString()
+
+### Return value
+
+A string representing the date portion of the given [`Date`](../date) object in human readable form in English.
+
+## Description
+
+[`Date`](../date) instances refer to a specific point in time. Calling [`toString()`](tostring) will return the date formatted in a human readable form in English. In [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), this consists of the date portion (day, month, and year) followed by the time portion (hours, minutes, seconds, and time zone). Sometimes it is desirable to obtain a string of the time portion; such a thing can be accomplished with the `toTimeString()` method.
+
+The `toDateString()` method is especially useful because compliant engines implementing [ECMA-262](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources) may differ in the string obtained from [`toString()`](tostring) for [`Date`](../date) objects, as the format is implementation-dependent and simple string slicing approaches may not produce consistent results across multiple engines.
+
+## Examples
+
+### A basic usage of toDateString()
+
+    var d = new Date(1993, 5, 28, 14, 39, 7);
+
+    console.log(d.toString());     // logs Mon Jun 28 1993 14:39:07 GMT-0600 (PDT)
+    console.log(d.toDateString()); // logs Mon Jun 28 1993
+
+**Note:** Month are 0-indexed when used as an argument of [`Date`](../date) (thus 0 corresponds to January and 11 to December).
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.todatestring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.todatestring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toDateString`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toTimeString()`](totimestring)
+-   [`Date.prototype.toString()`](tostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString</a>
+
+# Number.prototype.toExponential()
+
+The `toExponential()` method returns a string representing the [`Number`](../number) object in exponential notation.
+
+## Syntax
+
+    toExponential()
+    toExponential(fractionDigits)
+
+### Parameters
+
+`fractionDigits` <span class="badge inline optional">Optional</span>
+Optional. An integer specifying the number of digits after the decimal point. Defaults to as many digits as necessary to specify the number.
+
+### Return value
+
+A string representing the given [`Number`](../number) object in exponential notation with one digit before the decimal point, rounded to `fractionDigits` digits after the decimal point.
+
+### Exceptions
+
+[`RangeError`](../rangeerror)
+If `fractionDigits` is too small or too large. Values between `0` and `100`, inclusive, will not cause a [`RangeError`](../rangeerror).
+
+[`TypeError`](../typeerror)
+If this method is invoked on an object that is not a [`Number`](../number).
+
+## Description
+
+If the `fractionDigits` argument is omitted, the number of digits after the decimal point defaults to the number of digits necessary to represent the value uniquely.
+
+If you use the `toExponential()` method for a numeric literal and the numeric literal has no exponent and no decimal point, leave whitespace(s) before the dot that precedes the method call to prevent the dot from being interpreted as a decimal point.
+
+If a number has more digits than requested by the `fractionDigits` parameter, the number is rounded to the nearest number represented by `fractionDigits` digits. See the discussion of rounding in the description of the [`toFixed()`](tofixed) method, which also applies to `toExponential()`.
+
+## Examples
+
+### Using toExponential
+
+    var numObj = 77.1234;
+
+    console.log(numObj.toExponential());  // logs 7.71234e+1
+    console.log(numObj.toExponential(4)); // logs 7.7123e+1
+    console.log(numObj.toExponential(2)); // logs 7.71e+1
+    console.log(77.1234.toExponential()); // logs 7.71234e+1
+    console.log(77 .toExponential());     // logs 7.7e+1
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.toexponential">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-number.prototype.toexponential</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toExponential`
+
+1
+
+12
+
+1
+
+5.5
+
+7
+
+2
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Number.prototype.toFixed()`](tofixed)
+-   [`Number.prototype.toPrecision()`](toprecision)
+-   [`Number.prototype.toString()`](tostring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential</a>
+
+# Number.prototype.toFixed()
+
+The `toFixed()` method formats a number using fixed-point notation.
+
+## Syntax
+
+    toFixed()
+    toFixed(digits)
+
+### Parameters
+
+`digits` <span class="badge inline optional">Optional</span>
+The number of digits to appear after the decimal point; this may be a value between `0` and `20`, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as `0`.
+
+### Return value
+
+A string representing the given number using fixed-point notation.
+
+### Exceptions
+
+[`RangeError`](../rangeerror)
+If `digits` is too small or too large. Values between `0` and `100`, inclusive, will not cause a [`RangeError`](../rangeerror). Implementations are allowed to support larger and smaller values as chosen.
+
+[`TypeError`](../typeerror)
+If this method is invoked on an object that is not a [`Number`](../number).
+
+## Description
+
+`toFixed()` returns a string representation of `numObj` that does not use exponential notation and has exactly `digits` digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If the absolute value of `numObj` is greater or equal to `1e+21`, this method calls [`Number.prototype.toString()`](tostring) and returns a string in exponential notation.
+
+**Warning:** Floating point numbers cannot represent all decimals precisely in binary. This can lead to unexpected results, such as `0.1 + 0.2 === 0.3` returning `false` .
+
+## Examples
+
+### Using toFixed
+
+    let numObj = 12345.6789
+
+    numObj.toFixed()       // Returns '12346': note rounding, no fractional part
+    numObj.toFixed(1)      // Returns '12345.7': note rounding
+    numObj.toFixed(6)      // Returns '12345.678900': note added zeros
+    (1.23e+20).toFixed(2)  // Returns '123000000000000000000.00'
+    (1.23e-10).toFixed(2)  // Returns '0.00'
+    2.34.toFixed(1)        // Returns '2.3'
+    2.35.toFixed(1)        // Returns '2.4'. Note it rounds up
+    2.55.toFixed(1)        // Returns '2.5'. Note it rounds down - see warning above
+    -2.34.toFixed(1)       // Returns -2.3 (due to operator precedence, negative number literals don't return a string...)
+    (-2.34).toFixed(1)     // Returns '-2.3'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.tofixed">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-number.prototype.tofixed</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toFixed`
+
+1
+
+12
+
+1
+
+5.5
+
+7
+
+2
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Number.prototype.toExponential()`](toexponential)
+-   [`Number.prototype.toPrecision()`](toprecision)
+-   [`Number.prototype.toString()`](tostring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed</a>
+
+# Date.prototype.toGMTString()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `toGMTString()` method converts a date to a string, using Internet Greenwich Mean Time (GMT) conventions. The exact format of the value returned by `toGMTString()` varies according to the platform and browser, in general it should represent a human readable date string.
+
+**Note:** `toGMTString()` is deprecated and should no longer be used. It remains implemented only for backward compatibility; please use [`toUTCString()`](toutcstring) instead.
+
+## Syntax
+
+    toGMTString()
+
+### Return value
+
+A string representing the given date following the Internet Greenwich Mean Time (GMT) convention.
+
+## Examples
+
+### Simple example
+
+In this example, the `toGMTString()` method converts the date to GMT (UTC) using the operating system's time-zone offset and returns a string value that is similar to the following form. The exact format depends on the platform.
+
+    var today = new Date();
+    var str = today.toGMTString();  // deprecated! use toUTCString()
+
+    console.log(str);               // Mon, 18 Dec 1995 17:28:35 GMT
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.togmtstring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.togmtstring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toGMTString`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toTimeString()`](totimestring)
+-   [`Date.prototype.toUTCString()`](toutcstring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toGMTString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toGMTString</a>
+
+# Date.prototype.toISOString()
+
+The `toISOString()` method returns a string in _simplified_ extended ISO format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24 or 27 characters long (`YYYY-MM-DDTHH:mm:ss.sssZ` or `±YYYYYY-MM-DDTHH:mm:ss.sssZ`, respectively). The timezone is always zero UTC offset, as denoted by the suffix "`Z`".
+
+## Syntax
+
+    toISOString()
+
+### Return value
+
+A string representing the given date in the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format according to universal time.
+
+## Examples
+
+### Using toISOString()
+
+    let today = new Date('05 October 2011 14:48 UTC')
+
+    console.log(today.toISOString())  // Returns 2011-10-05T14:48:00.000Z
+
+The above example uses parsing of a non–standard string value that may not be correctly parsed in non–Mozilla browsers.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toisostring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.toisostring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toISOString`
+
+3
+
+12
+
+1
+
+9
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+11
+
+4.2
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toTimeString()`](totimestring)
+-   [`Date.prototype.toUTCString()`](toutcstring)
+-   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/date.polyfill.js)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString</a>
+
+# Date.prototype.toJSON()
+
+The `toJSON()` method returns a string representation of the [`Date`](../date) object.
+
+## Syntax
+
+    toJSON()
+
+### Return value
+
+A string representation of the given date.
+
+## Description
+
+[`Date`](../date) instances refer to a specific point in time. Calling `toJSON()` returns a string (using [`toISOString()`](toisostring)) representing the [`Date`](../date) object's value. This method is generally intended to, by default, usefully serialize [`Date`](../date) objects during [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) serialization.
+
+## Examples
+
+### Using toJSON()
+
+    var jsonDate = (new Date()).toJSON();
+    var backToDate = new Date(jsonDate);
+
+    console.log(jsonDate); //2015-10-26T07:46:36.611Z
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tojson">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.tojson</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toJSON`
+
+3
+
+12
+
+1
+
+8
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+11
+
+4.2
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toTimeString()`](totimestring)
+-   [`Date.prototype.toUTCString()`](toutcstring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON</a>
+
+# Date.prototype.toLocaleDateString()
+
+The `toLocaleDateString()` method returns a string with a language sensitive representation of the date portion of this date. The new `locales` and `options` arguments let applications specify the language whose formatting conventions should be used and allow to customize the behavior of the function. In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
+
+## Syntax
+
+    toLocaleDateString()
+    toLocaleDateString(locales)
+    toLocaleDateString(locales, options)
+
+### Parameters
+
+The `locales` and `options` arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
+
+See the [`Intl.DateTimeFormat()`](../intl/datetimeformat/datetimeformat) constructor for details on these parameters and how to use them.
+
+The default value for each date-time component property is [`undefined`](../undefined), but if the `weekday`, `year`, `month`, `day` properties are all [`undefined`](../undefined), then `year`, `month`, and `day` are assumed to be `"numeric"`.
+
+### Return value
+
+A string representing the date portion of the given [`Date`](../date) instance according to language-specific conventions.
+
+## Performance
+
+When formatting large numbers of dates, it is better to create an [`Intl.DateTimeFormat`](../intl/datetimeformat) object and use the function provided by its [`format`](../intl/datetimeformat/format) property.
+
+## Examples
+
+### Using toLocaleDateString()
+
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.
+
+    var date = new Date(Date.UTC(2012, 11, 12, 3, 0, 0));
+
+    // toLocaleDateString() without arguments depends on the implementation,
+    // the default locale, and the default time zone
+    console.log(date.toLocaleDateString());
+    // → "12/11/2012" if run in en-US locale with time zone America/Los_Angeles
+
+### Checking for support for locales and options arguments
+
+The `locales` and `options` arguments are not supported in all browsers yet. To check whether an implementation supports them already, you can use the requirement that illegal language tags are rejected with a [`RangeError`](../rangeerror) exception:
+
+    function toLocaleDateStringSupportsLocales() {
+      try {
+        new Date().toLocaleDateString('i');
+      } catch (e) {
+        return e.name === 'RangeError';
+      }
+      return false;
+    }
+
+### Using locales
+
+This example shows some of the variations in localized date formats. In order to get the format of the language used in the user interface of your application, make sure to specify that language (and possibly some fallback languages) using the `locales` argument:
+
+    var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // formats below assume the local time zone of the locale;
+    // America/Los_Angeles for the US
+
+    // US English uses month-day-year order
+    console.log(date.toLocaleDateString('en-US'));
+    // → "12/19/2012"
+
+    // British English uses day-month-year order
+    console.log(date.toLocaleDateString('en-GB'));
+    // → "20/12/2012"
+
+    // Korean uses year-month-day order
+    console.log(date.toLocaleDateString('ko-KR'));
+    // → "2012. 12. 20."
+
+    // Event for Persian, It's hard to manually convert date to Solar Hijri
+    console.log(date.toLocaleDateString('fa-IR'));
+    // → "۱۳۹۱/۹/۳۰"
+
+    // Arabic in most Arabic speaking countries uses real Arabic digits
+    console.log(date.toLocaleDateString('ar-EG'));
+    // → "٢٠‏/١٢‏/٢٠١٢"
+
+    // for Japanese, applications may want to use the Japanese calendar,
+    // where 2012 was the year 24 of the Heisei era
+    console.log(date.toLocaleDateString('ja-JP-u-ca-japanese'));
+    // → "24/12/20"
+
+    // when requesting a language that may not be supported, such as
+    // Balinese, include a fallback language, in this case Indonesian
+    console.log(date.toLocaleDateString(['ban', 'id']));
+    // → "20/12/2012"
+
+### Using options
+
+The results provided by `toLocaleDateString()` can be customized using the `options` argument:
+
+    var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // request a weekday along with a long date
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    console.log(date.toLocaleDateString('de-DE', options));
+    // → "Donnerstag, 20. Dezember 2012"
+
+    // an application may want to use UTC and make that visible
+    options.timeZone = 'UTC';
+    options.timeZoneName = 'short';
+    console.log(date.toLocaleDateString('en-US', options));
+    // → "Thursday, December 20, 2012, UTC"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaledatestring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.tolocaledatestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaledatestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sup-date.prototype.tolocaledatestring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLocaleDateString`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`iana_time_zone_names`
+
+24
+
+14
+
+52
+
+No
+
+15
+
+6.1
+
+4.4
+
+25
+
+56
+
+14
+
+7
+
+1.5
+
+`locales`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+`options`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+## See also
+
+-   [`Intl.DateTimeFormat`](../intl/datetimeformat)
+-   [`Date.prototype.toLocaleString()`](tolocalestring)
+-   [`Date.prototype.toLocaleTimeString()`](tolocaletimestring)
+-   [`Date.prototype.toString()`](tostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString</a>
+
+# String.prototype.toLocaleLowerCase()
+
+The `toLocaleLowerCase()` method returns the calling string value converted to lower case, according to any locale-specific case mappings.
+
+## Syntax
+
+    toLocaleLowerCase()
+    toLocaleLowerCase(locale)
+    toLocaleLowerCase([locale1, locale2, ...])
+
+### Parameters
+
+`locale` <span class="badge inline optional">Optional</span>
+The `locale` parameter indicates the locale to be used to convert to lower case according to any locale-specific case mappings. If multiple locales are given in an [`Array`](../array), the [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale) is used. The default locale is the host environment's current locale.
+
+### Return value
+
+A new string representing the calling string converted to lower case, according to any locale-specific case mappings.
+
+### Exceptions
+
+-   A [`RangeError`](../rangeerror) ("invalid language tag: xx_yy") is thrown if a `locale` argument isn't a valid language tag.
+-   A [`TypeError`](../typeerror) ("invalid element in locales argument") is thrown if an array element isn't of type string.
+
+## Description
+
+The `toLocaleLowerCase()` method returns the value of the string converted to lower case according to any locale-specific case mappings. `toLocaleLowerCase()` does not affect the value of the string itself. In most cases, this will produce the same result as [`toLowerCase()`](tolowercase), but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.
+
+## Examples
+
+### Using toLocaleLowerCase()
+
+    'ALPHABET'.toLocaleLowerCase(); // 'alphabet'
+
+    '\u0130'.toLocaleLowerCase('tr') === 'i';    // true
+    '\u0130'.toLocaleLowerCase('en-US') === 'i'; // false
+
+    let locales = ['tr', 'TR', 'tr-TR', 'tr-u-co-search', 'tr-x-turkish'];
+    '\u0130'.toLocaleLowerCase(locales) === 'i'; // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolocalelowercase">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.tolocalelowercase</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-string.prototype.tolocalelowercase">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sup-string.prototype.tolocalelowercase</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLocaleLowerCase`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1.3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`locale`
+
+58
+
+12
+
+55
+
+6
+
+45
+
+10
+
+58
+
+58
+
+55
+
+43
+
+10
+
+7.0
+
+## See also
+
+-   [`String.prototype.toLocaleUpperCase()`](tolocaleuppercase)
+-   [`String.prototype.toLowerCase()`](tolowercase)
+-   [`String.prototype.toUpperCase()`](touppercase)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase</a>
+
+# Date.prototype.toLocaleString()
+
+The `toLocaleString()` method returns a string with a language sensitive representation of this date.
+
+The new `locales` and `options` arguments let applications specify the language whose formatting conventions should be used and customize the behavior of the function.
+
+In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation-dependent.
+
+## Syntax
+
+    toLocaleString()
+    toLocaleString(locales)
+    toLocaleString(locales, options)
+
+### Parameters
+
+The `locales` and `options` arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
+
+See the [`Intl.DateTimeFormat()`](../intl/datetimeformat/datetimeformat) constructor for details on these parameters and how to use them.
+
+The default value for each date-time component property is [`undefined`](../undefined). But, if the `weekday`, `year`, `month`, and `day` properties are all [`undefined`](../undefined), then `year`, `month`, and `day` are assumed to be `"numeric"`.
+
+### Return value
+
+A string representing the given date according to language-specific conventions.
+
+## Examples
+
+### Using toLocaleString()
+
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.
+
+    let date = new Date(Date.UTC(2012, 11, 12, 3, 0, 0));
+
+    // toLocaleString() without arguments depends on the
+    // implementation, the default locale, and the default time zone
+    console.log(date.toLocaleString());
+    // → "12/11/2012, 7:00:00 PM" if run in en-US locale with time zone America/Los_Angeles
+
+### Checking for support for locales and options arguments
+
+The `locales` and `options` arguments are not supported in all browsers yet. To check whether an implementation supports them already, you can use the requirement that illegal language tags are rejected with a [`RangeError`](../rangeerror) exception:
+
+    function toLocaleStringSupportsLocales() {
+      try {
+        new Date().toLocaleString('i');
+      } catch (e) {
+        return e.name === 'RangeError';
+      }
+      return false;
+    }
+
+### Using locales
+
+This example shows some of the variations in localized date and time formats. In order to get the format of the language used in the user interface of your application, make sure to specify that language (and possibly some fallback languages) using the `locales` argument:
+
+    let date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // formats below assume the local time zone of the locale;
+    // America/Los_Angeles for the US
+
+    // US English uses month-day-year order and 12-hour time with AM/PM
+    console.log(date.toLocaleString('en-US'));
+    // → "12/19/2012, 7:00:00 PM"
+
+    // British English uses day-month-year order and 24-hour time without AM/PM
+    console.log(date.toLocaleString('en-GB'));
+    // → "20/12/2012 03:00:00"
+
+    // Korean uses year-month-day order and 12-hour time with AM/PM
+    console.log(date.toLocaleString('ko-KR'));
+    // → "2012. 12. 20. 오후 12:00:00"
+
+    // Arabic in most Arabic speaking countries uses real Arabic digits
+    console.log(date.toLocaleString('ar-EG'));
+    // → "٢٠‏/١٢‏/٢٠١٢ ٥:٠٠:٠٠ ص"
+
+    // for Japanese, applications may want to use the Japanese calendar,
+    // where 2012 was the year 24 of the Heisei era
+    console.log(date.toLocaleString('ja-JP-u-ca-japanese'));
+    // → "24/12/20 12:00:00"
+
+    // When requesting a language that may not be supported, such as
+    // Balinese, include a fallback language (in this case, Indonesian)
+    console.log(date.toLocaleString(['ban', 'id']));
+    // → "20/12/2012 11.00.00"
+
+### Using options
+
+The results provided by `toLocaleString()` can be customized using the `options` argument:
+
+    let date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // request a weekday along with a long date
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    console.log(date.toLocaleString('de-DE', options));
+    // → "Donnerstag, 20. Dezember 2012"
+
+    // an application may want to use UTC and make that visible
+    options.timeZone = 'UTC';
+    options.timeZoneName = 'short';
+
+    console.log(date.toLocaleString('en-US', options));
+    // → "Thursday, December 20, 2012, GMT"
+
+    // sometimes even the US needs 24-hour time
+    console.log(date.toLocaleString('en-US', { hour12: false }));
+    // → "12/19/2012, 19:00:00"
+
+### Avoid comparing formatted date values to static values
+
+Most of the time, the formatting returned by `toLocaleString()` is consistent. However, this might change in the future, and isn't guaranteed for all languages; output variations are by design, and allowed by the specification.
+
+Most notably, the IE and Edge browsers insert bidirectional control characters around dates, so the output text will flow properly when concatenated with other text.
+
+For this reason, you cannot expect to be able to compare the results of `toLocaleString()` to a static value:
+
+    "1/1/2019, 01:00:00" === new Date("2019-01-01T01:00:00Z").toLocaleString("en-US");
+    // true in Firefox and others
+    // false in IE and Edge
+
+**Note:** See also this [StackOverflow thread](https://stackoverflow.com/questions/25574963/ies-tolocalestring-has-strange-characters-in-results) for more details and examples.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocalestring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.tolocalestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocalestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sup-date.prototype.tolocalestring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLocaleString`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`iana_time_zone_names`
+
+24
+
+14
+
+52
+
+No
+
+15
+
+6.1
+
+4.4
+
+25
+
+56
+
+14
+
+7
+
+1.5
+
+`locales`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+`options`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+## See also
+
+-   [`Intl.DateTimeFormat`](../intl/datetimeformat)
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toLocaleTimeString()`](tolocaletimestring)
+-   [`Date.prototype.toString()`](tostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString</a>
+
+# Date.prototype.toLocaleTimeString()
+
+The `toLocaleTimeString()` method returns a string with a language sensitive representation of the time portion of this date. The new `locales` and `options` arguments let applications specify the language whose formatting conventions should be used and customize the behavior of the function. In older implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
+
+## Syntax
+
+    toLocaleTimeString()
+    toLocaleTimeString(locales)
+    toLocaleTimeString(locales, options)
+
+### Parameters
+
+The `locales` and `options` arguments customize the behavior of the function and let applications specify the language whose formatting conventions should be used. In implementations, which ignore the `locales` and `options` arguments, the locale used and the form of the string returned are entirely implementation dependent.
+
+See the [`Intl.DateTimeFormat()`](../intl/datetimeformat/datetimeformat) constructor for details on these parameters and how to use them.
+
+The default value for each date-time component property is [`undefined`](../undefined), but if the `hour`, `minute`, `second` properties are all [`undefined`](../undefined), then `hour`, `minute`, and `second` are assumed to be `"numeric"`.
+
+### Return value
+
+A string representing the time portion of the given [`Date`](../date) instance according to language-specific conventions.
+
+## Performance
+
+When formatting large numbers of dates, it is better to create an [`Intl.DateTimeFormat`](../intl/datetimeformat) object and use the function provided by its [`format`](../intl/datetimeformat/format) property.
+
+## Examples
+
+### Using toLocaleTimeString()
+
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned.
+
+    var date = new Date(Date.UTC(2012, 11, 12, 3, 0, 0));
+
+    // toLocaleTimeString() without arguments depends on the implementation,
+    // the default locale, and the default time zone
+    console.log(date.toLocaleTimeString());
+    // → "7:00:00 PM" if run in en-US locale with time zone America/Los_Angeles
+
+### Checking for support for locales and options arguments
+
+The `locales` and `options` arguments are not supported in all browsers yet. To check whether an implementation supports them already, you can use the requirement that illegal language tags are rejected with a [`RangeError`](../rangeerror) exception:
+
+    function toLocaleTimeStringSupportsLocales() {
+      try {
+        new Date().toLocaleTimeString('i');
+      } catch (e) {
+        return e.name === 'RangeError';
+      }
+      return false;
+    }
+
+### Using locales
+
+This example shows some of the variations in localized time formats. In order to get the format of the language used in the user interface of your application, make sure to specify that language (and possibly some fallback languages) using the `locales` argument:
+
+    var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // formats below assume the local time zone of the locale;
+    // America/Los_Angeles for the US
+
+    // US English uses 12-hour time with AM/PM
+    console.log(date.toLocaleTimeString('en-US'));
+    // → "7:00:00 PM"
+
+    // British English uses 24-hour time without AM/PM
+    console.log(date.toLocaleTimeString('en-GB'));
+    // → "03:00:00"
+
+    // Korean uses 12-hour time with AM/PM
+    console.log(date.toLocaleTimeString('ko-KR'));
+    // → "오후 12:00:00"
+
+    // Arabic in most Arabic speaking countries uses real Arabic digits
+    console.log(date.toLocaleTimeString('ar-EG'));
+    // → "٧:٠٠:٠٠ م"
+
+    // when requesting a language that may not be supported, such as
+    // Balinese, include a fallback language, in this case Indonesian
+    console.log(date.toLocaleTimeString(['ban', 'id']));
+    // → "11.00.00"
+
+### Using options
+
+The results provided by `toLocaleTimeString()` can be customized using the `options` argument:
+
+    var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+    // an application may want to use UTC and make that visible
+    var options = { timeZone: 'UTC', timeZoneName: 'short' };
+    console.log(date.toLocaleTimeString('en-US', options));
+    // → "3:00:00 AM GMT"
+
+    // sometimes even the US needs 24-hour time
+    console.log(date.toLocaleTimeString('en-US', { hour12: false }));
+    // → "19:00:00"
+
+    // show only hours and minutes, use options with the default locale - use an empty array
+    console.log(date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+    // → "20:01"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.tolocaletimestring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.tolocaletimestring</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-date.prototype.tolocaletimestring">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sup-date.prototype.tolocaletimestring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLocaleTimeString`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`iana_time_zone_names`
+
+24
+
+14
+
+52
+
+No
+
+15
+
+6.1
+
+4.4
+
+25
+
+56
+
+14
+
+7
+
+1.5
+
+`locales`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+`options`
+
+24
+
+12
+
+29
+
+11
+
+15
+
+10
+
+4.4
+
+25
+
+56
+
+14
+
+10
+
+1.5
+
+## See also
+
+-   [`Intl.DateTimeFormat`](../intl/datetimeformat)
+-   [`Date.prototype.toLocaleDateString()`](tolocaledatestring)
+-   [`Date.prototype.toLocaleString()`](tolocalestring)
+-   [`Date.prototype.toTimeString()`](totimestring)
+-   [`Date.prototype.toString()`](tostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString</a>
+
+# String.prototype.toLocaleUpperCase()
+
+The `toLocaleUpperCase()` method returns the calling string value converted to upper case, according to any locale-specific case mappings.
+
+## Syntax
+
+    toLocaleUpperCase()
+    toLocaleUpperCase(locale)
+    toLocaleUpperCase([locale1, locale2, ...])
+
+### Parameters
+
+`locale` <span class="badge inline optional">Optional</span>
+The `locale` parameter indicates the locale to be used to convert to upper case according to any locale-specific case mappings. If multiple locales are given in an [`Array`](../array), the [best available locale](https://tc39.github.io/ecma402/#sec-bestavailablelocale) is used. The default locale is the host environment's current locale.
+
+### Return value
+
+A new string representing the calling string converted to upper case, according to any locale-specific case mappings.
+
+### Exceptions
+
+-   A [`RangeError`](../rangeerror) ("invalid language tag: xx_yy") is thrown if a `locale` argument isn't a valid language tag.
+-   A [`TypeError`](../typeerror) ("invalid element in locales argument") is thrown if an array element isn't of type string.
+
+## Description
+
+The `toLocaleUpperCase()` method returns the value of the string converted to upper case according to any locale-specific case mappings. `toLocaleUpperCase()` does not affect the value of the string itself. In most cases, this will produce the same result as [`toUpperCase()`](touppercase), but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.
+
+Also notice that conversion is not necessarily a 1:1 character mapping, as some characters might result in two (or even more) characters when transformed to upper-case. Therefore the length of the result string can differ from the input length. This also implies that the conversion is not stable, so i.E. the following can return `false`:
+`x.toLocaleLowerCase() === x.toLocaleUpperCase().toLocaleLowerCase()`
+
+## Examples
+
+### Using toLocaleUpperCase()
+
+    'alphabet'.toLocaleUpperCase(); // 'ALPHABET'
+
+    'Gesäß'.toLocaleUpperCase(); // 'GESÄSS'
+
+    'i\u0307'.toLocaleUpperCase('lt-LT'); // 'I'
+
+    let locales = ['lt', 'LT', 'lt-LT', 'lt-u-co-phonebk', 'lt-x-lietuva'];
+    'i\u0307'.toLocaleUpperCase(locales); // 'I'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolocaleuppercase">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.tolocaleuppercase</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-string.prototype.tolocaleuppercase">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<br/>
+
+<span class="small">#sup-string.prototype.tolocaleuppercase</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLocaleUpperCase`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1.3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`locale`
+
+58
+
+12
+
+55
+
+6
+
+45
+
+10
+
+58
+
+58
+
+55
+
+42
+
+10
+
+7.0
+
+## See also
+
+-   [`String.prototype.toLocaleLowerCase()`](tolocalelowercase)
+-   [`String.prototype.toLowerCase()`](tolowercase)
+-   [`String.prototype.toUpperCase()`](touppercase)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase</a>
+
+# String.prototype.toLowerCase()
+
+The `toLowerCase()` method returns the calling string value converted to lower case.
+
+## Syntax
+
+    toLowerCase()
+
+### Return value
+
+A new string representing the calling string converted to lower case.
+
+## Description
+
+The `toLowerCase()` method returns the value of the string converted to lower case. `toLowerCase()` does not affect the value of the string `str` itself.
+
+## Examples
+
+### Using `toLowerCase()`
+
+    console.log('ALPHABET'.toLowerCase()); // 'alphabet'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.tolowercase">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.toLowerCase' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toLowerCase`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.toLocaleLowerCase()`](tolocalelowercase)
+-   [`String.prototype.toLocaleUpperCase()`](tolocaleuppercase)
+-   [`String.prototype.toUpperCase()`](touppercase)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase</a>
+
+# InternalError: too much recursion
+
+The JavaScript exception "too much recursion" or "Maximum call stack size exceeded" occurs when there are too many function calls, or a function is missing a base case.
+
+## Message
+
+    Error: Out of stack space (Edge)
+    InternalError: too much recursion (Firefox)
+    RangeError: Maximum call stack size exceeded (Chrome)
+
+## Error type
+
+[`InternalError`](../global_objects/internalerror).
+
+## What went wrong?
+
+A function that calls itself is called a _recursive function_. Once a condition is met, the function stops calling itself. This is called a _base case_.
+
+In some ways, recursion is analogous to a loop. Both execute the same code multiple times, and both require a condition (to avoid an infinite loop, or rather, infinite recursion in this case). When there are too many function calls, or a function is missing a base case, JavaScript will throw this error.
+
+## Examples
+
+This recursive function runs 10 times, as per the exit condition.
+
+    function loop(x) {
+      if (x >= 10) // "x >= 10" is the exit condition
+        return;
+      // do stuff
+      loop(x + 1); // the recursive call
+    }
+    loop(0);
+
+Setting this condition to an extremely high value, won't work:
+
+    function loop(x) {
+      if (x >= 1000000000000)
+        return;
+      // do stuff
+      loop(x + 1);
+    }
+    loop(0);
+
+    // InternalError: too much recursion
+
+This recursive function is missing a base case. As there is no exit condition, the function will call itself infinitely.
+
+    function loop(x) {
+     // The base case is missing
+
+    loop(x + 1); // Recursive call
+    }
+
+    loop(0);
+
+    // InternalError: too much recursion
+
+### Class error: too much recursion
+
+    class Person{
+        constructor(){}
+        set name(name){
+            this.name = name; // Recursive call
+        }
+    }
+
+    const tony = new Person();
+    tony.name = "Tonisha"; // InternalError: too much recursion
+
+When a value is assigned to the property name (this.name = name;) JavaScript needs to set that property. When this happens, the setter function is triggered.
+
+    set name(name){
+        this.name = name; // Recursive call
+    }
+
+**Note:** In this example when the setter is triggered, it is told to do the same thing again: _to set the same property that it is meant to handle._ This causes the function to call itself, again and again, making it infinitely recursive.
+
+This issue also appears if the same variable is used in the getter.
+
+    get name(){
+        return this.name; // Recursive call
+    }
+
+To avoid this problem, make sure that the property being assigned to inside the setter function is different from the one that initially triggered the setter.The same goes for the getter.
+
+    class Person{
+        constructor(){}
+        set name(name){
+            this._name = name;
+        }
+        get name(){
+            return this._name;
+        }
+    }
+    const tony = new Person();
+    tony.name = "Tonisha";
+    console.log(tony);
+
+## See also
+
+-   [Recursion](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
+-   [Recursive functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#recursion)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Too_much_recursion</a>
+
+# Number.prototype.toPrecision()
+
+The `toPrecision()` method returns a string representing the [`Number`](../number) object to the specified precision.
+
+## Syntax
+
+    toPrecision()
+    toPrecision(precision)
+
+### Parameters
+
+`precision` <span class="badge inline optional">Optional</span>
+An integer specifying the number of significant digits.
+
+### Return value
+
+A string representing a [`Number`](../number) object in fixed-point or exponential notation rounded to `precision` significant digits. See the discussion of rounding in the description of the [`Number.prototype.toFixed()`](tofixed) method, which also applies to `toPrecision()`.
+
+If the `precision` argument is omitted, behaves as [`Number.prototype.toString()`](tostring). If the `precision` argument is a non-integer value, it is rounded to the nearest integer.
+
+### Exceptions
+
+[`RangeError`](../rangeerror)
+If `precision` is not between `1` and `100` (inclusive), a [`RangeError`](../rangeerror) is thrown. Implementations are allowed to support larger and smaller values as well. ECMA-262 only requires a precision of up to 21 significant digits.
+
+## Examples
+
+### Using `toPrecision`
+
+    let numObj = 5.123456
+
+    console.log(numObj.toPrecision())    // logs '5.123456'
+    console.log(numObj.toPrecision(5))   // logs '5.1235'
+    console.log(numObj.toPrecision(2))   // logs '5.1'
+    console.log(numObj.toPrecision(1))   // logs '5'
+
+    numObj = 0.000123
+
+    console.log(numObj.toPrecision())    // logs '0.000123'
+    console.log(numObj.toPrecision(5))   // logs '0.00012300'
+    console.log(numObj.toPrecision(2))   // logs '0.00012'
+    console.log(numObj.toPrecision(1))   // logs '0.0001'
+
+    // note that exponential notation might be returned in some circumstances
+    console.log((1234.5).toPrecision(2)) // logs '1.2e+3'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.prototype.toprecision">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-number.prototype.toprecision</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toPrecision`
+
+1
+
+12
+
+1
+
+5.5
+
+7
+
+2
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Number.prototype.toFixed()`](tofixed)
+-   [`Number.prototype.toExponential()`](toexponential)
+-   [`Number.prototype.toString()`](tostring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision</a>
+
+# Symbol.toPrimitive
+
+The `Symbol.toPrimitive` is a symbol that specifies a function valued property that is called to convert an object to a corresponding primitive value.
+
+## Description
+
+With the help of the `Symbol.toPrimitive` property (used as a function value), an object can be converted to a primitive value. The function is called with a string argument `hint`, which specifies the preferred type of the result primitive value. The `hint` argument can be one of "`number`", "`string`", and "`default`".
+
+Property attributes of `Symbol.toPrimitive`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Examples
+
+### Modifying primitive values converted from an object
+
+Following example describes how `Symbol.toPrimitive` property can modify the primitive value converted from an object.
+
+    // An object without Symbol.toPrimitive property.
+    var obj1 = {};
+    console.log(+obj1);     // NaN
+    console.log(`${obj1}`); // "[object Object]"
+    console.log(obj1 + ''); // "[object Object]"
+
+    // An object with Symbol.toPrimitive property.
+    var obj2 = {
+      [Symbol.toPrimitive](hint) {
+        if (hint == 'number') {
+          return 10;
+        }
+        if (hint == 'string') {
+          return 'hello';
+        }
+        return true;
+      }
+    };
+    console.log(+obj2);     // 10        -- hint is "number"
+    console.log(`${obj2}`); // "hello"   -- hint is "string"
+    console.log(obj2 + ''); // "true"    -- hint is "default"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.toprimitive">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-symbol.toprimitive</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toPrimitive`
+
+47
+
+15
+
+44
+
+No
+
+34
+
+10
+
+47
+
+47
+
+44
+
+34
+
+10
+
+5.0
+
+## See also
+
+-   [`Date.prototype[@@toPrimitive]`](../date/@@toprimitive)
+-   [`Symbol.prototype[@@toPrimitive]`](@@toprimitive)
+-   [`Object.prototype.toString()`](../object/tostring)
+-   [`Object.prototype.valueOf()`](../object/valueof)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive</a>
+
+# Object.prototype.toSource()
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `toSource()` method returns a string representing the source code of the object.
+
+## Syntax
+
+    toSource()
+
+### Return value
+
+A string representing the source code of the object.
+
+## Description
+
+The `toSource()` method returns the following values:
+
+-   For the built-in [`Object`](../object) object, `toSource()` returns the following string indicating that the source code is not available:
+
+        function Object() {
+            [native code]
+        }
+
+-   For instances of [`Object`](../object), `toSource()` returns a string representing the source code.
+
+You can call `toSource()` while debugging to examine the contents of an object.
+
+### Overriding the toSource() method
+
+It is safe for objects to override the `toSource()` method. For example:
+
+    function Person(name) {
+      this.name = name;
+    }
+
+    Person.prototype.toSource = function Person_toSource() {
+      return 'new Person(' + uneval(this.name) + ')';
+    };
+
+    console.log(new Person('Joe').toSource()); // ---> new Person("Joe")
+
+### Built-in toSource() methods
+
+Each core JavaScript type has its own `toSource()` method. These objects are:
+
+-   [`Array.prototype.toSource()`](../array/tosource) — [`Array`](../array) object.
+-   [`Boolean.prototype.toSource()`](../boolean/tosource) — [`Boolean`](../boolean) object.
+-   [`Date.prototype.toSource()`](../date/tosource) — [`Date`](../date) object.
+-   [`Function.prototype.toSource()`](../function/tosource) — [`Function`](../function) object.
+-   [`Number.prototype.toSource()`](../number/tosource) — [`Number`](../number) object.
+-   [`RegExp.prototype.toSource()`](../regexp/tosource) — [`RegExp`](../regexp) object.
+-   [`String.prototype.toSource()`](../string/tosource) — [`String`](../string) object.
+-   [`Symbol.prototype.toSource()`](../symbol/tosource) — [`Symbol`](../symbol) object.
+-   `Math.toSource()` — Returns the String "Math".
+
+### Limitations on cyclical objects
+
+In the case of objects that contain references to themselves, e.g. a cyclically linked list or a tree that can be traversed both ways, `toSource()` will not recreate the self-reference, as of Firefox 24. For example:
+
+    var obj1 = {};
+    var obj2 = { a: obj1 };
+    obj1.b = obj2;
+
+    console.log('Cyclical: ' + (obj1.b.a == obj1));
+
+    var objSource = obj1.toSource(); // returns "({b:{a:{}}})"
+
+    obj1 = eval(objSource);
+
+    console.log('Cyclical: ' + (obj1.b.a == obj1));
+
+If a cyclical structure is employed and `toSource()` is needed, the object must provide an override to `toSource()`, either using a reference to a constructor or providing an anonymous function.
+
+## Examples
+
+### Using toSource()
+
+The following code defines the `Dog` object type and creates `theDog`, an object of type `Dog`:
+
+    function Dog(name, breed, color, sex) {
+      this.name = name;
+      this.breed = breed;
+      this.color = color;
+      this.sex = sex;
+    }
+
+    theDog = new Dog('Gabby', 'Lab', 'chocolate', 'female');
+
+Calling the `toSource()` method of `theDog` displays the JavaScript source that defines the object:
+
+    theDog.toSource();
+    // returns ({name:"Gabby", breed:"Lab", color:"chocolate", sex:"female"})
+
+## Specifications
+
+Not part of any standard.
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toSource`
+
+No
+
+No
+
+1-74
+
+Starting in Firefox 74, `toSource()` is no longer available for use by web content. It is still allowed for internal and privileged code.
+
+No
+
+No
+
+No
+
+No
+
+No
+
+4
+
+No
+
+No
+
+No
+
+## See also
+
+-   [`Object.prototype.toString()`](tostring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource</a>
+
+# Object.prototype.toString()
+
+The `toString()` method returns a string representing the object.
+
+## Syntax
+
+    toString()
+
+### Return value
+
+A string representing the object.
+
+## Description
+
+Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns "`[object type]`", where `type` is the object type. The following code illustrates this:
+
+    const o = new Object();
+    o.toString(); // returns [object Object]
+
+**Note:** Starting in JavaScript 1.8.5, `toString()` called on [`null`](../null) returns `[object Null]`, and [`undefined`](../undefined) returns `[object Undefined]`, as defined in the 5<sup>th</sup> Edition of ECMAScript and subsequent Errata.
+
+See [Using `toString()` to detect object class](#using_tostring_to_detect_object_class).
+
+## Parameters
+
+For Numbers and BigInts `toString()` takes an optional parameter `radix` the value of radix must be minimum 2 and maximum 36.
+
+By using `radix` you can also convert base 10 numbers (like 1,2,3,4,5,.........) to another base numbers, in example below we are converting base 10 number to a base 2 (binary) number.
+
+    let baseTenInt = 10;
+    console.log(baseTenInt.toString(2));
+    // Expected output is "1010"
+
+and same for big integers
+
+    let bigNum = BigInt(20);
+    console.log(bigNum.toString(2));
+    // Expected output is "10100"
+
+Some common radix are
+
+-   2 for [binary numbers](https://en.wikipedia.org/wiki/Binary_number),
+-   8 for [octal numbers](https://en.wikipedia.org/wiki/Octal),
+-   10 for [decimal numbers](https://en.wikipedia.org/wiki/Decimal),
+-   16 for [hexadecimal numbers](https://en.wikipedia.org/wiki/Hexadecimal).
+
+## Examples
+
+### Overriding the default toString method
+
+You can create a function to be called in place of the default `toString()` method. The `toString()` method takes no arguments and should return a string. The `toString()` method you create can be any value you want, but it will be most useful if it carries information about the object.
+
+The following code defines the `Dog` object type and creates `theDog`, an object of type `Dog`:
+
+    function Dog(name, breed, color, sex) {
+      this.name = name;
+      this.breed = breed;
+      this.color = color;
+      this.sex = sex;
+    }
+
+    theDog = new Dog('Gabby', 'Lab', 'chocolate', 'female');
+
+If you call the `toString()` method on this custom object, it returns the default value inherited from [`Object`](../object):
+
+    theDog.toString(); // returns [object Object]
+
+The following code creates and assigns `dogToString()` to override the default `toString()` method. This function generates a string containing the `name`, `breed`, `color`, and `sex` of the object, in the form "`property = value;`".
+
+    Dog.prototype.toString = function dogToString() {
+      const ret = 'Dog ' + this.name + ' is a ' + this.sex + ' ' + this.color + ' ' + this.breed;
+      return ret;
+    }
+
+Or, using ES6 [template strings](../../template_literals):
+
+    Dog.prototype.toString = function dogToString() {
+      return `Dog ${this.name} is a ${this.sex}${this.color}${this.breed}`;
+    }
+
+With the preceding code in place, any time `theDog` is used in a string context, JavaScript automatically calls the `dogToString()` function, which returns the following string:
+
+    "Dog Gabby is a female chocolate Lab"
+
+### Using toString() to detect object class
+
+`toString()` can be used with every object and (by default) allows you to get its class.
+
+To use the `Object.prototype.toString()` with every object, you need to call [`Function.prototype.call()`](../function/call) or [`Function.prototype.apply()`](../function/apply) on it, passing the object you want to inspect as the first parameter (called `thisArg`).
+
+    const toString = Object.prototype.toString;
+
+    toString.call(new Date);    // [object Date]
+    toString.call(new String);  // [object String]
+    toString.call(Math);        // [object Math]
+
+    // Since JavaScript 1.8.5
+    toString.call(undefined);   // [object Undefined]
+    toString.call(null);        // [object Null]
+
+Using `toString()` in this way is unreliable; objects can change the behavior of `Object.prototype.toString()` by defining a [`Symbol.toStringTag`](../symbol/tostringtag) property, leading to unexpected results. For example:
+
+    const myDate = new Date();
+    Object.prototype.toString.call(myDate);     // [object Date]
+
+    myDate[Symbol.toStringTag] = 'myDate';
+    Object.prototype.toString.call(myDate);     // [object myDate]
+
+    Date.prototype[Symbol.toStringTag] = 'prototype polluted';
+    Object.prototype.toString.call(new Date()); // [object prototype polluted]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.tostring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-object.prototype.tostring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toString`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Object.prototype.toSource()`](tosource)
+-   [`Object.prototype.valueOf()`](valueof)
+-   [`Number.prototype.toString()`](../number/tostring)
+-   [`Symbol.toPrimitive`](../symbol/toprimitive)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString</a>
+
+# Symbol.toStringTag
+
+The `Symbol.toStringTag` well-known symbol is a string valued property that is used in the creation of the default string description of an object. It is accessed internally by the [`Object.prototype.toString()`](../object/tostring) method.
+
+Property attributes of `Symbol.toStringTag`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Examples
+
+### Default tags
+
+    Object.prototype.toString.call('foo');     // "[object String]"
+    Object.prototype.toString.call([1, 2]);    // "[object Array]"
+    Object.prototype.toString.call(3);         // "[object Number]"
+    Object.prototype.toString.call(true);      // "[object Boolean]"
+    Object.prototype.toString.call(undefined); // "[object Undefined]"
+    Object.prototype.toString.call(null);      // "[object Null]"
+    // ... and more
+
+### Built-in toStringTag symbols
+
+    Object.prototype.toString.call(new Map());       // "[object Map]"
+    Object.prototype.toString.call(function* () {}); // "[object GeneratorFunction]"
+    Object.prototype.toString.call(Promise.resolve()); // "[object Promise]"
+    // ... and more
+
+### Custom classes default to object tag
+
+When creating your own class, JavaScript defaults to the "Object" tag:
+
+    class ValidatorClass {}
+
+    Object.prototype.toString.call(new ValidatorClass()); // "[object Object]"
+
+### Custom tag with toStringTag
+
+Now, with the help of `toStringTag`, you are able to set your own custom tag:
+
+    class ValidatorClass {
+      get [Symbol.toStringTag]() {
+        return 'Validator';
+      }
+    }
+
+    Object.prototype.toString.call(new ValidatorClass()); // "[object Validator]"
+
+### toStringTag available on all DOM prototype objects
+
+Due to a [WebIDL spec change](https://github.com/heycam/webidl/pull/357) in mid-2020, browsers are adding a `Symbol.toStringTag` property to all DOM prototype objects. For example, to acccess the `Symbol.toStringTag` property on [`HTMLButtonElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement):
+
+    let test = document.createElement('button');
+    test.toString(); // Returns [object HTMLButtonElement]
+    test[Symbol.toStringTag];  // Returns HTMLButtonElement
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.tostringtag">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-symbol.tostringtag</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toStringTag`
+
+49
+
+15
+
+51
+
+No
+
+36
+
+10
+
+49
+
+49
+
+51
+
+36
+
+10
+
+5.0
+
+`dom-objects`
+
+50
+
+79
+
+78
+
+No
+
+37
+
+14
+
+50
+
+50
+
+79
+
+37
+
+14
+
+5.0
+
+## See also
+
+-   [`Object.prototype.toString()`](../object/tostring)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag</a>
+
+# Date.prototype.toTimeString()
+
+The `toTimeString()` method returns the time portion of a [`Date`](../date) object in human readable form in English.
+
+## Syntax
+
+    toTimeString()
+
+### Return value
+
+A string representing the time portion of the given date in human readable form in English.
+
+## Description
+
+[`Date`](../date) instances refer to a specific point in time. Calling [`toString()`](tostring) will return the date formatted in a human readable form in English. In [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), this consists of the date portion (day, month, and year) followed by the time portion (hours, minutes, seconds, and time zone). Sometimes it is desirable to obtain a string of the time portion; such a thing can be accomplished with the `toTimeString()` method.
+
+The `toTimeString()` method is especially useful because compliant engines implementing [ECMA-262](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources) may differ in the string obtained from [`toString()`](tostring) for [`Date`](../date) objects, as the format is implementation-dependent; simple string slicing approaches may not produce consistent results across multiple engines.
+
+## Examples
+
+### A basic usage of toTimeString()
+
+    var d = new Date(1993, 6, 28, 14, 39, 7);
+
+    console.log(d.toString());     // Wed Jul 28 1993 14:39:07 GMT-0600 (PDT)
+    console.log(d.toTimeString()); // 14:39:07 GMT-0600 (PDT)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.totimestring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.totimestring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toTimeString`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleTimeString()`](tolocaletimestring)
+-   [`Date.prototype.toDateString()`](todatestring)
+-   [`Date.prototype.toString()`](tostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString</a>
+
+# String.prototype.toUpperCase()
+
+The `toUpperCase()` method returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one).
+
+## Syntax
+
+    toUpperCase()
+
+### Return value
+
+A new string representing the calling string converted to upper case.
+
+### Exceptions
+
+[`TypeError`](../typeerror)
+When called on [`null`](../null) or [`undefined`](../undefined), for example, `String.prototype.toUpperCase.call(undefined)`.
+
+## Description
+
+The `toUpperCase()` method returns the value of the string converted to uppercase. This method does not affect the value of the string itself since JavaScript strings are immutable.
+
+## Examples
+
+### Basic usage
+
+    console.log('alphabet'.toUpperCase()); // 'ALPHABET'
+
+### Conversion of non-string `this` values to strings
+
+This method will convert any non-string value to a string, when you set its `this` to a value that is not a string:
+
+    const a = String.prototype.toUpperCase.call({
+      toString: function toString() {
+        return 'abcdef';
+      }
+    });
+
+    const b = String.prototype.toUpperCase.call(true);
+
+    // prints out 'ABCDEF TRUE'.
+    console.log(a, b);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.touppercase">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.touppercase</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toUpperCase`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`String.prototype.toLocaleLowerCase()`](tolocalelowercase)
+-   [`String.prototype.toLocaleUpperCase()`](tolocaleuppercase)
+-   [`String.prototype.toLowerCase()`](tolowercase)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase</a>
+
+# Date.prototype.toUTCString()
+
+The `toUTCString()` method converts a date to a string, using the UTC time zone.
+
+Based on [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.1.1) and modified according to [ecma-262 toUTCString](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-date.prototype.toutcstring), it can have negative values in the [2021 version](https://tc39.es/ecma262/#sec-date.prototype.toutcstring)
+
+## Syntax
+
+    toUTCString()
+
+### Return value
+
+A string representing the given date using the UTC time zone.
+
+## Description
+
+The value returned by `toUTCString()` is a string in the form `Www, dd Mmm yyyy hh:mm:ss GMT`, Where:
+
+<table><thead><tr class="header"><th>Format String</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>Www</code></td><td>Day of week, as three letters (e.g. Sun, Mon, ...)</td></tr><tr class="even"><td><code>dd</code></td><td>Day of month, as two digits with leading zero if required</td></tr><tr class="odd"><td><code>Mmm</code></td><td>Month, as three letters (e.g. Jan, Feb, ...)</td></tr><tr class="even"><td><code>yyyy</code></td><td>Year, as four or more digits with leading zeroes if required</td></tr><tr class="odd"><td><code>hh</code></td><td>Hour, as two digits with leading zero if required</td></tr><tr class="even"><td><code>mm</code></td><td>Minute, as two digits with leading zero if required</td></tr><tr class="odd"><td><code>ss</code></td><td>Seconds, as two digits with leading zero if required</td></tr></tbody></table>
+
+Prior to ECMAScript 2018, the format of the return value varied according to the platform. The most common return value was an RFC-1123 formatted date stamp, which is a slightly updated version of RFC-822 date stamps.
+
+## Examples
+
+### Using toUTCString()
+
+    let today = new Date('Wed, 14 Jun 2017 00:00:00 PDT');
+    let UTCstring = today.toUTCString(); // Wed, 14 Jun 2017 07:00:00 GMT
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.toutcstring">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-date.prototype.toutcstring</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`toUTCString`
+
+1
+
+12
+
+1
+
+4
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Date.prototype.toLocaleString()`](tolocalestring)
+-   [`Date.prototype.toDateString()`](todatestring)
+-   [`Date.prototype.toISOString()`](toisostring)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString</a>
+
+# Trailing commas
+
+**Trailing commas** (sometimes called "final commas") can be useful when adding new elements, parameters, or properties to JavaScript code. If you want to add a new property, you can add a new line without modifying the previously last line if that line already uses a trailing comma. This makes version-control diffs cleaner and editing code might be less troublesome.
+
+JavaScript has allowed trailing commas in array literals since the beginning, and later added them to object literals (ECMAScript 5) and most recently (ECMAScript 2017) to function parameters.
+
+[JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON), however, disallows trailing commas.
+
+## Syntax
+
+    ,
+
+## Examples
+
+### Trailing commas in literals
+
+#### Arrays
+
+JavaScript ignores trailing commas in arrays:
+
+    var arr = [
+      1,
+      2,
+      3,
+    ];
+
+    arr; // [1, 2, 3]
+    arr.length; // 3
+
+If more than one trailing comma is used, an elision (or hole) is produced. An array with holes is called _sparse_ (a _dense_ array has no holes). When iterating arrays for example with [`Array.prototype.forEach()`](global_objects/array/foreach) or [`Array.prototype.map()`](global_objects/array/map), array holes are skipped.
+
+    var arr = [1, 2, 3,,,];
+    arr.length; // 5
+
+#### Objects
+
+Starting with ECMAScript 5, trailing commas in object literals are legal as well:
+
+    var object = {
+      foo: "bar",
+      baz: "qwerty",
+      age: 42,
+    };
+
+### Trailing commas in functions
+
+ECMAScript 2017 allows trailing commas in function parameter lists.
+
+#### Parameter definitions
+
+The following function definition pairs are legal and equivalent to each other. Trailing commas don't affect the `length` property of function declarations or their `arguments` object.
+
+    function f(p) {}
+    function f(p,) {}
+
+    (p) => {};
+    (p,) => {};
+
+The trailing comma also works with [method definitions](functions/method_definitions) for classes or objects:
+
+    class C {
+      one(a,) {}
+      two(a, b,) {}
+    }
+
+    var obj = {
+      one(a,) {},
+      two(a, b,) {},
+    };
+
+#### Function calls
+
+The following function invocation pairs are legal and equivalent to each other.
+
+    f(p);
+    f(p,);
+
+    Math.max(10, 20);
+    Math.max(10, 20,);
+
+#### Illegal trailing commas
+
+Function parameter definitions or function invocations only containing a comma will throw a [`SyntaxError`](global_objects/syntaxerror). Furthermore, when using a [rest parameters](functions/rest_parameters), trailing commas are not allowed:
+
+    function f(,) {} // SyntaxError: missing formal parameter
+    (,) => {};       // SyntaxError: expected expression, got ','
+    f(,)             // SyntaxError: expected expression, got ','
+
+    function f(...p,) {} // SyntaxError: parameter after rest parameter
+    (...p,) => {}        // SyntaxError: expected closing parenthesis, got ','
+
+### Trailing commas in destructuring
+
+A trailing comma is also allowed on the left-hand side when using [destructuring assignment](operators/destructuring_assignment):
+
+    // array destructuring with trailing comma
+    [a, b,] = [1, 2];
+
+    // object destructuring with trailing comma
+    var o = {
+      p: 42,
+      q: true,
+    };
+    var {p, q,} = o;
+
+Again, when using a rest element, a [`SyntaxError`](global_objects/syntaxerror) will be thrown:
+
+    var [a, ...b,] = [1, 2, 3];
+    // SyntaxError: rest element may not have a trailing comma
+
+### Trailing commas in JSON
+
+Trailing commas in objects were only introduced in ECMAScript 5. As JSON is based on JavaScript's syntax prior to ES5, **trailing commas are not allowed in JSON**.
+
+Both lines will throw a `SyntaxError`:
+
+    JSON.parse('[1, 2, 3, 4, ]');
+    JSON.parse('{"foo" : 1, }');
+    // SyntaxError JSON.parse: unexpected character
+    // at line 1 column 14 of the JSON data
+
+Omit the trailing commas to parse the JSON correctly:
+
+    JSON.parse('[1, 2, 3, 4 ]');
+    JSON.parse('{"foo" : 1 }');
+
+## Specifications
+
+**No specification found**
+
+No specification data found for `javascript.grammar.trailing_commas`.
+[Check for problems with this page](#on-github) or contribute a missing `spec_url` to [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data). Also make sure the specification is included in [w3c/browser-specs](https://github.com/w3c/browser-specs).
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Trailing_commas`
+
+1
+
+12
+
+1
+
+9
+
+9.5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`trailing_commas_in_functions`
+
+58
+
+14
+
+52
+
+No
+
+45
+
+10
+
+58
+
+58
+
+52
+
+43
+
+10
+
+7.0
+
+`trailing_commas_in_object_literals`
+
+1
+
+12
+
+1
+
+9
+
+9.5
+
+3
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   Initial ECMAScript proposal: [trailing function commas](https://github.com/tc39/proposal-trailing-function-commas) by Jeff Morrison
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas</a>
+
+# Transitioning to strict mode
+
+ECMAScript 5 introduced [strict mode](../strict_mode) which is now implemented in all major browsers (including IE10). While making web browsers interpret code as strict is easy (just add `'use strict';` at the top of your source code), transitioning an existing code base to strict mode requires a bit more work.
+
+This article aims at providing guidance for developers.
+
+## Gradual transition
+
+Strict mode has been designed so that the transition to it can be made gradually. It is possible to change each file individually and even to transition code to strict mode down to the function granularity.
+
+## Differences from non-strict to strict
+
+### Syntax errors
+
+When adding `'use strict';`, the following cases will throw a [`SyntaxError`](../global_objects/syntaxerror) before the script is executing:
+
+-   Octal syntax `var n = 023;`
+-   [`with`](../statements/with) statement
+-   Using `delete` on a variable name `delete myVariable`;
+-   Using [`eval`](../global_objects/eval) or [`arguments`](../functions/arguments) as variable or function argument name
+-   Using one of the newly [reserved keywords](../lexical_grammar#keywords) (in prevision for ECMAScript 2015): `implements`, `interface`, `let`, `package`, `private`, `protected`, `public`, `static`, and `yield`
+-   Declaring function in blocks `if (a < b) { function f() {} }`
+-   Obvious errors
+    -   Declaring twice the same name for a property name in an object literal `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript 2015 ([bug 1041128](https://bugzilla.mozilla.org/show_bug.cgi?id=1041128)).
+    -   Declaring two function parameters with the same name `function f(a, b, b) {}`
+
+These errors are good, because they reveal plain errors or bad practices. They occur before the code is running.
+
+### New runtime errors
+
+JavaScript used to silently fail in contexts where what was done was an error. Strict mode throws in such cases. If your code base contains such cases, testing will be necessary to be sure nothing is broken. Once again, it can happen at the function granularity level.
+
+#### Setting a value to an undeclared variable
+
+    function f(x) {
+      'use strict';
+      var a = 12;
+      b = a + x * 35; // error!
+    }
+    f(42);
+
+This used to change a value on the global object which is rarely the expected effect. If you really want to set a value to the global object, pass it as an argument and explicitly assign it as a property:
+
+    var global = this; // in the top-level context, "this" always
+                       // refers to the global object
+    function f(x) {
+      'use strict';
+      var a = 12;
+      global.b = a + x * 35;
+    }
+    f(42);
+
+#### Trying to delete a non-configurable property
+
+    'use strict';
+    delete Object.prototype; // error!
+
+In non-strict, this would silently fail, in contradiction with the user expectation.
+
+#### Poisoned arguments and function properties
+
+Accessing `arguments.callee`, `arguments.caller`, `anyFunction.caller`, or `anyFunction.arguments` throws an error in strict mode. The only legitimate use case would be to reuse a function as in:
+
+    // example taken from vanillajs: http://vanilla-js.com/
+    var s = document.getElementById('thing').style;
+    s.opacity = 1;
+    (function() {
+      if ((s.opacity-=.1) < 0)
+        s.display = 'none';
+      else
+        setTimeout(arguments.callee, 40);
+    })();
+
+which can be rewritten as:
+
+    'use strict';
+    var s = document.getElementById('thing').style;
+    s.opacity = 1;
+    (function fadeOut() { // name the function
+      if((s.opacity-=.1) < 0)
+        s.display = 'none';
+      else
+        setTimeout(fadeOut, 40); // use the name of the function
+    })();
+
+### Semantic differences
+
+These differences are very subtle differences. It's possible that a test suite doesn't catch this kind of subtle difference. Careful review of your code base will probably be necessary to be sure these differences don't affect the semantics of your code. Fortunately, this careful review can be done gradually down the function granularity.
+
+#### `this` in function calls
+
+In function calls like `f()`, the `this` value was the global object. In strict mode, it is now `undefined`. When a function was called with `call` or `apply`, if the value was a primitive value, this one was boxed into an object (or the global object for `undefined` and `null`). In strict mode, the value is passed directly without conversion or replacement.
+
+#### `arguments` doesn't alias named function arguments
+
+In non-strict mode, modifying a value in the `arguments` object modifies the corresponding named argument. This made optimizations complicated for JavaScript engine and made code harder to read/understand. In strict mode, the `arguments` object is created and initialized with the same values than the named arguments, but changes to either the `arguments` object or the named arguments aren't reflected in one another.
+
+#### Change to `eval`
+
+In strict mode code, `eval` doesn't create a new variable in the scope from which it was called. Also, of course, in strict mode, the string is evaluated with strict mode rules. Thorough testing will need to be performed to make sure nothing breaks. Not using eval if you don't really need it may be another pragmatic solution.
+
+## Strictness-neutral code
+
+A potential "downside" of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
+
+1.  Write your code as strict and make sure no strict-only errors (from the above "New runtime errors" section) are thrown.
+2.  Stay away from semantic differences
+    1.  `eval`: use it only if you know what you're doing
+    2.  `arguments`: always access function arguments via their name or perform a copy of the arguments object using:
+        `var args = Array.prototype.slice.call(arguments)`
+        as the first line of your function
+    3.  `this`: only use `this` when it refers to an object you created.
+
+## See also
+
+-   [Strict mode](../strict_mode)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode</a>
+
+# String.prototype.trim()
+
+The `trim()` method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
+
+## Syntax
+
+    trim()
+
+### Return value
+
+A new string representing `str` stripped of whitespace from both its beginning and end.
+
+If neither the beginning or end of `str` has any whitespace, a new string is still returned (essentially a copy of `str`), with no exception being thrown.
+
+To return a new string with whitespace trimmed from just one end, use [`trimStart()`](trimstart) or [`trimEnd()`](trimend).
+
+## Polyfill
+
+Running the following code before any other code will create `trim()` if it's not natively available.
+
+    if (!String.prototype.trim) {
+      String.prototype.trim = function () {
+        return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+      };
+    }
+
+## Examples
+
+### Using `trim()`
+
+The following example displays the lowercase string `'foo'`:
+
+    var orig = '   foo  ';
+    console.log(orig.trim()); // 'foo'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trim">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'String.prototype.trim' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Trim`
+
+4
+
+12
+
+3.5
+
+10
+
+10.5
+
+5
+
+≤37
+
+18
+
+4
+
+11
+
+5
+
+1.0
+
+## See also
+
+-   [`String.prototype.trimStart()`](trimstart)
+-   [`String.prototype.trimEnd()`](trimend)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim</a>
+
+# String.prototype.trimEnd()
+
+The `trimEnd()` method removes whitespace from the end of a string. `trimRight()` is an alias of this method.
+
+## Syntax
+
+    trimEnd()
+
+    trimRight()
+
+### Return value
+
+A new string representing `str` stripped of whitespace from its end (right side).
+
+If the end of `str` has no whitespace, a new string is still returned (essentially a copy of `str`), with no exception being thrown.
+
+### Aliasing
+
+For consistency with functions like [`String.prototype.padEnd`](padend) the standard method name is `trimEnd`. However, for web compatibility reasons, `trimRight` remains as an alias to `trimEnd`. In some engines this means:
+
+    String.prototype.trimRight.name === "trimEnd";
+
+## Examples
+
+### Using trimEnd()
+
+The following example displays the lowercase string `' foo'`:
+
+    var str = '   foo  ';
+
+    console.log(str.length); // 8
+
+    str = str.trimEnd();
+    console.log(str.length); // 6
+    console.log(str);        // '   foo'
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trimend">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.trimend</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`trimEnd`
+
+66
+
+4
+
+12
+
+61
+
+3.5
+
+No
+
+53
+
+15
+
+12
+
+66
+
+≤37
+
+66
+
+18
+
+61
+
+4
+
+47
+
+14
+
+12
+
+9.0
+
+1.0
+
+## See also
+
+-   [`String.prototype.trim()`](trim)
+-   [`String.prototype.trimStart()`](trimstart)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd</a>
+
+# String.prototype.trimStart()
+
+The `trimStart()` method removes whitespace from the beginning of a string. `trimLeft()` is an alias of this method.
+
+## Syntax
+
+    trimStart()
+
+    trimLeft()
+
+### Return value
+
+A new string representing `str` stripped of whitespace from its beginning (left side).
+
+If the beginning of `str` has no whitespace, a new string is still returned (essentially a copy of `str`), with no exception being thrown.
+
+### Aliasing
+
+For consistency with functions like [`String.prototype.padStart`](padstart) the standard method name is `trimStart`. However, for web compatibility reasons, `trimLeft` remains as an alias to `trimStart`. In some engines this means:
+
+    String.prototype.trimLeft.name === "trimStart";
+
+## Examples
+
+### Using trimStart()
+
+The following example displays the lowercase string `'foo '`:
+
+    var str = '   foo  ';
+
+    console.log(str.length); // 8
+
+    str = str.trimStart();
+    console.log(str.length); // 5
+    console.log(str);        // 'foo  '
+
+## Polyfill
+
+    //https://github.com/FabioVergani/js-Polyfill_String-trimStart
+
+    (function(w){
+        var String=w.String, Proto=String.prototype;
+
+        (function(o,p){
+            if(p in o?o[p]?false:true:true){
+                var r=/^\s+/;
+                o[p]=o.trimLeft||function(){
+                    return this.replace(r,'')
+                }
+            }
+        })(Proto,'trimStart');
+
+    })(window);
+
+    /*
+    ES6:
+    (w=>{
+        const String=w.String, Proto=String.prototype;
+
+        ((o,p)=>{
+            if(p in o?o[p]?false:true:true){
+                const r=/^\s+/;
+                o[p]=o.trimLeft||function(){
+                    return this.replace(r,'')
+                }
+            }
+        })(Proto,'trimStart');
+
+    })(window);
+    */
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.trimstart">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-string.prototype.trimstart</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`trimStart`
+
+66
+
+4
+
+12
+
+61
+
+3.5
+
+No
+
+53
+
+15
+
+12
+
+66
+
+≤37
+
+66
+
+18
+
+61
+
+4
+
+47
+
+14
+
+12
+
+9.0
+
+1.0
+
+## See also
+
+-   [`String.prototype.trim()`](trim)
+-   [`String.prototype.trimEnd()`](trimend)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart</a>
+
+# Math.trunc()
+
+The `Math.trunc()` function returns the integer part of a number by removing any fractional digits.
+
+## Syntax
+
+    Math.trunc(x)
+
+### Parameters
+
+`x`
+A number.
+
+### Return value
+
+The integer part of the given number.
+
+## Description
+
+Unlike the other three `Math` methods: [`Math.floor()`](floor), [`Math.ceil()`](ceil) and [`Math.round()`](round), the way `Math.trunc()` works is very simple. It _truncates_ (cuts off) the dot and the digits to the right of it, no matter whether the argument is a positive or negative number.
+
+The argument passed to this method will be converted to number type implicitly.
+
+Because `trunc()` is a static method of `Math`, you always use it as `Math.trunc()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
+
+## Examples
+
+### Using Math.trunc()
+
+    Math.trunc(13.37);    // 13
+    Math.trunc(42.84);    // 42
+    Math.trunc(0.123);    //  0
+    Math.trunc(-0.123);   // -0
+    Math.trunc('-1.123'); // -1
+    Math.trunc(NaN);      // NaN
+    Math.trunc('foo');    // NaN
+    Math.trunc();         // NaN
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.trunc">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-math.trunc</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`trunc`
+
+38
+
+12
+
+25
+
+No
+
+25
+
+8
+
+38
+
+38
+
+25
+
+25
+
+8
+
+3.0
+
+## See also
+
+-   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/math.polyfill.js)
+-   [`Math.abs()`](abs)
+-   [`Math.ceil()`](ceil)
+-   [`Math.floor()`](floor)
+-   [`Math.round()`](round)
+-   [`Math.sign()`](sign)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc</a>
+
+# try...catch
+
+The `try...catch` statement marks a block of statements to try and specifies a response should an exception be thrown.
+
+## Syntax
+
+    try {
+      try_statements
+    }
+    catch (exception_var) {
+      catch_statements
+    }
+    finally {
+      finally_statements
+    }
+
+`try_statements`
+The statements to be executed.
+
+`catch_statements`
+Statement that is executed if an exception is thrown in the `try`-block.
+
+`exception_var`
+An optional identifier to hold an exception object for the associated `catch`-block.
+
+`finally_statements`
+Statements that are executed after the `try` statement completes. These statements execute regardless of whether an exception was thrown or caught.
+
+## Description
+
+The `try` statement consists of a `try`-block, which contains one or more statements. `{}` must always be used, even for single statements. At least one `catch`-block, or a `finally`-block, must be present. This gives us three forms for the `try` statement:
+
+-   `try...catch`
+-   `try...finally`
+-   `try...catch...finally`
+
+A `catch`-block contains statements that specify what to do if an exception is thrown in the `try`-block. If any statement within the `try`-block (or in a function called from within the `try`-block) throws an exception, control is immediately shifted to the `catch`-block. If no exception is thrown in the `try`-block, the `catch`-block is skipped.
+
+The `finally`-block will always execute after the `try`-block and `catch`-block(s) have finished executing. It always executes, regardless of whether an exception was thrown or caught.
+
+You can nest one or more `try` statements. If an inner `try` statement does not have a `catch`-block, the enclosing `try` statement's `catch`-block is used instead.
+
+You can also use the `try` statement to handle JavaScript exceptions. See the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) for more information on JavaScript exceptions.
+
+### Unconditional catch-block
+
+When a `catch`-block is used, the `catch`-block is executed when any exception is thrown from within the `try`-block. For example, when the exception occurs in the following code, control transfers to the `catch`-block.
+
+    try {
+      throw 'myException'; // generates an exception
+    } catch (e) {
+      // statements to handle any exceptions
+      logMyErrors(e); // pass exception object to error handler
+    }
+
+The `catch`-block specifies an identifier (`e` in the example above) that holds the value of the exception; this value is only available in the [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) of the `catch`-block.
+
+### Conditional catch-blocks
+
+You can create "Conditional `catch`-blocks" by combining `try...catch` blocks with `if...else if...else` structures, like this:
+
+    try {
+      myroutine(); // may throw three types of exceptions
+    } catch (e) {
+      if (e instanceof TypeError) {
+        // statements to handle TypeError exceptions
+      } else if (e instanceof RangeError) {
+        // statements to handle RangeError exceptions
+      } else if (e instanceof EvalError) {
+        // statements to handle EvalError exceptions
+      } else {
+        // statements to handle any unspecified exceptions
+        logMyErrors(e); // pass exception object to error handler
+      }
+    }
+
+A common use case for this is to only catch (and silence) a small subset of expected errors, and then re-throw the error in other cases:
+
+    try {
+      myRoutine();
+    } catch (e) {
+      if (e instanceof RangeError) {
+        // statements to handle this very common expected error
+      } else {
+        throw e;  // re-throw the error unchanged
+      }
+    }
+
+### The exception identifier
+
+When an exception is thrown in the `try`-block, _`exception_var`_ (i.e., the `e` in `catch (e)`) holds the exception value. You can use this identifier to get information about the exception that was thrown. This identifier is only available in the `catch`-block's [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope). If you don't need the exception value, it could be omitted.
+
+    function isValidJSON(text) {
+      try {
+        JSON.parse(text);
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+### The finally-block
+
+The `finally`-block contains statements to execute after the `try`-block and `catch`-block(s) execute, but before the statements following the `try...catch...finally`-block. Note that the `finally`-block executes regardless of whether an exception is thrown. Also, if an exception is thrown, the statements in the `finally`-block execute even if no `catch`-block handles the exception.
+
+The following example shows one use case for the `finally`-block. The code opens a file and then executes statements that use the file; the `finally`-block makes sure the file always closes after it is used even if an exception was thrown.
+
+    openMyFile();
+    try {
+      // tie up a resource
+      writeMyFile(theData);
+    } finally {
+      closeMyFile(); // always close the resource
+    }
+
+## Examples
+
+### Nested try-blocks
+
+First, let's see what happens with this:
+
+    try {
+      try {
+        throw new Error('oops');
+      } finally {
+        console.log('finally');
+      }
+    } catch (ex) {
+      console.error('outer', ex.message);
+    }
+
+    // Output:
+    // "finally"
+    // "outer" "oops"
+
+Now, if we already caught the exception in the inner `try`-block by adding a `catch`-block
+
+    try {
+      try {
+        throw new Error('oops');
+      } catch (ex) {
+        console.error('inner', ex.message);
+      } finally {
+        console.log('finally');
+      }
+    } catch (ex) {
+      console.error('outer', ex.message);
+    }
+
+    // Output:
+    // "inner" "oops"
+    // "finally"
+
+And now, let's rethrow the error.
+
+    try {
+      try {
+        throw new Error('oops');
+      } catch (ex) {
+        console.error('inner', ex.message);
+        throw ex;
+      } finally {
+        console.log('finally');
+      }
+    } catch (ex) {
+      console.error('outer', ex.message);
+    }
+
+    // Output:
+    // "inner" "oops"
+    // "finally"
+    // "outer" "oops"
+
+Any given exception will be caught only once by the nearest enclosing `catch`-block unless it is rethrown. Of course, any new exceptions raised in the "inner" block (because the code in `catch`-block may do something that throws), will be caught by the "outer" block.
+
+### Returning from a finally-block
+
+If the `finally`-block returns a value, this value becomes the return value of the entire `try-catch-finally` statement, regardless of any `return` statements in the `try` and `catch`-blocks. This includes exceptions thrown inside of the `catch`-block:
+
+    (function() {
+      try {
+        try {
+          throw new Error('oops');
+        } catch (ex) {
+          console.error('inner', ex.message);
+          throw ex;
+        } finally {
+          console.log('finally');
+          return;
+        }
+      } catch (ex) {
+        console.error('outer', ex.message);
+      }
+    })();
+
+    // Output:
+    // "inner" "oops"
+    // "finally"
+
+The outer "oops" is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-try-statement">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'try statement' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`try...catch`
+
+1
+
+12
+
+1
+
+5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`optional_catch_binding`
+
+66
+
+79
+
+58
+
+No
+
+53
+
+11.1
+
+66
+
+66
+
+58
+
+47
+
+11.3
+
+9.0
+
+## See also
+
+-   [`Error`](../global_objects/error)
+-   [`throw`](throw)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch</a>
+
+# TypeError: invalid arguments
+
+The JavaScript exception "invalid arguments" occurs when [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors are provided with a wrong argument.
+
+## Message
+
+    TypeError: invalid arguments (Firefox)
+
+## Error type
+
+[`TypeError`](../global_objects/typeerror)
+
+## What went wrong?
+
+[Typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors require either
+
+-   a length,
+-   another typed array,
+-   array-like objects,
+-   iterable objects or
+-   an [`ArrayBuffer`](../global_objects/arraybuffer) object
+
+to create a new typed array. Other constructor arguments will not create a valid typed array.
+
+## Examples
+
+### No strings in typed arrays
+
+Typed arrays, for example a [`Uint8Array`](../global_objects/uint8array), can't be constructed from a string. In fact, strings can't be in typed arrays at all.
+
+    var ta = new Uint8Array("nope");
+    // TypeError: invalid arguments
+
+Different ways to create a valid [`Uint8Array`](../global_objects/uint8array):
+
+    // From a length
+    var uint8 = new Uint8Array(2);
+    uint8[0] = 42;
+    console.log(uint8[0]); // 42
+    console.log(uint8.length); // 2
+    console.log(uint8.BYTES_PER_ELEMENT); // 1
+
+    // From an array
+    var arr = new Uint8Array([21,31]);
+    console.log(arr[1]); // 31
+
+    // From another TypedArray
+    var x = new Uint8Array([21, 31]);
+    var y = new Uint8Array(x);
+    console.log(y[0]); // 21
+
+    // From an ArrayBuffer
+    var buffer = new ArrayBuffer(8);
+    var z = new Uint8Array(buffer, 1, 4);
+
+    // From an iterable
+    var iterable = function*(){ yield* [1,2,3]; }();
+    var uint8 = new Uint8Array(iterable);
+    // Uint8Array[1, 2, 3]
+
+## See also
+
+-   [Typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](../global_objects/arraybuffer)
+-   [`Uint8Array`](../global_objects/uint8array)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Typed_array_invalid_arguments" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Typed_array_invalid_arguments</a>
+
+# TypedArray
+
+A **_TypedArray_** object describes an array-like view of an underlying [binary data buffer](arraybuffer). There is no global property named `TypedArray`, nor is there a directly visible `TypedArray` constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.
+
+## Description
+
+ECMAScript 2015 defines a `TypedArray` constructor that serves as the `[[Prototype]]` of all `TypedArray` constructors. This constructor is not directly exposed: there is no global `%TypedArray%` or `TypedArray` property. It is only directly accessible through `Object.getPrototypeOf(Int8Array)` and similar. All `TypedArray`s constructors inherit common properties from the `%TypedArray%` constructor function. Additionally, all typed array prototypes (`TypedArray.prototype`) have `%TypedArray%.prototype` as their `[[Prototype]]`.
+
+The `%TypedArray%` constructor on its own is not particularly useful. Calling it or using it in a `new` expression will throw a [`TypeError`](typeerror), except when used during object creation in JS engines that support subclassing. There are at present no such engines, so `%TypedArray%` is only useful to polyfill functions or properties onto all `TypedArray` constructors.
+
+When creating an instance of a `TypedArray` (e.g. `Int8Array`), an array buffer is created internally in memory or, if an `ArrayBuffer` object is given as constructor argument, then this is used instead. The buffer address is saved as an internal property of the instance and all the methods of `%TypedArray%.prototype`, i.e. set value and get value etc., operate on that array buffer address.
+
+### TypedArray objects
+
+<table><thead><tr class="header"><th>Type</th><th>Value Range</th><th>Size in bytes</th><th>Description</th><th>Web IDL type</th><th>Equivalent C type</th></tr></thead><tbody><tr class="odd"><td><a href="int8array"><code>Int8Array</code></a></td><td><code>-128</code> to <code>127</code></td><td>1</td><td>8-bit two's complement signed integer</td><td><code>byte</code></td><td><code>int8_t</code></td></tr><tr class="even"><td><a href="uint8array"><code>Uint8Array</code></a></td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr class="odd"><td><a href="uint8clampedarray"><code>Uint8ClampedArray</code></a></td><td><code>0</code> to <code>255</code></td><td>1</td><td>8-bit unsigned integer (clamped)</td><td><code>octet</code></td><td><code>uint8_t</code></td></tr><tr class="even"><td><a href="int16array"><code>Int16Array</code></a></td><td><code>-32768</code> to <code>32767</code></td><td>2</td><td>16-bit two's complement signed integer</td><td><code>short</code></td><td><code>int16_t</code></td></tr><tr class="odd"><td><a href="uint16array"><code>Uint16Array</code></a></td><td><code>0</code> to <code>65535</code></td><td>2</td><td>16-bit unsigned integer</td><td><code>unsigned short</code></td><td><code>uint16_t</code></td></tr><tr class="even"><td><a href="int32array"><code>Int32Array</code></a></td><td><code>-2147483648</code> to <code>2147483647</code></td><td>4</td><td>32-bit two's complement signed integer</td><td><code>long</code></td><td><code>int32_t</code></td></tr><tr class="odd"><td><a href="uint32array"><code>Uint32Array</code></a></td><td><code>0</code> to <code>4294967295</code></td><td>4</td><td>32-bit unsigned integer</td><td><code>unsigned long</code></td><td><code>uint32_t</code></td></tr><tr class="even"><td><a href="float32array"><code>Float32Array</code></a></td><td><code>1.2</code>×<code>10-38</code> to <code>3.4</code>×<code>1038</code></td><td>4</td><td>32-bit IEEE floating point number (7 significant digits e.g., <code>1.234567</code>)</td><td><code>unrestricted float</code></td><td><code>float</code></td></tr><tr class="odd"><td><a href="float64array"><code>Float64Array</code></a></td><td><code>5.0</code>×<code>10-324</code> to <code>1.8</code>×<code>10308</code></td><td>8</td><td>64-bit IEEE floating point number (16 significant digits e.g., <code>1.23456789012345</code>)</td><td><code>unrestricted double</code></td><td><code>double</code></td></tr><tr class="even"><td><a href="bigint64array"><code>BigInt64Array</code></a></td><td><code>-263</code> to <code>263-1</code></td><td>8</td><td>64-bit two's complement signed integer</td><td><code>bigint</code></td><td><code>int64_t (signed long long)</code></td></tr><tr class="odd"><td><a href="biguint64array"><code>BigUint64Array</code></a></td><td><code>0</code> to <code>264-1</code></td><td>8</td><td>64-bit unsigned integer</td><td><code>bigint</code></td><td><code>uint64_t (unsigned long long)</code></td></tr></tbody></table>
+
+## Constructor
+
+This object cannot be instantiated directly. Instead, you create an instance of an array of a particular type, such as a [`Int8Array`](int8array) or a [`BigInt64Array`](bigint64array). These objects all have a common syntax for their constructors:
+
+    new TypedArray()
+    new TypedArray(length)
+    new TypedArray(typedArray)
+    new TypedArray(object)
+
+    new TypedArray(buffer)
+    new TypedArray(buffer, byteOffset)
+    new TypedArray(buffer, byteOffset, length)
+
+Where TypedArray is a constructor for one of the concrete types.
+
+### Parameters
+
+`length`
+When called with a `length` argument, an internal array buffer is created in memory, of size `length` _multiplied by `BYTES_PER_ELEMENT`_ bytes, containing zeros.
+
+`typedArray`
+When called with a `typedArray` argument, which can be an object of any of the typed array types (such as `Int32Array`), the `typedArray` gets copied into a new typed array. Each value in `typedArray` is converted to the corresponding type of the constructor before being copied into the new array. The length of the new typed array will be same as the length of the `typedArray` argument.
+
+`object`
+When called with an `object` argument, a new typed array is created as if by the `TypedArray.from()` method.
+
+`buffer`, `byteOffset`, `length`
+When called with a `buffer`, and optionally a `byteOffset` and a `length` argument, a new typed array view is created that views the specified [`ArrayBuffer`](arraybuffer). The `byteOffset` and `length` parameters specify the memory range that will be exposed by the typed array view. If both are omitted, all of `buffer` is viewed; if only `length` is omitted, the remainder of `buffer` is viewed.
+
+## Static properties
+
+[`TypedArray.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
+Returns a number value of the element size for the different `TypedArray` objects.
+
+[`TypedArray.name`](typedarray/name)
+Returns the string value of the constructor name (e.g, "`Int8Array`").
+
+[`get TypedArray[@@species]`](typedarray/@@species)
+The constructor function used to create derived objects.
+
+[`TypedArray.prototype`](typedarray)
+Prototype for `TypedArray` objects.
+
+## Static methods
+
+[`TypedArray.from()`](typedarray/from)
+Creates a new `TypedArray` from an array-like or iterable object. See also [`Array.from()`](array/from).
+
+[`TypedArray.of()`](typedarray/of)
+Creates a new `TypedArray` with a variable number of arguments. See also [`Array.of()`](array/of).
+
+## Instance properties
+
+[`TypedArray.prototype.buffer`](typedarray/buffer)
+Returns the [`ArrayBuffer`](arraybuffer) referenced by the typed array. Fixed at construction time and thus **read only**.
+
+[`TypedArray.prototype.byteLength`](typedarray/bytelength)
+Returns the length (in bytes) of the typed array. Fixed at construction time and thus **read only.**
+
+[`TypedArray.prototype.byteOffset`](typedarray/byteoffset)
+Returns the offset (in bytes) of the typed array from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`TypedArray.prototype.length`](typedarray/length)
+Returns the number of elements held in the typed array. Fixed at construction time and thus **read only.**
+
+## Instance methods
+
+[`TypedArray.prototype.at()`](typedarray/at)
+Takes an integer value and returns the item at that index. This method allows for negative integers, which count back from the last item.
+
+[`TypedArray.prototype.copyWithin()`](typedarray/copywithin)
+Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
+
+[`TypedArray.prototype.entries()`](typedarray/entries)
+Returns a new array iterator object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+
+[`TypedArray.prototype.every()`](typedarray/every)
+Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
+
+[`TypedArray.prototype.fill()`](typedarray/fill)
+Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
+
+[`TypedArray.prototype.filter()`](typedarray/filter)
+Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
+
+[`TypedArray.prototype.find()`](typedarray/find)
+Returns the found value in the array, if an element in the array satisfies the provided testing function, or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
+
+[`TypedArray.prototype.findIndex()`](typedarray/findindex)
+Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
+
+[`TypedArray.prototype.forEach()`](typedarray/foreach)
+Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
+
+[`TypedArray.prototype.includes()`](typedarray/includes)
+Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
+
+[`TypedArray.prototype.indexOf()`](typedarray/indexof)
+Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
+
+[`TypedArray.prototype.join()`](typedarray/join)
+Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
+
+[`TypedArray.prototype.keys()`](typedarray/keys)
+Returns a new array iterator that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+
+[`TypedArray.prototype.lastIndexOf()`](typedarray/lastindexof)
+Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
+
+[`TypedArray.prototype.map()`](typedarray/map)
+Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
+
+[`TypedArray.prototype.reduce()`](typedarray/reduce)
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
+
+[`TypedArray.prototype.reduceRight()`](typedarray/reduceright)
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
+
+[`TypedArray.prototype.reverse()`](typedarray/reverse)
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
+
+[`TypedArray.prototype.set()`](typedarray/set)
+Stores multiple values in the typed array, reading input values from a specified array.
+
+[`TypedArray.prototype.slice()`](typedarray/slice)
+Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
+
+[`TypedArray.prototype.some()`](typedarray/some)
+Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
+
+[`TypedArray.prototype.sort()`](typedarray/sort)
+Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
+
+[`TypedArray.prototype.subarray()`](typedarray/subarray)
+Returns a new `TypedArray` from the given start and end element index.
+
+[`TypedArray.prototype.values()`](typedarray/values)
+Returns a new array iterator object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+
+[`TypedArray.prototype.toLocaleString()`](typedarray/tolocalestring)
+Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
+
+[`TypedArray.prototype.toString()`](typedarray/tostring)
+Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
+
+[`TypedArray.prototype[@@iterator]()`](typedarray/@@iterator)
+Returns a new array iterator object that contains the values for each index in the array.
+
+## Examples
+
+### New is required
+
+Starting with ECMAScript 2015, `TypedArray` constructors must be constructed with the [`new`](../operators/new) operator. Calling a `TypedArray` constructor as a function without `new` will throw a [`TypeError`](typeerror).
+
+    var dv = Int8Array([1, 2, 3]);
+    // TypeError: calling a builtin Int8Array constructor
+    // without new is forbidden
+
+    var dv = new Int8Array([1, 2, 3]);
+
+### Property access
+
+You can reference elements in the array using standard array index syntax (that is, using bracket notation). However, getting or setting indexed properties on typed arrays will not search in the prototype chain for this property, even when the indices are out of bound. Indexed properties will consult the [`ArrayBuffer`](arraybuffer) and will never look at object properties. You can still use named properties, just like with all objects.
+
+    // Setting and getting using standard array syntax
+    var int16 = new Int16Array(2);
+    int16[0] = 42;
+    console.log(int16[0]); // 42
+
+    // Indexed properties on prototypes are not consulted (Fx 25)
+    Int8Array.prototype[20] = 'foo';
+    (new Int8Array(32))[20]; // 0
+    // even when out of bound
+    Int8Array.prototype[20] = 'foo';
+    (new Int8Array(8))[20]; // undefined
+    // or with negative integers
+    Int8Array.prototype[-1] = 'foo';
+    (new Int8Array(8))[-1]; // undefined
+
+    // Named properties are allowed, though (Fx 30)
+    Int8Array.prototype.foo = 'bar';
+    (new Int8Array(32)).foo; // "bar"
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`TypedArray`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`BYTES_PER_ELEMENT`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`at`
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+`buffer`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`byteLength`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`byteOffset`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`constructor_without_arguments`
+
+7
+
+12
+
+55
+
+10
+
+11.6
+
+5.1
+
+≤37
+
+18
+
+55
+
+12
+
+5
+
+1.0
+
+`copyWithin`
+
+45
+
+14
+
+34
+
+No
+
+36
+
+9.1
+
+No
+
+No
+
+34
+
+No
+
+9.3
+
+No
+
+`entries`
+
+45
+
+14
+
+37
+
+No
+
+36
+
+9.1
+
+No
+
+45
+
+37
+
+No
+
+9.3
+
+5.0
+
+`every`
+
+45
+
+14
+
+37
+
+No
+
+36
+
+9.1
+
+No
+
+45
+
+37
+
+No
+
+9.3
+
+5.0
+
+`fill`
+
+45
+
+14
+
+37
+
+No
+
+36
+
+9.1
+
+No
+
+45
+
+37
+
+No
+
+9.3
+
+5.0
+
+`filter`
+
+45
+
+14
+
+38
+
+No
+
+No
+
+9.1
+
+No
+
+45
+
+38
+
+No
+
+9.3
+
+5.0
+
+`find`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+9.1
+
+45
+
+45
+
+37
+
+32
+
+9.3
+
+5.0
+
+`findIndex`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+9.1
+
+45
+
+45
+
+37
+
+32
+
+9.3
+
+5.0
+
+`forEach`
+
+45
+
+14
+
+38
+
+No
+
+32
+
+10
+
+45
+
+45
+
+38
+
+32
+
+10
+
+5.0
+
+`from`
+
+45
+
+14
+
+38
+
+No
+
+No
+
+10
+
+No
+
+No
+
+38
+
+No
+
+10
+
+No
+
+`includes`
+
+47
+
+14
+
+43
+
+No
+
+34
+
+10
+
+No
+
+47
+
+43
+
+34
+
+10
+
+5.0
+
+`index_properties_not_consulting_prototype`
+
+7
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+12
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+25
+
+10
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+11.6
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+5.1
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+≤37
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+18
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+25
+
+12
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+5
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+1.0
+
+Negative integers are not considered as indexed properties and therefore return the value of the prototype property.
+
+`indexOf`
+
+45
+
+14
+
+37
+
+Starting with Firefox 47, this method will no longer return `-0`. For example, `new Uint8Array([0]).indexOf(0, -0)` will now always return `+0`.
+
+No
+
+32
+
+9.1
+
+No
+
+45
+
+37
+
+Starting with Firefox 47, this method will no longer return `-0`. For example, `new Uint8Array([0]).indexOf(0, -0)` will now always return `+0`.
+
+32
+
+9.3
+
+5.0
+
+`iterable_in_constructor`
+
+39
+
+14
+
+52
+
+No
+
+26
+
+10
+
+39
+
+39
+
+52
+
+26
+
+10
+
+4.0
+
+`join`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+9.1
+
+45
+
+45
+
+37
+
+32
+
+9.3
+
+5.0
+
+`keys`
+
+38
+
+14
+
+37
+
+No
+
+25
+
+10
+
+38
+
+38
+
+37
+
+25
+
+10
+
+3.0
+
+`lastIndexOf`
+
+45
+
+14
+
+37
+
+Starting with Firefox 47, this method will no longer return `-0`. For example, `new Uint8Array([0]).lastIndexOf(0, -0)` will now always return `+0`.
+
+No
+
+32
+
+10
+
+45
+
+45
+
+37
+
+Starting with Firefox 47, this method will no longer return `-0`. For example, `new Uint8Array([0]).lastIndexOf(0, -0)` will now always return `+0`.
+
+32
+
+10
+
+5.0
+
+`length`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`map`
+
+45
+
+14
+
+38
+
+No
+
+32
+
+9.1
+
+45
+
+45
+
+38
+
+32
+
+9.3
+
+5.0
+
+`name`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`named_properties`
+
+7
+
+12
+
+30
+
+10
+
+11.6
+
+5.1
+
+≤37
+
+18
+
+30
+
+12
+
+5
+
+1.0
+
+`new_required`
+
+7
+
+14
+
+44
+
+No
+
+15
+
+5.1
+
+≤37
+
+18
+
+44
+
+14
+
+5
+
+1.0
+
+`of`
+
+45
+
+14
+
+38
+
+No
+
+No
+
+9.1
+
+No
+
+No
+
+38
+
+No
+
+9.3
+
+No
+
+`reduce`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+10
+
+45
+
+45
+
+37
+
+No
+
+10
+
+5.0
+
+`reduceRight`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+10
+
+45
+
+45
+
+37
+
+No
+
+10
+
+5.0
+
+`reverse`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+10
+
+45
+
+45
+
+37
+
+No
+
+10
+
+5.0
+
+`set`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`slice`
+
+45
+
+14
+
+38
+
+No
+
+32
+
+10
+
+45
+
+45
+
+38
+
+32
+
+10
+
+5.0
+
+`some`
+
+45
+
+14
+
+37
+
+No
+
+32
+
+10
+
+45
+
+45
+
+37
+
+No
+
+10
+
+5.0
+
+`sort`
+
+45
+
+14
+
+46
+
+No
+
+32
+
+10
+
+45
+
+45
+
+46
+
+32
+
+10
+
+5.0
+
+`subarray`
+
+7
+
+14
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`toLocaleString`
+
+7
+
+12
+
+51
+
+10
+
+11.6
+
+5.1
+
+≤37
+
+18
+
+51
+
+12
+
+5
+
+1.0
+
+`toString`
+
+7
+
+12
+
+51
+
+10
+
+11.6
+
+5.1
+
+≤37
+
+18
+
+51
+
+12
+
+5
+
+1.0
+
+`values`
+
+38
+
+14
+
+37
+
+No
+
+25
+
+10
+
+38
+
+38
+
+37
+
+25
+
+10
+
+3.0
+
+`@@iterator`
+
+38
+
+12
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+No
+
+25
+
+10
+
+38
+
+38
+
+36
+
+27-36
+
+A placeholder property named `@@iterator` is used.
+
+17-27
+
+A placeholder property named `iterator` is used.
+
+25
+
+10
+
+3.0
+
+`@@species`
+
+51
+
+13
+
+48
+
+No
+
+38
+
+10
+
+51
+
+51
+
+48
+
+41
+
+10
+
+5.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](arraybuffer)
+-   [`DataView`](dataview)
+-   [TextDecoder](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder) — Helper that decode strings from numerical data
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray</a>
+
+# TypeError
+
+The `TypeError` object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.
+
+A `TypeError` may be thrown when:
+
+-   an operand or argument passed to a function is incompatible with the type expected by that operator or function; or
+-   when attempting to modify a value that cannot be changed; or
+-   when attempting to use a value in an inappropriate way.
+
+## Constructor
+
+[`TypeError()`](typeerror/typeerror)
+Creates a new `TypeError` object.
+
+## Instance properties
+
+[`TypeError.prototype.message`](error/message)
+Error message. Although ECMA-262 specifies that [`TypeError`](typeerror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
+
+[`TypeError.prototype.name`](error/name)
+Error name. Inherited from [`Error`](error).
+
+[`TypeError.prototype.fileName`](error/filename)
+Path to file that raised this error. Inherited from [`Error`](error).
+
+[`TypeError.prototype.lineNumber`](error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](error).
+
+[`TypeError.prototype.columnNumber`](error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](error).
+
+[`TypeError.prototype.stack`](error/stack)
+Stack trace. Inherited from [`Error`](error).
+
+## Examples
+
+### Catching a TypeError
+
+    try {
+      null.f()
+    } catch (e) {
+      console.log(e instanceof TypeError)  // true
+      console.log(e.message)               // "null has no properties"
+      console.log(e.name)                  // "TypeError"
+      console.log(e.fileName)              // "Scratchpad/1"
+      console.log(e.lineNumber)            // 2
+      console.log(e.columnNumber)          // 2
+      console.log(e.stack)                 // "@Scratchpad/2:2:3\n"
+    }
+
+### Creating a TypeError
+
+    try {
+      throw new TypeError('Hello', "someFile.js", 10)
+    } catch (e) {
+      console.log(e instanceof TypeError)  // true
+      console.log(e.message)               // "Hello"
+      console.log(e.name)                  // "TypeError"
+      console.log(e.fileName)              // "someFile.js"
+      console.log(e.lineNumber)            // 10
+      console.log(e.columnNumber)          // 0
+      console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'TypeError' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`TypeError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`TypeError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Error`](error)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError</a>
+
+# typeof
+
+The `typeof` operator returns a string indicating the type of the unevaluated operand.
+
+## Syntax
+
+The `typeof` operator is followed by its operand:
+
+    typeof operand
+    typeof(operand)
+
+### Parameters
+
+`operand`
+An expression representing the object or [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) whose type is to be returned.
+
+## Description
+
+The following table summarizes the possible return values of `typeof`. For more information about types and primitives, see also the [JavaScript data structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) page.
+
+<table><thead><tr class="header"><th>Type</th><th>Result</th></tr></thead><tbody><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">Undefined</a></td><td><code>"undefined"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Null">Null</a></td><td><code>"object"</code> (see <a href="#typeof_null">below</a>)</td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></td><td><code>"boolean"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></td><td><code>"number"</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt">BigInt</a> (new in ECMAScript 2020)</td><td><code>"bigint"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></td><td><code>"string"</code></td></tr><tr class="odd"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Symbol</a> (new in ECMAScript 2015)</td><td><code>"symbol"</code></td></tr><tr class="even"><td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Function</a> object (implements [[Call]] in ECMA-262 terms)</td><td><code>"function"</code></td></tr><tr class="odd"><td>Any other object</td><td><code>"object"</code></td></tr></tbody></table>
+
+**Note:** ECMAScript 2019 and older permitted implementations to have `typeof` return any implementation-defined string value for non-callable non-standard exotic objects.
+
+The only known browser to have actually taken advantage of this is old Internet Explorer (see [below](#ie-specific_notes)).
+
+## Examples
+
+### Basic usage
+
+    // Numbers
+    typeof 37 === 'number';
+    typeof 3.14 === 'number';
+    typeof(42) === 'number';
+    typeof Math.LN2 === 'number';
+    typeof Infinity === 'number';
+    typeof NaN === 'number'; // Despite being "Not-A-Number"
+    typeof Number('1') === 'number';      // Number tries to parse things into numbers
+    typeof Number('shoe') === 'number';   // including values that cannot be type coerced to a number
+
+    typeof 42n === 'bigint';
+
+    // Strings
+    typeof '' === 'string';
+    typeof 'bla' === 'string';
+    typeof `template literal` === 'string';
+    typeof '1' === 'string'; // note that a number within a string is still typeof string
+    typeof (typeof 1) === 'string'; // typeof always returns a string
+    typeof String(1) === 'string'; // String converts anything into a string, safer than toString
+
+    // Booleans
+    typeof true === 'boolean';
+    typeof false === 'boolean';
+    typeof Boolean(1) === 'boolean'; // Boolean() will convert values based on if they're truthy or falsy
+    typeof !!(1) === 'boolean'; // two calls of the ! (logical NOT) operator are equivalent to Boolean()
+
+    // Symbols
+    typeof Symbol() === 'symbol'
+    typeof Symbol('foo') === 'symbol'
+    typeof Symbol.iterator === 'symbol'
+
+    // Undefined
+    typeof undefined === 'undefined';
+    typeof declaredButUndefinedVariable === 'undefined';
+    typeof undeclaredVariable === 'undefined';
+
+    // Objects
+    typeof {a: 1} === 'object';
+
+    // use Array.isArray or Object.prototype.toString.call
+    // to differentiate regular objects from arrays
+    typeof [1, 2, 4] === 'object';
+
+    typeof new Date() === 'object';
+    typeof /regex/ === 'object'; // See Regular expressions section for historical results
+
+    // The following are confusing, dangerous, and wasteful. Avoid them.
+    typeof new Boolean(true) === 'object';
+    typeof new Number(1) === 'object';
+    typeof new String('abc') === 'object';
+
+    // Functions
+    typeof function() {} === 'function';
+    typeof class C {} === 'function';
+    typeof Math.sin === 'function';
+
+### `typeof null`
+
+    // This stands since the beginning of JavaScript
+    typeof null === 'object';
+
+In the first implementation of JavaScript, JavaScript values were represented as a type tag and a value. The type tag for objects was `0`. `null` was represented as the NULL pointer (`0x00` in most platforms). Consequently, `null` had `0` as type tag, hence the `typeof` return value `"object"`. ([reference](https://www.2ality.com/2013/10/typeof-null.html))
+
+A fix was proposed for ECMAScript (via an opt-in), but [was rejected](https://web.archive.org/web/20160331031419/http://wiki.ecmascript.org:80/doku.php?id=harmony:typeof_null). It would have resulted in `typeof null === 'null'`.
+
+### Using `new` operator
+
+    // All constructor functions, with the exception of the Function constructor, will always be typeof 'object'
+    let str = new String('String');
+    let num = new Number(100);
+
+    typeof str; // It will return 'object'
+    typeof num; // It will return 'object'
+
+    let func = new Function();
+
+    typeof func; // It will return 'function'
+
+### Need for parentheses in Syntax
+
+    // Parentheses can be used for determining the data type of expressions.
+    let iData = 99;
+
+    typeof iData + ' Wisen'; // 'number Wisen'
+    typeof (iData + ' Wisen'); // 'string'
+
+### Regular expressions
+
+Callable regular expressions were a non-standard addition in some browsers.
+
+    typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
+    typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1
+
+### Errors
+
+Before ECMAScript 2015, `typeof` was always guaranteed to return a string for any operand it was supplied with. Even with undeclared identifiers, `typeof` will return `'undefined'`. Using `typeof` could never generate an error.
+
+But with the addition of block-scoped [`let`](../statements/let) and [`Statements/const`](../statements/const) using `typeof` on `let` and `const` variables (or using `typeof` on a `class`) in a block before they are declared will throw a [`ReferenceError`](../global_objects/referenceerror). Block scoped variables are in a "[temporal dead zone](../statements/let#the_temporal_dead_zone_and_typeof)" from the start of the block until the initialization is processed, during which, it will throw an error if accessed.
+
+    typeof undeclaredVariable === 'undefined';
+
+    typeof newLetVariable; // ReferenceError
+    typeof newConstVariable; // ReferenceError
+    typeof newClass; // ReferenceError
+
+    let newLetVariable;
+    const newConstVariable = 'hello';
+    class newClass{};
+
+### Exceptions
+
+All current browsers expose a non-standard host object [`document.all`](https://developer.mozilla.org/en-US/docs/Web/API/Document/all) with type `undefined`.
+
+    typeof document.all === 'undefined';
+
+Although the specification allows custom type tags for non-standard exotic objects, it requires those type tags to be different from the predefined ones. The case of `document.all` having type `'undefined'` is classified in the web standards as a "willful violation" of the original ECMA JavaScript standard.
+
+### Real-world usage
+
+`typeof` is very useful, but it's not as versatile as might be required. For example, `typeof([])` , is `'object'`, as well as `typeof(new Date())`, `typeof(/abc/)`, etc.
+
+For greater specificity in checking types, a `typeof` wrapper for usage in production-level code would be as follows (provided `obj` exists):
+
+      function type(obj, fullClass) {
+
+        // get toPrototypeString() of obj (handles all types)
+        // Early JS environments return '[object Object]' for null, so it's best to directly check for it.
+        if (fullClass) {
+            return (obj === null) ? '[object Null]' : Object.prototype.toString.call(obj);
+        }
+        if (obj == null) { return (obj + '').toLowerCase(); } // implicit toString() conversion
+
+        var deepType = Object.prototype.toString.call(obj).slice(8,-1).toLowerCase();
+        if (deepType === 'generatorfunction') { return 'function' }
+
+        // Prevent overspecificity (for example, [object HTMLDivElement], etc).
+        // Account for functionish Regexp (Android <=2.3), functionish <object> element (Chrome <=57, Firefox <=52), etc.
+        // String.prototype.match is universally supported.
+
+        return deepType.match(/^(array|bigint|date|error|function|generator|regexp|symbol)$/) ? deepType :
+           (typeof obj === 'object' || typeof obj === 'function') ? 'object' : typeof obj;
+      }
+
+For checking non-existent variables that would otherwise throw a [`ReferenceError`](../global_objects/referenceerror), use `typeof nonExistentVar === 'undefined'`.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typeof-operator">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'The typeof Operator' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`typeof`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+### IE-specific notes
+
+On IE 6, 7, and 8 a lot of host objects are objects and not functions. For example:
+
+    typeof alert === 'object'
+
+Some non-standard IE properties return other values ([tc39/ecma262\#1440 (comment)](https://github.com/tc39/ecma262/issues/1440#issuecomment-461963872)):
+
+    typeof window.external.AddSearchProvider === "unknown";
+    typeof window.external.IsSearchProviderInstalled === "unknown";
+
+## See also
+
+-   [`instanceof`](instanceof)
+-   [`document.all` willful violation of the standard](https://github.com/tc39/ecma262/issues/668)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof</a>
+
+# Uint16Array
+
+The `Uint16Array` typed array represents an array of 16-bit unsigned integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+
+## Constructor
+
+[`Uint16Array()`](uint16array/uint16array)
+Creates a new `Uint16Array` object.
+
+## Static properties
+
+[`Uint16Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
+Returns a number value of the element size. `2` in the case of an `Uint16Array`.
+
+[`Uint16Array.name`](typedarray/name)
+Returns the string value of the constructor name. In the case of the `Uint16Array` type: "`Uint16Array`".
+
+## Static methods
+
+[`Uint16Array.from()`](typedarray/from)
+Creates a new `Uint16Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
+
+[`Uint16Array.of()`](typedarray/of)
+Creates a new `Uint16Array` with a variable number of arguments. See also [`Array.of()`](array/of).
+
+## Instance properties
+
+[`Uint16Array.prototype.buffer`](typedarray/buffer)
+Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Uint16Array`. Fixed at construction time and thus **read only**.
+
+[`Uint16Array.prototype.byteLength`](typedarray/bytelength)
+Returns the length (in bytes) of the `Uint16Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint16Array.prototype.byteOffset`](typedarray/byteoffset)
+Returns the offset (in bytes) of the `Uint16Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint16Array.prototype.length`](typedarray/length)
+Returns the number of elements held in the `Uint16Array`. Fixed at construction time and thus **read only.**
+
+## Instance methods
+
+[`Uint16Array.prototype.copyWithin()`](typedarray/copywithin)
+Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
+
+[`Uint16Array.prototype.entries()`](typedarray/entries)
+Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+
+[`Uint16Array.prototype.every()`](typedarray/every)
+Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
+
+[`Uint16Array.prototype.fill()`](typedarray/fill)
+Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
+
+[`Uint16Array.prototype.filter()`](typedarray/filter)
+Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
+
+[`Uint16Array.prototype.find()`](typedarray/find)
+Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
+
+[`Uint16Array.prototype.findIndex()`](typedarray/findindex)
+Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
+
+[`Uint16Array.prototype.forEach()`](typedarray/foreach)
+Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
+
+[`Uint16Array.prototype.includes()`](typedarray/includes)
+Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
+
+[`Uint16Array.prototype.indexOf()`](typedarray/indexof)
+Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
+
+[`Uint16Array.prototype.join()`](typedarray/join)
+Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
+
+[`Uint16Array.prototype.keys()`](typedarray/keys)
+Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+
+[`Uint16Array.prototype.lastIndexOf()`](typedarray/lastindexof)
+Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
+
+[`Uint16Array.prototype.map()`](typedarray/map)
+Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
+
+[`Uint16Array.prototype.reduce()`](typedarray/reduce)
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
+
+[`Uint16Array.prototype.reduceRight()`](typedarray/reduceright)
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
+
+[`Uint16Array.prototype.reverse()`](typedarray/reverse)
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
+
+[`Uint16Array.prototype.set()`](typedarray/set)
+Stores multiple values in the typed array, reading input values from a specified array.
+
+[`Uint16Array.prototype.slice()`](typedarray/slice)
+Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
+
+[`Uint16Array.prototype.some()`](typedarray/some)
+Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
+
+[`Uint16Array.prototype.sort()`](typedarray/sort)
+Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
+
+[`Uint16Array.prototype.subarray()`](typedarray/subarray)
+Returns a new `Uint16Array` from the given start and end element index.
+
+[`Uint16Array.prototype.values()`](typedarray/values)
+Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+
+[`Uint16Array.prototype.toLocaleString()`](typedarray/tolocalestring)
+Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
+
+[`Uint16Array.prototype.toString()`](typedarray/tostring)
+Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
+
+[`Uint16Array.prototype[@@iterator]()`](typedarray/@@iterator)
+Returns a new _array iterator_ object that contains the values for each index in the array.
+
+## Examples
+
+### Different ways to create a Uint16Array
+
+    // From a length
+    var uint16 = new Uint16Array(2);
+    uint16[0] = 42;
+    console.log(uint16[0]); // 42
+    console.log(uint16.length); // 2
+    console.log(uint16.BYTES_PER_ELEMENT); // 2
+
+    // From an array
+    var arr = new Uint16Array([21,31]);
+    console.log(arr[1]); // 31
+
+    // From another TypedArray
+    var x = new Uint16Array([21, 31]);
+    var y = new Uint16Array(x);
+    console.log(y[0]); // 21
+
+    // From an ArrayBuffer
+    var buffer = new ArrayBuffer(8);
+    var z = new Uint16Array(buffer, 0, 4);
+
+    // From an iterable
+    var iterable = function*(){ yield* [1,2,3]; }();
+    var uint16 = new Uint16Array(iterable);
+    // Uint16Array[1, 2, 3]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#table-49</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Uint16Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`Uint16Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](arraybuffer)
+-   [`DataView`](dataview)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array</a>
+
+# Uint32Array
+
+The `Uint32Array` typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use [`DataView`](dataview) instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+
+## Constructor
+
+[`Uint32Array()`](uint32array/uint32array)
+Creates a new `Uint32Array` object.
+
+## Static properties
+
+[`Uint32Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
+Returns a number value of the element size. `4` in the case of an `Uint32Array`.
+
+[`Uint32Array.name`](typedarray/name)
+Returns the string value of the constructor name. In the case of the `Uint32Array` type: "Uint32Array".
+
+## Static methods
+
+[`Uint32Array.from()`](typedarray/from)
+Creates a new `Uint32Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
+
+[`Uint32Array.of()`](typedarray/of)
+Creates a new `Uint32Array` with a variable number of arguments. See also [`Array.of()`](array/of).
+
+## Instance properties
+
+[`Uint32Array.prototype.buffer`](typedarray/buffer)
+Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Uint32Array`. Fixed at construction time and thus **read only**.
+
+[`Uint32Array.prototype.byteLength`](typedarray/bytelength)
+Returns the length (in bytes) of the `Uint32Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint32Array.prototype.byteOffset`](typedarray/byteoffset)
+Returns the offset (in bytes) of the `Uint32Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint32Array.prototype.length`](typedarray/length)
+Returns the number of elements held in the `Uint32Array`. Fixed at construction time and thus **read only.**
+
+## Instance methods
+
+[`Uint32Array.prototype.copyWithin()`](typedarray/copywithin)
+Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
+
+[`Uint32Array.prototype.entries()`](typedarray/entries)
+Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+
+[`Uint32Array.prototype.every()`](typedarray/every)
+Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
+
+[`Uint32Array.prototype.fill()`](typedarray/fill)
+Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
+
+[`Uint32Array.prototype.filter()`](typedarray/filter)
+Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
+
+[`Uint32Array.prototype.find()`](typedarray/find)
+Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
+
+[`Uint32Array.prototype.findIndex()`](typedarray/findindex)
+Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
+
+[`Uint32Array.prototype.forEach()`](typedarray/foreach)
+Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
+
+[`Uint32Array.prototype.includes()`](typedarray/includes)
+Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
+
+[`Uint32Array.prototype.indexOf()`](typedarray/indexof)
+Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
+
+[`Uint32Array.prototype.join()`](typedarray/join)
+Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
+
+[`Uint32Array.prototype.keys()`](typedarray/keys)
+Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+
+[`Uint32Array.prototype.lastIndexOf()`](typedarray/lastindexof)
+Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
+
+[`Uint32Array.prototype.map()`](typedarray/map)
+Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
+
+[`Uint32Array.prototype.reduce()`](typedarray/reduce)
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
+
+[`Uint32Array.prototype.reduceRight()`](typedarray/reduceright)
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
+
+[`Uint32Array.prototype.reverse()`](typedarray/reverse)
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
+
+[`Uint32Array.prototype.set()`](typedarray/set)
+Stores multiple values in the typed array, reading input values from a specified array.
+
+[`Uint32Array.prototype.slice()`](typedarray/slice)
+Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
+
+[`Uint32Array.prototype.some()`](typedarray/some)
+Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
+
+[`Uint32Array.prototype.sort()`](typedarray/sort)
+Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
+
+[`Uint32Array.prototype.subarray()`](typedarray/subarray)
+Returns a new `Uint32Array` from the given start and end element index.
+
+[`Uint32Array.prototype.values()`](typedarray/values)
+Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+
+[`Uint32Array.prototype.toLocaleString()`](typedarray/tolocalestring)
+Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
+
+[`Uint32Array.prototype.toString()`](typedarray/tostring)
+Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
+
+[`Uint32Array.prototype[@@iterator]()`](typedarray/@@iterator)
+Returns a new _array iterator_ object that contains the values for each index in the array.
+
+## Examples
+
+### Different ways to create a Uint32Array
+
+    // From a length
+    var uint32 = new Uint32Array(2);
+    uint32[0] = 42;
+    console.log(uint32[0]); // 42
+    console.log(uint32.length); // 2
+    console.log(uint32.BYTES_PER_ELEMENT); // 4
+
+    // From an array
+    var arr = new Uint32Array([21,31]);
+    console.log(arr[1]); // 31
+
+    // From another TypedArray
+    var x = new Uint32Array([21, 31]);
+    var y = new Uint32Array(x);
+    console.log(y[0]); // 21
+
+    // From an ArrayBuffer
+    var buffer = new ArrayBuffer(16);
+    var z = new Uint32Array(buffer, 0, 4);
+
+    // From an iterable
+    var iterable = function*(){ yield* [1,2,3]; }();
+    var uint32 = new Uint32Array(iterable);
+    // Uint32Array[1, 2, 3]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#table-49</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Uint32Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`Uint32Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](arraybuffer)
+-   [`DataView`](dataview)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array</a>
+
+# Uint8Array
+
+The `Uint8Array` typed array represents an array of 8-bit unsigned integers. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+
+## Constructor
+
+[`Uint8Array()`](uint8array/uint8array)
+Creates a new `Uint8Array` object.
+
+## Static properties
+
+[`Uint8Array.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
+Returns a number value of the element size. `1` in the case of an `Uint8Array`.
+
+[`Uint8Array.name`](typedarray/name)
+Returns the string value of the constructor name. In the case of the `Uint8Array` type: "`Uint8Array`".
+
+## Static methods
+
+[`Uint8Array.from()`](typedarray/from)
+Creates a new `Uint8Array` from an array-like or iterable object. See also [`Array.from()`](array/from).
+
+[`Uint8Array.of()`](typedarray/of)
+Creates a new `Uint8Array` with a variable number of arguments. See also [`Array.of()`](array/of).
+
+## Instance properties
+
+[`Uint8Array.prototype.buffer`](typedarray/buffer)
+Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Uint8Array`. Fixed at construction time and thus **read only**.
+
+[`Uint8Array.prototype.byteLength`](typedarray/bytelength)
+Returns the length (in bytes) of the `Uint8Array`. Fixed at construction time and thus **read only.**
+
+[`Uint8Array.prototype.byteOffset`](typedarray/byteoffset)
+Returns the offset (in bytes) of the `Uint8Array` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint8Array.prototype.length`](typedarray/length)
+Returns the number of elements held in the `Uint8Array`. Fixed at construction time and thus **read only.**
+
+## Instance methods
+
+[`Uint8Array.prototype.copyWithin()`](typedarray/copywithin)
+Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
+
+[`Uint8Array.prototype.entries()`](typedarray/entries)
+Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+
+[`Uint8Array.prototype.every()`](typedarray/every)
+Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
+
+[`Uint8Array.prototype.fill()`](typedarray/fill)
+Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
+
+[`Uint8Array.prototype.filter()`](typedarray/filter)
+Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
+
+[`Uint8Array.prototype.find()`](typedarray/find)
+Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
+
+[`Uint8Array.prototype.findIndex()`](typedarray/findindex)
+Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
+
+[`Uint8Array.prototype.forEach()`](typedarray/foreach)
+Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
+
+[`Uint8Array.prototype.includes()`](typedarray/includes)
+Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
+
+[`Uint8Array.prototype.indexOf()`](typedarray/indexof)
+Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
+
+[`Uint8Array.prototype.join()`](typedarray/join)
+Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
+
+[`Uint8Array.prototype.keys()`](typedarray/keys)
+Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+
+[`Uint8Array.prototype.lastIndexOf()`](typedarray/lastindexof)
+Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
+
+[`Uint8Array.prototype.map()`](typedarray/map)
+Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
+
+[`Uint8Array.prototype.reduce()`](typedarray/reduce)
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
+
+[`Uint8Array.prototype.reduceRight()`](typedarray/reduceright)
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
+
+[`Uint8Array.prototype.reverse()`](typedarray/reverse)
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
+
+[`Uint8Array.prototype.set()`](typedarray/set)
+Stores multiple values in the typed array, reading input values from a specified array.
+
+[`Uint8Array.prototype.slice()`](typedarray/slice)
+Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
+
+[`Uint8Array.prototype.some()`](typedarray/some)
+Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
+
+[`Uint8Array.prototype.sort()`](typedarray/sort)
+Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
+
+[`Uint8Array.prototype.subarray()`](typedarray/subarray)
+Returns a new `Uint8Array` from the given start and end element index.
+
+[`Uint8Array.prototype.values()`](typedarray/values)
+Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+
+[`Uint8Array.prototype.toLocaleString()`](typedarray/tolocalestring)
+Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
+
+[`Uint8Array.prototype.toString()`](typedarray/tostring)
+Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
+
+[`Uint8Array.prototype[@@iterator]()`](typedarray/@@iterator)
+Returns a new _array iterator_ object that contains the values for each index in the array.
+
+## Examples
+
+### Different ways to create a Uint8Array
+
+    // From a length
+    var uint8 = new Uint8Array(2);
+    uint8[0] = 42;
+    console.log(uint8[0]); // 42
+    console.log(uint8.length); // 2
+    console.log(uint8.BYTES_PER_ELEMENT); // 1
+
+    // From an array
+    var arr = new Uint8Array([21,31]);
+    console.log(arr[1]); // 31
+
+    // From another TypedArray
+    var x = new Uint8Array([21, 31]);
+    var y = new Uint8Array(x);
+    console.log(y[0]); // 21
+
+    // From an ArrayBuffer
+    var buffer = new ArrayBuffer(8);
+    var z = new Uint8Array(buffer, 1, 4);
+
+    // From an iterable
+    var iterable = function*(){ yield* [1,2,3]; }();
+    var uint8 = new Uint8Array(iterable);
+    // Uint8Array[1, 2, 3]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'TypedArray constructors' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Uint8Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`Uint8Array`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](arraybuffer)
+-   [`DataView`](dataview)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array</a>
+
+# Uint8ClampedArray
+
+The `Uint8ClampedArray` typed array represents an array of 8-bit unsigned integers clamped to 0-255; if you specified a value that is out of the range of \[0,255\], 0 or 255 will be set instead; if you specify a non-integer, the nearest integer will be set. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
+
+## Constructor
+
+[`Uint8ClampedArray()`](uint8clampedarray/uint8clampedarray)
+Creates a new `Uint8ClampedArray` object.
+
+## Static properties
+
+[`Uint8ClampedArray.BYTES_PER_ELEMENT`](typedarray/bytes_per_element)
+Returns a number value of the element size. `1` in the case of an `Uint8ClampedArray`.
+
+[`Uint8ClampedArray.name`](typedarray/name)
+Returns the string value of the constructor name. In the case of the `Uint8ClampedArray` type: "`Uint8ClampedArray`".
+
+## Static methods
+
+[`Uint8ClampedArray.from()`](typedarray/from)
+Creates a new `Uint8ClampedArray` from an array-like or iterable object. See also [`Array.from()`](array/from).
+
+[`Uint8ClampedArray.of()`](typedarray/of)
+Creates a new `Uint8ClampedArray` from a variable number of arguments. See also [`Array.of()`](array/of).
+
+## Instance properties
+
+[`Uint8ClampedArray.prototype.buffer`](typedarray/buffer)
+Returns the [`ArrayBuffer`](arraybuffer) referenced by the `Uint8ClampedArray`. Fixed at construction time and thus **read only**.
+
+[`Uint8ClampedArray.prototype.byteLength`](typedarray/bytelength)
+Returns the length (in bytes) of the `Uint8ClampedArray` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint8ClampedArray.prototype.byteOffset`](typedarray/byteoffset)
+Returns the offset (in bytes) of the `Uint8ClampedArray` from the start of its [`ArrayBuffer`](arraybuffer). Fixed at construction time and thus **read only.**
+
+[`Uint8ClampedArray.prototype.length`](typedarray/length)
+Returns the number of elements held in the `UintClamped8Array`. Fixed at construction time and thus **read only.**
+
+## Instance methods
+
+[`Uint8ClampedArray.prototype.copyWithin()`](typedarray/copywithin)
+Copies a sequence of array elements within the array. See also [`Array.prototype.copyWithin()`](array/copywithin).
+
+[`Uint8ClampedArray.prototype.entries()`](typedarray/entries)
+Returns a new _array iterator_ object that contains the key/value pairs for each index in the array. See also [`Array.prototype.entries()`](array/entries).
+
+[`Uint8ClampedArray.prototype.every()`](typedarray/every)
+Tests whether all elements in the array pass the test provided by a function. See also [`Array.prototype.every()`](array/every).
+
+[`Uint8ClampedArray.prototype.fill()`](typedarray/fill)
+Fills all the elements of an array from a start index to an end index with a static value. See also [`Array.prototype.fill()`](array/fill).
+
+[`Uint8ClampedArray.prototype.filter()`](typedarray/filter)
+Creates a new array with all of the elements of this array for which the provided filtering function returns `true`. See also [`Array.prototype.filter()`](array/filter).
+
+[`Uint8ClampedArray.prototype.find()`](typedarray/find)
+Returns the found value in the array, if an element in the array satisfies the provided testing function or `undefined` if not found. See also [`Array.prototype.find()`](array/find).
+
+[`Uint8ClampedArray.prototype.findIndex()`](typedarray/findindex)
+Returns the found index in the array, if an element in the array satisfies the provided testing function or `-1` if not found. See also [`Array.prototype.findIndex()`](array/findindex).
+
+[`Uint8ClampedArray.prototype.forEach()`](typedarray/foreach)
+Calls a function for each element in the array. See also [`Array.prototype.forEach()`](array/foreach).
+
+[`Uint8ClampedArray.prototype.includes()`](typedarray/includes)
+Determines whether a typed array includes a certain element, returning `true` or `false` as appropriate. See also [`Array.prototype.includes()`](array/includes).
+
+[`Uint8ClampedArray.prototype.indexOf()`](typedarray/indexof)
+Returns the first (least) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.indexOf()`](array/indexof).
+
+[`Uint8ClampedArray.prototype.join()`](typedarray/join)
+Joins all elements of an array into a string. See also [`Array.prototype.join()`](array/join).
+
+[`Uint8ClampedArray.prototype.keys()`](typedarray/keys)
+Returns a new _array iterator_ that contains the keys for each index in the array. See also [`Array.prototype.keys()`](array/keys).
+
+[`Uint8ClampedArray.prototype.lastIndexOf()`](typedarray/lastindexof)
+Returns the last (greatest) index of an element within the array equal to the specified value, or `-1` if none is found. See also [`Array.prototype.lastIndexOf()`](array/lastindexof).
+
+[`Uint8ClampedArray.prototype.map()`](typedarray/map)
+Creates a new array with the results of calling a provided function on every element in this array. See also [`Array.prototype.map()`](array/map).
+
+[`Uint8ClampedArray.prototype.reduce()`](typedarray/reduce)
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. See also [`Array.prototype.reduce()`](array/reduce).
+
+[`Uint8ClampedArray.prototype.reduceRight()`](typedarray/reduceright)
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. See also [`Array.prototype.reduceRight()`](array/reduceright).
+
+[`Uint8ClampedArray.prototype.reverse()`](typedarray/reverse)
+Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first. See also [`Array.prototype.reverse()`](array/reverse).
+
+[`Uint8ClampedArray.prototype.set()`](typedarray/set)
+Stores multiple values in the typed array, reading input values from a specified array.
+
+[`Uint8ClampedArray.prototype.slice()`](typedarray/slice)
+Extracts a section of an array and returns a new array. See also [`Array.prototype.slice()`](array/slice).
+
+[`Uint8ClampedArray.prototype.some()`](typedarray/some)
+Returns `true` if at least one element in this array satisfies the provided testing function. See also [`Array.prototype.some()`](array/some).
+
+[`Uint8ClampedArray.prototype.sort()`](typedarray/sort)
+Sorts the elements of an array in place and returns the array. See also [`Array.prototype.sort()`](array/sort).
+
+[`Uint8ClampedArray.prototype.subarray()`](typedarray/subarray)
+Returns a new `Uint8ClampedArray` from the given start and end element index.
+
+[`Uint8ClampedArray.prototype.values()`](typedarray/values)
+Returns a new _array iterator_ object that contains the values for each index in the array. See also [`Array.prototype.values()`](array/values).
+
+[`Uint8ClampedArray.prototype.toLocaleString()`](typedarray/tolocalestring)
+Returns a localized string representing the array and its elements. See also [`Array.prototype.toLocaleString()`](array/tolocalestring).
+
+[`Uint8ClampedArray.prototype.toString()`](typedarray/tostring)
+Returns a string representing the array and its elements. See also [`Array.prototype.toString()`](array/tostring).
+
+[`Uint8ClampedArray.prototype[@@iterator]()`](typedarray/@@iterator)
+Returns a new _array iterator_ object that contains the values for each index in the array.
+
+## Examples
+
+### Different ways to create a Uint8ClampedArray
+
+    // From a length
+    var uintc8 = new Uint8ClampedArray(2);
+    uintc8[0] = 42;
+    uintc8[1] = 1337;
+    console.log(uintc8[0]); // 42
+    console.log(uintc8[1]); // 255 (clamped)
+    console.log(uintc8.length); // 2
+    console.log(uintc8.BYTES_PER_ELEMENT); // 1
+
+    // From an array
+    var arr = new Uint8ClampedArray([21,31]);
+    console.log(arr[1]); // 31
+
+    // From another TypedArray
+    var x = new Uint8ClampedArray([21, 31]);
+    var y = new Uint8ClampedArray(x);
+    console.log(y[0]); // 21
+
+    // From an ArrayBuffer
+    var buffer = new ArrayBuffer(8);
+    var z = new Uint8ClampedArray(buffer, 1, 4);
+
+    // From an iterable
+    var iterable = function*(){ yield* [1,2,3]; }();
+    var uintc8 = new Uint8ClampedArray(iterable);
+    // Uint8ClampedArray[1, 2, 3]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#table-49</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Uint8ClampedArray`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+`Uint8ClampedArray`
+
+7
+
+12
+
+4
+
+10
+
+11.6
+
+5.1
+
+4
+
+18
+
+4
+
+12
+
+4.2
+
+1.0
+
+## See also
+
+-   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+-   [`ArrayBuffer`](arraybuffer)
+-   [`DataView`](dataview)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray</a>
+
+# Unary negation (-)
+
+The unary negation operator (`-`) precedes its operand and negates it.
+
+## Syntax
+
+    Operator: -x
+
+## Examples
+
+### Negating numbers
+
+    const x = 3;
+    const y = -x;
+
+    // y = -3
+    // x = 3
+
+### Negating non-numbers
+
+The unary negation operator can convert a non-number into a number.
+
+    const x = "4";
+    const y = -x;
+
+    // y = -4
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-minus-operator">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-unary-minus-operator</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Unary_negation`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Addition operator](addition)
+-   [Subtraction operator](subtraction)
+-   [Division operator](division)
+-   [Multiplication operator](multiplication)
+-   [Remainder operator](remainder)
+-   [Exponentiation operator](exponentiation)
+-   [Increment operator](increment)
+-   [Decrement operator](decrement)
+-   [Unary plus operator](unary_plus)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation</a>
+
+# Unary plus (+)
+
+The unary plus operator (`+`) precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn't already.
+
+## Syntax
+
+    Operator: +x
+
+## Description
+
+Although unary negation (`-`) also can convert non-numbers, unary plus is the fastest and preferred way of converting something into a number, because it does not perform any other operations on the number. It can convert string representations of integers and floats, as well as the non-string values `true`, `false`, and `null`. Integers in both decimal and hexadecimal (`0x`-prefixed) formats are supported. Negative numbers are supported (though not for hex). Using the operator on BigInt values throws a TypeError. If it cannot parse a particular value, it will evaluate to [`NaN`](../global_objects/nan).
+
+## Examples
+
+### Usage with numbers
+
+    const x = 1;
+    const y = -1;
+
+    console.log(+x);
+    // 1
+    console.log(+y);
+    // -1
+
+### Usage with non-numbers
+
+    +true  // 1
+    +false // 0
+    +null  // 0
+    +function(val){ return val } // NaN
+    +1n    // throws TypeError: Cannot convert BigInt value to number
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unary-plus-operator">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-unary-plus-operator</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Unary_plus`
+
+1
+
+12
+
+1
+
+3
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Addition operator](addition)
+-   [Subtraction operator](subtraction)
+-   [Division operator](division)
+-   [Multiplication operator](multiplication)
+-   [Remainder operator](remainder)
+-   [Exponentiation operator](exponentiation)
+-   [Increment operator](increment)
+-   [Decrement operator](decrement)
+-   [Unary negation operator](unary_negation)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus</a>
+
+# ReferenceError: assignment to undeclared variable "x"
+
+The JavaScript [strict mode](../strict_mode)-only exception "Assignment to undeclated variable" occurs when the value has been assigned to an undeclared variable.
+
+## Message
+
+    ReferenceError: assignment to undeclared variable "x" (Firefox)
+    ReferenceError: "x" is not defined (Chrome)
+    ReferenceError: Variable undefined in strict mode (Edge)
+
+## Error type
+
+[`ReferenceError`](../global_objects/referenceerror) warning in [strict mode](../strict_mode) only.
+
+## What went wrong?
+
+A value has been assigned to an undeclared variable. In other words, there was an assignment without the `var` keyword. There are some differences between declared and undeclared variables, which might lead to unexpected results and that's why JavaScript presents an error in strict mode.
+
+Three things to note about declared and undeclared variables:
+
+-   Declared variables are constrained in the execution context in which they are declared. Undeclared variables are always global.
+-   Declared variables are created before any code is executed. Undeclared variables do not exist until the code assigning to them is executed.
+-   Declared variables are a non-configurable property of their execution context (function or global). Undeclared variables are configurable (e.g. can be deleted).
+
+For more details and examples, see the `var` reference page.
+
+Errors about undeclared variable assignments occur in [strict mode code](../strict_mode) only. In non-strict code, they are silently ignored.
+
+## Examples
+
+### Invalid cases
+
+In this case, the variable "bar" is an undeclared variable.
+
+    function foo() {
+      'use strict';
+      bar = true;
+    }
+    foo(); // ReferenceError: assignment to undeclared variable bar
+
+### Valid cases
+
+To make "bar" a declared variable, you can add the `var` keyword in front of it.
+
+    function foo() {
+      'use strict';
+      var bar = true;
+    }
+    foo();
+
+## See also
+
+-   [Strict mode](../strict_mode)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var</a>
+
+# undefined
+
+The global `undefined` property represents the primitive value `undefined`. It is one of JavaScript's [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).
+
+Property attributes of `undefined`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Syntax
+
+    undefined
+
+## Description
+
+`undefined` is a property of the _global object_. That is, it is a variable in global scope. The initial value of `undefined` is the primitive value `undefined`.
+
+In modern browsers (JavaScript 1.8.5 / Firefox 4+), `undefined` is a non-configurable, non-writable property, per the ECMAScript 5 specification. (Even when this is not the case, avoid overriding it.)
+
+A variable that has not been assigned a value is of type `undefined`. A method or statement also returns `undefined` if the variable that is being evaluated does not have an assigned value. A function returns `undefined` if a value was not [`returned`](../statements/return).
+
+**Note:** While you can use `undefined` as an [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier) (variable name) in any scope other than the global scope (because `undefined` is not a [reserved word](../lexical_grammar#keywords)), doing so is a very bad idea that will make your code difficult to maintain and debug.
+
+    //  DON'T DO THIS
+
+    //  logs "foo string"
+    (function() {
+      var undefined = 'foo';
+      console.log(undefined, typeof undefined);
+    })();
+
+    //  logs "foo string"
+    (function(undefined) {
+      console.log(undefined, typeof undefined);
+    })('foo');
+
+## Examples
+
+### Strict equality and undefined
+
+You can use `undefined` and the strict equality and inequality operators to determine whether a variable has a value. In the following code, the variable `x` is not initialized, and the `if` statement evaluates to true.
+
+    var x;
+    if (x === undefined) {
+      // these statements execute
+    }
+    else {
+      // these statements do not execute
+    }
+
+**Note:** The _strict equality_ operator (as opposed to the _standard equality_ operator) must be used here, because `x == undefined` also checks whether `x` is `null`, while strict equality doesn't. This is because `null` is not equivalent to `undefined`.
+
+See [comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) for details.
+
+### typeof operator and undefined
+
+Alternatively, [`typeof`](../operators/typeof) can be used:
+
+    var x;
+    if (typeof x === 'undefined') {
+       // these statements execute
+    }
+
+One reason to use [`typeof`](../operators/typeof) is that it does not throw an error if the variable has not been declared.
+
+    //  x has not been declared before
+    if (typeof x === 'undefined') { //  evaluates to true without errors
+       //  these statements execute
+    }
+
+    if (x === undefined) { //  throws a ReferenceError
+
+    }
+
+However, there is another alternative. JavaScript is a statically scoped language, so knowing if a variable is declared can be read by seeing whether it is declared in an enclosing context.
+
+The global scope is bound to the [global object](globalthis), so checking the existence of a variable in the global context can be done by checking the existence of a property on the _global object_, using the [`in`](../operators/in) operator, for instance:
+
+    if ('x' in window) {
+      //  these statements execute only if x is defined globally
+    }
+
+### void operator and undefined
+
+The [`void`](../operators/void) operator is a third alternative.
+
+    var x;
+    if (x === void 0) {
+      //  these statements execute
+    }
+
+    //  y has not been declared before
+    if (y === void 0) {
+      //  throws Uncaught ReferenceError: y is not defined
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-undefined">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-undefined</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`undefined`
+
+1
+
+12
+
+1
+
+5.5
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   JavaScript's [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+-   [`null`](null)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined</a>
+
+# ReferenceError: reference to undefined property "x"
+
+The JavaScript warning "reference to undefined property" occurs when a script attempted to access an object property which doesn't exist.
+
+## Message
+
+    ReferenceError: reference to undefined property "x" (Firefox)
+
+## Error type
+
+(Firefox only) [`ReferenceError`](../global_objects/referenceerror) warning which is reported only if `javascript.options.strict` preference is set to `true`.
+
+## What went wrong?
+
+The script attempted to access an object property which doesn't exist. There are two ways to access properties; see the [property accessors](../operators/property_accessors#0) reference page to learn more about them.
+
+## Examples
+
+### Invalid cases
+
+In this case, the property `bar` is an undefined property, so a `ReferenceError` will occur.
+
+    var foo = {};
+    foo.bar; // ReferenceError: reference to undefined property "bar"
+
+### Valid cases
+
+To avoid the error, you need to either add a definition for `bar` to the object or check for the existence of the `bar` property before trying to access it; ways to do that include using the [`in`](../operators/in) operator, or the [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty) method, like this:
+
+    var foo = {};
+
+    // Define the bar property
+
+    foo.bar = 'moon';
+    console.log(foo.bar); // "moon"
+
+    // Test to be sure bar exists before accessing it
+
+    if (foo.hasOwnProperty('bar')) {
+      console.log(foo.bar);
+    }
+
+## See also
+
+-   [property accessors](../operators/property_accessors#0)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undefined_prop" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undefined_prop</a>
+
+# uneval()
+
+**Non-standard**
+
+This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.
+
+**Deprecated**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The `uneval()` function creates a string representation of the source code of an Object.
+
+## Syntax
+
+    uneval(object)
+
+### Parameters
+
+`object`
+A JavaScript expression or statement.
+
+### Return value
+
+A string representing the source code of `object`.
+
+**Note:** This will _not_ return a JSON representation of `object`.
+
+## Description
+
+`uneval()` is a top-level function and is not associated with any object.
+
+## Examples
+
+### Using uneval
+
+    var a = 1;
+    uneval(a); // returns a String containing 1
+
+    var b = '1';
+    uneval(b); // returns a String containing "1"
+
+    uneval(function foo() {}); // returns "(function foo(){})"
+
+    var a = uneval(function foo() { return 'hi'; });
+    var foo = eval(a);
+    foo(); // returns "hi"
+
+## Specifications
+
+<span class="pl-s">Not part of any standard.</span>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`uneval`
+
+No
+
+No
+
+1-74
+
+Starting in Firefox 74, `uneval()` is no longer available for use by web content. It is still allowed for internal and privileged code.
+
+No
+
+No
+
+No
+
+No
+
+No
+
+4
+
+No
+
+No
+
+No
+
+## See also
+
+-   [`eval()`](eval)
+-   [`JSON.stringify()`](json/stringify)
+-   [`JSON.parse()`](json/parse)
+-   [`Object.toSource()`](object/tosource)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/uneval</a>
+
+# SyntaxError: Unexpected token
+
+The JavaScript exceptions "unexpected token" occur when a specific language construct was expected, but something else was provided. This might be a simple typo.
+
+## Message
+
+    SyntaxError: expected expression, got "x"
+    SyntaxError: expected property name, got "x"
+    SyntaxError: expected target, got "x"
+    SyntaxError: expected rest argument name, got "x"
+    SyntaxError: expected closing parenthesis, got "x"
+    SyntaxError: expected '=>' after argument list, got "x"
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror)
+
+## What went wrong?
+
+A specific language construct was expected, but something else was provided. This might be a simple typo.
+
+## Examples
+
+### Expression expected
+
+For example, when chaining expressions, trailing commas are not allowed.
+
+    for (let i = 0; i < 5,; ++i) {
+      console.log(i);
+    }
+    // SyntaxError: expected expression, got ')'
+
+Correct would be omitting the comma or adding another expression:
+
+    for (let i = 0; i < 5; ++i) {
+      console.log(i);
+    }
+
+### Not enough brackets
+
+Sometimes, you leave out brackets around `if` statements:
+
+    function round(n, upperBound, lowerBound){
+      if(n > upperBound) || (n < lowerBound){
+        throw 'Number ' + String(n) + ' is more than ' + String(upperBound) + ' or less than ' + String(lowerBound);
+      }else if(n < ((upperBound + lowerBound)/2)){
+        return lowerBound;
+      }else{
+        return upperBound;
+      }
+    } // SyntaxError: expected expression, got '||'
+
+The brackets may look correct at first, but note how the `||` is outside the brackets. Correct would be putting brackets around the `||`:
+
+    function round(n, upperBound, lowerBound){
+      if((n > upperBound) || (n < lowerBound)){
+        throw 'Number ' + String(n) + ' is more than ' + String(upperBound) + ' or less than ' + String(lowerBound);
+      }else if(n < ((upperBound + lowerBound)/2)){
+        return lowerBound;
+      }else{
+        return upperBound;
+      }
+    }
+
+## See also
+
+-   [`SyntaxError`](../global_objects/syntaxerror)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_token" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_token</a>
+
+# TypeError: "x" is (not) "y"
+
+The JavaScript exception "_x_ is (not) _y_" occurs when there was an unexpected type. Oftentimes, unexpected [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+
+## Message
+
+    TypeError: Unable to get property {x} of undefined or null reference (Edge)
+    TypeError: "x" is (not) "y" (Firefox)
+
+    Examples:
+    TypeError: "x" is undefined
+    TypeError: "x" is null
+    TypeError: "undefined" is not an object
+    TypeError: "x" is not an object or null
+    TypeError: "x" is not a symbol
+
+## Error type
+
+[`TypeError`](../global_objects/typeerror).
+
+## What went wrong?
+
+There was an unexpected type. This occurs oftentimes with [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+
+Also, certain methods, such as [`Object.create()`](../global_objects/object/create) or [`Symbol.keyFor()`](../global_objects/symbol/keyfor), require a specific type, that must be provided.
+
+## Examples
+
+### Invalid cases
+
+    // undefined and null cases on which the substring method won't work
+    var foo = undefined;
+    foo.substring(1); // TypeError: foo is undefined
+
+    var foo = null;
+    foo.substring(1); // TypeError: foo is null
+
+    // Certain methods might require a specific type
+    var foo = {}
+    Symbol.keyFor(foo); // TypeError: foo is not a symbol
+
+    var foo = 'bar'
+    Object.create(foo); // TypeError: "foo" is not an object or null
+
+### Fixing the issue
+
+To fix null pointer to `undefined` values, you can use the [typeof](../operators/typeof) operator, for example.
+
+    if (foo !== undefined) {
+      // Now we know that foo is defined, we are good to go.
+    }
+
+    if (typeof foo !== 'undefined') {
+      // The same good idea, but don't use this implementation - it can bring problems
+      // because of the confusion between truly undefined and undeclared variables.
+    }
+
+## See also
+
+-   [`undefined`](../global_objects/undefined)
+-   [`null`](../global_objects/null)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_type" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unexpected_type</a>
+
+# RegExp.prototype.unicode
+
+The `unicode` property indicates whether or not the "`u`" flag is used with a regular expression. `unicode` is a read-only property of an individual regular expression instance.
+
+Property attributes of `RegExp.prototype.unicode`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+yes
+
+## Description
+
+The value of `unicode` is a [`Boolean`](../boolean) and `true` if the "`u`" flag was used; otherwise `false`. The "`u`" flag enables various Unicode-related features. With the "u" flag, any Unicode code point escapes will be interpreted as such, for example.
+
+You cannot change this property directly. It is read-only.
+
+## Examples
+
+### Using the unicode property
+
+    var regex = new RegExp('\u{61}', 'u');
+
+    console.log(regex.unicode); // true
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.unicode">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-get-regexp.prototype.unicode</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`unicode`
+
+50
+
+12
+
+Case folding is implemented in version 13
+
+46
+
+No
+
+37
+
+10
+
+50
+
+50
+
+46
+
+37
+
+10
+
+5.0
+
+## See also
+
+-   [`RegExp.lastIndex`](lastindex)
+-   [`RegExp.prototype.dotAll`](dotall)
+-   [`RegExp.prototype.global`](global)
+-   [`RegExp.prototype.hasIndices`](hasindices)
+-   [`RegExp.prototype.ignoreCase`](ignorecase)
+-   [`RegExp.prototype.multiline`](multiline)
+-   [`RegExp.prototype.source`](source)
+-   [`RegExp.prototype.sticky`](sticky)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode</a>
+
+# SyntaxError: function statement requires a name
+
+The JavaScript exception "function statement requires a name" occurs when there is a [function statement](../statements/function) in the code that requires a name.
+
+## Message
+
+    Syntax Error: Expected identifier (Edge)
+    SyntaxError: function statement requires a name [Firefox]
+    SyntaxError: Unexpected token ( [Chrome]
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror)
+
+## What went wrong?
+
+There is a [function statement](../statements/function) in the code that requires a name. You'll need to check how functions are defined and if you need to provide a name for it, or if the function in question needs to be a function expression, an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), or if the function code is placed correctly in this context at all.
+
+## Examples
+
+### Statements vs expressions
+
+A _[function statement](../statements/function)_ (or _function declaration_) requires a name, this won't work:
+
+    function () {
+      return 'Hello world';
+    }
+    // SyntaxError: function statement requires a name
+
+You can use a [function expression](../operators/function) (assignment) instead:
+
+    var greet = function() {
+      return 'Hello world';
+    };
+
+Or, you function is maybe intended to be an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) (Immediately Invoked Function Expression), which is a function that runs as soon as it is defined. You will need a few more braces in this case:
+
+    (function () {
+
+    })();
+
+### Labeled functions
+
+If you are using function [labels](../statements/label), you will still need to provide a function name after the `function` keyword. This doesn't work:
+
+    function Greeter() {
+      german: function () {
+        return "Moin";
+      }
+    }
+    // SyntaxError: function statement requires a name
+
+This would work, for example:
+
+    function Greeter() {
+      german: function g() {
+        return "Moin";
+      }
+    }
+
+### Object methods
+
+If you intended to create a method of an object, you will need to create an object. The following syntax without a name after the `function` keyword is valid then.
+
+    var greeter = {
+      german: function () {
+        return "Moin";
+      }
+    };
+
+### Callback syntax
+
+Also, check your syntax when using callbacks. Brackets and commas can get difficult easily.
+
+    promise.then(
+      function() {
+        console.log("success");
+      });
+      function() {
+        console.log("error");
+    }
+    // SyntaxError: function statement requires a name
+
+Correct would be:
+
+    promise.then(
+      function() {
+        console.log("success");
+      },
+      function() {
+        console.log("error");
+      }
+    );
+
+## See also
+
+-   [Functions in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+-   [function statement](../statements/function)
+-   [function expression](../operators/function)
+-   [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
+-   [label](../statements/label)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unnamed_function_statement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unnamed_function_statement</a>
+
+# Symbol.unscopables
+
+The `Symbol.unscopables` well-known symbol is used to specify an object value of whose own and inherited property names are excluded from the `with` environment bindings of the associated object.
+
+## Description
+
+The `@@unscopables` symbol (`Symbol.unscopables`) can be defined on any object to exclude property names from being exposed as lexical variables in `with` environment bindings. Note that if using [Strict mode](../../strict_mode), `with` statements are not available and will likely also not need this symbol.
+
+Setting a property to `true` in an `unscopables` object will make it _unscopable_ and therefore it won't appear in lexical scope variables. Setting a property to `false` will make it `scopable` and thus it will appear in lexical scope variables.
+
+Property attributes of `Symbol.unscopables`
+
+Writable
+
+no
+
+Enumerable
+
+no
+
+Configurable
+
+no
+
+## Examples
+
+### Scoping in with statements
+
+The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the [`Array.prototype.keys()`](../array/keys) method was introduced. That means that inside `with` environment "keys" would now be the method and not the variable. That's when the `unscopable`s symbol was introduced. A built-in `unscopables` setting is implemented as [`Array.prototype[@@unscopables]`](../array/@@unscopables) to prevent that some of the Array methods are being scoped into the `with` statement.
+
+    var keys = [];
+
+    with (Array.prototype) {
+      keys.push('something');
+    }
+
+    Object.keys(Array.prototype[Symbol.unscopables]);
+    // ["copyWithin", "entries", "fill", "find", "findIndex",
+    //  "includes", "keys", "values"]
+
+### Unscopables in objects
+
+You can also set `unscopables` for your own objects.
+
+    var obj = {
+      foo: 1,
+      bar: 2
+    };
+
+    obj[Symbol.unscopables] = {
+      foo: false,
+      bar: true
+    };
+
+    with (obj) {
+      console.log(foo); // 1
+      console.log(bar); // ReferenceError: bar is not defined
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.unscopables">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-symbol.unscopables</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`unscopables`
+
+45
+
+12
+
+48
+
+No
+
+32
+
+9
+
+45
+
+45
+
+48
+
+32
+
+9
+
+5.0
+
+## See also
+
+-   [`Array.prototype[@@unscopables]`](../array/@@unscopables)
+-   `with` statement (not available in [Strict mode](../../strict_mode))
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables</a>
+
+# Array.prototype.unshift()
+
+The `unshift()` method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+## Syntax
+
+    unshift(element0)
+    unshift(element0, element1)
+    unshift(element0, element1, ... , elementN)
+
+### Parameters
+
+`elementN`
+The elements to add to the front of the `arr`.
+
+### Return value
+
+The new [`length`](length) property of the object upon which the method was called.
+
+## Description
+
+The `unshift` method inserts the given values to the beginning of an array-like object.
+
+`unshift` is intentionally generic. This method can be [called](../function/call) or [applied](../function/apply) to objects resembling arrays. Objects which do not contain a `length` property—reflecting the last in a series of consecutive, zero-based numerical properties—may not behave in any meaningful manner.
+
+Please note that, if multiple elements are passed as parameters, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters. Hence, calling `unshift` with `n` arguments **once**, or calling it `n` times with **1** argument (with a loop, for example), don't yield the same results.
+
+See example:
+
+    let arr = [4, 5, 6]
+
+    arr.unshift(1, 2, 3)
+    console.log(arr);
+    // [1, 2, 3, 4, 5, 6]
+
+    arr = [4, 5, 6] // resetting the array
+
+    arr.unshift(1)
+    arr.unshift(2)
+    arr.unshift(3)
+
+    console.log(arr)
+    // [3, 2, 1, 4, 5, 6]
+
+## Examples
+
+### Using unshift
+
+    let arr = [1, 2]
+
+    arr.unshift(0)               // result of the call is 3, which is the new array length
+    // arr is [0, 1, 2]
+
+    arr.unshift(-2, -1)          // the new array length is 5
+    // arr is [-2, -1, 0, 1, 2]
+
+    arr.unshift([-4, -3])        // the new array length is 6
+    // arr is [[-4, -3], -2, -1, 0, 1, 2]
+
+    arr.unshift([-7, -6], [-5])  // the new array length is 8
+    // arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.unshift">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-array.prototype.unshift</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`unshift`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Array.prototype.push()`](push)
+-   [`Array.prototype.pop()`](pop)
+-   [`Array.prototype.shift()`](shift)
+-   [`Array.prototype.concat()`](concat)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift</a>
+
+# Unsigned right shift (&gt;&gt;&gt;)
+
+The `>>>` (zero-fill right shift) shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes `0`, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.
+
+## Syntax
+
+    a >>> b
+
+## Description
+
+This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes `0`, so the result is always non-negative. Unlike the other bitwise operators, zero-fill right shift returns an unsigned 32-bit integer.
+
+For non-negative numbers, zero-fill right shift and sign-propagating right shift yield the same result. For example, `9 >>> 2` yields 2, the same as `9 >> 2`:
+
+    .     9 (base 10): 00000000000000000000000000001001 (base 2)
+                       --------------------------------
+    9 >>> 2 (base 10): 00000000000000000000000000000010 (base 2) = 2 (base 10)
+
+However, this is not the case for negative numbers. For example, `-9 >>> 2` yields 1073741821, which is different than `-9 >> 2` (which yields `-3`):
+
+    .     -9 (base 10): 11111111111111111111111111110111 (base 2)
+                        --------------------------------
+    -9 >>> 2 (base 10): 00111111111111111111111111111101 (base 2) = 1073741821 (base 10)
+
+## Examples
+
+### Using unsigned right shift
+
+     9 >>> 2; // 2
+    -9 >>> 2; // 1073741821
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-unsigned-right-shift-operator">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-unsigned-right-shift-operator</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Unsigned_right_shift`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
+-   [Unsigned right shift assignment operator](unsigned_right_shift_assignment)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift</a>
+
+# Unsigned right shift assignment (&gt;&gt;&gt;=)
+
+The unsigned right shift assignment operator (_`>>>=`_) moves the specified amount of bits to the right and assigns the result to the variable.
+
+## Syntax
+
+    Operator: x >>>= y
+    Meaning:  x    = x >>> y
+
+## Examples
+
+### Using unsigned right shift assignment
+
+    let a = 5; //   (00000000000000000000000000000101)
+    a >>>= 2;  // 1 (00000000000000000000000000000001)
+
+    let b = -5; // (-00000000000000000000000000000101)
+    b >>>= 2;   // 1073741822 (00111111111111111111111111111110)
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`Unsigned_right_shift_assignment`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
+-   [Unsigned right shift operator](unsigned_right_shift)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment</a>
+
+# SyntaxError: unterminated string literal
+
+The JavaScript error "unterminated string literal" occurs when there is an unterminated [`String`](../global_objects/string) somewhere. String literals must be enclosed by single (`'`) or double (`"`) quotes.
+
+## Message
+
+    SyntaxError: Unterminated string constant (Edge)
+    SyntaxError: unterminated string literal (Firefox)
+
+## Error type
+
+[`SyntaxError`](../global_objects/syntaxerror)
+
+## What went wrong?
+
+There is an unterminated [`String`](../global_objects/string) somewhere. String literals must be enclosed by single (`'`) or double (`"`) quotes. JavaScript makes no distinction between single-quoted strings and double-quoted strings. [Escape sequences](../global_objects/string#escape_notation) work in strings created with either single or double quotes. To fix this error, check if:
+
+-   you have opening and closing quotes (single or double) for your string literal,
+-   you have escaped your string literal correctly,
+-   your string literal isn't split across multiple lines.
+
+## Examples
+
+### Multiple lines
+
+You can't split a string across multiple lines like this in JavaScript:
+
+    var longString = 'This is a very long string which needs
+                      to wrap across multiple lines because
+                      otherwise my code is unreadable.';
+    // SyntaxError: unterminated string literal
+
+Instead, use the [+ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#addition), a backslash, or [template literals](../template_literals). The `+` operator variant looks like this:
+
+    var longString = 'This is a very long string which needs ' +
+                     'to wrap across multiple lines because ' +
+                     'otherwise my code is unreadable.';
+
+Or you can use the backslash character ("\\") at the end of each line to indicate that the string will continue on the next line. Make sure there is no space or any other character after the backslash (except for a line break), or as an indent; otherwise it will not work. That form looks like this:
+
+    var longString = 'This is a very long string which needs \
+    to wrap across multiple lines because \
+    otherwise my code is unreadable.';
+
+Another possibility is to use [template literals](../template_literals), which are supported in ECMAScript 2015 environments:
+
+    var longString = `This is a very long string which needs
+                      to wrap across multiple lines because
+                      otherwise my code is unreadable.`;
+
+## See also
+
+-   [`String`](../global_objects/string)
+-   [Template literals](../template_literals)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unterminated_string_literal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Unterminated_string_literal</a>
+
+# URIError
+
+The `URIError` object represents an error when a global URI handling function was used in a wrong way.
+
+## Constructor
+
+[`URIError()`](urierror/urierror)
+Creates a new `URIError` object.
+
+## Instance properties
+
+[`URIError.prototype.message`](error/message)
+Error message. Although ECMA-262 specifies that [`URIError`](urierror) should provide its own `message` property, in [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey), it inherits [`Error.prototype.message`](error/message).
+
+[`URIError.prototype.name`](error/name)
+Error name. Inherited from [`Error`](error).
+
+[`URIError.prototype.fileName`](error/filename)
+Path to file that raised this error. Inherited from [`Error`](error).
+
+[`URIError.prototype.lineNumber`](error/linenumber)
+Line number in file that raised this error. Inherited from [`Error`](error).
+
+[`URIError.prototype.columnNumber`](error/columnnumber)
+Column number in line that raised this error. Inherited from [`Error`](error).
+
+[`URIError.prototype.stack`](error/stack)
+Stack trace. Inherited from [`Error`](error).
+
+## Examples
+
+### Catching an URIError
+
+    try {
+      decodeURIComponent('%')
+    } catch (e) {
+      console.log(e instanceof URIError)  // true
+      console.log(e.message)              // "malformed URI sequence"
+      console.log(e.name)                 // "URIError"
+      console.log(e.fileName)             // "Scratchpad/1"
+      console.log(e.lineNumber)           // 2
+      console.log(e.columnNumber)         // 2
+      console.log(e.stack)                // "@Scratchpad/2:2:3\n"
+    }
+
+### Creating an URIError
+
+    try {
+      throw new URIError('Hello', 'someFile.js', 10)
+    } catch (e) {
+      console.log(e instanceof URIError)  // true
+      console.log(e.message)              // "Hello"
+      console.log(e.name)                 // "URIError"
+      console.log(e.fileName)             // "someFile.js"
+      console.log(e.lineNumber)           // 10
+      console.log(e.columnNumber)         // 0
+      console.log(e.stack)                // "@Scratchpad/2:2:9\n"
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-urierror">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-native-error-types-used-in-this-standard-urierror</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`URIError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+`URIError`
+
+1
+
+12
+
+1
+
+5.5
+
+5
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Error`](error)
+-   [`decodeURI()`](decodeuri)
+-   [`decodeURIComponent()`](decodeuricomponent)
+-   [`encodeURI()`](encodeuri)
+-   [`encodeURIComponent()`](encodeuricomponent)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError</a>
+
+# Date.UTC()
+
+The `Date.UTC()` method accepts parameters similar to the [`Date`](../date) constructor, but treats them as UTC. It returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+## Syntax
+
+    Date.UTC(year)
+    Date.UTC(year, month)
+    Date.UTC(year, month, day)
+    Date.UTC(year, month, day, hour)
+    Date.UTC(year, month, day, hour, minute)
+    Date.UTC(year, month, day, hour, minute, second)
+    Date.UTC(year, month, day, hour, minute, second, millisecond)
+
+`year`
+A full year.
+
+`month` <span class="badge inline optional">Optional</span>
+An integer between `0` (January) and `11` (December) representing the month. Since ECMAScript 2017 it defaults to `0` if omitted. _(Up until ECMAScript 2016, `month` was a required parameter. As of ES2017, it no longer is.)_
+
+`day` <span class="badge inline optional">Optional</span>
+An integer between `1` and `31` representing the day of the month. If omitted, defaults to `1`.
+
+`hour` <span class="badge inline optional">Optional</span>
+An integer between `0` and `23` representing the hours. If omitted, defaults to `0`.
+
+`minute` <span class="badge inline optional">Optional</span>
+An integer between `0` and `59` representing the minutes. If omitted, defaults to `0`.
+
+`second` <span class="badge inline optional">Optional</span>
+An integer between `0` and `59` representing the seconds. If omitted, defaults to `0`.
+
+`millisecond` <span class="badge inline optional">Optional</span>
+An integer between `0` and `999` representing the milliseconds. If omitted, defaults to `0`.
+
+### Return value
+
+A number representing the number of milliseconds for the given date since January 1, 1970, 00:00:00, UTC.
+
+## Description
+
+`UTC()` takes comma-delimited date and time parameters and returns the number of milliseconds between January 1, 1970, 00:00:00, universal time and the specified date and time.
+
+Years between `0` and `99` are converted to a year in the 20<sup>th</sup> century `(1900 + year)`. For example, `95` is converted to the year `1995`.
+
+The `UTC()` method differs from the [`Date`](../date) constructor in two ways:
+
+1.  `Date.UTC()` uses universal time instead of the local time.
+2.  `Date.UTC()` returns a time value as a number instead of creating a [`Date`](../date) object.
+
+If a parameter is outside of the expected range, the `UTC()` method updates the other parameters to accommodate the value. For example, if `15` is used for `month`, the year will be incremented by 1 `(year + 1)` and `3` will be used for the month.
+
+`UTC()` is a static method of [`Date`](../date), so it's called as `Date.UTC()` rather than as a method of a [`Date`](../date) instance.
+
+## Examples
+
+### Using Date.UTC()
+
+The following statement creates a [`Date`](../date) object with the arguments treated as UTC instead of local:
+
+    let utcDate = new Date(Date.UTC(2018, 11, 1, 0, 0, 0));
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.utc">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'Date.UTC' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`UTC`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+### Compatibility notes
+
+#### Date.UTC() with fewer than two arguments
+
+When providing less than two arguments to `Date.UTC()`, ECMAScript 2017 requires that [`NaN`](../nan) is returned. Engines that weren't supporting this behavior have been updated (see [bug 1050755](https://bugzilla.mozilla.org/show_bug.cgi?id=1050755), [ecma-262 \#642](https://github.com/tc39/ecma262/pull/642)).
+
+    Date.UTC();
+    Date.UTC(1);
+
+    // Safari: NaN
+    // Chrome/Opera/V8: NaN
+
+    // Firefox <54: non-NaN
+    // Firefox 54+: NaN
+
+    // IE: non-NaN
+    // Edge: NaN
+
+## See also
+
+-   [`Date.parse()`](parse)
+-   [`Date`](../date)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC</a>
+
+# WebAssembly.validate()
+
+The `WebAssembly.validate()` function validates a given [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) of WebAssembly binary code, returning whether the bytes form a valid wasm module (`true`) or not (`false`).
+
+## Syntax
+
+    WebAssembly.validate(bufferSource)
+
+### Parameters
+
+`bufferSource`
+A [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [ArrayBuffer](../arraybuffer) containing WebAssembly binary code to be validated.
+
+### Return value
+
+A boolean that specifies whether `bufferSource` is valid wasm code (`true`) or not (`false`).
+
+### Exceptions
+
+If `bufferSource` is not a [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [ArrayBuffer](../arraybuffer), a [`TypeError`](../typeerror) is thrown.
+
+## Examples
+
+### Using validate
+
+The following example (see the validate.html [source code](https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/validate.html), and [see it live too](https://mdn.github.io/webassembly-examples/js-api-examples/validate.html)) fetches a .wasm module and converts it into a typed array. The `validate()` method is then used to check whether the module is valid.
+
+    fetch('simple.wasm').then(response =>
+      response.arrayBuffer()
+    ).then(function(bytes) {
+      var valid = WebAssembly.validate(bytes);
+      console.log("The given bytes are "
+        + (valid ? "" : "not ") + "a valid wasm module");
+    });
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-validate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
+<br/>
+
+<span class="small">#dom-webassembly-validate</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`validate`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+## See also
+
+-   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+-   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+-   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/validate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/validate</a>
+
+# Object.prototype.valueOf()
+
+The `valueOf()` method returns the primitive value of the specified object.
+
+## Syntax
+
+    valueOf()
+
+### Return value
+
+The primitive value of the specified object.
+
+**Note:** A [(unary) plus sign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_plus) can sometimes be used as a shorthand for `valueOf`, e.g. in `+new Number()`. Also see [Using unary plus](#using_unary_plus).
+
+## Description
+
+JavaScript calls the `valueOf` method to convert an object to a primitive value. You rarely need to invoke the `valueOf` method yourself; JavaScript automatically invokes it when encountering an object where a primitive value is expected.
+
+By default, the `valueOf` method is inherited by every object descended from [`Object`](../object). Every built-in core object overrides this method to return an appropriate value. If an object has no primitive value, `valueOf` returns the object itself.
+
+You can use `valueOf` within your own code to convert a built-in object into a primitive value. When you create a custom object, you can override `Object.prototype.valueOf()` to call a custom method instead of the default [`Object`](../object) method.
+
+### Overriding valueOf for custom objects
+
+You can create a function to be called in place of the default `valueOf` method. Your function must take no arguments.
+
+Suppose you have an object type `MyNumberType` and you want to create a `valueOf` method for it. The following code assigns a user-defined function to the object's `valueOf` method:
+
+    MyNumberType.prototype.valueOf = function() { return customPrimitiveValue; };
+
+With the preceding code in place, any time an object of type `MyNumberType` is used in a context where it is to be represented as a primitive value, JavaScript automatically calls the function defined in the preceding code.
+
+An object's `valueOf` method is usually invoked by JavaScript, but you can invoke it yourself as follows:
+
+    myNumberType.valueOf()
+
+**Note:** Objects in string contexts convert via the [`toString()`](tostring) method, which is different from [`String`](../string) objects converting to string primitives using `valueOf`. All objects have a string conversion, if only "`[object type]`". But many objects do not convert to number, boolean, or function.
+
+## Examples
+
+### Using valueOf on custom types
+
+    function MyNumberType(n) {
+        this.number = n;
+    }
+
+    MyNumberType.prototype.valueOf = function() {
+        return this.number;
+    };
+
+    var myObj = new MyNumberType(4);
+    myObj + 3; // 7
+
+### Using unary plus
+
+    +"5" // 5 (string to number)
+    +"" // 0 (string to number)
+    +"1 + 2" // NaN (doesn't evaluate)
+    +new Date() // same as (new Date()).getTime()
+    +"foo" // NaN (string to number)
+    +{} // NaN
+    +[] // 0 (toString() returns an empty string list)
+    +[1] // 1
+    +[1,2] // NaN
+    +new Set([1]) // NaN
+    +BigInt(1) // Uncaught TypeError: Cannot convert a BigInt value to a number
+    +undefined // NaN
+    +null // 0
+    +true // 1
+    +false // 0
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.valueof">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-object.prototype.valueof</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`valueOf`
+
+1
+
+12
+
+1
+
+4
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Object.prototype.toString()`](tostring)
+-   [`parseInt()`](../parseint)
+-   [`Symbol.toPrimitive`](../symbol/toprimitive)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf</a>
+
+# TypedArray.prototype.values()
+
+The `values()` method returns a new array iterator object that contains the values for each index in the array.
+
+## Syntax
+
+    values()
+
+### Return value
+
+A new array iterator object.
+
+## Examples
+
+### Iteration using for...of loop
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    var iterator = arr.values();
+
+    for (let letter of iterator) {
+      console.log(letter);
+    }  //"a" "b" "c" "d" "e"
+
+`Array.prototype.values` is default implementation of `Array.prototype[Symbol.iterator]`.
+
+    Array.prototype.values === Array.prototype[Symbol.iterator]      //true
+
+### Iteration using .next()
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    var iterator = arr.values();
+    iterator.next();               // Object { value: "a", done: false }
+    iterator.next().value;         // "b"
+    iterator.next()["value"];      // "c"
+    iterator.next();               // Object { value: "d", done: false }
+    iterator.next();               // Object { value: "e", done: false }
+    iterator.next();               // Object { value: undefined, done: true }
+    iteraror.next().value;         // undefined
+
+**Warning:** One-use: the array iterator object is one use or temporary object
+
+example:
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+     var iterator = arr.values();
+     for (let letter of iterator) {
+     console.log(letter);
+    } //"a" "b" "c" "d" "e"
+    for (let letter of iterator) {
+    console.log(letter);
+    } // undefined
+
+**reason:** When `next().done=true` or `currentIndex>length` the `for..of` loop ends. See [Iteration protocols.](../../iteration_protocols)
+
+**Value**: there are no values stored in the array Iterator object; instead it stores the address of the array used in its creation and so depends on the values stored in that array.
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    var iterator = arr.values();
+    console.log(iterator);        // Array Iterator {  }
+    iterator.next().value;        // "a"
+    arr[1]='n';
+    iterator.next().value;        //  "n"
+
+**Note:** If the values in the array changed the array iterator object values change too.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-%typedarray%.prototype.values</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`values`
+
+38
+
+14
+
+37
+
+No
+
+25
+
+10
+
+38
+
+38
+
+37
+
+25
+
+10
+
+3.0
+
+## See also
+
+-   [`Array.prototype.keys()`](../array/keys)
+-   [`Array.prototype.entries()`](../array/entries)
+-   [`Array.prototype.forEach()`](../array/foreach)
+-   [`Array.prototype.every()`](../array/every)
+-   [`Array.prototype.some()`](../array/some)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values</a>
+
+# var
+
+The `var` declares a function-scoped or globally-scoped variable, optionally initializing it to a value.
+
+## Syntax
+
+    var varname1 [= value1] [, varname2 [= value2] ... [, varnameN [= valueN]]];
+
+`varnameN`
+Variable name. It can be any legal identifier.
+
+`valueN` <span class="badge inline optional">Optional</span>
+Initial value of the variable. It can be any legal expression. Default value is `undefined`.
+
+Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
+
+    var { bar } = foo; // where foo = { bar:10, baz:12 };
+    /* This creates a variable with the name 'bar', which has a value of 10 */
+
+## Description
+
+`var` declarations, wherever they occur, are processed before any code is executed. This is called hoisting, and is discussed further below.
+
+The scope of a variable declared with `var` is its current _execution context and closures thereof_, which is either the enclosing function and functions declared within it, or, for variables declared outside any function, global. Duplicate variable declarations using `var` will not trigger an error, even in strict mode, and the variable will not lose its value, unless another assignment is performed.
+
+    'use strict';
+    function foo() {
+      var x = 1;
+      function bar() {
+        var y = 2;
+        console.log(x); // 1 (function `bar` closes over `x`)
+        console.log(y); // 2 (`y` is in scope)
+      }
+      bar();
+      console.log(x); // 1 (`x` is in scope)
+      console.log(y); // ReferenceError in strict mode, `y` is scoped to `bar`
+    }
+
+    foo();
+
+Variables declared using `var` are created before any code is executed in a process known as hoisting. Their initial value is `undefined`.
+
+    'use strict';
+    console.log(x);                // undefined (note: not ReferenceError)
+    console.log('still going...'); // still going...
+    var x = 1;
+    console.log(x);                // 1
+    console.log('still going...'); // still going...
+
+In the global context, a variable declared using `var` is added as a non-configurable property of the global object. This means its property descriptor cannot be changed and it cannot be deleted using [`delete`](../operators/delete). The corresponding name is also added to a list on the internal `[[VarNames]]` slot on the [global environment record](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-global-environment-records) (which forms part of the global lexical environment). The list of names in `[[VarNames]]` enables the runtime to distinguish between global variables and straightforward properties on the global object.
+
+The property created on the global object for global variables, is set to be non-configurable because the identifier is to be treated as a variable, rather than a straightforward property of the global object. JavaScript has automatic memory management, and it would make no sense to be able to use the `delete` operator on a global variable.
+
+    'use strict';
+    var x = 1;
+    globalThis.hasOwnProperty('x'); // true
+    delete globalThis.x; // TypeError in strict mode. Fails silently otherwise.
+    delete x;  // SyntaxError in strict mode. Fails silently otherwise.
+
+Note that in both NodeJS [CommonJS](http://www.commonjs.org/) modules and native [ECMAScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), top-level variable declarations are scoped to the module, and are not, therefore added as properties to the global object.
+
+### Unqualified identifier assignments
+
+The global object sits at the top of the scope chain. When attempting to resolve a name to a value, the scope chain is searched. This means that properties on the global object are conveniently visible from every scope, without having to qualify the names with `globalThis.` or `window.` or `global.`.
+
+So you can just type:
+
+    function foo() {
+      String('s') // Note the function `String` is implicitly visible
+    }
+
+...because
+
+    globalThis.hasOwnProperty('String') // true
+
+So the global object will ultimately be searched for unqualified identifiers. You don't have to type `globalThis.String`, you can just type the unqualified `String`. The corollary, in non-strict mode, is that assignment to unqualified identifiers will, if there is no variable of the same name declared in the scope chain, assume you want to create a property with that name on the global object.
+
+    foo = 'f' // In non-strict mode, assumes you want to create a property named `foo` on the global object
+    globalThis.hasOwnProperty('foo') // true
+
+In ECMAScript 5, this behavior was changed for [strict mode](../strict_mode). Assignment to an unqualified identifier in strict mode will result in a `ReferenceError`, to avoid the accidental creation of properties on the global object.
+
+Note that the implication of the above, is that, contrary to popular misinformation, JavaScript does not have implicit or undeclared variables, it merely has a syntax that looks like it does.
+
+### var hoisting
+
+Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code.
+
+    bla = 2;
+    var bla;
+
+    // ...is implicitly understood as:
+
+    var bla;
+    bla = 2;
+
+For that reason, it is recommended to always declare variables at the top of their scope (the top of global code and the top of function code) so it's clear which variables are function scoped (local) and which are resolved on the scope chain.
+
+It's important to point out that the hoisting will affect the variable declaration, but not its value's initialization. The value will be indeed assigned when the assignment statement is reached:
+
+    function do_something() {
+      console.log(bar); // undefined
+      var bar = 111;
+      console.log(bar); // 111
+    }
+
+    // ...is implicitly understood as:
+
+    function do_something() {
+      var bar;
+      console.log(bar); // undefined
+      bar = 111;
+      console.log(bar); // 111
+    }
+
+## Examples
+
+### Declaring and initializing two variables
+
+    var a = 0, b = 0;
+
+### Assigning two variables with single string value
+
+    var a = 'A';
+    var b = a;
+
+    // ...is equivalent to:
+
+    var a, b = a = 'A';
+
+Be mindful of the order:
+
+    var x = y, y = 'A';
+    console.log(x + y); // undefinedA
+
+Here, `x` and `y` are declared before any code is executed, but the assignments occur later. At the time "`x = y`" is evaluated, `y` exists so no `ReferenceError` is thrown and its value is `undefined`. So, `x` is assigned the undefined value. Then, `y` is assigned the value `'A'`. Consequently, after the first line, `x === undefined && y === 'A'`, hence the result.
+
+### Initialization of several variables
+
+    var x = 0;
+    function f() {
+      var x = y = 1; // Declares x locally; declares y globally.
+    }
+    f();
+
+    console.log(x, y); // 0 1
+
+    // In non-strict mode:
+    // x is the global one as expected;
+    // y is leaked outside of the function, though!
+
+The same example as above but with a strict mode:
+
+    'use strict';
+
+    var x = 0;
+    function f() {
+      var x = y = 1; // Throws a ReferenceError in strict mode.
+    }
+    f();
+
+    console.log(x, y);
+
+### Implicit globals and outer function scope
+
+Variables that appear to be implicit globals may be references to variables in an outer function scope:
+
+    var x = 0; // Declares x within file scope, then assigns it a value of 0.
+
+    console.log(typeof z); // "undefined", since z doesn't exist yet
+
+    function a() {
+      var y = 2; // Declares y within scope of function a, then assigns it a value of 2.
+
+      console.log(x, y); // 0 2
+
+      function b() {
+        x = 3; // Assigns 3 to existing file scoped x.
+        y = 4; // Assigns 4 to existing outer y.
+        z = 5; // Creates a new global variable z, and assigns it a value of 5.
+               // (Throws a ReferenceError in strict mode.)
+      }
+
+      b(); // Creates z as a global variable.
+      console.log(x, y, z); // 3 4 5
+    }
+
+    a(); // Also calls b.
+    console.log(x, z);     // 3 5
+    console.log(typeof y); // "undefined", as y is local to function a
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-variable-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-variable-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`var`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`let`](let)
+-   [`const`](const)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a>
+
+# TypeError: variable "x" redeclares argument
+
+The JavaScript [strict mode](../strict_mode)-only exception "variable redeclares argument" occurs when the same variable name occurs as a function parameter and is then redeclared using a `var` assignment in a function body again.
+
+## Message
+
+    TypeError: variable "x" redeclares argument (Firefox)
+
+## Error type
+
+[`TypeError`](../global_objects/typeerror) warning in [strict mode](../strict_mode) only.
+
+## What went wrong?
+
+The same variable name occurs as a function parameter and is then redeclared using a `var` assignment in a function body again. This might be a naming conflict and thus JavaScript warns about it.
+
+This error occurs as a warning in [strict mode code](../strict_mode) only. In non-strict code, the redeclaration is silently ignored.
+
+## Examples
+
+### Invalid cases
+
+In this case, the variable "arg" redeclares the argument.
+
+    'use strict';
+
+    function f(arg) {
+      var arg = 'foo';
+    }
+
+### Valid cases
+
+To fix this warning, the `var` statement can just be omitted, because the variable exists already. In other cases, you might to rename either the function parameter or the variable name.
+
+    'use strict';
+
+    function f(arg) {
+      arg = 'foo';
+    }
+
+## See also
+
+-   [Strict mode](../strict_mode)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Var_hides_argument" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Var_hides_argument</a>
+
+# void operator
+
+The `void` evaluates the given `expression` and then returns [`undefined`](../global_objects/undefined).
+
+## Syntax
+
+    void expression
+
+## Description
+
+This operator allows evaluating expressions that produce a value into places where an expression that evaluates to [`undefined`](../global_objects/undefined) is desired.
+
+The `void` operator is often used merely to obtain the `undefined` primitive value, usually using "`void(0)`" (which is equivalent to "`void 0`"). In these cases, the global variable [`undefined`](../global_objects/undefined) can be used.
+
+It should be noted that [the precedence](operator_precedence) of the `void` operator should be taken into account and that parentheses can help clarify the resolution of the expression following the `void` operator:
+
+    void 2 == '2';   // (void 2) == '2', returns false
+    void (2 == '2'); // void (2 == '2'), returns undefined
+
+## Examples
+
+### Immediately Invoked Function Expressions
+
+When using an [immediately-invoked function expression](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), `void` can be used to force the `function` keyword to be treated as an expression instead of a declaration.
+
+    void function iife() {
+
+      console.log("Executed!");
+
+    }();
+
+    // Output: "Executed!"
+
+Executing the above function without the `void` keyword will result in an **Uncaught SyntaxError**.
+
+### JavaScript URIs
+
+When a browser follows a `javascript:` URI, it evaluates the code in the URI and then replaces the contents of the page with the returned value, unless the returned value is [`undefined`](../global_objects/undefined). The `void` operator can be used to return `undefined`. For example:
+
+    <a href="javascript:void(0);">
+      Click here to do nothing
+    </a>
+
+    <a href="javascript:void(document.body.style.backgroundColor='green');">
+      Click here for green background
+    </a>
+
+**Note:** `javascript:` pseudo protocol is discouraged over other alternatives, such as unobtrusive event handlers.
+
+### Non-leaking Arrow Functions
+
+Arrow functions introduce a short-hand braceless syntax that returns an expression. This can cause unintended side effects by returning the result of a function call that previously returned nothing. To be safe, when the return value of a function is not intended to be used, it can be passed to the void operator to ensure that (for example) changing APIs do not cause arrow functions' behaviors to change.
+
+    button.onclick = () => void doSomething();
+
+This ensures the return value of `doSomething` changing from `undefined` to `true` will not change the behavior of this code.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-void-operator">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-void-operator</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`void`
+
+1
+
+12
+
+1
+
+5
+
+4
+
+3.2
+
+1
+
+18
+
+4
+
+10.1
+
+3
+
+1.0
+
+## See also
+
+-   [`undefined`](../global_objects/undefined)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void</a>
+
+# Atomics.wait()
+
+The static ` Atomics``.wait() ` method verifies that a given position in an [`Int32Array`](../int32array) still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either "`ok`", "`not-equal`", or "`timed-out`".
+
+**Note:** This operation only works with a shared [`Int32Array`](../int32array) and may not be allowed on the main thread.
+
+## Syntax
+
+    Atomics.wait(typedArray, index, value)
+    Atomics.wait(typedArray, index, value, timeout)
+
+### Parameters
+
+`typedArray`
+A shared [`Int32Array`](../int32array).
+
+`index`
+The position in the `typedArray` to wait on.
+
+`value`
+The expected value to test.
+
+`timeout` <span class="badge inline optional">Optional</span>
+Time to wait in milliseconds. [`Infinity`](../infinity), if no time is provided.
+
+### Return value
+
+A string which is either "`ok`", "`not-equal`", or "`timed-out`".
+
+### Exceptions
+
+-   Throws a [`TypeError`](../typeerror), if `typedArray` is not a shared [`Int32Array`](../int32array).
+-   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+
+## Examples
+
+### Using wait()
+
+Given a shared `Int32Array`:
+
+    const sab = new SharedArrayBuffer(1024);
+    const int32 = new Int32Array(sab);
+
+A reading thread is sleeping and waiting on location 0 which is expected to be 0. As long as that is true, it will not go on. However, once the writing thread has stored a new value, it will be notified by the writing thread and return the new value (123).
+
+    Atomics.wait(int32, 0, 0);
+    console.log(int32[0]); // 123
+
+A writing thread stores a new value and notifies the waiting thread once it has written:
+
+    console.log(int32[0]); // 0;
+    Atomics.store(int32, 0, 123);
+    Atomics.notify(int32, 0, 1);
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.wait">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-atomics.wait</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`wait`
+
+68
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+78
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+48-55
+
+46-48
+
+The method returns values `Atomics.OK`, `Atomics.TIMEDOUT`, and `Atomics.NOTEQUAL`, instead of the later-specified strings.
+
+No
+
+No
+
+10.1-11.1
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+48-55
+
+46-48
+
+The method returns values `Atomics.OK`, `Atomics.TIMEDOUT`, and `Atomics.NOTEQUAL`, instead of the later-specified strings.
+
+No
+
+10.3-11.3
+
+No
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+## See also
+
+-   [`Atomics`](../atomics)
+-   [`Atomics.notify()`](notify)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait</a>
+
+# WeakMap
+
+The `WeakMap` object is a collection of key/value pairs in which the keys are weakly referenced. The keys must be objects and the values can be arbitrary values.
+
+You can learn more about `WeakMap`s in the [WeakMap object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object) guide (under [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)).
+
+## Description
+
+Keys of WeakMaps are of the type `Object` only. [Primitive data types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) as keys are not allowed (e.g. a [`Symbol`](symbol) can't be a `WeakMap` key).
+
+### Why *Weak*Map?
+
+A map API _could_ be implemented in JavaScript with two arrays (one for keys, one for values) shared by the four API methods. Setting elements on this map would involve pushing a key and value onto the end of each of those arrays simultaneously. As a result, the indices of the key and value would correspond to both arrays. Getting values from the map would involve iterating through all keys to find a match, then using the index of this match to retrieve the corresponding value from the array of values.
+
+Such an implementation would have two main inconveniences:
+
+1.  The first one is an _O(n)_ set and search (n being the number of keys in the map) since both operations must iterate through the list of keys to find a matching value.
+2.  The second inconvenience is a memory leak because the arrays ensure that references to each key and each value are maintained indefinitely. These references prevent the keys from being garbage collected, even if there are no other references to the object. This would also prevent the corresponding values from being garbage collected.
+
+By contrast, native `WeakMap`s hold "weak" references to key objects. As such native `WeakMap`s do not prevent garbage collection, which eventually removes references to the key object. "Weak" references also avoid preventing garbage collection of values in the map. `WeakMap`s can be particularly useful constructs when mapping keys to information about the key that is valuable _only if_ the key has not been garbage collected.
+
+`WeakMap` There is no method to obtain a list of the keys. If there was, the list would depend on the state of garbage collection, introducing non-determinism. If you want to have a list of keys, you should use a [`Map`](map).
+
+## Constructor
+
+[`WeakMap()`](weakmap/weakmap)
+Creates a new `WeakMap` object.
+
+## Instance methods
+
+[`WeakMap.prototype.delete(key)`](weakmap/delete)
+Removes any value associated to the `key`. `WeakMap.prototype.has(key)` will return `false` afterwards.
+
+[`WeakMap.prototype.get(key)`](weakmap/get)
+Returns the value associated to the `key`, or `undefined` if there is none.
+
+[`WeakMap.prototype.has(key)`](weakmap/has)
+Returns a Boolean asserting whether a value has been associated to the `key` in the `WeakMap` object or not.
+
+[`WeakMap.prototype.set(key, value)`](weakmap/set)
+Sets the `value` for the `key` in the `WeakMap` object. Returns the `WeakMap` object.
+
+## Examples
+
+### Using WeakMap
+
+    const wm1 = new WeakMap(),
+          wm2 = new WeakMap(),
+          wm3 = new WeakMap();
+    const o1 = {},
+          o2 = function() {},
+          o3 = window;
+
+    wm1.set(o1, 37);
+    wm1.set(o2, 'azerty');
+    wm2.set(o1, o2); // a value can be anything, including an object or a function
+    wm2.set(o3, undefined);
+    wm2.set(wm1, wm2); // keys and values can be any objects. Even WeakMaps!
+
+    wm1.get(o2); // "azerty"
+    wm2.get(o2); // undefined, because there is no key for o2 on wm2
+    wm2.get(o3); // undefined, because that is the set value
+
+    wm1.has(o2); // true
+    wm2.has(o2); // false
+    wm2.has(o3); // true (even if the value itself is 'undefined')
+
+    wm3.set(o1, 37);
+    wm3.get(o1); // 37
+
+    wm1.has(o1); // true
+    wm1.delete(o1);
+    wm1.has(o1); // false
+
+### Implementing a WeakMap-like class with a .clear() method
+
+    class ClearableWeakMap {
+      constructor(init) {
+        this._wm = new WeakMap(init);
+      }
+      clear() {
+        this._wm = new WeakMap();
+      }
+      delete(k) {
+        return this._wm.delete(k);
+      }
+      get(k) {
+        return this._wm.get(k);
+      }
+      has(k) {
+        return this._wm.has(k);
+      }
+      set(k, v) {
+        this._wm.set(k, v);
+        return this;
+      }
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-weakmap-objects">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-weakmap-objects</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`WeakMap`
+
+36
+
+12
+
+6
+
+11
+
+23
+
+8
+
+37
+
+36
+
+6
+
+24
+
+8
+
+3.0
+
+`WeakMap`
+
+36
+
+12
+
+6
+
+11
+
+23
+
+8
+
+37
+
+36
+
+6
+
+24
+
+8
+
+3.0
+
+`clear`
+
+36-43
+
+No
+
+20-46
+
+11
+
+25-30
+
+8-9
+
+37-43
+
+36-43
+
+20-46
+
+25-30
+
+8-9
+
+3.0-4.0
+
+`delete`
+
+36
+
+12
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+11
+
+23
+
+8
+
+37
+
+36
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+24
+
+8
+
+3.0
+
+`get`
+
+36
+
+12
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. However, the ES2015 specification specifies to return `undefined` instead. Furthermore, `WeakMap.prototype.get` accepted an optional second argument as a fallback value, which is not part of the standard. Both non-standard behaviors are removed in version 38 and higher.
+
+11
+
+23
+
+8
+
+37
+
+36
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. However, the ES2015 specification specifies to return `undefined` instead. Furthermore, `WeakMap.prototype.get` accepted an optional second argument as a fallback value, which is not part of the standard. Both non-standard behaviors are removed in version 38 and higher.
+
+24
+
+8
+
+3.0
+
+`has`
+
+36
+
+12
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+11
+
+23
+
+8
+
+37
+
+36
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+24
+
+8
+
+3.0
+
+`set`
+
+36
+
+12
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+11
+
+Returns 'undefined' instead of the 'Map' object.
+
+23
+
+8
+
+37
+
+36
+
+6
+
+Prior to Firefox 38, this method threw a `TypeError` when the key parameter was not an object. This has been fixed in version 38 and later to return `false` as per the ES2015 standard.
+
+24
+
+8
+
+3.0
+
+## See also
+
+-   [`WeakMap` in the JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections#weakmap_object)
+-   [Hiding Implementation Details with ECMAScript 6 WeakMaps](https://fitzgeraldnick.com/weblog/53/)
+-   [`Map`](map)
+-   [`Set`](set)
+-   [`WeakSet`](weakset)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a>
+
+# WeakSet
+
+The `WeakSet` object lets you store weakly held _objects_ in a collection.
+
+## Description
+
+`WeakSet` objects are collections of objects. Just as with [`Set`](set)s, each object in a `WeakSet` may occur only once; all objects in a `WeakSet`'s collection are unique.
+
+The main differences to the [`Set`](set) object are:
+
+-   `WeakSet`s are collections of **objects only**. They cannot contain arbitrary values of any type, as [`Set`](set)s can.
+-   The `WeakSet` is _weak_, meaning references to objects in a `WeakSet` are held _weakly_. If no other references to an object stored in the `WeakSet` exist, those objects can be garbage collected.
+    **Note:** This also means that there is no list of current objects stored in the collection. `WeakSets` are not enumerable.
+
+### Use case: Detecting circular references
+
+Functions that call themselves recursively need a way of guarding against circular data structures by tracking which objects have already been processed.
+
+`WeakSet`s are ideal for this purpose:
+
+    // Execute a callback on everything stored inside an object
+    function execRecursively(fn, subject, _refs = null){
+      if(!_refs)
+        _refs = new WeakSet();
+
+      // Avoid infinite recursion
+      if(_refs.has(subject))
+        return;
+
+      fn(subject);
+      if("object" === typeof subject){
+        _refs.add(subject);
+        for(let key in subject)
+          execRecursively(fn, subject[key], _refs);
+      }
+    }
+
+    const foo = {
+      foo: "Foo",
+      bar: {
+        bar: "Bar"
+      }
+    };
+
+    foo.bar.baz = foo; // Circular reference!
+    execRecursively(obj => console.log(obj), foo);
+
+Here, a `WeakSet` is created on the first run, and passed along with every subsequent function call (using the internal `_refs` parameter).
+
+The number of objects or their traversal order is immaterial, so a `WeakSet` is more suitable (and performant) than a [`Set`](set) for tracking object references, especially if a very large number of objects is involved.
+
+## Constructor
+
+[`WeakSet()`](weakset/weakset)
+Creates a new `WeakSet` object.
+
+## Instance methods
+
+[`WeakSet.prototype.add(value)`](weakset/add)
+Appends `value` to the `WeakSet` object.
+
+[`WeakSet.prototype.delete(value)`](weakset/delete)
+Removes `value` from the `WeakSet`. `WeakSet.prototype.has(value)` will return `false` afterwards.
+
+[`WeakSet.prototype.has(value)`](weakset/has)
+Returns a boolean asserting whether `value` is present in the `WeakSet` object or not.
+
+## Examples
+
+### Using the WeakSet object
+
+    const ws = new WeakSet();
+    const foo = {};
+    const bar = {};
+
+    ws.add(foo);
+    ws.add(bar);
+
+    ws.has(foo);    // true
+    ws.has(bar);    // true
+
+    ws.delete(foo); // removes foo from the set
+    ws.has(foo);    // false, foo has been removed
+    ws.has(bar);    // true, bar is retained
+
+Note that `foo !== bar`. While they are similar objects, \*they are not **the same object\***. And so they are both added to the set.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-weakset-objects">ECMAScript (ECMA-262)
+<br/>
+
+<span class="small">The definition of 'WeakSet' in that specification.</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`WeakSet`
+
+36
+
+12
+
+34
+
+No
+
+23
+
+9
+
+37
+
+36
+
+34
+
+24
+
+9
+
+3.0
+
+`WeakSet`
+
+36
+
+12
+
+34
+
+No
+
+23
+
+9
+
+37
+
+36
+
+34
+
+24
+
+9
+
+3.0
+
+`add`
+
+36
+
+12
+
+34
+
+No
+
+23
+
+9
+
+37
+
+36
+
+34
+
+24
+
+9
+
+3.0
+
+`clear`
+
+36-41
+
+No
+
+34-46
+
+No
+
+23-28
+
+No
+
+37-41
+
+36-41
+
+34-46
+
+24-28
+
+No
+
+3.0-4.0
+
+`delete`
+
+36
+
+12
+
+34
+
+No
+
+23
+
+9
+
+37
+
+36
+
+34
+
+24
+
+9
+
+3.0
+
+`has`
+
+36
+
+12
+
+34
+
+No
+
+23
+
+9
+
+37
+
+36
+
+34
+
+24
+
+9
+
+3.0
+
+## See also
+
+-   [`Map`](map)
+-   [`Set`](set)
+-   [`WeakMap`](weakmap)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet</a>
+
+# WebAssembly
+
+The `WebAssembly` JavaScript object acts as the namespace for all [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)-related functionality.
+
+Unlike most other global objects, `WebAssembly` is not a constructor (it is not a function object). You can compare it to [`Math`](math), which is also a namespace object for mathematical constants and functions, or to [`Intl`](intl) which is the namespace object for internationalization constructors and other language-sensitive functions.
+
+## Description
+
+The primary uses for the `WebAssembly` object are:
+
+-   Loading WebAssembly code, using the [`WebAssembly.instantiate()`](webassembly/instantiate) function.
+-   Creating new memory and table instances via the [`WebAssembly.Memory()`](webassembly/memory)/[`WebAssembly.Table()`](webassembly/table) constructors.
+-   Providing facilities to handle errors that occur in WebAssembly via the [`WebAssembly.CompileError()`](webassembly/compileerror)/[`WebAssembly.LinkError()`](webassembly/linkerror)/[`WebAssembly.RuntimeError()`](webassembly/runtimeerror) constructors.
+
+## Constructor properties
+
+[`WebAssembly.CompileError()`](webassembly/compileerror/compileerror)
+Indicates an error during WebAssembly decoding or validation.
+
+[`WebAssembly.Global()`](webassembly/global/global)
+Represents a global variable instance, accessible from both JavaScript and importable/exportable across one or more [`WebAssembly.Module`](webassembly/module) instances. This allows dynamic linking of multiple modules.
+
+[`WebAssembly.Instance()`](webassembly/instance/instance)
+Is a stateful, executable instance of a [WebAssembly.Module](webassembly/module)
+
+[`WebAssembly.LinkError()`](webassembly/linkerror/linkerror)
+Indicates an error during module instantiation (besides [traps](https://webassembly.org/docs/semantics/#traps) from the start function).
+
+[`WebAssembly.Memory()`](webassembly/memory/memory)
+An object whose [`buffer`](webassembly/memory/buffer) property is a resizable [ArrayBuffer](arraybuffer) that holds the raw bytes of memory accessed by a WebAssembly `Instance`.
+
+[`WebAssembly.Module()`](webassembly/module/module)
+Contains stateless WebAssembly code that has already been compiled by the browser and can be efficiently [shared with Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage), and instantiated multiple times.
+
+[`WebAssembly.RuntimeError()`](webassembly/runtimeerror/runtimeerror)
+Error type that is thrown whenever WebAssembly specifies a [trap](https://webassembly.org/docs/semantics/#traps).
+
+[`WebAssembly.Table()`](webassembly/table/table)
+An array-like structure representing a WebAssembly Table, which stores function references.
+
+## Static methods
+
+[`WebAssembly.instantiate()`](webassembly/instantiate)
+The primary API for compiling and instantiating WebAssembly code, returning both a `Module` and its first `Instance`.
+
+[`WebAssembly.instantiateStreaming()`](webassembly/instantiatestreaming)
+Compiles and instantiates a WebAssembly module directly from a streamed underlying source, returning both a `Module` and its first `Instance`.
+
+[`WebAssembly.compile()`](webassembly/compile)
+Compiles a [`WebAssembly.Module`](webassembly/module) from WebAssembly binary code, leaving instantiation as a separate step.
+
+[`WebAssembly.compileStreaming()`](webassembly/compilestreaming)
+compiles a [`WebAssembly.Module`](webassembly/module) directly from a streamed underlying source, leaving instantiation as a separate step.
+
+[`WebAssembly.validate()`](webassembly/validate)
+Validates a given typed array of WebAssembly binary code, returning whether the bytes are valid WebAssembly code (`true`) or not (`false`).
+
+## Examples
+
+### Stream a .wasm module then compile and instantiate it
+
+The following example (see our [instantiate-streaming.html](https://github.com/mdn/webassembly-examples/blob/master/js-api-examples/instantiate-streaming.html) demo on GitHub, and [view it live](https://mdn.github.io/webassembly-examples/js-api-examples/instantiate-streaming.html) also) directly streams a .wasm module from an underlying source then compiles and instantiates it, the promise fulfilling with a `ResultObject`. Because the `instantiateStreaming()` function accepts a promise for a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object, you can directly pass it a [`WindowOrWorkerGlobalScope.fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) call, and it will pass the response into the function when it fulfills.
+
+    var importObject = { imports: { imported_func: arg => console.log(arg) } };
+
+    WebAssembly.instantiateStreaming(fetch('simple.wasm'), importObject)
+    .then(obj => obj.instance.exports.exported_func());
+
+The `ResultObject`'s instance member is then accessed, and the contained exported function invoked.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#webassembly-namespace">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface)
+<br/>
+
+<span class="small">#webassembly-namespace</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`CompileError`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`Global`
+
+69
+
+79
+
+62
+
+No
+
+No
+
+13.1
+
+69
+
+69
+
+62
+
+No
+
+13.4
+
+10.0
+
+`Instance`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`LinkError`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`Memory`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`Module`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`RuntimeError`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`Table`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`WebAssembly`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`compile`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`compileStreaming`
+
+61
+
+16
+
+58
+
+No
+
+47
+
+No
+
+61
+
+61
+
+58
+
+45
+
+No
+
+8.0
+
+`instantiate`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+`instantiateStreaming`
+
+61
+
+16
+
+58
+
+No
+
+47
+
+No
+
+61
+
+61
+
+58
+
+45
+
+No
+
+8.0
+
+`validate`
+
+57
+
+16
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+No
+
+44
+
+11
+
+57
+
+57
+
+52
+
+Disabled in the Firefox 52 Extended Support Release (ESR).
+
+43
+
+11
+
+7.0
+
+## See also
+
+-   [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) overview page
+-   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
+-   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly</a>
+
+# while
+
+The **while statement** creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+
+## Syntax
+
+    while (condition)
+      statement
+
+`condition`
+An expression evaluated before each pass through the loop. If this condition evaluates to true, `statement` is executed. When condition evaluates to false, execution continues with the statement after the `while` loop.
+
+`statement`
+An optional statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements.
+
+Note: Use the `break` statement to stop a loop before condition evaluates to true.
+
+## Examples
+
+### Using while
+
+The following `while` loop iterates as long as `n` is less than three.
+
+    var n = 0;
+    var x = 0;
+
+    while (n < 3) {
+      n++;
+      x += n;
+    }
+
+Each iteration, the loop increments `n` and adds it to `x`. Therefore, `x` and `n` take on the following values:
+
+-   After the first pass: `n` = 1 and `x` = 1
+-   After the second pass: `n` = 2 and `x` = 3
+-   After the third pass: `n` = 3 and `x` = 6
+
+After completing the third pass, the condition `n` &lt; 3 is no longer true, so the loop terminates.
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-while-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-while-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`while`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`do...while`](do...while)
+-   [`for`](for)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while</a>
+
+# with
+
+**Warning:**Use of the `with` statement is not recommended, as it may be the source of confusing bugs and compatibility issues. See the "Ambiguity Contra" paragraph in the "Description" section below for details.
+
+The **with statement** extends the scope chain for a statement.
+
+## Syntax
+
+    with (expression)
+      statement
+
+`expression`
+Adds the given expression to the scope chain used when evaluating the statement. The parentheses around the expression are required.
+
+`statement`
+Any statement. To execute multiple statements, use a [block](block) statement ({ ... }) to group those statements.
+
+## Description
+
+JavaScript looks up an unqualified name by searching a scope chain associated with the execution context of the script or function containing that unqualified name. The 'with' statement adds the given object to the head of this scope chain during the evaluation of its statement body. If an unqualified name used in the body matches a property in the scope chain, then the name is bound to the property and the object containing the property. Otherwise a [`ReferenceError`](../global_objects/referenceerror) is thrown.
+
+**Note:** Using `with` is not recommended, and is forbidden in ECMAScript 5 [strict mode](../strict_mode). The recommended alternative is to assign the object whose properties you want to access to a temporary variable.
+
+### Performance pro & contra
+
+**Pro:** The `with` statement can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. The scope chain change required by 'with' is not computationally expensive. Use of 'with' will relieve the interpreter of parsing repeated object references. Note, however, that in many cases this benefit can be achieved by using a temporary variable to store a reference to the desired object.
+
+**Contra:** The `with` statement forces the specified object to be searched first for all name lookups. Therefore all identifiers that aren't members of the specified object will be found more slowly in a 'with' block. Where performance is important, 'with' should only be used to encompass code blocks that access members of the specified object.
+
+### Ambiguity contra
+
+**Contra:** The `with` statement makes it hard for a human reader or JavaScript compiler to decide whether an unqualified name will be found along the scope chain, and if so, in which object. So given this example:
+
+    function f(x, o) {
+      with (o) {
+        console.log(x);
+      }
+    }
+
+Only when `f` is called is `x` either found or not, and if found, either in `o` or (if no such property exists) in `f`'s activation object, where `x` names the first formal argument. If you forget to define `x` in the object you pass as the second argument, or if there's some similar bug or confusion, you won't get an error -- just unexpected results.
+
+**Contra:** Code using `with` may not be forward compatible, especially when used with something other than a plain object. Consider this example:
+
+    function f(foo, values) {
+      with (foo) {
+        console.log(values);
+      }
+    }
+
+If you call `f([1,2,3], obj)` in an ECMAScript 5 environment, then the `values` reference inside the `with` statement will resolve to `obj`. However, ECMAScript 2015 introduces a `values` property on <span class="page-not-created">`Array.prototype`</span> (so that it will be available on every array). So, in a JavaScript environment that supports ECMAScript 2015, the `values` reference inside the `with` statement could resolve to `[1,2,3].values`. However, in this particular example, <span class="page-not-created">`Array.prototype`</span> has been defined with `values` in its [`Symbol.unscopables`](../global_objects/symbol/unscopables) object. If it were not, one can see how this would be a difficult issue to debug.
+
+## Examples
+
+### Using with
+
+The following `with` statement specifies that the [`Math`](../global_objects/math) object is the default object. The statements following the `with` statement refer to the [`PI`](../global_objects/math/pi) property and the [`cos`](../global_objects/math/cos) and [`sin`](../global_objects/math/sin) methods, without specifying an object. JavaScript assumes the `Math` object for these references.
+
+    var a, x, y;
+    var r = 10;
+
+    with (Math) {
+      a = PI * r * r;
+      x = r * cos(PI);
+      y = r * sin(PI / 2);
+    }
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-with-statement">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-with-statement</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`with`
+
+1
+
+12
+
+1
+
+3
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [block](block)
+-   [Strict mode](../strict_mode)
+-   [`Symbol.unscopables`](../global_objects/symbol/unscopables)
+-   [`Array.prototype[@@unscopables]`](../global_objects/array/@@unscopables)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with</a>
+
+# Atomics.xor()
+
+The static ` Atomics``.xor() ` method computes a bitwise XOR with a given value at a given position in the array, and returns the old value at that position. This atomic operation guarantees that no other write happens until the modified value is written back.
+
+## Syntax
+
+    Atomics.xor(typedArray, index, value)
+
+### Parameters
+
+`typedArray`
+An integer typed array. One of [`Int8Array`](../int8array), [`Uint8Array`](../uint8array), [`Int16Array`](../int16array), [`Uint16Array`](../uint16array), [`Int32Array`](../int32array), [`Uint32Array`](../uint32array), [`BigInt64Array`](../bigint64array), or [`BigUint64Array`](../biguint64array).
+
+`index`
+The position in the `typedArray` to compute the bitwise XOR.
+
+`value`
+The number to compute the bitwise XOR with.
+
+### Return value
+
+The old value at the given position (`typedArray[index]`).
+
+### Exceptions
+
+-   Throws a [`TypeError`](../typeerror), if `typedArray` is not one of the allowed integer types.
+-   Throws a [`RangeError`](../rangeerror), if `index` is out of bounds in the `typedArray`.
+
+## Description
+
+The bitwise XOR operation yields 1, if `a` and `b` are different. The truth table for the XOR operation is:
+
+<table><thead><tr class="header"><th><code>a</code></th><th><code>b</code></th><th><code>a ^ b</code></th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>1</td></tr><tr class="odd"><td>1</td><td>0</td><td>1</td></tr><tr class="even"><td>1</td><td>1</td><td>0</td></tr></tbody></table>
+
+For example, a bitwise XOR of `5 ^ 1` results in `0100` which is 4 in decimal.
+
+    5  0101
+    1  0001
+       ----
+    4  0100
+
+## Examples
+
+### Using xor
+
+    const sab = new SharedArrayBuffer(1024);
+    const ta = new Uint8Array(sab);
+    ta[0] = 5;
+
+    Atomics.xor(ta, 0, 1); // returns 5, the old value
+    Atomics.load(ta, 0);  // 4
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.xor">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-atomics.xor</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`xor`
+
+68
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This was a temporary removal while mitigations were put in place.
+
+79
+
+16-17
+
+Support was removed to mitigate [speculative execution side-channel attacks (Windows blog)](https://blogs.windows.com/msedgedev/2018/01/03/speculative-execution-mitigations-microsoft-edge-internet-explorer).
+
+78
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+No
+
+10.1-11.1
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+60-63
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+57
+
+Support was disabled by default to mitigate [speculative execution side-channel attacks (Mozilla Security Blog)](https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/).
+
+55-57
+
+46-55
+
+No
+
+10.3-11.3
+
+No
+
+Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the efficacy of [speculative side-channel attacks](https://www.chromium.org/Home/chromium-security/ssca). This is intended as a temporary measure until other mitigations are in place.
+
+## See also
+
+-   [`Atomics`](../atomics)
+-   [`Atomics.and()`](and)
+-   [`Atomics.or()`](or)
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/xor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/xor</a>
+
+# yield\*
+
+The `yield*` is used to delegate to another [`generator`](../statements/function*) or iterable object.
+
+## Syntax
+
+     yield* expression;
+
+`expression`
+The expression which returns an iterable object.
+
+## Description
+
+The `yield*` expression iterates over the operand and `yield`s each value returned by it.
+
+The value of `yield*` expression itself is the value returned by that iterator when it's closed (i.e., when `done` is `true`).
+
+## Examples
+
+### Delegating to another generator
+
+In following code, values yielded by `g1()` are returned from `next()` calls just like those which are yielded by `g2()`.
+
+    function* g1() {
+      yield 2;
+      yield 3;
+      yield 4;
+    }
+
+    function* g2() {
+      yield 1;
+      yield* g1();
+      yield 5;
+    }
+
+    const iterator = g2();
+
+    console.log(iterator.next()); // {value: 1, done: false}
+    console.log(iterator.next()); // {value: 2, done: false}
+    console.log(iterator.next()); // {value: 3, done: false}
+    console.log(iterator.next()); // {value: 4, done: false}
+    console.log(iterator.next()); // {value: 5, done: false}
+    console.log(iterator.next()); // {value: undefined, done: true}
+
+### Other Iterable objects
+
+Besides generator objects, `yield*` can also `yield` other kinds of iterables (e.g., arrays, strings, or [`arguments`](../functions/arguments) objects).
+
+    function* g3() {
+      yield* [1, 2];
+      yield* '34';
+      yield* Array.from(arguments);
+    }
+
+    const iterator = g3(5, 6);
+
+    console.log(iterator.next()); // {value: 1, done: false}
+    console.log(iterator.next()); // {value: 2, done: false}
+    console.log(iterator.next()); // {value: "3", done: false}
+    console.log(iterator.next()); // {value: "4", done: false}
+    console.log(iterator.next()); // {value: 5, done: false}
+    console.log(iterator.next()); // {value: 6, done: false}
+    console.log(iterator.next()); // {value: undefined, done: true}
+
+### The value of `yield*` expression itself
+
+`yield*` is an expression, not a statement—so it evaluates to a value.
+
+    function* g4() {
+      yield* [1, 2, 3];
+      return 'foo';
+    }
+
+    function* g5() {
+      const g4ReturnValue = yield* g4();
+      console.log(g4ReturnValue) // 'foo'
+      return g4ReturnValue;
+    }
+
+    const iterator = g5();
+
+    console.log(iterator.next()); // {value: 1, done: false}
+    console.log(iterator.next()); // {value: 2, done: false}
+    console.log(iterator.next()); // {value: 3, done: false} done is false because g5 generator isn't finished, only g4
+    console.log(iterator.next()); // {value: 'foo', done: true}
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions-runtime-semantics-evaluation">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#sec-generator-function-definitions-runtime-semantics-evaluation</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`yield*`
+
+39
+
+12
+
+27
+
+Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.
+
+No
+
+26
+
+10
+
+39
+
+39
+
+27
+
+Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.
+
+26
+
+10
+
+4.0
+
+## See also
+
+-   [The Iterator protocol](../iteration_protocols)
+-   [`function*`](../statements/function*)
+-   [`function* expression`](function*)
+-   [`yield`](yield)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield\*</a>
+
+# yield
+
+The `yield` keyword is used to pause and resume a generator function ([`function*`](../statements/function*) or [legacy generator function](https://developer.mozilla.org/en-US/docs/Archive/Web/JavaScript/Legacy_generator_function_statement)).
+
+## Syntax
+
+    [rv] = yield [expression]
+
+`expression` <span class="badge inline optional">Optional</span>
+Defines the value to return from the generator function via [the iterator protocol](../iteration_protocols#the_iterator_protocol). If omitted, `undefined` is returned instead.
+
+`rv` <span class="badge inline optional">Optional</span>
+Retrieves the optional value passed to the generator's `next()` method to resume its execution.
+
+## Description
+
+The `yield` keyword pauses generator function execution and the value of the expression following the `yield` keyword is returned to the generator's caller. It can be thought of as a generator-based version of the `return` keyword.
+
+`yield` can only be called directly from the generator function that contains it. It cannot be called from nested functions or from callbacks.
+
+The `yield` keyword causes the call to the generator's `next()` method to return an `IteratorResult` object with two properties: `value` and `done`. The `value` property is the result of evaluating the `yield` expression, and `done` is `false`, indicating that the generator function has not fully completed.
+
+Once paused on a `yield` expression, the generator's code execution remains paused until the generator's `next()` method is called. Each time the generator's `next()` method is called, the generator resumes execution, and runs until it reaches one of the following:
+
+-   A `yield`, which causes the generator to once again pause and return the generator's new value. The next time `next()` is called, execution resumes with the statement immediately after the `yield`.
+-   [`throw`](../statements/throw) is used to throw an exception from the generator. This halts execution of the generator entirely, and execution resumes in the caller (as is normally the case when an exception is thrown).
+-   The end of the generator function is reached. In this case, execution of the generator ends and an `IteratorResult` is returned to the caller in which the `value` is [`undefined`](../global_objects/undefined) and `done` is `true`.
+-   A [`return`](../statements/return) statement is reached. In this case, execution of the generator ends and an `IteratorResult` is returned to the caller in which the `value` is the value specified by the `return` statement and `done` is `true`.
+
+If an optional value is passed to the generator's `next()` method, that value becomes the value returned by the generator's current `yield` operation.
+
+Between the generator's code path, its `yield` operators, and the ability to specify a new starting value by passing it to [`Generator.prototype.next()`](../global_objects/generator/next), generators offer enormous power and control.
+
+**Warning:** Unfortunately, `next()` is asymmetric, but that can't be helped: It always sends a value to the currently suspended `yield`, but returns the operand of the following `yield`.
+
+## Examples
+
+### Using yield
+
+The following code is the declaration of an example generator function.
+
+    function* countAppleSales () {
+      let saleList = [3, 7, 5]
+      for (let i = 0; i < saleList.length; i++) {
+        yield saleList[i]
+      }
+    }
+
+Once a generator function is defined, it can be used by constructing an iterator as shown.
+
+    let appleStore = countAppleSales()  // Generator { }
+    console.log(appleStore.next())      // { value: 3, done: false }
+    console.log(appleStore.next())      // { value: 7, done: false }
+    console.log(appleStore.next())      // { value: 5, done: false }
+    console.log(appleStore.next())      // { value: undefined, done: true }
+
+You can also send a value with next(value) into the generator. 'step' evaluates as a return value in this syntax \[rv\] = **yield** \[expression\]
+
+    function* counter(value) {
+     let step;
+
+     while (true) {
+       step = yield ++value;
+
+       if (step) {
+         value += step;
+       }
+     }
+    }
+
+    const generatorFunc = counter(0);
+    console.log(generatorFunc.next().value);   // 1
+    console.log(generatorFunc.next().value);   // 2
+    console.log(generatorFunc.next().value);   // 3
+    console.log(generatorFunc.next(10).value); // 14
+    console.log(generatorFunc.next().value);   // 15
+    console.log(generatorFunc.next(10).value); // 26
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-YieldExpression">ECMAScript Language Specification (ECMAScript)
+<br/>
+
+<span class="small">#prod-YieldExpression</span></a></td></tr></tbody></table>
+
+## Browser compatibility
+
+Desktop
+
+Mobile
+
+Chrome
+
+Edge
+
+Firefox
+
+Internet Explorer
+
+Opera
+
+Safari
+
+WebView Android
+
+Chrome Android
+
+Firefox for Android
+
+Opera Android
+
+Safari on IOS
+
+Samsung Internet
+
+`yield`
+
+39
+
+12
+
+26
+
+\["Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.", "Starting with Firefox 29, an `IteratorResult` object returned for completed generator function."\]
+
+No
+
+26
+
+10
+
+39
+
+39
+
+26
+
+\["Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.", "Starting with Firefox 29, an `IteratorResult` object returned for completed generator function."\]
+
+26
+
+10
+
+4.0
+
+## See also
+
+-   [The Iterator protocol](../iteration_protocols)
+-   [`function*`](../statements/function*)
+-   [`function* expression`](function*)
+-   [`yield*`](yield*)
+
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield</a>
+
