@@ -208,7 +208,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
     usemap=""         <!-- This is the name of the client-side image map in the object -->
 
-    <iframe sandbox="allow-scripts"  src="" frameborder="0"></iframe>       <!-- Contains an inline frame that allows to embed external information -->
+    <iframe src="" frameborder="0"></iframe>       <!-- Contains an inline frame that allows to embed external information -->
 
     <embed src="" type="">    <!-- Acts as a container for external application or plug-in -->
 
@@ -545,7 +545,7 @@ Python has two primitive loop commands:
 -   <span id="350f">To loop through a set of code a specified number of times, we can use the range() function.</span>
 -   <span id="3824">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="2b5b">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
--   <span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
+-   <span id="4fae">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
 -   <span id="897a">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
