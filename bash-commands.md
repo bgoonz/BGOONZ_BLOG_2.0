@@ -1,4 +1,4 @@
-# My Commands
+## My Commands
 
 #### Find
 
@@ -802,7 +802,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -916,11 +916,11 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts"  src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
 
   # awk '{print "<li>"};
 
-  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
