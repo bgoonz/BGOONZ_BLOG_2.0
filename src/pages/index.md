@@ -222,7 +222,8 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app/"
+      <iframe sandbox="allow-scripts" 
+      src="https://random-static-html-deploys.netlify.app/"
       class="block-content" width="100%  width="1200px!important"
 
       height="1000px!important">
@@ -234,33 +235,43 @@ sections:
     section_id: new content
     image_alt: animated gif
     image_position: right
-    content: |
+    content: >
       # ***What I've been working on lately:***
+
       ## Web Dev Utilitiy Tools
-      <iframe sandbox="allow-scripts"  class="block-content" width="100%  width="1200px!important"
+
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe sandbox="allow-scripts"  class="block-content" width="100%  width="1200px!important"
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe sandbox="allow-scripts"  class="block-content" width="100%  width="1200px!important"
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     actions: []
     type: section_content
-    image: images/cool annimation.gif
   - section_id: tools
     image_alt: lorem-ipsum
     image_position: left
-    content: |
+    content: >
       ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
-      <iframe sandbox="allow-scripts"  class="block-content" width="100%  width="1200px!important"
+
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
