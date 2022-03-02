@@ -1,0 +1,53 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "form",
+        "kind": 2,
+        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "peekOfCode": "def form():\n    return render_template(\"form.html\")\n@app.route(\"/hello\", methods=[\"GET\", \"POST\"])\ndef hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":\n    app.run()",
+        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "peekOfCode": "def hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":\n    app.run()",
+        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\", methods=[\"GET\", \"POST\"])\ndef form():\n    return render_template(\"form.html\")\n@app.route(\"/hello\", methods=[\"GET\", \"POST\"])\ndef hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":",
+        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "documentation": {}
+    }
+]
