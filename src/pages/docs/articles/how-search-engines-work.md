@@ -48,15 +48,15 @@ Computer Science Department, Stanford University, Stanford, CA 94305
 
 ### Abstract
 
->        In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)  
->        To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
+>        In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)
+>        To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.
 >        Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
-> 
+>
 >  **Keywords**: World Wide Web, Search Engines, Information Retrieval, PageRank, Google
 
 ## 1\. Introduction
 
-_(Note: There are two versions of this paper -- a longer full version and a shorter printed version. The full version is available on the web and the conference CD-ROM.)_  
+_(Note: There are two versions of this paper -- a longer full version and a shorter printed version. The full version is available on the web and the conference CD-ROM.)_
 The web creates new challenges for information retrieval. The amount of information on the web is growing rapidly, as well as the number of new users inexperienced in the art of web research. People are likely to surf the web using its link graph, often starting with high quality human maintained indices such as [Yahoo!](http://www.yahoo.com/) or with search engines. Human maintained lists cover popular topics effectively but are subjective, expensive to build and maintain, slow to improve, and cannot cover all esoteric topics. Automated search engines that rely on keyword matching usually return too many low quality matches. To make matters worse, some advertisers attempt to gain people's attention by taking measures meant to mislead automated search engines. We have built a large-scale search engine which addresses many of the problems of existing systems. It makes especially heavy use of the additional structure present in hypertext to provide much higher quality search results. We chose our system name, Google, because it is a common spelling of googol, or 10100 and fits well with our goal of building very large-scale search engines.
 
 ### 1.1 Web Search Engines -- Scaling Up: 1994 - 2000
@@ -96,9 +96,9 @@ The citation (link) graph of the web is an important resource that has largely g
 Academic citation literature has been applied to the web, largely by counting citations or backlinks to a given page. This gives some approximation of a page's importance or quality. PageRank extends this idea by not counting links from all pages equally, and by normalizing by the number of links on a page. PageRank is defined as follows:
 
 > _We assume page A has pages T1...Tn which point to it (i.e., are citations). The parameter d is a damping factor which can be set between 0 and 1. We usually set d to 0.85. There are more details about d in the next section. Also C(A) is defined as the number of links going out of page A. The PageRank of a page A is given as follows:_
-> 
+>
 > _PR(A) = (1-d) + d (PR(T1)/C(T1) + ... + PR(Tn)/C(Tn))_
-> 
+>
 > _Note that the PageRanks form a probability distribution over web pages, so the sum of all web pages' PageRanks will be one._
 
 PageRank or _PR(A)_ can be calculated using a simple iterative algorithm, and corresponds to the principal eigenvector of the normalized link matrix of the web. Also, a PageRank for 26 million web pages can be computed in a few hours on a medium size workstation. There are many other details which are beyond the scope of this paper.
@@ -137,11 +137,11 @@ Another big difference between the web and traditional well controlled collectio
 
 First, we will provide a high level discussion of the architecture. Then, there is some in-depth descriptions of important data structures. Finally, the major applications: crawling, indexing, and searching will be examined in depth.
 
-![](http://infolab.stanford.edu/~backrub/over.gif)
+![]()
 
 Figure 1. High Level Google Architecture
 
-  
+
 
 ### 4.1 Google Architecture Overview
 
@@ -163,7 +163,7 @@ BigFiles are virtual files spanning multiple file systems and are addressable by
 
 #### 4.2.2 Repository
 
-  
+
 
 ![](http://infolab.stanford.edu/~backrub/repos.gif)
 
@@ -191,7 +191,7 @@ Our compact encoding uses two bytes for every hit. There are two types of hits: 
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
 
- 
+
 
 The length of a hit list is stored before the hits themselves. To save space, the length of the hit list is combined with the wordID in the forward index and the docID in the inverted index. This limits it to 8 and 5 bits respectively (there are some tricks which allow 8 bits to be borrowed from the wordID). If the length is longer than would fit in that many bits, an escape code is used in those bits, and the next two bytes contain the actual length.
 
@@ -230,12 +230,12 @@ The goal of searching is to provide quality search results efficiently. Many of 
 5.  Compute the rank of that document for the query.
 6.  If we are in the short barrels and at the end of any doclist, seek to the start of the doclist in the full barrel for every word and go to step 4.
 7.  If we are not at the end of any doclist go to step 4.
-  
+
 Sort the documents that have matched by rank and return the top k.
 
 Figure 4. Google Query Evaluation
 
- 
+
 
 To put a limit on response time, once a certain number (currently 40,000) of matching documents are found, the searcher automatically goes to step 8 in Figure 4. This means that it is possible that sub-optimal results would be returned. We are currently investigating other ways to solve this problem. In the past, we sorted the hits according to PageRank, which seemed to improve the situation.
 
@@ -257,8 +257,8 @@ All of the results are reasonably high quality pages and, at last check, none we
 
 ### 5.1 Storage Requirements
 
-Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.  
-  
+Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.
+
 
 Storage Statistics
 
@@ -282,12 +282,12 @@ Lexicon
 
 293 MB
 
-Temporary Anchor Data   
+Temporary Anchor Data
 (not in total)
 
 6.6 GB
 
-Document Index Incl.   
+Document Index Incl.
 Variable Width Data
 
 9.7 GB
@@ -322,11 +322,11 @@ Number of 404's
 
 1.6 million
 
- 
+
 
 Table 1. Statistics
 
-  
+
 
 ###  5.2 System Performance
 
@@ -336,11 +336,11 @@ It is important for a search engine to crawl and index efficiently. This way inf
 
 Improving the performance of search was not the major focus of our research up to this point. The current version of Google answers most queries in between 1 and 10 seconds. This time is mostly dominated by disk IO over NFS (since disks are spread over a number of machines). Furthermore, Google does not have any optimizations such as query caching, subindices on common terms, and other common optimizations. We intend to speed up Google considerably through distribution and hardware, software, and algorithmic improvements. Our target is to be able to handle several hundred queries per second. Table 2 has some sample query times from the current version of Google. They are repeated to show the speedups resulting from cached IO.
 
- 
+
 
 **Initial Query**
 
-**Same Query Repeated (IO mostly cached)** 
+**Same Query Repeated (IO mostly cached)**
 
 **Query**
 
@@ -392,11 +392,11 @@ search engines
 
 1.16
 
- 
+
 
 Table 2. Search Times
 
-  
+
 
 ## 6 Conclusions
 
