@@ -267,7 +267,8 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-      ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+      ### ![](images/static-server-5bf5ad2d.PNG)Tool Showcase
+
 
       <iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important"
