@@ -7,8 +7,8 @@ excerpt: >-
     Bubble sort, sorts an array of integers by bubbling the largest integer to the
     top.
 seo:
-    title: ''
-    description: ''
+    title: 'Big O'
+    description: 'Big O Computational Complexity'
     robots: []
     extra: []
 template: post
