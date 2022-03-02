@@ -27,12 +27,9 @@ thumb_image: images/es6.jpg
 
 <iframe sandbox="allow-scripts"  width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 
-
-
 <details>
 
-<summary> Questions Table  </summary>   
-
+<summary> Questions Table  </summary>
 
 #### Table of Contents
 
@@ -2426,11 +2423,4 @@ thumb_image: images/es6.jpg
 </tbody>
 </table>
 
-
-
-
 </details>
-
-
-
-
