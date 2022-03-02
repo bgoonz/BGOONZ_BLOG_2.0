@@ -6,7 +6,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -44,20 +44,20 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -103,7 +103,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -117,7 +117,7 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -137,7 +137,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -150,7 +150,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -377,7 +377,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -408,7 +408,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -418,7 +418,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     back to top css
 
@@ -513,7 +513,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     scroll2topsvg
 
@@ -646,7 +646,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     firebase-cdn
 
@@ -678,7 +678,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     analytics
 
@@ -696,7 +696,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     more-meta-tags-open-graph
 
@@ -723,7 +723,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     simpleanalytics
 
@@ -734,7 +734,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     metaaaa
 
@@ -745,7 +745,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia-head
 
@@ -768,7 +768,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     fb
 
@@ -800,7 +800,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     stackbit-widget
 
@@ -810,7 +810,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     blm
 
@@ -836,7 +836,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -847,7 +847,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     add-this
 
@@ -858,7 +858,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -892,11 +892,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     test
 
--   before `</body>`
+-   before `</body>`
 
     search
 
@@ -919,7 +919,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     links-highlight
 

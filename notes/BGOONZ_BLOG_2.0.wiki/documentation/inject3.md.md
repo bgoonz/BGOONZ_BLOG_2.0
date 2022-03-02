@@ -2,7 +2,7 @@
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -28,7 +28,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -41,7 +41,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -79,20 +79,20 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -138,7 +138,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -152,7 +152,7 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -172,7 +172,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -185,7 +185,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     prism
 
@@ -395,7 +395,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     prismjs
 
@@ -414,7 +414,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -641,7 +641,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -672,7 +672,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     prism2body
 
@@ -691,7 +691,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia
 
@@ -711,7 +711,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
+[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 
 Add snippet
 

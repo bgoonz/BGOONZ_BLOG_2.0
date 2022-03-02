@@ -1,10 +1,11 @@
-
 # VS Code Performance – How to Optimize Visual Studio Code and Choose the "Best" Extensions
 
 > ## Excerpt
-> Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions.  But performance will inevitably be affected as your collection of extensions grows.  Do you evaluate the performance of an extension before installing it? What
+>
+> Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions. But performance will inevitably be affected as your collection of extensions grows. Do you evaluate the performance of an extension before installing it? What
 
 ---
+
 Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions.
 
 But performance will inevitably be affected as your collection of extensions grows.
@@ -68,44 +69,42 @@ Most lists of extensions talk about the cool features, and little else. If somet
 Some of the criteria that I suggest involves looking at source code. Don't be put off by that. To gather the key facts only takes a couple of minutes. I will show you how!
 
 1.  **Is the feature I need available in VS Code already?**
-    
+
     I demonstrated that you don't need many popular extensions in an article ["VS Code: you don't need that extension"](https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html). You can consult the [VS Code docs](https://code.visualstudio.com/Docs) to check on a particular feature.
-    
+
 2.  **Does the extension have the features I need?**
-    
+
     Consult the extension page on Visual Studio Marketplace to find this out.
-    
+
 3.  **When is an extension loaded and active?**
-    
+
     I'll discuss this in detail in the section [Activation Events](https://www.freecodecamp.org/news/optimize-vscode-performance-best-extensions/#activation-events). You need to check the _package.json_ of the source code to find this out in advance.
-    
+
     You can run the **Developer: Startup Performance** command to see the Activation Events of installed extensions. I discuss this further in the section [How to audit performance.](https://www.freecodecamp.org/news/optimize-vscode-performance-best-extensions/#how-to-audit-performance)
-    
+
 4.  **Are resources optimized?**
-    
+
     You need to check the source code to see if it uses a bundler. You can check the _package.json_ to see if the _scripts_ section has a pre-build step for bundling.
-    
+
     The VSIX extension file is a compressed archive of files for the code and the listing in the marketplace. Developers often include unnecessary files. There is a _.vscodeignore_ file to exclude files.
-    
+
     The number of files that the VSIX contains has an impact on the cold activation time. The cold activation time is the first run of the extension after you install it. It tends to be slower than other times. I guess this is because the VSIX is uncompressed and cached.
-    
+
     This is what the [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extension looks like when you open it in [7Zip](https://www.7-zip.org/).
-    
 
 ![vetur VSIX opened in 7zip](https://www.freecodecamp.org/news/content/images/2020/10/vetur-7zip.png)
 
 5.  **Have there been any performance issues reported recently, which are unresolved?**
-    
+
     You can uncover these by auditing the performance of the extension. You need to check the issues on the Git repo also.
-    
+
 6.  **Does the code have tests?**
-    
+
     The extension is going to be more susceptible to bugs without tests. You need to check the source code to see if there are tests.
-    
+
 7.  **Is it actively maintained?**
-    
+
     The _Project Details_ section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be "done", so maintenance is not an important consideration.
-    
 
 ![Marktetplace Page Project Details](https://www.freecodecamp.org/news/content/images/2020/10/marketplace-maintenance.png)
 

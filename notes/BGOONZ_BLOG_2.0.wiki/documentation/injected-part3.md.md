@@ -6,7 +6,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -32,7 +32,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -45,7 +45,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     apple
 
@@ -55,7 +55,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     hit counter
 
@@ -65,7 +65,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     go-back
 
@@ -79,7 +79,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     clock
 
@@ -90,7 +90,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     algolia
 
@@ -111,7 +111,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia-cdn
 
@@ -122,7 +122,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     algolia2
 
@@ -143,7 +143,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
+[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 
 Add snippet
 
@@ -171,45 +171,45 @@ Edit settings
 
 ## [Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
 
-Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
+Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
 
 ### [Outgoing notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#outgoing-notifications)
 
 Add notification
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
 
     Options
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
 
     Options
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
 
     Options
 
--   Add rich details to commits when Deploy Preview starts
+-   Add rich details to commits when Deploy Preview starts
 
     Options
 
--   Add rich details to commits when Deploy Preview succeeds
+-   Add rich details to commits when Deploy Preview succeeds
 
     Options
 
--   Add rich details to commits when Deploy Preview fails
+-   Add rich details to commits when Deploy Preview fails
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is pending
+-   Email bryan.guner@gmail.com when deploy request is pending
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is accepted
+-   Email bryan.guner@gmail.com when deploy request is accepted
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is rejected
+-   Email bryan.guner@gmail.com when deploy request is rejected
 
     Options
 
@@ -219,4 +219,4 @@ Add notification
 -   [News](https://www.netlify.com/news/)
 -   [Terms](https://www.netlify.com/tos/)
 
-© 2021 Netlify
+© 2021 Netlify

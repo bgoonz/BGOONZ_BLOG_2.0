@@ -2,7 +2,7 @@ www.algolia.com/interface-demos/2e4a0ba7-4fc8-4ed3-ab24-9b3d53e9b894
 
 -   [jsanimate](https://jsanimate-gnj46.ondigitalocean.app/)
 
-<iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/nav-bar-examples-forked-izhl5?fontsize=14&hidenavigation=1&theme=dark"
+<iframe src="https://codesandbox.io/embed/nav-bar-examples-forked-izhl5?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Nav Bar Examples (forked)"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"

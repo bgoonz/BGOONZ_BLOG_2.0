@@ -130,7 +130,7 @@ If we change this so that the `<iframe>` in the document is listening to post me
 
     <!-- y.html -->
     <!DOCTYPE html>
-    <iframe sandbox="allow-scripts"  src="x.html"></iframe>
+    <iframe src="x.html"></iframe>
     <script>
       const bound = frames[0].postMessage.bind(frames[0], "some data", "*");
       Promise.resolve(undefined).then(bound);

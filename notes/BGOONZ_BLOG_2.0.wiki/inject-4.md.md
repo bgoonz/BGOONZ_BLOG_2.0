@@ -20,7 +20,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -33,7 +33,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -71,20 +71,20 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -130,7 +130,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -144,7 +144,7 @@
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -164,7 +164,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -177,7 +177,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -404,7 +404,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -435,7 +435,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -445,7 +445,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     back to top css
 
@@ -540,7 +540,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     print2pdf
 
@@ -553,7 +553,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     scroll2topsvg
 
@@ -686,7 +686,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     tawk-chat
 
@@ -708,7 +708,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     firebase-cdn
 
@@ -740,7 +740,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     add-this-suggested-pages
 
@@ -751,7 +751,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     auth-firestore-cloud
 
@@ -769,7 +769,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     analytics
 
@@ -787,7 +787,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     search-script
 
@@ -807,7 +807,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     more-meta-tags-open-graph
 
@@ -834,7 +834,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     simpleanalytics
 
@@ -845,7 +845,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     metaaaa
 
@@ -856,7 +856,7 @@
 
     Remove
 
-[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
+[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 
 Add snippet
 
@@ -896,48 +896,47 @@ With each deploy, Netlify scans new and changed HTML files for forms to enable h
 
 Edit settings
 
-[Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
--------------------------------------------------------------------------------------------------------
+## [Deploy notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#deploy-notifications)
 
-Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
+Set up outgoing webhooks to notify other services about deploys for your site. [Learn more](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-and-notifications)
 
 ### [Outgoing notifications](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#outgoing-notifications)
 
 Add notification
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
 
     Options
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
 
     Options
 
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
+-   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
 
     Options
 
--   Add rich details to commits when Deploy Preview starts
+-   Add rich details to commits when Deploy Preview starts
 
     Options
 
--   Add rich details to commits when Deploy Preview succeeds
+-   Add rich details to commits when Deploy Preview succeeds
 
     Options
 
--   Add rich details to commits when Deploy Preview fails
+-   Add rich details to commits when Deploy Preview fails
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is pending
+-   Email bryan.guner@gmail.com when deploy request is pending
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is accepted
+-   Email bryan.guner@gmail.com when deploy request is accepted
 
     Options
 
--   Email bryan.guner@gmail.com when deploy request is rejected
+-   Email bryan.guner@gmail.com when deploy request is rejected
 
     Options
 
@@ -947,4 +946,4 @@ Add notification
 -   [News](https://www.netlify.com/news/)
 -   [Terms](https://www.netlify.com/tos/)
 
-© 2021 Netlify
+© 2021 Netlify

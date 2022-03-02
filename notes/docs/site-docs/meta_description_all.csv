@@ -44,12 +44,12 @@ Supports video streaming at various resolutions.","138","898","Learning about We
 "https://bgoonz-blog.netlify.app/docs/javascript/review/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/about/eng-portfolio/","2","This is an Engineering Portfolio page that contains a powerpoint portfolio of my work as an electrical engineer!","112","693","Learning about Web Development.","31","220","Indexable",""
-"https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/","2","When you install a package using npm you can perform 2 types of installation:
+"https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/","2","When you install a package using npm you can perform 2 types of installation:
 a local install
 a global install
 
-By default, when you type an npm install command, like:
-the package is installed in the current file tree, under the node_modules subfolder.","252","1549","Learning about Web Development.","31","220","Indexable",""
+By default, when you type an npm install command, like:
+the package is installed in the current file tree, under the node_modules subfolder.","252","1549","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/docs/bash/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/javascript/for-loops/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
@@ -73,7 +73,7 @@ the package is installed in the current file tree, under the node_modules subf
 "https://bgoonz-blog.netlify.app/docs/docs/es-6-features/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/docs/node-docs-full/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
-"https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this/","2","Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.","115","717","Learning about Web Development.","31","220","Indexable",""
+"https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this/","2","Arrow functions are great because the inner value of this cant be changed, its *always* the same as the outer this.","115","717","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/reference/awesome-lists/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/docs/git-repos/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/reference/awesome-static/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
@@ -82,7 +82,7 @@ the package is installed in the current file tree, under the node_modules subf
 "https://bgoonz-blog.netlify.app/docs/articles/npm/","2","npm is the standard package manager for Node.js.
 In January 2017 over 350000 packages were reported being listed in the npm registry.","133","866","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/articles/install/","2","This is the Install page","24","141","Learning about Web Development.","31","220","Indexable",""
-"https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/","2","Add Firebase to your JavaScript project Note:","45","286","Learning about Web Development.","31","220","Indexable",""
+"https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/","2","Add Firebase to your JavaScript project Note:","45","286","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/community/bookmarks/","2","","0","0","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis/","2","You can use any AJAX library you like with React. Some popular ones are Axios, jQuery AJAX, and the browser built-in window.fetch.","130","829","Learning about Web Development.","31","220","Indexable",""
 "https://bgoonz-blog.netlify.app/docs/projects/list-of-projects/","2","introductory-react-part-2
