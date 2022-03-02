@@ -292,23 +292,23 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### GIT:
+### GIT
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### CSS:
+### CSS
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
 ---
 
-### Bootstrap:
+### Bootstrap
 
 ---
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### Bash:
+### Bash
 
 > Continued:
 
@@ -316,7 +316,7 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### Python:
+### Python
 
 -   <span id="37d9">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span>
 -   <span id="bff6">It is also Object oriented, modular oriented and a scripting language.</span>
@@ -326,14 +326,14 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 -   <span id="bcb1">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b333">`python <filename.py>`</span>
 
-#### By default, the python doesn't require any imports to run a python file.
+#### By default, the python doesn't require any imports to run a python file
 
 ### Create and execute a program
 
-1.  <span id="e0d4">Open up a terminal/cmd</span>
-2.  <span id="07e7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span>
-3.  <span id="85c1">Write the program and save it</span>
-4.  <span id="b0b9">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span>
+1. <span id="e0d4">Open up a terminal/cmd</span>
+2. <span id="07e7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span>
+3. <span id="85c1">Write the program and save it</span>
+4. <span id="b0b9">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor" title="http://nameProgram.py">nameProgram.py</a></span>
 
 ### Basic Datatypes
 
@@ -509,8 +509,8 @@ I am literally just going to combine a fair number of my Cheat Sheets in no part
 
 Python has two primitive loop commands:
 
-1.  <span id="7947">while loops</span>
-2.  <span id="672e">for loops</span>
+1. <span id="7947">while loops</span>
+2. <span id="672e">for loops</span>
 
 #### While loop
 
@@ -582,37 +582,37 @@ Python has two primitive loop commands:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### JavaScript:
+### JavaScript
 
 ---
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### TypeScript:
+### TypeScript
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### React:
+### React
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### Node:
+### Node
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### JQuery:
+### JQuery
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### Markdown:
+### Markdown
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### JSON:
+### JSON
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*nxdyK494Hu-gIs3dSZyrZQ.jpeg" class="graf-image" /></figure>
 
-### Discover More:
+### Discover More
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
