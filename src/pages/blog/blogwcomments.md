@@ -30,7 +30,7 @@ A familiar example of non-persistent data would be JavaScript objects and arrays
 
 In relational databases, **the data is stored in tabular format grouped into rows and columns** (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.
 
-These kinds of databases are relational because a *relation* is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
+These kinds of databases are relational because a _relation_ is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
 
 ### **Tables**
 
@@ -144,7 +144,7 @@ We can pass a list of field names to order by and optionally choose asc or desc 
 
 Some SQL engines also support using field abbreviations when sorting.
 
-In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields' position in the *selection* portion of the query, so 1 would be *name*, 2 would be *salary*, and so on.
+In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields' position in the _selection_ portion of the query, so 1 would be _name_, 2 would be _salary_, and so on.
 
 Note that the WHERE clause should come after the FROM clause. The ORDER BY clause always goes last.
 
@@ -264,7 +264,7 @@ In other words, you can expect SELECT, UPDATE, INSERT, WHERE , and the like to b
 
 SQLite allows us to store databases as single files. SQLite projects have a .db3 extension. That is the database.
 
-SQLite is *not a database* (like relational, graph, or document are databases) but rather *a database management system*.
+SQLite is _not a database_ (like relational, graph, or document are databases) but rather _a database management system_.
 
 ### **Opening an existing database in SQLite Studio**
 
@@ -552,9 +552,9 @@ There are different types of joins; some are listed below:
 
 -   self joins.
 
-Using joins requires that the two tables of interest contain at least one field with shared information. For example, if a *departments* table has an *id* field, and an employee table has a *department_id* field, and the values that exist in the *id* column of the *departments* table live in the *department_id* field of the employee table, we can use those fields to join both tables like so:
+Using joins requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
-This query will return the data from both tables for every instance where the ON condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments *table, then that record will NOT be returned. In a similar fashion, any records from the* departments *table that don't have an employee associated with them will also be omitted from the results. Basically, if the* id\* does not show as the value of department_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the ON condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -668,7 +668,7 @@ There should no be knex code in the endpoints themselves.
 
 Normalization is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
-With objects, we're used to *denormalized* data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
+With objects, we're used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
 
 ## **Follow Along**
 
@@ -754,7 +754,7 @@ Notes about one-to-one relationships:
 
 -   The foreign key can be in either table. For example, we may have had a projection_id in the farms table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
 
--   You can represent one-to-one data in a single table *without* creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
+-   You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
 
 ### **One to Many Relationships**
 
@@ -776,7 +776,7 @@ Manage this type of relationship by adding a foreign key on the "many" table of 
 
 [Untitled](https://www.notion.so/c95f3d418db94ab4b4532eeba0e4f918)
 
-In a many-to-many relationship, the foreign key (in this case farm_id) should *not* be unique.
+In a many-to-many relationship, the foreign key (in this case farm_id) should _not_ be unique.
 
 ### **Many to Many Relationships**
 
@@ -814,9 +814,9 @@ In Knex, foreign key restrictions don't automatically work. Whenever using forei
 
 Let's look at how we might track our farms and ranchers using Knex. In our migration file's up function, we would want to create two tables:
 
-Note that the foreign key can only be created *after* the reference table.
+Note that the foreign key can only be created _after_ the reference table.
 
-In the down function, the opposite is true. We always want to drop a table with a foreign key *before* dropping the table it references.
+In the down function, the opposite is true. We always want to drop a table with a foreign key _before_ dropping the table it references.
 
 In the case of a many-to-many relationship, the syntax for creating an intermediary table is identical, except for one additional piece. We need a way to make sure our combination of foreign keys is unique.
 
@@ -826,7 +826,7 @@ Order is also a concern when seeding. We want to create seeds in the **same** or
 
 In our example, make sure to write the 01-farms seed file and then the 02-ranchers seed file.
 
-However, we run into a problem with truncating our seeds, because we want to truncate 02-ranchers *before* 01-farms. A library called knex-cleaner provides an easy solution for us.
+However, we run into a problem with truncating our seeds, because we want to truncate 02-ranchers _before_ 01-farms. A library called knex-cleaner provides an easy solution for us.
 
 Run knex seed:make 00-cleanup and npm install knex-cleaner. Inside the cleanup seed, use the following code.
 
