@@ -104,7 +104,7 @@ sections:
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
         actions:
-          - label: lorem-ipsum
+          - label: Learn About Machine Learning
             url: '#'
             style: link
             icon_class: dev
