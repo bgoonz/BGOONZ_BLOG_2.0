@@ -1,7 +1,7 @@
 ---
 title: Conditional (ternary) operator
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Conditional (ternary) operator'
     description: 'Conditional (ternary) operator'
@@ -20,13 +20,13 @@ The **conditional (ternary) operator** is the only JavaScript operator that take
 
 ### Parameters
 
-`condition`  
+`condition`
 An expression whose value is used as a condition.
 
-`exprIfTrue`  
+`exprIfTrue`
 An expression which is evaluated if the `condition` evaluates to a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) value (one which equals or can be converted to `true`).
 
-`exprIfFalse`  
+`exprIfFalse`
 An expression which is executed if the `condition` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) (that is, has a value which can be converted to `false`).
 
 ## Description
@@ -75,7 +75,7 @@ The ternary operator is right-associative, which means it can be "chained" in th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-conditional-operator</span></a></td></tr></tbody></table>
@@ -114,6 +114,6 @@ The ternary operator is right-associative, which means it can be "chained" in th
 -   [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 -   [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a>

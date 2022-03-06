@@ -1,7 +1,7 @@
 ---
 title: RangeError
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'RangeError radix must be an integer'
     description: ''

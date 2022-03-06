@@ -65,51 +65,51 @@ The correct usage for storing data in the Map is through the `set(key, value)` m
 
 ## Constructor
 
-[`Map()`](map/map)  
+[`Map()`](map/map)
 Creates a new `Map` object.
 
 ## Static properties
 
-[`get Map[@@species]`](map/@@species)  
+[`get Map[@@species]`](map/@@species)
 The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-[`Map.prototype.size`](map/size)  
+[`Map.prototype.size`](map/size)
 Returns the number of key/value pairs in the `Map` object.
 
 ## Instance methods
 
-[`Map.prototype.clear()`](map/clear)  
+[`Map.prototype.clear()`](map/clear)
 Removes all key-value pairs from the `Map` object.
 
-[`Map.prototype.delete(key)`](map/delete)  
+[`Map.prototype.delete(key)`](map/delete)
 Returns `true` if an element in the `Map` object existed and has been removed, or `false` if the element does not exist. `Map.prototype.has(key)` will return `false` afterwards.
 
-[`Map.prototype.get(key)`](map/get)  
+[`Map.prototype.get(key)`](map/get)
 Returns the value associated to the `key`, or `undefined` if there is none.
 
-[`Map.prototype.has(key)`](map/has)  
+[`Map.prototype.has(key)`](map/has)
 Returns a boolean asserting whether a value has been associated to the `key` in the `Map` object or not.
 
-[`Map.prototype.set(key, value)`](map/set)  
+[`Map.prototype.set(key, value)`](map/set)
 Sets the `value` for the `key` in the `Map` object. Returns the `Map` object.
 
 ### Iteration methods
 
-[`Map.prototype[@@iterator]()`](map/@@iterator)  
+[`Map.prototype[@@iterator]()`](map/@@iterator)
 Returns a new Iterator object that contains `[key, value]` for each element in the `Map` object in insertion order.
 
-[`Map.prototype.keys()`](map/keys)  
+[`Map.prototype.keys()`](map/keys)
 Returns a new Iterator object that contains the **keys** for each element in the `Map` object in insertion order.
 
-[`Map.prototype.values()`](map/values)  
+[`Map.prototype.values()`](map/values)
 Returns a new Iterator object that contains the **values** for each element in the `Map` object in insertion order.
 
-[`Map.prototype.entries()`](map/entries)  
+[`Map.prototype.entries()`](map/entries)
 Returns a new Iterator object that contains `[key, value]` for each element in the `Map` object in insertion order.
 
-[`Map.prototype.forEach(callbackFn[, thisArg])`](map/foreach)  
+[`Map.prototype.forEach(callbackFn[, thisArg])`](map/foreach)
 Calls `callbackFn` once for each key-value pair present in the `Map` object, in insertion order. If a `thisArg` parameter is provided to `forEach`, it will be used as the `this` value for each callback.
 
 ## Examples
@@ -271,7 +271,7 @@ Maps can be merged with Arrays, too:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Map' in that specification.</span></a></td></tr></tbody></table>

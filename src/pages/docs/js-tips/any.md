@@ -1,7 +1,7 @@
 ---
-title:  Promise.any()
+title: Promise.any()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: ' Promise.any()'
     description: ''
@@ -21,7 +21,7 @@ template: docs
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An [iterable](../../iteration_protocols#the_iterable_protocol) object, such as an [`Array`](../array).
 
 ### Return value
@@ -114,7 +114,7 @@ In this example, we have a function that fetches an image and returns a blob. We
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
@@ -152,6 +152,6 @@ No
 -   [`Promise.all()`](all)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any</a>

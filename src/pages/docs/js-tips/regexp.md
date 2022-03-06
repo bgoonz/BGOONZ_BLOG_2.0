@@ -53,73 +53,73 @@ Note that several of the [`RegExp`](regexp) properties have both long and short 
 
 ## Constructor
 
-[`RegExp()`](regexp/regexp)  
+[`RegExp()`](regexp/regexp)
 Creates a new `RegExp` object.
 
 ## Static properties
 
-[`get RegExp[@@species]`](regexp/@@species)  
+[`get RegExp[@@species]`](regexp/@@species)
 The constructor function that is used to create derived objects.
 
 ## Instance properties
 
-[`RegExp.prototype.flags`](regexp/flags)  
+[`RegExp.prototype.flags`](regexp/flags)
 A string that contains the flags of the `RegExp` object.
 
-[`RegExp.prototype.dotAll`](regexp/dotall)  
+[`RegExp.prototype.dotAll`](regexp/dotall)
 Whether `.` matches newlines or not.
 
-[`RegExp.prototype.global`](regexp/global)  
+[`RegExp.prototype.global`](regexp/global)
 Whether to test the regular expression against all possible matches in a string, or only against the first.
 
-[`RegExp.prototype.hasIndices`](regexp/hasindices)  
+[`RegExp.prototype.hasIndices`](regexp/hasindices)
 Whether the regular expression result exposes the start and end indices of captured substrings.
 
-[`RegExp.prototype.ignoreCase`](regexp/ignorecase)  
+[`RegExp.prototype.ignoreCase`](regexp/ignorecase)
 Whether to ignore case while attempting a match in a string.
 
-[`RegExp.prototype.multiline`](regexp/multiline)  
+[`RegExp.prototype.multiline`](regexp/multiline)
 Whether or not to search in strings across multiple lines.
 
-[`RegExp.prototype.source`](regexp/source)  
+[`RegExp.prototype.source`](regexp/source)
 The text of the pattern.
 
-[`RegExp.prototype.sticky`](regexp/sticky)  
+[`RegExp.prototype.sticky`](regexp/sticky)
 Whether or not the search is sticky.
 
-[`RegExp.prototype.unicode`](regexp/unicode)  
+[`RegExp.prototype.unicode`](regexp/unicode)
 Whether or not Unicode features are enabled.
 
-[`RegExp: lastIndex`](regexp/lastindex)  
+[`RegExp: lastIndex`](regexp/lastindex)
 The index at which to start the next match.
 
 ## Instance methods
 
-[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>  
+[`RegExp.prototype.compile()`](regexp/compile) <span class="icon deprecated" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This deprecated API should no longer be used, but will probably still work. </span>
 (Re-)compiles a regular expression during execution of a script.
 
-[`RegExp.prototype.exec()`](regexp/exec)  
+[`RegExp.prototype.exec()`](regexp/exec)
 Executes a search for a match in its string parameter.
 
-[`RegExp.prototype.test()`](regexp/test)  
+[`RegExp.prototype.test()`](regexp/test)
 Tests for a match in its string parameter.
 
-[`RegExp.prototype.toString()`](regexp/tostring)  
+[`RegExp.prototype.toString()`](regexp/tostring)
 Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`RegExp.prototype[@@match]()`](regexp/@@match)  
+[`RegExp.prototype[@@match]()`](regexp/@@match)
 Performs match to given string and returns match result.
 
-[`RegExp.prototype[@@matchAll]()`](regexp/@@matchall)  
+[`RegExp.prototype[@@matchAll]()`](regexp/@@matchall)
 Returns all matches of the regular expression against a string.
 
-[`RegExp.prototype[@@replace]()`](regexp/@@replace)  
+[`RegExp.prototype[@@replace]()`](regexp/@@replace)
 Replaces matches in given string with new substring.
 
-[`RegExp.prototype[@@search]()`](regexp/@@search)  
+[`RegExp.prototype[@@search]()`](regexp/@@search)
 Searches the match in given string and returns the index the pattern found in the string.
 
-[`RegExp.prototype[@@split]()`](regexp/@@split)  
+[`RegExp.prototype[@@split]()`](regexp/@@split)
 Splits given string into an array by separating the string into substrings.
 
 ## Examples
@@ -216,7 +216,7 @@ The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/Java
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-regexp-regular-expression-objects</span></a></td></tr></tbody></table>

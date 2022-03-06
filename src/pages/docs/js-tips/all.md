@@ -1,7 +1,7 @@
 ---
 title: Promise.all()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Promise.all()'
     description: ''
@@ -21,7 +21,7 @@ The `Promise.all()` method takes an iterable of promises as an input, and return
 
 ### Parameters
 
-`iterable`  
+`iterable`
 An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an [`Array`](../array).
 
 ### Return value
@@ -193,7 +193,7 @@ It is possible to change this behavior by handling possible rejections:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
@@ -229,6 +229,6 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</a>
