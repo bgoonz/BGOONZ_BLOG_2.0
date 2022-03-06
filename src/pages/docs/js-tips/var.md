@@ -1,3 +1,16 @@
+---
+title: var
+weight: 0
+excerpt: Javascript articles  and docs
+seo:
+    title: 'var'
+    description: 'The var declares a function-scoped or globally-scoped variable, optionally initializing it to a value.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # var
 
 The `var` declares a function-scoped or globally-scoped variable, optionally initializing it to a value.

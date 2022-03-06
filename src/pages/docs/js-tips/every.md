@@ -1,3 +1,16 @@
+---
+title: Array.prototype.every()
+weight: 0
+excerpt: 
+seo:
+    title: 'Array.prototype.every()'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Array.prototype.every()
 
 The `every()` method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.

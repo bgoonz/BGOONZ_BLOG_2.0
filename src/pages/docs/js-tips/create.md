@@ -1,3 +1,16 @@
+---
+title: Object.create()
+weight: 0
+excerpt: 
+seo:
+    title: 'Object.create()'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Object.create()
 
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object.

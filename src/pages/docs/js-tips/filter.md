@@ -1,3 +1,16 @@
+---
+title: Array.prototype.filter() 
+weight: 0
+excerpt: 
+seo:
+    title: 'Array.prototype.filter()'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Array.prototype.filter()
 
 The `filter()` method **creates a new array** with all elements that pass the test implemented by the provided function.

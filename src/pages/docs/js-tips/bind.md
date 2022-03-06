@@ -1,3 +1,16 @@
+---
+title: Function.prototype.bind()
+weight: 0
+excerpt: 
+seo:
+    title: 'Function.prototype.bind()'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Function.prototype.bind()
 
 The `bind()` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.

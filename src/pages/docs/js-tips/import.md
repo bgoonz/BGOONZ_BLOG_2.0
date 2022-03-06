@@ -1,3 +1,16 @@
+---
+title: import
+weight: 0
+excerpt: 
+seo:
+    title: ''
+    description: 'The static import statement is used to import read only live bindings which are exported by another module.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # import
 
 The static `import` statement is used to import read only live bindings which are [exported](export) by another module.
@@ -9,7 +22,7 @@ There is also a function-like dynamic `import()`, which does not require scripts
 Backward compatibility can be ensured using attribute `nomodule` on the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) tag.
 
 ## Syntax
-
+```js
     import defaultExport from "module-name";
     import * as name from "module-name";
     import { export1 } from "module-name";
@@ -21,6 +34,7 @@ Backward compatibility can be ensured using attribute `nomodule` on the [`<scrip
     import defaultExport, * as name from "module-name";
     import "module-name";
     var promise = import("module-name");
+```
 
 `defaultExport`  
 Name that will refer to the default export from the module.

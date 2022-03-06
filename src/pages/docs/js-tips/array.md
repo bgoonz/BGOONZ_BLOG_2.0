@@ -1,3 +1,16 @@
+---
+title:  Array
+weight: 0
+excerpt: 
+seo:
+    title: 'Javascript Arrays'
+    description: 'class is a global object that is used in the construction of arrays; which are high-level, list-like objects.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Array
 
 The JavaScript `Array` class is a global object that is used in the construction of arrays; which are high-level, list-like objects.

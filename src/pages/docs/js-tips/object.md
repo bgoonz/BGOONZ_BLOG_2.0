@@ -1,3 +1,17 @@
+---
+title: Object
+weight: 0
+excerpt: The Object class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+seo:
+    title: 'Object'
+    description: 'Javascript Quick Tips Directory'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
+
 # Object
 
 The `Object` class represents one of [JavaScript's data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). It is used to store various keyed collections and more complex entities. Objects can be created using the [`Object()`](object/object) constructor or the [object initializer / literal syntax](../operators/object_initializer).

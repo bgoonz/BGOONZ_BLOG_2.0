@@ -1,3 +1,16 @@
+---
+title: Date
+weight: 0
+excerpt: 
+seo:
+    title: 'Date'
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Date
 
 JavaScript `Date` objects represent a single moment in time in a platform-independent format. `Date` objects contain a `Number` that represents milliseconds since 1 January 1970 UTC.

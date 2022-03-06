@@ -1,3 +1,16 @@
+---
+title: Array.prototype.forEach()
+weight: 0
+excerpt: 
+seo:
+    title: 'Array.prototype.forEach()'
+    description: 'The forEach() method executes a provided function once for each array element.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Array.prototype.forEach()
 
 The `forEach()` method executes a provided function once for each array element.

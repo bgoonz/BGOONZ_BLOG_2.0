@@ -1,3 +1,16 @@
+---
+title: 
+weight: 0
+excerpt: Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
+seo:
+    title: ''
+    description: 'Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Functions
 
 Generally speaking, a function is a "subprogram" that can be _called_ by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the _function body_. Values can be _passed_ to a function, and the function will _return_ a value.

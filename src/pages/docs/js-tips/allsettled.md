@@ -1,9 +1,9 @@
 ---
-title: 
+title: Promise.allSettled()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: 'Promise.allSettled()'
     description: ''
     robots: []
     extra: []

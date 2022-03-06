@@ -1,3 +1,16 @@
+---
+title: RegExp
+weight: 0
+excerpt: Javascript articles  and docs
+seo:
+    title: ' RegExp '
+    description: 'Javascript Quick Tips Directory'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # RegExp
 
 The `RegExp` object is used for matching text with a pattern.

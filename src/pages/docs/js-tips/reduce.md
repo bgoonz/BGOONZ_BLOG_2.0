@@ -1,3 +1,16 @@
+---
+title: Array.prototype.reduce()
+weight: 0
+excerpt: Javascript articles  and docs
+seo:
+    title: 'Array.prototype.reduce()'
+    description: 'Javascript Quick Tips Directory'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Array.prototype.reduce()
 
 The `reduce()` method executes a **reducer** function (that you provide) on each element of the array, resulting in a single output value.

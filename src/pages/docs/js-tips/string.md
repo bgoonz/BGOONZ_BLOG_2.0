@@ -1,3 +1,16 @@
+---
+title: String 
+weight: 0
+excerpt: Javascript articles  and docs
+seo:
+    title: 'String'
+    description: 'Javascript Quick Tips Directory'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # String
 
 The `String` object is used to represent and manipulate a sequence of characters.

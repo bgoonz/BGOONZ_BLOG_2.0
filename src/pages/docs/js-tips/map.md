@@ -1,3 +1,16 @@
+---
+title: Map
+weight: 0
+excerpt: The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value.
+seo:
+    title: 'Map'
+    description: 'The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value.'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
 # Map
 
 The `Map` object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)) may be used as either a key or a value.
