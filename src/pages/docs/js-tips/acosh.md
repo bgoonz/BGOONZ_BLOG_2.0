@@ -1,5 +1,5 @@
 ---
-title: 
+title: Math.acosh()
 weight: 0
 excerpt: 
 seo:
