@@ -296,7 +296,7 @@ sections:
     title: Web Audio DAW
     image: images/goals.jpg
   - title: Quick Links
-    section_id: navigate from the home page
+    section_id: quick links
     col_number: three
     type: section_docs
     subtitle: Navigate To Docs From Home Page
