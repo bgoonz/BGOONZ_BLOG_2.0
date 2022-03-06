@@ -3,7 +3,7 @@ title:  AggregateError
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: ' AggregateError'
     description: ''
     robots: []
     extra: []
