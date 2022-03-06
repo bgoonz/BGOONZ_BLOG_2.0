@@ -1,5 +1,5 @@
 ---
-title: Tips
+title: Rotate (Array) Problem Walkthrough
 weight: 0
 excerpt: lorem-ipsum
 seo:
