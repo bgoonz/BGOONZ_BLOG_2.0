@@ -107,7 +107,7 @@ sections:
           - label: Learn About Machine Learning
             url: >-
               https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
-            style: link
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
