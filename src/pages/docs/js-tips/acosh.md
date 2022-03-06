@@ -3,7 +3,7 @@ title: Math.acosh()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: 'Math.acosh()'
     description: ''
     robots: []
     extra: []
