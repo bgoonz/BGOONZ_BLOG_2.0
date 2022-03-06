@@ -1,9 +1,9 @@
 ---
-title: 
+title: Math.abs()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: 'Math.abs()'
     description: ''
     robots: []
     extra: []
