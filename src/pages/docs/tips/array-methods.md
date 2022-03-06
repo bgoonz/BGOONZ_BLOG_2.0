@@ -4,7 +4,7 @@ weight: 0
 excerpt: lorem-ipsum
 seo:
   title: 'Rotate (Array) Problem Walkthrough'
-  description: ''
+  description: 'The function should return a new array where the elements of the array are rotated to the right number times.'
   robots: []
   extra: []
 template: docs
