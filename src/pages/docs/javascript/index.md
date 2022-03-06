@@ -16,7 +16,7 @@ template: docs
 
 <details>
 
-<summary>  See More </summary>   
+<summary>  Cheatsheet </summary>   
 
 
 </details>
