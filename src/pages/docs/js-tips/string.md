@@ -1,5 +1,5 @@
 ---
-title: String 
+title: String
 weight: 0
 excerpt: Javascript articles  and docs
 seo:

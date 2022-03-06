@@ -1,7 +1,7 @@
 ---
 title: for...of
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'for...of'
     description: ''

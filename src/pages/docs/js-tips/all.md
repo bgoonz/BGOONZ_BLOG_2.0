@@ -1,7 +1,7 @@
 ---
 title: Promise.all()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Promise.all()'
     description: ''

@@ -1,7 +1,7 @@
 ---
 title: Conditional (ternary) operator
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Conditional (ternary) operator'
     description: 'Conditional (ternary) operator'

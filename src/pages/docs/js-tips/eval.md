@@ -1,7 +1,7 @@
 ---
 title: eval()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'eval()'
     description: ''

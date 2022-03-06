@@ -1,7 +1,7 @@
 ---
 title: Promise.allSettled()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Promise.allSettled()'
     description: ''

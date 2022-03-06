@@ -1,7 +1,7 @@
 ---
 title: Array.prototype.every()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Array.prototype.every()'
     description: ''

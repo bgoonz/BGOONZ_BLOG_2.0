@@ -1,7 +1,7 @@
 ---
 title: Array.prototype.concat()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Array.prototype.concat()'
     description: ''

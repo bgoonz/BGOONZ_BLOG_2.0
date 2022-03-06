@@ -1,7 +1,7 @@
 ---
 title: Date
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Date'
     description: ''

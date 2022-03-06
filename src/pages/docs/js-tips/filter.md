@@ -1,7 +1,7 @@
 ---
-title: Array.prototype.filter() 
+title: Array.prototype.filter()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Array.prototype.filter()'
     description: ''

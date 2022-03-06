@@ -1,7 +1,7 @@
 ---
 title: Function.prototype.bind()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Function.prototype.bind()'
     description: ''

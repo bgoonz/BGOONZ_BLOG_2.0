@@ -1,7 +1,7 @@
 ---
-title:  Promise.any()
+title: Promise.any()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: ' Promise.any()'
     description: ''

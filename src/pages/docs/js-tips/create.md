@@ -1,7 +1,7 @@
 ---
 title: Object.create()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Object.create()'
     description: ''
