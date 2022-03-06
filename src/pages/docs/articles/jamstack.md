@@ -10,17 +10,16 @@ seo:
 template: docs
 ---
 
-
 ## What is Jamstack
 
-___
+---
 
 ### History
 
 "Jamstack" was originally cased as "JAMstack" where "JAM" stood for JavaScript, API & Markup.
 
 > "A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup"
-> 
+>
 > — Mathias Biilmann (CEO & Co-founder of Netlify).
 
 #### JavaScript
@@ -35,7 +34,7 @@ Server side operations are abstracted into reusable APIs and accessed over HTTPS
 
 Websites are served as static HTML files. These can be generated from source files, such as Markdown, using a Static Site Generator.
 
-___
+---
 
 ### Meaning
 
@@ -53,7 +52,7 @@ While various practices exist for introducing dynamic elements to Jamstack sites
 
 JavaScript can be introduced to pre-rendered sites on an as-needed basis, thus increasing performance in the browser.
 
-___
+---
 
 ### Benefits
 
@@ -79,7 +78,7 @@ Front end developers can focus on the front end, without being tied to a monolit
 
 If your product suddenly goes viral and has many active users, the CDN seamlessly compensates.
 
-___
+---
 
 ### Best practices
 
@@ -89,33 +88,33 @@ The following tips will help you leverage the best out of the stack.
 
 Since all the markup and assets are pre-built, they can be served via CDN. This provides better performance and easier scalability.
 
-[Learn more](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/ "Read more about CDN")
+[Learn more](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/ 'Read more about CDN')
 
 #### Atomic deploys
 
 Each deploy is a full snapshot of the site. This helps guarantee a consistent version of the site globally.
 
-[Learn more](https://buddy.works/blog/introducing-atomic-deployments#what-are-atomic-deployments "Read more about atomic deploys")
+[Learn more](https://buddy.works/blog/introducing-atomic-deployments#what-are-atomic-deployments 'Read more about atomic deploys')
 
 #### Cache invalidation
 
 Once your build is uploaded, the CDN invalidates its cache. This means that your new build is live in an instant.
 
-[Learn more](https://www.netlify.com/blog/2015/09/11/instant-cache-invalidation/ "Read more about cache invalidation")
+[Learn more](https://www.netlify.com/blog/2015/09/11/instant-cache-invalidation/ 'Read more about cache invalidation')
 
 #### Everything in version control
 
 Your codebase lives in version control system, such as Git. The main benefits are changing the history of every file, collaborators and traceability.
 
-[Learn more](https://www.atlassian.com/git/tutorials/what-is-version-control "Read more about version control")
+[Learn more](https://www.atlassian.com/git/tutorials/what-is-version-control 'Read more about version control')
 
 #### Automated builds
 
 Your server is notified when a new build is required, typically via webhooks. Server builds the project, updates the CDNs and the site is live.
 
-[Learn more](https://www.agilealliance.org/glossary/automated-build "Read more about automated builds")
+[Learn more](https://www.agilealliance.org/glossary/automated-build 'Read more about automated builds')
 
-___
+---
 
 ### Workflow
 
@@ -135,7 +134,7 @@ Pre-render & invalidate cache
 
 Update CDN
 
-___
+---
 
 ### Timeline
 
@@ -171,7 +170,7 @@ While Jamstack continues to expand, confusion about what it really means has bec
 
 ## Getting started
 
-___
+---
 
 ### Development
 
@@ -185,28 +184,22 @@ Simple and effective method of writing HTML, it's ideal for super simple pages.
 
 Most Jamstack sites are powered by a static site generator. There's no enforcement on which SSG you decide to use.
 
--   [Next.js](https://nextjs.org/ "Next.js")
-    
--   [Gatsby](https://www.gatsbyjs.com/ "Gatsby")
-    
--   [Hugo](https://gohugo.io/ "Hugo")
-    
+-   [Next.js](https://nextjs.org/ 'Next.js')
+-   [Gatsby](https://www.gatsbyjs.com/ 'Gatsby')
+-   [Hugo](https://gohugo.io/ 'Hugo')
 
 #### Site Builders
 
 Tools that bring Jamstack to less technical users, while enabling developers to customize sites through modern tooling.
 
--   [Stackbit](https://www.stackbit.com/ "Stackbit")
-    
--   [Builder.io](https://www.builder.io/ "Builder.io")
-    
--   [CloudCannon](https://cloudcannon.com/ "CloudCannon")
-    
+-   [Stackbit](https://www.stackbit.com/ 'Stackbit')
+-   [Builder.io](https://www.builder.io/ 'Builder.io')
+-   [CloudCannon](https://cloudcannon.com/ 'CloudCannon')
 
-___
+---
 
 ### Dynamic parts
 
 Jamstack websites don't have to be static. There are great services available to help bring some dynamic data to your product.
 
-___
+---
