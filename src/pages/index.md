@@ -104,9 +104,10 @@ sections:
           computing systems vaguely inspired by the biological [neural
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
         actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
+          - label: Learn About Machine Learning
+            url: >-
+              https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
@@ -134,7 +135,6 @@ sections:
         type: grid_item
         image: images/jamstack.png
       - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
         image_alt: lorem-ipsum
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions:
@@ -146,6 +146,7 @@ sections:
             no_follow: false
         type: grid_item
         image: images/eventloop.gif
+        title_url: /docs/javascript/asyncjs
       - title: NJ Devils
         image_alt: nj-devils
         content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils–Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
