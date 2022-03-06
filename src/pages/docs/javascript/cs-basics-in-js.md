@@ -4,7 +4,7 @@ weight: 0
 excerpt: Computer Science Basics In JavaScript
 seo:
     title: ''
-    description: 'create an anonymous function, and execute it immediately.'
+    description: 'create an anonymous function, and execute it immediately'
     robots: []
     extra: []
 template: docs
