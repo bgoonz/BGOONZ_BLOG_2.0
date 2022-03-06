@@ -1,9 +1,9 @@
 ---
-title: 
+title: Promise.all()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: 'Promise.all()'
     description: ''
     robots: []
     extra: []

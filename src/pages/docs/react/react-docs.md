@@ -1,5 +1,4 @@
 ---
-
 title: React Docs
 
 weight: 0
@@ -13,7 +12,6 @@ excerpt: >-
     reusable pieces.
 
 seo:
-
     title: React
 
     description: >-
@@ -27,7 +25,6 @@ seo:
     robots: []
 
     extra:
-
         - name: 'og:description'
 
           value: >-

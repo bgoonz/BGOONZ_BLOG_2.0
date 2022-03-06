@@ -322,8 +322,119 @@ sections:
             icon_class: dev
             new_window: false
             no_follow: false
-      type: section_cta
-      subtitle: get in touch! +1 (551) - 254 - 5505
+            type: action
+        image: images/image-of-resume.png
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: secondary
+        image_alt: portfolio of websites
+        image: images/portfolio-91689538.jpg
+  - title: Blog-Archive-And-Mini-Projects
+    section_id: Mini Projects
+    image_alt: showcase
+    image_position: left
+    content: >-
+      <iframe sandbox="allow-scripts" 
+      src="https://random-static-html-deploys.netlify.app/"
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
+    actions: []
+    type: section_content
+  - title: Latest & Greatest
+    section_id: new content
+    image_alt: animated gif
+    image_position: right
+    content: >
+      # ***What I've been working on lately:***
+
+      ## Web Dev Utilitiy Tools
+
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://cheatsheets-42.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - section_id: tools
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >
+      ### To⬆️ol Showcase
+
+
+      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+    title: Tools Showcase
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    title: Web Audio DAW
+    image: images/goals.jpg
+  - title: Quick Links
+    section_id: quick links
+    col_number: three
+    type: section_docs
+    subtitle: Navigate To Docs From Home Page
+  - title: Contact
+    section_id: contact
+    actions:
+      - label: Contact
+        url: /docs/faq/contact
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
+      - label: Subscribe (Youtube)
+        url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+    type: section_cta
+    subtitle: get in touch! +1 (551) - 254 - 5505
 seo:
     title: Web-Dev-Hub
     description: |-
