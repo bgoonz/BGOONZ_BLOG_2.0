@@ -3,8 +3,8 @@ title: Rotate (Array) Problem Walkthrough
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: 'Rotate (Array) Problem Walkthrough'
-  description: 'The function should return a new array where the elements of the array are rotated to the right number times.'
+  title: ''
+  description: ''
   robots: []
   extra: []
 template: docs
@@ -20,7 +20,7 @@ template: docs
 
 Write a function `rotateRight(array, num)` that takes in an array and a number as arguments.
 
-> The function should return a new array where the elements of the array are rotated to the right number times.
+> The function should return a new array where the elements of the array are rotated to the right number times.\
 > The function should not mutate the original array and instead return a new array.
 
 > Define this function using `[*function expression syntax*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)`[.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
