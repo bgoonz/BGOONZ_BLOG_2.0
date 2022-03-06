@@ -17,15 +17,15 @@ The AggregateError object represents an error when several errors need to be wra
 
 ## Constructor
 
-[`AggregateError()`](aggregateerror/aggregateerror)  
+[`AggregateError()`](aggregateerror/aggregateerror)
 Creates a new `AggregateError` object.
 
 ## Instance properties
 
-[`AggregateError.prototype.message`](error/message)  
+[`AggregateError.prototype.message`](error/message)
 Error message, defaults to `""`.
 
-[`AggregateError.prototype.name`](error/name)  
+[`AggregateError.prototype.name`](error/name)
 Error name, defaults to `AggregateError`.
 
 ## Examples
@@ -56,7 +56,7 @@ Error name, defaults to `AggregateError`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-aggregate-error-objects</span></a></td></tr></tbody></table>

@@ -223,7 +223,7 @@ sections:
       image_alt: showcase
       image_position: left
       content: >-
-          <iframe sandbox="allow-scripts" 
+          <iframe sandbox="allow-scripts"
           src="https://random-static-html-deploys.netlify.app/"
           class="block-content" width="100%  width="1200px!important"
 
@@ -241,21 +241,21 @@ sections:
 
           ## Web Dev Utilitiy Tools
 
-          <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+          <iframe sandbox="allow-scripts"  class="block-content" width="100%
           width="1200px!important"
 
           height="1000px!important"
             src="https://web-dev-utility-tools-bgoonz.netlify.app/"
            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+          <iframe sandbox="allow-scripts"  class="block-content" width="100%
           width="1200px!important"
 
           height="1000px!important"
             src="https://cheatsheets-42.netlify.app/"
            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+          <iframe sandbox="allow-scripts"  class="block-content" width="100%
           width="1200px!important"
 
           height="1000px!important"
@@ -271,7 +271,7 @@ sections:
           ### To⬆️ol Showcase
 
 
-          <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+          <iframe sandbox="allow-scripts"  class="block-content" width="100%
           width="1200px!important"
 
           height="1000px!important"
