@@ -3,7 +3,7 @@ title:  Addition (+)
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: ' Addition (+)'
     description: ''
     robots: []
     extra: []
