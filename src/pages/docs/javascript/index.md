@@ -13,6 +13,14 @@ template: docs
 
 ## Cheatsheet
 
+
+<details>
+
+<summary>  See More </summary>   
+
+
+</details>
+
 ```js
 
 // Single-line comments start with two slashes.
