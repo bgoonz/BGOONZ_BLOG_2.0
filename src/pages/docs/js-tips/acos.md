@@ -1,5 +1,5 @@
 ---
-title: 
+title:  Math.acos()
 weight: 0
 excerpt: 
 seo:
