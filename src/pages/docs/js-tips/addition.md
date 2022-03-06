@@ -1,7 +1,7 @@
 ---
-title:  Addition (+)
+title: Addition (+)
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: ' Addition (+)'
     description: ''
@@ -10,7 +10,6 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
-
 
 # Addition (+)
 

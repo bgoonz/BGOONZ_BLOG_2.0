@@ -1,7 +1,7 @@
 ---
 title: Math.acosh()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Math.acosh()'
     description: ''
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 # Math.acosh()
 
 The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that is
