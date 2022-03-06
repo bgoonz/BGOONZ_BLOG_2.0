@@ -203,15 +203,11 @@ let UTIL = (function (parent, $) {
 })(UTIL || {}, jQuery);
 ```
 
-
 # Summary:
-
 
 <details>
 
-<summary> recitation  </summary>   
-
-
+<summary> recitation  </summary>
 
 ### Anonymous Closures
 
@@ -353,7 +349,5 @@ MODULE.sub = (function () {
 ######     return my;
 })();
 ```
-
-
 
 </details>

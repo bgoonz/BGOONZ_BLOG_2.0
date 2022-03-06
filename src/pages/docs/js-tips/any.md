@@ -1,9 +1,9 @@
 ---
-title: 
+title:  Promise.any()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: ' Promise.any()'
     description: ''
     robots: []
     extra: []
