@@ -11,7 +11,7 @@ seo:
 template: docs
 ---
 
-## Cheatsheet
+## 
 
 
 <details>
