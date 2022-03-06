@@ -303,8 +303,7 @@ Together they provide a great framework to write asynchronous code that is easy 
 
 With `async/await` we rarely need to write `promise.then/catch`, but we still shouldn't forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also `Promise.all` is nice when we are waiting for many tasks simultaneously.
 
-Cleaning up your asynchronous code with `await`
------------------------------------------------
+## Cleaning up your asynchronous code with `await`
 
 REPLs have traditionally had a difficult time allowing you to interact with asynchronous code since they encourage a coding style where you evaluate expressions and use those results in the next field. But if you are using promises or callbacks, this breaks down because these results exist only in the callback, not the next line:
 
