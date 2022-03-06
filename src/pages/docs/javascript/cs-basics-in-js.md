@@ -3,7 +3,7 @@ title: CS Basics
 weight: 0
 excerpt: Computer Science Basics In JavaScript
 seo:
-    title: ''
+    title: 'Comp Sci Basics In Javascript'
     description: 'create an anonymous function, and execute it immediately'
     robots: []
     extra: []
