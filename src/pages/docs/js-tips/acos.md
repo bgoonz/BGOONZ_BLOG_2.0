@@ -3,7 +3,7 @@ title:  Math.acos()
 weight: 0
 excerpt: 
 seo:
-    title: ''
+    title: ' Math.acos()'
     description: ''
     robots: []
     extra: []
