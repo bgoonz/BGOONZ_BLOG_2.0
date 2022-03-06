@@ -299,7 +299,7 @@ sections:
     section_id: navigate from the home page
     col_number: two
     type: section_docs
-    subtitle: quick links home
+    subtitle: Navigate To Docs From Home Page
   - title: Contact
     section_id: contact
     actions:
