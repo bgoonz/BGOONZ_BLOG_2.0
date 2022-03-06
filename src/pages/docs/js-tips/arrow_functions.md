@@ -25,7 +25,7 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 ### Comparing traditional functions to arrow functions
 
-Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:  
+Let's decompose a "traditional function" down to the simplest "arrow function" step-by-step:
 NOTE: Each step along the way is a valid "arrow function"
 
     // Traditional Function
@@ -427,7 +427,7 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>

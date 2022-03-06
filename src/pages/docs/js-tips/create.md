@@ -22,10 +22,10 @@ The `Object.create()` method creates a new object, using an existing object as t
 
 ### Parameters
 
-`proto`  
+`proto`
 The object which should be the prototype of the newly-created object.
 
-`propertiesObject` <span class="badge inline optional">Optional</span>  
+`propertiesObject` <span class="badge inline optional">Optional</span>
 If specified and not [`undefined`](../undefined), an object whose enumerable own properties (that is, those properties defined upon itself and _not_ enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of [`Object.defineProperties()`](defineproperties).
 
 ### Return value
@@ -344,7 +344,7 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-object.create</span></a></td></tr></tbody></table>
@@ -383,6 +383,6 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 -   [`Reflect.construct()`](../reflect/construct)
 -   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create</a>

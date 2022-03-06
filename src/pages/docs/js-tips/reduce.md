@@ -44,24 +44,24 @@ Your **reducer** function's returned value is assigned to the accumulator, whose
 
 ### Parameters
 
-`callback`  
+`callback`
 A function to execute on each element in the array (except for the first, if no `initialValue` is supplied).
 
 It takes four arguments:
 
-`accumulator`  
+`accumulator`
 The accumulator accumulates callback's return values. It is the accumulated value previously returned in the last invocation of the callback—or `initialValue`, if it was supplied (see below).
 
-`currentValue`  
+`currentValue`
 The current element being processed in the array.
 
-`index` <span class="badge inline optional">Optional</span>  
+`index` <span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array. Starts from index `0` if an `initialValue` is provided. Otherwise, it starts from index `1`.
 
-`array` <span class="badge inline optional">Optional</span>  
+`array` <span class="badge inline optional">Optional</span>
 The array `reduce()` was called upon.
 
-`initialValue` <span class="badge inline optional">Optional</span>  
+`initialValue` <span class="badge inline optional">Optional</span>
 A value to use as the first argument to the first call of the `callback`. If no `initialValue` is supplied, the first element in the array will be used as the initial `accumulator` value and skipped as `currentValue`. Calling `reduce()` on an empty array without an `initialValue` will throw a [`TypeError`](../typeerror).
 
 ### Return value
@@ -443,7 +443,7 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>

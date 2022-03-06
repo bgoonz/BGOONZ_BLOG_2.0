@@ -24,10 +24,10 @@ The `bind()` method creates a new function that, when called, has its `this` key
 
 ### Parameters
 
-`thisArg`  
+`thisArg`
 The value to be passed as the `this` parameter to the target function `func` when the bound function is called. The value is ignored if the bound function is constructed using the [`new`](../../operators/new) operator. When using `bind` to create a function (supplied as a callback) inside a `setTimeout`, any primitive value passed as `thisArg` is converted to object. If no arguments are provided to `bind `, or if the `thisArg` is `null` or `undefined`, the `this` of the executing scope is treated as the `thisArg` for the new function.
 
-`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>  
+`arg1, arg2, ...argN` <span class="badge inline optional">Optional</span>
 Arguments to prepend to arguments provided to the bound function when invoking `func`.
 
 ### Return value
@@ -40,16 +40,16 @@ The `bind()` function creates a new **bound function**, which is an _exotic func
 
 A bound function has the following internal properties:
 
-`[[BoundTargetFunction]]`  
+`[[BoundTargetFunction]]`
 The wrapped function object
 
-`[[BoundThis]]`  
+`[[BoundThis]]`
 The value that is always passed as `this` value when calling the wrapped function.
 
-`[[BoundArguments]]`  
+`[[BoundArguments]]`
 A list of values whose elements are used as the first arguments to any call to the wrapped function.
 
-`[[Call]]`  
+`[[Call]]`
 Executes code associated with this object. Invoked via a function call expression. The arguments to the internal method are a `this` value and a list containing the arguments passed to the function by a call expression.
 
 When a bound function is called, it calls internal method `[[Call]]` on `[[BoundTargetFunction]]`, with following arguments `Call(boundThis, ...args)`. Where `boundThis` is `[[BoundThis]]`, `args` is `[[BoundArguments]]`, followed by the arguments passed by the function call.
@@ -303,7 +303,7 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-function.prototype.bind</span></a></td></tr></tbody></table>

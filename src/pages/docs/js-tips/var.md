@@ -19,10 +19,10 @@ The `var` declares a function-scoped or globally-scoped variable, optionally ini
 
     var varname1 [= value1] [, varname2 [= value2] ... [, varnameN [= valueN]]];
 
-`varnameN`  
+`varnameN`
 Variable name. It can be any legal identifier.
 
-`valueN` <span class="badge inline optional">Optional</span>  
+`valueN` <span class="badge inline optional">Optional</span>
 Initial value of the variable. It can be any legal expression. Default value is `undefined`.
 
 Alternatively, the [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -204,7 +204,7 @@ Variables that appear to be implicit globals may be references to variables in a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-variable-statement">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-variable-statement">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-variable-statement</span></a></td></tr></tbody></table>
@@ -270,6 +270,6 @@ Samsung Internet
 -   [`let`](let)
 -   [`const`](const)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a>

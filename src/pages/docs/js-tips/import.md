@@ -37,19 +37,19 @@ Backward compatibility can be ensured using attribute `nomodule` on the [`<scrip
     var promise = import("module-name");
 ```
 
-`defaultExport`  
+`defaultExport`
 Name that will refer to the default export from the module.
 
-`module-name`  
+`module-name`
 The module to import from. This is often a relative or absolute path name to the `.js` file containing the module. Certain bundlers may permit or require the use of the extension; check your environment. Only single quoted and double quoted Strings are allowed.
 
-`name`  
+`name`
 Name of the module object that will be used as a kind of namespace when referring to the imports.
 
-`exportN`  
+`exportN`
 Name of the exports to be imported.
 
-`aliasN`  
+`aliasN`
 Names that will refer to the named imports.
 
 ## Description
@@ -209,7 +209,7 @@ This example shows how to load functionality on to a page based on a user action
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-imports</span></a></td></tr></tbody></table>
@@ -318,6 +318,6 @@ No
 -   Axel Rauschmayer's book: ["Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 -   The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a>

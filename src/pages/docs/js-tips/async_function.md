@@ -25,13 +25,13 @@ Async functions may also be defined [as expressions](../operators/async_function
 
 ### Parameters
 
-`name`  
+`name`
 The function's name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function. The `await` mechanism may be used.
 
 ### Return value
@@ -204,7 +204,7 @@ For example, in the following code an unhandled promise rejection error will be 
 
 In `sequentialStart`, execution suspends 2 seconds for the first `await`, and then another second for the second `await`. The second timer is not created until the first has already fired, so the code finishes after 3 seconds.
 
-In `concurrentStart`, both timers are created and then `await`ed. The timers run concurrently, which means the code finishes in 2 rather than 3 seconds, i.e. the slowest timer.  
+In `concurrentStart`, both timers are created and then `await`ed. The timers run concurrently, which means the code finishes in 2 rather than 3 seconds, i.e. the slowest timer.
 However, the `await` calls still run in series, which means the second `await` will wait for the first one to finish. In this case, the result of the fastest timer is processed after the slowest.
 
 If you wish to safely perform two or more jobs in parallel, you must await a call to `Promise.all`, or `Promise.allSettled`.
@@ -267,7 +267,7 @@ This highlights the subtle difference between `return foo;` and `return await fo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-async-function-definitions</span></a></td></tr></tbody></table>
@@ -305,6 +305,6 @@ No
 -   [`await`](../operators/await)
 -   ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005–2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>

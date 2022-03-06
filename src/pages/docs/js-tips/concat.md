@@ -23,7 +23,7 @@ The `concat()` method is used to merge two or more arrays. This method does not 
 
 ### Parameters
 
-`valueN` <span class="badge inline optional">Optional</span>  
+`valueN` <span class="badge inline optional">Optional</span>
 Arrays and/or values to concatenate into a new array. If all `valueN` parameters are omitted, `concat` returns a shallow copy of the existing array on which it is called. See the description below for more details.
 
 ### Return value
@@ -97,7 +97,7 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>

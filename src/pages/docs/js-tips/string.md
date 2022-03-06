@@ -99,7 +99,7 @@ A `String` object can always be converted to its primitive counterpart with the 
 
 Special characters can be encoded using escape sequences:
 
-<table><thead><tr class="header"><th>Escape sequence</th><th>Unicode code point</th></tr></thead><tbody><tr class="odd"><td><code>\0</code></td><td>null character (U+0000 NULL)</td></tr><tr class="even"><td><code>\'</code></td><td>single quote (U+0027 APOSTROPHE)</td></tr><tr class="odd"><td><code>\"</code></td><td>double quote (U+0022 QUOTATION MARK)</td></tr><tr class="even"><td><code>\\</code></td><td>backslash (U+005C REVERSE SOLIDUS)</td></tr><tr class="odd"><td><code>\n</code></td><td>newline (U+000A LINE FEED; LF)</td></tr><tr class="even"><td><code>\r</code></td><td>carriage return (U+000D CARRIAGE RETURN; CR)</td></tr><tr class="odd"><td><code>\v</code></td><td>vertical tab (U+000B LINE TABULATION)</td></tr><tr class="even"><td><code>\t</code></td><td>tab (U+0009 CHARACTER TABULATION)</td></tr><tr class="odd"><td><code>\b</code></td><td>backspace (U+0008 BACKSPACE)</td></tr><tr class="even"><td><code>\f</code></td><td>form feed (U+000C FORM FEED)</td></tr><tr class="odd"><td><code>\uXXXX</code> 
+<table><thead><tr class="header"><th>Escape sequence</th><th>Unicode code point</th></tr></thead><tbody><tr class="odd"><td><code>\0</code></td><td>null character (U+0000 NULL)</td></tr><tr class="even"><td><code>\'</code></td><td>single quote (U+0027 APOSTROPHE)</td></tr><tr class="odd"><td><code>\"</code></td><td>double quote (U+0022 QUOTATION MARK)</td></tr><tr class="even"><td><code>\\</code></td><td>backslash (U+005C REVERSE SOLIDUS)</td></tr><tr class="odd"><td><code>\n</code></td><td>newline (U+000A LINE FEED; LF)</td></tr><tr class="even"><td><code>\r</code></td><td>carriage return (U+000D CARRIAGE RETURN; CR)</td></tr><tr class="odd"><td><code>\v</code></td><td>vertical tab (U+000B LINE TABULATION)</td></tr><tr class="even"><td><code>\t</code></td><td>tab (U+0009 CHARACTER TABULATION)</td></tr><tr class="odd"><td><code>\b</code></td><td>backspace (U+0008 BACKSPACE)</td></tr><tr class="even"><td><code>\f</code></td><td>form feed (U+000C FORM FEED)</td></tr><tr class="odd"><td><code>\uXXXX</code>
 <br/>
 
 …where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>–<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td></tr><tr class="even"><td><code>\u{X}</code>…<code>\u{XXXXXX}</code>
@@ -136,128 +136,128 @@ Both of the above methods result in identical strings.
 
 ## Constructor
 
-[`String()`](string/string)  
+[`String()`](string/string)
 Creates a new `String` object. It performs type conversion when called as a function, rather than as a constructor, which is usually more useful.
 
 ## Static methods
 
-[`String.fromCharCode(num1 [, ...[, numN]])`](string/fromcharcode)  
+[`String.fromCharCode(num1 [, ...[, numN]])`](string/fromcharcode)
 Returns a string created by using the specified sequence of Unicode values.
 
-[`String.fromCodePoint(num1 [, ...[, numN)`](string/fromcodepoint)  
+[`String.fromCodePoint(num1 [, ...[, numN)`](string/fromcodepoint)
 Returns a string created by using the specified sequence of code points.
 
-[`String.raw()`](string/raw)  
+[`String.raw()`](string/raw)
 Returns a string created from a raw template string.
 
 ## Instance properties
 
-[`String.prototype.length`](string/length)  
+[`String.prototype.length`](string/length)
 Reflects the `length` of the string. Read-only.
 
 ## Instance methods
 
-[`String.prototype.at(index)`](string/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>  
+[`String.prototype.at(index)`](string/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>
 Returns the character (exactly one UTF-16 code unit) at the specified `index`. Accepts negative integers, which count back from the last string character.
 
-[`String.prototype.charAt(index)`](string/charat)  
+[`String.prototype.charAt(index)`](string/charat)
 Returns the character (exactly one UTF-16 code unit) at the specified `index`.
 
-[`String.prototype.charCodeAt(index)`](string/charcodeat)  
+[`String.prototype.charCodeAt(index)`](string/charcodeat)
 Returns a number that is the UTF-16 code unit value at the given `index`.
 
-[`String.prototype.codePointAt(pos)`](string/codepointat)  
+[`String.prototype.codePointAt(pos)`](string/codepointat)
 Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified `pos`.
 
-[`String.prototype.concat(str [, ...strN ])`](string/concat)  
+[`String.prototype.concat(str [, ...strN ])`](string/concat)
 Combines the text of two (or more) strings and returns a new string.
 
-[`String.prototype.includes(searchString [, position])`](string/includes)  
+[`String.prototype.includes(searchString [, position])`](string/includes)
 Determines whether the calling string contains `searchString`.
 
-[`String.prototype.endsWith(searchString [, length])`](string/endswith)  
+[`String.prototype.endsWith(searchString [, length])`](string/endswith)
 Determines whether a string ends with the characters of the string `searchString`.
 
-[`String.prototype.indexOf(searchValue [, fromIndex])`](string/indexof)  
+[`String.prototype.indexOf(searchValue [, fromIndex])`](string/indexof)
 Returns the index within the calling [`String`](string) object of the first occurrence of `searchValue`, or `-1` if not found.
 
-[`String.prototype.lastIndexOf(searchValue [, fromIndex])`](string/lastindexof)  
+[`String.prototype.lastIndexOf(searchValue [, fromIndex])`](string/lastindexof)
 Returns the index within the calling [`String`](string) object of the last occurrence of `searchValue`, or `-1` if not found.
 
-[`String.prototype.localeCompare(compareString [, locales [, options]])`](string/localecompare)  
+[`String.prototype.localeCompare(compareString [, locales [, options]])`](string/localecompare)
 Returns a number indicating whether the reference string `compareString` comes before, after, or is equivalent to the given string in sort order.
 
-[`String.prototype.match(regexp)`](string/match)  
+[`String.prototype.match(regexp)`](string/match)
 Used to match regular expression `regexp` against a string.
 
-[`String.prototype.matchAll(regexp)`](string/matchall)  
+[`String.prototype.matchAll(regexp)`](string/matchall)
 Returns an iterator of all `regexp`'s matches.
 
-[`String.prototype.normalize([form])`](string/normalize)  
+[`String.prototype.normalize([form])`](string/normalize)
 Returns the Unicode Normalization Form of the calling string value.
 
-[`String.prototype.padEnd(targetLength [, padString])`](string/padend)  
+[`String.prototype.padEnd(targetLength [, padString])`](string/padend)
 Pads the current string from the end with a given string and returns a new string of the length `targetLength`.
 
-[`String.prototype.padStart(targetLength [, padString])`](string/padstart)  
+[`String.prototype.padStart(targetLength [, padString])`](string/padstart)
 Pads the current string from the start with a given string and returns a new string of the length `targetLength`.
 
-[`String.prototype.repeat(count)`](string/repeat)  
+[`String.prototype.repeat(count)`](string/repeat)
 Returns a string consisting of the elements of the object repeated `count` times.
 
-[`String.prototype.replace(searchFor, replaceWith)`](string/replace)  
+[`String.prototype.replace(searchFor, replaceWith)`](string/replace)
 Used to replace occurrences of `searchFor` using `replaceWith`. `searchFor` may be a string or Regular Expression, and `replaceWith` may be a string or function.
 
-[`String.prototype.replaceAll(searchFor, replaceWith)`](string/replaceall)  
+[`String.prototype.replaceAll(searchFor, replaceWith)`](string/replaceall)
 Used to replace all occurrences of `searchFor` using `replaceWith`. `searchFor` may be a string or Regular Expression, and `replaceWith` may be a string or function.
 
-[`String.prototype.search(regexp)`](string/search)  
+[`String.prototype.search(regexp)`](string/search)
 Search for a match between a regular expression `regexp` and the calling string.
 
-[`String.prototype.slice(beginIndex[, endIndex])`](string/slice)  
+[`String.prototype.slice(beginIndex[, endIndex])`](string/slice)
 Extracts a section of a string and returns a new string.
 
-[`String.prototype.split([sep [, limit] ])`](string/split)  
+[`String.prototype.split([sep [, limit] ])`](string/split)
 Returns an array of strings populated by splitting the calling string at occurrences of the substring `sep`.
 
-[`String.prototype.startsWith(searchString [, length])`](string/startswith)  
+[`String.prototype.startsWith(searchString [, length])`](string/startswith)
 Determines whether the calling string begins with the characters of string `searchString`.
 
-[`String.prototype.substring(indexStart [, indexEnd])`](string/substring)  
+[`String.prototype.substring(indexStart [, indexEnd])`](string/substring)
 Returns a new string containing characters of the calling string from (or between) the specified index (or indeces).
 
-[`String.prototype.toLocaleLowerCase( [locale, ...locales])`](string/tolocalelowercase)  
+[`String.prototype.toLocaleLowerCase( [locale, ...locales])`](string/tolocalelowercase)
 The characters within a string are converted to lowercase while respecting the current locale.
 
 For most languages, this will return the same as [`toLowerCase()`](string/tolowercase).
 
-[`String.prototype.toLocaleUpperCase( [locale, ...locales])`](string/tolocaleuppercase)  
+[`String.prototype.toLocaleUpperCase( [locale, ...locales])`](string/tolocaleuppercase)
 The characters within a string are converted to uppercase while respecting the current locale.
 
 For most languages, this will return the same as [`toUpperCase()`](string/touppercase).
 
-[`String.prototype.toLowerCase()`](string/tolowercase)  
+[`String.prototype.toLowerCase()`](string/tolowercase)
 Returns the calling string value converted to lowercase.
 
-[`String.prototype.toString()`](string/tostring)  
+[`String.prototype.toString()`](string/tostring)
 Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`String.prototype.toUpperCase()`](string/touppercase)  
+[`String.prototype.toUpperCase()`](string/touppercase)
 Returns the calling string value converted to uppercase.
 
-[`String.prototype.trim()`](string/trim)  
+[`String.prototype.trim()`](string/trim)
 Trims whitespace from the beginning and end of the string. Part of the ECMAScript 5 standard.
 
-[`String.prototype.trimStart()`](string/trimstart)  
+[`String.prototype.trimStart()`](string/trimstart)
 Trims whitespace from the beginning of the string.
 
-[`String.prototype.trimEnd()`](string/trimend)  
+[`String.prototype.trimEnd()`](string/trimend)
 Trims whitespace from the end of the string.
 
-[`String.prototype.valueOf()`](string/valueof)  
+[`String.prototype.valueOf()`](string/valueof)
 Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
-[`String.prototype.@@iterator()`](string/@@iterator)  
+[`String.prototype.@@iterator()`](string/@@iterator)
 Returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value.
 
 ## HTML wrapper methods
@@ -266,43 +266,43 @@ Returns a new iterator object that iterates over the code points of a String val
 
 They are of limited use, as they provide only a subset of the available HTML tags and attributes.
 
-[`String.prototype.anchor()`](string/anchor)  
+[`String.prototype.anchor()`](string/anchor)
 [`<a name="name">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-name) (hypertext target)
 
-[`String.prototype.big()`](string/big)  
+[`String.prototype.big()`](string/big)
 [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big)
 
-[`String.prototype.blink()`](string/blink)  
+[`String.prototype.blink()`](string/blink)
 [`<blink>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink)
 
-[`String.prototype.bold()`](string/bold)  
+[`String.prototype.bold()`](string/bold)
 [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
 
-[`String.prototype.fixed()`](string/fixed)  
+[`String.prototype.fixed()`](string/fixed)
 [`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt)
 
-[`String.prototype.fontcolor()`](string/fontcolor)  
+[`String.prototype.fontcolor()`](string/fontcolor)
 [`<font color="color">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font#attr-color)
 
-[`String.prototype.fontsize()`](string/fontsize)  
+[`String.prototype.fontsize()`](string/fontsize)
 [`<font size="size">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font#attr-size)
 
-[`String.prototype.italics()`](string/italics)  
+[`String.prototype.italics()`](string/italics)
 [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
 
-[`String.prototype.link()`](string/link)  
+[`String.prototype.link()`](string/link)
 [`<a href="url">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-href) (link to URL)
 
-[`String.prototype.small()`](string/small)  
+[`String.prototype.small()`](string/small)
 [`<small>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small)
 
-[`String.prototype.strike()`](string/strike)  
+[`String.prototype.strike()`](string/strike)
 [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike)
 
-[`String.prototype.sub()`](string/sub)  
+[`String.prototype.sub()`](string/sub)
 [`<sub>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub)
 
-[`String.prototype.sup()`](string/sup)  
+[`String.prototype.sup()`](string/sup)
 [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)
 
 ## Examples
@@ -318,7 +318,7 @@ It's possible to use `String` as a more reliable [`toString()`](string/tostring)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-string-objects</span></a></td></tr></tbody></table>
