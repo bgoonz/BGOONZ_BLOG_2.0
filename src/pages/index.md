@@ -105,7 +105,8 @@ sections:
           networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
         actions:
           - label: Learn About Machine Learning
-            url: '#'
+            url: >-
+              https://dev.to/bgoonz/everything-you-need-to-become-a-machine-learner-1cjp
             style: link
             icon_class: dev
             new_window: false
