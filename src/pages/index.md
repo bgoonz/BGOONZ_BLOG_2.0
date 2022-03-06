@@ -310,12 +310,6 @@ sections:
         new_window: false
         no_follow: false
         type: action
-      - label: email
-        url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
       - label: Subscribe (Youtube)
         url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
         style: primary
