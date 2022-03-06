@@ -19,7 +19,7 @@ template: docs
 <summary>  Cheatsheet </summary>   
 
 
-</details>
+
 
 ```js
 
