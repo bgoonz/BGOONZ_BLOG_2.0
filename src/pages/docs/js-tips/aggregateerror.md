@@ -4,7 +4,7 @@ weight: 0
 excerpt: The AggregateError object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation
 seo:
     title: ' AggregateError'
-    description: ''
+    description: 'The AggregateError object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation'
     robots: []
     extra: []
     type: stackbit_page_meta
