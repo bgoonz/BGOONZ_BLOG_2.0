@@ -62,7 +62,7 @@ pre[class*="language-"] {
 .token.operator,
 .token.entity,
 .token.url,
-.language-jscss .token.string,
+.language-css .token.string,
 .style .token.string,
 .token.variable {
   color: #f8f8f2;
@@ -125,7 +125,9 @@ div.code-toolbar > .toolbar button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 div.code-toolbar > .toolbar a,
