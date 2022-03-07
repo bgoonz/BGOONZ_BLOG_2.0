@@ -3,9 +3,9 @@
   $color-primary: map-deep-get($theme-palettes, $palette, "primary");
   $color-secondary: map-deep-get($theme-palettes, $palette, "secondary");
 
-    .palette-#{$palette-suffix} {
-        a:not(.button) {
-            color: $color-primary;
+  .palette-#{$palette-suffix} {
+    a:not(.button) {
+      color: $color-primary;
 
       &:hover {
         color: $gray-600;
