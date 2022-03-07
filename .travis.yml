@@ -3,5 +3,5 @@ dist: xenial
 node_js:
   - "14"
 script:
-  - cd ../../..
+  - cd .
   - npm test
