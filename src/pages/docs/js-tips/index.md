@@ -6,7 +6,11 @@ seo:
   title: Quick Tips (js)
   description: Javascript Quick Tips Directory
   robots: []
-  extra: []
+  extra:
+    - name: 'og:image'
+      value: images/javascript.jpeg
+      keyName: property
+      relativeUrl: true
   type: stackbit_page_meta
 template: docs
 ---
