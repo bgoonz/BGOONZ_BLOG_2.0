@@ -26,7 +26,7 @@ template: docs
 weight: 0
 ---
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/my-websites/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/my-websites/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <h1> Links </h1>
 <br>
@@ -40,7 +40,7 @@ weight: 0
 
 <h1> Wikipedia Viewer</h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/wikipedia-viewer.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/wikipedia-viewer.html" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
  <br>
  <br>

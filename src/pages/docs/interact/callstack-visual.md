@@ -12,7 +12,7 @@ template: docs
 
 <script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="1000px" width="1400px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="100%" width="100%" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
   Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
