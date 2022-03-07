@@ -311,7 +311,7 @@ This example first creates an async iterable for a stream of data, then uses it 
 ### Iterating over sync iterables and generators
 
 `for await...of` loop also consumes sync iterables and generators. In that case it internally awaits emitted values before assign them to the loop control variable.
-
+```js
     function* generator() {
       yield 0;
       yield 1;
@@ -387,7 +387,7 @@ This example first creates an async iterable for a stream of data, then uses it 
     // 4
     // caught 5
     // called finally
-    
+
 ```
 
 
