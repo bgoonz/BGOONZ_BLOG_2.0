@@ -13,7 +13,12 @@ export default class Footer extends React.Component {
                     <table id="footer-search" cellPadding={0} cellSpacing={0} border={0}>
                         <tbody>
                             <tr>
-                                <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }}>
+                                <td
+                                    style={{
+                                        fontFamily: 'Arial, Helvetica, sans-serif',
+                                        fontSize: '7.5pt'
+                                    }}
+                                >
                                     {' '}
                                     <table
                                         width="95%"
@@ -42,11 +47,11 @@ export default class Footer extends React.Component {
                                                     <a
                                                         target="_blank"
                                                         href="https:/ /
-            search.freefind.com / find.html
-        ? si = 14588965 &m = 0 &p =
-              0 "
+                search.freefind.com / find.html
+            ? si = 14588965 &m = 0 &p =
+                  0 "
                                                     >
-                                                        <h3> Sitemap</h3>
+                                                        <h3>Sitemap</h3>
                                                     </a>
                                                 </td>
                                                 <td
@@ -59,8 +64,9 @@ export default class Footer extends React.Component {
                                                     <a
                                                         target="_blank"
                                                         href="https:/ /
-                  search.freefind.com / find.html
-          ? si = 14588965 &pid = a "
+                      search.freefind.com / find.html
+              ? si = 14588965 &pid =
+                    a "
                                                     >
                                                         <h3>Advanced</h3>
                                                     </a>
@@ -100,7 +106,7 @@ export default class Footer extends React.Component {
                                             color: 'transparent'
                                         }}
                                         href="https:/ /
-            www.freefind.com "
+                www.freefind.com "
                                         rel="nofollow"
                                     >
                                         {' '}
@@ -112,7 +118,7 @@ export default class Footer extends React.Component {
                                             color: 'transparent'
                                         }}
                                         href="https:/ /
-            www.freefind.com "
+                www.freefind.com "
                                         rel="nofollow"
                                     >
                                         by
