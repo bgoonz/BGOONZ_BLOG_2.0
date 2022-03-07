@@ -1,11 +1,11 @@
 ---
-title: Es6 Features
+title: React Interview Questions & Answers
 subtitle: lorem-ipsum
 date: '2021-11-24'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-    title: ''
+    title: 'React Interview Questions & Answers'
     description: ''
     robots: []
     extra: []

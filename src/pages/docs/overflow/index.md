@@ -1,10 +1,10 @@
 ---
-title: Leetcode
+title: Overflow
 weight: 0
 excerpt: feel free to try the examples
 seo:
-    title: '   '
-    description: '  '
+    title: 'Overflow'
+    description: 'Overflow or outdated content from other sections'
     robots: []
     extra: []
     type: stackbit_page_meta
