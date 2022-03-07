@@ -4,7 +4,7 @@ sections:
     - section_id: hero
       type: section_hero
       title: Showcase
-      image: images/charming-dolphin.gif
+      image: images/spin-cube.gif
       content: |
           Some of my more engaging projects!
     - section_id: showcase
