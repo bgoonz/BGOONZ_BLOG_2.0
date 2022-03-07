@@ -218,7 +218,7 @@ template: docs
 <br>
 <h1>   Family-Promise Application</h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://a.familypromiseservicetracker.dev/dashboard" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://a.familypromiseservicetracker.dev/dashboard" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -243,12 +243,12 @@ template: docs
 <br>
 <h1>   Paste To Markdown </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://euangoddard.github.io/clipboard2markdown/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
 <h1>   Paste Excel Tabel To Markdown </h1>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -374,7 +374,7 @@ template: docs
 <h1> Border Builder </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -396,7 +396,7 @@ template: docs
 <h1>                </h1>
 <br>
 
- <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+ <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="100%" width="100%"scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -409,7 +409,7 @@ template: docs
 <br>
 <br>
 <br>
- <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel"
+ <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel"
       src="https://codepen.io/bgoonz/embed/JjNagJo?default-tab=result&theme-id=dark" frameborder="no" loading="lazy"
       allowtransparency="true" allowfullscreen="true">
       See the Pen <a href="https://codepen.io/bgoonz/pen/JjNagJo">

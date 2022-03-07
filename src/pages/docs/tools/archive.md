@@ -13,7 +13,7 @@ template: docs
 
 # Archive
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz-blog-v3-0.netlify.app/archive/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -70,7 +70,7 @@ template: docs
 <br>
 
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="1000px" width="1300px">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="100%" width="100%">
 </iframe>
 
 <br>
@@ -89,7 +89,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://archive.org/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://archive.org/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <hr>
@@ -110,8 +110,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -123,7 +121,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://bgoonz.github.io/bass-station/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://bgoonz.github.io/bass-station/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -131,8 +129,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -158,8 +154,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -234,7 +228,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <hr>
@@ -255,8 +249,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -275,8 +267,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -296,8 +286,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>
@@ -324,7 +312,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -332,8 +320,6 @@ template: docs
 <hr>
 <br>
 <br>
-
-<hr>
 <br>
 <br>
 <br>

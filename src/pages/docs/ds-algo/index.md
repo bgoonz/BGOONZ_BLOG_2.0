@@ -35,7 +35,7 @@ Data structures
 
 <h1>   Algorithms </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -68,7 +68,7 @@ Data structures
 <br>
 <h1>   Leetcode </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/Leetcode-JS-PY-MD/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.github.io/Leetcode-JS-PY-MD/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -78,7 +78,7 @@ Data structures
 <br>
 <h1>   Algorithms </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
