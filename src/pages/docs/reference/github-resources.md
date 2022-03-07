@@ -8,10 +8,12 @@ seo:
     robots: []
     extra: []
 template: docs
+---
 
 
+# Github Resources:
 
-## Table of Contents
+
   - [GitHub](#github)
     - [Ignore Whitespace](#ignore-whitespace)
     - [Adjust Tab Space](#adjust-tab-space)
