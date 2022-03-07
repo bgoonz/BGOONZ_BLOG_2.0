@@ -1,5 +1,5 @@
 .docs-content {
-  padding-top: 2.5em;
+  padding-top: 3.5em;
 }
 
 .post {
@@ -312,7 +312,7 @@
   }
 }
 
-@media only screen and (min-width: 1091px) {
+@media only screen and (min-width: 1191px) {
   #page-nav {
     display: block;
   }
@@ -328,10 +328,10 @@
     margin-bottom: 5%;
     padding: 0.75em 1em;
   }
-
-  .docs-nav-menu {
-    display: none;
-  }
+// 
+//   .docs-nav-menu {
+//     display: none;
+//   }
 
   .docs-menu--opened {
     .docs-nav-menu {
