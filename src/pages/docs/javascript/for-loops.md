@@ -272,6 +272,8 @@ Since the return values of async generators conform to the async iterable protoc
     // 0
     // 1
     // 2
+```
+
 
 For a more concrete example of iterating over an async generator using `for await...of`, consider iterating over data from an API.
 
