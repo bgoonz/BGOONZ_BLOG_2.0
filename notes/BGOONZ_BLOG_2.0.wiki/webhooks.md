@@ -6,7 +6,7 @@
 
 ---
 
-Webhooks allow external services to be notified when certain events happen. When the specified events happen, we’ll send a POST request to each of the URLs you provide. Learn more in our [Webhooks Guide](https://docs.github.com/webhooks/).
+Webhooks allow external services to be notified when certain events happen. When the specified events happen, we'll send a POST request to each of the URLs you provide. Learn more in our [Webhooks Guide](https://docs.github.com/webhooks/).
 
 -   [Edit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/settings/hooks/296865894)
 

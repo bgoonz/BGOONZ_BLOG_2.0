@@ -577,7 +577,7 @@ Javascript is becoming a very important aspect of modern web application perform
 
 We must ensure that we keep javascript files small and only load what the page needs when it needs it.
 
-Let’s take a look at some improvements.
+Let's take a look at some improvements.
 
 ### Minify the Javascript
 
@@ -699,7 +699,7 @@ A good place to visit is [NPM](https://npmjs.com/). On this site, you can search
 
 CSS files can keep growing over time and often it can be difficult to know if certain classes are still in use.
 
-It’s important to review the CSS for this reason.
+It's important to review the CSS for this reason.
 
 ### Minify the CSS
 
@@ -1008,7 +1008,7 @@ There is also a performance boost if you register your site with the [Google HST
 
 To check if you have HTTPS enabled open Chrome and look for the padlock next to the URL.
 
-If you don’t see it, you may see the "Not Secure” text instead.
+If you don't see it, you may see the "Not Secure” text instead.
 
 ![Not Secure](https://pagedart.com/images/30-ways-to-improve-your-website-performance/not-secure.jpg)
 

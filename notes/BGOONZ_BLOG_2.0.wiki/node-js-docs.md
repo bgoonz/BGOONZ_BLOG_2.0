@@ -60,7 +60,7 @@ An example of a [web server](https://nodejs.org/dist/v16.13.1/docs/api/http.html
 
 Commands in this document start with `$` or `>` to replicate how they would appear in a user's terminal. Do not include the `$` and `>` characters. They are there to show the start of each command.
 
-Lines that don’t start with `$` or `>` character show the output of the previous command.
+Lines that don't start with `$` or `>` character show the output of the previous command.
 
 First, make sure to have downloaded and installed Node.js. See [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) for further install information.
 
@@ -2390,7 +2390,7 @@ console.log(uint16array);
 
 ```
 
-It is possible to create a new `Buffer` that shares the same allocated memory as a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) instance by using the `TypedArray` object’s `.buffer` property in the same way. [`Buffer.from()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferfromarraybuffer-byteoffset-length) behaves like `new Uint8Array()` in this context.
+It is possible to create a new `Buffer` that shares the same allocated memory as a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) instance by using the `TypedArray` object's `.buffer` property in the same way. [`Buffer.from()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferfromarraybuffer-byteoffset-length) behaves like `new Uint8Array()` in this context.
 
 ```
 import { Buffer } from 'buffer';
@@ -13727,7 +13727,7 @@ Added in: v10.0.0
 -   `tabularData` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
 -   `properties` [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Alternate properties for constructing the table.
 
-Try to construct a table with the columns of the properties of `tabularData` (or use `properties`) and rows of `tabularData` and log it. Falls back to just logging the argument if it can’t be parsed as tabular.
+Try to construct a table with the columns of the properties of `tabularData` (or use `properties`) and rows of `tabularData` and log it. Falls back to just logging the argument if it can't be parsed as tabular.
 
 ```
 
@@ -18150,7 +18150,7 @@ The legacy HTTP parser, used by default in versions of Node.js prior to 12.0.0, 
 
 Type: Runtime
 
-Passing a callback to [`worker.terminate()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerterminate) is deprecated. Use the returned `Promise` instead, or a listener to the worker’s `'exit'` event.
+Passing a callback to [`worker.terminate()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerterminate) is deprecated. Use the returned `Promise` instead, or a listener to the worker's `'exit'` event.
 
 #### DEP0133: `http` `connection`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#deprecations_dep0133-http-connection)
 
@@ -22576,7 +22576,7 @@ emitter.once('event', () => {
 
 The [`--trace-warnings`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--trace-warnings) command-line flag can be used to display the stack trace for such warnings.
 
-The emitted warning can be inspected with [`process.on('warning')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) and will have the additional `emitter`, `type` and `count` properties, referring to the event emitter instance, the event’s name and the number of attached listeners, respectively. Its `name` property is set to `'MaxListenersExceededWarning'`.
+The emitted warning can be inspected with [`process.on('warning')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) and will have the additional `emitter`, `type` and `count` properties, referring to the event emitter instance, the event's name and the number of attached listeners, respectively. Its `name` property is set to `'MaxListenersExceededWarning'`.
 
 ### `events.errorMonitor`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventserrormonitor)
 
@@ -23111,7 +23111,7 @@ target.removeEventListener('foo', handler, { capture: true });
 Added in: v14.5.0
 
 -   `event` [<Event>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-event)
--   Returns: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if either event’s `cancelable` attribute value is false or its `preventDefault()` method was not invoked, otherwise `false`.
+-   Returns: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if either event's `cancelable` attribute value is false or its `preventDefault()` method was not invoked, otherwise `false`.
 
 Dispatches the `event` to the list of handlers for `event.type`.
 
@@ -24791,7 +24791,7 @@ open('myfile', 'r', (err, fd) => {
 
 The "not recommended" examples above check for existence and then use the file; the "recommended" examples are better because they use the file directly and handle the error, if any.
 
-In general, check for the existence of a file only if the file won’t be used directly, for example when its existence is a signal from another process.
+In general, check for the existence of a file only if the file won't be used directly, for example when its existence is a signal from another process.
 
 #### `fs.fchmod(fd, mode, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsfchmodfd-mode-callback)
 
@@ -25457,7 +25457,7 @@ See the POSIX [`symlink(2)`](http://man7.org/linux/man-pages/man2/symlink.2.html
 
 The `type` argument is only available on Windows and ignored on other platforms. It can be set to `'dir'`, `'file'`, or `'junction'`. If the `type` argument is not set, Node.js will autodetect `target` type and use `'file'` or `'dir'`. If the `target` does not exist, `'file'` will be used. Windows junction points require the destination path to be absolute. When using `'junction'`, the `target` argument will automatically be normalized to absolute path.
 
-Relative targets are relative to the link’s parent directory.
+Relative targets are relative to the link's parent directory.
 
 ```
 import { symlink } from 'fs';
@@ -32899,6 +32899,7 @@ An [`Agent`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_class-http
 #### `new Agent([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_new-agentoptions)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) Set of configurable options to set on the agent. Can have the same fields as for [`http.Agent(options)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_new-agentoptions), and
+
     -   `maxCachedSessions` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) maximum number of TLS cached sessions. Use `0` to disable TLS session caching. **Default:** `100`.
     -   `servername` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) the value of [Server Name Indication extension](https://en.wikipedia.org/wiki/Server_Name_Indication) to be sent to the server. Use empty string `''` to disable sending the extension. **Default:** host name of the target server, unless the target server is specified using an IP address, in which case the default is `''` (no extension).
 
@@ -34498,7 +34499,7 @@ There are three types of specifiers:
 
 Bare specifier resolutions are handled by the [Node.js module resolution algorithm](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_resolver-algorithm-specification). All other specifier resolutions are always only resolved with the standard relative [URL](https://url.spec.whatwg.org/) resolution semantics.
 
-Like in CommonJS, module files within packages can be accessed by appending a path to the package name unless the package’s [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) contains an [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field, in which case files within packages can only be accessed via the paths defined in [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports).
+Like in CommonJS, module files within packages can be accessed by appending a path to the package name unless the package's [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) contains an [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field, in which case files within packages can only be accessed via the paths defined in [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports).
 
 For details on these package resolution rules that apply to bare specifiers in the Node.js module resolution, see the [packages documentation](https://nodejs.org/dist/v16.13.1/docs/api/packages.html).
 
@@ -34992,7 +34993,7 @@ const require = createRequire(cwd() + '/<preload>');
 
 #### Examples[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_examples)
 
-The various loader hooks can be used together to accomplish wide-ranging customizations of Node.js’ code loading and evaluation behaviors.
+The various loader hooks can be used together to accomplish wide-ranging customizations of Node.js' code loading and evaluation behaviors.
 
 ##### HTTPS loader[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_https-loader)
 
@@ -35056,7 +35057,7 @@ With the preceding loader, running `node --experimental-loader ./https-loader.mj
 
 ##### Transpiler loader[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_transpiler-loader)
 
-Sources that are in formats Node.js doesn’t understand can be converted into JavaScript using the [`load` hook](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_loadurl-context-defaultload). Before that hook gets called, however, a [`resolve` hook](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_resolvespecifier-context-defaultresolve) hook needs to tell Node.js not to throw an error on unknown file types.
+Sources that are in formats Node.js doesn't understand can be converted into JavaScript using the [`load` hook](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_loadurl-context-defaultload). Before that hook gets called, however, a [`resolve` hook](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_resolvespecifier-context-defaultresolve) hook needs to tell Node.js not to throw an error on unknown file types.
 
 This is less performant than transpiling source files before running Node.js; a transpiler loader should only be used for development and testing purposes.
 
@@ -35663,7 +35664,7 @@ By default Corepack won't enforce any specific package manager and will use the 
 
 ### Package entry points[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_package-entry-points)
 
-In a package’s `package.json` file, two fields can define entry points for a package: [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) and [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports). The [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) field is supported in all versions of Node.js, but its capabilities are limited: it only defines the main entry point of the package.
+In a package's `package.json` file, two fields can define entry points for a package: [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) and [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports). The [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) field is supported in all versions of Node.js, but its capabilities are limited: it only defines the main entry point of the package.
 
 The [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field provides an alternative to [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) where the package main entry point can be defined while also encapsulating the package, **preventing any other entry points besides those defined in [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports)**. This encapsulation allows module authors to define a public interface for their package.
 
@@ -35673,7 +35674,7 @@ If both [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#package
 
 **Warning**: Introducing the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field prevents consumers of a package from using any entry points that are not defined, including the [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) (e.g. `require('your-package/package.json')`. **This will likely be a breaking change.**
 
-To make the introduction of [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) non-breaking, ensure that every previously supported entry point is exported. It is best to explicitly specify entry points so that the package’s public API is well-defined. For example, a project that previous exported `main`, `lib`, `feature`, and the `package.json` could use the following `package.exports`:
+To make the introduction of [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) non-breaking, ensure that every previously supported entry point is exported. It is best to explicitly specify entry points so that the package's public API is well-defined. For example, a project that previous exported `main`, `lib`, `feature`, and the `package.json` could use the following `package.exports`:
 
 ```
 {
@@ -35710,7 +35711,7 @@ As a last resort, package encapsulation can be disabled entirely by creating an 
 
 #### Main entry point export[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main-entry-point-export)
 
-To set the main entry point for a package, it is advisable to define both [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) and [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) in the package’s [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file:
+To set the main entry point for a package, it is advisable to define both [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) and [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) in the package's [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file:
 
 ```
 {
@@ -36007,7 +36008,7 @@ The above definitions may be moved to a dedicated conditions registry in due cou
 
 #### Self-referencing a package using its name[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_self-referencing-a-package-using-its-name)
 
-Within a package, the values defined in the package’s `package.json` [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field can be referenced via the package’s name. For example, assuming the `package.json` is:
+Within a package, the values defined in the package's `package.json` [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field can be referenced via the package's name. For example, assuming the `package.json` is:
 
 ```
 
@@ -36139,10 +36140,10 @@ export default cjsModule;
 This approach is appropriate for any of the following use cases:
 
 -   The package is currently written in CommonJS and the author would prefer not to refactor it into ES module syntax, but wishes to provide named exports for ES module consumers.
--   The package has other packages that depend on it, and the end user might install both this package and those other packages. For example a `utilities` package is used directly in an application, and a `utilities-plus` package adds a few more functions to `utilities`. Because the wrapper exports underlying CommonJS files, it doesn’t matter if `utilities-plus` is written in CommonJS or ES module syntax; it will work either way.
+-   The package has other packages that depend on it, and the end user might install both this package and those other packages. For example a `utilities` package is used directly in an application, and a `utilities-plus` package adds a few more functions to `utilities`. Because the wrapper exports underlying CommonJS files, it doesn't matter if `utilities-plus` is written in CommonJS or ES module syntax; it will work either way.
 -   The package stores internal state, and the package author would prefer not to refactor the package to isolate its state management. See the next section.
 
-A variant of this approach not requiring conditional exports for consumers could be to add an export, e.g. `"./module"`, to point to an all-ES module-syntax version of the package. This could be used via `import 'pkg/module'` by users who are certain that the CommonJS version will not be loaded anywhere in the application, such as by dependencies; or if the CommonJS version can be loaded but doesn’t affect the ES module version (for example, because the package is stateless):
+A variant of this approach not requiring conditional exports for consumers could be to add an export, e.g. `"./module"`, to point to an all-ES module-syntax version of the package. This could be used via `import 'pkg/module'` by users who are certain that the CommonJS version will not be loaded anywhere in the application, such as by dependencies; or if the CommonJS version can be loaded but doesn't affect the ES module version (for example, because the package is stateless):
 
 ```
 
@@ -36172,20 +36173,20 @@ A [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_n
 }
 ```
 
-This can be done if both the CommonJS and ES module versions of the package are equivalent, for example because one is the transpiled output of the other; and the package’s management of state is carefully isolated (or the package is stateless).
+This can be done if both the CommonJS and ES module versions of the package are equivalent, for example because one is the transpiled output of the other; and the package's management of state is carefully isolated (or the package is stateless).
 
-The reason that state is an issue is because both the CommonJS and ES module versions of the package might get used within an application; for example, the user’s application code could `import` the ES module version while a dependency `require`s the CommonJS version. If that were to occur, two copies of the package would be loaded in memory and therefore two separate states would be present. This would likely cause hard-to-troubleshoot bugs.
+The reason that state is an issue is because both the CommonJS and ES module versions of the package might get used within an application; for example, the user's application code could `import` the ES module version while a dependency `require`s the CommonJS version. If that were to occur, two copies of the package would be loaded in memory and therefore two separate states would be present. This would likely cause hard-to-troubleshoot bugs.
 
-Aside from writing a stateless package (if JavaScript’s `Math` were a package, for example, it would be stateless as all of its methods are static), there are some ways to isolate state so that it’s shared between the potentially loaded CommonJS and ES module instances of the package:
+Aside from writing a stateless package (if JavaScript's `Math` were a package, for example, it would be stateless as all of its methods are static), there are some ways to isolate state so that it's shared between the potentially loaded CommonJS and ES module instances of the package:
 
-1.  If possible, contain all state within an instantiated object. JavaScript’s `Date`, for example, needs to be instantiated to contain state; if it were a package, it would be used like this:
+1.  If possible, contain all state within an instantiated object. JavaScript's `Date`, for example, needs to be instantiated to contain state; if it were a package, it would be used like this:
 
     ```
     import Date from 'date';
     const someDate = new Date();
     ```
 
-    The `new` keyword isn’t required; a package’s function can return a new object, or modify a passed-in object, to keep the state external to the package.
+    The `new` keyword isn't required; a package's function can return a new object, or modify a passed-in object, to keep the state external to the package.
 
 2.  Isolate the state in one or more CommonJS files that are shared between the CommonJS and ES module versions of the package. For example, if the CommonJS and ES module entry points are `index.cjs` and `index.mjs`, respectively:
 
@@ -36205,7 +36206,7 @@ Aside from writing a stateless package (if JavaScript’s `Math` were a package,
 
     Even if `pkg` is used via both `require` and `import` in an application (for example, via `import` in application code and via `require` by a dependency) each reference of `pkg` will contain the same state; and modifying that state from either module system will apply to both.
 
-Any plugins that attach to the package’s singleton would need to separately attach to both the CommonJS and ES module singletons.
+Any plugins that attach to the package's singleton would need to separately attach to both the CommonJS and ES module singletons.
 
 This approach is appropriate for any of the following use cases:
 
@@ -36252,7 +36253,7 @@ The following fields in `package.json` files are used in Node.js:
 }
 ```
 
-The `"name"` field defines your package’s name. Publishing to the _npm_ registry requires a name that satisfies [certain requirements](https://docs.npmjs.com/files/package.json#name).
+The `"name"` field defines your package's name. Publishing to the _npm_ registry requires a name that satisfies [certain requirements](https://docs.npmjs.com/files/package.json#name).
 
 The `"name"` field can be used in addition to the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field to [self-reference](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_self-referencing-a-package-using-its-name) a package using its name.
 
@@ -36300,7 +36301,7 @@ The `"type"` field defines the module format that Node.js uses for all `.js` fil
 
 Files ending with `.js` are loaded as ES modules when the nearest parent `package.json` file contains a top-level field `"type"` with a value of `"module"`.
 
-The nearest parent `package.json` is defined as the first `package.json` found when searching in the current folder, that folder’s parent, and so on up until a node_modules folder or the volume root is reached.
+The nearest parent `package.json` is defined as the first `package.json` found when searching in the current folder, that folder's parent, and so on up until a node_modules folder or the volume root is reached.
 
 ```
 
@@ -40892,7 +40893,7 @@ env.TEST = 1;
 console.log(env.test);
 ```
 
-Unless explicitly specified when creating a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) instance, each [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) thread has its own copy of `process.env`, based on its parent thread’s `process.env`, or whatever was specified as the `env` option to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor. Changes to `process.env` will not be visible across [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads, and only the main thread can make changes that are visible to the operating system or to native add-ons.
+Unless explicitly specified when creating a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) instance, each [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) thread has its own copy of `process.env`, based on its parent thread's `process.env`, or whatever was specified as the `env` option to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor. Changes to `process.env` will not be visible across [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads, and only the main thread can make changes that are visible to the operating system or to native add-ons.
 
 ### `process.execArgv`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexecargv)
 
@@ -47886,6 +47887,7 @@ This function is only called if the certificate passed all other checks, such as
 ### `tls.connect(options[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsconnectoptions-callback)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
     -   `enableTrace`: See [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener)
     -   `host` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Host the client should connect to. **Default:** `'localhost'`.
     -   `port` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Port the client should connect to.
@@ -47910,6 +47912,7 @@ This function is only called if the certificate passed all other checks, such as
     -   `onread` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If the `socket` option is missing, incoming data is stored in a single `buffer` and passed to the supplied `callback` when data arrives on the socket, otherwise the option is ignored. See the `onread` option of [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) for details.
     -   ...: [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) options that are used if the `secureContext` option is missing, otherwise they are ignored.
     -   ...: Any [`socket.connect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectoptions-connectlistener) option not already listed.
+
 -   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.TLSSocket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlstlssocket)
 
@@ -48058,6 +48061,7 @@ where `secureSocket` has the same API as `pair.cleartext`.
 ### `tls.createServer([options][, secureConnectionListener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
     -   `ALPNProtocols`: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<Buffer\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) An array of strings, `Buffer`s or `TypedArray`s or `DataView`s, or a single `Buffer` or `TypedArray` or `DataView` containing the supported ALPN protocols. `Buffer`s should have the format `[len][name][len][name]...` e.g. `0x05hello0x05world`, where the first byte is the length of the next protocol name. Passing an array is usually much simpler, e.g. `['hello', 'world']`. (Protocols should be ordered by their priority.)
     -   `clientCertEngine` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Name of an OpenSSL engine which can provide the client certificate.
     -   `enableTrace` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true`, [`tls.TLSSocket.enableTrace()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlssocketenabletrace) will be called on new connections. Tracing can be enabled after the secure connection is established, but this option must be used to trace the secure connection setup. **Default:** `false`.
@@ -48078,6 +48082,7 @@ where `secureSocket` has the same API as `pair.cleartext`.
     -   `pskIdentityHint` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) optional hint to send to a client to help with selecting the identity during TLS-PSK negotiation. Will be ignored in TLS 1.3. Upon failing to set pskIdentityHint `'tlsClientError'` will be emitted with `'ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED'` code.
     -   ...: Any [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) option can be provided. For servers, the identity options (`pfx`, `key`/`cert` or `pskCallback`) are usually required.
     -   ...: Any [`net.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateserveroptions-connectionlistener) option can be provided.
+
 -   `secureConnectionListener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.Server>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlsserver)
 
@@ -52612,7 +52617,7 @@ Write a JS `number` value. For use inside of a custom [`serializer._writeHostObj
 
 -   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)
 
-Write raw bytes into the serializer’s internal buffer. The deserializer will require a way to compute the length of the buffer. For use inside of a custom [`serializer._writeHostObject()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serializer_writehostobjectobject).
+Write raw bytes into the serializer's internal buffer. The deserializer will require a way to compute the length of the buffer. For use inside of a custom [`serializer._writeHostObject()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serializer_writehostobjectobject).
 
 ##### `serializer._writeHostObject(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serializer_writehostobjectobject)
 
@@ -52700,7 +52705,7 @@ Read a JS `number` value. For use inside of a custom [`deserializer._readHostObj
 -   `length` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer)
 
-Read raw bytes from the deserializer’s internal buffer. The `length` parameter must correspond to the length of the buffer that was passed to [`serializer.writeRawBytes()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serializerwriterawbytesbuffer). For use inside of a custom [`deserializer._readHostObject()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_deserializer_readhostobject).
+Read raw bytes from the deserializer's internal buffer. The `length` parameter must correspond to the length of the buffer that was passed to [`serializer.writeRawBytes()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serializerwriterawbytesbuffer). For use inside of a custom [`deserializer._readHostObject()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_deserializer_readhostobject).
 
 ##### `deserializer._readHostObject()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_deserializer_readhostobject)
 
@@ -53019,6 +53024,7 @@ The identifier of the current module, as set in the constructor.
 #### `module.link(linker)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_modulelinklinker)
 
 -   `linker` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
     -   `specifier` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The specifier of the requested module:
 
         ```
@@ -53037,6 +53043,7 @@ The identifier of the current module, as set in the constructor.
 
     -   `referencingModule` [<vm.Module>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmmodule) The `Module` object `link()` is called on.
     -   Returns: [<vm.Module>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmmodule) | [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 -   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 Link module dependencies. This method must be called before evaluation, and can only be called once per module.
@@ -56832,7 +56839,7 @@ if (isMainThread) {
 -   `port` [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) | [<BroadcastChannel>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-broadcastchannel-extends-eventtarget)
 -   Returns: [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
 
-Receive a single message from a given `MessagePort`. If no message is available, `undefined` is returned, otherwise an object with a single `message` property that contains the message payload, corresponding to the oldest message in the `MessagePort`’s queue.
+Receive a single message from a given `MessagePort`. If no message is available, `undefined` is returned, otherwise an object with a single `message` property that contains the message payload, corresponding to the oldest message in the `MessagePort`'s queue.
 
 ```
 const { MessageChannel, receiveMessageOnPort } = require('worker_threads');
@@ -56897,7 +56904,7 @@ An integer identifier for the current thread. On the corresponding worker object
 
 Added in: v10.5.0
 
-An arbitrary JavaScript value that contains a clone of the data passed to this thread’s `Worker` constructor.
+An arbitrary JavaScript value that contains a clone of the data passed to this thread's `Worker` constructor.
 
 The data is cloned as if using [`postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist), according to the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 
@@ -57264,10 +57271,10 @@ if (isMainThread) {
 
 #### `new Worker(filename[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options)
 
--   `filename` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) The path to the Worker’s main script or module. Must be either an absolute path or a relative path (i.e. relative to the current working directory) starting with `./` or `../`, or a WHATWG `URL` object using `file:` or `data:` protocol. When using a [`data:` URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs), the data is interpreted based on MIME type using the [ECMAScript module loader](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_data-imports). If `options.eval` is `true`, this is a string containing JavaScript code rather than a path.
+-   `filename` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) The path to the Worker's main script or module. Must be either an absolute path or a relative path (i.e. relative to the current working directory) starting with `./` or `../`, or a WHATWG `URL` object using `file:` or `data:` protocol. When using a [`data:` URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs), the data is interpreted based on MIME type using the [ECMAScript module loader](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_data-imports). If `options.eval` is `true`, this is a string containing JavaScript code rather than a path.
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
     -   `argv` [<any\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) List of arguments which would be stringified and appended to `process.argv` in the worker. This is mostly similar to the `workerData` but the values are available on the global `process.argv` as if they were passed as CLI options to the script.
-    -   `env` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If set, specifies the initial value of `process.env` inside the Worker thread. As a special value, [`worker.SHARE_ENV`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workershare_env) may be used to specify that the parent thread and the child thread should share their environment variables; in that case, changes to one thread’s `process.env` object affect the other thread as well. **Default:** `process.env`.
+    -   `env` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If set, specifies the initial value of `process.env` inside the Worker thread. As a special value, [`worker.SHARE_ENV`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workershare_env) may be used to specify that the parent thread and the child thread should share their environment variables; in that case, changes to one thread's `process.env` object affect the other thread as well. **Default:** `process.env`.
     -   `eval` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true` and the first argument is a `string`, interpret the first argument to the constructor as a script that is executed once the worker is online.
     -   `execArgv` [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) List of node CLI options passed to the worker. V8 options (such as `--max-old-space-size`) and options that affect the process (such as `--title`) are not supported. If set, this is provided as [`process.execArgv`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexecargv) inside the worker. By default, options are inherited from the parent thread.
     -   `stdin` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If this is set to `true`, then `worker.stdin` provides a writable stream whose contents appear as `process.stdin` inside the Worker. By default, no data is provided.
@@ -57739,8 +57746,8 @@ In general, greater memory usage options will mean that Node.js has to make fewe
 
 There are equivalents to the zlib options for Brotli-based streams, although these options have different ranges than the zlib ones:
 
--   zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
--   zlib’s `windowBits` option matches Brotli’s `BROTLI_PARAM_LGWIN` option.
+-   zlib's `level` option matches Brotli's `BROTLI_PARAM_QUALITY` option.
+-   zlib's `windowBits` option matches Brotli's `BROTLI_PARAM_LGWIN` option.
 
 See [below](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_brotli-constants) for more details on Brotli-specific options.
 

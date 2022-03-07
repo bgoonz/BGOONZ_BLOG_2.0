@@ -1346,7 +1346,7 @@ print(a[[False, True, False, False]])
 ### Q99. Suppose you have a string variable defined as y="stuff;thing;junk;". What would be the output from this code?
 
 ```
-Z = y.split(‘;’)
+Z = y.split(‘;')
 len(z)
 ```
 

@@ -47,7 +47,7 @@ That means you can see the blog running in your web browser under the `http://lo
 
 ## Folders structure
 
-This is the starter’s main folders structure.
+This is the starter's main folders structure.
 
     root
       ├── .cache
@@ -108,7 +108,7 @@ Content of the `config.js` file.
       ]
     };
 
-Edit values of the object’s properties according to your needs.
+Edit values of the object's properties according to your needs.
 
 ### Posts
 
@@ -156,7 +156,7 @@ Only pages inside folders with order prefix are displayed in the Info menu.
 
 ## Parts
 
-Through `parts` you can edit content of elements which are parts of the blog’s layout, like an author note under a post or a footer.
+Through `parts` you can edit content of elements which are parts of the blog's layout, like an author note under a post or a footer.
 
     root
       ├── content
@@ -208,8 +208,8 @@ If you want to delay singing-up to Algolia you can temporarily turn off `gatsby-
         {
           resolve: `gatsby-source-filesystem`,
 
-But hey, it’s not diffucult or long to [setup](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/) your Algolia account for the starter.
+But hey, it's not diffucult or long to [setup](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/setup-algolia-account/) your Algolia account for the starter.
 
 ## Summary
 
-That’s all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.
+That's all for the first step. Now you should have a running blog with your own data running on your localhost. In the next post we will talk how to change the look of your blog. Stay tuned.

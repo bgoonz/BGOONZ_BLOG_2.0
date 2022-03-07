@@ -6,7 +6,7 @@
 
 ---
 
-Easy steps to add a Google search bar or box to your website. You need not have any coding knowledge to follow the steps below. This method works with all major CMS’s such as WordPress, Ghost, Drupal, Joomla, etc.
+Easy steps to add a Google search bar or box to your website. You need not have any coding knowledge to follow the steps below. This method works with all major CMS's such as WordPress, Ghost, Drupal, Joomla, etc.
 
 ![How to add a Google Search Bar to your Website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2021/01/How-to-add-a-Google-Search-Bar-to-your-Website-1024x576.png)
 
@@ -20,25 +20,25 @@ If you are on WordPress, it has a default search bar that adds basic search func
 
 1.  To create a Programmable Search Engine:
 
-    1.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don’t have one).
+    1.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don't have one).
     2.  The **name** of your search engine will be automatically generated based on the URLs you select. You can change this name at any time.
-    3.  Select the **language** of your search engine. This defines the language of the buttons and other design elements of your search engine but doesn’t affect the actual search results.
+    3.  Select the **language** of your search engine. This defines the language of the buttons and other design elements of your search engine but doesn't affect the actual search results.
     4.  Click **Create**.
 
     Your basic search engine is ready to use! To see more configuration options, go to the [Control Panel](https://programmablesearchengine.google.com/). Control Panel also has a preview window that allows you to test and fine-tune your search results.
 
 2.  Go to [https://cse.google.co.in/cse/](https://cse.google.co.in/cse/)[![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/google-custom-search-bar.png)](https://blog.expertrec.com/add-search-to-website/)
-3.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don’t have one).
+3.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don't have one).
 4.  The **name** of your search engine will be automatically generated based on the URLs you select. You can change this name at any time.
 5.  In the **Sites to search** section, add the pages you want to include in your search engine. You can include any sites you wish to, not just the sites you own. You can include whole site URLs or individual page URLs. You can also use [URL patterns](http://support.google.com/programmable-search/bin/answer.py?answer=71826).![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/sites-to-search.png)
 
 ### Implementing Google search box
 
-Once you’ve created your Programmable Search Engine, you can add the Programmable Search Element to your site. To do this, you’ll need to copy some code and paste it into your site’s HTML where you want your search engine to appear.
+Once you've created your Programmable Search Engine, you can add the Programmable Search Element to your site. To do this, you'll need to copy some code and paste it into your site's HTML where you want your search engine to appear.
 
 1.  In the [Control Panel,](https://programmablesearchengine.google.com/) click the search engine you want to use.
 2.  Click **Setup** in the sidebar, and then click the **Basics** tab.
-3.  In the **Details** section, click **Get code**. Copy the code and paste it into your page’s HTML source code where you want the Google search bar to appear. Click on receive code.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/receive-code.png)
+3.  In the **Details** section, click **Get code**. Copy the code and paste it into your page's HTML source code where you want the Google search bar to appear. Click on receive code.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/receive-code.png)
 4.  Add this code to your website. If you are on Word press, you can use a plugin called Elementor or insert headers and footers plugin that will do this for you. If you want exact placement, you will have to edit your theme file by Appearance-> theme editor. If you are on another CMS, you can contact your developer and ask him to add it to all the pages you want this search bar to be shown.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/receive-code-2.png)
 5.  Once you add this code to your website, you will see the Google search bar on your website pages.
 
@@ -80,20 +80,20 @@ First of all, you need to enable Image Search in the [Control Panel](https://pro
 
 Though this might sound great to have Google search on your website, there is no free lunch. Google shows ads to cover up for this service. Now say, your site is about shoes of brand X. when people search on your site for a shoe you have, Google shows an ad of your competitor brand Y and **places it above** your site results. Your visitors are going to believe that you indeed are recommending brand Y yourself. If you are going to monetize your visitors, then this will drastically reduce your income.
 
-Second, no one likes ads. In my opinion, there is nothing like a "non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
+Second, no one likes ads. In my opinion, there is nothing like a "non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn't like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
 
 ## Google search bar for your website using Expertrec
 
-Expertrec adds a Google-like search box to your website. It is priced at 9 USD per month. The biggest advantage is that it doesn’t contain ads.
+Expertrec adds a Google-like search box to your website. It is priced at 9 USD per month. The biggest advantage is that it doesn't contain ads.
 
 Before starting to make a custom search engine using Expertrec, make sure that is your website is live and not behind a login (If your website is behind a login, follow steps in this [blog](https://blog.expertrec.com/crawling-behind-login-authenticated-pages/)). Have your sitemap URL handy. Also, make sure you have code access to your website. Follow the below steps.
 
 1.  Go to [https://cse.expertrec.com/?platform=cse](https://cse.expertrec.com/?platform=cse).
 2.  Login with your Gmail id.
 3.  Enter your website URL. (enter your website URL in the format https://www.yourwebsite.som).
-4.  Enter your sitemap URL. ( if you don’t have a sitemap, you can skip this step as well).
+4.  Enter your sitemap URL. ( if you don't have a sitemap, you can skip this step as well).
 5.  Initiate a website crawl. (Now Expertrec crawlers will start crawling your website. This could take some time depending on the size and number of pages on your website).
-6.  Once the crawl completes, you can make changes to your search engine’s look and feel and also to the search engine’s ranking algorithm by using the control panel. There are more advanced features like search weights, promotions, synonyms, and more.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/UI-editor.jpg)
+6.  Once the crawl completes, you can make changes to your search engine's look and feel and also to the search engine's ranking algorithm by using the control panel. There are more advanced features like search weights, promotions, synonyms, and more.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/UI-editor.jpg)
 7.  Go to the code section and add it to your website. You can also email the code to your developer and ask them to add it to their website.
     -   the code contains two portions ( one within **<script></script>** and another piece of code **<ci-search></ci-search>**).
     -   The <script></script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
@@ -106,7 +106,7 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 
 1.  No Ads. We never show ads in our search results.
 2.  Affordable pricing plan. - We have prices starting at $9 per month.
-3.  Real-time support to help you take live your search on your website- You can be sure that search results don’t
+3.  Real-time support to help you take live your search on your website- You can be sure that search results don't
 4.  Full control over search results.
 
 Happy searching. Here is the signup link again [https://cse.expertrec.com?platform=cse](https://cse.expertrec.com/?platform=cse)

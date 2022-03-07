@@ -133,7 +133,7 @@ You can set the color of the accent for a given element by setting the element's
 
 > The **accessibility tree** contains _Glossary("accessibility"_)-related information for most HTML elements.
 
-Browsers convert markup into an internal representation called the _[DOM tree](/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)_. The DOM tree contains objects representing all the markup’s elements, attributes, and text nodes. Browsers then create an accessibility tree based on the DOM tree, which is used by platform-specific Accessibility APIs to provide a representation that can be understood by assistive technologies, such as screen readers.
+Browsers convert markup into an internal representation called the _[DOM tree](/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree)_. The DOM tree contains objects representing all the markup's elements, attributes, and text nodes. Browsers then create an accessibility tree based on the DOM tree, which is used by platform-specific Accessibility APIs to provide a representation that can be understood by assistive technologies, such as screen readers.
 
 There are four things in an accessibility tree object:
 
@@ -285,7 +285,7 @@ There are also Machine Learning algorithms such as Linear Regression, Logistic R
 
 ---
 
-> The **alignment container** is the rectangle that the [alignment subject](/en-US/docs/Glossary/Alignment_Subject) is aligned within. This is defined by the layout mode; it is usually the alignment subject’s containing block, and assumes the writing mode of the box establishing the containing block.
+> The **alignment container** is the rectangle that the [alignment subject](/en-US/docs/Glossary/Alignment_Subject) is aligned within. This is defined by the layout mode; it is usually the alignment subject's containing block, and assumes the writing mode of the box establishing the containing block.
 
 #### See also
 
@@ -2331,7 +2331,7 @@ Control flow means that when you read a script, you must not only read from star
 
 > A cookie is a small piece of information left on a visitor's computer by a website, via a web browser.
 
-Cookies are used to personalize a user’s web experience with a website. It may contain the user’s preferences or inputs when accessing that website. A user can customize their web browser to accept, reject, or delete cookies.
+Cookies are used to personalize a user's web experience with a website. It may contain the user's preferences or inputs when accessing that website. A user can customize their web browser to accept, reject, or delete cookies.
 
 Cookies can be set and modified at the server level using the `Set-Cookie` [HTTP header](/en-US/docs/Web/HTTP/Cookies), or with JavaScript using [`document.cookie`](/en-US/docs/Web/API/Document/cookie).
 
@@ -2383,7 +2383,7 @@ CORS-safelisted headers must also fulfill the following requirements in order to
 -   For _HTTPHeader("Accept-Language"_) and _HTTPHeader("Content-Language"_): can only have values consisting of `0-9`, `A-Z`, `a-z`, space or `*,-.;=`.
 -   For _HTTPHeader("Accept"_) and _HTTPHeader("Content-Type"_): can't contain a _CORS-unsafe request header byte_: `0x00-0x1F` (except for `0x09 (HT)`, which is allowed), `"():<>?@[\]{}`, and `0x7F (DEL)`.
 -   For _HTTPHeader("Content-Type"_): needs to have a MIME type of its parsed value (ignoring parameters) of either `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.
--   For any header: the value’s length can't be greater than 128.
+-   For any header: the value's length can't be greater than 128.
 
 #### See also
 
@@ -2910,7 +2910,7 @@ CSS offers several features that allow you to tweak your document's styles—or 
 
 ---
 
-> The [**CSS Object Model (CSSOM)**](/en-US/docs/Web/API/CSS_Object_Model) is a set of APIs for reading and modifying a document’s style-related (CSS) information. In other words, similar to the way in which the [DOM](/en-US/docs/Web/API/Document_Object_Model) enables a document’s structure and content to be read and modified from JavaScript, the CSSOM allows the document’s styling to be read and modified from JavaScript.
+> The [**CSS Object Model (CSSOM)**](/en-US/docs/Web/API/CSS_Object_Model) is a set of APIs for reading and modifying a document's style-related (CSS) information. In other words, similar to the way in which the [DOM](/en-US/docs/Web/API/Document_Object_Model) enables a document's structure and content to be read and modified from JavaScript, the CSSOM allows the document's styling to be read and modified from JavaScript.
 
 #### See also
 
@@ -4223,7 +4223,7 @@ _The First Contentful Paint_ time stamp is when the browser first rendered any t
 
 > **First input delay** (FID) measures the time from when a user first interacts with your site (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to respond to that interaction.
 
-It is the length of time, in milliseconds, between the first user interaction on a web page and the browser’s response to that interaction. Scrolling and zooming are not included in this metric.
+It is the length of time, in milliseconds, between the first user interaction on a web page and the browser's response to that interaction. Scrolling and zooming are not included in this metric.
 
 The time between when content is painted to the page and when all the functionality becomes responsive to human interaction often varies based on the size and complexity of the JavaScript needing to be downloaded, parsed, and executed on the main thread, and on the device speed or lack thereof (think low end mobile devices). The longer the delay, the worse the user experience. Reducing site initialization time and eliminating[ long tasks](/en-US/docs/Web/API/Long_Tasks_API) can help eliminate first input delays.
 
@@ -4681,7 +4681,7 @@ const loop = (x) => {
 };
 ```
 
-An **Immediately Invoked Function Expressions** (_glossary("IIFE"_)) is a function that is called directly after the function is loaded into the browser’s compiler. The way to identify an IIFE is by locating the extra left and right parenthesis at the end of the function’s definition.
+An **Immediately Invoked Function Expressions** (_glossary("IIFE"_)) is a function that is called directly after the function is loaded into the browser's compiler. The way to identify an IIFE is by locating the extra left and right parenthesis at the end of the function's definition.
 
 ```js
 // Declared functions can't be called immediately this way
@@ -5998,7 +5998,7 @@ The practice is often frowned upon as it can cause unwanted bandwidth usage on t
 
 ---
 
-> Houdini is a set of low level APIs that give developers the power to extend CSS, providing the ability to hook into the styling and layout process of a browser’s rendering engine. Houdini gives developers access to the [CSS Object Model](/en-US/docs/Web/API/CSS_Object_Model) ([CSSOM](/en-US/docs/Glossary/CSSOM)), enabling developers to write code the browser can parse as CSS.
+> Houdini is a set of low level APIs that give developers the power to extend CSS, providing the ability to hook into the styling and layout process of a browser's rendering engine. Houdini gives developers access to the [CSS Object Model](/en-US/docs/Web/API/CSS_Object_Model) ([CSSOM](/en-US/docs/Glossary/CSSOM)), enabling developers to write code the browser can parse as CSS.
 
 The benefit of Houdini is that developers can create CSS features without waiting for web standards specifications to define them and without waiting for every browser to fully implement the features.
 
@@ -8261,7 +8261,7 @@ On appending the "immutableString" with a string value, following events occur:
 
 ---
 
-> **MVC** (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software’s business logic and display. This "separation of concerns" provides for a better division of labor and improved maintenance. Some other design patterns are based on MVC, such as MVVM (Model-View-Viewmodel), MVP (Model-View-Presenter), and MVW (Model-View-Whatever).
+> **MVC** (Model-View-Controller) is a pattern in software design commonly used to implement user interfaces, data, and controlling logic. It emphasizes a separation between the software's business logic and display. This "separation of concerns" provides for a better division of labor and improved maintenance. Some other design patterns are based on MVC, such as MVVM (Model-View-Viewmodel), MVP (Model-View-Presenter), and MVW (Model-View-Whatever).
 
 The three parts of the MVC software-design pattern can be described as follows:
 
@@ -8450,7 +8450,7 @@ Netscape helped make the _glossary("World Wide Web","Web"_) graphical rather tha
 
 > **Network throttling** is an intentional slowing down of internet speed. In web performance, network throttling, or network condition emulation, it is used to emulate low bandwidth conditions experienced by likely a large segment of a site's target user base.
 
-It’s important not to overlook network conditions users experience on mobile. The internet speeds for developers creating web applications in a corporate office building on a powerful computer are generally very fast. As a developer, tech writer, or designer, this is likely your experience. The network speeds of a mobile user accessing that web application, possibly while traveling or in a remote area with poor data plan coverage, will likely be very slow, if they are able to get online at all. Network throttling enables a developer to emulate an experience of a user. Most browser developer tools, such as the browser inspector, provide a function to emulate different network conditions. By emulating your user's experience via network throttling, you can more readily identify and fix load time issues.
+It's important not to overlook network conditions users experience on mobile. The internet speeds for developers creating web applications in a corporate office building on a powerful computer are generally very fast. As a developer, tech writer, or designer, this is likely your experience. The network speeds of a mobile user accessing that web application, possibly while traveling or in a remote area with poor data plan coverage, will likely be very slow, if they are able to get online at all. Network throttling enables a developer to emulate an experience of a user. Most browser developer tools, such as the browser inspector, provide a function to emulate different network conditions. By emulating your user's experience via network throttling, you can more readily identify and fix load time issues.
 
 Browser developer tools generally have network throttling options, to allow you to test your app under slow network conditions. Firefox's developer tools for example have a drop-down menu available in both the [Network Monitor](/en-US/docs/Tools/Network_Monitor) and [Responsive Design Mode](/en-US/docs/Tools/Responsive_Design_Mode) containing network speed options (e.g. wifi, good 3G, 2G...)
 
@@ -8666,7 +8666,7 @@ The concept of object references becomes clear when assigning the same object to
 
 There are two types of object properties: The [_data_ property](/en-US/docs/Web/JavaScript/Data_structures#data_property) and the [_accessor_ property](/en-US/docs/Web/JavaScript/Data_structures#accessor_property).
 
-> **Note:** It’s important to recognize it’s accessor _property_ — not accessor _method_. We can give a JavaScript object class-_like_ accessors by using a function as a value — but that doesn't make the object a class.
+> **Note:** It's important to recognize it's accessor _property_ — not accessor _method_. We can give a JavaScript object class-_like_ accessors by using a function as a value — but that doesn't make the object a class.
 
 #### See also
 
@@ -10130,7 +10130,7 @@ There is limited browser and server support for QUIC today.
 
 ---
 
-> A **_raster image_** is an image file defined as a grid of pixels. They’re also referred to as _bitmaps_. Common raster image formats on the Web are [JPEG](/en-US/docs/Glossary/jpeg), [PNG](/en-US/docs/Glossary/PNG), [GIF](/en-US/docs/Glossary/gif), and [ICO](<https://en.wikipedia.org/wiki/ICO_(file_format)>).
+> A **_raster image_** is an image file defined as a grid of pixels. They're also referred to as _bitmaps_. Common raster image formats on the Web are [JPEG](/en-US/docs/Glossary/jpeg), [PNG](/en-US/docs/Glossary/PNG), [GIF](/en-US/docs/Glossary/gif), and [ICO](<https://en.wikipedia.org/wiki/ICO_(file_format)>).
 
 Raster image files usually contain one set of dimensions, but the ICO and CUR formats, used for favicons and [CSS cursor images](/en-US/docs/Web/CSS/cursor), can contain multiple sizes.
 
@@ -10167,7 +10167,7 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 
 ---
 
-> **Real User Monitoring** or RUM measures the performance of a page from real users' machines. Generally, a third party script injects a script on each page to measure and report page load data for every request made. This technique monitors an application’s actual user interactions. In RUM, the third party script collects performance metrics from the real users' browsers. RUM helps identify how an application is being used, including the geographic distribution of users and the impact of that distribution on the end user experience.
+> **Real User Monitoring** or RUM measures the performance of a page from real users' machines. Generally, a third party script injects a script on each page to measure and report page load data for every request made. This technique monitors an application's actual user interactions. In RUM, the third party script collects performance metrics from the real users' browsers. RUM helps identify how an application is being used, including the geographic distribution of users and the impact of that distribution on the end user experience.
 
 #### See also
 
@@ -12386,7 +12386,7 @@ console.log(Sym1 === Sym2); // returns "false"
 // they are different values.
 ```
 
-> **Note:** If you are familiar with Ruby (or another language) that also has a feature called _"symbols"_, please don’t be misled. JavaScript symbols are different.
+> **Note:** If you are familiar with Ruby (or another language) that also has a feature called _"symbols"_, please don't be misled. JavaScript symbols are different.
 
 _Symbol_ type is a new feature in ECMAScript 2015. There is no ECMAScript 5 equivalent for Symbol.
 
@@ -12394,7 +12394,7 @@ In some programming languages, the symbol data type is referred to as an "atom."
 
 ### Symbols don't "Auto-Convert" to strings
 
-Most values in JavaScript support implicit conversion to a string. For instance, we can `alert` almost any value, and it will work. Symbols are special. They don’t auto-convert.
+Most values in JavaScript support implicit conversion to a string. For instance, we can `alert` almost any value, and it will work. Symbols are special. They don't auto-convert.
 
 For example:
 
@@ -12403,7 +12403,7 @@ let Sym = Symbol('Sym');
 alert(Sym); // TypeError: Cannot convert a Symbol value to a string
 ```
 
-That’s a "language guard" against messing up, because strings and symbols are fundamentally different, and should not occasionally convert one into another.
+That's a "language guard" against messing up, because strings and symbols are fundamentally different, and should not occasionally convert one into another.
 
 If you really want to show a symbol, we need to call `.toString()` on it.
 
@@ -12733,11 +12733,11 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
 
 ---
 
-> A **Texel** is a single-pixel within a texture map, which is an image that gets used (in whole or in part) as the image presented on a polygon's surface within a 3D rendered image. It is not to be confused with pixel which is the unit of screen space. This is one of the main differences between Texel’s and pixels, pixels are image data. Texel components are made up of subjective data, therefore they can be an image as well as a depth map.
+> A **Texel** is a single-pixel within a texture map, which is an image that gets used (in whole or in part) as the image presented on a polygon's surface within a 3D rendered image. It is not to be confused with pixel which is the unit of screen space. This is one of the main differences between Texel's and pixels, pixels are image data. Texel components are made up of subjective data, therefore they can be an image as well as a depth map.
 
-The process of mapping the appropriate Texel’s to their corresponding points on a polygon is called **texture mapping**, which is a stage of the process of rendering a 3D image for display. Texture mapping is typically done prior to lighting the scene; however, in WebGL, lighting is performed as part of the texture mapping process.
+The process of mapping the appropriate Texel's to their corresponding points on a polygon is called **texture mapping**, which is a stage of the process of rendering a 3D image for display. Texture mapping is typically done prior to lighting the scene; however, in WebGL, lighting is performed as part of the texture mapping process.
 
-Textures are characterised by collections of Texel’s, as how images are characterised by collections of pixels. When texture mapping occurs the renderer maps Texel’s to the appropriate pixels.
+Textures are characterised by collections of Texel's, as how images are characterised by collections of pixels. When texture mapping occurs the renderer maps Texel's to the appropriate pixels.
 
 #### See also
 
