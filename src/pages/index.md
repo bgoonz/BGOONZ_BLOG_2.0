@@ -45,7 +45,7 @@ sections:
                 https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             image: images/smiling-maple.png
           - content: |
-                <div id="search"></div> <div id="search" />
+
             actions:
                 - label: Learn More
                   url: /docs/tools
@@ -216,7 +216,7 @@ sections:
       image_alt: showcase
       image_position: left
       content: >-
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   
+          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"
           src="https://random-static-html-deploys.netlify.app/"
           class="block-content" width="100%  width="1200px!important"
           height="1000px!important">
@@ -230,19 +230,19 @@ sections:
       content: >
           # ***What I've been working on lately:***
           ## Web Dev Utilitiy Tools
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%
           width="1200px!important"
           height="1000px!important"
             src="https://web-dev-utility-tools-bgoonz.netlify.app/"
            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%
           width="1200px!important"
           height="1000px!important"
             src="https://cheatsheets-42.netlify.app/"
            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%
           width="1200px!important"
           height="1000px!important"
             src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
@@ -255,7 +255,7 @@ sections:
       image_position: left
       content: >
           ### To⬆️ol Showcase
-          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+          <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%
           width="1200px!important"
           height="1000px!important"
             src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
