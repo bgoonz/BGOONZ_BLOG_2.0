@@ -15,6 +15,10 @@ seo:
       value: JavaScript Quick Tips
       keyName: property
       relativeUrl: false
+    - name: 'og:description'
+      value: JavaScript built-in methods and mdn style examples
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
