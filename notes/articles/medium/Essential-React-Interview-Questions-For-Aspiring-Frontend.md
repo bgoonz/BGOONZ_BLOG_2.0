@@ -83,7 +83,7 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **2. Create virtual DOM nodes using JSX** To create a React virtual DOM node using JSX, define HTML syntax in a JavaScript file.
 
-> Here, the JavaScript hello variable is set to a React virtual DOM h1 element with the text "Hello World!”.
+> Here, the JavaScript hello variable is set to a React virtual DOM h1 element with the text "Hello World!".
 
 > You can also nest virtual DOM nodes in each other just like how you do it in HTML with the real DOM.
 

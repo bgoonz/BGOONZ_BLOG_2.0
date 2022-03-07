@@ -1757,7 +1757,7 @@ The _itertools_ module is a collection of tools intended to be fast and use memo
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
-> The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+> The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an "iterator algebra" making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
 The _itertools_ module comes in the standard library and must be imported.
 
@@ -2935,7 +2935,7 @@ The ? character flags the group that precedes it as an optional part of the patt
 
 ### Matching Zero or More with the Star
 
-The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The \* (called the star or asterisk) means "match zero or more"—the group that precedes the star can occur any number of times in the text.
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)*man')
@@ -2956,7 +2956,7 @@ The \* (called the star or asterisk) means “match zero or more”—the group 
 
 ### Matching One or More with the Plus
 
-While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+While \* means "match zero or more," the + (or plus) means "match one or more". The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)+man')
@@ -3240,7 +3240,7 @@ A**** told C**** that E**** knew B**** was a double agent.'
 
 ### Managing Complex Regexes
 
-To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
+To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, "verbose mode" can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
 
 Now instead of a hard-to-read regular expression like this:
 
@@ -3418,7 +3418,7 @@ There are two ways to specify a file path.
 -   An absolute path, which always begins with the root folder
 -   A relative path, which is relative to the program's current working directory
 
-There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
+There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot") for a folder name is shorthand for "this directory." Two periods ("dot-dot") means "the parent folder."
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -4108,7 +4108,7 @@ Traceback (most recent call last):
 AssertionError: The pod bay doors need to be "open".
 ```
 
-In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
+In plain English, an assert statement says, "I assert that this condition holds true, and if not, there is a bug somewhere in the program." Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
 
 Disabling Assertions
 
@@ -4300,9 +4300,9 @@ else:
 
 The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
-1. In a function declaration, `*` means “pack all remaining positional arguments into a tuple named `<name>`”, while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, `*` means "pack all remaining positional arguments into a tuple named `<name>`", while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, `*` means “unpack tuple or list named `<name>` to positional arguments at this position”, while `**` is the same for keyword arguments.
+2. In a function call, `*` means "unpack tuple or list named `<name>` to positional arguments at this position", while `**` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -4478,7 +4478,7 @@ For example we are developing script which is designed to be used as module, we 
 1. Every Python module has it's `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
-4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
+4. if `__name__ == "main":` is used to execute some code only if the file was run directly, and not imported.
 
 [_Return to the Top_](#python-cheatsheet)
 

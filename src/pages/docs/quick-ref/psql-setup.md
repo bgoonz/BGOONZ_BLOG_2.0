@@ -37,7 +37,7 @@ In addition, psql provides a number of meta-commands and various shell-like feat
 
 The pgAdmin package is a free and open-source <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" class="markup--anchor markup--p-anchor" title="Graphical user interface">graphical user interface</a> (GUI) administration tool for PostgreSQL.
 
-When you read “installation”, that means the actual OS that's running on your machine. So, you have a Windows installation, Windows 10, that's running when you boot your computer. Then, when you start the Ubuntu installation, it's as if there's a completely separate computer running inside your computer. It's like having two completely different laptops.
+When you read "installation", that means the actual OS that's running on your machine. So, you have a Windows installation, Windows 10, that's running when you boot your computer. Then, when you start the Ubuntu installation, it's as if there's a completely separate computer running inside your computer. It's like having two completely different laptops.
 
 ### Other Noteworthy Distinctions:
 
@@ -78,7 +78,7 @@ If prompted for your password, type it.
 
     echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee  /etc/apt/sources.list.d/pgdg.list
 
-The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a time.
+The last line of output of those two commands running should read "OK". If it does not, try copying and pasting them one at a time.
 
 Now that you've registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the `apt` registry. You should do this before you install _any_ software on Ubuntu.
 
@@ -88,7 +88,7 @@ Once that's finished running, the new entries for PostgreSQL 12 should be in the
 
     sudo apt install postgresql-client-12 postgresql-common
 
-If it asks you if you want to install them, please tell it “Y”.
+If it asks you if you want to install them, please tell it "Y".
 
 Test that it installed by typing `psql --version`. You should see it print out information about the version of the installed tools. If it tells you that it can't find the command, try these instructions over.
 
@@ -121,7 +121,7 @@ Copy and paste the following into your Ubuntu shell. Think of a password that yo
 
     psql -U postgres -c "CREATE USER `whoami` WITH PASSWORD 'password' SUPERUSER"
 
-It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see “CREATE ROLE”.
+It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see "CREATE ROLE".
 
 Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and create a new file.
 
@@ -145,15 +145,15 @@ Now, try connecting to PostreSQL by typing `psql postgres`. Because you added th
 
 ### Installing Postbird
 
-Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it's the only file in the list that ends with “.exe”.
+Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it's the only file in the list that ends with ".exe".
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png" class="graf-image" /></figure>After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you don't want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command line.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png" class="graf-image" /></figure>You should get used to seeing this because many open-source applications aren't signed with the Microsoft Store for monetary and philosophical reasons.
 
-Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More info” and the “Run anyway” button.
+Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads "More info" and the "Run anyway" button.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" /></figure>When it's done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" /></figure>When it's done installing, it will launch itself. Test it out by typing the "postgres" into the "Username" field and the password from your installation in the "Password" field. Click the Connect button. It should properly connect to the running
 
 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.
 
