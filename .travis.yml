@@ -3,7 +3,5 @@ dist: xenial
 node_js:
   - "14"
 script:
- 
-  - cd ../express4 && npm install
   - cd ../../..
   - npm test
