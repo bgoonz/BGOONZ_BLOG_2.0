@@ -110,6 +110,10 @@ The following `for` cycle calculates the offset position of a node in the `final
     // left: 0px;
     // top: 153px;"
 
+```
+
+
+
 **Note:** This is one of the few cases in JavaScript where **the semicolon is mandatory**. Indeed, without the semicolon the line that follows the cycle declaration will be considered a statement.
 
 
