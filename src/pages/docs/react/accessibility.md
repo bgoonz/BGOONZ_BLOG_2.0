@@ -1,5 +1,5 @@
 ---
-title: AJAX and APIs
+title: Accessibility in React
 weight: 0
 excerpt: AJAX and APIs
 seo:
