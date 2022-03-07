@@ -1443,7 +1443,7 @@ This is not the best way to do things, and probably not to be used in any produc
 
 **Note:** If you're writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
-**Note:** "Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn't have [`Array`](../global_objects/array)'s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
+**Note:** "Array-like" means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn't have [`Array`](../global_objects/array)'s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
 
 The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function's arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry's index at `0`.
 
@@ -16643,7 +16643,7 @@ Unprivileged code has no access to Component.utils and might just be able catch 
 
 ## See also
 
--   [What does "can't access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
+-   [What does "can't access dead object" mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
 -   [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)
 -   [Components.utils](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils)
 -   [Zombie Compartments](https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments)
@@ -16738,7 +16738,7 @@ Throws an [`URIError`](urierror) ("malformed URI sequence") exception when `enco
 
 ## Description
 
-Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character "`#`” is not decoded from escape sequences.
+Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character "`#`" is not decoded from escape sequences.
 
 ## Examples
 
@@ -17569,13 +17569,13 @@ When the property specified doesn't exist in the object, `Object.defineProperty(
 
 ### Modifying a property
 
-When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object's current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be "non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
+When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object's current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be "non-configurable". It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
 
 A [`TypeError`](../typeerror) is thrown when attempts are made to change non-configurable property attributes (except `value` and `writable`, if permitted) unless the current and new values are the same.
 
 #### Writable attribute
 
-When the `writable` property attribute is set to `false`, the property is said to be "non-writable”. It cannot be reassigned.
+When the `writable` property attribute is set to `false`, the property is said to be "non-writable". It cannot be reassigned.
 
     var o = {}; // Creates a new object
 
@@ -29687,7 +29687,7 @@ An additional optimization technique to lazify or delay the calculation of a pro
 
 **Note:** This means that you shouldn't write a lazy getter for a property whose value you expect to change, because if the getter is lazy then it will not recalculate the value.
 
-Note that getters are not "lazy” or "memoized” by nature; you must implement this technique if you desire this behavior.
+Note that getters are not "lazy" or "memoized" by nature; you must implement this technique if you desire this behavior.
 
 In the following example, the object has a getter as its own property. On getting the property, the property is removed from the object and re-added, but implicitly as a data property this time. Finally, the value gets returned.
 
@@ -34258,8 +34258,8 @@ There is an invalid or unexpected token that doesn't belong at this position in 
 
 Some characters look similar, but will cause the parser to fail interpreting your code. Famous examples of this are quotes, the minus or semicolon ([greek questionmark (U+37e)](https://en.wikipedia.org/wiki/Question_mark#Greek_question_mark) looks same).
 
-    "This looks like a string”;  // SyntaxError: illegal character
-                                 // " and ” are not " but look like this
+    "This looks like a string";  // SyntaxError: illegal character
+                                 // " and " are not " but look like this
 
     42 - 13;                     // SyntaxError: illegal character
                                  // - is not - but looks like this
@@ -38428,7 +38428,7 @@ The value to be checked.
 
 If the value is an [`Array`](../array), `true` is returned; otherwise, `false` is.
 
-See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
+See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array"](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
 
 ## Examples
 
@@ -48955,7 +48955,7 @@ no
 
 ## Description
 
-`Number.MIN_VALUE` is the smallest positive number (not the most negative number) that can be represented within float precision — in other words, the number closest to 0. That's approximately `5e-324` (`5 × 10-324`). The ECMAScript spec doesn't define a precise value that implementations are required to support — instead the spec says, _"must be the smallest non-zero positive value that can actually be represented by the implementation”_. But in practice, its precise value in browsers and in Node.js is `2-1074`.
+`Number.MIN_VALUE` is the smallest positive number (not the most negative number) that can be represented within float precision — in other words, the number closest to 0. That's approximately `5e-324` (`5 × 10-324`). The ECMAScript spec doesn't define a precise value that implementations are required to support — instead the spec says, _"must be the smallest non-zero positive value that can actually be represented by the implementation"_. But in practice, its precise value in browsers and in Node.js is `2-1074`.
 
 Because `MIN_VALUE` is a static property of [`Number`](../number), you always use it as `Number.MIN_VALUE`, rather than as a property of a [`Number`](../number) object you created.
 
@@ -54040,7 +54040,7 @@ When modifying prototypes with hooks, pass `this` and the arguments (the call st
       }
     }
 
-Since JavaScript doesn't exactly have sub-class objects, prototype is a useful workaround to make a "base class” object of certain functions that act as objects. For example:
+Since JavaScript doesn't exactly have sub-class objects, prototype is a useful workaround to make a "base class" object of certain functions that act as objects. For example:
 
     var Person = function(name) {
       this.name = name;
@@ -55746,7 +55746,7 @@ Short-circuiting is jargon for conditional evaluation. For example, in the expre
 
 The following table lists operators in order from highest precedence (21) to lowest precedence (1).
 
-Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), "[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
+Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), "[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax."
 
 Precedence
 
@@ -58644,7 +58644,7 @@ As the `Promise.prototype.then()` and `Promise.prototype.catch()` methods return
 
 **Note:** Several other languages have mechanisms for lazy evaluation and deferring a computation, which they also call "promises", e.g. Scheme. Promises in JavaScript represent processes that are already happening, which can be chained with callback functions. If you are looking to lazily evaluate an expression, consider the [arrow function](../functions/arrow_functions) with no arguments: `f = () => expression` to create the lazily-evaluated expression, and `f()` to evaluate.
 
-**Note:** A promise is said to be _settled_ if it is either fulfilled or rejected, but not pending. You will also hear the term _resolved_ used with promises — this means that the promise is settled or "locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
+**Note:** A promise is said to be _settled_ if it is either fulfilled or rejected, but not pending. You will also hear the term _resolved_ used with promises — this means that the promise is settled or "locked-in" to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
 
 ### Chained Promises
 
@@ -73386,7 +73386,7 @@ The pattern describing where each split should occur. The `separator` can be a s
 -   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
 -   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters".
 
-**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
+**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by _user-perceived characters_ ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?" on StackOverflow](https://stackoverflow.com/a/34717402).
 
 `limit` <span class="badge inline optional">Optional</span>  
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
@@ -81211,7 +81211,7 @@ This means that a tagged template like the following is problematic, because, pe
 
 Tagged templates should allow the embedding of languages (for example [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language), or [LaTeX](https://en.wikipedia.org/wiki/LaTeX)), where other escapes sequences are common. The ECMAScript proposal [Template Literal Revision](https://tc39.github.io/proposal-template-literal-revision/) (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.
 
-However, illegal escape sequences must still be represented in the "cooked” representation. They will show up as [`undefined`](global_objects/undefined) element in the "cooked” array:
+However, illegal escape sequences must still be represented in the "cooked" representation. They will show up as [`undefined`](global_objects/undefined) element in the "cooked" array:
 
     function latex(str) {
       return { "cooked": str[0], "raw": str.raw[0] }
@@ -94148,4 +94148,3 @@ No
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield</a>
-

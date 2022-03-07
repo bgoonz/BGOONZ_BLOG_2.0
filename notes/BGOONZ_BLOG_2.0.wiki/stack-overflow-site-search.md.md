@@ -151,7 +151,7 @@ In this guide, we’ll learn how to create the best search bar for your website.
 
 Before we cover best practices, it’s important to consider whether your website would benefit from an internal site search feature in the first place.
 
-While there’s no hard “yes” or “no” for including a search feature, larger sites generally will benefit from search more than smaller ones. This is because users are more likely to rely on search when faced with extensive click navigation.
+While there’s no hard "yes” or "no” for including a search feature, larger sites generally will benefit from search more than smaller ones. This is because users are more likely to rely on search when faced with extensive click navigation.
 
 Also, if users land on your homepage with a specific piece of content, category, or product in mind, they might prefer to type it in, rather than rely on [primary and secondary click navigation](https://blog.hubspot.com/website/secondary-navigation).
 
@@ -188,9 +188,9 @@ You might occasionally see variations on this presentation, but the majority app
 
 The search box should be just that, a box. You can take some design liberties like adding background contrast, color, or rounding the corners, but the text field should be a text input element with a height of one line of text. Users will easily recognize this.
 
-As for the search button, strongly consider including one. It serves as a visual cue to submit a query, so users may be confused without it. Place this button to the right of the input field, as this is a convention and is logical for those who read left-to-right. Write concise [button text](https://blog.hubspot.com/website/button-design) as well — the word “Search” or a magnifying glass icon will do.
+As for the search button, strongly consider including one. It serves as a visual cue to submit a query, so users may be confused without it. Place this button to the right of the input field, as this is a convention and is logical for those who read left-to-right. Write concise [button text](https://blog.hubspot.com/website/button-design) as well — the word "Search” or a magnifying glass icon will do.
 
-Visitors should also be able to launch their search by either clicking the search button or pressing the “Enter”/“Return”/”Go” key when the search box is in focus (i.e., the text cursor is active inside it).
+Visitors should also be able to launch their search by either clicking the search button or pressing the "Enter”/"Return”/”Go” key when the search box is in focus (i.e., the text cursor is active inside it).
 
 A common alternative iteration on the classic search bar is a magnifying glass icon that, when clicked, expands to a full search bar and button. Here’s an example from the [World Wildlife Fund](https://www.worldwildlife.org/):
 
@@ -250,7 +250,7 @@ A good place to start is finding or estimating the length of the average search 
 
 ### 5\. Consider adding placeholder text.
 
-Placeholder text appears in the search box when the box is not in focus. It is meant to prompt action from the user. A placeholder can be a helpful cue for users by either listing a sample queries like “Try hats, jeans, bags…”, or by simply stating “Search…”.
+Placeholder text appears in the search box when the box is not in focus. It is meant to prompt action from the user. A placeholder can be a helpful cue for users by either listing a sample queries like "Try hats, jeans, bags…”, or by simply stating "Search…”.
 
 If you want to add a placeholder, the text should appear a lighter shade to distinguish it from a typed query, and should disappear when the user focuses on the box or starts typing.
 
@@ -266,13 +266,13 @@ Here’s an example of autocomplete on [Patagonia](https://www.patagonia.com/hom
 
 [Image Source](https://www.patagonia.com/home/)
 
-Allow users to click the suggestion or, to make your interface more accessible, let them move up and down the suggestion list with the arrow keys and select an option with the “Enter”/ “Return” key.
+Allow users to click the suggestion or, to make your interface more accessible, let them move up and down the suggestion list with the arrow keys and select an option with the "Enter”/ "Return” key.
 
 ### 7\. Hide advanced options.
 
 Unless you expect your user base to be generally more technology-savvy than the average internet user, it’s almost always best to hide advanced search options like categories, filters, and exact matching. This keeps the [UI](https://blog.hubspot.com/marketing/what-is-ui) clean and accessible.
 
-If you must include advanced options, consider placing them in a hidden menu that appears when the search bar is selected, or provide a nearby link to an “Advanced search” page.
+If you must include advanced options, consider placing them in a hidden menu that appears when the search bar is selected, or provide a nearby link to an "Advanced search” page.
 
 ### 8\. Design for mobile.
 

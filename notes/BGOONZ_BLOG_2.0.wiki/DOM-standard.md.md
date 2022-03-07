@@ -8324,7 +8324,7 @@ The constructor steps are to set [this](https://webidl.spec.whatwg.org/#this)’
         -   `[Text](https://dom.spec.whatwg.org/#text)`: awesome
     -   `[Text](https://dom.spec.whatwg.org/#text)`: !
 
-In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence “syndata is awes”. Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
+In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence "syndata is awes”. Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
 
 ```
 var range = new Range(),
