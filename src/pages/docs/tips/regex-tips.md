@@ -104,7 +104,7 @@ str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
 
 Since nothing is returned, the original string remains unchanged. Although if we wanted to extract _and_ remove the comments, we could simply return and assign an empty-string:
 
-```
+```js
 let comments = [];
 str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
   function(match)
