@@ -1,4 +1,4 @@
-## What are data structures
+# What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
 
@@ -20,7 +20,7 @@ JavaScript has primitive and non-primitive data structures. Primitive data struc
 
 Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.
 
-## 1\. Array
+## 1. Array
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
@@ -42,7 +42,7 @@ Disadvantages
 -   Basic spreadsheets
 -   Within complex structures such as hash tables
 
-## 2\. Queues
+## 2. Queues
 
 Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.
 
@@ -68,7 +68,7 @@ Disadvantages
 -   Convenient way to store order-sensitive data such as stored voicemails
 -   Ensures the oldest data is processed first
 
-## 3\. Linked List
+## 3. Linked List
 
 Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.
 
@@ -91,7 +91,7 @@ Disadvantages
 
 -   Best used when data must be added and removed in quick succession from unknown locations
 
-## 4\. Trees
+## 4. Trees
 
 Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.
 
@@ -132,7 +132,7 @@ Disadvantages
 
 > _Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter._
 
-## 5\. Graphs
+## 5. Graphs
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
@@ -161,7 +161,7 @@ Disadvantages
 -   Network representations
 -   Modeling social networks, such as Facebook.
 
-## 6\. Hash Tables (Map)
+## 6. Hash Tables (Map)
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
@@ -186,7 +186,19 @@ Disadvantages
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 
+
+
+
 ## Data structure interview questions
+
+
+<details>
+
+<summary> 🔥See Interview Questions </summary>   
+
+
+
+
 
 For many developers and programmers, data structures are most important for [cracking Javascript coding interviews](https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained). Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.
 
@@ -212,63 +224,32 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 #### Solution #1: Doing it "by hand"
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-function removeEven(arr) {
-
-var odds = []
-
-for (let number of arr) {
-
-if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
-
-odds.push(number) //If it isn't even append it to the empty list
-
+```js
+function removeEven( arr ) {
+  const odds = [];
+  for ( let number of arr ) {
+    if ( number % 2 != 0 )
+      // Check if the item in the list is NOT even ('%' is the modulus symbol!)
+      odds.push( number ); //If it isn't even append it to the empty list
+  }
+  return odds; // Return the new list
 }
+let example = removeEven( [ 3, 2, 41, 3, 34 ] );
+console.log( 'EXAMPLE:', example ); //EXAMPLE: [ 3, 41, 3 ]
 
-return odds // Return the new list
-
-}
-
-console.log(removeEven([3, 2, 41, 3, 34]))
-
-Run
+```
 
 This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
 
 #### Solution #2: Using filter() and lambda function
 
-1
-
-2
-
-3
-
-4
-
+```js
 function removeEven(arr) {
-
-return arr.filter((v => (v % 2) != 0))
-
+    return arr.filter((v) => v % 2 != 0);
 }
 
-console.log(removeEven([3,2,41,3,34]))
+console.log(removeEven([3, 2, 41, 3, 34]));
+```
 
 This solution also begins with the first element and checks if it is even. If it is even, it filters out this element. If not, skips to the next element, repeating this process until it reaches the end of the array.
 
@@ -280,13 +261,13 @@ Problem statement: Implement the `isBalanced()` function to take a string contai
 
 Input: A string consisting solely of `(`, `)`, `{`, `}`, `[` and `]`
 
-```
-exp = "{[({})]}"
+```js
+exp = '{[({})]}';
 ```
 
 Output: Returns `False` if the expression doesn't have balanced parentheses. If it does, the function returns `True`.
 
-```
+```text
 True
 ```
 
@@ -296,121 +277,39 @@ index.js
 
 Stack.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
+```js
 
 "use strict";
-
 module.exports = class Stack {
+    constructor() {
+      this.items = [];
+      this.top = null;
+    }
+    getTop() {
+      if ( this.items.length == 0 )
+        return null;
+      return this.top;
+    }
+    isEmpty() {
+      return this.items.length == 0;
+    }
+    size() {
+      return this.items.length;
+    }
+    push( element ) {
+      this.items.push( element );
+      this.top = element;
+    }
+    pop() {
+        if ( this.items.length != 0 ) {
+          if ( this.items.length == 1 ) {
+            this.top = null;
+            return this.items.pop();
 
-constructor() {
 
-this.items = [];
+```
 
-this.top = null;
-
-}
-
-getTop() {
-
-if (this.items.length == 0)
-
-return null;
-
-return this.top;
-
-}
-
-isEmpty() {
-
-return this.items.length == 0;
-
-}
-
-size() {
-
-return this.items.length;
-
-}
-
-push(element) {
-
-this.items.push(element);
-
-this.top = element;
-
-}
-
-pop() {
-
-if (this.items.length != 0) {
-
-if (this.items.length == 1) {
-
-this.top = null;
-
-return this.items.pop();
-
-Run
+---
 
 This process will iterate over the string one character at a time. We can determine that the string is unbalanced based on two factors:
 
@@ -425,14 +324,14 @@ Problem statement: Implement a function `findBin(n)`, which will generate binary
 
 Input: A positive integer n
 
-```
-n = 3
+```js
+n = 3;
 ```
 
 Output: Returns binary numbers in the form of strings from `1` up to `n`
 
-```
-result = ["1","10","11"]
+```js
+result = ['1', '10', '11'];
 ```
 
 The easiest way to solve this problem is using a queue to generate new numbers from previous numbers. Let's break that down.
@@ -441,113 +340,35 @@ index.js
 
 Queue.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
+```js
 
 "use strict";
-
 module.exports = class Queue {
+    constructor () {
+        this.items = [];
+        this.front = null;
+        this.back = null;
+    }
+    isEmpty() {
+        return this.items.length == 0;
+    }
+    getFront() {
+        if ( this.items.length != 0 ) {
+            return this.items[ 0 ];
+        } else
+            return null;
+    }
+    size() {
+        return this.items.length;
+    }
+    enqueue( element ) {
+        this.items.push( element );
+    }
 
-constructor() {
 
-this.items = [];
+```
 
-this.front = null;
-
-this.back = null;
-
-}
-
-isEmpty() {
-
-return this.items.length == 0;
-
-}
-
-getFront() {
-
-if (this.items.length != 0) {
-
-return this.items[0];
-
-} else
-
-return null;
-
-}
-
-size() {
-
-return this.items.length;
-
-}
-
-enqueue(element) {
-
-this.items.push(element);
-
-}
-
-Run
+---
 
 The key is to generate consecutive binary numbers by appending 0 and 1 to previous binary numbers. To clarify,
 
@@ -570,13 +391,13 @@ Problem statement: Write the `reverse` function to take a singly linked list and
 
 Input: a singly linked list
 
-```
+```js
 LinkedList = 0->1->2->3-4
 ```
 
 Output: a reverse linked list
 
-```
+```js
 LinkedList = 4->3->2->1->0
 ```
 
@@ -588,123 +409,41 @@ LinkedList.js
 
 Node.js
 
-1
+```js
 
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
 
 "use strict";
-
-const Node = require('./Node.js');
-
+const Node = require( './Node.js' );
 module.exports = class LinkedList {
+    constructor() {
+      this.head = null;
+    }
+    //Insertion At Head
+    insertAtHead( newData ) {
+      let tempNode = new Node( newData );
+      tempNode.nextElement = this.head;
+      this.head = tempNode;
+      return this; //returning the updated list
+    }
+    isEmpty() {
+      return ( this.head == null );
+    }
+    //function to print the linked list
+    printList() {
+        if ( this.isEmpty() ) {
+          console.log( "Empty List" );
+          return false;
+        } else {
+          let temp = this.head;
+          while ( temp != null ) {
+            process.stdout.write( String( temp.data ) );
+            process.stdout.write( " -> " );
+            temp = temp.nextElement;
 
-constructor() {
 
-this.head = null;
+```
 
-}
-
-//Insertion At Head
-
-insertAtHead(newData) {
-
-let tempNode = new Node(newData);
-
-tempNode.nextElement = this.head;
-
-this.head = tempNode;
-
-return this; //returning the updated list
-
-}
-
-isEmpty() {
-
-return (this.head == null);
-
-}
-
-//function to print the linked list
-
-printList() {
-
-if (this.isEmpty()) {
-
-console.log("Empty List");
-
-return false;
-
-} else {
-
-let temp = this.head;
-
-while (temp != null) {
-
-process.stdout.write(String(temp.data));
-
-process.stdout.write(" -> ");
-
-temp = temp.nextElement;
-
-Run
+---
 
 We use a loop to iterate through the input list. For a `current` node, its link with the `previous` node is reversed. then, `next` stores the next node in the list. Let's break that down by line.
 
@@ -722,13 +461,13 @@ Problem statement: Use the `findMin(root)` function to find the minimum value in
 
 Input: a root node for a binary search tree
 
-```
+```js
 bst = {    6 -> 4,9    4 -> 2,5    9 -> 8,12    12 -> 10,14}where parent -> leftChild,rightChild
 ```
 
 Output: the smallest integer value from that binary search tree
 
-```
+```text
 2
 ```
 
@@ -744,123 +483,43 @@ BinarySearchTree.js
 
 Node.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
+```js
 
 "use strict";
-
-const Node = require('./Node.js');
-
+const Node = require( './Node.js' );
 module.exports = class BinarySearchTree {
-
-constructor(rootValue) {
-
-this.root = new Node(rootValue);
-
+    constructor ( rootValue ) {
+        this.root = new Node( rootValue );
+    }
+    insert( currentNode, newValue ) {
+        if ( currentNode === null ) {
+            currentNode = new Node( newValue );
+        } else if ( newValue < currentNode.val ) {
+            currentNode.leftChild = this.insert( currentNode.leftChild, newValue );
+        } else {
+            currentNode.rightChild = this.insert( currentNode.rightChild, newValue );
+        }
+        return currentNode;
+    }
+    insertBST( newValue ) {
+        if ( this.root == null ) {
+            this.root = new Node( newValue );
+            return;
+        }
+        this.insert( this.root, newValue );
+    }
+    preOrderPrint( currentNode ) {
+        if ( currentNode !== null ) {
+            console.log( currentNode.val );
+            this.preOrderPrint( currentNode.leftChild );
+        }
+    }
 }
 
-insert(currentNode, newValue) {
 
-if (currentNode === null) {
+```
 
-currentNode = new Node(newValue);
-
-} else if (newValue < currentNode.val) {
-
-currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
-
-} else {
-
-currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
-
-}
-
-return currentNode;
-
-}
-
-insertBST(newValue) {
-
-if(this.root==null){
-
-this.root=new Node(newValue);
-
-return;
-
-}
-
-this.insert(this.root, newValue);
-
-}
-
-preOrderPrint(currentNode) {
-
-if (currentNode !== null) {
-
-console.log(currentNode.val);
-
-this.preOrderPrint(currentNode.leftChild);
-
-Run
+---
 
 ### Graph: Remove Edge
 
@@ -876,11 +535,11 @@ Input: A graph, a source, and a destination
 
 Output: A graph with the edge between the source and the destination removed.
 
-```
-removeEdge(graph, 2, 3)
+```js
+removeEdge(graph, 2, 3);
 ```
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA5MCIgaGVpZ2h0PSIyOTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
+
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6038590984290304)
 
@@ -896,115 +555,36 @@ LinkedList.js
 
 Node.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-"use strict";
-
-const LinkedList = require('./LinkedList.js');
-
-const Node = require('./Node.js');
-
+```js
+const LinkedList = require( './LinkedList.js' );
+const Node = require( './Node.js' );
 module.exports = class Graph {
-
-constructor(vertices) {
-
-this.vertices = vertices;
-
-this.list = [];
-
-var it;
-
-for (it = 0; it < vertices; it++) {
-
-let temp = new LinkedList();
-
-this.list.push(temp);
-
+  constructor( vertices ) {
+    this.vertices = vertices;
+    this.list = [];
+    let it;
+    for ( it = 0; it < vertices; it++ ) {
+      let temp = new LinkedList();
+      this.list.push( temp );
+    }
+  }
+  addEdge( source, destination ) {
+    if ( source < this.vertices && destination < this.vertices )
+      this.list[ source ].insertAtHead( destination );
+    return this;
+  }
+  printGraph() {
+    console.log( ">>Adjacency List of Directed Graph<<" );
+    let i;
+    for ( i = 0; i < this.list.length; i++ ) {
+      process.stdout.write( `|${String( i )}| => ` );
+    }
+  }
 }
 
-}
+```
 
-addEdge(source, destination) {
-
-if (source < this.vertices && destination < this.vertices)
-
-this.list[source].insertAtHead(destination);
-
-return this;
-
-}
-
-printGraph() {
-
-console.log(">>Adjacency List of Directed Graph<<");
-
-var i;
-
-for (i = 0; i < this.list.length; i++) {
-
-process.stdout.write("|" + String(i) + "| => ");
-
-Run
+---
 
 Since our vertices are stored in an array, we can access the `source` linked list. We then call the `delete` function for linked lists. The time complexity for this solution is O(E) since we may have to traverse E edges.
 
@@ -1014,120 +594,57 @@ Problem statement: Implement the function `convertMax(maxHeap)` to convert a bin
 
 Input: a Max-Heap
 
-```
-maxHeap = [9,4,7,1,-2,6,5]
+```js
+maxHeap = [9, 4, 7, 1, -2, 6, 5];
 ```
 
 Output: returns the converted array
 
-```
-result = [-2,1,5,9,4,6,7]
+```js
+result = [-2, 1, 5, 9, 4, 6, 7];
 ```
 
 To solve this problem, we must min heapify all parent nodes. Take a look.
 
-1
+```js
 
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-function minHeapify(heap, index) {
-
-var left = index \* 2;
-
-var right = (index \* 2) + 1;
-
-var smallest = index;
-
-if ((heap.length > left) && (heap[smallest] > heap[left])) {
-
-smallest = left
-
+function minHeapify( heap, index ) {
+  const left = index * 2;
+  const right = ( index * 2 ) + 1;
+  let smallest = index;
+  if ( ( heap.length > left ) && ( heap[ smallest ] > heap[ left ] ) ) {
+    smallest = left
+  }
+  if ( ( heap.length > right ) && ( heap[ smallest ] > heap[ right ] ) )
+    smallest = right;
+  if ( smallest != index ) {
+    const tmp = heap[ smallest ];
+    heap[ smallest ] = heap[ index ]
+    heap[ index ] = tmp
+    minHeapify( heap, smallest )
+  }
+  return heap;
 }
 
-if ((heap.length > right) && (heap[smallest] > heap[right]))
+```
 
-smallest = right
+---
 
-if (smallest != index) {
-
-var tmp = heap[smallest]
-
-heap[smallest] = heap[index]
-
-heap[index] = tmp
-
-minHeapify(heap, smallest)
-
-}
-
-return heap;
-
-}
-
+```js
 function convertMax(maxHeap) {
+    for (var i = Math.floor(maxHeap.length / 2); i > -1; i--) maxHeap = minHeapify(maxHeap, i);
 
-for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--)
-
-maxHeap = minHeapify(maxHeap, i)
-
-return maxHeap
-
+    return maxHeap;
 }
 
-var maxHeap = [9,4,7,1,-2,6,5]
+var maxHeap = [9, 4, 7, 1, -2, 6, 5];
 
-console.log(convertMax(maxHeap))
+console.log(convertMax(maxHeap));
+```
 
-Run
+---
 
 We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes _O(nlog(n))O(nlog(n))_ time.
+
+
+</details>

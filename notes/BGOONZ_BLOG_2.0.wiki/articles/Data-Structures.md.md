@@ -212,24 +212,6 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 #### Solution #1: Doing it "by hand"
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
 function removeEven(arr) {
 
 var odds = []
@@ -253,14 +235,6 @@ Run
 This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
 
 #### Solution #2: Using filter() and lambda function
-
-1
-
-2
-
-3
-
-4
 
 function removeEven(arr) {
 
@@ -295,24 +269,6 @@ To solve this problem, we can simply use a stack of characters. Look below at th
 index.js
 
 Stack.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -440,24 +396,6 @@ The easiest way to solve this problem is using a queue to generate new numbers f
 index.js
 
 Queue.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -587,24 +525,6 @@ index.js
 LinkedList.js
 
 Node.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -744,24 +664,6 @@ BinarySearchTree.js
 
 Node.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
 10
 
 11
@@ -896,24 +798,6 @@ LinkedList.js
 
 Node.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
 10
 
 11
@@ -1025,24 +909,6 @@ result = [-2,1,5,9,4,6,7]
 ```
 
 To solve this problem, we must min heapify all parent nodes. Take a look.
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
