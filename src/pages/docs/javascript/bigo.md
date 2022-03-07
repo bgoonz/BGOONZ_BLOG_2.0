@@ -4,7 +4,7 @@ weight: 0
 excerpt: A quick guide to big O
 seo:
     title: 'big O'
-    description: ''
+    description: ' A Very Quick Guide To Calculating Big O Computational Complexity'
     robots: []
     extra: []
 template: docs
