@@ -58,7 +58,7 @@ For example, in the `initialization` block it is not required to initialize vari
     }
 
 Like the `initialization` block, the `condition` block is also optional. If you are omitting this expression, you must make sure to break the loop in the body in order to not create an infinite loop.
-
+```js
     for (let i = 0;; i++) {
        console.log(i);
        if (i > 3) break;
