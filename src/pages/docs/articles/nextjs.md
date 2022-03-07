@@ -1,13 +1,16 @@
 ---
-title: lorem-ipsum
+title: NextJS
 weight: 0
-excerpt: With some basic React and JavaScript knowledge, you'll be on your wayNext.js is a JavaScript framework created by Zeit. It lets you build server-side rendering and static web applications using React. It's a great tool to build your next website. It has many great features and advantages.
+excerpt: ith some basic React and JavaScript knowledge, you'll be on your wayNext.js is a JavaScript framework created by Zeit. It lets you build server-side rendering and static web applications using React. It's a great tool to build your next website. It has many great features and advantages.
 seo:
-    title: ''
+    title: 'NextJS'
     description: 'NextJS is a JavaScript framework. It lets you build server-side rendering and static web applications using React. It's a great tool to build your next website. It has many great features and advantages, which can make Nextjs your first option for building your next web application.'
     robots: []
     extra: []
-template: docs
+    type: stackbit_page_meta
+template: page
+image: images/theme.png
+subtitle: how we introduce modularity into our code in the node ecosystem
 ---
 
 ## # Nextjs for everyone — with some basic knowledge of React
