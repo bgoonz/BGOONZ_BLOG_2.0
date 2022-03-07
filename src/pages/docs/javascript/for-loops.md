@@ -50,13 +50,13 @@ The following `for` statement starts by declaring the variable `i` and initializ
 All three expressions in the head of the `for` loop are optional.
 
 For example, in the `initialization` block it is not required to initialize variables:
-
+```js
     var i = 0;
     for (; i < 9; i++) {
         console.log(i);
         // more statements
     }
-
+```
 Like the `initialization` block, the `condition` block is also optional. If you are omitting this expression, you must make sure to break the loop in the body in order to not create an infinite loop.
 ```js
     for (let i = 0;; i++) {
