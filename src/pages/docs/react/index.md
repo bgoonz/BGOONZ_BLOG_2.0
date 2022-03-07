@@ -29,14 +29,14 @@ template: docs
 
 # Examples:
 
-<iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark"
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="React Embeds"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-<iframe sandbox="allow-scripts"  src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark"
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="thirsty-cori-c9qxq"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -53,7 +53,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux:
 
-<iframe sandbox="allow-scripts"  class="block-content" src="https://learning-redux42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" src="https://learning-redux42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

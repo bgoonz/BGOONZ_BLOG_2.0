@@ -9,7 +9,7 @@ https://links4242.netlify.app/
 https://markdown-templates-42.netlify.app/  
 https://sidebar-blog.netlify.app/  
 https://friendly-amaranth-51833.netlify.app/  
-https://bgoonzbookmarks.netlify.app/  
+https://bgoonz-bookmarks.netlify.app/  
 https://sanity-gatsby-hey-sugar-5.netlify.app/
 https://sanity-gatsby-hey-sugar-5.netlify.app/  
 https://dev-journal42.netlify.app/  
