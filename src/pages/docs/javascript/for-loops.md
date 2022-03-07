@@ -227,7 +227,7 @@ Object whose iterable properties are to be iterated over.
 ### Iterating over async iterables
 
 You can also iterate over an object that explicitly implements async iterable protocol:
-
+```js
     const asyncIterable = {
       [Symbol.asyncIterator]() {
         return {
