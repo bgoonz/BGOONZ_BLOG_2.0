@@ -24,7 +24,7 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/misc.js')} />
             <script src={withPrefix('js/page-load.js')} />
             <script src={withPrefix('js/page-unload.js')} />
-            
+            <script src={withPrefix('js/prism.js')} />
 
 //<script src={withPrefix('js/google-search.js')} />
 //<script src={withPrefix('js/algolia.js')} />
