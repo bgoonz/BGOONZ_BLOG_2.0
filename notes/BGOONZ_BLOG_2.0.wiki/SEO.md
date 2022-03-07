@@ -285,7 +285,7 @@ NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
 NOOPENER : [Wordpress Blog](https://web-dev-hub.com/)\
 NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
 NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
-NOOPENER : [SearchAwesome](https://bgoonz.github.io/searchAwesome/)\
+NOOPENER : [SearchAwesome](https://search-awesome.vercel.app/)\
 NOOPENER : [WebAudioLab](https://panoramic-eggplant-452e4.netlify.app/)\
 NOOPENER : [Meditation App](https://meditate42app.netlify.app/)\
 NOOPENER : [Potluck Planner](https://potluck-landing.netlify.app/)\

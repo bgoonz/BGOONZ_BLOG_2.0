@@ -42,7 +42,7 @@ weight: 0
 <h1>  Search Awesome Lists      </h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://bgoonz.github.io/searchAwesome/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://search-awesome.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
