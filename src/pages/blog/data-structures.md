@@ -5,7 +5,7 @@ date: '2021-09-14'
 thumb_image_alt: Big O Cheat Sheet
 excerpt: A guide to computational complexity
 seo:
-  title: ''
+  title: 'Leetcode (Data Structures)'
   description: ''
   robots: []
   extra: []
