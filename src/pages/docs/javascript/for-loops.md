@@ -307,7 +307,7 @@ This example first creates an async iterable for a stream of data, then uses it 
       return responseSize;
     }
     getResponseSize('https://jsonplaceholder.typicode.com/photos');
-
+```
 ### Iterating over sync iterables and generators
 
 `for await...of` loop also consumes sync iterables and generators. In that case it internally awaits emitted values before assign them to the loop control variable.
