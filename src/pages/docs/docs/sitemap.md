@@ -31,7 +31,6 @@ template: docs
 
 ### 3. [**🖥️blog/blog-archive🌍**](https://bgoonz-blog.netlify.app/blog/blog-archive)
 
-
 ### 5. [**🖥️blog/data-structures🌍**](https://bgoonz-blog.netlify.app/blog/data-structures)
 
 ### 6. [**🖥️blog/flow-control-in-python🌍**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
