@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 const handleParam = (key, value, options = {}) => {
     if (typeof location !== `undefined`) {
-        // historyMethod: push or replace (https://developer.mozilla.org/docs/Web/API/History)
+        // historyMethod: push or replace
+        // (https://developer.mozilla.org/docs/Web/API/History)
         const { historyMethod = `replace`, nullDeletes = true } = options;
         const params = new URLSearchParams(location.search);
 
