@@ -1,28 +1,17 @@
 ---
 title: Es6 Features
-
 subtitle: lorem-ipsum
-
 date: '2021-11-24'
-
 thumb_image_alt: lorem-ipsum
-
 excerpt: lorem-ipsum
-
 seo:
     title: ''
-
     description: ''
-
     robots: []
-
     extra: []
-
 template: post
-
 thumb_image: images/es6.jpg
 ---
-
 ## React Interview Questions & Answers
 
 <iframe sandbox="allow-scripts"  width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
