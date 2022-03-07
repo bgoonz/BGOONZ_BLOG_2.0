@@ -181,7 +181,7 @@ The `for...in` loop below iterates over all of the object's enumerable, non-Symb
     // "obj.c = 3"
 
 
-```js
+```
 
 
 ### Iterating own properties
