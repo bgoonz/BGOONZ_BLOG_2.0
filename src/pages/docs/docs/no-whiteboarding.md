@@ -630,7 +630,7 @@ template: docs
 
 -   [Kiwi.com](https://code.kiwi.com/) | Brno, Czech Republic | Phone Interview, Take-home projects, On-site code review & interview
 
--   [KNPLabs](https://knplabs.com/) | Nantes, France | First step: screening call directly with the CEO, to discuss company vision, assess cultural fit and experience. Second step: call or IRL interview with a developer and a project facilitator , technical discussions with focus on soft skills. The goal of the interview is for the 2 KNPeers to be able to answer: “Do I want to work with this person ?” If both say yes, the person is hired. If even at least one says no, the person is not hired.
+-   [KNPLabs](https://knplabs.com/) | Nantes, France | First step: screening call directly with the CEO, to discuss company vision, assess cultural fit and experience. Second step: call or IRL interview with a developer and a project facilitator , technical discussions with focus on soft skills. The goal of the interview is for the 2 KNPeers to be able to answer: "Do I want to work with this person ?" If both say yes, the person is hired. If even at least one says no, the person is not hired.
 
 -   [Koddi Inc.](http://www.koddi.com/open-positions) | Fort Worth, TX | Phone Interview(s), take-home project, on-site interview
 
@@ -1090,7 +1090,7 @@ template: docs
 
 -   [SweetIQ](https://sweetiq.com/about/careers) | Montreal, Canada | Discussion and general, high level questions
 
--   [Symphony Commerce](https://www.symphonycommerce.com/careers) | San Francisco, CA / Remote | Take-home project (phone), design discussion, review and critique *our* code, debugging questions
+-   [Symphony Commerce](https://www.symphonycommerce.com/careers) | San Francisco, CA / Remote | Take-home project (phone), design discussion, review and critique _our_ code, debugging questions
 
 -   [Symplicity](https://www.symplicity.com/about/join-us) | Arlington, VA | Take-home project and code review in-person
 

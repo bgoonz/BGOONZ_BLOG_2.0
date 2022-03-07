@@ -3,10 +3,10 @@ title: Jamstack
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
@@ -166,7 +166,7 @@ The year that Jamstack went mainstream. An explosion of new tools and services e
 
 #### 2021
 
-While Jamstack continues to expand, confusion about what it really means has become a common theme. And yet, tools like [RedwoodJS](https://redwoodjs.com/) and [Blitz.js](https://blitzjs.com/) show us that Jamstack isn’t slowing down.
+While Jamstack continues to expand, confusion about what it really means has become a common theme. And yet, tools like [RedwoodJS](https://redwoodjs.com/) and [Blitz.js](https://blitzjs.com/) show us that Jamstack isn't slowing down.
 
 ## Getting started
 

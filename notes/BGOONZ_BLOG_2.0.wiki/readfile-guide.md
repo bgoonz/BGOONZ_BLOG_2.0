@@ -6,15 +6,15 @@
 
 ---
 
-As a Node.js developer, there’s a good chance that at some point you’ve imported the `fs` module and written some code that’s interacted with the file system.
+As a Node.js developer, there's a good chance that at some point you've imported the `fs` module and written some code that's interacted with the file system.
 
 What you might not know is that the `fs` module is a fully-featured, standards-based, cross-platform module that exposes not one, but three APIs that cater to synchronous and asynchronous programming styles.
 
-In this article, we will thoroughly explore the world of Node.js file processing in Windows and Linux systems, with a focus on the `fs` module’s promise-based API.
+In this article, we will thoroughly explore the world of Node.js file processing in Windows and Linux systems, with a focus on the `fs` module's promise-based API.
 
 ### A note before we begin
 
-All examples in this article are intended to be run in a Linux environment, but many will work in Windows, too. Look for notes throughout the article highlighting examples that won’t work in Windows. Regarding macOS — in most cases, the `fs` module works the same way it would on Linux, but there are some macOS-specific behaviors that are not covered in this article. Refer to the official [Node.js documentation](https://nodejs.org/api/fs.html) for macOS nuances.
+All examples in this article are intended to be run in a Linux environment, but many will work in Windows, too. Look for notes throughout the article highlighting examples that won't work in Windows. Regarding macOS — in most cases, the `fs` module works the same way it would on Linux, but there are some macOS-specific behaviors that are not covered in this article. Refer to the official [Node.js documentation](https://nodejs.org/api/fs.html) for macOS nuances.
 
 The full source code for all examples is available on my GitHub under [briandesousa/node-file-process](https://github.com/briandesousa/node-file-processing).
 
@@ -24,9 +24,9 @@ The `fs` module is a core module built into [Node.js](https://blog.logrocket.com
 
 Since its earliest days, the `fs` module has been aligned with [POSIX file system standards](https://en.wikipedia.org/wiki/POSIX). This means the code you write is somewhat portable across multiple operating systems, though especially between different flavors of Unix and Linux.
 
-Although Windows is not a POSIX-compliant operating system, most of the `fs` module’s functions will still work. However, there are functions that are not portable simply because certain file system capabilities do not exist or are implemented differently in Windows.
+Although Windows is not a POSIX-compliant operating system, most of the `fs` module's functions will still work. However, there are functions that are not portable simply because certain file system capabilities do not exist or are implemented differently in Windows.
 
-As we review the `fs` module’s functions, keep in mind that the following functions will return errors or will have unexpected results on Windows:
+As we review the `fs` module's functions, keep in mind that the following functions will return errors or will have unexpected results on Windows:
 
 -   Functions to modify file permissions and ownership:
     -   `chmod()`
@@ -42,13 +42,13 @@ As we review the `fs` module’s functions, keep in mind that the following func
 
 Since Node v10, the `fs` module has included three different APIs: synchronous, callback, and promise. All three APIs expose the same set of file system operations.
 
-This article will focus on the newer promise-based API. However, there may be circumstances where you want or need to use the synchronous or callback APIs. For that reason, let’s take a moment to compare all three APIs.
+This article will focus on the newer promise-based API. However, there may be circumstances where you want or need to use the synchronous or callback APIs. For that reason, let's take a moment to compare all three APIs.
 
 ## Comparing the FS module APIs
 
 ### Synchronous API
 
-The synchronous API exposes a set of functions that block execution to perform file system operations. These functions tend to be the simplest to use when you’re just getting started.
+The synchronous API exposes a set of functions that block execution to perform file system operations. These functions tend to be the simplest to use when you're just getting started.
 
 On the other hand, they are thread-blocking, which is very contrary to the non-blocking I/O design of Node.js. Still, there are times where you must process a file synchronously.
 
@@ -62,7 +62,7 @@ The callback API allows you to interact with the file system in an asynchronous 
 
 import \* as fs from 'fs'; fs.readFile(path, (err, data) \=> { if (err) { console.error(err); } else { console.log(\`file read complete, data: ${data}\`); } });
 
-This is a non-blocking approach that is usually more suitable for Node.js applications, but it comes with its own challenges. Using callbacks in asynchronous programming often results in [callback hell](http://callbackhell.com/). If you’re not careful with how you structure your code, you may end up with a complex stack of nested callback functions that can be difficult to read and maintain.
+This is a non-blocking approach that is usually more suitable for Node.js applications, but it comes with its own challenges. Using callbacks in asynchronous programming often results in [callback hell](http://callbackhell.com/). If you're not careful with how you structure your code, you may end up with a complex stack of nested callback functions that can be difficult to read and maintain.
 
 ### Promise API
 
@@ -74,9 +74,9 @@ The first thing you might notice is the difference in this import statement comp
 
 If you want to keep example code compact, import statements will be omitted from subsequent examples. Standard import naming conventions will be used to differentiate between APIs: `fs` to access synchronous and callback functions, and `fsPromises` to access promise functions.
 
-The promise API allows you to take advantage of JavaScript’s async/await syntactic sugar to write asynchronous code in a synchronous way. The `readFile()` function called on line 4 above returns a promise. The code that follows appears to be executed synchronously. Finally, the promise is returned from the function. The `await` operator is optional, but since we have included it, the function will wait for the file operation to complete before returning.
+The promise API allows you to take advantage of JavaScript's async/await syntactic sugar to write asynchronous code in a synchronous way. The `readFile()` function called on line 4 above returns a promise. The code that follows appears to be executed synchronously. Finally, the promise is returned from the function. The `await` operator is optional, but since we have included it, the function will wait for the file operation to complete before returning.
 
-It’s time to take the promise API for a test drive. Get comfortable. There are quite a few functions to cover, including ones that create, read, and update files and file metadata.
+It's time to take the promise API for a test drive. Get comfortable. There are quite a few functions to cover, including ones that create, read, and update files and file metadata.
 
 ## Working with files
 
@@ -84,7 +84,7 @@ It’s time to take the promise API for a test drive. Get comfortable. There are
 
 The promise API provides two different approaches to [working with files](https://blog.logrocket.com/uploading-files-using-multer-and-node-js/).
 
-The first approach uses a top-level set of functions that accept file paths. These functions manage the lifecycle of file and directory resource handles internally. You don’t need to worry about calling a `close()` function when you are done with the file or directory.
+The first approach uses a top-level set of functions that accept file paths. These functions manage the lifecycle of file and directory resource handles internally. You don't need to worry about calling a `close()` function when you are done with the file or directory.
 
 The second approach uses a set of functions available on a `FileHandle` object. A `FileHandle` acts as a reference to a file or directory on the file system. Here is how you can obtain a `FileHandle` object:
 
@@ -92,9 +92,9 @@ async function openFile(path) { let fileHandle; try { fileHandle \= await fsProm
 
 On line 4 above, we use `fsPromises.open()` to create a `FileHandle` for a file. We pass the `r` flag to indicate that the file should be opened in read-only mode. Any operations that attempt to modify the file will fail. (You can also specify [other flags](https://nodejs.org/api/fs.html#fs_file_system_flags).)
 
-The file’s contents are read using the `read()` function, which is directly available from the file handle object. On line 10, we need to explicitly close the file handle to avoid potential memory leaks.
+The file's contents are read using the `read()` function, which is directly available from the file handle object. On line 10, we need to explicitly close the file handle to avoid potential memory leaks.
 
-All of the functions available in the `FileHandle` class are also available as top-level functions. We’ll continue to explore top-level functions, but it is good to know that this approach is available as well.
+All of the functions available in the `FileHandle` class are also available as top-level functions. We'll continue to explore top-level functions, but it is good to know that this approach is available as well.
 
 ### Reading files
 
@@ -104,7 +104,7 @@ const data \= await fsPromises.readFile(path); const noData \= await fsPromises.
 
 Example 1 is as simple as it gets, if all you want to do is get the contents of a file.
 
-In example 2, we don’t know if the file exists, so we pass the `w` [file system flag](https://nodejs.org/api/fs.html#fs_file_system_flags) to create it first, if necessary.
+In example 2, we don't know if the file exists, so we pass the `w` [file system flag](https://nodejs.org/api/fs.html#fs_file_system_flags) to create it first, if necessary.
 
 Example 3 demonstrates how you change the format of the data returned.
 
@@ -130,9 +130,9 @@ Each of these functions helps to implement different use cases.
 
 await fsPromises.appendFile('data.txt', '67890'); await fsPromises.appendFile('data2.txt', '123'); await fsPromises.writeFile('data3.txt', '67890'); await fsPromises.writeFile('data4.txt', '12345'); await fsPromises.truncate('data5.txt', 5);
 
-Examples 1 and 2 demonstrate how to use the `appendFile` function to append data to existing or new files. If a file doesn’t exist, `appendFile` will create it first.
+Examples 1 and 2 demonstrate how to use the `appendFile` function to append data to existing or new files. If a file doesn't exist, `appendFile` will create it first.
 
-Examples 3 and 4 demonstrate how to use the `writeFile` function to write to existing or new files. The `writeFile` function will also create a file if it doesn’t exist before writing to it. However, if the file already exists and contains data, the contents of the file is overwritten without warning.
+Examples 3 and 4 demonstrate how to use the `writeFile` function to write to existing or new files. The `writeFile` function will also create a file if it doesn't exist before writing to it. However, if the file already exists and contains data, the contents of the file is overwritten without warning.
 
 Example 5 demonstrates how to use the `truncate` function to trim the contents of a file. The arguments that are passed to this function can be confusing at first. You might expect a `truncate` function to accept the number of characters to strip from the end of the file, but actually we need to specify the number of characters to retain. In the case above, you can see that we entered a value of `5` to the `truncate` function, which removed the last five characters from the string `1234567890`.
 
@@ -144,15 +144,15 @@ const abortController \= new AbortController(); const { signal } \= abortControl
 
 The `watch` function can watch a file for changes indefinitely. Each time a change is observed, a watch event is raised. The `watch` function returns an async iterable, which is essentially a way for the function to return an unbounded series of promises. On line 12, we take advantage of the `for await … of` syntactic sugar to wait for and iterate each watch event as it is received.
 
-There is a good chance you don’t want to endlessly watch a file for changes. The watch can be aborted by using a special signal object that can be triggered as required. On lines 1 to 2, we create an instance of `AbortController`, which gives us access to an instance of `AbortSignal` that is ultimately passed to the `watch` function. In this example, we call the signal object’s `abort()` function after a fixed period of time (specified on line 3), but you can abort however and whenever you need to.
+There is a good chance you don't want to endlessly watch a file for changes. The watch can be aborted by using a special signal object that can be triggered as required. On lines 1 to 2, we create an instance of `AbortController`, which gives us access to an instance of `AbortSignal` that is ultimately passed to the `watch` function. In this example, we call the signal object's `abort()` function after a fixed period of time (specified on line 3), but you can abort however and whenever you need to.
 
 The `watch` function can also be used to watch the contents of a directory. It accepts an optional `recursive` option that determines whether all subdirectories and files are watched.
 
 ## File metadata
 
-So far, we have focused on reading and modifying the contents of a file, but you may also need to read and update a file’s metadata. File metadata includes its size, type, permissions, and other file system properties.
+So far, we have focused on reading and modifying the contents of a file, but you may also need to read and update a file's metadata. File metadata includes its size, type, permissions, and other file system properties.
 
-The `stat` function is used to retrieve file metadata, or “statistics” like file size, permissions, and ownership.
+The `stat` function is used to retrieve file metadata, or "statistics” like file size, permissions, and ownership.
 
 const fileStats \= await fsPromises.stat('file1.txt'); console.log(fileStats) console.log(\`size of file1.txt is ${fileStats.size}\`);
 
@@ -192,15 +192,15 @@ In this example, we update the file so that it is owned by the root user and roo
 
 Tip: Link functions are applicable to Unix/Linux operating systems. These functions yield unexpected results on Windows.
 
-The `fs` module provides a variety of functions you can use to work with hard and [soft, or symbolic, links](https://en.wikipedia.org/wiki/Symbolic_link). Many of the file functions we’ve already seen have equivalent versions for working with links. In most cases, they operate identically, too.
+The `fs` module provides a variety of functions you can use to work with hard and [soft, or symbolic, links](https://en.wikipedia.org/wiki/Symbolic_link). Many of the file functions we've already seen have equivalent versions for working with links. In most cases, they operate identically, too.
 
-Before we start creating links, let’s have a quick refresher on the two types of links we’ll be working with.
+Before we start creating links, let's have a quick refresher on the two types of links we'll be working with.
 
 ### Hard vs. soft links
 
 Hard and soft links are special types of files that point to other files on the file system. A soft link becomes invalid if the file it is linked to is deleted.
 
-On the other hand, a hard link pointing to a file will still be valid and contain the file’s contents even if the original file is deleted. Hard links don’t point to a file, but rather a file’s underlying data. This data is referred to as the _inode_ on Unix/Linux file systems.
+On the other hand, a hard link pointing to a file will still be valid and contain the file's contents even if the original file is deleted. Hard links don't point to a file, but rather a file's underlying data. This data is referred to as the _inode_ on Unix/Linux file systems.
 
 We can easily create soft and hard links with the `fs` module. Use the `symlink` function to create soft links and the `link` function to create hard links.
 
@@ -218,7 +218,7 @@ The `unlink` function can remove both hard and soft links:
 
 The `unlink` function actually serves as a general purpose function that can also be used to delete regular files, since they are essentially the same as a hard link. Aside from the `link` and `unlink` functions, all other link functions are intended to be used with soft links.
 
-You can modify a soft link’s metadata much like you would a normal file’s:
+You can modify a soft link's metadata much like you would a normal file's:
 
 const linkStats \= await fsPromises.lstat(path); const newAccessTime \= new Date(2020,0,1); const newModifyTime \= new Date(2020,0,1); await fsPromises.lutimes('softLinkedFile.txt', newAccessTime, newModifyTime); await fsPromises.lchmod('softLinkedFile.txt', '00666'); const root_uid\= 0; const root_gid \= 0; await fsPromises.lchown('softLinkedFile.txt', root_uid, root_gid);
 
@@ -226,7 +226,7 @@ Aside from each function being prefixed with an `l`, these functions operate ide
 
 ## Working with directories
 
-We can’t just stop at file processing. If you are working with files, it is inevitable that you will need to work with directories too. The `fs` module provides a variety of functions for creating, modifying, and deleting directories.
+We can't just stop at file processing. If you are working with files, it is inevitable that you will need to work with directories too. The `fs` module provides a variety of functions for creating, modifying, and deleting directories.
 
 Much like the `open` function we saw earlier, the `opendir` function returns a handle to a directory in the form of a `Dir` object. The `Dir` object exposes several functions that can be used to operate on that directory:
 
@@ -238,7 +238,7 @@ The `fs` module also includes functions that hide the opening and closing of dir
 
 await fsPromises.mkdir('sampleDir'); await fsPromises.mkdir('nested1/nested2/nested3', { recursive: true }); await fsPromises.rename('sampleDir', 'sampleDirRenamed'); await fsPromises.rmdir('sampleDirRenamed'); await fsPromises.rm('nested1', { recursive: true }); await fsPromises.rm('nested1', { recursive: true, force: true });
 
-Examples 2, 5, and 6 demonstrate the `recursive` option, which is especially helpful if you don’t know if a path will exist before creating or deleting it.
+Examples 2, 5, and 6 demonstrate the `recursive` option, which is especially helpful if you don't know if a path will exist before creating or deleting it.
 
 There are two options to read the contents of a directory. By default, the `readdir` function returns a list of the names of all the files and folders directly below the requested directory.
 
@@ -246,15 +246,15 @@ You can pass the `withFileTypes` option to get a list of `Dirent` directory entr
 
 const files \= await fsPromises.readdir('anotherDir'); for (const file in files) { console.log(file); } const dirents \= await fsPromises.readdir('anotherDir', {withFileTypes: true}); for (const entry in dirents) { if (entry.isFile()) { console.log(\`file name: ${entry.name}\`); } else if (entry.isDirectory()) { console.log(\`directory name: ${entry.name}\`); } else if (entry.isSymbolicLink()) { console.log(\`symbolic link name: ${entry.name}\`); } }
 
-The `readdir` function does not provide a recursive option to read the contents of sub-directories. You’ll have to write your own recursive function or rely on a third-party module like [`recursive-readdir]()`](https://www.npmjs.com/package/recursive-readdir).
+The `readdir` function does not provide a recursive option to read the contents of sub-directories. You'll have to write your own recursive function or rely on a third-party module like [`recursive-readdir]()`](https://www.npmjs.com/package/recursive-readdir).
 
 ## Close()
 
-It’s time to `close()` the resource handle for this article. We have taken a thorough look at how to work with files, links, and directories using the Node.js `fs` module. File processing is available in Node.js out of the box, fully featured and ready to use.
+It's time to `close()` the resource handle for this article. We have taken a thorough look at how to work with files, links, and directories using the Node.js `fs` module. File processing is available in Node.js out of the box, fully featured and ready to use.
 
-## 200’s only ![](https://blog.logrocket.com/wp-content/uploads/2019/10/green-check.png) Monitor failed and slow network requests in production
+## 200's only ![](https://blog.logrocket.com/wp-content/uploads/2019/10/green-check.png) Monitor failed and slow network requests in production
 
-Deploying a Node-based web app or website is the easy part. Making sure your Node instance continues to serve resources to your app is where things get tougher. If you’re interested in ensuring requests to the backend or third party services are successful, [try LogRocket](https://logrocket.com/signup/). [![LogRocket Network Request Monitoring](https://blog.logrocket.com/wp-content/uploads/2019/12/network-request-filter-2-1.png)](https://logrocket.com/signup/)[https://logrocket.com/signup/](https://logrocket.com/signup/)
+Deploying a Node-based web app or website is the easy part. Making sure your Node instance continues to serve resources to your app is where things get tougher. If you're interested in ensuring requests to the backend or third party services are successful, [try LogRocket](https://logrocket.com/signup/). [![LogRocket Network Request Monitoring](https://blog.logrocket.com/wp-content/uploads/2019/12/network-request-filter-2-1.png)](https://logrocket.com/signup/)[https://logrocket.com/signup/](https://logrocket.com/signup/)
 
 [LogRocket](https://logrocket.com/signup/) is like a DVR for web and mobile apps, recording literally everything that happens while a user interacts with your app. Instead of guessing why problems happen, you can aggregate and report on problematic network requests to quickly understand the root cause.
 

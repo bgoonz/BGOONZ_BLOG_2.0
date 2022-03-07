@@ -12,7 +12,7 @@ template: docs
 
 ### Anonymous Closures
 
-This is the fundamental construct that makes it all possible, and really is the single **best feature of JavaScript**. We’ll simply create an anonymous function, and execute it immediately. All of the code that runs inside the function lives in a **closure**, which provides **privacy** and **state** throughout the lifetime of our application.
+This is the fundamental construct that makes it all possible, and really is the single **best feature of JavaScript**. We'll simply create an anonymous function, and execute it immediately. All of the code that runs inside the function lives in a **closure**, which provides **privacy** and **state** throughout the lifetime of our application.
 
 ```js
 (function () {
@@ -25,9 +25,9 @@ Notice the `()` around the anonymous function. This is required by the language,
 
 ### Global Import
 
-JavaScript has a feature known as **implied globals**. Whenever a name is used, the interpreter walks the scope chain backwards looking for a `var` statement for that name. If none is found, that variable is assumed to be global. If it’s used in an assignment, the global is created if it doesn’t already exist. This means that using or creating global variables in an anonymous closure is easy. Unfortunately, this leads to hard-to-manage code, as it’s not obvious (to humans) which variables are global in a given file.
+JavaScript has a feature known as **implied globals**. Whenever a name is used, the interpreter walks the scope chain backwards looking for a `var` statement for that name. If none is found, that variable is assumed to be global. If it's used in an assignment, the global is created if it doesn't already exist. This means that using or creating global variables in an anonymous closure is easy. Unfortunately, this leads to hard-to-manage code, as it's not obvious (to humans) which variables are global in a given file.
 
-###### Luckily, our anonymous function provides an easy alternative. By passing globals as parameters to our anonymous function, we **import** them into our code, which is both **clearer** and **faster** than implied globals. Here’s an example:
+###### Luckily, our anonymous function provides an easy alternative. By passing globals as parameters to our anonymous function, we **import** them into our code, which is both **clearer** and **faster** than implied globals. Here's an example:
 
 ```
 (function ($, YAHOO) {
@@ -37,7 +37,7 @@ JavaScript has a feature known as **implied globals**. Whenever a name is used, 
 
 ### Module Export
 
-Sometimes you don’t just want to _use_ globals, but you want to _declare_ them. We can easily do this by exporting them, using the anonymous function’s **return value**. Doing so will complete the basic module pattern, so here’s a complete example:
+Sometimes you don't just want to _use_ globals, but you want to _declare_ them. We can easily do this by exporting them, using the anonymous function's **return value**. Doing so will complete the basic module pattern, so here's a complete example:
 
 ```js
 let MODULE = (function () {
@@ -57,7 +57,7 @@ let MODULE = (function () {
 })();
 ```
 
-Notice that we’ve declared a global module named `MODULE`, with two public properties: a method named `MODULE.moduleMethod` and a variable named `MODULE.moduleProperty`. In addition, it maintains **private internal state** using the closure of the anonymous function. Also, we can easily import needed globals, using the pattern we learned above.
+Notice that we've declared a global module named `MODULE`, with two public properties: a method named `MODULE.moduleMethod` and a variable named `MODULE.moduleProperty`. In addition, it maintains **private internal state** using the closure of the anonymous function. Also, we can easily import needed globals, using the pattern we learned above.
 
 ###### ## Advanced Patterns
 
@@ -65,7 +65,7 @@ While the above is enough for many uses, we can take this pattern farther and cr
 
 ### Augmentation
 
-One limitation of the module pattern so far is that the entire module must be in one file. Anyone who has worked in a large code-base understands the value of splitting among multiple files. Luckily, we have a nice solution to **augment modules**. First, we import the module, then we add properties, then we export it. Here’s an example, augmenting our `MODULE` from above:
+One limitation of the module pattern so far is that the entire module must be in one file. Anyone who has worked in a large code-base understands the value of splitting among multiple files. Luckily, we have a nice solution to **augment modules**. First, we import the module, then we add properties, then we export it. Here's an example, augmenting our `MODULE` from above:
 
 ```js
 let MODULE = (function (my) {
@@ -77,11 +77,11 @@ let MODULE = (function (my) {
 })(MODULE);
 ```
 
-We use the `var` keyword again for consistency, even though it’s not necessary. After this code has run, our module will have gained a new public method named `MODULE.anotherMethod`. This augmentation file will also maintain its own private internal state and imports.
+We use the `var` keyword again for consistency, even though it's not necessary. After this code has run, our module will have gained a new public method named `MODULE.anotherMethod`. This augmentation file will also maintain its own private internal state and imports.
 
 ### Loose Augmentation
 
-While our example above requires our initial module creation to be first, and the augmentation to happen second, that isn’t always necessary. One of the best things a JavaScript application can do for performance is to load scripts asynchronously. We can create flexible multi-part modules that can load themselves in any order with **loose augmentation**. Each file should have the following structure:
+While our example above requires our initial module creation to be first, and the augmentation to happen second, that isn't always necessary. One of the best things a JavaScript application can do for performance is to load scripts asynchronously. We can create flexible multi-part modules that can load themselves in any order with **loose augmentation**. Each file should have the following structure:
 
 ```
 let MODULE = (function (my) {
@@ -109,7 +109,7 @@ let MODULE = (function (my) {
 })(MODULE);
 ```
 
-Here we’ve overridden `MODULE.moduleMethod`, but maintain a reference to the original method, if needed.
+Here we've overridden `MODULE.moduleMethod`, but maintain a reference to the original method, if needed.
 
 ### Cloning and Inheritance
 
@@ -133,7 +133,7 @@ let MODULE_TWO = (function (old) {
 })(MODULE);
 ```
 
-This pattern is perhaps the **least flexible** option. It does allow some neat compositions, but that comes at the expense of flexibility. As I’ve written it, properties which are objects or functions will _not_ be duplicated, they will exist as one object with two references. Changing one will change the other. This could be fixed for objects with a recursive cloning process, but probably cannot be fixed for functions, except perhaps with `eval`. Nevertheless, I’ve included it for completeness.
+This pattern is perhaps the **least flexible** option. It does allow some neat compositions, but that comes at the expense of flexibility. As I've written it, properties which are objects or functions will _not_ be duplicated, they will exist as one object with two references. Changing one will change the other. This could be fixed for objects with a recursive cloning process, but probably cannot be fixed for functions, except perhaps with `eval`. Nevertheless, I've included it for completeness.
 
 ### Cross-File Private State
 
@@ -163,7 +163,7 @@ let MODULE = (function (my) {
 })(MODULE || {});
 ```
 
-Any file can set properties on their local variable `_private`, and it will be immediately available to the others. Once this module has loaded completely, the application should call `MODULE._seal()`, which will prevent external access to the internal `_private`. If this module were to be augmented again, further in the application’s lifetime, one of the internal methods, in any file, can call `_unseal()` before loading the new file, and call `_seal()` again after it has been executed. This pattern occurred to me today while I was at work, I have not seen this elsewhere. I think this is a very useful pattern, and would have been worth writing about all on its own.
+Any file can set properties on their local variable `_private`, and it will be immediately available to the others. Once this module has loaded completely, the application should call `MODULE._seal()`, which will prevent external access to the internal `_private`. If this module were to be augmented again, further in the application's lifetime, one of the internal methods, in any file, can call `_unseal()` before loading the new file, and call `_seal()` again after it has been executed. This pattern occurred to me today while I was at work, I have not seen this elsewhere. I think this is a very useful pattern, and would have been worth writing about all on its own.
 
 ### Sub-modules
 
@@ -182,11 +182,11 @@ While this may have been obvious, I thought it worth including. Sub-modules have
 
 ###### ## Conclusions
 
-Most of the advanced patterns can be combined with each other to create more useful patterns. If I had to advocate a route to take in designing a complex application, I’d combine **loose augmentation**, **private state**, and **sub-modules**.
+Most of the advanced patterns can be combined with each other to create more useful patterns. If I had to advocate a route to take in designing a complex application, I'd combine **loose augmentation**, **private state**, and **sub-modules**.
 
-###### I haven’t touched on performance here at all, but I’d like to put in one quick note: The module pattern is **good for performance**. It minifies really well, which makes downloading the code faster. Using **loose augmentation** allows easy non-blocking parallel downloads, which also speeds up download speeds. Initialization time is probably a bit slower than other methods, but worth the trade-off. Run-time performance should suffer no penalties so long as globals are imported correctly, and will probably gain speed in sub-modules by shortening the reference chain with local variables.
+###### I haven't touched on performance here at all, but I'd like to put in one quick note: The module pattern is **good for performance**. It minifies really well, which makes downloading the code faster. Using **loose augmentation** allows easy non-blocking parallel downloads, which also speeds up download speeds. Initialization time is probably a bit slower than other methods, but worth the trade-off. Run-time performance should suffer no penalties so long as globals are imported correctly, and will probably gain speed in sub-modules by shortening the reference chain with local variables.
 
-###### To close, here’s an example of a sub-module that loads itself dynamically to its parent (creating it if it does not exist). I’ve left out private state for brevity, but including it would be simple. This code pattern allows an entire complex heirarchical code-base to be loaded completely in parallel with itself, sub-modules and all.
+###### To close, here's an example of a sub-module that loads itself dynamically to its parent (creating it if it does not exist). I've left out private state for brevity, but including it would be simple. This code pattern allows an entire complex heirarchical code-base to be loaded completely in parallel with itself, sub-modules and all.
 
 ```js
 let UTIL = (function (parent, $) {
@@ -277,7 +277,7 @@ let MODULE = (function (my) {
 
 ### Tight Augmentation
 
-Here we’ve overridden MODULE.moduleMethod, but maintain a reference to the original method, if needed.
+Here we've overridden MODULE.moduleMethod, but maintain a reference to the original method, if needed.
 
 ###### ```javascript
 let MODULE = (function (my) {

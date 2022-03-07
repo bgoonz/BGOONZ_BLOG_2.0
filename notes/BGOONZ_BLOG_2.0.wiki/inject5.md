@@ -19,7 +19,7 @@ Deploy Previews allow you and your team to experience changes to any part of you
 
 Deploy Previews
 
-Don’t deploy pull requests
+Don't deploy pull requests
 
 Netlify Drawer
 
@@ -68,7 +68,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDVi79bjai48K5TZNQWEji8lai8DX6wJ94cbj9e5c78
 
 Control the environment your site builds in and/or gets deployed to.
 
-Deploy Previews triggered by a pull request from an unrecognized author’s fork are considered untrusted deploys. Choose how to manage sensitive environment variable access for these deploys.
+Deploy Previews triggered by a pull request from an unrecognized author's fork are considered untrusted deploys. Choose how to manage sensitive environment variable access for these deploys.
 
 Untrusted deploys
 
@@ -791,7 +791,7 @@ Lossless compression
 
 **Prerendering enabled with Netlify**
 
-With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you’re not using Netlify Forms, you can disable form detection to speed up deploy time.
+With each deploy, Netlify scans new and changed HTML files for forms to enable handling submissions. If you're not using Netlify Forms, you can disable form detection to speed up deploy time.
 
 [Learn more about form detection in the docs](https://docs.netlify.com/site-deploys/post-processing/form-detection/)
 
