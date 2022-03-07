@@ -271,7 +271,7 @@
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 950px) {
   .docs-content {
     display: -ms-flexbox;
     display: flex;
@@ -298,12 +298,12 @@
   }
 
   .docs-nav {
-    padding-right: 1.5em;
+    padding-right: 1em;
     width: 12.5em;
   }
 
   #page-nav {
-    padding-left: 1.5em;
+    padding-left: 1em;
     width: 7.5em;
   }
 
