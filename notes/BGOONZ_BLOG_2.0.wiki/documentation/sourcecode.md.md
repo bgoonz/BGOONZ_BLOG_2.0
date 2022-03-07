@@ -540,7 +540,7 @@ export default class Footer extends React.Component {
                     <center>
                         <br />
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-                        <div id="search"> {Script} </div>
+
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
