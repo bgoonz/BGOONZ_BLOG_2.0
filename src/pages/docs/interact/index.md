@@ -1,5 +1,5 @@
 ---
-title: Interactive
+title: Interact
 weight: 0
 excerpt: feel free to try the examples
 seo:
