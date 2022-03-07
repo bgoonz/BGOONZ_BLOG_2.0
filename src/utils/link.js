@@ -1,4 +1,4 @@
-import {Link as GatsbyLink} from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
 
 // Since DOM elements <a> cannot receive activeClassName
@@ -7,29 +7,28 @@ import React from 'react';
 
 // pass it only to GatsbyLink
 
-export default function Link(
-    {children, to, activeClassName, partiallyActive, ...other}) {
-  // Tailor the following test to your environment.
+export default function Link({ children, to, activeClassName, partiallyActive, ...other }) {
+    // Tailor the following test to your environment.
 
-  // This example assumes that any internal link (intended for Gatsby)
+    // This example assumes that any internal link (intended for Gatsby)
 
-  // will start with exactly one slash, and that anything else is external.
+    // will start with exactly one slash, and that anything else is external.
 
-  const internal = /^\/(?!\/)/.test(to);
+    const internal = /^\/(?!\/)/.test(to);
 
-  // Use Gatsby Link for internal links, and <a> for others
+    // Use Gatsby Link for internal links, and <a> for others
 
-  if (internal) {
-    return (
-        <GatsbyLink to = {to} activeClassName =
-             {activeClassName} partiallyActive = {partiallyActive} {...other}>{
-            children}<
-            /GatsbyLink>
+    if (internal) {
+        return (
+            <GatsbyLink to={to} activeClassName={activeClassName} partiallyActive={partiallyActive} {...other}>
+                {children}
+            </GatsbyLink>
         );
     }
 
     return (
         <a href={to} {...other}>
             {children}
-        </a>);
-  }
+        </a>
+    );
+}

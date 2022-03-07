@@ -3,24 +3,19 @@ import _ from 'lodash';
 import getPage from './getPage';
 
 export default function toUrl(pages, pagePath) {
+    if (_.startsWith(pagePath, '#')) {
+        return pagePath;
+    } else {
+        // remove extension
 
-  if (_.startsWith(pagePath, '#')) {
+        pagePath = pagePath.replace(/\.\w+$/, '');
 
-    return pagePath;
+        const page = getPage(pages, pagePath);
 
-  } else {
+        if (!page) {
+            throw new Error('could not find page with path: ' + pagePath);
+        }
 
-    // remove extension
-
-    pagePath = pagePath.replace(/\.\w+$/, '');
-
-    const page = getPage(pages, pagePath);
-
-    if (!page) {
-
-      throw new Error('could not find page with path: ' + pagePath);
+        return page.url;
     }
-
-    return page.url;
-  }
 }

@@ -7,6 +7,5 @@ import classnames from 'classnames';
 // be generated
 
 export default function classNames(...args) {
-
-  return classnames.call(this, ...args) || null;
+    return classnames.call(this, ...args) || null;
 }

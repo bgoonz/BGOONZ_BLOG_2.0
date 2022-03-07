@@ -1,19 +1,17 @@
 import _ from 'lodash';
 
 export default function getData(siteData, dataPath) {
+    dataPath = _.trim(dataPath, '/');
 
-  dataPath = _.trim(dataPath, '/');
+    if (_.startsWith(dataPath, 'src/data/')) {
+        dataPath = dataPath.replace('src/data/', '');
+    }
 
-  if (_.startsWith(dataPath, 'src/data/')) {
+    // remove extension
 
-    dataPath = dataPath.replace('src/data/', '');
-  }
+    dataPath = dataPath.replace(/\.\w+$/, '');
 
-  // remove extension
+    const path = dataPath.split('/');
 
-  dataPath = dataPath.replace(/\.\w+$/, '');
-
-  const path = dataPath.split('/');
-
-  return _.get(siteData, path);
+    return _.get(siteData, path);
 }
