@@ -68,7 +68,7 @@ str = str.replace(/(<\!\[CDATA\[([^\]]|(\]+[^>]))*\]+>)/gm, '');
 
 The `replace` function can also be **passed a callback** as its second parameter, and this is invaluable in cases where the replacement you want can't be described in a simple expression. For example:
 
-```
+```js
 isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i,
   function(match, lang, country)
   {
