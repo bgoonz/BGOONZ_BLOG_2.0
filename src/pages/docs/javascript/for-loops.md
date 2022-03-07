@@ -202,6 +202,10 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
     // "obj.color = red"
 
 
+
+```js
+
+
 ---
 
 ## For await Of 
