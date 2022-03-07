@@ -1,13 +1,13 @@
 export default function cycler() {
 
-    const args = Array.prototype.slice.call(arguments);
+  const args = Array.prototype.slice.call( arguments );
 
-    let index = 0;
+  let index = 0;
 
-    return {
+  return {
 
-        next: () => args[index++ % args.length]
+    next: () => args[ index++ % args.length ]
 
-    };
+  };
 
 }

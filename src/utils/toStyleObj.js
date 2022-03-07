@@ -2,32 +2,32 @@ import _ from 'lodash';
 
 
 
-export default function toStyleObj(styleAttr) {
+export default function toStyleObj( styleAttr ) {
 
-    return styleAttr.split(';').reduce((accumulator, pair) => {
+  return styleAttr.split( ';' ).reduce( ( accumulator, pair ) => {
 
-        pair = pair.trim();
+    pair = pair.trim();
 
-        if (_.isEmpty(pair)) {
+    if ( _.isEmpty( pair ) ) {
 
-            return accumulator;
+      return accumulator;
 
-        }
+    }
 
-        let index = pair.indexOf(':');
+    let index = pair.indexOf( ':' );
 
-        if (index === -1) {
+    if ( index === -1 ) {
 
-            throw new Error('Could not split style attribute into names and values');
+      throw new Error( 'Could not split style attribute into names and values' );
 
-        }
+    }
 
-        let name = _.camelCase(pair.substring(0, index).trim());
+    let name = _.camelCase( pair.substring( 0, index ).trim() );
 
-        accumulator[name] = pair.substring(index + 1).trim();
+    accumulator[ name ] = pair.substring( index + 1 ).trim();
 
-        return accumulator;
+    return accumulator;
 
-    }, {});
+  }, {} );
 
 }
