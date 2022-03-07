@@ -1,7 +1,7 @@
 ---
 title: Accessibility in React
 weight: 0
-excerpt: AJAX and APIs
+excerpt: At this point, we've accomplished all of the features we set out to implement. A user can add a new task, check and uncheck tasks, delete tasks, or edit task names. And they can filter their task list by all, active, or completed tasks.
 seo:
     title: 'Accessibility in React'
     description: 'You can use any AJAX library you like with React. Some popular ones are Axios, jQuery AJAX, and the browser built-in window.fetch.'
