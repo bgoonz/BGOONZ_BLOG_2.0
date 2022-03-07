@@ -343,7 +343,7 @@ This example first creates an async iterable for a stream of data, then uses it 
     // 4
 
 **Note:** Be aware of yielding rejected promises from sync generator. In such case `for await...of` throws when consuming rejected promise and DOESN'T CALL `finally` blocks within that generator. This can be undesirable if you need to free some allocated resources with `try/finally`.
-
+```js
     function* generatorWithRejectedPromises() {
       try {
         yield 0;
