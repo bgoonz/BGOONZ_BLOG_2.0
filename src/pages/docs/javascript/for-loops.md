@@ -19,18 +19,18 @@ The **for statement** creates a loop that consists of three optional expressions
     for ([initialization]; [condition]; [final-expression])
        statement
 
-`initialization`  
+`initialization`
 An expression (including assignment expressions) or variable declaration evaluated once before the loop begins. Typically used to initialize a counter variable. This expression may optionally declare new variables with `var` or `let` keywords. Variables declared with `var` are not local to the loop, i.e. they are in the same scope the `for` loop is in. Variables declared with `let` are local to the statement.
 
 The result of this expression is discarded.
 
-`condition`  
+`condition`
 An expression to be evaluated before each loop iteration. If this expression evaluates to true, `statement` is executed. This conditional test is optional. If omitted, the condition always evaluates to true. If the expression evaluates to false, execution skips to the first expression following the `for` construct.
 
-`final-expression`  
+`final-expression`
 An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of `condition`. Generally used to update or increment the counter variable.
 
-`statement`  
+`statement`
 A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a [block](block) statement (`{ ... }`) to group those statements. To execute no statement within the loop, use an [empty](empty) statement (`;`).
 
 ## Examples
@@ -123,10 +123,10 @@ The `for...in` iterates over all [enumerable properties](https://developer.mozil
     for (variable in object)
       statement
 
-`variable`  
+`variable`
 A different property name is assigned to `variable` on each iteration.
 
-`object`  
+`object`
 Object whose non-Symbol enumerable properties are iterated over.
 
 ## Description
@@ -219,10 +219,10 @@ The `for await...of` creates a loop iterating over async iterable objects as wel
       statement
     }
 
-`variable`  
+`variable`
 On each iteration a value of a different property is assigned to `variable`. `variable` may be declared with `const`, `let`, or `var`.
 
-`iterable`  
+`iterable`
 Object whose iterable properties are to be iterated over.
 
 ## Examples
