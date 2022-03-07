@@ -11,6 +11,10 @@ seo:
       value: images/javascript.jpeg
       keyName: property
       relativeUrl: true
+    - name: 'og:title'
+      value: JavaScript Quick Tips
+      keyName: property
+      relativeUrl: false
   type: stackbit_page_meta
 template: docs
 ---
