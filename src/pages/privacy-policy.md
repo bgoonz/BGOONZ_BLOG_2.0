@@ -16,23 +16,23 @@ template: docs
 
 <!---->
 
--   Note: Use our Facebook application — <https://bgoonz-blog.netlify.app/>
+-  Note:  Use our Facebook application — <https://bgoonz-blog.netlify.app/>
 
 <!---->
 
--   Note: Engage with us in other related ways ― including any sales, marketing, or events
+-  Note:  Engage with us in other related ways ― including any sales, marketing, or events
 
 <!---->
 
--   Important: "**Website**," we are referring to any website of ours that references or links to this policy
+- Important:  "**Website**," we are referring to any website of ours that references or links to this policy
 
 <!---->
 
--   Important: "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
+-  Important: "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
 
 <!---->
 
--   Important: "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
+-  Important: "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
 
 <!---->
 

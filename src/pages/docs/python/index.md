@@ -15,7 +15,7 @@ template: docs
 <h1>  Python Resources</h1>
 <br>
 
-<iframe sandbox="allow-scripts"  class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>

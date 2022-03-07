@@ -1458,7 +1458,7 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts"  src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
 
   # awk '{print "<li>"};
 

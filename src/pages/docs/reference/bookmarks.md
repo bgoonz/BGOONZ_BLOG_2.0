@@ -3,14 +3,16 @@ title: Web Dev Bookmarks
 weight: 0
 excerpt: Web Dev Bookmarks
 seo:
-    title: ''
-    description: ''
+    title: 'Bookmarks'
+    description: 'Web Dev Bookmarks'
     robots: []
     extra: []
 template: docs
 ---
 
-## Web Dev Bookmarks
+# Web Dev Bookmarks
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   style="resize:both; overflow:scroll;"  src="https://bgoonz-bookmarks.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 # Frontend Development [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
