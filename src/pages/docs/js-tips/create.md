@@ -382,6 +382,3 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 -   [`Object.prototype.isPrototypeOf()`](isprototypeof)
 -   [`Reflect.construct()`](../reflect/construct)
 -   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
-
-
-
