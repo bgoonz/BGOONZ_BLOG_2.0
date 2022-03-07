@@ -5,25 +5,25 @@ date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: >-
-    Netlify CMS is an open source content management system for your Git
-    workflow that enables you to provide editors with a friendly UI and
-    intuitive workflows
-  robots: []
-  extra:
-    - name: 'og:image'
-      value: images/netlify-dee8d6ae.svg
-      keyName: property
-      relativeUrl: true
-    - name: 'og:title'
-      value: Intro to Netlify CMS
-      keyName: property
-      relativeUrl: false
-    - name: 'twitter:card'
-      value: Intro to Netlify CMS
-      keyName: name
-      relativeUrl: false
+    title: ''
+    description: >-
+        Netlify CMS is an open source content management system for your Git
+        workflow that enables you to provide editors with a friendly UI and
+        intuitive workflows
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/netlify-dee8d6ae.svg
+          keyName: property
+          relativeUrl: true
+        - name: 'og:title'
+          value: Intro to Netlify CMS
+          keyName: property
+          relativeUrl: false
+        - name: 'twitter:card'
+          value: Intro to Netlify CMS
+          keyName: name
+          relativeUrl: false
 template: post
 thumb_image: images/netlify.png
 image: images/netlify-26904b46.svg
@@ -51,7 +51,7 @@ At its core, Netlify CMS is an open-source React app that acts as a wrapper for 
 
 [Netlify.com](https://www.netlify.com/) is a platform you can use to automatically build, deploy, serve, and manage your frontend sites and web apps. It also provides a variety of other features like form processing, serverless functions, and split testing. Not all Netlify sites use Netlify CMS, and not all sites using Netlify CMS are on Netlify.
 
-The folks at Netlify created Netlify CMS to fill a gap in the static site generation pipeline. There were some great proprietary headless CMS options, but no real contenders that were open source and extensible—that could turn into a community-built ecosystem like WordPress or Drupal. For that reason, Netlify CMS is *made* to be community-driven, and has never been locked to the Netlify platform (despite the name).
+The folks at Netlify created Netlify CMS to fill a gap in the static site generation pipeline. There were some great proprietary headless CMS options, but no real contenders that were open source and extensible—that could turn into a community-built ecosystem like WordPress or Drupal. For that reason, Netlify CMS is _made_ to be community-driven, and has never been locked to the Netlify platform (despite the name).
 
 With this in mind, you can:
 
@@ -125,7 +125,7 @@ _If public_folder is not set, Netlify CMS defaults to the same value as media_fo
 
 Collections define the structure for the different content types on your static site. Since every site is different, the collections settings differ greatly from one site to the next.
 
-Let's say your site has a blog, with the posts stored in _posts/blog, and files saved in a date-title format, like 1999-12-31-lets-party.md. Each post begins with settings in yaml-formatted front matter, like so:
+Let's say your site has a blog, with the posts stored in \_posts/blog, and files saved in a date-title format, like 1999-12-31-lets-party.md. Each post begins with settings in yaml-formatted front matter, like so:
 
 Given this example, our collections settings would look like this in your NetlifyCMS config.yml file:
 
@@ -377,7 +377,7 @@ me](https://github.com/EarlGeorge/React-Gatsby/blob/master/README.md)
 
 This guide will help you get started using Netlify CMS and Gatsby.
 
-To get up and running with Gatsby, you'll need to have [Node.js](https://nodejs.org/) installed on your computer. *Note: Gatsby's minimum supported Node.js version is Node 8.*
+To get up and running with Gatsby, you'll need to have [Node.js](https://nodejs.org/) installed on your computer. _Note: Gatsby's minimum supported Node.js version is Node 8._
 
 ## Create a new Gatsby site
 

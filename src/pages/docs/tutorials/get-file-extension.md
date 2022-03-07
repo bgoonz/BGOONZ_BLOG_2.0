@@ -3,10 +3,10 @@ title: How to get the file extension
 weight: 0
 excerpt: How to get the file extension
 seo:
-  title: ''
-  description: 'How to get the file extension'
-  robots: []
-  extra: []
+    title: ''
+    description: 'How to get the file extension'
+    robots: []
+    extra: []
 template: docs
 ---
 

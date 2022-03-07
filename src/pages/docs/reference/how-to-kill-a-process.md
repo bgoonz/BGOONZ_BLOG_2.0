@@ -24,19 +24,19 @@ The steps I'm going to outline will work on almost every Linux distribution, whe
 
 ### Locating the process
 
-The first step in killing the unresponsive process is locating it. There are two commands I use to locate a process: *top *and *ps*. Top is a tool every administrator should get to know. With *top*, you get a full listing of currently running process. From the command line, issue *top* to see a list of your running processes (Figure 1).
+The first step in killing the unresponsive process is locating it. There are two commands I use to locate a process: *top *and _ps_. Top is a tool every administrator should get to know. With _top_, you get a full listing of currently running process. From the command line, issue _top_ to see a list of your running processes (Figure 1).
 
 ![](https://lcom.static.linuxfound.org/sites/lcom/files/killa.jpg)
 
 Figure 1: The top command gives you plenty of information.
 
-From this list you will see some rather important information. Say, for example, Chrome has become unresponsive. According to our *top* display, we can discern there are four instances of chrome running with Process IDs (PID) 3827, 3919, 10764, and 11679. This information will be important to have with one particular method of killing the process.
+From this list you will see some rather important information. Say, for example, Chrome has become unresponsive. According to our _top_ display, we can discern there are four instances of chrome running with Process IDs (PID) 3827, 3919, 10764, and 11679. This information will be important to have with one particular method of killing the process.
 
-Although *top* is incredibly handy, it's not always the most efficient means of getting the information you need. Let's say you know the Chrome process is what you need to kill, and you don't want to have to glance through the real-time information offered by *top*. For that, you can make use of the *ps *command and filter the output through *grep*. The *ps* command reports a snapshot of a current process and *grep *prints lines matching a pattern. The reason why we filter *ps* through *grep* is simple: If you issue the *ps* command by itself, you will get a snapshot listing of all current processes. We only want the listing associated with Chrome. So this command would look like:
+Although _top_ is incredibly handy, it's not always the most efficient means of getting the information you need. Let's say you know the Chrome process is what you need to kill, and you don't want to have to glance through the real-time information offered by _top_. For that, you can make use of the *ps *command and filter the output through _grep_. The _ps_ command reports a snapshot of a current process and *grep *prints lines matching a pattern. The reason why we filter _ps_ through _grep_ is simple: If you issue the _ps_ command by itself, you will get a snapshot listing of all current processes. We only want the listing associated with Chrome. So this command would look like:
 
 ps aux | grep chrome
 
-The *aux* options are as follows:
+The _aux_ options are as follows:
 
 -   a = show processes for all users
 
@@ -44,7 +44,7 @@ The *aux* options are as follows:
 
 -   x = also show processes not attached to a terminal
 
-The *x* option is important when you're hunting for information regarding a graphical application.
+The _x_ option is important when you're hunting for information regarding a graphical application.
 
 When you issue the command above, you'll be given more information than you need (Figure 2) for the killing of a process, but it is sometimes more efficient than using top.
 
@@ -158,7 +158,7 @@ So, let's now use the *kill *command to kill our instance of chrome. The structu
 
 kill SIGNAL PID
 
-Where SIGNAL is the signal to be sent and PID is the Process ID to be killed. We already know, from our *ps* command that the IDs we want to kill are 3827, 3919, 10764, and 11679. So to send the kill signal, we'd issue the commands:
+Where SIGNAL is the signal to be sent and PID is the Process ID to be killed. We already know, from our _ps_ command that the IDs we want to kill are 3827, 3919, 10764, and 11679. So to send the kill signal, we'd issue the commands:
 
 kill -9 3827
 

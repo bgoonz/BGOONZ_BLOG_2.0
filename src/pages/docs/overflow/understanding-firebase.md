@@ -12,7 +12,7 @@ template: docs
 
 # Understand Firebase projects
 
-**Note:** If you're using the [Firebase Management REST API](https://firebase.google.com/docs/projects/api/reference/rest?authuser=0) to programmatically create a Firebase project, you must first [create a Google Cloud project](https://cloud.google.com/resource-manager/reference/rest/v1/projects?authuser=0), then [add Firebase services](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/addFirebase?authuser=0) to the existing project.**Note:** The [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id) are the truly *unique identifiers* for a project across all of Firebase and Google Cloud.**After Firebase provisions resources for a Firebase project, you cannot change its project ID.** To use a specific identifier for Firebase resources, you must edit the project ID during the initial creation of the project.**Caution:** We do not recommend manually modifying an app's Firebase config file or object. If you initialize an app with invalid or missing values for any of these required "Firebase options", then your end users may experience serious issues.**Note:** For each Android app, if you provide a SHA-1 key for the app, you need to provide a package name and SHA-1 key combination that is globally unique across all of Google Cloud.
+**Note:** If you're using the [Firebase Management REST API](https://firebase.google.com/docs/projects/api/reference/rest?authuser=0) to programmatically create a Firebase project, you must first [create a Google Cloud project](https://cloud.google.com/resource-manager/reference/rest/v1/projects?authuser=0), then [add Firebase services](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/addFirebase?authuser=0) to the existing project.**Note:** The [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id) are the truly _unique identifiers_ for a project across all of Firebase and Google Cloud.**After Firebase provisions resources for a Firebase project, you cannot change its project ID.** To use a specific identifier for Firebase resources, you must edit the project ID during the initial creation of the project.**Caution:** We do not recommend manually modifying an app's Firebase config file or object. If you initialize an app with invalid or missing values for any of these required "Firebase options", then your end users may experience serious issues.**Note:** For each Android app, if you provide a SHA-1 key for the app, you need to provide a package name and SHA-1 key combination that is globally unique across all of Google Cloud.
 
 This page offers brief overviews of several important concepts about Firebase projects. When available, follow the links to find more detailed information about features, services, and even other platforms. At the bottom of this page, find a listing of [general best practices](https://firebase.google.com/docs/projects/learn-more?authuser=0#best-practices) for Firebase projects.
 
@@ -46,7 +46,7 @@ Make sure to review some [general project-level best practices](https://firebase
 
 ### The project name
 
-When you create a project, you provide a **project name**. This identifier is the *internal-only name* for a project in the [Firebase console](https://firebase.google.com/docs/projects/learn-more?authuser=0#manage-console), the [Google Cloud Console](https://cloud.google.com/docs/overview/?authuser=0#google-cloud-console), and the [Firebase CLI](https://firebase.google.com/docs/projects/learn-more?authuser=0#manage-cli). The project name is not exposed in any publicly visible Firebase or Google Cloud product, service, or resource; it simply serves to help you more easily distinguish among multiple projects.
+When you create a project, you provide a **project name**. This identifier is the _internal-only name_ for a project in the [Firebase console](https://firebase.google.com/docs/projects/learn-more?authuser=0#manage-console), the [Google Cloud Console](https://cloud.google.com/docs/overview/?authuser=0#google-cloud-console), and the [Firebase CLI](https://firebase.google.com/docs/projects/learn-more?authuser=0#manage-cli). The project name is not exposed in any publicly visible Firebase or Google Cloud product, service, or resource; it simply serves to help you more easily distinguish among multiple projects.
 
 You can edit a project name at any time in the settings [**Project settings**](https://console.firebase.google.com/project/_/settings/general/?authuser=0) of the Firebase console. The project name is displayed in the top pane.
 
@@ -127,10 +127,10 @@ A Firebase config file or object associates an app with a specific Firebase proj
 -   **Application ID ("AppID")**: the unique identifier for the Firebase app across all of Firebase with a platform-specific format:
 
     -   Firebase iOS apps: GOOGLE_APP_ID (example value: 1:1234567890:ios:321abc456def7890)
-        This is *not* an Apple bundle ID.
+        This is _not_ an Apple bundle ID.
 
     -   Firebase Android apps: mobilesdk_app_id (example value: 1:1234567890:android:321abc456def7890)
-        This is *not* an Android package name or Android application ID.
+        This is _not_ an Android package name or Android application ID.
 
     -   Firebase Web apps: appId (example value: 1:65211879909:web:3ae38ef1cdcb2e01fe5f0c)
 
@@ -170,7 +170,7 @@ Using the [Firebase Management REST API](https://firebase.google.com/docs/projec
 
 **Ensure that all apps within a project are platform variants of the same application** from an end-user perspective. It's advisable to register the iOS, Android, and web versions of the same app or game with the same Firebase project. All the apps in a project generally share the same Firebase resources (database, storage buckets, etc.).
 
-If you have **_multiple build variants_** with different iOS bundle IDs or Android package names defined, you can register each variant with a separate Firebase project. However, if you have variants that share the *same* Firebase resources, register them with the *same* Firebase project.
+If you have **_multiple build variants_** with different iOS bundle IDs or Android package names defined, you can register each variant with a separate Firebase project. However, if you have variants that share the _same_ Firebase resources, register them with the _same_ Firebase project.
 
 Here are some general limits for Firebase projects, apps, and sites:
 
@@ -208,6 +208,6 @@ For example, if you develop a white label application, each independently labell
 
 -   Set up [budget alerts](https://firebase.google.com/docs/projects/billing/avoid-surprise-bills?authuser=0#set-up-budget-alert-emails) for your project in the Google Cloud Console.
 
--   Monitor the [*Usage and billing* dashboard](https://console.firebase.google.com/project/_/usage?authuser=0) in the Firebase console to get an overall picture of your project's usage across multiple Firebase services.
+-   Monitor the [_Usage and billing_ dashboard](https://console.firebase.google.com/project/_/usage?authuser=0) in the Firebase console to get an overall picture of your project's usage across multiple Firebase services.
 
 -   Review the [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist?authuser=0).

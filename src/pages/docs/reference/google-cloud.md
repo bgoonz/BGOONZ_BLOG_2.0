@@ -177,15 +177,15 @@ Arguments can be Positional args or Flags
 
     A flag can be either a:
 
-    -   *Name-value pair* (--foo=bar), or
+    -   _Name-value pair_ (--foo=bar), or
 
-    -   *Boolean* (--force/no-force).
+    -   _Boolean_ (--force/no-force).
 
     Additionally, flags can either be:
 
     -   _Required_
 
-    -   *Optional:* in which case, the default value is used, if the flag is not defined
+    -   _Optional:_ in which case, the default value is used, if the flag is not defined
 
 ### Global flags
 
@@ -227,36 +227,36 @@ For example: gcloud + compute + instances + create + example-instance-1 + --zone
 
 #### Release level
 
-*Release Level* refers to the command's release status.
+_Release Level_ refers to the command's release status.
 
-*Example:* alpha for alpha commands, beta for beta commands, no release level needed for GA commands.
+_Example:_ alpha for alpha commands, beta for beta commands, no release level needed for GA commands.
 
 #### Component
 
-*Component* refers to the different Google Cloud services.
+_Component_ refers to the different Google Cloud services.
 
-*Example:* compute for Compute Engine, app for App Engine, etc.
+_Example:_ compute for Compute Engine, app for App Engine, etc.
 
 #### Entity
 
-*Entity* refers to the plural form of an element or collection of elements under a component.
+_Entity_ refers to the plural form of an element or collection of elements under a component.
 
-*Example:* disks, firewalls, images, instances, regions, zones for compute
+_Example:_ disks, firewalls, images, instances, regions, zones for compute
 
 #### Operation
 
-*Operation* refers to the imperative verb form of the operation to be performed on the entity.
+_Operation_ refers to the imperative verb form of the operation to be performed on the entity.
 
-*Example:* Common operations are describe, list, create/update, delete/clear, import, export, copy, remove, add, reset, restart, restore, run, and deploy.
+_Example:_ Common operations are describe, list, create/update, delete/clear, import, export, copy, remove, add, reset, restart, restore, run, and deploy.
 
 #### Positional args
 
-*Positional args* refer to the required, order-specific arguments needed to execute the command.
+_Positional args_ refer to the required, order-specific arguments needed to execute the command.
 
-*Example:* \<INSTANCE_NAMES> is the required positional argument for gcloud compute instances create.
+_Example:_ \<INSTANCE_NAMES> is the required positional argument for gcloud compute instances create.
 
 #### Flags
 
-*Flags* refer to the additional arguments, --flag-name(=value), passed in to the command after positional args.
+_Flags_ refer to the additional arguments, --flag-name(=value), passed in to the command after positional args.
 
-*Example:* --machine-type=\<MACHINE_TYPE> and --preemptible are optional flags for gcloud compute instances create.
+_Example:_ --machine-type=\<MACHINE_TYPE> and --preemptible are optional flags for gcloud compute instances create.

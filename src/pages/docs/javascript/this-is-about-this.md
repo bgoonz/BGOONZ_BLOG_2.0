@@ -18,35 +18,35 @@ template: docs
 const arrowFunction = () => {  console.log(this);};
 ```
 
-In this case, the value of `this` is *always* the same as `this` in the parent scope:
+In this case, the value of `this` is _always_ the same as `this` in the parent scope:
 
 ```
 const outerThis = this;const arrowFunction = () => {  // Always logs `true`:  console.log(this === outerThis);};
 ```
 
-Arrow functions are great because the inner value of `this` can't be changed, it's *always* the same as the outer `this`.
+Arrow functions are great because the inner value of `this` can't be changed, it's _always_ the same as the outer `this`.
 
 ### Other examples [#](https://web.dev/javascript-this/#other-examples)
 
-With arrow functions, the value of `this` *can't* be changed with [`bind`](https://web.dev/javascript-this/#bound):
+With arrow functions, the value of `this` _can't_ be changed with [`bind`](https://web.dev/javascript-this/#bound):
 
 ```
 // Logs `true` - bound `this` value is ignored:arrowFunction.bind({foo: 'bar'})();
 ```
 
-With arrow functions, the value of `this` *can't* be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
+With arrow functions, the value of `this` _can't_ be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
 
 ```
 // Logs `true` - called `this` value is ignored:arrowFunction.call({foo: 'bar'});// Logs `true` - applied `this` value is ignored:arrowFunction.apply({foo: 'bar'});
 ```
 
-With arrow functions, the value of `this` *can't* be changed by calling the function as a member of another object:
+With arrow functions, the value of `this` _can't_ be changed by calling the function as a member of another object:
 
 ```
 const obj = {arrowFunction};// Logs `true` - parent object is ignored:obj.arrowFunction();
 ```
 
-With arrow functions, the value of `this` *can't* be changed by calling the function as a constructor:
+With arrow functions, the value of `this` _can't_ be changed by calling the function as a constructor:
 
 ```
 // TypeError: arrowFunction is not a constructornew arrowFunction();
@@ -94,13 +94,13 @@ function MyClass() {  console.log(    this.constructor === Object.create(MyClass
 
 ### Other examples [#](https://web.dev/javascript-this/#other-examples-2)
 
-When called with `new`, the value of `this` *can't* be changed with [`bind`](https://web.dev/javascript-this/#bound):
+When called with `new`, the value of `this` _can't_ be changed with [`bind`](https://web.dev/javascript-this/#bound):
 
 ```
 const BoundMyClass = MyClass.bind({foo: 'bar'});// Logs `true` - bound `this` value is ignored:new BoundMyClass();
 ```
 
-When called with `new`, the value of `this` *can't* be changed by calling the function as a member of another object:
+When called with `new`, the value of `this` _can't_ be changed by calling the function as a member of another object:
 
 ```
 const obj = {MyClass};// Logs `true` - parent object is ignored:new obj.MyClass();
@@ -124,13 +124,13 @@ Don't use `bind` to set `this` to some value unrelated to the parent object; it'
 
 ### Other examples [#](https://web.dev/javascript-this/#other-examples-3)
 
-When calling a bound function, the value of `this` *can't* be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
+When calling a bound function, the value of `this` _can't_ be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
 
 ```
 // Logs `true` - called `this` value is ignored:console.log(boundFunction.call({foo: 'bar'}) === boundObject);// Logs `true` - applied `this` value is ignored:console.log(boundFunction.apply({foo: 'bar'}) === boundObject);
 ```
 
-When calling a bound function, the value of `this` *can't* be changed by calling the function as a member of another object:
+When calling a bound function, the value of `this` _can't_ be changed by calling the function as a member of another object:
 
 ```
 const obj = {boundFunction};// Logs `true` - parent object is ignored:console.log(obj.boundFunction() === boundObject);
@@ -174,7 +174,7 @@ In this case the function is called as a member of `obj`, so `this` will be `obj
 const {someMethod} = obj;// Logs `false`:console.log(someMethod() === obj);const anotherObj = {someMethod};// Logs `false`:console.log(anotherObj.someMethod() === obj);// Logs `true`:console.log(anotherObj.someMethod() === anotherObj);
 ```
 
-`someMethod() === obj` is false because `someMethod` *isn't* called as a member of `obj`. You might have encountered this gotcha when trying something like this:
+`someMethod() === obj` is false because `someMethod` _isn't_ called as a member of `obj`. You might have encountered this gotcha when trying something like this:
 
 ```
 const $ = document.querySelector;// TypeError: Illegal invocationconst el = $('.some-element');

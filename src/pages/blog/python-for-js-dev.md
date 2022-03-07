@@ -65,7 +65,7 @@ thumb_image_alt: python logo
 
 No Decimal Point
 
-> Created by a literal non-decimal point number … **or** … with the *int()* constructor.
+> Created by a literal non-decimal point number … **or** … with the _int()_ constructor.
 
 **3. Complex Numbers**
 
@@ -113,7 +113,7 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 -   Python let's you use ranges
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)_
 
 -   The end range is exclusive just like slice in JS.
 

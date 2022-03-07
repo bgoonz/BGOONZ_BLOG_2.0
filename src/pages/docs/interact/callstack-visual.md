@@ -32,7 +32,7 @@ template: docs
 
 ###### About the Call Stack
 
-**TL;DR** *The **Call Stack** tracks function calls. It is a LIFO stack of frames. Each frame represents a function call.*
+**TL;DR** _The **Call Stack** tracks function calls. It is a LIFO stack of frames. Each frame represents a function call._
 
 ---
 
@@ -42,7 +42,7 @@ When a JavaScript program first starts executing, the **Call Stack** is empty. W
 
 ###### About the Event Loop
 
-**TL;DR** *The **Event Loop** processes Tasks and Microtasks. It places them into the Call Stack for execution one at a time. It also controls when rerendering occurs.*
+**TL;DR** _The **Event Loop** processes Tasks and Microtasks. It places them into the Call Stack for execution one at a time. It also controls when rerendering occurs._
 
 ---
 

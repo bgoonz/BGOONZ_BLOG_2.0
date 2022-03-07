@@ -3,10 +3,10 @@ title: Rotate (Array) Problem Walkthrough
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: 'Rotate (Array) Problem Walkthrough'
-  description: ' The function should return a new array where the elements of the array are rotated to the right number times. The function should not mutate the original array and instead return a new array.'
-  robots: []
-  extra: []
+    title: 'Rotate (Array) Problem Walkthrough'
+    description: ' The function should return a new array where the elements of the array are rotated to the right number times. The function should not mutate the original array and instead return a new array.'
+    robots: []
+    extra: []
 template: docs
 ---
 
@@ -26,7 +26,7 @@ Write a function `rotateRight(array, num)` that takes in an array and a number
 
 **HINT:** you can use [Array#slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to create a copy of an array
 
-* * * * *
+---
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 
@@ -94,14 +94,14 @@ cats.unshift('Puff', 'George'); // ['Puff', 'George', 'Willy', 'Bob']
 **Step 1.**\
 We need to start the function and create a variable to hold a COPY of our input array.
 
- let rotateRight = function (array, num) { 
- let result = array.slice(0); 
- }; 
+let rotateRight = function (array, num) {
+let result = array.slice(0);
+};
 
 [view raw](https://gist.github.com/bgoonz/ca7a48c316345f6f7acd9383e13fb23e/raw/ec4c2296e563c005a0091d35cf4299c17944b826/copy-arr.js)[copy-arr.js ](https://gist.github.com/bgoonz/ca7a48c316345f6f7acd9383e13fb23e#file-copy-arr-js)hosted with ❤ by [GitHub](https://github.com/)
 
 [**Array.prototype.slice()**\
-*The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end...*developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice")[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+*The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end...*developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice')[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 -   We assign array.slice(0) to a variable called result.
 -   Slicing our input array simply creates a sliced copy of the data.
@@ -110,12 +110,12 @@ We need to start the function and create a variable to hold a COPY of our input 
 **Step 2.**\
 We need to create a for loop to tell our function how many times we want to rotate.
 
- let rotateRight = function (array, num) { 
- let result = array.slice(0); 
- for (var i = 0; i < num; i++) { 
- // some code here 
- } 
- }; 
+let rotateRight = function (array, num) {
+let result = array.slice(0);
+for (var i = 0; i < num; i++) {
+// some code here
+}
+};
 
 [view raw](https://gist.github.com/bgoonz/b2a934289a677f337a72bcd7751a55df/raw/7e76928d94617e115e3f894d1557caf1f8549590/for-loop-rotate.js)[for-loop-rotate.js ](https://gist.github.com/bgoonz/b2a934289a677f337a72bcd7751a55df#file-for-loop-rotate-js)hosted with ❤ by [GitHub](https://github.com/)
 
@@ -125,13 +125,13 @@ We need to create a for loop to tell our function how many times we want to rota
 **Step 3.**\
 We need to put some executable code within our for loop to be run during every cycle.
 
- let rotateRight = function (array, num) { 
- let result = array.slice(0); 
- for (var i = 0; i < num; i++) { 
- let ele = result.pop(); 
- result.unshift(ele); 
- } 
- }; 
+let rotateRight = function (array, num) {
+let result = array.slice(0);
+for (var i = 0; i < num; i++) {
+let ele = result.pop();
+result.unshift(ele);
+}
+};
 
 [view raw](https://gist.github.com/bgoonz/44e66960ba5cc0ffe04ea0499f7c3134/raw/8427e5139b96194f78552f10af07e6309ea2135a/rot.js)[rot.js ](https://gist.github.com/bgoonz/44e66960ba5cc0ffe04ea0499f7c3134#file-rot-js)hosted with ❤ by [GitHub](https://github.com/)
 
@@ -150,14 +150,14 @@ We need to put some executable code within our for loop to be run during every c
 
 Now that our for loop has ended and our copied array looks just like how the answer looks, we need to output the answer.
 
- let rotateRight = function (array, num) { 
- let result = array.slice(0); 
- for (var i = 0; i < num; i++) { 
- let ele = result.pop(); 
- result.unshift(ele); 
- } 
- return result; 
- }; 
+let rotateRight = function (array, num) {
+let result = array.slice(0);
+for (var i = 0; i < num; i++) {
+let ele = result.pop();
+result.unshift(ele);
+}
+return result;
+};
 
 [view raw](https://gist.github.com/bgoonz/b033f820c35869af0869ce712af68bda/raw/41176af3dce167556337e74744c3156756f470b1/rot2.js)[rot2.js ](https://gist.github.com/bgoonz/b033f820c35869af0869ce712af68bda#file-rot2-js)hosted with ❤ by [GitHub](https://github.com/)
 
@@ -165,23 +165,23 @@ Now that our for loop has ended and our copied array looks just like how the ans
 
 ### End Result
 
- let rotateRight = function (array, num) { 
- let result = array.slice(0); 
- for (let i = 0; i < num; i++) { 
- let ele = result.pop(); 
- result.unshift(ele); 
- } 
- return result; 
- }; 
- //let arr = ["a", "b", "c", "d", "e"]; 
- console.log(rotateRight(arr, 2)); 
- //["d", "e", "a", "b", "c"]; 
- console.log(arr); 
- ["a", "b", "c", "d", "e"]; 
- let animals = ["wombat", "koala", "opossum", "kangaroo"]; 
- console.log(rotateRight(animals, 3)); 
- //["koala", "opossum", "kangaroo", "wombat"]; 
- console.log(animals); 
- //["wombat", "koala", "opossum", "kangaroo"]; 
+let rotateRight = function (array, num) {
+let result = array.slice(0);
+for (let i = 0; i < num; i++) {
+let ele = result.pop();
+result.unshift(ele);
+}
+return result;
+};
+//let arr = ["a", "b", "c", "d", "e"];
+console.log(rotateRight(arr, 2));
+//["d", "e", "a", "b", "c"];
+console.log(arr);
+["a", "b", "c", "d", "e"];
+let animals = ["wombat", "koala", "opossum", "kangaroo"];
+console.log(rotateRight(animals, 3));
+//["koala", "opossum", "kangaroo", "wombat"];
+console.log(animals);
+//["wombat", "koala", "opossum", "kangaroo"];
 
 [view raw](https://gist.github.com/bgoonz/4e2a040cd94006bb887a77a68f4287b9/raw/83bafeb8c66bf5a3653b88a2215fdf67efd9c24a/rotate.js)[rotate.js ](https://gist.github.com/bgoonz/4e2a040cd94006bb887a77a68f4287b9#file-rotate-js)hosted with ❤ by [GitHub](https://github.com/)

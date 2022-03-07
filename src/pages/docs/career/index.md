@@ -3,19 +3,18 @@ title: Career
 weight: 0
 excerpt: Reference materials and descriptions of fundamental concepts as well as visua
 seo:
-  title: Job Hunt
-  description: Job search guidance for front end web developers.
-  robots: []
-  extra:
-    - name: 'og:image'
-      value: images/7-b052e510.jpg
-      keyName: property
-      relativeUrl: true
+    title: Job Hunt
+    description: Job search guidance for front end web developers.
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/7-b052e510.jpg
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
 
 # Job Search Docs:
-
 
 <br>
 <br>
@@ -34,6 +33,3 @@ template: docs
 <br>
 <br>
 <br>
-
-
-

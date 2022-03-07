@@ -3,46 +3,48 @@ title: ECMAScript 6
 weight: 0
 excerpt: is the latest version of the ECMAScript standard
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
 
-
 ## Introduction
-ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard.  ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
+
+ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
 
 See the [ES6 standard](http://www.ecma-international.org/ecma-262/6.0/) for full specification of the ECMAScript 6 language.
 
 ES6 includes the following new features:
-- [arrows](#arrows)
-- [classes](#classes)
-- [enhanced object literals](#enhanced-object-literals)
-- [template strings](#template-strings)
-- [destructuring](#destructuring)
-- [default + rest + spread](#default--rest--spread)
-- [let + const](#let--const)
-- [iterators + for..of](#iterators--forof)
-- [generators](#generators)
-- [unicode](#unicode)
-- [modules](#modules)
-- [module loaders](#module-loaders)
-- [map + set + weakmap + weakset](#map--set--weakmap--weakset)
-- [proxies](#proxies)
-- [symbols](#symbols)
-- [subclassable built-ins](#subclassable-built-ins)
-- [promises](#promises)
-- [math + number + string + array + object APIs](#math--number--string--array--object-apis)
-- [binary and octal literals](#binary-and-octal-literals)
-- [reflect api](#reflect-api)
-- [tail calls](#tail-calls)
+
+-   [arrows](#arrows)
+-   [classes](#classes)
+-   [enhanced object literals](#enhanced-object-literals)
+-   [template strings](#template-strings)
+-   [destructuring](#destructuring)
+-   [default + rest + spread](#default--rest--spread)
+-   [let + const](#let--const)
+-   [iterators + for..of](#iterators--forof)
+-   [generators](#generators)
+-   [unicode](#unicode)
+-   [modules](#modules)
+-   [module loaders](#module-loaders)
+-   [map + set + weakmap + weakset](#map--set--weakmap--weakset)
+-   [proxies](#proxies)
+-   [symbols](#symbols)
+-   [subclassable built-ins](#subclassable-built-ins)
+-   [promises](#promises)
+-   [math + number + string + array + object APIs](#math--number--string--array--object-apis)
+-   [binary and octal literals](#binary-and-octal-literals)
+-   [reflect api](#reflect-api)
+-   [tail calls](#tail-calls)
 
 ## ECMAScript 6 Features
 
 ### Arrows
-Arrows are a function shorthand using the `=>` syntax.  They are syntactically similar to the related feature in C#, Java 8 and CoffeeScript.  They support both statement block bodies as well as expression bodies which return the value of the expression.  Unlike functions, arrows share the same lexical `this` as their surrounding code.
+
+Arrows are a function shorthand using the `=>` syntax. They are syntactically similar to the related feature in C#, Java 8 and CoffeeScript. They support both statement block bodies as well as expression bodies which return the value of the expression. Unlike functions, arrows share the same lexical `this` as their surrounding code.
 
 ```JavaScript
 // Expression bodies
@@ -70,7 +72,8 @@ var bob = {
 More info: [MDN Arrow Functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ### Classes
-ES6 classes are a simple sugar over the prototype-based OO pattern.  Having a single convenient declarative form makes class patterns easier to use, and encourages interoperability.  Classes support prototype-based inheritance, super calls, instance and static methods and constructors.
+
+ES6 classes are a simple sugar over the prototype-based OO pattern. Having a single convenient declarative form makes class patterns easier to use, and encourages interoperability. Classes support prototype-based inheritance, super calls, instance and static methods and constructors.
 
 ```JavaScript
 class SkinnedMesh extends THREE.Mesh {
@@ -101,7 +104,8 @@ class SkinnedMesh extends THREE.Mesh {
 More info: [MDN Classes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
 
 ### Enhanced Object Literals
-Object literals are extended to support setting the prototype at construction, shorthand for `foo: foo` assignments, defining methods, making super calls, and computing property names with expressions.  Together, these also bring object literals and class declarations closer together, and let object-based design benefit from some of the same conveniences.
+
+Object literals are extended to support setting the prototype at construction, shorthand for `foo: foo` assignments, defining methods, making super calls, and computing property names with expressions. Together, these also bring object literals and class declarations closer together, and let object-based design benefit from some of the same conveniences.
 
 ```JavaScript
 var obj = {
@@ -122,7 +126,8 @@ var obj = {
 More info: [MDN Grammar and types: Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals)
 
 ### Template Strings
-Template strings provide syntactic sugar for constructing strings.  This is similar to string interpolation features in Perl, Python and more.  Optionally, a tag can be added to allow the string construction to be customized, avoiding injection attacks or constructing higher level data structures from string contents.
+
+Template strings provide syntactic sugar for constructing strings. This is similar to string interpolation features in Perl, Python and more. Optionally, a tag can be added to allow the string construction to be customized, avoiding injection attacks or constructing higher level data structures from string contents.
 
 ```JavaScript
 // Basic literal string creation
@@ -147,7 +152,8 @@ POST`http://foo.org/bar?a=${a}&b=${b}
 More info: [MDN Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
 ### Destructuring
-Destructuring allows binding using pattern matching, with support for matching arrays and objects.  Destructuring is fail-soft, similar to standard object lookup `foo["bar"]`, producing `undefined` values when not found.
+
+Destructuring allows binding using pattern matching, with support for matching arrays and objects. Destructuring is fail-soft, similar to standard object lookup `foo["bar"]`, producing `undefined` values when not found.
 
 ```JavaScript
 // list matching
@@ -179,7 +185,8 @@ a === 1;
 More info: [MDN Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 ### Default + Rest + Spread
-Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
+
+Callee-evaluated default parameter values. Turn an array into consecutive arguments in a function call. Bind trailing parameters to an array. Rest replaces the need for `arguments` and addresses common cases more directly.
 
 ```JavaScript
 function f(x, y=12) {
@@ -188,6 +195,7 @@ function f(x, y=12) {
 }
 f(3) == 15
 ```
+
 ```JavaScript
 function f(x, ...y) {
   // y is an Array
@@ -195,6 +203,7 @@ function f(x, ...y) {
 }
 f(3, "hello", true) == 6
 ```
+
 ```JavaScript
 function f(x, y, z) {
   return x + y + z;
@@ -206,8 +215,8 @@ f(...[1,2,3]) == 6
 More MDN info: [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters), [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 ### Let + Const
-Block-scoped binding constructs.  `let` is the new `var`.  `const` is single-assignment.  Static restrictions prevent use before assignment.
 
+Block-scoped binding constructs. `let` is the new `var`. `const` is single-assignment. Static restrictions prevent use before assignment.
 
 ```JavaScript
 function f() {
@@ -228,7 +237,8 @@ function f() {
 More MDN info: [let statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), [const statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 ### Iterators + For..Of
-Iterator objects enable custom iteration like CLR IEnumerable or Java Iterable.  Generalize `for..in` to custom iterator-based iteration with `for..of`.  Don't require realizing an array, enabling lazy design patterns like LINQ.
+
+Iterator objects enable custom iteration like CLR IEnumerable or Java Iterable. Generalize `for..in` to custom iterator-based iteration with `for..of`. Don't require realizing an array, enabling lazy design patterns like LINQ.
 
 ```JavaScript
 let fibonacci = {
@@ -252,6 +262,7 @@ for (var n of fibonacci) {
 ```
 
 Iteration is based on these duck-typed interfaces (using [TypeScript](http://typescriptlang.org) type syntax for exposition only):
+
 ```TypeScript
 interface IteratorResult {
   done: boolean;
@@ -268,7 +279,8 @@ interface Iterable {
 More info: [MDN for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 
 ### Generators
-Generators simplify iterator-authoring using `function*` and `yield`.  A function declared as function* returns a Generator instance.  Generators are subtypes of iterators which include additional  `next` and `throw`.  These enable values to flow back into the generator, so `yield` is an expression form which returns a value (or throws).
+
+Generators simplify iterator-authoring using `function*` and `yield`. A function declared as function\* returns a Generator instance. Generators are subtypes of iterators which include additional `next` and `throw`. These enable values to flow back into the generator, so `yield` is an expression form which returns a value (or throws).
 
 Note: Can also be used to enable 'await'-like async programming, see also ES7 `await` proposal.
 
@@ -305,7 +317,8 @@ interface Generator extends Iterator {
 More info: [MDN Iteration protocols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
 
 ### Unicode
-Non-breaking additions to support full Unicode, including new Unicode literal form in strings and new RegExp `u` mode to handle code points, as well as new APIs to process strings at the 21bit code points level.  These additions support building global apps in JavaScript.
+
+Non-breaking additions to support full Unicode, including new Unicode literal form in strings and new RegExp `u` mode to handle code points, as well as new APIs to process strings at the 21bit code points level. These additions support building global apps in JavaScript.
 
 ```JavaScript
 // same as ES5.1
@@ -329,7 +342,8 @@ for(var c of "𠮷") {
 More info: [MDN RegExp.prototype.unicode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
 
 ### Modules
-Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model - no code executes until requested modules are available and processed.
+
+Language-level support for modules for component definition. Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader. Implicitly async model - no code executes until requested modules are available and processed.
 
 ```JavaScript
 // lib/math.js
@@ -338,11 +352,13 @@ export function sum(x, y) {
 }
 export var pi = 3.141593;
 ```
+
 ```JavaScript
 // app.js
 import * as math from "lib/math";
 alert("2π = " + math.sum(math.pi, math.pi));
 ```
+
 ```JavaScript
 // otherApp.js
 import {sum, pi} from "lib/math";
@@ -359,6 +375,7 @@ export default function(x) {
     return Math.log(x);
 }
 ```
+
 ```JavaScript
 // app.js
 import ln, {pi, e} from "lib/mathplusplus";
@@ -368,12 +385,14 @@ alert("2π = " + ln(e)*pi*2);
 More MDN info: [import statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import), [export statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 ### Module Loaders
+
 Module loaders support:
-- Dynamic loading
-- State isolation
-- Global namespace isolation
-- Compilation hooks
-- Nested virtualization
+
+-   Dynamic loading
+-   State isolation
+-   Global namespace isolation
+-   Compilation hooks
+-   Nested virtualization
 
 The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
@@ -395,7 +414,8 @@ System.set('jquery', Module({$: $})); // WARNING: not yet finalized
 ```
 
 ### Map + Set + WeakMap + WeakSet
-Efficient data structures for common algorithms.  WeakMaps provides leak-free object-key'd side tables.
+
+Efficient data structures for common algorithms. WeakMaps provides leak-free object-key'd side tables.
 
 ```JavaScript
 // Sets
@@ -424,7 +444,8 @@ ws.add({ data: 42 });
 More MDN info: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
 ### Proxies
-Proxies enable creation of objects with the full range of behaviors available to host objects.  Can be used for interception, object virtualization, logging/profiling, etc.
+
+Proxies enable creation of objects with the full range of behaviors available to host objects. Can be used for interception, object virtualization, logging/profiling, etc.
 
 ```JavaScript
 // Proxying a normal object
@@ -477,8 +498,8 @@ var handler =
 More info: [MDN Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
 ### Symbols
-Symbols enable access control for object state.  Symbols allow properties to be keyed by either `string` (as in ES5) or `symbol`.  Symbols are a new primitive type. Optional `description` parameter used in debugging - but is not part of identity.  Symbols are unique (like gensym), but not private since they are exposed via reflection features like `Object.getOwnPropertySymbols`.
 
+Symbols enable access control for object state. Symbols allow properties to be keyed by either `string` (as in ES5) or `symbol`. Symbols are a new primitive type. Optional `description` parameter used in debugging - but is not part of identity. Symbols are unique (like gensym), but not private since they are exposed via reflection features like `Object.getOwnPropertySymbols`.
 
 ```JavaScript
 var MyClass = (function() {
@@ -506,13 +527,15 @@ c["key"] === undefined
 More info: [MDN Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
 ### Subclassable Built-ins
+
 In ES6, built-ins like `Array`, `Date` and DOM `Element`s can be subclassed.
 
 Object construction for a function named `Ctor` now uses two-phases (both virtually dispatched):
-- Call `Ctor[@@create]` to allocate the object, installing any special behavior
-- Invoke constructor on new instance to initialize
 
-The known `@@create` symbol is available via `Symbol.create`.  Built-ins now expose their `@@create` explicitly.
+-   Call `Ctor[@@create]` to allocate the object, installing any special behavior
+-   Invoke constructor on new instance to initialize
+
+The known `@@create` symbol is available via `Symbol.create`. Built-ins now expose their `@@create` explicitly.
 
 ```JavaScript
 // Pseudo-code of Array
@@ -538,6 +561,7 @@ arr.length == 2
 ```
 
 ### Math + Number + String + Array + Object APIs
+
 Many new library additions, including core Math libraries, Array conversion helpers, String helpers, and Object.assign for copying.
 
 ```JavaScript
@@ -568,6 +592,7 @@ Object.assign(Point, { origin: new Point(0,0) })
 More MDN info: [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), [Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from), [Array.of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of), [Array.prototype.copyWithin](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin), [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
 ### Binary and Octal Literals
+
 Two new numeric literal forms are added for binary (`b`) and octal (`o`).
 
 ```JavaScript
@@ -576,7 +601,8 @@ Two new numeric literal forms are added for binary (`b`) and octal (`o`).
 ```
 
 ### Promises
-Promises are a library for asynchronous programming.  Promises are a first class representation of a value that may be made available in the future.  Promises are used in many existing JavaScript libraries.
+
+Promises are a library for asynchronous programming. Promises are a first class representation of a value that may be made available in the future. Promises are used in many existing JavaScript libraries.
 
 ```JavaScript
 function timeout(duration = 0) {
@@ -597,7 +623,8 @@ var p = timeout(1000).then(() => {
 More info: [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ### Reflect API
-Full reflection API exposing the runtime-level meta-operations on objects.  This is effectively the inverse of the Proxy API, and allows making calls corresponding to the same meta-operations as the proxy traps.  Especially useful for implementing proxies.
+
+Full reflection API exposing the runtime-level meta-operations on objects. This is effectively the inverse of the Proxy API, and allows making calls corresponding to the same meta-operations as the proxy traps. Especially useful for implementing proxies.
 
 ```JavaScript
 // No sample yet
@@ -606,7 +633,8 @@ Full reflection API exposing the runtime-level meta-operations on objects.  This
 More info: [MDN Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
 
 ### Tail Calls
-Calls in tail-position are guaranteed to not grow the stack unboundedly.  Makes recursive algorithms safe in the face of unbounded inputs.
+
+Calls in tail-position are guaranteed to not grow the stack unboundedly. Makes recursive algorithms safe in the face of unbounded inputs.
 
 ```JavaScript
 function factorial(n, acc = 1) {

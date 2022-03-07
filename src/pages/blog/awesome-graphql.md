@@ -3,7 +3,7 @@ title: Awesome GraphQL
 subtitle: The Death Of REST
 date: '2021-09-30'
 thumb_image_alt: lorem-ipsum
-excerpt:  Working Draft of the Specification for GraphQL created by Facebook
+excerpt: Working Draft of the Specification for GraphQL created by Facebook
 seo:
     title: 'Awesome GraphQL'
     description: 'Awesome GraphQL'

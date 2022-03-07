@@ -54,21 +54,21 @@ The most common example Hello World of Node.js is a web server:
   style="height: 400px; width: 100%; border: 0;">
 </iframe>
 
-<!--```js
-const http = require('http')
+```js
+const http = require('http');
 
-const hostname = '127.0.0.1'
-const port = 3000
+const hostname = '127.0.0.1';
+const port = 3000;
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Hello World\n')
-})
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
+});
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
 ```
 
 To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->

@@ -3,34 +3,32 @@ title: Navigation
 weight: 900
 excerpt: Navigation quick reference
 seo:
-  title: Web Dev Hub
-  description: >-
-    This website contains docs, blogs, a personal portfolio spread out across
-    multiple pages as well as interactive animations and tools.
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Web Dev Hub
-      keyName: property
-    - name: 'og:description'
-      value: Navigation Home
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Web Dev Hub
-    - name: 'twitter:description'
-      value: Navigation Home
-    - name: 'og:image'
-      value: images/background.gif
-      keyName: property
-      relativeUrl: true
+    title: Web Dev Hub
+    description: >-
+        This website contains docs, blogs, a personal portfolio spread out across
+        multiple pages as well as interactive animations and tools.
+    extra:
+        - name: 'og:type'
+          value: website
+          keyName: property
+        - name: 'og:title'
+          value: Web Dev Hub
+          keyName: property
+        - name: 'og:description'
+          value: Navigation Home
+          keyName: property
+        - name: 'twitter:card'
+          value: summary
+        - name: 'twitter:title'
+          value: Web Dev Hub
+        - name: 'twitter:description'
+          value: Navigation Home
+        - name: 'og:image'
+          value: images/background.gif
+          keyName: property
+          relativeUrl: true
 template: docs
 ---
-
-
 
 ### 204. [**🖥️privacy-policy🌍**](https://bgoonz-blog.netlify.app/privacy-policy)
 
@@ -41,6 +39,7 @@ template: docs
 ### 207. [**🏠Home🏠**](https://bgoonz-blog.netlify.app/)
 
 ---
+
 ---
 
 ### 0. [**🖥️blog/300-react-questions🌍**](https://bgoonz-blog.netlify.app/blog/300-react-questions)
@@ -78,6 +77,7 @@ template: docs
 ### 16. [**🖥️blog🌍**](https://bgoonz-blog.netlify.app/blog)
 
 ---
+
 ---
 
 ## DOCS:
@@ -453,5 +453,3 @@ template: docs
 ### 202. [**📖docs/tutorials🌍**](https://bgoonz-blog.netlify.app/docs/tutorials)
 
 ### 203. [**🖥️docs🌍**](https://bgoonz-blog.netlify.app/docs)
-
-

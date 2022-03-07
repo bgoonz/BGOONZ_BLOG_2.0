@@ -169,8 +169,8 @@ title: PropTypes.string.isRequired,
 
 StaticQuery can do most of the things that page query can, including fragments. The main differences are:
 
--   page queries can accept variables (via `pageContext`) but can only be added to *page* components
--   StaticQuery does not accept variables (hence the name "static"), but can be used in *any* component, including pages
+-   page queries can accept variables (via `pageContext`) but can only be added to _page_ components
+-   StaticQuery does not accept variables (hence the name "static"), but can be used in _any_ component, including pages
 -   StaticQuery does not work with raw React.createElement calls; please use JSX, e.g. `<StaticQuery />`
 
 # GraphQL
@@ -211,9 +211,9 @@ You can see immediately that the query has exactly the same shape as the result.
 
 The field `name` returns a `String` type, in this case the name of the main hero of Star Wars, `"R2-D2"`.
 
-> Oh, one more thing - the query above is *interactive*. That means you can change it as you like and see the new result. Try adding an `appearsIn` field to the `hero` object in the query, and see the new result.
+> Oh, one more thing - the query above is _interactive_. That means you can change it as you like and see the new result. Try adding an `appearsIn` field to the `hero` object in the query, and see the new result.
 
-In the previous example, we just asked for the name of our hero which returned a String, but fields can also refer to Objects. In that case, you can make a *sub-selection* of fields for that object. GraphQL queries can traverse related objects and their fields, letting clients fetch lots of related data in one request, instead of making several roundtrips as one would need in a classic REST architecture.
+In the previous example, we just asked for the name of our hero which returned a String, but fields can also refer to Objects. In that case, you can make a _sub-selection_ of fields for that object. GraphQL queries can traverse related objects and their fields, letting clients fetch lots of related data in one request, instead of making several roundtrips as one would need in a classic REST architecture.
 
 {
 
@@ -339,7 +339,7 @@ Arguments can be of many different types. In the above example, we have used an 
 
 ## Aliases[](https://graphql.org/learn/queries/#aliases)
 
-If you have a sharp eye, you may have noticed that, since the result object fields match the name of the field in the query but don't include arguments, you can't directly query for the same field with different arguments. That's why you need *aliases* - they let you rename the result of a field to anything you want.
+If you have a sharp eye, you may have noticed that, since the result object fields match the name of the field in the query but don't include arguments, you can't directly query for the same field with different arguments. That's why you need _aliases_ - they let you rename the result of a field to anything you want.
 
 {
 
@@ -383,7 +383,7 @@ In the above example, the two `hero` fields would have conflicted, but since we 
 
 Let's say we had a relatively complicated page in our app, which lets us look at two heroes side by side, along with their friends. You can imagine that such a query could quickly get complicated, because we would need to repeat the fields at least once - one for each side of the comparison.
 
-That's why GraphQL includes reusable units called *fragments*. Fragments let you construct sets of fields, and then include them in queries where you need to. Here's an example of how you could solve the above situation using fragments:
+That's why GraphQL includes reusable units called _fragments_. Fragments let you construct sets of fields, and then include them in queries where you need to. Here's an example of how you could solve the above situation using fragments:
 
 {
 
@@ -627,7 +627,7 @@ name
 
 Up until now, we have been using a shorthand syntax where we omit both the `query` keyword and the query name, but in production apps it's useful to use these to make our code less ambiguous.
 
-Here's an example that includes the keyword `query` as *operation type* and `HeroNameAndFriends` as *operation name* :
+Here's an example that includes the keyword `query` as _operation type_ and `HeroNameAndFriends` as _operation name_ :
 
 query HeroNameAndFriends {
 
@@ -681,15 +681,15 @@ name
 
 }
 
-The *operation type* is either *query*, *mutation*, or *subscription* and describes what type of operation you're intending to do. The operation type is required unless you're using the query shorthand syntax, in which case you can't supply a name or variable definitions for your operation.
+The _operation type_ is either _query_, _mutation_, or _subscription_ and describes what type of operation you're intending to do. The operation type is required unless you're using the query shorthand syntax, in which case you can't supply a name or variable definitions for your operation.
 
-The *operation name* is a meaningful and explicit name for your operation. It is only required in multi-operation documents, but its use is encouraged because it is very helpful for debugging and server-side logging. When something goes wrong (you see errors either in your network logs, or in the logs of your GraphQL server) it is easier to identify a query in your codebase by name instead of trying to decipher the contents. Think of this just like a function name in your favorite programming language. For example, in JavaScript we can easily work only with anonymous functions, but when we give a function a name, it's easier to track it down, debug our code, and log when it's called. In the same way, GraphQL query and mutation names, along with fragment names, can be a useful debugging tool on the server side to identify different GraphQL requests.
+The _operation name_ is a meaningful and explicit name for your operation. It is only required in multi-operation documents, but its use is encouraged because it is very helpful for debugging and server-side logging. When something goes wrong (you see errors either in your network logs, or in the logs of your GraphQL server) it is easier to identify a query in your codebase by name instead of trying to decipher the contents. Think of this just like a function name in your favorite programming language. For example, in JavaScript we can easily work only with anonymous functions, but when we give a function a name, it's easier to track it down, debug our code, and log when it's called. In the same way, GraphQL query and mutation names, along with fragment names, can be a useful debugging tool on the server side to identify different GraphQL requests.
 
 ## Variables[](https://graphql.org/learn/queries/#variables)
 
 So far, we have been writing all of our arguments inside the query string. But in most applications, the arguments to fields will be dynamic: For example, there might be a dropdown that lets you select which Star Wars episode you are interested in, or a search field, or a set of filters.
 
-It wouldn't be a good idea to pass these dynamic arguments directly in the query string, because then our client-side code would need to dynamically manipulate the query string at runtime, and serialize it into a GraphQL-specific format. Instead, GraphQL has a first-class way to factor dynamic values out of the query, and pass them as a separate dictionary. These values are called *variables*.
+It wouldn't be a good idea to pass these dynamic arguments directly in the query string, because then our client-side code would need to dynamically manipulate the query string at runtime, and serialize it into a GraphQL-specific format. Instead, GraphQL has a first-class way to factor dynamic values out of the query, and pass them as a separate dictionary. These values are called _variables_.
 
 When we start working with variables, we need to do three things:
 
@@ -837,7 +837,7 @@ name
 
 Try editing the variables above to instead pass `true` for `withFriends`, and see how the result changes.
 
-We needed to use a new feature in GraphQL called a *directive*. A directive can be attached to a field or fragment inclusion, and can affect execution of the query in any way the server desires. The core GraphQL specification includes exactly two directives, which must be supported by any spec-compliant GraphQL server implementation:
+We needed to use a new feature in GraphQL called a _directive_. A directive can be attached to a field or fragment inclusion, and can affect execution of the query in any way the server desires. The core GraphQL specification includes exactly two directives, which must be supported by any spec-compliant GraphQL server implementation:
 
 -   `@include(if: Boolean)` Only include this field in the result if the argument is `true`.
 -   `@skip(if: Boolean)` Skip this field if the argument is `true`.
@@ -896,7 +896,7 @@ commentary
 
 Note how `createReview` field returns the `stars` and `commentary` fields of the newly created review. This is especially useful when mutating existing data, for example, when incrementing a field, since we can mutate and query the new value of the field with one request.
 
-You might also notice that, in this example, the `review` variable we passed in is not a scalar. It's an *input object type*, a special kind of object type that can be passed in as an argument. Learn more about input types on the Schema page.
+You might also notice that, in this example, the `review` variable we passed in is not a scalar. It's an _input object type_, a special kind of object type that can be passed in as an argument. Learn more about input types on the Schema page.
 
 ### Multiple fields in mutations[](https://graphql.org/learn/queries/#multiple-fields-in-mutations)
 
@@ -910,7 +910,7 @@ This means that if we send two `incrementCredits` mutations in one request, the 
 
 Like many other type systems, GraphQL schemas include the ability to define interfaces and union types. [Learn about them in the schema guide.](https://graphql.org/learn/schema/#interfaces)
 
-If you are querying a field that returns an interface or a union type, you will need to use *inline fragments* to access data on the underlying concrete type. It's easiest to see with an example:
+If you are querying a field that returns an interface or a union type, you will need to use _inline fragments_ to access data on the underlying concrete type. It's easiest to see with an example:
 
 query HeroForEpisode($ep: Episode!) {
 
@@ -958,7 +958,7 @@ height
 
 In this query, the `hero` field returns the type `Character`, which might be either a `Human` or a `Droid` depending on the `episode` argument. In the direct selection, you can only ask for fields that exist on the `Character` interface, such as `name`.
 
-To ask for a field on the concrete type, you need to use an *inline fragment* with a type condition. Because the first fragment is labeled as `... on Droid`, the `primaryFunction` field will only be executed if the `Character` returned from `hero` is of the `Droid` type. Similarly for the `height` field for the `Human` type.
+To ask for a field on the concrete type, you need to use an _inline fragment_ with a type condition. Because the first fragment is labeled as `... on Droid`, the `primaryFunction` field will only be executed if the `Character` returned from `hero` is of the `Droid` type. Similarly for the `height` field for the `Human` type.
 
 Named fragments can also be used in the same way, since a named fragment always has a type attached.
 

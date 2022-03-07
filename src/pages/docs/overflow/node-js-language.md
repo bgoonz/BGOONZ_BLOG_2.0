@@ -33,7 +33,7 @@ It defines a name property, which tells the name of the app, or package, that's 
 
 Here's a much more complex example, which was extracted from a sample Vue.js application:
 
-there are *lots* of things going on here:
+there are _lots_ of things going on here:
 
 -   version indicates the current version
 
