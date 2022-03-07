@@ -1,7 +1,6 @@
+/\*
 
-/*
-
-_.get( object, path, [ defaultValue ] )
+\_.get( object, path, [ defaultValue ] )
 source npm package
 
 Gets the value at path of object.If the resolved value is undefined, the defaultValue is returned in its place.
@@ -12,25 +11,25 @@ Since
 Arguments
 object( Object ): The object to query.
 path( Array | string ): The path of the property to get.
-  [ defaultValue ]( * ): The value returned
+[ defaultValue ](*): The value returned
 for undefined resolved values.
 Returns
-  ( * ): Returns the resolved value.
+( \* ): Returns the resolved value.
 
 Example
 var object = {
-  'a': [ {
-    'b': {
-      'c': 3
-    }
-  } ]
+'a': [ {
+'b': {
+'c': 3
+}
+} ]
 };
 _.get( object, 'a[0].b.c' );
 _.get( object, [ 'a', '0', 'b', 'c' ] );
-_.get( object, 'a.b.c', 'default' );
+\_.get( object, 'a.b.c', 'default' );
 Try in REPL
 
-_.has( object, path )
+\_.has( object, path )
 source npm package
 
 Checks
@@ -43,23 +42,23 @@ Arguments
 object( Object ): The object to query.
 path( Array | string ): The path to check.
 Returns
-  ( boolean ): Returns true
+( boolean ): Returns true
 if path exists,
 else false.
 
 Example
 var object = {
-  'a': {
-    'b': 2
-  }
+'a': {
+'b': 2
+}
 };
 var other = _.create( {
-  'a': _.create( {
-    'b': 2
-  } )
+'a': _.create( {
+'b': 2
+} )
 } );
 _.has( object, 'a' );
 _.has( object, 'a.b' );
 _.has( object, [ 'a', 'b' ] );
 _.has( other, 'a' );
-*/
+\*/
