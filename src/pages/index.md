@@ -214,7 +214,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe sandbox="allow-scripts" 
+         <br><iframe sandbox="allow-scripts" 
       src="https://random-static-html-deploys.netlify.app/"
       class="block-content" width="100%  width="1200px!important"
       height="1000px!important"> </iframe>
@@ -227,19 +227,19 @@ sections:
     image_position: right
     content: >
       # ***What I've been working on lately:*** ## Web Dev Utilitiy Tools
-      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+        <br><iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
-      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+         <br><iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
-      <iframe sandbox="allow-scripts"  class="block-content" width="100% 
+        <br> <iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -252,7 +252,7 @@ sections:
     image_position: left
     content: >
       ### To⬆️ol Showcase <iframe sandbox="allow-scripts"  class="block-content"
-      width="100%  width="1200px!important" height="1000px!important"
+      width="100%  width="1200px" height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

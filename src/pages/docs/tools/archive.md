@@ -21,7 +21,7 @@ template: docs
 <h1> Archive</h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://resourcerepo2.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://resourcerepo2.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -30,9 +30,7 @@ template: docs
 <br>
 <hr>
 <br>
- <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;"  width="400" height="575"
-            src="https://bgoonz.blogspot.com/"
-           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+ <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;"  width="100%" height="100%" src="https://bgoonz.blogspot.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
@@ -47,7 +45,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://resourcerepo2.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://resourcerepo2.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -77,8 +75,9 @@ template: docs
 
 <br>
 <br>
+
 <hr>
-<hr>
+
 <br>
 <br>
 <br>
@@ -103,7 +102,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"  class="inner" src="https://lambda-resources.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  class="inner" src="https://lambda-resources.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -151,7 +150,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -177,7 +176,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-static-html-deploys.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -195,7 +194,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://thealgorithms.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -218,7 +217,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://markdown-templates-42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
@@ -248,7 +247,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -268,7 +267,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe sandbox="allow-scripts"  src="https://ternary42.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://ternary42.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -289,7 +288,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://githtmlpreview.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://githtmlpreview.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -310,7 +309,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -363,7 +362,7 @@ template: docs
 <br>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts"  src="https://web-dev-resource-hub.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
