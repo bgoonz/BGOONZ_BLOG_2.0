@@ -133,8 +133,8 @@ or global configurations ( global config file is `~/.gitconfig` ).
 
 ```bash
 # Print & Set Some Basic Config Variables (Global)
-$ git config --global user.email "MyEmail@Zoho.com"
-$ git config --global user.name "My Name"
+ git config --global user.email "bryan.guner@gmail.com"
+ git config --global user.name "bryan"
 ```
 
 [Learn More About git config.](http://git-scm.com/docs/git-config)
