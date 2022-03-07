@@ -43,7 +43,7 @@ Because `parse()` is a static method of [`Date`](../date), it is called as `Date
 
 **Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
 
-The ECMAScript specification states: If the String does not conform to the standard format the function may fall back to any implementation–specific heuristics or implementation–specific parsing algorithm. Unrecognizable strings or dates containing illegal element values in ISO formatted strings shall cause `Date.parse()` to return [`NaN`](../nan).
+The ECMAScript specification states: If the String does not conform to the standard format the function may fall back to any implementation-specific heuristics or implementation-specific parsing algorithm. Unrecognizable strings or dates containing illegal element values in ISO formatted strings shall cause `Date.parse()` to return [`NaN`](../nan).
 
 However, invalid values in date strings not recognized as simplified ISO format as defined by ECMA-262 may or may not result in [`NaN`](../nan), depending on the browser and values provided, e.g.:
 

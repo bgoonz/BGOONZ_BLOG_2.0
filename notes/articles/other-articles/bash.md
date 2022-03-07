@@ -33,11 +33,11 @@ Now, when you type **history**, it will show something like:
 
 ## 2\. Increase Bash History Size
 
-Increase `HISTSIZE` – the number of commands to remember in the command history (the default value is 500).
+Increase `HISTSIZE` - the number of commands to remember in the command history (the default value is 500).
 
 export HISTSIZE=10000
 
-Increase `HISTFILESIZE` – the maximum number of lines contained in the history file (the default value is 500).
+Increase `HISTFILESIZE` - the maximum number of lines contained in the history file (the default value is 500).
 
 export HISTFILESIZE=10000
 

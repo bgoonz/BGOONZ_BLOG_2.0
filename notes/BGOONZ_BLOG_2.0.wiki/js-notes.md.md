@@ -7158,7 +7158,7 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs</a>
 
@@ -7242,7 +7242,7 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos</a>
 
@@ -7330,7 +7330,7 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh</a>
 
@@ -7517,7 +7517,7 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition</a>
 
@@ -7848,7 +7848,7 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</a>
 
@@ -7937,7 +7937,7 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled</a>
 
@@ -7973,8 +7973,8 @@ Or, alternatively, you can set a header to your JavaScript file:
 
 ## See also
 
--   [How to use a source map – Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
--   [Introduction to source maps – HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+-   [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+-   [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma</a>
 
@@ -8056,7 +8056,7 @@ No
 
 -   [`String.prototype.link()`](link)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor</a>
 
@@ -8322,7 +8322,7 @@ No
 -   [`Promise.all()`](all)
 -   [`Promise.race()`](race)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any</a>
 
@@ -9967,7 +9967,7 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin</a>
 
@@ -10062,7 +10062,7 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh</a>
 
@@ -10403,7 +10403,7 @@ No
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 -   [Spread in object literals](../../operators/spread_syntax#spread_in_object_literals)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign</a>
 
@@ -10776,7 +10776,7 @@ No
 -   [`await`](../operators/await)
 -   ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>
 
@@ -10972,7 +10972,7 @@ No
 -   [Iteration protocols](../../iteration_protocols)
 -   [for await... of](../../statements/for-await...of)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator</a>
 
@@ -11120,7 +11120,7 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan</a>
 
@@ -11215,7 +11215,7 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2</a>
 
@@ -11304,7 +11304,7 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh</a>
 
@@ -12178,9 +12178,9 @@ Chrome disabled `SharedArrayBuffer` on January 5, 2018 to help reduce the effica
 -   [`ArrayBuffer`](arraybuffer)
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
--   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) – a simple library providing synchronization and work distribution abstractions.
--   [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
--   [A Taste of JavaScript's New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+-   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
+-   [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+-   [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics</a>
 
@@ -12444,7 +12444,7 @@ See the table above for the six valid regular expression flags that are allowed 
 ## See also
 
 -   [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
--   [XRegEx flags](https://xregexp.com/flags/) – regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
+-   [XRegEx flags](https://xregexp.com/flags/) - regular expression library that provides four new flags (`n`, `s`, `x`, `A`)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_regexp_flag</a>
 
@@ -12650,7 +12650,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.small()`](small)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big</a>
 
@@ -12714,7 +12714,7 @@ Also unsupported is the unary operator (`+`), [in order to not break asm.js](htt
     const multi = previousMaxSafe * 2n
     // ↪ 18014398509481982n
 
-    const subtr = multi – 10n
+    const subtr = multi - 10n
     // ↪ 18014398509481972n
 
     const mod = multi % 10n
@@ -12724,7 +12724,7 @@ Also unsupported is the unary operator (`+`), [in order to not break asm.js](htt
     // ↪ 18014398509481984n
 
     bigN * -1n
-    // ↪ –18014398509481984n
+    // ↪ -18014398509481984n
 
 The `/` operator also works as expected with whole numbers — but operations with a fractional result will be truncated when used with a BigInt value — they won't return any fractional digits.
 
@@ -13933,7 +13933,7 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise AND assignment operator](bitwise_and_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND</a>
 
@@ -13993,7 +13993,7 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise AND operator](bitwise_and)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment</a>
 
@@ -14073,7 +14073,7 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT</a>
 
@@ -14155,7 +14155,7 @@ Bitwise ORing any number `x` with `0` yields `x`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise OR assignment operator](bitwise_or_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR</a>
 
@@ -14218,7 +14218,7 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 -   [Bitwise OR operator](bitwise_or)
 -   [Logical OR assignment (`||=`)](logical_or_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment</a>
 
@@ -14300,7 +14300,7 @@ Bitwise XORing any number `x` with `0` yields `x`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Bitwise XOR assignment operator](bitwise_xor_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR</a>
 
@@ -14367,7 +14367,7 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Bitwise XOR operator](bitwise_xor)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment</a>
 
@@ -14445,7 +14445,7 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink</a>
 
@@ -14558,7 +14558,7 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 -   [`if...else`](if...else)
 -   [`let`](let)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block</a>
 
@@ -14634,7 +14634,7 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold</a>
 
@@ -15005,7 +15005,7 @@ The following code also uses `break` statements with labeled blocks, but generat
 -   [label](label)
 -   [`switch`](switch)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break</a>
 
@@ -15072,7 +15072,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer</a>
 
@@ -15162,7 +15162,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 -   [`SharedArrayBuffer`](../sharedarraybuffer)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength</a>
 
@@ -15224,7 +15224,7 @@ The `byteOffset` property is an accessor property whose set accessor function is
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset</a>
 
@@ -15302,7 +15302,7 @@ no
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [`TypedArray`](../typedarray)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT</a>
 
@@ -16380,7 +16380,7 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.prototype.then()`](then)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch</a>
 
@@ -16472,7 +16472,7 @@ No
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt</a>
 
@@ -16624,7 +16624,7 @@ The following example shows example usage of `Math.ceil()`.
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil</a>
 
@@ -16859,9 +16859,9 @@ While the previous example may be more useful for programs that must support non
 -   [`String.prototype.codePointAt()`](codepointat)
 -   [`String.prototype.split()`](split)
 -   [`String.fromCodePoint()`](fromcodepoint)
--   [JavaScript has a Unicode problem – Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
+-   [JavaScript has a Unicode problem - Mathias Bynens](https://mathiasbynens.be/notes/javascript-unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a>
 
@@ -17018,7 +17018,7 @@ This version might be used in for loops and the like when it is unknown whether 
 -   [`String.fromCodePoint()`](fromcodepoint)
 -   [`String.prototype.codePointAt()`](codepointat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt</a>
 
@@ -17127,7 +17127,7 @@ No
 -   [class declaration](../statements/class)
 -   [Classes](../classes)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class</a>
 
@@ -17292,7 +17292,7 @@ When a static or prototype method is called without a value for [`this`](operato
     let eat = Animal.eat;
     eat(); // undefined
 
-If we rewrite the above using traditional function-based syntax in non–strict mode, then `this` method calls are automatically bound to the initial `this` value, which by default is the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object). In strict mode, autobinding will not happen; the value of `this` remains as passed.
+If we rewrite the above using traditional function-based syntax in non-strict mode, then `this` method calls are automatically bound to the initial `this` value, which by default is the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object). In strict mode, autobinding will not happen; the value of `this` remains as passed.
 
     function Animal() { }
 
@@ -17306,7 +17306,7 @@ If we rewrite the above using traditional function-based syntax in non–strict 
 
     let obj = new Animal();
     let speak = obj.speak;
-    speak(); // global object (in non–strict mode)
+    speak(); // global object (in non-strict mode)
 
     let eat = Animal.eat;
     eat(); // global object (in non-strict mode)
@@ -17917,7 +17917,7 @@ The `clear()` method removes all elements from a `Set` object.
 -   [`Set`](../set)
 -   [`Set.prototype.delete()`](delete)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear</a>
 
@@ -18093,7 +18093,7 @@ No
 -   [`Math`](../math)
 -   [`Math.imul`](imul)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32</a>
 
@@ -18233,7 +18233,7 @@ No
 -   [`String.prototype.charCodeAt()`](charcodeat)
 -   [`String.prototype.charAt()`](charat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt</a>
 
@@ -18618,7 +18618,7 @@ Another example that one could make with comma operator is processing before ret
 
 -   [`for` loop](../statements/for)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator</a>
 
@@ -18821,7 +18821,7 @@ The table below details the differences between the methods available on the `Ob
 
 <table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Method Name</th><th><code>Object</code></th><th><code>Reflect</code></th></tr></thead><tbody><tr class="odd"><td><code>defineProperty()</code></td><td><a href="../object/defineproperty"><code>Object.defineProperty()</code></a> returns the object that was passed to the function. Returns a <code>TypeError</code> if the property was not successfully defined on the object.</td><td><a href="defineproperty"><code>Reflect.defineProperty()</code></a> returns <code>true</code> if the property was defined on the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>defineProperties()</code></td><td><a href="../object/defineproperties"><code>Object.defineProperties()</code></a> returns the objects that were passed to the function. Returns a <code>TypeError</code> if any properties were not successfully defined on the object.</td><td>N/A</td></tr><tr class="odd"><td><code>set()</code></td><td>N/A</td><td><a href="set"><code>Reflect.set()</code></a> returns <code>true</code> if the property was set successfully on the object and <code>false</code> if it was not. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="even"><td><code>get()</code></td><td>N/A</td><td><a href="get"><code>Reflect.get()</code></a> returns the value of the property. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="odd"><td><code>deleteProperty()</code></td><td>N/A</td><td><a href="deleteproperty"><code>Reflect.deleteProperty()</code></a> returns <code>true</code> if the property was deleted from the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>getOwnPropertyDescriptor()</code></td><td><a href="../object/getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object argument passed in, and returns <code>undefined</code> if it does not exist. However, if an object is not passed in as the first argument, it will be coerced into an object.</td><td><a href="getownpropertydescriptor"><code>Reflect.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object. Returns <code>undefined</code> if it does not exist, and a <code>TypeError</code> if anything other than an object (a primitive) is passed in as the first argument.</td></tr><tr class="odd"><td><code>getOwnPropertyDescriptors()</code></td><td><a href="../object/getownpropertydescriptors"><code>Object.getOwnPropertyDescriptors()</code></a> returns an object containing a property descriptor of each passed-in object. Returns an empty object if the passed-in object has no owned property descriptors.</td><td>N/A</td></tr><tr class="even"><td><code>getPrototypeOf()</code></td><td><a href="../object/getprototypeof"><code>Object.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties. Throws a <code>TypeError</code> for non-objects in ES5, but coerces non-objects in ES2015.</td><td><a href="getprototypeof"><code>Reflect.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties, and throws a <code>TypeError</code> for non-objects.</td></tr><tr class="odd"><td><code>setPrototypeOf()</code></td><td><a href="../object/setprototypeof"><code>Object.setPrototypeOf()</code></a> returns the object itself if its prototype was set successfully. Throws a <code>TypeError</code> if the prototype being set was anything other than an <code>Object</code> or <code>null</code>, or if the prototype for the object being modified is non-extensible.</td><td><a href="setprototypeof"><code>Reflect.setPrototypeOf()</code></a> returns <code>true</code> if the prototype was successfully set on the object and <code>false</code> if it wasn't (including if the prototype is non-extensible). Throws a <code>TypeError</code> if the target passed in was not an <code>Object</code>, or if the prototype being set was anything other than an <code>Object</code> or <code>null</code>.</td></tr><tr class="even"><td><code>isExtensible()</code></td><td><a href="../object/isextensible"><code>Object.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> in ES5 if the first argument is not an object (a primitive). In ES2015, it will be coerced into a non-extensible, ordinary object and will return <code>false</code>.</td><td><p><a href="isextensible"><code>Reflect.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> if the first argument is not an object (a primitive).</p></td></tr><tr class="odd"><td><code>preventExtensions()</code></td><td><p><a href="../object/preventextensions"><code>Object.preventExtensions()</code></a> returns the object that is being made non-extensible. Throws a <code>TypeError</code>in ES5 if the argument is not an object (a primitive). In ES2015, treats the argument as a non-extensible, ordinary object and returns the object itself.</p></td><td><a href="preventextensions"><code>Reflect.preventExtensions()</code></a> returns <code>true</code> if the object has been made non-extensible, and <code>false</code> if it has not. Throws a <code>TypeError</code> if the argument is not an object (a primitive).</td></tr><tr class="even"><td><code>keys()</code></td><td><a href="../object/keys"><code>Object.keys()</code></a> returns an <code>Array</code> of strings that map to the target object's own (enumerable) property keys. Throws a <code>TypeError</code> in ES5 if the target is not an object, but coerces non-object targets into objects in ES2015.</td><td>N/A</td></tr><tr class="odd"><td><code>ownKeys()</code></td><td>N/A</td><td><a href="ownkeys"><code>Reflect.ownKeys()</code></a> returns an <code>Array</code> of property names that map to the target object's own property keys. Throws a <code>TypeError</code> if the target is not an <code>Object</code>.</td></tr></tbody></table>
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/Comparing_Reflect_and_Object_methods" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/Comparing_Reflect_and_Object_methods</a>
 
@@ -18908,7 +18908,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile</a>
 
@@ -19043,7 +19043,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError</a>
 
@@ -19122,7 +19122,7 @@ No
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming</a>
 
@@ -19250,7 +19250,7 @@ The following code concatenates nested arrays and demonstrates retention of refe
 -   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
 -   [`splice`](splice) — add/remove elements from the specified location of the array
 -   [`String.prototype.concat()`](../string/concat)
--   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) – control flattening.
+-   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>
 
@@ -19358,7 +19358,7 @@ The ternary operator is right-associative, which means it can be "chained" in th
 -   [Making decisions in your code — conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 -   [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a>
 
@@ -19509,7 +19509,7 @@ const also works on objects and arrays.
 -   [`let`](let)
 -   [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const</a>
 
@@ -19665,7 +19665,7 @@ No
 -   [`new`](../../operators/new)
 -   `new.target`
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct</a>
 
@@ -19884,7 +19884,7 @@ or assign parent constructor identifier to a separate property on the Child cons
 -   [Class constructor](../../classes/constructor)
 -   Glossary: [constructor](https://developer.mozilla.org/en-US/docs/Glossary/Constructor)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor</a>
 
@@ -20023,7 +20023,7 @@ Output:
 -   [`break`](break)
 -   [label](label)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue</a>
 
@@ -20210,7 +20210,7 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 -   [`Math.sin()`](sin)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos</a>
 
@@ -20301,7 +20301,7 @@ No
 -   [`Math.sinh()`](sinh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh</a>
 
@@ -20677,7 +20677,7 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 -   [`Reflect.construct()`](../reflect/construct)
 -   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create</a>
 
@@ -20775,7 +20775,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections</a>
 
@@ -20834,7 +20834,7 @@ The snippet below illustrates how to find and filter (thus causing data loss) a 
 ## See also
 
 -   [`JSON.stringify`](../global_objects/json/stringify)
--   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) – Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
+-   [cycle.js](https://github.com/douglascrockford/JSON-js/blob/master/cycle.js) - Introduces two functions, `JSON.decycle` and `JSON.retrocycle`, which makes it possible to encode and decode cyclical structures and dags into an extended and retrocompatible JSON format.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cyclic_object_value</a>
 
@@ -21685,28 +21685,28 @@ Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7)
 ## Instance methods
 
 [`Date.prototype.getDate()`](date/getdate)  
-Returns the day of the month (`1`–`31`) for the specified date according to local time.
+Returns the day of the month (`1`-`31`) for the specified date according to local time.
 
 [`Date.prototype.getDay()`](date/getday)  
-Returns the day of the week (`0`–`6`) for the specified date according to local time.
+Returns the day of the week (`0`-`6`) for the specified date according to local time.
 
 [`Date.prototype.getFullYear()`](date/getfullyear)  
 Returns the year (4 digits for 4-digit years) of the specified date according to local time.
 
 [`Date.prototype.getHours()`](date/gethours)  
-Returns the hour (`0`–`23`) in the specified date according to local time.
+Returns the hour (`0`-`23`) in the specified date according to local time.
 
 [`Date.prototype.getMilliseconds()`](date/getmilliseconds)  
-Returns the milliseconds (`0`–`999`) in the specified date according to local time.
+Returns the milliseconds (`0`-`999`) in the specified date according to local time.
 
 [`Date.prototype.getMinutes()`](date/getminutes)  
-Returns the minutes (`0`–`59`) in the specified date according to local time.
+Returns the minutes (`0`-`59`) in the specified date according to local time.
 
 [`Date.prototype.getMonth()`](date/getmonth)  
-Returns the month (`0`–`11`) in the specified date according to local time.
+Returns the month (`0`-`11`) in the specified date according to local time.
 
 [`Date.prototype.getSeconds()`](date/getseconds)  
-Returns the seconds (`0`–`59`) in the specified date according to local time.
+Returns the seconds (`0`-`59`) in the specified date according to local time.
 
 [`Date.prototype.getTime()`](date/gettime)  
 Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC. (Negative values are returned for prior times.)
@@ -21715,31 +21715,31 @@ Returns the numeric value of the specified date as the number of milliseconds si
 Returns the time-zone offset in minutes for the current locale.
 
 [`Date.prototype.getUTCDate()`](date/getutcdate)  
-Returns the day (date) of the month (`1`–`31`) in the specified date according to universal time.
+Returns the day (date) of the month (`1`-`31`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCDay()`](date/getutcday)  
-Returns the day of the week (`0`–`6`) in the specified date according to universal time.
+Returns the day of the week (`0`-`6`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCFullYear()`](date/getutcfullyear)  
 Returns the year (4 digits for 4-digit years) in the specified date according to universal time.
 
 [`Date.prototype.getUTCHours()`](date/getutchours)  
-Returns the hours (`0`–`23`) in the specified date according to universal time.
+Returns the hours (`0`-`23`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)  
-Returns the milliseconds (`0`–`999`) in the specified date according to universal time.
+Returns the milliseconds (`0`-`999`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCMinutes()`](date/getutcminutes)  
-Returns the minutes (`0`–`59`) in the specified date according to universal time.
+Returns the minutes (`0`-`59`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCMonth()`](date/getutcmonth)  
-Returns the month (`0`–`11`) in the specified date according to universal time.
+Returns the month (`0`-`11`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCSeconds()`](date/getutcseconds)  
-Returns the seconds (`0`–`59`) in the specified date according to universal time.
+Returns the seconds (`0`-`59`) in the specified date according to universal time.
 
 [`Date.prototype.getYear()`](date/getyear)  
-Returns the year (usually 2–3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
+Returns the year (usually 2-3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
 
 [`Date.prototype.setDate()`](date/setdate)  
 Sets the day of the month for a specified date according to local time.
@@ -21787,7 +21787,7 @@ Sets the month for a specified date according to universal time.
 Sets the seconds for a specified date according to universal time.
 
 [`Date.prototype.setYear()`](date/setyear)  
-Sets the year (usually 2–3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
+Sets the year (usually 2-3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
 
 [`Date.prototype.toDateString()`](date/todatestring)  
 Returns the "date" portion of the [`Date`](date) as a human-readable string like `'Thu Apr 12 2018'`.
@@ -21845,7 +21845,7 @@ The following examples show several ways to create JavaScript dates:
     let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
     let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /)
 
-### Two digit years map to 1900 – 1999
+### Two digit years map to 1900 - 1999
 
 Values from `0` to `99` map to the years `1900` to `1999`. All other values are the actual year .
 
@@ -23744,7 +23744,7 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 -   [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 -   [The Debugger in the Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger</a>
 
@@ -24002,7 +24002,7 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a>
 
@@ -24448,7 +24448,7 @@ Assuming a pristine execution environment with all names and properties referrin
 -   [`Object.keys()`](keys)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties</a>
 
@@ -24933,7 +24933,7 @@ Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?i
 -   [`Object.create()`](create)
 -   [`Reflect.defineProperty()`](../reflect/defineproperty)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty</a>
 
@@ -25193,7 +25193,7 @@ If instead, you want to remove an array element by changing the contents of the 
 -   [`Reflect.deleteProperty()`](../global_objects/reflect/deleteproperty)
 -   [`Map.prototype.delete()`](../global_objects/map/delete)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</a>
 
@@ -25372,7 +25372,7 @@ No
 -   [`delete`](../../../operators/delete) operator
 -   [`Reflect.deleteProperty()`](../../reflect/deleteproperty)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty</a>
 
@@ -25609,8 +25609,8 @@ Or, alternatively, you can set a [`SourceMap`](https://developer.mozilla.org/en-
 
 ## See also
 
--   [How to use a source map – Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
--   [Introduction to source maps – HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+-   [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+-   [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 -   [`SourceMap`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_source_map_pragma</a>
@@ -25861,7 +25861,7 @@ No support for an undefined description.
 -   [`Symbol.prototype.toString()`](tostring)
 -   Polyfill: <https://npmjs.com/symbol.prototype.description>
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description</a>
 
@@ -26366,7 +26366,7 @@ No
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
 -   ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a>
 
@@ -26783,7 +26783,7 @@ The division operator (`/`) produces the quotient of its operands where the left
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division</a>
 
@@ -26858,7 +26858,7 @@ In the following example, the `do...while` loop iterates at least once and reite
 -   [`while`](while)
 -   [`for`](for)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while</a>
 
@@ -26958,7 +26958,7 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll</a>
 
@@ -27037,7 +27037,7 @@ The following function returns e:
 -   [`Math.log()`](log)
 -   [`Math.log1p()`](log1p)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E</a>
 
@@ -27130,7 +27130,7 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 -   [`Block statement`](block)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty</a>
 
@@ -27479,7 +27479,7 @@ No
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith</a>
 
@@ -27626,7 +27626,7 @@ No
 -   [`Map.prototype.keys()`](../map/keys)
 -   [`Map.prototype.values()`](../map/values)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries</a>
 
@@ -27706,7 +27706,7 @@ No
 
 -   The [`Number`](../number) object it belongs to
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON</a>
 
@@ -27871,7 +27871,7 @@ Note that strings constructed using `new String()` are objects. If you compare o
 -   [Strict equality operator](strict_equality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality</a>
 
@@ -29295,7 +29295,7 @@ This will log a message containing `'hello world!'`.
 -   [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) chapter in the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 -   [`RegExp`](../regexp)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec</a>
 
@@ -29371,7 +29371,7 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/exp" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/exp</a>
 
@@ -29447,7 +29447,7 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1</a>
 
@@ -29547,7 +29547,7 @@ No
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation</a>
 
@@ -29863,7 +29863,7 @@ No
 -   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
 -   [Axel Rauschmayer's book: "Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a>
 
@@ -29970,7 +29970,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports</a>
 
@@ -30682,7 +30682,7 @@ No
 -   [`Promise.prototype.then()`](then)
 -   [`Promise.prototype.catch()`](catch)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally</a>
 
@@ -30858,11 +30858,11 @@ No
 
 ## See also
 
--   [`Array.prototype.findIndex()`](findindex) – find and return an index
--   [`Array.prototype.includes()`](includes) – test whether a value exists in the array
--   [`Array.prototype.filter()`](filter) – remove all non-matching elements
--   [`Array.prototype.every()`](every) – test all elements
--   [`Array.prototype.some()`](some) – test until one element matches
+-   [`Array.prototype.findIndex()`](findindex) - find and return an index
+-   [`Array.prototype.includes()`](includes) - test whether a value exists in the array
+-   [`Array.prototype.filter()`](filter) - remove all non-matching elements
+-   [`Array.prototype.every()`](every) - test all elements
+-   [`Array.prototype.some()`](some) - test until one element matches
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</a>
 
@@ -31018,7 +31018,7 @@ No
 -   [`TypedArray.prototype.find()`](find)
 -   [`TypedArray.prototype.indexOf()`](indexof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex</a>
 
@@ -31090,7 +31090,7 @@ The following example uses the `fixed` method to change the formatting of a stri
 -   [`String.prototype.italics()`](italics)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed</a>
 
@@ -31171,7 +31171,7 @@ No
 
 -   [`RegExp.prototype.source`](source)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags</a>
 
@@ -32047,7 +32047,7 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor</a>
 
@@ -32133,7 +32133,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 -   [`String.prototype.fontsize()`](fontsize)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor</a>
 
@@ -32218,7 +32218,7 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 -   [`String.prototype.big()`](big)
 -   [`String.prototype.small()`](small)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontsize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontsize</a>
 
@@ -32461,7 +32461,7 @@ No
 -   [`Symbol.asyncIterator`](../global_objects/symbol/asynciterator)
 -   [`for...of`](for...of)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of</a>
 
@@ -32634,7 +32634,7 @@ Object whose non-Symbol enumerable properties are iterated over.
 
 ## Description
 
-A `for...in` loop only iterates over enumerable, non-Symbol properties. Objects created from built–in constructors like `Array` and `Object` have inherited non–enumerable properties from `Object.prototype` and `String.prototype`, such as [`String`](../global_objects/string)'s [`indexOf()`](../global_objects/string/indexof) method or [`Object`](../global_objects/object)'s [`toString()`](../global_objects/object/tostring) method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
+A `for...in` loop only iterates over enumerable, non-Symbol properties. Objects created from built-in constructors like `Array` and `Object` have inherited non-enumerable properties from `Object.prototype` and `String.prototype`, such as [`String`](../global_objects/string)'s [`indexOf()`](../global_objects/string/indexof) method or [`Object`](../global_objects/object)'s [`toString()`](../global_objects/object/tostring) method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
 
 ### Deleted, added, or modified properties
 
@@ -32648,7 +32648,7 @@ In general, it is best not to add, modify, or remove properties from the object 
 
 **Note:** `for...in` should not be used to iterate over an [`Array`](../global_objects/array) where the index order is important.
 
-Array indexes are just enumerable properties with integer names and are otherwise identical to general object properties. There is no guarantee that `for...in` will return the indexes in any particular order. The `for...in` loop statement will return all enumerable properties, including those with non–integer names and those that are inherited.
+Array indexes are just enumerable properties with integer names and are otherwise identical to general object properties. There is no guarantee that `for...in` will return the indexes in any particular order. The `for...in` loop statement will return all enumerable properties, including those with non-integer names and those that are inherited.
 
 Because the order of iteration is implementation-dependent, iterating over an array may not visit elements in a consistent order. Therefore, it is better to use a [`for`](for) loop with a numeric index (or [`Array.prototype.forEach()`](../global_objects/array/foreach) or the [`for...of`](for...of) loop) when iterating over arrays where the order of access is important.
 
@@ -32753,8 +32753,8 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 
 ## See also
 
--   [`for...of`](for...of) – a similar statement that iterates over the property _values_
--   <span class="page-not-created">`for each...in`</span> – a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
+-   [`for...of`](for...of) - a similar statement that iterates over the property _values_
+-   <span class="page-not-created">`for each...in`</span> - a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
 -   [`for`](for)
 -   [Iterators and Generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (usable with `for...of` syntax)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
@@ -32762,7 +32762,7 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 -   [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in</a>
 
@@ -33116,9 +33116,9 @@ No
 
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 -   [`Map.prototype.forEach()`](../global_objects/map/foreach)
--   [`Object.entries()`](../global_objects/object/entries) – Useful when using `for...of` over an object.
+-   [`Object.entries()`](../global_objects/object/entries) - Useful when using `for...of` over an object.
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of</a>
 
@@ -33262,7 +33262,7 @@ The following `for` cycle calculates the offset position of a node in the `final
 -   [`for...in`](for...in)
 -   [`for...of`](for...of)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for</a>
 
@@ -33747,8 +33747,8 @@ This method receives two [`Date`](../../date)s and formats the date range in the
     console.log(fmt1.formatRange(date1, date2));
     console.log(fmt1.formatRange(date1, date3));
     // > '1/10/07, 10:00 AM'
-    // > '1/10/07, 10:00 – 11:00 AM'
-    // > '1/10/07, 10:00 AM – 1/20/07, 10:00 AM'
+    // > '1/10/07, 10:00 - 11:00 AM'
+    // > '1/10/07, 10:00 AM - 1/20/07, 10:00 AM'
 
     let fmt2 = new Intl.DateTimeFormat("en", {
         year: 'numeric',
@@ -33760,7 +33760,7 @@ This method receives two [`Date`](../../date)s and formats the date range in the
     console.log(fmt2.formatRange(date1, date3));
     // > 'Jan 10, 2007'
     // > 'Jan 10, 2007'
-    // > 'Jan 10 – 20, 2007'
+    // > 'Jan 10 - 20, 2007'
 
 ## Specifications
 
@@ -33826,7 +33826,7 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
     });
 
     console.log(fmt.formatRange(date1, date2));
-    // > '10:00 – 11:00 AM'
+    // > '10:00 - 11:00 AM'
 
     fmt.formatRangeToParts(date1, date2);
     // return value:
@@ -33834,7 +33834,7 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
     //   { type: 'hour',      value: '10',  source: "startRange" },
     //   { type: 'literal',   value: ':',   source: "startRange" },
     //   { type: 'minute',    value: '00',  source: "startRange" },
-    //   { type: 'literal',   value: ' – ', source: "shared"     },
+    //   { type: 'literal',   value: ' - ', source: "shared"     },
     //   { type: 'hour',      value: '11',  source: "endRange"   },
     //   { type: 'literal',   value: ':',   source: "endRange"   },
     //   { type: 'minute',    value: '00',  source: "endRange"   },
@@ -34364,7 +34364,7 @@ To make an object immutable, recursively freeze each property which is of type o
 -   [`Object.seal()`](seal)
 -   [`Object.isSealed()`](issealed)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze</a>
 
@@ -34774,7 +34774,7 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 -   [`String.prototype.charCodeAt()`](charcodeat)
 -   [`String.prototype.codePointAt()`](codepointat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode</a>
 
@@ -34873,7 +34873,7 @@ Invalid input:
 
 ### Compared to `fromCharCode()`
 
-[`String.fromCharCode()`](fromcharcode) cannot return supplementary characters (i.e. code points `0x010000` – `0x10FFFF`) by specifying their code point. Instead, it requires the UTF-16 surrogate pair in order to return a supplementary character:
+[`String.fromCharCode()`](fromcharcode) cannot return supplementary characters (i.e. code points `0x010000` - `0x10FFFF`) by specifying their code point. Instead, it requires the UTF-16 surrogate pair in order to return a supplementary character:
 
     String.fromCharCode(0xD83C, 0xDF03); // Code Point U+1F303 "Night with
     String.fromCharCode(55356, 57091);   // Stars" == "\uD83C\uDF03"
@@ -34922,7 +34922,7 @@ No
 -   [`String.prototype.codePointAt()`](codepointat)
 -   [`String.prototype.charCodeAt()`](charcodeat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint</a>
 
@@ -35023,7 +35023,7 @@ No
 -   [`Map.prototype.keys()`](../map/keys)
 -   [`Map.prototype.values()`](../map/values)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries</a>
 
@@ -35142,7 +35142,7 @@ No
 
 -   [`Math.round()`](round)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround</a>
 
@@ -35465,7 +35465,7 @@ No
     -   [Task.js](https://github.com/mozilla/task.js)
     -   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>
 
@@ -35646,7 +35646,7 @@ No
 -   [async function](../statements/async_function)
 -   [async function expression](async_function)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a>
 
@@ -38053,7 +38053,7 @@ In Internet Explorer 8, this was only supported on DOM objects and with some non
 -   [`Object.defineProperty()`](defineproperty)
 -   [`Reflect.getOwnPropertyDescriptor()`](../reflect/getownpropertydescriptor)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor</a>
 
@@ -38164,7 +38164,7 @@ No
 -   [`Object.defineProperty()`](defineproperty)
 -   [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors</a>
 
@@ -38316,7 +38316,7 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 -   [`Object.keys()`](keys)
 -   [`Array.forEach()`](../array/foreach)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames</a>
 
@@ -38398,7 +38398,7 @@ No
 -   [`Object.getOwnPropertyNames()`](getownpropertynames)
 -   [`Symbol`](../symbol)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols</a>
 
@@ -38535,7 +38535,7 @@ No
 -   [`Object.getPrototypeOf()`](../../object/getprototypeof)
 -   [`Reflect.getPrototypeOf()`](../../reflect/getprototypeof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf</a>
 
@@ -39790,7 +39790,7 @@ No
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 -   [Import/Export mutable globals proposal](https://github.com/WebAssembly/mutable-global/blob/master/proposals/mutable-global/Overview.md)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global</a>
 
@@ -39815,7 +39815,7 @@ yes
 ## Description
 
 Historically, accessing the global object has required different syntax in different JavaScript environments. On the web you can use [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window/window), [`self`](https://developer.mozilla.org/en-US/docs/Web/API/Window/self), or [`frames`](https://developer.mozilla.org/en-US/docs/Web/API/Window/frames) - but in [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) only `self` will work. In Node.js none of these work, and you must instead use `global`.  
-The `this` keyword could be used inside functions running in non–strict mode, but `this` will be `undefined` in Modules and inside functions running in strict mode. You can also use `Function('return this')()`, but environments that disable [`eval()`](eval), like [CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP) in browsers, prevent use of [`Function`](function) in this way.
+The `this` keyword could be used inside functions running in non-strict mode, but `this` will be `undefined` in Modules and inside functions running in strict mode. You can also use `Function('return this')()`, but environments that disable [`eval()`](eval), like [CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP) in browsers, prevent use of [`Function`](function) in this way.
 
 The `globalThis` property provides a standard way of accessing the global `this` value (and hence the global object itself) across environments. Unlike similar properties such as `window` and `self`, it's guaranteed to work in window and non-window contexts. In this way, you can access the global object in a consistent manner without having to know which environment the code is being run in. To help you remember the name, just remember that in global scope the `this` value is `globalThis`.
 
@@ -39990,7 +39990,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Less than operator](less_than)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than</a>
 
@@ -40092,7 +40092,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Less than operator](less_than)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal</a>
 
@@ -40169,7 +40169,7 @@ Overriding multiplication and division first, then addition and subtraction to e
 -   [`delete`](delete)
 -   [`typeof`](typeof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a>
 
@@ -40250,7 +40250,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow</a>
 
@@ -40368,7 +40368,7 @@ No
 -   [`in`](../../../operators/in) operator
 -   [`Reflect.has()`](../../reflect/has)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has</a>
 
@@ -40547,7 +40547,7 @@ No
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices</a>
 
@@ -40637,7 +40637,7 @@ No
 
 -   [`instanceof`](../../operators/instanceof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance</a>
 
@@ -40775,7 +40775,7 @@ Note that in the last case there are no newly created objects.
 -   [`in`](../../operators/in)
 -   [JavaScript Guide: Inheritance revisited](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty</a>
 
@@ -40789,7 +40789,7 @@ There are 2 main types of time keeping conventions (clocks) used around the worl
 
 ### Valid hour cycle types
 
-<table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
+<table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1-12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0-23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0-11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1-24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
 
 ## Examples
 
@@ -40971,7 +40971,7 @@ No
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot</a>
 
@@ -41157,7 +41157,7 @@ If you need to use an assignment in a conditional expression, a common practice 
 -   [`switch`](switch)
 -   [Conditional operator](../operators/conditional_operator)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</a>
 
@@ -41263,7 +41263,7 @@ You cannot change this property directly.
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase</a>
 
@@ -41283,7 +41283,7 @@ The JavaScript exception "illegal character" occurs when there is an invalid or 
 
 ## What went wrong?
 
-There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`–`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
+There is an invalid or unexpected token that doesn't belong at this position in the code. Use an editor that supports syntax highlighting and carefully check your code against mismatches like a minus sign (`-`) versus a dash (`-`) or simple quotes (`"`) vs non-standard quotation marks (`"`).
 
 ## Examples
 
@@ -41294,8 +41294,8 @@ Some characters look similar, but will cause the parser to fail interpreting you
     "This looks like a string”;  // SyntaxError: illegal character
                                  // " and ” are not " but look like this
 
-    42 – 13;                     // SyntaxError: illegal character
-                                 // – is not - but looks like this
+    42 - 13;                     // SyntaxError: illegal character
+                                 // - is not - but looks like this
 
     var foo = 'bar';             // SyntaxError: illegal character
                                  // <37e> is not ; but looks like this
@@ -41641,7 +41641,7 @@ No
 -   Axel Rauschmayer's book: ["Exploring JS: Modules"](https://exploringjs.com/es6/ch_modules.html)
 -   The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a>
 
@@ -41739,7 +41739,7 @@ No
 -   [`import`](import)
 -   [`export`](export)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta</a>
 
@@ -41823,7 +41823,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports</a>
 
@@ -41932,7 +41932,7 @@ No
 
 -   [Emscripten](https://en.wikipedia.org/wiki/Emscripten)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul</a>
 
@@ -42064,7 +42064,7 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 -   [`Reflect.has()`](../global_objects/reflect/has)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in</a>
 
@@ -42325,7 +42325,7 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a>
 
@@ -42931,7 +42931,7 @@ To prevent this, and require that different types are considered to be different
 -   [Strict equality operator](strict_equality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality</a>
 
@@ -43169,7 +43169,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance</a>
 
@@ -43356,7 +43356,7 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 -   [`Symbol.hasInstance`](../global_objects/symbol/hasinstance)
 -   [`Object.prototype.isPrototypeOf`](../global_objects/object/isprototypeof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof</a>
 
@@ -43515,7 +43515,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate</a>
 
@@ -43601,7 +43601,7 @@ No
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming</a>
 
@@ -45000,7 +45000,7 @@ A string leading to an invalid date has been provided to [`Date`](../global_obje
 
 ### Invalid cases
 
-Unrecognizable strings or dates containing illegal element values in ISO formatted strings usually return [`NaN`](../global_objects/nan). However, depending on the implementation, non–conforming ISO format strings, may also throw `RangeError: invalid date`, like the following cases in Firefox:
+Unrecognizable strings or dates containing illegal element values in ISO formatted strings usually return [`NaN`](../global_objects/nan). However, depending on the implementation, non-conforming ISO format strings, may also throw `RangeError: invalid date`, like the following cases in Firefox:
 
     new Date('foo-bar 2014');
     new Date('2014-25-23').toISOString();
@@ -45084,8 +45084,8 @@ The for...in loop [shouldn't be used for Array iteration](../statements/for...in
 ## See also
 
 -   `for...in`
--   `for...of` – also disallows an initializer in both strict and non-strict mode.
--   `for` – preferred for array iteration, allows to define an initializer.
+-   `for...of` - also disallows an initializer in both strict and non-strict mode.
+-   `for` - preferred for array iteration, allows to define an initializer.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-in_initializer</a>
 
@@ -45137,8 +45137,8 @@ You need to remove the initializer (`value = 50`) in the head of the `for-of` lo
 ## See also
 
 -   `for...of`
--   `for...in` – disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
--   `for` – allows to define an initializer when iterating.
+-   `for...in` - disallows an initializer in strict mode as well ([SyntaxError: for-in loop head declarations may not have initializers](invalid_for-in_initializer))
+-   `for` - allows to define an initializer when iterating.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_for-of_initializer</a>
 
@@ -45319,7 +45319,7 @@ No
 
 -   [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) — a comparison of all three built-in sameness facilities
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is</a>
 
@@ -45644,7 +45644,7 @@ No
 
 -   [`Array.prototype.concat()`](../array/concat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable</a>
 
@@ -45743,7 +45743,7 @@ No
 -   [`Reflect`](../reflect)
 -   [`Object.isExtensible()`](../object/isextensible)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible</a>
 
@@ -45828,7 +45828,7 @@ No
 -   The [`Number`](../number) object it belongs to.
 -   The global function [`isFinite`](../isfinite).
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite</a>
 
@@ -45990,7 +45990,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.seal()`](seal)
 -   [`Object.isSealed()`](issealed)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen</a>
 
@@ -46084,7 +46084,7 @@ No
 
 -   The [`Number`](../number) object it belongs to.
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger</a>
 
@@ -46405,7 +46405,7 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 -   [`Object.setPrototypeOf()`](setprototypeof)
 -   [`Object/proto`](proto)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf</a>
 
@@ -46496,7 +46496,7 @@ No
 -   [`Number.MAX_SAFE_INTEGER`](max_safe_integer)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger</a>
 
@@ -46620,7 +46620,7 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 -   [`Object.freeze()`](freeze)
 -   [`Object.isFrozen()`](isfrozen)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed</a>
 
@@ -46770,7 +46770,7 @@ The following example uses string methods to change the formatting of a string:
 -   [`String.prototype.bold()`](bold)
 -   [`String.prototype.strike()`](strike)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/italics" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/italics</a>
 
@@ -47200,7 +47200,7 @@ No
 -   [`Map.prototype[@@iterator]()`](../map/@@iterator)
 -   [`Set.prototype[@@iterator]()`](../set/@@iterator)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator</a>
 
@@ -47691,7 +47691,7 @@ No
 
 -   [`Symbol.for()`](for)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor</a>
 
@@ -47847,7 +47847,7 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 -   [`Object.values()`](values)
 -   [`Object.entries()`](entries)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys</a>
 
@@ -48029,7 +48029,7 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 -   [`break`](break)
 -   [`continue`](continue)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label</a>
 
@@ -48192,7 +48192,7 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex</a>
 
@@ -48403,7 +48403,7 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Left shift assignment operator](left_shift_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift</a>
 
@@ -48464,7 +48464,7 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Left shift operator](left_shift)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment</a>
 
@@ -48703,7 +48703,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Greater than or equal operator](greater_than_or_equal)
 -   [Less than or equal operator](less_than_or_equal)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than</a>
 
@@ -48805,7 +48805,7 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 -   [Greater than or equal operator](greater_than_or_equal)
 -   [Less than operator](less_than)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal</a>
 
@@ -49123,7 +49123,7 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 -   [StackOverflow: What is the Temporal Dead Zone](https://stackoverflow.com/a/33198850/1125029)?
 -   [StackOverflow: What is the difference between using `let` and `var`?](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</a>
 
@@ -49355,7 +49355,7 @@ Note that decimal literals can start with a zero (`0`) followed by another decim
 
 ##### Exponential
 
-The decimal exponential literal is specified by the following format: `beN`; where `b` is a base number (integer or floating), followed by `e` char (which serves as separator or _exponent indicator_) and `N`, which is _exponent_ or _power_ number – a signed integer (as per 2019 ECMA-262 specs):
+The decimal exponential literal is specified by the following format: `beN`; where `b` is a base number (integer or floating), followed by `e` char (which serves as separator or _exponent indicator_) and `N`, which is _exponent_ or _power_ number - a signed integer (as per 2019 ECMA-262 specs):
 
     0e-5   // => 0
     0e+5   // => 0
@@ -50180,7 +50180,7 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 -   [`String.prototype.anchor()`](anchor)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link</a>
 
@@ -50315,7 +50315,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError</a>
 
@@ -50619,7 +50619,7 @@ The following function returns the natural log of 10:
 -   [`Math.log()`](log)
 -   [`Math.log10()`](log10)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10</a>
 
@@ -50698,7 +50698,7 @@ The following function returns the natural log of 2:
 -   [`Math.log()`](log)
 -   [`Math.log2()`](log2)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2</a>
 
@@ -51481,7 +51481,7 @@ No
 
 -   [`Intl.Collator`](../intl/collator)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare</a>
 
@@ -51576,7 +51576,7 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log</a>
 
@@ -51666,7 +51666,7 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10</a>
 
@@ -51745,7 +51745,7 @@ The following function returns the base 10 logarithm of e:
 -   [`Math.log()`](log)
 -   [`Math.log10()`](log10)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG10E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG10E</a>
 
@@ -51829,7 +51829,7 @@ No
 -   [`Math.log2()`](log2)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p</a>
 
@@ -51920,7 +51920,7 @@ No
 -   [`Math.log1p()`](log1p)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2</a>
 
@@ -51999,7 +51999,7 @@ The following function returns the base 2 logarithm of e:
 -   [`Math.log()`](log)
 -   [`Math.log2()`](log2)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG2E" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG2E</a>
 
@@ -52138,7 +52138,7 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a>
 
@@ -52239,7 +52239,7 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT</a>
 
@@ -52382,7 +52382,7 @@ is always equal to:
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR</a>
 
@@ -52470,7 +52470,7 @@ No
 -   [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 -   [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment</a>
 
@@ -53455,7 +53455,7 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match</a>
 
@@ -53595,7 +53595,7 @@ No
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll</a>
 
@@ -55011,7 +55011,7 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 -   [`Math.min()`](min)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max</a>
 
@@ -55102,7 +55102,7 @@ No
 -   [`Number.isSafeInteger()`](issafeinteger)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER</a>
 
@@ -55180,7 +55180,7 @@ The following code multiplies two numeric values. If the result is less than or 
 -   [`Number.MIN_VALUE`](min_value)
 -   The [`Number`](../number) object it belongs to
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE</a>
 
@@ -55448,7 +55448,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory</a>
 
@@ -55888,7 +55888,7 @@ may be written as this
 
 -   [`Math.max()`](max)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min</a>
 
@@ -55964,7 +55964,7 @@ No
 -   [`Number.isSafeInteger()`](issafeinteger)
 -   [`BigInt`](../bigint)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER</a>
 
@@ -56041,7 +56041,7 @@ The following code divides two numeric values. If the result is greater than or 
 
 -   [`Number.MAX_VALUE`](max_value)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE</a>
 
@@ -56906,7 +56906,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module</a>
 
@@ -57055,7 +57055,7 @@ You cannot change this property directly.
 -   [`RegExp.prototype.sticky`](sticky)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline</a>
 
@@ -57128,7 +57128,7 @@ The multiplication operator (`*`) produces the product of the operands.
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication</a>
 
@@ -57597,7 +57597,7 @@ In the following example, the variable `smallNumber` is assigned a value that is
 -   [`Infinity`](../infinity)
 -   [`isFinite()`](../isfinite)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY</a>
 
@@ -57805,7 +57805,7 @@ Instead of passing a literal string or integer value when creating the new objec
 -   [`Reflect.construct()`](../global_objects/reflect/construct)
 -   [`Object`](../global_objects/object)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a>
 
@@ -57906,7 +57906,7 @@ No
 -   `new`
 -   `this`
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target</a>
 
@@ -58546,7 +58546,7 @@ No
 -   [Unicode Standard Annex \#15, Unicode Normalization Forms](https://www.unicode.org/reports/tr15/)
 -   [Unicode equivalence](https://en.wikipedia.org/wiki/Unicode_equivalence)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize</a>
 
@@ -59432,7 +59432,7 @@ No
 -   [The logical OR (`||`) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#logical_or_2)
 -   [Default parameters in functions](../functions/default_parameters)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator</a>
 
@@ -62559,7 +62559,7 @@ No
 -   [Method definitions](../functions/method_definitions)
 -   [Lexical grammar](../lexical_grammar)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer</a>
 
@@ -62678,7 +62678,7 @@ No
 -   [`TypedArray.from()`](from)
 -   [`Array.of()`](../array/of)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of</a>
 
@@ -63107,7 +63107,7 @@ left-to-right
 
 `… , …`
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>
 
@@ -63325,7 +63325,7 @@ No
 
 -   The [Nullish Coalescing Operator](nullish_coalescing_operator)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining</a>
 
@@ -63634,7 +63634,7 @@ In Firefox 42, the implementation got updated to reflect the final ES2015 specif
 -   [`Object.getOwnPropertyNames()`](../../object/getownpropertynames)
 -   [`Reflect.ownKeys()`](../../reflect/ownkeys)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys</a>
 
@@ -63736,7 +63736,7 @@ No
 -   [`String.prototype.padStart()`](padstart)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd</a>
 
@@ -63851,7 +63851,7 @@ No
 -   [`String.prototype.padEnd()`](padend)
 -   [A polyfill](https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart</a>
 
@@ -63900,7 +63900,7 @@ Because `parse()` is a static method of [`Date`](../date), it is called as `Date
 
 **Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
 
-The ECMAScript specification states: If the String does not conform to the standard format the function may fall back to any implementation–specific heuristics or implementation–specific parsing algorithm. Unrecognizable strings or dates containing illegal element values in ISO formatted strings shall cause `Date.parse()` to return [`NaN`](../nan).
+The ECMAScript specification states: If the String does not conform to the standard format the function may fall back to any implementation-specific heuristics or implementation-specific parsing algorithm. Unrecognizable strings or dates containing illegal element values in ISO formatted strings shall cause `Date.parse()` to return [`NaN`](../nan).
 
 However, invalid values in date strings not recognized as simplified ISO format as defined by ECMA-262 may or may not result in [`NaN`](../nan), depending on the browser and values provided, e.g.:
 
@@ -64106,7 +64106,7 @@ Or [`NaN`](nan) when the first non-whitespace character cannot be converted to a
 
 `parseFloat` is a function property of the global object.
 
--   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`–`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
+-   If `parseFloat` encounters a character other than a plus sign (`+`), minus sign (`-` U+002D HYPHEN-MINUS), numeral (`0`-`9`), decimal point (`.`), or exponent (`e` or `E`), it returns the value up to that character, ignoring the invalid character and characters following it.
 -   A _second_ decimal point also stops parsing (characters up to that point will still be parsed).
 -   Leading and trailing spaces in the argument are ignored.
 -   If the argument's first character can't be converted to a number (it's not any of the above characters), `parseFloat` returns [`NaN`](nan).
@@ -64593,7 +64593,7 @@ Samsung Internet
 
 -   [`Math`](../math)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI</a>
 
@@ -64643,7 +64643,7 @@ The WebAssembly Threads proposal also defines a new set of [atomic](https://gith
 -   `Cross-Origin-Resource-Policy`: [standardized in Fetch](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header), new `cross-origin` value is part of the `Cross-Origin-Embedder-Policy` effort.
 -   `postMessage()` changes and [`self.crossOriginIsolated`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated): [whatwg/html issue \#4732](https://github.com/whatwg/html/issues/4732), [whatwg/html issue \#4872](https://github.com/whatwg/html/issues/4872), [draft specification](https://github.com/whatwg/html/pull/4734).
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes</a>
 
@@ -65038,7 +65038,7 @@ Samsung Internet
 -   [`Infinity`](../infinity)
 -   [`isFinite()`](../isfinite)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY</a>
 
@@ -65164,7 +65164,7 @@ Samsung Internet
 -   [`Math.sqrt()`](sqrt)
 -   [Exponentiation operator](../../operators/exponentiation)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow</a>
 
@@ -65406,7 +65406,7 @@ Samsung Internet
 -   [`Object.isFrozen()`](isfrozen)
 -   [`Reflect.preventExtensions()`](../reflect/preventextensions)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions</a>
 
@@ -66381,7 +66381,7 @@ No
 -   [Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and RSVP.js)](https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski)
 -   [Venkatraman.R - Tools for Promises Unit Testing](https://tech.io/playgrounds/11107/tools-for-promises-unittesting/introduction)
 -   [Jake Archibald: JavaScript Promises: There and Back Again](https://www.html5rocks.com/en/tutorials/es6/promises/)
--   [Domenic Denicola: Callbacks, Promises, and Coroutines – Asynchronous Programming Patterns in JavaScript](https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
+-   [Domenic Denicola: Callbacks, Promises, and Coroutines - Asynchronous Programming Patterns in JavaScript](https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript)
 -   [Matt Greer: JavaScript Promises ... In Wicked Detail](https://www.mattgreer.org/articles/promises-in-wicked-detail/)
 -   [Forbes Lindesay: promisejs.org](https://www.promisejs.org/)
 -   [Speed-polyfill to polyfill both promise availability and promise performance.](https://github.com/anonyco/SPromiseMeSpeedJS/blob/master/README.md)
@@ -66600,7 +66600,7 @@ Samsung Internet
 -   [`Object.defineProperty()`](../global_objects/object/defineproperty)
 -   [Optional chaining](optional_chaining)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors</a>
 
@@ -66759,7 +66759,7 @@ Samsung Internet
 -   [`Object.keys()`](keys)
 -   [`Object.defineProperty()`](defineproperty)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable</a>
 
@@ -66920,7 +66920,7 @@ Samsung Internet
 -   [`Object.getPrototypeOf()`](getprototypeof)
 -   [`Object.setPrototypeOf()`](setprototypeof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a>
 
@@ -67990,7 +67990,7 @@ If the iterable contains one or more non-promise value and/or an already settled
     // Promise { <state>: "fulfilled", <value>: 100 }
     // Promise { <state>: "fulfilled", <value>: "non-Promise value" }
 
-### Using Promise.race – examples with setTimeout
+### Using Promise.race - examples with setTimeout
 
     var p1 = new Promise(function(resolve, reject) {
         setTimeout(() => resolve('one'), 500);
@@ -68141,7 +68141,7 @@ No
 -   [`Promise`](../promise)
 -   [`Promise.all()`](all)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race</a>
 
@@ -68266,7 +68266,7 @@ Samsung Internet
 
 -   [`window.crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</a>
 
@@ -68597,7 +68597,7 @@ No
 -   [`String`](../string)
 -   [Lexical grammar](../../lexical_grammar)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a>
 
@@ -71510,7 +71510,7 @@ No
 
 -   [`Promise`](../promise)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject</a>
 
@@ -71891,7 +71891,7 @@ Samsung Internet
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a>
 
@@ -72042,7 +72042,7 @@ No
 
 -   [`String.prototype.concat()`](concat)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a>
 
@@ -72257,7 +72257,7 @@ A replacement function as second argument is not supported.
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace</a>
 
@@ -72406,7 +72406,7 @@ No
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 -   [`RegExp.prototype.test()`](../regexp/test)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll</a>
 
@@ -72639,7 +72639,7 @@ No
 
 -   [`Promise`](../promise)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</a>
 
@@ -73247,7 +73247,7 @@ Samsung Internet
 -   [Functions](../functions)
 -   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return</a>
 
@@ -73484,7 +73484,7 @@ No
 
 -   [`Proxy`](../proxy)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable</a>
 
@@ -73587,7 +73587,7 @@ Samsung Internet
 -   [Bitwise operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise)
 -   [Right shift assignment operator](right_shift_assignment)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift</a>
 
@@ -73678,7 +73678,7 @@ Samsung Internet
 -   [Assignment operators in the JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment)
 -   [Right shift operator](right_shift)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment</a>
 
@@ -73788,7 +73788,7 @@ Samsung Internet
 -   [`Math.sign()`](sign)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</a>
 
@@ -73953,7 +73953,7 @@ Disabled in the Firefox 52 Extended Support Release (ESR).
 -   [WebAssembly concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 -   [Using the WebAssembly JavaScript API](https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError</a>
 
@@ -74216,7 +74216,7 @@ Samsung Internet
 -   [`Object.freeze()`](freeze)
 -   [`Object.isFrozen()`](isfrozen)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal</a>
 
@@ -74352,7 +74352,7 @@ No
 -   [`String.prototype.match()`](match)
 -   [`RegExp.prototype.exec()`](../regexp/exec)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search</a>
 
@@ -76769,7 +76769,7 @@ Samsung Internet
 -   [`Object.getPrototypeOf()`](getprototypeof)
 -   [`Object.prototype.__proto__`](proto)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf</a>
 
@@ -78519,9 +78519,9 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 -   [`ArrayBuffer`](arraybuffer)
 -   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 -   [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
--   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) – a simple library providing synchronization and work distribution abstractions.
--   [Shared Memory – a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
--   [A Taste of JavaScript's New Parallel Primitives – Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
+-   [parlib-simple](https://github.com/lars-t-hansen/parlib-simple) - a simple library providing synchronization and work distribution abstractions.
+-   [Shared Memory - a brief tutorial](https://github.com/tc39/ecmascript_sharedmem/blob/master/TUTORIAL.md)
+-   [A Taste of JavaScript's New Parallel Primitives - Mozilla Hacks](https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer</a>
 
@@ -78759,7 +78759,7 @@ No
 -   [`Math.round()`](round)
 -   [`Math.trunc()`](trunc)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a>
 
@@ -78867,7 +78867,7 @@ Samsung Internet
 -   [`Math.cos()`](cos)
 -   [`Math.tan()`](tan)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin</a>
 
@@ -78987,7 +78987,7 @@ No
 -   [`Math.cosh()`](cosh)
 -   [`Math.tanh()`](tanh)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh</a>
 
@@ -79081,7 +79081,7 @@ From Firefox 13 to Firefox 18, the `size` property was implemented as a `Map.pro
 
 -   [`Map`](../map)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size</a>
 
@@ -79371,7 +79371,7 @@ Samsung Internet
 -   [`String.prototype.fontsize()`](fontsize)
 -   [`String.prototype.big()`](big)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small</a>
 
@@ -80103,7 +80103,7 @@ No
 
 -   [`RegExp.prototype.flags`](flags)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source</a>
 
@@ -80213,7 +80213,7 @@ No
 -   [`Map[@@species]`](../map/@@species)
 -   [`Set[@@species]`](../set/@@species)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species</a>
 
@@ -80621,7 +80621,7 @@ Samsung Internet
 -   [`Array.prototype.join()`](../array/join)
 -   [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a>
 
@@ -80965,7 +80965,7 @@ No
 -   [Rest parameters](../functions/rest_parameters) (also '`...`')
 -   [`Function.prototype.apply()`](../global_objects/function/apply) (also '`...`')
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a>
 
@@ -81076,7 +81076,7 @@ Samsung Internet
 -   [`Math.log()`](log)
 -   [`Math.pow()`](pow)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt</a>
 
@@ -81184,7 +81184,7 @@ Samsung Internet
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT1_2</a>
 
@@ -81292,7 +81292,7 @@ Samsung Internet
 -   [`Math.pow()`](pow)
 -   [`Math.sqrt()`](sqrt)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2</a>
 
@@ -81581,7 +81581,7 @@ No
 -   [`String.prototype.indexOf()`](indexof)
 -   [`String.prototype.lastIndexOf()`](lastindexof)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith</a>
 
@@ -81961,7 +81961,7 @@ No
 -   [`RegExp.prototype.source`](source)
 -   [`RegExp.prototype.unicode`](unicode)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky</a>
 
@@ -82293,7 +82293,7 @@ Samsung Internet
 -   [Inequality operator](inequality)
 -   [Strict inequality operator](strict_inequality)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality</a>
 
@@ -82424,7 +82424,7 @@ Samsung Internet
 -   [Inequality operator](inequality)
 -   [Strict equality operator](strict_equality)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality</a>
 

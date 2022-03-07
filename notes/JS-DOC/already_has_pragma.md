@@ -30,7 +30,7 @@ Or, alternatively, you can set a header to your JavaScript file:
 
 ## See also
 
--   [How to use a source map – Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
--   [Introduction to source maps – HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+-   [How to use a source map - Firefox Tools documentation](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+-   [Introduction to source maps - HTML5 rocks](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Already_has_pragma</a>

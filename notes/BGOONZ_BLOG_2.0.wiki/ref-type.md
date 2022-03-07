@@ -103,7 +103,7 @@ If we put these operations on separate lines, then `this` will be lost for sure:
 
 Here `hi = user.hi` puts the function into the variable, and then on the last line it is completely standalone, and so there’s no `this`.
 
-**To make `user.hi()` calls work, JavaScript uses a trick – the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
+**To make `user.hi()` calls work, JavaScript uses a trick - the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
 
 The Reference Type is a “specification type”. We can’t explicitly use it, but it is used internally by the language.
 
@@ -256,8 +256,8 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 <span class="comments__read-before-link">read this before commenting…</span>
 
 -   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you can't understand something in the article - please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines - wrap them in `<pre>` tag, for more than 10 lines - use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
