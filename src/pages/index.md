@@ -296,10 +296,10 @@ sections:
     title: Web Audio DAW
     image: images/goals.jpg
   - title: Quick Links
-    section_id: navigate from the home page
-    col_number: two
+    section_id: quick links
+    col_number: three
     type: section_docs
-    subtitle: quick links home
+    subtitle: Navigate To Docs From Home Page
   - title: Contact
     section_id: contact
     actions:
@@ -310,12 +310,6 @@ sections:
         new_window: false
         no_follow: false
         type: action
-      - label: email
-        url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
       - label: Subscribe (Youtube)
         url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
         style: primary
