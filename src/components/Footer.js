@@ -1,38 +1,42 @@
 import _ from 'lodash';
 import React from 'react';
 
-import {htmlToReact} from '../utils';
+import { htmlToReact } from '../utils';
 
 import ActionLink from './ActionLink';
 
 export default class Footer extends React.Component {
-  render() {
+    render() {
         return (
             <footer id="colophon" className="site-footer outer">
                 <div>
                     <table id="footer-search" cellPadding={0} cellSpacing={0} border={0}>
                         <tbody>
                             <tr>
-                                <td style={{
-      fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }}>
+                                <td
+                                    style={{
+                                        fontFamily: 'Arial, Helvetica, sans-serif',
+                                        fontSize: '7.5pt'
+                                    }}
+                                >
                                     {' '}
                                     <table
-        width = "95%"
-        cellPadding = {0} cellSpacing = {0} border = {0} align = "center"
-        style =
-            {
-              { fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }
-            } > {' '}<tbody><tr>
-            <td style =
-             {
-               { fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }
-             } align = "left">{' '}<
-                a target = "_blank" href =
-                    "https://search.freefind.com/siteindex.html?si=14588965">
-            <h3>Index<
-                /h3>
-                                                    </a><
-            /td>
+                                        width="95%"
+                                        cellPadding={0}
+                                        cellSpacing={0}
+                                        border={0}
+                                        align="center"
+                                        style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }}
+                                    >
+                                        {' '}
+                                        <tbody>
+                                            <tr>
+                                                <td style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '7.5pt' }} align="left">
+                                                    {' '}
+                                                    <a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">
+                                                        <h3>Index</h3>
+                                                    </a>
+                                                </td>
                                                 <td
                                                     style={{
                                                         fontFamily: 'Arial, Helvetica, sans-serif',
@@ -46,11 +50,10 @@ export default class Footer extends React.Component {
                 search.freefind.com / find.html
             ? si = 14588965 &m = 0 &p =
                   0 "
-                  >
-                  <h3>Sitemap<
-                      /h3>
-                                                    </a><
-                  /td>
+                                                    >
+                                                        <h3>Sitemap</h3>
+                                                    </a>
+                                                </td>
                                                 <td
                                                     style={{
                                                         fontFamily: 'Arial, Helvetica, sans-serif',
@@ -64,40 +67,30 @@ export default class Footer extends React.Component {
                       search.freefind.com / find.html
               ? si = 14588965 &pid =
                     a "
-                    >
-                    <h3>Advanced<
-                        /h3>
+                                                    >
+                                                        <h3>Advanced</h3>
                                                     </a>
-                    </td>
+                                                </td>
                                             </tr>
-                    </tbody>
-                                    </table>< form
-        style = {
-          { margin: '0px', marginTop: '2px' }
-        } action = "https://search.freefind.com/find.html"
-        method = "get"
-        acceptCharset = "utf-8"
-        target =
-            "_self" >
-            <input type = "hidden" name = "si" defaultValue =
-             {
-               14588965
-             } />
+                                        </tbody>
+                                    </table>
+                                    <form
+                                        style={{ margin: '0px', marginTop: '2px' }}
+                                        action="https://search.freefind.com/find.html"
+                                        method="get"
+                                        acceptCharset="utf-8"
+                                        target="_self"
+                                    >
+                                        <input type="hidden" name="si" defaultValue={14588965} />
                                         <input type="hidden" name="pid" defaultValue="r" />
-            <input type = "hidden" name = "n" defaultValue =
-             {
-               0
-             } />
+                                        <input type="hidden" name="n" defaultValue={0} />
                                         <input type="hidden" name="_charset_" defaultValue />
-            <input type = "hidden" name = "bcd" defaultValue = "÷" />
-            <input type = "text" name = "query" size =
-             {
-               15
-             } />
+                                        <input type="hidden" name="bcd" defaultValue="÷" />
+                                        <input type="text" name="query" size={15} />
                                         <input type="submit" defaultValue="search" />
-            </form>
-                                </td><
-            /tr>
+                                    </form>
+                                </td>
+                            </tr>
                             <tr>
                                 <td
                                     style={{
@@ -114,9 +107,11 @@ export default class Footer extends React.Component {
                                         }}
                                         href="https:/ /
                 www.freefind.com "
-        rel =
-            "nofollow" > {' '} search engine{' '} <
-            /a>
+                                        rel="nofollow"
+                                    >
+                                        {' '}
+                                        search engine{' '}
+                                    </a>
                                     <a
                                         style={{
                                             textDecoration: 'none',
@@ -124,7 +119,7 @@ export default class Footer extends React.Component {
                                         }}
                                         href="https:/ /
                 www.freefind.com "
-        rel="nofollow"
+                                        rel="nofollow"
                                     >
                                         by
                                         <span style={{ color: 'transparent' }}>freefind</span>
@@ -146,8 +141,7 @@ export default class Footer extends React.Component {
                     </a>
                     <a aria-current="page" className="site-logo" href="/">
                         <img
-        src =
-            "https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png"
+                            src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png"
                             alt="webdevhub logo"
                         />
                     </a>
@@ -158,18 +152,15 @@ export default class Footer extends React.Component {
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
                                 <span className="copyright">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
-                            )
-  }
-  {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
-                                <ActionLink key={action_idx} {...this.props} action={
-      action} />
+                            )}
+                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
+                                <ActionLink key={action_idx} {...this.props} action={action} />
                             ))}{' '}
                         </p>
                         {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
                             <div className="social-links">
                                 {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
-                                    <ActionLink key={action_idx} {...this.props} action={
-        action} />
+                                    <ActionLink key={action_idx} {...this.props} action={action} />
                                 ))}{' '}
                             </div>
                         )}{' '}
