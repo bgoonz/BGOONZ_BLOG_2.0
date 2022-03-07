@@ -180,6 +180,10 @@ The `for...in` loop below iterates over all of the object's enumerable, non-Symb
     // "obj.b = 2"
     // "obj.c = 3"
 
+
+```js
+
+
 ### Iterating own properties
 
 The following function illustrates the use of [`hasOwnProperty()`](../global_objects/object/hasownproperty): the inherited properties are not displayed.
