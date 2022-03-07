@@ -94,7 +94,7 @@ template: docs
 [**Everything You Need to Get Started With VSCode + Extensions & Resources**\
 *Commands:*levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931 'https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931')[](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode _Themes_**\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**Object Oriented Programming in JavaScript**\
@@ -166,7 +166,7 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 [**bgoonz/Cumulative-Resource-List**\
 *List of useful cheatsheets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s 'https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s')[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
 
-[**My Favorite VSCode *Themes***\
+[**My Favorite VSCode _Themes_**\
 Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f 'https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f')[](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
 
 [**JavaScript Rotate (Array) ProblemWalkthrough**\
@@ -214,7 +214,7 @@ Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vsc
 [**Basic Web Development Environment Setup**\
 *Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe 'https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe')[](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
 
-[***Fetch* Quick Sheet**\
+[**_Fetch_ Quick Sheet**\
 Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4 'https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4')[](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
@@ -242,7 +242,7 @@ For a more complete guide... checkout :
 
 [![](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)](https://camo.githubusercontent.com/6413d09083755e2f7dcdfb53580fbc57ca8ce5cda09b970995c4f6442a2ef120/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c746538316d457667455059586f64422e706e67)
 
-- way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
+-   way we analyze how efficient algorithms are without getting too mired in details - can model how much time any function will take given `n` inputs - interested in order of magnitude of number of the exact figure - O absorbs all fluff and n = biggest term - Big O of `3x^2 +x + 1` = `O(n^2)`
 
 ### Time Complexity
 
@@ -256,44 +256,44 @@ no loops or exit & return = O(1)
 **recursive**: as you add more terms, increase in time as you add input diminishes\
 **recursion**: when you define something in terms of itself, a function that calls itself
 
-- used because of ability to maintain state at diffferent levels of recursion
-- inherently carries large footprint
-- every time function called, you add call to stack
+-   used because of ability to maintain state at diffferent levels of recursion
+-   inherently carries large footprint
+-   every time function called, you add call to stack
 
 **iterative**: use loops instead of recursion (preferred)
 
-- favor readability over performance
+-   favor readability over performance
 
 `O(n log(n))` & `O(log(n))`: dividing/halving
 
-- if code employs recursion/divide-and-conquer strategy
-- what power do i need to power my base to get n
+-   if code employs recursion/divide-and-conquer strategy
+-   what power do i need to power my base to get n
 
 ### Time Definitions
 
-- **constant**: does not scale with input, will take same amount of time
-- for any input size n, constant time performs same number of operations every time
-- **logarithmic**: increases number of operations it performs as logarithmic function of input size n
-- function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
-- halving
-- **linear**: increases number of operations it performs as linear function of input size n
-- number of additional operations needed to perform grows in direct proportion to increase in input size n
-- **log-linear**: increases number of operations it performs as log-linear function of input size n
-- looking over every element and doing work on each one
-- **quadratic**: increases number of operations it performs as quadratic function of input size n
-- **exponential**: increases number of operations it performs as exponential function of input size n
-- number of nested loops increases as function of n
-- **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
-- **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
-- **rate of growth**: how fast a function grows with input size
+-   **constant**: does not scale with input, will take same amount of time
+-   for any input size n, constant time performs same number of operations every time
+-   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
+-   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
+-   halving
+-   **linear**: increases number of operations it performs as linear function of input size n
+-   number of additional operations needed to perform grows in direct proportion to increase in input size n
+-   **log-linear**: increases number of operations it performs as log-linear function of input size n
+-   looking over every element and doing work on each one
+-   **quadratic**: increases number of operations it performs as quadratic function of input size n
+-   **exponential**: increases number of operations it performs as exponential function of input size n
+-   number of nested loops increases as function of n
+-   **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
+-   **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
+-   **rate of growth**: how fast a function grows with input size
 
 [![](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)
 
 ### Space Complexity
 
-- How does the space usage scale/change as input gets very large?
-- What auxiliary space does your algorithm use or is it in place (constant)?
-- Runtime stack space counts as part of space complexity unless told otherwise.
+-   How does the space usage scale/change as input gets very large?
+-   What auxiliary space does your algorithm use or is it in place (constant)?
+-   Runtime stack space counts as part of space complexity unless told otherwise.
 
 ### Sorting Algorithms
 
@@ -334,11 +334,11 @@ How to implement array callback methods in JavaScript
 
 #### Functions are called "First Class Objects" in JavaScript because
 
-- A function is an instance of the Object type
-- A function can have properties and has a link back to its constructor method
-- You can store the function in a variable
-- You can pass the function as a parameter to another function
-- You can return the function from a function
+-   A function is an instance of the Object type
+-   A function can have properties and has a link back to its constructor method
+-   You can store the function in a variable
+-   You can pass the function as a parameter to another function
+-   You can return the function from a function
 
 What do you think will be printed in the following:
 
@@ -397,7 +397,7 @@ console.log(greaterValue(-2, negate, addOne));
 
 ```
 
-*Note: we do not invoke* `negate` *or* `addOne` *(by using* `()` *to call them), we are passing the function itself.*
+_Note: we do not invoke_ `negate` _or_ `addOne` _(by using_ `()` _to call them), we are passing the function itself._
 
 #### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map
 
@@ -539,7 +539,7 @@ References:
 [**Introduction: callbacks**\
 *To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks 'https://javascript.info/callbacks')[](https://javascript.info/callbacks)
 
-*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
+_More content at_ [**_plainenglish.io_**](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
 
@@ -594,8 +594,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 Shows all of my files and directories of my Desktop directory.
 
-- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
-- Some useful `ls` command options:-
+-   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+-   Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -631,7 +631,7 @@ We can create an empty file by typing `touch file_name`. It's going to create a 
 
 I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
 #### ✔ Display the Content of a File ➡ `cat`
 
@@ -675,15 +675,15 @@ Renamed my hello.txt file to the hi.txt file and html directory to the folder di
 
 To do this, we use the `cp` command.
 
-- You can copy a file by entering `cp file_to_copy new_file_name`.
+-   You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+-   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
-*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
+_The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
 [![](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)](https://camo.githubusercontent.com/b914824b683c77cb019300487919155d05a805fb82b0a743ecdce67fd22bab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d6e6d7a4d69696f495943754b3932422e676966)
 
@@ -693,13 +693,13 @@ Here I copied all of the files from the folder to folder-copy.
 
 To do this, we use the `rm` command.
 
-- To remove a file, you can use the command like `rm file_to_remove`.
+-   To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
-- To remove a directory, use the command like `rm -r directory_to_remove`.
+-   To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 
@@ -1053,7 +1053,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 > **I am essentially removing the recursive action of the find command...**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory... is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory... is working properly!**
 
 [![](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)](https://camo.githubusercontent.com/b514da1e3cfcfeda7a09f9d691618ee89526a7ebe8ded7dd7140a5c88f5f9d3e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35435f757a4c6e7543536c5469696f693245746e55412e706e67)
 

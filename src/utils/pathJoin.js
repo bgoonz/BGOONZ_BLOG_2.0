@@ -1,15 +1,11 @@
 import _ from 'lodash';
 
+export default function pathJoin(...pathParts) {
+    const result = _.compact(pathParts)
 
+        .join('/')
 
-export default function pathJoin( ...pathParts ) {
+        .replace(/\/{2,}/g, '/');
 
-  const result = _.compact( pathParts )
-
-    .join( '/' )
-
-    .replace( /\/{2,}/g, '/' );
-
-  return result || '.';
-
+    return result || '.';
 }

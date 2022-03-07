@@ -20,6 +20,7 @@ template: docs
 ### 207. [**🏠Home🏠**](https://bgoonz-blog.netlify.app/)
 
 ---
+
 ---
 
 ### 0. [**🖥️blog/300-react-questions🌍**](https://bgoonz-blog.netlify.app/blog/300-react-questions)
@@ -57,6 +58,7 @@ template: docs
 ### 16. [**🖥️blog🌍**](https://bgoonz-blog.netlify.app/blog)
 
 ---
+
 ---
 
 ## DOCS:
@@ -432,5 +434,3 @@ template: docs
 ### 202. [**📖docs/tutorials🌍**](https://bgoonz-blog.netlify.app/docs/tutorials)
 
 ### 203. [**🖥️docs🌍**](https://bgoonz-blog.netlify.app/docs)
-
-

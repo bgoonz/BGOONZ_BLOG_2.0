@@ -39,6 +39,7 @@ excerpt: docs quick reference
 <br>
 
        <div id="search" />
+
 <br>
                <div id="search" className="inner"></div>
 <br>
@@ -59,7 +60,6 @@ excerpt: docs quick reference
 <br>
 <hr>
 <br>
-
 
 ---
 

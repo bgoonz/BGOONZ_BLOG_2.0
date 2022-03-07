@@ -6046,7 +6046,7 @@ image: images/green-spruce-4e3a1745.png
      Let's see the difference with an example,
 
      ```javascript
-     isNaN('hello');   // true
+     isNaN('hello'); // true
      Number.isNaN('hello'); // false
      ```
 

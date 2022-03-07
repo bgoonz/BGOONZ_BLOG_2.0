@@ -40,23 +40,23 @@ To get started with any of the Google workspace APIs, you need to have a so-call
 
 ## Step 2: Create Credentials
 
-After creating a GCP project (step 1), we need to set up our credentials for accessing the API. Our credentials are like a key for the API to know who is requesting access to its data and services. You can follow the steps listed [here](https://developers.google.com/workspace/guides/create-credentials) to *create desktop application credentials*. In my experience, some steps were missing in this tutorial, so I'm giving the detailed version below.
+After creating a GCP project (step 1), we need to set up our credentials for accessing the API. Our credentials are like a key for the API to know who is requesting access to its data and services. You can follow the steps listed [here](https://developers.google.com/workspace/guides/create-credentials) to _create desktop application credentials_. In my experience, some steps were missing in this tutorial, so I'm giving the detailed version below.
 
 -   Start by navigating back to your [Google Cloud Console](https://console.cloud.google.com/home/dashboard).
 
--   Find the *APIs & Services* tab, and then select the *Credentials* page
+-   Find the _APIs & Services_ tab, and then select the _Credentials_ page
 
--   Click on \*+Create Credentials \*and select *OAuth client ID*.
+-   Click on \*+Create Credentials \*and select _OAuth client ID_.
 
 <!---->
 
--   Select *Desktop app* as the application type and give your app a name. Then click create.
+-   Select _Desktop app_ as the application type and give your app a name. Then click create.
 
 -   You will be prompted to set up your OAuth consent screen. Follow the steps you are prompted with and make sure to add yourself as a test user.
 
 -   After generating your client ID, you will be able to see it on your credentials page.
 
--   Click the download button to download a JSON file with your credentials. Rename it to *credentials.json*. You will need this in the next step.
+-   Click the download button to download a JSON file with your credentials. Rename it to _credentials.json_. You will need this in the next step.
 
 ## Step 3: Set up the API
 
@@ -64,13 +64,13 @@ After creating a GCP project and generating your credentials, it is time to conn
 
 -   Make sure to have a look at the prerequisites before diving in.
 
--   Don't forget to move your *credentials.json* file to the same folder where your *quickstart.py* file is.
+-   Don't forget to move your _credentials.json_ file to the same folder where your _quickstart.py_ file is.
 
 -   Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
 
 If everything goes as expected, you should see this in your browser after running the sample script:
 
-After successfully running the sample, you will also find a *token.json* file in your workspace. This file is used for authentication on any of your future calls to the API. You're now ready to use the API!
+After successfully running the sample, you will also find a _token.json_ file in your workspace. This file is used for authentication on any of your future calls to the API. You're now ready to use the API!
 
 # Using the API
 
@@ -82,7 +82,7 @@ Reading from an existing spreadsheet is a key functionality if you want to autom
 
 The API identifies spreadsheets using a spreadsheet ID. To connect to a spreadsheet that already exists, you can find the spreadsheet ID in the Google Sheets URL as follows:
 
-After identifying the spreadsheet ID of the spreadsheet we just created, we can use the API to connect to the spreadsheet and to read its data. Below is a code example of how to do this. The main functionalities to retrieve data from an existing spreadsheet are provided by sheet.values().get().execute()\* *on line 17*. \*Note that this is where we pass the spreadsheet ID and the range of values in the sheet we want to retrieve. All code before that establishes the connection to the API and is very similar to the *quickstart.py* file we used to connect to the API for the first time.
+After identifying the spreadsheet ID of the spreadsheet we just created, we can use the API to connect to the spreadsheet and to read its data. Below is a code example of how to do this. The main functionalities to retrieve data from an existing spreadsheet are provided by sheet.values().get().execute()\* _on line 17_. \*Note that this is where we pass the spreadsheet ID and the range of values in the sheet we want to retrieve. All code before that establishes the connection to the API and is very similar to the _quickstart.py_ file we used to connect to the API for the first time.
 
 The code returns a list of lists containing the data of our spreadsheet. Note that the data is returned row-by-row this way.
 
@@ -92,7 +92,7 @@ Next, let's try to add a new value to the spreadsheet. After all, this is the se
 
 The code below shows how to add a row to the existing data with the values \[6, f]. Similar to reading values from an existing sheet, we need to start with establishing the connection to the API and identifying the spreadsheet ID. Because we are now writing new data to the spreadsheet, it is essential to make sure that you have not specified read-only permission in your SCOPES list (line 5).
 
-The main functionalities to append new data to an existing spreadsheet are provided by \*sheet.values().append().execute() *on lines 17-22*. \*Note that this is where we pass the spreadsheet ID, spreadsheet range, and several other parameters that specify how the data has to be inserted and what data has to be inserted. The *body* parameter takes a dictionary with values to append to the existing data table, using the same list-of-list format we saw before.
+The main functionalities to append new data to an existing spreadsheet are provided by \*sheet.values().append().execute() _on lines 17-22_. \*Note that this is where we pass the spreadsheet ID, spreadsheet range, and several other parameters that specify how the data has to be inserted and what data has to be inserted. The _body_ parameter takes a dictionary with values to append to the existing data table, using the same list-of-list format we saw before.
 
 After running the code, the spreadsheet is automatically updated with our new entry. The new row is neatly appended to the data that we manually wrote in the spreadsheet.
 

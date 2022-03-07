@@ -69,12 +69,9 @@ str = str.replace(/(<\!\[CDATA\[([^\]]|(\]+[^>]))*\]+>)/gm, '');
 The `replace` function can also be **passed a callback** as its second parameter, and this is invaluable in cases where the replacement you want can't be described in a simple expression. For example:
 
 ```js
-isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i,
-  function(match, lang, country)
-  {
-    return lang.toLowerCase()
-      + (country ? country.toUpperCase() : '');
-  });
+isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i, function (match, lang, country) {
+    return lang.toLowerCase() + (country ? country.toUpperCase() : '');
+});
 ```
 
 That example normalizes the capitalisation in language codes — so `"EN"` would become `"en"`, while `"en-us"` would become `"en-US"`.
@@ -106,12 +103,10 @@ Since nothing is returned, the original string remains unchanged. Although if we
 
 ```js
 let comments = [];
-str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
-  function(match)
-  {
+str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm, function (match) {
     comments.push(match);
     return '';
-  });
+});
 ```
 
 ## 3\. Working With Invisible Delimiters

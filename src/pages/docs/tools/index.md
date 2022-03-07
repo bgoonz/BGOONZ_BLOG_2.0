@@ -41,7 +41,6 @@ template: docs
 <br>
 <iframe sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-
 <iframe sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
 <br>
@@ -82,7 +81,6 @@ template: docs
 <br>
 <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devtools42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-
 <h1>   Paste excel to HTML</h1>
 <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
@@ -98,7 +96,6 @@ template: docs
 <br>
 <br>
 <br>
-
 
 <h1>  Github HTML Render from link </h1>
 <br>
@@ -138,14 +135,11 @@ template: docs
 <br>
 <iframe sandbox="allow-scripts"   style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-
-
 <br>
 <br>
 <br>
 <h1>                </h1>
 <br>
-
 
  <iframe sandbox="allow-scripts"  height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">

@@ -471,4 +471,3 @@ You can determine whether a function exists by using the `typeof` operator. In t
      }
 
 Note that in the `if` test, a reference to `noFunc` is used—there are no brackets "()" after the function name so the actual function is not called.
-

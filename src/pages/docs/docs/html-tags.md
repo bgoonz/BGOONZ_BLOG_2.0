@@ -3,10 +3,10 @@ title: HTML Elements
 weight: 0
 excerpt: HTML Elements
 seo:
-  title: 'HTML Elements'
-  description: 'HTML Elements mdn docs'
-  robots: []
-  extra: []
+    title: 'HTML Elements'
+    description: 'HTML Elements mdn docs'
+    robots: []
+    extra: []
 template: docs
 ---
 

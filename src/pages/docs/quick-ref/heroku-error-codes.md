@@ -192,7 +192,7 @@ The Ruby on Rails [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.
 
 This error differs from [R10](https://devcenter.heroku.com/articles/error-codes#r10-boot-timeout) in that the H20 75-second timeout includes platform tasks such as internal state propagation, requests between internal components, slug download, unpacking, container preparation, etc... The R10 60-second timeout applies solely to application startup tasks.
 
-If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
+If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a _temporary solution_.
 
 ## [H21 - Backend connection refused](https://devcenter.heroku.com/articles/error-codes#h21-backend-connection-refused)
 
@@ -387,7 +387,7 @@ This error is often caused by a process being unable to reach an external resour
 
 Common solutions are to access external resources asynchronously, so they don't block startup, and to reduce the amount of application code or its dependencies.
 
-If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a *temporary solution*.
+If your application requires more time to boot, you may use the [boot timeout tool](https://tools.heroku.support/limits/boot_timeout) to increase the limit. However, in general, slow boot times will make it harder to deploy your application and will make recovery from dyno failures slower, so this should be considered a _temporary solution_.
 
 One exception is for apps using the [Java buildpack](https://devcenter.heroku.com/articles/java-support), [Gradle buildpack](https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku), [heroku-deploy toolbelt plugin](https://devcenter.heroku.com/articles/war-deployment#deployment-with-the-heroku-cli), or [Heroku Maven plugin](https://devcenter.heroku.com/articles/deploying-java-applications-with-the-heroku-maven-plugin), which will be allowed 90 seconds to bind to their assigned port.
 
@@ -452,7 +452,7 @@ A dyno requires vastly more memory than its [quota](https://devcenter.heroku.com
 
 In Private Spaces, dynos exceeding their memory quota do not use swap space and thus do not emit R14 errors.
 
-Private Space dynos vastly exceeding their memory quota generally will emit R15 errors but occasionally the platform may shut down the dyno before the R15 is sent, causing the error to be dropped. *If* an R15 is emitted it will only be visible in the app log stream but not in the dashboard [Application Metrics](https://devcenter.heroku.com/articles/metrics) interface. Other non-R15 types of errors from Private Space dynos are correctly surfaced in the Application Metrics interface.
+Private Space dynos vastly exceeding their memory quota generally will emit R15 errors but occasionally the platform may shut down the dyno before the R15 is sent, causing the error to be dropped. _If_ an R15 is emitted it will only be visible in the app log stream but not in the dashboard [Application Metrics](https://devcenter.heroku.com/articles/metrics) interface. Other non-R15 types of errors from Private Space dynos are correctly surfaced in the Application Metrics interface.
 
 For Private Space dynos vastly exceeding their memory quota the platform kills dyno processes consuming large amounts of memory, but may not kill the dyno itself.
 

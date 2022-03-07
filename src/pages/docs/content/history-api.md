@@ -44,7 +44,7 @@ You can determine the number of pages in the history stack by looking at the val
 
 ## [Interfaces](https://developer.mozilla.org/en-US/docs/Web/API/History_API#interfaces)
 
-Allows manipulation of the browser *session history* (that is, the pages visited in the tab or frame that the current page is loaded in).
+Allows manipulation of the browser _session history_ (that is, the pages visited in the tab or frame that the current page is loaded in).
 
 ## [Examples](https://developer.mozilla.org/en-US/docs/Web/API/History_API#examples)
 
@@ -126,7 +126,7 @@ See [WindowEventHandlers.onpopstate](https://developer.mozilla.org/en-US/docs/We
 
 ### [Reading the current state](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#reading_the_current_state)
 
-When your page loads, it might have a non-null state object.  This can happen, for example, if the page sets a state object (using [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) or [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)) and then the user restarts their browser. When the page reloads, the page will receive an onload event, but no popstate event. However, if you read the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property, you'll get back the state object you would have gotten if a popstate had fired.
+When your page loads, it might have a non-null state object. This can happen, for example, if the page sets a state object (using [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) or [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)) and then the user restarts their browser. When the page reloads, the page will receive an onload event, but no popstate event. However, if you read the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property, you'll get back the state object you would have gotten if a popstate had fired.
 
 You can read the state of the current history entry without waiting for a popstate event using the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property like this:
 
@@ -140,7 +140,7 @@ You can read the state of the current history entry without waiting for a popsta
 
 # Window.historyCopy to Clipboard&#xA;&#xA;
 
-The Window.history read-only property returns a reference to the [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object, which provides an interface for manipulating the browser *session history* (pages visited in the tab or frame that the current page is loaded in).
+The Window.history read-only property returns a reference to the [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object, which provides an interface for manipulating the browser _session history_ (pages visited in the tab or frame that the current page is loaded in).
 
 See [Manipulating the browser history](https://developer.mozilla.org/en-US/docs/Web/API/History_API) for examples and details. In particular, that article explains security features of the [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) and [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState) methods that you should be aware of before using them.
 
