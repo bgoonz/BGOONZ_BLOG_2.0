@@ -28,7 +28,7 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
 
 //<script src={withPrefix('js/google-search.js')} />
 //<script src={withPrefix('js/algolia.js')} />
-//<script src={withPrefix('js/prism.js')} />
+//
 //<script src={withPrefix('js/analytics.js')} />
         </React.Fragment>
     ]);
