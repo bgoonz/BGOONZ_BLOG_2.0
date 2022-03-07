@@ -1,4 +1,5 @@
-/*! For license information please see app-10180cc44b3853f61402.js.LICENSE.txt */
+/*! For license information please see app-10180cc44b3853f61402.js.LICENSE.txt
+ */
 (window.webpackJsonp = window.webpackJsonp || []).push([
     [6],
     {
@@ -61,12 +62,7 @@
             function w(t) {
                 return s.default.createElement(l.Location, null, function (e) {
                     var n = e.location;
-                    return s.default.createElement(
-                        R,
-                        (0, u.default)({}, t, {
-                            _location: n
-                        })
-                    );
+                    return s.default.createElement(R, (0, u.default)({}, t, { _location: n }));
                 });
             }
             var R = (function (t) {
@@ -85,9 +81,7 @@
                     var r = !1;
                     return (
                         'undefined' != typeof window && window.IntersectionObserver && (r = !0),
-                        (n.state = {
-                            IOSupported: r
-                        }),
+                        (n.state = { IOSupported: r }),
                         (n.handleRef = n.handleRef.bind((0, a.default)(n))),
                         n
                     );
@@ -136,10 +130,7 @@
                                             e === t.target && (t.isIntersecting || t.intersectionRatio > 0) && (r.unobserve(e), r.disconnect(), n());
                                         });
                                     })).observe(e),
-                                    {
-                                        instance: r,
-                                        el: e
-                                    }));
+                                    { instance: r, el: e }));
                     }),
                     (n.render = function () {
                         var t = this,
@@ -186,11 +177,7 @@
                                                   e.preventDefault();
                                                   var n = d,
                                                       r = encodeURI(m) === h.pathname;
-                                                  'boolean' != typeof d && r && (n = !0),
-                                                      window.___navigate(m, {
-                                                          state: p,
-                                                          replace: n
-                                                      });
+                                                  'boolean' != typeof d && r && (n = !0), window.___navigate(m, { state: p, replace: n });
                                               }
                                               return !0;
                                           }
@@ -198,15 +185,7 @@
                                       v
                                   )
                               )
-                            : s.default.createElement(
-                                  'a',
-                                  (0, u.default)(
-                                      {
-                                          href: m
-                                      },
-                                      v
-                                  )
-                              );
+                            : s.default.createElement('a', (0, u.default)({ href: m }, v));
                     }),
                     e
                 );
@@ -221,15 +200,7 @@
                     return console.warn('The "' + t + '" method is now deprecated and will be removed in Gatsby v' + n + '. Please use "' + e + '" instead.');
                 },
                 O = s.default.forwardRef(function (t, e) {
-                    return s.default.createElement(
-                        w,
-                        (0, u.default)(
-                            {
-                                innerRef: e
-                            },
-                            t
-                        )
-                    );
+                    return s.default.createElement(w, (0, u.default)({ innerRef: e }, t));
                 });
             e.default = O;
             e.navigate = function (t, e) {
@@ -304,10 +275,7 @@
             }
             (t.exports = function (t) {
                 if (t && t.__esModule) return t;
-                if (null === t || ('object' !== r(t) && 'function' != typeof t))
-                    return {
-                        default: t
-                    };
+                if (null === t || ('object' !== r(t) && 'function' != typeof t)) return { default: t };
                 var e = o();
                 if (e && e.has(t)) return e.get(t);
                 var n = {},
@@ -360,10 +328,7 @@
                     var e = h(t),
                         n = u.map(function (t) {
                             var e = t.path;
-                            return {
-                                path: t.matchPath,
-                                originalPath: e
-                            };
+                            return { path: t.matchPath, originalPath: e };
                         }),
                         o = Object(r.pick)(n, e);
                     return o ? a(o.route.originalPath) : null;
@@ -372,10 +337,7 @@
                     var e = h(t),
                         n = u.map(function (t) {
                             var e = t.path;
-                            return {
-                                path: t.matchPath,
-                                originalPath: e
-                            };
+                            return { path: t.matchPath, originalPath: e };
                         }),
                         o = Object(r.pick)(n, e);
                     return o ? o.params : {};
@@ -537,11 +499,7 @@
                         listen: function (e) {
                             n.push(e);
                             var r = function () {
-                                (a = o(t)),
-                                    e({
-                                        location: a,
-                                        action: 'POP'
-                                    });
+                                (a = o(t)), e({ location: a, action: 'POP' });
                             };
                             return (
                                 t.addEventListener('popstate', r),
@@ -560,9 +518,7 @@
                                 p = void 0 !== l && l;
                             if ('number' == typeof e) t.history.go(e);
                             else {
-                                s = r({}, s, {
-                                    key: Date.now() + ''
-                                });
+                                s = r({}, s, { key: Date.now() + '' });
                                 try {
                                     i || p ? t.history.replaceState(s, null, e) : t.history.pushState(s, null, e);
                                 } catch (d) {
@@ -575,10 +531,7 @@
                             });
                             return (
                                 n.forEach(function (t) {
-                                    return t({
-                                        location: a,
-                                        action: 'PUSH'
-                                    });
+                                    return t({ location: a, action: 'PUSH' });
                                 }),
                                 f
                             );
@@ -616,23 +569,14 @@
                                     u = i[0],
                                     c = i[1],
                                     s = void 0 === c ? '' : c;
-                                r++,
-                                    o.push({
-                                        pathname: u,
-                                        search: s.length ? '?' + s : s
-                                    }),
-                                    a.push(t);
+                                r++, o.push({ pathname: u, search: s.length ? '?' + s : s }), a.push(t);
                             },
                             replaceState: function (t, e, n) {
                                 var i = n.split('?'),
                                     u = i[0],
                                     c = i[1],
                                     s = void 0 === c ? '' : c;
-                                (o[r] = {
-                                    pathname: u,
-                                    search: s
-                                }),
-                                    (a[r] = t);
+                                (o[r] = { pathname: u, search: s }), (a[r] = t);
                             },
                             go: function (t) {
                                 var e = r + t;
@@ -703,13 +647,7 @@
                         o && (e = this._stateStorage.read(this.props.location, o)), r ? this.scrollToHash(decodeURI(r), t) : this.windowScroll(e, t);
                     }),
                     (n.render = function () {
-                        return u.createElement(
-                            l.Provider,
-                            {
-                                value: this._stateStorage
-                            },
-                            this.props.children
-                        );
+                        return u.createElement(l.Provider, { value: this._stateStorage }, this.props.children);
                     }),
                     e
                 );
@@ -765,20 +703,9 @@
                                             key: this.props.path || this.props.pageResources.page.path
                                         })
                                     );
-                            return Object(u.apiRunner)(
-                                'wrapPageElement',
-                                {
-                                    element: e,
-                                    props: t
-                                },
-                                e,
-                                function (e) {
-                                    return {
-                                        element: e.result,
-                                        props: t
-                                    };
-                                }
-                            ).pop();
+                            return Object(u.apiRunner)('wrapPageElement', { element: e, props: t }, e, function (e) {
+                                return { element: e.result, props: t };
+                            }).pop();
                         }),
                         e
                     );
@@ -821,12 +748,7 @@
                     for (var n = void 0, r = void 0, a = e.split('?')[0], i = m(a), u = '' === i[0], c = v(t), s = 0, l = c.length; s < l; s++) {
                         var f = !1,
                             h = c[s].route;
-                        if (h.default)
-                            r = {
-                                route: h,
-                                params: {},
-                                uri: e
-                            };
+                        if (h.default) r = { route: h, params: {}, uri: e };
                         else {
                             for (var g = m(h.path), b = {}, w = Math.max(i.length, g.length), R = 0; R < w; R++) {
                                 var P = g[R],
@@ -862,14 +784,7 @@
                     return n || r || null;
                 },
                 u = function (t, e) {
-                    return i(
-                        [
-                            {
-                                path: t
-                            }
-                        ],
-                        e
-                    );
+                    return i([{ path: t }], e);
                 },
                 c = function (t, e) {
                     if (a(t, '/')) return t;
@@ -975,14 +890,7 @@
                 };
         },
         LeKB: function (t, e, n) {
-            t.exports = [
-                {
-                    plugin: n('GddB'),
-                    options: {
-                        plugins: []
-                    }
-                }
-            ];
+            t.exports = [{ plugin: n('GddB'), options: { plugins: [] } }];
         },
         MMVs: function (t, e, n) {
             t.exports = (function () {
@@ -1019,9 +927,7 @@
                       .register('/sw.js')
                       .then(function (t) {
                           t.addEventListener('updatefound', function () {
-                              Object(r.apiRunner)('onServiceWorkerUpdateFound', {
-                                  serviceWorker: t
-                              });
+                              Object(r.apiRunner)('onServiceWorkerUpdateFound', { serviceWorker: t });
                               var e = t.installing;
                               console.log('installingWorker', e),
                                   e.addEventListener('statechange', function () {
@@ -1029,26 +935,18 @@
                                           case 'installed':
                                               navigator.serviceWorker.controller
                                                   ? ((window.___swUpdated = !0),
-                                                    Object(r.apiRunner)('onServiceWorkerUpdateReady', {
-                                                        serviceWorker: t
-                                                    }),
+                                                    Object(r.apiRunner)('onServiceWorkerUpdateReady', { serviceWorker: t }),
                                                     window.___failedResources &&
                                                         (console.log('resources failed, SW updated - reloading'), window.location.reload()))
                                                   : (console.log('Content is now available offline!'),
-                                                    Object(r.apiRunner)('onServiceWorkerInstalled', {
-                                                        serviceWorker: t
-                                                    }));
+                                                    Object(r.apiRunner)('onServiceWorkerInstalled', { serviceWorker: t }));
                                               break;
                                           case 'redundant':
                                               console.error('The installing service worker became redundant.'),
-                                                  Object(r.apiRunner)('onServiceWorkerRedundant', {
-                                                      serviceWorker: t
-                                                  });
+                                                  Object(r.apiRunner)('onServiceWorkerRedundant', { serviceWorker: t });
                                               break;
                                           case 'activated':
-                                              Object(r.apiRunner)('onServiceWorkerActive', {
-                                                  serviceWorker: t
-                                              });
+                                              Object(r.apiRunner)('onServiceWorkerActive', { serviceWorker: t });
                                       }
                                   });
                           });
@@ -1163,11 +1061,7 @@
         },
         TqRt: function (t, e) {
             (t.exports = function (t) {
-                return t && t.__esModule
-                    ? t
-                    : {
-                          default: t
-                      };
+                return t && t.__esModule ? t : { default: t };
             }),
                 (t.exports.default = t.exports),
                 (t.exports.__esModule = !0);
@@ -1216,18 +1110,10 @@
                 return null != e && (window.___replace(e.toPath), !0);
             }
             var P = function (t, e) {
-                    R(t.pathname) ||
-                        Object(o.apiRunner)('onPreRouteUpdate', {
-                            location: t,
-                            prevLocation: e
-                        });
+                    R(t.pathname) || Object(o.apiRunner)('onPreRouteUpdate', { location: t, prevLocation: e });
                 },
                 O = function (t, e) {
-                    R(t.pathname) ||
-                        Object(o.apiRunner)('onRouteUpdate', {
-                            location: t,
-                            prevLocation: e
-                        });
+                    R(t.pathname) || Object(o.apiRunner)('onRouteUpdate', { location: t, prevLocation: e });
                 },
                 S = function (t, e) {
                     if ((void 0 === e && (e = {}), 'number' != typeof t)) {
@@ -1236,12 +1122,8 @@
                         if ((r && ((t = r.toPath), (n = Object(b.parsePath)(t).pathname)), window.___swUpdated)) window.location = n;
                         else {
                             var a = setTimeout(function () {
-                                m.a.emit('onDelayedLoadPageResources', {
-                                    pathname: n
-                                }),
-                                    Object(o.apiRunner)('onRouteUpdateDelayed', {
-                                        location: window.location
-                                    });
+                                m.a.emit('onDelayedLoadPageResources', { pathname: n }),
+                                    Object(o.apiRunner)('onRouteUpdateDelayed', { location: window.location });
                             }, 1e3);
                             h.default.loadPage(n).then(function (r) {
                                 if (!r || r.status === h.PageResourceStatus.Error)
@@ -1251,9 +1133,7 @@
                                     ('serviceWorker' in navigator &&
                                         null !== navigator.serviceWorker.controller &&
                                         'activated' === navigator.serviceWorker.controller.state &&
-                                        navigator.serviceWorker.controller.postMessage({
-                                            gatsbyApi: 'clearPathResources'
-                                        }),
+                                        navigator.serviceWorker.controller.postMessage({ gatsbyApi: 'clearPathResources' }),
                                     console.log('Site has changed on server. Reloading browser'),
                                     (window.location = n)),
                                     Object(s.navigate)(t, e),
@@ -1271,9 +1151,7 @@
                     u = Object(o.apiRunner)('shouldUpdateScroll', {
                         prevRouterProps: t,
                         pathname: a,
-                        routerProps: {
-                            location: r
-                        },
+                        routerProps: { location: r },
                         getSavedScrollPosition: function (t) {
                             return n._stateStorage.read(t);
                         }
@@ -1302,12 +1180,7 @@
                             });
                         }),
                         (n.render = function () {
-                            return i.a.createElement(
-                                'div',
-                                Object.assign({}, g, {
-                                    ref: this.announcementRef
-                                })
-                            );
+                            return i.a.createElement('div', Object.assign({}, g, { ref: this.announcementRef }));
                         }),
                         e
                     );
@@ -1330,14 +1203,7 @@
                             this.props.location.href !== t.location.href && O(this.props.location, t.location);
                         }),
                         (n.render = function () {
-                            return i.a.createElement(
-                                i.a.Fragment,
-                                null,
-                                this.props.children,
-                                i.a.createElement(x, {
-                                    location: location
-                                })
-                            );
+                            return i.a.createElement(i.a.Fragment, null, this.props.children, i.a.createElement(x, { location: location }));
                         }),
                         e
                     );
@@ -1373,9 +1239,7 @@
                                       pageResources: h.default.loadPageSync(n.pathname),
                                       location: Object.assign({}, n)
                                   }
-                                : {
-                                      location: Object.assign({}, n)
-                                  };
+                                : { location: Object.assign({}, n) };
                         });
                     var n = e.prototype;
                     return (
@@ -1423,14 +1287,10 @@
                     t.location.action = t.action;
                 }),
                 (window.___push = function (t) {
-                    return S(t, {
-                        replace: !1
-                    });
+                    return S(t, { replace: !1 });
                 }),
                 (window.___replace = function (t) {
-                    return S(t, {
-                        replace: !0
-                    });
+                    return S(t, { replace: !0 });
                 }),
                 (window.___navigate = function (t, e) {
                     return S(t, e);
@@ -1439,16 +1299,7 @@
                 Object(o.apiRunnerAsync)('onClientEntry').then(function () {
                     Object(o.apiRunner)('registerServiceWorker').length > 0 && n('NSX3');
                     var t = function (t) {
-                            return i.a.createElement(
-                                s.BaseContext.Provider,
-                                {
-                                    value: {
-                                        baseuri: '/',
-                                        basepath: '/'
-                                    }
-                                },
-                                i.a.createElement(j.a, t)
-                            );
+                            return i.a.createElement(s.BaseContext.Provider, { value: { baseuri: '/', basepath: '/' } }, i.a.createElement(j.a, t));
                         },
                         e = i.a.createContext({}),
                         a = (function (t) {
@@ -1461,33 +1312,22 @@
                                     var t = this.props.children;
                                     return i.a.createElement(s.Location, null, function (n) {
                                         var r = n.location;
-                                        return i.a.createElement(
-                                            D,
-                                            {
-                                                location: r
-                                            },
-                                            function (n) {
-                                                var r = n.pageResources,
-                                                    o = n.location,
-                                                    a = Object(h.getStaticQueryResults)();
-                                                return i.a.createElement(
-                                                    d.StaticQueryContext.Provider,
+                                        return i.a.createElement(D, { location: r }, function (n) {
+                                            var r = n.pageResources,
+                                                o = n.location,
+                                                a = Object(h.getStaticQueryResults)();
+                                            return i.a.createElement(
+                                                d.StaticQueryContext.Provider,
+                                                { value: a },
+                                                i.a.createElement(
+                                                    e.Provider,
                                                     {
-                                                        value: a
+                                                        value: { pageResources: r, location: o }
                                                     },
-                                                    i.a.createElement(
-                                                        e.Provider,
-                                                        {
-                                                            value: {
-                                                                pageResources: r,
-                                                                location: o
-                                                            }
-                                                        },
-                                                        t
-                                                    )
-                                                );
-                                            }
-                                        );
+                                                    t
+                                                )
+                                            );
+                                        });
                                     });
                                 }),
                                 n
@@ -1506,15 +1346,10 @@
                                             o = e.location;
                                         return i.a.createElement(
                                             E,
-                                            {
-                                                location: o
-                                            },
+                                            { location: o },
                                             i.a.createElement(
                                                 l.ScrollContext,
-                                                {
-                                                    location: o,
-                                                    shouldUpdateScroll: _
-                                                },
+                                                { location: o, shouldUpdateScroll: _ },
                                                 i.a.createElement(
                                                     s.Router,
                                                     {
@@ -1558,25 +1393,14 @@
                             v.match(/^\/404\/?$/) ||
                             v.match(/^\/offline-plugin-app-shell-fallback\/?$/)
                         ) &&
-                        Object(s.navigate)('' + v + m.search + m.hash, {
-                            replace: !0
-                        }),
+                        Object(s.navigate)('' + v + m.search + m.hash, { replace: !0 }),
                         h.publicLoader.loadPage(m.pathname).then(function (t) {
                             if (!t || t.status === h.PageResourceStatus.Error)
                                 throw new Error('page resources for ' + m.pathname + ' not found. Not rendering React');
                             window.___webpackCompilationHash = t.page.webpackCompilationHash;
-                            var e = Object(o.apiRunner)(
-                                    'wrapRootElement',
-                                    {
-                                        element: i.a.createElement(u, null)
-                                    },
-                                    i.a.createElement(u, null),
-                                    function (t) {
-                                        return {
-                                            element: t.result
-                                        };
-                                    }
-                                ).pop(),
+                            var e = Object(o.apiRunner)('wrapRootElement', { element: i.a.createElement(u, null) }, i.a.createElement(u, null), function (t) {
+                                    return { element: t.result };
+                                }).pop(),
                                 n = function () {
                                     return i.a.createElement(a, null, e);
                                 },
@@ -1672,12 +1496,7 @@
                         r = t.render,
                         a = t.children;
                     return o.a.createElement(p.Consumer, null, function (t) {
-                        return o.a.createElement(f, {
-                            data: e,
-                            query: n,
-                            render: r || a,
-                            staticQueryData: t
-                        });
+                        return o.a.createElement(f, { data: e, query: n, render: r || a, staticQueryData: t });
                     });
                 },
                 h = function (t) {
@@ -1810,12 +1629,7 @@
             function m(t, e) {
                 if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
                 (t.prototype = Object.create(e && e.prototype, {
-                    constructor: {
-                        value: t,
-                        enumerable: !1,
-                        writable: !0,
-                        configurable: !0
-                    }
+                    constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 }
                 })),
                     e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
             }
@@ -1835,31 +1649,17 @@
                         var n, r;
                         h(this, e);
                         for (var o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-                        return (
-                            (n = r = v(this, t.call.apply(t, [this].concat(a)))),
-                            (r.state = {
-                                context: r.getContext(),
-                                refs: {
-                                    unlisten: null
-                                }
-                            }),
-                            v(r, n)
-                        );
+                        return (n = r = v(this, t.call.apply(t, [this].concat(a)))), (r.state = { context: r.getContext(), refs: { unlisten: null } }), v(r, n);
                     }
                     return (
                         m(e, t),
                         (e.prototype.getContext = function () {
                             var t = this.props.history;
-                            return {
-                                navigate: t.navigate,
-                                location: t.location
-                            };
+                            return { navigate: t.navigate, location: t.location };
                         }),
                         (e.prototype.componentDidCatch = function (t, e) {
                             if (!U(t)) throw t;
-                            (0, this.props.history.navigate)(t.uri, {
-                                replace: !0
-                            });
+                            (0, this.props.history.navigate)(t.uri, { replace: !0 });
                         }),
                         (e.prototype.componentDidUpdate = function (t, e) {
                             e.context.location !== this.state.context.location && this.props.history._onTransitionComplete();
@@ -1874,9 +1674,7 @@
                                         requestAnimationFrame(function () {
                                             t.unmounted ||
                                                 t.setState(function () {
-                                                    return {
-                                                        context: t.getContext()
-                                                    };
+                                                    return { context: t.getContext() };
                                                 });
                                         });
                                     });
@@ -1889,20 +1687,12 @@
                         (e.prototype.render = function () {
                             var t = this.state.context,
                                 e = this.props.children;
-                            return o.a.createElement(
-                                y.Provider,
-                                {
-                                    value: t
-                                },
-                                'function' == typeof e ? e(t) : e || null
-                            );
+                            return o.a.createElement(y.Provider, { value: t }, 'function' == typeof e ? e(t) : e || null);
                         }),
                         e
                     );
                 })(o.a.Component);
-            w.defaultProps = {
-                history: p.c
-            };
+            w.defaultProps = { history: p.c };
             var R = function (t) {
                     var e = t.url,
                         n = t.children,
@@ -1915,11 +1705,7 @@
                             y.Provider,
                             {
                                 value: {
-                                    location: {
-                                        pathname: a,
-                                        search: i,
-                                        hash: ''
-                                    },
+                                    location: { pathname: a, search: i, hash: '' },
                                     navigate: function () {
                                         throw new Error("You can't call navigate on the server.");
                                     }
@@ -1929,10 +1715,7 @@
                         )
                     );
                 },
-                P = g('Base', {
-                    baseuri: '/',
-                    basepath: '/'
-                }),
+                P = g('Base', { baseuri: '/', basepath: '/' }),
                 O = function (t) {
                     return o.a.createElement(P.Consumer, null, function (e) {
                         return o.a.createElement(b, null, function (n) {
@@ -1975,50 +1758,17 @@
                                             return n(Object(l.resolve)(t, g), e);
                                         }
                                     }),
-                                    R = o.a.cloneElement(
-                                        b,
-                                        w,
-                                        b.props.children
-                                            ? o.a.createElement(
-                                                  O,
-                                                  {
-                                                      location: e,
-                                                      primary: a
-                                                  },
-                                                  b.props.children
-                                              )
-                                            : void 0
-                                    ),
+                                    R = o.a.cloneElement(b, w, b.props.children ? o.a.createElement(O, { location: e, primary: a }, b.props.children) : void 0),
                                     S = a ? x : c,
-                                    _ = a
-                                        ? f(
-                                              {
-                                                  uri: g,
-                                                  location: e,
-                                                  component: c
-                                              },
-                                              s
-                                          )
-                                        : s;
-                                return o.a.createElement(
-                                    P.Provider,
-                                    {
-                                        value: {
-                                            baseuri: g,
-                                            basepath: r
-                                        }
-                                    },
-                                    o.a.createElement(S, _, R)
-                                );
+                                    _ = a ? f({ uri: g, location: e, component: c }, s) : s;
+                                return o.a.createElement(P.Provider, { value: { baseuri: g, basepath: r } }, o.a.createElement(S, _, R));
                             }
                             return null;
                         }),
                         e
                     );
                 })(o.a.PureComponent);
-            S.defaultProps = {
-                primary: !0
-            };
+            S.defaultProps = { primary: !0 };
             var _ = g('Focus'),
                 x = function (t) {
                     var e = t.uri,
@@ -2026,15 +1776,7 @@
                         r = t.component,
                         a = d(t, ['uri', 'location', 'component']);
                     return o.a.createElement(_.Consumer, null, function (t) {
-                        return o.a.createElement(
-                            C,
-                            f({}, a, {
-                                component: r,
-                                requestFocus: t,
-                                uri: e,
-                                location: n
-                            })
-                        );
+                        return o.a.createElement(C, f({}, a, { component: r, requestFocus: t, uri: e, location: n }));
                     });
                 },
                 E = !0,
@@ -2056,21 +1798,10 @@
                     return (
                         m(e, t),
                         (e.getDerivedStateFromProps = function (t, e) {
-                            if (null == e.uri)
-                                return f(
-                                    {
-                                        shouldFocus: !0
-                                    },
-                                    t
-                                );
+                            if (null == e.uri) return f({ shouldFocus: !0 }, t);
                             var n = t.uri !== e.uri,
                                 r = e.location.pathname !== t.location.pathname && t.location.pathname === t.uri;
-                            return f(
-                                {
-                                    shouldFocus: n || r
-                                },
-                                t
-                            );
+                            return f({ shouldFocus: n || r }, t);
                         }),
                         (e.prototype.componentDidMount = function () {
                             j++, this.focus();
@@ -2096,12 +1827,7 @@
                                 a,
                                 f(
                                     {
-                                        style: f(
-                                            {
-                                                outline: 'none'
-                                            },
-                                            n
-                                        ),
+                                        style: f({ outline: 'none' }, n),
                                         tabIndex: '-1',
                                         ref: function (e) {
                                             return (t.node = e);
@@ -2109,13 +1835,7 @@
                                     },
                                     i
                                 ),
-                                o.a.createElement(
-                                    _.Provider,
-                                    {
-                                        value: this.requestFocus
-                                    },
-                                    this.props.children
-                                )
+                                o.a.createElement(_.Provider, { value: this.requestFocus }, this.props.children)
                             );
                         }),
                         e
@@ -2150,10 +1870,7 @@
                         return o.a.createElement(
                             'a',
                             f(
-                                {
-                                    ref: e || n,
-                                    'aria-current': b ? 'page' : void 0
-                                },
+                                { ref: e || n, 'aria-current': b ? 'page' : void 0 },
                                 m,
                                 v({
                                     isCurrent: b,
@@ -2172,10 +1889,7 @@
                                                     r = (n.key, d(n, ['key']));
                                                 e = Object(l.shallowCompare)(f({}, s), r);
                                             }
-                                            u(g, {
-                                                state: s,
-                                                replace: e
-                                            });
+                                            u(g, { state: s, replace: e });
                                         }
                                     }
                                 }
@@ -2212,10 +1926,7 @@
                                 u = d(t, ['navigate', 'to', 'from', 'replace', 'state', 'noThrow', 'baseuri']);
                             Promise.resolve().then(function () {
                                 var t = Object(l.resolve)(n, i);
-                                e(Object(l.insertParams)(t, u), {
-                                    replace: o,
-                                    state: a
-                                });
+                                e(Object(l.insertParams)(t, u), { replace: o, state: a });
                             });
                         }),
                         (e.prototype.render = function () {
@@ -2234,17 +1945,7 @@
                     return o.a.createElement(P.Consumer, null, function (e) {
                         var n = e.baseuri;
                         return o.a.createElement(b, null, function (e) {
-                            return o.a.createElement(
-                                I,
-                                f(
-                                    {},
-                                    e,
-                                    {
-                                        baseuri: n
-                                    },
-                                    t
-                                )
-                            );
+                            return o.a.createElement(I, f({}, e, { baseuri: n }, t));
                         });
                     });
                 },
@@ -2261,12 +1962,7 @@
                             return n({
                                 navigate: o,
                                 location: a,
-                                match: u
-                                    ? f({}, u.params, {
-                                          uri: u.uri,
-                                          path: e
-                                      })
-                                    : null
+                                match: u ? f({}, u.params, { uri: u.uri, path: e }) : null
                             });
                         });
                     });
@@ -2307,12 +2003,7 @@
                     var n = A(),
                         o = Object(l.resolve)(t, e.baseuri),
                         a = Object(l.match)(o, n.pathname);
-                    return a
-                        ? f({}, a.params, {
-                              uri: a.uri,
-                              path: t
-                          })
-                        : null;
+                    return a ? f({}, a.params, { uri: a.uri, path: t }) : null;
                 },
                 J = function (t) {
                     return t.replace(/(^\/+|\/+$)/g, '');
@@ -2327,10 +2018,7 @@
                             n.type !== q || Object(l.validateRedirect)(n.props.from, n.props.to) || i()(!1),
                             n.props.default)
                         )
-                            return {
-                                value: n,
-                                default: !0
-                            };
+                            return { value: n, default: !0 };
                         var r = n.type === q ? n.props.from : n.props.path,
                             a = '/' === r ? e : J(e) + '/' + J(r);
                         return {
@@ -2557,11 +2245,7 @@
                         matchPath: t.matchPath,
                         staticQueryHashes: t.staticQueryHashes
                     };
-                    return {
-                        component: e,
-                        json: t.result,
-                        page: n
-                    };
+                    return { component: e, json: t.result, page: n };
                 },
                 g = (function () {
                     function t(t, e) {
@@ -2610,16 +2294,11 @@
                                     try {
                                         var u = JSON.parse(i);
                                         if (void 0 === u.path) throw new Error('not a valid pageData response');
-                                        return Object.assign(t, {
-                                            status: p.Success,
-                                            payload: u
-                                        });
+                                        return Object.assign(t, { status: p.Success, payload: u });
                                     } catch (c) {}
                                 return 404 === a || 200 === a
                                     ? '/404.html' === n
-                                        ? Object.assign(t, {
-                                              status: p.Error
-                                          })
+                                        ? Object.assign(t, { status: p.Error })
                                         : e.fetchPageDataJson(
                                               Object.assign(t, {
                                                   pagePath: '/404.html',
@@ -2627,18 +2306,10 @@
                                               })
                                           )
                                     : 500 === a
-                                    ? Object.assign(t, {
-                                          status: p.Error
-                                      })
+                                    ? Object.assign(t, { status: p.Error })
                                     : o < 3
-                                    ? e.fetchPageDataJson(
-                                          Object.assign(t, {
-                                              retries: o + 1
-                                          })
-                                      )
-                                    : Object.assign(t, {
-                                          status: p.Error
-                                      });
+                                    ? e.fetchPageDataJson(Object.assign(t, { retries: o + 1 }))
+                                    : Object.assign(t, { status: p.Error });
                             });
                         }),
                         (e.loadPageDataJson = function (t) {
@@ -2646,9 +2317,7 @@
                                 n = Object(l.b)(t);
                             return this.pageDataDb.has(n)
                                 ? Promise.resolve(this.pageDataDb.get(n))
-                                : this.fetchPageDataJson({
-                                      pagePath: n
-                                  }).then(function (t) {
+                                : this.fetchPageDataJson({ pagePath: n }).then(function (t) {
                                       return e.pageDataDb.set(n, t), t;
                                   });
                         }),
@@ -2665,10 +2334,7 @@
                             if (this.inFlightDb.has(n)) return this.inFlightDb.get(n);
                             var o = Promise.all([this.loadAppData(), this.loadPageDataJson(n)]).then(function (t) {
                                 var r = t[1];
-                                if (r.status === p.Error)
-                                    return {
-                                        status: p.Error
-                                    };
+                                if (r.status === p.Error) return { status: p.Error };
                                 var o = r.payload,
                                     a = o,
                                     i = a.componentChunkName,
@@ -2724,14 +2390,9 @@
                                         a = t[1];
                                     return (
                                         o &&
-                                            ((r = Object.assign({}, o, {
-                                                staticQueryResults: a
-                                            })),
+                                            ((r = Object.assign({}, o, { staticQueryResults: a })),
                                             (l.payload = r),
-                                            s.a.emit('onPostLoadPageResources', {
-                                                page: r,
-                                                pageResources: r
-                                            })),
+                                            s.a.emit('onPostLoadPageResources', { page: r, pageResources: r })),
                                         e.pageDb.set(n, l),
                                         r
                                     );
@@ -2768,22 +2429,14 @@
                             var e = this;
                             if (!this.shouldPrefetch(t)) return !1;
                             if (
-                                (this.prefetchTriggered.has(t) ||
-                                    (this.apiRunner('onPrefetchPathname', {
-                                        pathname: t
-                                    }),
-                                    this.prefetchTriggered.add(t)),
+                                (this.prefetchTriggered.has(t) || (this.apiRunner('onPrefetchPathname', { pathname: t }), this.prefetchTriggered.add(t)),
                                 this.prefetchDisabled)
                             )
                                 return !1;
                             var n = Object(l.b)(t);
                             return (
                                 this.doPrefetch(n).then(function () {
-                                    e.prefetchCompleted.has(t) ||
-                                        (e.apiRunner('onPostPrefetchPathname', {
-                                            pathname: t
-                                        }),
-                                        e.prefetchCompleted.add(t));
+                                    e.prefetchCompleted.has(t) || (e.apiRunner('onPostPrefetchPathname', { pathname: t }), e.prefetchCompleted.add(t));
                                 }),
                                 !0
                             );
@@ -2880,11 +2533,7 @@
                             return t.prototype.loadPageDataJson.call(this, e).then(function (t) {
                                 return t.notFound
                                     ? h(e, 'HEAD').then(function (e) {
-                                          return 200 === e.status
-                                              ? {
-                                                    status: p.Error
-                                                }
-                                              : t;
+                                          return 200 === e.status ? { status: p.Error } : t;
                                       })
                                     : t;
                             });
@@ -2981,13 +2630,7 @@
                     return u.createElement(p.Location, null, function (e) {
                         var n = e.location;
                         return u.createElement(l.ScrollContext.Consumer, null, function (e) {
-                            return u.createElement(
-                                d,
-                                (0, a.default)({}, t, {
-                                    context: e,
-                                    location: n
-                                })
-                            );
+                            return u.createElement(d, (0, a.default)({}, t, { context: e, location: n }));
                         });
                     });
                 };
@@ -3026,10 +2669,7 @@
                         return c;
                     };
                 };
-            t.exports = {
-                left: u(!1),
-                right: u(!0)
-            };
+            t.exports = { left: u(!1), right: u(!0) };
         },
         pVnL: function (t, e) {
             function n() {
@@ -3060,18 +2700,7 @@
             e.default = function (t) {
                 var e = t.location,
                     n = a.default.loadPageSync(e.pathname);
-                return n
-                    ? o.a.createElement(
-                          i.a,
-                          Object.assign(
-                              {
-                                  location: e,
-                                  pageResources: n
-                              },
-                              n.json
-                          )
-                      )
-                    : null;
+                return n ? o.a.createElement(i.a, Object.assign({ location: e, pageResources: n }, n.json)) : null;
             };
         },
         xtsi: function (t, e, n) {
@@ -3093,16 +2722,7 @@
                             (e.loadPage = c),
                             (e.loadPageSync = s);
                         var r = n.plugin[t](e, n.options);
-                        return (
-                            r &&
-                                o &&
-                                (e = o({
-                                    args: e,
-                                    result: r,
-                                    plugin: n
-                                })),
-                            r
-                        );
+                        return r && o && (e = o({ args: e, result: r, plugin: n })), r;
                     }
                 });
                 return (l = l.filter(function (t) {

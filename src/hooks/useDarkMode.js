@@ -1,5 +1,5 @@
 import { useLocalStorage, useMediaQuery } from 'hooks';
-import { useEffect, useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { COLOR_MODE_KEY, INITIAL_COLOR_MODE_CSS_PROP, MODE_COLORS } from 'utils/constants';
 
 const setBodyColors = (mode) => {

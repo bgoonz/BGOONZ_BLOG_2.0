@@ -140,14 +140,10 @@
                                 this.props,
                                 h.a.createElement(
                                     'div',
-                                    {
-                                        className: 'inner outer'
-                                    },
+                                    { className: 'inner outer' },
                                     h.a.createElement(
                                         'div',
-                                        {
-                                            className: 'docs-content'
-                                        },
+                                        { className: 'docs-content' },
                                         h.a.createElement(
                                             v.a,
                                             Object.assign({}, this.props, {
@@ -157,19 +153,13 @@
                                         ),
                                         h.a.createElement(
                                             'article',
-                                            {
-                                                className: 'post type-docs'
-                                            },
+                                            { className: 'post type-docs' },
                                             h.a.createElement(
                                                 'div',
-                                                {
-                                                    className: 'post-inside'
-                                                },
+                                                { className: 'post-inside' },
                                                 h.a.createElement(
                                                     'header',
-                                                    {
-                                                        className: 'post-header'
-                                                    },
+                                                    { className: 'post-header' },
                                                     h.a.createElement(
                                                         'h1',
                                                         {
@@ -180,9 +170,7 @@
                                                 ),
                                                 h.a.createElement(
                                                     'div',
-                                                    {
-                                                        className: 'post-content'
-                                                    },
+                                                    { className: 'post-content' },
                                                     Object(b.f)(c()(this.props, 'pageContext.html', null)),
                                                     o !== r &&
                                                         ((e = u()(Object(b.e)(n.props.pageContext.pages, r), 'frontmatter.weight')),
@@ -308,11 +296,7 @@
                                     : (0, u.insertScript)(this.embedUrl, 'dsq-embed-scr', window.document.body));
                         }),
                         (n.reloadInstance = function () {
-                            window &&
-                                window.DISQUS &&
-                                window.DISQUS.reset({
-                                    reload: !0
-                                });
+                            window && window.DISQUS && window.DISQUS.reset({ reload: !0 });
                         }),
                         (n.cleanInstance = function () {
                             (0, u.removeScript)('dsq-embed-scr', window.document.body);
@@ -332,15 +316,7 @@
                         (n.render = function () {
                             var e = this.props,
                                 t = (e.config, (0, a.default)(e, ['config']));
-                            return s.default.createElement(
-                                'div',
-                                (0, r.default)(
-                                    {
-                                        id: 'disqus_thread'
-                                    },
-                                    t
-                                )
-                            );
+                            return s.default.createElement('div', (0, r.default)({ id: 'disqus_thread' }, t));
                         }),
                         t
                     );
@@ -393,10 +369,7 @@
                 u = n('4M6O'),
                 l = (0, u.debounce)(
                     function () {
-                        window.DISQUSWIDGETS &&
-                            window.DISQUSWIDGETS.getCount({
-                                reset: !0
-                            });
+                        window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount({ reset: !0 });
                     },
                     300,
                     !1
@@ -453,9 +426,7 @@
                     );
                 })(s.default.Component);
             (t.default = c),
-                (c.defaultProps = {
-                    placeholder: '...'
-                }),
+                (c.defaultProps = { placeholder: '...' }),
                 (c.propTypes = {
                     config: d.default.shape({
                         identifier: d.default.string,
@@ -531,4 +502,5 @@
         }
     }
 ]);
-//# sourceMappingURL=component---src-templates-docs-js-731339ed0815d7cada90.js.map
+//#
+//sourceMappingURL=component---src-templates-docs-js-731339ed0815d7cada90.js.map

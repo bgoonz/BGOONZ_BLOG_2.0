@@ -45,9 +45,7 @@ export const useStorage = (storage, key, initialValue, options = {}) => {
         // which takes the current value.
         if (newValue instanceof Function) newValue = newValue(value);
 
-        const event = new CustomEvent(`storage:${key}Change`, {
-            detail: newValue
-        });
+        const event = new CustomEvent(`storage:${key}Change`, { detail: newValue });
         document.dispatchEvent(event);
 
         if (newValue === deleteKeyIfValueIs) delete storage[key];

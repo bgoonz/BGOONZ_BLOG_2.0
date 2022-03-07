@@ -3,8 +3,8 @@ title: Sorting Strings
 weight: 0
 excerpt: Sorting Strings
 seo:
-    title: ''
-    description: ''
+    title: 'Sorting Strings'
+    description: 'Sorting Strings'
     robots: []
     extra: []
 template: docs

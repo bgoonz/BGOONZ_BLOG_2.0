@@ -149,11 +149,7 @@
                                     : (0, d.insertScript)(this.embedUrl, 'dsq-embed-scr', window.document.body));
                         }),
                         (n.reloadInstance = function () {
-                            window &&
-                                window.DISQUS &&
-                                window.DISQUS.reset({
-                                    reload: !0
-                                });
+                            window && window.DISQUS && window.DISQUS.reset({ reload: !0 });
                         }),
                         (n.cleanInstance = function () {
                             (0, d.removeScript)('dsq-embed-scr', window.document.body);
@@ -173,15 +169,7 @@
                         (n.render = function () {
                             var e = this.props,
                                 t = (e.config, (0, i.default)(e, ['config']));
-                            return s.default.createElement(
-                                'div',
-                                (0, r.default)(
-                                    {
-                                        id: 'disqus_thread'
-                                    },
-                                    t
-                                )
-                            );
+                            return s.default.createElement('div', (0, r.default)({ id: 'disqus_thread' }, t));
                         }),
                         t
                     );
@@ -234,10 +222,7 @@
                 d = n('4M6O'),
                 l = (0, d.debounce)(
                     function () {
-                        window.DISQUSWIDGETS &&
-                            window.DISQUSWIDGETS.getCount({
-                                reset: !0
-                            });
+                        window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount({ reset: !0 });
                     },
                     300,
                     !1
@@ -294,9 +279,7 @@
                     );
                 })(s.default.Component);
             (t.default = c),
-                (c.defaultProps = {
-                    placeholder: '...'
-                }),
+                (c.defaultProps = { placeholder: '...' }),
                 (c.propTypes = {
                     config: u.default.shape({
                         identifier: u.default.string,
@@ -333,14 +316,10 @@
                                 this.props,
                                 s.a.createElement(
                                     'article',
-                                    {
-                                        className: 'post post-full'
-                                    },
+                                    { className: 'post post-full' },
                                     s.a.createElement(
                                         'header',
-                                        {
-                                            className: 'post-header has-gradient outer'
-                                        },
+                                        { className: 'post-header has-gradient outer' },
                                         i()(this.props, 'pageContext.frontmatter.image', null) &&
                                             s.a.createElement('div', {
                                                 className: 'bg-img',
@@ -350,38 +329,20 @@
                                             }),
                                         s.a.createElement(
                                             'div',
-                                            {
-                                                className: 'inner-sm'
-                                            },
-                                            s.a.createElement(
-                                                'h1',
-                                                {
-                                                    className: 'post-title'
-                                                },
-                                                i()(this.props, 'pageContext.frontmatter.title', null)
-                                            ),
+                                            { className: 'inner-sm' },
+                                            s.a.createElement('h1', { className: 'post-title' }, i()(this.props, 'pageContext.frontmatter.title', null)),
                                             i()(this.props, 'pageContext.frontmatter.subtitle', null) &&
                                                 s.a.createElement(
                                                     'div',
-                                                    {
-                                                        className: 'post-subtitle'
-                                                    },
+                                                    { className: 'post-subtitle' },
                                                     Object(l.f)(i()(this.props, 'pageContext.frontmatter.subtitle', null))
                                                 )
                                         )
                                     ),
                                     s.a.createElement(
                                         'div',
-                                        {
-                                            className: 'inner-md outer'
-                                        },
-                                        s.a.createElement(
-                                            'div',
-                                            {
-                                                className: 'post-content'
-                                            },
-                                            Object(l.f)(i()(this.props, 'pageContext.html', null))
-                                        )
+                                        { className: 'inner-md outer' },
+                                        s.a.createElement('div', { className: 'post-content' }, Object(l.f)(i()(this.props, 'pageContext.html', null)))
                                     ),
                                     s.a.createElement(u.Disqus, null)
                                 )
@@ -456,4 +417,5 @@
         }
     }
 ]);
-//# sourceMappingURL=component---src-templates-page-js-dcb6b8bc1563f876e59f.js.map
+//#
+//sourceMappingURL=component---src-templates-page-js-dcb6b8bc1563f876e59f.js.map
