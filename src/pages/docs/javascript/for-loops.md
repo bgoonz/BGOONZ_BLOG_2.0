@@ -180,7 +180,7 @@ The `for...in` loop below iterates over all of the object's enumerable, non-Symb
 
 The following function illustrates the use of [`hasOwnProperty()`](../global_objects/object/hasownproperty): the inherited properties are not displayed.
 
-
+```js
 
     var triangle = {a: 1, b: 2, c: 3};
 
