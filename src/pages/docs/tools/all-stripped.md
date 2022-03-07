@@ -24,7 +24,7 @@ template: docs
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://resourcerepo2.netlify.app/" height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <hr>
- 
+
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  width="100%" height="100%" src="https://bgoonz.blogspot.com/" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -267,7 +267,7 @@ template: docs
 <h1>               </h1>
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/"height="100%" width="100%" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
- 
+
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="100%" width="100%"scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
