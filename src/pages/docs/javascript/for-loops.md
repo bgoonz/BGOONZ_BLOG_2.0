@@ -165,6 +165,10 @@ It may be most practically used for debugging purposes, being an easy way to che
 
 The `for...in` loop below iterates over all of the object's enumerable, non-Symbol properties and logs a string of the property names and their values.
 
+
+```js
+
+
     var obj = {a: 1, b: 2, c: 3};
 
     for (const prop in obj) {
