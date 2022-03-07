@@ -31,7 +31,6 @@ template: docs
 
 ### 3. [**🖥️blog/blog-archive🌍**](https://bgoonz-blog.netlify.app/blog/blog-archive)
 
-### 4. [**🖥️blog/blogwcomments🌍**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
 
 ### 5. [**🖥️blog/data-structures🌍**](https://bgoonz-blog.netlify.app/blog/data-structures)
 
