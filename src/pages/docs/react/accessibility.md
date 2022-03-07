@@ -4,7 +4,7 @@ weight: 0
 excerpt: At this point, we've accomplished all of the features we set out to implement. A user can add a new task, check and uncheck tasks, delete tasks, or edit task names. And they can filter their task list by all, active, or completed tasks.
 seo:
     title: 'Accessibility in React'
-    description: 'At this point, we accomplished all of the features we set out to implement. A user can add a new task, check and uncheck tasks, delete tasks, or edit task names. And they can filter their task list by all, active, or completed tasks.'
+    description: 'At this point, we have accomplished all of the features we set out to implement. A user can add a new task, check and uncheck tasks, delete tasks, or edit task names. And they can filter their task list by all, active, or completed tasks.'
     robots: []
     extra: []
 template: docs
