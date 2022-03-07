@@ -387,7 +387,7 @@ This example first creates an async iterable for a stream of data, then uses it 
     // 4
     // caught 5
     // called finally
-
+```
 To make `finally` blocks of a sync generator to be always called use appropriate form of the loop, `for await...of` for the async generator and `for...of` for the sync one and await yielded promises explicitly inside the loop.
 
 
