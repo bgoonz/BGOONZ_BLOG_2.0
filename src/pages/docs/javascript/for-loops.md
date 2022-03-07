@@ -198,3 +198,8 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
 
     // Output:
     // "obj.color = red"
+
+
+---
+
+## For await 
