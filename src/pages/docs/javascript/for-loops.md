@@ -252,6 +252,7 @@ You can also iterate over an object that explicitly implements async iterable pr
     // 0
     // 1
     // 2
+```
 
 ### Iterating over async generators
 
