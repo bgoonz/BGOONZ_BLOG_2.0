@@ -1,4 +1,13 @@
-
+---
+title: Github Resources
+weight: 0
+excerpt: Github Resources
+seo:
+    title: 'Github'
+    description: 'awesome github resources'
+    robots: []
+    extra: []
+template: docs
 
 
 
