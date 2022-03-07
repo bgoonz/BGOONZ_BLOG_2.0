@@ -15,7 +15,7 @@ Object whose non-Symbol enumerable properties are iterated over.
 
 ## Description
 
-A `for...in` loop only iterates over enumerable, non-Symbol properties. Objects created from built–in constructors like `Array` and `Object` have inherited non–enumerable properties from `Object.prototype` and `String.prototype`, such as [`String`](../global_objects/string)'s [`indexOf()`](../global_objects/string/indexof) method or [`Object`](../global_objects/object)'s [`toString()`](../global_objects/object/tostring) method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
+A `for...in` loop only iterates over enumerable, non-Symbol properties. Objects created from built-in constructors like `Array` and `Object` have inherited non-enumerable properties from `Object.prototype` and `String.prototype`, such as [`String`](../global_objects/string)'s [`indexOf()`](../global_objects/string/indexof) method or [`Object`](../global_objects/object)'s [`toString()`](../global_objects/object/tostring) method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its prototype chain (properties of nearer prototypes take precedence over those of prototypes further away from the object in its prototype chain).
 
 ### Deleted, added, or modified properties
 
@@ -29,7 +29,7 @@ In general, it is best not to add, modify, or remove properties from the object 
 
 **Note:** `for...in` should not be used to iterate over an [`Array`](../global_objects/array) where the index order is important.
 
-Array indexes are just enumerable properties with integer names and are otherwise identical to general object properties. There is no guarantee that `for...in` will return the indexes in any particular order. The `for...in` loop statement will return all enumerable properties, including those with non–integer names and those that are inherited.
+Array indexes are just enumerable properties with integer names and are otherwise identical to general object properties. There is no guarantee that `for...in` will return the indexes in any particular order. The `for...in` loop statement will return all enumerable properties, including those with non-integer names and those that are inherited.
 
 Because the order of iteration is implementation-dependent, iterating over an array may not visit elements in a consistent order. Therefore, it is better to use a [`for`](for) loop with a numeric index (or [`Array.prototype.forEach()`](../global_objects/array/foreach) or the [`for...of`](for...of) loop) when iterating over arrays where the order of access is important.
 
@@ -134,8 +134,8 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 
 ## See also
 
--   [`for...of`](for...of) – a similar statement that iterates over the property _values_
--   <span class="page-not-created">`for each...in`</span> – a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
+-   [`for...of`](for...of) - a similar statement that iterates over the property _values_
+-   <span class="page-not-created">`for each...in`</span> - a similar but deprecated statement that iterates over the values of an object's properties, rather than the property names themselves
 -   [`for`](for)
 -   [Iterators and Generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (usable with `for...of` syntax)
 -   [Enumerability and ownership of properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
@@ -143,6 +143,6 @@ Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are
 -   [`Object.prototype.hasOwnProperty()`](../global_objects/object/hasownproperty)
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 
-© 2005–2021 MDN contributors.  
+© 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in</a>

@@ -1,7 +1,7 @@
 ---
-title: Array.prototype.filter() 
+title: Array.prototype.filter()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Array.prototype.filter()'
     description: ''
@@ -34,21 +34,21 @@ The `filter()` method **creates a new array** with all elements that pass the te
 
 ### Parameters
 
-`callbackFn`  
+`callbackFn`
 Function is a predicate, to test each element of the array. Return a value that coerces to `true` to keep the element, or to `false` otherwise.
 
 It accepts three arguments:
 
-`element`  
+`element`
 The current element being processed in the array.
 
-`index`<span class="badge inline optional">Optional</span>  
+`index`<span class="badge inline optional">Optional</span>
 The index of the current element being processed in the array.
 
-`array`<span class="badge inline optional">Optional</span>  
+`array`<span class="badge inline optional">Optional</span>
 The array `filter` was called upon.
 
-`thisArg`<span class="badge inline optional">Optional</span>  
+`thisArg`<span class="badge inline optional">Optional</span>
 Value to use as `this` when executing `callbackFn`.
 
 ### Return value
@@ -253,7 +253,7 @@ The following examples tests the behavior of the `filter` method when the array 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>

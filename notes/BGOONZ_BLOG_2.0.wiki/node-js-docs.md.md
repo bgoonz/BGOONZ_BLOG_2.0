@@ -2754,7 +2754,7 @@ Added in: v5.10.0
 
 -   `array` [<integer\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 
-Allocates a new `Buffer` using an `array` of bytes in the range `0` – `255`. Array entries outside that range will be truncated to fit into it.
+Allocates a new `Buffer` using an `array` of bytes in the range `0` - `255`. Array entries outside that range will be truncated to fit into it.
 
 ```
 import { Buffer } from 'buffer';
@@ -7861,7 +7861,7 @@ Returns `napi_ok` if the API succeeded.
 
 This API converts an array of unsigned 64-bit words into a single `BigInt` value.
 
-The resulting `BigInt` is calculated as: (–1)`sign_bit` (`words[0]` × (264)0 + `words[1]` × (264)1 + …)
+The resulting `BigInt` is calculated as: (-1)`sign_bit` (`words[0]` × (264)0 + `words[1]` × (264)1 + …)
 
 ##### `napi_create_string_latin1`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_string_latin1)
 
@@ -11887,7 +11887,7 @@ The boolean [`worker.exitedAfterDisconnect`](https://nodejs.org/dist/v16.13.1/do
 ```
 cluster.on('exit', (worker, code, signal) => {
   if (worker.exitedAfterDisconnect === true) {
-    console.log('Oh, it was just voluntary – no need to worry');
+    console.log('Oh, it was just voluntary - no need to worry');
   }
 });
 
@@ -18662,7 +18662,7 @@ Returns an array of IP address strings, formatted according to [RFC 5952](https:
     -   `address` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) A string representation of an IPv4 or IPv6 address.
     -   `family` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) `4` or `6`, denoting the family of `address`, or `0` if the address is not an IPv4 or IPv6 address. `0` is a likely indicator of a bug in the name resolution service used by the operating system.
 
-Resolves a host name (e.g. `'nodejs.org'`) into the first found A (IPv4) or AAAA (IPv6) record. All `option` properties are optional. If `options` is an integer, then it must be `4` or `6` – if `options` is not provided, then IPv4 and IPv6 addresses are both returned if found.
+Resolves a host name (e.g. `'nodejs.org'`) into the first found A (IPv4) or AAAA (IPv6) record. All `option` properties are optional. If `options` is an integer, then it must be `4` or `6` - if `options` is not provided, then IPv4 and IPv6 addresses are both returned if found.
 
 With the `all` option set to `true`, the arguments for `callback` change to `(err, addresses)`, with `addresses` being an array of objects with the properties `address` and `family`.
 
@@ -19221,7 +19221,7 @@ Added in: v10.6.0
     -   `all` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) When `true`, the `Promise` is resolved with all addresses in an array. Otherwise, returns a single address. **Default:** `false`.
     -   `verbatim` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) When `true`, the `Promise` is resolved with IPv4 and IPv6 addresses in the order the DNS resolver returned them. When `false`, IPv4 addresses are placed before IPv6 addresses. **Default:** currently `false` (addresses are reordered) but this is expected to change in the not too distant future. Default value is configurable using [`dns.setDefaultResultOrder()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnssetdefaultresultorderorder) or [`--dns-result-order`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--dns-result-orderorder). New code should use `{ verbatim: true }`.
 
-Resolves a host name (e.g. `'nodejs.org'`) into the first found A (IPv4) or AAAA (IPv6) record. All `option` properties are optional. If `options` is an integer, then it must be `4` or `6` – if `options` is not provided, then IPv4 and IPv6 addresses are both returned if found.
+Resolves a host name (e.g. `'nodejs.org'`) into the first found A (IPv4) or AAAA (IPv6) record. All `option` properties are optional. If `options` is an integer, then it must be `4` or `6` - if `options` is not provided, then IPv4 and IPv6 addresses are both returned if found.
 
 With the `all` option set to `true`, the `Promise` is resolved with `addresses` being an array of objects with the properties `address` and `family`.
 
@@ -20368,7 +20368,7 @@ try {
 }
 ```
 
-`SyntaxError` instances are unrecoverable in the context that created them – they may only be caught by other contexts.
+`SyntaxError` instances are unrecoverable in the context that created them - they may only be caught by other contexts.
 
 ### Class: `SystemError`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-systemerror)
 
@@ -21294,7 +21294,7 @@ An invalid transfer object was passed to `postMessage()`.
 
 #### `ERR_INVALID_TUPLE`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_tuple)
 
-An element in the `iterable` provided to the [WHATWG](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) [`URLSearchParams` constructor](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_new-urlsearchparamsiterable) did not represent a `[name, value]` tuple – that is, if an element is not iterable, or does not consist of exactly two elements.
+An element in the `iterable` provided to the [WHATWG](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) [`URLSearchParams` constructor](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_new-urlsearchparamsiterable) did not represent a `[name, value]` tuple - that is, if an element is not iterable, or does not consist of exactly two elements.
 
 #### `ERR_INVALID_URI`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_uri)
 

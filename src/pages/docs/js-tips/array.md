@@ -1,7 +1,7 @@
 ---
-title:  Array
+title: Array
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Javascript Arrays'
     description: 'class is a global object that is used in the construction of arrays; which are high-level, list-like objects.'
@@ -187,7 +187,7 @@ To help explain these properties and elements, see this example and then refer t
 
 The properties and elements returned from this match are as follows:
 
-<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code> 
+<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code>
 <br/>
 
 <span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr class="even"><td><code>index</code>
@@ -203,126 +203,126 @@ The properties and elements returned from this match are as follows:
 
 ## Constructor
 
-[`Array()`](array/array)  
+[`Array()`](array/array)
 Creates a new `Array` object.
 
 ## Static properties
 
-[`get Array[@@species]`](array/@@species)  
+[`get Array[@@species]`](array/@@species)
 The constructor function is used to create derived objects.
 
 ## Static methods
 
-[`Array.from()`](array/from)  
+[`Array.from()`](array/from)
 Creates a new `Array` instance from an array-like or iterable object.
 
-[`Array.isArray()`](array/isarray)  
+[`Array.isArray()`](array/isarray)
 Returns `true` if the argument is an array, or `false` otherwise.
 
-[`Array.of()`](array/of)  
+[`Array.of()`](array/of)
 Creates a new `Array` instance with a variable number of arguments, regardless of number or type of the arguments.
 
 ## Instance properties
 
-[`Array.prototype.length`](array/length)  
+[`Array.prototype.length`](array/length)
 Reflects the number of elements in an array.
 
-[`Array.prototype[@@unscopables]`](array/@@unscopables)  
+[`Array.prototype[@@unscopables]`](array/@@unscopables)
 A symbol containing property names to exclude from a [`with`](../statements/with) binding scope.
 
 ## Instance methods
 
-[`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>  
+[`Array.prototype.at()`](array/at)<span class="icon experimental" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"> This is an experimental API that should not be used in production code. </span>
 Returns the array item at the given index. Accepts negative integers, which count back from the last item.
 
-[`Array.prototype.concat()`](array/concat)  
+[`Array.prototype.concat()`](array/concat)
 Returns a new array that is this array joined with other array(s) and/or value(s).
 
-[`Array.prototype.copyWithin()`](array/copywithin)  
+[`Array.prototype.copyWithin()`](array/copywithin)
 Copies a sequence of array elements within the array.
 
-[`Array.prototype.entries()`](array/entries)  
+[`Array.prototype.entries()`](array/entries)
 Returns a new `Array Iterator` object that contains the key/value pairs for each index in the array.
 
-[`Array.prototype.every()`](array/every)  
+[`Array.prototype.every()`](array/every)
 Returns `true` if every element in this array satisfies the testing function.
 
-[`Array.prototype.fill()`](array/fill)  
+[`Array.prototype.fill()`](array/fill)
 Fills all the elements of an array from a start index to an end index with a static value.
 
-[`Array.prototype.filter()`](array/filter)  
+[`Array.prototype.filter()`](array/filter)
 Returns a new array containing all elements of the calling array for which the provided filtering function returns `true`.
 
-[`Array.prototype.find()`](array/find)  
+[`Array.prototype.find()`](array/find)
 Returns the found `element` in the array, if some element in the array satisfies the testing function, or `undefined` if not found.
 
-[`Array.prototype.findIndex()`](array/findindex)  
+[`Array.prototype.findIndex()`](array/findindex)
 Returns the found index in the array, if an element in the array satisfies the testing function, or `-1` if not found.
 
-[`Array.prototype.forEach()`](array/foreach)  
+[`Array.prototype.forEach()`](array/foreach)
 Calls a function for each element in the array.
 
-[`Array.prototype.includes()`](array/includes)  
+[`Array.prototype.includes()`](array/includes)
 Determines whether the array contains a value, returning `true` or `false` as appropriate.
 
-[`Array.prototype.indexOf()`](array/indexof)  
+[`Array.prototype.indexOf()`](array/indexof)
 Returns the first (least) index of an element within the array equal to an element, or `-1` if none is found.
 
-[`Array.prototype.join()`](array/join)  
+[`Array.prototype.join()`](array/join)
 Joins all elements of an array into a string.
 
-[`Array.prototype.keys()`](array/keys)  
+[`Array.prototype.keys()`](array/keys)
 Returns a new `Array Iterator` that contains the keys for each index in the array.
 
-[`Array.prototype.lastIndexOf()`](array/lastindexof)  
+[`Array.prototype.lastIndexOf()`](array/lastindexof)
 Returns the last (greatest) index of an element within the array equal to an element, or `-1` if none is found.
 
-[`Array.prototype.map()`](array/map)  
+[`Array.prototype.map()`](array/map)
 Returns a new array containing the results of calling a function on every element in this array.
 
-[`Array.prototype.pop()`](array/pop)  
+[`Array.prototype.pop()`](array/pop)
 Removes the last element from an array and returns that element.
 
-[`Array.prototype.push()`](array/push)  
+[`Array.prototype.push()`](array/push)
 Adds one or more elements to the end of an array, and returns the new `length` of the array.
 
-[`Array.prototype.reduce()`](array/reduce)  
+[`Array.prototype.reduce()`](array/reduce)
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
 
-[`Array.prototype.reduceRight()`](array/reduceright)  
+[`Array.prototype.reduceRight()`](array/reduceright)
 Apply a function against an accumulator&gt; and each value of the array (from right-to-left) as to reduce it to a single value.
 
-[`Array.prototype.reverse()`](array/reverse)  
+[`Array.prototype.reverse()`](array/reverse)
 Reverses the order of the elements of an array _in place_. (First becomes the last, last becomes first.)
 
-[`Array.prototype.shift()`](array/shift)  
+[`Array.prototype.shift()`](array/shift)
 Removes the first element from an array and returns that element.
 
-[`Array.prototype.slice()`](array/slice)  
+[`Array.prototype.slice()`](array/slice)
 Extracts a section of the calling array and returns a new array.
 
-[`Array.prototype.some()`](array/some)  
+[`Array.prototype.some()`](array/some)
 Returns `true` if at least one element in this array satisfies the provided testing function.
 
-[`Array.prototype.sort()`](array/sort)  
+[`Array.prototype.sort()`](array/sort)
 Sorts the elements of an array in place and returns the array.
 
-[`Array.prototype.splice()`](array/splice)  
+[`Array.prototype.splice()`](array/splice)
 Adds and/or removes elements from an array.
 
-[`Array.prototype.toLocaleString()`](array/tolocalestring)  
+[`Array.prototype.toLocaleString()`](array/tolocalestring)
 Returns a localized string representing the array and its elements. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`Array.prototype.toString()`](array/tostring)  
+[`Array.prototype.toString()`](array/tostring)
 Returns a string representing the array and its elements. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Array.prototype.unshift()`](array/unshift)  
+[`Array.prototype.unshift()`](array/unshift)
 Adds one or more elements to the front of an array, and returns the new `length` of the array.
 
-[`Array.prototype.values()`](array/values)  
+[`Array.prototype.values()`](array/values)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
-[`Array.prototype[@@iterator]()`](array/@@iterator)  
+[`Array.prototype[@@iterator]()`](array/@@iterator)
 Returns a new `Array Iterator` object that contains the values for each index in the array.
 
 ## Examples

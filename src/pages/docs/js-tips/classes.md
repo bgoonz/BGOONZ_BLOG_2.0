@@ -172,7 +172,7 @@ When a static or prototype method is called without a value for [`this`](operato
     let eat = Animal.eat;
     eat(); // undefined
 
-If we rewrite the above using traditional function-based syntax in non–strict mode, then `this` method calls are automatically bound to the initial `this` value, which by default is the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object). In strict mode, autobinding will not happen; the value of `this` remains as passed.
+If we rewrite the above using traditional function-based syntax in non-strict mode, then `this` method calls are automatically bound to the initial `this` value, which by default is the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object). In strict mode, autobinding will not happen; the value of `this` remains as passed.
 
     function Animal() { }
 
@@ -186,7 +186,7 @@ If we rewrite the above using traditional function-based syntax in non–strict 
 
     let obj = new Animal();
     let speak = obj.speak;
-    speak(); // global object (in non–strict mode)
+    speak(); // global object (in non-strict mode)
 
     let eat = Animal.eat;
     eat(); // global object (in non-strict mode)
@@ -391,7 +391,7 @@ If you're experimenting with code in a web browser, such as the Firefox Web Cons
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>

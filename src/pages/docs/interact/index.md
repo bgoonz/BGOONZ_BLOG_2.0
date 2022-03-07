@@ -1,7 +1,7 @@
 ---
-title: Interactive
+title: Interact
 weight: 0
-excerpt: feel free to try the examples
+excerpt: Interactive examples and projects
 seo:
   title: Interactive Examples
   description: here is content the user can interact with

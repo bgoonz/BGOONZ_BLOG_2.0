@@ -329,7 +329,7 @@ for(var c of "𠮷") {
 More info: [MDN RegExp.prototype.unicode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
 
 ### Modules
-Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model – no code executes until requested modules are available and processed.
+Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model - no code executes until requested modules are available and processed.
 
 ```JavaScript
 // lib/math.js
@@ -378,12 +378,12 @@ Module loaders support:
 The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
 ```JavaScript
-// Dynamic loading – 'System' is default loader
+// Dynamic loading - 'System' is default loader
 System.import('lib/math').then(function(m) {
   alert("2π = " + m.sum(m.pi, m.pi));
 });
 
-// Create execution sandboxes – new Loaders
+// Create execution sandboxes - new Loaders
 var loader = new Loader({
   global: fixup(window) // replace 'console.log'
 });

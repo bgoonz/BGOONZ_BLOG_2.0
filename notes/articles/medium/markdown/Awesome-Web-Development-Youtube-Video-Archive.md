@@ -24,7 +24,7 @@ Inspiration:
 
 #### Computer History Museum:
 
-> Welcome to the Computer History Museum channel on YouTube. We're committed to preserving and presenting the history and stories of the Information Age. Here on YouTube we offer videos of the many lectures and events at the museum and also historic computer films. We also feature video from our well–known Revolutionaries television series. Be sure to check out the Computer History Museum website for even more information including online exhibits, upcoming events and our collection of computing artifacts: <a href="http://www.computerhistory.org." class="markup--anchor markup--blockquote-anchor">http://www.computerhistory.org.</a>
+> Welcome to the Computer History Museum channel on YouTube. We're committed to preserving and presenting the history and stories of the Information Age. Here on YouTube we offer videos of the many lectures and events at the museum and also historic computer films. We also feature video from our well-known Revolutionaries television series. Be sure to check out the Computer History Museum website for even more information including online exhibits, upcoming events and our collection of computing artifacts: <a href="http://www.computerhistory.org." class="markup--anchor markup--blockquote-anchor">http://www.computerhistory.org.</a>
 
 #### Computerphile
 

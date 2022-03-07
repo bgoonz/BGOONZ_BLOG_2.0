@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 weight: 0
 excerpt: Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
 seo:
@@ -69,13 +69,13 @@ There is a special syntax for declaring functions (see [function statement](stat
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The function expression (`function` expression)
@@ -86,13 +86,13 @@ A function expression is similar to and has the same syntax as a function declar
        statements
     }
 
-`name`  
+`name`
 The function name. Can be omitted, in which case the function becomes known as an anonymous function.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 Here is an example of an **anonymous** function expression (the `name` is not used):
@@ -127,13 +127,13 @@ There is a special syntax for generator function declarations (see [`function* s
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The generator function expression (`function*` expression)
@@ -144,13 +144,13 @@ A generator function expression is similar to and has the same syntax as a gener
        statements
     }
 
-`name`  
+`name`
 The function name. Can be omitted, in which case the function becomes known as an anonymous function.
 
-`param`  
+`param`
 The name of an argument to be passed to the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ### The arrow function expression (=&gt;)
@@ -163,10 +163,10 @@ An arrow function expression has a shorter syntax and lexically binds its `this`
 
     param => expression
 
-`param`  
+`param`
 The name of an argument. Zero arguments need to be indicated with `()`. For only one argument, the parentheses are not required. (like `foo => 1`)
 
-`statements` or `expression`  
+`statements` or `expression`
 Multiple statements need to be enclosed in brackets. A single expression requires no brackets. The expression is also the implicit return value of the function.
 
 ### The `Function` constructor
@@ -177,10 +177,10 @@ As all other objects, [`Function`](global_objects/function) objects can be creat
 
     new Function (arg1, arg2, ... argN, functionBody)
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Zero or more names to be used by the function as formal parameters. Each must be a proper JavaScript identifier.
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function body.
 
 Invoking the `Function` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
@@ -195,10 +195,10 @@ As all other objects, [`GeneratorFunction`](global_objects/generatorfunction) ob
 
     new GeneratorFunction (arg1, arg2, ... argN, functionBody)
 
-`arg1, arg2, ... argN`  
+`arg1, arg2, ... argN`
 Zero or more names to be used by the function as formal argument names. Each must be a string that conforms to the rules for a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`", "`theValue`", or "`a,b`".
 
-`functionBody`  
+`functionBody`
 A string containing the JavaScript statements comprising the function definition.
 
 Invoking the `GeneratorFunction` constructor as a function (without using the `new` operator) has the same effect as invoking it as a constructor.
@@ -228,10 +228,10 @@ You can refer to a function's arguments within the function by using the `argume
 
 You can define getters (accessor methods) and setters (mutator methods) on any standard built-in object or user-defined object that supports the addition of new properties. The syntax for defining getters and setters uses the object literal syntax.
 
-[get](functions/get)  
+[get](functions/get)
 Binds an object property to a function that will be called when that property is looked up.
 
-[set](functions/set)  
+[set](functions/set)
 Binds an object property to a function to be called when there is an attempt to set that property.
 
 ### Method definition syntax
@@ -472,266 +472,3 @@ You can determine whether a function exists by using the `typeof` operator. In t
 
 Note that in the `if` test, a reference to `noFunc` is used—there are no brackets "()" after the function name so the actual function is not called.
 
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
-<br/>
-
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
-
-`Functions`
-
-1
-
-12
-
-1
-
-3
-
-3
-
-1
-
-1
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-`arguments`
-
-1
-
-12
-
-1
-
-3
-
-3
-
-1
-
-1
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-`arrow_functions`
-
-45
-
-12
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-No
-
-32
-
-10
-
-45
-
-45
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-32
-
-10
-
-5.0
-
-`block_level_functions`
-
-49
-
-12
-
-46
-
-11
-
-36
-
-10
-
-49
-
-49
-
-46
-
-36
-
-10
-
-5.0
-
-`default_parameters`
-
-49
-
-14
-
-15
-
-No
-
-36
-
-10
-
-49
-
-49
-
-15
-
-36
-
-10
-
-5.0
-
-`get`
-
-1
-
-12
-
-1.5
-
-9
-
-9.5
-
-3
-
-1
-
-18
-
-4
-
-14
-
-1
-
-1.0
-
-`method_definitions`
-
-39
-
-12
-
-34
-
-No
-
-26
-
-9
-
-39
-
-39
-
-34
-
-26
-
-9
-
-4.0
-
-`rest_parameters`
-
-47
-
-12
-
-15
-
-No
-
-34
-
-10
-
-47
-
-47
-
-15
-
-34
-
-10
-
-5.0
-
-`set`
-
-1
-
-12
-
-1.5
-
-9
-
-9.5
-
-3
-
-1
-
-18
-
-4
-
-14
-
-1
-
-1.0
-
-## See also
-
--   [`function statement`](statements/function)
--   [`function expression`](operators/function)
--   [`function* statement`](statements/function*)
--   [`function* expression`](operators/function*)
--   [`Function`](global_objects/function)
--   [`GeneratorFunction`](global_objects/generatorfunction)
--   [`Arrow functions`](functions/arrow_functions)
--   [`Default parameters`](functions/default_parameters)
--   [`Rest parameters`](functions/rest_parameters)
--   [`Arguments object`](functions/arguments)
--   [`getter`](functions/get)
--   [`setter`](functions/set)
--   [`Method definitions`](functions/method_definitions)
--   Functions and function scope
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a>

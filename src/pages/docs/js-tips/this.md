@@ -23,7 +23,7 @@ In most cases, the value of `this` is determined by how a function is called (ru
 
 ### Value
 
-A property of an execution context (global, function or eval) that, in non–strict mode, is always a reference to an object and in strict mode can be any value.
+A property of an execution context (global, function or eval) that, in non-strict mode, is always a reference to an object and in strict mode can be any value.
 
 ## Description
 
@@ -153,7 +153,7 @@ Derived classes must not return before calling `super()`, unless they return an 
     // members are used as the arguments in the function call
     add.apply(o, [10, 20]); // 34
 
-Note that in non–strict mode, with `call` and `apply`, if the value passed as `this` is not an object, an attempt will be made to convert it to an object. Values `null` and `undefined` become the global object. Primitives like `7` or `'foo'` will be converted to an Object using the related constructor, so the primitive number `7` is converted to an object as if by `new Number(7)` and the string `'foo'` to an object as if by `new String('foo')`, e.g.
+Note that in non-strict mode, with `call` and `apply`, if the value passed as `this` is not an object, an attempt will be made to convert it to an object. Values `null` and `undefined` become the global object. Primitives like `7` or `'foo'` will be converted to an Object using the related constructor, so the primitive number `7` is converted to an object as if by `new Number(7)` and the string `'foo'` to an object as if by `new String('foo')`, e.g.
 
     function bar() {
       console.log(Object.prototype.toString.call(this));
@@ -379,7 +379,7 @@ The above alert shows `button`. Note however that only the outer code has its `t
       Show inner this
     </button>
 
-In this case, the inner function's `this` isn't set so it returns the global/window object (i.e. the default object in non–strict mode where `this` isn't set by the call).
+In this case, the inner function's `this` isn't set so it returns the global/window object (i.e. the default object in non-strict mode where `this` isn't set by the call).
 
 ### this in classes
 
@@ -420,76 +420,3 @@ Just like with regular functions, the value of `this` within methods depends on 
     bird.sayBye();  // Bye from Ferrari
 
 **Note:** Classes are always strict mode code. Calling methods with an undefined `this` will throw an error.
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-this-keyword">ECMAScript (ECMA-262) 
-<br/>
-
-<span class="small">The definition of 'The this keyword' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
-
-Desktop
-
-Mobile
-
-Chrome
-
-Edge
-
-Firefox
-
-Internet Explorer
-
-Opera
-
-Safari
-
-WebView Android
-
-Chrome Android
-
-Firefox for Android
-
-Opera Android
-
-Safari on IOS
-
-Samsung Internet
-
-`this`
-
-1
-
-12
-
-1
-
-4
-
-9.5
-
-1
-
-1
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-## See also
-
--   [Strict mode](../strict_mode)
--   [Gentle explanation of 'this' keyword in JavaScript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
--   Getting the global context: [`globalThis`](../global_objects/globalthis)
-
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a>

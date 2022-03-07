@@ -1,7 +1,7 @@
 ---
 title: Array.prototype.concat()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Array.prototype.concat()'
     description: ''
@@ -23,7 +23,7 @@ The `concat()` method is used to merge two or more arrays. This method does not 
 
 ### Parameters
 
-`valueN` <span class="badge inline optional">Optional</span>  
+`valueN` <span class="badge inline optional">Optional</span>
 Arrays and/or values to concatenate into a new array. If all `valueN` parameters are omitted, `concat` returns a shallow copy of the existing array on which it is called. See the description below for more details.
 
 ### Return value
@@ -97,7 +97,7 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
@@ -134,6 +134,6 @@ The following code concatenates nested arrays and demonstrates retention of refe
 -   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
 -   [`splice`](splice) — add/remove elements from the specified location of the array
 -   [`String.prototype.concat()`](../string/concat)
--   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) – control flattening.
+-   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>
