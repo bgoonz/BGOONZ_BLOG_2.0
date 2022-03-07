@@ -203,7 +203,7 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
 
 
 
-```js
+```
 
 
 ---
