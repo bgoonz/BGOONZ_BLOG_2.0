@@ -256,7 +256,7 @@ You can also iterate over an object that explicitly implements async iterable pr
 ### Iterating over async generators
 
 Since the return values of async generators conform to the async iterable protocol, they can be looped using `for await...of`.
-
+```js
     async function* asyncGenerator() {
       let i = 0;
       while (i < 3) {
