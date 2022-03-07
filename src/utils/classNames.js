@@ -6,8 +6,8 @@ import classnames from 'classnames';
 
 // Otherwise, original classNames returns empty string which causes class="" to be generated
 
-export default function classNames(...args) {
+export default function classNames( ...args ) {
 
-    return classnames.call(this, ...args) || null;
+  return classnames.call( this, ...args ) || null;
 
 }

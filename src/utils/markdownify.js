@@ -4,14 +4,14 @@ import htmlToReact from './htmlToReact';
 
 
 
-export default function markdownify(markdown) {
+export default function markdownify( markdown ) {
 
-    if (!markdown) {
+  if ( !markdown ) {
 
-        return null;
+    return null;
 
-    }
+  }
 
-    return htmlToReact(marked(markdown));
+  return htmlToReact( marked( markdown ) );
 
 }

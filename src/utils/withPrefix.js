@@ -1,27 +1,27 @@
 const {
-    withPrefix: gatsbyWithPrefix
-} = require('gatsby');
+  withPrefix: gatsbyWithPrefix
+} = require( 'gatsby' );
 
-const _ = require('lodash');
-
-
-
-export default function withPrefix(url) {
-
-    if (!url) {
-
-        return url;
-
-    }
+const _ = require( 'lodash' );
 
 
 
-    if (_.startsWith(url, '#') || _.startsWith(url, 'http://') || _.startsWith(url, 'https://')) {
+export default function withPrefix( url ) {
 
-        return url;
+  if ( !url ) {
 
-    }
+    return url;
 
-    return gatsbyWithPrefix(url);
+  }
+
+
+
+  if ( _.startsWith( url, '#' ) || _.startsWith( url, 'http://' ) || _.startsWith( url, 'https://' ) ) {
+
+    return url;
+
+  }
+
+  return gatsbyWithPrefix( url );
 
 }
