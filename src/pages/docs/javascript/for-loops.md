@@ -276,7 +276,7 @@ Since the return values of async generators conform to the async iterable protoc
 For a more concrete example of iterating over an async generator using `for await...of`, consider iterating over data from an API.
 
 This example first creates an async iterable for a stream of data, then uses it to find the size of the response from the API.
-
+```js
     async function* streamAsyncIterable(stream) {
       const reader = stream.getReader();
       try {
