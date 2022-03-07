@@ -84,6 +84,13 @@ p {
     margin: 0 0 1em;
 }
 
+
+::selection,
+:not(pre) code[class*="language-"]::selection {
+  background: #03a9f433;
+}
+
+
 mark,
 ins {
     background: $yellow-pale;
