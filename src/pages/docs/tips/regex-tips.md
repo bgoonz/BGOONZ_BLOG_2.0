@@ -4,7 +4,7 @@ weight: 0
 excerpt: Regex Tricks
 seo:
     title: 'Regex Tricks'
-    description: 'Regular expressions make light work of single-character delimiters, which is why it's so easy to remove markup from a string:'
+    description: 'Regular expressions make light work of single-character delimiters which is why its so easy to remove markup from a string:'
     robots: []
     extra: []
 template: docs
