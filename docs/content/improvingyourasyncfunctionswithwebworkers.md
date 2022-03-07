@@ -4,6 +4,7 @@ tip-username: loverajoel
 tip-username-profile: https://github.com/loverajoel
 tip-tldr: JS runs in a single thread in the browser, this is the truth. In this tip I'll show you how to unleash the full power of asynchronous processing with Web Workers.
 
+
 categories: - en - javascript
 
 ---
