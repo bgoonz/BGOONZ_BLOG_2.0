@@ -1,6 +1,7 @@
-# Source Code:
+# Source Code
 
 <details>
+
 <summary> Folder Structure (src)  </summary>
 
 ```
@@ -318,7 +319,7 @@
 <details>
 <summary> Click To See Component Sourcecode  </summary>
 
-# Component Structure:
+# Component Structure
 
 ```
 .
@@ -535,7 +536,6 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div id="search"></div>
                 <div>
                     <center>
                         <br />
@@ -690,7 +690,6 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                <div id="search"></div>
             </footer>
         );
     }
