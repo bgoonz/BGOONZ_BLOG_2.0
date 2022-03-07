@@ -1,7 +1,7 @@
 ---
 title: for...of
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'for...of'
     description: ''
@@ -21,10 +21,10 @@ The `for...of` creates a loop iterating over [iterable objects](../iteration_pro
       statement
     }
 
-`variable`  
+`variable`
 On each iteration a value of a different property is assigned to `variable`. `variable` may be declared with `const`, `let`, or `var`.
 
-`iterable`  
+`iterable`
 Object whose iterable properties are iterated.
 
 ## Examples
@@ -270,7 +270,7 @@ This loop iterates and logs **values** that `iterable`, as an [iterable object](
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -361,8 +361,8 @@ No
 
 -   [`Array.prototype.forEach()`](../global_objects/array/foreach)
 -   [`Map.prototype.forEach()`](../global_objects/map/foreach)
--   [`Object.entries()`](../global_objects/object/entries) – Useful when using `for...of` over an object.
+-   [`Object.entries()`](../global_objects/object/entries) - Useful when using `for...of` over an object.
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005-2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of</a>

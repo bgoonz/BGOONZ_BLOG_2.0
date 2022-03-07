@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Object
 
 The `Object` class represents one of [JavaScript's data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). It is used to store various keyed collections and more complex entities. Objects can be created using the [`Object()`](object/object) constructor or the [object initializer / literal syntax](../operators/object_initializer).
@@ -38,112 +37,112 @@ There isn't any method in an Object itself to delete its own properties (such as
 
 ## Constructor
 
-[`Object()`](object/object)  
+[`Object()`](object/object)
 Creates a new `Object` object. It is a wrapper for the given value.
 
 ## Static methods
 
-[`Object.assign()`](object/assign)  
+[`Object.assign()`](object/assign)
 Copies the values of all enumerable own properties from one or more source objects to a target object.
 
-[`Object.create()`](object/create)  
+[`Object.create()`](object/create)
 Creates a new object with the specified prototype object and properties.
 
-[`Object.defineProperty()`](object/defineproperty)  
+[`Object.defineProperty()`](object/defineproperty)
 Adds the named property described by a given descriptor to an object.
 
-[`Object.defineProperties()`](object/defineproperties)  
+[`Object.defineProperties()`](object/defineproperties)
 Adds the named properties described by the given descriptors to an object.
 
-[`Object.entries()`](object/entries)  
+[`Object.entries()`](object/entries)
 Returns an array containing all of the `[key, value]` pairs of a given object's **own** enumerable string properties.
 
-[`Object.freeze()`](object/freeze)  
+[`Object.freeze()`](object/freeze)
 Freezes an object. Other code cannot delete or change its properties.
 
-[`Object.fromEntries()`](object/fromentries)  
+[`Object.fromEntries()`](object/fromentries)
 Returns a new object from an iterable of `[key, value]` pairs. (This is the reverse of [`Object.entries`](object/entries)).
 
-[`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor)  
+[`Object.getOwnPropertyDescriptor()`](object/getownpropertydescriptor)
 Returns a property descriptor for a named property on an object.
 
-[`Object.getOwnPropertyDescriptors()`](object/getownpropertydescriptors)  
+[`Object.getOwnPropertyDescriptors()`](object/getownpropertydescriptors)
 Returns an object containing all own property descriptors for an object.
 
-[`Object.getOwnPropertyNames()`](object/getownpropertynames)  
+[`Object.getOwnPropertyNames()`](object/getownpropertynames)
 Returns an array containing the names of all of the given object's **own** enumerable and non-enumerable properties.
 
-[`Object.getOwnPropertySymbols()`](object/getownpropertysymbols)  
+[`Object.getOwnPropertySymbols()`](object/getownpropertysymbols)
 Returns an array of all symbol properties found directly upon a given object.
 
-[`Object.getPrototypeOf()`](object/getprototypeof)  
+[`Object.getPrototypeOf()`](object/getprototypeof)
 Returns the prototype (internal `[[Prototype]]` property) of the specified object.
 
-[`Object.is()`](object/is)  
+[`Object.is()`](object/is)
 Compares if two values are the same value. Equates all `NaN` values (which differs from both Abstract Equality Comparison and Strict Equality Comparison).
 
-[`Object.isExtensible()`](object/isextensible)  
+[`Object.isExtensible()`](object/isextensible)
 Determines if extending of an object is allowed.
 
-[`Object.isFrozen()`](object/isfrozen)  
+[`Object.isFrozen()`](object/isfrozen)
 Determines if an object was frozen.
 
-[`Object.isSealed()`](object/issealed)  
+[`Object.isSealed()`](object/issealed)
 Determines if an object is sealed.
 
-[`Object.keys()`](object/keys)  
+[`Object.keys()`](object/keys)
 Returns an array containing the names of all of the given object's **own** enumerable string properties.
 
-[`Object.preventExtensions()`](object/preventextensions)  
+[`Object.preventExtensions()`](object/preventextensions)
 Prevents any extensions of an object.
 
-[`Object.seal()`](object/seal)  
+[`Object.seal()`](object/seal)
 Prevents other code from deleting properties of an object.
 
-[`Object.setPrototypeOf()`](object/setprototypeof)  
+[`Object.setPrototypeOf()`](object/setprototypeof)
 Sets the object's prototype (its internal `[[Prototype]]` property).
 
-[`Object.values()`](object/values)  
+[`Object.values()`](object/values)
 Returns an array containing the values that correspond to all of a given object's **own** enumerable string properties.
 
 ## Instance properties
 
-[`Object.prototype.constructor`](object/constructor)  
+[`Object.prototype.constructor`](object/constructor)
 Specifies the function that creates an object's prototype.
 
-[`Object/proto`](object/proto)  
+[`Object/proto`](object/proto)
 Points to the object which was used as prototype when the object was instantiated.
 
 ## Instance methods
 
-[`Object.prototype.__defineGetter__()`](object/__definegetter__)  
+[`Object.prototype.__defineGetter__()`](object/__definegetter__)
 Associates a function with a property that, when accessed, executes that function and returns its return value.
 
-[`Object.prototype.__defineSetter__()`](object/__definesetter__)  
+[`Object.prototype.__defineSetter__()`](object/__definesetter__)
 Associates a function with a property that, when set, executes that function which modifies the property.
 
-[`Object.prototype.__lookupGetter__()`](object/__lookupgetter__)  
+[`Object.prototype.__lookupGetter__()`](object/__lookupgetter__)
 Returns the function associated with the specified property by the [`__defineGetter__()`](object/__definegetter__) method.
 
-[`Object.prototype.__lookupSetter__()`](object/__lookupsetter__)  
+[`Object.prototype.__lookupSetter__()`](object/__lookupsetter__)
 Returns the function associated with the specified property by the [`__defineSetter__()`](object/__definesetter__) method.
 
-[`Object.prototype.hasOwnProperty()`](object/hasownproperty)  
+[`Object.prototype.hasOwnProperty()`](object/hasownproperty)
 Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.
 
-[`Object.prototype.isPrototypeOf()`](object/isprototypeof)  
+[`Object.prototype.isPrototypeOf()`](object/isprototypeof)
 Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object.
 
-[`Object.prototype.propertyIsEnumerable()`](object/propertyisenumerable)  
+[`Object.prototype.propertyIsEnumerable()`](object/propertyisenumerable)
 Returns a boolean indicating if the internal [ECMAScript \[\[Enumerable\]\] attribute](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties) is set.
 
-[`Object.prototype.toLocaleString()`](object/tolocalestring)  
+[`Object.prototype.toLocaleString()`](object/tolocalestring)
 Calls [`toString()`](object/tostring).
 
-[`Object.prototype.toString()`](object/tostring)  
+[`Object.prototype.toString()`](object/tostring)
 Returns a string representation of the object.
 
-[`Object.prototype.valueOf()`](object/valueof)  
+[`Object.prototype.valueOf()`](object/valueof)
 Returns the primitive value of the specified object.
 
 ## Examples
@@ -262,7 +261,7 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262)
 <br/>
 
 <span class="small">The definition of 'Object' in that specification.</span></a></td></tr></tbody></table>

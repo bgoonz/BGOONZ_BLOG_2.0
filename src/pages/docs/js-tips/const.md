@@ -10,10 +10,7 @@ seo:
 template: docs
 ---
 
-
 # const
-
-
 
 Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment, and it can't be redeclared.
 
@@ -21,10 +18,10 @@ Constants are block-scoped, much like variables declared using the `let` keyword
 
     const name1 = value1 [, name2 = value2 [, ... [, nameN = valueN]]];
 
-`nameN`  
+`nameN`
 The constant's name, which can be any legal [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier).
 
-`valueN`  
+`valueN`
 The constant's value. This can be any legal [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#expressions), including a function expression.
 
 The [Destructuring Assignment](../operators/destructuring_assignment) syntax can also be used to declare variables.
@@ -119,7 +116,7 @@ const also works on objects and arrays.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
@@ -160,6 +157,6 @@ const also works on objects and arrays.
 -   [`let`](let)
 -   [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
 
-© 2005–2021 MDN contributors.  
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+© 2005-2021 MDN contributors.
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const</a>

@@ -33,13 +33,13 @@ The time and space complexity of the sort cannot be guaranteed as it depends on 
 
 ### Parameters
 
-`compareFunction` <span class="badge inline optional">Optional</span>  
+`compareFunction` <span class="badge inline optional">Optional</span>
 Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
 
-`firstEl`  
+`firstEl`
 The first element for comparison.
 
-`secondEl`  
+`secondEl`
 The second element for comparison.
 
 ### Return value
@@ -234,7 +234,7 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>

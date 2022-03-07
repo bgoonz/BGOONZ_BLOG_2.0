@@ -23,7 +23,7 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
     });
 
     console.log(fmt.formatRange(date1, date2));
-    // > '10:00 – 11:00 AM'
+    // > '10:00 - 11:00 AM'
 
     fmt.formatRangeToParts(date1, date2);
     // return value:
@@ -31,7 +31,7 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
     //   { type: 'hour',      value: '10',  source: "startRange" },
     //   { type: 'literal',   value: ':',   source: "startRange" },
     //   { type: 'minute',    value: '00',  source: "startRange" },
-    //   { type: 'literal',   value: ' – ', source: "shared"     },
+    //   { type: 'literal',   value: ' - ', source: "shared"     },
     //   { type: 'hour',      value: '11',  source: "endRange"   },
     //   { type: 'literal',   value: ':',   source: "endRange"   },
     //   { type: 'minute',    value: '00',  source: "endRange"   },

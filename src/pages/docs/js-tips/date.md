@@ -1,7 +1,7 @@
 ---
 title: Date
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Date'
     description: ''
@@ -35,166 +35,166 @@ In addition to methods to read and alter individual components of the local date
 
 ## Constructor
 
-[`Date()`](date/date)  
+[`Date()`](date/date)
 When called as a function, returns a string representation of the current date and time, exactly as `new Date().toString()` does.
 
-[`new Date()`](date/date)  
+[`new Date()`](date/date)
 When called as a constructor, returns a new `Date` object.
 
 ## Static methods
 
-[`Date.now()`](date/now)  
+[`Date.now()`](date/now)
 Returns the numeric value corresponding to the current time—the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
 
-[`Date.parse()`](date/parse)  
+[`Date.parse()`](date/parse)
 Parses a string representation of a date and returns the number of milliseconds since 1 January, 1970, 00:00:00 UTC, with leap seconds ignored.
 
 **Note:** Parsing of strings with `Date.parse` is strongly discouraged due to browser differences and inconsistencies.
 
-[`Date.UTC()`](date/utc)  
+[`Date.UTC()`](date/utc)
 Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.
 
 ## Instance methods
 
-[`Date.prototype.getDate()`](date/getdate)  
-Returns the day of the month (`1`–`31`) for the specified date according to local time.
+[`Date.prototype.getDate()`](date/getdate)
+Returns the day of the month (`1`-`31`) for the specified date according to local time.
 
-[`Date.prototype.getDay()`](date/getday)  
-Returns the day of the week (`0`–`6`) for the specified date according to local time.
+[`Date.prototype.getDay()`](date/getday)
+Returns the day of the week (`0`-`6`) for the specified date according to local time.
 
-[`Date.prototype.getFullYear()`](date/getfullyear)  
+[`Date.prototype.getFullYear()`](date/getfullyear)
 Returns the year (4 digits for 4-digit years) of the specified date according to local time.
 
-[`Date.prototype.getHours()`](date/gethours)  
-Returns the hour (`0`–`23`) in the specified date according to local time.
+[`Date.prototype.getHours()`](date/gethours)
+Returns the hour (`0`-`23`) in the specified date according to local time.
 
-[`Date.prototype.getMilliseconds()`](date/getmilliseconds)  
-Returns the milliseconds (`0`–`999`) in the specified date according to local time.
+[`Date.prototype.getMilliseconds()`](date/getmilliseconds)
+Returns the milliseconds (`0`-`999`) in the specified date according to local time.
 
-[`Date.prototype.getMinutes()`](date/getminutes)  
-Returns the minutes (`0`–`59`) in the specified date according to local time.
+[`Date.prototype.getMinutes()`](date/getminutes)
+Returns the minutes (`0`-`59`) in the specified date according to local time.
 
-[`Date.prototype.getMonth()`](date/getmonth)  
-Returns the month (`0`–`11`) in the specified date according to local time.
+[`Date.prototype.getMonth()`](date/getmonth)
+Returns the month (`0`-`11`) in the specified date according to local time.
 
-[`Date.prototype.getSeconds()`](date/getseconds)  
-Returns the seconds (`0`–`59`) in the specified date according to local time.
+[`Date.prototype.getSeconds()`](date/getseconds)
+Returns the seconds (`0`-`59`) in the specified date according to local time.
 
-[`Date.prototype.getTime()`](date/gettime)  
+[`Date.prototype.getTime()`](date/gettime)
 Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC. (Negative values are returned for prior times.)
 
-[`Date.prototype.getTimezoneOffset()`](date/gettimezoneoffset)  
+[`Date.prototype.getTimezoneOffset()`](date/gettimezoneoffset)
 Returns the time-zone offset in minutes for the current locale.
 
-[`Date.prototype.getUTCDate()`](date/getutcdate)  
-Returns the day (date) of the month (`1`–`31`) in the specified date according to universal time.
+[`Date.prototype.getUTCDate()`](date/getutcdate)
+Returns the day (date) of the month (`1`-`31`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCDay()`](date/getutcday)  
-Returns the day of the week (`0`–`6`) in the specified date according to universal time.
+[`Date.prototype.getUTCDay()`](date/getutcday)
+Returns the day of the week (`0`-`6`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCFullYear()`](date/getutcfullyear)  
+[`Date.prototype.getUTCFullYear()`](date/getutcfullyear)
 Returns the year (4 digits for 4-digit years) in the specified date according to universal time.
 
-[`Date.prototype.getUTCHours()`](date/getutchours)  
-Returns the hours (`0`–`23`) in the specified date according to universal time.
+[`Date.prototype.getUTCHours()`](date/getutchours)
+Returns the hours (`0`-`23`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)  
-Returns the milliseconds (`0`–`999`) in the specified date according to universal time.
+[`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)
+Returns the milliseconds (`0`-`999`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMinutes()`](date/getutcminutes)  
-Returns the minutes (`0`–`59`) in the specified date according to universal time.
+[`Date.prototype.getUTCMinutes()`](date/getutcminutes)
+Returns the minutes (`0`-`59`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCMonth()`](date/getutcmonth)  
-Returns the month (`0`–`11`) in the specified date according to universal time.
+[`Date.prototype.getUTCMonth()`](date/getutcmonth)
+Returns the month (`0`-`11`) in the specified date according to universal time.
 
-[`Date.prototype.getUTCSeconds()`](date/getutcseconds)  
-Returns the seconds (`0`–`59`) in the specified date according to universal time.
+[`Date.prototype.getUTCSeconds()`](date/getutcseconds)
+Returns the seconds (`0`-`59`) in the specified date according to universal time.
 
-[`Date.prototype.getYear()`](date/getyear)  
-Returns the year (usually 2–3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
+[`Date.prototype.getYear()`](date/getyear)
+Returns the year (usually 2-3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
 
-[`Date.prototype.setDate()`](date/setdate)  
+[`Date.prototype.setDate()`](date/setdate)
 Sets the day of the month for a specified date according to local time.
 
-[`Date.prototype.setFullYear()`](date/setfullyear)  
+[`Date.prototype.setFullYear()`](date/setfullyear)
 Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to local time.
 
-[`Date.prototype.setHours()`](date/sethours)  
+[`Date.prototype.setHours()`](date/sethours)
 Sets the hours for a specified date according to local time.
 
-[`Date.prototype.setMilliseconds()`](date/setmilliseconds)  
+[`Date.prototype.setMilliseconds()`](date/setmilliseconds)
 Sets the milliseconds for a specified date according to local time.
 
-[`Date.prototype.setMinutes()`](date/setminutes)  
+[`Date.prototype.setMinutes()`](date/setminutes)
 Sets the minutes for a specified date according to local time.
 
-[`Date.prototype.setMonth()`](date/setmonth)  
+[`Date.prototype.setMonth()`](date/setmonth)
 Sets the month for a specified date according to local time.
 
-[`Date.prototype.setSeconds()`](date/setseconds)  
+[`Date.prototype.setSeconds()`](date/setseconds)
 Sets the seconds for a specified date according to local time.
 
-[`Date.prototype.setTime()`](date/settime)  
+[`Date.prototype.setTime()`](date/settime)
 Sets the [`Date`](date) object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC. Use negative numbers for times prior.
 
-[`Date.prototype.setUTCDate()`](date/setutcdate)  
+[`Date.prototype.setUTCDate()`](date/setutcdate)
 Sets the day of the month for a specified date according to universal time.
 
-[`Date.prototype.setUTCFullYear()`](date/setutcfullyear)  
+[`Date.prototype.setUTCFullYear()`](date/setutcfullyear)
 Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to universal time.
 
-[`Date.prototype.setUTCHours()`](date/setutchours)  
+[`Date.prototype.setUTCHours()`](date/setutchours)
 Sets the hour for a specified date according to universal time.
 
-[`Date.prototype.setUTCMilliseconds()`](date/setutcmilliseconds)  
+[`Date.prototype.setUTCMilliseconds()`](date/setutcmilliseconds)
 Sets the milliseconds for a specified date according to universal time.
 
-[`Date.prototype.setUTCMinutes()`](date/setutcminutes)  
+[`Date.prototype.setUTCMinutes()`](date/setutcminutes)
 Sets the minutes for a specified date according to universal time.
 
-[`Date.prototype.setUTCMonth()`](date/setutcmonth)  
+[`Date.prototype.setUTCMonth()`](date/setutcmonth)
 Sets the month for a specified date according to universal time.
 
-[`Date.prototype.setUTCSeconds()`](date/setutcseconds)  
+[`Date.prototype.setUTCSeconds()`](date/setutcseconds)
 Sets the seconds for a specified date according to universal time.
 
-[`Date.prototype.setYear()`](date/setyear)  
-Sets the year (usually 2–3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
+[`Date.prototype.setYear()`](date/setyear)
+Sets the year (usually 2-3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
 
-[`Date.prototype.toDateString()`](date/todatestring)  
+[`Date.prototype.toDateString()`](date/todatestring)
 Returns the "date" portion of the [`Date`](date) as a human-readable string like `'Thu Apr 12 2018'`.
 
-[`Date.prototype.toISOString()`](date/toisostring)  
+[`Date.prototype.toISOString()`](date/toisostring)
 Converts a date to a string following the ISO 8601 Extended Format.
 
-[`Date.prototype.toJSON()`](date/tojson)  
+[`Date.prototype.toJSON()`](date/tojson)
 Returns a string representing the [`Date`](date) using [`toISOString()`](date/toisostring). Intended for use by [`JSON.stringify()`](json/stringify).
 
-[`Date.prototype.toGMTString()`](date/togmtstring)  
+[`Date.prototype.toGMTString()`](date/togmtstring)
 Returns a string representing the [`Date`](date) based on the GMT (UTC) time zone. Use [`toUTCString()`](date/toutcstring) instead.
 
-[`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)  
+[`Date.prototype.toLocaleDateString()`](date/tolocaledatestring)
 Returns a string with a locality sensitive representation of the date portion of this date based on system settings.
 
-<span class="page-not-created">`Date.prototype.toLocaleFormat()`</span>  
+<span class="page-not-created">`Date.prototype.toLocaleFormat()`</span>
 Converts a date to a string, using a format string.
 
-[`Date.prototype.toLocaleString()`](date/tolocalestring)  
+[`Date.prototype.toLocaleString()`](date/tolocalestring)
 Returns a string with a locality-sensitive representation of this date. Overrides the [`Object.prototype.toLocaleString()`](object/tolocalestring) method.
 
-[`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)  
+[`Date.prototype.toLocaleTimeString()`](date/tolocaletimestring)
 Returns a string with a locality-sensitive representation of the time portion of this date, based on system settings.
 
-[`Date.prototype.toString()`](date/tostring)  
+[`Date.prototype.toString()`](date/tostring)
 Returns a string representing the specified [`Date`](date) object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
-[`Date.prototype.toTimeString()`](date/totimestring)  
+[`Date.prototype.toTimeString()`](date/totimestring)
 Returns the "time" portion of the [`Date`](date) as a human-readable string.
 
-[`Date.prototype.toUTCString()`](date/toutcstring)  
+[`Date.prototype.toUTCString()`](date/toutcstring)
 Converts a date to a string using the UTC timezone.
 
-[`Date.prototype.valueOf()`](date/valueof)  
+[`Date.prototype.valueOf()`](date/valueof)
 Returns the primitive value of a [`Date`](date) object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
 
 ## Examples
@@ -217,7 +217,7 @@ The following examples show several ways to create JavaScript dates:
     let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
     let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /)
 
-### Two digit years map to 1900 – 1999
+### Two digit years map to 1900 - 1999
 
 Values from `0` to `99` map to the years `1900` to `1999`. All other values are the actual year .
 
@@ -274,7 +274,7 @@ In this case, it's important to return only an integer—so a simple division wo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-date-objects</span></a></td></tr></tbody></table>

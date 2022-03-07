@@ -1381,7 +1381,6 @@ in the document:
 
 ```markdown
 ---
-
 ---
 
 ---

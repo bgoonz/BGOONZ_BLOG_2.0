@@ -338,7 +338,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.sv
 
 -   [graphql-batch](https://github.com/Shopify/graphql-batch) - A query batching executor for the graphql gem.
 
--   [batch-loader](https://github.com/exaspark/batch-loader) – A powerful tool to avoid N+1 queries without extra dependencies or primitives.
+-   [batch-loader](https://github.com/exaspark/batch-loader) - A powerful tool to avoid N+1 queries without extra dependencies or primitives.
 
 -   [graphql-guard](https://github.com/exAspArk/graphql-guard) - A simple field-level authorization for the graphql gem.
 
@@ -360,13 +360,13 @@ image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.sv
 
 -   [overblog/graphql-bundle](https://github.com/overblog/GraphQLBundle) - This bundle provides tools to build a complete GraphQL server in your Symfony App. Supports react-relay.
 
--   [GraphQL](https://github.com/Youshido/GraphQL) – Well documented PHP implementation with no dependencies.
+-   [GraphQL](https://github.com/Youshido/GraphQL) - Well documented PHP implementation with no dependencies.
 
--   [GraphQL Symfony Bundle](https://github.com/Youshido/GraphQLBundle) – GraphQL Bundle for the Symfony 3 (supports 2.6+).
+-   [GraphQL Symfony Bundle](https://github.com/Youshido/GraphQLBundle) - GraphQL Bundle for the Symfony 3 (supports 2.6+).
 
 -   [WPGraphQL](https://github.com/wp-graphql/wp-graphql) - WordPress plugin that exposes a Relay compliant GraphQL endpoint
 
--   [graphql-wp](https://github.com/tim-field/graphql-wp) – a WordPress plugin that exposes a GraphQL endpoint.
+-   [graphql-wp](https://github.com/tim-field/graphql-wp) - a WordPress plugin that exposes a GraphQL endpoint.
 
 -   [eZ Platform GraphQL Bundle](https://www.symfony.fi/entry/graphql-bundle-adds-protocol-support-to-ez-platform-symfony-cms) - GraphQL Bundle for the eZ Platform Symfony CMS.
 
@@ -648,7 +648,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.sv
 
 -   [json-graphql-server](https://github.com/marmelab/json-graphql-server) - Get a full fake GraphQL API with zero coding in less than 30 seconds, based on a JSON data file.
 
--   [Insomnia](https://insomnia.rest/) – An full-featured API client with first-party GraphQL query editor
+-   [Insomnia](https://insomnia.rest/) - An full-featured API client with first-party GraphQL query editor
 
 -   [RAN Toolkit](https://github.com/sly777/ran) - Production-ready toolkit/boilerplate with support for GraphQL, SSR, Hot-reload, CSS-in-JS, caching, and more.
 

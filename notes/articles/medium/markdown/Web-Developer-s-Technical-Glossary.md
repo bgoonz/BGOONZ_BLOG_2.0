@@ -903,7 +903,7 @@ Hidden software whose purpose is to gather data about a user's web surfing habit
 
 ### SQL
 
-Stands for Structured Query Language. SQL was originally called SEQUEL (Structured English Query Language) and was designed in 1974–75 by an IBM research center. In 1979, the Oracle corporation introduced SQL as a commercial database system. Today, SQL is the ANSI standard language used to get data from and manipulate databases.
+Stands for Structured Query Language. SQL was originally called SEQUEL (Structured English Query Language) and was designed in 1974-75 by an IBM research center. In 1979, the Oracle corporation introduced SQL as a commercial database system. Today, SQL is the ANSI standard language used to get data from and manipulate databases.
 
 ### SQL Server
 

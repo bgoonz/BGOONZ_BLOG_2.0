@@ -9489,7 +9489,7 @@ The `cloneRange()` method steps are to return a new [live range](https://dom.spe
 
 [Range/detach](https://developer.mozilla.org/en-US/docs/Web/API/Range/detach 'The Range.detach() method does nothing. It used to disable the Range object and enable the browser to release associated resources. The method has been kept for compatibility.')
 
-Firefox1–15Safari1+Chrome1+
+Firefox1-15Safari1+Chrome1+
 
 ---
 
@@ -9501,7 +9501,7 @@ Edge (Legacy)12+IE9+
 
 ---
 
-Firefox for Android4–15iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
+Firefox for Android4-15iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
 The `detach()` method steps are to do nothing. Its functionality (disabling a `[Range](https://dom.spec.whatwg.org/#range)` object) was removed, but the method itself is preserved for compatibility.
 
