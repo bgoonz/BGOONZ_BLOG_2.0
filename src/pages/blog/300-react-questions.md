@@ -1,2426 +1,1899 @@
 ---
-title: Es6 Features
-
-subtitle: lorem-ipsum
-
-date: '2021-11-24'
-
-thumb_image_alt: lorem-ipsum
-
-excerpt: lorem-ipsum
-
+title: Leetcode (Data Structures)
+subtitle: practice
+date: '2021-09-14'
+thumb_image_alt: Big O Cheat Sheet
+excerpt: A guide to computational complexity
 seo:
-    title: ''
-
-    description: ''
-
-    robots: []
-
-    extra: []
-
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: post
-
-thumb_image: images/es6.jpg
+image: images/ds.PNG
+thumb_image: images/bigo-8f9701e1.jpg
 ---
 
-## React Interview Questions & Answers
+# Leetcode
 
-<iframe sandbox="allow-scripts"  width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+## Data Structures & Algorithms
 
-<details>
+[DS Algo Codebase](https://github.com/bgoonz/Data-Structures-Algos-Codebase)
 
-<summary> Questions Table  </summary>
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#115-distinct-subsequenceshttpsleetcodecomproblemsdistinct-subsequencesdescription)
 
-#### Table of Contents
+## ➤ [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
 
-<table>
-<thead>
-<tr>
-<th>No.</th>
-<th>Questions</th>
-<th data-type="checkbox">
-</th>
-<th>Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-</td>
-<td>
-<strong>Core React</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>1</td>
-<td>What is React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>What are the major features of React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>3</td>
-<td>What is JSX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>What is the difference between Element and Component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>5</td>
-<td>How to create components in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>6</td>
-<td>When to use a Class Component over a Function Component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>7</td>
-<td>What are Pure Components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>8</td>
-<td>What is state in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>9</td>
-<td>What are props in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>10</td>
-<td>What is the difference between state and props?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Why should we not update the state directly?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>12</td>
-<td>What is the purpose of callback function as an argument of setState()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>13</td>
-<td>What is the difference between HTML and React event handling?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>14</td>
-<td>How to bind methods or event handlers in JSX callbacks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>15</td>
-<td>How to pass a parameter to an event handler or callback?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>16</td>
-<td>What are synthetic events in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>17</td>
-<td>What are inline conditional expressions?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>18</td>
-<td>What is "key" prop and what is the benefit of using it in arrays of elements?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>19</td>
-<td>What is the use of refs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>20</td>
-<td>How to create refs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>21</td>
-<td>What are forward refs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>22</td>
-<td>Which is preferred option with in callback refs and findDOMNode()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>23</td>
-<td>Why are String Refs legacy?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>24</td>
-<td>What is Virtual DOM?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>25</td>
-<td>How Virtual DOM works?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>26</td>
-<td>What is the difference between Shadow DOM and Virtual DOM?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>27</td>
-<td>What is React Fiber?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>28</td>
-<td>What is the main goal of React Fiber?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>29</td>
-<td>What are controlled components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>30</td>
-<td>What are uncontrolled components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>31</td>
-<td>What is the difference between createElement and cloneElement?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>32</td>
-<td>What is Lifting State Up in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>33</td>
-<td>What are the different phases of component lifecycle?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>34</td>
-<td>What are the lifecycle methods of React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>35</td>
-<td>What are Higher-Order components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>36</td>
-<td>How to create props proxy for HOC component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>37</td>
-<td>What is context?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>38</td>
-<td>What is children prop?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>39</td>
-<td>How to write comments in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>40</td>
-<td>What is the purpose of using super constructor with props argument?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>41</td>
-<td>What is reconciliation?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>42</td>
-<td>How to set state with a dynamic key name?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>43</td>
-<td>What would be the common mistake of function being called every time the component renders?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>44</td>
-<td>Is lazy function supports named exports?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>45</td>
-<td>Why React uses className over class attribute?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>46</td>
-<td>What are fragments?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>47</td>
-<td>Why fragments are better than container divs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>48</td>
-<td>What are portals in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>49</td>
-<td>What are stateless components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>50</td>
-<td>What are stateful components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>51</td>
-<td>How to apply validation on props in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>52</td>
-<td>What are the advantages of React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>53</td>
-<td>What are the limitations of React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>54</td>
-<td>What are error boundaries in React v16</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>55</td>
-<td>How error boundaries handled in React v15?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>56</td>
-<td>What are the recommended ways for static type checking?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>57</td>
-<td>What is the use of react-dom package?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>58</td>
-<td>What is the purpose of render method of react-dom?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>59</td>
-<td>What is ReactDOMServer?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>60</td>
-<td>How to use InnerHtml in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>61</td>
-<td>How to use styles in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>62</td>
-<td>How events are different in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>63</td>
-<td>What will happen if you use setState in constructor?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>64</td>
-<td>What is the impact of indexes as keys?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>65</td>
-<td>Is it good to use setState() in componentWillMount() method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>66</td>
-<td>What will happen if you use props in initial state?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>67</td>
-<td>How do you conditionally render components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>68</td>
-<td>Why we need to be careful when spreading props on DOM elements??</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>69</td>
-<td>How you use decorators in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>70</td>
-<td>How do you memoize a component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>71</td>
-<td>How you implement Server-Side Rendering or SSR?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>72</td>
-<td>How to enable production mode in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>73</td>
-<td>What is CRA and its benefits?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>74</td>
-<td>What is the lifecycle methods order in mounting?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>75</td>
-<td>What are the lifecycle methods going to be deprecated in React v16?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>76</td>
-<td>What is the purpose of getDerivedStateFromProps() lifecycle method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>77</td>
-<td>What is the purpose of getSnapshotBeforeUpdate() lifecycle method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>78</td>
-<td>Do Hooks replace render props and higher order components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>79</td>
-<td>What is the recommended way for naming components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>80</td>
-<td>What is the recommended ordering of methods in component class?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>81</td>
-<td>What is a switching component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>82</td>
-<td>Why we need to pass a function to setState()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>83</td>
-<td>What is strict mode in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>84</td>
-<td>What are React Mixins?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>85</td>
-<td>Why is isMounted() an anti-pattern and what is the proper solution?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>86</td>
-<td>What are the Pointer Events supported in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>87</td>
-<td>Why should component names start with capital letter?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>88</td>
-<td>Are custom DOM attributes supported in React v16?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>89</td>
-<td>What is the difference between constructor and getInitialState?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>90</td>
-<td>Can you force a component to re-render without calling setState?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>91</td>
-<td>What is the difference between super() and super(props) in React using ES6 classes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>92</td>
-<td>How to loop inside JSX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>93</td>
-<td>How do you access props in attribute quotes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>94</td>
-<td>What is React PropType array with shape?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>95</td>
-<td>How to conditionally apply class attributes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>96</td>
-<td>What is the difference between React and ReactDOM?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>97</td>
-<td>Why ReactDOM is separated from React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>98</td>
-<td>How to use React label element?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>99</td>
-<td>How to combine multiple inline style objects?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>100</td>
-<td>How to re-render the view when the browser is resized?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>101</td>
-<td>What is the difference between setState and replaceState methods?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>102</td>
-<td>How to listen to state changes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>103</td>
-<td>What is the recommended approach of removing an array element in react state?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>104</td>
-<td>Is it possible to use React without rendering HTML?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>105</td>
-<td>How to pretty print JSON with React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>106</td>
-<td>Why you can't update props in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>107</td>
-<td>How to focus an input element on page load?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>108</td>
-<td>What are the possible ways of updating objects in state?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>110</td>
-<td>How can we find the version of React at runtime in the browser?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>111</td>
-<td>What are the approaches to include polyfills in your create-react-app?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>112</td>
-<td>How to use https instead of http in create-react-app?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>113</td>
-<td>How to avoid using relative path imports in create-react-app?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>114</td>
-<td>How to add Google Analytics for react-router?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>115</td>
-<td>How to update a component every second?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>116</td>
-<td>How do you apply vendor prefixes to inline styles in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>117</td>
-<td>How to import and export components using react and ES6?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>118</td>
-<td>What are the exceptions on React component naming?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>119</td>
-<td>Why is a component constructor called only once?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>120</td>
-<td>How to define constants in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>121</td>
-<td>How to programmatically trigger click event in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>122</td>
-<td>Is it possible to use async/await in plain React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>123</td>
-<td>What are the common folder structures for React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>124</td>
-<td>What are the popular packages for animation?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>125</td>
-<td>What is the benefit of styles modules?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>126</td>
-<td>What are the popular React-specific linters?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>127</td>
-<td>How to make AJAX call and In which component lifecycle methods should I make an AJAX call?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>128</td>
-<td>What are render props?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React Router</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>129</td>
-<td>What is React Router?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>130</td>
-<td>How React Router is different from history library?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>131</td>
-<td>What are the &#x3C;Router> components of React Router v4?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>132</td>
-<td>What is the purpose of push and replace methods of history?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>133</td>
-<td>How do you programmatically navigate using React router v4?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>134</td>
-<td>How to get query parameters in React Router v4</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>135</td>
-<td>Why you get "Router may have only one child element" warning?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>136</td>
-<td>How to pass params to history.push method in React Router v4?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>137</td>
-<td>How to implement default or NotFound page?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>138</td>
-<td>How to get history on React Router v4?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>139</td>
-<td>How to perform automatic redirect after login?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React Internationalization</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>140</td>
-<td>What is React-Intl?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>141</td>
-<td>What are the main features of React Intl?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>142</td>
-<td>What are the two ways of formatting in React Intl?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>143</td>
-<td>How to use FormattedMessage as placeholder using React Intl?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>144</td>
-<td>How to access current locale with React Intl</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>145</td>
-<td>How to format date using React Intl?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React Testing</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>146</td>
-<td>What is Shallow Renderer in React testing?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>147</td>
-<td>What is TestRenderer package in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>148</td>
-<td>What is the purpose of ReactTestUtils package?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>149</td>
-<td>What is Jest?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>150</td>
-<td>What are the advantages of Jest over Jasmine?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>151</td>
-<td>Give a simple example of Jest test case</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React Redux</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>152</td>
-<td>What is Flux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>153</td>
-<td>What is Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>154</td>
-<td>What are the core principles of Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>155</td>
-<td>What are the downsides of Redux compared to Flux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>156</td>
-<td>What is the difference between mapStateToProps() and mapDispatchToProps()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>157</td>
-<td>Can I dispatch an action in reducer?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>158</td>
-<td>How to access Redux store outside a component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>159</td>
-<td>What are the drawbacks of MVW pattern</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>160</td>
-<td>Are there any similarities between Redux and RxJS?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>161</td>
-<td>How to dispatch an action on load?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>162</td>
-<td>How to use connect from React Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>163</td>
-<td>How to reset state in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>164</td>
-<td>Whats the purpose of at symbol in the redux connect decorator?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>165</td>
-<td>What is the difference between React context and React Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>166</td>
-<td>Why are Redux state functions called reducers?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>167</td>
-<td>How to make AJAX request in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>168</td>
-<td>Should I keep all component's state in Redux store?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>169</td>
-<td>What is the proper way to access Redux store?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>170</td>
-<td>What is the difference between component and container in React Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>171</td>
-<td>What is the purpose of the constants in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>172</td>
-<td>What are the different ways to write mapDispatchToProps()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>173</td>
-<td>What is the use of the ownProps parameter in mapStateToProps() and mapDispatchToProps()?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>174</td>
-<td>How to structure Redux top level directories?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>175</td>
-<td>What is redux-saga?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>176</td>
-<td>What is the mental model of redux-saga?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>177</td>
-<td>What are the differences between call and put in redux-saga</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>178</td>
-<td>What is Redux Thunk?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>179</td>
-<td>What are the differences between redux-saga and redux-thunk</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>180</td>
-<td>What is Redux DevTools?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>181</td>
-<td>What are the features of Redux DevTools?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>182</td>
-<td>What are Redux selectors and Why to use them?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>183</td>
-<td>What is Redux Form?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>184</td>
-<td>What are the main features of Redux Form?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>185</td>
-<td>How to add multiple middlewares to Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>186</td>
-<td>How to set initial state in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>187</td>
-<td>How Relay is different from Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>188</td>
-<td>What is an action in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React Native</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>188</td>
-<td>What is the difference between React Native and React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>189</td>
-<td>How to test React Native apps?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>190</td>
-<td>How to do logging in React Native?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>191</td>
-<td>How to debug your React Native?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>React supported libraries and Integration</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>192</td>
-<td>What is reselect and how it works?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>193</td>
-<td>What is Flow?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>194</td>
-<td>What is the difference between Flow and PropTypes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>195</td>
-<td>How to use font-awesome icons in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>196</td>
-<td>What is React Dev Tools?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>197</td>
-<td>Why is DevTools not loading in Chrome for local files?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>198</td>
-<td>How to use Polymer in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>199</td>
-<td>What are the advantages of React over Vue.js?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>200</td>
-<td>What is the difference between React and Angular?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>201</td>
-<td>Why React tab is not showing up in DevTools?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>202</td>
-<td>What are styled components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>203</td>
-<td>Give an example of Styled Components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>204</td>
-<td>What is Relay?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>205</td>
-<td>How to use TypeScript in create-react-app application?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td>
-<strong>Miscellaneous</strong>
-</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>206</td>
-<td>What are the main features of reselect library?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>207</td>
-<td>Give an example of reselect usage?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>209</td>
-<td>Does the statics object work with ES6 classes in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>210</td>
-<td>Can Redux only be used with React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>211</td>
-<td>Do you need to have a particular build tool to use Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>212</td>
-<td>How Redux Form initialValues get updated from state?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>213</td>
-<td>How React PropTypes allow different type for one prop?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>214</td>
-<td>Can I import an SVG file as react component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>215</td>
-<td>Why are inline ref callbacks or functions not recommended?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>216</td>
-<td>What is render hijacking in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>217</td>
-<td>What are HOC factory implementations?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>218</td>
-<td>How to pass numbers to React component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>219</td>
-<td>Do I need to keep all my state into Redux? Should I ever use react internal state?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>220</td>
-<td>What is the purpose of registerServiceWorker in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>221</td>
-<td>What is React memo function?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>222</td>
-<td>What is React lazy function?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>223</td>
-<td>How to prevent unnecessary updates using setState?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>224</td>
-<td>How do you render Array, Strings and Numbers in React 16 Version?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>225</td>
-<td>How to use class field declarations syntax in React classes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>226</td>
-<td>What are hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>227</td>
-<td>What are the rules needs to follow for hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>228</td>
-<td>How to ensure hooks followed the rules in your project?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>229</td>
-<td>What are the differences between Flux and Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>230</td>
-<td>What are the benefits of React Router V4?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>231</td>
-<td>Can you describe about componentDidCatch lifecycle method signature?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>232</td>
-<td>In which scenarios error boundaries do not catch errors?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>233</td>
-<td>Why do you not need error boundaries for event handlers?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>234</td>
-<td>What is the difference between try catch block and error boundaries?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>235</td>
-<td>What is the behavior of uncaught errors in react 16?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>236</td>
-<td>What is the proper placement for error boundaries?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>237</td>
-<td>What is the benefit of component stack trace from error boundary?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>238</td>
-<td>What is the required method to be defined for a class component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>239</td>
-<td>What are the possible return types of render method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>240</td>
-<td>What is the main purpose of constructor?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>241</td>
-<td>Is it mandatory to define constructor for React component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>242</td>
-<td>What are default props?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>243</td>
-<td>Why should not call setState in componentWillUnmount?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>244</td>
-<td>What is the purpose of getDerivedStateFromError?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>245</td>
-<td>What is the methods order when component re-rendered?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>246</td>
-<td>What are the methods invoked during error handling?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>247</td>
-<td>What is the purpose of displayName class property?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>248</td>
-<td>What is the browser support for react applications?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>249</td>
-<td>What is the purpose of unmountComponentAtNode method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>250</td>
-<td>What is code-splitting?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>251</td>
-<td>What is the benefit of strict mode?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>252</td>
-<td>What are Keyed Fragments?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>253</td>
-<td>Does React support all HTML attributes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>254</td>
-<td>What are the limitations with HOCs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>255</td>
-<td>How to debug forwardRefs in DevTools?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>256</td>
-<td>When component props defaults to true?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>257</td>
-<td>What is NextJS and major features of it?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>258</td>
-<td>How do you pass an event handler to a component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>259</td>
-<td>Is it good to use arrow functions in render methods?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>260</td>
-<td>How to prevent a function from being called multiple times?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>261</td>
-<td>How JSX prevents Injection Attacks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>262</td>
-<td>How do you update rendered elements?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>263</td>
-<td>How do you say that props are read only?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>264</td>
-<td>How do you say that state updates are merged?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>265</td>
-<td>How do you pass arguments to an event handler?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>266</td>
-<td>How to prevent component from rendering?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>267</td>
-<td>What are the conditions to safely use the index as a key?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>268</td>
-<td>Is it keys should be globally unique?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>269</td>
-<td>What is the popular choice for form handling?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>270</td>
-<td>What are the advantages of formik over redux form library?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>271</td>
-<td>Why do you not required to use inheritance?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>272</td>
-<td>Can I use web components in react application?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>273</td>
-<td>What is dynamic import?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>274</td>
-<td>What are loadable components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>275</td>
-<td>What is suspense component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>276</td>
-<td>What is route based code splitting?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>277</td>
-<td>Give an example on How to use context?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>278</td>
-<td>What is the purpose of default value in context?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>279</td>
-<td>How do you use contextType?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>280</td>
-<td>What is a consumer?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>281</td>
-<td>How do you solve performance corner cases while using context?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>282</td>
-<td>What is the purpose of forward ref in HOCs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>283</td>
-<td>Is it ref argument available for all functions or class components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>284</td>
-<td>Why do you need additional care for component libraries while using forward refs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>285</td>
-<td>How to create react class components without ES6?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>286</td>
-<td>Is it possible to use react without JSX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>287</td>
-<td>What is diffing algorithm?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>288</td>
-<td>What are the rules covered by diffing algorithm?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>289</td>
-<td>When do you need to use refs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>290</td>
-<td>Is it prop must be named as render for render props?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>291</td>
-<td>What are the problems of using render props with pure components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>292</td>
-<td>How do you create HOC using render props?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>293</td>
-<td>What is windowing technique?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>294</td>
-<td>How do you print falsy values in JSX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>295</td>
-<td>What is the typical use case of portals?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>296</td>
-<td>How do you set default value for uncontrolled component?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>297</td>
-<td>What is your favorite React stack?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>298</td>
-<td>What is the difference between Real DOM and Virtual DOM?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>299</td>
-<td>How to add Bootstrap to a react application?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>300</td>
-<td>Can you list down top websites or applications using react as front end framework?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>301</td>
-<td>Is it recommended to use CSS In JS technique in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>302</td>
-<td>Do I need to rewrite all my class components with hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>303</td>
-<td>How to fetch data with React Hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>304</td>
-<td>Is Hooks cover all use cases for classes?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>305</td>
-<td>What is the stable release for hooks support?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>306</td>
-<td>Why do we use array destructuring (square brackets notation) in useState?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>307</td>
-<td>What are the sources used for introducing hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>308</td>
-<td>How do you access imperative API of web components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>309</td>
-<td>What is formik?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>310</td>
-<td>What are typical middleware choices for handling asynchronous calls in Redux?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>311</td>
-<td>Do browsers understand JSX code?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>312</td>
-<td>Describe about data flow in react?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>313</td>
-<td>What is react scripts?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>314</td>
-<td>What are the features of create react app?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>315</td>
-<td>What is the purpose of renderToNodeStream method?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>316</td>
-<td>What is MobX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>317</td>
-<td>What are the differences between Redux and MobX?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>318</td>
-<td>Should I learn ES6 before learning ReactJS?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>319</td>
-<td>What is Concurrent Rendering?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>320</td>
-<td>What is the difference between async mode and concurrent mode?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>321</td>
-<td>Can I use javascript urls in react16.9?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>322</td>
-<td>What is the purpose of eslint plugin for hooks?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>323</td>
-<td>What is the difference between Imperative and Declarative in React?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>324</td>
-<td>What are the benefits of using typescript with reactjs?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>325</td>
-<td>How do you make sure that user remains authenticated on page refresh while using Context API State Management?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>326</td>
-<td>What are the benefits of new JSX transform?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>327</td>
-<td>How does new JSX transform different from old transform?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>328</td>
-<td>How do you get redux scaffolding using create-react-app?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>329</td>
-<td>What are React Server components?</td>
-<td>false</td>
-<td>
-</td>
-</tr>
-</tbody>
-</table>
+### Problem:
 
-</details>
+Given a string **S** and a string **T**, count the number of distinct subsequences of **S** which equals **T**.
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, `"ACE"` is a subsequence of `"ABCDE"` while `"AEC"` is not).
+
+**Example 1:**
+
+    Input: S = "rabbbit", T = "rabbit"
+    Output: 3
+    Explanation:
+
+    As shown below, there are 3 ways you can generate "rabbit" from S.
+    (The caret symbol ^ means the chosen letters)
+
+    rabbbit
+    ^^^^ ^^
+    rabbbit
+    ^^ ^^^^
+    rabbbit
+    ^^^ ^^^
+
+**Example 2:**
+
+    Input: S = "babgbag", T = "bag"
+    Output: 5
+    Explanation:
+
+    As shown below, there are 5 ways you can generate "bag" from S.
+    (The caret symbol ^ means the chosen letters)
+
+    babgbag
+    ^^ ^
+    babgbag
+    ^^    ^
+    babgbag
+    ^    ^^
+    babgbag
+      ^  ^^
+    babgbag
+        ^^^
+
+### Solution:
+
+Define `f(i, j)` to be the number of ways that generate `T[0...j)` from `S[0...i)`.
+
+For `f(i, j)` you can always skip `S[i-1]`, but can only take it when `S[i-1] === T[j-1]`.
+
+```javascript
+f(0, j) = 0, j > 0 // nothing to delete
+f(i, 0) = 1 // delete all
+f(i, j) = f(i-1, j) + (S[i-1] === T[j-1] ? f(i-1, j-1) : 0)
+```
+
+Dynamic array can be used.
+
+```javascript
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {number}
+ */
+let numDistinct = function (s, t) {
+    const lens = s.length;
+    const lent = t.length;
+    const dp = new Array(lent + 1).fill(0);
+    dp[0] = 1;
+    for (let i = 1; i <= lens; i++) {
+        for (let j = lent; j >= 1; j--) {
+            if (s[i - 1] === t[j - 1]) {
+                dp[j] += dp[j - 1];
+            }
+        }
+    }
+    return dp[lent];
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Tree": https://leetcode.com/tag/tree
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+Similar Questions:
+"Populating Next Right Pointers in Each Node II": https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii
+"Binary Tree Right Side View": https://leetcode.com/problems/binary-tree-right-side-view
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#116-populating-next-right-pointers-in-each-nodehttpsleetcodecomproblemspopulating-next-right-pointers-in-each-nodedescription)
+
+## ➤ [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)
+
+### Problem:
+
+Given a binary tree
+
+```
+struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+
+```
+
+Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to `NULL`.
+
+Initially, all next pointers are set to `NULL`.
+
+**Note:**
+
+-   You may only use constant extra space.
+-   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+-   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+
+**Example:**
+
+Given the following perfect binary tree,
+
+```
+     1
+   /  \
+  2    3
+ / \  / \
+4  5  6  7
+
+```
+
+After calling your function, the tree should look like:
+
+```
+     1 -> NULL
+   /  \
+  2 -> 3 -> NULL
+ / \  / \
+4->5->6->7 -> NULL
+
+```
+
+### Solution:
+
+#### ONE
+
+Recursive.
+
+For every `node`:
+
+-   Left child: points to `node.right`.
+-   Right child: points to `node.next.left` if `node.next` exists.
+
+```javascript
+/**
+ * Definition for binary tree with next pointer.
+ * function TreeLinkNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = this.next = null;
+ * }
+ */
+
+/**
+ * @param {TreeLinkNode} root
+ * @return {void} Do not return anything, modify tree in-place instead.
+ */
+let connect = function (root) {
+    if (!root) {
+        return;
+    }
+    if (root.left !== null) {
+        root.left.next = root.right;
+        connect(root.left);
+    }
+    if (root.right !== null) {
+        if (root.next !== null) {
+            root.right.next = root.next.left;
+        }
+        connect(root.right);
+    }
+};
+```
+
+#### TWO
+
+Level order traversal.
+
+```javascript
+/**
+ * Definition for binary tree with next pointer.
+ * function TreeLinkNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = this.next = null;
+ * }
+ */
+
+/**
+ * @param {TreeLinkNode} root
+ * @return {void} Do not return anything, modify tree in-place instead.
+ */
+let connect = function (root) {
+    if (!root) {
+        return;
+    }
+
+    const queue = [NaN, root];
+    while (queue.length > 1) {
+        const node = queue.shift();
+        if (node !== node) {
+            for (let i = 0; i < queue.length; i++) {
+                queue[i].next = queue[i + 1] || null;
+            }
+            queue.push(NaN);
+        } else {
+            if (node.left !== null) {
+                queue.push(node.left);
+            }
+            if (node.right !== null) {
+                queue.push(node.right);
+            }
+        }
+    }
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Tree": https://leetcode.com/tag/tree
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+Similar Questions:
+"Populating Next Right Pointers in Each Node": https://leetcode.com/problems/populating-next-right-pointers-in-each-node
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#117-populating-next-right-pointers-in-each-node-iihttpsleetcodecomproblemspopulating-next-right-pointers-in-each-node-iidescription)
+
+## ➤ [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)
+
+### Problem:
+
+Given a binary tree
+
+```
+struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+
+```
+
+Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to `NULL`.
+
+Initially, all next pointers are set to `NULL`.
+
+**Note:**
+
+-   You may only use constant extra space.
+-   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+
+**Example:**
+
+Given the following binary tree,
+
+```
+     1
+   /  \
+  2    3
+ / \    \
+4   5    7
+
+```
+
+After calling your function, the tree should look like:
+
+```
+     1 -> NULL
+   /  \
+  2 -> 3 -> NULL
+ / \    \
+4-> 5 -> 7 -> NULL
+
+```
+
+### Solution:
+
+#### ONE
+
+Recursive. See [116. Populating Next Right Pointers in Each Node](./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md).
+
+The tree may not be perfect now. So keep finding `next` until there is a node with children, or `null`.
+
+This also means post-order traversal is required.
+
+```javascript
+/**
+ * Definition for binary tree with next pointer.
+ * function TreeLinkNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = this.next = null;
+ * }
+ */
+
+/**
+ * @param {TreeLinkNode} root
+ * @return {void} Do not return anything, modify tree in-place instead.
+ */
+let connect = function (root) {
+    if (!root) {
+        return;
+    }
+    let next = null;
+    for (let node = root.next; node !== null; node = node.next) {
+        if (node.left !== null) {
+            next = node.left;
+            break;
+        }
+        if (node.right !== null) {
+            next = node.right;
+            break;
+        }
+    }
+    if (root.right !== null) {
+        root.right.next = next;
+    }
+    if (root.left !== null) {
+        root.left.next = root.right || next;
+    }
+    connect(root.right);
+    connect(root.left);
+};
+```
+
+#### TWO
+
+Level order traversal. Exact same as [116. Populating Next Right Pointers in Each Node](./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md).
+
+```javascript
+/**
+ * Definition for binary tree with next pointer.
+ * function TreeLinkNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = this.next = null;
+ * }
+ */
+
+/**
+ * @param {TreeLinkNode} root
+ * @return {void} Do not return anything, modify tree in-place instead.
+ */
+let connect = function (root) {
+    if (!root) {
+        return;
+    }
+
+    const queue = [NaN, root];
+    while (queue.length > 1) {
+        const node = queue.shift();
+        if (node !== node) {
+            for (let i = 0; i < queue.length; i++) {
+                queue[i].next = queue[i + 1] || null;
+            }
+            queue.push(NaN);
+        } else {
+            if (node.left !== null) {
+                queue.push(node.left);
+            }
+            if (node.right !== null) {
+                queue.push(node.right);
+            }
+        }
+    }
+};
+```
+
+---
+
+Difficulty: Easy
+Related Topics:
+"Array": https://leetcode.com/tag/array
+Similar Questions:
+"Pascal's Triangle II": https://leetcode.com/problems/pascals-triangle-ii
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#118-pascals-trianglehttpsleetcodecomproblemspascals-triangledescription)
+
+## ➤ [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
+
+### Problem:
+
+Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal's triangle.
+
+![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+
+**Example:**
+
+```
+Input: 5
+Output:
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+
+```
+
+### Solution:
+
+Dynamic Programming 101.
+
+```javascript
+/**
+ * @param {number} numRows
+ * @return {number[][]}
+ */
+let generate = function (numRows) {
+    if (numRows <= 0) {
+        return [];
+    }
+
+    const result = [[1]];
+    for (let i = 1; i < numRows; i++) {
+        const lastRow = result[i - 1];
+        const row = [1];
+        for (let j = 1; j < i; j++) {
+            row[j] = lastRow[j] + lastRow[j - 1];
+        }
+        row.push(1);
+        result.push(row);
+    }
+
+    return result;
+};
+```
+
+---
+
+Difficulty: Easy
+Related Topics:
+"Array": https://leetcode.com/tag/array
+Similar Questions:
+"Pascal's Triangle": https://leetcode.com/problems/pascals-triangle
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#119-pascals-triangle-iihttpsleetcodecomproblemspascals-triangle-iidescription)
+
+## ➤ [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/)
+
+### Problem:
+
+Given a non-negative index _k_ where _k_ ≤ 33, return the *k*th index row of the Pascal's triangle.
+
+Note that the row index starts from 0.
+
+![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+
+**Example:**
+
+```
+Input: 3
+Output: [1,3,3,1]
+
+```
+
+**Follow up:**
+
+Could you optimize your algorithm to use only _O_(_k_) extra space?
+
+### Solution:
+
+Dynamic Programming 101 with dynamic array.
+
+State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)` iteration must be from right to left.
+
+```javascript
+/**
+ * @param {number} rowIndex
+ * @return {number[]}
+ */
+let getRow = function (rowIndex) {
+    if (rowIndex < 0) {
+        return [];
+    }
+
+    const row = [1];
+    for (let i = 1; i <= rowIndex; i++) {
+        for (let j = i - 1; j > 0; j--) {
+            row[j] += row[j - 1];
+        }
+        row.push(1);
+    }
+
+    return row;
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#120-trianglehttpsleetcodecomproblemstriangledescription)
+
+## ➤ [120. Triangle](https://leetcode.com/problems/triangle/description/)
+
+### Problem:
+
+Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+For example, given the following triangle
+
+```
+[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+
+```
+
+The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + **1** = 11).
+
+**Note:**
+
+Bonus point if you are able to do this using only _O_(_n_) extra space, where _n_ is the total number of rows in the triangle.
+
+### Solution:
+
+Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i][j]`.
+
+    f(i, 0) = f(i-1, j) + triangle[i][0]
+    f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
+    f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
+
+Dynamic array can be used.
+
+```javascript
+/**
+ * @param {number[][]} triangle
+ * @return {number}
+ */
+let minimumTotal = function (triangle) {
+    if (triangle.length <= 0) {
+        return 0;
+    }
+
+    const dp = [triangle[0][0]];
+    for (let i = 1; i < triangle.length; i++) {
+        dp[i] = dp[i - 1] + triangle[i][i];
+        for (let j = i - 1; j >= 1; j--) {
+            dp[j] = Math.min(dp[j], dp[j - 1]) + triangle[i][j];
+        }
+        dp[0] += triangle[i][0];
+    }
+    return Math.min(...dp);
+};
+```
+
+---
+
+Difficulty: Easy
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+Similar Questions:
+"Maximum Subarray": https://leetcode.com/problems/maximum-subarray
+"Best Time to Buy and Sell Stock II": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
+"Best Time to Buy and Sell Stock III": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
+"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
+"Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#121-best-time-to-buy-and-sell-stockhttpsleetcodecomproblemsbest-time-to-buy-and-sell-stockdescription)
+
+## ➤ [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+
+### Problem:
+
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+
+If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
+
+Note that you cannot sell a stock before you buy one.
+
+**Example 1:**
+
+```
+Input: [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+             Not 7-1 = 6, as selling price needs to be larger than buying price.
+
+```
+
+**Example 2:**
+
+```
+Input: [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.
+
+```
+
+### Solution:
+
+Only care about positive profits. Take the frist item as base and scan to the right. If we encounter an item `j` whose price `price[j]` is lower than the base (which means if we sell now the profit would be negative), we sell `j-1` instead and make `j` the new base.
+
+Because `price[j]` is lower that the base, using `j` as new base is guaranteed to gain more profit comparing to the old one.
+
+```javascript
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+let maxProfit = function (prices) {
+    let max = 0;
+    let base = prices[0];
+    for (let i = 1; i < prices.length; i++) {
+        const profit = prices[i] - base;
+        if (profit > max) {
+            max = profit;
+        } else if (profit < 0) {
+            base = prices[i];
+        }
+    }
+    return max;
+};
+```
+
+---
+
+Difficulty: Easy
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"Greedy": https://leetcode.com/tag/greedy
+Similar Questions:
+"Best Time to Buy and Sell Stock": https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+"Best Time to Buy and Sell Stock III": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
+"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
+"Best Time to Buy and Sell Stock with Cooldown": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+"Best Time to Buy and Sell Stock with Transaction Fee": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#122-best-time-to-buy-and-sell-stock-iihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iidescription)
+
+## ➤ [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
+
+### Problem:
+
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+
+Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
+
+**Note:** You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+
+**Example 1:**
+
+```
+Input: [7,1,5,3,6,4]
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+             Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
+
+```
+
+**Example 2:**
+
+```
+Input: [1,2,3,4,5]
+Output: 4
+Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
+             engaging multiple transactions at the same time. You must sell before buying again.
+
+```
+
+**Example 3:**
+
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
+
+### Solution:
+
+Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs (buy in then immediately sell out).
+
+```javascript
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+let maxProfit = function (prices) {
+    let max = 0;
+    for (let i = 1; i < prices.length; i++) {
+        if (prices[i] > prices[i - 1]) {
+            max += prices[i] - prices[i - 1];
+        }
+    }
+    return max;
+};
+```
+
+---
+
+Difficulty: Hard
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"Dynamic Programming": https://leetcode.com/tag/dynamic-programming
+Similar Questions:
+"Best Time to Buy and Sell Stock": https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+"Best Time to Buy and Sell Stock II": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
+"Best Time to Buy and Sell Stock IV": https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
+"Maximum Sum of 3 Non-Overlapping Subarrays": https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#123-best-time-to-buy-and-sell-stock-iiihttpsleetcodecomproblemsbest-time-to-buy-and-sell-stock-iiidescription)
+
+## ➤ [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
+
+### Problem:
+
+Say you have an array for which the *i*th element is the price of a given stock on day _i_.
+
+Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
+
+\*\*Note:\*\*You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+
+**Example 1:**
+
+    Input: [3,3,5,0,0,3,1,4]
+    Output: 6
+    Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+                 Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
+
+**Example 2:**
+
+```
+Input: [1,2,3,4,5]
+Output: 4
+Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
+             engaging multiple transactions at the same time. You must sell before buying again.
+
+```
+
+**Example 3:**
+
+    Input: [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transaction is done, i.e. max profit = 0.
+
+### Solution:
+
+Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won't be any intersection. We may complete at most _two_ transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
+
+Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](./121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
+
+    p1(0) = 0
+    p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
+
+Define `p2(i)` to be the max profit of day `[i...n-1]`. This is the mirror of `p1`.
+
+    p2(n-1) = 0
+    p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
+
+Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
+
+```javascript
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+let maxProfit = function (prices) {
+    const len = prices.length;
+    if (len <= 1) {
+        return 0;
+    }
+
+    const dp = [0];
+
+    let min = prices[0];
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1], prices[i] - min);
+        min = Math.min(prices[i], min);
+    }
+
+    let p2 = 0;
+    let max = prices[len - 1];
+    for (let i = len - 2; i >= 0; i--) {
+        max = Math.max(prices[i], max);
+        p2 = Math.max(p2, max - prices[i]);
+        dp[i] += p2;
+    }
+
+    return Math.max(...dp);
+};
+```
+
+---
+
+Difficulty: Hard
+Related Topics:
+"Tree": https://leetcode.com/tag/tree
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+Similar Questions:
+"Path Sum": https://leetcode.com/problems/path-sum
+"Sum Root to Leaf Numbers": https://leetcode.com/problems/sum-root-to-leaf-numbers
+"Path Sum IV": https://leetcode.com/problems/path-sum-iv
+"Longest Univalue Path": https://leetcode.com/problems/longest-univalue-path
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#124-binary-tree-maximum-path-sumhttpsleetcodecomproblemsbinary-tree-maximum-path-sumdescription)
+
+## ➤ [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+
+### Problem:
+
+Given a **non-empty** binary tree, find the maximum path sum.
+
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain **at least one node** and does not need to go through the root.
+
+**Example 1:**
+
+```
+Input: [1,2,3]
+
+       1
+      / \
+     2   3
+
+Output: 6
+
+```
+
+**Example 2:**
+
+```
+Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+
+```
+
+### Solution:
+
+For every `node`, there are six possible ways to get the max path sum:
+
+-   With `node.val`
+    1.  `node.val` plus the max sum of a path that ends with `node.left`.
+    2.  `node.val` plus the max sum of a path that starts with `node.right`.
+    3.  `node.val` plus the max sum of both paths.
+    4.  Just `node.val` (the max sum of both paths are negative).
+-   Without`node.val` (disconnected)
+    1.  The max-sum path is somewhere under the `node.left` subtree.
+    2.  The max-sum path is somewhere under the `node.right` subtree.
+
+There are two ways to implement this.
+
+#### ONE
+
+Define a function that returns two values. The max sum of a path that may or may not end with `root` node, and the max sum of the path that ends with `root` node.
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+let maxPathSum = function (root) {
+    return Math.max(..._maxPathSum(root));
+};
+
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+function _maxPathSum(root) {
+    if (!root) {
+        return [-Infinity, -Infinity];
+    }
+
+    const left = _maxPathSum(root.left);
+    const right = _maxPathSum(root.right);
+    return [Math.max(left[0], right[0], root.val + Math.max(0, left[1], right[1], left[1] + right[1])), Math.max(left[1], right[1], 0) + root.val];
+}
+```
+
+#### TWO
+
+Just return the later (max sum of a path that ends with `root`). Maintain a global variable to store the disconnected max sum.
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+let maxPathSum = function (root) {
+    const global = { max: -Infinity };
+    _maxPathSum(root, global);
+    return global.max;
+};
+
+/**
+ * @param {TreeNode} root
+ * @param {object} global
+ * @param {number} global.max
+ * @return {number[]}
+ */
+function _maxPathSum(root, global) {
+    if (!root) {
+        return -Infinity;
+    }
+
+    const left = _maxPathSum(root.left, global);
+    const right = _maxPathSum(root.right, global);
+    const localMax = Math.max(left, right, 0) + root.val;
+    global.max = Math.max(global.max, localMax, root.val + left + right);
+    return localMax;
+}
+```
+
+---
+
+Difficulty: Easy
+Related Topics:
+"Two Pointers": https://leetcode.com/tag/two-pointers
+"String": https://leetcode.com/tag/string
+Similar Questions:
+"Palindrome Linked List": https://leetcode.com/problems/palindrome-linked-list
+"Valid Palindrome II": https://leetcode.com/problems/valid-palindrome-ii
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#125-valid-palindromehttpsleetcodecomproblemsvalid-palindromedescription)
+
+## ➤ [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)
+
+### Problem:
+
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+**Note:** For the purpose of this problem, we define empty string as valid palindrome.
+
+**Example 1:**
+
+```
+Input: "A man, a plan, a canal: Panama"
+Output: true
+
+```
+
+**Example 2:**
+
+```
+Input: "race a car"
+Output: false
+
+```
+
+### Solution:
+
+#### ONE
+
+```javascript
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+let isPalindrome = function (s) {
+    const clean = s.toLowerCase().split(/[^a-z0-9]*/);
+    return clean.join('') === clean.reverse().join('');
+};
+```
+
+#### TWO
+
+Remove non-alphanumeric characters then compare.
+
+```javascript
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+let isPalindrome = function (s) {
+    const clean = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    for (let i = 0, j = clean.length - 1; i < j; i++, j--) {
+        if (clean[i] !== clean[j]) {
+            return false;
+        }
+    }
+    return true;
+};
+```
+
+#### THREE
+
+Compare the char codes.
+
+```javascript
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+let isPalindrome = function (s) {
+    for (let i = 0, j = s.length - 1; i < j; i++, j--) {
+        let left = s.charCodeAt(i);
+        while (i < j && (left < 48 || (left > 57 && left < 65) || (left > 90 && left < 97) || left > 122)) {
+            left = s.charCodeAt(++i);
+        }
+        if (i >= j) {
+            return true;
+        }
+        if (left >= 65 && left <= 90) {
+            left += 32;
+        }
+
+        let right = s.charCodeAt(j);
+        while (i < j && (right < 48 || (right > 57 && right < 65) || (right > 90 && right < 97) || right > 122)) {
+            right = s.charCodeAt(--j);
+        }
+        if (i >= j) {
+            return true;
+        }
+        if (right >= 65 && right <= 90) {
+            right += 32;
+        }
+
+        if (left !== right) {
+            return false;
+        }
+    }
+
+    return true;
+};
+```
+
+---
+
+Difficulty: Hard
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"String": https://leetcode.com/tag/string
+"Backtracking": https://leetcode.com/tag/backtracking
+"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+Similar Questions:
+"Word Ladder": https://leetcode.com/problems/word-ladder
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#126-word-ladder-iihttpsleetcodecomproblemsword-ladder-iidescription)
+
+## ➤ [126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)
+
+### Problem:
+
+Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
+
+1.  Only one letter can be changed at a time
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+
+**Note:**
+
+-   Return an empty list if there is no such transformation sequence.
+-   All words have the same length.
+-   All words contain only lowercase alphabetic characters.
+-   You may assume no duplicates in the word list.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+
+**Example 1:**
+
+```
+Input:
+beginWord = "hit",
+endWord = "cog",
+wordList = ["hot","dot","dog","lot","log","cog"]
+
+Output:
+[
+  ["hit","hot","dot","dog","cog"],
+  ["hit","hot","lot","log","cog"]
+]
+
+```
+
+**Example 2:**
+
+```
+Input:
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log"]
+
+Output: []
+
+Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
+
+```
+
+### Solution:
+
+This is just like [127. Word Ladder](./127.%20Word%20Ladder).
+
+The constrain still works, but instead of deleting the words right away, collect them and delete them all when a level ends, so that we can reuse the words (matching different parents in the same level).
+
+The items in the queue are not just words now. Parent nodes are also kept so that we can backtrack the path from the end.
+
+```javascript
+/**
+ * @param {string} beginWord
+ * @param {string} endWord
+ * @param {string[]} wordList
+ * @return {string[][]}
+ */
+function findLadders(beginWord, endWord, wordList) {
+    wordList = new Set(wordList);
+    if (!wordList.has(endWord)) {
+        return [];
+    }
+
+    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
+
+    const result = [];
+    let isEndWordFound = false;
+    const levelWords = new Set();
+    const queue = [[beginWord, null], null];
+    while (queue.length > 1) {
+        const node = queue.shift();
+
+        if (node === null) {
+            if (isEndWordFound) {
+                break;
+            }
+            levelWords.forEach((word) => wordList.delete(word));
+            levelWords.clear();
+            queue.push(null);
+            continue;
+        }
+
+        const word = node[0];
+
+        for (let i = word.length - 1; i >= 0; i--) {
+            const head = word.slice(0, i);
+            const tail = word.slice(i + 1);
+
+            for (let c = 0; c < 26; c++) {
+                if (ALPHABET[c] !== word[i]) {
+                    const w = head + ALPHABET[c] + tail;
+                    if (w === endWord) {
+                        const path = [endWord];
+                        for (let n = node; n !== null; n = n[1]) {
+                            path.unshift(n[0]);
+                        }
+                        result.push(path);
+                        isEndWordFound = true;
+                    }
+                    if (wordList.has(w)) {
+                        levelWords.add(w);
+                        queue.push([w, node]);
+                    }
+                }
+            }
+        }
+    }
+
+    return result;
+}
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+Similar Questions:
+"Word Ladder II": https://leetcode.com/problems/word-ladder-ii
+"Minimum Genetic Mutation": https://leetcode.com/problems/minimum-genetic-mutation
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#127-word-ladderhttpsleetcodecomproblemsword-ladderdescription)
+
+## ➤ [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
+
+### Problem:
+
+Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
+
+1.  Only one letter can be changed at a time.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
+
+**Note:**
+
+-   Return 0 if there is no such transformation sequence.
+-   All words have the same length.
+-   All words contain only lowercase alphabetic characters.
+-   You may assume no duplicates in the word list.
+-   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+
+**Example 1:**
+
+```
+Input:
+beginWord = "hit",
+endWord = "cog",
+wordList = ["hot","dot","dog","lot","log","cog"]
+
+Output: 5
+
+Explanation: As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+return its length 5.
+
+```
+
+**Example 2:**
+
+```
+Input:
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log"]
+
+Output: 0
+
+Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
+
+```
+
+### Solution:
+
+Think of it as building a tree, with `begineWord` as root and `endWord` as leaves.
+
+The best way control the depth (length of the shortest transformations) while building the tree is level-order traversal (BFS).
+
+We do not actually build the tree because it is expensive (astronomical if the list is huge). In fact, we only need one shortest path. So just like Dijkstra's algorithm, we say that the first time (level `i`) we encounter a word that turns out to be in a shortest path, then level `i` is the lowest level this word could ever get. We can safely remove it from the `wordList`.
+
+To find all the next words, instead of filtering the `wordList`, enumerate all 25 possible words and check if in `wordList`.
+
+```javascript
+/**
+ * @param {string} beginWord
+ * @param {string} endWord
+ * @param {string[]} wordList
+ * @return {number}
+ */
+let ladderLength = function (beginWord, endWord, wordList) {
+    wordList = new Set(wordList);
+    if (!wordList.has(endWord)) {
+        return 0;
+    }
+
+    const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
+
+    let level = 1;
+    const queue = [beginWord, null];
+    while (queue.length > 1) {
+        const word = queue.shift();
+
+        if (word === null) {
+            level++;
+            queue.push(null);
+            continue;
+        }
+
+        for (let i = word.length - 1; i >= 0; i--) {
+            const head = word.slice(0, i);
+            const tail = word.slice(i + 1);
+
+            for (let c = 0; c < 26; c++) {
+                if (ALPHABET[c] !== word[i]) {
+                    const word = head + ALPHABET[c] + tail;
+                    if (word === endWord) {
+                        return level + 1;
+                    }
+                    if (wordList.delete(word)) {
+                        queue.push(word);
+                    }
+                }
+            }
+        }
+    }
+
+    return 0;
+};
+```
+
+---
+
+Difficulty: Hard
+Related Topics:
+"Array": https://leetcode.com/tag/array
+"Union Find": https://leetcode.com/tag/union-find
+Similar Questions:
+"Binary Tree Longest Consecutive Sequence": https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#128-longest-consecutive-sequencehttpsleetcodecomproblemslongest-consecutive-sequencedescription)
+
+## ➤ [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+
+### Problem:
+
+Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+
+Your algorithm should run in O(_n_) complexity.
+
+**Example:**
+
+```
+Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+```
+
+### Solution:
+
+Build a Set from the list. Pick a number, find all it's adjacent numbers that are also in the Set. Count them and remove them all from the Set. Repeat until the Set is empty. Time complexity O(n + n) = O(n).
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+let longestConsecutive = function (nums) {
+    const numSet = new Set(nums);
+    let maxCount = 0;
+    while (numSet.size > 0) {
+        const num = numSet.values().next().value;
+        numSet.delete(num);
+        let count = 1;
+        for (let n = num + 1; numSet.delete(n); n++) {
+            count++;
+        }
+        for (let n = num - 1; numSet.delete(n); n--) {
+            count++;
+        }
+        if (count > maxCount) {
+            maxCount = count;
+        }
+    }
+    return maxCount;
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Tree": https://leetcode.com/tag/tree
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+Similar Questions:
+"Path Sum": https://leetcode.com/problems/path-sum
+"Binary Tree Maximum Path Sum": https://leetcode.com/problems/binary-tree-maximum-path-sum
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#129-sum-root-to-leaf-numbershttpsleetcodecomproblemssum-root-to-leaf-numbersdescription)
+
+## ➤ [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
+
+### Problem:
+
+Given a binary tree containing digits from `0-9` only, each root-to-leaf path could represent a number.
+
+An example is the root-to-leaf path `1->2->3` which represents the number `123`.
+
+Find the total sum of all root-to-leaf numbers.
+
+**Note:** A leaf is a node with no children.
+
+**Example:**
+
+    Input: [1,2,3]
+        1
+       / \
+      2   3
+    Output: 25
+    Explanation:
+    The root-to-leaf path 1->2 represents the number 12.
+    The root-to-leaf path 1->3 represents the number 13.
+    Therefore, sum = 12 + 13 = 25.
+
+**Example 2:**
+
+    Input: [4,9,0,5,1]
+        4
+       / \
+      9   0
+     / \
+    5   1
+    Output: 1026
+    Explanation:
+    The root-to-leaf path 4->9->5 represents the number 495.
+    The root-to-leaf path 4->9->1 represents the number 491.
+    The root-to-leaf path 4->0 represents the number 40.
+    Therefore, sum = 495 + 491 + 40 = 1026.
+
+### Solution:
+
+To write a clean solution for this promblem, use `0` as indicator of leaf node. If all the children get `0`, it is a leaf node, return the sum of current level.
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+let sumNumbers = function (root, sum = 0) {
+    if (!root) {
+        return 0;
+    }
+    sum = sum * 10 + root.val;
+    return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum;
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+"Union Find": https://leetcode.com/tag/union-find
+Similar Questions:
+"Number of Islands": https://leetcode.com/problems/number-of-islands
+"Walls and Gates": https://leetcode.com/problems/walls-and-gates
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#130-surrounded-regionshttpsleetcodecomproblemssurrounded-regionsdescription)
+
+## ➤ [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)
+
+### Problem:
+
+Given a 2D board containing `'X'` and `'O'` (**the letter O**), capture all regions surrounded by `'X'`.
+
+A region is captured by flipping all `'O'`s into `'X'`s in that surrounded region.
+
+**Example:**
+
+```
+X X X X
+X O O X
+X X O X
+X O X X
+
+```
+
+After running your function, the board should be:
+
+```
+X X X X
+X X X X
+X X X X
+X O X X
+
+```
+
+**Explanation:**
+
+Surrounded regions shouldn't be on the border, which means that any `'O'` on the border of the board are not flipped to `'X'`. Any `'O'` that is not on the border and it is not connected to an `'O'` on the border will be flipped to `'X'`. Two cells are connected if they are adjacent cells connected horizontally or vertically.
+
+### Solution:
+
+Find all the `O`s that are connected to the `O`s on the border, change them to `#`. Then scan the board, change `O` to `X` and `#` back to `O`.
+
+The process of finding the connected `O`s is just like tree traversal. `O`s on the border are the same level. Their children are the second level. And so on.
+
+So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor of its readability.
+
+```javascript
+/**
+ * @param {character[][]} board
+ * @return {void} Do not return anything, modify board in-place instead.
+ */
+let solve = function (board) {
+    const height = board.length;
+    if (height <= 1) {
+        return;
+    }
+    const width = board[0].length;
+    if (width <= 1) {
+        return;
+    }
+
+    const rowend = height - 1;
+    const colend = width - 1;
+
+    const queue = [];
+
+    for (let row = 0; row < height; row++) {
+        if (board[row][0] === 'O') {
+            board[row][0] = '#';
+            queue.push(row, 0);
+        }
+        if (board[row][colend] === 'O') {
+            board[row][colend] = '#';
+            queue.push(row, colend);
+        }
+    }
+
+    for (let col = 0; col < width; col++) {
+        if (board[0][col] === 'O') {
+            board[0][col] = '#';
+            queue.push(0, col);
+        }
+        if (board[rowend][col] === 'O') {
+            board[rowend][col] = '#';
+            queue.push(rowend, col);
+        }
+    }
+
+    while (queue.length > 0) {
+        const row = queue.shift();
+        const col = queue.shift();
+        if (row < rowend && board[row + 1][col] === 'O') {
+            board[row + 1][col] = '#';
+            queue.push(row + 1, col);
+        }
+        if (row > 0 && board[row - 1][col] === 'O') {
+            board[row - 1][col] = '#';
+            queue.push(row - 1, col);
+        }
+        if (board[row][col + 1] === 'O') {
+            board[row][col + 1] = '#';
+            queue.push(row, col + 1);
+        }
+        if (board[row][col - 1] === 'O') {
+            board[row][col - 1] = '#';
+            queue.push(row, col - 1);
+        }
+    }
+
+    for (let row = 0; row < height; row++) {
+        for (let col = 0; col < width; col++) {
+            if (board[row][col] === '#') {
+                board[row][col] = 'O';
+            } else if (board[row][col] === 'O') {
+                board[row][col] = 'X';
+            }
+        }
+    }
+};
+```
+
+---
+
+Difficulty: Medium
+Related Topics:
+"Depth-first Search": https://leetcode.com/tag/depth-first-search
+"Breadth-first Search": https://leetcode.com/tag/breadth-first-search
+"Graph": https://leetcode.com/tag/graph
+Similar Questions:
+"Copy List with Random Pointer": https://leetcode.com/problems/copy-list-with-random-pointer
+
+---
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#133-clone-graphhttpsleetcodecomproblemsclone-graphdescription)
+
+## ➤ [133. Clone Graph](https://leetcode.com/problems/clone-graph/description/)
+
+### Problem:
+
+Given the head of a graph, return a deep copy (clone) of the graph. Each node in the graph contains a `label` (`int`) and a list (`List[UndirectedGraphNode]`) of its `neighbors`. There is an edge between the given node and each of the nodes in its neighbors.
+
+OJ's undirected graph serialization (so you can understand error output):
+
+Nodes are labeled uniquely.
+
+We use `#` as a separator for each node, and `,` as a separator for node label and each neighbor of the node.
+
+As an example, consider the serialized graph `{0,1,2#1,2#2,2}`.
+
+The graph has a total of three nodes, and therefore contains three parts as separated by `#`.
+
+1.  First node is labeled as `0`. Connect node `0` to both nodes `1` and `2`.
+2.  Second node is labeled as `1`. Connect node `1` to node `2`.
+3.  Third node is labeled as `2`. Connect node `2` to node `2` (itself), thus forming a self-cycle.
+
+Visually, the graph looks like the following:
+
+```
+       1
+      / \
+     /   \
+    0 --- 2
+         / \
+         \_/
+
+```
+
+**Note**: The information about the tree serialization is only meant so that you can understand error output if you get a wrong answer. You don't need to understand the serialization to solve the problem.
+
+### Solution:
+
+DFS. Cache the visited node before entering the next recursion.
+
+```javascript
+/**
+ * Definition for undirected graph.
+ * function UndirectedGraphNode(label) {
+ *     this.label = label;
+ *     this.neighbors = [];   // Array of UndirectedGraphNode
+ * }
+ */
+
+/**
+ * @param {UndirectedGraphNode} graph
+ * @return {UndirectedGraphNode}
+ */
+let cloneGraph = function (graph) {
+    const cache = {};
+    return _clone(graph);
+
+    function _clone(graph) {
+        if (!graph) {
+            return graph;
+        }
+        const label = graph.label;
+        if (!cache[label]) {
+            cache[label] = new UndirectedGraphNode(label);
+            cache[label].neighbors = graph.neighbors.map(_clone);
+        }
+        return cache[label];
+    }
+};
+```
+
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp 'binary-tree-upside-down')
+
+```js
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+const upsideDownBinaryTree = function (root) {
+    let curr = root;
+    let next = null;
+    let temp = null;
+    let prev = null;
+    while (curr !== null) {
+        next = curr.left;
+        curr.left = temp;
+        temp = curr.right;
+        curr.right = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+};
+
+// another
+
+const upsideDownBinaryTree = function (root) {
+    if (root == null || root.left == null) {
+        return root;
+    }
+    const newRoot = upsideDownBinaryTree(root.left);
+    root.left.left = root.right;
+    root.left.right = root;
+    root.left = null;
+    root.right = null;
+    return newRoot;
+};
+```
+
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
+
+```js
+/**
+ * @param {number[]} A
+ * @return {number}
+ */
+const maxSubarraySumCircular = function (A) {
+    let minSum = Infinity,
+        sum = 0,
+        maxSum = -Infinity,
+        curMax = 0,
+        curMin = 0;
+    for (let a of A) {
+        sum += a;
+        curMax = Math.max(curMax + a, a);
+        maxSum = Math.max(maxSum, curMax);
+        curMin = Math.min(curMin + a, a);
+        minSum = Math.min(minSum, curMin);
+    }
+    return maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
+};
+```
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#balanced-binary-tree---leetcode)
+
+# ➤ Balanced Binary Tree - LeetCode
+
+> Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
+
+Given a binary tree, determine if it is height-balanced.
+
+For this problem, a height-balanced binary tree is defined as:
+
+> a binary tree in which the left and right subtrees of _every_ node differ in height by no more than 1.
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
+
+**Input:** root = \[3,9,20,null,null,15,7]
+**Output:** true
+
+**Example 2:**
+
+![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
+
+**Input:** root = \[1,2,2,3,3,null,null,4,4]
+**Output:** false
+
+**Example 3:**
+
+**Input:** root = \[]
+**Output:** true
+
+**Constraints:**
+
+-   The number of nodes in the tree is in the range `[0, 5000]`.
+-   `-104 <= Node.val <= 104`
+
+[Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
+
+> Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
+
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
+
+**Example:**
+
+Given the sorted array: \[-10,-3,0,5,9],
+
+One possible answer is: \[0,-3,9,-10,null,5], which represents the following height balanced BST:
+
+      0
+     / \\
+
+\-3 9
+/ /
+\-10 5
+
+[Source](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)# Delete Node in a BST
+
+> Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
+
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+
+Basically, the deletion can be divided into two stages:
+
+1.  Search for a node to remove.
+2.  If the node is found, delete the node.
+
+**Follow up:** Can you solve it with time complexity `O(height of tree)`?
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
+
+**Input:** root = \[5,3,6,2,4,null,7], key = 3
+**Output:** \[5,4,6,2,null,null,7]
+**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
+One valid answer is \[5,4,6,2,null,null,7], shown in the above BST.
+Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also accepted.
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
+
+**Example 2:**
+
+**Input:** root = \[5,3,6,2,4,null,7], key = 0
+**Output:** \[5,3,6,2,4,null,7]
+**Explanation:** The tree does not contain a node with value = 0.
+
+**Example 3:**
+
+**Input:** root = \[], key = 0
+**Output:** \[]
+
+**Constraints:**
+
+-   The number of nodes in the tree is in the range `[0, 104]`.
+-   `-105 <= Node.val <= 105`
+-   Each node has a **unique** value.
+-   `root` is a valid binary search tree.
+-   `-105 <= key <= 105`
+
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
+![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
+
+```javascript
+/**
+ * @param {number[][]} intervals
+ * @return {number}
+ */
+const minMeetingRooms = function (intervals) {
+    const len = intervals.length;
+    const starts = new Array(len);
+    const ends = new Array(len);
+    for (let i = 0; i < len; i++) {
+        starts[i] = intervals[i][0];
+        ends[i] = intervals[i][1];
+    }
+    starts.sort((a, b) => a - b);
+    ends.sort((a, b) => a - b);
+    let rooms = 0;
+    let endsIdx = 0;
+    for (let i = 0; i < len; i++) {
+        if (starts[i] < ends[endsIdx]) rooms++;
+        else endsIdx++;
+    }
+    return rooms;
+};
+```
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-)
