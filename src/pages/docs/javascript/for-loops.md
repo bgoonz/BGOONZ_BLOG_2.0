@@ -3,7 +3,7 @@ title: Js-Loops
 weight: 0
 excerpt: lorem-ipsum
 seo:
-  title: ''
+  title: 'Js-Loops'
   description: ''
   robots: []
   extra: []
