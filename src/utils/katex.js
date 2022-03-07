@@ -3,43 +3,43 @@
 
 const macros = {
   // Infinitesimal differential (used in derivatives and integrals)
-  '\\dif': `\\mathrm d`,
+  '\\dif' : `\\mathrm d`,
   // Vector
-  '\\vec': `{\\boldsymbol{#1}}`,
+  '\\vec' : `{\\boldsymbol{#1}}`,
   // Matrix
-  '\\mat': `{\\boldsymbol{#1}}`,
+  '\\mat' : `{\\boldsymbol{#1}}`,
   // Real line
-  '\\reals': `{\\mathbb{R}}`,
+  '\\reals' : `{\\mathbb{R}}`,
   // Complex plane
-  '\\comps': `{\\mathbb{C}}`,
+  '\\comps' : `{\\mathbb{C}}`,
   // Integers
-  '\\ints': `{\\mathbb{Z}}`,
+  '\\ints' : `{\\mathbb{Z}}`,
   // Expectation value
-  '\\expec': `\\mathbb{E}`,
+  '\\expec' : `\\mathbb{E}`,
   // Variance
-  '\\var': `\\operatorname{var}`,
+  '\\var' : `\\operatorname{var}`,
   // Matrix diagonal
-  '\\diag': `\\operatorname{diag}`,
+  '\\diag' : `\\operatorname{diag}`,
   // Unit/identity matrix
-  '\\unity': `\\mat{\\mathbb{I}}`,
+  '\\unity' : `\\mat{\\mathbb{I}}`,
   // Used in equations to hide non-essential constants
-  '\\const': `\\text{const}`,
+  '\\const' : `\\text{const}`,
   // Absolute value
-  '\\abs': `\\left|#1\\right|`,
+  '\\abs' : `\\left|#1\\right|`,
   // Adaptive parentheses
-  '\\paren': `\\mathopen{}\\left(#1\\right)\\mathclose{}`,
+  '\\paren' : `\\mathopen{}\\left(#1\\right)\\mathclose{}`,
   // Adaptive brackets
-  '\\brkt': `\\mathopen{}\\left[#1\\right]\\mathclose{}`,
+  '\\brkt' : `\\mathopen{}\\left[#1\\right]\\mathclose{}`,
   // Adaptive curly brackets
-  '\\cbrkt': `\\mathopen{}\\left\\{#1\\right\\}\\mathclose{}`
+  '\\cbrkt' : `\\mathopen{}\\left\\{#1\\right\\}\\mathclose{}`
 };
 
-for ( let index = `A`.charCodeAt(); index <= `Z`.charCodeAt(); index++ ) {
-  const letter = String.fromCharCode( index );
+for (let index = `A`.charCodeAt(); index <= `Z`.charCodeAt(); index++) {
+  const letter = String.fromCharCode(index);
   // Caligraphic letters
-  macros[ `\\${letter}cal` ] = `\\mathcal{${letter}}`;
+  macros[`\\${letter}cal`] = `\\mathcal{${letter}}`;
   // Blackboard bold letters
-  macros[ `\\${letter}bb` ] = `\\mathbb{${letter}}`;
+  macros[`\\${letter}bb`] = `\\mathbb{${letter}}`;
 }
 
 module.exports = macros;

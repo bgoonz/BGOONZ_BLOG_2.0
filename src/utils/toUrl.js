@@ -2,11 +2,9 @@ import _ from 'lodash';
 
 import getPage from './getPage';
 
+export default function toUrl(pages, pagePath) {
 
-
-export default function toUrl( pages, pagePath ) {
-
-  if ( _.startsWith( pagePath, '#' ) ) {
+  if (_.startsWith(pagePath, '#')) {
 
     return pagePath;
 
@@ -14,18 +12,15 @@ export default function toUrl( pages, pagePath ) {
 
     // remove extension
 
-    pagePath = pagePath.replace( /\.\w+$/, '' );
+    pagePath = pagePath.replace(/\.\w+$/, '');
 
-    const page = getPage( pages, pagePath );
+    const page = getPage(pages, pagePath);
 
-    if ( !page ) {
+    if (!page) {
 
-      throw new Error( 'could not find page with path: ' + pagePath );
-
+      throw new Error('could not find page with path: ' + pagePath);
     }
 
     return page.url;
-
   }
-
 }
