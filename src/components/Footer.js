@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
     return (
       <footer id="colophon" className="site-footer outer">
         <div>
-          <table cellPadding={0} cellSpacing={0} border={0}>
+          <table id="footer-search" cellPadding={0} cellSpacing={0} border={0}>
             <tbody>
               <tr>
                 <td
@@ -25,7 +25,6 @@ export default class Footer extends React.Component {
                     style={{
                       fontFamily: 'Arial, Helvetica, sans-serif',
                       fontSize: '7.5pt',
-                      margin: auto
                     }}
                   >
                     <tbody>
