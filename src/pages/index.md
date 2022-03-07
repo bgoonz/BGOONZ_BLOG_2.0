@@ -214,7 +214,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-         <br><iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   
+         <br><iframe sandbox="allow-scripts" 
       src="https://random-static-html-deploys.netlify.app/"
       class="block-content" width="100%  width="1200px!important"
       height="1000px!important"> </iframe>
@@ -227,19 +227,19 @@ sections:
     image_position: right
     content: >
       # ***What I've been working on lately:*** ## Web Dev Utilitiy Tools
-        <br><iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+        <br><iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
-         <br><iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+         <br><iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
-        <br> <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% 
+        <br> <iframe sandbox="allow-scripts"  class="block-content" width="100% 
       width="1200px!important" height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -251,7 +251,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: >
-      ### To⬆️ol Showcase <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content"
+      ### To⬆️ol Showcase <iframe sandbox="allow-scripts"  class="block-content"
       width="100%  width="1200px" height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
