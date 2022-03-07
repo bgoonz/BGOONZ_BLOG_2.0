@@ -1,7 +1,7 @@
 ---
 title: const
 weight: 0
-excerpt: Constants are block-scoped, much like variables declared using the let keyword. The value of a constant cant be changed through reassignment, and it can't be redeclared.
+excerpt: Constants are block-scoped, much like variables declared using the let keyword. The value of a constant cant be changed through reassignment, and it cant be redeclared.
 seo:
     title: 'const'
     description: 'Constants are block-scoped, much like variables declared using the let keyword. The value of a constant cant be changed through reassignment, and it can't be redeclared.'
