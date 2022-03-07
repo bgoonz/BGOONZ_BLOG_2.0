@@ -3,7 +3,7 @@ title: Clean Code
 weight: 0
 excerpt: Clean Code
 seo:
-    title: ''
+    title: 'Clean Code'
     description: ''
     robots: []
     extra: []
