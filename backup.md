@@ -45,7 +45,7 @@ sections:
                 https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
             image: images/smiling-maple.png
           - content: |
-                
+
             actions:
                 - label: Learn More
                   url: /docs/tools

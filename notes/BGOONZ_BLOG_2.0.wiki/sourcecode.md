@@ -535,7 +535,6 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-
                 <div>
                     <center>
                         <br />
@@ -689,7 +688,6 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-
             </footer>
         );
     }
