@@ -62,7 +62,7 @@ sections:
         actions: []
         type: grid_item
         title: Beginner Guide React
-        image: images/successful-panda.gif
+        image: images/react.png
       - title_url: 'https://bgoonz-blog.netlify.app/docs/javascript/'
         image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
