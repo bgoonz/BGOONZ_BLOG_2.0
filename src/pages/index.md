@@ -213,9 +213,8 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"
-      src="https://random-static-html-deploys.netlify.app/"
-      class="block-content" width="100%  width="1200px!important"
+      <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" src="https://random-static-html-deploys.netlify.app/"
+      class="block-content"  width="1200px!important"
       height="1000px!important"> </iframe>
     actions: []
     type: section_content
@@ -224,37 +223,24 @@ sections:
     image_alt: animated gif
     image_position: right
     content: >
-      # ***What I've been working on lately:*** ## Web Dev Utilitiy Tools
-      <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   
-      class="block-content" width="100% width="1200px!important"
-      height="1000px!important"
-        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   
-      class="block-content" width="100% width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"   
-      class="block-content" width="100% width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    ## Web Dev Utilitiy Tools
+
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="1200px!important" height="1000px!important" src="https://web-dev-utility-tools-bgoonz.netlify.app/"></iframe>
+        
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="1200px!important"  height="1000px!important" src="https://cheatsheets-42.netlify.app/"></iframe>
+
+        <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" class="block-content" width="1200px!important" height="1000px!important" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"></iframe>
     actions: []
     type: section_content
   - section_id: tools
-    image_alt: lorem-ipsum
+    image_alt: web audio daw
     image_position: left
     content: >
-      ### To⬆️ol Showcase <iframe sandbox="allow-scripts" style="resize:both;
-      overflow:scroll;"    class="block-content" width="100%
-      width="1200px!important" height="1000px!important"
-        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    ### Tool Showcase 
+    
+     <iframe sandbox="allow-scripts" style="resize:both;
+    overflow:scroll;" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/" class="block-content" width="1200px!important" height="1000px!important"></iframe>
+
     actions: []
     type: section_content
     title: Tools Showcase
