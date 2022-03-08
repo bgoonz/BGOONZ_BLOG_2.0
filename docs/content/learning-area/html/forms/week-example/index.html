@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Week example</title>
-        <style>
-            div {
-                margin-bottom: 10px;
-                position: relative;
-            }
 
-            input[type='number'] {
-                width: 100px;
-            }
+<head>
+  <meta charset="utf-8" />
+  <title>Week example</title>
+  <style>
+    div {
+      margin-bottom: 10px;
+      position: relative;
+    }
 
-            input + span {
-                padding-right: 30px;
-            }
+    input[type='number'] {
+      width: 100px;
+    }
 
-            input:invalid + span:after {
-                position: absolute;
-                content: '✖';
-                padding-left: 5px;
-            }
+    input+span {
+      padding-right: 30px;
+    }
 
-            input:valid + span:after {
-                position: absolute;
-                content: '✓';
-                padding-left: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <form>
-            <div>
-                <label for="week">What week would you like to start?</label>
-                <input id="week" type="week" name="week" min="2017-W01" max="2017-W52" required />
-                <span class="validity"></span>
-            </div>
-            <div>
-                <input type="submit" value="Submit form" />
-            </div>
-        </form>
-    </body>
+    input:invalid+span:after {
+      position: absolute;
+      content: '✖';
+      padding-left: 5px;
+    }
+
+    input:valid+span:after {
+      position: absolute;
+      content: '✓';
+      padding-left: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <form>
+    <div>
+      <label for="week">What week would you like to start?</label>
+      <input id="week" type="week" name="week" min="2017-W01" max="2017-W52" required />
+      <span class="validity"></span>
+    </div>
+    <div>
+      <input type="submit" value="Submit form" />
+    </div>
+  </form>
+</body>
+
 </html>

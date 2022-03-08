@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Flexbox example</title>
-        <style>
-            html {
-                font-family: sans-serif;
-            }
 
-            section {
-                width: 70%;
-                height: 300px;
-                margin: 20px auto;
-                background: purple;
-                display: flex;
-            }
+<head>
+  <meta charset="utf-8" />
+  <title>Flexbox example</title>
+  <style>
+    html {
+      font-family: sans-serif;
+    }
 
-            div {
-                color: white;
-                background: orange;
-                flex: 1;
-                margin-right: 10px;
-                text-shadow: 1px 1px 1px black;
-            }
+    section {
+      width: 70%;
+      height: 300px;
+      margin: 20px auto;
+      background: purple;
+      display: flex;
+    }
 
-            div:last-child {
-                margin-right: 0;
-            }
+    div {
+      color: white;
+      background: orange;
+      flex: 1;
+      margin-right: 10px;
+      text-shadow: 1px 1px 1px black;
+    }
 
-            section,
-            div {
-                border: 5px solid rgba(0, 0, 0, 0.85);
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <section>
-            <div>This is a box</div>
-            <div>This is a box</div>
-            <div>This is a box</div>
-        </section>
+    div:last-child {
+      margin-right: 0;
+    }
 
-        <button class="create">Create box</button>
-        <button class="reset">Reset demo</button>
+    section,
+    div {
+      border: 5px solid rgba(0, 0, 0, 0.85);
+      padding: 10px;
+    }
 
-        <script>
-            var section = document.querySelector('section');
-            var createBtn = document.querySelector('.create');
-            var resetBtn = document.querySelector('.reset');
+  </style>
+</head>
 
-            function createBox() {
-                var box = document.createElement('div');
-                box.textContent = 'This is a box';
-                section.appendChild(box);
-            }
+<body>
+  <section>
+    <div>This is a box</div>
+    <div>This is a box</div>
+    <div>This is a box</div>
+  </section>
 
-            createBtn.onclick = createBox;
+  <button class="create">Create box</button>
+  <button class="reset">Reset demo</button>
 
-            resetBtn.onclick = function () {
-                while (section.firstChild) {
-                    section.removeChild(section.firstChild);
-                }
-                createBox();
-                createBox();
-                createBox();
-            };
-        </script>
-    </body>
+  <script>
+    var section = document.querySelector( 'section' );
+    var createBtn = document.querySelector( '.create' );
+    var resetBtn = document.querySelector( '.reset' );
+
+    function createBox() {
+      var box = document.createElement( 'div' );
+      box.textContent = 'This is a box';
+      section.appendChild( box );
+    }
+
+    createBtn.onclick = createBox;
+
+    resetBtn.onclick = function () {
+      while ( section.firstChild ) {
+        section.removeChild( section.firstChild );
+      }
+      createBox();
+      createBox();
+      createBox();
+    };
+
+  </script>
+</body>
+
 </html>

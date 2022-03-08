@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>HTML5 controls: Task 2</title>
-        <link rel="stylesheet" href="../styles.css" />
-        <style>
-            body {
-                background-color: #fff;
-                color: #333;
-                font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-                padding: 1em;
-                margin: 0;
-            }
 
-            * {
-                box-sizing: border-box;
-            }
-        </style>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML5 controls: Task 2</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-        <style class="editable"></style>
-    </head>
+    * {
+      box-sizing: border-box;
+    }
 
-    <body>
-        <section class="preview"></section>
+  </style>
 
-        <textarea class="playable playable-css" style="height: 130px"> </textarea>
+  <style class="editable"></style>
+</head>
 
-        <textarea class="playable playable-html" style="height: 220px">
+<body>
+  <section class="preview"></section>
+
+  <textarea class="playable playable-css" style="height: 130px"> </textarea>
+
+  <textarea class="playable playable-html" style="height: 220px">
 <form>
   <ul>
     <li>
@@ -38,27 +40,28 @@
     </li>
   </ul>
 </form>
-    </textarea
-        >
+    </textarea>
 
-        <div class="playable-buttons">
-            <input id="reset" type="button" value="Reset" />
-        </div>
-    </body>
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Reset" />
+  </div>
+</body>
 
-    <script>
-        function setSliderOutput() {
-            const invite = document.querySelector('#max-invite');
-            const output = document.querySelector('.invite-output');
+<script>
+  function setSliderOutput() {
+    const invite = document.querySelector( '#max-invite' );
+    const output = document.querySelector( '.invite-output' );
 
-            output.textContent = invite.value;
+    output.textContent = invite.value;
 
-            invite.addEventListener('input', function () {
-                output.textContent = invite.value;
-            });
-        }
+    invite.addEventListener( 'input', function () {
+      output.textContent = invite.value;
+    } );
+  }
 
-        setInterval(setSliderOutput, 200);
-    </script>
-    <script src="../playable.js"></script>
+  setInterval( setSliderOutput, 200 );
+
+</script>
+<script src="../playable.js"></script>
+
 </html>
