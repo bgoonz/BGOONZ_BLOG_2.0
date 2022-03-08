@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.every()
+title: Array.every()
 weight: 0
 excerpt:
 seo:

@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.forEach()
+title: Array.forEach()
 weight: 0
 excerpt:
 seo:

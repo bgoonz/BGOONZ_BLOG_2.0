@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.reduce()
+title: Array.reduce()
 weight: 0
 excerpt: Javascript articles  and docs
 seo:
