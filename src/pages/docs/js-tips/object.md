@@ -192,7 +192,7 @@ When modifying prototypes with hooks, pass `this` and the arguments (the call st
     }
 
 Since JavaScript doesn't exactly have sub-class objects, prototype is a useful workaround to make a "base class" object of certain functions that act as objects. For example:
-
+```js
     var Person = function(name) {
       this.name = name;
       this.canTalk = true;
@@ -258,3 +258,4 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
     // Hi, I am Mike
 
     mime.greet();
+```
