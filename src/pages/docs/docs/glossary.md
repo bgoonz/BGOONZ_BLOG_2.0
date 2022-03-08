@@ -351,44 +351,6 @@ For example, the color `#8921F2` (also described as `rgb(137, 33, 242)` or `hsl(
 
 As you can see, the color without an alpha channel completely blocks the background text, while the box with the alpha channel leaves it visible through the purple background color.
 
-#### See also
-
--   _interwiki("wikipedia", "Alpha compositing"_) on Wikipedia
--   _interwiki("wikipedia", "RGBA color model"_) on Wikipedia
--   _interwiki("wikipedia", "Channel (digital image)"_) on Wikipedia
--   [CSS color](/en-US/docs/Web/CSS/CSS_Color)
-
----
-
-## Term: ALPN
-
--   ALPN
--   Draft
--   Glossary
--   NeedsContent
--   TLS
-
----
-
-> **Application-Layer _Glossary("Protocol"_) Negotiation** (**ALPN**) is a _Glossary("TLS"_) extension which indicates what application layer protocol is negotiating the encrypted connection without requiring additional round trips.
-
-| Protocol                                | Identification sequence                                |
-| --------------------------------------- | ------------------------------------------------------ |
-| _Glossary("HTTP"_)/1.1                  | `0x68 0x74 0x74 0x70 0x2F 0x31 0x2E 0x31` ("http/1.1") |
-| _Glossary("HTTP 2", "HTTP/2"_)          | `0x68 0x32` ("h2")                                     |
-| HTTP/2 over cleartext _Glossary("TCP"_) | `0x68 0x32 0x63` ("h2c")                               |
-
-## Specifications
-
-| Specification | Status   | Notes               |
-| ------------- | -------- | ------------------- |
-| _RFC(7301_)   | IETF RFC | Initial definition. |
-
-#### See also
-
--   [IANA registered ALPN identifiers](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#alpn-protocol-ids)
-
----
 
 ## Term: API
 
@@ -14293,20 +14255,6 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 > **XHTML** is a term that was historically used to describe HTML documents written to conform with _Glossary("XML"_) syntax rules.
 
-#### See also
-
--   [XHTML](/en-US/docs/Web/Guide/HTML/XHTML)
-
----
-
-## Term: XInclude
-
--   CodingScripting
--   Glossary
-
----
-
-> [XML Inclusions (XInclude)](https://www.w3.org/TR/xinclude/#text-included-items) is a W3C Recommendation to allow inclusion of XML more different sources in a more convenient fashion than XML external entities. When used in conjunction with XPointer (Firefox supports a subset of it, and is used in the code sample below), XInclude can also target just specific portions of a document for inclusion. Firefox does not support it natively, but the following function aims to allow its use with documents passed into it.
 
 ### Code sample
 
