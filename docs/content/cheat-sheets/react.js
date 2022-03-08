@@ -176,7 +176,8 @@ class Component extends React.Component {
 
     return ( <
       div > {
-        /* Comment goes here */ }
+        /* Comment goes here */
+      }
       Hello, {
         this.props.name
       }!
