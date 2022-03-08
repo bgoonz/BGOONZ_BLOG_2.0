@@ -25,7 +25,7 @@ sections:
         actions:
           - label: Get Started
             url: 'https://bgoonz-blog.netlify.app/docs/data-structures/big-o/'
-            style: link
+            style: secondary
         title: A Quick Guide To Big O
         image: images/bigo.jpg
         title_url: >-
@@ -38,7 +38,7 @@ sections:
           - label: View Posts
             url: >-
               https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-            style: link
+            style: secondary
         image_alt: python
         title: Python Guide
         title_url: >-
@@ -48,7 +48,7 @@ sections:
         actions:
           - label: Learn More
             url: /docs/tools
-            style: link
+            style: secondary
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/27697c1a901d3b3673aeb98edae4d2ae (2).png
@@ -141,9 +141,9 @@ sections:
         image_alt: nj-devils
         content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
         actions:
-          - label: lorem-ipsum
+          - label: Interests
             url: '#'
-            style: link
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
@@ -182,9 +182,9 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
+          - label: oneDrive
             url: '#'
-            style: link
+            style: secondary
             icon_class: dev
             new_window: false
             no_follow: false
