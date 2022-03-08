@@ -1,17 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
-
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
-
 export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
-
-                <br />
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -84,15 +79,8 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
-
                 <div>
                     <div id="sb-search-example">
-                        {/* style={{
-                        position: 'fixed',
-                        top: '20px',
-                        border: 0,
-                        left: '100px',
-                    }} */}
                         <div className="sb-search-icon" id="myCustomSearchButtonID">
                             <i className="sb-icon"></i>
                             <p>Search</p>
@@ -101,8 +89,8 @@ export default class Header extends React.Component {
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
-                            width={40}
-                            height={40}
+                            width={30}
+                            height={30}
                             viewBox="0 0 250 250"
                             style={{
                                 zIndex: 100000,
@@ -110,7 +98,7 @@ export default class Header extends React.Component {
                                 color: '#fff',
                                 position: 'fixed',
                                 top: '0px',
-                                border: 0,
+                                border: 1,
                                 left: '0px',
                                 transform: 'scale(-1.5, 1.5)'
                             }}
