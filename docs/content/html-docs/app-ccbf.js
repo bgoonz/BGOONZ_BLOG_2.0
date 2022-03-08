@@ -1649,7 +1649,14 @@
                         var n, r;
                         h(this, e);
                         for (var o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-                        return (n = r = v(this, t.call.apply(t, [this].concat(a)))), (r.state = { context: r.getContext(), refs: { unlisten: null } }), v(r, n);
+                        return (
+                            (n = r = v(this, t.call.apply(t, [this].concat(a)))),
+                            (r.state = {
+                                context: r.getContext(),
+                                refs: { unlisten: null }
+                            }),
+                            v(r, n)
+                        );
                     }
                     return (
                         m(e, t),

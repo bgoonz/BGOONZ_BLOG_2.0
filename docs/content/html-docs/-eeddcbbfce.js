@@ -3328,7 +3328,15 @@
                                                 if (i || t) {
                                                     var r = n(this.__wrapped__),
                                                         u = (r.__actions__ = gu(this.__actions__));
-                                                    return u.push({ func: e, args: arguments, thisArg: n }), (r.__chain__ = t), r;
+                                                    return (
+                                                        u.push({
+                                                            func: e,
+                                                            args: arguments,
+                                                            thisArg: n
+                                                        }),
+                                                        (r.__chain__ = t),
+                                                        r
+                                                    );
                                                 }
                                                 return e.apply(n, _t([this.value()], arguments));
                                             });
@@ -4405,7 +4413,14 @@
                                         if (!i && c) {
                                             t = p ? t : new Lr(this);
                                             var _ = n.apply(t, o);
-                                            return _.__actions__.push({ func: to, args: [l], thisArg: void 0 }), new Sr(_, v);
+                                            return (
+                                                _.__actions__.push({
+                                                    func: to,
+                                                    args: [l],
+                                                    thisArg: void 0
+                                                }),
+                                                new Sr(_, v)
+                                            );
                                         }
                                         return h && p ? n.apply(this, o) : ((_ = this.thru(l)), h ? (e ? _.value()[0] : _.value()) : _);
                                     });
