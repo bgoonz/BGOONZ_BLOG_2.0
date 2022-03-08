@@ -78,7 +78,7 @@ sections:
         actions: []
         type: grid_item
         title: Web Audio Daw
-        image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
+        image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
