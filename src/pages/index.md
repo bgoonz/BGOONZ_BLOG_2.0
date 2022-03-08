@@ -51,7 +51,7 @@ sections:
             style: link
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/panoramic-owl.png
+        image: images/27697c1a901d3b3673aeb98edae4d2ae (2).png
       - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
         image_alt: img of dtw
         content: |
