@@ -184,7 +184,7 @@ child.disconnect();                                           // Close the IPC c
 child_process.spawn(command, [args], [options]);              // Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array.
 child_process.exec(command, [options], callback);             // Runs a command in a shell and buffers the output.
 child_process.execFile(file, [args], [options], [callback]);  // Runs a command in a shell and buffers the output.
-child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in. 
+child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in.
 
 
 /* *******************************************************************************************
@@ -322,7 +322,7 @@ fs.fchmodSync(fd, mode);                // Synchronous fchmod.
 fs.lchmod(path, mode, callback);        // Asynchronous lchmod. No arguments other than a possible exception are given to the completion callback.
 fs.lchmodSync(path, mode);              // Synchronous lchmod.
 
-fs.stat(path, callback);                // Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. 
+fs.stat(path, callback);                // Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object.
 fs.statSync(path);                      // Synchronous stat. Returns an instance of fs.Stats.
 fs.lstat(path, callback);               // Asynchronous lstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. lstat() is identical to stat(), except that if path is a symbolic link, then the link itself is stat-ed, not the file that it refers to.
 fs.lstatSync(path);                     // Synchronous lstat. Returns an instance of fs.Stats.
@@ -425,7 +425,7 @@ server = http.createServer([requestListener]);                 // Returns a new 
 server.listen(port, [hostname], [backlog], [callback]);        // Begin accepting connections on the specified port and hostname.
 server.listen(path, [callback]);                               // Start a UNIX socket server listening for connections on the given path.
 server.listen(handle, [callback]);                             // The handle object can be set to either a server or socket (anything with an underlying _handle member), or a {fd: <n>} object.
-server.close([callback]);                                      // Stops the server from accepting new connections. 
+server.close([callback]);                                      // Stops the server from accepting new connections.
 server.setTimeout(msecs, callback);                            // Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs.
 
 server.maxHeadersCount;  // Limits maximum incoming headers count, equal to 1000 by default. If set to 0 - no limit will be applied.
@@ -467,7 +467,7 @@ response.headersSent;                                          // Boolean (read-
 response.sendDate;                                             // When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true.
 
 response.on('close', function () { });  // Indicates that the underlying connection was terminated before response.end() was called or able to flush.
-response.on('finish', function() { });  // Emitted when the response has been sent. 
+response.on('finish', function() { });  // Emitted when the response has been sent.
 
 message.httpVersion;                    // In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server.
 message.headers;                        // The request/response headers object.
@@ -573,7 +573,7 @@ buf.write(string, [offset], [length], [encoding]);                  // Writes st
 buf.toString([encoding], [start], [end]);                           // Decodes and returns a string from buffer data encoded with encoding (defaults to 'utf8') beginning at start (defaults to 0) and ending at end (defaults to buffer.length).
 buf.toJSON();                                                       // Returns a JSON-representation of the Buffer instance, which is identical to the output for JSON Arrays
 buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);  // Does copy between buffers. The source and target regions can be overlapped
-buf.slice([start], [end]);                                          // Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.   
+buf.slice([start], [end]);                                          // Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.
 buf.fill(value, [offset], [end]);                                   // Fills the buffer with the specified value
 buf[index];                                                         // Get and set the octet at index
 buf.length;                                                         // The size of the buffer in bytes, Note that this is not necessarily the size of the contents
@@ -582,8 +582,6 @@ buffer.INSPECT_MAX_BYTES;                                           // How many 
 
 
 ```
-
-
 
 Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
 
@@ -665,7 +663,6 @@ Many of those established over time as popular options. Here is a non-comprehens
 -   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 -   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
-
 Node.js can be installed in different ways. This post highlights the most common and convenient ones.
 
 Official packages for all the major platforms are available at [https://nodejs.dev/download/](https://nodejs.dev/download/).
@@ -719,7 +716,6 @@ The following concepts are also key to understand asynchronous programming, whic
 
 # Differences between Node.js and the Browser
 
-
 Both the browser and Node.js use JavaScript as their programming language.
 
 Building apps that run in the browser is a completely different thing than building a Node.js application.
@@ -747,7 +743,6 @@ You can use Babel to transform your code to be ES5-compatible before shipping it
 Another difference is that Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
 
 In practice, this means that for the time being you use `require()` in Node.js and `import` in the browser.
-
 
 # The V8 JavaScript Engine
 
@@ -795,9 +790,7 @@ Our applications can now run for hours inside a browser, rather than being just 
 
 In this _new world_, compiling JavaScript makes perfect sense because while it might take a little bit more to have the JavaScript _ready_, once done it's going to be much more performant than purely interpreted code.
 
-
 # Run Node.js scripts from the command line
-
 
 The usual way to run a Node.js program is to run the `node` globally available command (once you install Node.js) and pass the name of the file you want to execute.
 
@@ -829,24 +822,25 @@ chmod u+x app.js
 
 While running the command, make sure you are in the same directory which contains the `app.js` file.
 
-
 # How to exit from a Node.js program
 
-
-
 ---
+
 created: 2021-11-27T11:28:53 (UTC -05:00)
 tags: []
 source: https://nodejs.dev/learn
-author: 
+author:
+
 ---
 
 # How to exit from a Node.js program
 
 > ## Excerpt
+>
 > Learn how to terminate a Node.js app in the best possible way
 
 ---
+
 There are various ways to terminate a Node.js application.
 
 When running a program in the console you can close it with `ctrl-C`, but what we want to discuss here is programmatically exiting.
@@ -867,7 +861,7 @@ process.exit(1)
 
 By default the exit code is `0`, which means success. Different exit codes have different meaning, which you might want to use in your own system to have the program communicate to other programs.
 
-You can read more on exit codes at [https://nodejs.org/api/process.html#process\_exit\_codes](https://nodejs.org/api/process.html#process_exit_codes)
+You can read more on exit codes at [https://nodejs.org/api/process.html#process_exit_codes](https://nodejs.org/api/process.html#process_exit_codes)
 
 You can also set the `process.exitCode` property:
 
@@ -889,7 +883,7 @@ const app \= express()
 
 app.get('/', (req, res) \=> {
 
- res.send('Hi!')
+res.send('Hi!')
 
 })
 
@@ -911,7 +905,7 @@ const app \= express()
 
 app.get('/', (req, res) \=> {
 
- res.send('Hi!')
+res.send('Hi!')
 
 })
 
@@ -919,11 +913,11 @@ const server \= app.listen(3000, () \=> console.log('Server ready'))
 
 process.on('SIGTERM', () \=> {
 
- server.close(() \=> {
+server.close(() \=> {
 
- console.log('Process terminated')
+console.log('Process terminated')
 
- })
+})
 
 })
 
