@@ -5959,7 +5959,7 @@ The end result is that the addon only uses the exported C APIs. As a result, it 
 
 When using `node-addon-api` instead of the C APIs, start with the API [docs](https://github.com/nodejs/node-addon-api#api-documentation) for `node-addon-api`.
 
-The [Node-API Resource](https://nodejs.github.io/node-addon-examples/) offers an excellent orientation and tips for developers just getting started with Node-API and `node-addon-api`.
+The [Node-API Resource](https://nodejs.github.io/node-addon-examples/) offers an excellent orientation and tips for developers just getting started with Node-API and `node-addon-api`.
 
 ### Implications of ABI stability[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_implications-of-abi-stability)
 
@@ -44722,7 +44722,7 @@ In some cases, attaching a listener for the `'readable'` event will cause some a
 
 In general, the `readable.pipe()` and `'data'` event mechanisms are easier to understand than the `'readable'` event. However, handling `'readable'` might result in increased throughput.
 
-If both `'readable'` and [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) are used at the same time, `'readable'` takes precedence in controlling the flow, i.e. `'data'` will be emitted only when [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) is called. The `readableFlowing` property would become `false`. If there are `'data'` listeners when `'readable'` is removed, the stream will start flowing, i.e. `'data'` events will be emitted without calling `.resume()`.
+If both `'readable'` and [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) are used at the same time, `'readable'` takes precedence in controlling the flow, i.e. `'data'` will be emitted only when [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) is called. The `readableFlowing` property would become `false`. If there are `'data'` listeners when `'readable'` is removed, the stream will start flowing, i.e. `'data'` events will be emitted without calling `.resume()`.
 
 ###### Event: `'resume'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-resume)
 

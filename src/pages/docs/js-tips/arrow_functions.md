@@ -369,7 +369,7 @@ However, this can be amended by putting the line break after the arrow or using 
 ### Parsing order
 
 Although the arrow in an arrow function is not an operator, arrow functions have special parsing rules that interact differently with [operator precedence](../operators/operator_precedence) compared to regular functions.
-
+```js
     let callback;
 
     callback = callback || function() {}; // ok
@@ -378,11 +378,11 @@ Although the arrow in an arrow function is not an operator, arrow functions have
     // SyntaxError: invalid arrow-function arguments
 
     callback = callback || (() => {});    // ok
-
+```
 ## Examples
 
 ### Basic usage
-
+```js
     // An empty arrow function returns undefined
     let empty = () => {};
 
@@ -424,72 +424,4 @@ Although the arrow in an arrow function is not an operator, arrow functions have
         console.log('I happen later');
       }, 1);
     }, 1);
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
-
-`Arrow_functions`
-
-45
-
-12
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-No
-
-32
-
-10
-
-45
-
-45
-
-22
-
-\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.", "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions."\]
-
-32
-
-10
-
-5.0
-
-`trailing_comma`
-
-58
-
-12
-
-52
-
-No
-
-45
-
-10
-
-58
-
-58
-
-52
-
-43
-
-10
-
-7.0
-
-## See also
-
--   ["ES6 In Depth: Arrow functions" on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+```

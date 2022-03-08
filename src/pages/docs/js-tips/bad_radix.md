@@ -55,10 +55,3 @@ The most common radixes:
     (13).toString(8);     // "15"     (octal)
     (0x42).toString(10);  // "66"     (decimal)
     (100000).toString(16) // "186a0"  (hexadecimal)
-
-## See also
-
--   [`Number.prototype.toString()`](../global_objects/number/tostring)
--   [`BigInt.prototype.toString()`](../global_objects/bigint/tostring)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix</a>
