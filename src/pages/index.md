@@ -43,7 +43,7 @@ sections:
         title: Python Guide
         title_url: >-
           https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-        image: images/smiling-maple.png
+        image: images/py.jpg
       - content: ''
         actions:
           - label: Learn More
