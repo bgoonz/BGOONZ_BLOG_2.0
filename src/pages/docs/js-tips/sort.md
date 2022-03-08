@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.sort()
+title: Array.sort()
 weight: 0
 excerpt: Javascript articles  and docs
 seo:

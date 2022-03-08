@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.filter()
+title: Array.filter()
 weight: 0
 excerpt:
 seo:
