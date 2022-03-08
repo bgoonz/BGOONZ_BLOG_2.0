@@ -351,7 +351,6 @@ For example, the color `#8921F2` (also described as `rgb(137, 33, 242)` or `hsl(
 
 As you can see, the color without an alpha channel completely blocks the background text, while the box with the alpha channel leaves it visible through the purple background color.
 
-
 ## Term: API
 
 -   CodingScripting
@@ -14254,7 +14253,6 @@ For example, SDK Libraries for AWS are examples of wrappers.
 ---
 
 > **XHTML** is a term that was historically used to describe HTML documents written to conform with _Glossary("XML"_) syntax rules.
-
 
 ### Code sample
 
