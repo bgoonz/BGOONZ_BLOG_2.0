@@ -9,6 +9,8 @@ html {
 iframe {
     overflow: scroll;
     resize: both;
+    width:auto;
+    height:auto;
     border: #000 1px dashed;
     padding: 10px;
     box-shadow: inset 0 0 2px #000;
