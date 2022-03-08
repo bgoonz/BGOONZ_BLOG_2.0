@@ -2533,7 +2533,9 @@
             "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "dependencies": {
                 "bindings": "^1.5.0",
                 "nan": "^2.12.1"
@@ -4235,7 +4237,9 @@
         },
         "node_modules/concat-stream": {
             "version": "1.6.2",
-            "engines": ["node >= 0.8"],
+            "engines": [
+                "node >= 0.8"
+            ],
             "license": "MIT",
             "dependencies": {
                 "buffer-from": "^1.0.0",
@@ -10658,7 +10662,9 @@
             "deprecated": "\"Please update to latest v2.3 or v2.2\"",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "engines": {
                 "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
             }
@@ -12077,7 +12083,9 @@
             "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "engines": {
                 "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
             }
@@ -15558,7 +15566,9 @@
             "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "engines": {
                 "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
             }
@@ -17909,7 +17919,9 @@
             "version": "0.0.7",
             "resolved": "https://registry.npmjs.org/ansi-html/-/ansi-html-0.0.7.tgz",
             "integrity": "sha1-gTWEAhliqenm/QOflA0S9WynhZ4=",
-            "engines": ["node >= 0.8.0"],
+            "engines": [
+                "node >= 0.8.0"
+            ],
             "bin": {
                 "ansi-html": "bin/ansi-html"
             }
@@ -18174,7 +18186,9 @@
             "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "engines": {
                 "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
             }
@@ -28312,7 +28326,9 @@
             "version": "0.0.8",
             "resolved": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz",
             "integrity": "sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==",
-            "engines": ["node >= 0.8.0"],
+            "engines": [
+                "node >= 0.8.0"
+            ],
             "bin": {
                 "ansi-html": "bin/ansi-html"
             }
@@ -28495,7 +28511,9 @@
             "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "dependencies": {
                 "bindings": "^1.5.0",
                 "nan": "^2.12.1"
@@ -29022,7 +29040,9 @@
             "version": "0.0.8",
             "resolved": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz",
             "integrity": "sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==",
-            "engines": ["node >= 0.8.0"],
+            "engines": [
+                "node >= 0.8.0"
+            ],
             "bin": {
                 "ansi-html": "bin/ansi-html"
             }
@@ -29443,7 +29463,9 @@
             "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "engines": {
                 "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
             }
@@ -29930,7 +29952,9 @@
             "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
             "hasInstallScript": true,
             "optional": true,
-            "os": ["darwin"],
+            "os": [
+                "darwin"
+            ],
             "dependencies": {
                 "bindings": "^1.5.0",
                 "nan": "^2.12.1"
