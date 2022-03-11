@@ -15,12 +15,6 @@
     padding-bottom: 9.5em;
     padding-top: 3.75em;
     text-align: center;
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-  0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
 
   .page-title,
@@ -74,7 +68,7 @@
 
 .post-full {
   .post-content {
-    padding: 1.5em 1.5em;
+    padding: 2.5em 1.5em;
   }
 
   .post-meta {
@@ -136,7 +130,7 @@
   }
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 641px) {
   .has-gradient {
     .page-title,
     .post-title {
@@ -165,7 +159,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .post {
     margin-bottom: 4vw;
   }
