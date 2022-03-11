@@ -1,8 +1,8 @@
-import React from 'react';
 import _ from 'lodash';
-
+import React from 'react';
 import { classNames } from '../utils';
 import ActionLink from './ActionLink';
+
 
 export default class Submenu extends React.Component {
     render() {

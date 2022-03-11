@@ -1,7 +1,7 @@
-import React from 'react';
 import _ from 'lodash';
+import React from 'react';
+import { classNames, getPage, htmlToReact, Link, pathJoin, withPrefix } from '../utils';
 
-import { classNames, htmlToReact, pathJoin, getPage, Link, withPrefix } from '../utils';
 
 export default class SectionDocs extends React.Component {
     render() {
