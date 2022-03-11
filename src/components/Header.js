@@ -1,6 +1,6 @@
-import React from 'react';
 import _ from 'lodash';
-import { Link, withPrefix, classNames } from '../utils';
+import React from 'react';
+import { classNames, Link, withPrefix } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
 export default class Header extends React.Component {

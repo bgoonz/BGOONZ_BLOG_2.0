@@ -1,11 +1,10 @@
+import _ from 'lodash';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import _ from 'lodash';
-
-import { withPrefix, attribute } from '../utils';
 import '../sass/main.scss';
-import Header from './Header';
+import { attribute, withPrefix } from '../utils';
 import Footer from './Footer';
+import Header from './Header';
 
 
 export default class Body extends React.Component {
@@ -14,9 +13,8 @@ export default class Body extends React.Component {
             <React.Fragment>
                 <Helmet>
                     <title>
-                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
+                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null) ||
+                            _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
                     </title>
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width, initialScale=1.0" />

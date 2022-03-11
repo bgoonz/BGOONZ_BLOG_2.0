@@ -1,7 +1,7 @@
-import React from 'react';
 import _ from 'lodash';
+import React from 'react';
+import { classNames, Link, withPrefix } from '../utils';
 
-import { Link, withPrefix, classNames } from '../utils';
 
 export default class CtaButtons extends React.Component {
     render() {

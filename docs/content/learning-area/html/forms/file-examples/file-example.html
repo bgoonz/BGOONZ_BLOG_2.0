@@ -1,155 +1,151 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Complete file example</title>
+        <style>
+            html {
+                font-family: sans-serif;
+            }
 
-<head>
-  <title>Complete file example</title>
-  <style>
-    html {
-      font-family: sans-serif;
-    }
+            form {
+                width: 600px;
+                background: #ccc;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid black;
+            }
 
-    form {
-      width: 600px;
-      background: #ccc;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid black;
-    }
+            form ol {
+                padding-left: 0;
+            }
 
-    form ol {
-      padding-left: 0;
-    }
+            form li,
+            div > p {
+                background: #eee;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                list-style-type: none;
+                border: 1px solid black;
+            }
 
-    form li,
-    div>p {
-      background: #eee;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      list-style-type: none;
-      border: 1px solid black;
-    }
+            form img {
+                height: 64px;
+                order: 1;
+            }
 
-    form img {
-      height: 64px;
-      order: 1;
-    }
+            form p {
+                line-height: 32px;
+                padding-left: 10px;
+            }
 
-    form p {
-      line-height: 32px;
-      padding-left: 10px;
-    }
+            form label,
+            form button {
+                background-color: #7f9ccb;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 1px ridge black;
+                font-size: 0.8rem;
+                height: auto;
+            }
 
-    form label,
-    form button {
-      background-color: #7f9ccb;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: 1px ridge black;
-      font-size: 0.8rem;
-      height: auto;
-    }
+            form label:hover,
+            form button:hover {
+                background-color: #2d5ba3;
+                color: white;
+            }
 
-    form label:hover,
-    form button:hover {
-      background-color: #2d5ba3;
-      color: white;
-    }
+            form label:active,
+            form button:active {
+                background-color: #0d3f8f;
+                color: white;
+            }
+        </style>
+    </head>
 
-    form label:active,
-    form button:active {
-      background-color: #0d3f8f;
-      color: white;
-    }
+    <body>
+        <form>
+            <div>
+                <label for="image_uploads">Choose images to upload (PNG, JPG)</label>
+                <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple />
+            </div>
+            <div class="preview">
+                <p>No files currently selected for upload</p>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+        <script>
+            const input = document.querySelector('input');
+            const preview = document.querySelector('.preview');
 
-  </style>
-</head>
+            input.style.opacity = 0;
 
-<body>
-  <form>
-    <div>
-      <label for="image_uploads">Choose images to upload (PNG, JPG)</label>
-      <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple />
-    </div>
-    <div class="preview">
-      <p>No files currently selected for upload</p>
-    </div>
-    <div>
-      <button>Submit</button>
-    </div>
-  </form>
-  <script>
-    const input = document.querySelector( 'input' );
-    const preview = document.querySelector( '.preview' );
+            input.addEventListener('change', updateImageDisplay);
 
-    input.style.opacity = 0;
+            function updateImageDisplay() {
+                while (preview.firstChild) {
+                    preview.removeChild(preview.firstChild);
+                }
 
-    input.addEventListener( 'change', updateImageDisplay );
+                const curFiles = input.files;
+                if (curFiles.length === 0) {
+                    const para = document.createElement('p');
+                    para.textContent = 'No files currently selected for upload';
+                    preview.appendChild(para);
+                } else {
+                    const list = document.createElement('ol');
+                    preview.appendChild(list);
 
-    function updateImageDisplay() {
-      while ( preview.firstChild ) {
-        preview.removeChild( preview.firstChild );
-      }
+                    for (const file of curFiles) {
+                        const listItem = document.createElement('li');
+                        const para = document.createElement('p');
 
-      const curFiles = input.files;
-      if ( curFiles.length === 0 ) {
-        const para = document.createElement( 'p' );
-        para.textContent = 'No files currently selected for upload';
-        preview.appendChild( para );
-      } else {
-        const list = document.createElement( 'ol' );
-        preview.appendChild( list );
+                        if (validFileType(file)) {
+                            para.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
+                            const image = document.createElement('img');
+                            image.src = URL.createObjectURL(file);
 
-        for ( const file of curFiles ) {
-          const listItem = document.createElement( 'li' );
-          const para = document.createElement( 'p' );
+                            listItem.appendChild(image);
+                            listItem.appendChild(para);
+                        } else {
+                            para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
+                            listItem.appendChild(para);
+                        }
 
-          if ( validFileType( file ) ) {
-            para.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
-            const image = document.createElement( 'img' );
-            image.src = URL.createObjectURL( file );
+                        list.appendChild(listItem);
+                    }
+                }
+            }
 
-            listItem.appendChild( image );
-            listItem.appendChild( para );
-          } else {
-            para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
-            listItem.appendChild( para );
-          }
+            // https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+            const fileTypes = [
+                'image/apng',
+                'image/bmp',
+                'image/gif',
+                'image/jpeg',
+                'image/pjpeg',
+                'image/png',
+                'image/svg+xml',
+                'image/tiff',
+                'image/webp',
+                `image/x-icon`
+            ];
 
-          list.appendChild( listItem );
-        }
-      }
-    }
+            function validFileType(file) {
+                return fileTypes.includes(file.type);
+            }
 
-    // https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
-    const fileTypes = [
-      'image/apng',
-      'image/bmp',
-      'image/gif',
-      'image/jpeg',
-      'image/pjpeg',
-      'image/png',
-      'image/svg+xml',
-      'image/tiff',
-      'image/webp',
-      `image/x-icon`
-    ];
-
-    function validFileType( file ) {
-      return fileTypes.includes( file.type );
-    }
-
-    function returnFileSize( number ) {
-      if ( number < 1024 ) {
-        return number + 'bytes';
-      } else if ( number > 1024 && number < 1048576 ) {
-        return ( number / 1024 ).toFixed( 1 ) + 'KB';
-      } else if ( number > 1048576 ) {
-        return ( number / 1048576 ).toFixed( 1 ) + 'MB';
-      }
-    }
-
-  </script>
-</body>
-
+            function returnFileSize(number) {
+                if (number < 1024) {
+                    return number + 'bytes';
+                } else if (number > 1024 && number < 1048576) {
+                    return (number / 1024).toFixed(1) + 'KB';
+                } else if (number > 1048576) {
+                    return (number / 1048576).toFixed(1) + 'MB';
+                }
+            }
+        </script>
+    </body>
 </html>
