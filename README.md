@@ -4,9 +4,9 @@
 
 <https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app>
 
-### Orginization
 
-- [_** Github Org Link**_](https://github.com/BGOOONZ-BLOG/)
+
+- [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
