@@ -1,7 +1,7 @@
 @each $palette in map-keys($theme-palettes) {
-  $palette-suffix: "#{$palette}";
-  $color-primary: map-deep-get($theme-palettes, $palette, "primary");
-  $color-secondary: map-deep-get($theme-palettes, $palette, "secondary");
+  $palette-suffix: '#{$palette}';
+  $color-primary: map-deep-get($theme-palettes, $palette, 'primary');
+  $color-secondary: map-deep-get($theme-palettes, $palette, 'secondary');
 
   .palette-#{$palette-suffix} {
     a:not(.button) {
@@ -10,7 +10,7 @@
       &:hover {
         color: $gray-600;
       }
-    }
+      }
 
     blockquote {
       border-color: $color-primary;
@@ -24,7 +24,7 @@
     .has-gradient {
       background: $color-primary;
       background: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
-      background: linear-gradient(to right,$color-secondary, $color-primary);
+      background: linear-gradient(to right, $color-secondary, $color-primary);
     }
 
     .button-secondary,
@@ -37,10 +37,10 @@
     #colophon a:not(.button):hover,
     .post.type-docs .hash-link:hover,
     .post.type-docs .hash-link:focus,
-    #docs-menu  a:hover,
+    #docs-menu a:hover,
     #docs-menu .current,
-    #docs-menu  .current-parent,
-    #page-nav li.active > a,
+    #docs-menu .current-parent,
+    #page-nav li.active>a,
     #page-nav a:hover {
       color: $color-primary;
     }
@@ -53,5 +53,5 @@
         }
       }
     }
-  }
+    }
 }
