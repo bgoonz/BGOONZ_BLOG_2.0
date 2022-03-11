@@ -37,17 +37,17 @@
     };
     k(n, m);
     n.prototype.name = 'AssertionError';
-    var p = function (a, b, d) {
+    var p = function (a, b) {
             if (!a) {
                 var e = 'Assertion failed';
                 if (b) {
                     e += ': ' + b;
-                    var c = Array.prototype.slice.call(arguments, 2);
+                    const c = Array.prototype.slice.call(arguments, 2);
                 }
                 throw new n('' + e, c || []);
             }
         },
-        r = function (a, b) {
+        r = function (a) {
             throw new n('Failure' + (a ? ': ' + a : ''), Array.prototype.slice.call(arguments, 1));
         };
     var t;
@@ -58,11 +58,11 @@
     w.prototype.toString = function () {
         return 'Const{' + this.h + '}';
     };
-    var x = function (a) {
-            if (a instanceof w && a.constructor === w && a.i === v) return a.h;
-            r("expected object of type Const, got '" + a + "'");
-            return 'type_error:Const';
-        },
+    let x = function (a) {
+                if (a instanceof w && a.constructor === w && a.i === v) return a.h;
+                r("expected object of type Const, got '" + a + "'");
+                return 'type_error:Const';
+            },
         v = {},
         u = {};
     var z = function (a, b) {
@@ -71,12 +71,12 @@
     z.prototype.toString = function () {
         return this.g + '';
     };
-    var A = function (a) {
-            if (a instanceof z && a.constructor === z) return a.g;
-            var b = typeof a;
-            r("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
-            return 'type_error:TrustedResourceUrl';
-        },
+    let A = function (a) {
+                if (a instanceof z && a.constructor === z) return a.g;
+                var b = typeof a;
+                r("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
+                return 'type_error:TrustedResourceUrl';
+            },
         E = function (a, b) {
             var d = x(a);
             if (!B.test(d)) throw Error('Invalid TrustedResourceUrl format: ' + d);

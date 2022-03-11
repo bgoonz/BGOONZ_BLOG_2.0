@@ -10,7 +10,7 @@ console.log('[inject-netlify-identity-widget.js] injecting netlify-cms scripts')
 const fs = require('fs');
 const path = require('path');
 
-const publishDir = process.argv[2];
+let publishDir = process.argv[2];
 
 if (!publishDir) {
     throw new Error(`[inject-netlify-identity-widget.js] command must be called with single argument specifying the location of publish dir`);

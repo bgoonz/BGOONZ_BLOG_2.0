@@ -144,7 +144,8 @@ MakerBadge.prototype = {
                 this.position +
                 ':0;border-top-left-radius:6px;}';
 
-            const o = '.maker-badge__content{text-align:left;font-size:.9rem;border: 1px solid #cbd5e0;padding:.5rem;display:block;background:#fff;height:100%;}';
+            const o =
+                '.maker-badge__content{text-align:left;font-size:.9rem;border: 1px solid #cbd5e0;padding:.5rem;display:block;background:#fff;height:100%;}';
 
             const n =
                 '.maker-badge__btn{display:flex;align-items:center;height:50px;line-height:50px;padding: 0 .5rem;cursor:pointer;border:1px solid #cbd5e0;border-bottom:0;background:#fff;border-top-left-radius:6px;color:#2d3748;}';
