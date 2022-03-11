@@ -1,8 +1,8 @@
-import _ from 'lodash';
 import React from 'react';
-import { classNames, getPage, getPages, Link, pathJoin, withPrefix } from '../utils';
-import DocsSubmenu from './DocsSubmenu';
+import _ from 'lodash';
 
+import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
+import DocsSubmenu from './DocsSubmenu';
 
 export default class DocsMenu extends React.Component {
     render() {
@@ -19,7 +19,11 @@ export default class DocsMenu extends React.Component {
                     </button>
                     <div className="docs-nav-menu">
                         <ul id="docs-menu" className="docs-menu">
-                            <li className={classNames('docs-menu-item', { current: _.get(page, 'url', null) === _.get(root_page, 'url', null) })}>
+                            <li
+                                className={classNames('docs-menu-item', {
+                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
+                                })}
+                            >
                                 <Link to={withPrefix(_.get(root_page, 'url', null))}>{_.get(root_page, 'frontmatter.title', null)}</Link>
                             </li>
                             {_.map(_.get(site, 'data.doc_sections.sections', null), (section, section_idx) => {
