@@ -6,3 +6,4 @@
 4.  Visitor Content Authoring.
 5.  Dark Mode
 6.  https://github.com/bgoonz/MainBlogContent
+7.  Gatsby plugin Algolia 

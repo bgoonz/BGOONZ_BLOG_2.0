@@ -39,7 +39,7 @@ template: docs
 <br>
 <h1>   Markdown tools  </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="100%" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
@@ -53,7 +53,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://pdf-tools-xi.vercel.app/" height="100%" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://pdf-tools-xi.vercel.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <hr>
@@ -73,7 +73,7 @@ template: docs
 <br>
 <h1>   Number Base Converter  </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://number-base-converter-react.vercel.app/" height="100%" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://number-base-converter-react.vercel.app/" height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
@@ -133,7 +133,7 @@ template: docs
 
 <h1>                </h1>
 <br>
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/"height="100%" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/"height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>
