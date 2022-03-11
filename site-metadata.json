@@ -439,7 +439,7 @@
                     {
                         "label": "Github-Advanced-Search",
                         "url": "https://github.com/search/advanced",
-                        "style": "icon",
+                        "style": "primary",
                         "icon_class": "github",
                         "new_window": true,
                         "no_follow": false,
