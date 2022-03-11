@@ -1,11 +1,11 @@
 {
-    "name": "stackbit-libris-theme",
+    "name": "bgoonz-blog",
     "version": "0.0.1",
     "lockfileVersion": 2,
     "requires": true,
     "packages": {
         "": {
-            "name": "stackbit-libris-theme",
+            "name": "bgoonz-blog",
             "version": "0.0.1",
             "license": "MIT",
             "dependencies": {
