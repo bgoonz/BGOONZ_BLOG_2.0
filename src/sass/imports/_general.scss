@@ -25,6 +25,33 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+//----------Scroll Button--------------------------------
+
+
+
+
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  z-index: 99;
+  border: 1px black solid;
+  outline: none;
+  background-color: #044274;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 28px;
+  font-size: 12px;
+}
+
+#scrollBtn:hover {
+  background-color: #ffffff;
+color:#000000;
+}
 //----------From Netlify Inject--------------------------------
 
 a {
