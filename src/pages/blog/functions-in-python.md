@@ -10,7 +10,7 @@ seo:
     robots: []
     extra: []
 template: post
-thumb_image: images/python2.jpg
+thumb_image: images/python.jpg
 ---
 
 ## Functions

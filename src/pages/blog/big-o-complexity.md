@@ -12,7 +12,7 @@ seo:
     robots: []
     extra: []
 template: post
-thumb_image: images/neural-c16cd3ca.PNG
+thumb_image: images/neural-nets.PNG
 image: images/my-back-0b8b3eaf.png
 ---
 
