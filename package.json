@@ -10,11 +10,8 @@
         "serve": "gatsby serve"
     },
     "dependencies": {
-<<<<<<< HEAD
         "@stackbit/gatsby-plugin-menus": "0.0.4",
         "gatsby-source-graphcms": "^2.8.0",
-=======
->>>>>>> 94edee9ac (-update)
         "@netlify/functions": "^1.0.0",
         "@stackbit/gatsby-plugin-menus": "^0.0.4",
         "@stackbit/stackbit-medium-importer": "^0.2.0",
