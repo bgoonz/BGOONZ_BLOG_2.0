@@ -3,7 +3,7 @@ title: Javascript
 weight: 0
 excerpt: Javascript articles  and docs
 seo:
-    title: ''
+    title: 'JavaScript Programming Language'
     description: ''
     robots: []
     extra: []
