@@ -76,9 +76,9 @@ MakerBadge.prototype = {
 
         let p = 0;
 
-        var b = this,
-            g = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png',
-            c = '';
+        const b = this;
+        let g = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png';
+        let c = '';
 
         'dark' == b.theme
             ? (g = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png')
@@ -178,4 +178,4 @@ MakerBadge.prototype = {
     }
 };
 
-var BLMBadge = new MakerBadge();
+const BLMBadge = new MakerBadge();
