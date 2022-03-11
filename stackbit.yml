@@ -377,7 +377,8 @@ models:
               options:
                   - two
                   - three
-              default: three
+                  - four
+              default: four
               required: true
     section_grid:
         type: object
