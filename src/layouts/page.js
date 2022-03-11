@@ -1,10 +1,10 @@
-import React from 'react';
 import _ from 'lodash';
-
-import { Layout } from '../components/index';
-import Header from '../components/Header';
+import React from 'react';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
+import { Layout } from '../components/index';
 import { htmlToReact, markdownify } from '../utils';
+
 
 export default class Page extends React.Component {
     render() {

@@ -1,9 +1,9 @@
-import React from 'react';
-import _ from 'lodash';
 import { graphql } from 'gatsby';
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+import { Disqus } from 'gatsby-plugin-disqus';
+import _ from 'lodash';
+import React from 'react';
 import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, htmlToReact } from '../utils';
+import { htmlToReact, toStyleObj, withPrefix } from '../utils';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser

@@ -1,12 +1,12 @@
-import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
-
-import { Layout } from '../components/index';
+import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeaderAlt from '../components/HeaderAlt';
-import Footer from '../components/Footer';
+import { Layout } from '../components/index';
 import { htmlToReact, markdownify } from '../utils';
+
 
 export default class Post extends React.Component {
     render() {
