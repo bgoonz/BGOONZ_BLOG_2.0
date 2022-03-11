@@ -6,7 +6,7 @@ An in-depth look into the world of React.
 
 ### React in Depth: A Comprehensive Guide
 
-#### A deep dive into the world of React.
+#### A deep dive into the world of React
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>
 
@@ -498,7 +498,7 @@ Default Prop Values
 -   <span id="78b3">A front-end library that allows you to control which components to display using the browser location.</span>
 -   <span id="aa2a">`Client-side Routing` Getting started with routing</span>
 -   <span id="0940">Install React Router with:</span>
--   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
+-   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
 -   <span id="f07f">Import `Browser Router` from package.</span>
 -   <span id="9e4e">import { BrowserRouter } from "react-router-dom";</span>
 -   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
@@ -693,14 +693,14 @@ Alt. version using `props.match`
 -   <span id="77f2">Create React App uses webpack and Babel under the hood to build applications. The Create React App build process</span>
 -   <span id="222f">What happens when you run `npm start`:</span>
 
-1.  <span id="d245">.env variables are loaded.</span>
-2.  <span id="6209">list of browsers to support are checked.</span>
-3.  <span id="1c34">config'd HTTP port checked for availability.</span>
-4.  <span id="950b">application compiler is configured and created.</span>
-5.  <span id="8e30">`webpack-dev-starter` is started</span>
-6.  <span id="48cc">`webpack-dev-starter` compiles app.</span>
-7.  <span id="68ad">`index.html` is loaded into browser</span>
-8.  <span id="e670">file watcher is started to watch for changes. Ejecting</span>
+1. <span id="d245">.env variables are loaded.</span>
+2. <span id="6209">list of browsers to support are checked.</span>
+3. <span id="1c34">config'd HTTP port checked for availability.</span>
+4. <span id="950b">application compiler is configured and created.</span>
+5. <span id="8e30">`webpack-dev-starter` is started</span>
+6. <span id="48cc">`webpack-dev-starter` compiles app.</span>
+7. <span id="68ad">`index.html` is loaded into browser</span>
+8. <span id="e670">file watcher is started to watch for changes. Ejecting</span>
 
 -   <span id="428b">There is a script in Create React App called `eject` that allows you to 'eject' your application and expose all the hidden stuff. Preparing to deploy a React application for production</span>
 -   <span id="eb79">Defining Env Variables</span>
@@ -1529,8 +1529,8 @@ Providing default values for props
 -   <span id="a4e6">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
 -   <span id="801d">It's good to pick one approach and use it consistently, either:</span>
 
-1.  <span id="2e3e">Class Properties & Arrow Functions</span>
-2.  <span id="cc27">Bind Method & This Keyword The `SyntheticEvent` object</span>
+1. <span id="2e3e">Class Properties & Arrow Functions</span>
+2. <span id="cc27">Bind Method & This Keyword The `SyntheticEvent` object</span>
 
 -   <span id="f177">Synthetic Event Objects: Cross Browser wrappeds around the browser's native event.</span>
 -   <span id="418f">Includes the use of stopPropagation() and preventDefault();</span>
@@ -1723,9 +1723,9 @@ Note About Client-side vs server-side validation
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" /></figure>-   <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
 
-1.  <span id="8e64">Loading (Mounting)</span>
-2.  <span id="7e94">Updating</span>
-3.  <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
+1. <span id="8e64">Loading (Mounting)</span>
+2. <span id="7e94">Updating</span>
+3. <span id="2cd3">Unloading (Unmounting) The lifecycle of a React component</span>
 
 -   <span id="7740">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
 -   <span id="e7d0">`componentDidMount` : Method called after your component has been added to the component tree.</span>
@@ -1733,23 +1733,23 @@ Note About Client-side vs server-side validation
 -   <span id="9ee2">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
 -   <span id="7bd8">`Mounting`</span>
 
-1.  <span id="6f9e">`constructor` method is called</span>
-2.  <span id="e9c7">`render` method is called</span>
-3.  <span id="eef3">React updates the `DOM`</span>
-4.  <span id="19bb">`componentDidMount` is called</span>
+1. <span id="6f9e">`constructor` method is called</span>
+2. <span id="e9c7">`render` method is called</span>
+3. <span id="eef3">React updates the `DOM`</span>
+4. <span id="19bb">`componentDidMount` is called</span>
 
 -   <span id="85f1">`Updating`</span>
 -   <span id="94f5">When component receives new `props`</span>
 
-1.  <span id="e635">`render` method is called</span>
-2.  <span id="70f9">React updates the `DOM`</span>
-3.  <span id="9507">`componentDidUpdate` is called</span>
+1. <span id="e635">`render` method is called</span>
+2. <span id="70f9">React updates the `DOM`</span>
+3. <span id="9507">`componentDidUpdate` is called</span>
 
 -   <span id="b00a">When `setState` is called</span>
 
-1.  <span id="6864">`render` method is called</span>
-2.  <span id="e13b">React updates the `DOM`</span>
-3.  <span id="c459">`componentDidUpdate` is called</span>
+1. <span id="6864">`render` method is called</span>
+2. <span id="e13b">React updates the `DOM`</span>
+3. <span id="c459">`componentDidUpdate` is called</span>
 
 -   <span id="bfdd">`Unmounting`</span>
 -   <span id="10c1">The moment before a class component is removed from the component tree:</span>
@@ -1817,7 +1817,7 @@ Setting up a Consumer
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>-   <span id="04c0">Visual of how an app without React manages it's data.</span>
 -   <span id="bae2">A lot of prop threading happening.</span>
--   <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
+-   <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
 -   <span id="cd66">`Store`</span>
 -   <span id="9453">Holds the Frontend State</span>
 -   <span id="cea4">Provides an API for the Frontend State</span>
@@ -1829,9 +1829,9 @@ Setting up a Consumer
 -   <span id="8bb8">Make Changes to Frontend State Where did Redux come from?</span>
 -   <span id="6d0b">There are three central philosophies of Redux:</span>
 
-1.  <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
-2.  <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
-3.  <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
+1. <span id="12ac">`A Single Source of Truth` : state is stored in a POJO</span>
+2. <span id="d178">`State is Read Only` : State is immutable, modified by dispatching actions.</span>
+3. <span id="51c5">`Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?</span>
 
 -   <span id="117f">When doing a project with simpler global state requirements, it may be better to choose React's Context API over Redux.</span>
 -   <span id="5d3d">Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary</span>
@@ -1877,7 +1877,7 @@ What is Flux?
 
 -   <span id="06d1">Front-end application architecutre.</span>
 -   <span id="8311">A pattern in which to structure an application.</span>
--   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
+-   <span id="05e6">Unidirectional Data Flow — offers more predictability.</span>
 -   <span id="751c">`Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.</span>
 -   <span id="e8e7">`Dispatcher` : Mechanism for distributing actions to the store.</span>
 -   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
@@ -2590,7 +2590,7 @@ The component takes only one prop: `to`. When it renders, it replaces the curren
       render={() => (this.props.currentUser ? <Home /> : <Redirect to="/login" />)}
     />
 
-Note: you will learn how to use a more flexible auth pattern — don't directly imitate this example.
+Note: you will learn how to use a more flexible auth pattern — don't directly imitate this example.
 
 ### History
 
@@ -2717,7 +2717,7 @@ The need for front-end builds predates React. Over the years, developers have fo
 
 Sometimes developers extend JavaScript and CSS with something like <a href="https://www.typescriptlang.org/" class="markup--anchor markup--p-anchor">TypeScript</a> or <a href="https://sass-lang.com/" class="markup--anchor markup--p-anchor">Sass</a>. Using these non-standard languages and syntaxes require you to use a build process to convert your code into standard JavaScript and CSS that can actually run in the browser.
 
-Browser-based applications also require a fair amount of optimization to deliver the best, or at least acceptable, experience to end users. Front-end build processes could be configured to lint code, run unit tests, optimize images, minify and bundle code, and more — all automatically at the press of a button (i.e. running a command at the terminal).
+Browser-based applications also require a fair amount of optimization to deliver the best, or at least acceptable, experience to end users. Front-end build processes could be configured to lint code, run unit tests, optimize images, minify and bundle code, and more — all automatically at the press of a button (i.e. running a command at the terminal).
 
 ### JavaScript versions and the growth of front-end builds
 
@@ -2889,7 +2889,7 @@ Now that you've had an introduction to React Router, feel free to explore the of
 
 ### Rainbow Routes Project
 
-Today you're going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
+Today you're going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
 
 ### Phase 0: Setup
 
@@ -3104,7 +3104,7 @@ The only problem is that now the `Blue only` link is active even when the path i
 
 Do the same for the `Red only` link. Everything should be working now.
 
-### Phase 4 — Changing NavLink's Active Class
+### Phase 4 — Changing NavLink's Active Class
 
 You've already set up `NavLink` to bold the link text using the `.active` class in `src/index.css`. But what if you wanted this class to be something else? For instance, what if you want your main color links (Red, Green, Blue, Violet) to be styled differently when active than your sub-route links (Red Only, Add Orange, Add Yellow, etc.).
 
@@ -3136,7 +3136,7 @@ Begin by using the <a href="https://github.com/facebook/create-react-app" class=
 
     npx create-react-app exploring-react-builds --template @appacademy/simple
 
-> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the _`.git` _file._
+> _Remember that using the_ `create-react-app` _command initializes your project as a Git repository. If you use the_ `ls -a` _to view the hidden files in your project, you'll see the_`.git` _file._
 
 Update the `App` component:
 
@@ -3684,8 +3684,8 @@ Open a browser and browse to the URL `http://localhost:9000/`. You should see yo
 
 Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
--   <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
--   <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
+-   <span id="58e7"><a href="<<http://localhost:9000/image>>" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
+-   <span id="3fa9"><a href="<<http://localhost:9000/class-component>>" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
 
