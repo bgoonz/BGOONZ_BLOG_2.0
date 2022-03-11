@@ -5,8 +5,8 @@ date: '2021-07-26'
 thumb_image_alt: Blog page animation
 excerpt: Blog Archive
 seo:
-    title: ''
-    description: ''
+    title: 'Blog Archive'
+    description: 'Google Blogger Site Archive'
     robots: []
     extra: []
     type: stackbit_page_meta
