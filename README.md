@@ -2,13 +2,13 @@
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
-<https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app>
 
-### Orginization
 
--   [_**Org link**_](https://github.com/BGOOONZ-BLOG/)
 
-##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
+
+
 
 </div>
 
@@ -18,6 +18,10 @@
 
 ##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
 
+###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)  
+  
+<https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app>  
+  
 </div>
 <div align="center">
 
@@ -25,6 +29,8 @@
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/aac9892cd5e6fe8241ce?action=collection%2Fimport#?env%5Bblog%5D=dW5kZWZpbmVk)![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+---  
+  
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-bgoonz-blog-netlify-app-2022-01-20-23_58_59.png?raw=true)
 
 </div>
