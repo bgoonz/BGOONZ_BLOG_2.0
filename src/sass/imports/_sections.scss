@@ -102,7 +102,7 @@
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 801px) {
   .block-text {
     .grid-item {
       &:not(:only-child) {
@@ -200,7 +200,7 @@
 
 // Grid section
 .block-grid {
-  .block-hero+& {
+  .block-hero + & {
     &:not(.has-header) {
       background: 0;
       padding-top: 0;
@@ -312,7 +312,7 @@
     line-height: 1.5;
   }
 
-  &+.block {
+  & + .block {
     margin-top: -5em;
     position: relative;
   }
