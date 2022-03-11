@@ -14,11 +14,17 @@ template: docs
 # [**➡️🏠🏠HOME🏠🏠⬅️**](https://bgoonz-blog.netlify.app/)
 
 <center>
-### [**<ins>docs</ins>**](https://bgoonz-blog.netlify.app/docs)
+
+## [**<ins>➡️📚🏠docs🏠📚⬅️</ins>**](https://bgoonz-blog.netlify.app/docs)
+
+
+
+
 ###  [**readme</ins>**](https://bgoonz-blog.netlify.app/readme)
 ### [**<ins>showcase</ins>**](https://bgoonz-blog.netlify.app/showcase)
 ##### [**<ins>🔏admin</ins>**](https://bgoonz-blog.netlify.app/admin)
 ##### [**<ins>🔏privacy-policy</ins>**](https://bgoonz-blog.netlify.app/privacy-policy)
+
 </center>
 
 <details>
@@ -45,7 +51,12 @@ template: docs
     -   [📰blog📰/web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
     -   [📰blog📰/web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
 
+
 </details>
+
+
+---
+
 
 <details>
 
@@ -58,7 +69,12 @@ template: docs
     -   [📚docs📚/about/job-search](https://bgoonz-blog.netlify.app/docs/about/job-search)
     -   [📚docs📚/about/resume](https://bgoonz-blog.netlify.app/docs/about/resume)
 
+
 </details>
+
+
+---
+
 
 <details>
 
@@ -88,7 +104,9 @@ template: docs
     -   [📚docs📚/🗞️articles🗞️webdev-tools](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
     -   [📚docs📚/🗞️articles🗞️writing-files](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
 
+
 </details>
+
 
 ---
 
@@ -103,7 +121,9 @@ template: docs
     -   [📚docs📚/audio/dynamic-time-warping](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
     -   [📚docs📚/audio/web-audio-api](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
 
+
 </details>
+
 
 ---
 
@@ -113,14 +133,19 @@ template: docs
 
 -   [📚docs📚/career](https://bgoonz-blog.netlify.app/docs/career)
     -   [📚docs📚/career/dev-interview](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
-        -   [📚docs📚/career/dos-and-donts](https://bgoonz-blog.netlify.app/docs/career/dos-and-donts)
-        -   [📚docs📚/career/job-boards](https://bgoonz-blog.netlify.app/docs/career/job-boards)
-        -   [📚docs📚/career/web-interview](https://bgoonz-blog.netlify.app/docs/career/web-interview)
-        -   [📚docs📚/career/web-interview2](https://bgoonz-blog.netlify.app/docs/career/web-interview2)
-        -   [📚docs📚/career/web-interview3](https://bgoonz-blog.netlify.app/docs/career/web-interview3)
-        -   [📚docs📚/career/web-interview4](https://bgoonz-blog.netlify.app/docs/career/web-interview4)
+    -   [📚docs📚/career/dos-and-donts](https://bgoonz-blog.netlify.app/docs/career/dos-and-donts)
+    -   [📚docs📚/career/job-boards](https://bgoonz-blog.netlify.app/docs/career/job-boards)
+    -   [📚docs📚/career/web-interview](https://bgoonz-blog.netlify.app/docs/career/web-interview)
+    -   [📚docs📚/career/web-interview2](https://bgoonz-blog.netlify.app/docs/career/web-interview2)
+    -   [📚docs📚/career/web-interview3](https://bgoonz-blog.netlify.app/docs/career/web-interview3)
+    -   [📚docs📚/career/web-interview4](https://bgoonz-blog.netlify.app/docs/career/web-interview4)
+    -   [📚docs📚/interview/job-search-nav](https://bgoonz-blog.netlify.app/docs/interview/job-search-nav)
+    -   [📚docs📚/interview/previous-concepts](https://bgoonz-blog.netlify.app/docs/interview/previous-concepts)
+    -   [📚docs📚/interview/review-concepts](https://bgoonz-blog.netlify.app/docs/interview/review-concepts)
+
 
 </details>
+
 
 ---
 
@@ -129,38 +154,33 @@ template: docs
 <summary><ins><h6>📚Docs📚 -  👫👫Community👫👫 </h6></ins></summary>
 
 -   [📚docs📚/👫👫community👫👫](https://bgoonz-blog.netlify.app/docs/community)
+      - [📚docs📚/community/an-open-letter-2-future-developers](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
+      - [📚docs📚/community/bookmarks](https://bgoonz-blog.netlify.app/docs/community/bookmarks)
+      - [📚docs📚/community/video-chat](https://bgoonz-blog.netlify.app/docs/community/video-chat)
 
-          - [📚docs📚/community/an-open-letter-2-future-developers](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
-          - [📚docs📚/community/bookmarks](https://bgoonz-blog.netlify.app/docs/community/bookmarks)
-          - [📚docs📚/community/video-chat](https://bgoonz-blog.netlify.app/docs/community/video-chat)
 
 </details>
+
 
 ---
 
-<details>
 
-<summary><ins><h6>📚Docs📚 - Content </ins> </summary>
-
--   [📚docs📚/content](https://bgoonz-blog.netlify.app/docs/content)
-
-</details>
-
----
 
 <details>
 
-<summary><ins><h6>📚Docs📚 - Content</h6></ins></summary>
+<summary><ins><h6>📚Docs📚 - 💼Content💼</h6></ins></summary>
 
-    - [📚docs📚/content/algo](https://bgoonz-blog.netlify.app/docs/content/algo)
-    - [📚docs📚/content/archive](https://bgoonz-blog.netlify.app/docs/content/archive)
-    - [📚docs📚/content/gatsby-Queries-Mutations](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
-    - [📚docs📚/content/gists](https://bgoonz-blog.netlify.app/docs/content/gists)
-    - [📚docs📚/content/history-api](https://bgoonz-blog.netlify.app/docs/content/history-api)
-    - [📚docs📚/content/main-projects](https://bgoonz-blog.netlify.app/docs/content/main-projects)
-    - [📚docs📚/content/trouble-shooting](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
+- [📚docs📚/💼content💼](https://bgoonz-blog.netlify.app/docs/content/)
+  - [📚docs📚/💼content💼/archive](https://bgoonz-blog.netlify.app/docs/content/archive)
+  - [📚docs📚/💼content💼/gatsby-Queries-Mutations](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
+  - [📚docs📚/💼content💼/gists](https://bgoonz-blog.netlify.app/docs/content/gists)
+  - [📚docs📚/💼content💼/history-api](https://bgoonz-blog.netlify.app/docs/content/history-api)
+  - [📚docs📚/💼content💼/main-projects](https://bgoonz-blog.netlify.app/docs/content/main-projects)
+  - [📚docs📚/💼content💼/trouble-shooting](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
+
 
 </details>
+
 
 ---
 
@@ -168,23 +188,43 @@ template: docs
 
 <summary><ins><h6>📚Docs📚 - 📓Documentation📓</h6></ins></summary>
 
--   [📚docs📚/docs](https://bgoonz-blog.netlify.app/docs/docs) - [📚docs📚/docs/appendix](https://bgoonz-blog.netlify.app/docs/docs/appendix) - [📚docs📚/docs/art-of-command-line](https://bgoonz-blog.netlify.app/docs/docs/art-of-command-line) - [📚docs📚/docs/bash](https://bgoonz-blog.netlify.app/docs/docs/bash) - [📚docs📚/docs/css](https://bgoonz-blog.netlify.app/docs/docs/css) - [📚docs📚/docs/data-structures-docs](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs) - [📚docs📚/docs/es-6-features](https://bgoonz-blog.netlify.app/docs/docs/es-6-features) - [📚docs📚/docs/git-reference](https://bgoonz-blog.netlify.app/docs/docs/git-reference) - [📚docs📚/docs/git-repos](https://bgoonz-blog.netlify.app/docs/docs/git-repos) - [📚docs📚/docs/glossary](https://bgoonz-blog.netlify.app/docs/docs/glossary) - [📚docs📚/docs/html-tags](https://bgoonz-blog.netlify.app/docs/docs/html-tags) - [📚docs📚/docs/markdown](https://bgoonz-blog.netlify.app/docs/docs/markdown) - [📚docs📚/docs/no-whiteboarding](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding) - [📚docs📚/docs/node-docs-complete](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete) - [📚docs📚/docs/regex-in-js](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js) - [📚docs📚/docs/sitemap](https://bgoonz-blog.netlify.app/docs/docs/sitemap) - [📚docs📚/docs/snippets](https://bgoonz-blog.netlify.app/docs/docs/snippets)
+-   [📚docs📚/docs](https://bgoonz-blog.netlify.app/docs/docs)
+    - [📚docs📚/docs/appendix](https://bgoonz-blog.netlify.app/docs/docs/appendix)
+    - [📚docs📚/docs/art-of-command-line](https://bgoonz-blog.netlify.app/docs/docs/art-of-command-line)
+    - [📚docs📚/docs/bash](https://bgoonz-blog.netlify.app/docs/docs/bash)
+    - [📚docs📚/docs/css](https://bgoonz-blog.netlify.app/docs/docs/css)
+    - [📚docs📚/docs/data-structures-docs](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
+    - [📚docs📚/docs/es-6-features](https://bgoonz-blog.netlify.app/docs/docs/es-6-features)
+    - [📚docs📚/docs/git-reference](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
+    - [📚docs📚/docs/git-repos](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
+    - [📚docs📚/docs/glossary](https://bgoonz-blog.netlify.app/docs/docs/glossary)
+    - [📚docs📚/docs/html-tags](https://bgoonz-blog.netlify.app/docs/docs/html-tags)
+    - [📚docs📚/docs/markdown](https://bgoonz-blog.netlify.app/docs/docs/markdown)
+    - [📚docs📚/docs/no-whiteboarding](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
+    - [📚docs📚/docs/node-docs-complete](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
+    - [📚docs📚/docs/regex-in-js](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
+    - [📚docs📚/docs/sitemap](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
+    - [📚docs📚/docs/snippets](https://bgoonz-blog.netlify.app/docs/docs/snippets)
+
 
 </details>
+
 
 ---
 
 <details>
 
 <summary>
- <ins>📚Docs📚 - Data Structures & Algorithms</h6></ins></summary>
+ <ins>📚Docs📚 - 🕸Data Structures & Algorithms🕸</h6></ins></summary>
 
--   [📚docs📚/ds-algo](https://bgoonz-blog.netlify.app/docs/ds-algo)
-    -   [📚docs📚/ds-algo/big-o](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o)
-    -   [📚docs📚/ds-algo/ds-algo-interview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview)
-    -   [📚docs📚/ds-algo/ds-overview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview)
+-   [📚docs📚/🕸ds-algo🕸](https://bgoonz-blog.netlify.app/docs/ds-algo)
+    -   [📚docs📚/🕸ds-algo🕸/big-o](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o)
+    -   [📚docs📚/🕸ds-algo🕸/ds-algo-interview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview)
+    -   [📚docs📚/🕸ds-algo🕸/ds-overview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview)
+
 
 </details>
+
 
 ---
 
@@ -196,7 +236,9 @@ template: docs
     -   [📚docs📚/❓faq❓/contact](https://bgoonz-blog.netlify.app/docs/faq/contact)
     -   [📚docs📚/❓faq❓/plug-ins](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
 
+
 </details>
+
 
 ---
 
@@ -211,17 +253,11 @@ template: docs
     -   [📚docs📚/🧑‍🔬interact🧑‍🔬/other-sites](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
     -   [📚docs📚/🧑‍🔬interact🧑‍🔬/video-chat](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
 
-</details>
-
----
-
-<details>
-
-<summary><ins><h6>📚Docs📚 - ⍰ Interview</h6></ins></summary>
-
--   [📚docs📚/interview](https://bgoonz-blog.netlify.app/docs/interview)
 
 </details>
+
+
+
 
 ---
 
@@ -229,9 +265,23 @@ template: docs
 
 <summary><ins><h6>📚Docs📚 - Javascript</h6></ins></summary>
 
--   [📚docs📚/javascript](https://bgoonz-blog.netlify.app/docs/javascript) - [📚docs📚/javascript/arrow-functions](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions) - [📚docs📚/javascript/asyncjs](https://bgoonz-blog.netlify.app/docs/javascript/asyncjs) - [📚docs📚/javascript/await-keyword](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword) - [📚docs📚/javascript/bigo](https://bgoonz-blog.netlify.app/docs/javascript/bigo) - [📚docs📚/javascript/clean-code](https://bgoonz-blog.netlify.app/docs/javascript/clean-code) - [📚docs📚/javascript/constructor-functions](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions) - [📚docs📚/javascript/cs-basics-in-js](https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js) - [📚docs📚/javascript/for-loops](https://bgoonz-blog.netlify.app/docs/javascript/for-loops) - [📚docs📚/javascript/part2-pojo](https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo) - [📚docs📚/javascript/promises](https://bgoonz-blog.netlify.app/docs/javascript/promises) - [📚docs📚/javascript/review](https://bgoonz-blog.netlify.app/docs/javascript/review) - [📚docs📚/javascript/this-is-about-this](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
+- [📚docs📚/javascript](https://bgoonz-blog.netlify.app/docs/javascript)
+    - [📚docs📚/javascript/arrow-functions](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
+    - [📚docs📚/javascript/asyncjs](https://bgoonz-blog.netlify.app/docs/javascript/asyncjs)
+    - [📚docs📚/javascript/await-keyword](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
+    - [📚docs📚/javascript/bigo](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
+    - [📚docs📚/javascript/clean-code](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
+    - [📚docs📚/javascript/constructor-functions](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
+    - [📚docs📚/javascript/cs-basics-in-js](https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js)
+    - [📚docs📚/javascript/for-loops](https://bgoonz-blog.netlify.app/docs/javascript/for-loops)
+    - [📚docs📚/javascript/part2-pojo](https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo)
+    - [📚docs📚/javascript/promises](https://bgoonz-blog.netlify.app/docs/javascript/promises)
+    - [📚docs📚/javascript/review](https://bgoonz-blog.netlify.app/docs/javascript/review)
+    - [📚docs📚/javascript/this-is-about-this](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
+
 
 </details>
+
 
 ---
 
@@ -277,17 +327,11 @@ template: docs
     -   [📚docs📚/js-tips/this](https://bgoonz-blog.netlify.app/docs/js-tips/this)
     -   [📚docs📚/js-tips/var](https://bgoonz-blog.netlify.app/docs/js-tips/var)
 
-</details>
-
-<details>
-
-<summary><ins><h6>📚Docs📚 -  Interview        </h6></ins></summary>
-
-  -   [📚docs📚/interview/job-search-nav](https://bgoonz-blog.netlify.app/docs/interview/job-search-nav)
-  -   [📚docs📚/interview/previous-concepts](https://bgoonz-blog.netlify.app/docs/interview/previous-concepts)
-  -   [📚docs📚/interview/review-concepts](https://bgoonz-blog.netlify.app/docs/interview/review-concepts)
 
 </details>
+
+
+
 
 
 ---
@@ -297,8 +341,26 @@ template: docs
 <summary><ins><h6>📚Docs📚 - Leetcode      </h6></ins></summary>
 
 -   [📚docs📚/leetcode](https://bgoonz-blog.netlify.app/docs/leetcode)
+    -   [📚docs📚/leetcode/ContaineWitMosWater](https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater)
+    -   [📚docs📚/leetcode/DividTwIntegers](https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers)
+    -   [📚docs📚/leetcode/GeneratParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses)
+    -   [📚docs📚/leetcode/LetteCombinationoPhonNumber](https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber)
+    -   [📚docs📚/leetcode/LongesCommoPrefix](https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix)
+    -   [📚docs📚/leetcode/MediaoTwSorteArrays](https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays)
+    -   [📚docs📚/leetcode/NexPermutation](https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation)
+    -   [📚docs📚/leetcode/PalindromNumber](https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber)
+    -   [📚docs📚/leetcode/RegulaExpressioMatching](https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching)
+    -   [📚docs📚/leetcode/RemovDuplicatefroSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray)
+    -   [📚docs📚/leetcode/RemovNtNodFroEnoList](https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList)
+    -   [📚docs📚/leetcode/RomatInteger](https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger)
+    -   [📚docs📚/leetcode/SearciRotateSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray)
+    -   [📚docs📚/leetcode/StrintIntege(atoi)](<https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)>)
+    -   [📚docs📚/leetcode/ValiParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses)
+    -   [📚docs📚/leetcode/ZigZaConversion](https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion)
+
 
 </details>
+
 
 ---
 
@@ -320,7 +382,9 @@ template: docs
   -   [📚docs📚/overflow/understanding-firebase](https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase)
   -   [📚docs📚/overflow/v8](https://bgoonz-blog.netlify.app/docs/overflow/v8)
 
+
 </details>
+
 
 ---
 
@@ -335,7 +399,9 @@ template: docs
     -   [📚docs📚/projects/mini-projects2](https://bgoonz-blog.netlify.app/docs/projects/mini-projects2)
     -   [📚docs📚/projects/my-websites](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
 
+
 </details>
+
 
 ---
 
@@ -356,7 +422,9 @@ template: docs
     -   [📚docs📚/🐍python🐍/python-quiz](https://bgoonz-blog.netlify.app/docs/python/python-quiz)
     -   [📚docs📚/🐍python🐍/snippets](https://bgoonz-blog.netlify.app/docs/python/snippets)
 
+
 </details>
+
 
 ---
 
@@ -384,7 +452,9 @@ template: docs
     -   [📚docs📚/🏃‍♂️📚quick-ref📚🏃‍♂️/vscode-themes](https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes)
     -   [📚docs📚/⚛️react⚛️/accessibility](https://bgoonz-blog.netlify.app/docs/react/accessibility)
 
+
 </details>
+
 
 ---
 
@@ -406,7 +476,9 @@ template: docs
     -   [📚docs📚/⚛️react⚛️/react2](https://bgoonz-blog.netlify.app/docs/react/react2)
     -   [📚docs📚/⚛️react⚛️/render-elements](https://bgoonz-blog.netlify.app/docs/react/render-elements)
 
+
 </details>
+
 
 ---
 
@@ -435,31 +507,48 @@ template: docs
     -   [📚docs📚/※🕮reference※🕮/vscode](https://bgoonz-blog.netlify.app/docs/reference/vscode)
     -   [📚docs📚/※🕮reference※🕮/web-api's](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
 
-</details>
-
-    - [📚docs📚/tips/regex-tips](https://bgoonz-blog.netlify.app/docs/tips/regex-tips)
-
-tools/all](https://bgoonz-blog.netlify.app/docs/tools/all) - [📚docs📚/tools/all-stripped](https://bgoonz-blog.netlify.app/docs/tools/all-stripped) - [📚docs📚/tools/archive](https://bgoonz-blog.netlify.app/docs/tools/archive) - [📚docs📚/tools/dev-utilities](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities) - [📚markdown-html](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
 
 </details>
+
+
+
+
+
+
+</details>
+
+
+---
+
 
 <details>
 
 <summary><ins><h6>📚Docs📚 - 🔊 Mini Web Dev Tips </h6></ins></summary>
 
 -   [📚docs📚/tips](https://bgoonz-blog.netlify.app/docs/tips)
+    - [📚docs📚/tips/regex-tips](https://bgoonz-blog.netlify.app/docs/tips/regex-tips)
+
 
 </details>
+
 
 ---
 
 <details>
 
-<summary><ins><h6>📚Docs📚 - 🧰 Tools </h6></ins></summary>
+<summary><ins><h6>📚Docs📚 - ⚒Tools⚒ </h6></ins></summary>
 
--   [📚docs📚/tools](https://bgoonz-blog.netlify.app/docs/tools)
+- [📚docs📚/⚒Tools⚒/](https://bgoonz-blog.netlify.app/docs/tools)
+    - [📚docs📚/⚒Tools⚒/all](https://bgoonz-blog.netlify.app/docs/tools/all)
+    - [📚docs📚/⚒Tools⚒/all-stripped](https://bgoonz-blog.netlify.app/docs/tools/all-stripped)
+    - [📚docs📚/⚒Tools⚒/archive](https://bgoonz-blog.netlify.app/docs/tools/archive)
+    - [📚docs📚/⚒Tools⚒/dev-utilities](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities) 
+    - [📚docs📚/⚒Tools⚒/📚markdown-html](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
+
+
 
 </details>
+
 
 ---
 
@@ -476,20 +565,5 @@ tools/all](https://bgoonz-blog.netlify.app/docs/tools/all) - [📚docs📚/tools
 
 
 
-        -   [📚docs📚/leetcode/ContaineWitMosWater](https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater)
-        -   [📚docs📚/leetcode/DividTwIntegers](https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers)
-        -   [📚docs📚/leetcode/GeneratParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses)
-        -   [📚docs📚/leetcode/LetteCombinationoPhonNumber](https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber)
-        -   [📚docs📚/leetcode/LongesCommoPrefix](https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix)
-        -   [📚docs📚/leetcode/MediaoTwSorteArrays](https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays)
-        -   [📚docs📚/leetcode/NexPermutation](https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation)
-        -   [📚docs📚/leetcode/PalindromNumber](https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber)
-        -   [📚docs📚/leetcode/RegulaExpressioMatching](https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching)
-        -   [📚docs📚/leetcode/RemovDuplicatefroSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray)
-        -   [📚docs📚/leetcode/RemovNtNodFroEnoList](https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList)
-        -   [📚docs📚/leetcode/RomatInteger](https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger)
-        -   [📚docs📚/leetcode/SearciRotateSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray)
-        -   [📚docs📚/leetcode/StrintIntege(atoi)](<https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)>)
-        -   [📚docs📚/leetcode/ValiParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses)
-        -   [📚docs📚/leetcode/ZigZaConversion](https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion)
+    
 
