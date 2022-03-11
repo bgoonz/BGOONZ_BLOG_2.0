@@ -27,8 +27,6 @@
         "gatsby-plugin-disqus": "^1.2.3",
         "js-yaml": "3.12.2",
         "lodash": "4.17.11",
-        "js-yaml": "3.12.2",
-        "lodash": "4.17.11",
         "marked": "0.6.1",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
