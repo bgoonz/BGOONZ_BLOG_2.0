@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
+        "gatsby-source-graphcms": "^2.8.0",
         "@netlify/functions": "^1.0.0",
         "@stackbit/stackbit-medium-importer": "^0.2.0",
         "axios": "^0.21.2",
