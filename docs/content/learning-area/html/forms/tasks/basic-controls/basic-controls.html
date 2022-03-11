@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Basic controls: Task 1</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <style>
+            body {
+                background-color: #fff;
+                color: #333;
+                font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+                padding: 1em;
+                margin: 0;
+            }
 
-<head>
-  <meta charset="utf-8" />
-  <title>Basic controls: Task 1</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <style>
-    body {
-      background-color: #fff;
-      color: #333;
-      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-      padding: 1em;
-      margin: 0;
-    }
+            * {
+                box-sizing: border-box;
+            }
+        </style>
 
-    * {
-      box-sizing: border-box;
-    }
+        <style class="editable"></style>
+    </head>
 
-  </style>
+    <body>
+        <section class="preview"></section>
 
-  <style class="editable"></style>
-</head>
+        <textarea class="playable playable-css" style="height: 130px"> </textarea>
 
-<body>
-  <section class="preview"></section>
-
-  <textarea class="playable playable-css" style="height: 130px"> </textarea>
-
-  <textarea class="playable playable-html" style="height: 220px">
+        <textarea class="playable playable-html" style="height: 220px">
 <form>
   <ul>
     <li>
@@ -44,12 +42,12 @@
     </li>
   </ul>
 </form>
-    </textarea>
+    </textarea
+        >
 
-  <div class="playable-buttons">
-    <input id="reset" type="button" value="Reset" />
-  </div>
-</body>
-<script src="../playable.js"></script>
-
+        <div class="playable-buttons">
+            <input id="reset" type="button" value="Reset" />
+        </div>
+    </body>
+    <script src="../playable.js"></script>
 </html>
