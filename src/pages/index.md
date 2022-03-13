@@ -1,7 +1,7 @@
 ---
-title: Web Dev Hub Home
+title: Home
 sections:
-    - section_id: Intro
+  - section_id: hero
         type: section_hero
         title: 'I am a musician, electrical engineer & web developer'
         image: images/curious-europa.gif
