@@ -1,7 +1,7 @@
 ---
 title: rack-test
 category: Ruby libraries
-layout: 2017/sheet
+
 ---
 
 ### Methods

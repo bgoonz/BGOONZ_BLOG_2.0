@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: DOM Selection
 category: JavaScript
-layout: 2017/sheet
+
 intro: |
 Quick introduction to the HTML [DOM selection API](https://devdocs.io/dom/selection).
 
@@ -26,7 +26,7 @@ Quick introduction to the HTML [DOM selection API](https://devdocs.io/dom/select
 
 ## Reference
 
-{: .-three-column}
+
 
 ### Selection
 

@@ -11,20 +11,20 @@ Practice: https://regexr.com/
 
 For more explanations on all the rules, [see below](#regular-expression-operators):
 
--   `*` - zero or more
-
--   `+` - one or more
-
--   `?` - zero or one
-
--   `^` - start of input
-
--   `$` - end of input
-
--   `[]` - any character
-
--   `[a-z]` - range of characters
-
+- `*` - zero or more
+- 
+- `+` - one or more
+- 
+- `?` - zero or one
+- 
+- `^` - start of input
+- 
+- `$` - end of input
+- 
+- `[]` - any character
+- 
+- `[a-z]` - range o
+- 
 -   `[^]` - not those characters
 
 -   `\s` - whitespace
@@ -43,17 +43,17 @@ For more explanations on all the rules, [see below](#regular-expression-operator
 
 For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
--   Creating a new regular expression in JavaScript
+- Creating a new regular expression in JavaScript
 
     ```javascript
     const regex = /pattern/;
     // const regex = new RegExp('pattern'); // can do this too
     ```
 
--   `RegExp.prototype.test` - return true if pattern matches input string, false
+- `RegExp.prototype.test` - return true if pattern matches input string, false
     otherwise
 
--   `String.prototype.replace` - returns a new string with all matches of a
+- `String.prototype.replace` - returns a new string with all matches of a
     pattern replaced by a replacement (only if pattern is a regular expression and
     has global search, `g`., if the pattern is a string, it will only replace the
     first match)
@@ -62,8 +62,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### String with Characters only
 
--   Matches the string exactly
-
+- Matches the string exactly
+- 
 -   ex: if pattern is `"pat"` it looks for exactly `"pat"` in the string
 
     | Inputs                   | Matched? |
@@ -75,8 +75,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Star Operator `*`
 
--   **Zero or more** of what's right before it
-
+- **Zero or more** of what's right before it
+- 
 -   ex: if the pattern is `"th*e"`, then it looks for a `"t"`, then zero or more
     `"h"`, then `"e"`
 
@@ -91,8 +91,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Optional Operator `?`
 
--   **Zero or one** of what's right before it
-
+- **Zero or one** of what's right before it
+- 
 -   ex: if pattern is `"at?t"`, then it looks for an `"a"`, zero or one `"t"`, then
     a single `"t"` (an equivalent pattern to `"at?t"` would be `"att?"`)
 
@@ -107,13 +107,13 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 **NOTE:** To use a question mark in your string, you need to escape it in a regex
 
--   ex: pattern of `"at\?"` would return `true` for an input of `"where you at?"`
+- ex: pattern of `"at\?"` would return `true` for an input of `"where you at?"`
     but `false` for an input of `"patty"`
 
 ### Plus Operator `+`
 
--   **One or more** of what's right before it
-
+- **One or more** of what's right before it
+- 
 -   ex: if pattern is `"at+"`, then it looks for an `"a"`, then one or more `"t"`
     (an equivalent pattern to `"at+"` would be `"att*"`)
 
@@ -128,8 +128,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Dot Operator `.`
 
--   Any one character
-
+- Any one character
+- 
 -   ex: if pattern is `"r.."`, then it looks for an `r`, then any one character
     after that, then any one character after that
 
@@ -145,8 +145,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Hat Operator - `^`
 
--   Start of input anchor
-
+- Start of input anchor
+- 
 -   ex: if pattern is `"^is"`, then it looks for `"is"` at the very start of the
     string
 
@@ -160,8 +160,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Dollar Sign Operator - `$`
 
--   End of input anchor
-
+- End of input anchor
+- 
 -   ex: if pattern is `"is$"`, then it looks for `"is"` at the very end of the
     string
 
@@ -175,8 +175,8 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Square Brackets
 
--   Any character of your choice in the brackets
-
+- Any character of your choice in the brackets
+- 
 -   ex: if pattern is `"a[tm]e"`, then it looks for an `a`, then either `t` or `m`,
     then an `e`
 
@@ -190,7 +190,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     | `"name"` | `true`   |
     | `"rate"` | `true`   |
 
--   ex: if pattern is `"a[tm]+e"`, then it looks for an `a`, then one or more of
+- ex: if pattern is `"a[tm]+e"`, then it looks for an `a`, then one or more of
     either `t` or `m`, then an `e`
 
     | Inputs       | Matched? |
@@ -207,18 +207,18 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 #### Range of characters
 
--   You can indicate a range of characters in the square brackets.
-
--   ex: pattern of `[a-zA-Z]` means any lower/upper letter
-
+- You can indicate a range of characters in the square brackets.
+- 
+- ex: pattern of `[a-zA-Z]` means any lower/upper letter
+- 
 -   ex: pattern of `[j-w]` means any lower letter from `j` to `w`
 
 -   ex: pattern of `[0-9]` means any number from `0` to `9`
 
 #### Hat Operator inside Square Brackets
 
--   Not any of those characters
-
+- Not any of those characters
+- 
 -   ex: if pattern is `"[^aeiou]"`, then it looks for any non-vowel character
 
     | Inputs    | Matched? |
@@ -232,9 +232,9 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Parentheses
 
--   Group of characters
-
--   Primarily used to capture groups of characters for replacements
+- Group of characters
+- 
+- Primarily used to capture groups of characters for replacements
 
 -   ex: if pattern is `"^(is)"`, then it looks for `"is"` at the very start of the
     string (an equivalent pattern is `"^is"`)
@@ -247,7 +247,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     | `"is your name Pat?"` | `true`   |
     | `"Pat, my name is"`   | `false`  |
 
--   ex: if pattern is `"at( is)?"`, then it looks for `"at"`, then an optional
+- ex: if pattern is `"at( is)?"`, then it looks for `"at"`, then an optional
     `" is"`
 
     | Inputs           | Matched? |
@@ -261,13 +261,13 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### Special Character Classes
 
--   Lowercase:
+- Lowercase:
 
     -   `\s` - whitespace (space, tab, newline)
     -   `\d` - digit
     -   `\w` - word character (letter, digit, \_)
 
--   Uppercase (not):
+- Uppercase (not):
 
     -   `\S` - not whitespace
     -   `\D` - not a digit
@@ -277,7 +277,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 [Docs for RegExp in JavaScript]
 
--   You can create a regular expression in JS with forward slashes, `/`
+- You can create a regular expression in JS with forward slashes, `/`
 
     ```javascript
     const regex = /pattern/;
@@ -286,7 +286,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### `RegExp.prototype.test`
 
--   returns `true` if there is a match between the regex and a string parameter,
+- returns `true` if there is a match between the regex and a string parameter,
     otherwise `false`
 
     ```javascript
@@ -296,7 +296,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     console.log(regex.test('hello world')); // false
     ```
 
--   Ignore cases:
+- Ignore cases:
 
     ```javascript
     const regex = /banana/i; // 'i' at the end of the pattern ignores cases
@@ -308,17 +308,17 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
 
 ### `String.prototype.replace`
 
--   First argument is the pattern, second argument is the string to replace the
+- First argument is the pattern, second argument is the string to replace the
     pattern or a function that will run for every match and the return will be the
     replacement for that match.
 
--   Returns a new string with all matches of a pattern replaced by a replacement
+- Returns a new string with all matches of a pattern replaced by a replacement
     only if pattern is a regular expression and has global search, `g`.
 
--   If the pattern is a string, it will only replace the first match in the returned
+- If the pattern is a string, it will only replace the first match in the returned
     string.
 
--   Regex that has a global search and ignores casing:
+- Regex that has a global search and ignores casing:
 
     ```javascript
     const str = 'This banana is mushy. I do not like MUSHY bananas';
@@ -326,7 +326,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     console.log(str.replace(regex, 'green')); // 'This banana is green. I do not like green bananas'
     ```
 
--   Regex that has a global search and ignores casing with a function as second
+- Regex that has a global search and ignores casing with a function as second
     argument:
 
     ```javascript
@@ -341,7 +341,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     ); // 'This banana is green. I do not like MUSHY bananas'
     ```
 
--   Regex that has no global search:
+- Regex that has no global search:
 
     ```javascript
     const str = 'This banana is mushy. I do not like mushy bananas';
@@ -349,7 +349,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     console.log(str.replace(regex, 'green')); // 'This banana is green. I do not like green bananas'
     ```
 
--   Pattern as a string:
+- Pattern as a string:
 
     ```javascript
     const str = 'This banana is mushy. I do not like mushy bananas';
@@ -357,7 +357,7 @@ For more detailed explanations, [see below](#regular-expressions-in-javascript)
     console.log(str.replace(patternStr, 'green')); // 'This banana is green. I do not like mushy bananas'
     ```
 
--   Cool pattern matching with regex:
+- Cool pattern matching with regex:
 
     ```javascript
     const data = { name: 'Fido', age: 4, favToy: 'bone' };

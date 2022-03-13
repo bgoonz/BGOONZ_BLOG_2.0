@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Enzyme v2
 category: React
-layout: 2017/sheet
+
 updated: 2017-10-12
 weight: -1
 deprecated_by: /enzyme
@@ -27,7 +27,7 @@ deprecated_by: /enzyme
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Introduction
 
@@ -37,7 +37,7 @@ deprecated_by: /enzyme
 
 ### Mounting
 
-{: .-prime}
+
 
 ```js
 import { shallow, mount } from 'enzyme';

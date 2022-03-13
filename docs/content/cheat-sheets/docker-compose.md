@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: docker-compose
 category: Devops
-layout: 2017/sheet
+
 prism_languages: [yaml]
 weight: -1
 updated: 2020-01-01
@@ -65,7 +65,7 @@ docker-compose down
 
 ## Reference
 
-{: .-three-column}
+
 
 ### Building
 
@@ -169,7 +169,7 @@ volumes:
 
 ## Advanced features
 
-{: .-three-column}
+
 
 ### Labels
 

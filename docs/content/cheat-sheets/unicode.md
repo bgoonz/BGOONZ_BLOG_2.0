@@ -22,7 +22,7 @@ title: Unicode symbols
     ·   \u00b7
     ┄   \u2504
     —   \u2014 (mdash)
-    –   \u2013 (ndash)
+    -   \u2013 (ndash)
     ◦   \u25e6 circle
 
 ### Checks
@@ -60,13 +60,13 @@ title: Unicode symbols
     ›   &rsaquo;
     •   &middot;
 
-    ⌘ – &#x2318; – &#8984; – Command Key
-    ⌥ – &#x2325; – &#8997; – Option Key
-    ⇧ – &#x21E7; – &#8679; – Shift Key
-    ⎋ – &#x238B; – &#9099; – ESC Key
-    ⇪ – &#x21ea; – &#8682; – Capslock
-    ⏎ – &#x23ce; – &#9166; – Return
-    ⌫ – &#x232b; – &#9003; – Delete / Backspace
+    ⌘ - &#x2318; - &#8984; - Command Key
+    ⌥ - &#x2325; - &#8997; - Option Key
+    ⇧ - &#x21E7; - &#8679; - Shift Key
+    ⎋ - &#x238B; - &#9099; - ESC Key
+    ⇪ - &#x21ea; - &#8682; - Capslock
+    ⏎ - &#x23ce; - &#9166; - Return
+    ⌫ - &#x232b; - &#9003; - Delete / Backspace
 
     ▸   \u25b8 right arrow
     ▹

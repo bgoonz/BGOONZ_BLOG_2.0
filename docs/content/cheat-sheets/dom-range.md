@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: DOM Range
 category: JavaScript
-layout: 2017/sheet
+
 intro: |
 Quick reference to the HTML [DOM createRange API](https://devdocs.io/dom/range).
 

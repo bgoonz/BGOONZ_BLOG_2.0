@@ -1,7 +1,7 @@
 ---
 title: Jest
 category: JavaScript libraries
-layout: 2017/sheet
+
 updated: 2020-06-17
 weight: -3
 tags: [Featurable]
@@ -11,11 +11,11 @@ intro: |
 
 ## Testing
 
-{: .-three-column}
+
 
 ### Quick start
 
-{: .-prime}
+
 
 ```bash
 npm install --save-dev jest babel-jest
@@ -104,7 +104,7 @@ See: [test.skip](http://facebook.github.io/jest/docs/en/api.html#testskipname-fn
 
 ## Expect
 
-{: .-three-column}
+
 
 ### Basic expectations
 
@@ -205,7 +205,7 @@ it('works', () => {
 });
 ```
 
-{: data-line="3"}
+
 
 First run creates a snapshot. Subsequent runs match the saved snapshot.
 See: [Snapshot testing](http://facebook.github.io/jest/docs/en/snapshot-testing.html)

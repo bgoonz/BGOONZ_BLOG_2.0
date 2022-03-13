@@ -1,7 +1,7 @@
 ---
 title: Stencil
 category: JavaScript libraries
-layout: 2017/sheet
+
 updated: 2019-05-08
 keywords:
     - '@Component'
@@ -18,11 +18,11 @@ intro: |
 
 ## Quick-start guide
 
-{: .-three-column}
+
 
 ### Getting started
 
-{: .-prime}
+
 
 #### JavaScript
 

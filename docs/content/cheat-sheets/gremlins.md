@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Gremlins.js
 category: JavaScript libraries
-layout: 2017/sheet
+
 updated: 2017-10-22
 weight: -1
 intro: |

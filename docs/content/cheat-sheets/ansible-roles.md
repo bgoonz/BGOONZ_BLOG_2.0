@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Ansible roles
 category: Ansible
-layout: 2017/sheet
+
 
 ---
 
@@ -37,4 +37,4 @@ layout: 2017/sheet
 
 ### References
 
--   http://www.ansibleworks.com/docs/playbooks_roles.html
+- http://www.ansibleworks.com/docs/playbooks_roles.html

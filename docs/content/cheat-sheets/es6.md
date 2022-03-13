@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: ES2015+
 category: JavaScript
-layout: 2017/sheet
+
 tags: [Featured]
 updated: 2019-11-14
 weight: -10
@@ -157,7 +157,7 @@ const byte = 2 ** 8;
 
 ## Promises
 
-{: .-three-column}
+
 
 ### Making promises
 
@@ -226,7 +226,7 @@ See: [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 ## Destructuring
 
-{: .-three-column}
+
 
 ### Destructuring assignment
 
@@ -509,7 +509,7 @@ let handlers = {
 // Same as: handlers = { 'onclick': true }
 ```
 
-{: data-line="3"}
+
 
 See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 

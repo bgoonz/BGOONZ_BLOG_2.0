@@ -1,7 +1,7 @@
 ---
 title: Ronn
 category: Ruby libraries
-layout: 2017/sheet
+
 updated: 2017-10-15
 weight: -1
 prism_languages: [bash, ruby, json, markdown]
@@ -48,10 +48,10 @@ or more line endings just like Markdown.
 
 ## OPTIONS
 
--   `-h`, `--help` :
+- `-h`, `--help` :
     Displays the help screen.
 
--   `--version` :
+- `--version` :
     Displays version information.
 
 ## EXAMPLES
@@ -120,19 +120,19 @@ markdown(7)
 
 ### Sections
 
--   `## SYNOPSIS`
--   `## DESCRIPTION`
--   `## OPTIONS`
--   `## SYNTAX`
--   `## ENVIRONMENT`
--   `## RETURN VALUES`
--   `## STANDARDS`
--   `## SECURITY CONSIDERATIONS`
--   `## BUGS`
--   `## HISTORY`
--   `## AUTHOR`
--   `## COPYRIGHT`
--   `## SEE ALSO`
+- `## SYNOPSIS`
+- `## DESCRIPTION`
+- `## OPTIONS`
+- `## SYNTAX`
+- `## ENVIRONMENT`
+- `## RETURN VALUES`
+- `## STANDARDS`
+- `## SECURITY CONSIDERATIONS`
+- `## BUGS`
+- `## HISTORY`
+- `## AUTHOR`
+- `## COPYRIGHT`
+- `## SEE ALSO`
     {: .-four-column}
 
 ## Other CLI options
@@ -203,7 +203,7 @@ marked-man foo.1.md > foo.1
 
 #### Differences
 
--   No definition lists
--   Can't use `<br>`
+- No definition lists
+- Can't use `<br>`
 
 See [marked-man](https://github.com/kapouer/marked-man).

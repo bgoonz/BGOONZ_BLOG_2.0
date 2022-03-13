@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Elixir
 category: Elixir
-layout: 2017/sheet
+
 tags: [New]
 updated: 2018-07-04
 weight: -10
@@ -27,11 +27,11 @@ weight: -10
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Hello world
 
-{: .-prime}
+
 
 ```elixir
 # hello.exs
@@ -131,7 +131,7 @@ Pattern matching works in function parameters too.
 
 ## Control flow
 
-{: .-three-column}
+
 
 ### If
 

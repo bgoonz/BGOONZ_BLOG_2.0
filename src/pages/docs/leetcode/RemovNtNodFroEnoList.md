@@ -39,9 +39,9 @@ Set a pointer `p1` for iterating, and `p2` which is `n` nodes behind, pointing a
 
 Boundaries that should be awared of:
 
--   `p2` could be one node before `head`, which means the `head` should be removed.
--   `p2` could be larger than the length of the list (Though the description says `n` will always be valid, we take care of it anyway).
--   It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
+- `p2` could be one node before `head`, which means the `head` should be removed.
+- `p2` could be larger than the length of the list (Though the description says `n` will always be valid, we take care of it anyway).
+- It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
 ```javascript
 /**

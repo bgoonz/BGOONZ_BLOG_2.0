@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Flow
-layout: 2017/sheet
+
 category: JavaScript libraries
 updated: 2020-07-05
 weight: -3
@@ -27,11 +27,11 @@ tags: [Featurable]
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Simple example
 
-{: .-prime}
+
 
 ```js
 /* @flow */
@@ -169,7 +169,7 @@ See: [Optional properties](https://flow.org/en/docs/types/primitives/#toc-option
 
 ## Objects
 
-{: .-three-column}
+
 
 ### Width subtyping
 

@@ -138,9 +138,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -174,8 +174,8 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -283,8 +283,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -897,12 +897,12 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
+- With `node.val`
     1.  `node.val` plus the max sum of a path that ends with `node.left`.
     2.  `node.val` plus the max sum of a path that starts with `node.right`.
     3.  `node.val` plus the max sum of both paths.
     4.  Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
+- Without`node.val` (disconnected)
     1.  The max-sum path is somewhere under the `node.left` subtree.
     2.  The max-sum path is somewhere under the `node.right` subtree.
 
@@ -1125,11 +1125,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1255,11 +1255,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1801,8 +1801,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -1862,11 +1862,11 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
 [Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')

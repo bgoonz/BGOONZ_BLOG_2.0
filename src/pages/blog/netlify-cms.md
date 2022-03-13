@@ -35,12 +35,12 @@ Netlify CMS is an open source content management system for your Git workflow th
 
 At its core, Netlify CMS is an open-source React app that acts as a wrapper for the Git workflow, using the GitHub, GitLab, or Bitbucket API. This provides many advantages, including:
 
--   **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
-
--   **Platform agnostic:** Works with most static site generators.
-
--   **Easy installation:** Add two files to your site and hook up the backend by including those files in your build process or linking to our Content Delivery Network (CDN).
-
+- **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
+- 
+- **Platform agnostic:** Works with most static site generators.
+- 
+- **Easy installation:** Add two files to your site and hook up the backend by including those f
+- 
 -   **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
 
 -   **Flexible content types:** Specify an unlimited number of content types with custom fields.
@@ -55,15 +55,15 @@ The folks at Netlify created Netlify CMS to fill a gap in the static site genera
 
 With this in mind, you can:
 
--   Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
-
--   Use Netlify without Netlify CMS and edit your static site in your code editor.
+- Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
+- 
+- Use Netlify without Netlify CMS and edit your static site in your code editor.
 
 -   Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
 
 If you hook up Netlify CMS to your website, you're basically adding a tool for content editors to make commits to your site repository without touching code or learning Git.
 
--   Add to Your Site**These generatorsstore static files in**Jekyll, GitBook/ (project root)Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper/staticNext/publicHexo, Middleman, Jigsaw/sourceSpike/viewsWyam/inputPelican/contentVuePress/.vuepress/publicElmstatic/\_site11ty/\_sitepreact-cli/src/staticnamePost type identifier, used in routes. Must be unique.labelWhat the admin UI calls the post type.folderWhere files of this type are stored, relative to the repo root.createSet to true to allow users to create new files in this collection.slugTemplate for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}.fieldsFields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for body, which follows the front matter). Each field contains the following properties:
+- Add to Your Site**These generatorsstore static files in**Jekyll, GitBook/ (project root)Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper/staticNext/publicHexo, Middleman, Jigsaw/sourceSpike/viewsWyam/inputPelican/contentVuePress/.vuepress/publicElmstatic/\_site11ty/\_sitepreact-cli/src/staticnamePost type identifier, used in routes. Must be unique.labelWhat the admin UI calls the post type.folderWhere files of this type are stored, relative to the repo root.createSet to true to allow users to create new files in this collection.slugTemplate for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}.fieldsFields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for body, which follows the front matter). Each field contains the following properties:
 
 You can adapt Netlify CMS to a wide variety of projects. It works with any content written in markdown, JSON, YAML, or TOML files, stored in a repo on [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/). You can also create your own custom backend.
 
@@ -131,10 +131,10 @@ Given this example, our collections settings would look like this in your Netlif
 
 Let's break that down:
 
--   label: Field label in the editor UI.
-
--   name: Field name in the document front matter.
-
+- label: Field label in the editor UI.
+- 
+- name: Field name in the document front matter.
+- 
 -   widget: Determines UI style and value data type (details below).
 
 -   default (optional): Sets a default value for the field.

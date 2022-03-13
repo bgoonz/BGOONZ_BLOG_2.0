@@ -1,6 +1,6 @@
 # Terminal Cheat Sheet
 
-### 1 – SYSTEM INFORMATION
+### 1 - SYSTEM INFORMATION
 
 \# Display Linux system information uname -a
 
@@ -44,7 +44,7 @@ w
 
 whoami
 
-### 2 – HARDWARE INFORMATION
+### 2 - HARDWARE INFORMATION
 
 \# Display messages in kernel ring buffer dmesg
 
@@ -84,7 +84,7 @@ hdparm -tT /dev/sda
 
 badblocks -s /dev/sda
 
-### 3 – PERFORMANCE MONITORING AND STATISTICS
+### 3 - PERFORMANCE MONITORING AND STATISTICS
 
 \# Display and manage the top processes top
 
@@ -132,7 +132,7 @@ free -h
 
 watch df -h
 
-### 4 – USER INFORMATION AND MANAGEMENT
+### 4 - USER INFORMATION AND MANAGEMENT
 
 \# Display the user and group ids of your current user. id
 
@@ -164,7 +164,7 @@ userdel john
 
 usermod -aG sales john
 
-### 5 – FILE AND DIRECTORY COMMANDS
+### 5 - FILE AND DIRECTORY COMMANDS
 
 \# List all files in a long listing (detailed) format ls -al
 
@@ -232,7 +232,7 @@ tail file
 
 tail -f file
 
-### 6 – PROCESS MANAGEMENT
+### 6 - PROCESS MANAGEMENT
 
 \# Display your currently running processes ps
 
@@ -276,7 +276,7 @@ fg
 
 fg n
 
-### 7 – FILE PERMISSIONS
+### 7 - FILE PERMISSIONS
 
 ![Linux chmod example](https://www.linuxtrainingacademy.com/wp-content/uploads/2017/02/linux-permissions-chart.png) PERMISSION EXAMPLE
 
@@ -288,7 +288,7 @@ fg n
 
 &#x20; r = Read w = write x = execute - = no access
 
-### 8 – NETWORKING
+### 8 - NETWORKING
 
 \# Display all network interfaces and IP address ip a
 
@@ -336,7 +336,7 @@ wget http://domain.com/file
 
 netstat -nutlp
 
-### 9 – ARCHIVES (TAR FILES)
+### 9 - ARCHIVES (TAR FILES)
 
 \# Create tar named archive.tar containing directory. tar cf archive.tar directory
 
@@ -360,7 +360,7 @@ tar cjf archive.tar.bz2 directory
 
 tar xjf archive.tar.bz2
 
-### 10 – INSTALLING PACKAGES
+### 10 - INSTALLING PACKAGES
 
 \# Search for a package by keyword. yum search keyword
 
@@ -384,7 +384,7 @@ yum remove package
 
 tar zxvf sourcecode.tar.gz cd sourcecode ./configure make make install
 
-### 11 – SEARCH
+### 11 - SEARCH
 
 \# Search for pattern in file grep pattern file
 
@@ -404,7 +404,7 @@ find /home/john -name 'prefix\*'
 
 find /home -size +100M
 
-### 12 – SSH LOGINS
+### 12 - SSH LOGINS
 
 \# Connect to host as your local username. ssh host
 
@@ -416,7 +416,7 @@ ssh user@host
 
 ssh -p port user@host
 
-### 13 – FILE TRANSFERS
+### 13 - FILE TRANSFERS
 
 \# Secure copy file.txt to the /tmp folder on server scp file.txt server:/tmp
 
@@ -436,7 +436,7 @@ rsync -a /home /backups/
 
 rsync -avz /home server:/backups/
 
-### 14 – DISK USAGE
+### 14 - DISK USAGE
 
 \# Show free and used space on mounted filesystems df -h
 
@@ -456,7 +456,7 @@ du -ah
 
 du -sh
 
-### 15 – DIRECTORY NAVIGATION
+### 15 - DIRECTORY NAVIGATION
 
 \# To go up one level of the directory tree. (Change into the parent directory.) cd ..
 

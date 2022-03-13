@@ -428,4 +428,4 @@ var TodoList = React.createClass({
 
 ### See also
 
--   [Animations](http://facebook.github.io/react/docs/animation.html)
+- [Animations](http://facebook.github.io/react/docs/animation.html)

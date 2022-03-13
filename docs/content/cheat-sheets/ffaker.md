@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: FFaker
 category: Ruby libraries
-layout: 2017/sheet
+
 updated: 2017-09-12
 
 ---

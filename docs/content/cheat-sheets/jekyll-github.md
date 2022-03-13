@@ -1,6 +1,6 @@
 ---
 title: Jekyll for GitHub pages
-layout: 2017/sheet
+
 category: Jekyll
 tags: [WIP]
 updated: 2017-11-17
@@ -99,7 +99,7 @@ Just mention anyone in any page. Their names will be turned into links.
 
 ## Redirects
 
-{: .-three-column}
+
 
 ### Configuration
 

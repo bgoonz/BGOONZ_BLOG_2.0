@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Chef
 category: Devops
-layout: 2017/sheet
+
 
 ---
 
@@ -123,5 +123,5 @@ end
 
 ## Also see
 
--   [Learn Chef Rally](https://learn.chef.io) _(learn.chef.io)_
--   [install_from_source.rb recipe](https://github.com/mdxp/nodejs-cookbook/blob/master/recipes/install_from_source.rb) _(github.com)_
+- [Learn Chef Rally](https://learn.chef.io) _(learn.chef.io)_
+- [install_from_source.rb recipe](https://github.com/mdxp/nodejs-cookbook/blob/master/recipes/install_from_source.rb) _(github.com)_

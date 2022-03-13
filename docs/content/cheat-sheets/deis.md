@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Deis
 category: Devops
-layout: 2017/sheet
+
 
 ---
 

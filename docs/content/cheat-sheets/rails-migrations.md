@@ -101,8 +101,8 @@ category: Rails
     add_index :accounts, [:branch_id, :party_id], :unique => true, :name => "by_branch_party"
 
     # Length
-    add_index :accounts, :name, :name => ‘by_name’, :length => 10
-    add_index :accounts, [:name, :surname], :name => ‘by_name_surname’,
+    add_index :accounts, :name, :name => ‘by_name', :length => 10
+    add_index :accounts, [:name, :surname], :name => ‘by_name_surname',
       :length => {
         :name => 10,
         :surname => 15

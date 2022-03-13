@@ -8,9 +8,9 @@ Regular expressions (regex or regexp) are extremely useful in **extracting infor
 
 Fields of application range from validation to parsing/replacing strings, passing through translating data to other formats and web scraping.
 
-One of the most interesting features is that once you’ve learned the syntax, you can actually use this tool in (almost) all programming languages ​​(JavaScript, Java, VB, C #, C / C++, Python, Perl, Ruby, Delphi, R, Tcl, and many others) with the slightest distinctions about the support of the most advanced features and syntax versions supported by the engines).
+One of the most interesting features is that once you've learned the syntax, you can actually use this tool in (almost) all programming languages ​​(JavaScript, Java, VB, C #, C / C++, Python, Perl, Ruby, Delphi, R, Tcl, and many others) with the slightest distinctions about the support of the most advanced features and syntax versions supported by the engines).
 
-Let’s start by looking at some examples and explanations.
+Let's start by looking at some examples and explanations.
 
 ## **Anchors — ^ and $**
 
@@ -28,7 +28,7 @@ abc**\*** matches a string that has **ab followed by zero or more c** \-> [**Try
 
 **\\d** matches a **single character** that is a **digit** \-> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\w** matches a **word character** (alphanumeric character plus underscore) -> [**Try it!**](https://regex101.com/r/cO8lqs/4)**\\s** matches a **whitespace character** (includes tabs and line breaks)**.** matches **any character** \-> [**Try it!**](https://regex101.com/r/cO8lqs/5)
 
-Use the `.` operator carefully since often class or negated character class (which we’ll cover next) are faster and more precise.
+Use the `.` operator carefully since often class or negated character class (which we'll cover next) are faster and more precise.
 
 `\d`, `\w` and `\s` also present their negations with `\D`, `\W` and `\S` respectively.
 
@@ -48,8 +48,8 @@ We are learning how to construct a regex but forgetting a fundamental concept: *
 
 A regex usually comes within this form `**/**abc**/**`, where the search pattern is delimited by two slash characters `/`. At the end we can specify a flag with these values (we can also combine them each other):
 
--   **g** (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
--   **m** (multi-line) when enabled `^` and `$` will match the start and end of a line, instead of the whole string
--   **i** (insensitive) makes the whole expression case-insensitive (for instance `**/aBc/i**` would match `**AbC**`)
+- **g** (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
+- **m** (multi-line) when enabled `^` and `$` will match the start and end of a line, instead of the whole string
+- **i** (insensitive) makes the whole expression case-insensitive (for instance `**/aBc/i**` would match `**AbC**`)
 
 [Source](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)

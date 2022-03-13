@@ -24,11 +24,11 @@ template: docs
 
 For a more complete guide… checkout :
 
--   way we analyze how efficient algorithms are without getting too mired in details
-
--   can model how much time any function will take given n inputs
-
--   interested in order of magnitude of number of the exact figure
+- way we analyze how efficient algorithms are without getting too mired in details
+- 
+- can model how much time any function will take given n inputs
+- 
+- interested in order of magnitude of number of the exact figure
 
 -   O absorbs all fluff and n = biggest term
 
@@ -46,9 +46,9 @@ no loops or exit & return = O(1)
 **recursive**: as you add more terms, increase in time as you add input diminishes
 **recursion**: when you define something in terms of itself, a function that calls itself
 
--   used because of ability to maintain state at diffferent levels of recursion
-
--   inherently carries large footprint
+- used because of ability to maintain state at diffferent levels of recursion
+- 
+- inherently carries large footprint
 
 -   every time function called, you add call to stack
 
@@ -57,27 +57,27 @@ no loops or exit & return = O(1)
 
 O(n log(n)) & O(log(n)): dividing/halving
 
--   if code employs recursion/divide-and-conquer strategy
-
+- if code employs recursion/divide-and-conquer strategy
+- 
 -   what power do i need to power my base to get n
 
 # Time Definitions
 
--   **constant**: does not scale with input, will take same amount of time
-
--   for any input size n, constant time performs same number of operations every time
-
--   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
-
--   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
-
--   halving
-
--   **linear**: increases number of operations it performs as linear function of input size n
-
--   number of additional operations needed to perform grows in direct proportion to increase in input size n
-
--   **log-linear**: increases number of operations it performs as log-linear function of input size n
+- **constant**: does not scale with input, will take same amount of time
+- 
+- for any input size n, constant time performs same number of operations every time
+- 
+- **logarit
+- 
+- function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform
+- 
+- halving
+- 
+- **linear**: increases number of operations it performs as linear function of input size n
+- 
+- number of additional operations needed to perform grows in direct proportion to increase in
+- 
+- **log-linear**: increases number of operations it performs as log-linear function of input size n
 
 -   looking over every element and doing work on each one
 
@@ -95,9 +95,9 @@ O(n log(n)) & O(log(n)): dividing/halving
 
 # Space Complexity
 
--   How does the space usage scale/change as input gets very large?
-
--   What auxiliary space does your algorithm use or is it in place (constant)?
+- How does the space usage scale/change as input gets very large?
+- 
+- What auxiliary space does your algorithm use or is it in place (constant)?
 
 -   Runtime stack space counts as part of space complexity unless told otherwise.
 

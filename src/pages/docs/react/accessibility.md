@@ -44,7 +44,7 @@ Change the `import` statement at the top of `Todo.js` so that it includes `useRe
 import React, { useRef, useState } from "react";
 ```
 
-Then, create two new constants beneath the hooks in your `Todo()` function. Each should be a ref – one for the "Edit" button in the view template and one for the edit field in the editing template.
+Then, create two new constants beneath the hooks in your `Todo()` function. Each should be a ref - one for the "Edit" button in the view template and one for the edit field in the editing template.
 
 ```
 const editFieldRef = useRef(null);
@@ -97,7 +97,7 @@ useEffect(() => {
 });
 ```
 
-To illustrate the difference between the main render process and code run inside `useEffect()`, add another log – put this one below the previous addition:
+To illustrate the difference between the main render process and code run inside `useEffect()`, add another log - put this one below the previous addition:
 
 ```
 console.log("main render");

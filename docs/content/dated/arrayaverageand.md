@@ -8,9 +8,9 @@ let values = [2, 56, 3, 41, 0, 4, 100, 23];
 
 To get the average, we have to sum up numbers and then divide by the number of values. Steps are:
 
--   get the array length
--   sum up values
--   get the average (`sum/length`)
+- get the array length
+- sum up values
+- get the average (`sum/length`)
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -31,8 +31,8 @@ values /= count;
 
 Now, to get the median steps are:
 
--   sort the array
--   get the arethmic mean of the middle values
+- sort the array
+- get the arethmic mean of the middle values
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];

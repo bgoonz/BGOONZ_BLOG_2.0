@@ -54,7 +54,7 @@ describes JavaScript regular expressions.
 
 You construct a regular expression in one of two ways:
 
--   Using a regular expression literal, which consists of a pattern
+- Using a regular expression literal, which consists of a pattern
     enclosed between slashes, as follows:
 
     ```{.brush: .js .notranslate}
@@ -65,7 +65,7 @@ You construct a regular expression in one of two ways:
     expression when the script is loaded. If the regular
     expression remains constant, using this can improve performance.
 
--   Or calling the constructor function of the
+- Or calling the constructor function of the
     [`RegExp`](../Reference/Global_Objects/RegExp.html) object, as
     follows:
 
@@ -467,7 +467,7 @@ start or end of the entire string.
 ::: {.blockIndicator .note}
 **Note:** Several examples are also available in:
 
--   The reference pages for
+- The reference pages for
     [`exec()`](../Reference/Global_Objects/RegExp/exec.html),
     [`test()`](../Reference/Global_Objects/RegExp/test.html),
     [`match()`](../Reference/Global_Objects/String/match.html),
@@ -475,7 +475,7 @@ start or end of the entire string.
     [`search()`](../Reference/Global_Objects/String/search.html),
     [`replace()`](../Reference/Global_Objects/String/replace.html),
     [`split()`](../Reference/Global_Objects/String/split.html)
--   This guide articles\': [character
+- This guide articles\': [character
     classes](Regular_Expressions/Character_Classes.html),
     [assertions](Regular_Expressions/Assertions.html), [groups and
     ranges](Regular_Expressions/Groups_and_Ranges.html),

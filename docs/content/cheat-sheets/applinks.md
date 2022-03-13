@@ -33,13 +33,13 @@ category: HTML
 
 ### Device types
 
--   `ios`
--   `ipad`
--   `iphone`
--   `android`
--   `windows_phone`
--   `web`
+- `ios`
+- `ipad`
+- `iphone`
+- `android`
+- `windows_phone`
+- `web`
 
 ### Reference
 
--   [applinks.org](http://applinks.org/documentation/)
+- [applinks.org](http://applinks.org/documentation/)

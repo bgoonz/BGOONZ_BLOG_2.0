@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Homebrew
-layout: 2017/sheet
+
 weight: -3
 category: CLI
 

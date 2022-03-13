@@ -1,7 +1,7 @@
 ---
 title: Stylus
 category: CSS
-layout: 2017/sheet
+
 prism_languages: [stylus]
 weight: -3
 updated: 2017-10-30
@@ -10,7 +10,7 @@ tags: [Featurable]
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### CSS syntax
 
@@ -74,7 +74,7 @@ div
 
 ## Mixins
 
-{: .-three-column}
+
 
 ### Without arguments
 
@@ -131,7 +131,7 @@ mobile()
     {block}
 ```
 
-{: data-line="3"}
+
 
 ```stylus
 +mobile()
@@ -161,7 +161,7 @@ See: [Rest params](http://stylus-lang.com/docs/vargs.html)
 
 ## Functions
 
-{: .-three-column}
+
 
 ### Functions
 
@@ -226,7 +226,7 @@ See: [Multiple return values](http://stylus-lang.com/docs/functions.html#multipl
 
 ## Values
 
-{: .-three-column}
+
 
 ### Conditional assignment
 
@@ -298,13 +298,13 @@ name = 'blue'
 lookup('light-' + name)
 ```
 
-{: data-line="3"}
+
 
 See: [lookup](https://stylus-lang.com/docs/bifs.html#lookupname)
 
 ## Advanced features
 
-{: .-three-column}
+
 
 ### Conditional
 
@@ -373,7 +373,7 @@ See: [Instance check](https://stylus-lang.com/docs/operators.html#instance-check
 
 ## Built-in functions
 
-{: .-three-column}
+
 
 ### Color functions
 
@@ -444,7 +444,7 @@ size($width)
 // yields: .a, b { width: 10px }
 ```
 
-Applies its contents to the given selector on the first call, but would @extend the first call’s selector at the second call with the same params.
+Applies its contents to the given selector on the first call, but would @extend the first call's selector at the second call with the same params.
 
 See: [cache](http://stylus-lang.com/docs/bifs.html#cachekeys)
 

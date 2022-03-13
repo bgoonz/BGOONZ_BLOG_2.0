@@ -1,7 +1,7 @@
 ---
 title: Rake
 category: Ruby
-layout: 2017/sheet
+
 ---
 
 ### Basic syntax

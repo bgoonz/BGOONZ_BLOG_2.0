@@ -106,8 +106,8 @@ nmap -d ...
 - Closed: This indicates that the probes were received but there is no application listening on this port.
 - Filtered: This indicates that the probes were not received and the state could not be established. It also indicates that the probes are being dropped by some kind of filtering.
 - Unfiltered: This indicates that the probes were received but a state could not be established.
-- Open/Filtered: This indicates that the port was filtered or open but Nmap couldn’t establish the state.
-- Closed/Filtered: This indicates that the port was filtered or closed but Nmap couldn’t establish the state.
+- Open/Filtered: This indicates that the port was filtered or open but Nmap couldn't establish the state.
+- Closed/Filtered: This indicates that the port was filtered or closed but Nmap couldn't establish the state.
 
 ## Additional Scan Types
 

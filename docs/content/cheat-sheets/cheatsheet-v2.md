@@ -4732,7 +4732,7 @@ Usage:
 
 _Return to the Top_
 
-````
+```
 ## Python Cheatsheet
 
 - [About](#about)
@@ -4956,7 +4956,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-````
+```
 
 _Return to the Top_
 
@@ -8793,7 +8793,7 @@ Traceback (most recent call last):
 AssertionError: The pod bay doors need to be "open".
 ```
 
-In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.
+In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
 
 Disabling Assertions
 
@@ -8858,7 +8858,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn't prevent the program from working but might do so in the future.              |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
@@ -8866,7 +8866,7 @@ _Return to the Top_
 
 ### Disabling Logging
 
-After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable() function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
+After you've debugged your program, you probably don't want all these log messages cluttering the screen. The logging.disable() function disables these so that you don't have to go into your program and remove all the logging calls by hand.
 
 ```python
 >>> import logging
@@ -9127,7 +9127,7 @@ _Return to the Top_
 
 ## `__main__` Top-level script environment
 
-`__main__` is the name of the scope in which top-level code executes. A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+`__main__` is the name of the scope in which top-level code executes. A module's **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
@@ -9160,7 +9160,7 @@ For example we are developing script which is designed to be used as module, we 
 
 ### Advantages
 
-1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
+1. Every Python module has it's `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
 4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
@@ -9171,7 +9171,7 @@ _Return to the Top_
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
-The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
+The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you've put the Python source code within your project.
 
 This allows you to easily install Python packages. Often it's enough to write:
 
@@ -9309,7 +9309,7 @@ Usage:
     ```
 3.  Deactivate
 
-    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+    To move onto something else in the command line type ‘deactivate' to deactivate your environment.
 
     ```
     deactivate
@@ -9318,7 +9318,7 @@ Usage:
     Notice how the parenthesis disappear.
 4.  Workon
 
-    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
+    Open up the command prompt and type ‘workon HelloWold' to activate the environment and move into your root project folder
 
     ```
     workon HelloWold
@@ -9416,7 +9416,7 @@ _Return to the Top_
     pipenv install <package>
     ```
 
-    Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+    Pipenv will install your package and create a Pipfile for you in your project's directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 3.  Uninstall Packages
 
     ```

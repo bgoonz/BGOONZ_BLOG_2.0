@@ -273,7 +273,7 @@ let MODULE = (function (my) {
 
 })(MODULE || {});
 
-````
+```
 
 ### Tight Augmentation
 
@@ -289,7 +289,7 @@ let MODULE = (function (my) {
 
     return my;
 })(MODULE);
-````
+```
 
 ### Cloning and Inheritance
 

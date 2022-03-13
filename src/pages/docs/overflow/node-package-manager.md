@@ -43,9 +43,9 @@ template: docs
 
 1. Explain the complexity of and write a function that performs bubble sort on an array of numbers.
 
--   Time Complexity: O(n^2)
-    -   In our worst case, our input is in the opposite order. We have to perform n swaps and loop through our input n times because a swap is made each time.
--   Space Complexity: O(1)
+- Time Complexity: O(n^2)
+- -   In our worst case, our input is in the opposite order. We have to perform n swaps and loop through our input n times because a swap is made each
+- Space Complexity: O(1)
     -   We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 -   Code example for bubbleSort:
 
@@ -75,13 +75,13 @@ function bubbleSort(array) {
 
 2. Explain the complexity of and write a function that performs selection sort on an array of numbers.
 
--   Time Complexity: O(n^2)
+- Time Complexity: O(n^2)
     -   Our nested loop structure is dependent on the size of our input.
     -   The outer loop always occurs n times.
     -   For each of those iterations, we have another loop that runs (n - i) times. This just means that the inner loop runs one less time each iteration, but this averages out to (n/2).
     -   Our nested structure is then T(n \* n/2) = O(n^2)
--   Space Complexity: O(1)
-    -   We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
+- Space Complexity: O(1)
+- -   We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 -   Code example for selectSort:
 
 ```javascript
@@ -107,13 +107,13 @@ function selectionSort(arr) {
 
 3. Explain the complexity of and write a function that performs insertion sort on an array of numbers.
 
--   Time Complexity: O(n^2)
+- Time Complexity: O(n^2)
     -   Our nested loop structure is dependent on the size of our input.
     -   The outer loop always occurs n times.
     -   For each of those iterations, we have another loop that runs a maximum of (i - 1) times. This just means that the inner loop runs one more time each iteration, but this averages out to (n/2).
     -   Our nested structure is then T(n \* n/2) = O(n^2)
--   Space Complexity: O(1)
-    -   We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
+- Space Complexity: O(1)
+- -   We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 -   Code example for insertionSort:
 
 ```javascript
@@ -131,12 +131,12 @@ function insertionSort(arr) {
 
 4. Explain the complexity of and write a function that performs merge sort on an array of numbers.
 
--   Time Complexity: O(n log n)
+- Time Complexity: O(n log n)
     -   Our mergeSort function divides our input in half at each step, recursively calling itself with smaller and smaller input. This results in log n stack frames.
     -   On each stack frame, our worst case scenario is having to make n comparisons in our merge function in order to determine which element should come next in our sorted array.
     -   Since we have log n stack frames and n operations on each frame, we end up with an O(n log n) time complexity
--   Space Complexity: O(n)
-    -   We are ultimately creating n subarrays, making our space complexity linear to our input size.
+- Space Complexity: O(n)
+- -   We are ultimately creating n subarrays, making our space complexity linear to our input size.
 -   Code example for mergeSort:
 
 ```javascript
@@ -188,14 +188,14 @@ function mergeSort(array) {
 
 5. Explain the complexity of and write a function that performs quick sort on an array of numbers.
 
--   Time Complexity: Average O(n log n), Worst O(n^2)
+- Time Complexity: Average O(n log n), Worst O(n^2)
     -   In our worst case, the pivot that we select results in every element going into either the left or right array. If this happens we end up making n recursive calls to quickSort, with n comparisons at each call.
     -   In our average case, we pick something that more evenly splits the arrays, resulting in approximately log n recursive calls and an overall complexity of O(n log n).
     -   Quick sort is unique in that the worst case is so exceedingly rare that it is often considered an O(n log n) complexity, even though this is not technically accurate.
--   Space Complexity: Our implementation O(n), Possible implementation O(log n)
+- Space Complexity: Our implementation O(n), Possible implementation O(log n)
     -   The partition arrays that we create are directly proportional to the size of the input, resulting in O(n) space complexity.
     -   With some tweaking, we could implement an in-place quick sort, which would eliminate the creation of new arrays. In this case, the log n stack frames from the recursion are the only proportional amount of space that is used, resulting in O(log n) space complexity.
--   Code example for quickSort:
+- Code example for quickSort:
 
 ```javascript
 function quickSort(array) {
@@ -220,12 +220,12 @@ function quickSort(array) {
 
 6. Explain the complexity of and write a function that performs a binary search on a sorted array of numbers.
 
--   Time Complexity: O(log n)
-    -   With each recursive call, we split our input in half. This means we have to make at most log n checks to know if the element is in our array.
+- Time Complexity: O(log n)
+- -   With each recursive call, we split our input in half. This means we have to make at most log n checks to know if the element is in our array.
 -   Space Complexity: Our implementation O(n), Possible implementation O(1)
     -   We have to make a subarray for each recursive call. In the worst case (we don't find the element), the total length of these arrays is approximately equal to the length of the original (n).
     -   If we kept references to the beginning and end index of the portion of the array that we are searching, we could eliminate the need for creating new subarrays. We could also use a while loop to perform this functionality until we either found our target or our beginning and end indices crossed. This would eliminate the space required for recursive calls (adding stack frames). Ultimately we would be using the same number of variables independent of input size, resulting in O(1).
--   Code example for binarySearch and binarySearchIndex:
+- Code example for binarySearch and binarySearchIndex:
 
 ```javascript
 // Returns simply true/false for presence

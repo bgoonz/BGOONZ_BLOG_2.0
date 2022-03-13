@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Awesome Redux
 category: React
-layout: 2017/sheet
+
 updated: 2017-11-19
 
 ---

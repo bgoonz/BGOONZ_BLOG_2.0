@@ -1,7 +1,7 @@
 ---
 title: Ledger CLI
 category: Ledger
-layout: 2017/sheet
+
 updated: 2020-05-23
 weight: -5
 ---
@@ -83,7 +83,7 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash     $-20  = $500
 ```
 
-{: data-line="3"}
+
 
 `Cash $X = $500` ensures Cash is at $500 after the transaction.
 
@@ -122,7 +122,7 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash
 ```
 
-{: data-line="3"}
+
 
 ```bash
 ; total cost
@@ -131,7 +131,7 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash
 ```
 
-{: data-line="3"}
+
 
 ```bash
 ; fixed lot prices
@@ -140,7 +140,7 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash
 ```
 
-{: data-line="3"}
+
 
 ### Commodity definitions
 

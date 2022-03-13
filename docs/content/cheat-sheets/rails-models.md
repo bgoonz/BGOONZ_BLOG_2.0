@@ -1,7 +1,7 @@
 ---
 title: Rails models
 category: Rails
-layout: 2017/sheet
+
 ---
 
 ## Generating
@@ -549,7 +549,7 @@ user = User.create(
 )
 ```
 
-You can also specify a class option as the second parameter that’ll raise an
+You can also specify a class option as the second parameter that'll raise an
 exception if a serialized object is retrieved as a descendant of a class not in
 the hierarchy.
 
@@ -560,7 +560,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-{: data-line="3"}
+
 
 ```ruby
 # Reading it raises SerializationTypeMismatch

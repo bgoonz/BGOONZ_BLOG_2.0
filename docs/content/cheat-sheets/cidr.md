@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: CIDR
 category: Misc
-layout: 2017/sheet
+
 updated: 2018-05-14
 
 ---
@@ -34,4 +34,4 @@ updated: 2018-05-14
 
 ### Resources
 
--   [CIDR range calculator](http://ipaddressguide.com/cidr#range) _(ipaddressguide.com)_
+- [CIDR range calculator](http://ipaddressguide.com/cidr#range) _(ipaddressguide.com)_

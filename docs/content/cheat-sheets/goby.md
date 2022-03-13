@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Goby
-layout: 2017/sheet
+
 prism_languages: [ruby]
 weight: -3
 updated: 2018-12-06
@@ -31,7 +31,7 @@ Goby's language design is based on Ruby language's, slim and shaped up. Differen
 
 ### Hello world
 
-{: .-prime}
+
 
 #### hello.gb
 
@@ -94,7 +94,7 @@ See [igb manual & test script](https://github.com/goby-lang/goby/blob/master/igb
 
 ## Variables
 
-{: .-three-column}
+
 
 ### Local variable
 
@@ -327,7 +327,7 @@ end
 
 ## Module/Class definition
 
-{: .-three-column}
+
 
 ### Module definition and `include`
 
@@ -468,7 +468,7 @@ end
 
 ## Literal
 
-{: .-three-column}
+
 
 ### Keyword
 
@@ -605,7 +605,7 @@ Use the annotations to keep the comments concise.
 
 ## Flow control
 
-{: .-three-column}
+
 
 ### `if`, `else`, `elsif`
 
@@ -682,7 +682,7 @@ Under construction. Join [#605](https://github.com/goby-lang/goby/issues/605).
 
 ## Block
 
-{: .-three-column}
+
 
 ### Block
 
@@ -798,7 +798,7 @@ Foo.new.bar b  #=> 3
 
 ## Native class (Primary)
 
-{: .-three-column}
+
 
 Goby's most "native" classes cannot instantiate with `new` in principle.
 
@@ -904,7 +904,7 @@ b.call  #=> 100
 
 ## Native class (secondary)
 
-{: .-three-column}
+
 
 ### `Float`
 
@@ -1001,7 +1001,7 @@ f.name  #=> "../test_fixtures/file_test/size.gb"
 
 ## Native class (Golang-oriented)
 
-{: .-three-column}
+
 
 ### `GoMap`
 

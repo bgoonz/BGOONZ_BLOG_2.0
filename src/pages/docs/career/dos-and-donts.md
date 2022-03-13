@@ -14,9 +14,9 @@ template: docs
 
 #### Legend
 
--   ✅ = Do
--   ❌ = Don't
--   ⚠️ = Situational
+- ✅ = Do
+- ❌ = Don't
+- ⚠️ = Situational
 
 ### Before interview
 

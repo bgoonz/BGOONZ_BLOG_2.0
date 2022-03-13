@@ -1,6 +1,6 @@
 tip-writer-support: https://www.coinbase.com/loverajoel
 
--   /en/detect-document-ready-in-pure-js/
+- /en/detect-document-ready-in-pure-js/
 
 The cross-browser way to check if the document has loaded in pure JavaScript is using [`readyState`](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState).
 

@@ -15,15 +15,15 @@ unary, and written in infix notation, i.e. `a op b`.
 
 Here is list of typical operations:
 
--   **[Assignment][]**: `a = b`, `a += b`, `a |= b`, and more
-
--   **[Arithmetic][]**: `a + b`, `a - b`, `a * b`, `a / b`, `a % b`, `+a`, `-a`
-
--   **String concatenation:** `a + b`
-
--   **[Boolean][]:** `a && b`, `a || b`, `!a`
-
--   **[Bitwise][]:** `a & b`, `a | b`, `a ^ b`, `~a`, `a << b`, `a >> b`, `a >>> b`
+- **[Assignment][]**: `a = b`, `a += b`, `a |= b`, and more
+- 
+- **[Arithmetic][]**: `a + b`, `a - b
+- 
+- **String concatenation:** `a + b`
+- 
+- **[Boolean][]:** `a && b`, `a || b`, `!a`
+- 
+- **[Bitwise][]:** `a & b`, `a | b`, `a ^ b`, `~a`, `a << b`, `a >> b`, `a >>> b`
 
 -   **Function calls**: `foo()`, `foo(a, b, c)`
 

@@ -42,18 +42,18 @@ To get started with any of the Google workspace APIs, you need to have a so-call
 
 After creating a GCP project (step 1), we need to set up our credentials for accessing the API. Our credentials are like a key for the API to know who is requesting access to its data and services. You can follow the steps listed [here](https://developers.google.com/workspace/guides/create-credentials) to _create desktop application credentials_. In my experience, some steps were missing in this tutorial, so I'm giving the detailed version below.
 
--   Start by navigating back to your [Google Cloud Console](https://console.cloud.google.com/home/dashboard).
-
--   Find the _APIs & Services_ tab, and then select the _Credentials_ page
+- Start by navigating back to your [Google Cloud Console](https://console.cloud.google.com/home/dashboard).
+- 
+- Find the _APIs & Services_ tab, and then select the _Credentials_ page
 
 -   Click on \*+Create Credentials \*and select _OAuth client ID_.
 
 <!---->
 
--   Select _Desktop app_ as the application type and give your app a name. Then click create.
-
--   You will be prompted to set up your OAuth consent screen. Follow the steps you are prompted with and make sure to add yourself as a test user.
-
+- Select _Desktop app_ as the application type and give your app a name. Then click create.
+- 
+- You will be prompted to set up your OAuth consent screen. Follow the steps you are prom
+- 
 -   After generating your client ID, you will be able to see it on your credentials page.
 
 -   Click the download button to download a JSON file with your credentials. Rename it to _credentials.json_. You will need this in the next step.
@@ -62,9 +62,9 @@ After creating a GCP project (step 1), we need to set up our credentials for acc
 
 After creating a GCP project and generating your credentials, it is time to connect to the API with Python for the first time. You can follow the steps outlined [here](https://developers.google.com/sheets/api/quickstart/python). The steps given on the Google developers page are pretty self-explanatory. Three things I want to add:
 
--   Make sure to have a look at the prerequisites before diving in.
-
--   Don't forget to move your _credentials.json_ file to the same folder where your _quickstart.py_ file is.
+- Make sure to have a look at the prerequisites before diving in.
+- 
+- Don't forget to move your _credentials.json_ file to the same folder where your _quickstart.py_ file is.
 
 -   Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
 

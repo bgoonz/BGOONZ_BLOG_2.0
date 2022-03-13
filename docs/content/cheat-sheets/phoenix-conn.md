@@ -1,7 +1,7 @@
 ---
 title: 'Phoenix: Plug.Conn'
 category: Elixir
-layout: 2017/sheet
+
 updated: 2018-01-19
 weight: -5
 ---
@@ -10,7 +10,7 @@ weight: -5
 
 ### Request
 
-{: .-prime}
+
 
 ```elixir
 conn.host          # → "example.com"
@@ -43,7 +43,7 @@ Usually only useful for tests.
 
 ### Response
 
-{: .-prime}
+
 
 ```elixir
 conn.resp_body     # → "..."
@@ -120,7 +120,7 @@ layout(conn)
 
 ### Other fields
 
-{: .-prime}
+
 
 ```elixir
 conn.assigns          # storage of crap

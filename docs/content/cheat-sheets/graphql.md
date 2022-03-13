@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: GraphQL
-layout: 2017/sheet
+
 updated: 2019-07-07
 category: API
 
@@ -27,7 +27,7 @@ category: API
 
 ## Queries
 
-{: .-three-column}
+
 
 ### Basic query
 
@@ -205,7 +205,7 @@ fetch('http://myapi/graphql', {
 
 ## Schema
 
-{: .-three-column}
+
 
 ### Basic schemas
 

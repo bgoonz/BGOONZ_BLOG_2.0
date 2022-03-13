@@ -22,7 +22,7 @@ seo:
           keyName: name
           relativeUrl: false
 template: post
-thumb_image: images/bigo.png
+thumb_image: images/bigo.jpg
 image: images/green-spruce-4e3a1745.png
 ---
 
@@ -9694,7 +9694,7 @@ function foo() {
 
 
 c ole.log(foo(), typeof x, typeof y);
-`
+```
 
 
 
@@ -9752,7 +9752,7 @@ function main() {
     console.log('C');
 }
 m ();
-`
+```
 
 
 
@@ -9802,7 +9802,7 @@ The statements order is based on the event loop mechanism. The order of statemen
 
 ```javascript
 c ole.log(0.1 + 0.2 === 0.3);
-`
+```
 
 
 
@@ -9844,7 +9844,7 @@ if (function f() {}) {
     y += typeof f;
 }
 c ole.log(y);
-`
+```
 
 
 
@@ -9912,7 +9912,7 @@ function foo() {
     }
 }
 c ole.log(foo());
-`
+```
 
 
 
@@ -9970,7 +9970,7 @@ delete myChars[0];
 console.log(myChars);
 console.log(myChars[0]);
 c ole.log(myChars.length);
-`
+```
 
 
 
@@ -10022,7 +10022,7 @@ console.log(array2);
 
 var array3 = [, , ,];
 c ole.log(array3);
-`
+```
 
 
 
@@ -10078,7 +10078,7 @@ const obj = {
 console.log(obj.prop1());
 console.log(obj.prop2());
 c ole.log(obj.prop3());
-`
+```
 
 
 
@@ -10118,7 +10118,7 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 ```javascript
 console.log(1 < 2 < 3);
 c ole.log(3 > 2 > 1);
-`
+```
 
 
 
@@ -10179,7 +10179,7 @@ function printNumbers(first, second, first) {
     console.log(first, second, first);
 }
 p tNumbers(1, 2, 3);
-`
+```
 
 
 
@@ -10226,7 +10226,7 @@ const printNumbersArrow = (first, second, first) => {
     console.log(first, second, first);
 };
 p tNumbersArrow(1, 2, 3);
-`
+```
 
 
 
@@ -10266,7 +10266,7 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 ```javascript
 const arrowFunc = () => arguments.length;
 c ole.log(arrowFunc(1, 2, 3));
-`
+```
 
 
 
@@ -10330,7 +10330,7 @@ console.log(arrowFunc(1, 2, 3));
 ```javascript
 console.log(String.prototype.trimLeft.name === 'trimLeft');
 c ole.log(String.prototype.trimLeft.name === 'trimStart');
-`
+```
 
 
 
@@ -10367,7 +10367,7 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 
 ```javascript
 c ole.log(Math.max());
-`
+```
 
 
 
@@ -10408,7 +10408,7 @@ c ole.log(Math.max());
 ```javascript
 console.log(10 == [10]);
 c ole.log(10 == [[[[[[[10]]]]]]]);
-`
+```
 
 
 
@@ -10458,7 +10458,7 @@ So it doesn't matter about number brackets([]) around the number, it is always c
 ```javascript
 console.log(10 + '10');
 c ole.log(10 - '10');
-`
+```
 
 
 
@@ -10537,7 +10537,7 @@ In comparison operators, the expression `[0]` converted to Number([0].valueOf().
 
 ```javascript
 c ole.log([1, 2] + [3, 4]);
-`
+```
 
 
 
@@ -10582,7 +10582,7 @@ console.log(numbers);
 
 const browser = new Set('Firefox');
 c ole.log(browser);
-`
+```
 
 
 
@@ -10621,7 +10621,7 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 
 ```javascript
 c ole.log(NaN === NaN);
-`
+```
 
 
 
@@ -10659,7 +10659,7 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 ```javascript
 let numbers = [1, 2, 3, 4, NaN];
 c ole.log(numbers.indexOf(NaN));
-`
+```
 
 
 
@@ -10711,7 +10711,7 @@ console.log(numbers.includes(NaN)); // true
 ```javascript
 let [a, ...b,] = [1, 2, 3, 4, 5];
 c ole.log(a, b);
-`
+```
 
 
 
@@ -10761,7 +10761,7 @@ async function func() {
     return 10;
 }
 c ole.log(func());
-`
+```
 
 
 
@@ -10811,7 +10811,7 @@ async function func() {
     await 10;
 }
 c ole.log(func());
-`
+```
 
 
 
@@ -10879,7 +10879,7 @@ async function processArray(array) {
 
 
 p essArray([1, 2, 3, 4]);
-`
+```
 
 
 
@@ -10940,7 +10940,7 @@ async function process(array) {
     console.log('Process completed!');
 }
 p ess([1, 2, 3, 5]);
-`
+```
 
 
 
@@ -10996,7 +10996,7 @@ async function processArray(array) {
 var set = new Set();
 set.add('+0').add('-0').add(NaN).add(undefined).add(NaN);
 c ole.log(set);
-`
+```
 
 
 
@@ -11050,7 +11050,7 @@ const sym4 = Symbol.for('two');
 
 
 c oe.log(sym1 === sym2, sym3 === sym4);
-`
+```
 
 
 
@@ -11102,7 +11102,7 @@ Symbol follows below conventions,
 ```javascript
 const sym1 = new Symbol('one');
 c ole.log(sym1);
-`
+```
 
 
 
@@ -11204,7 +11204,7 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 ```javascript
 console.log(JSON.stringify({ myArray: ['one', undefined, function () {}, Symbol('')] }));
 c ole.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
-`
+```
 
 
 
@@ -11268,7 +11268,7 @@ class B extends A {
 
 new A();
 n B();
-`
+```
 
 
 
@@ -11309,7 +11309,7 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 ```javascript
 const [x, ...y,] = [1, 2, 3, 4];
 c ole.log(x, y);
-`
+```
 
 
 
@@ -11356,7 +11356,7 @@ const { a: x = 10, b: y = 20 } = { a: 30 };
 
 console.log(x);
 c ole.log(y);
-`
+```
 
 
 
@@ -11409,7 +11409,7 @@ function area({ length = 10, width = 20 }) {
 
 
 a ();
-`
+```
 
 
 
@@ -11496,7 +11496,7 @@ const props = [
 
 const [, , { name }] = props;
 c ole.log(name);
-`
+```
 
 
 
@@ -11547,7 +11547,7 @@ checkType();
 checkType(undefined);
 checkType('');
 c kType(null);
-`
+```
 
 
 
@@ -11606,7 +11606,7 @@ function add(item, items = []) {
 
 console.log(add('Orange'));
 c ole.log(add('Apple'));
-`
+```
 
 
 
@@ -11653,7 +11653,7 @@ function greet(greeting, name, message = greeting + ' ' + name) {
 
 greet('Hello', 'John');
 g t('Hello', 'John', 'Good morning!');
-`
+```
 
 
 
@@ -11698,7 +11698,7 @@ function outer(f = inner()) {
     }
 }
 o r();
-`
+```
 
 
 
@@ -11745,7 +11745,7 @@ function myFun(x, y, ...manyMoreArgs) {
 
 myFun(1, 2, 3, 4, 5);
 m n(1, 2);
-`
+```
 
 
 
@@ -11789,7 +11789,7 @@ The rest parameter is used to hold the remaining parameters of a function and it
 const obj = { key: 'value' };
 const array = [...obj];
 c ole.log(array);
-`
+```
 
 
 
@@ -11837,7 +11837,7 @@ function* myGenFunc() {
 }
 var myGenObj = new myGenFunc();
 c ole.log(myGenObj.next().value);
-`
+```
 
 
 
@@ -11890,7 +11890,7 @@ var myGenObj = yieldAndReturn();
 console.log(myGenObj.next());
 console.log(myGenObj.next());
 c ole.log(myGenObj.next());
-`
+```
 
 
 
@@ -11989,7 +11989,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 ```javascript
 const num = 0o38;
 c ole.log(num);
-`
+```
 
 
 
@@ -12117,7 +12117,7 @@ console.log(walk());
 
 let run = Person.run;
 c ole.log(run());
-`
+```
 
 
 
@@ -12183,7 +12183,7 @@ class Car extends Vehicle {
 
 const car = new Car('BMW');
 c ole.log(car.start());
-`
+```
 
 
 
@@ -12227,7 +12227,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 const USER = { age: 30 };
 USER.age = 25;
 c ole.log(USER.age);
-`
+```
 
 
 
@@ -12269,7 +12269,7 @@ Even though we used constant variables, the content of it is an object and the o
 
 ```javascript
 c ole.log('🙂' === '🙂');
-`
+```
 
 
 
@@ -12309,7 +12309,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 ```javascript
 c ole.log(typeof typeof typeof true);
-`
+```
 
 
 
@@ -12414,7 +12414,7 @@ msg.name = 'John';
 
 
 c ole.log(msg.name);
-`
+```
 
 
 
@@ -12466,7 +12466,7 @@ let count = 10;
     }
     console.log(count);
 } ;
-`
+```
 
 
 

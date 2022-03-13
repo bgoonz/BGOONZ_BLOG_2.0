@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: "Ansible quickstart"
 category: Ansible
-layout: 2017/sheet
+
 description: |
 A quick guide to getting started with your first Ansible playbook.
 

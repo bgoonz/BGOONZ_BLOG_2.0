@@ -1,7 +1,7 @@
 ---
 title: regexp
 category: Others
-layout: 2017/sheet
+
 weight: -1
 authors:
     - github: rizqyhi
@@ -15,7 +15,7 @@ description: |
 
 ## RegExp
 
-{: .-three-column}
+
 
 ### Character classes
 

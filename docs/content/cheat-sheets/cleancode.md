@@ -4,13 +4,13 @@
 
 **Robert C. Martin Series**
 
--   Chapter 1: Clean Code On the Cover --- xxix
+- Chapter 1: Clean Code On the Cover --- xxix
     -   There Will Be Code .
     -   Bad Code
 
 ---
 
--   The Total Cost of Owning a Mess
+- The Total Cost of Owning a Mess
     -   The Grand Redesign in the Sky
     -   Attitude
 
@@ -22,62 +22,62 @@
   - What Is Clean Code?
 ```
 
--   Schools of Thought
--   We Are Authors
+- Schools of Thought
+- We Are Authors
 
 ---
 
--   The Boy Scout Rule .
--   Prequel and Principles
--   Conclusion
+- The Boy Scout Rule .
+- Prequel and Principles
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 2: Meaningful Names
+- Chapter 2: Meaningful Names
     -   Introduction
 
 ---
 
--   Use Intention-Revealing Names
--   Avoid Disinformation
--   Make Meaningful Distinctions
--   Use Pronounceable Names ..
--   Use Searchable Names
--   Avoid Encodings --- viii Contents
+- Use Intention-Revealing Names
+- Avoid Disinformation
+- Make Meaningful Distinctions
+- Use Pronounceable Names ..
+- Use Searchable Names
+- Avoid Encodings --- viii Contents
     -   Hungarian Notation
     -   Member Prefixes.
     -   Interfaces and Implementations
--   Avoid Mental Mapping
--   Class Names
+- Avoid Mental Mapping
+- Class Names
 
 ---
 
--   Method Names
+- Method Names
 
 ---
 
--   Don't Be Cute
+- Don't Be Cute
 
 ---
 
--   Pick One Word per Concept .
--   Don't Pun
+- Pick One Word per Concept .
+- Don't Pun
 
 ---
 
--   Use Solution Domain Names
--   Use Problem Domain Names
--   Add Meaningful Context
--   Don't Add Gratuitous Context
--   Final Words
+- Use Solution Domain Names
+- Use Problem Domain Names
+- Add Meaningful Context
+- Don't Add Gratuitous Context
+- Final Words
 
 ---
 
--   Chapter 3: Functions
+- Chapter 3: Functions
     -   Small!
 
 ---
@@ -86,7 +86,7 @@
   - Blocks and Indenting
 ```
 
--   Do One Thing
+- Do One Thing
 
 ---
 
@@ -94,10 +94,10 @@
   - Sections within Functions
 ```
 
--   One Level of Abstraction per Function .
-    -   Reading Code from Top to Bottom: The Stepdown Rule ..
--   Switch Statements .
--   Use Descriptive Names
+- One Level of Abstraction per Function .
+- -   Reading Code fr
+- Switch Statements .
+- Use Descriptive Names
 -   Function Arguments
     -   Common Monadic Forms.
     -   Flag Arguments
@@ -122,26 +122,26 @@
   - Verbs and Keywords
 ```
 
--   Have No Side Effects
-    -   Output Arguments
--   Command Query Separation .
+- Have No Side Effects
+- -   Output Arguments
+- Command Query Separation .
 -   Prefer Exceptions to Returning Error Codes ... Contents ix
     -   Extract Try/Catch Blocks .
     -   Error Handling Is One Thing
     -   TheError.java Dependency Magnet .
--   Don't Repeat Yourself
--   Structured Programming ...
--   How Do You Write Functions Like This?
--   Conclusion
+- Don't Repeat Yourself
+- Structured Programming ...
+- How Do You Write Functions Like This?
+- Conclusion
 
 ---
 
--   SetupTeardownIncluder
--   Bibliography
+- SetupTeardownIncluder
+- Bibliography
 
 ---
 
--   Chapter 4: Comments
+- Chapter 4: Comments
     -   Comments Do Not Make Up for Bad Code
     -   Explain Yourself in Code
     -   Good Comments
@@ -169,7 +169,7 @@
   - Javadocs in Public APIs
 ```
 
--   Bad Comments
+- Bad Comments
 
 ---
 
@@ -207,11 +207,11 @@
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 5: Formatting
+- Chapter 5: Formatting
     -   The Purpose of Formatting
     -   Vertical Formatting .
         -   The Newspaper Metaphor
@@ -225,7 +225,7 @@
   - Vertical Ordering
 ```
 
--   Horizontal Formatting
+- Horizontal Formatting
     -   Horizontal Openness and Density
     -   Horizontal Alignment
     -   Indentation
@@ -238,18 +238,18 @@
 
 ---
 
--   Team Rules
+- Team Rules
 
 ---
 
--   Uncle Bob's Formatting Rules
--   Chapter 6: Objects and Data Structures
+- Uncle Bob's Formatting Rules
+- Chapter 6: Objects and Data Structures
     -   Data Abstraction
 
 ---
 
--   Data/Object Anti-Symmetry
--   The Law of Demeter
+- Data/Object Anti-Symmetry
+- The Law of Demeter
     -   Train Wrecks
 
 ---
@@ -264,20 +264,20 @@
   - Hiding Structure .
 ```
 
--   Data Transfer Objects
+- Data Transfer Objects
     -   Active Record
 
 ---
 
--   Conclusion
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 7: Error Handling Contents xi
+- Chapter 7: Error Handling Contents xi
     -   Use Exceptions Rather Than Return Codes ...
     -   Write Your Try-Catch-Finally Statement First
     -   Use Unchecked Exceptions .
@@ -289,29 +289,29 @@
 
 ---
 
--   Conclusion
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 8: Boundaries
+- Chapter 8: Boundaries
     -   Using Third-Party Code
     -   Exploring and Learning Boundaries .
     -   Learning log4j
 
 ---
 
--   Learning Tests Are Better Than Free .
--   Using Code That Does Not Yet Exist
--   Clean Boundaries
--   Bibliography
+- Learning Tests Are Better Than Free .
+- Using Code That Does Not Yet Exist
+- Clean Boundaries
+- Bibliography
 
 ---
 
--   Chapter 9: Unit Tests
+- Chapter 9: Unit Tests
     -   The Three Laws of TDD ...
     -   Keeping Tests Clean
         -   Tests Enable the -ilities...
@@ -324,27 +324,27 @@
   - A Dual Standard .
 ```
 
--   One Assert per Test
-    -   Single Concept per Test ..
+- One Assert per Test
+- -   Single Concept per Test ..
 -   F.I.R.S.T.
 
 ---
 
--   Conclusion
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 10: Classes
+- Chapter 10: Classes
     -   Class Organization
         -   Encapsulation
 
 ---
 
--   Classes Should Be Small! .. xii Contents
+- Classes Should Be Small! .. xii Contents
     -   The Single Responsibility Principle .
     -   Cohesion
 
@@ -354,13 +354,13 @@
   - Maintaining Cohesion Results in Many Small Classes..
 ```
 
--   Organizing for Change
-    -   Isolating from Change
+- Organizing for Change
+- -   Isolating from Change
 -   Bibliography
 
 ---
 
--   Chapter 11: Systems
+- Chapter 11: Systems
     -   How Would You Build a City?
     -   Separate Constructing a System from Using It
         -   Separation of Main
@@ -372,7 +372,7 @@
   - Dependency Injection
 ```
 
--   Scaling Up
+- Scaling Up
 
 ---
 
@@ -380,49 +380,49 @@
   - Cross-Cutting Concerns .
 ```
 
--   Java Proxies
+- Java Proxies
 
 ---
 
--   Pure Java AOP Frameworks .
--   AspectJ Aspects
+- Pure Java AOP Frameworks .
+- AspectJ Aspects
 
 ---
 
--   Test Drive the System Architecture ..
--   Optimize Decision Making .
--   Use Standards Wisely, When They Add Demonstrable Value
--   Systems Need Domain-Specific Languages
--   Conclusion
+- Test Drive the System Architecture ..
+- Optimize Decision Making .
+- Use Standards Wisely, When They Add Demonstrable Value
+- Systems Need Domain-Specific Languages
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 12: Emergence ..
+- Chapter 12: Emergence ..
     -   Getting Clean via Emergent Design
     -   Simple Design Rule 1: Runs All the Tests
-    -   Simple Design Rules 2–4: Refactoring
+    -   Simple Design Rules 2-4: Refactoring
     -   No Duplication
 
 ---
 
--   Expressive
+- Expressive
 
 ---
 
--   Minimal Classes and Methods
--   Conclusion
+- Minimal Classes and Methods
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 13: Concurrency
+- Chapter 13: Concurrency
     -   Why Concurrency?
         -   Myths and Misconceptions.
     -   Challenges --- Contents xiii
@@ -458,15 +458,15 @@
 
 ---
 
--   Conclusion
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 14: Successive Refinement
+- Chapter 14: Successive Refinement
     -   Args Implementation
         -   How Did I Do This?
     -   Args: The Rough Draft
@@ -478,29 +478,29 @@
   - On Incrementalism
 ```
 
--   String Arguments
--   Conclusion
+- String Arguments
+- Conclusion
 
 ---
 
--   Chapter 15: JUnit Internals xiv Contents
+- Chapter 15: JUnit Internals xiv Contents
     -   The JUnit Framework
     -   Conclusion
 
 ---
 
--   Chapter 16: Refactoring SerialDate
+- Chapter 16: Refactoring SerialDate
     -   First, Make It Work
     -   Then Make It Right
     -   Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Chapter 17: Smells and Heuristics .
+- Chapter 17: Smells and Heuristics .
     -   Comments
 
 ---
@@ -513,7 +513,7 @@
   - C5: Commented-Out Code .
 ```
 
--   Environment
+- Environment
 
 ---
 
@@ -522,7 +522,7 @@
   - E2: Tests Require More Than One Step
 ```
 
--   Functions
+- Functions
 
 ---
 
@@ -533,7 +533,7 @@
   - F4: Dead Function
 ```
 
--   General
+- General
 
 ---
 
@@ -554,49 +554,49 @@
 
 ---
 
--   G13: Artificial Coupling . Contents xv
--   G14: Feature Envy
--   G15: Selector Arguments
--   G16: Obscured Intent
--   G17: Misplaced Responsibility
--   G18: Inappropriate Static .
--   G19: Use Explanatory Variables
--   G20: Function Names Should Say What They Do
--   G21: Understand the Algorithm
--   G22: Make Logical Dependencies Physical ...
--   G23: Prefer Polymorphism to If/Else or Switch/Case
--   G24: Follow Standard Conventions
--   G25: Replace Magic Numbers with Named Constants ..
--   G26: Be Precise
--   G27: Structure over Convention
--   G28: Encapsulate Conditionals
--   G29: Avoid Negative Conditionals .
--   G30: Functions Should Do One Thing
--   G31: Hidden Temporal Couplings ..
--   G32: Don't Be Arbitrary .
--   G33: Encapsulate Boundary Conditions
--   One Level of Abstraction G34: Functions Should Descend Only
--   G35: Keep Configurable Data at High Levels
--   G36: Avoid Transitive Navigation ...
--   Java
+- G13: Artificial Coupling . Contents xv
+- G14: Feature Envy
+- G15: Selector Arguments
+- G16: Obscured Intent
+- G17: Misplaced Responsibility
+- G18: Inappropriate Static .
+- G19: Use Explanatory Variables
+- G20: Function Names Should Say What They Do
+- G21: Understand the Algorithm
+- G22: Make Logical Dependencies Physical ...
+- G23: Prefer Polymorphism to If/Else or Switch/Case
+- G24: Follow Standard Conventions
+- G25: Replace Magic Numbers with Named Constants ..
+- G26: Be Precise
+- G27: Structure over Convention
+- G28: Encapsulate Conditionals
+- G29: Avoid Negative Conditionals .
+- G30: Functions Should Do One Thing
+- G31: Hidden Temporal Couplings ..
+- G32: Don't Be Arbitrary .
+- G33: Encapsulate Boundary Conditions
+- One Level of Abstraction G34: Functions Should Descend Only
+- G35: Keep Configurable Data at High Levels
+- G36: Avoid Transitive Navigation ...
+- Java
 
 ---
 
--   J1: Avoid Long Import Lists by Using Wildcards
--   J2: Don't Inherit Constants
--   J3: Constants versus Enums
--   Names
+- J1: Avoid Long Import Lists by Using Wildcards
+- J2: Don't Inherit Constants
+- J3: Constants versus Enums
+- Names
 
 ---
 
--   N1: Choose Descriptive Names
--   N2: Choose Names at the Appropriate Level of Abstraction
--   N3: Use Standard Nomenclature Where Possible
--   N4: Unambiguous Names .
--   N5: Use Long Names for Long Scopes
--   N6: Avoid Encodings
--   N7: Names Should Describe Side-Effects.
--   Tests --- xvi Contents
+- N1: Choose Descriptive Names
+- N2: Choose Names at the Appropriate Level of Abstraction
+- N3: Use Standard Nomenclature Where Possible
+- N4: Unambiguous Names .
+- N5: Use Long Names for Long Scopes
+- N6: Avoid Encodings
+- N7: Names Should Describe Side-Effects.
+- Tests --- xvi Contents
     -   T1: Insufficient Tests
     -   T2: Use a Coverage Tool! .
     -   T3: Don't Skip Trivial Tests
@@ -606,15 +606,15 @@
     -   T7: Patterns of Failure Are Revealing
     -   T8: Test Coverage Patterns Can Be Revealing .
     -   T9: Tests Should Be Fast .
--   Conclusion
+- Conclusion
 
 ---
 
--   Bibliography
+- Bibliography
 
 ---
 
--   Appendix A: Concurrency II
+- Appendix A: Concurrency II
     -   Client/Server Example
         -   The Server
 
@@ -628,25 +628,25 @@
 
 ---
 
--   Possible Paths of Execution
+- Possible Paths of Execution
     -   Number of Paths .
     -   Digging Deeper
     -   Conclusion
 
 ---
 
--   Knowing Your Library
+- Knowing Your Library
     -   Executor Framework
     -   Nonblocking Solutions ...
     -   Nonthread-Safe Classes..
--   Can Break Concurrent Code Dependencies Between Methods
+- Can Break Concurrent Code Dependencies Between Methods
     -   Tolerate the Failure
     -   Client-Based Locking
     -   Server-Based Locking
--   Increasing Throughput
+- Increasing Throughput
     -   Single-Thread Calculation of Throughput
     -   Multithread Calculation of Throughput
--   Deadlock
+- Deadlock
 
 ---
 
@@ -670,22 +670,22 @@
   - Breaking Circular Wait...
 ```
 
--   Testing Multithreaded Code .
--   Tool Support for Testing Thread-Based Code
--   Conclusion
+- Testing Multithreaded Code .
+- Tool Support for Testing Thread-Based Code
+- Conclusion
 
 ---
 
--   Tutorial: Full Code Examples
+- Tutorial: Full Code Examples
     -   Client/Server Nonthreaded .
     -   Client/Server Using Threads
--   Appendix B: org.jfree.date.SerialDate
--   Appendix C: Cross References of Heuristics
--   Epilogue
+- Appendix B: org.jfree.date.SerialDate
+- Appendix C: Cross References of Heuristics
+- Epilogue
 
 ---
 
--   Index
+- Index
 
 ---
 
@@ -1109,9 +1109,9 @@ rules of simple code. In priority order, simple code:
 
 \_- Runs all the tests;
 
--   Contains no duplication;
--   Expresses all the design ideas that are in the\_ \_system;
--   Minimizes the number of entities such as classes,\_ _methods, functions, and the like._ _Of these, I focus mostly on duplication. When the same thing is done over and over, it's a sign that there is an idea in our mind that is not well represented in the code. I try to figure out what it is. Then I try to express that idea more clearly._ _Expressiveness to me includes meaningful names, and I am likely to change the names of things several times before I settle in. With modern coding tools such as Eclipse, renaming is quite inexpensive, so it doesn't trouble me to change. Expressiveness goes_
+- Contains no duplication;
+- Expresses all the design ideas that are in the\_ \_system;
+- Minimizes the number of entities such as classes,\_ _methods, functions, and the like._ _Of these, I focus mostly on duplication. When the same thing is done over and over, it's a sign that there is an idea in our mind that is not well represented in the code. I try to figure out what it is. Then I try to express that idea more clearly._ _Expressiveness to me includes meaningful names, and I am likely to change the names of things several times before I settle in. With modern coding tools such as Eclipse, renaming is quite inexpensive, so it doesn't trouble me to change. Expressiveness goes_
 
 **The Total Cost of Owning a Mess** 11
 
@@ -4500,7 +4500,7 @@ More precisely, the Law of Demeter says that a method _f_ of a class _C_ should 
 *C
 ```
 
--   An object created by _f_
+- An object created by _f_
 
 ```
 public class Circle implements Shape {
@@ -4522,8 +4522,8 @@ Polymorphic Shapes
 
 98 **Chapter 6: Objects and Data Structures**
 
--   An object passed as an argument to _f_
--   An object held in an instance variable of _C_
+- An object passed as an argument to _f_
+- An object held in an instance variable of _C_
 
 The method should _not_ invoke methods on objects that are returned by any of the allowed functions. In other words, talk to friends, not to strangers.
 
@@ -4968,7 +4968,7 @@ Let's look at an example to see why. Here is a simple method which calculates a 
 public class MetricsCalculator
 {
 public double xProjection(Point p1, Point p2) {
-return (p2.x – p1.x) * 1.5;
+return (p2.x - p1.x) * 1.5;
 }
 ...
 }
@@ -4988,7 +4988,7 @@ if (p1 == null || p2 == null) {
 throw InvalidArgumentException(
 "Invalid argument for MetricsCalculator.xProjection");
 }
-return (p2.x – p1.x) * 1.5;
+return (p2.x - p1.x) * 1.5;
 }
 }
 ```
@@ -5002,7 +5002,7 @@ public class MetricsCalculator
 public double xProjection(Point p1, Point p2) {
 assert p1 != null : "p1 should not be null";
 assert p2 != null : "p2 should not be null";
-return (p2.x – p1.x) * 1.5;
+return (p2.x - p1.x) * 1.5;
 }
 }
 ```
@@ -5054,27 +5054,27 @@ If our application needs a Map of Sensors, you might find the sensors set up lik
 Map sensors = new HashMap();
 ```
 
--   clear() void – Map
--   containsKey(Object key) boolean – Map
--   containsValue(Object value) boolean – Map
--   entrySet() Set – Map
--   equals(Object o) boolean – Map
--   get(Object key) Object – Map
--   getClass() Class\<? extends Object> – Object
--   hashCode() int – Map
--   isEmpty() boolean – Map
--   keySet() Set – Map
--   notify() void – Object
--   notifyAll() void – Object
--   put(Object key, Object value) Object – Map
--   putAll(Map t) void – Map
--   remove(Object key) Object – Map
--   size() int – Map
--   toString() String – Object
--   values() Collection – Map
--   wait() void – Object
--   wait(long timeout) void – Object
--   wait(long timeout, int nanos) void – Object **Figure 8-1** The methods of Map
+- clear() void - Map
+- containsKey(Object key) boolean - Map
+- containsValue(Object value) boolean - Map
+- entrySet() Set - Map
+- equals(Object o) boolean - Map
+- get(Object key) Object - Map
+- getClass() Class\<? extends Object> - Object
+- hashCode() int - Map
+- isEmpty() boolean - Map
+- keySet() Set - Map
+- notify() void - Object
+- notifyAll() void - Object
+- put(Object key, Object value) Object - Map
+- putAll(Map t) void - Map
+- remove(Object key) Object - Map
+- size() int - Map
+- toString() String - Object
+- values() Collection - Map
+- wait() void - Object
+- wait(long timeout) void - Object
+- wait(long timeout, int nanos) void - Object **Figure 8-1** The methods of Map
 
 **Using Third-Party Code** 115
 
@@ -5152,7 +5152,7 @@ logger.info("hello");
 }
 ```
 
-1. \[BeckTDD], pp. 136–137.
+1. \[BeckTDD], pp. 136-137.
 
 **Learning log4j** 117
 
@@ -5325,7 +5325,7 @@ By now everyone knows that TDD asks us to write unit tests first, before we writ
 
 **Third Law** You may not write more production code than is sufficient to pass the cur- rently failing test.
 
-1. _Professionalism and Test-Driven Development_ , Robert C. Martin, Object Mentor, IEEE Software, May/June 2007 (Vol. 24, No. 3) pp. 32–36 [http://doi.ieeecomputersociety.org/10.1109/MS.2007.85](http://doi.ieeecomputersociety.org/10.1109/MS.2007.85)
+1. _Professionalism and Test-Driven Development_ , Robert C. Martin, Object Mentor, IEEE Software, May/June 2007 (Vol. 24, No. 3) pp. 32-36 [http://doi.ieeecomputersociety.org/10.1109/MS.2007.85](http://doi.ieeecomputersociety.org/10.1109/MS.2007.85)
 
 **Keeping Tests Clean** 123
 
@@ -5663,7 +5663,7 @@ Perhaps a better rule is that we want to test a single concept in each test func
 The three test functions probably ought to be like this:
 ```
 
--   _Given_ the last day of a month with 31 days (like May): **1.** _When_ you add one month, such that the last day of that month is the 30th (like June), _then_ the date should be the 30th of that month, not the 31st. **2.** _When_ you add two months to that date, such that the final month has 31 days, _then_ the date should be the 31st.
+- _Given_ the last day of a month with 31 days (like May): **1.** _When_ you add one month, such that the last day of that month is the 30th (like June), _then_ the date should be the 30th of that month, not the 31st. **2.** _When_ you add two months to that date, such that the final month has 31 days, _then_ the date should be the 31st.
 
 1. "Keep to the code!"
 
@@ -5694,7 +5694,7 @@ assertEquals(2004, d4.getYYYY());
 
 132 **Chapter 9: Unit Tests**
 
--   _Given_ the last day of a month with 30 days in it (like June): **1.** _When_ you add one month such that the last day of that month has 31 days, _then_ the date should be the 30th, not the 31st. Stated like this, you can see that there is a general rule hiding amidst the miscella- neous tests. When you increment the month, the date can be no greater than the last day of the month. This implies that incrementing the month on February 28th should yield March 28th. _That_ test is missing and would be a useful test to write.
+- _Given_ the last day of a month with 30 days in it (like June): **1.** _When_ you add one month such that the last day of that month has 31 days, _then_ the date should be the 30th, not the 31st. Stated like this, you can see that there is a general rule hiding amidst the miscella- neous tests. When you increment the month, the date can be no greater than the last day of the month. This implies that incrementing the month on February 28th should yield March 28th. _That_ test is missing and would be a useful test to write.
 
 So it's not the multiple asserts in each section of Listing 9-8 that causes the problem. Rather it is the fact that there is more than one concept being tested. So probably the best rule is that you should minimize the number of asserts per concept and test just one con- cept per test function.
 
@@ -6932,7 +6932,7 @@ Some or all of the persistence information in the annotations can be moved to XM
 
 ---
 
-Finally, the most full-featured tool for separating concerns through aspects is the AspectJ language,^17 an extension of Java that provides "first-class" support for aspects as modular- ity constructs. The pure Java approaches provided by Spring AOP and JBoss AOP are suf- ficient for 80–90 percent of the cases where aspects are most useful. However, AspectJ provides a very rich and powerful tool set for separating concerns. The drawback of AspectJ is the need to adopt several new tools and to learn new language constructs and usage idioms.
+Finally, the most full-featured tool for separating concerns through aspects is the AspectJ language,^17 an extension of Java that provides "first-class" support for aspects as modular- ity constructs. The pure Java approaches provided by Spring AOP and JBoss AOP are suf- ficient for 80-90 percent of the cases where aspects are most useful. However, AspectJ provides a very rich and powerful tool set for separating concerns. The drawback of AspectJ is the need to adopt several new tools and to learn new language constructs and usage idioms.
 
 The adoption issues have been partially mitigated by a recently introduced "annota- tion form" of AspectJ, where Java 5 annotations are used to define aspects using pure Java code. Also, the Spring Framework has a number of features that make incorporation of annotation-based aspects much easier for a team with limited AspectJ experience.
 
@@ -7070,7 +7070,7 @@ Whether you are designing systems or individual modules, never forget to _use th
 
 **\[JMock]:** JMock—A Lightweight Mock Object Library for Java, [http://jmock.org](http://jmock.org)
 
-**\[Kolence]:** Kenneth W. Kolence, Software physics and computer performance measure- ments, _Proceedings of the ACM annual conference—Volume 2_ , Boston, Massachusetts, pp. 1024–1040, 1972.
+**\[Kolence]:** Kenneth W. Kolence, Software physics and computer performance measure- ments, _Proceedings of the ACM annual conference—Volume 2_ , Boston, Massachusetts, pp. 1024-1040, 1972.
 
 **\[Spring]:** _The Spring Framework_ , [http://www.springframework.org](http://www.springframework.org)
 
@@ -7106,10 +7106,10 @@ Many of us feel that Kent Beck's four rules of _Simple Design_^1 are of signific
 According to Kent, a design is "simple" if it follows these rules:
 ```
 
--   Runs all the tests
--   Contains no duplication
--   Expresses the intent of the programmer
--   Minimizes the number of classes and methods
+- Runs all the tests
+- Contains no duplication
+- Expresses the intent of the programmer
+- Minimizes the number of classes and methods
 
 ```
 The rules are given in order of importance.
@@ -7127,7 +7127,7 @@ Tight coupling makes it difficult to write tests. So, similarly, the more tests 
 
 Remarkably, following a simple and obvious rule that says we need to have tests and run them continuously impacts our system's adherence to the primary OO goals of low coupling and high cohesion. Writing tests leads to better designs.
 
-#### Simple Design Rules 2–4: Refactoring
+#### Simple Design Rules 2-4: Refactoring
 
 Once we have tests, we are empowered to keep our code and classes clean. We do this by incrementally refactoring the code. For each few lines of code we add, we pause and reflect on the new design. Did we just degrade it? If so, we clean it up and run our tests to demon- strate that we haven't broken anything. _The fact that we have these tests eliminates the fear that cleaning up the code will break it!_
 
@@ -7360,21 +7360,21 @@ Or consider a system that interprets large data sets but can only give a complet
 
 And so there are compelling reasons to adopt concurrency. However, as we said before, concurrency is _hard_. If you aren't very careful, you can create some very nasty situations. Consider these common myths and misconceptions:
 
--   _Concurrency always improves performance._ Concurrency can _sometimes_ improve performance, but only when there is a lot of wait time that can be shared between multiple threads or multiple processors. Neither situ- ation is trivial.
--   _Design does not change when writing concurrent programs._ In fact, the design of a concurrent algorithm can be remarkably different from the design of a single-threaded system. The decoupling of _what_ from _when_ usually has a huge effect on the structure of the system.
--   _Understanding concurrency issues is not important when working with a container_ _such as a Web or EJB container._ In fact, you'd better know just what your container is doing and how to guard against the issues of concurrent update and deadlock described later in this chapter.
+- _Concurrency always improves performance._ Concurrency can _sometimes_ improve performance, but only when there is a lot of wait time that can be shared between multiple threads or multiple processors. Neither situ- ation is trivial.
+- _Design does not change when writing concurrent programs._ In fact, the design of a concurrent algorithm can be remarkably different from the design of a single-threaded system. The decoupling of _what_ from _when_ usually has a huge effect on the structure of the system.
+- _Understanding concurrency issues is not important when working with a container_ _such as a Web or EJB container._ In fact, you'd better know just what your container is doing and how to guard against the issues of concurrent update and deadlock described later in this chapter.
 
 ```
 Here are a few more balanced sound bites regarding writing concurrent software:
 ```
 
--   _Concurrency incurs some overhead,_ both in performance as well as writing additional code.
--   _Correct concurrency is complex,_ even for simple problems.
+- _Concurrency incurs some overhead,_ both in performance as well as writing additional code.
+- _Correct concurrency is complex,_ even for simple problems.
 
 180 **Chapter 13: Concurrency**
 
--   _Concurrency bugs aren't usually repeatable,_ so they are often ignored as one-offs^2 instead of the true defects they are.
--   _Concurrency often requires a fundamental change in design strategy_.
+- _Concurrency bugs aren't usually repeatable,_ so they are often ignored as one-offs^2 instead of the true defects they are.
+- _Concurrency often requires a fundamental change in design strategy_.
 
 #### Challenges
 
@@ -7382,9 +7382,9 @@ What makes concurrent programming so difficult? Consider the following trivial c
 
 public class X { private int lastIdUsed; public int getNextId() { return ++lastIdUsed; } } Let's say we create an instance of X, set the lastIdUsedfield to 42, and then share the instance between two threads. Now suppose that both of those threads call the method getNextId(); there are three possible outcomes:
 
--   Thread one gets the value 43, thread two gets the value 44, lastIdUsed is 44.
--   Thread one gets the value 44, thread two gets the value 43, lastIdUsed is 44.
--   Thread one gets the value 43, thread two gets the value 43, lastIdUsed is 43.
+- Thread one gets the value 43, thread two gets the value 44, lastIdUsed is 44.
+- Thread one gets the value 44, thread two gets the value 43, lastIdUsed is 44.
+- Thread one gets the value 43, thread two gets the value 43, lastIdUsed is 43.
 
 The surprising third result^3 occurs when the two threads step on each other. This hap- pens because there are many possible paths that the two threads can take through that one line of Java code, and some of those paths generate incorrect results. How many different paths are there? To really answer that question, we need to understand what the Just-In- Time Compiler does with the generated byte-code, and understand what the Java memory model considers to be atomic.
 
@@ -7408,9 +7408,9 @@ What follows is a series of principles and techniques for defending your systems
 
 The SRP^5 states that a given method/class/component should have a single reason to change. Concurrency design is complex enough to be a reason to change in it's own right and therefore deserves to be separated from the rest of the code. Unfortunately, it is all too common for concurrency implementation details to be embedded directly into other pro- duction code. Here are a few things to consider:
 
--   _Concurrency-related code has its own life cycle of development,_ change, and tuning.
--   _Concurrency-related code has its own challenges,_ which are different from and often more difficult than nonconcurrency-related code.
--   The number of ways in which miswritten concurrency-based code can fail makes it challenging enough without the added burden of surrounding application code.
+- _Concurrency-related code has its own life cycle of development,_ change, and tuning.
+- _Concurrency-related code has its own challenges,_ which are different from and often more difficult than nonconcurrency-related code.
+- The number of ways in which miswritten concurrency-based code can fail makes it challenging enough without the added burden of surrounding application code.
 
 ```
 Recommendation : Keep your concurrency-related code separate from other code.^6
@@ -7424,9 +7424,9 @@ Recommendation : Keep your concurrency-related code separate from other code.^6
 
 As we saw, two threads modifying the same field of a shared object can interfere with each other, causing unexpected behavior. One solution is to use the synchronizedkeyword to protect a _critical section_ in the code that uses the shared object. It is important to restrict the number of such critical sections. The more places shared data can get updated, the more likely:
 
--   You will forget to protect one or more of those places—effectively breaking all code that modifies that shared data.
--   There will be duplication of effort required to make sure everything is effectively guarded (violation of DRY^7 ).
--   It will be difficult to determine the source of failures, which are already hard enough to find.
+- You will forget to protect one or more of those places—effectively breaking all code that modifies that shared data.
+- There will be duplication of effort required to make sure everything is effectively guarded (violation of DRY^7 ).
+- It will be difficult to determine the source of failures, which are already hard enough to find.
 
 **Recommendation** : _Take data encapsulation to heart; severely limit the access of any data that may be shared._
 
@@ -7462,10 +7462,10 @@ For example, classes that subclass from HttpServletreceive all of their informat
 
 Java 5 offers many improvements for concurrent development over previous versions. There are several things to consider when writing threaded code in Java 5:
 
--   Use the provided thread-safe collections.
--   Use the executor framework for executing unrelated tasks.
--   Use nonblocking solutions when possible.
--   Several library classes are not thread safe.
+- Use the provided thread-safe collections.
+- Use the executor framework for executing unrelated tasks.
+- Use nonblocking solutions when possible.
+- Several library classes are not thread safe.
 
 ---
 
@@ -7566,9 +7566,9 @@ Dependencies between synchronized methods cause subtle bugs in concurrent code. 
 
 **Recommendation** : _Avoid using more than one method on a shared object._ There will be times when you must use more than one method on a shared object. When this is the case, there are three ways to make the code correct:
 
--   **Client-Based Locking** —Have the client lock the server before calling the first method and make sure the lock's extent includes code calling the last method.
--   **Server-Based Locking** —Within the server create a method that locks the server, calls all the methods, and then unlocks. Have the client call the new method.
--   **Adapted Server** —create an intermediary that performs the locking. This is an exam- ple of server-based locking, where the original server cannot be changed.
+- **Client-Based Locking** —Have the client lock the server before calling the first method and make sure the lock's extent includes code calling the last method.
+- **Server-Based Locking** —Within the server create a method that locks the server, calls all the methods, and then unlocks. Have the client call the new method.
+- **Adapted Server** —create an intermediary that performs the locking. This is an exam- ple of server-based locking, where the original server cannot be changed.
 
 #### Keep Synchronized Sections Small ..
 
@@ -7608,18 +7608,18 @@ Proving that code is correct is impractical. Testing does not guarantee correctn
 
 That is a whole lot to take into consideration. Here are a few more fine-grained recommendations:
 
--   Treat spurious failures as candidate threading issues.
--   Get your nonthreaded code working first.
+- Treat spurious failures as candidate threading issues.
+- Get your nonthreaded code working first.
 
 1. See "Deadlock" on page 335.
 
 **Testing Threaded Code** 187
 
--   Make your threaded code pluggable.
--   Make your threaded code tunable.
--   Run with more threads than processors.
--   Run on different platforms.
--   Instrument your code to try and force failures.
+- Make your threaded code pluggable.
+- Make your threaded code tunable.
+- Run with more threads than processors.
+- Run on different platforms.
+- Instrument your code to try and force failures.
 
 ---
 
@@ -7651,10 +7651,10 @@ This may seem obvious, but it doesn't hurt to reinforce it. Make sure code works
 
 Write the concurrency-supporting code such that it can be run in several configurations:
 
--   One thread, several threads, varied as it executes
--   Threaded code interacts with something that can be both real or a test double.
--   Execute with test doubles that run quickly, slowly, variable.
--   Configure tests so they can run for a number of iterations.
+- One thread, several threads, varied as it executes
+- Threaded code interacts with something that can be both real or a test double.
+- Execute with test doubles that run quickly, slowly, variable.
+- Configure tests so they can run for a number of iterations.
 
 **Recommendation** : _Make your thread-based code especially pluggable so that you can run it in various configurations._
 
@@ -7710,8 +7710,8 @@ Each of these methods can affect the order of execution, thereby increasing the 
 There are two options for code instrumentation:
 ```
 
--   Hand-coded
--   Automated
+- Hand-coded
+- Automated
 
 1. Did you know that the threading model in Java does not guarantee preemptive threading? Modern OS's support preemptive threading, so you get that "for free." Even so, it not guaranteed by the JVM.
 
@@ -7733,10 +7733,10 @@ Here is an example of doing just that: public synchronized String nextUrlOrNull(
 There are many problems with this approach:
 ```
 
--   You have to manually find appropriate places to do this.
--   How do you know where to put the call and what kind of call to use?
--   Leaving such code in a production environment unnecessarily slows the code down.
--   It's a shotgun approach. You may or may not find flaws. Indeed, the odds aren't with you.
+- You have to manually find appropriate places to do this.
+- How do you know where to put the call and what kind of call to use?
+- Leaving such code in a production environment unnecessarily slows the code down.
+- It's a shotgun approach. You may or may not find flaws. Indeed, the odds aren't with you.
 
 What we need is a way to do this during testing but not in production. We also need to easily mix up configurations between different runs, which results in increased chances of finding errors in the aggregate.
 
@@ -7841,7 +7841,7 @@ but none of them do exactly what I want. So, of course, I decided to write my ow
 
 Argsis very simple to use. You simply construct the Argsclass with the input argu- ments and a format string, and then query the Argsinstance for the values of the argu- ments. Consider the following simple example:
 
-You can see how simple this is. We just create an instance of the Argsclass with two parameters. The first parameter is the format, or _schema,_ string: "l,p#,d\*." It defines three command-line arguments. The first, –l, is a boolean argument. The second, -p, is an integer argument. The third, -d, is a string argument. The second parameter to the Argsconstructor is simply the array of command-line argument passed into main.
+You can see how simple this is. We just create an instance of the Argsclass with two parameters. The first parameter is the format, or _schema,_ string: "l,p#,d\*." It defines three command-line arguments. The first, -l, is a boolean argument. The second, -p, is an integer argument. The third, -d, is a string argument. The second parameter to the Argsconstructor is simply the array of command-line argument passed into main.
 
 If the constructor returns without throwing an ArgsException, then the incoming command-line was parsed, and the Argsinstance is ready to be queried. Methods like getBoolean,getInteger, and getStringallow us to access the values of the arguments by their names.
 
@@ -11513,8 +11513,8 @@ The import list starting at line 61 could be shortened by using java.text._and j
 
 I wince at the HTML formatting in the Javadoc (line 67). Having a source file with more than one language in it troubles me. This comment has _four_ languages in it: Java, English, Javadoc, and html \[G1]. With that many languages in use, it's hard to keep things straight. For example, the nice positioning of line 71 and line 72 are lost when the Javadoc is generated, and yet who wants to see
 
--   and
--   in the source code? A better strategy might be to just surround the whole comment with
+- and
+- in the source code? A better strategy might be to just surround the whole comment with
 
     ```
     so that the formatting that is
@@ -11648,7 +11648,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     return such an instance, which means that somewhere it must be creating it. Line 187
     through line 205 provide the hint. The DayDateinstance is being created by one of the
     three functions, getPreviousDayOfWeek,getNearestDayOfWeek, or getFollowingDayOfWeek.
-    Looking back at the DayDatelisting, we see that these functions (lines 638–724) all return
+    Looking back at the DayDatelisting, we see that these functions (lines 638-724) all return
     a date created by addDays(line 571), which calls createInstance(line 808), which creates
     aSpreadsheetDate! [G7].
     It's generally a bad idea for base classes to know about their derivatives. To fix this, we
@@ -11746,7 +11746,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     seems to need a function like that. Moreover, the table can be moved back to DayDateeasily
     if any new implementation of DayDate needs it. So I moved it.
     The same goes for the table, LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_MONTH.
-    Next, we see three sets of constants that can be turned into enums (lines 162–205).
+    Next, we see three sets of constants that can be turned into enums (lines 162-205).
     The first of the three selects a week within a month. I changed it into an enum named
     WeekInMonth.
     protected int _getMinimumYear() {
@@ -11766,13 +11766,13 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     }
 
     276 Chapter 16: Refactoring SerialDate
-    The second set of constants (lines 177–187) is a bit more obscure. The INCLUDE_NONE,
+    The second set of constants (lines 177-187) is a bit more obscure. The INCLUDE_NONE,
     INCLUDE_FIRST,INCLUDE_SECOND, and INCLUDE_BOTHconstants are used to describe whether
     the defining end-point dates of a range should be included in that range. Mathematically,
     this is described using the terms "open interval," "half-open interval," and "closed inter-
     val." I think it is clearer using the mathematical nomenclature [N3], so I changed it to an
     enum named DateInterval with CLOSED,CLOSED_LEFT,CLOSED_RIGHT, and OPEN enumerators.
-    The third set of constants (lines 18–205) describe whether a search for a particular
+    The third set of constants (lines 18-205) describe whether a search for a particular
     day of the week should result in the last, next, or nearest instance. Deciding what to call
     this is difficult at best. In the end, I settled for WeekdayRangewithLAST,NEXT, and NEAREST
     enumerators.
@@ -11786,9 +11786,9 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     with its accessor and mutator [G9].
     I also deleted the degenerate default constructor at line 213 [G12]. The compiler will
     generate it for us.
-    We can skip over the isValidWeekdayCodemethod (lines 216–238) because we deleted
+    We can skip over the isValidWeekdayCodemethod (lines 216-238) because we deleted
     it when we created the Day enumeration.
-    This brings us to the stringToWeekdayCodemethod (lines 242–270). Javadocs that
+    This brings us to the stringToWeekdayCodemethod (lines 242-270). Javadocs that
     don't add much to the method signature are just clutter [C3],[G12]. The only value this
     Javadoc adds is the description of the -1return value. However, because we changed to the
     Dayenumeration, the comment is actually wrong [C2]. The method now throws an
@@ -11811,9 +11811,9 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Then Make It Right 277
     enumeration pretty large. Because the concept of Daydoes not depend on DayDate, I moved
     theDay enumeration outside of the DayDate class into its own source file [G13].
-    I also moved the next function, weekdayCodeToString(lines 272–286) into the Day
+    I also moved the next function, weekdayCodeToString(lines 272-286) into the Day
     enumeration and called it toString.
-    There are two getMonthsfunctions (lines 288–316). The first calls the second. The
+    There are two getMonthsfunctions (lines 288-316). The first calls the second. The
     second is never called by anyone but the first. Therefore, I collapsed the two into one and
     vastly simplified them [G9],[G12],[F4]. Finally, I changed the name to be a bit more self-
     descriptive [N1].
@@ -11858,18 +11858,18 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     }
 
     278 Chapter 16: Refactoring SerialDate
-    TheisValidMonthCodefunction (lines 326–346) was made irrelevant by the Month
+    TheisValidMonthCodefunction (lines 326-346) was made irrelevant by the Month
     enum, so I deleted it [G9].
-    ThemonthCodeToQuarterfunction (lines 356–375) smells of FEATURE ENVY^7 [G14]
+    ThemonthCodeToQuarterfunction (lines 356-375) smells of FEATURE ENVY^7 [G14]
     and probably belongs in the Month enum as a method named quarter. So I replaced it.
     This made the Monthenum big enough to be in its own class. So I moved it out of
     DayDate to be consistent with the Day enum [G11],[G13].
-    The next two methods are named monthCodeToString(lines 377–426). Again, we see
+    The next two methods are named monthCodeToString(lines 377-426). Again, we see
     the pattern of one method calling its twin with a flag. It is usually a bad idea to pass a flag
     as an argument to a function, especially when that flag simply selects the format of the out-
     put[G15]. I renamed, simplified, and restructured these functions and moved them into the
     Month enum [N1],[N3],[C3],[G14].
-    The next method is stringToMonthCode(lines 428–472). I renamed it, moved it into the
+    The next method is stringToMonthCode(lines 428-472). I renamed it, moved it into the
     Month enum, and simplified it [N1],[N3],[C3],[G14],[G12].
     public static String[] getMonthNames() {
     return dateFormatSymbols.getMonths();
@@ -11902,19 +11902,19 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     }
 
     Then Make It Right 279
-    TheisLeapYear method (lines 495–517) can be made a bit more expressive [G16].
+    TheisLeapYear method (lines 495-517) can be made a bit more expressive [G16].
 
-    The next function, leapYearCount(lines 519–536) doesn't really belong in DayDate.
+    The next function, leapYearCount(lines 519-536) doesn't really belong in DayDate.
     Nobody calls it except for two methods in SpreadsheetDate. So I pushed it down [G6].
-    ThelastDayOfMonthfunction (lines 538–560) makes use of the LAST_DAY_OF_MONTH
+    ThelastDayOfMonthfunction (lines 538-560) makes use of the LAST_DAY_OF_MONTH
     array. This array really belongs in the Month enum [G17], so I moved it there. I also simpli-
     fied the function and made it a bit more expressive [G16].
-    Now things start to get a bit more interesting. The next function is addDays(lines 562–
+    Now things start to get a bit more interesting. The next function is addDays(lines 562-
     576). First of all, because this function operates on the variables of DayDate, it should not
     be static [G18]. So I changed it to an instance method. Second, it calls the function
     toSerial. This function should be renamed toOrdinal[N1]. Finally, the method can be
     simplified.
-    The same goes for addMonths(lines 578–602). It should be an instance method [G18].
+    The same goes for addMonths(lines 578-602). It should be an instance method [G18].
     The algorithm is a bit complicated, so I used EXPLAINING TEMPORARY VARIABLES^8 [G19]
     to make it more transparent. I also renamed the method getYYY to getYear [N1].
     private boolean matches(String s) {
@@ -11950,7 +11950,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Month resultMonth = Month.make(resultMonthAsOrdinal % 12 + 1);
 
     280 Chapter 16: Refactoring SerialDate
-    TheaddYears function (lines 604–626) provides no surprises over the others.
+    TheaddYears function (lines 604-626) provides no surprises over the others.
 
     There is a little itch at the back of my mind that is bothering me about changing
     these methods from static to instance. Does the expression date.addDays(5)make it
@@ -11968,12 +11968,12 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     whereas the following doesn't read fluidly enough for a reader to simply accept that the
     date object is changed:
     date.plusDays(5);
-    The algorithms continue to get more interesting. getPreviousDayOfWeek(lines 628–
+    The algorithms continue to get more interesting. getPreviousDayOfWeek(lines 628-
     660) works but is a bit complicated. After some thought about what was really going on
     [G21], I was able to simplify it and use EXPLAINING TEMPORARY VARIABLES[G19] to
     make it clearer. I also changed it from a static method to an instance method [G18], and
-    got rid of the duplicate instance method [G5] (lines 997–1008).
-    The exact same analysis and result occurred for getFollowingDayOfWeek(lines 662–693).
+    got rid of the duplicate instance method [G5] (lines 997-1008).
+    The exact same analysis and result occurred for getFollowingDayOfWeek(lines 662-693).
 
     int lastDayOfResultMonth = lastDayOfMonth(resultMonth, resultYear);
     int resultDay = Math.min(getDayOfMonth(), lastDayOfResultMonth);
@@ -11999,19 +11999,19 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     if (offsetToTarget <= 0)
 
     Then Make It Right 281
-    The next function is getNearestDayOfWeek(lines 695–726), which we corrected back
+    The next function is getNearestDayOfWeek(lines 695-726), which we corrected back
     on page 270. But the changes I made back then aren't consistent with the current pattern in
     the last two functions [G11]. So I made it consistent and used some EXPLAINING TEMPO-
     RARY VARIABLES [G19] to clarify the algorithm.
-    ThegetEndOfCurrentMonthmethod (lines 728–740) is a little strange because it is an
+    ThegetEndOfCurrentMonthmethod (lines 728-740) is a little strange because it is an
     instance method that envies [G14] its own class by taking a DayDateargument. I made it a
     true instance method and clarified a few names.
-    Refactoring weekInMonthToString(lines 742–761) turned out to be very interesting
+    Refactoring weekInMonthToString(lines 742-761) turned out to be very interesting
     indeed. Using the refactoring tools of my IDE, I first moved the method to the WeekInMonth
     enum that I created back on page 275. Then I renamed the method to toString. Next, I
     changed it from a static method to an instance method. All the tests still passed. (Can you
     guess where I am going?)
-    Next, I deleted the method entirely! Five asserts failed (lines 411–415, Listing B-4,
+    Next, I deleted the method entirely! Five asserts failed (lines 411-415, Listing B-4,
     page 374). I changed these lines to use the names of the enumerators (FIRST,
     SECOND,.. .). All the tests passed. Can you see why? Can you also see why each of these
     steps was necessary? The refactoring tool made sure that all previous callers of
@@ -12021,7 +12021,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     ings was, I finally realized that the only users of this function were the tests I had just mod-
     ified, so I deleted the tests.
     Fool me once, shame on you. Fool me twice, shame on me! So after determining that
-    nobody other than the tests called relativeToString(lines 765–781), I simply deleted the
+    nobody other than the tests called relativeToString(lines 765-781), I simply deleted the
     function and its tests.
     offsetToTarget += 7;
     return plusDays(offsetToTarget);
@@ -12046,12 +12046,12 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
 
     282 Chapter 16: Refactoring SerialDate
     We have finally made it to the abstract methods of this abstract class. And the first one
-    is as appropriate as they come: toSerial(lines 838–844). Back on page 279 I had changed
+    is as appropriate as they come: toSerial(lines 838-844). Back on page 279 I had changed
     the name to toOrdinal. Having looked at it in this context, I decided the name should be
     changed to getOrdinalDay.
-    The next abstract method is toDate(lines 838–844). It converts a DayDate to a
+    The next abstract method is toDate(lines 838-844). It converts a DayDate to a
     java.util.Date. Why is this method abstract? If we look at its implementation in
-    SpreadsheetDate(lines 198–207, Listing B-5, page 382), we see that it doesn't depend on
+    SpreadsheetDate(lines 198-207, Listing B-5, page 382), we see that it doesn't depend on
     anything in the implementation of that class [G6]. So I pushed it up.
     ThegetYYYY,getMonth, and getDayOfMonthmethods are nicely abstract. However, the
     getDayOfWeekmethod is another one that should be pulled up from SpreadSheetDate
@@ -12070,14 +12070,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Zero.
     As a side note, look carefully at the comment on line 895 through line 899. Was this
     repetition really necessary? As usual, I deleted this comment along with all the others.
-    The next method is compare(lines 902–913). Again, this method is inappropriately
+    The next method is compare(lines 902-913). Again, this method is inappropriately
     abstract [G6], so I pulled the implementation up into DayDate. Also, the name does not
     communicate enough [N1]. This method actually returns the difference in days since the
     argument. So I changed the name to daysSince. Also, I noted that there weren't any tests
     for this method, so I wrote them.
-    The next six functions (lines 915–980) are all abstract methods that should be imple-
+    The next six functions (lines 915-980) are all abstract methods that should be imple-
     mented in DayDate. So I pulled them all up from SpreadsheetDate.
-    The last function, isInRange(lines 9 8 2–995) also needs to be pulled up and refac-
+    The last function, isInRange(lines 9 8 2-995) also needs to be pulled up and refac-
     tored. The switchstatement is a bit ugly [G23]and can be replaced by moving the cases
     into the DateInterval enum.
     public Day getDayOfWeek() {
@@ -14490,7 +14490,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Line Description
     10 Create a single instance of ClassWithThreadingProblem. Note, we must use
     the final keyword because we use it below in an anonymous inner class.
-    12–16 Create an anonymous inner class that uses the single instance of
+    12-16 Create an anonymous inner class that uses the single instance of
     ClassWithThreadingProblem.
     18 Run this code "enough" times to demonstrate that the code failed, but not
     so much that the test "takes too long." This is a balancing act; we don't
@@ -14501,7 +14501,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     code was broken. If this test fails, the test was unable to prove that the code
     is broken.
     20 We expect the final value to be two more than the current value.
-    22–23 Create two threads, both of which use the object we created in lines 12–16.
+    22-23 Create two threads, both of which use the object we created in lines 12-16.
     This gives us the potential of two threads trying to use our single instance
     of ClassWithThreadingProblem and interfering with each other.
 
@@ -14536,10 +14536,10 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     - The tests aren't adequate to expose problems.
     - Run the tests on a machine with varying loads. If you can simulate loads close to a
     production environment, do so.
-    24–25 Make our two threads eligible to run.
-    26–27 Wait for both threads to finish before we check the results.
+    24-25 Make our two threads eligible to run.
+    26-27 Wait for both threads to finish before we check the results.
     29 Record the actual final value.
-    31–32 Did our endingId differ from what we expected? If so, return end the test—
+    31-32 Did our endingId differ from what we expected? If so, return end the test—
     we've proven that the code is broken. If not, try again.
     35 If we got to here, our test was unable to prove the production code was bro-
     ken in a "reasonable" amount of time; our code has failed. Either the code
@@ -18505,7 +18505,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     # 413
     Index
 
-    detection, 237–238
+    detection, 237-238
     ++ (pre- or post-increment) operator,
     325, 326
     A
@@ -18515,16 +18515,16 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     273, 274
     abstract interfaces, 94
     abstract methods
-    adding to ArgumentMarshaler, 234–235
+    adding to ArgumentMarshaler, 234-235
     modifying, 282
     abstract terms, 95
     abstraction
     classes depending on, 150
-    code at wrong level of, 290–291
+    code at wrong level of, 290-291
     descending one level at a time, 37
     functions descending only one level
-    of, 304–306
-    mixing levels of, 36–37
+    of, 304-306
+    mixing levels of, 36-37
     names at the appropriate level of, 311
     separating levels of, 305
     wrapping an implementation, 11
@@ -18540,9 +18540,9 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Agile Software Development: Principles,
     Patterns, Practices (PPP) , 15
     algorithms
-    correcting, 269–270
+    correcting, 269-270
     repeating, 48
-    understanding, 297–298
+    understanding, 297-298
     ambiguities
     in code, 301
     ignored tests as, 313
@@ -18564,17 +18564,17 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     infrastructure of, 163
     keeping concurrency-related code
     separate, 181
-    arbitrary structure, 303–304
-    argsarray, converting into a list, 231–232
+    arbitrary structure, 303-304
+    argsarray, converting into a list, 231-232
     Args class
     constructing, 194
-    implementation of, 194–200
-    rough drafts of, 201–212, 226–231
+    implementation of, 194-200
+    rough drafts of, 201-212, 226-231
 
     414 Index
     ArgsException class
-    listing, 198–200
-    merging exceptions into, 239–242
+    listing, 198-200
+    merging exceptions into, 239-242
     argument(s)
     flag, 41
     for a function, 40
@@ -18587,50 +18587,50 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     adding, 200, 237
     negative impact of, 208
     ArgumentMarshaler class
-    adding the skeleton of, 213–214
+    adding the skeleton of, 213-214
     birth of, 212
-    ArgumentMarshaler interface, 197–198
+    ArgumentMarshaler interface, 197-198
     arrays, moving, 279
-    art, of clean code, 6–7
+    art, of clean code, 6-7
     artificial coupling, 293
     AspectJ language, 166
     aspect-oriented programming (AOP),
     160, 163
     aspects
-    in AOP, 160–161
+    in AOP, 160-161
     "first-class" support for, 166
-    assert statements, 130–131
+    assert statements, 130-131
     assertEquals, 42
     assertions, using a set of, 111
-    assignments, unaligned, 87–88
-    atomic operation, 323–324
+    assignments, unaligned, 87-88
+    atomic operation, 323-324
     attributes, 68
     authors
     of JUnit, 252
-    programmers as, 13–14
+    programmers as, 13-14
     authorship statements, 55
-    automated code instrumentation, 189–190
+    automated code instrumentation, 189-190
     automated suite, of unit tests, 124
     B
-    bad code, 3–4. See also dirty code;
+    bad code, 3-4. See also dirty code;
     messy code
     degrading effect of, 250
-    example, 71–72
+    example, 71-72
     experience of cleaning, 250
     not making up for, 55
-    bad comments, 59–74
+    bad comments, 59-74
     banner, gathering functions beneath, 67
     base classes, 290, 291
     BDUF (Big Design Up Front), 167
     beans, private variables manipulated,
-    100–101
+    100-101
     Beck, Kent, 3, 34, 71, 171, 252,
     289, 296
-    behaviors, 288–289
+    behaviors, 288-289
     Big Design Up Front (BDUF), 167
-    blank lines, in code, 78–79
+    blank lines, in code, 78-79
     blocks, calling functions within, 35
-    Booch,Grady, 8–9
+    Booch,Grady, 8-9
     boolean, passing into a function, 41
     boolean arguments, 194, 288
     boolean map, deleting, 224
@@ -18641,14 +18641,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     exploring and learning, 116
     incorrect behavior at, 289
     separating known from unknown,
-    118–119
+    118-119
     boundary condition errors, 269
     boundary conditions
     encapsulating, 304
     testing, 314
     boundary tests, easing a migration, 118
     "Bowling Game", 312
-    Boy Scout Rule, 14–15, 257
+    Boy Scout Rule, 14-15, 257
     following, 284
     satisfying, 265
     broken windows metaphor, 8
@@ -18659,7 +18659,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     handling, 109
     bylines, 68
     byte-manipulation libraries, 161,
-    162–163
+    162-163
 
     Index 415
     C
@@ -18675,19 +18675,19 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Cartesian points, 42
     CAS operation, as atomic, 328
     change(s)
-    isolating from, 149–150
+    isolating from, 149-150
     large number of very tiny, 213
-    organizing for, 147–150
+    organizing for, 147-150
     tests enabling, 124
     change history, deleting, 270
     check exceptions, in Java, 106
-    circular wait, 337, 338–339
+    circular wait, 337, 338-339
     clarification, comments as, 57
     clarity, 25, 26
     class names, 25
     classes
-    cohesion of, 140–141
-    creating for bigger concepts, 28–29
+    cohesion of, 140-141
+    creating for bigger concepts, 28-29
     declaring instance variables, 81
     enforcing design and business
     rules, 115
@@ -18696,7 +18696,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     keeping small, 136, 175
     minimizing the number of, 176
     naming, 25, 138
-    nonthread-safe, 328–329
+    nonthread-safe, 328-329
     as nouns of a language, 49
     organization of, 136
     organizing to reduce risk of
@@ -18706,40 +18706,40 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     classification, of errors, 107
     clean boundaries, 120
     clean code
-    art of, 6–7
-    described, 7–12
-    writing, 6–7
-    clean tests, 124–127
+    art of, 6-7
+    described, 7-12
+    writing, 6-7
+    clean tests, 124-127
     cleanliness
-    acquired sense of, 6–7
+    acquired sense of, 6-7
     tied to tests, 9
-    cleanup, of code, 14–15
+    cleanup, of code, 14-15
     clever names, 26
     client, using two methods, 330
     client code, connecting to a server, 318
-    client-based locking, 185, 329, 330–332
+    client-based locking, 185, 329, 330-332
     clientScheduler, 320
     client/server application, concurrency in,
-    317–321
+    317-321
     Client/Server nonthreaded, code for,
-    343–346
+    343-346
     client-server using threads, code changes,
-    346–347
-    ClientTest.java, 318, 344–346
-    closing braces, comments on, 67–68
+    346-347
+    ClientTest.java, 318, 344-346
+    closing braces, comments on, 67-68
     Clover, 268, 269
     clutter
     Javadocs as, 276
     keeping free of, 293
     code, 2
-    bad, 3–4
+    bad, 3-4
     Beck's rules of, 10
-    commented-out, 68–69, 287
+    commented-out, 68-69, 287
     dead, 292
     explaining yourself in, 55
     expressing yourself in, 54
     formatting of, 76
-    implicity of, 18–19
+    implicity of, 18-19
     instrumenting, 188, 342
     jiggling, 190
     making readable, 311
@@ -18750,69 +18750,69 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
 
     416 Index
     code, continued
-    third-party, 114–115
-    width of lines in, 85–90
-    at wrong level of abstraction, 290–291
+    third-party, 114-115
+    width of lines in, 85-90
+    at wrong level of abstraction, 290-291
     code bases, dominated by error
     handling, 103
     code changes, comments not always
     following, 54
     code completion, automatic, 20
-    code coverage analysis, 254–256
-    code instrumentation, 188–190
+    code coverage analysis, 254-256
+    code instrumentation, 188-190
     "code sense", 6, 7
-    code smells, listing of, 285–314
+    code smells, listing of, 285-314
     coding standard, 299
     cohesion
-    of classes, 140–141
-    maintaining, 141–146
-    command line arguments, 193–194
-    commands, separating from queries, 45–46
-    comment header standard, 55–56
+    of classes, 140-141
+    maintaining, 141-146
+    command line arguments, 193-194
+    commands, separating from queries, 45-46
+    comment header standard, 55-56
     comment headers, replacing, 70
-    commented-out code, 68–69, 287
-    commenting style, example of bad, 71–72
+    commented-out code, 68-69, 287
+    commenting style, example of bad, 71-72
     comments
     amplifying importance of
     something, 59
-    bad, 59–74
+    bad, 59-74
     deleting, 282
     as failures, 54
-    good, 55–59
-    heuristics on, 286–287
+    good, 55-59
+    heuristics on, 286-287
     HTML, 69
     inaccurate, 54
     informative, 56
-    journal, 63–64
-    legal, 55–56
+    journal, 63-64
+    legal, 55-56
     mandated, 63
     misleading, 63
-    mumbling, 59–60
-    as a necessary evil, 53–59
-    noise, 64–66
+    mumbling, 59-60
+    as a necessary evil, 53-59
+    noise, 64-66
     not making up for bad code, 55
     obsolete, 286
     poorly written, 287
     proper use of, 54
-    redundant, 60–62, 272, 275, 286–287
+    redundant, 60-62, 272, 275, 286-287
     restating the obvious, 64
     separated from code, 54
-    TODO, 58–59
+    TODO, 58-59
     too much information in, 70
     venting in, 65
     writing, 287
     "communication gap", minimizing, 168
     Compare and Swap (CAS) operation,
-    327–328
-    ComparisonCompactor module, 252–265
-    defactored, 256–261
-    final, 263–265
-    interim, 261–263
-    original code, 254–256
+    327-328
+    ComparisonCompactor module, 252-265
+    defactored, 256-261
+    final, 263-265
+    interim, 261-263
+    original code, 254-256
     compiler warnings, turning off, 289
     complex code, demonstrating failures
     in, 341
-    complexity, managing, 139–140
+    complexity, managing, 139-140
     computer science (CS) terms, using for
     names, 27
     concepts
@@ -18821,20 +18821,20 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     one word per, 26
     separating at different levels, 290
     spelling similar similarly, 20
-    vertical openness between, 78–79
+    vertical openness between, 78-79
     conceptual affinity, of code, 84
     concerns
-    cross-cutting, 160–161
+    cross-cutting, 160-161
     separating, 154, 166, 178, 250
     concrete classes, 149
     concrete details, 149
     concrete terms, 94
     concurrency
-    defense principles, 180–182
+    defense principles, 180-182
     issues, 190
-    motives for adopting, 178–179
+    motives for adopting, 178-179
     myths and misconceptions about,
-    179–180
+    179-180
     concurrency code
     compared to nonconcurrency-related
     code, 181
@@ -18845,7 +18845,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     concurrent applications, partition
     behavior, 183
     concurrent code
-    breaking, 329–333
+    breaking, 329-333
     defending from problems of, 180
     flaws hiding in, 188
     concurrent programming, 180
@@ -18856,7 +18856,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     ConcurrentHashMap implementation, 183
     conditionals
     avoiding negative, 302
-    encapsulating, 257–258, 301
+    encapsulating, 257-258, 301
     configurable data, 306
     configuration constants, 306
     consequences, warning of, 58
@@ -18866,14 +18866,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     in names, 40
     consistent conventions, 259
     constants
-    versusenums, 308–309
+    versusenums, 308-309
     hiding, 308
-    inheriting, 271, 307–308
+    inheriting, 271, 307-308
     keeping at the appropriate level, 83
     leaving as raw numbers, 300
-    not inheriting, 307–308
+    not inheriting, 307-308
     passing as symbols, 276
-    turning into enums, 275–276
+    turning into enums, 275-276
     construction
     moving all to main, 155, 156
     separating with factory, 156
@@ -18883,15 +18883,15 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     consumer threads, 184
     ConTest tool, 190, 342
     context
-    adding meaningful, 27–29
-    not adding gratuitous, 29–30
+    adding meaningful, 27-29
+    not adding gratuitous, 29-30
     providing with exceptions, 107
     continuous readers, 184
     control variables, within loop statements,
-    80–81
+    80-81
     convenient idioms, 155
     convention(s)
-    following standard, 299–300
+    following standard, 299-300
     over configuration, 164
     structure over, 301
     using consistent, 259
@@ -18902,20 +18902,20 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     coupling. See also decoupling; temporal
     coupling; tight coupling
     artificial, 293
-    hidden temporal, 302–303
+    hidden temporal, 302-303
     lack of, 150
     coverage patterns, testing, 314
     coverage tools, 313
-    "crisp abstraction", 8–9
+    "crisp abstraction", 8-9
     cross-cutting concerns, 160
-    Cunningham, Ward, 11–12
+    Cunningham, Ward, 11-12
     cuteness, in code, 26
 
     D
     danglingfalse argument, 294
     data
-    abstraction, 93–95
-    copies of, 181–182
+    abstraction, 93-95
+    copies of, 181-182
     encapsulation, 181
     limiting the scope of, 181
     sets processed in parallel, 179
@@ -18926,23 +18926,23 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     interfaces representing, 94
     treating Active Records as, 101
     data transfer-objects (DTOs),
-    100–101, 160
+    100-101, 160
     database normal forms, 48
-    DateInterval enum, 282–283
+    DateInterval enum, 282-283
     DAY enumeration, 277
 
     418 Index
     DayDate class, running SerialDate
     as, 271
-    DayDateFactory, 273–274
+    DayDateFactory, 273-274
     dead code, 288, 292
     dead functions, 288
-    deadlock, 183, 335–339
+    deadlock, 183, 335-339
     deadly embrace. See circular wait
     debugging, finding deadlocks, 336
-    decision making, optimizing, 167–168
+    decision making, optimizing, 167-168
     decisions, postponing, 168
-    declarations, unaligned, 87–88
+    declarations, unaligned, 87-88
     DECORATOR objects, 164
     DECORATOR pattern, 274
     decoupled architecture, 167
@@ -18954,34 +18954,34 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     degradation, preventing, 14
     deletions, as the majority of
     changes, 250
-    density, vertical in code, 79–80
+    density, vertical in code, 79-80
     dependencies
     finding and breaking, 250
     injecting, 157
     logical, 282
-    making logical physical, 298–299
-    between methods, 329–333
+    making logical physical, 298-299
+    between methods, 329-333
     between synchronized
     methods, 185
     Dependency Injection (DI), 157
     Dependency Inversion Principle (DIP),
     15, 150
     dependency magnet, 47
-    dependent functions, formatting, 82–83
+    dependent functions, formatting, 82-83
     derivatives
     base classes depending on, 291
     base classes knowing about, 273
     of the exception class, 48
     movingset functions into, 232,
-    233–235
+    233-235
     pushing functionality into, 217
     description
     of a class, 138
     overloading the structure of code
     into, 310
     descriptive names
-    choosing, 309–310
-    using, 39–40
+    choosing, 309-310
+    using, 39-40
     design(s)
     of concurrent algorithms, 179
     minimally coupled, 167
@@ -18991,29 +18991,29 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     DI (Dependency Injection), 157
     Dijkstra, Edsger, 48
     dining philosophers execution model,
-    184–185
+    184-185
     DIP (Dependency Inversion Principle),
     15, 150
     dirty code. See also bad code;
     messy code
     dirty code, cleaning, 200
     dirty tests, 123
-    disinformation, avoiding, 19–20
-    distance, vertical in code, 80–84
-    distinctions, making meaningful, 20–21
+    disinformation, avoiding, 19-20
+    distance, vertical in code, 80-84
+    distinctions, making meaningful, 20-21
     domain-specific languages (DSLs),
-    168–169
+    168-169
     domain-specific testing language, 127
     DoubleArgumentMarshalerclass, 238
     DRY principle (Don't Repeat Yourself ),
     181, 289
-    DTOs (data transfer objects), 100–101, 160
+    DTOs (data transfer objects), 100-101, 160
     dummy scopes, 90
     duplicateif statements, 276
     duplication
     of code, 48
-    in code, 289–290
-    eliminating, 173–175
+    in code, 289-290
+    eliminating, 173-175
     focusing on, 10
     forms of, 173, 290
     reduction of, 48
@@ -19026,43 +19026,43 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     E
     e, as a variable name, 22
     Eclipse, 26
-    edit sessions, playing back, 13–14
+    edit sessions, playing back, 13-14
     efficiency, of code, 7
     EJB architecture, early as over-engineered,
     167
     EJB standard, complete overhaul of, 164
     EJB2 beans, 160
-    EJB3, Bank object rewritten in, 165–166
+    EJB3, Bank object rewritten in, 165-166
     "elegant" code, 7
-    emergent design, 171–176
+    emergent design, 171-176
     encapsulation, 136
     of boundary conditions, 304
-    breaking, 106–107
+    breaking, 106-107
     of conditionals, 301
-    encodings, avoiding, 23–24, 312–313
-    entity bean, 158–160
+    encodings, avoiding, 23-24, 312-313
+    entity bean, 158-160
     enum(s)
     changingMonthConstants to, 272
-    using, 308–309
+    using, 308-309
     enumeration, moving, 277
     environment, heuristics on, 287
-    environment control system, 128–129
+    environment control system, 128-129
     envying, the scope of a class, 293
     error check, hiding a side effect, 258
-    Errorclass, 47–48
-    error code constants, 198–200
+    Errorclass, 47-48
+    error code constants, 198-200
     error codes
-    implying a class or enum, 47–48
+    implying a class or enum, 47-48
     preferring exceptions to, 46
-    returning, 103–104
+    returning, 103-104
     reusing old, 48
     separating from the Args module,
-    242–250
+    242-250
     error detection, pushing to the edges, 109
-    error flags, 103–104
-    error handling, 8, 47–48
+    error flags, 103-104
+    error handling, 8, 47-48
     error messages, 107, 250
-    error processing, testing, 238–239
+    error processing, testing, 238-239
     errorMessage method, 250
     errors. See also boundary condition errors;
     spelling errors; string comparison
@@ -19071,36 +19071,36 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Evans, Eric, 311
     events, 41
     exception classification, 107
-    exception clauses, 107–108
+    exception clauses, 107-108
     exception management code, 223
     exceptions
-    instead of return codes, 103–105
-    narrowing the type of, 105–106
+    instead of return codes, 103-105
+    narrowing the type of, 105-106
     preferring to error codes, 46
     providing context with, 107
-    separating from Args, 242–250
-    throwing, 104–105, 194
-    unchecked, 106–107
-    execution, possible paths of, 321–326
-    execution models, 183–185
-    Executorframework, 326–327
+    separating from Args, 242-250
+    throwing, 104-105, 194
+    unchecked, 106-107
+    execution, possible paths of, 321-326
+    execution models, 183-185
+    Executorframework, 326-327
     ExecutorClientScheduler.java, 321
-    explanation, of intent, 56–57
-    explanatory variables, 296–297
+    explanation, of intent, 56-57
+    explanatory variables, 296-297
     explicitness, of code, 19
     expressive code, 295
     expressiveness
-    in code, 10–11
-    ensuring, 175–176
+    in code, 10-11
+    ensuring, 175-176
     Extract Method refactoring, 11
     Extreme Programming Adventures
     in C# , 10
     Extreme Programming Installed , 10
-    "eye-full", code fitting into, 79–80
+    "eye-full", code fitting into, 79-80
 
     F
-    factories, 155–156
-    factory classes, 273–275
+    factories, 155-156
+    factory classes, 273-275
     failure
     to express ourselves in code, 54
 
@@ -19115,72 +19115,72 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     fear, of renaming, 30
     Feathers, Michael, 10
     feature envy
-    eliminating, 293–294
+    eliminating, 293-294
     smelling of, 278
     file size, in Java, 76
     finalkeywords, 276
-    F.I.R.S.T. acronym, 132–133
+    F.I.R.S.T. acronym, 132-133
     First Law, of TDD, 122
     FitNesse project
     coding style for, 90
     file sizes, 76, 77
-    function in, 32–33
+    function in, 32-33
     invoking all tests, 224
     flag arguments, 41, 288
     focussed code, 8
     foreign code. See third-party code
     formatting
-    horizontal, 85–90
+    horizontal, 85-90
     purpose of, 76
-    Uncle Bob's rules, 90–92
-    vertical, 76–85
+    Uncle Bob's rules, 90-92
+    vertical, 76-85
     formatting style, for a team of
     developers, 90
     Fortran, forcing encodings, 23
     Fowler, Martin, 285, 293
     frame, 324
-    function arguments, 40–45
-    function call dependencies, 84–85
+    function arguments, 40-45
+    function call dependencies, 84-85
     function headers, 70
     function signature, 45
-    functionality, placement of, 295–296
+    functionality, placement of, 295-296
     functions
-    breaking into smaller, 141–146
+    breaking into smaller, 141-146
     calling within a block, 35
     dead, 288
     defining private, 292
     descending one level of abstraction,
-    304–306
-    doing one thing, 35–36, 302
+    304-306
+    doing one thing, 35-36, 302
     dyadic, 42
     eliminating extraneous if statements,
     262
     establishing the temporal nature
     of, 260
-    formatting dependent, 82–83
+    formatting dependent, 82-83
     gathering beneath a banner, 67
     heuristics on, 288
     intention-revealing, 19
     keeping small, 175
-    length of, 34–35
+    length of, 34-35
     moving, 279
     naming, 39, 297
     number of arguments in, 288
-    one level of abstraction per, 36–37
+    one level of abstraction per, 36-37
     in place of comments, 67
     renaming for clarity, 258
-    rewriting for clarity, 258–259
+    rewriting for clarity, 258-259
     sections within, 36
     small as better, 34
     structured programming with, 49
-    understanding, 297–298
+    understanding, 297-298
     as verbs of a language, 49
     writing, 49
     futures, 326
 
     G
     Gamma, Eric, 252
-    general heuristics, 288–307
+    general heuristics, 288-307
     generated byte-code, 180
     generics, improving code readability, 115
     getfunctions, 218
@@ -19194,32 +19194,32 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
 
     Index 421
     global setup strategy, 155
-    "God class", 136–137
-    good comments, 55–59
+    "God class", 136-137
+    good comments, 55-59
     gotostatements, avoiding, 48, 49
     grand redesign, 5
-    gratuitous context, 29–30
+    gratuitous context, 29-30
     H
     hand-coded instrumentation, 189
-    HashTable, 328–329
+    HashTable, 328-329
     headers. See comment headers; function
     headers
     heuristics
     cross references of, 286, 409
-    general, 288–307
-    listing of, 285–314
-    hidden temporal coupling, 259, 302–303
+    general, 288-307
+    listing of, 285-314
+    hidden temporal coupling, 259, 302-303
     hidden things, in a function, 44
     hiding
     implementation, 94
     structures, 99
     hierarchy of scopes, 88
     HN. See Hungarian Notation
-    horizontal alignment, of code, 87–88
-    horizontal formatting, 85–90
+    horizontal alignment, of code, 87-88
+    horizontal formatting, 85-90
     horizontal white space, 86
     HTML, in source code, 69
-    Hungarian Notation (HN), 23–24, 295
+    Hungarian Notation (HN), 23-24, 295
     Hunt, Andy, 8, 289
     hybrid structures, 99
     I
@@ -19250,14 +19250,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     include method, 48
     inconsistency, in code, 292
     inconsistent spellings, 20
-    incrementalism, 212–214
+    incrementalism, 212-214
     indent level, of a function, 35
-    indentation, of code, 88–89
+    indentation, of code, 88-89
     indentation rules, 89
     independent tests, 132
     information
     inappropriate, 286
-    too much, 70, 291–292
+    too much, 70, 291-292
     informative comments, 56
     inheritance hierarchy, 308
     inobvious connection, between a comment
@@ -19266,7 +19266,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     instance variables
     in classes, 140
     declaring, 81
-    hiding the declaration of, 81–82
+    hiding the declaration of, 81-82
     passing as function
     arguments, 231
     proliferation of, 140
@@ -19274,10 +19274,10 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     insufficient tests, 313
     integer argument(s)
     defining, 194
-    integrating, 224–225
+    integrating, 224-225
     integer argument functionality,
     moving into ArgumentMarshaler,
-    215–216
+    215-216
 
     422 Index
     integer argument type, adding
@@ -19286,17 +19286,17 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     IntelliJ, 26
     intent
     explaining in code, 55
-    explanation of, 56–57
+    explanation of, 56-57
     obscured, 295
     intention-revealing function, 19
-    intention-revealing names, 18–19
+    intention-revealing names, 18-19
     interface(s)
-    defining local or remote, 158–160
+    defining local or remote, 158-160
     encoding, 24
-    implementing, 149–150
+    implementing, 149-150
     representing abstract concerns, 150
     turning ArgumentMarshaler into, 237
-    well-defined, 291–292
+    well-defined, 291-292
     writing, 119
     internal structures, objects hiding, 97
     intersection, of domains, 160
@@ -19305,27 +19305,27 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Inversion of Control (IoC), 157
     InvocationHandler object, 162
     I/O bound, 318
-    isolating, from change, 149–150
-    isxxxArgmethods, 221–222
+    isolating, from change, 149-150
+    isxxxArgmethods, 221-222
     iterative process, refactoring as, 265
     J
     jar files, deploying derivatives and bases
     in, 291
     Java
     aspects or aspect-like mechanisms,
-    161–166
-    heuristics on, 307–309
+    161-166
+    heuristics on, 307-309
     as a wordy language, 200
     Java 5, improvements for concurrent
-    development, 182–183
-    Java 5 Executor framework, 320–321
+    development, 182-183
+    Java 5 Executor framework, 320-321
     Java 5 VM, nonblocking solutions in,
-    327–328
-    Java AOP frameworks, 163–166
+    327-328
+    Java AOP frameworks, 163-166
     Java programmers, encoding not
     needed, 24
-    Java proxies, 161–163
-    Java source files, 76–77
+    Java proxies, 161-163
+    Java source files, 76-77
     javadocs
     as clutter, 276
     in nonpublic code, 71
@@ -19333,19 +19333,19 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     in public APIs, 59
     requiring for every function, 63
     java.util.concurrentpackage, collections
-    in, 182–183
+    in, 182-183
     JBoss AOP, proxies in, 163
     JCommon library, 267
     JCommon unit tests, 270
     JDepend project, 76, 77
     JDK proxy, providing persistence support,
-    161–163
-    Jeffries, Ron, 10–11, 289
+    161-163
+    Jeffries, Ron, 10-11, 289
     jiggling strategies, 190
     JNDI lookups, 157
-    journal comments, 63–64
+    journal comments, 63-64
     JUnit, 34
-    JUnit framework, 252–265
+    JUnit framework, 252-265
     Junit project, 76, 77
     Just-In-Time Compiler, 180
 
@@ -19362,7 +19362,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     multiples in a comment, 270
     last-in, first-out (LIFO) data structure,
     operand stack as, 324
-    Law of Demeter, 97–98, 306
+    Law of Demeter, 97-98, 306
 
     Index 423
 
@@ -19374,8 +19374,8 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     learning tests, 116, 118
     LeBlanc's law, 4
     legacy code, 307
-    legal comments, 55–56
-    level of abstraction, 36–37
+    legal comments, 55-56
+    level of abstraction, 36-37
     levels of detail, 99
     lexicon, having a consistent, 26
     lines of code
@@ -19389,14 +19389,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     literate programming, 9
     Literate Programming , 141
     livelock, 183, 338
-    local comments, 69–70
+    local comments, 69-70
     local variables, 324
     declaring, 292
     at the top of each function, 80
     lock & wait, 337, 338
     locks, introducing, 185
-    log4j package, 116–118
-    logical dependencies, 282, 298–299
+    log4j package, 116-118
+    logical dependencies, 282, 298-299
     LOGO language, 36
     long descriptive names, 39
     long names, for long scopes, 312
@@ -19405,7 +19405,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     magic numbers
     obscuring intent, 295
     replacing with named constants,
-    300–301
+    300-301
     main function, moving construction to,
     155, 156
     managers, role of, 6
@@ -19414,17 +19414,17 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Map
     adding for ArgumentMarshaler, 221
     methods of, 114
-    maps, breaking the use of, 222–223
+    maps, breaking the use of, 222-223
     marshalling implementation,
-    214–215
-    meaningful context, 27–29
+    214-215
+    meaningful context, 27-29
     member variables
     f prefix for, 257
     prefixing, 24
     renaming for clarity, 259
     mental mapping, avoiding, 25
     messy code. See also bad code; dirty code
-    total cost of owning, 4–12
+    total cost of owning, 4-12
     method invocations, 324
     method names, 25
     methods
@@ -19432,15 +19432,15 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     calling a twin with a flag, 278
     changing from static to instance, 280
     of classes, 140
-    dependencies between, 329–333
+    dependencies between, 329-333
     eliminating duplication between,
-    173–174
+    173-174
     minimizing assert statements in, 176
     naming, 25
     tests exposing bugs in, 269
     minimal code, 9
     misleading comments, 63
-    misplaced responsibility, 295–296, 299
+    misplaced responsibility, 295-296, 299
     MOCK OBJECT, assigning, 155
     monadic argument, 40
     monadic forms, of arguments, 41
@@ -19453,33 +19453,33 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     335
 
     424 Index
-    multithreaded code, 188, 339–342
-    mumbling, 59–60
+    multithreaded code, 188, 339-342
+    mumbling, 59-60
     mutators, naming, 25
     mutual exclusion, 183, 336, 337
     N
     named constants, replacing magic
-    numbers, 300–301
+    numbers, 300-301
     name-length-challenged languages, 23
     names
     abstractions, appropriate level of, 311
     changing, 40
-    choosing, 175, 309–310
-    of classes, 270–271
+    choosing, 175, 309-310
+    of classes, 270-271
     clever, 26
-    descriptive, 39–40
+    descriptive, 39-40
     of functions, 297
-    heuristics on, 309–313
-    importance of, 309–310
-    intention-revealing, 18–19
+    heuristics on, 309-313
+    importance of, 309-310
+    intention-revealing, 18-19
     length of corresponding to scope,
-    22–23
+    22-23
     long names for long scopes, 312
     making unambiguous, 258
     problem domain, 27
-    pronounceable, 21–22
-    rules for creating, 18–30
-    searchable, 22–23
+    pronounceable, 21-22
+    rules for creating, 18-30
+    searchable, 22-23
     shorter generally better than longer, 30
     solution domain, 27
     with subtle differences, 20
@@ -19495,27 +19495,27 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     negatives, 258
     nested structures, 46
     Newkirk, Jim, 116
-    newspaper metaphor, 77–78
+    newspaper metaphor, 77-78
     niladic argument, 40
     no preemption, 337
     noise
-    comments, 64–66
+    comments, 64-66
     scary, 66
     words, 21
-    nomenclature, using standard, 311–312
-    nonblocking solutions, 327–328
+    nomenclature, using standard, 311-312
+    nonblocking solutions, 327-328
     nonconcurrency-related code, 181
     noninformative names, 21
-    nonlocal information, 69–70
+    nonlocal information, 69-70
     nonpublic code, javadocs in, 71
     nonstatic methods, preferred to static, 296
     nonthreaded code, getting working
     first, 187
-    nonthread-safe classes, 328–329
+    nonthread-safe classes, 328-329
     normal flow, 109
     null
-    not passing into methods, 111–112
-    not returning, 109–110
+    not passing into methods, 111-112
+    not returning, 109-110
     passed by a caller accidentally, 111
     null detection logic, for ArgumentMarshaler,
     214
@@ -19534,13 +19534,13 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     defined, 95
     obscured intent, 295
     obsolete comments, 286
-    obvious behavior, 288–289
+    obvious behavior, 288-289
     obvious code, 12
 
     Index 425
     "Once and only once" principle, 289
     "ONE SWITCH" rule, 299
-    one thing, functions doing, 35–36, 302
+    one thing, functions doing, 35-36, 302
     one-offs, 180, 187, 191
     OO code, 97
     OO design, 139
@@ -19553,12 +19553,12 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     optimistic locking, 327
     optimizations, LAZY-EVALUATION
     as, 157
-    optimizing, decision making, 167–168
-    orderings, calculating the possible, 322–323
+    optimizing, decision making, 167-168
+    orderings, calculating the possible, 322-323
     organization
-    for change, 147–150
+    for change, 147-150
     of classes, 136
-    managing complexity, 139–140
+    managing complexity, 139-140
     outbound tests, exercising an interface, 118
     output arguments, 41, 288
     avoiding, 45
@@ -19573,7 +19573,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     parseoperation, throwing an
     exception, 220
     partitioning, 250
-    paths of execution, 321–326
+    paths of execution, 321-326
     pathways, through critical sections, 188
     pattern names, using standard, 175
     patterns
@@ -19601,7 +19601,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     writing application domain logic, 166
     polyadic argument, 40
     polymorphic behavior, of functions, 296
-    polymorphic changes, 96–97
+    polymorphic changes, 96-97
     polymorphism, 37, 299
     position markers, 67
     positives
@@ -19614,49 +19614,49 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     prefixes
     for member variables, 24
     as useless in today's environments,
-    312–313
+    312-313
     pre-increment operator, ++, 324, 325, 326
     "prequel", this book as, 15
-    principle of least surprise, 288–289, 295
+    principle of least surprise, 288-289, 295
     principles, of design, 15
     PrintPrimes program, translation into
     Java, 141
-    private behavior, isolating, 148–149
+    private behavior, isolating, 148-149
 
     426 Index
     private functions, 292
     private method behavior, 147
     problem domain names, 27
     procedural code, 97
-    procedural shape example, 95–96
+    procedural shape example, 95-96
     procedures, compared to objects, 101
-    process function, repartitioning, 319–320
+    process function, repartitioning, 319-320
     process method, I/O bound, 319
     processes, competing for resources, 184
     processor bound, code as, 318
     producer consumer execution model, 184
     producer threads, 184
-    production environment, 127–130
+    production environment, 127-130
     productivity, decreased by messy code, 4
     professional programmer, 25
     professional review, of code, 268
     programmers
-    as authors, 13–14
+    as authors, 13-14
     conundrum faced by, 6
-    responsibility for messes, 5–6
-    unprofessional, 5–6
+    responsibility for messes, 5-6
+    unprofessional, 5-6
     programming
     defined, 2
-    structured, 48–49
+    structured, 48-49
     programs, getting them to work, 201
-    pronounceable names, 21–22
+    pronounceable names, 21-22
     protected variables, avoiding, 80
     proxies, drawbacks of, 163
     public APIs, javadocs in, 59
-    puns, avoiding, 26–27
+    puns, avoiding, 26-27
     PUTFIELD instruction, as atomic, 325
     Q
-    queries, separating from commands, 45–46
+    queries, separating from commands, 45-46
     R
     random jiggling, tests running, 190
     range, including end-point dates in, 276
@@ -19667,7 +19667,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     improving using generics, 115
     readability perspective, 8
     readers
-    of code, 13–14
+    of code, 13-14
     continuous, 184
     readers-writers execution model, 184
     reading
@@ -19678,8 +19678,8 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     recommendations, in this book, 13
     redesign, demanded by the team, 5
     redundancy, of noise words, 21
-    redundant comments, 60–62, 272, 275,
-    286–287
+    redundant comments, 60-62, 272, 275,
+    286-287
     ReentrantLock class, 183
     refactored programs, as longer, 146
     refactoring
@@ -19693,7 +19693,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     repeatability, of concurrency bugs, 180
     repeatable tests, 132
     requirements, specifying, 2
-    resetId, byte-code generated for, 324–325
+    resetId, byte-code generated for, 324-325
     resources
     bound, 183
     processes competing for, 184
@@ -19703,10 +19703,10 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     counting in classes, 136
     definition of, 138
     identifying, 139
-    misplaced, 295–296, 299
+    misplaced, 295-296, 299
     splitting a program into main, 146
     return codes, using exceptions instead,
-    103–105
+    103-105
 
     Index 427
     reuse, 174
@@ -19715,15 +19715,15 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     rough drafts, writing, 200
     runnable interface, 326
     run-on expressions, 295
-    run-on journal entries, 63–64
+    run-on journal entries, 63-64
     runtime logic, separating startup from, 154
     S
     safety mechanisms, overridden, 289
-    scaling up, 157–161
+    scaling up, 157-161
     scary noise, 66
     schema, of a class, 194
     schools of thought, about clean code,
-    12–13
+    12-13
     scissors rule, in C++, 81
     scope(s)
     defined by exceptions, 105
@@ -19733,40 +19733,40 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     hierarchy in a source file, 88
     limiting for data, 181
     names related to the length of,
-    22–23, 312
+    22-23, 312
     of shared variables, 333
-    searchable names, 22–23
+    searchable names, 22-23
     Second Law, of TDD, 122
     sections, within functions, 36
-    selector arguments, avoiding, 294–295
+    selector arguments, avoiding, 294-295
     self validating tests, 132
     Semaphoreclass, 183
     semicolon, making visible, 90
     "serial number", SerialDate using, 271
     SerialDateclass
-    making it right, 270–284
-    naming of, 270–271
-    refactoring, 267–284
+    making it right, 270-284
+    naming of, 270-271
+    refactoring, 267-284
     SerialDateTests class, 268
     serialization, 272
-    server, threads created by, 319–321
-    server application, 317–318, 343–344
+    server, threads created by, 319-321
+    server application, 317-318, 343-344
     server code, responsibilities of, 319
     server-based locking, 329
-    as preferred, 332–333
+    as preferred, 332-333
     with synchronized methods, 185
     "Servlet" model, of Web applications, 178
     Servlets, synchronization problems, 182
     setfunctions, moving into appropriate
-    derivatives, 232, 233–235
-    setArgument, changing, 232–233
+    derivatives, 232, 233-235
+    setArgument, changing, 232-233
     setBoolean function, 217
     setter methods, injecting dependencies,
     157
     setup strategy, 155
     SetupTeardownIncluder.java listing,
-    50–52
-    shape classes, 95–96
+    50-52
+    shape classes, 95-96
     shared data, limiting access, 181
     shared variables
     method updating, 328
@@ -19780,13 +19780,13 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     names describing, 313
     Simmons, Robert, 276
     simple code, 10, 12
-    Simple Design, rules of, 171–176
+    Simple Design, rules of, 171-176
     simplicity, of code, 18, 19
-    single assert rule, 130–131
+    single assert rule, 130-131
     single concepts, in each test function,
-    131–132
+    131-132
     Single Responsibility Principle (SRP), 15,
-    138–140
+    138-140
     applying, 321
     breaking, 155
     as a concurrency defense principle,
@@ -19817,7 +19817,7 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     source code control systems, 64, 68, 69
     source files
     compared to newspaper articles,
-    77–78
+    77-78
     multiple languages in, 288
     Sparkle program, 34
     spawned threads, deadlocked, 186
@@ -19825,17 +19825,17 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     SPECIAL CASE PATTERN, 109
     specifications, purpose of, 2
     spelling errors, correcting, 20
-    SpreadsheetDateFactory, 274–275
+    SpreadsheetDateFactory, 274-275
     Spring AOP, proxies in, 163
     Spring Framework, 157
     Spring model, following EJB3, 165
-    Spring V2.5 configuration file, 163–164
+    Spring V2.5 configuration file, 163-164
     spurious failures, 187
-    Sql class, changing, 147–149
+    Sql class, changing, 147-149
     square root, as the iteration limit, 74
     SRP. See Single Responsibility Principle
-    standard conventions, 299–300
-    standard nomenclature, 175, 311–312
+    standard conventions, 299-300
+    standard nomenclature, 175, 311-312
     standards, using wisely, 168
     startup process, separating from runtime
     logic, 154
@@ -19846,23 +19846,23 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     The Step-down Rule , 37
     stories, implementing only today's, 158
     STRATEGY pattern, 290
-    stringarguments, 194, 208–212, 214–225
+    stringarguments, 194, 208-212, 214-225
     string comparison errors, 252
     StringBuffers, 129
-    Stroustrup, Bjarne, 7–8
+    Stroustrup, Bjarne, 7-8
     structure(s). See also data structures
     hiding, 99
     hybrid, 99
     making massive changes to, 212
     over convention, 301
-    structured programming, 48–49
-    SuperDashboard class, 136–137
+    structured programming, 48-49
+    SuperDashboard class, 136-137
     swapping, as permutations, 323
     switch statements
     burying, 37, 38
     considering polymorphism
     before, 299
-    reasons to tolerate, 38–39
+    reasons to tolerate, 38-39
     switch/casechain, 290
     synchronization problems, avoiding with
     Servlets, 182
@@ -19882,14 +19882,14 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     213
     needing domain-specific, 168
     system architecture, test driving,
-    166–167
+    166-167
 
     Index 429
     system failures, not ignoring
     one-offs, 187
     system level, staying clean at, 154
     system-wide information, in a local
-    comment, 69–70
+    comment, 69-70
     T
     tables, moving, 275
     target deployment platforms, running tests
@@ -19898,10 +19898,10 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     TDD (Test Driven Development), 213
     building logic, 106
     as fundamental discipline, 9
-    laws of, 122–123
+    laws of, 122-123
     team rules, 90
     teams
-    coding standard for every, 299–300
+    coding standard for every, 299-300
     slowed by messy code, 4
     technical names, choosing, 27
     technical notes, reserving comments
@@ -19909,24 +19909,24 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     TEMPLATE METHOD pattern
     addressing duplication, 290
     removing higher-level duplication,
-    174–175
+    174-175
     using, 130
     temporal coupling. See also coupling
-    exposing, 259–260
-    hidden, 302–303
+    exposing, 259-260
+    hidden, 302-303
     side effect creating, 44
-    temporary variables, explaining, 279–281
+    temporary variables, explaining, 279-281
     test cases
     adding to check arguments, 237
-    inComparisonCompactor, 252–254
+    inComparisonCompactor, 252-254
     patterns of failure, 269, 314
     turning off, 58
     test code, 124, 127
     TEST DOUBLE, assigning, 155
     Test Driven Development. See TDD
-    test driving, architecture, 166–167
-    test environment, 127–130
-    test functions, single concepts in, 131–132
+    test driving, architecture, 166-167
+    test environment, 127-130
+    test functions, single concepts in, 131-132
     test implementation, of an interface, 150
     test suite
     automated, 213
@@ -19941,23 +19941,23 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     testing language, domain-specific, 127
     testNG project, 76, 77
     tests
-    clean, 124–127
+    clean, 124-127
     cleanliness tied to, 9
     commented out for SerialDate,
-    268–270
+    268-270
     dirty, 123
     enabling the -ilities, 124
     fast, 132
     fast versus slow, 314
-    heuristics on, 313–314
+    heuristics on, 313-314
     ignored, 313
     independent, 132
     insufficient, 313
-    keeping clean, 123–124
+    keeping clean, 123-124
     minimizing assert statements in,
-    130–131
+    130-131
     not stopping trivial, 313
-    refactoring, 126–127
+    refactoring, 126-127
     repeatable, 132
     requiring more than one step, 287
     running, 341
@@ -19966,16 +19966,16 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     suite of automated, 213
     timely, 133
     writing for multithreaded code,
-    339–342
-    writing for threaded code, 186–190
-    writing good, 122–123
+    339-342
+    writing for threaded code, 186-190
+    writing good, 122-123
 
     430 Index
     Third Law, of TDD, 122
     third-party code
     integrating, 116
     learning, 116
-    using, 114–115
+    using, 114-115
     writing tests for, 116
     this variable, 324
     Thomas, Dave, 8, 9, 289
@@ -19992,19 +19992,19 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     thread-based code, testing, 342
     threaded code
     making pluggable, 187
-    making tunable, 187–188
+    making tunable, 187-188
     symptoms of bugs in, 187
-    testing, 186–190
-    writing in Java 5, 182–183
+    testing, 186-190
+    writing in Java 5, 182-183
     threading
     adding to a client/server application,
-    319, 346–347
+    319, 346-347
     problems in complex systems, 342
-    thread-safe collections, 182–183, 329
+    thread-safe collections, 182-183, 329
     throughput
     causing starvation, 184
     improving, 319
-    increasing, 333–335
+    increasing, 333-335
     validating, 318
     throws clause, 106
     tiger team, 5
@@ -20013,10 +20013,10 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     Time and Money project, 76
     file sizes, 77
     timely tests, 133
-    timer program, testing, 121–122
+    timer program, testing, 121-122
     "TO" keyword, 36
     TO paragraphs, 37
-    TODOcomments, 58–59
+    TODOcomments, 58-59
     tokens, used as magic numbers, 300
     Tomcat project, 76, 77
     tools
@@ -20024,26 +20024,26 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     coverage, 313
     handling proxy boilerplate, 163
     testing thread-based code, 342
-    train wrecks, 98–99
+    train wrecks, 98-99
     transformations, as return values, 41
-    transitive navigation, avoiding, 306–307
+    transitive navigation, avoiding, 306-307
     triadic argument, 40
     triads, 42
     tryblocks, 105
-    try/catch blocks, 46–47, 65–66
-    try-catch-finally statement, 105–106
-    tunable threaded-based code, 187–188
+    try/catch blocks, 46-47, 65-66
+    try-catch-finally statement, 105-106
+    tunable threaded-based code, 187-188
     type encoding, 24
 
     U
-    ubiquitous language, 311–312
+    ubiquitous language, 311-312
     unambiguous names, 312
-    unchecked exceptions, 106–107
+    unchecked exceptions, 106-107
     unencapsulated conditional, encapsulating,
     257
     unit testing, isolated as difficult, 160
     unit tests, 124, 175, 268
-    unprofessional programming, 5–6
+    unprofessional programming, 5-6
     uppercaseC, in variable names, 20
     usability, of newspapers, 78
     use, of a system, 154
@@ -20057,8 +20057,8 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     variables
     1 based versus zero based, 261
     declaring, 80, 81, 292
-    explaining temporary, 279–281
-    explanatory, 296–297
+    explaining temporary, 279-281
+    explanatory, 296-297
     keeping private, 93
     local, 292, 324
     moving to a different class, 273
@@ -20070,12 +20070,12 @@ I wince at the HTML formatting in the Javadoc (line 67). Having a source file wi
     verbs, keywords and, 43
     Version class, 139
     versions, not deserializing across, 272
-    vertical density, in code, 79–80
-    vertical distance, in code, 80–84
-    vertical formatting, 76–85
+    vertical density, in code, 79-80
+    vertical distance, in code, 80-84
+    vertical formatting, 76-85
     vertical openness, between concepts,
-    78–79
-    vertical ordering, in code, 84–85
+    78-79
+    vertical ordering, in code, 84-85
     vertical separation, 292
     W
     wading, through bad code, 3

@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Capybara
 category: Ruby libraries
-layout: 2017/sheet
+
 weight: -5
 updated: 2020-06-13
 tags: [Featurable]
@@ -356,5 +356,5 @@ page.set_rack_session(foo: 'bar')
 
 {: .-one-column}
 
--   <http://rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers>
--   <http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Node/Matchers>
+- <http://rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers>
+- <http://www.rubydoc.info/github/jnicklas/capybara/master/Capybara/Node/Matchers>

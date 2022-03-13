@@ -1,7 +1,7 @@
 ---
 title: jQuery
 category: JavaScript libraries
-layout: 2017/sheet
+
 tags: [WIP]
 weight: -1
 ---

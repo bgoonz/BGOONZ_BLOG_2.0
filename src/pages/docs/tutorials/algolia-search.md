@@ -47,9 +47,9 @@ Google's [Programmable Search Engine](https://programmablesearchengine.google.co
 
 Features, pros, and cons:
 
--   Easy setup and easy customization of both results output and search box and page design. You can choose if you want users to see only your website results or include other sites.
--   The free plan allows a lot of customization, but it also shows ads.
--   Supports JSON API for REST-based access, but this is a paid-only option.
+- Easy setup and easy customization of both results output and search box and page design. You can choose if you want users to see only your website results or include other sites.
+- The free plan allows a lot of customization, but it also shows ads.
+- Supports JSON API for REST-based access, but this is a paid-only option.
 
 ### >  algolia)Algolia
 
@@ -61,11 +61,11 @@ Algolia offers a full suite of APIs to easily integrate tailored and fast search
 
 Features, pros, and cons:
 
--   Free plan for SMEs with analytics.
--   Extensive documentation and guides on top of fantastic customization options.
--   Active community and 24/7 support (for paid plans).
--   AI-powered search with personalization, rules, and merchandising.
--   You can't test your setup based on the hypothetical user's geolocation (when you build a search solution for the US audience while you are in Europe, for example).
+- Free plan for SMEs with analytics.
+- Extensive documentation and guides on top of fantastic customization options.
+- Active community and 24/7 support (for paid plans).
+- AI-powered search with personalization, rules, and merchandising.
+- You can't test your setup based on the hypothetical user's geolocation (when you build a search solution for the US audience while you are in Europe, for example).
 
 Our website search uses Algolia, just look at the 🔎 icon. We use [gatsby-plugin-Algolia](https://github.com/algolia/gatsby-plugin-algolia) to index our content during the build. On the frontend, we use _algoliasearch/lite_ and _react-instantsearch-dom_ which is Algolia react components that can be easily used with Gatsby.
 
@@ -81,12 +81,12 @@ Elastic offers different plans depending on whether you choose managed or self-m
 
 Features, pros, and cons:
 
--   Wide variety of features + open-source option.
--   Comprehensive data analytics and application performance monitoring.
--   Large, active community and extensive documentation, guides, and training.
--   Elastic search doesn't support multi-language requests and responses.
--   Steep learning curve.
--   The level of support depends on the plan you have.
+- Wide variety of features + open-source option.
+- Comprehensive data analytics and application performance monitoring.
+- Large, active community and extensive documentation, guides, and training.
+- Elastic search doesn't support multi-language requests and responses.
+- Steep learning curve.
+- The level of support depends on the plan you have.
 
 ### >  cloudsh)CloudSh
 
@@ -98,9 +98,9 @@ It's perfect for anyone looking for a simple solution for their static website. 
 
 Features, pros, and cons:
 
--   CloudSh has been specially built for static websites and indexes their pages with both on-demand and scheduled basis.
--   Simple to use and integrate with pre-made integration solutions for different static site generators.
--   Analytics and on-demand indexing for all plans.Priority support for all except the Personal (basic) plan.
+- CloudSh has been specially built for static websites and indexes their pages with both on-demand and scheduled basis.
+- Simple to use and integrate with pre-made integration solutions for different static site generators.
+- Analytics and on-demand indexing for all plans.Priority support for all except the Personal (basic) plan.
 
 ### >  meilisearch)MeiliSearch
 
@@ -114,11 +114,11 @@ Meili is an excellent solution, but it lacks some features, such as the analytic
 
 Features, pros, and cons:
 
--   Open-source, free, and available to anyone.
--   Written in Rust. Uses RESTful API.
--   Easy to integrate with extensive customization possibilities (also presets available).
--   Search as-you-type experience, which means that MeiliSearch can return results for almost EVERY keystroke you make.
--   It looks like the great things are yet to come. Needs more features.
+- Open-source, free, and available to anyone.
+- Written in Rust. Uses RESTful API.
+- Easy to integrate with extensive customization possibilities (also presets available).
+- Search as-you-type experience, which means that MeiliSearch can return results for almost EVERY keystroke you make.
+- It looks like the great things are yet to come. Needs more features.
 
 ### Apache Solr
 
@@ -132,10 +132,10 @@ Even though it is used by many of the world's largest websites (like AOL and Bes
 
 Features, pros, and cons:
 
--   Open-source with extensive data management and analytics capabilities.
--   REST API for accessing and validating the data/records.
--   Large, active community and excellent documentation, guides, and training.
--   CPU consumption can be high in some cases.
+- Open-source with extensive data management and analytics capabilities.
+- REST API for accessing and validating the data/records.
+- Large, active community and excellent documentation, guides, and training.
+- CPU consumption can be high in some cases.
 
 ### Js-Search
 
@@ -145,8 +145,8 @@ While this search is fast, an issue is raised because this solution isn't a good
 
 Features, pros, and cons:
 
--   Very simple and free.
--   Great for small websites.
+- Very simple and free.
+- Great for small websites.
 
 ### >  typesense)Typesense
 
@@ -156,8 +156,8 @@ Features, pros, and cons:
 
 Features, pros, and cons:
 
--   While simple at its core, Typesense has an advanced filtering system if you need fine-grained control of the search results.
--   Simple to set up and update with a new version.
+- While simple at its core, Typesense has an advanced filtering system if you need fine-grained control of the search results.
+- Simple to set up and update with a new version.
 
 ## (**so-which-option-is-the-best**)So, which option is the best?
 
@@ -218,8 +218,8 @@ _**In this tutorial, we're going to explore adding search to a site built with G
 
 **Algolia provides two projects that we'll make use of:**
 
--   [**Gatsby Plugin Algolia**](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
--   [**React InstantSearch**](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
+- [**Gatsby Plugin Algolia**](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
+- [**React InstantSearch**](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Redux
 category: React
-layout: 2017/sheet
+
 updated: 2018-01-17
 weight: -3
 ---
@@ -196,7 +196,7 @@ const store = createStore(reducer, {}, enhancer);
 
 {: .-one-column}
 
--   [Redux](https://www.npmjs.com/package/redux) _(npmjs.com)_
--   [React-redux](https://www.npmjs.com/package/react-redux) _(npmjs.com)_
--   [Usage with React](http://redux.js.org/docs/basics/UsageWithReact.html) _(redux.js.org)_
+- [Redux](https://www.npmjs.com/package/redux) _(npmjs.com)_
+- [React-redux](https://www.npmjs.com/package/react-redux) _(npmjs.com)_
+- [Usage with React](http://redux.js.org/docs/basics/UsageWithReact.html) _(redux.js.org)_
     {: .-also-see}

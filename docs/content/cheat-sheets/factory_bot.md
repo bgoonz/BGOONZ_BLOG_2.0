@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Factory Bot
 category: Ruby libraries
-layout: 2017/sheet
+
 weight: -3
 updated: 2020-07-06
 keywords:
@@ -33,7 +33,7 @@ keywords:
 
 ## Factories
 
-{: .-three-column}
+
 
 ### Introduction
 
@@ -148,7 +148,7 @@ end
 
 ## Other features
 
-{: .-three-column}
+
 
 ### Traits
 

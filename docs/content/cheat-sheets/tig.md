@@ -1,7 +1,7 @@
 ---
 title: Tig
 category: Git
-layout: 2017/sheet
+
 updated: 2018-11-16
 weight: -3
 ---
@@ -37,7 +37,7 @@ You can substitute `git log` → `tig`.
 
 ## Shortcut keys
 
-{: .-three-column}
+
 
 ### Switching views
 

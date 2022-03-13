@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: ExUnit
 category: Elixir
-layout: 2017/sheet
+
 updated: 2018-11-19
 
 ---

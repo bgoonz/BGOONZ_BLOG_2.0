@@ -18,10 +18,10 @@ We can start by differentiating the Internet and the World Wide Web. These are o
 
 Let's look briefly at the four basic ingredients of the Web:
 
--   TCP/IP - is a low level message protocol that is used to transfer messages between computers on the Internet.
-
--   HTTP - is used by a Web Client to make a request to a Web Server and for the server to return the response.
-
+- TCP/IP - is a low level message protocol that is used to transfer messages between computers on the Internet.
+- 
+- HTTP - is used by a Web Client to make a request to a Web Server and for the server to return the response.
+- 
 -   URL - is a way of writing down the address of something on the Web so that a browser can work out where to get it from.
 
 -   HTML - is a language for writing web pages containing text, images and other content.
@@ -70,11 +70,11 @@ One important feature of HTTP is that each request/response pair is independent 
 
 We'll look at HTTP in more detail later, for now the take home message is:
 
--   HTTP is a simple text based protocol
-
--   The client (browser) sends a request to the server
-
--   The server receives the request and returns a response
+- HTTP is a simple text based protocol
+- 
+- The client (browser) sends a request to the server
+- 
+- The server receives the request and returns a response
 
 -   The server doesn't need to remember the client - every request is independant.
 

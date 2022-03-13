@@ -17,11 +17,11 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 **Differences & Limitations:**
 
--   Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
--   Does not have `arguments`, or `new.target` keywords.
--   Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
--   Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
--   Can not use `yield`, within its body.
+- Does not have its own bindings to `this` or `super`, and should not be used as `methods`.
+- Does not have `arguments`, or `new.target` keywords.
+- Not suitable for `call`, `apply` and [`bind`](../global_objects/function/bind) methods, which generally rely on establishing a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
+- Can not be used as [constructors](https://developer.mozilla.org/en-US/docs/Glossary/Constructor).
+- Can not use `yield`, within its body.
 
 ### Comparing traditional functions to arrow functions
 

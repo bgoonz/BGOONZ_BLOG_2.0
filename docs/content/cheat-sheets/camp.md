@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Camp
-layout: 2017/sheet
+
 category: JavaScript libraries
 updated: 2017-09-21
 weight: -1
@@ -28,11 +28,11 @@ intro: |
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Quick start
 
-{: .-prime}
+
 
 #### app.js
 

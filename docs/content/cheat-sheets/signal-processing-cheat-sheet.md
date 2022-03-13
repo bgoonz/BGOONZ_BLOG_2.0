@@ -10,7 +10,7 @@ Signals and systems is an aspect of electrical engineering that applies mathemat
 
 ## Getting to Know the Mathematical Foundation of Signals and Systems
 
-The study of signals and systems establishes a mathematical formalism for analyzing, modeling, and simulating electrical systems in the time, frequency, and _s\_\_–_ or _z\_\_–\_domains. Signals exist naturally and are also created by people. Some operate continuously (known as \_continuous-time signals_); others are active at specific instants of time (and are called _discrete-time signals_).
+The study of signals and systems establishes a mathematical formalism for analyzing, modeling, and simulating electrical systems in the time, frequency, and _s\_\_-_ or _z\_\_-\_domains. Signals exist naturally and are also created by people. Some operate continuously (known as \_continuous-time signals_); others are active at specific instants of time (and are called _discrete-time signals_).
 
 Signals pass through systems to be modified or enhanced in some way. Systems that operate on signals are also categorized as continuous- or discrete-time.
 
@@ -64,7 +64,7 @@ This table presents core linear time invariant (LTI) system properties for both 
 
 ## Signals and Systems: Working with Transform Theorems and Pairs
 
-Both signals and systems can be analyzed in the time-, frequency-, and _s\_\_–_ and \_z\_\_–\_domains. Leaving the time-domain requires a transform and then an inverse transform to return to the time-domain.
+Both signals and systems can be analyzed in the time-, frequency-, and _s\_\_-_ and \_z\_\_-\_domains. Leaving the time-domain requires a transform and then an inverse transform to return to the time-domain.
 
 As you work to and from the time domain, referencing tables of both transform theorems and transform pairs can speed your progress and make the work easier. Use this table of common pairs for the continuous-time Fourier transform, discrete-time Fourier transform, the Laplace transform, and the _z_\-transform as needed.
 

@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Fastify
 category: JavaScript libraries
-layout: 2017/sheet
+
 updated: 2017-09-23
 
 ---
@@ -36,7 +36,7 @@ updated: 2017-09-23
 
 ### Hello world
 
-{: .-prime}
+
 
 ```js
 const fastify = require('fastify')();
@@ -213,7 +213,7 @@ fastify.register(require('./route'), (err) => {
 });
 ```
 
-{: data-line="3"}
+
 
 #### route.js
 
@@ -305,7 +305,7 @@ fastify.register(require('point-of-view'), {
 });
 ```
 
-{: data-line="3"}
+
 
 ```js
 fastify.get('/', (req, reply) => {

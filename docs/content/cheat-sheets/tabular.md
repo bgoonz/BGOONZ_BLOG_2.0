@@ -1,7 +1,7 @@
 ---
 title: Tabular
 category: Vim
-layout: 2017/sheet
+
 updated: 2017-10-11
 weight: -1
 intro: |
@@ -10,7 +10,7 @@ intro: |
 
 ## Common usage
 
-{: .-three-column}
+
 
 ### Tables
 
@@ -60,7 +60,7 @@ width:       640
 
 ## Tab command
 
-{: .-three-column}
+
 
 ### Basic example
 

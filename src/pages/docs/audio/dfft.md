@@ -372,17 +372,17 @@ The discrete Fourier transform functionality in SciPy lives in the
 `scipy.fftpack`` module. Among other things, it provides the
 following DFT-related functionality:
 
--   `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using
-    the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
--   `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
--   `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
--   `fftshift`, `ifftshift`: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
--   `fftfreq`: Return the discrete Fourier transform sample frequencies.
+- `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using
+- the Fast Fourier Transform algorithm in 1, 2, or `n` dim
+- `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
+- `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
+- `fftshift`, `ifftshift`: Shift the zero-frequency component to the c
+- `fftfreq`: Return the discrete Fourier transform sample frequencies.
 -   `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
 
 This is complemented by the following functions in NumPy:
 
--   `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`,
+- `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`,
     `np.kaiser`: Tapered windowing functions.
 
 It is also used to perform fast convolutions of large inputs by
@@ -947,13 +947,13 @@ discards any high frequencies).
 
 To summarize, we should note that:
 
--   The data that reaches the computer consists of $N$ samples sampled
+- The data that reaches the computer consists of $N$ samples sampled
     (from the multiplied, filtered signal) at a sample frequency of
     $f_{s}$.
--   The **amplitude** of the returned signal varies depending on the
+- The **amplitude** of the returned signal varies depending on the
     **strength of the reflection** (i.e., is a property of the target
     object and the distance between the target and the radar).
--   The **frequency measured** is an indication of the **distance** of the
+- The **frequency measured** is an indication of the **distance** of the
     target object from the radar.
 
 <!--
@@ -1152,9 +1152,9 @@ Since `.npz`-files can store multiple variables, we have to select
 the one we want: `data['scan']`. That returns a
 _structured NumPy array_ with the following fields:
 
--   **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
--   **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
--   **position**
+- **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
+- **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
+- **position**
 
     -   **az** : 32-bit float (`np.float32`)
     -   **el** : 32-bit float (`np.float32`)
@@ -1571,15 +1571,15 @@ should be well equipped to use it!
 
 On the Fourier transform:
 
--   A. Papoulis, _The Fourier Integral and Its Applications_,
-    McGraw-Hill, 1960.
+- A. Papoulis, _The Fourier Integral and Its Applications_,
+- McGraw-Hill, 1960.
 -   Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
     McGraw-Hill, 1986.
 
 On radar signal processing:
 
--   Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
-    SciTech, 2010
+- Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
+- SciTech, 2010
 -   Mark A. Richards, _Fundamentals of Radar Signal Processing_,
     McGraw-Hill, 2014.
 
@@ -1592,12 +1592,12 @@ b) `np.fft.fft2`. Confirm that the results are identical.
 
 Hints:
 
--   The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
-    `X` and `Y` are the FFTs of x and y respectively.
+- The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
+- `X` and `Y` are the FFTs of x and y respectively.
 -   In order to multiply `X` and `Y`, they have to be the same size.
     Use `np.pad` to extend `x` and `y` with zeros (toward the right and
     bottom) _before_ taking their FFT.
--   You may see some edge effects. These can be removed by increasing
+- You may see some edge effects. These can be removed by increasing
     the padding size, so that both `x` and `y` have dimensions
     `shape(x) + shape(y) - 1`.
 

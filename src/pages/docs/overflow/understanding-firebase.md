@@ -28,11 +28,11 @@ When you create a new Firebase project in the Firebase console, you're actually 
 
 Since a Firebase project **_is_** a Google Cloud project:
 
--   Projects that appear in the [Firebase console](https://console.firebase.google.com/?authuser=0) also appear in the [Google Cloud Console](https://cloud.google.com/docs/overview/?authuser=0#google-cloud-console) and [Google APIs console](https://console.cloud.google.com/apis/?authuser=0).
-
--   [Billing](https://firebase.google.com/pricing/?authuser=0) and [permissions](https://firebase.google.com/docs/projects/iam/overview?authuser=0) for projects are shared across Firebase and Google Cloud.
-
--   Unique identifiers for a project (like the [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id)) are shared across Firebase and Google Cloud.
+- Projects that appear in the [Firebase console](https://console.firebase.google.com/?authuser=0) also appear in the [Google Cloud Console](https://cloud.google.com/docs/overview/?authuser=0#google-cloud-console) and [Google APIs console](https://console.cloud.google.com/apis/?authuser=0).
+- 
+- [Billing](https://firebase.google.com/pricing/?authuser=0) and [permissions](https://firebase.google.com/docs/projects/iam/overview?authuser=0) for projects are shared across Firebase and Google Cloud.
+- 
+- Unique identifiers for a project (like the [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id)) are shared across Firebase and Google Cloud.
 
 -   You can use products and APIs from both Firebase and Google Cloud in a project.
 
@@ -62,9 +62,9 @@ Learn more about using project identifiers, especially the project number, in Go
 
 #### Find the project number
 
--   Firebase console: Click settings [**Project settings**](https://console.firebase.google.com/project/_/settings/general/?authuser=0). The project number is displayed in the top pane.
-
--   Firebase CLI: Run firebase projects:list. The project number is displayed along with all the Firebase projects associated with your account.
+- Firebase console: Click settings [**Project settings**](https://console.firebase.google.com/project/_/settings/general/?authuser=0). The project number is displayed in the top pane.
+- 
+- Firebase CLI: Run firebase projects:list. The project number is displayed along with all the Firebase projects associated with your account.
 
 -   Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project number in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
 
@@ -78,9 +78,9 @@ If you delete a project, the project ID is also deleted and can never be used ag
 
 The project ID displays in publicly visible Firebase resources, for example:
 
--   Default Hosting subdomain — **PROJECT_ID**.web.app and **PROJECT_ID**.firebaseapp.com
-
--   Default Realtime Database URL — **PROJECT_ID**-default-rtdb.firebaseio.com or **PROJECT_ID**-default-rtdb.**REGION_CODE**.firebasedatabase.app
+- Default Hosting subdomain — **PROJECT_ID**.web.app and **PROJECT_ID**.firebaseapp.com
+- 
+- Default Realtime Database URL — **PROJECT_ID**-default-rtdb.firebaseio.com or **PROJECT_ID**-default-rtdb.**REGION_CODE**.firebasedatabase.app
 
 -   Default Cloud Storage bucket name — **PROJECT_ID**.appspot.com
 
@@ -100,9 +100,9 @@ Learn more about using project identifiers, especially the project number, in Go
 
 #### Find the project ID
 
--   Firebase console: Click settings [**Project settings**](https://console.firebase.google.com/project/_/settings/general/?authuser=0). The project ID is displayed in the top pane.
-
--   Firebase CLI: Run firebase projects:list. The project ID is displayed along with all the Firebase projects associated with your account.
+- Firebase console: Click settings [**Project settings**](https://console.firebase.google.com/project/_/settings/general/?authuser=0). The project ID is displayed in the top pane.
+- 
+- Firebase CLI: Run firebase projects:list. The project ID is displayed along with all the Firebase projects associated with your account.
 
 -   Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project ID in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
 
@@ -110,9 +110,9 @@ Learn more about using project identifiers, especially the project number, in Go
 
 When you register an app with a Firebase project, the Firebase console provides a Firebase configuration file (iOS/Android apps) or a configuration object (web apps) that you add directly to your local app directory.
 
--   For iOS apps, you add a GoogleService-Info.plist configuration file.
-
--   For Android apps, you add a google-services.json configuration file.
+- For iOS apps, you add a GoogleService-Info.plist configuration file.
+- 
+- For Android apps, you add a google-services.json configuration file.
 
 -   For web apps, you add a Firebase configuration object.
 
@@ -120,9 +120,9 @@ At any time, you can [obtain an app's Firebase config file or object](https://su
 
 A Firebase config file or object associates an app with a specific Firebase project and its resources (databases, storage buckets, etc.). The configuration includes "Firebase options", which are parameters required by Firebase and Google services to communicate with Firebase server APIs and to associate client data with the Firebase project and Firebase app. Here are the required, minimum "Firebase options":
 
--   [**API key**](https://cloud.google.com/docs/authentication/api-keys?authuser=0): a simple encrypted string used when calling certain APIs that don't need to access private user data (example value: AIzaSyDOCAbC123dEf456GhI789jKl012-MnO)
-
--   [**Project ID**](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id): a user-defined unique identifier for the project across all of Firebase and Google Cloud. This identifier may appear in URLs or names for some Firebase resources, but it should generally be treated as a convenience alias to reference the project. (example value: myapp-project-123)
+- [**API key**](https://cloud.google.com/docs/authentication/api-keys?authuser=0): a simple encrypted string used when calling certain APIs that don't need to access private user data (example value: AIzaSyDOCAbC123dEf456GhI789jKl012-MnO)
+- 
+- [**Project ID**](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id): a user-defined unique identifier for the project across all of Firebase and Google Cloud. This identifier may appear in URLs or names for some Firebase resources, but it should generally be treated as a convenience alias to reference the project. (example value: myapp-project-123)
 
 -   **Application ID ("AppID")**: the unique identifier for the Firebase app across all of Firebase with a platform-specific format:
 
@@ -174,7 +174,7 @@ If you have **_multiple build variants_** with different iOS bundle IDs or Andro
 
 Here are some general limits for Firebase projects, apps, and sites:
 
--   **Number of projects per account**
+- **Number of projects per account**
 
     -   Spark pricing plan — Project-creation quota is limited to a lower count of projects (usually around 5-10).
 
@@ -184,7 +184,7 @@ Here are some general limits for Firebase projects, apps, and sites:
 
     Be aware that the complete deletion of a project requires 30 days and counts toward project quota until the project is fully deleted.
 
--   **Number of apps per project**
+- **Number of apps per project**
 
     Firebase restricts the total number of Firebase Apps within a Firebase project to 30.
 
@@ -192,7 +192,7 @@ Here are some general limits for Firebase projects, apps, and sites:
 
     Learn more about the [limit on apps per project](https://firebase.google.com/support/faq?authuser=0#apps-per-project) in the FAQ.
 
--   **Number of Hosting sites per project**
+- **Number of Hosting sites per project**
 
     The [Firebase Hosting multisite feature](https://firebase.google.com/docs/hosting/multisites?authuser=0) supports a maximum of 36 sites per project.
 
@@ -206,8 +206,8 @@ For example, if you develop a white label application, each independently labell
 
 ## Launching your app
 
--   Set up [budget alerts](https://firebase.google.com/docs/projects/billing/avoid-surprise-bills?authuser=0#set-up-budget-alert-emails) for your project in the Google Cloud Console.
-
--   Monitor the [_Usage and billing_ dashboard](https://console.firebase.google.com/project/_/usage?authuser=0) in the Firebase console to get an overall picture of your project's usage across multiple Firebase services.
+- Set up [budget alerts](https://firebase.google.com/docs/projects/billing/avoid-surprise-bills?authuser=0#set-up-budget-alert-emails) for your project in the Google Cloud Console.
+- 
+- Monitor the [_Usage and billing_ dashboard](https://console.firebase.google.com/project/_/usage?authuser=0) in the Firebase console to get an overall picture of your project's usage across multiple Firebase services.
 
 -   Review the [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist?authuser=0).

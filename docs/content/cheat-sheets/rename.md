@@ -1,7 +1,7 @@
 ---
 title: rename
 category: CLI
-layout: 2017/sheet
+
 ---
 
 ### Installation
@@ -38,4 +38,4 @@ Replace `.png` with `.jpg.png` in `*.png`.
 
 ## Also see
 
--   [Rename website](http://plasmasturm.org/code/rename/) _(plasmasturm.org)_
+- [Rename website](http://plasmasturm.org/code/rename/) _(plasmasturm.org)_

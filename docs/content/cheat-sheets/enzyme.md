@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Enzyme
 category: React
-layout: 2017/sheet
+
 updated: 2020-02-12
 tags: [Featured]
 weight: -1
@@ -44,7 +44,7 @@ keywords:
 
 ### Mounting
 
-{: .-prime}
+
 
 ```js
 import { shallow, mount } from 'enzyme';
@@ -78,11 +78,11 @@ See: [debug()](http://airbnb.io/enzyme/docs/api/ReactWrapper/debug.html)
 
 ## Examples
 
-{: .-three-column}
+
 
 ### Basic example
 
-{: .-prime}
+
 
 ```js
 import { shallow } from 'enzyme';

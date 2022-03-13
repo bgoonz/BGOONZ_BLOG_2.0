@@ -2,11 +2,11 @@
 
 ### Components
 
-{: .-three-column}
+
 
 #### Components
 
-{: .-prime}
+
 
 ```jsx
 import React from 'react';
@@ -32,7 +32,7 @@ Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hack
 
 #### Import multiple exports
 
-{: .-prime}
+
 
 ```jsx
 import React, { Component } from 'react';
@@ -213,7 +213,7 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 
 ### Other components
 
-{: .-three-column}
+
 
 #### Functional components
 
@@ -239,7 +239,7 @@ class MessageBox extends PureComponent {
 }
 ```
 
-{: data-line="3"}
+
 
 Performance-optimized version of `React.Component`. Doesn't rerender if props/state hasn't changed.
 
@@ -509,7 +509,7 @@ class VideoPlayer extends Component {
 }
 ```
 
-{: data-line="3"}
+
 
 Propagates `src="..."` down to the sub-component.
 
@@ -603,7 +603,7 @@ Always supply a `key` property.
 
 ### New features
 
-{: .-three-column}
+
 
 #### Returning multiple elements
 
@@ -704,7 +704,7 @@ See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 
 ### Property validation
 
-{: .-three-column}
+
 
 #### PropTypes
 
@@ -819,7 +819,7 @@ MyCo.propTypes = {
 
 ### Also see
 
--   [React website](https://reactjs.org) _(reactjs.org)_
--   [React cheatsheet](https://reactcheatsheet.com) _(reactcheatsheet.com)_
--   [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
--   React v0.14 cheatsheet _Legacy version_
+- [React website](https://reactjs.org) _(reactjs.org)_
+- [React cheatsheet](https://reactcheatsheet.com) _(reactcheatsheet.com)_
+- [Awesome React](https://github.com/enaqx/awesome-react) _(github.com)_
+- React v0.14 cheatsheet _Legacy version_

@@ -80,7 +80,7 @@ The `next()` is a function that is the property of the `counter` object. Therefo
 
 In the global context, the `this` references the [global object](https://www.javascripttutorial.net/es-next/javascript-globalthis/), which is the `window` object on the web browser or `global` object on Node.js.
 
-This behavior is consistent in both strict and non-strict modes. Here’s the output on the web browser:
+This behavior is consistent in both strict and non-strict modes. Here's the output on the web browser:
 
 ```js
 console.log(this === window); // trueCode language: JavaScript (javascript)
@@ -97,10 +97,10 @@ console.log(window.color); // 'Red'Code language: JavaScript (javascript)
 
 In JavaScript, you can call a [function](https://www.javascripttutorial.net/javascript-function/) in the following ways:
 
--   Function invocation
--   Method invocation
--   Constructor invocation
--   Indirect invocation
+- Function invocation
+- Method invocation
+- Constructor invocation
+- Indirect invocation
 
 Each function invocation defines its own context. Therefore, the `this` behaves differently.
 

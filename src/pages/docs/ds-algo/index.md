@@ -101,54 +101,54 @@ Data structures
 
 #### Videos
 
--   <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
--   <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
--   <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
--   <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
--   <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
--   <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
--   <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
+- <span id="53c4"><a href="https://www.youtube.com/watch?v=0IAPZzGSbME&amp;list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&amp;index=2&amp;t=0s" class="markup--anchor markup--li-anchor">Abdul Bari: YouTubeChannel for Algorithms</a></span>
+- <span id="ab93"><a href="https://www.youtube.com/watch?v=lxja8wBwN0k&amp;list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s" class="markup--anchor markup--li-anchor">Data Structures and algorithms</a></span>
+- <span id="e614"><a href="https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9" class="markup--anchor markup--li-anchor">Data Structures and algorithms Course</a></span>
+- <span id="3d48"><a href="https://www.khanacademy.org/computing/computer-science/algorithms" class="markup--anchor markup--li-anchor">Khan Academy</a></span>
+- <span id="ac90"><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" class="markup--anchor markup--li-anchor">Data structures by mycodeschool</a>Pre-requisite for this lesson is good understanding of pointers in C.</span>
+- <span id="9bd9"><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" class="markup--anchor markup--li-anchor">MIT 6.006: Intro to Algorithms(2011)</a></span>
+- <span id="71f0"><a href="https://www.youtube.com/watch?v=5_5oE5lgrhw&amp;list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="markup--anchor markup--li-anchor">Data Structures and Algorithms by Codewithharry</a></span>
 
 #### Books
 
--   <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
--   <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
--   <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
--   <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
--   <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
+- <span id="2eac"><a href="https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf" class="markup--anchor markup--li-anchor">Introduction to Algorithms</a> by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</span>
+- <span id="3e8d"><a href="http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf" class="markup--anchor markup--li-anchor">Competitive Programming 3</a> by Steven Halim and Felix Halim</span>
+- <span id="3aa3"><a href="https://cses.fi/book/book.pdf" class="markup--anchor markup--li-anchor">Competitive Programmers Hand Book</a> Beginner friendly hand book for competitive programmers.</span>
+- <span id="3c02"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf" class="markup--anchor markup--li-anchor">Data Structures and Algorithms Made Easy</a> by Narasimha Karumanchi</span>
+- <span id="93ec"><a href="https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf" class="markup--anchor markup--li-anchor">Learning Algorithms Through Programming and Puzzle Solving</a> by Alexander Kulikov and Pavel Pevzner</span>
 
 #### Coding practice
 
--   <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
--   <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
--   <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
--   <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
--   <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
--   <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
--   <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
--   <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
--   <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
--   <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
--   <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
--   <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
--   <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
--   <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
+- <span id="824c"><a href="https://leetcode.com/" class="markup--anchor markup--li-anchor">LeetCode</a></span>
+- <span id="a528"><a href="https://www.interviewbit.com/" class="markup--anchor markup--li-anchor">InterviewBit</a></span>
+- <span id="fa41"><a href="https://codility.com/" class="markup--anchor markup--li-anchor">Codility</a></span>
+- <span id="6c61"><a href="https://www.hackerrank.com/" class="markup--anchor markup--li-anchor">HackerRank</a></span>
+- <span id="dff6"><a href="https://projecteuler.net/" class="markup--anchor markup--li-anchor">Project Euler</a></span>
+- <span id="b2dd"><a href="https://spoj.com/" class="markup--anchor markup--li-anchor">Spoj</a></span>
+- <span id="c8e8"><a href="https://code.google.com/codejam/contests.html" class="markup--anchor markup--li-anchor">Google Code Jam practice problems</a></span>
+- <span id="e8bb"><a href="https://www.hackerearth.com/" class="markup--anchor markup--li-anchor">HackerEarth</a></span>
+- <span id="e803"><a href="https://www.topcoder.com/" class="markup--anchor markup--li-anchor">Top Coder</a></span>
+- <span id="294e"><a href="https://www.codechef.com/" class="markup--anchor markup--li-anchor">CodeChef</a></span>
+- <span id="9c05"><a href="https://www.codewars.com/" class="markup--anchor markup--li-anchor">Codewars</a></span>
+- <span id="356e"><a href="https://codesignal.com/" class="markup--anchor markup--li-anchor">CodeSignal</a></span>
+- <span id="2d20"><a href="http://codekata.com/" class="markup--anchor markup--li-anchor">CodeKata</a></span>
+- <span id="d3bf"><a href="https://www.firecode.io/" class="markup--anchor markup--li-anchor">Firecode</a></span>
 
 #### Courses
 
--   <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
--   <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
--   <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
--   <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
--   <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
+- <span id="eac2"><a href="https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep" class="markup--anchor markup--li-anchor">Master the Coding Interview: Big Tech (FAANG) Interviews</a> Course by Andrei and his team.</span>
+- <span id="36ca"><a href="https://realpython.com/python-data-structures" class="markup--anchor markup--li-anchor">Common Python Data Structures</a> Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.</span>
+- <span id="cdc9"><a href="https://www.geeksforgeeks.org/fork-cpp-course-structure" class="markup--anchor markup--li-anchor">Fork CPP</a> A good course for beginners.</span>
+- <span id="6d47"><a href="https://codeforces.com/edu/course/2" class="markup--anchor markup--li-anchor">EDU</a> Advanced course.</span>
+- <span id="8bb5"><a href="https://www.udacity.com/course/c-for-programmers--ud210" class="markup--anchor markup--li-anchor">C++ For Programmers</a> Learn features and constructs for C++.</span>
 
 #### Guides
 
--   <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
--   <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
--   <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
--   <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
--   <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
+- <span id="e9e9"><a href="http://www.geeksforgeeks.org/" class="markup--anchor markup--li-anchor">GeeksForGeeks — A CS portal for geeks</a></span>
+- <span id="a228"><a href="https://www.learneroo.com/subjects/8" class="markup--anchor markup--li-anchor">Learneroo — Algorithms</a></span>
+- <span id="a2f0"><a href="http://www.topcoder.com/tc?d1=tutorials&amp;d2=alg_index&amp;module=Static" class="markup--anchor markup--li-anchor">Top Coder tutorials</a></span>
+- <span id="f3ec"><a href="http://www.infoarena.ro/training-path" class="markup--anchor markup--li-anchor">Infoarena training path</a> (RO)</span>
+- <span id="ec93">Steven & Felix Halim — <a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118" class="markup--anchor markup--li-anchor">Increasing the Lower Bound of Programming Contests</a> (UVA Online Judge)</span>
 
 ### **_space_**
 
@@ -166,9 +166,9 @@ Data structures
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
--   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
--   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
--   <span id="881c">**The average-case complexity: when the data looks average**</span>
+- <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
+- <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
+- <span id="881c">**The average-case complexity: when the data looks average**</span>
 
 ### Big O notation
 
@@ -220,7 +220,7 @@ Complexity
 Average
 Access Search Insertion Deletion
 
--   <span id="f63f">O(1) O(1) O(1)</span>
+- <span id="f63f">O(1) O(1) O(1)</span>
 
 > _The code_
 
@@ -242,7 +242,7 @@ Complexity
 Average
 Access Search Insertion Deletion
 
--   <span id="daa6">O(n) O(n) O(n)</span>
+- <span id="daa6">O(n) O(n) O(n)</span>
 
 > _The code_
 
@@ -330,13 +330,13 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 > _A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references._
 
--   <span id="f896">A graph is **any** collection of nodes and edges.</span>
--   <span id="fbda">Much more relaxed in structure than a tree.</span>
--   <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
--   <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
--   <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
--   <span id="8f45">Any number of edges may leave a given node</span>
--   <span id="51cf">A Path is a sequence of nodes on a graph</span>
+- <span id="f896">A graph is **any** collection of nodes and edges.</span>
+- <span id="fbda">Much more relaxed in structure than a tree.</span>
+- <span id="5281">It doesn't need to have a root node (not every node needs to be accessible from a single node)</span>
+- <span id="0c79">It can have cycles (a group of nodes whose paths begin and end at the same node)</span>
+- <span id="4afc">Cycles are not always "isolated", they can be one part of a larger graph. You can detect them by starting your search on a specific node and finding a path that takes you back to that same node.</span>
+- <span id="8f45">Any number of edges may leave a given node</span>
+- <span id="51cf">A Path is a sequence of nodes on a graph</span>
 
 ### Cycle Visual
 
@@ -477,9 +477,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -513,8 +513,8 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
 ```javascript
 /**
@@ -622,8 +622,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -1236,12 +1236,12 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
+- With `node.val`
     1.  `node.val` plus the max sum of a path that ends with `node.left`.
     2.  `node.val` plus the max sum of a path that starts with `node.right`.
     3.  `node.val` plus the max sum of both paths.
     4.  Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
+- Without`node.val` (disconnected)
     1.  The max-sum path is somewhere under the `node.left` subtree.
     2.  The max-sum path is somewhere under the `node.right` subtree.
 
@@ -1464,11 +1464,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -1594,11 +1594,11 @@ Given two words (_beginWord_ and _endWord_), and a dictionary's word list, find 
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -2140,8 +2140,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)# Convert Sorted Array to Binary Search Tree
 
@@ -2201,11 +2201,11 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
 [Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-0.jpg 'meeting-room-ii')
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')

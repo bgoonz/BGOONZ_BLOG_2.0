@@ -79,8 +79,8 @@ img1.ready().then(function() {
 
 At their most basic, promises are a bit like event listeners except:
 
--   A promise can only succeed or fail once. It cannot succeed or fail twice, neither can it switch from success to failure or vice versa.
--   If a promise has succeeded or failed and you later add a success/failure callback, the correct callback will be called, even though the event took place earlier.
+- A promise can only succeed or fail once. It cannot succeed or fail twice, neither can it switch from success to failure or vice versa.
+- If a promise has succeeded or failed and you later add a success/failure callback, the correct callback will be called, even though the event took place earlier.
 
 This is extremely useful for async success/failure, because you're less interested in the exact time something became available, and more interested in reacting to the outcome.
 
@@ -90,10 +90,10 @@ This is extremely useful for async success/failure, because you're less interest
 
 A promise can be:
 
--   fulfilled - The action relating to the promise succeeded
--   rejected - The action relating to the promise failed
--   pending - Hasn't fulfilled or rejected yet
--   settled - Has fulfilled or rejected
+- fulfilled - The action relating to the promise succeeded
+- rejected - The action relating to the promise failed
+- pending - Hasn't fulfilled or rejected yet
+- settled - Has fulfilled or rejected
 
 [The spec](https://www.ecma-international.org/ecma-262/#sec-promise-objects) also uses the term thenable to describe an object that is promise-like, in that it has a `then` method. This term reminds me of ex-England Football Manager [Terry Venables](https://en.wikipedia.org/wiki/Terry_Venables) so I'll be using it as little as possible.
 
@@ -101,10 +101,10 @@ A promise can be:
 
 Promises have been around for a while in the form of libraries, such as:
 
--   [Q](https://github.com/kriskowal/q)
--   [when](https://github.com/cujojs/when)
--   [WinJS](https://msdn.microsoft.com/library/windows/apps/br211867.aspx)
--   [RSVP.js](https://github.com/tildeio/rsvp.js)
+- [Q](https://github.com/kriskowal/q)
+- [when](https://github.com/cujojs/when)
+- [WinJS](https://msdn.microsoft.com/library/windows/apps/br211867.aspx)
+- [RSVP.js](https://github.com/tildeio/rsvp.js)
 
 The above and JavaScript promises share a common, standardized behaviour called [Promises/A+](https://github.com/promises-aplus/promises-spec). If you're a jQuery user, they have something similar called [Deferreds](https://api.jquery.com/category/deferred-object/). However, Deferreds aren't Promise/A+ compliant, which makes them [subtly different and less useful](https://thewayofcode.wordpress.com/tag/jquery-deferred-broken/), so beware. jQuery also has [a Promise type](https://api.jquery.com/Types/#Promise), but this is just a subset of Deferred and has the same issues.
 
@@ -933,8 +933,8 @@ This is because the `.catch()` block will catch errors occurring in both the asy
 
 You can find both of these examples on GitHub:
 
--   [simple-fetch-async-await-try-catch.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/simple-fetch-async-await-try-catch.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/simple-fetch-async-await-try-catch.html))
--   [simple-fetch-async-await-promise-catch.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/simple-fetch-async-await-promise-catch.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/simple-fetch-async-await-promise-catch.html))
+- [simple-fetch-async-await-try-catch.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/simple-fetch-async-await-try-catch.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/simple-fetch-async-await-try-catch.html))
+- [simple-fetch-async-await-promise-catch.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/simple-fetch-async-await-promise-catch.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/simple-fetch-async-await-promise-catch.html))
 
 ## Awaiting a Promise.all()
 

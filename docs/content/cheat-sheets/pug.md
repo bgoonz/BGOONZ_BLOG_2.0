@@ -1,7 +1,7 @@
 ---
 title: Pug
 category: JavaScript libraries
-layout: 2017/sheet
+
 prism_languages: [jade]
 updated: 2017-10-30
 weight: -3
@@ -10,11 +10,11 @@ tags: [Featurable]
 
 ## Pug
 
-{: .-three-column}
+
 
 ### Basic document
 
-{: .-prime}
+
 
 ```jade
 doctype html
@@ -158,7 +158,7 @@ See: [Conditionals](https://pugjs.org/language/conditionals.html)
 
 ## Mixins
 
-{: .-three-column}
+
 
 ### Mixins
 

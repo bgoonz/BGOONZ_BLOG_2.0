@@ -2,7 +2,7 @@
 title: Vim scripting
 category: Vim
 prism_languages: [vim]
-layout: 2017/sheet
+
 updated: 2020-07-05
 weight: -10
 tags: [Featurable]
@@ -38,7 +38,7 @@ imap <Tab> <C-R>=SuperTab()<CR>
 
 ### Defining
 
-{: .-prime}
+
 
 ```vim
 let var = "hello"
@@ -132,7 +132,7 @@ See: [String functions](http://learnvimscriptthehardway.stevelosh.com/chapters/2
 
 ### Functions
 
-{: .-prime}
+
 
 ```vim
 " prefix with s: for local script-only functions
@@ -211,7 +211,7 @@ endwhile
 
 ### Custom commands
 
-{: .-prime}
+
 
 ```vim
 command! Save :set fo=want tw=80 nowrap
@@ -476,7 +476,7 @@ float2nr("3.14")
 
 ### Numbers
 
-{: .-prime}
+
 
 ```vim
 let int = 1000
@@ -604,7 +604,7 @@ exists("g:...")
 
 ## Mapping
 
-{: .-three-column}
+
 
 ### Mapping commands
 

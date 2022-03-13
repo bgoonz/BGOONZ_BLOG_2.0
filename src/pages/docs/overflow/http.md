@@ -12,11 +12,11 @@ template: docs
 
 ## The HTTP Protocol&#xA;&#xA;
 
--   Requires: a connection between client and server
-
--   Stateless: no login process, each request is independent
-
--   Simple format: request header, blank line, possible payload
+- Requires: a connection between client and server
+- 
+- Stateless: no login process, each request is independent
+- 
+- Simple format: request header, blank line, possible payload
 
 -   Symmetrical: allows data to be sent and recieved
 
@@ -50,11 +50,11 @@ The HTTP redirect is a server response that can be used to indicate that a resou
 
 ## HTTP Verbs
 
--   GET - get a resource, _Idempotent_
-
--   POST - send some data to a resource
-
--   HEAD - get headers for a resource
+- GET - get a resource, _Idempotent_
+- 
+- POST - send some data to a resource
+- 
+- HEAD - get headers for a resource
 
 -   PUT - create a new resource
 
@@ -64,11 +64,11 @@ The HTTP redirect is a server response that can be used to indicate that a resou
 
 Some notable response codes:
 
--   [200 OK](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) - Request succeeded and everything went well
-
--   [301 Moved Permanently](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection) - Requested resource has moved and all future requests should be made to new location
-
--   [403 Forbidden](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error) - Response refused by server (even if request is valid)
+- [200 OK](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) - Request succeeded and everything went well
+- 
+- [301 Moved Permanently](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection) - Requested resource has moved and all future requ
+- 
+- [403 Forbidden](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error) - Response refused by server (even if request is valid)
 
 -   [404 Not Found](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error) - Server could not find requested resource (though it may be available in the future)
 
@@ -78,8 +78,8 @@ See also: [full list of HTTP status codes](http://en.wikipedia.org/wiki/List_of_
 
 ## Resources
 
--   Use [Live HTTP Headers](https://addons.mozilla.org/en-US/firefox/addon/3829) in Firefox to view headers of requests that you make. Also available as a [Chrome Extension](https://chrome.google.com/webstore/detail/live-http-headers/iaiioopjkcekapmldfgbebdclcnpgnlo).
-
--   Similarly, in Google Chrome, the [Resources panel](http://www.chromium.org/devtools/google-chrome-developer-tools-tutorial#resources) in the Developer tools allows you to view the request headers and content for each request that was made when you're looking at a page.
+- Use [Live HTTP Headers](https://addons.mozilla.org/en-US/firefox/addon/3829) in Firefox to view headers of requests that you make. Also available as a [Chrome Extension](https://chrome.google.com/webstore/detail/live-http-headers/iaiioopjkcekapmldfgbebdclcnpgnlo).
+- 
+- Similarly, in Google Chrome, the [Resources panel](http://www.chromium.org/devtools/google-chrome-developer-tools-tutorial#resources) in the Developer tools allows you to view the request headers and content for each request that was made when you're looking at a page.
 
 -   Wikipedia's [entry on HTTP](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) gives a good overview of the protocol.

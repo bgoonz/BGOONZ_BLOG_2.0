@@ -13,17 +13,17 @@ template: docs
 
 # Navigation
 
--   [🏡 Home](https://bryan-guner.gitbook.io/job-search/README)
-
--   [🗺 Navigation](https://bryan-guner.gitbook.io/job-search/navigation)
-
+- [🏡 Home](https://bryan-guner.gitbook.io/job-search/README)
+- 
+- [🗺 Navigation](https://bryan-guner.gitbook.io/job-search/navigation)
+- 
 -   [📥 Useful Downloads](https://bryan-guner.gitbook.io/job-search/useful-downloads)
 
 -   [🛠 Skills](https://bryan-guner.gitbook.io/job-search/skills/README)
 
     -   [My Stack](https://bryan-guner.gitbook.io/job-search/skills/my-stack)
 
--   [🙏 Resources](https://bryan-guner.gitbook.io/job-search/resources/README)
+- [🙏 Resources](https://bryan-guner.gitbook.io/job-search/resources/README)
 
     -   [Orientation:](https://bryan-guner.gitbook.io/job-search/resources/orientation)
 
@@ -37,7 +37,7 @@ template: docs
 
 ## Resume
 
--   [📰 Resume](https://bryan-guner.gitbook.io/job-search/resume/resume/README)
+- [📰 Resume](https://bryan-guner.gitbook.io/job-search/resume/resume/README)
 
     -   [Examples](https://bryan-guner.gitbook.io/job-search/resume/resume/examples)
 
@@ -45,25 +45,25 @@ template: docs
 
 ## Cover Letter
 
--   [📒 Cover Letter](https://bryan-guner.gitbook.io/job-search/cover-letter/page-10)
-
+- [📒 Cover Letter](https://bryan-guner.gitbook.io/job-search/cover-letter/page-10)
+- 
 -   [Example Of Developer Bio](https://bryan-guner.gitbook.io/job-search/cover-letter/example-of-developer-bio)
 
 ## Portfolio
 
--   [💼 Showcase](https://bryan-guner.gitbook.io/job-search/portfolio/showcase)
-
--   [💾 Git Repo](https://bryan-guner.gitbook.io/job-search/portfolio/git-repo)
+- [💼 Showcase](https://bryan-guner.gitbook.io/job-search/portfolio/showcase)
+- 
+- [💾 Git Repo](https://bryan-guner.gitbook.io/job-search/portfolio/git-repo)
 
 -   [🖼 Portfolio](https://bryan-guner.gitbook.io/job-search/portfolio/page-11)
 
 ## 📈 Slack\&Lambda
 
--   [📍 Pinned Items:](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/pinned-items)
-
--   [📌 Pinned Messages:](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/pinned-messages)
-
--   [❇ Slack Announcements](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/slack-announcements)
+- [📍 Pinned Items:](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/pinned-items)
+- 
+- [📌 Pinned Messages:](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/pinned-messages)
+- 
+- [❇ Slack Announcements](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/slack-announcements)
 
 -   [📺 Recordings](https://bryan-guner.gitbook.io/job-search/slack-and-lambda/recordings)
 
@@ -71,20 +71,20 @@ template: docs
 
 ## Aux-Resources
 
--   [Youtube](https://bryan-guner.gitbook.io/job-search/aux-resources/youtube)
+- [Youtube](https://bryan-guner.gitbook.io/job-search/aux-resources/youtube)
 
 ## 🖋 Interview Prep
 
--   [⁉ Interview Questions.](https://bryan-guner.gitbook.io/job-search/interview-prep/interview-questions./README)
+- [⁉ Interview Questions.](https://bryan-guner.gitbook.io/job-search/interview-prep/interview-questions./README)
 
     -   [Cheat Sheets](https://bryan-guner.gitbook.io/job-search/interview-prep/interview-questions./cheat-sheets)
 
--   [Python-VS-JS Cheat Sheet](https://bryan-guner.gitbook.io/job-search/interview-prep/python-vs-js-cheat-sheet)
-
--   [Common Knowledge Questions](https://bryan-guner.gitbook.io/job-search/interview-prep/common-knowledge-questions)
-
--   [Types Of Data Structures](https://bryan-guner.gitbook.io/job-search/interview-prep/types-of-data-structures)
-
+- [Python-VS-JS Cheat Sheet](https://bryan-guner.gitbook.io/job-search/interview-prep/python-vs-js-cheat-sheet)
+- 
+- [Common Knowledge Questions](https://bryan-guner.gitbook.io/job-search/interview-prep/common-knowledge-question
+- 
+- [Types Of Data Structures](https://bryan-guner.gitbook.io/job-search/interview-prep/t
+- 
 -   [👨💻 Leetcode:](https://bryan-guner.gitbook.io/job-search/ds_algo_prac/leetcode)
 
 -   [Hash Tables](https://bryan-guner.gitbook.io/job-search/interview-prep/hash-tables)
@@ -93,13 +93,13 @@ template: docs
 
     -   [Python Subpage](https://bryan-guner.gitbook.io/job-search/interview-prep/ds_algo-practice/python-subpage)
 
--   [🐍 Python](https://bryan-guner.gitbook.io/job-search/interview-prep/python)
-
+- [🐍 Python](https://bryan-guner.gitbook.io/job-search/interview-prep/python)
+- 
 -   [More Practice:](https://bryan-guner.gitbook.io/job-search/interview-prep/more-practice)
 
 ## Tutorials
 
--   [Job Search Guide](https://bryan-guner.gitbook.io/job-search/tutorials/untitled/README)
+- [Job Search Guide](https://bryan-guner.gitbook.io/job-search/tutorials/untitled/README)
 
     -   [Common Questions](https://bryan-guner.gitbook.io/job-search/tutorials/untitled/page-2)
 
@@ -107,13 +107,13 @@ template: docs
 
 <!---->
 
--   [Getting Started](https://bryan-guner.gitbook.io/job-search/page-3)
+- [Getting Started](https://bryan-guner.gitbook.io/job-search/page-3)
 
 ## Applications & Job Postings
 
--   [👔 Postings:](https://bryan-guner.gitbook.io/job-search/applications-and-job-postings/postings)
-
--   [My Applications](https://bryan-guner.gitbook.io/job-search/applications-and-job-postings/my-applications)
+- [👔 Postings:](https://bryan-guner.gitbook.io/job-search/applications-and-job-postings/postings)
+- 
+- [My Applications](https://bryan-guner.gitbook.io/job-search/applications-and-job-postings/my-applications)
 
 -   [😅 Jobs I Really Want](https://bryan-guner.gitbook.io/job-search/applications-and-job-postings/jobs-i-really-want/README)
 
@@ -127,7 +127,7 @@ template: docs
 
 ## Job Boards
 
--   [📋 Job Boards](https://bryan-guner.gitbook.io/job-search/job-boards/job-boards/README)
+- [📋 Job Boards](https://bryan-guner.gitbook.io/job-search/job-boards/job-boards/README)
 
     -   [Less Promising Job Boards](https://bryan-guner.gitbook.io/job-search/job-boards/job-boards/less-promising-job-boards)
 
@@ -135,26 +135,26 @@ template: docs
 
 ## Networking
 
--   [🗓 Events](https://bryan-guner.gitbook.io/job-search/networking/events)
+- [🗓 Events](https://bryan-guner.gitbook.io/job-search/networking/events)
 
 ## Lambda Guidance & Meetings
 
--   [📥 Meetings:](https://bryan-guner.gitbook.io/job-search/lambda-guidance-and-meetings/meetings)
+- [📥 Meetings:](https://bryan-guner.gitbook.io/job-search/lambda-guidance-and-meetings/meetings)
 
 ## MISC
 
--   [🗞 Articles To Read](https://bryan-guner.gitbook.io/job-search/misc/articles-to-read)
+- [🗞 Articles To Read](https://bryan-guner.gitbook.io/job-search/misc/articles-to-read)
 
 ## Notes
 
--   [📓 Notes](https://bryan-guner.gitbook.io/job-search/notes/notes/README)
+- [📓 Notes](https://bryan-guner.gitbook.io/job-search/notes/notes/README)
 
     -   [Page 5](https://bryan-guner.gitbook.io/job-search/notes/notes/page-5)
 
 ## 🖨 Interviewing
 
--   [General](https://bryan-guner.gitbook.io/job-search/interviewing/general)
-
+- [General](https://bryan-guner.gitbook.io/job-search/interviewing/general)
+- 
 -   [🖥 JS](https://bryan-guner.gitbook.io/job-search/interviewing/js)
 
 #

@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Go
-layout: 2017/sheet
+
 prism_languages: [go, bash]
 weight: -3
 tags: [Featured]
@@ -28,7 +28,7 @@ updated: 2020-06-21
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Introduction
 
@@ -40,7 +40,7 @@ updated: 2020-06-21
 
 ### Hello world
 
-{: .-prime}
+
 
 #### hello.go
 
@@ -94,7 +94,7 @@ See: [Constants](https://tour.golang.org/basics/15)
 
 ## Basic types
 
-{: .-three-column}
+
 
 ### Strings
 
@@ -166,7 +166,7 @@ func getPointer () (myPointer *int) {
 }
 ```
 
-{: data-line="3"}
+
 
 ```go
 a := new(int)
@@ -191,7 +191,7 @@ See: [Type conversions](https://tour.golang.org/basics/13)
 
 ## Flow control
 
-{: .-three-column}
+
 
 ### Conditional
 
@@ -276,7 +276,7 @@ See: [Go's "while"](https://tour.golang.org/flowcontrol/3)
 
 ## Functions
 
-{: .-three-column}
+
 
 ### Lambdas
 
@@ -322,7 +322,7 @@ See: [Named return values](https://tour.golang.org/basics/7)
 
 ## Packages
 
-{: .-three-column}
+
 
 ### Importing
 
@@ -376,7 +376,7 @@ Every package file has to start with `package`.
 
 ## Concurrency
 
-{: .-three-column}
+
 
 ### Goroutines
 
@@ -406,7 +406,7 @@ func push(name string, ch chan string) {
 }
 ```
 
-{: data-line="3"}
+
 
 Channels are concurrency-safe communication objects, used in goroutines.
 
@@ -543,7 +543,7 @@ The defer func uses current value of d, unless we use a pointer to get final val
 
 ## Structs
 
-{: .-three-column}
+
 
 ### Defining
 
@@ -689,7 +689,7 @@ func main() {
 
 ### Official resources
 
-{: .-intro}
+
 
 -   [A tour of Go](https://tour.golang.org/welcome/1) _(tour.golang.org)_
 -   [Golang wiki](https://github.com/golang/go/wiki/) _(github.com)_

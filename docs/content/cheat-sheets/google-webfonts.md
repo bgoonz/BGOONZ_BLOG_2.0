@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Google Webfonts
-layout: 2017/sheet
+
 intro: |
 Short snippets on using [Google Webfonts](https://google.com/fonts) in a web page.
 

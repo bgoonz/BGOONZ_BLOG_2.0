@@ -128,15 +128,15 @@ at the beginning of it.
 JavaScript has _6_ data types. Five of those are so called _primitive_ data
 types:
 
--   Boolean
--   Number
--   String
--   Null
--   Undefined
+- Boolean
+- Number
+- String
+- Null
+- Undefined
 
 Everything else that is not a value of one of the above types is an
 
--   Object
+- Object
 
 As we will see in the following slides, objects belong to different kinds of
 "classes" of objects.

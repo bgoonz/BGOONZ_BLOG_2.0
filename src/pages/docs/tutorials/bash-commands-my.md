@@ -57,8 +57,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 Shows all of my files and directories of my Desktop directory.
 
--   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
--   Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -138,13 +138,13 @@ Renamed my hello.txt file to the hi.txt file and html directory to the folder di
 
 To do this, we use the `cp` command.
 
--   You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 _The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
@@ -156,13 +156,13 @@ Here I copied all of the files from the folder to folder-copy.
 
 To do this, we use the `rm` command.
 
--   To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
--   To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 

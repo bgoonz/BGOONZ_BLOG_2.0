@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: bluebird.js
 category: JavaScript libraries
-layout: 2017/sheet
+
 weight: -1
 updated: 2017-09-08
 
@@ -77,11 +77,11 @@ Use [Promise.join](http://bluebirdjs.com/docs/api/promise.join.html)
 
 ### Multiple promises (array)
 
--   [Promise.all](http://bluebirdjs.com/docs/api/promise.all.html)([p]) - expect all to pass
--   [Promise.some](http://bluebirdjs.com/docs/api/promise.some.html)([p], count) - expect `count` to pass
--   [Promise.any](http://bluebirdjs.com/docs/api/promise.any.html)([p]) - same as `some([p], 1)`
--   [Promise.race](http://bluebirdjs.com/docs/api/promise.race.html)([p], count) - use `.any` instead
--   [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html)([p], fn, options) - supports concurrency
+- [Promise.all](http://bluebirdjs.com/docs/api/promise.all.html)([p]) - expect all to pass
+- [Promise.some](http://bluebirdjs.com/docs/api/promise.some.html)([p], count) - expect `count` to pass
+- [Promise.any](http://bluebirdjs.com/docs/api/promise.any.html)([p]) - same as `some([p], 1)`
+- [Promise.race](http://bluebirdjs.com/docs/api/promise.race.html)([p], count) - use `.any` instead
+- [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html)([p], fn, options) - supports concurrency
 
 ```js
 Promise.all([promise1, promise2]).then((results) => {

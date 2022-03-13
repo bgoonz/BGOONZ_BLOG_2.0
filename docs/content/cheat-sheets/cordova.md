@@ -17,7 +17,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 
 title: Apache Cordova
-layout: 2017/sheet
+
 intro: |
 A quick reference to common [Apache Cordova](https://cordova.apache.org/) commands.
 

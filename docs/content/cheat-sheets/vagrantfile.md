@@ -1,7 +1,7 @@
 ---
 title: Vagrantfile
 category: Devops
-layout: 2017/sheet
+
 ---
 
 ## Vagrantfile

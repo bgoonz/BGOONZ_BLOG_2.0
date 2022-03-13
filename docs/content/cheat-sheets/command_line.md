@@ -1,17 +1,17 @@
 ---
-title: title
-subtitle: subtitle
+title: Command Line Basics
+subtitle: Here is a list of options and example commands
 date: '2022-01-03'
-thumb_img_alt: lorem-ipsum
-content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
+thumb_img_alt: Command Line Basics
+content_img_alt: Command Line Basics
+excerpt: Command Line Basics
 seo:
-    title: ''
+    title: 'Here is a list of options and example commands'
     description: ''
     robots: []
     extra: []
 template: post
-thumb_img_path: images/css-72a655a7.jpg
+thumb_img_path: images/command-line-basics.png
 ---
 
 ---

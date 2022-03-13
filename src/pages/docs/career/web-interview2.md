@@ -612,7 +612,7 @@ fibonacci = memoize(fibonacci);
 
 we can use `memoize()` in many other situations
 
--   GCD(Greatest Common Divisor)
+- GCD(Greatest Common Divisor)
 
 ```js
 var gcd = memoize(function (a, b) {
@@ -628,7 +628,7 @@ var gcd = memoize(function (a, b) {
 gcd(27, 183); //=> 3
 ```
 
--   Factorial calculation
+- Factorial calculation
 
 ```js
 var factorial = memoize(function (n) {
@@ -640,8 +640,8 @@ factorial(5); //=> 120
 
 Learn more about memoization:
 
--   [Memoization - Wikipedia](https://en.wikipedia.org/wiki/Memoization)
-
+- [Memoization - Wikipedia](https://en.wikipedia.org/wiki/Memoization)
+- 
 -   [Implementing Memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
 
 ---

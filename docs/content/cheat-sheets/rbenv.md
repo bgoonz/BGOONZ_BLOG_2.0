@@ -1,7 +1,7 @@
 ---
 title: rbenv
 category: Ruby
-layout: 2017/sheet
+
 updated: 2018-02-20
 weight: -1
 description: |
@@ -53,7 +53,7 @@ See: [Installation](https://github.com/rbenv/rbenv#installation)
 
 ## Using versions
 
-{: .-three-column}
+
 
 ### Locally
 

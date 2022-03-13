@@ -2,11 +2,11 @@
 
 ## Summary
 
--   Introduction
+- Introduction
     -   [Hello World](#hello-world)
     -   [Go CLI Commands](#go-cli-commands)
     -   [Go Modules](#go-modules)
--   Basic
+- Basic
     -   [Basic Types](#basic-types)
     -   [Variables](#variables)
     -   [Operators](#operators)
@@ -14,7 +14,7 @@
     -   [Loops](#loops)
     -   [Arrays](#arrays)
     -   [Functions](#functions)
--   Advanced
+- Advanced
     -   [Structs](#structs)
     -   [Maps](#maps)
     -   [Pointers](#pointers)
@@ -22,7 +22,7 @@
     -   [Errors](#errors)
     -   [Testing](#testing)
     -   [Concurrency](#concurrency)
--   Standard Libs
+- Standard Libs
     -   [Package fmt](#package-fmt)
 
 ## Hello World
@@ -86,11 +86,11 @@ $ go version
 
 ## Go Modules
 
--   Go projects are called **modules**
--   Each module has multiple **packages**
--   Each package should has a scoped functionality. Packages talk to each other to compose the code
--   A module needs at least one package, the **main**
--   The package main needs a entry function called **main**
+- Go projects are called **modules**
+- Each module has multiple **packages**
+- Each package should has a scoped functionality. Packages talk to each other to compose the code
+- A module needs at least one package, the **main**
+- The package main needs a entry function called **main**
 
 ```bash
 # Create Module

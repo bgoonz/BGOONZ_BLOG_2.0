@@ -1,6 +1,6 @@
 # App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
+> Learn to code online with access to App Academy's entire full-stack course for free
 
 -   ⏱ 10 minutes
 

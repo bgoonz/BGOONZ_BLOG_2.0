@@ -16,7 +16,7 @@ thumb_img_path: images/css-72a655a7.jpg
 ---
 title: CSS
 category: CSS
-layout: 2017/sheet
+
 weight: -1
 keywords:
   - "margin, padding, border"
@@ -29,7 +29,7 @@ keywords:
 
 ## Basics
 
-{: .-three-column}
+
 
 ### Selectors
 
@@ -134,7 +134,7 @@ keywords:
 
 ### Shorthand
 
-{: .-prime}
+
 
 |         | style    | weight | size (required) |     | line-height | family            |
 | ------- | -------- | ------ | --------------- | --- | ----------- | ----------------- |

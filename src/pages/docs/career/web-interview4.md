@@ -40,9 +40,9 @@ console.log(funcVariable + '');
 
 Many of us are still doing these things:
 
--   `element.addEventListener('type', obj.method.bind(obj))`
-
--   `element.addEventListener('type', function (event) {})`
+- `element.addEventListener('type', obj.method.bind(obj))`
+- 
+- `element.addEventListener('type', function (event) {})`
 
 -   `element.addEventListener('type', (event) => {})`
 
@@ -268,9 +268,9 @@ console.log(getFileExtension3('filename.with.many.dots.ext')); // 'ext'
 
 _How does it works?_
 
--   [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
-
--   The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
+- [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
+- 
+- The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
 
 -   [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
 
@@ -639,7 +639,7 @@ Output:-
 'c';
 ```
 
--   Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
+- Note: The comma(`,`) operator has the lowest priority of all javascript operators, so without the parenthesis the expression would become: `(x = a()), b(), c();`.
 
 **Playground**
 
@@ -745,8 +745,8 @@ Also there is `.every`, which can be used. We have to return the opposite boolea
 
 #### Overview
 
--   The scope of a variable defined with `var` is function scope or declared outside any function, global.
-
+- The scope of a variable defined with `var` is function scope or declared outside any function, global.
+- 
 -   The scope of a variable defined with `let` is block scope.
 
 ```js
@@ -775,7 +775,7 @@ function varvslet() {
 
 #### Difference Details
 
--   Variable Hoisting
+- Variable Hoisting
 
     `let` will not hoist to the entire scope of the block they appear in. By contrast, `var` could hoist as below.
 
@@ -793,7 +793,7 @@ function varvslet() {
 }
 ```
 
--   Closure in Loop
+- Closure in Loop
 
     `let` in the loop can re-binds it to each iteration of the loop, making sure to re-assign it the value from the end of the previous loop iteration, so it can be used to avoid issue with closures.
 
@@ -823,8 +823,8 @@ for (let i = 0; i < 5; ++i) {
 
 #### `let` compatibility
 
--   In server side, such as Node.js, you can safely use the `let` statement now.
-
+- In server side, such as Node.js, you can safely use the `let` statement now.
+- 
 -   In client side, through a transpiler (like [Traceur](https://github.com/google/traceur-compiler)), you can safely use the `let` statement. Otherwise, please consider the browser support [here](http://caniuse.com/#search=let)
 
 #### Playground
@@ -833,9 +833,9 @@ for (let i = 0; i < 5; ++i) {
 
 #### More info
 
--   [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
-
--   [For and against let](https://davidwalsh.name/for-and-against-let)
+- [Let keyword vs var keyword](http://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword)
+- 
+- [For and against let](https://davidwalsh.name/for-and-against-let)
 
 -   [Explanation of `let` and block scoping with for loops](http://stackoverflow.com/questions/30899612/explanation-of-let-and-block-scoping-with-for-loops/30900289#30900289).
 
@@ -999,11 +999,11 @@ Yes! We have perfectly implemented hack for websocket timeout problem.
 
 ## ```
 
--   en
-
+- en
+- 
 -   javascript
 
-````
+```
 
 ---
 
@@ -1019,7 +1019,7 @@ JavaScript arrays are sparse in nature in that there are a lot of holes in them.
 
 [undefined, undefined, undefined, undefined]
 
-````
+```
 
 You may find that iterating over a sparse array to apply a certain transformation is hard.
 
@@ -1182,7 +1182,7 @@ The example shown above is but the most naive implementation of the factorial fu
 
 For the sake of completeness, let's look at how this executes for `n = 6`:
 
--   factorial(6)
+- factorial(6)
 
     -   6 \* factorial(5)
 
@@ -1210,7 +1210,7 @@ For the sake of completeness, let's look at how this executes for `n = 6`:
 
     -   6 \* 120 = 720
 
--   factorial(6) = 720
+- factorial(6) = 720
 
 Now, we must be very cautious as to what's happening so we can understand what is to come next.
 
@@ -1250,7 +1250,7 @@ function factorial(n) {
 
 Let's take a look at how this gets executed:
 
--   factorial(6)
+- factorial(6)
 
     -   inner anonymous function (iaf) gets called with (n = 6, res = 1)
 
@@ -1282,21 +1282,21 @@ Let's take a look at how this gets executed:
 
     -   iaf (6, 1) = 720
 
--   factorial(6) = 720
+- factorial(6) = 720
 
 You might notice that we didn't need to perform any calculation after unwinding the stack. We just returned a value. But, according to our rules, we had to save the state as a stack frame, even if it weren't of any use later in the chain.
 
 Our rules, however, are not applied to every language out there. In fact, in Scheme it's mandatory for such chains to be optimized with tail call optimization. This ensures that our stack is not filled with unnecessary frames. Our previous calculation would look, thus, this way:
 
--   factorial(6)
-
--   iaf(6, 1)
-
--   iaf(5, 6)
-
--   iaf(4, 30)
-
--   iaf(3, 120)
+- factorial(6)
+- 
+- iaf(6, 1)
+- 
+- iaf(5, 6)
+- 
+- iaf(4, 30)
+- 
+- iaf(3, 120)
 
 -   iaf(2, 360)
 
@@ -1888,8 +1888,8 @@ for(key in cleanMap){
 
 ### Notes
 
--   Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
-
+- Object.create() was introduced in ES5: [Compatibility](http://kangax.github.io/compat-table/es5/)
+- 
 -   ES6 introduced some new structures: [Map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap), [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) and [Weak Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 
 ---
@@ -2094,9 +2094,9 @@ console.log(multiply(1)(2)(3));
 
 #### Further readings
 
--   [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
-
--   [Lodash curry](https://lodash.com/docs/#curry)
+- [Currying in JavaScript](https://dev.to/suprabhasupi/currying-in-javascript-1k3l)
+- 
+- [Lodash curry](https://lodash.com/docs/#curry)
 
 -   [JavaScript currying](http://zetcode.com/javascript/currying/)
 

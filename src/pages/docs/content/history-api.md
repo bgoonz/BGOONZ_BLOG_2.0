@@ -86,10 +86,10 @@ In a sense, calling pushState() is similar to setting window.location = "#foo", 
 
 But pushState() has a few advantages:
 
--   The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
-
--   You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn't #foo.
-
+- The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
+- 
+- You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn
+- 
 -   You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
 
 -   If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
@@ -132,9 +132,9 @@ You can read the state of the current history entry without waiting for a popsta
 
 ## [See also](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#see_also)
 
--   [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
-
--   [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
+- [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+- 
+- [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
 
 -   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
 

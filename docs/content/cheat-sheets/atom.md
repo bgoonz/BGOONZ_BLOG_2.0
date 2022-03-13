@@ -18,14 +18,14 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Atom
 category: Apps
-layout: 2017/sheet
+
 updated: 2018-06-14
 
 ---
 
 ## Shortcuts
 
-{: .-three-column}
+
 
 ### Tree
 
@@ -125,10 +125,10 @@ See: [Symbols view](https://atom.io/packages/symbols-view)
 
 ### ⌘
 
--   For Windows and Linux, `⌘` is the `Control` key.
--   For macOS, it's the `Command` key.
+- For Windows and Linux, `⌘` is the `Control` key.
+- For macOS, it's the `Command` key.
 
 ### ⌥
 
--   For Windows and Linux, `⌥` is the `Alt` key.
--   For macOS, it's the `Option` key.
+- For Windows and Linux, `⌥` is the `Alt` key.
+- For macOS, it's the `Option` key.

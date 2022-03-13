@@ -35,16 +35,16 @@ Here's a much more complex example, which was extracted from a sample Vue.js app
 
 there are _lots_ of things going on here:
 
--   version indicates the current version
-
--   name sets the application/package name
-
--   description is a brief description of the app/package
-
--   main set the entry point for the application
-
--   private if set to true prevents the app/package to be accidentally published on npm
-
+- version indicates the current version
+- 
+- name sets the application/package name
+- 
+- description is a brief description of the app/package
+- 
+- main set the entry point for the application
+- 
+- private if set to true prevents the app/package to be accidentally
+- 
 -   scripts defines a set of node scripts you can run
 
 -   dependencies sets a list of npm packages installed as dependencies

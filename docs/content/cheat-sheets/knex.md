@@ -1,6 +1,6 @@
 ---
 title: Knex
-layout: 2017/sheet
+
 updated: 2020-06-03
 category: Databases
 intro: |
@@ -10,7 +10,7 @@ intro: |
 
 ## Getting started
 
-{: .-three-column}
+
 
 ### Connect
 
@@ -93,7 +93,7 @@ See: [Seeds](http://knexjs.org/#Seeds)
 
 ## Connect
 
-{: .-three-column}
+
 
 ### Libraries
 
@@ -443,7 +443,7 @@ See: [Schema builder](http://knexjs.org/#Schema)
 
 ## Modifying
 
-{: .-three-column}
+
 
 ### Insert
 

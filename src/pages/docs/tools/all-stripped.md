@@ -49,7 +49,7 @@ template: docs
 <h1> Cloud Storage </h1>
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="100%" width="100%">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" width="1000px" height="800px" >
 </iframe>
 
 <br>
@@ -224,7 +224,7 @@ template: docs
 <br>
 <h1> React Calculator  </h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://react-calculator2.vercel.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://react-calculator2.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 
@@ -232,7 +232,7 @@ template: docs
 <br>
 <h1>  Number Base Converter  </h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://number-base-converter-react.vercel.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://number-base-converter-react.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 
@@ -240,7 +240,7 @@ template: docs
 <br>
 <h1> Text Tools </h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devtools42.netlify.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://devtools42.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 
@@ -248,17 +248,17 @@ template: docs
 <br>
 <h1>  Paste excel to HTML</h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <h1>Awesome Search</h1>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://search-awesome.vercel.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://search-awesome.vercel.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://resourcerepo2.netlify.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://resourcerepo2.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://githtmlpreview.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="100%" width="100%"scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" width="1000px" height="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 
@@ -268,6 +268,6 @@ template: docs
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;" style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-algo-official.netlify.app/"height="800px" width="1000px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
  
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="100%" width="100%"scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
   Simple Typing Carousel </a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)

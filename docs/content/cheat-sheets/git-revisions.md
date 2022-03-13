@@ -18,7 +18,7 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Git revisions
 category: Git
-layout: 2017/sheet
+
 updated: 2017-10-11
 description: ""
 intro: |

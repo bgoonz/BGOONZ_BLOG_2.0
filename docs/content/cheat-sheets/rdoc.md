@@ -1,7 +1,7 @@
 ---
 title: Rdoc
 category: Markup
-layout: 2017/sheet
+
 ---
 
 ### Basic RDoc format
@@ -134,6 +134,6 @@ Place this at the beginning of the file.
 
 {: .-one-column}
 
--   <http://rdoc.rubyforge.org/RDoc/Markup.html>
--   <https://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
+- <http://rdoc.rubyforge.org/RDoc/Markup.html>
+- <https://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
     {: .-also-see}
