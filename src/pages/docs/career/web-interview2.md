@@ -48,19 +48,13 @@ The `==` (or `!=`) operator performs an automatic type conversion if needed. The
 
 [10] === 10      // is false
 
-
-
 '10' ==  10      // is true
 
 '10' === 10      // is false
 
-
-
  []  ==  0       // is true
 
  []  === 0       // is false
-
-
 
  ''  ==  false   // is true but true == "a" is false
 
@@ -642,7 +636,7 @@ Learn more about memoization:
 
 - [Memoization - Wikipedia](https://en.wikipedia.org/wiki/Memoization)
 - 
--   [Implementing Memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
+- [Implementing Memoization in JavaScript](https://www.sitepoint.com/implementing-memoization-in-javascript/)
 
 ---
 
@@ -744,8 +738,6 @@ var myObject = {
 
 console.log(myObject) // Object {1: 4, 5: 5, z: 1, @: 2, b: 3}
 
-
-
 for (item in myObject) {...
 
 // 1
@@ -809,8 +801,6 @@ for (item in objectKeys) {
  myObject[item]
 
 ...
-
-
 
 // Build an array of single-property objects
 

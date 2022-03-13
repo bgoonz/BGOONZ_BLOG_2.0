@@ -2,7 +2,6 @@
 title: Vimdiff
 category: Vim
 
-updated: 2018-12-06
 weight: -10
 intro: |
     [Vim](http://www.vim.org/) is a very efficient text editor. This reference was made for Vim 8.0.
@@ -10,11 +9,7 @@ intro: |
 
 ## Getting started
 
-
-
 ### Navigating
-
-
 
 | Shortcut | Description         |
 | -------- | ------------------- |

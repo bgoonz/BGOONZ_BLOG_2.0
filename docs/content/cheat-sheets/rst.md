@@ -19,7 +19,6 @@ category: Markup
 
     Hello there. |substitute| **This is bold**
 
-
      - Bullet list with a link_ (or `link with words`_)
      - Yes
 

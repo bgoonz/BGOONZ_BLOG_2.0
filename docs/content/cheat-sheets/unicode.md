@@ -79,12 +79,10 @@ title: Unicode symbols
     ◒
     ◓
 
-
     ♠   \u2660
     ♣   \u2663
     ♥   \u2665
     ♦   \u2666
-
 
     ✂  scissors
     ℹ information &#008505;

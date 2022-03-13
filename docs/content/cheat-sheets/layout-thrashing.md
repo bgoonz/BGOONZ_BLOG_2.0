@@ -3,7 +3,6 @@ title: Layout thrashing
 category: HTML
 
 description: ''
-updated: 2017-10-19
 weight: -1
 intro: |
     These are CSS properties that will cause "layout thrashing". Avoid changing them to prevent bottlenecks in your UI performance.

@@ -19,8 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: CIDR
 category: Misc
 
-updated: 2018-05-14
-
 ---
 
 ### CIDR ranges

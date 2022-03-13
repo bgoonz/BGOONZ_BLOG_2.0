@@ -2,7 +2,6 @@
 title: HTML meta tags
 category: HTML
 
-updated: 2020-03-20
 weight: -3
 ---
 

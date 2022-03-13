@@ -6,7 +6,6 @@
 # To create your own npm package: https://www.npmjs.org/doc/misc/npm-developers.html
 # More: https://www.npmjs.org/doc/
 
-
 # 1. NPM Command Lines.
 # Local mode is the default.
 # Use --global or -g on any command to operate in global mode instead.
@@ -14,7 +13,6 @@
 # As of version 0.3, it is recommended to run npm as root.
 # This allows npm to change the user identifier to the `nobody` user
 # prior to running any package build or test commands.
-
 
 npm <cmd> -h                                            # quick help on <cmd>
 npm -l                                                  # display full usage info

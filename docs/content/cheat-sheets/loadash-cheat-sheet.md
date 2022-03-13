@@ -172,7 +172,6 @@ _.once(fn)
 ```
 _.wrap(_.escape, (name) => `hi ${name}`)
 
-
 _.delay(fn, 2000)
 
 _.negate(fn)

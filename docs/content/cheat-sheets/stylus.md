@@ -4,13 +4,10 @@ category: CSS
 
 prism_languages: [stylus]
 weight: -3
-updated: 2017-10-30
 tags: [Featurable]
 ---
 
 ## Getting started
-
-
 
 ### CSS syntax
 
@@ -74,8 +71,6 @@ div
 
 ## Mixins
 
-
-
 ### Without arguments
 
 ```stylus
@@ -131,8 +126,6 @@ mobile()
     {block}
 ```
 
-
-
 ```stylus
 +mobile()
   width: 10px
@@ -160,8 +153,6 @@ shadow(offset-x, args...)
 See: [Rest params](http://stylus-lang.com/docs/vargs.html)
 
 ## Functions
-
-
 
 ### Functions
 
@@ -225,8 +216,6 @@ sizes()[1]  // → 16px
 See: [Multiple return values](http://stylus-lang.com/docs/functions.html#multiple-return-values)
 
 ## Values
-
-
 
 ### Conditional assignment
 
@@ -298,13 +287,9 @@ name = 'blue'
 lookup('light-' + name)
 ```
 
-
-
 See: [lookup](https://stylus-lang.com/docs/bifs.html#lookupname)
 
 ## Advanced features
-
-
 
 ### Conditional
 
@@ -372,8 +357,6 @@ if #fff is a 'rgba'    // → true
 See: [Instance check](https://stylus-lang.com/docs/operators.html#instance-check-is-a)
 
 ## Built-in functions
-
-
 
 ### Color functions
 

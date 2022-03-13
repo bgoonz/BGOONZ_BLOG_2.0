@@ -8,14 +8,11 @@ authors:
     - github: izzergh
     - github: kolapsys
     - github: samtrion
-updated: 2019-11-14
 description: |
     Basic cheatsheets for regular expression
 ---
 
 ## RegExp
-
-
 
 ### Character classes
 

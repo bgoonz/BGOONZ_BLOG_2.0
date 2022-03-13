@@ -279,7 +279,7 @@ No
 
 ## See also
 
--   [`Function`](../global_objects/function)
--   [Rest parameters](rest_parameters)
+- [`Function`](../global_objects/function)
+- [Rest parameters](rest_parameters)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments</a>

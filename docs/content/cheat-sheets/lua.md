@@ -187,11 +187,9 @@ title: Lua
     0 and 20       --> 20
     10 and 20      --> 20
 
-
     -- Length
     -- __len(array)
     #array
-
 
     -- Indexing
     -- __index(table, key)

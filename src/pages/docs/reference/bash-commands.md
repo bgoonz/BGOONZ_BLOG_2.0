@@ -120,12 +120,9 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ---
 ### Description: combine the contents of every file in the contaning directory.
 
-
 >Notes: this includes the contents of the file it's self...
 
-
 ###### code:
-
 
 ```js
 //APPEND-DIR.js
@@ -136,7 +133,6 @@ let cat = require('child_process')
 fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
-
 
 ```
 
@@ -168,15 +164,11 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ```sh
 
-
 find . -empty -type d -print -delete
-
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
-
 
 ```
 
@@ -194,8 +186,6 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ```sh
 
-
-
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   grep -e 'git_url*' |
@@ -212,7 +202,6 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   cut -d \" -f 4 |
   xargs -L1 git clone
 
-
 ```
 
 # Clone all Git Organization:
@@ -224,7 +213,6 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
-
 
 ```
 
@@ -287,8 +275,6 @@ git push -u origin preview
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
-
-
 find . -name "*.zip" -type f -print -delete
 
 ```
@@ -305,11 +291,9 @@ find . -name "*.zip" -type f -print -delete
 
 ```sh
 
-
 git stash
 git pull
 git stash pop
-
 
 ```
 
@@ -329,8 +313,6 @@ sudo npm i prettier -g
 
 prettier --write .
 
-
-
 ```
 
 ---
@@ -347,14 +329,9 @@ prettier --write .
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
-
-
 find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
 
-
-
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
-
 
 ```
 
@@ -377,7 +354,6 @@ sudo apt install wget -y
 npm i lebab -g
 npm i prettier -g
 npm i npm-recursive-install -g
-
 
 ```
 
@@ -424,7 +400,6 @@ tree -f -L 2  >README.md
 
 tree -f  -I  'node_modules' >listing-path.md
 
-
 tree -f  -I  'node_modules' -d >TREE.md
 
 tree -f >README.md
@@ -445,27 +420,17 @@ tree -f >README.md
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
-
 find . -type d -exec rename 's/-master//g' {} +
-
 
 find . -type f -exec rename 's/\.download//g' {} +
 
-
-
-
 find . -type d -exec rename 's/-main//g' {} +
-
-
 
 rename 's/\.js\.download$/.js/' *.js\.download
 
-
 rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
-
 find . -type d -exec rename 's/es6//g' {} +
-
 
 ```
 
@@ -496,7 +461,6 @@ done
 ```
 
 ```sh
-
 
 #!/bin/bash
 
@@ -603,7 +567,6 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
-
 ```
 
 ###### code:
@@ -611,13 +574,9 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
 
-
-
 sudo sed -i '/github\.com/d' ./*out.md
-
 
 sudo sed -i '/author/d' ./*
 
@@ -657,9 +616,7 @@ uniq -u input.txt output.txt
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
 
 sudo sed -i '/github\.com/d' ./*out.md
 
@@ -677,13 +634,10 @@ sudo sed -i '/tags:/d' ./*output.md
 
 sudo sed -i '/badstring/d' ./*
 
-
 sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
-
-
 
 ```
 
@@ -699,7 +653,6 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ```sh
 
-
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
 zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
@@ -712,7 +665,6 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 # if in windows/git-bash, add 'zip' command this way:
 # https://stackoverflow.com/a/55749636/1482990
-
 
 ```
 
@@ -774,7 +726,6 @@ cmd() {
   echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css">'
   echo ""
   echo '<style>'
-
 
 echo '    a {'
 echo '      color: black;'
@@ -853,16 +804,11 @@ cmd $listing --sort=extension >>$html
 
 ```sh
 
-
-
-
-
 ```
 
 ###### code:
 
 ```sh
-
 
 #!/bin/sh
 
@@ -892,7 +838,6 @@ cmd() {
 
   echo ""
   echo '<style>'
-
 
 echo '    a {'
 echo '      color: black;'
@@ -975,7 +920,6 @@ cmd $listing --sort=extension >>$html
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-
 ```
 
 ---
@@ -1048,18 +992,13 @@ git submodule deinit
 ```sh
 sudo apt install wget
 
-
-
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
 
-
 wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
-
 
 wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
 wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
-
 
 ```
 
@@ -1091,7 +1030,6 @@ git remote remove origin
 
 ```sh
 
-
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
 ```
@@ -1109,7 +1047,6 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 ```sh
 
 git reset --hard master@{"10 minutes ago"}
-
 
 ```
 
@@ -1136,9 +1073,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-
 # ALL:
-
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1170,7 +1105,6 @@ lebab --replace ./ --transform default-param
 lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 
-
 ```
 
 ---
@@ -1189,7 +1123,6 @@ lebab --replace ./ --transform includes
 
  Get-Service LxssManager | Restart-Service
 
-
 ```
 
 ---
@@ -1205,9 +1138,7 @@ lebab --replace ./ --transform includes
 ```sh
 npm i mediumexporter -g
 
-
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
-
 
 ```
 
@@ -1225,9 +1156,6 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
-
-
-
 find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```
@@ -1244,9 +1172,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```sh
 
-
 wget -r -A.pdf https://overapi.com/git
-
 
 ```
 
@@ -1276,9 +1202,6 @@ killall -s KILL node
 ```sh
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
-
-
-
 find . -type f -exec rename 's/-master//g' {} +
 
 ```
@@ -1287,9 +1210,6 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```sh
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
-
-
-
 
 find . -type d -exec rename 's/-master//g' {} +
 
@@ -1451,11 +1371,9 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
     $progress++
 }
-
 
 ```
 
@@ -1506,7 +1424,6 @@ ln -s "$(pwd)" ~/Downloads
 
 npx @appnest/readme generate
 
-
 ```
 
 ---
@@ -1549,14 +1466,11 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/node-db1-project?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
 https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
 
 ```
 
@@ -1572,9 +1486,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ```sh
 
-
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -1592,9 +1504,9 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```sh
 #!/bin/bash
-##############################################################################
+
 # SHORTCUTS and HISTORY
-##############################################################################
+
 
 CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
@@ -1651,9 +1563,8 @@ history   # shows command line history
 exit      # logs out of current session
 
 
-##############################################################################
 # BASH BASICS
-##############################################################################
+
 
 env                 # displays all environment variables
 
@@ -1667,9 +1578,7 @@ which bash          # finds out which program is executed as 'bash' (default: /b
 clear               # clears content on window (hide displayed lines)
 
 
-##############################################################################
 # FILE COMMANDS
-##############################################################################
 
 
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
@@ -1711,9 +1620,7 @@ head -n file_name | tail +n   # Print nth line from file.
 head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
 
 
-##############################################################################
 # DIRECTORY COMMANDS
-##############################################################################
 
 
 mkdir <dirname>               # makes a new directory
@@ -1726,11 +1633,10 @@ cd <dirname>                  # changes directory
 cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
 pwd                           # tells you where you currently are
 cd ~                          # changes to home.
-cd -                          # changes to previous working directory
+cd -                        # changes to previous working directory
 
-##############################################################################
+
 # SSH, SYSTEM INFO & NETWORK COMMANDS
-##############################################################################
 
 
 ssh user@host            # connects to host as user
@@ -1768,9 +1674,7 @@ wget <file>              # downloads file
 time <command>             # report time consumed by command execution
 
 
-##############################################################################
 # VARIABLES
-##############################################################################
 
 
 varname=value                # defines a variable
@@ -1827,14 +1731,11 @@ ${#varname}                  # returns the length of the value of the variable a
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
 
-##############################################################################
 # FUNCTIONS
-##############################################################################
 
 
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 # $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
-
 
 function functname() {
   shell commands
@@ -1844,9 +1745,7 @@ unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
 
-##############################################################################
 # FLOW CONTROLS
-##############################################################################
 
 
 statement1 && statement2  # and operator
@@ -1935,9 +1834,8 @@ until condition; do
   statements
 done
 
-##############################################################################
+
 # COMMAND-LINE PROCESSING CYCLE
-##############################################################################
 
 
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
@@ -1950,9 +1848,7 @@ enable   # enables and disables shell built-ins
 eval     # takes arguments and run them through the command-line processing steps all over again
 
 
-##############################################################################
 # INPUT/OUTPUT REDIRECTORS
-##############################################################################
 
 
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
@@ -1971,17 +1867,15 @@ n<&        # duplicates standard input from file descriptor n
 n>&m       # file descriptor n is made to be a copy of the output file descriptor
 n<&m       # file descriptor n is made to be a copy of the input file descriptor
 &>file     # directs standard output and standard error to file
-<&-        # closes the standard input
->&-        # closes the standard output
-n>&-       # closes the ouput from file descriptor n
-n<&-       # closes the input from file descripor n
+<&-      # closes the standard input
+>&-      # closes the standard output
+n>&-     # closes the ouput from file descriptor n
+n<&-     # closes the input from file descripor n
 
 |tee <file># output command to both terminal and a file (-a to append to file)
 
 
-##############################################################################
 # PROCESS HANDLING
-##############################################################################
 
 
 # To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
@@ -1994,7 +1888,7 @@ jobs         # lists all jobs (use with -l to see associated PID)
 
 fg           # brings a background job into the foreground
 fg %+        # brings most recently invoked background job
-fg %-        # brings second most recently invoked background job
+fg %-      # brings second most recently invoked background job
 fg %N        # brings job number N
 fg %string   # brings job whose command begins with string
 fg %?string  # brings job whose command contains string
@@ -2021,9 +1915,7 @@ pv                  # display progress bar for data handling commands. often use
 yes                 # give yes response everytime an input is requested from script/process
 
 
-##############################################################################
 # TIPS & TRICKS
-##############################################################################
 
 
 # set an alias
@@ -2039,9 +1931,7 @@ source .bashrc
 cd $websites
 
 
-##############################################################################
 # DEBUGGING SHELL PROGRAMS
-##############################################################################
 
 
 bash -n scriptname  # don't run commands; check for syntax errors only
@@ -2076,9 +1966,9 @@ function returntrap {
 
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
-##############################################################################
+
 # COLORS AND BACKGROUNDS
-##############################################################################
+
 # note: \e or \x1B also work instead of \033
 # Reset
 Color_Off='\033[0m' # Text Reset
@@ -2102,7 +1992,6 @@ LYellow='\033[0;93m'# Ligth Yellow
 LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
-
 
 # Bold
 BBlack='\033[1;30m' # Black
@@ -2139,6 +2028,5 @@ echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
-
 
 ```

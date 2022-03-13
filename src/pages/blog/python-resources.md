@@ -53,7 +53,7 @@ Article on basic web development setup… it is geared towards web but VSCode is
 - 
 - statement grouping is done by indentation instead of beginning and ending brackets;
 
--   no variable or argument declarations are necessary.
+- no variable or argument declarations are necessary.
 
 ### Installing Python:
 
@@ -151,9 +151,9 @@ There are many operators in python:
 - 
 - \-
 - 
--   /
+- /
 
--   \*
+- \*
     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
     Now, we can look at a few more complicated ones:
 
@@ -194,11 +194,11 @@ Here is a list of functions/methods we will go over:
 - 
 - .lower()
 - 
--   .upper()
+- .upper()
 
--   .replace()
+- .replace()
 
--   .split()
+- .split()
 
 ### New: Input()
 

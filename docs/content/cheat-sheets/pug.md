@@ -3,18 +3,13 @@ title: Pug
 category: JavaScript libraries
 
 prism_languages: [jade]
-updated: 2017-10-30
 weight: -3
 tags: [Featurable]
 ---
 
 ## Pug
 
-
-
 ### Basic document
-
-
 
 ```jade
 doctype html
@@ -157,8 +152,6 @@ else
 See: [Conditionals](https://pugjs.org/language/conditionals.html)
 
 ## Mixins
-
-
 
 ### Mixins
 

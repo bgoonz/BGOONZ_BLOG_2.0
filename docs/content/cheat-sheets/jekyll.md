@@ -4,7 +4,6 @@ jekyll_escape: true
 
 prism_languages: [bash, yaml, ruby]
 category: Jekyll
-updated: 2018-08-25
 ---
 
 {% raw %}
@@ -69,8 +68,6 @@ See: [github/pages-gem](https://github.com/github/pages-gem)
 
 ## Front-matter
 
-
-
 ### Basic frontmatter
 
 ```
@@ -114,8 +111,6 @@ All config keys are optional.
 See: [Configuration](http://jekyllrb.com/docs/configuration/)
 
 ## Markup
-
-
 
 ### Page variables
 
@@ -238,8 +233,6 @@ RSS feeds {{ page.categories }} {{ page.tags }} {{ page.path }} {{ page.dir }} {
 ```
 
 ## Filters
-
-
 
 ### Dates
 

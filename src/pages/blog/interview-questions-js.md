@@ -83,8 +83,6 @@ image: images/green-spruce-4e3a1745.png
         ```javascript
         function func {};
 
-
-
         new func(x, y, z);
         ```
 
@@ -94,12 +92,8 @@ image: images/green-spruce-4e3a1745.png
         // Create a new instance using function prototype.
         var newInstance = Object.create(func.prototype)
 
-
-
         // Call the function
         var result = func.call(newInstance, x, y, z),
-
-
 
         // If the result is a non-null object then use it otherwise just use the new instance.
         console.log(result && typeof result === 'object' ? result : newInstance);
@@ -1433,15 +1427,11 @@ image: images/green-spruce-4e3a1745.png
        <div onclick="firstFunc(event)">DIV 1</div>
      </div>
 
-
-
      <script>
      function firstFunc(event) {
        alert("DIV 1");
        event.stopPropagation();
      }
-
-
 
      function secondFunc() {
        alert("DIV 2");
@@ -1567,11 +1557,7 @@ image: images/green-spruce-4e3a1745.png
      function start() {
        msg =setTimeout(greeting, 3000);
 
-
-
      }
-
-
 
      function stop() {
          clearTimeout(msg);
@@ -1594,11 +1580,7 @@ image: images/green-spruce-4e3a1745.png
      function start() {
        msg = setInterval(greeting, 3000);
 
-
-
      }
-
-
 
      function stop() {
          clearInterval(msg);
@@ -2964,13 +2946,9 @@ Cons
        //do something
      }
 
-
-
      const myFunction = function(){ //Anonymous function assigned to a variable
        //do something
      };
-
-
 
      [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
        //do something
@@ -3313,14 +3291,10 @@ Cons
         }
      }
 
-
-
      @admin(true)
      class User() {
      }
      console.log(User.isAdmin); //true
-
-
 
       @admin(false)
       class User() {
@@ -3561,11 +3535,7 @@ Cons
         }
       }
 
-
-
       var employeeObject = new Employee();
-
-
 
       console.log(employeeObject.name);
      ```
@@ -4411,20 +4381,14 @@ Cons
      var skill1 = 'JavaScript';
      var experience1 = 15;
 
-
-
      var user2 = 'Kane';
      var skill2 = 'JavaScript';
      var experience2 = 5;
-
-
 
      function myInfoTag(strings, userExp, experienceExp, skillExp) {
        var str0 = strings[0]; // "Mr/Ms. "
        var str1 = strings[1]; // " is a/an "
        var str2 = strings[2]; // "in"
-
-
 
        var expertiseStr;
        if (experienceExp > 10){
@@ -4435,17 +4399,11 @@ Cons
          expertiseStr = 'junior developer';
        }
 
-
-
        return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
      }
 
-
-
      var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
      var output2 = myInfoTag`Mr/Ms. ${ user2 } is a/an ${ experience2 } in ${skill2}`;
-
-
 
      console.log(output1);// Mr/Ms. John is a/an expert developer in JavaScript
      console.log(output2);// Mr/Ms. Kane is a/an junior developer in JavaScript
@@ -4846,11 +4804,7 @@ Cons
      ```javascript
      var array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
 
-
-
      var odd = element ==> element % 2 !== 0;
-
-
 
      console.log(array.some(odd)); // true (the odd element exists)
      ```
@@ -5099,8 +5053,6 @@ Cons
      ```javascript
            s               e               l               f
       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-
-
 
       (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
@@ -5943,8 +5895,6 @@ Cons
            console.log('not called with new');
         }
      }
-
-
 
      new Myfunc(); // called with new
      Myfunc(); // not called with new

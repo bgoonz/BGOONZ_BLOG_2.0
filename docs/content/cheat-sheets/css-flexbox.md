@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: CSS flexbox
 category: CSS
 
-updated: 2020-06-13
 prism_languages: [css]
 weight: -3
 

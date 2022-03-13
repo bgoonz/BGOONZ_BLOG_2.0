@@ -8,8 +8,6 @@ intro: |
 
 ## Shortcuts
 
-
-
 ### Global
 
 | `^q` | Quit |

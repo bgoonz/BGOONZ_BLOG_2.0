@@ -19,8 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: ExUnit
 category: Elixir
 
-updated: 2018-11-19
-
 ---
 
 ### Test cases

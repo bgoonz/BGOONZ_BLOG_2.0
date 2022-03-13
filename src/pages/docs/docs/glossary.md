@@ -138,13 +138,13 @@ Browsers convert markup into an internal representation called the _[DOM tree](/
 There are four things in an accessibility tree object:
 
 - **name**
-- -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
+- - : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
 - **description**
-- -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
--   **role**
-    -   : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
--   **state**
-    -   : Does it have a state? Examples include checked or unchecked for checkboxes, and collapsed or expanded for the [`<summary>`](/en-US/docs/Web/HTML/Element/summary) element.
+- - : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
+- **role**
+    - : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
+- **state**
+    - : Does it have a state? Examples include checked or unchecked for checkboxes, and collapsed or expanded for the [`<summary>`](/en-US/docs/Web/HTML/Element/summary) element.
 
 Additionally, the accessibility tree often contains information on what can be done with an element: a link can be _followed_, a text input can be _typed into_, etc.
 
@@ -154,8 +154,8 @@ While still in draft form within the Web Incubator Community Group, the **[Acces
 
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Accessibility"_)
-    -   _Glossary("ARIA"_)
+    - _Glossary("Accessibility"_)
+    - _Glossary("ARIA"_)
 
 ---
 
@@ -239,7 +239,7 @@ With interactive websites and modern web standards, Ajax is gradually being repl
 - [Ajax - Getting started](/en-US/docs/Web/Guide/AJAX/Getting_Started)
 - [Glossary](/en-US/docs/Glossary):
 
-    -   _Glossary("XHR_(XMLHttpRequest)","XMLHttpRequest"\_)
+    - _Glossary("XHR_(XMLHttpRequest)","XMLHttpRequest"\_)
 
 - _DOMxRef("XMLHttpRequest"_)
 - _DOMxRef("Fetch API"_)
@@ -309,14 +309,14 @@ For _cssxref("justify-self"_) and _cssxref("align-self"_), the alignment subject
 For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mode of the box is also used. The definition of the alignment subject depends on the layout mode being used.
 
 - Block containers (including table cells)
-- -   : The entire content of the block as a single unit.
+- - : The entire content of the block as a single unit.
 - Multicol containers
-    -   : The column boxes, with any spacing inserted between column boxes added to the relevant column gaps.
--   Flex containers
-    -   : For _cssxref("justify-content"_), the flex items in each flex line.
+    - : The column boxes, with any spacing inserted between column boxes added to the relevant column gaps.
+- Flex containers
+    - : For _cssxref("justify-content"_), the flex items in each flex line.
         For _cssxref("align-content"_), the flex lines. Note, this only has an effect on multi-line flex containers.
 - Grid containers
-    -   : The grid tracks in the appropriate axis, with any spacing inserted between tracks added to the relevant gutters. Collapsed gutters are treated as a single opportunity for space insertion.
+    - : The grid tracks in the appropriate axis, with any spacing inserted between tracks added to the relevant gutters. Collapsed gutters are treated as a single opportunity for space insertion.
 
 #### See also
 
@@ -534,7 +534,7 @@ _Interwiki("wikipedia", "ASCII"_) on Wikipedia
 
 - Networking and communications
 
-    -   : Asynchronous communication is a method of exchanging messages between two or more parties in which each party receives and processes messages whenever it's convenient or possible to do so, rather than doing so immediately upon receipt. Additionally, messages may be sent without waiting for acknowledgement, with the understanding that if a problem occurs, the recipient will request corrections or otherwise handle the situation.
+    - : Asynchronous communication is a method of exchanging messages between two or more parties in which each party receives and processes messages whenever it's convenient or possible to do so, rather than doing so immediately upon receipt. Additionally, messages may be sent without waiting for acknowledgement, with the understanding that if a problem occurs, the recipient will request corrections or otherwise handle the situation.
 
         For humans, e-mail is an asynchronous communication method; the sender sends an email and the recipient will read and reply to the message when it's convenient to do so, rather than doing so at once. And both sides can continue to send and receive messages whenever they wish, instead of having to schedule them around each other.
 
@@ -542,7 +542,7 @@ _Interwiki("wikipedia", "ASCII"_) on Wikipedia
 
 - Software design
 
-    -   : Asynchronous software design expands upon the concept by building code that allows a program to ask that a task be performed alongside the original task (or tasks), without stopping to wait for the task to complete. When the secondary task is completed, the original task is notified using an agreed-upon mechanism so that it knows the work is done, and that the result, if any, is available.
+    - : Asynchronous software design expands upon the concept by building code that allows a program to ask that a task be performed alongside the original task (or tasks), without stopping to wait for the task to complete. When the secondary task is completed, the original task is notified using an agreed-upon mechanism so that it knows the work is done, and that the result, if any, is available.
 
         There are a number of programming techniques for implementing asynchronous software. See the article [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous) for an introduction to them.
 
@@ -1063,11 +1063,11 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 - [FAQ](https://www.chromium.org/blink/developer-faq) on Blink
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("Google Chrome"_)
-    -   _glossary("Gecko"_)
-    -   _glossary("Trident"_)
-    -   _glossary("WebKit"_)
-    -   _glossary("Rendering engine"_)
+    - _glossary("Google Chrome"_)
+    - _glossary("Gecko"_)
+    - _glossary("Trident"_)
+    - _glossary("WebKit"_)
+    - _glossary("Rendering engine"_)
 
 ---
 
@@ -1261,10 +1261,10 @@ Brotli is compatible with most modern browsers, but you may want to consider a f
 - _HTTPHeader("User-agent"_) (HTTP Header)
 - Download a browser
 
-    -   [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
-    -   [Google Chrome](https://www.google.com/chrome/)
-    -   [Microsoft Edge](https://www.microsoft.com/en-us/edge)
-    -   [Opera Browser](https://www.opera.com/)
+    - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
+    - [Google Chrome](https://www.google.com/chrome/)
+    - [Microsoft Edge](https://www.microsoft.com/en-us/edge)
+    - [Opera Browser](https://www.opera.com/)
 
 ---
 
@@ -1485,8 +1485,8 @@ In summary, then, we start with an empty Call Stack. Whenever we invoke a functi
 - _Interwiki("wikipedia", "Call stack"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Call stack"_)
-    -   _Glossary("Function"_)
+    - _Glossary("Call stack"_)
+    - _Glossary("Function"_)
 
 ---
 
@@ -1779,8 +1779,8 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 - _Interwiki("wikipedia", "Mojibake"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Character"_)
-    -   _Glossary("Unicode"_)
+    - _Glossary("Character"_)
+    - _Glossary("Unicode"_)
 
 ---
 
@@ -1887,18 +1887,18 @@ They also are classified according to how their _glossary("key", "keys"_) are ha
 - [Encryption and Decryption](/en-US/docs/Archive/Security/Encryption_and_Decryption)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Block cipher mode of operation"_)
-    -   _Glossary("Cipher"_)
-    -   _Glossary("Ciphertext"_)
-    -   _Glossary("Cipher suite"_)
-    -   _Glossary("Cryptanalysis"_)
-    -   _Glossary("Cryptography"_)
-    -   _Glossary("Decryption"_)
-    -   _Glossary("Encryption"_)
-    -   _Glossary("Key"_)
-    -   _Glossary("Plaintext"_)
-    -   _Glossary("Public-key cryptography"_)
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Block cipher mode of operation"_)
+    - _Glossary("Cipher"_)
+    - _Glossary("Ciphertext"_)
+    - _Glossary("Cipher suite"_)
+    - _Glossary("Cryptanalysis"_)
+    - _Glossary("Cryptography"_)
+    - _Glossary("Decryption"_)
+    - _Glossary("Encryption"_)
+    - _Glossary("Key"_)
+    - _Glossary("Plaintext"_)
+    - _Glossary("Public-key cryptography"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -2396,10 +2396,10 @@ Access-Control-Expose-Headers: X-Custom-Header, Content-Encoding
 - _HTTPHeader("Access-Control-Expose-Headers"_)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("CORS"_)
-    -   _Glossary("CORS-safelisted_request_header", "CORS-safelisted request header"_)
-    -   _Glossary("Forbidden header name"_)
-    -   _Glossary("Request header"_)
+    - _Glossary("CORS"_)
+    - _Glossary("CORS-safelisted_request_header", "CORS-safelisted request header"_)
+    - _Glossary("Forbidden header name"_)
+    - _Glossary("Request header"_)
 
 ---
 
@@ -2424,23 +2424,23 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 ### CORS headers
 
 - _HTTPHeader("Access-Control-Allow-Origin"_)
-- -   : Indicates whether the response can be shared.
+- - : Indicates whether the response can be shared.
 - _HTTPHeader("Access-Control-Allow-Credentials"_)
-- -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
+- - : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
 - _HTTPHeader("Access-Control-Allow-Headers"_)
-- -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
+- - : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
 - _HTTPHeader("Access-Control-Allow-Methods"_)
-- -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
+- - : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
 - _HTTPHeader("Access-Control-Expose-Headers"_)
-    -   : Indicates which headers can be exposed as part of the response by listing their names.
--   _HTTPHeader("Access-Control-Max-Age"_)
-    -   : Indicates how long the results of a preflight request can be cached.
--   _HTTPHeader("Access-Control-Request-Headers"_)
-    -   : Used when issuing a preflight request to let the server know which HTTP headers will be used when the actual request is made.
--   _HTTPHeader("Access-Control-Request-Method"_)
-    -   : Used when issuing a preflight request to let the server know which [HTTP method](/en-US/docs/Web/HTTP/Methods) will be used when the actual request is made.
--   _HTTPHeader("Origin"_)
-    -   : Indicates where a fetch originates from.
+    - : Indicates which headers can be exposed as part of the response by listing their names.
+- _HTTPHeader("Access-Control-Max-Age"_)
+    - : Indicates how long the results of a preflight request can be cached.
+- _HTTPHeader("Access-Control-Request-Headers"_)
+    - : Used when issuing a preflight request to let the server know which HTTP headers will be used when the actual request is made.
+- _HTTPHeader("Access-Control-Request-Method"_)
+    - : Used when issuing a preflight request to let the server know which [HTTP method](/en-US/docs/Web/HTTP/Methods) will be used when the actual request is made.
+- _HTTPHeader("Origin"_)
+    - : Indicates where a fetch originates from.
 
 ---
 
@@ -2556,10 +2556,10 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 - CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Flex"_)
-    -   _Glossary("Flex Container"_)
-    -   _Glossary("Flex Item"_)
-    -   _Glossary("Grid"_)
+    - _Glossary("Flex"_)
+    - _Glossary("Flex Container"_)
+    - _Glossary("Flex Item"_)
+    - _Glossary("Grid"_)
 
 ---
 
@@ -2619,7 +2619,7 @@ Cryptographic hash functions such as MD5 and SHA-1 are considered broken, as att
 - _interwiki("wikipedia", "Cryptographic hash function", "Cryptographic hash function"_) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -2643,18 +2643,18 @@ More than just **data confidentiality**, cryptography also tackles **identificat
 - [Encrypting and Decrypting](/en-US/docs/Archive/Security/Encryption_and_Decryption)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Block cipher mode of operation"_)
-    -   _Glossary("Cipher"_)
-    -   _Glossary("Ciphertext"_)
-    -   _Glossary("Cipher suite"_)
-    -   _Glossary("Cryptanalysis"_)
-    -   _Glossary("Cryptography"_)
-    -   _Glossary("Decryption"_)
-    -   _Glossary("Encryption"_)
-    -   _Glossary("Key"_)
-    -   _Glossary("Plaintext"_)
-    -   _Glossary("Public-key cryptography"_)
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Block cipher mode of operation"_)
+    - _Glossary("Cipher"_)
+    - _Glossary("Ciphertext"_)
+    - _Glossary("Cipher suite"_)
+    - _Glossary("Cryptanalysis"_)
+    - _Glossary("Cryptography"_)
+    - _Glossary("Decryption"_)
+    - _Glossary("Encryption"_)
+    - _Glossary("Key"_)
+    - _Glossary("Plaintext"_)
+    - _Glossary("Public-key cryptography"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -2742,14 +2742,14 @@ To use a CSS preprocessor, you must install a CSS compiler on your web _Glossary
 
 - A few of most popular CSS preprocessors:
 
-    -   [Sass](https://sass-lang.com/)
-    -   [LESS](https://lesscss.org/)
-    -   [Stylus](https://stylus-lang.com/)
-    -   [PostCSS](https://postcss.org/)
+    - [Sass](https://sass-lang.com/)
+    - [LESS](https://lesscss.org/)
+    - [Stylus](https://stylus-lang.com/)
+    - [PostCSS](https://postcss.org/)
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("CSS"_)
+    - _Glossary("CSS"_)
 
 ---
 
@@ -2813,28 +2813,28 @@ _EmbedLiveSample("Example", 640, 240_)
 - [Learn more about CSS selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors) in our introduction to CSS.
 - Basic selectors
 
-    -   [Type selectors](/en-US/docs/Web/CSS/Type_selectors) `elementname`
-    -   [Class selectors](/en-US/docs/Web/CSS/Class_selectors) `.classname`
-    -   [ID selectors](/en-US/docs/Web/CSS/ID_selectors) `#idname`
-    -   [Universal selectors](/en-US/docs/Web/CSS/Universal_selectors) `* ns|* *|*`
-    -   [Attribute selectors](/en-US/docs/Web/CSS/Attribute_selectors) `[attr=value]`
-    -   [State selectors](/en-US/docs/Web/CSS/Pseudo-classes) `a:active, a:visited`
+    - [Type selectors](/en-US/docs/Web/CSS/Type_selectors) `elementname`
+    - [Class selectors](/en-US/docs/Web/CSS/Class_selectors) `.classname`
+    - [ID selectors](/en-US/docs/Web/CSS/ID_selectors) `#idname`
+    - [Universal selectors](/en-US/docs/Web/CSS/Universal_selectors) `* ns|* *|*`
+    - [Attribute selectors](/en-US/docs/Web/CSS/Attribute_selectors) `[attr=value]`
+    - [State selectors](/en-US/docs/Web/CSS/Pseudo-classes) `a:active, a:visited`
 
 - Grouping selectors
 
-    -   [Selector list](/en-US/docs/Web/CSS/Selector_list) `A, B`
+    - [Selector list](/en-US/docs/Web/CSS/Selector_list) `A, B`
 
 - Combinators
 
-    -   [Adjacent sibling selectors](/en-US/docs/Web/CSS/Adjacent_sibling_combinator) `A + B`
-    -   [General sibling selectors](/en-US/docs/Web/CSS/General_sibling_combinator) `A ~ B`
-    -   [Child selectors](/en-US/docs/Web/CSS/Child_combinator) `A > B`
-    -   [Descendant selectors](/en-US/docs/Web/CSS/Descendant_combinator) `A B`
+    - [Adjacent sibling selectors](/en-US/docs/Web/CSS/Adjacent_sibling_combinator) `A + B`
+    - [General sibling selectors](/en-US/docs/Web/CSS/General_sibling_combinator) `A ~ B`
+    - [Child selectors](/en-US/docs/Web/CSS/Child_combinator) `A > B`
+    - [Descendant selectors](/en-US/docs/Web/CSS/Descendant_combinator) `A B`
 
 - Pseudo
 
-    -   [Pseudo classes](/en-US/docs/Web/CSS/Pseudo-classes) `:`
-    -   [Pseudo elements](/en-US/docs/Web/CSS/Pseudo-elements) `::`
+    - [Pseudo classes](/en-US/docs/Web/CSS/Pseudo-classes) `:`
+    - [Pseudo elements](/en-US/docs/Web/CSS/Pseudo-elements) `::`
 
 ---
 
@@ -2916,8 +2916,8 @@ Browsers also have their own database system called _glossary("IndexedDB"_).
 - _Interwiki("wikipedia", "Database"_) on Wikipedia
 - Glossary
 
-    -   _Glossary("IndexedDB"_)
-    -   _Glossary("SQL"_)
+    - _Glossary("IndexedDB"_)
+    - _Glossary("SQL"_)
 
 ---
 
@@ -3231,18 +3231,18 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
 
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("CSP"_)
-    -   _Glossary("Reporting directive"_)
-    -   _Glossary("Fetch directive"_)
-    -   _Glossary("Navigation directive"_)
+    - _Glossary("CSP"_)
+    - _Glossary("Reporting directive"_)
+    - _Glossary("Fetch directive"_)
+    - _Glossary("Navigation directive"_)
 
 - Reference
 
-    -   <https://www.w3.org/TR/CSP/#directives-document>
-    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
-    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
-    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
-    -   _HTTPHeader("Content-Security-Policy"_)
+    - <https://www.w3.org/TR/CSP/#directives-document>
+    - _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
+    - _HTTPHeader("Content-Security-Policy"_)
 
 ---
 
@@ -3373,10 +3373,10 @@ DOM was not originally specified—it came about when browsers began implementin
 - [The DOM Standard](https://dom.spec.whatwg.org/)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("API"_)
-    -   _Glossary("HTML"_)
-    -   _Glossary("XML"_)
-    -   _Glossary("World Wide Web"_)
+    - _Glossary("API"_)
+    - _Glossary("HTML"_)
+    - _Glossary("XML"_)
+    - _Glossary("World Wide Web"_)
 
 ---
 
@@ -3427,17 +3427,17 @@ These features are especially useful for one of the most common areas in which D
 - _Interwiki("wikipedia", "Datagram Transport Layer Security"_) on Wikipedia
 - Specifications:
 
-    -   _RFC(6347, "Datagram Transport Layer Security Version 1.2"_)
-    -   [Datagram Transport Layer Security Protocol Version 1.3 _draft specification_](https://datatracker.ietf.org/doc/html/draft-ietf-tls-dtls13)
+    - _RFC(6347, "Datagram Transport Layer Security Version 1.2"_)
+    - [Datagram Transport Layer Security Protocol Version 1.3 _draft specification_](https://datatracker.ietf.org/doc/html/draft-ietf-tls-dtls13)
 
 - Related specification
 
-    -   _RFC(5763, "Framework for Establishing a Secure Real-time Transport Protocol (SRTP) Security Context Using DTLS"_)
-    -   _RFC(5764, "DTLS Extension to Establish Keys for the Secure Real-time Transport Protocol (SRTP)"_)
-    -   _RFC(6083, "DTLS for Stream Control Transmission Protocol (SCTP)"_)
-    -   _RFC(8261, "Datagram Transport Layer Security (DTLS) Encapsulation of SCTP Packets"_)
-    -   _RFC(7350, "Datagram Transport Layer Security (DTLS) as Transport for Session Traversal Utilities for NAT (STUN)"_)
-    -   _RFC(7925, "TLS / DTLS Profiles for the Internet of Things"_)
+    - _RFC(5763, "Framework for Establishing a Secure Real-time Transport Protocol (SRTP) Security Context Using DTLS"_)
+    - _RFC(5764, "DTLS Extension to Establish Keys for the Secure Real-time Transport Protocol (SRTP)"_)
+    - _RFC(6083, "DTLS for Stream Control Transmission Protocol (SCTP)"_)
+    - _RFC(8261, "Datagram Transport Layer Security (DTLS) Encapsulation of SCTP Packets"_)
+    - _RFC(7350, "Datagram Transport Layer Security (DTLS) as Transport for Session Traversal Utilities for NAT (STUN)"_)
+    - _RFC(7925, "TLS / DTLS Profiles for the Internet of Things"_)
 
 ---
 
@@ -3824,19 +3824,19 @@ The term may also be applied to properties added to objects without respecting t
 > In [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment), a fallback alignment is specified in order to deal with cases where the requested alignment cannot be fulfilled. For example, if you specify `justify-content: space-between` there must be more than one [alignment subject](/en-US/docs/Glossary/Alignment_Subject). If there is not, the fallback alignment is used. This is specified per alignment method, as detailed below.
 
 - First baseline
-- -   : `start`
+- - : `start`
 - Last baseline
-- -   : `safe end`
+- - : `safe end`
 - Baseline
-- -   : `start`
+- - : `start`
 - Space-between
-    -   : `flex-start` (start)
--   Space-around
-    -   : `center`
--   Space-evenly
-    -   : `center`
--   Stretch
-    -   : `flex-start` (start)
+    - : `flex-start` (start)
+- Space-around
+    - : `center`
+- Space-evenly
+    - : `center`
+- Stretch
+    - : `flex-start` (start)
 
 #### See also
 
@@ -3927,8 +3927,8 @@ They are used to improve user experience and enforce brand consistency. When a f
 - _interwiki("wikipedia", "Favicon", "Favicon"_) on Wikipedia
 - Tools
 
-    -   [Free favicon generator](https://favicon.io/)
-    -   [Favicon.ico and & app icon generator](https://www.favicon-generator.org/)
+    - [Free favicon generator](https://favicon.io/)
+    - [Favicon.ico and & app icon generator](https://www.favicon-generator.org/)
 
 ---
 
@@ -3950,18 +3950,18 @@ See [Fetch directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#fetc
 
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("CSP"_)
-    -   _Glossary("Reporting directive"_)
-    -   _Glossary("Document directive"_)
-    -   _Glossary("Navigation directive"_)
+    - _Glossary("CSP"_)
+    - _Glossary("Reporting directive"_)
+    - _Glossary("Document directive"_)
+    - _Glossary("Navigation directive"_)
 
 - Reference
 
-    -   <https://www.w3.org/TR/CSP/#directives-fetch>
-    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
-    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
-    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
-    -   _HTTPHeader("Content-Security-Policy"_)
+    - <https://www.w3.org/TR/CSP/#directives-fetch>
+    - _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
+    - _HTTPHeader("Content-Security-Policy"_)
 
 ---
 
@@ -3993,10 +3993,10 @@ The fetch metadata request headers are:
 - [List of all HTTP headers > Fetch metadata request headers](/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Representation header"_)
-    -   _Glossary("HTTP_header","HTTP header"_)
-    -   _Glossary("Response header"_)
-    -   _Glossary("Request header"_)
+    - _Glossary("Representation header"_)
+    - _Glossary("HTTP_header","HTTP header"_)
+    - _Glossary("Response header"_)
+    - _Glossary("Request header"_)
 
 ---
 
@@ -4135,9 +4135,9 @@ We are using double parentheses `()()` to invoke the returned function as well.
 - _Interwiki("wikipedia", "First-class_function", "First-class functions"_) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("Callback function"_)
-    -   _glossary("Function"_)
-    -   _glossary("Variable"_)
+    - _glossary("Callback function"_)
+    - _glossary("Function"_)
+    - _glossary("Variable"_)
 
 ---
 
@@ -4492,9 +4492,9 @@ Forks are often seen in free and open source software development. This is now a
 - _Glossary("Fork"_) (Glossary)
 - Various "well-known" forks
 
-    -   [Linux distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
-    -   [Node.js and io.js (which have been merged together back)](https://nodejs.org/en/blog/announcements/foundation-v4-announce/)
-    -   [LibreOffice, a fork of OpenOffice](https://www.libreoffice.org/about-us/who-are-we/)
+    - [Linux distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+    - [Node.js and io.js (which have been merged together back)](https://nodejs.org/en/blog/announcements/foundation-v4-announce/)
+    - [LibreOffice, a fork of OpenOffice](https://www.libreoffice.org/about-us/who-are-we/)
 
 ---
 
@@ -4846,8 +4846,8 @@ greeting: function greeting() {
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("global scope"_)
-    -   _glossary("object"_)
+    - _glossary("global scope"_)
+    - _glossary("object"_)
 
 - _domxref("Window"_)
 - _domxref("WorkerGlobalScope"_)
@@ -4999,9 +4999,9 @@ It is a useful technique that allows Web developers to focus on developing the b
 - [Implementing feature detection](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Graceful degradation"_)
-    -   _Glossary("Polyfill"_)
-    -   _Glossary("Progressive enhancement"_)
+    - _Glossary("Graceful degradation"_)
+    - _Glossary("Polyfill"_)
+    - _Glossary("Progressive enhancement"_)
 
 ---
 
@@ -5524,10 +5524,10 @@ Tracks created in the implicit grid are auto-sized by default, however you can d
 - [Definition of Grid Tracks in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-track-concept)
 - Property reference
 
-    -   _cssxref("grid-template-columns"_)
-    -   _cssxref("grid-template-rows"_)
-    -   _cssxref("grid"_)
-    -   _cssxref("grid-template"_)
+    - _cssxref("grid-template-columns"_)
+    - _cssxref("grid-template-rows"_)
+    - _cssxref("grid"_)
+    - _cssxref("grid-template"_)
 
 ---
 
@@ -5597,10 +5597,10 @@ In the example below I have created an _explicit grid_ of three columns and two 
 - [Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 - Property reference:
 
-    -   _cssxref("grid-template-columns"_)
-    -   _cssxref("grid-template-rows"_)
-    -   _cssxref("grid"_)
-    -   _cssxref("grid-template"_)
+    - _cssxref("grid-template-columns"_)
+    - _cssxref("grid-template-rows"_)
+    - _cssxref("grid"_)
+    - _cssxref("grid-template"_)
 
 ---
 
@@ -6093,8 +6093,8 @@ HTTP/2 does not modify the application semantics of HTTP in any way. All the cor
 - _interwiki("wikipedia", "HTTP/2", "HTTP/2"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("HTTP"_)
-    -   _glossary("Latency"_)
+    - _glossary("HTTP"_)
+    - _glossary("Latency"_)
 
 ---
 
@@ -6116,9 +6116,9 @@ The major point of HTTP/3 is that it uses a new _glossary("UDP"_) protocol named
 - _interwiki("wikipedia", "HTTP/3", "HTTP/3"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("HTTP"_)
-    -   _glossary("HTTP 2"_)
-    -   _glossary("Latency"_)
+    - _glossary("HTTP"_)
+    - _glossary("HTTP 2"_)
+    - _glossary("Latency"_)
 
 ---
 
@@ -6173,8 +6173,8 @@ X-Cache-Info: cached
 
 > **Note:** Older versions of the specification referred to:
 >
-> -   _Glossary("General header"_): Headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
-> -   _Glossary("Entity header"_): Headers containing more information about the body of the entity, like its content length or its MIME-type (this is a superset of what are now referred to as the Representation metadata headers)
+> - _Glossary("General header"_): Headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
+> - _Glossary("Entity header"_): Headers containing more information about the body of the entity, like its content length or its MIME-type (this is a superset of what are now referred to as the Representation metadata headers)
 
 #### See also
 
@@ -6182,15 +6182,15 @@ X-Cache-Info: cached
 - Syntax of [headers](https://datatracker.ietf.org/doc/html/rfc7230#section-3.2) in the HTTP specification
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("HTTP header"_)
-    -   _Glossary("Request header"_)
-    -   _Glossary("Response header"_)
-    -   _Glossary("Representation header"_)
-    -   _Glossary("Fetch metadata request header"_)
-    -   _Glossary("Forbidden header name"_)
-    -   _Glossary("Forbidden response header name"_)
-    -   _Glossary("CORS-safelisted request header"_)
-    -   _Glossary("CORS-safelisted response header"_)
+    - _Glossary("HTTP header"_)
+    - _Glossary("Request header"_)
+    - _Glossary("Response header"_)
+    - _Glossary("Representation header"_)
+    - _Glossary("Fetch metadata request header"_)
+    - _Glossary("Forbidden header name"_)
+    - _Glossary("Forbidden response header name"_)
+    - _Glossary("CORS-safelisted request header"_)
+    - _Glossary("CORS-safelisted response header"_)
 
 ---
 
@@ -6271,9 +6271,9 @@ Further, the presence of an _HTTPS RR_ signals that all useful _Glossary("HTTP"_
 - [Secure Contexts](/en-US/docs/Web/Security/Secure_Contexts)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("HTTP"_)
-    -   _glossary("SSL"_)
-    -   _glossary("TLS"_)
+    - _glossary("HTTP"_)
+    - _glossary("SSL"_)
+    - _glossary("TLS"_)
 
 ---
 
@@ -6484,10 +6484,10 @@ An identifier differs from a string in that a _glossary("string"_) is data, whil
 - _interwiki("wikipedia", "Identifier#In_computer_science", "Identifier"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("Identifier"_)
-    -   _glossary("Scope"_)
-    -   _glossary("string"_)
-    -   _glossary("Unicode"_)
+    - _glossary("Identifier"_)
+    - _glossary("Scope"_)
+    - _glossary("string"_)
+    - _glossary("Unicode"_)
 
 ---
 
@@ -6681,8 +6681,8 @@ When clicked, these buttons alert 0 and 1.
 - _interwiki("wikipedia", "Immediately-invoked function expression", "IIFE"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Function"_)
-    -   _Glossary("Self-Executing Anonymous Function"_)
+    - _Glossary("Function"_)
+    - _Glossary("Self-Executing Anonymous Function"_)
 
 ---
 
@@ -6841,7 +6841,7 @@ As an app developer, you can choose which of the superclass's _glossary("attribu
 - _Interwiki("wikipedia", "Input method"_)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("I18N"_)
+    - _Glossary("I18N"_)
 
 ---
 
@@ -7235,18 +7235,18 @@ In _Glossary("symmetric-key cryptography"_), the same key is used for both encry
 - [Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Block cipher mode of operation"_)
-    -   _Glossary("Cipher"_)
-    -   _Glossary("Ciphertext"_)
-    -   _Glossary("Cipher suite"_)
-    -   _Glossary("Cryptanalysis"_)
-    -   _Glossary("Cryptography"_)
-    -   _Glossary("Decryption"_)
-    -   _Glossary("Encryption"_)
-    -   _Glossary("Key"_)
-    -   _Glossary("Plaintext"_)
-    -   _Glossary("Public-key cryptography"_)
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Block cipher mode of operation"_)
+    - _Glossary("Cipher"_)
+    - _Glossary("Ciphertext"_)
+    - _Glossary("Cipher suite"_)
+    - _Glossary("Cryptanalysis"_)
+    - _Glossary("Cryptography"_)
+    - _Glossary("Decryption"_)
+    - _Glossary("Encryption"_)
+    - _Glossary("Key"_)
+    - _Glossary("Plaintext"_)
+    - _Glossary("Public-key cryptography"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -7639,7 +7639,7 @@ For the above example, the syntax is as follows:
 - _interwiki("wikipedia", "Control_flow#Loops","Control flow"_) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Loop"_)
+    - _Glossary("Loop"_)
 
 ---
 
@@ -7663,10 +7663,10 @@ _glossary("Lossy compression"_), on the other hand, uses inexact approximations 
 
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("GZIP"_)
-    -   _glossary("Brotli"_)
-    -   _glossary("PNG"_)
-    -   _glossary("Lossy compression"_)
+    - _glossary("GZIP"_)
+    - _glossary("Brotli"_)
+    - _glossary("PNG"_)
+    - _glossary("Lossy compression"_)
 
 ---
 
@@ -7719,21 +7719,21 @@ The opposite of LTR, _Glossary("RTL"_) (Right To Left) is used in other common l
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("locale"_)
-    -   _Glossary("LTR"_)
-    -   _Glossary("RTL"_)
+    - _Glossary("locale"_)
+    - _Glossary("LTR"_)
+    - _Glossary("RTL"_)
 
 - [HTML global attributes](/en-US/docs/Web/HTML/Global_attributes)
 
-    -   _htmlattrxref("dir"_)
-    -   _htmlattrxref("lang"_)
+    - _htmlattrxref("dir"_)
+    - _htmlattrxref("lang"_)
 
 - [CSS](/en-US/docs/Web/CSS)
 
-    -   _cssxref(":dir"_)
-    -   _cssxref("direction"_)
-    -   _cssxref("unicode-bidi"_)
-    -   _cssxref("writing-mode"_)
+    - _cssxref(":dir"_)
+    - _cssxref("direction"_)
+    - _cssxref("unicode-bidi"_)
+    - _cssxref("writing-mode"_)
 
 ---
 
@@ -7801,7 +7801,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Thread"_)
+    - _Glossary("Thread"_)
 
 ---
 
@@ -7819,20 +7819,20 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 ## Types of markup language
 
 - **Presentational Markup:**
-- -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
+- - : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
 - **Procedural Markup:**
-    -   : Combined with text to provide instructions on text processing to programs. This text is visibly manipulated by the author.
--   **Descriptive Markup:**
-    -   : Labels sections of documents as to how the program should handle them. For example, the HTML _HTMLElement("td"_) defines a cell in a HTML table.
+    - : Combined with text to provide instructions on text processing to programs. This text is visibly manipulated by the author.
+- **Descriptive Markup:**
+    - : Labels sections of documents as to how the program should handle them. For example, the HTML _HTMLElement("td"_) defines a cell in a HTML table.
 
 #### See also
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("HTML"_)
-    -   _Glossary("XHTML"_)
-    -   _Glossary("XML"_)
-    -   _Glossary("SVG"_)
+    - _Glossary("HTML"_)
+    - _Glossary("XHTML"_)
+    - _Glossary("XML"_)
+    - _Glossary("SVG"_)
 
 ---
 
@@ -7911,10 +7911,10 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - [List of JavaScript built-in methods](/en-US/docs/Web/JavaScript/Reference)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("function"_)
-    -   _Glossary("object"_)
-    -   _Glossary("property"_)
-    -   _Glossary("static method"_)
+    - _Glossary("function"_)
+    - _Glossary("object"_)
+    - _Glossary("property"_)
+    - _Glossary("static method"_)
 
 ---
 
@@ -7933,12 +7933,12 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - [Official website](https://www.microsoft.com/edge)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Google Chrome"_)
-    -   _Glossary("Microsoft Edge"_)
-    -   _Glossary("Microsoft Internet Explorer"_)
-    -   _Glossary("Mozilla Firefox"_)
-    -   _Glossary("Netscape Navigator"_)
-    -   _Glossary("Opera Browser"_)
+    - _Glossary("Google Chrome"_)
+    - _Glossary("Microsoft Edge"_)
+    - _Glossary("Microsoft Internet Explorer"_)
+    - _Glossary("Mozilla Firefox"_)
+    - _Glossary("Netscape Navigator"_)
+    - _Glossary("Opera Browser"_)
 
 ---
 
@@ -8367,13 +8367,13 @@ See [Navigation directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 - <https://www.w3.org/TR/CSP/#directives-navigation>
 - Other kinds of directives:
 
-    -   _Glossary("Fetch directive"_)
-    -   _Glossary("Document directive"_)
-    -   _Glossary("Reporting directive"_)
-    -   [`block-all-mixed-content`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
-    -   [`upgrade-insecure-requests`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
-    -   [`require-sri-for`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-sri-for)
-    -   [`trusted-types`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
+    - _Glossary("Fetch directive"_)
+    - _Glossary("Document directive"_)
+    - _Glossary("Reporting directive"_)
+    - [`block-all-mixed-content`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+    - [`upgrade-insecure-requests`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+    - [`require-sri-for`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-sri-for)
+    - [`trusted-types`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
 
 - _HTTPHeader("Content-Security-Policy"_)
 
@@ -8550,14 +8550,14 @@ typeof null === 'object'; // true
 - _Interwiki("wikipedia", "Null pointer"_) on Wikipedia
 - **[Glossary](/en-US/docs/Glossary)**
 
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("string"_)
-    -   _Glossary("number"_)
-    -   _Glossary("bigint"_)
-    -   _Glossary("boolean"_)
-    -   _Glossary("null"_)
-    -   _Glossary("undefined"_)
-    -   _Glossary("symbol"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("string"_)
+    - _Glossary("number"_)
+    - _Glossary("bigint"_)
+    - _Glossary("boolean"_)
+    - _Glossary("null"_)
+    - _Glossary("undefined"_)
+    - _Glossary("symbol"_)
 
 ---
 
@@ -8592,8 +8592,8 @@ typeof null === 'object'; // true
 - The JavaScript global object _jsxref("Number"_)
 - [Glossary:](/en-US/docs/Glossary)
 
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("Primitive"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("Primitive"_)
 
 ---
 
@@ -8993,9 +8993,9 @@ Note the difference between _parameters_ and _arguments_:
 Two kinds of parameters:
 
 - input parameters
-- -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
--   output/return parameters
-    -   : primarily return multiple values from a function, but not recommended since they cause confusion
+- - : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
+- output/return parameters
+    - : primarily return multiple values from a function, but not recommended since they cause confusion
 
 #### See also
 
@@ -9120,11 +9120,11 @@ The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Conten
 
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 
-    -   _HTTPHeader("Content-Length"_)
-    -   _HTTPHeader("Content-Range"_)
-    -   _HTTPHeader("Trailer"_)
-    -   _HTTPHeader("Transfer-Encoding"_)
-    -   _Glossary("Representation header"_)
+    - _HTTPHeader("Content-Length"_)
+    - _HTTPHeader("Content-Range"_)
+    - _HTTPHeader("Trailer"_)
+    - _HTTPHeader("Transfer-Encoding"_)
+    - _Glossary("Representation header"_)
 
 - [RFC 7231, section 3.3: Payload semantics](https://datatracker.ietf.org/doc/html/rfc7231#section-3.3)
 
@@ -9265,10 +9265,10 @@ Depending on the context, the character `' '` is translated to a `'+'` (like in 
 - [PHP](https://en.wikibooks.org/wiki/PHP_Programming) on Wikibooks
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Java"_)
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("Python"_)
-    -   _Glossary("Ruby"_)
+    - _Glossary("Java"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("Python"_)
+    - _Glossary("Ruby"_)
 
 ---
 
@@ -9423,7 +9423,7 @@ Clients usually retrieve all messages and then delete them from the server, but 
 - [RFC 2449](https://datatracker.ietf.org/doc/html/rfc2449) (Specification of POP3 extension mechanism)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
-    -   _Glossary("IMAP"_)
+    - _Glossary("IMAP"_)
 
 ---
 
@@ -9629,14 +9629,14 @@ The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/
 - _Interwiki("wikipedia", "Primitive data type"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("string"_)
-    -   _Glossary("number"_)
-    -   _Glossary("bigint"_)
-    -   _Glossary("boolean"_)
-    -   _Glossary("null"_)
-    -   _Glossary("undefined"_)
-    -   _Glossary("symbol"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("string"_)
+    - _Glossary("number"_)
+    - _Glossary("bigint"_)
+    - _Glossary("boolean"_)
+    - _Glossary("null"_)
+    - _Glossary("undefined"_)
+    - _Glossary("symbol"_)
 
 ---
 
@@ -9766,8 +9766,8 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 - [HTTP overview](/en-US/docs/Web/HTTP/Overview)
 - Glossary:
 
-    -   _glossary("TCP"_)
-    -   _glossary("Packet"_)
+    - _glossary("TCP"_)
+    - _glossary("Packet"_)
 
 ---
 
@@ -9901,7 +9901,7 @@ Commonly used public-key cryptosystems are RSA (for both signing and encryption)
 - [Web Crypto API](/en-US/docs/Web/API/Web_Crypto_API)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -9930,11 +9930,11 @@ Python is developed under an OSI-approved open source license, making it freely 
 - [Django Web Framework (Python)](/en-US/docs/Learn/Server-side/Django) on MDN
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Java"_)
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("PHP"_)
-    -   _Glossary("Python"_)
-    -   _Glossary("Ruby"_)
+    - _Glossary("Java"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("PHP"_)
+    - _Glossary("Python"_)
+    - _Glossary("Ruby"_)
 
 ---
 
@@ -10064,13 +10064,13 @@ There is limited browser and server support for QUIC today.
 > **RAIL**, an acronym for **Response, Animation, Idle, and Load**, is a performance model originated by the Google Chrome team in 2015, focused on user experience and performance within the browser. The performance mantra of RAIL is "Focus on the user; the end goal isn't to make your site perform fast on any specific device, it's to make users happy." There are 4 stages of interaction: page load, idle, response to input, and scrolling and animation. In acronym order, the main tenets are:
 
 - **Response**
-- -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
+- - : Respond to users immediately, acknowledging any user input in **100ms** or less.
 - **Animation**
-- -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
--   **Idle**
-    -   : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
--   **Load**
-    -   : Deliver interactive content in less than **1 second**.
+- - : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
+- **Idle**
+    - : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
+- **Load**
+    - : Deliver interactive content in less than **1 second**.
 
 #### See also
 
@@ -10291,18 +10291,18 @@ See [Reporting directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#
 
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("CSP"_)
-    -   _Glossary("Fetch directive"_)
-    -   _Glossary("Document directive"_)
-    -   _Glossary("Navigation directive"_)
+    - _Glossary("CSP"_)
+    - _Glossary("Fetch directive"_)
+    - _Glossary("Document directive"_)
+    - _Glossary("Navigation directive"_)
 
 - Reference
 
-    -   <https://www.w3.org/TR/CSP/#directives-reporting>
-    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
-    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
-    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_deprecated_inline}}
-    -   _HTTPHeader("Content-Security-Policy"_)
+    - <https://www.w3.org/TR/CSP/#directives-reporting>
+    - _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_deprecated_inline}}
+    - _HTTPHeader("Content-Security-Policy"_)
 
 ---
 
@@ -10428,11 +10428,11 @@ x-frame-options: DENY
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Representation header"_)
-    -   _Glossary("HTTP header"_)
-    -   _Glossary("Response header"_)
-    -   _Glossary("Fetch metadata response header"_)
-    -   _Glossary("Request header"_)
+    - _Glossary("Representation header"_)
+    - _Glossary("HTTP header"_)
+    - _Glossary("Response header"_)
+    - _Glossary("Fetch metadata response header"_)
+    - _Glossary("Request header"_)
 
 ---
 
@@ -10739,9 +10739,9 @@ The opposite of RTL, LTR (Left To Right) is used in other languages, including E
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Localization"_)
-    -   _Glossary("LTR", "LTR (Left to Right)"_)
-    -   _Glossary("RTL", "RTL (Right to Left)"_)
+    - _Glossary("Localization"_)
+    - _Glossary("LTR", "LTR (Left to Right)"_)
+    - _Glossary("RTL", "RTL (Right to Left)"_)
 
 ---
 
@@ -10785,7 +10785,7 @@ RTP is rarely used alone; instead, it is used in conjunction with other protocol
 - [RFC 7826](https://datatracker.ietf.org/doc/html/rfc7826) (one of the documents that specifies precisely how the protocol works)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("RTSP"_)
+    - _Glossary("RTSP"_)
 
 ---
 
@@ -10839,8 +10839,8 @@ It helps isolate potentially malicious documents, reducing possible attack vecto
 - [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
-    -   _Glossary("CORS"_)
-    -   _Glossary("origin"_)
+    - _Glossary("CORS"_)
+    - _Glossary("origin"_)
 
 ---
 
@@ -11004,12 +11004,12 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
-    -   _glossary("Scroll container"_)
-    -   _glossary("Scrollport"_)
+    - _glossary("Scroll container"_)
+    - _glossary("Scrollport"_)
 
 - Related CSS Properties:
 
-    -   _cssxref("overflow"_)
+    - _cssxref("overflow"_)
 
 ---
 
@@ -11026,12 +11026,12 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
-    -   _glossary("Scroll container"_)
-    -   _glossary("Scrollport"_)
+    - _glossary("Scroll container"_)
+    - _glossary("Scrollport"_)
 
 - Related CSS Properties:
 
-    -   _cssxref("overflow"_)
+    - _cssxref("overflow"_)
 
 ---
 
@@ -11142,10 +11142,10 @@ As another example, in `developer.mozilla.org`, the `developer` subdomain is use
 - _Interwiki("wikipedia", "Second-level domain", "SLD"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("DNS"_)
-    -   _Glossary("Domain"_)
-    -   _Glossary("Domain name"_)
-    -   _Glossary("TLD"_)
+    - _Glossary("DNS"_)
+    - _Glossary("Domain"_)
+    - _Glossary("Domain name"_)
+    - _Glossary("TLD"_)
 
 ---
 
@@ -11276,23 +11276,23 @@ These are _some_ of the roughly 100 semantic [elements](/en-US/docs/Web/HTML/Ele
 - _interwiki("wikipedia", "Semantics#Computer_science", "The meaning of semantics in computer science"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("SEO"_)
+    - _Glossary("SEO"_)
 
 - Semantic elements in HTML:
 
-    -   _htmlelement("article"_)
-    -   _htmlelement("aside"_)
-    -   _htmlelement("details"_)
-    -   _htmlelement("figcaption"_)
-    -   _htmlelement("figure"_)
-    -   _htmlelement("footer"_)
-    -   _htmlelement("header"_)
-    -   _htmlelement("main"_)
-    -   _htmlelement("mark"_)
-    -   _htmlelement("nav"_)
-    -   _htmlelement("section"_)
-    -   _htmlelement("summary"_)
-    -   _htmlelement("time"_)
+    - _htmlelement("article"_)
+    - _htmlelement("aside"_)
+    - _htmlelement("details"_)
+    - _htmlelement("figcaption"_)
+    - _htmlelement("figure"_)
+    - _htmlelement("footer"_)
+    - _htmlelement("header"_)
+    - _htmlelement("main"_)
+    - _htmlelement("mark"_)
+    - _htmlelement("nav"_)
+    - _htmlelement("section"_)
+    - _htmlelement("summary"_)
+    - _htmlelement("time"_)
 
 ---
 
@@ -11315,11 +11315,11 @@ Search engines give some guidelines for SEO, but big search engines keep result 
 SEO methods fall into three broad classes:
 
 - technical
-- -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
+- - : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
 - copywriting
-    -   : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
--   popularity
-    -   : You get most traffic when other established sites link to your site.
+    - : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
+- popularity
+    - : You get most traffic when other established sites link to your site.
 
 #### See also
 
@@ -11531,8 +11531,8 @@ See also _Glossary("SISD"_) for a sequential architecture with no parallelism in
 - _Interwiki("wikipedia", "SIMD"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("SIMD"_)
-    -   _Glossary("SISD"_)
+    - _Glossary("SIMD"_)
+    - _Glossary("SISD"_)
 
 ---
 
@@ -11743,10 +11743,10 @@ The protocol is relatively straightforward. Primary complications include suppor
 - _Interwiki("wikipedia", "SMTP"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _glossary("NNTP"_)
-    -   _glossary("POP"_)
-    -   _glossary("protocol"_)
-    -   _Glossary("state machine"_)
+    - _glossary("NNTP"_)
+    - _glossary("POP"_)
+    - _glossary("protocol"_)
+    - _Glossary("state machine"_)
 
 ---
 
@@ -11799,15 +11799,15 @@ This therefore allows users to use websites without loading whole new pages from
 - [Understanding client-side JavaScript frameworks](/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("API"_)
-    -   _Glossary("AJAX"_)
-    -   _Glossary("JavaScript"_)
+    - _Glossary("API"_)
+    - _Glossary("AJAX"_)
+    - _Glossary("JavaScript"_)
 
 - Popular SPA frameworks:
 
-    -   [React](https://reactjs.org/)
-    -   [Angular](https://angular.io/)
-    -   [Vue.JS](https://vuejs.org/)
+    - [React](https://reactjs.org/)
+    - [Angular](https://angular.io/)
+    - [Vue.JS](https://vuejs.org/)
 
 ---
 
@@ -12002,8 +12002,8 @@ So due to (1) each single quote (') in the input string is replaced with double 
 - [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("HTTPS"_)
-    -   _Glossary("TLS"_)
+    - _Glossary("HTTPS"_)
+    - _Glossary("TLS"_)
 
 ---
 
@@ -12045,9 +12045,9 @@ Looking at the final state, you can discern something about the series of inputs
 There are two types of basic state machines:
 
 - deterministic finite state machine
-- -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
--   non-deterministic finite state machine
-    -   : Given some state, an input can lead to more than one different state.
+- - : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
+- non-deterministic finite state machine
+    - : Given some state, an input can lead to more than one different state.
 
 _Figure 1: Deterministic Finite State Machine_
 
@@ -12128,8 +12128,8 @@ myNotification.close();
 - [static](/en-US/docs/Web/JavaScript/Reference/Classes/static)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Object"_)
-    -   _Glossary("Method"_)
+    - _Glossary("Object"_)
+    - _Glossary("Method"_)
 
 ---
 
@@ -12167,7 +12167,7 @@ Strict mode for an entire script is invoked by including the statement `"use str
 - [Transitioning to strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Sloppy mode"_)
+    - _Glossary("Sloppy mode"_)
 
 ---
 
@@ -12243,11 +12243,11 @@ In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "prim
 > In _Glossary("CSS"_), there are three categories of sources for style changes. These categories are called **style origins**. They are the **user agent origin**, **user origin**, and the **author origin**.
 
 - User-agent origin
-- -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
+- - : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
 - User origin
-    -   : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
--   Author origin
-    -   : The author origin is the style origin which contains all of the styles which are part of the document, whether embedded within the _Glossary("HTML"_) or loaded from an external stylesheet file.
+    - : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
+- Author origin
+    - : The author origin is the style origin which contains all of the styles which are part of the document, whether embedded within the _Glossary("HTML"_) or loaded from an external stylesheet file.
 
 The style origins are used to determine where to stop rolling back (or backtracking through) the cascade of styles that have been applied to an element when removing styles, such as when using the _cssxref("unset"_) or _cssxref("revert"_) keywords.
 
@@ -12414,8 +12414,8 @@ Symbol.keyFor(Symbol.for('tokenString')) === 'tokenString'; // true
 - _jsxref("Object.getOwnPropertySymbols()"_)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("Primitive"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("Primitive"_)
 
 ---
 
@@ -12440,10 +12440,10 @@ Most symmetric-key algorithms currently in use are block ciphers: this means tha
 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Block cipher mode of operation"_)
-    -   _Glossary("Cryptography"_)
-    -   _Glossary("Cryptographic hash function"_)
-    -   _Glossary("Symmetric-key cryptography"_)
+    - _Glossary("Block cipher mode of operation"_)
+    - _Glossary("Cryptography"_)
+    - _Glossary("Cryptographic hash function"_)
+    - _Glossary("Symmetric-key cryptography"_)
 
 ---
 
@@ -12662,9 +12662,9 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
 - [How browsers work](/en-US/docs/Web/Performance/How_browsers_work)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("IPv4"_)
-    -   _Glossary("IPv6"_)
-    -   _Glossary("Packet"_)
+    - _Glossary("IPv4"_)
+    - _Glossary("IPv6"_)
+    - _Glossary("Packet"_)
 
 ---
 
@@ -12732,7 +12732,7 @@ Overall it can be observed these threads within our operating system are extreme
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Main thread"_)
+    - _Glossary("Main thread"_)
 
 ---
 
@@ -12821,17 +12821,17 @@ Here org is the TLD; mozilla.org is the second-level domain name; and developer 
 _Glossary("IANA"_) today distinguishes the following groups of top-level domains:
 
 - country-code top-level domains (ccTLD)
-- -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
+- - : Two-character domains established for countries or territories. Example: _.us_ for United States.
 - internationalized country code top-level domains (IDN ccTLD)
-- -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
+- - : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
 - generic top-level domains (gTLD)
-- -   : Top-level domains with three or more characters.
--   unsponsored top-level domains
-    -   : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
--   sponsored top-level domains (sTLD)
-    -   : These domains are proposed and sponsored by private organizations that decide whether an applicant is eligible to use the TLD, based on community theme concepts.
--   infrastructure top-level domain
-    -   : This group consists of one domain, the _Glossary("ARPA", "Address and Routing Parameter Area"_) (ARPA).
+- - : Top-level domains with three or more characters.
+- unsponsored top-level domains
+    - : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
+- sponsored top-level domains (sTLD)
+    - : These domains are proposed and sponsored by private organizations that decide whether an applicant is eligible to use the TLD, based on community theme concepts.
+- infrastructure top-level domain
+    - : This group consists of one domain, the _Glossary("ARPA", "Address and Routing Parameter Area"_) (ARPA).
 
 #### See also
 
@@ -12864,8 +12864,8 @@ All modern browsers support the TLS protocol, requiring the server to provide a 
 - [OWASP: Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("HTTPS"_)
-    -   _Glossary("SSL"_)
+    - _Glossary("HTTPS"_)
+    - _Glossary("SSL"_)
 
 ---
 
@@ -13188,8 +13188,8 @@ sum = Number(value1) + value2;
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Type"_)
-    -   _Glossary("Type conversion"_)
+    - _Glossary("Type"_)
+    - _Glossary("Type conversion"_)
 
 ---
 
@@ -13209,8 +13209,8 @@ sum = Number(value1) + value2;
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("Type"_)
-    -   _Glossary("Type coercion"_)
+    - _Glossary("Type"_)
+    - _Glossary("Type coercion"_)
 
 ---
 
@@ -13236,14 +13236,14 @@ If you are unsure of the type of a value, you can use the [`typeof`](/en-US/docs
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
 - [Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("JavaScript"_)
-    -   _Glossary("string"_)
-    -   _Glossary("number"_)
-    -   _Glossary("bigint"_)
-    -   _Glossary("boolean"_)
-    -   _Glossary("null"_)
-    -   _Glossary("undefined"_)
-    -   _Glossary("symbol"_)
+    - _Glossary("JavaScript"_)
+    - _Glossary("string"_)
+    - _Glossary("number"_)
+    - _Glossary("bigint"_)
+    - _Glossary("boolean"_)
+    - _Glossary("null"_)
+    - _Glossary("undefined"_)
+    - _Glossary("symbol"_)
 
 ---
 
@@ -13441,11 +13441,11 @@ A typical user agent string looks like this: `"Mozilla/5.0 (X11; Ubuntu; Linux x
 - _RFC(2616, "14.43"_): The `User-Agent` header
 - [Glossary:](/en-US/docs/Glossary)
 
-    -   _Glossary("Browser"_)
+    - _Glossary("Browser"_)
 
 - HTTP Headers
 
-    -   _HTTPHeader("User-agent"_)
+    - _HTTPHeader("User-agent"_)
 
 ---
 
@@ -13869,9 +13869,9 @@ WebDAV allows clients to
 - _Interwiki("wikipedia", "WebDAV"_) on Wikipedia
 - Specifications:
 
-    -   _rfc(2518_)
-    -   _rfc(3253_)
-    -   _rfc(3744_)
+    - _rfc(2518_)
+    - _rfc(3253_)
+    - _rfc(3744_)
 
 ---
 
@@ -14017,11 +14017,11 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 WebRTC consists mainly of these parts:
 
 - _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
-- -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a
+- - : Grants access to a device's camera and/or microphone, and can plug in their signals to a
 - _domxref("RTCPeerConnection"_)
-    -   : An interface to configure video chat or voice calls.
--   _domxref("RTCDataChannel"_)
-    -   : Provides a method to set up a _Glossary("P2P", "peer-to-peer"_) data pathway between browsers.
+    - : An interface to configure video chat or voice calls.
+- _domxref("RTCDataChannel"_)
+    - : Provides a method to set up a _Glossary("P2P", "peer-to-peer"_) data pathway between browsers.
 
 #### See also
 
@@ -14128,8 +14128,8 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
 - _cssxref("white-space"_)
 - Specifications
 
-    -   [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
-    -   [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
+    - [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
+    - [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
 
 - [Glossary](/en-US/docs/Glossary)
 
@@ -14202,9 +14202,9 @@ For example, SDK Libraries for AWS are examples of wrappers.
 - _Interwiki("wikipedia", "Wrapper function"_) (Wikipedia)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
-    -   _Glossary("API"_)
-    -   _Glossary("Class"_)
-    -   _Glossary("Function"_)
+    - _Glossary("API"_)
+    - _Glossary("Class"_)
+    - _Glossary("Function"_)
 
 ---
 

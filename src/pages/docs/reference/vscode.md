@@ -166,11 +166,11 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 > _Peek or Jump to a CSS definition directly from HTML, just like in Brackets!_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif" class="graf-image" /></figure>-   <span id="7261"><a href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint" class="markup--anchor markup--li-anchor">stylelint</a> — Lint CSS/SCSS.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif" class="graf-image" /></figure>- <span id="7261"><a href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint" class="markup--anchor markup--li-anchor">stylelint</a> — Lint CSS/SCSS.</span>
 
 - <span id="e8d5"><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer" class="markup--anchor markup--li-anchor">Autoprefixer</a> Parse CSS, SCSS, LESS and add vendor prefixes automatically.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif" class="graf-image" /></figure>-   <span id="b1b1"><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" class="markup--anchor markup--li-anchor">Intellisense for CSS class names</a> — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React's className attribute.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif" class="graf-image" /></figure>- <span id="b1b1"><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" class="markup--anchor markup--li-anchor">Intellisense for CSS class names</a> — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React's className attribute.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif" class="graf-image" /></figure>### Groovy
 
@@ -270,11 +270,11 @@ These extensions provide slightly different sets of features. While the first on
 - <span id="687e"><a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets" class="markup--anchor markup--li-anchor">Laravel 5 Snippets</a> — Laravel 5 snippets for Visual Studio Code</span>
 - <span id="42ab"><a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade" class="markup--anchor markup--li-anchor">Laravel Blade Snippets</a> — Laravel blade snippets and syntax highlight support</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif" class="graf-image" /></figure>-   <span id="bf66"><a href="https://marketplace.visualstudio.com/items?itemName=ahinkle.laravel-model-snippets" class="markup--anchor markup--li-anchor">Laravel Model Snippets</a> — Quickly get models up and running with Laravel Model Snippets.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif" class="graf-image" /></figure>- <span id="bf66"><a href="https://marketplace.visualstudio.com/items?itemName=ahinkle.laravel-model-snippets" class="markup--anchor markup--li-anchor">Laravel Model Snippets</a> — Quickly get models up and running with Laravel Model Snippets.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif" class="graf-image" /></figure>-   <span id="fa58"><a href="https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan" class="markup--anchor markup--li-anchor">Laravel Artisan</a> — Laravel Artisan commands within Visual Studio Code</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif" class="graf-image" /></figure>- <span id="fa58"><a href="https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan" class="markup--anchor markup--li-anchor">Laravel Artisan</a> — Laravel Artisan commands within Visual Studio Code</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif" class="graf-image" /></figure>-   <span id="1e4d"><a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv" class="markup--anchor markup--li-anchor">DotENV</a> — Support for dotenv file syntax</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif" class="graf-image" /></figure>- <span id="1e4d"><a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv" class="markup--anchor markup--li-anchor">DotENV</a> — Support for dotenv file syntax</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*fSAaqpXfBx1Sgztf.png" class="graf-image" /></figure>
 
@@ -284,7 +284,7 @@ These extensions provide slightly different sets of features. While the first on
 
 - <span id="8443"><a href="https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php" class="markup--anchor markup--li-anchor">Format HTML in PHP</a> — Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif" class="graf-image" /></figure>-   <span id="f3f0"><a href="https://marketplace.visualstudio.com/items?itemName=ikappas.composer" class="markup--anchor markup--li-anchor">Composer</a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif" class="graf-image" /></figure>- <span id="f3f0"><a href="https://marketplace.visualstudio.com/items?itemName=ikappas.composer" class="markup--anchor markup--li-anchor">Composer</a></span>
 
 - <span id="e5ba"><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug" class="markup--anchor markup--li-anchor">PHP Debug</a> — XDebug extension for Visual Studio Code</span>
 - <span id="6a3c"><a href="https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker" class="markup--anchor markup--li-anchor">PHP DocBlocker</a></span>

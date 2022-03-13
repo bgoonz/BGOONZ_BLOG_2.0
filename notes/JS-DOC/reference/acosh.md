@@ -76,11 +76,11 @@ No
 
 ## See also
 
--   [`Math.asinh()`](asinh)
--   [`Math.atanh()`](atanh)
--   [`Math.cosh()`](cosh)
--   [`Math.sinh()`](sinh)
--   [`Math.tanh()`](tanh)
+- [`Math.asinh()`](asinh)
+- [`Math.atanh()`](atanh)
+- [`Math.cosh()`](cosh)
+- [`Math.sinh()`](sinh)
+- [`Math.tanh()`](tanh)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

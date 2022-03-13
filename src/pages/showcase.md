@@ -58,7 +58,7 @@ sections:
                   type: action
           - title: Learning Redux
             title_url: 'https://learning-redux42.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >
                 ***React Redux provides a pair of custom React hooks that allow your
                 React components to interact with the Redux store.***
@@ -102,7 +102,7 @@ sections:
             image: images/blog-form.png
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >+
                 ## Potluck Planner
                 If you have ever tried to organize a potluck through text messages,
@@ -132,7 +132,7 @@ sections:
             image: images/energetic-sunflower.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: |+
                 Made using jQuery and Vanilla JS
             actions:

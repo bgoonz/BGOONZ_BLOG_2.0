@@ -140,7 +140,6 @@ Now to test our new spec we can run just the Dog class specs by running `mocha t
       Dog Constructor Function
         ✓ should have a "name" property
 
-
     1 passing (8ms)
 
 Nice! We tested that the name property exists on a new dog instance. Next, we can make sure our name is set properly with another test:

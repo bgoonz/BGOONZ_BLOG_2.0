@@ -1,7 +1,6 @@
 ---
 title: Screen resolutions
 
-updated: 2020-07-03
 weight: -1
 ---
 

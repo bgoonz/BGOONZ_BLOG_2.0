@@ -29,8 +29,6 @@ keywords:
 
 ## Basics
 
-
-
 ### Selectors
 
 ```css
@@ -133,8 +131,6 @@ keywords:
 {: .-key-values}
 
 ### Shorthand
-
-
 
 |         | style    | weight | size (required) |     | line-height | family            |
 | ------- | -------- | ------ | --------------- | --- | ----------- | ----------------- |

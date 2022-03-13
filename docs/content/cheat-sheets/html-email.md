@@ -19,8 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: HTML emails
 category: HTML
 
-updated: 2017-08-30
-
 ---
 
 ### Properties to avoid

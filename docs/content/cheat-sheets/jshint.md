@@ -2,7 +2,6 @@
 title: Jshint
 category: JavaScript libraries
 
-updated: 2017-09-12
 ---
 
 ### Relaxing

@@ -8,8 +8,8 @@ The JavaScript language is intended to be used within some larger environment, b
 
 JavaScript documentation of core language features (pure [ECMAScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources), for the most part) includes the following:
 
--   The [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
--   The [JavaScript reference](index)
+- The [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- The [JavaScript reference](index)
 
 If you are new to JavaScript, start with the [guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the fundamentals, you can use the [reference](index) to get more details on individual objects and language constructs.
 
@@ -40,8 +40,8 @@ Chapter about JavaScript version history.
 
 ### More reference pages
 
--   [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
--   [Lexical grammar](lexical_grammar)
--   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Deprecated and obsolete features](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features)
+- [Lexical grammar](lexical_grammar)
+- [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/About" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/About</a>

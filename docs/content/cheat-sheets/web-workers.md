@@ -1,7 +1,6 @@
 ---
 title: Web workers
 category: JavaScript
-updated: 2017-10-30
 
 weight: -1
 ---

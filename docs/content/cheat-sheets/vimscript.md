@@ -3,7 +3,6 @@ title: Vim scripting
 category: Vim
 prism_languages: [vim]
 
-updated: 2020-07-05
 weight: -10
 tags: [Featurable]
 ---
@@ -37,8 +36,6 @@ imap <Tab> <C-R>=SuperTab()<CR>
 ## Variables
 
 ### Defining
-
-
 
 ```vim
 let var = "hello"
@@ -132,8 +129,6 @@ See: [String functions](http://learnvimscriptthehardway.stevelosh.com/chapters/2
 
 ### Functions
 
-
-
 ```vim
 " prefix with s: for local script-only functions
 function! s:Initialize(cmd, args)
@@ -210,8 +205,6 @@ endwhile
 ## Custom commands
 
 ### Custom commands
-
-
 
 ```vim
 command! Save :set fo=want tw=80 nowrap
@@ -476,8 +469,6 @@ float2nr("3.14")
 
 ### Numbers
 
-
-
 ```vim
 let int = 1000
 let int = 0xff
@@ -603,8 +594,6 @@ exists("g:...")
 ```
 
 ## Mapping
-
-
 
 ### Mapping commands
 

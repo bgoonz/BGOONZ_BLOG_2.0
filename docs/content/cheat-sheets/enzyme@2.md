@@ -19,15 +19,12 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Enzyme v2
 category: React
 
-updated: 2017-10-12
 weight: -1
 deprecated_by: /enzyme
 
 ---
 
 ## Getting started
-
-
 
 ### Introduction
 
@@ -36,8 +33,6 @@ deprecated_by: /enzyme
 **(Deprecated)** [Enzyme](http://airbnb.io/enzyme) lets you write unit tests for React components. This guide covers a previous version (v2.x).
 
 ### Mounting
-
-
 
 ```js
 import { shallow, mount } from 'enzyme';

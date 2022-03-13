@@ -19,12 +19,9 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Flashlight
 category: Apps
 
-
 ---
 
 ## Commands
-
-
 
 ### Events and reminders
 

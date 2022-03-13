@@ -34,9 +34,9 @@ Since a Firebase project **_is_** a Google Cloud project:
 - 
 - Unique identifiers for a project (like the [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id)) are shared across Firebase and Google Cloud.
 
--   You can use products and APIs from both Firebase and Google Cloud in a project.
+- You can use products and APIs from both Firebase and Google Cloud in a project.
 
--   Deleting a project deletes it across Firebase and Google Cloud.
+- Deleting a project deletes it across Firebase and Google Cloud.
 
 ## Setting up a Firebase project and registering apps
 
@@ -66,7 +66,7 @@ Learn more about using project identifiers, especially the project number, in Go
 - 
 - Firebase CLI: Run firebase projects:list. The project number is displayed along with all the Firebase projects associated with your account.
 
--   Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project number in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
+- Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project number in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
 
 ### The project ID
 
@@ -82,7 +82,7 @@ The project ID displays in publicly visible Firebase resources, for example:
 - 
 - Default Realtime Database URL — **PROJECT_ID**-default-rtdb.firebaseio.com or **PROJECT_ID**-default-rtdb.**REGION_CODE**.firebasedatabase.app
 
--   Default Cloud Storage bucket name — **PROJECT_ID**.appspot.com
+- Default Cloud Storage bucket name — **PROJECT_ID**.appspot.com
 
 For all of the aforementioned resources, you can create non-default instances. The publicly visible names of non-defaults are fully-customizable. You can [connect custom domains](https://firebase.google.com/docs/hosting/custom-domain?authuser=0) to a Firebase-hosted site, [shard the Realtime Database](https://firebase.google.com/docs/database/usage/sharding?authuser=0), and [create multiple Cloud Storage buckets](https://firebase.google.com/docs/storage?authuser=0) (visit the platform-specific Get Started page).
 
@@ -104,7 +104,7 @@ Learn more about using project identifiers, especially the project number, in Go
 - 
 - Firebase CLI: Run firebase projects:list. The project ID is displayed along with all the Firebase projects associated with your account.
 
--   Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project ID in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
+- Firebase Management REST API: Call [projects.list](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/list?authuser=0). The response body contains the project ID in the [FirebaseProject](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects?authuser=0#FirebaseProject) object.
 
 ### Firebase config files and objects
 
@@ -114,7 +114,7 @@ When you register an app with a Firebase project, the Firebase console provides 
 - 
 - For Android apps, you add a google-services.json configuration file.
 
--   For web apps, you add a Firebase configuration object.
+- For web apps, you add a Firebase configuration object.
 
 At any time, you can [obtain an app's Firebase config file or object](https://support.google.com/firebase/answer/7015592?authuser=0).
 
@@ -124,15 +124,15 @@ A Firebase config file or object associates an app with a specific Firebase proj
 - 
 - [**Project ID**](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id): a user-defined unique identifier for the project across all of Firebase and Google Cloud. This identifier may appear in URLs or names for some Firebase resources, but it should generally be treated as a convenience alias to reference the project. (example value: myapp-project-123)
 
--   **Application ID ("AppID")**: the unique identifier for the Firebase app across all of Firebase with a platform-specific format:
+- **Application ID ("AppID")**: the unique identifier for the Firebase app across all of Firebase with a platform-specific format:
 
-    -   Firebase iOS apps: GOOGLE_APP_ID (example value: 1:1234567890:ios:321abc456def7890)
+    - Firebase iOS apps: GOOGLE_APP_ID (example value: 1:1234567890:ios:321abc456def7890)
         This is _not_ an Apple bundle ID.
 
-    -   Firebase Android apps: mobilesdk_app_id (example value: 1:1234567890:android:321abc456def7890)
+    - Firebase Android apps: mobilesdk_app_id (example value: 1:1234567890:android:321abc456def7890)
         This is _not_ an Android package name or Android application ID.
 
-    -   Firebase Web apps: appId (example value: 1:65211879909:web:3ae38ef1cdcb2e01fe5f0c)
+    - Firebase Web apps: appId (example value: 1:65211879909:web:3ae38ef1cdcb2e01fe5f0c)
 
 The content of the Firebase config file or object is considered public, including the app's platform-specific ID (iOS bundle ID or Android package name) and the Firebase project-specific values, like the API Key, project ID, Realtime Database URL, and Cloud Storage bucket name. Given this, **use Firebase Security Rules** to protect your data and files in [Realtime Database](https://firebase.google.com/docs/database/security?authuser=0), [Cloud Firestore](https://firebase.google.com/docs/firestore/security/get-started?authuser=0), and [Cloud Storage](https://firebase.google.com/docs/storage/security?authuser=0).
 
@@ -176,9 +176,9 @@ Here are some general limits for Firebase projects, apps, and sites:
 
 - **Number of projects per account**
 
-    -   Spark pricing plan — Project-creation quota is limited to a lower count of projects (usually around 5-10).
+    - Spark pricing plan — Project-creation quota is limited to a lower count of projects (usually around 5-10).
 
-    -   Blaze pricing plan — Project-creation quota per account increases substantially as long as the associated Cloud Billing account is in good standing.
+    - Blaze pricing plan — Project-creation quota per account increases substantially as long as the associated Cloud Billing account is in good standing.
 
     The limit on project-creation quota is rarely a concern for most developers, but if needed, you can [request an increase in project quota](https://support.google.com/cloud/answer/6330231?authuser=0).
 
@@ -210,4 +210,4 @@ For example, if you develop a white label application, each independently labell
 - 
 - Monitor the [_Usage and billing_ dashboard](https://console.firebase.google.com/project/_/usage?authuser=0) in the Firebase console to get an overall picture of your project's usage across multiple Firebase services.
 
--   Review the [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist?authuser=0).
+- Review the [Firebase launch checklist](https://firebase.google.com/support/guides/launch-checklist?authuser=0).

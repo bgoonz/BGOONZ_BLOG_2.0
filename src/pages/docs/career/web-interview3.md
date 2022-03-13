@@ -48,11 +48,7 @@ We can't use the same approach when the elements are Objects, because Objects ar
 
 1 === 1 // true
 
-
-
 'a' === 'a' // true
-
-
 
 { a: 1 } === { a: 1 } // false
 
@@ -118,15 +114,15 @@ console.log(deduped); // [ {a: 1}, [1, 2], 1, '1' ]
 - 
 - [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/
 - 
--   [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+- [`from`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
--   [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+- [`JSON.stringify`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 ### ES2015
 
 - [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - 
--   [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
 ### Stack overflow
 
@@ -264,9 +260,9 @@ where options include the following attributes:
 - 
 - _writable_: set the property as readonly. Note that if the property is a nested objects, its properties are still editable.
 - 
--   _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
+- _enumerable_: set the property as hidden. That means that `for ... of` loops and `stringify` will not include the property in their result, but the property is still there. Note: That doesn't mean that the property is private! It can still be accessible from the outside, it just means that it won't be printed.
 
--   _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
+- _configurable_: set the property as non modifiable, e.g. protected from deletion or redefinition. Again, if the property is a nested object, its properties are still configurable.
 
 So in order to create a private constant property, you can define it like so:
 
@@ -278,19 +274,13 @@ Besides configuring properties, `defineProperty` allows us to define _dynamic pr
 
 ```js
 
-
-
 var obj = {
 
   getTypeFromExternal(): true // illegal in ES5.1
 
 }
 
-
-
 Object.defineProperty(obj, getTypeFromExternal(), {value: true}); // ok
-
-
 
 // For the example sake, ES6 introduced a new syntax:
 
@@ -310,8 +300,6 @@ function Foobar () {
 
   var _foo; //  true private property
 
-
-
   Object.defineProperty(obj, 'foo', {
 
     get: function () { return _foo; }
@@ -320,11 +308,7 @@ function Foobar () {
 
   });
 
-
-
 }
-
-
 
 var foobar = new Foobar();
 
@@ -360,7 +344,7 @@ If you define a getter without a setter and still try to set a value, you will g
 
 - [defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 - 
--   [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
+- [Defining properties in JavaScript](http://bdadam.com/blog/defining-properties-in-javascript.html)
 
 ---
 
@@ -448,7 +432,7 @@ To get the average, we have to sum up numbers and then divide by the number of v
 - 
 - sum up values
 
--   get the average (`sum/length`)
+- get the average (`sum/length`)
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -478,7 +462,7 @@ Now, to get the median steps are:
 
 - sort the array
 - 
--   get the arethmic mean of the middle values
+- get the arethmic mean of the middle values
 
 ```javascript
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
@@ -939,7 +923,7 @@ As written in documentation the `reduce()` method applies a function against an 
 
 - (M) a callback **reducer function** to be applied that deals with a pair of previous (result of previous computation) and next element until end of the list.
 - 
--   (O) an **initial value** to be used as the first argument to the first call of the callback.
+- (O) an **initial value** to be used as the first argument to the first call of the callback.
 
 So let's see a common usage and later a more sophisticated one.
 
@@ -1011,7 +995,7 @@ Then, we create a new swiss knife function
 
 - responsible for applying each partial reduce functions.
 - 
--   that will return a new callback reducer function
+- that will return a new callback reducer function
 
 ```javascript
 var combineTotalPriceReducers = function (reducers) {
@@ -1109,9 +1093,9 @@ Under the hood the runtime calls `valueOf` method of the `Date` object. Then the
 - 
 - [toNumber()](http://es5.github.io/#x9.3)
 
--   [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [Date Javascript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
--   [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
+- [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
 
 ---
 

@@ -102,7 +102,7 @@ No
 
 ## See also
 
--   [`Error`](error)
--   [`Promise.any`](promise/any)
+- [`Error`](error)
+- [`Promise.any`](promise/any)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError</a>

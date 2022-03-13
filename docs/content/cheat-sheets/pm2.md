@@ -3,7 +3,6 @@ title: pm2
 category: CLI
 
 authors: { github: 'Dr-Dino' }
-updated: 2020-05-08
 ---
 
 ### Fork mode

@@ -16,17 +16,22 @@ thumb_img_path: images/css-72a655a7.jpg
 
 ---
 
+find . -name "*" -type f | xargs sed -i -e '/lucywyman/d'
+find . -name "*" -type f | xargs sed -i -e '/- keyword/d'
+find . -name "*" -type f | xargs sed -i -e '/- Puppe/d'
+find . -name "*" -type f | xargs sed -i -e '/- keywor/d'
+find . -name "*" -type f | xargs sed -i -e '/updated:/d'
+find . -name "*" -type f | xargs sed -i -e '/updated:/d'
+
 title: Bolt Quickstart
 category: Bolt
 
-updated: 2018-12-25
 authors:
 
 - github: lucywyman
 - keywor
 - Puppe
-- tasks
--   modules
+- modules
     description: |
     A quick guide to getting started writing Bolt tasks
 

@@ -187,7 +187,7 @@ Here's the repo that the website is built on:
 - 
 - **The worst-case complexity: when the data looks the worst**
 
--   **The average-case complexity: when the data looks average**
+- **The average-case complexity: when the data looks average**
 
 ## Big O notation
 
@@ -371,7 +371,6 @@ indexvalue0 … this is the first value, stored at zero position
     // 11. JavaScript properties that BEGIN with a digit MUST be accessed using bracket notation
     renderer.3d.setTexture(model, 'character.png');     // a syntax error
     renderer['3d'].setTexture(model, 'character.png');  // works properly
-
 
     // 12. Combine two Arrays
     let thirdArray = firstArray.concat(secondArray);

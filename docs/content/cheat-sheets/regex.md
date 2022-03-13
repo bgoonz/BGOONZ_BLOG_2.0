@@ -133,9 +133,6 @@ If you do not need to access the properties of the regular expression, an altern
 
     var myArray = /d(b+)d/g.exec('cdbbdbsbz');
 
-
-
-
 (See [different behaviors](#g-different-behaviors) for further info about the different behaviors.)
 
 If you want to construct the regular expression from a string, yet another alternative is this script:

@@ -2,7 +2,6 @@
 title: SQL joins
 
 category: Databases
-updated: 2018-12-06
 weight: -1
 ---
 

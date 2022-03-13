@@ -90,9 +90,9 @@ But pushState() has a few advantages:
 - 
 - You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn
 - 
--   You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
+- You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
 
--   If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
+- If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
 
 Note that pushState() never causes a hashchange event to be fired, even if the new URL differs from the old URL only in its hash.
 
@@ -136,7 +136,7 @@ You can read the state of the current history entry without waiting for a popsta
 - 
 - [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
 
--   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
+- [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
 
 # Window.historyCopy to Clipboard&#xA;&#xA;
 

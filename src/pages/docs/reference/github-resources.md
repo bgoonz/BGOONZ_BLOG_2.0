@@ -495,10 +495,10 @@ In full Markdown documents **read-only** checklists can now be added using the f
 - [ ] Mercury
 - [x] Venus
 - [x] Earth
-- -   [x] Moon
--   [x] Mars
-    -   [ ] Deimos
-    -   [ ] Phobos
+- - [x] Moon
+- [x] Mars
+    - [ ] Deimos
+    - [ ] Phobos
 
 [_Read more about task lists in markdown documents._](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 

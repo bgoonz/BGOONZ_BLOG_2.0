@@ -27,13 +27,13 @@ const fellowshipOfTheRing = {
 - The above literal is a "Book" object type.
 - **`Object Type`** is defined by it's attributes and behaviors.
 
-    -   **`Behaviors`** are represented by methods.
+    - **`Behaviors`** are represented by methods.
 
 - **`Constructor Functions`** : Handle the creation of an object - it's a factory for creating objects of a specific type.
-    -   There are a few specific things to constructors worth noting:
-        -   **The name of the constructor function is capitalized**
-        -   **The Function does not explicityly return a value**
-        -   **Within the body, the _this_ keyword references the newly created object**
+    - There are a few specific things to constructors worth noting:
+        - **The name of the constructor function is capitalized**
+        - **The Function does not explicityly return a value**
+        - **Within the body, the _this_ keyword references the newly created object**
 
 ```js
 function Book(title, series, author) {
@@ -77,7 +77,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true
 ```
 
 - By using the `instanceof` operator we can verify that an object was created from a certain object type.
-    -   _The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._
+    - _The instanceOf operator works by checking to see if the prototype object of the left side of the operator is the same as the prototype object of the right side of the operator._
 
 **Invoking a constructor function without the new keyword**
 
@@ -92,10 +92,10 @@ console.log(fellowshipOfTheRing instanceof Book); // true
 
 *   **`Prototype`** : An object that is delegated to when a reference to an object property or method can't be resolved.
 
-    -   Every instance created by a constructor function shares the same prototype.
+    - Every instance created by a constructor function shares the same prototype.
 
 *   **`Object.setPrototypeOf()`** and **`Object.getPrototypeOf()`** are just used to set a prototype of one object to another object; and also the verify a prototype.
-    -   **`proto`** : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.
+    - **`proto`** : aka "dunder proto" is a property used to gain easy access to an object's prototype - it is widely supported by browsers but is considered deprecated.
 
 ```js
 function Book(title, series, author) {
@@ -120,7 +120,7 @@ console.log(fellowshipOfTheRing.getInformation());
 **The Problem with Arrow Functions**
 
 - We **cannot** use arrow functions when defining methods on a constructor function's prototype property.
-    -   Arrow functions don't include their own **this** binding; therefore it will not reference the current instance - always stick with the function () keyword.
+    - Arrow functions don't include their own **this** binding; therefore it will not reference the current instance - always stick with the function () keyword.
 
 ---
 
@@ -144,14 +144,14 @@ class Book {
 
 - Class names also begin only with capital letters.
 - Although not required, class definitions can include a **`class constructor function`** - these are similar to regular constructors in that:
-    -   They don't explicitly return a value.
-    -   The **this** keyword references the newly created object instance.
+    - They don't explicitly return a value.
+    - The **this** keyword references the newly created object instance.
 
 **Instantiating an instance of a class**
 
 - We can also use the **`new`**.
 
-    -   Four things occur when instantiating an instance of a class:
+    - Four things occur when instantiating an instance of a class:
 
     1. New empty object is created {};
     2. The new obj's prototype is set to the class prototype's property value.
@@ -177,13 +177,13 @@ function test() {
 
 - A class can contain two types of methods:
 - 
--   **`Instance Method`** : Methods that are invoked on an instance of the class - useful for performing an action on a specific instance.
+- **`Instance Method`** : Methods that are invoked on an instance of the class - useful for performing an action on a specific instance.
 
-    -   Instance methods are also sometimes referred to as **`prototype`** methods because they are defined on a shared prototype object.
+    - Instance methods are also sometimes referred to as **`prototype`** methods because they are defined on a shared prototype object.
 
 - **`Static Method`** : Methods that invoked directly on a class, not on an instance.
-    -   `Important`: Invoking a static method on an instance will result in a runtime error.
-    -   Prepending the **`static`** keyword at the beginning on the method name will make it static.
+    - `Important`: Invoking a static method on an instance will result in a runtime error.
+    - Prepending the **`static`** keyword at the beginning on the method name will make it static.
 
 ```js
 class Book {
@@ -305,9 +305,9 @@ console.log(Book instanceof Function); // true
     console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath
     ```
     When the `getInformation()` method is invoked:
-    -   JS looks for get() on the current object.
-    -   If it isn't found, the method call is delegated to the object's prototype.
-    -   It continues up the prototype chain until the method is found.
+    - JS looks for get() on the current object.
+    - If it isn't found, the method call is delegated to the object's prototype.
+    - It continues up the prototype chain until the method is found.
 
 **Overriding a method in a parent class**
 
@@ -375,9 +375,9 @@ class Movie extends CatalogItem {
 
     **Understanding Module Loading**
 
-    -   When loading a module, Node will examine the identifier passed to the require() function to determine if our module is local, core, or third-party:
-        -   **`Local Module`**: identifier starts with ./ ../ or /
-        -   **`Node.js Core`**: identifier matches name
-        -   **`Third-Party`**: identifier matches a module in the node modules folder (installed package)
+    - When loading a module, Node will examine the identifier passed to the require() function to determine if our module is local, core, or third-party:
+        - **`Local Module`**: identifier starts with ./ ../ or /
+        - **`Node.js Core`**: identifier matches name
+        - **`Third-Party`**: identifier matches a module in the node modules folder (installed package)
 
     ---

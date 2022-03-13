@@ -188,11 +188,11 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 - 
 - In Python, everything is considered as an Object.
 - 
--   A python file has an extension of .py
+- A python file has an extension of .py
 
--   Python follows Indentation to separate code blocks instead of flower brackets({}).
+- Python follows Indentation to separate code blocks instead of flower brackets({}).
 
--   We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
+- We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
 
     `python <filename.py>`
 
@@ -256,13 +256,13 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 | [ ]      | array indexing, also declaring lists etc.                        |
 | !        | relational not, complement, ! a yields true or false             |
 | ~        | bitwise not, ones complement, ~a                                 |
-| \-       | unary minus, - a                                                 |
+| \-     | unary minus, - a                                                 |
 | \+       | unary plus, + a                                                  |
 | \*       | multiply, a \* b                                                 |
 | /        | divide, a / b                                                    |
 | %        | modulo, a % b                                                    |
 | \+       | add, a + b                                                       |
-| \-       | subtract, a - b                                                  |
+| \-     | subtract, a - b                                                  |
 | <<       | shift left, left operand is shifted left by right operand bits   |
 | \>>      | shift right, left operand is shifted right by right operand bits |
 | <        | less than, result is true or false, a %lt; b                     |
@@ -295,7 +295,7 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 - List is a collection which is ordered and changeable. Allows duplicate members.
 - 
--   Lists are created using square brackets:
+- Lists are created using square brackets:
 
 ```py
 thislist = ["apple", "banana", "cherry"]
@@ -307,9 +307,9 @@ thislist = ["apple", "banana", "cherry"]
 - 
 - The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
 
--   To determine how many items a list has, use the `len()` function.
+- To determine how many items a list has, use the `len()` function.
 
--   A list can contain different data types:
+- A list can contain different data types:
 
 ```py
 list1 = ["abc", 34, True, 40, "male"]
@@ -337,7 +337,7 @@ thistuple = ("apple", "banana", "cherry")
 - 
 - Tuples are unchangeable, meaning that we cannot change, add or remo
 - Since tuple are indexed, tuples can have items with the same value:
--   Tuples allow duplicate values:
+- Tuples allow duplicate values:
 
 ```py
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
@@ -384,8 +384,8 @@ thisset = {"apple", "banana", "cherry"}
 - Set items can appear in a different order every time you use them, and cannot be referred to b
 - 
 - Sets are unchangeable, meaning that we cannot change the items after the set has been created.
--   Duplicate values will be ignored.
--   To determine how many items a set has, use the `len()` method.
+- Duplicate values will be ignored.
+- To determine how many items a set has, use the `len()` method.
 
 ```py
 thisset = {"apple", "banana", "cherry"}
@@ -487,7 +487,7 @@ while i < 6:
 - With the `break` statement we can stop the loop even if the while condition is true
 - With the continue statement we can stop the current iteration, and continue with the next.
 - 
--   With the else statement we can run a block of code once when the condition no longer is true.
+- With the else statement we can run a block of code once when the condition no longer is true.
 
 #### For loop
 
@@ -495,7 +495,7 @@ while i < 6:
 - 
 - This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
 
--   With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
 ```py
 fruits = ["apple", "banana", "cherry"]
@@ -982,6 +982,5 @@ person = {"name": "Corina", "age": 32, "height": 1.4}
 # This loops through and capitalizes the first letter of all keys
 newPerson = {key.title(): value for key, value in person.items()}
 print(list(newPerson.items()))
-
 
 ```

@@ -77,11 +77,11 @@ No
 
 ## See also
 
--   [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
--   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
--   [Graceful asynchronous programming with promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
--   [`Promise`](../promise)
--   [`Promise.all()`](all)
+- [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
+- [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Graceful asynchronous programming with promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+- [`Promise`](../promise)
+- [`Promise.all()`](all)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

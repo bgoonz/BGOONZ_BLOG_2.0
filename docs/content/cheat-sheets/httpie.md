@@ -3,7 +3,6 @@ title: httpie
 category: CLI
 
 weight: -3
-updated: 2020-07-05
 description: |
     $ http POST http://example.com name="John" Host:example.com — JSON, cookies, files, auth, and other httpie examples.
 ---

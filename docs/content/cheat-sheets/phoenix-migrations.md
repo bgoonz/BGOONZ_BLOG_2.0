@@ -3,7 +3,6 @@ title: 'Phoenix: Ecto migrations'
 category: Elixir
 
 weight: -1
-updated: 2020-02-23
 ---
 
 ### Creating

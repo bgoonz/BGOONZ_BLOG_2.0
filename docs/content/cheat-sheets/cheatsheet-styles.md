@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Cheatsheet styles
 
 tags: [WIP]
-updated: 2017-10-26
 intro: |
 This is a reference of styles that you can use on Devhints cheatsheets. How
 meta!

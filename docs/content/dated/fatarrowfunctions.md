@@ -19,7 +19,6 @@ param => expression
 // parentheses are required on multiple params
 (param1 [, param2]) => expression
 
-
 // using functions
 var arr = [5,3,2,9,1];
 var arrFunc = arr.map(function(x) {

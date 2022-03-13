@@ -2,11 +2,7 @@
 
 ### Components
 
-
-
 #### Components
-
-
 
 ```jsx
 import React from 'react';
@@ -31,8 +27,6 @@ ReactDOM.render(<Hello name="John" />, el);
 Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hacking. (or the unofficial [jsbin](http://jsbin.com/yafixat/edit?js,output))
 
 #### Import multiple exports
-
-
 
 ```jsx
 import React, { Component } from 'react';
@@ -213,8 +207,6 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 
 ### Other components
 
-
-
 #### Functional components
 
 ```jsx
@@ -238,8 +230,6 @@ class MessageBox extends PureComponent {
   ···
 }
 ```
-
-
 
 Performance-optimized version of `React.Component`. Doesn't rerender if props/state hasn't changed.
 
@@ -509,8 +499,6 @@ class VideoPlayer extends Component {
 }
 ```
 
-
-
 Propagates `src="..."` down to the sub-component.
 
 See [Transferring props](http://facebook.github.io/react/docs/transferring-props.html)
@@ -602,8 +590,6 @@ Always supply a `key` property.
 ```
 
 ### New features
-
-
 
 #### Returning multiple elements
 
@@ -703,8 +689,6 @@ Use `ReactDOM.hydrate` instead of using `ReactDOM.render` if you're rendering ov
 See: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 
 ### Property validation
-
-
 
 #### PropTypes
 

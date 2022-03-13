@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Input tag
 category: HTML
 
-updated: 2017-10-30
 weight: -3
 
 ---

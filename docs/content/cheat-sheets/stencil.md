@@ -2,7 +2,6 @@
 title: Stencil
 category: JavaScript libraries
 
-updated: 2019-05-08
 keywords:
     - '@Component'
     - '@Prop()'
@@ -18,11 +17,7 @@ intro: |
 
 ## Quick-start guide
 
-
-
 ### Getting started
-
-
 
 #### JavaScript
 

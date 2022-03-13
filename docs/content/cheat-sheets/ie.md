@@ -2,7 +2,6 @@
 title: Internet Explorer
 category: HTML
 
-updated: 2018-03-06
 ---
 
 ## Support table

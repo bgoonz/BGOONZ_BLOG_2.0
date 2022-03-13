@@ -3,7 +3,6 @@ title: Meta-tags gem
 category: Ruby libraries
 
 weight: -1
-updated: 2017-09-08
 ---
 
 ### Titles

@@ -80,8 +80,6 @@ See: [http://www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-sa
 
 ### Browser hacks
 
-
-
 #### Disclaimer
 
 Not recommended, but here they are if you ever need them. Note that vendor prefixes may go away eventually.

@@ -23,7 +23,6 @@ weight: -1
 authors:
 
 -   github: benolot
-    updated: 2020-02-23
     description: |
     Basic guide on how to use Composer, the PHP Package manager.
 

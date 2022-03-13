@@ -54,7 +54,7 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 - <span id="1283">Yeah, that's a good place to install it. Next.</span>
 - <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" /></figure>-   <span id="e09d">Also, great looking directory. Thanks. Next.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" /></figure>- <span id="e09d">Also, great looking directory. Thanks. Next.</span>
 
 ### Oooh! A password! I'll enter **\*\*\*\***. I sure won't forget that because, if I do, I'll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!**
 

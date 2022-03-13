@@ -68,7 +68,7 @@ No
 
 ## See also
 
--   [`BigInt`](../bigint)
--   [`BigInt.asUintN()`](asuintn)
+- [`BigInt`](../bigint)
+- [`BigInt.asUintN()`](asuintn)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN</a>

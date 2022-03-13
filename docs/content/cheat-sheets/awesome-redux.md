@@ -19,8 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Awesome Redux
 category: React
 
-updated: 2017-11-19
-
 ---
 
 ### redux-actions

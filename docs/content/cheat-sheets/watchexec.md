@@ -1,7 +1,6 @@
 ---
 title: Watchexec
 
-updated: 2017-10-18
 category: CLI
 weight: -1
 keywords:

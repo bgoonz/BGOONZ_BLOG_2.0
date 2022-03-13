@@ -44,7 +44,7 @@ template: docs
 
 <!---->
 
-- **Request feedback. **We may use your information to request feedback and to contact you about your use of our Services.
+- **Request feedback.**  We may use your information to request feedback and to contact you about your use of our Services.
 
 <!---->
 
@@ -52,15 +52,15 @@ template: docs
 
 <!---->
 
-- **To manage user accounts. **We may use your information for the purposes of managing our account and keeping it in working order.
+- **To manage user accounts.**  We may use your information for the purposes of managing our account and keeping it in working order.
 
 <!---->
 
-- **To send administrative information to you. **We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
+- **To send administrative information to you.**  We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
 
 <!---->
 
-- **To protect our Services. **We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
+- **To protect our Services.**  We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
 
 <!---->
 
@@ -68,15 +68,15 @@ template: docs
 
 <!---->
 
-- **To respond to legal requests and prevent harm. **If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+- **To respond to legal requests and prevent harm.**  If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
 - 
-- **Fulfill and manage your orders. **We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
+- **Fulfill and manage your orders.** We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
 - 
 - **Administer prize draws and competitions.** We may use your information to administer prize draws and competitions when you elect to participate in our competitions.
 
--   **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
+- **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
 
--   **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
+- **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
 
 <!---->
 

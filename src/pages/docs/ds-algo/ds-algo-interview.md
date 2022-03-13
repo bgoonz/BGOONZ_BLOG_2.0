@@ -67,10 +67,10 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 - Optimal for indexing; bad at searching, inserting, and deleting (except at the end).
 - **Linear arrays**, or one dimensional arrays, are the most basic.
-- -   Are static in size, meaning that they are declared with a fixed size.
+- - Are static in size, meaning that they are declared with a fixed size.
 - **Dynamic arrays** are like one dimensional arrays, but have reserved space for additional elements.
-    -   If a dynamic array is full, it copies its contents to a larger array.
--   **Multi dimensional arrays** nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
+    - If a dynamic array is full, it copies its contents to a larger array.
+- **Multi dimensional arrays** nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
 
 ### <span style="color:red;"> Time Complexity
 
@@ -84,8 +84,8 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 ### <span style="color:red;"> Definition
 
 - Stores data with **nodes** that point to other nodes.
-    -   Nodes, at its most basic it has one datum and one reference (another node).
-    -   A linked list _chains_ nodes together by pointing one node's reference towards another node.
+    - Nodes, at its most basic it has one datum and one reference (another node).
+    - A linked list _chains_ nodes together by pointing one node's reference towards another node.
 
 ### <span style="color:red;"> What you need to know
 
@@ -93,11 +93,11 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 - **Doubly linked list** has nodes that also reference the previous node.
 - **Circularly linked list** is simple linked list whose **tail**, the last node, references the **head**, the first node.
 - **Stack**, commonly implemented with linked lists but can be made from arrays too.
-    -   Stacks are **last in, first out** (LIFO) data structures.
-    -   Made with a linked list by having the head be the only place for insertion and removal.
+    - Stacks are **last in, first out** (LIFO) data structures.
+    - Made with a linked list by having the head be the only place for insertion and removal.
 - **Queues**, too can be implemented with a linked list or an array.
-    -   Queues are a **first in, first out** (FIFO) data structure.
-    -   Made with a doubly linked list that only removes from head and adds to tail.
+    - Queues are a **first in, first out** (FIFO) data structure.
+    - Made with a doubly linked list that only removes from head and adds to tail.
 
 ### <span style="color:red;"> Time Complexity
 
@@ -114,15 +114,15 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 - Stores data with key value pairs.
 - **Hash functions** accept a key and return an output unique only to that specific key.
-    -   This is known as **hashing**, which is the concept that an input and an output have a one-to-one correspondence to map information.
-    -   Hash functions return a unique address in memory for that data.
+    - This is known as **hashing**, which is the concept that an input and an output have a one-to-one correspondence to map information.
+    - Hash functions return a unique address in memory for that data.
 
 ### <span style="color:red;"> What you need to know
 
 - Designed to optimize searching, insertion, and deletion.
 - **Hash collisions** are when a hash function returns the same output for two distinct inputs.
-    -   All hash functions have this problem.
-    -   This is often accommodated for by having the hash tables be very large.
+    - All hash functions have this problem.
+    - This is often accommodated for by having the hash tables be very large.
 - Hashes are important for associative arrays and database indexing.
 
 ### <span style="color:red;"> Time Complexity
@@ -136,7 +136,7 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 ### <span style="color:red;"> Definition
 
 - Is a tree like data structure where every node has at most two children.
-    -   There is one left and right child node.
+    - There is one left and right child node.
 
 ### <span style="color:red;"> What you need to know
 
@@ -144,11 +144,11 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 - A **degenerate tree** is an unbalanced tree, which if entirely one-sided, is essentially a linked list.
 - They are comparably simple to implement than other data structures.
 - Used to make **binary search trees**.
-    -   A binary tree that uses comparable keys to assign which direction a child is.
-    -   Left child has a key smaller than its parent node.
-    -   Right child has a key greater than its parent node.
-    -   There can be no duplicate node.
-    -   Because of the above it is more likely to be used as a data structure than a binary tree.
+    - A binary tree that uses comparable keys to assign which direction a child is.
+    - Left child has a key smaller than its parent node.
+    - Right child has a key greater than its parent node.
+    - There can be no duplicate node.
+    - Because of the above it is more likely to be used as a data structure than a binary tree.
 
 ### <span style="color:red;"> Time Complexity
 
@@ -165,23 +165,23 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 ### <span style="color:red;"> Definition
 
 - An algorithm that calls itself in its definition.
-    -   **Recursive case** a conditional statement that is used to trigger the recursion.
-    -   **Base case** a conditional statement that is used to break the recursion.
+    - **Recursive case** a conditional statement that is used to trigger the recursion.
+    - **Base case** a conditional statement that is used to break the recursion.
 
 ### <span style="color:red;"> What you need to know
 
 - **Stack level too deep** and **stack overflow**.
-    -   If you've seen either of these from a recursive algorithm, you messed up.
-    -   It means that your base case was never triggered because it was faulty or the problem was so massive you ran out of alloted memory.
-    -   Knowing whether or not you will reach a base case is integral to correctly using recursion.
-    -   Often used in Depth First Search
+    - If you've seen either of these from a recursive algorithm, you messed up.
+    - It means that your base case was never triggered because it was faulty or the problem was so massive you ran out of alloted memory.
+    - Knowing whether or not you will reach a base case is integral to correctly using recursion.
+    - Often used in Depth First Search
 
 ### <span style="color:red;"> Iterative Algorithms
 
 ### <span style="color:red;"> Definition
 
 - An algorithm that is called repeatedly but for a finite number of times, each time being a single iteration.
-    -   Often used to move incrementally through a data set.
+    - Often used to move incrementally through a data set.
 
 ### <span style="color:red;"> What you need to know
 
@@ -192,8 +192,8 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 ### <span style="color:red;"> Recursion Vs. Iteration
 
 - The differences between recursion and iteration can be confusing to distinguish since both can be used to implement the other. But know that,
-    -   Recursion is, usually, more expressive and easier to implement.
-    -   Iteration uses less memory.
+    - Recursion is, usually, more expressive and easier to implement.
+    - Iteration uses less memory.
 - **Functional languages** tend to use recursion. (i.e. Haskell)
 - **Imperative languages** tend to use iteration. (i.e. Ruby)
 - Check out this [Stack Overflow post](http://stackoverflow.com/questions/19794739/what-is-the-difference-between-iteration-and-recursion) for more info.
@@ -217,11 +217,11 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 
 - An algorithm that, while executing, selects only the information that meets a certain criteria.
 - The general five components, taken from [Wikipedia](http://en.wikipedia.org/wiki/Greedy_algorithm#Specifics):
-    -   A candidate set, from which a solution is created.
-    -   A selection function, which chooses the best candidate to be added to the solution.
-    -   A feasibility function, that is used to determine if a candidate can be used to contribute to a solution.
-    -   An objective function, which assigns a value to a solution, or a partial solution.
-    -   A solution function, which will indicate when we have discovered a complete solution.
+    - A candidate set, from which a solution is created.
+    - A selection function, which chooses the best candidate to be added to the solution.
+    - A feasibility function, that is used to determine if a candidate can be used to contribute to a solution.
+    - An objective function, which assigns a value to a solution, or a partial solution.
+    - A solution function, which will indicate when we have discovered a complete solution.
 
 ### <span style="color:red;"> What you need to know
 
@@ -249,17 +249,17 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - An algorithm that searches a tree (or graph) by searching levels of the tree first, starting at the root.
-    -   It finds every node on the same level, most often moving left to right.
-    -   While doing this it tracks the children nodes of the nodes on the current level.
-    -   When finished examining a level it moves to the left most node on the next level.
-    -   The bottom-right most node is evaluated last (the node that is deepest and is farthest right of it's level).
+    - It finds every node on the same level, most often moving left to right.
+    - While doing this it tracks the children nodes of the nodes on the current level.
+    - When finished examining a level it moves to the left most node on the next level.
+    - The bottom-right most node is evaluated last (the node that is deepest and is farthest right of it's level).
 
 ### <span style="color:red;"> What you need to know
 
 - Optimal for searching a tree that is wider than it is deep.
 - Uses a queue to store information about the tree while it traverses a tree.
-    -   Because it uses a queue it is more memory intensive than **depth first search**.
-    -   The queue uses more memory because it needs to stores pointers
+    - Because it uses a queue it is more memory intensive than **depth first search**.
+    - The queue uses more memory because it needs to stores pointers
 
 ### <span style="color:red;"> Time Complexity
 
@@ -272,17 +272,17 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - An algorithm that searches a tree (or graph) by searching depth of the tree first, starting at the root.
-    -   It traverses left down a tree until it cannot go further.
-    -   Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.
-    -   When finished examining a branch it moves to the node right of the root then tries to go left on all it's children until it reaches the bottom.
-    -   The right most node is evaluated last (the node that is right of all it's ancestors).
+    - It traverses left down a tree until it cannot go further.
+    - Once it reaches the end of a branch it traverses back up trying the right child of nodes on that branch, and if possible left from the right children.
+    - When finished examining a branch it moves to the node right of the root then tries to go left on all it's children until it reaches the bottom.
+    - The right most node is evaluated last (the node that is right of all it's ancestors).
 
 ### <span style="color:red;"> What you need to know
 
 - Optimal for searching a tree that is deeper than it is wide.
 - Uses a stack to push nodes onto.
-    -   Because a stack is LIFO it does not need to keep track of the nodes pointers and is therefore less memory intensive than breadth first search.
-    -   Once it cannot go further left it begins evaluating the stack.
+    - Because a stack is LIFO it does not need to keep track of the nodes pointers and is therefore less memory intensive than breadth first search.
+    - Once it cannot go further left it begins evaluating the stack.
 
 ### <span style="color:red;"> Time Complexity
 
@@ -293,8 +293,8 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Breadth First Search Vs. Depth First Search
 
 - The simple answer to this question is that it depends on the size and shape of the tree.
-    -   For wide, shallow trees use Breadth First Search
-    -   For deep, narrow trees use Depth First Search
+    - For wide, shallow trees use Breadth First Search
+    - For deep, narrow trees use Depth First Search
 
 ### <span style="color:red;"> Nuances
 
@@ -310,12 +310,12 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - A comparison based sorting algorithm.
-    -   Starts with the cursor on the left, iterating left to right
-    -   Compares the left side to the right, looking for the smallest known item
-        -   If the left is smaller than the item to the right it continues iterating
-        -   If the left is bigger than the item to the right, the item on the right becomes the known smallest number
-        -   Once it has checked all items, it moves the known smallest to the cursor and advances the cursor to the right and starts over
-    -   As the algorithm processes the data set, it builds a fully sorted left side of the data until the entire data set is sorted
+    - Starts with the cursor on the left, iterating left to right
+    - Compares the left side to the right, looking for the smallest known item
+        - If the left is smaller than the item to the right it continues iterating
+        - If the left is bigger than the item to the right, the item on the right becomes the known smallest number
+        - Once it has checked all items, it moves the known smallest to the cursor and advances the cursor to the right and starts over
+    - As the algorithm processes the data set, it builds a fully sorted left side of the data until the entire data set is sorted
 - Changes the array in place.
 
 ### <span style="color:red;"> What you need to know
@@ -343,9 +343,9 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - A comparison based sorting algorithm.
-    -   Iterates left to right comparing the current cursor to the previous item.
-    -   If the cursor is smaller than the item on the left it swaps positions and the cursor compares itself again to the left hand side until it is put in its sorted position.
-    -   As the algorithm processes the data set, the left side becomes increasingly sorted until it is fully sorted.
+    - Iterates left to right comparing the current cursor to the previous item.
+    - If the cursor is smaller than the item on the left it swaps positions and the cursor compares itself again to the left hand side until it is put in its sorted position.
+    - As the algorithm processes the data set, the left side becomes increasingly sorted until it is fully sorted.
 - Changes the array in place.
 
 ### <span style="color:red;"> What you need to know
@@ -373,9 +373,9 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - A divide and conquer algorithm.
-    -   Recursively divides entire array by half into subsets until the subset is one, the base case.
-    -   Once the base case is reached results are returned and sorted ascending left to right.
-    -   Recursive calls are returned and the sorts double in size until the entire array is sorted.
+    - Recursively divides entire array by half into subsets until the subset is one, the base case.
+    - Once the base case is reached results are returned and sorted ascending left to right.
+    - Recursive calls are returned and the sorts double in size until the entire array is sorted.
 
 ### <span style="color:red;"> What you need to know
 
@@ -402,9 +402,9 @@ This algorithm never needed to compare all the differences to one another, savin
 ### <span style="color:red;"> Definition
 
 - A divide and conquer algorithm
-    -   Partitions entire data set in half by selecting a random pivot element and putting all smaller elements to the left of the element and larger ones to the right.
-    -   It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.
-    -   When the left side is finished sorting it performs the same operation on the right side.
+    - Partitions entire data set in half by selecting a random pivot element and putting all smaller elements to the left of the element and larger ones to the right.
+    - It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.
+    - When the left side is finished sorting it performs the same operation on the right side.
 - Computer architecture favors the quicksort process.
 - Changes the array in place.
 
@@ -1998,7 +1998,7 @@ With HTML5, web pages can store data locally within the user's browser. The data
 - `sessionStorage` has the same lifetime as the top-level window or browser tab in which the data got stored. When the tab is permanently closed, any data stored through `sessionStorage` is deleted.
 - **Differences between `localStorage` and `sessionStorage` regarding storage scope:** Both forms of storage are scoped to the document origin so 
 - `sessionStorage` is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate `sessionStorage` data.
--   Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
+- Unlike in `localStorage`, the same scripts from the same origin can't access each other's `sessionStorage` when opened in different tabs.
 
 ### <span style="color:red;"> Don't forget:
 
@@ -2945,7 +2945,7 @@ Generally, this concept is used in web applications to manage state. With most a
 - Reading: `/posts/` =\> GET
 - Creating: `/posts/new` =\> POS
 - Updating: `/posts/:id` =\> PUT
--   Destroying: `/posts/:id` =\> DELETE
+- Destroying: `/posts/:id` =\> DELETE
 
 ### <span style="color:red;"> Don't forget:
 

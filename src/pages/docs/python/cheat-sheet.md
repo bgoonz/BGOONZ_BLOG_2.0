@@ -35,7 +35,7 @@ From **Highest** to **Lowest** precedence:
 | //        | Integer division | `22 // 8 = 2`   |
 | /         | Division         | `22 / 8 = 2.75` |
 | \*        | Multiplication   | `3 * 3 = 9`     |
-| -         | Subtraction      | `5 - 2 = 3`     |
+| -       | Subtraction      | `5 - 2 = 3`     |
 | +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
@@ -510,7 +510,7 @@ When creating a function using the def statement, you can specify what the retur
 
 - The return keyword.
 - 
--   The value or expression that the function should return.
+- The value or expression that the function should return.
 
 ```python
 import random
@@ -569,9 +569,9 @@ print('cats', 'dogs', 'mice', sep=',')
 - 
 - However, a local scope can access global variables.
 - 
--   Code in a function's local scope cannot use variables in any other local scope.
+- Code in a function's local scope cannot use variables in any other local scope.
 
--   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
 
@@ -2227,7 +2227,7 @@ To summarize what the findall() method returns, remember the following:
 
 - When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
 - 
--   When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
+- When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
 
@@ -2253,7 +2253,7 @@ consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 - 
 - Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
 
--   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
+- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -2846,7 +2846,7 @@ shutil.move('C:\\bacon.txt', 'C:\\eggs')
 - 
 - Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
 
--   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ### Safe Deletes with the send2trash Module
 

@@ -12,8 +12,6 @@ template: docs
 # Async functions:
 ## Asynchronous JavaScript
 
-
-
 Let's start with the `async` keyword. It can be placed before a function, like this:
 
 ```js
@@ -131,7 +129,6 @@ await` won't work in the top-level code
 
 People who are just starting to use `await` tend to forget the fact that we can't use `await` in top-level code. For example, this will not work:
 
-
 ```js
 // syntax error in top-level code
 let response = await fetch('/article/promise-chaining/user.json');
@@ -156,7 +153,6 @@ await` accepts "thenables"
 Like `promise.then`, `await` allows us to use thenable objects (those with a callable `then` method). The idea is that a third-party object may not be a promise, but promise-compatible: if it supports `.then`, that's enough to use it with `await`.
 
 Here's a demo `Thenable` class; the `await` below accepts its instances:
-
 
 ```js
 class Thenable {

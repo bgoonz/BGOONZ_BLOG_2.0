@@ -2,7 +2,6 @@
 title: Rollup.js
 category: JavaScript libraries
 
-updated: 2020-01-29
 authors:
     - github: ryanSN
 keywords:

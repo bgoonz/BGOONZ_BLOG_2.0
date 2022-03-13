@@ -18,7 +18,6 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: GraphQL
 
-updated: 2019-07-07
 category: API
 
 ---
@@ -26,8 +25,6 @@ category: API
 ## Intro
 
 ## Queries
-
-
 
 ### Basic query
 
@@ -204,8 +201,6 @@ fetch('http://myapi/graphql', {
 ```
 
 ## Schema
-
-
 
 ### Basic schemas
 

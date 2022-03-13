@@ -209,7 +209,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 - <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>-   <span id="e95e">There are also many handy testing methods.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>- <span id="e95e">There are also many handy testing methods.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
 
@@ -247,7 +247,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:
 - _`print(float("nan"))`</span>
 - <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
--   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
+- <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 

@@ -30,9 +30,9 @@ For a more complete guide… checkout :
 - 
 - interested in order of magnitude of number of the exact figure
 
--   O absorbs all fluff and n = biggest term
+- O absorbs all fluff and n = biggest term
 
--   Big O of 3x^2 +x + 1 = O(n^2)
+- Big O of 3x^2 +x + 1 = O(n^2)
 
 # Time Complexity
 
@@ -50,7 +50,7 @@ no loops or exit & return = O(1)
 - 
 - inherently carries large footprint
 
--   every time function called, you add call to stack
+- every time function called, you add call to stack
 
 **iterative**: use loops instead of recursion (preferred)
 \- favor readability over performance
@@ -59,7 +59,7 @@ O(n log(n)) & O(log(n)): dividing/halving
 
 - if code employs recursion/divide-and-conquer strategy
 - 
--   what power do i need to power my base to get n
+- what power do i need to power my base to get n
 
 # Time Definitions
 
@@ -79,19 +79,19 @@ O(n log(n)) & O(log(n)): dividing/halving
 - 
 - **log-linear**: increases number of operations it performs as log-linear function of input size n
 
--   looking over every element and doing work on each one
+- looking over every element and doing work on each one
 
--   **quadratic**: increases number of operations it performs as quadratic function of input size n
+- **quadratic**: increases number of operations it performs as quadratic function of input size n
 
--   **exponential**: increases number of operations it performs as exponential function of input size n
+- **exponential**: increases number of operations it performs as exponential function of input size n
 
--   number of nested loops increases as function of n
+- number of nested loops increases as function of n
 
--   **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
+- **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
 
--   **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
+- **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
 
--   **rate of growth**: how fast a function grows with input size
+- **rate of growth**: how fast a function grows with input size
 
 # Space Complexity
 
@@ -99,7 +99,7 @@ O(n log(n)) & O(log(n)): dividing/halving
 - 
 - What auxiliary space does your algorithm use or is it in place (constant)?
 
--   Runtime stack space counts as part of space complexity unless told otherwise.
+- Runtime stack space counts as part of space complexity unless told otherwise.
 
 # Data Structures & Algos In JS
 

@@ -20,7 +20,6 @@ title: Fish shell
 category: CLI
 
 prism_languages: [fish]
-updated: 2018-01-31
 weight: -1
 
 ---

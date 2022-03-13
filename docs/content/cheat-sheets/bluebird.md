@@ -20,7 +20,6 @@ title: bluebird.js
 category: JavaScript libraries
 
 weight: -1
-updated: 2017-09-08
 
 ---
 

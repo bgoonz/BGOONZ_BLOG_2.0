@@ -2,7 +2,6 @@
 title: Tig
 category: Git
 
-updated: 2018-11-16
 weight: -3
 ---
 
@@ -36,8 +35,6 @@ $ sudo apt install tig
 You can substitute `git log` → `tig`.
 
 ## Shortcut keys
-
-
 
 ### Switching views
 

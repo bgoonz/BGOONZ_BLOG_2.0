@@ -2,7 +2,6 @@
 title: Screen
 category: CLI
 
-updated: 2020-12-05
 keywords:
     - Screen
     - Linux
@@ -16,8 +15,6 @@ intro: |
 ---
 
 ## Basics
-
-
 
 ### CLI Options
 

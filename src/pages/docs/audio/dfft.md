@@ -378,7 +378,7 @@ following DFT-related functionality:
 - `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
 - `fftshift`, `ifftshift`: Shift the zero-frequency component to the c
 - `fftfreq`: Return the discrete Fourier transform sample frequencies.
--   `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
+- `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
 
 This is complemented by the following functions in NumPy:
 
@@ -441,7 +441,6 @@ lengths = range(250, 260)
 # Calculate the smoothness for all input lengths
 smoothness = [max(factorint(i).keys()) for i in lengths]
 
-
 exec_times = []
 for i in lengths:
     z = np.random.random(i)
@@ -458,7 +457,6 @@ for i in lengths:
 
     # For each input length, remember the *minimum* execution time
     exec_times.append(min(times))
-
 
 f, (ax0, ax1) = plt.subplots(2, 1, sharex=True)
 ax0.stem(lengths, np.array(exec_times) * 10**6)
@@ -1001,7 +999,6 @@ $$B_{eff}=f_{max}-f_{1}=ST_{eff}.$$
 We will see that the range resolution of the radar is determined by
 the effective bandwidth.
 
-
 Returning to Fig. [fig: block-diagram], the signal produced by the
 receiver at the input to the Analog to Digital Converter (ADC) when
 there is a single target is a sinusoid with constant amplitude,
@@ -1156,12 +1153,12 @@ _structured NumPy array_ with the following fields:
 - **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
 - **position**
 
-    -   **az** : 32-bit float (`np.float32`)
-    -   **el** : 32-bit float (`np.float32`)
-    -   **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
-    -   **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
-    -   **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
-    -   **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
+    - **az** : 32-bit float (`np.float32`)
+    - **el** : 32-bit float (`np.float32`)
+    - **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
+    - **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
+    - **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
+    - **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
 
 While it is true that NumPy arrays are _homogeneous_ (i.e., all the
 elements inside are the same), it does not mean that those elements
@@ -1280,7 +1277,6 @@ c = 3e8  # Approximately the speed of light and of
 
 fig, (ax0, ax1, ax2) = plt.subplots(3, 1)
 
-
 def dB(y):
     "Calculate the log ratio of y / max(y) in decibel."
 
@@ -1289,12 +1285,10 @@ def dB(y):
 
     return 20 * np.log10(y)
 
-
 def log_plot_normalized(x, y, ylabel, ax):
     ax.plot(x, dB(y))
     ax.set_ylabel(ylabel)
     ax.grid()
-
 
 rng = np.arange(N // 2) * c / 2 / Beff
 
@@ -1573,14 +1567,14 @@ On the Fourier transform:
 
 - A. Papoulis, _The Fourier Integral and Its Applications_,
 - McGraw-Hill, 1960.
--   Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
+- Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
     McGraw-Hill, 1986.
 
 On radar signal processing:
 
 - Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
 - SciTech, 2010
--   Mark A. Richards, _Fundamentals of Radar Signal Processing_,
+- Mark A. Richards, _Fundamentals of Radar Signal Processing_,
     McGraw-Hill, 2014.
 
 <!-- exercise begin -->
@@ -1594,7 +1588,7 @@ Hints:
 
 - The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
 - `X` and `Y` are the FFTs of x and y respectively.
--   In order to multiply `X` and `Y`, they have to be the same size.
+- In order to multiply `X` and `Y`, they have to be the same size.
     Use `np.pad` to extend `x` and `y` with zeros (toward the right and
     bottom) _before_ taking their FFT.
 - You may see some edge effects. These can be removed by increasing

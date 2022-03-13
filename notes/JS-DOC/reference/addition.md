@@ -65,15 +65,15 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 
 ## See also
 
--   [Subtraction operator](subtraction)
--   [Division operator](division)
--   [Multiplication operator](multiplication)
--   [Remainder operator](remainder)
--   [Exponentiation operator](exponentiation)
--   [Increment operator](increment)
--   [Decrement operator](decrement)
--   [Unary negation operator](unary_negation)
--   [Unary plus operator](unary_plus)
+- [Subtraction operator](subtraction)
+- [Division operator](division)
+- [Multiplication operator](multiplication)
+- [Remainder operator](remainder)
+- [Exponentiation operator](exponentiation)
+- [Increment operator](increment)
+- [Decrement operator](decrement)
+- [Unary negation operator](unary_negation)
+- [Unary plus operator](unary_plus)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

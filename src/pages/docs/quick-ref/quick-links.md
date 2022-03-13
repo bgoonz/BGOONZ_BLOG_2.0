@@ -16,9 +16,9 @@ template: docs
 - 
 - [General](https://bryan-guner.gitbook.io/web-dev-hub-docs/)
 - 
--   [Blockchain & NFTs](https://bryan-guner.gitbook.io/solidarity-blockchain-nfts/)
+- [Blockchain & NFTs](https://bryan-guner.gitbook.io/solidarity-blockchain-nfts/)
 
--   [React](https://bryan-guner.gitbook.io/mynotes/)
+- [React](https://bryan-guner.gitbook.io/mynotes/)
 
 # Sites I Wish To Revisit:
 

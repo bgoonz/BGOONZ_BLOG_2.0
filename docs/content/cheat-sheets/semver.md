@@ -1,7 +1,6 @@
 ---
 title: Semver
 
-updated: 2019-12-31
 weight: -3
 ---
 

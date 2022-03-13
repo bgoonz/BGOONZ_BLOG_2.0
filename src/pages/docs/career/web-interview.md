@@ -62,8 +62,6 @@ Both first methods modify the original array. Don't believe me? Check the [jsper
 
 Final victor
 
-
-
 1. arr[arr.length] = 6; // with an average of 5 632 856 ops/sec
 
 2. arr.push(6); // 35.64 % slower
@@ -118,8 +116,6 @@ Final victor
 
 Final victor
 
-
-
 1. arr[arr.length] = 6; // with an average of 42 345 449 ops/sec
 
 2. arr.push(6); // 34.66 % slower
@@ -166,8 +162,6 @@ Here is a little more detail: unshift edits the original array; concat returns a
 
 Final victor
 
-
-
 1. [0].concat(arr); // with an average of 4 972 622 ops/sec
 
 2. arr.unshift(0); // 64.70 % slower
@@ -209,8 +203,6 @@ Final victor
 ```javascript
 
 Final victor
-
-
 
 1. [0].concat(arr); // with an average of 6 032 573 ops/sec
 
@@ -416,7 +408,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 - For each method you can customize the location.
 - 
--   According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
+- According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 ### So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting
 
@@ -436,15 +428,15 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 - 
 - `undefined` is not valid in JSON while `null` is
 - 
--   `undefined` typeof is `undefined`
+- `undefined` typeof is `undefined`
 
--   `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
+- `null` typeof is an `object`. [Why?](http://www.2ality.com/2013/10/typeof-null.html)
 
--   Both are primitives
+- Both are primitives
 
--   Both are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) (`Boolean(undefined) // false`, `Boolean(null) // false`)
+- Both are [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) (`Boolean(undefined) // false`, `Boolean(null) // false`)
 
--   You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+- You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
     ```javascript
     typeof variable === 'undefined';
@@ -453,8 +445,6 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 ```
 
 - You can check if a variable is [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
-
-
 
   ```javascript
 
@@ -474,19 +464,7 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 ---
 
-
-
-
-
-
-
-
-
 # writing-a-single-method-for-arrays-and-a-single-element/
-
-
-
-
 
     - en
 
@@ -494,15 +472,9 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 
 ---
 
-
-
 Rather than writing separate methods to handle an array and a single element parameter, write your functions so they can handle both. This is similar to how some of jQuery's functions work (`css` will modify everything matched by the selector).
 
-
-
 You just have to concat everything into an array first. `Array.concat` will accept an array or a single element.
-
-
 
 ```javascript
 
@@ -588,11 +560,11 @@ By including this directive in a JavaScript file or function, we will direct the
 - 
 - You have to call constructors with 
 - 
--   "this" is not implicitly bound to the global object
+- "this" is not implicitly bound to the global object
 
--   Very limited use of eval() allowed
+- Very limited use of eval() allowed
 
--   Protects you from using reserved words or future reserved words as variable names
+- Protects you from using reserved words or future reserved words as variable names
 
 Strict mode is great for new projects, but can be challenging to introduce into older projects that don't already use it in most places. It also can be problematic if your build chain concatenates all your js files into one big file, as this may cause all files to execute in strict mode.
 
@@ -604,9 +576,9 @@ It is not a statement, but a literal expression, ignored by earlier versions of 
 - 
 - Chrome from version 13.
 
--   Safari from version 5.1.
+- Safari from version 5.1.
 
--   Opera from version 12.
+- Opera from version 12.
 
 ### [See MDN for a fuller description of strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
@@ -624,19 +596,13 @@ const nodelist = document.querySelectorAll('div');
 
 const nodelistToArray = Array.apply(null, nodelist);
 
-
-
 //later on ..
-
-
 
 nodelistToArray.forEach(...);
 
 nodelistToArray.map(...);
 
 nodelistToArray.slice(...);
-
-
 
 //etc...
 
@@ -652,19 +618,13 @@ const nodelist = document.querySelectorAll('div');
 
 const nodelistToArray = Array.prototype.slice.call(nodelist); // or equivalently Array.prototype.slice.apply(nodelist);
 
-
-
 //later on ..
-
-
 
 nodelistToArray.forEach(...);
 
 nodelistToArray.map(...);
 
 nodelistToArray.slice(...);
-
-
 
 //etc...
 
@@ -676,19 +636,13 @@ Or if you are using ES2015 you can use the [spread operator `...`](https://devel
 
 const nodelist = [...document.querySelectorAll('div')]; // returns a real array
 
-
-
 //later on ..
-
-
 
 nodelist.forEach(...);
 
 nodelist.map(...);
 
 nodelist.slice(...);
-
-
 
 //etc...
 
@@ -760,8 +714,6 @@ var myObject = {
   name: '@tips_js'
 
 };
-
-
 
 if (myObject.name) { ... }
 
@@ -929,7 +881,7 @@ Introduced as a new feature in ES6, fat arrow functions may come as a handy tool
 
 - Syntax: fewer LOC; no more typing `function` keyword over and over again
 - 
--   Semantics: capturing the keyword `this` from the surrounding context
+- Semantics: capturing the keyword `this` from the surrounding context
 
 #### Simple syntax example
 
@@ -941,17 +893,11 @@ Have a look at these two code snippets, which do the exact same job, and you wil
 
 param => expression
 
-
-
 // may also be written with parentheses
 
 // parentheses are required on multiple params
 
 (param1 [, param2]) => expression
-
-
-
-
 
 // using functions
 
@@ -964,8 +910,6 @@ var arrFunc = arr.map(function(x) {
 });
 
 console.log(arr)
-
-
 
 // using fat arrow
 
@@ -1501,7 +1445,7 @@ empty();
 
 - `list = []` assigns a reference to a new array to a variable, while any other references are unaffected. which means that references to the contents of the previous array are still kept in memory, leading to memory leaks.
 - 
--   `list.length = 0` deletes everything in the array, which does hit other references.
+- `list.length = 0` deletes everything in the array, which does hit other references.
 
 In other words, if you have two references to the same array (`a = [1,2,3]; a2 = a;`), and you delete the array's contents using `list.length = 0`, both references (a and a2) will now point to the same empty array. (So don't use this technique if you don't want a2 to hold an empty array!)
 

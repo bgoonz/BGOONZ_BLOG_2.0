@@ -74,9 +74,9 @@ template: docs
 - 
 - **Administer prize draws and competitions.** We may use your information to administer prize draws and competitions when you elect to participate in our competitions.
 
--   **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
+- **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
 
--   **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
+- **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
 
 <!---->
 

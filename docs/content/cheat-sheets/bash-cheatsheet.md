@@ -97,7 +97,6 @@ history   # shows command line history
 
 exit      # logs out of current session
 
-
 ##############################################################################
 # BASH BASICS
 ##############################################################################
@@ -113,11 +112,9 @@ which bash          # finds out which program is executed as 'bash' (default: /b
 
 clear               # clears content on window (hide displayed lines)
 
-
 ##############################################################################
 # FILE COMMANDS
 ##############################################################################
-
 
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
 ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
@@ -152,11 +149,9 @@ grep -r <pattern> <dir>       # search recursively for pattern in directory
 head -n file_name | tail +n   # Print nth line from file.
 head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
 
-
 ##############################################################################
 # DIRECTORY COMMANDS
 ##############################################################################
-
 
 mkdir <dirname>               # makes a new directory
 rmdir <dirname>               # remove an empty directory
@@ -172,7 +167,6 @@ cd ~                          # changes to home.
 ##############################################################################
 # SSH, SYSTEM INFO & NETWORK COMMANDS
 ##############################################################################
-
 
 ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
@@ -206,11 +200,9 @@ dig <domain>             # gets DNS information for domain
 dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
 
-
 ##############################################################################
 # VARIABLES
 ##############################################################################
-
 
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
@@ -262,15 +254,12 @@ ${#varname}                  # returns the length of the value of the variable a
 
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
-
 ##############################################################################
 # FUNCTIONS
 ##############################################################################
 
-
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 # $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
-
 
 function functname() {
   shell commands
@@ -279,11 +268,9 @@ function functname() {
 unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
-
 ##############################################################################
 # FLOW CONTROLS
 ##############################################################################
-
 
 statement1 && statement2  # and operator
 statement1 || statement2  # or operator
@@ -375,7 +362,6 @@ done
 # COMMAND-LINE PROCESSING CYCLE
 ##############################################################################
 
-
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
 # There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
@@ -385,11 +371,9 @@ enable   # enables and disables shell built-ins
 
 eval     # takes arguments and run them through the command-line processing steps all over again
 
-
 ##############################################################################
 # INPUT/OUTPUT REDIRECTORS
 ##############################################################################
-
 
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
 < file     # takes standard input from file
@@ -412,11 +396,9 @@ n<&m       # file descriptor n is made to be a copy of the input file descriptor
 n>&-       # closes the ouput from file descriptor n
 n<&-       # closes the input from file descripor n
 
-
 ##############################################################################
 # PROCESS HANDLING
 ##############################################################################
-
 
 # To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
 # This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
@@ -450,11 +432,9 @@ disown <PID|JID>    # removes the process from the list of jobs
 
 wait                # waits until all background jobs have finished
 
-
 ##############################################################################
 # TIPS & TRICKS
 ##############################################################################
-
 
 # set an alias
 cd; nano .bash_profile
@@ -468,11 +448,9 @@ cd; nano .bashrc
 source .bashrc
 cd $websites
 
-
 ##############################################################################
 # DEBUGGING SHELL PROGRAMS
 ##############################################################################
-
 
 bash -n scriptname  # don't run commands; check for syntax errors only
 set -o noexec       # alternative (set option in script)
@@ -533,7 +511,6 @@ LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
 
-
 # Bold
 BBlack='\033[1;30m' # Black
 BRed='\033[1;31m'   # Red
@@ -568,6 +545,5 @@ On_White='\033[47m' # White
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
-
 
 ```

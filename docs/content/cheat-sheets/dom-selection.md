@@ -26,8 +26,6 @@ Quick introduction to the HTML [DOM selection API](https://devdocs.io/dom/select
 
 ## Reference
 
-
-
 ### Selection
 
 ```js

@@ -2,7 +2,6 @@
 title: Licenses
 section: Development
 
-updated: 2017-08-30
 ---
 
 ## Licenses

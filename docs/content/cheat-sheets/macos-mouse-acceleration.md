@@ -2,7 +2,6 @@
 title: Mouse Acceleration
 
 category: macOS
-updated: 2018-03-20
 weight: -1
 keywords:
     - 'defaults write .GlobalPreferences com.apple.mouse.scaling -1'

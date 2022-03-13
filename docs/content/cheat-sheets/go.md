@@ -22,13 +22,10 @@ prism_languages: [go, bash]
 weight: -3
 tags: [Featured]
 category: C-like
-updated: 2020-06-21
 
 ---
 
 ## Getting started
-
-
 
 ### Introduction
 
@@ -39,8 +36,6 @@ updated: 2020-06-21
 -   [Golang wiki](https://github.com/golang/go/wiki/) _(github.com)_
 
 ### Hello world
-
-
 
 #### hello.go
 
@@ -93,8 +88,6 @@ Constants can be character, string, boolean, or numeric values.
 See: [Constants](https://tour.golang.org/basics/15)
 
 ## Basic types
-
-
 
 ### Strings
 
@@ -166,8 +159,6 @@ func getPointer () (myPointer *int) {
 }
 ```
 
-
-
 ```go
 a := new(int)
 *a = 234
@@ -190,8 +181,6 @@ u := uint(i)
 See: [Type conversions](https://tour.golang.org/basics/13)
 
 ## Flow control
-
-
 
 ### Conditional
 
@@ -276,8 +265,6 @@ See: [Go's "while"](https://tour.golang.org/flowcontrol/3)
 
 ## Functions
 
-
-
 ### Lambdas
 
 ```go
@@ -321,8 +308,6 @@ By defining the return value names in the signature, a `return` (no args) will r
 See: [Named return values](https://tour.golang.org/basics/7)
 
 ## Packages
-
-
 
 ### Importing
 
@@ -376,8 +361,6 @@ Every package file has to start with `package`.
 
 ## Concurrency
 
-
-
 ### Goroutines
 
 ```go
@@ -405,8 +388,6 @@ func push(name string, ch chan string) {
   ch <- msg
 }
 ```
-
-
 
 Channels are concurrency-safe communication objects, used in goroutines.
 
@@ -542,8 +523,6 @@ func main() {
 The defer func uses current value of d, unless we use a pointer to get final value at end of main.
 
 ## Structs
-
-
 
 ### Defining
 
@@ -688,8 +667,6 @@ func main() {
 ## References
 
 ### Official resources
-
-
 
 -   [A tour of Go](https://tour.golang.org/welcome/1) _(tour.golang.org)_
 -   [Golang wiki](https://github.com/golang/go/wiki/) _(github.com)_

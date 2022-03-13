@@ -71,12 +71,12 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 
 ## See also
 
--   [`Math.asin()`](asin)
--   [`Math.atan()`](atan)
--   [`Math.atan2()`](atan2)
--   [`Math.cos()`](cos)
--   [`Math.sin()`](sin)
--   [`Math.tan()`](tan)
+- [`Math.asin()`](asin)
+- [`Math.atan()`](atan)
+- [`Math.atan2()`](atan2)
+- [`Math.cos()`](cos)
+- [`Math.sin()`](sin)
+- [`Math.tan()`](tan)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

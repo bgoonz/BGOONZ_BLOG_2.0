@@ -1,7 +1,6 @@
 ---
 title: Knex
 
-updated: 2020-06-03
 category: Databases
 intro: |
     [Knex](http://knexjs.org/) is an SQL query builder for Node.js.
@@ -9,8 +8,6 @@ intro: |
 ---
 
 ## Getting started
-
-
 
 ### Connect
 
@@ -92,8 +89,6 @@ knex seed:run --specific=seed-filename.js # Runs a specific seed file
 See: [Seeds](http://knexjs.org/#Seeds)
 
 ## Connect
-
-
 
 ### Libraries
 
@@ -442,8 +437,6 @@ knex.schema.renameTable('persons', 'people').dropTable('persons');
 See: [Schema builder](http://knexjs.org/#Schema)
 
 ## Modifying
-
-
 
 ### Insert
 

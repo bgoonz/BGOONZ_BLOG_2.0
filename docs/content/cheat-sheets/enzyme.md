@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Enzyme
 category: React
 
-updated: 2020-02-12
 tags: [Featured]
 weight: -1
 keywords:
@@ -43,8 +42,6 @@ keywords:
 -   [Enzyme website](https://enzymejs.github.io/enzyme/) _(enzymejs.github.io)_
 
 ### Mounting
-
-
 
 ```js
 import { shallow, mount } from 'enzyme';
@@ -78,11 +75,7 @@ See: [debug()](http://airbnb.io/enzyme/docs/api/ReactWrapper/debug.html)
 
 ## Examples
 
-
-
 ### Basic example
-
-
 
 ```js
 import { shallow } from 'enzyme';

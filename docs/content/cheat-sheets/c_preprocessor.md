@@ -26,8 +26,6 @@ Quick reference for the [C macro preprocessor](https://en.m.wikipedia.org/wiki/C
 
 ## Reference
 
-
-
 ### Compiling
 
 ```

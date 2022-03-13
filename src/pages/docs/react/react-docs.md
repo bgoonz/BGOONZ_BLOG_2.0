@@ -2311,10 +2311,10 @@ If you look at `ProductTable`, you'll see that the table header (containing the 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
 - `FilterableProductTable`
-    -   `SearchBar`
-    -   `ProductTable`
-        -   `ProductCategoryRow`
-        -   `ProductRow`
+    - `SearchBar`
+    - `ProductTable`
+        - `ProductCategoryRow`
+        - `ProductRow`
 
 # Step 2: Build A Static Version in React
 

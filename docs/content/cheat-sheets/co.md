@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: co
 category: JavaScript libraries
 
-updated: 2017-10-27
 weight: -1
 intro: |
 [co](https://github.com/tj/co) allows you to use generators to manage async flow.

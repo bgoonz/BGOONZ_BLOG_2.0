@@ -3,7 +3,6 @@ title: Jekyll for GitHub pages
 
 category: Jekyll
 tags: [WIP]
-updated: 2017-11-17
 ---
 
 {% raw %}
@@ -98,8 +97,6 @@ Hey @rstacruz, what do you think of this?
 Just mention anyone in any page. Their names will be turned into links.
 
 ## Redirects
-
-
 
 ### Configuration
 

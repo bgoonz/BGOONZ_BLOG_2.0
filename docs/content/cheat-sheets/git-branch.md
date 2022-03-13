@@ -19,13 +19,9 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Git branches
 category: Git
 
-updated: 2020-02-13
-
 ---
 
 ## Working with branches
-
-
 
 ### Creating
 

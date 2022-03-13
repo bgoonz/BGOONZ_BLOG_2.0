@@ -1,7 +1,6 @@
 ---
 title: Watchman
 
-updated: 2017-10-18
 weight: -1
 keywords:
     - 'watchman watch ~/src'

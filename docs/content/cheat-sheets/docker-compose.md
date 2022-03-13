@@ -21,7 +21,6 @@ category: Devops
 
 prism_languages: [yaml]
 weight: -1
-updated: 2020-01-01
 
 ---
 
@@ -64,8 +63,6 @@ docker-compose down
 ```
 
 ## Reference
-
-
 
 ### Building
 
@@ -168,8 +165,6 @@ volumes:
 ```
 
 ## Advanced features
-
-
 
 ### Labels
 

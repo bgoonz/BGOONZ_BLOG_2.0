@@ -16,9 +16,9 @@ template: docs
 ## TABLE OF CONTENTS
 
 - [How to use StaticQuery in components](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-to-use-staticquery-in-components)
-    -   [Basic example](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)
-    -   [useStaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#usestaticquery)
-    -   [Typechecking](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#typechecking)
+    - [Basic example](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#basic-example)
+    - [useStaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#usestaticquery)
+    - [Typechecking](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#typechecking)
 - [How StaticQuery differs from page query](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/#how-staticquery-differs-from-page-query)
 
 Gatsby v2 introduces `StaticQuery`, a new API that allows components to retrieve data via a GraphQL query.

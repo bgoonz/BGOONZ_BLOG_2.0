@@ -2,7 +2,6 @@
 title: Jsdoc
 category: JavaScript
 
-updated: 2020-06-23
 weight: -1
 ---
 

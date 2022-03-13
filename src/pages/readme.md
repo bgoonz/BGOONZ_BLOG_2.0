@@ -425,13 +425,7 @@ This page contains links that give the impression that some of the site contents
 
     └── ./tools/plug-ins.md
 
-
-
 7 directories, 29 files
-
-
-
-
 
 ```
 
@@ -1045,8 +1039,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ```
 
-
-
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
 .
@@ -1331,17 +1323,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
     └── ./utils/withPrefix.js
 
-
-
 21 directories, 119 files
 
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
-
-
-
-
-
-
 
 ```
 
@@ -1365,13 +1349,9 @@ import React from 'react';
 
 import _ from 'lodash';
 
-
-
 import { Link, withPrefix, classNames } from '../utils';
 
 import Icon from './Icon';
-
-
 
 export default class ActionLink extends React.Component {
 
@@ -1380,8 +1360,6 @@ render() {
 let action = \_.get(this.props, 'action', null);
 
 return (
-
-
 
 <Link
 
@@ -1432,8 +1410,6 @@ button: *.get(action, 'style', null) !== 'link',
 }
 
 }
-
-
 
 ```
 
@@ -6434,11 +6410,7 @@ Prism.languages.markup.tag.addAttribute(
 
 ```
 
-
-
 # main.js
-
-
 
 ```js
 
@@ -6456,8 +6428,6 @@ window.onGatsbyInitialClientRender = function () {
 
     reframe(videoEmbeds.join(','));
 
-
-
     // Handle main navigation menu toggling on small screens
 
     function menuToggleHandler(e) {
@@ -6467,8 +6437,6 @@ window.onGatsbyInitialClientRender = function () {
         document.body.classList.toggle('menu--opened');
 
     }
-
-
 
     // Handle docs navigation menu toggling on small screens
 
@@ -6480,8 +6448,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     // Handle submenu toggling
 
     function submenuToggleHandler(e) {
@@ -6491,8 +6457,6 @@ window.onGatsbyInitialClientRender = function () {
         this.parentNode.classList.toggle('active');
 
     }
-
-
 
     window.addMainNavigationHandlers = function () {
 
@@ -6508,8 +6472,6 @@ window.onGatsbyInitialClientRender = function () {
 
         }
 
-
-
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
         if (submenuToggle) {
@@ -6524,15 +6486,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removeMainNavigationHandlers = function () {
 
         // Remove nav related classes on page load
 
         document.body.classList.remove('menu--opened');
-
-
 
         const menuToggle = document.querySelectorAll('.menu-toggle');
 
@@ -6545,8 +6503,6 @@ window.onGatsbyInitialClientRender = function () {
             }
 
         }
-
-
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
@@ -6562,8 +6518,6 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.addDocsNavigationHandlers = function () {
 
         const docsNavToggle = document.getElementById('docs-nav-toggle');
@@ -6573,8 +6527,6 @@ window.onGatsbyInitialClientRender = function () {
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
 
         }
-
-
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
@@ -6590,15 +6542,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removeDocsNavigationHandlers = function () {
 
         // Remove docs nav related classes on page load
 
         document.body.classList.remove('docs-menu--opened');
-
-
 
         const docsNavToggle = document.getElementById('docs-nav-toggle');
 
@@ -6607,8 +6555,6 @@ window.onGatsbyInitialClientRender = function () {
             docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
 
         }
-
-
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
@@ -6624,21 +6570,15 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.addPageNavLinks = function () {
 
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
-
-
         if (pageToc && pageTocContainer) {
 
             const pageContent = document.querySelector('.type-docs .post-content');
-
-
 
             // Create in-page navigation
 
@@ -6655,8 +6595,6 @@ window.onGatsbyInitialClientRender = function () {
                 renderHeaderLinks(pageTocContainer, headerLinks);
 
             }
-
-
 
             // Scroll to anchors
 
@@ -6680,8 +6618,6 @@ window.onGatsbyInitialClientRender = function () {
 
             }
 
-
-
             // Highlight current anchor
 
             let pageTocLinks = pageTocContainer.getElementsByTagName('a');
@@ -6697,8 +6633,6 @@ window.onGatsbyInitialClientRender = function () {
                 });
 
             }
-
-
 
             // Add link to page content headings
 
@@ -6716,8 +6650,6 @@ window.onGatsbyInitialClientRender = function () {
 
             }
 
-
-
             // Copy link url
 
             let clipboard = new ClipboardJS('.hash-link', {
@@ -6734,15 +6666,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removePageNavLinks = function () {
 
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
-
-
 
         if (pageToc && pageTocContainer) {
 
@@ -6757,8 +6685,6 @@ window.onGatsbyInitialClientRender = function () {
         }
 
     };
-
-
 
     function getElementsByTagNames(root, tagNames) {
 
@@ -6783,8 +6709,6 @@ window.onGatsbyInitialClientRender = function () {
         return elements;
 
     }
-
-
 
     function createLinksForHeaderElements(elements) {
 
@@ -6894,8 +6818,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     function getHeaderLinks(options = {}) {
 
         let tagNames = options.tagNames || ['h2', 'h3'];
@@ -6907,8 +6829,6 @@ window.onGatsbyInitialClientRender = function () {
         return createLinksForHeaderElements(headerElements);
 
     }
-
-
 
     function renderHeaderLinks(element, links) {
 
@@ -6940,8 +6860,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     function anchorForId(id) {
 
         let anchor = document.createElement('a');
@@ -6958,15 +6876,11 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     // Syntax Highlighter
 
     // Prism.highlightAll();
 
 };
-
-
 
 //-----------------------------------------------------------------------
 
@@ -8312,8 +8226,6 @@ Element.prototype.closest ||
 # Prism.js
 
 ```js
-
-
 
 var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
 
@@ -10595,13 +10507,9 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
-
-
 ```
 
 ```
-
-
 
 <details>
 
@@ -11103,131 +11011,67 @@ An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `cre
 
 Copygatsby-node.js: copy code to clipboard`
 
-
-
 const path =  require(`path`)
-
-
 
 // Log out information after a build is done
 
-
-
 exports.onPostBuild  =  ({ reporter })  =>  {
-
-
 
  reporter.info(`Your Gatsby site has been built!`)
 
-
-
 }
-
-
 
 // Create blog pages dynamically
 
-
-
 exports.createPages  =  async  ({ graphql, actions })  =>  {
-
-
 
   const  { createPage }  = actions
 
-
-
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-
-
 
   const result =  await  graphql(`
 
-
-
  query {
-
-
 
  allSamplePages {
 
-
-
  edges {
-
-
 
  node {
 
-
-
  slug
-
-
 
  title
 
-
+ }
 
  }
 
-
-
  }
 
-
-
  }
-
-
-
- }
-
-
 
   `)
 
-
-
  result.data.allSamplePages.edges.forEach(edge  =>  {
-
-
 
   createPage({
 
-
-
  path:  `${edge.node.slug}`,
-
-
 
  component: blogPostTemplate,
 
-
-
  context:  {
-
-
 
  title: edge.node.title,
 
-
-
   },
 
-
-
   })
 
-
-
   })
-
-
 
 }
-
-
 
 ```
 
@@ -12258,15 +12102,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
 const React = require("react")
 
-
-
 const HtmlAttributes = {
 
   lang: "en"
 
 }
-
-
 
 const HeadComponents = [
 
@@ -12274,15 +12114,11 @@ const HeadComponents = [
 
 ]
 
-
-
 const BodyAttributes = {
 
   "data-theme": "dark"
 
 }
-
-
 
 exports.onRenderBody = ({
 
@@ -12392,15 +12228,11 @@ const { renderToString } = require("react-dom/server")
 
 const inline = require("glamor-inline")
 
-
-
 exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 
   const bodyHTML = renderToString(bodyComponent)
 
   const inlinedHTML = inline(bodyHTML)
-
-
 
   replaceBodyHTMLString(inlinedHTML)
 
@@ -12464,8 +12296,6 @@ const React = require("react")
 
 const Layout = require("./src/components/layout").default
 
-
-
 exports.wrapPageElement = ({ element, props }) => {
 
   // props provide same data to Layout as Page element will get
@@ -12528,13 +12358,9 @@ const React = require("react")
 
 const { Provider } = require("react-redux")
 
-
-
 const createStore = require("./src/state/createStore")
 
 const store = createStore()
-
-
 
 exports.wrapRootElement = ({ element }) => {
 

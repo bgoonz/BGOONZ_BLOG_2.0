@@ -775,7 +775,6 @@ fetch('coffee.jpg')
   .catch(e => {
     console.log('There has been a problem with your fetch operation: ' + e.message);
 
-
 });
 
 ```
@@ -786,14 +785,12 @@ By now, you should have a reasonable understanding of promises and how they work
 async function myFetch() {
   let response = await fetch('coffee.jpg');
 
-
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
 
   }
 
   let myBlob = await response.blob();
-
 
   let objectURL = URL.createObjectURL(myBlob);
 
@@ -807,7 +804,6 @@ async function myFetch() {
 myFetch()
   .catch(e => {
     console.log('There has been a problem with your fetch operation: ' + e.message);
-
 
 });
 
@@ -874,7 +870,6 @@ You can use a synchronous [`try...catch`](/en-US/docs/Web/JavaScript/Reference/S
 async function myFetch() {
   try {
     let response = await fetch('coffee.jpg');
-
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -946,7 +941,6 @@ Converting this to async/await (see [live demo](https://mdn.github.io/learning-a
 async function fetchAndDecode(url, type) {
   let response = await fetch(url);
 
-
   let content;
 
   if (!response.ok) {
@@ -971,9 +965,7 @@ async function displayContent() {
 
   let description = fetchAndDecode('description.txt', 'text');
 
-
   let values = await Promise.all([coffee, tea, description]);
-
 
   let objectURL1 = URL.createObjectURL(values[0]);
 
@@ -990,7 +982,6 @@ async function displayContent() {
   document.body.appendChild(image1);
 
   document.body.appendChild(image2);
-
 
   let para = document.createElement('p');
 
@@ -1051,7 +1042,6 @@ function timeoutPromise(interval) {
 
     }, interval);
 
-
 });
 
 };
@@ -1107,7 +1097,6 @@ async function timeTest() {
 
   const timeoutPromise3 = timeoutPromise(3000);
 
-
   await timeoutPromise1;
   await timeoutPromise2;
   await timeoutPromise3;
@@ -1132,7 +1121,6 @@ function timeoutPromiseResolve(interval) {
 
     }, interval);
 
-
 });
 
 };
@@ -1143,7 +1131,6 @@ function timeoutPromiseReject(interval) {
       reject("error");
 
     }, interval);
-
 
 });
 
@@ -1159,7 +1146,6 @@ async function timeTest() {
 }
 
 let startTime = Date.now();
-
 
 timeTest()
   .then(() => {})
@@ -1186,7 +1172,6 @@ function timeoutPromiseResolve(interval) {
 
     }, interval);
 
-
 });
 
 };
@@ -1197,7 +1182,6 @@ function timeoutPromiseReject(interval) {
       reject("error");
 
     }, interval);
-
 
 });
 
@@ -1210,14 +1194,12 @@ async function timeTest() {
 
   const timeoutPromiseResolve3 = timeoutPromiseResolve(3000);
 
-
   await timeoutPromiseResolve1;
   await timeoutPromiseReject2;
   await timeoutPromiseResolve3;
 }
 
 let startTime = Date.now();
-
 
 timeTest()
   .then(() => {})
@@ -1244,7 +1226,6 @@ function timeoutPromiseResolve(interval) {
 
     }, interval);
 
-
 });
 
 };
@@ -1255,7 +1236,6 @@ function timeoutPromiseReject(interval) {
       reject("error");
 
     }, interval);
-
 
 });
 
@@ -1268,14 +1248,12 @@ async function timeTest() {
 
   const timeoutPromiseResolve3 = timeoutPromiseResolve(3000);
 
-
   const results = await Promise.all([timeoutPromiseResolve1, timeoutPromiseReject2, timeoutPromiseResolve3]);
 
   return results;
 }
 
 let startTime = Date.now();
-
 
 timeTest()
   .then(() => {})

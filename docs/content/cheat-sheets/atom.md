@@ -19,13 +19,9 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Atom
 category: Apps
 
-updated: 2018-06-14
-
 ---
 
 ## Shortcuts
-
-
 
 ### Tree
 

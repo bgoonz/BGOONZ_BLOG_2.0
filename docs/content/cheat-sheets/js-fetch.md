@@ -7,8 +7,6 @@ weight: -3
 
 ### Fetch
 
-
-
 ```js
 fetch('/data.json')
   .then(response => response.json())

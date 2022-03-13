@@ -2,7 +2,6 @@
 title: Webpack
 category: JavaScript libraries
 
-updated: 2017-09-26
 intro: |
     This is a very basic "getting started with Webpack" guide for use with [Webpack](https://webpack.js.org) v3. This doesn't cover all features, but it should get you started in understanding the config file format.
 ---
@@ -173,8 +172,6 @@ module.exports = {
 };
 ```
 
-
-
 This example adds [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext) support to your CSS files.
 
 ## Other features
@@ -190,8 +187,6 @@ This example adds [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnex
   }
 }
 ```
-
-
 
 #### Terminal
 

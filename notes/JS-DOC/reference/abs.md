@@ -71,11 +71,11 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 ## See also
 
--   [`Math.ceil()`](ceil)
--   [`Math.floor()`](floor)
--   [`Math.round()`](round)
--   [`Math.sign()`](sign)
--   [`Math.trunc()`](trunc)
+- [`Math.ceil()`](ceil)
+- [`Math.floor()`](floor)
+- [`Math.round()`](round)
+- [`Math.sign()`](sign)
+- [`Math.trunc()`](trunc)
 
 © 2005-2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  

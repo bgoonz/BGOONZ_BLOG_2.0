@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Chunky PNG
 category: Ruby libraries
 
-
 ---
 
 ### Loading

@@ -20,7 +20,6 @@ title: Goby
 
 prism_languages: [ruby]
 weight: -3
-updated: 2018-12-06
 category: Ruby
 intro: |
 Goby's language design is based on Ruby language's, slim and shaped up. Differences in syntax between them is very small.
@@ -30,8 +29,6 @@ Goby's language design is based on Ruby language's, slim and shaped up. Differen
 ## Getting started
 
 ### Hello world
-
-
 
 #### hello.gb
 
@@ -93,8 +90,6 @@ $ goby -i
 See [igb manual & test script](https://github.com/goby-lang/goby/blob/master/igb/manual_test.md). You can use `readline` features such as command history by arrow keys.
 
 ## Variables
-
-
 
 ### Local variable
 
@@ -327,8 +322,6 @@ end
 
 ## Module/Class definition
 
-
-
 ### Module definition and `include`
 
 ```ruby
@@ -468,8 +461,6 @@ end
 
 ## Literal
 
-
-
 ### Keyword
 
 `def`, `true`, `false`, `nil`, `if`, `elsif`, `else`, `case`, `when`, `return`, `self`, `end`, `while`, `do`, `yield`, `get_block`, `next`, `class`, `module`, `break`
@@ -605,8 +596,6 @@ Use the annotations to keep the comments concise.
 
 ## Flow control
 
-
-
 ### `if`, `else`, `elsif`
 
 ```ruby
@@ -681,8 +670,6 @@ end
 Under construction. Join [#605](https://github.com/goby-lang/goby/issues/605).
 
 ## Block
-
-
 
 ### Block
 
@@ -798,8 +785,6 @@ Foo.new.bar b  #=> 3
 
 ## Native class (Primary)
 
-
-
 Goby's most "native" classes cannot instantiate with `new` in principle.
 
 ### `Object`
@@ -904,8 +889,6 @@ b.call  #=> 100
 
 ## Native class (secondary)
 
-
-
 ### `Float`
 
 ```ruby
@@ -1000,8 +983,6 @@ f.name  #=> "../test_fixtures/file_test/size.gb"
     -   the rest: `Object.new.methods`
 
 ## Native class (Golang-oriented)
-
-
 
 ### `GoMap`
 

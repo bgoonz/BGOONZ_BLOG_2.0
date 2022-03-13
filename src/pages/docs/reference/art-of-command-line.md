@@ -30,11 +30,11 @@ Notes:
 - 
 - Learn at least one text-based editor well. The `nano` editor is one of the simplest for basic editing (opening, editing, saving, searching). However, for the power user in a text terminal, there is no substitute for Vim (`vi`), the hard-to-learn but venerable, fast, and full-featured editor. Many people also use the classic Emacs, particularly for larger editing tasks. (Of course, any modern software developer working on an extensive project is unlikely to use only a pure text-based editor and should also be familiar with modern graphical IDEs and tools.)
 
--   Finding documentation:
+- Finding documentation:
 
-    -   Know how to read official documentation with `man` (for the inquisitive, `man man` lists the section numbers, e.g. 1 is "regular" commands, 5 is files/conventions, and 8 are for administration). Find man pages with `apropos`.
-    -   Know that some commands are not executables, but Bash builtins, and that you can get help on them with `help` and `help -d`. You can find out whether a command is an executable, shell builtin or an alias by using `type command`.
-    -   `curl cheat.sh/command` will give a brief "cheat sheet" with common examples of how to use a shell command.
+    - Know how to read official documentation with `man` (for the inquisitive, `man man` lists the section numbers, e.g. 1 is "regular" commands, 5 is files/conventions, and 8 are for administration). Find man pages with `apropos`.
+    - Know that some commands are not executables, but Bash builtins, and that you can get help on them with `help` and `help -d`. You can find out whether a command is an executable, shell builtin or an alias by using `type command`.
+    - `curl cheat.sh/command` will give a brief "cheat sheet" with common examples of how to use a shell command.
 
 - Learn about redirection of output and input using `>` and `<` and pipes using `|`. Know `>` overwrites the output file and `>>` appends. Learn about stdout and stderr.
 - 
@@ -46,13 +46,13 @@ Notes:
 - 
 - Basic file management: `ls` and `ls -l` (in particular, learn what every column in `ls -l` means), `less`, `head`, `tail` and `tail -f` (or even better, `less +F`), `ln` and `ln -s` (learn the differences and advantages of hard versus soft links), `chown`, `chmod`, `du` (for a quick summary of disk usage: `du -hs *`). For filesystem management, `df`, `mount`, `fdisk`, `mkfs`, `lsblk`. Learn what an inode is (`ls -i` or `df -i`).
 
--   Basic network management: `ip` or `ifconfig`, `dig`, `traceroute`, `route`.
+- Basic network management: `ip` or `ifconfig`, `dig`, `traceroute`, `route`.
 
--   Learn and use a version control management system, such as `git`.
+- Learn and use a version control management system, such as `git`.
 
--   Know regular expressions well, and the various flags to `grep`/`egrep`. The `-i`, `-o`, `-v`, `-A`, `-B`, and `-C` options are worth knowing.
+- Know regular expressions well, and the various flags to `grep`/`egrep`. The `-i`, `-o`, `-v`, `-A`, `-B`, and `-C` options are worth knowing.
 
--   Learn to use `apt-get`, `yum`, `dnf` or `pacman` (depending on distro) to find and install packages. And make sure you have `pip` to install Python-based command-line tools (a few below are easiest to install via `pip`).
+- Learn to use `apt-get`, `yum`, `dnf` or `pacman` (depending on distro) to find and install packages. And make sure you have `pip` to install Python-based command-line tools (a few below are easiest to install via `pip`).
 
 ## Everyday use
 
@@ -66,13 +66,13 @@ Notes:
 - 
 - To see recent commands, use `history`. Follow with `!n` (where `n` is the command number) to execute again. There are also many abbreviations you can use, the most useful probably being `!$` for last argument and `!!` for last command (see "HISTORY EXPANSION" in the man page). However, these are often easily replaced with **ctrl-r** and **alt-.**.
 
--   Go to your home directory with `cd`. Access files relative to your home directory with the `~` prefix (e.g. `~/.bashrc`). In `sh` scripts refer to the home directory as `$HOME`.
+- Go to your home directory with `cd`. Access files relative to your home directory with the `~` prefix (e.g. `~/.bashrc`). In `sh` scripts refer to the home directory as `$HOME`.
 
--   To go back to the previous working directory: `cd -`.
+- To go back to the previous working directory: `cd -`.
 
--   If you are halfway through typing a command but change your mind, hit **alt-#** to add a `#` at the beginning and enter it as a comment (or use **ctrl-a**, **#**, **enter**). You can then return to it later via command history.
+- If you are halfway through typing a command but change your mind, hit **alt-#** to add a `#` at the beginning and enter it as a comment (or use **ctrl-a**, **#**, **enter**). You can then return to it later via command history.
 
--   Use `xargs` (or `parallel`). It's very powerful. Note you can control how many items execute per line (`-L`) as well as parallelism (`-P`). If you're not sure if it'll do the right thing, use `xargs echo` first. Also, `-I{}` is handy. Examples:
+- Use `xargs` (or `parallel`). It's very powerful. Note you can control how many items execute per line (`-L`) as well as parallelism (`-P`). If you're not sure if it'll do the right thing, use `xargs echo` first. Also, `-I{}` is handy. Examples:
 
 ```bash
       find . -name '*.py' | xargs grep some_function
@@ -93,17 +93,17 @@ Notes:
 - 
 - See `uptime` or `w` to know how long the system has been running.
 
--   Use `alias` to create shortcuts for commonly used commands. For example, `alias ll='ls -latr'` creates a new alias `ll`.
+- Use `alias` to create shortcuts for commonly used commands. For example, `alias ll='ls -latr'` creates a new alias `ll`.
 
--   Save aliases, shell settings, and functions you commonly use in `~/.bashrc`, and [arrange for login shells to source it](http://superuser.com/a/183980/7106). This will make your setup available in all your shell sessions.
+- Save aliases, shell settings, and functions you commonly use in `~/.bashrc`, and [arrange for login shells to source it](http://superuser.com/a/183980/7106). This will make your setup available in all your shell sessions.
 
--   Put the settings of environment variables as well as commands that should be executed when you login in `~/.bash_profile`. Separate configuration will be needed for shells you launch from graphical environment logins and `cron` jobs.
+- Put the settings of environment variables as well as commands that should be executed when you login in `~/.bash_profile`. Separate configuration will be needed for shells you launch from graphical environment logins and `cron` jobs.
 
--   Synchronize your configuration files (e.g. `.bashrc` and `.bash_profile`) among various computers with Git.
+- Synchronize your configuration files (e.g. `.bashrc` and `.bash_profile`) among various computers with Git.
 
--   Understand that care is needed when variables and filenames include whitespace. Surround your Bash variables with quotes, e.g. `"$FOO"`. Prefer the `-0` or `-print0` options to enable null characters to delimit filenames, e.g. `locate -0 pattern | xargs -0 ls -al` or `find / -print0 -type d | xargs -0 ls -al`. To iterate on filenames containing whitespace in a for loop, set your IFS to be a newline only using `IFS=$'\n'`.
+- Understand that care is needed when variables and filenames include whitespace. Surround your Bash variables with quotes, e.g. `"$FOO"`. Prefer the `-0` or `-print0` options to enable null characters to delimit filenames, e.g. `locate -0 pattern | xargs -0 ls -al` or `find / -print0 -type d | xargs -0 ls -al`. To iterate on filenames containing whitespace in a for loop, set your IFS to be a newline only using `IFS=$'\n'`.
 
--   In Bash scripts, use `set -x` (or the variant `set -v`, which logs raw input, including unexpanded variables and comments) for debugging output. Use strict modes unless you have a good reason not to: Use `set -e` to abort on errors (nonzero exit code). Use `set -u` to detect unset variable usages. Consider `set -o pipefail` too, to abort on errors within pipes (though read up on it more if you do, as this topic is a bit subtle). For more involved scripts, also use `trap` on EXIT or ERR. A useful habit is to start a script like this, which will make it detect and abort on common errors and print a message:
+- In Bash scripts, use `set -x` (or the variant `set -v`, which logs raw input, including unexpanded variables and comments) for debugging output. Use strict modes unless you have a good reason not to: Use `set -e` to abort on errors (nonzero exit code). Use `set -u` to detect unset variable usages. Consider `set -o pipefail` too, to abort on errors within pipes (though read up on it more if you do, as this topic is a bit subtle). For more involved scripts, also use `trap` on EXIT or ERR. A useful habit is to start a script like this, which will make it detect and abort on common errors and print a message:
 
 ```bash
       set -euo pipefail
@@ -122,9 +122,9 @@ Notes:
 - 
 - Brace expansion using `{`...`}` can reduce having to re-type similar text and automate combinations of items. This is helpful in examples like `mv foo.{txt,pdf} some-dir` (which moves both files), `cp somefile{,.bak}` (which expands to `cp somefile somefile.bak`) or `mkdir -p test-{a,b,c}/subtest-{1,2,3}` (which expands all possible combinations and creates a directory tree). Brace expansion is performe
 - 
--   The order of expansions is: brace expansion; tilde expansion, parameter and variable expansion, arithmetic expansion, and command substitution (done in a left-to-right fashion); word splitting; and filename expansion. (For example, a range like `{1..20}` cannot be expressed with variables using `{$a..$b}`. Use `seq` or a `for` loop instead, e.g., `seq $a $b` or `for((i=a; i<=b; i++)); do ... ; done`.)
+- The order of expansions is: brace expansion; tilde expansion, parameter and variable expansion, arithmetic expansion, and command substitution (done in a left-to-right fashion); word splitting; and filename expansion. (For example, a range like `{1..20}` cannot be expressed with variables using `{$a..$b}`. Use `seq` or a `for` loop instead, e.g., `seq $a $b` or `for((i=a; i<=b; i++)); do ... ; done`.)
 
--   The output of a command can be treated like a file via `<(some command)` (known as process substitution). For example, compare local `/etc/hosts` with a remote one:
+- The output of a command can be treated like a file via `<(some command)` (known as process substitution). For example, compare local `/etc/hosts` with a remote one:
 
 ```sh
       diff /etc/hosts <(ssh somehost cat /etc/hosts)
@@ -153,9 +153,9 @@ EOF
 - 
 - Use `screen` or [`tmux`](https://tmux.github.io/) to multiplex the screen, especially useful on remote ssh sessions and to detach and re-attach to a session. `byobu` can enhance screen or tmux by providing more information and easier management. A more minimal alternative for session persistence only is [`dtach`](https://github.com/bogner/dtach).
 
--   In ssh, knowing how to port tunnel with `-L` or `-D` (and occasionally `-R`) is useful, e.g. to access web sites from a remote server.
+- In ssh, knowing how to port tunnel with `-L` or `-D` (and occasionally `-R`) is useful, e.g. to access web sites from a remote server.
 
--   It can be useful to make a few optimizations to your ssh configuration; for example, this `~/.ssh/config` contains settings to avoid dropped connections in certain network environments, uses compression (which is helpful with scp over low-bandwidth connections), and multiplex channels to the same server with a local control file:
+- It can be useful to make a few optimizations to your ssh configuration; for example, this `~/.ssh/config` contains settings to avoid dropped connections in certain network environments, uses compression (which is helpful with scp over low-bandwidth connections), and multiplex channels to the same server with a local control file:
 
 ```
       TCPKeepAlive=yes
@@ -171,7 +171,7 @@ EOF
 - 
 - Consider [`mosh`](https://mosh.mit.edu/) an alternative to ssh that uses UDP, avoiding dropped connections and adding convenience on the road (requires server-side setup).
 
--   To get the permissions on a file in octal form, which is useful for system configuration but not available in `ls` and easy to bungle, use something like
+- To get the permissions on a file in octal form, which is useful for system configuration but not available in `ls` and easy to bungle, use something like
 
 ```sh
       stat -c '%A %a %n' /etc/timezone
@@ -181,16 +181,16 @@ EOF
 - 
 - For interaction with files based on the output of another command (like `git`), use `fpp` ([PathPicker](https://github.com/facebook/PathPicker)).
 
--   For a simple web server for all files in the current directory (and subdirs), available to anyone on your network, use:
+- For a simple web server for all files in the current directory (and subdirs), available to anyone on your network, use:
     `python -m SimpleHTTPServer 7777` (for port 7777 and Python 2) and `python -m http.server 7777` (for port 7777 and Python 3).
 
 - For running a command as another user, use `sudo`. Defaults to running as root; use `-u` to specify another user. Use `-i` to login as that user (you will be asked for _your_ password).
 - 
 - For switching the shell to another user, use `su username` or `su - username`. The latter with "-" gets an environment as if another user just logged in. Omitting the username defaults to root. You will be asked for the password _of the user you are switching to_.
 - 
--   Know about the [128K limit](https://wiki.debian.org/CommonErrorMessages/ArgumentListTooLong) on command lines. This "Argument list too long" error is common when wildcard matching large numbers of files. (When this happens alternatives like `find` and `xargs` may help.)
+- Know about the [128K limit](https://wiki.debian.org/CommonErrorMessages/ArgumentListTooLong) on command lines. This "Argument list too long" error is common when wildcard matching large numbers of files. (When this happens alternatives like `find` and `xargs` may help.)
 
--   For a basic calculator (and of course access to Python in general), use the `python` interpreter. For example,
+- For a basic calculator (and of course access to Python in general), use the `python` interpreter. For example,
 
 ```
 >>> 2+3
@@ -217,23 +217,23 @@ EOF
 - 
 - For Amazon S3, [`s3cmd`](https://github.com/s3tools/s3cmd) is convenient and [`s4cmd`](https://gi
 - 
--   Know about `sort` and `uniq`, including uniq's `-u` and `-d` options -- see one-liners below. See also `comm`.
+- Know about `sort` and `uniq`, including uniq's `-u` and `-d` options -- see one-liners below. See also `comm`.
 
--   Know about `cut`, `paste`, and `join` to manipulate text files. Many people use `cut` but forget about `join`.
+- Know about `cut`, `paste`, and `join` to manipulate text files. Many people use `cut` but forget about `join`.
 
--   Know about `wc` to count newlines (`-l`), characters (`-m`), words (`-w`) and bytes (`-c`).
+- Know about `wc` to count newlines (`-l`), characters (`-m`), words (`-w`) and bytes (`-c`).
 
--   Know about `tee` to copy from stdin to a file and also to stdout, as in `ls -al | tee file.txt`.
+- Know about `tee` to copy from stdin to a file and also to stdout, as in `ls -al | tee file.txt`.
 
--   For more complex calculations, including grouping, reversing fields, and statistical calculations, consider [`datamash`](https://www.gnu.org/software/datamash/).
+- For more complex calculations, including grouping, reversing fields, and statistical calculations, consider [`datamash`](https://www.gnu.org/software/datamash/).
 
--   Know that locale affects a lot of command line tools in subtle ways, including sorting order (collation) and performance. Most Linux installations will set `LANG` or other locale variables to a local setting like US English. But be aware sorting will change if you change locale. And know i18n routines can make sort or other commands run _many times_ slower. In some situations (such as the set operations or uniqueness operations below) you can safely ignore slow i18n routines entirely and use traditional byte-based sort order, using `export LC_ALL=C`.
+- Know that locale affects a lot of command line tools in subtle ways, including sorting order (collation) and performance. Most Linux installations will set `LANG` or other locale variables to a local setting like US English. But be aware sorting will change if you change locale. And know i18n routines can make sort or other commands run _many times_ slower. In some situations (such as the set operations or uniqueness operations below) you can safely ignore slow i18n routines entirely and use traditional byte-based sort order, using `export LC_ALL=C`.
 
--   You can set a specific command's environment by prefixing its invocation with the environment variable settings, as in `TZ=Pacific/Fiji date`.
+- You can set a specific command's environment by prefixing its invocation with the environment variable settings, as in `TZ=Pacific/Fiji date`.
 
--   Know basic `awk` and `sed` for simple data munging. See [One-liners](#one-liners) for examples.
+- Know basic `awk` and `sed` for simple data munging. See [One-liners](#one-liners) for examples.
 
--   To replace all occurrences of a string in place, in one or more files:
+- To replace all occurrences of a string in place, in one or more files:
 
 ```sh
       perl -pi.bak -e 's/old-string/new-string/g' my-files-*.txt
@@ -266,13 +266,13 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - 
 - The standard tools for patching source code are `diff` and `patch`. See also `diffstat` for summary statistics of a diff and `sdiff` for a side-by-side diff. Note `diff -r` works for entire directories. Use `diff -r tree1 tree2 | diffstat` for a summary of changes. Use `vimdiff` to compare and edit files.
 
--   For binary files, use `hd`, `hexdump` or `xxd` for simple hex dumps and `bvi`, `hexedit` or `biew` for binary editing.
+- For binary files, use `hd`, `hexdump` or `xxd` for simple hex dumps and `bvi`, `hexedit` or `biew` for binary editing.
 
--   Also for binary files, `strings` (plus `grep`, etc.) lets you find bits of text.
+- Also for binary files, `strings` (plus `grep`, etc.) lets you find bits of text.
 
--   For binary diffs (delta compression), use `xdelta3`.
+- For binary diffs (delta compression), use `xdelta3`.
 
--   To convert text encodings, try `iconv`. Or `uconv` for more advanced use; it supports some advanced Unicode things. For example:
+- To convert text encodings, try `iconv`. Or `uconv` for more advanced use; it supports some advanced Unicode things. For example:
 
 ```sh
       # Displays hex codes or actual names of characters (useful for debugging):
@@ -288,9 +288,9 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - 
 - Use `zless`, `zmore`, `zcat`, and `zgrep` to operate on compressed files.
 
--   File attributes are settable via `chattr` and offer a lower-level alternative to file permissions. For example, to protect against accidental file deletion the immutable flag: `sudo chattr +i /critical/directory/or/file`
+- File attributes are settable via `chattr` and offer a lower-level alternative to file permissions. For example, to protect against accidental file deletion the immutable flag: `sudo chattr +i /critical/directory/or/file`
 
--   Use `getfacl` and `setfacl` to save and restore file permissions. For example:
+- Use `getfacl` and `setfacl` to save and restore file permissions. For example:
 
 ```sh
    getfacl -R /some/path > permissions.txt
@@ -321,25 +321,25 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - 
 - The `ab` tool (comes with Apache) is helpful for quick-and-dirty checking of web server perform
 - 
--   For more serious network debugging, [`wireshark`](https://wireshark.org/), [`tshark`](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html), or [`ngrep`](http://ngrep.sourceforge.net/).
+- For more serious network debugging, [`wireshark`](https://wireshark.org/), [`tshark`](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html), or [`ngrep`](http://ngrep.sourceforge.net/).
 
--   Know about `strace` and `ltrace`. These can be helpful if a program is failing, hanging, or crashing, and you don't know why, or if you want to get a general idea of performance. Note the profiling option (`-c`), and the ability to attach to a running process (`-p`). Use trace child option (`-f`) to avoid missing important calls.
+- Know about `strace` and `ltrace`. These can be helpful if a program is failing, hanging, or crashing, and you don't know why, or if you want to get a general idea of performance. Note the profiling option (`-c`), and the ability to attach to a running process (`-p`). Use trace child option (`-f`) to avoid missing important calls.
 
--   Know about `ldd` to check shared libraries etc — but [never run it on untrusted files](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/).
+- Know about `ldd` to check shared libraries etc — but [never run it on untrusted files](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/).
 
--   Know how to connect to a running process with `gdb` and get its stack traces.
+- Know how to connect to a running process with `gdb` and get its stack traces.
 
--   Use `/proc`. It's amazingly helpful sometimes when debugging live problems. Examples: `/proc/cpuinfo`, `/proc/meminfo`, `/proc/cmdline`, `/proc/xxx/cwd`, `/proc/xxx/exe`, `/proc/xxx/fd/`, `/proc/xxx/smaps` (where `xxx` is the process id or pid).
+- Use `/proc`. It's amazingly helpful sometimes when debugging live problems. Examples: `/proc/cpuinfo`, `/proc/meminfo`, `/proc/cmdline`, `/proc/xxx/cwd`, `/proc/xxx/exe`, `/proc/xxx/fd/`, `/proc/xxx/smaps` (where `xxx` is the process id or pid).
 
--   When debugging why something went wrong in the past, [`sar`](http://sebastien.godard.pagesperso-orange.fr/) can be very helpful. It shows historic statistics on CPU, memory, network, etc.
+- When debugging why something went wrong in the past, [`sar`](http://sebastien.godard.pagesperso-orange.fr/) can be very helpful. It shows historic statistics on CPU, memory, network, etc.
 
--   For deeper systems and performance analyses, look at `stap` ([SystemTap](https://sourceware.org/systemtap/wiki)), [`perf`](https://en.wikipedia.org/wiki/Perf_%28Linux%29), and [`sysdig`](https://github.com/draios/sysdig).
+- For deeper systems and performance analyses, look at `stap` ([SystemTap](https://sourceware.org/systemtap/wiki)), [`perf`](https://en.wikipedia.org/wiki/Perf_%28Linux%29), and [`sysdig`](https://github.com/draios/sysdig).
 
--   Check what OS you're on with `uname` or `uname -a` (general Unix/kernel info) or `lsb_release -a` (Linux distro info).
+- Check what OS you're on with `uname` or `uname -a` (general Unix/kernel info) or `lsb_release -a` (Linux distro info).
 
--   Use `dmesg` whenever something's acting really funny (it could be hardware or driver issues).
+- Use `dmesg` whenever something's acting really funny (it could be hardware or driver issues).
 
--   If you delete a file and it doesn't free up expected disk space as reported by `du`, check whether the file is in use by a process:
+- If you delete a file and it doesn't free up expected disk space as reported by `du`, check whether the file is in use by a process:
     `lsof | grep deleted | grep "filename-of-my-big-file"`
 
 ## One-liners
@@ -362,7 +362,7 @@ A few examples of piecing together commands:
 
 - Use `grep . *` to quickly examine the contents of all files in a directory (so each line is paired with the filename), or `head -100 *` (so each file has a heading). This can be useful for directories filled with config settings like those in `/sys`, `/proc`, `/etc`.
 - 
--   Summing all numbers in the third column of a text file (this is probably 3X faster and 3X less code than equivalent Python):
+- Summing all numbers in the third column of a text file (this is probably 3X faster and 3X less code than equivalent Python):
 
 ```sh
       awk '{ x += $3 } END { print x }' myfile
@@ -382,7 +382,7 @@ A few examples of piecing together commands:
 
 - To continuously monitor changes, use `watch`, e.g. check changes to files in a directory with `watch -d -n 2 'ls -rtlh | tail'` or to network settings while troubleshooting your wifi settings with `watch -d -n 2 ifconfig`.
 - 
--   Run this function to get a random tip from this document (parses Markdown and extracts an item):
+- Run this function to get a random tip from this document (parses Markdown and extracts an item):
 
 ```sh
       function taocl() {
@@ -469,77 +469,77 @@ A few examples of piecing together commands:
 - 
 - `tr`: character translation or manipulation
 - 
--   `iconv` or `uconv`: conversion for text encodings
+- `iconv` or `uconv`: conversion for text encodings
 
--   `split` and `csplit`: splitting files
+- `split` and `csplit`: splitting files
 
--   `sponge`: read all input before writing it, useful for reading from then writing to the same file, e.g., `grep -v something some-file | sponge some-file`
+- `sponge`: read all input before writing it, useful for reading from then writing to the same file, e.g., `grep -v something some-file | sponge some-file`
 
--   `units`: unit conversions and calculations; converts furlongs per fortnight to twips per blink (see also `/usr/share/units/definitions.units`)
+- `units`: unit conversions and calculations; converts furlongs per fortnight to twips per blink (see also `/usr/share/units/definitions.units`)
 
--   `apg`: generates random passwords
+- `apg`: generates random passwords
 
--   `xz`: high-ratio file compression
+- `xz`: high-ratio file compression
 
--   `ldd`: dynamic library info
+- `ldd`: dynamic library info
 
--   `nm`: symbols from object files
+- `nm`: symbols from object files
 
--   `ab` or [`wrk`](https://github.com/wg/wrk): benchmarking web servers
+- `ab` or [`wrk`](https://github.com/wg/wrk): benchmarking web servers
 
--   `strace`: system call debugging
+- `strace`: system call debugging
 
--   [`mtr`](http://www.bitwizard.nl/mtr/): better traceroute for network debugging
+- [`mtr`](http://www.bitwizard.nl/mtr/): better traceroute for network debugging
 
--   `cssh`: visual concurrent shell
+- `cssh`: visual concurrent shell
 
--   `rsync`: sync files and folders over SSH or in local file system
+- `rsync`: sync files and folders over SSH or in local file system
 
--   [`wireshark`](https://wireshark.org/) and [`tshark`](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html): packet capture and network debugging
+- [`wireshark`](https://wireshark.org/) and [`tshark`](https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html): packet capture and network debugging
 
--   [`ngrep`](http://ngrep.sourceforge.net/): grep for the network layer
+- [`ngrep`](http://ngrep.sourceforge.net/): grep for the network layer
 
--   `host` and `dig`: DNS lookups
+- `host` and `dig`: DNS lookups
 
--   `lsof`: process file descriptor and socket info
+- `lsof`: process file descriptor and socket info
 
--   `dstat`: useful system stats
+- `dstat`: useful system stats
 
--   [`glances`](https://github.com/nicolargo/glances): high level, multi-subsystem overview
+- [`glances`](https://github.com/nicolargo/glances): high level, multi-subsystem overview
 
--   `iostat`: Disk usage stats
+- `iostat`: Disk usage stats
 
--   `mpstat`: CPU usage stats
+- `mpstat`: CPU usage stats
 
--   `vmstat`: Memory usage stats
+- `vmstat`: Memory usage stats
 
--   `htop`: improved version of top
+- `htop`: improved version of top
 
--   `last`: login history
+- `last`: login history
 
--   `w`: who's logged on
+- `w`: who's logged on
 
--   `id`: user/group identity info
+- `id`: user/group identity info
 
--   [`sar`](http://sebastien.godard.pagesperso-orange.fr/): historic system stats
+- [`sar`](http://sebastien.godard.pagesperso-orange.fr/): historic system stats
 
--   [`iftop`](http://www.ex-parrot.com/~pdw/iftop/) or [`nethogs`](https://github.com/raboof/nethogs): network utilization by socket or process
+- [`iftop`](http://www.ex-parrot.com/~pdw/iftop/) or [`nethogs`](https://github.com/raboof/nethogs): network utilization by socket or process
 
--   `ss`: socket statistics
+- `ss`: socket statistics
 
--   `dmesg`: boot and system error messages
+- `dmesg`: boot and system error messages
 
--   `sysctl`: view and configure Linux kernel parameters at run time
+- `sysctl`: view and configure Linux kernel parameters at run time
 
--   `hdparm`: SATA/ATA disk manipulation/performance
+- `hdparm`: SATA/ATA disk manipulation/performance
 
--   `lsblk`: list block devices: a tree view of your disks and disk partitions
+- `lsblk`: list block devices: a tree view of your disks and disk partitions
 
--   `lshw`, `lscpu`, `lspci`, `lsusb`, `dmidecode`: hardware information, including CPU, BIOS, RAID, graphics, devices, etc.
+- `lshw`, `lscpu`, `lspci`, `lsusb`, `dmidecode`: hardware information, including CPU, BIOS, RAID, graphics, devices, etc.
 
--   `lsmod` and `modinfo`: List and show details of kernel modules.
+- `lsmod` and `modinfo`: List and show details of kernel modules.
 
--   `fortune`, `ddate`, and `sl`: um, well, it depends on whether you consider steam locomotives and Zippy quotations "useful"
+- `fortune`, `ddate`, and `sl`: um, well, it depends on whether you consider steam locomotives and Zippy quotations "useful"
 
 ## macOS only
 
@@ -553,11 +553,11 @@ These are items relevant _only_ on macOS.
 - 
 - To open a file with a desktop app, use `open` or `open -a /Applications/Whatever.app`.
 
--   Spotlight: Search files with `mdfind` and list metadata (such as photo EXIF info) with `mdls`.
+- Spotlight: Search files with `mdfind` and list metadata (such as photo EXIF info) with `mdls`.
 
--   Be aware macOS is based on BSD Unix, and many commands (for example `ps`, `ls`, `tail`, `awk`, `sed`) have many subtle variations from Linux, which is largely influenced by System V-style Unix and GNU tools. You can often tell the difference by noting a man page has the heading "BSD General Commands Manual." In some cases GNU versions can be installed, too (such as `gawk` and `gsed` for GNU awk and sed). If writing cross-platform Bash scripts, avoid such commands (for example, consider Python or `perl`) or test carefully.
+- Be aware macOS is based on BSD Unix, and many commands (for example `ps`, `ls`, `tail`, `awk`, `sed`) have many subtle variations from Linux, which is largely influenced by System V-style Unix and GNU tools. You can often tell the difference by noting a man page has the heading "BSD General Commands Manual." In some cases GNU versions can be installed, too (such as `gawk` and `gsed` for GNU awk and sed). If writing cross-platform Bash scripts, avoid such commands (for example, consider Python or `perl`) or test carefully.
 
--   To get macOS release information, use `sw_vers`.
+- To get macOS release information, use `sw_vers`.
 
 ## Windows only
 
@@ -569,9 +569,9 @@ These items are relevant _only_ on Windows.
 - 
 - On Windows 10, you can use [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/commandline/wsl/about), which provides a familiar Bash environment with Unix command line utilities.
 - 
--   If you mainly want to use GNU developer tools (such as GCC) on Windows, consider [MinGW](http://www.mingw.org/) and its [MSYS](http://www.mingw.org/wiki/msys) package, which provides utilities such as bash, gawk, make and grep. MSYS doesn't have all the features compared to Cygwin. MinGW is particularly useful for creating native Windows ports of Unix tools.
+- If you mainly want to use GNU developer tools (such as GCC) on Windows, consider [MinGW](http://www.mingw.org/) and its [MSYS](http://www.mingw.org/wiki/msys) package, which provides utilities such as bash, gawk, make and grep. MSYS doesn't have all the features compared to Cygwin. MinGW is particularly useful for creating native Windows ports of Unix tools.
 
--   Another option to get Unix look and feel under Windows is [Cash](https://github.com/dthree/cash). Note that only very few Unix commands and command-line options are available in this environment.
+- Another option to get Unix look and feel under Windows is [Cash](https://github.com/dthree/cash). Note that only very few Unix commands and command-line options are available in this environment.
 
 ### Useful Windows command-line tools
 
@@ -579,7 +579,7 @@ These items are relevant _only_ on Windows.
 - 
 - Native command-line Windows networking tools you may find useful include `ping`, `ipconfig`, `tracert`, and `netstat`.
 
--   You can perform [many useful Windows tasks](http://www.thewindowsclub.com/rundll32-shortcut-commands-windows) by invoking the `Rundll32` command.
+- You can perform [many useful Windows tasks](http://www.thewindowsclub.com/rundll32-shortcut-commands-windows) by invoking the `Rundll32` command.
 
 ### Cygwin tips and tricks
 
@@ -589,11 +589,11 @@ These items are relevant _only_ on Windows.
 - 
 - Access the Windows clipboard through `/dev/cl
 - 
--   Run `cygstart` to open an arbitrary file through its registered application.
+- Run `cygstart` to open an arbitrary file through its registered application.
 
--   Access the Windows registry with `regtool`.
+- Access the Windows registry with `regtool`.
 
--   Note that a `C:\` Windows drive path becomes `/cygdrive/c` under Cygwin, and that Cygwin's `/` appears under `C:\cygwin` on Windows. Convert between Cygwin and Windows-style file paths with `cygpath`. This is most useful in scripts that invoke Windows programs.
+- Note that a `C:\` Windows drive path becomes `/cygdrive/c` under Cygwin, and that Cygwin's `/` appears under `C:\cygwin` on Windows. Convert between Cygwin and Windows-style file paths with `cygpath`. This is most useful in scripts that invoke Windows programs.
 
 ## More resources
 

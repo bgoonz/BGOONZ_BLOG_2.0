@@ -18,7 +18,6 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: C# 7
 category: C-like
-updated: 2018-12-06
 
 prism_languages: [csharp]
 description: |

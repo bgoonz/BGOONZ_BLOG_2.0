@@ -32,7 +32,7 @@ Space Complexity: O(1)
 
 - The first major sorting algorithm one learns in introductory programming courses.
 - 
--   Gives an intro on how to convert unsorted data into sorted data.
+- Gives an intro on how to convert unsorted data into sorted data.
 
 > It's almost never used in production code because:
 
@@ -42,15 +42,15 @@ Space Complexity: O(1)
 - 
 - _There is stigma attached to it_
 
--   _Bubbling Up : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
+- _Bubbling Up : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
 
--   _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
+- _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
 
 <https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053><https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54>
 
 - _Worst Case & Best Case are always the same because it makes nested loops._
 - 
--   _Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_
+- _Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_
 
 ### Selection Sort
 
@@ -98,7 +98,7 @@ Time Complexity: Log Linear O(nlog(n))
 
 - Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); Space Complexity: O(n)
 - 
--   We are linear O(n) time because we are creating subArrays.
+- We are linear O(n) time because we are creating subArrays.
 
 ### Example of Merge Sort
 
@@ -106,7 +106,7 @@ Time Complexity: Log Linear O(nlog(n))
 
 - **Merge sort is O(nlog(n)) time.**
 - 
--   _We need a function for merging and a function for sorting._
+- _We need a function for merging and a function for sorting._
 
 > Steps:
 
@@ -130,9 +130,9 @@ Space Complexity: O(n)
 - 
 - Some key ideas to keep in mind:
 
--   It is easy to sort elements of an array relative to a particular target value.
+- It is easy to sort elements of an array relative to a particular target value.
 
--   An array of 0 or 1 elements is already trivially sorted.
+- An array of 0 or 1 elements is already trivially sorted.
 
 <https://gist.github.com/eengineergz/24bcbc5248a8c4e1671945e9512da57e>
 
@@ -154,7 +154,7 @@ Space Complexity: O(1)
 - 
 - _Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._
 
--   _Binary Search is part of Divide and Conquer._
+- _Binary Search is part of Divide and Conquer._
 
 ### Insertion Sort
 

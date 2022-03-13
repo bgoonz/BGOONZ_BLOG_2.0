@@ -20,7 +20,6 @@ title: ES2015+
 category: JavaScript
 
 tags: [Featured]
-updated: 2019-11-14
 weight: -10
 intro: |
 A quick overview of new JavaScript features in ES2015, ES2016, ES2017, ES2018 and beyond.
@@ -157,8 +156,6 @@ const byte = 2 ** 8;
 
 ## Promises
 
-
-
 ### Making promises
 
 ```js
@@ -225,8 +222,6 @@ async function run() {
 See: [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
 ## Destructuring
-
-
 
 ### Destructuring assignment
 
@@ -508,8 +503,6 @@ let handlers = {
 };
 // Same as: handlers = { 'onclick': true }
 ```
-
-
 
 See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 

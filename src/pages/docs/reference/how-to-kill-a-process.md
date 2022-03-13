@@ -42,7 +42,7 @@ The _aux_ options are as follows:
 - 
 - u = display the process's user/owner
 
--   x = also show processes not attached to a terminal
+- x = also show processes not attached to a terminal
 
 The _x_ option is important when you're hunting for information regarding a graphical application.
 
@@ -58,13 +58,13 @@ Now we come to the task of killing the process. We have two pieces of informatio
 
 - Process name
 - 
--   Process ID
+- Process ID
 
 Which you use will determine the command used for termination. There are two commands used to kill a process:
 
 - kill -- Kill a process by ID
 - 
--   killall -- Kill a process by name
+- killall -- Kill a process by name
 
 There are also different signals that can be sent to both kill commands. What signal you send will be determined by what results you want from the kill command. For instance, you can send the HUP (hang up) signal to the kill command, which will effectively restart the process. This is always a wise choice when you need the process to immediately restart (such as in the case of a daemon). You can get a list of all the signals that can be sent to the kill command by issuing kill -l. You'll find quite a large number of signals (Figure 3).
 

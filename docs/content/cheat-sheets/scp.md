@@ -2,14 +2,11 @@
 title: scp
 category: CLI
 
-updated: 2018-12-25
 authors:
     - github: vastpeng
 ---
 
 ### Usage
-
-
 
 ```bash
 scp <options> source_path destination_path

@@ -701,9 +701,9 @@ How many seconds are there in a day?
 In this step, we:
 
 - Solved a Programming Exercise involving common scenarios, using Python code involving:
-    -   Expressions
-    -   Operators
-    -   Literals
+    - Expressions
+    - Operators
+    - Literals
 
 #### Step 05: Puzzles On Expressions <a id="step-05-puzzles-on-expressions"></a>
 
@@ -993,12 +993,12 @@ The above two examples can be used as a tip by newbie programmers when they form
 In this step, we:
 
 - Explored a number of puzzles related to code involving:
-    -   Built-in functions for numeric calculations
-    -   The `print()` function to display expressions and strings
+    - Built-in functions for numeric calculations
+    - The `print()` function to display expressions and strings
 - Covered the following aspects of the above utilities:
-    -   Case-sensitive aspects of names and strings
-    -   The role played by whitespace
-    -   The escape character, and common escape sequences
+    - Case-sensitive aspects of names and strings
+    - The role played by whitespace
+    - The escape character, and common escape sequences
 
 #### Step 08: Formatted Output With print\(\) <a id="step-08-formatted-output-with-print"></a>
 
@@ -1125,9 +1125,9 @@ Index `0` will be replaced with the first parameter to `format()`.
 In this step, we:
 
 - Understood the behavior when the parameters passed to `format()`:
-    -   Exceed the indexes accessed by `print()`
-    -   Are less than the indexes accessed by `print()`
-    -   Are of type integer, floating-point or string
+    - Exceed the indexes accessed by `print()`
+    - Are less than the indexes accessed by `print()`
+    - Are of type integer, floating-point or string
 
 #### Step 10: Introducing Variables <a id="step-10-introducing-variables"></a>
 
@@ -1516,9 +1516,9 @@ In `for i in range(1, 11, 2)`, we pass in a third argument, called a _step_. Aft
 In this step, we:
 
 - Looked at a few puzzles about the `for` loop, which lay emphasis on the following aspects of for:
-    -   The importance of syntax elements such as the colon
-    -   Indentation
-    -   Variations of the `range()` function
+    - The importance of syntax elements such as the colon
+    - Indentation
+    - Variations of the `range()` function
 
 #### Step 16: Programming Exercise PE-BA-02 <a id="step-16-programming-exercise-pe-ba-02"></a>
 
@@ -1742,9 +1742,9 @@ A definition by itself cannot cause the code in its body to be executed.
 In this step, we:
 
 - Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:
-    -   Defining a method body
-    -   The way to invoke a method, to run its code
-    -   The difference between the two
+    - Defining a method body
+    - The way to invoke a method, to run its code
+    - The difference between the two
 
 #### Step 03: Passing Parameters To Methods <a id="step-03-passing-parameters-to-methods"></a>
 
@@ -1868,8 +1868,8 @@ How is a parameter different from an argument?
 - Inside the definition of the method, the name within parentheses is referred to as a **parameter**. In our recent exercise, `n` is a parameter, because it's used in the definition of `print_squares_of_numbers`.
 - When you are passing a value to a method during a method call, say `5`, that value is called an **argument**.
 - Don't worry too much about it. Just follow this convention for now:
-    -   In the method call, call it an _argument_.
-    -   In a method definition, call it a _parameter_.
+    - In the method call, call it an _argument_.
+    - In a method definition, call it a _parameter_.
 
 **Summary**
 
@@ -2896,12 +2896,12 @@ Let's run our code once again.
 **Design a menu**
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
 - Perform the Operation
 - Publish the Result
 
@@ -3742,25 +3742,25 @@ If we do not know, how many times a loop will run, `while` is a better option.
 Earlier we used `if` statement to implement a solution for this:
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
 - Perform the Operation
 - Publish the Result
 
 We would want to enhance it to execute in a loop multiple times, until the user chooses to exit. We will add an option 5 - Exit.
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
-        -   5 - Exit
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
+        - 5 - Exit
 - Perform the Operation
 - Publish the Result
 - Repeat until Option 5 is chosen.
@@ -4660,9 +4660,9 @@ How many seconds are there in a day?
 In this step, we:
 
 - Solved a Programming Exercise involving common scenarios, using Python code involving:
-    -   Expressions
-    -   Operators
-    -   Literals
+    - Expressions
+    - Operators
+    - Literals
 
 **Step 05: Puzzles On Expressions**
 
@@ -5048,12 +5048,12 @@ The above two examples can be used as a tip by newbie programmers when they form
 In this step, we:
 
 - Explored a number of puzzles related to code involving:
-    -   Built-in functions for numeric calculations
-    -   The `print()` function to display expressions and strings
+    - Built-in functions for numeric calculations
+    - The `print()` function to display expressions and strings
 - Covered the following aspects of the above utilities:
-    -   Case-sensitive aspects of names and strings
-    -   The role played by whitespace
-    -   The escape character, and common escape sequences
+    - Case-sensitive aspects of names and strings
+    - The role played by whitespace
+    - The escape character, and common escape sequences
 
 **Step 08: Formatted Output With print\(\)**
 
@@ -5202,9 +5202,9 @@ Index `0` will be replaced with the first parameter to `format()`.
 In this step, we:
 
 - Understood the behavior when the parameters passed to `format()`:
-    -   Exceed the indexes accessed by `print()`
-    -   Are less than the indexes accessed by `print()`
-    -   Are of type integer, floating-point or string
+    - Exceed the indexes accessed by `print()`
+    - Are less than the indexes accessed by `print()`
+    - Are of type integer, floating-point or string
 
 **Step 10: Introducing Variables**
 
@@ -5796,9 +5796,9 @@ In `for i in range(1, 11, 2)`, we pass in a third argument, called a _step_. Aft
 In this step, we:
 
 - Looked at a few puzzles about the `for` loop, which lay emphasis on the following aspects of for:
-    -   The importance of syntax elements such as the colon
-    -   Indentation
-    -   Variations of the `range()` function
+    - The importance of syntax elements such as the colon
+    - Indentation
+    - Variations of the `range()` function
 
 **Step 16: Programming Exercise PE-BA-02**
 
@@ -6136,9 +6136,9 @@ A definition by itself cannot cause the code in its body to be executed.
 In this step, we:
 
 - Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:
-    -   Defining a method body
-    -   The way to invoke a method, to run its code
-    -   The difference between the two
+    - Defining a method body
+    - The way to invoke a method, to run its code
+    - The difference between the two
 
 **Step 03: Passing Parameters To Methods**
 
@@ -6340,8 +6340,8 @@ How is a parameter different from an argument?
 - Inside the definition of the method, the name within parentheses is referred to as a **parameter**. In our recent exercise, `n` is a parameter, because it's used in the definition of `print_squares_of_numbers`.
 - When you are passing a value to a method during a method call, say `5`, that value is called an **argument**.
 - Don't worry too much about it. Just follow this convention for now:
-    -   In the method call, call it an _argument_.
-    -   In a method definition, call it a _parameter_.
+    - In the method call, call it an _argument_.
+    - In a method definition, call it a _parameter_.
 
 **Summary**
 
@@ -7869,12 +7869,12 @@ Let's run our code once again.
 **Design a menu**
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
 - Perform the Operation
 - Publish the Result
 
@@ -9220,25 +9220,25 @@ If we do not know, how many times a loop will run, `while` is a better option.
 Earlier we used `if` statement to implement a solution for this:
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
 - Perform the Operation
 - Publish the Result
 
 We would want to enhance it to execute in a loop multiple times, until the user chooses to exit. We will add an option 5 - Exit.
 
 - Ask the User for input:
-    -   Enter two numbers
-    -   Choose the Option:
-        -   1 - Add
-        -   2 - Subtract
-        -   3 - Multiply
-        -   4 - Divide
-        -   5 - Exit
+    - Enter two numbers
+    - Choose the Option:
+        - 1 - Add
+        - 2 - Subtract
+        - 3 - Multiply
+        - 4 - Divide
+        - 5 - Exit
 - Perform the Operation
 - Publish the Result
 - Repeat until Option 5 is chosen.

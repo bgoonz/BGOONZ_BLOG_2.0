@@ -42,45 +42,45 @@ template: docs
 - [TEAM MEMBERS](https://bryan-guner.gitbook.io/lambda-labs/navigation/team-members)
 - [Running List Of Notes Links & Pertinent Info From Meetings](https://bryan-guner.gitbook.io/lambda-labs/navigation/running-list-of-notes-links-and-pertinent-info-from-meetings)
 - [Trello](https://bryan-guner.gitbook.io/lambda-labs/navigation/trello/README)
-    -   [Github/Trello Integration](https://bryan-guner.gitbook.io/lambda-labs/navigation/trello/github-trello-integration)
+    - [Github/Trello Integration](https://bryan-guner.gitbook.io/lambda-labs/navigation/trello/github-trello-integration)
 
 ## UX
 
 - [UX_TOPICS](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/README)
-    -   [Action Items:](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/action-items)
-    -   [Accessibility](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/accessibility)
-    -   [Figma Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
-        -   [Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
-        -   [Prototyping In Figma](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/prototyping-in-figma)
-        -   [More Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/more-notes)
-    -   [UX-Design](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ux-design/README)
-        -   [Facebook Graph API](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ux-design/facebook-graph-api)
-    -   [Ant Design](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/README)
-        -   [ANT Components](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/README)
-            -   [Buttons](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/buttons)
-        -   [ANT DOCS](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-docs)
-        -   [Application (Codesandbox)](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
-    -   [Examples](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/examples)
-    -   [How to add external URL links to your prototype](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/how-to-add-external-url-links-to-your-prototype)
+    - [Action Items:](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/action-items)
+    - [Accessibility](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/accessibility)
+    - [Figma Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/README)
+        - [Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/notes)
+        - [Prototyping In Figma](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/prototyping-in-figma)
+        - [More Notes](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/figma-notes/more-notes)
+    - [UX-Design](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ux-design/README)
+        - [Facebook Graph API](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ux-design/facebook-graph-api)
+    - [Ant Design](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/README)
+        - [ANT Components](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/README)
+            - [Buttons](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-components/buttons)
+        - [ANT DOCS](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/ant-docs)
+        - [Application (Codesandbox)](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/ant-design/application-codesandbox)
+    - [Examples](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/examples)
+    - [How to add external URL links to your prototype](https://bryan-guner.gitbook.io/lambda-labs/ux/untitled/how-to-add-external-url-links-to-your-prototype)
 
 ## CANVAS
 
 - [Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/README)
-    -   [What's Inclusive Design?](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/whats-inclusive-design)
-    -   [Accessibility](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/accessibility)
-    -   [What are Design Systems?](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/what-are-design-systems)
+    - [What's Inclusive Design?](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/whats-inclusive-design)
+    - [Accessibility](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/accessibility)
+    - [What are Design Systems?](https://bryan-guner.gitbook.io/lambda-labs/canvas/design/what-are-design-systems)
 - [Canvas](https://bryan-guner.gitbook.io/lambda-labs/canvas/canvas)
 - [Notes](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/README)
-    -   [User Experience Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/user-experience-design)
-    -   [User Research](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/user-research)
-    -   [Interaction Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/interaction-design)
+    - [User Experience Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/user-experience-design)
+    - [User Research](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/user-research)
+    - [Interaction Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/notes/interaction-design)
 - [UX-Engineer](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/README)
-    -   [Patterns](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/patterns)
-    -   [Design Tools](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/design-tools)
-    -   [Design Critiques](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/design-critiques)
-    -   [Product Review](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/product-review)
-    -   [Quiz](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/quiz)
-    -   [Seven Principles of Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/seven-principles-of-design)
+    - [Patterns](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/patterns)
+    - [Design Tools](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/design-tools)
+    - [Design Critiques](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/design-critiques)
+    - [Product Review](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/product-review)
+    - [Quiz](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/quiz)
+    - [Seven Principles of Design](https://bryan-guner.gitbook.io/lambda-labs/canvas/ux-engineer/seven-principles-of-design)
 
 ## Front End
 
@@ -90,16 +90,16 @@ template: docs
 ## Back End
 
 - [Backend:](https://bryan-guner.gitbook.io/lambda-labs/back-end/untitled/README)
-    -   [API](https://bryan-guner.gitbook.io/lambda-labs/back-end/untitled/api)
+    - [API](https://bryan-guner.gitbook.io/lambda-labs/back-end/untitled/api)
 
 ## Research
 
 - [Research Navigation](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/README)
-    -   [Front End](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/front-end)
-    -   [Back End](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/back-end)
-    -   [UX](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/ux)
-    -   [PTM](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/ptm)
-    -   [General](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/general)
+    - [Front End](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/front-end)
+    - [Back End](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/back-end)
+    - [UX](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/ux)
+    - [PTM](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/ptm)
+    - [General](https://bryan-guner.gitbook.io/lambda-labs/research/untitled/general)
 
 ## DS_API
 
@@ -108,7 +108,7 @@ template: docs
 ## ROLES
 
 - [TEAM ROLES](https://bryan-guner.gitbook.io/lambda-labs/roles/untitled/README)
-    -   [Bryan Guner](https://bryan-guner.gitbook.io/lambda-labs/roles/untitled/bryan-guner)
+    - [Bryan Guner](https://bryan-guner.gitbook.io/lambda-labs/roles/untitled/bryan-guner)
 
 ## Action Items
 
@@ -128,14 +128,14 @@ template: docs
 ## Standup Notes
 
 - [Meeting Notes](https://bryan-guner.gitbook.io/lambda-labs/standup-notes/meeting-notes/README)
-    -   [Stakeholder Meeting 1](https://bryan-guner.gitbook.io/lambda-labs/standup-notes/meeting-notes/overview)
-    -   [9/29/2021](https://bryan-guner.gitbook.io/lambda-labs/standup-notes/meeting-notes/9-29-2021)
+    - [Stakeholder Meeting 1](https://bryan-guner.gitbook.io/lambda-labs/standup-notes/meeting-notes/overview)
+    - [9/29/2021](https://bryan-guner.gitbook.io/lambda-labs/standup-notes/meeting-notes/9-29-2021)
 
 ## GitHub & Project Practice
 
 - [GitHub](https://bryan-guner.gitbook.io/lambda-labs/github-and-project-practice/untitled/README)
-    -   [Github Guide](https://bryan-guner.gitbook.io/lambda-labs/github-and-project-practice/untitled/untitled)
-    -   [Github Actions:](https://bryan-guner.gitbook.io/lambda-labs/github-and-project-practice/untitled/github-actions)
+    - [Github Guide](https://bryan-guner.gitbook.io/lambda-labs/github-and-project-practice/untitled/untitled)
+    - [Github Actions:](https://bryan-guner.gitbook.io/lambda-labs/github-and-project-practice/untitled/github-actions)
 
 ## MISC
 
@@ -144,33 +144,33 @@ template: docs
 ## Background Information
 
 - [Background Info](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/README)
-    -   [Swagger OPEN API SPECIFICATION](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/swagger-open-api-specification)
-    -   [GITHUB:](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/README)
-        -   [Git Bash](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/git-bash)
-        -   [Git Prune:](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/git-prune)
+    - [Swagger OPEN API SPECIFICATION](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/swagger-open-api-specification)
+    - [GITHUB:](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/README)
+        - [Git Bash](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/git-bash)
+        - [Git Prune:](https://bryan-guner.gitbook.io/lambda-labs/background-information/background-info/github/git-prune)
 
 ## DOCS
 
 - [Coding](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/README)
-    -   [Environment Variables](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/environment-variables)
-    -   [Git Rebase:](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/git-rebase)
-    -   [Git Workflow:](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/git-workflow)
-    -   [Linting and Formatting](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/linting-and-formatting)
+    - [Environment Variables](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/environment-variables)
+    - [Git Rebase:](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/git-rebase)
+    - [Git Workflow:](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/git-workflow)
+    - [Linting and Formatting](https://bryan-guner.gitbook.io/lambda-labs/docs/coding/linting-and-formatting)
 - [Project Docs](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/README)
-    -   [Eng-Docs-Home](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/eng-docs-home)
-    -   [Basic Node API](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/basic-node-api)
-    -   [Contributing to this scaffold project](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/contributing-to-this-scaffold-project)
-    -   [Examples:](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/examples)
+    - [Eng-Docs-Home](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/eng-docs-home)
+    - [Basic Node API](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/basic-node-api)
+    - [Contributing to this scaffold project](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/contributing-to-this-scaffold-project)
+    - [Examples:](https://bryan-guner.gitbook.io/lambda-labs/docs/project-docs/examples)
 - [PROJECT DESCRIPTION (Feature List)](https://bryan-guner.gitbook.io/lambda-labs/docs/project-description)
 - [Labs Learners Guide](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-learners-guide)
 - [REACT](https://bryan-guner.gitbook.io/lambda-labs/docs/react/README)
-    -   [Create React App](https://bryan-guner.gitbook.io/lambda-labs/docs/react/untitled)
-    -   [Awesome React](https://bryan-guner.gitbook.io/lambda-labs/docs/react/awesome-react)
+    - [Create React App](https://bryan-guner.gitbook.io/lambda-labs/docs/react/untitled)
+    - [Awesome React](https://bryan-guner.gitbook.io/lambda-labs/docs/react/awesome-react)
 - [Links](https://bryan-guner.gitbook.io/lambda-labs/docs/untitled)
 - [Labs Engineering Docs](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/README)
-    -   [Okta Basics](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/okta-basics)
-    -   [Roadmap](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/roadmap)
-    -   [Repositories](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/repositories)
+    - [Okta Basics](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/okta-basics)
+    - [Roadmap](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/roadmap)
+    - [Repositories](https://bryan-guner.gitbook.io/lambda-labs/docs/labs-engineering-docs/repositories)
 
 ## Workflow
 
@@ -180,10 +180,10 @@ template: docs
 ## AWS
 
 - [AWS](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/README)
-    -   [Elastic Beanstalk](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/elastic-beanstalk/README)
-        -   [Elastic Beanstalk DNS](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/elastic-beanstalk/elastic-beanstalk-dns)
-    -   [Amplify:](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/amplify/README)
-        -   [Amplify-DNS](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/amplify/amplify-dns)
+    - [Elastic Beanstalk](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/elastic-beanstalk/README)
+        - [Elastic Beanstalk DNS](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/elastic-beanstalk/elastic-beanstalk-dns)
+    - [Amplify:](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/amplify/README)
+        - [Amplify-DNS](https://bryan-guner.gitbook.io/lambda-labs/aws/aws/amplify/amplify-dns)
 - [Account Basics](https://bryan-guner.gitbook.io/lambda-labs/aws/untitled-1)
 - [AWS-Networking](https://bryan-guner.gitbook.io/lambda-labs/aws/aws-networking)
 

@@ -3,7 +3,6 @@
 ```
 ```js
 
-
 /* *******************************************************************************************
  *
 ```
@@ -37,8 +36,6 @@ npm install --save prop-types  // runtime type checking for React props and simi
 
 ```
 ```js
-
-
 
 React.createElement().
 // You will not typically invoke
@@ -248,7 +245,6 @@ component = new Component();
 // Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 component.forceUpdate(callback)
 
-
 /* *******************************************************************************************
  *
 ```
@@ -263,7 +259,6 @@ React.DOM
 //------------------------------------------------------------------------------\\
 
 */
-
 
 // Render a React element into the DOM in the supplied container and return a reference
 // to the component (or returns null for stateless components).
@@ -288,7 +283,6 @@ ReactDOM.findDOMNode(component)
 // the hierarchy of the DOM component.
 ReactDOM.createPortal(child, container)
 
-
 /* *******************************************************************************************
  * REACTDOMSERVER
  * The ReactDOMServer object enables you to render components to static markup.
@@ -296,7 +290,6 @@ ReactDOM.createPortal(child, container)
 //------------------------------------------------------------------------------\\
 
 */
-
 
 // Render a React element to its initial HTML. React will return an HTML string.
 // You can use this method to generate HTML on the server and send the markup down on the initial
@@ -319,14 +312,12 @@ ReactDOMServer.renderToNodeStream(element)
 // page generator, as stripping away the extra attributes can save some bytes.
 ReactDOMServer.renderToStaticNodeStream(element)
 
-
 /* *******************************************************************************************
  * TYPECHECKING WITH PROPTYPES
  * https://reactjs.org/docs/typechecking-with-proptypes.html
 //------------------------------------------------------------------------------\\
 
 */
-
 
 import PropTypes from 'prop-types';
 

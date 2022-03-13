@@ -91,7 +91,6 @@ console.log(shallowCopy);
 renderer.3d.setTexture(model, 'character.png');     // a syntax error
 renderer['3d'].setTexture(model, 'character.png');  // works properly
 
-
 // 12. Combine two Arrays
 let thirdArray = firstArray.concat(secondArray);
 console.log(thirdArray);

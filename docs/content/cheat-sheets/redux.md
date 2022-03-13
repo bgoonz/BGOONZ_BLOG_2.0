@@ -2,7 +2,6 @@
 title: Redux
 category: React
 
-updated: 2018-01-17
 weight: -3
 ---
 

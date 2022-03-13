@@ -6,8 +6,6 @@ category: Markup
 
 ### Tomdoc
 
-
-
 ```ruby
 # Public: Duplicate some text an arbitrary number of times.
 #

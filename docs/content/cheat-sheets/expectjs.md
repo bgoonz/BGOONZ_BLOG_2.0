@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: expect.js
 category: JavaScript libraries
 
-updated: 2017-09-02
 weight: -1
 
 ---

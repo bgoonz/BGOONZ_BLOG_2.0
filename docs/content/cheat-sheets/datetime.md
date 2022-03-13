@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Date & time formats
 
 weight: -5
-updated: 2017-11-27
 tags: [Featurable]
 
 ---

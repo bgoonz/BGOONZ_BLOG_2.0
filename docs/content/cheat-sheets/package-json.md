@@ -3,7 +3,6 @@ title: package.json
 category: Node.js
 
 prism_languages: [json]
-updated: 2020-06-23
 weight: -3
 ---
 

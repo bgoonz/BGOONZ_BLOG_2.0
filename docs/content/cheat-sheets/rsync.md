@@ -7,8 +7,6 @@ weight: -1
 
 ### Basic example
 
-
-
 ```bash
 # syncing folder src into dest:
 rsync -avz ./src /dest

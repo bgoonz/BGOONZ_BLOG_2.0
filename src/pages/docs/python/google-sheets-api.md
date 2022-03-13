@@ -46,7 +46,7 @@ After creating a GCP project (step 1), we need to set up our credentials for acc
 - 
 - Find the _APIs & Services_ tab, and then select the _Credentials_ page
 
--   Click on \*+Create Credentials \*and select _OAuth client ID_.
+- Click on \*+Create Credentials \*and select _OAuth client ID_.
 
 <!---->
 
@@ -54,9 +54,9 @@ After creating a GCP project (step 1), we need to set up our credentials for acc
 - 
 - You will be prompted to set up your OAuth consent screen. Follow the steps you are prom
 - 
--   After generating your client ID, you will be able to see it on your credentials page.
+- After generating your client ID, you will be able to see it on your credentials page.
 
--   Click the download button to download a JSON file with your credentials. Rename it to _credentials.json_. You will need this in the next step.
+- Click the download button to download a JSON file with your credentials. Rename it to _credentials.json_. You will need this in the next step.
 
 ## Step 3: Set up the API
 
@@ -66,7 +66,7 @@ After creating a GCP project and generating your credentials, it is time to conn
 - 
 - Don't forget to move your _credentials.json_ file to the same folder where your _quickstart.py_ file is.
 
--   Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
+- Change the URL in the SCOPE list in the quickstart script to *https://www.googleapis.com/auth/spreadsheets* to make sure that you have both read and write access.
 
 If everything goes as expected, you should see this in your browser after running the sample script:
 

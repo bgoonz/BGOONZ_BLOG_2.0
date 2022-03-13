@@ -390,8 +390,8 @@ By doing this, Node.js achieves a few things:
 
 - It keeps top-level variables (defined with `var`, `const` or `let`) scoped to the module rather than the global object.
 - It helps to provide some global-looking variables that are actually specific to the module, such as:
-    -   The `module` and `exports` objects that the implementor can use to export values from the module.
-    -   The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
+    - The `module` and `exports` objects that the implementor can use to export values from the module.
+    - The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
 
 ### The module scope[#](https://nodejs.org/api/modules.html#modules_the_module_scope)
 
@@ -559,8 +559,8 @@ History
 
 - `request` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path to resolve.
 - `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-- -   `paths` [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
--   Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- - `paths` [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
+- Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 Use the internal `require()` machinery to look up the location of a module, but rather than loading the module, just return the resolved filename.
 

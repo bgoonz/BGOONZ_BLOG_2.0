@@ -31,8 +31,6 @@ Before the internet started being more complex with various web apps and progres
 
 Today, in contrast to the built-in search feature, developers have the option to pick and choose the solution that does the job best for their use case. For many, a website search is often the first dynamic part they'll be adding to their new Jamstack project.
 
-
-
 Get the **exclusive Jamstack** web dev case studies (and more) in your mailbox!
 
 ## jamstack-search/#site-search-solutions-available-in-jamstack)Site search solutions available in Jamstack
@@ -167,12 +165,6 @@ If you're building a simple, static website, try CloduSh, Typesense, or Js-Searc
 
 </details>
 
-
-
-
-
-
-
 <br>
 <br>
 <br>
@@ -195,8 +187,6 @@ If you're building a simple, static website, try CloduSh, Typesense, or Js-Searc
 <br>
 <br>
 <br>
-
-
 
 <center>
 
@@ -295,9 +285,6 @@ From the console run `gatsby develop` and then navigate to the page, which is ty
 
 ###### We're done!
 
-
-
-
 <br>
 <br>
 <br>
@@ -318,8 +305,6 @@ From the console run `gatsby develop` and then navigate to the page, which is ty
 <br>
 <br>
 <br>
-
-
 
 ### Customizing the Output
 

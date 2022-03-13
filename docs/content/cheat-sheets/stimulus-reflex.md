@@ -2,7 +2,6 @@
 title: StimulusReflex
 category: Ruby
 
-updated: 2021-01-07
 ---
 
 ### via Data Attributes

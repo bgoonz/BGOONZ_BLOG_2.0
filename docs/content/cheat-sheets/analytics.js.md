@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Google Analytics's analytics.js
 category: Analytics
 
-updated: 2017-10-29
 intro: |
 Google Analytics's analytics.js is deprecated.
 

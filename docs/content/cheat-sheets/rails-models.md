@@ -560,8 +560,6 @@ class User < ActiveRecord::Base
 end
 ```
 
-
-
 ```ruby
 # Reading it raises SerializationTypeMismatch
 user = User.create(preferences: %w(one two three))

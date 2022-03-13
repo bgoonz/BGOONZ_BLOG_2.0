@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Cron
 category: CLI
 
-updated: 2018-05-03
 weight: -3
 
 ---

@@ -77,13 +77,13 @@ template: docs
 - 
 - Class Components require render() method to return JSX.
 
--   Functional Components directly return JSX.
+- Functional Components directly return JSX.
 
--   Class is className in React.
+- Class is className in React.
 
--   When parsing for an integer just chain Number.parseInt("123")
+- When parsing for an integer just chain Number.parseInt("123")
 
--   Use ternary operator if you want to make a conditional inside a fragment.
+- Use ternary operator if you want to make a conditional inside a fragment.
 
 <!---->
 
@@ -111,25 +111,25 @@ template: docs
 - 
 - React manages the creation and updating of DOM nodes in your Web page.
 - 
--   All it does is dynamically render stuff into your DOM.
+- All it does is dynamically render stuff into your DOM.
 
--   What it doesn't do:
+- What it doesn't do:
 
--   Ajax
+- Ajax
 
--   Services
+- Services
 
--   Local Storage
+- Local Storage
 
--   Provide a CSS framework
+- Provide a CSS framework
 
--   React is unopinionated
+- React is unopinionated
 
--   Just contains a few rules for developers to follow, and it just works.
+- Just contains a few rules for developers to follow, and it just works.
 
--   JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)
+- JSX : Javascript Extension is a language invented to help write React Applications (looks like a mixture of JS and HTML)
 
--   Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:
+- Here is an overview of the difference between rendering out vanilla JS to create elements, and JSX:
 
 <!---->
 
@@ -137,21 +137,21 @@ template: docs
 - 
 - React DevTools : New tool in your browser to see ow React is working in the browser
 - 
--   create-react-app : Extensible command-line tool to help generate standard React applications.
+- create-react-app : Extensible command-line tool to help generate standard React applications.
 
--   Webpack : In between tool for dealing with the extra build step involved.
+- Webpack : In between tool for dealing with the extra build step involved.
 
 <!---->
 
 - HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.
 - 
--   React Developers created something called Flux Architecture to moderate how their web page consumes and modifies data received from back-end API's.
+- React Developers created something called Flux Architecture to moderate how their web page consumes and modifies data received from back-end API's.
 
 <!---->
 
 - Choosing React
 - 
--   Basically, React is super important to learn and master.
+- Basically, React is super important to learn and master.
 
 # React Concepts and Features
 
@@ -171,19 +171,19 @@ There are many benefits to using React over just Vanilla JavaScript.
 - 
 - React is declarative in nature, utilizing either it's built-in createElement method or the higher-level language known as JSX.
 - 
--   Reusability
+- Reusability
 
--   Create elements that can be re-used over and over. One-flow of data
+- Create elements that can be re-used over and over. One-flow of data
 
--   React apps are built as a combination of parent and child components.
+- React apps are built as a combination of parent and child components.
 
--   Parents can have one or more child components, all children have parents.
+- Parents can have one or more child components, all children have parents.
 
--   Data is never passed from child to the parent.
+- Data is never passed from child to the parent.
 
--   Virtual DOM : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.
+- Virtual DOM : React provides a Virtual DOM that acts as an agent between the real DOM and the developer to help debug, maintain, and provide general use.
 
--   Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.
+- Due to this usage, React handles web pages much more intelligently; making it one of the speediest Front End Libraries available.
 
 # ES6 Refresher
 
@@ -217,7 +217,7 @@ Aliasing imports
 
 - Use as asterisk to import an entire module's contents.
 - 
--   Keep in mind you must use an as keyword to refer to it later.
+- Keep in mind you must use an as keyword to refer to it later.
 
 <!---->
 
@@ -227,7 +227,7 @@ Browser support for ES6 Modules
 
 - ES6 Modules can only be used when a JS file is specified as a module. \<script type="module" src="./wallet.js">\</script>
 - 
--   You can get browser support for ES6 modules by adding module into your script tag.
+- You can get browser support for ES6 modules by adding module into your script tag.
 
 # Notes
 
@@ -239,9 +239,9 @@ Browser support for ES6 Modules
 - 
 - Use Dot Notation for JSX Type
 
--   User-Defined Components Must Be Capitalized \<Foo /> vs \<div>
+- User-Defined Components Must Be Capitalized \<Foo /> vs \<div>
 
--   Cannot use a general expression as the React element type. (Incorrect)
+- Cannot use a general expression as the React element type. (Incorrect)
 
 (Corrected)
 
@@ -249,7 +249,7 @@ Props in JSX
 
 - Several ways to specify props in JSX.
 - 
--   Javascript Expressions as Props
+- Javascript Expressions as Props
 
 <!---->
 
@@ -277,7 +277,7 @@ Booleans, Null, and Undefined Are Ignored
 - 
 - They will not render.
 
--   You can use these to conditionally render items.
+- You can use these to conditionally render items.
 
 <!---->
 
@@ -287,7 +287,7 @@ Booleans, Null, and Undefined Are Ignored
 
 - Note that certain falsy values such as zero will still be rendered by React, you can work around this by ensuring situations like the above eval. into a boolean.
 - 
--   In the times you want booleans to be rendered out, simply convert it into a string first.
+- In the times you want booleans to be rendered out, simply convert it into a string first.
 
 # Reconciliation
 
@@ -299,9 +299,9 @@ The Diffing Algorithm
 - 
 - Every time the root elements have different types, React tears down the old tree and builds the new tree from scratch.
 
--   DOM Elements Of the Same Type
+- DOM Elements Of the Same Type
 
--   When comparing two DOM elements of the same type, React keeps the same underlying DOM node and only updates the changes attributes.
+- When comparing two DOM elements of the same type, React keeps the same underlying DOM node and only updates the changes attributes.
 
 <!---->
 
@@ -315,15 +315,15 @@ The Diffing Algorithm
 - 
 - React will iterate both lists of children and generate a mutation whenever there's a
 - 
--   This is why we use keys.
+- This is why we use keys.
 
--   Makes it easier for React to match children in the original tree with children in the subsequent tree.
+- Makes it easier for React to match children in the original tree with children in the subsequent tree.
 
--   Tradeoffs
+- Tradeoffs
 
--   Important to remember that reconciliation algorithm is an _implementation detail_.
+- Important to remember that reconciliation algorithm is an _implementation detail_.
 
--   Re-rendering only to apply the differences following the rules stated in the previous sections.
+- Re-rendering only to apply the differences following the rules stated in the previous sections.
 
 # Typechecking With PropTypes![](https://miro.medium.com/max/60/0*8ls0PmtREELbf5Wm?q=20)![](https://miro.medium.com/max/630/0*8ls0PmtREELbf5Wm)&#xA;&#xA;&#xA;
 
@@ -331,9 +331,9 @@ The Diffing Algorithm
 - 
 - propTypes is a special property to run typechecking.
 - 
--   exports range of built in validators to ensure your received data is valid.
+- exports range of built in validators to ensure your received data is valid.
 
--   propTypes is only checked in development mode.
+- propTypes is only checked in development mode.
 
 Requiring Single Child
 
@@ -365,21 +365,21 @@ Default Prop Values
 - 
 - Wrap it around components.
 
--   Creates a React Context that passes routing information down to all its descendant components.
+- Creates a React Context that passes routing information down to all its descendant components.
 
--   You can also use HashRouter, where it would generate a hash before the endpoint. Creating frontend routes
+- You can also use HashRouter, where it would generate a hash before the endpoint. Creating frontend routes
 
--   React Router helps your app render specific components based on the URL.
+- React Router helps your app render specific components based on the URL.
 
--   The most common component is \<Route>
+- The most common component is \<Route>
 
--   Wrapped around another component, causing the comp. to only render if the a certain URL is matched.
+- Wrapped around another component, causing the comp. to only render if the a certain URL is matched.
 
--   Props : path, component, exact, and \[render]
+- Props : path, component, exact, and \[render]
 
--   Browser Router can only have a single child component.
+- Browser Router can only have a single child component.
 
--   The Browser Router wraps all routes within a parent div element.
+- The Browser Router wraps all routes within a parent div element.
 
 <!---->
 
@@ -397,25 +397,25 @@ Default Prop Values
 - 
 - render
 - 
--   Optional prop that takes in a function to be called.
+- Optional prop that takes in a function to be called.
 
--   Causes extra work for React.
+- Causes extra work for React.
 
--   Preferred for inline rendering of simple functional components.
+- Preferred for inline rendering of simple functional components.
 
--   Difference between component and render is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.
+- Difference between component and render is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.
 
--   // This inline rendering will work, but is unnecessarily slow. \<Route path="/hello" component={() => \<h1>Hello!\</h1>} /> // This is the preferred way for inline rendering. \<Route path="/hello" render={() => \<h1>Hello!\</h1>} />
+- // This inline rendering will work, but is unnecessarily slow. \<Route path="/hello" component={() => \<h1>Hello!\</h1>} /> // This is the preferred way for inline rendering. \<Route path="/hello" render={() => \<h1>Hello!\</h1>} />
 
--   Also useful if you need to pass in specific props to a component.
+- Also useful if you need to pass in specific props to a component.
 
--   // \`users\` to be passed as a prop: const users = { 1: { name: "Andrew" }, 2: { name: "Raymond" }, }; \<Route path="/users" render={() => \<Users users={users} />} />;
+- // \`users\` to be passed as a prop: const users = { 1: { name: "Andrew" }, 2: { name: "Raymond" }, }; \<Route path="/users" render={() => \<Users users={users} />} />;
 
 Route path params
 
 - Your component's props can hold information about URL's parameters.
 - 
--   Will match segments starting at : to the next /, ?, #.
+- Will match segments starting at : to the next /, ?, #.
 
 <!---->
 
@@ -427,11 +427,11 @@ Route path params
 - 
 - isExact : boolean that tells you whether or not the URL exactly matches the path.
 
--   url : the currentURL
+- url : the currentURL
 
--   path : Route path it matched against (w/o wildcards)
+- path : Route path it matched against (w/o wildcards)
 
--   params : Matches for the individual wildcard segments.
+- params : Matches for the individual wildcard segments.
 
 # Navigation
 
@@ -441,7 +441,7 @@ React Router Navigation
 - 
 - Issues on-click navigation event to a route defined in app.
 
--   Usage renders an anchor tag with a correctly set href attribute.
+- Usage renders an anchor tag with a correctly set href attribute.
 
 <!---->
 
@@ -461,19 +461,19 @@ React Router Navigation
 - 
 - activeClassName : allows you to set a CSS class name for styling. (default set to 'active')
 
--   activeStyle : style object that is applied inline when it's to prop. matches the current URL.
+- activeStyle : style object that is applied inline when it's to prop. matches the current URL.
 
--   exact prop is a boolean that defaults to false; you can set it to true to apply requirement of an exact URL match.
+- exact prop is a boolean that defaults to false; you can set it to true to apply requirement of an exact URL match.
 
--   exact can also be used as a flag instead of a reg. property value.
+- exact can also be used as a flag instead of a reg. property value.
 
--   benefit of adding this is so that you don't trigger other matches. Switching between routes
+- benefit of adding this is so that you don't trigger other matches. Switching between routes
 
--   \<Switch> : Component allows you to only render one route even if several match the current URL.
+- \<Switch> : Component allows you to only render one route even if several match the current URL.
 
--   You may nest as many routes as you wish but only the first match of the current URL will be rendered.
+- You may nest as many routes as you wish but only the first match of the current URL will be rendered.
 
--   Very useful if we want a default component to render if none of our routes match.
+- Very useful if we want a default component to render if none of our routes match.
 
 <!---->
 
@@ -481,7 +481,7 @@ React Router Navigation
 - 
 - \<Redirect> : Helps redirect users.
 
--   Only takes a single prop: to.
+- Only takes a single prop: to.
 
 History
 
@@ -489,9 +489,9 @@ History
 - 
 - Contains two useful methods:
 - 
--   push : Adds a new URL to the end of the history stack.
+- push : Adds a new URL to the end of the history stack.
 
--   replace : Replaces the current URL on the history stack, so the back button won't take you to it.
+- replace : Replaces the current URL on the history stack, so the back button won't take you to it.
 
 # Nested Routes
 
@@ -519,17 +519,17 @@ Alt. version using props.match
 - 
 - Tree Shaking : Process of removing unused or dead code from your application before it's bundled. Configuration or code?
 
--   Configuration allows developers to create build tasks by declaring either JSON, XML, or YAML without explicitly writing every step in the process.
+- Configuration allows developers to create build tasks by declaring either JSON, XML, or YAML without explicitly writing every step in the process.
 
--   Coding or Scripting simply requires code. Babel and webpack (yes, that's intentionally a lowercase 'w')
+- Coding or Scripting simply requires code. Babel and webpack (yes, that's intentionally a lowercase 'w')
 
--   Babel : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.
+- Babel : Code Transpiler that allows you to use all of the latest features and syntax wihtout worrying about what browsers support what.
 
--   webpack : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.
+- webpack : Allows developers to use JS modules w/o requiring users to use a browser that natively supports ES modules.
 
--   Create React App uses webpack and Babel under the hood to build applications. The Create React App build process
+- Create React App uses webpack and Babel under the hood to build applications. The Create React App build process
 
--   What happens when you run npm start:
+- What happens when you run npm start:
 
 1.  .env variables are loaded.
 
@@ -549,7 +549,7 @@ Alt. version using props.match
 
 - There is a script in Create React App called eject that allows you to 'eject' your application and expose all the hidden stuff. Preparing to deploy a React application for production
 - 
--   Defining Env Variables
+- Defining Env Variables
 
 Configuring the supported browsers
 
@@ -557,7 +557,7 @@ Configuring the supported browsers
 - 
 - Run npm run build to create a production build.
 
--   Bundles React in production mode and optimizes the build for the best performance.
+- Bundles React in production mode and optimizes the build for the best performance.
 
 # Notes
 
@@ -567,7 +567,7 @@ Configuring the supported browsers
 - 
 - Tree Diffing : Fast comparison and patching of data by comparing the current virtual DOM and new virtual DOM - updating only the pieces that change.
 
--   It's just a tree with some fancy diffing
+- It's just a tree with some fancy diffing
 
 # Create Element
 
@@ -581,9 +581,9 @@ From JavaScript To DOM
 - 
 - Props : Object that contains data to render the element.
 - 
--   Children : Children of the elemet, as many as you want. Creating elements
+- Children : Children of the elemet, as many as you want. Creating elements
 
--   Our rendering goal:
+- Our rendering goal:
 
 <!---->
 
@@ -599,15 +599,15 @@ From JavaScript To DOM
 - 
 - Each li has a class (or className in React)
 
--   Both a ele's have href attributes
+- Both a ele's have href attributes
 
--   Also keep in mind the parent child relationships happening between the tags.
+- Also keep in mind the parent child relationships happening between the tags.
 
--   ul is the parent of both li
+- ul is the parent of both li
 
--   Each li has an a element as a child
+- Each li has an a element as a child
 
--   Each a has a text content child
+- Each a has a text content child
 
 Converting to virtual DOM
 
@@ -619,9 +619,9 @@ Converting to virtual DOM
 - 
 - If you call React.render a second or multiple times i
 - 
--   Components are pieces of reusable front-end pieces.
+- Components are pieces of reusable front-end pieces.
 
--   Components should be Single Responsibility Principle compliant.
+- Components should be Single Responsibility Principle compliant.
 
 # Create Element
 
@@ -639,9 +639,9 @@ React Version
 - 
 - Remember the data tha
 - 
--   props : Properties;
+- props : Properties;
 
--   To handle certain values that are initially undefined, we can use defaultProps.
+- To handle certain values that are initially undefined, we can use defaultProps.
 
 <!---->
 
@@ -649,9 +649,9 @@ React Version
 - 
 - If we fetch multiple pieces of data, we can render many
 - 
--   You need to assign a unique key to each of the clues.
+- You need to assign a unique key to each of the clues.
 
--   We need to keep track of them individually so that React can easily refer to a specific one if there is an issue. clue => { key:clue.id, ...clue }
+- We need to keep track of them individually so that React can easily refer to a specific one if there is an issue. clue => { key:clue.id, ...clue }
 
 <!---->
 
@@ -663,7 +663,7 @@ React Version
 - 
 - These import statements, import global variables.
 
--   When we want to move our code into production we need to change the imports into the production minified versions.
+- When we want to move our code into production we need to change the imports into the production minified versions.
 
 <!---->
 
@@ -673,7 +673,7 @@ React Version
 
 - JSX : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX
 - 
--   We will use babel to convert version of modern JS into an older version of JS. React Create Element
+- We will use babel to convert version of modern JS into an older version of JS. React Create Element
 
 JSX Version
 
@@ -699,19 +699,19 @@ JSX Version
 - 
 - htmlFor : Because for is protected keyword, React elements use this instead.
 
--   onChange : Event fired whenever a form field is changed.
+- onChange : Event fired whenever a form field is changed.
 
--   style : Accepts a JS object with camelCase properties rather than a CSS string.
+- style : Accepts a JS object with camelCase properties rather than a CSS string.
 
--   value : Supported by Input, Select, and TextArea components; use it to set the value of the component.
+- value : Supported by Input, Select, and TextArea components; use it to set the value of the component.
 
--   Note: React uses camel-case!!! The JSX semicolon gotcha
+- Note: React uses camel-case!!! The JSX semicolon gotcha
 
 create Element equivalent
 
 - We wrap what want to return in parenthesis so JS doesn't auto add semi-colons after every line and run the code incorrectly.
 - 
--   Just remember if you decided to use the return keyword in a function to 'return some JSX', then make sure you wrap the JSX in parenthesis.
+- Just remember if you decided to use the return keyword in a function to 'return some JSX', then make sure you wrap the JSX in parenthesis.
 
 npx create-react-app my-app
 
@@ -721,9 +721,9 @@ npx create-react-app my-app
 - 
 - React errors will be rendered directly onto the browser window.
 
--   A downside is that it installs a lot of bloat files.
+- A downside is that it installs a lot of bloat files.
 
--   Examples of React create Element and JSX equivalent
+- Examples of React create Element and JSX equivalent
 
 More Complex JSX Example
 
@@ -743,19 +743,19 @@ Using a Custom Template npx create-react-app my-app --template @appacademy/simpl
 - 
 - robots.txt
 
--   logo192.png
+- logo192.png
 
--   logo512.png
+- logo512.png
 
--   manifest.json
+- manifest.json
 
--   You can also simplify the html file into:
+- You can also simplify the html file into:
 
 Simplifying the src folder
 
 - Remove: App.css App.test.js logo.svg serviceWorker.js setupTests.js
 - 
--   Update the Following Files:
+- Update the Following Files:
 
 # React Class Components
 
@@ -767,7 +767,7 @@ ES2015 Version
 
 - We can access props within a class component by using this.props
 - 
--   Keep in mind Class Components are used just like function components.
+- Keep in mind Class Components are used just like function components.
 
 Setting and accessing props
 
@@ -785,19 +785,19 @@ Setting and accessing props
 - 
 - State is data that is internal to the component.
 - 
--   Intended to be updated or mutated. When to use state
+- Intended to be updated or mutated. When to use state
 
--   _Only Use State when it is absolutely necessary_
+- _Only Use State when it is absolutely necessary_
 
--   If the data never changes, or if it's needed through an entire application use props instead.
+- If the data never changes, or if it's needed through an entire application use props instead.
 
--   State is more often used when creating components that retrieve data from APIs or render forms.
+- State is more often used when creating components that retrieve data from APIs or render forms.
 
--   The general rule of thumb: If a component doesn't need to use state or lifecyle methods, it should be prioritized as a function component.
+- The general rule of thumb: If a component doesn't need to use state or lifecyle methods, it should be prioritized as a function component.
 
--   Functional:Stateless || Class:Stateful Initializing state
+- Functional:Stateless || Class:Stateful Initializing state
 
--   Use a class constructor method to initialize this.state object. // Application Entry Point
+- Use a class constructor method to initialize this.state object. // Application Entry Point
 
 // Class Component: RandomQuote
 
@@ -809,11 +809,11 @@ Updating State
 - 
 - \<button type="button" onClick={this.changeQuote}
 - 
--   onClick is the event listener.
+- onClick is the event listener.
 
--   {this.changeQuote} is the event handler method.
+- {this.changeQuote} is the event handler method.
 
--   Our Class Component File should now look like this with the new additions:
+- Our Class Component File should now look like this with the new additions:
 
 Don't modify state directly
 
@@ -823,11 +823,11 @@ Don't modify state directly
 - 
 - This is because when you only use this.state to re-assign, no re-rendering will occur => leaving our component out of sync. Properly updating state from the previ
 - 
--   In our current example, the way we have changeQuote set up leaves us with occasionally producing the same index twice in a row.
+- In our current example, the way we have changeQuote set up leaves us with occasionally producing the same index twice in a row.
 
--   One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)
+- One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)
 
--   A safe method is to pass an anonymous method to this.setState (instead of an object literal) Previous
+- A safe method is to pass an anonymous method to this.setState (instead of an object literal) Previous
 
 Passing w/ Anon Method
 
@@ -839,9 +839,9 @@ Providing default values for props
 - 
 - We can make quotes more dynamic by replacing our static array with a props argument passed into super.
 
--   constructor(props) { super(props); }
+- constructor(props) { super(props); }
 
--   We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point
+- We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point
 
 <!---->
 
@@ -851,7 +851,7 @@ Providing default values for props
 
 - A good safety net in case the consumer/caller doesn't provide a value for the quotes array.
 - 
--   We can even remove it from our index.js now and an error will not be thrown.
+- We can even remove it from our index.js now and an error will not be thrown.
 
 # Handling Events![](https://miro.medium.com/max/1400/0*c24XQBvqBBg0Eztz)![](https://miro.medium.com/max/1400/0*N7KFfhOZZ7UrY8s4)![](https://miro.medium.com/max/60/0*ywV6dO4a4QcGJxK5?q=20)![](https://miro.medium.com/max/630/0*ywV6dO4a4QcGJxK5)![](https://miro.medium.com/max/60/0*Nd73GjTY1PVQtjtQ?q=20)![](https://miro.medium.com/max/630/0*Nd73GjTY1PVQtjtQ)&#xA;&#xA;
 
@@ -863,9 +863,9 @@ Providing default values for props
 - 
 - HTML Elements in the browser often have a lot of default behavior.
 - 
--   I.E. Clicking on an \<a> element navigates so a resource denoted by \<href> property.
+- I.E. Clicking on an \<a> element navigates so a resource denoted by \<href> property.
 
--   Here is an example of where using e.preventDefault() could come in handy.
+- Here is an example of where using e.preventDefault() could come in handy.
 
 <!---->
 
@@ -873,19 +873,19 @@ Providing default values for props
 - 
 - We can stick an e.preventDefault() into the actual method to get around this problem.
 
--   e : Parameter that references a Synthetic Event object type. Using this in event handlers
+- e : Parameter that references a Synthetic Event object type. Using this in event handlers
 
 <!---->
 
 - When we console log this we see the AlertButton object.
 - 
--   If we were to write the showAlert method with a regular class method like:
+- If we were to write the showAlert method with a regular class method like:
 
 <!---->
 
 - We would get undefined => remember that fat arrow binds to the current context! Reviewing class methods and the this keyword
 - 
--   Let's refresh on binding.
+- Let's refresh on binding.
 
 <!---->
 
@@ -895,17 +895,17 @@ Providing default values for props
 - 
 - Remember we can use the bind method to rebind context!
 - 
--   We can refactor to get the second call working like this:
+- We can refactor to get the second call working like this:
 
--   const displayAgain = Ming.displayName.bind(Ming); displayAgain(); // => Now Momato Riruru will be printed out.
+- const displayAgain = Ming.displayName.bind(Ming); displayAgain(); // => Now Momato Riruru will be printed out.
 
--   To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.
+- To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.
 
 <!---->
 
 - Experimental Syntax : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.
 - 
--   It's good to pick one approach and use it consistently, either:
+- It's good to pick one approach and use it consistently, either:
 
 1.  Class Properties & Arrow Functions
 
@@ -915,9 +915,9 @@ Providing default values for props
 - 
 - Includes the use of stopPropagation() and preventDefault();
 - 
--   Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type
+- Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type
 
--   nativeEvent : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)
+- nativeEvent : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)
 
 # Forms in React
 
@@ -933,13 +933,13 @@ _Exercise being done in a separate file_ Random Notes
 - 
 - Controlled Components
 
--   We use the onChange event handlers on form fields to keep our component's state as the "one source of truth"
+- We use the onChange event handlers on form fields to keep our component's state as the "one source of truth"
 
--   Adding an onChange event handler to every single input can massively bloat your code.
+- Adding an onChange event handler to every single input can massively bloat your code.
 
--   Try assiging it to it's own method to apply everywhere.
+- Try assiging it to it's own method to apply everywhere.
 
--   textarea is handled differently in react: it takes in a value property to handle what the inner text will be.
+- textarea is handled differently in react: it takes in a value property to handle what the inner text will be.
 
 <!---->
 
@@ -951,7 +951,7 @@ Note About Client-side vs server-side validation
 - 
 - Tech-savvy users can manipulate client-side validations.
 
--   Sometimes the 'best approach' is to skip implementing validations on the client-side and rely completely on the server-side validation.
+- Sometimes the 'best approach' is to skip implementing validations on the client-side and rely completely on the server-side validation.
 
 # Component Lifecycle
 
@@ -969,9 +969,9 @@ Note About Client-side vs server-side validation
 - 
 - componentDidUpdate : Method called after your component has been updated.
 
--   componentWillUnmount : Method called just before your component is removed from the component tree.
+- componentWillUnmount : Method called just before your component is removed from the component tree.
 
--   Mounting
+- Mounting
 
 1.  constructor method is called
 
@@ -983,7 +983,7 @@ Note About Client-side vs server-side validation
 
 - Updating
 - 
--   When component receives new props
+- When component receives new props
 
 1.  render method is called
 
@@ -1009,15 +1009,15 @@ Note About Client-side vs server-side validation
 - 
 - UNSAFE_componentW
 - 
--   UNSAFE_componentWillReceiveProps
+- UNSAFE_componentWillReceiveProps
 
--   UNSAFE_componentWillUpdate
+- UNSAFE_componentWillUpdate
 
--   Just know they will be removed soon from React's API, peace. Using the class component lifecycle methods _Exercise done in sep. directory_
+- Just know they will be removed soon from React's API, peace. Using the class component lifecycle methods _Exercise done in sep. directory_
 
--   Assorted Notes:
+- Assorted Notes:
 
--   Common Use for componentDidMount lifecycle method is for fetching data from an API.
+- Common Use for componentDidMount lifecycle method is for fetching data from an API.
 
 —
 
@@ -1027,7 +1027,7 @@ Note About Client-side vs server-side validation
 
 - You can use React Context to pass data through a component tree without having to manually thread props.
 - 
--   Convenient way to share & update global data. Creating a Context
+- Convenient way to share & update global data. Creating a Context
 
 <!---->
 
@@ -1035,15 +1035,15 @@ Note About Client-side vs server-side validation
 - 
 - Keep in mind if you invoke this method with aruguments, those arguments will be set as default co
 - 
--   In order to pass context over to child components we need to wrap them in a provider component.
+- In order to pass context over to child components we need to wrap them in a provider component.
 
--   The provider component takes in a value property that points to the information that needs to be passed to the children.
+- The provider component takes in a value property that points to the information that needs to be passed to the children.
 
 Setting up a Consumer
 
 - Keep in mind that Context.Consumer expects a function as a child.
 - 
--   The function has a value prop passed in from Context.Provider
+- The function has a value prop passed in from Context.Provider
 
 # Notes
 
@@ -1057,13 +1057,13 @@ Setting up a Consumer
 - 
 - Client Side Data Mana
 - 
--   Controls "Frontend State"
+- Controls "Frontend State"
 
--   NOT Your Database
+- NOT Your Database
 
--   NOT Component State
+- NOT Component State
 
--   Just used for managing Data
+- Just used for managing Data
 
 <!---->
 
@@ -1081,17 +1081,17 @@ Setting up a Consumer
 - 
 - Action
 
--   POJOs
+- POJOs
 
--   Outline Changes to Frontend State
+- Outline Changes to Frontend State
 
--   Reducers
+- Reducers
 
--   Functions
+- Functions
 
--   Make Changes to Frontend State Where did Redux come from?
+- Make Changes to Frontend State Where did Redux come from?
 
--   There are three central philosophies of Redux:
+- There are three central philosophies of Redux:
 
 1.  A Single Source of Truth : state is stored in a POJO
 
@@ -1135,39 +1135,39 @@ Setting up a Consumer
 - 
 - Functions are pure when their behavior depends only on it's arguments as has no side effects.
 
--   Simply takes in an argument and outputs a value.
+- Simply takes in an argument and outputs a value.
 
--   Reducer
+- Reducer
 
--   _Redux handles actions using reducers_
+- _Redux handles actions using reducers_
 
--   A function that is called each time an action is dispatched.
+- A function that is called each time an action is dispatched.
 
--   Takes in an action and current state
+- Takes in an action and current state
 
--   Required to be pure functions so their behavior is predictable.
+- Required to be pure functions so their behavior is predictable.
 
--   Middleware
+- Middleware
 
--   _Customize response to dispatch actions by using Middleware_
+- _Customize response to dispatch actions by using Middleware_
 
--   Middleware is an optional component of Redus that allows custom responses to dispatched actions.
+- Middleware is an optional component of Redus that allows custom responses to dispatched actions.
 
--   Most common use is to dispatch async requests to a server.
+- Most common use is to dispatch async requests to a server.
 
--   Time Traveling Dev Tools
+- Time Traveling Dev Tools
 
--   _Redux can time travel wow_
+- _Redux can time travel wow_
 
--   Time travel refers to Redux's ability to revert to a previous state because reducers are all pure functions.
+- Time travel refers to Redux's ability to revert to a previous state because reducers are all pure functions.
 
--   Thunks
+- Thunks
 
--   _Convenient format for taking async actions in Redux_
+- _Convenient format for taking async actions in Redux_
 
--   General concept in CS referring to a function who's primary purpose is to call another function.
+- General concept in CS referring to a function who's primary purpose is to call another function.
 
--   Most commonly used to make async API requests.
+- Most commonly used to make async API requests.
 
 # Flux and Redux
 
@@ -1181,11 +1181,11 @@ What is Flux?
 - 
 - Actions : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.
 
--   Dispatcher : Mechanism for distributing actions to the store.
+- Dispatcher : Mechanism for distributing actions to the store.
 
--   Store : The entire state of the application, responsible for updating the state of your app.
+- Store : The entire state of the application, responsible for updating the state of your app.
 
--   View : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.
+- View : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.
 
 <!---->
 
@@ -1199,9 +1199,9 @@ What is Flux?
 - 
 - Single Source of Truth
 
--   State is Read-Only
+- State is Read-Only
 
--   Only Pure Functions Change State
+- Only Pure Functions Change State
 
 # Store
 
@@ -1211,15 +1211,15 @@ What is Flux?
 - 
 - getState() : Returns the store's current state.
 
--   dispatch(action) : Passes an action into the store's reducer to tell it what info to update.
+- dispatch(action) : Passes an action into the store's reducer to tell it what info to update.
 
--   subscribe(callback) : Registers a callback to be triggered whenever the store updates. Updating the Store
+- subscribe(callback) : Registers a callback to be triggered whenever the store updates. Updating the Store
 
 Subscribing to the store
 
 - Whenever a store process a dispatch(), it triggers all its subscribers.
 - 
--   Subscribers : callbacks that can be added to the store via subscribe().
+- Subscribers : callbacks that can be added to the store via subscribe().
 
 Reviewing a simple example
 
@@ -1227,13 +1227,13 @@ Reviewing a simple example
 
 - Reducer function receives the current state and action, updates the state appropriately based on the action.type and returns the following state.
 - 
--   You can bundles different action types and ensuing logic by using a switch/case statement.
+- You can bundles different action types and ensuing logic by using a switch/case statement.
 
 Reviewing how Array#slice works
 
 - Approach that can be used to remove an element without mutating the original array. Avoiding state mutations
 - 
--   Your reducer must always return a new object if the state changes. GOOD
+- Your reducer must always return a new object if the state changes. GOOD
 
 BAD
 
@@ -1245,13 +1245,13 @@ BAD
 
 - fruit is the payload key and orange is the state data
 - 
--   Action Creators : Functions created from extrapolating the creation of an action object.
+- Action Creators : Functions created from extrapolating the creation of an action object.
 
 <!---->
 
 - Use parenthesis for implicit return value.
 - 
--   We can now add whatever fruit we'd like.
+- We can now add whatever fruit we'd like.
 
 Preventing typos in action type string literals
 
@@ -1281,9 +1281,9 @@ When you finish this article, you should be able to use the following from the r
 - 
 - \<Route> to connect specific URL paths to specific components you want rendered; and
 - 
--   \<Switch> to wrap several Route elements, rendering only one even if several match the current URL; and
+- \<Switch> to wrap several Route elements, rendering only one even if several match the current URL; and
 
--   React Router's match prop to access route path parameters.
+- React Router's match prop to access route path parameters.
 
 # Getting started with routing
 
@@ -1369,9 +1369,9 @@ This is an object that contains important information about how the current URL 
 - 
 - url: the current URL
 - 
--   path: the route path it matched against (without wildcards filled in)
+- path: the route path it matched against (without wildcards filled in)
 
--   params: the matches for the individual wildcard segments, nested under their names
+- params: the matches for the individual wildcard segments, nested under their names
 
 When you use React Router, the browser location and history are a part of the state of your app. You can store information about which component should be displayed, which user profile you are currently viewing, or any other piece of state, in the browser location. You can then access that information from anywhere your Router props are passed to in your app.
 
@@ -1387,9 +1387,9 @@ In this article, you learned how to:
 - 
 - Manage the order of rendered routes; and
 
--   Use the exact flag to ensure that a specific path renders a specific component; and
+- Use the exact flag to ensure that a specific path renders a specific component; and
 
--   Use the React Router match prop to access Router params.
+- Use the React Router match prop to access Router params.
 
 # React Router Navigation
 
@@ -1401,7 +1401,7 @@ In this article, you'll be working off of the demo project you built in the Reac
 - 
 - \<Redirect> to redirect a user to another path (i.e. a login page when the user is not logged in); and
 
--   React Router's history prop to update a browser's URL programmatically.
+- React Router's history prop to update a browser's URL programmatically.
 
 # Adding links for navigation
 
@@ -1473,7 +1473,7 @@ This prop lets you update the URL programmatically. For example, suppose you wan
 
 - push - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.
 - 
--   replace - This replaces the current URL on the history stack, so the back button won't take you to it. For example:
+- replace - This replaces the current URL on the history stack, so the back button won't take you to it. For example:
 
 # What you learned
 
@@ -1483,7 +1483,7 @@ In this article, you learned how to:
 - 
 - Redirect users through using the \<Redirect> component; and
 
--   Update a browser's URL programmatically by using React Router's history prop.
+- Update a browser's URL programmatically by using React Router's history prop.
 
 # React Router Nested Routes![](https://miro.medium.com/max/60/0*233dNJ6vfgAmEVCD?q=20)![](https://miro.medium.com/max/576/0*233dNJ6vfgAmEVCD)![](https://miro.medium.com/max/60/0*TKBUkpbL5aSm5PTQ?q=20)![](https://miro.medium.com/max/630/0*TKBUkpbL5aSm5PTQ)&#xA;&#xA;
 
@@ -1495,7 +1495,7 @@ In this article, let's dive into [nested routes](https://reacttraining.com/react
 - 
 - Be able to use React Router to create and navigate nested routes; and
 
--   Know how to use the React Router match prop to generate links and routes.
+- Know how to use the React Router match prop to generate links and routes.
 
 # Why nested routes?
 
@@ -1523,7 +1523,7 @@ In this article, you learned:
 - 
 - About creating and navigating nested routes with React Router; and
 
--   How to use the React Router props to generate nested links and routes.
+- How to use the React Router props to generate nested links and routes.
 
 # React Builds
 
@@ -1537,7 +1537,7 @@ When you finish this article, you should be able to:
 - 
 - Describe at a high level what happens in a Create React App when you run npm start; and
 
--   Prepare to deploy a React application into a production environment.
+- Prepare to deploy a React application into a production environment.
 
 # Understanding front-end builds
 
@@ -1601,13 +1601,13 @@ At a high level, here's what happens when you run npm start:
 - 
 - The application compiler is configured and created;
 - 
--   [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) is started;
+- [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) is started;
 
--   [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) compiles your application;
+- [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) compiles your application;
 
--   The index.html file is loaded into the browser; and
+- The index.html file is loaded into the browser; and
 
--   A file watcher is started to watch your files, waiting for changes.
+- A file watcher is started to watch your files, waiting for changes.
 
 # Ejecting
 
@@ -1661,7 +1661,7 @@ In this article, you learned how to:
 - 
 - Describe at a high level what happens in a Create React App when you run npm start; and
 
--   Prepare to deploy a React application into a production environment.
+- Prepare to deploy a React application into a production environment.
 
 # React Router Documentation
 
@@ -1673,7 +1673,7 @@ Now that you've had an introduction to React Router, feel free to explore the of
 - 
 - [HashRouter](https://reacttraining.com/react-router/web/api/HashRouter)
 
--   [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
+- [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
 
 # Routes and Links
 
@@ -1681,13 +1681,13 @@ Now that you've had an introduction to React Router, feel free to explore the of
 - 
 - [Link](https://reacttraining.com/react-router/web/api/Link)
 
--   [NavLink](https://reacttraining.com/react-router/web/api/NavLink)
+- [NavLink](https://reacttraining.com/react-router/web/api/NavLink)
 
 # Switch and Redirect
 
 - [Switch](https://reacttraining.com/react-router/web/api/Switch)
 - 
--   [Redirect](https://reacttraining.com/react-router/web/api/Redirect)
+- [Redirect](https://reacttraining.com/react-router/web/api/Redirect)
 
 # React Router Params (ownProps)
 
@@ -1695,7 +1695,7 @@ Now that you've had an introduction to React Router, feel free to explore the of
 - 
 - [props.location](https://reacttraining.com/react-router/web/api/location)
 
--   [props.match](https://reacttraining.com/react-router/web/api/match)
+- [props.match](https://reacttraining.com/react-router/web/api/match)
 
 # Rainbow Routes Project
 
@@ -1733,11 +1733,11 @@ Create files for the following components in your ./src/components directory:
 - 
 - Indigo
 
--   Orange
+- Orange
 
--   Violet
+- Violet
 
--   Yellow
+- Yellow
 
 Your Red and Blue components will look something like this:
 
@@ -1807,7 +1807,7 @@ Update the App component:
 
 - Wrap the \<h1> element with a \<div> element; and
 - 
--   Change the \<h1> element content to something like "Exploring React Builds".
+- Change the \<h1> element content to something like "Exploring React Builds".
 
 # Phase 1: Using CSS modules
 
@@ -1821,9 +1821,9 @@ Add a new css-modules folder to the src folder. Within that folder, add the foll
 - 
 - HeadingA.modu
 - 
--   HeadingB.js
+- HeadingB.js
 
--   HeadingB.module.css
+- HeadingB.module.css
 
 Then update the contents of each file to the following:
 
@@ -1931,7 +1931,7 @@ Be sure to run and test your application to ensure that the defined routes work 
 - 
 - /image - Should display the Image component; and
 
--   /class-component - Should display the ClassComponent component.
+- /class-component - Should display the ClassComponent component.
 
 # Creating a production build
 
@@ -1953,7 +1953,7 @@ This simple Express application will:
 
 - Attempt to match incoming requests to static files located in the public folder; and
 - 
--   If a matching static file isn't found, then the ./public/index.html file will be served for all other requests.
+- If a matching static file isn't found, then the ./public/index.html file will be served for all other requests.
 
 Now add a folder named public to the root of your Express project. Copy the files from the build folder in your Create React App project to the public folder in the Express application project. Then run your application using the command node app.js.
 
@@ -1963,7 +1963,7 @@ Also, because you configured Express to serve the ./public/index.html file for a
 
 - <http://localhost:9000/image>
 - 
--   <http://localhost:9000/class-component>
+- <http://localhost:9000/class-component>
 
 # A Comprehensive Deep Dive into React
 
@@ -2059,10 +2059,10 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 - <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
 - <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>-   <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>- <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
 - <span id="923a">React Developers created something called `Flux Architecture` to moderate how their web page consumes and modifies data received from back-end API's.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wR-lbD4zf45-IHoQ" class="graf-image" /></figure>-   <span id="b16e">Choosing React</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*wR-lbD4zf45-IHoQ" class="graf-image" /></figure>- <span id="b16e">Choosing React</span>
 - <span id="eefd">Basically, React is super important to learn and master.</span>
 
 ---
@@ -2158,7 +2158,7 @@ CommonJS (Equivalent)
 
 Importing with ES6 vs CommonJS
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*7EZESKf0XPbncXAY" class="graf-image" /></figure>-   <span id="18b1">Import statements in ES6 modules must always be at the top of the file, because all imports must occur before the rest of the file's code runs. ES6</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*7EZESKf0XPbncXAY" class="graf-image" /></figure>- <span id="18b1">Import statements in ES6 modules must always be at the top of the file, because all imports must occur before the rest of the file's code runs. ES6</span>
 
 <!-- -->
 
@@ -2956,7 +2956,7 @@ JSX Version
 
 - <span id="b00d">Keep in mind that self closing tags in React must have a `forward slash` to close it.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*NNxuFMF-sOL8Wvdl" class="graf-image" /></figure>-   <span id="346d">Properties and Data</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*NNxuFMF-sOL8Wvdl" class="graf-image" /></figure>- <span id="346d">Properties and Data</span>
 
 <!-- -->
 
@@ -3689,7 +3689,7 @@ Note About Client-side vs server-side validation
 
 ### Component Lifecycle
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" /></figure>-   <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" /></figure>- <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
 
 1.  <span id="8e64">Loading (Mounting)</span>
 2.  <span id="7e94">Updating</span>
@@ -3783,7 +3783,7 @@ Setting up a Consumer
 - <span id="855a">NOT Component State</span>
 - <span id="4c1a">Just used for managing Data</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>-   <span id="04c0">Visual of how an app without React manages it's data.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>- <span id="04c0">Visual of how an app without React manages it's data.</span>
 - <span id="bae2">A lot of prop threading happening.</span>
 - <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
 - <span id="cd66">`Store`</span>
@@ -3851,9 +3851,9 @@ What is Flux?
 - <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
 - <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" /></figure>-   <span id="af94">Redux</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" /></figure>- <span id="af94">Redux</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Nd73GjTY1PVQtjtQ" class="graf-image" /></figure>-   <span id="dc16">Library that facilitates the implementation of Flux.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Nd73GjTY1PVQtjtQ" class="graf-image" /></figure>- <span id="dc16">Library that facilitates the implementation of Flux.</span>
 - <span id="623a">Redux Three Principles</span>
 - <span id="2ac6">`Single Source of Truth`</span>
 - <span id="a2b9">`State is Read-Only`</span>

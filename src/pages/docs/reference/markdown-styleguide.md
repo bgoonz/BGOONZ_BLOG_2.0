@@ -184,11 +184,11 @@ dash:
 
 ```markdown
 - Item 1
-    -   Item 2
-        -   Item 3
-    -   Item 4
+    - Item 2
+        - Item 3
+    - Item 4
 - Item 4
-    -   Item 5
+    - Item 5
 ```
 
 Rationale: Consistent formatting makes it easier to understand a document.
@@ -208,9 +208,9 @@ but don't have the same indentation:
 
 ```markdown
 - Item 1
-    -   Nested Item 1
-    -   Nested Item 2
-    -   A misaligned item
+    - Nested Item 1
+    - Nested Item 2
+    - A misaligned item
 ```
 
 Usually, this rule will be triggered because of a typo. Correct the indentation
@@ -218,9 +218,9 @@ for the list to fix it:
 
 ```markdown
 - Item 1
-    -   Nested Item 1
-    -   Nested Item 2
-    -   Nested Item 3
+    - Nested Item 1
+    - Nested Item 2
+    - Nested Item 3
 ```
 
 Sequentially-ordered list markers are usually left-aligned such that all items
@@ -309,14 +309,14 @@ Example:
 
 ```markdown
 - List item
-    -   Nested list item indented by 3 spaces
+    - Nested list item indented by 3 spaces
 ```
 
 Corrected Example:
 
 ```markdown
 - List item
-    -   Nested list item indented by 2 spaces
+    - Nested list item indented by 2 spaces
 ```
 
 Note: This rule applies to a sublist only if its parent lists are all also

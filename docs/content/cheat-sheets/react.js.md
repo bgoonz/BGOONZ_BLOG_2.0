@@ -202,8 +202,6 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
 
 ### Other components
 
-
-
 #### Functional components
 
 ```jsx

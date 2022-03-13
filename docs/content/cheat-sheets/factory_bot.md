@@ -20,7 +20,6 @@ title: Factory Bot
 category: Ruby libraries
 
 weight: -3
-updated: 2020-07-06
 keywords:
 
 -   "FactoryBot.define do"
@@ -32,8 +31,6 @@ keywords:
 ---
 
 ## Factories
-
-
 
 ### Introduction
 
@@ -147,8 +144,6 @@ end
 {: data-line="2"}
 
 ## Other features
-
-
 
 ### Traits
 

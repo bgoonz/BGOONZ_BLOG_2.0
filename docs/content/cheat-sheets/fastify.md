@@ -19,8 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Fastify
 category: JavaScript libraries
 
-updated: 2017-09-23
-
 ---
 
 ## Getting started
@@ -35,8 +33,6 @@ updated: 2017-09-23
 -   [Documentation](https://github.com/fastify/fastify#documentation) _(github.com)_
 
 ### Hello world
-
-
 
 ```js
 const fastify = require('fastify')();
@@ -213,8 +209,6 @@ fastify.register(require('./route'), (err) => {
 });
 ```
 
-
-
 #### route.js
 
 ```js
@@ -304,8 +298,6 @@ fastify.register(require('point-of-view'), {
     }
 });
 ```
-
-
 
 ```js
 fastify.get('/', (req, reply) => {

@@ -471,7 +471,7 @@ The **string** data type is a primitive data type that used to represent textual
 - \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
 - <span id="7b1a">**.length** : property that can be appended
 - <span id="f633">empty strings have a length of zero.</span>
--   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].
+- <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].
     console.log("bootcamp"\[0\]); // =&gt; "b"
     console.log("bootcamp"\[10\]); // =&gt; "undefined"
     console.log("boots"\[1 \* 2\]); // =&gt; "o"

@@ -2,13 +2,7 @@
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
-
-
-
-
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
-
-
 
 </div>
 
@@ -34,9 +28,6 @@
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-bgoonz-blog-netlify-app-2022-01-20-23_58_59.png?raw=true)
 
 </div>
-
-
-
 
 <details>
 
@@ -137,12 +128,9 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ---
 ##  Description: combine the contents of every file in the contaning directory.
 
-
 > Notes: this includes the contents of the file it's self...
 
-
 ## # code:
-
 
 ```js
 //APPEND-DIR.js
@@ -153,7 +141,6 @@ let cat = require('child_process')
 fs.writeFile('output.md', cat, err =>  {
   if (err) throw err;
 });
-
 
 ```
 
@@ -185,15 +172,11 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ```sh
 
-
 find . -empty -type d -print -delete
-
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
-
 
 ```
 
@@ -211,8 +194,6 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ```sh
 
-
-
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   grep -e 'git_url*' |
@@ -229,7 +210,6 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   cut -d \" -f 4 |
   xargs -L1 git clone
 
-
 ```
 
 # Clone all Git Organization
@@ -241,7 +221,6 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
-
 
 ```
 
@@ -304,8 +283,6 @@ git push -u origin preview
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
-
-
 find . -name "*.zip" -type f -print -delete
 
 ```
@@ -322,11 +299,9 @@ find . -name "*.zip" -type f -print -delete
 
 ```sh
 
-
 git stash
 git pull
 git stash pop
-
 
 ```
 
@@ -346,8 +321,6 @@ sudo npm i prettier -g
 
 prettier --write .
 
-
-
 ```
 
 ---
@@ -364,14 +337,9 @@ prettier --write .
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
-
-
 find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
 
-
-
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
-
 
 ```
 
@@ -394,7 +362,6 @@ sudo apt install wget -y
 npm i lebab -g
 npm i prettier -g
 npm i npm-recursive-install -g
-
 
 ```
 
@@ -441,7 +408,6 @@ tree -f -L 2  > README.md
 
 tree -f  -I  'node_modules' > listing-path.md
 
-
 tree -f  -I  'node_modules' -d > TREE.md
 
 tree -f > README.md
@@ -462,27 +428,17 @@ tree -f > README.md
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
-
 find . -type d -exec rename 's/-master//g' {} +
-
 
 find . -type f -exec rename 's/\.download//g' {} +
 
-
-
-
 find . -type d -exec rename 's/-main//g' {} +
-
-
 
 rename 's/\.js\.download$/.js/' *.js\.download
 
-
 rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
-
 find . -type d -exec rename 's/es6//g' {} +
-
 
 ```
 
@@ -513,7 +469,6 @@ done
 ```
 
 ```sh
-
 
 #!/bin/bash
 
@@ -620,7 +575,6 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
-
 ```
 
 ## ## code
@@ -628,13 +582,9 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
 
-
-
 sudo sed -i '/github\.com/d' ./*out.md
-
 
 sudo sed -i '/author/d' ./*
 
@@ -674,9 +624,7 @@ uniq -u input.txt output.txt
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
 
 sudo sed -i '/github\.com/d' ./*out.md
 
@@ -694,13 +642,10 @@ sudo sed -i '/tags:/d' ./*output.md
 
 sudo sed -i '/badstring/d' ./*
 
-
 sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
-
-
 
 ```
 
@@ -716,7 +661,6 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ```sh
 
-
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
 zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
@@ -729,7 +673,6 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 # if in windows/git-bash, add 'zip' command this way:
 # https://stackoverflow.com/a/55749636/1482990
-
 
 ```
 
@@ -791,7 +734,6 @@ cmd() {
   echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> '
   echo ""
   echo '<style> '
-
 
 echo '    a {'
 echo '      color: black;'
@@ -870,16 +812,11 @@ cmd $listing --sort=extension > > $html
 
 ```sh
 
-
-
-
-
 ```
 
 ## ## code
 
 ```sh
-
 
 #!/bin/sh
 
@@ -909,7 +846,6 @@ cmd() {
 
   echo ""
   echo '<style> '
-
 
 echo '    a {'
 echo '      color: black;'
@@ -992,7 +928,6 @@ cmd $listing --sort=extension > > $html
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-
 ```
 
 ---
@@ -1065,18 +1000,13 @@ git submodule deinit
 ```sh
 sudo apt install wget
 
-
-
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
 
-
 wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
-
 
 wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
 wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
-
 
 ```
 
@@ -1108,7 +1038,6 @@ git remote remove origin
 
 ```sh
 
-
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
 ```
@@ -1126,7 +1055,6 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 ```sh
 
 git reset --hard master@{"10 minutes ago"}
-
 
 ```
 
@@ -1153,9 +1081,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-
 # ALL:
-
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1187,7 +1113,6 @@ lebab --replace ./ --transform default-param
 lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 
-
 ```
 
 ---
@@ -1206,7 +1131,6 @@ lebab --replace ./ --transform includes
 
  Get-Service LxssManager | Restart-Service
 
-
 ```
 
 ---
@@ -1222,9 +1146,7 @@ lebab --replace ./ --transform includes
 ```sh
 npm i mediumexporter -g
 
-
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 > ds.md
-
 
 ```
 
@@ -1242,9 +1164,6 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
-
-
-
 find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```
@@ -1261,9 +1180,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```sh
 
-
 wget -r -A.pdf https://overapi.com/git
-
 
 ```
 
@@ -1293,9 +1210,6 @@ killall -s KILL node
 ```sh
 find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
 
-
-
-
 find . -type f -exec rename 's/-master//g' {} +
 
 ```
@@ -1304,9 +1218,6 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```sh
 find <mydir>  -type d -exec sed -i 's/<string1> /<string2> /g' {} +
-
-
-
 
 find . -type d -exec rename 's/-master//g' {} +
 
@@ -1372,11 +1283,9 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
-
 
 ```
 
@@ -1426,7 +1335,6 @@ ln -s "$(pwd)" ~/Downloads
 ```sh
 
 npx @appnest/readme generate
-
 
 ```
 
@@ -1491,14 +1399,11 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/node-db1-project?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
 https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
 
 ```
 
@@ -1514,9 +1419,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ```sh
 
-
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2388,7 +2291,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 - 
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -2421,10 +2324,10 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 - **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
 - **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+    - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
 - **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 

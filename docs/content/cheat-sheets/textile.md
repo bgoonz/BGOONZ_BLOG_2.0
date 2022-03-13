@@ -2,13 +2,10 @@
 title: Textile
 category: Markup
 
-updated: 2017-09-20
 weight: -1
 ---
 
 ## Reference
-
-
 
 ### Inlines
 

@@ -3,7 +3,6 @@ title: Lodash
 category: JavaScript libraries
 
 weight: -3
-updated: 2020-06-24
 description: |
     This is not a complete list.
 ---

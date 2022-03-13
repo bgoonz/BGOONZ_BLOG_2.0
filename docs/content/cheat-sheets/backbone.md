@@ -18,7 +18,6 @@ thumb_img_path: images/css-72a655a7.jpg
 
 title: Backbone.js
 
-updated: 2018-12-06
 category: JavaScript libraries
 
 ---

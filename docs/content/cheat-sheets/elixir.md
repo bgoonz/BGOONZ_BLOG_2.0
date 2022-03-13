@@ -20,18 +20,13 @@ title: Elixir
 category: Elixir
 
 tags: [New]
-updated: 2018-07-04
 weight: -10
 
 ---
 
 ## Getting started
 
-
-
 ### Hello world
-
-
 
 ```elixir
 # hello.exs
@@ -130,8 +125,6 @@ user = %{name: "Tom", age: 23}
 Pattern matching works in function parameters too.
 
 ## Control flow
-
-
 
 ### If
 

@@ -14,35 +14,34 @@ template: docs
 ### Scope Lesson Concepts
 
 - Identify the difference between `const`, `let`, and `var` declarations
-    -   `const` - cannot reassign variable, scoped to block
-    -   `let` - can reassign variable, scoped to block
-    -   `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
-    -   a variable will always evaluate to the value it contains regardless of how it was declared
+    - `const` - cannot reassign variable, scoped to block
+    - `let` - can reassign variable, scoped to block
+    - `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
+    - a variable will always evaluate to the value it contains regardless of how it was declared
 - Explain the difference between `const`, `let`, and `var` declarations
-    -   `var` is function scoped—so if you declare it anywhere in a function, the declaration \(but not assignment\) is "hoisted"
-        -   so it will exist in memory as "undefined" which is bad and unpredictable
-    -   `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
-    -   `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
-    -   block-scoped variables allow new variables with the same name in new scopes
-    -   block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
-    -   if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
-        -   if you assign a value without a declaration, it exists in the global scope \(so then it would be accessible by all outer scopes, so bad\). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
+    - `var` is function scoped—so if you declare it anywhere in a function, the declaration \(but not assignment\) is "hoisted"
+        - so it will exist in memory as "undefined" which is bad and unpredictable
+    - `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
+    - `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
+    - block-scoped variables allow new variables with the same name in new scopes
+    - block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
+    - if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
+        - if you assign a value without a declaration, it exists in the global scope \(so then it would be accessible by all outer scopes, so bad\). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
 - Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
-    -   scope of a program means the set of variables that are available for use within the program
-    -   global scope is represented by the `window` object in the browser and the `global` object in Node.js
-        -   global variables are available everywhere, and so increase the risk of name collisions
-    -   local scope is the set of variables available for use within the function
-        -   when we enter a function, we enter a new scope
-        -   includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined \(hmm about that last one\)
-    -   for blocks \(denoted by curly braces `{}`, as in conditionals or `for` loops\), variables can be block scoped
-    -   inner scope does not have access to variables in the outer scope
-        -   scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
-        -   so an inner scope can access outer scope variables
-        -   but an outer scope can never access inner scope variables
+    - scope of a program means the set of variables that are available for use within the program
+    - global scope is represented by the `window` object in the browser and the `global` object in Node.js
+        - global variables are available everywhere, and so increase the risk of name collisions
+    - local scope is the set of variables available for use within the function
+        - when we enter a function, we enter a new scope
+        - includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined \(hmm about that last one\)
+    - for blocks \(denoted by curly braces `{}`, as in conditionals or `for` loops\), variables can be block scoped
+    - inner scope does not have access to variables in the outer scope
+        - scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
+        - so an inner scope can access outer scope variables
+        - but an outer scope can never access inner scope variables
 - Define an arrow function
 
 ```js
-
 
     let arrowFunction = \(param1, param2\) =&gt; {
     let sum = param1 + param2;
@@ -55,13 +54,12 @@ template: docs
 ```
 
 - Given an arrow function, deduce the value of `this` without executing the code
-    -   arrow functions are automatically bound to the context they were declared in
-    -   unlike regular function which use the context they are invoked in \(unless they have been bound using `Function#bind`\)
-    -   if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
-    -   so you can't use an arrow function to define a method directly
+    - arrow functions are automatically bound to the context they were declared in
+    - unlike regular function which use the context they are invoked in \(unless they have been bound using `Function#bind`\)
+    - if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
+    - so you can't use an arrow function to define a method directly
 
 ```js
-
 
     let obj = {
     name: "my object",
@@ -72,7 +70,6 @@ template: docs
 
 boundToGlobal: \(\) =&gt; { return this.name;
 // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
-
 
 makeFuncBoundToObj: function () {
     return () => {
@@ -114,7 +111,6 @@ let otherObj = { name: "my other object" }
 }
 
 ```js
-
 
 - Implement a closure and explain how the closure effects scope
    - a closure is "the combination of a function and the lexical environment within which that function was declared"
@@ -175,14 +171,14 @@ console.log(counter3());
 ```
 
 - Define a method that references `this` on an object literal
-    -   when we use `this` in a method it refers to the object that the method is invoked on
-        -   it will let you access other pieces of information from within that object, or even other methods
-        -   method style invocation - `object.method(args)` \(e.g. built in examples like `Array#push`, or `String#toUpperCase`\)
-    -   context is set every time we invoke a function
-    -   function style invocation sets the context to the global object no matter what
-    -   being inside an object does not make the context that object! you still have to use method-style invocation
+    - when we use `this` in a method it refers to the object that the method is invoked on
+        - it will let you access other pieces of information from within that object, or even other methods
+        - method style invocation - `object.method(args)` \(e.g. built in examples like `Array#push`, or `String#toUpperCase`\)
+    - context is set every time we invoke a function
+    - function style invocation sets the context to the global object no matter what
+    - being inside an object does not make the context that object! you still have to use method-style invocation
 - Utilize the built in `Function#bind` on a callback to maintain the context of this
-    -   when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
+    - when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
 
 ```
 
@@ -199,20 +195,19 @@ text
     // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
     boundCat(); // prints "meow"
 
-
 ```
 
 ###
 
 - `bind` can also work with arguments, so you can have a version of a function with particular arguments and a particular context. the first arg will be the context aka the `this` you want it to use. the next arguments will be the functions arguments that you are binding
-- -   if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
--   Given a code snippet, identify what `this` refers to
-    -   important to recognize the difference between scope and context
-        -   scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope (which itself has pointers to new scopes until you reach the global scope. so you can think about a whole given block's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)
-        -   context refers to the value of the `this` keyword
-    -   the keyword `this` exists in every function and it evaluates to the object that is currently invoking that function
-    -   so the context is fairly straightforward when we talk about methods being called on specific objects
-    -   you could, however, call an object's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+- - if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
+- Given a code snippet, identify what `this` refers to
+    - important to recognize the difference between scope and context
+        - scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope (which itself has pointers to new scopes until you reach the global scope. so you can think about a whole given block's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)
+        - context refers to the value of the `this` keyword
+    - the keyword `this` exists in every function and it evaluates to the object that is currently invoking that function
+    - so the context is fairly straightforward when we talk about methods being called on specific objects
+    - you could, however, call an object's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
 
 ```js
 
@@ -233,8 +228,8 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 ```
 
 - CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
-    -   could throw an error if it expects this to have some other method or whatever that doesn't exist
-    -   you could also overwrite values or assign values to exist in a space where they should not exist
+    - could throw an error if it expects this to have some other method or whatever that doesn't exist
+    - you could also overwrite values or assign values to exist in a space where they should not exist
 - if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
 ```
@@ -249,7 +244,6 @@ text
     },
     };
     global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
-
 
 ```
 
@@ -291,12 +285,11 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 ```
 
 - CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
-    -   could throw an error if it expects this to have some other method or whatever that doesn't exist
-    -   you could also overwrite values or assign values to exist in a space where they should not exist
+    - could throw an error if it expects this to have some other method or whatever that doesn't exist
+    - you could also overwrite values or assign values to exist in a space where they should not exist
 - if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
 ```js
-
 
     let cat = {
     purr: function \(\) {

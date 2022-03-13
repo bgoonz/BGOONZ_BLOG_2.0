@@ -3,7 +3,6 @@ title: Node.js streams
 category: Node.js
 
 weight: -1
-updated: 2017-08-30
 ---
 
 ### Types
@@ -75,8 +74,6 @@ st.on('data' /*...*/);
 ```
 
 ## Stream types
-
-
 
 ### Readable
 

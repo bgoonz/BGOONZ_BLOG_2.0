@@ -6,8 +6,6 @@ category: Apps
 
 ## Keys
 
-
-
 ### Buffers
 
 | Shortcut      | Description                      |

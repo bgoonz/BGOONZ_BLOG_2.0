@@ -3,7 +3,6 @@ title: Sass
 category: CSS
 
 tags: [Featured]
-updated: 2020-07-03
 weight: -5
 keywords:
     - Variables
@@ -16,8 +15,6 @@ keywords:
 ---
 
 ## Basics
-
-
 
 ### Introduction
 

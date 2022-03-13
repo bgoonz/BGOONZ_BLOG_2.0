@@ -542,7 +542,6 @@ switch (grade) {
     break;
 }
 
-
 ///////////////////////////////////
 // 4. Functions, Scope and Closures
 
@@ -824,8 +823,6 @@ if (Object.create === undefined){ // don't overwrite it if it exists
     };
 }
 
-
-
 /* *******************************************************************************************
  * GLOBAL OBJECTS > OBJECT
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
@@ -921,6 +918,5 @@ arr.reduce(callback[, initialValue])                 // Apply a function against
 arr.reduceRight(callback[, initialValue])            // Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
 arr.some(callback[, initialValue])                   // Returns true if at least one element in this array satisfies the provided testing function.
 arr.values()                                         // Returns a new Array Iterator object that contains the values for each index in the array.
-
 
 ```

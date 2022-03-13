@@ -2,15 +2,12 @@
 title: 'Phoenix: Plug.Conn'
 category: Elixir
 
-updated: 2018-01-19
 weight: -5
 ---
 
 ## Request
 
 ### Request
-
-
 
 ```elixir
 conn.host          # → "example.com"
@@ -42,8 +39,6 @@ Usually only useful for tests.
 ## Response
 
 ### Response
-
-
 
 ```elixir
 conn.resp_body     # → "..."
@@ -119,8 +114,6 @@ layout(conn)
 ## Other features
 
 ### Other fields
-
-
 
 ```elixir
 conn.assigns          # storage of crap

@@ -3,7 +3,6 @@ title: Sinon
 category: JavaScript libraries
 
 weight: -1
-updated: 2017-10-27
 ---
 
 ### Creating spies

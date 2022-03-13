@@ -3,12 +3,9 @@ title: 'Phoenix: Ecto'
 category: Elixir
 
 tags: [WIP]
-updated: 2017-08-30
 ---
 
 ## Schemas
-
-
 
 ### Generating
 

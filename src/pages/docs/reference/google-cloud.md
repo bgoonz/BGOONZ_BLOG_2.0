@@ -31,11 +31,11 @@ Get going with the gcloud command-line tool.
 - 
 - [gcloud components install](https://cloud.google.com/sdk/gcloud/reference/components/install): Install specific components.
 - 
--   [gcloud components update](https://cloud.google.com/sdk/gcloud/reference/components/update): Update your Cloud SDK to the latest version.
+- [gcloud components update](https://cloud.google.com/sdk/gcloud/reference/components/update): Update your Cloud SDK to the latest version.
 
--   [gcloud config set project](https://cloud.google.com/sdk/gcloud/reference/config/set): Set a default Google Cloud project to work on.
+- [gcloud config set project](https://cloud.google.com/sdk/gcloud/reference/config/set): Set a default Google Cloud project to work on.
 
--   [gcloud info](https://cloud.google.com/sdk/gcloud/reference/info): Display current gcloud tool environment details.
+- [gcloud info](https://cloud.google.com/sdk/gcloud/reference/info): Display current gcloud tool environment details.
 
 ### Help
 
@@ -45,7 +45,7 @@ Cloud SDK is happy to help.
 - 
 - [gcloud feedback](https://cloud.google.com/sdk/gcloud/reference/feedback): Provide feedback for the Cloud SDK team.
 
--   [gcloud topic](https://cloud.google.com/sdk/gcloud/reference/topic): Supplementary help material for non-command topics like accessibility, filtering, and formatting.
+- [gcloud topic](https://cloud.google.com/sdk/gcloud/reference/topic): Supplementary help material for non-command topics like accessibility, filtering, and formatting.
 
 ### Personalization
 
@@ -57,11 +57,11 @@ Make the Cloud SDK your own; personalize your configuration with properties.
 - 
 - [gcloud config list](https://cloud.google.com/sdk/gcloud/reference/config/list): Display all the properties for the current configuration.
 - 
--   [gcloud config configurations create](https://cloud.google.com/sdk/gcloud/reference/config/configurations/create): Create a new named configuration.
+- [gcloud config configurations create](https://cloud.google.com/sdk/gcloud/reference/config/configurations/create): Create a new named configuration.
 
--   [gcloud config configurations list](https://cloud.google.com/sdk/gcloud/reference/config/configurations/list): Display a list of all available configurations.
+- [gcloud config configurations list](https://cloud.google.com/sdk/gcloud/reference/config/configurations/list): Display a list of all available configurations.
 
--   [gcloud config configurations activate](https://cloud.google.com/sdk/gcloud/reference/config/configurations/activate): Switch to an existing named configuration.
+- [gcloud config configurations activate](https://cloud.google.com/sdk/gcloud/reference/config/configurations/activate): Switch to an existing named configuration.
 
 ### Credentials
 
@@ -73,9 +73,9 @@ Grant and revoke authorization to Cloud SDK
 - 
 - [gcloud auth list](https://cloud.google.com/sdk/gcloud/reference/auth/list): List all credentialed accounts.
 
--   [gcloud auth print-access-token](https://cloud.google.com/sdk/gcloud/reference/auth/print-access-token): Display the current account's access token.
+- [gcloud auth print-access-token](https://cloud.google.com/sdk/gcloud/reference/auth/print-access-token): Display the current account's access token.
 
--   [gcloud auth revoke](https://cloud.google.com/sdk/gcloud/reference/auth/revoke): Remove access credentials for an account.
+- [gcloud auth revoke](https://cloud.google.com/sdk/gcloud/reference/auth/revoke): Remove access credentials for an account.
 
 ### Projects
 
@@ -83,7 +83,7 @@ Manage project access policies
 
 - [gcloud projects describe](https://cloud.google.com/sdk/gcloud/reference/projects/describe): Display metadata for a project (including its ID).
 - 
--   [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding): Add an IAM policy binding to a specified project.
+- [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding): Add an IAM policy binding to a specified project.
 
 ### Identity & Access Management
 
@@ -95,11 +95,11 @@ Configuring Cloud Identity & Access Management (IAM) preferences and service acc
 - 
 - [gcloud iam service-accounts create](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create): Create a service account for a project.
 - 
--   [gcloud iam service-accounts add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/add-iam-policy-binding): Add an IAM policy binding to a service account.
+- [gcloud iam service-accounts add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/add-iam-policy-binding): Add an IAM policy binding to a service account.
 
--   [gcloud iam service-accounts set-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/set-iam-policy): Replace existing IAM policy binding.
+- [gcloud iam service-accounts set-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/set-iam-policy): Replace existing IAM policy binding.
 
--   [gcloud iam service-accounts keys list](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/list): List a service account's keys.
+- [gcloud iam service-accounts keys list](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/list): List a service account's keys.
 
 ### Docker & Google Kubernetes Engine (GKE)
 
@@ -111,9 +111,9 @@ Manage containerized applications on Kubernetes
 - 
 - [gcloud container clusters list](https://cloud.google.com/sdk/gcloud/reference/container/clusters/list): List clusters for running GKE containers.
 
--   [gcloud container clusters get-credentials](https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials): Update kubeconfig to get kubectl to use a GKE cluster.
+- [gcloud container clusters get-credentials](https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials): Update kubeconfig to get kubectl to use a GKE cluster.
 
--   [gcloud container images list-tags](https://cloud.google.com/sdk/gcloud/reference/container/images/list-tags): List tag and digest metadata for a container image.
+- [gcloud container images list-tags](https://cloud.google.com/sdk/gcloud/reference/container/images/list-tags): List tag and digest metadata for a container image.
 
 ### Virtual Machines & Compute Engine
 
@@ -127,11 +127,11 @@ Create, run, and manage VMs on Google infrastructure
 - 
 - [gcloud compute disks snapshot](https://cloud.google.com/sdk/gcloud/reference/compute/disks/snapshot): Create snapshot of persistent disks.
 
--   [gcloud compute snapshots describe](https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/describe): Display a snapshot's details.
+- [gcloud compute snapshots describe](https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/describe): Display a snapshot's details.
 
--   [gcloud compute snapshots delete](https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/delete): Delete a snapshot.
+- [gcloud compute snapshots delete](https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/delete): Delete a snapshot.
 
--   [gcloud compute ssh](https://cloud.google.com/sdk/gcloud/reference/compute/ssh): Connect to a VM instance by using SSH.
+- [gcloud compute ssh](https://cloud.google.com/sdk/gcloud/reference/compute/ssh): Connect to a VM instance by using SSH.
 
 ### Serverless & App Engine
 
@@ -143,9 +143,9 @@ Build highly scalable applications on a fully managed serverless platform
 - 
 - [gcloud app browse](https://cloud.google.com/sdk/gcloud/reference/app/browse): Open the current app in a web browser.
 
--   [gcloud app create](https://cloud.google.com/sdk/gcloud/reference/app/create): Create an App Engine app within your current project.
+- [gcloud app create](https://cloud.google.com/sdk/gcloud/reference/app/create): Create an App Engine app within your current project.
 
--   [gcloud app logs read](https://cloud.google.com/sdk/gcloud/reference/app/logs/read): Display the latest App Engine app logs.
+- [gcloud app logs read](https://cloud.google.com/sdk/gcloud/reference/app/logs/read): Display the latest App Engine app logs.
 
 ### Miscellaneous
 
@@ -155,9 +155,9 @@ Commands that might come in handy
 - 
 - [gcloud logging logs list](https://cloud.google.com/sdk/gcloud/reference/logging/logs/list): List your project's logs.
 - 
--   [gcloud sql backups describe](https://cloud.google.com/sdk/gcloud/reference/sql/backups/describe): Display info about a Cloud SQL instance backup.
+- [gcloud sql backups describe](https://cloud.google.com/sdk/gcloud/reference/sql/backups/describe): Display info about a Cloud SQL instance backup.
 
--   [gcloud sql export sql](https://cloud.google.com/sdk/gcloud/reference/sql/export/sql): Export data from a Cloud SQL instance to a SQL file.
+- [gcloud sql export sql](https://cloud.google.com/sdk/gcloud/reference/sql/export/sql): Export data from a Cloud SQL instance to a SQL file.
 
 ## Introductory primer
 
@@ -173,19 +173,19 @@ Arguments can be Positional args or Flags
 
 - **Positional args:** Set after command name; must respect order of positional args.
 - 
--   **Flags:** Set after positional args; order of flags doesn't matter.
+- **Flags:** Set after positional args; order of flags doesn't matter.
 
     A flag can be either a:
 
-    -   _Name-value pair_ (--foo=bar), or
+    - _Name-value pair_ (--foo=bar), or
 
-    -   _Boolean_ (--force/no-force).
+    - _Boolean_ (--force/no-force).
 
     Additionally, flags can either be:
 
-    -   _Required_
+    - _Required_
 
-    -   _Optional:_ in which case, the default value is used, if the flag is not defined
+    - _Optional:_ in which case, the default value is used, if the flag is not defined
 
 ### Global flags
 
@@ -197,11 +197,11 @@ Some flags are available throughout the gcloud command-line tool experience, lik
 - 
 - [--quiet](https://cloud.google.com/sdk/gcloud/reference#--quiet): Disabling interactive prompting (and appl
 - 
--   [--verbosity](https://cloud.google.com/sdk/gcloud/reference#--verbosity): Can set verbosity levels at debug, info, warning, error, critical, and none.
+- [--verbosity](https://cloud.google.com/sdk/gcloud/reference#--verbosity): Can set verbosity levels at debug, info, warning, error, critical, and none.
 
--   [--version](https://cloud.google.com/sdk/gcloud/reference#--version): Display gcloud version information.
+- [--version](https://cloud.google.com/sdk/gcloud/reference#--version): Display gcloud version information.
 
--   [--format](https://cloud.google.com/sdk/gcloud/reference#--format): Set output format as config, csv, default, diff, disable, flattened, get, json, list, multi, none, object, table, text, value, or yaml.
+- [--format](https://cloud.google.com/sdk/gcloud/reference#--format): Set output format as config, csv, default, diff, disable, flattened, get, json, list, multi, none, object, table, text, value, or yaml.
 
 ### Cleaning up results
 

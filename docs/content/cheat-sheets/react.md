@@ -55,12 +55,10 @@ npm install --save prop-types // runtime type checking for React props and simil
 
 // notes: don't forget the command lines
 
-
 /* *******************************************************************************************
  * REACT
  * https://reactjs.org/docs/react-api.html
  * ******************************************************************************************* */
-
 
 // Create and return a new React element of the given type.
 // Code written with JSX will be converted to use React.createElement().
@@ -107,14 +105,12 @@ React.Children.toArray(children)
 // You can also use it with the shorthand <></> syntax.
 React.Fragment
 
-
 /* *******************************************************************************************
  * REACT.COMPONENT
  * React.Component is an abstract base class, so it rarely makes sense to refer to React.Component
  * directly. Instead, you will typically subclass it, and define at least a render() method.
  * https://reactjs.org/docs/react-component.html
  * ******************************************************************************************* */
-
 
 class Component extends React.Component {
   // Will be called before it is mounted
@@ -230,7 +226,6 @@ component = new Component();
 // Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 component.forceUpdate(callback)
 
-
 /* *******************************************************************************************
  * REACT.DOM
  * The react-dom package provides DOM-specific methods that can be used at the top level of
@@ -238,7 +233,6 @@ component.forceUpdate(callback)
  * Most of your components should not need to use this module.
  * https://reactjs.org/docs/react-dom.html
  * ******************************************************************************************* */
-
 
 // Render a React element into the DOM in the supplied container and return a reference
 // to the component (or returns null for stateless components).
@@ -263,13 +257,11 @@ ReactDOM.findDOMNode(component)
 // the hierarchy of the DOM component.
 ReactDOM.createPortal(child, container)
 
-
 /* *******************************************************************************************
  * REACTDOMSERVER
  * The ReactDOMServer object enables you to render components to static markup.
  * https://reactjs.org/docs/react-dom.html
  * ******************************************************************************************* */
-
 
 // Render a React element to its initial HTML. React will return an HTML string.
 // You can use this method to generate HTML on the server and send the markup down on the initial
@@ -292,12 +284,10 @@ ReactDOMServer.renderToNodeStream(element)
 // page generator, as stripping away the extra attributes can save some bytes.
 ReactDOMServer.renderToStaticNodeStream(element)
 
-
 /* *******************************************************************************************
  * TYPECHECKING WITH PROPTYPES
  * https://reactjs.org/docs/typechecking-with-proptypes.html
  * ******************************************************************************************* */
-
 
 import PropTypes from 'prop-types';
 
@@ -379,8 +369,6 @@ MyComponent.propTypes = {
     }
   })
 };
-
-
 
 ```
 

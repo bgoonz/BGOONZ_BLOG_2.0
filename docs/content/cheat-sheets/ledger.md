@@ -2,7 +2,6 @@
 title: Ledger CLI
 category: Ledger
 
-updated: 2020-05-23
 weight: -5
 ---
 
@@ -83,8 +82,6 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash     $-20  = $500
 ```
 
-
-
 `Cash $X = $500` ensures Cash is at $500 after the transaction.
 
 ### Balance assignment
@@ -122,8 +119,6 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash
 ```
 
-
-
 ```bash
 ; total cost
 2010/05/31 * Market
@@ -131,16 +126,12 @@ It can mean anything you want, eg, for the estimated date you'll be paid.
   Assets:Cash
 ```
 
-
-
 ```bash
 ; fixed lot prices
 2010/05/31 * Gas
   Expenses:Gasoline             11 GAL {=$2.299}
   Assets:Cash
 ```
-
-
 
 ### Commodity definitions
 

@@ -2,7 +2,6 @@
 title: PostgreSQL JSON
 
 prism_languages: [sql]
-updated: 2018-12-06
 category: Databases
 ---
 

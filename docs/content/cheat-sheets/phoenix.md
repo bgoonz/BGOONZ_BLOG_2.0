@@ -3,7 +3,6 @@ title: Phoenix
 category: Elixir
 
 weight: -1
-updated: 2018-03-06
 ---
 
 ### Quick start

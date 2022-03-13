@@ -2,15 +2,12 @@
 title: Tabular
 category: Vim
 
-updated: 2017-10-11
 weight: -1
 intro: |
     [Tabular](https://github.com/godlygeek/tabular) is a Vim script for text alignment.
 ---
 
 ## Common usage
-
-
 
 ### Tables
 
@@ -59,8 +56,6 @@ width:       640
 ```
 
 ## Tab command
-
-
 
 ### Basic example
 

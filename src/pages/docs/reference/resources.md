@@ -106,7 +106,7 @@ Here's a repo where I hoard resource lists!
 
 ## MOAR!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eEDATI6RAaEQw71I.jpg" class="graf-image" /></figure>-   <span id="84dc"><a href="https://bgoonz.github.io/about.html#ansible" class="markup--anchor markup--li-anchor">Ansible</a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eEDATI6RAaEQw71I.jpg" class="graf-image" /></figure>- <span id="84dc"><a href="https://bgoonz.github.io/about.html#ansible" class="markup--anchor markup--li-anchor">Ansible</a></span>
 - <span id="1d08"><a href="https://bgoonz.github.io/about.html#awesome-lists" class="markup--anchor markup--li-anchor">Awesome Lists</a></span>
 - <span id="958d"><a href="https://bgoonz.github.io/about.html#continious-integration" class="markup--anchor markup--li-anchor">CI/CD</a></span>
 - <span id="eee2"><a href="https://bgoonz.github.io/about.html#data-science" class="markup--anchor markup--li-anchor">Data Science</a></span>

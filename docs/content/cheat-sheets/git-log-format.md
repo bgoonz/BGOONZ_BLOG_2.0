@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Git log format string
 category: Git
 
-updated: 2017-10-18
 weight: -1
 keywords:
 
@@ -32,11 +31,7 @@ keywords:
 
 ## Log format
 
-
-
 ### Pretty format
-
-
 
 ```bash
 git log --pretty="format:%H"

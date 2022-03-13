@@ -125,7 +125,7 @@ sections:
             type: grid_item
             image: images/jamstack.png
           - title: Asynchronous JavaScript
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
             actions:
                 - label: Learn About Blocking Code
@@ -230,7 +230,7 @@ sections:
       actions: []
       type: section_content
     - section_id: tools
-      image_alt: lorem-ipsum
+      image_alt: image of
       image_position: left
       content: >
         <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100% width="1200px!important" height="1000px!important" src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  allowfullscreen></iframe>

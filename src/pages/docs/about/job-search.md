@@ -308,52 +308,52 @@ Most of us are familiar with the concept of six degrees of separation — th
 # **Trivia**
 
 - ## **JavaScript Trivia**
-    -   **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
-    -   **[Front-end trivia](https://www.thatjsdude.com/interview/)**
+    - **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
+    - **[Front-end trivia](https://www.thatjsdude.com/interview/)**
 - ## **Python Trivia**
 - ## **Frontend Trivia**
-    -   [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
+    - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
 
 <hr>
 
 # **Language Resources**
 
 - ## **JavaScript Resources**
-    -   **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
-    -   **React Native**
-        -   **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
-            -   *satagonia@gmail.com / qqqq1111*
+    - **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
+    - **React Native**
+        - **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
+            - *satagonia@gmail.com / qqqq1111*
 - ## **Python Resources**
 - -
--   ## **HTML5 Resources**
-    -   [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
-    -   [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
-    -   [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
-    -   [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-    -   [**HTML5 Doctor**](http://html5doctor.com/)
+- ## **HTML5 Resources**
+    - [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
+    - [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
+    - [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+    - [**HTML5 Doctor**](http://html5doctor.com/)
     -
 - ## **CSS3 Resources**
 
-    -   [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
-    -   [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
-    -   [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
-    -   [**CSS3.info**](https://www.css3.info/)
-    -   [**CSS Tricks**](https://css-tricks.com/)
-        -   [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-        -   [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-    -   [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
-    -   [**CSS Zen Garden**](http://csszengarden.com/)
-    -   [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
-    -   [**Specifishity**](http://www.specifishity.com/)
-    -   [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
-    -   [**Jen Simmons Labs**](https://labs.jensimmons.com/)
+    - [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
+    - [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
+    - [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - [**CSS3.info**](https://www.css3.info/)
+    - [**CSS Tricks**](https://css-tricks.com/)
+        - [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+        - [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    - [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
+    - [**CSS Zen Garden**](http://csszengarden.com/)
+    - [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
+    - [**Specifishity**](http://www.specifishity.com/)
+    - [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
+    - [**Jen Simmons Labs**](https://labs.jensimmons.com/)
 
 - ## **Miscellaneous Resources**
 
-    -   [**CodePen**](https://codepen.io/)
-        -   [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
-    -   [**Web Design Weekly**](https://web-design-weekly.com/)
-    -   [**Responsive Design Weekly**](https://responsivedesign.is/)
+    - [**CodePen**](https://codepen.io/)
+        - [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
+    - [**Web Design Weekly**](https://web-design-weekly.com/)
+    - [**Responsive Design Weekly**](https://responsivedesign.is/)
 
 <hr>
 
@@ -365,8 +365,8 @@ Most of us are familiar with the concept of six degrees of separation — th
 ## **Hash Tables:**
 
 - **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
-    -   O(1) for a "good" table
-    -   O(n) for a terrible table (lots of collisions, etc.)
+    - O(1) for a "good" table
+    - O(n) for a terrible table (lots of collisions, etc.)
 
 <hr>
 
@@ -381,7 +381,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 # **Interviewing**
 
 - ### **Mock Interviewing**
-    -   **[Interviewing.io](https://interviewing.io/)**
+    - **[Interviewing.io](https://interviewing.io/)**
 
 <hr>
 
@@ -394,7 +394,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 # **Managing and Organizing Job Search**
 
 - **[Notion](notion.so)**
-    -   Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
+    - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
 
 <hr>
 
@@ -501,15 +501,15 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 # **Books**
 
 - **Grokking the Coding Interview**
-    -   [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
-    -   [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
+    - [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
+    - [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
 - **Grokking the System Design Interview**
-    -   [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
-    -   [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
+    - [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
+    - [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
 - **Elements of Programming Interviews (EPI) in Python**
-- -   [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
--   **Skienna Algorithm Design Manual**
-    -   [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
+- - [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
+- **Skienna Algorithm Design Manual**
+    - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
 
 <hr>
 

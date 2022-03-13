@@ -2,7 +2,6 @@
 title: Share links
 
 category: HTML
-updated: 2017-09-04
 ---
 
 ## Share links

@@ -1,7 +1,6 @@
 ---
 layout: post
 
-
     - en
     - javascript
 ---

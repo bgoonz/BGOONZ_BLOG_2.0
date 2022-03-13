@@ -2,7 +2,6 @@
 title: Jest
 category: JavaScript libraries
 
-updated: 2020-06-17
 weight: -3
 tags: [Featurable]
 intro: |
@@ -11,11 +10,7 @@ intro: |
 
 ## Testing
 
-
-
 ### Quick start
-
-
 
 ```bash
 npm install --save-dev jest babel-jest
@@ -103,8 +98,6 @@ See: [test.skip](http://facebook.github.io/jest/docs/en/api.html#testskipname-fn
 | `--runInBand`         | Run all tests one after the other        |
 
 ## Expect
-
-
 
 ### Basic expectations
 
@@ -204,8 +197,6 @@ it('works', () => {
     expect(output).toMatchSnapshot();
 });
 ```
-
-
 
 First run creates a snapshot. Subsequent runs match the saved snapshot.
 See: [Snapshot testing](http://facebook.github.io/jest/docs/en/snapshot-testing.html)

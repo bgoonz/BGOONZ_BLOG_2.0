@@ -2,7 +2,7 @@
 title: Netlify CMS Reference Sheet
 subtitle: lorem-ipsum
 date: '2021-09-30'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: image of
 excerpt: lorem-ipsum
 seo:
     title: ''
@@ -41,11 +41,11 @@ At its core, Netlify CMS is an open-source React app that acts as a wrapper for 
 - 
 - **Easy installation:** Add two files to your site and hook up the backend by including those f
 - 
--   **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
+- **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
 
--   **Flexible content types:** Specify an unlimited number of content types with custom fields.
+- **Flexible content types:** Specify an unlimited number of content types with custom fields.
 
--   **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
+- **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
 
 ## Netlify CMS vs. Netlify
 
@@ -59,7 +59,7 @@ With this in mind, you can:
 - 
 - Use Netlify without Netlify CMS and edit your static site in your code editor.
 
--   Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
+- Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
 
 If you hook up Netlify CMS to your website, you're basically adding a tool for content editors to make commits to your site repository without touching code or learning Git.
 
@@ -135,9 +135,9 @@ Let's break that down:
 - 
 - name: Field name in the document front matter.
 - 
--   widget: Determines UI style and value data type (details below).
+- widget: Determines UI style and value data type (details below).
 
--   default (optional): Sets a default value for the field.
+- default (optional): Sets a default value for the field.
 
 As described above, the widget property specifies a built-in or custom UI widget for a given field. When a content editor enters a value into a widget, that value is saved in the document front matter as the value for the name specified for that field. A full listing of available widgets can be found in the [Widgets doc](https://www.netlifycms.org/docs/widgets).
 

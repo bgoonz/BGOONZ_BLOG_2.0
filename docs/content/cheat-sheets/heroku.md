@@ -17,7 +17,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Heroku
 category: Devops
 
-updated: 2017-10-11
 description: |
   A one-page reference to common Heroku-CLI commands.
 intro: |

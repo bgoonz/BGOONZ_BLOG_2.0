@@ -47,7 +47,7 @@ thumb_image_alt: python logo
 
 - **PEP8** : Python Enhancement Proposals, style-guide for Python.
 - 
--   print is the equivalent of console.log.
+- print is the equivalent of console.log.
 
 > 'print() == console.log()'
 
@@ -93,9 +93,9 @@ T\*his is because the letter i is common place as the de facto index for any and
 - 
 - **There are no spaces between math operations in Python.**
 
--   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+- **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
 
--   **There are no ++ and -- in Python, the only shorthand operators are:**
+- **There are no ++ and -- in Python, the only shorthand operators are:**
 
 # Strings
 
@@ -103,7 +103,7 @@ T\*his is because the letter i is common place as the de facto index for any and
 - 
 - You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
 
--   Multiline strings use triple quotes.
+- Multiline strings use triple quotes.
 
 **Use the len() function to get the length of a string.**
 
@@ -131,7 +131,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - 
 - **You can also use "\*" to repeat strings or multiply strings.**
 
--   **Use the format() function to use placeholders in a string to input values later on.**
+- **Use the format() function to use placeholders in a string to input values later on.**
 
 <!---->
 
@@ -152,7 +152,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - 
 - Duck Typing is the fundamental approach of Python.
 
--   Assignment of a value automatically declares a variable.
+- Assignment of a value automatically declares a variable.
 
 <!---->
 
@@ -167,7 +167,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 - _Python replaces null with none._
 - 
--   **\*none is an object** and can be directly assigned to a variable.\*
+- **\*none is an object** and can be directly assigned to a variable.\*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
@@ -183,9 +183,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - 
 - Zero of any numeric type.
 
--   Empty Sequence or Collection.
+- Empty Sequence or Collection.
 
--   True and False must be capitalized
+- True and False must be capitalized
 
 # Comparison Operators
 
@@ -193,7 +193,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - 
 - In Python, equality operators are processed from left to right.
 
--   Logical operators are processed in this order:
+- Logical operators are processed in this order:
 
 1.  **NOT**
 
@@ -263,11 +263,11 @@ You can think of this as roughly equivalent to the slice method called on a Java
 - 
 - **A list of parameters enclosed in parentheses.**
 
--   **A colon at the end of the line.**
+- **A colon at the end of the line.**
 
--   **One tab indentation for the code to run.**
+- **One tab indentation for the code to run.**
 
--   **You can use default parameters just like in JS**
+- **You can use default parameters just like in JS**
 
 ## **Keep in mind, default parameters must always come after regular parameters.**
 

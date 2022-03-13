@@ -209,8 +209,8 @@ No
 
 ## See also
 
--   [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
--   [`SharedArrayBuffer`](sharedarraybuffer)
--   [RangeError: invalid array length](../errors/invalid_array_length)
+- [JavaScript typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+- [`SharedArrayBuffer`](sharedarraybuffer)
+- [RangeError: invalid array length](../errors/invalid_array_length)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer</a>

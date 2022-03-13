@@ -19,7 +19,6 @@ thumb_img_path: images/css-72a655a7.jpg
 title: Flow
 
 category: JavaScript libraries
-updated: 2020-07-05
 weight: -3
 tags: [Featurable]
 
@@ -27,11 +26,7 @@ tags: [Featurable]
 
 ## Getting started
 
-
-
 ### Simple example
-
-
 
 ```js
 /* @flow */
@@ -168,8 +163,6 @@ This makes an `Album` valid even if `name` is not part of the keys. This is diff
 See: [Optional properties](https://flow.org/en/docs/types/primitives/#toc-optional-object-properties)
 
 ## Objects
-
-
 
 ### Width subtyping
 
