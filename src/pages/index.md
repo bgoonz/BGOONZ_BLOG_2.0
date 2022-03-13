@@ -23,8 +23,8 @@ sections:
           Why is looking at runtime not a reliable method of calculating time
           complexity?
         actions:
-          - label: Get Started
-            url: /docs
+          - label: View Post
+            url: /docs/ds-algo/big-o/
             style: secondary
         title: A Quick Guide To Big O
         image: images/my-back.png
@@ -72,7 +72,7 @@ sections:
         title: Scope & Closure
       - image_alt: Every idea needs a medium
         content: |
-          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
+          PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
           + Extensions & Resources, Super Simple Intro To HTML,  Understanding
           Git... etc....
         actions: []
@@ -117,8 +117,8 @@ sections:
         type: grid_item
         image: images/jamstack.png
       - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: /docs/
+        image_alt: event loop
         content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
         actions:
           - label: Learn More
@@ -143,8 +143,9 @@ sections:
         image: images/njdev-219301cd.jpg
         title_url: 'https://www.allaboutthejersey.com/'
       - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
+        title_url: >-
+            https://www.iter.org/
+        image_alt: ITER Reactor
         content: |
           # Break Even Nuclear Fusion Candidate
           In December, researchers at the Joint European Torus (JET) started
@@ -156,7 +157,7 @@ sections:
           tokamak with any significant amount of tritium.
         actions: []
         type: grid_item
-        image: images/iter-c7508519.jpg
+        image: images/ iter.jpg
     type: section_grid
   - section_id: features-two-col
     type: section_grid
@@ -166,10 +167,8 @@ sections:
       - title: Resume
         actions:
           - label: View In One Drive
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - Learn More
-            url: '#'
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
             icon_class: dev
             new_window: false
