@@ -2,19 +2,16 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Algolia } from 'styled-icons/fa-brands';
 import { Search } from 'styled-icons/fa-solid';
-
 export const Root = styled.div`
     position: relative;
     display: grid;
     grid-gap: 1em;
     color: var(--color-text);
 `;
-
 export const SearchIcon = styled(Search)`
     pointer-events: none;
     color: white;
 `;
-
 const focus = css`
     background: white;
     color: var(--color-blue-dark);
@@ -25,7 +22,6 @@ const focus = css`
         margin: 0 0.3em;
     }
 `;
-
 const collapsed = css`
     width: 0;
     cursor: pointer;
@@ -37,7 +33,6 @@ const collapsed = css`
         color: var(--color-gray-default);
     }
 `;
-
 const expanded = css`
     background: white;
     width: 6em;
@@ -47,7 +42,6 @@ const expanded = css`
         margin: 0.3em;
     }
 `;
-
 export const Input = styled.input`
     outline: none;
     border: none;
@@ -57,13 +51,11 @@ export const Input = styled.input`
     border-radius: 0.2em;
     ${(props) => (props.collapse ? collapsed : expanded)};
 `;
-
 export const Form = styled.form`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 `;
-
 export const HitsWrapper = styled.div`
     display: ${(props) => (props.show ? `grid` : `none`)};
     background: var(--color-background);
@@ -111,7 +103,6 @@ export const HitsWrapper = styled.div`
         margin-bottom: 0.3em;
     }
 `;
-
 export const PoweredBy = () => (
     <span css="font-size: 0.6em; text-align: end; padding: 0;">
         Powered by{` `}

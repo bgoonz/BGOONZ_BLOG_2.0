@@ -1,9 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
-
 import {getPage, classNames, Link, withPrefix, pathJoin, getPages} from '../utils';
 import DocsSubmenu from './DocsSubmenu';
-
 export default class DocsMenu extends React.Component {
     render() {
         let site = _.get(this.props, 'site', null);

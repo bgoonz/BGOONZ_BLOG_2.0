@@ -2,7 +2,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React, { Fragment } from 'react';
 import { Date, GitHub, Homepage, Meta, NPM, Tech } from './styles';
 import Img from 'gatsby-image';
-
 const Project = ({ title, cover, date, url, repo, npm, tech, body }) => (
     <>
         <h2 css="margin-top: 0;">
@@ -29,9 +28,7 @@ const Project = ({ title, cover, date, url, repo, npm, tech, body }) => (
                     <NPM />
                 </a>
             )}
-
             <br />
-
             {tech && (
                 <>
                     <Tech />
@@ -47,5 +44,4 @@ const Project = ({ title, cover, date, url, repo, npm, tech, body }) => (
         <MDXRenderer>{body}</MDXRenderer>
     </>
 );
-
 export default Project;

@@ -1,6 +1,5 @@
 // gatsby-plugin-feed config
 // Adapted from https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/feed.js
-
 module.exports = {
     query: `{
     site {

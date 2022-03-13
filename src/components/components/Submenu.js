@@ -1,9 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
-
 import {classNames} from '../utils';
 import ActionLink from './ActionLink';
-
 export default class Submenu extends React.Component {
     render() {
         let page = _.get(this.props, 'page', null);

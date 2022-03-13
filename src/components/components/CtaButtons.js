@@ -1,8 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-
 import {Link, withPrefix, classNames} from '../utils';
-
 export default class CtaButtons extends React.Component {
     render() {
         let actions = _.get(this.props, 'actions', null);

@@ -7,7 +7,6 @@ import { Timer } from 'styled-icons/material';
 import { Calendar } from 'styled-icons/octicons';
 import { disqusConfig } from 'templates/post';
 import { Meta, TagList } from './styles';
-
 const PostMeta = ({ title, slug, date, timeToRead, tags, inTitle = false }) => (
     <Meta inTitle={inTitle}>
         <span>
@@ -30,9 +29,7 @@ const PostMeta = ({ title, slug, date, timeToRead, tags, inTitle = false }) => (
         <TagList tags={tags} />
     </Meta>
 );
-
 export default PostMeta;
-
 PostMeta.propTypes = {
     date: PropTypes.string.isRequired,
     timeToRead: PropTypes.number.isRequired,

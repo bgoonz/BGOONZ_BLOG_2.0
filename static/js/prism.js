@@ -59,7 +59,6 @@ var Prism = (function () {
                         r = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),
                         i = 0;
                     (a = r[i++]);
-
                 )
                     t.highlightElement(a, e === !0, n);
             },

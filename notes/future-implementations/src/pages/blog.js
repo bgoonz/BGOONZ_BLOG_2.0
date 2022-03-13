@@ -5,13 +5,10 @@ import { graphql } from 'gatsby';
 import { useQueryParam } from 'hooks';
 import React from 'react';
 import PostList from 'views/PostList';
-
 const insertAllTag = (tags, count) => !tags.map((tag) => tag.title).includes(`All`) && tags.unshift({ title: `All`, count });
-
 const filterPostsByTag = (tag, posts) =>
     // If !tag, tag is null which stands for all posts.
     posts.filter((post) => !tag || post.frontmatter.tags.includes(tag));
-
 export default function BlogPage({ data }) {
     const { allMdx, img } = data;
     const { posts, tags } = allMdx;
@@ -30,7 +27,6 @@ export default function BlogPage({ data }) {
         </>
     );
 }
-
 export const query = graphql`
     {
         allMdx(filter: { fileAbsolutePath: { regex: "/posts/" } }, sort: { fields: frontmatter___date, order: DESC }) {

@@ -1,15 +1,12 @@
 import { useEventListener } from 'hooks';
 import React, { useEffect, useRef, useState } from 'react';
 import { controls, ModalBehind, ModalDiv } from './styles';
-
 const { Close, Next, Prev, FullscreenToggle } = controls;
-
 const handleArrowKeys = (setModal) => (event) => {
     if (event?.key === `ArrowRight`) setModal((m) => m + 1);
     else if (event?.key === `ArrowLeft`) setModal((m) => m - 1);
     else if (event?.key === `Escape`) setModal();
 };
-
 export default function Modal({ open, modal, setModal, children, ...rest }) {
     const ref = useRef();
     const { showArrows, className } = rest;

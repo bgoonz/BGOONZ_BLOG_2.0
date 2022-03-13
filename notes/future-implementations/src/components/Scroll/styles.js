@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { ArrowDownCircle as Down, ArrowUpCircle as Up } from 'styled-icons/feather';
-
 export const Arrow = styled(Down).attrs((props) => ({
     as: props.direction === `up` && Up
 }))`

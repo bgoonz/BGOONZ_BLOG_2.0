@@ -5,8 +5,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { Layout } from '../components/index';
 import { getPageUrl, Link, withPrefix } from '../utils';
-
-
 export default class Home extends React.Component {
     renderPost(post, index, hasMoreLink, moreLinkText) {
         const title = _.get(post, 'title');
@@ -17,7 +15,6 @@ export default class Home extends React.Component {
         const dateTimeAttr = moment(date).strftime('%Y-%m-%d %H:%M');
         const formattedDate = moment(date).strftime('%B %d, %Y');
         const postUrl = getPageUrl(post, { withPrefix: true });
-
         return (
             <article key={index} className="post">
                 <header className="post-header">
@@ -51,7 +48,6 @@ export default class Home extends React.Component {
             </article>
         );
     }
-
     render() {
         const data = _.get(this.props, 'data');
         const config = _.get(data, 'config');
@@ -61,7 +57,6 @@ export default class Home extends React.Component {
         const hasMoreLink = _.get(page, 'has_more_link');
         const moreLinkText = _.get(page, 'more_link_text');
         const posts = _.orderBy(_.get(this.props, 'posts', []), 'date', 'desc');
-
         return (
             <Layout page={page} config={config}>
                 <Header config={config} page={page} image={headerImage} />

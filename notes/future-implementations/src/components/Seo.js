@@ -1,7 +1,6 @@
 import { startCase } from 'lodash';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
 export default function Seo({ site, uri = ``, data, children }) {
     const title = uri.length > 1 ? `${startCase(uri)} | ${site.title}` : site.title;
     const pageUrl = site.url + uri;

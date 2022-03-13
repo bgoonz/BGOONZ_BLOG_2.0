@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const ButtonLink = styled.a`
     background: var(--color-a);
     color: white;
@@ -14,7 +13,6 @@ export const ButtonLink = styled.a`
         background: var(--color-d);
     }
 `;
-
 export const ButtonGroup = styled.div`
     margin: 2em auto;
     border-radius: 0.5em;

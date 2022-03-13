@@ -3,7 +3,6 @@ import { ButtonGroup, PageBody } from 'components/styles';
 import { graphql } from 'gatsby';
 import React, { useState } from 'react';
 import Photos from 'views/Photos';
-
 export default function NaturePage({ data }) {
     const [modal, setModal] = useState();
     const [tab, setTab] = useState(`list`);
@@ -31,7 +30,6 @@ export default function NaturePage({ data }) {
         </>
     );
 }
-
 export const query = graphql`
     {
         photos: allFile(filter: { dir: { regex: "/content/photos/" }, ext: { eq: ".jpg" } }) {

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { Tag, TagGrid, tagIcons, TagsIcon, Toggle } from './styles';
-
 export default function TagList({ tags, activeTag = `All`, setActiveTag }) {
     const [open, setOpen] = useState(false);
     return (
@@ -28,7 +27,6 @@ export default function TagList({ tags, activeTag = `All`, setActiveTag }) {
         </TagGrid>
     );
 }
-
 TagList.propTypes = {
     activeTag: PropTypes.string,
     setActiveTag: PropTypes.func.isRequired,

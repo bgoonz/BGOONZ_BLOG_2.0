@@ -13,7 +13,6 @@
         : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).reframe = t());
 })(this, function () {
     'use strict';
-
     function t() {
         for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
         for (var i = Array(e), o = 0, t = 0; t < n; t++) for (var r = arguments[t], f = 0, d = r.length; f < d; f++, o++) i[o] = r[f];
@@ -45,7 +44,6 @@
         );
     };
 });
-
 /*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
 window.Element &&
     !Element.prototype.closest &&
@@ -60,7 +58,6 @@ window.Element &&
     }),
     (function () {
         if ('function' == typeof window.CustomEvent) return;
-
         function e(e, t) {
             t = t || {
                 bubbles: !1,
@@ -333,7 +330,6 @@ window.Element &&
             );
         };
     });
-
 /*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
 Element.prototype.closest ||
     (Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector),
@@ -348,7 +344,6 @@ Element.prototype.closest ||
     })),
     (function () {
         if ('function' == typeof window.CustomEvent) return !1;
-
         function t(t, e) {
             e = e || {
                 bubbles: !1,
@@ -538,7 +533,6 @@ Element.prototype.closest ||
             );
         };
     });
-
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
@@ -556,7 +550,6 @@ Element.prototype.closest ||
 })(this, function () {
     return (function (n) {
         var o = {};
-
         function r(t) {
             if (o[t]) return o[t].exports;
             var e = (o[t] = {
@@ -650,7 +643,6 @@ Element.prototype.closest ||
                 a = o(n(1)),
                 c = o(n(3)),
                 u = o(n(4));
-
             function o(t) {
                 return t && t.__esModule
                     ? t
@@ -765,7 +757,6 @@ Element.prototype.closest ||
                     o
                 );
             })();
-
             function s(t, e) {
                 var n = 'data-clipboard-' + t;
                 if (e.hasAttribute(n)) return e.getAttribute(n);
@@ -974,7 +965,6 @@ Element.prototype.closest ||
                 },
                 once: function (t, e, n) {
                     var o = this;
-
                     function r() {
                         o.off(t, r), e.apply(n, arguments);
                     }
@@ -1051,7 +1041,6 @@ Element.prototype.closest ||
         },
         function (t, e, n) {
             var a = n(7);
-
             function i(t, e, n, o, r) {
                 var i = function (e, n, t, o) {
                     return function (t) {

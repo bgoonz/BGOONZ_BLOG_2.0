@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import { connectHits, Highlight, Snippet } from 'react-instantsearch-dom';
 import { Tags } from 'styled-icons/fa-solid';
 import { Calendar } from 'styled-icons/octicons';
-
 const postHit = (hit) => (
     <div>
         <Calendar size="1em" />
@@ -20,7 +19,6 @@ const postHit = (hit) => (
         ))}
     </div>
 );
-
 export default connectHits(function HitComp({ type, hits, onClick }) {
     const extend = { postHit }[type];
     return hits.map((hit) => (

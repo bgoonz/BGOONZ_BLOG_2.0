@@ -5,7 +5,6 @@ import React from 'react';
 import DocsMenu from '../components/DocsMenu';
 import { Layout } from '../components/index';
 import { getPages, htmlToReact, Link, withPrefix } from '../utils';
-
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -15,7 +14,6 @@ export const query = graphql`
         }
     }
 `;
-
 export default class Docs extends React.Component {
     render() {
         let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');

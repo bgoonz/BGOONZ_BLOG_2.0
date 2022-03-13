@@ -3,7 +3,6 @@ import { useOnClickOutside } from 'hooks';
 import React, { useRef, useState, useEffect } from 'react';
 import { NavDiv, NavLink, NavToggle } from './styles';
 import { globalHistory } from '@reach/router';
-
 export default function Nav(props) {
     const { nav } = useStaticQuery(graphql`
         {

@@ -1,8 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-
 import {classNames, Link, withPrefix} from '../utils';
-
 export default class DocsSubmenu extends React.Component {
     render() {
         let child_pages = _.get(this.props, 'child_pages', null);

@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Grid } from 'components/styles';
-
 export function TechStack() {
     const { tech } = useStaticQuery(graphql`
         {

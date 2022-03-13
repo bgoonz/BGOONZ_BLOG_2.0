@@ -3,12 +3,10 @@ import DarkToggle from '../DarkToggle';
 import Nav from '../Nav';
 import Search from '../Search';
 import { HeaderDiv, Logo } from './styles';
-
 const searchIndices = [
     { name: `Pages`, title: `Pages` },
     { name: `Posts`, title: `Blog Posts`, type: `postHit` }
 ];
-
 export default function Header({ site }) {
     return (
         <HeaderDiv>

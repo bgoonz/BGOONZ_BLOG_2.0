@@ -2,43 +2,33 @@ const path = require('path');
 const fs = require('fs');
 const { createFilePath } = require('gatsby-source-filesystem');
 const _ = require('lodash');
-
 function findFileNode({ node, getNode }) {
     let fileNode = node;
     let ids = [fileNode.id];
-
     while (fileNode && fileNode.internal.type !== `File` && fileNode.parent) {
         fileNode = getNode(fileNode.parent);
-
         if (!fileNode) {
             break;
         }
-
         if (_.includes(ids, fileNode.id)) {
             console.log(`found cyclic reference between nodes`);
             break;
         }
-
         ids.push(fileNode.id);
     }
-
     if (!fileNode || fileNode.internal.type !== `File`) {
         console.log('did not find ancestor File node');
         return null;
     }
-
     return fileNode;
 }
-
 exports.onCreateNode = ({ node, getNode, actions }, options) => {
     const { createNodeField } = actions;
-
     if (node.internal.type === 'MarkdownRemark') {
         let fileNode = findFileNode({ node, getNode });
         if (!fileNode) {
             throw new Error('could not find parent File node for MarkdownRemark node: ' + node);
         }
-
         let url;
         if (node.frontmatter.url) {
             url = node.frontmatter.url;
@@ -47,7 +37,6 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
         } else {
             url = createFilePath({ node, getNode });
         }
-
         createNodeField({ node, name: 'url', value: url });
         createNodeField({ node, name: 'absolutePath', value: fileNode.absolutePath });
         createNodeField({ node, name: 'relativePath', value: fileNode.relativePath });
@@ -58,10 +47,8 @@ exports.onCreateNode = ({ node, getNode, actions }, options) => {
         createNodeField({ node, name: 'name', value: fileNode.name });
     }
 };
-
 exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
     const { createPage } = actions;
-
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
     // properties of the MarkdownRemark nodes. Don't bring additional fields
     // such as "relativePath". Otherwise, Gatsby's GraphQL resolvers might infer
@@ -83,14 +70,12 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
         if (result.errors) {
             return Promise.reject(result.errors);
         }
-
         const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
-
         const pages = nodes.map((graphQLNode) => {
             // Use the node id to get the underlying node. It is not exactly the
             // same node returned by GraphQL, because GraphQL resolvers might
@@ -106,25 +91,20 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                 html: graphQLNode.html
             };
         });
-
         nodes.forEach((graphQLNode) => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
-
             const template = node.frontmatter.template;
             if (!template) {
                 console.error(`Error: undefined template for ${url}`);
                 return;
             }
-
             const component = path.resolve(`./src/templates/${template}.js`);
             if (!fs.existsSync(component)) {
                 console.error(`Error: component "src/templates/${template}.js" missing for ${url}`);
                 return;
             }
-
             const existingPageNode = _.get(sitePageNodesByPath, url);
-
             const page = {
                 path: url,
                 component: component,
@@ -144,11 +124,9 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                     }
                 }
             };
-
             if (existingPageNode && !_.get(page, 'context.menus')) {
                 page.context.menus = _.get(existingPageNode, 'context.menus');
             }
-
             createPage(page);
         });
     });

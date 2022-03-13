@@ -1,6 +1,5 @@
 import Image from 'gatsby-image';
 import styled from 'styled-components';
-
 export const PreviousNext = styled.div`
     display: flex;
     justify-content: space-between;
@@ -8,7 +7,6 @@ export const PreviousNext = styled.div`
     margin-top: 3em;
     position: relative;
 `;
-
 export const Thumbnail = styled.div`
     border-radius: 0.5em;
     overflow: hidden;
@@ -31,7 +29,6 @@ export const Thumbnail = styled.div`
         background: rgba(0, 0, 0, 0.5);
     }
 `;
-
 export const Img = styled(Image).attrs(({ fluid }) => !fluid && { as: `img` })`
     height: calc(10em + 4vh);
     width: 100%;

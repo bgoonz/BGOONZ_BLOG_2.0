@@ -7,12 +7,10 @@ import { DiscussionEmbed } from 'disqus-react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
-
 export const disqusConfig = ({ slug, title }) => ({
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: slug, title }
 });
-
 export default function PostTemplate({ data }) {
     const { post, next, prev } = data;
     const { frontmatter, body, timeToRead } = post;
@@ -32,7 +30,6 @@ export default function PostTemplate({ data }) {
         </>
     );
 }
-
 export const query = graphql`
     fragment adjacent on Mdx {
         frontmatter {

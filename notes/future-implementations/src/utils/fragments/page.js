@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-
 export const query = graphql`
     fragment page on Mdx {
         frontmatter {

@@ -10,7 +10,6 @@ import { ArrowLeft, ArrowRight } from 'styled-icons/fa-solid';
 import { mediaQueries } from 'utils/mediaQueries';
 import PostList from 'views/PostList';
 import { ProjectList } from 'views/Web';
-
 export default function IndexPage({ data }) {
     const { mdx, janosh, posts } = data;
     return (
@@ -36,7 +35,6 @@ export default function IndexPage({ data }) {
         </>
     );
 }
-
 const Title = styled.h1`
     text-align: center;
     margin-top: 4em;
@@ -61,13 +59,11 @@ const Title = styled.h1`
         }
     }
 `;
-
 const iconCss = css`
     width: 0.6em;
     vertical-align: 0;
     margin: 0 0.4em;
 `;
-
 const H = ({ children, as }) => (
     <h1 as={as} css="text-align: center;">
         <ArrowLeft css={iconCss} />
@@ -75,7 +71,6 @@ const H = ({ children, as }) => (
         <ArrowRight css={iconCss} />
     </h1>
 );
-
 export const query = graphql`
     {
         mdx(fileAbsolutePath: { regex: "/landing.md/" }) {
