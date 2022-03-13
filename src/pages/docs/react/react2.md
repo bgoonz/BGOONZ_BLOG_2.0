@@ -1,10 +1,10 @@
 ---
 title: Intro To React
 weight: 0
-excerpt: lorem-ipsum
+excerpt: All of the code examples below will be included a second time at the bottom of this article as an embedded gist.
 seo:
-    title: ''
-    description: ''
+    title: 'React Intro'
+    description: 'Introduction to React for Complete Beginners All of the code examples below will be included a second time at the bottom of this article as an embedded gist, so that it is properly syntax highlighted. React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript.'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -79,6 +79,8 @@ The `render` method returns a _description_ of what you want to see on the scree
       React.createElement('ul', /* ... ul children ... */)
     );
 
+```
+
 ---
 
 ### Valid JSX:
@@ -103,6 +105,9 @@ To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comm
 
 The code editor has a JSX element similar to what you created in the last challenge. Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
 
+
+```js
+
     const JSX = (
       <div>
       {/* This is a comment */}
@@ -110,6 +115,8 @@ The code editor has a JSX element similar to what you created in the last challe
         <p>Here's a subtitle</p>
       </div>
     );
+
+```
 
 ---
 
@@ -147,7 +154,9 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ### Ans:
 
-    const JSX = (
+```js
+
+ const JSX = (
       <div className="myDiv">
         <h1>Add a class to this div</h1>
       </div>
@@ -170,6 +179,9 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
 
+
+```js
+
     const JSX = (
       <div>
         <h2>Welcome to React!</h2> <br >
@@ -180,13 +192,17 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ### Ans:
 
-    const JSX = (
+```js
+
+ const JSX = (
       <div>
         <h2>Welcome to React!</h2> <br />
         <p>Be sure to close all tags!</p>
         <hr />
       </div>
     );
+
+```
 
 ---
 
@@ -298,6 +314,12 @@ Note: The text is considered a child of the div element, so you will not be able
 
 ---
 
+
+<details>
+
+<summary>  See More </summary>   
+
+
 ### React: Create a Component with Composition
 
 > _Imagine you are building an App and have created three components, a Navbar, Dashboard, and Footer._
@@ -357,6 +379,13 @@ Note: The text is considered a child of the div element, so you will not be able
 
 ### Ans:
 
+
+
+<details>
+
+<summary>  Answers </summary>   
+
+
     const ChildComponent = () => {
       return (
         <div>
@@ -380,10 +409,17 @@ Note: The text is considered a child of the div element, so you will not be able
         );
       }
     };
+```
+
+
+
+    
+ </details>   
+    
 
 ### More Examples:
 
-For more content follow me on GitHub:
+
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
 <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -394,7 +430,7 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/introduction-to-react-for-complete-beginners-8021738aa1ad" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on May 23, 2021.
+ May 23, 2021.
 
 # Snippets:
 
@@ -3277,3 +3313,6 @@ ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
 <hr />
+
+
+</details>

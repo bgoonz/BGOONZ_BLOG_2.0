@@ -63,7 +63,7 @@ Application programming interface. Spell out the abbreviation when it is first u
 
 ### Express
 
-A fast, un-opinionated, minimalist web framework for Node.js applications. In general, “Express” is preferred to “Express.js,” though the latter is acceptable.
+A fast, un-opinionated, minimalist web framework for Node.js applications. In general, "Express" is preferred to "Express.js," though the latter is acceptable.
 
 ### libuv
 
@@ -75,15 +75,15 @@ A function that is invoked by the Express routing layer before the final request
 
 -   `var foo = require('middleware')` is called _requiring_ or _using_ a Node.js module. Then the statement `var mw = foo()` typically returns the middleware.
 -   `app.use(mw)` is called _adding the middleware to the global processing stack_.
--   `app.get('/foo', mw, function (req, res) { ... })` is called _adding the middleware to the “GET /foo” processing stack_.
+-   `app.get('/foo', mw, function (req, res) { ... })` is called _adding the middleware to the "GET /foo" processing stack_.
 
 ### Node.js
 
-A software platform that is used to build scalable network applications. Node.js uses JavaScript as its scripting language, and achieves high throughput via non-blocking I/O and a single-threaded event loop. See [nodejs.org](https://nodejs.org/en/). **Usage note**: Initially, “Node.js,” thereafter “Node”.
+A software platform that is used to build scalable network applications. Node.js uses JavaScript as its scripting language, and achieves high throughput via non-blocking I/O and a single-threaded event loop. See [nodejs.org](https://nodejs.org/en/). **Usage note**: Initially, "Node.js," thereafter "Node".
 
 ### open-source, open source
 
-When used as an adjective, hyphenate; for example: “This is open-source software.” See [Open-source software on Wikipedia](http://en.wikipedia.org/wiki/Open-source_software). Note: Although it is common not to hyphenate this term, we are using the standard English rules for hyphenating a compound adjective.
+When used as an adjective, hyphenate; for example: "This is open-source software." See [Open-source software on Wikipedia](http://en.wikipedia.org/wiki/Open-source_software). Note: Although it is common not to hyphenate this term, we are using the standard English rules for hyphenating a compound adjective.
 
 ### request
 
@@ -95,7 +95,7 @@ An HTTP response. A server returns an HTTP response message to the client. The r
 
 ### route
 
-Part of a URL that identifies a resource. For example, in `http://foo.com/products/id`, “/products/id” is the route.
+Part of a URL that identifies a resource. For example, in `http://foo.com/products/id`, "/products/id" is the route.
 
 # Installing
 
@@ -265,7 +265,10 @@ As a way of organizing your router, express includes a router object.
 
 #### Making a new router
 
+
 ```jsx
+
+
 const express = require('express');
 const userRouter = express.Router();
 ```

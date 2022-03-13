@@ -2,7 +2,7 @@
 
 JavaScript by default does not have a contains method. And for checking existence of a substring in a string or an item in an array you may do this:
 
-```javascript
+```js
 var someText = 'javascript rules';
 if (someText.indexOf('javascript') !== -1) {
 }
@@ -16,7 +16,7 @@ But let's look at these [Expressjs](https://github.com/strongloop/express) code 
 
 [examples/mvc/lib/boot.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/mvc/lib/boot.js#L26)
 
-```javascript
+```js
 for (var key in obj) {
   // "reserved" exports
   if (~['name', 'prefix', 'engine', 'before'].indexOf(key)) continue;
@@ -24,7 +24,7 @@ for (var key in obj) {
 
 [lib/utils.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/lib/utils.js#L93)
 
-```javascript
+```js
 exports.normalizeType = function (type) {
     return ~type.indexOf('/') ? acceptParams(type) : { value: mime.lookup(type), params: {} };
 };
@@ -32,7 +32,7 @@ exports.normalizeType = function (type) {
 
 [examples/web-service/index.js](https://github.com/strongloop/express/blob/2f8ac6726fa20ab5b4a05c112c886752868ac8ce/examples/web-service/index.js#L35)
 
-```javascript
+```js
 // key is invalid
 if (!~apiKeys.indexOf(key)) return next(error(401, 'invalid api key'));
 ```
@@ -41,7 +41,7 @@ The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/We
 
 It transforms `-1` into `0`, and `0` evaluates to `false` in JavaScript:
 
-```javascript
+```js
 var someText = 'text';
 !!~someText.indexOf('tex'); // someText contains "tex" - true
 !~someText.indexOf('tex'); // someText NOT contains "tex" - false
@@ -53,13 +53,13 @@ var someText = 'text';
 
 ES6 introduced the [includes() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) and you can use it to determine whether or not a string includes another string:
 
-```javascript
+```js
 'something'.includes('thing'); // true
 ```
 
 With ECMAScript 2016 (ES7) it is even possible to use these techniques with Arrays:
 
-```javascript
+```js
 !!~[1, 2, 3].indexOf(1); // true
 [1, 2, 3].includes(1); // true
 ```

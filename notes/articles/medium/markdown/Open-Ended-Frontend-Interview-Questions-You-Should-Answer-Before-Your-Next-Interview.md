@@ -58,4 +58,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/open-ended-frontend-interview-questions-you-should-answer-before-your-next-interview-7c9722712521" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+ August 31, 2021.

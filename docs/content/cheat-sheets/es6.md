@@ -30,7 +30,12 @@ A quick overview of new JavaScript features in ES2015, ES2016, ES2017, ES2018 an
 
 #### Let
 
+---
+
+
 ```js
+
+
 function fn() {
     let x = 0;
     if (true) {
@@ -263,7 +268,12 @@ Default values can be assigned while destructuring arrays or objects.
 
 ### Function arguments
 
+---
+
+
 ```js
+
+
 function greet({ name, greeting }) {
     console.log(`${greeting}, ${name}!`);
 }
@@ -279,7 +289,12 @@ Destructuring of objects and arrays can also be done in function arguments.
 
 ### Default values
 
+---
+
+
 ```js
+
+
 function greet({ name = 'Rauno' } = {}) {
     console.log(`Hi ${name}!`);
 }
@@ -294,7 +309,12 @@ greet({ name: 'Larry' }); // Hi Larry!
 
 ### Reassigning keys
 
+---
+
+
 ```js
+
+
 function printCoordinates({ left: x, top: y }) {
     console.log(`x: ${x}, y: ${y}`);
 }
@@ -381,7 +401,12 @@ See: [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 #### Default arguments
 
+---
+
+
 ```js
+
+
 function greet(name = 'Jerry') {
     return `Hello ${name}`;
 }
@@ -391,7 +416,12 @@ function greet(name = 'Jerry') {
 
 #### Rest arguments
 
+---
+
+
 ```js
+
+
 function fn(x, ...y) {
     // y is an Array
     return x * y.length;
@@ -575,7 +605,12 @@ See: [Module exports](https://babeljs.io/learn-es2015/#modules)
 
 ### Generators
 
+---
+
+
 ```js
+
+
 function* idMaker() {
     let id = 0;
     while (true) {

@@ -54,7 +54,7 @@ Whenever we choose a pivot, it must be in one of the two sorted parts of the rot
 - If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
 - Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
-```javascript
+```js
 /**
  * @param {number[]} nums
  * @param {number} target

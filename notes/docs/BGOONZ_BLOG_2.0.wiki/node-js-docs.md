@@ -5007,8 +5007,8 @@ Next, invoke the `node-gyp build` command to generate the compiled `addon.node` 
 When using `npm install` to install a Node.js addon, npm uses its own bundled version of `node-gyp` to perform this same set of actions, generating a compiled version of the addon for the user's platform on demand.
 
 Once built, the binary addon can be used from within Node.js by pointing [`require()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_requireid) to the built `addon.node` module:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5181,8 +5181,8 @@ NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 ```
 
 Once compiled, the example addon can be required and used from within Node.js:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5232,8 +5232,8 @@ NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 This example uses a two-argument form of `Init()` that receives the full `module` object as the second argument. This allows the addon to completely overwrite `exports` with a single function instead of adding the function as a property of `exports`.
 
 To test it, run the following JavaScript:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5287,8 +5287,8 @@ NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 ```
 
 To test it in JavaScript:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5347,8 +5347,8 @@ NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 ```
 
 To test:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5512,8 +5512,8 @@ To build this example, the `myobject.cc` file must be added to the `binding.gyp`
 ```
 
 Test it with:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -5714,8 +5714,8 @@ Once again, to build this example, the `myobject.cc` file must be added to the `
 ```
 
 Test it with:
-
-```
+ 
+```js
 
 const createObject = require('./build/Release/addon');
 
@@ -5901,8 +5901,8 @@ void MyObject::NewInstance(const FunctionCallbackInfo<Value>& args) {
 ```
 
 Test it with:
-
-```
+ 
+```js
 
 const addon = require('./build/Release/addon');
 
@@ -10421,7 +10421,7 @@ int main(int argc, char** argv) {
 
 #### Per-instance state[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#embedding_per-instance-state)
 
-Node.js has a concept of a "Node.js instance”, that is commonly being referred to as `node::Environment`. Each `node::Environment` is associated with:
+Node.js has a concept of a "Node.js instance", that is commonly being referred to as `node::Environment`. Each `node::Environment` is associated with:
 
 -   Exactly one `v8::Isolate`, i.e. one JS Engine instance,
 -   Exactly one `uv_loop_t`, i.e. one event loop, and
@@ -10543,8 +10543,8 @@ The [`child_process.exec()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#
 #### Spawning `.bat` and `.cmd` files on Windows[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_spawning-bat-and-cmd-files-on-windows)
 
 The importance of the distinction between [`child_process.exec()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexeccommand-options-callback) and [`child_process.execFile()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexecfilefile-args-options-callback) can vary based on platform. On Unix-type operating systems (Unix, Linux, macOS) [`child_process.execFile()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexecfilefile-args-options-callback) can be more efficient because it does not spawn a shell by default. On Windows, however, `.bat` and `.cmd` files are not executable on their own without a terminal, and therefore cannot be launched using [`child_process.execFile()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexecfilefile-args-options-callback). When running on Windows, `.bat` and `.cmd` files can be invoked using [`child_process.spawn()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processspawncommand-args-options) with the `shell` option set, with [`child_process.exec()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexeccommand-options-callback), or by spawning `cmd.exe` and passing the `.bat` or `.cmd` file as an argument (which is what the `shell` option and [`child_process.exec()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexeccommand-options-callback) do). In any case, if the script filename contains spaces it needs to be quoted.
-
-```
+ 
+```js
 
 const { spawn } = require('child_process');
 const bat = spawn('cmd.exe', ['/c', 'my.bat']);
@@ -10561,8 +10561,8 @@ bat.on('exit', (code) => {
   console.log(`Child exited with code ${code}`);
 });
 ```
-
-```
+ 
+```js
 
 const { exec, spawn } = require('child_process');
 exec('my.bat', (err, stdout, stderr) => {
@@ -14825,8 +14825,8 @@ Creates a new `Hash` object that contains a deep copy of the internal state of t
 The optional `options` argument controls stream behavior. For XOF hash functions such as `'shake256'`, the `outputLength` option can be used to specify the desired output length in bytes.
 
 An error is thrown when an attempt is made to copy the `Hash` object after its [`hash.digest()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_hashdigestencoding) method has been called.
-
-```
+ 
+```js
 
 const {
   createHash
@@ -16290,8 +16290,8 @@ Because RSA public keys can be derived from private keys, a private key may be p
 Generates cryptographically strong pseudorandom data. The `size` argument is a number indicating the number of bytes to generate.
 
 If a `callback` function is provided, the bytes are generated asynchronously and the `callback` function is invoked with two arguments: `err` and `buf`. If an error occurs, `err` will be an `Error` object; otherwise it is `null`. The `buf` argument is a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html) containing the generated bytes.
-
-```
+ 
+```js
 
 const {
   randomBytes
@@ -16304,8 +16304,8 @@ randomBytes(256, (err, buf) => {
 ```
 
 If the `callback` function is not provided, the random bytes are generated synchronously and returned as a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html). An error will be thrown if there is a problem generating the bytes.
-
-```
+ 
+```js
 
 const {
   randomBytes
@@ -16443,8 +16443,8 @@ Return a random integer `n` such that `min <= n < max`. This implementation avoi
 The range (`max - min`) must be less than 248. `min` and `max` must be [safe integers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger).
 
 If the `callback` function is not provided, the random integer is generated synchronously.
-
-```
+ 
+```js
 
 const {
   randomInt
@@ -16455,8 +16455,8 @@ randomInt(3, (err, n) => {
   console.log(`Random number chosen from (0, 1, 2): ${n}`);
 });
 ```
-
-```
+ 
+```js
 
 const {
   randomInt
@@ -16465,8 +16465,8 @@ const {
 const n = randomInt(3);
 console.log(`Random number chosen from (0, 1, 2): ${n}`);
 ```
-
-```
+ 
+```js
 
 const {
   randomInt
@@ -19841,8 +19841,8 @@ Sometimes, the domain in use is not the one that ought to be used for a specific
 For example, there could be one domain in use for an HTTP server, but perhaps we would like to have a separate domain to use for each request.
 
 That is possible via explicit binding.
-
-```
+ 
+```js
 
 const domain = require('domain');
 const http = require('http');
@@ -20147,8 +20147,8 @@ fs.readFile('/some/file/that/does-exist', errorFirstCallback);
 ```
 
 The JavaScript `try…catch` mechanism **cannot** be used to intercept errors generated by asynchronous APIs. A common mistake for beginners is to try to use `throw` inside an error-first callback:
-
-```
+ 
+```js
 
 const fs = require('fs');
 
@@ -29086,8 +29086,8 @@ response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
 
 When headers have been set with [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value), they will be merged with any headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers), with the headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers) given precedence.
-
-```
+ 
+```js
 
 const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html');
@@ -29239,8 +29239,8 @@ If [`response.write()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_
 When headers have been set with [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value), they will be merged with any headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers), with the headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers) given precedence.
 
 If this method is called and [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value) has not been called, it will directly write the supplied header values onto the network channel without caching internally, and the [`response.getHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsegetheadername) on the header will not yield the expected result. If progressive population of headers is desired with potential future retrieval and modification, use [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value) instead.
-
-```
+ 
+```js
 
 const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html');
@@ -32678,8 +32678,8 @@ response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
 
 When headers have been set with [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsesetheadername-value), they will be merged with any headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewriteheadstatuscode-statusmessage-headers), with the headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewriteheadstatuscode-statusmessage-headers) given precedence.
-
-```
+ 
+```js
 
 const server = http2.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -32823,8 +32823,8 @@ This method may be called at most one time on a message before [`response.end()`
 If [`response.write()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewritechunk-encoding-callback) or [`response.end()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responseenddata-encoding-callback) are called before calling this, the implicit/mutable headers will be calculated and call this function.
 
 When headers have been set with [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsesetheadername-value), they will be merged with any headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewriteheadstatuscode-statusmessage-headers), with the headers passed to [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewriteheadstatuscode-statusmessage-headers) given precedence.
-
-```
+ 
+```js
 
 const server = http2.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -32997,8 +32997,8 @@ Added in: v0.3.4
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) Accepts `options` from [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener), [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) and [`http.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_httpcreateserveroptions-requestlistener).
 -   `requestListener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) A listener to be added to the `'request'` event.
 -   Returns: [<https.Server>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_class-httpsserver)
-
-```
+ 
+```js
 
 const https = require('https');
 const fs = require('fs');
@@ -36040,8 +36040,8 @@ import { another } from 'a-package/m.mjs';
 ```
 
 Self-referencing is also available when using `require`, both in an ES module, and in a CommonJS one. For example, this code will also work:
-
-```
+ 
+```js
 
 const { something } = require('a-package/foo');
 ```
@@ -36079,7 +36079,7 @@ Node.js can now run ES module entry points, and a package can contain both Commo
 
 #### Dual package hazard[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_dual-package-hazard)
 
-When an application is using a package that provides both CommonJS and ES module sources, there is a risk of certain bugs if both versions of the package get loaded. This potential comes from the fact that the `pkgInstance` created by `const pkgInstance = require('pkg')` is not the same as the `pkgInstance` created by `import pkgInstance from 'pkg'` (or an alternative main path like `'pkg/module'`). This is the "dual package hazard,” where two versions of the same package can be loaded within the same runtime environment. While it is unlikely that an application or package would intentionally load both versions directly, it is common for an application to load one version while a dependency of the application loads the other version. This hazard can happen because Node.js supports intermixing CommonJS and ES modules, and can lead to unexpected behavior.
+When an application is using a package that provides both CommonJS and ES module sources, there is a risk of certain bugs if both versions of the package get loaded. This potential comes from the fact that the `pkgInstance` created by `const pkgInstance = require('pkg')` is not the same as the `pkgInstance` created by `import pkgInstance from 'pkg'` (or an alternative main path like `'pkg/module'`). This is the "dual package hazard," where two versions of the same package can be loaded within the same runtime environment. While it is unlikely that an application or package would intentionally load both versions directly, it is common for an application to load one version while a dependency of the application loads the other version. This hazard can happen because Node.js supports intermixing CommonJS and ES modules, and can lead to unexpected behavior.
 
 If the package main export is a constructor, an `instanceof` comparison of instances created by the two versions returns `false`, and if the export is an object, properties added to one (like `pkgInstance.foo = 3`) are not present on the other. This differs from how `import` and `require` statements work in all-CommonJS or all-ES module environments, respectively, and therefore is surprising to users. It also differs from the behavior users are familiar with when using transpilation via tools like [Babel](https://babeljs.io/) or [`esm`](https://github.com/standard-things/esm#readme).
 
@@ -44394,8 +44394,8 @@ console.log(myStream.destroyed);
 Calling the `writable.end()` method signals that no more data will be written to the [`Writable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamwritable). The optional `chunk` and `encoding` arguments allow one final additional chunk of data to be written immediately before closing the stream.
 
 Calling the [`stream.write()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_writablewritechunk-encoding-callback) method after calling [`stream.end()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_writableendchunk-encoding-callback) will raise an error.
-
-```
+ 
+```js
 
 const fs = require('fs');
 const file = fs.createWriteStream('example.txt');
@@ -47923,8 +47923,8 @@ The `callback` function, if specified, will be added as a listener for the [`'se
 Unlike the `https` API, `tls.connect()` does not enable the SNI (Server Name Indication) extension by default, which may cause some servers to return an incorrect certificate or reject the connection altogether. To enable SNI, set the `servername` option in addition to `host`.
 
 The following illustrates a client for the echo server example from [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener):
-
-```
+ 
+```js
 
 const tls = require('tls');
 const fs = require('fs');
@@ -52360,8 +52360,8 @@ Added in: v11.13.0
 -   Returns: [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) A Readable Stream containing the V8 heap snapshot
 
 Generates a snapshot of the current V8 heap and returns a Readable Stream that may be used to read the JSON serialized representation. This JSON stream format is intended to be used with tools such as Chrome DevTools. The JSON schema is undocumented and specific to the V8 engine. Therefore, the schema may change from one version of V8 to the next.
-
-```
+ 
+```js
 
 const v8 = require('v8');
 const stream = v8.getHeapSnapshot();
@@ -52473,8 +52473,8 @@ The `v8.setFlagsFromString()` method can be used to programmatically set V8 comm
 The V8 options available for a version of Node.js may be determined by running `node --v8-options`.
 
 Usage:
-
-```
+ 
+```js
 
 const v8 = require('v8');
 v8.setFlagsFromString('--trace_gc');
@@ -53154,8 +53154,8 @@ Added in: v13.7.0, v12.17.0
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer)
 
 Creates a code cache that can be used with the `SourceTextModule` constructor's `cachedData` option. Returns a `Buffer`. This method may be called any number of times before the module has been evaluated.
-
-```
+ 
+```js
 
 const module = new vm.SourceTextModule('const a = 1;');
 
@@ -57603,8 +57603,8 @@ The `zlib` module can be used to implement support for the `gzip`, `deflate` and
 The HTTP [`Accept-Encoding`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3) header is used within an http request to identify the compression encodings accepted by the client. The [`Content-Encoding`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11) header is used to identify the compression encodings actually applied to a message.
 
 The examples given below are drastically simplified to show the basic concept. Using `zlib` encoding can be expensive, and the results ought to be cached. See [Memory usage tuning](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_memory-usage-tuning) for more information on the speed/memory/compression tradeoffs involved in `zlib` usage.
-
-```
+ 
+```js
 
 const zlib = require('zlib');
 const http = require('http');
@@ -57692,8 +57692,8 @@ http.createServer((request, response) => {
 ```
 
 By default, the `zlib` methods will throw an error when decompressing truncated data. However, if it is known that the data is incomplete, or the desire is to inspect only the beginning of a compressed file, it is possible to suppress the default error handling by changing the flushing method that is used to decompress the last chunk of input data:
-
-```
+ 
+```js
 
 const buffer = Buffer.from('eJzT0yMA', 'base64');
 
@@ -57880,7 +57880,7 @@ The following flags can be set for advanced control over the compression algorit
 -   `BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING`
     -   Boolean flag that decreases compression ratio in favour of decompression speed.
 -   `BROTLI_PARAM_LARGE_WINDOW`
-    -   Boolean flag enabling "Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+    -   Boolean flag enabling "Large Window Brotli" mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
 -   `BROTLI_PARAM_NPOSTFIX`
     -   Ranges from `0` to `BROTLI_MAX_NPOSTFIX`.
 -   `BROTLI_PARAM_NDIRECT`
@@ -57893,7 +57893,7 @@ These advanced options are available for controlling decompression:
 -   `BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION`
     -   Boolean flag that affects internal memory allocation patterns.
 -   `BROTLI_DECODER_PARAM_LARGE_WINDOW`
-    -   Boolean flag enabling "Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+    -   Boolean flag enabling "Large Window Brotli" mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
 
 ### Class: `Options`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
 

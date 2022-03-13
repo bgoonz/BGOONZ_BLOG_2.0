@@ -8,7 +8,12 @@ function declarations and creates a binding for them in the functions scope.
 
 Thus, the example of the previous slide is equivalent to the following:
 
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     var bar, i, j;
 
@@ -31,7 +36,12 @@ assignment expression.
 One of the practical implications of the hoisting concept is _mutually recursive
 functions_. Consider the following example:
 
-```javascript
+---
+
+
+```js
+
+
 function isEven(n) {
     if (n == 0) {
         return true;

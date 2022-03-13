@@ -11,7 +11,10 @@ coverY: -0.9904458598726115
 
 <summary><strong>Cheat Sheet Written In Code</strong></summary>
 
+
 ```jsx
+
+
 /* *******************************************************************************************
  * REACT.JS CHEATSHEET
  * DOCUMENTATION: https://reactjs.org/docs/
@@ -99,8 +102,8 @@ class Component extends React.Component {
       active: true,
 
       // In rare cases, it's okay to initialize state based on props.
-      // This effectively "forks” the props and sets the state with the initial props.
-      // If you "fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
+      // This effectively "forks" the props and sets the state with the initial props.
+      // If you "fork" props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
       // to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
       color: props.initialColor
     };

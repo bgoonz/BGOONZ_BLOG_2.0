@@ -62,7 +62,7 @@ In a similar way to customizing the search box, you can add additional options t
 
 For example, to change our search engine from webresults-based to image-based, we can utilize the `defaultToImageSearch` attribute.
 
-First of all, you need to enable Image Search in the [Control Panel](https://programmablesearchengine.google.com/) for your search engine. In the **Setup** section, in the **Basics** tab, click the **Image search** option into the "on” position. After that, add the `defaultToImageSearch` attribute to the `<div class="gcse-searchresults"></div>` element on your website.
+First of all, you need to enable Image Search in the [Control Panel](https://programmablesearchengine.google.com/) for your search engine. In the **Setup** section, in the **Basics** tab, click the **Image search** option into the "on" position. After that, add the `defaultToImageSearch` attribute to the `<div class="gcse-searchresults"></div>` element on your website.
 
 ### Advantages of adding Google custom search
 
@@ -80,7 +80,7 @@ First of all, you need to enable Image Search in the [Control Panel](https://pro
 
 Though this might sound great to have Google search on your website, there is no free lunch. Google shows ads to cover up for this service. Now say, your site is about shoes of brand X. when people search on your site for a shoe you have, Google shows an ad of your competitor brand Y and **places it above** your site results. Your visitors are going to believe that you indeed are recommending brand Y yourself. If you are going to monetize your visitors, then this will drastically reduce your income.
 
-Second, no one likes ads. In my opinion, there is nothing like a "non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn't like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
+Second, no one likes ads. In my opinion, there is nothing like a "non-intrusive" ad. But, ads are Ads, and they are bad. I wouldn't like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
 
 ## Google search bar for your website using Expertrec
 
@@ -335,7 +335,7 @@ The above HTML is all we need to create a search bar. There are a few attributes
 
 - type - This sets how the input looks on the screen. There are many types such as password, checkbox and radio yet here we are using search
 - id - Setting an ID can make it easy to reference the input box from JavaScript which we will use later
-- name - It is common to use "q” for the search query box name
+- name - It is common to use "q" for the search query box name
 - placeholder - This is some text that gives a hint to the user on what the input is for
 
 When the HTML displays on the browser it looks like this:
@@ -352,8 +352,8 @@ Our form is not quite finished yet, we need to make sure that screen readers can
 
 To do this we have to make two changes to the form:
 
-1.  We need to add a `role` to the form with the value of "search”. Setting this will cause the screen readers to announce that this form is a search form.
-2.  We add a `aria-label` attribute to the `<input>` element. The screen reader will read aloud the value of this attribute. Set a value that describes what text the search form returns such as "Search through our site content”.
+1.  We need to add a `role` to the form with the value of "search". Setting this will cause the screen readers to announce that this form is a search form.
+2.  We add a `aria-label` attribute to the `<input>` element. The screen reader will read aloud the value of this attribute. Set a value that describes what text the search form returns such as "Search through our site content".
 
 This is our final HTML:
 
@@ -458,7 +458,7 @@ svg {
 
 We have used the `all: unset;` rule again to reset the button to its default. Then set a height and width of `44px` this is a good size for fingers on touch screens.
 
-Then we set the height and width of the icon and set the color to white ("#fff”).
+Then we set the height and width of the icon and set the color to white ("#fff").
 
 Now our search bar is almost ready! Except nothing happens when we press the search button.
 

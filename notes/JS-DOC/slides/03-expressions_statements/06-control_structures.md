@@ -16,7 +16,7 @@ languages:
 Additionally, JavaScript provides the `for...in` loop to iterate over properties
 of objects:
 
-```javascript
+```js
 for (var prop in obj) {
     console.log(prop, obj[prop]);
 }

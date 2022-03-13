@@ -42,7 +42,7 @@ To do so, you separate the processing part in a different file (possibly
 'my_worker.js'), create a worker with `newWorker = new Worker('my_worker.js');`
 and offload the processing to it.
 
-```javascript
+```js
 // my_worker.js
 const do_a_lot_of_processing = (data) => {
     ....

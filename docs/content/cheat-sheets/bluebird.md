@@ -121,7 +121,12 @@ Use [Promise.props](http://bluebirdjs.com/docs/api/promise.props.html).
 
 ### Chain of promises
 
+---
+
+
 ```js
+
+
 function getPhotos() {
   return Promise.try(() => {
     if (err) throw new Error("boo")

@@ -197,4 +197,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+ August 31, 2021.

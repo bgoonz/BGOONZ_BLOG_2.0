@@ -44,7 +44,7 @@ All given inputs are in lowercase letters `a-z`.
 
 JavaScript specific solution. Get the min len then narrow down the prefix.
 
-```javascript
+```js
 /**
  * @param {string[]} strs
  * @return {string}
@@ -66,7 +66,7 @@ let longestCommonPrefix = function (strs) {
 
 #### TWO
 
-```javascript
+```js
 /**
  * @param {string[]} strs
  * @return {string}
@@ -88,7 +88,7 @@ let longestCommonPrefix = function (strs) {
 
 General solution. Build up the prefix.
 
-```javascript
+```js
 /**
  * @param {string[]} strs
  * @return {string}

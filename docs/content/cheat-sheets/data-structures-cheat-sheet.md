@@ -339,7 +339,12 @@ f(n) = could be something entirely different !
 
 O(n):
 
-```javascript
+---
+
+
+```js
+
+
 function addUpToSimple(n: number) {
     let total = 0;
     for (let i = 0; i < n; i++) {
@@ -351,7 +356,12 @@ function addUpToSimple(n: number) {
 
 O(1):
 
-```javascript
+---
+
+
+```js
+
+
 function addUpComplex(n: number) {
     return (n * (n + 1)) / 2;
 }
@@ -359,7 +369,12 @@ function addUpComplex(n: number) {
 
 O(n): maybe thinking O(2n) but we see big picture! BigONotation doesn't care about precision only about general trends _linear? quadric? constant?_
 
-```javascript
+---
+
+
+```js
+
+
 function printUpAndDown(n: number) {
     console.log("Going up");
     for (let i = 0; i < n; i++) {
@@ -374,7 +389,12 @@ function printUpAndDown(n: number) {
 
 O(n^2)
 
-```javascript
+---
+
+
+```js
+
+
 function printAllPairs(n: number) {
     for (let i = 0; i < n; i++) {
         console.log(i);
@@ -387,7 +407,12 @@ function printAllPairs(n: number) {
 
 O(n) : cuz as soon as n grows complexity grows too
 
-```javascript
+---
+
+
+```js
+
+
 function logAtLeastFive(n: number) {
     for (let i = 0; i <= Math.max(5, n); i++) {
         console.log(i);
@@ -397,7 +422,12 @@ function logAtLeastFive(n: number) {
 
 O(1)
 
-```javascript
+---
+
+
+```js
+
+
 function logAtMostFive(n: number) {
     for (let i = 0; i <= Math.min(5, n); i++) {
         console.log(i);
@@ -414,7 +444,12 @@ Rules of Thumb
 
 O(1)
 
-```javascript
+---
+
+
+```js
+
+
 function sum(arr: number[]) {
     let total = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -425,7 +460,12 @@ function sum(arr: number[]) {
 
 O(n)
 
-```javascript
+---
+
+
+```js
+
+
 function double(arr: number[]) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
@@ -439,7 +479,7 @@ function double(arr: number[]) {
 
 * object:
 
-```javascript
+```js
 const person = { name: "John", age: 22, hobbies: ["reading", "sleeping"] };
 
 Object.keys(person); // ["name", "age", "hobbies"] --->              O(n)
@@ -452,7 +492,12 @@ person.hasOwnProperty("name"); // true --->                          O(1)
 
 ## Common Patterns
 
-```javascript
+---
+
+
+```js
+
+
 function binarySearch(sortedArr: number[], value: number): number {
     let min = 0;
     let max = sortedArr.length - 1;
@@ -477,7 +522,12 @@ a process that calls itself
 
 quick note around callStack
 
-```javascript
+---
+
+
+```js
+
+
 function wakeUp() {
     // callStack [wakeUp]
     takeShower();
@@ -510,7 +560,12 @@ two essential part of recursive functions
 * **base case : end of the line**
 * **different input : recursive should call by different piece of data**
 
-```javascript
+---
+
+
+```js
+
+
 function sumRange(num: number) {
     if (num === 1) return 1;
     return num + sumRange(num - 1);
@@ -524,7 +579,7 @@ function factorial(num: number) {
 
 helper method recursion vs pure recursion
 
-```javascript
+```js
 // helper method recursion approach
 function collectOdd(arr: number[]) {
     const result = [];
@@ -571,7 +626,12 @@ _indexOf() includes() find() findIndex()_ all this methods doing linear search b
 
 O(n)
 
-```javascript
+---
+
+
+```js
+
+
 function linearSearch(arr: number[], value: number): number {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === value) {
@@ -586,7 +646,12 @@ function linearSearch(arr: number[], value: number): number {
 
 O(Log n)
 
-```javascript
+---
+
+
+```js
+
+
 function binarySearch(sortedArr: number[], value: number): number {
     let left = 0;
     let right = sortedArr.length - 1;
@@ -612,7 +677,7 @@ function binarySearch(sortedArr: number[], value: number): number {
 
 array.sort(cb) will turn all values to _string_ then sort it based on it's _unicode_
 
-```javascript
+```js
 ["a", "c", "b", "f", "d"].sort(); // (5) ["a", "b", "c", "d", "f"]
 [1, 10, 6, 8, 2, 3, 5].sort(); //(7) [1, 10, 2, 3, 5, 6, 8]
 
@@ -637,7 +702,12 @@ also receive callback function by two arguments:
 
 general: O(n^2) nearlySortedData: O(n)
 
-```javascript
+---
+
+
+```js
+
+
 function bubbleSort(arr: number[]): number[] {
     for (let i = 0; i < arr.length; i++) {
         let noSwap = true;
@@ -673,7 +743,12 @@ function bubbleSort(arr: number[]): number[] {
 
 O(n^2)
 
-```javascript
+---
+
+
+```js
+
+
 function selectionSort(arr: number[]) {
     for (let i = 0; i < arr.length; i++) {
         let min = i;
@@ -694,7 +769,12 @@ function selectionSort(arr: number[]) {
 
 general: O(n^2) nearlySortedData: O(n)
 
-```javascript
+---
+
+
+```js
+
+
 function insertionSort(arr) {
     var currentVal;
     for (let i = 1; i < arr.length; i++) {
@@ -722,7 +802,7 @@ function insertionSort(arr) {
 
 O(n Log n)
 
-```javascript
+```js
 // merge two sorted array
 function merge(arr1: number[], arr2: number[]): number[] {
     let result = [];
@@ -769,7 +849,7 @@ in following implementation we always assume _first item_ as pivot
 
 general: O(n Log n) sorted: O(n^2)
 
-```javascript
+```js
 // place pivot in the right index and return pivot index
 function pivot(arr: number[], start = 0, end = arr.length - 1) {
     const pivot = arr[start];
@@ -802,7 +882,7 @@ function quickSort(arr: number[], start = 0, end = arr.length - 1) {
 
 O(nk) n: the number of items we sorting k: average length of those numbers
 
-```javascript
+```js
 // get the actual number at the given index
 function getDigit(num: number, i: number): number {
     return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
@@ -859,7 +939,7 @@ function radixSort(arr: number[]): number[] {
 
 ## Singly Linked list
 
-```javascript
+```js
 class _Node {
     constructor(public value: any) {}
     public next: _Node | null = null;
@@ -1029,7 +1109,7 @@ class SinglyLinkedList {
 
 ## Doubly Linked List
 
-```javascript
+```js
 class _Node {
     public next: _Node | null = null;
     public prev: _Node | null = null;
@@ -1212,7 +1292,7 @@ class DoublyLinkedList {
 
 LIFO last in first out
 
-```javascript
+```js
 // implement stack using array
 const stack = [1, 2, 3];
 stack.push(4); // [1,2,3,4]
@@ -1222,7 +1302,7 @@ stack.unshift(0); // [0,1,2,3]
 stack.shift(); // [1,2,3]
 ```
 
-```javascript
+```js
 // implementing stack using singly linked list
 class _Node {
     public next: _Node | null = null;
@@ -1269,7 +1349,7 @@ class Stack {
 
 FIFO first in first out
 
-```javascript
+```js
 // implementing queue using array
 const q = [];
 q.push(1);
@@ -1281,7 +1361,7 @@ q.shift(2);
 q.pop(); // out first items first
 ```
 
-```javascript
+```js
 // implementing queue using singly linked list
 class _Node {
     public next: _Node | null = null;
@@ -1341,7 +1421,7 @@ class Queue {
 * every node to the **left** of parent node is always **less** than the **parent**
 * every node to the **right** of parent node is always **greater** than the **parent**
 
-```javascript
+```js
 class _Node {
     constructor(public value: number) {}
 
@@ -1410,7 +1490,7 @@ class BinarySearchTree {
 
 there is two main strategies to traversal a tree : **Breadth-first-search** and **Depth-first-search**
 
-```javascript
+```js
 class _Node {
     constructor(public value: number) {}
 
@@ -1584,7 +1664,7 @@ if we got **a depth long tree** like this:
 
 ### binary heap parent and child relations
 
-```javascript
+```js
 class MaxBinaryHeap {
     private _values: number[] = [];
     get values(): number[] {
@@ -1689,7 +1769,7 @@ A data structure which every element has a priority. Elements with higher priori
 
 **In the following example, we implemented a priority queue using minBinaryHeap but you should know binaryHeaps and priority queue is two different concepts and we just use an abstract of it**
 
-```javascript
+```js
 interface INode {
     value: any;
     priority: number;
@@ -1814,7 +1894,7 @@ There is possibility for handle collisions is hash tables :
 * Separate chaining ( e.g. using nested arrays of key values _implemented in following hash tables_ )
 * linear probing ( if index filled place {key, value} in next position )
 
-```javascript
+```js
 type El = [string, any];
 class HashTable {
     private keyMap: El[][];
@@ -1923,7 +2003,7 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 ### graph(adjacency list)
 
-```javascript
+```js
 interface AdjacencyList {
     [vertex: string]: string[];
 }
@@ -1983,7 +2063,7 @@ class Graph {
 
 ### depth first traversal and breadth first traversal in graph
 
-```javascript
+```js
 interface AdjacencyList {
     [vertex: string]: string[];
 }
@@ -2112,7 +2192,7 @@ class Graph {
 
 Finding shortest path between two vertices in a **weighted graph**.
 
-```javascript
+```js
 interface Value {
     value: any;
     priority: number;
@@ -2248,7 +2328,12 @@ _**in fibonacci sequence fib(n) = fib(n-2) + fib(n-1) && fin(1) = 1 && fib(2) = 
 
 **O(2^n)**
 
-```javascript
+---
+
+
+```js
+
+
 function fib(n: number): number {
     if (n <= 2) return 1;
     return fib(n - 1) + fib(n - 2);
@@ -2263,7 +2348,12 @@ Storing the results of expensive function class and returning the cached result 
 
 O(n)
 
-```javascript
+---
+
+
+```js
+
+
 function fib(n: number, memo: number[] = []): number {
     if (memo[n]) return memo[n];
 
@@ -2279,7 +2369,12 @@ fib(10000); // Maximum callStack exceeded
 
 ### tabulation
 
-```javascript
+---
+
+
+```js
+
+
 function fib(n: number): number {
     if (n <= 2) return 1;
 
@@ -2298,7 +2393,7 @@ fib(10000); // Infinity
 
 ## Interesting Stuff
 
-```javascript
+```js
 // turn it to boolean
 console.log(!!1); // true
 console.log(!!0); // false
@@ -2309,7 +2404,7 @@ console.log(!!0); // false
 
 ## String
 
-```javascript
+```js
 const str = "hello";
 str.search('lo') || .indexOf('lo') // 3
 str.includes('lo') // true
@@ -2317,7 +2412,7 @@ str.includes('lo') // true
 
 ### string pattern matching
 
-```javascript
+```js
 // regex.test(str: number) Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 function charCount(str: string) {
     const result: { [key: string]: number } = {};
@@ -2367,7 +2462,7 @@ function isAlphaNumeric(char: string) {
 
 ## Array
 
-```javascript
+```js
 const array = ["hello", "world"];
 arr.find(el => el === "world"); // world
 arr.findIndex(el => el === "world"); // 1
@@ -2387,14 +2482,14 @@ console.log(p); // "F"
 
 ### Object
 
-```javascript
+```js
 delete this._adjacencyList[vertex]; // delete key and value from object
 delete this._adjacencyList.vertex;
 ```
 
 ### Map
 
-```javascript
+```js
 const map = new Map();
 // store any type of **unique key** of use duplicate key it will override last value
 map.set({ 1: "Object" }, "Object");
@@ -2428,7 +2523,7 @@ const arr = [...map]; // :[ [key, value] ]
 
 ## Math
 
-```javascript
+```js
 Math.pow(2, 2); // 4
 Math.abs(-5); // 5
 Math.log10(100); // 10

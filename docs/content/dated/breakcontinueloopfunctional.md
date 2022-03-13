@@ -4,7 +4,7 @@
 
 A common requirement of iteration is cancelation. Using `for` loops we can `break` to end iteration early.
 
-```javascript
+```js
 const a = [0, 1, 2, 3, 4];
 for (var i = 0; i < a.length; i++) {
     if (a[i] === 2) {
@@ -20,7 +20,7 @@ Another common requirement is to close over our variables.
 A quick approach is to use `.forEach` but
 then we lack the ability to `break`. In this situation the closest we get is `continue` functionality through `return`.
 
-```javascript
+```js
 [0, 1, 2, 3, 4].forEach(function (val, i) {
     if (val === 2) {
         // how do we stop?
@@ -35,7 +35,7 @@ The `.some` is a method on Array prototype. It tests whether some element in the
 
 An example quoted from that link
 
-```javascript
+```js
 const isBiggerThan10 = (numb) => numb > 10;
 
 [2, 5, 8, 1, 4].some(isBiggerThan10); // false
@@ -44,7 +44,7 @@ const isBiggerThan10 = (numb) => numb > 10;
 
 Using `.some` we get iteration functionally similar to `.forEach` but with the ability to `break` through `return` instead.
 
-```javascript
+```js
 [0, 1, 2, 3, 4].some(function (val, i) {
     if (val === 2) {
         return true;
@@ -56,7 +56,7 @@ Using `.some` we get iteration functionally similar to `.forEach` but with the a
 
 You keep returning `false` to make it `continue` to next item. When you return `true`, the loop will `break` and `a.some(..)` will `return` `true`.
 
-```javascript
+```js
 // Array contains 2
 const isTwoPresent = [0, 1, 2, 3, 4].some(function (val, i) {
     if (val === 2) {

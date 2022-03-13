@@ -422,7 +422,12 @@ See [inline styles](https://facebook.github.io/react/tips/inline-styles.html).
 
 ### InnerHTML
 
+---
+
+
 ```js
+
+
 function markdownify() {
     return '<p>...</p>';
 }

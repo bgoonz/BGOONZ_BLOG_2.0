@@ -43,7 +43,7 @@ Boundaries that should be awared of:
 - `p2` could be larger than the length of the list (Though the description says `n` will always be valid, we take care of it anyway).
 - It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
-```javascript
+```js
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {

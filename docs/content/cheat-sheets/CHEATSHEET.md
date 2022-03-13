@@ -2608,7 +2608,10 @@ this.method = this.method.bind(this);
 
 > You may optionally pass an object as the first argument to setState() instead of a function.
 
+
 ```jsx
+
+
 
 setState(updater[, callback]) { }
 

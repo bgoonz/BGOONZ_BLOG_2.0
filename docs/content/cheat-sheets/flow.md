@@ -45,7 +45,12 @@ See: [flow.org docs](https://flow.org/en/docs/)
 
 ### Type inference
 
+---
+
+
 ```js
+
+
 function square(n: number) {
     const result = n * n;
 }
@@ -68,7 +73,12 @@ type Person = {
 
 {: data-line="1,2,3,4,5,6"}
 
+---
+
+
 ```js
+
+
 function greet(user: Person) {
     console.log('hello', user.name);
 }
@@ -318,7 +328,12 @@ See: [Interfaces](https://flow.org/en/docs/types/interfaces/)
 const callback: () => void = function () {};
 ```
 
+---
+
+
 ```js
+
+
 function filter<T> (
   list: Array<T>,
   callback: (item: T) => boolean

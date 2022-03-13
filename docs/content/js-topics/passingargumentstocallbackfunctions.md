@@ -8,7 +8,12 @@ tip-tldr: By default you cannot pass arguments to a callback function, but you c
 
 By default you cannot pass arguments to a callback function. For example:
 
+---
+
+
 ```js
+
+
 function callback() {
     console.log('Hi human');
 }
@@ -18,7 +23,12 @@ document.getElementById('someelem').addEventListener('click', callback);
 
 You can take advantage of the closure scope in Javascript to pass arguments to callback functions. Check this example:
 
+---
+
+
 ```js
+
+
 function callback(a, b) {
     return function () {
         console.log('sum = ', a + b);

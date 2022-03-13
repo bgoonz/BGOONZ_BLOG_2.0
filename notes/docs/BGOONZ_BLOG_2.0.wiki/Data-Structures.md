@@ -216,7 +216,12 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 #### Solution #1: Doing it "by hand"
 
+---
+
+
 ```js
+
+
 function removeEven(arr) {
     const odds = [];
     for (let number of arr) {
@@ -234,7 +239,12 @@ This approach starts with the first element of the array. If that current elemen
 
 #### Solution #2: Using filter() and lambda function
 
+---
+
+
 ```js
+
+
 function removeEven(arr) {
     return arr.filter((v) => v % 2 != 0);
 }
@@ -590,7 +600,12 @@ result = [-2, 1, 5, 9, 4, 6, 7];
 
 To solve this problem, we must min heapify all parent nodes. Take a look.
 
+---
+
+
 ```js
+
+
 function minHeapify(heap, index) {
     const left = index * 2;
     const right = index * 2 + 1;
@@ -611,7 +626,12 @@ function minHeapify(heap, index) {
 
 ---
 
+---
+
+
 ```js
+
+
 function convertMax(maxHeap) {
     for (var i = Math.floor(maxHeap.length / 2); i > -1; i--) maxHeap = minHeapify(maxHeap, i);
 

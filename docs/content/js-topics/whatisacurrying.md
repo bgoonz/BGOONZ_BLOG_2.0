@@ -12,7 +12,7 @@ A currying function is a function that takes multiple arguments and turns it int
 
 In this way, an n-ary function becomes a unary function, and the last function returns the result of all the arguments together in a function.
 
-```javascript
+```js
 // Normal definition
 function multiply(a, b, c) {
     return a * b * c;

@@ -9,7 +9,7 @@ to the world of mutable state and global bindings.
 Today we're introducing a feature found in Clojure which allows you to define
 interfaces for your classes. Let's look at one-off implementation:
 
-```javascript
+```js
 const protocols = (...ps) => ps.reduce((c, p) => p(c), Object);
 
 const Mappable = (klass) => {
@@ -54,7 +54,7 @@ implementations for it on our base classes.
 
 What's so cool about it? We get to write things like these:
 
-```javascript
+```js
 const map = (f) => (o) => o.map(f);
 const fold = (f) => (o) => o.fold(f);
 const compose = (...fns) => fns.reduce((acc, f) => (x) => acc(f(x)), id);
@@ -65,7 +65,7 @@ now that we know `NaturalNumbers` are `Mappable`, we can call `map` on them
 and trust it will return the right result. Furthermore, with our third function,
 we can _compose_ any number of operations defined in protocols cleanly:
 
-```javascript
+```js
 const plus1 = (x) => x + 1;
 const div5 = (x) => x / 5;
 const plus_then_div = compose(map(div5), map(plus1));

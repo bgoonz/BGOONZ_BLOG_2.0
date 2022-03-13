@@ -81,7 +81,12 @@ Can't use `await` in regular functions
 
 If we try to use `await` in a non-async function, there would be a syntax error:
 
+---
+
+
 ```js
+
+
 function f() {
     let promise = Promise.resolve(1);
     let result = await promise; // Syntax error

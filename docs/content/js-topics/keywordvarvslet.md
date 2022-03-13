@@ -15,7 +15,12 @@ categories: - en - javascript
 -   The scope of a variable defined with `var` is function scope or declared outside any function, global.
 -   The scope of a variable defined with `let` is block scope.
 
+---
+
+
 ```js
+
+
 function varvslet() {
     console.log(i); // i is undefined due to hoisting
     // console.log(j); // ReferenceError: j is not defined

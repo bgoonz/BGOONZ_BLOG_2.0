@@ -140,4 +140,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/basic-web-development-environment-setup-9f36c3f15afe" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
+ August 6, 2021.

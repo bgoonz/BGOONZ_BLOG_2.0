@@ -67,7 +67,12 @@ var obj = {
 
 But that's not all! Advanced properties allows us to create **getters** and **setters**, just like other OOP languages! In that case, one cannot use the `writable`, `enumerable` and `configurable` properties, but instead:
 
+---
+
+
 ```js
+
+
 function Foobar () {
   var _foo; //  true private property
 

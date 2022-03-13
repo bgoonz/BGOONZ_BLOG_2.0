@@ -12,7 +12,7 @@ categories: - en - javascript
 
 When you want to use javascript object as a hash map(purely for storing data), you might want to create it as follows.
 
-```javascript
+```js
 const map = Object.create(null);
 ```
 
@@ -22,7 +22,7 @@ But by doing `Object.create(null)`, we explicitly specify `null` as its prototyp
 
 ## Rationale:
 
-```javascript
+```js
 const dirtyMap = {};
 const cleanMap = Object.create(null);
 

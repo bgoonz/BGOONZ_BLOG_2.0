@@ -24,7 +24,12 @@ The function declarations are hoisted similar to any variables. So the placement
 </details>
 ---
 #### 2. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     let x = (y = 0);
     x++;
@@ -41,7 +46,7 @@ c ole.log(foo(), typeof x, typeof y);
 <p>
 ##### Answer: 3
 Of course the return value of `foo()` is 1 due to the increment operator. But the statement `let x = y = 0` declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
-```javascript
+```js
 let x;
 window.y = 0;
 x = window.y;
@@ -53,7 +58,12 @@ Since the block scoped variable x is undefined outside of the function, the type
 </details>
 ---
 #### 3. What is the output of below code
+---
+
+
 ```js
+
+
 function main() {
     console.log('A');
     setTimeout(function print() {
@@ -83,7 +93,7 @@ The statements order is based on the event loop mechanism. The order of statemen
 </details>
 ---
 #### 4. What is the output of below equality check
-```javascript
+```js
 c ole.log(0.1 + 0.2 === 0.3);
 ```
 - 1: false
@@ -97,7 +107,7 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 </details>
 ---
 #### 5. What is the output of below code
-```javascript
+```js
 var y = 1;
 if (function f() {}) {
     y += typeof f;
@@ -115,7 +125,7 @@ The main points in the above code snippets are,
 1. You can see function expression instead function declaration inside if statement. So it always returns true.
 2. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.
 In other words, it is same as
-```javascript
+```js
 var y = 1;
 if ('foo') {
     y += typeof f;
@@ -127,7 +137,12 @@ console.log(y);
 </details>
 ---
 #### 6. What is the output of below code
+---
+
+
 ```js
+
+
 function foo() {
     return;
     {
@@ -145,7 +160,12 @@ c ole.log(foo());
 ##### Answer: 3
 This is a semicolon issue. Normally semicolons are optional in JavaScript. So if there are any statements(in this case, return) missing semicolon, it is automatically inserted immediately. Hence, the function returned as undefined.
 Whereas if the opening curly brace is along with the return keyword then the function is going to be returned as expected.
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     return {
         message: 'Hello World'
@@ -177,7 +197,7 @@ If you try to print myChars then you can observe that it doesn't set an undefine
 </details>
 ---
 #### 8. What is the output of below code in latest Chrome
-```javascript
+```js
 var array1 = new Array(3);
 console.log(array1);
 var array2 = [];
@@ -199,7 +219,7 @@ The latest chrome versions display `sparse array`(they are filled with holes) us
 </details>
 ---
 #### 9. What is the output of below code
-```javascript
+```js
 const obj = {
     prop1: function () {
         return 0;
@@ -227,7 +247,7 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 </details>
 ---
 #### 10. What is the output of below code
-```javascript
+```js
 console.log(1 < 2 < 3);
 c ole.log(3 > 2 > 1);
 ```
@@ -253,7 +273,12 @@ Whereas the second statement follows the below order,
 </details>
 ---
 #### 11. What is the output of below code in non-strict mode
-```javascript
+---
+
+
+```js
+
+
 function printNumbers(first, second, first) {
     console.log(first, second, first);
 }
@@ -273,7 +298,7 @@ The value of the first parameter is mapped to the third argument which is passed
 </details>
 ---
 #### 12. What is the output of below code
-```javascript
+```js
 const printNumbersArrow = (first, second, first) => {
     console.log(first, second, first);
 };
@@ -291,7 +316,7 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 </details>
 ---
 #### 13. What is the output of below code
-```javascript
+```js
 const arrowFunc = () => arguments.length;
 c ole.log(arrowFunc(1, 2, 3));
 ```
@@ -304,14 +329,14 @@ c ole.log(arrowFunc(1, 2, 3));
 ##### Answer: 1
 Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive a reference error.
 Where as the normal function provides the number of arguments passed to the function
-```javascript
+```js
 const func = function () {
     return arguments.length;
 };
 console.log(func(1, 2, 3));
 ```
 But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
-```javascript
+```js
 const arrowFunc = (...args) => args.length;
 console.log(arrowFunc(1, 2, 3));
 ```
@@ -333,7 +358,7 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 </details>
 ---
 #### 15. What is the output of below code
-```javascript
+```js
 c ole.log(Math.max());
 ```
 -  undefined
@@ -349,7 +374,7 @@ c ole.log(Math.max());
 </details>
 ---
 #### 16. What is the output of below code
-```javascript
+```js
 console.log(10 == [10]);
 c ole.log(10 == [[[[[[[10]]]]]]]);
 ```
@@ -361,7 +386,7 @@ c ole.log(10 == [[[[[[[10]]]]]]]);
 <p>
 ##### Answer: 1
 As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
-```javascript
+```js
 10 === Number([10].valueOf().toString()); // 10
 ```
 So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.
@@ -385,7 +410,7 @@ The concatenation operator(+) is applicable for both number and string types. So
 </details>
 ---
 #### 18. What is the output of below code
-```javascript
+```js
 console.log([0] == false);
 if ([0]) {
     console.log("I'm True");
@@ -404,7 +429,7 @@ In comparison operators, the expression `[0]` converted to Number([0].valueOf().
 </p>
 </details>
 #### 19. What is the output of below code
-```javascript
+```js
 c ole.log([1, 2] + [3, 4]);
 ```
 -  [1,2,3,4]
@@ -419,7 +444,7 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 </details>
 ---
 #### 20. What is the output of below code
-```javascript
+```js
 const numbers = new Set([1, 1, 2, 3, 4]);
 console.log(numbers);
 const browser = new Set('Firefox');
@@ -437,7 +462,7 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 </details>
 ---
 #### 21. What is the output of below code
-```javascript
+```js
 c ole.log(NaN === NaN);
 ```
 - 1: True
@@ -450,7 +475,7 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 </details>
 ---
 #### 22. What is the output of below code
-```javascript
+```js
 let numbers = [1, 2, 3, 4, NaN];
 c ole.log(numbers.indexOf(NaN));
 ```
@@ -463,7 +488,7 @@ c ole.log(numbers.indexOf(NaN));
 ##### Answer: 4
 The `indexOf` uses strict equality operator(===) internally and `NaN === NaN` evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always.
 But you can use `Array.prototype.findIndex` method to find out the index of NaN in an array or You can use `Array.prototype.includes` to check if NaN is present in an array or not.
-```javascript
+```js
 let numbers = [1, 2, 3, 4, NaN];
 console.log(numbers.findIndex(Number.isNaN)); // 4
 console.log(numbers.includes(NaN)); // true
@@ -485,7 +510,7 @@ c ole.log(a, b);
 ##### Answer: 3
 When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
 If you remove the trailing comma then it displays 1st answer
-```javascript
+```js
 let [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 ```
@@ -507,7 +532,12 @@ c ole.log(func());
 <p>
 ##### Answer: 1
 Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
-```javascript
+---
+
+
+```js
+
+
 function func() {
     return Promise.resolve(10);
 }
@@ -530,7 +560,12 @@ c ole.log(func());
 <p>
 ##### Answer: 4
 The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise. The above async function is equivalent to below expression,
-```javascript
+---
+
+
+```js
+
+
 function func() {
     return Promise.resolve(10).then(() => undefined);
 }
@@ -539,7 +574,12 @@ function func() {
 </details>
 ---
 #### 27. What is the output of below code
+---
+
+
 ```js
+
+
 function delay() {
     return new Promise((resolve) => setTimeout(resolve, 2000));
 }
@@ -566,7 +606,12 @@ Even though "processArray" is an async function, the anonymous function that we 
 </details>
 ---
 #### 28. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function delay() {
     return new Promise((resolve) => setTimeout(resolve, 2000));
 }
@@ -591,7 +636,7 @@ p ess([1, 2, 3, 5]);
 ##### Answer: 4
 The forEach method will not wait until all items are finished but it just runs the tasks and goes next. Hence, the last statement is displayed first followed by a sequence of promise resolutions.
 But you control the array sequence using for..of loop,
-```javascript
+```js
 async function processArray(array) {
     for (const item of array) {
         await delayedLog(item);
@@ -622,7 +667,7 @@ Set has few exceptions from equality check,
 </details>
 ---
 #### 30. What is the output of below code
-```javascript
+```js
 const sym1 = Symbol('one');
 const sym2 = Symbol('one');
 const sym3 = Symbol.for('two');
@@ -644,7 +689,7 @@ Symbol follows below conventions,
 </details>
 ---
 #### 31. What is the output of below code
-```javascript
+```js
 const sym1 = new Symbol('one');
 c ole.log(sym1);
 ```
@@ -660,7 +705,7 @@ c ole.log(sym1);
 </details>
 ---
 #### 32. What is the output of below code
-```javascript
+```js
 let myNumber = 100;
 let myString = '100';
 if (!typeof myNumber === 'string') {
@@ -686,7 +731,7 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 </details>
 ---
 #### 33. What is the output of below code
-```javascript
+```js
 console.log(JSON.stringify({ myArray: ['one', undefined, function () {}, Symbol('')] }));
 c ole.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
 ```
@@ -704,7 +749,7 @@ The symbols has below constraints,
 </details>
 ---
 #### 34. What is the output of below code
-```javascript
+```js
 class A {
     constructor() {
         console.log(new.target.name);
@@ -728,7 +773,7 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 </details>
 ---
 #### 35. What is the output of below code
-```javascript
+```js
 const [x, ...y,] = [1, 2, 3, 4];
 c ole.log(x, y);
 ```
@@ -744,7 +789,7 @@ It throws a syntax error because the rest element should not have a trailing com
 </details>
 ---
 #### 36. What is the output of below code
-```javascript
+```js
 const { a: x = 10, b: y = 20 } = { a: 30 };
 console.log(x);
 c ole.log(y);
@@ -763,7 +808,12 @@ The object property follows below rules,
 </details>
 ---
 #### 37. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function area({ length = 10, width = 20 }) {
     console.log(length * width);
 }
@@ -779,14 +829,24 @@ a ();
 If you leave out the right-hand side assignment for the destructuring object, the function will look for at least one argument to be supplied when invoked. Otherwise you will receive an error `Error: Cannot read property 'length' of undefined` as mentioned above.
 You can avoid the error with either of the below changes,
 1. **Pass at least an empty object:**
-```javascript
+---
+
+
+```js
+
+
 function area({ length = 10, width = 20 }) {
     console.log(length * width);
 }
 area({});
 ```
 2. **Assign default empty object:**
-```javascript
+---
+
+
+```js
+
+
 function area({ length = 10, width = 20 } = {}) {
     console.log(length * width);
 }
@@ -817,7 +877,12 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 </details>
 ---
 #### 39. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function checkType(num = 1) {
     console.log(typeof num);
 }
@@ -841,7 +906,12 @@ Hence, the result of function calls categorized as below,
 </details>
 ---
 #### 40. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function add(item, items = []) {
     items.push(item);
     return items;
@@ -859,7 +929,12 @@ Since the default argument is evaluated at call time, a new object is created ea
 </details>
 ---
 #### 41. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function greet(greeting, name, message = greeting + ' ' + name) {
     console.log([greeting, name, message]);
 }
@@ -876,7 +951,12 @@ Since parameters defined earlier are available to later default parameters, this
 </details>
 ---
 #### 42. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function outer(f = inner()) {
     function inner() {
         return 'Inner';
@@ -894,7 +974,12 @@ The functions and variables declared in the function body cannot be referred fro
 </details>
 ---
 #### 43. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function myFun(x, y, ...manyMoreArgs) {
     console.log(manyMoreArgs);
 }
@@ -913,7 +998,7 @@ The rest parameter is used to hold the remaining parameters of a function and it
 </details>
 ---
 #### 44. What is the output of below code
-```javascript
+```js
 const obj = { key: 'value' };
 const array = [...obj];
 c ole.log(array);
@@ -930,7 +1015,12 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 </details>
 ---
 #### 45. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function* myGenFunc() {
     yield 1;
     yield 2;
@@ -951,7 +1041,12 @@ Generators are not constructible type. But if you still proceed to do, there wil
 </details>
 ---
 #### 46. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function* yieldAndReturn() {
     yield 1;
     return 2;
@@ -974,7 +1069,7 @@ A return statement in a generator function will make the generator finish. If a 
 </details>
 ---
 #### 47. What is the output of below code
-```javascript
+```js
 const myGenerator = (function* () {
     yield 1;
     yield 2;
@@ -1000,7 +1095,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 </details>
 ---
 #### 48. What is the output of below code
-```javascript
+```js
 const num = 0o38;
 c ole.log(num);
 ```
@@ -1014,7 +1109,7 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 </details>
 ---
 #### 49. What is the output of below code
-```javascript
+```js
 const squareObj = new Square(10);
 console.log(squareObj.area);
 class Square {
@@ -1040,7 +1135,12 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 </details>
 ---
 #### 50. What is the output of below code
-```javascript
+---
+
+
+```js
+
+
 function Person() {}
 Person.prototype.walk = function () {
     return this;
@@ -1066,7 +1166,7 @@ When a regular or prototype method is called without a value for **this**, the m
 </details>
 ---
 #### 51. What is the output of below code
-```javascript
+```js
 class Vehicle {
     constructor(name) {
         this.name = name;
@@ -1096,7 +1196,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 </details>
 ---
 #### 52. What is the output of below code
-```javascript
+```js
 const USER = { age: 30 };
 USER.age = 25;
 c ole.log(USER.age);
@@ -1113,7 +1213,7 @@ Even though we used constant variables, the content of it is an object and the o
 </details>
 ---
 #### 53. What is the output of below code
-```javascript
+```js
 c ole.log('🙂' === '🙂');
 ```
 - 1: false
@@ -1126,7 +1226,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 </details>
 ---
 #### 54. What is the output of below code?
-```javascript
+```js
 c ole.log(typeof typeof typeof true);
 ```
 -  string
@@ -1141,7 +1241,7 @@ The typeof operator on any primitive returns a string value. So even if you appl
 </details>
 ---
 #### 55. What is the output of below code?
-```javascript
+```js
 let zero = new Number(0);
 if (zero) {
     console.log('If');
@@ -1163,7 +1263,7 @@ Hence the above code block always goes to if section.
 </details>
 ---
 #### 55. What is the output of below code in non strict mode?
-```javascript
+```js
 let msg = 'Good morning!!';
 msg.name = 'John';
 c ole.log(msg.name);
@@ -1180,7 +1280,7 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 </details>
 ---
 #### 56. What is the output of below code?
-```javascript
+```js
 let count = 10;
 (function innerFunc() {
     if (count === 10) {

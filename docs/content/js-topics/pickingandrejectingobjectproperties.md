@@ -12,7 +12,12 @@ Sometimes we need to whitelist certain attributes from an object, say we've
 got an array representation of a database table and we need to `select` just
 a few fields for some function:
 
-```javascript
+---
+
+
+```js
+
+
 function pick(obj, keys) {
     return keys.map((k) => (k in obj ? { [k]: obj[k] } : {})).reduce((res, o) => Object.assign(res, o), {});
 }
@@ -38,7 +43,12 @@ merging the objects.
 
 But what if we want to `reject` the attributes? Well, the function changes a bit
 
-```javascript
+---
+
+
+```js
+
+
 function reject(obj, keys) {
     return Object.keys(obj)
         .filter((k) => !keys.includes(k))

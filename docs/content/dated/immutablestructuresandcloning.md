@@ -33,7 +33,7 @@ library and focus on what matters the most, i.e, your application itself.
 One such library is [pvorb/clone](https://github.com/pvorb/clone), which has a
 very simple API. To clone an object you only have to
 
-```javascript
+```js
 var clone = require('clone');
 
 var a = { foo: { bar: 'baz' } };

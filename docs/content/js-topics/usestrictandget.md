@@ -14,7 +14,7 @@ Programmers like to make the computer do the boring stuff for us, and automatica
 
 We add this directive either by adding it at the top of a js file:
 
-```javascript
+```js
 // Whole-script strict mode syntax
 'use strict';
 var v = "Hi!  I'm a strict mode script!";
@@ -22,7 +22,12 @@ var v = "Hi!  I'm a strict mode script!";
 
 or inside a function:
 
-```javascript
+---
+
+
+```js
+
+
 function f() {
     // Function-level strict mode syntax
     'use strict';

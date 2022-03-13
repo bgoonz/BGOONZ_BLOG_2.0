@@ -8,7 +8,7 @@ tags:
 
 ### Response object
 
-```javascript
+```js
   res: {
     // The HTTP Status Code (see: httpstatuses.com for definitions on HTTP status codes)
     status: 202,

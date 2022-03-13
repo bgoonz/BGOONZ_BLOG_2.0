@@ -695,4 +695,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
+ August 6, 2021.

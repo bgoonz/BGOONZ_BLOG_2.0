@@ -23,7 +23,12 @@ f(3)(5)
 For example:
 Uncurried add()
 
-```javascript
+---
+
+
+```js
+
+
 function add(x, y) {
     return x + y;
 }
@@ -33,7 +38,12 @@ add(3, 5); // returns 8
 
 Curried add()
 
-```javascript
+---
+
+
+```js
+
+
 function addC(x) {
     return function (y) {
         return x + y;
@@ -51,7 +61,12 @@ curry: (X × Y → R) → (X → (Y → R))
 
 Javascript Code:
 
-```javascript
+---
+
+
+```js
+
+
 function curry(f) {
     return function (x) {
         return function (y) {
@@ -75,7 +90,12 @@ f' does the same as f, but only has to fill in the second parameter which is why
 
 For example: Binding the first argument of function add to 5 produces the function plus5.
 
-```javascript
+---
+
+
+```js
+
+
 function plus5(y) {
     return 5 + y;
 }
@@ -91,7 +111,12 @@ partApply : ((X × Y → R) × X) → (Y → R)
 
 Javascript Code:
 
-```javascript
+---
+
+
+```js
+
+
 function partApply(f, x) {
     return function (y) {
         return f(x, y);

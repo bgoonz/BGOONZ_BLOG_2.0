@@ -152,7 +152,7 @@ The `watch` function can also be used to watch the contents of a directory. It a
 
 So far, we have focused on reading and modifying the contents of a file, but you may also need to read and update a file's metadata. File metadata includes its size, type, permissions, and other file system properties.
 
-The `stat` function is used to retrieve file metadata, or "statistics” like file size, permissions, and ownership.
+The `stat` function is used to retrieve file metadata, or "statistics" like file size, permissions, and ownership.
 
 const fileStats \= await fsPromises.stat('file1.txt'); console.log(fileStats) console.log(\`size of file1.txt is ${fileStats.size}\`);
 

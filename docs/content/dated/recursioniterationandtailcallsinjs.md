@@ -6,7 +6,12 @@ If you've been on the business for some time, you have, most likely,
 come across the definition of recursion, for which the factorial of
 a given number `n! = n * (n - 1) * ... * 1` is a standard example.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n) {
     if (n === 0) {
         return 1;
@@ -54,7 +59,12 @@ _recursive process_.
 
 Let's take a look at a second implementation of this function.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n, res) {
     if (n === 0) {
         return res;
@@ -65,7 +75,12 @@ function factorial(n, res) {
 
 We can encapsulate functionality a bit further by defining an inner function.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n) {
     function inner_factorial(n, res) {
         if (n === 0) {
@@ -118,7 +133,7 @@ Our previous calculation would look, thus, this way:
 
 Which in turns, looks an awfully lot like
 
-```javascript
+```js
 res = 1;
 n = 6;
 

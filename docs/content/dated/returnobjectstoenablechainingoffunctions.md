@@ -2,7 +2,12 @@
 
 When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
+---
+
+
 ```js
+
+
 function Person(name) {
     this.name = name;
 

@@ -227,7 +227,7 @@ Refer to the [Get-Started Guide](https://mesibo.com/documentation/tutorials/get-
 
 To open messenger demo launch `messenger.html`
 
-```javascript
+```js
 const MESIBO_ACCESS_TOKEN = 'xxxxxxx';
 const MESIBO_APP_ID = 'xxxx';
 const MESIBO_API_URL = 'https://app.mesibo.com/api.php';
@@ -278,7 +278,7 @@ You can provide a list of local contacts that will be loaded as a list of availa
 
 To launch popup demo you can configure the following for setting the displayed user avatar and destination user(to which all messages will be sent) in `config.js` and launch `popup.html`
 
-```javascript
+```js
 const POPUP_DISPLAY_NAME = 'xxxx';
 const POPUP_DISPLAY_PICTURE = 'images/profile/default-profile-icon.jpg';
 const POPUP_DESTINATION_USER = 'xxxx';

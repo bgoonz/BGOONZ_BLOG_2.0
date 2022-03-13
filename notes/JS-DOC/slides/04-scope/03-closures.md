@@ -13,7 +13,7 @@ According to this definition, **every** function in JavaScript is a
 closure, because [every function has an (internal) reference to the
 environment][functions] it was created in. The simplest example is:
 
-```javascript
+```js
 var foo = 42;
 
 function bar() {

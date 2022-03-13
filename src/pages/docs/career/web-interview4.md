@@ -76,7 +76,12 @@ element.addEventListener('click', function click(e) {
 
 A better approach:
 
+---
+
+
 ```js
+
+
 function handleEvent(eventName, { onElement, withCallback, useCapture = false } = {}, thisArg) {
     const element = onElement || document.documentElement;
 
@@ -122,7 +127,12 @@ You're going to run into some instances where you'll be using `new` to allocate 
 
 The `new` operator in JavaScript is an operator that, under reasonable circumstances, returns a new instance of an object. Let's say we have a constructor function:
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
 
@@ -144,7 +154,12 @@ myThing.two; // 2
 
 Now that you get that example, here's where things get a little bit wonky. Let's say I add something to the constructor function, a little SPICE:
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
 
@@ -170,7 +185,12 @@ Interestingly enough, we never actually see the five that we supposedly 'returne
 
 Let's return a non-primitive type instead, something like an object.
 
+---
+
+
 ```js
+
+
 function Thing() {
     this.one = 1;
 
@@ -216,7 +236,7 @@ However, returning a non-primitive, like an `object`, `array`, or `function` wil
 
 #### Question: How to get the file extension?
 
-```javascript
+```js
 var file1 = '50.xsl';
 
 var file2 = '30.doc';
@@ -232,7 +252,12 @@ function getFileExtension(filename) {
 
 #### Solution 1: Regular Expression
 
+---
+
+
 ```js
+
+
 function getFileExtension1(filename) {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
@@ -240,7 +265,12 @@ function getFileExtension1(filename) {
 
 #### Solution 2: String `split` method
 
+---
+
+
 ```js
+
+
 function getFileExtension2(filename) {
     return filename.split('.').pop();
 }
@@ -250,7 +280,12 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 
 #### Solution3: String `slice`, `lastIndexOf` methods
 
+---
+
+
 ```js
+
+
 function getFileExtension3(filename) {
     return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
 }
@@ -312,7 +347,12 @@ _How does it works?_
 
 Example function where arguments 2 and 3 are optional
 
-```javascript
+---
+
+
+```js
+
+
 function example(err, optionalA, optionalB, callback) {
     // retrieve arguments as array
 
@@ -606,7 +646,12 @@ When placed in an expression, it evaluates every expression from left to right a
 
 Eg:-
 
+---
+
+
 ```js
+
+
 function a() {
     console.log('a');
     return 'a';
@@ -655,7 +700,7 @@ Output:-
 
 A common requirement of iteration is cancelation. Using `for` loops we can `break` to end iteration early.
 
-```javascript
+```js
 const a = [0, 1, 2, 3, 4];
 
 for (var i = 0; i < a.length; i++) {
@@ -673,7 +718,7 @@ Another common requirement is to close over our variables.
 
 A quick approach is to use `.forEach` but then we lack the ability to `break`. In this situation the closest we get is `continue` functionality through `return`.
 
-```javascript
+```js
 [0, 1, 2, 3, 4].forEach(function (val, i) {
     if (val === 2) {
         // how do we stop?
@@ -691,7 +736,7 @@ The `.some` is a method on Array prototype. It tests whether some element in the
 
 An example quoted from that link
 
-```javascript
+```js
 const isBiggerThan10 = (numb) => numb > 10;
 
 [2, 5, 8, 1, 4].some(isBiggerThan10); // false
@@ -701,7 +746,7 @@ const isBiggerThan10 = (numb) => numb > 10;
 
 Using `.some` we get iteration functionally similar to `.forEach` but with the ability to `break` through `return` instead.
 
-```javascript
+```js
 [0, 1, 2, 3, 4].some(function (val, i) {
     if (val === 2) {
         return true;
@@ -715,7 +760,7 @@ Using `.some` we get iteration functionally similar to `.forEach` but with the a
 
 You keep returning `false` to make it `continue` to next item. When you return `true`, the loop will `break` and `a.some(..)` will `return` `true`.
 
-```javascript
+```js
 // Array contains 2
 
 const isTwoPresent = [0, 1, 2, 3, 4].some(function (val, i) {
@@ -749,7 +794,12 @@ Also there is `.every`, which can be used. We have to return the opposite boolea
 - 
 - The scope of a variable defined with `let` is block scope.
 
+---
+
+
 ```js
+
+
 function varvslet() {
     console.log(i); // i is undefined due to hoisting
 
@@ -851,7 +901,7 @@ for (let i = 0; i < 5; ++i) {
 
 If you want to get the array items from behind to front, just do this:
 
-```javascript
+```js
 var newArray = [1, 2, 3, 4];
 
 console.log(newArray.slice(-1)); // [4]
@@ -867,7 +917,7 @@ console.log(newArray.slice(-4)); // [1, 2, 3, 4]
 
 If you have to execute a function just if a condition is `true`, like this:
 
-```javascript
+```js
 if (condition) {
     dosomething();
 }
@@ -875,7 +925,7 @@ if (condition) {
 
 You can use a short-circuit just like this:
 
-```javascript
+```js
 condition && dosomething();
 ```
 
@@ -883,7 +933,7 @@ condition && dosomething();
 
 If you have to set a default value to variables, you can simple do this:
 
-```javascript
+```js
 var a;
 
 console.log(a); //undefined
@@ -1013,7 +1063,7 @@ Arrays are everywhere in JavaScript and with the new [spread operators](https://
 
 JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array's constructor and you will see what I mean.
 
-```javascript
+```js
 
 > const arr = new Array(4);
 
@@ -1023,7 +1073,7 @@ JavaScript arrays are sparse in nature in that there are a lot of holes in them.
 
 You may find that iterating over a sparse array to apply a certain transformation is hard.
 
-```javascript
+```js
 
 > const arr = new Array(4);
 
@@ -1035,7 +1085,7 @@ You may find that iterating over a sparse array to apply a certain transformatio
 
 To solve this, you can use `Array.apply` when creating the array.
 
-```javascript
+```js
 
 > const arr = Array.apply(null, new Array(4));
 
@@ -1049,7 +1099,7 @@ To solve this, you can use `Array.apply` when creating the array.
 
 If you want to call a method and ignore one of its parameters, then JavaScript will complain if you keep it empty.
 
-```javascript
+```js
 
 > method('parameter1', , 'parameter3');
 
@@ -1059,7 +1109,7 @@ Uncaught SyntaxError: Unexpected token ,
 
 A workaround that people usually resort to is to pass either `null` or `undefined`.
 
-```javascript
+```js
 
 > method('parameter1', null, 'parameter3') // or
 
@@ -1069,7 +1119,7 @@ A workaround that people usually resort to is to pass either `null` or `undefine
 
 I personally don't like using `null` since JavaScript treats it as an object and that's just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
 
-```javascript
+```js
 
 > method(...['parameter1', , 'parameter3']); // works!
 
@@ -1079,7 +1129,7 @@ I personally don't like using `null` since JavaScript treats it as an object and
 
 I always wonder why the Array constructor does not have a designated method to facilitate the use of unique array values. Spread operators are here for the rescue. Use spread operators with the `Set` constructor to generate unique array values.
 
-```javascript
+```js
 
 > const arr = [...new Set([1, 2, 3, 3])];
 
@@ -1097,7 +1147,12 @@ tip-md-link: https://github.com/loverajoel/jstips/blob/master/\_posts/en/javascr
 
 This little beastie here is tap. A really useful function for quick-debugging chains of function calls, anonymous functions and, actually, whatever you just want to print.
 
-```javascript
+---
+
+
+```js
+
+
 function tap(x) {
     console.log(x);
 
@@ -1107,7 +1162,7 @@ function tap(x) {
 
 Why would you use instead of good old `console.log`? Let me show you an example:
 
-```javascript
+```js
 bank_totals_by_client(bank_info(1, banks), table)
     .filter((c) => c.balance > 25000)
 
@@ -1118,7 +1173,7 @@ bank_totals_by_client(bank_info(1, banks), table)
 
 Now, suppose you're getting nothing from this chain (possibly an error). Where is it failing? Maybe `bank_info` isn't returning anything, so we'll tap it:
 
-```javascript
+```js
 bank_totals_by_client(tap(bank_info(1, banks)), table);
 ```
 
@@ -1126,7 +1181,7 @@ Depending on our particular implementation, it might print something or not. I'l
 
 We must then move on to the next chain, filter.
 
-```javascript
+```js
 
             .filter(c => tap(c).balance > 25000)
 
@@ -1134,7 +1189,7 @@ We must then move on to the next chain, filter.
 
 Are we receiving any c's (clients actually)? If so, then bank_totals_by_client works alright. Maybe it's the condition within the filter?
 
-```javascript
+```js
 
             .filter(c => tap(c.balance > 25000))
 
@@ -1144,7 +1199,12 @@ Ah! Sweet, we see nothing but `false` printed, so there's no client with >25000,
 
 ### (Bonus) A more advanced tap
 
-```javascript
+---
+
+
+```js
+
+
 function tap(x, fn = (x) => x) {
     console.log(fn(x));
 
@@ -1154,7 +1214,7 @@ function tap(x, fn = (x) => x) {
 
 Now we're talking about a more advanced beast, what if we wanted to perform a certain operation _prior_ to tapping? i.e, we want to access a certain object property, perform a logical operation, etc. with our tapped object? Then we call old good tap with an extra argument, a function to be applied at the moment of tapping.
 
-```javascript
+```js
 tap(3, (x) => x + 2) === 3; // prints 5, but expression evaluates to true, why :-)?
 ```
 
@@ -1168,7 +1228,12 @@ tip-md-link: https://github.com/loverajoel/jstips/blob/master/\_posts/en/javascr
 
 If you've been on the business for some time, you have, most likely, come across the definition of recursion, for which the factorial of a given number `n! = n * (n - 1) * ... * 1` is a standard example.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n) {
     if (n === 0) {
         return 1;
@@ -1222,7 +1287,12 @@ Another thing to notice is the shape of the process generated by our function. Y
 
 Let's take a look at a second implementation of this function.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n, res) {
     if (n === 0) {
         return res;
@@ -1234,7 +1304,12 @@ function factorial(n, res) {
 
 We can encapsulate functionality a bit further by defining an inner function.
 
-```javascript
+---
+
+
+```js
+
+
 function factorial(n) {
     function inner_factorial(n, res) {
         if (n === 0) {
@@ -1308,7 +1383,7 @@ Our rules, however, are not applied to every language out there. In fact, in Sch
 
 Which in turns, looks an awfully lot like
 
-```javascript
+```js
 res = 1;
 
 n = 6;
@@ -1340,7 +1415,7 @@ UPDATE Dec 1, 2017: The only major browser with tail call optimization is Safari
 
 We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with '==', comparing with '==' gives unexpected results due to whats called coercion or casting "converting one of the 2 operands to the other's type then compare".
 
-```javascript
+```js
 0 == ' '; //true
 
 (null == undefined[1]) == //true
@@ -1349,13 +1424,13 @@ We all know that JavaScript is loosely typed and in some cases it fall behind sp
 
 So they provided us with the triple equal operator '===' which is more strict and does not coerce operands, However comparing with '===' is not the best solution you can get:
 
-```javascript
+```js
 NaN === NaN; //false
 ```
 
 The great news that in ES6 there is the new 'Object.is()' which is better and more precise it has the same features as '===' and moreover it behaves well in some special cases:
 
-```javascript
+```js
 Object.is(0, ' '); //false
 
 Object.is(null, undefined); //false
@@ -1383,7 +1458,12 @@ Now this table illustrates..
 
 Sometimes we need to whitelist certain attributes from an object, say we've got an array representation of a database table and we need to `select` just a few fields for some function:
 
-```javascript
+---
+
+
+```js
+
+
 function pick(obj, keys) {
     return keys
         .map((k) => (k in obj ? { [k]: obj[k] } : {}))
@@ -1410,7 +1490,12 @@ There's a bit of skulduggery going on in pick. First, we `map` a function over t
 
 But what if we want to `reject` the attributes? Well, the function changes a bit
 
-```javascript
+---
+
+
+```js
+
+
 function reject(obj, keys) {
     return Object.keys(obj)
 
@@ -1444,7 +1529,7 @@ Functional programming is the rediscovered toy which is bringing some sanity to 
 
 Today we're introducing a feature found in Clojure which allows you to define interfaces for your classes. Let's look at one-off implementation:
 
-```javascript
+```js
 const protocols = (...ps) => ps.reduce((c, p) => p(c), Object);
 
 const Mappable = (klass) => {
@@ -1486,7 +1571,7 @@ We supply method signatures for the protocol and make sure we provide implementa
 
 What's so cool about it? We get to write things like these:
 
-```javascript
+```js
 const map = (f) => (o) => o.map(f);
 
 const fold = (f) => (o) => o.fold(f);
@@ -1496,7 +1581,7 @@ const compose = (...fns) => fns.reduce((acc, f) => (x) => acc(f(x)), id);
 
 Ok, maybe we could have written those two functions without the above fuzz but, now that we know `NaturalNumbers` are `Mappable`, we can call `map` on them and trust it will return the right result. Furthermore, with our third function, we can _compose_ any number of operations defined in protocols cleanly:
 
-```javascript
+```js
 const plus1 = (x) => x + 1;
 
 const div5 = (x) => x / 5;
@@ -1538,7 +1623,7 @@ Strategies for processing lots of data vary a lot. You could partition data and 
 
 To do so, you separate the processing part in a different file (possibly 'my_worker.js'), create a worker with `newWorker = new Worker('my_worker.js');` and offload the processing to it.
 
-```javascript
+```js
 
 // my_worker.js
 
@@ -1588,7 +1673,7 @@ get_useful_data();
 
 If you ever come across the likes of
 
-```javascript
+```js
 var funcs = [];
 
 for (var i = 0; i < 3; i++) {
@@ -1630,7 +1715,7 @@ This is because of how the capturing mechanism of closures work and how `i` is r
 
 To solve this situation you can do as follows:
 
-```javascript
+```js
 for (var i = 0; i < 3; i++) {
     funcs[i] = (function (value) {
         console.log('i value is ' + i);
@@ -1640,7 +1725,7 @@ for (var i = 0; i < 3; i++) {
 
 Which effectively copies i by value by handing it to our closure or
 
-```javascript
+```js
 for (let i = 0; i < 3; i++) {
     funcs[i] = function () {
         console.log('i value is ' + i);
@@ -1670,7 +1755,7 @@ If the object is outside your control, you're partly out of luck. This can be ci
 
 One such library is [pvorb/clone](https://github.com/pvorb/clone), which has a very simple API. To clone an object you only have to
 
-```javascript
+```js
 var clone = require('clone');
 
 var a = { foo: { bar: 'baz' } };
@@ -1700,7 +1785,7 @@ There's a few methods for looping over arrays in Javascript. We'll start with th
 
 ### while
 
-```javascript
+```js
 let index = 0;
 
 const array = [1, 2, 3, 4, 5, 6];
@@ -1714,7 +1799,7 @@ while (index < array.length) {
 
 ### for (classical)
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 for (let index = 0; index < array.length; index++) {
@@ -1724,7 +1809,7 @@ for (let index = 0; index < array.length; index++) {
 
 ### forEach
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 array.forEach(function (current_value, index, array) {
@@ -1738,7 +1823,7 @@ array.forEach(function (current_value, index, array) {
 
 The last construct was useful, however, it doesn't return a new array which might be undesirable for your specific case. `map` solves this by applying a function over every element and then returning the new array.
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 const square = (x) => Math.pow(x, 2);
@@ -1758,7 +1843,7 @@ From MDN:
 
 > The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 const sum = (x, y) => x + y;
@@ -1772,7 +1857,7 @@ console.log(`The sum of array: ${array} is ${array_sum}`);
 
 Filters elements on an array based on a boolean function.
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 const even = (x) => x % 2 === 0;
@@ -1786,7 +1871,7 @@ console.log(`Even numbers in array ${array}: ${even_array}`);
 
 Got an array and want to test if a given condition is met in every element?
 
-```javascript
+```js
 const array = [1, 2, 3, 4, 5, 6];
 
 const under_seven = (x) => x < 7;
@@ -1802,7 +1887,7 @@ if (array.every(under_seven)) {
 
 Test if at least one element matches our boolean function.
 
-```javascript
+```js
 const array = [1, 2, 3, 9, 5, 6, 4];
 
 const over_seven = (x) => x > 7;
@@ -1824,7 +1909,7 @@ if (array.some(over_seven)) {
 
 When you want to use javascript object as a hash map(purely for storing data), you might want to create it as follows.
 
-```javascript
+```js
 const map = Object.create(null);
 ```
 
@@ -1834,7 +1919,7 @@ But by doing `Object.create(null)`, we explicitly specify `null` as its prototyp
 
 ### Rationale
 
-```javascript
+```js
 
 const dirtyMap = {};
 
@@ -1887,8 +1972,8 @@ Javascript it's a flexible language, you can redefine anything. But when project
 > Immutability in object means we don't want our objects to change in any ways once we create them i.e make them read-only type.
 
 Let's suppose we need to define a car [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) and use its properties to perform operations throughout our entire project. We can't allow modifying by mistake any data.
-
-```
+ 
+```js
 
 const myTesla = {
 
@@ -1986,7 +2071,7 @@ Functional inheritance is the process of inheriting features by applying an augm
 
 Functional mixins are composable factory functions that add properties and behaviors to objects like stations in an assembly line.
 
-```javascript
+```js
 // Base object constructor function
 
 function Animal(data) {
@@ -2032,7 +2117,7 @@ A currying function is a function that takes multiple arguments and turns it int
 
 In this way, an n-ary function becomes a unary function, and the last function returns the result of all the arguments together in a function.
 
-```javascript
+```js
 // Normal definition
 
 function multiply(a, b, c) {
@@ -2074,7 +2159,12 @@ console.log(multiply(1)(2)(3));
 
 Temporal Dead Zone is a JavaScript behavior while using variables declared using `let` and `const` keywords. Since the keywords are block-scoped, the variables declared these keywords could not be accessed before the declaration, and then you will have to witness where variables will be said to be `undefined`.
 
-```javascript
+---
+
+
+```js
+
+
 function myFunc() {
     console.log(greeting);
 
@@ -2201,7 +2291,12 @@ const user = { ...userBasic, ...userMoreInfo };
 
 The `void` operator returns an `undefined` value from an evaluated expression, or in other words; the `void` operator specifies an expression to be evaluated without returning a value. It is commonly used in client-side JavaScript, where the browser should not display the value.
 
+---
+
+
 ```js
+
+
 function getYear() {
     return 2020;
 }

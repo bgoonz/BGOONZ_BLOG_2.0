@@ -272,8 +272,8 @@ Copy and Paste Data
 The Clipboard API's [`readText()`](https://developer.mozilla.org/Web/API/Clipboard/readText) and [`writeText()`](https://developer.mozilla.org/Web/API/Clipboard/writeText) are convenience options for the more generic `read()` and [`write()`](https://developer.mozilla.org/Web/API/Clipboard/write) methods. These have less browser support but are able to copy and paste any type of data such as binary images.
 
 Copying requires blob data typically returned by a [`fetch()`](https://developer.mozilla.org/Web/API/Fetch_API) or [`canvas.toBlob()`](https://developer.mozilla.org/Web/API/HTMLCanvasElement/toBlob) method. This is passed to a [`ClipboardItem`](https://developer.mozilla.org/Web/API/ClipboardItem) constructor so it can be written to the clipboard:
-
-```
+ 
+```js
 
 const
 image = await fetch('myimage.png'),
@@ -286,8 +286,8 @@ new ClipboardItem({ [blob.type]: blob })
 ```
 
 Pasting is more complex because multiple `ClipboardItem` objects can be returned with differing content types. It's therefore necessary to iterate through each type until a useful format is found. For example:
-
-```
+ 
+```js
 
 const clipboardItems = await navigator.clipboard.read();
 

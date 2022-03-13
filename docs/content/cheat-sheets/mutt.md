@@ -11,7 +11,7 @@
 # Deleting / Undeleting all messages in mutt
 
     1. In mutt's index, hit ‘D' (UPPERCASE D)
-    2. It will prompt you with “Delete messages matching: “
+    2. It will prompt you with "Delete messages matching: "
 
     	+ enter this string:
 

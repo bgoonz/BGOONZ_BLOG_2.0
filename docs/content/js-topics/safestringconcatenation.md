@@ -8,7 +8,7 @@ tip-tldr: Suppose you have a couple of variables with unknown types and you want
 
 Suppose you have a couple of variables with unknown types and you want to concatenate them in a string. To be sure that the arithmetical operation is not be applied during concatenation, use `concat`:
 
-```javascript
+```js
 var one = 1;
 var two = 2;
 var three = '3';
@@ -18,7 +18,7 @@ var result = ''.concat(one, two, three); //"123"
 
 This way of concatenting does exactly what you'd expect. In contrast, concatenation with pluses might lead to unexpected results:
 
-```javascript
+```js
 var one = 1;
 var two = 2;
 var three = '3';

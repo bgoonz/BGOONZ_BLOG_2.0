@@ -14,7 +14,7 @@ categories: - en - javascript
 
 If you want to get the array items from behind to front, just do this:
 
-```javascript
+```js
 var newArray = [1, 2, 3, 4];
 
 console.log(newArray.slice(-1)); // [4]
@@ -27,7 +27,7 @@ console.log(newArray.slice(-4)); // [1, 2, 3, 4]
 
 If you have to execute a function just if a condition is `true`, like this:
 
-```javascript
+```js
 if (condition) {
     dosomething();
 }
@@ -35,7 +35,7 @@ if (condition) {
 
 You can use a short-circuit just like this:
 
-```javascript
+```js
 condition && dosomething();
 ```
 
@@ -43,7 +43,7 @@ condition && dosomething();
 
 If you have to set a default value to variables, you can simple do this:
 
-```javascript
+```js
 var a;
 
 console.log(a); //undefined

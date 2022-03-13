@@ -2,7 +2,7 @@
 
 The following examples will be based on the following array:
 
-```javascript
+```js
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 ```
 
@@ -12,7 +12,7 @@ To get the average, we have to sum up numbers and then divide by the number of v
 - sum up values
 - get the average (`sum/length`)
 
-```javascript
+```js
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 let sum = values.reduce((previous, current) => (current += previous));
 let avg = sum / values.length;
@@ -21,7 +21,7 @@ let avg = sum / values.length;
 
 Or:
 
-```javascript
+```js
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 let count = values.length;
 values = values.reduce((previous, current) => (current += previous));
@@ -34,7 +34,7 @@ Now, to get the median steps are:
 - sort the array
 - get the arethmic mean of the middle values
 
-```javascript
+```js
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 values.sort((a, b) => a - b);
 let lowMiddle = Math.floor((values.length - 1) / 2);
@@ -45,7 +45,7 @@ let median = (values[lowMiddle] + values[highMiddle]) / 2;
 
 With a bitwise operator:
 
-```javascript
+```js
 let values = [2, 56, 3, 41, 0, 4, 100, 23];
 values.sort((a, b) => a - b);
 let median = (values[(values.length - 1) >> 1] + values[values.length >> 1]) / 2;

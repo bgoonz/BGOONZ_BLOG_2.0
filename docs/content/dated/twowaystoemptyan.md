@@ -3,7 +3,7 @@
 You define an array and want to empty its contents.
 Usually, you would do it like this:
 
-```javascript
+```js
 // define Array
 var list = [1, 2, 3, 4];
 function empty() {
@@ -17,7 +17,7 @@ But there is another way to empty an array that is more performant.
 
 You should use code like this:
 
-```javascript
+```js
 var list = [1, 2, 3, 4];
 function empty() {
     //empty your array

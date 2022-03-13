@@ -23,7 +23,12 @@ _defined_.
 
 Given the following function:
 
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     console.log(this);
 }
@@ -31,7 +36,7 @@ function foo() {
 
 these would be the values of `this` if called in those specific ways:
 
-```javascript
+```js
 // "normal call": global object / window in browsers
 //                undefined in strict mode
 foo();

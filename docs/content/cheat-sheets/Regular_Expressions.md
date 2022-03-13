@@ -19,16 +19,16 @@ thumb_img_path: images/css-72a655a7.jpg
 description: |
 Regular expressions are patterns used to match character combinations in
 strings. In JavaScript, regular expressions are also objects. These
-patterns are used with the exec() and test() methods of RegExp, and with
-the match(), matchAll(), replace(), replaceAll(), search(), and split()
-methods of String. This chapter describes JavaScript regular
+patterns are used with the exec() and test() methods of RegExp, and with
+the match(), matchAll(), replace(), replaceAll(), search(), and split()
+methods of String. This chapter describes JavaScript regular
 expressions.
 
 Regular expressions are patterns used to match character combinations in
 strings. In JavaScript, regular expressions are also objects. These
-patterns are used with the exec() and test() methods of RegExp, and with
-the match(), matchAll(), replace(), replaceAll(), search(), and split()
-methods of String. This chapter describes JavaScript regular
+patterns are used with the exec() and test() methods of RegExp, and with
+the match(), matchAll(), replace(), replaceAll(), search(), and split()
+methods of String. This chapter describes JavaScript regular
 expressions.
 
 ---
@@ -41,13 +41,13 @@ Regular expressions are patterns used to match character combinations in
 strings. In JavaScript, regular expressions are also objects. These
 patterns are used with the
 [`exec()`](../Reference/Global_Objects/RegExp/exec.html)
-and [`test()`](../Reference/Global_Objects/RegExp/test.html) methods of
+and [`test()`](../Reference/Global_Objects/RegExp/test.html) methods of
 [`RegExp`](../Reference/Global_Objects/RegExp.html), and with
-the [`match()`](../Reference/Global_Objects/String/match.html), [`matchAll()`](../Reference/Global_Objects/String/matchAll.html),
-[`replace()`](../Reference/Global_Objects/String/replace.html), [`replaceAll()`](../Reference/Global_Objects/String/replaceAll.html),
+the [`match()`](../Reference/Global_Objects/String/match.html), [`matchAll()`](../Reference/Global_Objects/String/matchAll.html),
+[`replace()`](../Reference/Global_Objects/String/replace.html), [`replaceAll()`](../Reference/Global_Objects/String/replaceAll.html),
 [`search()`](../Reference/Global_Objects/String/search.html),
-and [`split()`](../Reference/Global_Objects/String/split.html) methods
-of [`String`](../Reference/Global_Objects/String.html). This chapter
+and [`split()`](../Reference/Global_Objects/String/split.html) methods
+of [`String`](../Reference/Global_Objects/String.html). This chapter
 describes JavaScript regular expressions.
 
 ## Creating a regular expression {#Creating_a_regular_expression}
@@ -63,7 +63,7 @@ You construct a regular expression in one of two ways:
 
     Regular expression literals provide compilation of the regular
     expression when the script is loaded. If the regular
-    expression remains constant, using this can improve performance.
+    expression remains constant, using this can improve performance.
 
 - Or calling the constructor function of the
     [`RegExp`](../Reference/Global_Objects/RegExp.html) object, as
@@ -112,8 +112,8 @@ When the search for a match requires something more than a direct match,
 such as finding one or more b\'s, or finding white space, you can
 include special characters in the pattern. For example, to match _a
 single `"a"` followed by zero or more `"b"`s followed by `"c"`_, you\'d
-use the pattern `/ab*c/`: the `*` after `"b"` means \"0 or more
-occurrences of the preceding item.\" In the string `"cbbabbbbcdebc"`,
+use the pattern `/ab*c/`: the `*` after `"b"` means \"0 or more
+occurrences of the preceding item.\" In the string `"cbbabbbbcdebc"`,
 this pattern will match the substring `"abbbbc"`.
 
 The following pages provide lists of the different special characters
@@ -156,7 +156,7 @@ regular expressions in a single table, see the following:
 | `(?<=y)x`, `(?<!y)x`, `\b`, `\B`  | Assertions.html)                  |
 +-----------------------------------+-----------------------------------+
 | `(x)`, `(?:x)`,                   | [Groups and                       |
-| `(?<Name>x)`, `x|y`, `[xyz]`,     | ranges](Regular_Expressions/Group |
+| `(?<Name>x)`, `x|y`, `[xyz]`,     | ranges](Regular_Expressions/Group |
 | `[^xyz]`, `\Number`               | s_and_Ranges.html)                |
 +-----------------------------------+-----------------------------------+
 | `*`, `+`, `?`, `x{n}`, `x{n,}`,   | [Quantifiers](Regular_Expressions |
@@ -179,7 +179,7 @@ of those individual articles).
 
 ### Escaping {#Escaping}
 
-If you need to use any of the special characters literally (actually
+If you need to use any of the special characters literally (actually
 searching for a `"*"`, for instance), you must escape it by putting a
 backslash in front of it. For instance, to search for `"a"` followed by
 `"*"` followed by `"b"`, you\'d use `/a\*b/` --- the backslash
@@ -200,7 +200,7 @@ it, so the expression searches for a single literal backslash.
 If using the `RegExp` constructor with a string literal, remember that
 the backslash is an escape in string literals, so to use it in the
 regular expression, you need to escape it at the string literal
-level. `/a\*b/` and `new RegExp("a\\*b")` create the same expression,
+level. `/a\*b/` and `new RegExp("a\\*b")` create the same expression,
 which searches for \"a\" followed by a literal \"\*\" followed by \"b\".
 
 If escape strings are not already part of your pattern you can add them
@@ -218,8 +218,8 @@ performs a global search, looking in the whole string and returning all
 matches. It is explained in detail below in [Advanced Searching With
 Flags](Regular_Expressions.html#Advanced_searching_with_flags).
 
-*Why isn\'t this built into JavaScript?* There is a proposal to add such
-a function to RegExp, but it was [rejected by
+*Why isn\'t this built into JavaScript?* There is a proposal to add such
+a function to RegExp, but it was [rejected by
 TC39.](../../../../../../external.html?link=https://github.com/benjamingr/RegExp.escape/issues/37){.external}
 
 ### Using parentheses
@@ -279,7 +279,7 @@ let myArray = /d(b+)d/g.exec('cdbbdbsbz');
     // /d(b+)d/g.exec('cdbbdbsbz') outputs Array [ 'dbbd', 'bb', index: 1, input: 'cdbbdbsbz' ].
 ```
 
-(See [different behaviors](#g-different-behaviors) for further info
+(See [different behaviors](#g-different-behaviors) for further info
 about the different behaviors.)
 
 If you want to construct the regular expression from a string, yet
@@ -380,7 +380,7 @@ it to a letiable.
 
 ### [Advanced searching with flags]
 
-Regular expressions have six optional flags that allow for functionality
+Regular expressions have six optional flags that allow for functionality
 like global and case insensitive searching. These flags can be used
 separately or together in any order, and are included as part of the
 regular expression.
@@ -394,7 +394,7 @@ Flag Description Corresponding property
 `m` Multi-line search. `RegExp.prototype.multiline`
 `s` Allows `.` to match newline characters. `RegExp.prototype.dotAll`
 `u` \"unicode\"; treat a pattern as a sequence of unicode code points. `RegExp.prototype.unicode`
-`y` Perform a \"sticky\" search that matches starting at the current position in the target string. See [`sticky`](../Reference/Global_Objects/RegExp/sticky.html). `RegExp.prototype.sticky`
+`y` Perform a \"sticky\" search that matches starting at the current position in the target string. See [`sticky`](../Reference/Global_Objects/RegExp/sticky.html). `RegExp.prototype.sticky`
 
 : Regular expression flags
 
@@ -441,12 +441,12 @@ let re = new RegExp('\\w+\\s', 'g');
 and get the same result.
 
 The behavior associated with the `g` flag is different when the
-`.exec()` method is used.  The roles of \"class\" and \"argument\" get
-reversed: In the case of `.match()`, the string class (or data type)
-owns the method and the regular expression is just an argument, while in
+`.exec()` method is used.  The roles of \"class\" and \"argument\" get
+reversed: In the case of `.match()`, the string class (or data type)
+owns the method and the regular expression is just an argument, while in
 the case of `.exec()`, it is the regular expression that owns the
-method, with the string being the argument.  Contrast this
-_`str.match(re)`_ versus _`re.exec(str)`_.  The `g` flag is used with
+method, with the string being the argument.  Contrast this
+_`str.match(re)`_ versus _`re.exec(str)`_.  The `g` flag is used with
 the **`.exec()`** method to get iterative progression.
 
 ```{.brush: .js .notranslate}

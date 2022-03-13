@@ -58,7 +58,12 @@ fastify.register(require('./route'));
 
 #### route.js
 
+---
+
+
 ```js
+
+
 function (fastify, opts, next) {
   fastify.get('/', (req, reply) => {
     reply.send({ hello: 'world' })

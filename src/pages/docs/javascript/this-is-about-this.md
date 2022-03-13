@@ -28,7 +28,12 @@ _defined_.
 
 Given the following function:
 
-```javascript
+---
+
+
+```js
+
+
 function foo() {
     console.log(this);
 }
@@ -36,7 +41,7 @@ function foo() {
 
 these would be the values of `this` if called in those specific ways:
 
-```javascript
+```js
 // "normal call": global object / window in browsers
 //                undefined in strict mode
 foo();
@@ -108,7 +113,12 @@ Each function invocation defines its own context. Therefore, the `this` behaves 
 
 In the non-strict mode, the `this` references the global object when the function is called as follows:
 
+---
+
+
 ```js
+
+
 function show() {
    console.log(this === window); // true
 }
@@ -140,7 +150,12 @@ To enable the strict mode, you use the directive `"use strict"` at the beginning
 
 Note that the strict mode has been available since ECMAScript 5.1. The `strict` mode applies to both function and nested functions. For example:
 
+---
+
+
 ```js
+
+
 function show() {
     "use strict";
     console.log(this === undefined); // true
@@ -234,7 +249,12 @@ When you use the `new` keyword to create an instance of a function object, you u
 
 The following example declares a `Car` function, then invokes it as a constructor:
 
+---
+
+
 ```js
+
+
 function Car(brand) {
     this.brand = brand;
 }
@@ -263,7 +283,12 @@ Since the `this` value in the `Car()` sets to the global object, the `bmw.brand`
 
 To make sure that the `Car()` function is always invoked using constructor invocation, you add a check at the beginning of the `Car()` function as follows:
 
+---
+
+
 ```js
+
+
 function Car(brand) {
     if (!(this instanceof Car)) {
         throw Error('Must use the new operator to call the function');
@@ -276,7 +301,12 @@ ES6 introduced a meta-property named [`new.target`](https://www.javascripttutori
 
 You can modify the `Car()` function that uses the `new.target` metaproperty as follows:
 
+---
+
+
 ```js
+
+
 function Car(brand) {
     if (!new.target) {
         throw Error('Must use the new operator to call the function');
@@ -291,7 +321,12 @@ In JavaScript, [functions are first-class citizens](https://www.javascripttutori
 
 The `Function` type has two methods: `[call()](https://www.javascripttutorial.net/javascript-call/)` and `[apply()](https://www.javascripttutorial.net/javascript-apply-method/)` . These methods allow you to set the `this` value when calling a function. For example:
 
+---
+
+
 ```js
+
+
 function getBrand(prefix) {
     console.log(prefix + this.brand);
 }
@@ -314,7 +349,7 @@ It's a Honda
 It's an AudiCode language: PHP (php)
 ```
 
-In this example, we called the `getBrand()` function indirectly using the `call()` method of the `getBrand` function. We passed `honda` and  `audi` object as the first argument of the `call()` method, therefore, we got the corresponding brand in each call.
+In this example, we called the `getBrand()` function indirectly using the `call()` method of the `getBrand` function. We passed `honda` and  `audi` object as the first argument of the `call()` method, therefore, we got the corresponding brand in each call.
 
 The `apply()` method is similar to the `call()` method except that its second argument is an array of arguments.
 
@@ -327,7 +362,7 @@ getBrand.apply(audi, ["It's an "]); // "It's a Audi"Code language: JavaScript (j
 
 [ES6](https://www.javascripttutorial.net/es6/) introduced a new concept named [arrow function](https://www.javascripttutorial.net/es6/javascript-arrow-function/). In arrow functions, JavaScript sets the `this` lexically.
 
-It means the arrow function does not create its own [execution context](https://www.javascripttutorial.net/javascript-execution-context/) but inherits the `this` from the outer function where the arrow function is defined. See the following example:
+It means the arrow function does not create its own [execution context](https://www.javascripttutorial.net/javascript-execution-context/) but inherits the `this` from the outer function where the arrow function is defined. See the following example:
 
 ```js
 let getThis = () => this;
@@ -338,7 +373,12 @@ In this example, the `this` value is set to the global object i.e., `window` in 
 
 Since an arrow function does not create its own execution context, defining a method using an arrow function will cause an issue. For example:
 
+---
+
+
 ```js
+
+
 function Car() {
     this.speed = 120;
 }

@@ -49,7 +49,12 @@ template: docs
     - We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 - Code example for bubbleSort:
 
-```javascript
+---
+
+
+```js
+
+
 function bubbleSort(array) {
     // We could have also had a 'sorted = false' flag and flipped our logic below
     let swapped = true;
@@ -84,7 +89,12 @@ function bubbleSort(array) {
 - - We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 - Code example for selectSort:
 
-```javascript
+---
+
+
+```js
+
+
 function selectionSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         let minIndex = i;
@@ -116,7 +126,12 @@ function selectionSort(arr) {
 - - We are creating the same number of variables with an exact size, independent of our input. No new arrays are created.
 - Code example for insertionSort:
 
-```javascript
+---
+
+
+```js
+
+
 function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         let currElement = arr[i];
@@ -139,7 +154,7 @@ function insertionSort(arr) {
 - - We are ultimately creating n subarrays, making our space complexity linear to our input size.
 - Code example for mergeSort:
 
-```javascript
+```js
 // The merge function is what is combining our sorted sub-arrays
 function merge(array1, array2) {
     let merged = [];
@@ -197,7 +212,12 @@ function mergeSort(array) {
     - With some tweaking, we could implement an in-place quick sort, which would eliminate the creation of new arrays. In this case, the log n stack frames from the recursion are the only proportional amount of space that is used, resulting in O(log n) space complexity.
 - Code example for quickSort:
 
-```javascript
+---
+
+
+```js
+
+
 function quickSort(array) {
     if (array.length <= 1) {
         return array;
@@ -227,7 +247,7 @@ function quickSort(array) {
     - If we kept references to the beginning and end index of the portion of the array that we are searching, we could eliminate the need for creating new subarrays. We could also use a while loop to perform this functionality until we either found our target or our beginning and end indices crossed. This would eliminate the space required for recursive calls (adding stack frames). Ultimately we would be using the same number of variables independent of input size, resulting in O(1).
 - Code example for binarySearch and binarySearchIndex:
 
-```javascript
+```js
 // Returns simply true/false for presence
 function binarySearch(array, target) {
     if (array.length === 0) {

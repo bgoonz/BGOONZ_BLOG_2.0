@@ -10,7 +10,7 @@ categories: - en - javascript
 
 If you ever come across the likes of
 
-```javascript
+```js
 var funcs = [];
 for (var i = 0; i < 3; i++) {
     funcs[i] = function () {
@@ -43,7 +43,7 @@ This is because of how the capturing mechanism of closures work and how `i` is r
 
 To solve this situation you can do as follows:
 
-```javascript
+```js
 for (var i = 0; i < 3; i++) {
     funcs[i] = (function (value) {
         console.log('i value is ' + i);
@@ -53,7 +53,7 @@ for (var i = 0; i < 3; i++) {
 
 Which effectively copies i by value by handing it to our closure or
 
-```javascript
+```js
 for (let i = 0; i < 3; i++) {
     funcs[i] = function () {
         console.log('i value is ' + i);

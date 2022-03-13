@@ -8,7 +8,12 @@ style: |
 
 # `this` - an example
 
-```javascript
+---
+
+
+```js
+
+
 function say() {
     console.log('My name is ' + this.name);
 }

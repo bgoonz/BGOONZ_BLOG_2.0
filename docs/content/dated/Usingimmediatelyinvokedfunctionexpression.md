@@ -2,7 +2,7 @@
 
 Called as "Iffy" ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
-```javascript
+```js
 (function () {
     // Do something​
 })();
@@ -14,7 +14,7 @@ The pair of parenthesis surrounding the anonymous function turns the anonymous f
 
 Similarly, we can even create a named, immediately invoked function expression:
 
-```javascript
+```js
 (someNamedFunction = function(msg) {
 	console.log(msg || "Nothing for today !!")
 	}) (); // Output --> Nothing for today !!​

@@ -243,4 +243,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 6, 2021.
+ August 6, 2021.

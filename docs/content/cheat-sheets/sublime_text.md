@@ -82,7 +82,7 @@
 
 ## Preferences
 
-```javascript
+```js
 {
 "color_scheme": "Packages/User/Color Highlighter/themes/Boxy Ocean.tmTheme",
 "detect_indentation": false,
@@ -104,7 +104,7 @@
 
 ## Keymap
 
-```javascript
+```js
 [
     { keys: ['super+v'], command: 'paste_and_indent' },
     { keys: ['super+shift+v'], command: 'paste' },
