@@ -6133,7 +6133,7 @@ function Vehicle(model, color, year, country) {
     this.year = year;
     this.country = country;
 }
-`
+```
 
 -  Undefined
 - 2: ReferenceError
@@ -6696,7 +6696,7 @@ if ([0]) {
 } else {
     console.log("I'm False");
 }
-`
+```
 
 -  True, I'm True
 - 2: True, I'm False
@@ -7123,7 +7123,7 @@ if (!typeof myString === 'number') {
 } else {
     console.log('It is a number!');
 }
-`
+```
 
 -  SyntaxError
 - 2: It is not a string!, It is not a number!
@@ -7644,7 +7644,7 @@ for (const value of myGenerator) {
 for (const value of myGenerator) {
     console.log(value);
 }
-`
+```
 
 -  1,2,3 and 1,2,3
 - 2: 1,2,3 and 4,5,6
@@ -7706,7 +7706,7 @@ class Square {
         this.area = value;
     }
 }
-`
+```
 
 - 1: 100
 - 2: ReferenceError
@@ -7894,7 +7894,7 @@ if (zero) {
 } else {
     console.log('Else');
 }
-`
+```
 
 -  If
 - 2: Else

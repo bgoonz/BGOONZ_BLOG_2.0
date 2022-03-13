@@ -11914,7 +11914,7 @@ return <Layout {...props}>{element}</Layout>
 
 }
 
-`
+```
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#usage)Usage
 

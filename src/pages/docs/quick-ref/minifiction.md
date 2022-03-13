@@ -1,10 +1,10 @@
 ---
-title: 'How To Minify Code For Better Web Performance '
+title: 'Minification'
 weight: 0
-excerpt: lorem-ipsum
+excerpt: How To Minify Code For Better Web Performance
 seo:
-    title: ''
-    description: ''
+    title: 'Minification'
+    description: 'How To Minify Code For Better Web Performance'
     robots: []
     extra: []
 template: docs
