@@ -167,10 +167,8 @@ sections:
       - title: Resume
         actions:
           - label: View In One Drive
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - Learn More
-            url: '#'
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
             icon_class: dev
             new_window: false
