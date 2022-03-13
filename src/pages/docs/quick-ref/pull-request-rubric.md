@@ -1,10 +1,10 @@
 ---
 title: Pull Request Template
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Does the pull request consist of small commits with clear titles
 seo:
-    title: ''
-    description: ''
+    title: 'Pull Request Template'
+    description: 's it clear why the pull request exists'
     robots: []
     extra: []
 template: docs
