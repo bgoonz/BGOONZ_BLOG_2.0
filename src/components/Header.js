@@ -21,9 +21,7 @@ export default class Header extends React.Component {
                                     </Link>
                                 </p>
                             ) : (
-                                <p className="site-title">
-                                    {' '}
-                                    WebDevHub
+                                <p className="site-logo">
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
                                         {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
                                     </Link>
